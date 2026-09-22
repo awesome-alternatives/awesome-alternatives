@@ -1,4 +1,5 @@
 import { day, FIT_LABEL, FLAG_LABEL, stars } from "../lib/format.ts";
+import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
 
 interface Props {
@@ -22,8 +23,8 @@ export function ToolCard({ tool, target }: Props) {
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       <dl className="facts">
-        <Fact label="Language" value={repo.language ?? "Unknown"} />
-        <Fact label="Licence" value={repo.license ?? "None detected"} />
+        <Fact label="Language" value={<IndexLink index="languages" value={repo.language} fallback="Unknown" />} />
+        <Fact label="Licence" value={<IndexLink index="licenses" value={repo.license} fallback="None detected" />} />
         <Fact label="Stars" value={stars(repo.stars)} />
         {release && (
           <Fact
@@ -50,6 +51,10 @@ export function ToolCard({ tool, target }: Props) {
       )}
     </article>
   );
+}
+
+function IndexLink({ index, value, fallback }: { index: "languages" | "licenses"; value: string | null; fallback: string }) {
+  return value ? <a href={`/${index}/${slugify(value)}/`}>{value}</a> : fallback;
 }
 
 function Fact({ label, value }: { label: string; value: React.ReactNode }) {

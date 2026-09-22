@@ -7,6 +7,7 @@ import Base from "../../layouts/Base.astro";
 import { alternativesTo } from "../../lib/filter.ts";
 import { categories, toolBySlug, tools } from "../../lib/catalog.ts";
 import { day, FIT_LABEL, stars } from "../../lib/format.ts";
+import { slugify } from "../../lib/slug.ts";
 
 export const getStaticPaths = (() =>
   tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }))) satisfies GetStaticPaths;
@@ -50,7 +51,7 @@ const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/
 
   <div class="badges">
     {repo.language && <span class="tag">{repo.language}</span>}
-    <span class="tag">{category?.name ?? tool.category}</span>
+    <a class="tag" href={`/categories/${slugify(tool.category)}/`}>{category?.name ?? tool.category}</a>
     {repo.license && <span class="tag">{repo.license}</span>}
     {release?.signed && <span class="tag">✓ signed</span>}
     {tool.maintainerVerified && <span class="tag">✓ verified</span>}

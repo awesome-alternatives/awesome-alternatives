@@ -29,3 +29,11 @@ export interface ToolList {
   count: number;
   tools: ToolView[];
 }
+
+export interface GridItem {
+  href: string;
+  name: string;
+  detail?: string;
+  count: number;
+  archived?: boolean;
+}

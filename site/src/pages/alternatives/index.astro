@@ -1,0 +1,14 @@
+---
+import IndexPage from "../../components/IndexPage.astro";
+import { targetItems } from "../../lib/catalog.ts";
+
+const items = targetItems();
+---
+
+<IndexPage
+  title="Alternatives to popular developer tools"
+  description={`${items.length} developer tools and what replaces each of them, compared by fit, licence and stars.`}
+  heading="Alternatives"
+  lede={`${items.length} tools that something in the catalog replaces.`}
+  items={items}
+/>

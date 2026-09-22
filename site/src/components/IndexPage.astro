@@ -1,0 +1,25 @@
+---
+import Base from "../layouts/Base.astro";
+import type { GridItem } from "../lib/types.ts";
+import LinkGrid from "./LinkGrid.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  lede: string;
+  items: GridItem[];
+}
+
+const { title, description, heading, lede, items } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <a class="back" href="/#browse">← back</a>
+  <p class="context">browse</p>
+  <h1>{heading}</h1>
+  <p class="lede">{lede}</p>
+  <div class="listing">
+    <LinkGrid items={items} />
+  </div>
+</Base>

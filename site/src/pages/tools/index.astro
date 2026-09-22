@@ -1,0 +1,16 @@
+---
+import ToolListing from "../../components/ToolListing.astro";
+import { tools } from "../../lib/catalog.ts";
+
+const sorted = [...tools].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<ToolListing
+  title="Every tool in the catalog"
+  description={`All ${tools.length} tools in awesome-alternatives, with language, licence, stars and latest release.`}
+  context="browse"
+  parent="/#browse"
+  heading="All tools"
+  lede="Every tool in the catalog, by name."
+  tools={sorted}
+/>

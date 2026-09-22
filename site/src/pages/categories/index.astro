@@ -1,0 +1,19 @@
+---
+import IndexPage from "../../components/IndexPage.astro";
+import { categories, categoryGroups, categoryName } from "../../lib/catalog.ts";
+
+const items = categoryGroups.map((group) => ({
+  href: `/categories/${group.slug}/`,
+  name: categoryName(group.label),
+  detail: categories[group.label]?.description,
+  count: group.tools.length,
+}));
+---
+
+<IndexPage
+  title="Developer tool categories"
+  description={`${items.length} categories of developer tools, each with its open-source options side by side.`}
+  heading="Categories"
+  lede={`${items.length} categories, from release automation to terminal emulators.`}
+  items={items}
+/>

@@ -5,6 +5,8 @@ import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
 import { alternativesTo, facets, narrow } from "../src/lib/filter.ts";
 import { stars } from "../src/lib/format.ts";
+import { groupTools } from "../src/lib/groups.ts";
+import { slugify } from "../src/lib/slug.ts";
 import type { Fit, ToolView } from "../src/lib/types.ts";
 
 function tool(slug: string, language: string | null, replaces: [string, Fit][], starCount = 0): ToolView {
@@ -91,4 +93,35 @@ test("star counts shorten past a thousand", () => {
   assert.equal(stars(1000), "1k");
   assert.equal(stars(1193), "1.2k");
   assert.equal(stars(23456), "23k");
+});
+
+test("slugs keep SPDX dots and spell out the symbols that tell languages apart", () => {
+  assert.equal(slugify("Apache-2.0"), "apache-2.0");
+  assert.equal(slugify("BSD-3-Clause"), "bsd-3-clause");
+  assert.equal(slugify("Other"), "other");
+  assert.equal(slugify("C++"), "c-plus-plus");
+  assert.equal(slugify("C#"), "c-sharp");
+  assert.equal(slugify("C"), "c");
+  assert.equal(slugify("F#"), "f-sharp");
+  assert.equal(slugify("Jupyter Notebook"), "jupyter-notebook");
+  assert.equal(slugify("Vim Script"), "vim-script");
+  assert.equal(slugify("Objective-C++"), "objective-c-plus-plus");
+});
+
+test("groups skip missing values, rank tools by stars and groups by size", () => {
+  const groups = groupTools(
+    [tool("a", "Go", [], 1), tool("b", "Rust", [], 5), tool("c", null, []), tool("d", "Rust", [], 9)],
+    (t) => t.repo.language,
+  );
+  assert.deepEqual(
+    groups.map((g) => [g.slug, g.label, g.tools.map((t) => t.slug)]),
+    [
+      ["rust", "Rust", ["d", "b"]],
+      ["go", "Go", ["a"]],
+    ],
+  );
+});
+
+test("two values that slugify alike fail the build instead of sharing a page", () => {
+  assert.throws(() => groupTools([tool("a", "Vim Script", []), tool("b", "Vim script", [])], (t) => t.repo.language), /vim-script/);
 });

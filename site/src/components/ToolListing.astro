@@ -1,0 +1,28 @@
+---
+import Base from "../layouts/Base.astro";
+import type { ToolView } from "../lib/types.ts";
+import { ToolCard } from "./ToolCard.tsx";
+
+interface Props {
+  title: string;
+  description: string;
+  context: string;
+  parent: string;
+  heading: string;
+  lede: string;
+  tools: ToolView[];
+}
+
+const { title, description, context, parent, heading, lede, tools } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <a class="back" href={parent}>← back</a>
+  <p class="context"><a href={parent}>{context}</a></p>
+  <h1>{heading}</h1>
+  <p class="lede">{lede}</p>
+  <p class="summary">{tools.length} {tools.length === 1 ? "tool" : "tools"}</p>
+  <div class="tools listing">
+    {tools.map((tool) => <ToolCard tool={tool} />)}
+  </div>
+</Base>
