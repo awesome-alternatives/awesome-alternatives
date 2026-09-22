@@ -14,6 +14,10 @@ pub fn sanitize(html: &str, full_name: &str) -> String {
         )),
         Url::parse(&format!("https://github.com/{full_name}/blob/HEAD/")),
     ) else {
+        tracing::warn!(
+            full_name,
+            "the repository name does not form a URL, serving an empty README"
+        );
         return String::new();
     };
     let srcset_base = raw.clone();
@@ -128,6 +132,25 @@ mod tests {
             )
         );
         assert!(html.contains(r#"media="(prefers-color-scheme: dark)""#));
+    }
+
+    #[test]
+    fn an_awkward_repository_name_still_builds_a_base_rather_than_falling_back() {
+        for full_name in [
+            "acme/tool",
+            "",
+            "a b/c",
+            "../..",
+            "%zz/x",
+            "acme/tool\u{7f}",
+            "ǆ/x",
+        ] {
+            assert_eq!(
+                sanitize("<p>hi</p>", full_name),
+                "<p>hi</p>",
+                "{full_name:?} fell back to an empty README"
+            );
+        }
     }
 
     #[test]
