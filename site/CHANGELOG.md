@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.22.0] - 2026-09-22
+
+### Features
+
+- feat(site): read the catalog in French, Spanish and German (#56)
+
 ## [0.21.3] - 2026-09-22
 
 ### Bug Fixes
