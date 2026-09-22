@@ -1,0 +1,6 @@
+name: cocogitto
+repository: https://github.com/cocogitto/cocogitto
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: full

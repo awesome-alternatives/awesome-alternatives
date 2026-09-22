@@ -1,0 +1,6 @@
+release-automation:
+  name: Release automation
+  description: Version bumps, changelogs, tags and published releases from commit history.
+changelog:
+  name: Changelog generation
+  description: Changelogs built from commits or pull requests, without driving the release itself.

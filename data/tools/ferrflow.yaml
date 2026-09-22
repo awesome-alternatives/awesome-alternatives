@@ -1,0 +1,8 @@
+name: FerrFlow
+repository: https://github.com/FerrLabs/FerrFlow
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: full
+    note: Monorepos across 14 manifest formats from one binary.
+affiliation: Maintained by FerrLabs, whose founder also maintains this directory.

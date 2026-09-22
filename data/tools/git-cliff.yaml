@@ -1,0 +1,7 @@
+name: git-cliff
+repository: https://github.com/orhun/git-cliff
+category: changelog
+replaces:
+  - tool: semantic-release
+    fit: partial
+    note: Changelog generation only, no version bump or publish.

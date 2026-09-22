@@ -1,0 +1,35 @@
+name: Suggest a tool
+description: Propose a tool without opening a pull request yourself.
+title: "Suggest: "
+labels: [suggestion]
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: GitHub repository
+      placeholder: https://github.com/owner/name
+    validations:
+      required: true
+  - type: input
+    id: replaces
+    attributes:
+      label: What does it replace?
+      placeholder: semantic-release
+    validations:
+      required: true
+  - type: dropdown
+    id: fit
+    attributes:
+      label: How much of it?
+      options:
+        - drop-in, same configuration or interface
+        - full, same job done differently
+        - partial, part of the job
+    validations:
+      required: true
+  - type: checkboxes
+    id: affiliation
+    attributes:
+      label: Affiliation
+      options:
+        - label: I maintain, work on or am paid by this tool

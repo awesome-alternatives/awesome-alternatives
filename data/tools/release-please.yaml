@@ -1,0 +1,7 @@
+name: release-please
+repository: https://github.com/googleapis/release-please
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: full
+    note: Opens a release pull request instead of releasing on every merge.

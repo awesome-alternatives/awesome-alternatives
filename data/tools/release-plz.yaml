@@ -1,0 +1,7 @@
+name: release-plz
+repository: https://github.com/release-plz/release-plz
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: partial
+    note: Cargo workspaces only.

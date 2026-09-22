@@ -1,0 +1,7 @@
+name: knope
+repository: https://github.com/knope-dev/knope
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: full
+    note: Also reads changesets, not only conventional commits.

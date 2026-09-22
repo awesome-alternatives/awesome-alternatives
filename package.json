@@ -1,0 +1,23 @@
+{
+  "name": "awesome-alternatives",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.ts",
+    "refresh": "node scripts/refresh.ts",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}

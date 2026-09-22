@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/tool.schema.json",
+  "title": "Tool",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "repository", "category"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^https://github\\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+$"
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "replaces": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tool", "fit"],
+        "properties": {
+          "tool": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "fit": {
+            "enum": ["drop-in", "full", "partial"]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "affiliation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  }
+}
