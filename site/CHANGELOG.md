@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.21.2] - 2026-09-22
+
+### Bug Fixes
+
+- perf(site): compress responses and drop the fonts the site never uses (#52)
+
 ## [0.21.1] - 2026-09-22
 
 ### Bug Fixes
