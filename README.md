@@ -1,3 +1,5 @@
+<img src="site/public/logo-512.png" alt="" width="96" height="96">
+
 # Awesome Alternatives
 
 Find what replaces the tool you already use, in the language you want, and see at a glance whether

@@ -72,10 +72,28 @@ main {
 }
 
 .brand {
-  color: var(--accent);
+  color: var(--text);
   font-family: var(--display);
   font-size: 1.15rem;
   font-weight: 700;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand .prompt {
+  margin-right: 2px;
+  color: var(--accent);
+}
+
+.brand .cursor {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.72em;
+  margin-left: 3px;
+  background: var(--accent);
+  vertical-align: baseline;
 }
 
 .site-header nav {
