@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.31.0] - 2026-09-22
+
+### Features
+
+- feat(site): answer the alternatives question on arrival on a tool page (#96)
+
 ## [0.30.1] - 2026-09-22
 
 ### Bug Fixes
