@@ -96,8 +96,21 @@ export default function Search({ names, examples }: Props) {
         </p>
       )}
       {state.kind === "done" && <Results result={state.result} names={names} onDrop={drop} />}
+      <p className="visually-hidden" role="status" aria-live="polite">
+        {announcement(state)}
+      </p>
     </section>
   );
+}
+
+function toolCount(count: number): string {
+  return count === 1 ? "1 tool" : `${count} tools`;
+}
+
+function announcement(state: State): string {
+  if (state.kind === "loading") return "Searching";
+  if (state.kind === "done") return toolCount(state.result.count);
+  return "";
 }
 
 function Results({
@@ -131,9 +144,7 @@ function Results({
         {read.length === 0 && <span className="summary">Closest matches to your description</span>}
         <span className="interpreter">{result.interpretedBy === "jev" ? "Read by Jev" : "Matched locally"}</span>
       </div>
-      <p className="summary" aria-live="polite">
-        {result.count === 1 ? "1 tool" : `${result.count} tools`}
-      </p>
+      <p className="summary">{toolCount(result.count)}</p>
       <div className="tools">
         {result.tools.map((tool) => (
           <ToolCard key={tool.slug} tool={tool} target={result.filters.replaces} />

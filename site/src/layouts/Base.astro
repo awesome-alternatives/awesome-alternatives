@@ -53,6 +53,7 @@ const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="awesome-alternatives, home">
         <span class="prompt" aria-hidden="true">&gt;</span>awesome-alternatives<span class="cursor" aria-hidden="true"></span>
@@ -74,7 +75,7 @@ const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
         <a href={REPO}>GitHub</a>
       </nav>
     </header>
-    <main>
+    <main id="content" tabindex="-1">
       <slot />
     </main>
     <footer class="site-footer">
