@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ferrflow.com/schema/ferrflow.json",
+  "workspace": {
+    "tagTemplate": "{name}-v{version}",
+    "commitFormats": {
+      "patch": ["fix:*", "fix(?*):*", "perf:*", "perf(?*):*", "refactor:*", "refactor(?*):*", "chore(catalog):*"]
+    }
+  },
+  "package": [
+    {
+      "name": "api",
+      "path": "api",
+      "changelog": "api/CHANGELOG.md",
+      "versionedFiles": [{ "path": "api/Cargo.toml", "format": "toml" }]
+    },
+    {
+      "name": "site",
+      "path": "site",
+      "changelog": "site/CHANGELOG.md",
+      "sharedPaths": ["generated/catalog.json", "data/categories.yaml", "scripts/lib/types.ts"],
+      "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
+    }
+  ]
+}

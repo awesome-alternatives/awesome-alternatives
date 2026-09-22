@@ -50,9 +50,16 @@ Changelogs built from commits or pull requests, without driving the release itse
 
 Adding a tool is one file and one pull request, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## API
+## Site and API
 
-[`api/`](api) serves the same catalog over HTTP, with filters and a natural-language search.
+[`site/`](site) is the website, an Astro build with a React island for search. Every tool and every
+"alternatives to" page is prerendered from `generated/catalog.json`. [`api/`](api) serves the same
+catalog over HTTP, with filters and the natural-language search the site calls.
+
+Both are versioned by [FerrFlow](https://ferrflow.com) from their commits and released as
+`api-vX.Y.Z` and `site-vX.Y.Z`. Each release pushes `ghcr.io/awesome-alternatives/api:X.Y.Z` or
+`ghcr.io/awesome-alternatives/site:X.Y.Z`. The nightly catalog refresh counts as a patch for the
+site, so a change in stars or releases ships a new site image the same night.
 
 ## Licence
 

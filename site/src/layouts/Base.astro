@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">awesome-alternatives</a>
+      <nav>
+        <a href="/#browse">Browse</a>
+        <a href={`${REPO}/blob/main/CONTRIBUTING.md`}>Add a tool</a>
+        <a href={REPO}>GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Facts are read from GitHub every night, never typed in by hand.
+        The catalog is <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, the code is{" "}
+        <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>.
+      </p>
+    </footer>
+  </body>
+</html>

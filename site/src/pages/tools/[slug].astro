@@ -1,0 +1,74 @@
+---
+import type { EnrichedTool } from "../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import { ToolCard } from "../../components/ToolCard.tsx";
+import Base from "../../layouts/Base.astro";
+import { alternativesTo } from "../../lib/filter.ts";
+import { categories, toolBySlug, tools } from "../../lib/catalog.ts";
+import { FIT_LABEL } from "../../lib/format.ts";
+
+export const getStaticPaths = (() =>
+  tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }))) satisfies GetStaticPaths;
+
+interface Props {
+  tool: EnrichedTool;
+}
+
+const { tool } = Astro.props;
+const replacedBy = alternativesTo(tools, tool.slug);
+const category = categories[tool.category];
+const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
+---
+
+<Base
+  title={`${tool.name}: ${tool.repo.language ?? "tool"} for ${category?.name.toLowerCase() ?? tool.category}`}
+  description={tool.repo.description ?? `${tool.name} in the awesome-alternatives catalog.`}
+>
+  <nav class="crumbs"><a href="/">Home</a> / {category?.name ?? tool.category}</nav>
+  <h1>{tool.name}</h1>
+  <ToolCard tool={tool} />
+
+  <p class="links">
+    <a href={tool.repository}>Repository</a>
+    {tool.repo.homepage && <a href={tool.repo.homepage}>Website</a>}
+    <a href={edit}>Edit this entry</a>
+  </p>
+
+  {tool.affiliation && <p class="affiliation">{tool.affiliation}</p>}
+
+  {
+    tool.replaces.length > 0 && (
+      <section>
+        <h2>Replaces</h2>
+        <ul class="replaces">
+          {tool.replaces.map((r) => (
+            <li>
+              <a href={`/alternatives/${r.tool}/`}>{toolBySlug(r.tool)?.name ?? r.tool}</a>
+              <span class={`fit fit-${r.fit}`}>{FIT_LABEL[r.fit]}</span>
+              {r.note && <span class="tool-note">{r.note}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    replacedBy.length > 0 && (
+      <section>
+        <h2>Alternatives to {tool.name}</h2>
+        <div class="tools">
+          {replacedBy.slice(0, 3).map((alternative) => (
+            <ToolCard tool={alternative} target={tool.slug} />
+          ))}
+        </div>
+        {replacedBy.length > 3 && (
+          <p>
+            <a href={`/alternatives/${tool.slug}/`}>All {replacedBy.length} alternatives</a>
+          </p>
+        )}
+      </section>
+    )
+  }
+</Base>
