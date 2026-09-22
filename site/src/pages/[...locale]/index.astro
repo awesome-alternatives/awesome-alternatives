@@ -49,4 +49,9 @@ const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item
       <a href={pathFor(locale, "/owners/")}>{m.home.owners}</a>
     </p>
   </section>
+
+  <p class="sponsor">
+    {m.home.sponsorNote}{" "}
+    <a href="https://github.com/sponsors/BryanFRD">{m.home.sponsorLink}</a>
+  </p>
 </Base>

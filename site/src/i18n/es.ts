@@ -54,6 +54,8 @@ export const es: Messages = {
     languages: "Lenguajes",
     licenses: "Licencias",
     owners: "Propietarios",
+    sponsorNote: "El catálogo es gratuito y sin publicidad.",
+    sponsorLink: "Patrocinarlo en GitHub ↗",
     examples: [
       "semantic-release, pero escrito en Rust",
       "una sustitución directa de webpack, más rápida",

@@ -1104,6 +1104,12 @@ h1 .mark-archived {
   grid-column: 1 / -1;
 }
 
+.sponsor {
+  margin: 56px 0 0;
+  color: var(--dim);
+  font-size: 0.9rem;
+}
+
 .owner-bio {
   margin: 18px 0 24px;
   max-width: 62ch;

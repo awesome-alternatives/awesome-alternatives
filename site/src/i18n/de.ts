@@ -54,6 +54,8 @@ export const de: Messages = {
     languages: "Sprachen",
     licenses: "Lizenzen",
     owners: "Inhaber",
+    sponsorNote: "Der Katalog ist kostenlos und werbefrei.",
+    sponsorLink: "Auf GitHub sponsern ↗",
     examples: [
       "semantic-release, aber in Rust geschrieben",
       "ein Drop-in für webpack, schneller",

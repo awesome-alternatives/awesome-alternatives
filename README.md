@@ -22,7 +22,8 @@
 <p align="center">
   <a href="https://awesome-alternatives.com">awesome-alternatives.com</a> |
   <a href="https://awesome-alternatives.com/contribute/">Add a tool</a> |
-  <a href="https://awesome-alternatives.com/about/">How it works</a>
+  <a href="https://awesome-alternatives.com/about/">How it works</a> |
+  <a href="https://github.com/sponsors/BryanFRD">Sponsor</a>
 </p>
 
 The numbers above are read from [`generated/catalog.json`](generated/catalog.json) each time the
@@ -733,12 +734,18 @@ The rules, the fit levels and how to verify a tool you maintain are in
 | [`schema/`](schema) | The JSON Schema every entry is validated against. |
 | [`scripts/`](scripts) | The verifier run on pull requests and the nightly refresh that writes the catalog and this README. |
 | [`generated/`](generated) | `catalog.json`, the enriched catalog the site and the API read. |
-| [`site/`](site) | The website, Astro with React islands, prerendered from the catalog. |
+| [`site/`](site) | The website, Astro with Preact islands, prerendered from the catalog. |
 | [`api/`](api) | The Rust API behind search, with a local embedding model and Jev as a fallback. |
 
 The site and the API are versioned by [FerrFlow](https://ferrflow.com) and released as container
 images on GHCR. The nightly refresh counts as a patch release of the site, so new facts ship the same
 night.
+
+## Sponsor
+
+The catalog is free and carries no ads. The nightly refresh, the search API and the site run on a
+server someone pays for: [sponsor the project on GitHub](https://github.com/sponsors/BryanFRD) if it
+saves you an afternoon of comparing tools.
 
 ## Licence
 

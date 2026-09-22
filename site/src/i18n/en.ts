@@ -53,6 +53,8 @@ export const en = {
     languages: "Languages",
     licenses: "Licences",
     owners: "Owners",
+    sponsorNote: "The catalog is free and carries no ads.",
+    sponsorLink: "Sponsor it on GitHub ↗",
     examples: [
       "semantic-release, but written in Rust",
       "a drop-in for webpack, faster",
