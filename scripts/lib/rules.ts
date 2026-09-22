@@ -1,4 +1,4 @@
-import type { Finding, ReleaseFacts, RepoFacts, Tool } from "./types.ts";
+import type { Finding, FindingCode, ReleaseFacts, RepoFacts, Tool } from "./types.ts";
 
 export const MIN_AGE_DAYS = 30;
 export const INACTIVE_DAYS = 365;
@@ -20,7 +20,7 @@ export function replacedSlugs(tools: readonly Tool[]): Set<string> {
 export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: ReadonlySet<string>): Finding[] {
   const { repo } = evidence;
   const out: Finding[] = [];
-  const add = (severity: Finding["severity"], code: string, message: string) =>
+  const add = (severity: Finding["severity"], code: FindingCode, message: string) =>
     out.push({ slug: tool.slug, severity, code, message });
 
   if (!repo) {

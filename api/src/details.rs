@@ -1,6 +1,7 @@
 use std::sync::Arc;
 
 use moka::future::Cache;
+use serde::de::DeserializeOwned;
 use serde::{Deserialize, Serialize};
 
 use crate::cache::{DETAILS_TTL, Shared};
@@ -41,38 +42,43 @@ impl Details {
     }
 
     pub async fn readme(&self, full_name: &str) -> Result<Readme, UpstreamError> {
-        self.readmes
-            .try_get_with(full_name.to_owned(), async {
-                self.shared
-                    .through(&key("readme", full_name), self.shared.ttl.details, async {
-                        let html = self.upstream.readme_html(full_name).await?;
-                        Ok::<_, reqwest::Error>(Readme {
-                            html: html.map(|h| readme::sanitize(&h, full_name)),
-                        })
-                    })
-                    .await
+        self.layered(&self.readmes, "readme", full_name, async {
+            let html = self.upstream.readme_html(full_name).await?;
+            Ok(Readme {
+                html: html.map(|h| readme::sanitize(&h, full_name)),
             })
-            .await
+        })
+        .await
     }
 
     pub async fn security(&self, full_name: &str) -> Result<Security, UpstreamError> {
-        self.security
+        self.layered(&self.security, "security", full_name, async {
+            let (scorecard, advisories) = tokio::try_join!(
+                self.upstream.scorecard(full_name),
+                self.upstream.advisories(full_name)
+            )?;
+            Ok(Security {
+                scorecard,
+                advisories,
+            })
+        })
+        .await
+    }
+
+    async fn layered<V>(
+        &self,
+        memory: &Cache<String, V>,
+        kind: &str,
+        full_name: &str,
+        fetch: impl Future<Output = Result<V, reqwest::Error>>,
+    ) -> Result<V, UpstreamError>
+    where
+        V: Clone + DeserializeOwned + Send + Serialize + Sync + 'static,
+    {
+        memory
             .try_get_with(full_name.to_owned(), async {
                 self.shared
-                    .through(
-                        &key("security", full_name),
-                        self.shared.ttl.details,
-                        async {
-                            let (scorecard, advisories) = tokio::try_join!(
-                                self.upstream.scorecard(full_name),
-                                self.upstream.advisories(full_name)
-                            )?;
-                            Ok::<_, reqwest::Error>(Security {
-                                scorecard,
-                                advisories,
-                            })
-                        },
-                    )
+                    .through(&key(kind, full_name), self.shared.ttl.details, fetch)
                     .await
             })
             .await
@@ -142,8 +148,9 @@ fn cache<V: Weight + Clone + Send + Sync + 'static>(max_bytes: u64) -> Cache<Str
 mod tests {
     use std::sync::atomic::{AtomicUsize, Ordering};
 
-    use axum::Router;
     use axum::routing::get;
+    use axum::{Json, Router};
+    use serde_json::json;
 
     use super::*;
     use crate::cache::fake::{Write, recording};
@@ -185,17 +192,67 @@ mod tests {
         assert!(security.bytes() >= 8_000);
     }
 
-    async fn github(hits: Arc<AtomicUsize>) -> Upstream {
-        let app = Router::new().route(
-            "/repos/{owner}/{repo}/readme",
-            get(move || {
-                let hits = Arc::clone(&hits);
-                async move {
-                    hits.fetch_add(1, Ordering::SeqCst);
-                    "<p>hello</p>"
-                }
-            }),
-        );
+    #[derive(Default)]
+    struct Hits {
+        readme: AtomicUsize,
+        security: AtomicUsize,
+    }
+
+    impl Hits {
+        fn readme(&self) -> usize {
+            self.readme.load(Ordering::SeqCst)
+        }
+
+        fn security(&self) -> usize {
+            self.security.load(Ordering::SeqCst)
+        }
+    }
+
+    async fn github(hits: Arc<Hits>) -> Upstream {
+        let readme = Arc::clone(&hits);
+        let scorecard = Arc::clone(&hits);
+        let app = Router::new()
+            .route(
+                "/repos/{owner}/{repo}/readme",
+                get(move || {
+                    let hits = Arc::clone(&readme);
+                    async move {
+                        hits.readme.fetch_add(1, Ordering::SeqCst);
+                        "<p>hello</p>"
+                    }
+                }),
+            )
+            .route(
+                "/repos/{owner}/{repo}/security-advisories",
+                get(move || {
+                    let hits = Arc::clone(&hits);
+                    async move {
+                        hits.security.fetch_add(1, Ordering::SeqCst);
+                        Json(json!([{
+                            "ghsa_id": "GHSA-0000",
+                            "cve_id": null,
+                            "summary": "a hole",
+                            "severity": "high",
+                            "published_at": null,
+                            "html_url": "https://example.invalid/advisory"
+                        }]))
+                    }
+                }),
+            )
+            .route(
+                "/projects/github.com/{owner}/{repo}",
+                get(move || {
+                    let hits = Arc::clone(&scorecard);
+                    async move {
+                        hits.security.fetch_add(1, Ordering::SeqCst);
+                        Json(json!({
+                            "score": 7.5,
+                            "date": "2026-09-22",
+                            "checks": [{ "name": "Binary-Artifacts", "score": 10, "reason": "none found" }]
+                        }))
+                    }
+                }),
+            );
         let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
         let base = format!("http://{}", listener.local_addr().unwrap());
         tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
@@ -214,11 +271,11 @@ mod tests {
     #[tokio::test]
     async fn a_readme_fetched_upstream_is_shared_under_a_versioned_key_with_the_details_ttl() {
         let (shared, store) = recording();
-        let hits = Arc::new(AtomicUsize::new(0));
+        let hits = Arc::new(Hits::default());
         let details = Details::new(github(Arc::clone(&hits)).await, CACHE_BYTES, shared);
         let readme = details.readme("example/good").await.unwrap();
         assert_eq!(readme.html.as_deref(), Some("<p>hello</p>"));
-        assert_eq!(hits.load(Ordering::SeqCst), 1);
+        assert_eq!(hits.readme(), 1);
         assert_eq!(
             store.written(),
             [Write {
@@ -229,9 +286,27 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn a_security_report_is_shared_under_its_own_key_with_the_same_details_ttl() {
+        let (shared, store) = recording();
+        let hits = Arc::new(Hits::default());
+        let details = Details::new(github(Arc::clone(&hits)).await, CACHE_BYTES, shared);
+        let security = details.security("example/good").await.unwrap();
+        assert_eq!(security.scorecard.map(|s| s.score), Some(7.5));
+        assert_eq!(security.advisories.len(), 1);
+        assert_eq!(hits.security(), 2);
+        assert_eq!(
+            store.written(),
+            [Write {
+                key: "aa:v1:security:example/good".into(),
+                ttl: DETAILS_TTL
+            }]
+        );
+    }
+
+    #[tokio::test]
     async fn a_cold_process_reads_the_readme_from_the_shared_cache_instead_of_github() {
         let (shared, _store) = recording();
-        let hits = Arc::new(AtomicUsize::new(0));
+        let hits = Arc::new(Hits::default());
         let warm = Details::new(
             github(Arc::clone(&hits)).await,
             CACHE_BYTES,
@@ -242,7 +317,32 @@ mod tests {
         let cold = Details::new(unreachable(), CACHE_BYTES, shared);
         let readme = cold.readme("example/good").await.unwrap();
         assert_eq!(readme.html.as_deref(), Some("<p>hello</p>"));
-        assert_eq!(hits.load(Ordering::SeqCst), 1);
+        assert_eq!(hits.readme(), 1);
+    }
+
+    #[tokio::test]
+    async fn a_cold_process_reads_the_security_report_from_the_shared_cache_too() {
+        let (shared, _store) = recording();
+        let hits = Arc::new(Hits::default());
+        let warm = Details::new(
+            github(Arc::clone(&hits)).await,
+            CACHE_BYTES,
+            Arc::clone(&shared),
+        );
+        warm.security("example/good").await.unwrap();
+
+        let cold = Details::new(unreachable(), CACHE_BYTES, shared);
+        let security = cold.security("example/good").await.unwrap();
+        assert_eq!(security.advisories.len(), 1);
+        assert_eq!(hits.security(), 2);
+    }
+
+    #[tokio::test]
+    async fn an_upstream_security_failure_is_never_written_to_the_shared_cache() {
+        let (shared, store) = recording();
+        let details = Details::new(unreachable(), CACHE_BYTES, shared);
+        assert!(details.security("example/good").await.is_err());
+        assert!(store.written().is_empty());
     }
 
     #[tokio::test]

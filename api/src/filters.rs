@@ -138,6 +138,19 @@ mod tests {
     }
 
     #[test]
+    fn category_narrows_to_an_exact_key() {
+        let mut linting = tool("oxlint", "Rust", "MIT", &[], 1);
+        linting.category = "javascript-lint-format".into();
+        let tools = [tool("knope", "Rust", "MIT", &[], 1), linting];
+        let filters = Filters {
+            category: Some("javascript-lint-format".into()),
+            ..Filters::default()
+        };
+        assert_eq!(slugs(filters.apply(&tools)), ["oxlint"]);
+        assert_eq!(Filters::default().apply(&tools).len(), 2);
+    }
+
+    #[test]
     fn archived_tools_are_never_returned() {
         let mut archived = tool("old", "Rust", "MIT", &[], 1);
         archived.repo.archived = true;

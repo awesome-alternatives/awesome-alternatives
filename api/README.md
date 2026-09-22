@@ -8,9 +8,9 @@ Rust and axum.
 
 | Method | Path | |
 |---|---|---|
-| `GET` | `/v1/tools` | Filter with `replaces`, `language`, `license`, `category`, `dropIn=true`. Case-insensitive on language and licence. |
+| `GET` | `/v1/tools` | Filter with `replaces`, `language`, `license`, `category`, `dropIn=true`. Case-insensitive on language and licence. `category` is one a caller passes for itself: no interpreter reads one out of a query, so `POST /v1/search` never answers with it. |
 | `POST` | `/v1/search` | Body `{ "q": "semantic-release but in Rust" }`. Returns the filters it read, which interpreter read them, and the matching tools. |
-| `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. The site builds its filters from it. |
+| `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. Nothing in this repository calls it: it is here for anyone building against the catalog, which is CC0, and it is part of the published surface rather than an internal helper. |
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
 | `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
 | `GET` | `/healthz` | `ok` |
@@ -99,7 +99,7 @@ refresh retires every search entry it invalidates without touching a key.
 
 | Key | TTL | |
 |---|---|---|
-| `aa:v1:readme:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | The same TTL the in-process cache uses. |
+| `aa:v1:readme:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | The in-process cache expires on its own 12-hour constant, so raising this one keeps entries in Valkey longer than in memory, and lowering it means memory answers after Valkey has forgotten. |
 | `aa:v1:security:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | |
 | `aa:v1:search:<revision>:<query>` | `VALKEY_SEARCH_TTL_SECS`, 15 minutes | Free text, so the key space is open. |
 

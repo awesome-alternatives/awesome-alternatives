@@ -27,10 +27,33 @@ export interface Category {
 
 export type Severity = "error" | "warning";
 
+export type BlockingCode =
+  | "bad-slug"
+  | "duplicate-replacement"
+  | "duplicate-repository"
+  | "fork"
+  | "not-found"
+  | "private"
+  | "replaces-itself"
+  | "schema"
+  | "too-new"
+  | "unknown-category"
+  | "unknown-replacement";
+
+export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-release", "star-spike"] as const;
+
+export type FlagCode = (typeof FLAG_CODES)[number];
+
+export type FindingCode = BlockingCode | FlagCode;
+
+export function isFlagCode(code: FindingCode): code is FlagCode {
+  return (FLAG_CODES as readonly string[]).includes(code);
+}
+
 export interface Finding {
   slug: string;
   severity: Severity;
-  code: string;
+  code: FindingCode;
   message: string;
 }
 
@@ -87,7 +110,7 @@ export interface EnrichedTool {
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   maintainerVerified: boolean;
-  flags: string[];
+  flags: FlagCode[];
 }
 
 export type OwnerKind = "user" | "organization";

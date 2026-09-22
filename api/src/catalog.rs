@@ -68,7 +68,7 @@ pub struct Tool {
     pub flags: Vec<String>,
 }
 
-#[derive(Debug, Default, Deserialize)]
+#[derive(Debug, Deserialize)]
 pub struct Catalog {
     pub tools: Vec<Tool>,
     #[serde(skip)]

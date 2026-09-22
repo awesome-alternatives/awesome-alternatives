@@ -6,8 +6,8 @@ use std::time::{Duration, Instant};
 use serde::Serialize;
 use serde::de::DeserializeOwned;
 
-pub const NAMESPACE: &str = "aa";
-pub const VERSION: &str = "v1";
+const NAMESPACE: &str = "aa";
+const VERSION: &str = "v1";
 pub const DETAILS_TTL: Duration = Duration::from_secs(12 * 3600);
 pub const SEARCH_TTL: Duration = Duration::from_secs(15 * 60);
 pub const TIMEOUT: Duration = Duration::from_millis(200);
@@ -24,18 +24,46 @@ pub fn key(parts: &[&str]) -> String {
 }
 
 #[derive(Debug, thiserror::Error)]
-#[error("{0}")]
-pub struct Error(String);
+pub enum Error {
+    #[error("timed out after {0:?}")]
+    Timeout(Duration),
+    #[error("{0}")]
+    Server(#[from] redis::RedisError),
+    #[error("{0}")]
+    Decode(#[from] serde_json::Error),
+    #[error("reading {path}: {source}")]
+    Certificate {
+        path: String,
+        source: std::io::Error,
+    },
+}
 
-impl From<String> for Error {
-    fn from(message: String) -> Self {
-        Self(message)
+impl Error {
+    fn cause(&self) -> Cause {
+        match self {
+            Self::Timeout(_) => Cause::Timeout,
+            Self::Server(_) | Self::Certificate { .. } => Cause::Server,
+            Self::Decode(_) => Cause::Decode,
+        }
     }
 }
 
-impl From<redis::RedisError> for Error {
-    fn from(error: redis::RedisError) -> Self {
-        Self(error.to_string())
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+enum Cause {
+    Timeout,
+    Server,
+    Decode,
+}
+
+impl Cause {
+    const ALL: [Self; 3] = [Self::Timeout, Self::Server, Self::Decode];
+
+    fn label(self) -> &'static str {
+        match self {
+            Self::Timeout => "timeout",
+            Self::Server => "server",
+            Self::Decode => "decode",
+        }
     }
 }
 
@@ -100,13 +128,13 @@ impl Shared {
             Ok(Some(bytes)) => match serde_json::from_slice(&bytes) {
                 Ok(value) => Some(value),
                 Err(error) => {
-                    self.complain(error, "a shared cache entry could not be read");
+                    self.complain(&error.into(), "a shared cache entry could not be read");
                     None
                 }
             },
             Ok(None) => None,
             Err(error) => {
-                self.complain(error, "reading the shared cache failed");
+                self.complain(&error, "reading the shared cache failed");
                 None
             }
         }
@@ -119,12 +147,15 @@ impl Shared {
         let bytes = match serde_json::to_vec(value) {
             Ok(bytes) => bytes,
             Err(error) => {
-                self.complain(error, "a value could not be written to the shared cache");
+                self.complain(
+                    &error.into(),
+                    "a value could not be written to the shared cache",
+                );
                 return;
             }
         };
         if let Err(error) = self.bounded(store.set(key, bytes, ttl)).await {
-            self.complain(error, "writing to the shared cache failed");
+            self.complain(&error, "writing to the shared cache failed");
         }
     }
 
@@ -144,28 +175,38 @@ impl Shared {
     async fn bounded<T>(&self, work: Answer<'_, T>) -> Result<T, Error> {
         match tokio::time::timeout(self.timeout, work).await {
             Ok(answer) => answer,
-            Err(_) => Err(Error(format!("timed out after {:?}", self.timeout))),
+            Err(_) => Err(Error::Timeout(self.timeout)),
         }
     }
 
-    fn complain(&self, error: impl std::fmt::Display, message: &'static str) {
-        if self.complaints.due() {
-            tracing::warn!(%error, "{message}");
+    fn complain(&self, error: &Error, message: &'static str) {
+        let cause = error.cause();
+        if let Some(suppressed) = self.complaints.due(cause) {
+            tracing::warn!(%error, cause = cause.label(), suppressed, "{message}");
         }
     }
 }
 
 #[derive(Default)]
-struct Complaints(Mutex<Option<Instant>>);
+struct Tally {
+    last: Option<Instant>,
+    suppressed: u64,
+}
+
+#[derive(Default)]
+struct Complaints([Mutex<Tally>; Cause::ALL.len()]);
 
 impl Complaints {
-    fn due(&self) -> bool {
-        let mut last = self.0.lock().unwrap_or_else(|p| p.into_inner());
-        if last.is_some_and(|at| at.elapsed() < QUIET_FOR) {
-            return false;
+    fn due(&self, cause: Cause) -> Option<u64> {
+        let mut tally = self.0[cause as usize]
+            .lock()
+            .unwrap_or_else(|p| p.into_inner());
+        if tally.last.is_some_and(|at| at.elapsed() < QUIET_FOR) {
+            tally.suppressed += 1;
+            return None;
         }
-        *last = Some(Instant::now());
-        true
+        tally.last = Some(Instant::now());
+        Some(std::mem::take(&mut tally.suppressed))
     }
 }
 
@@ -198,7 +239,10 @@ async fn client(settings: &Settings) -> Result<redis::Client, Error> {
         Some(path) => {
             let root_cert = tokio::fs::read(path)
                 .await
-                .map_err(|error| Error(format!("reading {path}: {error}")))?;
+                .map_err(|source| Error::Certificate {
+                    path: path.clone(),
+                    source,
+                })?;
             Ok(redis::Client::build_with_tls(
                 url,
                 redis::TlsCertificates {
@@ -221,7 +265,7 @@ async fn connect(settings: &Settings) -> Result<Valkey, Error> {
         client.get_connection_manager_with_config(config),
     )
     .await
-    .map_err(|_| Error(format!("connecting timed out after {CONNECT_TIMEOUT:?}")))??;
+    .map_err(|_| Error::Timeout(CONNECT_TIMEOUT))??;
     Ok(Valkey(connection))
 }
 
@@ -324,13 +368,20 @@ pub mod fake {
 
     pub struct Broken;
 
+    fn down() -> Error {
+        Error::from(redis::RedisError::from((
+            redis::ErrorKind::Io,
+            "the cache is down",
+        )))
+    }
+
     impl Store for Broken {
         fn get<'a>(&'a self, _key: &'a str) -> Answer<'a, Option<Vec<u8>>> {
-            Box::pin(async { Err(Error::from("the cache is down".to_owned())) })
+            Box::pin(async { Err(down()) })
         }
 
         fn set<'a>(&'a self, _key: &'a str, _value: Vec<u8>, _ttl: Duration) -> Answer<'a, ()> {
-            Box::pin(async { Err(Error::from("the cache is down".to_owned())) })
+            Box::pin(async { Err(down()) })
         }
     }
 
@@ -361,13 +412,73 @@ pub mod fake {
 
 #[cfg(test)]
 mod tests {
+    use std::sync::Arc;
     use std::sync::atomic::{AtomicUsize, Ordering};
+
+    use tracing::field::{Field, Visit};
+    use tracing_subscriber::layer::{Context, Layer, SubscriberExt};
+    use tracing_subscriber::registry::Registry;
 
     use super::fake::{Broken, Corrupt, Hung, Write, recording};
     use super::*;
 
     fn shared(store: impl Store + 'static) -> Shared {
         Shared::new(Box::new(store), Duration::from_millis(50), Ttl::default())
+    }
+
+    #[derive(Default, Clone)]
+    struct Complained(Arc<Mutex<Vec<(String, u64)>>>);
+
+    impl Complained {
+        fn causes(&self) -> Vec<String> {
+            self.seen().into_iter().map(|(cause, _)| cause).collect()
+        }
+
+        fn seen(&self) -> Vec<(String, u64)> {
+            self.0.lock().unwrap_or_else(|p| p.into_inner()).clone()
+        }
+    }
+
+    #[derive(Default)]
+    struct Complaint {
+        cause: Option<String>,
+        suppressed: Option<u64>,
+    }
+
+    impl Visit for Complaint {
+        fn record_str(&mut self, field: &Field, value: &str) {
+            if field.name() == "cause" {
+                self.cause = Some(value.to_owned());
+            }
+        }
+
+        fn record_u64(&mut self, field: &Field, value: u64) {
+            if field.name() == "suppressed" {
+                self.suppressed = Some(value);
+            }
+        }
+
+        fn record_debug(&mut self, _field: &Field, _value: &dyn std::fmt::Debug) {}
+    }
+
+    impl<S: tracing::Subscriber> Layer<S> for Complained {
+        fn on_event(&self, event: &tracing::Event<'_>, _context: Context<'_, S>) {
+            let mut complaint = Complaint::default();
+            event.record(&mut complaint);
+            if let (Some(cause), Some(suppressed)) = (complaint.cause, complaint.suppressed) {
+                self.0
+                    .lock()
+                    .unwrap_or_else(|p| p.into_inner())
+                    .push((cause, suppressed));
+            }
+        }
+    }
+
+    fn aged(complaints: &Complaints, cause: Cause) {
+        complaints.0[cause as usize]
+            .lock()
+            .unwrap_or_else(|p| p.into_inner())
+            .last = Instant::now().checked_sub(QUIET_FOR);
     }
 
     async fn upstream(calls: &AtomicUsize) -> Result<String, &'static str> {
@@ -452,6 +563,59 @@ mod tests {
         assert!(cache.get::<String>("aa:v1:x").await.is_none());
         cache.set("aa:v1:x", &"v", SEARCH_TTL).await;
         assert!(started.elapsed() < Duration::from_secs(1), "{started:?}");
+    }
+
+    #[tokio::test]
+    async fn every_failure_is_reported_under_the_cause_behind_it() {
+        let complained = Complained::default();
+        let _guard = tracing::subscriber::set_default(Registry::default().with(complained.clone()));
+
+        assert!(shared(Broken).get::<String>("aa:v1:x").await.is_none());
+        assert!(shared(Corrupt).get::<String>("aa:v1:x").await.is_none());
+        assert!(shared(Hung).get::<String>("aa:v1:x").await.is_none());
+
+        assert_eq!(complained.causes(), ["server", "decode", "timeout"]);
+    }
+
+    #[tokio::test]
+    async fn a_cause_that_is_quiet_never_silences_another_one() {
+        let complaints = Complaints::default();
+        assert_eq!(complaints.due(Cause::Server), Some(0));
+        assert_eq!(complaints.due(Cause::Server), None);
+        assert_eq!(complaints.due(Cause::Timeout), Some(0));
+        assert_eq!(complaints.due(Cause::Decode), Some(0));
+    }
+
+    #[test]
+    fn the_next_complaint_says_how_many_the_quiet_period_held_back() {
+        let complaints = Complaints::default();
+        assert_eq!(complaints.due(Cause::Server), Some(0));
+        for _ in 0..4 {
+            assert_eq!(complaints.due(Cause::Server), None);
+        }
+        aged(&complaints, Cause::Server);
+        assert_eq!(complaints.due(Cause::Server), Some(4));
+        aged(&complaints, Cause::Server);
+        assert_eq!(complaints.due(Cause::Server), Some(0));
+    }
+
+    #[tokio::test]
+    async fn an_outage_is_one_line_carrying_the_count_rather_than_one_per_request() {
+        let complained = Complained::default();
+        let _guard = tracing::subscriber::set_default(Registry::default().with(complained.clone()));
+
+        let cache = shared(Broken);
+        for _ in 0..5 {
+            assert!(cache.get::<String>("aa:v1:x").await.is_none());
+        }
+        assert_eq!(complained.seen(), [("server".to_owned(), 0)]);
+
+        aged(&cache.complaints, Cause::Server);
+        assert!(cache.get::<String>("aa:v1:x").await.is_none());
+        assert_eq!(
+            complained.seen(),
+            [("server".to_owned(), 0), ("server".to_owned(), 4)]
+        );
     }
 
     #[tokio::test]
