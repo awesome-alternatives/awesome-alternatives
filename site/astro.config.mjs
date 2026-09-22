@@ -18,6 +18,7 @@ export default defineConfig({
     csp: { directives: cspDirectives(process.env.PUBLIC_API_URL) },
   },
   vite: {
+    build: { assetsInlineLimit: 0 },
     server: {
       fs: { allow: [".."] },
       proxy: {
