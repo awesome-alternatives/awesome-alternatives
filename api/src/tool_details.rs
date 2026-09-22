@@ -67,7 +67,7 @@ mod tests {
     use tower::ServiceExt;
 
     use crate::catalog::Catalog;
-    use crate::details::Details;
+    use crate::details::{CACHE_BYTES, Details};
     use crate::fixtures::tool;
     use crate::routes::router;
     use crate::search::Search;
@@ -140,7 +140,7 @@ mod tests {
         let state = AppState::new(
             Loaded::new(catalog, None),
             Search::new(None, None),
-            Details::new(upstream),
+            Details::new(upstream, CACHE_BYTES),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
             false,
         );

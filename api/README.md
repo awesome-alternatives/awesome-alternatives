@@ -44,6 +44,12 @@ alone. Neither stops it from serving.
 The model thresholds (0.75 to pick a target, 0.73 to keep a result) were set against the catalog:
 unrelated queries such as "a kubernetes dashboard" score below 0.70 against every tool.
 
+At startup and on every refresh the whole catalog is embedded, in batches of 16 texts. The ONNX
+session pads each batch to its longest text and holds the raw output of every batch until the call
+returns, so one call over the whole catalog made the startup peak grow with the number of tools.
+Batching keeps that peak flat; the stored vectors are 384 floats, about 1.5 KB per tool, and are
+not affected.
+
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
@@ -55,6 +61,12 @@ Both are fetched on first request and cached for 12 hours per repository; a fail
 handlers and `javascript:` links are removed, relative images point at `raw.githubusercontent.com`
 and relative links at the file on GitHub. Keeping READMEs out of the catalog keeps the nightly
 commit and the API's hourly reload small.
+
+Both caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
+kilobytes, so counting entries said nothing about how much memory they held. `DETAILS_CACHE_BYTES`
+is the total budget, 64 MiB by default, split evenly between the two. The weight of an entry is the
+key plus the strings it holds, and an entry heavier than its cache's share is served once and never
+kept.
 
 ## Configuration
 
@@ -71,6 +83,7 @@ commit and the API's hourly reload small.
 | `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
+| `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the README and security caches together. |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |
 | `RUST_LOG` | `info` | |
 

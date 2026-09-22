@@ -166,7 +166,7 @@ mod tests {
 
     use super::*;
     use crate::catalog::{Catalog, Fit};
-    use crate::details::Details;
+    use crate::details::{CACHE_BYTES, Details};
     use crate::fixtures::tool;
     use crate::search::Search;
     use crate::state::Loaded;
@@ -196,12 +196,15 @@ mod tests {
         let state = AppState::new(
             Loaded::new(catalog, None),
             Search::new(None, None),
-            Details::new(Upstream::new(
-                reqwest::Client::new(),
-                "http://127.0.0.1:9",
-                "http://127.0.0.1:9",
-                None,
-            )),
+            Details::new(
+                Upstream::new(
+                    reqwest::Client::new(),
+                    "http://127.0.0.1:9",
+                    "http://127.0.0.1:9",
+                    None,
+                ),
+                CACHE_BYTES,
+            ),
             limiter,
             false,
         );

@@ -79,7 +79,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let state = AppState::new(
         loaded,
         Search::new(jev, embedder),
-        Details::new(upstream),
+        Details::new(upstream, config.details_cache_bytes),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
     );
