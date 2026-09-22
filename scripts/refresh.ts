@@ -1,5 +1,7 @@
+import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { ADDED_LOG_ARGS, addedAt, carriedAddedAt, parseAddedLog } from "./lib/added.ts";
 import { loadCatalog } from "./lib/catalog.ts";
 import { fetchReleases } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
@@ -19,6 +21,9 @@ if (structural.length) {
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
 const replaced = replacedSlugs(catalog.tools);
+const catalogPath = join(root, "generated/catalog.json");
+const carried = carriedAddedAt(JSON.parse(await readFile(catalogPath, "utf8")));
+const history = parseAddedLog(execFileSync("git", ADDED_LOG_ARGS, { cwd: root, encoding: "utf8" }));
 
 const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
   const evidence = await gather(gh, tool, false);
@@ -34,6 +39,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     category: tool.category,
     replaces: tool.replaces ?? [],
     affiliation: tool.affiliation ?? null,
+    addedAt: addedAt(tool.slug, carried, history, now),
     repo: evidence.repo,
     release: evidence.release,
     releases: await fetchReleases(gh, evidence.repo.fullName),
@@ -44,7 +50,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
 });
 
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
-await writeFile(join(root, "generated/catalog.json"), `${JSON.stringify({ tools }, null, 2)}\n`);
+await writeFile(catalogPath, `${JSON.stringify({ tools }, null, 2)}\n`);
 
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");

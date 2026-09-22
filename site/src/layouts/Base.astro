@@ -25,6 +25,7 @@ const DEFAULT_IMAGE: SocialImage = {
 
 const { title, description, search = true, image = DEFAULT_IMAGE } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const feed = new URL("/feed.xml", Astro.site);
 ---
 
 <!doctype html>
@@ -49,6 +50,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="theme-color" content="#0b0b0b" />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="awesome-alternatives: new tools" href={feed} />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
@@ -83,7 +85,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         Catalog <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, code <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>,
         data from GitHub
       </p>
-      <nav aria-label="Legal">
+      <nav aria-label="Footer">
+        <a href="/feed.xml">RSS feed</a>
         <a href="/legal-notice/">Legal notice</a>
         <a href="/privacy/">Privacy</a>
         <a href={REPO}>GitHub ↗</a>
