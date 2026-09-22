@@ -1,0 +1,82 @@
+---
+import Detail from "../components/Detail.astro";
+import Base from "../layouts/Base.astro";
+import { host, LAST_UPDATED, publisher } from "../lib/legal.ts";
+
+const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
+---
+
+<Base title="Legal notice" description="Who publishes and hosts awesome-alternatives.com.">
+  <header class="legal-head">
+    <p class="eyebrow">Legal</p>
+    <h1>Legal notice</h1>
+    <p class="lede">
+      Published under article 6 III of the French law n° 2004-575 of 21 June 2004 on confidence in the digital economy
+      (LCEN). Last updated {LAST_UPDATED}.
+    </p>
+  </header>
+
+  <section class="block legal">
+    <h2>Publisher</h2>
+    <p>awesome-alternatives.com is published by a private individual, on a non-professional basis.</p>
+    <dl class="legal-facts">
+      <div>
+        <dt>Name</dt>
+        <dd><Detail value={publisher.name} /></dd>
+      </div>
+      <div>
+        <dt>Address</dt>
+        <dd><Detail value={publisher.address} /></dd>
+      </div>
+      <div>
+        <dt>Email</dt>
+        <dd><Detail value={publisher.email} href={`mailto:${publisher.email}`} /></dd>
+      </div>
+      <div>
+        <dt>Phone</dt>
+        <dd><Detail value={publisher.phone} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>Publication director</h2>
+    <p>The publisher, <Detail value={publisher.name} />.</p>
+  </section>
+
+  <section class="block legal">
+    <h2>Host</h2>
+    <dl class="legal-facts">
+      <div>
+        <dt>Name</dt>
+        <dd><Detail value={host.name} /></dd>
+      </div>
+      <div>
+        <dt>Address</dt>
+        <dd><Detail value={host.address} /></dd>
+      </div>
+      <div>
+        <dt>Phone</dt>
+        <dd><Detail value={host.phone} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>Content</h2>
+    <p>
+      The catalog is released under <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a> and the code under{" "}
+      <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>. Repository figures (stars, releases, licences, descriptions) come
+      from the public GitHub API. Project names and trademarks belong to their owners.
+    </p>
+    <p>
+      To report an error or ask for an entry to be removed, open an issue on <a href={`${REPO}/issues`}>GitHub</a> or{" "}
+      write to <Detail value={publisher.email} href={`mailto:${publisher.email}`} />.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>Personal data</h2>
+    <p>What the site processes about visitors is described in the <a href="/privacy/">privacy policy</a>.</p>
+  </section>
+</Base>

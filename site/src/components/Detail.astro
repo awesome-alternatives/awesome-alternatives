@@ -1,0 +1,20 @@
+---
+import { isPlaceholder } from "../lib/legal.ts";
+
+interface Props {
+  value: string;
+  href?: string;
+}
+
+const { value, href } = Astro.props;
+---
+
+{
+  isPlaceholder(value) ? (
+    <span class="placeholder">{value}</span>
+  ) : href ? (
+    <a href={href}>{value}</a>
+  ) : (
+    value
+  )
+}

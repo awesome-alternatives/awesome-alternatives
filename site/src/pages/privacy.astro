@@ -1,0 +1,187 @@
+---
+import Detail from "../components/Detail.astro";
+import Base from "../layouts/Base.astro";
+import { jev, LAST_UPDATED, publisher, retention } from "../lib/legal.ts";
+
+const LEGITIMATE_INTEREST = "Legitimate interest (GDPR art. 6(1)(f))";
+---
+
+<Base title="Privacy policy" description="What awesome-alternatives.com processes about its visitors, and why.">
+  <header class="legal-head">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy policy</h1>
+    <p class="lede">
+      The site sets no cookies, stores nothing in your browser, runs no analytics and loads no third-party scripts or
+      fonts: every file comes from awesome-alternatives.com. There is nothing to consent to, so there is no consent
+      banner. If that ever changes, this page and a consent mechanism change first. Last updated {LAST_UPDATED}.
+    </p>
+  </header>
+
+  <section class="block legal">
+    <h2>Controller</h2>
+    <p>
+      The controller is the publisher named in the <a href="/legal-notice/">legal notice</a>,{" "}
+      <Detail value={publisher.name} />, reachable at{" "}
+      <Detail value={publisher.email} href={`mailto:${publisher.email}`} />.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>Web server access log</h2>
+    <p>
+      The nginx server that delivers the pages writes one line per request to its standard access log, which goes to
+      the container output.
+    </p>
+    <dl class="legal-facts">
+      <div>
+        <dt>Data</dt>
+        <dd>
+          IP address, date and time, requested address (including a search typed in the address bar as{" "}
+          <code>?q=</code>), response status and size, referring page, browser user agent, forwarded-for header
+        </dd>
+      </div>
+      <div>
+        <dt>Purpose</dt>
+        <dd>Running the site, diagnosing errors, detecting and stopping abuse</dd>
+      </div>
+      <div>
+        <dt>Legal basis</dt>
+        <dd>{LEGITIMATE_INTEREST}</dd>
+      </div>
+      <div>
+        <dt>Retention</dt>
+        <dd><Detail value={retention.siteAccessLog} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>Reverse proxy access log</h2>
+    <p>
+      Requests to the site and to its search API pass through a reverse proxy at the host, which keeps its own access
+      log with the same kind of data.
+    </p>
+    <dl class="legal-facts">
+      <div>
+        <dt>Proxy and retention</dt>
+        <dd><Detail value={retention.reverseProxyLog} /></dd>
+      </div>
+      <div>
+        <dt>Purpose</dt>
+        <dd>Routing requests, diagnosing errors, detecting and stopping abuse</dd>
+      </div>
+      <div>
+        <dt>Legal basis</dt>
+        <dd>{LEGITIMATE_INTEREST}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>Search rate limiting</h2>
+    <p>
+      To keep the search usable for everyone, the API allows a fixed number of searches per minute from each IP
+      address. The API itself writes no request log.
+    </p>
+    <dl class="legal-facts">
+      <div>
+        <dt>Data</dt>
+        <dd>IP address and a counter of recent searches, held in memory only</dd>
+      </div>
+      <div>
+        <dt>Purpose</dt>
+        <dd>Preventing one client from exhausting the search</dd>
+      </div>
+      <div>
+        <dt>Legal basis</dt>
+        <dd>{LEGITIMATE_INTEREST}</dd>
+      </div>
+      <div>
+        <dt>Retention</dt>
+        <dd>
+          Removed at the next hourly cleanup once it no longer counts toward the limit, and at every restart. Never
+          written to disk.
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>Search queries</h2>
+    <p>
+      What you type in the search box is sent to the API, which first interprets it with a model running on its own
+      server. When that finds no tool to replace, the text of the query, and nothing else (no IP address, no
+      identifier), is sent to Jev at <code>api.typesafe.ai</code>, a language model service that turns it into
+      filters. Avoid typing personal information in the search box.
+    </p>
+    <dl class="legal-facts">
+      <div>
+        <dt>Data</dt>
+        <dd>The query text</dd>
+      </div>
+      <div>
+        <dt>Purpose</dt>
+        <dd>Answering the search you asked for</dd>
+      </div>
+      <div>
+        <dt>Legal basis</dt>
+        <dd>{LEGITIMATE_INTEREST}</dd>
+      </div>
+      <div>
+        <dt>Retention</dt>
+        <dd>
+          Queries interpreted by Jev are cached in the API's memory with their result, without any link to who sent
+          them, for at most 24 hours. The cache is also emptied every time the catalog is refreshed, hourly, and at
+          every restart. Never written to disk.
+        </dd>
+      </div>
+      <div>
+        <dt>Recipient</dt>
+        <dd><Detail value={jev.operator} /></dd>
+      </div>
+      <div>
+        <dt>Where</dt>
+        <dd><Detail value={jev.location} /></dd>
+      </div>
+      <div>
+        <dt>Its terms</dt>
+        <dd><Detail value={jev.privacyPolicy} href={jev.privacyPolicy} /></dd>
+      </div>
+    </dl>
+    <p>
+      The search also puts your query in the page address (<code>?q=</code>) so the results can be shared. It stays in
+      your browser history, and reaches the access logs above when that address is loaded.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>Repository details</h2>
+    <p>
+      The API fetches each listed project's README from GitHub and its security report from OpenSSF Scorecard itself,
+      server to server, and keeps them for 12 hours. Those requests carry only the repository name, nothing about you.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>Who receives the data</h2>
+    <p>
+      The publisher, the host listed in the <a href="/legal-notice/">legal notice</a> as it runs the servers, and, for
+      search queries only, the operator of Jev. Nothing is sold or shared for advertising. Links to GitHub and to the
+      listed projects are plain links: once you follow one, that site's own policy applies.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>Your rights</h2>
+    <p>
+      Under the GDPR you can ask to access, correct or erase data about you, to restrict its processing, and you can
+      object to processing based on legitimate interest. Write to{" "}
+      <Detail value={publisher.email} href={`mailto:${publisher.email}`} />. The logs are not tied to a name, so give
+      the IP address and the approximate time of your visit so the matching entries can be found.
+    </p>
+    <p>
+      If you think your data is mishandled, you can complain to the French data protection authority, the{" "}
+      <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.
+    </p>
+  </section>
+</Base>
