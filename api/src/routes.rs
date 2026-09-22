@@ -1,4 +1,4 @@
-use std::net::{IpAddr, SocketAddr};
+use std::net::SocketAddr;
 use std::time::Duration;
 
 use axum::extract::{ConnectInfo, Query, Request, State};
@@ -11,6 +11,7 @@ use governor::clock::Clock;
 use serde::{Deserialize, Serialize};
 
 use crate::catalog::Tool;
+use crate::peer::client_ip;
 use crate::filters::Filters;
 use crate::search::Interpreter;
 use crate::state::{AppState, Quiescence};
@@ -155,21 +156,6 @@ async fn search(
         filters: read.filters,
         interpreted_by: read.interpreted_by,
     }))
-}
-
-fn client_ip(headers: &HeaderMap, peer: SocketAddr, trust_proxy: bool) -> IpAddr {
-    let forwarded = || {
-        headers
-            .get("x-forwarded-for")?
-            .to_str()
-            .ok()?
-            .rsplit(',')
-            .next()?
-            .trim()
-            .parse()
-            .ok()
-    };
-    trust_proxy.then(forwarded).flatten().unwrap_or(peer.ip())
 }
 
 #[cfg(test)]
@@ -385,19 +371,5 @@ mod tests {
         assert_eq!(retry_after_secs(Duration::from_millis(1)), 1);
         assert_eq!(retry_after_secs(Duration::from_millis(59_001)), 60);
         assert_eq!(retry_after_secs(Duration::from_secs(12)), 12);
-    }
-
-    #[test]
-    fn forwarded_address_is_used_only_behind_a_trusted_proxy() {
-        let peer = SocketAddr::from(([10, 0, 0, 2], 1));
-        let mut headers = HeaderMap::new();
-        headers.insert("x-forwarded-for", "6.6.6.6, 203.0.113.7".parse().unwrap());
-        assert_eq!(
-            client_ip(&headers, peer, true),
-            IpAddr::from([203, 0, 113, 7])
-        );
-        assert_eq!(client_ip(&headers, peer, false), peer.ip());
-        headers.insert("x-forwarded-for", "garbage".parse().unwrap());
-        assert_eq!(client_ip(&headers, peer, true), peer.ip());
     }
 }
