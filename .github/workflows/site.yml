@@ -36,4 +36,4 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
       - run: pnpm test
-      - run: docker build -f site/Dockerfile -t site:ci ..
+      - run: docker build -f Dockerfile -t site:ci ..
