@@ -62,6 +62,11 @@ const login = loginOf(repo.fullName);
     <h1>
       {tool.name}
       {
+        tool.maintainerVerified && (
+          <Mark icon="verified" label={m.tool.verified} href={`${pathFor(locale, "/about/")}#verified`} />
+        )
+      }
+      {
         repo.archived && (
           <a class="mark mark-archived" href={`${pathFor(locale, "/about/")}#archived`}>
             {m.tool.archived}
@@ -96,11 +101,6 @@ const login = loginOf(repo.fullName);
           </a>
           {repo.license && <span class="tag">{repo.license}</span>}
           {release?.signed && <Mark icon="signed" label={m.tool.signed} href={`${pathFor(locale, "/about/")}#signed`} />}
-          {
-            tool.maintainerVerified && (
-              <Mark icon="verified" label={m.tool.verified} href={`${pathFor(locale, "/about/")}#verified`} />
-            )
-          }
         </div>
 
         <dl class="about-facts">

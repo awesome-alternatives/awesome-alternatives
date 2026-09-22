@@ -717,6 +717,21 @@ button.link {
   margin-left: 8px;
 }
 
+h1 .mark-icon {
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+h1 .mark-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+h1 .mark-icon::after {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
 h1 .mark-archived {
   margin-left: 16px;
   font-size: 0.8rem;
