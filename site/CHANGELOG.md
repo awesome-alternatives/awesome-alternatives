@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.21.3] - 2026-09-22
+
+### Bug Fixes
+
+- perf(site): render the islands with Preact instead of React (#54)
+
 ## [0.21.2] - 2026-09-22
 
 ### Bug Fixes
