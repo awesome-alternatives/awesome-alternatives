@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.28.0] - 2026-09-22
+
+### Features
+
+- feat(site): offer Open Collective before GitHub Sponsors (#89)
+
 ## [0.27.0] - 2026-09-22
 
 ### Features
