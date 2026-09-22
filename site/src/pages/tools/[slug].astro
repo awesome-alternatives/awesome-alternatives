@@ -24,6 +24,7 @@ const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
 const back = tool.replaces[0] ? `/alternatives/${tool.replaces[0].tool}/` : "/";
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
+const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
 const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool), fit: r.fit, note: r.note ?? null }));
 ---
 
@@ -112,7 +113,7 @@ const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool),
         }
 
         <p class="about-links">
-          <a class="repo-link" href={tool.repository}>github.com/{repo.fullName} ↗</a>
+          <a class="repo-link" href={source}>github.com/{repo.fullName}{tool.path && `/${tool.path}`} ↗</a>
           {repo.homepage && <a href={repo.homepage}>Website ↗</a>}
           <a href={edit}>Edit this entry</a>
         </p>

@@ -60,6 +60,8 @@ pub struct Tool {
     pub category: String,
     pub replaces: Vec<Replacement>,
     pub affiliation: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub path: Option<String>,
     pub repo: RepoFacts,
     pub release: Option<ReleaseFacts>,
     pub maintainer_verified: bool,

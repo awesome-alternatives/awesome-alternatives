@@ -21,6 +21,7 @@ pub fn tool(
             })
             .collect(),
         affiliation: None,
+        path: None,
         repo: RepoFacts {
             full_name: format!("example/{slug}"),
             description: None,

@@ -12,6 +12,7 @@ function tool(slug: string, addedAt: string, description: string | null = null, 
     category: "release-automation",
     replaces: replaces.map((t) => ({ tool: t, fit: "full" })),
     affiliation: null,
+    path: null,
     addedAt,
     repo: {
       fullName: `example/${slug}`,

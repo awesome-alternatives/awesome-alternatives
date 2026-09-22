@@ -50,16 +50,31 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
 export function checkStructure({ tools, categories }: Catalog): Finding[] {
   const findings: Finding[] = [];
   const slugs = new Set(tools.map((t) => t.slug));
-  const byRepo = new Map<string, string>();
-
+  const byRepo = new Map<string, Tool[]>();
   for (const tool of tools) {
     const repo = tool.repository.toLowerCase();
-    const owner = byRepo.get(repo);
-    if (owner) {
-      findings.push(error(tool.slug, "duplicate-repository", `${tool.repository} is already listed as ${owner}`));
-    } else {
-      byRepo.set(repo, tool.slug);
+    byRepo.set(repo, [...(byRepo.get(repo) ?? []), tool]);
+  }
+  for (const [first, ...rest] of byRepo.values()) {
+    if (!first) continue;
+    const paths = new Map<string, string>(first.path === undefined ? [] : [[first.path.toLowerCase(), first.slug]]);
+    for (const tool of rest) {
+      const owner = tool.path === undefined ? undefined : paths.get(tool.path.toLowerCase());
+      if (first.path === undefined || tool.path === undefined || owner) {
+        findings.push(
+          error(
+            tool.slug,
+            "duplicate-repository",
+            `${tool.repository} is already listed as ${owner ?? first.slug}; entries sharing a repository each need their own path`,
+          ),
+        );
+      } else {
+        paths.set(tool.path.toLowerCase(), tool.slug);
+      }
     }
+  }
+
+  for (const tool of tools) {
 
     if (!categories.has(tool.category)) {
       findings.push(error(tool.slug, "unknown-category", `category ${tool.category} is not in data/categories.yaml`));

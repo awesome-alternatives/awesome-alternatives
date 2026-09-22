@@ -1,4 +1,3 @@
-import { parse } from "yaml";
 import { type GitHub, GitHubError, repoPath } from "./github.ts";
 import type { ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
 
@@ -55,7 +54,7 @@ interface ApiStargazer {
   starred_at: string;
 }
 
-const MAINTAINER_FILE = ".awesome-alternatives.yml";
+export const MAINTAINER_FILE = ".awesome-alternatives";
 const PAGE = 100;
 const MAX_STARGAZER_PAGE = 400;
 const REFUSED_PAGINATION = [403, 422];
@@ -165,16 +164,30 @@ async function isTagSigned(gh: GitHub, fullName: string, tag: string): Promise<b
   return commit?.commit.verification?.verified === true;
 }
 
-export async function fetchMaintainerClaim(gh: GitHub, fullName: string, branch: string): Promise<string | null> {
-  const file = await gh.get<ApiContent>(
-    `/repos/${fullName}/contents/${MAINTAINER_FILE}?ref=${encodeURIComponent(branch)}`,
+export function claimedSlugs(text: string): string[] {
+  return text
+    .split(/\r?\n/)
+    .map((line) => line.replace(/#.*/, "").trim())
+    .filter((line) => line.length > 0);
+}
+
+export async function fetchMaintainerClaim(
+  gh: GitHub,
+  fullName: string,
+  branch: string,
+  path?: string,
+): Promise<string[]> {
+  const locations = path ? [MAINTAINER_FILE, `${path}/${MAINTAINER_FILE}`] : [MAINTAINER_FILE];
+  const found = await Promise.all(
+    locations.map(async (location) => {
+      const file = await gh.get<ApiContent>(
+        `/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`,
+      );
+      if (!file || file.encoding !== "base64") return [];
+      return claimedSlugs(Buffer.from(file.content, "base64").toString("utf8"));
+    }),
   );
-  if (!file || file.encoding !== "base64") return null;
-  const parsed: unknown = parse(Buffer.from(file.content, "base64").toString("utf8"));
-  if (typeof parsed === "object" && parsed !== null && "slug" in parsed && typeof parsed.slug === "string") {
-    return parsed.slug;
-  }
-  return null;
+  return found.flat();
 }
 
 export async function fetchRecentStargazers(gh: GitHub, fullName: string, stars: number): Promise<string[]> {

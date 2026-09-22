@@ -49,6 +49,22 @@ describe("checkStructure", () => {
     assert.deepEqual(codes([tool("a"), dupe]), ["b:duplicate-repository"]);
   });
 
+  it("accepts tools of one monorepo when each declares its own path", () => {
+    const repo = "https://github.com/acme/mono";
+    const cli = tool("cli", { repository: repo, path: "crates/cli" });
+    const server = tool("server", { repository: repo, path: "crates/server" });
+    assert.deepEqual(codes([cli, server]), []);
+  });
+
+  it("rejects a monorepo entry without a path, or two entries with the same path", () => {
+    const repo = "https://github.com/acme/mono";
+    const whole = tool("whole", { repository: repo });
+    const part = tool("part", { repository: repo, path: "packages/part" });
+    assert.deepEqual(codes([whole, part]), ["part:duplicate-repository"]);
+    const again = tool("again", { repository: repo, path: "Packages/Part" });
+    assert.deepEqual(codes([part, again]), ["again:duplicate-repository"]);
+  });
+
   it("rejects a category that is not declared", () => {
     assert.deepEqual(codes([tool("a", { category: "made-up" })]), ["a:unknown-category"]);
   });

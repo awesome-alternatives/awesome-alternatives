@@ -17,6 +17,7 @@ function tool(slug: string, language: string | null, replaces: [string, Fit][], 
     category: "release-automation",
     replaces: replaces.map(([t, fit]) => ({ tool: t, fit })),
     affiliation: null,
+    path: null,
     repo: {
       fullName: `example/${slug}`,
       description: null,

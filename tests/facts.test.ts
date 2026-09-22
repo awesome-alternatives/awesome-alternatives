@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { fetchRecentStargazers, fetchReleases, licenseOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
+import { claimedSlugs, fetchMaintainerClaim, fetchRecentStargazers, fetchReleases, licenseOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
 import { type GitHub, GitHubError } from "../scripts/lib/github.ts";
 
 describe("licenseOf", () => {
@@ -139,5 +139,37 @@ describe("summaryOf", () => {
   it("is null when the notes hold nothing but headings, links or HTML", () => {
     assert.equal(summaryOf("## Changelog\n<!-- generated -->\n**Full Changelog**: https://github.com/o/r/compare/a...b"), null);
     assert.equal(summaryOf(""), null);
+  });
+});
+
+describe("claimedSlugs", () => {
+  it("reads one slug per line, ignoring blank lines and comments", () => {
+    assert.deepEqual(claimedSlugs("# tools we maintain\nferrflow\n\n  lfsx  # the LFS server\r\n"), ["ferrflow", "lfsx"]);
+  });
+});
+
+describe("fetchMaintainerClaim", () => {
+  const encoded = (text: string) => ({ encoding: "base64", content: Buffer.from(text).toString("base64") });
+
+  it("reads the root file, and the package's own file when the entry has a path", async () => {
+    const asked: string[] = [];
+    const slugs = await fetchMaintainerClaim(
+      github((path) => {
+        asked.push(path);
+        return path.includes("crates/cli") ? encoded("cli\n") : encoded("server\n");
+      }),
+      "acme/mono",
+      "main",
+      "crates/cli",
+    );
+    assert.deepEqual(asked, [
+      "/repos/acme/mono/contents/.awesome-alternatives?ref=main",
+      "/repos/acme/mono/contents/crates/cli/.awesome-alternatives?ref=main",
+    ]);
+    assert.deepEqual(slugs, ["server", "cli"]);
+  });
+
+  it("claims nothing when the repository has no file", async () => {
+    assert.deepEqual(await fetchMaintainerClaim(github(() => null), "acme/tool", "main"), []);
   });
 });
