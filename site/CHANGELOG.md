@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.13.0] - 2026-09-22
+
+### Features
+
+- feat(site): search from the navbar on every page but the home page (#32)
+
 ## [0.12.1] - 2026-09-22
 
 ### Bug Fixes
