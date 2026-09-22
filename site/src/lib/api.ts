@@ -1,6 +1,6 @@
 import { SearchError, failureFromResponse, failureFromThrown } from "./failure.ts";
 import { toQuery } from "./query.ts";
-import type { Filters, SearchResult, ToolList } from "./types.ts";
+import type { Filters, Readme, SearchResult, SecurityReport, ToolList } from "./types.ts";
 
 const API_URL = (import.meta.env.PUBLIC_API_URL ?? "/api").replace(/\/+$/, "");
 const TIMEOUT_MS = 15_000;
@@ -33,4 +33,12 @@ export function search(q: string, signal: AbortSignal): Promise<SearchResult> {
 
 export function listTools(filters: Filters, signal: AbortSignal): Promise<ToolList> {
   return send(`/v1/tools?${toQuery(filters)}`, { signal });
+}
+
+export function readme(slug: string, signal: AbortSignal): Promise<Readme> {
+  return send(`/v1/tools/${encodeURIComponent(slug)}/readme`, { signal });
+}
+
+export function security(slug: string, signal: AbortSignal): Promise<SecurityReport> {
+  return send(`/v1/tools/${encodeURIComponent(slug)}/security`, { signal });
 }
