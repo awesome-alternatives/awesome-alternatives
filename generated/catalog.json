@@ -1,8 +1,8 @@
 {
   "stats": {
-    "tools": 149,
-    "categories": 48,
-    "targets": 52
+    "tools": 153,
+    "categories": 49,
+    "targets": 53
   },
   "tools": [
     {
@@ -202,7 +202,7 @@
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20181,
+        "stars": 20182,
         "forks": 1772,
         "topics": [
           "api",
@@ -221,7 +221,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-22T17:15:36Z",
+        "pushedAt": "2026-09-22T17:59:58Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -374,7 +374,7 @@
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47111,
+        "stars": 47112,
         "forks": 2909,
         "topics": [
           "api-client",
@@ -472,7 +472,7 @@
         "homepage": "https://bun.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 96005,
+        "stars": 96006,
         "forks": 5052,
         "topics": [
           "bun",
@@ -492,7 +492,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-22T17:25:28Z",
+        "pushedAt": "2026-09-22T18:18:04Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -563,7 +563,7 @@
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 75988,
+        "stars": 75992,
         "forks": 4990,
         "topics": [
           "acme",
@@ -657,7 +657,7 @@
         "homepage": "https://changesets.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 12425,
+        "stars": 12426,
         "forks": 835,
         "topics": [],
         "archived": false,
@@ -1007,7 +1007,7 @@
         "homepage": "https://date-fns.org",
         "language": "TypeScript",
         "license": null,
-        "stars": 36646,
+        "stars": 36645,
         "forks": 2014,
         "topics": [
           "date",
@@ -1181,7 +1181,7 @@
         "homepage": "https://dandavison.github.io/delta/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 32303,
+        "stars": 32304,
         "forks": 579,
         "topics": [
           "color-themes",
@@ -1268,7 +1268,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108477,
+        "stars": 108476,
         "forks": 6377,
         "topics": [
           "deno",
@@ -1760,7 +1760,7 @@
         "homepage": "https://orm.drizzle.team",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 35855,
+        "stars": 35854,
         "forks": 1645,
         "topics": [
           "bunjs",
@@ -1844,7 +1844,7 @@
         "language": "Java",
         "license": "Other",
         "stars": 77962,
-        "forks": 26081,
+        "forks": 26082,
         "topics": [
           "elasticsearch",
           "java",
@@ -1854,7 +1854,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-22T17:35:40Z",
+        "pushedAt": "2026-09-22T18:19:58Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -2251,7 +2251,7 @@
         "homepage": "https://expressjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 69457,
+        "stars": 69458,
         "forks": 25038,
         "topics": [
           "express",
@@ -2334,7 +2334,7 @@
         "homepage": "https://eza.rocks",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 23341,
+        "stars": 23342,
         "forks": 524,
         "topics": [
           "color",
@@ -2717,17 +2717,24 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-09-22T17:21:23Z",
+        "pushedAt": "2026-09-22T18:19:19Z",
         "defaultBranch": "main"
       },
       "release": {
-        "tag": "v7.24.5",
-        "publishedAt": "2026-09-22T17:33:15Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.5",
+        "tag": "v7.24.6",
+        "publishedAt": "2026-09-22T18:13:29Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.6",
         "source": "release",
         "signed": false
       },
       "releases": [
+        {
+          "tag": "v7.24.6",
+          "name": "fix(forge): do not follow redirects when probing a host's forge (#1158)",
+          "publishedAt": "2026-09-22T18:13:29Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.6",
+          "prerelease": false
+        },
         {
           "tag": "v7.24.5",
           "name": "fix(forge): only recognise GitHub Enterprise by its version header (#1156)",
@@ -2754,13 +2761,6 @@
           "name": "refactor: share the URL authority delimiters between the three host parsers (#1151)",
           "publishedAt": "2026-09-22T12:19:09Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.24.1",
-          "name": "fix(auth): end the extraheader key's host at a backslash, like git (#1149)",
-          "publishedAt": "2026-09-22T11:54:24Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.1",
           "prerelease": false
         }
       ],
@@ -2939,7 +2939,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-01-27T20:41:52Z",
-        "pushedAt": "2026-09-21T19:13:54Z",
+        "pushedAt": "2026-09-22T18:02:34Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -3139,6 +3139,77 @@
       "flags": []
     },
     {
+      "slug": "giftless",
+      "name": "Giftless",
+      "repository": "https://github.com/datopian/giftless",
+      "category": "git-lfs-server",
+      "replaces": [
+        {
+          "tool": "lfs-test-server",
+          "fit": "full",
+          "note": "Pluggable Python server with cloud storage back ends."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-22T18:19:45.000Z",
+      "repo": {
+        "fullName": "datopian/giftless",
+        "description": "🎁 A pluggable Git LFS server written in Python. Highly customizable and easy to extend.",
+        "homepage": "https://giftless.datopian.com",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 181,
+        "forks": 40,
+        "topics": [
+          "cloud-storage",
+          "file-storage",
+          "git",
+          "git-lfs",
+          "lfs-server",
+          "version-control"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-04-04T09:08:18Z",
+        "pushedAt": "2025-12-02T16:09:54Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.6.2",
+        "publishedAt": "2024-12-16T18:45:18Z",
+        "url": "https://github.com/datopian/giftless/releases/tag/v0.6.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.6.2",
+          "name": "Correct typo in pyproject.toml",
+          "publishedAt": "2024-12-16T18:45:18Z",
+          "url": "https://github.com/datopian/giftless/releases/tag/v0.6.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.6.1",
+          "name": "Add release trigger to CI",
+          "publishedAt": "2024-12-16T18:27:17Z",
+          "url": "https://github.com/datopian/giftless/releases/tag/v0.6.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.6.0",
+          "name": "basic_streaming transfer adapter handling of 'filename' URL parameter",
+          "publishedAt": "2024-12-16T17:53:33Z",
+          "url": "https://github.com/datopian/giftless/releases/tag/v0.6.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "git-cliff",
       "name": "git-cliff",
       "repository": "https://github.com/orhun/git-cliff",
@@ -3251,7 +3322,7 @@
         "homepage": "https://gitea.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 58114,
+        "stars": 58115,
         "forks": 7163,
         "topics": [
           "bitbucket",
@@ -3355,7 +3426,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-10-02T16:25:27Z",
-        "pushedAt": "2026-09-22T15:21:07Z",
+        "pushedAt": "2026-09-22T18:09:05Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -4006,7 +4077,7 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29372,
+        "stars": 29373,
         "forks": 2274,
         "topics": [
           "acme",
@@ -4034,7 +4105,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-22T17:33:10Z",
+        "pushedAt": "2026-09-22T18:18:56Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -4100,7 +4171,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 40027,
-        "forks": 2368,
+        "forks": 2369,
         "topics": [
           "api",
           "api-client",
@@ -4381,7 +4452,7 @@
         "language": "Java",
         "license": "MIT",
         "stars": 26578,
-        "forks": 9835,
+        "forks": 9834,
         "topics": [
           "cicd",
           "continuous-delivery",
@@ -4787,7 +4858,7 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31548,
+        "stars": 31549,
         "forks": 1635,
         "topics": [
           "es6",
@@ -5081,7 +5152,7 @@
         "homepage": "https://sw.kovidgoyal.net/kitty/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 35027,
+        "stars": 35028,
         "forks": 1518,
         "topics": [
           "c",
@@ -5265,7 +5336,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-04T09:36:55Z",
-        "pushedAt": "2026-09-22T13:54:03Z",
+        "pushedAt": "2026-09-22T18:19:41Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -5313,6 +5384,175 @@
         }
       ],
       "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "lfs-test-server",
+      "name": "lfs-test-server",
+      "repository": "https://github.com/git-lfs/lfs-test-server",
+      "category": "git-lfs-server",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-22T18:19:45.000Z",
+      "repo": {
+        "fullName": "git-lfs/lfs-test-server",
+        "description": "Standalone Git LFS server",
+        "homepage": null,
+        "language": "Go",
+        "license": "MIT",
+        "stars": 792,
+        "forks": 183,
+        "topics": [
+          "git-lfs",
+          "go",
+          "lfs-server"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-01-13T19:51:31Z",
+        "pushedAt": "2025-12-17T05:32:50Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.4.0",
+        "publishedAt": "2018-05-29T00:17:05Z",
+        "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.4.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.4.0",
+          "name": "Release 0.4.0",
+          "publishedAt": "2018-05-29T00:17:05Z",
+          "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.3.0",
+          "name": "Release 0.3.0",
+          "publishedAt": "2015-10-01T16:12:12Z",
+          "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.2.1",
+          "name": "Release 0.2.1",
+          "publishedAt": "2015-05-06T14:23:02Z",
+          "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.2.0",
+          "name": "Release 0.2.0",
+          "publishedAt": "2015-04-29T17:37:50Z",
+          "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.2",
+          "name": "Release 0.1.2",
+          "publishedAt": "2015-04-09T18:17:11Z",
+          "url": "https://github.com/git-lfs/lfs-test-server/releases/tag/v0.1.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "lfsx",
+      "name": "LFSX",
+      "repository": "https://github.com/FerrLabs/LFSX",
+      "category": "git-lfs-server",
+      "replaces": [
+        {
+          "tool": "lfs-test-server",
+          "fit": "full",
+          "note": "Rust server with S3 and local storage, built for self-hosting."
+        }
+      ],
+      "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
+      "path": null,
+      "addedAt": "2026-09-22T18:19:45.000Z",
+      "repo": {
+        "fullName": "FerrLabs/LFSX",
+        "description": "A fast, lightweight, secure Git LFS server",
+        "homepage": "https://lfsx.dev",
+        "language": "Rust",
+        "license": "MPL-2.0",
+        "stars": 1,
+        "forks": 1,
+        "topics": [
+          "axum",
+          "deduplication",
+          "file-locking",
+          "gamedev",
+          "git",
+          "git-lfs",
+          "helm",
+          "kubernetes",
+          "lfs-server",
+          "rust",
+          "self-hosted",
+          "unity",
+          "version-control",
+          "zstd"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-08-14T10:21:51Z",
+        "pushedAt": "2026-09-22T18:19:37Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.17.1",
+        "publishedAt": "2026-09-22T11:21:59Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.17.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.17.1",
+          "name": "fix(chart): stop Artifact Hub indexing the versions that never had an image (#410)",
+          "publishedAt": "2026-09-22T11:21:59Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.17.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.17.0",
+          "name": "feat(auth): keep a public repository's objects to whoever can push (#398)",
+          "publishedAt": "2026-09-20T08:48:40Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.17.0",
+          "prerelease": false
+        },
+        {
+          "tag": "site@2026.9.17",
+          "name": "feat(auth): keep a public repository's objects to whoever can push (#398)",
+          "publishedAt": "2026-09-20T08:48:41Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.17",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.16.10",
+          "name": "fix(chart): give Artifact Hub the maintainer, the changelog and the kubeVersion (#383)",
+          "publishedAt": "2026-09-18T16:20:58Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.16.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.16.9",
+          "name": "fix(storage): refuse a frame that decodes shorter than its header claims (#362)",
+          "publishedAt": "2026-09-07T07:29:07Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.16.9",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": true,
       "flags": []
     },
     {
@@ -5515,7 +5755,7 @@
         "language": "Java",
         "license": "Other",
         "stars": 14947,
-        "forks": 3495,
+        "forks": 3496,
         "topics": [
           "etl-framework",
           "java",
@@ -5528,7 +5768,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-11-18T01:31:50Z",
-        "pushedAt": "2026-09-21T22:32:43Z",
+        "pushedAt": "2026-09-22T17:44:14Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -5685,7 +5925,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 16462,
-        "forks": 800,
+        "forks": 801,
         "topics": [
           "dates",
           "datetime",
@@ -5749,7 +5989,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-03-30T21:18:17Z",
-        "pushedAt": "2026-09-22T16:53:19Z",
+        "pushedAt": "2026-09-22T18:06:19Z",
         "defaultBranch": "6.x-dev"
       },
       "release": {
@@ -5829,7 +6069,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-22T17:13:43Z",
+        "pushedAt": "2026-09-22T18:19:47Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -6222,7 +6462,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-22T17:09:05Z",
+        "pushedAt": "2026-09-22T17:55:24Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -6474,7 +6714,7 @@
         "homepage": "https://nginx.org/",
         "language": "C",
         "license": "BSD-2-Clause",
-        "stars": 31709,
+        "stars": 31708,
         "forks": 8306,
         "topics": [
           "content-cache",
@@ -6562,7 +6802,7 @@
         "homepage": "https://nodejs.org",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 122035,
+        "stars": 122037,
         "forks": 37501,
         "topics": [
           "javascript",
@@ -6644,7 +6884,7 @@
         "homepage": "https://docs.npmjs.com/cli/",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 10129,
+        "stars": 10130,
         "forks": 4756,
         "topics": [
           "javascript",
@@ -6754,7 +6994,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-22T17:32:29Z",
+        "pushedAt": "2026-09-22T18:17:23Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -7009,7 +7249,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7455,
+        "stars": 7456,
         "forks": 572,
         "topics": [
           "go",
@@ -7091,7 +7331,7 @@
         "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 13756,
+        "stars": 13757,
         "forks": 2964,
         "topics": [
           "analytics",
@@ -7254,7 +7494,7 @@
         "homepage": "https://oxc.rs",
         "language": "Rust",
         "license": "MIT",
-        "stars": 22845,
+        "stars": 22847,
         "forks": 1313,
         "topics": [
           "compiler",
@@ -7556,7 +7796,7 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29185,
+        "stars": 29187,
         "forks": 1873,
         "topics": [
           "analytics",
@@ -7655,7 +7895,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96508,
+        "stars": 96509,
         "forks": 6482,
         "topics": [
           "automation",
@@ -7678,7 +7918,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-11-15T18:32:42Z",
-        "pushedAt": "2026-09-22T16:39:42Z",
+        "pushedAt": "2026-09-22T18:18:38Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -7749,7 +7989,7 @@
         "homepage": "https://pnpm.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 36610,
+        "stars": 36611,
         "forks": 1749,
         "topics": [
           "dependency-manager",
@@ -7765,7 +8005,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-22T17:39:21Z",
+        "pushedAt": "2026-09-22T17:53:54Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -7836,7 +8076,7 @@
         "homepage": "https://podman.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 32913,
+        "stars": 32914,
         "forks": 3384,
         "topics": [
           "containers",
@@ -7992,7 +8232,7 @@
         "homepage": null,
         "language": "Shell",
         "license": "MIT",
-        "stars": 55138,
+        "stars": 55139,
         "forks": 2442,
         "topics": [
           "zsh"
@@ -8362,7 +8602,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-22T17:24:12Z",
+        "pushedAt": "2026-09-22T18:07:07Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -8585,7 +8825,7 @@
         "homepage": "http://redis.io",
         "language": "C",
         "license": "Other",
-        "stars": 76446,
+        "stars": 76447,
         "forks": 24811,
         "topics": [
           "cache",
@@ -9128,7 +9368,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-22T17:15:14Z",
+        "pushedAt": "2026-09-22T18:03:45Z",
         "defaultBranch": "develop"
       },
       "release": {
@@ -9273,6 +9513,54 @@
       "flags": []
     },
     {
+      "slug": "rudolfs",
+      "name": "Rudolfs",
+      "repository": "https://github.com/jasonwhite/rudolfs",
+      "category": "git-lfs-server",
+      "replaces": [
+        {
+          "tool": "lfs-test-server",
+          "fit": "full",
+          "note": "Caching server with S3 or local storage."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-22T18:19:45.000Z",
+      "repo": {
+        "fullName": "jasonwhite/rudolfs",
+        "description": "A high-performance, caching Git LFS server with an AWS S3 and local storage back-end.",
+        "homepage": null,
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 521,
+        "forks": 55,
+        "topics": [
+          "aws-s3",
+          "cache",
+          "git",
+          "lfs",
+          "server"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-03-12T20:16:22Z",
+        "pushedAt": "2026-09-15T00:43:42Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "0.3.8",
+        "publishedAt": null,
+        "url": "https://github.com/jasonwhite/rudolfs/releases/tag/0.3.8",
+        "source": "tag",
+        "signed": false
+      },
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "ruff",
       "name": "Ruff",
       "repository": "https://github.com/astral-sh/ruff",
@@ -9322,7 +9610,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-22T17:38:28Z",
+        "pushedAt": "2026-09-22T17:42:56Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -9393,8 +9681,8 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33649,
-        "forks": 1506,
+        "stars": 33651,
+        "forks": 1507,
         "topics": [
           "ai-native",
           "ai-storage",
@@ -9484,7 +9772,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34899,
+        "stars": 34900,
         "forks": 3001,
         "topics": [
           "blob-storage",
@@ -10038,7 +10326,7 @@
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49429,
+        "stars": 49430,
         "forks": 2907,
         "topics": [],
         "archived": false,
@@ -10222,7 +10510,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-22T15:10:38Z",
+        "pushedAt": "2026-09-22T17:50:07Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -10470,7 +10758,7 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38949,
+        "stars": 38951,
         "forks": 8096,
         "topics": [
           "analytics",
@@ -10552,7 +10840,7 @@
         "homepage": "https://uptime.kuma.pet",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 91682,
+        "stars": 91683,
         "forks": 8454,
         "topics": [
           "docker",
@@ -10648,7 +10936,7 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90062,
+        "stars": 90063,
         "forks": 3602,
         "topics": [
           "packaging",
@@ -10660,7 +10948,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-22T17:38:33Z",
+        "pushedAt": "2026-09-22T17:57:01Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -10731,7 +11019,7 @@
         "homepage": "https://valkey.io",
         "language": "C",
         "license": "BSD-3-Clause",
-        "stars": 27274,
+        "stars": 27275,
         "forks": 1320,
         "topics": [
           "cache",
@@ -11099,7 +11387,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-22T17:30:16Z",
+        "pushedAt": "2026-09-22T17:59:55Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -11211,7 +11499,7 @@
         "homepage": "http://vite.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 82947,
+        "stars": 82948,
         "forks": 8771,
         "topics": [
           "build-tool",
@@ -11295,7 +11583,7 @@
         "homepage": "https://vitepress.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 18343,
+        "stars": 18344,
         "forks": 2734,
         "topics": [
           "docs-generator",
@@ -11469,7 +11757,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-22T17:39:49Z",
+        "pushedAt": "2026-09-22T18:19:12Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -12052,8 +12340,8 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90719,
-        "forks": 10728,
+        "stars": 90722,
+        "forks": 10727,
         "topics": [
           "gpui",
           "rust-lang",
@@ -12064,7 +12352,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-22T16:16:22Z",
+        "pushedAt": "2026-09-22T18:16:00Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -12308,7 +12596,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 25934,
-        "forks": 10273,
+        "forks": 10274,
         "topics": [
           "apache",
           "chat",
