@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.26.0] - 2026-09-22
+
+### Features
+
+- feat(api): search the catalog in any language the site speaks (#86)
+
 ## [0.25.0] - 2026-09-22
 
 ### Features
