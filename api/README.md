@@ -26,11 +26,13 @@ replace:
 
 1. **Keywords.** Tool names, languages and licences that appear in the query as words.
 2. **Local model.** When no tool is named, the query is embedded with
-   [BGE small](https://huggingface.co/BAAI/bge-small-en-v1.5) (quantised, about 35 MB, baked into
-   the image) and compared with the description of every tool other entries replace. "automate my
-   releases from commit messages" finds semantic-release this way. Without a target, results are
-   ranked by how close each tool's description is to the query, so "generate a changelog from git
-   history" returns git-cliff.
+   [paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+   (quantised, about 135 MB, baked into the image) and compared with the description of every tool
+   other entries replace. "automate my releases from commit messages" finds semantic-release this
+   way, and so does "automatiser mes releases depuis les messages de commit": the model is
+   multilingual, while the descriptions it reads stay in English, the way GitHub returns them.
+   Without a target, results are ranked by how close each tool's description is to the query, so
+   "generate a changelog from git history" returns git-cliff.
 3. **Jev.** Only when the first two found no target, and only with `TYPESAFE_API_KEY` set. Jev is
    asked to pick the target tool, language and licence among values actually in the catalog, plus
    `none`, and whether a drop-in is needed. Answers below 0.6 confidence and labels outside the
@@ -42,8 +44,12 @@ replace:
 runs on the first two steps. If the model cannot be loaded, it logs a warning and runs on keywords
 alone. Neither stops it from serving.
 
-The model thresholds (0.75 to pick a target, 0.73 to keep a result) were set against the catalog:
-unrelated queries such as "a kubernetes dashboard" score below 0.70 against every tool.
+The model thresholds (0.45 to pick a target, 0.05 of lead over the runner-up, 0.40 to keep a
+result) were measured against the catalog on queries that name no tool, in the four languages the
+site speaks. A query the catalog can answer scores at least 0.45 on the tool it means; one it
+cannot, such as "what is the weather today" or "comment faire une tarte aux pommes", peaks at 0.33
+and keeps no result at all. The lead is what separates a real answer from a near-tie between two
+unrelated tools, which is the shape a wrong target takes here.
 
 At startup and on every refresh the whole catalog is embedded, in batches of 16 texts. The ONNX
 session pads each batch to its longest text and holds the raw output of every batch until the call

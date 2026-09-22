@@ -90,7 +90,7 @@ export const pages = {
     search: {
       heading: "How search works",
       before:
-        'Your query is first read as keywords: the names of tools that others replace, the languages and licences in the catalog, and "drop in". When no tool to replace is named, a small embedding model running on the search server compares the query with every tool\'s description. If one tool to replace clearly stands out, it is picked; otherwise the results are ranked by how close they are to the query. Only when neither step finds a tool to replace, and the server has a key for it, is the text of the query sent to Jev, an external service, to read it. Its reading is cached on the server for a day. The results say which one read your query: "Matched locally" or "Read by Jev".',
+        'Your query is first read as keywords: the names of tools that others replace, the languages and licences in the catalog, and "drop in". When no tool to replace is named, a small multilingual embedding model running on the search server compares the query with every tool\'s description, so a query written in any language the site speaks finds the same tools as its English wording, even though the descriptions themselves stay in English, the way GitHub returns them. If one tool to replace clearly stands out, it is picked; otherwise the results are ranked by how close they are to the query. Only when neither step finds a tool to replace, and the server has a key for it, is the text of the query sent to Jev, an external service, to read it. Its reading is cached on the server for a day. The results say which one read your query: "Matched locally" or "Read by Jev".',
       privacyLink: "The privacy page",
       after: "says what is sent and what is kept.",
     },

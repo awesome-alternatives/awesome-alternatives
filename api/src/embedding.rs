@@ -27,8 +27,8 @@ pub struct LocalModel(Mutex<TextEmbedding>);
 
 impl LocalModel {
     pub fn load() -> Result<Self, EmbedError> {
-        let options =
-            TextInitOptions::new(EmbeddingModel::BGESmallENV15Q).with_show_download_progress(false);
+        let options = TextInitOptions::new(EmbeddingModel::ParaphraseMLMiniLML12V2Q)
+            .with_show_download_progress(false);
         TextEmbedding::try_new(options)
             .map(|model| Self(Mutex::new(model)))
             .map_err(|e| EmbedError(e.to_string()))
@@ -48,9 +48,9 @@ impl Embedder for LocalModel {
 
     fn thresholds(&self) -> Thresholds {
         Thresholds {
-            target: 0.75,
-            margin: 0.02,
-            relevance: 0.73,
+            target: 0.45,
+            margin: 0.05,
+            relevance: 0.40,
         }
     }
 }
