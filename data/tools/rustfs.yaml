@@ -1,0 +1,7 @@
+name: RustFS
+repository: https://github.com/rustfs/rustfs
+category: object-storage
+replaces:
+  - tool: minio
+    fit: full
+    note: S3-compatible object storage written in Rust, positioned as a MinIO replacement.

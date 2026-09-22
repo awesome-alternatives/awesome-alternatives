@@ -82,3 +82,6 @@ node-web-framework:
 typescript-orm:
   name: TypeScript ORMs
   description: Typed database access and migrations for TypeScript.
+object-storage:
+  name: Object storage
+  description: Self-hosted servers speaking the S3 API.
