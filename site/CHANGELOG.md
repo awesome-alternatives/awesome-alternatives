@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.33.0] - 2026-09-22
+
+### Features
+
+- feat(site): compare two tools side by side (#99)
+
 ## [0.32.0] - 2026-09-22
 
 ### Features
