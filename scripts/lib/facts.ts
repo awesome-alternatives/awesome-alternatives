@@ -1,6 +1,6 @@
 import { parse } from "yaml";
 import { type GitHub, GitHubError, repoPath } from "./github.ts";
-import type { ReleaseFacts, RepoFacts } from "./types.ts";
+import type { ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
 
 interface ApiRepo {
   full_name: string;
@@ -21,8 +21,12 @@ interface ApiRepo {
 
 interface ApiRelease {
   tag_name: string;
+  name?: string | null;
+  body?: string | null;
   published_at: string | null;
   html_url: string;
+  draft?: boolean;
+  prerelease?: boolean;
 }
 
 interface ApiTag {
@@ -105,6 +109,45 @@ export async function fetchRelease(gh: GitHub, fullName: string): Promise<Releas
     source: "tag",
     signed: await isTagSigned(gh, fullName, tag.name),
   };
+}
+
+export const RELEASE_HISTORY = 5;
+
+export async function fetchReleases(gh: GitHub, fullName: string): Promise<ReleaseEntry[]> {
+  const releases = await gh.get<ApiRelease[]>(`/repos/${fullName}/releases?per_page=${RELEASE_HISTORY + 5}`);
+  return (releases ?? [])
+    .filter((r) => !r.draft)
+    .slice(0, RELEASE_HISTORY)
+    .map((r) => {
+      const name = r.name?.trim();
+      return {
+        tag: r.tag_name,
+        name: name && name !== r.tag_name ? name : summaryOf(r.body ?? ""),
+        publishedAt: r.published_at,
+        url: r.html_url,
+        prerelease: r.prerelease ?? false,
+      };
+    });
+}
+
+const SUMMARY_LENGTH = 120;
+const BOILERPLATE = /^(what'?s changed|changes|changelog|full changelog|new contributors|release notes)\b/i;
+
+export function summaryOf(body: string): string | null {
+  for (const raw of body.split(/\r?\n/)) {
+    const line = raw
+      .trim()
+      .replace(/^[-*+]\s+/, "")
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/\*\*|__|`/g, "")
+      .replace(/\*([^*]+)\*/g, "$1")
+      .replace(/\s+by @[\w-]+ in https?:\/\/\S+$/, "")
+      .replace(/\s*\(?https?:\/\/\S+\)?/g, "")
+      .trim();
+    if (!line || line.startsWith("#") || line.startsWith("<") || BOILERPLATE.test(line)) continue;
+    return line.length > SUMMARY_LENGTH ? `${line.slice(0, SUMMARY_LENGTH - 1).trimEnd()}…` : line;
+  }
+  return null;
 }
 
 function encodeRef(ref: string): string {

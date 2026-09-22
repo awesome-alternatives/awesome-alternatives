@@ -28,6 +28,7 @@ function entry(slug: string, overrides: Partial<EnrichedTool> = {}, archived = f
       defaultBranch: "main",
     },
     release: null,
+    releases: [],
     maintainerVerified: false,
     flags: [],
     ...overrides,

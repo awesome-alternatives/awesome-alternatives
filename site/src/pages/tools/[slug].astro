@@ -16,7 +16,7 @@ interface Props {
 }
 
 const { tool } = Astro.props;
-const { repo, release } = tool;
+const { repo, release, releases } = tool;
 const replacedBy = alternativesTo(tools, tool.slug);
 const category = categories[tool.category];
 const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
@@ -95,6 +95,29 @@ const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/
             <span class="tag">#{topic}</span>
           ))}
         </div>
+      </section>
+    )
+  }
+
+  {
+    releases.length > 0 && (
+      <section class="block">
+        <p class="section-label">Release history</p>
+        <ol class="history">
+          {releases.map((r) => (
+            <li>
+              <span>
+                <a class="history-tag" href={r.url}>{r.tag}</a>
+                <span class="history-date">{day(r.publishedAt)}</span>
+              </span>
+              <span class="history-name">{r.name ?? ""}</span>
+              <span class="history-marks">
+                {r.prerelease && <span class="mark">pre-release</span>}
+                {release?.signed && release.tag === r.tag && <span class="mark mark-good">✓ signed</span>}
+              </span>
+            </li>
+          ))}
+        </ol>
       </section>
     )
   }
