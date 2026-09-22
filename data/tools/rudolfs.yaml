@@ -1,0 +1,7 @@
+name: Rudolfs
+repository: https://github.com/jasonwhite/rudolfs
+category: git-lfs-server
+replaces:
+  - tool: lfs-test-server
+    fit: full
+    note: Caching server with S3 or local storage.
