@@ -76,6 +76,44 @@
       "flags": []
     },
     {
+      "slug": "bruno",
+      "name": "Bruno",
+      "repository": "https://github.com/usebruno/bruno",
+      "category": "api-client",
+      "replaces": [
+        {
+          "tool": "insomnia",
+          "fit": "full",
+          "note": "Collections are plain files kept in your repository."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "usebruno/bruno",
+        "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+        "homepage": "https://www.usebruno.com/",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 47110,
+        "forks": 2908,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-09-27T20:51:45Z",
+        "pushedAt": "2026-09-22T15:04:08Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v4.1.0",
+        "publishedAt": "2026-08-20T14:09:37Z",
+        "url": "https://github.com/usebruno/bruno/releases/tag/v4.1.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "bun",
       "name": "Bun",
       "repository": "https://github.com/oven-sh/bun",
@@ -114,6 +152,44 @@
         "url": "https://github.com/oven-sh/bun/releases/tag/bun-v1.4.2",
         "source": "release",
         "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "caddy",
+      "name": "Caddy",
+      "repository": "https://github.com/caddyserver/caddy",
+      "category": "reverse-proxy",
+      "replaces": [
+        {
+          "tool": "nginx",
+          "fit": "full",
+          "note": "Automatic HTTPS and a shorter configuration."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "caddyserver/caddy",
+        "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+        "homepage": "https://caddyserver.com",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 75985,
+        "forks": 4991,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-01-13T19:45:03Z",
+        "pushedAt": "2026-09-21T22:13:02Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v2.11.4",
+        "publishedAt": "2026-06-03T06:52:22Z",
+        "url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.4",
+        "source": "release",
+        "signed": true
       },
       "maintainerVerified": false,
       "flags": []
@@ -244,7 +320,7 @@
         "homepage": "https://mobyproject.org/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 72125,
+        "stars": 72126,
         "forks": 19228,
         "archived": false,
         "fork": false,
@@ -259,6 +335,38 @@
         "url": "https://github.com/moby/moby/releases/tag/docker-v29.8.1",
         "source": "release",
         "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "docusaurus",
+      "name": "Docusaurus",
+      "repository": "https://github.com/facebook/docusaurus",
+      "category": "documentation-site",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "facebook/docusaurus",
+        "description": "Easy to maintain open source documentation websites.",
+        "homepage": "https://docusaurus.io",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 66316,
+        "forks": 10040,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-06-20T16:13:53Z",
+        "pushedAt": "2026-09-22T10:16:12Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v3.10.2",
+        "publishedAt": "2026-07-10T18:31:27Z",
+        "url": "https://github.com/facebook/docusaurus/releases/tag/v3.10.2",
+        "source": "release",
+        "signed": false
       },
       "maintainerVerified": false,
       "flags": []
@@ -326,13 +434,51 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-22T14:10:08Z",
+        "pushedAt": "2026-09-22T15:53:58Z",
         "defaultBranch": "main"
       },
       "release": {
         "tag": "v2.0.0",
         "publishedAt": "2026-09-16T10:29:28Z",
         "url": "https://github.com/dragonflydb/dragonfly/releases/tag/v2.0.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "drizzle",
+      "name": "Drizzle ORM",
+      "repository": "https://github.com/drizzle-team/drizzle-orm",
+      "category": "typescript-orm",
+      "replaces": [
+        {
+          "tool": "prisma",
+          "fit": "full",
+          "note": "Schema written in TypeScript and a SQL-like query builder."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "drizzle-team/drizzle-orm",
+        "description": "ORM",
+        "homepage": "https://orm.drizzle.team",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 35854,
+        "forks": 1645,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-06-24T09:03:05Z",
+        "pushedAt": "2026-09-22T10:33:35Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "drizzle-kit@0.31.11",
+        "publishedAt": "2026-09-21T10:02:50Z",
+        "url": "https://github.com/drizzle-team/drizzle-orm/releases/tag/drizzle-kit%400.31.11",
         "source": "release",
         "signed": true
       },
@@ -367,6 +513,44 @@
         "url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.4",
         "source": "release",
         "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "eleventy",
+      "name": "Eleventy",
+      "repository": "https://github.com/11ty/buildawesome",
+      "category": "static-site-generator",
+      "replaces": [
+        {
+          "tool": "jekyll",
+          "fit": "full",
+          "note": "JavaScript, with several template languages side by side."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "11ty/buildawesome",
+        "description": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
+        "homepage": "https://build.awesome.me/",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 19929,
+        "forks": 589,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-11-27T05:19:00Z",
+        "pushedAt": "2026-09-21T22:06:53Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v3.1.6",
+        "publishedAt": "2026-06-02T22:01:47Z",
+        "url": "https://github.com/11ty/buildawesome/releases/tag/v3.1.6",
+        "source": "release",
+        "signed": false
       },
       "maintainerVerified": false,
       "flags": []
@@ -437,6 +621,114 @@
         "url": "https://github.com/eslint/eslint/releases/tag/v10.11.0",
         "source": "release",
         "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "express",
+      "name": "Express",
+      "repository": "https://github.com/expressjs/express",
+      "category": "node-web-framework",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "expressjs/express",
+        "description": "Fast, unopinionated, minimalist web framework for node.",
+        "homepage": "https://expressjs.com",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 69456,
+        "forks": 25039,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2009-06-26T18:56:01Z",
+        "pushedAt": "2026-09-15T17:52:26Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v5.2.1",
+        "publishedAt": "2025-12-01T20:54:44Z",
+        "url": "https://github.com/expressjs/express/releases/tag/v5.2.1",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "fastify",
+      "name": "Fastify",
+      "repository": "https://github.com/fastify/fastify",
+      "category": "node-web-framework",
+      "replaces": [
+        {
+          "tool": "express",
+          "fit": "full",
+          "note": "Schema-based validation and serialisation, and a plugin system."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "fastify/fastify",
+        "description": "Fast and low overhead web framework, for Node.js",
+        "homepage": "https://www.fastify.dev",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 37184,
+        "forks": 3028,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-09-28T19:10:14Z",
+        "pushedAt": "2026-09-22T08:46:55Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v5.12.5",
+        "publishedAt": "2026-09-16T10:19:43Z",
+        "url": "https://github.com/fastify/fastify/releases/tag/v5.12.5",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "ferretdb",
+      "name": "FerretDB",
+      "repository": "https://github.com/FerretDB/FerretDB",
+      "category": "document-database",
+      "replaces": [
+        {
+          "tool": "mongodb",
+          "fit": "drop-in",
+          "note": "Speaks the MongoDB wire protocol on top of PostgreSQL."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "FerretDB/FerretDB",
+        "description": "A truly Open Source MongoDB alternative",
+        "homepage": "https://www.ferretdb.com",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 11075,
+        "forks": 488,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-10-30T08:06:36Z",
+        "pushedAt": "2026-06-05T07:31:28Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.7.0",
+        "publishedAt": "2025-11-10T17:47:20Z",
+        "url": "https://github.com/FerretDB/FerretDB/releases/tag/v2.7.0",
+        "source": "release",
+        "signed": true
       },
       "maintainerVerified": false,
       "flags": []
@@ -550,6 +842,82 @@
       "flags": []
     },
     {
+      "slug": "hono",
+      "name": "Hono",
+      "repository": "https://github.com/honojs/hono",
+      "category": "node-web-framework",
+      "replaces": [
+        {
+          "tool": "express",
+          "fit": "full",
+          "note": "Built on Web Standards, runs on Node.js, Deno, Bun and edge runtimes."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "honojs/hono",
+        "description": "Web framework built on Web Standards",
+        "homepage": "https://hono.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 32301,
+        "forks": 1338,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-12-14T20:05:30Z",
+        "pushedAt": "2026-09-22T06:02:51Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v4.13.8",
+        "publishedAt": "2026-09-15T07:31:42Z",
+        "url": "https://github.com/honojs/hono/releases/tag/v4.13.8",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "hoppscotch",
+      "name": "Hoppscotch",
+      "repository": "https://github.com/hoppscotch/hoppscotch",
+      "category": "api-client",
+      "replaces": [
+        {
+          "tool": "insomnia",
+          "fit": "full",
+          "note": "Runs in the browser, as a desktop app or self-hosted."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "hoppscotch/hoppscotch",
+        "description": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
+        "homepage": "https://hoppscotch.io",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 80468,
+        "forks": 6119,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-08-21T13:15:24Z",
+        "pushedAt": "2026-09-21T16:50:40Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "2026.8.1",
+        "publishedAt": "2026-09-14T06:26:28Z",
+        "url": "https://github.com/hoppscotch/hoppscotch/releases/tag/2026.8.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "httpie",
       "name": "HTTPie",
       "repository": "https://github.com/httpie/cli",
@@ -584,6 +952,108 @@
       ]
     },
     {
+      "slug": "hugo",
+      "name": "Hugo",
+      "repository": "https://github.com/gohugoio/hugo",
+      "category": "static-site-generator",
+      "replaces": [
+        {
+          "tool": "jekyll",
+          "fit": "full",
+          "note": "Single binary with much faster builds."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "gohugoio/hugo",
+        "description": "The world’s fastest framework for building websites.",
+        "homepage": "https://gohugo.io",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 89904,
+        "forks": 8385,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-07-04T15:26:26Z",
+        "pushedAt": "2026-09-22T14:25:55Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.166.0",
+        "publishedAt": "2026-09-09T15:10:02Z",
+        "url": "https://github.com/gohugoio/hugo/releases/tag/v0.166.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "insomnia",
+      "name": "Insomnia",
+      "repository": "https://github.com/Kong/insomnia",
+      "category": "api-client",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "Kong/insomnia",
+        "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+        "homepage": "https://insomnia.rest",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 40027,
+        "forks": 2368,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-04-23T03:54:26Z",
+        "pushedAt": "2026-09-22T14:18:00Z",
+        "defaultBranch": "develop"
+      },
+      "release": {
+        "tag": "core@13.2.0",
+        "publishedAt": "2026-08-25T08:32:57Z",
+        "url": "https://github.com/Kong/insomnia/releases/tag/core%4013.2.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "jekyll",
+      "name": "Jekyll",
+      "repository": "https://github.com/jekyll/jekyll",
+      "category": "static-site-generator",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "jekyll/jekyll",
+        "description": ":globe_with_meridians: Jekyll is a blog-aware static site generator in Ruby",
+        "homepage": "https://jekyllrb.com",
+        "language": "Ruby",
+        "license": "MIT",
+        "stars": 51680,
+        "forks": 10299,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2008-10-20T06:29:03Z",
+        "pushedAt": "2026-09-17T19:20:03Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v4.4.1",
+        "publishedAt": "2025-01-29T12:47:41Z",
+        "url": "https://github.com/jekyll/jekyll/releases/tag/v4.4.1",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "jest",
       "name": "Jest",
       "repository": "https://github.com/jestjs/jest",
@@ -610,6 +1080,38 @@
         "publishedAt": "2026-09-18T13:57:03Z",
         "url": "https://github.com/jestjs/jest/releases/tag/v30.5.2",
         "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "kafka",
+      "name": "Apache Kafka",
+      "repository": "https://github.com/apache/kafka",
+      "category": "message-streaming",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "apache/kafka",
+        "description": "Apache Kafka - A distributed event streaming platform",
+        "homepage": "https://kafka.apache.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 33782,
+        "forks": 15527,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-08-15T18:06:16Z",
+        "pushedAt": "2026-09-22T14:33:15Z",
+        "defaultBranch": "trunk"
+      },
+      "release": {
+        "tag": "show",
+        "publishedAt": null,
+        "url": "https://github.com/apache/kafka/releases/tag/show",
+        "source": "tag",
         "signed": false
       },
       "maintainerVerified": false,
@@ -694,6 +1196,38 @@
       "flags": []
     },
     {
+      "slug": "lerna",
+      "name": "Lerna",
+      "repository": "https://github.com/lerna/lerna",
+      "category": "monorepo-tool",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "lerna/lerna",
+        "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
+        "homepage": "https://lerna.js.org",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 36054,
+        "forks": 2265,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-12-04T09:36:55Z",
+        "pushedAt": "2026-09-22T13:54:03Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v10.0.1",
+        "publishedAt": "2026-08-19T13:37:24Z",
+        "url": "https://github.com/lerna/lerna/releases/tag/v10.0.1",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "meilisearch",
       "name": "Meilisearch",
       "repository": "https://github.com/meilisearch/meilisearch",
@@ -727,6 +1261,140 @@
         "url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.54.0",
         "source": "release",
         "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "repository": "https://github.com/mongodb/mongo",
+      "category": "document-database",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "mongodb/mongo",
+        "description": "The MongoDB Database",
+        "homepage": "https://www.mongodb.com/",
+        "language": "C++",
+        "license": "Other",
+        "stars": 28574,
+        "forks": 5808,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2009-01-15T16:15:18Z",
+        "pushedAt": "2026-09-22T15:17:28Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "show",
+        "publishedAt": null,
+        "url": "https://github.com/mongodb/mongo/releases/tag/show",
+        "source": "tag",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "moon",
+      "name": "moon",
+      "repository": "https://github.com/moonrepo/moon",
+      "category": "monorepo-tool",
+      "replaces": [
+        {
+          "tool": "lerna",
+          "fit": "partial",
+          "note": "Task running and caching across languages, no versioning or publishing."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "moonrepo/moon",
+        "description": "A build system and monorepo management tool for the web ecosystem, written in Rust.",
+        "homepage": "https://moonrepo.dev/moon",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 4113,
+        "forks": 252,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-10-23T18:18:15Z",
+        "pushedAt": "2026-09-21T02:39:13Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v2.5.5",
+        "publishedAt": "2026-09-15T04:23:39Z",
+        "url": "https://github.com/moonrepo/moon/releases/tag/v2.5.5",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "mypy",
+      "name": "mypy",
+      "repository": "https://github.com/python/mypy",
+      "category": "python-type-checker",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "python/mypy",
+        "description": "Optional static typing for Python",
+        "homepage": "https://www.mypy-lang.org/",
+        "language": "Python",
+        "license": "Other",
+        "stars": 20648,
+        "forks": 3309,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-12-07T13:30:23Z",
+        "pushedAt": "2026-09-22T10:44:16Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v2.3.1",
+        "publishedAt": null,
+        "url": "https://github.com/python/mypy/releases/tag/v2.3.1",
+        "source": "tag",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "nginx",
+      "name": "nginx",
+      "repository": "https://github.com/nginx/nginx",
+      "category": "reverse-proxy",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "nginx/nginx",
+        "description": "The official NGINX Open Source repository.",
+        "homepage": "https://nginx.org/",
+        "language": "C",
+        "license": "BSD-2-Clause",
+        "stars": 31707,
+        "forks": 8307,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-06-23T10:26:27Z",
+        "pushedAt": "2026-09-16T12:13:03Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "release-1.31.6",
+        "publishedAt": "2026-09-15T15:34:19Z",
+        "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.6",
+        "source": "release",
+        "signed": false
       },
       "maintainerVerified": false,
       "flags": []
@@ -789,6 +1457,82 @@
         "tag": "libnpmpack-v9.1.13",
         "publishedAt": "2026-08-26T21:48:48Z",
         "url": "https://github.com/npm/cli/releases/tag/libnpmpack-v9.1.13",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "nx",
+      "name": "Nx",
+      "repository": "https://github.com/nrwl/nx",
+      "category": "monorepo-tool",
+      "replaces": [
+        {
+          "tool": "lerna",
+          "fit": "full",
+          "note": "Task running and caching for the same workspaces, and what Lerna itself now runs on."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "nrwl/nx",
+        "description": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+        "homepage": "https://nx.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 29364,
+        "forks": 3003,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-08-11T18:50:23Z",
+        "pushedAt": "2026-09-22T15:53:00Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "23.2.1",
+        "publishedAt": "2026-09-09T20:20:38Z",
+        "url": "https://github.com/nrwl/nx/releases/tag/23.2.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "oh-my-posh",
+      "name": "Oh My Posh",
+      "repository": "https://github.com/JanDeDobbeleer/oh-my-posh",
+      "category": "shell-prompt",
+      "replaces": [
+        {
+          "tool": "powerlevel10k",
+          "fit": "full",
+          "note": "Works across shells, PowerShell included."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "JanDeDobbeleer/oh-my-posh",
+        "description": "The most customisable and low-latency cross platform/shell prompt renderer",
+        "homepage": "https://ohmyposh.dev",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 23492,
+        "forks": 2787,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-03-13T11:13:31Z",
+        "pushedAt": "2026-09-18T13:54:12Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v31.3.0",
+        "publishedAt": "2026-09-13T15:27:58Z",
+        "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.3.0",
         "source": "release",
         "signed": false
       },
@@ -1126,6 +1870,38 @@
       "flags": []
     },
     {
+      "slug": "powerlevel10k",
+      "name": "Powerlevel10k",
+      "repository": "https://github.com/romkatv/powerlevel10k",
+      "category": "shell-prompt",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "romkatv/powerlevel10k",
+        "description": "A Zsh theme",
+        "homepage": null,
+        "language": "Shell",
+        "license": "MIT",
+        "stars": 55137,
+        "forks": 2443,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-02-24T19:09:45Z",
+        "pushedAt": "2026-09-14T08:10:04Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v1.20.0",
+        "publishedAt": "2024-01-26T08:06:46Z",
+        "url": "https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "prettier",
       "name": "Prettier",
       "repository": "https://github.com/prettier/prettier",
@@ -1153,6 +1929,38 @@
         "url": "https://github.com/prettier/prettier/releases/tag/3.9.8",
         "source": "release",
         "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "prisma",
+      "name": "Prisma ORM",
+      "repository": "https://github.com/prisma/orm",
+      "category": "typescript-orm",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "prisma/orm",
+        "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+        "homepage": "https://www.prisma.io",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 47656,
+        "forks": 2543,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-06-20T13:33:47Z",
+        "pushedAt": "2026-09-22T15:34:46Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.17.0",
+        "publishedAt": "2026-08-04T13:31:06Z",
+        "url": "https://github.com/prisma/orm/releases/tag/v0.17.0",
+        "source": "release",
+        "signed": true
       },
       "maintainerVerified": false,
       "flags": []
@@ -1260,6 +2068,44 @@
       "flags": []
     },
     {
+      "slug": "pyright",
+      "name": "Pyright",
+      "repository": "https://github.com/microsoft/pyright",
+      "category": "python-type-checker",
+      "replaces": [
+        {
+          "tool": "mypy",
+          "fit": "full",
+          "note": "Also the engine behind Pylance in VS Code."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "microsoft/pyright",
+        "description": "Static Type Checker for Python",
+        "homepage": null,
+        "language": "Python",
+        "license": "Other",
+        "stars": 15654,
+        "forks": 1817,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-03-12T03:38:46Z",
+        "pushedAt": "2026-09-22T01:24:27Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "1.1.414",
+        "publishedAt": "2026-09-09T20:40:05Z",
+        "url": "https://github.com/microsoft/pyright/releases/tag/1.1.414",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "redis",
       "name": "Redis",
       "repository": "https://github.com/redis/redis",
@@ -1290,6 +2136,46 @@
       },
       "maintainerVerified": false,
       "flags": []
+    },
+    {
+      "slug": "redpanda",
+      "name": "Redpanda",
+      "repository": "https://github.com/redpanda-data/redpanda",
+      "category": "message-streaming",
+      "replaces": [
+        {
+          "tool": "kafka",
+          "fit": "drop-in",
+          "note": "Kafka API compatible, without ZooKeeper or a JVM."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "redpanda-data/redpanda",
+        "description": "Redpanda is a streaming data platform for developers. Kafka API compatible. 10x faster. No ZooKeeper. No JVM!",
+        "homepage": "https://redpanda.com",
+        "language": "C++",
+        "license": null,
+        "stars": 12562,
+        "forks": 792,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-11-02T22:43:36Z",
+        "pushedAt": "2026-08-22T00:45:06Z",
+        "defaultBranch": "dev"
+      },
+      "release": {
+        "tag": "v26.2.2",
+        "publishedAt": "2026-08-22T00:45:06Z",
+        "url": "https://github.com/redpanda-data/redpanda/releases/tag/v26.2.2",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": [
+        "no-license"
+      ]
     },
     {
       "slug": "release-please",
@@ -1524,6 +2410,82 @@
       "flags": []
     },
     {
+      "slug": "starlight",
+      "name": "Starlight",
+      "repository": "https://github.com/withastro/starlight",
+      "category": "documentation-site",
+      "replaces": [
+        {
+          "tool": "docusaurus",
+          "fit": "full",
+          "note": "Built on Astro, ships little JavaScript by default."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "withastro/starlight",
+        "description": "🌟 Build beautiful, accessible, high-performance documentation websites with Astro",
+        "homepage": "https://starlight.astro.build",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 9281,
+        "forks": 1041,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-03-16T15:55:33Z",
+        "pushedAt": "2026-09-22T12:18:50Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "@astrojs/starlight@0.42.2",
+        "publishedAt": "2026-09-18T10:01:56Z",
+        "url": "https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.2",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "starship",
+      "name": "Starship",
+      "repository": "https://github.com/starship/starship",
+      "category": "shell-prompt",
+      "replaces": [
+        {
+          "tool": "powerlevel10k",
+          "fit": "full",
+          "note": "Works across shells, not only zsh."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "starship/starship",
+        "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+        "homepage": "https://starship.rs",
+        "language": "Rust",
+        "license": "ISC",
+        "stars": 59993,
+        "forks": 2674,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-04-02T03:23:12Z",
+        "pushedAt": "2026-09-21T22:26:18Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.26.0",
+        "publishedAt": "2026-06-28T17:02:47Z",
+        "url": "https://github.com/starship/starship/releases/tag/v1.26.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "terraform",
       "name": "Terraform",
       "repository": "https://github.com/hashicorp/terraform",
@@ -1588,6 +2550,152 @@
       "flags": [
         "inactive"
       ]
+    },
+    {
+      "slug": "tmux",
+      "name": "tmux",
+      "repository": "https://github.com/tmux/tmux",
+      "category": "terminal-multiplexer",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "tmux/tmux",
+        "description": "tmux source code",
+        "homepage": null,
+        "language": "C",
+        "license": "ISC",
+        "stars": 49428,
+        "forks": 2907,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-06-03T23:32:55Z",
+        "pushedAt": "2026-09-22T13:25:58Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "3.7c",
+        "publishedAt": "2026-08-17T12:53:48Z",
+        "url": "https://github.com/tmux/tmux/releases/tag/3.7c",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "traefik",
+      "name": "Traefik",
+      "repository": "https://github.com/traefik/traefik",
+      "category": "reverse-proxy",
+      "replaces": [
+        {
+          "tool": "nginx",
+          "fit": "partial",
+          "note": "Reverse proxy and load balancer configured from container labels, not a general web server."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "traefik/traefik",
+        "description": "The Cloud Native Application Proxy",
+        "homepage": "https://traefik.io",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 64923,
+        "forks": 6201,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-09-13T19:04:02Z",
+        "pushedAt": "2026-09-22T14:50:06Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v3.7.13",
+        "publishedAt": "2026-09-04T12:40:17Z",
+        "url": "https://github.com/traefik/traefik/releases/tag/v3.7.13",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "turborepo",
+      "name": "Turborepo",
+      "repository": "https://github.com/vercel/turborepo",
+      "category": "monorepo-tool",
+      "replaces": [
+        {
+          "tool": "lerna",
+          "fit": "partial",
+          "note": "Task running and caching, no versioning or publishing."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vercel/turborepo",
+        "description": "Build system optimized for JavaScript and TypeScript, written in Rust",
+        "homepage": "https://turborepo.dev",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 31126,
+        "forks": 2446,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-10-05T17:37:11Z",
+        "pushedAt": "2026-09-22T15:10:38Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.11.2",
+        "publishedAt": "2026-09-18T21:07:28Z",
+        "url": "https://github.com/vercel/turborepo/releases/tag/v2.11.2",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "ty",
+      "name": "ty",
+      "repository": "https://github.com/astral-sh/ty",
+      "category": "python-type-checker",
+      "replaces": [
+        {
+          "tool": "mypy",
+          "fit": "full",
+          "note": "Still in beta."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "astral-sh/ty",
+        "description": "An extremely fast Python type checker and language server, written in Rust.",
+        "homepage": "https://docs.astral.sh/ty/",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 19731,
+        "forks": 333,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-05-02T16:37:51Z",
+        "pushedAt": "2026-09-21T22:48:30Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "0.0.83",
+        "publishedAt": "2026-09-21T22:48:30Z",
+        "url": "https://github.com/astral-sh/ty/releases/tag/0.0.83",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
     },
     {
       "slug": "typesense",
@@ -1785,6 +2893,44 @@
       "flags": []
     },
     {
+      "slug": "vitepress",
+      "name": "VitePress",
+      "repository": "https://github.com/vuejs/vitepress",
+      "category": "documentation-site",
+      "replaces": [
+        {
+          "tool": "docusaurus",
+          "fit": "full",
+          "note": "Markdown first, built on Vue and Vite."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vuejs/vitepress",
+        "description": "Vite & Vue powered static site generator.",
+        "homepage": "https://vitepress.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 18344,
+        "forks": 2733,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-04-30T23:16:17Z",
+        "pushedAt": "2026-09-22T13:02:51Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.0.0-alpha.20",
+        "publishedAt": "2026-09-04T10:59:16Z",
+        "url": "https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "vitest",
       "name": "Vitest",
       "repository": "https://github.com/vitest-dev/vitest",
@@ -1924,6 +3070,82 @@
         "tag": "@yarnpkg/cli/4.18.0",
         "publishedAt": "2026-07-29T07:56:33Z",
         "url": "https://github.com/yarnpkg/berry/releases/tag/%40yarnpkg/cli/4.18.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "zellij",
+      "name": "Zellij",
+      "repository": "https://github.com/zellij-org/zellij",
+      "category": "terminal-multiplexer",
+      "replaces": [
+        {
+          "tool": "tmux",
+          "fit": "full",
+          "note": "Layouts, floating panes and on-screen key hints out of the box."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "zellij-org/zellij",
+        "description": "A terminal workspace with batteries included",
+        "homepage": "https://zellij.dev",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 35505,
+        "forks": 1457,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-09-01T14:04:28Z",
+        "pushedAt": "2026-09-22T15:42:20Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.45.1",
+        "publishedAt": "2026-08-28T09:21:44Z",
+        "url": "https://github.com/zellij-org/zellij/releases/tag/v0.45.1",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "zola",
+      "name": "Zola",
+      "repository": "https://github.com/getzola/zola",
+      "category": "static-site-generator",
+      "replaces": [
+        {
+          "tool": "jekyll",
+          "fit": "full",
+          "note": "Single binary with Sass, syntax highlighting and a search index built in."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "getzola/zola",
+        "description": "A fast static site generator in a single binary with everything built-in. https://www.getzola.org",
+        "homepage": "https://www.getzola.org",
+        "language": "Rust",
+        "license": "EUPL-1.2",
+        "stars": 17463,
+        "forks": 1187,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-12-06T02:57:25Z",
+        "pushedAt": "2026-09-21T11:12:31Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.23.6",
+        "publishedAt": "2026-09-12T22:06:53Z",
+        "url": "https://github.com/getzola/zola/releases/tag/v0.23.6",
         "source": "release",
         "signed": false
       },

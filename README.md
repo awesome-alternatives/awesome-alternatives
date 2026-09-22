@@ -136,7 +136,7 @@ Build and run OCI containers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Docker Engine (Moby)](https://github.com/moby/moby) | Go | Apache-2.0 | [docker-v29.8.1](https://github.com/moby/moby/releases/tag/docker-v29.8.1) signed | 72125 | none |
+| [Docker Engine (Moby)](https://github.com/moby/moby) | Go | Apache-2.0 | [docker-v29.8.1](https://github.com/moby/moby/releases/tag/docker-v29.8.1) signed | 72126 | none |
 | [Podman](https://github.com/podman-container-tools/podman) | Go | Apache-2.0 | [v6.1.2](https://github.com/podman-container-tools/podman/releases/tag/v6.1.2) signed | 32912 | Docker Engine (Moby) (drop-in) |
 
 ### In-memory key-value stores
@@ -187,6 +187,124 @@ Search file contents recursively from a terminal.
 |---|---|---|---|---:|---|
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 68505 | The Silver Searcher (full) |
 | [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) | C | Apache-2.0 | [2.2.0](https://github.com/ggreer/the_silver_searcher/releases/tag/2.2.0) | 27122 | none |
+
+### API clients
+
+Build, send and share HTTP and GraphQL requests from a desktop or browser app.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.8.1](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.8.1) signed | 80468 | Insomnia (full) |
+| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.1.0](https://github.com/usebruno/bruno/releases/tag/v4.1.0) | 47110 | Insomnia (full) |
+| [Insomnia](https://github.com/Kong/insomnia) | TypeScript | Apache-2.0 | [core@13.2.0](https://github.com/Kong/insomnia/releases/tag/core%4013.2.0) | 40027 | none |
+
+### Monorepo tools
+
+Run, cache and orchestrate tasks across the packages of one repository.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Lerna](https://github.com/lerna/lerna) | TypeScript | MIT | [v10.0.1](https://github.com/lerna/lerna/releases/tag/v10.0.1) | 36054 | none |
+| [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.2](https://github.com/vercel/turborepo/releases/tag/v2.11.2) signed | 31126 | Lerna (partial) |
+| [Nx](https://github.com/nrwl/nx) | TypeScript | MIT | [23.2.1](https://github.com/nrwl/nx/releases/tag/23.2.1) signed | 29364 | Lerna (full) |
+| [moon](https://github.com/moonrepo/moon) | Rust | MIT | [v2.5.5](https://github.com/moonrepo/moon/releases/tag/v2.5.5) | 4113 | Lerna (partial) |
+
+### Shell prompts
+
+Customisable prompts showing git state, runtimes and context.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.26.0](https://github.com/starship/starship/releases/tag/v1.26.0) signed | 59993 | Powerlevel10k (full) |
+| [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Shell | MIT | [v1.20.0](https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0) signed | 55137 | none |
+| [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) | Go | MIT | [v31.3.0](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.3.0) | 23492 | Powerlevel10k (full) |
+
+### Terminal multiplexers
+
+Split, detach and reattach terminal sessions.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [tmux](https://github.com/tmux/tmux) | C | ISC | [3.7c](https://github.com/tmux/tmux/releases/tag/3.7c) | 49428 | none |
+| [Zellij](https://github.com/zellij-org/zellij) | Rust | MIT | [v0.45.1](https://github.com/zellij-org/zellij/releases/tag/v0.45.1) | 35505 | tmux (full) |
+
+### Document databases
+
+Databases storing JSON-like documents.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [show](https://github.com/mongodb/mongo/releases/tag/show) | 28574 | none |
+| [FerretDB](https://github.com/FerretDB/FerretDB) | Go | Apache-2.0 | [v2.7.0](https://github.com/FerretDB/FerretDB/releases/tag/v2.7.0) signed | 11075 | MongoDB (drop-in) |
+
+### Event streaming
+
+Durable, partitioned logs for events and messages.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Apache Kafka](https://github.com/apache/kafka) | Java | Apache-2.0 | [show](https://github.com/apache/kafka/releases/tag/show) | 33782 | none |
+| [Redpanda](https://github.com/redpanda-data/redpanda) | C++ | none | [v26.2.2](https://github.com/redpanda-data/redpanda/releases/tag/v26.2.2) signed | 12562 | Apache Kafka (drop-in) |
+
+### Web servers and reverse proxies
+
+Serve sites, terminate TLS and route traffic to services.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.4](https://github.com/caddyserver/caddy/releases/tag/v2.11.4) signed | 75985 | nginx (full) |
+| [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.13](https://github.com/traefik/traefik/releases/tag/v3.7.13) signed | 64923 | nginx (partial) |
+| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.6](https://github.com/nginx/nginx/releases/tag/release-1.31.6) | 31707 | none |
+
+### Documentation site generators
+
+Turn Markdown into a searchable documentation site.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Docusaurus](https://github.com/facebook/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/facebook/docusaurus/releases/tag/v3.10.2) | 66316 | none |
+| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18344 | Docusaurus (full) |
+| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.2](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.2) signed | 9281 | Docusaurus (full) |
+
+### Static site generators
+
+Build websites from templates and content files.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Hugo](https://github.com/gohugoio/hugo) | Go | Apache-2.0 | [v0.166.0](https://github.com/gohugoio/hugo/releases/tag/v0.166.0) | 89904 | Jekyll (full) |
+| [Jekyll](https://github.com/jekyll/jekyll) | Ruby | MIT | [v4.4.1](https://github.com/jekyll/jekyll/releases/tag/v4.4.1) | 51680 | none |
+| [Eleventy](https://github.com/11ty/buildawesome) | JavaScript | MIT | [v3.1.6](https://github.com/11ty/buildawesome/releases/tag/v3.1.6) | 19929 | Jekyll (full) |
+| [Zola](https://github.com/getzola/zola) | Rust | EUPL-1.2 | [v0.23.6](https://github.com/getzola/zola/releases/tag/v0.23.6) | 17463 | Jekyll (full) |
+
+### Python type checkers
+
+Check Python type annotations before the code runs.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [mypy](https://github.com/python/mypy) | Python | Other | [v2.3.1](https://github.com/python/mypy/releases/tag/v2.3.1) | 20648 | none |
+| [ty](https://github.com/astral-sh/ty) | Python | MIT | [0.0.83](https://github.com/astral-sh/ty/releases/tag/0.0.83) signed | 19731 | mypy (full) |
+| [Pyright](https://github.com/microsoft/pyright) | Python | Other | [1.1.414](https://github.com/microsoft/pyright/releases/tag/1.1.414) | 15654 | mypy (full) |
+
+### Node.js web frameworks
+
+Routing and middleware for HTTP servers in JavaScript and TypeScript.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Express](https://github.com/expressjs/express) | JavaScript | MIT | [v5.2.1](https://github.com/expressjs/express/releases/tag/v5.2.1) | 69456 | none |
+| [Fastify](https://github.com/fastify/fastify) | JavaScript | MIT | [v5.12.5](https://github.com/fastify/fastify/releases/tag/v5.12.5) signed | 37184 | Express (full) |
+| [Hono](https://github.com/honojs/hono) | TypeScript | MIT | [v4.13.8](https://github.com/honojs/hono/releases/tag/v4.13.8) | 32301 | Express (full) |
+
+### TypeScript ORMs
+
+Typed database access and migrations for TypeScript.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Prisma ORM](https://github.com/prisma/orm) | TypeScript | Apache-2.0 | [v0.17.0](https://github.com/prisma/orm/releases/tag/v0.17.0) signed | 47656 | none |
+| [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | TypeScript | Apache-2.0 | [drizzle-kit@0.31.11](https://github.com/drizzle-team/drizzle-orm/releases/tag/drizzle-kit%400.31.11) signed | 35854 | Prisma ORM (full) |
 
 <!-- catalog:end -->
 
