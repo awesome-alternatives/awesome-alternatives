@@ -6,6 +6,14 @@ export default defineConfig({
   trailingSlash: "always",
   integrations: [react()],
   vite: {
-    server: { fs: { allow: [".."] } },
+    server: {
+      fs: { allow: [".."] },
+      proxy: {
+        "/api": {
+          target: process.env.API_PROXY_TARGET ?? "https://awesome-alternatives.com",
+          changeOrigin: true,
+        },
+      },
+    },
   },
 });
