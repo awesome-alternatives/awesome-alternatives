@@ -30,3 +30,11 @@ jobs:
       - run: cargo clippy --locked --all-targets -- -D warnings
       - run: cargo test --locked
       - run: docker build -t api:ci .
+      - name: Smoke test the image
+        run: |
+          docker run -d --name api -p 3000:3000 api:ci
+          for _ in $(seq 1 60); do curl -sf localhost:3000/healthz && break; sleep 1; done
+          docker logs api 2>&1 | tee api.log
+          grep -q "local embedding model loaded" api.log
+          curl -sf -X POST localhost:3000/v1/search -H 'content-type: application/json' -d '{"q":"generate a changelog from git history"}' | tee search.json
+          grep -q '"interpretedBy":"local"' search.json

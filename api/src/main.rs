@@ -1,5 +1,6 @@
 mod catalog;
 mod config;
+mod embedding;
 mod filters;
 #[cfg(test)]
 mod fixtures;
@@ -8,10 +9,12 @@ mod jev;
 mod lexical;
 mod routes;
 mod search;
+mod semantic;
 mod state;
 mod vocabulary;
 
 use std::net::SocketAddr;
+use std::sync::Arc;
 
 use governor::{Quota, RateLimiter};
 use tower_http::cors::CorsLayer;
@@ -19,15 +22,22 @@ use tower_http::trace::TraceLayer;
 use tracing_subscriber::EnvFilter;
 
 use crate::config::Config;
+use crate::embedding::{Embedder, LocalModel};
 use crate::jev::JevClient;
 use crate::search::Search;
-use crate::state::AppState;
+use crate::state::{AppState, Loaded};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     tracing_subscriber::fmt()
         .with_env_filter(EnvFilter::try_from_default_env().unwrap_or_else(|_| "info".into()))
         .init();
+
+    if std::env::args().nth(1).as_deref() == Some("fetch-model") {
+        LocalModel::load()?;
+        tracing::info!("embedding model downloaded");
+        return Ok(());
+    }
 
     let config = Config::from_env()?;
     let http = reqwest::Client::builder()
@@ -43,11 +53,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .jev
         .map(|j| JevClient::new(http.clone(), &j.base_url, j.api_key, j.model));
     if jev.is_none() {
-        tracing::warn!("TYPESAFE_API_KEY is not set, search uses keywords only");
+        tracing::warn!(
+            "TYPESAFE_API_KEY is not set: Jev is disabled, search runs on the local model and keywords only"
+        );
     }
+    let embedder = load_embedder().await;
+    let loaded = Loaded::build(catalog, embedder.clone()).await;
     let state = AppState::new(
-        catalog,
-        Search::new(jev),
+        loaded,
+        Search::new(jev, embedder),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
     );
@@ -72,6 +86,23 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
+async fn load_embedder() -> Option<Arc<dyn Embedder>> {
+    match tokio::task::spawn_blocking(LocalModel::load).await {
+        Ok(Ok(model)) => {
+            tracing::info!("local embedding model loaded");
+            Some(Arc::new(model))
+        }
+        Ok(Err(error)) => {
+            tracing::warn!(%error, "local embedding model unavailable, search uses keywords only");
+            None
+        }
+        Err(error) => {
+            tracing::warn!(%error, "loading the embedding model failed, search uses keywords only");
+            None
+        }
+    }
+}
+
 async fn refresh(
     state: AppState,
     source: String,
@@ -86,7 +117,7 @@ async fn refresh(
         match catalog::load(&source, &http).await {
             Ok(catalog) => {
                 tracing::info!(tools = catalog.tools.len(), "catalog refreshed");
-                state.replace(catalog);
+                state.replace(catalog).await;
             }
             Err(error) => {
                 tracing::warn!(%error, "catalog refresh failed, keeping the previous one")

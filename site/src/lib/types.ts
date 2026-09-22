@@ -20,7 +20,7 @@ export interface Filters {
 export interface SearchResult {
   query: string;
   filters: Filters;
-  interpretedBy: "jev" | "lexical";
+  interpretedBy: "jev" | "local";
   count: number;
   tools: ToolView[];
 }

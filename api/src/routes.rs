@@ -106,12 +106,12 @@ async fn search(
         .map_err(|_| ApiError::RateLimited)?;
 
     let loaded = state.loaded();
-    let (filters, interpreted_by) = state.search.interpret(query, &loaded.vocabulary).await;
+    let read = state.search.interpret(query, &loaded).await;
     Ok(Json(SearchResponse {
         query: query.to_owned(),
-        results: ToolList::of(filters.apply(&loaded.catalog.tools)),
-        filters,
-        interpreted_by,
+        results: ToolList::of(read.select(&loaded.catalog.tools)),
+        filters: read.filters,
+        interpreted_by: read.interpreted_by,
     }))
 }
 
@@ -146,6 +146,7 @@ mod tests {
     use crate::catalog::{Catalog, Fit};
     use crate::fixtures::tool;
     use crate::search::Search;
+    use crate::state::Loaded;
 
     fn app(per_minute: u32) -> Router {
         let catalog = Catalog {
@@ -168,7 +169,12 @@ mod tests {
             ],
         };
         let limiter = RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap()));
-        let state = AppState::new(catalog, Search::new(None), limiter, false);
+        let state = AppState::new(
+            Loaded::new(catalog, None),
+            Search::new(None, None),
+            limiter,
+            false,
+        );
         router(state).layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
     }
 
@@ -204,7 +210,7 @@ mod tests {
     async fn search_without_jev_falls_back_to_keywords() {
         let (status, body) = call(&app(10), search_request("semantic-release but in Go")).await;
         assert_eq!(status, StatusCode::OK);
-        assert_eq!(body["interpretedBy"], "lexical");
+        assert_eq!(body["interpretedBy"], "local");
         assert_eq!(
             body["filters"],
             json!({ "replaces": "semantic-release", "language": "Go", "dropIn": false })
