@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
+import { islands } from "../src/i18n/islands.en.ts";
 import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
 import { alternativesTo, facets, narrow } from "../src/lib/filter.ts";
@@ -76,12 +77,12 @@ test("removing the target chip also drops drop-in, which means nothing without i
 });
 
 test("chips name the target and list every filter read from the query", () => {
-  const read = chips({ replaces: "sr", dropIn: true, license: "MIT" }, () => "semantic-release");
+  const read = chips({ replaces: "sr", dropIn: true, license: "MIT" }, islands.search.chips, () => "semantic-release");
   assert.deepEqual(
     read.map((c) => c.label),
     ["Replaces semantic-release", "Drop-in only", "MIT"],
   );
-  assert.deepEqual(chips({}), []);
+  assert.deepEqual(chips({}, islands.search.chips), []);
 });
 
 test("the tools query omits unset filters and a false drop-in", () => {

@@ -9,7 +9,17 @@ import { repoLinks } from "./src/lib/repo.ts";
 export default defineConfig({
   site: "https://awesome-alternatives.com",
   trailingSlash: "always",
-  integrations: [preact(), sitemap()],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "fr", "es", "de"],
+    routing: { prefixDefaultLocale: false },
+  },
+  integrations: [
+    preact(),
+    sitemap({
+      i18n: { defaultLocale: "en", locales: { en: "en", fr: "fr", es: "es", de: "de" } },
+    }),
+  ],
   markdown: {
     syntaxHighlight: false,
     processor: satteri({ hastPlugins: [repoLinks] }),

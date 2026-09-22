@@ -1,0 +1,155 @@
+---
+import type { GetStaticPaths } from "astro";
+import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_THRESHOLD, SPIKE_WINDOW_MS } from "../../../../scripts/lib/rules.ts";
+import type { Locale } from "../../i18n/index.ts";
+import { format, pathFor } from "../../i18n/index.ts";
+import { localePaths, t } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { refreshCron, tools } from "../../lib/catalog.ts";
+import { REPO } from "../../lib/repo.ts";
+import { dailyTime } from "../../lib/schedule.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const strings = t(locale);
+const m = strings.pages.about;
+const { fit, flag } = strings.islands;
+const refreshedAt = dailyTime(refreshCron);
+const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
+---
+
+<Base title={m.title} description={m.description}>
+  <section class="hero">
+    <p class="eyebrow">{m.eyebrow}</p>
+    <h1>{m.heading}</h1>
+    <p class="lede">{format(m.lede, { toolCount: tools.length })}</p>
+  </section>
+
+  <section class="explainer" id="entries">
+    <h2>{m.entries.heading}</h2>
+    <p>
+      {m.entries.fileBefore} <a href={`${REPO}/tree/main/data/tools`}><code>data/tools/</code></a>{m.entries.fileAfter}
+    </p>
+    <p>{m.entries.schema}</p>
+  </section>
+
+  <section class="explainer" id="refresh">
+    <h2>{m.refresh.heading}</h2>
+    <p>
+      {format(m.refresh.workflowBefore, { refreshedAt })}
+      <a href={`${REPO}/blob/main/.github/workflows/refresh.yml`}>{m.refresh.workflowLink}</a>
+      {m.refresh.workflowAfter}
+    </p>
+    <ul class="explainer-list">
+      {m.refresh.reads.map((item) => <li>{item}</li>)}
+      <li>{m.refresh.maintainerFileBefore} <a href="#verified">{m.refresh.maintainerFileLink}</a></li>
+    </ul>
+    <p>{m.refresh.commit}</p>
+  </section>
+
+  <section class="explainer" id="marks">
+    <h2>{m.marks.heading}</h2>
+    <dl class="glossary">
+      <div id="signed">
+        <dt><span class="mark mark-good">{m.marks.signed.term}</span></dt>
+        <dd>{m.marks.signed.body}</dd>
+      </div>
+      <div id="verified">
+        <dt><span class="mark mark-good">{m.marks.verified.term}</span></dt>
+        <dd>
+          {m.marks.verified.fileBefore} <code>.awesome-alternatives</code> {m.marks.verified.fileAfter}
+          <code>slug:</code> {m.marks.verified.slugAfter}
+        </dd>
+      </div>
+      <div id="archived">
+        <dt><span class="mark mark-archived">{m.marks.archived.term}</span></dt>
+        <dd>
+          {m.marks.archived.before}
+          <a href="#inactive">{m.marks.archived.inactiveLink}</a> {m.marks.archived.after}
+        </dd>
+      </div>
+      <div id="licence">
+        <dt><span class="mark">{m.marks.licence.term}</span></dt>
+        <dd>
+          {m.marks.licence.before} <em>{m.marks.licence.none}</em> {m.marks.licence.middle}
+          <a href="#no-license">{m.marks.licence.noLicenceLink}</a> {m.marks.licence.after}
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="explainer" id="fit">
+    <h2>{m.fit.heading}</h2>
+    <p>{m.fit.lede}</p>
+    <dl class="glossary">
+      <div id="drop-in">
+        <dt><span class="fit fit-drop-in">{fit["drop-in"]}</span></dt>
+        <dd>{m.fit.dropIn}</dd>
+      </div>
+      <div id="full">
+        <dt><span class="fit fit-full">{fit.full}</span></dt>
+        <dd>{m.fit.full}</dd>
+      </div>
+      <div id="partial">
+        <dt><span class="fit fit-partial">{fit.partial}</span></dt>
+        <dd>{m.fit.partial}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="explainer" id="warnings">
+    <h2>{m.warnings.heading}</h2>
+    <p>{m.warnings.lede}</p>
+    <dl class="glossary">
+      <div id="moved">
+        <dt><span class="mark mark-warn">{flag.moved}</span></dt>
+        <dd>{m.warnings.moved}</dd>
+      </div>
+      <div id="no-license">
+        <dt><span class="mark mark-warn">{flag["no-license"]}</span></dt>
+        <dd>{m.warnings.noLicense}</dd>
+      </div>
+      <div id="no-release">
+        <dt><span class="mark mark-warn">{flag["no-release"]}</span></dt>
+        <dd>{m.warnings.noRelease}</dd>
+      </div>
+      <div id="inactive">
+        <dt><span class="mark mark-warn">{flag.inactive}</span></dt>
+        <dd>{format(m.warnings.inactive, { inactiveDays: INACTIVE_DAYS })}</dd>
+      </div>
+      <div id="star-spike">
+        <dt><span class="mark mark-warn">{flag["star-spike"]}</span></dt>
+        <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeHours })}</dd>
+      </div>
+    </dl>
+    <p>
+      {format(m.warnings.blockingBefore, { minAgeDays: MIN_AGE_DAYS })}{" "}
+      <a href={pathFor(locale, "/contribute/#what-ci-checks")}>{m.warnings.contributeLink}</a> {m.warnings.blockingAfter}
+    </p>
+  </section>
+
+  <section class="explainer" id="affiliation">
+    <h2>{m.affiliation.heading}</h2>
+    <p>{m.affiliation.body}</p>
+  </section>
+
+  <section class="explainer" id="search">
+    <h2>{m.search.heading}</h2>
+    <p>
+      {m.search.before} <a href={pathFor(locale, "/privacy/")}>{m.search.privacyLink}</a> {m.search.after}
+    </p>
+  </section>
+
+  <section class="explainer" id="licences">
+    <h2>{m.licences.heading}</h2>
+    <p>
+      {m.licences.dataBefore} <a href={`${REPO}/blob/main/LICENSE-DATA`}>{m.licences.dataLink}</a>{m.licences.codeBefore}
+      <a href={`${REPO}/blob/main/LICENSE`}>{m.licences.codeLink}</a>.
+    </p>
+  </section>
+</Base>

@@ -2,7 +2,10 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import type { EnrichedTool } from "../../scripts/lib/types.ts";
-import { FEED_SIZE, feedItem, newestTools } from "../src/lib/feed.ts";
+import { en } from "../src/i18n/en.ts";
+import { FEED_SIZE, type FeedStrings, feedItem, newestTools } from "../src/lib/feed.ts";
+
+const STRINGS: FeedStrings = en.feed;
 
 function tool(slug: string, addedAt: string, description: string | null = null, replaces: string[] = []): EnrichedTool {
   return {
@@ -59,8 +62,10 @@ test("the feed stops at its size and keeps the most recent ones", () => {
 });
 
 test("an item links to the tool page and names what it replaces", () => {
-  const item = feedItem(tool("zellij", "2026-09-22T16:48:22.000Z", "A terminal workspace.", ["tmux", "screen"]), (slug) =>
-    slug === "tmux" ? "tmux" : "GNU Screen",
+  const item = feedItem(
+    tool("zellij", "2026-09-22T16:48:22.000Z", "A terminal workspace.", ["tmux", "screen"]),
+    (slug) => (slug === "tmux" ? "tmux" : "GNU Screen"),
+    STRINGS,
   );
   assert.equal(item.link, "/tools/zellij/");
   assert.equal(item.pubDate.toISOString(), "2026-09-22T16:48:22.000Z");
@@ -68,10 +73,20 @@ test("an item links to the tool page and names what it replaces", () => {
 });
 
 test("a description without a final stop still reads as a sentence before the replacements", () => {
-  const item = feedItem(tool("vault", "2026-09-22T00:00:00.000Z", "Secrets management ", ["x"]), () => "X");
+  const item = feedItem(tool("vault", "2026-09-22T00:00:00.000Z", "Secrets management ", ["x"]), () => "X", STRINGS);
   assert.equal(item.description, "Secrets management. Replaces X.");
 });
 
 test("an item without a repository description still says something", () => {
-  assert.equal(feedItem(tool("x", "2026-09-22T00:00:00.000Z"), (s) => s).description, "X joined the catalog.");
+  assert.equal(feedItem(tool("x", "2026-09-22T00:00:00.000Z"), (s) => s, STRINGS).description, "X joined the catalog.");
+});
+
+test("an item in a translated feed links inside that locale", () => {
+  const item = feedItem(
+    tool("zellij", "2026-09-22T00:00:00.000Z", "A terminal workspace."),
+    (s) => s,
+    STRINGS,
+    (path) => `/fr${path}`,
+  );
+  assert.equal(item.link, "/fr/tools/zellij/");
 });

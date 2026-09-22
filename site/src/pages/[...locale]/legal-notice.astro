@@ -1,0 +1,91 @@
+---
+import type { GetStaticPaths } from "astro";
+import Detail from "../../components/Detail.astro";
+import type { Locale } from "../../i18n/index.ts";
+import { format, pathFor } from "../../i18n/index.ts";
+import { localePaths, t } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { host, LAST_UPDATED, publisher } from "../../lib/legal.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = t(locale).pages.legalNotice;
+
+const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
+---
+
+<Base title={m.title} description={m.description}>
+  <header class="legal-head">
+    <p class="eyebrow">{m.eyebrow}</p>
+    <h1>{m.heading}</h1>
+    <p class="lede">{format(m.lede, { lastUpdated: LAST_UPDATED })}</p>
+  </header>
+
+  <section class="block legal">
+    <h2>{m.publisher.heading}</h2>
+    <p>{m.publisher.body}</p>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.name}</dt>
+        <dd><Detail value={publisher.name} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.address}</dt>
+        <dd><Detail value={publisher.address} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.email}</dt>
+        <dd><Detail value={publisher.email} href={`mailto:${publisher.email}`} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.phone}</dt>
+        <dd><Detail value={publisher.phone} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.publicationDirector.heading}</h2>
+    <p>{m.publicationDirector.before} <Detail value={publisher.name} />.</p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.host.heading}</h2>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.name}</dt>
+        <dd><Detail value={host.name} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.address}</dt>
+        <dd><Detail value={host.address} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.phone}</dt>
+        <dd><Detail value={host.phone} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.content.heading}</h2>
+    <p>
+      {m.content.licenceBefore} <a href={`${REPO}/blob/main/LICENSE-DATA`}>{m.content.dataLink}</a>{" "}
+      {m.content.licenceMiddle} <a href={`${REPO}/blob/main/LICENSE`}>{m.content.codeLink}</a>{m.content.licenceAfter}
+    </p>
+    <p>
+      {m.content.reportBefore} <a href={`${REPO}/issues`}>{m.content.reportLink}</a>{" "}
+      {m.content.reportAfter} <Detail value={publisher.email} href={`mailto:${publisher.email}`} />.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.personalData.heading}</h2>
+    <p>{m.personalData.before} <a href={pathFor(locale, "/privacy/")}>{m.personalData.privacyLink}</a>.</p>
+  </section>
+</Base>

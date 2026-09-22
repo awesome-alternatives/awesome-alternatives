@@ -1,4 +1,5 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
+import { LOCALES, pathFor } from "../i18n/index.ts";
 
 type CatalogEntry = Pick<EnrichedTool, "slug" | "replaces">;
 
@@ -10,7 +11,7 @@ export interface SitemapAudit {
 const UNWANTED = ["/404/"];
 const INDEXES = ["/tools/", "/alternatives/", "/categories/", "/languages/", "/licenses/"];
 
-export function expectedPaths(tools: CatalogEntry[]): string[] {
+export function barePaths(tools: CatalogEntry[]): string[] {
   const targets = new Set(tools.flatMap((t) => t.replaces.map((r) => r.tool)));
   return [
     "/",
@@ -18,6 +19,14 @@ export function expectedPaths(tools: CatalogEntry[]): string[] {
     ...tools.map((t) => `/tools/${t.slug}/`),
     ...[...targets].map((slug) => `/alternatives/${slug}/`),
   ];
+}
+
+export function expectedPaths(tools: CatalogEntry[]): string[] {
+  return LOCALES.flatMap((locale) => barePaths(tools).map((path) => pathFor(locale, path)));
+}
+
+export function unwantedPaths(): string[] {
+  return LOCALES.flatMap((locale) => UNWANTED.map((path) => pathFor(locale, path)));
 }
 
 export function locs(xml: string): string[] {
@@ -28,7 +37,11 @@ export function auditSitemap(site: string, tools: CatalogEntry[], listed: string
   const urls = new Set(listed);
   const url = (path: string) => new URL(path, site).href;
   return {
-    missing: expectedPaths(tools).map(url).filter((u) => !urls.has(u)),
-    unwanted: UNWANTED.map(url).filter((u) => urls.has(u)),
+    missing: expectedPaths(tools)
+      .map(url)
+      .filter((u) => !urls.has(u)),
+    unwanted: unwantedPaths()
+      .map(url)
+      .filter((u) => urls.has(u)),
   };
 }

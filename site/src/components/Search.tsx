@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 
+import { format, type Locale, pathFor, plural } from "../i18n/index.ts";
+import type { Islands } from "../i18n/islands.en.ts";
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
 import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
@@ -7,6 +9,8 @@ import type { SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
 interface Props {
+  locale: Locale;
+  strings: Islands;
   names: Record<string, string>;
   examples: string[];
 }
@@ -17,10 +21,11 @@ type State =
   | { kind: "done"; result: SearchResult }
   | { kind: "error"; failure: SearchFailure; target: string | null };
 
-export default function Search({ names, examples }: Props) {
+export default function Search({ locale, strings, names, examples }: Props) {
   const [query, setQuery] = useState("");
   const [state, setState] = useState<State>({ kind: "idle" });
   const inflight = useRef<AbortController | null>(null);
+  const copy = strings.search;
 
   async function run(load: (signal: AbortSignal) => Promise<SearchResult>, target: string | null) {
     inflight.current?.abort();
@@ -63,7 +68,7 @@ export default function Search({ names, examples }: Props) {
     <section className="search">
       <form
         role="search"
-        action="/"
+        action={pathFor(locale, "/")}
         method="get"
         onSubmit={(e) => {
           e.preventDefault();
@@ -71,7 +76,7 @@ export default function Search({ names, examples }: Props) {
         }}
       >
         <label htmlFor="q" className="visually-hidden">
-          Describe what you are looking for
+          {copy.label}
         </label>
         <input
           id="q"
@@ -79,16 +84,16 @@ export default function Search({ names, examples }: Props) {
           type="search"
           value={query}
           maxLength={300}
-          placeholder="Describe what you are looking for"
+          placeholder={copy.placeholder}
           onInput={(e) => setQuery(e.currentTarget.value)}
         />
         <button type="submit" disabled={state.kind === "loading"}>
-          Search
+          {copy.submit}
         </button>
       </form>
       {state.kind === "idle" && (
         <p className="examples">
-          Try{" "}
+          {copy.examplesLead}
           {examples.map((example) => (
             <button key={example} type="button" onClick={() => submit(example)}>
               {example}
@@ -96,48 +101,65 @@ export default function Search({ names, examples }: Props) {
           ))}
         </p>
       )}
-      {state.kind === "loading" && <p className="summary">Searching</p>}
-      {state.kind === "error" && <Failure failure={state.failure} target={state.target} names={names} />}
-      {state.kind === "done" && <Results result={state.result} names={names} onDrop={drop} />}
+      {state.kind === "loading" && <p className="summary">{copy.searching}</p>}
+      {state.kind === "error" && (
+        <Failure
+          locale={locale}
+          strings={strings}
+          failure={state.failure}
+          target={state.target}
+          names={names}
+        />
+      )}
+      {state.kind === "done" && (
+        <Results locale={locale} strings={strings} result={state.result} names={names} onDrop={drop} />
+      )}
       <p className="visually-hidden" role="status" aria-live="polite">
-        {announcement(state)}
+        {announcement(locale, state, copy)}
       </p>
     </section>
   );
 }
 
-function toolCount(count: number): string {
-  return count === 1 ? "1 tool" : `${count} tools`;
-}
-
-function announcement(state: State): string {
-  if (state.kind === "loading") return "Searching";
-  if (state.kind === "done") return toolCount(state.result.count);
+function announcement(locale: Locale, state: State, copy: Islands["search"]): string {
+  if (state.kind === "loading") return copy.searching;
+  if (state.kind === "done") return plural(locale, copy.count, state.result.count);
   return "";
 }
 
 function Failure({
+  locale,
+  strings,
   failure,
   target,
   names,
 }: {
+  locale: Locale;
+  strings: Islands;
   failure: SearchFailure;
   target: string | null;
   names: Record<string, string>;
 }) {
+  const { fallbackTargeted, fallbackBrowse } = strings.search;
   return (
     <div className="empty" role="alert">
-      <p>{describe(failure)}</p>
+      <p>{describe(locale, failure, strings.failure)}</p>
       {offersFallback(failure) && (
         <p>
           {target ? (
             <>
-              Open the <a href={`/alternatives/${target}/`}>alternatives to {names[target] ?? target}</a> or{" "}
-              <a href="/#browse">browse every tool</a>.
+              {fallbackTargeted.before}
+              <a href={pathFor(locale, `/alternatives/${target}/`)}>
+                {format(fallbackTargeted.link, { name: names[target] ?? target })}
+              </a>
+              {fallbackTargeted.between}
+              <a href={pathFor(locale, "/#browse")}>{fallbackTargeted.browse}</a>
+              {fallbackTargeted.after}
             </>
           ) : (
             <>
-              <a href="/#browse">Browse every tool</a> instead.
+              <a href={pathFor(locale, "/#browse")}>{fallbackBrowse.browse}</a>
+              {fallbackBrowse.after}
             </>
           )}
         </p>
@@ -147,41 +169,59 @@ function Failure({
 }
 
 function Results({
+  locale,
+  strings,
   result,
   names,
   onDrop,
 }: {
+  locale: Locale;
+  strings: Islands;
   result: SearchResult;
   names: Record<string, string>;
   onDrop: (result: SearchResult, key: ChipKey) => void;
 }) {
-  const read = chips(result.filters, (slug) => names[slug] ?? slug);
+  const copy = strings.search;
+  const read = chips(result.filters, copy.chips, (slug) => names[slug] ?? slug);
   if (read.length === 0 && result.count === 0) {
     return (
       <p className="empty">
-        Nothing in that query matched the catalog. Name the tool you want to replace, a language or a licence, or{" "}
-        <a href="/contribute/">add the tool</a> you were looking for.
+        {copy.noMatch.before}
+        <a href={pathFor(locale, "/contribute/")}>{copy.noMatch.link}</a>
+        {copy.noMatch.after}
       </p>
     );
   }
   return (
     <>
-      <div className="chips" aria-label="Filters read from your query">
+      <div className="chips" aria-label={copy.chipsLabel}>
         {read.map((chip) => (
           <span key={chip.key} className="chip">
             {chip.label}
-            <button type="button" aria-label={`Remove ${chip.label}`} onClick={() => onDrop(result, chip.key)}>
-              ×
+            <button
+              type="button"
+              aria-label={format(copy.removeChip, { label: chip.label })}
+              onClick={() => onDrop(result, chip.key)}
+            >
+              {copy.removeGlyph}
             </button>
           </span>
         ))}
-        {read.length === 0 && <span className="summary">Closest matches to your description</span>}
-        <span className="interpreter">{result.interpretedBy === "jev" ? "Read by Jev" : "Matched locally"}</span>
+        {read.length === 0 && <span className="summary">{copy.closest}</span>}
+        <span className="interpreter">
+          {result.interpretedBy === "jev" ? copy.interpreter.jev : copy.interpreter.local}
+        </span>
       </div>
-      <p className="summary">{toolCount(result.count)}</p>
+      <p className="summary">{plural(locale, copy.count, result.count)}</p>
       <div className="tools">
         {result.tools.map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} target={result.filters.replaces} />
+          <ToolCard
+            key={tool.slug}
+            locale={locale}
+            strings={strings}
+            tool={tool}
+            target={result.filters.replaces}
+          />
         ))}
       </div>
     </>

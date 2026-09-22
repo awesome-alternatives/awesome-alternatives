@@ -1,9 +1,12 @@
 ---
+import type { Locale } from "../i18n/index.ts";
+import { messages, plural } from "../i18n/index.ts";
 import Base from "../layouts/Base.astro";
 import type { ToolView } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
 interface Props {
+  locale: Locale;
   title: string;
   description: string;
   context: string;
@@ -13,16 +16,17 @@ interface Props {
   tools: ToolView[];
 }
 
-const { title, description, context, parent, heading, lede, tools } = Astro.props;
+const { locale, title, description, context, parent, heading, lede, tools } = Astro.props;
+const m = messages(locale);
 ---
 
 <Base title={title} description={description}>
-  <a class="back" href={parent}>← back</a>
+  <a class="back" href={parent}>{m.listing.back}</a>
   <p class="context"><a href={parent}>{context}</a></p>
   <h1>{heading}</h1>
   <p class="lede">{lede}</p>
-  <p class="summary">{tools.length} {tools.length === 1 ? "tool" : "tools"}</p>
+  <p class="summary">{plural(locale, m.listing.toolCount, tools.length)}</p>
   <div class="tools listing">
-    {tools.map((tool) => <ToolCard tool={tool} />)}
+    {tools.map((tool) => <ToolCard locale={locale} strings={m.islands} tool={tool} />)}
   </div>
 </Base>

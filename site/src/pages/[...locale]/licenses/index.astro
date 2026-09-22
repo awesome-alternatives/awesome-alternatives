@@ -1,0 +1,32 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import IndexPage from "../../../components/IndexPage.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePaths } from "../../../i18n/paths.ts";
+import { licenseGroups } from "../../../lib/catalog.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale).index.licenses;
+const items = licenseGroups.map((group) => ({
+  href: pathFor(locale, `/licenses/${group.slug}/`),
+  name: group.label,
+  count: group.tools.length,
+}));
+---
+
+<IndexPage
+  locale={locale}
+  title={m.title}
+  description={format(m.description, { count: items.length })}
+  heading={m.heading}
+  lede={m.lede}
+  items={items}
+/>

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
+import { islands } from "../src/i18n/islands.en.ts";
 import {
   SearchError,
   describe,
@@ -34,22 +35,25 @@ test("responses map to rate limit, outage and refusal", () => {
   assert.deepEqual(failureFromResponse(500, { error: "panic in handler" }, null, NOW), { kind: "unavailable" });
   assert.deepEqual(failureFromResponse(400, { error: "the query is empty" }, null, NOW), {
     kind: "rejected",
+    status: 400,
     message: "the query is empty",
   });
   assert.deepEqual(failureFromResponse(404, "<html>", null, NOW), {
     kind: "rejected",
-    message: "The search was refused (404).",
+    status: 404,
+    message: null,
   });
   assert.deepEqual(failureFromResponse(422, { error: 42 }, null, NOW), {
     kind: "rejected",
-    message: "The search was refused (422).",
+    status: 422,
+    message: null,
   });
 });
 
 test("thrown errors never surface the raw browser message", () => {
   const offline = failureFromThrown(new TypeError("Failed to fetch"));
   assert.deepEqual(offline, { kind: "unavailable" });
-  assert.doesNotMatch(describe(offline), /fetch/i);
+  assert.doesNotMatch(describe("en", offline, islands.failure), /fetch/i);
   assert.deepEqual(failureFromThrown(new DOMException("signal timed out", "TimeoutError")), { kind: "timeout" });
   assert.deepEqual(failureFromThrown(new SyntaxError("Unexpected token <")), { kind: "unavailable" });
   const limited = new SearchError({ kind: "rate-limited", retryAfter: 1 });
@@ -60,13 +64,13 @@ test("only outages point at the prerendered pages", () => {
   assert.equal(offersFallback({ kind: "unavailable" }), true);
   assert.equal(offersFallback({ kind: "timeout" }), true);
   assert.equal(offersFallback({ kind: "rate-limited", retryAfter: 5 }), false);
-  assert.equal(offersFallback({ kind: "rejected", message: "no" }), false);
+  assert.equal(offersFallback({ kind: "rejected", status: 400, message: null }), false);
 });
 
 test("rate limit message uses the wait when known", () => {
-  assert.match(describe({ kind: "rate-limited", retryAfter: 30 }), /30 seconds/);
-  assert.match(describe({ kind: "rate-limited", retryAfter: 0 }), /1 second\./);
-  assert.match(describe({ kind: "rate-limited", retryAfter: null }), /a minute/);
+  assert.match(describe("en", { kind: "rate-limited", retryAfter: 30 }, islands.failure), /30 seconds/);
+  assert.match(describe("en", { kind: "rate-limited", retryAfter: 0 }, islands.failure), /1 second\./);
+  assert.match(describe("en", { kind: "rate-limited", retryAfter: null }, islands.failure), /a minute/);
 });
 
 test("the fallback target is the longest tool named as a whole word", () => {

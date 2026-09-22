@@ -1,11 +1,15 @@
 ---
+import type { Locale } from "../i18n/index.ts";
+import { messages } from "../i18n/index.ts";
 import type { GridItem } from "../lib/types.ts";
 
 interface Props {
+  locale: Locale;
   items: GridItem[];
 }
 
-const { items } = Astro.props;
+const { locale, items } = Astro.props;
+const m = messages(locale);
 ---
 
 <ul class="targets">
@@ -16,7 +20,7 @@ const { items } = Astro.props;
           <span>
             <span class="target-name">
               {item.name}
-              {item.archived && <span class="mark mark-archived">archived</span>}
+              {item.archived && <span class="mark mark-archived">{m.target.archived}</span>}
             </span>
             {item.detail && <span class="target-category">{item.detail}</span>}
           </span>

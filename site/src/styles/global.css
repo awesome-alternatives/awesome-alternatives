@@ -23,6 +23,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: calc(var(--header-height, 72px) + 16px);
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -89,6 +93,10 @@ main {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: var(--bg);
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
@@ -186,6 +194,119 @@ main {
 .site-header nav a:hover {
   color: var(--text);
   text-decoration: none;
+}
+
+.header-search.is-revealable {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease,
+    visibility 0s linear 220ms;
+}
+
+.site-header[data-search-visible] .header-search.is-revealable {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease,
+    visibility 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-search.is-revealable,
+  .site-header[data-search-visible] .header-search.is-revealable {
+    transform: none;
+    transition: none;
+  }
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.locales {
+  display: flex;
+  align-items: stretch;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+
+.locales select {
+  appearance: none;
+  padding: 5px 26px 5px 10px;
+  border: 1px solid var(--line);
+  border-right: 0;
+  background-color: transparent;
+  background-image: linear-gradient(45deg, transparent 50%, var(--dim) 50%),
+    linear-gradient(135deg, var(--dim) 50%, transparent 50%);
+  background-position: right 13px center, right 8px center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.locales select:hover {
+  border-color: var(--dim);
+}
+
+.locales button {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--dim);
+  font: inherit;
+  cursor: pointer;
+}
+
+.locales button:hover {
+  color: var(--accent);
+  border-color: var(--dim);
+}
+
+.locales-fallback {
+  display: flex;
+  gap: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+
+.locales-fallback a {
+  padding: 2px 7px;
+  border: 1px solid transparent;
+  color: var(--dim);
+}
+
+.locales-fallback a + a {
+  border-left-color: var(--line);
+}
+
+.locales-fallback a[aria-current] {
+  color: var(--accent);
+  border-color: var(--line);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--dim);
+}
+
+.github-link:hover {
+  color: var(--text);
+}
+
+.github-link svg {
+  display: block;
 }
 
 .site-footer {

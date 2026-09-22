@@ -1,14 +1,19 @@
+import { format, type Locale, type Plural, plural } from "../i18n/index.ts";
+import type { Islands } from "../i18n/islands.en.ts";
+
 export type SearchFailure =
   | { kind: "unavailable" }
   | { kind: "timeout" }
   | { kind: "rate-limited"; retryAfter: number | null }
-  | { kind: "rejected"; message: string };
+  | { kind: "rejected"; status: number; message: string | null };
+
+export type FailureStrings = Islands["failure"];
 
 export class SearchError extends Error {
   failure: SearchFailure;
 
   constructor(failure: SearchFailure) {
-    super(describe(failure));
+    super(failure.kind);
     this.failure = failure;
   }
 }
@@ -30,7 +35,7 @@ export function failureFromResponse(
 ): SearchFailure {
   if (status === 429) return { kind: "rate-limited", retryAfter: parseRetryAfter(retryAfter, now) };
   if (status >= 500) return { kind: "unavailable" };
-  return { kind: "rejected", message: errorMessage(body) ?? `The search was refused (${status}).` };
+  return { kind: "rejected", status, message: errorMessage(body) };
 }
 
 export function failureFromThrown(error: unknown): SearchFailure {
@@ -43,18 +48,18 @@ export function offersFallback(failure: SearchFailure): boolean {
   return failure.kind === "unavailable" || failure.kind === "timeout";
 }
 
-export function describe(failure: SearchFailure): string {
+export function describe(locale: Locale, failure: SearchFailure, strings: FailureStrings): string {
   switch (failure.kind) {
     case "unavailable":
-      return "Search is unavailable right now. Every tool page still works without it.";
+      return strings.unavailable;
     case "timeout":
-      return "Search took too long to answer. Every tool page still works without it.";
+      return strings.timeout;
     case "rate-limited":
       return failure.retryAfter === null
-        ? "Too many searches from your connection. Wait a minute and try again."
-        : `Too many searches from your connection. Try again in ${seconds(failure.retryAfter)}.`;
+        ? strings.rateLimited
+        : format(strings.rateLimitedWait, { wait: seconds(locale, failure.retryAfter, strings.seconds) });
     case "rejected":
-      return failure.message;
+      return failure.message ?? format(strings.refused, { status: failure.status });
   }
 }
 
@@ -82,6 +87,6 @@ function errorMessage(body: unknown): string | null {
   return typeof error === "string" && error.trim() ? error : null;
 }
 
-function seconds(count: number): string {
-  return count <= 1 ? "1 second" : `${count} seconds`;
+function seconds(locale: Locale, count: number, forms: Plural): string {
+  return plural(locale, forms, Math.max(1, count));
 }

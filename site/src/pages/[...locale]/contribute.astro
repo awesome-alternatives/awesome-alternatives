@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import { Content } from "../../../../CONTRIBUTING.md";
+import type { Locale } from "../../i18n/index.ts";
+import { DEFAULT_LOCALE, messages } from "../../i18n/index.ts";
+import { localePaths } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { NEW_TOOL_URL, SUGGEST_TOOL_URL } from "../../lib/repo.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale);
+---
+
+<Base title={m.contribute.title} description={m.contribute.description}>
+  <section class="hero">
+    <p class="eyebrow">{m.contribute.eyebrow}</p>
+    <h1>{m.contribute.heading}</h1>
+    <p class="lede">{m.contribute.lede}</p>
+    <p class="links paths">
+      <a class="repo-link" href={NEW_TOOL_URL}>{m.contribute.openPullRequest}</a>
+      <a href={SUGGEST_TOOL_URL}>{m.contribute.suggest}</a>
+    </p>
+  </section>
+
+  <hr class="divider" />
+
+  {locale !== DEFAULT_LOCALE && <p class="context">{m.contribute.guideInEnglish}</p>}
+
+  <article class="prose">
+    <Content />
+  </article>
+</Base>

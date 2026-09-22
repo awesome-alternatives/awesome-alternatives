@@ -1,0 +1,51 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import LinkGrid from "../../components/LinkGrid.astro";
+import Search from "../../components/Search.tsx";
+import type { Locale } from "../../i18n/index.ts";
+import { format, messages, pathFor } from "../../i18n/index.ts";
+import { localePaths } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { targetItems, targets, tools } from "../../lib/catalog.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale);
+const names = Object.fromEntries(targets().map((t) => [t.slug, t.name]));
+const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item.href) }));
+---
+
+<Base revealSearch title={m.home.title} description={m.home.description}>
+  <section class="hero">
+    <p class="eyebrow">{m.home.eyebrow}</p>
+    <h1>{m.home.heading}</h1>
+    <p class="lede">{format(m.home.lede, { count: tools.length })}</p>
+    <div data-reveal-anchor>
+      <Search client:load locale={locale} strings={m.islands} names={names} examples={m.home.examples} />
+    </div>
+    <noscript>
+      <p class="empty">
+        {m.home.noscriptBefore}<a href="#browse">{m.home.noscriptLink}</a>{m.home.noscriptAfter}
+      </p>
+    </noscript>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="browse">
+    <p class="section-label">{m.home.browseLabel}</p>
+    <LinkGrid locale={locale} items={items} />
+    <p class="links browse-more">
+      <a href={pathFor(locale, "/tools/")}>{m.home.allTools}</a>
+      <a href={pathFor(locale, "/categories/")}>{m.home.categories}</a>
+      <a href={pathFor(locale, "/languages/")}>{m.home.languages}</a>
+      <a href={pathFor(locale, "/licenses/")}>{m.home.licenses}</a>
+    </p>
+  </section>
+</Base>

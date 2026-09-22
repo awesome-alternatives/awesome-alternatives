@@ -1,0 +1,38 @@
+---
+import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import ToolListing from "../../../components/ToolListing.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import { languageGroups } from "../../../lib/catalog.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(
+    languageGroups.map((group) => ({
+      params: { language: group.slug },
+      props: { language: group.label, tools: group.tools },
+    })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  language: string;
+  tools: EnrichedTool[];
+}
+
+const { locale, language, tools } = Astro.props;
+const m = messages(locale).language;
+---
+
+<ToolListing
+  locale={locale}
+  title={format(m.title, { name: language })}
+  description={format(m.description, { name: language, count: tools.length })}
+  context={m.context}
+  parent={pathFor(locale, "/languages/")}
+  heading={language}
+  lede={format(m.lede, { name: language })}
+  tools={tools}
+/>
