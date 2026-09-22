@@ -1,0 +1,7 @@
+name: Rocket.Chat
+repository: https://github.com/RocketChat/Rocket.Chat
+category: team-chat
+replaces:
+  - tool: mattermost
+    fit: full
+    note: Channels, threads and federation, self-hosted.

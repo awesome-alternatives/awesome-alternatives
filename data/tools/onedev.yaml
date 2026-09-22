@@ -1,0 +1,7 @@
+name: OneDev
+repository: https://github.com/theonedev/onedev
+category: git-forge
+replaces:
+  - tool: gitlab
+    fit: full
+    note: Self-hosted forge with CI/CD and boards built in.

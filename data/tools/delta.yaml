@@ -1,0 +1,7 @@
+name: delta
+repository: https://github.com/dandavison/delta
+category: git-diff-pager
+replaces:
+  - tool: diff-so-fancy
+    fit: full
+    note: Syntax highlighting, side-by-side view and line numbers.

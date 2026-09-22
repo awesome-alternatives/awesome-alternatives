@@ -1,0 +1,3 @@
+name: jq
+repository: https://github.com/jqlang/jq
+category: json-processor

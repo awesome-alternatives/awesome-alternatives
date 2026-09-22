@@ -1,0 +1,7 @@
+name: OpenBao
+repository: https://github.com/openbao/openbao
+category: secrets-manager
+replaces:
+  - tool: vault
+    fit: drop-in
+    note: Fork of Vault 1.14 under MPL-2.0, same API.

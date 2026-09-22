@@ -1,0 +1,7 @@
+name: eza
+repository: https://github.com/eza-community/eza
+category: file-listing
+replaces:
+  - tool: exa
+    fit: drop-in
+    note: The maintained fork of exa, same flags.

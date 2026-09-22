@@ -1,0 +1,7 @@
+name: Helix
+repository: https://github.com/helix-editor/helix
+category: text-editor
+replaces:
+  - tool: vim
+    fit: partial
+    note: Modal like Vim but selection first, with LSP and tree-sitter built in.

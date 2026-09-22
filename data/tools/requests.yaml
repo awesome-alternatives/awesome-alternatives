@@ -1,0 +1,3 @@
+name: Requests
+repository: https://github.com/psf/requests
+category: python-http-client

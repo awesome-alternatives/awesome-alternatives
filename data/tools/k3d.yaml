@@ -1,0 +1,7 @@
+name: k3d
+repository: https://github.com/k3d-io/k3d
+category: local-kubernetes
+replaces:
+  - tool: minikube
+    fit: full
+    note: Lightweight k3s clusters in Docker.

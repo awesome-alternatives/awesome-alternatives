@@ -1,0 +1,7 @@
+name: VSCodium
+repository: https://github.com/VSCodium/vscodium
+category: text-editor
+replaces:
+  - tool: vscode
+    fit: drop-in
+    note: "VS Code built from source without Microsoft's telemetry or branding."

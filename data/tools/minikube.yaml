@@ -1,0 +1,3 @@
+name: minikube
+repository: https://github.com/kubernetes/minikube
+category: local-kubernetes

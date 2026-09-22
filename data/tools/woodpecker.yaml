@@ -1,0 +1,7 @@
+name: Woodpecker CI
+repository: https://github.com/woodpecker-ci/woodpecker
+category: ci-server
+replaces:
+  - tool: jenkins
+    fit: full
+    note: Pipelines in YAML, each step in its own container.

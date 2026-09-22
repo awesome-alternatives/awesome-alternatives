@@ -1,0 +1,7 @@
+name: Vaultwarden
+repository: https://github.com/dani-garcia/vaultwarden
+category: password-manager-server
+replaces:
+  - tool: bitwarden
+    fit: drop-in
+    note: Implements the Bitwarden server API, works with the official clients.

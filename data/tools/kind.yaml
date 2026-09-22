@@ -1,0 +1,7 @@
+name: kind
+repository: https://github.com/kubernetes-sigs/kind
+category: local-kubernetes
+replaces:
+  - tool: minikube
+    fit: full
+    note: Clusters as Docker containers, built for CI.

@@ -1,0 +1,7 @@
+name: Infisical
+repository: https://github.com/Infisical/infisical
+category: secrets-manager
+replaces:
+  - tool: vault
+    fit: partial
+    note: Application secrets and environment sync, not a general PKI or encryption service.

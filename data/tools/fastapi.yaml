@@ -1,0 +1,7 @@
+name: FastAPI
+repository: https://github.com/fastapi/fastapi
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: full
+    note: Async, with type hints driving validation and OpenAPI docs.

@@ -1,0 +1,7 @@
+name: Locust
+repository: https://github.com/locustio/locust
+category: load-testing
+replaces:
+  - tool: jmeter
+    fit: full
+    note: Tests written in Python, with distributed workers.

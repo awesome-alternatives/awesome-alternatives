@@ -1,0 +1,7 @@
+name: Umami
+repository: https://github.com/umami-software/umami
+category: web-analytics
+replaces:
+  - tool: matomo
+    fit: full
+    note: Cookie-free, runs on PostgreSQL or MySQL.

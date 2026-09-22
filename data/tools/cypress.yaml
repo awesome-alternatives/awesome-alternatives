@@ -1,0 +1,7 @@
+name: Cypress
+repository: https://github.com/cypress-io/cypress
+category: browser-testing
+replaces:
+  - tool: selenium
+    fit: partial
+    note: Runs inside the browser, tests in JavaScript only.
