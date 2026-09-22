@@ -3,13 +3,13 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ADDED_LOG_ARGS, addedAt, carriedAddedAt, parseAddedLog } from "./lib/added.ts";
 import { loadCatalog } from "./lib/catalog.ts";
-import { fetchReleases } from "./lib/facts.ts";
+import { fetchOwner, fetchReleases, ownerOf } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
 import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
-import type { EnrichedTool } from "./lib/types.ts";
+import type { EnrichedTool, OwnerFacts } from "./lib/types.ts";
 
 const root = process.cwd();
 const { catalog, findings } = await loadCatalog(root);
@@ -52,7 +52,16 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
 });
 
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
-await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), tools }, null, 2)}\n`);
+
+const logins = [...new Set(tools.map((t) => ownerOf(t.repo.fullName)))].sort((a, b) => a.localeCompare(b));
+const fetched = await mapLimit(logins, 4, (login) => fetchOwner(gh, login));
+const owners: Record<string, OwnerFacts> = {};
+fetched.forEach((owner, i) => {
+  if (owner) owners[owner.login] = owner;
+  else console.error(`${logins[i]}: GitHub reports no such account, listed without an owner`);
+});
+
+await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), owners, tools }, null, 2)}\n`);
 
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");

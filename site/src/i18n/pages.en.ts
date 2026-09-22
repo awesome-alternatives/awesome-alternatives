@@ -217,7 +217,7 @@ export const pages = {
       licenceMiddle: "and the code under",
       codeLink: "MIT",
       licenceAfter:
-        ". Repository figures (stars, releases, licences, descriptions) come from the public GitHub API. Project names and trademarks belong to their owners.",
+        ". Repository figures (stars, releases, licences, descriptions) come from the public GitHub API, along with the public name and description of the account each repository belongs to. Project names and trademarks belong to their owners.",
       reportBefore: "To report an error or ask for an entry to be removed, open an issue on",
       reportLink: "GitHub",
       reportAfter: "or write to",

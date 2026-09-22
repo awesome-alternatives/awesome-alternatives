@@ -220,7 +220,7 @@ export const pages: Pages = {
       licenceMiddle: "und der Code unter",
       codeLink: "MIT",
       licenceAfter:
-        ". Die Kennzahlen der Repositories (Sterne, Releases, Lizenzen, Beschreibungen) stammen aus der öffentlichen GitHub-API. Projektnamen und Marken gehören ihren Inhabern.",
+        ". Die Kennzahlen der Repositories (Sterne, Releases, Lizenzen, Beschreibungen) stammen aus der öffentlichen GitHub-API, ebenso der öffentliche Name und die Beschreibung des Kontos, zu dem ein Repository gehört. Projektnamen und Marken gehören ihren Inhabern.",
       reportBefore: "Um einen Fehler zu melden oder die Entfernung eines Eintrags zu beantragen, öffne ein Issue auf",
       reportLink: "GitHub",
       reportAfter: "oder schreib an",

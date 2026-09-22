@@ -1,0 +1,47 @@
+---
+import type { EnrichedTool, OwnerFacts } from "../../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import ToolListing from "../../../components/ToolListing.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import { ownerFacts, ownerGroups } from "../../../lib/catalog.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(
+    ownerGroups.map((group) => ({
+      params: { owner: group.slug },
+      props: { login: group.label, facts: ownerFacts(group.label), tools: group.tools },
+    })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  login: string;
+  facts: OwnerFacts | null;
+  tools: EnrichedTool[];
+}
+
+const { locale, login, facts, tools } = Astro.props;
+const m = messages(locale).owner;
+const name = facts?.name ?? login;
+const profile = facts?.url ?? `https://github.com/${login}`;
+---
+
+<ToolListing
+  locale={locale}
+  title={format(m.title, { name })}
+  description={format(m.description, { name, count: tools.length })}
+  context={m.context}
+  parent={pathFor(locale, "/owners/")}
+  heading={name}
+  lede={format(m.lede, { name })}
+  tools={tools}
+>
+  {facts?.bio && <p class="owner-bio">{facts.bio}</p>}
+  <p class="links">
+    <a href={profile}>{m.profile}</a>
+    {facts?.website && <a href={facts.website}>{m.website}</a>}
+  </p>
+</ToolListing>

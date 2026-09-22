@@ -53,6 +53,9 @@ export const es: Messages = {
     categories: "Categorías",
     languages: "Lenguajes",
     licenses: "Licencias",
+    owners: "Propietarios",
+    sponsorNote: "El catálogo es gratuito y sin publicidad.",
+    sponsorLink: "Patrocinarlo en GitHub ↗",
     examples: [
       "semantic-release, pero escrito en Rust",
       "una sustitución directa de webpack, más rápida",
@@ -94,6 +97,12 @@ export const es: Messages = {
       heading: "Licencias",
       lede: "La licencia que GitHub detecta en cada repositorio. Other significa un archivo de licencia que GitHub no ha podido asociar a una licencia conocida.",
     },
+    owners: {
+      title: "Quién publica las herramientas del catálogo",
+      description: "Las {count} cuentas de GitHub con más de una herramienta en awesome-alternatives.",
+      heading: "Propietarios",
+      lede: "{count} cuentas publican más de una herramienta en el catálogo. El resto publica una sola, enlazada desde su ficha.",
+    },
     tools: {
       title: "Todas las herramientas del catálogo",
       description: "Las {count} herramientas de awesome-alternatives, con lenguaje, licencia, estrellas y última versión.",
@@ -122,6 +131,15 @@ export const es: Messages = {
     lede: "Herramientas cuyo repositorio GitHub indica bajo la licencia {name}.",
   },
 
+  owner: {
+    context: "propietario",
+    title: "Herramientas publicadas por {name}",
+    description: "{count} herramientas del catálogo que pertenecen a {name} en GitHub, con lenguaje, licencia, estrellas y última versión.",
+    lede: "Repositorios que pertenecen a {name} en GitHub.",
+    profile: "Perfil de GitHub ↗",
+    website: "Sitio web ↗",
+  },
+
   target: {
     title: "Alternativas a {name}",
     description:
@@ -139,6 +157,7 @@ export const es: Messages = {
     alternativeTo: "alternativa a",
     archived: "archivado",
     aboutLabel: "Acerca de",
+    owner: "Propietario",
     archivedNote:
       "Este repositorio está archivado y ya no recibe cambios. Aparece en la lista para que puedas encontrar lo que lo sustituye.",
     signed: "✓ firmada",

@@ -6,8 +6,24 @@ import { auditSitemap, barePaths, expectedPaths, locs } from "../src/lib/sitemap
 
 const SITE = "https://example.com";
 const catalog = [
-  { slug: "ferrflow", replaces: [{ tool: "semantic-release", fit: "full" as const }] },
-  { slug: "cocogitto", replaces: [{ tool: "semantic-release", fit: "partial" as const }, { tool: "ferrflow", fit: "partial" as const }] },
+  {
+    slug: "ferrflow",
+    repo: { fullName: "FerrLabs/FerrFlow" },
+    replaces: [{ tool: "semantic-release", fit: "full" as const }],
+  },
+  {
+    slug: "cocogitto",
+    repo: { fullName: "cocogitto/cocogitto" },
+    replaces: [
+      { tool: "semantic-release", fit: "partial" as const },
+      { tool: "ferrflow", fit: "partial" as const },
+    ],
+  },
+  {
+    slug: "ferrvault",
+    repo: { fullName: "FerrLabs/FerrVault" },
+    replaces: [{ tool: "vault", fit: "partial" as const }],
+  },
 ];
 
 test("barePaths lists home, the index pages, every tool and every target once", () => {
@@ -18,11 +34,21 @@ test("barePaths lists home, the index pages, every tool and every target once", 
     "/categories/",
     "/languages/",
     "/licenses/",
+    "/owners/",
     "/tools/ferrflow/",
     "/tools/cocogitto/",
+    "/tools/ferrvault/",
     "/alternatives/semantic-release/",
     "/alternatives/ferrflow/",
+    "/alternatives/vault/",
+    "/owners/ferrlabs/",
   ]);
+});
+
+test("barePaths lists an owner only once it holds more than one tool", () => {
+  const paths = barePaths(catalog);
+  assert.ok(paths.includes("/owners/ferrlabs/"));
+  assert.ok(!paths.includes("/owners/cocogitto/"), "an owner with one tool gets no page, so nothing to list");
 });
 
 test("expectedPaths repeats every path in each locale, leaving English unprefixed", () => {
@@ -41,7 +67,7 @@ test("locs reads every loc, trimming whitespace", () => {
 });
 
 test("auditSitemap reports what a locale is missing and flags a translated 404", () => {
-  const dropped = ["/fr/licenses/", "/de/alternatives/semantic-release/"];
+  const dropped = ["/fr/licenses/", "/es/owners/ferrlabs/", "/de/alternatives/semantic-release/"];
   const listed = expectedPaths(catalog)
     .filter((path) => !dropped.includes(path))
     .map((path) => new URL(path, SITE).href);
