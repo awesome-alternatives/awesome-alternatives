@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.16.0] - 2026-09-22
+
+### Features
+
+- feat(site): add an on-site contribute page rendered from CONTRIBUTING.md (#38)
+
 ## [0.15.1] - 2026-09-22
 
 ### Bug Fixes
