@@ -28,6 +28,9 @@ replaces:
 Do not add stars, versions, licences or descriptions. The schema rejects them: those come from
 GitHub, so they cannot drift or be inflated.
 
+By opening a pull request that adds or edits a file under `data/`, you dedicate that contribution to the
+public domain under [CC0 1.0](LICENSE-DATA), like the rest of the catalog.
+
 ## What CI checks
 
 Every pull request runs the checks below against GitHub for the entries it touches, and writes the
