@@ -73,6 +73,7 @@ const feed = new URL("/feed.xml", Astro.site);
       }
       <nav>
         <a href="/#browse">Browse</a>
+        <a href="/about/">About</a>
         <a href="/contribute/">Add a tool</a>
         <a href={REPO}>GitHub</a>
       </nav>
@@ -83,9 +84,10 @@ const feed = new URL("/feed.xml", Astro.site);
     <footer class="site-footer">
       <p>
         Catalog <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, code <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>,
-        data from GitHub
+        data <a href="/about/#refresh">from GitHub, every night</a>
       </p>
       <nav aria-label="Footer">
+        <a href="/about/">How it works</a>
         <a href="/feed.xml">RSS feed</a>
         <a href="/legal-notice/">Legal notice</a>
         <a href="/privacy/">Privacy</a>

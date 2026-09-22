@@ -19,7 +19,13 @@
       "name": "site",
       "path": "site",
       "changelog": "site/CHANGELOG.md",
-      "sharedPaths": ["generated/catalog.json", "data/categories.yaml", "scripts/lib/types.ts"],
+      "sharedPaths": [
+        "generated/catalog.json",
+        "data/categories.yaml",
+        "scripts/lib/types.ts",
+        "scripts/lib/rules.ts",
+        ".github/workflows/refresh.yml"
+      ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
     }
   ]

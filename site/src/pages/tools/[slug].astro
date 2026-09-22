@@ -48,7 +48,7 @@ const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool),
     }
     <h1>
       {tool.name}
-      {repo.archived && <span class="mark mark-archived">archived</span>}
+      {repo.archived && <a class="mark mark-archived" href="/about/#archived">archived</a>}
     </h1>
 
     <div class="tool-layout">
@@ -78,8 +78,8 @@ const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool),
           {repo.language && <span class="tag">{repo.language}</span>}
           <a class="tag" href={`/categories/${slugify(tool.category)}/`}>{category?.name ?? tool.category}</a>
           {repo.license && <span class="tag">{repo.license}</span>}
-          {release?.signed && <span class="tag">✓ signed</span>}
-          {tool.maintainerVerified && <span class="tag">✓ verified</span>}
+          {release?.signed && <a class="tag" href="/about/#signed">✓ signed</a>}
+          {tool.maintainerVerified && <a class="tag" href="/about/#verified">✓ verified</a>}
         </div>
 
         <dl class="about-facts">

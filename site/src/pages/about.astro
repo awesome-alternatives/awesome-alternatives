@@ -1,0 +1,185 @@
+---
+import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_THRESHOLD, SPIKE_WINDOW_MS } from "../../../scripts/lib/rules.ts";
+import Base from "../layouts/Base.astro";
+import { refreshCron, tools } from "../lib/catalog.ts";
+import { FIT_LABEL, FLAG_LABEL } from "../lib/format.ts";
+import { REPO } from "../lib/repo.ts";
+import { dailyTime } from "../lib/schedule.ts";
+
+const refreshedAt = dailyTime(refreshCron);
+const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
+---
+
+<Base
+  title="About: marks, fit levels and the nightly refresh"
+  description="What an entry in the catalog states, what is read from GitHub every night, and the rule behind every mark shown on a tool."
+>
+  <section class="hero">
+    <p class="eyebrow">About</p>
+    <h1>What the catalog says, and how it knows.</h1>
+    <p class="lede">
+      {tools.length} developer tools, each listed with what it replaces. The rest of what you see on a tool comes from GitHub,
+      not from whoever added it.
+    </p>
+  </section>
+
+  <section class="explainer" id="entries">
+    <h2>What an entry states</h2>
+    <p>
+      Every tool is a small YAML file under <a href={`${REPO}/tree/main/data/tools`}><code>data/tools/</code></a>. It
+      names the tool, its GitHub repository, its category, the tools it replaces with a fit level for each, and an
+      affiliation when there is one. That is all a contributor can write.
+    </p>
+    <p>
+      An entry never states stars, a licence, a version or a description. The schema rejects them, so a pull request cannot
+      inflate a star count or claim a release that does not exist.
+    </p>
+  </section>
+
+  <section class="explainer" id="refresh">
+    <h2>The nightly refresh</h2>
+    <p>
+      Every day at {refreshedAt}, and whenever the catalog data changes on the main branch, a
+      <a href={`${REPO}/blob/main/.github/workflows/refresh.yml`}>GitHub Actions workflow</a> reads every listed repository
+      from the GitHub API:
+    </p>
+    <ul class="explainer-list">
+      <li>description, homepage, language, licence, stars, forks and topics</li>
+      <li>whether the repository is archived, and the date of its last push</li>
+      <li>the latest release, or the latest tag when there is no release, and whether it is signed</li>
+      <li>the last five published releases, shown on the tool page</li>
+      <li>the maintainer file described under <a href="#verified">verified</a></li>
+    </ul>
+    <p>
+      When anything changed, the workflow commits the new catalog and a new build of this site goes out. A tool whose
+      repository GitHub no longer returns, because it was deleted or made private, is left out of the catalog.
+    </p>
+  </section>
+
+  <section class="explainer" id="marks">
+    <h2>Marks</h2>
+    <dl class="glossary">
+      <div id="signed">
+        <dt><span class="mark mark-good">✓ signed</span></dt>
+        <dd>
+          Next to the latest version. The tag carries a signature GitHub verified, or, for a lightweight tag, the commit it
+          points at does. Only the latest release is checked.
+        </dd>
+      </div>
+      <div id="verified">
+        <dt><span class="mark mark-good">Verified by its maintainers</span></dt>
+        <dd>
+          The tool's own repository has an <code>.awesome-alternatives.yml</code> file at the root of its default branch,
+          with <code>slug:</code> set to this entry. Only someone with write access to the repository can add it, so the mark
+          says its maintainers stand behind the entry. The refresh reads the file every night.
+        </dd>
+      </div>
+      <div id="archived">
+        <dt><span class="mark mark-archived">archived</span></dt>
+        <dd>
+          The repository is archived and gets no more changes. An archived tool is exactly what people look to move off, so it
+          is accepted only as something other entries replace, never as an alternative, and it does not get the
+          <a href="#inactive">no push</a> warning.
+        </dd>
+      </div>
+      <div id="licence">
+        <dt><span class="mark">Other</span></dt>
+        <dd>
+          Shown as the licence when GitHub detects one but cannot map it to an SPDX identifier. When GitHub detects none, the
+          tool reads <em>None detected</em> and gets the <a href="#no-license">no licence</a> warning.
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="explainer" id="fit">
+    <h2>Fit levels</h2>
+    <p>Each replacement carries one, set by whoever adds the entry.</p>
+    <dl class="glossary">
+      <div id="drop-in">
+        <dt><span class="fit fit-drop-in">{FIT_LABEL["drop-in"]}</span></dt>
+        <dd>
+          Accepts the original's configuration or interface unchanged: you swap it in without touching your setup. Asking
+          for a drop-in in the search keeps only these.
+        </dd>
+      </div>
+      <div id="full">
+        <dt><span class="fit fit-full">{FIT_LABEL.full}</span></dt>
+        <dd>Covers the same job, in its own way. Expect to migrate your configuration.</dd>
+      </div>
+      <div id="partial">
+        <dt><span class="fit fit-partial">{FIT_LABEL.partial}</span></dt>
+        <dd>Covers part of the job. The note under the tool says which part.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="explainer" id="warnings">
+    <h2>Warnings</h2>
+    <p>
+      A warning never removes a tool. It is something a maintainer looks at before merging a pull request, and something
+      you may want to know before you depend on the tool.
+    </p>
+    <dl class="glossary">
+      <div id="moved">
+        <dt><span class="mark mark-warn">{FLAG_LABEL.moved}</span></dt>
+        <dd>The repository now lives under another name or owner. GitHub redirects the old address, but the entry should be updated.</dd>
+      </div>
+      <div id="no-license">
+        <dt><span class="mark mark-warn">{FLAG_LABEL["no-license"]}</span></dt>
+        <dd>GitHub detects no licence, so the terms under which you can use the code are unclear.</dd>
+      </div>
+      <div id="no-release">
+        <dt><span class="mark mark-warn">{FLAG_LABEL["no-release"]}</span></dt>
+        <dd>The repository has neither a release nor a tag, so there is no version to pin.</dd>
+      </div>
+      <div id="inactive">
+        <dt><span class="mark mark-warn">{FLAG_LABEL.inactive}</span></dt>
+        <dd>Nothing was pushed for more than {INACTIVE_DAYS} days. Archived repositories are left out of this one.</dd>
+      </div>
+      <div id="star-spike">
+        <dt><span class="mark mark-warn">{FLAG_LABEL["star-spike"]}</span></dt>
+        <dd>
+          {SPIKE_THRESHOLD} or more of the most recent stars arrived within {spikeHours} hours. Bought stars arrive in bursts,
+          and so does a launch on Hacker News, which is why a person decides. This check runs when a pull request adds or
+          edits the entry, not during the nightly refresh. GitHub refuses to page deep into the stargazers of the largest
+          repositories, and for those the check is skipped rather than guessed.
+        </dd>
+      </div>
+    </dl>
+    <p>
+      Some problems block a pull request instead: a repository that is private, a fork, archived but offered as an
+      alternative, younger than {MIN_AGE_DAYS} days, or already listed under another slug.{" "}
+      <a href="/contribute/#what-ci-checks">The contributor guide</a> lists every check.
+    </p>
+  </section>
+
+  <section class="explainer" id="affiliation">
+    <h2>Affiliation</h2>
+    <p>
+      Whoever maintains, works on or is paid by a tool has to say so in its entry. Listing your own project is welcome, not
+      saying so is grounds for removal. When an entry has an affiliation, the tool page shows it as written.
+    </p>
+  </section>
+
+  <section class="explainer" id="search">
+    <h2>How search works</h2>
+    <p>
+      Your query is first read as keywords: the names of tools that others replace, the languages and licences in the
+      catalog, and "drop in". When no tool to replace is named, a small embedding model running on the search server
+      compares the query with every tool's description. If one tool to replace clearly stands out, it is picked; otherwise
+      the results are ranked by how close they are to the query. Only when neither step finds a tool to replace, and the
+      server has a key for it, is the text of the query sent to Jev, an external service, to read it. Its reading is cached
+      on the server for a day. The results say which one read your query: "Matched locally" or
+      "Read by Jev". <a href="/privacy/">The privacy page</a> says what is sent and what is kept.
+    </p>
+  </section>
+
+  <section class="explainer" id="licences">
+    <h2>Licences</h2>
+    <p>
+      The catalog data is dedicated to the public domain under <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0 1.0</a>. The
+      code of the site, the API and the scripts is under the <a href={`${REPO}/blob/main/LICENSE`}>MIT licence</a>.
+    </p>
+  </section>
+</Base>
