@@ -54,16 +54,21 @@ const MAINTAINER_FILE = ".awesome-alternatives.yml";
 const PAGE = 100;
 const MAX_STARGAZER_PAGE = 400;
 
+export function licenseOf(license: ApiRepo["license"]): string | null {
+  if (!license) return null;
+  const spdx = license.spdx_id;
+  return spdx && spdx !== "NOASSERTION" ? spdx : "Other";
+}
+
 export async function fetchRepo(gh: GitHub, repository: string): Promise<RepoFacts | null> {
   const r = await gh.get<ApiRepo>(`/repos/${repoPath(repository)}`);
   if (!r) return null;
-  const spdx = r.license?.spdx_id;
   return {
     fullName: r.full_name,
     description: r.description,
     homepage: r.homepage || null,
     language: r.language,
-    license: spdx && spdx !== "NOASSERTION" ? spdx : null,
+    license: licenseOf(r.license),
     stars: r.stargazers_count,
     forks: r.forks_count,
     archived: r.archived,
