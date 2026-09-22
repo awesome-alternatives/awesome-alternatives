@@ -22,14 +22,14 @@ pub struct Advisory {
     pub url: String,
 }
 
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub struct Scorecard {
     pub score: f64,
     pub date: String,
     pub checks: Vec<Check>,
 }
 
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 pub struct Check {
     pub name: String,
     pub score: Option<u8>,

@@ -4,6 +4,7 @@ use std::num::NonZeroU32;
 use std::str::FromStr;
 use std::time::Duration;
 
+use crate::cache;
 use crate::details;
 use crate::jev;
 use crate::upstream;
@@ -27,6 +28,7 @@ pub struct Config {
     pub github_token: Option<String>,
     pub scorecard_api: String,
     pub details_cache_bytes: u64,
+    pub valkey: Option<cache::Settings>,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -54,8 +56,33 @@ impl Config {
             scorecard_api: text("SCORECARD_API_URL")
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
+            valkey: valkey()?,
         })
     }
+}
+
+fn valkey() -> Result<Option<cache::Settings>, ConfigError> {
+    let Some(url) = text("VALKEY_URL") else {
+        return Ok(None);
+    };
+    Ok(Some(cache::Settings {
+        url,
+        ca_cert: text("VALKEY_CA_CERT"),
+        timeout: Duration::from_millis(parsed(
+            "VALKEY_TIMEOUT_MS",
+            &cache::TIMEOUT.as_millis().to_string(),
+        )?),
+        ttl: cache::Ttl {
+            details: Duration::from_secs(parsed(
+                "VALKEY_DETAILS_TTL_SECS",
+                &cache::DETAILS_TTL.as_secs().to_string(),
+            )?),
+            search: Duration::from_secs(parsed(
+                "VALKEY_SEARCH_TTL_SECS",
+                &cache::SEARCH_TTL.as_secs().to_string(),
+            )?),
+        },
+    }))
 }
 
 fn text(name: &str) -> Option<String> {

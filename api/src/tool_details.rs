@@ -66,6 +66,7 @@ mod tests {
     use serde_json::{Value, json};
     use tower::ServiceExt;
 
+    use crate::cache::Shared;
     use crate::catalog::Catalog;
     use crate::details::{CACHE_BYTES, Details};
     use crate::fixtures::tool;
@@ -131,6 +132,7 @@ mod tests {
 
     fn app(fake: &Fake) -> Router {
         let catalog = Catalog {
+            revision: "test".into(),
             tools: vec![
                 tool("good", "Rust", "MIT", &[], 1),
                 tool("unscored", "Rust", "MIT", &[], 1),
@@ -139,8 +141,8 @@ mod tests {
         let upstream = Upstream::new(reqwest::Client::new(), &fake.base, &fake.base, None);
         let state = AppState::new(
             Loaded::new(catalog, None),
-            Search::new(None, None),
-            Details::new(upstream, CACHE_BYTES),
+            Search::new(None, None, Arc::new(Shared::disabled())),
+            Details::new(upstream, CACHE_BYTES, Arc::new(Shared::disabled())),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
             false,
         );

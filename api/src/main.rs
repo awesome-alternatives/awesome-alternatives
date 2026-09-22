@@ -1,3 +1,4 @@
+mod cache;
 mod catalog;
 mod config;
 mod details;
@@ -78,11 +79,12 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         config.github_token.clone(),
     );
     let embedder = load_embedder().await;
+    let shared = Arc::new(cache::open(config.valkey).await);
     let loaded = Loaded::build(catalog, embedder.clone()).await;
     let state = AppState::new(
         loaded,
-        Search::new(jev, embedder),
-        Details::new(upstream, config.details_cache_bytes),
+        Search::new(jev, embedder, Arc::clone(&shared)),
+        Details::new(upstream, config.details_cache_bytes, shared),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
     );

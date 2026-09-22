@@ -3,8 +3,9 @@ use std::sync::Arc;
 use std::time::Duration;
 
 use moka::future::Cache;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
+use crate::cache::Shared;
 use crate::catalog::Tool;
 use crate::embedding::{Embedder, Vector};
 use crate::filters::Filters;
@@ -14,13 +15,14 @@ use crate::lexical;
 use crate::state::Loaded;
 use crate::vocabulary::Vocabulary;
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "lowercase")]
 pub enum Interpreter {
     Local,
     Jev,
 }
 
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Interpretation {
     pub filters: Filters,
     pub interpreted_by: Interpreter,
@@ -44,14 +46,20 @@ impl Interpretation {
 pub struct Search {
     jev: Option<JevClient>,
     embedder: Option<Arc<dyn Embedder>>,
-    cache: Cache<String, Filters>,
+    shared: Arc<Shared>,
+    cache: Cache<String, Interpretation>,
 }
 
 impl Search {
-    pub fn new(jev: Option<JevClient>, embedder: Option<Arc<dyn Embedder>>) -> Self {
+    pub fn new(
+        jev: Option<JevClient>,
+        embedder: Option<Arc<dyn Embedder>>,
+        shared: Arc<Shared>,
+    ) -> Self {
         Self {
             jev,
             embedder,
+            shared,
             cache: Cache::builder()
                 .max_capacity(10_000)
                 .time_to_live(Duration::from_secs(24 * 3600))
@@ -64,6 +72,24 @@ impl Search {
     }
 
     pub async fn interpret(&self, query: &str, loaded: &Loaded) -> Interpretation {
+        let normalized = lexical::normalize(query);
+        if let Some(remembered) = self.cache.get(&normalized).await {
+            return remembered;
+        }
+        let key = key(&loaded.catalog.revision, &normalized);
+        let read = match self.shared.get::<Interpretation>(&key).await {
+            Some(shared) => shared,
+            None => {
+                let read = self.read(query, loaded).await;
+                self.shared.set(&key, &read, self.shared.ttl.search).await;
+                read
+            }
+        };
+        self.cache.insert(normalized, read.clone()).await;
+        read
+    }
+
+    async fn read(&self, query: &str, loaded: &Loaded) -> Interpretation {
         let mut filters = lexical::interpret(query, &loaded.vocabulary);
         let vector = self.embed_query(query, loaded).await;
         if filters.replaces.is_none() {
@@ -116,19 +142,11 @@ impl Search {
 
     async fn ask_jev(&self, query: &str, vocabulary: &Vocabulary) -> Option<Filters> {
         let jev = self.jev.as_ref()?;
-        let key = lexical::normalize(query);
-        if let Some(filters) = self.cache.get(&key).await {
-            return Some(filters);
-        }
         match jev
             .system_one(query, &interpret::questions(query, vocabulary))
             .await
         {
-            Ok(answers) => {
-                let filters = interpret::filters(&answers, vocabulary);
-                self.cache.insert(key, filters.clone()).await;
-                Some(filters)
-            }
+            Ok(answers) => Some(interpret::filters(&answers, vocabulary)),
             Err(error) => {
                 tracing::warn!(%error, "Jev is unavailable, keeping the local interpretation");
                 None
@@ -141,9 +159,15 @@ impl Search {
     }
 }
 
+fn key(revision: &str, normalized: &str) -> String {
+    crate::cache::key(&["search", revision, normalized])
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::cache::fake::recording;
+    use crate::cache::{SEARCH_TTL, Ttl, fake};
     use crate::catalog::{Catalog, Fit};
     use crate::embedding::fake::{Broken, Words};
     use crate::fixtures::tool;
@@ -163,13 +187,18 @@ mod tests {
         let mut cliff = tool("git-cliff", "Rust", "Apache-2.0", &[], 1);
         cliff.repo.description = Some("Highly customizable changelog generator".into());
         Catalog {
+            revision: "rev-one".into(),
             tools: vec![semantic_release, knope, cliff],
         }
     }
 
     fn with(embedder: Option<Arc<dyn Embedder>>) -> (Search, Loaded) {
+        shared_with(embedder, Arc::new(Shared::disabled()))
+    }
+
+    fn shared_with(embedder: Option<Arc<dyn Embedder>>, shared: Arc<Shared>) -> (Search, Loaded) {
         let loaded = Loaded::new(catalog(), embedder.as_deref());
-        (Search::new(None, embedder), loaded)
+        (Search::new(None, embedder, shared), loaded)
     }
 
     #[tokio::test]
@@ -216,6 +245,64 @@ mod tests {
         assert_eq!(slugs(&open), ["git-cliff"]);
         let in_rust = search.interpret("rust changelog generator", &loaded).await;
         assert_eq!(slugs(&in_rust), ["git-cliff", "knope"]);
+    }
+
+    #[tokio::test]
+    async fn an_interpretation_is_shared_under_a_key_carrying_the_version_and_the_revision() {
+        let (shared, store) = recording();
+        let (search, loaded) = shared_with(Some(Arc::new(Words)), shared);
+        search.interpret("changelog generator", &loaded).await;
+        let written = store.written();
+        assert_eq!(written.len(), 1);
+        assert_eq!(written[0].key, "aa:v1:search:rev-one:changelog generator");
+        assert_eq!(written[0].ttl, SEARCH_TTL);
+    }
+
+    #[tokio::test]
+    async fn a_process_without_a_model_reuses_the_shared_interpretation() {
+        let (shared, _store) = recording();
+        let query = "fully automated version management";
+        let (warm, loaded) = shared_with(Some(Arc::new(Words)), Arc::clone(&shared));
+        assert_eq!(
+            warm.interpret(query, &loaded)
+                .await
+                .filters
+                .replaces
+                .as_deref(),
+            Some("semantic-release")
+        );
+
+        let (cold, mut without_model) = shared_with(None, shared);
+        assert!(without_model.index.is_none());
+        assert_eq!(
+            cold.interpret(query, &without_model)
+                .await
+                .filters
+                .replaces
+                .as_deref(),
+            Some("semantic-release")
+        );
+
+        without_model.catalog.revision = "rev-two".into();
+        cold.forget();
+        assert_eq!(
+            cold.interpret(query, &without_model).await.filters.replaces,
+            None
+        );
+    }
+
+    #[tokio::test]
+    async fn a_broken_shared_cache_still_answers_from_the_model() {
+        let shared = Arc::new(Shared::new(
+            Box::new(fake::Broken),
+            Duration::from_millis(50),
+            Ttl::default(),
+        ));
+        let (search, loaded) = shared_with(Some(Arc::new(Words)), shared);
+        let read = search
+            .interpret("fully automated version management", &loaded)
+            .await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
     }
 
     #[tokio::test]
