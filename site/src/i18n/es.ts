@@ -160,8 +160,8 @@ export const es: Messages = {
     owner: "Propietario",
     archivedNote:
       "Este repositorio está archivado y ya no recibe cambios. Aparece en la lista para que puedas encontrar lo que lo sustituye.",
-    signed: "✓ firmada",
-    verified: "✓ verificada",
+    signed: "Versión firmada, verificada por GitHub",
+    verified: "Verificada por sus mantenedores",
     stars: "Estrellas",
     forks: "Forks",
     latest: "Última versión",

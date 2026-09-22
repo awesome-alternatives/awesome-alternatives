@@ -34,8 +34,11 @@ export function stripLocale(pathname: string): string {
 }
 
 export function pathFor(locale: Locale, path: string): string {
-  const bare = stripLocale(path);
-  return locale === DEFAULT_LOCALE ? bare : `/${locale}${bare}`;
+  const cut = path.search(/[#?]/);
+  const route = cut < 0 ? path : path.slice(0, cut);
+  const rest = cut < 0 ? "" : path.slice(cut);
+  const bare = stripLocale(route);
+  return `${locale === DEFAULT_LOCALE ? bare : `/${locale}${bare}`}${rest}`;
 }
 
 export function format(template: string, values: Record<string, string | number> = {}): string {

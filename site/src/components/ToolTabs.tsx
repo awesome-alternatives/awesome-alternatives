@@ -7,6 +7,7 @@ import { readme, security } from "../lib/api.ts";
 import { day } from "../lib/format.ts";
 import { scoreLevel, type TabId, tabFromHash } from "../lib/tabs.ts";
 import type { Fit, Readme, SecurityReport, ToolView } from "../lib/types.ts";
+import { Mark } from "./Mark.tsx";
 import { ToolCard } from "./ToolCard.tsx";
 
 export interface ReplacedTool {
@@ -211,7 +212,7 @@ function ReleasesPanel({
           <span className="history-name">{r.name ?? ""}</span>
           <span className="history-marks">
             {r.prerelease && <span className="mark">{copy.prerelease}</span>}
-            {latest?.signed && latest.tag === r.tag && <span className="mark mark-good">{copy.signed}</span>}
+            {latest?.signed && latest.tag === r.tag && <Mark icon="signed" label={copy.signed} />}
           </span>
         </li>
       ))}

@@ -2,6 +2,7 @@
 import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
+import { Mark } from "../../../components/Mark.tsx";
 import ToolTabs from "../../../components/ToolTabs.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
@@ -94,12 +95,10 @@ const login = loginOf(repo.fullName);
             {category?.name ?? tool.category}
           </a>
           {repo.license && <span class="tag">{repo.license}</span>}
-          {release?.signed && <a class="tag" href={`${pathFor(locale, "/about/")}#signed`}>{m.tool.signed}</a>}
+          {release?.signed && <Mark icon="signed" label={m.tool.signed} href={`${pathFor(locale, "/about/")}#signed`} />}
           {
             tool.maintainerVerified && (
-              <a class="tag" href={`${pathFor(locale, "/about/")}#verified`}>
-                {m.tool.verified}
-              </a>
+              <Mark icon="verified" label={m.tool.verified} href={`${pathFor(locale, "/about/")}#verified`} />
             )
           }
         </div>

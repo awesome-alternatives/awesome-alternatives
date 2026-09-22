@@ -646,6 +646,49 @@ button.link {
   border-color: var(--dim);
 }
 
+.mark-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  vertical-align: middle;
+}
+
+.mark-icon svg {
+  display: block;
+}
+
+.mark-icon::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  z-index: 30;
+  width: max-content;
+  max-width: 200px;
+  padding: 5px 8px;
+  transform: translateX(-50%);
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--dim);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  text-align: center;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 120ms ease,
+    visibility 0s linear 120ms;
+}
+
+.mark-icon:hover::after,
+.mark-icon:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
 .mark-archived {
   color: var(--muted);
   border-color: var(--dim);
