@@ -117,9 +117,9 @@ const link = (path: string) => pathFor(locale, path);
         <a href={link("/contribute/")}>{m.chrome.nav.contribute}</a>
       </nav>
       <div class="header-end">
-        <form class="locales" method="get" data-locale-switch>
+        <div class="locales">
           <label for="locale-switch" class="visually-hidden">{m.chrome.languageLabel}</label>
-          <select id="locale-switch" name="locale">
+          <select id="locale-switch" data-locale-switch>
             {
               alternates.map((alternate) => (
                 <option value={alternate.path} lang={alternate.hreflang} selected={alternate.code === locale}>
@@ -128,8 +128,7 @@ const link = (path: string) => pathFor(locale, path);
               ))
             }
           </select>
-          <button type="submit" aria-label={m.chrome.languageSwitch}>→</button>
-        </form>
+        </div>
         <noscript>
           <nav class="locales-fallback" aria-label={m.chrome.languageLabel}>
             {
@@ -158,8 +157,8 @@ const link = (path: string) => pathFor(locale, path);
     </main>
     <footer class="site-footer">
       <p>
-        {m.chrome.footer.catalog} <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, {m.chrome.footer.code}
-        <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>, {m.chrome.footer.data}
+        {m.chrome.footer.catalog} <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, {m.chrome.footer.code}{" "}
+        <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>, {m.chrome.footer.data}{" "}
         <a href={`${link("/about/")}#refresh`}>{m.chrome.footer.dataLink}</a>
       </p>
       <nav aria-label={m.chrome.footer.label}>
@@ -192,10 +191,8 @@ const link = (path: string) => pathFor(locale, path);
         new ResizeObserver(measure).observe(header);
       }
 
-      for (const form of document.querySelectorAll("form[data-locale-switch]")) {
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-          const select = form.querySelector("select");
+      for (const select of document.querySelectorAll("select[data-locale-switch]")) {
+        select.addEventListener("change", () => {
           if (select instanceof HTMLSelectElement) window.location.assign(select.value);
         });
       }
