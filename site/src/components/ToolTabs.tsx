@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "preact/hooks";
 
 import type { ReleaseEntry } from "../../../scripts/lib/types.ts";
 import { readme, security } from "../lib/api.ts";

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from "preact/hooks";
 
 import { facets, fitFor, type ListFilters, narrow } from "../lib/filter.ts";
 import { FIT_LABEL } from "../lib/format.ts";

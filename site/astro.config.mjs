@@ -1,5 +1,5 @@
 import { satteri } from "@astrojs/markdown-satteri";
-import react from "@astrojs/react";
+import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 
@@ -9,7 +9,7 @@ import { repoLinks } from "./src/lib/repo.ts";
 export default defineConfig({
   site: "https://awesome-alternatives.com",
   trailingSlash: "always",
-  integrations: [react(), sitemap()],
+  integrations: [preact(), sitemap()],
   markdown: {
     syntaxHighlight: false,
     processor: satteri({ hastPlugins: [repoLinks] }),
