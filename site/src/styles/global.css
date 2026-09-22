@@ -771,6 +771,55 @@ h1 .mark-archived {
   text-decoration: none;
 }
 
+.paths {
+  margin-top: 32px;
+}
+
+.prose {
+  color: var(--soft);
+}
+
+.prose > h1:first-child {
+  display: none;
+}
+
+.prose h2 {
+  margin: 56px 0 16px;
+  color: var(--text);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+}
+
+.prose h2:first-of-type {
+  margin-top: 0;
+}
+
+.prose ul {
+  padding-left: 1.2em;
+}
+
+.prose li {
+  margin-bottom: 8px;
+}
+
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  color: var(--text);
+}
+
+.prose pre {
+  margin: 20px 0;
+  padding: 16px 20px;
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  line-height: 1.5;
+}
+
+.prose pre code {
+  font-size: 0.8rem;
+}
+
 .history {
   margin: 0;
   padding: 0;
