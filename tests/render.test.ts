@@ -19,6 +19,7 @@ function entry(slug: string, overrides: Partial<EnrichedTool> = {}, archived = f
       license: "MIT",
       stars: 1,
       forks: 0,
+      topics: [],
       archived,
       fork: false,
       private: false,

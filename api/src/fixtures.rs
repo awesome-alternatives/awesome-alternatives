@@ -29,6 +29,7 @@ pub fn tool(
             license: Some(license.into()),
             stars,
             forks: 0,
+            topics: Vec::new(),
             archived: false,
             pushed_at: "2026-09-01T00:00:00Z".into(),
         },

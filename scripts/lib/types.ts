@@ -41,6 +41,7 @@ export interface RepoFacts {
   license: string | null;
   stars: number;
   forks: number;
+  topics: string[];
   archived: boolean;
   fork: boolean;
   private: boolean;

@@ -1,4 +1,8 @@
 ---
+import "@fontsource/courier-prime/700.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/700.css";
 import "../styles/global.css";
 
 interface Props {
@@ -39,10 +43,10 @@ const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
     </main>
     <footer class="site-footer">
       <p>
-        Facts are read from GitHub every night, never typed in by hand.
-        The catalog is <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, the code is{" "}
-        <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>.
+        Catalog <a href={`${REPO}/blob/main/LICENSE-DATA`}>CC0</a>, code <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>,
+        data from GitHub
       </p>
+      <a href={REPO}>GitHub ↗</a>
     </footer>
   </body>
 </html>

@@ -22,6 +22,7 @@ function repo(overrides: Partial<RepoFacts> = {}): RepoFacts {
     license: "MIT",
     stars: 400,
     forks: 20,
+    topics: [],
     archived: false,
     fork: false,
     private: false,

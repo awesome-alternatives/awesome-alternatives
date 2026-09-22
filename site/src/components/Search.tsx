@@ -72,7 +72,7 @@ export default function Search({ names, examples }: Props) {
           type="search"
           value={query}
           maxLength={300}
-          placeholder="semantic-release, but written in Rust"
+          placeholder="Describe what you are looking for"
           onChange={(e) => setQuery(e.target.value)}
         />
         <button type="submit" disabled={state.kind === "loading"}>
@@ -83,7 +83,7 @@ export default function Search({ names, examples }: Props) {
         <p className="examples">
           Try{" "}
           {examples.map((example) => (
-            <button key={example} type="button" className="link" onClick={() => submit(example)}>
+            <button key={example} type="button" onClick={() => submit(example)}>
               {example}
             </button>
           ))}
