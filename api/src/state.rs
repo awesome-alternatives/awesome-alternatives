@@ -1,7 +1,9 @@
 use std::net::IpAddr;
+use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::{Arc, RwLock};
 
 use governor::DefaultKeyedRateLimiter;
+use serde::Serialize;
 
 use crate::catalog::Catalog;
 use crate::details::Details;
@@ -40,6 +42,64 @@ impl Loaded {
     }
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
+#[serde(rename_all = "lowercase")]
+pub enum Reason {
+    Idle,
+    Starting,
+    Indexing,
+    Requests,
+}
+
+#[derive(Debug, Clone, Copy, Serialize)]
+pub struct Quiescence {
+    pub alive: bool,
+    pub ready: bool,
+    pub safe: bool,
+    pub reason: Reason,
+}
+
+#[derive(Default, Clone)]
+pub struct Activity {
+    indexing: Arc<AtomicUsize>,
+    requests: Arc<AtomicUsize>,
+}
+
+pub struct Busy(Arc<AtomicUsize>);
+
+impl Busy {
+    fn on(counter: &Arc<AtomicUsize>) -> Self {
+        counter.fetch_add(1, Ordering::AcqRel);
+        Self(Arc::clone(counter))
+    }
+}
+
+impl Drop for Busy {
+    fn drop(&mut self) {
+        self.0.fetch_sub(1, Ordering::AcqRel);
+    }
+}
+
+impl Activity {
+    pub fn indexing(&self) -> Busy {
+        Busy::on(&self.indexing)
+    }
+
+    pub fn request(&self) -> Busy {
+        Busy::on(&self.requests)
+    }
+
+    fn current(&self) -> Option<Reason> {
+        if self.indexing.load(Ordering::Acquire) > 0 {
+            Some(Reason::Indexing)
+        } else if self.requests.load(Ordering::Acquire) > 0 {
+            Some(Reason::Requests)
+        } else {
+            None
+        }
+    }
+}
+
 #[derive(Clone)]
 pub struct AppState {
     loaded: Arc<RwLock<Arc<Loaded>>>,
@@ -47,6 +107,7 @@ pub struct AppState {
     pub details: Arc<Details>,
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub trust_proxy: bool,
+    pub activity: Activity,
 }
 
 impl AppState {
@@ -63,6 +124,7 @@ impl AppState {
             details: Arc::new(details),
             limiter: Arc::new(limiter),
             trust_proxy,
+            activity: Activity::default(),
         }
     }
 
@@ -71,8 +133,26 @@ impl AppState {
     }
 
     pub async fn replace(&self, catalog: Catalog) {
+        let _busy = self.activity.indexing();
         let loaded = Loaded::build(catalog, self.search.embedder()).await;
         *self.loaded.write().unwrap_or_else(|p| p.into_inner()) = Arc::new(loaded);
         self.search.forget();
+    }
+
+    pub fn quiescence(&self) -> Quiescence {
+        let loaded = self.loaded();
+        let ready = !loaded.catalog.tools.is_empty()
+            && (loaded.index.is_some() || self.search.embedder().is_none());
+        let reason = match self.activity.current() {
+            Some(reason) => reason,
+            None if ready => Reason::Idle,
+            None => Reason::Starting,
+        };
+        Quiescence {
+            alive: true,
+            ready,
+            safe: reason == Reason::Idle,
+            reason,
+        }
     }
 }
