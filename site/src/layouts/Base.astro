@@ -8,9 +8,10 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description: string;
+  search?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, search = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const image = new URL("/og.png", Astro.site);
 const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
@@ -41,6 +42,17 @@ const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
       <a class="brand" href="/" aria-label="awesome-alternatives, home">
         <span class="prompt" aria-hidden="true">&gt;</span>awesome-alternatives<span class="cursor" aria-hidden="true"></span>
       </a>
+      {
+        search && (
+          <form class="header-search" action="/" method="get" role="search">
+            <label for="header-q" class="visually-hidden">
+              Search the catalog
+            </label>
+            <input id="header-q" name="q" type="search" maxlength="300" placeholder="Search alternatives" />
+            <button type="submit" aria-label="Search">→</button>
+          </form>
+        )
+      }
       <nav>
         <a href="/#browse">Browse</a>
         <a href={`${REPO}/blob/main/CONTRIBUTING.md`}>Add a tool</a>

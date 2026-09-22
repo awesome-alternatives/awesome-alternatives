@@ -96,6 +96,51 @@ main {
   vertical-align: baseline;
 }
 
+.header-search {
+  display: flex;
+  flex: 0 1 420px;
+  min-width: 0;
+  border: 1px solid var(--line);
+}
+
+.header-search:focus-within {
+  border-color: var(--accent);
+}
+
+.header-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+.header-search input::placeholder {
+  color: var(--dim);
+}
+
+.header-search input:focus {
+  outline: none;
+}
+
+.header-search button {
+  padding: 0 12px;
+  color: var(--accent);
+  background: transparent;
+  border: 0;
+  border-left: 1px solid var(--line);
+  font: inherit;
+  cursor: pointer;
+}
+
+.header-search button:hover {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
 .site-header nav {
   display: flex;
   gap: 28px;
@@ -707,6 +752,11 @@ h1 .mark-archived {
 }
 
 @media (max-width: 640px) {
+  .header-search {
+    order: 3;
+    flex-basis: 100%;
+  }
+
   .site-header,
   .site-footer {
     padding-left: 16px;
