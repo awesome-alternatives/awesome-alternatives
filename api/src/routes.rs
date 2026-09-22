@@ -282,6 +282,41 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn the_category_parameter_still_filters_for_callers_outside_this_repository() {
+        let app = app(10);
+        let (status, body) = call(
+            &app,
+            Request::get("/v1/tools?category=release-automation")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["count"], 3);
+        let (_, empty) = call(
+            &app,
+            Request::get("/v1/tools?category=javascript-lint-format")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await;
+        assert_eq!(empty["count"], 0);
+    }
+
+    #[tokio::test]
+    async fn the_vocabulary_lists_every_target_language_licence_and_category() {
+        let (status, body) = call(
+            &app(10),
+            Request::get("/v1/vocabulary").body(Body::empty()).unwrap(),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["categories"], json!(["release-automation"]));
+        assert_eq!(body["languages"], json!(["Go", "JavaScript", "Rust"]));
+        assert_eq!(body["targets"]["semantic-release"], "semantic-release");
+    }
+
+    #[tokio::test]
     async fn search_without_jev_falls_back_to_keywords() {
         let (status, body) = call(&app(10), search_request("semantic-release but in Go")).await;
         assert_eq!(status, StatusCode::OK);
