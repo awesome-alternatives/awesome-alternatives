@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.21.0] - 2026-09-22
+
+### Features
+
+- feat(catalog): add Git LFS servers with lfs-test-server and three alternatives (#49)
+
 ## [0.20.0] - 2026-09-22
 
 ### Features
