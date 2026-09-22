@@ -1,0 +1,18 @@
+---
+import IndexPage from "../../components/IndexPage.astro";
+import { licenseGroups } from "../../lib/catalog.ts";
+
+const items = licenseGroups.map((group) => ({
+  href: `/licenses/${group.slug}/`,
+  name: group.label,
+  count: group.tools.length,
+}));
+---
+
+<IndexPage
+  title="Developer tools by licence"
+  description={`Browse the catalog by licence, across ${items.length} licences detected by GitHub.`}
+  heading="Licences"
+  lede="The licence GitHub detects in each repository. Other means a licence file GitHub could not match to a known licence."
+  items={items}
+/>

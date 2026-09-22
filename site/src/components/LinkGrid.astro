@@ -1,0 +1,28 @@
+---
+import type { GridItem } from "../lib/types.ts";
+
+interface Props {
+  items: GridItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul class="targets">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.href}>
+          <span>
+            <span class="target-name">
+              {item.name}
+              {item.archived && <span class="mark mark-archived">archived</span>}
+            </span>
+            {item.detail && <span class="target-category">{item.detail}</span>}
+          </span>
+          <span class="target-count">{item.count} →</span>
+        </a>
+      </li>
+    ))
+  }
+</ul>

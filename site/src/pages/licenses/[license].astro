@@ -1,0 +1,30 @@
+---
+import type { EnrichedTool } from "../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import ToolListing from "../../components/ToolListing.astro";
+import { licenseGroups } from "../../lib/catalog.ts";
+
+export const getStaticPaths = (() =>
+  licenseGroups.map((group) => ({
+    params: { license: group.slug },
+    props: { license: group.label, tools: group.tools },
+  }))) satisfies GetStaticPaths;
+
+interface Props {
+  license: string;
+  tools: EnrichedTool[];
+}
+
+const { license, tools } = Astro.props;
+---
+
+<ToolListing
+  title={`Developer tools under ${license}`}
+  description={`${tools.length} tools in the catalog licensed ${license}, with language, stars and latest release.`}
+  context="licence"
+  parent="/licenses/"
+  heading={license}
+  lede={`Tools whose repository GitHub reports under the ${license} licence.`}
+  tools={tools}
+/>

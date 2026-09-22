@@ -21,7 +21,7 @@ const languages = [...new Set(target.alternatives.map((t) => t.repo.language).fi
   description={`${target.alternatives.length} alternatives to ${target.name}, in ${languages.join(", ")}. Compare fit, licence, stars and the latest signed release.`}
 >
   <a class="back" href="/#browse">← back</a>
-  <p class="context">alternatives to</p>
+  <p class="context"><a href="/alternatives/">alternatives</a> to</p>
   <h1>
     {target.name}
     {target.listed?.repo.archived && <span class="mark mark-archived">archived</span>}

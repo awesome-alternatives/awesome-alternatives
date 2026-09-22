@@ -1,14 +1,10 @@
 ---
+import LinkGrid from "../components/LinkGrid.astro";
 import Search from "../components/Search.tsx";
 import Base from "../layouts/Base.astro";
-import { categories, targets, tools } from "../lib/catalog.ts";
+import { targetItems, targets, tools } from "../lib/catalog.ts";
 
-const all = targets();
-const names = Object.fromEntries(all.map((t) => [t.slug, t.name]));
-const categoryOf = (target: (typeof all)[number]) => {
-  const key = target.listed?.category ?? target.alternatives[0]?.category;
-  return key ? (categories[key]?.name ?? key) : "";
-};
+const names = Object.fromEntries(targets().map((t) => [t.slug, t.name]));
 const examples = [
   "semantic-release, but written in Rust",
   "a drop-in for webpack, faster",
@@ -34,23 +30,12 @@ const examples = [
 
   <section id="browse">
     <p class="section-label">Browse by tool</p>
-    <ul class="targets">
-      {
-        all.map((target) => (
-          <li>
-            <a href={`/alternatives/${target.slug}/`}>
-              <span>
-                <span class="target-name">
-                  {target.name}
-                  {target.listed?.repo.archived && <span class="mark mark-archived">archived</span>}
-                </span>
-                <span class="target-category">{categoryOf(target)}</span>
-              </span>
-              <span class="target-count">{target.alternatives.length} →</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    <LinkGrid items={targetItems()} />
+    <p class="links browse-more">
+      <a href="/tools/">All tools</a>
+      <a href="/categories/">Categories</a>
+      <a href="/languages/">Languages</a>
+      <a href="/licenses/">Licences</a>
+    </p>
   </section>
 </Base>
