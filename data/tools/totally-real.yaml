@@ -1,0 +1,7 @@
+name: Totally Real
+repository: https://github.com/nobody-here-9f3a/totally-real
+category: release-automation
+stars: 50000
+replaces:
+  - tool: semantic-release
+    fit: drop-in
