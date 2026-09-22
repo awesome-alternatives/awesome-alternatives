@@ -1,0 +1,3 @@
+name: Apache Kafka
+repository: https://github.com/apache/kafka
+category: message-streaming

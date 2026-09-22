@@ -1,0 +1,7 @@
+name: Hugo
+repository: https://github.com/gohugoio/hugo
+category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: Single binary with much faster builds.

@@ -1,0 +1,7 @@
+name: Bruno
+repository: https://github.com/usebruno/bruno
+category: api-client
+replaces:
+  - tool: insomnia
+    fit: full
+    note: Collections are plain files kept in your repository.

@@ -1,0 +1,3 @@
+name: MongoDB
+repository: https://github.com/mongodb/mongo
+category: document-database

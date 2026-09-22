@@ -1,0 +1,7 @@
+name: VitePress
+repository: https://github.com/vuejs/vitepress
+category: documentation-site
+replaces:
+  - tool: docusaurus
+    fit: full
+    note: Markdown first, built on Vue and Vite.

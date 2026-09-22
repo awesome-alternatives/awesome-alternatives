@@ -1,0 +1,7 @@
+name: Nx
+repository: https://github.com/nrwl/nx
+category: monorepo-tool
+replaces:
+  - tool: lerna
+    fit: full
+    note: Task running and caching for the same workspaces, and what Lerna itself now runs on.

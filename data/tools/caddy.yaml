@@ -1,0 +1,7 @@
+name: Caddy
+repository: https://github.com/caddyserver/caddy
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: full
+    note: Automatic HTTPS and a shorter configuration.

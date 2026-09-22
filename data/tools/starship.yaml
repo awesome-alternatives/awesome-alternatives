@@ -1,0 +1,7 @@
+name: Starship
+repository: https://github.com/starship/starship
+category: shell-prompt
+replaces:
+  - tool: powerlevel10k
+    fit: full
+    note: Works across shells, not only zsh.

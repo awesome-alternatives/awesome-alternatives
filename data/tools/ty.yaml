@@ -1,0 +1,7 @@
+name: ty
+repository: https://github.com/astral-sh/ty
+category: python-type-checker
+replaces:
+  - tool: mypy
+    fit: full
+    note: Still in beta.

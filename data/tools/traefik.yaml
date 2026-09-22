@@ -1,0 +1,7 @@
+name: Traefik
+repository: https://github.com/traefik/traefik
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: Reverse proxy and load balancer configured from container labels, not a general web server.

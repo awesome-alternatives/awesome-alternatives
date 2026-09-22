@@ -1,0 +1,7 @@
+name: Hoppscotch
+repository: https://github.com/hoppscotch/hoppscotch
+category: api-client
+replaces:
+  - tool: insomnia
+    fit: full
+    note: Runs in the browser, as a desktop app or self-hosted.

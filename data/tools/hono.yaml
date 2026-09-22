@@ -1,0 +1,7 @@
+name: Hono
+repository: https://github.com/honojs/hono
+category: node-web-framework
+replaces:
+  - tool: express
+    fit: full
+    note: Built on Web Standards, runs on Node.js, Deno, Bun and edge runtimes.
