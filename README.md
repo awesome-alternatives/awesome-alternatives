@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="site/public/logo-512.png" alt="" width="112" height="112">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/wordmark-dark.png">
+    <img src=".github/assets/wordmark-light.png" alt="awesome-alternatives" width="560">
+  </picture>
 </p>
-
-<h1 align="center">awesome-alternatives</h1>
 
 <p align="center">
   Find what replaces the tool you already use, in the language you want,<br>
