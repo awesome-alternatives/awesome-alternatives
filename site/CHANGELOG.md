@@ -1,0 +1,12 @@
+# Changelog
+
+All notable changes to `site` will be documented here.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/).
+
+## [0.2.0] - 2026-09-22
+
+### Features
+
+- feat(site): add the Astro site and version api and site with FerrFlow (#4)
+- feat: bootstrap the catalog, its schema and the GitHub verifier
