@@ -159,8 +159,8 @@ export const en = {
     owner: "Owner",
     archivedNote:
       "This repository is archived and no longer receives changes. It is listed so you can find what replaces it.",
-    signed: "✓ signed",
-    verified: "✓ verified",
+    signed: "Signed release, verified by GitHub",
+    verified: "Verified by its maintainers",
     stars: "Stars",
     forks: "Forks",
     latest: "Latest",

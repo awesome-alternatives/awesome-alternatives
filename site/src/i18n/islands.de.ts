@@ -10,7 +10,7 @@ export const islands: Islands = {
     factLastPush: "Letzter Push",
     unknownLanguage: "Unbekannt",
     noLicense: "Keine erkannt",
-    signed: "✓ signiert",
+    signed: "Signiertes Release, von GitHub geprüft",
     verified: "Von den Maintainern bestätigt",
   },
   fit: {
@@ -96,7 +96,7 @@ export const islands: Islands = {
     releases: {
       empty: "Dieses Repository veröffentlicht Tags, keine GitHub-Releases.",
       prerelease: "Pre-Release",
-      signed: "✓ signiert",
+      signed: "Signiertes Release, von GitHub geprüft",
     },
     security: {
       noRelease: "Weder Release noch Tag, an dem sich eine Signatur prüfen ließe.",

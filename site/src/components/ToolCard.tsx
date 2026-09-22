@@ -2,6 +2,7 @@ import type { ComponentChildren } from "preact";
 import { type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import { day, stars } from "../lib/format.ts";
+import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
 
@@ -61,9 +62,7 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
               <>
                 <a href={release.url}>{release.tag}</a>
                 {release.signed && (
-                  <a className="mark mark-good" href={pathFor(locale, "/about/#signed")}>
-                    {card.signed}
-                  </a>
+                  <Mark icon="signed" label={card.signed} href={pathFor(locale, "/about/#signed")} />
                 )}
               </>
             }
@@ -74,9 +73,7 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
       {(tool.maintainerVerified || flags.length > 0) && (
         <p className="marks">
           {tool.maintainerVerified && (
-            <a className="mark mark-good" href={pathFor(locale, "/about/#verified")}>
-              {card.verified}
-            </a>
+            <Mark icon="verified" label={card.verified} href={pathFor(locale, "/about/#verified")} />
           )}
           {flags.map((flag) => (
             <a
