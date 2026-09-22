@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.34.0] - 2026-09-22
+
+### Features
+
+- feat(site): hand the query and the caret between the two search boxes (#103)
+
 ## [0.33.0] - 2026-09-22
 
 ### Features
