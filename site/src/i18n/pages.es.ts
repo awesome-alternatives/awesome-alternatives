@@ -219,7 +219,7 @@ export const pages: Pages = {
       licenceMiddle: "y el código bajo",
       codeLink: "MIT",
       licenceAfter:
-        ". Las cifras de los repositorios (estrellas, versiones, licencias, descripciones) provienen de la API pública de GitHub. Los nombres de los proyectos y las marcas pertenecen a sus titulares.",
+        ". Las cifras de los repositorios (estrellas, versiones, licencias, descripciones) provienen de la API pública de GitHub, junto con el nombre público y la descripción de la cuenta a la que pertenece cada repositorio. Los nombres de los proyectos y las marcas pertenecen a sus titulares.",
       reportBefore: "Para señalar un error o pedir que se retire una entrada, abre una issue en",
       reportLink: "GitHub",
       reportAfter: "o escribe a",

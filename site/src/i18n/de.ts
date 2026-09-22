@@ -53,6 +53,7 @@ export const de: Messages = {
     categories: "Kategorien",
     languages: "Sprachen",
     licenses: "Lizenzen",
+    owners: "Inhaber",
     examples: [
       "semantic-release, aber in Rust geschrieben",
       "ein Drop-in für webpack, schneller",
@@ -95,6 +96,12 @@ export const de: Messages = {
       heading: "Lizenzen",
       lede: "Die Lizenz, die GitHub im jeweiligen Repository erkennt. Other steht für eine Lizenzdatei, die GitHub keiner bekannten Lizenz zuordnen konnte.",
     },
+    owners: {
+      title: "Wer die Tools im Katalog veröffentlicht",
+      description: "Die {count} GitHub-Konten mit mehr als einem Tool in awesome-alternatives.",
+      heading: "Inhaber",
+      lede: "{count} Konten veröffentlichen mehr als ein Tool im Katalog. Alle anderen veröffentlichen eines, verlinkt auf der Seite des Tools.",
+    },
     tools: {
       title: "Alle Tools im Katalog",
       description: "Alle {count} Tools in awesome-alternatives, mit Sprache, Lizenz, Sternen und neuestem Release.",
@@ -123,6 +130,15 @@ export const de: Messages = {
     lede: "Tools, deren Repository GitHub unter der Lizenz {name} führt.",
   },
 
+  owner: {
+    context: "Inhaber",
+    title: "Tools von {name}",
+    description: "{count} Tools im Katalog gehören {name} auf GitHub, mit Sprache, Lizenz, Sternen und letztem Release.",
+    lede: "Repositories, die {name} auf GitHub gehören.",
+    profile: "GitHub-Profil ↗",
+    website: "Website ↗",
+  },
+
   target: {
     title: "Alternativen zu {name}",
     description:
@@ -140,6 +156,7 @@ export const de: Messages = {
     alternativeTo: "Alternative zu",
     archived: "archiviert",
     aboutLabel: "Überblick",
+    owner: "Inhaber",
     archivedNote:
       "Dieses Repository ist archiviert und bekommt keine Änderungen mehr. Es steht hier, damit sich der Ersatz dafür finden lässt.",
     signed: "✓ signiert",

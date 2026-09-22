@@ -4,6 +4,1152 @@
     "categories": 49,
     "targets": 53
   },
+  "owners": {
+    "01mf02": {
+      "login": "01mf02",
+      "kind": "user",
+      "name": "Michael Färber",
+      "bio": "PhD in computer science (logic & automated reasoning). Software should be beautiful and efficient, like a Samurai sword.",
+      "website": "http://gedenkt.at",
+      "url": "https://github.com/01mf02"
+    },
+    "11ty": {
+      "login": "11ty",
+      "kind": "organization",
+      "name": "Build Awesome (11ty)",
+      "bio": "A simpler web site generator.",
+      "website": "https://www.11ty.dev",
+      "url": "https://github.com/11ty"
+    },
+    "alacritty": {
+      "login": "alacritty",
+      "kind": "organization",
+      "name": "Alacritty",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/alacritty"
+    },
+    "apache": {
+      "login": "apache",
+      "kind": "organization",
+      "name": "The Apache Software Foundation",
+      "bio": null,
+      "website": "https://www.apache.org/",
+      "url": "https://github.com/apache"
+    },
+    "astral-sh": {
+      "login": "astral-sh",
+      "kind": "organization",
+      "name": "Astral",
+      "bio": "High-performance developer tools for the Python ecosystem, from @OpenAI.",
+      "website": "https://astral.sh",
+      "url": "https://github.com/astral-sh"
+    },
+    "biomejs": {
+      "login": "biomejs",
+      "kind": "organization",
+      "name": "Biome",
+      "bio": "Toolchain of the web",
+      "website": "https://biomejs.dev",
+      "url": "https://github.com/biomejs"
+    },
+    "bitwarden": {
+      "login": "bitwarden",
+      "kind": "organization",
+      "name": "Bitwarden",
+      "bio": "Open source security solutions for individuals, teams, and business organizations. Explore Password Manager, Secrets Manager, and passkey innovations.",
+      "website": "https://bitwarden.com",
+      "url": "https://github.com/bitwarden"
+    },
+    "BurntSushi": {
+      "login": "BurntSushi",
+      "kind": "user",
+      "name": "Andrew Gallant",
+      "bio": "I love to code.",
+      "website": "https://burntsushi.net",
+      "url": "https://github.com/BurntSushi"
+    },
+    "caddyserver": {
+      "login": "caddyserver",
+      "kind": "organization",
+      "name": "Caddy",
+      "bio": "The ultimate server: enterprise-ready, extensible, open source, and automatic HTTPS with a configuration API",
+      "website": "https://caddyserver.com",
+      "url": "https://github.com/caddyserver"
+    },
+    "changesets": {
+      "login": "changesets",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": "https://changesets.dev/",
+      "url": "https://github.com/changesets"
+    },
+    "cocogitto": {
+      "login": "cocogitto",
+      "kind": "organization",
+      "name": "Cocogitto",
+      "bio": "The conventional commit toolbox",
+      "website": "https://cocogitto.io",
+      "url": "https://github.com/cocogitto"
+    },
+    "concourse": {
+      "login": "concourse",
+      "kind": "organization",
+      "name": "Concourse",
+      "bio": "An open-source continuous thing-doer, mostly used for CI/CD",
+      "website": "https://concourse-ci.org",
+      "url": "https://github.com/concourse"
+    },
+    "cypress-io": {
+      "login": "cypress-io",
+      "kind": "organization",
+      "name": "Cypress.io",
+      "bio": "Easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.",
+      "website": "https://cypress.io",
+      "url": "https://github.com/cypress-io"
+    },
+    "dandavison": {
+      "login": "dandavison",
+      "kind": "user",
+      "name": "Dan Davison",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/dandavison"
+    },
+    "dani-garcia": {
+      "login": "dani-garcia",
+      "kind": "user",
+      "name": "Daniel García",
+      "bio": null,
+      "website": "https://danigarcia.dev",
+      "url": "https://github.com/dani-garcia"
+    },
+    "date-fns": {
+      "login": "date-fns",
+      "kind": "organization",
+      "name": "date-fns",
+      "bio": "Modern JavaScript date utility library",
+      "website": "https://date-fns.org",
+      "url": "https://github.com/date-fns"
+    },
+    "datopian": {
+      "login": "datopian",
+      "kind": "organization",
+      "name": "Datopian",
+      "bio": "Open source data management solutions.",
+      "website": "https://datopian.com",
+      "url": "https://github.com/datopian"
+    },
+    "denoland": {
+      "login": "denoland",
+      "kind": "organization",
+      "name": "Deno",
+      "bio": "Uncomplicate JavaScript",
+      "website": "https://deno.land",
+      "url": "https://github.com/denoland"
+    },
+    "dprint": {
+      "login": "dprint",
+      "kind": "organization",
+      "name": null,
+      "bio": "Pluggable and configurable code formatting platform.",
+      "website": "https://dprint.dev",
+      "url": "https://github.com/dprint"
+    },
+    "dragonflydb": {
+      "login": "dragonflydb",
+      "kind": "organization",
+      "name": "DragonflyDB",
+      "bio": null,
+      "website": "https://dragonflydb.io",
+      "url": "https://github.com/dragonflydb"
+    },
+    "drizzle-team": {
+      "login": "drizzle-team",
+      "kind": "organization",
+      "name": "Drizzle Team",
+      "bio": "We do open-source",
+      "website": "https://drizzle.team",
+      "url": "https://github.com/drizzle-team"
+    },
+    "ducaale": {
+      "login": "ducaale",
+      "kind": "user",
+      "name": "Mohamed Daahir",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/ducaale"
+    },
+    "elastic": {
+      "login": "elastic",
+      "kind": "organization",
+      "name": "elastic",
+      "bio": null,
+      "website": "https://www.elastic.co/",
+      "url": "https://github.com/elastic"
+    },
+    "encode": {
+      "login": "encode",
+      "kind": "organization",
+      "name": "Encode",
+      "bio": "Collaboratively funded software development.",
+      "website": "http://www.encode.io/",
+      "url": "https://github.com/encode"
+    },
+    "eslint": {
+      "login": "eslint",
+      "kind": "organization",
+      "name": "ESLint",
+      "bio": "Find and fix problems in your JavaScript code.",
+      "website": "https://eslint.org",
+      "url": "https://github.com/eslint"
+    },
+    "evanw": {
+      "login": "evanw",
+      "kind": "user",
+      "name": "Evan Wallace",
+      "bio": null,
+      "website": "https://madebyevan.com/",
+      "url": "https://github.com/evanw"
+    },
+    "expressjs": {
+      "login": "expressjs",
+      "kind": "organization",
+      "name": null,
+      "bio": "Express.js: the fast, unopinionated, minimalist web framework for node",
+      "website": "https://expressjs.com/",
+      "url": "https://github.com/expressjs"
+    },
+    "eza-community": {
+      "login": "eza-community",
+      "kind": "organization",
+      "name": "eza",
+      "bio": "The community organization for eza, a modern, maintained replacement for ls",
+      "website": "https://eza.rocks",
+      "url": "https://github.com/eza-community"
+    },
+    "facebook": {
+      "login": "facebook",
+      "kind": "organization",
+      "name": "Meta",
+      "bio": "We are working to build community through open source technology. NB: members must have two-factor auth.",
+      "website": "https://opensource.fb.com",
+      "url": "https://github.com/facebook"
+    },
+    "fastapi": {
+      "login": "fastapi",
+      "kind": "organization",
+      "name": "FastAPI",
+      "bio": "FastAPI and friends open source projects. Created and managed by @tiangolo.",
+      "website": "https://tiangolo.com/github-fastapi/",
+      "url": "https://github.com/fastapi"
+    },
+    "fastify": {
+      "login": "fastify",
+      "kind": "organization",
+      "name": "Fastify",
+      "bio": "Fast and low overhead web framework, for Node.js",
+      "website": "https://fastify.dev",
+      "url": "https://github.com/fastify"
+    },
+    "FerretDB": {
+      "login": "FerretDB",
+      "kind": "organization",
+      "name": "FerretDB",
+      "bio": "A truly Open Source MongoDB alternative",
+      "website": "https://www.ferretdb.com",
+      "url": "https://github.com/FerretDB"
+    },
+    "FerrLabs": {
+      "login": "FerrLabs",
+      "kind": "organization",
+      "name": "FerrLabs",
+      "bio": null,
+      "website": "https://ferrlabs.com",
+      "url": "https://github.com/FerrLabs"
+    },
+    "fluent": {
+      "login": "fluent",
+      "kind": "organization",
+      "name": "Fluentd: Unified Logging Layer",
+      "bio": "Fluentd is a cloud native logging solution to unify data collection and consumption.",
+      "website": "http://www.fluentd.org/",
+      "url": "https://github.com/fluent"
+    },
+    "getzola": {
+      "login": "getzola",
+      "kind": "organization",
+      "name": "Zola",
+      "bio": "A fast static site generator in a single binary with everything built-in.",
+      "website": "https://www.getzola.org/",
+      "url": "https://github.com/getzola"
+    },
+    "ggreer": {
+      "login": "ggreer",
+      "kind": "user",
+      "name": "Geoff Greer",
+      "bio": "CEO & Co-founder of @Floobits.\r\nI like to mess with computers and motorcycles.",
+      "website": "https://geoff.greer.fm/",
+      "url": "https://github.com/ggreer"
+    },
+    "ghostty-org": {
+      "login": "ghostty-org",
+      "kind": "organization",
+      "name": "Ghostty",
+      "bio": "A new terminal, started by @mitchellh 👻",
+      "website": "https://ghostty.org",
+      "url": "https://github.com/ghostty-org"
+    },
+    "git-lfs": {
+      "login": "git-lfs",
+      "kind": "organization",
+      "name": "Git LFS",
+      "bio": null,
+      "website": "https://git-lfs.com",
+      "url": "https://github.com/git-lfs"
+    },
+    "gitlabhq": {
+      "login": "gitlabhq",
+      "kind": "organization",
+      "name": "GitLab",
+      "bio": null,
+      "website": "https://about.gitlab.com/",
+      "url": "https://github.com/gitlabhq"
+    },
+    "gnachman": {
+      "login": "gnachman",
+      "kind": "user",
+      "name": "George Nachman",
+      "bio": null,
+      "website": "https://iterm2.com/",
+      "url": "https://github.com/gnachman"
+    },
+    "go-gitea": {
+      "login": "go-gitea",
+      "kind": "organization",
+      "name": "Gitea",
+      "bio": "Git with a cup of tea",
+      "website": "https://gitea.com",
+      "url": "https://github.com/go-gitea"
+    },
+    "gohugoio": {
+      "login": "gohugoio",
+      "kind": "organization",
+      "name": "GoHugo.io",
+      "bio": "A Fast and Flexible Static Site Generator built with love in GoLang",
+      "website": "https://gohugo.io",
+      "url": "https://github.com/gohugoio"
+    },
+    "googleapis": {
+      "login": "googleapis",
+      "kind": "organization",
+      "name": "Google APIs",
+      "bio": "Clients for Google APIs and tools that help produce them.",
+      "website": "https://googleapis.github.io",
+      "url": "https://github.com/googleapis"
+    },
+    "grafana": {
+      "login": "grafana",
+      "kind": "organization",
+      "name": "Grafana Labs",
+      "bio": "Grafana Labs is behind leading open source projects Grafana and Loki, and the creator of the first open & composable observability platform.",
+      "website": "https://grafana.com",
+      "url": "https://github.com/grafana"
+    },
+    "hashicorp": {
+      "login": "hashicorp",
+      "kind": "organization",
+      "name": "HashiCorp",
+      "bio": "Consistent workflows to provision, secure, connect, and run any infrastructure for any application.",
+      "website": "https://hashicorp.com",
+      "url": "https://github.com/hashicorp"
+    },
+    "helix-editor": {
+      "login": "helix-editor",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/helix-editor"
+    },
+    "honojs": {
+      "login": "honojs",
+      "kind": "organization",
+      "name": "Hono",
+      "bio": "Web Framework built on Web Standards",
+      "website": "https://hono.dev",
+      "url": "https://github.com/honojs"
+    },
+    "hoppscotch": {
+      "login": "hoppscotch",
+      "kind": "organization",
+      "name": "Hoppscotch",
+      "bio": "Open source API development ecosystem.",
+      "website": "https://hoppscotch.com",
+      "url": "https://github.com/hoppscotch"
+    },
+    "httpie": {
+      "login": "httpie",
+      "kind": "organization",
+      "name": "HTTPie",
+      "bio": "Making APIs simple and intuitive for those building the tools, apps and technologies of our time.",
+      "website": "https://httpie.io",
+      "url": "https://github.com/httpie"
+    },
+    "iamkun": {
+      "login": "iamkun",
+      "kind": "user",
+      "name": null,
+      "bio": "internet noob  (╯' - ')╯ ┻━┻",
+      "website": null,
+      "url": "https://github.com/iamkun"
+    },
+    "Infisical": {
+      "login": "Infisical",
+      "kind": "organization",
+      "name": "Infisical",
+      "bio": "Infisical is the open-source secrets management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI",
+      "website": "https://www.infisical.com",
+      "url": "https://github.com/Infisical"
+    },
+    "itchyny": {
+      "login": "itchyny",
+      "kind": "user",
+      "name": "itchyny",
+      "bio": "Professional of jq.",
+      "website": null,
+      "url": "https://github.com/itchyny"
+    },
+    "JanDeDobbeleer": {
+      "login": "JanDeDobbeleer",
+      "kind": "user",
+      "name": "Jan De Dobbeleer",
+      "bio": "Microsoft MVP | GitHub Star | GitKraken Ambassador | Code | Kids | Straight Edge | Running | Rollerblading",
+      "website": "https://ohmyposh.dev",
+      "url": "https://github.com/JanDeDobbeleer"
+    },
+    "jasonwhite": {
+      "login": "jasonwhite",
+      "kind": "user",
+      "name": "Jason White",
+      "bio": "I came here to write code and chew bubblegum... and I'm all out of bubblegum.",
+      "website": null,
+      "url": "https://github.com/jasonwhite"
+    },
+    "jekyll": {
+      "login": "jekyll",
+      "kind": "organization",
+      "name": "Jekyll",
+      "bio": "Jekyll is a blog-aware, static site generator in Ruby.",
+      "website": "https://jekyllrb.com",
+      "url": "https://github.com/jekyll"
+    },
+    "jenkinsci": {
+      "login": "jenkinsci",
+      "kind": "organization",
+      "name": "Jenkins",
+      "bio": "Jenkins is an open source automation server with an unparalleled plugin ecosystem to support practically every tool as part of your delivery pipelines",
+      "website": "https://www.jenkins.io",
+      "url": "https://github.com/jenkinsci"
+    },
+    "jestjs": {
+      "login": "jestjs",
+      "kind": "organization",
+      "name": "Jest",
+      "bio": "Delightful JavaScript Testing Framework with a focus on simplicity.",
+      "website": "https://jestjs.io",
+      "url": "https://github.com/jestjs"
+    },
+    "jqlang": {
+      "login": "jqlang",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/jqlang"
+    },
+    "k3d-io": {
+      "login": "k3d-io",
+      "kind": "organization",
+      "name": "k3d",
+      "bio": null,
+      "website": "https://k3d.io",
+      "url": "https://github.com/k3d-io"
+    },
+    "knope-dev": {
+      "login": "knope-dev",
+      "kind": "organization",
+      "name": "Knope",
+      "bio": "Automating tedious developer tasks",
+      "website": "https://knope.tech",
+      "url": "https://github.com/knope-dev"
+    },
+    "Kong": {
+      "login": "Kong",
+      "kind": "organization",
+      "name": "Kong",
+      "bio": "Powering the API world. No AI without APIs.",
+      "website": "https://konghq.com",
+      "url": "https://github.com/Kong"
+    },
+    "kovidgoyal": {
+      "login": "kovidgoyal",
+      "kind": "user",
+      "name": "Kovid Goyal",
+      "bio": "Principal developer of calibre and kitty",
+      "website": "https://kovidgoyal.net",
+      "url": "https://github.com/kovidgoyal"
+    },
+    "kubernetes": {
+      "login": "kubernetes",
+      "kind": "organization",
+      "name": "Kubernetes",
+      "bio": "Production-Grade Container Scheduling and Management",
+      "website": "https://kubernetes.io",
+      "url": "https://github.com/kubernetes"
+    },
+    "kubernetes-sigs": {
+      "login": "kubernetes-sigs",
+      "kind": "organization",
+      "name": "Kubernetes SIGs",
+      "bio": "Org for Kubernetes SIG-related work",
+      "website": null,
+      "url": "https://github.com/kubernetes-sigs"
+    },
+    "lerna": {
+      "login": "lerna",
+      "kind": "organization",
+      "name": "Lerna",
+      "bio": "A tool for managing JavaScript projects with multiple packages.",
+      "website": "https://lerna.js.org/",
+      "url": "https://github.com/lerna"
+    },
+    "litestar-org": {
+      "login": "litestar-org",
+      "kind": "organization",
+      "name": "Litestar",
+      "bio": "Effortlessly Build Performant APIs",
+      "website": "https://litestar.dev",
+      "url": "https://github.com/litestar-org"
+    },
+    "locustio": {
+      "login": "locustio",
+      "kind": "organization",
+      "name": "Locust",
+      "bio": null,
+      "website": "https://locust.cloud",
+      "url": "https://github.com/locustio"
+    },
+    "louislam": {
+      "login": "louislam",
+      "kind": "user",
+      "name": "Louis Lam",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/louislam"
+    },
+    "lsd-rs": {
+      "login": "lsd-rs",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/lsd-rs"
+    },
+    "matomo-org": {
+      "login": "matomo-org",
+      "kind": "organization",
+      "name": "Matomo Analytics",
+      "bio": "Matomo is hiring 🚀 Matomo.org/jobs MISSION: « To create, as a community, the leading open analytics platform that gives every user full control of their data »",
+      "website": "https://matomo.org",
+      "url": "https://github.com/matomo-org"
+    },
+    "mattermost": {
+      "login": "mattermost",
+      "kind": "organization",
+      "name": "Mattermost",
+      "bio": "Mattermost is a secure collaboration platform for connecting your teams, tools and processes to accelerate mission-critical work.",
+      "website": "https://mattermost.com",
+      "url": "https://github.com/mattermost"
+    },
+    "meilisearch": {
+      "login": "meilisearch",
+      "kind": "organization",
+      "name": "Meilisearch",
+      "bio": "Powerful, fast, and an easy to use search engine",
+      "website": "https://www.meilisearch.com",
+      "url": "https://github.com/meilisearch"
+    },
+    "microsoft": {
+      "login": "microsoft",
+      "kind": "organization",
+      "name": "Microsoft",
+      "bio": "Open source projects and samples from Microsoft",
+      "website": "https://opensource.microsoft.com",
+      "url": "https://github.com/microsoft"
+    },
+    "minio": {
+      "login": "minio",
+      "kind": "organization",
+      "name": "MinIO",
+      "bio": "MinIO is a high-performance, S3 compatible object storage.",
+      "website": "https://min.io",
+      "url": "https://github.com/minio"
+    },
+    "moby": {
+      "login": "moby",
+      "kind": "organization",
+      "name": "Moby",
+      "bio": "An open framework to assemble specialized container systems without reinventing the wheel.",
+      "website": "https://mobyproject.org/",
+      "url": "https://github.com/moby"
+    },
+    "moment": {
+      "login": "moment",
+      "kind": "organization",
+      "name": "Moment.js",
+      "bio": null,
+      "website": "http://momentjs.com",
+      "url": "https://github.com/moment"
+    },
+    "mongodb": {
+      "login": "mongodb",
+      "kind": "organization",
+      "name": "mongodb",
+      "bio": null,
+      "website": "http://www.mongodb.com/",
+      "url": "https://github.com/mongodb"
+    },
+    "moonrepo": {
+      "login": "moonrepo",
+      "kind": "organization",
+      "name": "moonrepo",
+      "bio": "Productivity and developer tools for the web ecosystem, written in Rust.",
+      "website": "https://moonrepo.dev",
+      "url": "https://github.com/moonrepo"
+    },
+    "neovim": {
+      "login": "neovim",
+      "kind": "organization",
+      "name": "Neovim",
+      "bio": "hyperextensible Vim-based text editor",
+      "website": "https://neovim.io",
+      "url": "https://github.com/neovim"
+    },
+    "nginx": {
+      "login": "nginx",
+      "kind": "organization",
+      "name": "nginx",
+      "bio": "Home of NGINX and related open source projects",
+      "website": "https://nginx.org/",
+      "url": "https://github.com/nginx"
+    },
+    "nodejs": {
+      "login": "nodejs",
+      "kind": "organization",
+      "name": "Node.js",
+      "bio": null,
+      "website": "https://nodejs.org",
+      "url": "https://github.com/nodejs"
+    },
+    "npm": {
+      "login": "npm",
+      "kind": "organization",
+      "name": "npm",
+      "bio": "JavaScript Package Manager, Registry & Website",
+      "website": "https://npmjs.com",
+      "url": "https://github.com/npm"
+    },
+    "nrwl": {
+      "login": "nrwl",
+      "kind": "organization",
+      "name": "Nx",
+      "bio": "The Monorepo Platform",
+      "website": "https://nx.dev",
+      "url": "https://github.com/nrwl"
+    },
+    "ogham": {
+      "login": "ogham",
+      "kind": "user",
+      "name": "Benjamin Sago",
+      "bio": null,
+      "website": "https://bsago.me",
+      "url": "https://github.com/ogham"
+    },
+    "openbao": {
+      "login": "openbao",
+      "kind": "organization",
+      "name": "OpenBao",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/openbao"
+    },
+    "opensearch-project": {
+      "login": "opensearch-project",
+      "kind": "organization",
+      "name": "OpenSearch Project",
+      "bio": "OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, search, visualize, and analyze data.",
+      "website": "https://opensearch.org/",
+      "url": "https://github.com/opensearch-project"
+    },
+    "opentofu": {
+      "login": "opentofu",
+      "kind": "organization",
+      "name": "OpenTofu",
+      "bio": null,
+      "website": "https://opentofu.org",
+      "url": "https://github.com/opentofu"
+    },
+    "orhun": {
+      "login": "orhun",
+      "kind": "user",
+      "name": "Orhun Parmaksız",
+      "bio": "Terminal Chef @ratatui | Rust Developer Advocate @JetBrains |\r\nMaintainer @archlinux btw",
+      "website": "https://orhun.dev",
+      "url": "https://github.com/orhun"
+    },
+    "oven-sh": {
+      "login": "oven-sh",
+      "kind": "organization",
+      "name": "Bun",
+      "bio": "The company behind Bun, the incredibly fast JavaScript runtime, bundler, transpiler and package manager.",
+      "website": "https://bun.com/",
+      "url": "https://github.com/oven-sh"
+    },
+    "oxc-project": {
+      "login": "oxc-project",
+      "kind": "organization",
+      "name": "oxc",
+      "bio": "⚓ A collection of high-performance tools for JavaScript and TypeScript written in Rust.",
+      "website": "https://oxc.rs/",
+      "url": "https://github.com/oxc-project"
+    },
+    "pallets": {
+      "login": "pallets",
+      "kind": "organization",
+      "name": "Pallets",
+      "bio": null,
+      "website": "https://palletsprojects.com",
+      "url": "https://github.com/pallets"
+    },
+    "parcel-bundler": {
+      "login": "parcel-bundler",
+      "kind": "organization",
+      "name": "Parcel",
+      "bio": "📦🚀 Blazing fast, zero configuration web application bundler",
+      "website": "https://parceljs.org",
+      "url": "https://github.com/parcel-bundler"
+    },
+    "pdm-project": {
+      "login": "pdm-project",
+      "kind": "organization",
+      "name": "PDM",
+      "bio": "The parent organization for PDM projects",
+      "website": "https://pdm-project.org",
+      "url": "https://github.com/pdm-project"
+    },
+    "plausible": {
+      "login": "plausible",
+      "kind": "organization",
+      "name": "Plausible Analytics",
+      "bio": "Simple, open source, lightweight (< 1 KB) and privacy-friendly alternative to Google Analytics.",
+      "website": "https://plausible.io",
+      "url": "https://github.com/plausible"
+    },
+    "pnpm": {
+      "login": "pnpm",
+      "kind": "organization",
+      "name": "pnpm",
+      "bio": "Fast, disk space efficient package manager",
+      "website": "https://pnpm.io",
+      "url": "https://github.com/pnpm"
+    },
+    "podman-container-tools": {
+      "login": "podman-container-tools",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/podman-container-tools"
+    },
+    "prettier": {
+      "login": "prettier",
+      "kind": "organization",
+      "name": "Prettier",
+      "bio": "Prettier is an opinionated code formatter",
+      "website": "https://prettier.io",
+      "url": "https://github.com/prettier"
+    },
+    "prisma": {
+      "login": "prisma",
+      "kind": "organization",
+      "name": "Prisma",
+      "bio": "Infrastructure your agent can drive",
+      "website": "https://www.prisma.io",
+      "url": "https://github.com/prisma"
+    },
+    "prometheus": {
+      "login": "prometheus",
+      "kind": "organization",
+      "name": "Prometheus",
+      "bio": null,
+      "website": "https://prometheus.io",
+      "url": "https://github.com/prometheus"
+    },
+    "psf": {
+      "login": "psf",
+      "kind": "organization",
+      "name": "Python Software Foundation",
+      "bio": "Official repositories for the Python Software Foundation, the nonprofit steward of Python—supporting the language, community, infrastructure, grants, and PyCon",
+      "website": "https://python.org/psf/github",
+      "url": "https://github.com/psf"
+    },
+    "pulumi": {
+      "login": "pulumi",
+      "kind": "organization",
+      "name": "Pulumi",
+      "bio": null,
+      "website": "https://pulumi.com/",
+      "url": "https://github.com/pulumi"
+    },
+    "PyCQA": {
+      "login": "PyCQA",
+      "kind": "organization",
+      "name": "Python Code Quality Authority",
+      "bio": "Organization for code quality tools (and plugins) for the Python programming language",
+      "website": "http://meta.pycqa.org",
+      "url": "https://github.com/PyCQA"
+    },
+    "pylint-dev": {
+      "login": "pylint-dev",
+      "kind": "organization",
+      "name": "pylint-dev",
+      "bio": "An organization that focuses on pylint and its ecosystem",
+      "website": null,
+      "url": "https://github.com/pylint-dev"
+    },
+    "pypa": {
+      "login": "pypa",
+      "kind": "organization",
+      "name": "Python Packaging Authority",
+      "bio": null,
+      "website": "https://www.pypa.io",
+      "url": "https://github.com/pypa"
+    },
+    "python": {
+      "login": "python",
+      "kind": "organization",
+      "name": "Python",
+      "bio": "Repositories related to the Python Programming language",
+      "website": "https://www.python.org/",
+      "url": "https://github.com/python"
+    },
+    "python-poetry": {
+      "login": "python-poetry",
+      "kind": "organization",
+      "name": "Poetry",
+      "bio": "Python packaging and dependency management made easy",
+      "website": "https://python-poetry.org",
+      "url": "https://github.com/python-poetry"
+    },
+    "redis": {
+      "login": "redis",
+      "kind": "organization",
+      "name": "Redis",
+      "bio": null,
+      "website": "https://redis.io",
+      "url": "https://github.com/redis"
+    },
+    "redpanda-data": {
+      "login": "redpanda-data",
+      "kind": "organization",
+      "name": "redpanda-data",
+      "bio": "The streaming data platform for developers",
+      "website": "https://redpanda.com",
+      "url": "https://github.com/redpanda-data"
+    },
+    "release-plz": {
+      "login": "release-plz",
+      "kind": "organization",
+      "name": null,
+      "bio": "Release-plz is a tool to automate Rust releases, started by @marcoieni ✌️",
+      "website": "https://release-plz.dev",
+      "url": "https://github.com/release-plz"
+    },
+    "RocketChat": {
+      "login": "RocketChat",
+      "kind": "organization",
+      "name": "Rocket.Chat",
+      "bio": "The Secure CommsOS™ for mission-critical operations.",
+      "website": "https://rocket.chat",
+      "url": "https://github.com/RocketChat"
+    },
+    "romkatv": {
+      "login": "romkatv",
+      "kind": "user",
+      "name": "Roman Perepelitsa",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/romkatv"
+    },
+    "rustfs": {
+      "login": "rustfs",
+      "kind": "organization",
+      "name": "RustFS",
+      "bio": "A high-performance, memory-safe, Apache 2.0 alternative to MinIO.",
+      "website": "https://rustfs.com",
+      "url": "https://github.com/rustfs"
+    },
+    "seaweedfs": {
+      "login": "seaweedfs",
+      "kind": "organization",
+      "name": "SeaweedFS",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/seaweedfs"
+    },
+    "SeleniumHQ": {
+      "login": "SeleniumHQ",
+      "kind": "organization",
+      "name": "Selenium",
+      "bio": "Selenium is an umbrella project for a range of tools and libraries that enable and support the automation of web browsers.",
+      "website": "https://selenium.dev/",
+      "url": "https://github.com/SeleniumHQ"
+    },
+    "semantic-release": {
+      "login": "semantic-release",
+      "kind": "organization",
+      "name": "Semantic Release",
+      "bio": "Automating version management, software and package publishing",
+      "website": "https://semantic-release.org",
+      "url": "https://github.com/semantic-release"
+    },
+    "Snapchat": {
+      "login": "Snapchat",
+      "kind": "organization",
+      "name": "Snap Inc.",
+      "bio": "Snap Inc. is a camera company.",
+      "website": "https://snap.com",
+      "url": "https://github.com/Snapchat"
+    },
+    "so-fancy": {
+      "login": "so-fancy",
+      "kind": "organization",
+      "name": "So Fancy",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/so-fancy"
+    },
+    "starship": {
+      "login": "starship",
+      "kind": "organization",
+      "name": "Starship Command",
+      "bio": "✨🚀✨           ✨     ☄️   ✨      ✨🌌",
+      "website": "https://starship.rs",
+      "url": "https://github.com/starship"
+    },
+    "theonedev": {
+      "login": "theonedev",
+      "kind": "organization",
+      "name": "OneDev",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/theonedev"
+    },
+    "tmux": {
+      "login": "tmux",
+      "kind": "organization",
+      "name": "tmux",
+      "bio": "tmux terminal multiplexer",
+      "website": "http://tmux.github.io/",
+      "url": "https://github.com/tmux"
+    },
+    "traefik": {
+      "login": "traefik",
+      "kind": "organization",
+      "name": "Traefik Labs",
+      "bio": "Say Goodbye to Connectivity Chaos",
+      "website": "https://blog.traefik.io",
+      "url": "https://github.com/traefik"
+    },
+    "TwiN": {
+      "login": "TwiN",
+      "kind": "user",
+      "name": null,
+      "bio": "I love programming",
+      "website": "https://twin.sh",
+      "url": "https://github.com/TwiN"
+    },
+    "typesense": {
+      "login": "typesense",
+      "kind": "organization",
+      "name": "Typesense",
+      "bio": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy search engine",
+      "website": "https://typesense.org",
+      "url": "https://github.com/typesense"
+    },
+    "umami-software": {
+      "login": "umami-software",
+      "kind": "organization",
+      "name": "umami",
+      "bio": null,
+      "website": "https://umami.is",
+      "url": "https://github.com/umami-software"
+    },
+    "usebruno": {
+      "login": "usebruno",
+      "kind": "organization",
+      "name": "Bruno Software Inc",
+      "bio": null,
+      "website": "https://www.usebruno.com/",
+      "url": "https://github.com/usebruno"
+    },
+    "valkey-io": {
+      "login": "valkey-io",
+      "kind": "organization",
+      "name": "Valkey",
+      "bio": "The home of the open-source high performance key value database",
+      "website": "https://valkey.io",
+      "url": "https://github.com/valkey-io"
+    },
+    "vectordotdev": {
+      "login": "vectordotdev",
+      "kind": "organization",
+      "name": "Vector",
+      "bio": "A reliable, high-performance tool for building observability data pipelines. A @datadog project.",
+      "website": "https://vector.dev",
+      "url": "https://github.com/vectordotdev"
+    },
+    "vercel": {
+      "login": "vercel",
+      "kind": "organization",
+      "name": "Vercel",
+      "bio": "Agentic infrastructure for every app and agent.",
+      "website": "https://vercel.com",
+      "url": "https://github.com/vercel"
+    },
+    "VictoriaMetrics": {
+      "login": "VictoriaMetrics",
+      "kind": "organization",
+      "name": "VictoriaMetrics",
+      "bio": "Easy to use and fast monitoring solution",
+      "website": "https://victoriametrics.com",
+      "url": "https://github.com/VictoriaMetrics"
+    },
+    "vim": {
+      "login": "vim",
+      "kind": "organization",
+      "name": "Vim - the text editor",
+      "bio": "The github base for core Vim",
+      "website": "http://www.vim.org",
+      "url": "https://github.com/vim"
+    },
+    "vitejs": {
+      "login": "vitejs",
+      "kind": "organization",
+      "name": "Vite",
+      "bio": "A fast build tool for JavaScript apps",
+      "website": "https://vite.dev",
+      "url": "https://github.com/vitejs"
+    },
+    "vitest-dev": {
+      "login": "vitest-dev",
+      "kind": "organization",
+      "name": "Vitest",
+      "bio": "A blazing fast unit test framework powered by Vite",
+      "website": "https://vitest.dev",
+      "url": "https://github.com/vitest-dev"
+    },
+    "VSCodium": {
+      "login": "VSCodium",
+      "kind": "organization",
+      "name": "VSCodium",
+      "bio": "Binary releases of VS Code without MS branding/telemetry/licensing",
+      "website": "https://vscodium.com",
+      "url": "https://github.com/VSCodium"
+    },
+    "vuejs": {
+      "login": "vuejs",
+      "kind": "organization",
+      "name": "Vue",
+      "bio": "Your friendly JavaScript framework",
+      "website": "https://vuejs.org",
+      "url": "https://github.com/vuejs"
+    },
+    "web-infra-dev": {
+      "login": "web-infra-dev",
+      "kind": "organization",
+      "name": "Web Infra",
+      "bio": "We are a ByteDance team focused on building an open ecosystem that advances web development.",
+      "website": "https://webinfra.org/",
+      "url": "https://github.com/web-infra-dev"
+    },
+    "webpack": {
+      "login": "webpack",
+      "kind": "organization",
+      "name": "webpack",
+      "bio": null,
+      "website": "https://webpack.js.org",
+      "url": "https://github.com/webpack"
+    },
+    "wezterm": {
+      "login": "wezterm",
+      "kind": "organization",
+      "name": "WezTerm",
+      "bio": "WezTerm is a GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "website": "https://wezterm.org",
+      "url": "https://github.com/wezterm"
+    },
+    "withastro": {
+      "login": "withastro",
+      "kind": "organization",
+      "name": "Astro",
+      "bio": "Build fast websites, faster.",
+      "website": "https://astro.build",
+      "url": "https://github.com/withastro"
+    },
+    "woodpecker-ci": {
+      "login": "woodpecker-ci",
+      "kind": "organization",
+      "name": "Woodpecker CI",
+      "bio": "Woodpecker is a simple yet powerful CI/CD engine with great extensibility.",
+      "website": "https://woodpecker-ci.org",
+      "url": "https://github.com/woodpecker-ci"
+    },
+    "yarnpkg": {
+      "login": "yarnpkg",
+      "kind": "organization",
+      "name": "Yarn",
+      "bio": "Fast, reliable, and secure dependency management for JavaScript.",
+      "website": "https://yarnpkg.com",
+      "url": "https://github.com/yarnpkg"
+    },
+    "zed-industries": {
+      "login": "zed-industries",
+      "kind": "organization",
+      "name": "Zed Industries",
+      "bio": "The fast and social code editor.",
+      "website": "https://zed.dev",
+      "url": "https://github.com/zed-industries"
+    },
+    "zellij-org": {
+      "login": "zellij-org",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/zellij-org"
+    },
+    "zulip": {
+      "login": "zulip",
+      "kind": "organization",
+      "name": "Zulip",
+      "bio": "Organized team chat",
+      "website": "https://zulip.com",
+      "url": "https://github.com/zulip"
+    }
+  },
   "tools": [
     {
       "slug": "alacritty",

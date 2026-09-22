@@ -7,7 +7,8 @@ import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
-import { categories, toolBySlug, tools } from "../../../lib/catalog.ts";
+import { categories, ownerHref, ownerName, toolBySlug, tools } from "../../../lib/catalog.ts";
+import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { slugify } from "../../../lib/slug.ts";
@@ -31,6 +32,7 @@ const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
 const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool), fit: r.fit, note: r.note ?? null }));
+const login = loginOf(repo.fullName);
 ---
 
 <Base
@@ -103,6 +105,10 @@ const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool),
         </div>
 
         <dl class="about-facts">
+          <div class="full">
+            <dt>{m.tool.owner}</dt>
+            <dd><a href={ownerHref(locale, login)}>{ownerName(login)}</a></dd>
+          </div>
           <div>
             <dt>{m.tool.stars}</dt>
             <dd>{stars(repo.stars)}</dd>

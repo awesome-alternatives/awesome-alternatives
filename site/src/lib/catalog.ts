@@ -3,9 +3,13 @@ import { resolve } from "node:path";
 
 import { parse } from "yaml";
 
-import type { Category, EnrichedTool } from "../../../scripts/lib/types.ts";
+import type { Locale } from "../i18n/index.ts";
+import { pathFor } from "../i18n/index.ts";
+
+import type { Category, EnrichedTool, OwnerFacts } from "../../../scripts/lib/types.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
+import { listedOwners, loginOf } from "./owners.ts";
 import type { GridItem } from "./types.ts";
 
 const ROOT = resolve(process.cwd(), "..");
@@ -17,9 +21,11 @@ export interface Target {
   alternatives: EnrichedTool[];
 }
 
-export const tools: EnrichedTool[] = JSON.parse(
+const catalog: { owners: Record<string, OwnerFacts>; tools: EnrichedTool[] } = JSON.parse(
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
-).tools;
+);
+
+export const tools: EnrichedTool[] = catalog.tools;
 
 export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
@@ -42,6 +48,23 @@ export function targets(): Target[] {
       };
     })
     .sort((a, b) => b.alternatives.length - a.alternatives.length || a.name.localeCompare(b.name));
+}
+
+const withPage = new Set(listedOwners(tools));
+
+export const ownerGroups = groupTools(tools, (t) => loginOf(t.repo.fullName)).filter((g) => withPage.has(g.label));
+
+export function ownerFacts(login: string): OwnerFacts | null {
+  return catalog.owners[login] ?? null;
+}
+
+export function ownerName(login: string): string {
+  return ownerFacts(login)?.name ?? login;
+}
+
+export function ownerHref(locale: Locale, login: string): string {
+  const group = ownerGroups.find((g) => g.label === login);
+  return group ? pathFor(locale, `/owners/${group.slug}/`) : (ownerFacts(login)?.url ?? `https://github.com/${login}`);
 }
 
 export const categoryGroups = groupTools(tools, (t) => t.category);

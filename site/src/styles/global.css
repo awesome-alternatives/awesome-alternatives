@@ -1100,6 +1100,17 @@ h1 .mark-archived {
   background: var(--bg);
 }
 
+.about-facts .full {
+  grid-column: 1 / -1;
+}
+
+.owner-bio {
+  margin: 18px 0 24px;
+  max-width: 62ch;
+  color: var(--soft);
+  line-height: 1.6;
+}
+
 .about-facts dt {
   color: var(--dim);
   font-family: var(--mono);

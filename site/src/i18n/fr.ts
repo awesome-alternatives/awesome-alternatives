@@ -53,6 +53,7 @@ export const fr: Messages = {
     categories: "Catégories",
     languages: "Langages",
     licenses: "Licences",
+    owners: "Propriétaires",
     examples: [
       "semantic-release, mais écrit en Rust",
       "un drop-in pour webpack, plus rapide",
@@ -94,6 +95,12 @@ export const fr: Messages = {
       heading: "Licences",
       lede: "La licence que GitHub détecte dans chaque dépôt. Other désigne un fichier de licence que GitHub n'a pas pu rattacher à une licence connue.",
     },
+    owners: {
+      title: "Qui publie les outils du catalogue",
+      description: "Les {count} comptes GitHub qui ont plus d'un outil dans awesome-alternatives.",
+      heading: "Propriétaires",
+      lede: "{count} comptes publient plus d'un outil dans le catalogue. Les autres en publient un seul, accessible depuis la fiche de l'outil.",
+    },
     tools: {
       title: "Tous les outils du catalogue",
       description: "Les {count} outils d'awesome-alternatives, avec langage, licence, étoiles et dernière release.",
@@ -122,6 +129,15 @@ export const fr: Messages = {
     lede: "Outils dont GitHub indique le dépôt sous licence {name}.",
   },
 
+  owner: {
+    context: "propriétaire",
+    title: "Outils publiés par {name}",
+    description: "{count} outils du catalogue appartenant à {name} sur GitHub, avec langage, licence, étoiles et dernière release.",
+    lede: "Dépôts appartenant à {name} sur GitHub.",
+    profile: "Profil GitHub ↗",
+    website: "Site web ↗",
+  },
+
   target: {
     title: "Alternatives à {name}",
     description:
@@ -139,6 +155,7 @@ export const fr: Messages = {
     alternativeTo: "alternative à",
     archived: "archivé",
     aboutLabel: "À propos",
+    owner: "Propriétaire",
     archivedNote:
       "Ce dépôt est archivé et ne reçoit plus de modifications. Il est listé pour que l'on trouve ce qui le remplace.",
     signed: "✓ signée",

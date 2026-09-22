@@ -25,6 +25,7 @@ const m = messages(locale);
   <p class="context"><a href={parent}>{context}</a></p>
   <h1>{heading}</h1>
   <p class="lede">{lede}</p>
+  <slot />
   <p class="summary">{plural(locale, m.listing.toolCount, tools.length)}</p>
   <div class="tools listing">
     {tools.map((tool) => <ToolCard locale={locale} strings={m.islands} tool={tool} />)}

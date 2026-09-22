@@ -52,6 +52,7 @@ export const en = {
     categories: "Categories",
     languages: "Languages",
     licenses: "Licences",
+    owners: "Owners",
     examples: [
       "semantic-release, but written in Rust",
       "a drop-in for webpack, faster",
@@ -93,6 +94,12 @@ export const en = {
       heading: "Licences",
       lede: "The licence GitHub detects in each repository. Other means a licence file GitHub could not match to a known licence.",
     },
+    owners: {
+      title: "Who publishes the tools in the catalog",
+      description: "The {count} GitHub accounts with more than one tool in awesome-alternatives.",
+      heading: "Owners",
+      lede: "{count} accounts publish more than one tool in the catalog. The rest publish one, linked from the tool itself.",
+    },
     tools: {
       title: "Every tool in the catalog",
       description: "All {count} tools in awesome-alternatives, with language, licence, stars and latest release.",
@@ -121,6 +128,15 @@ export const en = {
     lede: "Tools whose repository GitHub reports under the {name} licence.",
   },
 
+  owner: {
+    context: "owner",
+    title: "Tools published by {name}",
+    description: "{count} tools in the catalog owned by {name} on GitHub, with language, licence, stars and latest release.",
+    lede: "Repositories owned by {name} on GitHub.",
+    profile: "GitHub profile ↗",
+    website: "Website ↗",
+  },
+
   target: {
     title: "Alternatives to {name}",
     description:
@@ -138,6 +154,7 @@ export const en = {
     alternativeTo: "alternative to",
     archived: "archived",
     aboutLabel: "About",
+    owner: "Owner",
     archivedNote:
       "This repository is archived and no longer receives changes. It is listed so you can find what replaces it.",
     signed: "✓ signed",

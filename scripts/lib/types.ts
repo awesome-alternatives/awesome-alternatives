@@ -83,6 +83,17 @@ export interface EnrichedTool {
   flags: string[];
 }
 
+export type OwnerKind = "user" | "organization";
+
+export interface OwnerFacts {
+  login: string;
+  kind: OwnerKind;
+  name: string | null;
+  bio: string | null;
+  website: string | null;
+  url: string;
+}
+
 export interface CatalogStats {
   tools: number;
   categories: number;

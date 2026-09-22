@@ -1,5 +1,5 @@
 import { type GitHub, GitHubError, repoPath } from "./github.ts";
-import type { ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
+import type { OwnerFacts, OwnerKind, ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
 
 interface ApiRepo {
   full_name: string;
@@ -16,6 +16,15 @@ interface ApiRepo {
   created_at: string;
   pushed_at: string;
   default_branch: string;
+}
+
+interface ApiAccount {
+  login: string;
+  name?: string | null;
+  bio?: string | null;
+  description?: string | null;
+  blog?: string | null;
+  html_url: string;
 }
 
 interface ApiRelease {
@@ -63,6 +72,41 @@ export function licenseOf(license: ApiRepo["license"]): string | null {
   if (!license) return null;
   const spdx = license.spdx_id;
   return spdx && spdx !== "NOASSERTION" ? spdx : "Other";
+}
+
+export function ownerOf(fullName: string): string {
+  return fullName.split("/")[0] ?? fullName;
+}
+
+function trimmed(value: string | null | undefined): string | null {
+  const text = value?.trim();
+  return text ? text : null;
+}
+
+function websiteOf(blog: string | null | undefined): string | null {
+  const text = trimmed(blog);
+  if (!text) return null;
+  const candidate = /^https?:\/\//i.test(text) ? text : `https://${text}`;
+  return URL.canParse(candidate) ? candidate : null;
+}
+
+export async function fetchOwner(gh: GitHub, login: string): Promise<OwnerFacts | null> {
+  const path = encodeURIComponent(login);
+  const org = await gh.get<ApiAccount>(`/orgs/${path}`);
+  if (org) return account(org, "organization", org.description);
+  const user = await gh.get<ApiAccount>(`/users/${path}`);
+  return user ? account(user, "user", user.bio) : null;
+}
+
+function account(raw: ApiAccount, kind: OwnerKind, bio: string | null | undefined): OwnerFacts {
+  return {
+    login: raw.login,
+    kind,
+    name: trimmed(raw.name),
+    bio: trimmed(bio),
+    website: websiteOf(raw.blog),
+    url: raw.html_url,
+  };
 }
 
 export async function fetchRepo(gh: GitHub, repository: string): Promise<RepoFacts | null> {
