@@ -52,4 +52,4 @@ Adding a tool is one file and one pull request, see [CONTRIBUTING.md](CONTRIBUTI
 
 ## Licence
 
-The catalog data under `data/` is [CC BY 4.0](LICENSE-DATA). The scripts are [MIT](LICENSE).
+The catalog data under `data/` is dedicated to the public domain under [CC0 1.0](LICENSE-DATA). The scripts are [MIT](LICENSE).
