@@ -15,5 +15,6 @@ RUN pnpm build
 
 FROM nginxinc/nginx-unprivileged:1-alpine
 COPY site/nginx.conf /etc/nginx/conf.d/default.conf
+COPY site/security-headers.conf /etc/nginx/snippets/security-headers.conf
 COPY --from=build /repo/site/dist /usr/share/nginx/html
 EXPOSE 8080

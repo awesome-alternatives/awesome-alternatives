@@ -27,3 +27,9 @@ answers 301 to the slashed one, so every page lives at a single URL.
 
 `pnpm build` also writes `sitemap-index.xml` and fails when the sitemap misses a tool or a target
 from `generated/catalog.json`.
+
+The Content-Security-Policy is split in two. Astro writes most of it as a `<meta>` tag on every
+page (`security.csp` in `astro.config.mjs`, directives in `src/lib/csp.ts`), because only the
+build knows the hashes of the inline scripts and styles it emits for islands. `connect-src`
+follows `PUBLIC_API_URL`. What a `<meta>` policy cannot carry, `frame-ancestors`, is sent by
+nginx along with the other security headers in `security-headers.conf`.
