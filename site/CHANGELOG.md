@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.17.0] - 2026-09-22
+
+### Features
+
+- feat: add an RSS feed of newly added tools (#40)
+- feat(site): lay out tool pages like a repository, with README, releases, security and alternatives tabs (#42)
+
 ## [0.16.1] - 2026-09-22
 
 ### Bug Fixes
