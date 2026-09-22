@@ -80,3 +80,9 @@ export interface EnrichedTool {
   maintainerVerified: boolean;
   flags: string[];
 }
+
+export interface CatalogStats {
+  tools: number;
+  categories: number;
+  targets: number;
+}
