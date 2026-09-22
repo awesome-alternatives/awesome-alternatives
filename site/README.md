@@ -7,7 +7,12 @@ the 50 most recently added tools, ordered by the `addedAt` the refresh keeps in 
 `/compare/<a>-vs-<b>/` puts two tools side by side. A pair gets a page when the two sit on a
 `replaces` edge or share a target, and when at least one of those relations carries a note;
 archived repositories are left out. The slug pair is alphabetical, so a pair has one URL and
-`/compare/<b>-vs-<a>/` is not a second copy of it.
+`/compare/<b>-vs-<a>/` is not a second copy of it: it answers 301 to the canonical spelling,
+keeping the locale prefix. `pnpm build` writes the reversed spellings to
+`generated/compare-pairs.conf`, an nginx `map` the image drops in `conf.d`, and `nginx.conf` looks
+the pair segment up in it. Only a pair that has a page is in the table, so an unknown one still
+answers 404, and no canonical URL is a key, so a redirect never chains. The redirect belongs to
+nginx; `pnpm dev` and `pnpm preview` serve the reversed URLs as 404.
 
 ```bash
 pnpm install

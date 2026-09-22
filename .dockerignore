@@ -1,5 +1,6 @@
 **/node_modules
 site/dist
+site/generated
 site/.astro
 api/target
 .git
