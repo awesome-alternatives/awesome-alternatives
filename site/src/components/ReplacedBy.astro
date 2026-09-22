@@ -1,0 +1,28 @@
+---
+import type { Locale } from "../i18n/index.ts";
+import { messages, pathFor, plural } from "../i18n/index.ts";
+import { dropInCount } from "../lib/filter.ts";
+import type { ToolView } from "../lib/types.ts";
+
+interface Props {
+  locale: Locale;
+  target: string;
+  name: string;
+  alternatives: ToolView[];
+}
+
+const { locale, target, name, alternatives } = Astro.props;
+const m = messages(locale);
+const dropIn = dropInCount(alternatives, target);
+---
+
+{
+  alternatives.length > 0 && (
+    <p class="answer">
+      <a href={pathFor(locale, `/alternatives/${target}/`)}>
+        {plural(locale, m.tool.replacedBy, alternatives.length, { name })}
+        {dropIn > 0 && plural(locale, m.tool.replacedByDropIn, dropIn)}
+      </a>
+    </p>
+  )
+}

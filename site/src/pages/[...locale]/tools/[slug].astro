@@ -3,11 +3,13 @@ import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
 import { Mark } from "../../../components/Mark.tsx";
+import ReplacedBy from "../../../components/ReplacedBy.astro";
 import ToolTabs from "../../../components/ToolTabs.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
+import { canonicalForTool } from "../../../lib/canonical.ts";
 import { categories, ownerHref, ownerName, toolBySlug, tools } from "../../../lib/catalog.ts";
 import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
@@ -43,6 +45,7 @@ const login = loginOf(repo.fullName);
     category: category?.name.toLowerCase() ?? tool.category,
   })}
   description={repo.description ?? format(m.tool.descriptionFallback, { name: tool.name })}
+  canonicalPath={canonicalForTool(tool.slug, replacedBy.length)}
 >
   <div class="wide">
     <a class="back" href={back}>{m.listing.back}</a>
@@ -74,6 +77,8 @@ const login = loginOf(repo.fullName);
         )
       }
     </h1>
+
+    <ReplacedBy locale={locale} target={tool.slug} name={tool.name} alternatives={replacedBy} />
 
     <div class="tool-layout">
       <ToolTabs

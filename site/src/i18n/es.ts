@@ -158,6 +158,8 @@ export const es: Messages = {
     titleFallbackLanguage: "herramienta",
     descriptionFallback: "{name} en el catálogo de awesome-alternatives.",
     alternativeTo: "alternativa a",
+    replacedBy: { one: "{n} herramienta sustituye a {name}", other: "{n} herramientas sustituyen a {name}" },
+    replacedByDropIn: { one: ", {n} de sustitución directa", other: ", {n} de sustitución directa" },
     archived: "archivado",
     aboutLabel: "Acerca de",
     owner: "Propietario",

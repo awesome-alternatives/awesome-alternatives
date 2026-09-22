@@ -4,7 +4,8 @@ import { test } from "node:test";
 import { islands } from "../src/i18n/islands.en.ts";
 import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
-import { alternativesTo, facets, narrow } from "../src/lib/filter.ts";
+import { canonicalForTool } from "../src/lib/canonical.ts";
+import { alternativesTo, dropInCount, facets, narrow } from "../src/lib/filter.ts";
 import { stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
 import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
@@ -58,6 +59,33 @@ test("alternatives rank by fit, then stars, and skip archived and unrelated tool
     alternativesTo(tools, "sr").map((t) => t.slug),
     ["full-big", "full-small", "partial"],
   );
+});
+
+test("the summary counts the alternatives the page lists, and the drop-in subset of them", () => {
+  const archived = tool("archived", "Rust", [["sr", "drop-in"]], 99);
+  archived.repo.archived = true;
+  const tools = [
+    tool("drop-in", "Rust", [["sr", "drop-in"]], 10),
+    tool("also-drop-in", "Go", [["sr", "drop-in"]], 8),
+    tool("full", "Rust", [["sr", "full"]], 50),
+    tool("partial", "Go", [["sr", "partial"]], 5000),
+    tool("other", "Rust", [["x", "drop-in"]], 1),
+    archived,
+  ];
+  const listed = alternativesTo(tools, "sr");
+  assert.equal(listed.length, 4);
+  assert.equal(dropInCount(listed, "sr"), 2);
+});
+
+test("a tool nothing replaces has no count to show", () => {
+  const listed = alternativesTo([tool("a", "Rust", [["sr", "full"]])], "unreplaced");
+  assert.equal(listed.length, 0);
+  assert.equal(dropInCount(listed, "unreplaced"), 0);
+});
+
+test("a tool others replace is canonical on its alternatives page, any other on its own", () => {
+  assert.equal(canonicalForTool("redis", 7), "/alternatives/redis/");
+  assert.equal(canonicalForTool("valkey", 0), "/tools/valkey/");
 });
 
 test("narrow combines language and fit for the page's target", () => {

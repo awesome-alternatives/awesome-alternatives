@@ -5,7 +5,7 @@ import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import { readme, security } from "../lib/api.ts";
 import { day } from "../lib/format.ts";
-import { scoreLevel, type TabId, tabFromHash } from "../lib/tabs.ts";
+import { scoreLevel, type TabId, tabFromHash, tabsFor } from "../lib/tabs.ts";
 import type { Fit, Readme, SecurityReport, ToolView } from "../lib/types.ts";
 import { Mark } from "./Mark.tsx";
 import { ToolCard } from "./ToolCard.tsx";
@@ -53,14 +53,9 @@ function useRemote<T>(active: boolean, load: (signal: AbortSignal) => Promise<T>
 }
 
 export default function ToolTabs(props: Props) {
-  const available: TabId[] = [
-    "readme",
-    "releases",
-    "security",
-    ...(props.alternatives.length > 0 ? (["alternatives"] as const) : []),
-    ...(props.replaces.length > 0 ? (["replaces"] as const) : []),
-  ];
-  const [active, setActive] = useState<TabId>("readme");
+  const available = tabsFor({ alternatives: props.alternatives.length, replaces: props.replaces.length });
+  const fallback = available[0] ?? "readme";
+  const [active, setActive] = useState<TabId>(fallback);
   const copy = props.strings.tabs;
 
   useEffect(() => {
@@ -69,7 +64,7 @@ export default function ToolTabs(props: Props) {
 
   function select(tab: TabId) {
     setActive(tab);
-    window.history.replaceState(null, "", tab === "readme" ? window.location.pathname : `#${tab}`);
+    window.history.replaceState(null, "", tab === fallback ? window.location.pathname : `#${tab}`);
   }
 
   const counts: Partial<Record<TabId, number>> = {

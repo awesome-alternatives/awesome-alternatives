@@ -158,6 +158,8 @@ export const fr: Messages = {
     titleFallbackLanguage: "outil",
     descriptionFallback: "{name} dans le catalogue awesome-alternatives.",
     alternativeTo: "alternative à",
+    replacedBy: { one: "{n} outil remplace {name}", other: "{n} outils remplacent {name}" },
+    replacedByDropIn: { one: ", dont {n} en drop-in", other: ", dont {n} en drop-in" },
     archived: "archivé",
     aboutLabel: "À propos",
     owner: "Propriétaire",

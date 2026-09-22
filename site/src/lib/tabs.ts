@@ -6,6 +6,21 @@ export function isTab(value: string): value is TabId {
   return (TABS as readonly string[]).includes(value);
 }
 
+export interface TabCounts {
+  alternatives: number;
+  replaces: number;
+}
+
+export function tabsFor(counts: TabCounts): TabId[] {
+  return [
+    ...(counts.alternatives > 0 ? (["alternatives"] as const) : []),
+    "readme",
+    "releases",
+    "security",
+    ...(counts.replaces > 0 ? (["replaces"] as const) : []),
+  ];
+}
+
 export function tabFromHash(hash: string, available: readonly TabId[]): TabId {
   const wanted = hash.replace(/^#/, "").toLowerCase();
   const first = available[0] ?? "readme";
