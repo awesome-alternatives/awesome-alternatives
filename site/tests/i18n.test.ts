@@ -19,6 +19,13 @@ describe("pathFor", () => {
     assert.equal(pathFor("es", "/fr/tools/ferrflow/"), "/es/tools/ferrflow/");
     assert.equal(pathFor("en", "/de/about/"), "/about/");
   });
+
+  test("leaves a fragment at the end, where the browser can act on it", () => {
+    assert.equal(pathFor("fr", "/about/#signed"), "/fr/about/#signed");
+    assert.equal(pathFor("en", "/about/#signed"), "/about/#signed");
+    assert.equal(pathFor("de", "/#browse"), "/de/#browse");
+    assert.equal(pathFor("es", "/tools/?q=rust"), "/es/tools/?q=rust");
+  });
 });
 
 describe("localeOf", () => {
