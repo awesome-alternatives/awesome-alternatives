@@ -17,8 +17,16 @@ export function ToolCard({ tool, target }: Props) {
         <a className="tool-name" href={`/tools/${tool.slug}/`}>
           {tool.name}
         </a>
-        {repo.archived && <span className="mark mark-archived">archived</span>}
-        {replacement && <span className={`fit fit-${replacement.fit}`}>{FIT_LABEL[replacement.fit]}</span>}
+        {repo.archived && (
+          <a className="mark mark-archived" href="/about/#archived">
+            archived
+          </a>
+        )}
+        {replacement && (
+          <a className={`fit fit-${replacement.fit}`} href={`/about/#${replacement.fit}`}>
+            {FIT_LABEL[replacement.fit]}
+          </a>
+        )}
       </header>
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
@@ -32,7 +40,11 @@ export function ToolCard({ tool, target }: Props) {
             value={
               <>
                 <a href={release.url}>{release.tag}</a>
-                {release.signed && <span className="mark mark-good">✓ signed</span>}
+                {release.signed && (
+                  <a className="mark mark-good" href="/about/#signed">
+                    ✓ signed
+                  </a>
+                )}
               </>
             }
           />
@@ -41,11 +53,15 @@ export function ToolCard({ tool, target }: Props) {
       </dl>
       {(tool.maintainerVerified || flags.length > 0) && (
         <p className="marks">
-          {tool.maintainerVerified && <span className="mark mark-good">Verified by its maintainers</span>}
+          {tool.maintainerVerified && (
+            <a className="mark mark-good" href="/about/#verified">
+              Verified by its maintainers
+            </a>
+          )}
           {flags.map((flag) => (
-            <span key={flag} className="mark mark-warn">
+            <a key={flag} className="mark mark-warn" href={`/about/#${flag in FLAG_LABEL ? flag : "warnings"}`}>
               {FLAG_LABEL[flag] ?? flag}
-            </span>
+            </a>
           ))}
         </p>
       )}

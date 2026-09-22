@@ -1264,6 +1264,66 @@ h1 .mark-archived {
   }
 }
 
+a.fit:hover,
+a.mark:hover,
+a.tag:hover {
+  border-color: currentColor;
+  text-decoration: none;
+}
+
+.explainer {
+  margin-top: 64px;
+}
+
+.explainer h2 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+}
+
+.explainer p,
+.explainer-list {
+  max-width: 62ch;
+  color: var(--soft);
+}
+
+.explainer-list {
+  padding-left: 20px;
+}
+
+.explainer code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+}
+
+.explainer [id],
+.explainer[id] {
+  scroll-margin-top: 24px;
+}
+
+.glossary {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.glossary div {
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) 1fr;
+  gap: 8px 24px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossary div:target {
+  background: var(--surface);
+}
+
+.glossary dd {
+  margin: 0;
+  color: var(--soft);
+  font-size: 0.95rem;
+}
+
 @media (max-width: 640px) {
   .header-search {
     order: 3;
@@ -1298,7 +1358,8 @@ h1 .mark-archived {
 
   .replaces li,
   .history li,
-  .legal-facts div {
+  .legal-facts div,
+  .glossary div {
     grid-template-columns: 1fr;
   }
 
