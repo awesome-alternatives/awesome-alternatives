@@ -1,5 +1,5 @@
 import { parse } from "yaml";
-import { type GitHub, repoPath } from "./github.ts";
+import { type GitHub, GitHubError, repoPath } from "./github.ts";
 import type { ReleaseFacts, RepoFacts } from "./types.ts";
 
 interface ApiRepo {
@@ -53,6 +53,7 @@ interface ApiStargazer {
 const MAINTAINER_FILE = ".awesome-alternatives.yml";
 const PAGE = 100;
 const MAX_STARGAZER_PAGE = 400;
+const REFUSED_PAGINATION = [403, 422];
 
 export function licenseOf(license: ApiRepo["license"]): string | null {
   if (!license) return null;
@@ -137,11 +138,14 @@ export async function fetchRecentStargazers(gh: GitHub, fullName: string, stars:
   const pages = last > 1 ? [last - 1, last] : [last];
   const out: string[] = [];
   for (const page of pages) {
-    const batch = await gh.get<ApiStargazer[]>(
-      `/repos/${fullName}/stargazers?per_page=${PAGE}&page=${page}`,
-      "application/vnd.github.star+json",
-    );
-    out.push(...(batch ?? []).map((s) => s.starred_at));
+    const batch = await gh
+      .get<ApiStargazer[]>(`/repos/${fullName}/stargazers?per_page=${PAGE}&page=${page}`, "application/vnd.github.star+json")
+      .catch((error: unknown) => {
+        if (error instanceof GitHubError && REFUSED_PAGINATION.includes(error.status)) return null;
+        throw error;
+      });
+    if (batch === null) return [];
+    out.push(...batch.map((s) => s.starred_at));
   }
   return out;
 }

@@ -53,7 +53,8 @@ Reviewed by a maintainer before merge, without blocking:
 - 50 or more of the most recent stars arrived within 24 hours
 
 The last one exists because bought stars arrive in bursts. A launch on Hacker News produces the
-same shape, which is why it is a warning and a person decides.
+same shape, which is why it is a warning and a person decides. GitHub does not let CI page through the
+stargazers of the largest repositories; for those, the check is skipped rather than guessed.
 
 ## Verifying a tool you maintain
 
