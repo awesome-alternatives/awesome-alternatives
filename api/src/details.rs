@@ -1,21 +1,20 @@
 use std::sync::Arc;
-use std::time::Duration;
 
 use moka::future::Cache;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
+use crate::cache::{DETAILS_TTL, Shared};
 use crate::readme;
 use crate::upstream::{Advisory, Check, Scorecard, Upstream};
 
-const TTL: Duration = Duration::from_secs(12 * 3600);
 pub const CACHE_BYTES: u64 = 64 * 1024 * 1024;
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Readme {
     pub html: Option<String>,
 }
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Security {
     pub scorecard: Option<Scorecard>,
     pub advisories: Vec<Advisory>,
@@ -25,15 +24,17 @@ pub type UpstreamError = Arc<reqwest::Error>;
 
 pub struct Details {
     upstream: Upstream,
+    shared: Arc<Shared>,
     readmes: Cache<String, Readme>,
     security: Cache<String, Security>,
 }
 
 impl Details {
-    pub fn new(upstream: Upstream, cache_bytes: u64) -> Self {
+    pub fn new(upstream: Upstream, cache_bytes: u64, shared: Arc<Shared>) -> Self {
         let half = cache_bytes / 2;
         Self {
             upstream,
+            shared,
             readmes: cache(half),
             security: cache(half),
         }
@@ -42,10 +43,14 @@ impl Details {
     pub async fn readme(&self, full_name: &str) -> Result<Readme, UpstreamError> {
         self.readmes
             .try_get_with(full_name.to_owned(), async {
-                let html = self.upstream.readme_html(full_name).await?;
-                Ok::<_, reqwest::Error>(Readme {
-                    html: html.map(|h| readme::sanitize(&h, full_name)),
-                })
+                self.shared
+                    .through(&key("readme", full_name), self.shared.ttl.details, async {
+                        let html = self.upstream.readme_html(full_name).await?;
+                        Ok::<_, reqwest::Error>(Readme {
+                            html: html.map(|h| readme::sanitize(&h, full_name)),
+                        })
+                    })
+                    .await
             })
             .await
     }
@@ -53,17 +58,29 @@ impl Details {
     pub async fn security(&self, full_name: &str) -> Result<Security, UpstreamError> {
         self.security
             .try_get_with(full_name.to_owned(), async {
-                let (scorecard, advisories) = tokio::try_join!(
-                    self.upstream.scorecard(full_name),
-                    self.upstream.advisories(full_name)
-                )?;
-                Ok::<_, reqwest::Error>(Security {
-                    scorecard,
-                    advisories,
-                })
+                self.shared
+                    .through(
+                        &key("security", full_name),
+                        self.shared.ttl.details,
+                        async {
+                            let (scorecard, advisories) = tokio::try_join!(
+                                self.upstream.scorecard(full_name),
+                                self.upstream.advisories(full_name)
+                            )?;
+                            Ok::<_, reqwest::Error>(Security {
+                                scorecard,
+                                advisories,
+                            })
+                        },
+                    )
+                    .await
             })
             .await
     }
+}
+
+fn key(kind: &str, full_name: &str) -> String {
+    crate::cache::key(&[kind, full_name])
 }
 
 trait Weight {
@@ -117,13 +134,19 @@ fn cache<V: Weight + Clone + Send + Sync + 'static>(max_bytes: u64) -> Cache<Str
         .weigher(|key: &String, value: &V| {
             u32::try_from(size_of::<String>() + key.len() + value.bytes()).unwrap_or(u32::MAX)
         })
-        .time_to_live(TTL)
+        .time_to_live(DETAILS_TTL)
         .build()
 }
 
 #[cfg(test)]
 mod tests {
+    use std::sync::atomic::{AtomicUsize, Ordering};
+
+    use axum::Router;
+    use axum::routing::get;
+
     use super::*;
+    use crate::cache::fake::{Write, recording};
 
     fn readme(bytes: usize) -> Readme {
         Readme {
@@ -160,6 +183,74 @@ mod tests {
             }],
         };
         assert!(security.bytes() >= 8_000);
+    }
+
+    async fn github(hits: Arc<AtomicUsize>) -> Upstream {
+        let app = Router::new().route(
+            "/repos/{owner}/{repo}/readme",
+            get(move || {
+                let hits = Arc::clone(&hits);
+                async move {
+                    hits.fetch_add(1, Ordering::SeqCst);
+                    "<p>hello</p>"
+                }
+            }),
+        );
+        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+        let base = format!("http://{}", listener.local_addr().unwrap());
+        tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
+        Upstream::new(reqwest::Client::new(), &base, &base, None)
+    }
+
+    fn unreachable() -> Upstream {
+        Upstream::new(
+            reqwest::Client::new(),
+            "http://127.0.0.1:9",
+            "http://127.0.0.1:9",
+            None,
+        )
+    }
+
+    #[tokio::test]
+    async fn a_readme_fetched_upstream_is_shared_under_a_versioned_key_with_the_details_ttl() {
+        let (shared, store) = recording();
+        let hits = Arc::new(AtomicUsize::new(0));
+        let details = Details::new(github(Arc::clone(&hits)).await, CACHE_BYTES, shared);
+        let readme = details.readme("example/good").await.unwrap();
+        assert_eq!(readme.html.as_deref(), Some("<p>hello</p>"));
+        assert_eq!(hits.load(Ordering::SeqCst), 1);
+        assert_eq!(
+            store.written(),
+            [Write {
+                key: "aa:v1:readme:example/good".into(),
+                ttl: DETAILS_TTL
+            }]
+        );
+    }
+
+    #[tokio::test]
+    async fn a_cold_process_reads_the_readme_from_the_shared_cache_instead_of_github() {
+        let (shared, _store) = recording();
+        let hits = Arc::new(AtomicUsize::new(0));
+        let warm = Details::new(
+            github(Arc::clone(&hits)).await,
+            CACHE_BYTES,
+            Arc::clone(&shared),
+        );
+        warm.readme("example/good").await.unwrap();
+
+        let cold = Details::new(unreachable(), CACHE_BYTES, shared);
+        let readme = cold.readme("example/good").await.unwrap();
+        assert_eq!(readme.html.as_deref(), Some("<p>hello</p>"));
+        assert_eq!(hits.load(Ordering::SeqCst), 1);
+    }
+
+    #[tokio::test]
+    async fn an_upstream_failure_is_never_written_to_the_shared_cache() {
+        let (shared, store) = recording();
+        let details = Details::new(unreachable(), CACHE_BYTES, shared);
+        assert!(details.readme("example/good").await.is_err());
+        assert!(store.written().is_empty());
     }
 
     #[tokio::test]

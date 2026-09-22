@@ -64,11 +64,49 @@ handlers and `javascript:` links are removed, relative images point at `raw.gith
 and relative links at the file on GitHub. Keeping READMEs out of the catalog keeps the nightly
 commit and the API's hourly reload small.
 
-Both caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
+Both in-process caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
 kilobytes, so counting entries said nothing about how much memory they held. `DETAILS_CACHE_BYTES`
 is the total budget, 64 MiB by default, split evenly between the two. The weight of an entry is the
 key plus the strings it holds, and an entry heavier than its cache's share is served once and never
 kept.
+
+## Shared cache
+
+With `VALKEY_URL` set, the in-process caches become the first tier and Valkey the second, shared by
+every replica. A request reads memory, then Valkey, then the upstream it came from, and a value
+fetched upstream is written back to both. Three things are shared: rendered READMEs, the security
+report next to them, and the interpretation of a search, which is the filters, the interpreter that
+read them and the relevance scores behind the ranking. The tools themselves are not: every replica
+holds the catalog already, and the interpretation is what the embedding pass and Jev are spent on.
+
+Keys are `aa:<version>:<kind>:<id>`. The version segment is the shape of what is stored, so a
+release that changes it reads none of the old entries rather than misreading them. Search keys carry
+the catalog revision as well, a digest of the document the catalog was loaded from, so the nightly
+refresh retires every search entry it invalidates without touching a key.
+
+| Key | TTL | |
+|---|---|---|
+| `aa:v1:readme:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | The same TTL the in-process cache uses. |
+| `aa:v1:security:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | |
+| `aa:v1:search:<revision>:<query>` | `VALKEY_SEARCH_TTL_SECS`, 15 minutes | Free text, so the key space is open. |
+
+**Every key is written with an expiry, and that is not optional.** The server runs with no
+`maxmemory` and `noeviction`, which the operator does not let us change: a key written without a TTL
+is a key held forever, and the pod is OOMKilled rather than evicting anything. That is why search
+entries, whose keys are whatever people type, expire in minutes rather than hours.
+
+The cache fails open. Every operation is bound by `VALKEY_TIMEOUT_MS`, and an unreachable server, a
+timeout, a rejected password, a certificate that does not verify or an entry that cannot be parsed
+all degrade to the behaviour without it: memory, then upstream. None of it reaches the caller, and
+the warning is logged at most once every five minutes so a cache that is down does not write a line
+per request. A server that is unreachable at startup is one warning and the process serves without
+it; it is not retried until the next restart.
+
+`VALKEY_URL` is a `rediss://` URL carrying the password. `VALKEY_CA_CERT` points at the PEM bundle
+for the CA that signs the server certificate: it is an internal CA, so the system trust store does
+not have it. The chain and the hostname are both verified, and there is no option to skip either.
+Without `VALKEY_URL` nothing is connected and nothing is attempted, the caches stay in-process, and
+startup says so once.
 
 ## Rollouts
 
@@ -130,7 +168,12 @@ requests are in flight.
 | `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
-| `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the README and security caches together. |
+| `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the in-process README and security caches together. |
+| `VALKEY_URL` | unset | A `rediss://` URL, password included. Unset means in-process caches only. |
+| `VALKEY_CA_CERT` | unset | Path to the PEM bundle of the CA that signs the server certificate. |
+| `VALKEY_TIMEOUT_MS` | `200` | Per operation. Past it the request carries on without the cache. |
+| `VALKEY_DETAILS_TTL_SECS` | `43200` | 12 hours, for READMEs and security reports. |
+| `VALKEY_SEARCH_TTL_SECS` | `900` | 15 minutes, for interpreted searches. |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |
 | `RUST_LOG` | `info` | |
 

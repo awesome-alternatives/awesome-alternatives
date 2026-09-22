@@ -71,6 +71,8 @@ pub struct Tool {
 #[derive(Debug, Default, Deserialize)]
 pub struct Catalog {
     pub tools: Vec<Tool>,
+    #[serde(skip)]
+    pub revision: String,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -93,16 +95,39 @@ pub async fn load(source: &str, http: &reqwest::Client) -> Result<Catalog, Catal
             .await
             .map_err(|e| CatalogError::Read(source.to_owned(), e))?
     };
-    Ok(serde_json::from_str(&body)?)
+    Ok(Catalog {
+        revision: revision(&body),
+        ..serde_json::from_str(&body)?
+    })
 }
 
 async fn fetch(url: &str, http: &reqwest::Client) -> Result<String, reqwest::Error> {
     http.get(url).send().await?.error_for_status()?.text().await
 }
 
+fn revision(body: &str) -> String {
+    const OFFSET: u64 = 0xcbf2_9ce4_8422_2325;
+    const PRIME: u64 = 0x0000_0100_0000_01b3;
+    let digest = body.as_bytes().iter().fold(OFFSET, |hash, byte| {
+        (hash ^ u64::from(*byte)).wrapping_mul(PRIME)
+    });
+    format!("{digest:016x}")
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[tokio::test]
+    async fn a_revision_follows_the_document_it_was_loaded_from() {
+        let http = reqwest::Client::new();
+        let path = concat!(env!("CARGO_MANIFEST_DIR"), "/../generated/catalog.json");
+        let first = load(path, &http).await.unwrap();
+        let again = load(path, &http).await.unwrap();
+        assert_eq!(first.revision, again.revision);
+        assert_eq!(first.revision.len(), 16);
+        assert_ne!(revision("{\"tools\":[]}"), first.revision);
+    }
 
     #[test]
     fn parses_the_generated_catalog() {

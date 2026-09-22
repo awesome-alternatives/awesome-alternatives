@@ -186,6 +186,7 @@ mod tests {
     use tower::ServiceExt;
 
     use super::*;
+    use crate::cache::Shared;
     use crate::catalog::{Catalog, Fit};
     use crate::details::{CACHE_BYTES, Details};
     use crate::embedding::Embedder;
@@ -197,6 +198,7 @@ mod tests {
 
     fn state(per_minute: u32, embedder: Option<Arc<dyn Embedder>>) -> AppState {
         let catalog = Catalog {
+            revision: "test".into(),
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 20000),
                 tool(
@@ -218,7 +220,7 @@ mod tests {
         let limiter = RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap()));
         AppState::new(
             Loaded::new(catalog, embedder.as_deref()),
-            Search::new(None, embedder),
+            Search::new(None, embedder, Arc::new(Shared::disabled())),
             Details::new(
                 Upstream::new(
                     reqwest::Client::new(),
@@ -227,6 +229,7 @@ mod tests {
                     None,
                 ),
                 CACHE_BYTES,
+                Arc::new(Shared::disabled()),
             ),
             limiter,
             false,
