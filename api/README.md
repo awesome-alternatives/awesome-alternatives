@@ -11,6 +11,8 @@ Rust and axum.
 | `GET` | `/v1/tools` | Filter with `replaces`, `language`, `license`, `category`, `dropIn=true`. Case-insensitive on language and licence. |
 | `POST` | `/v1/search` | Body `{ "q": "semantic-release but in Rust" }`. Returns the filters it read, which interpreter read them, and the matching tools. |
 | `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. The site builds its filters from it. |
+| `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
+| `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
 | `GET` | `/healthz` | `ok` |
 
 Results are ranked by fit (`drop-in`, then `full`, then `partial`) when `replaces` is set, then by
@@ -45,6 +47,15 @@ unrelated queries such as "a kubernetes dashboard" score below 0.70 against ever
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
+## README and security
+
+Both are fetched on first request and cached for 12 hours per repository; a failed fetch answers
+502 and is not cached. READMEs come from GitHub's rendered HTML and go through
+[ammonia](https://github.com/rust-ammonia/ammonia) before they leave the API: scripts, event
+handlers and `javascript:` links are removed, relative images point at `raw.githubusercontent.com`
+and relative links at the file on GitHub. Keeping READMEs out of the catalog keeps the nightly
+commit and the API's hourly reload small.
+
 ## Configuration
 
 | Variable | Default | |
@@ -57,6 +68,9 @@ limit applies to the address in the last `X-Forwarded-For` entry rather than to 
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
 | `TYPESAFE_MODEL` | `jev-latest` | Pin a version such as `jev-1.13.0` for stable answers. |
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
+| `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
+| `GITHUB_API_URL` | `https://api.github.com` | |
+| `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |
 | `RUST_LOG` | `info` | |
 

@@ -5,6 +5,7 @@ use std::str::FromStr;
 use std::time::Duration;
 
 use crate::jev;
+use crate::upstream;
 
 const DEFAULT_CATALOG: &str = "https://raw.githubusercontent.com/awesome-alternatives/awesome-alternatives/main/generated/catalog.json";
 
@@ -21,6 +22,9 @@ pub struct Config {
     pub searches_per_minute: NonZeroU32,
     pub trust_proxy: bool,
     pub jev: Option<Jev>,
+    pub github_api: String,
+    pub github_token: Option<String>,
+    pub scorecard_api: String,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -43,6 +47,10 @@ impl Config {
                 base_url: text("TYPESAFE_BASE_URL").unwrap_or_else(|| jev::DEFAULT_BASE_URL.into()),
                 model: text("TYPESAFE_MODEL").unwrap_or_else(|| "jev-latest".into()),
             }),
+            github_api: text("GITHUB_API_URL").unwrap_or_else(|| upstream::GITHUB_API.into()),
+            github_token: text("GITHUB_TOKEN"),
+            scorecard_api: text("SCORECARD_API_URL")
+                .unwrap_or_else(|| upstream::SCORECARD_API.into()),
         })
     }
 }

@@ -1,5 +1,6 @@
 mod catalog;
 mod config;
+mod details;
 mod embedding;
 mod filters;
 #[cfg(test)]
@@ -7,10 +8,13 @@ mod fixtures;
 mod interpret;
 mod jev;
 mod lexical;
+mod readme;
 mod routes;
 mod search;
 mod semantic;
 mod state;
+mod tool_details;
+mod upstream;
 mod vocabulary;
 
 use std::net::SocketAddr;
@@ -22,10 +26,12 @@ use tower_http::trace::TraceLayer;
 use tracing_subscriber::EnvFilter;
 
 use crate::config::Config;
+use crate::details::Details;
 use crate::embedding::{Embedder, LocalModel};
 use crate::jev::JevClient;
 use crate::search::Search;
 use crate::state::{AppState, Loaded};
+use crate::upstream::Upstream;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -57,11 +63,23 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             "TYPESAFE_API_KEY is not set: Jev is disabled, search runs on the local model and keywords only"
         );
     }
+    if config.github_token.is_none() {
+        tracing::warn!(
+            "GITHUB_TOKEN is not set: README and security tabs share GitHub's 60 requests an hour, cached for 12 hours per tool"
+        );
+    }
+    let upstream = Upstream::new(
+        http.clone(),
+        &config.github_api,
+        &config.scorecard_api,
+        config.github_token.clone(),
+    );
     let embedder = load_embedder().await;
     let loaded = Loaded::build(catalog, embedder.clone()).await;
     let state = AppState::new(
         loaded,
         Search::new(jev, embedder),
+        Details::new(upstream),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
     );
