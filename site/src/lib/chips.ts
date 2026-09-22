@@ -2,7 +2,7 @@ import { format } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import type { Filters } from "./types.ts";
 
-export type ChipKey = "replaces" | "language" | "license" | "category" | "dropIn";
+export type ChipKey = "replaces" | "language" | "license" | "dropIn";
 
 export type ChipStrings = Islands["search"]["chips"];
 
@@ -19,7 +19,6 @@ export function chips(filters: Filters, strings: ChipStrings, nameOf: (slug: str
   if (filters.dropIn) out.push({ key: "dropIn", label: strings.dropIn });
   if (filters.language) out.push({ key: "language", label: filters.language });
   if (filters.license) out.push({ key: "license", label: filters.license });
-  if (filters.category) out.push({ key: "category", label: filters.category });
   return out;
 }
 
