@@ -1,0 +1,5 @@
+Contact: https://github.com/awesome-alternatives/awesome-alternatives/security/advisories/new
+Expires: 2027-03-22T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://awesome-alternatives.com/.well-known/security.txt
+Policy: https://github.com/awesome-alternatives/awesome-alternatives/blob/main/SECURITY.md
