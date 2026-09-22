@@ -106,7 +106,25 @@ const link = (path: string) => pathFor(locale, path);
             <label for="header-q" class="visually-hidden">
               {m.chrome.searchLabel}
             </label>
-            <input id="header-q" name="q" type="search" maxlength="300" placeholder={m.chrome.searchPlaceholder} />
+            <div
+              class="search-field"
+              data-suggest
+              data-prefix={locale === DEFAULT_LOCALE ? "" : `/${locale}`}
+              data-listbox={m.islands.search.suggestions.label}
+              data-loading={m.islands.search.suggestions.loading}
+              data-failed={m.islands.search.suggestions.failed}
+              data-empty={m.islands.search.suggestions.empty}
+              data-alternatives={m.islands.search.suggestions.alternativesTo}
+            >
+              <input
+                id="header-q"
+                name="q"
+                type="search"
+                maxlength="300"
+                autocomplete="off"
+                placeholder={m.chrome.searchPlaceholder}
+              />
+            </div>
             <button type="submit" aria-label={m.chrome.searchSubmit}>
               →
             </button>
@@ -172,6 +190,8 @@ const link = (path: string) => pathFor(locale, path);
       </nav>
     </footer>
     <script>
+      import { href, type SuggestIndex, suggest } from "../lib/suggest.ts";
+
       const anchor = document.querySelector("[data-reveal-anchor]");
       const header = document.querySelector(".site-header");
       if (header) {
@@ -196,6 +216,139 @@ const link = (path: string) => pathFor(locale, path);
       for (const select of document.querySelectorAll("select[data-locale-switch]")) {
         select.addEventListener("change", () => {
           if (select instanceof HTMLSelectElement) window.location.assign(select.value);
+        });
+      }
+
+      const field = document.querySelector<HTMLElement>("[data-suggest]");
+      const input = field?.querySelector("input");
+      if (field && input) {
+        const text = field.dataset;
+        const list = document.createElement("div");
+        list.className = "suggestions";
+        list.id = "header-suggestions";
+        list.setAttribute("role", "listbox");
+        list.setAttribute("aria-label", text.listbox ?? "");
+        input.setAttribute("role", "combobox");
+        input.setAttribute("aria-controls", list.id);
+        input.setAttribute("aria-autocomplete", "list");
+        input.setAttribute("aria-expanded", "false");
+
+        let index: SuggestIndex | null = null;
+        let state: "none" | "loading" | "failed" = "none";
+        let rows: HTMLAnchorElement[] = [];
+        let active = -1;
+        let timer = 0;
+
+        const note = (message: string) => {
+          const paragraph = document.createElement("p");
+          paragraph.className = "suggestion-note";
+          paragraph.textContent = message;
+          return paragraph;
+        };
+
+        const close = () => {
+          list.remove();
+          input.setAttribute("aria-expanded", "false");
+          input.removeAttribute("aria-activedescendant");
+          rows = [];
+          active = -1;
+        };
+
+        const highlight = () => {
+          rows.forEach((row, i) => {
+            row.classList.toggle("is-active", i === active);
+            row.setAttribute("aria-selected", String(i === active));
+          });
+          if (active < 0) return input.removeAttribute("aria-activedescendant");
+          input.setAttribute("aria-activedescendant", rows[active].id);
+          rows[active].scrollIntoView({ block: "nearest" });
+        };
+
+        const row = (name: string, detail: string, url: string, i: number) => {
+          const anchorElement = document.createElement("a");
+          anchorElement.className = "suggestion";
+          anchorElement.id = `header-suggestion-${i}`;
+          anchorElement.href = url;
+          anchorElement.setAttribute("role", "option");
+          anchorElement.setAttribute("aria-selected", "false");
+          const label = document.createElement("span");
+          label.className = "suggestion-name";
+          label.textContent = name;
+          const hint = document.createElement("span");
+          hint.className = "suggestion-detail";
+          hint.textContent = detail;
+          anchorElement.append(label, hint);
+          anchorElement.addEventListener("mouseenter", () => {
+            active = i;
+            highlight();
+          });
+          return anchorElement;
+        };
+
+        const render = () => {
+          const query = input.value.trim();
+          if (!query) return close();
+          list.replaceChildren();
+          rows = [];
+          active = -1;
+          if (state === "loading") list.append(note(text.loading ?? ""));
+          else if (state === "failed") list.append(note(text.failed ?? ""));
+          else if (index) {
+            const items = suggest(index, query, (name) =>
+              (text.alternatives ?? "{name}").replace("{name}", name),
+            );
+            if (items.length === 0) list.append(note(text.empty ?? ""));
+            rows = items.map((item, i) =>
+              row(item.name, item.detail, `${text.prefix ?? ""}${href(item)}`, i),
+            );
+            list.append(...rows);
+          }
+          field.append(list);
+          input.setAttribute("aria-expanded", "true");
+        };
+
+        const load = async () => {
+          state = "loading";
+          render();
+          try {
+            const response = await fetch("/search-index.json");
+            if (!response.ok) throw new Error(String(response.status));
+            index = (await response.json()) as SuggestIndex;
+            state = "none";
+          } catch {
+            state = "failed";
+          }
+          render();
+        };
+
+        input.addEventListener("input", () => {
+          window.clearTimeout(timer);
+          timer = window.setTimeout(() => {
+            if (!input.value.trim()) return close();
+            if (!index && state === "none") void load();
+            else render();
+          }, 180);
+        });
+
+        input.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") return close();
+          if (rows.length === 0) return;
+          if (event.key === "ArrowDown") {
+            event.preventDefault();
+            active = (active + 1) % rows.length;
+            highlight();
+          } else if (event.key === "ArrowUp") {
+            event.preventDefault();
+            active = active <= 0 ? rows.length - 1 : active - 1;
+            highlight();
+          } else if (event.key === "Enter" && active >= 0) {
+            event.preventDefault();
+            window.location.assign(rows[active].href);
+          }
+        });
+
+        field.addEventListener("focusout", (event) => {
+          if (!field.contains(event.relatedTarget as Node | null)) close();
         });
       }
     </script>
