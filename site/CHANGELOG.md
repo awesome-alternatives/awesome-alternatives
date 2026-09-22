@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.8.0] - 2026-09-22
+
+### Features
+
+- feat(catalog): add object storage with MinIO and two alternatives (#27)
+
 ## [0.7.0] - 2026-09-22
 
 ### Features
