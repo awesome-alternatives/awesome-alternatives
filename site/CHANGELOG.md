@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.20.0] - 2026-09-22
+
+### Features
+
+- feat(catalog): verify through an .awesome-alternatives file and list monorepo tools by path (#47)
+
 ## [0.19.0] - 2026-09-22
 
 ### Features
