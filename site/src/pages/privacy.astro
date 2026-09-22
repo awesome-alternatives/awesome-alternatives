@@ -12,7 +12,8 @@ const LEGITIMATE_INTEREST = "Legitimate interest (GDPR art. 6(1)(f))";
     <h1>Privacy policy</h1>
     <p class="lede">
       The site sets no cookies, stores nothing in your browser, runs no analytics and loads no third-party scripts or
-      fonts: every file comes from awesome-alternatives.com. There is nothing to consent to, so there is no consent
+      fonts. Every page, script and font comes from awesome-alternatives.com; the one exception is the images inside a
+      project's README, described under "Repository details". There is nothing to consent to, so there is no consent
       banner. If that ever changes, this page and a consent mechanism change first. Last updated {LAST_UPDATED}.
     </p>
   </header>
@@ -159,6 +160,12 @@ const LEGITIMATE_INTEREST = "Legitimate interest (GDPR art. 6(1)(f))";
     <p>
       The API fetches each listed project's README from GitHub and its security report from OpenSSF Scorecard itself,
       server to server, and keeps them for 12 hours. Those requests carry only the repository name, nothing about you.
+    </p>
+    <p>
+      A tool page opens on that project's README. Its images and badges are loaded by your browser from where the
+      project hosts them: GitHub (<code>raw.githubusercontent.com</code>, <code>camo.githubusercontent.com</code>) and,
+      for some READMEs, badge services such as shields.io. Those hosts receive your IP address and browser details like
+      any image request, and their own policies apply. No other page loads anything from them.
     </p>
   </section>
 

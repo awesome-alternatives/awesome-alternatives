@@ -2,11 +2,11 @@
 import type { EnrichedTool } from "../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
-import { ToolCard } from "../../components/ToolCard.tsx";
+import ToolTabs from "../../components/ToolTabs.tsx";
 import Base from "../../layouts/Base.astro";
 import { alternativesTo } from "../../lib/filter.ts";
 import { categories, toolBySlug, tools } from "../../lib/catalog.ts";
-import { day, FIT_LABEL, stars } from "../../lib/format.ts";
+import { day, stars } from "../../lib/format.ts";
 import { slugify } from "../../lib/slug.ts";
 
 export const getStaticPaths = (() =>
@@ -24,143 +24,99 @@ const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
 const back = tool.replaces[0] ? `/alternatives/${tool.replaces[0].tool}/` : "/";
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
+const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool), fit: r.fit, note: r.note ?? null }));
 ---
 
 <Base
   title={`${tool.name}: ${repo.language ?? "tool"} for ${category?.name.toLowerCase() ?? tool.category}`}
   description={repo.description ?? `${tool.name} in the awesome-alternatives catalog.`}
 >
-  <a class="back" href={back}>← back</a>
-  {
-    tool.replaces.length > 0 && (
-      <p class="context">
-        alternative to{" "}
-        {tool.replaces.map((r, i) => (
-          <>
-            {i > 0 && ", "}
-            <a href={`/alternatives/${r.tool}/`}>{nameOf(r.tool)}</a>
-          </>
-        ))}
-      </p>
-    )
-  }
-  <h1>
-    {tool.name}
-    {repo.archived && <span class="mark mark-archived">archived</span>}
-  </h1>
-
-  <div class="badges">
-    {repo.language && <span class="tag">{repo.language}</span>}
-    <a class="tag" href={`/categories/${slugify(tool.category)}/`}>{category?.name ?? tool.category}</a>
-    {repo.license && <span class="tag">{repo.license}</span>}
-    {release?.signed && <span class="tag">✓ signed</span>}
-    {tool.maintainerVerified && <span class="tag">✓ verified</span>}
-  </div>
-
-  <dl class="stats">
-    <div>
-      <dt>Stars</dt>
-      <dd>{stars(repo.stars)}</dd>
-    </div>
-    <div>
-      <dt>Forks</dt>
-      <dd>{stars(repo.forks)}</dd>
-    </div>
-    <div>
-      <dt>Latest</dt>
-      <dd>{release ? <a href={release.url}>{release.tag}</a> : "none"}</dd>
-    </div>
-    <div>
-      <dt>Last push</dt>
-      <dd>{day(repo.pushedAt)}</dd>
-    </div>
-  </dl>
-
-  {repo.description && <p class="description">{repo.description}</p>}
-
-  {
-    repo.archived && (
-      <p class="archived-note">
-        This repository is archived and no longer receives changes. It is listed so you can find what replaces it.
-      </p>
-    )
-  }
-  {tool.affiliation && <p class="affiliation">{tool.affiliation}</p>}
-
-  {
-    topics.length > 0 && (
-      <section class="block">
-        <p class="section-label">Tags</p>
-        <div class="tags">
-          {topics.map((topic) => (
-            <span class="tag">#{topic}</span>
-          ))}
-        </div>
-      </section>
-    )
-  }
-
-  {
-    releases.length > 0 && (
-      <section class="block">
-        <p class="section-label">Release history</p>
-        <ol class="history">
-          {releases.map((r) => (
-            <li>
-              <span>
-                <a class="history-tag" href={r.url}>{r.tag}</a>
-                <span class="history-date">{day(r.publishedAt)}</span>
-              </span>
-              <span class="history-name">{r.name ?? ""}</span>
-              <span class="history-marks">
-                {r.prerelease && <span class="mark">pre-release</span>}
-                {release?.signed && release.tag === r.tag && <span class="mark mark-good">✓ signed</span>}
-              </span>
-            </li>
-          ))}
-        </ol>
-      </section>
-    )
-  }
-
-  {
-    tool.replaces.length > 0 && (
-      <section class="block">
-        <p class="section-label">Replaces</p>
-        <ul class="replaces">
-          {tool.replaces.map((r) => (
-            <li>
+  <div class="wide">
+    <a class="back" href={back}>← back</a>
+    {
+      tool.replaces.length > 0 && (
+        <p class="context">
+          alternative to{" "}
+          {tool.replaces.map((r, i) => (
+            <>
+              {i > 0 && ", "}
               <a href={`/alternatives/${r.tool}/`}>{nameOf(r.tool)}</a>
-              <span class="tool-note">{r.note ?? ""}</span>
-              <span class={`fit fit-${r.fit}`}>{FIT_LABEL[r.fit]}</span>
-            </li>
+            </>
           ))}
-        </ul>
-      </section>
-    )
-  }
+        </p>
+      )
+    }
+    <h1>
+      {tool.name}
+      {repo.archived && <span class="mark mark-archived">archived</span>}
+    </h1>
 
-  {
-    replacedBy.length > 0 && (
-      <section class="block">
-        <p class="section-label">Alternatives to {tool.name}</p>
-        <div class="tools">
-          {replacedBy.slice(0, 3).map((alternative) => (
-            <ToolCard tool={alternative} target={tool.slug} />
-          ))}
+    <div class="tool-layout">
+      <ToolTabs
+        client:load
+        slug={tool.slug}
+        repository={tool.repository}
+        releases={releases}
+        latest={release ? { tag: release.tag, signed: release.signed } : null}
+        replaces={replaces}
+        alternatives={replacedBy}
+      />
+
+      <aside class="about">
+        <p class="section-label">About</p>
+        {repo.description && <p class="about-description">{repo.description}</p>}
+        {
+          repo.archived && (
+            <p class="archived-note">
+              This repository is archived and no longer receives changes. It is listed so you can find what replaces it.
+            </p>
+          )
+        }
+        {tool.affiliation && <p class="affiliation">{tool.affiliation}</p>}
+
+        <div class="badges">
+          {repo.language && <span class="tag">{repo.language}</span>}
+          <a class="tag" href={`/categories/${slugify(tool.category)}/`}>{category?.name ?? tool.category}</a>
+          {repo.license && <span class="tag">{repo.license}</span>}
+          {release?.signed && <span class="tag">✓ signed</span>}
+          {tool.maintainerVerified && <span class="tag">✓ verified</span>}
         </div>
-        {replacedBy.length > 3 && (
-          <p class="links">
-            <a href={`/alternatives/${tool.slug}/`}>All {replacedBy.length} alternatives →</a>
-          </p>
-        )}
-      </section>
-    )
-  }
 
-  <p class="links">
-    <a class="repo-link" href={tool.repository}>github.com/{repo.fullName} ↗</a>
-    {repo.homepage && <a href={repo.homepage}>Website ↗</a>}
-    <a href={edit}>Edit this entry</a>
-  </p>
+        <dl class="about-facts">
+          <div>
+            <dt>Stars</dt>
+            <dd>{stars(repo.stars)}</dd>
+          </div>
+          <div>
+            <dt>Forks</dt>
+            <dd>{stars(repo.forks)}</dd>
+          </div>
+          <div>
+            <dt>Latest</dt>
+            <dd>{release ? <a href={release.url}>{release.tag}</a> : "none"}</dd>
+          </div>
+          <div>
+            <dt>Last push</dt>
+            <dd>{day(repo.pushedAt)}</dd>
+          </div>
+        </dl>
+
+        {
+          topics.length > 0 && (
+            <div class="tags">
+              {topics.map((topic) => (
+                <span class="tag">#{topic}</span>
+              ))}
+            </div>
+          )
+        }
+
+        <p class="about-links">
+          <a class="repo-link" href={tool.repository}>github.com/{repo.fullName} ↗</a>
+          {repo.homepage && <a href={repo.homepage}>Website ↗</a>}
+          <a href={edit}>Edit this entry</a>
+        </p>
+      </aside>
+    </div>
+  </div>
 </Base>

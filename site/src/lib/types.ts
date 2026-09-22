@@ -37,3 +37,34 @@ export interface GridItem {
   count: number;
   archived?: boolean;
 }
+
+export interface Readme {
+  html: string | null;
+}
+
+export interface ScorecardCheck {
+  name: string;
+  score: number | null;
+  reason: string;
+  url: string | null;
+}
+
+export interface Scorecard {
+  score: number;
+  date: string;
+  checks: ScorecardCheck[];
+}
+
+export interface Advisory {
+  ghsaId: string;
+  cveId: string | null;
+  summary: string;
+  severity: string | null;
+  publishedAt: string | null;
+  url: string;
+}
+
+export interface SecurityReport {
+  scorecard: Scorecard | null;
+  advisories: Advisory[];
+}
