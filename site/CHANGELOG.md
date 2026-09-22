@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.30.0] - 2026-09-22
+
+### Features
+
+- feat(catalog): add Minecraft servers with Paper and seven alternatives (#94)
+
+### Bug Fixes
+
+- fix(site): show the verification mark on a tool page either way (#95)
+
 ## [0.29.0] - 2026-09-22
 
 ### Features
