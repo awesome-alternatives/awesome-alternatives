@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.10.0] - 2026-09-22
+
+### Features
+
+- feat(site): show the last five releases on each tool page (#29)
+
 ## [0.9.0] - 2026-09-22
 
 ### Features
