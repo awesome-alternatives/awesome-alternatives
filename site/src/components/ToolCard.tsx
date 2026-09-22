@@ -25,6 +25,9 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
         <a className="tool-name" href={pathFor(locale, `/tools/${tool.slug}/`)}>
           {tool.name}
         </a>
+        {tool.maintainerVerified && (
+          <Mark icon="verified" label={card.verified} href={pathFor(locale, "/about/#verified")} />
+        )}
         {repo.archived && (
           <a className="mark mark-archived" href={pathFor(locale, "/about/#archived")}>
             {card.archived}
@@ -70,11 +73,8 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
         )}
         <Fact label={card.factLastPush} value={day(repo.pushedAt)} />
       </dl>
-      {(tool.maintainerVerified || flags.length > 0) && (
+      {flags.length > 0 && (
         <p className="marks">
-          {tool.maintainerVerified && (
-            <Mark icon="verified" label={card.verified} href={pathFor(locale, "/about/#verified")} />
-          )}
           {flags.map((flag) => (
             <a
               key={flag}
