@@ -402,6 +402,61 @@ main {
   border: 1px solid var(--accent);
 }
 
+.search-field {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+  left: 0;
+  z-index: 25;
+  max-height: 320px;
+  overflow-y: auto;
+  background-color: var(--surface);
+  border: 1px solid var(--accent);
+}
+
+.suggestion,
+.suggestion-note {
+  display: block;
+  margin: 0;
+  padding: 10px 16px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.suggestion-note {
+  color: var(--dim);
+}
+
+.suggestion {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.suggestion:last-child {
+  border-bottom: 0;
+}
+
+.suggestion.is-active {
+  background-color: var(--bg);
+  color: var(--accent);
+}
+
+.suggestion-detail {
+  display: block;
+  margin-top: 3px;
+  color: var(--dim);
+  font-size: 0.75rem;
+}
+
 .search input {
   flex: 1;
   min-width: 0;

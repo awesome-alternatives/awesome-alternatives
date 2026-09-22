@@ -35,6 +35,13 @@ export const islands: Islands = {
     submit: "Buscar",
     examplesLead: "Prueba con ",
     searching: "Buscando",
+    suggestions: {
+      label: "Herramientas coincidentes",
+      loading: "Recorriendo el catálogo",
+      failed: "Las sugerencias no están disponibles. Pulsa Intro para buscar igualmente.",
+      empty: "Ningún nombre coincide. Pulsa Intro para buscar en todo el catálogo.",
+      alternativesTo: "alternativas a {name}",
+    },
     count: { one: "1 herramienta", other: "{n} herramientas" },
     chips: {
       replaces: "Sustituye a {name}",
