@@ -25,6 +25,10 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
+      - name: Set the release commit author
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - uses: FerrLabs/FerrFlow@9a7a1901c1f7bc964d5765bfe480eb333a0c791b # v7.22.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
