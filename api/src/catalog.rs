@@ -28,6 +28,8 @@ pub struct RepoFacts {
     pub license: Option<String>,
     pub stars: u64,
     pub forks: u64,
+    #[serde(default)]
+    pub topics: Vec<String>,
     pub archived: bool,
     pub pushed_at: String,
 }

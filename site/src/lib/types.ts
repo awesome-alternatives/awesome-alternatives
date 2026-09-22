@@ -5,7 +5,7 @@ export type { Fit };
 export type ToolView = Omit<EnrichedTool, "repo"> & {
   repo: Pick<
     RepoFacts,
-    "fullName" | "description" | "homepage" | "language" | "license" | "stars" | "pushedAt" | "archived"
+    "fullName" | "description" | "homepage" | "language" | "license" | "stars" | "forks" | "topics" | "pushedAt" | "archived"
   >;
 };
 

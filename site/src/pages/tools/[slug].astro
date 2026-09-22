@@ -6,7 +6,7 @@ import { ToolCard } from "../../components/ToolCard.tsx";
 import Base from "../../layouts/Base.astro";
 import { alternativesTo } from "../../lib/filter.ts";
 import { categories, toolBySlug, tools } from "../../lib/catalog.ts";
-import { FIT_LABEL } from "../../lib/format.ts";
+import { day, FIT_LABEL, stars } from "../../lib/format.ts";
 
 export const getStaticPaths = (() =>
   tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }))) satisfies GetStaticPaths;
@@ -16,44 +16,99 @@ interface Props {
 }
 
 const { tool } = Astro.props;
+const { repo, release } = tool;
 const replacedBy = alternativesTo(tools, tool.slug);
 const category = categories[tool.category];
+const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
+const back = tool.replaces[0] ? `/alternatives/${tool.replaces[0].tool}/` : "/";
+const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 ---
 
 <Base
-  title={`${tool.name}: ${tool.repo.language ?? "tool"} for ${category?.name.toLowerCase() ?? tool.category}`}
-  description={tool.repo.description ?? `${tool.name} in the awesome-alternatives catalog.`}
+  title={`${tool.name}: ${repo.language ?? "tool"} for ${category?.name.toLowerCase() ?? tool.category}`}
+  description={repo.description ?? `${tool.name} in the awesome-alternatives catalog.`}
 >
-  <nav class="crumbs"><a href="/">Home</a> / {category?.name ?? tool.category}</nav>
-  <h1>{tool.name}</h1>
+  <a class="back" href={back}>← back</a>
   {
-    tool.repo.archived && (
+    tool.replaces.length > 0 && (
+      <p class="context">
+        alternative to{" "}
+        {tool.replaces.map((r, i) => (
+          <>
+            {i > 0 && ", "}
+            <a href={`/alternatives/${r.tool}/`}>{nameOf(r.tool)}</a>
+          </>
+        ))}
+      </p>
+    )
+  }
+  <h1>
+    {tool.name}
+    {repo.archived && <span class="mark mark-archived">archived</span>}
+  </h1>
+
+  <div class="badges">
+    {repo.language && <span class="tag">{repo.language}</span>}
+    <span class="tag">{category?.name ?? tool.category}</span>
+    {repo.license && <span class="tag">{repo.license}</span>}
+    {release?.signed && <span class="tag">✓ signed</span>}
+    {tool.maintainerVerified && <span class="tag">✓ verified</span>}
+  </div>
+
+  <dl class="stats">
+    <div>
+      <dt>Stars</dt>
+      <dd>{stars(repo.stars)}</dd>
+    </div>
+    <div>
+      <dt>Forks</dt>
+      <dd>{stars(repo.forks)}</dd>
+    </div>
+    <div>
+      <dt>Latest</dt>
+      <dd>{release ? <a href={release.url}>{release.tag}</a> : "none"}</dd>
+    </div>
+    <div>
+      <dt>Last push</dt>
+      <dd>{day(repo.pushedAt)}</dd>
+    </div>
+  </dl>
+
+  {repo.description && <p class="description">{repo.description}</p>}
+
+  {
+    repo.archived && (
       <p class="archived-note">
         This repository is archived and no longer receives changes. It is listed so you can find what replaces it.
       </p>
     )
   }
-  <ToolCard tool={tool} />
-
-  <p class="links">
-    <a href={tool.repository}>Repository</a>
-    {tool.repo.homepage && <a href={tool.repo.homepage}>Website</a>}
-    <a href={edit}>Edit this entry</a>
-  </p>
-
   {tool.affiliation && <p class="affiliation">{tool.affiliation}</p>}
 
   {
+    topics.length > 0 && (
+      <section class="block">
+        <p class="section-label">Tags</p>
+        <div class="tags">
+          {topics.map((topic) => (
+            <span class="tag">#{topic}</span>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
     tool.replaces.length > 0 && (
-      <section>
-        <h2>Replaces</h2>
+      <section class="block">
+        <p class="section-label">Replaces</p>
         <ul class="replaces">
           {tool.replaces.map((r) => (
             <li>
-              <a href={`/alternatives/${r.tool}/`}>{toolBySlug(r.tool)?.name ?? r.tool}</a>
+              <a href={`/alternatives/${r.tool}/`}>{nameOf(r.tool)}</a>
+              <span class="tool-note">{r.note ?? ""}</span>
               <span class={`fit fit-${r.fit}`}>{FIT_LABEL[r.fit]}</span>
-              {r.note && <span class="tool-note">{r.note}</span>}
             </li>
           ))}
         </ul>
@@ -63,19 +118,25 @@ const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/
 
   {
     replacedBy.length > 0 && (
-      <section>
-        <h2>Alternatives to {tool.name}</h2>
+      <section class="block">
+        <p class="section-label">Alternatives to {tool.name}</p>
         <div class="tools">
           {replacedBy.slice(0, 3).map((alternative) => (
             <ToolCard tool={alternative} target={tool.slug} />
           ))}
         </div>
         {replacedBy.length > 3 && (
-          <p>
-            <a href={`/alternatives/${tool.slug}/`}>All {replacedBy.length} alternatives</a>
+          <p class="links">
+            <a href={`/alternatives/${tool.slug}/`}>All {replacedBy.length} alternatives →</a>
           </p>
         )}
       </section>
     )
   }
+
+  <p class="links">
+    <a class="repo-link" href={tool.repository}>github.com/{repo.fullName} ↗</a>
+    {repo.homepage && <a href={repo.homepage}>Website ↗</a>}
+    <a href={edit}>Edit this entry</a>
+  </p>
 </Base>

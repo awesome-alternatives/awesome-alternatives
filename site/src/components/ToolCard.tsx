@@ -16,7 +16,7 @@ export function ToolCard({ tool, target }: Props) {
         <a className="tool-name" href={`/tools/${tool.slug}/`}>
           {tool.name}
         </a>
-        {repo.archived && <span className="mark mark-archived">Archived</span>}
+        {repo.archived && <span className="mark mark-archived">archived</span>}
         {replacement && <span className={`fit fit-${replacement.fit}`}>{FIT_LABEL[replacement.fit]}</span>}
       </header>
       {repo.description && <p className="tool-description">{repo.description}</p>}
@@ -31,7 +31,7 @@ export function ToolCard({ tool, target }: Props) {
             value={
               <>
                 <a href={release.url}>{release.tag}</a>
-                {release.signed && <span className="mark mark-good">signed</span>}
+                {release.signed && <span className="mark mark-good">✓ signed</span>}
               </>
             }
           />

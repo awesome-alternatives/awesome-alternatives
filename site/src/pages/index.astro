@@ -1,11 +1,21 @@
 ---
 import Search from "../components/Search.tsx";
 import Base from "../layouts/Base.astro";
-import { targets, tools } from "../lib/catalog.ts";
+import { categories, targets, tools } from "../lib/catalog.ts";
 
 const all = targets();
 const names = Object.fromEntries(all.map((t) => [t.slug, t.name]));
-const examples = ["semantic-release, but in Rust", "a drop-in for release-please", "changelog generator under MIT"];
+const categoryOf = (target: (typeof all)[number]) => {
+  const key = target.listed?.category ?? target.alternatives[0]?.category;
+  return key ? (categories[key]?.name ?? key) : "";
+};
+const examples = [
+  "semantic-release, but written in Rust",
+  "a drop-in for webpack, faster",
+  "Redis, but multithreaded",
+  "changelog generator under MIT",
+  "replace Terraform",
+];
 ---
 
 <Base
@@ -13,28 +23,29 @@ const examples = ["semantic-release, but in Rust", "a drop-in for release-please
   description="Search for an alternative to a developer tool by language, licence and fit. Stars, releases and signatures come straight from GitHub."
 >
   <section class="hero">
-    <h1>Find what replaces the tool you use</h1>
-    <p class="lede">
-      Say what you use and what you need. {tools.length} tools, with their latest release, licence and whether that
-      release is signed, checked against GitHub every night.
-    </p>
+    <p class="eyebrow">Find what replaces the tool you use</p>
+    <h1>Say what you use and what you need.</h1>
+    <p class="lede">{tools.length} tools, release data pulled from GitHub nightly, never typed by hand</p>
     <Search client:load names={names} examples={examples} />
   </section>
 
+  <hr class="divider" />
+
   <section id="browse">
-    <h2>Browse by tool</h2>
+    <p class="section-label">Browse by tool</p>
     <ul class="targets">
       {
         all.map((target) => (
           <li>
             <a href={`/alternatives/${target.slug}/`}>
-              <span class="target-name">
-                {target.name}
-                {target.listed?.repo.archived && <span class="mark mark-archived">Archived</span>}
+              <span>
+                <span class="target-name">
+                  {target.name}
+                  {target.listed?.repo.archived && <span class="mark mark-archived">archived</span>}
+                </span>
+                <span class="target-category">{categoryOf(target)}</span>
               </span>
-              <span class="count">
-                {target.alternatives.length} {target.alternatives.length === 1 ? "alternative" : "alternatives"}
-              </span>
+              <span class="target-count">{target.alternatives.length} →</span>
             </a>
           </li>
         ))

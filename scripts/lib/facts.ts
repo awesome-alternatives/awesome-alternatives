@@ -10,6 +10,7 @@ interface ApiRepo {
   license: { spdx_id: string | null } | null;
   stargazers_count: number;
   forks_count: number;
+  topics?: string[];
   archived: boolean;
   fork: boolean;
   private: boolean;
@@ -72,6 +73,7 @@ export async function fetchRepo(gh: GitHub, repository: string): Promise<RepoFac
     license: licenseOf(r.license),
     stars: r.stargazers_count,
     forks: r.forks_count,
+    topics: r.topics ?? [],
     archived: r.archived,
     fork: r.fork,
     private: r.private,
