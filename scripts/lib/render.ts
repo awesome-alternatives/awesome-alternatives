@@ -10,7 +10,8 @@ export function renderCatalog(tools: readonly EnrichedTool[], categories: Readon
   for (const [key, category] of categories) {
     const members = tools.filter((t) => t.category === key).sort((a, b) => b.repo.stars - a.repo.stars);
     if (!members.length) continue;
-    sections.push(`### ${category.name}`, "", category.description, "");
+    const count = members.length === 1 ? "1 tool" : `${members.length} tools`;
+    sections.push("<details>", `<summary><b>${category.name}</b>, ${count}</summary>`, "", category.description, "");
     sections.push("| Tool | Language | Licence | Latest | Stars | Replaces |", "|---|---|---|---|---:|---|");
     for (const t of members) {
       const replaces = t.replaces
@@ -23,7 +24,7 @@ export function renderCatalog(tools: readonly EnrichedTool[], categories: Readon
         `| ${name} | ${t.repo.language ?? "unknown"} | ${t.repo.license ?? "none"} | ${latest} | ${t.repo.stars} | ${replaces || "none"} |`,
       );
     }
-    sections.push("");
+    sections.push("", "</details>", "");
   }
 
   return sections.join("\n").trimEnd();

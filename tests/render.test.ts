@@ -66,6 +66,13 @@ describe("renderCatalog", () => {
     assert.doesNotMatch(row([old, next], "next") ?? "", /archived/);
   });
 
+  it("folds each category into a details block that says how many tools it holds", () => {
+    const out = renderCatalog([entry("a"), entry("b")], categories);
+    assert.ok(out.startsWith("<details>\n<summary><b>C</b>, 2 tools</summary>\n\nd\n"));
+    assert.ok(out.endsWith("</details>"));
+    assert.ok(renderCatalog([entry("a")], categories).includes("<b>C</b>, 1 tool</summary>"));
+  });
+
   it("keeps both marks when a verified tool is later archived", () => {
     assert.match(row([entry("both", { maintainerVerified: true }, true)], "both") ?? "", /\) verified archived \|/);
   });

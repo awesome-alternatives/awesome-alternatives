@@ -7,6 +7,7 @@ import { fetchReleases } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
+import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 import type { EnrichedTool } from "./lib/types.ts";
 
@@ -50,7 +51,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
 });
 
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
-await writeFile(catalogPath, `${JSON.stringify({ tools }, null, 2)}\n`);
+await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), tools }, null, 2)}\n`);
 
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");
