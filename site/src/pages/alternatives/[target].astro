@@ -21,7 +21,10 @@ const languages = [...new Set(target.alternatives.map((t) => t.repo.language).fi
   description={`${target.alternatives.length} alternatives to ${target.name}, in ${languages.join(", ")}. Compare fit, licence, stars and the latest signed release.`}
 >
   <nav class="crumbs"><a href="/">Home</a> / Alternatives</nav>
-  <h1>Alternatives to {target.name}</h1>
+  <h1>
+    Alternatives to {target.name}
+    {target.listed?.repo.archived && <span class="mark mark-archived">Archived</span>}
+  </h1>
   {
     target.listed && (
       <p class="lede">

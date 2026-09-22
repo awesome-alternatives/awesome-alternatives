@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { judge, maxInWindow } from "../scripts/lib/rules.ts";
+import { judge, maxInWindow, replacedSlugs } from "../scripts/lib/rules.ts";
 import type { RepoFacts, Tool } from "../scripts/lib/types.ts";
 
 const NOW = new Date("2026-09-22T12:00:00Z");
@@ -34,8 +34,14 @@ function repo(overrides: Partial<RepoFacts> = {}): RepoFacts {
 
 const release = { tag: "v1.0.0", publishedAt: null, url: "u", source: "release" as const, signed: false };
 
-function codes(r: RepoFacts | null, recentStars: string[] = [], withRelease = true) {
-  return judge(tool, { repo: r, release: withRelease ? release : null, recentStars }, NOW).map(
+function codes(
+  r: RepoFacts | null,
+  recentStars: string[] = [],
+  withRelease = true,
+  entry: Tool = tool,
+  replaced: ReadonlySet<string> = new Set(),
+) {
+  return judge(entry, { repo: r, release: withRelease ? release : null, recentStars }, NOW, replaced).map(
     (f) => `${f.severity}:${f.code}`,
   );
 }
@@ -51,6 +57,20 @@ describe("judge", () => {
 
   it("refuses archived repositories and forks", () => {
     assert.deepEqual(codes(repo({ archived: true, fork: true })), ["error:archived", "error:fork"]);
+  });
+
+  it("accepts an archived repository that is only listed as something to replace", () => {
+    const old = repo({ archived: true, pushedAt: "2024-01-01T00:00:00Z" });
+    assert.deepEqual(codes(old, [], true, tool, new Set(["sample"])), ["warning:archived"]);
+  });
+
+  it("still refuses an archived repository nothing replaces", () => {
+    assert.deepEqual(codes(repo({ archived: true }), [], true, tool, new Set(["other"])), ["error:archived"]);
+  });
+
+  it("still refuses an archived repository offered as an alternative", () => {
+    const alternative: Tool = { ...tool, replaces: [{ tool: "other", fit: "full" }] };
+    assert.deepEqual(codes(repo({ archived: true }), [], true, alternative, new Set(["sample"])), ["error:archived"]);
   });
 
   it("refuses a repository younger than the minimum age, the cheapest spam filter", () => {
@@ -85,6 +105,17 @@ describe("judge", () => {
   it("does not flag the same number of stars spread over weeks", () => {
     const steady = Array.from({ length: 60 }, (_, i) => new Date(Date.UTC(2026, 7, 1 + (i % 30), i)).toISOString());
     assert.deepEqual(codes(repo(), steady), []);
+  });
+});
+
+describe("replacedSlugs", () => {
+  it("collects every slug some entry replaces", () => {
+    const tools: Tool[] = [
+      { ...tool, slug: "a", replaces: [{ tool: "x", fit: "full" }, { tool: "y", fit: "partial" }] },
+      { ...tool, slug: "b", replaces: [{ tool: "x", fit: "drop-in" }] },
+      { ...tool, slug: "x" },
+    ];
+    assert.deepEqual([...replacedSlugs(tools)].sort(), ["x", "y"]);
   });
 });
 

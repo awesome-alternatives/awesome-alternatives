@@ -27,6 +27,13 @@ const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/
 >
   <nav class="crumbs"><a href="/">Home</a> / {category?.name ?? tool.category}</nav>
   <h1>{tool.name}</h1>
+  {
+    tool.repo.archived && (
+      <p class="archived-note">
+        This repository is archived and no longer receives changes. It is listed so you can find what replaces it.
+      </p>
+    )
+  }
   <ToolCard tool={tool} />
 
   <p class="links">

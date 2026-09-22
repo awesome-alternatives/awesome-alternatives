@@ -39,7 +39,10 @@ result to the run summary.
 Blocking:
 
 - the file matches the schema and its name is a valid slug
-- the repository exists, is public, is not archived and is not a fork
+- the repository exists, is public and is not a fork
+- the repository is not archived, unless the entry replaces nothing and other entries replace it:
+  an archived tool is exactly what people look to move off, so it can be a target, never an
+  alternative
 - the repository is at least 30 days old
 - the repository is not already listed under another slug
 - every `replaces` target exists, and a tool does not replace itself

@@ -4,7 +4,7 @@ import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
-import { judge } from "./lib/rules.ts";
+import { judge, replacedSlugs } from "./lib/rules.ts";
 import type { EnrichedTool } from "./lib/types.ts";
 
 const root = process.cwd();
@@ -17,10 +17,11 @@ if (structural.length) {
 
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
+const replaced = replacedSlugs(catalog.tools);
 
 const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
   const evidence = await gather(gh, tool, false);
-  const flags = judge(tool, evidence, now).map((f) => f.code);
+  const flags = judge(tool, evidence, now, replaced).map((f) => f.code);
   if (!evidence.repo) {
     console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
     return null;
