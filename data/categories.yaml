@@ -142,3 +142,6 @@ local-kubernetes:
 secrets-manager:
   name: Secrets managers
   description: Store, rotate and hand out secrets to applications.
+git-lfs-server:
+  name: Git LFS servers
+  description: Serve Git LFS objects for repositories hosted anywhere.

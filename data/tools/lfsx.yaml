@@ -1,0 +1,8 @@
+name: LFSX
+repository: https://github.com/FerrLabs/LFSX
+category: git-lfs-server
+replaces:
+  - tool: lfs-test-server
+    fit: full
+    note: Rust server with S3 and local storage, built for self-hosting.
+affiliation: Maintained by FerrLabs, whose founder also maintains this directory.

@@ -1,0 +1,7 @@
+name: Giftless
+repository: https://github.com/datopian/giftless
+category: git-lfs-server
+replaces:
+  - tool: lfs-test-server
+    fit: full
+    note: Pluggable Python server with cloud storage back ends.

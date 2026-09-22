@@ -1,0 +1,3 @@
+name: lfs-test-server
+repository: https://github.com/git-lfs/lfs-test-server
+category: git-lfs-server
