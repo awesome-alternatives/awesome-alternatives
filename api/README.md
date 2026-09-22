@@ -14,6 +14,7 @@ Rust and axum.
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
 | `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
 | `GET` | `/healthz` | `ok` |
+| `GET` | `/quiesce` | Whether the process is safe to stop. `200` when it is, `409` when it is not. |
 
 Results are ranked by fit (`drop-in`, then `full`, then `partial`) when `replaces` is set, then by
 stars. Archived repositories are never returned.
@@ -44,6 +45,13 @@ alone. Neither stops it from serving.
 The model thresholds (0.75 to pick a target, 0.73 to keep a result) were set against the catalog:
 unrelated queries such as "a kubernetes dashboard" score below 0.70 against every tool.
 
+At startup and on every refresh the whole catalog is embedded, in batches of 16 texts. The ONNX
+session pads each batch to its longest text and holds the raw output of every batch until the call
+returns, so one call over the whole catalog made the startup peak grow steeply with the number of
+tools. Batching flattens most of that slope, though not all of it: ONNX Runtime's arena does not
+shrink between runs. The stored vectors are 384 floats, about 1.5 KB per tool, and are not
+affected.
+
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
@@ -55,6 +63,57 @@ Both are fetched on first request and cached for 12 hours per repository; a fail
 handlers and `javascript:` links are removed, relative images point at `raw.githubusercontent.com`
 and relative links at the file on GitHub. Keeping READMEs out of the catalog keeps the nightly
 commit and the API's hourly reload small.
+
+Both caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
+kilobytes, so counting entries said nothing about how much memory they held. `DETAILS_CACHE_BYTES`
+is the total budget, 64 MiB by default, split evenly between the two. The weight of an entry is the
+key plus the strings it holds, and an entry heavier than its cache's share is served once and never
+kept.
+
+## Rollouts
+
+`GET /quiesce` answers `200` when the process is safe to stop and `409` when it is not, with the
+same JSON body either way:
+
+```json
+{ "alive": true, "ready": true, "safe": true, "reason": "idle" }
+```
+
+`reason` is one of:
+
+| `reason` | |
+|---|---|
+| `idle` | Ready, nothing in flight. The only case that answers `200`. |
+| `starting` | The catalog or the semantic index is not in place yet. |
+| `indexing` | A catalog refresh is rebuilding the index. |
+| `requests` | Requests are still being served. |
+
+`ready` is its own field so a readiness probe can use it without caring about in-flight work.
+Running without an embedding model is a supported mode, so `ready` does not wait for an index that
+will never be built.
+
+A `preStop` hook polls it so a rollout does not cut a refresh or an in-flight search in half. The
+image is distroless, so it has no shell and no `wget`; the binary polls itself instead:
+
+```yaml
+lifecycle:
+  preStop:
+    exec:
+      command: ["/usr/local/bin/awesome-alternatives-api", "wait-quiescent"]
+```
+
+`wait-quiescent` polls `/quiesce` on loopback, at the port from `BIND`, once a second. It exits 0
+as soon as the answer is `200`, or straight away if the API no longer answers at all, since there
+is then nothing left to drain.
+
+The endpoint never blocks: it reads counters and answers immediately. Kubernetes still enforces
+`terminationGracePeriodSeconds` as the hard ceiling; the hook only spends what is left of it, and
+the pod is killed when it runs out.
+
+The startup embedding pass runs before the listener is bound, so nothing answers on the port until
+the process is ready. That is what a `startupProbe` on `/quiesce` is for; a `readinessProbe` can
+use it too, as long as it reads `ready` rather than the status code, which also goes to `409` while
+requests are in flight.
 
 ## Configuration
 
@@ -71,6 +130,7 @@ commit and the API's hourly reload small.
 | `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
+| `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the README and security caches together. |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |
 | `RUST_LOG` | `info` | |
 

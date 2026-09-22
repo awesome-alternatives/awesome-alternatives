@@ -4,6 +4,7 @@ use std::num::NonZeroU32;
 use std::str::FromStr;
 use std::time::Duration;
 
+use crate::details;
 use crate::jev;
 use crate::upstream;
 
@@ -25,6 +26,7 @@ pub struct Config {
     pub github_api: String,
     pub github_token: Option<String>,
     pub scorecard_api: String,
+    pub details_cache_bytes: u64,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -51,6 +53,7 @@ impl Config {
             github_token: text("GITHUB_TOKEN"),
             scorecard_api: text("SCORECARD_API_URL")
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
+            details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
         })
     }
 }

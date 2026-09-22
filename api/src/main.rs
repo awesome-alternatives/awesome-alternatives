@@ -46,6 +46,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     let config = Config::from_env()?;
+    if std::env::args().nth(1).as_deref() == Some("wait-quiescent") {
+        return wait_quiescent(config.bind.port()).await;
+    }
     let http = reqwest::Client::builder()
         .user_agent(concat!(
             "awesome-alternatives-api/",
@@ -79,7 +82,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let state = AppState::new(
         loaded,
         Search::new(jev, embedder),
-        Details::new(upstream),
+        Details::new(upstream, config.details_cache_bytes),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
     );
@@ -102,6 +105,28 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     .with_graceful_shutdown(shutdown())
     .await?;
     Ok(())
+}
+
+async fn wait_quiescent(port: u16) -> Result<(), Box<dyn std::error::Error>> {
+    let http = reqwest::Client::builder()
+        .timeout(std::time::Duration::from_secs(2))
+        .build()?;
+    let url = format!("http://127.0.0.1:{port}/quiesce");
+    let mut ticker = tokio::time::interval(std::time::Duration::from_secs(1));
+    loop {
+        ticker.tick().await;
+        match http.get(&url).send().await {
+            Ok(response) if response.status().is_success() => {
+                tracing::info!("safe to stop");
+                return Ok(());
+            }
+            Ok(_) => {}
+            Err(error) => {
+                tracing::info!(%error, "the API no longer answers, nothing left to drain");
+                return Ok(());
+            }
+        }
+    }
 }
 
 async fn load_embedder() -> Option<Arc<dyn Embedder>> {

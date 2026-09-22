@@ -1,8 +1,11 @@
+use std::num::NonZeroUsize;
 use std::sync::Mutex;
 
 use fastembed::{EmbeddingModel, TextEmbedding, TextInitOptions};
 
 pub type Vector = Vec<f32>;
+
+pub const BATCH: NonZeroUsize = NonZeroUsize::new(16).expect("16 is not zero");
 
 #[derive(Debug, thiserror::Error)]
 #[error("embedding failed: {0}")]
@@ -34,12 +37,13 @@ impl LocalModel {
 
 impl Embedder for LocalModel {
     fn embed(&self, texts: &[String]) -> Result<Vec<Vector>, EmbedError> {
-        self.0
-            .lock()
-            .unwrap_or_else(|p| p.into_inner())
-            .embed(texts, None)
-            .map(|vectors| vectors.into_iter().map(normalized).collect())
-            .map_err(|e| EmbedError(e.to_string()))
+        let mut model = self.0.lock().unwrap_or_else(|p| p.into_inner());
+        in_batches(texts, BATCH, |batch| {
+            model
+                .embed(batch, None)
+                .map(|vectors| vectors.into_iter().map(normalized).collect())
+                .map_err(|e| EmbedError(e.to_string()))
+        })
     }
 
     fn thresholds(&self) -> Thresholds {
@@ -49,6 +53,20 @@ impl Embedder for LocalModel {
             relevance: 0.73,
         }
     }
+}
+
+pub fn in_batches(
+    texts: &[String],
+    size: NonZeroUsize,
+    mut embed: impl FnMut(&[String]) -> Result<Vec<Vector>, EmbedError>,
+) -> Result<Vec<Vector>, EmbedError> {
+    texts.chunks(size.get()).map(&mut embed).try_fold(
+        Vec::with_capacity(texts.len()),
+        |mut all, batch| {
+            all.extend(batch?);
+            Ok(all)
+        },
+    )
 }
 
 pub fn normalized(mut vector: Vector) -> Vector {
@@ -125,5 +143,50 @@ mod tests {
     #[test]
     fn a_zero_vector_stays_zero_instead_of_dividing_by_zero() {
         assert_eq!(normalized(vec![0.0, 0.0]), vec![0.0, 0.0]);
+    }
+
+    fn texts(count: usize) -> Vec<String> {
+        (0..count).map(|i| format!("tool number {i}")).collect()
+    }
+
+    fn size(n: usize) -> NonZeroUsize {
+        NonZeroUsize::new(n).unwrap()
+    }
+
+    #[test]
+    fn batching_returns_what_a_single_call_would_have_returned() {
+        let texts = texts(7);
+        let batched = in_batches(&texts, size(3), |batch| fake::Words.embed(batch)).unwrap();
+        assert_eq!(batched, fake::Words.embed(&texts).unwrap());
+    }
+
+    #[test]
+    fn a_batch_smaller_than_the_input_feeds_the_model_in_chunks() {
+        let texts = texts(7);
+        let mut sizes = Vec::new();
+        let vectors = in_batches(&texts, size(3), |batch| {
+            sizes.push(batch.len());
+            fake::Words.embed(batch)
+        })
+        .unwrap();
+        assert_eq!(sizes, vec![3, 3, 1]);
+        assert_eq!(vectors.len(), 7);
+    }
+
+    #[test]
+    fn an_empty_input_never_reaches_the_model() {
+        let mut called = false;
+        let vectors = in_batches(&[], BATCH, |batch| {
+            called = true;
+            fake::Words.embed(batch)
+        })
+        .unwrap();
+        assert!(vectors.is_empty());
+        assert!(!called);
+    }
+
+    #[test]
+    fn a_failing_batch_fails_the_whole_call() {
+        assert!(in_batches(&texts(7), size(3), |batch| fake::Broken.embed(batch)).is_err());
     }
 }
