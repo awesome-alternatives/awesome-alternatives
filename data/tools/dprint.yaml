@@ -1,0 +1,7 @@
+name: dprint
+repository: https://github.com/dprint/dprint
+category: javascript-lint-format
+replaces:
+  - tool: prettier
+    fit: full
+    note: Plugin-based formatter covering JavaScript, TypeScript, JSON, Markdown and more.

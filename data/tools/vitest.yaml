@@ -1,0 +1,7 @@
+name: Vitest
+repository: https://github.com/vitest-dev/vitest
+category: javascript-test-runner
+replaces:
+  - tool: jest
+    fit: full
+    note: "Jest-compatible API, running on Vite's transform pipeline."

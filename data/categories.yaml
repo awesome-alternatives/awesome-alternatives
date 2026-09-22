@@ -4,3 +4,45 @@ release-automation:
 changelog:
   name: Changelog generation
   description: Changelogs built from commits or pull requests, without driving the release itself.
+javascript-runtime:
+  name: JavaScript runtimes
+  description: Engines that run JavaScript and TypeScript outside the browser.
+javascript-package-manager:
+  name: JavaScript package managers
+  description: Install and lock npm dependencies.
+javascript-bundler:
+  name: JavaScript bundlers
+  description: Bundle, transform and serve front-end code.
+javascript-lint-format:
+  name: JavaScript linting and formatting
+  description: Linters and formatters for JavaScript and TypeScript.
+javascript-test-runner:
+  name: JavaScript test runners
+  description: Run unit and integration tests for JavaScript and TypeScript.
+python-packaging:
+  name: Python packaging
+  description: Install dependencies, manage environments and lock Python projects.
+python-lint-format:
+  name: Python linting and formatting
+  description: Linters and formatters for Python.
+infrastructure-as-code:
+  name: Infrastructure as code
+  description: Declare cloud infrastructure in files and apply the difference.
+container-engine:
+  name: Container engines
+  description: Build and run OCI containers.
+key-value-store:
+  name: In-memory key-value stores
+  description: Caches and data structure servers speaking the Redis protocol or close to it.
+search-engine:
+  name: Search engines
+  description: Full-text search servers.
+metrics:
+  name: Metrics and monitoring
+  description: Collect, store and query time series.
+http-client:
+  name: Command-line HTTP clients
+  description: Send HTTP requests from a terminal.
+code-search:
+  name: Code search
+  description: Search file contents recursively from a terminal.

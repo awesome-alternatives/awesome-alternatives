@@ -1,0 +1,10 @@
+name: Bun
+repository: https://github.com/oven-sh/bun
+category: javascript-runtime
+replaces:
+  - tool: nodejs
+    fit: full
+    note: Aims at Node API compatibility, most packages run unchanged.
+  - tool: npm
+    fit: full
+    note: bun install reads package.json and writes its own lockfile.

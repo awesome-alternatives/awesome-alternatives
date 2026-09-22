@@ -1,0 +1,7 @@
+name: xh
+repository: https://github.com/ducaale/xh
+category: http-client
+replaces:
+  - tool: httpie
+    fit: full
+    note: HTTPie-style syntax in a single static binary.

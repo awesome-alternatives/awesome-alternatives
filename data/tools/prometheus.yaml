@@ -1,0 +1,3 @@
+name: Prometheus
+repository: https://github.com/prometheus/prometheus
+category: metrics

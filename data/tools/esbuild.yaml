@@ -1,0 +1,7 @@
+name: esbuild
+repository: https://github.com/evanw/esbuild
+category: javascript-bundler
+replaces:
+  - tool: webpack
+    fit: partial
+    note: Bundling and minification with a smaller plugin API.

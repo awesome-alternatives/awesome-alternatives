@@ -1,0 +1,10 @@
+name: Biome
+repository: https://github.com/biomejs/biome
+category: javascript-lint-format
+replaces:
+  - tool: eslint
+    fit: partial
+    note: Covers a subset of ESLint and typescript-eslint rules.
+  - tool: prettier
+    fit: full
+    note: Its formatter targets Prettier-compatible output.

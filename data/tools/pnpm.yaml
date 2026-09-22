@@ -1,0 +1,7 @@
+name: pnpm
+repository: https://github.com/pnpm/pnpm
+category: javascript-package-manager
+replaces:
+  - tool: npm
+    fit: full
+    note: Same package.json, a content-addressed store and its own lockfile.

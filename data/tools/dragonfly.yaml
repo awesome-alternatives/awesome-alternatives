@@ -1,0 +1,7 @@
+name: Dragonfly
+repository: https://github.com/dragonflydb/dragonfly
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: drop-in
+    note: Redis and Memcached API compatible, multithreaded.

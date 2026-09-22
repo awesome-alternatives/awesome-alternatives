@@ -1,0 +1,7 @@
+name: Vite
+repository: https://github.com/vitejs/vite
+category: javascript-bundler
+replaces:
+  - tool: webpack
+    fit: full
+    note: Different configuration, and a dev server that serves native ES modules.

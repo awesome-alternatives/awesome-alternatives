@@ -1,0 +1,7 @@
+name: PDM
+repository: https://github.com/pdm-project/pdm
+category: python-packaging
+replaces:
+  - tool: poetry
+    fit: full
+    note: Uses standard PEP 621 project metadata.

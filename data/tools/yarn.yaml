@@ -1,0 +1,7 @@
+name: Yarn
+repository: https://github.com/yarnpkg/berry
+category: javascript-package-manager
+replaces:
+  - tool: npm
+    fit: full
+    note: "Same package.json, with Plug'n'Play as an option instead of node_modules."
