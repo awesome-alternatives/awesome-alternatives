@@ -74,6 +74,21 @@ the repository can add it, so the mark says the maintainers stand behind the ent
 One slug per line, so a repository that hosts several listed tools can vouch for all of them in the
 same file. Blank lines and `#` comments are ignored.
 
+### The badge
+
+Every listed tool has a badge at `https://awesome-alternatives.com/badge/<slug>.json`, in the
+[shields endpoint format](https://shields.io/badges/endpoint-badge). Put it in the tool's README:
+
+```markdown
+[![awesome-alternatives](https://img.shields.io/endpoint?url=https://awesome-alternatives.com/badge/release-plz.json)](https://awesome-alternatives.com/tools/release-plz/)
+```
+
+It reads "alternative to semantic-release" for a tool that replaces something, and "7 alternatives"
+for a tool that others replace. It is grey while the entry is unverified and turns green once the
+refresh finds the `.awesome-alternatives` file, which is what adding that file buys you. The badge
+is rebuilt every night with the catalog, so it follows the entry without anyone editing a README
+again.
+
 ### Monorepos
 
 Several entries can point at the same repository when each one says where its tool lives with
