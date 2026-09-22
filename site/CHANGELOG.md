@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] - 2026-09-22
+
+### Features
+
+- feat(catalog): add 46 widely used tools across 14 categories (#24)
+
 ## [0.4.0] - 2026-09-22
 
 ### Features
