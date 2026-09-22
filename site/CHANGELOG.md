@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.32.0] - 2026-09-22
+
+### Features
+
+- feat(site): suggest tools from the header search too (#98)
+
 ## [0.31.0] - 2026-09-22
 
 ### Features
