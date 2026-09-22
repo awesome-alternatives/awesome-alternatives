@@ -646,6 +646,48 @@ h1 .mark-archived {
   text-decoration: none;
 }
 
+.history {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.history li {
+  display: grid;
+  grid-template-columns: minmax(110px, 180px) 1fr auto;
+  gap: 8px 24px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.history-tag {
+  display: block;
+  overflow-wrap: anywhere;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.history-date {
+  display: block;
+  margin-top: 2px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+.history-name {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.history-marks {
+  display: flex;
+  gap: 8px;
+}
+
 @media (max-width: 640px) {
   .site-header,
   .site-footer {
@@ -673,7 +715,8 @@ h1 .mark-archived {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .replaces li {
+  .replaces li,
+  .history li {
     grid-template-columns: 1fr;
   }
 

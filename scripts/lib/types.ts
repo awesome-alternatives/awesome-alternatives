@@ -58,6 +58,14 @@ export interface ReleaseFacts {
   signed: boolean;
 }
 
+export interface ReleaseEntry {
+  tag: string;
+  name: string | null;
+  publishedAt: string | null;
+  url: string;
+  prerelease: boolean;
+}
+
 export interface EnrichedTool {
   slug: string;
   name: string;
@@ -67,6 +75,7 @@ export interface EnrichedTool {
   affiliation: string | null;
   repo: RepoFacts;
   release: ReleaseFacts | null;
+  releases: ReleaseEntry[];
   maintainerVerified: boolean;
   flags: string[];
 }

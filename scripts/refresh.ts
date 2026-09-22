@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { loadCatalog } from "./lib/catalog.ts";
+import { fetchReleases } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
@@ -35,6 +36,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     affiliation: tool.affiliation ?? null,
     repo: evidence.repo,
     release: evidence.release,
+    releases: await fetchReleases(gh, evidence.repo.fullName),
     maintainerVerified: evidence.maintainerVerified,
     flags,
   };
