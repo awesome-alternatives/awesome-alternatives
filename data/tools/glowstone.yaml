@@ -1,0 +1,7 @@
+name: Glowstone
+repository: https://github.com/GlowstoneMC/Glowstone
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: Implements the Bukkit API from scratch instead of patching Mojang's server.

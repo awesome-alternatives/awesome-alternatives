@@ -1,0 +1,7 @@
+name: SteelMC
+repository: https://github.com/Steel-Foundation/SteelMC
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: A Rust implementation meant to be used as a library, with its own API rather than Bukkit's.

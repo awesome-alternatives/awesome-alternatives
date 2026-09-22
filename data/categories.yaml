@@ -145,3 +145,6 @@ secrets-manager:
 git-lfs-server:
   name: Git LFS servers
   description: Serve Git LFS objects for repositories hosted anywhere.
+minecraft-server:
+  name: Minecraft servers
+  description: "Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch."

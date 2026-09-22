@@ -1,0 +1,7 @@
+name: Minestom
+repository: https://github.com/Minestom/Minestom
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: A library for building a server, with no vanilla worlds or gameplay unless you write them.

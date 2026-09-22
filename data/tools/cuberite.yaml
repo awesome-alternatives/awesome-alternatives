@@ -1,0 +1,7 @@
+name: Cuberite
+repository: https://github.com/cuberite/cuberite
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: A C++ server with a Lua plugin API rather than Bukkit's.
