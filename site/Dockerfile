@@ -2,6 +2,7 @@ FROM node:24-slim AS build
 RUN corepack enable
 WORKDIR /repo
 COPY generated/catalog.json generated/
+COPY CONTRIBUTING.md ./
 COPY data/categories.yaml data/
 COPY scripts/lib/types.ts scripts/lib/
 COPY site/package.json site/pnpm-lock.yaml site/pnpm-workspace.yaml site/

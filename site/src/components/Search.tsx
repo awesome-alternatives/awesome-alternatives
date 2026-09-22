@@ -126,7 +126,8 @@ function Results({
   if (read.length === 0 && result.count === 0) {
     return (
       <p className="empty">
-        Nothing in that query matched the catalog. Name the tool you want to replace, a language or a licence.
+        Nothing in that query matched the catalog. Name the tool you want to replace, a language or a licence, or{" "}
+        <a href="/contribute/">add the tool</a> you were looking for.
       </p>
     );
   }
