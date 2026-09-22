@@ -11,6 +11,7 @@ use crate::catalog::Tool;
 use crate::filters::Filters;
 use crate::search::Interpreter;
 use crate::state::AppState;
+use crate::tool_details;
 use crate::vocabulary::Vocabulary;
 
 pub const MAX_QUERY_CHARS: usize = 300;
@@ -21,6 +22,8 @@ pub fn router(state: AppState) -> Router {
         .route("/v1/tools", get(tools))
         .route("/v1/vocabulary", get(vocabulary))
         .route("/v1/search", post(search))
+        .route("/v1/tools/{slug}/readme", get(tool_details::readme))
+        .route("/v1/tools/{slug}/security", get(tool_details::security))
         .with_state(state)
 }
 
@@ -32,6 +35,10 @@ pub enum ApiError {
     QueryTooLong,
     #[error("too many searches, try again in a minute")]
     RateLimited,
+    #[error("no tool with this slug")]
+    UnknownTool,
+    #[error("GitHub or OpenSSF did not answer, try again later")]
+    Upstream,
 }
 
 impl IntoResponse for ApiError {
@@ -39,6 +46,8 @@ impl IntoResponse for ApiError {
         let status = match self {
             Self::EmptyQuery | Self::QueryTooLong => StatusCode::BAD_REQUEST,
             Self::RateLimited => StatusCode::TOO_MANY_REQUESTS,
+            Self::UnknownTool => StatusCode::NOT_FOUND,
+            Self::Upstream => StatusCode::BAD_GATEWAY,
         };
         (
             status,
@@ -144,9 +153,11 @@ mod tests {
 
     use super::*;
     use crate::catalog::{Catalog, Fit};
+    use crate::details::Details;
     use crate::fixtures::tool;
     use crate::search::Search;
     use crate::state::Loaded;
+    use crate::upstream::Upstream;
 
     fn app(per_minute: u32) -> Router {
         let catalog = Catalog {
@@ -172,6 +183,12 @@ mod tests {
         let state = AppState::new(
             Loaded::new(catalog, None),
             Search::new(None, None),
+            Details::new(Upstream::new(
+                reqwest::Client::new(),
+                "http://127.0.0.1:9",
+                "http://127.0.0.1:9",
+                None,
+            )),
             limiter,
             false,
         );

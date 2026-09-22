@@ -4,6 +4,7 @@ use std::sync::{Arc, RwLock};
 use governor::DefaultKeyedRateLimiter;
 
 use crate::catalog::Catalog;
+use crate::details::Details;
 use crate::embedding::Embedder;
 use crate::search::Search;
 use crate::semantic::Index;
@@ -43,6 +44,7 @@ impl Loaded {
 pub struct AppState {
     loaded: Arc<RwLock<Arc<Loaded>>>,
     pub search: Arc<Search>,
+    pub details: Arc<Details>,
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub trust_proxy: bool,
 }
@@ -51,12 +53,14 @@ impl AppState {
     pub fn new(
         loaded: Loaded,
         search: Search,
+        details: Details,
         limiter: DefaultKeyedRateLimiter<IpAddr>,
         trust_proxy: bool,
     ) -> Self {
         Self {
             loaded: Arc::new(RwLock::new(Arc::new(loaded))),
             search: Arc::new(search),
+            details: Arc::new(details),
             limiter: Arc::new(limiter),
             trust_proxy,
         }
