@@ -17,7 +17,8 @@ export function renderCatalog(tools: readonly EnrichedTool[], categories: Readon
         .map((r) => `${bySlug.get(r.tool)?.name ?? r.tool} (${r.fit})`)
         .join(", ");
       const latest = t.release ? `[${t.release.tag}](${t.release.url})${t.release.signed ? " signed" : ""}` : "none";
-      const name = `[${t.name}](${t.repository})${t.maintainerVerified ? " verified" : ""}`;
+      const marks = [t.maintainerVerified && "verified", t.repo.archived && "archived"].filter(Boolean).join(" ");
+      const name = `[${t.name}](${t.repository})${marks ? ` ${marks}` : ""}`;
       sections.push(
         `| ${name} | ${t.repo.language ?? "unknown"} | ${t.repo.license ?? "none"} | ${latest} | ${t.repo.stars} | ${replaces || "none"} |`,
       );

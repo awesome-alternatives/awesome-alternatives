@@ -28,7 +28,10 @@ const examples = ["semantic-release, but in Rust", "a drop-in for release-please
         all.map((target) => (
           <li>
             <a href={`/alternatives/${target.slug}/`}>
-              <span class="target-name">{target.name}</span>
+              <span class="target-name">
+                {target.name}
+                {target.listed?.repo.archived && <span class="mark mark-archived">Archived</span>}
+              </span>
               <span class="count">
                 {target.alternatives.length} {target.alternatives.length === 1 ? "alternative" : "alternatives"}
               </span>

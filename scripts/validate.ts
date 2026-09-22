@@ -5,7 +5,7 @@ import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderFindings } from "./lib/report.ts";
-import { judge } from "./lib/rules.ts";
+import { judge, replacedSlugs } from "./lib/rules.ts";
 
 const root = process.cwd();
 const args = process.argv.slice(2);
@@ -14,11 +14,12 @@ const { catalog, findings } = await loadCatalog(root);
 const targets = selectTargets(args, catalog.tools.map((t) => t.slug));
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
+const replaced = replacedSlugs(catalog.tools);
 
 const remote = await mapLimit(
   catalog.tools.filter((t) => targets.includes(t.slug)),
   4,
-  async (tool) => judge(tool, await gather(gh, tool, true), now),
+  async (tool) => judge(tool, await gather(gh, tool, true), now, replaced),
 );
 const all = [...findings, ...remote.flat()];
 

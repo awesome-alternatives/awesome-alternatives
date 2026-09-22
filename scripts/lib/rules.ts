@@ -13,7 +13,11 @@ export interface Evidence {
   recentStars: string[];
 }
 
-export function judge(tool: Tool, evidence: Evidence, now: Date): Finding[] {
+export function replacedSlugs(tools: readonly Tool[]): Set<string> {
+  return new Set(tools.flatMap((t) => (t.replaces ?? []).map((r) => r.tool)));
+}
+
+export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: ReadonlySet<string>): Finding[] {
   const { repo } = evidence;
   const out: Finding[] = [];
   const add = (severity: Finding["severity"], code: string, message: string) =>
@@ -24,7 +28,13 @@ export function judge(tool: Tool, evidence: Evidence, now: Date): Finding[] {
     return out;
   }
   if (repo.private) add("error", "private", "the repository is private");
-  if (repo.archived) add("error", "archived", "the repository is archived");
+  if (repo.archived) {
+    if (replaced.has(tool.slug) && !tool.replaces?.length) {
+      add("warning", "archived", "the repository is archived, listed only as something other entries replace");
+    } else {
+      add("error", "archived", "the repository is archived, it can only be listed as something other entries replace");
+    }
+  }
   if (repo.fork) add("error", "fork", "forks are not listed, point at the upstream repository");
 
   const declared = tool.repository.replace("https://github.com/", "").toLowerCase();
@@ -41,7 +51,7 @@ export function judge(tool: Tool, evidence: Evidence, now: Date): Finding[] {
   if (!evidence.release) add("warning", "no-release", "the repository has no release and no tag");
 
   const idle = daysBetween(repo.pushedAt, now);
-  if (idle > INACTIVE_DAYS) add("warning", "inactive", `no push for ${idle} days`);
+  if (idle > INACTIVE_DAYS && !repo.archived) add("warning", "inactive", `no push for ${idle} days`);
 
   const spike = maxInWindow(evidence.recentStars, SPIKE_WINDOW_MS);
   if (spike >= SPIKE_THRESHOLD) {

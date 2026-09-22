@@ -15,6 +15,8 @@ star count, a licence or a version, so it cannot fake one.
   GitHub verified.
 - **verified** next to a name: the tool's own repository contains an `.awesome-alternatives.yml`
   file naming this entry, so whoever controls the repository vouches for it.
+- **archived** next to a name: the repository is archived and gets no more changes. It is listed
+  only because other entries replace it, never as an alternative.
 - **drop-in**, **full**, **partial**: how much of the original the tool covers. `drop-in` means you
   can swap it in without changing your setup, `full` covers the same job differently, `partial`
   covers part of it.
