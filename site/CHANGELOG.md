@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.19.0] - 2026-09-22
+
+### Features
+
+- feat(site): add security.txt, SECURITY.md and security headers (#45)
+- feat(site): add an about page explaining the marks, fit levels and nightly refresh (#44)
+
 ## [0.18.0] - 2026-09-22
 
 ### Features
