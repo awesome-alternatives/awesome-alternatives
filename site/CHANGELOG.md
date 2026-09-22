@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.24.0] - 2026-09-22
+
+### Features
+
+- feat(site): mark a signed release and a verified repository with an icon (#64)
+
 ## [0.23.0] - 2026-09-22
 
 ### Features
