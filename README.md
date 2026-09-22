@@ -50,6 +50,10 @@ Changelogs built from commits or pull requests, without driving the release itse
 
 Adding a tool is one file and one pull request, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## API
+
+[`api/`](api) serves the same catalog over HTTP, with filters and a natural-language search.
+
 ## Licence
 
-The catalog data under `data/` is dedicated to the public domain under [CC0 1.0](LICENSE-DATA). The scripts are [MIT](LICENSE).
+The catalog data under `data/` is dedicated to the public domain under [CC0 1.0](LICENSE-DATA). The scripts and the API are [MIT](LICENSE).
