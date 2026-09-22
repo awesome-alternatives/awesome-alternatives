@@ -30,7 +30,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-07-27T20:30:22Z",
-        "pushedAt": "2026-09-22T15:03:31Z",
+        "pushedAt": "2026-09-22T16:01:36Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -143,7 +143,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-22T15:40:27Z",
+        "pushedAt": "2026-09-22T16:02:58Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -498,7 +498,7 @@
         "homepage": "https://www.elastic.co/products/elasticsearch",
         "language": "Java",
         "license": "Other",
-        "stars": 77962,
+        "stars": 77963,
         "forks": 26081,
         "archived": false,
         "fork": false,
@@ -860,7 +860,7 @@
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32301,
+        "stars": 32302,
         "forks": 1338,
         "archived": false,
         "fork": false,
@@ -1098,13 +1098,13 @@
         "homepage": "https://kafka.apache.org/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 33782,
+        "stars": 33783,
         "forks": 15527,
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-22T14:33:15Z",
+        "pushedAt": "2026-09-22T15:58:52Z",
         "defaultBranch": "trunk"
       },
       "release": {
@@ -1266,6 +1266,40 @@
       "flags": []
     },
     {
+      "slug": "minio",
+      "name": "MinIO",
+      "repository": "https://github.com/minio/minio",
+      "category": "object-storage",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "minio/minio",
+        "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
+        "homepage": null,
+        "language": "Go",
+        "license": "AGPL-3.0",
+        "stars": 61357,
+        "forks": 7977,
+        "archived": true,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-01-14T19:23:58Z",
+        "pushedAt": "2026-04-24T17:54:39Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "RELEASE.2025-10-15T17-29-55Z",
+        "publishedAt": "2025-10-16T19:33:51Z",
+        "url": "https://github.com/minio/minio/releases/tag/RELEASE.2025-10-15T17-29-55Z",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": [
+        "archived"
+      ]
+    },
+    {
       "slug": "mongodb",
       "name": "MongoDB",
       "repository": "https://github.com/mongodb/mongo",
@@ -1413,12 +1447,12 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 122034,
-        "forks": 37499,
+        "forks": 37501,
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2014-11-26T19:57:11Z",
-        "pushedAt": "2026-09-22T15:24:52Z",
+        "pushedAt": "2026-09-22T15:58:03Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -1488,7 +1522,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-22T15:53:00Z",
+        "pushedAt": "2026-09-22T16:01:12Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -1640,7 +1674,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-22T15:35:07Z",
+        "pushedAt": "2026-09-22T16:04:16Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -1786,7 +1820,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-22T15:52:42Z",
+        "pushedAt": "2026-09-22T16:04:19Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -1952,7 +1986,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-22T15:34:46Z",
+        "pushedAt": "2026-09-22T15:55:25Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -2364,7 +2398,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-22T15:22:51Z",
+        "pushedAt": "2026-09-22T16:02:22Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -2373,6 +2407,82 @@
         "url": "https://github.com/astral-sh/ruff/releases/tag/0.16.8",
         "source": "release",
         "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "rustfs",
+      "name": "RustFS",
+      "repository": "https://github.com/rustfs/rustfs",
+      "category": "object-storage",
+      "replaces": [
+        {
+          "tool": "minio",
+          "fit": "full",
+          "note": "S3-compatible object storage written in Rust, positioned as a MinIO replacement."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "rustfs/rustfs",
+        "description": "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.",
+        "homepage": "https://rustfs.com/download/",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 33646,
+        "forks": 1506,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-11-23T13:45:10Z",
+        "pushedAt": "2026-09-22T15:03:26Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "1.0.0",
+        "publishedAt": "2026-09-16T10:03:34Z",
+        "url": "https://github.com/rustfs/rustfs/releases/tag/1.0.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "seaweedfs",
+      "name": "SeaweedFS",
+      "repository": "https://github.com/seaweedfs/seaweedfs",
+      "category": "object-storage",
+      "replaces": [
+        {
+          "tool": "minio",
+          "fit": "full",
+          "note": "S3 API on top of a distributed file system built for billions of small files."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "seaweedfs/seaweedfs",
+        "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.",
+        "homepage": "https://seaweedfs.com",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 34897,
+        "forks": 3001,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-07-14T16:41:37Z",
+        "pushedAt": "2026-09-22T08:26:39Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "4.47",
+        "publishedAt": "2026-09-14T01:31:59Z",
+        "url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.47",
+        "source": "release",
+        "signed": false
       },
       "maintainerVerified": false,
       "flags": []
@@ -2428,7 +2538,7 @@
         "homepage": "https://starlight.astro.build",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 9281,
+        "stars": 9282,
         "forks": 1041,
         "archived": false,
         "fork": false,
@@ -2602,7 +2712,7 @@
         "homepage": "https://traefik.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 64923,
+        "stars": 64924,
         "forks": 6201,
         "archived": false,
         "fork": false,
@@ -2759,13 +2869,13 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90059,
+        "stars": 90061,
         "forks": 3602,
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-22T15:30:25Z",
+        "pushedAt": "2026-09-22T16:00:14Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -2841,7 +2951,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-22T15:06:31Z",
+        "pushedAt": "2026-09-22T15:55:04Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -2950,7 +3060,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 17143,
-        "forks": 2014,
+        "forks": 2015,
         "archived": false,
         "fork": false,
         "private": false,
