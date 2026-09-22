@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.14.0] - 2026-09-22
+
+### Features
+
+- feat(site): add social preview metadata, favicon.ico, touch icon and web manifest (#35)
+
 ## [0.13.1] - 2026-09-22
 
 ### Bug Fixes
