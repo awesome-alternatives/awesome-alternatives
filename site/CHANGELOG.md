@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.15.1] - 2026-09-22
+
+### Bug Fixes
+
+- fix(site): add a skip link, focus styles and 3:1 control borders (#41)
+
 ## [0.15.0] - 2026-09-22
 
 ### Features
