@@ -8,7 +8,7 @@ COPY site/package.json site/pnpm-lock.yaml site/pnpm-workspace.yaml site/
 WORKDIR /repo/site
 RUN pnpm install --frozen-lockfile
 COPY site/ ./
-ARG PUBLIC_API_URL=https://api.awesome-alternatives.com
+ARG PUBLIC_API_URL=/api
 RUN pnpm build
 
 FROM nginxinc/nginx-unprivileged:1-alpine

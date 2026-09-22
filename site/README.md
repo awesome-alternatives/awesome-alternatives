@@ -8,8 +8,11 @@ pnpm install
 pnpm dev
 ```
 
-`PUBLIC_API_URL` sets the API the search calls, `https://api.awesome-alternatives.com` by default.
-It is read at build time.
+`PUBLIC_API_URL` sets the API the search calls, `/api` by default: the search calls the API on
+the site's own origin, where the reverse proxy strips the prefix. It is read at build time.
+
+`pnpm dev` proxies `/api` to the live site. Point `API_PROXY_TARGET` at another origin to use a
+different instance, for example one that serves the API under `/api` locally.
 
 The image is built from the repository root, because the build reads the catalog:
 

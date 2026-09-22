@@ -1,7 +1,7 @@
 import { toQuery } from "./query.ts";
 import type { Filters, SearchResult, ToolList } from "./types.ts";
 
-const API_URL = (import.meta.env.PUBLIC_API_URL ?? "https://api.awesome-alternatives.com").replace(/\/+$/, "");
+const API_URL = (import.meta.env.PUBLIC_API_URL ?? "/api").replace(/\/+$/, "");
 
 export class ApiError extends Error {
   status: number;
