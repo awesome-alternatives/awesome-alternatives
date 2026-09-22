@@ -1,6 +1,93 @@
 {
   "tools": [
     {
+      "slug": "alacritty",
+      "name": "Alacritty",
+      "repository": "https://github.com/alacritty/alacritty",
+      "category": "terminal-emulator",
+      "replaces": [
+        {
+          "tool": "iterm2",
+          "fit": "partial",
+          "note": "GPU-rendered and cross-platform, with no tabs or splits of its own."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "alacritty/alacritty",
+        "description": "A cross-platform, OpenGL terminal emulator.",
+        "homepage": "https://alacritty.org",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 65787,
+        "forks": 3619,
+        "topics": [
+          "bsd",
+          "gpu",
+          "linux",
+          "macos",
+          "opengl",
+          "rust",
+          "terminal",
+          "terminal-emulators",
+          "vte",
+          "windows"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-02-18T05:02:30Z",
+        "pushedAt": "2026-08-31T21:11:12Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.17.0",
+        "publishedAt": "2026-04-06T19:24:18Z",
+        "url": "https://github.com/alacritty/alacritty/releases/tag/v0.17.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.17.0",
+          "name": "Alacritty Version 0.17.0",
+          "publishedAt": "2026-04-06T19:24:18Z",
+          "url": "https://github.com/alacritty/alacritty/releases/tag/v0.17.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.17.0-rc2",
+          "name": "Alacritty Version 0.17.0 Release Candidate 2",
+          "publishedAt": "2026-04-02T23:23:17Z",
+          "url": "https://github.com/alacritty/alacritty/releases/tag/v0.17.0-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.17.0-rc1",
+          "name": "Alacritty Version 0.17.0 Release Candidate 1",
+          "publishedAt": "2026-03-21T01:58:28Z",
+          "url": "https://github.com/alacritty/alacritty/releases/tag/v0.17.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.16.1",
+          "name": "Alacritty Version 0.16.1",
+          "publishedAt": "2025-10-20T05:30:28Z",
+          "url": "https://github.com/alacritty/alacritty/releases/tag/v0.16.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.16.0",
+          "name": "Alacritty Version 0.16.0",
+          "publishedAt": "2025-10-18T02:38:37Z",
+          "url": "https://github.com/alacritty/alacritty/releases/tag/v0.16.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "biome",
       "name": "Biome",
       "repository": "https://github.com/biomejs/biome",
@@ -85,6 +172,88 @@
           "name": "Biome CLI v2.5.10",
           "publishedAt": "2026-08-21T17:40:37Z",
           "url": "https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.10",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "bitwarden",
+      "name": "Bitwarden server",
+      "repository": "https://github.com/bitwarden/server",
+      "category": "password-manager-server",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "bitwarden/server",
+        "description": "Bitwarden infrastructure/backend (API, database, Docker, etc).",
+        "homepage": "https://bitwarden.com",
+        "language": "C#",
+        "license": "Other",
+        "stars": 20180,
+        "forks": 1772,
+        "topics": [
+          "api",
+          "aspnet",
+          "aspnetcore",
+          "bitwarden",
+          "csharp",
+          "docker",
+          "dotnet",
+          "dotnet-core",
+          "signalr",
+          "sql",
+          "sql-server"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-11-23T23:45:33Z",
+        "pushedAt": "2026-09-22T16:39:01Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2026.9.1",
+        "publishedAt": "2026-09-22T10:37:00Z",
+        "url": "https://github.com/bitwarden/server/releases/tag/v2026.9.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2026.9.1",
+          "name": "Version 2026.9.1",
+          "publishedAt": "2026-09-22T10:37:00Z",
+          "url": "https://github.com/bitwarden/server/releases/tag/v2026.9.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2026.9.0",
+          "name": "Version 2026.9.0",
+          "publishedAt": "2026-09-16T00:40:58Z",
+          "url": "https://github.com/bitwarden/server/releases/tag/v2026.9.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2026.8.2",
+          "name": "Version 2026.8.2",
+          "publishedAt": "2026-09-08T18:36:23Z",
+          "url": "https://github.com/bitwarden/server/releases/tag/v2026.8.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2026.8.1",
+          "name": "Version 2026.8.1",
+          "publishedAt": "2026-09-02T00:32:18Z",
+          "url": "https://github.com/bitwarden/server/releases/tag/v2026.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2026.8.0",
+          "name": "Version 2026.8.0",
+          "publishedAt": "2026-08-19T00:39:59Z",
+          "url": "https://github.com/bitwarden/server/releases/tag/v2026.8.0",
           "prerelease": false
         }
       ],
@@ -287,7 +456,7 @@
         "language": "Rust",
         "license": "Other",
         "stars": 96005,
-        "forks": 5051,
+        "forks": 5052,
         "topics": [
           "bun",
           "bundler",
@@ -306,7 +475,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-22T16:13:26Z",
+        "pushedAt": "2026-09-22T16:46:03Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -376,7 +545,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 75985,
-        "forks": 4991,
+        "forks": 4990,
         "topics": [
           "acme",
           "automatic-https",
@@ -613,6 +782,439 @@
       "flags": []
     },
     {
+      "slug": "concourse",
+      "name": "Concourse",
+      "repository": "https://github.com/concourse/concourse",
+      "category": "ci-server",
+      "replaces": [
+        {
+          "tool": "jenkins",
+          "fit": "full",
+          "note": "Pipelines declared as resources and jobs, every step in a container."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "concourse/concourse",
+        "description": "Concourse is a container-based automation system written in Go. It's mostly used for CI/CD.",
+        "homepage": "https://concourse-ci.org",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 7905,
+        "forks": 903,
+        "topics": [
+          "ci",
+          "ci-cd",
+          "concourse",
+          "containerd",
+          "containers",
+          "continuous-delivery",
+          "continuous-integration",
+          "elm",
+          "go",
+          "pipelines",
+          "runc"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-04-19T20:45:45Z",
+        "pushedAt": "2026-09-22T04:11:10Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v8.3.0",
+        "publishedAt": "2026-08-13T02:49:30Z",
+        "url": "https://github.com/concourse/concourse/releases/tag/v8.3.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v8.3.0",
+          "name": "Chown bind-mount volumes when running as non-root user",
+          "publishedAt": "2026-08-13T02:49:30Z",
+          "url": "https://github.com/concourse/concourse/releases/tag/v8.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.2.5",
+          "name": "[Security] Fix path traversal bug during secrets lookup. Resolves GHSA",
+          "publishedAt": "2026-08-03T16:39:02Z",
+          "url": "https://github.com/concourse/concourse/releases/tag/v8.2.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.2.4",
+          "name": "fix how resources with check_every: never are handled when scheduling builds",
+          "publishedAt": "2026-06-16T15:21:23Z",
+          "url": "https://github.com/concourse/concourse/releases/tag/v8.2.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.2.3",
+          "name": "unescape the redirect uri before further parsing it",
+          "publishedAt": "2026-05-27T14:45:37Z",
+          "url": "https://github.com/concourse/concourse/releases/tag/v8.2.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.2.2",
+          "name": "Fix CF connector",
+          "publishedAt": "2026-05-24T15:33:26Z",
+          "url": "https://github.com/concourse/concourse/releases/tag/v8.2.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "cypress",
+      "name": "Cypress",
+      "repository": "https://github.com/cypress-io/cypress",
+      "category": "browser-testing",
+      "replaces": [
+        {
+          "tool": "selenium",
+          "fit": "partial",
+          "note": "Runs inside the browser, tests in JavaScript only."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "cypress-io/cypress",
+        "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+        "homepage": "https://cypress.io",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 51021,
+        "forks": 3642,
+        "topics": [
+          "angular-testing-library",
+          "component-testing",
+          "cypress",
+          "cypress-cloud",
+          "cypress-schematic",
+          "end-to-end-testing",
+          "react-testing-library",
+          "svelte-testing-library",
+          "test-replay",
+          "testing-framework",
+          "testing-library",
+          "testing-tool",
+          "vue-testing-library"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-03-04T00:46:28Z",
+        "pushedAt": "2026-09-22T15:18:41Z",
+        "defaultBranch": "develop"
+      },
+      "release": {
+        "tag": "v16.1.0",
+        "publishedAt": "2026-09-15T21:37:56Z",
+        "url": "https://github.com/cypress-io/cypress/releases/tag/v16.1.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v16.1.0",
+          "name": null,
+          "publishedAt": "2026-09-15T21:37:56Z",
+          "url": "https://github.com/cypress-io/cypress/releases/tag/v16.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v16.0.0",
+          "name": null,
+          "publishedAt": "2026-09-01T17:27:02Z",
+          "url": "https://github.com/cypress-io/cypress/releases/tag/v16.0.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v15.21.1",
+          "name": null,
+          "publishedAt": "2026-08-25T16:56:17Z",
+          "url": "https://github.com/cypress-io/cypress/releases/tag/v15.21.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v15.21.0",
+          "name": null,
+          "publishedAt": "2026-08-18T19:47:37Z",
+          "url": "https://github.com/cypress-io/cypress/releases/tag/v15.21.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v15.20.1",
+          "name": null,
+          "publishedAt": "2026-08-10T17:56:37Z",
+          "url": "https://github.com/cypress-io/cypress/releases/tag/v15.20.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "date-fns",
+      "name": "date-fns",
+      "repository": "https://github.com/date-fns/date-fns",
+      "category": "javascript-date-library",
+      "replaces": [
+        {
+          "tool": "moment",
+          "fit": "full",
+          "note": "Plain functions over native Date, tree-shakable."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "date-fns/date-fns",
+        "description": "⏳ Modern JavaScript date utility library ⌛️",
+        "homepage": "https://date-fns.org",
+        "language": "TypeScript",
+        "license": null,
+        "stars": 36646,
+        "forks": 2014,
+        "topics": [
+          "date",
+          "date-fns",
+          "hacktoberfest",
+          "javascript",
+          "modules",
+          "nodejs",
+          "time",
+          "utilities"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-10-06T10:24:22Z",
+        "pushedAt": "2026-09-22T06:59:17Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v4.4.0",
+        "publishedAt": "2026-05-29T23:33:36Z",
+        "url": "https://github.com/date-fns/date-fns/releases/tag/v4.4.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v5.0.0-alpha.0",
+          "name": "v5 focuses on reducing the date-fns package size. Compared to v4.3.0, this version reduces the zipped package size from…",
+          "publishedAt": "2026-05-29T23:45:10Z",
+          "url": "https://github.com/date-fns/date-fns/releases/tag/v5.0.0-alpha.0",
+          "prerelease": true
+        },
+        {
+          "tag": "v4.4.0",
+          "name": "This release revisits the approach to CDN usage and introduces a new package, @date-fns/cdn and deprecates the date-fns…",
+          "publishedAt": "2026-05-29T23:33:36Z",
+          "url": "https://github.com/date-fns/date-fns/releases/tag/v4.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.3.0",
+          "name": "Kudos to @ImRodry and @puneetdixit200 for their contributions.",
+          "publishedAt": "2026-05-22T22:45:24Z",
+          "url": "https://github.com/date-fns/date-fns/releases/tag/v4.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.2.1",
+          "name": "Fixed type definitions missing in v4.2.0 due to TypeScript misconfiguration.",
+          "publishedAt": "2026-05-18T12:25:53Z",
+          "url": "https://github.com/date-fns/date-fns/releases/tag/v4.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.2.0",
+          "name": "This is a minor release in all senses, it only includes documentation updates (first of many) that points to the new Yo…",
+          "publishedAt": "2026-05-18T09:18:22Z",
+          "url": "https://github.com/date-fns/date-fns/releases/tag/v4.2.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [
+        "no-license"
+      ]
+    },
+    {
+      "slug": "dayjs",
+      "name": "Day.js",
+      "repository": "https://github.com/iamkun/dayjs",
+      "category": "javascript-date-library",
+      "replaces": [
+        {
+          "tool": "moment",
+          "fit": "drop-in",
+          "note": "Moment-compatible API in about 2 kB."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "iamkun/dayjs",
+        "description": "⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API",
+        "homepage": "https://day.js.org",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 48667,
+        "forks": 2949,
+        "topics": [
+          "date",
+          "date-formatting",
+          "datetime",
+          "dayjs",
+          "moment",
+          "time"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-04-10T09:26:44Z",
+        "pushedAt": "2026-09-15T11:35:36Z",
+        "defaultBranch": "dev"
+      },
+      "release": {
+        "tag": "v1.11.23",
+        "publishedAt": "2026-08-17T11:50:26Z",
+        "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.23",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.11.23",
+          "name": "plugin: timezone plugin prevent RangeError for invalid Day.js values (#3180) (dad46e6)",
+          "publishedAt": "2026-08-17T11:50:26Z",
+          "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.23",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.22",
+          "name": "plugin: timezone compute instance .tz() offset without host DST (#3174) (e27ee80), closes #3169",
+          "publishedAt": "2026-08-16T08:46:44Z",
+          "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.22",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.21",
+          "name": "preserve unsupported year tokens in format (#3015) (#3016) (8fda602)",
+          "publishedAt": "2026-05-26T05:46:13Z",
+          "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.21",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.20",
+          "name": "Update locale km.js to support meridiem (#3017) (9d2b6a1)",
+          "publishedAt": "2026-03-12T11:30:40Z",
+          "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.20",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.19",
+          "name": "added usage warnings for diff + updated unit tests (#2948) (269a7a9)",
+          "publishedAt": "2025-10-31T05:07:51Z",
+          "url": "https://github.com/iamkun/dayjs/releases/tag/v1.11.19",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "delta",
+      "name": "delta",
+      "repository": "https://github.com/dandavison/delta",
+      "category": "git-diff-pager",
+      "replaces": [
+        {
+          "tool": "diff-so-fancy",
+          "fit": "full",
+          "note": "Syntax highlighting, side-by-side view and line numbers."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "dandavison/delta",
+        "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output",
+        "homepage": "https://dandavison.github.io/delta/",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 32303,
+        "forks": 579,
+        "topics": [
+          "color-themes",
+          "delta",
+          "diff",
+          "git",
+          "git-delta",
+          "pager",
+          "rust",
+          "syntax-highlighter"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-06-24T15:00:13Z",
+        "pushedAt": "2026-09-19T22:05:38Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "0.19.2",
+        "publishedAt": "2026-03-28T19:50:29Z",
+        "url": "https://github.com/dandavison/delta/releases/tag/0.19.2",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "0.19.2",
+          "name": "This is a patch release providing rebuilt binaries compatible with Debian 12 (the 0.19.0 and 0.19.1 .deb packages requi…",
+          "publishedAt": "2026-03-28T19:50:29Z",
+          "url": "https://github.com/dandavison/delta/releases/tag/0.19.2",
+          "prerelease": false
+        },
+        {
+          "tag": "0.19.1",
+          "name": "This patch release fixes a release automation bug: release 0.19.0 did not include all release binaries.",
+          "publishedAt": "2026-03-22T15:20:41Z",
+          "url": "https://github.com/dandavison/delta/releases/tag/0.19.1",
+          "prerelease": false
+        },
+        {
+          "tag": "0.19.0",
+          "name": "Tons of improvements; thanks very much to all delta contributors.",
+          "publishedAt": "2026-03-20T01:25:13Z",
+          "url": "https://github.com/dandavison/delta/releases/tag/0.19.0",
+          "prerelease": false
+        },
+        {
+          "tag": "0.18.2",
+          "name": "This patch release fixes various panics reported by users that were due to v0.1.13 of the unicode-width crate. See and",
+          "publishedAt": "2024-09-11T12:37:21Z",
+          "url": "https://github.com/dandavison/delta/releases/tag/0.18.2",
+          "prerelease": false
+        },
+        {
+          "tag": "0.18.1",
+          "name": "This patch release fixes an issue with delta --version that was causing problems downstream",
+          "publishedAt": "2024-08-24T12:40:59Z",
+          "url": "https://github.com/dandavison/delta/releases/tag/0.18.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "deno",
       "name": "Deno",
       "repository": "https://github.com/denoland/deno",
@@ -631,7 +1233,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108476,
+        "stars": 108475,
         "forks": 6376,
         "topics": [
           "deno",
@@ -687,6 +1289,83 @@
           "name": "feat(cli): deno add --no-save and --save-optional (#36039)",
           "publishedAt": "2026-07-15T15:35:06Z",
           "url": "https://github.com/denoland/deno/releases/tag/v2.9.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "diff-so-fancy",
+      "name": "diff-so-fancy",
+      "repository": "https://github.com/so-fancy/diff-so-fancy",
+      "category": "git-diff-pager",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "so-fancy/diff-so-fancy",
+        "description": "Make your diffs human readable for improved code quality and faster defect detection. :tada:",
+        "homepage": null,
+        "language": "Perl",
+        "license": "MIT",
+        "stars": 18092,
+        "forks": 348,
+        "topics": [
+          "diff",
+          "diff-highlight",
+          "diffs",
+          "fancy",
+          "git",
+          "hacktoberfest"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-02-04T11:32:08Z",
+        "pushedAt": "2026-09-19T20:49:24Z",
+        "defaultBranch": "next"
+      },
+      "release": {
+        "tag": "v1.4.12",
+        "publishedAt": "2026-08-16T17:07:43Z",
+        "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.12",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.4.12",
+          "name": "Suppress Perl warning for 'use_color' variable in Dump::Krumo",
+          "publishedAt": "2026-08-16T17:07:43Z",
+          "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.12",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.4.10",
+          "name": "This is a bugfix release to address #521",
+          "publishedAt": "2026-04-09T18:06:31Z",
+          "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.4.8",
+          "name": "add proper guide for publishing to npm",
+          "publishedAt": "2026-03-27T22:30:24Z",
+          "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.4.6",
+          "name": "d-s-f is much smarter and --patch mode should work in more (all?) scenarios",
+          "publishedAt": "2026-03-16T18:03:38Z",
+          "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.4.4",
+          "name": "General maintenance release with bug fixes for modern versions of git",
+          "publishedAt": "2023-06-09T20:05:13Z",
+          "url": "https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.4",
           "prerelease": false
         }
       ],
@@ -781,7 +1460,7 @@
         "homepage": "https://docusaurus.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 66316,
+        "stars": 66318,
         "forks": 10040,
         "topics": [
           "documentation",
@@ -1126,7 +1805,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-22T15:48:04Z",
+        "pushedAt": "2026-09-22T16:42:01Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -1424,6 +2103,83 @@
       "flags": []
     },
     {
+      "slug": "exa",
+      "name": "exa",
+      "repository": "https://github.com/ogham/exa",
+      "category": "file-listing",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "ogham/exa",
+        "description": "A modern replacement for ‘ls’.",
+        "homepage": "https://the.exa.website/",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 24444,
+        "forks": 652,
+        "topics": [
+          "command-line",
+          "files",
+          "ls",
+          "rust"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-05-22T12:45:16Z",
+        "pushedAt": "2024-09-24T15:18:09Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.10.1",
+        "publishedAt": "2021-04-12T21:42:01Z",
+        "url": "https://github.com/ogham/exa/releases/tag/v0.10.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.10.1",
+          "name": "exa v0.10.1",
+          "publishedAt": "2021-04-12T21:42:01Z",
+          "url": "https://github.com/ogham/exa/releases/tag/v0.10.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.10.0",
+          "name": "exa v0.10.0",
+          "publishedAt": "2021-04-04T19:55:38Z",
+          "url": "https://github.com/ogham/exa/releases/tag/v0.10.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.9.0",
+          "name": "exa v0.9.0",
+          "publishedAt": "2019-07-15T03:25:54Z",
+          "url": "https://github.com/ogham/exa/releases/tag/v0.9.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.0",
+          "name": "exa v0.8.0",
+          "publishedAt": "2017-09-30T11:59:34Z",
+          "url": "https://github.com/ogham/exa/releases/tag/v0.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.0",
+          "name": "exa v0.7.0",
+          "publishedAt": "2017-07-07T17:40:36Z",
+          "url": "https://github.com/ogham/exa/releases/tag/v0.7.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [
+        "inactive"
+      ]
+    },
+    {
       "slug": "express",
       "name": "Express",
       "repository": "https://github.com/expressjs/express",
@@ -1437,7 +2193,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 69456,
-        "forks": 25039,
+        "forks": 25038,
         "topics": [
           "express",
           "javascript",
@@ -1492,6 +2248,190 @@
           "name": "Security fix for CVE-2024-51999 (GHSA-pj86-cfqh-vqx6)",
           "publishedAt": "2025-12-01T16:19:48Z",
           "url": "https://github.com/expressjs/express/releases/tag/4.22.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "eza",
+      "name": "eza",
+      "repository": "https://github.com/eza-community/eza",
+      "category": "file-listing",
+      "replaces": [
+        {
+          "tool": "exa",
+          "fit": "drop-in",
+          "note": "The maintained fork of exa, same flags."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "eza-community/eza",
+        "description": "A modern alternative to ls",
+        "homepage": "https://eza.rocks",
+        "language": "Rust",
+        "license": "EUPL-1.2",
+        "stars": 23338,
+        "forks": 524,
+        "topics": [
+          "color",
+          "command-line",
+          "files",
+          "hacktoberfest",
+          "icons",
+          "ls",
+          "nerd-fonts",
+          "rust",
+          "terminal",
+          "tools"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-07-28T08:35:55Z",
+        "pushedAt": "2026-08-06T19:53:22Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.23.5",
+        "publishedAt": "2026-07-09T10:21:04Z",
+        "url": "https://github.com/eza-community/eza/releases/tag/v0.23.5",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.23.5",
+          "name": "eza v0.23.5 (goodbye horses)",
+          "publishedAt": "2026-07-09T10:21:04Z",
+          "url": "https://github.com/eza-community/eza/releases/tag/v0.23.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.4",
+          "name": "eza v0.23.4",
+          "publishedAt": "2025-10-03T20:44:49Z",
+          "url": "https://github.com/eza-community/eza/releases/tag/v0.23.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.3",
+          "name": "eza v0.23.3",
+          "publishedAt": "2025-09-14T13:22:19Z",
+          "url": "https://github.com/eza-community/eza/releases/tag/v0.23.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.2",
+          "name": "eza v0.23.2",
+          "publishedAt": "2025-09-06T12:30:09Z",
+          "url": "https://github.com/eza-community/eza/releases/tag/v0.23.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.1",
+          "name": "eza v0.23.1",
+          "publishedAt": "2025-08-31T14:59:15Z",
+          "url": "https://github.com/eza-community/eza/releases/tag/v0.23.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "fastapi",
+      "name": "FastAPI",
+      "repository": "https://github.com/fastapi/fastapi",
+      "category": "python-web-framework",
+      "replaces": [
+        {
+          "tool": "flask",
+          "fit": "full",
+          "note": "Async, with type hints driving validation and OpenAPI docs."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "fastapi/fastapi",
+        "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+        "homepage": "https://fastapi.tiangolo.com/",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 102532,
+        "forks": 9933,
+        "topics": [
+          "api",
+          "async",
+          "asyncio",
+          "fastapi",
+          "framework",
+          "json",
+          "json-schema",
+          "openapi",
+          "openapi3",
+          "pydantic",
+          "python",
+          "python-types",
+          "python3",
+          "redoc",
+          "rest",
+          "starlette",
+          "swagger",
+          "swagger-ui",
+          "uvicorn",
+          "web"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-12-08T08:21:47Z",
+        "pushedAt": "2026-09-18T21:24:37Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "0.141.1",
+        "publishedAt": "2026-07-29T17:17:26Z",
+        "url": "https://github.com/fastapi/fastapi/releases/tag/0.141.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "0.141.1",
+          "name": "🐛 Fix support for background tasks and headers from dependencies in app.frontend(). PR #16105 by @tiangolo.",
+          "publishedAt": "2026-07-29T17:17:26Z",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.141.1",
+          "prerelease": false
+        },
+        {
+          "tag": "0.141.0",
+          "name": "✨ Add app.frontend(check_dir=\"auto\"), to make local development more convenient with fastapi dev. PR #16102 by @tiangol…",
+          "publishedAt": "2026-07-29T14:47:36Z",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.141.0",
+          "prerelease": false
+        },
+        {
+          "tag": "0.140.13",
+          "name": "🐛 Fix status_code being ignored for SSE and JSONL streaming endpoints. PR #15937 by @SAURABHSALVE.",
+          "publishedAt": "2026-07-28T15:36:47Z",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.13",
+          "prerelease": false
+        },
+        {
+          "tag": "0.140.12",
+          "name": "🐛 Fix line splitting in format_sse_event to comply with SSE spec. PR #15515 by @Zawwarsami16.",
+          "publishedAt": "2026-07-28T15:04:48Z",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.12",
+          "prerelease": false
+        },
+        {
+          "tag": "0.140.11",
+          "name": "🐛 Fix response_model_* params ignored for non-generator endpoints with Iterable[..] return type. PR #15093 by @YuriiMo…",
+          "publishedAt": "2026-07-28T14:33:49Z",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.11",
           "prerelease": false
         }
       ],
@@ -1806,6 +2746,320 @@
       "flags": []
     },
     {
+      "slug": "flask",
+      "name": "Flask",
+      "repository": "https://github.com/pallets/flask",
+      "category": "python-web-framework",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pallets/flask",
+        "description": "The Python micro framework for building web applications.",
+        "homepage": "https://flask.palletsprojects.com",
+        "language": "Python",
+        "license": "BSD-3-Clause",
+        "stars": 74766,
+        "forks": 16998,
+        "topics": [
+          "flask",
+          "jinja",
+          "pallets",
+          "python",
+          "web-framework",
+          "werkzeug",
+          "wsgi"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2010-04-06T11:11:59Z",
+        "pushedAt": "2026-09-08T16:40:53Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "3.1.3",
+        "publishedAt": "2026-02-19T05:01:30Z",
+        "url": "https://github.com/pallets/flask/releases/tag/3.1.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "3.1.3",
+          "name": "This is the Flask 3.1.3 security fix release, which fixes a security issue but does not otherwise change behavior and s…",
+          "publishedAt": "2026-02-19T05:01:30Z",
+          "url": "https://github.com/pallets/flask/releases/tag/3.1.3",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.2",
+          "name": "This is the Flask 3.1.2 fix release, which fixes bugs but does not otherwise change behavior and should not result in b…",
+          "publishedAt": "2025-08-19T21:03:31Z",
+          "url": "https://github.com/pallets/flask/releases/tag/3.1.2",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.1",
+          "name": "This is the Flask 3.1.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in b…",
+          "publishedAt": "2025-05-13T15:01:32Z",
+          "url": "https://github.com/pallets/flask/releases/tag/3.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.0",
+          "name": "This is the Flask 3.1.0 feature release. A feature release may include new features, remove previously deprecated code,…",
+          "publishedAt": "2024-11-13T18:29:05Z",
+          "url": "https://github.com/pallets/flask/releases/tag/3.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "3.0.3",
+          "name": "This is a fix release for the 3.0.x feature branch.",
+          "publishedAt": "2024-04-07T19:27:16Z",
+          "url": "https://github.com/pallets/flask/releases/tag/3.0.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "fluent-bit",
+      "name": "Fluent Bit",
+      "repository": "https://github.com/fluent/fluent-bit",
+      "category": "log-pipeline",
+      "replaces": [
+        {
+          "tool": "logstash",
+          "fit": "full",
+          "note": "Lightweight agent in C, built for nodes and edge devices."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "fluent/fluent-bit",
+        "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows",
+        "homepage": "https://fluentbit.io",
+        "language": "C",
+        "license": "Apache-2.0",
+        "stars": 8115,
+        "forks": 1996,
+        "topics": [
+          "c",
+          "cloudnative",
+          "data-collector",
+          "fluent-bit",
+          "fluentd",
+          "forwarder",
+          "logging",
+          "logs",
+          "metrics",
+          "opentelemetry",
+          "prometheus",
+          "sql-queries",
+          "stream-processing",
+          "traces"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-01-27T20:41:52Z",
+        "pushedAt": "2026-09-21T19:13:54Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v5.1.2",
+        "publishedAt": "2026-09-05T03:54:50Z",
+        "url": "https://github.com/fluent/fluent-bit/releases/tag/v5.1.2",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v5.1.2",
+          "name": "Fluent Bit 5.1.2",
+          "publishedAt": "2026-09-05T03:54:50Z",
+          "url": "https://github.com/fluent/fluent-bit/releases/tag/v5.1.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.0.10",
+          "name": "Fluent Bit 5.0.10",
+          "publishedAt": "2026-09-04T03:46:41Z",
+          "url": "https://github.com/fluent/fluent-bit/releases/tag/v5.0.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.1.1",
+          "name": "Fluent Bit 5.1.1",
+          "publishedAt": "2026-08-16T04:40:56Z",
+          "url": "https://github.com/fluent/fluent-bit/releases/tag/v5.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.1.0",
+          "name": "Fluent Bit 5.1.0",
+          "publishedAt": "2026-08-06T02:29:07Z",
+          "url": "https://github.com/fluent/fluent-bit/releases/tag/v5.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.2.8",
+          "name": "Fluent Bit 4.2.8",
+          "publishedAt": "2026-08-04T05:56:56Z",
+          "url": "https://github.com/fluent/fluent-bit/releases/tag/v4.2.8",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "gatus",
+      "name": "Gatus",
+      "repository": "https://github.com/TwiN/gatus",
+      "category": "uptime-monitoring",
+      "replaces": [
+        {
+          "tool": "uptime-kuma",
+          "fit": "full",
+          "note": "Checks declared in YAML, with alerting and a status page."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "TwiN/gatus",
+        "description": "Automated developer-oriented status page with alerting and incident support",
+        "homepage": "https://gatus.io",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 12132,
+        "forks": 833,
+        "topics": [
+          "alerting",
+          "container",
+          "dashboard",
+          "devops",
+          "docker",
+          "go",
+          "golang",
+          "health",
+          "monitor",
+          "monitoring",
+          "monitoring-tool",
+          "notifications",
+          "self-hosted",
+          "selfhosted",
+          "slack",
+          "status",
+          "status-page",
+          "statuspage",
+          "uptime",
+          "uptime-monitoring"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-09-04T02:35:40Z",
+        "pushedAt": "2026-09-22T01:08:52Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v5.36.0",
+        "publishedAt": "2026-05-19T23:53:05Z",
+        "url": "https://github.com/TwiN/gatus/releases/tag/v5.36.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v5.36.0",
+          "name": "perf: Add PostgreSQL indexes for ~15x performance improvement",
+          "publishedAt": "2026-05-19T23:53:05Z",
+          "url": "https://github.com/TwiN/gatus/releases/tag/v5.36.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.35.0",
+          "name": "feat(conditions,ui): Add endpoints[].ui.resolve-successful-conditions",
+          "publishedAt": "2026-02-20T20:58:03Z",
+          "url": "https://github.com/TwiN/gatus/releases/tag/v5.35.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.34.0",
+          "name": "Hello users of Gatus.",
+          "publishedAt": "2026-01-03T03:12:12Z",
+          "url": "https://github.com/TwiN/gatus/releases/tag/v5.34.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.33.1",
+          "name": "fix(ui): Do not store config locally on load",
+          "publishedAt": "2025-12-11T01:59:13Z",
+          "url": "https://github.com/TwiN/gatus/releases/tag/v5.33.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.33.0",
+          "name": "feat(client): Add ssh private-key support",
+          "publishedAt": "2025-11-21T22:54:49Z",
+          "url": "https://github.com/TwiN/gatus/releases/tag/v5.33.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "ghostty",
+      "name": "Ghostty",
+      "repository": "https://github.com/ghostty-org/ghostty",
+      "category": "terminal-emulator",
+      "replaces": [
+        {
+          "tool": "iterm2",
+          "fit": "full",
+          "note": "GPU-rendered with a native UI on macOS and Linux."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "ghostty-org/ghostty",
+        "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+        "homepage": "https://ghostty.org",
+        "language": "Zig",
+        "license": "MIT",
+        "stars": 61428,
+        "forks": 3489,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-03-29T17:38:26Z",
+        "pushedAt": "2026-09-22T16:01:13Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.3.1",
+        "publishedAt": null,
+        "url": "https://github.com/ghostty-org/ghostty/releases/tag/v1.3.1",
+        "source": "tag",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "tip",
+          "name": "Ghostty Tip (\"Nightly\")",
+          "publishedAt": "2022-11-17T19:22:01Z",
+          "url": "https://github.com/ghostty-org/ghostty/releases/tag/tip",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "git-cliff",
       "name": "git-cliff",
       "repository": "https://github.com/orhun/git-cliff",
@@ -1896,6 +3150,304 @@
       "flags": []
     },
     {
+      "slug": "gitea",
+      "name": "Gitea",
+      "repository": "https://github.com/go-gitea/gitea",
+      "category": "git-forge",
+      "replaces": [
+        {
+          "tool": "gitlab",
+          "fit": "full",
+          "note": "Lightweight single binary, with Actions compatible with GitHub Actions."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "go-gitea/gitea",
+        "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
+        "homepage": "https://gitea.com",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 58112,
+        "forks": 7163,
+        "topics": [
+          "bitbucket",
+          "cicd",
+          "devops",
+          "docker-registry-v2",
+          "git",
+          "git-gui",
+          "git-lfs",
+          "git-server",
+          "gitea",
+          "github",
+          "github-actions",
+          "gitlab",
+          "go",
+          "golang",
+          "hacktoberfest",
+          "maven-server",
+          "npm-registry",
+          "self-hosted",
+          "typescript",
+          "vue"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-11-01T02:13:26Z",
+        "pushedAt": "2026-09-22T15:55:03Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.27.3",
+        "publishedAt": "2026-08-29T17:42:17Z",
+        "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.27.3",
+          "name": "SECURITY",
+          "publishedAt": "2026-08-29T17:42:17Z",
+          "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.27.2",
+          "name": "SECURITY",
+          "publishedAt": "2026-08-13T19:26:43Z",
+          "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.27.1",
+          "name": "SECURITY",
+          "publishedAt": "2026-07-27T20:20:33Z",
+          "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.27.0",
+          "name": "BREAKING",
+          "publishedAt": "2026-07-13T17:07:36Z",
+          "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.27.0-rc0",
+          "name": "BREAKING",
+          "publishedAt": "2026-06-30T00:29:23Z",
+          "url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.0-rc0",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "repository": "https://github.com/gitlabhq/gitlabhq",
+      "category": "git-forge",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "gitlabhq/gitlabhq",
+        "description": "GitLab CE Mirror | Please open new issues in our issue tracker on GitLab.com",
+        "homepage": "https://about.gitlab.com/getting-help/",
+        "language": "Ruby",
+        "license": "Other",
+        "stars": 24543,
+        "forks": 5983,
+        "topics": [
+          "gitlab",
+          "rails",
+          "ruby"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-10-02T16:25:27Z",
+        "pushedAt": "2026-09-22T15:21:07Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v42.2.0-rc42",
+        "publishedAt": null,
+        "url": "https://github.com/gitlabhq/gitlabhq/releases/tag/v42.2.0-rc42",
+        "source": "tag",
+        "signed": false
+      },
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "gojq",
+      "name": "gojq",
+      "repository": "https://github.com/itchyny/gojq",
+      "category": "json-processor",
+      "replaces": [
+        {
+          "tool": "jq",
+          "fit": "drop-in",
+          "note": "Pure Go implementation of the jq language."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "itchyny/gojq",
+        "description": "Pure Go implementation of jq",
+        "homepage": null,
+        "language": "Go",
+        "license": "MIT",
+        "stars": 3806,
+        "forks": 154,
+        "topics": [
+          "cli-tool",
+          "cli-utility",
+          "go",
+          "golang",
+          "json"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-04-12T07:26:07Z",
+        "pushedAt": "2026-09-19T06:49:32Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.12.19",
+        "publishedAt": "2026-04-01T13:04:59Z",
+        "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.19",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.12.19",
+          "name": "Release v0.12.19",
+          "publishedAt": "2026-04-01T13:04:59Z",
+          "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.19",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.18",
+          "name": "Release v0.12.18",
+          "publishedAt": "2025-12-01T21:21:54Z",
+          "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.18",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.17",
+          "name": "Release v0.12.17",
+          "publishedAt": "2024-12-01T12:33:58Z",
+          "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.17",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.16",
+          "name": "Release v0.12.16",
+          "publishedAt": "2024-06-01T14:46:45Z",
+          "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.16",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.15",
+          "name": "Release v0.12.15",
+          "publishedAt": "2024-04-01T12:15:06Z",
+          "url": "https://github.com/itchyny/gojq/releases/tag/v0.12.15",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "helix",
+      "name": "Helix",
+      "repository": "https://github.com/helix-editor/helix",
+      "category": "text-editor",
+      "replaces": [
+        {
+          "tool": "vim",
+          "fit": "partial",
+          "note": "Modal like Vim but selection first, with LSP and tree-sitter built in."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "helix-editor/helix",
+        "description": "A post-modern modal text editor.",
+        "homepage": "https://helix-editor.com",
+        "language": "Rust",
+        "license": "MPL-2.0",
+        "stars": 46302,
+        "forks": 3765,
+        "topics": [
+          "kakoune",
+          "rust",
+          "text-editor",
+          "vim"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-06-01T04:26:56Z",
+        "pushedAt": "2026-09-15T23:26:17Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "25.07.1",
+        "publishedAt": "2025-07-18T15:13:19Z",
+        "url": "https://github.com/helix-editor/helix/releases/tag/25.07.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "25.07.1",
+          "name": "This is a patch release which lowers the GLIBC requirements of the release artifacts published to GitHub.",
+          "publishedAt": "2025-07-18T15:13:19Z",
+          "url": "https://github.com/helix-editor/helix/releases/tag/25.07.1",
+          "prerelease": false
+        },
+        {
+          "tag": "25.07",
+          "name": "25.07 CHANGELOG",
+          "publishedAt": "2025-07-15T19:18:05Z",
+          "url": "https://github.com/helix-editor/helix/releases/tag/25.07",
+          "prerelease": false
+        },
+        {
+          "tag": "25.01.1",
+          "name": "This is a patch release focusing on fixing bugs and panics from the 25.01 release.",
+          "publishedAt": "2025-01-19T21:31:02Z",
+          "url": "https://github.com/helix-editor/helix/releases/tag/25.01.1",
+          "prerelease": false
+        },
+        {
+          "tag": "25.01",
+          "name": "25.01 CHANGELOG",
+          "publishedAt": "2025-01-03T20:30:05Z",
+          "url": "https://github.com/helix-editor/helix/releases/tag/25.01",
+          "prerelease": false
+        },
+        {
+          "tag": "24.07",
+          "name": "24.07 CHANGELOG",
+          "publishedAt": "2024-07-14T16:53:17Z",
+          "url": "https://github.com/helix-editor/helix/releases/tag/24.07",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "hono",
       "name": "Hono",
       "repository": "https://github.com/honojs/hono",
@@ -1915,7 +3467,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 32302,
-        "forks": 1338,
+        "forks": 1339,
         "topics": [
           "aws-lambda",
           "bun",
@@ -2170,6 +3722,87 @@
       ]
     },
     {
+      "slug": "httpx",
+      "name": "HTTPX",
+      "repository": "https://github.com/encode/httpx",
+      "category": "python-http-client",
+      "replaces": [
+        {
+          "tool": "requests",
+          "fit": "full",
+          "note": "Requests-style API, plus async and HTTP/2."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "encode/httpx",
+        "description": "A next generation HTTP client for Python. 🦋",
+        "homepage": "https://www.python-httpx.org/",
+        "language": "Python",
+        "license": "BSD-3-Clause",
+        "stars": 15501,
+        "forks": 1776,
+        "topics": [
+          "asyncio",
+          "http",
+          "python",
+          "trio"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-04-04T12:27:00Z",
+        "pushedAt": "2026-03-29T00:19:16Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "0.28.1",
+        "publishedAt": "2024-12-06T15:36:24Z",
+        "url": "https://github.com/encode/httpx/releases/tag/0.28.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "0.28.1",
+          "name": "Version 0.28.1",
+          "publishedAt": "2024-12-06T15:36:24Z",
+          "url": "https://github.com/encode/httpx/releases/tag/0.28.1",
+          "prerelease": false
+        },
+        {
+          "tag": "0.28.0",
+          "name": "Version 0.28.0",
+          "publishedAt": "2024-11-28T14:53:50Z",
+          "url": "https://github.com/encode/httpx/releases/tag/0.28.0",
+          "prerelease": false
+        },
+        {
+          "tag": "0.27.2",
+          "name": "Version 0.27.2",
+          "publishedAt": "2024-08-27T12:52:29Z",
+          "url": "https://github.com/encode/httpx/releases/tag/0.27.2",
+          "prerelease": false
+        },
+        {
+          "tag": "0.27.1",
+          "name": "Version 0.27.1",
+          "publishedAt": "2024-08-27T11:27:46Z",
+          "url": "https://github.com/encode/httpx/releases/tag/0.27.1",
+          "prerelease": false
+        },
+        {
+          "tag": "0.27.0",
+          "name": "Version 0.27.0",
+          "publishedAt": "2024-02-21T13:06:50Z",
+          "url": "https://github.com/encode/httpx/releases/tag/0.27.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "hugo",
       "name": "Hugo",
       "repository": "https://github.com/gohugoio/hugo",
@@ -2188,7 +3821,7 @@
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89904,
+        "stars": 89905,
         "forks": 8385,
         "topics": [
           "blog-engine",
@@ -2247,6 +3880,103 @@
           "name": "Continue resolving on ERR_ACCESS_DENIED in Node's resolver 134674f0 @bep #15041",
           "publishedAt": "2026-06-15T15:27:33Z",
           "url": "https://github.com/gohugoio/hugo/releases/tag/v0.163.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "infisical",
+      "name": "Infisical",
+      "repository": "https://github.com/Infisical/infisical",
+      "category": "secrets-manager",
+      "replaces": [
+        {
+          "tool": "vault",
+          "fit": "partial",
+          "note": "Application secrets and environment sync, not a general PKI or encryption service."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "Infisical/infisical",
+        "description": "Infisical is the open-source platform for secrets, certificates, and privileged access management.",
+        "homepage": "https://infisical.com",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 29370,
+        "forks": 2274,
+        "topics": [
+          "acme",
+          "certificate-management",
+          "cli",
+          "environment-variables",
+          "go",
+          "golang",
+          "node-js",
+          "open-source",
+          "pki",
+          "postgres",
+          "private-ca",
+          "secret-management",
+          "secret-manager",
+          "secret-scanning",
+          "secrets",
+          "secrets-management",
+          "security",
+          "security-tools",
+          "typescript",
+          "vault"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-08-05T13:50:00Z",
+        "pushedAt": "2026-09-22T16:43:35Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.165.15",
+        "publishedAt": "2026-09-22T14:12:05Z",
+        "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.15",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.165.15",
+          "name": "fix(agent-vault): expose agent vault routes in the openapi spec",
+          "publishedAt": "2026-09-22T14:12:05Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.15",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.165.14",
+          "name": "chore: add upgrade impact for v0.165.13 by @github-actions[bot] in",
+          "publishedAt": "2026-09-21T12:54:30Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.14",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.165.13",
+          "name": "feat(analytics): track paywall-to-billing funnel",
+          "publishedAt": "2026-09-18T21:07:08Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.13",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.165.12",
+          "name": "feat(pam): restore Oracle Database account support",
+          "publishedAt": "2026-09-16T18:58:37Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.12",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.165.11",
+          "name": "improvement(frontend): migrate kmip server details page to v3 by @claude[bot] in",
+          "publishedAt": "2026-09-15T23:44:38Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.11",
           "prerelease": false
         }
       ],
@@ -2335,6 +4065,121 @@
       "flags": []
     },
     {
+      "slug": "iterm2",
+      "name": "iTerm2",
+      "repository": "https://github.com/gnachman/iTerm2",
+      "category": "terminal-emulator",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "gnachman/iTerm2",
+        "description": "iTerm2 is a terminal emulator for Mac OS X that does amazing things.",
+        "homepage": "https://iterm2.com/",
+        "language": "Objective-C",
+        "license": "GPL-2.0",
+        "stars": 18086,
+        "forks": 1498,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-04-07T00:46:28Z",
+        "pushedAt": "2026-09-22T07:18:34Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "vv3.4.0beta13",
+        "publishedAt": null,
+        "url": "https://github.com/gnachman/iTerm2/releases/tag/vv3.4.0beta13",
+        "source": "tag",
+        "signed": false
+      },
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "jaq",
+      "name": "jaq",
+      "repository": "https://github.com/01mf02/jaq",
+      "category": "json-processor",
+      "replaces": [
+        {
+          "tool": "jq",
+          "fit": "full",
+          "note": "Rust clone of jq that favours correctness and speed, a few semantics differ."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "01mf02/jaq",
+        "description": "A jq clone focussed on correctness, speed, and simplicity",
+        "homepage": null,
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 3769,
+        "forks": 121,
+        "topics": [
+          "jq",
+          "json",
+          "query",
+          "rust"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-12-05T09:53:21Z",
+        "pushedAt": "2026-08-28T16:01:37Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v3.1.1",
+        "publishedAt": "2026-08-05T08:07:12Z",
+        "url": "https://github.com/01mf02/jaq/releases/tag/v3.1.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v3.1.1",
+          "name": "3.1.1",
+          "publishedAt": "2026-08-05T08:07:12Z",
+          "url": "https://github.com/01mf02/jaq/releases/tag/v3.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.1.0",
+          "name": "3.1",
+          "publishedAt": "2026-06-11T17:42:05Z",
+          "url": "https://github.com/01mf02/jaq/releases/tag/v3.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.0.0",
+          "name": "3.0",
+          "publishedAt": "2026-03-27T16:26:23Z",
+          "url": "https://github.com/01mf02/jaq/releases/tag/v3.0.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.0.0-gamma",
+          "name": "3.0 gamma",
+          "publishedAt": "2026-03-09T12:06:28Z",
+          "url": "https://github.com/01mf02/jaq/releases/tag/v3.0.0-gamma",
+          "prerelease": true
+        },
+        {
+          "tag": "v3.0.0-beta",
+          "name": "3.0 beta",
+          "publishedAt": "2025-12-23T16:41:25Z",
+          "url": "https://github.com/01mf02/jaq/releases/tag/v3.0.0-beta",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "jekyll",
       "name": "Jekyll",
       "repository": "https://github.com/jekyll/jekyll",
@@ -2405,6 +4250,87 @@
           "name": "Backport #9392 for v4.3.x: Fix backward compatibility issues in the Logger (#9510)",
           "publishedAt": "2023-12-27T19:20:38Z",
           "url": "https://github.com/jekyll/jekyll/releases/tag/v4.3.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "jenkins",
+      "name": "Jenkins",
+      "repository": "https://github.com/jenkinsci/jenkins",
+      "category": "ci-server",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "jenkinsci/jenkins",
+        "description": "Jenkins automation server",
+        "homepage": "https://www.jenkins.io",
+        "language": "Java",
+        "license": "MIT",
+        "stars": 26580,
+        "forks": 9835,
+        "topics": [
+          "cicd",
+          "continuous-delivery",
+          "continuous-deployment",
+          "continuous-integration",
+          "devops",
+          "groovy",
+          "hacktoberfest",
+          "java",
+          "jenkins",
+          "pipelines-as-code"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2010-11-22T21:21:23Z",
+        "pushedAt": "2026-09-22T06:06:50Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "jenkins-2.583",
+        "publishedAt": "2026-09-22T11:15:05Z",
+        "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.583",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "jenkins-2.583",
+          "name": "2.583",
+          "publishedAt": "2026-09-22T11:15:05Z",
+          "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.583",
+          "prerelease": false
+        },
+        {
+          "tag": "jenkins-2.582",
+          "name": "2.582",
+          "publishedAt": "2026-09-20T14:01:59Z",
+          "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.582",
+          "prerelease": false
+        },
+        {
+          "tag": "jenkins-2.580.1-rc",
+          "name": "2.580.1 RC",
+          "publishedAt": "2026-09-10T10:36:21Z",
+          "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.580.1-rc",
+          "prerelease": true
+        },
+        {
+          "tag": "jenkins-2.581",
+          "name": "2.581",
+          "publishedAt": "2026-09-08T12:39:16Z",
+          "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.581",
+          "prerelease": false
+        },
+        {
+          "tag": "jenkins-2.580",
+          "name": "2.580",
+          "publishedAt": "2026-09-02T14:43:58Z",
+          "url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.580",
           "prerelease": false
         }
       ],
@@ -2485,6 +4411,322 @@
           "name": "[jest-config, jest-core, jest-runner, jest-schemas, jest-types] Allow custom runner configuration options via tuple for…",
           "publishedAt": "2026-05-08T08:42:32Z",
           "url": "https://github.com/jestjs/jest/releases/tag/v30.4.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "jmeter",
+      "name": "Apache JMeter",
+      "repository": "https://github.com/apache/jmeter",
+      "category": "load-testing",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "apache/jmeter",
+        "description": "Apache JMeter open-source load testing tool for analyzing and measuring the performance of a variety of services",
+        "homepage": "https://jmeter.apache.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 9542,
+        "forks": 2292,
+        "topics": [
+          "java",
+          "performance",
+          "test"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2010-05-26T23:38:07Z",
+        "pushedAt": "2026-09-12T08:28:17Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "rel/v5.6.3",
+        "publishedAt": "2024-01-09T08:29:40Z",
+        "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.6.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "rel/v5.6.3",
+          "name": "v5.6.3",
+          "publishedAt": "2024-01-09T08:29:40Z",
+          "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.6.3",
+          "prerelease": false
+        },
+        {
+          "tag": "rel/v5.6.2",
+          "name": "v5.6.2",
+          "publishedAt": "2024-01-09T08:26:14Z",
+          "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.6.2",
+          "prerelease": false
+        },
+        {
+          "tag": "rel/v5.6.1",
+          "name": "v5.6.1",
+          "publishedAt": "2023-07-10T16:01:28Z",
+          "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.6.1",
+          "prerelease": false
+        },
+        {
+          "tag": "rel/v5.6",
+          "name": "v5.6",
+          "publishedAt": "2023-06-24T14:02:20Z",
+          "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.6",
+          "prerelease": false
+        },
+        {
+          "tag": "rel/v5.5",
+          "name": "v5.5",
+          "publishedAt": "2023-06-24T14:04:29Z",
+          "url": "https://github.com/apache/jmeter/releases/tag/rel/v5.5",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "jq",
+      "name": "jq",
+      "repository": "https://github.com/jqlang/jq",
+      "category": "json-processor",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "jqlang/jq",
+        "description": "Command-line JSON processor",
+        "homepage": "https://jqlang.org",
+        "language": "C",
+        "license": "Other",
+        "stars": 35665,
+        "forks": 2305,
+        "topics": [
+          "jq"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-07-18T19:57:25Z",
+        "pushedAt": "2026-09-19T06:21:29Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "jq-1.8.2",
+        "publishedAt": "2026-06-20T14:11:27Z",
+        "url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "jq-1.8.2",
+          "name": "jq 1.8.2",
+          "publishedAt": "2026-06-20T14:11:27Z",
+          "url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.2",
+          "prerelease": false
+        },
+        {
+          "tag": "jq-1.8.1",
+          "name": "jq 1.8.1",
+          "publishedAt": "2025-07-01T11:50:06Z",
+          "url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "jq-1.8.0",
+          "name": "jq 1.8.0",
+          "publishedAt": "2025-06-01T06:05:01Z",
+          "url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "jq-1.7.1",
+          "name": "jq 1.7.1",
+          "publishedAt": "2023-12-13T19:56:17Z",
+          "url": "https://github.com/jqlang/jq/releases/tag/jq-1.7.1",
+          "prerelease": false
+        },
+        {
+          "tag": "jq-1.7",
+          "name": "jq 1.7",
+          "publishedAt": "2023-09-06T22:54:12Z",
+          "url": "https://github.com/jqlang/jq/releases/tag/jq-1.7",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "k3d",
+      "name": "k3d",
+      "repository": "https://github.com/k3d-io/k3d",
+      "category": "local-kubernetes",
+      "replaces": [
+        {
+          "tool": "minikube",
+          "fit": "full",
+          "note": "Lightweight k3s clusters in Docker."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "k3d-io/k3d",
+        "description": "Little helper to run CNCF's k3s in Docker",
+        "homepage": "https://k3d.io/",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 6563,
+        "forks": 536,
+        "topics": [
+          "cluster",
+          "docker",
+          "go",
+          "k3d",
+          "k3s",
+          "kubernetes",
+          "rancher"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-04-02T11:30:11Z",
+        "pushedAt": "2026-09-14T13:53:36Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v5.9.0",
+        "publishedAt": "2026-06-02T14:41:12Z",
+        "url": "https://github.com/k3d-io/k3d/releases/tag/v5.9.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v5.9.0",
+          "name": "Fix docker registry auth example",
+          "publishedAt": "2026-06-02T14:41:12Z",
+          "url": "https://github.com/k3d-io/k3d/releases/tag/v5.9.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.9.0-rc.0",
+          "name": "Fix docker registry auth example",
+          "publishedAt": "2025-10-01T09:41:43Z",
+          "url": "https://github.com/k3d-io/k3d/releases/tag/v5.9.0-rc.0",
+          "prerelease": true
+        },
+        {
+          "tag": "v5.8.3",
+          "name": "Exclude s390x as arch-specific tag from version list",
+          "publishedAt": "2025-02-15T19:18:51Z",
+          "url": "https://github.com/k3d-io/k3d/releases/tag/v5.8.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.8.2",
+          "name": "fixing the makefile; enforcing the registry port match;",
+          "publishedAt": "2025-02-12T11:00:16Z",
+          "url": "https://github.com/k3d-io/k3d/releases/tag/v5.8.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.8.1",
+          "name": "chore(config): migrate renovate config",
+          "publishedAt": "2025-01-17T11:21:32Z",
+          "url": "https://github.com/k3d-io/k3d/releases/tag/v5.8.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "k6",
+      "name": "k6",
+      "repository": "https://github.com/grafana/k6",
+      "category": "load-testing",
+      "replaces": [
+        {
+          "tool": "jmeter",
+          "fit": "full",
+          "note": "Tests written in JavaScript, run from a single binary."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "grafana/k6",
+        "description": "A modern load testing tool, using Go and JavaScript",
+        "homepage": "https://grafana.com/oss/k6/",
+        "language": "Go",
+        "license": "AGPL-3.0",
+        "stars": 31547,
+        "forks": 1635,
+        "topics": [
+          "es6",
+          "go",
+          "golang",
+          "hacktoberfest",
+          "javascript",
+          "k6",
+          "load-generator",
+          "load-testing",
+          "performance"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-03-21T15:30:24Z",
+        "pushedAt": "2026-09-22T14:53:16Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v2.3.0",
+        "publishedAt": "2026-09-21T15:17:03Z",
+        "url": "https://github.com/grafana/k6/releases/tag/v2.3.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.3.0",
+          "name": "k6 v2.3.0 is here 🎉! This release includes:",
+          "publishedAt": "2026-09-21T15:17:03Z",
+          "url": "https://github.com/grafana/k6/releases/tag/v2.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.8.1",
+          "name": "k6 v1.8.1 is here! This patch release includes:",
+          "publishedAt": "2026-08-12T14:56:05Z",
+          "url": "https://github.com/grafana/k6/releases/tag/v1.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.0",
+          "name": "k6 v2.2.0 is here 🎉! This release includes:",
+          "publishedAt": "2026-08-10T14:01:35Z",
+          "url": "https://github.com/grafana/k6/releases/tag/v2.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.1.0",
+          "name": "k6 v2.1.0 is here 🎉",
+          "publishedAt": "2026-06-30T08:56:09Z",
+          "url": "https://github.com/grafana/k6/releases/tag/v2.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.8.0",
+          "name": "k6 v1.8.0 is here! This maintenance release on v1.x includes:",
+          "publishedAt": "2026-06-08T10:13:02Z",
+          "url": "https://github.com/grafana/k6/releases/tag/v1.8.0",
           "prerelease": false
         }
       ],
@@ -2607,6 +4849,178 @@
       "flags": [
         "inactive"
       ]
+    },
+    {
+      "slug": "kind",
+      "name": "kind",
+      "repository": "https://github.com/kubernetes-sigs/kind",
+      "category": "local-kubernetes",
+      "replaces": [
+        {
+          "tool": "minikube",
+          "fit": "full",
+          "note": "Clusters as Docker containers, built for CI."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "kubernetes-sigs/kind",
+        "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
+        "homepage": "https://kind.sigs.k8s.io/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 15502,
+        "forks": 1798,
+        "topics": [
+          "docker",
+          "golang",
+          "k8s-sig-testing",
+          "kubeadm",
+          "kubernetes",
+          "podman"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-09-12T21:45:05Z",
+        "pushedAt": "2026-09-04T13:08:26Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.33.0",
+        "publishedAt": "2026-08-26T21:58:46Z",
+        "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.33.0",
+          "name": "This release contains critical dependency updates, bug fixes, and defaults to Kubernetes 1.37.0.",
+          "publishedAt": "2026-08-26T21:58:46Z",
+          "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.32.0",
+          "name": "This release contains critical dependency updates, bug fixes, and defaults to Kubernetes 1.36.1.",
+          "publishedAt": "2026-06-02T17:34:57Z",
+          "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.32.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.31.0",
+          "name": "This release contains dependency updates and defaults to Kubernetes 1.35.0.",
+          "publishedAt": "2025-12-18T00:56:59Z",
+          "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.31.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.30.0",
+          "name": "This is small release containing patched dependencies and Kubernetes 1.34, as well as a bugfix for Kubernetes v1.33.0+…",
+          "publishedAt": "2025-08-27T17:45:58Z",
+          "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.30.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.29.0",
+          "name": "This is a quick security release to pickup the containerd 2.1.1 CVE-2025-47290 fix.",
+          "publishedAt": "2025-05-21T01:54:28Z",
+          "url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.29.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "kitty",
+      "name": "kitty",
+      "repository": "https://github.com/kovidgoyal/kitty",
+      "category": "terminal-emulator",
+      "replaces": [
+        {
+          "tool": "iterm2",
+          "fit": "full",
+          "note": "GPU-rendered, cross-platform, with tabs, splits and a graphics protocol."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "kovidgoyal/kitty",
+        "description": "If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based.",
+        "homepage": "https://sw.kovidgoyal.net/kitty/",
+        "language": "Python",
+        "license": "GPL-3.0",
+        "stars": 35028,
+        "forks": 1518,
+        "topics": [
+          "c",
+          "go",
+          "golang",
+          "golang-application",
+          "kitty",
+          "kitty-terminal",
+          "opengl",
+          "python",
+          "terminal",
+          "terminal-emulators",
+          "terminfo",
+          "vt100"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-10-16T14:48:28Z",
+        "pushedAt": "2026-09-22T13:21:50Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.49.0",
+        "publishedAt": "2026-09-21T04:02:12Z",
+        "url": "https://github.com/kovidgoyal/kitty/releases/tag/v0.49.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.49.0",
+          "name": "version 0.49.0",
+          "publishedAt": "2026-09-21T04:02:12Z",
+          "url": "https://github.com/kovidgoyal/kitty/releases/tag/v0.49.0",
+          "prerelease": false
+        },
+        {
+          "tag": "nightly",
+          "name": "Nightly builds",
+          "publishedAt": "2021-09-16T16:44:57Z",
+          "url": "https://github.com/kovidgoyal/kitty/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.48.2",
+          "name": "version 0.48.2",
+          "publishedAt": "2026-07-30T11:58:42Z",
+          "url": "https://github.com/kovidgoyal/kitty/releases/tag/v0.48.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.48.1",
+          "name": "version 0.48.1",
+          "publishedAt": "2026-07-24T10:04:27Z",
+          "url": "https://github.com/kovidgoyal/kitty/releases/tag/v0.48.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.48.0",
+          "name": "version 0.48.0",
+          "publishedAt": "2026-07-18T02:33:23Z",
+          "url": "https://github.com/kovidgoyal/kitty/releases/tag/v0.48.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
     },
     {
       "slug": "knope",
@@ -2769,6 +5183,556 @@
       "flags": []
     },
     {
+      "slug": "litestar",
+      "name": "Litestar",
+      "repository": "https://github.com/litestar-org/litestar",
+      "category": "python-web-framework",
+      "replaces": [
+        {
+          "tool": "flask",
+          "fit": "full",
+          "note": "Async and typed, with dependency injection and OpenAPI built in."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "litestar-org/litestar",
+        "description": "Light, flexible and extensible ASGI framework | Built to scale",
+        "homepage": "https://docs.litestar.dev/",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 8474,
+        "forks": 650,
+        "topics": [
+          "api",
+          "asgi",
+          "asyncio",
+          "litestar",
+          "litestar-api",
+          "litestar-framework",
+          "msgspec",
+          "openapi",
+          "pydantic",
+          "python",
+          "rapidoc",
+          "redoc",
+          "rest",
+          "starlite",
+          "swagger"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-12-06T19:43:06Z",
+        "pushedAt": "2026-09-22T09:09:13Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.24.0",
+        "publishedAt": "2026-06-11T11:26:24Z",
+        "url": "https://github.com/litestar-org/litestar/releases/tag/v2.24.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.24.0",
+          "name": "Thanks to these incredible business sponsors:",
+          "publishedAt": "2026-06-11T11:26:24Z",
+          "url": "https://github.com/litestar-org/litestar/releases/tag/v2.24.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.23.0",
+          "name": "Thanks to these incredible business sponsors:",
+          "publishedAt": "2026-05-29T20:07:54Z",
+          "url": "https://github.com/litestar-org/litestar/releases/tag/v2.23.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.22.0",
+          "name": "Thanks to these incredible business sponsors:",
+          "publishedAt": "2026-05-20T16:44:32Z",
+          "url": "https://github.com/litestar-org/litestar/releases/tag/v2.22.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.21.1",
+          "name": "Thanks to these incredible business sponsors:",
+          "publishedAt": "2026-03-07T13:48:41Z",
+          "url": "https://github.com/litestar-org/litestar/releases/tag/v2.21.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.21.0",
+          "name": "Thanks to these incredible business sponsors:",
+          "publishedAt": "2026-02-14T15:15:21Z",
+          "url": "https://github.com/litestar-org/litestar/releases/tag/v2.21.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "locust",
+      "name": "Locust",
+      "repository": "https://github.com/locustio/locust",
+      "category": "load-testing",
+      "replaces": [
+        {
+          "tool": "jmeter",
+          "fit": "full",
+          "note": "Tests written in Python, with distributed workers."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "locustio/locust",
+        "description": "Write scalable load tests in plain Python 🚗💨",
+        "homepage": "https://locust.cloud",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 28177,
+        "forks": 3246,
+        "topics": [
+          "benchmarking",
+          "http",
+          "load-generator",
+          "load-test",
+          "load-testing",
+          "load-tests",
+          "locust",
+          "performance",
+          "performance-testing",
+          "python",
+          "socketio"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-02-17T11:08:03Z",
+        "pushedAt": "2026-09-21T21:01:24Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "2.46.6",
+        "publishedAt": "2026-09-17T17:37:05Z",
+        "url": "https://github.com/locustio/locust/releases/tag/2.46.6",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2.46.6",
+          "name": "Add wait_time.poisson() for Poisson-distributed task arrivals",
+          "publishedAt": "2026-09-17T17:37:05Z",
+          "url": "https://github.com/locustio/locust/releases/tag/2.46.6",
+          "prerelease": false
+        },
+        {
+          "tag": "2.46.5",
+          "name": "docs: remove stale Python 3.9 test output",
+          "publishedAt": "2026-09-07T06:44:43Z",
+          "url": "https://github.com/locustio/locust/releases/tag/2.46.5",
+          "prerelease": false
+        },
+        {
+          "tag": "2.46.4",
+          "name": "Fix FastHttpUser streaming response_length using wrong header key",
+          "publishedAt": "2026-08-23T11:40:06Z",
+          "url": "https://github.com/locustio/locust/releases/tag/2.46.4",
+          "prerelease": false
+        },
+        {
+          "tag": "2.46.3",
+          "name": "Fix variable shadowing in _aggregate_dispatched_users",
+          "publishedAt": "2026-08-01T10:10:38Z",
+          "url": "https://github.com/locustio/locust/releases/tag/2.46.3",
+          "prerelease": false
+        },
+        {
+          "tag": "2.46.2",
+          "name": "Fix response time percentiles being deflated by requests logged with response_time=None",
+          "publishedAt": "2026-07-24T19:57:38Z",
+          "url": "https://github.com/locustio/locust/releases/tag/2.46.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "logstash",
+      "name": "Logstash",
+      "repository": "https://github.com/elastic/logstash",
+      "category": "log-pipeline",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "elastic/logstash",
+        "description": "Logstash - transport and process your logs, events, or other data",
+        "homepage": "https://www.elastic.co/products/logstash",
+        "language": "Java",
+        "license": "Other",
+        "stars": 14947,
+        "forks": 3495,
+        "topics": [
+          "etl-framework",
+          "java",
+          "jruby",
+          "logging",
+          "real-time-processing",
+          "streaming"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2010-11-18T01:31:50Z",
+        "pushedAt": "2026-09-21T22:32:43Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v9.5.4",
+        "publishedAt": "2026-09-15T18:19:12Z",
+        "url": "https://github.com/elastic/logstash/releases/tag/v9.5.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v9.5.4",
+          "name": "Logstash 9.5.4",
+          "publishedAt": "2026-09-15T18:19:12Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v9.5.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.4.7",
+          "name": "Logstash 9.4.7",
+          "publishedAt": "2026-09-15T18:19:41Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v9.4.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.5.3",
+          "name": "Logstash 9.5.3",
+          "publishedAt": "2026-09-03T10:08:09Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v9.5.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.4.6",
+          "name": "Logstash 9.4.6",
+          "publishedAt": "2026-09-01T12:51:02Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v9.4.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.19.21",
+          "name": "Logstash 8.19.21",
+          "publishedAt": "2026-09-01T12:53:46Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v8.19.21",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "lsd",
+      "name": "lsd",
+      "repository": "https://github.com/lsd-rs/lsd",
+      "category": "file-listing",
+      "replaces": [
+        {
+          "tool": "exa",
+          "fit": "full",
+          "note": "ls with colours, icons and a tree view."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "lsd-rs/lsd",
+        "description": "The next gen ls command",
+        "homepage": null,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 16237,
+        "forks": 513,
+        "topics": [
+          "color",
+          "hacktoberfest",
+          "icons",
+          "ls",
+          "nerd-fonts",
+          "rust"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-11-24T11:04:12Z",
+        "pushedAt": "2026-08-17T07:13:43Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.2.0",
+        "publishedAt": "2025-10-12T08:31:53Z",
+        "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.2.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.2.0",
+          "name": ":bug: fix total size loop when using with -a",
+          "publishedAt": "2025-10-12T08:31:53Z",
+          "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.5",
+          "name": "This release is mainly to fix the misalignment on the crate release,",
+          "publishedAt": "2024-08-20T16:28:33Z",
+          "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.1.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.3",
+          "name": "This release fixes some important bugs and made a significant performance improvement,",
+          "publishedAt": "2024-08-19T16:39:01Z",
+          "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.1.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.2",
+          "name": "fix",
+          "publishedAt": "2024-03-25T16:34:26Z",
+          "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.1.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.1",
+          "name": "fix version has not been updated in v1.1.0",
+          "publishedAt": "2024-03-23T07:12:59Z",
+          "url": "https://github.com/lsd-rs/lsd/releases/tag/v1.1.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "luxon",
+      "name": "Luxon",
+      "repository": "https://github.com/moment/luxon",
+      "category": "javascript-date-library",
+      "replaces": [
+        {
+          "tool": "moment",
+          "fit": "full",
+          "note": "Immutable, with Intl-based time zones, from Moment's maintainers."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "moment/luxon",
+        "description": "⏱ A library for working with dates and times in JS",
+        "homepage": "https://moment.github.io/luxon",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 16462,
+        "forks": 800,
+        "topics": [
+          "dates",
+          "datetime",
+          "intl",
+          "times",
+          "timezones"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-11-30T12:48:48Z",
+        "pushedAt": "2026-08-09T12:44:46Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "3.7.2",
+        "publishedAt": null,
+        "url": "https://github.com/moment/luxon/releases/tag/3.7.2",
+        "source": "tag",
+        "signed": false
+      },
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "matomo",
+      "name": "Matomo",
+      "repository": "https://github.com/matomo-org/matomo",
+      "category": "web-analytics",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "matomo-org/matomo",
+        "description": "Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in privacy. Easily collect, visualise, and analyse data from websites & apps. Star us on GitHub ⭐️  – Pull Requests welcome! ",
+        "homepage": "https://matomo.org/",
+        "language": "PHP",
+        "license": "GPL-3.0",
+        "stars": 21891,
+        "forks": 2894,
+        "topics": [
+          "analytics",
+          "growth",
+          "hacktoberfest",
+          "intranet",
+          "log",
+          "marketing",
+          "matomo",
+          "mobile",
+          "mysql",
+          "php",
+          "piwik",
+          "privacy",
+          "security",
+          "web-analytics",
+          "website"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-03-30T21:18:17Z",
+        "pushedAt": "2026-09-22T15:55:07Z",
+        "defaultBranch": "6.x-dev"
+      },
+      "release": {
+        "tag": "5.14.0",
+        "publishedAt": "2026-09-21T21:11:13Z",
+        "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "5.14.0",
+          "name": "Please use the attached archives for installing or updating Matomo.",
+          "publishedAt": "2026-09-21T21:11:13Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.0",
+          "prerelease": false
+        },
+        {
+          "tag": "5.14.1-alpha.20260918180553",
+          "name": "We recommend to read this FAQ before using a pre-release in a production environment.",
+          "publishedAt": "2026-09-18T18:39:57Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.1-alpha.20260918180553",
+          "prerelease": true
+        },
+        {
+          "tag": "6.0.0-b2",
+          "name": "We recommend to read this FAQ before using a pre-release in a production environment.",
+          "publishedAt": "2026-09-17T15:23:26Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/6.0.0-b2",
+          "prerelease": true
+        },
+        {
+          "tag": "5.14.1-alpha.20260917180610",
+          "name": "We recommend to read this FAQ before using a pre-release in a production environment.",
+          "publishedAt": "2026-09-17T18:41:44Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.1-alpha.20260917180610",
+          "prerelease": true
+        },
+        {
+          "tag": "5.14.0-alpha.20260916180602",
+          "name": "We recommend to read this FAQ before using a pre-release in a production environment.",
+          "publishedAt": "2026-09-16T19:15:09Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.0-alpha.20260916180602",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "mattermost",
+      "name": "Mattermost",
+      "repository": "https://github.com/mattermost/mattermost",
+      "category": "team-chat",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "mattermost/mattermost",
+        "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
+        "homepage": "https://mattermost.com",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 39144,
+        "forks": 9009,
+        "topics": [
+          "collaboration",
+          "golang",
+          "hacktoberfest",
+          "mattermost",
+          "monorepo",
+          "react",
+          "react-native"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-06-15T06:50:02Z",
+        "pushedAt": "2026-09-22T15:41:56Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v11.11.0",
+        "publishedAt": "2026-09-07T11:26:50Z",
+        "url": "https://github.com/mattermost/mattermost/releases/tag/v11.11.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v12.0.0-rc1",
+          "name": "Mattermost Platform Release 12.0.0-rc1",
+          "publishedAt": "2026-09-18T10:58:45Z",
+          "url": "https://github.com/mattermost/mattermost/releases/tag/v12.0.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "v10.11.24",
+          "name": "Mattermost Platform Extended Support Release 10.11.24 contains a High severity level security fix.",
+          "publishedAt": "2026-09-16T09:55:00Z",
+          "url": "https://github.com/mattermost/mattermost/releases/tag/v10.11.24",
+          "prerelease": false
+        },
+        {
+          "tag": "v11.10.2",
+          "name": "Mattermost Platform Release 11.10.2 contains Medium to High severity level security fixes.",
+          "publishedAt": "2026-09-15T07:48:24Z",
+          "url": "https://github.com/mattermost/mattermost/releases/tag/v11.10.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v11.7.11",
+          "name": "Mattermost Platform Extended Support Release 11.7.11 contains Low to High severity level security fixes.",
+          "publishedAt": "2026-09-15T05:06:55Z",
+          "url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.11",
+          "prerelease": false
+        },
+        {
+          "tag": "v11.7.11-rc1",
+          "name": "Mattermost Platform Release 11.7.11-rc1",
+          "publishedAt": "2026-09-11T12:06:09Z",
+          "url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.11-rc1",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "meilisearch",
       "name": "Meilisearch",
       "repository": "https://github.com/meilisearch/meilisearch",
@@ -2866,6 +5830,83 @@
       "flags": []
     },
     {
+      "slug": "minikube",
+      "name": "minikube",
+      "repository": "https://github.com/kubernetes/minikube",
+      "category": "local-kubernetes",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "kubernetes/minikube",
+        "description": "Run Kubernetes locally",
+        "homepage": "https://minikube.sigs.k8s.io/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 32150,
+        "forks": 5331,
+        "topics": [
+          "cluster",
+          "cncf",
+          "containers",
+          "go",
+          "kubernetes",
+          "minikube"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-04-15T22:38:35Z",
+        "pushedAt": "2026-09-22T08:53:11Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v1.39.0",
+        "publishedAt": "2026-09-02T21:09:46Z",
+        "url": "https://github.com/kubernetes/minikube/releases/tag/v1.39.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.39.0",
+          "name": "📣😀 Please fill out our fast 5-question survey so that we can learn how & why you use minikube, and what improvements…",
+          "publishedAt": "2026-09-02T21:09:46Z",
+          "url": "https://github.com/kubernetes/minikube/releases/tag/v1.39.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.38.1",
+          "name": "📣😀 Please fill out our fast 5-question survey so that we can learn how & why you use minikube, and what improvements…",
+          "publishedAt": "2026-02-19T19:41:07Z",
+          "url": "https://github.com/kubernetes/minikube/releases/tag/v1.38.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.38.0",
+          "name": "📣😀 Please fill out our fast 5-question survey so that we can learn how & why you use minikube, and what improvements…",
+          "publishedAt": "2026-01-29T07:22:18Z",
+          "url": "https://github.com/kubernetes/minikube/releases/tag/v1.38.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.37.0",
+          "name": "📣😀 Please fill out our fast 5-question survey so that we can learn how & why you use minikube, and what improvements…",
+          "publishedAt": "2025-09-09T21:54:31Z",
+          "url": "https://github.com/kubernetes/minikube/releases/tag/v1.37.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.36.0",
+          "name": "📣😀 Please fill out our fast 5-question survey so that we can learn how & why you use minikube, and what improvements…",
+          "publishedAt": "2025-05-22T18:26:34Z",
+          "url": "https://github.com/kubernetes/minikube/releases/tag/v1.36.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "minio",
       "name": "MinIO",
       "repository": "https://github.com/minio/minio",
@@ -2951,6 +5992,55 @@
       ]
     },
     {
+      "slug": "moment",
+      "name": "Moment.js",
+      "repository": "https://github.com/moment/moment",
+      "category": "javascript-date-library",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "moment/moment",
+        "description": "Parse, validate, manipulate, and display dates in javascript.",
+        "homepage": "https://momentjs.com",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 47908,
+        "forks": 6978,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-03-01T02:46:06Z",
+        "pushedAt": "2026-09-15T01:08:07Z",
+        "defaultBranch": "develop"
+      },
+      "release": {
+        "tag": "2.31.0",
+        "publishedAt": "2026-09-15T01:10:04Z",
+        "url": "https://github.com/moment/moment/releases/tag/2.31.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2.31.0",
+          "name": "_Released Sep 14, 2026_",
+          "publishedAt": "2026-09-15T01:10:04Z",
+          "url": "https://github.com/moment/moment/releases/tag/2.31.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2.30.1",
+          "name": "Note - this was not a new release, but rather just updating GitHub's latest release to indicate the existing version 2.…",
+          "publishedAt": "2026-07-26T19:57:03Z",
+          "url": "https://github.com/moment/moment/releases/tag/2.30.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "mongodb",
       "name": "MongoDB",
       "repository": "https://github.com/mongodb/mongo",
@@ -2975,7 +6065,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-22T15:17:28Z",
+        "pushedAt": "2026-09-22T16:32:45Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -3096,7 +6186,7 @@
         "language": "Python",
         "license": "Other",
         "stars": 20648,
-        "forks": 3309,
+        "forks": 3310,
         "topics": [
           "linter",
           "python",
@@ -3123,6 +6213,90 @@
       "flags": []
     },
     {
+      "slug": "neovim",
+      "name": "Neovim",
+      "repository": "https://github.com/neovim/neovim",
+      "category": "text-editor",
+      "replaces": [
+        {
+          "tool": "vim",
+          "fit": "drop-in",
+          "note": "Reads most Vim configuration and plugins, adds Lua and a built-in LSP client."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "neovim/neovim",
+        "description": "Vim-fork focused on extensibility and usability",
+        "homepage": "https://neovim.io",
+        "language": "Vim Script",
+        "license": "Other",
+        "stars": 102514,
+        "forks": 7126,
+        "topics": [
+          "api",
+          "c",
+          "lua",
+          "neovim",
+          "nvim",
+          "text-editor",
+          "vim"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-01-31T13:39:22Z",
+        "pushedAt": "2026-09-22T13:05:17Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.12.5",
+        "publishedAt": "2026-08-23T18:27:13Z",
+        "url": "https://github.com/neovim/neovim/releases/tag/v0.12.5",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "nightly",
+          "name": "Nvim development (prerelease) build",
+          "publishedAt": "2026-09-22T05:25:10Z",
+          "url": "https://github.com/neovim/neovim/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.12.5",
+          "name": "Nvim 0.12.5",
+          "publishedAt": "2026-08-23T18:27:13Z",
+          "url": "https://github.com/neovim/neovim/releases/tag/v0.12.5",
+          "prerelease": false
+        },
+        {
+          "tag": "stable",
+          "name": "Nvim release build",
+          "publishedAt": "2026-08-23T18:27:09Z",
+          "url": "https://github.com/neovim/neovim/releases/tag/stable",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.4",
+          "name": "Nvim 0.12.4",
+          "publishedAt": "2026-07-05T13:41:40Z",
+          "url": "https://github.com/neovim/neovim/releases/tag/v0.12.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.12.3",
+          "name": "Nvim 0.12.3",
+          "publishedAt": "2026-06-10T22:57:39Z",
+          "url": "https://github.com/neovim/neovim/releases/tag/v0.12.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "nginx",
       "name": "nginx",
       "repository": "https://github.com/nginx/nginx",
@@ -3135,7 +6309,7 @@
         "homepage": "https://nginx.org/",
         "language": "C",
         "license": "BSD-2-Clause",
-        "stars": 31707,
+        "stars": 31708,
         "forks": 8307,
         "topics": [
           "content-cache",
@@ -3302,7 +6476,7 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 10129,
-        "forks": 4755,
+        "forks": 4756,
         "topics": [
           "javascript",
           "nodejs",
@@ -3315,7 +6489,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-07-05T23:26:52Z",
-        "pushedAt": "2026-09-21T16:24:40Z",
+        "pushedAt": "2026-09-22T16:26:52Z",
         "defaultBranch": "latest"
       },
       "release": {
@@ -3409,7 +6583,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-22T16:01:12Z",
+        "pushedAt": "2026-09-22T16:48:45Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -3554,6 +6728,172 @@
       "flags": []
     },
     {
+      "slug": "onedev",
+      "name": "OneDev",
+      "repository": "https://github.com/theonedev/onedev",
+      "category": "git-forge",
+      "replaces": [
+        {
+          "tool": "gitlab",
+          "fit": "full",
+          "note": "Self-hosted forge with CI/CD and boards built in."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "theonedev/onedev",
+        "description": "The Unified and Autonomous Development Platform",
+        "homepage": "https://onedev.io",
+        "language": "Java",
+        "license": "MIT",
+        "stars": 15257,
+        "forks": 979,
+        "topics": [
+          "ai",
+          "ci-cd",
+          "devops",
+          "git",
+          "kanban",
+          "packages",
+          "self-hosted",
+          "wiki",
+          "workspaces"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-11-06T02:57:01Z",
+        "pushedAt": "2026-09-22T12:58:21Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v16.7.2",
+        "publishedAt": "2026-09-21T22:13:02Z",
+        "url": "https://github.com/theonedev/onedev/releases/tag/v16.7.2",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v16.7.2",
+          "name": "16.7.2",
+          "publishedAt": "2026-09-21T22:13:02Z",
+          "url": "https://github.com/theonedev/onedev/releases/tag/v16.7.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v16.7.1",
+          "name": "16.7.1",
+          "publishedAt": "2026-09-21T07:15:19Z",
+          "url": "https://github.com/theonedev/onedev/releases/tag/v16.7.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v16.7.0",
+          "name": "16.7.0",
+          "publishedAt": "2026-09-20T13:28:36Z",
+          "url": "https://github.com/theonedev/onedev/releases/tag/v16.7.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v16.6.4",
+          "name": "16.6.4",
+          "publishedAt": "2026-09-15T22:42:00Z",
+          "url": "https://github.com/theonedev/onedev/releases/tag/v16.6.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v16.6.3",
+          "name": "16.6.3",
+          "publishedAt": "2026-09-12T16:46:12Z",
+          "url": "https://github.com/theonedev/onedev/releases/tag/v16.6.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "openbao",
+      "name": "OpenBao",
+      "repository": "https://github.com/openbao/openbao",
+      "category": "secrets-manager",
+      "replaces": [
+        {
+          "tool": "vault",
+          "fit": "drop-in",
+          "note": "Fork of Vault 1.14 under MPL-2.0, same API."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "openbao/openbao",
+        "description": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.",
+        "homepage": "https://openbao.org/",
+        "language": "Go",
+        "license": "MPL-2.0",
+        "stars": 7455,
+        "forks": 572,
+        "topics": [
+          "go",
+          "secret-management",
+          "security"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-11-09T18:17:33Z",
+        "pushedAt": "2026-09-22T16:09:35Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.6.2",
+        "publishedAt": "2026-08-18T16:21:00Z",
+        "url": "https://github.com/openbao/openbao/releases/tag/v2.6.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.7.0-beta20260909",
+          "name": "External Keys: The PKI and Transit secret engines can now use KMS plugins to perform cryptographic operations without s…",
+          "publishedAt": "2026-09-09T12:58:28Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.7.0-beta20260909",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.6.2",
+          "name": "core: Ensure internal operation types cannot be dispatched from inline authentication and workflows, preventing token c…",
+          "publishedAt": "2026-08-18T16:21:00Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.6.1",
+          "name": "packaging/container: Revert removal of legacy, non-opencontainers image labels for maximum compatibility. [GH-3504]",
+          "publishedAt": "2026-07-22T14:37:36Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.6.0",
+          "name": "Namespace Sealing: Allow Shamir seal configuration on namespace creation. [GH-3297]",
+          "publishedAt": "2026-07-14T17:06:32Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.6.0-beta20260622",
+          "name": "Namespace Sealing: Allow Shamir seal configuration on namespace creation. [GH-3297]",
+          "publishedAt": "2026-06-22T19:58:29Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.0-beta20260622",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "opensearch",
       "name": "OpenSearch",
       "repository": "https://github.com/opensearch-project/OpenSearch",
@@ -3656,7 +6996,7 @@
         "language": "Go",
         "license": "MPL-2.0",
         "stars": 30257,
-        "forks": 1375,
+        "forks": 1376,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -3732,7 +7072,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 22845,
-        "forks": 1314,
+        "forks": 1313,
         "topics": [
           "compiler",
           "javascript",
@@ -3746,7 +7086,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-22T16:16:31Z",
+        "pushedAt": "2026-09-22T16:33:25Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -4007,6 +7347,195 @@
       "flags": []
     },
     {
+      "slug": "plausible",
+      "name": "Plausible Analytics",
+      "repository": "https://github.com/plausible/analytics",
+      "category": "web-analytics",
+      "replaces": [
+        {
+          "tool": "matomo",
+          "fit": "full",
+          "note": "Cookie-free, a lightweight script, no personal data stored."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "plausible/analytics",
+        "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
+        "homepage": "https://plausible.io",
+        "language": "Elixir",
+        "license": "AGPL-3.0",
+        "stars": 29183,
+        "forks": 1873,
+        "topics": [
+          "analytics",
+          "analytics-dashboard",
+          "clickhouse",
+          "elixir",
+          "google-analytics",
+          "marketing",
+          "open-source-analytics",
+          "phoenix",
+          "plausible-analytics",
+          "postgresql",
+          "privacy",
+          "privacy-friendly",
+          "self-hosted",
+          "simple-analytics",
+          "statistics",
+          "tailwindcss",
+          "web-analytics",
+          "website-analytics",
+          "website-stats",
+          "website-tracking"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-12-04T22:33:36Z",
+        "pushedAt": "2026-09-22T15:48:22Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v3.2.1",
+        "publishedAt": "2026-05-15T09:15:56Z",
+        "url": "https://github.com/plausible/analytics/releases/tag/v3.2.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v3.2.1",
+          "name": "This patch release fixes a security vulnerabilityCVE-2026-8467 / GHSA-55hg-8qxv-qj4p affecting the following versions o…",
+          "publishedAt": "2026-05-15T09:15:56Z",
+          "url": "https://github.com/plausible/analytics/releases/tag/v3.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.2.0",
+          "name": "This release",
+          "publishedAt": "2026-01-26T15:32:15Z",
+          "url": "https://github.com/plausible/analytics/releases/tag/v3.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.2.0-rc.0",
+          "name": "This release",
+          "publishedAt": "2025-12-29T11:32:17Z",
+          "url": "https://github.com/plausible/analytics/releases/tag/v3.2.0-rc.0",
+          "prerelease": true
+        },
+        {
+          "tag": "v3.1.0",
+          "name": "This release",
+          "publishedAt": "2025-11-13T07:41:10Z",
+          "url": "https://github.com/plausible/analytics/releases/tag/v3.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.1.0-rc.1",
+          "name": "This release fixes v3.1.0-rc.0, see the notes of that release for the full picture.",
+          "publishedAt": "2025-11-03T14:00:34Z",
+          "url": "https://github.com/plausible/analytics/releases/tag/v3.1.0-rc.1",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "playwright",
+      "name": "Playwright",
+      "repository": "https://github.com/microsoft/playwright",
+      "category": "browser-testing",
+      "replaces": [
+        {
+          "tool": "selenium",
+          "fit": "full",
+          "note": "Chromium, Firefox and WebKit from one API, with auto-waiting."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "microsoft/playwright",
+        "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
+        "homepage": "https://playwright.dev",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 96505,
+        "forks": 6481,
+        "topics": [
+          "automation",
+          "chrome",
+          "chromium",
+          "e2e-testing",
+          "electron",
+          "end-to-end-testing",
+          "firefox",
+          "javascript",
+          "playwright",
+          "test",
+          "test-automation",
+          "testing",
+          "testing-tools",
+          "web",
+          "webkit"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-11-15T18:32:42Z",
+        "pushedAt": "2026-09-22T16:39:42Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.63.0",
+        "publishedAt": "2026-09-04T22:40:31Z",
+        "url": "https://github.com/microsoft/playwright/releases/tag/v1.63.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.63.0",
+          "name": "Tests that access a shared resource — an external service, a global account setting — can now declare a named lock.",
+          "publishedAt": "2026-09-04T22:40:31Z",
+          "url": "https://github.com/microsoft/playwright/releases/tag/v1.63.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.62.1",
+          "name": null,
+          "publishedAt": "2026-07-30T16:35:55Z",
+          "url": "https://github.com/microsoft/playwright/releases/tag/v1.62.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.62.0",
+          "name": "Component testing moves to a stories and galleries model.",
+          "publishedAt": "2026-07-24T21:55:03Z",
+          "url": "https://github.com/microsoft/playwright/releases/tag/v1.62.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.61.1",
+          "name": null,
+          "publishedAt": "2026-06-23T19:47:55Z",
+          "url": "https://github.com/microsoft/playwright/releases/tag/v1.61.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.61.0",
+          "name": "New Credentials virtual authenticator, available via browserContext.credentials, lets tests register passkeys and answe…",
+          "publishedAt": "2026-06-15T10:05:19Z",
+          "url": "https://github.com/microsoft/playwright/releases/tag/v1.61.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "pnpm",
       "name": "pnpm",
       "repository": "https://github.com/pnpm/pnpm",
@@ -4041,7 +7570,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-22T16:17:26Z",
+        "pushedAt": "2026-09-22T16:44:12Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -4187,7 +7716,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 34308,
-        "forks": 2503,
+        "forks": 2504,
         "topics": [
           "dependency-manager",
           "package-manager",
@@ -4262,8 +7791,8 @@
         "homepage": null,
         "language": "Shell",
         "license": "MIT",
-        "stars": 55137,
-        "forks": 2443,
+        "stars": 55138,
+        "forks": 2442,
         "topics": [
           "zsh"
         ],
@@ -4334,7 +7863,7 @@
         "homepage": "https://prettier.io",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 52294,
+        "stars": 52293,
         "forks": 5015,
         "topics": [
           "angular",
@@ -4423,7 +7952,7 @@
         "homepage": "https://www.prisma.io",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 47656,
+        "stars": 47657,
         "forks": 2543,
         "topics": [
           "cockroachdb",
@@ -4778,7 +8307,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-03-12T03:38:46Z",
-        "pushedAt": "2026-09-22T01:24:27Z",
+        "pushedAt": "2026-09-22T16:30:35Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -5169,6 +8698,85 @@
       "flags": []
     },
     {
+      "slug": "requests",
+      "name": "Requests",
+      "repository": "https://github.com/psf/requests",
+      "category": "python-http-client",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "psf/requests",
+        "description": "A simple, yet elegant, HTTP library.",
+        "homepage": "https://requests.readthedocs.io/en/latest/",
+        "language": "Python",
+        "license": "Apache-2.0",
+        "stars": 54334,
+        "forks": 10607,
+        "topics": [
+          "client",
+          "cookies",
+          "forhumans",
+          "http",
+          "humans",
+          "python",
+          "python-requests",
+          "requests"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-02-13T18:38:17Z",
+        "pushedAt": "2026-09-21T20:22:36Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.34.2",
+        "publishedAt": "2026-05-14T19:27:15Z",
+        "url": "https://github.com/psf/requests/releases/tag/v2.34.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.34.2",
+          "name": "2.34.2 (2026-05-14)",
+          "publishedAt": "2026-05-14T19:27:15Z",
+          "url": "https://github.com/psf/requests/releases/tag/v2.34.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.34.1",
+          "name": "2.34.1 (2026-05-13)",
+          "publishedAt": "2026-05-13T19:23:51Z",
+          "url": "https://github.com/psf/requests/releases/tag/v2.34.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.34.0",
+          "name": "2.34.0 (2026-05-11)",
+          "publishedAt": "2026-05-11T19:40:27Z",
+          "url": "https://github.com/psf/requests/releases/tag/v2.34.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.33.1",
+          "name": "2.33.1 (2026-03-30)",
+          "publishedAt": "2026-03-30T16:12:09Z",
+          "url": "https://github.com/psf/requests/releases/tag/v2.33.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.33.0",
+          "name": "2.33.0 (2026-03-25)",
+          "publishedAt": "2026-03-25T16:38:25Z",
+          "url": "https://github.com/psf/requests/releases/tag/v2.33.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "ripgrep",
       "name": "ripgrep",
       "repository": "https://github.com/BurntSushi/ripgrep",
@@ -5250,6 +8858,94 @@
           "publishedAt": "2024-01-06T19:41:59Z",
           "url": "https://github.com/BurntSushi/ripgrep/releases/tag/14.1.0",
           "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "rocketchat",
+      "name": "Rocket.Chat",
+      "repository": "https://github.com/RocketChat/Rocket.Chat",
+      "category": "team-chat",
+      "replaces": [
+        {
+          "tool": "mattermost",
+          "fit": "full",
+          "note": "Channels, threads and federation, self-hosted."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "RocketChat/Rocket.Chat",
+        "description": "The Secure CommsOS™ for mission-critical operations",
+        "homepage": "https://rocket.chat/",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 46150,
+        "forks": 13913,
+        "topics": [
+          "chat",
+          "collaboration",
+          "foss",
+          "free",
+          "hacktoberfest",
+          "javascript",
+          "meteor",
+          "mit",
+          "real-time",
+          "slack",
+          "webrtc"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-05-19T07:36:09Z",
+        "pushedAt": "2026-09-22T16:48:40Z",
+        "defaultBranch": "develop"
+      },
+      "release": {
+        "tag": "8.8.1",
+        "publishedAt": "2026-09-09T15:30:46Z",
+        "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "8.8.1",
+          "name": "Node: 22.22.3",
+          "publishedAt": "2026-09-09T15:30:46Z",
+          "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "8.8.0",
+          "name": "Release Date: September 3, 2026",
+          "publishedAt": "2026-09-01T22:46:35Z",
+          "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "8.8.0-rc.2",
+          "name": "Node: 22.22.3",
+          "publishedAt": "2026-08-31T15:59:12Z",
+          "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.0-rc.2",
+          "prerelease": true
+        },
+        {
+          "tag": "8.8.0-rc.1",
+          "name": "Node: 22.22.3",
+          "publishedAt": "2026-08-28T21:23:25Z",
+          "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.0-rc.1",
+          "prerelease": true
+        },
+        {
+          "tag": "8.8.0-rc.0",
+          "name": "Node: 22.22.3",
+          "publishedAt": "2026-08-20T21:43:31Z",
+          "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.8.0-rc.0",
+          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -5395,7 +9091,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-22T16:18:49Z",
+        "pushedAt": "2026-09-22T16:31:41Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -5553,7 +9249,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34897,
+        "stars": 34898,
         "forks": 3001,
         "topics": [
           "blob-storage",
@@ -5622,6 +9318,85 @@
           "name": "s3: stop unrouted bucket subresources from being answered with a listing",
           "publishedAt": "2026-08-21T07:19:10Z",
           "url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.43",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "selenium",
+      "name": "Selenium",
+      "repository": "https://github.com/SeleniumHQ/selenium",
+      "category": "browser-testing",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "SeleniumHQ/selenium",
+        "description": "A browser automation framework and ecosystem.",
+        "homepage": "https://selenium.dev",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 34510,
+        "forks": 8719,
+        "topics": [
+          "dotnet",
+          "java",
+          "javascript",
+          "python",
+          "ruby",
+          "rust",
+          "selenium",
+          "webdriver"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-01-14T21:40:56Z",
+        "pushedAt": "2026-09-22T15:15:20Z",
+        "defaultBranch": "trunk"
+      },
+      "release": {
+        "tag": "selenium-4.49.0",
+        "publishedAt": "2026-09-09T15:35:47Z",
+        "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.49.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "nightly",
+          "name": "Nightly",
+          "publishedAt": "2026-09-22T00:25:17Z",
+          "url": "https://github.com/SeleniumHQ/selenium/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "selenium-4.49.0",
+          "name": "Selenium 4.49.0",
+          "publishedAt": "2026-09-09T15:35:47Z",
+          "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.49.0",
+          "prerelease": false
+        },
+        {
+          "tag": "selenium-4.48.0",
+          "name": "Selenium 4.48.0",
+          "publishedAt": "2026-08-27T20:13:03Z",
+          "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.48.0",
+          "prerelease": false
+        },
+        {
+          "tag": "selenium-4.47.0",
+          "name": "Selenium 4.47.0",
+          "publishedAt": "2026-08-10T18:00:07Z",
+          "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.47.0",
+          "prerelease": false
+        },
+        {
+          "tag": "selenium-4.46.0",
+          "name": "Selenium 4.46.0",
+          "publishedAt": "2026-07-11T00:47:53Z",
+          "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.46.0",
           "prerelease": false
         }
       ],
@@ -5743,7 +9518,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-16T15:55:33Z",
-        "pushedAt": "2026-09-22T12:18:50Z",
+        "pushedAt": "2026-09-22T16:48:25Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -5812,8 +9587,8 @@
         "homepage": "https://starship.rs",
         "language": "Rust",
         "license": "ISC",
-        "stars": 59993,
-        "forks": 2674,
+        "stars": 59995,
+        "forks": 2673,
         "topics": [
           "bash",
           "fish",
@@ -5896,7 +9671,7 @@
         "language": "Go",
         "license": "Other",
         "stars": 49708,
-        "forks": 10626,
+        "forks": 10625,
         "topics": [
           "cloud",
           "cloud-management",
@@ -6021,7 +9796,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-03T23:32:55Z",
-        "pushedAt": "2026-09-22T16:16:32Z",
+        "pushedAt": "2026-09-22T16:48:22Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -6090,8 +9865,8 @@
         "homepage": "https://traefik.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 64924,
-        "forks": 6201,
+        "stars": 64925,
+        "forks": 6200,
         "topics": [
           "consul",
           "docker",
@@ -6182,7 +9957,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 31126,
-        "forks": 2446,
+        "forks": 2445,
         "topics": [
           "build-system",
           "build-tool",
@@ -6418,6 +10193,175 @@
       "flags": []
     },
     {
+      "slug": "umami",
+      "name": "Umami",
+      "repository": "https://github.com/umami-software/umami",
+      "category": "web-analytics",
+      "replaces": [
+        {
+          "tool": "matomo",
+          "fit": "full",
+          "note": "Cookie-free, runs on PostgreSQL or MySQL."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "umami-software/umami",
+        "description": "Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place — no cookies, no surveillance, self-hosted or in the cloud.",
+        "homepage": "https://umami.is",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 38948,
+        "forks": 8095,
+        "topics": [
+          "analytics",
+          "audience-segmentation",
+          "charts",
+          "cohort-analysis",
+          "google-analytics",
+          "product-analytics",
+          "statistics",
+          "user-journey",
+          "web-analytics"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-07-17T07:59:00Z",
+        "pushedAt": "2026-09-21T23:53:10Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v3.4.0",
+        "publishedAt": "2026-09-17T04:21:49Z",
+        "url": "https://github.com/umami-software/umami/releases/tag/v3.4.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v3.4.0",
+          "name": "Umami v3.4.0 is here with new Annotations, MCP support, API key management, a typed API client, session property segmen…",
+          "publishedAt": "2026-09-17T04:21:49Z",
+          "url": "https://github.com/umami-software/umami/releases/tag/v3.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.3.1",
+          "name": "Umami v3.3.1 is a maintenance release focused on safer upgrades, tracking correctness, analytics accuracy, and UI fixes.",
+          "publishedAt": "2026-08-20T18:26:22Z",
+          "url": "https://github.com/umami-software/umami/releases/tag/v3.3.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.3.0",
+          "name": "Umami v3.3.0 is here with new Two-Factor Authentication, session identity stitching, property filtering, board cloning,…",
+          "publishedAt": "2026-08-12T02:23:50Z",
+          "url": "https://github.com/umami-software/umami/releases/tag/v3.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.2.0",
+          "name": "Umami v3.2.0 is here with new Heatmaps, improved properties reporting, better Session Replay controls, revenue report i…",
+          "publishedAt": "2026-06-24T23:24:23Z",
+          "url": "https://github.com/umami-software/umami/releases/tag/v3.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.1.0",
+          "name": "Umami v3.1.0 is here with a ton of new features, including the much-anticipated Boards and Session Replay. This release…",
+          "publishedAt": "2026-04-16T23:42:35Z",
+          "url": "https://github.com/umami-software/umami/releases/tag/v3.1.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "repository": "https://github.com/louislam/uptime-kuma",
+      "category": "uptime-monitoring",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "louislam/uptime-kuma",
+        "description": "A fancy self-hosted monitoring tool",
+        "homepage": "https://uptime.kuma.pet",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 91682,
+        "forks": 8454,
+        "topics": [
+          "docker",
+          "monitor",
+          "monitoring",
+          "responsive",
+          "self-hosted",
+          "selfhosted",
+          "single-page-app",
+          "socket-io",
+          "uptime",
+          "uptime-monitoring",
+          "webapp",
+          "websocket"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-07-03T01:02:42Z",
+        "pushedAt": "2026-09-22T00:06:13Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "2.5.5",
+        "publishedAt": "2026-09-16T13:31:07Z",
+        "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.5",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2.5.5",
+          "name": null,
+          "publishedAt": "2026-09-16T13:31:07Z",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.5",
+          "prerelease": false
+        },
+        {
+          "tag": "2.5.4",
+          "name": "GHSA-wf2j-5mc7-5c4w DoS weakness",
+          "publishedAt": "2026-09-11T10:09:10Z",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.4",
+          "prerelease": false
+        },
+        {
+          "tag": "2.5.3",
+          "name": "Read more in 2.5.1 changelog:",
+          "publishedAt": "2026-08-22T09:20:48Z",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.3",
+          "prerelease": false
+        },
+        {
+          "tag": "2.5.2",
+          "name": "Fix: Non-docker installation was broken in 2.5.1 (issue: #7752)",
+          "publishedAt": "2026-08-22T08:44:26Z",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.2",
+          "prerelease": false
+        },
+        {
+          "tag": "2.5.1",
+          "name": null,
+          "publishedAt": "2026-08-22T06:50:57Z",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "uv",
       "name": "uv",
       "repository": "https://github.com/astral-sh/uv",
@@ -6453,7 +10397,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-22T16:21:09Z",
+        "pushedAt": "2026-09-22T16:43:35Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -6522,7 +10466,7 @@
         "homepage": "https://valkey.io",
         "language": "C",
         "license": "BSD-3-Clause",
-        "stars": 27275,
+        "stars": 27274,
         "forks": 1320,
         "topics": [
           "cache",
@@ -6589,6 +10533,258 @@
       "flags": []
     },
     {
+      "slug": "vault",
+      "name": "HashiCorp Vault",
+      "repository": "https://github.com/hashicorp/vault",
+      "category": "secrets-manager",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "hashicorp/vault",
+        "description": "A tool for secrets management, encryption as a service, and privileged access management",
+        "homepage": "https://developer.hashicorp.com/vault",
+        "language": "Go",
+        "license": "Other",
+        "stars": 36284,
+        "forks": 4760,
+        "topics": [
+          "go",
+          "secrets",
+          "vault"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-02-25T00:15:59Z",
+        "pushedAt": "2026-09-22T16:02:28Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.1.1",
+        "publishedAt": "2026-09-16T21:04:32Z",
+        "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.1.1",
+          "name": "SECURITY:",
+          "publishedAt": "2026-09-16T21:04:32Z",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.1.0",
+          "name": "SECURITY:",
+          "publishedAt": "2026-09-01T14:37:47Z",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.0.4",
+          "name": "BREAKING CHANGES:",
+          "publishedAt": "2026-08-04T18:34:44Z",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.0.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.0.3",
+          "name": "SECURITY:",
+          "publishedAt": "2026-06-17T20:23:38Z",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.0.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.0.2",
+          "name": "BREAKING CHANGES:",
+          "publishedAt": "2026-06-05T16:26:07Z",
+          "url": "https://github.com/hashicorp/vault/releases/tag/v2.0.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vaultwarden",
+      "name": "Vaultwarden",
+      "repository": "https://github.com/dani-garcia/vaultwarden",
+      "category": "password-manager-server",
+      "replaces": [
+        {
+          "tool": "bitwarden",
+          "fit": "drop-in",
+          "note": "Implements the Bitwarden server API, works with the official clients."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "dani-garcia/vaultwarden",
+        "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+        "homepage": null,
+        "language": "Rust",
+        "license": "AGPL-3.0",
+        "stars": 68017,
+        "forks": 3239,
+        "topics": [
+          "bitwarden",
+          "bitwarden-rs",
+          "docker",
+          "rocket",
+          "rust",
+          "vaultwarden"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-02-17T22:40:20Z",
+        "pushedAt": "2026-09-18T18:35:12Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "1.37.3",
+        "publishedAt": "2026-09-13T15:03:37Z",
+        "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "1.37.3",
+          "name": "Fix password change with newer web-vault",
+          "publishedAt": "2026-09-13T15:03:37Z",
+          "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.3",
+          "prerelease": false
+        },
+        {
+          "tag": "1.37.2",
+          "name": "This update is required for support with clients with version 2026.8.0+, please update before reporting any issues with…",
+          "publishedAt": "2026-08-22T12:29:13Z",
+          "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.2",
+          "prerelease": false
+        },
+        {
+          "tag": "1.37.1",
+          "name": "This patch release resolves the issues with invites.",
+          "publishedAt": "2026-07-29T13:40:10Z",
+          "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.1",
+          "prerelease": false
+        },
+        {
+          "tag": "1.37.0",
+          "name": "This update is required for support with clients with version 2026.7.0+, please update before reporting any issues with…",
+          "publishedAt": "2026-07-24T17:04:39Z",
+          "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.36.0",
+          "name": "This release contains security fixes for the following advisories. We strongly advice to update as soon as possible.",
+          "publishedAt": "2026-05-03T12:54:52Z",
+          "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.36.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vector",
+      "name": "Vector",
+      "repository": "https://github.com/vectordotdev/vector",
+      "category": "log-pipeline",
+      "replaces": [
+        {
+          "tool": "logstash",
+          "fit": "full",
+          "note": "Sources, transforms and sinks in one binary, with VRL for parsing."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vectordotdev/vector",
+        "description": "A high-performance observability data pipeline.",
+        "homepage": "https://vector.dev",
+        "language": "Rust",
+        "license": "MPL-2.0",
+        "stars": 22601,
+        "forks": 2289,
+        "topics": [
+          "agent",
+          "cloud-native",
+          "data-transformation",
+          "datadog",
+          "etl",
+          "events",
+          "forwarder",
+          "hacktoberfest",
+          "high-performance",
+          "logs",
+          "metrics",
+          "monitoring",
+          "observability",
+          "pipelines",
+          "rust-lang",
+          "stream-processing",
+          "telemetry",
+          "traces"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-08-27T16:57:34Z",
+        "pushedAt": "2026-09-22T16:42:20Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "vdev-v0.3.21",
+        "publishedAt": "2026-09-22T16:37:41Z",
+        "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.21",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "vdev-v0.3.21",
+          "name": null,
+          "publishedAt": "2026-09-22T16:37:41Z",
+          "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.21",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.58.0",
+          "name": "The COSE team is excited to announce version 0.58.0! 🚀",
+          "publishedAt": "2026-08-26T14:39:15Z",
+          "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.57.0",
+          "name": "The COSE team is excited to announce version 0.57.0! 🚀",
+          "publishedAt": "2026-07-14T21:58:16Z",
+          "url": "https://github.com/vectordotdev/vector/releases/tag/v0.57.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.56.0",
+          "name": "The COSE team is excited to announce version 0.56.0! 🚀",
+          "publishedAt": "2026-06-03T15:26:05Z",
+          "url": "https://github.com/vectordotdev/vector/releases/tag/v0.56.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.55.0",
+          "name": "The COSE team is excited to announce version 0.55.0!",
+          "publishedAt": "2026-04-22T16:21:18Z",
+          "url": "https://github.com/vectordotdev/vector/releases/tag/v0.55.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "victoriametrics",
       "name": "VictoriaMetrics",
       "repository": "https://github.com/VictoriaMetrics/VictoriaMetrics",
@@ -6630,7 +10826,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-22T16:07:47Z",
+        "pushedAt": "2026-09-22T16:42:56Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -6677,6 +10873,45 @@
           "prerelease": false
         }
       ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vim",
+      "name": "Vim",
+      "repository": "https://github.com/vim/vim",
+      "category": "text-editor",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vim/vim",
+        "description": "The official Vim repository",
+        "homepage": "https://www.vim.org",
+        "language": "Vim Script",
+        "license": "Vim",
+        "stars": 40916,
+        "forks": 6133,
+        "topics": [
+          "c",
+          "cross-platform",
+          "text-editor",
+          "vim"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-08-18T21:03:56Z",
+        "pushedAt": "2026-09-21T20:42:56Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v9.2.1125",
+        "publishedAt": null,
+        "url": "https://github.com/vim/vim/releases/tag/v9.2.1125",
+        "source": "tag",
+        "signed": true
+      },
+      "releases": [],
       "maintainerVerified": false,
       "flags": []
     },
@@ -6781,7 +11016,7 @@
         "homepage": "https://vitepress.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 18344,
+        "stars": 18343,
         "forks": 2733,
         "topics": [
           "docs-generator",
@@ -6926,6 +11161,164 @@
       "flags": []
     },
     {
+      "slug": "vscode",
+      "name": "Visual Studio Code",
+      "repository": "https://github.com/microsoft/vscode",
+      "category": "text-editor",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "microsoft/vscode",
+        "description": "Visual Studio Code",
+        "homepage": "https://code.visualstudio.com",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 192784,
+        "forks": 42928,
+        "topics": [
+          "editor",
+          "electron",
+          "microsoft",
+          "typescript",
+          "visual-studio-code"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-09-03T20:23:38Z",
+        "pushedAt": "2026-09-22T16:49:05Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "1.138.0",
+        "publishedAt": "2026-09-16T07:14:47Z",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.138.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "1.138.0",
+          "name": null,
+          "publishedAt": "2026-09-16T07:14:47Z",
+          "url": "https://github.com/microsoft/vscode/releases/tag/1.138.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.137.0",
+          "name": null,
+          "publishedAt": "2026-09-09T15:32:58Z",
+          "url": "https://github.com/microsoft/vscode/releases/tag/1.137.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.136.2",
+          "name": null,
+          "publishedAt": "2026-09-08T17:54:34Z",
+          "url": "https://github.com/microsoft/vscode/releases/tag/1.136.2",
+          "prerelease": false
+        },
+        {
+          "tag": "1.136.1",
+          "name": null,
+          "publishedAt": "2026-09-03T15:25:32Z",
+          "url": "https://github.com/microsoft/vscode/releases/tag/1.136.1",
+          "prerelease": false
+        },
+        {
+          "tag": "1.136.0",
+          "name": null,
+          "publishedAt": "2026-09-02T16:18:16Z",
+          "url": "https://github.com/microsoft/vscode/releases/tag/1.136.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vscodium",
+      "name": "VSCodium",
+      "repository": "https://github.com/VSCodium/vscodium",
+      "category": "text-editor",
+      "replaces": [
+        {
+          "tool": "vscode",
+          "fit": "drop-in",
+          "note": "VS Code built from source without Microsoft's telemetry or branding."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "VSCodium/vscodium",
+        "description": "binary releases of VS Code without MS branding/telemetry/licensing",
+        "homepage": "https://vscodium.com",
+        "language": "Shell",
+        "license": "MIT",
+        "stars": 33338,
+        "forks": 1864,
+        "topics": [
+          "editor",
+          "floss",
+          "ide",
+          "open-source-licensing",
+          "vscode"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-08-13T14:26:58Z",
+        "pushedAt": "2026-09-16T12:44:42Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "1.135.06055",
+        "publishedAt": "2026-09-09T08:19:21Z",
+        "url": "https://github.com/VSCodium/vscodium/releases/tag/1.135.06055",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "1.135.06055",
+          "name": "update vscode to 1.135.0",
+          "publishedAt": "2026-09-09T08:19:21Z",
+          "url": "https://github.com/VSCodium/vscodium/releases/tag/1.135.06055",
+          "prerelease": false
+        },
+        {
+          "tag": "1.126.04524",
+          "name": "update vscode to 1.126.0",
+          "publishedAt": "2026-07-07T13:01:09Z",
+          "url": "https://github.com/VSCodium/vscodium/releases/tag/1.126.04524",
+          "prerelease": false
+        },
+        {
+          "tag": "1.121.03429",
+          "name": "update vscode to 1.121.0",
+          "publishedAt": "2026-05-22T22:14:58Z",
+          "url": "https://github.com/VSCodium/vscodium/releases/tag/1.121.03429",
+          "prerelease": false
+        },
+        {
+          "tag": "1.116.02821",
+          "name": "update vscode to 1.116.0",
+          "publishedAt": "2026-04-27T14:01:34Z",
+          "url": "https://github.com/VSCodium/vscodium/releases/tag/1.116.02821",
+          "prerelease": false
+        },
+        {
+          "tag": "1.112.01907",
+          "name": "update vscode to 1.112.0",
+          "publishedAt": "2026-03-20T12:01:28Z",
+          "url": "https://github.com/VSCodium/vscodium/releases/tag/1.112.01907",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "webpack",
       "name": "webpack",
       "repository": "https://github.com/webpack/webpack",
@@ -6938,8 +11331,8 @@
         "homepage": "https://webpack.js.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 65950,
-        "forks": 9544,
+        "stars": 65949,
+        "forks": 9545,
         "topics": [
           "amd",
           "build-tool",
@@ -6962,7 +11355,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-22T16:10:08Z",
+        "pushedAt": "2026-09-22T16:23:02Z",
         "defaultBranch": "main"
       },
       "release": {
@@ -7006,6 +11399,173 @@
           "name": "Fix a capture-group-less snapshot.managedPaths RegExp; speed up cache writes. (by @alexander-akait in #21843)",
           "publishedAt": "2026-08-27T20:01:43Z",
           "url": "https://github.com/webpack/webpack/releases/tag/v5.110.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "wezterm",
+      "name": "WezTerm",
+      "repository": "https://github.com/wezterm/wezterm",
+      "category": "terminal-emulator",
+      "replaces": [
+        {
+          "tool": "iterm2",
+          "fit": "full",
+          "note": "Cross-platform, built-in multiplexing, configured in Lua."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "wezterm/wezterm",
+        "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+        "homepage": "https://wezterm.org/",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 28984,
+        "forks": 1749,
+        "topics": [
+          "rust",
+          "serial",
+          "serial-port",
+          "terminal",
+          "terminal-emulator",
+          "terminal-emulators"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-02-07T05:35:46Z",
+        "pushedAt": "2026-09-21T05:17:28Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "20240203-110809-5046fc22",
+        "publishedAt": "2024-02-03T18:32:26Z",
+        "url": "https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "20240203-110809-5046fc22",
+          "name": "See for the changelog",
+          "publishedAt": "2024-02-03T18:32:26Z",
+          "url": "https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22",
+          "prerelease": false
+        },
+        {
+          "tag": "20240128-202157-1e552d76",
+          "name": "See for the changelog",
+          "publishedAt": "2024-01-29T15:47:04Z",
+          "url": "https://github.com/wezterm/wezterm/releases/tag/20240128-202157-1e552d76",
+          "prerelease": false
+        },
+        {
+          "tag": "20240127-113634-bbcac864",
+          "name": "See for the changelog",
+          "publishedAt": "2024-01-27T18:57:10Z",
+          "url": "https://github.com/wezterm/wezterm/releases/tag/20240127-113634-bbcac864",
+          "prerelease": false
+        },
+        {
+          "tag": "20230712-072601-f4abf8fd",
+          "name": "See for the changelog",
+          "publishedAt": "2023-07-12T14:53:45Z",
+          "url": "https://github.com/wezterm/wezterm/releases/tag/20230712-072601-f4abf8fd",
+          "prerelease": false
+        },
+        {
+          "tag": "20230408-112425-69ae8472",
+          "name": "See for the changelog",
+          "publishedAt": "2023-04-08T19:34:28Z",
+          "url": "https://github.com/wezterm/wezterm/releases/tag/20230408-112425-69ae8472",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "woodpecker",
+      "name": "Woodpecker CI",
+      "repository": "https://github.com/woodpecker-ci/woodpecker",
+      "category": "ci-server",
+      "replaces": [
+        {
+          "tool": "jenkins",
+          "fit": "full",
+          "note": "Pipelines in YAML, each step in its own container."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "woodpecker-ci/woodpecker",
+        "description": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.",
+        "homepage": "https://woodpecker-ci.org",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 7908,
+        "forks": 685,
+        "topics": [
+          "automation",
+          "ci",
+          "cicd",
+          "devops",
+          "docker",
+          "kubernetes",
+          "woodpeckerci"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-04-03T18:06:38Z",
+        "pushedAt": "2026-09-21T21:58:06Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v3.18.1",
+        "publishedAt": "2026-09-08T23:35:40Z",
+        "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.18.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v3.18.1",
+          "name": "3.18.1",
+          "publishedAt": "2026-09-08T23:35:40Z",
+          "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.18.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.18.0",
+          "name": "3.18.0",
+          "publishedAt": "2026-08-24T09:38:02Z",
+          "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.18.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.17.0",
+          "name": "3.17.0",
+          "publishedAt": "2026-07-31T14:08:56Z",
+          "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.17.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.16.0",
+          "name": "3.16.0",
+          "publishedAt": "2026-06-27T11:45:43Z",
+          "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.16.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.15.0",
+          "name": "3.15.0",
+          "publishedAt": "2026-05-28T10:40:37Z",
+          "url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.15.0",
           "prerelease": false
         }
       ],
@@ -7177,6 +11737,87 @@
       "flags": []
     },
     {
+      "slug": "zed",
+      "name": "Zed",
+      "repository": "https://github.com/zed-industries/zed",
+      "category": "text-editor",
+      "replaces": [
+        {
+          "tool": "vscode",
+          "fit": "full",
+          "note": "Native editor with multiplayer editing built in."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "zed-industries/zed",
+        "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+        "homepage": "https://zed.dev",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 90716,
+        "forks": 10728,
+        "topics": [
+          "gpui",
+          "rust-lang",
+          "text-editor",
+          "zed"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-02-20T03:01:06Z",
+        "pushedAt": "2026-09-22T16:16:22Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.20.2",
+        "publishedAt": "2026-09-17T05:05:25Z",
+        "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.20.2",
+          "name": "Fixed payment errors from non-Zed model providers incorrectly prompting users to upgrade to Zed Pro instead of displayi…",
+          "publishedAt": "2026-09-17T05:05:25Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.21.0-pre",
+          "name": "This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server c…",
+          "publishedAt": "2026-09-16T16:53:39Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0-pre",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.20.1",
+          "name": "This week's release includes an optional cursor movement animation, a setting to open Markdown files directly in the re…",
+          "publishedAt": "2026-09-16T16:23:43Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.20.1-pre",
+          "name": "Raised the default open file descriptor soft limit at startup on Unix/macOS to prevent EMFILE (Too many open files) err…",
+          "publishedAt": "2026-09-14T15:58:36Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.1-pre",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.20.0-pre",
+          "name": "This week's release includes configurable window title formatting, support for configuring what is shown on new windows…",
+          "publishedAt": "2026-09-09T17:41:48Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.0-pre",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "zellij",
       "name": "Zellij",
       "repository": "https://github.com/zellij-org/zellij",
@@ -7339,6 +11980,95 @@
           "publishedAt": "2026-08-07T09:49:31Z",
           "url": "https://github.com/getzola/zola/releases/tag/v0.23.2",
           "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "zulip",
+      "name": "Zulip",
+      "repository": "https://github.com/zulip/zulip",
+      "category": "team-chat",
+      "replaces": [
+        {
+          "tool": "mattermost",
+          "fit": "full",
+          "note": "Conversations split into topics inside each channel."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "zulip/zulip",
+        "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused.",
+        "homepage": "https://zulip.com",
+        "language": "Python",
+        "license": "Apache-2.0",
+        "stars": 25933,
+        "forks": 10273,
+        "topics": [
+          "apache",
+          "chat",
+          "collaboration",
+          "electron",
+          "foss",
+          "free",
+          "javascript",
+          "python",
+          "python3",
+          "react-native",
+          "slack",
+          "zulip"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-09-25T16:37:25Z",
+        "pushedAt": "2026-09-22T08:55:45Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "12.3",
+        "publishedAt": "2026-09-21T17:10:07Z",
+        "url": "https://github.com/zulip/zulip/releases/tag/12.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "12.3",
+          "name": "Zulip Server 12.3",
+          "publishedAt": "2026-09-21T17:10:07Z",
+          "url": "https://github.com/zulip/zulip/releases/tag/12.3",
+          "prerelease": false
+        },
+        {
+          "tag": "12.2",
+          "name": "Zulip Server 12.2",
+          "publishedAt": "2026-08-10T17:16:43Z",
+          "url": "https://github.com/zulip/zulip/releases/tag/12.2",
+          "prerelease": false
+        },
+        {
+          "tag": "12.1",
+          "name": "Zulip Server 12.1",
+          "publishedAt": "2026-06-26T16:58:38Z",
+          "url": "https://github.com/zulip/zulip/releases/tag/12.1",
+          "prerelease": false
+        },
+        {
+          "tag": "12.0",
+          "name": "Zulip Server 12.0",
+          "publishedAt": "2026-04-27T23:11:26Z",
+          "url": "https://github.com/zulip/zulip/releases/tag/12.0",
+          "prerelease": false
+        },
+        {
+          "tag": "12.0-beta2",
+          "name": "Zulip Server 12.0-beta2",
+          "publishedAt": "2026-04-26T07:39:40Z",
+          "url": "https://github.com/zulip/zulip/releases/tag/12.0-beta2",
+          "prerelease": true
         }
       ],
       "maintainerVerified": false,
