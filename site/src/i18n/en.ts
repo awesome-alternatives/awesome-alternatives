@@ -15,7 +15,6 @@ export const en = {
     searchPlaceholder: "Search alternatives",
     searchSubmit: "Search",
     languageLabel: "Language",
-    languageSwitch: "Switch language",
     feedTitle: "awesome-alternatives: new tools",
     socialAlt: "awesome-alternatives: say what you use and what you need.",
     nav: {

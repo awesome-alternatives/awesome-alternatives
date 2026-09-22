@@ -16,7 +16,6 @@ export const fr: Messages = {
     searchPlaceholder: "Rechercher une alternative",
     searchSubmit: "Rechercher",
     languageLabel: "Langue",
-    languageSwitch: "Changer de langue",
     feedTitle: "awesome-alternatives : nouveaux outils",
     socialAlt: "awesome-alternatives : dites ce que vous utilisez et ce qu'il vous faut.",
     nav: {

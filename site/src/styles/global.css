@@ -241,10 +241,10 @@ main {
 
 .locales select {
   appearance: none;
+  color-scheme: dark;
   padding: 5px 26px 5px 10px;
   border: 1px solid var(--line);
-  border-right: 0;
-  background-color: transparent;
+  background-color: var(--bg);
   background-image: linear-gradient(45deg, transparent 50%, var(--dim) 50%),
     linear-gradient(135deg, var(--dim) 50%, transparent 50%);
   background-position: right 13px center, right 8px center;
@@ -259,18 +259,14 @@ main {
   border-color: var(--dim);
 }
 
-.locales button {
-  padding: 5px 10px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--dim);
-  font: inherit;
-  cursor: pointer;
+.locales select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
-.locales button:hover {
-  color: var(--accent);
-  border-color: var(--dim);
+.locales option {
+  background-color: var(--surface);
+  color: var(--text);
 }
 
 .locales-fallback {

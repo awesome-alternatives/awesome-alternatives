@@ -69,14 +69,14 @@ const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
       <div id="archived">
         <dt><span class="mark mark-archived">{m.marks.archived.term}</span></dt>
         <dd>
-          {m.marks.archived.before}
+          {m.marks.archived.before}{" "}
           <a href="#inactive">{m.marks.archived.inactiveLink}</a> {m.marks.archived.after}
         </dd>
       </div>
       <div id="licence">
         <dt><span class="mark">{m.marks.licence.term}</span></dt>
         <dd>
-          {m.marks.licence.before} <em>{m.marks.licence.none}</em> {m.marks.licence.middle}
+          {m.marks.licence.before} <em>{m.marks.licence.none}</em> {m.marks.licence.middle}{" "}
           <a href="#no-license">{m.marks.licence.noLicenceLink}</a> {m.marks.licence.after}
         </dd>
       </div>
@@ -148,7 +148,7 @@ const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
   <section class="explainer" id="licences">
     <h2>{m.licences.heading}</h2>
     <p>
-      {m.licences.dataBefore} <a href={`${REPO}/blob/main/LICENSE-DATA`}>{m.licences.dataLink}</a>{m.licences.codeBefore}
+      {m.licences.dataBefore} <a href={`${REPO}/blob/main/LICENSE-DATA`}>{m.licences.dataLink}</a>{m.licences.codeBefore}{" "}
       <a href={`${REPO}/blob/main/LICENSE`}>{m.licences.codeLink}</a>.
     </p>
   </section>
