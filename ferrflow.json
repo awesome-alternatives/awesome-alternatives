@@ -3,6 +3,7 @@
   "workspace": {
     "tagTemplate": "{name}-v{version}",
     "recoverMissedReleases": true,
+    "updateLockfiles": true,
     "commitFormats": {
       "patch": ["fix:*", "fix(?*):*", "perf:*", "perf(?*):*", "refactor:*", "refactor(?*):*", "chore(catalog):*"]
     }
