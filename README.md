@@ -731,7 +731,7 @@ The rules, the fit levels and how to verify a tool you maintain are in
 | Path | What it holds |
 |---|---|
 | [`data/`](data) | The entries, one YAML file per tool, and the categories. The only files written by hand. |
-| [`schema/`](schema) | The JSON Schema every entry is validated against. |
+| [`schema/`](schema) | The JSON Schema every entry is validated against, and the one the generated catalog is checked against. |
 | [`scripts/`](scripts) | The verifier run on pull requests and the nightly refresh that writes the catalog and this README. |
 | [`generated/`](generated) | `catalog.json`, the enriched catalog the site and the API read. |
 | [`site/`](site) | The website, Astro with Preact islands, prerendered from the catalog. |

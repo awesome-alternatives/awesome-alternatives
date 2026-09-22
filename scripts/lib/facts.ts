@@ -68,6 +68,8 @@ const PAGE = 100;
 const MAX_STARGAZER_PAGE = 400;
 const REFUSED_PAGINATION = [403, 422];
 
+export const STARGAZER_REACH = PAGE * MAX_STARGAZER_PAGE;
+
 export function licenseOf(license: ApiRepo["license"]): string | null {
   if (!license) return null;
   const spdx = license.spdx_id;
@@ -235,8 +237,8 @@ export async function fetchMaintainerClaim(
 }
 
 export async function fetchRecentStargazers(gh: GitHub, fullName: string, stars: number): Promise<string[]> {
-  if (stars === 0) return [];
-  const last = Math.min(Math.ceil(stars / PAGE), MAX_STARGAZER_PAGE);
+  if (stars === 0 || stars > STARGAZER_REACH) return [];
+  const last = Math.ceil(stars / PAGE);
   const pages = last > 1 ? [last - 1, last] : [last];
   const out: string[] = [];
   for (const page of pages) {

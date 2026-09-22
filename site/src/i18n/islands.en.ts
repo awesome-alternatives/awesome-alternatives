@@ -1,9 +1,13 @@
 export const islands = {
   card: {
     archived: "archived",
+    factReplaces: "Replaces",
     factLanguage: "Language",
     factLicense: "Licence",
     factStars: "Stars",
+    factTrend: "Stars gained",
+    trendStars: "+{n}",
+    trendStarsFloor: "+{n} or more",
     factLatest: "Latest",
     factLastPush: "Last push",
     unknownLanguage: "Unknown",

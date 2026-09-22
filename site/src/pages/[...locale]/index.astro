@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 
 import LinkGrid from "../../components/LinkGrid.astro";
 import Search from "../../components/Search.tsx";
+import Trending from "../../components/Trending.astro";
 import type { Locale } from "../../i18n/index.ts";
 import { format, messages, pathFor } from "../../i18n/index.ts";
 import { localePaths } from "../../i18n/paths.ts";
@@ -35,6 +36,8 @@ const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item
       </p>
     </noscript>
   </section>
+
+  <Trending locale={locale} />
 
   <hr class="divider" />
 

@@ -7,8 +7,15 @@ import { chips, without } from "../src/lib/chips.ts";
 import { alternativesTo, facets, narrow } from "../src/lib/filter.ts";
 import { stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
+import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
 import { slugify } from "../src/lib/slug.ts";
 import type { Fit, ToolView } from "../src/lib/types.ts";
+
+function trendingTool(slug: string, trend: ToolView["trend"], starCount = 100): ToolView {
+  return { ...tool(slug, "Rust", [["sr", "full"]], starCount), trend };
+}
+
+const gained = (stars: number, since: string, exact = true) => ({ stars, exact, since });
 
 function tool(slug: string, language: string | null, replaces: [string, Fit][], starCount = 0): ToolView {
   return {
@@ -126,4 +133,59 @@ test("groups skip missing values, rank tools by stars and groups by size", () =>
 
 test("two values that slugify alike fail the build instead of sharing a page", () => {
   assert.throws(() => groupTools([tool("a", "Vim Script", []), tool("b", "Vim script", [])], (t) => t.repo.language), /vim-script/);
+});
+
+test("trending ranks on stars gained, then on how fast they came, then on the slug", () => {
+  const ranked = trending([
+    trendingTool("slow", gained(40, "2026-08-25T00:00:00Z")),
+    trendingTool("fast", gained(200, "2026-09-18T00:00:00Z", false)),
+    trendingTool("steady", gained(200, "2026-09-02T00:00:00Z", false)),
+    trendingTool("b-tie", gained(40, "2026-08-25T00:00:00Z")),
+  ]);
+  assert.deepEqual(
+    ranked.map((t) => t.tool.slug),
+    ["fast", "steady", "b-tie", "slow"],
+  );
+});
+
+test("trending leaves out a tool with no measurement rather than ranking it last", () => {
+  const ranked = trending([
+    trendingTool("unmeasured", null, 90_000),
+    trendingTool("missing-field", undefined, 80_000),
+    trendingTool("measured", gained(3, "2026-07-01T00:00:00Z")),
+    trendingTool("flat", gained(0, "2026-01-01T00:00:00Z")),
+  ]);
+  assert.deepEqual(
+    ranked.map((t) => t.tool.slug),
+    ["measured"],
+  );
+});
+
+test("trending leaves out a tool that replaces nothing, since the section lists alternatives", () => {
+  const target = { ...tool("target", "Rust", [], 900), trend: gained(500, "2026-09-15T00:00:00Z") };
+  const ranked = trending([target, trendingTool("alternative", gained(5, "2026-08-01T00:00:00Z"))]);
+  assert.deepEqual(
+    ranked.map((t) => t.tool.slug),
+    ["alternative"],
+  );
+});
+
+test("trending skips an archived repository, like the rest of the catalog", () => {
+  const archived = trendingTool("archived", gained(900, "2026-09-10T00:00:00Z"));
+  archived.repo.archived = true;
+  const ranked = trending([archived, trendingTool("live", gained(5, "2026-08-01T00:00:00Z"))]);
+  assert.deepEqual(
+    ranked.map((t) => t.tool.slug),
+    ["live"],
+  );
+});
+
+test("trending shows what it has when fewer tools qualify than there are slots", () => {
+  const two = [trendingTool("a", gained(9, "2026-09-01T00:00:00Z")), trendingTool("b", gained(4, "2026-09-01T00:00:00Z"))];
+  assert.equal(trending(two).length, 2);
+  assert.equal(trending([]).length, 0);
+  const many = Array.from({ length: TRENDING_SLOTS + 3 }, (_, i) =>
+    trendingTool(`t${i}`, gained(TRENDING_SLOTS + 3 - i, "2026-09-01T00:00:00Z")),
+  );
+  assert.equal(trending(many).length, TRENDING_SLOTS);
 });

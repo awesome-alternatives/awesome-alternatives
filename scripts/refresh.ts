@@ -9,6 +9,7 @@ import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
 import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
+import { trendOf } from "./lib/trending.ts";
 import type { EnrichedTool, OwnerFacts } from "./lib/types.ts";
 
 const root = process.cwd();
@@ -27,7 +28,7 @@ const carried = carriedAddedAt(JSON.parse(await readFile(catalogPath, "utf8")));
 const history = parseAddedLog(execFileSync("git", ADDED_LOG_ARGS, { cwd: root, encoding: "utf8" }));
 
 const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
-  const evidence = await gather(gh, tool, false);
+  const evidence = await gather(gh, tool, true);
   const flags = judge(tool, evidence, now, replaced).map((f) => f.code);
   if (!evidence.repo) {
     console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
@@ -43,6 +44,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     path: tool.path ?? null,
     addedAt: addedAt(tool.slug, carried, history, now),
     repo: evidence.repo,
+    trend: trendOf(evidence.recentStars, evidence.repo.stars, now),
     release: evidence.release,
     releases: await fetchReleases(gh, evidence.repo.fullName),
     maintainerVerified: evidence.maintainerVerified,

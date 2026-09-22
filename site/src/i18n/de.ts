@@ -48,6 +48,8 @@ export const de: Messages = {
     noscriptBefore: "Die Suche braucht JavaScript. Alle Tools stehen weiter unten: ",
     noscriptLink: "nach dem Tool stöbern, das ersetzt werden soll",
     noscriptAfter: ".",
+    trendingLabel: "Trend in diesem Monat",
+    trendingLede: "Sterne der letzten {days} Tage, gezählt über GitHub.",
     browseLabel: "Nach Tool stöbern",
     allTools: "Alle Tools",
     categories: "Kategorien",

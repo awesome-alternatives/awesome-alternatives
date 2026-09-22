@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchRecentStargazers, fetchReleases, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
+import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchRecentStargazers, fetchReleases, licenseOf, ownerOf, RELEASE_HISTORY, STARGAZER_REACH, summaryOf } from "../scripts/lib/facts.ts";
 import { type GitHub, GitHubError } from "../scripts/lib/github.ts";
 
 describe("licenseOf", () => {
@@ -39,6 +39,20 @@ describe("fetchRecentStargazers", () => {
     );
     assert.deepEqual(asked, ["/repos/o/r/stargazers?per_page=100&page=2", "/repos/o/r/stargazers?per_page=100&page=3"]);
     assert.equal(stars.length, 2);
+  });
+
+  it("asks for nothing when the newest stars sit past the page GitHub serves", async () => {
+    const asked: string[] = [];
+    const stars = await fetchRecentStargazers(
+      github((path) => {
+        asked.push(path);
+        return [{ starred_at: "2026-09-01T00:00:00Z" }];
+      }),
+      "o/r",
+      STARGAZER_REACH + 1,
+    );
+    assert.deepEqual(asked, []);
+    assert.deepEqual(stars, []);
   });
 
   it("gives up on the star check when GitHub refuses to page that deep", async () => {

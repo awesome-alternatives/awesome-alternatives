@@ -1,19 +1,27 @@
-import type { ComponentChildren } from "preact";
-import { type Locale, pathFor } from "../i18n/index.ts";
+import { Fragment, type ComponentChildren } from "preact";
+import type { TrendFacts } from "../../../scripts/lib/types.ts";
+import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import { day, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
 
+interface Replaced {
+  slug: string;
+  name: string;
+}
+
 interface Props {
   locale: Locale;
   strings: Islands;
   tool: ToolView;
   target?: string;
+  trend?: TrendFacts;
+  replaces?: Replaced[];
 }
 
-export function ToolCard({ locale, strings, tool, target }: Props) {
+export function ToolCard({ locale, strings, tool, target, trend, replaces }: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
   const flags = tool.flags.filter((flag) => flag !== "archived");
@@ -42,6 +50,21 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       <dl className="facts">
+        {replaces && replaces.length > 0 && (
+          <Fact
+            label={card.factReplaces}
+            value={
+              <span>
+                {replaces.map((r, i) => (
+                  <Fragment key={r.slug}>
+                    {i > 0 && ", "}
+                    <a href={pathFor(locale, `/alternatives/${r.slug}/`)}>{r.name}</a>
+                  </Fragment>
+                ))}
+              </span>
+            }
+          />
+        )}
         <Fact
           label={card.factLanguage}
           value={
@@ -58,6 +81,12 @@ export function ToolCard({ locale, strings, tool, target }: Props) {
           value={<IndexLink locale={locale} index="licenses" value={repo.license} fallback={card.noLicense} />}
         />
         <Fact label={card.factStars} value={stars(repo.stars)} />
+        {trend && (
+          <Fact
+            label={card.factTrend}
+            value={format(trend.exact ? card.trendStars : card.trendStarsFloor, { n: trend.stars })}
+          />
+        )}
         {release && (
           <Fact
             label={card.factLatest}
