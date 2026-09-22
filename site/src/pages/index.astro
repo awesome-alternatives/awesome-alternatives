@@ -1,0 +1,41 @@
+---
+import Search from "../components/Search.tsx";
+import Base from "../layouts/Base.astro";
+import { targets, tools } from "../lib/catalog.ts";
+
+const all = targets();
+const names = Object.fromEntries(all.map((t) => [t.slug, t.name]));
+const examples = ["semantic-release, but in Rust", "a drop-in for release-please", "changelog generator under MIT"];
+---
+
+<Base
+  title="awesome-alternatives: find what replaces the tool you use"
+  description="Search for an alternative to a developer tool by language, licence and fit. Stars, releases and signatures come straight from GitHub."
+>
+  <section class="hero">
+    <h1>Find what replaces the tool you use</h1>
+    <p class="lede">
+      Say what you use and what you need. {tools.length} tools, with their latest release, licence and whether that
+      release is signed, checked against GitHub every night.
+    </p>
+    <Search client:load names={names} examples={examples} />
+  </section>
+
+  <section id="browse">
+    <h2>Browse by tool</h2>
+    <ul class="targets">
+      {
+        all.map((target) => (
+          <li>
+            <a href={`/alternatives/${target.slug}/`}>
+              <span class="target-name">{target.name}</span>
+              <span class="count">
+                {target.alternatives.length} {target.alternatives.length === 1 ? "alternative" : "alternatives"}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
