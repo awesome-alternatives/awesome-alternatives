@@ -1604,7 +1604,132 @@ a.tag:hover {
   font-size: 0.95rem;
 }
 
+.compare {
+  width: 100%;
+  margin-top: 32px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.compare th,
+.compare td {
+  padding: 16px 24px 16px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: baseline;
+}
+
+.compare thead th {
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 1.15rem;
+}
+
+.compare tbody th {
+  width: 180px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.compare td {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+.compare-value {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.compare-who {
+  display: none;
+}
+
+.compare-relation {
+  margin-top: 48px;
+}
+
+.relations {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.relations li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.relation-lead {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.relation-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  margin: 10px 0 0;
+}
+
+.relation-who {
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+.relation-note {
+  flex: 1 1 24ch;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.compare-link {
+  margin: 16px 0 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 640px) {
+  .compare,
+  .compare tbody,
+  .compare tr,
+  .compare th,
+  .compare td {
+    display: block;
+  }
+
+  .compare thead {
+    display: none;
+  }
+
+  .compare tr {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .compare th,
+  .compare td {
+    width: auto;
+    padding: 4px 0;
+    border-bottom: 0;
+  }
+
+  .compare-who {
+    display: block;
+    color: var(--dim);
+    font-size: 0.72rem;
+  }
+
   .header-search {
     order: 3;
     flex-basis: 100%;

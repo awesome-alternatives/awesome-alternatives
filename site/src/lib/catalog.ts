@@ -7,6 +7,7 @@ import type { Locale } from "../i18n/index.ts";
 import { pathFor } from "../i18n/index.ts";
 
 import type { Category, EnrichedTool, OwnerFacts } from "../../../scripts/lib/types.ts";
+import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
 import { listedOwners, loginOf } from "./owners.ts";
@@ -30,6 +31,8 @@ export const tools: EnrichedTool[] = catalog.tools;
 export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
 );
+
+export const pairs: Pair<EnrichedTool>[] = comparePairs(tools);
 
 export function toolBySlug(slug: string): EnrichedTool | null {
   return tools.find((t) => t.slug === slug) ?? null;

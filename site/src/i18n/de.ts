@@ -178,6 +178,25 @@ export const de: Messages = {
     edit: "Diesen Eintrag bearbeiten",
   },
 
+  compare: {
+    title: "{a} vs {b}",
+    description:
+      "{a} und {b} nebeneinander: Sprache, Lizenz, Sterne, Releases sowie die geprüfte Passung und die Notiz, die beide verbindet.",
+    context: "vergleichen",
+    lede: "Dieselben Fakten für beide, jede Nacht von GitHub gelesen, dazu die von Hand geprüfte Beziehung.",
+    factColumn: "Fakt",
+    factCadence: "Release-Rhythmus",
+    cadence: { one: "etwa {n} Tag zwischen Releases", other: "etwa {n} Tage zwischen Releases" },
+    cadenceUnknown: "zu wenige Releases",
+    factFlags: "Hinweise",
+    noFlags: "keine",
+    relationLabel: "Wie sie zusammenhängen",
+    replacesLine: "{from} ersetzt {to}.",
+    sharedLine: "Beide ersetzen {target}.",
+    targetLink: "Alternativen zu {name} →",
+    entry: "{a} und {b} vergleichen →",
+  },
+
   contribute: {
     title: "Ein Tool zu awesome-alternatives hinzufügen",
     description:

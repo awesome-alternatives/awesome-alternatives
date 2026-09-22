@@ -8,12 +8,12 @@ const SITE = "https://example.com";
 const catalog = [
   {
     slug: "ferrflow",
-    repo: { fullName: "FerrLabs/FerrFlow" },
-    replaces: [{ tool: "semantic-release", fit: "full" as const }],
+    repo: { fullName: "FerrLabs/FerrFlow", archived: false, stars: 900 },
+    replaces: [{ tool: "semantic-release", fit: "full" as const, note: "Rust workspaces." }],
   },
   {
     slug: "cocogitto",
-    repo: { fullName: "cocogitto/cocogitto" },
+    repo: { fullName: "cocogitto/cocogitto", archived: false, stars: 700 },
     replaces: [
       { tool: "semantic-release", fit: "partial" as const },
       { tool: "ferrflow", fit: "partial" as const },
@@ -21,12 +21,12 @@ const catalog = [
   },
   {
     slug: "ferrvault",
-    repo: { fullName: "FerrLabs/FerrVault" },
+    repo: { fullName: "FerrLabs/FerrVault", archived: false, stars: 100 },
     replaces: [{ tool: "vault", fit: "partial" as const }],
   },
 ];
 
-test("barePaths lists home, the index pages, every tool and every target once", () => {
+test("barePaths lists home, the index pages, every tool, every target and every comparison once", () => {
   assert.deepEqual(barePaths(catalog), [
     "/",
     "/tools/",
@@ -42,6 +42,7 @@ test("barePaths lists home, the index pages, every tool and every target once", 
     "/alternatives/ferrflow/",
     "/alternatives/vault/",
     "/owners/ferrlabs/",
+    "/compare/cocogitto-vs-ferrflow/",
   ]);
 });
 

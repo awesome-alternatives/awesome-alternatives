@@ -4,6 +4,11 @@ Static Astro build. Pages are prerendered from `../generated/catalog.json` and
 `../data/categories.yaml`; the search box is a React island that calls the [API](../api). `/feed.xml` is an RSS feed of
 the 50 most recently added tools, ordered by the `addedAt` the refresh keeps in the catalog.
 
+`/compare/<a>-vs-<b>/` puts two tools side by side. A pair gets a page when the two sit on a
+`replaces` edge or share a target, and when at least one of those relations carries a note;
+archived repositories are left out. The slug pair is alphabetical, so a pair has one URL and
+`/compare/<b>-vs-<a>/` is not a second copy of it.
+
 ```bash
 pnpm install
 pnpm dev
@@ -25,8 +30,8 @@ docker run -p 8080:8080 awesome-alternatives-site
 nginx serves it on port 8080, with `/healthz` for probes. A page URL without its trailing slash
 answers 301 to the slashed one, so every page lives at a single URL.
 
-`pnpm build` also writes `sitemap-index.xml` and fails when the sitemap misses a tool or a target
-from `generated/catalog.json`.
+`pnpm build` also writes `sitemap-index.xml` and fails when the sitemap misses a tool, a target or a
+comparison from `generated/catalog.json`.
 
 The Content-Security-Policy is split in two. Astro writes most of it as a `<meta>` tag on every
 page (`security.csp` in `astro.config.mjs`, directives in `src/lib/csp.ts`), because only the

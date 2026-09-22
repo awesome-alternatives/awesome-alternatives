@@ -176,6 +176,25 @@ export const en = {
     edit: "Edit this entry",
   },
 
+  compare: {
+    title: "{a} vs {b}",
+    description:
+      "{a} and {b} side by side: language, licence, stars, releases, and the reviewed fit and note that join them.",
+    context: "compare",
+    lede: "The same facts for both, read from GitHub every night, and the relation a person reviewed.",
+    factColumn: "Fact",
+    factCadence: "Release cadence",
+    cadence: { one: "about {n} day between releases", other: "about {n} days between releases" },
+    cadenceUnknown: "too few releases",
+    factFlags: "Flags",
+    noFlags: "none",
+    relationLabel: "How they relate",
+    replacesLine: "{from} replaces {to}.",
+    sharedLine: "Both replace {target}.",
+    targetLink: "Alternatives to {name} →",
+    entry: "Compare {a} and {b} →",
+  },
+
   contribute: {
     title: "Add a tool to awesome-alternatives",
     description:
