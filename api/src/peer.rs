@@ -88,7 +88,10 @@ mod tests {
     fn loopback_counts_as_a_proxy_so_a_local_run_still_works() {
         let headers = forwarded("203.0.113.7");
         let local = SocketAddr::from(([127, 0, 0, 1], 1));
-        assert_eq!(client_ip(&headers, local, true), IpAddr::from([203, 0, 113, 7]));
+        assert_eq!(
+            client_ip(&headers, local, true),
+            IpAddr::from([203, 0, 113, 7])
+        );
     }
 
     #[test]
@@ -100,7 +103,10 @@ mod tests {
             client_ip(&headers, SocketAddr::new(mapped, 1), true),
             IpAddr::from([203, 0, 113, 7])
         );
-        assert_eq!(client_ip(&headers, SocketAddr::new(public, 1), true), public);
+        assert_eq!(
+            client_ip(&headers, SocketAddr::new(public, 1), true),
+            public
+        );
     }
 
     #[test]
@@ -116,6 +122,9 @@ mod tests {
             );
         }
         let public: IpAddr = "2001:db8::1".parse().unwrap();
-        assert_eq!(client_ip(&headers, SocketAddr::new(public, 1), true), public);
+        assert_eq!(
+            client_ip(&headers, SocketAddr::new(public, 1), true),
+            public
+        );
     }
 }
