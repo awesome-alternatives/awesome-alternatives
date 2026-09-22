@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.8.1] - 2026-09-22
+
+### Bug Fixes
+
+- fix(api): honour X-Forwarded-For only from a trusted peer (#100)
+
 ## [0.8.0] - 2026-09-22
 
 ### Features
