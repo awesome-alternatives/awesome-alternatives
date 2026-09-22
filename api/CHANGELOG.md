@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.1] - 2026-09-22
+
+### Bug Fixes
+
+- fix(site): handle API failures and missing JavaScript in search (#43)
+
 ## [0.5.0] - 2026-09-22
 
 ### Features
