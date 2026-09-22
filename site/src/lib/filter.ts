@@ -27,6 +27,10 @@ export function alternativesTo<T extends ToolView>(tools: readonly T[], target: 
     .sort((a, b) => rank(a) - rank(b) || b.repo.stars - a.repo.stars);
 }
 
+export function dropInCount(alternatives: readonly ToolView[], target: string): number {
+  return alternatives.filter((t) => fitFor(t, target) === "drop-in").length;
+}
+
 export function narrow<T extends ToolView>(tools: readonly T[], target: string, f: ListFilters): T[] {
   return tools.filter(
     (t) =>

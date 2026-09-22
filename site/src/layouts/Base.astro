@@ -14,6 +14,7 @@ interface Props {
   revealSearch?: boolean;
   image?: SocialImage;
   noindex?: boolean;
+  canonicalPath?: string;
 }
 
 interface SocialImage {
@@ -23,7 +24,6 @@ interface SocialImage {
 
 const locale = localeOf(Astro.url.pathname);
 const m = messages(locale);
-const bare = stripLocale(Astro.url.pathname);
 
 const DEFAULT_IMAGE: SocialImage = {
   path: "/og.png",
@@ -37,8 +37,10 @@ const {
   revealSearch = false,
   image = DEFAULT_IMAGE,
   noindex = false,
+  canonicalPath,
 } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const bare = canonicalPath ?? stripLocale(Astro.url.pathname);
+const canonical = new URL(pathFor(locale, bare), Astro.site);
 const feed = new URL(pathFor(locale, "/feed.xml"), Astro.site);
 const alternates = LOCALES.map((code) => ({
   code,

@@ -1172,6 +1172,22 @@ h1 .mark-archived {
   transform: translateX(-50%);
 }
 
+.answer {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+}
+
+.answer a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.answer a:hover {
+  color: var(--accent);
+}
+
 .tool-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;

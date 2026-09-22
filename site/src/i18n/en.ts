@@ -157,6 +157,8 @@ export const en = {
     titleFallbackLanguage: "tool",
     descriptionFallback: "{name} in the awesome-alternatives catalog.",
     alternativeTo: "alternative to",
+    replacedBy: { one: "{n} tool replaces {name}", other: "{n} tools replace {name}" },
+    replacedByDropIn: { one: ", {n} of them drop-in", other: ", {n} of them drop-in" },
     archived: "archived",
     aboutLabel: "About",
     owner: "Owner",
