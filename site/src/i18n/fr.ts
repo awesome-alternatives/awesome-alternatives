@@ -165,6 +165,7 @@ export const fr: Messages = {
       "Ce dépôt est archivé et ne reçoit plus de modifications. Il est listé pour que l'on trouve ce qui le remplace.",
     signed: "Release signée, vérifiée par GitHub",
     verified: "Vérifié par ses mainteneurs",
+    unverified: "Non vérifié par ses mainteneurs",
     stars: "Étoiles",
     forks: "Forks",
     latest: "Dernière release",

@@ -718,6 +718,10 @@ button.link {
   display: block;
 }
 
+.mark-icon.is-muted {
+  color: var(--dim);
+}
+
 .mark-icon::after {
   content: attr(data-tip);
   position: absolute;

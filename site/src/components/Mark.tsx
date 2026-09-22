@@ -2,11 +2,16 @@ interface Props {
   icon: "signed" | "verified";
   label: string;
   href?: string;
+  muted?: boolean;
 }
 
-export function Mark({ icon, label, href }: Props) {
+export function Mark({ icon, label, href, muted = false }: Props) {
   const glyph = icon === "signed" ? <Shield /> : <Manifest />;
-  const attrs = { class: "mark-icon", "aria-label": label, "data-tip": label };
+  const attrs = {
+    class: muted ? "mark-icon is-muted" : "mark-icon",
+    "aria-label": label,
+    "data-tip": label,
+  };
   return href ? (
     <a {...attrs} href={href}>
       {glyph}
