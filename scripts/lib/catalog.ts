@@ -2,7 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import { Ajv2020 } from "ajv/dist/2020.js";
 import { parse } from "yaml";
-import type { Category, Finding, Tool, ToolEntry } from "./types.ts";
+import type { BlockingCode, Category, Finding, Tool, ToolEntry } from "./types.ts";
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
@@ -97,6 +97,6 @@ export function checkStructure({ tools, categories }: Catalog): Finding[] {
   return findings;
 }
 
-function error(slug: string, code: string, message: string): Finding {
+function error(slug: string, code: BlockingCode, message: string): Finding {
   return { slug, severity: "error", code, message };
 }

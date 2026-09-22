@@ -1,7 +1,7 @@
 import { Fragment, type ComponentChildren } from "preact";
 import type { TrendFacts } from "../../../scripts/lib/types.ts";
 import { format, type Locale, pathFor } from "../i18n/index.ts";
-import type { Islands } from "../i18n/islands.en.ts";
+import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
 import { day, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
@@ -24,8 +24,8 @@ interface Props {
 export function ToolCard({ locale, strings, tool, target, trend, replaces }: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
-  const flags = tool.flags.filter((flag) => flag !== "archived");
-  const flagLabels: Record<string, string> = strings.flag;
+  const flags = tool.flags.filter((flag): flag is LabelledFlag => flag !== "archived");
+  const flagLabels = strings.flag;
   const card = strings.card;
   return (
     <article className="tool">
@@ -105,12 +105,8 @@ export function ToolCard({ locale, strings, tool, target, trend, replaces }: Pro
       {flags.length > 0 && (
         <p className="marks">
           {flags.map((flag) => (
-            <a
-              key={flag}
-              className="mark mark-warn"
-              href={pathFor(locale, `/about/#${flag in flagLabels ? flag : "warnings"}`)}
-            >
-              {flagLabels[flag] ?? flag}
+            <a key={flag} className="mark mark-warn" href={pathFor(locale, `/about/#${flag}`)}>
+              {flagLabels[flag]}
             </a>
           ))}
         </p>

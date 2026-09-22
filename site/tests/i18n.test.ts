@@ -6,6 +6,7 @@ import { en } from "../src/i18n/en.ts";
 import { es } from "../src/i18n/es.ts";
 import { fr } from "../src/i18n/fr.ts";
 import { format, LOCALES, localeOf, messages, pathFor, plural, stripLocale } from "../src/i18n/index.ts";
+import { FLAG_CODES } from "../../scripts/lib/types.ts";
 
 describe("pathFor", () => {
   test("leaves the default locale unprefixed and prefixes the others", () => {
@@ -72,6 +73,13 @@ describe("plural", () => {
 });
 
 describe("the catalogs", () => {
+  test("every flag a tool can carry is labelled in every locale", () => {
+    const labelled = FLAG_CODES.filter((code) => code !== "archived").sort();
+    for (const locale of LOCALES) {
+      assert.deepEqual(Object.keys(messages(locale).islands.flag).sort(), labelled, locale);
+    }
+  });
+
   test("every locale declares its own html lang", () => {
     const langs = LOCALES.map((locale) => messages(locale).locale.htmlLang);
     assert.deepEqual(langs, [...LOCALES]);

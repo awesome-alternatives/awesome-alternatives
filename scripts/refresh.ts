@@ -10,7 +10,7 @@ import { renderCatalog, spliceReadme } from "./lib/render.ts";
 import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 import { trendOf } from "./lib/trending.ts";
-import type { EnrichedTool, OwnerFacts } from "./lib/types.ts";
+import { isFlagCode, type EnrichedTool, type OwnerFacts } from "./lib/types.ts";
 
 const root = process.cwd();
 const { catalog, findings } = await loadCatalog(root);
@@ -29,7 +29,9 @@ const history = parseAddedLog(execFileSync("git", ADDED_LOG_ARGS, { cwd: root, e
 
 const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
   const evidence = await gather(gh, tool, true);
-  const flags = judge(tool, evidence, now, replaced).map((f) => f.code);
+  const flags = judge(tool, evidence, now, replaced)
+    .map((f) => f.code)
+    .filter(isFlagCode);
   if (!evidence.repo) {
     console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
     return null;

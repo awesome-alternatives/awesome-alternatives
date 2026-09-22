@@ -1,3 +1,15 @@
+import type { FlagCode } from "../../../scripts/lib/types.ts";
+
+export type LabelledFlag = Exclude<FlagCode, "archived">;
+
+const flag: Record<LabelledFlag, string> = {
+  moved: "Repository moved",
+  "no-license": "No licence detected",
+  "no-release": "No release or tag",
+  inactive: "No push in a year",
+  "star-spike": "Unusual star burst",
+};
+
 export const islands = {
   card: {
     archived: "archived",
@@ -20,13 +32,7 @@ export const islands = {
     full: "Full replacement",
     partial: "Partial",
   },
-  flag: {
-    moved: "Repository moved",
-    "no-license": "No licence detected",
-    "no-release": "No release or tag",
-    inactive: "No push in a year",
-    "star-spike": "Unusual star burst",
-  },
+  flag,
   search: {
     label: "Describe what you are looking for",
     placeholder: "Describe what you are looking for",
