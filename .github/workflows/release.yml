@@ -33,7 +33,8 @@ jobs:
       - name: List the tags this release created
         id: tags
         run: |
-          tags=$(git tag --points-at HEAD | grep -E '^(api|site)-v' | jq -Rsc 'split("\n") | map(select(length > 0))')
+          git fetch -q --tags origin main
+          tags=$(git tag --points-at FETCH_HEAD | grep -E '^(api|site)-v' | jq -Rsc 'split("\n") | map(select(length > 0))')
           echo "tags=$tags" >> "$GITHUB_OUTPUT"
           echo "Released: $tags"
 
