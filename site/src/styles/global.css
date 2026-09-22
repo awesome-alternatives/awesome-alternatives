@@ -560,6 +560,11 @@ button.link {
   gap: 12px;
 }
 
+.tools.trending {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 20px;
+}
+
 .tool {
   padding: 20px 22px;
   background: var(--surface);
@@ -1446,6 +1451,10 @@ h1 .mark-archived {
 }
 
 @media (max-width: 960px) {
+  .tools.trending {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .tool-layout {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1540,7 +1549,8 @@ a.tag:hover {
     padding: 12px;
   }
 
-  .targets {
+  .targets,
+  .tools.trending {
     grid-template-columns: minmax(0, 1fr);
   }
 

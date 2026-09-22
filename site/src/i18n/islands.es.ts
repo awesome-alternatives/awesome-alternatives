@@ -3,9 +3,13 @@ import type { Islands } from "./messages.ts";
 export const islands: Islands = {
   card: {
     archived: "archivado",
+    factReplaces: "Sustituye a",
     factLanguage: "Lenguaje",
     factLicense: "Licencia",
     factStars: "Estrellas",
+    factTrend: "Estrellas ganadas",
+    trendStars: "+{n}",
+    trendStarsFloor: "+{n} o más",
     factLatest: "Última versión",
     factLastPush: "Último push",
     unknownLanguage: "Desconocido",

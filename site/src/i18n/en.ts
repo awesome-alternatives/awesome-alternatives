@@ -47,6 +47,8 @@ export const en = {
     noscriptBefore: "Search needs JavaScript. Every tool is listed below: ",
     noscriptLink: "browse by the tool you want to replace",
     noscriptAfter: ".",
+    trendingLabel: "Trending this month",
+    trendingLede: "Stars gained in the last {days} days, counted from GitHub.",
     browseLabel: "Browse by tool",
     allTools: "All tools",
     categories: "Categories",

@@ -1,0 +1,43 @@
+---
+import { TREND_WINDOW_DAYS } from "../../../scripts/lib/trending.ts";
+import type { Locale } from "../i18n/index.ts";
+import { format, messages } from "../i18n/index.ts";
+import { toolBySlug, tools } from "../lib/catalog.ts";
+import { trending } from "../lib/trending.ts";
+import { ToolCard } from "./ToolCard.tsx";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale);
+const ranked = trending(tools).map(({ tool, trend }) => ({
+  tool,
+  trend,
+  replaces: tool.replaces.map((r) => ({ slug: r.tool, name: toolBySlug(r.tool)?.name ?? r.tool })),
+}));
+---
+
+{
+  ranked.length > 0 && (
+    <>
+      <hr class="divider" />
+      <section id="trending">
+        <p class="section-label">{m.home.trendingLabel}</p>
+        <p class="lede">{format(m.home.trendingLede, { days: TREND_WINDOW_DAYS })}</p>
+        <div class="tools trending">
+          {ranked.map((item) => (
+            <ToolCard
+              locale={locale}
+              strings={m.islands}
+              tool={item.tool}
+              trend={item.trend}
+              replaces={item.replaces}
+            />
+          ))}
+        </div>
+      </section>
+    </>
+  )
+}
