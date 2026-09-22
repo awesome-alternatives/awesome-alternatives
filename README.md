@@ -23,7 +23,7 @@
   <a href="https://awesome-alternatives.com">awesome-alternatives.com</a> |
   <a href="https://awesome-alternatives.com/contribute/">Add a tool</a> |
   <a href="https://awesome-alternatives.com/about/">How it works</a> |
-  <a href="https://github.com/sponsors/BryanFRD">Sponsor</a>
+  <a href="https://opencollective.com/ferrlabs">Sponsor</a>
 </p>
 
 The numbers above are read from [`generated/catalog.json`](generated/catalog.json) each time the
@@ -744,8 +744,10 @@ night.
 ## Sponsor
 
 The catalog is free and carries no ads. The nightly refresh, the search API and the site run on a
-server someone pays for: [sponsor the project on GitHub](https://github.com/sponsors/BryanFRD) if it
-saves you an afternoon of comparing tools.
+server someone pays for, so if this saved you an afternoon of comparing tools there are two ways to
+help: [Open Collective](https://opencollective.com/ferrlabs), where the money lands on the FerrLabs
+collective and the books are public, or [GitHub Sponsors](https://github.com/sponsors/BryanFRD) to
+sponsor the maintainer directly.
 
 ## Licence
 

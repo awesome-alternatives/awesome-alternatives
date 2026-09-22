@@ -53,8 +53,9 @@ const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item
     </p>
   </section>
 
-  <p class="sponsor">
-    {m.home.sponsorNote}{" "}
-    <a href="https://github.com/sponsors/BryanFRD">{m.home.sponsorLink}</a>
+  <p class="sponsor">{m.home.sponsorNote}</p>
+  <p class="links sponsor-links">
+    <a href="https://opencollective.com/ferrlabs">{m.home.sponsorOpenCollective}</a>
+    <a href="https://github.com/sponsors/BryanFRD">{m.home.sponsorGitHub}</a>
   </p>
 </Base>
