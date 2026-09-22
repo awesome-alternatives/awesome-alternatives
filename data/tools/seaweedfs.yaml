@@ -1,0 +1,7 @@
+name: SeaweedFS
+repository: https://github.com/seaweedfs/seaweedfs
+category: object-storage
+replaces:
+  - tool: minio
+    fit: full
+    note: S3 API on top of a distributed file system built for billions of small files.
