@@ -22,4 +22,8 @@ docker build -f site/Dockerfile -t awesome-alternatives-site .
 docker run -p 8080:8080 awesome-alternatives-site
 ```
 
-nginx serves it on port 8080, with `/healthz` for probes.
+nginx serves it on port 8080, with `/healthz` for probes. A page URL without its trailing slash
+answers 301 to the slashed one, so every page lives at a single URL.
+
+`pnpm build` also writes `sitemap-index.xml` and fails when the sitemap misses a tool or a target
+from `generated/catalog.json`.
