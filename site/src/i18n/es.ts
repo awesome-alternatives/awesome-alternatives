@@ -57,7 +57,8 @@ export const es: Messages = {
     licenses: "Licencias",
     owners: "Propietarios",
     sponsorNote: "El catálogo es gratuito y sin publicidad.",
-    sponsorLink: "Patrocinarlo en GitHub ↗",
+    sponsorOpenCollective: "Open Collective ↗",
+    sponsorGitHub: "GitHub Sponsors ↗",
     examples: [
       "semantic-release, pero escrito en Rust",
       "una sustitución directa de webpack, más rápida",

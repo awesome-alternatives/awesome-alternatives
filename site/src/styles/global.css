@@ -1173,6 +1173,10 @@ h1 .mark-archived {
   font-size: 0.9rem;
 }
 
+.sponsor-links {
+  margin: 12px 0 0;
+}
+
 .owner-bio {
   margin: 18px 0 24px;
   max-width: 62ch;

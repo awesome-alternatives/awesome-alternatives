@@ -57,7 +57,8 @@ export const de: Messages = {
     licenses: "Lizenzen",
     owners: "Inhaber",
     sponsorNote: "Der Katalog ist kostenlos und werbefrei.",
-    sponsorLink: "Auf GitHub sponsern ↗",
+    sponsorOpenCollective: "Open Collective ↗",
+    sponsorGitHub: "GitHub Sponsors ↗",
     examples: [
       "semantic-release, aber in Rust geschrieben",
       "ein Drop-in für webpack, schneller",

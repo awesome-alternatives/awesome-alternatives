@@ -56,7 +56,8 @@ export const en = {
     licenses: "Licences",
     owners: "Owners",
     sponsorNote: "The catalog is free and carries no ads.",
-    sponsorLink: "Sponsor it on GitHub ↗",
+    sponsorOpenCollective: "Open Collective ↗",
+    sponsorGitHub: "GitHub Sponsors ↗",
     examples: [
       "semantic-release, but written in Rust",
       "a drop-in for webpack, faster",
