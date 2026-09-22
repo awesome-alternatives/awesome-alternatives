@@ -4,21 +4,38 @@ use std::sync::{Arc, RwLock};
 use governor::DefaultKeyedRateLimiter;
 
 use crate::catalog::Catalog;
+use crate::embedding::Embedder;
 use crate::search::Search;
+use crate::semantic::Index;
 use crate::vocabulary::Vocabulary;
 
 pub struct Loaded {
     pub catalog: Catalog,
     pub vocabulary: Vocabulary,
+    pub index: Option<Index>,
 }
 
-impl From<Catalog> for Loaded {
-    fn from(catalog: Catalog) -> Self {
+impl Loaded {
+    pub fn new(catalog: Catalog, embedder: Option<&dyn Embedder>) -> Self {
         let vocabulary = Vocabulary::of(&catalog.tools);
+        let index = embedder.and_then(|embedder| {
+            Index::build(embedder, &catalog.tools, &vocabulary)
+                .inspect_err(|error| {
+                    tracing::warn!(%error, "semantic index unavailable, search uses keywords only");
+                })
+                .ok()
+        });
         Self {
             catalog,
             vocabulary,
+            index,
         }
+    }
+
+    pub async fn build(catalog: Catalog, embedder: Option<Arc<dyn Embedder>>) -> Self {
+        tokio::task::spawn_blocking(move || Self::new(catalog, embedder.as_deref()))
+            .await
+            .expect("building the catalog index panicked")
     }
 }
 
@@ -32,13 +49,13 @@ pub struct AppState {
 
 impl AppState {
     pub fn new(
-        catalog: Catalog,
+        loaded: Loaded,
         search: Search,
         limiter: DefaultKeyedRateLimiter<IpAddr>,
         trust_proxy: bool,
     ) -> Self {
         Self {
-            loaded: Arc::new(RwLock::new(Arc::new(catalog.into()))),
+            loaded: Arc::new(RwLock::new(Arc::new(loaded))),
             search: Arc::new(search),
             limiter: Arc::new(limiter),
             trust_proxy,
@@ -49,8 +66,9 @@ impl AppState {
         Arc::clone(&self.loaded.read().unwrap_or_else(|p| p.into_inner()))
     }
 
-    pub fn replace(&self, catalog: Catalog) {
-        *self.loaded.write().unwrap_or_else(|p| p.into_inner()) = Arc::new(catalog.into());
+    pub async fn replace(&self, catalog: Catalog) {
+        let loaded = Loaded::build(catalog, self.search.embedder()).await;
+        *self.loaded.write().unwrap_or_else(|p| p.into_inner()) = Arc::new(loaded);
         self.search.forget();
     }
 }

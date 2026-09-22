@@ -110,7 +110,7 @@ function Results({
   onDrop: (result: SearchResult, key: ChipKey) => void;
 }) {
   const read = chips(result.filters, (slug) => names[slug] ?? slug);
-  if (read.length === 0) {
+  if (read.length === 0 && result.count === 0) {
     return (
       <p className="empty">
         Nothing in that query matched the catalog. Name the tool you want to replace, a language or a licence.
@@ -128,7 +128,8 @@ function Results({
             </button>
           </span>
         ))}
-        <span className="interpreter">{result.interpretedBy === "jev" ? "Read by Jev" : "Matched by keywords"}</span>
+        {read.length === 0 && <span className="summary">Closest matches to your description</span>}
+        <span className="interpreter">{result.interpretedBy === "jev" ? "Read by Jev" : "Matched locally"}</span>
       </div>
       <p className="summary" aria-live="polite">
         {result.count === 1 ? "1 tool" : `${result.count} tools`}
