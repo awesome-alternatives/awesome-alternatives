@@ -61,6 +61,13 @@ affected.
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
+`TRUST_PROXY=true` alone is not enough to be believed. The header is read only when the connection
+itself comes from a loopback, private or link-local address, which is where a reverse proxy sits.
+A request that reaches the container from a public address keeps its own peer address as the rate
+limit key, whatever it claims in `X-Forwarded-For`, so a direct caller cannot hand itself a fresh
+bucket per request. If the proxy ever fronts the API from a public address, every client collapses
+into one bucket and the limit will look far too strict: that is the symptom to look for.
+
 ## README and security
 
 Both are fetched on first request and cached for 12 hours per repository; a failed fetch answers
@@ -167,7 +174,7 @@ requests are in flight.
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP. |
-| `TRUST_PROXY` | `false` | |
+| `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
 | `TYPESAFE_MODEL` | `jev-latest` | Pin a version such as `jev-1.13.0` for stable answers. |
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
