@@ -1,0 +1,171 @@
+---
+import type { GetStaticPaths } from "astro";
+import Detail from "../../components/Detail.astro";
+import type { Locale } from "../../i18n/index.ts";
+import { format, pathFor } from "../../i18n/index.ts";
+import { localePaths, t } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { jev, LAST_UPDATED, publisher, retention } from "../../lib/legal.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = t(locale).pages.privacy;
+---
+
+<Base title={m.title} description={m.description}>
+  <header class="legal-head">
+    <p class="eyebrow">{m.eyebrow}</p>
+    <h1>{m.heading}</h1>
+    <p class="lede">{format(m.lede, { lastUpdated: LAST_UPDATED })}</p>
+  </header>
+
+  <section class="block legal">
+    <h2>{m.controller.heading}</h2>
+    <p>
+      {m.controller.before} <a href={pathFor(locale, "/legal-notice/")}>{m.controller.legalNoticeLink}</a>,{" "}
+      <Detail value={publisher.name} />{m.controller.beforeEmail}{" "}
+      <Detail value={publisher.email} href={`mailto:${publisher.email}`} />.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.siteAccessLog.heading}</h2>
+    <p>{m.siteAccessLog.body}</p>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.data}</dt>
+        <dd>
+          {m.siteAccessLog.dataBefore} <code>?q=</code>{m.siteAccessLog.dataAfter}
+        </dd>
+      </div>
+      <div>
+        <dt>{m.facts.purpose}</dt>
+        <dd>{m.siteAccessLog.purpose}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.legalBasis}</dt>
+        <dd>{m.legitimateInterest}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.retention}</dt>
+        <dd><Detail value={retention.siteAccessLog} /></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.reverseProxyLog.heading}</h2>
+    <p>{m.reverseProxyLog.body}</p>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.proxyAndRetention}</dt>
+        <dd><Detail value={retention.reverseProxyLog} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.purpose}</dt>
+        <dd>{m.reverseProxyLog.purpose}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.legalBasis}</dt>
+        <dd>{m.legitimateInterest}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.rateLimiting.heading}</h2>
+    <p>{m.rateLimiting.body}</p>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.data}</dt>
+        <dd>{m.rateLimiting.data}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.purpose}</dt>
+        <dd>{m.rateLimiting.purpose}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.legalBasis}</dt>
+        <dd>{m.legitimateInterest}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.retention}</dt>
+        <dd>{m.rateLimiting.retention}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.queries.heading}</h2>
+    <p>
+      {m.queries.before} <code>api.typesafe.ai</code>{m.queries.after}
+    </p>
+    <dl class="legal-facts">
+      <div>
+        <dt>{m.facts.data}</dt>
+        <dd>{m.queries.data}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.purpose}</dt>
+        <dd>{m.queries.purpose}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.legalBasis}</dt>
+        <dd>{m.legitimateInterest}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.retention}</dt>
+        <dd>{m.queries.retention}</dd>
+      </div>
+      <div>
+        <dt>{m.facts.recipient}</dt>
+        <dd><Detail value={jev.operator} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.where}</dt>
+        <dd><Detail value={jev.location} /></dd>
+      </div>
+      <div>
+        <dt>{m.facts.terms}</dt>
+        <dd><Detail value={jev.privacyPolicy} href={jev.privacyPolicy} /></dd>
+      </div>
+    </dl>
+    <p>
+      {m.queries.addressBefore} (<code>?q=</code>{m.queries.addressAfter}
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.repositoryDetails.heading}</h2>
+    <p>{m.repositoryDetails.fetch}</p>
+    <p>
+      {m.repositoryDetails.imagesBefore} (<code>raw.githubusercontent.com</code>, <code>camo.githubusercontent.com</code>){" "}
+      {m.repositoryDetails.imagesAfter}
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.recipients.heading}</h2>
+    <p>
+      {m.recipients.before} <a href={pathFor(locale, "/legal-notice/")}>{m.recipients.legalNoticeLink}</a>{" "}
+      {m.recipients.after}
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.rights.heading}</h2>
+    <p>
+      {m.rights.before}{" "}
+      <Detail value={publisher.email} href={`mailto:${publisher.email}`} />{m.rights.after}
+    </p>
+    <p>
+      {m.rights.complaintBefore}{" "}
+      <a href="https://www.cnil.fr/fr/plaintes">{m.rights.complaintLink}</a>.
+    </p>
+  </section>
+</Base>

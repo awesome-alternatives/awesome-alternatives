@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import ToolListing from "../../../components/ToolListing.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePaths } from "../../../i18n/paths.ts";
+import { tools } from "../../../lib/catalog.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale);
+const sorted = [...tools].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<ToolListing
+  locale={locale}
+  title={m.index.tools.title}
+  description={format(m.index.tools.description, { count: tools.length })}
+  context={m.listing.browse}
+  parent={`${pathFor(locale, "/")}#browse`}
+  heading={m.index.tools.heading}
+  lede={m.index.tools.lede}
+  tools={sorted}
+/>

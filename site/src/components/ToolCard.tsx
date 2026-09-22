@@ -1,67 +1,90 @@
 import type { ComponentChildren } from "preact";
-import { day, FIT_LABEL, FLAG_LABEL, stars } from "../lib/format.ts";
+import { type Locale, pathFor } from "../i18n/index.ts";
+import type { Islands } from "../i18n/islands.en.ts";
+import { day, stars } from "../lib/format.ts";
 import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
 
 interface Props {
+  locale: Locale;
+  strings: Islands;
   tool: ToolView;
   target?: string;
 }
 
-export function ToolCard({ tool, target }: Props) {
+export function ToolCard({ locale, strings, tool, target }: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
   const flags = tool.flags.filter((flag) => flag !== "archived");
+  const flagLabels: Record<string, string> = strings.flag;
+  const card = strings.card;
   return (
     <article className="tool">
       <header className="tool-head">
-        <a className="tool-name" href={`/tools/${tool.slug}/`}>
+        <a className="tool-name" href={pathFor(locale, `/tools/${tool.slug}/`)}>
           {tool.name}
         </a>
         {repo.archived && (
-          <a className="mark mark-archived" href="/about/#archived">
-            archived
+          <a className="mark mark-archived" href={pathFor(locale, "/about/#archived")}>
+            {card.archived}
           </a>
         )}
         {replacement && (
-          <a className={`fit fit-${replacement.fit}`} href={`/about/#${replacement.fit}`}>
-            {FIT_LABEL[replacement.fit]}
+          <a className={`fit fit-${replacement.fit}`} href={pathFor(locale, `/about/#${replacement.fit}`)}>
+            {strings.fit[replacement.fit]}
           </a>
         )}
       </header>
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       <dl className="facts">
-        <Fact label="Language" value={<IndexLink index="languages" value={repo.language} fallback="Unknown" />} />
-        <Fact label="Licence" value={<IndexLink index="licenses" value={repo.license} fallback="None detected" />} />
-        <Fact label="Stars" value={stars(repo.stars)} />
+        <Fact
+          label={card.factLanguage}
+          value={
+            <IndexLink
+              locale={locale}
+              index="languages"
+              value={repo.language}
+              fallback={card.unknownLanguage}
+            />
+          }
+        />
+        <Fact
+          label={card.factLicense}
+          value={<IndexLink locale={locale} index="licenses" value={repo.license} fallback={card.noLicense} />}
+        />
+        <Fact label={card.factStars} value={stars(repo.stars)} />
         {release && (
           <Fact
-            label="Latest"
+            label={card.factLatest}
             value={
               <>
                 <a href={release.url}>{release.tag}</a>
                 {release.signed && (
-                  <a className="mark mark-good" href="/about/#signed">
-                    ✓ signed
+                  <a className="mark mark-good" href={pathFor(locale, "/about/#signed")}>
+                    {card.signed}
                   </a>
                 )}
               </>
             }
           />
         )}
-        <Fact label="Last push" value={day(repo.pushedAt)} />
+        <Fact label={card.factLastPush} value={day(repo.pushedAt)} />
       </dl>
       {(tool.maintainerVerified || flags.length > 0) && (
         <p className="marks">
           {tool.maintainerVerified && (
-            <a className="mark mark-good" href="/about/#verified">
-              Verified by its maintainers
+            <a className="mark mark-good" href={pathFor(locale, "/about/#verified")}>
+              {card.verified}
             </a>
           )}
           {flags.map((flag) => (
-            <a key={flag} className="mark mark-warn" href={`/about/#${flag in FLAG_LABEL ? flag : "warnings"}`}>
-              {FLAG_LABEL[flag] ?? flag}
+            <a
+              key={flag}
+              className="mark mark-warn"
+              href={pathFor(locale, `/about/#${flag in flagLabels ? flag : "warnings"}`)}
+            >
+              {flagLabels[flag] ?? flag}
             </a>
           ))}
         </p>
@@ -70,8 +93,18 @@ export function ToolCard({ tool, target }: Props) {
   );
 }
 
-function IndexLink({ index, value, fallback }: { index: "languages" | "licenses"; value: string | null; fallback: string }) {
-  return value ? <a href={`/${index}/${slugify(value)}/`}>{value}</a> : fallback;
+function IndexLink({
+  locale,
+  index,
+  value,
+  fallback,
+}: {
+  locale: Locale;
+  index: "languages" | "licenses";
+  value: string | null;
+  fallback: string;
+}) {
+  return value ? <a href={pathFor(locale, `/${index}/${slugify(value)}/`)}>{value}</a> : fallback;
 }
 
 function Fact({ label, value }: { label: string; value: ComponentChildren }) {

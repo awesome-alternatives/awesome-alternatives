@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import type { Locale } from "../../i18n/index.ts";
+import { messages, pathFor } from "../../i18n/index.ts";
+import { localePaths } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale);
+---
+
+<Base title={m.notFound.title} description={m.notFound.description} noindex>
+  <h1>{m.notFound.heading}</h1>
+  <p class="lede">
+    {m.notFound.ledeBefore}<a href={pathFor(locale, "/")}>{m.notFound.ledeSearch}</a>{m.notFound.ledeBetween}<a
+      href={pathFor(locale, "/contribute/")}>{m.notFound.ledeAdd}</a
+    >{m.notFound.ledeAfter}
+  </p>
+</Base>

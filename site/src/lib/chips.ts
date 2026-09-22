@@ -1,16 +1,22 @@
+import { format } from "../i18n/index.ts";
+import type { Islands } from "../i18n/islands.en.ts";
 import type { Filters } from "./types.ts";
 
 export type ChipKey = "replaces" | "language" | "license" | "category" | "dropIn";
+
+export type ChipStrings = Islands["search"]["chips"];
 
 export interface Chip {
   key: ChipKey;
   label: string;
 }
 
-export function chips(filters: Filters, nameOf: (slug: string) => string = (s) => s): Chip[] {
+export function chips(filters: Filters, strings: ChipStrings, nameOf: (slug: string) => string = (s) => s): Chip[] {
   const out: Chip[] = [];
-  if (filters.replaces) out.push({ key: "replaces", label: `Replaces ${nameOf(filters.replaces)}` });
-  if (filters.dropIn) out.push({ key: "dropIn", label: "Drop-in only" });
+  if (filters.replaces) {
+    out.push({ key: "replaces", label: format(strings.replaces, { name: nameOf(filters.replaces) }) });
+  }
+  if (filters.dropIn) out.push({ key: "dropIn", label: strings.dropIn });
   if (filters.language) out.push({ key: "language", label: filters.language });
   if (filters.license) out.push({ key: "license", label: filters.license });
   if (filters.category) out.push({ key: "category", label: filters.category });

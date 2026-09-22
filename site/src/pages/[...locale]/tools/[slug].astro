@@ -1,0 +1,142 @@
+---
+import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import ToolTabs from "../../../components/ToolTabs.tsx";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import Base from "../../../layouts/Base.astro";
+import { categories, toolBySlug, tools } from "../../../lib/catalog.ts";
+import { alternativesTo } from "../../../lib/filter.ts";
+import { day, stars } from "../../../lib/format.ts";
+import { slugify } from "../../../lib/slug.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } })))) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  tool: EnrichedTool;
+}
+
+const { locale, tool } = Astro.props;
+const m = messages(locale);
+const { repo, release, releases } = tool;
+const replacedBy = alternativesTo(tools, tool.slug);
+const category = categories[tool.category];
+const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
+const back = pathFor(locale, tool.replaces[0] ? `/alternatives/${tool.replaces[0].tool}/` : "/");
+const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
+const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
+const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
+const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool), fit: r.fit, note: r.note ?? null }));
+---
+
+<Base
+  title={format(m.tool.title, {
+    name: tool.name,
+    language: repo.language ?? m.tool.titleFallbackLanguage,
+    category: category?.name.toLowerCase() ?? tool.category,
+  })}
+  description={repo.description ?? format(m.tool.descriptionFallback, { name: tool.name })}
+>
+  <div class="wide">
+    <a class="back" href={back}>{m.listing.back}</a>
+    {
+      tool.replaces.length > 0 && (
+        <p class="context">
+          {m.tool.alternativeTo}{" "}
+          {tool.replaces.map((r, i) => (
+            <>
+              {i > 0 && ", "}
+              <a href={pathFor(locale, `/alternatives/${r.tool}/`)}>{nameOf(r.tool)}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
+    <h1>
+      {tool.name}
+      {
+        repo.archived && (
+          <a class="mark mark-archived" href={`${pathFor(locale, "/about/")}#archived`}>
+            {m.tool.archived}
+          </a>
+        )
+      }
+    </h1>
+
+    <div class="tool-layout">
+      <ToolTabs
+        client:load
+        locale={locale}
+        strings={m.islands}
+        slug={tool.slug}
+        repository={tool.repository}
+        releases={releases}
+        latest={release ? { tag: release.tag, signed: release.signed } : null}
+        replaces={replaces}
+        alternatives={replacedBy}
+      />
+
+      <aside class="about">
+        <p class="section-label">{m.tool.aboutLabel}</p>
+        {repo.description && <p class="about-description">{repo.description}</p>}
+        {repo.archived && <p class="archived-note">{m.tool.archivedNote}</p>}
+        {tool.affiliation && <p class="affiliation">{tool.affiliation}</p>}
+
+        <div class="badges">
+          {repo.language && <span class="tag">{repo.language}</span>}
+          <a class="tag" href={pathFor(locale, `/categories/${slugify(tool.category)}/`)}>
+            {category?.name ?? tool.category}
+          </a>
+          {repo.license && <span class="tag">{repo.license}</span>}
+          {release?.signed && <a class="tag" href={`${pathFor(locale, "/about/")}#signed`}>{m.tool.signed}</a>}
+          {
+            tool.maintainerVerified && (
+              <a class="tag" href={`${pathFor(locale, "/about/")}#verified`}>
+                {m.tool.verified}
+              </a>
+            )
+          }
+        </div>
+
+        <dl class="about-facts">
+          <div>
+            <dt>{m.tool.stars}</dt>
+            <dd>{stars(repo.stars)}</dd>
+          </div>
+          <div>
+            <dt>{m.tool.forks}</dt>
+            <dd>{stars(repo.forks)}</dd>
+          </div>
+          <div>
+            <dt>{m.tool.latest}</dt>
+            <dd>{release ? <a href={release.url}>{release.tag}</a> : m.tool.noRelease}</dd>
+          </div>
+          <div>
+            <dt>{m.tool.lastPush}</dt>
+            <dd>{day(repo.pushedAt)}</dd>
+          </div>
+        </dl>
+
+        {
+          topics.length > 0 && (
+            <div class="tags">
+              {topics.map((topic) => (
+                <span class="tag">#{topic}</span>
+              ))}
+            </div>
+          )
+        }
+
+        <p class="about-links">
+          <a class="repo-link" href={source}>github.com/{repo.fullName}{tool.path && `/${tool.path}`} ↗</a>
+          {repo.homepage && <a href={repo.homepage}>{m.tool.website}</a>}
+          <a href={edit}>{m.tool.edit}</a>
+        </p>
+      </aside>
+    </div>
+  </div>
+</Base>

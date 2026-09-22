@@ -1,0 +1,188 @@
+import { islands } from "./islands.es.ts";
+import type { Messages } from "./messages.ts";
+import { pages } from "./pages.es.ts";
+
+export const es: Messages = {
+  locale: {
+    name: "Español",
+    htmlLang: "es",
+    ogLocale: "es_ES",
+  },
+
+  chrome: {
+    skipToContent: "Saltar al contenido",
+    brandLabel: "awesome-alternatives, inicio",
+    searchLabel: "Buscar en el catálogo",
+    searchPlaceholder: "Buscar alternativas",
+    searchSubmit: "Buscar",
+    languageLabel: "Idioma",
+    languageSwitch: "Cambiar de idioma",
+    feedTitle: "awesome-alternatives: herramientas nuevas",
+    socialAlt: "awesome-alternatives: di qué usas y qué necesitas.",
+    nav: {
+      browse: "Explorar",
+      about: "Acerca de",
+      contribute: "Añadir una herramienta",
+      github: "GitHub",
+    },
+    footer: {
+      label: "Pie de página",
+      catalog: "Catálogo",
+      code: "código",
+      data: "datos",
+      dataLink: "de GitHub, cada noche",
+      howItWorks: "Cómo funciona",
+      rss: "Feed RSS",
+      legalNotice: "Aviso legal",
+      privacy: "Privacidad",
+      github: "GitHub ↗",
+    },
+  },
+
+  home: {
+    title: "awesome-alternatives: encuentra lo que sustituye a la herramienta que usas",
+    description:
+      "Busca una alternativa a una herramienta de desarrollo por lenguaje, licencia y nivel de sustitución. Las estrellas, las versiones y las firmas vienen directamente de GitHub.",
+    eyebrow: "Encuentra lo que sustituye a la herramienta que usas",
+    heading: "Di qué usas y qué necesitas.",
+    lede: "{count} herramientas, con datos de versiones extraídos de GitHub cada noche, nunca escritos a mano",
+    noscriptBefore: "La búsqueda necesita JavaScript. Todas las herramientas están listadas abajo: ",
+    noscriptLink: "explora por la herramienta que quieres sustituir",
+    noscriptAfter: ".",
+    browseLabel: "Explorar por herramienta",
+    allTools: "Todas las herramientas",
+    categories: "Categorías",
+    languages: "Lenguajes",
+    licenses: "Licencias",
+    examples: [
+      "semantic-release, pero escrito en Rust",
+      "una sustitución directa de webpack, más rápida",
+      "Redis, pero multihilo",
+      "generador de changelog bajo MIT",
+      "sustituir Terraform",
+    ],
+  },
+
+  listing: {
+    back: "← volver",
+    browse: "explorar",
+    toolCount: { one: "1 herramienta", other: "{n} herramientas" },
+  },
+
+  index: {
+    alternatives: {
+      title: "Alternativas a herramientas de desarrollo populares",
+      description:
+        "{count} herramientas de desarrollo y lo que sustituye a cada una, comparadas por nivel de sustitución, licencia y estrellas.",
+      heading: "Alternativas",
+      lede: "{count} herramientas a las que algo del catálogo sustituye.",
+    },
+    categories: {
+      title: "Categorías de herramientas de desarrollo",
+      description: "{count} categorías de herramientas de desarrollo, cada una con sus opciones de código abierto una al lado de otra.",
+      heading: "Categorías",
+      lede: "{count} categorías, desde la automatización de versiones hasta los emuladores de terminal.",
+    },
+    languages: {
+      title: "Herramientas de desarrollo por lenguaje",
+      description: "Explora el catálogo por el lenguaje en el que está escrita cada herramienta, entre {count} lenguajes.",
+      heading: "Lenguajes",
+      lede: "El lenguaje que GitHub indica para cada repositorio.",
+    },
+    licenses: {
+      title: "Herramientas de desarrollo por licencia",
+      description: "Explora el catálogo por licencia, entre {count} licencias detectadas por GitHub.",
+      heading: "Licencias",
+      lede: "La licencia que GitHub detecta en cada repositorio. Other significa un archivo de licencia que GitHub no ha podido asociar a una licencia conocida.",
+    },
+    tools: {
+      title: "Todas las herramientas del catálogo",
+      description: "Las {count} herramientas de awesome-alternatives, con lenguaje, licencia, estrellas y última versión.",
+      heading: "Todas las herramientas",
+      lede: "Todas las herramientas del catálogo, por nombre.",
+    },
+  },
+
+  category: {
+    context: "categoría",
+    title: "{name}: {count} herramientas de código abierto",
+    description: "{description} {count} herramientas comparadas por lenguaje, licencia, estrellas y última versión.",
+  },
+
+  language: {
+    context: "lenguaje",
+    title: "Herramientas de desarrollo escritas en {name}",
+    description: "{count} herramientas del catálogo escritas en {name}, con licencia, estrellas y última versión.",
+    lede: "Herramientas cuyo repositorio GitHub identifica mayoritariamente como {name}.",
+  },
+
+  license: {
+    context: "licencia",
+    title: "Herramientas de desarrollo bajo {name}",
+    description: "{count} herramientas del catálogo con licencia {name}, con lenguaje, estrellas y última versión.",
+    lede: "Herramientas cuyo repositorio GitHub indica bajo la licencia {name}.",
+  },
+
+  target: {
+    title: "Alternativas a {name}",
+    description:
+      "{count} alternativas a {name}, en {languages}. Compara el nivel de sustitución, la licencia, las estrellas y la última versión firmada.",
+    context: "alternativas",
+    contextTo: "a",
+    archived: "archivado",
+    aboutLink: "Sobre {name} →",
+  },
+
+  tool: {
+    title: "{name}: {language} para {category}",
+    titleFallbackLanguage: "herramienta",
+    descriptionFallback: "{name} en el catálogo de awesome-alternatives.",
+    alternativeTo: "alternativa a",
+    archived: "archivado",
+    aboutLabel: "Acerca de",
+    archivedNote:
+      "Este repositorio está archivado y ya no recibe cambios. Aparece en la lista para que puedas encontrar lo que lo sustituye.",
+    signed: "✓ firmada",
+    verified: "✓ verificada",
+    stars: "Estrellas",
+    forks: "Forks",
+    latest: "Última versión",
+    noRelease: "ninguna",
+    lastPush: "Último push",
+    website: "Sitio web ↗",
+    edit: "Editar esta entrada",
+  },
+
+  contribute: {
+    title: "Añadir una herramienta a awesome-alternatives",
+    description:
+      "Cómo incluir una herramienta de desarrollo en el catálogo: la entrada YAML, lo que comprueba la CI y cómo los mantenedores verifican su herramienta.",
+    eyebrow: "Contribuir",
+    heading: "Añadir una herramienta",
+    lede: "Cada entrada es un pequeño archivo YAML en el repositorio. Escríbela tú en un pull request, o describe la herramienta en una issue y un mantenedor la escribe por ti.",
+    openPullRequest: "Abrir un pull request ↗",
+    suggest: "Proponer una herramienta en su lugar ↗",
+    guideInEnglish: "La guía que sigue está en inglés, igual que el repositorio que describe.",
+  },
+
+  notFound: {
+    title: "No encontrado",
+    description: "Esta página no está en el catálogo.",
+    heading: "No está en el catálogo",
+    ledeBefore: "En esta dirección no hay nada. ",
+    ledeSearch: "Busca en el catálogo",
+    ledeBetween: ", o ",
+    ledeAdd: "añade la herramienta",
+    ledeAfter: " que buscabas.",
+  },
+
+  feed: {
+    title: "awesome-alternatives: herramientas nuevas",
+    description: "Alternativas de código abierto añadidas recientemente al catálogo de awesome-alternatives.",
+    joined: "{name} se suma al catálogo",
+    replaces: "Sustituye a {names}.",
+  },
+
+  islands,
+  pages,
+};

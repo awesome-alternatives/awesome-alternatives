@@ -1,6 +1,12 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
+import { format } from "../i18n/index.ts";
 
 export const FEED_SIZE = 50;
+
+export interface FeedStrings {
+  joined: string;
+  replaces: string;
+}
 
 export interface FeedItem {
   title: string;
@@ -20,13 +26,18 @@ function sentence(text: string): string {
   return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
 }
 
-export function feedItem(tool: EnrichedTool, nameOf: (slug: string) => string): FeedItem {
+export function feedItem(
+  tool: EnrichedTool,
+  nameOf: (slug: string) => string,
+  strings: FeedStrings,
+  link: (path: string) => string = (path) => path,
+): FeedItem {
   const replaces = tool.replaces.map((r) => nameOf(r.tool));
-  const summary = sentence(tool.repo.description ?? `${tool.name} joined the catalog`);
+  const summary = sentence(tool.repo.description ?? format(strings.joined, { name: tool.name }));
   return {
     title: tool.name,
-    link: `/tools/${tool.slug}/`,
+    link: link(`/tools/${tool.slug}/`),
     pubDate: new Date(tool.addedAt),
-    description: replaces.length ? `${summary} Replaces ${replaces.join(", ")}.` : summary,
+    description: replaces.length ? `${summary} ${format(strings.replaces, { names: replaces.join(", ") })}` : summary,
   };
 }

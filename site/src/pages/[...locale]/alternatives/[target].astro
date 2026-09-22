@@ -1,0 +1,57 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import AlternativesList from "../../../components/AlternativesList.tsx";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import Base from "../../../layouts/Base.astro";
+import { type Target, targets } from "../../../lib/catalog.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(
+    targets().map((target) => ({ params: { target: target.slug }, props: { target } })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  target: Target;
+}
+
+const { locale, target } = Astro.props;
+const m = messages(locale);
+const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
+---
+
+<Base
+  title={format(m.target.title, { name: target.name })}
+  description={format(m.target.description, {
+    count: target.alternatives.length,
+    name: target.name,
+    languages: languages.join(", "),
+  })}
+>
+  <a class="back" href={`${pathFor(locale, "/")}#browse`}>{m.listing.back}</a>
+  <p class="context">
+    <a href={pathFor(locale, "/alternatives/")}>{m.target.context}</a> {m.target.contextTo}
+  </p>
+  <h1>
+    {target.name}
+    {target.listed?.repo.archived && <span class="mark mark-archived">{m.target.archived}</span>}
+  </h1>
+  {
+    target.listed && (
+      <p class="lede">
+        {target.listed.repo.description}{" "}
+        <a href={pathFor(locale, `/tools/${target.slug}/`)}>{format(m.target.aboutLink, { name: target.name })}</a>
+      </p>
+    )
+  }
+  <AlternativesList
+    client:load
+    locale={locale}
+    strings={m.islands}
+    tools={target.alternatives}
+    target={target.slug}
+  />
+</Base>
