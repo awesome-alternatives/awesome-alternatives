@@ -61,14 +61,35 @@ stargazers of the largest repositories; for those, the check is skipped rather t
 
 ## Verifying a tool you maintain
 
-Add `.awesome-alternatives.yml` at the root of the tool's default branch:
+Add a file named `.awesome-alternatives` at the root of the tool's default branch, with the
+slug of its entry on a line:
 
-```yaml
-slug: release-plz
+```
+release-plz
 ```
 
 The nightly refresh reads it and marks the entry as verified. Only someone with write access to
 the repository can add it, so the mark says the maintainers stand behind the entry.
+
+One slug per line, so a repository that hosts several listed tools can vouch for all of them in the
+same file. Blank lines and `#` comments are ignored.
+
+### Monorepos
+
+Several entries can point at the same repository when each one says where its tool lives with
+`path`:
+
+```yaml
+name: oxlint
+repository: https://github.com/oxc-project/oxc
+path: apps/oxlint
+category: javascript-lint-format
+```
+
+Two entries sharing a repository without distinct paths are rejected. For an entry with a `path`,
+the refresh reads `.awesome-alternatives` both at the repository root and in that directory, so each
+package can carry its own file. Stars, releases and the other facts are still those of the whole
+repository.
 
 ## Running the checks locally
 

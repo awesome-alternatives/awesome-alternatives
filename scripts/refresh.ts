@@ -40,6 +40,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     category: tool.category,
     replaces: tool.replaces ?? [],
     affiliation: tool.affiliation ?? null,
+    path: tool.path ?? null,
     addedAt: addedAt(tool.slug, carried, history, now),
     repo: evidence.repo,
     release: evidence.release,

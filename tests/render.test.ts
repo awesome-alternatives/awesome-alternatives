@@ -11,6 +11,7 @@ function entry(slug: string, overrides: Partial<EnrichedTool> = {}, archived = f
     category: "c",
     replaces: [],
     affiliation: null,
+    path: null,
     addedAt: "2026-01-01T00:00:00.000Z",
     repo: {
       fullName: `acme/${slug}`,

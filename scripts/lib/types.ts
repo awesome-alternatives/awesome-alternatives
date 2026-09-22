@@ -12,6 +12,7 @@ export interface ToolEntry {
   category: string;
   replaces?: Replacement[];
   affiliation?: string;
+  path?: string;
 }
 
 export interface Tool extends ToolEntry {
@@ -73,6 +74,7 @@ export interface EnrichedTool {
   category: string;
   replaces: Replacement[];
   affiliation: string | null;
+  path: string | null;
   addedAt: string;
   repo: RepoFacts;
   release: ReleaseFacts | null;

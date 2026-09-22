@@ -13,11 +13,11 @@ export async function gather(gh: GitHub, tool: Tool, withStars: boolean): Promis
 
   const [release, claim, recentStars] = await Promise.all([
     fetchRelease(gh, repo.fullName),
-    fetchMaintainerClaim(gh, repo.fullName, repo.defaultBranch),
+    fetchMaintainerClaim(gh, repo.fullName, repo.defaultBranch, tool.path),
     withStars ? fetchRecentStargazers(gh, repo.fullName, repo.stars) : Promise.resolve([]),
   ]);
 
-  return { repo, release, recentStars, maintainerVerified: claim === tool.slug };
+  return { repo, release, recentStars, maintainerVerified: claim.includes(tool.slug) };
 }
 
 export async function mapLimit<T, R>(items: readonly T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
