@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.11.0] - 2026-09-22
+
+### Features
+
+- feat(site): add the >alt logo, favicon and social preview image (#30)
+
 ## [0.10.0] - 2026-09-22
 
 ### Features
