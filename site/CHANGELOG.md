@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.13.1] - 2026-09-22
+
+### Bug Fixes
+
+- fix(site): drop the favicon background (#34)
+
 ## [0.13.0] - 2026-09-22
 
 ### Features
