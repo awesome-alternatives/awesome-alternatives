@@ -1,3 +1,4 @@
+import type { ComponentChildren } from "preact";
 import { day, FIT_LABEL, FLAG_LABEL, stars } from "../lib/format.ts";
 import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
@@ -73,7 +74,7 @@ function IndexLink({ index, value, fallback }: { index: "languages" | "licenses"
   return value ? <a href={`/${index}/${slugify(value)}/`}>{value}</a> : fallback;
 }
 
-function Fact({ label, value }: { label: string; value: React.ReactNode }) {
+function Fact({ label, value }: { label: string; value: ComponentChildren }) {
   return (
     <div>
       <dt>{label}</dt>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
@@ -80,7 +80,7 @@ export default function Search({ names, examples }: Props) {
           value={query}
           maxLength={300}
           placeholder="Describe what you are looking for"
-          onChange={(e) => setQuery(e.target.value)}
+          onInput={(e) => setQuery(e.currentTarget.value)}
         />
         <button type="submit" disabled={state.kind === "loading"}>
           Search
