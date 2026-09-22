@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.9.0] - 2026-09-22
+
+### Features
+
+- feat(site): brutalist redesign, with repository topics on tool pages (#28)
+
 ## [0.8.1] - 2026-09-22
 
 ### Bug Fixes
