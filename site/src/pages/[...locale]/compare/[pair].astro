@@ -1,0 +1,221 @@
+---
+import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
+import type { GetStaticPaths } from "astro";
+
+import CompareRow from "../../../components/CompareRow.astro";
+import { Mark } from "../../../components/Mark.tsx";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor, plural } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import Base from "../../../layouts/Base.astro";
+import { cadenceDays } from "../../../lib/cadence.ts";
+import { pairs, toolBySlug } from "../../../lib/catalog.ts";
+import type { Pair } from "../../../lib/compare.ts";
+import { day, stars } from "../../../lib/format.ts";
+import { slugify } from "../../../lib/slug.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(
+    pairs.map((pair) => ({ params: { pair: pair.slug }, props: { pair } })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  pair: Pair<EnrichedTool>;
+}
+
+const { locale, pair } = Astro.props;
+const { a, b } = pair;
+const m = messages(locale);
+const card = m.islands.card;
+const flagLabels: Record<string, string> = m.islands.flag;
+const names: [string, string] = [a.name, b.name];
+const heading = format(m.compare.title, { a: a.name, b: b.name });
+const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
+const backTarget = pair.shared[0]?.target ?? pair.edges[0]?.to;
+const back = pathFor(locale, backTarget ? `/alternatives/${backTarget}/` : `/tools/${a.slug}/`);
+const cadence = (tool: EnrichedTool) => {
+  const days = cadenceDays(tool.releases);
+  return days === null ? m.compare.cadenceUnknown : plural(locale, m.compare.cadence, days);
+};
+const flagsOf = (tool: EnrichedTool) => tool.flags.filter((flag) => flag !== "archived");
+const languageHref = (language: string) => pathFor(locale, `/languages/${slugify(language)}/`);
+const licenseHref = (license: string) => pathFor(locale, `/licenses/${slugify(license)}/`);
+const flagHref = (flag: string) => pathFor(locale, `/about/#${flag in flagLabels ? flag : "warnings"}`);
+const fitHref = (fit: string) => pathFor(locale, `/about/#${fit}`);
+const targetHref = (target: string) => pathFor(locale, `/alternatives/${target}/`);
+const targetLabel = (target: string) => format(m.compare.targetLink, { name: nameOf(target) });
+---
+
+<Base
+  title={heading}
+  description={format(m.compare.description, { a: a.name, b: b.name })}
+>
+  <div class="wide">
+    <a class="back" href={back}>{m.listing.back}</a>
+    <p class="context">{m.compare.context}</p>
+    <h1>{heading}</h1>
+    <p class="lede">{m.compare.lede}</p>
+
+    <table class="compare" role="table">
+      <caption class="visually-hidden">{heading}</caption>
+      <thead role="rowgroup">
+        <tr role="row">
+          <th role="columnheader" scope="col"><span class="visually-hidden">{m.compare.factColumn}</span></th>
+          <th role="columnheader" scope="col">
+            <a href={pathFor(locale, `/tools/${a.slug}/`)}>{a.name}</a>
+          </th>
+          <th role="columnheader" scope="col">
+            <a href={pathFor(locale, `/tools/${b.slug}/`)}>{b.name}</a>
+          </th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <CompareRow label={card.factLanguage} names={names}>
+          <Fragment slot="a">
+            {
+              a.repo.language ? (
+                <a href={languageHref(a.repo.language)}>{a.repo.language}</a>
+              ) : (
+                card.unknownLanguage
+              )
+            }
+          </Fragment>
+          <Fragment slot="b">
+            {
+              b.repo.language ? (
+                <a href={languageHref(b.repo.language)}>{b.repo.language}</a>
+              ) : (
+                card.unknownLanguage
+              )
+            }
+          </Fragment>
+        </CompareRow>
+
+        <CompareRow label={card.factLicense} names={names}>
+          <Fragment slot="a">
+            {a.repo.license ? <a href={licenseHref(a.repo.license)}>{a.repo.license}</a> : card.noLicense}
+          </Fragment>
+          <Fragment slot="b">
+            {b.repo.license ? <a href={licenseHref(b.repo.license)}>{b.repo.license}</a> : card.noLicense}
+          </Fragment>
+        </CompareRow>
+
+        <CompareRow label={card.factStars} names={names}>
+          <Fragment slot="a">{stars(a.repo.stars)}</Fragment>
+          <Fragment slot="b">{stars(b.repo.stars)}</Fragment>
+        </CompareRow>
+
+        <CompareRow label={card.factLatest} names={names}>
+          <Fragment slot="a">
+            {
+              a.release ? (
+                <>
+                  <a href={a.release.url}>{a.release.tag}</a>
+                  {a.release.signed && (
+                    <Mark icon="signed" label={card.signed} href={pathFor(locale, "/about/#signed")} />
+                  )}
+                </>
+              ) : (
+                m.tool.noRelease
+              )
+            }
+          </Fragment>
+          <Fragment slot="b">
+            {
+              b.release ? (
+                <>
+                  <a href={b.release.url}>{b.release.tag}</a>
+                  {b.release.signed && (
+                    <Mark icon="signed" label={card.signed} href={pathFor(locale, "/about/#signed")} />
+                  )}
+                </>
+              ) : (
+                m.tool.noRelease
+              )
+            }
+          </Fragment>
+        </CompareRow>
+
+        <CompareRow label={card.factLastPush} names={names}>
+          <Fragment slot="a">{day(a.repo.pushedAt)}</Fragment>
+          <Fragment slot="b">{day(b.repo.pushedAt)}</Fragment>
+        </CompareRow>
+
+        <CompareRow label={m.compare.factCadence} names={names}>
+          <Fragment slot="a">{cadence(a)}</Fragment>
+          <Fragment slot="b">{cadence(b)}</Fragment>
+        </CompareRow>
+
+        <CompareRow label={m.compare.factFlags} names={names}>
+          <Fragment slot="a">
+            {
+              flagsOf(a).length > 0
+                ? flagsOf(a).map((flag) => (
+                    <a class="mark mark-warn" href={flagHref(flag)}>
+                      {flagLabels[flag] ?? flag}
+                    </a>
+                  ))
+                : m.compare.noFlags
+            }
+          </Fragment>
+          <Fragment slot="b">
+            {
+              flagsOf(b).length > 0
+                ? flagsOf(b).map((flag) => (
+                    <a class="mark mark-warn" href={flagHref(flag)}>
+                      {flagLabels[flag] ?? flag}
+                    </a>
+                  ))
+                : m.compare.noFlags
+            }
+          </Fragment>
+        </CompareRow>
+      </tbody>
+    </table>
+
+    <section class="compare-relation">
+      <p class="section-label">{m.compare.relationLabel}</p>
+      <ul class="relations">
+        {
+          pair.edges.map((edge) => (
+            <li>
+              <p class="relation-lead">
+                {format(m.compare.replacesLine, { from: nameOf(edge.from), to: nameOf(edge.to) })}{" "}
+                <a href={targetHref(edge.to)}>{targetLabel(edge.to)}</a>
+              </p>
+              <p class="relation-side">
+                <a class={`fit fit-${edge.fit}`} href={fitHref(edge.fit)}>
+                  {m.islands.fit[edge.fit]}
+                </a>
+                {edge.note && <span class="relation-note">{edge.note}</span>}
+              </p>
+            </li>
+          ))
+        }
+        {
+          pair.shared.map((shared) => (
+            <li>
+              <p class="relation-lead">
+                {format(m.compare.sharedLine, { target: nameOf(shared.target) })}{" "}
+                <a href={targetHref(shared.target)}>{targetLabel(shared.target)}</a>
+              </p>
+              {[
+                { tool: a, relation: shared.a },
+                { tool: b, relation: shared.b },
+              ].map(({ tool, relation }) => (
+                <p class="relation-side">
+                  <a class={`fit fit-${relation.fit}`} href={fitHref(relation.fit)}>
+                    {m.islands.fit[relation.fit]}
+                  </a>
+                  <span class="relation-who">{tool.name}</span>
+                  {relation.note && <span class="relation-note">{relation.note}</span>}
+                </p>
+              ))}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</Base>

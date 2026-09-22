@@ -6,7 +6,8 @@ import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
-import { type Target, targets } from "../../../lib/catalog.ts";
+import { pairs, type Target, targets } from "../../../lib/catalog.ts";
+import { comparePath, pairForTarget } from "../../../lib/compare.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -21,6 +22,7 @@ interface Props {
 const { locale, target } = Astro.props;
 const m = messages(locale);
 const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
+const comparable = pairForTarget(pairs, target.slug);
 ---
 
 <Base
@@ -44,6 +46,15 @@ const languages = [...new Set(target.alternatives.map((t) => t.repo.language).fi
       <p class="lede">
         {target.listed.repo.description}{" "}
         <a href={pathFor(locale, `/tools/${target.slug}/`)}>{format(m.target.aboutLink, { name: target.name })}</a>
+      </p>
+    )
+  }
+  {
+    comparable && (
+      <p class="compare-link">
+        <a href={pathFor(locale, comparePath(comparable.a.slug, comparable.b.slug))}>
+          {format(m.compare.entry, { a: comparable.a.name, b: comparable.b.name })}
+        </a>
       </p>
     )
   }

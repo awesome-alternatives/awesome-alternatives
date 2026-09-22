@@ -1,9 +1,12 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
 import { LOCALES, pathFor } from "../i18n/index.ts";
+import { comparePairs } from "./compare.ts";
 import { listedOwners } from "./owners.ts";
 import { slugify } from "./slug.ts";
 
-type CatalogEntry = Pick<EnrichedTool, "slug" | "replaces"> & { repo: { fullName: string } };
+type CatalogEntry = Pick<EnrichedTool, "slug" | "replaces"> & {
+  repo: { fullName: string; archived: boolean; stars: number };
+};
 
 export interface SitemapAudit {
   missing: string[];
@@ -21,6 +24,7 @@ export function barePaths(tools: CatalogEntry[]): string[] {
     ...tools.map((t) => `/tools/${t.slug}/`),
     ...[...targets].map((slug) => `/alternatives/${slug}/`),
     ...listedOwners(tools).map((login) => `/owners/${slugify(login)}/`),
+    ...comparePairs(tools).map((pair) => `/compare/${pair.slug}/`),
   ];
 }
 

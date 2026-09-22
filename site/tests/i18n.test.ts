@@ -78,6 +78,19 @@ describe("the catalogs", () => {
     assert.equal(new Set(langs).size, LOCALES.length);
   });
 
+  test("every locale carries every string, so a missing one fails the build instead of rendering English", () => {
+    const leaves = (value: unknown, at: string): string[] => {
+      if (typeof value !== "object" || value === null) return [`${at}=${typeof value}`];
+      if (Array.isArray(value)) return [`${at}[]=${value.length}`];
+      return Object.entries(value).flatMap(([key, child]) => leaves(child, `${at}.${key}`)).sort();
+    };
+    const english = leaves(en, "");
+    assert.ok(english.includes(".compare.relationLabel=string"));
+    for (const locale of LOCALES) {
+      assert.deepEqual(leaves(messages(locale), ""), english, locale);
+    }
+  });
+
   test("no translated string drops a placeholder the English one carries", () => {
     const tokens = (value: string) => [...value.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort();
     const walk = (english: unknown, other: unknown, path: string): void => {

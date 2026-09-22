@@ -177,6 +177,28 @@ export const es: Messages = {
     edit: "Editar esta entrada",
   },
 
+  compare: {
+    title: "{a} vs {b}",
+    description:
+      "{a} y {b} lado a lado: lenguaje, licencia, estrellas, versiones y la compatibilidad y la nota que los relacionan.",
+    context: "comparar",
+    lede: "Los mismos datos para ambos, leídos de GitHub cada noche, y la relación que revisó una persona.",
+    factColumn: "Dato",
+    factCadence: "Ritmo de versiones",
+    cadence: {
+      one: "alrededor de {n} día entre versiones",
+      other: "alrededor de {n} días entre versiones",
+    },
+    cadenceUnknown: "muy pocas versiones",
+    factFlags: "Avisos",
+    noFlags: "ninguno",
+    relationLabel: "Cómo se relacionan",
+    replacesLine: "{from} sustituye a {to}.",
+    sharedLine: "Ambos sustituyen a {target}.",
+    targetLink: "Alternativas a {name} →",
+    entry: "Comparar {a} y {b} →",
+  },
+
   contribute: {
     title: "Añadir una herramienta a awesome-alternatives",
     description:

@@ -1,0 +1,20 @@
+---
+interface Props {
+  label: string;
+  names: [string, string];
+}
+
+const { label, names } = Astro.props;
+---
+
+<tr role="row">
+  <th role="rowheader" scope="row">{label}</th>
+  <td role="cell">
+    <span class="compare-who" aria-hidden="true">{names[0]}</span>
+    <span class="compare-value"><slot name="a" /></span>
+  </td>
+  <td role="cell">
+    <span class="compare-who" aria-hidden="true">{names[1]}</span>
+    <span class="compare-value"><slot name="b" /></span>
+  </td>
+</tr>

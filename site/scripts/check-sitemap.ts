@@ -17,4 +17,4 @@ const { missing, unwanted } = auditSitemap(site, tools, listed);
 for (const url of missing) console.error(`sitemap is missing ${url}`);
 for (const url of unwanted) console.error(`sitemap should not list ${url}`);
 if (missing.length > 0 || unwanted.length > 0) process.exit(1);
-console.log(`sitemap lists ${listed.length} URLs, every tool and target included`);
+console.log(`sitemap lists ${listed.length} URLs, every tool, target and comparison included`);
