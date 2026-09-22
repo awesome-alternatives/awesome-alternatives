@@ -1,6 +1,162 @@
 {
   "tools": [
     {
+      "slug": "biome",
+      "name": "Biome",
+      "repository": "https://github.com/biomejs/biome",
+      "category": "javascript-lint-format",
+      "replaces": [
+        {
+          "tool": "eslint",
+          "fit": "partial",
+          "note": "Covers a subset of ESLint and typescript-eslint rules."
+        },
+        {
+          "tool": "prettier",
+          "fit": "full",
+          "note": "Its formatter targets Prettier-compatible output."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "biomejs/biome",
+        "description": "A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.",
+        "homepage": "https://biomejs.dev",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 25841,
+        "forks": 1235,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-07-27T20:30:22Z",
+        "pushedAt": "2026-09-22T15:03:31Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "@biomejs/biome@2.5.14",
+        "publishedAt": "2026-09-16T07:52:49Z",
+        "url": "https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.14",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "black",
+      "name": "Black",
+      "repository": "https://github.com/psf/black",
+      "category": "python-lint-format",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "psf/black",
+        "description": "The uncompromising Python code formatter",
+        "homepage": "https://black.readthedocs.io/en/stable/",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 41848,
+        "forks": 2880,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-03-14T19:54:45Z",
+        "pushedAt": "2026-09-22T14:12:14Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "26.5.1",
+        "publishedAt": "2026-05-18T16:52:38Z",
+        "url": "https://github.com/psf/black/releases/tag/26.5.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "bun",
+      "name": "Bun",
+      "repository": "https://github.com/oven-sh/bun",
+      "category": "javascript-runtime",
+      "replaces": [
+        {
+          "tool": "nodejs",
+          "fit": "full",
+          "note": "Aims at Node API compatibility, most packages run unchanged."
+        },
+        {
+          "tool": "npm",
+          "fit": "full",
+          "note": "bun install reads package.json and writes its own lockfile."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "oven-sh/bun",
+        "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+        "homepage": "https://bun.com",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 96004,
+        "forks": 5051,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-04-14T00:48:17Z",
+        "pushedAt": "2026-09-22T15:40:27Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "bun-v1.4.2",
+        "publishedAt": "2026-09-05T05:55:48Z",
+        "url": "https://github.com/oven-sh/bun/releases/tag/bun-v1.4.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "changesets",
+      "name": "Changesets",
+      "repository": "https://github.com/changesets/changesets",
+      "category": "release-automation",
+      "replaces": [
+        {
+          "tool": "semantic-release",
+          "fit": "full",
+          "note": "Versions from changeset files written in each pull request instead of commit messages."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "changesets/changesets",
+        "description": "🦋 A tool to manage versioning and changelogs with a focus on monorepos",
+        "homepage": "https://changesets.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 12424,
+        "forks": 835,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-03-21T22:33:37Z",
+        "pushedAt": "2026-09-22T03:34:51Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "@changesets/cli@3.0.3",
+        "publishedAt": "2026-09-14T15:27:19Z",
+        "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/cli%403.0.3",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "cocogitto",
       "name": "cocogitto",
       "repository": "https://github.com/cocogitto/cocogitto",
@@ -38,6 +194,254 @@
       "flags": []
     },
     {
+      "slug": "deno",
+      "name": "Deno",
+      "repository": "https://github.com/denoland/deno",
+      "category": "javascript-runtime",
+      "replaces": [
+        {
+          "tool": "nodejs",
+          "fit": "full",
+          "note": "Runs most npm packages through its Node compatibility layer."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "denoland/deno",
+        "description": "A modern runtime for JavaScript and TypeScript.",
+        "homepage": "https://deno.com",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 108476,
+        "forks": 6376,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-05-15T01:34:26Z",
+        "pushedAt": "2026-09-22T00:30:07Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.9.7",
+        "publishedAt": "2026-09-17T09:04:55Z",
+        "url": "https://github.com/denoland/deno/releases/tag/v2.9.7",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "docker",
+      "name": "Docker Engine (Moby)",
+      "repository": "https://github.com/moby/moby",
+      "category": "container-engine",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "moby/moby",
+        "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+        "homepage": "https://mobyproject.org/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 72125,
+        "forks": 19228,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-01-18T18:10:57Z",
+        "pushedAt": "2026-09-22T11:34:12Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "docker-v29.8.1",
+        "publishedAt": "2026-09-15T17:05:26Z",
+        "url": "https://github.com/moby/moby/releases/tag/docker-v29.8.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "dprint",
+      "name": "dprint",
+      "repository": "https://github.com/dprint/dprint",
+      "category": "javascript-lint-format",
+      "replaces": [
+        {
+          "tool": "prettier",
+          "fit": "full",
+          "note": "Plugin-based formatter covering JavaScript, TypeScript, JSON, Markdown and more."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "dprint/dprint",
+        "description": "Pluggable and configurable code formatting platform that unifies all your formatters.",
+        "homepage": "https://dprint.dev",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 4079,
+        "forks": 118,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-06-16T00:47:19Z",
+        "pushedAt": "2026-09-15T17:23:31Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "0.57.4",
+        "publishedAt": "2026-09-05T22:02:39Z",
+        "url": "https://github.com/dprint/dprint/releases/tag/0.57.4",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "dragonfly",
+      "name": "Dragonfly",
+      "repository": "https://github.com/dragonflydb/dragonfly",
+      "category": "key-value-store",
+      "replaces": [
+        {
+          "tool": "redis",
+          "fit": "drop-in",
+          "note": "Redis and Memcached API compatible, multithreaded."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "dragonflydb/dragonfly",
+        "description": "A modern replacement for Redis and Memcached",
+        "homepage": "https://www.dragonflydb.io/",
+        "language": "C++",
+        "license": "Other",
+        "stars": 31654,
+        "forks": 1265,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-12-11T10:00:42Z",
+        "pushedAt": "2026-09-22T14:10:08Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.0.0",
+        "publishedAt": "2026-09-16T10:29:28Z",
+        "url": "https://github.com/dragonflydb/dragonfly/releases/tag/v2.0.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "elasticsearch",
+      "name": "Elasticsearch",
+      "repository": "https://github.com/elastic/elasticsearch",
+      "category": "search-engine",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "elastic/elasticsearch",
+        "description": "Free and Open Source, Distributed, RESTful Search Engine",
+        "homepage": "https://www.elastic.co/products/elasticsearch",
+        "language": "Java",
+        "license": "Other",
+        "stars": 77962,
+        "forks": 26081,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2010-02-08T13:20:56Z",
+        "pushedAt": "2026-09-22T15:48:04Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v9.5.4",
+        "publishedAt": "2026-09-15T18:19:18Z",
+        "url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.4",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "esbuild",
+      "name": "esbuild",
+      "repository": "https://github.com/evanw/esbuild",
+      "category": "javascript-bundler",
+      "replaces": [
+        {
+          "tool": "webpack",
+          "fit": "partial",
+          "note": "Bundling and minification with a smaller plugin API."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "evanw/esbuild",
+        "description": "An extremely fast bundler for the web",
+        "homepage": "https://esbuild.github.io/",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 40067,
+        "forks": 1345,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-06-14T16:08:50Z",
+        "pushedAt": "2026-08-09T17:20:12Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v0.28.2",
+        "publishedAt": "2026-08-08T19:58:58Z",
+        "url": "https://github.com/evanw/esbuild/releases/tag/v0.28.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "eslint",
+      "name": "ESLint",
+      "repository": "https://github.com/eslint/eslint",
+      "category": "javascript-lint-format",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "eslint/eslint",
+        "description": "Find and fix problems in your JavaScript code.",
+        "homepage": "https://eslint.org",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 27516,
+        "forks": 5188,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-06-29T23:59:48Z",
+        "pushedAt": "2026-09-22T09:49:27Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v10.11.0",
+        "publishedAt": "2026-09-18T20:13:06Z",
+        "url": "https://github.com/eslint/eslint/releases/tag/v10.11.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "ferrflow",
       "name": "FerrFlow",
       "repository": "https://github.com/FerrLabs/FerrFlow",
@@ -62,15 +466,47 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-09-22T06:52:49Z",
+        "pushedAt": "2026-09-22T15:26:53Z",
         "defaultBranch": "main"
       },
       "release": {
-        "tag": "v7.21.10",
-        "publishedAt": "2026-09-21T19:42:01Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.21.10",
+        "tag": "v7.24.4",
+        "publishedAt": "2026-09-22T15:39:43Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.4",
         "source": "release",
         "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "flake8",
+      "name": "Flake8",
+      "repository": "https://github.com/PyCQA/flake8",
+      "category": "python-lint-format",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "PyCQA/flake8",
+        "description": "flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.",
+        "homepage": "https://flake8.pycqa.org",
+        "language": "Python",
+        "license": "Other",
+        "stars": 3823,
+        "forks": 359,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-09-13T17:06:24Z",
+        "pushedAt": "2026-08-17T23:41:40Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "7.3.0",
+        "publishedAt": null,
+        "url": "https://github.com/PyCQA/flake8/releases/tag/7.3.0",
+        "source": "tag",
+        "signed": true
       },
       "maintainerVerified": false,
       "flags": []
@@ -94,7 +530,7 @@
         "homepage": "https://git-cliff.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 12257,
+        "stars": 12258,
         "forks": 328,
         "archived": false,
         "fork": false,
@@ -112,6 +548,112 @@
       },
       "maintainerVerified": false,
       "flags": []
+    },
+    {
+      "slug": "httpie",
+      "name": "HTTPie",
+      "repository": "https://github.com/httpie/cli",
+      "category": "http-client",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "httpie/cli",
+        "description": "🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.",
+        "homepage": "https://httpie.io",
+        "language": "Python",
+        "license": "BSD-3-Clause",
+        "stars": 38561,
+        "forks": 4008,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-02-25T12:39:13Z",
+        "pushedAt": "2024-12-17T17:30:35Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "3.2.4",
+        "publishedAt": "2024-11-01T17:33:07Z",
+        "url": "https://github.com/httpie/cli/releases/tag/3.2.4",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": [
+        "inactive"
+      ]
+    },
+    {
+      "slug": "jest",
+      "name": "Jest",
+      "repository": "https://github.com/jestjs/jest",
+      "category": "javascript-test-runner",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "jestjs/jest",
+        "description": "Delightful JavaScript Testing.",
+        "homepage": "https://jestjs.io",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 45463,
+        "forks": 6725,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-12-10T00:18:04Z",
+        "pushedAt": "2026-09-21T01:15:32Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v30.5.2",
+        "publishedAt": "2026-09-18T13:57:03Z",
+        "url": "https://github.com/jestjs/jest/releases/tag/v30.5.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "keydb",
+      "name": "KeyDB",
+      "repository": "https://github.com/Snapchat/KeyDB",
+      "category": "key-value-store",
+      "replaces": [
+        {
+          "tool": "redis",
+          "fit": "drop-in",
+          "note": "Multithreaded fork of Redis."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "Snapchat/KeyDB",
+        "description": "A Multithreaded Fork of Redis",
+        "homepage": "https://keydb.dev",
+        "language": "C++",
+        "license": "BSD-3-Clause",
+        "stars": 12505,
+        "forks": 675,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-02-01T14:50:00Z",
+        "pushedAt": "2024-05-29T08:55:22Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v6.3.4",
+        "publishedAt": "2023-10-30T20:26:08Z",
+        "url": "https://github.com/Snapchat/KeyDB/releases/tag/v6.3.4",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": [
+        "inactive"
+      ]
     },
     {
       "slug": "knope",
@@ -152,6 +694,604 @@
       "flags": []
     },
     {
+      "slug": "meilisearch",
+      "name": "Meilisearch",
+      "repository": "https://github.com/meilisearch/meilisearch",
+      "category": "search-engine",
+      "replaces": [
+        {
+          "tool": "elasticsearch",
+          "fit": "partial",
+          "note": "Search-as-you-type for apps and sites, not log analytics."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "meilisearch/meilisearch",
+        "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+        "homepage": "https://www.meilisearch.com",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 59369,
+        "forks": 2712,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-04-23T11:45:28Z",
+        "pushedAt": "2026-09-22T15:36:30Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.54.0",
+        "publishedAt": "2026-09-21T08:27:35Z",
+        "url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.54.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "nodejs",
+      "name": "Node.js",
+      "repository": "https://github.com/nodejs/node",
+      "category": "javascript-runtime",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "nodejs/node",
+        "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+        "homepage": "https://nodejs.org",
+        "language": "JavaScript",
+        "license": "Other",
+        "stars": 122034,
+        "forks": 37499,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-11-26T19:57:11Z",
+        "pushedAt": "2026-09-22T15:24:52Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v26.10.0",
+        "publishedAt": "2026-09-22T09:02:46Z",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.10.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "npm",
+      "name": "npm",
+      "repository": "https://github.com/npm/cli",
+      "category": "javascript-package-manager",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "npm/cli",
+        "description": "the package manager for JavaScript",
+        "homepage": "https://docs.npmjs.com/cli/",
+        "language": "JavaScript",
+        "license": "Other",
+        "stars": 10129,
+        "forks": 4755,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-07-05T23:26:52Z",
+        "pushedAt": "2026-09-21T16:24:40Z",
+        "defaultBranch": "latest"
+      },
+      "release": {
+        "tag": "libnpmpack-v9.1.13",
+        "publishedAt": "2026-08-26T21:48:48Z",
+        "url": "https://github.com/npm/cli/releases/tag/libnpmpack-v9.1.13",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "opensearch",
+      "name": "OpenSearch",
+      "repository": "https://github.com/opensearch-project/OpenSearch",
+      "category": "search-engine",
+      "replaces": [
+        {
+          "tool": "elasticsearch",
+          "fit": "full",
+          "note": "Fork of Elasticsearch 7.10.2, APIs have diverged since."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "opensearch-project/OpenSearch",
+        "description": "🔎 Open source distributed and RESTful search engine.",
+        "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 13756,
+        "forks": 2964,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-01-29T22:10:00Z",
+        "pushedAt": "2026-09-22T14:07:34Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "3.8.0",
+        "publishedAt": "2026-08-05T17:20:33Z",
+        "url": "https://github.com/opensearch-project/OpenSearch/releases/tag/3.8.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "opentofu",
+      "name": "OpenTofu",
+      "repository": "https://github.com/opentofu/opentofu",
+      "category": "infrastructure-as-code",
+      "replaces": [
+        {
+          "tool": "terraform",
+          "fit": "drop-in",
+          "note": "Fork of Terraform 1.5, reads the same configuration and state."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "opentofu/opentofu",
+        "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
+        "homepage": "https://opentofu.org",
+        "language": "Go",
+        "license": "MPL-2.0",
+        "stars": 30257,
+        "forks": 1375,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-08-16T20:01:36Z",
+        "pushedAt": "2026-09-22T14:45:50Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.12.6",
+        "publishedAt": "2026-08-19T11:40:07Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "oxc",
+      "name": "Oxc",
+      "repository": "https://github.com/oxc-project/oxc",
+      "category": "javascript-lint-format",
+      "replaces": [
+        {
+          "tool": "eslint",
+          "fit": "partial",
+          "note": "oxlint implements a large share of ESLint rules, without custom JavaScript plugins."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "oxc-project/oxc",
+        "description": "⚓ A collection of high-performance JavaScript tools.",
+        "homepage": "https://oxc.rs",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 22845,
+        "forks": 1314,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-02-09T05:46:51Z",
+        "pushedAt": "2026-09-22T15:35:07Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "oxlint_v1.85.0",
+        "publishedAt": "2026-09-21T15:31:51Z",
+        "url": "https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.85.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "parcel",
+      "name": "Parcel",
+      "repository": "https://github.com/parcel-bundler/parcel",
+      "category": "javascript-bundler",
+      "replaces": [
+        {
+          "tool": "webpack",
+          "fit": "full",
+          "note": "Works without configuration for most projects."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "parcel-bundler/parcel",
+        "description": "The zero configuration build tool for the web. 📦🚀",
+        "homepage": "https://parceljs.org",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 44023,
+        "forks": 2285,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-08-07T16:36:47Z",
+        "pushedAt": "2026-09-06T13:12:08Z",
+        "defaultBranch": "v2"
+      },
+      "release": {
+        "tag": "v2.16.4",
+        "publishedAt": "2026-02-02T03:22:20Z",
+        "url": "https://github.com/parcel-bundler/parcel/releases/tag/v2.16.4",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "pdm",
+      "name": "PDM",
+      "repository": "https://github.com/pdm-project/pdm",
+      "category": "python-packaging",
+      "replaces": [
+        {
+          "tool": "poetry",
+          "fit": "full",
+          "note": "Uses standard PEP 621 project metadata."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pdm-project/pdm",
+        "description": "A modern Python package and dependency manager supporting the latest PEP standards",
+        "homepage": "https://pdm-project.org",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 8669,
+        "forks": 494,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-12-27T03:50:57Z",
+        "pushedAt": "2026-09-22T00:57:57Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "2.29.2",
+        "publishedAt": "2026-09-17T07:00:04Z",
+        "url": "https://github.com/pdm-project/pdm/releases/tag/2.29.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "pip",
+      "name": "pip",
+      "repository": "https://github.com/pypa/pip",
+      "category": "python-packaging",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pypa/pip",
+        "description": "The Python package installer",
+        "homepage": "https://pip.pypa.io/",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 10287,
+        "forks": 3384,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-03-06T14:30:46Z",
+        "pushedAt": "2026-09-21T05:54:56Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "26.2.1",
+        "publishedAt": null,
+        "url": "https://github.com/pypa/pip/releases/tag/26.2.1",
+        "source": "tag",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "pnpm",
+      "name": "pnpm",
+      "repository": "https://github.com/pnpm/pnpm",
+      "category": "javascript-package-manager",
+      "replaces": [
+        {
+          "tool": "npm",
+          "fit": "full",
+          "note": "Same package.json, a content-addressed store and its own lockfile."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pnpm/pnpm",
+        "description": "Fast, disk space efficient package manager",
+        "homepage": "https://pnpm.io",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 36609,
+        "forks": 1748,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-01-28T07:40:43Z",
+        "pushedAt": "2026-09-22T15:52:42Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v12.5.1",
+        "publishedAt": "2026-09-18T21:48:32Z",
+        "url": "https://github.com/pnpm/pnpm/releases/tag/v12.5.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "podman",
+      "name": "Podman",
+      "repository": "https://github.com/podman-container-tools/podman",
+      "category": "container-engine",
+      "replaces": [
+        {
+          "tool": "docker",
+          "fit": "drop-in",
+          "note": "Docker-compatible CLI, daemonless and rootless by default."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "podman-container-tools/podman",
+        "description": "Podman: A tool for managing OCI containers and pods.",
+        "homepage": "https://podman.io",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 32912,
+        "forks": 3384,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-11-01T15:01:27Z",
+        "pushedAt": "2026-09-22T15:30:58Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v6.1.2",
+        "publishedAt": "2026-09-16T00:07:38Z",
+        "url": "https://github.com/podman-container-tools/podman/releases/tag/v6.1.2",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "poetry",
+      "name": "Poetry",
+      "repository": "https://github.com/python-poetry/poetry",
+      "category": "python-packaging",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "python-poetry/poetry",
+        "description": "Python packaging and dependency management made easy",
+        "homepage": "https://python-poetry.org",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 34308,
+        "forks": 2503,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-02-28T15:23:47Z",
+        "pushedAt": "2026-09-21T21:32:57Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "2.5.1",
+        "publishedAt": "2026-09-20T07:16:50Z",
+        "url": "https://github.com/python-poetry/poetry/releases/tag/2.5.1",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "prettier",
+      "name": "Prettier",
+      "repository": "https://github.com/prettier/prettier",
+      "category": "javascript-lint-format",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "prettier/prettier",
+        "description": "Prettier is an opinionated code formatter.",
+        "homepage": "https://prettier.io",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 52294,
+        "forks": 5015,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-11-29T17:13:37Z",
+        "pushedAt": "2026-09-22T10:21:34Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "3.9.8",
+        "publishedAt": "2026-09-17T21:55:32Z",
+        "url": "https://github.com/prettier/prettier/releases/tag/3.9.8",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "prometheus",
+      "name": "Prometheus",
+      "repository": "https://github.com/prometheus/prometheus",
+      "category": "metrics",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "prometheus/prometheus",
+        "description": "The Prometheus monitoring system and time series database.",
+        "homepage": "https://prometheus.io/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 66173,
+        "forks": 10847,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-11-24T11:14:12Z",
+        "pushedAt": "2026-09-22T14:03:42Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v3.14.0",
+        "publishedAt": "2026-08-18T08:49:40Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "pulumi",
+      "name": "Pulumi",
+      "repository": "https://github.com/pulumi/pulumi",
+      "category": "infrastructure-as-code",
+      "replaces": [
+        {
+          "tool": "terraform",
+          "fit": "full",
+          "note": "Infrastructure in general-purpose languages instead of HCL."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pulumi/pulumi",
+        "description": "Pulumi - Infrastructure as Code in any programming language 🚀",
+        "homepage": "https://www.pulumi.com",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 25720,
+        "forks": 1429,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-10-31T21:02:47Z",
+        "pushedAt": "2026-09-22T15:45:57Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v3.263.0",
+        "publishedAt": "2026-09-16T11:16:53Z",
+        "url": "https://github.com/pulumi/pulumi/releases/tag/v3.263.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "pylint",
+      "name": "Pylint",
+      "repository": "https://github.com/pylint-dev/pylint",
+      "category": "python-lint-format",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "pylint-dev/pylint",
+        "description": "It's not just a linter that annoys you!",
+        "homepage": "https://pylint.readthedocs.io/en/latest/",
+        "language": "Python",
+        "license": "GPL-2.0",
+        "stars": 5725,
+        "forks": 1341,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-12-09T05:40:02Z",
+        "pushedAt": "2026-09-22T09:17:21Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v4.0.8",
+        "publishedAt": "2026-08-29T12:21:15Z",
+        "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.8",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "redis",
+      "name": "Redis",
+      "repository": "https://github.com/redis/redis",
+      "category": "key-value-store",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "redis/redis",
+        "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
+        "homepage": "http://redis.io",
+        "language": "C",
+        "license": "Other",
+        "stars": 76445,
+        "forks": 24811,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2009-03-21T22:32:25Z",
+        "pushedAt": "2026-09-22T15:43:34Z",
+        "defaultBranch": "unstable"
+      },
+      "release": {
+        "tag": "8.10.2",
+        "publishedAt": "2026-09-17T15:06:56Z",
+        "url": "https://github.com/redis/redis/releases/tag/8.10.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "release-please",
       "name": "release-please",
       "repository": "https://github.com/googleapis/release-please",
@@ -170,7 +1310,7 @@
         "homepage": "https://www.conventionalcommits.org",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 7531,
+        "stars": 7533,
         "forks": 590,
         "archived": false,
         "fork": false,
@@ -228,6 +1368,130 @@
       "flags": []
     },
     {
+      "slug": "ripgrep",
+      "name": "ripgrep",
+      "repository": "https://github.com/BurntSushi/ripgrep",
+      "category": "code-search",
+      "replaces": [
+        {
+          "tool": "the-silver-searcher",
+          "fit": "full",
+          "note": "Respects .gitignore like ag, usually faster on large trees."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "BurntSushi/ripgrep",
+        "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+        "homepage": null,
+        "language": "Rust",
+        "license": "Unlicense",
+        "stars": 68505,
+        "forks": 3292,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-03-11T02:02:33Z",
+        "pushedAt": "2026-08-04T13:59:44Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "15.2.0",
+        "publishedAt": "2026-07-15T16:26:10Z",
+        "url": "https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "rspack",
+      "name": "Rspack",
+      "repository": "https://github.com/web-infra-dev/rspack",
+      "category": "javascript-bundler",
+      "replaces": [
+        {
+          "tool": "webpack",
+          "fit": "drop-in",
+          "note": "Accepts webpack configuration and most of its loaders and plugins."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "web-infra-dev/rspack",
+        "description": "Fast Rust-based bundler for the web with a modernized webpack API 🦀",
+        "homepage": "https://rspack.rs",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 12915,
+        "forks": 854,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-04-01T08:45:30Z",
+        "pushedAt": "2026-09-22T13:14:06Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v2.2.6",
+        "publishedAt": "2026-09-17T11:25:48Z",
+        "url": "https://github.com/web-infra-dev/rspack/releases/tag/v2.2.6",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "ruff",
+      "name": "Ruff",
+      "repository": "https://github.com/astral-sh/ruff",
+      "category": "python-lint-format",
+      "replaces": [
+        {
+          "tool": "flake8",
+          "fit": "full",
+          "note": "Reimplements Flake8 and many of its popular plugins."
+        },
+        {
+          "tool": "black",
+          "fit": "drop-in",
+          "note": "The formatter is designed as a drop-in replacement for Black."
+        },
+        {
+          "tool": "pylint",
+          "fit": "partial",
+          "note": "Covers part of Pylint's rules."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "astral-sh/ruff",
+        "description": "An extremely fast Python linter and code formatter, written in Rust.",
+        "homepage": "https://docs.astral.sh/ruff",
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 49731,
+        "forks": 2430,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-08-09T17:17:44Z",
+        "pushedAt": "2026-09-22T15:22:51Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "0.16.8",
+        "publishedAt": "2026-09-16T15:56:22Z",
+        "url": "https://github.com/astral-sh/ruff/releases/tag/0.16.8",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
       "slug": "semantic-release",
       "name": "semantic-release",
       "repository": "https://github.com/semantic-release/semantic-release",
@@ -246,7 +1510,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-09-15T16:18:28Z",
-        "pushedAt": "2026-09-21T19:16:56Z",
+        "pushedAt": "2026-09-22T07:33:01Z",
         "defaultBranch": "master"
       },
       "release": {
@@ -255,6 +1519,413 @@
         "url": "https://github.com/semantic-release/semantic-release/releases/tag/v25.0.9",
         "source": "release",
         "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "terraform",
+      "name": "Terraform",
+      "repository": "https://github.com/hashicorp/terraform",
+      "category": "infrastructure-as-code",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "hashicorp/terraform",
+        "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+        "homepage": "http://developer.hashicorp.com/terraform",
+        "language": "Go",
+        "license": "Other",
+        "stars": 49708,
+        "forks": 10626,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-03-13T22:25:48Z",
+        "pushedAt": "2026-09-22T15:44:33Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v1.16.3",
+        "publishedAt": "2026-09-16T14:33:39Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "the-silver-searcher",
+      "name": "The Silver Searcher",
+      "repository": "https://github.com/ggreer/the_silver_searcher",
+      "category": "code-search",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "ggreer/the_silver_searcher",
+        "description": "A code-searching tool similar to ack, but faster.",
+        "homepage": "http://geoff.greer.fm/ag/",
+        "language": "C",
+        "license": "Apache-2.0",
+        "stars": 27122,
+        "forks": 1439,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-11-19T19:50:47Z",
+        "pushedAt": "2024-06-16T19:37:41Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "2.2.0",
+        "publishedAt": null,
+        "url": "https://github.com/ggreer/the_silver_searcher/releases/tag/2.2.0",
+        "source": "tag",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": [
+        "inactive"
+      ]
+    },
+    {
+      "slug": "typesense",
+      "name": "Typesense",
+      "repository": "https://github.com/typesense/typesense",
+      "category": "search-engine",
+      "replaces": [
+        {
+          "tool": "elasticsearch",
+          "fit": "partial",
+          "note": "Typo-tolerant app and site search, not log analytics."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "typesense/typesense",
+        "description": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences",
+        "homepage": "https://typesense.org",
+        "language": "C++",
+        "license": "GPL-3.0",
+        "stars": 26579,
+        "forks": 973,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-01-18T08:01:47Z",
+        "pushedAt": "2026-09-22T06:21:40Z",
+        "defaultBranch": "v31"
+      },
+      "release": {
+        "tag": "v30.2",
+        "publishedAt": "2026-04-19T16:00:09Z",
+        "url": "https://github.com/typesense/typesense/releases/tag/v30.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "uv",
+      "name": "uv",
+      "repository": "https://github.com/astral-sh/uv",
+      "category": "python-packaging",
+      "replaces": [
+        {
+          "tool": "pip",
+          "fit": "full",
+          "note": "uv pip mirrors pip's commands and options."
+        },
+        {
+          "tool": "poetry",
+          "fit": "full",
+          "note": "Project management with a uv.lock lockfile."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "astral-sh/uv",
+        "description": "An extremely fast Python package and project manager, written in Rust.",
+        "homepage": "https://docs.astral.sh/uv",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 90059,
+        "forks": 3602,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-10-02T20:24:11Z",
+        "pushedAt": "2026-09-22T15:30:25Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "0.12.17",
+        "publishedAt": "2026-09-18T18:59:24Z",
+        "url": "https://github.com/astral-sh/uv/releases/tag/0.12.17",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "valkey",
+      "name": "Valkey",
+      "repository": "https://github.com/valkey-io/valkey",
+      "category": "key-value-store",
+      "replaces": [
+        {
+          "tool": "redis",
+          "fit": "drop-in",
+          "note": "Fork of Redis 7.2.4, same protocol and commands."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "valkey-io/valkey",
+        "description": "A flexible distributed key-value database that is optimized for caching and other realtime workloads.",
+        "homepage": "https://valkey.io",
+        "language": "C",
+        "license": "BSD-3-Clause",
+        "stars": 27275,
+        "forks": 1320,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-03-22T00:42:17Z",
+        "pushedAt": "2026-09-22T15:03:14Z",
+        "defaultBranch": "unstable"
+      },
+      "release": {
+        "tag": "9.1.2",
+        "publishedAt": "2026-09-01T00:01:31Z",
+        "url": "https://github.com/valkey-io/valkey/releases/tag/9.1.2",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "victoriametrics",
+      "name": "VictoriaMetrics",
+      "repository": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+      "category": "metrics",
+      "replaces": [
+        {
+          "tool": "prometheus",
+          "fit": "full",
+          "note": "Accepts Prometheus remote write and scrape configs, queried with PromQL-compatible MetricsQL."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "VictoriaMetrics/VictoriaMetrics",
+        "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
+        "homepage": "https://victoriametrics.com/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 17754,
+        "forks": 1745,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-09-30T09:58:01Z",
+        "pushedAt": "2026-09-22T15:06:31Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v1.152.0",
+        "publishedAt": "2026-09-14T10:36:37Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vite",
+      "name": "Vite",
+      "repository": "https://github.com/vitejs/vite",
+      "category": "javascript-bundler",
+      "replaces": [
+        {
+          "tool": "webpack",
+          "fit": "full",
+          "note": "Different configuration, and a dev server that serves native ES modules."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vitejs/vite",
+        "description": "Next generation frontend tooling. It's fast!",
+        "homepage": "http://vite.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 82945,
+        "forks": 8770,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-04-21T05:03:57Z",
+        "pushedAt": "2026-09-22T11:20:23Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "create-vite@9.2.1",
+        "publishedAt": "2026-09-10T11:41:17Z",
+        "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.2.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "vitest",
+      "name": "Vitest",
+      "repository": "https://github.com/vitest-dev/vitest",
+      "category": "javascript-test-runner",
+      "replaces": [
+        {
+          "tool": "jest",
+          "fit": "full",
+          "note": "Jest-compatible API, running on Vite's transform pipeline."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "vitest-dev/vitest",
+        "description": "Next generation testing framework powered by Vite.",
+        "homepage": "https://vitest.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 17143,
+        "forks": 2014,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-12-03T19:19:49Z",
+        "pushedAt": "2026-09-22T14:05:59Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v5.0.1",
+        "publishedAt": "2026-09-15T08:43:24Z",
+        "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.0.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "webpack",
+      "name": "webpack",
+      "repository": "https://github.com/webpack/webpack",
+      "category": "javascript-bundler",
+      "replaces": [],
+      "affiliation": null,
+      "repo": {
+        "fullName": "webpack/webpack",
+        "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
+        "homepage": "https://webpack.js.org",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 65950,
+        "forks": 9544,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-03-10T10:08:14Z",
+        "pushedAt": "2026-09-22T15:46:21Z",
+        "defaultBranch": "main"
+      },
+      "release": {
+        "tag": "v5.111.1",
+        "publishedAt": "2026-09-18T11:23:07Z",
+        "url": "https://github.com/webpack/webpack/releases/tag/v5.111.1",
+        "source": "release",
+        "signed": true
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "xh",
+      "name": "xh",
+      "repository": "https://github.com/ducaale/xh",
+      "category": "http-client",
+      "replaces": [
+        {
+          "tool": "httpie",
+          "fit": "full",
+          "note": "HTTPie-style syntax in a single static binary."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "ducaale/xh",
+        "description": "Friendly and fast tool for sending HTTP requests",
+        "homepage": null,
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 8088,
+        "forks": 146,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-09-10T20:58:13Z",
+        "pushedAt": "2026-09-05T09:34:49Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "v0.26.2",
+        "publishedAt": "2026-07-26T14:22:45Z",
+        "url": "https://github.com/ducaale/xh/releases/tag/v0.26.2",
+        "source": "release",
+        "signed": false
+      },
+      "maintainerVerified": false,
+      "flags": []
+    },
+    {
+      "slug": "yarn",
+      "name": "Yarn",
+      "repository": "https://github.com/yarnpkg/berry",
+      "category": "javascript-package-manager",
+      "replaces": [
+        {
+          "tool": "npm",
+          "fit": "full",
+          "note": "Same package.json, with Plug'n'Play as an option instead of node_modules."
+        }
+      ],
+      "affiliation": null,
+      "repo": {
+        "fullName": "yarnpkg/berry",
+        "description": "📦🐈 Active development trunk for Yarn ⚒",
+        "homepage": "https://yarnpkg.com",
+        "language": "TypeScript",
+        "license": "BSD-2-Clause",
+        "stars": 8104,
+        "forks": 1320,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-09-10T22:49:22Z",
+        "pushedAt": "2026-09-19T13:13:16Z",
+        "defaultBranch": "master"
+      },
+      "release": {
+        "tag": "@yarnpkg/cli/4.18.0",
+        "publishedAt": "2026-07-29T07:56:33Z",
+        "url": "https://github.com/yarnpkg/berry/releases/tag/%40yarnpkg/cli/4.18.0",
+        "source": "release",
+        "signed": false
       },
       "maintainerVerified": false,
       "flags": []
