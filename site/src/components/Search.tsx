@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
+import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
 import type { SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
@@ -14,14 +15,14 @@ type State =
   | { kind: "idle" }
   | { kind: "loading" }
   | { kind: "done"; result: SearchResult }
-  | { kind: "error"; message: string };
+  | { kind: "error"; failure: SearchFailure; target: string | null };
 
 export default function Search({ names, examples }: Props) {
   const [query, setQuery] = useState("");
   const [state, setState] = useState<State>({ kind: "idle" });
   const inflight = useRef<AbortController | null>(null);
 
-  async function run(load: (signal: AbortSignal) => Promise<SearchResult>) {
+  async function run(load: (signal: AbortSignal) => Promise<SearchResult>, target: string | null) {
     inflight.current?.abort();
     const controller = new AbortController();
     inflight.current = controller;
@@ -30,7 +31,7 @@ export default function Search({ names, examples }: Props) {
       setState({ kind: "done", result: await load(controller.signal) });
     } catch (error) {
       if (controller.signal.aborted) return;
-      setState({ kind: "error", message: error instanceof Error ? error.message : "Search failed." });
+      setState({ kind: "error", failure: failureFromThrown(error), target });
     }
   }
 
@@ -41,12 +42,15 @@ export default function Search({ names, examples }: Props) {
     const url = new URL(window.location.href);
     url.searchParams.set("q", trimmed);
     window.history.replaceState(null, "", url);
-    void run((signal) => search(trimmed, signal));
+    void run((signal) => search(trimmed, signal), guessTarget(trimmed, names));
   }
 
   function drop(result: SearchResult, key: ChipKey) {
     const filters = without(result.filters, key);
-    void run(async (signal) => ({ ...result, ...(await listTools(filters, signal)), filters }));
+    void run(
+      async (signal) => ({ ...result, ...(await listTools(filters, signal)), filters }),
+      filters.replaces ?? null,
+    );
   }
 
   useEffect(() => {
@@ -59,6 +63,8 @@ export default function Search({ names, examples }: Props) {
     <section className="search">
       <form
         role="search"
+        action="/"
+        method="get"
         onSubmit={(e) => {
           e.preventDefault();
           submit(query);
@@ -69,6 +75,7 @@ export default function Search({ names, examples }: Props) {
         </label>
         <input
           id="q"
+          name="q"
           type="search"
           value={query}
           maxLength={300}
@@ -90,11 +97,7 @@ export default function Search({ names, examples }: Props) {
         </p>
       )}
       {state.kind === "loading" && <p className="summary">Searching</p>}
-      {state.kind === "error" && (
-        <p className="empty" role="alert">
-          {state.message}
-        </p>
-      )}
+      {state.kind === "error" && <Failure failure={state.failure} target={state.target} names={names} />}
       {state.kind === "done" && <Results result={state.result} names={names} onDrop={drop} />}
       <p className="visually-hidden" role="status" aria-live="polite">
         {announcement(state)}
@@ -111,6 +114,36 @@ function announcement(state: State): string {
   if (state.kind === "loading") return "Searching";
   if (state.kind === "done") return toolCount(state.result.count);
   return "";
+}
+
+function Failure({
+  failure,
+  target,
+  names,
+}: {
+  failure: SearchFailure;
+  target: string | null;
+  names: Record<string, string>;
+}) {
+  return (
+    <div className="empty" role="alert">
+      <p>{describe(failure)}</p>
+      {offersFallback(failure) && (
+        <p>
+          {target ? (
+            <>
+              Open the <a href={`/alternatives/${target}/`}>alternatives to {names[target] ?? target}</a> or{" "}
+              <a href="/#browse">browse every tool</a>.
+            </>
+          ) : (
+            <>
+              <a href="/#browse">Browse every tool</a> instead.
+            </>
+          )}
+        </p>
+      )}
+    </div>
+  );
 }
 
 function Results({

@@ -424,6 +424,14 @@ button.link {
   border: 1px solid var(--line);
 }
 
+.empty p {
+  margin: 0;
+}
+
+.empty p + p {
+  margin-top: 8px;
+}
+
 .divider {
   margin: 64px 0 40px;
   border: 0;
