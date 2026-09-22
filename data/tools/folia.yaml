@@ -1,0 +1,7 @@
+name: Folia
+repository: https://github.com/PaperMC/Folia
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: Regionised multithreading, so plugins written against a single main thread need porting.

@@ -1,0 +1,7 @@
+name: Purpur
+repository: https://github.com/PurpurMC/Purpur
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: drop-in
+    note: A fork of Paper that keeps its plugins and configuration, adding gameplay and configuration options.

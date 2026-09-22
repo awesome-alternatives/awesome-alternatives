@@ -1,0 +1,7 @@
+name: Pumpkin
+repository: https://github.com/Pumpkin-MC/Pumpkin
+category: minecraft-server
+replaces:
+  - tool: paper
+    fit: partial
+    note: Written from scratch in Rust with its own plugin API, so Bukkit plugins do not carry over.
