@@ -1,0 +1,7 @@
+name: Drizzle ORM
+repository: https://github.com/drizzle-team/drizzle-orm
+category: typescript-orm
+replaces:
+  - tool: prisma
+    fit: full
+    note: Schema written in TypeScript and a SQL-like query builder.

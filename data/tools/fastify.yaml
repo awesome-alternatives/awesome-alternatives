@@ -1,0 +1,7 @@
+name: Fastify
+repository: https://github.com/fastify/fastify
+category: node-web-framework
+replaces:
+  - tool: express
+    fit: full
+    note: Schema-based validation and serialisation, and a plugin system.

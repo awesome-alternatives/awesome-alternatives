@@ -1,0 +1,3 @@
+name: tmux
+repository: https://github.com/tmux/tmux
+category: terminal-multiplexer

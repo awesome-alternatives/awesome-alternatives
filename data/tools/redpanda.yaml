@@ -1,0 +1,7 @@
+name: Redpanda
+repository: https://github.com/redpanda-data/redpanda
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: drop-in
+    note: Kafka API compatible, without ZooKeeper or a JVM.

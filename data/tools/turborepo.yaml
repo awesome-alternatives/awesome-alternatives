@@ -1,0 +1,7 @@
+name: Turborepo
+repository: https://github.com/vercel/turborepo
+category: monorepo-tool
+replaces:
+  - tool: lerna
+    fit: partial
+    note: Task running and caching, no versioning or publishing.

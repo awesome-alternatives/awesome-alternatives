@@ -1,0 +1,7 @@
+name: FerretDB
+repository: https://github.com/FerretDB/FerretDB
+category: document-database
+replaces:
+  - tool: mongodb
+    fit: drop-in
+    note: Speaks the MongoDB wire protocol on top of PostgreSQL.

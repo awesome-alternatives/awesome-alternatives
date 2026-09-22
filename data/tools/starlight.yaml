@@ -1,0 +1,7 @@
+name: Starlight
+repository: https://github.com/withastro/starlight
+category: documentation-site
+replaces:
+  - tool: docusaurus
+    fit: full
+    note: Built on Astro, ships little JavaScript by default.

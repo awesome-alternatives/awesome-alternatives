@@ -1,0 +1,7 @@
+name: Pyright
+repository: https://github.com/microsoft/pyright
+category: python-type-checker
+replaces:
+  - tool: mypy
+    fit: full
+    note: Also the engine behind Pylance in VS Code.

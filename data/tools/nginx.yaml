@@ -1,0 +1,3 @@
+name: nginx
+repository: https://github.com/nginx/nginx
+category: reverse-proxy

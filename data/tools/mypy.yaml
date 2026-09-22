@@ -1,0 +1,3 @@
+name: mypy
+repository: https://github.com/python/mypy
+category: python-type-checker

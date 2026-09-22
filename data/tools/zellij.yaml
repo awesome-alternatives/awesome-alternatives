@@ -1,0 +1,7 @@
+name: Zellij
+repository: https://github.com/zellij-org/zellij
+category: terminal-multiplexer
+replaces:
+  - tool: tmux
+    fit: full
+    note: Layouts, floating panes and on-screen key hints out of the box.

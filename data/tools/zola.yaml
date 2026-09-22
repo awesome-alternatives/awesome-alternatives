@@ -1,0 +1,7 @@
+name: Zola
+repository: https://github.com/getzola/zola
+category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: Single binary with Sass, syntax highlighting and a search index built in.

@@ -1,0 +1,7 @@
+name: moon
+repository: https://github.com/moonrepo/moon
+category: monorepo-tool
+replaces:
+  - tool: lerna
+    fit: partial
+    note: Task running and caching across languages, no versioning or publishing.

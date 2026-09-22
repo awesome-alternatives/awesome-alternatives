@@ -1,0 +1,7 @@
+name: Eleventy
+repository: https://github.com/11ty/buildawesome
+category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: JavaScript, with several template languages side by side.
