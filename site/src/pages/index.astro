@@ -24,6 +24,11 @@ const examples = [
     <h1>Say what you use and what you need.</h1>
     <p class="lede">{tools.length} tools, release data pulled from GitHub nightly, never typed by hand</p>
     <Search client:load names={names} examples={examples} />
+    <noscript>
+      <p class="empty">
+        Search needs JavaScript. Every tool is listed below: <a href="#browse">browse by the tool you want to replace</a>.
+      </p>
+    </noscript>
   </section>
 
   <hr class="divider" />

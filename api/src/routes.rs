@@ -1,10 +1,12 @@
 use std::net::{IpAddr, SocketAddr};
+use std::time::Duration;
 
 use axum::extract::{ConnectInfo, Query, State};
-use axum::http::{HeaderMap, StatusCode};
+use axum::http::{HeaderMap, HeaderValue, StatusCode, header};
 use axum::response::{IntoResponse, Response};
 use axum::routing::{get, post};
 use axum::{Json, Router};
+use governor::clock::Clock;
 use serde::{Deserialize, Serialize};
 
 use crate::catalog::Tool;
@@ -33,27 +35,39 @@ pub enum ApiError {
     EmptyQuery,
     #[error("the query is longer than {MAX_QUERY_CHARS} characters")]
     QueryTooLong,
-    #[error("too many searches, try again in a minute")]
-    RateLimited,
+    #[error("too many searches, try again in {} seconds", retry_after_secs(*.0))]
+    RateLimited(Duration),
     #[error("no tool with this slug")]
     UnknownTool,
     #[error("GitHub or OpenSSF did not answer, try again later")]
     Upstream,
 }
 
+fn retry_after_secs(wait: Duration) -> u64 {
+    (wait.as_secs() + u64::from(wait.subsec_nanos() > 0)).max(1)
+}
+
 impl IntoResponse for ApiError {
     fn into_response(self) -> Response {
-        let status = match self {
-            Self::EmptyQuery | Self::QueryTooLong => StatusCode::BAD_REQUEST,
-            Self::RateLimited => StatusCode::TOO_MANY_REQUESTS,
-            Self::UnknownTool => StatusCode::NOT_FOUND,
-            Self::Upstream => StatusCode::BAD_GATEWAY,
+        let (status, retry_after) = match self {
+            Self::EmptyQuery | Self::QueryTooLong => (StatusCode::BAD_REQUEST, None),
+            Self::RateLimited(wait) => {
+                (StatusCode::TOO_MANY_REQUESTS, Some(retry_after_secs(wait)))
+            }
+            Self::UnknownTool => (StatusCode::NOT_FOUND, None),
+            Self::Upstream => (StatusCode::BAD_GATEWAY, None),
         };
-        (
+        let mut response = (
             status,
             Json(serde_json::json!({ "error": self.to_string() })),
         )
-            .into_response()
+            .into_response();
+        if let Some(secs) = retry_after {
+            response
+                .headers_mut()
+                .insert(header::RETRY_AFTER, HeaderValue::from(secs));
+        }
+        response
     }
 }
 
@@ -109,10 +123,9 @@ async fn search(
         return Err(ApiError::QueryTooLong);
     }
     let ip = client_ip(&headers, peer, state.trust_proxy);
-    state
-        .limiter
-        .check_key(&ip)
-        .map_err(|_| ApiError::RateLimited)?;
+    state.limiter.check_key(&ip).map_err(|limited| {
+        ApiError::RateLimited(limited.wait_time_from(state.limiter.clock().now()))
+    })?;
 
     let loaded = state.loaded();
     let read = state.search.interpret(query, &loaded).await;
@@ -196,10 +209,19 @@ mod tests {
     }
 
     async fn call(app: &Router, request: Request<Body>) -> (StatusCode, Value) {
+        let (status, _, body) = call_with_headers(app, request).await;
+        (status, body)
+    }
+
+    async fn call_with_headers(
+        app: &Router,
+        request: Request<Body>,
+    ) -> (StatusCode, HeaderMap, Value) {
         let response = app.clone().oneshot(request).await.unwrap();
         let status = response.status();
+        let headers = response.headers().clone();
         let bytes = response.into_body().collect().await.unwrap().to_bytes();
-        (status, serde_json::from_slice(&bytes).unwrap())
+        (status, headers, serde_json::from_slice(&bytes).unwrap())
     }
 
     fn search_request(q: &str) -> Request<Body> {
@@ -253,9 +275,23 @@ mod tests {
     async fn search_is_rate_limited_per_client() {
         let app = app(1);
         assert_eq!(call(&app, search_request("knope")).await.0, StatusCode::OK);
-        let (status, body) = call(&app, search_request("knope")).await;
+        let (status, headers, body) = call_with_headers(&app, search_request("knope")).await;
         assert_eq!(status, StatusCode::TOO_MANY_REQUESTS);
         assert!(body["error"].is_string());
+        let retry_after: u64 = headers[header::RETRY_AFTER]
+            .to_str()
+            .unwrap()
+            .parse()
+            .unwrap();
+        assert!((1..=60).contains(&retry_after), "{retry_after}");
+    }
+
+    #[test]
+    fn retry_after_rounds_up_to_a_whole_second() {
+        assert_eq!(retry_after_secs(Duration::ZERO), 1);
+        assert_eq!(retry_after_secs(Duration::from_millis(1)), 1);
+        assert_eq!(retry_after_secs(Duration::from_millis(59_001)), 60);
+        assert_eq!(retry_after_secs(Duration::from_secs(12)), 12);
     }
 
     #[test]
