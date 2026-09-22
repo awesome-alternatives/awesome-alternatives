@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.1] - 2026-09-22
+
+### Bug Fixes
+
+- fix(api): keep Cargo.lock in step with the released version (#7)
+
 ## [0.2.0] - 2026-09-22
 
 ### Features
