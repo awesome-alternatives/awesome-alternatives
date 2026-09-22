@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.7.0] - 2026-09-22
+
+### Features
+
+- feat(api): share the README, security and search caches through Valkey (#58)
+
 ## [0.6.1] - 2026-09-22
 
 ### Bug Fixes
