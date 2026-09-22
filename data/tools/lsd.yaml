@@ -1,0 +1,7 @@
+name: lsd
+repository: https://github.com/lsd-rs/lsd
+category: file-listing
+replaces:
+  - tool: exa
+    fit: full
+    note: ls with colours, icons and a tree view.

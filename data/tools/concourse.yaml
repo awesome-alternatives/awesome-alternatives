@@ -1,0 +1,7 @@
+name: Concourse
+repository: https://github.com/concourse/concourse
+category: ci-server
+replaces:
+  - tool: jenkins
+    fit: full
+    note: Pipelines declared as resources and jobs, every step in a container.

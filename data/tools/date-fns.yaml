@@ -1,0 +1,7 @@
+name: date-fns
+repository: https://github.com/date-fns/date-fns
+category: javascript-date-library
+replaces:
+  - tool: moment
+    fit: full
+    note: Plain functions over native Date, tree-shakable.

@@ -85,3 +85,60 @@ typescript-orm:
 object-storage:
   name: Object storage
   description: Self-hosted servers speaking the S3 API.
+ci-server:
+  name: CI servers
+  description: Self-hosted servers that run build and deployment pipelines.
+git-forge:
+  name: Git forges
+  description: Self-hosted repositories, code review and issues.
+password-manager-server:
+  name: Password manager servers
+  description: Self-hosted back ends for password vaults.
+web-analytics:
+  name: Web analytics
+  description: Self-hostable, privacy-friendly site analytics.
+uptime-monitoring:
+  name: Uptime monitoring
+  description: Check that services answer, alert when they do not, and publish a status page.
+log-pipeline:
+  name: Log pipelines
+  description: Collect, transform and ship logs and events.
+team-chat:
+  name: Team chat
+  description: Self-hosted messaging for teams.
+terminal-emulator:
+  name: Terminal emulators
+  description: Desktop terminal applications.
+text-editor:
+  name: Code editors
+  description: Editors for writing code.
+file-listing:
+  name: File listing
+  description: Replacements for ls with colours, icons and git status.
+git-diff-pager:
+  name: Git diff pagers
+  description: Make git diff output readable in a terminal.
+json-processor:
+  name: JSON processors
+  description: Query and transform JSON from the command line.
+load-testing:
+  name: Load testing
+  description: Generate traffic to measure how a service holds up.
+browser-testing:
+  name: Browser automation and testing
+  description: Drive real browsers for end-to-end tests.
+python-web-framework:
+  name: Python web frameworks
+  description: Build HTTP APIs and sites in Python.
+python-http-client:
+  name: Python HTTP clients
+  description: Send HTTP requests from Python.
+javascript-date-library:
+  name: JavaScript date libraries
+  description: Parse, format and compute dates in JavaScript.
+local-kubernetes:
+  name: Local Kubernetes
+  description: Run a Kubernetes cluster on a laptop or in CI.
+secrets-manager:
+  name: Secrets managers
+  description: Store, rotate and hand out secrets to applications.

@@ -1,0 +1,7 @@
+name: gojq
+repository: https://github.com/itchyny/gojq
+category: json-processor
+replaces:
+  - tool: jq
+    fit: drop-in
+    note: Pure Go implementation of the jq language.

@@ -1,0 +1,7 @@
+name: k6
+repository: https://github.com/grafana/k6
+category: load-testing
+replaces:
+  - tool: jmeter
+    fit: full
+    note: Tests written in JavaScript, run from a single binary.

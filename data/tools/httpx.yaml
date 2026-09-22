@@ -1,0 +1,7 @@
+name: HTTPX
+repository: https://github.com/encode/httpx
+category: python-http-client
+replaces:
+  - tool: requests
+    fit: full
+    note: Requests-style API, plus async and HTTP/2.

@@ -1,0 +1,7 @@
+name: Luxon
+repository: https://github.com/moment/luxon
+category: javascript-date-library
+replaces:
+  - tool: moment
+    fit: full
+    note: "Immutable, with Intl-based time zones, from Moment's maintainers."

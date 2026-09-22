@@ -1,0 +1,7 @@
+name: Alacritty
+repository: https://github.com/alacritty/alacritty
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: partial
+    note: GPU-rendered and cross-platform, with no tabs or splits of its own.

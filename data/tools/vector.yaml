@@ -1,0 +1,7 @@
+name: Vector
+repository: https://github.com/vectordotdev/vector
+category: log-pipeline
+replaces:
+  - tool: logstash
+    fit: full
+    note: Sources, transforms and sinks in one binary, with VRL for parsing.

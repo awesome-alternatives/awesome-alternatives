@@ -1,0 +1,7 @@
+name: Ghostty
+repository: https://github.com/ghostty-org/ghostty
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: full
+    note: GPU-rendered with a native UI on macOS and Linux.

@@ -1,0 +1,7 @@
+name: Plausible Analytics
+repository: https://github.com/plausible/analytics
+category: web-analytics
+replaces:
+  - tool: matomo
+    fit: full
+    note: Cookie-free, a lightweight script, no personal data stored.

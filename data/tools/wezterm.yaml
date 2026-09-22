@@ -1,0 +1,7 @@
+name: WezTerm
+repository: https://github.com/wezterm/wezterm
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: full
+    note: Cross-platform, built-in multiplexing, configured in Lua.

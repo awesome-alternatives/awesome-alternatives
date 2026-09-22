@@ -1,0 +1,7 @@
+name: Day.js
+repository: https://github.com/iamkun/dayjs
+category: javascript-date-library
+replaces:
+  - tool: moment
+    fit: drop-in
+    note: Moment-compatible API in about 2 kB.

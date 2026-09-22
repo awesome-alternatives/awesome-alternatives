@@ -1,0 +1,7 @@
+name: Playwright
+repository: https://github.com/microsoft/playwright
+category: browser-testing
+replaces:
+  - tool: selenium
+    fit: full
+    note: Chromium, Firefox and WebKit from one API, with auto-waiting.

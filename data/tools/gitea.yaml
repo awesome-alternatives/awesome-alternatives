@@ -1,0 +1,7 @@
+name: Gitea
+repository: https://github.com/go-gitea/gitea
+category: git-forge
+replaces:
+  - tool: gitlab
+    fit: full
+    note: Lightweight single binary, with Actions compatible with GitHub Actions.

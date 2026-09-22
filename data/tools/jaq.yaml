@@ -1,0 +1,7 @@
+name: jaq
+repository: https://github.com/01mf02/jaq
+category: json-processor
+replaces:
+  - tool: jq
+    fit: full
+    note: Rust clone of jq that favours correctness and speed, a few semantics differ.

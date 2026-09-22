@@ -1,0 +1,3 @@
+name: Bitwarden server
+repository: https://github.com/bitwarden/server
+category: password-manager-server

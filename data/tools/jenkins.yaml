@@ -1,0 +1,3 @@
+name: Jenkins
+repository: https://github.com/jenkinsci/jenkins
+category: ci-server

@@ -1,0 +1,7 @@
+name: Gatus
+repository: https://github.com/TwiN/gatus
+category: uptime-monitoring
+replaces:
+  - tool: uptime-kuma
+    fit: full
+    note: Checks declared in YAML, with alerting and a status page.

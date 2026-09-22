@@ -1,0 +1,7 @@
+name: Zulip
+repository: https://github.com/zulip/zulip
+category: team-chat
+replaces:
+  - tool: mattermost
+    fit: full
+    note: Conversations split into topics inside each channel.

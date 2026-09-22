@@ -1,0 +1,7 @@
+name: kitty
+repository: https://github.com/kovidgoyal/kitty
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: full
+    note: GPU-rendered, cross-platform, with tabs, splits and a graphics protocol.

@@ -1,0 +1,7 @@
+name: Litestar
+repository: https://github.com/litestar-org/litestar
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: full
+    note: Async and typed, with dependency injection and OpenAPI built in.
