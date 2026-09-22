@@ -1,0 +1,13 @@
+name: Ruff
+repository: https://github.com/astral-sh/ruff
+category: python-lint-format
+replaces:
+  - tool: flake8
+    fit: full
+    note: Reimplements Flake8 and many of its popular plugins.
+  - tool: black
+    fit: drop-in
+    note: The formatter is designed as a drop-in replacement for Black.
+  - tool: pylint
+    fit: partial
+    note: "Covers part of Pylint's rules."

@@ -1,0 +1,7 @@
+name: Valkey
+repository: https://github.com/valkey-io/valkey
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: drop-in
+    note: Fork of Redis 7.2.4, same protocol and commands.

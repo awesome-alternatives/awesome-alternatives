@@ -1,0 +1,7 @@
+name: Deno
+repository: https://github.com/denoland/deno
+category: javascript-runtime
+replaces:
+  - tool: nodejs
+    fit: full
+    note: Runs most npm packages through its Node compatibility layer.

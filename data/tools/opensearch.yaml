@@ -1,0 +1,7 @@
+name: OpenSearch
+repository: https://github.com/opensearch-project/OpenSearch
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: full
+    note: Fork of Elasticsearch 7.10.2, APIs have diverged since.

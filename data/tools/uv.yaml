@@ -1,0 +1,10 @@
+name: uv
+repository: https://github.com/astral-sh/uv
+category: python-packaging
+replaces:
+  - tool: pip
+    fit: full
+    note: "uv pip mirrors pip's commands and options."
+  - tool: poetry
+    fit: full
+    note: Project management with a uv.lock lockfile.

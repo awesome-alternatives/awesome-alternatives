@@ -1,0 +1,7 @@
+name: Pulumi
+repository: https://github.com/pulumi/pulumi
+category: infrastructure-as-code
+replaces:
+  - tool: terraform
+    fit: full
+    note: Infrastructure in general-purpose languages instead of HCL.

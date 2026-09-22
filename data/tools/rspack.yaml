@@ -1,0 +1,7 @@
+name: Rspack
+repository: https://github.com/web-infra-dev/rspack
+category: javascript-bundler
+replaces:
+  - tool: webpack
+    fit: drop-in
+    note: Accepts webpack configuration and most of its loaders and plugins.

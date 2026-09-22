@@ -1,0 +1,7 @@
+name: Podman
+repository: https://github.com/podman-container-tools/podman
+category: container-engine
+replaces:
+  - tool: docker
+    fit: drop-in
+    note: Docker-compatible CLI, daemonless and rootless by default.

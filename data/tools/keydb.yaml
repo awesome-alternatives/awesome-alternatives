@@ -1,0 +1,7 @@
+name: KeyDB
+repository: https://github.com/Snapchat/KeyDB
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: drop-in
+    note: Multithreaded fork of Redis.

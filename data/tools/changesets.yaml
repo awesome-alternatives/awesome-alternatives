@@ -1,0 +1,7 @@
+name: Changesets
+repository: https://github.com/changesets/changesets
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: full
+    note: Versions from changeset files written in each pull request instead of commit messages.

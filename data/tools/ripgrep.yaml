@@ -1,0 +1,7 @@
+name: ripgrep
+repository: https://github.com/BurntSushi/ripgrep
+category: code-search
+replaces:
+  - tool: the-silver-searcher
+    fit: full
+    note: Respects .gitignore like ag, usually faster on large trees.

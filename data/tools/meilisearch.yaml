@@ -1,0 +1,7 @@
+name: Meilisearch
+repository: https://github.com/meilisearch/meilisearch
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Search-as-you-type for apps and sites, not log analytics.

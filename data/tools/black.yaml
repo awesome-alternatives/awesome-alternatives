@@ -1,0 +1,3 @@
+name: Black
+repository: https://github.com/psf/black
+category: python-lint-format
