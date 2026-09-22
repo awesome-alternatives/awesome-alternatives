@@ -1,12 +1,27 @@
-import { useEffect, useRef, useState } from "preact/hooks";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 
 import { format, type Locale, pathFor, plural } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
 import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
+import { href, type SuggestIndex, type Suggestion, suggest } from "../lib/suggest.ts";
 import type { SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
+
+const DEBOUNCE_MS = 180;
+
+type IndexState =
+  | { kind: "none" }
+  | { kind: "loading" }
+  | { kind: "ready"; index: SuggestIndex }
+  | { kind: "failed" };
+
+async function loadIndex(signal: AbortSignal): Promise<SuggestIndex> {
+  const response = await fetch("/search-index.json", { signal });
+  if (!response.ok) throw new Error(String(response.status));
+  return await response.json();
+}
 
 interface Props {
   locale: Locale;
@@ -24,8 +39,69 @@ type State =
 export default function Search({ locale, strings, names, examples }: Props) {
   const [query, setQuery] = useState("");
   const [state, setState] = useState<State>({ kind: "idle" });
+  const [typing, setTyping] = useState("");
+  const [indexState, setIndexState] = useState<IndexState>({ kind: "none" });
+  const [focused, setFocused] = useState(false);
+  const [active, setActive] = useState(-1);
   const inflight = useRef<AbortController | null>(null);
+  const indexLoad = useRef<AbortController | null>(null);
   const copy = strings.search;
+  const hint = copy.suggestions;
+
+  const items = useMemo(
+    () =>
+      indexState.kind === "ready" && typing
+        ? suggest(indexState.index, typing, (name) => format(hint.alternativesTo, { name }))
+        : [],
+    [indexState, typing, hint.alternativesTo],
+  );
+  const open = focused && typing.length > 0 && indexState.kind !== "none";
+
+  useEffect(() => {
+    const id = setTimeout(() => setTyping(query.trim()), DEBOUNCE_MS);
+    return () => clearTimeout(id);
+  }, [query]);
+
+  useEffect(() => setActive(-1), [items]);
+
+  useEffect(() => {
+    if (active < 0) return;
+    document.getElementById(`suggestion-${active}`)?.scrollIntoView({ block: "nearest" });
+  }, [active]);
+
+  useEffect(() => {
+    if (!typing || indexState.kind !== "none") return;
+    const controller = new AbortController();
+    indexLoad.current = controller;
+    setIndexState({ kind: "loading" });
+    loadIndex(controller.signal)
+      .then((index) => setIndexState({ kind: "ready", index }))
+      .catch(() => {
+        if (!controller.signal.aborted) setIndexState({ kind: "failed" });
+      });
+  }, [typing, indexState.kind]);
+
+  function go(suggestion: Suggestion) {
+    window.location.assign(pathFor(locale, href(suggestion)));
+  }
+
+  function onKeyDown(event: KeyboardEvent) {
+    if (event.key === "Escape") {
+      setFocused(false);
+      return;
+    }
+    if (!open || items.length === 0) return;
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      setActive((current) => (current + 1) % items.length);
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      setActive((current) => (current <= 0 ? items.length - 1 : current - 1));
+    } else if (event.key === "Enter" && active >= 0) {
+      event.preventDefault();
+      go(items[active]);
+    }
+  }
 
   async function run(load: (signal: AbortSignal) => Promise<SearchResult>, target: string | null) {
     inflight.current?.abort();
@@ -61,7 +137,10 @@ export default function Search({ locale, strings, names, examples }: Props) {
   useEffect(() => {
     const q = new URLSearchParams(window.location.search).get("q");
     if (q) submit(q);
-    return () => inflight.current?.abort();
+    return () => {
+      inflight.current?.abort();
+      indexLoad.current?.abort();
+    };
   }, []);
 
   return (
@@ -78,15 +157,53 @@ export default function Search({ locale, strings, names, examples }: Props) {
         <label htmlFor="q" className="visually-hidden">
           {copy.label}
         </label>
-        <input
-          id="q"
-          name="q"
-          type="search"
-          value={query}
-          maxLength={300}
-          placeholder={copy.placeholder}
-          onInput={(e) => setQuery(e.currentTarget.value)}
-        />
+        <div
+          className="search-field"
+          onFocusOut={(e) => {
+            if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setFocused(false);
+          }}
+        >
+          <input
+            id="q"
+            name="q"
+            type="search"
+            value={query}
+            maxLength={300}
+            placeholder={copy.placeholder}
+            autoComplete="off"
+            role="combobox"
+            aria-expanded={open}
+            aria-controls="suggestions"
+            aria-autocomplete="list"
+            aria-activedescendant={active >= 0 ? `suggestion-${active}` : undefined}
+            onInput={(e) => setQuery(e.currentTarget.value)}
+            onFocus={() => setFocused(true)}
+            onKeyDown={onKeyDown}
+          />
+          {open && (
+            <div id="suggestions" className="suggestions" role="listbox" aria-label={hint.label}>
+              {indexState.kind === "loading" && <p className="suggestion-note">{hint.loading}</p>}
+              {indexState.kind === "failed" && <p className="suggestion-note">{hint.failed}</p>}
+              {indexState.kind === "ready" && items.length === 0 && (
+                <p className="suggestion-note">{hint.empty}</p>
+              )}
+              {items.map((item, i) => (
+                <a
+                  key={`${item.kind}-${item.slug}`}
+                  id={`suggestion-${i}`}
+                  role="option"
+                  aria-selected={i === active}
+                  className={i === active ? "suggestion is-active" : "suggestion"}
+                  href={pathFor(locale, href(item))}
+                  onMouseEnter={() => setActive(i)}
+                >
+                  <span className="suggestion-name">{item.name}</span>
+                  <span className="suggestion-detail">{item.detail}</span>
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
         <button type="submit" disabled={state.kind === "loading"}>
           {copy.submit}
         </button>

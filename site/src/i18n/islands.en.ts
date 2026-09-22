@@ -33,6 +33,13 @@ export const islands = {
     submit: "Search",
     examplesLead: "Try ",
     searching: "Searching",
+    suggestions: {
+      label: "Matching tools",
+      loading: "Looking through the catalog",
+      failed: "Suggestions are unavailable. Press Enter to search anyway.",
+      empty: "No name matches. Press Enter to search the whole catalog.",
+      alternativesTo: "alternatives to {name}",
+    },
     count: { one: "1 tool", other: "{n} tools" },
     chips: {
       replaces: "Replaces {name}",
