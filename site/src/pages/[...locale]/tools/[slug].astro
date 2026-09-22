@@ -61,11 +61,12 @@ const login = loginOf(repo.fullName);
     }
     <h1>
       {tool.name}
-      {
-        tool.maintainerVerified && (
-          <Mark icon="verified" label={m.tool.verified} href={`${pathFor(locale, "/about/")}#verified`} />
-        )
-      }
+      <Mark
+        icon="verified"
+        muted={!tool.maintainerVerified}
+        label={tool.maintainerVerified ? m.tool.verified : m.tool.unverified}
+        href={`${pathFor(locale, "/about/")}#verified`}
+      />
       {
         repo.archived && (
           <a class="mark mark-archived" href={`${pathFor(locale, "/about/")}#archived`}>

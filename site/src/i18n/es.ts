@@ -165,6 +165,7 @@ export const es: Messages = {
       "Este repositorio está archivado y ya no recibe cambios. Aparece en la lista para que puedas encontrar lo que lo sustituye.",
     signed: "Versión firmada, verificada por GitHub",
     verified: "Verificada por sus mantenedores",
+    unverified: "No verificada por sus mantenedores",
     stars: "Estrellas",
     forks: "Forks",
     latest: "Última versión",

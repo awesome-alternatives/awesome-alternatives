@@ -166,6 +166,7 @@ export const de: Messages = {
       "Dieses Repository ist archiviert und bekommt keine Änderungen mehr. Es steht hier, damit sich der Ersatz dafür finden lässt.",
     signed: "Signiertes Release, von GitHub geprüft",
     verified: "Von den Maintainern bestätigt",
+    unverified: "Nicht von den Maintainern bestätigt",
     stars: "Sterne",
     forks: "Forks",
     latest: "Neuestes Release",
