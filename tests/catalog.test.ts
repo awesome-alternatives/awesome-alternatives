@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
-import { cp, mkdir, mkdtemp, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
+import { Ajv2020 } from "ajv/dist/2020.js";
 import { checkStructure, loadCatalog } from "../scripts/lib/catalog.ts";
 import type { Category, Tool } from "../scripts/lib/types.ts";
 
@@ -121,5 +122,33 @@ describe("loadCatalog", () => {
       findings.map((f) => f.code),
       ["bad-slug"],
     );
+  });
+});
+
+describe("the generated catalog", () => {
+  async function schema() {
+    const root = join(import.meta.dirname, "..");
+    const validate = new Ajv2020({ allErrors: true }).compile(
+      JSON.parse(await readFile(join(root, "schema/catalog.schema.json"), "utf8")),
+    );
+    return { validate, catalog: JSON.parse(await readFile(join(root, "generated/catalog.json"), "utf8")) };
+  }
+
+  it("matches the schema the site and the API read it against", async () => {
+    const { validate, catalog } = await schema();
+    assert.ok(validate(catalog), JSON.stringify(validate.errors));
+  });
+
+  it("rejects a trend the refresh could not have written", async () => {
+    const { validate, catalog } = await schema();
+    const [first] = catalog.tools;
+    assert.equal(validate({ ...catalog, tools: [{ ...first, trend: { stars: 12 } }] }), false);
+    assert.equal(validate({ ...catalog, tools: [{ ...first, trend: 12 }] }), false);
+  });
+
+  it("accepts an entry that predates the trend field, which the first refresh fills in", async () => {
+    const { validate, catalog } = await schema();
+    const { trend: _trend, ...without } = catalog.tools[0];
+    assert.ok(validate({ ...catalog, tools: [without] }), JSON.stringify(validate.errors));
   });
 });

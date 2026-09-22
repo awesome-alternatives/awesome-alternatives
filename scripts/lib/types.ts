@@ -59,6 +59,12 @@ export interface ReleaseFacts {
   signed: boolean;
 }
 
+export interface TrendFacts {
+  stars: number;
+  exact: boolean;
+  since: string;
+}
+
 export interface ReleaseEntry {
   tag: string;
   name: string | null;
@@ -77,6 +83,7 @@ export interface EnrichedTool {
   path: string | null;
   addedAt: string;
   repo: RepoFacts;
+  trend?: TrendFacts | null;
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   maintainerVerified: boolean;
