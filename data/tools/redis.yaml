@@ -1,0 +1,3 @@
+name: Redis
+repository: https://github.com/redis/redis
+category: key-value-store

@@ -1,0 +1,7 @@
+name: Parcel
+repository: https://github.com/parcel-bundler/parcel
+category: javascript-bundler
+replaces:
+  - tool: webpack
+    fit: full
+    note: Works without configuration for most projects.

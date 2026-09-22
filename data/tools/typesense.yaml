@@ -1,0 +1,7 @@
+name: Typesense
+repository: https://github.com/typesense/typesense
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Typo-tolerant app and site search, not log analytics.

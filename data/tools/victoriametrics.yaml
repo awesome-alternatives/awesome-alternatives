@@ -1,0 +1,7 @@
+name: VictoriaMetrics
+repository: https://github.com/VictoriaMetrics/VictoriaMetrics
+category: metrics
+replaces:
+  - tool: prometheus
+    fit: full
+    note: Accepts Prometheus remote write and scrape configs, queried with PromQL-compatible MetricsQL.
