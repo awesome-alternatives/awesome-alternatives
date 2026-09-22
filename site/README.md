@@ -1,7 +1,8 @@
 # Site
 
 Static Astro build. Pages are prerendered from `../generated/catalog.json` and
-`../data/categories.yaml`; the search box is a React island that calls the [API](../api).
+`../data/categories.yaml`; the search box is a React island that calls the [API](../api). `/feed.xml` is an RSS feed of
+the 50 most recently added tools, ordered by the `addedAt` the refresh keeps in the catalog.
 
 ```bash
 pnpm install

@@ -73,6 +73,7 @@ export interface EnrichedTool {
   category: string;
   replaces: Replacement[];
   affiliation: string | null;
+  addedAt: string;
   repo: RepoFacts;
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
