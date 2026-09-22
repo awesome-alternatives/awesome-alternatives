@@ -192,6 +192,30 @@ const link = (path: string) => pathFor(locale, path);
     <script>
       import { href, type SuggestIndex, suggest } from "../lib/suggest.ts";
 
+      const heroSearch = document.querySelector<HTMLInputElement>("#q");
+      const headerSearch = document.querySelector<HTMLInputElement>("#header-q");
+
+      const handover = (from: HTMLInputElement | null, to: HTMLInputElement | null) => {
+        if (!from || !to || document.activeElement !== from) return;
+        const start = from.selectionStart;
+        const end = from.selectionEnd;
+        to.focus({ preventScroll: true });
+        if (start !== null && end !== null) to.setSelectionRange(start, end);
+      };
+
+      if (heroSearch && headerSearch) {
+        let mirroring = false;
+        const mirror = (from: HTMLInputElement, to: HTMLInputElement) => {
+          if (mirroring || from.value === to.value) return;
+          mirroring = true;
+          to.value = from.value;
+          to.dispatchEvent(new Event("input", { bubbles: true }));
+          mirroring = false;
+        };
+        heroSearch.addEventListener("input", () => mirror(heroSearch, headerSearch));
+        headerSearch.addEventListener("input", () => mirror(headerSearch, heroSearch));
+      }
+
       const anchor = document.querySelector("[data-reveal-anchor]");
       const header = document.querySelector(".site-header");
       if (header) {
@@ -203,7 +227,10 @@ const link = (path: string) => pathFor(locale, path);
           watcher?.disconnect();
           watcher = new IntersectionObserver(
             ([entry]) => {
-              header.toggleAttribute("data-search-visible", !entry.isIntersecting);
+              const reveal = !entry.isIntersecting;
+              if (reveal === header.hasAttribute("data-search-visible")) return;
+              header.toggleAttribute("data-search-visible", reveal);
+              handover(reveal ? heroSearch : headerSearch, reveal ? headerSearch : heroSearch);
             },
             { rootMargin: `-${height}px 0px 0px 0px` },
           );
@@ -220,7 +247,7 @@ const link = (path: string) => pathFor(locale, path);
       }
 
       const field = document.querySelector<HTMLElement>("[data-suggest]");
-      const input = field?.querySelector("input");
+      const input = headerSearch;
       if (field && input) {
         const text = field.dataset;
         const list = document.createElement("div");
