@@ -61,6 +61,13 @@ affected.
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
+No browser on another origin can read a response unless `ALLOWED_ORIGINS` names its origin. The
+site is served from the same origin as the API, at `/api`, so it needs no entry and the default is
+to name none. Set it only when the site and the API are on different hostnames, and give it the
+site's origin, not the API's. A preflight from an origin that is not listed still answers `200`,
+because the answer is "here is what I would allow" with no `Access-Control-Allow-Origin` in it, and
+that absence is what makes the browser throw the response away.
+
 `TRUST_PROXY=true` alone is not enough to be believed. The header is read only when the connection
 itself comes from a loopback, private or link-local address, which is where a reverse proxy sits.
 A request that reaches the container from a public address keeps its own peer address as the rate
@@ -175,6 +182,7 @@ requests are in flight.
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
+| `ALLOWED_ORIGINS` | unset | Comma-separated origins a browser may read a response from. Unset means same-origin only. |
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
 | `TYPESAFE_MODEL` | `jev-latest` | Pin a version such as `jev-1.13.0` for stable answers. |
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
