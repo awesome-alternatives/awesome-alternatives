@@ -10,11 +10,12 @@ import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
 import { canonicalForTool } from "../../../lib/canonical.ts";
-import { categories, nameOf, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
+import { categories, checkedAt, nameOf, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
 import { comparePath, pairForTool } from "../../../lib/compare.ts";
 import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
+import { historyUrl } from "../../../lib/freshness.ts";
 import { slugify } from "../../../lib/slug.ts";
 
 export const getStaticPaths = (() =>
@@ -145,6 +146,15 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
             )
           }
         </dl>
+
+        <p class="freshness">
+          {
+            checkedAt && (
+              <a href={`${pathFor(locale, "/about/")}#refresh`}>{format(m.tool.checked, { date: day(checkedAt) ?? "" })}</a>
+            )
+          }
+          <a href={historyUrl(tool.slug)}>{format(m.tool.edited, { date: day(tool.editedAt) ?? "" })}</a>
+        </p>
 
         {
           counterpart && (

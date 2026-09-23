@@ -17,6 +17,8 @@ function tool(slug: string, addedAt: string, description: string | null = null, 
     affiliation: null,
     path: null,
     addedAt,
+    editedAt: addedAt,
+    factsChangedAt: null,
     repo: {
       fullName: `example/${slug}`,
       description,

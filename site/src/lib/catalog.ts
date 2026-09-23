@@ -23,11 +23,18 @@ export interface Target {
   alternatives: EnrichedTool[];
 }
 
-const catalog: { owners: Record<string, OwnerFacts>; tools: EnrichedTool[]; products: ListedProduct[] } = JSON.parse(
+const catalog: {
+  checkedAt?: string;
+  owners: Record<string, OwnerFacts>;
+  tools: EnrichedTool[];
+  products: ListedProduct[];
+} = JSON.parse(
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
 );
 
 export const tools: EnrichedTool[] = catalog.tools;
+
+export const checkedAt: string | null = catalog.checkedAt ?? null;
 
 export const products: ListedProduct[] = catalog.products;
 

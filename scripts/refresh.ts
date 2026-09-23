@@ -1,7 +1,15 @@
 import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { ADDED_LOG_ARGS, addedAt, carriedAddedAt, parseAddedLog } from "./lib/added.ts";
+import {
+  ADDED_LOG_ARGS,
+  addedAt,
+  carriedAddedAt,
+  EDITED_LOG_ARGS,
+  parseAddedLog,
+  parseEditedLog,
+} from "./lib/added.ts";
+import { factsChangedAt, type PreviousFacts } from "./lib/changed.ts";
 import { loadCatalog } from "./lib/catalog.ts";
 import { fetchOwner, fetchReleases, ownerOf } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
@@ -25,8 +33,14 @@ const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
 const replaced = replacedSlugs(catalog.tools);
 const catalogPath = join(root, "generated/catalog.json");
-const carried = carriedAddedAt(JSON.parse(await readFile(catalogPath, "utf8")));
-const history = parseAddedLog(execFileSync("git", ADDED_LOG_ARGS, { cwd: root, encoding: "utf8" }));
+const previous: { tools: (PreviousFacts & { slug: string; addedAt?: string })[] } = JSON.parse(
+  await readFile(catalogPath, "utf8"),
+);
+const carried = carriedAddedAt(previous);
+const before = new Map(previous.tools.map((t) => [t.slug, t]));
+const git = (args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" });
+const history = parseAddedLog(git(ADDED_LOG_ARGS));
+const edits = parseEditedLog(git(EDITED_LOG_ARGS));
 
 const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
   const evidence = await gather(gh, tool, true);
@@ -46,6 +60,8 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     affiliation: tool.affiliation ?? null,
     path: tool.path ?? null,
     addedAt: addedAt(tool.slug, carried, history, now),
+    editedAt: edits.get(tool.slug) ?? now.toISOString(),
+    factsChangedAt: factsChangedAt(before.get(tool.slug), evidence.repo, now),
     repo: evidence.repo,
     trend: trendOf(evidence.recentStars, evidence.repo.stars, now),
     release: evidence.release,
@@ -75,7 +91,7 @@ const categories = Object.fromEntries(catalog.categories);
 
 await writeFile(
   catalogPath,
-  `${JSON.stringify({ stats: statsOf(tools), owners, tools, products, categories }, null, 2)}\n`,
+  `${JSON.stringify({ stats: statsOf(tools), checkedAt: now.toISOString(), owners, tools, products, categories }, null, 2)}\n`,
 );
 
 const readmePath = join(root, "README.md");

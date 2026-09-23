@@ -13,6 +13,8 @@ function entry(slug: string, overrides: Partial<EnrichedTool> = {}, archived = f
     affiliation: null,
     path: null,
     addedAt: "2026-01-01T00:00:00.000Z",
+    editedAt: "2026-01-01T00:00:00.000Z",
+    factsChangedAt: null,
     repo: {
       fullName: `acme/${slug}`,
       description: null,

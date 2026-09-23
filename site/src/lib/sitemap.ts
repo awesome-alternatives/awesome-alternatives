@@ -1,6 +1,7 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
 import { LOCALES, pathFor } from "../i18n/index.ts";
 import { comparePairs } from "./compare.ts";
+import { type Dated, lastModified } from "./freshness.ts";
 import { listedOwners } from "./owners.ts";
 import { slugify } from "./slug.ts";
 
@@ -26,6 +27,14 @@ export function barePaths(tools: CatalogEntry[]): string[] {
     ...listedOwners(tools).map((login) => `/owners/${slugify(login)}/`),
     ...comparePairs(tools).map((pair) => `/compare/${pair.slug}/`),
   ];
+}
+
+export function lastmodByPath(tools: readonly (Dated & { slug: string })[]): Map<string, string> {
+  const out = new Map<string, string>();
+  for (const tool of tools) {
+    for (const locale of LOCALES) out.set(pathFor(locale, `/tools/${tool.slug}/`), lastModified(tool));
+  }
+  return out;
 }
 
 export function expectedPaths(tools: CatalogEntry[]): string[] {

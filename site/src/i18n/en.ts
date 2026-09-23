@@ -180,6 +180,8 @@ export const en = {
     selfHostYes: "Yes",
     website: "Website ↗",
     edit: "Edit this entry",
+    checked: "Read from GitHub on {date}.",
+    edited: "Entry last edited on {date}.",
   },
 
   compare: {
