@@ -1,11 +1,13 @@
 import type { Fit, Terms, ToolView } from "./types.ts";
 
 export interface ListFilters {
-  language: string | null;
-  license: string | null;
-  fit: Fit | null;
-  terms: Terms | null;
+  language: readonly string[];
+  license: readonly string[];
+  fit: readonly Fit[];
+  terms: readonly Terms[];
 }
+
+export const NO_FILTERS: ListFilters = { language: [], license: [], fit: [], terms: [] };
 
 export interface Facet<T extends string = string> {
   value: T;
@@ -32,14 +34,32 @@ export function dropInCount(alternatives: readonly ToolView[], target: string): 
   return alternatives.filter((t) => fitFor(t, target) === "drop-in").length;
 }
 
+function admits<T>(chosen: readonly T[], value: T | null): boolean {
+  return chosen.length === 0 || (value !== null && chosen.includes(value));
+}
+
 export function narrow<T extends ToolView>(tools: readonly T[], target: string, f: ListFilters): T[] {
   return tools.filter(
     (t) =>
-      (f.language === null || t.repo.language === f.language) &&
-      (f.license === null || t.repo.license === f.license) &&
-      (f.fit === null || fitFor(t, target) === f.fit) &&
-      (f.terms === null || t.terms === f.terms),
+      admits(f.language, t.repo.language) &&
+      admits(f.license, t.repo.license) &&
+      admits(f.fit, fitFor(t, target)) &&
+      admits(f.terms, t.terms),
   );
+}
+
+export function toggled<T>(chosen: readonly T[], value: T): T[] {
+  return chosen.includes(value) ? chosen.filter((v) => v !== value) : [...chosen, value];
+}
+
+export function matching<T extends string>(
+  facets: readonly Facet<T>[],
+  query: string,
+  describe: (value: T) => string,
+): Facet<T>[] {
+  const needle = query.trim().toLocaleLowerCase();
+  if (!needle) return [...facets];
+  return facets.filter(({ value }) => describe(value).toLocaleLowerCase().includes(needle));
 }
 
 export function facets<T extends string>(values: readonly (T | null)[]): Facet<T>[] {

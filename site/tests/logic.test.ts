@@ -5,7 +5,7 @@ import { islands } from "../src/i18n/islands.en.ts";
 import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
 import { canonicalForTool } from "../src/lib/canonical.ts";
-import { alternativesTo, dropInCount, facets, narrow } from "../src/lib/filter.ts";
+import { alternativesTo, dropInCount, facets, matching, narrow, NO_FILTERS, toggled } from "../src/lib/filter.ts";
 import { stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
 import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
@@ -91,11 +91,39 @@ test("a tool others replace is canonical on its alternatives page, any other on 
 
 test("narrow combines language and fit for the page's target", () => {
   const tools = [tool("a", "Rust", [["sr", "full"]]), tool("b", "Rust", [["sr", "partial"]]), tool("c", "Go", [["sr", "full"]])];
-  const shown = narrow(tools, "sr", { language: "Rust", license: null, fit: "full", terms: null });
+  const shown = narrow(tools, "sr", { ...NO_FILTERS, language: ["Rust"], fit: ["full"] });
   assert.deepEqual(
     shown.map((t) => t.slug),
     ["a"],
   );
+});
+
+test("several values in one facet widen it, while facets still narrow each other", () => {
+  const tools = [tool("a", "Rust", [["sr", "full"]]), tool("b", "Go", [["sr", "full"]]), tool("c", "C", [["sr", "full"]]), tool("d", "Go", [["sr", "partial"]])];
+  const either = narrow(tools, "sr", { ...NO_FILTERS, language: ["Rust", "Go"] });
+  assert.deepEqual(either.map((t) => t.slug), ["a", "b", "d"]);
+  const both = narrow(tools, "sr", { ...NO_FILTERS, language: ["Rust", "Go"], fit: ["full"] });
+  assert.deepEqual(both.map((t) => t.slug), ["a", "b"]);
+});
+
+test("a chosen value excludes a tool whose value is unknown, an empty facet does not", () => {
+  const tools = [tool("a", null, [["sr", "full"]]), tool("b", "Rust", [["sr", "full"]])];
+  assert.deepEqual(narrow(tools, "sr", { ...NO_FILTERS, language: ["Rust"] }).map((t) => t.slug), ["b"]);
+  assert.equal(narrow(tools, "sr", NO_FILTERS).length, 2);
+});
+
+test("toggling adds a value once and removes it on the second press", () => {
+  assert.deepEqual(toggled(["Rust"], "Go"), ["Rust", "Go"]);
+  assert.deepEqual(toggled(["Rust", "Go"], "Rust"), ["Go"]);
+});
+
+test("the menu search matches the label a reader sees, ignoring case", () => {
+  const values = facets(["Apache-2.0", "MIT", "GPL-3.0"]);
+  const label = (v: string) => (v === "MIT" ? "MIT License" : v);
+  assert.deepEqual(matching(values, "license", label).map((f) => f.value), ["MIT"]);
+  assert.deepEqual(matching(values, " gpl ", label).map((f) => f.value), ["GPL-3.0"]);
+  assert.equal(matching(values, "", label).length, 3);
+  assert.deepEqual(matching(values, "bsd", label), []);
 });
 
 test("facets count values, ignore unknowns and sort by count then name", () => {
