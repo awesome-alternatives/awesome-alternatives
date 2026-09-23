@@ -5,6 +5,7 @@ export const en = {
   locale: {
     name: "English",
     htmlLang: "en",
+    dir: "ltr",
     ogLocale: "en_US",
   },
 

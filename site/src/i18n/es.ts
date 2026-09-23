@@ -6,6 +6,7 @@ export const es: Messages = {
   locale: {
     name: "Español",
     htmlLang: "es",
+    dir: "ltr",
     ogLocale: "es_ES",
   },
 

@@ -29,6 +29,13 @@ describe("pathFor", () => {
   });
 });
 
+test("every locale declares a writing direction the html element can use", () => {
+  for (const locale of LOCALES) {
+    const dir = messages(locale).locale.dir;
+    assert.ok(dir === "ltr" || dir === "rtl", `${locale} declares ${dir}`);
+  }
+});
+
 describe("localeOf", () => {
   test("reads the locale from the first segment, defaulting to English", () => {
     assert.equal(localeOf("/fr/about/"), "fr");
