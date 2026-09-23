@@ -128,6 +128,8 @@ export interface EnrichedTool {
   affiliation: string | null;
   path: string | null;
   addedAt: string;
+  editedAt: string;
+  factsChangedAt: string | null;
   repo: RepoFacts;
   trend?: TrendFacts | null;
   release: ReleaseFacts | null;

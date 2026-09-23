@@ -4,6 +4,7 @@
     "categories": 55,
     "targets": 62
   },
+  "checkedAt": "2026-09-23T17:39:13.979Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -1366,13 +1367,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Aider-AI/aider",
         "description": "aider is AI pair programming in your terminal",
         "homepage": "https://aider.chat/",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 49134,
+        "stars": 49135,
         "forks": 4985,
         "topics": [
           "anthropic",
@@ -1460,14 +1463,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "alacritty/alacritty",
         "description": "A cross-platform, OpenGL terminal emulator.",
         "homepage": "https://alacritty.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 65799,
-        "forks": 3622,
+        "stars": 65800,
+        "forks": 3623,
         "topics": [
           "bsd",
           "gpu",
@@ -1556,13 +1561,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Mintplex-Labs/anything-llm",
         "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
         "homepage": "https://anythingllm.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 66366,
+        "stars": 66367,
         "forks": 7390,
         "topics": [
           "agent-computer",
@@ -1657,13 +1664,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "biomejs/biome",
         "description": "A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.",
         "homepage": "https://biomejs.dev",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 25848,
+        "stars": 25849,
         "forks": 1237,
         "topics": [
           "css",
@@ -1680,7 +1689,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-07-27T20:30:22Z",
-        "pushedAt": "2026-09-23T16:39:23Z",
+        "pushedAt": "2026-09-23T17:39:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -1741,13 +1750,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "bitwarden/server",
         "description": "Bitwarden infrastructure/backend (API, database, Docker, etc).",
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20185,
+        "stars": 20187,
         "forks": 1773,
         "topics": [
           "api",
@@ -1766,7 +1777,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-23T16:26:49Z",
+        "pushedAt": "2026-09-23T17:28:43Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -1827,6 +1838,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "psf/black",
         "description": "The uncompromising Python code formatter",
@@ -1917,14 +1930,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "usebruno/bruno",
         "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47138,
-        "forks": 2912,
+        "stars": 47139,
+        "forks": 2913,
         "topics": [
           "api-client",
           "api-testing",
@@ -2017,6 +2032,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "oven-sh/bun",
         "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
@@ -2043,7 +2060,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-23T16:36:49Z",
+        "pushedAt": "2026-09-23T17:28:01Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2110,13 +2127,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "caddyserver/caddy",
         "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 76023,
+        "stars": 76025,
         "forks": 4992,
         "topics": [
           "acme",
@@ -2206,6 +2225,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "changesets/changesets",
         "description": "🦋 A tool to manage versioning and changelogs with a focus on monorepos",
@@ -2291,20 +2312,22 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "cline/cline",
         "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69151,
+        "stars": 69155,
         "forks": 7498,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2024-07-06T07:28:10Z",
-        "pushedAt": "2026-09-23T14:50:52Z",
+        "pushedAt": "2026-09-23T17:21:50Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2370,6 +2393,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "cocogitto/cocogitto",
         "description": "The Conventional Commits toolbox",
@@ -2463,20 +2488,22 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "openai/codex",
         "description": "Lightweight coding agent that runs in your terminal",
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126153,
-        "forks": 19647,
+        "stars": 126157,
+        "forks": 19648,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-13T05:37:54Z",
-        "pushedAt": "2026-09-23T16:39:37Z",
+        "pushedAt": "2026-09-23T17:35:56Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2494,6 +2521,13 @@
           "publishedAt": "2026-09-23T02:41:36Z",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.1",
           "prerelease": false
+        },
+        {
+          "tag": "rust-v0.158.0-alpha.3",
+          "name": "0.158.0-alpha.3",
+          "publishedAt": "2026-09-23T17:07:22Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.158.0-alpha.3",
+          "prerelease": true
         },
         {
           "tag": "rust-v0.158.0-alpha.2",
@@ -2515,13 +2549,6 @@
           "publishedAt": "2026-09-23T03:41:37Z",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.16.3",
           "prerelease": true
-        },
-        {
-          "tag": "rust-v0.156.0",
-          "name": "0.156.0",
-          "publishedAt": "2026-09-22T19:51:01Z",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0",
-          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -2543,6 +2570,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "concourse/concourse",
         "description": "Concourse is a container-based automation system written in Go. It's mostly used for CI/CD.",
@@ -2635,13 +2664,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "continuedev/continue",
         "description": "open-source coding agent",
         "homepage": "https://continue.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 36002,
+        "stars": 36003,
         "forks": 5417,
         "topics": [
           "agent",
@@ -2721,13 +2752,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "charmbracelet/crush",
         "description": "Glamourous agentic coding for all 💘",
         "homepage": null,
         "language": "Go",
         "license": "Other",
-        "stars": 28271,
+        "stars": 28272,
         "forks": 2280,
         "topics": [
           "agentic-ai",
@@ -2806,6 +2839,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "cuberite/cuberite",
         "description": "A lightweight, fast and extensible game server for Minecraft",
@@ -2883,13 +2918,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "cypress-io/cypress",
         "description": "Fast, easy and reliable testing for anything that runs in a browser.",
         "homepage": "https://cypress.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 51026,
+        "stars": 51025,
         "forks": 3643,
         "topics": [
           "angular-testing-library",
@@ -2977,6 +3014,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "date-fns/date-fns",
         "description": "⏳ Modern JavaScript date utility library ⌛️",
@@ -3068,14 +3107,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "iamkun/dayjs",
         "description": "⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API",
         "homepage": "https://day.js.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 48667,
-        "forks": 2970,
+        "stars": 48666,
+        "forks": 2975,
         "topics": [
           "date",
           "date-formatting",
@@ -3155,6 +3196,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "dandavison/delta",
         "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output",
@@ -3244,6 +3287,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "denoland/deno",
         "description": "A modern runtime for JavaScript and TypeScript.",
@@ -3323,6 +3368,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "so-fancy/diff-so-fancy",
         "description": "Make your diffs human readable for improved code quality and faster defect detection. :tada:",
@@ -3404,13 +3451,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "moby/moby",
         "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
         "homepage": "https://mobyproject.org/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 72128,
+        "stars": 72129,
         "forks": 19233,
         "topics": [
           "containers",
@@ -3483,6 +3532,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "facebook/docusaurus",
         "description": "Easy to maintain open source documentation websites.",
@@ -3570,6 +3621,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "dprint/dprint",
         "description": "Pluggable and configurable code formatting platform that unifies all your formatters.",
@@ -3652,6 +3705,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "dragonflydb/dragonfly",
         "description": "A modern replacement for Redis and Memcached",
@@ -3748,14 +3803,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "drizzle-team/drizzle-orm",
         "description": "ORM",
         "homepage": "https://orm.drizzle.team",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 35870,
-        "forks": 1650,
+        "stars": 35871,
+        "forks": 1651,
         "topics": [
           "bunjs",
           "mysql",
@@ -3772,7 +3829,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-06-24T09:03:05Z",
-        "pushedAt": "2026-09-22T23:04:26Z",
+        "pushedAt": "2026-09-23T17:33:03Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3833,14 +3890,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/elasticsearch",
         "description": "Free and Open Source, Distributed, RESTful Search Engine",
         "homepage": "https://www.elastic.co/products/elasticsearch",
         "language": "Java",
         "license": "Other",
-        "stars": 77967,
-        "forks": 26081,
+        "stars": 77968,
+        "forks": 26082,
         "topics": [
           "elasticsearch",
           "java",
@@ -3850,7 +3909,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-23T16:41:21Z",
+        "pushedAt": "2026-09-23T17:32:28Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3917,6 +3976,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "11ty/buildawesome",
         "description": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -4004,6 +4065,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "evanw/esbuild",
         "description": "An extremely fast bundler for the web",
@@ -4090,13 +4153,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "eslint/eslint",
         "description": "Find and fix problems in your JavaScript code.",
         "homepage": "https://eslint.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 27515,
+        "stars": 27514,
         "forks": 5190,
         "topics": [
           "ecmascript",
@@ -4109,7 +4174,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-06-29T23:59:48Z",
-        "pushedAt": "2026-09-23T16:11:24Z",
+        "pushedAt": "2026-09-23T17:21:19Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -4170,6 +4235,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ogham/exa",
         "description": "A modern replacement for ‘ls’.",
@@ -4251,14 +4318,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "expressjs/express",
         "description": "Fast, unopinionated, minimalist web framework for node.",
         "homepage": "https://expressjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 69463,
-        "forks": 25047,
+        "stars": 69461,
+        "forks": 25048,
         "topics": [
           "express",
           "javascript",
@@ -4336,6 +4405,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "eza-community/eza",
         "description": "A modern alternative to ls",
@@ -4427,13 +4498,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "fastapi/fastapi",
         "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
         "homepage": "https://fastapi.tiangolo.com/",
         "language": "Python",
         "license": "MIT",
-        "stars": 102549,
+        "stars": 102550,
         "forks": 9939,
         "topics": [
           "api",
@@ -4528,6 +4601,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "fastify/fastify",
         "description": "Fast and low overhead web framework, for Node.js",
@@ -4549,7 +4624,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-09-28T19:10:14Z",
-        "pushedAt": "2026-09-23T08:59:54Z",
+        "pushedAt": "2026-09-23T17:27:54Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -4616,6 +4691,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "FerretDB/FerretDB",
         "description": "A truly Open Source MongoDB alternative",
@@ -4709,6 +4786,8 @@
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/FerrFlow",
         "description": "Universal semantic versioning for monorepos and classic repos. One binary reads your commits, bumps 16 version-file formats, writes the changelog and cuts the release.",
@@ -4736,7 +4815,11 @@
         "pushedAt": "2026-09-23T16:26:22Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": true,
+        "since": "2026-04-03T16:21:32.000Z"
+      },
       "release": {
         "tag": "v7.25.3",
         "publishedAt": "2026-09-23T16:38:44Z",
@@ -4794,6 +4877,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "PyCQA/flake8",
         "description": "flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.",
@@ -4845,13 +4930,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pallets/flask",
         "description": "The Python micro framework for building web applications.",
         "homepage": "https://flask.palletsprojects.com",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 74764,
+        "stars": 74765,
         "forks": 17002,
         "topics": [
           "flask",
@@ -4933,6 +5020,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "fluent/fluent-bit",
         "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows",
@@ -4961,7 +5050,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-01-27T20:41:52Z",
-        "pushedAt": "2026-09-22T20:07:04Z",
+        "pushedAt": "2026-09-23T17:26:43Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -5028,6 +5117,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-22T21:40:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "PaperMC/Folia",
         "description": "Fork of Paper which adds regionised multithreading to the dedicated server.",
@@ -5080,13 +5171,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "TwiN/gatus",
         "description": "Automated developer-oriented status page with alerting and incident support",
         "homepage": "https://gatus.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 12141,
+        "stars": 12142,
         "forks": 834,
         "topics": [
           "alerting",
@@ -5181,14 +5274,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "google-gemini/gemini-cli",
         "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
         "homepage": "https://geminicli.com",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 107137,
-        "forks": 14619,
+        "stars": 107138,
+        "forks": 14620,
         "topics": [
           "ai",
           "ai-agents",
@@ -5202,7 +5297,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2025-04-17T17:04:31Z",
-        "pushedAt": "2026-09-23T16:17:46Z",
+        "pushedAt": "2026-09-23T17:29:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5269,13 +5364,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ghostty-org/ghostty",
         "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
         "homepage": "https://ghostty.org",
         "language": "Zig",
         "license": "MIT",
-        "stars": 61462,
+        "stars": 61463,
         "forks": 3497,
         "topics": [],
         "archived": false,
@@ -5321,6 +5418,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-22T18:19:45.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "datopian/giftless",
         "description": "🎁 A pluggable Git LFS server written in Python. Highly customizable and easy to extend.",
@@ -5394,13 +5493,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "orhun/git-cliff",
         "description": "A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ ",
         "homepage": "https://git-cliff.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 12261,
+        "stars": 12262,
         "forks": 328,
         "topics": [
           "changelog",
@@ -5493,6 +5594,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "go-gitea/gitea",
         "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
@@ -5527,7 +5630,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-11-01T02:13:26Z",
-        "pushedAt": "2026-09-23T15:06:51Z",
+        "pushedAt": "2026-09-23T16:54:13Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5594,6 +5697,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "gitlabhq/gitlabhq",
         "description": "GitLab CE Mirror | Please open new issues in our issue tracker on GitLab.com",
@@ -5642,6 +5747,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "GlowstoneMC/Glowstone",
         "description": "A fast, customizable and compatible open source server for Minecraft: Java Edition",
@@ -5732,6 +5839,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "itchyny/gojq",
         "description": "Pure Go implementation of jq",
@@ -5818,14 +5927,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "aaif-goose/goose",
         "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54589,
-        "forks": 6300,
+        "stars": 54587,
+        "forks": 6299,
         "topics": [
           "acp",
           "ai",
@@ -5836,7 +5947,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-08-23T19:03:36Z",
-        "pushedAt": "2026-09-23T16:33:19Z",
+        "pushedAt": "2026-09-23T17:27:44Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5903,6 +6014,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "helix-editor/helix",
         "description": "A post-modern modal text editor.",
@@ -5988,14 +6101,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "honojs/hono",
         "description": "Web framework built on Web Standards",
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32311,
-        "forks": 1339,
+        "stars": 32314,
+        "forks": 1338,
         "topics": [
           "aws-lambda",
           "bun",
@@ -6078,14 +6193,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "hoppscotch/hoppscotch",
         "description": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80480,
-        "forks": 6122,
+        "stars": 80482,
+        "forks": 6123,
         "topics": [
           "api",
           "api-client",
@@ -6171,6 +6288,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "httpie/cli",
         "description": "🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.",
@@ -6178,7 +6297,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 38570,
-        "forks": 4008,
+        "forks": 4009,
         "topics": [
           "api",
           "api-client",
@@ -6274,6 +6393,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "encode/httpx",
         "description": "A next generation HTTP client for Python. 🦋",
@@ -6281,7 +6402,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15504,
-        "forks": 1796,
+        "forks": 1800,
         "topics": [
           "asyncio",
           "http",
@@ -6359,13 +6480,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "gohugoio/hugo",
         "description": "The world’s fastest framework for building websites.",
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89913,
+        "stars": 89914,
         "forks": 8384,
         "topics": [
           "blog-engine",
@@ -6380,7 +6503,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-07-04T15:26:26Z",
-        "pushedAt": "2026-09-23T08:22:36Z",
+        "pushedAt": "2026-09-23T17:32:41Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -6447,6 +6570,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Infisical/infisical",
         "description": "Infisical is the open-source platform for secrets, certificates, and privileged access management.",
@@ -6481,7 +6606,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-23T16:26:16Z",
+        "pushedAt": "2026-09-23T17:29:48Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -6542,6 +6667,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Kong/insomnia",
         "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
@@ -6627,6 +6754,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "gnachman/iTerm2",
         "description": "iTerm2 is a terminal emulator for Mac OS X that does amazing things.",
@@ -6676,13 +6805,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "janhq/jan",
         "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
         "homepage": "https://jan.ai/",
         "language": "Rust",
         "license": "Other",
-        "stars": 44622,
+        "stars": 44623,
         "forks": 3050,
         "topics": [
           "chatgpt",
@@ -6765,6 +6896,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "01mf02/jaq",
         "description": "A jq clone focussed on correctness, speed, and simplicity",
@@ -6844,6 +6977,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "jekyll/jekyll",
         "description": ":globe_with_meridians: Jekyll is a blog-aware static site generator in Ruby",
@@ -6925,13 +7060,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "jenkinsci/jenkins",
         "description": "Jenkins automation server",
         "homepage": "https://www.jenkins.io",
         "language": "Java",
         "license": "MIT",
-        "stars": 26579,
+        "stars": 26580,
         "forks": 9832,
         "topics": [
           "cicd",
@@ -7010,6 +7147,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "jestjs/jest",
         "description": "Delightful JavaScript Testing.",
@@ -7094,6 +7233,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "apache/jmeter",
         "description": "Apache JMeter open-source load testing tool for analyzing and measuring the performance of a variety of services",
@@ -7172,6 +7313,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "jqlang/jq",
         "description": "Command-line JSON processor",
@@ -7179,7 +7322,7 @@
         "language": "C",
         "license": "Other",
         "stars": 35672,
-        "forks": 2328,
+        "forks": 2334,
         "topics": [
           "jq"
         ],
@@ -7254,6 +7397,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "k3d-io/k3d",
         "description": "Little helper to run CNCF's k3s in Docker",
@@ -7342,13 +7487,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/k6",
         "description": "A modern load testing tool, using Go and JavaScript",
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31555,
+        "stars": 31556,
         "forks": 1638,
         "topics": [
           "es6",
@@ -7426,13 +7573,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "apache/kafka",
         "description": "Apache Kafka - A distributed event streaming platform",
         "homepage": "https://kafka.apache.org/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 33796,
+        "stars": 33798,
         "forks": 15530,
         "topics": [
           "java",
@@ -7475,6 +7624,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Snapchat/KeyDB",
         "description": "A Multithreaded Fork of Redis",
@@ -7557,6 +7708,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "kubernetes-sigs/kind",
         "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
@@ -7644,14 +7797,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "kovidgoyal/kitty",
         "description": "If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based.",
         "homepage": "https://sw.kovidgoyal.net/kitty/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 35042,
-        "forks": 1519,
+        "stars": 35045,
+        "forks": 1520,
         "topics": [
           "c",
           "go",
@@ -7737,6 +7892,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "knope-dev/knope",
         "description": "A command line tool to handle all the tasks most developers find tedious.",
@@ -7819,6 +7976,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "lerna/lerna",
         "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -7899,6 +8058,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-22T18:19:45.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "git-lfs/lfs-test-server",
         "description": "Standalone Git LFS server",
@@ -7983,6 +8144,8 @@
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-22T18:19:45.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/LFSX",
         "description": "A fast, lightweight, secure Git LFS server",
@@ -8014,7 +8177,11 @@
         "pushedAt": "2026-09-23T00:06:53Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": true,
+        "since": "2026-09-18T07:25:57.000Z"
+      },
       "release": {
         "tag": "v1.17.1",
         "publishedAt": "2026-09-22T11:21:59Z",
@@ -8083,14 +8250,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "danny-avila/LibreChat",
         "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44765,
-        "forks": 9185,
+        "stars": 44775,
+        "forks": 9184,
         "topics": [
           "ai",
           "anthropic",
@@ -8117,7 +8286,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-23T16:22:54Z",
+        "pushedAt": "2026-09-23T17:29:30Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8184,6 +8353,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "litestar-org/litestar",
         "description": "Light, flexible and extensible ASGI framework | Built to scale",
@@ -8285,14 +8456,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ggml-org/llama.cpp",
         "description": "LLM inference in C/C++",
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129316,
-        "forks": 23635,
+        "stars": 129319,
+        "forks": 23640,
         "topics": [
           "ggml"
         ],
@@ -8300,7 +8473,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-23T16:25:15Z",
+        "pushedAt": "2026-09-23T17:39:42Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8312,6 +8485,13 @@
         "signed": false
       },
       "releases": [
+        {
+          "tag": "b11140",
+          "name": "CUDA: enable sparse-fa for dsv4 prefill (again) (#29298)",
+          "publishedAt": "2026-09-23T17:39:43Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11140",
+          "prerelease": true
+        },
         {
           "tag": "b11139",
           "name": "server: fix token counting API crash on sleep (#29309)",
@@ -8339,13 +8519,6 @@
           "publishedAt": "2026-09-23T14:05:30Z",
           "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11135",
           "prerelease": true
-        },
-        {
-          "tag": "b11132",
-          "name": "model : support Gemma4 DSpark draft backbone (#29226)",
-          "publishedAt": "2026-09-23T13:22:39Z",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11132",
-          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -8372,13 +8545,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "lobehub/lobehub",
         "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
         "homepage": "https://lobehub.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 82782,
+        "stars": 82784,
         "forks": 15916,
         "topics": [
           "agent",
@@ -8404,7 +8579,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-23T16:39:59Z",
+        "pushedAt": "2026-09-23T17:39:22Z",
         "defaultBranch": "canary"
       },
       "trend": null,
@@ -8421,6 +8596,13 @@
           "name": "Desktop Canary v2.2.19-canary.9",
           "publishedAt": "2026-09-23T10:46:17Z",
           "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.9",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.14",
+          "name": "Desktop Canary v2.2.19-canary.14",
+          "publishedAt": "2026-09-23T17:03:51Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.14",
           "prerelease": true
         },
         {
@@ -8443,13 +8625,6 @@
           "publishedAt": "2026-09-23T12:27:07Z",
           "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.11",
           "prerelease": true
-        },
-        {
-          "tag": "v2.2.19-canary.10",
-          "name": "Desktop Canary v2.2.19-canary.10",
-          "publishedAt": "2026-09-23T11:35:16Z",
-          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.10",
-          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -8471,6 +8646,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "locustio/locust",
         "description": "Write scalable load tests in plain Python 🚗💨",
@@ -8557,6 +8734,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/logstash",
         "description": "Logstash - transport and process your logs, events, or other data",
@@ -8577,7 +8756,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-11-18T01:31:50Z",
-        "pushedAt": "2026-09-23T15:59:55Z",
+        "pushedAt": "2026-09-23T17:29:23Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8644,6 +8823,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "lsd-rs/lsd",
         "description": "The next gen ls command",
@@ -8731,6 +8912,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "moment/luxon",
         "description": "⏱ A library for working with dates and times in JS",
@@ -8781,13 +8964,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "matomo-org/matomo",
         "description": "Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in privacy. Easily collect, visualise, and analyse data from websites & apps. Star us on GitHub ⭐️  – Pull Requests welcome! ",
         "homepage": "https://matomo.org/",
         "language": "PHP",
         "license": "GPL-3.0",
-        "stars": 21894,
+        "stars": 21893,
         "forks": 2894,
         "topics": [
           "analytics",
@@ -8810,7 +8995,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-03-30T21:18:17Z",
-        "pushedAt": "2026-09-23T16:32:03Z",
+        "pushedAt": "2026-09-23T17:31:09Z",
         "defaultBranch": "6.x-dev"
       },
       "trend": null,
@@ -8877,6 +9062,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "mattermost/mattermost",
         "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
@@ -8898,7 +9085,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-23T16:39:30Z",
+        "pushedAt": "2026-09-23T17:37:58Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8965,13 +9152,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "meilisearch/meilisearch",
         "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
         "homepage": "https://www.meilisearch.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 59385,
+        "stars": 59384,
         "forks": 2712,
         "topics": [
           "ai",
@@ -9066,6 +9255,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-22T21:40:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Minestom/Minestom",
         "description": "26.2 Lightweight Minecraft server",
@@ -9148,14 +9339,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "kubernetes/minikube",
         "description": "Run Kubernetes locally",
         "homepage": "https://minikube.sigs.k8s.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 32152,
-        "forks": 5330,
+        "stars": 32153,
+        "forks": 5331,
         "topics": [
           "cluster",
           "cncf",
@@ -9229,6 +9422,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-22T16:05:03.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "minio/minio",
         "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
@@ -9318,6 +9513,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "moment/moment",
         "description": "Parse, validate, manipulate, and display dates in javascript.",
@@ -9371,6 +9568,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "mongodb/mongo",
         "description": "The MongoDB Database",
@@ -9389,7 +9588,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-23T16:04:13Z",
+        "pushedAt": "2026-09-23T17:02:33Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -9420,13 +9619,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "moonrepo/moon",
         "description": "A build system and monorepo management tool for the web ecosystem, written in Rust.",
         "homepage": "https://moonrepo.dev/moon",
         "language": "Rust",
         "license": "MIT",
-        "stars": 4113,
+        "stars": 4114,
         "forks": 252,
         "topics": [
           "build-system",
@@ -9511,13 +9712,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "python/mypy",
         "description": "Optional static typing for Python",
         "homepage": "https://www.mypy-lang.org/",
         "language": "Python",
         "license": "Other",
-        "stars": 20647,
+        "stars": 20648,
         "forks": 3310,
         "topics": [
           "linter",
@@ -9561,13 +9764,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "neovim/neovim",
         "description": "Vim-fork focused on extensibility and usability",
         "homepage": "https://neovim.io",
         "language": "Vim Script",
         "license": "Other",
-        "stars": 102531,
+        "stars": 102532,
         "forks": 7128,
         "topics": [
           "api",
@@ -9643,13 +9848,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T07:14:07.000Z",
+      "editedAt": "2026-09-23T07:14:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "nextcloud/server",
         "description": "☁️ Nextcloud server, a safe home for all your data",
         "homepage": "https://nextcloud.com",
         "language": "PHP",
         "license": "AGPL-3.0",
-        "stars": 36892,
+        "stars": 36891,
         "forks": 5244,
         "topics": [
           "cloud",
@@ -9677,7 +9884,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-23T16:39:45Z",
+        "pushedAt": "2026-09-23T17:35:09Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -9738,13 +9945,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "nginx/nginx",
         "description": "The official NGINX Open Source repository.",
         "homepage": "https://nginx.org/",
         "language": "C",
         "license": "BSD-2-Clause",
-        "stars": 31721,
+        "stars": 31722,
         "forks": 8309,
         "topics": [
           "content-cache",
@@ -9828,6 +10037,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "nodejs/node",
         "description": "Node.js JavaScript runtime ✨🐢🚀✨",
@@ -9835,7 +10046,7 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 122050,
-        "forks": 37529,
+        "forks": 37535,
         "topics": [
           "javascript",
           "js",
@@ -9851,7 +10062,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-11-26T19:57:11Z",
-        "pushedAt": "2026-09-23T16:25:16Z",
+        "pushedAt": "2026-09-23T17:09:34Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9912,13 +10123,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "npm/cli",
         "description": "the package manager for JavaScript",
         "homepage": "https://docs.npmjs.com/cli/",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 10133,
+        "stars": 10134,
         "forks": 4758,
         "topics": [
           "javascript",
@@ -9932,7 +10145,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-07-05T23:26:52Z",
-        "pushedAt": "2026-09-22T21:34:51Z",
+        "pushedAt": "2026-09-23T17:16:53Z",
         "defaultBranch": "latest"
       },
       "trend": null,
@@ -9999,13 +10212,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "nrwl/nx",
         "description": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
         "homepage": "https://nx.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 29367,
+        "stars": 29368,
         "forks": 3003,
         "topics": [
           "angular",
@@ -10030,7 +10245,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-23T16:26:56Z",
+        "pushedAt": "2026-09-23T17:14:25Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -10097,6 +10312,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "JanDeDobbeleer/oh-my-posh",
         "description": "The most customisable and low-latency cross platform/shell prompt renderer",
@@ -10200,14 +10417,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ollama/ollama",
         "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181524,
-        "forks": 17982,
+        "stars": 181525,
+        "forks": 17983,
         "topics": [
           "deepseek",
           "gemma",
@@ -10229,7 +10448,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-06-26T19:39:32Z",
-        "pushedAt": "2026-09-23T07:56:56Z",
+        "pushedAt": "2026-09-23T17:33:41Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10301,6 +10520,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "theonedev/onedev",
         "description": "The Unified and Autonomous Development Platform",
@@ -10396,13 +10617,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "open-webui/open-webui",
         "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 152922,
+        "stars": 152921,
         "forks": 22372,
         "topics": [
           "ai",
@@ -10492,6 +10715,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "openbao/openbao",
         "description": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.",
@@ -10509,18 +10734,32 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-09T18:17:33Z",
-        "pushedAt": "2026-09-23T16:42:40Z",
+        "pushedAt": "2026-09-23T17:39:53Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v2.6.2",
-        "publishedAt": "2026-08-18T16:21:00Z",
-        "url": "https://github.com/openbao/openbao/releases/tag/v2.6.2",
+        "tag": "v2.7.0",
+        "publishedAt": "2026-09-23T17:39:54Z",
+        "url": "https://github.com/openbao/openbao/releases/tag/v2.7.0",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v2.7.0",
+          "name": "agent, proxy: Ensure the quit endpoint correctly requires the X-Vault-Request header when specified by listener configu…",
+          "publishedAt": "2026-09-23T17:39:54Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.7.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.6.3",
+          "name": "agent, proxy: Ensure the quit endpoint correctly requires the X-Vault-Request header when specified by listener configu…",
+          "publishedAt": "2026-09-23T17:06:02Z",
+          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.3",
+          "prerelease": false
+        },
         {
           "tag": "v2.7.0-beta20260909",
           "name": "External Keys: The PKI and Transit secret engines can now use KMS plugins to perform cryptographic operations without s…",
@@ -10541,20 +10780,6 @@
           "publishedAt": "2026-07-22T14:37:36Z",
           "url": "https://github.com/openbao/openbao/releases/tag/v2.6.1",
           "prerelease": false
-        },
-        {
-          "tag": "v2.6.0",
-          "name": "Namespace Sealing: Allow Shamir seal configuration on namespace creation. [GH-3297]",
-          "publishedAt": "2026-07-14T17:06:32Z",
-          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v2.6.0-beta20260622",
-          "name": "Namespace Sealing: Allow Shamir seal configuration on namespace creation. [GH-3297]",
-          "publishedAt": "2026-06-22T19:58:29Z",
-          "url": "https://github.com/openbao/openbao/releases/tag/v2.6.0-beta20260622",
-          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -10576,20 +10801,22 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "anomalyco/opencode",
         "description": "The open source coding agent.",
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209617,
-        "forks": 27656,
+        "stars": 209625,
+        "forks": 27660,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-30T20:08:00Z",
-        "pushedAt": "2026-09-23T16:41:37Z",
+        "pushedAt": "2026-09-23T17:29:58Z",
         "defaultBranch": "dev"
       },
       "trend": null,
@@ -10656,14 +10883,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "OpenHands/OpenHands",
         "description": "🙌 OpenHands: AI-Driven Development",
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 88979,
-        "forks": 11710,
+        "stars": 88981,
+        "forks": 11712,
         "topics": [
           "agent",
           "artificial-intelligence",
@@ -10679,18 +10908,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-03-13T03:33:31Z",
-        "pushedAt": "2026-09-23T16:35:55Z",
+        "pushedAt": "2026-09-23T17:24:02Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v1.22.0",
-        "publishedAt": "2026-09-22T16:28:11Z",
-        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.22.0",
+        "tag": "v1.23.0",
+        "publishedAt": "2026-09-23T17:24:03Z",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.23.0",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v1.23.0",
+          "name": "feat(desktop): universal macOS DMG with per-arch bundled runtimes",
+          "publishedAt": "2026-09-23T17:24:03Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.23.0",
+          "prerelease": false
+        },
         {
           "tag": "v1.22.0",
           "name": "feat: test remote MCP servers on cloud backends via the app server",
@@ -10718,13 +10954,6 @@
           "publishedAt": "2026-09-16T19:24:24Z",
           "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.19.0",
           "prerelease": false
-        },
-        {
-          "tag": "v1.18.0",
-          "name": "feat: click an image attachment to open it full size",
-          "publishedAt": "2026-09-11T18:27:48Z",
-          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
-          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -10746,6 +10975,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "opensearch-project/OpenSearch",
         "description": "🔎 Open source distributed and RESTful search engine.",
@@ -10833,6 +11064,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "opentofu/opentofu",
         "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
@@ -10846,7 +11079,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-16T20:01:36Z",
-        "pushedAt": "2026-09-22T19:18:18Z",
+        "pushedAt": "2026-09-23T17:28:56Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10913,6 +11146,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "oxc-project/oxc",
         "description": "⚓ A collection of high-performance JavaScript tools.",
@@ -10920,7 +11155,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 22864,
-        "forks": 1312,
+        "forks": 1313,
         "topics": [
           "compiler",
           "javascript",
@@ -10995,13 +11230,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "PaperMC/Paper",
         "description": "The most widely used, high performance Minecraft server that aims to fix gameplay and mechanics inconsistencies",
         "homepage": "https://papermc.io/software/paper",
         "language": "Java",
         "license": "Other",
-        "stars": 12676,
+        "stars": 12677,
         "forks": 3538,
         "topics": [
           "bukkit",
@@ -11050,6 +11287,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "parcel-bundler/parcel",
         "description": "The zero configuration build tool for the web. 📦🚀",
@@ -11142,6 +11381,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pdm-project/pdm",
         "description": "A modern Python package and dependency manager supporting the latest PEP standards",
@@ -11224,6 +11465,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pypa/pip",
         "description": "The Python package installer",
@@ -11277,6 +11520,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "plausible/analytics",
         "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
@@ -11311,7 +11556,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-12-04T22:33:36Z",
-        "pushedAt": "2026-09-23T16:22:40Z",
+        "pushedAt": "2026-09-23T16:51:14Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11378,13 +11623,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/playwright",
         "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96563,
+        "stars": 96565,
         "forks": 6492,
         "topics": [
           "automation",
@@ -11474,6 +11721,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pnpm/pnpm",
         "description": "Fast, disk space efficient package manager",
@@ -11496,7 +11745,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-23T16:41:57Z",
+        "pushedAt": "2026-09-23T17:38:55Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11563,6 +11812,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "podman-container-tools/podman",
         "description": "Podman: A tool for managing OCI containers and pods.",
@@ -11643,6 +11894,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "python-poetry/poetry",
         "description": "Python packaging and dependency management made easy",
@@ -11723,6 +11976,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "romkatv/powerlevel10k",
         "description": "A Zsh theme",
@@ -11799,6 +12054,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "prettier/prettier",
         "description": "Prettier is an opinionated code formatter.",
@@ -11892,6 +12149,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "prisma/orm",
         "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
@@ -11987,13 +12246,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "prometheus/prometheus",
         "description": "The Prometheus monitoring system and time series database.",
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66191,
+        "stars": 66193,
         "forks": 10850,
         "topics": [
           "alerting",
@@ -12008,7 +12269,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-11-24T11:14:12Z",
-        "pushedAt": "2026-09-23T16:11:40Z",
+        "pushedAt": "2026-09-23T17:13:15Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12075,6 +12336,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pulumi/pulumi",
         "description": "Pulumi - Infrastructure as Code in any programming language 🚀",
@@ -12107,7 +12370,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-23T16:25:41Z",
+        "pushedAt": "2026-09-23T16:54:44Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12174,6 +12437,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-22T21:40:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Pumpkin-MC/Pumpkin",
         "description": "Empowering everyone to host fast and efficient Minecraft servers",
@@ -12251,6 +12516,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-22T21:40:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "PurpurMC/Purpur",
         "description": "Purpur is a drop-in replacement for Paper servers designed for configurability, and new fun and exciting gameplay features.",
@@ -12298,6 +12565,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "pylint-dev/pylint",
         "description": "It's not just a linter that annoys you!",
@@ -12386,6 +12655,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/pyright",
         "description": "Static Type Checker for Python",
@@ -12399,7 +12670,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-03-12T03:38:46Z",
-        "pushedAt": "2026-09-22T23:25:21Z",
+        "pushedAt": "2026-09-23T17:25:33Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12460,6 +12731,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "redis/redis",
         "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
@@ -12561,6 +12834,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "redpanda-data/redpanda",
         "description": "Redpanda is a streaming data platform for developers. Kafka API compatible. 10x faster. No ZooKeeper. No JVM!",
@@ -12657,13 +12932,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "googleapis/release-please",
         "description": "generate release PRs based on the conventionalcommits.org spec",
         "homepage": "https://www.conventionalcommits.org",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 7540,
+        "stars": 7541,
         "forks": 591,
         "topics": [],
         "archived": false,
@@ -12737,6 +13014,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "release-plz/release-plz",
         "description": "Publish Rust crates from CI with a Release PR.",
@@ -12816,6 +13095,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "psf/requests",
         "description": "A simple, yet elegant, HTTP library.",
@@ -12823,7 +13104,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 54337,
-        "forks": 10630,
+        "forks": 10632,
         "topics": [
           "client",
           "cookies",
@@ -12905,6 +13186,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "BurntSushi/ripgrep",
         "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
@@ -12912,7 +13195,7 @@
         "language": "Rust",
         "license": "Unlicense",
         "stars": 68542,
-        "forks": 3309,
+        "forks": 3314,
         "topics": [
           "cli",
           "command-line",
@@ -13001,6 +13284,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "RocketChat/Rocket.Chat",
         "description": "The Secure CommsOS™ for mission-critical operations",
@@ -13026,7 +13311,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-23T16:43:08Z",
+        "pushedAt": "2026-09-23T17:31:11Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -13093,6 +13378,8 @@
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-23T07:14:07.000Z",
+      "editedAt": "2026-09-23T07:14:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/RoxyCloud",
         "description": "Self-hosted file storage with WebDAV, built in Rust over a content-addressed blob store.",
@@ -13184,6 +13471,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "web-infra-dev/rspack",
         "description": "Fast Rust-based bundler for the web with a modernized webpack API 🦀",
@@ -13280,6 +13569,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-22T18:19:45.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "jasonwhite/rudolfs",
         "description": "A high-performance, caching Git LFS server with an AWS S3 and local storage back-end.",
@@ -13340,13 +13631,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/ruff",
         "description": "An extremely fast Python linter and code formatter, written in Rust.",
         "homepage": "https://docs.astral.sh/ruff",
         "language": "Rust",
         "license": "MIT",
-        "stars": 49741,
+        "stars": 49744,
         "forks": 2432,
         "topics": [
           "linter",
@@ -13365,7 +13658,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-23T16:43:14Z",
+        "pushedAt": "2026-09-23T17:35:33Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13432,13 +13725,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-22T16:05:03.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "rustfs/rustfs",
         "description": "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.",
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33717,
+        "stars": 33720,
         "forks": 1508,
         "topics": [
           "ai-native",
@@ -13458,7 +13753,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-23T13:45:10Z",
-        "pushedAt": "2026-09-23T16:32:27Z",
+        "pushedAt": "2026-09-23T16:56:10Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13525,6 +13820,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-22T16:05:03.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "seaweedfs/seaweedfs",
         "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.",
@@ -13617,6 +13914,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "SeleniumHQ/selenium",
         "description": "A browser automation framework and ecosystem.",
@@ -13639,7 +13938,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-14T21:40:56Z",
-        "pushedAt": "2026-09-23T16:39:39Z",
+        "pushedAt": "2026-09-23T17:24:46Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -13700,14 +13999,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-22T06:55:40.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "semantic-release/semantic-release",
         "description": "📦🚀 Fully automated version management and package publishing",
         "homepage": "https://semantic-release.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 24063,
-        "forks": 1810,
+        "stars": 24064,
+        "forks": 1811,
         "topics": [
           "automation",
           "changelog",
@@ -13793,6 +14094,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "withastro/starlight",
         "description": "🌟 Build beautiful, accessible, high-performance documentation websites with Astro",
@@ -13812,7 +14115,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-16T15:55:33Z",
-        "pushedAt": "2026-09-23T16:42:06Z",
+        "pushedAt": "2026-09-23T17:15:14Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13879,6 +14182,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "starship/starship",
         "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
@@ -13972,6 +14277,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-22T21:40:07.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "Steel-Foundation/SteelMC",
         "description": "A Minecraft server in Rust focused on a strong foundation and performance",
@@ -14052,13 +14359,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "TabbyML/tabby",
         "description": "Self-hosted AI coding assistant",
         "homepage": "https://tabbyml.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 33889,
+        "stars": 33890,
         "forks": 1786,
         "topics": [
           "ai",
@@ -14136,13 +14445,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "hashicorp/terraform",
         "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
         "homepage": "http://developer.hashicorp.com/terraform",
         "language": "Go",
         "license": "Other",
-        "stars": 49712,
+        "stars": 49713,
         "forks": 10624,
         "topics": [
           "cloud",
@@ -14155,7 +14466,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-03-13T22:25:48Z",
-        "pushedAt": "2026-09-23T16:00:51Z",
+        "pushedAt": "2026-09-23T17:14:39Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14216,6 +14527,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ggreer/the_silver_searcher",
         "description": "A code-searching tool similar to ack, but faster.",
@@ -14263,20 +14576,22 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "tmux/tmux",
         "description": "tmux source code",
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49445,
+        "stars": 49446,
         "forks": 2907,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2015-06-03T23:32:55Z",
-        "pushedAt": "2026-09-23T15:35:38Z",
+        "pushedAt": "2026-09-23T17:37:47Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -14343,13 +14658,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "traefik/traefik",
         "description": "The Cloud Native Application Proxy",
         "homepage": "https://traefik.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 64939,
+        "stars": 64938,
         "forks": 6202,
         "topics": [
           "consul",
@@ -14438,6 +14755,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vercel/turborepo",
         "description": "Build system optimized for JavaScript and TypeScript, written in Rust",
@@ -14457,7 +14776,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-23T16:17:04Z",
+        "pushedAt": "2026-09-23T17:36:32Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14524,13 +14843,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/ty",
         "description": "An extremely fast Python type checker and language server, written in Rust.",
         "homepage": "https://docs.astral.sh/ty/",
         "language": "Python",
         "license": "MIT",
-        "stars": 19738,
+        "stars": 19737,
         "forks": 334,
         "topics": [],
         "archived": false,
@@ -14604,6 +14925,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "typesense/typesense",
         "description": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences",
@@ -14710,14 +15033,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "umami-software/umami",
         "description": "Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place — no cookies, no surveillance, self-hosted or in the cloud.",
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38971,
-        "forks": 8103,
+        "stars": 38973,
+        "forks": 8104,
         "topics": [
           "analytics",
           "audience-segmentation",
@@ -14733,7 +15058,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-07-17T07:59:00Z",
-        "pushedAt": "2026-09-22T23:36:26Z",
+        "pushedAt": "2026-09-23T17:03:30Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -14794,6 +15119,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "louislam/uptime-kuma",
         "description": "A fancy self-hosted monitoring tool",
@@ -14892,13 +15219,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/uv",
         "description": "An extremely fast Python package and project manager, written in Rust.",
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90100,
+        "stars": 90101,
         "forks": 3606,
         "topics": [
           "packaging",
@@ -14910,7 +15239,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-23T16:26:11Z",
+        "pushedAt": "2026-09-23T16:59:26Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14977,6 +15306,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "valkey-io/valkey",
         "description": "A flexible distributed key-value database that is optimized for caching and other realtime workloads.",
@@ -15060,6 +15391,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "hashicorp/vault",
         "description": "A tool for secrets management, encryption as a service, and privileged access management",
@@ -15077,7 +15410,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-02-25T00:15:59Z",
-        "pushedAt": "2026-09-23T16:02:31Z",
+        "pushedAt": "2026-09-23T17:05:49Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15144,13 +15477,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "dani-garcia/vaultwarden",
         "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68062,
+        "stars": 68066,
         "forks": 3240,
         "topics": [
           "bitwarden",
@@ -15231,6 +15566,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vectordotdev/vector",
         "description": "A high-performance observability data pipeline.",
@@ -15263,7 +15600,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-23T16:43:28Z",
+        "pushedAt": "2026-09-23T17:31:33Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -15330,6 +15667,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "VictoriaMetrics/VictoriaMetrics",
         "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
@@ -15337,7 +15676,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 17760,
-        "forks": 1746,
+        "forks": 1747,
         "topics": [
           "database",
           "grafana",
@@ -15359,7 +15698,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-23T16:25:52Z",
+        "pushedAt": "2026-09-23T17:09:15Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -15420,13 +15759,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vim/vim",
         "description": "The official Vim repository",
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40919,
+        "stars": 40920,
         "forks": 6132,
         "topics": [
           "c",
@@ -15469,14 +15810,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vitejs/vite",
         "description": "Next generation frontend tooling. It's fast!",
         "homepage": "http://vite.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 82963,
-        "forks": 8770,
+        "stars": 82964,
+        "forks": 8771,
         "topics": [
           "build-tool",
           "dev-server",
@@ -15555,13 +15898,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vuejs/vitepress",
         "description": "Vite & Vue powered static site generator.",
         "homepage": "https://vitepress.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 18346,
+        "stars": 18347,
         "forks": 2734,
         "topics": [
           "docs-generator",
@@ -15642,6 +15987,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "vitest-dev/vitest",
         "description": "Next generation testing framework powered by Vite.",
@@ -15720,14 +16067,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/vscode",
         "description": "Visual Studio Code",
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192821,
-        "forks": 42971,
+        "stars": 192822,
+        "forks": 42974,
         "topics": [
           "editor",
           "electron",
@@ -15739,7 +16088,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-23T16:42:40Z",
+        "pushedAt": "2026-09-23T17:40:13Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15806,6 +16155,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "VSCodium/vscodium",
         "description": "binary releases of VS Code without MS branding/telemetry/licensing",
@@ -15886,13 +16237,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "webpack/webpack",
         "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
         "homepage": "https://webpack.js.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 65946,
+        "stars": 65945,
         "forks": 9545,
         "topics": [
           "amd",
@@ -15983,14 +16336,16 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "wezterm/wezterm",
         "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
         "homepage": "https://wezterm.org/",
         "language": "Rust",
         "license": "Other",
-        "stars": 29002,
-        "forks": 1755,
+        "stars": 29003,
+        "forks": 1756,
         "topics": [
           "rust",
           "serial",
@@ -16070,6 +16425,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-22T16:48:22.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "woodpecker-ci/woodpecker",
         "description": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.",
@@ -16158,6 +16515,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "ducaale/xh",
         "description": "Friendly and fast tool for sending HTTP requests",
@@ -16245,6 +16604,8 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-22T15:52:41.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "yarnpkg/berry",
         "description": "📦🐈 Active development trunk for Yarn ⚒",
@@ -16330,13 +16691,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T12:59:19.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "zed-industries/zed",
         "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90764,
+        "stars": 90772,
         "forks": 10738,
         "topics": [
           "gpui",
@@ -16348,7 +16711,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-23T16:21:28Z",
+        "pushedAt": "2026-09-23T17:33:42Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16415,13 +16778,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "zellij-org/zellij",
         "description": "A terminal workspace with batteries included",
         "homepage": "https://zellij.dev",
         "language": "Rust",
         "license": "MIT",
-        "stars": 35513,
+        "stars": 35514,
         "forks": 1461,
         "topics": [
           "multiplexer",
@@ -16499,13 +16864,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-22T15:54:01.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "getzola/zola",
         "description": "A fast static site generator in a single binary with everything built-in. https://www.getzola.org",
         "homepage": "https://www.getzola.org",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 17463,
+        "stars": 17462,
         "forks": 1187,
         "topics": [
           "blog-engine",
@@ -16596,13 +16963,15 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-23T16:42:28.000Z",
+      "factsChangedAt": null,
       "repo": {
         "fullName": "zulip/zulip",
         "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused.",
         "homepage": "https://zulip.com",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 25942,
+        "stars": 25941,
         "forks": 10279,
         "topics": [
           "apache",

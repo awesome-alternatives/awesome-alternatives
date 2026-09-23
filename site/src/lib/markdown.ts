@@ -1,4 +1,5 @@
 import type { EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
+import { historyUrl } from "./freshness.ts";
 
 const SITE = "https://awesome-alternatives.com";
 
@@ -12,6 +13,7 @@ const TERMS: Record<Terms, string> = {
 export interface Surroundings {
   categoryName: string;
   selfHost: boolean;
+  checkedAt: string | null;
   nameOf: (slug: string) => string;
   replacedBy: { slug: string; name: string }[];
 }
@@ -64,6 +66,14 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
   }
 
   out.push("## Facts from GitHub", "", ...facts(tool, around.categoryName, around.selfHost), "");
+
+  out.push(
+    "## Freshness",
+    "",
+    ...(around.checkedAt ? [`- Read from GitHub: ${around.checkedAt.slice(0, 10)}`] : []),
+    `- Entry last edited: ${tool.editedAt.slice(0, 10)}, ${historyUrl(tool.slug)}`,
+    "",
+  );
 
   if (tool.affiliation) out.push("## Affiliation", "", tool.affiliation, "");
 

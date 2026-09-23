@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { addedAt, carriedAddedAt, parseAddedLog } from "../scripts/lib/added.ts";
+import { addedAt, carriedAddedAt, parseAddedLog, parseEditedLog } from "../scripts/lib/added.ts";
 
 const log = [
   "",
@@ -26,6 +26,19 @@ describe("parseAddedLog", () => {
 
   it("returns nothing for an empty history", () => {
     assert.equal(parseAddedLog("").size, 0);
+  });
+});
+
+describe("parseEditedLog", () => {
+  it("dates each tool by the newest commit that touched its file, since git lists newest first", () => {
+    const edited = parseEditedLog(log);
+    assert.equal(edited.get("helix"), "2026-08-01T09:00:00.000Z");
+    assert.equal(edited.get("alacritty"), "2026-07-01T09:00:00.000Z");
+    assert.equal(edited.get("zellij"), "2026-09-10T10:00:00.000Z");
+  });
+
+  it("ignores files that are not tool entries", () => {
+    assert.deepEqual([...parseEditedLog(log).keys()].sort(), ["alacritty", "helix", "zellij"]);
   });
 });
 

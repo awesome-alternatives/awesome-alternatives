@@ -7,6 +7,7 @@ import { toolMarkdown, type Surroundings } from "../src/lib/markdown.ts";
 const around: Surroundings = {
   categoryName: "Python linting and formatting",
   selfHost: false,
+  checkedAt: "2026-09-23T03:17:00.000Z",
   nameOf: (slug) => ({ flake8: "Flake8", black: "Black" })[slug] ?? slug,
   replacedBy: [],
 };
@@ -21,6 +22,8 @@ function tool(over: Partial<EnrichedTool> = {}, repo: Partial<EnrichedTool["repo
     affiliation: null,
     path: null,
     addedAt: "2026-01-01",
+    editedAt: "2026-02-01T10:00:00.000Z",
+    factsChangedAt: null,
     maintainerVerified: false,
     flags: [],
     terms: "open",
@@ -110,4 +113,20 @@ test("terms are spelled out, since a bare label means nothing to a reader who ha
 test("self-hosting is claimed only for a category of things you run", () => {
   assert.match(toolMarkdown(tool(), { ...around, selfHost: true }), /- Self-hosted: /);
   assert.ok(!toolMarkdown(tool(), around).includes("- Self-hosted:"));
+});
+
+test("freshness says when the facts were read and when a person last touched the entry", () => {
+  const out = toolMarkdown(tool(), around);
+  assert.ok(out.includes("- Read from GitHub: 2026-09-23\n"));
+  assert.ok(
+    out.includes(
+      "- Entry last edited: 2026-02-01, https://github.com/awesome-alternatives/awesome-alternatives/commits/main/data/tools/ruff.yaml",
+    ),
+  );
+});
+
+test("a catalog without a check date leaves that line out rather than inventing one", () => {
+  const out = toolMarkdown(tool(), { ...around, checkedAt: null });
+  assert.ok(!out.includes("Read from GitHub"));
+  assert.match(out, /- Entry last edited: /);
 });

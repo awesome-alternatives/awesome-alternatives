@@ -4,8 +4,9 @@
   "title": "Catalog",
   "type": "object",
   "additionalProperties": false,
-  "required": ["stats", "owners", "tools", "products", "categories"],
+  "required": ["stats", "checkedAt", "owners", "tools", "products", "categories"],
   "properties": {
+    "checkedAt": { "$ref": "#/$defs/timestamp" },
     "stats": {
       "type": "object",
       "additionalProperties": false,
@@ -73,6 +74,8 @@
         "affiliation",
         "path",
         "addedAt",
+        "editedAt",
+        "factsChangedAt",
         "repo",
         "release",
         "releases",
@@ -101,6 +104,8 @@
         "affiliation": { "type": ["string", "null"], "minLength": 1 },
         "path": { "type": ["string", "null"], "minLength": 1 },
         "addedAt": { "$ref": "#/$defs/timestamp" },
+        "editedAt": { "$ref": "#/$defs/timestamp" },
+        "factsChangedAt": { "oneOf": [{ "$ref": "#/$defs/timestamp" }, { "type": "null" }] },
         "repo": { "$ref": "#/$defs/repo" },
         "owner": {
       "type": "object",

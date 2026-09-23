@@ -181,6 +181,8 @@ export const fr: Messages = {
     selfHostYes: "Oui",
     website: "Site web ↗",
     edit: "Modifier cette entrée",
+    checked: "Lu sur GitHub le {date}.",
+    edited: "Fiche modifiée pour la dernière fois le {date}.",
   },
 
   compare: {

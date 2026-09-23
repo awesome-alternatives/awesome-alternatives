@@ -2,7 +2,7 @@ import type { EnrichedTool, Fit, RepoFacts, Terms } from "../../../scripts/lib/t
 
 export type { Fit, Terms };
 
-export type ToolView = Omit<EnrichedTool, "repo" | "releases" | "addedAt"> & {
+export type ToolView = Omit<EnrichedTool, "repo" | "releases" | "addedAt" | "editedAt" | "factsChangedAt"> & {
   repo: Pick<
     RepoFacts,
     "fullName" | "description" | "homepage" | "language" | "license" | "stars" | "forks" | "topics" | "pushedAt" | "archived"
