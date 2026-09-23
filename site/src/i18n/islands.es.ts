@@ -2,6 +2,7 @@ import type { Islands } from "./messages.ts";
 
 export const islands: Islands = {
   card: {
+    compare: "Comparar con {name}",
     archived: "archivado",
     factReplaces: "Sustituye a",
     factLanguage: "Lenguaje",

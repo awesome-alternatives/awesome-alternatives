@@ -1,14 +1,14 @@
 interface Props {
-  icon: "signed" | "verified";
+  icon: "signed" | "verified" | "compare";
   label: string;
   href?: string;
   muted?: boolean;
 }
 
 export function Mark({ icon, label, href, muted = false }: Props) {
-  const glyph = icon === "signed" ? <Shield /> : <Manifest />;
+  const glyph = icon === "signed" ? <Shield /> : icon === "compare" ? <Swap /> : <Manifest />;
   const attrs = {
-    class: muted ? "mark-icon is-muted" : "mark-icon",
+    class: `mark-icon mark-${icon}${muted ? " is-muted" : ""}`,
     "aria-label": label,
     "data-tip": label,
   };
@@ -20,6 +20,21 @@ export function Mark({ icon, label, href, muted = false }: Props) {
     <span {...attrs} role="img">
       {glyph}
     </span>
+  );
+}
+
+function Swap() {
+  return (
+    <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M2.6 5.6h9.8M9.9 3.2 12.9 5.6 9.9 8M13.4 10.4H3.6M6.1 8 3.1 10.4 6.1 12.8"
+      />
+    </svg>
   );
 }
 

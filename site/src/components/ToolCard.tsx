@@ -2,6 +2,7 @@ import { Fragment, type ComponentChildren } from "preact";
 import type { TrendFacts } from "../../../scripts/lib/types.ts";
 import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
+import { comparePath } from "../lib/compare.ts";
 import { day, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
@@ -17,11 +18,13 @@ interface Props {
   strings: Islands;
   tool: ToolView;
   target?: string;
+  targetName?: string;
+  comparable?: boolean;
   trend?: TrendFacts;
   replaces?: Replaced[];
 }
 
-export function ToolCard({ locale, strings, tool, target, trend, replaces }: Props) {
+export function ToolCard({ locale, strings, tool, target, targetName, comparable, trend, replaces }: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
   const flags = tool.flags.filter((flag): flag is LabelledFlag => flag !== "archived");
@@ -45,6 +48,14 @@ export function ToolCard({ locale, strings, tool, target, trend, replaces }: Pro
           <a className={`fit fit-${replacement.fit}`} href={pathFor(locale, `/about/#${replacement.fit}`)}>
             {strings.fit[replacement.fit]}
           </a>
+        )}
+        {target && comparable && (
+          <Mark
+            icon="compare"
+            muted
+            label={format(card.compare, { name: targetName ?? target })}
+            href={pathFor(locale, comparePath(tool.slug, target))}
+          />
         )}
       </header>
       {repo.description && <p className="tool-description">{repo.description}</p>}

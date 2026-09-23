@@ -98,14 +98,10 @@ export function comparePairs<T extends PairTool>(tools: readonly T[]): Pair<T>[]
     .sort((x, y) => x.slug.localeCompare(y.slug));
 }
 
-const totalStars = <T extends PairTool>(pair: Pair<T>) => pair.a.repo.stars + pair.b.repo.stars;
-
-export function pairForTarget<T extends PairTool>(pairs: readonly Pair<T>[], target: string): Pair<T> | null {
-  return (
-    pairs
-      .filter((pair) => pair.shared.some((shared) => shared.target === target))
-      .sort((x, y) => totalStars(y) - totalStars(x))[0] ?? null
-  );
+export function comparableWith<T extends PairTool>(pairs: readonly Pair<T>[], slug: string): string[] {
+  return pairs
+    .filter((pair) => pair.a.slug === slug || pair.b.slug === slug)
+    .map((pair) => (pair.a.slug === slug ? pair.b.slug : pair.a.slug));
 }
 
 export function pairForTool<T extends PairTool>(pairs: readonly Pair<T>[], slug: string): Pair<T> | null {
