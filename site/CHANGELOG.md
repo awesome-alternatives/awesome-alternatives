@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.49.0] - 2026-09-23
+
+### Features
+
+- feat(site): describe tool and list pages with schema.org data (#143)
+
 ## [0.48.0] - 2026-09-23
 
 ### Features
