@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.42.0] - 2026-09-23
+
+### Features
+
+- feat(site): let a search be narrowed by category and drop-in, and be linked (#120)
+
 ## [0.41.0] - 2026-09-23
 
 ### Features
