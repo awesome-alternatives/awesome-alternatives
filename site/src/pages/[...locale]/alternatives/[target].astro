@@ -8,6 +8,7 @@ import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
 import { categories, pairs, type Target, targets } from "../../../lib/catalog.ts";
 import { comparableWith } from "../../../lib/compare.ts";
+import { itemList } from "../../../lib/structuredData.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -23,11 +24,20 @@ const { locale, target } = Astro.props;
 const m = messages(locale);
 const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
 const comparable = comparableWith(pairs, target.slug);
+const title = format(m.target.title, { name: target.name });
+const listed = itemList(
+  title,
+  target.alternatives.map((tool) => ({
+    name: tool.name,
+    url: new URL(pathFor(locale, `/tools/${tool.slug}/`), Astro.site).href,
+  })),
+);
 const selfHostCategories = Object.keys(categories).filter((key) => categories[key]?.selfHost === true);
 ---
 
 <Base
-  title={format(m.target.title, { name: target.name })}
+  title={title}
+  structuredData={[listed]}
   description={format(m.target.description, {
     count: target.alternatives.length,
     name: target.name,

@@ -16,6 +16,7 @@ import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { historyUrl } from "../../../lib/freshness.ts";
+import { softwareSourceCode } from "../../../lib/structuredData.ts";
 import { slugify } from "../../../lib/slug.ts";
 
 export const getStaticPaths = (() =>
@@ -49,6 +50,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
   })}
   description={repo.description ?? format(m.tool.descriptionFallback, { name: tool.name })}
   canonicalPath={canonicalForTool(tool.slug, replacedBy.length)}
+  structuredData={[softwareSourceCode(tool, new URL(pathFor(locale, `/tools/${tool.slug}/`), Astro.site).href)]}
 >
   <div class="wide">
     <a class="back" href={back}>{m.listing.back}</a>

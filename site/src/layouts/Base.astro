@@ -6,6 +6,7 @@ import "@fontsource/jetbrains-mono/latin-700.css";
 import "../styles/global.css";
 import { DEFAULT_LOCALE, localeOf, LOCALES, messages, pathFor, stripLocale } from "../i18n/index.ts";
 import { REPO } from "../lib/repo.ts";
+import { serialize, type StructuredData } from "../lib/structuredData.ts";
 
 interface Props {
   title: string;
@@ -15,6 +16,7 @@ interface Props {
   image?: SocialImage;
   noindex?: boolean;
   canonicalPath?: string;
+  structuredData?: StructuredData[];
 }
 
 interface SocialImage {
@@ -38,6 +40,7 @@ const {
   image = DEFAULT_IMAGE,
   noindex = false,
   canonicalPath,
+  structuredData = [],
 } = Astro.props;
 const bare = canonicalPath ?? stripLocale(Astro.url.pathname);
 const canonical = new URL(pathFor(locale, bare), Astro.site);
@@ -78,6 +81,7 @@ const link = (path: string) => pathFor(locale, path);
     <meta property="og:locale" content={m.locale.ogLocale} />
     <meta property="og:image" content={new URL(image.path, Astro.site)} />
     <meta property="og:image:alt" content={image.alt} />
+    {structuredData.map((data) => <script is:inline type="application/ld+json" set:html={serialize(data)} />)}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
