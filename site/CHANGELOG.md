@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.44.0] - 2026-09-23
+
+### Features
+
+- feat: say whether a tool is self-hosted and what its licence lets you do (#127)
+
 ## [0.43.0] - 2026-09-23
 
 ### Features
