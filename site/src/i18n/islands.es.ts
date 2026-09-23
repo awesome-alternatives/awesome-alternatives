@@ -43,6 +43,12 @@ export const islands: Islands = {
       alternativesTo: "alternativas a {name}",
     },
     count: { one: "1 herramienta", other: "{n} herramientas" },
+    refine: {
+      label: "Acotar estos resultados",
+      category: "Categoría",
+      anyCategory: "Cualquier categoría",
+      dropIn: "Solo drop-in",
+    },
     chips: {
       replaces: "Sustituye a {name}",
       dropIn: "Solo sustitución directa",
