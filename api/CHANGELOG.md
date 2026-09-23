@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.8.2] - 2026-09-23
+
+### Bug Fixes
+
+- fix(api): let only the configured origins read an API response (#106)
+
 ## [0.8.1] - 2026-09-22
 
 ### Bug Fixes
