@@ -12,6 +12,7 @@ use crate::filters::Filters;
 use crate::interpret;
 use crate::jev::JevClient;
 use crate::lexical;
+use crate::qualifiers::{self, Unchecked};
 use crate::state::Loaded;
 use crate::vocabulary::Vocabulary;
 
@@ -27,13 +28,15 @@ pub struct Interpretation {
     pub filters: Filters,
     pub interpreted_by: Interpreter,
     pub relevance: Option<HashMap<String, f32>>,
+    #[serde(default)]
+    pub unchecked: Vec<Unchecked>,
 }
 
 impl Interpretation {
     pub fn select<'a>(&self, tools: &'a [Tool]) -> Vec<&'a Tool> {
         let mut selected = self.filters.apply(tools);
         if let Some(relevance) = &self.relevance {
-            if self.filters == Filters::default() {
+            if !self.filters.names_a_scope() {
                 selected.retain(|t| relevance.contains_key(&t.slug));
             }
             let score = |t: &Tool| relevance.get(&t.slug).copied().unwrap_or(f32::MIN);
@@ -112,6 +115,7 @@ impl Search {
             interpreted_by = Interpreter::Jev;
         }
 
+        let unchecked = qualifiers::apply(query, &mut filters);
         let relevance = match (&filters.replaces, &loaded.index, &vector) {
             (None, Some(index), Some(v)) => Some(index.relevance(v)),
             _ => None,
@@ -120,6 +124,7 @@ impl Search {
             filters,
             interpreted_by,
             relevance,
+            unchecked,
         }
     }
 
@@ -189,6 +194,7 @@ mod tests {
         Catalog {
             revision: "rev-one".into(),
             products: vec![],
+            categories: Default::default(),
             tools: vec![semantic_release, knope, cliff],
         }
     }
@@ -246,6 +252,33 @@ mod tests {
         assert_eq!(slugs(&open), ["git-cliff"]);
         let in_rust = search.interpret("rust changelog generator", &loaded).await;
         assert_eq!(slugs(&in_rust), ["git-cliff", "knope"]);
+    }
+
+    #[tokio::test]
+    async fn qualifiers_survive_whichever_reader_found_the_target() {
+        let (search, loaded) = with(Some(Arc::new(Words)));
+        let read = search
+            .interpret("self-hosted semantic-release that runs on linux", &loaded)
+            .await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
+        assert!(read.filters.self_host);
+        assert_eq!(read.unchecked.len(), 1);
+    }
+
+    #[tokio::test]
+    async fn a_qualifier_alone_still_lets_relevance_narrow_an_open_query() {
+        let (search, loaded) = with(Some(Arc::new(Words)));
+        let tools = &loaded.catalog.tools;
+        let read = search
+            .interpret("maintained changelog generator", &loaded)
+            .await;
+        assert!(read.filters.maintained);
+        let slugs: Vec<_> = read
+            .select(tools)
+            .into_iter()
+            .map(|t| t.slug.as_str())
+            .collect();
+        assert_eq!(slugs, ["git-cliff"]);
     }
 
     #[tokio::test]

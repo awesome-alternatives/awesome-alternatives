@@ -31,7 +31,7 @@ The catalog file is the source of truth and is dedicated to the public domain un
 
 Base URL ${SITE}/api. No key, no account.
 
-- [GET /v1/tools](${SITE}/api/v1/tools): the catalog, filtered by \`replaces\`, \`language\`, \`license\`, \`category\` and \`dropIn=true\`. Results are ranked by how well each tool replaces the target, then by stars. Archived repositories are never returned.
+- [GET /v1/tools](${SITE}/api/v1/tools): the catalog, filtered by \`replaces\`, \`language\`, \`license\`, \`category\`, \`dropIn=true\`, \`terms\` (\`open\`, \`open-core\`, \`source-available\`), \`selfHost=true\` and \`maintained=true\` (not archived, pushed within the last year). Results are ranked by how well each tool replaces the target, then by stars. Archived repositories are never returned.
 - [GET /v1/vocabulary](${SITE}/api/v1/vocabulary): every value those filters accept, so a caller can build a valid query without guessing.
 - GET /v1/tools/{slug}/readme: the project README as sanitised HTML.
 - GET /v1/tools/{slug}/security: the OpenSSF Scorecard and the repository's published advisories.

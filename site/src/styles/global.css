@@ -577,6 +577,26 @@ button.link {
   background: var(--accent);
 }
 
+.chip-unchecked {
+  color: var(--muted);
+  border-style: dashed;
+  border-color: var(--edge);
+}
+
+.chip-unchecked:not(:has(button)) {
+  padding-inline-end: 10px;
+}
+
+.chip-unchecked button {
+  color: var(--muted);
+}
+
+.landing {
+  margin: 12px 0 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
 .interpreter,
 .summary,
 .count {

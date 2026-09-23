@@ -4,7 +4,7 @@
   "title": "Catalog",
   "type": "object",
   "additionalProperties": false,
-  "required": ["stats", "owners", "tools", "products"],
+  "required": ["stats", "owners", "tools", "products", "categories"],
   "properties": {
     "stats": {
       "type": "object",
@@ -27,9 +27,23 @@
     "products": {
       "type": "array",
       "items": { "$ref": "#/$defs/product" }
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/category" }
     }
   },
   "$defs": {
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "selfHost": { "type": "boolean" }
+      }
+    },
     "product": {
       "type": "object",
       "additionalProperties": false,

@@ -1,13 +1,27 @@
 import type { Fit, Terms, ToolView } from "./types.ts";
 
+export type Maintenance = "maintained" | "inactive";
+
+export type Hosting = "self-hosted" | "local";
+
 export interface ListFilters {
   language: readonly string[];
   license: readonly string[];
   fit: readonly Fit[];
   terms: readonly Terms[];
+  maintenance: readonly Maintenance[];
+  hosting: readonly Hosting[];
 }
 
-export const NO_FILTERS: ListFilters = { language: [], license: [], fit: [], terms: [] };
+export const NO_FILTERS: ListFilters = { language: [], license: [], fit: [], terms: [], maintenance: [], hosting: [] };
+
+export function maintenanceOf(tool: ToolView): Maintenance {
+  return tool.repo.archived || tool.flags.includes("inactive") ? "inactive" : "maintained";
+}
+
+export function hostingOf(tool: ToolView, selfHostCategories: ReadonlySet<string>): Hosting {
+  return selfHostCategories.has(tool.category) ? "self-hosted" : "local";
+}
 
 export interface Facet<T extends string = string> {
   value: T;
@@ -38,13 +52,20 @@ function admits<T>(chosen: readonly T[], value: T | null): boolean {
   return chosen.length === 0 || (value !== null && chosen.includes(value));
 }
 
-export function narrow<T extends ToolView>(tools: readonly T[], target: string, f: ListFilters): T[] {
+export function narrow<T extends ToolView>(
+  tools: readonly T[],
+  target: string,
+  f: ListFilters,
+  selfHostCategories: ReadonlySet<string> = new Set(),
+): T[] {
   return tools.filter(
     (t) =>
       admits(f.language, t.repo.language) &&
       admits(f.license, t.repo.license) &&
       admits(f.fit, fitFor(t, target)) &&
-      admits(f.terms, t.terms),
+      admits(f.terms, t.terms) &&
+      admits(f.maintenance, maintenanceOf(t)) &&
+      admits(f.hosting, hostingOf(t, selfHostCategories)),
   );
 }
 

@@ -11,6 +11,7 @@ mod interpret;
 mod jev;
 mod lexical;
 mod peer;
+mod qualifiers;
 mod readme;
 mod routes;
 mod search;

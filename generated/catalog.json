@@ -16732,5 +16732,247 @@
       "description": "Hosted team chat with channels, threads and calls.",
       "slug": "slack"
     }
-  ]
+  ],
+  "categories": {
+    "release-automation": {
+      "name": "Release automation",
+      "description": "Version bumps, changelogs, tags and published releases from commit history."
+    },
+    "changelog": {
+      "name": "Changelog generation",
+      "description": "Changelogs built from commits or pull requests, without driving the release itself."
+    },
+    "javascript-runtime": {
+      "name": "JavaScript runtimes",
+      "description": "Engines that run JavaScript and TypeScript outside the browser."
+    },
+    "javascript-package-manager": {
+      "name": "JavaScript package managers",
+      "description": "Install and lock npm dependencies."
+    },
+    "javascript-bundler": {
+      "name": "JavaScript bundlers",
+      "description": "Bundle, transform and serve front-end code."
+    },
+    "javascript-lint-format": {
+      "name": "JavaScript linting and formatting",
+      "description": "Linters and formatters for JavaScript and TypeScript."
+    },
+    "javascript-test-runner": {
+      "name": "JavaScript test runners",
+      "description": "Run unit and integration tests for JavaScript and TypeScript."
+    },
+    "python-packaging": {
+      "name": "Python packaging",
+      "description": "Install dependencies, manage environments and lock Python projects."
+    },
+    "python-lint-format": {
+      "name": "Python linting and formatting",
+      "description": "Linters and formatters for Python."
+    },
+    "infrastructure-as-code": {
+      "name": "Infrastructure as code",
+      "description": "Declare cloud infrastructure in files and apply the difference."
+    },
+    "container-engine": {
+      "name": "Container engines",
+      "description": "Build and run OCI containers."
+    },
+    "key-value-store": {
+      "name": "In-memory key-value stores",
+      "description": "Caches and data structure servers speaking the Redis protocol or close to it.",
+      "selfHost": true
+    },
+    "search-engine": {
+      "name": "Search engines",
+      "description": "Full-text search servers.",
+      "selfHost": true
+    },
+    "metrics": {
+      "name": "Metrics and monitoring",
+      "description": "Collect, store and query time series.",
+      "selfHost": true
+    },
+    "http-client": {
+      "name": "Command-line HTTP clients",
+      "description": "Send HTTP requests from a terminal."
+    },
+    "code-search": {
+      "name": "Code search",
+      "description": "Search file contents recursively from a terminal."
+    },
+    "api-client": {
+      "name": "API clients",
+      "description": "Build, send and share HTTP and GraphQL requests from a desktop or browser app."
+    },
+    "monorepo-tool": {
+      "name": "Monorepo tools",
+      "description": "Run, cache and orchestrate tasks across the packages of one repository."
+    },
+    "shell-prompt": {
+      "name": "Shell prompts",
+      "description": "Customisable prompts showing git state, runtimes and context."
+    },
+    "terminal-multiplexer": {
+      "name": "Terminal multiplexers",
+      "description": "Split, detach and reattach terminal sessions."
+    },
+    "document-database": {
+      "name": "Document databases",
+      "description": "Databases storing JSON-like documents.",
+      "selfHost": true
+    },
+    "message-streaming": {
+      "name": "Event streaming",
+      "description": "Durable, partitioned logs for events and messages.",
+      "selfHost": true
+    },
+    "reverse-proxy": {
+      "name": "Web servers and reverse proxies",
+      "description": "Serve sites, terminate TLS and route traffic to services.",
+      "selfHost": true
+    },
+    "documentation-site": {
+      "name": "Documentation site generators",
+      "description": "Turn Markdown into a searchable documentation site."
+    },
+    "static-site-generator": {
+      "name": "Static site generators",
+      "description": "Build websites from templates and content files."
+    },
+    "python-type-checker": {
+      "name": "Python type checkers",
+      "description": "Check Python type annotations before the code runs."
+    },
+    "node-web-framework": {
+      "name": "Node.js web frameworks",
+      "description": "Routing and middleware for HTTP servers in JavaScript and TypeScript."
+    },
+    "typescript-orm": {
+      "name": "TypeScript ORMs",
+      "description": "Typed database access and migrations for TypeScript."
+    },
+    "object-storage": {
+      "name": "Object storage",
+      "description": "Self-hosted servers speaking the S3 API.",
+      "selfHost": true
+    },
+    "ci-server": {
+      "name": "CI servers",
+      "description": "Self-hosted servers that run build and deployment pipelines.",
+      "selfHost": true
+    },
+    "git-forge": {
+      "name": "Git forges",
+      "description": "Self-hosted repositories, code review and issues.",
+      "selfHost": true
+    },
+    "password-manager-server": {
+      "name": "Password manager servers",
+      "description": "Self-hosted back ends for password vaults.",
+      "selfHost": true
+    },
+    "web-analytics": {
+      "name": "Web analytics",
+      "description": "Self-hostable, privacy-friendly site analytics.",
+      "selfHost": true
+    },
+    "uptime-monitoring": {
+      "name": "Uptime monitoring",
+      "description": "Check that services answer, alert when they do not, and publish a status page.",
+      "selfHost": true
+    },
+    "log-pipeline": {
+      "name": "Log pipelines",
+      "description": "Collect, transform and ship logs and events.",
+      "selfHost": true
+    },
+    "team-chat": {
+      "name": "Team chat",
+      "description": "Self-hosted messaging for teams.",
+      "selfHost": true
+    },
+    "terminal-emulator": {
+      "name": "Terminal emulators",
+      "description": "Desktop terminal applications."
+    },
+    "text-editor": {
+      "name": "Code editors",
+      "description": "Editors for writing code."
+    },
+    "file-listing": {
+      "name": "File listing",
+      "description": "Replacements for ls with colours, icons and git status."
+    },
+    "git-diff-pager": {
+      "name": "Git diff pagers",
+      "description": "Make git diff output readable in a terminal."
+    },
+    "json-processor": {
+      "name": "JSON processors",
+      "description": "Query and transform JSON from the command line."
+    },
+    "load-testing": {
+      "name": "Load testing",
+      "description": "Generate traffic to measure how a service holds up."
+    },
+    "browser-testing": {
+      "name": "Browser automation and testing",
+      "description": "Drive real browsers for end-to-end tests."
+    },
+    "python-web-framework": {
+      "name": "Python web frameworks",
+      "description": "Build HTTP APIs and sites in Python."
+    },
+    "python-http-client": {
+      "name": "Python HTTP clients",
+      "description": "Send HTTP requests from Python."
+    },
+    "javascript-date-library": {
+      "name": "JavaScript date libraries",
+      "description": "Parse, format and compute dates in JavaScript."
+    },
+    "local-kubernetes": {
+      "name": "Local Kubernetes",
+      "description": "Run a Kubernetes cluster on a laptop or in CI."
+    },
+    "secrets-manager": {
+      "name": "Secrets managers",
+      "description": "Store, rotate and hand out secrets to applications.",
+      "selfHost": true
+    },
+    "git-lfs-server": {
+      "name": "Git LFS servers",
+      "description": "Serve Git LFS objects for repositories hosted anywhere.",
+      "selfHost": true
+    },
+    "minecraft-server": {
+      "name": "Minecraft servers",
+      "description": "Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch.",
+      "selfHost": true
+    },
+    "file-sync": {
+      "name": "File sync and share",
+      "description": "Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client.",
+      "selfHost": true
+    },
+    "coding-agent": {
+      "name": "AI coding agents",
+      "description": "Agents that read a codebase, edit files and run commands from a prompt, in the terminal or the editor."
+    },
+    "code-assistant": {
+      "name": "AI code assistants",
+      "description": "Completions and chat inside the editor, backed by a hosted or a local model."
+    },
+    "chat-interface": {
+      "name": "AI chat interfaces",
+      "description": "Apps to chat with language models, whether the model runs locally or behind an API.",
+      "selfHost": true
+    },
+    "llm-runtime": {
+      "name": "Local model runtimes",
+      "description": "Run open-weight language models on your own hardware, behind a local API.",
+      "selfHost": true
+    }
+  }
 }

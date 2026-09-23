@@ -71,7 +71,12 @@ const products: ListedProduct[] = catalog.products
   .map(({ file: _, ...product }) => product)
   .sort((a, b) => a.slug.localeCompare(b.slug));
 
-await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), owners, tools, products }, null, 2)}\n`);
+const categories = Object.fromEntries(catalog.categories);
+
+await writeFile(
+  catalogPath,
+  `${JSON.stringify({ stats: statsOf(tools), owners, tools, products, categories }, null, 2)}\n`,
+);
 
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");

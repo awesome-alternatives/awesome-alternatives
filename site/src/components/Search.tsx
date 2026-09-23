@@ -4,6 +4,7 @@ import { format, type Locale, pathFor, plural } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
+import { alternativesHref } from "../lib/listUrl.ts";
 import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
 import { isRefined, readSearchUrl, type Refinement, refined, searchParams } from "../lib/searchUrl.ts";
 import { href, type SuggestIndex, type Suggestion, suggest } from "../lib/suggest.ts";
@@ -430,7 +431,14 @@ function Results({
   appending: boolean;
 }) {
   const copy = strings.search;
-  const read = chips(result.filters, copy.chips, (slug) => names[slug] ?? slug);
+  const read = chips(
+    result.filters,
+    copy.chips,
+    (slug) => names[slug] ?? slug,
+    (terms) => strings.terms[terms],
+  );
+  const unchecked = result.unchecked ?? [];
+  const landing = alternativesHref(result.filters, unchecked);
   if (read.length === 0 && result.count === 0) {
     return (
       <p className="empty">
@@ -455,11 +463,23 @@ function Results({
             </button>
           </span>
         ))}
+        {unchecked.map((item) => (
+          <span key={`unchecked-${item.value}`} className="chip chip-unchecked">
+            {format(copy.unchecked, { label: item.value })}
+          </span>
+        ))}
         {read.length === 0 && <span className="summary">{copy.closest}</span>}
         <span className="interpreter">
           {result.interpretedBy === "jev" ? copy.interpreter.jev : copy.interpreter.local}
         </span>
       </div>
+      {landing && result.filters.replaces && (
+        <p className="landing">
+          <a href={pathFor(locale, landing)}>
+            {format(copy.openTarget, { name: names[result.filters.replaces] ?? result.filters.replaces })}
+          </a>
+        </p>
+      )}
       <p className="summary">
         {result.tools.length < result.count
           ? format(copy.showing, { shown: result.tools.length, n: result.count })

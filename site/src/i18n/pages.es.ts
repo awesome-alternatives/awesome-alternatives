@@ -93,6 +93,8 @@ export const pages: Pages = {
       heading: "Cómo funciona la búsqueda",
       before:
         "Tu consulta se lee primero como palabras clave: los nombres de las herramientas que otras sustituyen, los lenguajes y las licencias del catálogo, y «drop in». Cuando no se nombra ninguna herramienta a la que sustituir, un pequeño modelo de embeddings multilingüe que se ejecuta en el servidor de búsqueda compara la consulta con la descripción de cada herramienta, de modo que una consulta escrita en cualquier idioma del sitio encuentra las mismas herramientas que su versión en inglés, aunque las descripciones sigan en inglés, tal como las devuelve GitHub. Si destaca claramente una herramienta a la que sustituir, se elige; si no, los resultados se ordenan por su cercanía a la consulta. Solo cuando ninguno de los dos pasos encuentra una herramienta a la que sustituir, y el servidor tiene una clave para ello, se envía el texto de la consulta a Jev, un servicio externo, para que lo lea. Su lectura se guarda en caché en el servidor durante un día. Los resultados indican cuál ha leído tu consulta: «Interpretado localmente» o «Leído por Jev».",
+      qualifiers:
+        "Algunas palabras se convierten en filtros, en cada idioma del sitio. «Código abierto» deja las herramientas cuya licencia es abierta. «Mantenido» descarta las archivadas y las que no reciben un push desde hace {inactiveDays} días. «Autoalojado» deja las herramientas de categorías de servicios que ejecutas tú. Una plataforma o una forma de desplegar, como Linux o Docker, se reconoce pero aún no se comprueba, y los resultados lo dicen en lugar de fingir.",
       privacyLink: "La página de privacidad",
       after: "detalla qué se envía y qué se conserva.",
     },

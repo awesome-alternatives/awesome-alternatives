@@ -86,6 +86,7 @@ pub fn filters(answers: &HashMap<String, Answer>, vocabulary: &Vocabulary) -> Fi
         license: pick(answers, "license", &vocabulary.licenses),
         category: None,
         drop_in,
+        ..Filters::default()
     }
 }
 

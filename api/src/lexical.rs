@@ -1,4 +1,5 @@
 use crate::filters::Filters;
+use crate::qualifiers;
 use crate::vocabulary::Vocabulary;
 
 pub fn normalize(text: &str) -> String {
@@ -41,18 +42,25 @@ pub fn interpret(query: &str, vocabulary: &Vocabulary) -> Filters {
             .max_by_key(|l| l.len())
             .cloned()
     };
-    let replaces = vocabulary
+    let named: Vec<&String> = vocabulary
         .targets
         .iter()
         .filter(|(slug, name)| mentions(&query, slug) || mentions(&query, name))
-        .max_by_key(|(slug, _)| slug.len())
-        .map(|(slug, _)| slug.clone());
+        .map(|(slug, _)| slug)
+        .collect();
+    let replaced = named
+        .iter()
+        .filter(|slug| !qualifiers::is_requirement(slug))
+        .max_by_key(|slug| slug.len())
+        .or_else(|| named.iter().max_by_key(|slug| slug.len()));
+    let replaces = replaced.map(|slug| (*slug).clone());
     Filters {
         drop_in: replaces.is_some() && mentions(&query, "drop in"),
         replaces,
         language: longest(&mut vocabulary.languages.iter()),
         license: longest(&mut vocabulary.licenses.iter()),
         category: None,
+        ..Filters::default()
     }
 }
 
@@ -121,6 +129,23 @@ mod tests {
             pick("something like claude but self-hosted").as_deref(),
             Some("claude")
         );
+    }
+
+    #[test]
+    fn a_tool_named_as_a_way_to_deploy_is_not_taken_for_the_one_to_replace() {
+        let vocabulary = Vocabulary {
+            targets: BTreeMap::from([
+                ("docker".into(), "Docker".into()),
+                ("redis".into(), "Redis".into()),
+            ]),
+            ..Vocabulary::default()
+        };
+        let pick = |q: &str| interpret(q, &vocabulary).replaces;
+        assert_eq!(
+            pick("alternative to redis that runs in docker").as_deref(),
+            Some("redis")
+        );
+        assert_eq!(pick("an alternative to docker").as_deref(), Some("docker"));
     }
 
     #[test]
