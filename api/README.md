@@ -8,7 +8,7 @@ Rust and axum.
 
 | Method | Path | |
 |---|---|---|
-| `GET` | `/v1/tools` | Filter with `replaces`, `language`, `license`, `category`, `dropIn=true`. Case-insensitive on language and licence. `category` is one a caller passes for itself: no interpreter reads one out of a query, so `POST /v1/search` never answers with it. |
+| `GET` | `/v1/tools` | Filter with `replaces`, `language`, `license`, `category`, `dropIn=true`. Case-insensitive on language and licence. `category` is one a caller passes for itself: no interpreter reads one out of a query, so `POST /v1/search` never answers with it. Paged with `limit` (50 by default, 200 at most, anything larger is clamped rather than refused) and `offset`. The answer repeats the `limit` and `offset` it used, and `count` is how many matched the filters, not how many came back. |
 | `POST` | `/v1/search` | Body `{ "q": "semantic-release but in Rust" }`. Returns the filters it read, which interpreter read them, and the matching tools. |
 | `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. Nothing in this repository calls it: it is here for anyone building against the catalog, which is CC0, and it is part of the published surface rather than an internal helper. |
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
@@ -18,6 +18,10 @@ Rust and axum.
 
 Results are ranked by fit (`drop-in`, then `full`, then `partial`) when `replaces` is set, then by
 stars. Archived repositories are never returned.
+
+Filters are applied before the window, so `count` answers "how many match" whatever the page size.
+`limit=0` answers that count and sends no tools, which is the cheapest way to ask. An `offset` past
+the end is an empty page, not an error.
 
 ## How search works
 

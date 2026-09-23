@@ -107,8 +107,51 @@ impl ToolList {
     }
 }
 
-async fn tools(State(state): State<AppState>, Query(filters): Query<Filters>) -> Json<ToolList> {
-    Json(ToolList::of(filters.apply(&state.loaded().catalog.tools)))
+const DEFAULT_LIMIT: usize = 50;
+const MAX_LIMIT: usize = 200;
+
+#[derive(Deserialize)]
+struct Window {
+    limit: Option<usize>,
+    offset: Option<usize>,
+}
+
+impl Window {
+    fn bounds(&self) -> (usize, usize) {
+        (
+            self.limit.unwrap_or(DEFAULT_LIMIT).min(MAX_LIMIT),
+            self.offset.unwrap_or(0),
+        )
+    }
+}
+
+#[derive(Serialize)]
+struct ToolPage {
+    count: usize,
+    limit: usize,
+    offset: usize,
+    tools: Vec<Tool>,
+}
+
+async fn tools(
+    State(state): State<AppState>,
+    Query(filters): Query<Filters>,
+    Query(window): Query<Window>,
+) -> Json<ToolPage> {
+    let loaded = state.loaded();
+    let matched = filters.apply(&loaded.catalog.tools);
+    let (limit, offset) = window.bounds();
+    Json(ToolPage {
+        count: matched.len(),
+        limit,
+        offset,
+        tools: matched
+            .into_iter()
+            .skip(offset)
+            .take(limit)
+            .cloned()
+            .collect(),
+    })
 }
 
 async fn vocabulary(State(state): State<AppState>) -> Json<Vocabulary> {
@@ -300,6 +343,56 @@ mod tests {
         assert_eq!(body["categories"], json!(["release-automation"]));
         assert_eq!(body["languages"], json!(["Go", "JavaScript", "Rust"]));
         assert_eq!(body["targets"]["semantic-release"], "semantic-release");
+    }
+
+    async fn page(query: &str) -> Value {
+        let (status, body) = call(&app(10), Request::get(query).body(Body::empty()).unwrap()).await;
+        assert_eq!(status, StatusCode::OK);
+        body
+    }
+
+    #[tokio::test]
+    async fn the_tool_list_is_bounded_by_default_and_says_by_how_much() {
+        let body = page("/v1/tools").await;
+        assert_eq!(body["limit"], 50);
+        assert_eq!(body["offset"], 0);
+        let returned = body["tools"].as_array().unwrap().len();
+        assert_eq!(returned as u64, body["count"].as_u64().unwrap());
+    }
+
+    #[tokio::test]
+    async fn a_limit_past_the_maximum_is_clamped_and_the_answer_reports_the_clamp() {
+        assert_eq!(page("/v1/tools?limit=9999").await["limit"], 200);
+    }
+
+    #[tokio::test]
+    async fn offset_walks_the_list_without_repeating_a_tool() {
+        let first = page("/v1/tools?limit=1").await;
+        let second = page("/v1/tools?limit=1&offset=1").await;
+        assert_eq!(first["tools"].as_array().unwrap().len(), 1);
+        assert_ne!(first["tools"][0]["slug"], second["tools"][0]["slug"]);
+        assert_eq!(first["count"], second["count"]);
+    }
+
+    #[tokio::test]
+    async fn an_offset_past_the_end_is_an_empty_page_rather_than_an_error() {
+        let body = page("/v1/tools?offset=9999").await;
+        assert!(body["tools"].as_array().unwrap().is_empty());
+        assert!(body["count"].as_u64().unwrap() > 0);
+    }
+
+    #[tokio::test]
+    async fn a_zero_limit_answers_how_many_match_without_sending_them() {
+        let body = page("/v1/tools?limit=0").await;
+        assert!(body["tools"].as_array().unwrap().is_empty());
+        assert!(body["count"].as_u64().unwrap() > 0);
+    }
+
+    #[tokio::test]
+    async fn a_filter_narrows_the_catalog_before_the_window_cuts_it() {
+        let body = page("/v1/tools?replaces=semantic-release&limit=1").await;
+        assert_eq!(body["count"], 2);
+        assert_eq!(body["tools"].as_array().unwrap().len(), 1);
     }
 
     #[tokio::test]

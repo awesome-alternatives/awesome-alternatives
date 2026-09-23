@@ -31,8 +31,10 @@ export function search(q: string, signal: AbortSignal): Promise<SearchResult> {
   });
 }
 
+export const LIST_LIMIT = 200;
+
 export function listTools(filters: Filters, signal: AbortSignal): Promise<ToolList> {
-  return send(`/v1/tools?${toQuery(filters)}`, { signal });
+  return send(`/v1/tools?${toQuery(filters)}&limit=${LIST_LIMIT}`, { signal });
 }
 
 export function readme(slug: string, signal: AbortSignal): Promise<Readme> {
