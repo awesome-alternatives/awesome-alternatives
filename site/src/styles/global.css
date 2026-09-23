@@ -805,6 +805,31 @@ h1 .mark-archived {
   letter-spacing: 0;
 }
 
+.more {
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+.more button {
+  padding: 8px 20px;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--line);
+  font: inherit;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.more button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.more button:disabled {
+  color: var(--dim);
+  cursor: default;
+}
+
 .refine {
   display: flex;
   flex-wrap: wrap;

@@ -92,21 +92,6 @@ impl IntoResponse for ApiError {
     }
 }
 
-#[derive(Serialize)]
-struct ToolList {
-    count: usize,
-    tools: Vec<Tool>,
-}
-
-impl ToolList {
-    fn of(tools: Vec<&Tool>) -> Self {
-        Self {
-            count: tools.len(),
-            tools: tools.into_iter().cloned().collect(),
-        }
-    }
-}
-
 const DEFAULT_LIMIT: usize = 50;
 const MAX_LIMIT: usize = 200;
 
@@ -133,25 +118,30 @@ struct ToolPage {
     tools: Vec<Tool>,
 }
 
+impl ToolPage {
+    fn of(matched: Vec<&Tool>, window: &Window) -> Self {
+        let (limit, offset) = window.bounds();
+        Self {
+            count: matched.len(),
+            limit,
+            offset,
+            tools: matched
+                .into_iter()
+                .skip(offset)
+                .take(limit)
+                .cloned()
+                .collect(),
+        }
+    }
+}
+
 async fn tools(
     State(state): State<AppState>,
     Query(filters): Query<Filters>,
     Query(window): Query<Window>,
 ) -> Json<ToolPage> {
     let loaded = state.loaded();
-    let matched = filters.apply(&loaded.catalog.tools);
-    let (limit, offset) = window.bounds();
-    Json(ToolPage {
-        count: matched.len(),
-        limit,
-        offset,
-        tools: matched
-            .into_iter()
-            .skip(offset)
-            .take(limit)
-            .cloned()
-            .collect(),
-    })
+    Json(ToolPage::of(filters.apply(&loaded.catalog.tools), &window))
 }
 
 async fn vocabulary(State(state): State<AppState>) -> Json<Vocabulary> {
@@ -161,6 +151,8 @@ async fn vocabulary(State(state): State<AppState>) -> Json<Vocabulary> {
 #[derive(Deserialize)]
 struct SearchRequest {
     q: String,
+    #[serde(flatten)]
+    window: Window,
 }
 
 #[derive(Serialize)]
@@ -170,7 +162,7 @@ struct SearchResponse {
     filters: Filters,
     interpreted_by: Interpreter,
     #[serde(flatten)]
-    results: ToolList,
+    results: ToolPage,
 }
 
 async fn search(
@@ -195,7 +187,7 @@ async fn search(
     let read = state.search.interpret(query, &loaded).await;
     Ok(Json(SearchResponse {
         query: query.to_owned(),
-        results: ToolList::of(read.select(&loaded.catalog.tools)),
+        results: ToolPage::of(read.select(&loaded.catalog.tools), &request.window),
         filters: read.filters,
         interpreted_by: read.interpreted_by,
     }))
@@ -294,6 +286,50 @@ mod tests {
             .header("content-type", "application/json")
             .body(Body::from(json!({ "q": q }).to_string()))
             .unwrap()
+    }
+
+    #[tokio::test]
+    async fn a_search_is_windowed_like_the_tool_list() {
+        let body = json!({ "q": "semantic-release", "limit": 1 }).to_string();
+        let (status, answer) = call(
+            &app(10),
+            Request::post("/v1/search")
+                .header("content-type", "application/json")
+                .body(Body::from(body))
+                .unwrap(),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(answer["limit"], 1);
+        assert_eq!(answer["offset"], 0);
+        assert_eq!(answer["count"], 2);
+        assert_eq!(answer["tools"].as_array().unwrap().len(), 1);
+    }
+
+    #[tokio::test]
+    async fn a_search_offset_walks_the_same_ranking_rather_than_repeating_it() {
+        let app = app(10);
+        let page = |offset: u32| {
+            let body = json!({ "q": "semantic-release", "limit": 1, "offset": offset }).to_string();
+            call(
+                &app,
+                Request::post("/v1/search")
+                    .header("content-type", "application/json")
+                    .body(Body::from(body))
+                    .unwrap(),
+            )
+        };
+        let (_, first) = page(0).await;
+        let (_, second) = page(1).await;
+        assert_ne!(first["tools"][0]["slug"], second["tools"][0]["slug"]);
+        assert_eq!(first["count"], second["count"]);
+    }
+
+    #[tokio::test]
+    async fn a_search_without_a_window_still_answers_with_the_default() {
+        let (_, answer) = call(&app(10), search_request("semantic-release")).await;
+        assert_eq!(answer["limit"], 50);
+        assert_eq!(answer["offset"], 0);
     }
 
     #[tokio::test]

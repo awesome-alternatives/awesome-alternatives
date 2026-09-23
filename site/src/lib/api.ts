@@ -22,19 +22,18 @@ async function send<T>(path: string, init: RequestInit & { signal: AbortSignal }
   }
 }
 
-export function search(q: string, signal: AbortSignal): Promise<SearchResult> {
+export function search(q: string, signal: AbortSignal, offset = 0): Promise<SearchResult> {
   return send("/v1/search", {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ q }),
+    body: JSON.stringify(offset ? { q, offset } : { q }),
     signal,
   });
 }
 
-export const LIST_LIMIT = 200;
-
-export function listTools(filters: Filters, signal: AbortSignal): Promise<ToolList> {
-  return send(`/v1/tools?${toQuery(filters)}&limit=${LIST_LIMIT}`, { signal });
+export function listTools(filters: Filters, signal: AbortSignal, offset = 0): Promise<ToolList> {
+  const query = toQuery(filters);
+  return send(`/v1/tools?${query}${offset ? `&offset=${offset}` : ""}`, { signal });
 }
 
 export function readme(slug: string, signal: AbortSignal): Promise<Readme> {

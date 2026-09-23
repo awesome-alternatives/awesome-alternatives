@@ -7,7 +7,7 @@ import { type ChipKey, chips, without } from "../lib/chips.ts";
 import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
 import { isRefined, readSearchUrl, type Refinement, refined, searchParams } from "../lib/searchUrl.ts";
 import { href, type SuggestIndex, type Suggestion, suggest } from "../lib/suggest.ts";
-import type { SearchResult } from "../lib/types.ts";
+import type { Filters, SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
 const DEBOUNCE_MS = 180;
@@ -37,10 +37,12 @@ interface Props {
   categories: CategoryOption[];
 }
 
+type Source = { kind: "search"; q: string } | { kind: "list"; filters: Filters };
+
 type State =
   | { kind: "idle" }
   | { kind: "loading" }
-  | { kind: "done"; result: SearchResult }
+  | { kind: "done"; result: SearchResult; source: Source }
   | { kind: "error"; failure: SearchFailure; target: string | null };
 
 export default function Search({ locale, strings, names, examples, categories }: Props) {
@@ -51,6 +53,7 @@ export default function Search({ locale, strings, names, examples, categories }:
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(-1);
   const [refinement, setRefinement] = useState<Refinement>({});
+  const [appending, setAppending] = useState(false);
   const inflight = useRef<AbortController | null>(null);
   const indexLoad = useRef<AbortController | null>(null);
   const copy = strings.search;
@@ -111,16 +114,48 @@ export default function Search({ locale, strings, names, examples, categories }:
     }
   }
 
-  async function run(load: (signal: AbortSignal) => Promise<SearchResult>, target: string | null) {
+  async function run(
+    load: (signal: AbortSignal) => Promise<SearchResult>,
+    target: string | null,
+    source: Source,
+  ) {
     inflight.current?.abort();
     const controller = new AbortController();
     inflight.current = controller;
     setState({ kind: "loading" });
     try {
-      setState({ kind: "done", result: await load(controller.signal) });
+      setState({ kind: "done", result: await load(controller.signal), source });
     } catch (error) {
       if (controller.signal.aborted) return;
       setState({ kind: "error", failure: failureFromThrown(error), target });
+    }
+  }
+
+  async function more() {
+    if (state.kind !== "done" || appending) return;
+    const base = state.result;
+    const from = base.tools.length;
+    if (from >= base.count) return;
+    inflight.current?.abort();
+    const controller = new AbortController();
+    inflight.current = controller;
+    setAppending(true);
+    try {
+      const next =
+        state.source.kind === "search"
+          ? await search(state.source.q, controller.signal, from)
+          : await listTools(state.source.filters, controller.signal, from);
+      setState({
+        kind: "done",
+        source: state.source,
+        result: { ...base, ...next, tools: [...base.tools, ...next.tools] },
+      });
+    } catch (error) {
+      if (!controller.signal.aborted) {
+        setState({ kind: "error", failure: failureFromThrown(error), target: base.filters.replaces ?? null });
+      }
+    } finally {
+      setAppending(false);
     }
   }
 
@@ -140,7 +175,7 @@ export default function Search({ locale, strings, names, examples, categories }:
       if (!isRefined(next)) return result;
       const filters = refined(result.filters, next);
       return { ...result, ...(await listTools(filters, signal)), filters };
-    }, guessTarget(trimmed, names));
+    }, guessTarget(trimmed, names), { kind: "search", q: trimmed });
   }
 
   function refine(next: Refinement) {
@@ -152,6 +187,7 @@ export default function Search({ locale, strings, names, examples, categories }:
     void run(
       async (signal) => ({ ...base, ...(await listTools(filters, signal)), filters }),
       filters.replaces ?? null,
+      { kind: "list", filters },
     );
   }
 
@@ -160,6 +196,7 @@ export default function Search({ locale, strings, names, examples, categories }:
     void run(
       async (signal) => ({ ...result, ...(await listTools(filters, signal)), filters }),
       filters.replaces ?? null,
+      { kind: "list", filters },
     );
   }
 
@@ -267,7 +304,15 @@ export default function Search({ locale, strings, names, examples, categories }:
             dropIn={refinement.dropIn ?? state.result.filters.dropIn ?? false}
             onChange={refine}
           />
-          <Results locale={locale} strings={strings} result={state.result} names={names} onDrop={drop} />
+          <Results
+            locale={locale}
+            strings={strings}
+            result={state.result}
+            names={names}
+            onDrop={drop}
+            onMore={more}
+            appending={appending}
+          />
         </>
       )}
       <p className="visually-hidden" role="status" aria-live="polite">
@@ -373,12 +418,16 @@ function Results({
   result,
   names,
   onDrop,
+  onMore,
+  appending,
 }: {
   locale: Locale;
   strings: Islands;
   result: SearchResult;
   names: Record<string, string>;
   onDrop: (result: SearchResult, key: ChipKey) => void;
+  onMore: () => void;
+  appending: boolean;
 }) {
   const copy = strings.search;
   const read = chips(result.filters, copy.chips, (slug) => names[slug] ?? slug);
@@ -411,7 +460,11 @@ function Results({
           {result.interpretedBy === "jev" ? copy.interpreter.jev : copy.interpreter.local}
         </span>
       </div>
-      <p className="summary">{plural(locale, copy.count, result.count)}</p>
+      <p className="summary">
+        {result.tools.length < result.count
+          ? format(copy.showing, { shown: result.tools.length, n: result.count })
+          : plural(locale, copy.count, result.count)}
+      </p>
       <div className="tools">
         {result.tools.map((tool) => (
           <ToolCard
@@ -423,6 +476,13 @@ function Results({
           />
         ))}
       </div>
+      {result.tools.length < result.count && (
+        <p className="more">
+          <button type="button" onClick={onMore} disabled={appending}>
+            {appending ? copy.searching : copy.more}
+          </button>
+        </p>
+      )}
     </>
   );
 }
