@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.48.0] - 2026-09-23
+
+### Features
+
+- feat: say when each fact was read and when the entry was last edited (#142)
+
 ## [0.47.0] - 2026-09-23
 
 ### Features
