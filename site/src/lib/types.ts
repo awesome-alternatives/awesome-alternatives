@@ -26,6 +26,8 @@ export interface SearchResult {
 
 export interface ToolList {
   count: number;
+  limit: number;
+  offset: number;
   tools: ToolView[];
 }
 
