@@ -1,6 +1,7 @@
 mod cache;
 mod catalog;
 mod config;
+mod cors;
 mod details;
 mod embedding;
 mod filters;
@@ -23,7 +24,6 @@ use std::net::SocketAddr;
 use std::sync::Arc;
 
 use governor::{Quota, RateLimiter};
-use tower_http::cors::CorsLayer;
 use tower_http::trace::TraceLayer;
 use tracing_subscriber::EnvFilter;
 
@@ -97,7 +97,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     ));
 
     let app = routes::router(state)
-        .layer(CorsLayer::permissive())
+        .layer(cors::layer(&config.allowed_origins)?)
         .layer(TraceLayer::new_for_http());
     let listener = tokio::net::TcpListener::bind(config.bind).await?;
     tracing::info!(bind = %config.bind, "listening");

@@ -23,6 +23,7 @@ pub struct Config {
     pub catalog_refresh: Duration,
     pub searches_per_minute: NonZeroU32,
     pub trust_proxy: bool,
+    pub allowed_origins: Vec<String>,
     pub jev: Option<Jev>,
     pub github_api: String,
     pub github_token: Option<String>,
@@ -46,6 +47,7 @@ impl Config {
             catalog_refresh: Duration::from_secs(parsed("CATALOG_REFRESH_SECS", "3600")?),
             searches_per_minute: parsed("SEARCHES_PER_MINUTE", "20")?,
             trust_proxy: parsed("TRUST_PROXY", "false")?,
+            allowed_origins: list("ALLOWED_ORIGINS"),
             jev: text("TYPESAFE_API_KEY").map(|api_key| Jev {
                 api_key,
                 base_url: text("TYPESAFE_BASE_URL").unwrap_or_else(|| jev::DEFAULT_BASE_URL.into()),
@@ -90,6 +92,19 @@ fn text(name: &str) -> Option<String> {
         .ok()
         .map(|v| v.trim().to_owned())
         .filter(|v| !v.is_empty())
+}
+
+fn list(name: &str) -> Vec<String> {
+    text(name)
+        .map(|value| {
+            value
+                .split(',')
+                .map(str::trim)
+                .filter(|entry| !entry.is_empty())
+                .map(str::to_owned)
+                .collect()
+        })
+        .unwrap_or_default()
 }
 
 fn parsed<T: FromStr>(name: &'static str, default: &str) -> Result<T, ConfigError> {
