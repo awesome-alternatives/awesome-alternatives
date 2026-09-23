@@ -7,7 +7,7 @@ import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
 import { pairs, type Target, targets } from "../../../lib/catalog.ts";
-import { comparePath, pairForTarget } from "../../../lib/compare.ts";
+import { comparableWith } from "../../../lib/compare.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -22,7 +22,7 @@ interface Props {
 const { locale, target } = Astro.props;
 const m = messages(locale);
 const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
-const comparable = pairForTarget(pairs, target.slug);
+const comparable = comparableWith(pairs, target.slug);
 ---
 
 <Base
@@ -49,20 +49,13 @@ const comparable = pairForTarget(pairs, target.slug);
       </p>
     )
   }
-  {
-    comparable && (
-      <p class="compare-link">
-        <a href={pathFor(locale, comparePath(comparable.a.slug, comparable.b.slug))}>
-          {format(m.compare.entry, { a: comparable.a.name, b: comparable.b.name })}
-        </a>
-      </p>
-    )
-  }
   <AlternativesList
     client:load
     locale={locale}
     strings={m.islands}
     tools={target.alternatives}
     target={target.slug}
+    targetName={target.name}
+    comparable={comparable}
   />
 </Base>

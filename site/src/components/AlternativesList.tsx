@@ -12,11 +12,13 @@ interface Props {
   strings: Islands;
   tools: ToolView[];
   target: string;
+  targetName: string;
+  comparable: string[];
 }
 
 const NO_FILTERS: ListFilters = { language: null, license: null, fit: null };
 
-export default function AlternativesList({ locale, strings, tools, target }: Props) {
+export default function AlternativesList({ locale, strings, tools, target, targetName, comparable }: Props) {
   const [filters, setFilters] = useState(NO_FILTERS);
   const shown = useMemo(() => narrow(tools, target, filters), [tools, target, filters]);
   const set = (patch: Partial<ListFilters>) => setFilters((f) => ({ ...f, ...patch }));
@@ -63,7 +65,15 @@ export default function AlternativesList({ locale, strings, tools, target }: Pro
       ) : (
         <div className="tools">
           {shown.map((tool) => (
-            <ToolCard key={tool.slug} locale={locale} strings={strings} tool={tool} target={target} />
+            <ToolCard
+              key={tool.slug}
+              locale={locale}
+              strings={strings}
+              tool={tool}
+              target={target}
+              targetName={targetName}
+              comparable={comparable.includes(tool.slug)}
+            />
           ))}
         </div>
       )}

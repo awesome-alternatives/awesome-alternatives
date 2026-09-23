@@ -3,7 +3,7 @@ import { test } from "node:test";
 
 import type { ReleaseEntry, Replacement } from "../../scripts/lib/types.ts";
 import { cadenceDays } from "../src/lib/cadence.ts";
-import { comparePairs, comparePath, pairForTarget, pairForTool, pairSlug } from "../src/lib/compare.ts";
+import { comparableWith, comparePairs, comparePath, pairForTool, pairSlug } from "../src/lib/compare.ts";
 
 interface Fixture {
   slug: string;
@@ -119,14 +119,26 @@ test("a pair that is both an edge and a shared target is still one page, carryin
   assert.equal(pairs[0].shared.length, 1);
 });
 
-test("the target page offers the pair with the most stars behind it", () => {
+test("a target names every alternative it can be compared against", () => {
   const pairs = comparePairs([
     tool("big", [replacement("sr", "Covers the whole job.")], 9000),
     tool("medium", [replacement("sr", "Covers part of it.")], 500),
-    tool("small", [replacement("sr", "Covers less again.")], 10),
+    tool("sr", [], 20_000),
   ]);
-  assert.equal(pairForTarget(pairs, "sr")?.slug, "big-vs-medium");
-  assert.equal(pairForTarget(pairs, "vault"), null);
+  assert.deepEqual(comparableWith(pairs, "sr").sort(), ["big", "medium"]);
+});
+
+test("an alternative with no reviewed note has no page to offer, so it is left out", () => {
+  const pairs = comparePairs([
+    tool("noted", [replacement("sr", "Covers part of it.")], 500),
+    tool("bare", [replacement("sr")], 500),
+    tool("sr", [], 20_000),
+  ]);
+  assert.deepEqual(comparableWith(pairs, "sr"), ["noted"]);
+});
+
+test("a target nothing is paired with names nobody rather than throwing", () => {
+  assert.deepEqual(comparableWith(comparePairs([]), "vault"), []);
 });
 
 test("a tool page offers a tool it has an edge with before one it merely shares a target with", () => {
