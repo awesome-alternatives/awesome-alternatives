@@ -134,6 +134,7 @@ mod tests {
         let catalog = Catalog {
             revision: "test".into(),
             products: vec![],
+            categories: Default::default(),
             tools: vec![
                 tool("good", "Rust", "MIT", &[], 1),
                 tool("unscored", "Rust", "MIT", &[], 1),

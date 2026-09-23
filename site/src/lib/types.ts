@@ -15,12 +15,21 @@ export interface Filters {
   license?: string;
   category?: string;
   dropIn?: boolean;
+  terms?: Terms;
+  selfHost?: boolean;
+  maintained?: boolean;
+}
+
+export interface Unchecked {
+  kind: "platform" | "deploy";
+  value: string;
 }
 
 export interface SearchResult {
   query: string;
   filters: Filters;
   interpretedBy: "jev" | "local";
+  unchecked?: Unchecked[];
   count: number;
   limit: number;
   offset: number;

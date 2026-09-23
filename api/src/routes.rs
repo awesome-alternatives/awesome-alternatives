@@ -13,6 +13,7 @@ use serde::{Deserialize, Serialize};
 use crate::catalog::Tool;
 use crate::filters::Filters;
 use crate::peer::client_ip;
+use crate::qualifiers::Unchecked;
 use crate::search::Interpreter;
 use crate::state::{AppState, Quiescence};
 use crate::tool_details;
@@ -161,6 +162,8 @@ struct SearchResponse {
     query: String,
     filters: Filters,
     interpreted_by: Interpreter,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    unchecked: Vec<Unchecked>,
     #[serde(flatten)]
     results: ToolPage,
 }
@@ -190,6 +193,7 @@ async fn search(
         results: ToolPage::of(read.select(&loaded.catalog.tools), &request.window),
         filters: read.filters,
         interpreted_by: read.interpreted_by,
+        unchecked: read.unchecked,
     }))
 }
 
@@ -221,6 +225,7 @@ mod tests {
         let catalog = Catalog {
             revision: "test".into(),
             products: vec![],
+            categories: Default::default(),
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 20000),
                 tool(
@@ -230,13 +235,16 @@ mod tests {
                     &[("semantic-release", Fit::Full)],
                     600,
                 ),
-                tool(
-                    "goreleaser",
-                    "Go",
-                    "MIT",
-                    &[("semantic-release", Fit::Partial)],
-                    14000,
-                ),
+                crate::catalog::Tool {
+                    self_host: true,
+                    ..tool(
+                        "goreleaser",
+                        "Go",
+                        "MIT",
+                        &[("semantic-release", Fit::Partial)],
+                        14000,
+                    )
+                },
             ],
         };
         let limiter = RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap()));
@@ -345,6 +353,19 @@ mod tests {
         assert_eq!(status, StatusCode::OK);
         assert_eq!(body["count"], 1);
         assert_eq!(body["tools"][0]["slug"], "knope");
+    }
+
+    #[tokio::test]
+    async fn terms_self_hosting_and_maintenance_are_read_from_the_query_string() {
+        let count = |uri: &'static str| async move {
+            let (status, body) =
+                call(&app(10), Request::get(uri).body(Body::empty()).unwrap()).await;
+            assert_eq!(status, StatusCode::OK, "{uri}");
+            body["count"].clone()
+        };
+        assert_eq!(count("/v1/tools?selfHost=true").await, 1);
+        assert_eq!(count("/v1/tools?terms=source-available").await, 0);
+        assert_eq!(count("/v1/tools?terms=open&maintained=true").await, 3);
     }
 
     #[tokio::test]

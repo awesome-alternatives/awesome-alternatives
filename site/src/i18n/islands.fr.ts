@@ -29,6 +29,14 @@ export const islands: Islands = {
     "source-available": "Source disponible",
     unknown: "Non vérifié",
   },
+  maintenance: {
+    maintained: "Maintenu",
+    inactive: "Aucun push depuis un an",
+  },
+  hosting: {
+    "self-hosted": "Auto-hébergé",
+    local: "Tourne sur votre machine",
+  },
   flag: {
     moved: "Dépôt déplacé",
     "no-license": "Aucune licence détectée",
@@ -61,8 +69,12 @@ export const islands: Islands = {
     chips: {
       replaces: "Remplace {name}",
       dropIn: "Drop-in uniquement",
+      selfHost: "Auto-hébergé",
+      maintained: "Maintenu",
     },
     chipsLabel: "Filtres déduits de votre requête",
+    unchecked: "{label}, pas encore vérifié",
+    openTarget: "Ouvrir la page {name} avec ces filtres →",
     removeChip: "Retirer {label}",
     removeGlyph: "×",
     closest: "Résultats les plus proches de votre description",
@@ -107,6 +119,11 @@ export const islands: Islands = {
     noMatch: "Aucune valeur ne correspond",
     chosen: { one: "{n} sélectionné", other: "{n} sélectionnés" },
     clearOne: "Effacer",
+    maintenance: "Maintenance",
+    hosting: "Hébergement",
+    applied: "Filtres appliqués",
+    unchecked: "{label}, pas encore vérifié",
+    removeFilter: "Retirer {label}",
   },
   tabs: {
     label: "Détails de l'outil",

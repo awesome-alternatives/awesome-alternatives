@@ -95,6 +95,8 @@ export const pages: Pages = {
       heading: "Comment fonctionne la recherche",
       before:
         "Votre requête est d'abord lue comme des mots-clés : les noms des outils que d'autres remplacent, les langages et les licences du catalogue, et « drop in ». Quand aucun outil à remplacer n'est nommé, un petit modèle d'embedding multilingue qui tourne sur le serveur de recherche compare la requête à la description de chaque outil, si bien qu'une requête écrite dans n'importe quelle langue du site trouve les mêmes outils que sa formulation anglaise, alors même que les descriptions restent en anglais, telles que GitHub les renvoie. Si un outil à remplacer se détache nettement, il est retenu ; sinon les résultats sont classés par proximité avec la requête. Ce n'est que lorsque ni l'une ni l'autre de ces étapes ne trouve d'outil à remplacer, et que le serveur dispose d'une clé pour cela, que le texte de la requête part chez Jev, un service externe, pour qu'il le lise. Sa lecture est mise en cache sur le serveur pendant une journée. Les résultats indiquent qui a lu votre requête : « Reconnu en local » ou « Lu par Jev ».",
+      qualifiers:
+        "Certains mots deviennent des filtres, dans chaque langue du site. « Open source » ou « libre » garde les outils dont la licence est ouverte. « Maintenu » écarte les outils archivés et ceux sans push depuis {inactiveDays} jours. « Auto-hébergé » garde les outils des catégories de services que vous faites tourner vous-même. Une plateforme ou un mode de déploiement, comme Linux ou Docker, est reconnu mais pas encore vérifié, et les résultats le disent au lieu de faire semblant.",
       privacyLink: "La page de confidentialité",
       after: "dit ce qui est envoyé et ce qui est conservé.",
     },

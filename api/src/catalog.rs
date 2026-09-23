@@ -1,3 +1,4 @@
+use std::collections::BTreeMap;
 use std::path::Path;
 
 use serde::{Deserialize, Serialize};
@@ -8,6 +9,16 @@ pub enum Fit {
     DropIn,
     Full,
     Partial,
+}
+
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "kebab-case")]
+pub enum Terms {
+    Open,
+    SourceAvailable,
+    OpenCore,
+    #[default]
+    Unknown,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -66,6 +77,24 @@ pub struct Tool {
     pub release: Option<ReleaseFacts>,
     pub maintainer_verified: bool,
     pub flags: Vec<String>,
+    #[serde(default)]
+    pub terms: Terms,
+    #[serde(default)]
+    pub self_host: bool,
+}
+
+impl Tool {
+    pub fn is_maintained(&self) -> bool {
+        !self.repo.archived && !self.flags.iter().any(|f| f == "inactive")
+    }
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Category {
+    pub name: String,
+    #[serde(default)]
+    pub self_host: bool,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -83,8 +112,24 @@ pub struct Catalog {
     pub tools: Vec<Tool>,
     #[serde(default)]
     pub products: Vec<Product>,
+    #[serde(default)]
+    pub categories: BTreeMap<String, Category>,
     #[serde(skip)]
     pub revision: String,
+}
+
+impl Catalog {
+    pub fn parse(body: &str) -> Result<Self, serde_json::Error> {
+        let mut catalog: Self = serde_json::from_str(body)?;
+        for tool in &mut catalog.tools {
+            tool.self_host = catalog
+                .categories
+                .get(&tool.category)
+                .is_some_and(|c| c.self_host);
+        }
+        catalog.revision = revision(body);
+        Ok(catalog)
+    }
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -107,10 +152,7 @@ pub async fn load(source: &str, http: &reqwest::Client) -> Result<Catalog, Catal
             .await
             .map_err(|e| CatalogError::Read(source.to_owned(), e))?
     };
-    Ok(Catalog {
-        revision: revision(&body),
-        ..serde_json::from_str(&body)?
-    })
+    Ok(Catalog::parse(&body)?)
 }
 
 async fn fetch(url: &str, http: &reqwest::Client) -> Result<String, reqwest::Error> {
@@ -144,7 +186,7 @@ mod tests {
     #[test]
     fn parses_the_generated_catalog() {
         let raw = include_str!("../../generated/catalog.json");
-        let catalog: Catalog = serde_json::from_str(raw).unwrap();
+        let catalog = Catalog::parse(raw).unwrap();
         let semantic_release = catalog
             .tools
             .iter()
@@ -158,5 +200,55 @@ mod tests {
                 .any(|t| t.replaces.iter().any(|r| r.tool == "semantic-release"))
         );
         assert!(catalog.products.iter().any(|p| p.slug == "claude-code"));
+        let hosted = |slug: &str| {
+            catalog
+                .tools
+                .iter()
+                .find(|t| t.slug == slug)
+                .unwrap()
+                .self_host
+        };
+        assert!(hosted("gitea"));
+        assert!(!hosted("ruff"));
+    }
+
+    #[test]
+    fn a_tool_is_self_hosted_when_its_category_says_so() {
+        let raw = r#"{
+            "categories": {
+                "git-forge": { "name": "Git forges", "description": "d", "selfHost": true },
+                "json-processor": { "name": "JSON", "description": "d" }
+            },
+            "tools": []
+        }"#;
+        let mut catalog = Catalog::parse(raw).unwrap();
+        let mut forge = crate::fixtures::tool("gitea", "Go", "MIT", &[], 1);
+        forge.category = "git-forge".into();
+        let mut jq = crate::fixtures::tool("jaq", "Rust", "MIT", &[], 1);
+        jq.category = "json-processor".into();
+        let body = serde_json::json!({
+            "categories": catalog.categories,
+            "tools": [forge, jq],
+        })
+        .to_string();
+        catalog = Catalog::parse(&body).unwrap();
+        let hosted: Vec<_> = catalog
+            .tools
+            .iter()
+            .map(|t| (t.slug.as_str(), t.self_host))
+            .collect();
+        assert_eq!(hosted, [("gitea", true), ("jaq", false)]);
+    }
+
+    #[test]
+    fn a_tool_flagged_inactive_or_archived_is_not_maintained() {
+        let live = crate::fixtures::tool("live", "Go", "MIT", &[], 1);
+        let mut idle = live.clone();
+        idle.flags = vec!["inactive".into()];
+        let mut archived = live.clone();
+        archived.repo.archived = true;
+        assert!(live.is_maintained());
+        assert!(!idle.is_maintained());
+        assert!(!archived.is_maintained());
     }
 }

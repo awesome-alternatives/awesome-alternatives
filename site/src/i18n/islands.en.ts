@@ -39,6 +39,14 @@ export const islands = {
     "source-available": "Source available",
     unknown: "Not checked",
   },
+  maintenance: {
+    maintained: "Maintained",
+    inactive: "No push in a year",
+  },
+  hosting: {
+    "self-hosted": "Self-hosted",
+    local: "Runs on your machine",
+  },
   flag,
   search: {
     label: "Describe what you are looking for",
@@ -65,8 +73,12 @@ export const islands = {
     chips: {
       replaces: "Replaces {name}",
       dropIn: "Drop-in only",
+      selfHost: "Self-hosted",
+      maintained: "Maintained",
     },
     chipsLabel: "Filters read from your query",
+    unchecked: "{label}, not checked yet",
+    openTarget: "Open the {name} page with these filters →",
     removeChip: "Remove {label}",
     removeGlyph: "×",
     closest: "Closest matches to your description",
@@ -111,6 +123,11 @@ export const islands = {
     noMatch: "No value matches",
     chosen: { one: "{n} selected", other: "{n} selected" },
     clearOne: "Clear",
+    maintenance: "Maintenance",
+    hosting: "Hosting",
+    applied: "Applied filters",
+    unchecked: "{label}, not checked yet",
+    removeFilter: "Remove {label}",
   },
   tabs: {
     label: "Tool details",

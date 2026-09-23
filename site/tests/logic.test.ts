@@ -6,6 +6,7 @@ import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
 import { canonicalForTool } from "../src/lib/canonical.ts";
 import { alternativesTo, dropInCount, facets, matching, narrow, NO_FILTERS, toggled } from "../src/lib/filter.ts";
+import { alternativesHref, fromSearch, listParams, readListUrl } from "../src/lib/listUrl.ts";
 import { stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
 import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
@@ -147,6 +148,69 @@ test("chips name the target and list every filter read from the query", () => {
     ["Replaces semantic-release", "Drop-in only", "MIT"],
   );
   assert.deepEqual(chips({}, islands.search.chips), []);
+});
+
+test("chips name the licence terms, maintenance and self-hosting read from the query", () => {
+  const read = chips({ terms: "open", maintained: true, selfHost: true }, islands.search.chips, undefined, (t) =>
+    islands.terms[t],
+  );
+  assert.deepEqual(
+    read.map((c) => [c.key, c.label]),
+    [
+      ["terms", "Open source"],
+      ["maintained", "Maintained"],
+      ["selfHost", "Self-hosted"],
+    ],
+  );
+});
+
+test("maintenance and hosting narrow the list like any other facet", () => {
+  const idle = tool("idle", "Rust", [["sr", "full"]]);
+  idle.flags = ["inactive"];
+  const hosted = { ...tool("hosted", "Go", [["sr", "full"]]), category: "git-forge" };
+  const tools = [tool("live", "Rust", [["sr", "full"]]), idle, hosted];
+  const forges = new Set(["git-forge"]);
+  const slugs = (f: typeof NO_FILTERS) => narrow(tools, "sr", f, forges).map((t) => t.slug);
+  assert.deepEqual(slugs({ ...NO_FILTERS, maintenance: ["maintained"] }), ["live", "hosted"]);
+  assert.deepEqual(slugs({ ...NO_FILTERS, hosting: ["self-hosted"] }), ["hosted"]);
+  assert.deepEqual(slugs({ ...NO_FILTERS, hosting: ["local"], maintenance: ["maintained"] }), ["live"]);
+});
+
+test("the tools query carries terms, self-hosting and maintenance to the API", () => {
+  assert.equal(toQuery({ terms: "open", selfHost: true, maintained: true }), "terms=open&selfHost=true&maintained=true");
+});
+
+test("a filtered alternatives view survives a round trip through its address", () => {
+  const view = {
+    filters: { ...NO_FILTERS, language: ["Rust", "C++"], terms: ["open" as const], hosting: ["self-hosted" as const] },
+    unchecked: ["Linux"],
+  };
+  assert.deepEqual(readListUrl(`?${listParams(view)}`), view);
+});
+
+test("an address with values the page does not know drops them rather than filtering on nothing", () => {
+  const { filters } = readListUrl("?fit=perfect,full&terms=free&maintenance=maintained,maintained");
+  assert.deepEqual(filters.fit, ["full"]);
+  assert.deepEqual(filters.terms, []);
+  assert.deepEqual(filters.maintenance, ["maintained"]);
+});
+
+test("a search with a target lands on its alternatives page with what it understood applied", () => {
+  const href = alternativesHref({ replaces: "redis", terms: "open", maintained: true, selfHost: true }, [
+    { kind: "platform", value: "Linux" },
+  ]);
+  assert.ok(href?.startsWith("/alternatives/redis/?"));
+  const { filters, unchecked } = readListUrl(href?.slice(href.indexOf("?")) ?? "");
+  assert.deepEqual(filters.terms, ["open"]);
+  assert.deepEqual(filters.maintenance, ["maintained"]);
+  assert.deepEqual(filters.hosting, ["self-hosted"]);
+  assert.deepEqual(unchecked, ["Linux"]);
+});
+
+test("drop-in in a search becomes the drop-in fit, and a search without a target lands nowhere", () => {
+  assert.deepEqual(fromSearch({ replaces: "sr", dropIn: true }).filters.fit, ["drop-in"]);
+  assert.equal(alternativesHref({ language: "Rust" }), null);
+  assert.equal(alternativesHref({ replaces: "redis" }), "/alternatives/redis/");
 });
 
 test("the tools query omits unset filters and a false drop-in", () => {

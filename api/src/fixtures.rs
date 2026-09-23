@@ -1,4 +1,4 @@
-use crate::catalog::{Fit, Replacement, RepoFacts, Tool};
+use crate::catalog::{Fit, Replacement, RepoFacts, Terms, Tool};
 
 pub fn tool(
     slug: &str,
@@ -37,5 +37,7 @@ pub fn tool(
         release: None,
         maintainer_verified: false,
         flags: Vec::new(),
+        terms: Terms::Open,
+        self_host: false,
     }
 }

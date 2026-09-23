@@ -6,7 +6,7 @@ import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
-import { pairs, type Target, targets } from "../../../lib/catalog.ts";
+import { categories, pairs, type Target, targets } from "../../../lib/catalog.ts";
 import { comparableWith } from "../../../lib/compare.ts";
 
 export const getStaticPaths = (() =>
@@ -23,6 +23,7 @@ const { locale, target } = Astro.props;
 const m = messages(locale);
 const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
 const comparable = comparableWith(pairs, target.slug);
+const selfHostCategories = Object.keys(categories).filter((key) => categories[key]?.selfHost === true);
 ---
 
 <Base
@@ -65,5 +66,6 @@ const comparable = comparableWith(pairs, target.slug);
     target={target.slug}
     targetName={target.name}
     comparable={comparable}
+    selfHostCategories={selfHostCategories}
   />
 </Base>

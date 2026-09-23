@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::catalog::{Fit, Tool};
+use crate::catalog::{Fit, Terms, Tool};
 
 #[derive(Debug, Default, Clone, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -15,6 +15,12 @@ pub struct Filters {
     pub category: Option<String>,
     #[serde(default)]
     pub drop_in: bool,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub terms: Option<Terms>,
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub self_host: bool,
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub maintained: bool,
 }
 
 impl Filters {
@@ -25,10 +31,20 @@ impl Filters {
             .filter(|t| same(t.repo.language.as_deref(), self.language.as_deref()))
             .filter(|t| same(t.repo.license.as_deref(), self.license.as_deref()))
             .filter(|t| self.category.as_ref().is_none_or(|c| &t.category == c))
+            .filter(|t| self.terms.is_none_or(|terms| t.terms == terms))
+            .filter(|t| !self.self_host || t.self_host)
+            .filter(|t| !self.maintained || t.is_maintained())
             .filter(|t| self.replaces.is_none() || self.fit(t).is_some())
             .collect();
         matched.sort_by_key(|t| (self.fit(t).map(fit_rank), std::cmp::Reverse(t.repo.stars)));
         matched
+    }
+
+    pub fn names_a_scope(&self) -> bool {
+        self.replaces.is_some()
+            || self.language.is_some()
+            || self.license.is_some()
+            || self.category.is_some()
     }
 
     fn fit(&self, tool: &Tool) -> Option<Fit> {
@@ -148,6 +164,56 @@ mod tests {
         };
         assert_eq!(slugs(filters.apply(&tools)), ["oxlint"]);
         assert_eq!(Filters::default().apply(&tools).len(), 2);
+    }
+
+    #[test]
+    fn terms_self_hosting_and_maintenance_each_narrow_the_list() {
+        let open = tool("open", "Go", "MIT", &[], 1);
+        let mut closed = tool("closed", "Go", "Other", &[], 1);
+        closed.terms = Terms::SourceAvailable;
+        let mut hosted = tool("hosted", "Go", "MIT", &[], 1);
+        hosted.self_host = true;
+        let mut idle = tool("idle", "Go", "MIT", &[], 1);
+        idle.flags = vec!["inactive".into()];
+        let tools = [open, closed, hosted, idle];
+        let only = |filters: Filters| slugs(filters.apply(&tools));
+        assert_eq!(
+            only(Filters {
+                terms: Some(Terms::Open),
+                ..Filters::default()
+            }),
+            ["open", "hosted", "idle"]
+        );
+        assert_eq!(
+            only(Filters {
+                self_host: true,
+                ..Filters::default()
+            }),
+            ["hosted"]
+        );
+        assert_eq!(
+            only(Filters {
+                maintained: true,
+                ..Filters::default()
+            }),
+            ["open", "closed", "hosted"]
+        );
+    }
+
+    #[test]
+    fn qualifiers_alone_do_not_name_a_scope() {
+        let qualified = Filters {
+            terms: Some(Terms::Open),
+            self_host: true,
+            maintained: true,
+            ..Filters::default()
+        };
+        assert!(!qualified.names_a_scope());
+        let scoped = Filters {
+            language: Some("Rust".into()),
+            ..Filters::default()
+        };
+        assert!(scoped.names_a_scope());
     }
 
     #[test]

@@ -94,6 +94,8 @@ export const pages: Pages = {
       heading: "Wie die Suche funktioniert",
       before:
         "Die Anfrage wird zuerst als Stichwörter gelesen: die Namen der Tools, die andere ersetzen, die Sprachen und Lizenzen im Katalog und „drop in“. Wird kein zu ersetzendes Tool genannt, vergleicht ein kleines mehrsprachiges Embedding-Modell auf dem Suchserver die Anfrage mit der Beschreibung jedes Tools, sodass eine Anfrage in jeder Sprache der Website dieselben Tools findet wie ihre englische Fassung, obwohl die Beschreibungen selbst auf Englisch bleiben, so wie GitHub sie liefert. Sticht ein zu ersetzendes Tool klar heraus, wird es genommen, sonst werden die Ergebnisse danach sortiert, wie nah sie an der Anfrage liegen. Erst wenn beide Schritte kein zu ersetzendes Tool finden und der Server einen Schlüssel dafür hat, geht der Text der Anfrage an Jev, einen externen Dienst, der ihn liest. Dessen Lesart bleibt einen Tag lang auf dem Server zwischengespeichert. Die Ergebnisse nennen, wer die Anfrage gelesen hat: „Lokal erkannt“ oder „Von Jev gelesen“.",
+      qualifiers:
+        "Manche Wörter werden zu Filtern, in jeder Sprache der Seite. „Open Source“ behält Tools mit offener Lizenz. „Gepflegt“ lässt archivierte Tools weg und solche ohne Push seit {inactiveDays} Tagen. „Selbst gehostet“ behält Tools aus Kategorien von Diensten, die du selbst betreibst. Eine Plattform oder eine Art zu deployen, etwa Linux oder Docker, wird erkannt, aber noch nicht geprüft, und die Ergebnisse sagen das, statt so zu tun als ob.",
       privacyLink: "Die Datenschutzerklärung",
       after: "sagt, was gesendet und was aufbewahrt wird.",
     },
