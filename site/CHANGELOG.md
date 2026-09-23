@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.42.2] - 2026-09-23
+
+### Bug Fixes
+
+- fix(site): offer a comparison per alternative instead of one arbitrary pair (#122)
+
 ## [0.42.1] - 2026-09-23
 
 ### Bug Fixes
