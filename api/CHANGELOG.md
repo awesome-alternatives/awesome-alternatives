@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.11.0] - 2026-09-23
+
+### Features
+
+- feat: let a closed product be a target, starting with AI coding and chat tools (#140)
+
 ## [0.10.0] - 2026-09-23
 
 ### Features
