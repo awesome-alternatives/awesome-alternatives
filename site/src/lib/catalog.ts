@@ -96,8 +96,8 @@ export function categoryName(key: string): string {
   return categories[key]?.name ?? key;
 }
 
-export function targetItems(): GridItem[] {
-  return targets().map((target) => {
+export function targetItems(from: readonly Target[] = targets()): GridItem[] {
+  return from.map((target) => {
     const key = target.listed?.category ?? target.product?.category ?? target.alternatives[0]?.category;
     return {
       href: `/alternatives/${target.slug}/`,

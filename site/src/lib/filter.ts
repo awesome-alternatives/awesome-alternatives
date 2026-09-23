@@ -30,7 +30,7 @@ export interface Facet<T extends string = string> {
 
 const FIT_ORDER: readonly Fit[] = ["drop-in", "full", "partial"];
 
-export function fitFor(tool: ToolView, target: string): Fit | null {
+export function fitFor(tool: Pick<ToolView, "replaces">, target: string): Fit | null {
   return tool.replaces.find((r) => r.tool === target)?.fit ?? null;
 }
 

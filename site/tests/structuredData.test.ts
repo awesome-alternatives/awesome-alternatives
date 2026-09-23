@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { itemList, serialize, softwareSourceCode, spdxUrl } from "../src/lib/structuredData.ts";
+import { breadcrumbList, itemList, serialize, softwareSourceCode, spdxUrl } from "../src/lib/structuredData.ts";
 
 const PAGE = "https://awesome-alternatives.com/tools/ruff/";
 
@@ -85,4 +85,18 @@ test("a description cannot close the script tag it is serialised into", () => {
   assert.ok(!out.includes("</script>"));
   assert.ok(!out.includes("<"));
   assert.equal(JSON.parse(out).description, "</script><script>alert(1)</script>");
+});
+
+test("a breadcrumb trail numbers each step and points at its page", () => {
+  const trail = breadcrumbList([
+    { name: "Home", url: "https://awesome-alternatives.com/" },
+    { name: "Key-value stores", url: "https://awesome-alternatives.com/categories/key-value-store/" },
+  ]);
+  assert.deepEqual(
+    trail.itemListElement.map((item) => [item.position, item.name, item.item]),
+    [
+      [1, "Home", "https://awesome-alternatives.com/"],
+      [2, "Key-value stores", "https://awesome-alternatives.com/categories/key-value-store/"],
+    ],
+  );
 });

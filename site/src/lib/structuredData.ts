@@ -31,7 +31,13 @@ export interface ItemList {
   itemListElement: ListItem[];
 }
 
-export type StructuredData = SoftwareSourceCode | ItemList;
+export interface BreadcrumbList {
+  "@context": typeof CONTEXT;
+  "@type": "BreadcrumbList";
+  itemListElement: { "@type": "ListItem"; position: number; name: string; item: string }[];
+}
+
+export type StructuredData = SoftwareSourceCode | ItemList | BreadcrumbList;
 
 export function spdxUrl(license: string | null): string | null {
   return license && !UNCLASSIFIED.has(license) ? `https://spdx.org/licenses/${license}.html` : null;
@@ -64,6 +70,19 @@ export function itemList(name: string, items: readonly { name: string; url: stri
     name,
     numberOfItems: items.length,
     itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, ...item })),
+  };
+}
+
+export function breadcrumbList(crumbs: readonly { name: string; url: string }[]): BreadcrumbList {
+  return {
+    "@context": CONTEXT,
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
   };
 }
 

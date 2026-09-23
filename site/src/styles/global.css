@@ -380,6 +380,112 @@ main {
   font-size: 0.8rem;
 }
 
+.breadcrumbs {
+  margin-top: 40px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  color: var(--dim);
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  margin: 0 8px;
+  color: var(--edge);
+}
+
+.breadcrumbs a {
+  color: var(--dim);
+}
+
+.breadcrumbs a:hover {
+  color: var(--text);
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--muted);
+}
+
+.page-section {
+  margin-top: 56px;
+}
+
+.page-section h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.comparison {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.comparison th,
+.comparison td {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: start;
+  vertical-align: baseline;
+}
+
+.comparison thead th {
+  color: var(--dim);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.comparison tbody td {
+  color: var(--muted);
+}
+
+.comparison tbody th a {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.comparison td a {
+  color: var(--muted);
+}
+
+.pair-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  list-style: none;
+}
+
+.about-more {
+  margin: 16px 0 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
 .context {
   margin: 28px 0 0;
   color: var(--dim);

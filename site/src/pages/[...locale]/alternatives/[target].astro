@@ -2,13 +2,19 @@
 import type { GetStaticPaths } from "astro";
 
 import AlternativesList from "../../../components/AlternativesList.tsx";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ComparisonTable from "../../../components/ComparisonTable.astro";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
-import { categories, pairs, type Target, targets } from "../../../lib/catalog.ts";
-import { comparableWith } from "../../../lib/compare.ts";
-import { itemList } from "../../../lib/structuredData.ts";
+import { withHome } from "../../../lib/breadcrumbs.ts";
+import { categories, categoryName, pairs, type Target, targets } from "../../../lib/catalog.ts";
+import { comparableWith, comparePath } from "../../../lib/compare.ts";
+import { day, stars } from "../../../lib/format.ts";
+import { targetDescription, targetTitle } from "../../../lib/intent.ts";
+import { slugify } from "../../../lib/slug.ts";
+import { breadcrumbList, itemList } from "../../../lib/structuredData.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -22,29 +28,35 @@ interface Props {
 
 const { locale, target } = Astro.props;
 const m = messages(locale);
-const languages = [...new Set(target.alternatives.map((t) => t.repo.language).filter(Boolean))];
+const card = m.islands.card;
+const absolute = (path: string) => new URL(path, Astro.site).href;
 const comparable = comparableWith(pairs, target.slug);
-const title = format(m.target.title, { name: target.name });
-const listed = itemList(
-  title,
-  target.alternatives.map((tool) => ({
-    name: tool.name,
-    url: new URL(pathFor(locale, `/tools/${tool.slug}/`), Astro.site).href,
-  })),
-);
+const title = targetTitle(locale, m.target, target.name, target.alternatives);
 const selfHostCategories = Object.keys(categories).filter((key) => categories[key]?.selfHost === true);
+const categoryKey = target.listed?.category ?? target.product?.category ?? target.alternatives[0]?.category;
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  ...(categoryKey
+    ? [{ name: categoryName(categoryKey), href: pathFor(locale, `/categories/${slugify(categoryKey)}/`) }]
+    : []),
+  { name: title, href: pathFor(locale, `/alternatives/${target.slug}/`) },
+]);
+const shown = new Set(target.alternatives.map((tool) => tool.slug));
+const headToHead = pairs.filter((pair) => shown.has(pair.a.slug) && shown.has(pair.b.slug));
+const structuredData = [
+  itemList(
+    title,
+    target.alternatives.map((tool) => ({ name: tool.name, url: absolute(pathFor(locale, `/tools/${tool.slug}/`)) })),
+  ),
+  breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: absolute(crumb.href) }))),
+];
 ---
 
 <Base
   title={title}
-  structuredData={[listed]}
-  description={format(m.target.description, {
-    count: target.alternatives.length,
-    name: target.name,
-    languages: languages.join(", "),
-  })}
+  structuredData={structuredData}
+  description={targetDescription(locale, m.target, target.name, target.slug, target.alternatives)}
 >
-  <a class="back" href={`${pathFor(locale, "/")}#browse`}>{m.listing.back}</a>
+  <Breadcrumbs locale={locale} crumbs={crumbs} />
   <p class="context">
     <a href={pathFor(locale, "/alternatives/")}>{m.target.context}</a> {m.target.contextTo}
   </p>
@@ -52,30 +64,100 @@ const selfHostCategories = Object.keys(categories).filter((key) => categories[ke
     {target.name}
     {target.listed?.repo.archived && <span class="mark mark-archived">{m.target.archived}</span>}
   </h1>
-  {
-    target.listed && (
-      <p class="lede">
-        {target.listed.repo.description}{" "}
-        <a href={pathFor(locale, `/tools/${target.slug}/`)}>{format(m.target.aboutLink, { name: target.name })}</a>
-      </p>
-    )
-  }
+  {target.listed?.repo.description && <p class="lede">{target.listed.repo.description}</p>}
   {
     target.product && (
       <p class="lede">
-        {target.product.description} {format(m.target.closed, { vendor: target.product.vendor })}{" "}
-        <a href={target.product.homepage}>{format(m.target.productSite, { name: target.name })}</a>
+        {target.product.description} {format(m.target.closed, { vendor: target.product.vendor })}
       </p>
     )
   }
-  <AlternativesList
-    client:load
-    locale={locale}
-    strings={m.islands}
-    tools={target.alternatives}
-    target={target.slug}
-    targetName={target.name}
-    comparable={comparable}
-    selfHostCategories={selfHostCategories}
-  />
+
+  <section class="page-section">
+    <h2>{m.target.comparison}</h2>
+    <ComparisonTable
+      locale={locale}
+      caption={title}
+      tools={target.alternatives}
+      selfHostCategories={selfHostCategories}
+      target={target.slug}
+    />
+  </section>
+
+  <section class="page-section">
+    <h2>{m.target.listHeading}</h2>
+    <AlternativesList
+      client:load
+      locale={locale}
+      strings={m.islands}
+      tools={target.alternatives}
+      target={target.slug}
+      targetName={target.name}
+      comparable={comparable}
+      selfHostCategories={selfHostCategories}
+    />
+  </section>
+
+  {
+    headToHead.length > 0 && (
+      <section class="page-section">
+        <h2>{m.target.pairs}</h2>
+        <ul class="pair-links">
+          {headToHead.map((pair) => (
+            <li>
+              <a href={pathFor(locale, comparePath(pair.a.slug, pair.b.slug))}>
+                {format(m.compare.title, { a: pair.a.name, b: pair.b.name })}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="page-section">
+    <h2>{format(m.target.about, { name: target.name })}</h2>
+    {
+      target.listed && (
+        <>
+          <dl class="about-facts">
+            <div>
+              <dt>{card.factLanguage}</dt>
+              <dd>{target.listed.repo.language ?? card.unknownLanguage}</dd>
+            </div>
+            <div>
+              <dt>{card.factLicense}</dt>
+              <dd>{target.listed.repo.license ?? card.noLicense}</dd>
+            </div>
+            <div>
+              <dt>{card.factStars}</dt>
+              <dd>{stars(target.listed.repo.stars)}</dd>
+            </div>
+            <div>
+              <dt>{card.factLastPush}</dt>
+              <dd>{day(target.listed.repo.pushedAt)}</dd>
+            </div>
+          </dl>
+          <p class="about-more">
+            <a href={pathFor(locale, `/tools/${target.slug}/`)}>{format(m.target.aboutLink, { name: target.name })}</a>
+          </p>
+        </>
+      )
+    }
+    {
+      target.product && (
+        <>
+          <dl class="about-facts">
+            <div class="full">
+              <dt>{m.target.vendor}</dt>
+              <dd>{target.product.vendor}</dd>
+            </div>
+          </dl>
+          <p class="about-more">
+            <a href={target.product.homepage}>{format(m.target.productSite, { name: target.name })}</a>
+          </p>
+        </>
+      )
+    }
+  </section>
 </Base>

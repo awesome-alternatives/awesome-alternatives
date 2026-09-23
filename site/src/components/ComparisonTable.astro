@@ -1,0 +1,59 @@
+---
+import type { Locale } from "../i18n/index.ts";
+import { messages, pathFor } from "../i18n/index.ts";
+import { fitFor } from "../lib/filter.ts";
+import { day } from "../lib/format.ts";
+import type { ToolView } from "../lib/types.ts";
+
+interface Props {
+  locale: Locale;
+  caption: string;
+  tools: ToolView[];
+  selfHostCategories: string[];
+  target?: string;
+}
+
+const { locale, caption, tools, selfHostCategories, target } = Astro.props;
+const m = messages(locale);
+const card = m.islands.card;
+const hosted = new Set(selfHostCategories);
+---
+
+<div class="table-scroll">
+  <table class="comparison">
+    <caption class="visually-hidden">{caption}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{m.target.toolColumn}</th>
+        {target && <th scope="col">{m.islands.facets.fit}</th>}
+        <th scope="col">{card.factLicense}</th>
+        <th scope="col">{m.tool.terms}</th>
+        <th scope="col">{m.tool.selfHost}</th>
+        <th scope="col">{card.factLanguage}</th>
+        <th scope="col">{card.factLatest}</th>
+        <th scope="col">{card.factLastPush}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        tools.map((tool) => {
+          const fit = target ? fitFor(tool, target) : null;
+          return (
+            <tr>
+              <th scope="row">
+                <a href={pathFor(locale, `/tools/${tool.slug}/`)}>{tool.name}</a>
+              </th>
+              {target && <td>{fit ? <a href={pathFor(locale, `/about/#${fit}`)}>{m.islands.fit[fit]}</a> : ""}</td>}
+              <td>{tool.repo.license ?? card.noLicense}</td>
+              <td>{m.islands.terms[tool.terms]}</td>
+              <td>{hosted.has(tool.category) ? m.tool.selfHostYes : m.tool.selfHostNo}</td>
+              <td>{tool.repo.language ?? card.unknownLanguage}</td>
+              <td>{tool.release?.tag ?? m.tool.noRelease}</td>
+              <td>{day(tool.repo.pushedAt)}</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>

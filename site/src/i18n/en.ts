@@ -116,7 +116,12 @@ export const en = {
 
   category: {
     context: "category",
-    title: "{name}: {count} open-source tools",
+    title: { one: "{name}: 1 tool", other: "{name}: {n} tools" },
+    titleOpen: { one: "{name}: 1 open source tool", other: "{name}: {n} open source tools" },
+    titleSelfHost: { one: "Self-hosted {lower}: 1 tool", other: "Self-hosted {lower}: {n} tools" },
+    descriptionSelfHost: "{description} Each one runs on your own server. {count} tools compared by language, licence, stars and latest release.",
+    comparison: "Side by side",
+    replaces: "What these tools replace",
     description: "{description} {count} tools compared by language, licence, stars and latest release.",
   },
 
@@ -143,8 +148,21 @@ export const en = {
     website: "Website ↗",
   },
 
+  breadcrumb: {
+    label: "Breadcrumb",
+    home: "Home",
+  },
+
   target: {
-    title: "Alternatives to {name}",
+    title: { one: "1 alternative to {name}", other: "{n} alternatives to {name}" },
+    titleOpen: { one: "1 open source alternative to {name}", other: "{n} open source alternatives to {name}" },
+    dropIns: "Drop-in: {names}.",
+    comparison: "Side by side",
+    listHeading: "Every alternative",
+    about: "About {name}",
+    pairs: "Head to head",
+    vendor: "Vendor",
+    toolColumn: "Tool",
     description:
       "{count} alternatives to {name}, in {languages}. Compare fit, licence, stars and the latest signed release.",
     context: "alternatives",
@@ -177,6 +195,8 @@ export const en = {
     lastPush: "Last push",
     terms: "Terms",
     selfHost: "Self-hosted",
+    selfHostNo: "No",
+    related: "Other tools in {category}",
     selfHostYes: "Yes",
     website: "Website ↗",
     edit: "Edit this entry",

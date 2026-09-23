@@ -117,7 +117,12 @@ export const fr: Messages = {
 
   category: {
     context: "catégorie",
-    title: "{name} : {count} outils open source",
+    title: { one: "{name} : 1 outil", other: "{name} : {n} outils" },
+    titleOpen: { one: "{name} : 1 outil open source", other: "{name} : {n} outils open source" },
+    titleSelfHost: { one: "1 outil auto-hébergeable : {lower}", other: "{n} outils auto-hébergeables : {lower}" },
+    descriptionSelfHost: "{description} Chacun tourne sur votre propre serveur. {count} outils comparés par langage, licence, étoiles et dernière release.",
+    comparison: "Côte à côte",
+    replaces: "Ce que ces outils remplacent",
     description: "{description} {count} outils comparés par langage, licence, étoiles et dernière release.",
   },
 
@@ -144,8 +149,21 @@ export const fr: Messages = {
     website: "Site web ↗",
   },
 
+  breadcrumb: {
+    label: "Fil d'Ariane",
+    home: "Accueil",
+  },
+
   target: {
-    title: "Alternatives à {name}",
+    title: { one: "1 alternative à {name}", other: "{n} alternatives à {name}" },
+    titleOpen: { one: "1 alternative open source à {name}", other: "{n} alternatives open source à {name}" },
+    dropIns: "Drop-in : {names}.",
+    comparison: "Côte à côte",
+    listHeading: "Toutes les alternatives",
+    about: "À propos de {name}",
+    pairs: "Face à face",
+    vendor: "Éditeur",
+    toolColumn: "Outil",
     description:
       "{count} alternatives à {name}, en {languages}. Comparez le type de remplacement, la licence, les étoiles et la dernière release signée.",
     context: "alternatives",
@@ -178,6 +196,8 @@ export const fr: Messages = {
     lastPush: "Dernier push",
     terms: "Conditions",
     selfHost: "Auto-hébergeable",
+    selfHostNo: "Non",
+    related: "Dans la même catégorie : {category}",
     selfHostYes: "Oui",
     website: "Site web ↗",
     edit: "Modifier cette entrée",
