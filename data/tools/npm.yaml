@@ -1,3 +1,4 @@
 name: npm
 repository: https://github.com/npm/cli
 category: javascript-package-manager
+terms: open

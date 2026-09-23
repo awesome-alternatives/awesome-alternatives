@@ -46,7 +46,8 @@
         "release",
         "releases",
         "maintainerVerified",
-        "flags"
+        "flags",
+        "terms"
       ],
       "properties": {
         "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
@@ -87,7 +88,8 @@
         "release": { "oneOf": [{ "$ref": "#/$defs/release" }, { "type": "null" }] },
         "releases": { "type": "array", "items": { "$ref": "#/$defs/releaseEntry" } },
         "maintainerVerified": { "type": "boolean" },
-        "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "terms": { "enum": ["open", "source-available", "open-core", "unknown"] }
       }
     },
     "repo": {

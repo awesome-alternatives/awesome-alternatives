@@ -6,6 +6,10 @@ export interface Replacement {
   note?: string;
 }
 
+export type DeclaredTerms = "open" | "source-available" | "open-core";
+
+export type Terms = DeclaredTerms | "unknown";
+
 export interface ToolEntry {
   name: string;
   repository: string;
@@ -13,6 +17,7 @@ export interface ToolEntry {
   replaces?: Replacement[];
   affiliation?: string;
   path?: string;
+  terms?: DeclaredTerms;
 }
 
 export interface Tool extends ToolEntry {
@@ -23,6 +28,7 @@ export interface Tool extends ToolEntry {
 export interface Category {
   name: string;
   description: string;
+  selfHost?: boolean;
 }
 
 export type Severity = "error" | "warning";
@@ -111,6 +117,7 @@ export interface EnrichedTool {
   releases: ReleaseEntry[];
   maintainerVerified: boolean;
   flags: FlagCode[];
+  terms: Terms;
 }
 
 export type OwnerKind = "user" | "organization";

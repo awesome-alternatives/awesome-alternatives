@@ -33,6 +33,12 @@ export const islands = {
     full: "Full replacement",
     partial: "Partial",
   },
+  terms: {
+    open: "Open source",
+    "open-core": "Open core",
+    "source-available": "Source available",
+    unknown: "Not checked",
+  },
   flag,
   search: {
     label: "Describe what you are looking for",
@@ -95,6 +101,7 @@ export const islands = {
     language: "Language",
     license: "Licence",
     fit: "Fit",
+    terms: "Terms",
     any: "Any",
     total: { one: "1 alternative", other: "{n} alternatives" },
     narrowed: "{shown} of {total}",

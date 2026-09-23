@@ -42,6 +42,7 @@ function tool(slug: string, language: string | null, replaces: [string, Fit][], 
     release: null,
     maintainerVerified: false,
     flags: [],
+    terms: "open",
   };
 }
 
@@ -90,7 +91,7 @@ test("a tool others replace is canonical on its alternatives page, any other on 
 
 test("narrow combines language and fit for the page's target", () => {
   const tools = [tool("a", "Rust", [["sr", "full"]]), tool("b", "Rust", [["sr", "partial"]]), tool("c", "Go", [["sr", "full"]])];
-  const shown = narrow(tools, "sr", { language: "Rust", license: null, fit: "full" });
+  const shown = narrow(tools, "sr", { language: "Rust", license: null, fit: "full", terms: null });
   assert.deepEqual(
     shown.map((t) => t.slug),
     ["a"],

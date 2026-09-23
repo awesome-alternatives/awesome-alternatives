@@ -5,3 +5,4 @@ replaces:
   - tool: mypy
     fit: full
     note: Also the engine behind Pylance in VS Code.
+terms: open

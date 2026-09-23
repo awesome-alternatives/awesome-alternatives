@@ -1303,7 +1303,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "biome",
@@ -1397,7 +1398,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "bitwarden",
@@ -1482,7 +1484,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "black",
@@ -1565,7 +1568,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "bruno",
@@ -1659,7 +1663,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "bun",
@@ -1756,7 +1761,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "caddy",
@@ -1851,7 +1857,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "changesets",
@@ -1930,7 +1937,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "cocogitto",
@@ -2021,7 +2029,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "concourse",
@@ -2112,7 +2121,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "cuberite",
@@ -2188,7 +2198,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "cypress",
@@ -2281,7 +2292,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "date-fns",
@@ -2371,7 +2383,8 @@
       "maintainerVerified": false,
       "flags": [
         "no-license"
-      ]
+      ],
+      "terms": "unknown"
     },
     {
       "slug": "dayjs",
@@ -2457,7 +2470,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "delta",
@@ -2545,7 +2559,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "deno",
@@ -2629,7 +2644,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "diff-so-fancy",
@@ -2709,7 +2725,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "docker",
@@ -2787,7 +2804,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "docusaurus",
@@ -2867,7 +2885,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "dprint",
@@ -2948,7 +2967,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "dragonfly",
@@ -3043,7 +3063,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "source-available"
     },
     {
       "slug": "drizzle",
@@ -3133,7 +3154,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "elasticsearch",
@@ -3210,7 +3232,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "eleventy",
@@ -3296,7 +3319,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "esbuild",
@@ -3387,7 +3411,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "eslint",
@@ -3466,7 +3491,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "exa",
@@ -3546,7 +3572,8 @@
       "maintainerVerified": false,
       "flags": [
         "inactive"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "express",
@@ -3624,7 +3651,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "eza",
@@ -3714,7 +3742,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "fastapi",
@@ -3814,7 +3843,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "fastify",
@@ -3901,7 +3931,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ferretdb",
@@ -3993,7 +4024,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ferrflow",
@@ -4083,7 +4115,8 @@
         }
       ],
       "maintainerVerified": true,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "flake8",
@@ -4133,7 +4166,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "flask",
@@ -4214,7 +4248,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "fluent-bit",
@@ -4308,7 +4343,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "folia",
@@ -4359,7 +4395,8 @@
       "maintainerVerified": false,
       "flags": [
         "no-release"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "gatus",
@@ -4459,7 +4496,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ghostty",
@@ -4510,7 +4548,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "giftless",
@@ -4582,7 +4621,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "git-cliff",
@@ -4675,7 +4715,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "gitea",
@@ -4775,7 +4816,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "gitlab",
@@ -4816,7 +4858,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "glowstone",
@@ -4905,7 +4948,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "gojq",
@@ -4990,7 +5034,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "helix",
@@ -5074,7 +5119,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "hono",
@@ -5163,7 +5209,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "hoppscotch",
@@ -5261,7 +5308,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "httpie",
@@ -5357,7 +5405,8 @@
       "maintainerVerified": false,
       "flags": [
         "inactive"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "httpx",
@@ -5441,7 +5490,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "hugo",
@@ -5528,7 +5578,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "infisical",
@@ -5628,7 +5679,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "insomnia",
@@ -5712,7 +5764,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "iterm2",
@@ -5749,7 +5802,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jaq",
@@ -5833,7 +5887,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jekyll",
@@ -5913,7 +5968,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jenkins",
@@ -5997,7 +6053,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jest",
@@ -6080,7 +6137,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jmeter",
@@ -6157,7 +6215,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "jq",
@@ -6232,7 +6291,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "k3d",
@@ -6319,7 +6379,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "k6",
@@ -6408,7 +6469,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "kafka",
@@ -6450,7 +6512,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "keydb",
@@ -6531,7 +6594,8 @@
       "maintainerVerified": false,
       "flags": [
         "inactive"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "kind",
@@ -6617,7 +6681,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "kitty",
@@ -6709,7 +6774,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "knope",
@@ -6796,7 +6862,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "lerna",
@@ -6875,7 +6942,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "lfs-test-server",
@@ -6952,7 +7020,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "lfsx",
@@ -7046,7 +7115,8 @@
         }
       ],
       "maintainerVerified": true,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "litestar",
@@ -7141,7 +7211,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "locust",
@@ -7232,7 +7303,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "logstash",
@@ -7312,7 +7384,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "lsd",
@@ -7398,7 +7471,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "luxon",
@@ -7447,7 +7521,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "matomo",
@@ -7536,7 +7611,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "mattermost",
@@ -7617,7 +7693,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "unknown"
     },
     {
       "slug": "meilisearch",
@@ -7717,7 +7794,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "minestom",
@@ -7804,7 +7882,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "minikube",
@@ -7884,7 +7963,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "minio",
@@ -7972,7 +8052,8 @@
       "maintainerVerified": false,
       "flags": [
         "archived"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "moment",
@@ -8024,7 +8105,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "mongodb",
@@ -8066,7 +8148,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "source-available"
     },
     {
       "slug": "moon",
@@ -8162,7 +8245,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "mypy",
@@ -8205,7 +8289,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "neovim",
@@ -8292,7 +8377,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "nextcloud",
@@ -8386,7 +8472,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "nginx",
@@ -8475,7 +8562,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "nodejs",
@@ -8558,7 +8646,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "npm",
@@ -8638,7 +8727,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "nx",
@@ -8735,7 +8825,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "oh-my-posh",
@@ -8832,7 +8923,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "onedev",
@@ -8921,7 +9013,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "openbao",
@@ -9004,7 +9097,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "opensearch",
@@ -9090,7 +9184,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "opentofu",
@@ -9169,7 +9264,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "oxc",
@@ -9256,7 +9352,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "paper",
@@ -9304,7 +9401,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "parcel",
@@ -9395,7 +9493,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pdm",
@@ -9482,7 +9581,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pip",
@@ -9523,7 +9623,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "plausible",
@@ -9623,7 +9724,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "playwright",
@@ -9718,7 +9820,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pnpm",
@@ -9806,7 +9909,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "podman",
@@ -9891,7 +9995,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "poetry",
@@ -9970,7 +10075,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "powerlevel10k",
@@ -10045,7 +10151,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "prettier",
@@ -10137,7 +10244,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "prisma",
@@ -10231,7 +10339,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "prometheus",
@@ -10312,7 +10421,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pulumi",
@@ -10410,7 +10520,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pumpkin",
@@ -10486,7 +10597,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "purpur",
@@ -10538,7 +10650,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pylint",
@@ -10619,7 +10732,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "pyright",
@@ -10698,7 +10812,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "redis",
@@ -10792,7 +10907,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "redpanda",
@@ -10887,7 +11003,8 @@
       "maintainerVerified": false,
       "flags": [
         "no-license"
-      ]
+      ],
+      "terms": "source-available"
     },
     {
       "slug": "release-please",
@@ -10966,7 +11083,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "release-plz",
@@ -11050,7 +11168,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "requests",
@@ -11132,7 +11251,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ripgrep",
@@ -11222,7 +11342,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "rocketchat",
@@ -11313,7 +11434,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open-core"
     },
     {
       "slug": "roxycloud",
@@ -11403,7 +11525,8 @@
         }
       ],
       "maintainerVerified": true,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "rspack",
@@ -11498,7 +11621,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "rudolfs",
@@ -11547,7 +11671,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ruff",
@@ -11648,7 +11773,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "rustfs",
@@ -11740,7 +11866,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "seaweedfs",
@@ -11837,7 +11964,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "selenium",
@@ -11919,7 +12047,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "semantic-release",
@@ -12005,7 +12134,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "starlight",
@@ -12090,7 +12220,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "starship",
@@ -12182,7 +12313,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "steelmc",
@@ -12261,7 +12393,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "terraform",
@@ -12340,7 +12473,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "source-available"
     },
     {
       "slug": "the-silver-searcher",
@@ -12386,7 +12520,8 @@
       "maintainerVerified": false,
       "flags": [
         "inactive"
-      ]
+      ],
+      "terms": "open"
     },
     {
       "slug": "tmux",
@@ -12459,7 +12594,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "traefik",
@@ -12553,7 +12689,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "turborepo",
@@ -12638,7 +12775,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "ty",
@@ -12717,7 +12855,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "typesense",
@@ -12817,7 +12956,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "umami",
@@ -12906,7 +13046,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "uptime-kuma",
@@ -12992,7 +13133,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "uv",
@@ -13081,7 +13223,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "valkey",
@@ -13169,7 +13312,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vault",
@@ -13246,7 +13390,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "source-available"
     },
     {
       "slug": "vaultwarden",
@@ -13332,7 +13477,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vector",
@@ -13430,7 +13576,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "victoriametrics",
@@ -13525,7 +13672,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vim",
@@ -13567,7 +13715,8 @@
       },
       "releases": [],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vite",
@@ -13652,7 +13801,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vitepress",
@@ -13738,7 +13888,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vitest",
@@ -13821,7 +13972,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vscode",
@@ -13900,7 +14052,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "vscodium",
@@ -13985,7 +14138,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "webpack",
@@ -14075,7 +14229,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "wezterm",
@@ -14161,7 +14316,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "woodpecker",
@@ -14248,7 +14404,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "xh",
@@ -14334,7 +14491,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "yarn",
@@ -14418,7 +14576,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "zed",
@@ -14502,7 +14661,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "zellij",
@@ -14585,7 +14745,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "zola",
@@ -14676,7 +14837,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     },
     {
       "slug": "zulip",
@@ -14768,7 +14930,8 @@
         }
       ],
       "maintainerVerified": false,
-      "flags": []
+      "flags": [],
+      "terms": "open"
     }
   ]
 }

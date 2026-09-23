@@ -1,19 +1,28 @@
-import type { EnrichedTool } from "../../../scripts/lib/types.ts";
+import type { EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
 
 const SITE = "https://awesome-alternatives.com";
 
+const TERMS: Record<Terms, string> = {
+  open: "open source",
+  "open-core": "open core, part of it is under a licence that is not open source",
+  "source-available": "source available, the licence restricts how it may be used",
+  unknown: "not checked, GitHub could not match the licence",
+};
+
 export interface Surroundings {
   categoryName: string;
+  selfHost: boolean;
   nameOf: (slug: string) => string;
   replacedBy: { slug: string; name: string }[];
 }
 
-function facts(tool: EnrichedTool, categoryName: string): string[] {
+function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): string[] {
   const { repo, release } = tool;
   const lines = [
     `- Category: ${categoryName}`,
     `- Language: ${repo.language ?? "not detected"}`,
     `- Licence: ${repo.license ?? "not detected"}`,
+    `- Terms: ${TERMS[tool.terms]}`,
     `- Stars: ${repo.stars}`,
     `- Forks: ${repo.forks}`,
     `- Last push: ${repo.pushedAt.slice(0, 10)}`,
@@ -23,6 +32,7 @@ function facts(tool: EnrichedTool, categoryName: string): string[] {
       ? `- Latest release: ${release.tag}${release.signed ? ", signed" : ", unsigned"}, ${release.url}`
       : "- Latest release: none",
   );
+  if (selfHost) lines.push("- Self-hosted: you can run it on your own machines");
   if (repo.archived) lines.push("- Archived: the repository no longer receives changes");
   if (tool.maintainerVerified) lines.push("- Verified: its maintainers vouch for this entry");
   if (tool.flags.length > 0) lines.push(`- Warnings: ${tool.flags.join(", ")}`);
@@ -53,7 +63,7 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     out.push("");
   }
 
-  out.push("## Facts from GitHub", "", ...facts(tool, around.categoryName), "");
+  out.push("## Facts from GitHub", "", ...facts(tool, around.categoryName, around.selfHost), "");
 
   if (tool.affiliation) out.push("## Affiliation", "", tool.affiliation, "");
 

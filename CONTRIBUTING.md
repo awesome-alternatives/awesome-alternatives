@@ -16,7 +16,9 @@ replaces:
 
 - `repository` is the upstream GitHub repository, not a fork or a mirror.
 - `category` must be one of the keys in [`data/categories.yaml`](data/categories.yaml). A new
-  category is its own pull request, with at least two tools that belong in it.
+  category is its own pull request, with at least two tools that belong in it. Mark it
+  `selfHost: true` when its tools are services people would otherwise pay someone to run, such as
+  a git forge or a team chat, and leave it out for tools that run on your own machine anyway.
 - `replaces` points at other entries by slug. If the tool it replaces is not listed yet, add that
   one in the same pull request, with no `replaces` of its own.
 - `fit` is `drop-in` when the tool accepts the original's configuration or interface unchanged,
@@ -24,6 +26,18 @@ replaces:
   `note` to say which part.
 - `affiliation` is required if you maintain, work on, or are paid by the tool. Listing your own
   project is welcome; not saying so is grounds for removal.
+- `terms` says what the licence lets people do, and is usually left out. When GitHub detects an
+  open source licence such as MIT or Apache, the entry reads as open on its own. Set it only when
+  that reading would be wrong or missing, and base it on the licence text in the repository, not
+  on memory:
+  - `open-core` when part of the code, typically an `ee/` directory, is under a licence that is
+    not open source, even if the rest is MIT;
+  - `source-available` when the licence restricts use, as the Business Source License, the SSPL
+    and the Elastic License do;
+  - `open` when the licence is open but GitHub reports it as `Other`.
+
+  An entry GitHub cannot classify and nobody has checked shows as "not checked", which is better
+  than a guess.
 
 Do not add stars, versions, licences or descriptions. The schema rejects them: those come from
 GitHub, so they cannot drift or be inflated.

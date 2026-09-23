@@ -5,3 +5,4 @@ replaces:
   - tool: paper
     fit: partial
     note: Implements the Bukkit API from scratch instead of patching Mojang's server.
+terms: open

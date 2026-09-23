@@ -37,6 +37,7 @@ function tool(slug: string, addedAt: string, description: string | null = null, 
     releases: [],
     maintainerVerified: false,
     flags: [],
+    terms: "open",
   };
 }
 

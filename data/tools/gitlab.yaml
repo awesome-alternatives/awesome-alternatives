@@ -1,3 +1,4 @@
 name: GitLab
 repository: https://github.com/gitlabhq/gitlabhq
 category: git-forge
+terms: open-core

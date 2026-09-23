@@ -1,9 +1,10 @@
-import type { Fit, ToolView } from "./types.ts";
+import type { Fit, Terms, ToolView } from "./types.ts";
 
 export interface ListFilters {
   language: string | null;
   license: string | null;
   fit: Fit | null;
+  terms: Terms | null;
 }
 
 export interface Facet<T extends string = string> {
@@ -36,7 +37,8 @@ export function narrow<T extends ToolView>(tools: readonly T[], target: string, 
     (t) =>
       (f.language === null || t.repo.language === f.language) &&
       (f.license === null || t.repo.license === f.license) &&
-      (f.fit === null || fitFor(t, target) === f.fit),
+      (f.fit === null || fitFor(t, target) === f.fit) &&
+      (f.terms === null || t.terms === f.terms),
   );
 }
 

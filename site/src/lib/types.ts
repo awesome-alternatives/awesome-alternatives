@@ -1,6 +1,6 @@
-import type { EnrichedTool, Fit, RepoFacts } from "../../../scripts/lib/types.ts";
+import type { EnrichedTool, Fit, RepoFacts, Terms } from "../../../scripts/lib/types.ts";
 
-export type { Fit };
+export type { Fit, Terms };
 
 export type ToolView = Omit<EnrichedTool, "repo" | "releases" | "addedAt"> & {
   repo: Pick<

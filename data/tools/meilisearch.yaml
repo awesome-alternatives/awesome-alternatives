@@ -5,3 +5,4 @@ replaces:
   - tool: elasticsearch
     fit: partial
     note: Search-as-you-type for apps and sites, not log analytics.
+terms: open-core

@@ -23,6 +23,12 @@ export const islands: Islands = {
     full: "Vollwertiger Ersatz",
     partial: "Teilweise",
   },
+  terms: {
+    open: "Open Source",
+    "open-core": "Open Core",
+    "source-available": "Quelltext verfügbar",
+    unknown: "Nicht geprüft",
+  },
   flag: {
     moved: "Repository verschoben",
     "no-license": "Keine Lizenz erkannt",
@@ -91,6 +97,7 @@ export const islands: Islands = {
     language: "Sprache",
     license: "Lizenz",
     fit: "Ersatzgrad",
+    terms: "Bedingungen",
     any: "Alle",
     total: { one: "1 Alternative", other: "{n} Alternativen" },
     narrowed: "{shown} von {total}",

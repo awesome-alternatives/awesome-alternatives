@@ -34,12 +34,18 @@ container-engine:
 key-value-store:
   name: In-memory key-value stores
   description: Caches and data structure servers speaking the Redis protocol or close to it.
+  selfHost: true
+
 search-engine:
   name: Search engines
   description: Full-text search servers.
+  selfHost: true
+
 metrics:
   name: Metrics and monitoring
   description: Collect, store and query time series.
+  selfHost: true
+
 http-client:
   name: Command-line HTTP clients
   description: Send HTTP requests from a terminal.
@@ -61,12 +67,18 @@ terminal-multiplexer:
 document-database:
   name: Document databases
   description: Databases storing JSON-like documents.
+  selfHost: true
+
 message-streaming:
   name: Event streaming
   description: Durable, partitioned logs for events and messages.
+  selfHost: true
+
 reverse-proxy:
   name: Web servers and reverse proxies
   description: Serve sites, terminate TLS and route traffic to services.
+  selfHost: true
+
 documentation-site:
   name: Documentation site generators
   description: Turn Markdown into a searchable documentation site.
@@ -85,27 +97,43 @@ typescript-orm:
 object-storage:
   name: Object storage
   description: Self-hosted servers speaking the S3 API.
+  selfHost: true
+
 ci-server:
   name: CI servers
   description: Self-hosted servers that run build and deployment pipelines.
+  selfHost: true
+
 git-forge:
   name: Git forges
   description: Self-hosted repositories, code review and issues.
+  selfHost: true
+
 password-manager-server:
   name: Password manager servers
   description: Self-hosted back ends for password vaults.
+  selfHost: true
+
 web-analytics:
   name: Web analytics
   description: Self-hostable, privacy-friendly site analytics.
+  selfHost: true
+
 uptime-monitoring:
   name: Uptime monitoring
   description: Check that services answer, alert when they do not, and publish a status page.
+  selfHost: true
+
 log-pipeline:
   name: Log pipelines
   description: Collect, transform and ship logs and events.
+  selfHost: true
+
 team-chat:
   name: Team chat
   description: Self-hosted messaging for teams.
+  selfHost: true
+
 terminal-emulator:
   name: Terminal emulators
   description: Desktop terminal applications.
@@ -142,12 +170,19 @@ local-kubernetes:
 secrets-manager:
   name: Secrets managers
   description: Store, rotate and hand out secrets to applications.
+  selfHost: true
+
 git-lfs-server:
   name: Git LFS servers
   description: Serve Git LFS objects for repositories hosted anywhere.
+  selfHost: true
+
 minecraft-server:
   name: Minecraft servers
   description: "Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch."
+  selfHost: true
+
 file-sync:
   name: File sync and share
   description: Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client.
+  selfHost: true
