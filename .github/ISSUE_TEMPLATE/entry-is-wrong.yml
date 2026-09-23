@@ -1,0 +1,33 @@
+name: An entry is wrong
+description: A listed tool moved, died, or is described as replacing something it does not.
+title: "Fix: "
+labels: [correction]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Which entry
+      description: The slug, which is the file name under data/tools and the last part of its page URL.
+      placeholder: semantic-release
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong
+      options:
+        - The repository moved or was renamed
+        - The project is dead or archived
+        - It does not replace what the entry says
+        - The fit is wrong
+        - The category is wrong
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What it should say instead
+      description: Figures such as stars, licence and last push come from GitHub every night and correct themselves, so no need to report those.
+    validations:
+      required: true

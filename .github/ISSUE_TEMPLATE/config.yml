@@ -1,1 +1,8 @@
 blank_issues_enabled: true
+contact_links:
+  - name: How to add a tool yourself
+    url: https://github.com/awesome-alternatives/awesome-alternatives/blob/main/CONTRIBUTING.md
+    about: The YAML entry, what CI checks, and how a maintainer verifies a tool they own.
+  - name: Browse what is already listed
+    url: https://awesome-alternatives.com/tools/
+    about: Check the tool is not listed under another name before proposing it.

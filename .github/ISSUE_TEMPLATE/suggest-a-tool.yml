@@ -7,6 +7,7 @@ body:
     id: repository
     attributes:
       label: GitHub repository
+      description: The upstream repository, not a fork or a mirror.
       placeholder: https://github.com/owner/name
     validations:
       required: true
@@ -14,6 +15,7 @@ body:
     id: replaces
     attributes:
       label: What does it replace?
+      description: A tool already listed, or one you want added alongside it.
       placeholder: semantic-release
     validations:
       required: true
@@ -27,6 +29,23 @@ body:
         - partial, part of the job
     validations:
       required: true
+  - type: input
+    id: note
+    attributes:
+      label: Which part, in one line
+      description: Required when the fit is partial, so the entry can say what it does not cover.
+      placeholder: Cargo workspaces only.
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: One of the keys in data/categories.yaml. Leave empty if none fits and say so below.
+      placeholder: release-automation
+  - type: textarea
+    id: anything
+    attributes:
+      label: Anything else
+      description: Do not paste stars, licence or description. Those are read from GitHub and the schema rejects them.
   - type: checkboxes
     id: affiliation
     attributes:
