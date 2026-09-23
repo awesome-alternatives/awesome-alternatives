@@ -13,7 +13,8 @@ COPY site/ ./
 ARG PUBLIC_API_URL=/api
 RUN pnpm build \
  && find dist -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.svg' \
-      -o -name '*.json' -o -name '*.xml' -o -name '*.txt' -o -name '*.webmanifest' \) \
+      -o -name '*.json' -o -name '*.xml' -o -name '*.txt' -o -name '*.md' \
+      -o -name '*.webmanifest' \) \
       -exec gzip -9 -k {} +
 
 FROM nginxinc/nginx-unprivileged:1-alpine
