@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.38.0] - 2026-09-23
+
+### Features
+
+- feat(repo): give the add-a-tool path a skeleton and the forms the fields review needs (#116)
+
 ## [0.37.0] - 2026-09-23
 
 ### Features
