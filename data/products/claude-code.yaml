@@ -1,0 +1,5 @@
+name: Claude Code
+homepage: https://www.anthropic.com/claude-code
+vendor: Anthropic
+category: coding-agent
+description: Anthropic's coding agent, which reads a codebase, edits files and runs commands from the terminal or the editor.

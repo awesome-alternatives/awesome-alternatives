@@ -1,3 +1,7 @@
 name: Matomo
 repository: https://github.com/matomo-org/matomo
 category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: full
+    note: Close to Google Analytics in scope, on your own server, with a plugin to import past Google Analytics data.

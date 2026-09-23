@@ -1,0 +1,10 @@
+name: Cline
+repository: https://github.com/cline/cline
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: The agent lives in VS Code rather than the terminal, and works with any model provider.
+  - tool: github-copilot
+    fit: partial
+    note: Agent and chat in the editor, without inline completions.

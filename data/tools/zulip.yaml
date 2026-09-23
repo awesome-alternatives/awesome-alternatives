@@ -5,3 +5,6 @@ replaces:
   - tool: mattermost
     fit: full
     note: Conversations split into topics inside each channel.
+  - tool: slack
+    fit: full
+    note: Conversations split into topics inside each channel, with an importer for Slack exports.

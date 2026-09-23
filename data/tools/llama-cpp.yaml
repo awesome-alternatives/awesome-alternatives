@@ -1,0 +1,10 @@
+name: llama.cpp
+repository: https://github.com/ggml-org/llama.cpp
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Runs open-weight models on CPU or GPU, with a built-in server and a minimal web chat.
+  - tool: claude
+    fit: partial
+    note: Runs open-weight models on CPU or GPU, with a built-in server and a minimal web chat.

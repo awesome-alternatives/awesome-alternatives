@@ -1,0 +1,8 @@
+name: Tabby
+repository: https://github.com/TabbyML/tabby
+category: code-assistant
+terms: open-core
+replaces:
+  - tool: github-copilot
+    fit: full
+    note: Self-hosted completion and chat server on your own GPU, with editor extensions.

@@ -151,6 +151,8 @@ export const en = {
     contextTo: "to",
     archived: "archived",
     aboutLink: "About {name} →",
+    closed: "A closed product from {vendor}.",
+    productSite: "{name} website ↗",
   },
 
   tool: {

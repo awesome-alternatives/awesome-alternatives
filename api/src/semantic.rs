@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use crate::catalog::Tool;
+use crate::catalog::{Product, Tool};
 use crate::embedding::{EmbedError, Embedder, Thresholds, Vector, similarity};
 use crate::vocabulary::Vocabulary;
 
@@ -14,6 +14,7 @@ impl Index {
     pub fn build(
         embedder: &dyn Embedder,
         tools: &[Tool],
+        products: &[Product],
         vocabulary: &Vocabulary,
     ) -> Result<Self, EmbedError> {
         let target_slugs: Vec<&String> = vocabulary.targets.keys().collect();
@@ -21,10 +22,14 @@ impl Index {
             .targets
             .iter()
             .map(|(slug, name)| {
-                tools
-                    .iter()
-                    .find(|t| &t.slug == slug)
-                    .map_or_else(|| name.clone(), describe)
+                let tool = tools.iter().find(|t| &t.slug == slug).map(describe);
+                let product = || {
+                    products
+                        .iter()
+                        .find(|p| &p.slug == slug)
+                        .map(describe_product)
+                };
+                tool.or_else(product).unwrap_or_else(|| name.clone())
             })
             .collect();
         texts.extend(tools.iter().map(describe));
@@ -74,6 +79,11 @@ fn describe(tool: &Tool) -> String {
     }
 }
 
+fn describe_product(product: &Product) -> String {
+    let category = product.category.replace('-', " ");
+    format!("{}: {} ({category})", product.name, product.description)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -110,7 +120,7 @@ mod tests {
 
     fn index() -> Index {
         let tools = catalog();
-        Index::build(&Words, &tools, &Vocabulary::of(&tools)).unwrap()
+        Index::build(&Words, &tools, &[], &Vocabulary::of(&tools, &[])).unwrap()
     }
 
     fn query(text: &str) -> Vector {
@@ -148,6 +158,6 @@ mod tests {
     #[test]
     fn a_failing_model_fails_the_build_instead_of_indexing_zeros() {
         let tools = catalog();
-        assert!(Index::build(&Broken, &tools, &Vocabulary::of(&tools)).is_err());
+        assert!(Index::build(&Broken, &tools, &[], &Vocabulary::of(&tools, &[])).is_err());
     }
 }

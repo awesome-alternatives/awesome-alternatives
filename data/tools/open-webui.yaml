@@ -1,0 +1,11 @@
+name: Open WebUI
+repository: https://github.com/open-webui/open-webui
+category: chat-interface
+terms: source-available
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: The chat app, self-hosted, in front of Ollama or any OpenAI-compatible API. The model comes from elsewhere.
+  - tool: claude
+    fit: partial
+    note: The chat app, self-hosted, in front of Ollama or any OpenAI-compatible API. The model comes from elsewhere.

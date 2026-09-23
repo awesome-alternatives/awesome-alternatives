@@ -153,6 +153,8 @@ export const de: Messages = {
     contextTo: "zu",
     archived: "archiviert",
     aboutLink: "Über {name} →",
+    closed: "Ein geschlossenes Produkt von {vendor}.",
+    productSite: "Website von {name} ↗",
   },
 
   tool: {

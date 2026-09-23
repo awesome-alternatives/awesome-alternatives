@@ -133,6 +133,7 @@ mod tests {
     fn app(fake: &Fake) -> Router {
         let catalog = Catalog {
             revision: "test".into(),
+            products: vec![],
             tools: vec![
                 tool("good", "Rust", "MIT", &[], 1),
                 tool("unscored", "Rust", "MIT", &[], 1),

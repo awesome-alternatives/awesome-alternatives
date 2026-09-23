@@ -49,6 +49,14 @@ const comparable = comparableWith(pairs, target.slug);
       </p>
     )
   }
+  {
+    target.product && (
+      <p class="lede">
+        {target.product.description} {format(m.target.closed, { vendor: target.product.vendor })}{" "}
+        <a href={target.product.homepage}>{format(m.target.productSite, { name: target.name })}</a>
+      </p>
+    )
+  }
   <AlternativesList
     client:load
     locale={locale}

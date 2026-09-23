@@ -104,6 +104,26 @@ mod tests {
     }
 
     #[test]
+    fn the_longer_of_two_overlapping_product_names_wins() {
+        let vocabulary = Vocabulary {
+            targets: BTreeMap::from([
+                ("claude".into(), "Claude".into()),
+                ("claude-code".into(), "Claude Code".into()),
+            ]),
+            ..Vocabulary::default()
+        };
+        let pick = |q: &str| interpret(q, &vocabulary).replaces;
+        assert_eq!(
+            pick("open source alternative to Claude Code").as_deref(),
+            Some("claude-code")
+        );
+        assert_eq!(
+            pick("something like claude but self-hosted").as_deref(),
+            Some("claude")
+        );
+    }
+
+    #[test]
     fn drop_in_only_counts_with_a_target() {
         assert!(interpret("drop-in replacement for release-please", &vocabulary()).drop_in);
         assert!(!interpret("a drop-in tool", &vocabulary()).drop_in);

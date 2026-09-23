@@ -6,7 +6,7 @@ import { parse } from "yaml";
 import type { Locale } from "../i18n/index.ts";
 import { pathFor } from "../i18n/index.ts";
 
-import type { Category, EnrichedTool, OwnerFacts } from "../../../scripts/lib/types.ts";
+import type { Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
 import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
@@ -19,14 +19,17 @@ export interface Target {
   slug: string;
   name: string;
   listed: EnrichedTool | null;
+  product: ListedProduct | null;
   alternatives: EnrichedTool[];
 }
 
-const catalog: { owners: Record<string, OwnerFacts>; tools: EnrichedTool[] } = JSON.parse(
+const catalog: { owners: Record<string, OwnerFacts>; tools: EnrichedTool[]; products: ListedProduct[] } = JSON.parse(
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
 );
 
 export const tools: EnrichedTool[] = catalog.tools;
+
+export const products: ListedProduct[] = catalog.products;
 
 export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
@@ -38,15 +41,23 @@ export function toolBySlug(slug: string): EnrichedTool | null {
   return tools.find((t) => t.slug === slug) ?? null;
 }
 
+export function productBySlug(slug: string): ListedProduct | null {
+  return products.find((p) => p.slug === slug) ?? null;
+}
+
+export function nameOf(slug: string): string {
+  return toolBySlug(slug)?.name ?? productBySlug(slug)?.name ?? slug;
+}
+
 export function targets(): Target[] {
   const slugs = new Set(tools.flatMap((t) => t.replaces.map((r) => r.tool)));
   return [...slugs]
     .map((slug) => {
-      const listed = toolBySlug(slug);
       return {
         slug,
-        name: listed?.name ?? slug,
-        listed,
+        name: nameOf(slug),
+        listed: toolBySlug(slug),
+        product: productBySlug(slug),
         alternatives: alternativesTo(tools, slug),
       };
     })
@@ -80,7 +91,7 @@ export function categoryName(key: string): string {
 
 export function targetItems(): GridItem[] {
   return targets().map((target) => {
-    const key = target.listed?.category ?? target.alternatives[0]?.category;
+    const key = target.listed?.category ?? target.product?.category ?? target.alternatives[0]?.category;
     return {
       href: `/alternatives/${target.slug}/`,
       name: target.name,

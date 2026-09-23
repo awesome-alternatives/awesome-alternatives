@@ -1,0 +1,10 @@
+name: AnythingLLM
+repository: https://github.com/Mintplex-Labs/anything-llm
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop or self-hosted app built around chatting with your own documents, with any model provider.
+  - tool: claude
+    fit: partial
+    note: Desktop or self-hosted app built around chatting with your own documents, with any model provider.

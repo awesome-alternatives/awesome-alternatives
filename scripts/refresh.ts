@@ -11,7 +11,7 @@ import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 import { termsOf } from "./lib/terms.ts";
 import { trendOf } from "./lib/trending.ts";
-import { isFlagCode, type EnrichedTool, type OwnerFacts } from "./lib/types.ts";
+import { isFlagCode, type EnrichedTool, type ListedProduct, type OwnerFacts } from "./lib/types.ts";
 
 const root = process.cwd();
 const { catalog, findings } = await loadCatalog(root);
@@ -67,10 +67,14 @@ fetched.forEach((owner, i) => {
   else console.error(`${logins[i]}: GitHub reports no such account, listed without an owner`);
 });
 
-await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), owners, tools }, null, 2)}\n`);
+const products: ListedProduct[] = catalog.products
+  .map(({ file: _, ...product }) => product)
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+
+await writeFile(catalogPath, `${JSON.stringify({ stats: statsOf(tools), owners, tools, products }, null, 2)}\n`);
 
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");
-await writeFile(readmePath, spliceReadme(readme, renderCatalog(tools, catalog.categories)));
+await writeFile(readmePath, spliceReadme(readme, renderCatalog(tools, products, catalog.categories)));
 
 console.log(`refreshed ${tools.length} tools`);

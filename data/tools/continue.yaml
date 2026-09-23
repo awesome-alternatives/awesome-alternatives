@@ -1,0 +1,7 @@
+name: Continue
+repository: https://github.com/continuedev/continue
+category: code-assistant
+replaces:
+  - tool: github-copilot
+    fit: full
+    note: Completions, chat and edits in VS Code and JetBrains IDEs, with a hosted or a local model.

@@ -1,0 +1,11 @@
+name: Jan
+repository: https://github.com/janhq/jan
+category: chat-interface
+terms: open
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop app that downloads open models and runs them offline, or calls a hosted API.
+  - tool: claude
+    fit: partial
+    note: Desktop app that downloads open models and runs them offline, or calls a hosted API.

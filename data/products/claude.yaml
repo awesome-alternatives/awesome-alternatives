@@ -1,0 +1,5 @@
+name: Claude
+homepage: https://www.anthropic.com/claude
+vendor: Anthropic
+category: chat-interface
+description: Anthropic's AI assistant, used through its web, desktop and mobile apps.

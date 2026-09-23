@@ -188,6 +188,7 @@ mod tests {
         cliff.repo.description = Some("Highly customizable changelog generator".into());
         Catalog {
             revision: "rev-one".into(),
+            products: vec![],
             tools: vec![semantic_release, knope, cliff],
         }
     }

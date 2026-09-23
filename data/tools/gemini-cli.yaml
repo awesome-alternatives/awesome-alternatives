@@ -1,0 +1,7 @@
+name: Gemini CLI
+repository: https://github.com/google-gemini/gemini-cli
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: full
+    note: Google's terminal agent, open source and built around Gemini models.

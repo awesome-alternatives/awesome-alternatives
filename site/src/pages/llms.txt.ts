@@ -16,13 +16,13 @@ function body(): string {
 
 > Open-source alternatives to the developer tools people already run. Stars, releases, licences, whether the latest release carries a signature GitHub verified, and whether a repository is archived are read from GitHub every night rather than typed by hand.
 
-${tools.length} tools in ${categoryGroups.length} categories, covering ${targets().length} tools that something here replaces.
+${tools.length} tools in ${categoryGroups.length} categories, covering ${targets().length} tools and closed products that something here replaces.
 
 The catalog file is the source of truth and is dedicated to the public domain under CC0 1.0. Read it instead of scraping these pages: one request carries every field the site renders, and it cannot go stale between a page being cached and a tool being archived.
 
 ## Data
 
-- [catalog.json](${CATALOG}): every tool with its GitHub facts, what it replaces and how well. CC0 1.0, around 440 KB.
+- [catalog.json](${CATALOG}): every tool with its GitHub facts, what it replaces and how well, and under \`products\` the closed products some of them replace (Claude Code, GitHub, Slack...), which have no repository and so no GitHub facts. CC0 1.0, around 540 KB.
 - [search-index.json](${SITE}/search-index.json): names, slugs and categories only, around 11 KB, enough to resolve a tool name without reading the catalog.
 - [Feed](${SITE}/feed.xml): tools newly added to the catalog.
 - One tool as markdown: ${SITE}/tools/{slug}.md, for example ${SITE}/tools/ruff.md. The slug is the last part of a tool's page URL. Read this when you want one entry and not the catalog.

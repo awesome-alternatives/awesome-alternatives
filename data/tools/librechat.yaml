@@ -1,0 +1,10 @@
+name: LibreChat
+repository: https://github.com/danny-avila/LibreChat
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Self-hosted chat app for Anthropic, OpenAI, Google and local models, with agents and file uploads.
+  - tool: claude
+    fit: partial
+    note: Self-hosted chat app for Anthropic, OpenAI, Google and local models, with agents and file uploads.
