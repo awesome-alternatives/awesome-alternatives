@@ -5,3 +5,4 @@ replaces:
   - tool: iterm2
     fit: full
     note: Cross-platform, built-in multiplexing, configured in Lua.
+terms: open

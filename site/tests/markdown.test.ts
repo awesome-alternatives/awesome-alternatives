@@ -6,6 +6,7 @@ import { toolMarkdown, type Surroundings } from "../src/lib/markdown.ts";
 
 const around: Surroundings = {
   categoryName: "Python linting and formatting",
+  selfHost: false,
   nameOf: (slug) => ({ flake8: "Flake8", black: "Black" })[slug] ?? slug,
   replacedBy: [],
 };
@@ -22,6 +23,7 @@ function tool(over: Partial<EnrichedTool> = {}, repo: Partial<EnrichedTool["repo
     addedAt: "2026-01-01",
     maintainerVerified: false,
     flags: [],
+    terms: "open",
     release: null,
     releases: [],
     ...over,
@@ -98,4 +100,14 @@ test("verification and warnings surface only when they are true", () => {
 
 test("the last push is a date, not a timestamp nobody asked for", () => {
   assert.match(toolMarkdown(tool(), around), /- Last push: 2026-09-23\n/);
+});
+
+test("terms are spelled out, since a bare label means nothing to a reader who has not seen the site", () => {
+  assert.match(toolMarkdown(tool({ terms: "open-core" }), around), /- Terms: open core, part of it is under a licence/);
+  assert.match(toolMarkdown(tool({ terms: "unknown" }), around), /- Terms: not checked/);
+});
+
+test("self-hosting is claimed only for a category of things you run", () => {
+  assert.match(toolMarkdown(tool(), { ...around, selfHost: true }), /- Self-hosted: /);
+  assert.ok(!toolMarkdown(tool(), around).includes("- Self-hosted:"));
 });

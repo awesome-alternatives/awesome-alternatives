@@ -1,3 +1,4 @@
 name: Flake8
 repository: https://github.com/PyCQA/flake8
 category: python-lint-format
+terms: open

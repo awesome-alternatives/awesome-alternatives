@@ -5,3 +5,4 @@ replaces:
   - tool: kafka
     fit: drop-in
     note: Kafka API compatible, without ZooKeeper or a JVM.
+terms: source-available

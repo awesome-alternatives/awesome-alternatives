@@ -5,3 +5,4 @@ replaces:
   - tool: vscode
     fit: full
     note: Native editor with multiplayer editing built in.
+terms: open

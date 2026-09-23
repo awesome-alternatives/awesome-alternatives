@@ -16,7 +16,7 @@ interface Props {
   comparable: string[];
 }
 
-const NO_FILTERS: ListFilters = { language: null, license: null, fit: null };
+const NO_FILTERS: ListFilters = { language: null, license: null, fit: null, terms: null };
 
 export default function AlternativesList({ locale, strings, tools, target, targetName, comparable }: Props) {
   const [filters, setFilters] = useState(NO_FILTERS);
@@ -48,6 +48,14 @@ export default function AlternativesList({ locale, strings, tools, target, targe
           selected={filters.fit}
           describe={(fit) => strings.fit[fit]}
           onSelect={(fit) => set({ fit })}
+        />
+        <FacetGroup
+          strings={copy}
+          label={copy.terms}
+          facets={facets(tools.map((t) => t.terms))}
+          selected={filters.terms}
+          describe={(terms) => strings.terms[terms]}
+          onSelect={(terms) => set({ terms })}
         />
       </div>
       <p className="summary" aria-live="polite">

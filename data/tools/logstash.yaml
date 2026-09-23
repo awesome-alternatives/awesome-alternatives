@@ -1,3 +1,4 @@
 name: Logstash
 repository: https://github.com/elastic/logstash
 category: log-pipeline
+terms: open-core

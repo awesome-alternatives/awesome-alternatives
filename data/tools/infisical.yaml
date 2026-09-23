@@ -5,3 +5,4 @@ replaces:
   - tool: vault
     fit: partial
     note: Application secrets and environment sync, not a general PKI or encryption service.
+terms: open-core

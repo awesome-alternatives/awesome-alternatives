@@ -8,3 +8,4 @@ replaces:
   - tool: npm
     fit: full
     note: bun install reads package.json and writes its own lockfile.
+terms: open

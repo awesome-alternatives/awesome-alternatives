@@ -5,3 +5,4 @@ replaces:
   - tool: mattermost
     fit: full
     note: Channels, threads and federation, self-hosted.
+terms: open-core

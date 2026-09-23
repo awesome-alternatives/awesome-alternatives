@@ -133,6 +133,18 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
             <dt>{m.tool.lastPush}</dt>
             <dd>{day(repo.pushedAt)}</dd>
           </div>
+          <div class={category?.selfHost ? undefined : "full"}>
+            <dt>{m.tool.terms}</dt>
+            <dd>{m.islands.terms[tool.terms]}</dd>
+          </div>
+          {
+            category?.selfHost && (
+              <div>
+                <dt>{m.tool.selfHost}</dt>
+                <dd>{m.tool.selfHostYes}</dd>
+              </div>
+            )
+          }
         </dl>
 
         {

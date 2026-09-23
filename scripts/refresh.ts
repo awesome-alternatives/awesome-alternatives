@@ -9,6 +9,7 @@ import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
 import { statsOf } from "./lib/stats.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
+import { termsOf } from "./lib/terms.ts";
 import { trendOf } from "./lib/trending.ts";
 import { isFlagCode, type EnrichedTool, type OwnerFacts } from "./lib/types.ts";
 
@@ -51,6 +52,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     releases: await fetchReleases(gh, evidence.repo.fullName),
     maintainerVerified: evidence.maintainerVerified,
     flags,
+    terms: termsOf(tool.terms, evidence.repo.license),
   };
   return entry;
 });

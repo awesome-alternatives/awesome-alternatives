@@ -1,3 +1,4 @@
 name: Terraform
 repository: https://github.com/hashicorp/terraform
 category: infrastructure-as-code
+terms: source-available

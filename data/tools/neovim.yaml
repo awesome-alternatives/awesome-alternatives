@@ -5,3 +5,4 @@ replaces:
   - tool: vim
     fit: drop-in
     note: Reads most Vim configuration and plugins, adds Lua and a built-in LSP client.
+terms: open
