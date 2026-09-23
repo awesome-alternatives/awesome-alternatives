@@ -10,8 +10,8 @@ const nginx = readFileSync(new URL("../nginx.conf", import.meta.url), "utf8");
 const pair = (a: string, b: string) => ({ a: { slug: a }, b: { slug: b } });
 
 function locationPattern(): RegExp {
-  const match = nginx.match(/location ~ (\S+) \{/);
-  assert.ok(match, "nginx.conf has a regex location");
+  const match = nginx.match(/location ~ (\S*compare_pair\S*) \{/);
+  assert.ok(match, "nginx.conf has the comparison location");
   return new RegExp(match[1]);
 }
 
