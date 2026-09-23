@@ -103,6 +103,10 @@ export const islands: Islands = {
     narrowed: "{shown} sur {total}",
     emptyLead: "Aucun résultat. ",
     clear: "Effacer les filtres",
+    find: "Rechercher",
+    noMatch: "Aucune valeur ne correspond",
+    chosen: { one: "{n} sélectionné", other: "{n} sélectionnés" },
+    clearOne: "Effacer",
   },
   tabs: {
     label: "Détails de l'outil",

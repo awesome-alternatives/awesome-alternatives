@@ -107,6 +107,10 @@ export const islands = {
     narrowed: "{shown} of {total}",
     emptyLead: "Nothing matches. ",
     clear: "Clear the filters",
+    find: "Search",
+    noMatch: "No value matches",
+    chosen: { one: "{n} selected", other: "{n} selected" },
+    clearOne: "Clear",
   },
   tabs: {
     label: "Tool details",
