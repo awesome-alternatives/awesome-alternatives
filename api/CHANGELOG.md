@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.10.0] - 2026-09-23
+
+### Features
+
+- feat: page search results instead of claiming a count that is not on screen (#124)
+
 ## [0.9.0] - 2026-09-23
 
 ### Features

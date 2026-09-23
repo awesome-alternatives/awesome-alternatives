@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.43.0] - 2026-09-23
+
+### Features
+
+- feat: page search results instead of claiming a count that is not on screen (#124)
+
 ## [0.42.2] - 2026-09-23
 
 ### Bug Fixes
