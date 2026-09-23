@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.45.0] - 2026-09-23
+
+### Features
+
+- feat(site): pick several values per filter, with a searchable menu for long lists (#129)
+
 ## [0.44.1] - 2026-09-23
 
 ### Bug Fixes
