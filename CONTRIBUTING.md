@@ -45,6 +45,26 @@ GitHub, so they cannot drift or be inflated.
 By opening a pull request that adds or edits a file under `data/`, you dedicate that contribution to the
 public domain under [CC0 1.0](LICENSE-DATA), like the rest of the catalog.
 
+## Replacing a closed product
+
+Some products people want to leave have no public repository: GitHub, Slack, Claude Code. List one
+in `data/products/<slug>.yaml` so that tools can name it in `replaces`:
+
+```yaml
+name: Claude Code
+homepage: https://www.anthropic.com/claude-code
+vendor: Anthropic
+category: coding-agent
+description: Anthropic's coding agent, which reads a codebase, edits files and runs commands from the terminal or the editor.
+```
+
+- It exists only to be replaced: add it in the same pull request as the first tool that replaces
+  it, and CI rejects one that nothing replaces.
+- Its slug cannot also be a file in `data/tools`.
+- `description` says what the product is, in one factual sentence. No pricing, no opinions, no
+  comparison: the comparison lives in each tool's `fit` and `note`.
+- It gets an alternatives page and no tool page, since there are no GitHub facts to show.
+
 ## What CI checks
 
 Every pull request runs the checks below against GitHub for the entries it touches, and writes the
@@ -59,7 +79,9 @@ Blocking:
   alternative
 - the repository is at least 30 days old
 - the repository is not already listed under another slug
-- every `replaces` target exists, and a tool does not replace itself
+- every `replaces` target exists in `data/tools` or `data/products`, and a tool does not replace
+  itself
+- a closed product is replaced by at least one tool, and its slug is not also a tool
 
 Reviewed by a maintainer before merge, without blocking:
 
@@ -68,6 +90,7 @@ Reviewed by a maintainer before merge, without blocking:
 - there is no release and no tag
 - no push in the last year
 - 50 or more of the most recent stars arrived within 24 hours
+- a closed product's homepage does not answer, which often only means it turns scripts away
 
 The last one exists because bought stars arrive in bursts. A launch on Hacker News produces the
 same shape, which is why it is a warning and a person decides. GitHub does not let CI page through the

@@ -2,7 +2,7 @@ import type { APIContext, GetStaticPaths } from "astro";
 
 import type { EnrichedTool } from "../../../../scripts/lib/types.ts";
 import { badge } from "../../lib/badge.ts";
-import { toolBySlug, tools } from "../../lib/catalog.ts";
+import { nameOf, tools } from "../../lib/catalog.ts";
 import { alternativesTo } from "../../lib/filter.ts";
 
 // TODO(2026-10-22): #84 is a growth experiment. If verification has not moved by then, delete this
@@ -14,7 +14,7 @@ export function GET(context: APIContext) {
   const { tool } = context.props as { tool: EnrichedTool };
   const body = badge(
     tool,
-    (slug) => toolBySlug(slug)?.name ?? slug,
+    nameOf,
     alternativesTo(tools, tool.slug).length,
   );
   return new Response(JSON.stringify(body), {

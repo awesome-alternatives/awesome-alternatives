@@ -1,0 +1,10 @@
+name: Ollama
+repository: https://github.com/ollama/ollama
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Runs open-weight models on your own machine behind a local API. Pair it with a chat app for the interface.
+  - tool: claude
+    fit: partial
+    note: Runs open-weight models on your own machine behind a local API. Pair it with a chat app for the interface.

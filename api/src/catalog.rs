@@ -68,9 +68,21 @@ pub struct Tool {
     pub flags: Vec<String>,
 }
 
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct Product {
+    pub slug: String,
+    pub name: String,
+    pub homepage: String,
+    pub vendor: String,
+    pub category: String,
+    pub description: String,
+}
+
 #[derive(Debug, Deserialize)]
 pub struct Catalog {
     pub tools: Vec<Tool>,
+    #[serde(default)]
+    pub products: Vec<Product>,
     #[serde(skip)]
     pub revision: String,
 }
@@ -145,5 +157,6 @@ mod tests {
                 .iter()
                 .any(|t| t.replaces.iter().any(|r| r.tool == "semantic-release"))
         );
+        assert!(catalog.products.iter().any(|p| p.slug == "claude-code"));
     }
 }

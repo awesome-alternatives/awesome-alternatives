@@ -1,0 +1,7 @@
+name: Codex CLI
+repository: https://github.com/openai/codex
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: full
+    note: OpenAI's terminal agent, open source and built around OpenAI models.

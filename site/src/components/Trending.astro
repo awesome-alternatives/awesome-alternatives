@@ -2,7 +2,7 @@
 import { TREND_WINDOW_DAYS } from "../../../scripts/lib/trending.ts";
 import type { Locale } from "../i18n/index.ts";
 import { format, messages } from "../i18n/index.ts";
-import { toolBySlug, tools } from "../lib/catalog.ts";
+import { nameOf, tools } from "../lib/catalog.ts";
 import { trending } from "../lib/trending.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
@@ -15,7 +15,7 @@ const m = messages(locale);
 const ranked = trending(tools).map(({ tool, trend }) => ({
   tool,
   trend,
-  replaces: tool.replaces.map((r) => ({ slug: r.tool, name: toolBySlug(r.tool)?.name ?? r.tool })),
+  replaces: tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool) })),
 }));
 ---
 

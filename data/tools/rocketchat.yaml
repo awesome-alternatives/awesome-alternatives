@@ -5,4 +5,7 @@ replaces:
   - tool: mattermost
     fit: full
     note: Channels, threads and federation, self-hosted.
+  - tool: slack
+    fit: full
+    note: Channels, threads and federation on your own server, with an importer for Slack exports.
 terms: open-core

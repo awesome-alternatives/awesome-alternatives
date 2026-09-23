@@ -1,10 +1,14 @@
-import type { Category, EnrichedTool } from "./types.ts";
+import type { Category, EnrichedTool, ListedProduct } from "./types.ts";
 
 export const START = "<!-- catalog:start -->";
 export const END = "<!-- catalog:end -->";
 
-export function renderCatalog(tools: readonly EnrichedTool[], categories: ReadonlyMap<string, Category>): string {
-  const bySlug = new Map(tools.map((t) => [t.slug, t]));
+export function renderCatalog(
+  tools: readonly EnrichedTool[],
+  products: readonly ListedProduct[],
+  categories: ReadonlyMap<string, Category>,
+): string {
+  const bySlug = new Map<string, { name: string }>([...tools, ...products].map((t) => [t.slug, t]));
   const sections: string[] = [];
 
   for (const [key, category] of categories) {

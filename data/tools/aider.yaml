@@ -1,0 +1,7 @@
+name: Aider
+repository: https://github.com/Aider-AI/aider
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: Pair programming in the terminal that commits each edit to git, and runs commands only when asked.

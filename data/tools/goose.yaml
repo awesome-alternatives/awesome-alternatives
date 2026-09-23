@@ -1,0 +1,7 @@
+name: goose
+repository: https://github.com/aaif-goose/goose
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: full
+    note: Local agent with a terminal and a desktop app, any model provider, extended through MCP.

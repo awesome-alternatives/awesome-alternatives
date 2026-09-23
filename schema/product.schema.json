@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/product.schema.json",
+  "title": "Product",
+  "description": "A closed product with no public repository, listed only so that tools can say they replace it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "homepage", "vendor", "category", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "homepage": {
+      "type": "string",
+      "pattern": "^https://\\S+$"
+    },
+    "vendor": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  }
+}

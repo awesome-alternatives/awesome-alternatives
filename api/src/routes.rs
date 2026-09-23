@@ -220,6 +220,7 @@ mod tests {
     fn state(per_minute: u32, embedder: Option<Arc<dyn Embedder>>) -> AppState {
         let catalog = Catalog {
             revision: "test".into(),
+            products: vec![],
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 20000),
                 tool(

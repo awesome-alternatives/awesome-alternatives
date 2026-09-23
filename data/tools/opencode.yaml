@@ -1,0 +1,7 @@
+name: OpenCode
+repository: https://github.com/anomalyco/opencode
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: full
+    note: Terminal agent that works with Anthropic, OpenAI and Google models or a local one.

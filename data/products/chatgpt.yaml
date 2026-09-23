@@ -1,0 +1,5 @@
+name: ChatGPT
+homepage: https://chatgpt.com
+vendor: OpenAI
+category: chat-interface
+description: OpenAI's AI assistant, used through its web, desktop and mobile apps.

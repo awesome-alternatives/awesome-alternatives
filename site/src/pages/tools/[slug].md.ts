@@ -1,7 +1,7 @@
 import type { APIContext, GetStaticPaths } from "astro";
 
 import type { EnrichedTool } from "../../../../scripts/lib/types.ts";
-import { categories, categoryName, toolBySlug, tools } from "../../lib/catalog.ts";
+import { categories, categoryName, nameOf, tools } from "../../lib/catalog.ts";
 import { alternativesTo } from "../../lib/filter.ts";
 import { toolMarkdown } from "../../lib/markdown.ts";
 
@@ -13,7 +13,7 @@ export function GET(context: APIContext) {
   const markdown = toolMarkdown(tool, {
     categoryName: categoryName(tool.category),
     selfHost: categories[tool.category]?.selfHost === true,
-    nameOf: (slug) => toolBySlug(slug)?.name ?? slug,
+    nameOf,
     replacedBy: alternativesTo(tools, tool.slug).map((other) => ({ slug: other.slug, name: other.name })),
   });
   return new Response(markdown, {

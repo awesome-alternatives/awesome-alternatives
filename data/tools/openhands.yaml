@@ -1,0 +1,7 @@
+name: OpenHands
+repository: https://github.com/OpenHands/OpenHands
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: full
+    note: Agent that works inside a sandboxed container, driven from a web UI, a CLI or CI.

@@ -186,3 +186,21 @@ file-sync:
   name: File sync and share
   description: Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client.
   selfHost: true
+
+coding-agent:
+  name: AI coding agents
+  description: Agents that read a codebase, edit files and run commands from a prompt, in the terminal or the editor.
+
+code-assistant:
+  name: AI code assistants
+  description: Completions and chat inside the editor, backed by a hosted or a local model.
+
+chat-interface:
+  name: AI chat interfaces
+  description: Apps to chat with language models, whether the model runs locally or behind an API.
+  selfHost: true
+
+llm-runtime:
+  name: Local model runtimes
+  description: Run open-weight language models on your own hardware, behind a local API.
+  selfHost: true

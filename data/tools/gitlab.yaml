@@ -2,3 +2,7 @@ name: GitLab
 repository: https://github.com/gitlabhq/gitlabhq
 category: git-forge
 terms: open-core
+replaces:
+  - tool: github
+    fit: full
+    note: Repositories, merge requests, CI/CD and registries on your own server. Some features need a paid tier.

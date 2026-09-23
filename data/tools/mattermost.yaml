@@ -1,3 +1,7 @@
 name: Mattermost
 repository: https://github.com/mattermost/mattermost
 category: team-chat
+replaces:
+  - tool: slack
+    fit: full
+    note: Channels, threads and calls on your own server, with an importer for Slack exports.

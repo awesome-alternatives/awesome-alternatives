@@ -1,0 +1,5 @@
+name: GitHub
+homepage: https://github.com
+vendor: GitHub
+category: git-forge
+description: Hosted Git repositories with pull requests, issues and Actions CI.

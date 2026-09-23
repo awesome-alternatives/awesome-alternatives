@@ -9,7 +9,7 @@ import { format, messages, pathFor, plural } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
 import { cadenceDays } from "../../../lib/cadence.ts";
-import { pairs, toolBySlug } from "../../../lib/catalog.ts";
+import { nameOf, pairs } from "../../../lib/catalog.ts";
 import type { Pair } from "../../../lib/compare.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { slugify } from "../../../lib/slug.ts";
@@ -31,7 +31,6 @@ const card = m.islands.card;
 const flagLabels: Record<string, string> = m.islands.flag;
 const names: [string, string] = [a.name, b.name];
 const heading = format(m.compare.title, { a: a.name, b: b.name });
-const nameOf = (slug: string) => toolBySlug(slug)?.name ?? slug;
 const backTarget = pair.shared[0]?.target ?? pair.edges[0]?.to;
 const back = pathFor(locale, backTarget ? `/alternatives/${backTarget}/` : `/tools/${a.slug}/`);
 const cadence = (tool: EnrichedTool) => {

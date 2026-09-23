@@ -1,0 +1,8 @@
+name: Crush
+repository: https://github.com/charmbracelet/crush
+category: coding-agent
+terms: source-available
+replaces:
+  - tool: claude-code
+    fit: full
+    note: Terminal agent from Charm that works with most model providers and reads language servers.

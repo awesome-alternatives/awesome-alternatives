@@ -1,8 +1,8 @@
 {
   "stats": {
-    "tools": 163,
-    "categories": 51,
-    "targets": 55
+    "tools": 180,
+    "categories": 55,
+    "targets": 62
   },
   "owners": {
     "01mf02": {
@@ -21,6 +21,22 @@
       "website": "https://www.11ty.dev",
       "url": "https://github.com/11ty"
     },
+    "aaif-goose": {
+      "login": "aaif-goose",
+      "kind": "organization",
+      "name": "goose",
+      "bio": "The goose ai agent platform",
+      "website": "https://goose-docs.ai/",
+      "url": "https://github.com/aaif-goose"
+    },
+    "Aider-AI": {
+      "login": "Aider-AI",
+      "kind": "organization",
+      "name": "Aider AI",
+      "bio": null,
+      "website": "https://aider.chat/",
+      "url": "https://github.com/Aider-AI"
+    },
     "alacritty": {
       "login": "alacritty",
       "kind": "organization",
@@ -28,6 +44,14 @@
       "bio": null,
       "website": null,
       "url": "https://github.com/alacritty"
+    },
+    "anomalyco": {
+      "login": "anomalyco",
+      "kind": "organization",
+      "name": "Anomaly",
+      "bio": "For whatever you build.",
+      "website": "https://anoma.ly",
+      "url": "https://github.com/anomalyco"
     },
     "apache": {
       "login": "apache",
@@ -85,6 +109,22 @@
       "website": "https://changesets.dev/",
       "url": "https://github.com/changesets"
     },
+    "charmbracelet": {
+      "login": "charmbracelet",
+      "kind": "organization",
+      "name": "Charm",
+      "bio": "We make the command line glamorous.",
+      "website": "https://charm.land/",
+      "url": "https://github.com/charmbracelet"
+    },
+    "cline": {
+      "login": "cline",
+      "kind": "organization",
+      "name": "Cline",
+      "bio": null,
+      "website": "https://cline.bot",
+      "url": "https://github.com/cline"
+    },
     "cocogitto": {
       "login": "cocogitto",
       "kind": "organization",
@@ -100,6 +140,14 @@
       "bio": "An open-source continuous thing-doer, mostly used for CI/CD",
       "website": "https://concourse-ci.org",
       "url": "https://github.com/concourse"
+    },
+    "continuedev": {
+      "login": "continuedev",
+      "kind": "organization",
+      "name": "Continue",
+      "bio": "Pioneering open-source coding agent",
+      "website": "https://continue.dev",
+      "url": "https://github.com/continuedev"
     },
     "cuberite": {
       "login": "cuberite",
@@ -132,6 +180,14 @@
       "bio": null,
       "website": "https://danigarcia.dev",
       "url": "https://github.com/dani-garcia"
+    },
+    "danny-avila": {
+      "login": "danny-avila",
+      "kind": "user",
+      "name": "Danny Avila",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/danny-avila"
     },
     "date-fns": {
       "login": "date-fns",
@@ -293,6 +349,14 @@
       "website": "https://www.getzola.org/",
       "url": "https://github.com/getzola"
     },
+    "ggml-org": {
+      "login": "ggml-org",
+      "kind": "organization",
+      "name": "ggml",
+      "bio": "AI inference at the edge",
+      "website": "https://ggml.ai",
+      "url": "https://github.com/ggml-org"
+    },
     "ggreer": {
       "login": "ggreer",
       "kind": "user",
@@ -356,6 +420,14 @@
       "bio": "A Fast and Flexible Static Site Generator built with love in GoLang",
       "website": "https://gohugo.io",
       "url": "https://github.com/gohugoio"
+    },
+    "google-gemini": {
+      "login": "google-gemini",
+      "kind": "organization",
+      "name": "google-gemini",
+      "bio": "Get started building with the Gemini API",
+      "website": "https://ai.google.dev/gemini-api/docs",
+      "url": "https://github.com/google-gemini"
     },
     "googleapis": {
       "login": "googleapis",
@@ -444,6 +516,14 @@
       "bio": "Microsoft MVP | GitHub Star | GitKraken Ambassador | Code | Kids | Straight Edge | Running | Rollerblading",
       "website": "https://ohmyposh.dev",
       "url": "https://github.com/JanDeDobbeleer"
+    },
+    "janhq": {
+      "login": "janhq",
+      "kind": "organization",
+      "name": "Jan",
+      "bio": "Jan is building Open Intelligence.",
+      "website": "https://jan.ai",
+      "url": "https://github.com/janhq"
     },
     "jasonwhite": {
       "login": "jasonwhite",
@@ -549,6 +629,14 @@
       "website": "https://litestar.dev",
       "url": "https://github.com/litestar-org"
     },
+    "lobehub": {
+      "login": "lobehub",
+      "kind": "organization",
+      "name": "LobeHub",
+      "bio": "Agent teammates that grow with you",
+      "website": "https://lobehub.com",
+      "url": "https://github.com/lobehub"
+    },
     "locustio": {
       "login": "locustio",
       "kind": "organization",
@@ -620,6 +708,14 @@
       "bio": "MinIO is a high-performance, S3 compatible object storage.",
       "website": "https://min.io",
       "url": "https://github.com/minio"
+    },
+    "Mintplex-Labs": {
+      "login": "Mintplex-Labs",
+      "kind": "organization",
+      "name": "Mintplex Labs",
+      "bio": "AI applications that are useful.",
+      "website": "https://mintplexlabs.com",
+      "url": "https://github.com/Mintplex-Labs"
     },
     "moby": {
       "login": "moby",
@@ -709,6 +805,30 @@
       "website": "https://bsago.me",
       "url": "https://github.com/ogham"
     },
+    "ollama": {
+      "login": "ollama",
+      "kind": "organization",
+      "name": "Ollama",
+      "bio": null,
+      "website": "https://ollama.com",
+      "url": "https://github.com/ollama"
+    },
+    "open-webui": {
+      "login": "open-webui",
+      "kind": "organization",
+      "name": "Open WebUI",
+      "bio": "On a mission to build the best AI user interface.",
+      "website": "https://openwebui.com",
+      "url": "https://github.com/open-webui"
+    },
+    "openai": {
+      "login": "openai",
+      "kind": "organization",
+      "name": "OpenAI",
+      "bio": null,
+      "website": "https://openai.com/",
+      "url": "https://github.com/openai"
+    },
     "openbao": {
       "login": "openbao",
       "kind": "organization",
@@ -716,6 +836,14 @@
       "bio": null,
       "website": null,
       "url": "https://github.com/openbao"
+    },
+    "OpenHands": {
+      "login": "OpenHands",
+      "kind": "organization",
+      "name": "OpenHands",
+      "bio": null,
+      "website": "https://openhands.dev",
+      "url": "https://github.com/OpenHands"
     },
     "opensearch-project": {
       "login": "opensearch-project",
@@ -1013,6 +1141,14 @@
       "website": null,
       "url": "https://github.com/Steel-Foundation"
     },
+    "TabbyML": {
+      "login": "TabbyML",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/TabbyML"
+    },
     "theonedev": {
       "login": "theonedev",
       "kind": "organization",
@@ -1216,6 +1352,100 @@
   },
   "tools": [
     {
+      "slug": "aider",
+      "name": "Aider",
+      "repository": "https://github.com/Aider-AI/aider",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "partial",
+          "note": "Pair programming in the terminal that commits each edit to git, and runs commands only when asked."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "Aider-AI/aider",
+        "description": "aider is AI pair programming in your terminal",
+        "homepage": "https://aider.chat/",
+        "language": "Python",
+        "license": "Apache-2.0",
+        "stars": 49134,
+        "forks": 4985,
+        "topics": [
+          "anthropic",
+          "chatgpt",
+          "claude-3",
+          "cli",
+          "command-line",
+          "gemini",
+          "gpt-3",
+          "gpt-35-turbo",
+          "gpt-4",
+          "gpt-4o",
+          "llama",
+          "openai",
+          "sonnet"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-05-09T18:57:49Z",
+        "pushedAt": "2026-05-22T14:02:20Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.86.0",
+        "publishedAt": "2025-08-09T17:42:19Z",
+        "url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.86.0",
+          "name": "Aider v0.86.0",
+          "publishedAt": "2025-08-09T17:42:19Z",
+          "url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.85.0",
+          "name": "Aider v0.85.0",
+          "publishedAt": "2025-06-27T23:47:09Z",
+          "url": "https://github.com/Aider-AI/aider/releases/tag/v0.85.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.84.0",
+          "name": "Aider v0.84.0",
+          "publishedAt": "2025-05-30T23:28:11Z",
+          "url": "https://github.com/Aider-AI/aider/releases/tag/v0.84.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.83.0",
+          "name": "Aider v0.83.0",
+          "publishedAt": "2025-05-09T22:46:05Z",
+          "url": "https://github.com/Aider-AI/aider/releases/tag/v0.83.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.82.0",
+          "name": "Aider v0.82.0",
+          "publishedAt": "2025-04-14T23:29:05Z",
+          "url": "https://github.com/Aider-AI/aider/releases/tag/v0.82.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "alacritty",
       "name": "Alacritty",
       "repository": "https://github.com/alacritty/alacritty",
@@ -1236,8 +1466,8 @@
         "homepage": "https://alacritty.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 65795,
-        "forks": 3621,
+        "stars": 65799,
+        "forks": 3622,
         "topics": [
           "bsd",
           "gpu",
@@ -1307,6 +1537,107 @@
       "terms": "open"
     },
     {
+      "slug": "anything-llm",
+      "name": "AnythingLLM",
+      "repository": "https://github.com/Mintplex-Labs/anything-llm",
+      "category": "chat-interface",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Desktop or self-hosted app built around chatting with your own documents, with any model provider."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Desktop or self-hosted app built around chatting with your own documents, with any model provider."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "Mintplex-Labs/anything-llm",
+        "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
+        "homepage": "https://anythingllm.com",
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 66366,
+        "forks": 7390,
+        "topics": [
+          "agent-computer",
+          "agent-harness",
+          "agent-orchestration",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-agents",
+          "computer-use",
+          "hermes-agent",
+          "llm",
+          "local-ai",
+          "localai",
+          "multimodal",
+          "rag",
+          "self-hosted-ai",
+          "vector-database"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-06-04T02:29:14Z",
+        "pushedAt": "2026-09-22T19:06:03Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v1.16.2",
+        "publishedAt": "2026-09-22T19:06:03Z",
+        "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.2",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.16.2",
+          "name": "AnythingLLM v1.16.2",
+          "publishedAt": "2026-09-22T19:06:03Z",
+          "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.16.1",
+          "name": "AnythingLLM v1.16.1",
+          "publishedAt": "2026-08-27T16:42:21Z",
+          "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.16.0",
+          "name": "AnythingLLM v1.16.0",
+          "publishedAt": "2026-08-13T21:38:01Z",
+          "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.15.0",
+          "name": "AnythingLLM v1.15.0",
+          "publishedAt": "2026-06-25T23:25:52Z",
+          "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.15.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.14.2",
+          "name": "AnythingLLM 1.14.2",
+          "publishedAt": "2026-06-22T20:59:30Z",
+          "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.14.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "biome",
       "name": "Biome",
       "repository": "https://github.com/biomejs/biome",
@@ -1333,7 +1664,7 @@
         "language": "Rust",
         "license": "Apache-2.0",
         "stars": 25848,
-        "forks": 1236,
+        "forks": 1237,
         "topics": [
           "css",
           "formatter",
@@ -1349,7 +1680,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-07-27T20:30:22Z",
-        "pushedAt": "2026-09-23T12:51:26Z",
+        "pushedAt": "2026-09-23T15:08:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -1416,7 +1747,7 @@
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20183,
+        "stars": 20185,
         "forks": 1773,
         "topics": [
           "api",
@@ -1435,7 +1766,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-23T12:06:50Z",
+        "pushedAt": "2026-09-23T16:26:49Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -1503,7 +1834,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 41850,
-        "forks": 2882,
+        "forks": 2883,
         "topics": [
           "autopep8",
           "code",
@@ -1592,8 +1923,8 @@
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47133,
-        "forks": 2911,
+        "stars": 47138,
+        "forks": 2912,
         "topics": [
           "api-client",
           "api-testing",
@@ -1614,18 +1945,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-09-27T20:51:45Z",
-        "pushedAt": "2026-09-23T09:58:07Z",
+        "pushedAt": "2026-09-23T14:36:00Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v4.1.0",
-        "publishedAt": "2026-08-20T14:09:37Z",
-        "url": "https://github.com/usebruno/bruno/releases/tag/v4.1.0",
+        "tag": "v4.2.0",
+        "publishedAt": "2026-09-23T14:25:55Z",
+        "url": "https://github.com/usebruno/bruno/releases/tag/v4.2.0",
         "source": "release",
-        "signed": false
+        "signed": true
       },
       "releases": [
+        {
+          "tag": "v4.2.0",
+          "name": "feat(sidebar): support multi-select for request examples by @Gopi-bruno in #9225",
+          "publishedAt": "2026-09-23T14:25:55Z",
+          "url": "https://github.com/usebruno/bruno/releases/tag/v4.2.0",
+          "prerelease": false
+        },
         {
           "tag": "v4.1.0",
           "name": "feat: Mock Server implementation by @utkarsh-bruno and @shubh-bruno in #8734",
@@ -1653,13 +1991,6 @@
           "publishedAt": "2026-07-13T14:44:00Z",
           "url": "https://github.com/usebruno/bruno/releases/tag/v3.5.2",
           "prerelease": false
-        },
-        {
-          "tag": "v3.5.1",
-          "name": "fix(lang): handle leading | being added to multipart-form file paths by @sid-bruno in #8444",
-          "publishedAt": "2026-07-02T09:50:18Z",
-          "url": "https://github.com/usebruno/bruno/releases/tag/v3.5.1",
-          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -1692,7 +2023,7 @@
         "homepage": "https://bun.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 96016,
+        "stars": 96017,
         "forks": 5056,
         "topics": [
           "bun",
@@ -1712,7 +2043,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-23T12:58:15Z",
+        "pushedAt": "2026-09-23T15:48:38Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -1785,7 +2116,7 @@
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 76016,
+        "stars": 76022,
         "forks": 4992,
         "topics": [
           "acme",
@@ -1808,7 +2139,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-01-13T19:45:03Z",
-        "pushedAt": "2026-09-23T09:11:47Z",
+        "pushedAt": "2026-09-23T15:31:54Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -1941,6 +2272,91 @@
       "terms": "open"
     },
     {
+      "slug": "cline",
+      "name": "Cline",
+      "repository": "https://github.com/cline/cline",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "partial",
+          "note": "The agent lives in VS Code rather than the terminal, and works with any model provider."
+        },
+        {
+          "tool": "github-copilot",
+          "fit": "partial",
+          "note": "Agent and chat in the editor, without inline completions."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "cline/cline",
+        "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+        "homepage": "https://cline.bot",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 69149,
+        "forks": 7498,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-07-06T07:28:10Z",
+        "pushedAt": "2026-09-23T14:50:52Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "desktop-v0.0.34",
+        "publishedAt": "2026-09-22T21:10:28Z",
+        "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.34",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v4.1.20",
+          "name": "Sub-agents spawned in the same step now run their tool calls at the same time rather than one after another. Tools that…",
+          "publishedAt": "2026-09-22T20:45:17Z",
+          "url": "https://github.com/cline/cline/releases/tag/v4.1.20",
+          "prerelease": false
+        },
+        {
+          "tag": "sdk/sdk/v0.0.85",
+          "name": "SDK v0.0.85",
+          "publishedAt": "2026-09-22T08:13:58Z",
+          "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.85",
+          "prerelease": false
+        },
+        {
+          "tag": "sdk/sdk/v0.0.84",
+          "name": "SDK v0.0.84",
+          "publishedAt": "2026-09-22T03:26:20Z",
+          "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.84",
+          "prerelease": false
+        },
+        {
+          "tag": "desktop-v0.0.34",
+          "name": "Desktop v0.0.34",
+          "publishedAt": "2026-09-22T21:10:28Z",
+          "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.34",
+          "prerelease": false
+        },
+        {
+          "tag": "desktop-v0.0.33",
+          "name": "Desktop v0.0.33",
+          "publishedAt": "2026-09-22T09:07:30Z",
+          "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.33",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "cocogitto",
       "name": "cocogitto",
       "repository": "https://github.com/cocogitto/cocogitto",
@@ -2033,6 +2449,86 @@
       "terms": "open"
     },
     {
+      "slug": "codex",
+      "name": "Codex CLI",
+      "repository": "https://github.com/openai/codex",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "OpenAI's terminal agent, open source and built around OpenAI models."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "openai/codex",
+        "description": "Lightweight coding agent that runs in your terminal",
+        "homepage": null,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 126153,
+        "forks": 19647,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-04-13T05:37:54Z",
+        "pushedAt": "2026-09-23T16:17:10Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "rust-v0.156.1",
+        "publishedAt": "2026-09-23T02:41:36Z",
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "rust-v0.156.1",
+          "name": "0.156.1",
+          "publishedAt": "2026-09-23T02:41:36Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.1",
+          "prerelease": false
+        },
+        {
+          "tag": "rust-v0.158.0-alpha.2",
+          "name": "0.158.0-alpha.2",
+          "publishedAt": "2026-09-23T13:07:10Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.158.0-alpha.2",
+          "prerelease": true
+        },
+        {
+          "tag": "rust-v0.157.0-alpha.11",
+          "name": "0.157.0-alpha.11",
+          "publishedAt": "2026-09-23T04:50:17Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.157.0-alpha.11",
+          "prerelease": true
+        },
+        {
+          "tag": "rust-v0.155.0-alpha.16.3",
+          "name": "0.155.0-alpha.16.3",
+          "publishedAt": "2026-09-23T03:41:37Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.16.3",
+          "prerelease": true
+        },
+        {
+          "tag": "rust-v0.156.0",
+          "name": "0.156.0",
+          "publishedAt": "2026-09-22T19:51:01Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "concourse",
       "name": "Concourse",
       "repository": "https://github.com/concourse/concourse",
@@ -2053,7 +2549,7 @@
         "homepage": "https://concourse-ci.org",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 7905,
+        "stars": 7906,
         "forks": 903,
         "topics": [
           "ci",
@@ -2123,6 +2619,177 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open"
+    },
+    {
+      "slug": "continue",
+      "name": "Continue",
+      "repository": "https://github.com/continuedev/continue",
+      "category": "code-assistant",
+      "replaces": [
+        {
+          "tool": "github-copilot",
+          "fit": "full",
+          "note": "Completions, chat and edits in VS Code and JetBrains IDEs, with a hosted or a local model."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "continuedev/continue",
+        "description": "open-source coding agent",
+        "homepage": "https://continue.dev",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 36002,
+        "forks": 5417,
+        "topics": [
+          "agent",
+          "ai",
+          "cli",
+          "developer-tools",
+          "open-source"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-05-24T03:39:39Z",
+        "pushedAt": "2026-09-22T08:09:07Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v2.0.0-vscode",
+        "publishedAt": "2026-06-19T00:24:01Z",
+        "url": "https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.1.0-vscode",
+          "name": null,
+          "publishedAt": "2026-06-19T00:24:00Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.0.0-vscode",
+          "name": null,
+          "publishedAt": "2026-06-19T00:24:01Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.3.40-vscode",
+          "name": "Pre-release of the Continue VS Code extension (final-release cleanup).",
+          "publishedAt": "2026-06-15T16:09:49Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v1.3.40-vscode",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.2.24-vscode",
+          "name": "Stable release of the Continue VS Code extension (final release): removes the CLI-install banner and Generate Rule feat…",
+          "publishedAt": "2026-06-15T16:59:46Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v1.2.24-vscode",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.2.23-vscode",
+          "name": "Stable release of the Continue VS Code extension (final release): removes the CLI-install banner and Generate Rule feat…",
+          "publishedAt": "2026-06-15T16:27:25Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v1.2.23-vscode",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
+      "slug": "crush",
+      "name": "Crush",
+      "repository": "https://github.com/charmbracelet/crush",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "Terminal agent from Charm that works with most model providers and reads language servers."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "charmbracelet/crush",
+        "description": "Glamourous agentic coding for all 💘",
+        "homepage": null,
+        "language": "Go",
+        "license": "Other",
+        "stars": 28271,
+        "forks": 2280,
+        "topics": [
+          "agentic-ai",
+          "ai",
+          "llms",
+          "ravishing"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-05-21T12:14:57Z",
+        "pushedAt": "2026-09-23T14:47:57Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.96.1",
+        "publishedAt": "2026-09-21T16:22:02Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "nightly",
+          "name": "---",
+          "publishedAt": "2026-09-23T00:59:02Z",
+          "url": "https://github.com/charmbracelet/crush/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.96.1",
+          "name": "Hey! ICYMI we released support for themes a few hours ago. Before they get too widely adopted, we’re making one small b…",
+          "publishedAt": "2026-09-21T16:22:02Z",
+          "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.96.0",
+          "name": "This release is HUGE and we are so excited to share what our team and contributors have done!",
+          "publishedAt": "2026-09-21T09:07:11Z",
+          "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.95.0",
+          "name": "This release introduces many improvements but, most importantly, and a solid new feature from one of our very talented…",
+          "publishedAt": "2026-09-16T10:04:08Z",
+          "url": "https://github.com/charmbracelet/crush/releases/tag/v0.95.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.94.2",
+          "name": "This is a hot little mini patch to fix a regression in OpenAI-compatible endpoints that could occur when turns were sto…",
+          "publishedAt": "2026-09-14T13:11:45Z",
+          "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available"
     },
     {
       "slug": "cuberite",
@@ -2223,7 +2890,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 51026,
-        "forks": 3642,
+        "forks": 3643,
         "topics": [
           "angular-testing-library",
           "component-testing",
@@ -2243,7 +2910,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-03-04T00:46:28Z",
-        "pushedAt": "2026-09-23T08:20:54Z",
+        "pushedAt": "2026-09-23T14:41:46Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -2316,7 +2983,7 @@
         "homepage": "https://date-fns.org",
         "language": "TypeScript",
         "license": null,
-        "stars": 36645,
+        "stars": 36646,
         "forks": 2014,
         "topics": [
           "date",
@@ -2408,7 +3075,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 48667,
-        "forks": 2959,
+        "forks": 2969,
         "topics": [
           "date",
           "date-formatting",
@@ -2494,7 +3161,7 @@
         "homepage": "https://dandavison.github.io/delta/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 32309,
+        "stars": 32313,
         "forks": 580,
         "topics": [
           "color-themes",
@@ -2583,7 +3250,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108484,
+        "stars": 108480,
         "forks": 6379,
         "topics": [
           "deno",
@@ -2743,8 +3410,8 @@
         "homepage": "https://mobyproject.org/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 72130,
-        "forks": 19230,
+        "stars": 72128,
+        "forks": 19232,
         "topics": [
           "containers",
           "docker",
@@ -2755,7 +3422,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-18T18:10:57Z",
-        "pushedAt": "2026-09-23T09:47:54Z",
+        "pushedAt": "2026-09-23T16:26:51Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -2822,7 +3489,7 @@
         "homepage": "https://docusaurus.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 66321,
+        "stars": 66324,
         "forks": 10043,
         "topics": [
           "documentation",
@@ -3014,7 +3681,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-23T11:58:04Z",
+        "pushedAt": "2026-09-23T15:38:23Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3087,8 +3754,8 @@
         "homepage": "https://orm.drizzle.team",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 35867,
-        "forks": 1649,
+        "stars": 35870,
+        "forks": 1650,
         "topics": [
           "bunjs",
           "mysql",
@@ -3172,7 +3839,7 @@
         "homepage": "https://www.elastic.co/products/elasticsearch",
         "language": "Java",
         "license": "Other",
-        "stars": 77972,
+        "stars": 77967,
         "forks": 26081,
         "topics": [
           "elasticsearch",
@@ -3183,7 +3850,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-23T12:58:46Z",
+        "pushedAt": "2026-09-23T16:30:58Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3195,6 +3862,13 @@
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v8.19.22",
+          "name": "Elasticsearch 8.19.22",
+          "publishedAt": "2026-09-23T15:20:20Z",
+          "url": "https://github.com/elastic/elasticsearch/releases/tag/v8.19.22",
+          "prerelease": false
+        },
         {
           "tag": "v9.5.4",
           "name": "Elasticsearch 9.5.4",
@@ -3221,13 +3895,6 @@
           "name": "Elasticsearch 9.4.6",
           "publishedAt": "2026-09-01T12:51:12Z",
           "url": "https://github.com/elastic/elasticsearch/releases/tag/v9.4.6",
-          "prerelease": false
-        },
-        {
-          "tag": "v8.19.21",
-          "name": "Elasticsearch 8.19.21",
-          "publishedAt": "2026-09-01T12:53:43Z",
-          "url": "https://github.com/elastic/elasticsearch/releases/tag/v8.19.21",
           "prerelease": false
         }
       ],
@@ -3429,7 +4096,7 @@
         "homepage": "https://eslint.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 27519,
+        "stars": 27515,
         "forks": 5190,
         "topics": [
           "ecmascript",
@@ -3442,7 +4109,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-06-29T23:59:48Z",
-        "pushedAt": "2026-09-23T11:09:58Z",
+        "pushedAt": "2026-09-23T16:11:24Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3590,8 +4257,8 @@
         "homepage": "https://expressjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 69464,
-        "forks": 25045,
+        "stars": 69463,
+        "forks": 25046,
         "topics": [
           "express",
           "javascript",
@@ -3766,7 +4433,7 @@
         "homepage": "https://fastapi.tiangolo.com/",
         "language": "Python",
         "license": "MIT",
-        "stars": 102547,
+        "stars": 102549,
         "forks": 9939,
         "topics": [
           "api",
@@ -3867,7 +4534,7 @@
         "homepage": "https://www.fastify.dev",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 37190,
+        "stars": 37187,
         "forks": 3032,
         "topics": [
           "fastify",
@@ -4066,18 +4733,29 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-09-23T00:07:57Z",
+        "pushedAt": "2026-09-23T16:26:22Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": true,
+        "since": "2026-04-03T16:21:32.000Z"
+      },
       "release": {
-        "tag": "v7.25.1",
-        "publishedAt": "2026-09-22T22:31:51Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.25.1",
+        "tag": "v7.25.2",
+        "publishedAt": "2026-09-23T16:04:12Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.25.2",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v7.25.2",
+          "name": "fix(release): cap the release PR title to what forges accept (#1175)",
+          "publishedAt": "2026-09-23T16:04:12Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.25.2",
+          "prerelease": false
+        },
         {
           "tag": "v7.25.1",
           "name": "fix(validate): read a versioned file's selector instead of the whole file (#1171)",
@@ -4104,13 +4782,6 @@
           "name": "fix(forge): do not follow redirects when probing a host's forge (#1158)",
           "publishedAt": "2026-09-22T18:13:29Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.6",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.24.5",
-          "name": "fix(forge): only recognise GitHub Enterprise by its version header (#1156)",
-          "publishedAt": "2026-09-22T17:33:15Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.5",
           "prerelease": false
         }
       ],
@@ -4184,8 +4855,8 @@
         "homepage": "https://flask.palletsprojects.com",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 74765,
-        "forks": 17000,
+        "stars": 74764,
+        "forks": 17002,
         "topics": [
           "flask",
           "jinja",
@@ -4367,8 +5038,8 @@
         "homepage": null,
         "language": "Shell",
         "license": "GPL-3.0",
-        "stars": 4372,
-        "forks": 622,
+        "stars": 4371,
+        "forks": 621,
         "topics": [
           "bukkit",
           "craftbukkit",
@@ -4419,7 +5090,7 @@
         "homepage": "https://gatus.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 12139,
+        "stars": 12141,
         "forks": 834,
         "topics": [
           "alerting",
@@ -4500,6 +5171,94 @@
       "terms": "open"
     },
     {
+      "slug": "gemini-cli",
+      "name": "Gemini CLI",
+      "repository": "https://github.com/google-gemini/gemini-cli",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "Google's terminal agent, open source and built around Gemini models."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "google-gemini/gemini-cli",
+        "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+        "homepage": "https://geminicli.com",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 107137,
+        "forks": 14619,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "cli",
+          "gemini",
+          "gemini-api",
+          "mcp-client",
+          "mcp-server"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-04-17T17:04:31Z",
+        "pushedAt": "2026-09-23T16:17:46Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.60.0",
+        "publishedAt": "2026-09-15T20:31:02Z",
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.62.0-nightly.20260923.g62364cb20",
+          "name": "Release v0.62.0-nightly.20260923.g62364cb20",
+          "publishedAt": "2026-09-23T01:24:23Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260923.g62364cb20",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.62.0-nightly.20260922.gd5b3e3acc",
+          "name": "Release v0.62.0-nightly.20260922.gd5b3e3acc",
+          "publishedAt": "2026-09-22T01:33:34Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260922.gd5b3e3acc",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.62.0-nightly.20260921.gcfbcaa8df",
+          "name": "Release v0.62.0-nightly.20260921.gcfbcaa8df",
+          "publishedAt": "2026-09-21T01:32:58Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260921.gcfbcaa8df",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.62.0-nightly.20260920.gcfbcaa8df",
+          "name": "Release v0.62.0-nightly.20260920.gcfbcaa8df",
+          "publishedAt": "2026-09-20T01:25:39Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260920.gcfbcaa8df",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.62.0-nightly.20260919.gcfbcaa8df",
+          "name": "Release v0.62.0-nightly.20260919.gcfbcaa8df",
+          "publishedAt": "2026-09-19T01:25:15Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260919.gcfbcaa8df",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "ghostty",
       "name": "Ghostty",
       "repository": "https://github.com/ghostty-org/ghostty",
@@ -4520,14 +5279,14 @@
         "homepage": "https://ghostty.org",
         "language": "Zig",
         "license": "MIT",
-        "stars": 61453,
-        "forks": 3495,
+        "stars": 61462,
+        "forks": 3497,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2022-03-29T17:38:26Z",
-        "pushedAt": "2026-09-22T16:01:13Z",
+        "pushedAt": "2026-09-23T13:09:31Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -4728,6 +5487,11 @@
           "tool": "gitlab",
           "fit": "full",
           "note": "Lightweight single binary, with Actions compatible with GitHub Actions."
+        },
+        {
+          "tool": "github",
+          "fit": "full",
+          "note": "Pull requests, issues and Actions that run GitHub Actions workflows, on your own server."
         }
       ],
       "affiliation": null,
@@ -4739,7 +5503,7 @@
         "homepage": "https://gitea.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 58126,
+        "stars": 58135,
         "forks": 7167,
         "topics": [
           "bitbucket",
@@ -4767,7 +5531,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-11-01T02:13:26Z",
-        "pushedAt": "2026-09-23T08:51:59Z",
+        "pushedAt": "2026-09-23T15:06:51Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -4824,7 +5588,13 @@
       "name": "GitLab",
       "repository": "https://github.com/gitlabhq/gitlabhq",
       "category": "git-forge",
-      "replaces": [],
+      "replaces": [
+        {
+          "tool": "github",
+          "fit": "full",
+          "note": "Repositories, merge requests, CI/CD and registries on your own server. Some features need a paid tier."
+        }
+      ],
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
@@ -4845,7 +5615,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-10-02T16:25:27Z",
-        "pushedAt": "2026-09-23T12:13:37Z",
+        "pushedAt": "2026-09-23T15:15:56Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -5038,6 +5808,91 @@
       "terms": "open"
     },
     {
+      "slug": "goose",
+      "name": "goose",
+      "repository": "https://github.com/aaif-goose/goose",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "Local agent with a terminal and a desktop app, any model provider, extended through MCP."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "aaif-goose/goose",
+        "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+        "homepage": "https://goose-docs.ai/",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 54589,
+        "forks": 6300,
+        "topics": [
+          "acp",
+          "ai",
+          "ai-agents",
+          "mcp"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-08-23T19:03:36Z",
+        "pushedAt": "2026-09-23T16:00:16Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v1.52.0",
+        "publishedAt": "2026-09-23T14:59:14Z",
+        "url": "https://github.com/aaif-goose/goose/releases/tag/v1.52.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.52.0",
+          "name": "Live voice conversations in the desktop app #12093",
+          "publishedAt": "2026-09-23T14:59:14Z",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.52.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.51.0",
+          "name": "Route Desktop to state-machine loop via ACP prompt meta #11247",
+          "publishedAt": "2026-09-17T19:15:25Z",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.51.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.50.1",
+          "name": "Revert model updates for patch release",
+          "publishedAt": "2026-09-14T21:00:01Z",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.50.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.50.0",
+          "name": "Support GPT-6 Astra models #11869",
+          "publishedAt": "2026-09-08T19:32:41Z",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.50.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.49.0",
+          "name": "Auto-updater for desktop application #10614",
+          "publishedAt": "2026-09-03T19:34:26Z",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.49.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "helix",
       "name": "Helix",
       "repository": "https://github.com/helix-editor/helix",
@@ -5058,7 +5913,7 @@
         "homepage": "https://helix-editor.com",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 46306,
+        "stars": 46310,
         "forks": 3767,
         "topics": [
           "kakoune",
@@ -5143,8 +5998,8 @@
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32308,
-        "forks": 1337,
+        "stars": 32311,
+        "forks": 1339,
         "topics": [
           "aws-lambda",
           "bun",
@@ -5233,8 +6088,8 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80476,
-        "forks": 6120,
+        "stars": 80480,
+        "forks": 6121,
         "topics": [
           "api",
           "api-client",
@@ -5430,7 +6285,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15504,
-        "forks": 1785,
+        "forks": 1793,
         "topics": [
           "asyncio",
           "http",
@@ -5514,7 +6369,7 @@
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89910,
+        "stars": 89912,
         "forks": 8384,
         "topics": [
           "blog-engine",
@@ -5602,8 +6457,8 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29387,
-        "forks": 2274,
+        "stars": 29392,
+        "forks": 2276,
         "topics": [
           "acme",
           "certificate-management",
@@ -5630,18 +6485,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-23T12:57:41Z",
+        "pushedAt": "2026-09-23T16:26:16Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v0.165.15",
-        "publishedAt": "2026-09-22T14:12:05Z",
-        "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.15",
+        "tag": "v0.165.16",
+        "publishedAt": "2026-09-23T15:44:50Z",
+        "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.16",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v0.165.16",
+          "name": "feat: block certificate deletion until expiry",
+          "publishedAt": "2026-09-23T15:44:50Z",
+          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.16",
+          "prerelease": false
+        },
         {
           "tag": "v0.165.15",
           "name": "fix(agent-vault): expose agent vault routes in the openapi spec",
@@ -5669,13 +6531,6 @@
           "publishedAt": "2026-09-16T18:58:37Z",
           "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.12",
           "prerelease": false
-        },
-        {
-          "tag": "v0.165.11",
-          "name": "improvement(frontend): migrate kmip server details page to v3 by @claude[bot] in",
-          "publishedAt": "2026-09-15T23:44:38Z",
-          "url": "https://github.com/Infisical/infisical/releases/tag/v0.165.11",
-          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -5697,7 +6552,7 @@
         "homepage": "https://insomnia.rest",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 40031,
+        "stars": 40030,
         "forks": 2370,
         "topics": [
           "api",
@@ -5783,7 +6638,7 @@
         "language": "Objective-C",
         "license": "GPL-2.0",
         "stars": 18087,
-        "forks": 1500,
+        "forks": 1502,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -5801,6 +6656,100 @@
         "signed": false
       },
       "releases": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
+      "slug": "jan",
+      "name": "Jan",
+      "repository": "https://github.com/janhq/jan",
+      "category": "chat-interface",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Desktop app that downloads open models and runs them offline, or calls a hosted API."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Desktop app that downloads open models and runs them offline, or calls a hosted API."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "janhq/jan",
+        "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+        "homepage": "https://jan.ai/",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 44621,
+        "forks": 3050,
+        "topics": [
+          "chatgpt",
+          "gpt",
+          "llamacpp",
+          "llm",
+          "localai",
+          "open-source",
+          "self-hosted",
+          "tauri"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-08-17T02:17:10Z",
+        "pushedAt": "2026-09-23T07:14:54Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.8.4",
+        "publishedAt": "2026-07-23T06:29:15Z",
+        "url": "https://github.com/janhq/jan/releases/tag/v0.8.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.8.4",
+          "name": "0.8.4",
+          "publishedAt": "2026-07-23T06:29:15Z",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.3",
+          "name": "0.8.3",
+          "publishedAt": "2026-06-24T06:06:52Z",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.2",
+          "name": "0.8.2",
+          "publishedAt": "2026-06-01T11:50:01Z",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.1",
+          "name": "0.8.1",
+          "publishedAt": "2026-05-29T03:09:50Z",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.0",
+          "name": "0.8.0",
+          "publishedAt": "2026-05-22T02:47:29Z",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.0",
+          "prerelease": false
+        }
+      ],
       "maintainerVerified": false,
       "flags": [],
       "terms": "open"
@@ -5905,7 +6854,7 @@
         "homepage": "https://jekyllrb.com",
         "language": "Ruby",
         "license": "MIT",
-        "stars": 51681,
+        "stars": 51682,
         "forks": 10299,
         "topics": [
           "blog-engine",
@@ -6071,7 +7020,7 @@
         "homepage": "https://jestjs.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 45467,
+        "stars": 45468,
         "forks": 6726,
         "topics": [
           "easy",
@@ -6234,7 +7183,7 @@
         "language": "C",
         "license": "Other",
         "stars": 35672,
-        "forks": 2312,
+        "forks": 2325,
         "topics": [
           "jq"
         ],
@@ -6315,7 +7264,7 @@
         "homepage": "https://k3d.io/",
         "language": "Go",
         "license": "MIT",
-        "stars": 6563,
+        "stars": 6564,
         "forks": 536,
         "topics": [
           "cluster",
@@ -6403,8 +7352,8 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31554,
-        "forks": 1637,
+        "stars": 31555,
+        "forks": 1638,
         "topics": [
           "es6",
           "go",
@@ -6487,8 +7436,8 @@
         "homepage": "https://kafka.apache.org/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 33792,
-        "forks": 15529,
+        "stars": 33795,
+        "forks": 15530,
         "topics": [
           "java",
           "kafka",
@@ -6499,7 +7448,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-23T12:47:04Z",
+        "pushedAt": "2026-09-23T16:30:53Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -6619,7 +7568,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 15502,
-        "forks": 1799,
+        "forks": 1800,
         "topics": [
           "docker",
           "golang",
@@ -6705,7 +7654,7 @@
         "homepage": "https://sw.kovidgoyal.net/kitty/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 35039,
+        "stars": 35042,
         "forks": 1519,
         "topics": [
           "c",
@@ -6725,7 +7674,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-16T14:48:28Z",
-        "pushedAt": "2026-09-23T05:16:03Z",
+        "pushedAt": "2026-09-23T15:46:51Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -6893,7 +7842,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-04T09:36:55Z",
-        "pushedAt": "2026-09-23T12:19:02Z",
+        "pushedAt": "2026-09-23T14:41:47Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -7069,7 +8018,11 @@
         "pushedAt": "2026-09-23T00:06:53Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": true,
+        "since": "2026-09-18T07:25:57.000Z"
+      },
       "release": {
         "tag": "v1.17.1",
         "publishedAt": "2026-09-22T11:21:59Z",
@@ -7115,6 +8068,112 @@
         }
       ],
       "maintainerVerified": true,
+      "flags": [],
+      "terms": "open"
+    },
+    {
+      "slug": "librechat",
+      "name": "LibreChat",
+      "repository": "https://github.com/danny-avila/LibreChat",
+      "category": "chat-interface",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Self-hosted chat app for Anthropic, OpenAI, Google and local models, with agents and file uploads."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Self-hosted chat app for Anthropic, OpenAI, Google and local models, with agents and file uploads."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "danny-avila/LibreChat",
+        "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
+        "homepage": "https://librechat.ai/",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 44764,
+        "forks": 9185,
+        "topics": [
+          "ai",
+          "anthropic",
+          "artifacts",
+          "aws",
+          "azure",
+          "chatgpt",
+          "chatgpt-clone",
+          "claude",
+          "clone",
+          "deepseek",
+          "gemini",
+          "google",
+          "gpt-5",
+          "librechat",
+          "mcp",
+          "o1",
+          "openai",
+          "responses-api",
+          "vision",
+          "webui"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-02-12T01:06:52Z",
+        "pushedAt": "2026-09-23T16:22:54Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.8.8-rc4",
+        "publishedAt": null,
+        "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.8-rc4",
+        "source": "tag",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.8.8-rc4",
+          "name": "GPT-6 Sol, GPT-6 Luna, and Claude Opus 5.5",
+          "publishedAt": "2026-09-23T03:58:57Z",
+          "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.8-rc4",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.8.8-rc3",
+          "name": "Experimental: Bring-Your-Own-Machine for scalable coding agents",
+          "publishedAt": "2026-09-15T02:34:15Z",
+          "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.8-rc3",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.8.8-rc2",
+          "name": "Interrupt Agent runs before visible output, steer or queue follow-ups, and recover tool-limited turns",
+          "publishedAt": "2026-09-03T02:28:10Z",
+          "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.8-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.8.8-rc1",
+          "name": "Interrupt or steer Agent runs in progress, or queue the next message",
+          "publishedAt": "2026-08-14T07:33:03Z",
+          "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.8-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.8.7",
+          "name": "Chat projects for organizing chats into folders",
+          "publishedAt": "2026-06-24T19:41:03Z",
+          "url": "https://github.com/danny-avila/LibreChat/releases/tag/v0.8.7",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
       "flags": [],
       "terms": "open"
     },
@@ -7215,6 +8274,197 @@
       "terms": "open"
     },
     {
+      "slug": "llama-cpp",
+      "name": "llama.cpp",
+      "repository": "https://github.com/ggml-org/llama.cpp",
+      "category": "llm-runtime",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Runs open-weight models on CPU or GPU, with a built-in server and a minimal web chat."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Runs open-weight models on CPU or GPU, with a built-in server and a minimal web chat."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "ggml-org/llama.cpp",
+        "description": "LLM inference in C/C++",
+        "homepage": "https://llama.app",
+        "language": "C++",
+        "license": "MIT",
+        "stars": 129316,
+        "forks": 23634,
+        "topics": [
+          "ggml"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-03-10T18:58:00Z",
+        "pushedAt": "2026-09-23T16:25:15Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.4.1",
+        "publishedAt": "2026-09-14T18:27:29Z",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "b11139",
+          "name": "server: fix token counting API crash on sleep (#29309)",
+          "publishedAt": "2026-09-23T16:11:10Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11139",
+          "prerelease": true
+        },
+        {
+          "tag": "b11138",
+          "name": "jinja : parse unary +/- before variables (#29244)",
+          "publishedAt": "2026-09-23T15:35:39Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11138",
+          "prerelease": true
+        },
+        {
+          "tag": "b11136",
+          "name": "server: accept OpenAI video_url content type and data: video URIs (#27921)",
+          "publishedAt": "2026-09-23T14:42:03Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11136",
+          "prerelease": true
+        },
+        {
+          "tag": "b11135",
+          "name": "server: Dedup the draft HF model via dedup-cache-models (#27934)",
+          "publishedAt": "2026-09-23T14:05:30Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11135",
+          "prerelease": true
+        },
+        {
+          "tag": "b11132",
+          "name": "model : support Gemma4 DSpark draft backbone (#29226)",
+          "publishedAt": "2026-09-23T13:22:39Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11132",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
+      "slug": "lobehub",
+      "name": "LobeHub",
+      "repository": "https://github.com/lobehub/lobehub",
+      "category": "chat-interface",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Chat app with plugins and agents, self-hosted or on the desktop, for most model providers."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Chat app with plugins and agents, self-hosted or on the desktop, for most model providers."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "lobehub/lobehub",
+        "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+        "homepage": "https://lobehub.com",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 82782,
+        "forks": 15916,
+        "topics": [
+          "agent",
+          "agent-collaboration",
+          "agent-harness",
+          "ai",
+          "cao",
+          "chatgpt",
+          "chief-agent-operator",
+          "claude",
+          "deepseek",
+          "fable",
+          "gemini",
+          "glm",
+          "gpt",
+          "knowledge-base",
+          "loop-engineering",
+          "mcp",
+          "openai",
+          "skills"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-05-21T07:19:12Z",
+        "pushedAt": "2026-09-23T16:28:51Z",
+        "defaultBranch": "canary"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v2.2.18",
+        "publishedAt": "2026-09-20T13:11:30Z",
+        "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.18",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.2.19-canary.9",
+          "name": "Desktop Canary v2.2.19-canary.9",
+          "publishedAt": "2026-09-23T10:46:17Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.9",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.13",
+          "name": "Desktop Canary v2.2.19-canary.13",
+          "publishedAt": "2026-09-23T14:47:47Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.13",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.12",
+          "name": "Desktop Canary v2.2.19-canary.12",
+          "publishedAt": "2026-09-23T13:26:36Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.12",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.11",
+          "name": "Desktop Canary v2.2.19-canary.11",
+          "publishedAt": "2026-09-23T12:27:07Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.11",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.10",
+          "name": "Desktop Canary v2.2.19-canary.10",
+          "publishedAt": "2026-09-23T11:35:16Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.10",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available"
+    },
+    {
       "slug": "locust",
       "name": "Locust",
       "repository": "https://github.com/locustio/locust",
@@ -7235,7 +8485,7 @@
         "homepage": "https://locust.cloud",
         "language": "Python",
         "license": "MIT",
-        "stars": 28176,
+        "stars": 28177,
         "forks": 3248,
         "topics": [
           "benchmarking",
@@ -7335,7 +8585,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-11-18T01:31:50Z",
-        "pushedAt": "2026-09-23T07:26:21Z",
+        "pushedAt": "2026-09-23T15:59:55Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -7347,6 +8597,13 @@
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v8.19.22",
+          "name": "Logstash 8.19.22",
+          "publishedAt": "2026-09-23T15:20:43Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v8.19.22",
+          "prerelease": false
+        },
         {
           "tag": "v9.5.4",
           "name": "Logstash 9.5.4",
@@ -7373,13 +8630,6 @@
           "name": "Logstash 9.4.6",
           "publishedAt": "2026-09-01T12:51:02Z",
           "url": "https://github.com/elastic/logstash/releases/tag/v9.4.6",
-          "prerelease": false
-        },
-        {
-          "tag": "v8.19.21",
-          "name": "Logstash 8.19.21",
-          "publishedAt": "2026-09-01T12:53:46Z",
-          "url": "https://github.com/elastic/logstash/releases/tag/v8.19.21",
           "prerelease": false
         }
       ],
@@ -7529,7 +8779,13 @@
       "name": "Matomo",
       "repository": "https://github.com/matomo-org/matomo",
       "category": "web-analytics",
-      "replaces": [],
+      "replaces": [
+        {
+          "tool": "google-analytics",
+          "fit": "full",
+          "note": "Close to Google Analytics in scope, on your own server, with a plugin to import past Google Analytics data."
+        }
+      ],
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
@@ -7540,7 +8796,7 @@
         "language": "PHP",
         "license": "GPL-3.0",
         "stars": 21894,
-        "forks": 2893,
+        "forks": 2894,
         "topics": [
           "analytics",
           "growth",
@@ -7562,7 +8818,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-03-30T21:18:17Z",
-        "pushedAt": "2026-09-23T12:15:50Z",
+        "pushedAt": "2026-09-23T14:06:56Z",
         "defaultBranch": "6.x-dev"
       },
       "trend": null,
@@ -7619,7 +8875,13 @@
       "name": "Mattermost",
       "repository": "https://github.com/mattermost/mattermost",
       "category": "team-chat",
-      "replaces": [],
+      "replaces": [
+        {
+          "tool": "slack",
+          "fit": "full",
+          "note": "Channels, threads and calls on your own server, with an importer for Slack exports."
+        }
+      ],
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
@@ -7629,8 +8891,8 @@
         "homepage": "https://mattermost.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 39160,
-        "forks": 9011,
+        "stars": 39161,
+        "forks": 9012,
         "topics": [
           "collaboration",
           "golang",
@@ -7644,7 +8906,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-23T12:56:07Z",
+        "pushedAt": "2026-09-23T16:03:30Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -7717,7 +8979,7 @@
         "homepage": "https://www.meilisearch.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 59380,
+        "stars": 59385,
         "forks": 2712,
         "topics": [
           "ai",
@@ -7745,7 +9007,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-23T11:45:28Z",
-        "pushedAt": "2026-09-23T11:52:28Z",
+        "pushedAt": "2026-09-23T14:00:43Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -7818,7 +9080,7 @@
         "homepage": "https://minestom.net",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 3282,
+        "stars": 3283,
         "forks": 511,
         "topics": [
           "java",
@@ -7901,7 +9163,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 32152,
-        "forks": 5329,
+        "forks": 5330,
         "topics": [
           "cluster",
           "cncf",
@@ -7982,7 +9244,7 @@
         "language": "Go",
         "license": "AGPL-3.0",
         "stars": 61356,
-        "forks": 7982,
+        "forks": 7983,
         "topics": [
           "amazon-s3",
           "cloud",
@@ -8123,7 +9385,7 @@
         "homepage": "https://www.mongodb.com/",
         "language": "C++",
         "license": "Other",
-        "stars": 28580,
+        "stars": 28573,
         "forks": 5808,
         "topics": [
           "c-plus-plus",
@@ -8135,7 +9397,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-23T12:38:27Z",
+        "pushedAt": "2026-09-23T16:04:13Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8172,7 +9434,7 @@
         "homepage": "https://moonrepo.dev/moon",
         "language": "Rust",
         "license": "MIT",
-        "stars": 4112,
+        "stars": 4113,
         "forks": 252,
         "topics": [
           "build-system",
@@ -8196,7 +9458,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-23T18:18:15Z",
-        "pushedAt": "2026-09-23T05:49:33Z",
+        "pushedAt": "2026-09-23T15:19:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8264,7 +9526,7 @@
         "language": "Python",
         "license": "Other",
         "stars": 20647,
-        "forks": 3309,
+        "forks": 3310,
         "topics": [
           "linter",
           "python",
@@ -8276,7 +9538,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-12-07T13:30:23Z",
-        "pushedAt": "2026-09-23T12:59:36Z",
+        "pushedAt": "2026-09-23T15:43:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8313,7 +9575,7 @@
         "homepage": "https://neovim.io",
         "language": "Vim Script",
         "license": "Other",
-        "stars": 102526,
+        "stars": 102531,
         "forks": 7128,
         "topics": [
           "api",
@@ -8328,7 +9590,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-01-31T13:39:22Z",
-        "pushedAt": "2026-09-23T12:45:54Z",
+        "pushedAt": "2026-09-23T16:11:00Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8395,8 +9657,8 @@
         "homepage": "https://nextcloud.com",
         "language": "PHP",
         "license": "AGPL-3.0",
-        "stars": 36891,
-        "forks": 5243,
+        "stars": 36892,
+        "forks": 5244,
         "topics": [
           "cloud",
           "collaboration",
@@ -8423,7 +9685,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-23T12:58:31Z",
+        "pushedAt": "2026-09-23T15:57:30Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8490,8 +9752,8 @@
         "homepage": "https://nginx.org/",
         "language": "C",
         "license": "BSD-2-Clause",
-        "stars": 31718,
-        "forks": 8308,
+        "stars": 31721,
+        "forks": 8309,
         "topics": [
           "content-cache",
           "http",
@@ -8580,8 +9842,8 @@
         "homepage": "https://nodejs.org",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 122052,
-        "forks": 37515,
+        "stars": 122050,
+        "forks": 37528,
         "topics": [
           "javascript",
           "js",
@@ -8597,7 +9859,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-11-26T19:57:11Z",
-        "pushedAt": "2026-09-23T12:58:45Z",
+        "pushedAt": "2026-09-23T16:25:16Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8664,7 +9926,7 @@
         "homepage": "https://docs.npmjs.com/cli/",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 10131,
+        "stars": 10133,
         "forks": 4758,
         "topics": [
           "javascript",
@@ -8776,7 +10038,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-23T12:45:16Z",
+        "pushedAt": "2026-09-23T16:26:56Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8849,7 +10111,7 @@
         "homepage": "https://ohmyposh.dev",
         "language": "Go",
         "license": "MIT",
-        "stars": 23494,
+        "stars": 23495,
         "forks": 2788,
         "topics": [
           "bash",
@@ -8927,6 +10189,107 @@
       "terms": "open"
     },
     {
+      "slug": "ollama",
+      "name": "Ollama",
+      "repository": "https://github.com/ollama/ollama",
+      "category": "llm-runtime",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Runs open-weight models on your own machine behind a local API. Pair it with a chat app for the interface."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "Runs open-weight models on your own machine behind a local API. Pair it with a chat app for the interface."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "ollama/ollama",
+        "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "homepage": "https://ollama.com",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 181524,
+        "forks": 17982,
+        "topics": [
+          "deepseek",
+          "gemma",
+          "gemma3",
+          "glm",
+          "go",
+          "golang",
+          "gpt-oss",
+          "llama",
+          "llama3",
+          "llm",
+          "llms",
+          "minimax",
+          "mistral",
+          "ollama",
+          "qwen"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-06-26T19:39:32Z",
+        "pushedAt": "2026-09-23T07:56:56Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.34.3",
+        "publishedAt": "2026-09-19T00:02:57Z",
+        "url": "https://github.com/ollama/ollama/releases/tag/v0.34.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.34.4-rc0",
+          "name": "v0.34.4",
+          "publishedAt": "2026-09-23T02:24:43Z",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4-rc0",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.34.3",
+          "name": "GET /api/show now advertises each model's thinking controls and default:",
+          "publishedAt": "2026-09-19T00:02:57Z",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.34.2",
+          "name": "Added first-run setup when running ollama, with options to sign in or continue locally. Setup completion is shared with…",
+          "publishedAt": "2026-09-15T21:21:07Z",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.34.1",
+          "name": "MLX safetensors ollama create no longer experimental.  GGUF model creation now requires using llama.cpp tooling for saf…",
+          "publishedAt": "2026-09-14T22:14:03Z",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.34.0",
+          "name": "Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open mo…",
+          "publishedAt": "2026-09-05T23:49:00Z",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "onedev",
       "name": "OneDev",
       "repository": "https://github.com/theonedev/onedev",
@@ -8936,6 +10299,11 @@
           "tool": "gitlab",
           "fit": "full",
           "note": "Self-hosted forge with CI/CD and boards built in."
+        },
+        {
+          "tool": "github",
+          "fit": "full",
+          "note": "Pull requests, issues and built-in CI/CD, with pipelines in its own format rather than GitHub Actions."
         }
       ],
       "affiliation": null,
@@ -8964,7 +10332,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-11-06T02:57:01Z",
-        "pushedAt": "2026-09-23T12:43:47Z",
+        "pushedAt": "2026-09-23T13:05:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9017,6 +10385,107 @@
       "terms": "open"
     },
     {
+      "slug": "open-webui",
+      "name": "Open WebUI",
+      "repository": "https://github.com/open-webui/open-webui",
+      "category": "chat-interface",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "The chat app, self-hosted, in front of Ollama or any OpenAI-compatible API. The model comes from elsewhere."
+        },
+        {
+          "tool": "claude",
+          "fit": "partial",
+          "note": "The chat app, self-hosted, in front of Ollama or any OpenAI-compatible API. The model comes from elsewhere."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "open-webui/open-webui",
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "homepage": "https://openwebui.com",
+        "language": "Python",
+        "license": "Other",
+        "stars": 152922,
+        "forks": 22372,
+        "topics": [
+          "ai",
+          "llm",
+          "llm-ui",
+          "llm-webui",
+          "llms",
+          "mcp",
+          "ollama",
+          "ollama-webui",
+          "open-webui",
+          "openai",
+          "openapi",
+          "rag",
+          "self-hosted",
+          "ui",
+          "webui"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-10-06T22:08:27Z",
+        "pushedAt": "2026-09-23T13:47:04Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.11.4",
+        "publishedAt": "2026-09-21T19:25:21Z",
+        "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.11.4",
+          "name": "📉 Far smaller slim image. A slim build now comes down at around 175 MB, near enough 89% smaller than the last release,…",
+          "publishedAt": "2026-09-21T19:25:21Z",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.11.3",
+          "name": "♿ Accessibility mode reaches the menus. Accessibility mode now marks the menu entry you are pointing at and the model a…",
+          "publishedAt": "2026-08-31T14:55:53Z",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.11.2",
+          "name": "🖼️ Richer previews for terminal files. Word documents and slide decks produced in the terminal are now previewed as th…",
+          "publishedAt": "2026-08-31T05:48:23Z",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.11.1",
+          "name": "🚦 Human in the loop tool approval. Where an administrator has turned it on, you can switch a conversation from letting…",
+          "publishedAt": "2026-08-25T21:17:57Z",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.11.0",
+          "name": "🎨 Redesigned interface. Open WebUI has been visually rebuilt from the ground up. All aspects of the User Interface, fr…",
+          "publishedAt": "2026-07-27T09:30:15Z",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available"
+    },
+    {
       "slug": "openbao",
       "name": "OpenBao",
       "repository": "https://github.com/openbao/openbao",
@@ -9037,7 +10506,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7467,
+        "stars": 7468,
         "forks": 575,
         "topics": [
           "go",
@@ -9048,7 +10517,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-09T18:17:33Z",
-        "pushedAt": "2026-09-22T20:45:31Z",
+        "pushedAt": "2026-09-23T16:27:33Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9101,6 +10570,176 @@
       "terms": "open"
     },
     {
+      "slug": "opencode",
+      "name": "OpenCode",
+      "repository": "https://github.com/anomalyco/opencode",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "Terminal agent that works with Anthropic, OpenAI and Google models or a local one."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "anomalyco/opencode",
+        "description": "The open source coding agent.",
+        "homepage": "https://opencode.ai",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 209614,
+        "forks": 27656,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-04-30T20:08:00Z",
+        "pushedAt": "2026-09-23T16:29:30Z",
+        "defaultBranch": "dev"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v1.18.32",
+        "publishedAt": "2026-09-21T22:51:20Z",
+        "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.32",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.18.32",
+          "name": "Fixed Bedrock image attachments so they are only hoisted for Claude, Nova, and Llama 4 models.",
+          "publishedAt": "2026-09-21T22:51:20Z",
+          "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.32",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.18.31",
+          "name": "Restored ACP session model, effort, mode, and reasoning chunk boundaries when loading, resuming, or forking sessions. (…",
+          "publishedAt": "2026-09-14T17:47:30Z",
+          "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.31",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.18.30",
+          "name": "Added the Astra system prompt for GPT-6 models.",
+          "publishedAt": "2026-09-09T03:34:27Z",
+          "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.30",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.18.29",
+          "name": "Allow Codex OAuth model filtering to recognize integer GPT versions like gpt-6",
+          "publishedAt": "2026-09-04T23:47:16Z",
+          "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.29",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.18.28",
+          "name": "Send the session ID as GitHub Copilot's interaction header to improve request tracking across a session.",
+          "publishedAt": "2026-09-04T15:38:23Z",
+          "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.28",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
+      "slug": "openhands",
+      "name": "OpenHands",
+      "repository": "https://github.com/OpenHands/OpenHands",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "full",
+          "note": "Agent that works inside a sandboxed container, driven from a web UI, a CLI or CI."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "OpenHands/OpenHands",
+        "description": "🙌 OpenHands: AI-Driven Development",
+        "homepage": "https://openhands.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 88977,
+        "forks": 11710,
+        "topics": [
+          "agent",
+          "artificial-intelligence",
+          "chatgpt",
+          "claude-ai",
+          "cli",
+          "developer-tools",
+          "gpt",
+          "llm",
+          "openai"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-03-13T03:33:31Z",
+        "pushedAt": "2026-09-23T16:31:36Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v1.22.0",
+        "publishedAt": "2026-09-22T16:28:11Z",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.22.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.22.0",
+          "name": "feat: test remote MCP servers on cloud backends via the app server",
+          "publishedAt": "2026-09-22T16:28:11Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.22.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.21.0",
+          "name": "feat: request Docker execution workspaces from Docker servers",
+          "publishedAt": "2026-09-22T01:50:44Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.21.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.20.0",
+          "name": "feat(agent-profiles): select secrets available to a profile",
+          "publishedAt": "2026-09-17T07:15:18Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.20.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.19.0",
+          "name": "feat: scope an agent profile to specific MCP servers",
+          "publishedAt": "2026-09-16T19:24:24Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.19.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.18.0",
+          "name": "feat: click an image attachment to open it full size",
+          "publishedAt": "2026-09-11T18:27:48Z",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open"
+    },
+    {
       "slug": "opensearch",
       "name": "OpenSearch",
       "repository": "https://github.com/opensearch-project/OpenSearch",
@@ -9121,7 +10760,7 @@
         "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 13762,
+        "stars": 13763,
         "forks": 2965,
         "topics": [
           "analytics",
@@ -9135,7 +10774,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-01-29T22:10:00Z",
-        "pushedAt": "2026-09-23T10:07:18Z",
+        "pushedAt": "2026-09-23T14:41:26Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9288,7 +10927,7 @@
         "homepage": "https://oxc.rs",
         "language": "Rust",
         "license": "MIT",
-        "stars": 22862,
+        "stars": 22864,
         "forks": 1312,
         "topics": [
           "compiler",
@@ -9303,7 +10942,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-23T12:58:04Z",
+        "pushedAt": "2026-09-23T16:20:06Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9370,8 +11009,8 @@
         "homepage": "https://papermc.io/software/paper",
         "language": "Java",
         "license": "Other",
-        "stars": 12677,
-        "forks": 3537,
+        "stars": 12676,
+        "forks": 3538,
         "topics": [
           "bukkit",
           "java",
@@ -9388,7 +11027,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-22T05:40:19Z",
-        "pushedAt": "2026-09-22T19:18:05Z",
+        "pushedAt": "2026-09-23T16:23:32Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9599,7 +11238,7 @@
         "homepage": "https://pip.pypa.io/",
         "language": "Python",
         "license": "MIT",
-        "stars": 10286,
+        "stars": 10287,
         "forks": 3386,
         "topics": [
           "packaging",
@@ -9636,6 +11275,11 @@
           "tool": "matomo",
           "fit": "full",
           "note": "Cookie-free, a lightweight script, no personal data stored."
+        },
+        {
+          "tool": "google-analytics",
+          "fit": "partial",
+          "note": "Page views, sources and goals without cookies, and no reports on individual visitors."
         }
       ],
       "affiliation": null,
@@ -9647,8 +11291,8 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29192,
-        "forks": 1875,
+        "stars": 29195,
+        "forks": 1874,
         "topics": [
           "analytics",
           "analytics-dashboard",
@@ -9675,7 +11319,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-12-04T22:33:36Z",
-        "pushedAt": "2026-09-23T12:32:49Z",
+        "pushedAt": "2026-09-23T16:22:40Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -9748,8 +11392,8 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96555,
-        "forks": 6488,
+        "stars": 96563,
+        "forks": 6492,
         "topics": [
           "automation",
           "chrome",
@@ -9771,7 +11415,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-11-15T18:32:42Z",
-        "pushedAt": "2026-09-23T09:13:46Z",
+        "pushedAt": "2026-09-23T16:01:02Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9844,7 +11488,7 @@
         "homepage": "https://pnpm.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 36615,
+        "stars": 36622,
         "forks": 1752,
         "topics": [
           "dependency-manager",
@@ -9860,7 +11504,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-23T12:58:34Z",
+        "pushedAt": "2026-09-23T16:22:55Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10093,7 +11737,7 @@
         "homepage": null,
         "language": "Shell",
         "license": "MIT",
-        "stars": 55142,
+        "stars": 55143,
         "forks": 2442,
         "topics": [
           "zsh"
@@ -10169,7 +11813,7 @@
         "homepage": "https://prettier.io",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 52300,
+        "stars": 52295,
         "forks": 5015,
         "topics": [
           "angular",
@@ -10262,8 +11906,8 @@
         "homepage": "https://www.prisma.io",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 47661,
-        "forks": 2542,
+        "stars": 47664,
+        "forks": 2541,
         "topics": [
           "cockroachdb",
           "database",
@@ -10357,8 +12001,8 @@
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66191,
-        "forks": 10849,
+        "stars": 66190,
+        "forks": 10850,
         "topics": [
           "alerting",
           "graphing",
@@ -10372,7 +12016,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-11-24T11:14:12Z",
-        "pushedAt": "2026-09-23T12:52:02Z",
+        "pushedAt": "2026-09-23T16:11:40Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10445,8 +12089,8 @@
         "homepage": "https://www.pulumi.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 25724,
-        "forks": 1429,
+        "stars": 25725,
+        "forks": 1430,
         "topics": [
           "aws",
           "azure",
@@ -10471,7 +12115,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-23T12:54:09Z",
+        "pushedAt": "2026-09-23T16:25:41Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -10544,8 +12188,8 @@
         "homepage": "https://pumpkinmc.org/",
         "language": "Rust",
         "license": "GPL-3.0",
-        "stars": 11331,
-        "forks": 820,
+        "stars": 11330,
+        "forks": 819,
         "topics": [
           "docker",
           "game-server",
@@ -10669,7 +12313,7 @@
         "language": "Python",
         "license": "GPL-2.0",
         "stars": 5726,
-        "forks": 1344,
+        "forks": 1345,
         "topics": [
           "closember",
           "code-quality",
@@ -10683,18 +12327,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-09T05:40:02Z",
-        "pushedAt": "2026-09-23T12:53:35Z",
+        "pushedAt": "2026-09-23T15:39:27Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v4.0.8",
-        "publishedAt": "2026-08-29T12:21:15Z",
-        "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.8",
+        "tag": "v4.0.9",
+        "publishedAt": "2026-09-23T15:25:58Z",
+        "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.9",
         "source": "release",
         "signed": false
       },
       "releases": [
+        {
+          "tag": "v4.0.9",
+          "name": "What's new in Pylint 4.0.9?",
+          "publishedAt": "2026-09-23T15:25:58Z",
+          "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.9",
+          "prerelease": false
+        },
         {
           "tag": "v4.0.8",
           "name": "What's new in Pylint 4.0.8?",
@@ -10721,13 +12372,6 @@
           "name": "What's new in Pylint 4.0.5?",
           "publishedAt": "2026-02-20T09:06:45Z",
           "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.5",
-          "prerelease": false
-        },
-        {
-          "tag": "v4.0.4",
-          "name": "What's new in Pylint 4.0.4?",
-          "publishedAt": "2025-11-30T13:28:26Z",
-          "url": "https://github.com/pylint-dev/pylint/releases/tag/v4.0.4",
           "prerelease": false
         }
       ],
@@ -10756,7 +12400,7 @@
         "homepage": null,
         "language": "Python",
         "license": "Other",
-        "stars": 15653,
+        "stars": 15652,
         "forks": 1817,
         "topics": [],
         "archived": false,
@@ -10830,7 +12474,7 @@
         "homepage": "http://redis.io",
         "language": "C",
         "license": "Other",
-        "stars": 76447,
+        "stars": 76451,
         "forks": 24812,
         "topics": [
           "cache",
@@ -10931,8 +12575,8 @@
         "homepage": "https://redpanda.com",
         "language": "C++",
         "license": null,
-        "stars": 12564,
-        "forks": 792,
+        "stars": 12565,
+        "forks": 793,
         "topics": [
           "containers",
           "cpp",
@@ -11186,8 +12830,8 @@
         "homepage": "https://requests.readthedocs.io/en/latest/",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 54335,
-        "forks": 10620,
+        "stars": 54337,
+        "forks": 10629,
         "topics": [
           "client",
           "cookies",
@@ -11275,8 +12919,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Unlicense",
-        "stars": 68534,
-        "forks": 3300,
+        "stars": 68542,
+        "forks": 3308,
         "topics": [
           "cli",
           "command-line",
@@ -11355,6 +12999,11 @@
           "tool": "mattermost",
           "fit": "full",
           "note": "Channels, threads and federation, self-hosted."
+        },
+        {
+          "tool": "slack",
+          "fit": "full",
+          "note": "Channels, threads and federation on your own server, with an importer for Slack exports."
         }
       ],
       "affiliation": null,
@@ -11366,7 +13015,7 @@
         "homepage": "https://rocket.chat/",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 46155,
+        "stars": 46158,
         "forks": 13919,
         "topics": [
           "chat",
@@ -11385,7 +13034,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-23T12:59:00Z",
+        "pushedAt": "2026-09-23T16:17:34Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -11550,7 +13199,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 12915,
-        "forks": 854,
+        "forks": 855,
         "topics": [
           "build-tool",
           "bundler",
@@ -11705,7 +13354,7 @@
         "homepage": "https://docs.astral.sh/ruff",
         "language": "Rust",
         "license": "MIT",
-        "stars": 49737,
+        "stars": 49741,
         "forks": 2432,
         "topics": [
           "linter",
@@ -11724,7 +13373,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-23T12:56:02Z",
+        "pushedAt": "2026-09-23T16:26:13Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11797,7 +13446,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33707,
+        "stars": 33716,
         "forks": 1508,
         "topics": [
           "ai-native",
@@ -11817,7 +13466,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-23T13:45:10Z",
-        "pushedAt": "2026-09-23T12:39:08Z",
+        "pushedAt": "2026-09-23T16:28:14Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11890,7 +13539,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34915,
+        "stars": 34918,
         "forks": 3001,
         "topics": [
           "blob-storage",
@@ -11982,7 +13631,7 @@
         "homepage": "https://selenium.dev",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 34513,
+        "stars": 34514,
         "forks": 8719,
         "topics": [
           "dotnet",
@@ -11998,7 +13647,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-14T21:40:56Z",
-        "pushedAt": "2026-09-23T11:49:46Z",
+        "pushedAt": "2026-09-23T15:04:06Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -12065,7 +13714,7 @@
         "homepage": "https://semantic-release.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 24062,
+        "stars": 24063,
         "forks": 1810,
         "topics": [
           "automation",
@@ -12158,8 +13807,8 @@
         "homepage": "https://starlight.astro.build",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 9289,
-        "forks": 1041,
+        "stars": 9291,
+        "forks": 1042,
         "topics": [
           "astro",
           "docs-generator",
@@ -12171,7 +13820,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-16T15:55:33Z",
-        "pushedAt": "2026-09-23T12:04:39Z",
+        "pushedAt": "2026-09-23T13:34:27Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12338,13 +13987,13 @@
         "language": "Rust",
         "license": "AGPL-3.0",
         "stars": 696,
-        "forks": 106,
+        "forks": 105,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-10-15T12:53:07Z",
-        "pushedAt": "2026-09-22T17:13:37Z",
+        "pushedAt": "2026-09-23T15:14:06Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12397,6 +14046,96 @@
       "terms": "open"
     },
     {
+      "slug": "tabby",
+      "name": "Tabby",
+      "repository": "https://github.com/TabbyML/tabby",
+      "category": "code-assistant",
+      "replaces": [
+        {
+          "tool": "github-copilot",
+          "fit": "full",
+          "note": "Self-hosted completion and chat server on your own GPU, with editor extensions."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-23T16:30:46.954Z",
+      "repo": {
+        "fullName": "TabbyML/tabby",
+        "description": "Self-hosted AI coding assistant",
+        "homepage": "https://tabbyml.com",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 33889,
+        "forks": 1786,
+        "topics": [
+          "ai",
+          "codegen",
+          "coding-assistant",
+          "coding-language",
+          "developer-experience",
+          "developer-tools",
+          "gen-ai",
+          "ide",
+          "llms"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-03-16T09:18:01Z",
+        "pushedAt": "2026-06-30T20:38:02Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "release": {
+        "tag": "v0.32.0",
+        "publishedAt": "2026-01-25T17:07:44Z",
+        "url": "https://github.com/TabbyML/tabby/releases/tag/v0.32.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "nightly",
+          "name": null,
+          "publishedAt": "2023-09-08T01:39:25Z",
+          "url": "https://github.com/TabbyML/tabby/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "next-alpha",
+          "name": "This is an alpha version for Tabby dev,",
+          "publishedAt": "2026-02-09T10:49:36Z",
+          "url": "https://github.com/TabbyML/tabby/releases/tag/next-alpha",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.32.0",
+          "name": "Add support for mistral/embedding api kind. #4380",
+          "publishedAt": "2026-01-25T17:07:44Z",
+          "url": "https://github.com/TabbyML/tabby/releases/tag/v0.32.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.32.0-rc.1",
+          "name": null,
+          "publishedAt": "2026-01-22T04:58:28Z",
+          "url": "https://github.com/TabbyML/tabby/releases/tag/v0.32.0-rc.1",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.32.0-rc.0",
+          "name": null,
+          "publishedAt": "2026-01-12T11:38:05Z",
+          "url": "https://github.com/TabbyML/tabby/releases/tag/v0.32.0-rc.0",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open-core"
+    },
+    {
       "slug": "terraform",
       "name": "Terraform",
       "repository": "https://github.com/hashicorp/terraform",
@@ -12411,8 +14150,8 @@
         "homepage": "http://developer.hashicorp.com/terraform",
         "language": "Go",
         "license": "Other",
-        "stars": 49717,
-        "forks": 10623,
+        "stars": 49712,
+        "forks": 10624,
         "topics": [
           "cloud",
           "cloud-management",
@@ -12424,7 +14163,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-03-13T22:25:48Z",
-        "pushedAt": "2026-09-23T12:52:37Z",
+        "pushedAt": "2026-09-23T16:00:51Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12436,6 +14175,13 @@
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v1.17.0-beta2",
+          "name": "NEW FEATURES:",
+          "publishedAt": "2026-09-23T15:48:24Z",
+          "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2",
+          "prerelease": true
+        },
         {
           "tag": "v1.16.4",
           "name": "BUG FIXES:",
@@ -12462,13 +14208,6 @@
           "name": "BUG FIXES:",
           "publishedAt": "2026-09-09T13:22:31Z",
           "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.16.1",
-          "name": "BUG FIXES:",
-          "publishedAt": "2026-09-02T14:49:32Z",
-          "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.1",
           "prerelease": false
         }
       ],
@@ -12538,14 +14277,14 @@
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49442,
+        "stars": 49445,
         "forks": 2907,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2015-06-03T23:32:55Z",
-        "pushedAt": "2026-09-23T11:03:00Z",
+        "pushedAt": "2026-09-23T15:35:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12618,7 +14357,7 @@
         "homepage": "https://traefik.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 64935,
+        "stars": 64939,
         "forks": 6202,
         "topics": [
           "consul",
@@ -12640,7 +14379,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-13T19:04:02Z",
-        "pushedAt": "2026-09-23T12:54:06Z",
+        "pushedAt": "2026-09-23T14:40:06Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12714,7 +14453,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 31129,
-        "forks": 2442,
+        "forks": 2443,
         "topics": [
           "build-system",
           "build-tool",
@@ -12726,7 +14465,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-23T12:54:25Z",
+        "pushedAt": "2026-09-23T16:17:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12799,14 +14538,14 @@
         "homepage": "https://docs.astral.sh/ty/",
         "language": "Python",
         "license": "MIT",
-        "stars": 19736,
+        "stars": 19738,
         "forks": 334,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-05-02T16:37:51Z",
-        "pushedAt": "2026-09-23T06:40:37Z",
+        "pushedAt": "2026-09-23T16:26:12Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12969,6 +14708,11 @@
           "tool": "matomo",
           "fit": "full",
           "note": "Cookie-free, runs on PostgreSQL or MySQL."
+        },
+        {
+          "tool": "google-analytics",
+          "fit": "partial",
+          "note": "Page views, sources and events without cookies, and no reports on individual visitors."
         }
       ],
       "affiliation": null,
@@ -12980,8 +14724,8 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38967,
-        "forks": 8100,
+        "stars": 38971,
+        "forks": 8103,
         "topics": [
           "analytics",
           "audience-segmentation",
@@ -13064,7 +14808,7 @@
         "homepage": "https://uptime.kuma.pet",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 91725,
+        "stars": 91734,
         "forks": 8456,
         "topics": [
           "docker",
@@ -13084,7 +14828,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-07-03T01:02:42Z",
-        "pushedAt": "2026-09-23T00:06:37Z",
+        "pushedAt": "2026-09-23T14:57:57Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13162,7 +14906,7 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90092,
+        "stars": 90100,
         "forks": 3606,
         "topics": [
           "packaging",
@@ -13174,7 +14918,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-23T12:56:53Z",
+        "pushedAt": "2026-09-23T16:26:11Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13247,8 +14991,8 @@
         "homepage": "https://valkey.io",
         "language": "C",
         "license": "BSD-3-Clause",
-        "stars": 27280,
-        "forks": 1324,
+        "stars": 27282,
+        "forks": 1326,
         "topics": [
           "cache",
           "database",
@@ -13330,7 +15074,7 @@
         "homepage": "https://developer.hashicorp.com/vault",
         "language": "Go",
         "license": "Other",
-        "stars": 36290,
+        "stars": 36283,
         "forks": 4760,
         "topics": [
           "go",
@@ -13341,7 +15085,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-02-25T00:15:59Z",
-        "pushedAt": "2026-09-23T12:03:08Z",
+        "pushedAt": "2026-09-23T16:02:31Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13414,7 +15158,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68049,
+        "stars": 68061,
         "forks": 3240,
         "topics": [
           "bitwarden",
@@ -13501,8 +15245,8 @@
         "homepage": "https://vector.dev",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 22604,
-        "forks": 2290,
+        "stars": 22605,
+        "forks": 2291,
         "topics": [
           "agent",
           "cloud-native",
@@ -13527,7 +15271,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-23T12:51:24Z",
+        "pushedAt": "2026-09-23T15:48:15Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13600,7 +15344,7 @@
         "homepage": "https://victoriametrics.com/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 17758,
+        "stars": 17759,
         "forks": 1746,
         "topics": [
           "database",
@@ -13623,7 +15367,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-23T11:55:27Z",
+        "pushedAt": "2026-09-23T16:25:52Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13690,8 +15434,8 @@
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40918,
-        "forks": 6133,
+        "stars": 40919,
+        "forks": 6132,
         "topics": [
           "c",
           "cross-platform",
@@ -13739,7 +15483,7 @@
         "homepage": "http://vite.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 82964,
+        "stars": 82962,
         "forks": 8770,
         "topics": [
           "build-tool",
@@ -13990,8 +15734,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192815,
-        "forks": 42954,
+        "stars": 192820,
+        "forks": 42968,
         "topics": [
           "editor",
           "electron",
@@ -14003,7 +15747,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-23T12:58:42Z",
+        "pushedAt": "2026-09-23T16:29:05Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14076,7 +15820,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33349,
+        "stars": 33350,
         "forks": 1864,
         "topics": [
           "editor",
@@ -14156,7 +15900,7 @@
         "homepage": "https://webpack.js.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 65947,
+        "stars": 65946,
         "forks": 9545,
         "topics": [
           "amd",
@@ -14180,7 +15924,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-23T12:00:30Z",
+        "pushedAt": "2026-09-23T15:49:40Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14253,8 +15997,8 @@
         "homepage": "https://wezterm.org/",
         "language": "Rust",
         "license": "Other",
-        "stars": 29000,
-        "forks": 1753,
+        "stars": 29002,
+        "forks": 1754,
         "topics": [
           "rust",
           "serial",
@@ -14600,7 +16344,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90758,
+        "stars": 90763,
         "forks": 10738,
         "topics": [
           "gpui",
@@ -14612,18 +16356,32 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-23T12:59:15Z",
+        "pushedAt": "2026-09-23T16:21:28Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v1.20.2",
-        "publishedAt": "2026-09-17T05:05:25Z",
-        "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.2",
+        "tag": "v1.21.0",
+        "publishedAt": "2026-09-23T15:42:38Z",
+        "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v1.22.0-pre",
+          "name": "This week's release includes BYOK support for Claude Opus 5.5 (Anthropic) and GPT-6 Astra, Sol, and Luna (OpenAI), per-…",
+          "publishedAt": "2026-09-23T16:21:36Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.22.0-pre",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.21.0",
+          "name": "This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server c…",
+          "publishedAt": "2026-09-23T15:42:38Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0",
+          "prerelease": false
+        },
         {
           "tag": "v1.20.2",
           "name": "Fixed payment errors from non-Zed model providers incorrectly prompting users to upgrade to Zed Pro instead of displayi…",
@@ -14644,20 +16402,6 @@
           "publishedAt": "2026-09-16T16:23:43Z",
           "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.1",
           "prerelease": false
-        },
-        {
-          "tag": "v1.20.1-pre",
-          "name": "Raised the default open file descriptor soft limit at startup on Unix/macOS to prevent EMFILE (Too many open files) err…",
-          "publishedAt": "2026-09-14T15:58:36Z",
-          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.1-pre",
-          "prerelease": true
-        },
-        {
-          "tag": "v1.20.0-pre",
-          "name": "This week's release includes configurable window title formatting, support for configuring what is shown on new windows…",
-          "publishedAt": "2026-09-09T17:41:48Z",
-          "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.0-pre",
-          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -14686,7 +16430,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 35513,
-        "forks": 1459,
+        "forks": 1460,
         "topics": [
           "multiplexer",
           "terminal",
@@ -14696,7 +16440,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-09-01T14:04:28Z",
-        "pushedAt": "2026-09-23T11:15:37Z",
+        "pushedAt": "2026-09-23T14:58:50Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14769,7 +16513,7 @@
         "homepage": "https://www.getzola.org",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 17464,
+        "stars": 17463,
         "forks": 1187,
         "topics": [
           "blog-engine",
@@ -14850,6 +16594,11 @@
           "tool": "mattermost",
           "fit": "full",
           "note": "Conversations split into topics inside each channel."
+        },
+        {
+          "tool": "slack",
+          "fit": "full",
+          "note": "Conversations split into topics inside each channel, with an importer for Slack exports."
         }
       ],
       "affiliation": null,
@@ -14861,8 +16610,8 @@
         "homepage": "https://zulip.com",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 25941,
-        "forks": 10278,
+        "stars": 25942,
+        "forks": 10279,
         "topics": [
           "apache",
           "chat",
@@ -14881,7 +16630,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-25T16:37:25Z",
-        "pushedAt": "2026-09-23T05:28:32Z",
+        "pushedAt": "2026-09-23T13:01:11Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14932,6 +16681,64 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open"
+    }
+  ],
+  "products": [
+    {
+      "name": "ChatGPT",
+      "homepage": "https://chatgpt.com",
+      "vendor": "OpenAI",
+      "category": "chat-interface",
+      "description": "OpenAI's AI assistant, used through its web, desktop and mobile apps.",
+      "slug": "chatgpt"
+    },
+    {
+      "name": "Claude",
+      "homepage": "https://www.anthropic.com/claude",
+      "vendor": "Anthropic",
+      "category": "chat-interface",
+      "description": "Anthropic's AI assistant, used through its web, desktop and mobile apps.",
+      "slug": "claude"
+    },
+    {
+      "name": "Claude Code",
+      "homepage": "https://www.anthropic.com/claude-code",
+      "vendor": "Anthropic",
+      "category": "coding-agent",
+      "description": "Anthropic's coding agent, which reads a codebase, edits files and runs commands from the terminal or the editor.",
+      "slug": "claude-code"
+    },
+    {
+      "name": "GitHub",
+      "homepage": "https://github.com",
+      "vendor": "GitHub",
+      "category": "git-forge",
+      "description": "Hosted Git repositories with pull requests, issues and Actions CI.",
+      "slug": "github"
+    },
+    {
+      "name": "GitHub Copilot",
+      "homepage": "https://github.com/features/copilot",
+      "vendor": "GitHub",
+      "category": "code-assistant",
+      "description": "GitHub's AI assistant in the editor, with completions, chat and an agent mode.",
+      "slug": "github-copilot"
+    },
+    {
+      "name": "Google Analytics",
+      "homepage": "https://marketingplatform.google.com/about/analytics/",
+      "vendor": "Google",
+      "category": "web-analytics",
+      "description": "Google's hosted web analytics.",
+      "slug": "google-analytics"
+    },
+    {
+      "name": "Slack",
+      "homepage": "https://slack.com",
+      "vendor": "Salesforce",
+      "category": "team-chat",
+      "description": "Hosted team chat with channels, threads and calls.",
+      "slug": "slack"
     }
   ]
 }

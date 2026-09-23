@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 import { Ajv2020 } from "ajv/dist/2020.js";
 import { checkStructure, loadCatalog } from "../scripts/lib/catalog.ts";
-import type { Category, Tool } from "../scripts/lib/types.ts";
+import type { Category, Product, Tool } from "../scripts/lib/types.ts";
 
 const categories = new Map<string, Category>([["release-automation", { name: "R", description: "D" }]]);
 
@@ -20,7 +20,21 @@ function tool(slug: string, extra: Partial<Tool> = {}): Tool {
   };
 }
 
-const codes = (tools: Tool[]) => checkStructure({ tools, categories }).map((f) => `${f.slug}:${f.code}`);
+function product(slug: string, extra: Partial<Product> = {}): Product {
+  return {
+    slug,
+    name: slug,
+    homepage: `https://example.com/${slug}`,
+    vendor: "Acme",
+    category: "release-automation",
+    description: "A closed product.",
+    file: `data/products/${slug}.yaml`,
+    ...extra,
+  };
+}
+
+const codes = (tools: Tool[], products: Product[] = []) =>
+  checkStructure({ tools, products, categories }).map((f) => `${f.slug}:${f.code}`);
 
 describe("checkStructure", () => {
   it("accepts a replacement pointing at a listed tool", () => {
@@ -71,15 +85,80 @@ describe("checkStructure", () => {
   });
 });
 
+describe("closed products", () => {
+  const replacing = (slug: string) => tool("open", { replaces: [{ tool: slug, fit: "full" }] });
+
+  it("lets a tool replace a closed product", () => {
+    assert.deepEqual(codes([replacing("closed")], [product("closed")]), []);
+  });
+
+  it("rejects a product whose slug is already a tool, so one URL cannot mean two things", () => {
+    assert.deepEqual(codes([tool("closed"), replacing("closed")], [product("closed")]), ["closed:product-collides"]);
+  });
+
+  it("rejects a product nothing replaces, since its page would list no alternative", () => {
+    assert.deepEqual(codes([tool("open")], [product("closed")]), ["closed:unused-product"]);
+  });
+
+  it("rejects a product in a category that is not declared", () => {
+    assert.deepEqual(codes([replacing("closed")], [product("closed", { category: "nope" })]), [
+      "closed:unknown-category",
+    ]);
+  });
+});
+
 describe("loadCatalog", () => {
-  async function fixture(files: Record<string, string>): Promise<string> {
+  async function fixture(files: Record<string, string>, products: Record<string, string> = {}): Promise<string> {
     const root = await mkdtemp(join(tmpdir(), "aa-"));
     await cp(join(import.meta.dirname, "../schema"), join(root, "schema"), { recursive: true });
     await cp(join(import.meta.dirname, "../data/categories.yaml"), join(root, "data/categories.yaml"));
     await mkdir(join(root, "data/tools"), { recursive: true });
     for (const [name, body] of Object.entries(files)) await writeFile(join(root, "data/tools", name), body);
+    if (Object.keys(products).length) await mkdir(join(root, "data/products"), { recursive: true });
+    for (const [name, body] of Object.entries(products)) await writeFile(join(root, "data/products", name), body);
     return root;
   }
+
+  it("loads a closed product from data/products and holds it to its own schema", async () => {
+    const root = await fixture(
+      {
+        "agent.yaml": [
+          "name: Agent",
+          "repository: https://github.com/acme/agent",
+          "category: release-automation",
+          "replaces:",
+          "  - tool: closed",
+          "    fit: full",
+        ].join("\n"),
+      },
+      {
+        "closed.yaml": [
+          "name: Closed",
+          "homepage: https://example.com",
+          "vendor: Acme",
+          "category: release-automation",
+          "description: A closed product.",
+        ].join("\n"),
+        "leaky.yaml": [
+          "name: Leaky",
+          "homepage: https://example.com",
+          "vendor: Acme",
+          "category: release-automation",
+          "description: D.",
+          "stars: 5",
+        ].join("\n"),
+      },
+    );
+    const { catalog, findings } = await loadCatalog(root);
+    assert.deepEqual(
+      catalog.products.map((p) => p.slug),
+      ["closed"],
+    );
+    assert.deepEqual(
+      findings.map((f) => `${f.slug}:${f.code}`),
+      ["leaky:schema"],
+    );
+  });
 
   it("loads a valid entry and takes the slug from the file name", async () => {
     const root = await fixture({

@@ -4,6 +4,7 @@ import { basename } from "node:path";
 import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
+import { checkHomepage } from "./lib/homepage.ts";
 import { renderFindings } from "./lib/report.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 
@@ -11,7 +12,8 @@ const root = process.cwd();
 const args = process.argv.slice(2);
 
 const { catalog, findings } = await loadCatalog(root);
-const targets = selectTargets(args, catalog.tools.map((t) => t.slug));
+const known = [...catalog.tools, ...catalog.products].map((entry) => entry.slug);
+const targets = selectSlugs(args, known);
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
 const replaced = replacedSlugs(catalog.tools);
@@ -21,7 +23,12 @@ const remote = await mapLimit(
   4,
   async (tool) => judge(tool, await gather(gh, tool, true), now, replaced),
 );
-const all = [...findings, ...remote.flat()];
+const homepages = await mapLimit(
+  catalog.products.filter((p) => targets.includes(p.slug)),
+  4,
+  (product) => checkHomepage(product),
+);
+const all = [...findings, ...remote.flat(), ...homepages.flat()];
 
 const report = renderFindings(all, targets);
 console.log(report);
@@ -29,11 +36,11 @@ if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SU
 
 process.exitCode = all.some((f) => f.severity === "error") ? 1 : 0;
 
-function selectTargets(argv: string[], known: string[]): string[] {
+function selectSlugs(argv: string[], known: string[]): string[] {
   if (argv.includes("--all")) return known;
   const from = argv[argv.indexOf("--changed-from") + 1];
   if (argv.includes("--changed-from") && from) {
-    const out = execFileSync("git", ["diff", "--name-only", "--diff-filter=AMR", `${from}...HEAD`, "--", "data/tools"], {
+    const out = execFileSync("git", ["diff", "--name-only", "--diff-filter=AMR", `${from}...HEAD`, "--", "data/tools", "data/products"], {
       encoding: "utf8",
     });
     return out

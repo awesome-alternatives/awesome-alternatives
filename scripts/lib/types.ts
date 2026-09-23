@@ -25,6 +25,21 @@ export interface Tool extends ToolEntry {
   file: string;
 }
 
+export interface ProductEntry {
+  name: string;
+  homepage: string;
+  vendor: string;
+  category: string;
+  description: string;
+}
+
+export interface Product extends ProductEntry {
+  slug: string;
+  file: string;
+}
+
+export type ListedProduct = Omit<Product, "file">;
+
 export interface Category {
   name: string;
   description: string;
@@ -40,17 +55,19 @@ export type BlockingCode =
   | "fork"
   | "not-found"
   | "private"
+  | "product-collides"
   | "replaces-itself"
   | "schema"
   | "too-new"
   | "unknown-category"
-  | "unknown-replacement";
+  | "unknown-replacement"
+  | "unused-product";
 
 export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-release", "star-spike"] as const;
 
 export type FlagCode = (typeof FLAG_CODES)[number];
 
-export type FindingCode = BlockingCode | FlagCode;
+export type FindingCode = BlockingCode | FlagCode | "homepage-unreachable";
 
 export function isFlagCode(code: FindingCode): code is FlagCode {
   return (FLAG_CODES as readonly string[]).includes(code);

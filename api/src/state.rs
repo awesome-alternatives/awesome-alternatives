@@ -20,9 +20,9 @@ pub struct Loaded {
 
 impl Loaded {
     pub fn new(catalog: Catalog, embedder: Option<&dyn Embedder>) -> Self {
-        let vocabulary = Vocabulary::of(&catalog.tools);
+        let vocabulary = Vocabulary::of(&catalog.tools, &catalog.products);
         let index = embedder.and_then(|embedder| {
-            Index::build(embedder, &catalog.tools, &vocabulary)
+            Index::build(embedder, &catalog.tools, &catalog.products, &vocabulary)
                 .inspect_err(|error| {
                     tracing::warn!(%error, "semantic index unavailable, search uses keywords only");
                 })

@@ -5,3 +5,6 @@ replaces:
   - tool: gitlab
     fit: full
     note: Self-hosted forge with CI/CD and boards built in.
+  - tool: github
+    fit: full
+    note: Pull requests, issues and built-in CI/CD, with pipelines in its own format rather than GitHub Actions.

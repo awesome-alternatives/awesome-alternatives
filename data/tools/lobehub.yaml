@@ -1,0 +1,11 @@
+name: LobeHub
+repository: https://github.com/lobehub/lobehub
+category: chat-interface
+terms: source-available
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Chat app with plugins and agents, self-hosted or on the desktop, for most model providers.
+  - tool: claude
+    fit: partial
+    note: Chat app with plugins and agents, self-hosted or on the desktop, for most model providers.

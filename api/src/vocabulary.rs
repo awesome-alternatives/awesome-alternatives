@@ -2,7 +2,7 @@ use std::collections::{BTreeMap, BTreeSet};
 
 use serde::Serialize;
 
-use crate::catalog::Tool;
+use crate::catalog::{Product, Tool};
 
 #[derive(Debug, Default, Clone, Serialize)]
 pub struct Vocabulary {
@@ -13,12 +13,12 @@ pub struct Vocabulary {
 }
 
 impl Vocabulary {
-    pub fn of(tools: &[Tool]) -> Self {
+    pub fn of(tools: &[Tool], products: &[Product]) -> Self {
         let name_of = |slug: &str| {
-            tools
-                .iter()
-                .find(|t| t.slug == slug)
-                .map_or_else(|| slug.to_owned(), |t| t.name.clone())
+            let tool = tools.iter().find(|t| t.slug == slug).map(|t| &t.name);
+            let product = || products.iter().find(|p| p.slug == slug).map(|p| &p.name);
+            tool.or_else(product)
+                .map_or_else(|| slug.to_owned(), Clone::clone)
         };
         let targets = tools
             .iter()
@@ -70,7 +70,7 @@ mod tests {
                 1,
             ),
         ];
-        let vocabulary = Vocabulary::of(&tools);
+        let vocabulary = Vocabulary::of(&tools, &[]);
         assert_eq!(
             vocabulary.targets.keys().collect::<Vec<_>>(),
             ["semantic-release", "unlisted"]
@@ -78,5 +78,26 @@ mod tests {
         assert_eq!(vocabulary.targets["unlisted"], "unlisted");
         assert_eq!(vocabulary.languages, ["Go", "JavaScript", "Rust"]);
         assert_eq!(vocabulary.licenses, ["Apache-2.0", "MIT"]);
+    }
+
+    #[test]
+    fn a_closed_product_is_named_rather_than_left_as_its_slug() {
+        let tools = [tool(
+            "opencode",
+            "TypeScript",
+            "MIT",
+            &[("claude-code", Fit::Full)],
+            1,
+        )];
+        let products = [Product {
+            slug: "claude-code".into(),
+            name: "Claude Code".into(),
+            homepage: "https://example.com".into(),
+            vendor: "Anthropic".into(),
+            category: "coding-agent".into(),
+            description: "A coding agent.".into(),
+        }];
+        let vocabulary = Vocabulary::of(&tools, &products);
+        assert_eq!(vocabulary.targets["claude-code"], "Claude Code");
     }
 }
