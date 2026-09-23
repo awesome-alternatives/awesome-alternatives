@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.36.0] - 2026-09-23
+
+### Features
+
+- feat(site): publish llms.txt so an agent finds the catalog, not the pages (#110)
+
 ## [0.35.0] - 2026-09-22
 
 ### Features
