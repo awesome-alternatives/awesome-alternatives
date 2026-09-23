@@ -2,17 +2,20 @@
 import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import CompareRow from "../../../components/CompareRow.astro";
 import { Mark } from "../../../components/Mark.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor, plural } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import Base from "../../../layouts/Base.astro";
+import { withHome } from "../../../lib/breadcrumbs.ts";
 import { cadenceDays } from "../../../lib/cadence.ts";
-import { nameOf, pairs } from "../../../lib/catalog.ts";
+import { categoryName, nameOf, pairs } from "../../../lib/catalog.ts";
 import type { Pair } from "../../../lib/compare.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { slugify } from "../../../lib/slug.ts";
+import { breadcrumbList } from "../../../lib/structuredData.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -31,8 +34,11 @@ const card = m.islands.card;
 const flagLabels: Record<string, string> = m.islands.flag;
 const names: [string, string] = [a.name, b.name];
 const heading = format(m.compare.title, { a: a.name, b: b.name });
-const backTarget = pair.shared[0]?.target ?? pair.edges[0]?.to;
-const back = pathFor(locale, backTarget ? `/alternatives/${backTarget}/` : `/tools/${a.slug}/`);
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  { name: categoryName(a.category), href: pathFor(locale, `/categories/${slugify(a.category)}/`) },
+  { name: heading, href: pathFor(locale, `/compare/${pair.slug}/`) },
+]);
+const trail = breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: new URL(crumb.href, Astro.site).href })));
 const cadence = (tool: EnrichedTool) => {
   const days = cadenceDays(tool.releases);
   return days === null ? m.compare.cadenceUnknown : plural(locale, m.compare.cadence, days);
@@ -49,9 +55,10 @@ const targetLabel = (target: string) => format(m.compare.targetLink, { name: nam
 <Base
   title={heading}
   description={format(m.compare.description, { a: a.name, b: b.name })}
+  structuredData={[trail]}
 >
   <div class="wide">
-    <a class="back" href={back}>{m.listing.back}</a>
+    <Breadcrumbs locale={locale} crumbs={crumbs} />
     <p class="context">{m.compare.context}</p>
     <h1>{heading}</h1>
     <p class="lede">{m.compare.lede}</p>

@@ -117,7 +117,12 @@ export const es: Messages = {
 
   category: {
     context: "categoría",
-    title: "{name}: {count} herramientas de código abierto",
+    title: { one: "{name}: 1 herramienta", other: "{name}: {n} herramientas" },
+    titleOpen: { one: "{name}: 1 herramienta de código abierto", other: "{name}: {n} herramientas de código abierto" },
+    titleSelfHost: { one: "1 herramienta autoalojable: {lower}", other: "{n} herramientas autoalojables: {lower}" },
+    descriptionSelfHost: "{description} Cada una se ejecuta en tu propio servidor. {count} herramientas comparadas por lenguaje, licencia, estrellas y última versión.",
+    comparison: "Comparativa",
+    replaces: "Lo que sustituyen estas herramientas",
     description: "{description} {count} herramientas comparadas por lenguaje, licencia, estrellas y última versión.",
   },
 
@@ -144,8 +149,21 @@ export const es: Messages = {
     website: "Sitio web ↗",
   },
 
+  breadcrumb: {
+    label: "Ruta de navegación",
+    home: "Inicio",
+  },
+
   target: {
-    title: "Alternativas a {name}",
+    title: { one: "1 alternativa a {name}", other: "{n} alternativas a {name}" },
+    titleOpen: { one: "1 alternativa de código abierto a {name}", other: "{n} alternativas de código abierto a {name}" },
+    dropIns: "Sustitución directa: {names}.",
+    comparison: "Comparativa",
+    listHeading: "Todas las alternativas",
+    about: "Sobre {name}",
+    pairs: "Cara a cara",
+    vendor: "Empresa",
+    toolColumn: "Herramienta",
     description:
       "{count} alternativas a {name}, en {languages}. Compara el nivel de sustitución, la licencia, las estrellas y la última versión firmada.",
     context: "alternativas",
@@ -178,6 +196,8 @@ export const es: Messages = {
     lastPush: "Último push",
     terms: "Condiciones",
     selfHost: "Autoalojable",
+    selfHostNo: "No",
+    related: "Más en {category}",
     selfHostYes: "Sí",
     website: "Sitio web ↗",
     edit: "Editar esta entrada",

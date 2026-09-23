@@ -118,7 +118,12 @@ export const de: Messages = {
 
   category: {
     context: "Kategorie",
-    title: "{name}: {count} Open-Source-Tools",
+    title: { one: "{name}: 1 Tool", other: "{name}: {n} Tools" },
+    titleOpen: { one: "{name}: 1 Open-Source-Tool", other: "{name}: {n} Open-Source-Tools" },
+    titleSelfHost: { one: "1 Tool zum Selbsthosten: {lower}", other: "{n} Tools zum Selbsthosten: {lower}" },
+    descriptionSelfHost: "{description} Jedes läuft auf deinem eigenen Server. {count} Tools, verglichen nach Sprache, Lizenz, Sternen und neuestem Release.",
+    comparison: "Im Vergleich",
+    replaces: "Was diese Tools ersetzen",
     description: "{description} {count} Tools, verglichen nach Sprache, Lizenz, Sternen und neuestem Release.",
   },
 
@@ -145,8 +150,21 @@ export const de: Messages = {
     website: "Website ↗",
   },
 
+  breadcrumb: {
+    label: "Brotkrumen",
+    home: "Start",
+  },
+
   target: {
-    title: "Alternativen zu {name}",
+    title: { one: "1 Alternative zu {name}", other: "{n} Alternativen zu {name}" },
+    titleOpen: { one: "1 Open-Source-Alternative zu {name}", other: "{n} Open-Source-Alternativen zu {name}" },
+    dropIns: "Drop-in: {names}.",
+    comparison: "Im Vergleich",
+    listHeading: "Alle Alternativen",
+    about: "Über {name}",
+    pairs: "Direkt verglichen",
+    vendor: "Anbieter",
+    toolColumn: "Tool",
     description:
       "{count} Alternativen zu {name}, in {languages}. Ersatzgrad, Lizenz, Sterne und das neueste signierte Release im Vergleich.",
     context: "Alternativen",
@@ -179,6 +197,8 @@ export const de: Messages = {
     lastPush: "Letzter Push",
     terms: "Bedingungen",
     selfHost: "Selbst hostbar",
+    selfHostNo: "Nein",
+    related: "Mehr aus {category}",
     selfHostYes: "Ja",
     website: "Website ↗",
     edit: "Diesen Eintrag bearbeiten",

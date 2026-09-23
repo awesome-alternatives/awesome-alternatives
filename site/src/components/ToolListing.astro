@@ -35,4 +35,5 @@ const listed = itemList(
   <div class="tools listing">
     {tools.map((tool) => <ToolCard locale={locale} strings={m.islands} tool={tool} />)}
   </div>
+  <slot name="after" />
 </Base>

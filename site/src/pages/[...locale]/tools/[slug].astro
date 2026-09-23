@@ -8,7 +8,9 @@ import ToolTabs from "../../../components/ToolTabs.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import Base from "../../../layouts/Base.astro";
+import { withHome } from "../../../lib/breadcrumbs.ts";
 import { canonicalForTool } from "../../../lib/canonical.ts";
 import { categories, checkedAt, nameOf, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
 import { comparePath, pairForTool } from "../../../lib/compare.ts";
@@ -16,7 +18,7 @@ import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { historyUrl } from "../../../lib/freshness.ts";
-import { softwareSourceCode } from "../../../lib/structuredData.ts";
+import { breadcrumbList, softwareSourceCode } from "../../../lib/structuredData.ts";
 import { slugify } from "../../../lib/slug.ts";
 
 export const getStaticPaths = (() =>
@@ -32,7 +34,14 @@ const m = messages(locale);
 const { repo, release, releases } = tool;
 const replacedBy = alternativesTo(tools, tool.slug);
 const category = categories[tool.category];
-const back = pathFor(locale, tool.replaces[0] ? `/alternatives/${tool.replaces[0].tool}/` : "/");
+const absolute = (path: string) => new URL(path, Astro.site).href;
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  { name: category?.name ?? tool.category, href: pathFor(locale, `/categories/${slugify(tool.category)}/`) },
+  { name: tool.name, href: pathFor(locale, `/tools/${tool.slug}/`) },
+]);
+const related = tools
+  .filter((other) => other.category === tool.category && other.slug !== tool.slug && !other.repo.archived)
+  .sort((a, b) => b.repo.stars - a.repo.stars);
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
@@ -50,10 +59,13 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
   })}
   description={repo.description ?? format(m.tool.descriptionFallback, { name: tool.name })}
   canonicalPath={canonicalForTool(tool.slug, replacedBy.length)}
-  structuredData={[softwareSourceCode(tool, new URL(pathFor(locale, `/tools/${tool.slug}/`), Astro.site).href)]}
+  structuredData={[
+    softwareSourceCode(tool, absolute(pathFor(locale, `/tools/${tool.slug}/`))),
+    breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: absolute(crumb.href) }))),
+  ]}
 >
   <div class="wide">
-    <a class="back" href={back}>{m.listing.back}</a>
+    <Breadcrumbs locale={locale} crumbs={crumbs} />
     {
       tool.replaces.length > 0 && (
         <p class="context">
@@ -185,5 +197,26 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
         </p>
       </aside>
     </div>
+
+    {
+      related.length > 0 && (
+        <section class="page-section">
+          <h2>{format(m.tool.related, { category: category?.name ?? tool.category })}</h2>
+          <ul class="targets">
+            {related.map((other) => (
+              <li>
+                <a href={pathFor(locale, `/tools/${other.slug}/`)}>
+                  <span>
+                    <span class="target-name">{other.name}</span>
+                    <span class="target-category">{other.repo.language ?? m.islands.card.unknownLanguage}</span>
+                  </span>
+                  <span class="target-count">→</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
   </div>
 </Base>

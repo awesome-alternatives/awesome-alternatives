@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/check-sitemap.ts && node scripts/write-redirects.ts",
+    "build": "astro build && node scripts/check-sitemap.ts && node scripts/check-titles.ts && node scripts/write-redirects.ts",
     "preview": "astro preview",
     "check": "astro check",
     "test": "node --test \"tests/**/*.test.ts\""

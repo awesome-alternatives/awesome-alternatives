@@ -2,11 +2,14 @@
 import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
+import ComparisonTable from "../../../components/ComparisonTable.astro";
+import LinkGrid from "../../../components/LinkGrid.astro";
 import ToolListing from "../../../components/ToolListing.astro";
 import type { Locale } from "../../../i18n/index.ts";
-import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
-import { categories, categoryGroups, categoryName } from "../../../lib/catalog.ts";
+import { categories, categoryGroups, categoryName, targetItems, targets } from "../../../lib/catalog.ts";
+import { categoryDescription, categoryTitle } from "../../../lib/intent.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -25,16 +28,34 @@ interface Props {
 const { locale, key, tools } = Astro.props;
 const m = messages(locale);
 const name = categoryName(key);
-const description = categories[key]?.description ?? "";
+const category = { name, description: categories[key]?.description ?? "", selfHost: categories[key]?.selfHost };
+const selfHostCategories = Object.keys(categories).filter((k) => categories[k]?.selfHost === true);
+const members = new Set(tools.map((tool) => tool.slug));
+const replacedItems = targetItems(
+  targets().filter((target) => target.alternatives.some((tool) => members.has(tool.slug))),
+).map((item) => ({ ...item, href: pathFor(locale, item.href) }));
 ---
 
 <ToolListing
   locale={locale}
-  title={format(m.category.title, { name, count: tools.length })}
-  description={format(m.category.description, { description, count: tools.length })}
+  title={categoryTitle(locale, m.category, category, tools)}
+  description={categoryDescription(m.category, category, tools.length)}
   context={m.category.context}
   parent={pathFor(locale, "/categories/")}
   heading={name}
-  lede={description}
+  lede={category.description}
   tools={tools}
-/>
+>
+  <section class="page-section">
+    <h2>{m.category.comparison}</h2>
+    <ComparisonTable locale={locale} caption={name} tools={tools} selfHostCategories={selfHostCategories} />
+  </section>
+  {
+    replacedItems.length > 0 && (
+      <section class="page-section" slot="after">
+        <h2>{m.category.replaces}</h2>
+        <LinkGrid locale={locale} items={replacedItems} />
+      </section>
+    )
+  }
+</ToolListing>
