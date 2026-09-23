@@ -54,6 +54,8 @@ export const islands = {
       anyCategory: "Any category",
       dropIn: "Drop-in only",
     },
+    showing: "Showing {shown} of {n} tools",
+    more: "Show more",
     chips: {
       replaces: "Replaces {name}",
       dropIn: "Drop-in only",

@@ -22,6 +22,8 @@ export interface SearchResult {
   filters: Filters;
   interpretedBy: "jev" | "local";
   count: number;
+  limit: number;
+  offset: number;
   tools: ToolView[];
 }
 
