@@ -8,7 +8,7 @@ import type { Locale } from "../../i18n/index.ts";
 import { format, messages, pathFor } from "../../i18n/index.ts";
 import { localePaths } from "../../i18n/paths.ts";
 import Base from "../../layouts/Base.astro";
-import { targetItems, targets, tools } from "../../lib/catalog.ts";
+import { categoryGroups, categoryName, targetItems, targets, tools } from "../../lib/catalog.ts";
 
 export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
 
@@ -20,6 +20,9 @@ const { locale } = Astro.props;
 const m = messages(locale);
 const names = Object.fromEntries(targets().map((t) => [t.slug, t.name]));
 const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item.href) }));
+const categories = categoryGroups
+  .map((group) => ({ key: group.label, name: categoryName(group.label) }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <Base revealSearch title={m.home.title} description={m.home.description}>
@@ -28,7 +31,14 @@ const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item
     <h1>{m.home.heading}</h1>
     <p class="lede">{format(m.home.lede, { count: tools.length })}</p>
     <div data-reveal-anchor>
-      <Search client:load locale={locale} strings={m.islands} names={names} examples={m.home.examples} />
+      <Search
+        client:load
+        locale={locale}
+        strings={m.islands}
+        names={names}
+        examples={m.home.examples}
+        categories={categories}
+      />
     </div>
     <noscript>
       <p class="empty">

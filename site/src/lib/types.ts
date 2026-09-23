@@ -13,6 +13,7 @@ export interface Filters {
   replaces?: string;
   language?: string;
   license?: string;
+  category?: string;
   dropIn?: boolean;
 }
 

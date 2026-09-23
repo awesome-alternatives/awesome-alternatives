@@ -801,6 +801,54 @@ h1 .mark-archived {
   letter-spacing: 0;
 }
 
+.refine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin: 28px 0 0;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.refine-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.refine select {
+  appearance: none;
+  color-scheme: dark;
+  padding: 5px 10px;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+  font: inherit;
+  cursor: pointer;
+}
+
+.refine select:hover {
+  border-color: var(--dim);
+}
+
+.refine option {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.refine-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.refine-toggle input {
+  accent-color: var(--accent);
+}
+
 .facets {
   display: grid;
   gap: 12px;

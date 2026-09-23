@@ -5,6 +5,7 @@ import type { Islands } from "../i18n/islands.en.ts";
 import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, chips, without } from "../lib/chips.ts";
 import { type SearchFailure, describe, failureFromThrown, guessTarget, offersFallback } from "../lib/failure.ts";
+import { isRefined, readSearchUrl, type Refinement, refined, searchParams } from "../lib/searchUrl.ts";
 import { href, type SuggestIndex, type Suggestion, suggest } from "../lib/suggest.ts";
 import type { SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
@@ -23,11 +24,17 @@ async function loadIndex(signal: AbortSignal): Promise<SuggestIndex> {
   return await response.json();
 }
 
+export interface CategoryOption {
+  key: string;
+  name: string;
+}
+
 interface Props {
   locale: Locale;
   strings: Islands;
   names: Record<string, string>;
   examples: string[];
+  categories: CategoryOption[];
 }
 
 type State =
@@ -36,13 +43,14 @@ type State =
   | { kind: "done"; result: SearchResult }
   | { kind: "error"; failure: SearchFailure; target: string | null };
 
-export default function Search({ locale, strings, names, examples }: Props) {
+export default function Search({ locale, strings, names, examples, categories }: Props) {
   const [query, setQuery] = useState("");
   const [state, setState] = useState<State>({ kind: "idle" });
   const [typing, setTyping] = useState("");
   const [indexState, setIndexState] = useState<IndexState>({ kind: "none" });
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(-1);
+  const [refinement, setRefinement] = useState<Refinement>({});
   const inflight = useRef<AbortController | null>(null);
   const indexLoad = useRef<AbortController | null>(null);
   const copy = strings.search;
@@ -116,14 +124,35 @@ export default function Search({ locale, strings, names, examples }: Props) {
     }
   }
 
-  function submit(q: string) {
+  function remember(q: string, next: Refinement) {
+    const url = new URL(window.location.href);
+    url.search = searchParams(q, next).toString();
+    window.history.replaceState(null, "", url);
+  }
+
+  function submit(q: string, next: Refinement = refinement) {
     const trimmed = q.trim();
     if (!trimmed) return;
     setQuery(trimmed);
-    const url = new URL(window.location.href);
-    url.searchParams.set("q", trimmed);
-    window.history.replaceState(null, "", url);
-    void run((signal) => search(trimmed, signal), guessTarget(trimmed, names));
+    remember(trimmed, next);
+    void run(async (signal) => {
+      const result = await search(trimmed, signal);
+      if (!isRefined(next)) return result;
+      const filters = refined(result.filters, next);
+      return { ...result, ...(await listTools(filters, signal)), filters };
+    }, guessTarget(trimmed, names));
+  }
+
+  function refine(next: Refinement) {
+    setRefinement(next);
+    remember(query, next);
+    if (state.kind !== "done") return;
+    const base = state.result;
+    const filters = refined(base.filters, next);
+    void run(
+      async (signal) => ({ ...base, ...(await listTools(filters, signal)), filters }),
+      filters.replaces ?? null,
+    );
   }
 
   function drop(result: SearchResult, key: ChipKey) {
@@ -135,8 +164,9 @@ export default function Search({ locale, strings, names, examples }: Props) {
   }
 
   useEffect(() => {
-    const q = new URLSearchParams(window.location.search).get("q");
-    if (q) submit(q);
+    const { q, refinement: fromUrl } = readSearchUrl(window.location.search);
+    setRefinement(fromUrl);
+    if (q) submit(q, fromUrl);
     return () => {
       inflight.current?.abort();
       indexLoad.current?.abort();
@@ -229,12 +259,64 @@ export default function Search({ locale, strings, names, examples }: Props) {
         />
       )}
       {state.kind === "done" && (
-        <Results locale={locale} strings={strings} result={state.result} names={names} onDrop={drop} />
+        <>
+          <Refine
+            copy={copy.refine}
+            categories={categories}
+            refinement={refinement}
+            dropIn={refinement.dropIn ?? state.result.filters.dropIn ?? false}
+            onChange={refine}
+          />
+          <Results locale={locale} strings={strings} result={state.result} names={names} onDrop={drop} />
+        </>
       )}
       <p className="visually-hidden" role="status" aria-live="polite">
         {announcement(locale, state, copy)}
       </p>
     </section>
+  );
+}
+
+function Refine({
+  copy,
+  categories,
+  refinement,
+  dropIn,
+  onChange,
+}: {
+  copy: Islands["search"]["refine"];
+  categories: CategoryOption[];
+  refinement: Refinement;
+  dropIn: boolean;
+  onChange: (next: Refinement) => void;
+}) {
+  return (
+    <div className="refine" role="group" aria-label={copy.label}>
+      <label className="refine-field">
+        <span>{copy.category}</span>
+        <select
+          value={refinement.category ?? ""}
+          onChange={(event) =>
+            onChange({ ...refinement, category: event.currentTarget.value || undefined })
+          }
+        >
+          <option value="">{copy.anyCategory}</option>
+          {categories.map((category) => (
+            <option key={category.key} value={category.key}>
+              {category.name}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label className="refine-toggle">
+        <input
+          type="checkbox"
+          checked={dropIn}
+          onChange={(event) => onChange({ ...refinement, dropIn: event.currentTarget.checked })}
+        />
+        <span>{copy.dropIn}</span>
+      </label>
+    </div>
   );
 }
 
