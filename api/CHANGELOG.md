@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.12.0] - 2026-09-23
+
+### Features
+
+- feat: turn maintained, self-hostable and open source in a query into filters the page applies (#141)
+
 ## [0.11.0] - 2026-09-23
 
 ### Features
