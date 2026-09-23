@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.50.0] - 2026-09-23
+
+### Features
+
+- feat(site): make alternatives and category pages answer the search that lands on them (#144)
+
 ## [0.49.0] - 2026-09-23
 
 ### Features
