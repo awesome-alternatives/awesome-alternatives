@@ -25,6 +25,7 @@ The catalog file is the source of truth and is dedicated to the public domain un
 - [catalog.json](${CATALOG}): every tool with its GitHub facts, what it replaces and how well. CC0 1.0, around 440 KB.
 - [search-index.json](${SITE}/search-index.json): names, slugs and categories only, around 11 KB, enough to resolve a tool name without reading the catalog.
 - [Feed](${SITE}/feed.xml): tools newly added to the catalog.
+- One tool as markdown: ${SITE}/tools/{slug}.md, for example ${SITE}/tools/ruff.md. The slug is the last part of a tool's page URL. Read this when you want one entry and not the catalog.
 
 ## API
 
