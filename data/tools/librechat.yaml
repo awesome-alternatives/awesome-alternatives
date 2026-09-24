@@ -8,3 +8,4 @@ replaces:
   - tool: claude
     fit: partial
     note: Self-hosted chat app for Anthropic, OpenAI, Google and local models, with agents and file uploads.
+deploy: [container, compose, helm]

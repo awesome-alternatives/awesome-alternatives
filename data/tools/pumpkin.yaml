@@ -5,3 +5,4 @@ replaces:
   - tool: paper
     fit: partial
     note: Written from scratch in Rust with its own plugin API, so Bukkit plugins do not carry over.
+deploy: [container, compose, binary]

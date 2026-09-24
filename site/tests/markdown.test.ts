@@ -30,6 +30,7 @@ function tool(over: Partial<EnrichedTool> = {}, repo: Partial<EnrichedTool["repo
     flags: [],
     terms: "open",
     capabilities: {},
+    deploy: [],
     release: null,
     releases: [],
     ...over,
@@ -155,4 +156,10 @@ test("declared capabilities are listed with their documentation and any known li
   );
   assert.ok(out.includes(["## Capabilities", "", "- CI/CD: https://example.com/ci (Needs a runner.)"].join("\n")));
   assert.ok(!toolMarkdown(tool(), around).includes("## Capabilities"));
+});
+
+test("deploy methods are spelled out in their declared order, and the line is left out when there are none", () => {
+  const out = toolMarkdown(tool({ deploy: ["container", "helm", "package"] }), { ...around, selfHost: true });
+  assert.ok(out.includes("- Deploy: container image, Helm chart, OS packages\n"));
+  assert.ok(!toolMarkdown(tool(), { ...around, selfHost: true }).includes("- Deploy:"));
 });

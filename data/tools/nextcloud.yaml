@@ -8,3 +8,4 @@ replaces:
   - tool: google-drive
     fit: full
     note: Files plus collaborative documents through its office integration, self-hosted.
+deploy: [container, compose, helm]

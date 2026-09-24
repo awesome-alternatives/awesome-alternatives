@@ -2,6 +2,7 @@ import { execFileSync } from "node:child_process";
 import { appendFile } from "node:fs/promises";
 import { basename } from "node:path";
 import { loadCatalog } from "./lib/catalog.ts";
+import { checkDeploy, fetchDeployEvidence } from "./lib/deploy.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { checkCapabilityDocs, checkHomepage, checkMigrations } from "./lib/links.ts";
@@ -22,7 +23,15 @@ const replaced = replacedSlugs(catalog.tools);
 const remote = await mapLimit(
   catalog.tools.filter((t) => targets.includes(t.slug)),
   4,
-  async (tool) => judge(tool, await gather(gh, tool, true), now, replaced),
+  async (tool) => {
+    const evidence = await gather(gh, tool, true);
+    const { repo } = evidence;
+    const deploy =
+      tool.deploy?.length && repo
+        ? checkDeploy(tool, await fetchDeployEvidence(gh, repo.fullName, repo.defaultBranch, tool.deploy, tool.path))
+        : [];
+    return [...judge(tool, evidence, now, replaced), ...deploy];
+  },
 );
 const homepages = await mapLimit(
   catalog.products.filter((p) => targets.includes(p.slug)),

@@ -5,3 +5,4 @@ replaces:
   - tool: lfs-test-server
     fit: full
     note: Pluggable Python server with cloud storage back ends.
+deploy: [container]

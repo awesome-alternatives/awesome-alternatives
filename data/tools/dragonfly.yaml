@@ -9,3 +9,4 @@ replaces:
     fit: full
     note: "Speaks the memcached protocol as well as Redis's."
 terms: source-available
+deploy: [container, compose, helm, binary, package]

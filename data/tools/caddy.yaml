@@ -5,3 +5,4 @@ replaces:
   - tool: nginx
     fit: full
     note: Automatic HTTPS and a shorter configuration.
+deploy: [container, binary, package]

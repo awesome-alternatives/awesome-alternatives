@@ -6,3 +6,4 @@ replaces:
     fit: full
     note: Rust server with S3 and local storage, built for self-hosting.
 affiliation: Maintained by FerrLabs, whose founder also maintains this directory.
+deploy: [container, helm, binary]

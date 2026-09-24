@@ -11,3 +11,4 @@ replaces:
   - tool: datadog
     fit: partial
     note: Metrics storage and alerting you run yourself; logs and traces need other tools.
+deploy: [container, compose, helm, binary]

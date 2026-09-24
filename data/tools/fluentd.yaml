@@ -1,3 +1,4 @@
 name: Fluentd
 repository: https://github.com/fluent/fluentd
 category: log-pipeline
+deploy: [container, helm, package]

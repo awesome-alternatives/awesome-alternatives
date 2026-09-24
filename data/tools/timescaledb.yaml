@@ -6,3 +6,4 @@ replaces:
   - tool: influxdb
     fit: full
     note: Time series as a PostgreSQL extension, queried with plain SQL.
+deploy: [container, package]

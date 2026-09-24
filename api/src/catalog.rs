@@ -21,6 +21,16 @@ pub enum Terms {
     Unknown,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "lowercase")]
+pub enum DeployMethod {
+    Container,
+    Compose,
+    Helm,
+    Binary,
+    Package,
+}
+
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Replacement {
     pub tool: String,
@@ -85,6 +95,8 @@ pub struct Tool {
     pub self_host: bool,
     #[serde(default)]
     pub capabilities: BTreeMap<String, Capability>,
+    #[serde(default)]
+    pub deploy: Vec<DeployMethod>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
@@ -270,5 +282,29 @@ mod tests {
         assert!(live.is_maintained());
         assert!(!idle.is_maintained());
         assert!(!archived.is_maintained());
+    }
+
+    #[test]
+    fn deploy_methods_come_through_and_default_to_none() {
+        let gitea = crate::fixtures::tool("gitea", "Go", "MIT", &[], 1);
+        let mut entry = serde_json::to_value(&gitea).unwrap();
+        entry["deploy"] = serde_json::json!(["container", "helm"]);
+        let read: Tool = serde_json::from_value(entry.clone()).unwrap();
+        assert_eq!(read.deploy, [DeployMethod::Container, DeployMethod::Helm]);
+        assert_eq!(
+            serde_json::to_value(&read).unwrap()["deploy"],
+            serde_json::json!(["container", "helm"])
+        );
+
+        entry.as_object_mut().unwrap().remove("deploy");
+        assert!(
+            serde_json::from_value::<Tool>(entry.clone())
+                .unwrap()
+                .deploy
+                .is_empty()
+        );
+
+        entry["deploy"] = serde_json::json!(["snap"]);
+        assert!(serde_json::from_value::<Tool>(entry).is_err());
     }
 }

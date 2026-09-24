@@ -8,3 +8,4 @@ replaces:
   - tool: claude
     fit: partial
     note: Desktop or self-hosted app built around chatting with your own documents, with any model provider.
+deploy: [container, compose, helm]

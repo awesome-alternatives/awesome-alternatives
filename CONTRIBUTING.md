@@ -55,6 +55,22 @@ replaces:
 
   An entry GitHub cannot classify and nobody has checked shows as "not checked", which is better
   than a guess.
+- `deploy` is optional, for a tool in a category marked `selfHost`, and says how people run it
+  themselves. Only artefacts the project publishes count, never a community chart or an image
+  someone else maintains:
+  - `container`: an official container image
+  - `compose`: a compose file in the repository or the official docs
+  - `helm`: an official Helm chart
+  - `binary`: standalone binaries attached to releases
+  - `package`: official OS packages (deb, rpm, Homebrew...)
+
+  ```yaml
+  deploy: [container, compose, helm]
+  ```
+
+  CI looks for each one on GitHub, in the repository or in another repository of the same owner
+  such as `helm-charts` or `docker`, and warns about any it cannot find. An artefact published
+  elsewhere, like a vendor's own apt repository, is fine: say where in the pull request.
 
 Do not add stars, versions, licences or descriptions. The schema rejects them: those come from
 GitHub, so they cannot drift or be inflated.
@@ -128,6 +144,7 @@ Blocking:
 - every `replaces` target exists in `data/tools` or `data/products`, and a tool does not replace
   itself
 - a closed product is replaced by at least one tool, and its slug is not also a tool
+- `deploy` is only set on a tool whose category is `selfHost`
 
 Reviewed by a maintainer before merge, without blocking:
 
@@ -137,6 +154,7 @@ Reviewed by a maintainer before merge, without blocking:
 - no push in the last year
 - 50 or more of the most recent stars arrived within 24 hours
 - a closed product's homepage does not answer, which often only means it turns scripts away
+- a declared `deploy` method with nothing on GitHub to show for it
 
 The last one exists because bought stars arrive in bursts. A launch on Hacker News produces the
 same shape, which is why it is a warning and a person decides. GitHub does not let CI page through the

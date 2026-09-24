@@ -11,3 +11,4 @@ replaces:
 capabilities:
   container-steps:
     docs: https://concourse-ci.org/docs/tasks/
+deploy: [container, compose, helm, binary]

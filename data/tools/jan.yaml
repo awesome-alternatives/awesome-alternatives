@@ -9,3 +9,4 @@ replaces:
   - tool: claude
     fit: partial
     note: Desktop app that downloads open models and runs them offline, or calls a hosted API.
+deploy: [binary, package]

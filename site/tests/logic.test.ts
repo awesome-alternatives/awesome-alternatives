@@ -5,13 +5,23 @@ import { islands } from "../src/i18n/islands.en.ts";
 import { toQuery } from "../src/lib/query.ts";
 import { chips, without } from "../src/lib/chips.ts";
 import { canonicalForTool } from "../src/lib/canonical.ts";
-import { alternativesTo, dropInCount, facets, matching, narrow, NO_FILTERS, toggled } from "../src/lib/filter.ts";
+import { withDeploy } from "../src/lib/catalog.ts";
+import {
+  alternativesTo,
+  deployFacets,
+  dropInCount,
+  facets,
+  matching,
+  narrow,
+  NO_FILTERS,
+  toggled,
+} from "../src/lib/filter.ts";
 import { alternativesHref, fromSearch, listParams, readListUrl } from "../src/lib/listUrl.ts";
 import { stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
 import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
 import { slugify } from "../src/lib/slug.ts";
-import type { Fit, ToolView } from "../src/lib/types.ts";
+import type { DeployMethod, Fit, ToolView } from "../src/lib/types.ts";
 
 function trendingTool(slug: string, trend: ToolView["trend"], starCount = 100): ToolView {
   return { ...tool(slug, "Rust", [["sr", "full"]], starCount), trend };
@@ -45,6 +55,7 @@ function tool(slug: string, language: string | null, replaces: [string, Fit][], 
     flags: [],
     terms: "open",
     capabilities: {},
+    deploy: [],
   };
 }
 
@@ -177,21 +188,56 @@ test("maintenance and hosting narrow the list like any other facet", () => {
   assert.deepEqual(slugs({ ...NO_FILTERS, hosting: ["local"], maintenance: ["maintained"] }), ["live"]);
 });
 
+function deployed(slug: string, deploy: DeployMethod[], language = "Go"): ToolView {
+  return { ...tool(slug, language, [["sr", "full"]]), deploy };
+}
+
+test("a deploy choice keeps a tool offering any chosen method and drops one that declares none", () => {
+  const tools = [deployed("chart", ["container", "helm"]), deployed("binary", ["binary"], "Rust"), deployed("bare", [])];
+  const slugs = (f: Partial<typeof NO_FILTERS>) => narrow(tools, "sr", { ...NO_FILTERS, ...f }).map((t) => t.slug);
+  assert.deepEqual(slugs({}), ["chart", "binary", "bare"]);
+  assert.deepEqual(slugs({ deploy: ["helm"] }), ["chart"]);
+  assert.deepEqual(slugs({ deploy: ["helm", "binary"] }), ["chart", "binary"]);
+  assert.deepEqual(slugs({ deploy: ["package"] }), []);
+  assert.deepEqual(slugs({ deploy: ["container", "binary"], language: ["Rust"] }), ["binary"]);
+});
+
+test("the deploy facet counts tools per method and has nothing to offer when no tool declares one", () => {
+  const tools = [deployed("a", ["container", "helm"]), deployed("b", ["container"]), deployed("c", [])];
+  assert.deepEqual(deployFacets(tools), [
+    { value: "container", count: 2 },
+    { value: "helm", count: 1 },
+  ]);
+  assert.deepEqual(deployFacets([deployed("c", []), deployed("d", [])]), []);
+});
+
+test("a catalog entry written before deploy existed reads as deploying nothing", () => {
+  assert.deepEqual(withDeploy({ slug: "old" }).deploy, []);
+  assert.deepEqual(withDeploy({ slug: "new", deploy: ["helm" as const] }).deploy, ["helm"]);
+});
+
 test("the tools query carries terms, self-hosting and maintenance to the API", () => {
   assert.equal(toQuery({ terms: "open", selfHost: true, maintained: true }), "terms=open&selfHost=true&maintained=true");
 });
 
 test("a filtered alternatives view survives a round trip through its address", () => {
   const view = {
-    filters: { ...NO_FILTERS, language: ["Rust", "C++"], terms: ["open" as const], hosting: ["self-hosted" as const] },
+    filters: {
+      ...NO_FILTERS,
+      language: ["Rust", "C++"],
+      terms: ["open" as const],
+      hosting: ["self-hosted" as const],
+      deploy: ["container" as const, "helm" as const],
+    },
     unchecked: ["Linux"],
   };
   assert.deepEqual(readListUrl(`?${listParams(view)}`), view);
 });
 
 test("an address with values the page does not know drops them rather than filtering on nothing", () => {
-  const { filters } = readListUrl("?fit=perfect,full&terms=free&maintenance=maintained,maintained");
+  const { filters } = readListUrl("?fit=perfect,full&terms=free&maintenance=maintained,maintained&deploy=snap,helm");
   assert.deepEqual(filters.fit, ["full"]);
+  assert.deepEqual(filters.deploy, ["helm"]);
   assert.deepEqual(filters.terms, []);
   assert.deepEqual(filters.maintenance, ["maintained"]);
 });

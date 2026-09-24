@@ -2,3 +2,4 @@ name: Sentry
 repository: https://github.com/getsentry/sentry
 category: error-tracking
 terms: source-available
+deploy: [container, compose]

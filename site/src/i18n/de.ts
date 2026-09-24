@@ -217,6 +217,7 @@ export const de: Messages = {
     selfHostNo: "Nein",
     related: "Mehr aus {category}",
     selfHostYes: "Ja",
+    deploy: "Bereitstellung",
     website: "Website ↗",
     edit: "Diesen Eintrag bearbeiten",
     capabilities: "Funktionen",

@@ -8,3 +8,4 @@ replaces:
   - tool: fluentd
     fit: partial
     note: Receives, processes and exports logs, metrics and traces in the OpenTelemetry format.
+deploy: [container, helm]

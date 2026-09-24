@@ -129,7 +129,8 @@
         "maintainerVerified": { "type": "boolean" },
         "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "terms": { "enum": ["open", "source-available", "open-core", "unknown"] },
-        "capabilities": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["docs"], "properties": {"docs": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "minLength": 1}}}}
+        "capabilities": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["docs"], "properties": {"docs": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "minLength": 1}}}},
+        "deploy": { "type": "array", "uniqueItems": true, "items": { "enum": ["container", "compose", "helm", "binary", "package"] } }
       }
     },
     "repo": {

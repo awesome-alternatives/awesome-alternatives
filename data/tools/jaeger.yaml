@@ -5,3 +5,4 @@ replaces:
   - tool: zipkin
     fit: full
     note: Accepts Zipkin-format spans alongside OpenTelemetry.
+deploy: [container, compose, helm, binary]

@@ -2192,7 +2192,7 @@
         "homepage": "https://anythingllm.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 66396,
+        "stars": 66397,
         "forks": 7393,
         "topics": [
           "agent-computer",
@@ -2266,7 +2266,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "astro",
@@ -2505,7 +2510,7 @@
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20190,
+        "stars": 20191,
         "forks": 1776,
         "topics": [
           "api",
@@ -2524,7 +2529,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-24T08:37:19Z",
+        "pushedAt": "2026-09-24T10:41:31Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2575,7 +2580,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "black",
@@ -2849,7 +2858,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "bun",
@@ -2986,7 +2999,7 @@
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 76044,
+        "stars": 76046,
         "forks": 4995,
         "topics": [
           "acme",
@@ -3060,7 +3073,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "cargo-release",
@@ -3370,7 +3388,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "cocogitto",
@@ -3758,7 +3780,13 @@
         "container-steps": {
           "docs": "https://concourse-ci.org/docs/tasks/"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "continue",
@@ -4192,7 +4220,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "binary"
+      ]
     },
     {
       "slug": "curl",
@@ -5295,7 +5326,7 @@
         "homepage": "https://www.dragonflydb.io/",
         "language": "C++",
         "license": "Other",
-        "stars": 31670,
+        "stars": 31671,
         "forks": 1268,
         "topics": [
           "cache",
@@ -5318,7 +5349,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-24T09:35:34Z",
+        "pushedAt": "2026-09-24T10:56:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5369,7 +5400,14 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "drizzle",
@@ -5503,7 +5541,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T09:47:26Z",
+        "pushedAt": "2026-09-24T10:49:21Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5554,7 +5592,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "eleventy",
@@ -6408,7 +6450,7 @@
         "homepage": "https://www.ferretdb.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 11078,
+        "stars": 11079,
         "forks": 488,
         "topics": [
           "database",
@@ -6479,7 +6521,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "ferrflow",
@@ -6809,7 +6857,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-01-27T20:41:52Z",
-        "pushedAt": "2026-09-24T06:24:17Z",
+        "pushedAt": "2026-09-24T10:55:12Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -6860,7 +6908,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "fluentd",
@@ -6943,7 +6996,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "folia",
@@ -7179,7 +7237,7 @@
         "homepage": "https://gatus.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 12150,
+        "stars": 12151,
         "forks": 834,
         "topics": [
           "alerting",
@@ -7258,7 +7316,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "gemini-cli",
@@ -7490,7 +7553,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
     },
     {
       "slug": "git-cliff",
@@ -7779,7 +7845,13 @@
         "package-registry": {
           "docs": "https://docs.gitea.com/usage/packages/overview/"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "gitlab",
@@ -7856,7 +7928,13 @@
         "pages": {
           "docs": "https://docs.gitlab.com/user/project/pages/"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "glowstone",
@@ -7949,7 +8027,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "binary"
+      ]
     },
     {
       "slug": "gojq",
@@ -8161,7 +8242,7 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76884,
+        "stars": 76885,
         "forks": 14779,
         "topics": [
           "alerting",
@@ -8184,7 +8265,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T09:48:10Z",
+        "pushedAt": "2026-09-24T11:02:05Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8235,7 +8316,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "helix",
@@ -8936,7 +9023,7 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29403,
+        "stars": 29406,
         "forks": 2280,
         "topics": [
           "acme",
@@ -9025,7 +9112,12 @@
         "secret-rotation": {
           "docs": "https://infisical.com/docs/documentation/platform/secret-rotation/overview"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "influxdb",
@@ -9111,7 +9203,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "ingress-nginx",
@@ -9194,7 +9291,11 @@
         "archived"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "insomnia",
@@ -9414,7 +9515,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "jan",
@@ -9444,8 +9551,8 @@
         "homepage": "https://jan.ai/",
         "language": "Rust",
         "license": "Other",
-        "stars": 44632,
-        "forks": 3052,
+        "stars": 44633,
+        "forks": 3053,
         "topics": [
           "chatgpt",
           "gpt",
@@ -9460,7 +9567,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-17T02:17:10Z",
-        "pushedAt": "2026-09-24T08:23:37Z",
+        "pushedAt": "2026-09-24T10:56:59Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9511,7 +9618,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "jaq",
@@ -9771,7 +9882,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "jest",
@@ -10238,7 +10355,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-24T09:44:20Z",
+        "pushedAt": "2026-09-24T10:31:17Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -10253,7 +10370,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
     },
     {
       "slug": "keydb",
@@ -10338,7 +10458,11 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "kibana",
@@ -10372,7 +10496,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T09:47:50Z",
+        "pushedAt": "2026-09-24T11:02:34Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10423,7 +10547,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "kind",
@@ -11108,10 +11236,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-09-24T09:05:53Z",
+        "pushedAt": "2026-09-24T11:02:52Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": true,
+        "since": "2026-09-18T07:25:57.000Z"
+      },
       "release": {
         "tag": "v1.17.2",
         "publishedAt": "2026-09-24T07:34:52Z",
@@ -11159,7 +11291,12 @@
       "maintainerVerified": true,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "librechat",
@@ -11189,8 +11326,8 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44833,
-        "forks": 9189,
+        "stars": 44843,
+        "forks": 9191,
         "topics": [
           "ai",
           "anthropic",
@@ -11217,7 +11354,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T09:44:15Z",
+        "pushedAt": "2026-09-24T11:04:03Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11270,7 +11407,12 @@
         "moved"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "litestar",
@@ -11404,7 +11546,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129388,
+        "stars": 129396,
         "forks": 23678,
         "topics": [
           "ggml"
@@ -11413,7 +11555,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T09:42:01Z",
+        "pushedAt": "2026-09-24T10:56:24Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11464,7 +11606,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "lobehub",
@@ -11494,8 +11641,8 @@
         "homepage": "https://lobehub.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 82799,
-        "forks": 15920,
+        "stars": 82800,
+        "forks": 15921,
         "topics": [
           "agent",
           "agent-collaboration",
@@ -11520,7 +11667,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-24T09:47:52Z",
+        "pushedAt": "2026-09-24T11:02:00Z",
         "defaultBranch": "canary"
       },
       "trend": null,
@@ -11571,7 +11718,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "locust",
@@ -11755,7 +11906,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "lsd",
@@ -11948,7 +12103,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-03-30T21:18:17Z",
-        "pushedAt": "2026-09-24T06:04:23Z",
+        "pushedAt": "2026-09-24T10:28:35Z",
         "defaultBranch": "6.x-dev"
       },
       "trend": null,
@@ -11999,7 +12154,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
     },
     {
       "slug": "mattermost",
@@ -12045,7 +12203,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T09:47:29Z",
+        "pushedAt": "2026-09-24T10:52:24Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12103,7 +12261,13 @@
         "threads": {
           "docs": "https://docs.mattermost.com/end-user-guide/collaborate/organize-conversations"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "meilisearch",
@@ -12162,7 +12326,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-23T11:45:28Z",
-        "pushedAt": "2026-09-24T08:50:41Z",
+        "pushedAt": "2026-09-24T10:01:21Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12213,7 +12377,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "memcached",
@@ -12630,7 +12800,11 @@
         "archived"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "mkdocs-material",
@@ -12917,7 +13091,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "moon",
@@ -13299,7 +13477,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-24T09:41:50Z",
+        "pushedAt": "2026-09-24T09:55:29Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13350,7 +13528,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "nginx",
@@ -13443,7 +13626,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "nodejs",
@@ -13904,7 +14091,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181568,
+        "stars": 181572,
         "forks": 17988,
         "topics": [
           "deepseek",
@@ -13978,7 +14165,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary"
+      ]
     },
     {
       "slug": "onedev",
@@ -14099,7 +14290,11 @@
         "wiki": {
           "docs": "https://docs.onedev.io/tutorials/wiki/working-with-wiki"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "open-webui",
@@ -14129,8 +14324,8 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 152975,
-        "forks": 22380,
+        "stars": 152984,
+        "forks": 22381,
         "topics": [
           "ai",
           "llm",
@@ -14203,7 +14398,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "openbao",
@@ -14229,8 +14429,8 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7477,
-        "forks": 577,
+        "stars": 7478,
+        "forks": 578,
         "topics": [
           "go",
           "secret-management",
@@ -14298,7 +14498,13 @@
         "pki": {
           "docs": "https://openbao.org/docs/secrets/pki/"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "opencode",
@@ -14514,7 +14720,7 @@
         "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 13770,
+        "stars": 13769,
         "forks": 2969,
         "topics": [
           "analytics",
@@ -14579,7 +14785,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "opensearch-dashboards",
@@ -14668,7 +14880,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "opentelemetry-collector",
@@ -14763,7 +14981,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "opentofu",
@@ -15194,7 +15416,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "pdm",
@@ -15438,7 +15666,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "pip",
@@ -15684,7 +15917,7 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29198,
+        "stars": 29199,
         "forks": 1873,
         "topics": [
           "analytics",
@@ -15712,7 +15945,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-12-04T22:33:36Z",
-        "pushedAt": "2026-09-24T07:54:16Z",
+        "pushedAt": "2026-09-24T10:32:01Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -15763,7 +15996,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "playwright",
@@ -16548,7 +16785,7 @@
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66203,
+        "stars": 66204,
         "forks": 10854,
         "topics": [
           "alerting",
@@ -16614,7 +16851,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary"
+      ]
     },
     {
       "slug": "pulsar",
@@ -16704,7 +16945,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
     },
     {
       "slug": "pulumi",
@@ -16837,7 +17082,7 @@
         "homepage": "https://pumpkinmc.org/",
         "language": "Rust",
         "license": "GPL-3.0",
-        "stars": 11332,
+        "stars": 11333,
         "forks": 819,
         "topics": [
           "docker",
@@ -16855,7 +17100,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-07-28T21:07:38Z",
-        "pushedAt": "2026-09-24T09:11:49Z",
+        "pushedAt": "2026-09-24T09:59:07Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -16892,7 +17137,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
     },
     {
       "slug": "puppeteer",
@@ -17337,7 +17587,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-04-28T23:29:15Z",
-        "pushedAt": "2026-09-24T09:21:41Z",
+        "pushedAt": "2026-09-24T10:31:30Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17388,7 +17638,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "rancher-desktop",
@@ -17496,7 +17751,7 @@
         "homepage": "http://redis.io",
         "language": "C",
         "license": "Other",
-        "stars": 76459,
+        "stars": 76461,
         "forks": 24816,
         "topics": [
           "cache",
@@ -17575,7 +17830,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "redpanda",
@@ -17600,7 +17859,7 @@
         "homepage": "https://redpanda.com",
         "language": "C++",
         "license": null,
-        "stars": 12569,
+        "stars": 12570,
         "forks": 793,
         "topics": [
           "containers",
@@ -17674,7 +17933,13 @@
         "no-license"
       ],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "release-please",
@@ -18071,7 +18336,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 46164,
-        "forks": 13918,
+        "forks": 13919,
         "topics": [
           "chat",
           "collaboration",
@@ -18153,7 +18418,13 @@
         "e2e-encryption": {
           "docs": "https://docs.rocket.chat/docs/configure-e2e-encryption"
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "rolldown",
@@ -18564,7 +18835,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "ruff",
@@ -18699,7 +18974,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33756,
+        "stars": 33764,
         "forks": 1511,
         "topics": [
           "ai-native",
@@ -18719,7 +18994,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-23T13:45:10Z",
-        "pushedAt": "2026-09-24T09:43:30Z",
+        "pushedAt": "2026-09-24T10:45:19Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18770,7 +19045,14 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "seafile",
@@ -18866,7 +19148,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "seaweedfs",
@@ -18896,7 +19182,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34936,
+        "stars": 34938,
         "forks": 3005,
         "topics": [
           "blob-storage",
@@ -18972,7 +19258,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "selenium",
@@ -19190,7 +19482,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T09:47:46Z",
+        "pushedAt": "2026-09-24T11:09:00Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -19241,7 +19533,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "sequelize",
@@ -19708,7 +20004,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
     },
     {
       "slug": "syncthing",
@@ -19738,7 +20039,7 @@
         "homepage": "https://syncthing.net/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 88890,
+        "stars": 88891,
         "forks": 5490,
         "topics": [
           "go",
@@ -19801,7 +20102,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "tabby",
@@ -20028,7 +20334,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-24T18:05:02Z",
-        "pushedAt": "2026-09-24T08:56:52Z",
+        "pushedAt": "2026-09-24T10:51:05Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20079,7 +20385,14 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "terraform",
@@ -20258,7 +20571,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-03-07T20:03:41Z",
-        "pushedAt": "2026-09-24T09:42:39Z",
+        "pushedAt": "2026-09-24T10:07:45Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20309,7 +20622,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
     },
     {
       "slug": "tmux",
@@ -20416,8 +20733,8 @@
         "homepage": "https://traefik.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 64946,
-        "forks": 6201,
+        "stars": 64947,
+        "forks": 6202,
         "topics": [
           "consul",
           "docker",
@@ -20489,7 +20806,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "ts-node",
@@ -20873,7 +21196,7 @@
         "homepage": "https://typesense.org",
         "language": "C++",
         "license": "GPL-3.0",
-        "stars": 26587,
+        "stars": 26588,
         "forks": 975,
         "topics": [
           "algolia",
@@ -20952,7 +21275,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "package"
+      ]
     },
     {
       "slug": "ugrep",
@@ -21088,7 +21416,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 38985,
-        "forks": 8109,
+        "forks": 8108,
         "topics": [
           "analytics",
           "audience-segmentation",
@@ -21155,7 +21483,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "uptime-kuma",
@@ -21185,7 +21517,7 @@
         "homepage": "https://uptime.kuma.pet",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 91765,
+        "stars": 91766,
         "forks": 8455,
         "topics": [
           "docker",
@@ -21256,7 +21588,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "uv",
@@ -21463,7 +21799,10 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
     },
     {
       "slug": "vault",
@@ -21482,8 +21821,8 @@
         "homepage": "https://developer.hashicorp.com/vault",
         "language": "Go",
         "license": "Other",
-        "stars": 36286,
-        "forks": 4761,
+        "stars": 36287,
+        "forks": 4762,
         "topics": [
           "go",
           "secrets",
@@ -21544,7 +21883,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
     },
     {
       "slug": "vaultwarden",
@@ -21579,8 +21923,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68092,
-        "forks": 3243,
+        "stars": 68094,
+        "forks": 3244,
         "topics": [
           "bitwarden",
           "bitwarden-rs",
@@ -21644,7 +21988,11 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "vector",
@@ -21674,7 +22022,7 @@
         "homepage": "https://vector.dev",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 22606,
+        "stars": 22607,
         "forks": 2291,
         "topics": [
           "agent",
@@ -21700,7 +22048,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-24T05:07:36Z",
+        "pushedAt": "2026-09-24T10:19:46Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -21751,7 +22099,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "victoriametrics",
@@ -21786,7 +22140,7 @@
         "homepage": "https://victoriametrics.com/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 17762,
+        "stars": 17763,
         "forks": 1748,
         "topics": [
           "database",
@@ -21809,7 +22163,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-24T09:48:33Z",
+        "pushedAt": "2026-09-24T10:37:16Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -21860,7 +22214,13 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
     },
     {
       "slug": "vim",
@@ -22658,7 +23018,14 @@
           "docs": "https://woodpecker-ci.org/docs/administration/configuration/backends/kubernetes",
           "note": "One of several backends, next to Docker and local."
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "xh",
@@ -22886,7 +23253,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T08:55:16Z",
+        "pushedAt": "2026-09-24T10:55:47Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22937,7 +23304,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "zed",
@@ -23206,7 +23578,12 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "zola",
@@ -23417,7 +23794,11 @@
           "docs": "https://zulip.com/help/introduction-to-topics",
           "note": "Every message sits in a topic inside a channel."
         }
-      }
+      },
+      "deploy": [
+        "container",
+        "compose"
+      ]
     }
   ],
   "products": [

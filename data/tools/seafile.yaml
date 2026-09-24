@@ -9,3 +9,4 @@ replaces:
   - tool: nextcloud
     fit: partial
     note: Focuses on file sync and share, without the calendar, contacts and app platform.
+deploy: [container, compose]

@@ -9,3 +9,4 @@ replaces:
   - tool: claude
     fit: partial
     note: The chat app, self-hosted, in front of Ollama or any OpenAI-compatible API. The model comes from elsewhere.
+deploy: [container, compose, helm]

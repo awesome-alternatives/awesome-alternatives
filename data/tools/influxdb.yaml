@@ -1,3 +1,4 @@
 name: InfluxDB
 repository: https://github.com/influxdata/influxdb
 category: time-series-database
+deploy: [container, helm, package]

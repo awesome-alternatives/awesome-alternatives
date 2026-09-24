@@ -8,3 +8,4 @@ replaces:
   - tool: datadog
     fit: partial
     note: Dashboards and alerting over metrics, logs and traces stored in your own backends.
+deploy: [container, helm, binary, package]

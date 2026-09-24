@@ -8,3 +8,4 @@ replaces:
   - tool: statuspage
     fit: full
     note: Public status pages next to the monitors, self-hosted.
+deploy: [container, compose]

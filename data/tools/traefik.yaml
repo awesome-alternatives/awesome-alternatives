@@ -8,3 +8,4 @@ replaces:
   - tool: ingress-nginx
     fit: full
     note: A Kubernetes ingress controller with automatic HTTPS.
+deploy: [container, compose, helm, binary]

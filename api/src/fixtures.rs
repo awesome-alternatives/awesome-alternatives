@@ -57,5 +57,6 @@ pub fn tool(
         terms: Terms::Open,
         self_host: false,
         capabilities: Default::default(),
+        deploy: Vec::new(),
     }
 }

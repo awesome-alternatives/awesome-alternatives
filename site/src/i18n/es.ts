@@ -216,6 +216,7 @@ export const es: Messages = {
     selfHostNo: "No",
     related: "Más en {category}",
     selfHostYes: "Sí",
+    deploy: "Despliegue",
     website: "Sitio web ↗",
     edit: "Editar esta entrada",
     capabilities: "Funcionalidades",

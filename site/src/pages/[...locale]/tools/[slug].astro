@@ -176,6 +176,14 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
               </div>
             )
           }
+          {
+            tool.deploy.length > 0 && (
+              <div class="full">
+                <dt>{m.tool.deploy}</dt>
+                <dd>{tool.deploy.map((method) => m.islands.deploy[method]).join(", ")}</dd>
+              </div>
+            )
+          }
         </dl>
         {
           capabilityList.length > 0 && (

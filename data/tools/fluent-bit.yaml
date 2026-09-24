@@ -8,3 +8,4 @@ replaces:
   - tool: fluentd
     fit: full
     note: From the same project, written in C with a much smaller footprint.
+deploy: [container, helm, package]

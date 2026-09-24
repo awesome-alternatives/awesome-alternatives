@@ -23,3 +23,4 @@ capabilities:
     docs: https://docs.gitea.com/usage/packages/container/
   package-registry:
     docs: https://docs.gitea.com/usage/packages/overview/
+deploy: [container, compose, helm, binary]

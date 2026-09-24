@@ -23,3 +23,4 @@ capabilities:
     docs: https://docs.gitlab.com/user/project/wiki/
   pages:
     docs: https://docs.gitlab.com/user/project/pages/
+deploy: [container, compose, helm, package]

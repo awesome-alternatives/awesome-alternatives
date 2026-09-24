@@ -5,3 +5,4 @@ replaces:
   - tool: redis
     fit: drop-in
     note: Multithreaded fork of Redis.
+deploy: [container, package]

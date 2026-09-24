@@ -8,3 +8,4 @@ replaces:
   - tool: amazon-s3
     fit: full
     note: S3-compatible API on your own servers.
+deploy: [container, compose, helm, binary]

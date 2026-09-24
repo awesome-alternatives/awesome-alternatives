@@ -9,3 +9,4 @@ replaces:
   - tool: claude
     fit: partial
     note: Chat app with plugins and agents, self-hosted or on the desktop, for most model providers.
+deploy: [container, compose]
