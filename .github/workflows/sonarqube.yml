@@ -50,18 +50,27 @@ jobs:
       - uses: taiki-e/install-action@v2
         with:
           tool: cargo-tarpaulin
-      # Run from the repository root rather than in api/, so the report names
-      # files as api/src/… and Sonar finds them where it is looking.
-      #
       # --timeout because cargo-tarpaulin 0.37.4 made the llvm engine honour it
-      # and its default is 60 seconds per test binary.
+      # and its default is 60 seconds per test binary. --output-dir absolute
+      # because a relative one lands beside the manifest, not where it is run.
       - run: >-
           cargo tarpaulin --manifest-path api/Cargo.toml --engine llvm
-          --out xml --output-dir . --timeout 600
+          --out xml --output-dir "$GITHUB_WORKSPACE" --timeout 600
+      # tarpaulin names files relative to the crate it measured, so the report
+      # says src/…. Sonar resolves paths from the repository root, where the
+      # same file is api/src/…, so both the names and the source they hang off
+      # are rebased before the report leaves this job.
+      - name: Rebase the report onto the repository root
+        run: |
+          sed -i "s|<source>[^<]*</source>|<source>$GITHUB_WORKSPACE</source>|; s|filename=\"|filename=\"api/|g" cobertura.xml
+          grep -m1 -o 'filename="[^"]*"' cobertura.xml
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: coverage-rust
           path: cobertura.xml
+          # Without this the step warns and the job stays green, which is how
+          # the first run of this workflow reported coverage it never uploaded.
+          if-no-files-found: error
           retention-days: 1
 
   node:
@@ -96,6 +105,7 @@ jobs:
         with:
           name: coverage-node
           path: node.lcov
+          if-no-files-found: error
           retention-days: 1
 
   scan:
