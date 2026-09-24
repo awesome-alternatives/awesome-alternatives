@@ -10,3 +10,4 @@ replaces:
     note: Typo-tolerant instant search you can host yourself.
     migration: https://www.meilisearch.com/docs/learn/update_and_migration/algolia_migration
 terms: open-core
+deploy: [container, helm, binary, package]

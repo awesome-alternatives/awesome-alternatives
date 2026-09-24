@@ -5,3 +5,4 @@ replaces:
   - tool: lfs-test-server
     fit: full
     note: Caching server with S3 or local storage.
+deploy: [container, compose]

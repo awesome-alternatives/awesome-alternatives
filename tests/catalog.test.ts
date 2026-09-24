@@ -85,6 +85,27 @@ describe("checkStructure", () => {
   });
 });
 
+describe("deploy", () => {
+  const kinds = new Map<string, Category>([
+    ["forge", { name: "F", description: "D", selfHost: true }],
+    ["cli", { name: "C", description: "D" }],
+  ]);
+  const check = (tool: Tool) =>
+    checkStructure({ tools: [tool], products: [], categories: kinds }).map((f) => `${f.slug}:${f.code}`);
+
+  it("accepts deploy methods on a tool people run themselves", () => {
+    assert.deepEqual(check(tool("gitea", { category: "forge", deploy: ["container", "helm"] })), []);
+  });
+
+  it("rejects deploy methods on a tool whose category is not self-hosted", () => {
+    assert.deepEqual(check(tool("ripgrep", { category: "cli", deploy: ["binary"] })), ["ripgrep:deploy-outside-self-host"]);
+  });
+
+  it("leaves an unknown category to its own error", () => {
+    assert.deepEqual(check(tool("x", { category: "nope", deploy: ["binary"] })), ["x:unknown-category"]);
+  });
+});
+
 describe("capabilities", () => {
   const forges = new Map<string, Category>([
     [

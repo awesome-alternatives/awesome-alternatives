@@ -66,6 +66,7 @@ export async function createEnricher(
         flags,
         terms: termsOf(tool.terms, evidence.repo.license),
         capabilities: tool.capabilities ?? {},
+        deploy: tool.deploy ?? [],
       };
     },
   };

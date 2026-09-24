@@ -1,3 +1,4 @@
 name: Zipkin
 repository: https://github.com/openzipkin/zipkin
 category: tracing
+deploy: [container, compose, helm]

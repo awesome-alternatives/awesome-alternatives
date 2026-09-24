@@ -2,3 +2,4 @@ name: HashiCorp Vault
 repository: https://github.com/hashicorp/vault
 category: secrets-manager
 terms: source-available
+deploy: [container, helm, package]

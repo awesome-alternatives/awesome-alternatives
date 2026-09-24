@@ -8,3 +8,4 @@ replaces:
   - tool: lastpass
     fit: full
     note: Team password manager with end-to-end encryption and sharing, self-hosted.
+deploy: [container, compose, helm, package]

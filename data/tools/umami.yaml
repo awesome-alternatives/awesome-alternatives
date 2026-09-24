@@ -8,3 +8,4 @@ replaces:
   - tool: google-analytics
     fit: partial
     note: Page views, sources and events without cookies, and no reports on individual visitors.
+deploy: [container, compose]

@@ -8,3 +8,4 @@ replaces:
   - tool: google-drive
     fit: partial
     note: Syncs folders directly between your own devices, with no server and no web access to the files.
+deploy: [container, binary, package]

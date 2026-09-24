@@ -5,3 +5,4 @@ replaces:
   - tool: kafka
     fit: full
     note: Streaming and pub/sub with storage separated from the brokers, multi-tenant.
+deploy: [container, helm]

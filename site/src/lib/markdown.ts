@@ -1,4 +1,4 @@
-import type { EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
+import type { DeployMethod, EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
 import { historyUrl } from "./freshness.ts";
 
 const SITE = "https://awesome-alternatives.com";
@@ -8,6 +8,14 @@ const TERMS: Record<Terms, string> = {
   "open-core": "open core, part of it is under a licence that is not open source",
   "source-available": "source available, the licence restricts how it may be used",
   unknown: "not checked, GitHub could not match the licence",
+};
+
+const DEPLOY: Record<DeployMethod, string> = {
+  container: "container image",
+  compose: "compose file",
+  helm: "Helm chart",
+  binary: "standalone binaries",
+  package: "OS packages",
 };
 
 export interface Surroundings {
@@ -37,6 +45,7 @@ function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): str
       : "- Latest release: none",
   );
   if (selfHost) lines.push("- Self-hosted: you can run it on your own machines");
+  if (tool.deploy.length > 0) lines.push(`- Deploy: ${tool.deploy.map((method) => DEPLOY[method]).join(", ")}`);
   if (repo.archived) lines.push("- Archived: the repository no longer receives changes");
   if (tool.maintainerVerified) lines.push("- Verified: its maintainers vouch for this entry");
   if (tool.flags.length > 0) lines.push(`- Warnings: ${tool.flags.join(", ")}`);

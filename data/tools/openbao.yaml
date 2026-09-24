@@ -11,3 +11,4 @@ capabilities:
     docs: https://openbao.org/docs/secrets/databases/
   pki:
     docs: https://openbao.org/docs/secrets/pki/
+deploy: [container, helm, binary, package]

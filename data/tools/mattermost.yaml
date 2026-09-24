@@ -14,3 +14,4 @@ capabilities:
     docs: https://docs.mattermost.com/deployment-guide/calls/calls-deployment-guide
   threads:
     docs: https://docs.mattermost.com/end-user-guide/collaborate/organize-conversations
+deploy: [container, compose, helm, package]

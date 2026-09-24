@@ -8,3 +8,4 @@ replaces:
   - tool: claude
     fit: partial
     note: Runs open-weight models on CPU or GPU, with a built-in server and a minimal web chat.
+deploy: [container, binary, package]

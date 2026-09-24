@@ -16,3 +16,4 @@ capabilities:
   threads:
     docs: https://zulip.com/help/introduction-to-topics
     note: "Every message sits in a topic inside a channel."
+deploy: [container, compose]

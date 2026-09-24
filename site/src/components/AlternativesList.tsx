@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "preact/hooks";
 import { format, type Locale, plural } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
 import {
+  deployFacets,
   facets,
   fitFor,
   hostingOf,
@@ -87,6 +88,7 @@ export default function AlternativesList({
     ...appliedOf("terms", (v) => strings.terms[v]),
     ...appliedOf("maintenance", (v) => strings.maintenance[v]),
     ...appliedOf("hosting", (v) => strings.hosting[v]),
+    ...appliedOf("deploy", (v) => strings.deploy[v]),
     ...unchecked.map((value) => ({
       id: `unchecked-${value}`,
       label: format(copy.unchecked, { label: value }),
@@ -149,6 +151,15 @@ export default function AlternativesList({
           selected={filters.hosting}
           describe={(value) => strings.hosting[value]}
           {...handlers("hosting")}
+        />
+        <FacetGroup
+          locale={locale}
+          strings={copy}
+          label={copy.deploy}
+          facets={deployFacets(tools)}
+          selected={filters.deploy}
+          describe={(method) => strings.deploy[method]}
+          {...handlers("deploy")}
         />
       </div>
       {applied.length > 0 && (

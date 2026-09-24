@@ -110,6 +110,12 @@ export function checkStructure({ tools, products, categories }: Catalog): Findin
       findings.push(error(tool.slug, "unknown-category", `category ${tool.category} is not in data/categories.yaml`));
     }
 
+    if (tool.deploy?.length && categories.has(tool.category) && !categories.get(tool.category)?.selfHost) {
+      findings.push(
+        error(tool.slug, "deploy-outside-self-host", `deploy is only for tools people run themselves, and ${tool.category} is not selfHost`),
+      );
+    }
+
     const vocabulary = categories.get(tool.category)?.capabilities ?? {};
     for (const key of Object.keys(tool.capabilities ?? {})) {
       if (!(key in vocabulary)) {

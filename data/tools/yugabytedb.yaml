@@ -6,3 +6,4 @@ replaces:
   - tool: cockroachdb
     fit: full
     note: "Distributed SQL that reuses PostgreSQL's own query layer."
+deploy: [container, compose, helm]

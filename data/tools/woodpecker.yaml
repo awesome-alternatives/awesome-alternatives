@@ -14,3 +14,4 @@ capabilities:
   kubernetes:
     docs: https://woodpecker-ci.org/docs/administration/configuration/backends/kubernetes
     note: "One of several backends, next to Docker and local."
+deploy: [container, compose, helm, binary, package]

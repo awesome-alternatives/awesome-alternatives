@@ -1,4 +1,4 @@
-import type { FlagCode } from "../../../scripts/lib/types.ts";
+import type { DeployMethod, FlagCode } from "../../../scripts/lib/types.ts";
 
 export type LabelledFlag = Exclude<FlagCode, "archived">;
 
@@ -8,6 +8,14 @@ const flag: Record<LabelledFlag, string> = {
   "no-release": "No release or tag",
   inactive: "No push in a year",
   "star-spike": "Unusual star burst",
+};
+
+const deploy: Record<DeployMethod, string> = {
+  container: "Container image",
+  compose: "Compose file",
+  helm: "Helm chart",
+  binary: "Binaries",
+  package: "OS packages",
 };
 
 export const islands = {
@@ -49,6 +57,7 @@ export const islands = {
     "self-hosted": "Self-hosted",
     local: "Runs on your machine",
   },
+  deploy,
   flag,
   search: {
     label: "Describe what you are looking for",
@@ -130,6 +139,7 @@ export const islands = {
     clearOne: "Clear",
     maintenance: "Maintenance",
     hosting: "Hosting",
+    deploy: "Deploy with",
     applied: "Applied filters",
     unchecked: "{label}, not checked yet",
     removeFilter: "Remove {label}",

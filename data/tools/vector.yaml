@@ -8,3 +8,4 @@ replaces:
   - tool: fluentd
     fit: full
     note: Collects and ships the same sources, with its own transform language.
+deploy: [container, helm, binary, package]

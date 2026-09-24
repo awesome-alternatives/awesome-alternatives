@@ -41,6 +41,7 @@ function tool(slug: string, addedAt: string, description: string | null = null, 
     flags: [],
     terms: "open",
     capabilities: {},
+    deploy: [],
   };
 }
 

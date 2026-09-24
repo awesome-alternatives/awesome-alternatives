@@ -9,3 +9,4 @@ replaces:
     fit: full
     note: Typo-tolerant instant search you can host yourself.
     migration: https://typesense.org/docs/guide/migrating-from-algolia.html
+deploy: [container, compose, package]

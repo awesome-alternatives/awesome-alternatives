@@ -5,3 +5,4 @@ replaces:
   - tool: zipkin
     fit: full
     note: Stores traces in object storage and ingests Zipkin, Jaeger and OpenTelemetry formats.
+deploy: [container, compose, helm, binary, package]

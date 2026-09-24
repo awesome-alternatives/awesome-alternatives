@@ -1,3 +1,4 @@
 name: ingress-nginx
 repository: https://github.com/kubernetes/ingress-nginx
 category: reverse-proxy
+deploy: [container, helm]

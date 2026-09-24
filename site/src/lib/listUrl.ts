@@ -1,11 +1,11 @@
 import { type Hosting, type ListFilters, type Maintenance, NO_FILTERS } from "./filter.ts";
-import type { Filters, Fit, Terms, Unchecked } from "./types.ts";
+import { DEPLOY_METHODS, type Filters, type Fit, type Terms, type Unchecked } from "./types.ts";
 
 const FITS: readonly Fit[] = ["drop-in", "full", "partial"];
 const TERMS: readonly Terms[] = ["open", "open-core", "source-available", "unknown"];
 const MAINTENANCE: readonly Maintenance[] = ["maintained", "inactive"];
 const HOSTING: readonly Hosting[] = ["self-hosted", "local"];
-const KEYS = ["language", "license", "fit", "terms", "maintenance", "hosting"] as const satisfies readonly (keyof ListFilters)[];
+const KEYS = ["language", "license", "fit", "terms", "maintenance", "hosting", "deploy"] as const satisfies readonly (keyof ListFilters)[];
 
 export interface ListView {
   filters: ListFilters;
@@ -31,6 +31,7 @@ export function readListUrl(search: string): ListView {
       terms: among(values(params, "terms"), TERMS),
       maintenance: among(values(params, "maintenance"), MAINTENANCE),
       hosting: among(values(params, "hosting"), HOSTING),
+      deploy: among(values(params, "deploy"), DEPLOY_METHODS),
     },
     unchecked: values(params, "unchecked"),
   };

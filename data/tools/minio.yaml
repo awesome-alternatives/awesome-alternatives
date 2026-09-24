@@ -1,3 +1,4 @@
 name: MinIO
 repository: https://github.com/minio/minio
 category: object-storage
+deploy: [container, helm]

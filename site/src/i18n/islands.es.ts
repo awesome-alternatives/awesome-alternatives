@@ -39,6 +39,13 @@ export const islands: Islands = {
     "self-hosted": "Autoalojado",
     local: "Se ejecuta en tu equipo",
   },
+  deploy: {
+    container: "Imagen de contenedor",
+    compose: "Archivo Compose",
+    helm: "Chart de Helm",
+    binary: "Binarios",
+    package: "Paquetes del sistema",
+  },
   flag: {
     moved: "Repositorio movido",
     "no-license": "Sin licencia detectada",
@@ -126,6 +133,7 @@ export const islands: Islands = {
     clearOne: "Quitar",
     maintenance: "Mantenimiento",
     hosting: "Alojamiento",
+    deploy: "Despliegue",
     applied: "Filtros aplicados",
     unchecked: "{label}, aún sin comprobar",
     removeFilter: "Quitar {label}",

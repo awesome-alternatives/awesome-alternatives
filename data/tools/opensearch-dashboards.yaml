@@ -5,3 +5,4 @@ replaces:
   - tool: kibana
     fit: full
     note: Fork of Kibana 7.10, the UI for OpenSearch.
+deploy: [container, compose, helm, package]

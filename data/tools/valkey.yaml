@@ -9,3 +9,4 @@ replaces:
   - tool: memcached
     fit: partial
     note: "Serves as a cache in memcached's place, but through the Redis protocol."
+deploy: [container]

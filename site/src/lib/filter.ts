@@ -1,4 +1,4 @@
-import type { Fit, Terms, ToolView } from "./types.ts";
+import type { DeployMethod, Fit, Terms, ToolView } from "./types.ts";
 
 export type Maintenance = "maintained" | "inactive";
 
@@ -11,9 +11,18 @@ export interface ListFilters {
   terms: readonly Terms[];
   maintenance: readonly Maintenance[];
   hosting: readonly Hosting[];
+  deploy: readonly DeployMethod[];
 }
 
-export const NO_FILTERS: ListFilters = { language: [], license: [], fit: [], terms: [], maintenance: [], hosting: [] };
+export const NO_FILTERS: ListFilters = {
+  language: [],
+  license: [],
+  fit: [],
+  terms: [],
+  maintenance: [],
+  hosting: [],
+  deploy: [],
+};
 
 export function maintenanceOf(tool: ToolView): Maintenance {
   return tool.repo.archived || tool.flags.includes("inactive") ? "inactive" : "maintained";
@@ -52,6 +61,10 @@ function admits<T>(chosen: readonly T[], value: T | null): boolean {
   return chosen.length === 0 || (value !== null && chosen.includes(value));
 }
 
+function admitsAny<T>(chosen: readonly T[], values: readonly T[]): boolean {
+  return chosen.length === 0 || values.some((value) => chosen.includes(value));
+}
+
 export function narrow<T extends ToolView>(
   tools: readonly T[],
   target: string,
@@ -65,7 +78,8 @@ export function narrow<T extends ToolView>(
       admits(f.fit, fitFor(t, target)) &&
       admits(f.terms, t.terms) &&
       admits(f.maintenance, maintenanceOf(t)) &&
-      admits(f.hosting, hostingOf(t, selfHostCategories)),
+      admits(f.hosting, hostingOf(t, selfHostCategories)) &&
+      admitsAny(f.deploy, t.deploy),
   );
 }
 
@@ -91,4 +105,8 @@ export function facets<T extends string>(values: readonly (T | null)[]): Facet<T
   return [...counts]
     .map(([value, count]) => ({ value, count }))
     .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
+}
+
+export function deployFacets(tools: readonly Pick<ToolView, "deploy">[]): Facet<DeployMethod>[] {
+  return facets(tools.flatMap((t) => t.deploy));
 }

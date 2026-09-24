@@ -11,3 +11,4 @@ replaces:
   - tool: lastpass
     fit: full
     note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+deploy: [container, compose]

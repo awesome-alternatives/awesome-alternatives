@@ -6,3 +6,4 @@ replaces:
     fit: drop-in
     note: Kafka API compatible, without ZooKeeper or a JVM.
 terms: source-available
+deploy: [container, compose, helm, package]

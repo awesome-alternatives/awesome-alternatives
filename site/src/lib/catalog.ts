@@ -23,16 +23,22 @@ export interface Target {
   alternatives: EnrichedTool[];
 }
 
+type Deploy = Pick<EnrichedTool, "deploy">;
+
+export function withDeploy<T extends object>(tool: T & Partial<Deploy>): Omit<T, "deploy"> & Deploy {
+  return { ...tool, deploy: tool.deploy ?? [] };
+}
+
 const catalog: {
   checkedAt?: string;
   owners: Record<string, OwnerFacts>;
-  tools: EnrichedTool[];
+  tools: (Omit<EnrichedTool, "deploy"> & Partial<Deploy>)[];
   products: ListedProduct[];
 } = JSON.parse(
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
 );
 
-export const tools: EnrichedTool[] = catalog.tools;
+export const tools: EnrichedTool[] = catalog.tools.map(withDeploy);
 
 export const checkedAt: string | null = catalog.checkedAt ?? null;
 

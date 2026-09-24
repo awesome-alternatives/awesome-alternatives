@@ -37,6 +37,7 @@ function entry(slug: string, overrides: Partial<EnrichedTool> = {}, archived = f
     flags: [],
     terms: "open",
     capabilities: {},
+    deploy: [],
     ...overrides,
   };
 }

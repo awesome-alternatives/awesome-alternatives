@@ -5,3 +5,4 @@ replaces:
   - tool: grafana
     fit: partial
     note: Dashboards as code with an open specification, and fewer data sources than Grafana.
+deploy: [container, helm, binary]

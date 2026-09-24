@@ -9,3 +9,4 @@ replaces:
     fit: partial
     note: Page views, sources and goals without cookies, and no reports on individual visitors.
     migration: https://plausible.io/docs/google-analytics-import
+deploy: [container, compose]

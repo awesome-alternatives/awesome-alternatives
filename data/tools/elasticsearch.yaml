@@ -2,3 +2,4 @@ name: Elasticsearch
 repository: https://github.com/elastic/elasticsearch
 category: search-engine
 terms: open-core
+deploy: [container, package]

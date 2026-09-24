@@ -11,3 +11,4 @@ replaces:
   - tool: statuspage
     fit: full
     note: A status page built from its own health checks.
+deploy: [container, compose, helm]

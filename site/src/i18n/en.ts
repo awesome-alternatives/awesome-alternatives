@@ -215,6 +215,7 @@ export const en = {
     selfHostNo: "No",
     related: "Other tools in {category}",
     selfHostYes: "Yes",
+    deploy: "Deploy with",
     website: "Website ↗",
     edit: "Edit this entry",
     capabilities: "Capabilities",

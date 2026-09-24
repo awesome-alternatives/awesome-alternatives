@@ -16,3 +16,4 @@ capabilities:
     docs: https://infisical.com/docs/documentation/platform/pki/overview
   secret-rotation:
     docs: https://infisical.com/docs/documentation/platform/secret-rotation/overview
+deploy: [container, compose, helm]

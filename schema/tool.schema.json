@@ -55,6 +55,14 @@
     "terms": {
       "enum": ["open", "source-available", "open-core"]
     },
+    "deploy": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["container", "compose", "helm", "binary", "package"]
+      }
+    },
     "capabilities": {
       "type": "object",
       "propertyNames": {

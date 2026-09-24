@@ -21,3 +21,4 @@ capabilities:
     docs: https://docs.rocket.chat/docs/decentralized-communication-with-federation-in-rocketchat
   e2e-encryption:
     docs: https://docs.rocket.chat/docs/configure-e2e-encryption
+deploy: [container, compose, helm, package]

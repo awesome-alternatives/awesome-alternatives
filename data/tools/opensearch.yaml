@@ -5,3 +5,4 @@ replaces:
   - tool: elasticsearch
     fit: full
     note: Fork of Elasticsearch 7.10.2, APIs have diverged since.
+deploy: [container, compose, helm, package]

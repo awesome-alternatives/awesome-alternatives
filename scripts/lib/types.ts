@@ -11,6 +11,10 @@ export type DeclaredTerms = "open" | "source-available" | "open-core";
 
 export type Terms = DeclaredTerms | "unknown";
 
+export const DEPLOY_METHODS = ["container", "compose", "helm", "binary", "package"] as const;
+
+export type DeployMethod = (typeof DEPLOY_METHODS)[number];
+
 export interface ToolEntry {
   name: string;
   repository: string;
@@ -20,6 +24,7 @@ export interface ToolEntry {
   path?: string;
   terms?: DeclaredTerms;
   capabilities?: Record<string, Capability>;
+  deploy?: DeployMethod[];
 }
 
 export interface Tool extends ToolEntry {
@@ -64,6 +69,7 @@ export type Severity = "error" | "warning";
 export type BlockingCode =
   | "bad-slug"
   | "capability-unreachable"
+  | "deploy-outside-self-host"
   | "duplicate-replacement"
   | "duplicate-repository"
   | "fork"
@@ -84,7 +90,7 @@ export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-re
 
 export type FlagCode = (typeof FLAG_CODES)[number];
 
-export type FindingCode = BlockingCode | FlagCode | "homepage-unreachable";
+export type FindingCode = BlockingCode | FlagCode | "deploy-unproven" | "homepage-unreachable";
 
 export function isFlagCode(code: FindingCode): code is FlagCode {
   return (FLAG_CODES as readonly string[]).includes(code);
@@ -155,6 +161,7 @@ export interface EnrichedTool {
   flags: FlagCode[];
   terms: Terms;
   capabilities: Record<string, Capability>;
+  deploy: DeployMethod[];
 }
 
 export type OwnerKind = "user" | "organization";
