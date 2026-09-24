@@ -1,4 +1,5 @@
 node_modules/
 *.lcov
 cobertura.xml
+.cache/
 entries/

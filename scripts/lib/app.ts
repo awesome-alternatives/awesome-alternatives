@@ -55,15 +55,6 @@ export function createInstallations(
   };
 }
 
-export async function isMaintainerVerified(
-  slug: string,
-  claim: readonly string[],
-  fullName: string,
-  installations: Installations | null,
-): Promise<boolean> {
-  return claim.includes(slug) || (installations !== null && (await installations.isInstalledOn(fullName)));
-}
-
 export function installationsFromEnv(env: NodeJS.ProcessEnv): Installations | null {
   const { APP_ID, APP_PRIVATE_KEY } = env;
   return APP_ID && APP_PRIVATE_KEY ? createInstallations(APP_ID, APP_PRIVATE_KEY) : null;
