@@ -1,0 +1,128 @@
+name: SonarQube
+
+# Static analysis against the self-hosted SonarQube, with the coverage the
+# existing workflows already produce but throw away. api.yml, site.yml and
+# validate.yml stay as they are: they gate a pull request, this only reports.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sonarqube-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  version:
+    name: Resolve latest release tag
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.tag.outputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      # Two packages are released here, api-v* and site-v*, and the dashboard
+      # takes one marker. Whichever was cut last is the version the repository
+      # as a whole was at.
+      - id: tag
+        run: |
+          TAG=$(git tag -l '*-v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | head -n1)
+          VERSION="${TAG#*-v}"
+          echo "version=${VERSION:-0.0.0}" >> "$GITHUB_OUTPUT"
+
+  rust:
+    name: Coverage (api)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87 # stable
+      - uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+        with:
+          workspaces: api
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-tarpaulin
+      # --timeout because cargo-tarpaulin 0.37.4 made the llvm engine honour it
+      # and its default is 60 seconds per test binary. --output-dir absolute
+      # because a relative one lands beside the manifest, not where it is run.
+      - run: >-
+          cargo tarpaulin --manifest-path api/Cargo.toml --engine llvm
+          --out xml --output-dir "$GITHUB_WORKSPACE" --timeout 600
+      # tarpaulin names files relative to the crate it measured, so the report
+      # says src/…. Sonar resolves paths from the repository root, where the
+      # same file is api/src/…, so both the names and the source they hang off
+      # are rebased before the report leaves this job.
+      - name: Rebase the report onto the repository root
+        run: |
+          sed -i "s|<source>[^<]*</source>|<source>$GITHUB_WORKSPACE</source>|; s|filename=\"|filename=\"api/|g" cobertura.xml
+          grep -m1 -o 'filename="[^"]*"' cobertura.xml
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: coverage-rust
+          path: cobertura.xml
+          # Without this the step warns and the job stays green, which is how
+          # the first run of this workflow reported coverage it never uploaded.
+          if-no-files-found: error
+          retention-days: 1
+
+  node:
+    name: Coverage (scripts and site)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+      # Two independent pnpm projects with a lockfile each, as api.yml and
+      # site.yml treat them.
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile
+        working-directory: site
+      # node --test writes paths relative to where it ran, so the site's half is
+      # rebased onto the repository root before the two are concatenated: Sonar
+      # reads one file and resolves every path from the root.
+      - name: Cover the scripts and the site
+        run: |
+          set -euo pipefail
+          node --test --experimental-test-coverage --test-reporter=lcov \
+            --test-reporter-destination=scripts.lcov "tests/**/*.test.ts"
+          (cd site && node --test --experimental-test-coverage --test-reporter=lcov \
+            --test-reporter-destination=../site.lcov "tests/**/*.test.ts")
+          sed -i 's|^SF:|SF:site/|' site.lcov
+          cat scripts.lcov site.lcov > node.lcov
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: coverage-node
+          path: node.lcov
+          if-no-files-found: error
+          retention-days: 1
+
+  scan:
+    needs: [version, rust, node]
+    # reusable-sonarqube-scan declares `pull-requests: write` to post the diff
+    # on a pull request. A called workflow cannot get more than its caller
+    # grants, and permissions are checked before any job runs.
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: FerrLabs/.github/.github/workflows/reusable-sonarqube-scan.yml@e056bc558880db30ee871328878c3a5098d11e4d # main
+    with:
+      runner: ubuntu-latest
+      project-key: awesome-alternatives
+      coverage-artifact-pattern: coverage-*
+      args: >-
+        -Dsonar.projectVersion=${{ needs.version.outputs.version }}
+        -Dsonar.rust.cobertura.reportPaths=.sonarcov/cobertura.xml
+        -Dsonar.javascript.lcov.reportPaths=.sonarcov/node.lcov
+    secrets: inherit
