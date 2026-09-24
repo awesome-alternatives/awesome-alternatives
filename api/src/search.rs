@@ -4,6 +4,7 @@ use std::time::Duration;
 
 use moka::future::Cache;
 use serde::{Deserialize, Serialize};
+use tokio::sync::Mutex;
 
 use crate::cache::Shared;
 use crate::catalog::Tool;
@@ -51,6 +52,7 @@ pub struct Search {
     embedder: Option<Arc<dyn Embedder>>,
     shared: Arc<Shared>,
     cache: Cache<String, Interpretation>,
+    model_turn: Arc<Mutex<()>>,
 }
 
 impl Search {
@@ -67,6 +69,7 @@ impl Search {
                 .max_capacity(10_000)
                 .time_to_live(Duration::from_secs(24 * 3600))
                 .build(),
+            model_turn: Arc::default(),
         }
     }
 
@@ -141,8 +144,14 @@ impl Search {
     async fn embed_query(&self, query: &str, loaded: &Loaded) -> Option<Vector> {
         loaded.index.as_ref()?;
         let embedder = self.embedder()?;
+        let turn = Arc::clone(&self.model_turn).lock_owned().await;
         let text = query.to_owned();
-        match tokio::task::spawn_blocking(move || embedder.embed(&[text])).await {
+        match tokio::task::spawn_blocking(move || {
+            let _turn = turn;
+            embedder.embed(&[text])
+        })
+        .await
+        {
             Ok(Ok(mut vectors)) => vectors.pop(),
             Ok(Err(error)) => {
                 tracing::warn!(%error, "could not embed the query, using keywords only");

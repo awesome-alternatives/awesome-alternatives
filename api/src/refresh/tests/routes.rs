@@ -14,6 +14,7 @@ use crate::cache::Shared;
 use crate::catalog::Catalog;
 use crate::details::{CACHE_BYTES, Details};
 use crate::fixtures::tool;
+use crate::limits::Limits;
 use crate::refresh::Refresh;
 use crate::refresh::signature::sign;
 use crate::routes::router;
@@ -32,7 +33,7 @@ fn app(refresh: Refresh) -> Router {
         categories: Default::default(),
         tools: vec![lib, cli, tool("knope", "Rust", "MIT", &[], 1)],
     };
-    router(AppState::new(
+    let state = AppState::new(
         Loaded::new(catalog, None),
         Search::new(None, None, Arc::new(Shared::disabled())),
         Details::new(
@@ -49,7 +50,8 @@ fn app(refresh: Refresh) -> Router {
         RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
         false,
         refresh,
-    ))
+    );
+    router(state, Limits::default())
 }
 
 async fn wired() -> (Router, GitHub) {
