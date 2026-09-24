@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
-import { readFile, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
 import {
   ADDED_LOG_ARGS,
   addedAt,
@@ -13,6 +13,7 @@ import { factsChangedAt, type PreviousFacts } from "./lib/changed.ts";
 import { loadCatalog } from "./lib/catalog.ts";
 import { fetchOwner, fetchReleases, ownerOf } from "./lib/facts.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
+import { Etags } from "./lib/etags.ts";
 import { createGitHub } from "./lib/github.ts";
 import { renderCatalog, spliceReadme } from "./lib/render.ts";
 import { statsOf } from "./lib/stats.ts";
@@ -29,7 +30,9 @@ if (structural.length) {
   process.exit(1);
 }
 
-const gh = createGitHub(process.env.GITHUB_TOKEN);
+const etagsPath = join(root, ".cache/github-etags.json");
+const etags = await readFile(etagsPath, "utf8").then(Etags.parse, () => Etags.empty());
+const gh = createGitHub(process.env.GITHUB_TOKEN, fetch, etags);
 const now = new Date();
 const replaced = replacedSlugs(catalog.tools);
 const catalogPath = join(root, "generated/catalog.json");
@@ -98,5 +101,9 @@ await writeFile(
 const readmePath = join(root, "README.md");
 const readme = await readFile(readmePath, "utf8");
 await writeFile(readmePath, spliceReadme(readme, renderCatalog(tools, products, catalog.categories)));
+
+await mkdir(dirname(etagsPath), { recursive: true });
+await writeFile(etagsPath, `${JSON.stringify(etags)}
+`);
 
 console.log(`refreshed ${tools.length} tools`);

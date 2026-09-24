@@ -14,7 +14,9 @@ permissions:
 
 concurrency:
   group: refresh
-  cancel-in-progress: false
+  # Five catalog merges in a row are one refresh, not five: each run reads the
+  # whole catalog anyway, and the budget is per hour.
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -33,6 +35,14 @@ jobs:
           node-version: '24'
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # The etags turn an unchanged repository into a 304, which GitHub does not
+      # count against the hourly budget. Restoring yesterday's cache is what
+      # keeps a refresh of 240 tools inside the 1,000 requests github.token gets.
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .cache/github-etags.json
+          key: github-etags-${{ github.run_id }}
+          restore-keys: github-etags-
       - run: pnpm refresh
         env:
           GITHUB_TOKEN: ${{ github.token }}
