@@ -108,7 +108,7 @@ export async function fetchRepo(gh: GitHub, repository: string): Promise<RepoFac
   return {
     fullName: r.full_name,
     description: r.description,
-    homepage: r.homepage || null,
+    homepage: websiteOf(r.homepage),
     language: r.language,
     license: licenseOf(r.license),
     stars: r.stargazers_count,

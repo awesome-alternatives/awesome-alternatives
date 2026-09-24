@@ -3,9 +3,12 @@ use std::time::Duration;
 use reqwest::StatusCode;
 use serde::{Deserialize, Serialize};
 
+use crate::body;
+
 pub const GITHUB_API: &str = "https://api.github.com";
 pub const SCORECARD_API: &str = "https://api.securityscorecards.dev";
 const TIMEOUT: Duration = Duration::from_secs(10);
+pub const README_BYTES: usize = 2 * 1024 * 1024;
 
 #[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -114,7 +117,7 @@ impl Upstream {
         }
     }
 
-    pub async fn readme_html(&self, full_name: &str) -> Result<Option<String>, reqwest::Error> {
+    pub async fn readme_html(&self, full_name: &str) -> Result<Option<String>, body::Error> {
         let response = self
             .github(
                 &format!("/repos/{full_name}/readme"),
@@ -126,7 +129,9 @@ impl Upstream {
         if response.status() == StatusCode::NOT_FOUND {
             return Ok(None);
         }
-        Ok(Some(response.error_for_status()?.text().await?))
+        Ok(Some(
+            body::text(response.error_for_status()?, README_BYTES).await?,
+        ))
     }
 
     pub async fn advisories(&self, full_name: &str) -> Result<Vec<Advisory>, reqwest::Error> {

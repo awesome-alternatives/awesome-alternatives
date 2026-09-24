@@ -116,6 +116,15 @@ describe("mapRepository on a recorded response", () => {
     assert.ok(codes.includes("moved"));
   });
 
+  it("drops a homepage that is not a web URL, so it never reaches a link", () => {
+    const homepage = (homepageUrl: string) => mapRepository({ ...node("deno"), homepageUrl }).repo.homepage;
+    assert.equal(homepage("javascript:alert(document.cookie)"), null);
+    assert.equal(homepage("JavaScript:alert(1)"), null);
+    assert.equal(homepage("data:text/html,<script>alert(1)</script>"), null);
+    assert.equal(homepage("deno.com"), "https://deno.com");
+    assert.equal(homepage(""), null);
+  });
+
   it("reads the maintainer file at the root and in a monorepo package's directory", () => {
     const withPath = { ...node("ferrflow"), claimAt: { text: "# the CLI\nferrflow-cli\n" } };
     assert.deepEqual(mapRepository(withPath).claim, ["ferrflow", "ferrflow-cli"]);

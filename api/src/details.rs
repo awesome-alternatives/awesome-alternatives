@@ -4,6 +4,7 @@ use moka::future::Cache;
 use serde::de::DeserializeOwned;
 use serde::{Deserialize, Serialize};
 
+use crate::body;
 use crate::cache::{DETAILS_TTL, Shared};
 use crate::readme;
 use crate::upstream::{Advisory, Check, Scorecard, Upstream};
@@ -21,7 +22,7 @@ pub struct Security {
     pub advisories: Vec<Advisory>,
 }
 
-pub type UpstreamError = Arc<reqwest::Error>;
+pub type UpstreamError = Arc<body::Error>;
 
 pub struct Details {
     upstream: Upstream,
@@ -70,7 +71,7 @@ impl Details {
         memory: &Cache<String, V>,
         kind: &str,
         full_name: &str,
-        fetch: impl Future<Output = Result<V, reqwest::Error>>,
+        fetch: impl Future<Output = Result<V, body::Error>>,
     ) -> Result<V, UpstreamError>
     where
         V: Clone + DeserializeOwned + Send + Serialize + Sync + 'static,
@@ -155,6 +156,7 @@ mod tests {
 
     use super::*;
     use crate::cache::fake::{Write, recording};
+    use crate::upstream::README_BYTES;
 
     fn readme(bytes: usize) -> Readme {
         Readme {
@@ -407,6 +409,23 @@ mod tests {
         details.security("example/good").await.unwrap();
         assert_eq!(hits.security(), 1);
         assert_eq!(store.written().len(), 1);
+    }
+
+    #[tokio::test]
+    async fn a_readme_over_the_size_cap_is_an_error_and_is_never_cached() {
+        let app = Router::new().route(
+            "/repos/{owner}/{repo}/readme",
+            get(|| async { "x".repeat(README_BYTES + 1) }),
+        );
+        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+        let base = format!("http://{}", listener.local_addr().unwrap());
+        tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
+        let (shared, store) = recording();
+        let upstream = Upstream::new(reqwest::Client::new(), &base, &base, None);
+        let details = Details::new(upstream, CACHE_BYTES, shared);
+        let error = details.readme("example/huge").await.unwrap_err();
+        assert!(matches!(*error, body::Error::TooLarge(README_BYTES)));
+        assert!(store.written().is_empty());
     }
 
     #[tokio::test]

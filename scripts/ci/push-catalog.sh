@@ -11,6 +11,7 @@ shift
 
 git config user.name 'github-actions[bot]'
 git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+gh auth setup-git
 
 for attempt in 1 2 3 4 5; do
   git fetch --quiet origin main

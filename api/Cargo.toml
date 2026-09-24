@@ -32,3 +32,4 @@ url = "2.5.8"
 http-body-util = "0.1"
 rand = "0.8"
 rsa = "0.9"
+tokio = { version = "1", features = ["io-util"] }

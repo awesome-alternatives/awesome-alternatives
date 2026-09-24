@@ -147,7 +147,7 @@ export function mapRepository(node: GqlRepository): MappedRepository {
   const repo: RepoFacts = {
     fullName,
     description: node.description,
-    homepage: node.homepageUrl || null,
+    homepage: websiteOf(node.homepageUrl),
     language: node.primaryLanguage?.name ?? null,
     license: licenseOf(node.licenseInfo ? { spdx_id: node.licenseInfo.spdxId } : null),
     stars: node.stargazerCount,
