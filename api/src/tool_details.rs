@@ -191,7 +191,8 @@ mod tests {
             false,
             crate::fixtures::refresh_off(),
         );
-        router(state).layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
+        router(state, crate::limits::Limits::default())
+            .layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
     }
 
     async fn get_json(app: &Router, path: &str) -> (StatusCode, Value) {

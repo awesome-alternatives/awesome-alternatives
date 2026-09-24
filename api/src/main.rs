@@ -10,6 +10,7 @@ mod fixtures;
 mod interpret;
 mod jev;
 mod lexical;
+mod limits;
 mod peer;
 mod qualifiers;
 mod readme;
@@ -110,7 +111,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         http,
     ));
 
-    let app = routes::router(state)
+    let app = routes::router(state, config.limits)
         .layer(cors::layer(&config.allowed_origins)?)
         .layer(TraceLayer::new_for_http());
     let listener = tokio::net::TcpListener::bind(config.bind).await?;

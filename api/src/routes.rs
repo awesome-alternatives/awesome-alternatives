@@ -12,6 +12,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::catalog::Tool;
 use crate::filters::{Filters, NearMiss};
+use crate::limits::Limits;
 use crate::peer::client_ip;
 use crate::qualifiers::Unchecked;
 use crate::refresh;
@@ -22,13 +23,15 @@ use crate::vocabulary::Vocabulary;
 
 pub const MAX_QUERY_CHARS: usize = 300;
 
-pub fn router(state: AppState) -> Router {
+pub fn router(state: AppState, limits: Limits) -> Router {
     let api = Router::new()
         .route("/v1/tools", get(tools))
         .route("/v1/vocabulary", get(vocabulary))
-        .route("/v1/search", post(search))
+        .route("/v1/search", limits.shed(post(search)))
         .merge(tool_details::routes(state.clone()))
-        .merge(refresh::routes())
+        .merge(refresh::routes());
+    let api = limits
+        .time_out(api)
         .route_layer(middleware::from_fn_with_state(state.clone(), in_flight));
     Router::new()
         .route("/healthz", get(|| async { "ok" }))
@@ -289,7 +292,8 @@ mod tests {
     }
 
     fn serve(state: AppState) -> Router {
-        router(state).layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
+        router(state, Limits::default())
+            .layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
     }
 
     fn app(per_minute: u32) -> Router {

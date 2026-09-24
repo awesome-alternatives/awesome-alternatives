@@ -67,6 +67,17 @@ affected.
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
 
+The process as a whole takes at most `SEARCH_CONCURRENCY` searches at once, 32 by default. One
+more is not queued: it answers `503` with `Retry-After: 1` straight away. The limit is on search
+only, so browsing the catalog, the README and security tabs and both refresh endpoints keep
+answering while searches are turned away. Queries are embedded one at a time, and a search waits
+for its turn on the model without holding a blocking thread, so a search that gives up while
+waiting never runs.
+
+Every route under `/v1` and `POST /webhooks/github` answers `504` once it has run for
+`REQUEST_TIMEOUT_SECS`, 15 by default. The work behind it is dropped with it, apart from an
+embedding already running, which cannot be interrupted and finishes on its own.
+
 No browser on another origin can read a response unless `ALLOWED_ORIGINS` names its origin. The
 site is served from the same origin as the API, at `/api`, so it needs no entry and the default is
 to name none. Set it only when the site and the API are on different hostnames, and give it the
@@ -217,6 +228,12 @@ The endpoint never blocks: it reads counters and answers immediately. Kubernetes
 `terminationGracePeriodSeconds` as the hard ceiling; the hook only spends what is left of it, and
 the pod is killed when it runs out.
 
+A request counts as in flight until it answers, and `REQUEST_TIMEOUT_SECS` bounds that, so after a
+burst `requests` goes back to `idle` within the timeout at most. Searches past `SEARCH_CONCURRENCY`
+are turned away at once and barely count, and a search waiting for the model is dropped with its
+request instead of running later. The one embedding already running when its request times out
+still finishes, but nothing counts it, so it never holds a rollout back.
+
 The startup embedding pass runs before the listener is bound, so nothing answers on the port until
 the process is ready. That is what a `startupProbe` on `/quiesce` is for; a `readinessProbe` can
 use it too, as long as it reads `ready` rather than the status code, which also goes to `409` while
@@ -231,6 +248,8 @@ requests are in flight.
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP. |
 | `DETAILS_PER_MINUTE` | `30` | Per client IP, shared by `/v1/tools/{slug}/readme` and `/v1/tools/{slug}/security`. |
+| `SEARCH_CONCURRENCY` | `32` | Searches served at once by the whole process. Past it a search answers `503` with `Retry-After: 1` instead of waiting. |
+| `REQUEST_TIMEOUT_SECS` | `15` | Every route under `/v1` and the webhook answer `504` past it. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
 | `ALLOWED_ORIGINS` | unset | Comma-separated origins a browser may read a response from. Unset means same-origin only. |
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |

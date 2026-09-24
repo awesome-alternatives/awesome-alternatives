@@ -1,12 +1,13 @@
 use std::env;
 use std::net::SocketAddr;
-use std::num::NonZeroU32;
+use std::num::{NonZeroU32, NonZeroU64};
 use std::str::FromStr;
 use std::time::Duration;
 
 use crate::cache;
 use crate::details;
 use crate::jev;
+use crate::limits::{self, Limits};
 use crate::refresh::{self, dispatch, oidc};
 use crate::upstream;
 
@@ -33,6 +34,7 @@ pub struct Config {
     pub details_cache_bytes: u64,
     pub valkey: Option<cache::Settings>,
     pub refresh: refresh::Settings,
+    pub limits: Limits,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -64,6 +66,7 @@ impl Config {
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
             valkey: valkey()?,
             refresh: refresh_settings()?,
+            limits: limits()?,
         })
     }
 }
@@ -90,6 +93,20 @@ fn valkey() -> Result<Option<cache::Settings>, ConfigError> {
             )?),
         },
     }))
+}
+
+fn limits() -> Result<Limits, ConfigError> {
+    let timeout: NonZeroU64 = parsed(
+        "REQUEST_TIMEOUT_SECS",
+        &limits::TIMEOUT.as_secs().to_string(),
+    )?;
+    Ok(Limits {
+        search_concurrency: parsed(
+            "SEARCH_CONCURRENCY",
+            &limits::SEARCH_CONCURRENCY.to_string(),
+        )?,
+        timeout: Duration::from_secs(timeout.get()),
+    })
 }
 
 fn refresh_settings() -> Result<refresh::Settings, ConfigError> {
