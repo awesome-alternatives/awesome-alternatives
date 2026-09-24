@@ -122,6 +122,7 @@ impl Upstream {
             )
             .send()
             .await?;
+        warn_on_refusal(&response);
         if response.status() == StatusCode::NOT_FOUND {
             return Ok(None);
         }
@@ -136,10 +137,8 @@ impl Upstream {
             )
             .send()
             .await?;
-        if matches!(
-            response.status(),
-            StatusCode::NOT_FOUND | StatusCode::FORBIDDEN
-        ) {
+        warn_on_refusal(&response);
+        if response.status() == StatusCode::NOT_FOUND {
             return Ok(Vec::new());
         }
         response.error_for_status()?.json().await
@@ -160,5 +159,19 @@ impl Upstream {
         }
         let api: ApiScorecard = response.error_for_status()?.json().await?;
         Ok(Some(api.into()))
+    }
+}
+
+fn warn_on_refusal(response: &reqwest::Response) {
+    let status = response.status();
+    if matches!(
+        status,
+        StatusCode::FORBIDDEN | StatusCode::TOO_MANY_REQUESTS
+    ) {
+        tracing::warn!(
+            status = status.as_u16(),
+            url = %response.url(),
+            "GitHub refused the request, likely its rate limit"
+        );
     }
 }

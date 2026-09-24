@@ -23,6 +23,7 @@ pub struct Config {
     pub catalog_source: String,
     pub catalog_refresh: Duration,
     pub searches_per_minute: NonZeroU32,
+    pub details_per_minute: NonZeroU32,
     pub trust_proxy: bool,
     pub allowed_origins: Vec<String>,
     pub jev: Option<Jev>,
@@ -48,6 +49,7 @@ impl Config {
             catalog_source: text("CATALOG_SOURCE").unwrap_or_else(|| DEFAULT_CATALOG.into()),
             catalog_refresh: Duration::from_secs(parsed("CATALOG_REFRESH_SECS", "3600")?),
             searches_per_minute: parsed("SEARCHES_PER_MINUTE", "20")?,
+            details_per_minute: parsed("DETAILS_PER_MINUTE", "30")?,
             trust_proxy: parsed("TRUST_PROXY", "false")?,
             allowed_origins: list("ALLOWED_ORIGINS"),
             jev: text("TYPESAFE_API_KEY").map(|api_key| Jev {

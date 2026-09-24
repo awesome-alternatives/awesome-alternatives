@@ -27,8 +27,7 @@ pub fn router(state: AppState) -> Router {
         .route("/v1/tools", get(tools))
         .route("/v1/vocabulary", get(vocabulary))
         .route("/v1/search", post(search))
-        .route("/v1/tools/{slug}/readme", get(tool_details::readme))
-        .route("/v1/tools/{slug}/security", get(tool_details::security))
+        .merge(tool_details::routes(state.clone()))
         .merge(refresh::routes())
         .route_layer(middleware::from_fn_with_state(state.clone(), in_flight));
     Router::new()
@@ -59,7 +58,7 @@ pub enum ApiError {
     EmptyQuery,
     #[error("the query is longer than {MAX_QUERY_CHARS} characters")]
     QueryTooLong,
-    #[error("too many searches, try again in {} seconds", retry_after_secs(*.0))]
+    #[error("too many requests, try again in {} seconds", retry_after_secs(*.0))]
     RateLimited(Duration),
     #[error("no tool with this slug")]
     UnknownTool,
@@ -283,6 +282,7 @@ mod tests {
                 Arc::new(Shared::disabled()),
             ),
             limiter,
+            RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
             false,
             crate::fixtures::refresh_off(),
         )
