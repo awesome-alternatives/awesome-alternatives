@@ -4,6 +4,7 @@ export interface Replacement {
   tool: string;
   fit: Fit;
   note?: string;
+  migration?: string;
 }
 
 export type DeclaredTerms = "open" | "source-available" | "open-core";
@@ -53,6 +54,7 @@ export type BlockingCode =
   | "duplicate-replacement"
   | "duplicate-repository"
   | "fork"
+  | "migration-unreachable"
   | "not-found"
   | "private"
   | "product-collides"

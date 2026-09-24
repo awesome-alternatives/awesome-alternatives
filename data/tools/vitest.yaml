@@ -5,6 +5,7 @@ replaces:
   - tool: jest
     fit: full
     note: "Jest-compatible API, running on Vite's transform pipeline."
+    migration: https://vitest.dev/guide/migration/jest
   - tool: mocha
     fit: full
     note: Runs describe and it style tests with assertions and mocks built in.

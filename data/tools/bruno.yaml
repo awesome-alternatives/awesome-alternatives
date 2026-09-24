@@ -8,3 +8,4 @@ replaces:
   - tool: postman
     fit: full
     note: Collections stored as plain files in your repository, no account needed.
+    migration: https://docs.usebruno.com/get-started/import-export-data/postman-migration

@@ -130,3 +130,12 @@ test("a catalog without a check date leaves that line out rather than inventing 
   assert.ok(!out.includes("Read from GitHub"));
   assert.match(out, /- Entry last edited: /);
 });
+
+test("an official migration guide is linked under the replacement it belongs to", () => {
+  const out = toolMarkdown(
+    tool({ replaces: [{ tool: "flake8", fit: "full", migration: "https://example.com/from-flake8" }] }),
+    around,
+  );
+  assert.ok(out.includes("  - Official migration guide: https://example.com/from-flake8"));
+  assert.ok(!toolMarkdown(tool({ replaces: [{ tool: "black", fit: "full" }] }), around).includes("migration guide"));
+});

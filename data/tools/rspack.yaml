@@ -5,3 +5,4 @@ replaces:
   - tool: webpack
     fit: drop-in
     note: Accepts webpack configuration and most of its loaders and plugins.
+    migration: https://rspack.rs/guide/migration/webpack

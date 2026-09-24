@@ -27,6 +27,8 @@ pub struct Replacement {
     pub fit: Fit,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub note: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub migration: Option<String>,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]

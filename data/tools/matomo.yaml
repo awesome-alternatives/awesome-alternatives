@@ -5,3 +5,4 @@ replaces:
   - tool: google-analytics
     fit: full
     note: Close to Google Analytics in scope, on your own server, with a plugin to import past Google Analytics data.
+    migration: https://matomo.org/guide/installation-maintenance/import-google-analytics/

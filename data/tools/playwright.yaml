@@ -8,6 +8,7 @@ replaces:
   - tool: puppeteer
     fit: full
     note: The same style of browser automation, across Chromium, Firefox and WebKit.
+    migration: https://playwright.dev/docs/puppeteer
   - tool: cypress
     fit: full
     note: Tests across Chromium, Firefox and WebKit, run in parallel by default.

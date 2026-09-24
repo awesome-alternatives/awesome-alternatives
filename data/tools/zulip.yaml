@@ -8,3 +8,4 @@ replaces:
   - tool: slack
     fit: full
     note: Conversations split into topics inside each channel, with an importer for Slack exports.
+    migration: https://zulip.com/help/import-from-slack
