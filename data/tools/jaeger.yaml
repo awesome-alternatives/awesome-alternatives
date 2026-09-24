@@ -1,0 +1,7 @@
+name: Jaeger
+repository: https://github.com/jaegertracing/jaeger
+category: tracing
+replaces:
+  - tool: zipkin
+    fit: full
+    note: Accepts Zipkin-format spans alongside OpenTelemetry.

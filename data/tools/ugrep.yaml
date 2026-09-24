@@ -1,0 +1,10 @@
+name: ugrep
+repository: https://github.com/Genivia/ugrep
+category: code-search
+replaces:
+  - tool: the-silver-searcher
+    fit: full
+    note: Recursive search with grep-compatible options, plus a text UI and fuzzy matching.
+  - tool: ack
+    fit: full
+    note: Recursive search with grep-compatible options, plus a text UI and fuzzy matching.

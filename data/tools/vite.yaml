@@ -5,3 +5,6 @@ replaces:
   - tool: webpack
     fit: full
     note: Different configuration, and a dev server that serves native ES modules.
+  - tool: create-react-app
+    fit: full
+    note: Scaffolds a React app with npm create vite and serves it with hot reload.

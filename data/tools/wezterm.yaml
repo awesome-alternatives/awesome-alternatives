@@ -5,4 +5,10 @@ replaces:
   - tool: iterm2
     fit: full
     note: Cross-platform, built-in multiplexing, configured in Lua.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.
+  - tool: tmux
+    fit: partial
+    note: Built-in multiplexing with tabs, panes and remote domains.
 terms: open

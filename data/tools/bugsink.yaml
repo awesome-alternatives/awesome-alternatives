@@ -1,0 +1,8 @@
+name: Bugsink
+repository: https://github.com/bugsink/bugsink
+category: error-tracking
+terms: source-available
+replaces:
+  - tool: sentry
+    fit: partial
+    note: Accepts events from the Sentry SDKs; error tracking only, without performance monitoring.

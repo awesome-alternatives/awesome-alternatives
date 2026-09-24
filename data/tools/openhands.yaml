@@ -5,3 +5,6 @@ replaces:
   - tool: claude-code
     fit: full
     note: Agent that works inside a sandboxed container, driven from a web UI, a CLI or CI.
+  - tool: github-copilot
+    fit: partial
+    note: An agent that works on the whole repository, without completions as you type.

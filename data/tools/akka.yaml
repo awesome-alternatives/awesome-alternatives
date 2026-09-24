@@ -1,0 +1,4 @@
+name: Akka
+repository: https://github.com/akka/akka-core
+category: actor-framework
+terms: source-available

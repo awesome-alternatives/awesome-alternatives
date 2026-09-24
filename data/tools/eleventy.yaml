@@ -5,3 +5,6 @@ replaces:
   - tool: jekyll
     fit: full
     note: JavaScript, with several template languages side by side.
+  - tool: hexo
+    fit: full
+    note: JavaScript static site generator with a choice of template languages.

@@ -1,3 +1,10 @@
 name: Prisma ORM
 repository: https://github.com/prisma/orm
 category: typescript-orm
+replaces:
+  - tool: typeorm
+    fit: full
+    note: Schema file with a generated, type-safe client.
+  - tool: sequelize
+    fit: full
+    note: Schema file with a generated, type-safe client.

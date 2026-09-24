@@ -5,3 +5,9 @@ replaces:
   - tool: uptime-kuma
     fit: full
     note: Checks declared in YAML, with alerting and a status page.
+  - tool: pingdom
+    fit: full
+    note: Health checks declared in YAML, with alerts and a status page.
+  - tool: statuspage
+    fit: full
+    note: A status page built from its own health checks.

@@ -8,4 +8,10 @@ replaces:
   - tool: npm
     fit: full
     note: bun install reads package.json and writes its own lockfile.
+  - tool: ts-node
+    fit: full
+    note: Runs TypeScript files directly, with no separate compile step.
+  - tool: jest
+    fit: partial
+    note: bun test runs Jest-style tests with most of its matchers.
 terms: open

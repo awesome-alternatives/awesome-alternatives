@@ -1,0 +1,5 @@
+name: Datadog
+homepage: https://www.datadoghq.com
+vendor: Datadog
+category: metrics
+description: Hosted monitoring for metrics, logs and traces, billed per host and volume.

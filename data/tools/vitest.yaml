@@ -5,3 +5,6 @@ replaces:
   - tool: jest
     fit: full
     note: "Jest-compatible API, running on Vite's transform pipeline."
+  - tool: mocha
+    fit: full
+    note: Runs describe and it style tests with assertions and mocks built in.

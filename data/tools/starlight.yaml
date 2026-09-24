@@ -5,3 +5,6 @@ replaces:
   - tool: docusaurus
     fit: full
     note: Built on Astro, ships little JavaScript by default.
+  - tool: gitbook
+    fit: full
+    note: Documentation from Markdown in your own repository, deployed as a static site.

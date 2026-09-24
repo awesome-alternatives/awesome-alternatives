@@ -1,0 +1,5 @@
+name: Statuspage
+homepage: https://www.atlassian.com/software/statuspage
+vendor: Atlassian
+category: uptime-monitoring
+description: Hosted status pages for incidents and maintenance.

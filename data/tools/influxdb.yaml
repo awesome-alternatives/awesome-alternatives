@@ -1,0 +1,3 @@
+name: InfluxDB
+repository: https://github.com/influxdata/influxdb
+category: time-series-database

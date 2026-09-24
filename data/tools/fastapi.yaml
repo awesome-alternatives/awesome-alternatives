@@ -5,3 +5,6 @@ replaces:
   - tool: flask
     fit: full
     note: Async, with type hints driving validation and OpenAPI docs.
+  - tool: django-rest-framework
+    fit: partial
+    note: Builds the same kind of API outside Django, without its ORM and admin.

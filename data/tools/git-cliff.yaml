@@ -5,3 +5,6 @@ replaces:
   - tool: semantic-release
     fit: partial
     note: Changelog generation only, no version bump or publish.
+  - tool: conventional-changelog
+    fit: full
+    note: Generates changelogs from Conventional Commits with its own templates, as a single binary.

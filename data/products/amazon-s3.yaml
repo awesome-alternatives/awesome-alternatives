@@ -1,0 +1,5 @@
+name: Amazon S3
+homepage: https://aws.amazon.com/s3/
+vendor: Amazon Web Services
+category: object-storage
+description: Hosted object storage, whose API most object stores copy.

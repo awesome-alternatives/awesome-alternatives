@@ -5,3 +5,9 @@ replaces:
   - tool: bitwarden
     fit: drop-in
     note: Implements the Bitwarden server API, works with the official clients.
+  - tool: 1password
+    fit: full
+    note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+  - tool: lastpass
+    fit: full
+    note: Use it with the Bitwarden apps and browser extensions, self-hosted.

@@ -1,0 +1,7 @@
+name: Elysia
+repository: https://github.com/elysiajs/elysia
+category: node-web-framework
+replaces:
+  - tool: express
+    fit: full
+    note: Built for Bun, with end-to-end types between server and client.

@@ -5,3 +5,6 @@ replaces:
   - tool: powerlevel10k
     fit: full
     note: Works across shells, PowerShell included.
+  - tool: ohmyzsh
+    fit: partial
+    note: "Replaces the prompt theme only, not Oh My Zsh's plugins and aliases."

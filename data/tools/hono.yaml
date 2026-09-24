@@ -5,3 +5,6 @@ replaces:
   - tool: express
     fit: full
     note: Built on Web Standards, runs on Node.js, Deno, Bun and edge runtimes.
+  - tool: koa
+    fit: full
+    note: Small and middleware-based, running on Node, Bun, Deno and edge runtimes.

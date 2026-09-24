@@ -1,0 +1,10 @@
+name: Grafana
+repository: https://github.com/grafana/grafana
+category: dashboards
+replaces:
+  - tool: kibana
+    fit: partial
+    note: Dashboards over many data sources, Elasticsearch among them, rather than one stack.
+  - tool: datadog
+    fit: partial
+    note: Dashboards and alerting over metrics, logs and traces stored in your own backends.

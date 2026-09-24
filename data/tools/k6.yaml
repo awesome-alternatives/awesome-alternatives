@@ -5,3 +5,6 @@ replaces:
   - tool: jmeter
     fit: full
     note: Tests written in JavaScript, run from a single binary.
+  - tool: gatling
+    fit: full
+    note: Tests written in JavaScript instead of a Scala, Java or Kotlin DSL.

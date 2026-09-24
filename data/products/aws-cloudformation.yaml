@@ -1,0 +1,5 @@
+name: AWS CloudFormation
+homepage: https://aws.amazon.com/cloudformation/
+vendor: Amazon Web Services
+category: infrastructure-as-code
+description: "AWS's own infrastructure as code service, for AWS resources only."

@@ -5,3 +5,6 @@ replaces:
   - tool: elasticsearch
     fit: partial
     note: Typo-tolerant app and site search, not log analytics.
+  - tool: algolia
+    fit: full
+    note: Typo-tolerant instant search you can host yourself.

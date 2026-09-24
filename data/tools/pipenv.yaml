@@ -1,0 +1,3 @@
+name: Pipenv
+repository: https://github.com/pypa/pipenv
+category: python-packaging

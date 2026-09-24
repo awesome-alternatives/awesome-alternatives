@@ -1,0 +1,5 @@
+name: LastPass
+homepage: https://www.lastpass.com
+vendor: LastPass
+category: password-manager-server
+description: Hosted password manager for individuals and teams.

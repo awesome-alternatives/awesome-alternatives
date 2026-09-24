@@ -1,0 +1,5 @@
+name: Docker Desktop
+homepage: https://www.docker.com/products/docker-desktop/
+vendor: Docker
+category: container-desktop
+description: Desktop app bundling the Docker engine, a GUI and a local Kubernetes, paid for larger companies.

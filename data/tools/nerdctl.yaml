@@ -1,0 +1,7 @@
+name: nerdctl
+repository: https://github.com/containerd/nerdctl
+category: container-engine
+replaces:
+  - tool: docker
+    fit: full
+    note: A Docker-compatible command line for containerd.

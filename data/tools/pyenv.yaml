@@ -1,0 +1,3 @@
+name: pyenv
+repository: https://github.com/pyenv/pyenv
+category: python-packaging

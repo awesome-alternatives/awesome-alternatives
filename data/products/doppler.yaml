@@ -1,0 +1,5 @@
+name: Doppler
+homepage: https://www.doppler.com
+vendor: Doppler
+category: secrets-manager
+description: Hosted secrets manager that syncs values to environments and CI.

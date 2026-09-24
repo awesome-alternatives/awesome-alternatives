@@ -1,0 +1,3 @@
+name: pip-tools
+repository: https://github.com/jazzband/pip-tools
+category: python-packaging

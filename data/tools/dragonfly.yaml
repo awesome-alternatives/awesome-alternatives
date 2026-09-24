@@ -5,4 +5,7 @@ replaces:
   - tool: redis
     fit: drop-in
     note: Redis and Memcached API compatible, multithreaded.
+  - tool: memcached
+    fit: full
+    note: "Speaks the memcached protocol as well as Redis's."
 terms: source-available

@@ -1,0 +1,7 @@
+name: Podman Desktop
+repository: https://github.com/podman-desktop/podman-desktop
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: full
+    note: Containers, images, pods and a local Kubernetes through Podman, with Docker API compatibility.

@@ -1,0 +1,10 @@
+name: Material for MkDocs
+repository: https://github.com/squidfunk/mkdocs-material
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation site built from Markdown in your repository, with search.
+  - tool: docusaurus
+    fit: full
+    note: Markdown and a YAML config instead of React and MDX.

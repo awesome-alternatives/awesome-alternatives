@@ -1,0 +1,3 @@
+name: aiohttp
+repository: https://github.com/aio-libs/aiohttp
+category: python-http-client

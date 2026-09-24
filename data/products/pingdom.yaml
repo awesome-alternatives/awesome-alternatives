@@ -1,0 +1,5 @@
+name: Pingdom
+homepage: https://www.pingdom.com
+vendor: SolarWinds
+category: uptime-monitoring
+description: Hosted uptime and page speed monitoring.

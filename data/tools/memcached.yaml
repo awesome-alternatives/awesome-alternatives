@@ -1,0 +1,3 @@
+name: Memcached
+repository: https://github.com/memcached/memcached
+category: key-value-store

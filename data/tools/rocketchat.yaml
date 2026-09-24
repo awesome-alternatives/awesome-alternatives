@@ -8,4 +8,7 @@ replaces:
   - tool: slack
     fit: full
     note: Channels, threads and federation on your own server, with an importer for Slack exports.
+  - tool: microsoft-teams
+    fit: partial
+    note: Chat and calls on your own server, without the Microsoft 365 integration.
 terms: open-core

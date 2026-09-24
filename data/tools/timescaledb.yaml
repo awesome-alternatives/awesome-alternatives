@@ -1,0 +1,8 @@
+name: TimescaleDB
+repository: https://github.com/timescale/timescaledb
+category: time-series-database
+terms: open-core
+replaces:
+  - tool: influxdb
+    fit: full
+    note: Time series as a PostgreSQL extension, queried with plain SQL.

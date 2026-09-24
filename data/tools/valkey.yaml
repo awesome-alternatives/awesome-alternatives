@@ -5,3 +5,6 @@ replaces:
   - tool: redis
     fit: drop-in
     note: Fork of Redis 7.2.4, same protocol and commands.
+  - tool: memcached
+    fit: partial
+    note: "Serves as a cache in memcached's place, but through the Redis protocol."

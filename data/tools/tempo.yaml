@@ -1,0 +1,7 @@
+name: Grafana Tempo
+repository: https://github.com/grafana/tempo
+category: tracing
+replaces:
+  - tool: zipkin
+    fit: full
+    note: Stores traces in object storage and ingests Zipkin, Jaeger and OpenTelemetry formats.

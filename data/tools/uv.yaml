@@ -8,3 +8,12 @@ replaces:
   - tool: poetry
     fit: full
     note: Project management with a uv.lock lockfile.
+  - tool: pipenv
+    fit: full
+    note: "A lockfile and a virtual environment per project, like Pipenv's."
+  - tool: pyenv
+    fit: full
+    note: Downloads and pins Python versions with uv python install.
+  - tool: pip-tools
+    fit: full
+    note: uv pip compile and uv pip sync mirror pip-compile and pip-sync.

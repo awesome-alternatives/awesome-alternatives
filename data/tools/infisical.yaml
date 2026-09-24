@@ -5,4 +5,7 @@ replaces:
   - tool: vault
     fit: partial
     note: Application secrets and environment sync, not a general PKI or encryption service.
+  - tool: doppler
+    fit: full
+    note: Secrets synced to environments and CI, self-hostable.
 terms: open-core

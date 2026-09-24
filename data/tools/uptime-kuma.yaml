@@ -1,3 +1,10 @@
 name: Uptime Kuma
 repository: https://github.com/louislam/uptime-kuma
 category: uptime-monitoring
+replaces:
+  - tool: pingdom
+    fit: full
+    note: Uptime checks, alerts and status pages, self-hosted.
+  - tool: statuspage
+    fit: full
+    note: Public status pages next to the monitors, self-hosted.

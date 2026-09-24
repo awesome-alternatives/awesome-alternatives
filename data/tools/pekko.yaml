@@ -1,0 +1,7 @@
+name: Apache Pekko
+repository: https://github.com/apache/pekko
+category: actor-framework
+replaces:
+  - tool: akka
+    fit: full
+    note: Fork of Akka 2.6 under Apache-2.0, with packages renamed to org.apache.pekko.

@@ -5,3 +5,6 @@ replaces:
   - tool: webpack
     fit: full
     note: Works without configuration for most projects.
+  - tool: create-react-app
+    fit: partial
+    note: Zero-config bundling for a React app, without the scaffolding.

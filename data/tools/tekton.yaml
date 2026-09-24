@@ -1,0 +1,7 @@
+name: Tekton
+repository: https://github.com/tektoncd/pipeline
+category: ci-server
+replaces:
+  - tool: jenkins
+    fit: partial
+    note: Pipelines defined as Kubernetes resources; the dashboard is a separate project.

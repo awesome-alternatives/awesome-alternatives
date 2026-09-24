@@ -1,0 +1,11 @@
+name: Seafile
+repository: https://github.com/haiwen/seafile
+category: file-sync
+terms: open
+replaces:
+  - tool: dropbox
+    fit: full
+    note: Libraries synced by desktop and mobile clients, with versioning and sharing, self-hosted.
+  - tool: nextcloud
+    fit: partial
+    note: Focuses on file sync and share, without the calendar, contacts and app platform.

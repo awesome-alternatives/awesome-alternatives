@@ -1,0 +1,10 @@
+name: Syncthing
+repository: https://github.com/syncthing/syncthing
+category: file-sync
+replaces:
+  - tool: dropbox
+    fit: partial
+    note: Syncs folders directly between your own devices, with no server and no web access to the files.
+  - tool: google-drive
+    fit: partial
+    note: Syncs folders directly between your own devices, with no server and no web access to the files.

@@ -1,0 +1,13 @@
+name: Kysely
+repository: https://github.com/kysely-org/kysely
+category: typescript-orm
+replaces:
+  - tool: typeorm
+    fit: partial
+    note: A type-safe SQL query builder rather than an ORM, with no entities or relations to map.
+  - tool: sequelize
+    fit: partial
+    note: A type-safe SQL query builder rather than an ORM, with no models to define.
+  - tool: prisma
+    fit: partial
+    note: Types come from TypeScript interfaces instead of a schema file and a generated client.

@@ -5,3 +5,9 @@ replaces:
   - tool: prisma
     fit: full
     note: Schema written in TypeScript and a SQL-like query builder.
+  - tool: typeorm
+    fit: full
+    note: Schema declared in TypeScript with a SQL-like query API.
+  - tool: sequelize
+    fit: full
+    note: Schema declared in TypeScript with a SQL-like query API.

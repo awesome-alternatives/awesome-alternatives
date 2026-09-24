@@ -1,0 +1,10 @@
+name: Passbolt
+repository: https://github.com/passbolt/passbolt_api
+category: password-manager-server
+replaces:
+  - tool: 1password
+    fit: full
+    note: Team password manager with end-to-end encryption and sharing, self-hosted.
+  - tool: lastpass
+    fit: full
+    note: Team password manager with end-to-end encryption and sharing, self-hosted.

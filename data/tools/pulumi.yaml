@@ -5,3 +5,6 @@ replaces:
   - tool: terraform
     fit: full
     note: Infrastructure in general-purpose languages instead of HCL.
+  - tool: aws-cloudformation
+    fit: full
+    note: "Infrastructure as code in TypeScript, Python, Go or C#, for AWS and other clouds."

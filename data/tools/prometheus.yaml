@@ -1,3 +1,7 @@
 name: Prometheus
 repository: https://github.com/prometheus/prometheus
 category: metrics
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Metrics and alerting you run yourself; logs and traces need other tools.

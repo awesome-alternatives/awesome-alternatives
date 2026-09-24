@@ -1,0 +1,7 @@
+name: Apache Pulsar
+repository: https://github.com/apache/pulsar
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: full
+    note: Streaming and pub/sub with storage separated from the brokers, multi-tenant.
