@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_THRESHOLD, SPIKE_WINDOW_MS } from "../../../../scripts/lib/rules.ts";
+import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_FACTOR, SPIKE_THRESHOLD } from "../../../../scripts/lib/rules.ts";
 import type { Locale } from "../../i18n/index.ts";
 import { format, pathFor } from "../../i18n/index.ts";
 import { localePaths, t } from "../../i18n/paths.ts";
@@ -20,7 +20,6 @@ const strings = t(locale);
 const m = strings.pages.about;
 const { fit, flag } = strings.islands;
 const refreshedAt = dailyTime(refreshCron);
-const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
 ---
 
 <Base title={m.title} description={m.description}>
@@ -129,7 +128,7 @@ const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
       </div>
       <div id="star-spike">
         <dt><span class="mark mark-warn">{flag["star-spike"]}</span></dt>
-        <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeHours })}</dd>
+        <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeFactor: SPIKE_FACTOR })}</dd>
       </div>
     </dl>
     <p>

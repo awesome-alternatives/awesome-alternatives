@@ -84,7 +84,7 @@ export const pages = {
       noRelease: "The repository has neither a release nor a tag, so there is no version to pin.",
       inactive: "Nothing was pushed for more than {inactiveDays} days. Archived repositories are left out of this one.",
       starSpike:
-        "{spikeThreshold} or more of the most recent stars arrived within {spikeHours} hours. Bought stars arrive in bursts, and so does a launch on Hacker News, which is why a person decides. This check runs when a pull request adds or edits the entry, not during the nightly refresh. GitHub refuses to page deep into the stargazers of the largest repositories, and for those the check is skipped rather than guessed.",
+        "A day that gained {spikeThreshold} or more stars, and at least {spikeFactor} times the tool's usual daily pace over the last month. Bought stars arrive in bursts, and so does a launch on Hacker News, which is why a person decides. GitHub no longer lists who starred a repository, so the nightly refresh keeps the star count of each day and compares the days. It needs a week of that history before it judges, which means a tool is only checked once it is listed.",
       blockingBefore:
         "Some problems block a pull request instead: a repository that is private, a fork, archived but offered as an alternative, younger than {minAgeDays} days, or already listed under another slug.",
       contributeLink: "The contributor guide",

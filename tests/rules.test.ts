@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { judge, maxInWindow, replacedSlugs } from "../scripts/lib/rules.ts";
-import type { RepoFacts, Tool } from "../scripts/lib/types.ts";
+import { judge, replacedSlugs, spikeOf } from "../scripts/lib/rules.ts";
+import type { RepoFacts, StarPoint, Tool } from "../scripts/lib/types.ts";
 
 const NOW = new Date("2026-09-22T12:00:00Z");
 
@@ -37,12 +37,12 @@ const release = { tag: "v1.0.0", publishedAt: null, url: "u", source: "release" 
 
 function codes(
   r: RepoFacts | null,
-  recentStars: string[] = [],
+  starHistory: StarPoint[] = [],
   withRelease = true,
   entry: Tool = tool,
   replaced: ReadonlySet<string> = new Set(),
 ) {
-  return judge(entry, { repo: r, release: withRelease ? release : null, recentStars }, NOW, replaced).map(
+  return judge(entry, { repo: r, release: withRelease ? release : null, starHistory }, NOW, replaced).map(
     (f) => `${f.severity}:${f.code}`,
   );
 }
@@ -98,14 +98,50 @@ describe("judge", () => {
     ]);
   });
 
-  it("flags a burst of stars inside 24 hours for a human look", () => {
-    const burst = Array.from({ length: 60 }, (_, i) => `2026-09-20T10:${String(i % 60).padStart(2, "0")}:00Z`);
-    assert.deepEqual(codes(repo(), burst), ["warning:star-spike"]);
+  it("flags a day that gained far more stars than usual, for a human look", () => {
+    assert.deepEqual(codes(repo({ stars: 400 }), daily([100, 110, 120, 130, 140, 150, 160, 170, 330])), ["warning:star-spike"]);
   });
 
-  it("does not flag the same number of stars spread over weeks", () => {
-    const steady = Array.from({ length: 60 }, (_, i) => new Date(Date.UTC(2026, 7, 1 + (i % 30), i)).toISOString());
-    assert.deepEqual(codes(repo(), steady), []);
+  it("does not flag the same number of stars spread over the days", () => {
+    assert.deepEqual(codes(repo({ stars: 400 }), daily([130, 160, 190, 220, 250, 280, 310, 340, 370])), []);
+  });
+});
+
+function daily(stars: number[]): StarPoint[] {
+  return stars.map((n, i) => ({
+    at: new Date(NOW.getTime() - (stars.length - i) * 24 * 60 * 60 * 1000).toISOString(),
+    stars: n,
+  }));
+}
+
+describe("spikeOf", () => {
+  it("reports the biggest daily gain against the median of the others", () => {
+    assert.deepEqual(spikeOf(daily([100, 110, 120, 130, 140, 150, 160, 170]), 330, NOW), {
+      gained: 160,
+      usual: 10,
+      on: NOW.toISOString().slice(0, 10),
+    });
+  });
+
+  it("stays quiet for a popular tool whose usual pace is already high", () => {
+    const busy = daily([1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400]);
+    assert.equal(spikeOf(busy, 2900, NOW), null);
+  });
+
+  it("stays quiet under the absolute threshold, whatever the ratio", () => {
+    assert.equal(spikeOf(daily([10, 10, 10, 10, 10, 10, 10, 10]), 49, NOW), null);
+  });
+
+  it("needs a week of history before judging", () => {
+    assert.equal(spikeOf(daily([100, 100, 100]), 400, NOW), null);
+  });
+
+  it("spreads a gain across the days a missed refresh left out", () => {
+    const gap: StarPoint[] = [
+      ...daily([100, 110, 120, 130, 140, 150, 160]).map((p) => ({ ...p, at: new Date(Date.parse(p.at) - 10 * 86_400_000).toISOString() })),
+      { at: new Date(NOW.getTime() - 86_400_000).toISOString(), stars: 460 },
+    ];
+    assert.equal(spikeOf(gap, 470, NOW), null);
   });
 });
 
@@ -117,31 +153,5 @@ describe("replacedSlugs", () => {
       { ...tool, slug: "x" },
     ];
     assert.deepEqual([...replacedSlugs(tools)].sort(), ["x", "y"]);
-  });
-});
-
-describe("maxInWindow", () => {
-  const H = 60 * 60 * 1000;
-
-  it("counts the densest window, not the first one", () => {
-    const t = ["2026-01-01T00:00:00Z", "2026-01-05T00:00:00Z", "2026-01-05T01:00:00Z", "2026-01-05T02:00:00Z"];
-    assert.equal(maxInWindow(t, 24 * H), 3);
-  });
-
-  it("does not depend on input order", () => {
-    const t = ["2026-01-05T02:00:00Z", "2026-01-01T00:00:00Z", "2026-01-05T00:00:00Z"];
-    assert.equal(maxInWindow(t, 24 * H), 2);
-  });
-
-  it("includes both ends of a window exactly as wide as the limit", () => {
-    assert.equal(maxInWindow(["2026-01-01T00:00:00Z", "2026-01-02T00:00:00Z"], 24 * H), 2);
-  });
-
-  it("skips unparseable timestamps instead of counting them", () => {
-    assert.equal(maxInWindow(["not a date", "2026-01-01T00:00:00Z"], 24 * H), 1);
-  });
-
-  it("is zero for no timestamps", () => {
-    assert.equal(maxInWindow([], 24 * H), 0);
   });
 });

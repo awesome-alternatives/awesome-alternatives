@@ -24,7 +24,7 @@ const remote = await mapLimit(
   catalog.tools.filter((t) => targets.includes(t.slug)),
   4,
   async (tool) => {
-    const evidence = await gather(gh, tool, true);
+    const evidence = await gather(gh, tool);
     const { repo } = evidence;
     const deploy =
       tool.deploy?.length && repo

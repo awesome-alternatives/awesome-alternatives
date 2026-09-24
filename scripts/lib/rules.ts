@@ -1,16 +1,17 @@
-import type { Finding, FindingCode, ReleaseFacts, RepoFacts, Tool } from "./types.ts";
+import type { Finding, FindingCode, ReleaseFacts, RepoFacts, StarPoint, Tool } from "./types.ts";
 
 export const MIN_AGE_DAYS = 30;
 export const INACTIVE_DAYS = 365;
-export const SPIKE_WINDOW_MS = 24 * 60 * 60 * 1000;
 export const SPIKE_THRESHOLD = 50;
+export const SPIKE_FACTOR = 5;
+export const SPIKE_BASELINE_DAYS = 7;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 export interface Evidence {
   repo: RepoFacts | null;
   release: ReleaseFacts | null;
-  recentStars: string[];
+  starHistory: StarPoint[];
 }
 
 export function replacedSlugs(tools: readonly Tool[]): Set<string> {
@@ -53,27 +54,42 @@ export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: Reado
   const idle = daysBetween(repo.pushedAt, now);
   if (idle > INACTIVE_DAYS && !repo.archived) add("warning", "inactive", `no push for ${idle} days`);
 
-  const spike = maxInWindow(evidence.recentStars, SPIKE_WINDOW_MS);
-  if (spike >= SPIKE_THRESHOLD) {
+  const spike = spikeOf(evidence.starHistory, repo.stars, now);
+  if (spike) {
     add(
       "warning",
       "star-spike",
-      `${spike} of the last ${evidence.recentStars.length} stars arrived within 24 hours, needs a human look`,
+      `${spike.gained} stars on ${spike.on}, against about ${spike.usual} a day, needs a human look`,
     );
   }
 
   return out;
 }
 
-export function maxInWindow(timestamps: readonly string[], windowMs: number): number {
-  const times = timestamps.map((t) => Date.parse(t)).filter((t) => !Number.isNaN(t)).sort((a, b) => a - b);
-  let best = 0;
-  let start = 0;
-  for (let end = 0; end < times.length; end++) {
-    while ((times[end] as number) - (times[start] as number) > windowMs) start++;
-    best = Math.max(best, end - start + 1);
-  }
-  return best;
+export interface Spike {
+  gained: number;
+  usual: number;
+  on: string;
+}
+
+export function spikeOf(history: readonly StarPoint[], stars: number, now: Date): Spike | null {
+  const points = [...history, { at: now.toISOString(), stars }].sort((a, b) => a.at.localeCompare(b.at));
+  const daily = points.slice(1).map((point, i) => {
+    const previous = points[i] as StarPoint;
+    const days = Math.max(1, Math.round((Date.parse(point.at) - Date.parse(previous.at)) / DAY_MS));
+    return { rate: (point.stars - previous.stars) / days, on: point.at.slice(0, 10) };
+  });
+  if (daily.length < SPIKE_BASELINE_DAYS) return null;
+  const peak = daily.reduce((best, day) => (day.rate > best.rate ? day : best));
+  const usual = median(daily.filter((day) => day !== peak).map((day) => day.rate));
+  if (peak.rate < SPIKE_THRESHOLD || peak.rate < SPIKE_FACTOR * Math.max(usual, 1)) return null;
+  return { gained: Math.round(peak.rate), usual: Math.round(usual), on: peak.on };
+}
+
+function median(values: readonly number[]): number {
+  const sorted = [...values].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? (sorted[middle] as number) : ((sorted[middle - 1] as number) + (sorted[middle] as number)) / 2;
 }
 
 export function daysBetween(iso: string, now: Date): number {

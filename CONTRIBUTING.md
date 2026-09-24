@@ -152,13 +152,14 @@ Reviewed by a maintainer before merge, without blocking:
 - GitHub detects no licence
 - there is no release and no tag
 - no push in the last year
-- 50 or more of the most recent stars arrived within 24 hours
 - a closed product's homepage does not answer, which often only means it turns scripts away
 - a declared `deploy` method with nothing on GitHub to show for it
 
-The last one exists because bought stars arrive in bursts. A launch on Hacker News produces the
-same shape, which is why it is a warning and a person decides. GitHub does not let CI page through the
-stargazers of the largest repositories; for those, the check is skipped rather than guessed.
+The nightly refresh adds one more on listed tools: a day that gained 50 or more stars and at least
+five times the tool's usual daily pace over the last month. Bought stars arrive in bursts. A launch
+on Hacker News produces the same shape, which is why it is a warning and a person decides. GitHub no
+longer lists who starred a repository, so the refresh compares the star counts it kept from earlier
+days, read from the history of `generated/catalog.json`, and needs a week of them before it judges.
 
 ## Verifying a tool you maintain
 
