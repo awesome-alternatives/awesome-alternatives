@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T14:17:34.579Z",
+  "checkedAt": "2026-09-24T14:48:04.888Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -1776,7 +1776,11 @@
         "pushedAt": "2026-09-06T01:03:39Z",
         "defaultBranch": "dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.10.0",
         "publishedAt": null,
@@ -1843,7 +1847,11 @@
         "pushedAt": "2026-05-22T14:02:20Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 15,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.86.0",
         "publishedAt": "2025-08-09T17:42:19Z",
@@ -1930,7 +1938,11 @@
         "pushedAt": "2026-09-24T11:15:08Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.14.3",
         "publishedAt": "2026-07-22T23:07:47Z",
@@ -2018,7 +2030,11 @@
         "pushedAt": "2026-09-24T13:40:35Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.10.22",
         "publishedAt": "2026-09-09T12:44:10Z",
@@ -2098,7 +2114,7 @@
         "language": "Rust",
         "license": "Apache-2.0",
         "stars": 65807,
-        "forks": 3625,
+        "forks": 3626,
         "topics": [
           "bsd",
           "gpu",
@@ -2118,7 +2134,11 @@
         "pushedAt": "2026-08-31T21:11:12Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 16,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.17.0",
         "publishedAt": "2026-04-06T19:24:18Z",
@@ -2197,7 +2217,7 @@
         "homepage": "https://anythingllm.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 66404,
+        "stars": 66406,
         "forks": 7396,
         "topics": [
           "agent-computer",
@@ -2223,7 +2243,11 @@
         "pushedAt": "2026-09-24T00:39:21Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 39,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v1.16.2",
         "publishedAt": "2026-09-22T19:06:03Z",
@@ -2313,7 +2337,7 @@
         "homepage": "https://astro.build",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 62785,
+        "stars": 62786,
         "forks": 3809,
         "topics": [
           "astro",
@@ -2332,10 +2356,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-03-15T17:19:47Z",
-        "pushedAt": "2026-09-24T14:11:36Z",
+        "pushedAt": "2026-09-24T14:41:17Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "astro@7.3.5",
         "publishedAt": "2026-09-24T09:10:39Z",
@@ -2416,7 +2444,7 @@
         "homepage": "https://biomejs.dev",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 25852,
+        "stars": 25851,
         "forks": 1244,
         "topics": [
           "css",
@@ -2436,7 +2464,11 @@
         "pushedAt": "2026-09-24T14:14:36Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 9,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "@biomejs/biome@2.5.14",
         "publishedAt": "2026-09-16T07:52:49Z",
@@ -2517,7 +2549,7 @@
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20195,
+        "stars": 20196,
         "forks": 1777,
         "topics": [
           "api",
@@ -2536,10 +2568,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-24T14:15:52Z",
+        "pushedAt": "2026-09-24T14:19:05Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 13,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2026.9.1",
         "publishedAt": "2026-09-22T10:37:00Z",
@@ -2630,7 +2666,11 @@
         "pushedAt": "2026-09-22T23:50:16Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "26.5.1",
         "publishedAt": "2026-05-18T16:52:38Z",
@@ -2732,10 +2772,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-09-27T20:51:45Z",
-        "pushedAt": "2026-09-24T13:32:31Z",
+        "pushedAt": "2026-09-24T14:33:34Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 47,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v4.2.0",
         "publishedAt": "2026-09-23T14:25:55Z",
@@ -2819,7 +2863,11 @@
         "pushedAt": "2026-09-22T18:00:25Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "2.6.0",
         "publishedAt": "2026-09-15T10:29:38Z",
@@ -2932,10 +2980,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T14:16:18Z",
+        "pushedAt": "2026-09-24T14:44:48Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 19,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "bun-v1.4.2",
         "publishedAt": "2026-09-05T05:55:48Z",
@@ -3035,7 +3087,11 @@
         "pushedAt": "2026-09-23T20:09:48Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 50,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.11.4",
         "publishedAt": "2026-06-03T06:52:22Z",
@@ -3121,7 +3177,11 @@
         "pushedAt": "2026-09-18T15:57:07Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v1.1.6",
         "publishedAt": "2026-09-16T21:55:21Z",
@@ -3210,7 +3270,11 @@
         "pushedAt": "2026-09-22T03:34:51Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "@changesets/cli@3.0.3",
         "publishedAt": "2026-09-14T15:27:19Z",
@@ -3294,7 +3358,7 @@
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69215,
+        "stars": 69217,
         "forks": 7508,
         "topics": [],
         "archived": false,
@@ -3304,7 +3368,11 @@
         "pushedAt": "2026-09-24T12:25:50Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 62,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "desktop-v0.0.35",
         "publishedAt": "2026-09-24T08:34:28Z",
@@ -3389,7 +3457,11 @@
         "pushedAt": "2026-09-23T15:34:41Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v26.2.6",
         "publishedAt": null,
@@ -3457,7 +3529,11 @@
         "pushedAt": "2026-04-22T23:25:14Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "7.0.0",
         "publishedAt": "2026-03-04T09:25:39Z",
@@ -3536,8 +3612,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126305,
-        "forks": 19692,
+        "stars": 126308,
+        "forks": 19695,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -3546,7 +3622,11 @@
         "pushedAt": "2026-09-24T14:15:59Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 151,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "rust-v0.156.1",
         "publishedAt": "2026-09-23T02:41:36Z",
@@ -3620,7 +3700,7 @@
         "homepage": "https://colima.run",
         "language": "Go",
         "license": "MIT",
-        "stars": 30971,
+        "stars": 30973,
         "forks": 620,
         "topics": [
           "containerd",
@@ -3643,7 +3723,11 @@
         "pushedAt": "2026-09-23T03:49:48Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v0.10.3",
         "publishedAt": "2026-06-04T17:14:15Z",
@@ -3744,7 +3828,11 @@
         "pushedAt": "2026-09-24T04:55:56Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v8.3.0",
         "publishedAt": "2026-08-13T02:49:30Z",
@@ -3848,7 +3936,11 @@
         "pushedAt": "2026-09-22T08:09:07Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v2.0.0-vscode",
         "publishedAt": "2026-06-19T00:24:01Z",
@@ -3933,7 +4025,11 @@
         "pushedAt": "2026-09-24T02:56:59Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "template-v1.4.0",
         "publishedAt": "2026-08-18T21:36:10Z",
@@ -4015,7 +4111,11 @@
         "pushedAt": "2025-02-15T01:32:11Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v5.0.1",
         "publishedAt": "2022-04-12T17:35:30Z",
@@ -4111,7 +4211,11 @@
         "pushedAt": "2026-09-24T13:27:30Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.96.1",
         "publishedAt": "2026-09-21T16:22:02Z",
@@ -4206,7 +4310,11 @@
         "pushedAt": "2026-04-25T22:04:14Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.7EOL",
         "publishedAt": "2019-12-30T19:29:50Z",
@@ -4293,7 +4401,11 @@
         "pushedAt": "2026-09-24T14:05:19Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "curl-8_22_0",
         "publishedAt": "2026-09-02T05:59:35Z",
@@ -4391,7 +4503,11 @@
         "pushedAt": "2026-09-24T13:30:14Z",
         "defaultBranch": "develop"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v16.1.0",
         "publishedAt": "2026-09-15T21:37:56Z",
@@ -4484,7 +4600,11 @@
         "pushedAt": "2026-09-22T06:59:17Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v4.4.0",
         "publishedAt": "2026-05-29T23:33:36Z",
@@ -4577,7 +4697,11 @@
         "pushedAt": "2026-09-15T11:35:36Z",
         "defaultBranch": "dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.11.23",
         "publishedAt": "2026-08-17T11:50:26Z",
@@ -4670,7 +4794,11 @@
         "pushedAt": "2026-09-19T22:05:38Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 16,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.19.2",
         "publishedAt": "2026-03-28T19:50:29Z",
@@ -4764,7 +4892,11 @@
         "pushedAt": "2026-09-22T00:30:07Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 20,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.9.7",
         "publishedAt": "2026-09-17T09:04:55Z",
@@ -4849,7 +4981,11 @@
         "pushedAt": "2026-09-19T20:49:24Z",
         "defaultBranch": "next"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.4.12",
         "publishedAt": "2026-08-16T17:07:43Z",
@@ -4936,7 +5072,11 @@
         "pushedAt": "2026-09-22T08:42:53Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "0.71.0",
         "publishedAt": "2026-09-18T22:57:29Z",
@@ -5019,7 +5159,11 @@
         "pushedAt": "2026-09-24T10:51:51Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "3.18.1",
         "publishedAt": "2026-09-07T18:04:31Z",
@@ -5102,7 +5246,11 @@
         "pushedAt": "2026-09-24T08:52:54Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 7,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "docker-v29.8.1",
         "publishedAt": "2026-09-15T17:05:26Z",
@@ -5176,7 +5324,7 @@
         "homepage": "https://docusaurus.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 66332,
+        "stars": 66333,
         "forks": 10043,
         "topics": [
           "documentation",
@@ -5190,10 +5338,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-06-20T16:13:53Z",
-        "pushedAt": "2026-09-24T14:03:06Z",
+        "pushedAt": "2026-09-24T14:41:51Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.10.2",
         "publishedAt": "2026-07-10T18:31:27Z",
@@ -5279,7 +5431,11 @@
         "pushedAt": "2026-09-15T17:23:31Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.57.4",
         "publishedAt": "2026-09-05T22:02:39Z",
@@ -5381,10 +5537,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-24T14:11:29Z",
+        "pushedAt": "2026-09-24T14:27:38Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 16,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.0.0",
         "publishedAt": "2026-09-16T10:29:28Z",
@@ -5495,7 +5655,11 @@
         "pushedAt": "2026-09-24T12:43:40Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 30,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "drizzle-kit@0.31.11",
         "publishedAt": "2026-09-21T10:02:50Z",
@@ -5574,10 +5738,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T14:14:22Z",
+        "pushedAt": "2026-09-24T14:47:29Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 13,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v9.5.4",
         "publishedAt": "2026-09-15T18:19:18Z",
@@ -5676,7 +5844,11 @@
         "pushedAt": "2026-09-24T13:12:50Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.1.6",
         "publishedAt": "2026-06-02T22:01:47Z",
@@ -5750,7 +5922,7 @@
         "homepage": "https://elysiajs.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 19177,
+        "stars": 19178,
         "forks": 603,
         "topics": [
           "bun",
@@ -5767,7 +5939,11 @@
         "pushedAt": "2026-09-24T13:00:17Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "1.4.30",
         "publishedAt": "2026-08-26T16:53:35Z",
@@ -5841,7 +6017,7 @@
         "homepage": "https://esbuild.github.io/",
         "language": "Go",
         "license": "MIT",
-        "stars": 40069,
+        "stars": 40068,
         "forks": 1345,
         "topics": [
           "bundler",
@@ -5863,7 +6039,11 @@
         "pushedAt": "2026-08-09T17:20:12Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.28.2",
         "publishedAt": "2026-08-08T19:58:58Z",
@@ -5947,7 +6127,11 @@
         "pushedAt": "2026-09-23T17:45:03Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v10.11.0",
         "publishedAt": "2026-09-18T20:13:06Z",
@@ -6030,7 +6214,11 @@
         "pushedAt": "2024-09-24T15:18:09Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.10.1",
         "publishedAt": "2021-04-12T21:42:01Z",
@@ -6100,8 +6288,8 @@
         "homepage": "https://expressjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 69467,
-        "forks": 25058,
+        "stars": 69468,
+        "forks": 25059,
         "topics": [
           "express",
           "javascript",
@@ -6115,7 +6303,11 @@
         "pushedAt": "2026-09-15T17:52:26Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 9,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.2.1",
         "publishedAt": "2025-12-01T20:54:44Z",
@@ -6189,7 +6381,7 @@
         "homepage": "https://eza.rocks",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 23360,
+        "stars": 23359,
         "forks": 525,
         "topics": [
           "color",
@@ -6210,7 +6402,11 @@
         "pushedAt": "2026-08-06T19:53:22Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 17,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.23.5",
         "publishedAt": "2026-07-09T10:21:04Z",
@@ -6320,7 +6516,11 @@
         "pushedAt": "2026-09-18T21:24:37Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 35,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.141.1",
         "publishedAt": "2026-07-29T17:17:26Z",
@@ -6400,7 +6600,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 37189,
-        "forks": 3032,
+        "forks": 3033,
         "topics": [
           "fastify",
           "fastify-core",
@@ -6417,7 +6617,11 @@
         "pushedAt": "2026-09-24T10:01:44Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.12.5",
         "publishedAt": "2026-09-16T10:19:43Z",
@@ -6515,7 +6719,11 @@
         "pushedAt": "2026-06-05T07:31:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.7.0",
         "publishedAt": "2025-11-10T17:47:20Z",
@@ -6657,10 +6865,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-09-24T12:38:33Z",
+        "pushedAt": "2026-09-24T14:46:45Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v7.26.3",
         "publishedAt": "2026-09-24T12:51:54Z",
@@ -6751,7 +6963,11 @@
         "pushedAt": "2026-09-23T12:22:04Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "7.4.1",
         "publishedAt": null,
@@ -6801,7 +7017,11 @@
         "pushedAt": "2026-09-08T16:40:53Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.1.3",
         "publishedAt": "2026-02-19T05:01:30Z",
@@ -6905,7 +7125,11 @@
         "pushedAt": "2026-09-24T13:38:49Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.1.2",
         "publishedAt": "2026-09-05T03:54:50Z",
@@ -6993,7 +7217,11 @@
         "pushedAt": "2026-09-20T05:35:46Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v1.19.3",
         "publishedAt": "2026-06-25T09:16:05Z",
@@ -7093,7 +7321,11 @@
         "pushedAt": "2026-09-22T14:10:28Z",
         "defaultBranch": "ver/26.2.x"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": null,
       "releases": [],
       "maintainerVerified": false,
@@ -7148,10 +7380,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-05-31T12:40:25Z",
-        "pushedAt": "2026-09-24T06:04:47Z",
+        "pushedAt": "2026-09-24T14:22:30Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.15.1",
         "publishedAt": null,
@@ -7201,7 +7437,11 @@
         "pushedAt": "2026-09-24T01:46:45Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "gatsby@5.16.1",
         "publishedAt": "2026-02-10T14:38:44Z",
@@ -7316,7 +7556,11 @@
         "pushedAt": "2026-09-24T00:00:21Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 19,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.37.0",
         "publishedAt": "2026-09-24T00:00:21Z",
@@ -7417,7 +7661,11 @@
         "pushedAt": "2026-09-24T01:41:38Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.61.0",
         "publishedAt": "2026-09-23T23:59:15Z",
@@ -7506,7 +7754,11 @@
         "pushedAt": "2026-09-24T00:31:47Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 69,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.3.1",
         "publishedAt": null,
@@ -7569,7 +7821,11 @@
         "pushedAt": "2025-12-02T16:09:54Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.6.2",
         "publishedAt": "2024-12-16T18:45:18Z",
@@ -7660,7 +7916,11 @@
         "pushedAt": "2026-09-18T23:39:10Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 7,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.14.2",
         "publishedAt": "2026-09-18T21:22:51Z",
@@ -7738,7 +7998,11 @@
         "pushedAt": "2025-09-24T14:22:08Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "0.8.0",
         "publishedAt": "2025-09-24T00:44:00Z",
@@ -7838,7 +8102,11 @@
         "pushedAt": "2026-09-24T13:28:15Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 34,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.27.3",
         "publishedAt": "2026-08-29T17:42:17Z",
@@ -7952,7 +8220,11 @@
         "pushedAt": "2026-09-24T12:08:07Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v42.2.0-rc42",
         "publishedAt": null,
@@ -8031,7 +8303,11 @@
         "pushedAt": "2026-05-18T20:39:34Z",
         "defaultBranch": "dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2021.8.0",
         "publishedAt": "2021-09-01T15:51:11Z",
@@ -8123,7 +8399,11 @@
         "pushedAt": "2026-09-24T08:07:11Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.12.19",
         "publishedAt": "2026-04-01T13:04:59Z",
@@ -8202,7 +8482,7 @@
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54613,
+        "stars": 54612,
         "forks": 6308,
         "topics": [
           "acp",
@@ -8214,10 +8494,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-08-23T19:03:36Z",
-        "pushedAt": "2026-09-23T21:36:00Z",
+        "pushedAt": "2026-09-24T14:45:48Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 25,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v1.52.0",
         "publishedAt": "2026-09-23T14:59:14Z",
@@ -8296,7 +8580,7 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76887,
+        "stars": 76888,
         "forks": 14780,
         "topics": [
           "alerting",
@@ -8319,10 +8603,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T14:17:50Z",
+        "pushedAt": "2026-09-24T14:47:08Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v13.2.2",
         "publishedAt": "2026-09-15T12:21:32Z",
@@ -8421,7 +8709,11 @@
         "pushedAt": "2026-09-22T23:25:51Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 15,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "25.07.1",
         "publishedAt": "2025-07-18T15:13:19Z",
@@ -8506,7 +8798,11 @@
         "pushedAt": "2026-08-29T09:36:32Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v8.1.2",
         "publishedAt": "2026-05-06T13:24:24Z",
@@ -8585,7 +8881,7 @@
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32323,
+        "stars": 32325,
         "forks": 1342,
         "topics": [
           "aws-lambda",
@@ -8605,7 +8901,11 @@
         "pushedAt": "2026-09-24T08:14:42Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 23,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v4.13.9",
         "publishedAt": "2026-09-24T01:32:14Z",
@@ -8684,7 +8984,7 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80497,
+        "stars": 80498,
         "forks": 6124,
         "topics": [
           "api",
@@ -8713,7 +9013,11 @@
         "pushedAt": "2026-09-24T10:08:52Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 27,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2026.8.2",
         "publishedAt": "2026-09-23T04:35:43Z",
@@ -8812,7 +9116,11 @@
         "pushedAt": "2024-12-17T17:30:35Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 15,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.2.4",
         "publishedAt": "2024-11-01T17:33:07Z",
@@ -8908,7 +9216,11 @@
         "pushedAt": "2026-03-29T00:19:16Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.28.1",
         "publishedAt": "2024-12-06T15:36:24Z",
@@ -9005,7 +9317,11 @@
         "pushedAt": "2026-09-24T10:16:36Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 21,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.166.0",
         "publishedAt": "2026-09-09T15:10:02Z",
@@ -9084,7 +9400,7 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29408,
+        "stars": 29412,
         "forks": 2280,
         "topics": [
           "acme",
@@ -9112,10 +9428,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-24T14:14:56Z",
+        "pushedAt": "2026-09-24T14:24:50Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 37,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.165.16",
         "publishedAt": "2026-09-23T15:44:50Z",
@@ -9216,7 +9536,11 @@
         "pushedAt": "2026-09-23T20:46:38Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.11.4",
         "publishedAt": "2026-09-08T18:55:40Z",
@@ -9302,7 +9626,11 @@
         "pushedAt": "2026-03-23T16:16:29Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "controller-v1.15.1",
         "publishedAt": "2026-03-19T21:17:55Z",
@@ -9396,7 +9724,11 @@
         "pushedAt": "2026-09-24T14:17:21Z",
         "defaultBranch": "develop"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "core@13.3.0",
         "publishedAt": "2026-09-23T11:04:33Z",
@@ -9474,7 +9806,11 @@
         "pushedAt": "2026-09-24T07:22:31Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "vv3.4.0beta13",
         "publishedAt": null,
@@ -9530,7 +9866,11 @@
         "pushedAt": "2026-09-23T21:01:21Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.21.0",
         "publishedAt": "2026-09-14T23:05:01Z",
@@ -9633,7 +9973,11 @@
         "pushedAt": "2026-09-24T13:09:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 12,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.8.4",
         "publishedAt": "2026-07-23T06:29:15Z",
@@ -9725,7 +10069,11 @@
         "pushedAt": "2026-09-24T12:14:58Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 5,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.1.1",
         "publishedAt": "2026-08-05T08:07:12Z",
@@ -9793,7 +10141,7 @@
         "homepage": "https://jekyllrb.com",
         "language": "Ruby",
         "license": "MIT",
-        "stars": 51686,
+        "stars": 51687,
         "forks": 10300,
         "topics": [
           "blog-engine",
@@ -9810,7 +10158,11 @@
         "pushedAt": "2026-09-17T19:20:03Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v4.4.1",
         "publishedAt": "2025-01-29T12:47:41Z",
@@ -9899,7 +10251,11 @@
         "pushedAt": "2026-09-23T20:21:37Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "jenkins-2.583",
         "publishedAt": "2026-09-22T11:15:05Z",
@@ -9992,7 +10348,11 @@
         "pushedAt": "2026-09-22T22:52:11Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 5,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v30.5.2",
         "publishedAt": "2026-09-18T13:57:03Z",
@@ -10074,7 +10434,11 @@
         "pushedAt": "2026-09-12T08:28:17Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "rel/v5.6.3",
         "publishedAt": "2024-01-09T08:29:40Z",
@@ -10142,8 +10506,8 @@
         "homepage": "https://jqlang.org",
         "language": "C",
         "license": "Other",
-        "stars": 35679,
-        "forks": 2448,
+        "stars": 35680,
+        "forks": 2449,
         "topics": [
           "jq"
         ],
@@ -10154,7 +10518,11 @@
         "pushedAt": "2026-09-19T06:21:29Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 13,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "jq-1.8.2",
         "publishedAt": "2026-06-20T14:11:27Z",
@@ -10246,7 +10614,11 @@
         "pushedAt": "2026-09-14T13:53:36Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.9.0",
         "publishedAt": "2026-06-02T14:41:12Z",
@@ -10325,7 +10697,7 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31563,
+        "stars": 31565,
         "forks": 1639,
         "topics": [
           "es6",
@@ -10345,7 +10717,11 @@
         "pushedAt": "2026-09-24T14:05:04Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 16,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.3.0",
         "publishedAt": "2026-09-21T15:17:03Z",
@@ -10413,7 +10789,7 @@
         "homepage": "https://kafka.apache.org/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 33816,
+        "stars": 33817,
         "forks": 15534,
         "topics": [
           "java",
@@ -10425,10 +10801,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-24T13:06:39Z",
+        "pushedAt": "2026-09-24T14:45:36Z",
         "defaultBranch": "trunk"
       },
-      "trend": null,
+      "trend": {
+        "stars": 33,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "show",
         "publishedAt": null,
@@ -10478,7 +10858,11 @@
         "pushedAt": "2024-05-29T08:55:22Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v6.3.4",
         "publishedAt": "2023-10-30T20:26:08Z",
@@ -10566,10 +10950,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T14:15:04Z",
+        "pushedAt": "2026-09-24T14:47:45Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v9.5.4",
         "publishedAt": "2026-09-15T18:19:38Z",
@@ -10663,7 +11051,11 @@
         "pushedAt": "2026-09-04T13:08:26Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.33.0",
         "publishedAt": "2026-08-26T21:58:46Z",
@@ -10743,7 +11135,7 @@
         "language": "Python",
         "license": "GPL-3.0",
         "stars": 35053,
-        "forks": 1524,
+        "forks": 1523,
         "topics": [
           "c",
           "go",
@@ -10762,10 +11154,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-16T14:48:28Z",
-        "pushedAt": "2026-09-24T14:14:38Z",
+        "pushedAt": "2026-09-24T14:25:51Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 22,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.49.1",
         "publishedAt": "2026-09-24T05:12:57Z",
@@ -10862,7 +11258,11 @@
         "pushedAt": "2026-09-23T22:33:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "knope/v0.23.0",
         "publishedAt": "2026-05-24T19:35:03Z",
@@ -10942,7 +11342,11 @@
         "pushedAt": "2026-09-19T03:46:48Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.2.1",
         "publishedAt": "2026-05-21T07:26:16Z",
@@ -11026,7 +11430,7 @@
         "homepage": "https://kysely.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 14242,
+        "stars": 14243,
         "forks": 445,
         "topics": [
           "browser",
@@ -11051,7 +11455,11 @@
         "pushedAt": "2026-09-23T07:44:23Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v0.29.6",
         "publishedAt": "2026-09-16T01:06:58Z",
@@ -11135,7 +11543,11 @@
         "pushedAt": "2026-09-23T14:41:47Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v10.0.1",
         "publishedAt": "2026-08-19T13:37:24Z",
@@ -11217,7 +11629,11 @@
         "pushedAt": "2025-12-17T05:32:50Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.4.0",
         "publishedAt": "2018-05-29T00:17:05Z",
@@ -11316,7 +11732,11 @@
         "pushedAt": "2026-09-24T12:10:55Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "site@2026.9.18",
         "publishedAt": "2026-09-24T11:54:02Z",
@@ -11399,7 +11819,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44852,
+        "stars": 44856,
         "forks": 9193,
         "topics": [
           "ai",
@@ -11427,10 +11847,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T14:10:45Z",
+        "pushedAt": "2026-09-24T14:47:14Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 81,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.8.8-rc4",
         "publishedAt": null,
@@ -11541,7 +11965,11 @@
         "pushedAt": "2026-09-23T09:36:39Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.24.0",
         "publishedAt": "2026-06-11T11:26:24Z",
@@ -11620,7 +12048,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129411,
+        "stars": 129416,
         "forks": 23681,
         "topics": [
           "ggml"
@@ -11629,10 +12057,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T14:03:13Z",
+        "pushedAt": "2026-09-24T14:25:08Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 97,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.5.0",
         "publishedAt": "2026-09-23T20:50:06Z",
@@ -11715,7 +12147,7 @@
         "homepage": "https://lobehub.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 82800,
+        "stars": 82801,
         "forks": 15921,
         "topics": [
           "agent",
@@ -11741,10 +12173,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-24T13:25:36Z",
+        "pushedAt": "2026-09-24T14:41:49Z",
         "defaultBranch": "canary"
       },
-      "trend": null,
+      "trend": {
+        "stars": 17,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v2.2.18",
         "publishedAt": "2026-09-20T13:11:30Z",
@@ -11848,7 +12284,11 @@
         "pushedAt": "2026-09-21T21:01:24Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.46.6",
         "publishedAt": "2026-09-17T17:37:05Z",
@@ -11933,7 +12373,11 @@
         "pushedAt": "2026-09-23T23:53:10Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v9.5.4",
         "publishedAt": "2026-09-15T18:19:12Z",
@@ -12027,7 +12471,11 @@
         "pushedAt": "2026-08-17T07:13:43Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.2.0",
         "publishedAt": "2025-10-12T08:31:53Z",
@@ -12118,7 +12566,11 @@
         "pushedAt": "2026-08-09T12:44:46Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.7.2",
         "publishedAt": null,
@@ -12183,7 +12635,11 @@
         "pushedAt": "2026-09-24T12:02:37Z",
         "defaultBranch": "6.x-dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "5.14.0",
         "publishedAt": "2026-09-21T21:11:13Z",
@@ -12265,7 +12721,7 @@
         "homepage": "https://mattermost.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 39166,
+        "stars": 39167,
         "forks": 9018,
         "topics": [
           "collaboration",
@@ -12280,10 +12736,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T14:17:19Z",
+        "pushedAt": "2026-09-24T14:42:13Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 18,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v11.11.1",
         "publishedAt": "2026-09-24T06:27:30Z",
@@ -12406,7 +12866,11 @@
         "pushedAt": "2026-09-24T14:16:49Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 28,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.54.0",
         "publishedAt": "2026-09-21T08:27:35Z",
@@ -12489,7 +12953,11 @@
         "pushedAt": "2026-09-11T03:07:33Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "flash-with-wbuf-stack",
         "publishedAt": null,
@@ -12560,10 +13028,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-03-15T09:21:10Z",
-        "pushedAt": "2026-09-24T14:06:16Z",
+        "pushedAt": "2026-09-24T14:21:05Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v7.2.1",
         "publishedAt": "2026-09-19T10:20:19Z",
@@ -12655,7 +13127,11 @@
         "pushedAt": "2026-09-22T23:54:22Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2026.09.12-26.2",
         "publishedAt": "2026-09-12T20:07:36Z",
@@ -12724,7 +13200,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 32152,
-        "forks": 5330,
+        "forks": 5331,
         "topics": [
           "cluster",
           "cncf",
@@ -12740,7 +13216,11 @@
         "pushedAt": "2026-09-23T21:00:18Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.39.0",
         "publishedAt": "2026-09-02T21:09:46Z",
@@ -12809,7 +13289,7 @@
         "language": "Go",
         "license": "AGPL-3.0",
         "stars": 61354,
-        "forks": 7990,
+        "forks": 7991,
         "topics": [
           "amazon-s3",
           "cloud",
@@ -12831,7 +13311,11 @@
         "pushedAt": "2026-04-24T17:54:39Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "RELEASE.2025-10-15T17-29-55Z",
         "publishedAt": "2025-10-16T19:33:51Z",
@@ -12932,7 +13416,11 @@
         "pushedAt": "2026-09-15T15:34:06Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "9.7.7",
         "publishedAt": "2026-07-17T16:20:51Z",
@@ -13023,7 +13511,11 @@
         "pushedAt": "2026-09-23T20:39:47Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v12.0.2",
         "publishedAt": "2026-09-17T14:20:56Z",
@@ -13101,7 +13593,11 @@
         "pushedAt": "2026-09-15T01:08:07Z",
         "defaultBranch": "develop"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.31.0",
         "publishedAt": "2026-09-15T01:10:04Z",
@@ -13163,7 +13659,11 @@
         "pushedAt": "2026-09-24T14:03:36Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "show",
         "publishedAt": null,
@@ -13231,7 +13731,11 @@
         "pushedAt": "2026-09-24T03:26:09Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.5.5",
         "publishedAt": "2026-09-15T04:23:39Z",
@@ -13315,7 +13819,11 @@
         "pushedAt": "2026-09-23T15:43:38Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.3.1",
         "publishedAt": null,
@@ -13369,10 +13877,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-01-31T13:39:22Z",
-        "pushedAt": "2026-09-24T12:29:16Z",
+        "pushedAt": "2026-09-24T14:30:31Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 35,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.12.5",
         "publishedAt": "2026-08-23T18:27:13Z",
@@ -13458,7 +13970,11 @@
         "pushedAt": "2026-09-20T04:25:09Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.4.0",
         "publishedAt": "2026-09-20T05:01:55Z",
@@ -13565,10 +14081,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-24T14:10:01Z",
+        "pushedAt": "2026-09-24T14:38:47Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v35.0.1",
         "publishedAt": "2026-09-24T13:54:44Z",
@@ -13666,7 +14186,11 @@
         "pushedAt": "2026-09-16T12:13:03Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 11,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "release-1.31.6",
         "publishedAt": "2026-09-15T15:34:19Z",
@@ -13737,7 +14261,7 @@
         "homepage": "https://nodejs.org",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 122058,
+        "stars": 122062,
         "forks": 37656,
         "topics": [
           "javascript",
@@ -13754,10 +14278,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-11-26T19:57:11Z",
-        "pushedAt": "2026-09-24T14:12:13Z",
+        "pushedAt": "2026-09-24T14:35:23Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 20,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v26.10.0",
         "publishedAt": "2026-09-22T09:02:46Z",
@@ -13842,7 +14370,11 @@
         "pushedAt": "2026-09-23T17:16:53Z",
         "defaultBranch": "latest"
       },
-      "trend": null,
+      "trend": {
+        "stars": 13,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "libnpmpublish-v11.2.1",
         "publishedAt": "2026-09-22T21:34:51Z",
@@ -13917,7 +14449,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 29370,
-        "forks": 3003,
+        "forks": 3004,
         "topics": [
           "angular",
           "build",
@@ -13941,10 +14473,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-24T14:16:05Z",
+        "pushedAt": "2026-09-24T14:45:22Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 5,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "22.7.12",
         "publishedAt": "2026-09-10T20:42:07Z",
@@ -14051,7 +14587,11 @@
         "pushedAt": "2026-09-18T13:54:12Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v31.3.0",
         "publishedAt": "2026-09-13T15:27:58Z",
@@ -14145,7 +14685,11 @@
         "pushedAt": "2026-09-23T00:57:31Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": null,
       "releases": [],
       "maintainerVerified": false,
@@ -14184,7 +14728,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181594,
+        "stars": 181598,
         "forks": 17989,
         "topics": [
           "deepseek",
@@ -14207,10 +14751,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-06-26T19:39:32Z",
-        "pushedAt": "2026-09-24T03:46:00Z",
+        "pushedAt": "2026-09-24T14:45:44Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 73,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.34.4",
         "publishedAt": "2026-09-23T02:24:43Z",
@@ -14322,7 +14870,11 @@
         "pushedAt": "2026-09-24T01:04:02Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v16.7.3",
         "publishedAt": "2026-09-23T01:08:39Z",
@@ -14417,8 +14969,8 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 153008,
-        "forks": 22383,
+        "stars": 153015,
+        "forks": 22384,
         "topics": [
           "ai",
           "llm",
@@ -14443,7 +14995,11 @@
         "pushedAt": "2026-09-24T04:15:30Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 94,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.11.4",
         "publishedAt": "2026-09-21T19:25:21Z",
@@ -14522,7 +15078,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7479,
+        "stars": 7481,
         "forks": 578,
         "topics": [
           "go",
@@ -14536,7 +15092,11 @@
         "pushedAt": "2026-09-24T08:54:40Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 23,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.7.0",
         "publishedAt": "2026-09-23T17:39:54Z",
@@ -14632,17 +15192,21 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209808,
-        "forks": 27708,
+        "stars": 209816,
+        "forks": 27711,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-30T20:08:00Z",
-        "pushedAt": "2026-09-24T14:04:18Z",
+        "pushedAt": "2026-09-24T14:47:13Z",
         "defaultBranch": "dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 191,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v1.18.32",
         "publishedAt": "2026-09-21T22:51:20Z",
@@ -14721,7 +15285,7 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89061,
+        "stars": 89062,
         "forks": 11726,
         "topics": [
           "agent",
@@ -14738,10 +15302,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-03-13T03:33:31Z",
-        "pushedAt": "2026-09-24T13:57:14Z",
+        "pushedAt": "2026-09-24T14:33:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 81,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v1.23.0",
         "publishedAt": "2026-09-23T17:24:03Z",
@@ -14815,7 +15383,7 @@
         "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 13770,
+        "stars": 13771,
         "forks": 2969,
         "topics": [
           "analytics",
@@ -14832,7 +15400,11 @@
         "pushedAt": "2026-09-24T13:53:00Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.8.0",
         "publishedAt": "2026-08-05T17:20:33Z",
@@ -14927,7 +15499,11 @@
         "pushedAt": "2026-09-24T05:17:05Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "3.8.0",
         "publishedAt": "2026-09-01T03:02:50Z",
@@ -15028,7 +15604,11 @@
         "pushedAt": "2026-09-24T09:22:55Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v0.161.0",
         "publishedAt": "2026-09-14T22:49:14Z",
@@ -15121,7 +15701,11 @@
         "pushedAt": "2026-09-24T06:44:26Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 18,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.12.6",
         "publishedAt": "2026-08-19T11:40:07Z",
@@ -15196,7 +15780,7 @@
         "homepage": "https://oxc.rs",
         "language": "Rust",
         "license": "MIT",
-        "stars": 22872,
+        "stars": 22873,
         "forks": 1315,
         "topics": [
           "compiler",
@@ -15214,7 +15798,11 @@
         "pushedAt": "2026-09-24T13:20:15Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 22,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "oxlint_v1.85.0",
         "publishedAt": "2026-09-21T15:31:51Z",
@@ -15283,7 +15871,7 @@
         "language": "Java",
         "license": "Other",
         "stars": 12678,
-        "forks": 3539,
+        "forks": 3540,
         "topics": [
           "bukkit",
           "java",
@@ -15303,7 +15891,11 @@
         "pushedAt": "2026-09-24T06:17:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "26.2",
         "publishedAt": null,
@@ -15368,7 +15960,11 @@
         "pushedAt": "2026-09-06T13:12:08Z",
         "defaultBranch": "v2"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.16.4",
         "publishedAt": "2026-02-02T03:22:20Z",
@@ -15467,7 +16063,11 @@
         "pushedAt": "2026-09-17T09:44:28Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v5.16.0",
         "publishedAt": "2026-09-17T10:01:50Z",
@@ -15569,7 +16169,11 @@
         "pushedAt": "2026-09-22T00:57:57Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.29.2",
         "publishedAt": "2026-09-17T07:00:04Z",
@@ -15665,7 +16269,11 @@
         "pushedAt": "2026-09-24T10:07:20Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.0.0-M4",
         "publishedAt": null,
@@ -15719,7 +16327,11 @@
         "pushedAt": "2026-09-24T13:33:58Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v0.54.0",
         "publishedAt": "2026-07-29T13:16:25Z",
@@ -15805,7 +16417,11 @@
         "pushedAt": "2026-09-23T23:12:15Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "26.2.1",
         "publishedAt": null,
@@ -15857,7 +16473,11 @@
         "pushedAt": "2026-09-22T19:25:03Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v7.6.1",
         "publishedAt": "2026-08-11T23:18:10Z",
@@ -15941,7 +16561,11 @@
         "pushedAt": "2026-09-18T01:33:44Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2026.8.0",
         "publishedAt": "2026-08-20T19:58:54Z",
@@ -16021,7 +16645,7 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29203,
+        "stars": 29204,
         "forks": 1872,
         "topics": [
           "analytics",
@@ -16049,10 +16673,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-12-04T22:33:36Z",
-        "pushedAt": "2026-09-24T14:06:46Z",
+        "pushedAt": "2026-09-24T14:44:35Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 15,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.2.1",
         "publishedAt": "2026-05-15T09:15:56Z",
@@ -16140,7 +16768,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96623,
+        "stars": 96626,
         "forks": 6497,
         "topics": [
           "automation",
@@ -16166,7 +16794,11 @@
         "pushedAt": "2026-09-24T09:30:05Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 110,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.63.0",
         "publishedAt": "2026-09-04T22:40:31Z",
@@ -16241,7 +16873,7 @@
         "homepage": "https://pnpm.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 36628,
+        "stars": 36629,
         "forks": 1759,
         "topics": [
           "dependency-manager",
@@ -16257,10 +16889,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T14:15:12Z",
+        "pushedAt": "2026-09-24T14:37:51Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 18,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v12.6.0",
         "publishedAt": "2026-09-22T17:08:42Z",
@@ -16350,7 +16986,11 @@
         "pushedAt": "2026-09-24T13:03:05Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v6.1.2",
         "publishedAt": "2026-09-16T00:07:38Z",
@@ -16446,7 +17086,11 @@
         "pushedAt": "2026-09-24T14:11:50Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v1.29.3",
         "publishedAt": "2026-09-01T14:28:26Z",
@@ -16536,7 +17180,11 @@
         "pushedAt": "2026-09-21T21:32:57Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.5.1",
         "publishedAt": "2026-09-20T07:16:50Z",
@@ -16616,7 +17264,11 @@
         "pushedAt": "2026-09-14T08:10:04Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.20.0",
         "publishedAt": "2024-01-26T08:06:46Z",
@@ -16713,7 +17365,11 @@
         "pushedAt": "2026-09-24T11:17:17Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.9.9",
         "publishedAt": "2026-09-23T06:33:12Z",
@@ -16820,10 +17476,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-24T14:12:14Z",
+        "pushedAt": "2026-09-24T14:41:01Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.17.0",
         "publishedAt": "2026-08-04T13:31:06Z",
@@ -16897,7 +17557,7 @@
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66206,
+        "stars": 66207,
         "forks": 10855,
         "topics": [
           "alerting",
@@ -16915,7 +17575,11 @@
         "pushedAt": "2026-09-24T13:44:54Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 31,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.14.0",
         "publishedAt": "2026-08-18T08:49:40Z",
@@ -17009,7 +17673,11 @@
         "pushedAt": "2026-09-24T11:34:16Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v4.2.4",
         "publishedAt": "2026-08-03T09:19:30Z",
@@ -17118,10 +17786,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-24T14:13:43Z",
+        "pushedAt": "2026-09-24T14:41:15Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.264.0",
         "publishedAt": "2026-09-23T09:54:16Z",
@@ -17196,7 +17868,7 @@
         "language": "Rust",
         "license": "GPL-3.0",
         "stars": 11333,
-        "forks": 819,
+        "forks": 820,
         "topics": [
           "docker",
           "game-server",
@@ -17216,7 +17888,11 @@
         "pushedAt": "2026-09-24T11:35:23Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.2.0+26.3-26.51",
         "publishedAt": "2026-09-20T12:22:14Z",
@@ -17275,7 +17951,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 95620,
-        "forks": 9580,
+        "forks": 9579,
         "topics": [
           "automation",
           "chrome",
@@ -17294,7 +17970,11 @@
         "pushedAt": "2026-09-24T10:45:23Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "browsers-v3.2.3",
         "publishedAt": "2026-09-23T12:52:06Z",
@@ -17387,7 +18067,11 @@
         "pushedAt": "2026-09-23T23:39:22Z",
         "defaultBranch": "ver/26.3"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.20.6",
         "publishedAt": null,
@@ -17432,7 +18116,11 @@
         "pushedAt": "2026-09-24T11:20:15Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.8.6",
         "publishedAt": "2026-09-17T07:06:27Z",
@@ -17515,10 +18203,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-09T05:40:02Z",
-        "pushedAt": "2026-09-24T09:30:18Z",
+        "pushedAt": "2026-09-24T14:22:17Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v4.0.9",
         "publishedAt": "2026-09-23T15:25:58Z",
@@ -17602,7 +18294,11 @@
         "pushedAt": "2026-09-24T00:10:24Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.1.414",
         "publishedAt": "2026-09-09T20:40:05Z",
@@ -17705,10 +18401,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-04-28T23:29:15Z",
-        "pushedAt": "2026-09-24T13:54:02Z",
+        "pushedAt": "2026-09-24T14:36:07Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "10.0.1",
         "publishedAt": "2026-08-24T13:55:02Z",
@@ -17802,7 +18502,11 @@
         "pushedAt": "2026-09-24T09:54:10Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v1.24.0",
         "publishedAt": "2026-07-29T21:34:21Z",
@@ -17901,7 +18605,11 @@
         "pushedAt": "2026-09-24T12:24:04Z",
         "defaultBranch": "unstable"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "8.10.2",
         "publishedAt": "2026-09-17T15:06:56Z",
@@ -18002,7 +18710,11 @@
         "pushedAt": "2026-08-22T00:45:06Z",
         "defaultBranch": "dev"
       },
-      "trend": null,
+      "trend": {
+        "stars": 9,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v26.2.2",
         "publishedAt": "2026-08-22T00:45:06Z",
@@ -18093,7 +18805,11 @@
         "pushedAt": "2026-09-14T18:48:58Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 12,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v17.11.2",
         "publishedAt": "2026-08-24T21:20:30Z",
@@ -18187,7 +18903,11 @@
         "pushedAt": "2026-09-24T13:58:27Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "release-plz-v0.3.169",
         "publishedAt": "2026-09-19T10:32:29Z",
@@ -18274,7 +18994,11 @@
         "pushedAt": "2026-09-21T20:22:36Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 7,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.34.2",
         "publishedAt": "2026-05-14T19:27:15Z",
@@ -18353,7 +19077,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "Unlicense",
-        "stars": 68568,
+        "stars": 68569,
         "forks": 3426,
         "topics": [
           "cli",
@@ -18374,7 +19098,11 @@
         "pushedAt": "2026-08-04T13:59:44Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 58,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "15.2.0",
         "publishedAt": "2026-07-15T16:26:10Z",
@@ -18459,7 +19187,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 46165,
-        "forks": 13919,
+        "forks": 13920,
         "topics": [
           "chat",
           "collaboration",
@@ -18477,10 +19205,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-24T14:06:36Z",
+        "pushedAt": "2026-09-24T14:48:48Z",
         "defaultBranch": "develop"
       },
-      "trend": null,
+      "trend": {
+        "stars": 13,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "8.8.1",
         "publishedAt": "2026-09-09T15:30:46Z",
@@ -18583,18 +19315,29 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-09-18T14:20:28Z",
-        "pushedAt": "2026-09-24T13:36:27Z",
+        "pushedAt": "2026-09-24T14:32:07Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
-        "tag": "v1.2.10",
-        "publishedAt": "2026-09-23T13:43:46Z",
-        "url": "https://github.com/rolldown/rolldown/releases/tag/v1.2.10",
+        "tag": "v1.2.11",
+        "publishedAt": "2026-09-24T14:32:08Z",
+        "url": "https://github.com/rolldown/rolldown/releases/tag/v1.2.11",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v1.2.11",
+          "name": "watch: report only file events (#10974) by @shulaoda",
+          "publishedAt": "2026-09-24T14:32:08Z",
+          "url": "https://github.com/rolldown/rolldown/releases/tag/v1.2.11",
+          "prerelease": false
+        },
         {
           "tag": "v1.2.10",
           "name": "rolldown_plugin_esm_external_require: prefer 'module.exports' over a namespace spread (#10901) by @isker",
@@ -18621,13 +19364,6 @@
           "name": "rolldown_binding: make PreRenderedChunk.facadeModuleId nullable like Rollup (#10810) by @IWANABETHATGUY",
           "publishedAt": "2026-09-02T13:30:58Z",
           "url": "https://github.com/rolldown/rolldown/releases/tag/v1.2.7",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.2.6",
-          "name": "minify: support property name mangling (#10374) by @Dunqing",
-          "publishedAt": "2026-08-26T12:05:05Z",
-          "url": "https://github.com/rolldown/rolldown/releases/tag/v1.2.6",
           "prerelease": false
         }
       ],
@@ -18664,7 +19400,11 @@
         "pushedAt": "2026-09-24T10:09:55Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v4.63.5",
         "publishedAt": "2026-09-24T10:09:48Z",
@@ -18756,10 +19496,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-09-24T13:32:59Z",
+        "pushedAt": "2026-09-24T14:44:46Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.29.0",
         "publishedAt": "2026-09-24T13:33:00Z",
@@ -18860,7 +19604,11 @@
         "pushedAt": "2026-09-24T10:55:54Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.2.7",
         "publishedAt": "2026-09-23T02:17:31Z",
@@ -18950,7 +19698,11 @@
         "pushedAt": "2026-09-15T00:43:42Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.3.8",
         "publishedAt": null,
@@ -19023,7 +19775,11 @@
         "pushedAt": "2026-09-24T14:09:41Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 32,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.16.8",
         "publishedAt": "2026-09-16T15:56:22Z",
@@ -19102,7 +19858,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33772,
+        "stars": 33776,
         "forks": 1512,
         "topics": [
           "ai-native",
@@ -19125,7 +19881,11 @@
         "pushedAt": "2026-09-24T13:24:16Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 121,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.0.0",
         "publishedAt": "2026-09-16T10:03:34Z",
@@ -19228,7 +19988,11 @@
         "pushedAt": "2026-09-18T09:48:51Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v9.0.5",
         "publishedAt": "2024-02-27T07:51:16Z",
@@ -19310,7 +20074,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34943,
+        "stars": 34946,
         "forks": 3005,
         "topics": [
           "blob-storage",
@@ -19338,7 +20102,11 @@
         "pushedAt": "2026-09-24T08:13:07Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 43,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "4.47",
         "publishedAt": "2026-09-14T01:31:59Z",
@@ -19427,10 +20195,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-14T21:40:56Z",
-        "pushedAt": "2026-09-24T12:58:39Z",
+        "pushedAt": "2026-09-24T14:48:07Z",
         "defaultBranch": "trunk"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "selenium-4.49.0",
         "publishedAt": "2026-09-09T15:35:47Z",
@@ -19521,7 +20293,11 @@
         "pushedAt": "2026-09-22T07:33:01Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 11,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v25.0.9",
         "publishedAt": "2026-08-05T04:42:47Z",
@@ -19612,10 +20388,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T14:18:27Z",
+        "pushedAt": "2026-09-24T14:48:04Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "26.9.0",
         "publishedAt": "2026-09-15T17:19:59Z",
@@ -19715,7 +20495,11 @@
         "pushedAt": "2026-09-24T13:45:33Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v6.37.8",
         "publishedAt": "2026-03-07T18:44:44Z",
@@ -19789,7 +20573,7 @@
         "homepage": "https://getsops.io",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 23202,
+        "stars": 23204,
         "forks": 1084,
         "topics": [
           "aws",
@@ -19809,7 +20593,11 @@
         "pushedAt": "2026-09-21T20:03:18Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.13.3",
         "publishedAt": "2026-07-23T05:27:57Z",
@@ -19901,10 +20689,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-16T15:55:33Z",
-        "pushedAt": "2026-09-24T11:28:53Z",
+        "pushedAt": "2026-09-24T14:24:21Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "@astrojs/starlight@0.42.3",
         "publishedAt": "2026-09-22T16:53:15Z",
@@ -19983,7 +20775,7 @@
         "homepage": "https://starship.rs",
         "language": "Rust",
         "license": "ISC",
-        "stars": 60033,
+        "stars": 60032,
         "forks": 2675,
         "topics": [
           "bash",
@@ -20006,7 +20798,11 @@
         "pushedAt": "2026-09-24T08:09:49Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 34,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.26.0",
         "publishedAt": "2026-06-28T17:02:47Z",
@@ -20080,7 +20876,7 @@
         "homepage": "https://steelmc.dev/",
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 697,
+        "stars": 698,
         "forks": 106,
         "topics": [],
         "archived": false,
@@ -20090,7 +20886,11 @@
         "pushedAt": "2026-09-24T11:40:07Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.15.3+mc26.2",
         "publishedAt": "2026-08-30T17:35:00Z",
@@ -20173,7 +20973,7 @@
         "homepage": "https://syncthing.net/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 88897,
+        "stars": 88899,
         "forks": 5489,
         "topics": [
           "go",
@@ -20188,7 +20988,11 @@
         "pushedAt": "2026-09-23T01:17:37Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2.1.5",
         "publishedAt": "2026-09-08T07:35:00Z",
@@ -20286,7 +21090,11 @@
         "pushedAt": "2026-06-30T20:38:02Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-23T17:48:06.000Z"
+      },
       "release": {
         "tag": "v0.32.0",
         "publishedAt": "2026-01-25T17:07:44Z",
@@ -20376,7 +21184,11 @@
         "pushedAt": "2026-09-24T13:44:54Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v1.16.0",
         "publishedAt": "2026-08-31T13:08:40Z",
@@ -20470,10 +21282,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-24T18:05:02Z",
-        "pushedAt": "2026-09-24T14:16:41Z",
+        "pushedAt": "2026-09-24T14:34:11Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v3.0.3",
         "publishedAt": "2026-08-13T20:37:13Z",
@@ -20547,7 +21363,7 @@
         "homepage": "http://developer.hashicorp.com/terraform",
         "language": "Go",
         "license": "Other",
-        "stars": 49718,
+        "stars": 49719,
         "forks": 10627,
         "topics": [
           "cloud",
@@ -20563,7 +21379,11 @@
         "pushedAt": "2026-09-24T13:00:56Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 9,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.16.4",
         "publishedAt": "2026-09-23T12:44:16Z",
@@ -20648,7 +21468,11 @@
         "pushedAt": "2024-06-16T19:37:41Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.2.0",
         "publishedAt": null,
@@ -20709,10 +21533,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-03-07T20:03:41Z",
-        "pushedAt": "2026-09-24T14:07:09Z",
+        "pushedAt": "2026-09-24T14:40:49Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "2.30.1",
         "publishedAt": "2026-09-17T09:21:45Z",
@@ -20783,7 +21611,7 @@
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49467,
+        "stars": 49468,
         "forks": 2909,
         "topics": [],
         "archived": false,
@@ -20793,7 +21621,11 @@
         "pushedAt": "2026-09-24T12:27:54Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 38,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "3.7c",
         "publishedAt": "2026-08-17T12:53:48Z",
@@ -20873,7 +21705,7 @@
         "language": "Go",
         "license": "MIT",
         "stars": 64949,
-        "forks": 6203,
+        "forks": 6204,
         "topics": [
           "consul",
           "docker",
@@ -20894,10 +21726,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-13T19:04:02Z",
-        "pushedAt": "2026-09-24T14:16:06Z",
+        "pushedAt": "2026-09-24T14:40:06Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 19,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.7.13",
         "publishedAt": "2026-09-04T12:40:17Z",
@@ -20990,7 +21826,11 @@
         "pushedAt": "2024-07-18T18:14:16Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v10.9.2",
         "publishedAt": "2023-12-08T12:06:05Z",
@@ -21082,7 +21922,11 @@
         "pushedAt": "2026-09-24T14:06:06Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 5,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.11.3",
         "publishedAt": "2026-09-22T20:40:50Z",
@@ -21156,7 +22000,7 @@
         "homepage": "https://docs.astral.sh/ty/",
         "language": "Python",
         "license": "MIT",
-        "stars": 19740,
+        "stars": 19739,
         "forks": 334,
         "topics": [],
         "archived": false,
@@ -21166,7 +22010,11 @@
         "pushedAt": "2026-09-24T13:58:58Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.0.84",
         "publishedAt": "2026-09-24T13:17:24Z",
@@ -21259,7 +22107,11 @@
         "pushedAt": "2026-09-21T08:49:54Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "1.1.1",
         "publishedAt": "2026-09-01T10:55:04Z",
@@ -21339,7 +22191,7 @@
         "homepage": "https://typesense.org",
         "language": "C++",
         "license": "GPL-3.0",
-        "stars": 26589,
+        "stars": 26590,
         "forks": 976,
         "topics": [
           "algolia",
@@ -21370,7 +22222,11 @@
         "pushedAt": "2026-09-24T11:19:33Z",
         "defaultBranch": "v31"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v30.2",
         "publishedAt": "2026-04-19T16:00:09Z",
@@ -21480,7 +22336,11 @@
         "pushedAt": "2026-09-21T01:04:08Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v7.8.5",
         "publishedAt": "2026-09-15T11:46:12Z",
@@ -21559,7 +22419,7 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38985,
+        "stars": 38986,
         "forks": 8108,
         "topics": [
           "analytics",
@@ -21579,7 +22439,11 @@
         "pushedAt": "2026-09-23T17:03:30Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 32,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.4.0",
         "publishedAt": "2026-09-17T04:21:49Z",
@@ -21661,7 +22525,7 @@
         "homepage": "https://uptime.kuma.pet",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 91775,
+        "stars": 91779,
         "forks": 8456,
         "topics": [
           "docker",
@@ -21684,7 +22548,11 @@
         "pushedAt": "2026-09-24T00:06:05Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 85,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "2.5.5",
         "publishedAt": "2026-09-16T13:31:07Z",
@@ -21782,8 +22650,8 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90131,
-        "forks": 3609,
+        "stars": 90132,
+        "forks": 3608,
         "topics": [
           "packaging",
           "python",
@@ -21794,10 +22662,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-24T13:32:43Z",
+        "pushedAt": "2026-09-24T14:48:47Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 62,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "0.12.18",
         "publishedAt": "2026-09-22T23:00:51Z",
@@ -21877,7 +22749,7 @@
         "homepage": "https://valkey.io",
         "language": "C",
         "license": "BSD-3-Clause",
-        "stars": 27282,
+        "stars": 27283,
         "forks": 1331,
         "topics": [
           "cache",
@@ -21896,7 +22768,11 @@
         "pushedAt": "2026-09-24T09:10:44Z",
         "defaultBranch": "unstable"
       },
-      "trend": null,
+      "trend": {
+        "stars": 8,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "9.1.2",
         "publishedAt": "2026-09-01T00:01:31Z",
@@ -21966,7 +22842,7 @@
         "homepage": "https://developer.hashicorp.com/vault",
         "language": "Go",
         "license": "Other",
-        "stars": 36287,
+        "stars": 36288,
         "forks": 4762,
         "topics": [
           "go",
@@ -21980,7 +22856,11 @@
         "pushedAt": "2026-09-24T05:02:38Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.1.1",
         "publishedAt": "2026-09-16T21:04:32Z",
@@ -22068,7 +22948,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68100,
+        "stars": 68101,
         "forks": 3243,
         "topics": [
           "bitwarden",
@@ -22085,7 +22965,11 @@
         "pushedAt": "2026-09-23T23:47:29Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 76,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.37.3",
         "publishedAt": "2026-09-13T15:03:37Z",
@@ -22168,7 +23052,7 @@
         "language": "Rust",
         "license": "MPL-2.0",
         "stars": 22607,
-        "forks": 2291,
+        "forks": 2290,
         "topics": [
           "agent",
           "cloud-native",
@@ -22193,10 +23077,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-24T13:52:20Z",
+        "pushedAt": "2026-09-24T14:46:31Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 6,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "vdev-v0.3.22",
         "publishedAt": "2026-09-23T23:29:06Z",
@@ -22311,7 +23199,11 @@
         "pushedAt": "2026-09-24T13:28:47Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 11,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.152.0",
         "publishedAt": "2026-09-14T10:36:37Z",
@@ -22384,7 +23276,7 @@
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40929,
+        "stars": 40930,
         "forks": 6135,
         "topics": [
           "c",
@@ -22399,7 +23291,11 @@
         "pushedAt": "2026-09-21T20:42:56Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v9.2.1125",
         "publishedAt": null,
@@ -22458,7 +23354,11 @@
         "pushedAt": "2026-09-24T12:23:55Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 24,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v8.3.1",
         "publishedAt": "2026-09-24T12:23:55Z",
@@ -22554,7 +23454,11 @@
         "pushedAt": "2026-09-22T13:02:51Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v2.0.0-alpha.20",
         "publishedAt": "2026-09-04T10:59:16Z",
@@ -22648,7 +23552,11 @@
         "pushedAt": "2026-09-24T11:17:57Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 9,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.0.1",
         "publishedAt": "2026-09-15T08:43:24Z",
@@ -22716,8 +23624,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192852,
-        "forks": 43097,
+        "stars": 192854,
+        "forks": 43098,
         "topics": [
           "editor",
           "electron",
@@ -22729,10 +23637,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T14:17:25Z",
+        "pushedAt": "2026-09-24T14:48:32Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 56,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.139.0",
         "publishedAt": "2026-09-23T10:32:34Z",
@@ -22806,7 +23718,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33360,
+        "stars": 33359,
         "forks": 1866,
         "topics": [
           "editor",
@@ -22822,7 +23734,11 @@
         "pushedAt": "2026-09-23T12:43:17Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 18,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "1.135.06055",
         "publishedAt": "2026-09-09T08:19:21Z",
@@ -22914,10 +23830,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-24T14:16:42Z",
+        "pushedAt": "2026-09-24T14:34:36Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v5.111.1",
         "publishedAt": "2026-09-18T11:23:07Z",
@@ -23018,7 +23938,11 @@
         "pushedAt": "2026-09-21T05:17:28Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 25,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "20240203-110809-5046fc22",
         "publishedAt": "2024-02-03T18:32:26Z",
@@ -23115,7 +24039,11 @@
         "pushedAt": "2026-09-24T02:13:26Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v3.18.1",
         "publishedAt": "2026-09-08T23:35:40Z",
@@ -23208,7 +24136,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "MIT",
-        "stars": 8093,
+        "stars": 8094,
         "forks": 147,
         "topics": [
           "api-testing",
@@ -23225,7 +24153,11 @@
         "pushedAt": "2026-09-05T09:34:49Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 7,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.26.2",
         "publishedAt": "2026-07-26T14:22:45Z",
@@ -23314,7 +24246,11 @@
         "pushedAt": "2026-09-19T13:13:16Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 2,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "@yarnpkg/cli/4.18.0",
         "publishedAt": "2026-07-29T07:56:33Z",
@@ -23408,10 +24344,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T14:16:02Z",
+        "pushedAt": "2026-09-24T14:39:52Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "v2026.1.2.0",
         "publishedAt": "2026-09-22T20:30:38Z",
@@ -23500,7 +24440,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90817,
+        "stars": 90820,
         "forks": 10757,
         "topics": [
           "gpui",
@@ -23512,10 +24452,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-24T14:06:33Z",
+        "pushedAt": "2026-09-24T14:25:46Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 93,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v1.21.0",
         "publishedAt": "2026-09-23T15:42:38Z",
@@ -23589,7 +24533,7 @@
         "homepage": "https://zellij.dev",
         "language": "Rust",
         "license": "MIT",
-        "stars": 35522,
+        "stars": 35523,
         "forks": 1461,
         "topics": [
           "multiplexer",
@@ -23600,10 +24544,14 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-09-01T14:04:28Z",
-        "pushedAt": "2026-09-24T14:11:34Z",
+        "pushedAt": "2026-09-24T14:28:04Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 14,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.45.1",
         "publishedAt": "2026-08-28T09:21:44Z",
@@ -23687,7 +24635,11 @@
         "pushedAt": "2026-08-06T04:10:29Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T14:19:17.000Z"
+      },
       "release": {
         "tag": "3.6.1",
         "publishedAt": "2026-04-08T19:00:52Z",
@@ -23770,7 +24722,7 @@
         "homepage": "https://www.getzola.org",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 17465,
+        "stars": 17466,
         "forks": 1187,
         "topics": [
           "blog-engine",
@@ -23792,7 +24744,11 @@
         "pushedAt": "2026-09-23T20:09:04Z",
         "defaultBranch": "master"
       },
-      "trend": null,
+      "trend": {
+        "stars": 3,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "v0.23.6",
         "publishedAt": "2026-09-12T22:06:53Z",
@@ -23895,7 +24851,11 @@
         "pushedAt": "2026-09-24T12:27:06Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 10,
+        "exact": false,
+        "since": "2026-09-22T21:41:50.000Z"
+      },
       "release": {
         "tag": "12.3",
         "publishedAt": "2026-09-21T17:10:07Z",
