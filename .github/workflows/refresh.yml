@@ -51,18 +51,12 @@ jobs:
       - run: pnpm refresh
         env:
           GITHUB_TOKEN: ${{ steps.app.outputs.token }}
+      - name: Keep the refreshed catalog aside
+        run: |
+          mkdir -p "$RUNNER_TEMP/refreshed/generated"
+          cp generated/catalog.json "$RUNNER_TEMP/refreshed/generated/"
+          cp README.md "$RUNNER_TEMP/refreshed/"
       - name: Commit the refreshed catalog
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add generated/catalog.json README.md
-          if git diff --cached --quiet; then
-            echo "catalog unchanged"
-          else
-            git commit -m "chore(catalog): refresh from GitHub"
-            git pull --rebase origin main
-            git push
-            gh workflow run release.yml --ref main
-          fi
+        run: scripts/ci/push-catalog.sh "chore(catalog): refresh from GitHub" cp -r "$RUNNER_TEMP/refreshed/." .

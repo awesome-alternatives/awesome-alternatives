@@ -27,6 +27,15 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
   return { catalog, findings: [...tools.findings, ...products.findings, ...checkStructure(catalog)] };
 }
 
+export async function loadSoundCatalog(root: string): Promise<Catalog> {
+  const { catalog, findings } = await loadCatalog(root);
+  const structural = findings.filter((f) => f.severity === "error");
+  if (structural.length) {
+    throw new Error(structural.map((f) => `${f.slug}: ${f.code}: ${f.message}`).join("\n"));
+  }
+  return catalog;
+}
+
 async function loadEntries<T>(
   root: string,
   kind: "tools" | "products",

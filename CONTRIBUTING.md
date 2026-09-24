@@ -199,3 +199,14 @@ GITHUB_TOKEN=$(gh auth token) pnpm validate release-plz
 
 `pnpm validate --all` checks every entry, `pnpm refresh` rebuilds `generated/catalog.json` and the
 table in the README.
+
+To refresh a few tools without walking the whole catalog, which is what the
+[Refresh tools](.github/workflows/refresh-tools.yml) workflow does after a release, one job per slug:
+
+```bash
+GITHUB_TOKEN=$(gh auth token) node scripts/refresh-tool.ts release-plz entries
+node scripts/refresh-merge.ts entries
+```
+
+The first writes the entry to `entries/release-plz.json`, the second splices every file in
+`entries/` into the published catalog and leaves the other tools as they were.
