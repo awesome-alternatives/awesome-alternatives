@@ -46,6 +46,14 @@ replace:
    capped at 255 options by the API; past that, the options sharing the most words with the query
    are kept. Answers are cached for a day per normalised query.
 
+   Jev is the only step that costs money, so it has a budget of its own, shared by every client of
+   the process: at most `JEV_CALLS_PER_MINUTE` calls a minute and `JEV_CALLS_PER_DAY` calls per UTC
+   day. A query that would go to Jev past either limit is answered by the first two steps instead,
+   with `interpretedBy: "local"`, and no request reaches Jev. That answer is cached like any other,
+   so the same query stays local until its entry expires. The daily counter starts again at
+   midnight UTC, and the API logs a warning when it runs out. Only real calls count: a cached
+   interpretation and a query the first two steps already placed spend nothing.
+
 `interpretedBy` says `local` or `jev`. Without a Jev key the API logs a warning at startup and
 runs on the first two steps. If the model cannot be loaded, it logs a warning and runs on keywords
 alone. Neither stops it from serving.
@@ -65,7 +73,10 @@ shrink between runs. The stored vectors are 384 floats, about 1.5 KB per tool, a
 affected.
 
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
-limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy.
+limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy. An IPv6
+client is keyed by its /64, since any host can rotate through the addresses of the prefix it is
+given; an IPv4-mapped IPv6 address counts as the IPv4 address it carries. Idle keys are forgotten
+every minute, so the limiter's memory follows the clients seen recently.
 
 The process as a whole takes at most `SEARCH_CONCURRENCY` searches at once, 32 by default. One
 more is not queued: it answers `503` with `Retry-After: 1` straight away. The limit is on search
@@ -246,8 +257,8 @@ requests are in flight.
 | `BIND` | `0.0.0.0:3000` | |
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
-| `SEARCHES_PER_MINUTE` | `20` | Per client IP. |
-| `DETAILS_PER_MINUTE` | `30` | Per client IP, shared by `/v1/tools/{slug}/readme` and `/v1/tools/{slug}/security`. |
+| `SEARCHES_PER_MINUTE` | `20` | Per client IP, per /64 for IPv6. |
+| `DETAILS_PER_MINUTE` | `30` | Per client IP (per /64 for IPv6), shared by `/v1/tools/{slug}/readme` and `/v1/tools/{slug}/security`. |
 | `SEARCH_CONCURRENCY` | `32` | Searches served at once by the whole process. Past it a search answers `503` with `Retry-After: 1` instead of waiting. |
 | `REQUEST_TIMEOUT_SECS` | `15` | Every route under `/v1` and the webhook answer `504` past it. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
@@ -255,6 +266,8 @@ requests are in flight.
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
 | `TYPESAFE_MODEL` | `jev-latest` | Pin a version such as `jev-1.13.0` for stable answers. |
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
+| `JEV_CALLS_PER_MINUTE` | `30` | For the whole process. Past it, search answers without Jev. |
+| `JEV_CALLS_PER_DAY` | `2000` | For the whole process, reset at midnight UTC. `0` turns the Jev step off. |
 | `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
 | `GITHUB_WEBHOOK_SECRET` | unset | The GitHub App's webhook secret. Unset means `POST /webhooks/github` answers `503`. |

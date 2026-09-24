@@ -9,6 +9,7 @@ mod filters;
 mod fixtures;
 mod interpret;
 mod jev;
+mod jev_budget;
 mod lexical;
 mod limits;
 mod peer;
@@ -25,6 +26,7 @@ mod vocabulary;
 
 use std::net::SocketAddr;
 use std::sync::Arc;
+use std::time::Duration;
 
 use governor::{Quota, RateLimiter};
 use tower_http::trace::TraceLayer;
@@ -34,10 +36,13 @@ use crate::config::Config;
 use crate::details::Details;
 use crate::embedding::{Embedder, LocalModel};
 use crate::jev::JevClient;
+use crate::jev_budget::MeteredJev;
 use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::state::{AppState, Loaded};
 use crate::upstream::Upstream;
+
+const LIMITER_SWEEP: Duration = Duration::from_secs(60);
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -64,9 +69,12 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let catalog = catalog::load(&config.catalog_source, &http).await?;
     tracing::info!(tools = catalog.tools.len(), source = %config.catalog_source, "catalog loaded");
 
-    let jev = config
-        .jev
-        .map(|j| JevClient::new(http.clone(), &j.base_url, j.api_key, j.model));
+    let jev = config.jev.map(|j| {
+        MeteredJev::new(
+            JevClient::new(http.clone(), &j.base_url, j.api_key, j.model),
+            j.limits,
+        )
+    });
     if jev.is_none() {
         tracing::warn!(
             "TYPESAFE_API_KEY is not set: Jev is disabled, search runs on the local model and keywords only"
@@ -104,6 +112,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         config.trust_proxy,
         refresh,
     );
+    tokio::spawn(forget_idle_clients(state.clone()));
     tokio::spawn(reload_catalog(
         state.clone(),
         config.catalog_source,
@@ -164,6 +173,15 @@ async fn load_embedder() -> Option<Arc<dyn Embedder>> {
     }
 }
 
+async fn forget_idle_clients(state: AppState) {
+    let mut ticker = tokio::time::interval(LIMITER_SWEEP);
+    loop {
+        ticker.tick().await;
+        state.limiter.retain_recent();
+        state.details_limiter.retain_recent();
+    }
+}
+
 async fn reload_catalog(
     state: AppState,
     source: String,
@@ -174,8 +192,6 @@ async fn reload_catalog(
     ticker.tick().await;
     loop {
         ticker.tick().await;
-        state.limiter.retain_recent();
-        state.details_limiter.retain_recent();
         match catalog::load(&source, &http).await {
             Ok(catalog) => {
                 tracing::info!(tools = catalog.tools.len(), "catalog refreshed");
