@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.57.0] - 2026-09-24
+
+### Features
+
+- feat(catalog): say how a self-hosted tool is deployed (#168)
+
 ## [0.56.0] - 2026-09-24
 
 ### Features
