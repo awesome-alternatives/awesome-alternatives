@@ -80,14 +80,10 @@ impl Search {
             return remembered;
         }
         let key = key(&loaded.catalog.revision, &normalized);
-        let read = match self.shared.get::<Interpretation>(&key).await {
-            Some(shared) => shared,
-            None => {
-                let read = self.read(query, loaded).await;
-                self.shared.set(&key, &read, self.shared.ttl.search).await;
-                read
-            }
-        };
+        let read = self
+            .shared
+            .remembered(&key, self.shared.ttl.search, self.read(query, loaded))
+            .await;
         self.cache.insert(normalized, read.clone()).await;
         read
     }
