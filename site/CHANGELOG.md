@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.58.2] - 2026-09-24
+
+### Bug Fixes
+
+- fix(refresh): refuse to publish a catalog that lost a listed tool (#177)
+
 ## [0.58.1] - 2026-09-24
 
 ### Bug Fixes
