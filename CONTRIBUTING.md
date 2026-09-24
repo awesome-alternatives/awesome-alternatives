@@ -27,6 +27,20 @@ replaces:
 - `migration` is optional, on a `replaces` item: a link to the replacing project's own guide for moving
   off that tool. Only an official page counts, not a blog post or a third-party tutorial. CI fails the
   entry if the link does not answer.
+- `capabilities` is optional, for a category that lists a vocabulary under `capabilities` in
+  [`data/categories.yaml`](data/categories.yaml). Declare only keys from that list, each with a link to
+  the tool's own documentation for it, and a short `note` for a known limit:
+
+  ```yaml
+  capabilities:
+    ci:
+      docs: https://docs.gitea.com/usage/actions/overview/
+      note: Gitea Actions, compatible with most GitHub Actions workflows.
+  ```
+
+  CI fails the entry for a key outside the category's list or a link that does not answer. A new
+  capability for a category is its own pull request, with the `label` people see and the `match`
+  phrases search reads it from, in every language the site speaks.
 - `affiliation` is required if you maintain, work on, or are paid by the tool. Listing your own
   project is welcome; not saying so is grounds for removal.
 - `terms` says what the licence lets people do, and is usually left out. When GitHub detects an

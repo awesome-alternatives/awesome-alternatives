@@ -85,6 +85,27 @@ describe("checkStructure", () => {
   });
 });
 
+describe("capabilities", () => {
+  const forges = new Map<string, Category>([
+    [
+      "release-automation",
+      { name: "R", description: "D", capabilities: { ci: { label: "CI/CD", match: ["ci"] } } },
+    ],
+  ]);
+  const check = (tool: Tool) =>
+    checkStructure({ tools: [tool], products: [], categories: forges }).map((f) => `${f.slug}:${f.code}`);
+
+  it("accepts a capability its category declares", () => {
+    assert.deepEqual(check(tool("forge", { capabilities: { ci: { docs: "https://example.com/ci" } } })), []);
+  });
+
+  it("rejects a capability outside its category's vocabulary", () => {
+    assert.deepEqual(check(tool("forge", { capabilities: { wiki: { docs: "https://example.com/wiki" } } })), [
+      "forge:unknown-capability",
+    ]);
+  });
+});
+
 describe("closed products", () => {
   const replacing = (slug: string) => tool("open", { replaces: [{ tool: slug, fit: "full" }] });
 

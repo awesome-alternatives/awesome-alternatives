@@ -9,3 +9,10 @@ replaces:
     fit: full
     note: Conversations split into topics inside each channel, with an importer for Slack exports.
     migration: https://zulip.com/help/import-from-slack
+capabilities:
+  calls:
+    docs: https://zulip.com/help/start-a-call
+    note: "Through a video call provider such as Jitsi Meet."
+  threads:
+    docs: https://zulip.com/help/introduction-to-topics
+    note: "Every message sits in a topic inside a channel."

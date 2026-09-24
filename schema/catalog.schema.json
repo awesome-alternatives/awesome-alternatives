@@ -42,7 +42,8 @@
       "properties": {
         "name": { "type": "string", "minLength": 1 },
         "description": { "type": "string", "minLength": 1 },
-        "selfHost": { "type": "boolean" }
+        "selfHost": { "type": "boolean" },
+        "capabilities": { "type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["label", "match"], "properties": {"label": {"type": "string", "minLength": 1}, "match": {"type": "array", "items": {"type": "string", "minLength": 1}}}} }
       }
     },
     "product": {
@@ -81,7 +82,8 @@
         "releases",
         "maintainerVerified",
         "flags",
-        "terms"
+        "terms",
+        "capabilities"
       ],
       "properties": {
         "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
@@ -126,7 +128,8 @@
         "releases": { "type": "array", "items": { "$ref": "#/$defs/releaseEntry" } },
         "maintainerVerified": { "type": "boolean" },
         "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-        "terms": { "enum": ["open", "source-available", "open-core", "unknown"] }
+        "terms": { "enum": ["open", "source-available", "open-core", "unknown"] },
+        "capabilities": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["docs"], "properties": {"docs": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "minLength": 1}}}}
       }
     },
     "repo": {

@@ -11,7 +11,7 @@ use governor::clock::Clock;
 use serde::{Deserialize, Serialize};
 
 use crate::catalog::Tool;
-use crate::filters::Filters;
+use crate::filters::{Filters, NearMiss};
 use crate::peer::client_ip;
 use crate::qualifiers::Unchecked;
 use crate::search::Interpreter;
@@ -117,6 +117,8 @@ struct ToolPage {
     limit: usize,
     offset: usize,
     tools: Vec<Tool>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    near: Vec<NearMiss>,
 }
 
 impl ToolPage {
@@ -132,7 +134,12 @@ impl ToolPage {
                 .take(limit)
                 .cloned()
                 .collect(),
+            near: Vec::new(),
         }
+    }
+
+    fn with_near(self, near: Vec<NearMiss>) -> Self {
+        Self { near, ..self }
     }
 }
 
@@ -142,7 +149,8 @@ async fn tools(
     Query(window): Query<Window>,
 ) -> Json<ToolPage> {
     let loaded = state.loaded();
-    Json(ToolPage::of(filters.apply(&loaded.catalog.tools), &window))
+    let tools = &loaded.catalog.tools;
+    Json(ToolPage::of(filters.apply(tools), &window).with_near(filters.near_misses(tools)))
 }
 
 async fn vocabulary(State(state): State<AppState>) -> Json<Vocabulary> {
@@ -190,7 +198,8 @@ async fn search(
     let read = state.search.interpret(query, &loaded).await;
     Ok(Json(SearchResponse {
         query: query.to_owned(),
-        results: ToolPage::of(read.select(&loaded.catalog.tools), &request.window),
+        results: ToolPage::of(read.select(&loaded.catalog.tools), &request.window)
+            .with_near(read.filters.near_misses(&loaded.catalog.tools)),
         filters: read.filters,
         interpreted_by: read.interpreted_by,
         unchecked: read.unchecked,
@@ -228,13 +237,23 @@ mod tests {
             categories: Default::default(),
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 20000),
-                tool(
-                    "knope",
-                    "Rust",
-                    "MIT",
-                    &[("semantic-release", Fit::Full)],
-                    600,
-                ),
+                crate::catalog::Tool {
+                    capabilities: [(
+                        "ci".to_owned(),
+                        crate::catalog::Capability {
+                            docs: "https://example.com/ci".into(),
+                            note: None,
+                        },
+                    )]
+                    .into(),
+                    ..tool(
+                        "knope",
+                        "Rust",
+                        "MIT",
+                        &[("semantic-release", Fit::Full)],
+                        600,
+                    )
+                },
                 crate::catalog::Tool {
                     self_host: true,
                     ..tool(
@@ -366,6 +385,21 @@ mod tests {
         assert_eq!(count("/v1/tools?selfHost=true").await, 1);
         assert_eq!(count("/v1/tools?terms=source-available").await, 0);
         assert_eq!(count("/v1/tools?terms=open&maintained=true").await, 3);
+    }
+
+    #[tokio::test]
+    async fn capabilities_are_read_from_a_comma_list_and_near_misses_come_back_with_their_gap() {
+        let (status, body) = call(
+            &app(10),
+            Request::get("/v1/tools?capabilities=ci,wiki")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["count"], 0);
+        assert_eq!(body["near"][0]["tool"]["slug"], "knope");
+        assert_eq!(body["near"][0]["missing"], json!(["wiki"]));
     }
 
     #[tokio::test]

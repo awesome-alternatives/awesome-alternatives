@@ -27,6 +27,25 @@ export async function checkHomepage(
     : [];
 }
 
+export async function checkCapabilityDocs(
+  tool: Pick<Tool, "slug" | "capabilities">,
+  fetchImpl: typeof fetch = fetch,
+): Promise<Finding[]> {
+  const findings: Finding[] = [];
+  for (const [key, capability] of Object.entries(tool.capabilities ?? {})) {
+    const problem = await unreachable(capability.docs, fetchImpl);
+    if (problem) {
+      findings.push({
+        slug: tool.slug,
+        severity: "error",
+        code: "capability-unreachable",
+        message: `the documentation for ${key}: ${problem}`,
+      });
+    }
+  }
+  return findings;
+}
+
 export async function checkMigrations(
   tool: Pick<Tool, "slug" | "replaces">,
   fetchImpl: typeof fetch = fetch,

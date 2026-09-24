@@ -4,7 +4,7 @@ import { listTools, search } from "../lib/api.ts";
 import { type ChipKey, without } from "../lib/chips.ts";
 import { type SearchFailure, failureFromThrown, guessTarget } from "../lib/failure.ts";
 import { isRefined, readSearchUrl, type Refinement, refined, searchParams } from "../lib/searchUrl.ts";
-import type { Filters, SearchResult } from "../lib/types.ts";
+import type { Filters, SearchResult, ToolList } from "../lib/types.ts";
 
 export type Source = { kind: "search"; q: string } | { kind: "list"; filters: Filters };
 
@@ -22,8 +22,12 @@ export interface Search {
   appending: boolean;
   submit: (q: string, next?: Refinement) => void;
   refine: (next: Refinement) => void;
-  drop: (result: SearchResult, key: ChipKey) => void;
+  drop: (result: SearchResult, key: ChipKey, value?: string) => void;
   more: () => void;
+}
+
+function listed(base: SearchResult, page: ToolList, filters: Filters): SearchResult {
+  return { ...base, ...page, near: page.near ?? [], filters };
 }
 
 export function useSearch(names: Record<string, string>): Search {
@@ -93,7 +97,7 @@ export function useSearch(names: Record<string, string>): Search {
       const result = await search(trimmed, signal);
       if (!isRefined(next)) return result;
       const filters = refined(result.filters, next);
-      return { ...result, ...(await listTools(filters, signal)), filters };
+      return listed(result, await listTools(filters, signal), filters);
     }, guessTarget(trimmed, names), { kind: "search", q: trimmed });
   }
 
@@ -104,16 +108,16 @@ export function useSearch(names: Record<string, string>): Search {
     const base = state.result;
     const filters = refined(base.filters, next);
     void run(
-      async (signal) => ({ ...base, ...(await listTools(filters, signal)), filters }),
+      async (signal) => listed(base, await listTools(filters, signal), filters),
       filters.replaces ?? null,
       { kind: "list", filters },
     );
   }
 
-  function drop(result: SearchResult, key: ChipKey) {
-    const filters = without(result.filters, key);
+  function drop(result: SearchResult, key: ChipKey, value?: string) {
+    const filters = without(result.filters, key, value);
     void run(
-      async (signal) => ({ ...result, ...(await listTools(filters, signal)), filters }),
+      async (signal) => listed(result, await listTools(filters, signal), filters),
       filters.replaces ?? null,
       { kind: "list", filters },
     );

@@ -8,3 +8,9 @@ replaces:
   - tool: circleci
     fit: full
     note: Self-hosted pipelines in YAML, each step in a container.
+capabilities:
+  container-steps:
+    docs: https://woodpecker-ci.org/docs/usage/workflow-syntax
+  kubernetes:
+    docs: https://woodpecker-ci.org/docs/administration/configuration/backends/kubernetes
+    note: "One of several backends, next to Docker and local."

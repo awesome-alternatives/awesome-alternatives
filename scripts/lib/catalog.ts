@@ -101,6 +101,15 @@ export function checkStructure({ tools, products, categories }: Catalog): Findin
       findings.push(error(tool.slug, "unknown-category", `category ${tool.category} is not in data/categories.yaml`));
     }
 
+    const vocabulary = categories.get(tool.category)?.capabilities ?? {};
+    for (const key of Object.keys(tool.capabilities ?? {})) {
+      if (!(key in vocabulary)) {
+        findings.push(
+          error(tool.slug, "unknown-capability", `${key} is not a capability of ${tool.category} in data/categories.yaml`),
+        );
+      }
+    }
+
     const seen = new Set<string>();
     for (const r of tool.replaces ?? []) {
       if (r.tool === tool.slug) {

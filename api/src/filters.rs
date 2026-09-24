@@ -1,4 +1,4 @@
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize, Deserializer, Serialize};
 
 use crate::catalog::{Fit, Terms, Tool};
 
@@ -21,6 +21,38 @@ pub struct Filters {
     pub self_host: bool,
     #[serde(default, skip_serializing_if = "std::ops::Not::not")]
     pub maintained: bool,
+    #[serde(
+        default,
+        skip_serializing_if = "Vec::is_empty",
+        deserialize_with = "list"
+    )]
+    pub capabilities: Vec<String>,
+}
+
+#[derive(Debug, Clone, Serialize)]
+pub struct NearMiss {
+    pub tool: Tool,
+    pub missing: Vec<String>,
+}
+
+pub const NEAR_LIMIT: usize = 10;
+
+fn list<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Vec<String>, D::Error> {
+    #[derive(Deserialize)]
+    #[serde(untagged)]
+    enum Given {
+        Joined(String),
+        Listed(Vec<String>),
+    }
+    Ok(match Given::deserialize(deserializer)? {
+        Given::Joined(text) => text
+            .split(',')
+            .map(str::trim)
+            .filter(|s| !s.is_empty())
+            .map(str::to_owned)
+            .collect(),
+        Given::Listed(items) => items,
+    })
 }
 
 impl Filters {
@@ -34,6 +66,11 @@ impl Filters {
             .filter(|t| self.terms.is_none_or(|terms| t.terms == terms))
             .filter(|t| !self.self_host || t.self_host)
             .filter(|t| !self.maintained || t.is_maintained())
+            .filter(|t| {
+                self.capabilities
+                    .iter()
+                    .all(|c| t.capabilities.contains_key(c))
+            })
             .filter(|t| self.replaces.is_none() || self.fit(t).is_some())
             .collect();
         matched.sort_by_key(|t| (self.fit(t).map(fit_rank), std::cmp::Reverse(t.repo.stars)));
@@ -45,6 +82,36 @@ impl Filters {
             || self.language.is_some()
             || self.license.is_some()
             || self.category.is_some()
+            || !self.capabilities.is_empty()
+    }
+
+    pub fn near_misses(&self, tools: &[Tool]) -> Vec<NearMiss> {
+        if self.capabilities.is_empty() {
+            return Vec::new();
+        }
+        let relaxed = Filters {
+            capabilities: Vec::new(),
+            ..self.clone()
+        };
+        let mut near: Vec<NearMiss> = relaxed
+            .apply(tools)
+            .into_iter()
+            .filter_map(|tool| {
+                let missing: Vec<String> = self
+                    .capabilities
+                    .iter()
+                    .filter(|c| !tool.capabilities.contains_key(*c))
+                    .cloned()
+                    .collect();
+                (!missing.is_empty() && missing.len() < self.capabilities.len()).then(|| NearMiss {
+                    tool: tool.clone(),
+                    missing,
+                })
+            })
+            .collect();
+        near.sort_by_key(|n| n.missing.len());
+        near.truncate(NEAR_LIMIT);
+        near
     }
 
     fn fit(&self, tool: &Tool) -> Option<Fit> {
@@ -221,5 +288,66 @@ mod tests {
         let mut archived = tool("old", "Rust", "MIT", &[], 1);
         archived.repo.archived = true;
         assert!(Filters::default().apply(&[archived]).is_empty());
+    }
+
+    fn with_capabilities(slug: &str, keys: &[&str]) -> Tool {
+        let mut forge = tool(slug, "Go", "MIT", &[("gitlab", Fit::Full)], 1);
+        forge.capabilities = keys
+            .iter()
+            .map(|k| {
+                (
+                    (*k).to_owned(),
+                    crate::catalog::Capability {
+                        docs: format!("https://example.com/{k}"),
+                        note: None,
+                    },
+                )
+            })
+            .collect();
+        forge
+    }
+
+    #[test]
+    fn every_requested_capability_must_be_declared() {
+        let tools = [
+            with_capabilities("both", &["ci", "container-registry"]),
+            with_capabilities("ci-only", &["ci"]),
+            with_capabilities("none", &[]),
+        ];
+        let filters = Filters {
+            capabilities: vec!["ci".into(), "container-registry".into()],
+            ..Filters::default()
+        };
+        assert_eq!(slugs(filters.apply(&tools)), ["both"]);
+    }
+
+    #[test]
+    fn a_near_miss_names_what_it_lacks_and_one_that_matches_nothing_is_left_out() {
+        let tools = [
+            with_capabilities("both", &["ci", "container-registry"]),
+            with_capabilities("ci-only", &["ci"]),
+            with_capabilities("none", &[]),
+        ];
+        let filters = Filters {
+            capabilities: vec!["ci".into(), "container-registry".into()],
+            ..Filters::default()
+        };
+        let near = filters.near_misses(&tools);
+        assert_eq!(near.len(), 1);
+        assert_eq!(near[0].tool.slug, "ci-only");
+        assert_eq!(near[0].missing, ["container-registry"]);
+        assert!(Filters::default().near_misses(&tools).is_empty());
+    }
+
+    #[test]
+    fn capabilities_read_from_a_comma_list_or_an_array() {
+        let joined: Filters = serde_json::from_str(r#"{"capabilities":"ci, wiki"}"#).unwrap();
+        let listed: Filters = serde_json::from_str(r#"{"capabilities":["ci","wiki"]}"#).unwrap();
+        assert_eq!(joined.capabilities, ["ci", "wiki"]);
+        assert_eq!(listed.capabilities, ["ci", "wiki"]);
+        assert_eq!(
+            serde_json::to_string(&listed).unwrap(),
+            r#"{"dropIn":false,"capabilities":["ci","wiki"]}"#
+        );
     }
 }

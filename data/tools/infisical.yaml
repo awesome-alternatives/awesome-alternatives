@@ -9,3 +9,10 @@ replaces:
     fit: full
     note: Secrets synced to environments and CI, self-hostable.
 terms: open-core
+capabilities:
+  dynamic-secrets:
+    docs: https://infisical.com/docs/documentation/platform/dynamic-secrets/overview
+  pki:
+    docs: https://infisical.com/docs/documentation/platform/pki/overview
+  secret-rotation:
+    docs: https://infisical.com/docs/documentation/platform/secret-rotation/overview

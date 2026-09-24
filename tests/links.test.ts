@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { checkHomepage, checkMigrations } from "../scripts/lib/links.ts";
+import { checkCapabilityDocs, checkHomepage, checkMigrations } from "../scripts/lib/links.ts";
 
 const product = { slug: "closed", homepage: "https://example.com/" };
 const answering = (status: number) => (async () => new Response(null, { status })) as typeof fetch;
@@ -49,5 +49,19 @@ describe("checkMigrations", () => {
       [["error", "migration-unreachable"]],
     );
     assert.match(findings[0]?.message ?? "", /from terraform.*404/);
+  });
+});
+
+describe("checkCapabilityDocs", () => {
+  const tool = { slug: "gitea", capabilities: { ci: { docs: "https://docs.gitea.com/usage/actions/overview/" } } };
+
+  it("passes documentation that answers", async () => {
+    assert.deepEqual(await checkCapabilityDocs(tool, answering(200)), []);
+  });
+
+  it("fails the entry when a capability's documentation does not answer", async () => {
+    const findings = await checkCapabilityDocs(tool, answering(404));
+    assert.deepEqual(findings.map((f) => [f.severity, f.code]), [["error", "capability-unreachable"]]);
+    assert.match(findings[0]?.message ?? "", /for ci.*404/);
   });
 });

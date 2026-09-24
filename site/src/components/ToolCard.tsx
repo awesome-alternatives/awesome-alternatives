@@ -24,9 +24,23 @@ interface Props {
   trend?: TrendFacts;
   replaces?: Replaced[];
   notes?: boolean;
+  criteria?: string;
+  gap?: string;
 }
 
-export function ToolCard({ locale, strings, tool, target, targetName, comparable, trend, replaces, notes }: Props) {
+export function ToolCard({
+  locale,
+  strings,
+  tool,
+  target,
+  targetName,
+  comparable,
+  trend,
+  replaces,
+  notes,
+  criteria,
+  gap,
+}: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
   const flags = tool.flags.filter((flag): flag is LabelledFlag => flag !== "archived");
@@ -132,6 +146,13 @@ export function ToolCard({ locale, strings, tool, target, targetName, comparable
               {flagLabels[flag]}
             </a>
           ))}
+        </p>
+      )}
+      {(criteria || gap) && (
+        <p className="criteria">
+          {criteria}
+          {criteria && gap && " "}
+          {gap && <span className="criteria-gap">{gap}</span>}
         </p>
       )}
     </article>

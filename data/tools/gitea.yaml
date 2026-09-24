@@ -15,3 +15,11 @@ replaces:
   - tool: bitbucket
     fit: full
     note: Repositories, pull requests and CI on your own server.
+capabilities:
+  ci:
+    docs: https://docs.gitea.com/usage/actions/overview/
+    note: "Gitea Actions, compatible with most GitHub Actions workflows."
+  container-registry:
+    docs: https://docs.gitea.com/usage/packages/container/
+  package-registry:
+    docs: https://docs.gitea.com/usage/packages/overview/

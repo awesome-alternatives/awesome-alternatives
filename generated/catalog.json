@@ -1787,7 +1787,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "aider",
@@ -1888,7 +1889,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "aiohttp",
@@ -1973,7 +1975,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "akka",
@@ -2059,7 +2062,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "alacritty",
@@ -2157,7 +2161,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "anything-llm",
@@ -2260,7 +2265,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "astro",
@@ -2366,7 +2372,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "biome",
@@ -2465,7 +2472,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "bitwarden",
@@ -2566,7 +2574,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "black",
@@ -2652,7 +2661,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "bruno",
@@ -2755,7 +2765,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "bugsink",
@@ -2837,7 +2848,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "bun",
@@ -2948,7 +2960,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "caddy",
@@ -3046,7 +3059,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "cargo-release",
@@ -3126,7 +3140,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "changesets",
@@ -3213,7 +3228,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "cline",
@@ -3305,7 +3321,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "cockroachdb",
@@ -3352,7 +3369,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "cocogitto",
@@ -3451,7 +3469,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "codex",
@@ -3538,7 +3557,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "colima",
@@ -3633,7 +3653,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "concourse",
@@ -3732,7 +3753,12 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "container-steps": {
+          "docs": "https://concourse-ci.org/docs/tasks/"
+        }
+      }
     },
     {
       "slug": "continue",
@@ -3825,7 +3851,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "conventional-changelog",
@@ -3908,7 +3935,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "create-react-app",
@@ -3990,7 +4018,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "crush",
@@ -4082,7 +4111,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "cuberite",
@@ -4161,7 +4191,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "curl",
@@ -4258,7 +4289,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "cypress",
@@ -4354,7 +4386,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "date-fns",
@@ -4447,7 +4480,8 @@
       "flags": [
         "no-license"
       ],
-      "terms": "unknown"
+      "terms": "unknown",
+      "capabilities": {}
     },
     {
       "slug": "dayjs",
@@ -4536,7 +4570,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "delta",
@@ -4627,7 +4662,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "deno",
@@ -4719,7 +4755,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "diff-so-fancy",
@@ -4802,7 +4839,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "difftastic",
@@ -4887,7 +4925,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "django-rest-framework",
@@ -4968,7 +5007,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "docker",
@@ -5049,7 +5089,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "docusaurus",
@@ -5138,7 +5179,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "dprint",
@@ -5222,7 +5264,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "dragonfly",
@@ -5325,7 +5368,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "drizzle",
@@ -5428,7 +5472,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "elasticsearch",
@@ -5508,7 +5553,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "eleventy",
@@ -5602,7 +5648,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "elysia",
@@ -5691,7 +5738,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "esbuild",
@@ -5785,7 +5833,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "eslint",
@@ -5867,7 +5916,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "exa",
@@ -5950,7 +6000,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "express",
@@ -6031,7 +6082,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "eza",
@@ -6124,7 +6176,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "fastapi",
@@ -6232,7 +6285,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "fastify",
@@ -6327,7 +6381,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ferretdb",
@@ -6423,7 +6478,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ferrflow",
@@ -6561,7 +6617,8 @@
       ],
       "maintainerVerified": true,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "flake8",
@@ -6614,7 +6671,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "flask",
@@ -6698,7 +6756,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "fluent-bit",
@@ -6800,7 +6859,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "fluentd",
@@ -6882,7 +6942,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "folia",
@@ -6936,7 +6997,8 @@
       "flags": [
         "no-release"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gatling",
@@ -6996,7 +7058,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gatsby",
@@ -7080,7 +7143,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gatus",
@@ -7193,7 +7257,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gemini-cli",
@@ -7288,7 +7353,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ghostty",
@@ -7347,7 +7413,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "giftless",
@@ -7422,7 +7489,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "git-cliff",
@@ -7523,7 +7591,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "git-crypt",
@@ -7578,7 +7647,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gitea",
@@ -7697,7 +7767,19 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "ci": {
+          "docs": "https://docs.gitea.com/usage/actions/overview/",
+          "note": "Gitea Actions, compatible with most GitHub Actions workflows."
+        },
+        "container-registry": {
+          "docs": "https://docs.gitea.com/usage/packages/container/"
+        },
+        "package-registry": {
+          "docs": "https://docs.gitea.com/usage/packages/overview/"
+        }
+      }
     },
     {
       "slug": "gitlab",
@@ -7757,7 +7839,24 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {
+        "ci": {
+          "docs": "https://docs.gitlab.com/ci/"
+        },
+        "container-registry": {
+          "docs": "https://docs.gitlab.com/user/packages/container_registry/"
+        },
+        "package-registry": {
+          "docs": "https://docs.gitlab.com/user/packages/package_registry/"
+        },
+        "wiki": {
+          "docs": "https://docs.gitlab.com/user/project/wiki/"
+        },
+        "pages": {
+          "docs": "https://docs.gitlab.com/user/project/pages/"
+        }
+      }
     },
     {
       "slug": "glowstone",
@@ -7849,7 +7948,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "gojq",
@@ -7937,7 +8037,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "goose",
@@ -8029,7 +8130,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "grafana",
@@ -8132,7 +8234,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "helix",
@@ -8224,7 +8327,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "hexo",
@@ -8307,7 +8411,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "hono",
@@ -8404,7 +8509,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "hoppscotch",
@@ -8510,7 +8616,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "httpie",
@@ -8609,7 +8716,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "httpx",
@@ -8701,7 +8809,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "hugo",
@@ -8796,7 +8905,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "infisical",
@@ -8904,7 +9014,18 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {
+        "dynamic-secrets": {
+          "docs": "https://infisical.com/docs/documentation/platform/dynamic-secrets/overview"
+        },
+        "pki": {
+          "docs": "https://infisical.com/docs/documentation/platform/pki/overview"
+        },
+        "secret-rotation": {
+          "docs": "https://infisical.com/docs/documentation/platform/secret-rotation/overview"
+        }
+      }
     },
     {
       "slug": "influxdb",
@@ -8989,7 +9110,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ingress-nginx",
@@ -9075,7 +9197,8 @@
       "flags": [
         "archived"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "insomnia",
@@ -9162,7 +9285,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "iterm2",
@@ -9202,7 +9326,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jaeger",
@@ -9292,7 +9417,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jan",
@@ -9388,7 +9514,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jaq",
@@ -9475,7 +9602,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jekyll",
@@ -9558,7 +9686,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jenkins",
@@ -9645,7 +9774,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jest",
@@ -9731,7 +9861,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jmeter",
@@ -9811,7 +9942,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "jq",
@@ -9889,7 +10021,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "k3d",
@@ -9979,7 +10112,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "k6",
@@ -10076,7 +10210,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "kafka",
@@ -10121,7 +10256,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "keydb",
@@ -10205,7 +10341,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "kibana",
@@ -10289,7 +10426,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "kind",
@@ -10378,7 +10516,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "kitty",
@@ -10478,7 +10617,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "knope",
@@ -10573,7 +10713,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "koa",
@@ -10651,7 +10792,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "kysely",
@@ -10758,7 +10900,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "lerna",
@@ -10840,7 +10983,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "lfs-test-server",
@@ -10920,7 +11064,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "lfsx",
@@ -11017,7 +11162,8 @@
       ],
       "maintainerVerified": true,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "librechat",
@@ -11127,7 +11273,8 @@
       "flags": [
         "moved"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "litestar",
@@ -11230,7 +11377,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "llama-cpp",
@@ -11319,7 +11467,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "lobehub",
@@ -11425,7 +11574,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "locust",
@@ -11524,7 +11674,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "logstash",
@@ -11607,7 +11758,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "lsd",
@@ -11696,7 +11848,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "luxon",
@@ -11749,7 +11902,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "matomo",
@@ -11848,7 +12002,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mattermost",
@@ -11944,7 +12099,15 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "unknown"
+      "terms": "unknown",
+      "capabilities": {
+        "calls": {
+          "docs": "https://docs.mattermost.com/deployment-guide/calls/calls-deployment-guide"
+        },
+        "threads": {
+          "docs": "https://docs.mattermost.com/end-user-guide/collaborate/organize-conversations"
+        }
+      }
     },
     {
       "slug": "meilisearch",
@@ -12053,7 +12216,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "memcached",
@@ -12093,7 +12257,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mikro-orm",
@@ -12201,7 +12366,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "minestom",
@@ -12291,7 +12457,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "minikube",
@@ -12374,7 +12541,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "minio",
@@ -12465,7 +12633,8 @@
       "flags": [
         "archived"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mkdocs-material",
@@ -12559,7 +12728,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mocha",
@@ -12648,7 +12818,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "moment",
@@ -12703,7 +12874,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mongodb",
@@ -12748,7 +12920,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "moon",
@@ -12847,7 +13020,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "mypy",
@@ -12893,7 +13067,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "neovim",
@@ -12984,7 +13159,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "nerdctl",
@@ -13068,7 +13244,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "nextcloud",
@@ -13176,7 +13353,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "nginx",
@@ -13268,7 +13446,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "nodejs",
@@ -13354,7 +13533,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "npm",
@@ -13437,7 +13617,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "nx",
@@ -13537,7 +13718,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "oh-my-posh",
@@ -13642,7 +13824,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ohmyzsh",
@@ -13694,7 +13877,8 @@
       "flags": [
         "no-release"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ollama",
@@ -13797,7 +13981,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "onedev",
@@ -13904,7 +14089,21 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "ci": {
+          "docs": "https://docs.onedev.io/category/cicd"
+        },
+        "container-registry": {
+          "docs": "https://docs.onedev.io/tutorials/package/working-with-container-image"
+        },
+        "package-registry": {
+          "docs": "https://docs.onedev.io/tutorials/package/working-with-packages"
+        },
+        "wiki": {
+          "docs": "https://docs.onedev.io/tutorials/wiki/working-with-wiki"
+        }
+      }
     },
     {
       "slug": "open-webui",
@@ -14007,7 +14206,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "openbao",
@@ -14094,7 +14294,15 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "dynamic-secrets": {
+          "docs": "https://openbao.org/docs/secrets/databases/"
+        },
+        "pki": {
+          "docs": "https://openbao.org/docs/secrets/pki/"
+        }
+      }
     },
     {
       "slug": "opencode",
@@ -14186,7 +14394,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "openhands",
@@ -14283,7 +14492,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "opensearch",
@@ -14372,7 +14582,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "opensearch-dashboards",
@@ -14460,7 +14671,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "opentelemetry-collector",
@@ -14554,7 +14766,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "opentofu",
@@ -14642,7 +14855,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "oxc",
@@ -14733,7 +14947,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "paper",
@@ -14784,7 +14999,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "parcel",
@@ -14883,7 +15099,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "passbolt",
@@ -14980,7 +15197,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pdm",
@@ -15075,7 +15293,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pekko",
@@ -15133,7 +15352,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "perses",
@@ -15221,7 +15441,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pip",
@@ -15265,7 +15486,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pip-tools",
@@ -15351,7 +15573,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pipenv",
@@ -15433,7 +15656,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "plausible",
@@ -15542,7 +15766,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "playwright",
@@ -15651,7 +15876,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pnpm",
@@ -15743,7 +15969,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "podman",
@@ -15831,7 +16058,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "podman-desktop",
@@ -15925,7 +16153,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "poetry",
@@ -16013,7 +16242,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "powerlevel10k",
@@ -16091,7 +16321,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "prettier",
@@ -16186,7 +16417,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "prisma",
@@ -16294,7 +16526,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "prometheus",
@@ -16384,7 +16617,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pulsar",
@@ -16473,7 +16707,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pulumi",
@@ -16580,7 +16815,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pumpkin",
@@ -16659,7 +16895,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "puppeteer",
@@ -16745,7 +16982,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "purpur",
@@ -16800,7 +17038,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pyenv",
@@ -16879,7 +17118,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pylint",
@@ -16963,7 +17203,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "pyright",
@@ -17045,7 +17286,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "questdb",
@@ -17149,7 +17391,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rancher-desktop",
@@ -17237,7 +17480,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "redis",
@@ -17334,7 +17578,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "redpanda",
@@ -17432,7 +17677,8 @@
       "flags": [
         "no-license"
       ],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "release-please",
@@ -17514,7 +17760,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "release-plz",
@@ -17606,7 +17853,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "requests",
@@ -17691,7 +17939,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ripgrep",
@@ -17789,7 +18038,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rocketchat",
@@ -17893,7 +18143,21 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {
+        "calls": {
+          "docs": "https://docs.rocket.chat/docs/rocketchat-conference-call"
+        },
+        "threads": {
+          "docs": "https://docs.rocket.chat/docs/threads"
+        },
+        "federation": {
+          "docs": "https://docs.rocket.chat/docs/decentralized-communication-with-federation-in-rocketchat"
+        },
+        "e2e-encryption": {
+          "docs": "https://docs.rocket.chat/docs/configure-e2e-encryption"
+        }
+      }
     },
     {
       "slug": "rolldown",
@@ -17979,7 +18243,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rollup",
@@ -18055,7 +18320,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "roxycloud",
@@ -18148,7 +18414,8 @@
       ],
       "maintainerVerified": true,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rspack",
@@ -18247,7 +18514,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rudolfs",
@@ -18299,7 +18567,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ruff",
@@ -18403,7 +18672,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "rustfs",
@@ -18503,7 +18773,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "seafile",
@@ -18598,7 +18869,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "seaweedfs",
@@ -18703,7 +18975,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "selenium",
@@ -18788,7 +19061,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "semantic-release",
@@ -18877,7 +19151,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "sentry",
@@ -18969,7 +19244,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "sequelize",
@@ -19064,7 +19340,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "sops",
@@ -19156,7 +19433,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "starlight",
@@ -19249,7 +19527,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "starship",
@@ -19349,7 +19628,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "steelmc",
@@ -19431,7 +19711,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "syncthing",
@@ -19523,7 +19804,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "tabby",
@@ -19615,7 +19897,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "tekton",
@@ -19703,7 +19986,16 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "container-steps": {
+          "docs": "https://tekton.dev/docs/pipelines/tasks/"
+        },
+        "kubernetes": {
+          "docs": "https://tekton.dev/docs/concepts/overview/",
+          "note": "Pipelines are Kubernetes resources."
+        }
+      }
     },
     {
       "slug": "tempo",
@@ -19790,7 +20082,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "terraform",
@@ -19872,7 +20165,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "the-silver-searcher",
@@ -19921,7 +20215,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "timescaledb",
@@ -20017,7 +20312,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "tmux",
@@ -20093,7 +20389,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "traefik",
@@ -20195,7 +20492,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ts-node",
@@ -20283,7 +20581,8 @@
       "flags": [
         "inactive"
       ],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "turborepo",
@@ -20371,7 +20670,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ty",
@@ -20453,7 +20753,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "typeorm",
@@ -20544,7 +20845,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "typesense",
@@ -20653,7 +20955,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "ugrep",
@@ -20757,7 +21060,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "umami",
@@ -20854,7 +21158,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "uptime-kuma",
@@ -20954,7 +21259,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "uv",
@@ -21062,7 +21368,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "valkey",
@@ -21159,7 +21466,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vault",
@@ -21239,7 +21547,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "source-available"
+      "terms": "source-available",
+      "capabilities": {}
     },
     {
       "slug": "vaultwarden",
@@ -21338,7 +21647,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vector",
@@ -21444,7 +21754,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "victoriametrics",
@@ -21552,7 +21863,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vim",
@@ -21597,7 +21909,8 @@
       "releases": [],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vite",
@@ -21690,7 +22003,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vitepress",
@@ -21784,7 +22098,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vitest",
@@ -21876,7 +22191,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vscode",
@@ -21958,7 +22274,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "vscodium",
@@ -22046,7 +22363,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "webpack",
@@ -22139,7 +22457,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "wezterm",
@@ -22238,7 +22557,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "woodpecker",
@@ -22333,7 +22653,16 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "container-steps": {
+          "docs": "https://woodpecker-ci.org/docs/usage/workflow-syntax"
+        },
+        "kubernetes": {
+          "docs": "https://woodpecker-ci.org/docs/administration/configuration/backends/kubernetes",
+          "note": "One of several backends, next to Docker and local."
+        }
+      }
     },
     {
       "slug": "xh",
@@ -22427,7 +22756,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "yarn",
@@ -22514,7 +22844,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "yugabytedb",
@@ -22609,7 +22940,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open-core"
+      "terms": "open-core",
+      "capabilities": {}
     },
     {
       "slug": "zed",
@@ -22707,7 +23039,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "zellij",
@@ -22793,7 +23126,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "zipkin",
@@ -22875,7 +23209,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "zola",
@@ -22974,7 +23309,8 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {}
     },
     {
       "slug": "zulip",
@@ -23075,7 +23411,17 @@
       ],
       "maintainerVerified": false,
       "flags": [],
-      "terms": "open"
+      "terms": "open",
+      "capabilities": {
+        "calls": {
+          "docs": "https://zulip.com/help/start-a-call",
+          "note": "Through a video call provider such as Jitsi Meet."
+        },
+        "threads": {
+          "docs": "https://zulip.com/help/introduction-to-topics",
+          "note": "Every message sits in a topic inside a channel."
+        }
+      }
     }
   ],
   "products": [
@@ -23423,12 +23769,90 @@
     "ci-server": {
       "name": "CI servers",
       "description": "Self-hosted servers that run build and deployment pipelines.",
-      "selfHost": true
+      "selfHost": true,
+      "capabilities": {
+        "container-steps": {
+          "label": "Steps in containers",
+          "match": [
+            "container steps",
+            "steps in containers",
+            "each step in a container",
+            "étapes en conteneurs",
+            "pasos en contenedores"
+          ]
+        },
+        "kubernetes": {
+          "label": "Runs on Kubernetes",
+          "match": [
+            "on kubernetes",
+            "kubernetes native",
+            "sur kubernetes",
+            "en kubernetes",
+            "auf kubernetes"
+          ]
+        }
+      }
     },
     "git-forge": {
       "name": "Git forges",
       "description": "Self-hosted repositories, code review and issues.",
-      "selfHost": true
+      "selfHost": true,
+      "capabilities": {
+        "ci": {
+          "label": "CI/CD",
+          "match": [
+            "ci",
+            "ci/cd",
+            "cicd",
+            "continuous integration",
+            "intégration continue",
+            "integración continua",
+            "kontinuierliche integration"
+          ]
+        },
+        "container-registry": {
+          "label": "Container registry",
+          "match": [
+            "container registry",
+            "docker registry",
+            "registre docker",
+            "registre de conteneurs",
+            "registro de contenedores",
+            "registro docker",
+            "container-registry"
+          ]
+        },
+        "package-registry": {
+          "label": "Package registry",
+          "match": [
+            "package registry",
+            "packages registry",
+            "registre de paquets",
+            "registro de paquetes",
+            "paket-registry",
+            "npm registry",
+            "maven registry"
+          ]
+        },
+        "wiki": {
+          "label": "Wiki",
+          "match": [
+            "wiki"
+          ]
+        },
+        "pages": {
+          "label": "Static site hosting",
+          "match": [
+            "static site hosting",
+            "static pages",
+            "gitlab pages",
+            "hébergement de site statique",
+            "pages statiques",
+            "sitios estáticos",
+            "statische seiten"
+          ]
+        }
+      }
     },
     "password-manager-server": {
       "name": "Password manager servers",
@@ -23453,7 +23877,59 @@
     "team-chat": {
       "name": "Team chat",
       "description": "Self-hosted messaging for teams.",
-      "selfHost": true
+      "selfHost": true,
+      "capabilities": {
+        "calls": {
+          "label": "Voice and video calls",
+          "match": [
+            "video calls",
+            "voice calls",
+            "audio calls",
+            "video conferencing",
+            "appels vidéo",
+            "appels audio",
+            "visioconférence",
+            "videollamadas",
+            "videoconferencia",
+            "videoanrufe",
+            "videokonferenzen"
+          ]
+        },
+        "threads": {
+          "label": "Threads",
+          "match": [
+            "threads",
+            "threaded",
+            "fils de discussion",
+            "hilos",
+            "hilos de conversación"
+          ]
+        },
+        "federation": {
+          "label": "Federation",
+          "match": [
+            "federation",
+            "federated",
+            "fédération",
+            "fédéré",
+            "federación",
+            "föderation",
+            "föderiert"
+          ]
+        },
+        "e2e-encryption": {
+          "label": "End-to-end encryption",
+          "match": [
+            "end to end encryption",
+            "end-to-end encryption",
+            "e2e",
+            "e2ee",
+            "chiffrement de bout en bout",
+            "cifrado de extremo a extremo",
+            "ende zu ende verschlüsselung"
+          ]
+        }
+      }
     },
     "terminal-emulator": {
       "name": "Terminal emulators",
@@ -23502,7 +23978,41 @@
     "secrets-manager": {
       "name": "Secrets managers",
       "description": "Store, rotate and hand out secrets to applications.",
-      "selfHost": true
+      "selfHost": true,
+      "capabilities": {
+        "dynamic-secrets": {
+          "label": "Dynamic secrets",
+          "match": [
+            "dynamic secrets",
+            "short-lived credentials",
+            "secrets dynamiques",
+            "secretos dinámicos",
+            "dynamische secrets"
+          ]
+        },
+        "pki": {
+          "label": "PKI and certificates",
+          "match": [
+            "pki",
+            "certificate management",
+            "certificate authority",
+            "gestion des certificats",
+            "autorité de certification",
+            "gestión de certificados",
+            "zertifikatsverwaltung"
+          ]
+        },
+        "secret-rotation": {
+          "label": "Secret rotation",
+          "match": [
+            "secret rotation",
+            "rotate secrets",
+            "rotation des secrets",
+            "rotación de secretos",
+            "secret-rotation"
+          ]
+        }
+      }
     },
     "git-lfs-server": {
       "name": "Git LFS servers",

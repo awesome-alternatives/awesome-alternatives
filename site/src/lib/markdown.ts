@@ -15,6 +15,7 @@ export interface Surroundings {
   selfHost: boolean;
   checkedAt: string | null;
   migrationNotes: string[];
+  capabilityLabels: Record<string, string>;
   nameOf: (slug: string) => string;
   replacedBy: { slug: string; name: string }[];
 }
@@ -79,6 +80,19 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     `- Entry last edited: ${tool.editedAt.slice(0, 10)}, ${historyUrl(tool.slug)}`,
     "",
   );
+
+  const capabilities = Object.entries(tool.capabilities);
+  if (capabilities.length > 0) {
+    out.push(
+      "## Capabilities",
+      "",
+      ...capabilities.map(
+        ([key, capability]) =>
+          `- ${around.capabilityLabels[key] ?? key}: ${capability.docs}${capability.note ? ` (${capability.note})` : ""}`,
+      ),
+      "",
+    );
+  }
 
   if (tool.affiliation) out.push("## Affiliation", "", tool.affiliation, "");
 

@@ -5,3 +5,9 @@ replaces:
   - tool: jenkins
     fit: partial
     note: Pipelines defined as Kubernetes resources; the dashboard is a separate project.
+capabilities:
+  container-steps:
+    docs: https://tekton.dev/docs/pipelines/tasks/
+  kubernetes:
+    docs: https://tekton.dev/docs/concepts/overview/
+    note: "Pipelines are Kubernetes resources."
