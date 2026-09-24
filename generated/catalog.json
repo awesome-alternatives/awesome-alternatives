@@ -4,7 +4,7 @@
     "categories": 124,
     "targets": 231
   },
-  "checkedAt": "2026-09-24T18:06:42.672Z",
+  "checkedAt": "2026-09-24T18:14:51.088Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -3523,7 +3523,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.10.0",
@@ -3559,7 +3559,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "activepieces/activepieces",
@@ -3568,7 +3568,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 24715,
-        "forks": 4240,
+        "forks": 4241,
         "topics": [
           "ai-agent",
           "ai-agent-tools",
@@ -3594,7 +3594,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.91.2",
@@ -3669,7 +3669,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "AdguardTeam/AdGuardHome",
@@ -3701,7 +3701,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.107.79",
@@ -3776,7 +3776,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "beemdevelopment/Aegis",
@@ -3807,7 +3807,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.4.3",
@@ -3879,7 +3879,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "toeverything/AFFiNE",
@@ -3887,7 +3887,7 @@
         "homepage": "https://affine.pro",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 72941,
+        "stars": 72940,
         "forks": 5309,
         "topics": [
           "app",
@@ -3919,7 +3919,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.27.4",
@@ -3999,7 +3999,7 @@
         "homepage": "https://aider.chat/",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 49155,
+        "stars": 49154,
         "forks": 4987,
         "topics": [
           "anthropic",
@@ -4024,7 +4024,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 20,
+        "stars": 19,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -4117,7 +4117,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.14.3",
@@ -4184,7 +4184,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "airbytehq/airbyte",
@@ -4220,13 +4220,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-07-27T23:55:54Z",
-        "pushedAt": "2026-09-24T17:54:24Z",
+        "pushedAt": "2026-09-24T18:10:23Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.0.0",
@@ -4287,7 +4287,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/airflow",
@@ -4329,7 +4329,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.3.2",
@@ -4421,7 +4421,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.10.22",
@@ -4586,7 +4586,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ansible/ansible",
@@ -4610,7 +4610,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.21.4",
@@ -4790,7 +4790,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/apisix",
@@ -4831,7 +4831,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.18.0",
@@ -4901,7 +4901,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "AppFlowy-IO/AppFlowy",
@@ -4935,7 +4935,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.14.5",
@@ -5002,7 +5002,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "appwrite/appwrite",
@@ -5010,7 +5010,7 @@
         "homepage": "https://appwrite.io",
         "language": "PHP",
         "license": "BSD-3-Clause",
-        "stars": 57458,
+        "stars": 57457,
         "forks": 5740,
         "topics": [
           "android",
@@ -5044,7 +5044,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.3.0",
@@ -5108,7 +5108,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "argoproj/argo-cd",
@@ -5146,7 +5146,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.5.3",
@@ -5213,7 +5213,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "argosopentech/argos-translate",
@@ -5243,7 +5243,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.4.0",
@@ -5282,7 +5282,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "arktypeio/arktype",
@@ -5309,7 +5309,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "@arktype/util@0.56.2",
@@ -5381,7 +5381,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "artilleryio/artillery",
@@ -5423,7 +5423,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "artillery-2.0.34",
@@ -5535,7 +5535,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "astro@7.3.5",
@@ -5607,7 +5607,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ariga/atlas",
@@ -5628,7 +5628,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.3.0",
@@ -5689,7 +5689,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "atom/atom",
@@ -5697,7 +5697,7 @@
         "homepage": "https://atom.io",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 60730,
+        "stars": 60729,
         "forks": 17162,
         "topics": [
           "atom",
@@ -5718,7 +5718,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.60.0",
@@ -5787,7 +5787,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "authelia/authelia",
@@ -5796,7 +5796,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 29079,
-        "forks": 1491,
+        "forks": 1492,
         "topics": [
           "2fa",
           "authentication",
@@ -5829,7 +5829,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.39.28",
@@ -5909,7 +5909,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "goauthentik/authentik",
@@ -5948,7 +5948,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "version/2026.8.3",
@@ -6013,7 +6013,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "wting/autojump",
@@ -6039,7 +6039,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "release-v22.5.3",
@@ -6072,7 +6072,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "axios/axios",
@@ -6099,7 +6099,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.20.0",
@@ -6166,7 +6166,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bigbluebutton/bigbluebutton",
@@ -6174,7 +6174,7 @@
         "homepage": "https://bigbluebutton.org",
         "language": "JavaScript",
         "license": "LGPL-3.0",
-        "stars": 9227,
+        "stars": 9228,
         "forks": 5980,
         "topics": [
           "bigbluebutton",
@@ -6192,9 +6192,9 @@
         "defaultBranch": "v3.0.x-develop"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.37",
@@ -6276,7 +6276,7 @@
         "homepage": "https://biomejs.dev",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 25853,
+        "stars": 25852,
         "forks": 1245,
         "topics": [
           "css",
@@ -6297,7 +6297,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 11,
+        "stars": 10,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -6568,7 +6568,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "0xERR0R/blocky",
@@ -6601,7 +6601,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.35.0",
@@ -6676,7 +6676,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "BookStackApp/BookStack",
@@ -6704,7 +6704,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v26.09",
@@ -6771,7 +6771,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ClementTsang/bottom",
@@ -6802,7 +6802,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.14.9",
@@ -6883,7 +6883,7 @@
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47169,
+        "stars": 47170,
         "forks": 2916,
         "topics": [
           "api-client",
@@ -6909,7 +6909,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 52,
+        "stars": 53,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -6978,7 +6978,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "aristocratos/btop",
@@ -6999,7 +6999,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.4.7",
@@ -7087,7 +7087,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.6.0",
@@ -7201,7 +7201,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T17:47:50Z",
+        "pushedAt": "2026-09-24T18:10:41Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -7382,7 +7382,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "CapSoftware/Cap",
@@ -7390,7 +7390,7 @@
         "homepage": "https://cap.so",
         "language": "Rust",
         "license": "Other",
-        "stars": 22759,
+        "stars": 22758,
         "forks": 1966,
         "topics": [
           "app",
@@ -7422,9 +7422,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "cap-v0.6.0",
@@ -7510,7 +7510,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.1.6",
@@ -7571,7 +7571,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "celery/celery",
@@ -7607,7 +7607,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.6.3",
@@ -7679,7 +7679,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ceph/ceph",
@@ -7721,7 +7721,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v21.3.0",
@@ -7850,7 +7850,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "chatwoot/chatwoot",
@@ -7858,7 +7858,7 @@
         "homepage": "https://www.chatwoot.com/help-center",
         "language": "Ruby",
         "license": "Other",
-        "stars": 37156,
+        "stars": 37155,
         "forks": 9029,
         "topics": [
           "actioncable",
@@ -7891,7 +7891,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.18.0",
@@ -7955,7 +7955,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "chef/chef",
@@ -7984,7 +7984,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v15.8.23",
@@ -8044,7 +8044,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "chroma-core/chroma",
@@ -8072,7 +8072,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.5.9",
@@ -8146,7 +8146,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ClickHouse/ClickHouse",
@@ -8179,13 +8179,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T08:28:18Z",
-        "pushedAt": "2026-09-24T18:02:11Z",
+        "pushedAt": "2026-09-24T18:14:07Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v26.9.2.8-stable",
@@ -8273,7 +8273,7 @@
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69227,
+        "stars": 69226,
         "forks": 7509,
         "topics": [],
         "archived": false,
@@ -8284,7 +8284,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 72,
+        "stars": 71,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -8375,7 +8375,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v26.2.6",
@@ -8514,7 +8514,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "coder/code-server",
@@ -8543,7 +8543,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.138.0",
@@ -8615,7 +8615,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "coder/coder",
@@ -8641,13 +8641,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-22T06:08:52Z",
-        "pushedAt": "2026-09-24T18:05:33Z",
+        "pushedAt": "2026-09-24T18:12:32Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.36.6",
@@ -8732,18 +8732,18 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126327,
+        "stars": 126328,
         "forks": 19697,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-13T05:37:54Z",
-        "pushedAt": "2026-09-24T18:06:24Z",
+        "pushedAt": "2026-09-24T18:10:05Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 170,
+        "stars": 171,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -8817,7 +8817,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "abiosoft/colima",
@@ -8851,7 +8851,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.10.3",
@@ -9026,7 +9026,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "conda/conda",
@@ -9051,7 +9051,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "26.7.2",
@@ -9239,7 +9239,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "template-v1.4.0",
@@ -9325,7 +9325,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.0.1",
@@ -9615,7 +9615,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "curl-8_22_0",
@@ -9682,7 +9682,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rs/curlie",
@@ -9713,7 +9713,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.8.2",
@@ -9882,7 +9882,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dagster-io/dagster",
@@ -9913,13 +9913,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-30T16:30:04Z",
-        "pushedAt": "2026-09-24T17:31:52Z",
+        "pushedAt": "2026-09-24T18:07:41Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.13.24",
@@ -9986,7 +9986,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sass/dart-sass",
@@ -10012,7 +10012,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.105.0",
@@ -10278,7 +10278,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "amacneil/dbmate",
@@ -10317,7 +10317,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.36.0",
@@ -10692,7 +10692,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.71.0",
@@ -10759,7 +10759,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "directus/directus",
@@ -10795,13 +10795,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-12-12T01:35:36Z",
-        "pushedAt": "2026-09-24T17:13:37Z",
+        "pushedAt": "2026-09-24T18:11:04Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v12.4.1",
@@ -10870,7 +10870,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "distribution/distribution",
@@ -10898,7 +10898,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.1.2",
@@ -10988,7 +10988,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.18.1",
@@ -11055,7 +11055,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dlt-hub/dlt",
@@ -11087,7 +11087,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.30.0",
@@ -11168,7 +11168,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-18T18:10:57Z",
-        "pushedAt": "2026-09-24T18:03:52Z",
+        "pushedAt": "2026-09-24T18:09:14Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -11241,7 +11241,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "docker-mailserver/docker-mailserver",
@@ -11274,7 +11274,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v16.0.1",
@@ -11350,7 +11350,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "docmost/docmost",
@@ -11385,7 +11385,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.96.0",
@@ -11463,7 +11463,7 @@
         "homepage": "https://docusaurus.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 66333,
+        "stars": 66332,
         "forks": 10045,
         "topics": [
           "documentation",
@@ -11481,7 +11481,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 14,
+        "stars": 13,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -11550,7 +11550,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/doris",
@@ -11590,7 +11590,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "4.1.4",
@@ -11862,7 +11862,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Bogdanp/dramatiq",
@@ -11892,7 +11892,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.2.1",
@@ -11964,7 +11964,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jgraph/drawio",
@@ -11989,7 +11989,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v31.5.2",
@@ -12165,7 +12165,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dubinc/dub",
@@ -12198,7 +12198,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": null,
       "releases": [],
@@ -12230,7 +12230,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "duckdb/duckdb",
@@ -12257,7 +12257,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.5.5",
@@ -12541,7 +12541,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.4.30",
@@ -12613,7 +12613,7 @@
       "affiliation": null,
       "path": "mobile/apps/auth",
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ente/ente",
@@ -12652,7 +12652,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "photos-v1.3.64",
@@ -12719,7 +12719,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "envoyproxy/envoy",
@@ -12749,7 +12749,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.39.1",
@@ -12823,7 +12823,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "frappe/erpnext",
@@ -12861,7 +12861,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v16.36.0",
@@ -12928,7 +12928,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "toss/es-toolkit",
@@ -12949,7 +12949,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.52.0",
@@ -13116,7 +13116,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "eslint/eslint",
@@ -13215,7 +13215,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "espocrm/espocrm",
@@ -13255,7 +13255,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "10.0.8",
@@ -13416,7 +13416,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "excalidraw/excalidraw",
@@ -13424,7 +13424,7 @@
         "homepage": "https://excalidraw.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 132803,
+        "stars": 132804,
         "forks": 15446,
         "topics": [
           "canvas",
@@ -13443,9 +13443,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.18.1",
@@ -13515,7 +13515,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 69470,
-        "forks": 25060,
+        "forks": 25061,
         "topics": [
           "express",
           "javascript",
@@ -14164,7 +14164,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "firezone/firezone",
@@ -14196,13 +14196,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-04-22T04:05:12Z",
-        "pushedAt": "2026-09-24T17:31:47Z",
+        "pushedAt": "2026-09-24T18:12:32Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "gateway-1.6.2",
@@ -14269,7 +14269,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fish-shell/fish-shell",
@@ -14289,13 +14289,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-05-10T03:00:55Z",
-        "pushedAt": "2026-09-23T18:05:25Z",
+        "pushedAt": "2026-09-24T18:07:40Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "4.9.3",
@@ -14362,7 +14362,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Flagsmith/flagsmith",
@@ -14402,7 +14402,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.276.0",
@@ -14754,7 +14754,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.19.3",
@@ -14825,7 +14825,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fluxcd/flux2",
@@ -14853,7 +14853,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.9.5",
@@ -14920,7 +14920,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "flyway/flyway",
@@ -14961,7 +14961,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "flyway-13.8.0",
@@ -15093,7 +15093,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "formbricks/formbricks",
@@ -15132,7 +15132,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "6.0.0",
@@ -15201,7 +15201,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "freelensapp/freelens",
@@ -15223,13 +15223,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-06-19T10:43:29Z",
-        "pushedAt": "2026-09-24T17:18:43Z",
+        "pushedAt": "2026-09-24T18:14:26Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.10.3",
@@ -15296,7 +15296,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "freescout-help-desk/freescout",
@@ -15332,7 +15332,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.8.241",
@@ -15399,7 +15399,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FreshRSS/FreshRSS",
@@ -15430,7 +15430,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.30.0",
@@ -15499,7 +15499,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "antonmedv/fx",
@@ -15525,7 +15525,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "39.2.0",
@@ -15586,7 +15586,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "junegunn/fzf",
@@ -15618,7 +15618,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.74.4",
@@ -15685,7 +15685,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/garnet",
@@ -15719,7 +15719,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.1.8",
@@ -15821,7 +15821,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.15.1",
@@ -15875,7 +15875,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "gatsby@5.16.1",
@@ -16078,7 +16078,7 @@
         "homepage": "https://geminicli.com",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 107149,
+        "stars": 107148,
         "forks": 14630,
         "topics": [
           "ai",
@@ -16097,7 +16097,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 11,
+        "stars": 10,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -16436,7 +16436,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.8.0",
@@ -16482,7 +16482,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sobolevn/git-secret",
@@ -16510,7 +16510,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.5.0",
@@ -16598,7 +16598,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "go-gitea/gitea",
@@ -16815,7 +16815,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gitui-org/gitui",
@@ -16846,7 +16846,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.28.1",
@@ -16913,7 +16913,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nicolargo/glances",
@@ -16943,7 +16943,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.5.6",
@@ -17110,7 +17110,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "arp242/goatcounter",
@@ -17135,7 +17135,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.7.0",
@@ -17204,7 +17204,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gocd/gocd",
@@ -17236,7 +17236,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "26.1.0",
@@ -17308,7 +17308,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gogs/gogs",
@@ -17341,7 +17341,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.14.3",
@@ -17518,7 +17518,7 @@
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54615,
+        "stars": 54614,
         "forks": 6310,
         "topics": [
           "acp",
@@ -17534,7 +17534,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 28,
+        "stars": 27,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -17603,7 +17603,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sindresorhus/got",
@@ -17631,7 +17631,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v16.0.0",
@@ -17708,7 +17708,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/grafana",
@@ -17739,13 +17739,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T18:06:34Z",
+        "pushedAt": "2026-09-24T18:10:16Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v13.2.2",
@@ -17817,7 +17817,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "GreptimeTeam/greptimedb",
@@ -17856,7 +17856,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.2.1",
@@ -17927,7 +17927,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gridaco/grida",
@@ -17966,7 +17966,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.0.24",
@@ -18033,7 +18033,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "growthbook/growthbook",
@@ -18069,13 +18069,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-05-07T23:11:51Z",
-        "pushedAt": "2026-09-24T18:06:46Z",
+        "pushedAt": "2026-09-24T18:14:04Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.1.0",
@@ -18144,7 +18144,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "haproxy/haproxy",
@@ -18182,7 +18182,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.5-dev7",
@@ -18218,7 +18218,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "goharbor/harbor",
@@ -18252,7 +18252,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.15.2",
@@ -18321,7 +18321,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Automattic/harper",
@@ -18352,7 +18352,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.11.0",
@@ -18419,7 +18419,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "harvester/harvester",
@@ -18444,7 +18444,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.9.0",
@@ -18516,7 +18516,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pypa/hatch",
@@ -18545,7 +18545,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "hatch-v1.18.1",
@@ -18612,7 +18612,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kubernetes-sigs/headlamp",
@@ -18648,7 +18648,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.45.0",
@@ -18715,7 +18715,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "juanfont/headscale",
@@ -18741,7 +18741,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.29.4",
@@ -18825,7 +18825,7 @@
         "homepage": "https://helix-editor.com",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 46321,
+        "stars": 46322,
         "forks": 3773,
         "topics": [
           "kakoune",
@@ -18841,7 +18841,7 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 18,
+        "stars": 19,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -18932,7 +18932,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v8.1.2",
@@ -18999,7 +18999,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "heyform/heyform",
@@ -19024,7 +19024,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.3",
@@ -19091,7 +19091,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "home-assistant/core",
@@ -19115,13 +19115,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-09-17T07:29:48Z",
-        "pushedAt": "2026-09-24T16:37:05Z",
+        "pushedAt": "2026-09-24T18:11:05Z",
         "defaultBranch": "dev"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2026.9.3",
@@ -19304,7 +19304,7 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80500,
+        "stars": 80501,
         "forks": 6124,
         "topics": [
           "api",
@@ -19334,7 +19334,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 29,
+        "stars": 30,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -19403,7 +19403,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hound-search/hound",
@@ -19426,7 +19426,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.7.1",
@@ -19487,7 +19487,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "htop-dev/htop",
@@ -19518,7 +19518,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.5.3",
@@ -19788,7 +19788,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "coleifer/huey",
@@ -19816,7 +19816,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.4.0",
@@ -19883,7 +19883,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "huginn/huginn",
@@ -19917,7 +19917,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2026.09.22",
@@ -20092,7 +20092,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hcengineering/platform",
@@ -20129,7 +20129,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.7.426",
@@ -20196,7 +20196,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "immich-app/immich",
@@ -20204,7 +20204,7 @@
         "homepage": "https://immich.app",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 114965,
+        "stars": 114964,
         "forks": 7051,
         "topics": [
           "backup-tool",
@@ -20228,13 +20228,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-02-03T15:56:27Z",
-        "pushedAt": "2026-09-24T18:06:37Z",
+        "pushedAt": "2026-09-24T18:08:36Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.2.2",
@@ -20309,7 +20309,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "lxc/incus",
@@ -20333,9 +20333,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v7.4.0",
@@ -20415,7 +20415,7 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29412,
+        "stars": 29413,
         "forks": 2281,
         "topics": [
           "acme",
@@ -20443,11 +20443,11 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-24T18:04:51Z",
+        "pushedAt": "2026-09-24T18:14:21Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 37,
+        "stars": 38,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -20554,7 +20554,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.11.4",
@@ -20644,7 +20644,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "controller-v1.15.1",
@@ -20803,7 +20803,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "PyCQA/isort",
@@ -20836,7 +20836,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "9.0.1",
@@ -20903,7 +20903,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "istio/istio",
@@ -20941,7 +20941,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.31.1",
@@ -21083,7 +21083,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.21.0",
@@ -21168,7 +21168,7 @@
         "homepage": "https://jan.ai/",
         "language": "Rust",
         "license": "Other",
-        "stars": 44637,
+        "stars": 44636,
         "forks": 3055,
         "topics": [
           "chatgpt",
@@ -21188,7 +21188,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 14,
+        "stars": 13,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -21447,7 +21447,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jellyfin/jellyfin",
@@ -21473,7 +21473,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v12.1",
@@ -21544,7 +21544,7 @@
         "homepage": "https://www.jenkins.io",
         "language": "Java",
         "license": "MIT",
-        "stars": 26583,
+        "stars": 26584,
         "forks": 9834,
         "topics": [
           "cicd",
@@ -21566,7 +21566,7 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 5,
+        "stars": 6,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -21737,7 +21737,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jitsi/jitsi-meet",
@@ -21763,13 +21763,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-16T12:51:09Z",
-        "pushedAt": "2026-09-24T17:50:02Z",
+        "pushedAt": "2026-09-24T18:08:10Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "stable/jitsi-meet_11248",
@@ -21916,7 +21916,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hapijs/joi",
@@ -21942,7 +21942,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v18.2.9",
@@ -21978,7 +21978,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "laurent22/joplin",
@@ -21987,7 +21987,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 56479,
-        "forks": 6305,
+        "forks": 6306,
         "topics": [
           "android",
           "dropbox",
@@ -22016,9 +22016,9 @@
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.7.18",
@@ -22085,7 +22085,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pmndrs/jotai",
@@ -22112,7 +22112,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.0",
@@ -22181,8 +22181,8 @@
         "homepage": "https://jqlang.org",
         "language": "C",
         "license": "Other",
-        "stars": 35681,
-        "forks": 2455,
+        "stars": 35682,
+        "forks": 2456,
         "topics": [
           "jq"
         ],
@@ -22194,7 +22194,7 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 14,
+        "stars": 15,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -22462,7 +22462,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "derailed/k9s",
@@ -22492,7 +22492,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.51.0",
@@ -22612,7 +22612,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mawww/kakoune",
@@ -22640,7 +22640,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2026.05.21",
@@ -22712,7 +22712,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kanidm/kanidm",
@@ -22747,7 +22747,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.11.2",
@@ -22821,7 +22821,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "karakeep-app/karakeep",
@@ -22850,7 +22850,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.33.2",
@@ -22920,7 +22920,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kestra-io/kestra",
@@ -22962,7 +22962,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.0.3",
@@ -23037,7 +23037,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "keycloak/keycloak",
@@ -23046,7 +23046,7 @@
         "language": "Java",
         "license": "Apache-2.0",
         "stars": 36978,
-        "forks": 8966,
+        "forks": 8967,
         "topics": [
           "keycloak",
           "oidc",
@@ -23062,7 +23062,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "26.7.4",
@@ -23241,13 +23241,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T17:59:27Z",
+        "pushedAt": "2026-09-24T18:13:46Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v9.5.4",
@@ -23636,7 +23636,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.2.1",
@@ -23697,7 +23697,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Kong/kong",
@@ -23739,7 +23739,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.9.3",
@@ -23806,7 +23806,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "krakend/krakend-ce",
@@ -23842,7 +23842,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.13.11",
@@ -23913,7 +23913,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kumahq/kuma",
@@ -23953,7 +23953,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.14.5",
@@ -24020,7 +24020,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/kvrocks",
@@ -24048,7 +24048,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.17.0",
@@ -24122,7 +24122,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sindresorhus/ky",
@@ -24155,7 +24155,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.1.0",
@@ -24268,7 +24268,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.29.6",
@@ -24335,7 +24335,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "languagetool-org/languagetool",
@@ -24363,7 +24363,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v6.8",
@@ -24394,7 +24394,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "lapce/lapce",
@@ -24421,7 +24421,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.4.6",
@@ -24498,7 +24498,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jesseduffield/lazygit",
@@ -24521,9 +24521,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.65.1",
@@ -24884,7 +24884,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44874,
+        "stars": 44873,
         "forks": 9197,
         "topics": [
           "ai",
@@ -24912,11 +24912,11 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T18:06:10Z",
+        "pushedAt": "2026-09-24T18:10:47Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 99,
+        "stars": 98,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -24996,7 +24996,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "LibreOffice/core",
@@ -25020,7 +25020,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "windows_build_successful_2011_11_08",
@@ -25056,7 +25056,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "LibreTranslate/LibreTranslate",
@@ -25083,7 +25083,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.9.6",
@@ -25152,7 +25152,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "lightdash/lightdash",
@@ -25172,22 +25172,29 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-03-19T09:44:40Z",
-        "pushedAt": "2026-09-24T18:05:15Z",
+        "pushedAt": "2026-09-24T18:14:24Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
-        "tag": "2.327.2",
-        "publishedAt": "2026-09-24T17:54:24Z",
-        "url": "https://github.com/lightdash/lightdash/releases/tag/2.327.2",
+        "tag": "2.328.0",
+        "publishedAt": "2026-09-24T18:09:10Z",
+        "url": "https://github.com/lightdash/lightdash/releases/tag/2.328.0",
         "source": "release",
         "signed": false
       },
       "releases": [
+        {
+          "tag": "2.328.0",
+          "name": "connections: explores, CLI and content as code for multiple connections (#29909) (4cb3448)",
+          "publishedAt": "2026-09-24T18:09:10Z",
+          "url": "https://github.com/lightdash/lightdash/releases/tag/2.328.0",
+          "prerelease": false
+        },
         {
           "tag": "2.327.2",
           "name": "ai-agents: keep verification on main's chart state for filter removal (#29924) (be47195)",
@@ -25215,13 +25222,6 @@
           "publishedAt": "2026-09-24T16:22:05Z",
           "url": "https://github.com/lightdash/lightdash/releases/tag/2.326.0",
           "prerelease": false
-        },
-        {
-          "tag": "2.325.0",
-          "name": "ai-agents: show JEV decisions, session totals and turn winners in battle mode (#29917) (3fe6936)",
-          "publishedAt": "2026-09-24T15:52:58Z",
-          "url": "https://github.com/lightdash/lightdash/releases/tag/2.325.0",
-          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -25245,7 +25245,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "parcel-bundler/lightningcss",
@@ -25273,7 +25273,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.33.0",
@@ -25345,7 +25345,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "LimeSurvey/LimeSurvey",
@@ -25377,7 +25377,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "remove",
@@ -25413,7 +25413,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sissbruecker/linkding",
@@ -25439,7 +25439,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.47.0",
@@ -25502,7 +25502,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "linkerd/linkerd2",
@@ -25530,7 +25530,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "edge-26.9.3",
@@ -25602,7 +25602,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "linkwarden/linkwarden",
@@ -25632,7 +25632,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.16.3",
@@ -25696,7 +25696,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "liquibase/liquibase",
@@ -25735,7 +25735,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.0.4",
@@ -25802,7 +25802,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "knadh/listmonk",
@@ -25837,7 +25837,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v6.2.0",
@@ -26029,7 +26029,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129429,
+        "stars": 129428,
         "forks": 23688,
         "topics": [
           "ggml"
@@ -26038,11 +26038,11 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T17:48:58Z",
+        "pushedAt": "2026-09-24T18:14:32Z",
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 110,
+        "stars": 109,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -26129,7 +26129,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 82801,
-        "forks": 15921,
+        "forks": 15922,
         "topics": [
           "agent",
           "agent-collaboration",
@@ -26154,7 +26154,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-24T18:03:38Z",
+        "pushedAt": "2026-09-24T18:15:37Z",
         "defaultBranch": "canary"
       },
       "trend": {
@@ -26235,7 +26235,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mudler/LocalAI",
@@ -26275,7 +26275,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.10.0",
@@ -26444,7 +26444,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "lodash/lodash",
@@ -26470,7 +26470,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "4.18.1",
@@ -26530,7 +26530,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "logseq/logseq",
@@ -26563,7 +26563,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.0.1",
@@ -26732,7 +26732,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/loki",
@@ -26754,13 +26754,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-16T09:22:48Z",
-        "pushedAt": "2026-09-24T17:36:58Z",
+        "pushedAt": "2026-09-24T18:13:45Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.7.8",
@@ -26979,7 +26979,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "canonical/lxd",
@@ -27007,7 +27007,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "lxd-5.21.8",
@@ -27079,7 +27079,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mailcow/mailcow-dockerized",
@@ -27118,7 +27118,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2026-09",
@@ -27187,7 +27187,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Mailu/Mailu",
@@ -27222,7 +27222,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2024.06.59",
@@ -27293,7 +27293,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mamba-org/mamba",
@@ -27319,7 +27319,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.9.0",
@@ -27391,7 +27391,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "manticoresoftware/manticoresearch",
@@ -27428,7 +27428,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "release-29.9.0",
@@ -27503,7 +27503,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "MariaDB/server",
@@ -27540,7 +27540,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "mariadb-13.0.2",
@@ -27828,7 +27828,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mautic/mautic",
@@ -27862,7 +27862,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "7.2.1",
@@ -27929,7 +27929,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rust-lang/mdBook",
@@ -27937,7 +27937,7 @@
         "homepage": "https://rust-lang.github.io/mdBook/",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 22172,
+        "stars": 22173,
         "forks": 1901,
         "topics": [],
         "archived": false,
@@ -27948,9 +27948,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.5.4",
@@ -28017,7 +28017,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "medusajs/medusa",
@@ -28050,7 +28050,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.21.1",
@@ -28242,7 +28242,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meltano/meltano",
@@ -28284,7 +28284,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.3.0",
@@ -28366,7 +28366,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "flash-with-wbuf-stack",
@@ -28397,7 +28397,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Ylianst/MeshCentral",
@@ -28425,7 +28425,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.2.6",
@@ -28499,7 +28499,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "metabase/metabase",
@@ -28539,7 +28539,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.63.18",
@@ -28655,7 +28655,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v7.2.1",
@@ -28722,7 +28722,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "milvus-io/milvus",
@@ -28762,7 +28762,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.2",
@@ -28836,7 +28836,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/mimir",
@@ -28864,7 +28864,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "mimir-3.2.1",
@@ -29031,7 +29031,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "miniflux/v2",
@@ -29063,7 +29063,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.3.3",
@@ -29356,7 +29356,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "9.7.7",
@@ -29423,7 +29423,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mobxjs/mobx",
@@ -29450,7 +29450,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "mobx-react-lite@5.1.0",
@@ -29545,7 +29545,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v12.0.2",
@@ -29878,7 +29878,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mysql/mysql-server",
@@ -29899,7 +29899,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "mysql-cluster-26.7.0",
@@ -29930,7 +29930,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "n8n-io/n8n",
@@ -29938,7 +29938,7 @@
         "homepage": "https://n8n.io",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 205871,
+        "stars": 205872,
         "forks": 60876,
         "topics": [
           "ai",
@@ -29966,13 +29966,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-22T09:24:21Z",
-        "pushedAt": "2026-09-24T17:51:39Z",
+        "pushedAt": "2026-09-24T18:14:03Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "n8n@2.40.6",
@@ -30041,7 +30041,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nats-io/nats-server",
@@ -30078,7 +30078,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.15.0",
@@ -30148,7 +30148,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "navidrome/navidrome",
@@ -30184,7 +30184,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.64.1",
@@ -30375,7 +30375,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.4.0",
@@ -30442,7 +30442,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "netbirdio/netbird",
@@ -30474,7 +30474,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.79.0",
@@ -30764,7 +30764,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "node-red/node-red",
@@ -30792,7 +30792,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "5.0.7",
@@ -30853,7 +30853,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sass/node-sass",
@@ -30880,7 +30880,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v9.0.0",
@@ -31130,7 +31130,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nushell/nushell",
@@ -31155,7 +31155,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "0.115.1",
@@ -31255,7 +31255,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-24T18:06:52Z",
+        "pushedAt": "2026-09-24T18:10:39Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -31328,7 +31328,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "obsproject/obs-studio",
@@ -31361,7 +31361,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "32.2.2",
@@ -31438,7 +31438,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "owncloud/ocis",
@@ -31469,7 +31469,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v8.2.0",
@@ -31540,7 +31540,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "odoo/odoo",
@@ -31567,9 +31567,9 @@
         "defaultBranch": "20.0"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "5.0.0-2-addons",
@@ -31740,9 +31740,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": null,
       "releases": [],
@@ -31782,7 +31782,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181614,
+        "stars": 181617,
         "forks": 17992,
         "topics": [
           "deepseek",
@@ -31809,7 +31809,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 89,
+        "stars": 92,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -32015,7 +32015,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ONLYOFFICE/DocumentServer",
@@ -32057,7 +32057,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v9.4.0",
@@ -32137,7 +32137,7 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 153041,
+        "stars": 153045,
         "forks": 22387,
         "topics": [
           "ai",
@@ -32164,7 +32164,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 120,
+        "stars": 124,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -32360,18 +32360,18 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209848,
+        "stars": 209847,
         "forks": 27722,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-30T20:08:00Z",
-        "pushedAt": "2026-09-24T18:00:31Z",
+        "pushedAt": "2026-09-24T18:14:51Z",
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 223,
+        "stars": 222,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -32440,7 +32440,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "oracle/opengrok",
@@ -32469,7 +32469,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.14.19",
@@ -32543,7 +32543,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openhab/openhab-core",
@@ -32570,7 +32570,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "ref-2.0.0.b1",
@@ -32614,7 +32614,7 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89077,
+        "stars": 89076,
         "forks": 11726,
         "topics": [
           "agent",
@@ -32635,7 +32635,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 96,
+        "stars": 95,
         "exact": false,
         "since": "2026-09-23T17:48:06.000Z"
       },
@@ -32714,7 +32714,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openobserve/openobserve",
@@ -32756,7 +32756,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.0.4",
@@ -32831,7 +32831,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opf/openproject",
@@ -32873,7 +32873,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v17.8.0",
@@ -32948,7 +32948,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opensearch-project/OpenSearch",
@@ -33075,7 +33075,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.8.0",
@@ -33174,13 +33174,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-05-09T19:42:55Z",
-        "pushedAt": "2026-09-24T16:10:50Z",
+        "pushedAt": "2026-09-24T18:13:40Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.161.0",
@@ -33344,7 +33344,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "OpenVoxProject/openvox",
@@ -33367,7 +33367,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "8.29.0",
@@ -33439,7 +33439,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "outline/outline",
@@ -33468,7 +33468,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.10.1",
@@ -33546,7 +33546,7 @@
         "homepage": "https://oxc.rs",
         "language": "Rust",
         "license": "MIT",
-        "stars": 22876,
+        "stars": 22875,
         "forks": 1316,
         "topics": [
           "compiler",
@@ -33565,7 +33565,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 25,
+        "stars": 24,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -33628,7 +33628,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pandas-dev/pandas",
@@ -33636,7 +33636,7 @@
         "homepage": "https://pandas.pydata.org",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 49793,
+        "stars": 49794,
         "forks": 20422,
         "topics": [
           "alignment",
@@ -33654,9 +33654,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.6",
@@ -33921,7 +33921,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.16.0",
@@ -33998,7 +33998,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "payloadcms/payload",
@@ -34006,7 +34006,7 @@
         "homepage": "https://payloadcms.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44925,
+        "stars": 44924,
         "forks": 4206,
         "topics": [
           "cms",
@@ -34033,13 +34033,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-01-05T18:49:45Z",
-        "pushedAt": "2026-09-24T17:56:52Z",
+        "pushedAt": "2026-09-24T18:14:17Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.90.2",
@@ -34049,6 +34049,13 @@
         "signed": false
       },
       "releases": [
+        {
+          "tag": "v4.0.0-canary.37",
+          "name": "default overrideAccess to false in the Local API (#17869) (744bfcf)",
+          "publishedAt": "2026-09-24T18:08:24Z",
+          "url": "https://github.com/payloadcms/payload/releases/tag/v4.0.0-canary.37",
+          "prerelease": true
+        },
         {
           "tag": "v3.90.2",
           "name": "await slugify func to match type (#18181) (3fad98e)",
@@ -34075,13 +34082,6 @@
           "name": "ui: add warning type to Banner (#17750) (6e5f386)",
           "publishedAt": "2026-09-10T14:52:28Z",
           "url": "https://github.com/payloadcms/payload/releases/tag/v3.89.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v3.88.0",
-          "name": "prevent multipart content-type backtracking (#17679) (a742140)",
-          "publishedAt": "2026-08-11T20:58:40Z",
-          "url": "https://github.com/payloadcms/payload/releases/tag/v3.88.0",
           "prerelease": false
         }
       ],
@@ -34240,7 +34240,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.0.0-M4",
@@ -34271,7 +34271,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "penpot/penpot",
@@ -34294,13 +34294,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-29T22:09:07Z",
-        "pushedAt": "2026-09-24T17:59:13Z",
+        "pushedAt": "2026-09-24T18:16:08Z",
         "defaultBranch": "develop"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.18.0",
@@ -34398,7 +34398,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.54.0",
@@ -34469,7 +34469,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pgvector/pgvector",
@@ -34491,9 +34491,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.8.6",
@@ -34524,7 +34524,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "photoprism/photoprism",
@@ -34554,7 +34554,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "260919-28c46a116",
@@ -34624,7 +34624,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pi-hole/pi-hole",
@@ -34657,7 +34657,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v6.4.3",
@@ -34799,7 +34799,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v7.6.1",
@@ -34887,7 +34887,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2026.8.0",
@@ -34959,7 +34959,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "prefix-dev/pixi",
@@ -34990,7 +34990,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.81.0",
@@ -35062,7 +35062,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "makeplane/plane",
@@ -35102,9 +35102,9 @@
         "defaultBranch": "preview"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.4.2",
@@ -35312,7 +35312,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 96632,
-        "forks": 6499,
+        "forks": 6500,
         "topics": [
           "automation",
           "chrome",
@@ -35334,7 +35334,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-11-15T18:32:42Z",
-        "pushedAt": "2026-09-24T18:07:05Z",
+        "pushedAt": "2026-09-24T18:13:42Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -35432,7 +35432,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T18:06:17Z",
+        "pushedAt": "2026-09-24T18:13:04Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -35505,7 +35505,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pocketbase/pocketbase",
@@ -35531,7 +35531,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.40.4",
@@ -35700,7 +35700,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "podman-desktop/podman-desktop",
@@ -35732,7 +35732,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.29.3",
@@ -35893,7 +35893,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pola-rs/polars",
@@ -35923,7 +35923,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "py-1.44.2",
@@ -35984,7 +35984,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "postcss/postcss",
@@ -36011,7 +36011,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "8.5.28",
@@ -36083,7 +36083,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "postgres/postgres",
@@ -36104,7 +36104,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "release-6-3",
@@ -36140,7 +36140,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "PostHog/posthog",
@@ -36171,13 +36171,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-23T22:46:58Z",
-        "pushedAt": "2026-09-24T18:06:54Z",
+        "pushedAt": "2026-09-24T18:16:07Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "desktop-v0.61.553",
@@ -36187,6 +36187,13 @@
         "signed": false
       },
       "releases": [
+        {
+          "tag": "agent-skills-v0.2013.0",
+          "name": "Agent skills agent-skills-v0.2013.0",
+          "publishedAt": "2026-09-24T18:08:59Z",
+          "url": "https://github.com/PostHog/posthog/releases/tag/agent-skills-v0.2013.0",
+          "prerelease": false
+        },
         {
           "tag": "agent-skills-v0.2012.0",
           "name": "Agent skills agent-skills-v0.2012.0",
@@ -36213,13 +36220,6 @@
           "name": "Agent skills agent-skills-v0.2010.0",
           "publishedAt": "2026-09-24T16:57:41Z",
           "url": "https://github.com/PostHog/posthog/releases/tag/agent-skills-v0.2010.0",
-          "prerelease": false
-        },
-        {
-          "tag": "agent-skills-v0.2009.0",
-          "name": "Agent skills agent-skills-v0.2009.0",
-          "publishedAt": "2026-09-24T16:52:40Z",
-          "url": "https://github.com/PostHog/posthog/releases/tag/agent-skills-v0.2009.0",
           "prerelease": false
         }
       ],
@@ -36328,7 +36328,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "PrefectHQ/prefect",
@@ -36362,9 +36362,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.8.6",
@@ -36431,7 +36431,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "PrestaShop/PrestaShop",
@@ -36461,7 +36461,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "9.1.5",
@@ -36670,7 +36670,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-24T18:06:00Z",
+        "pushedAt": "2026-09-24T18:15:36Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -36870,7 +36870,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.2.4",
@@ -36940,7 +36940,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pulsar-edit/pulsar",
@@ -36964,9 +36964,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.132.1",
@@ -37229,7 +37229,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "puppetlabs/puppet",
@@ -37250,7 +37250,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "7.34.0",
@@ -37342,7 +37342,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "browsers-v3.2.3",
@@ -37488,7 +37488,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.8.6",
@@ -37555,7 +37555,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pyinfra-dev/pyinfra",
@@ -37584,7 +37584,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.10.0",
@@ -37756,7 +37756,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-03-12T03:38:46Z",
-        "pushedAt": "2026-09-24T17:49:35Z",
+        "pushedAt": "2026-09-24T18:16:02Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -37829,7 +37829,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "qdrant/qdrant",
@@ -37837,7 +37837,7 @@
         "homepage": "https://qdrant.tech",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 34791,
+        "stars": 34792,
         "forks": 2694,
         "topics": [
           "ai-search",
@@ -37869,9 +37869,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.19.1",
@@ -37942,7 +37942,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "quay/quay",
@@ -37968,7 +37968,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.12.22",
@@ -38078,7 +38078,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "10.0.1",
@@ -38154,7 +38154,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "quickwit-oss/quickwit",
@@ -38180,13 +38180,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-13T22:45:40Z",
-        "pushedAt": "2026-09-24T17:56:43Z",
+        "pushedAt": "2026-09-24T18:09:41Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.9.1",
@@ -38262,7 +38262,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rancher-sandbox/rancher-desktop",
@@ -38283,13 +38283,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-10-23T17:20:58Z",
-        "pushedAt": "2026-09-24T17:20:02Z",
+        "pushedAt": "2026-09-24T18:11:55Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.24.0",
@@ -38356,7 +38356,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "getredash/redash",
@@ -38397,7 +38397,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v26.9.0",
@@ -38673,7 +38673,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "reduxjs/redux",
@@ -38696,7 +38696,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.0.1",
@@ -38949,7 +38949,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "remeda/remeda",
@@ -38975,7 +38975,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.50.0",
@@ -39036,7 +39036,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "request/request",
@@ -39057,7 +39057,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.88.1",
@@ -39195,7 +39195,7 @@
         "language": "Rust",
         "license": "Unlicense",
         "stars": 68573,
-        "forks": 3437,
+        "forks": 3440,
         "topics": [
           "cli",
           "command-line",
@@ -39322,7 +39322,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-24T18:06:58Z",
+        "pushedAt": "2026-09-24T18:13:13Z",
         "defaultBranch": "develop"
       },
       "trend": {
@@ -39438,7 +39438,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.2.11",
@@ -39520,7 +39520,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.63.5",
@@ -39613,7 +39613,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-09-24T16:52:42Z",
+        "pushedAt": "2026-09-24T18:12:34Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -39686,7 +39686,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rq/rq",
@@ -39719,7 +39719,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.12",
@@ -39818,7 +39818,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-04-01T08:45:30Z",
-        "pushedAt": "2026-09-24T10:55:54Z",
+        "pushedAt": "2026-09-24T18:09:27Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -39967,7 +39967,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/ruff",
@@ -39976,7 +39976,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 49767,
-        "forks": 2436,
+        "forks": 2437,
         "topics": [
           "linter",
           "pep8",
@@ -39994,7 +39994,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-24T18:08:09Z",
+        "pushedAt": "2026-09-24T18:15:51Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -40072,7 +40072,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rustdesk/rustdesk",
@@ -40111,9 +40111,9 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.4.9",
@@ -40292,7 +40292,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "saleor/saleor",
@@ -40332,7 +40332,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.23.36",
@@ -40411,7 +40411,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "saltstack/salt",
@@ -40450,7 +40450,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3008.1-2",
@@ -40530,7 +40530,7 @@
         "homepage": "http://seafile.com/",
         "language": "C",
         "license": "Other",
-        "stars": 15275,
+        "stars": 15274,
         "forks": 1679,
         "topics": [
           "cloud-storage",
@@ -40551,7 +40551,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v9.0.5",
@@ -40659,7 +40659,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-07-14T16:41:37Z",
-        "pushedAt": "2026-09-24T08:13:07Z",
+        "pushedAt": "2026-09-24T18:15:01Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -40948,13 +40948,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T18:08:20Z",
+        "pushedAt": "2026-09-24T18:16:10Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "26.9.0",
@@ -41058,7 +41058,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v6.37.8",
@@ -41125,7 +41125,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "shlinkio/shlink",
@@ -41133,7 +41133,7 @@
         "homepage": "https://shlink.io",
         "language": "PHP",
         "license": "MIT",
-        "stars": 5303,
+        "stars": 5302,
         "forks": 419,
         "topics": [
           "laminas",
@@ -41152,7 +41152,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.1.7",
@@ -41226,7 +41226,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "siyuan-note/siyuan",
@@ -41257,7 +41257,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.8.5",
@@ -41324,7 +41324,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "skim-rs/skim",
@@ -41349,7 +41349,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.7.1",
@@ -41416,7 +41416,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/solr",
@@ -41446,7 +41446,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "releases/solr/10.0.0",
@@ -41508,7 +41508,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.13.3",
@@ -41575,7 +41575,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sqitchers/sqitch",
@@ -41608,9 +41608,9 @@
         "defaultBranch": "develop"
       },
       "trend": {
-        "stars": 1,
+        "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.6.1",
@@ -41682,7 +41682,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "stalwartlabs/stalwart",
@@ -41714,7 +41714,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.16.23",
@@ -41885,7 +41885,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "StarRocks/starrocks",
@@ -41927,7 +41927,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "4.1.3",
@@ -42194,7 +42194,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "strapi/strapi",
@@ -42202,7 +42202,7 @@
         "homepage": "https://strapi.io",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 73229,
+        "stars": 73228,
         "forks": 9881,
         "topics": [
           "api",
@@ -42235,7 +42235,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.55.1",
@@ -42302,7 +42302,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "SuiteCRM/SuiteCRM",
@@ -42341,7 +42341,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v7.15.2",
@@ -42408,7 +42408,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "supabase/supabase",
@@ -42417,7 +42417,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 110732,
-        "forks": 14680,
+        "forks": 14685,
         "topics": [
           "ai",
           "alternative",
@@ -42449,7 +42449,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.26.08",
@@ -42528,7 +42528,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/superset",
@@ -42568,7 +42568,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "6.1.0",
@@ -42643,7 +42643,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "element-hq/synapse",
@@ -42664,7 +42664,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.161.0",
@@ -42764,7 +42764,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.1.5",
@@ -42960,7 +42960,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.16.0",
@@ -43061,7 +43061,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v3.0.3",
@@ -43227,7 +43227,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "thanos-io/thanos",
@@ -43263,7 +43263,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.42.4",
@@ -43382,7 +43382,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jonas/tig",
@@ -43408,7 +43408,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "tig-2.6.1",
@@ -43510,7 +43510,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.30.1",
@@ -43580,7 +43580,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "tldraw/tldraw",
@@ -43608,13 +43608,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-05-09T11:48:37Z",
-        "pushedAt": "2026-09-24T16:48:26Z",
+        "pushedAt": "2026-09-24T18:12:45Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.4.2",
@@ -43876,7 +43876,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elasticdog/transcrypt",
@@ -43903,7 +43903,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.3.2",
@@ -43995,7 +43995,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v10.9.2",
@@ -44058,7 +44058,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "palantir/tslint",
@@ -44086,7 +44086,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "6.1.3",
@@ -44254,7 +44254,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "twentyhq/twenty",
@@ -44287,13 +44287,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-12-01T13:04:40Z",
-        "pushedAt": "2026-09-24T18:06:19Z",
+        "pushedAt": "2026-09-24T18:14:28Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "sdk/v2.41.0",
@@ -44451,7 +44451,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "TykTechnologies/tyk",
@@ -44493,7 +44493,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.14.0",
@@ -44590,7 +44590,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.1.1",
@@ -44819,7 +44819,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v7.8.5",
@@ -44899,7 +44899,7 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38992,
+        "stars": 38991,
         "forks": 8112,
         "topics": [
           "analytics",
@@ -44920,7 +44920,7 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 38,
+        "stars": 37,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -44992,7 +44992,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nodejs/undici",
@@ -45017,7 +45017,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v8.11.2",
@@ -45084,7 +45084,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Unleash/unleash",
@@ -45125,7 +45125,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v8.2.0",
@@ -45200,7 +45200,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "upptime/upptime",
@@ -45228,7 +45228,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.0.0",
@@ -45523,7 +45523,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "open-circle/valibot",
@@ -45559,7 +45559,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.5.0",
@@ -45839,7 +45839,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68108,
+        "stars": 68110,
         "forks": 3244,
         "topics": [
           "bitwarden",
@@ -45857,7 +45857,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 83,
+        "stars": 85,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -46046,7 +46046,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "tsenart/vegeta",
@@ -46072,7 +46072,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v12.13.0",
@@ -46149,7 +46149,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "VictoriaMetrics/VictoriaLogs",
@@ -46180,7 +46180,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.52.0",
@@ -46374,7 +46374,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "go-vikunja/vikunja",
@@ -46404,7 +46404,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.6.0",
@@ -46827,7 +46827,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vllm-project/vllm",
@@ -46835,7 +46835,7 @@
         "homepage": "https://vllm.ai",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 92629,
+        "stars": 92631,
         "forks": 22621,
         "topics": [
           "amd",
@@ -46867,9 +46867,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 2,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.30.0",
@@ -46938,7 +46938,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/vscode",
@@ -46946,8 +46946,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192860,
-        "forks": 43112,
+        "stars": 192859,
+        "forks": 43113,
         "topics": [
           "editor",
           "electron",
@@ -46959,11 +46959,11 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T18:05:10Z",
+        "pushedAt": "2026-09-24T18:15:55Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 62,
+        "stars": 61,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -47131,7 +47131,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "wallabag/wallabag",
@@ -47160,7 +47160,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "2.6.14",
@@ -47227,7 +47227,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "weaviate/weaviate",
@@ -47269,7 +47269,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.39.6",
@@ -47339,7 +47339,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "webdriverio/webdriverio",
@@ -47373,7 +47373,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v9.32.0",
@@ -47539,7 +47539,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "wekan/wekan",
@@ -47570,7 +47570,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v11.98",
@@ -47742,7 +47742,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "requarks/wiki",
@@ -47771,7 +47771,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.5.315",
@@ -47846,7 +47846,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "windmill-labs/windmill",
@@ -47875,7 +47875,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.817.0",
@@ -47946,7 +47946,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "woocommerce/woocommerce",
@@ -47976,7 +47976,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "11.1.2",
@@ -48263,7 +48263,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mountain-loop/yaak",
@@ -48289,13 +48289,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-16T04:37:02Z",
-        "pushedAt": "2026-09-24T18:02:26Z",
+        "pushedAt": "2026-09-24T18:10:45Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2026.8.1",
@@ -48455,7 +48455,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "YOURLS/YOURLS",
@@ -48486,7 +48486,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "1.10.6",
@@ -48581,13 +48581,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T18:08:05Z",
+        "pushedAt": "2026-09-24T18:14:29Z",
         "defaultBranch": "master"
       },
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2026.1.2.0",
@@ -48652,7 +48652,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jquense/yup",
@@ -48673,7 +48673,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.0.0",
@@ -48734,7 +48734,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rupa/z",
@@ -48755,7 +48755,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.12",
@@ -48808,7 +48808,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zammad/zammad",
@@ -48844,7 +48844,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "7.3.0-alpha",
@@ -48895,7 +48895,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zed-industries/zed",
@@ -48903,7 +48903,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90826,
+        "stars": 90827,
         "forks": 10759,
         "topics": [
           "gpui",
@@ -48919,7 +48919,7 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 99,
+        "stars": 100,
         "exact": false,
         "since": "2026-09-22T21:41:50.000Z"
       },
@@ -49080,7 +49080,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zincsearch/zincsearch",
@@ -49110,7 +49110,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v1.0.0-beta3",
@@ -49201,7 +49201,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "3.6.1",
@@ -49277,7 +49277,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zitadel/zitadel",
@@ -49316,7 +49316,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.19.1",
@@ -49392,7 +49392,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "colinhacks/zod",
@@ -49419,7 +49419,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v4.6.5",
@@ -49486,7 +49486,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sourcegraph/zoekt",
@@ -49494,7 +49494,7 @@
         "homepage": null,
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 1925,
+        "stars": 1926,
         "forks": 243,
         "topics": [
           "repo-type-backend"
@@ -49507,9 +49507,9 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": null,
       "releases": [],
@@ -49646,7 +49646,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "project-zot/zot",
@@ -49675,7 +49675,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v2.1.21",
@@ -49751,7 +49751,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ajeetdsouza/zoxide",
@@ -49793,7 +49793,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v0.10.0",
@@ -49854,7 +49854,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zsh-users/zsh",
@@ -49875,7 +49875,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "zsh-5.9.2",
@@ -50025,7 +50025,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:06:34.000Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pmndrs/zustand",
@@ -50054,7 +50054,7 @@
       "trend": {
         "stars": 0,
         "exact": false,
-        "since": "2026-09-24T18:06:34.000Z"
+        "since": "2026-09-24T18:14:14.000Z"
       },
       "release": {
         "tag": "v5.0.15",
