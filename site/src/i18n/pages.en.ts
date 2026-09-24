@@ -32,7 +32,7 @@ export const pages = {
       releaseMiddle: "installed, or runs",
       releaseAfter: "in its release workflow.",
       commit:
-        "When anything changed, the workflow commits the new catalog and a new build of this site goes out. A tool whose repository GitHub no longer returns, because it was deleted or made private, is left out of the catalog.",
+        "When anything changed, the workflow commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the refresh publishes nothing and fails, so a person looks: a tool leaves the catalog only through a pull request that removes its entry.",
     },
     marks: {
       heading: "Marks",

@@ -35,7 +35,7 @@ export const pages: Pages = {
       releaseMiddle: "ou lance",
       releaseAfter: "dans son workflow de release.",
       commit:
-        "Dès que quelque chose a changé, le workflow commite le nouveau catalogue et une nouvelle version de ce site est publiée. Un outil dont GitHub ne renvoie plus le dépôt, parce qu'il a été supprimé ou rendu privé, est exclu du catalogue.",
+        "Dès que quelque chose a changé, le workflow commite le nouveau catalogue et une nouvelle version de ce site est publiée. Si GitHub ne renvoie plus le dépôt d'un outil listé, parce qu'il a été supprimé ou rendu privé, la mise à jour ne publie rien et échoue, pour qu'une personne regarde : un outil ne quitte le catalogue que par une pull request qui retire son entrée.",
     },
     marks: {
       heading: "Marques",

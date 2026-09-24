@@ -34,7 +34,7 @@ export const pages: Pages = {
       releaseMiddle: "o ejecuta",
       releaseAfter: "en su workflow de release.",
       commit:
-        "Cuando algo ha cambiado, el flujo de trabajo confirma el nuevo catálogo y sale una nueva compilación de este sitio. Una herramienta cuyo repositorio GitHub ya no devuelve, porque se ha borrado o se ha hecho privado, queda fuera del catálogo.",
+        "Cuando algo ha cambiado, el flujo de trabajo confirma el nuevo catálogo y sale una nueva compilación de este sitio. Si GitHub deja de devolver el repositorio de una herramienta listada, porque se ha borrado o se ha hecho privado, la actualización no publica nada y falla, para que una persona lo revise: una herramienta solo sale del catálogo mediante un pull request que retira su entrada.",
     },
     marks: {
       heading: "Marcas",
