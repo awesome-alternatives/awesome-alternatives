@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.52.0] - 2026-09-24
+
+### Features
+
+- feat: link each replacement to the replacing project's official migration guide (#153)
+
 ## [0.51.1] - 2026-09-24
 
 ### Bug Fixes

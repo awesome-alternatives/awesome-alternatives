@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.13.0] - 2026-09-24
+
+### Features
+
+- feat: link each replacement to the replacing project's official migration guide (#153)
+
 ## [0.12.0] - 2026-09-23
 
 ### Features
