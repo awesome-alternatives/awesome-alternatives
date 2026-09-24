@@ -1,0 +1,11 @@
+name: Manticore Search
+repository: https://github.com/manticoresoftware/manticoresearch
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Full-text search over SQL and an HTTP JSON API, with part of Elasticsearch's API.
+  - tool: algolia
+    fit: partial
+    note: Self-hosted full-text search.
+deploy: [container, package]

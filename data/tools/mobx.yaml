@@ -1,0 +1,7 @@
+name: MobX
+repository: https://github.com/mobxjs/mobx
+category: react-state
+replaces:
+  - tool: redux
+    fit: full
+    note: Observable state with automatic tracking, instead of actions and reducers.

@@ -1,0 +1,7 @@
+name: skim
+repository: https://github.com/skim-rs/skim
+category: fuzzy-finder
+replaces:
+  - tool: fzf
+    fit: full
+    note: Accepts most of fzf's options and key bindings, and runs as a Rust library too.

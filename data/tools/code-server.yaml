@@ -1,0 +1,8 @@
+name: code-server
+repository: https://github.com/coder/code-server
+category: cloud-ide
+replaces:
+  - tool: github-codespaces
+    fit: partial
+    note: VS Code in the browser on one machine you run, without managed per-repository environments.
+deploy: [container, helm, binary, package]

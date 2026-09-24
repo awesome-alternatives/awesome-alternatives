@@ -1,0 +1,11 @@
+name: linkding
+repository: https://github.com/sissbruecker/linkding
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: full
+    note: A minimal bookmark manager with tags and archiving.
+  - tool: pocket
+    fit: partial
+    note: Bookmarks with read-later flags and snapshots.
+deploy: [container]

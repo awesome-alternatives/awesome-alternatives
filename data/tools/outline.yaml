@@ -1,0 +1,12 @@
+name: Outline
+repository: https://github.com/outline/outline
+category: knowledge-base
+terms: source-available
+replaces:
+  - tool: notion
+    fit: partial
+    note: Team wiki with real-time Markdown editing, without databases.
+  - tool: confluence
+    fit: full
+    note: Team wiki with collections, search and permissions.
+deploy: [container]

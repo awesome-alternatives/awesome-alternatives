@@ -1,0 +1,11 @@
+name: LimeSurvey
+repository: https://github.com/LimeSurvey/LimeSurvey
+category: forms-surveys
+terms: open
+replaces:
+  - tool: typeform
+    fit: partial
+    note: Surveys with conditions, quotas and many question types, one question at a time or all at once.
+  - tool: google-forms
+    fit: full
+    note: Surveys and forms with exports to CSV, SPSS and R.

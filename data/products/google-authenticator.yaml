@@ -1,0 +1,5 @@
+name: Google Authenticator
+homepage: https://safety.google/authentication/
+vendor: Google
+category: authenticator-app
+description: Google's app for TOTP and HOTP codes.

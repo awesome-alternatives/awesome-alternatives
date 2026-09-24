@@ -8,4 +8,7 @@ replaces:
   - tool: datadog
     fit: partial
     note: Dashboards and alerting over metrics, logs and traces stored in your own backends.
+  - tool: splunk
+    fit: partial
+    note: Dashboards and alerts over logs stored in Loki or other backends.
 deploy: [container, helm, binary, package]

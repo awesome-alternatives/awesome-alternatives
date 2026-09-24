@@ -1,0 +1,8 @@
+name: Kestra
+repository: https://github.com/kestra-io/kestra
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: full
+    note: Workflows declared in YAML, with tasks in any language and event triggers.
+deploy: [container, helm]

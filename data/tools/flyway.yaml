@@ -1,0 +1,7 @@
+name: Flyway
+repository: https://github.com/flyway/flyway
+category: database-migrations
+replaces:
+  - tool: liquibase
+    fit: full
+    note: Versioned SQL migrations applied in order, with the core under Apache 2.0.

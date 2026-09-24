@@ -1,0 +1,7 @@
+name: Dagster
+repository: https://github.com/dagster-io/dagster
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: full
+    note: Orchestration around data assets, with lineage and a local UI.

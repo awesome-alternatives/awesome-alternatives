@@ -1,0 +1,7 @@
+name: k9s
+repository: https://github.com/derailed/k9s
+category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: partial
+    note: A terminal UI rather than a desktop app.

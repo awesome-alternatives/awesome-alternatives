@@ -1,0 +1,13 @@
+name: lazygit
+repository: https://github.com/jesseduffield/lazygit
+category: git-client
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: Staging, rebasing, cherry-picking and branches in a terminal UI.
+  - tool: sourcetree
+    fit: partial
+    note: Everyday git operations in a terminal UI.
+  - tool: tig
+    fit: full
+    note: Browses history like tig and also stages, commits and rebases.

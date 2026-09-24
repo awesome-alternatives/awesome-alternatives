@@ -1,0 +1,7 @@
+name: es-toolkit
+repository: https://github.com/toss/es-toolkit
+category: javascript-utility
+replaces:
+  - tool: lodash
+    fit: drop-in
+    note: The es-toolkit/compat entry point mirrors Lodash's API, with smaller and faster functions.

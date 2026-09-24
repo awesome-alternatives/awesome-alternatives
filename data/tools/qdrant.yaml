@@ -1,0 +1,8 @@
+name: Qdrant
+repository: https://github.com/qdrant/qdrant
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: full
+    note: Vector search with payload filtering, quantisation and hybrid search.
+deploy: [container, helm, binary]

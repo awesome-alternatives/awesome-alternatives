@@ -1,0 +1,11 @@
+name: Docmost
+repository: https://github.com/docmost/docmost
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: full
+    note: Spaces, real-time collaborative pages and permissions.
+  - tool: notion
+    fit: partial
+    note: Collaborative pages, without databases.
+deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: Home Assistant
+repository: https://github.com/home-assistant/core
+category: home-automation
+replaces:
+  - tool: smartthings
+    fit: full
+    note: Local control of thousands of device integrations, with automations and dashboards.

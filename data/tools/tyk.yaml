@@ -1,0 +1,8 @@
+name: Tyk
+repository: https://github.com/TykTechnologies/tyk
+category: api-gateway
+terms: open-core
+replaces:
+  - tool: kong
+    fit: full
+    note: API gateway in Go with auth, quotas and plugins.

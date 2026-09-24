@@ -1,0 +1,11 @@
+name: Grafana Mimir
+repository: https://github.com/grafana/mimir
+category: metrics
+replaces:
+  - tool: prometheus
+    fit: partial
+    note: Horizontally scalable, multi-tenant long-term storage for Prometheus metrics.
+  - tool: datadog
+    fit: partial
+    note: Metrics storage only, usually paired with Grafana.
+deploy: [container, helm, binary]

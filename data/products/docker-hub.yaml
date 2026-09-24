@@ -1,0 +1,5 @@
+name: Docker Hub
+homepage: https://hub.docker.com
+vendor: Docker
+category: container-registry
+description: Docker's hosted container image registry.

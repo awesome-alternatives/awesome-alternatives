@@ -1,0 +1,10 @@
+name: Payload
+repository: https://github.com/payloadcms/payload
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: full
+    note: Content modelled in TypeScript config, with an admin panel and REST, GraphQL and local APIs.
+  - tool: strapi
+    fit: full
+    note: Config-as-code CMS that runs inside a Next.js app.

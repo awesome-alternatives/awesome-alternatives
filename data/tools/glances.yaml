@@ -1,0 +1,8 @@
+name: Glances
+repository: https://github.com/nicolargo/glances
+category: system-monitor
+terms: open
+replaces:
+  - tool: htop
+    fit: full
+    note: Processes and system stats, with a web UI, a REST API and exports.

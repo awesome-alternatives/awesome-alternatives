@@ -1,0 +1,11 @@
+name: vLLM
+repository: https://github.com/vllm-project/vllm
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Serves open-weight models behind an OpenAI-compatible API, tuned for GPU throughput.
+  - tool: claude
+    fit: partial
+    note: Serves open-weight models behind an OpenAI-compatible API.
+deploy: [container]

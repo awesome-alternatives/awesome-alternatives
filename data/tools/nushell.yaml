@@ -1,0 +1,7 @@
+name: Nushell
+repository: https://github.com/nushell/nushell
+category: shell
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Pipelines of structured data rather than text, with its own language.

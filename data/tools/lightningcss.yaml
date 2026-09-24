@@ -1,0 +1,7 @@
+name: Lightning CSS
+repository: https://github.com/parcel-bundler/lightningcss
+category: css-processing
+replaces:
+  - tool: postcss
+    fit: partial
+    note: Prefixing, syntax lowering, nesting and minification built in, without PostCSS plugins.

@@ -1,0 +1,11 @@
+name: Jellyfin
+repository: https://github.com/jellyfin/jellyfin
+category: media-server
+replaces:
+  - tool: plex
+    fit: full
+    note: Streams your films, series, music and live TV to its clients, with no account or paid tier.
+  - tool: emby
+    fit: full
+    note: Started as a fork of Emby when it went closed source.
+deploy: [container]

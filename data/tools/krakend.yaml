@@ -1,0 +1,8 @@
+name: KrakenD
+repository: https://github.com/krakend/krakend-ce
+category: api-gateway
+replaces:
+  - tool: kong
+    fit: partial
+    note: Stateless gateway configured from a file, focused on aggregating backends.
+deploy: [container, binary, package]

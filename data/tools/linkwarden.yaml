@@ -1,0 +1,11 @@
+name: Linkwarden
+repository: https://github.com/linkwarden/linkwarden
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: full
+    note: Collaborative bookmark collections with page archives.
+  - tool: pocket
+    fit: full
+    note: Saves pages with a reader view.
+deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: YOURLS
+repository: https://github.com/YOURLS/YOURLS
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: full
+    note: PHP short link service with stats and plugins.

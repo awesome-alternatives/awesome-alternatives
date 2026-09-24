@@ -1,0 +1,10 @@
+name: EspoCRM
+repository: https://github.com/espocrm/espocrm
+category: crm
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Accounts, leads, opportunities, cases and workflows.
+  - tool: hubspot
+    fit: partial
+    note: Contacts, deals and email campaigns.

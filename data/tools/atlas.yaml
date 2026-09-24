@@ -1,0 +1,10 @@
+name: Atlas
+repository: https://github.com/ariga/atlas
+category: database-migrations
+replaces:
+  - tool: liquibase
+    fit: full
+    note: Declarative schema-as-code or versioned migrations, with linting.
+  - tool: flyway
+    fit: full
+    note: Versioned migrations plus a declarative mode that plans the diff.

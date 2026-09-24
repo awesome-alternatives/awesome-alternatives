@@ -1,0 +1,11 @@
+name: AdGuard Home
+repository: https://github.com/AdguardTeam/AdGuardHome
+category: dns-sinkhole
+replaces:
+  - tool: pi-hole
+    fit: full
+    note: DNS blocking with DNS-over-HTTPS, DNS-over-TLS and DHCP in one binary.
+  - tool: nextdns
+    fit: full
+    note: Encrypted DNS, filtering lists and per-client rules on your own server.
+deploy: [container, binary]

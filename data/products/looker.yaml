@@ -1,0 +1,5 @@
+name: Looker
+homepage: https://cloud.google.com/looker
+vendor: Google
+category: business-intelligence
+description: Business intelligence platform built on the LookML semantic modelling language.

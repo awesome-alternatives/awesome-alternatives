@@ -1,0 +1,8 @@
+name: PhotoPrism
+repository: https://github.com/photoprism/photoprism
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Browsing, tagging and face recognition over an existing folder of photos; uploads from phones through WebDAV or apps.
+deploy: [container, compose]

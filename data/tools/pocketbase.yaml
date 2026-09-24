@@ -1,0 +1,8 @@
+name: PocketBase
+repository: https://github.com/pocketbase/pocketbase
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: partial
+    note: Auth, a SQLite database with realtime subscriptions and file storage in one binary.
+deploy: [binary]

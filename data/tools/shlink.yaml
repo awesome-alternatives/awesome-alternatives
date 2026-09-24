@@ -1,0 +1,8 @@
+name: Shlink
+repository: https://github.com/shlinkio/shlink
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: full
+    note: Short links on your domains with visit stats, a REST API and a separate web client.
+deploy: [container]

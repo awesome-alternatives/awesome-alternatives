@@ -1,0 +1,7 @@
+name: WeKan
+repository: https://github.com/wekan/wekan
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban boards with lists, cards, checklists and a Trello importer.

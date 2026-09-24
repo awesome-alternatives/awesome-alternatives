@@ -15,6 +15,9 @@ replaces:
   - tool: bitbucket
     fit: full
     note: Repositories, pull requests and CI on your own server.
+  - tool: gogs
+    fit: full
+    note: Began as a fork of Gogs, and adds Actions, packages and more.
 capabilities:
   ci:
     docs: https://docs.gitea.com/usage/actions/overview/

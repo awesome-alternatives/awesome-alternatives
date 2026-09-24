@@ -1,0 +1,5 @@
+name: Twilio Authy
+homepage: https://www.authy.com
+vendor: Twilio
+category: authenticator-app
+description: Two-factor authentication app for TOTP codes, with backups tied to a phone number.

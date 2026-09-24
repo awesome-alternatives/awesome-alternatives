@@ -1,0 +1,7 @@
+name: Sqitch
+repository: https://github.com/sqitchers/sqitch
+category: database-migrations
+replaces:
+  - tool: liquibase
+    fit: full
+    note: SQL change scripts with explicit dependencies instead of version numbers.

@@ -1,0 +1,12 @@
+name: Formbricks
+repository: https://github.com/formbricks/formbricks
+category: forms-surveys
+terms: open-core
+replaces:
+  - tool: typeform
+    fit: full
+    note: Link surveys, plus in-app and website surveys.
+  - tool: google-forms
+    fit: full
+    note: Forms and surveys with logic, on your own server.
+deploy: [container]

@@ -1,0 +1,4 @@
+name: MySQL
+repository: https://github.com/mysql/mysql-server
+category: relational-database
+terms: open

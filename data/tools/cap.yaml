@@ -1,0 +1,8 @@
+name: Cap
+repository: https://github.com/CapSoftware/Cap
+category: screen-recording
+terms: open
+replaces:
+  - tool: loom
+    fit: full
+    note: Record screen and camera, then share a link, with self-hostable storage.

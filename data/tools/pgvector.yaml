@@ -1,0 +1,8 @@
+name: pgvector
+repository: https://github.com/pgvector/pgvector
+category: vector-database
+terms: open
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Vector similarity search inside PostgreSQL, next to your relational data.

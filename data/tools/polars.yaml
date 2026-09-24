@@ -1,0 +1,7 @@
+name: Polars
+repository: https://github.com/pola-rs/polars
+category: dataframe
+replaces:
+  - tool: pandas
+    fit: full
+    note: Multi-threaded DataFrames with lazy queries, in Rust with Python bindings, and a different API.

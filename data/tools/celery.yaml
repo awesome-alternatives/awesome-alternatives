@@ -1,0 +1,4 @@
+name: Celery
+repository: https://github.com/celery/celery
+category: python-task-queue
+terms: open

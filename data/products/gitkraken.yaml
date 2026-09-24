@@ -1,0 +1,5 @@
+name: GitKraken
+homepage: https://www.gitkraken.com
+vendor: GitKraken
+category: git-client
+description: Desktop git client with a commit graph and integrations with hosting services.

@@ -1,0 +1,7 @@
+name: Got
+repository: https://github.com/sindresorhus/got
+category: javascript-http-client
+replaces:
+  - tool: request
+    fit: full
+    note: Promises, streams, retries and hooks, for Node.js only.

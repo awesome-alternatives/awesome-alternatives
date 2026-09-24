@@ -1,3 +1,7 @@
 name: Visual Studio Code
 repository: https://github.com/microsoft/vscode
 category: text-editor
+replaces:
+  - tool: atom
+    fit: full
+    note: An Electron editor with extensions and git built in.

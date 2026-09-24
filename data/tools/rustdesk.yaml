@@ -1,0 +1,10 @@
+name: RustDesk
+repository: https://github.com/rustdesk/rustdesk
+category: remote-desktop
+replaces:
+  - tool: teamviewer
+    fit: full
+    note: Remote control across desktop and mobile, with a relay server you can host yourself.
+  - tool: anydesk
+    fit: full
+    note: Remote control with self-hostable ID and relay servers.

@@ -1,0 +1,5 @@
+name: DeepL
+homepage: https://www.deepl.com
+vendor: DeepL
+category: machine-translation
+description: Hosted machine translation for text and documents, with an API.

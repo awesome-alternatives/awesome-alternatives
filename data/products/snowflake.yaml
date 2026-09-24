@@ -1,0 +1,5 @@
+name: Snowflake
+homepage: https://www.snowflake.com
+vendor: Snowflake
+category: analytical-database
+description: Hosted data warehouse with separate storage and compute.

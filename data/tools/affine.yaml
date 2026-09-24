@@ -1,0 +1,11 @@
+name: AFFiNE
+repository: https://github.com/toeverything/AFFiNE
+category: knowledge-base
+terms: open-core
+replaces:
+  - tool: notion
+    fit: full
+    note: Documents, databases and a whiteboard in one workspace, local-first or synced.
+  - tool: miro
+    fit: partial
+    note: Includes an edgeless whiteboard mode.

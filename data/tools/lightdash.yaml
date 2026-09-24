@@ -1,0 +1,8 @@
+name: Lightdash
+repository: https://github.com/lightdash/lightdash
+category: business-intelligence
+terms: open-core
+replaces:
+  - tool: looker
+    fit: full
+    note: Metrics and dimensions defined in dbt instead of LookML.

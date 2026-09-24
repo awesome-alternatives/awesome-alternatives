@@ -1,0 +1,7 @@
+name: Dramatiq
+repository: https://github.com/Bogdanp/dramatiq
+category: python-task-queue
+replaces:
+  - tool: celery
+    fit: full
+    note: Task processing over RabbitMQ or Redis, with retries and middleware.

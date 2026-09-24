@@ -1,0 +1,10 @@
+name: ERPNext
+repository: https://github.com/frappe/erpnext
+category: erp
+replaces:
+  - tool: netsuite
+    fit: full
+    note: Accounting, inventory, manufacturing, HR and CRM, fully open source.
+  - tool: odoo
+    fit: full
+    note: A comparable module set without a paid edition.

@@ -1,0 +1,8 @@
+name: Airbyte
+repository: https://github.com/airbytehq/airbyte
+category: data-integration
+terms: source-available
+replaces:
+  - tool: fivetran
+    fit: full
+    note: Hundreds of connectors syncing sources into warehouses, and a builder for new ones.

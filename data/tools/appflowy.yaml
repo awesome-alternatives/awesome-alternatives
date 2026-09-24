@@ -1,0 +1,7 @@
+name: AppFlowy
+repository: https://github.com/AppFlowy-IO/AppFlowy
+category: knowledge-base
+replaces:
+  - tool: notion
+    fit: full
+    note: Documents, databases, kanban boards and calendars, local-first or self-hosted.

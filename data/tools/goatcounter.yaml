@@ -1,0 +1,9 @@
+name: GoatCounter
+repository: https://github.com/arp242/goatcounter
+category: web-analytics
+terms: open
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Page views and referrers without cookies or personal data.
+deploy: [binary]

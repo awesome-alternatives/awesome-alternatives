@@ -1,0 +1,7 @@
+name: Dart Sass
+repository: https://github.com/sass/dart-sass
+category: css-processing
+replaces:
+  - tool: node-sass
+    fit: drop-in
+    note: The primary Sass implementation, published on npm as sass with a compatible JS API.

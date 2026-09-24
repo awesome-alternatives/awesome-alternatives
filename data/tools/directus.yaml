@@ -1,0 +1,9 @@
+name: Directus
+repository: https://github.com/directus/directus
+category: headless-cms
+terms: source-available
+replaces:
+  - tool: contentful
+    fit: full
+    note: Wraps any SQL database with REST and GraphQL APIs and an admin app.
+deploy: [container]

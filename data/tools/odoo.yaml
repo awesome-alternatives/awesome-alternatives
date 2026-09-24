@@ -1,0 +1,8 @@
+name: Odoo
+repository: https://github.com/odoo/odoo
+category: erp
+terms: open
+replaces:
+  - tool: netsuite
+    fit: full
+    note: Accounting, inventory, sales, manufacturing and HR modules; some apps are in the Enterprise edition only.

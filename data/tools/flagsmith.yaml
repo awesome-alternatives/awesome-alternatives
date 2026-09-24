@@ -1,0 +1,8 @@
+name: Flagsmith
+repository: https://github.com/Flagsmith/flagsmith
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: full
+    note: Feature flags, remote config and segments.
+deploy: [container, helm]

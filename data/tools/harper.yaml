@@ -1,0 +1,7 @@
+name: Harper
+repository: https://github.com/Automattic/harper
+category: writing-assistant
+replaces:
+  - tool: grammarly
+    fit: partial
+    note: English grammar checking offline, in the editor and the browser.

@@ -1,0 +1,10 @@
+name: Incus
+repository: https://github.com/lxc/incus
+category: virtualization
+replaces:
+  - tool: lxd
+    fit: full
+    note: A community fork of LXD, with the lxd-to-incus tool to move existing installs.
+  - tool: vmware-vsphere
+    fit: partial
+    note: System containers and virtual machines on clustered hosts, without vSphere's management suite.

@@ -1,0 +1,9 @@
+name: ZincSearch
+repository: https://github.com/zincsearch/zincsearch
+category: search-engine
+terms: open
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Accepts documents through a subset of Elasticsearch's ingestion API, in a single binary.
+deploy: [container, binary]

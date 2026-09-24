@@ -1,0 +1,8 @@
+name: Mautic
+repository: https://github.com/mautic/mautic
+category: newsletter
+terms: open
+replaces:
+  - tool: mailchimp
+    fit: full
+    note: Email campaigns, segments, landing pages and automation.

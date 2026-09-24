@@ -1,0 +1,5 @@
+name: Google Translate
+homepage: https://translate.google.com
+vendor: Google
+category: machine-translation
+description: Google's hosted machine translation, with an API on Google Cloud.

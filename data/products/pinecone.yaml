@@ -1,0 +1,5 @@
+name: Pinecone
+homepage: https://www.pinecone.io
+vendor: Pinecone Systems
+category: vector-database
+description: Hosted vector database for similarity search.

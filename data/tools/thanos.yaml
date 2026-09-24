@@ -1,0 +1,11 @@
+name: Thanos
+repository: https://github.com/thanos-io/thanos
+category: metrics
+replaces:
+  - tool: prometheus
+    fit: partial
+    note: Adds long-term storage in object storage and a global query view on top of Prometheus.
+  - tool: datadog
+    fit: partial
+    note: Long-term metrics storage only.
+deploy: [container, binary]

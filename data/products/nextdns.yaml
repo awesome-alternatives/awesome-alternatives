@@ -1,0 +1,5 @@
+name: NextDNS
+homepage: https://nextdns.io
+vendor: NextDNS
+category: dns-sinkhole
+description: Hosted DNS resolver that blocks ads, trackers and malicious domains.

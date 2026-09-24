@@ -1,0 +1,7 @@
+name: HeyForm
+repository: https://github.com/heyform/heyform
+category: forms-surveys
+replaces:
+  - tool: typeform
+    fit: full
+    note: Conversational forms with logic and integrations.

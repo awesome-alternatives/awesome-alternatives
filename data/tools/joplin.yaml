@@ -1,0 +1,11 @@
+name: Joplin
+repository: https://github.com/laurent22/joplin
+category: note-taking
+terms: open-core
+replaces:
+  - tool: evernote
+    fit: full
+    note: Notes and notebooks with web clipper, sync through several back ends, and an Evernote importer.
+  - tool: obsidian
+    fit: partial
+    note: Markdown notes with end-to-end encrypted sync.

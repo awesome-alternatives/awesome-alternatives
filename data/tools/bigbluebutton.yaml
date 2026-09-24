@@ -1,0 +1,7 @@
+name: BigBlueButton
+repository: https://github.com/bigbluebutton/bigbluebutton
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Virtual classroom with whiteboard, breakout rooms and recordings, built for teaching.

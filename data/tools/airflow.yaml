@@ -1,0 +1,3 @@
+name: Apache Airflow
+repository: https://github.com/apache/airflow
+category: workflow-orchestration

@@ -1,0 +1,5 @@
+name: OrbStack
+homepage: https://orbstack.dev
+vendor: Orbital Labs
+category: container-desktop
+description: macOS app for running Docker containers, Kubernetes and Linux machines.

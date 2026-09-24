@@ -11,3 +11,6 @@ replaces:
   - tool: pylint
     fit: partial
     note: "Covers part of Pylint's rules."
+  - tool: isort
+    fit: full
+    note: Sorts imports with the I rules, close to isort with profile=black.

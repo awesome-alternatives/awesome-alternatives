@@ -1,0 +1,7 @@
+name: fx
+repository: https://github.com/antonmedv/fx
+category: json-processor
+replaces:
+  - tool: jq
+    fit: partial
+    note: Interactive JSON viewer, with JavaScript expressions instead of the jq language.

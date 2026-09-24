@@ -12,4 +12,7 @@ replaces:
   - tool: sublime-text
     fit: full
     note: A fast native editor with language servers and collaboration built in.
+  - tool: atom
+    fit: full
+    note: A native editor from Atom's original authors.
 terms: open

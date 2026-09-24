@@ -1,0 +1,12 @@
+name: Twenty
+repository: https://github.com/twentyhq/twenty
+category: crm
+terms: open-core
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Companies, people, opportunities and custom objects.
+  - tool: hubspot
+    fit: partial
+    note: CRM records and workflows, without marketing hubs.
+deploy: [container, compose]

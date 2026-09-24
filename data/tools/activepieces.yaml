@@ -1,0 +1,12 @@
+name: Activepieces
+repository: https://github.com/activepieces/activepieces
+category: workflow-automation
+terms: open-core
+replaces:
+  - tool: zapier
+    fit: full
+    note: Visual flows with a library of integrations written in TypeScript.
+  - tool: n8n
+    fit: full
+    note: Visual flows with its community edition under MIT.
+deploy: [container, compose]

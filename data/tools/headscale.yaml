@@ -1,0 +1,8 @@
+name: Headscale
+repository: https://github.com/juanfont/headscale
+category: mesh-vpn
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: A self-hosted Tailscale control server, used with the official Tailscale clients, for a single tailnet.
+deploy: [container, binary, package]

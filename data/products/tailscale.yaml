@@ -1,0 +1,5 @@
+name: Tailscale
+homepage: https://tailscale.com
+vendor: Tailscale
+category: mesh-vpn
+description: Mesh VPN built on WireGuard, coordinated by Tailscale's hosted control server.

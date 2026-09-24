@@ -1,0 +1,10 @@
+name: Excalidraw
+repository: https://github.com/excalidraw/excalidraw
+category: diagramming
+replaces:
+  - tool: miro
+    fit: partial
+    note: A hand-drawn style whiteboard with live collaboration.
+  - tool: lucidchart
+    fit: partial
+    note: Sketched diagrams rather than precise ones.

@@ -1,0 +1,11 @@
+name: Synapse
+repository: https://github.com/element-hq/synapse
+category: team-chat
+replaces:
+  - tool: slack
+    fit: partial
+    note: A Matrix homeserver; teams chat through a client such as Element, and can federate with other servers.
+  - tool: microsoft-teams
+    fit: partial
+    note: Chat only, through a Matrix client.
+deploy: [container]

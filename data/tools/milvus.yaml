@@ -1,0 +1,8 @@
+name: Milvus
+repository: https://github.com/milvus-io/milvus
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: full
+    note: Distributed vector database for billions of vectors, or embedded as Milvus Lite.
+deploy: [container]

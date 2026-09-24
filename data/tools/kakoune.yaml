@@ -1,0 +1,7 @@
+name: Kakoune
+repository: https://github.com/mawww/kakoune
+category: text-editor
+replaces:
+  - tool: vim
+    fit: partial
+    note: Modal editing that selects first and acts second, with different keys.

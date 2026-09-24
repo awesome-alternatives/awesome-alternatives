@@ -1,0 +1,5 @@
+name: Sourcegraph
+homepage: https://sourcegraph.com
+vendor: Sourcegraph
+category: code-search-server
+description: Code search and navigation across repositories, closed source since 2024.

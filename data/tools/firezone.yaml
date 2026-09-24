@@ -1,0 +1,7 @@
+name: Firezone
+repository: https://github.com/firezone/firezone
+category: mesh-vpn
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: WireGuard-based access to resources with its own clients and gateways.

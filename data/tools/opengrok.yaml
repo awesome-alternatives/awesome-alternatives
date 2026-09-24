@@ -1,0 +1,9 @@
+name: OpenGrok
+repository: https://github.com/oracle/opengrok
+category: code-search-server
+terms: open
+replaces:
+  - tool: sourcegraph
+    fit: partial
+    note: Code search and cross-references across many repositories and VCS types.
+deploy: [container]

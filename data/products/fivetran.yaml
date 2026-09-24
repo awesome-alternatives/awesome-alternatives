@@ -1,0 +1,5 @@
+name: Fivetran
+homepage: https://www.fivetran.com
+vendor: Fivetran
+category: data-integration
+description: Hosted connectors that sync data from applications and databases into warehouses.

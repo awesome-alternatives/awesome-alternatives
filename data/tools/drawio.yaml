@@ -1,0 +1,10 @@
+name: draw.io
+repository: https://github.com/jgraph/drawio
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: full
+    note: Flowcharts, network and UML diagrams in the browser or desktop, with a Lucidchart importer.
+  - tool: miro
+    fit: partial
+    note: Diagrams and whiteboards, without Miro's workshop templates.

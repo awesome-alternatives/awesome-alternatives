@@ -1,0 +1,3 @@
+name: Argo CD
+repository: https://github.com/argoproj/argo-cd
+category: gitops

@@ -1,0 +1,8 @@
+name: PrestaShop
+repository: https://github.com/PrestaShop/PrestaShop
+category: e-commerce
+terms: open
+replaces:
+  - tool: shopify
+    fit: full
+    note: A complete self-hosted store with modules and themes.

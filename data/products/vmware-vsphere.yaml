@@ -1,0 +1,5 @@
+name: VMware vSphere
+homepage: https://www.vmware.com/products/cloud-infrastructure/vsphere
+vendor: Broadcom
+category: virtualization
+description: Server virtualization platform made of the ESXi hypervisor and vCenter management.

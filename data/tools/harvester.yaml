@@ -1,0 +1,7 @@
+name: Harvester
+repository: https://github.com/harvester/harvester
+category: virtualization
+replaces:
+  - tool: vmware-vsphere
+    fit: full
+    note: Hyperconverged virtual machines on Kubernetes with KubeVirt and Longhorn storage.

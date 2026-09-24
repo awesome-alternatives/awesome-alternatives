@@ -1,0 +1,7 @@
+name: Istio
+repository: https://github.com/istio/istio
+category: service-mesh
+replaces:
+  - tool: linkerd
+    fit: full
+    note: mTLS, traffic management and telemetry, with sidecar or ambient modes built on Envoy.

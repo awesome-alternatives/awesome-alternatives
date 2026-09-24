@@ -1,0 +1,7 @@
+name: undici
+repository: https://github.com/nodejs/undici
+category: javascript-http-client
+replaces:
+  - tool: request
+    fit: full
+    note: The HTTP client behind Node.js's fetch, with pooling and pipelining.

@@ -1,0 +1,10 @@
+name: Zod
+repository: https://github.com/colinhacks/zod
+category: javascript-validation
+replaces:
+  - tool: yup
+    fit: full
+    note: Schemas that infer their TypeScript types, with a similar chaining API.
+  - tool: joi
+    fit: full
+    note: Schema validation with static type inference, for Node.js and browsers.

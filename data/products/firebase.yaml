@@ -1,0 +1,5 @@
+name: Firebase
+homepage: https://firebase.google.com
+vendor: Google
+category: backend-as-a-service
+description: Google's hosted app backend with auth, databases, storage, functions and hosting.

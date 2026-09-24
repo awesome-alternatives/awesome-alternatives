@@ -1,0 +1,11 @@
+name: Zammad
+repository: https://github.com/zammad/zammad
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: full
+    note: Tickets from email, chat, phone and social channels, with a knowledge base and a Zendesk importer.
+  - tool: freshdesk
+    fit: full
+    note: Ticketing across channels, with a Freshdesk importer.
+deploy: [container, compose, helm]

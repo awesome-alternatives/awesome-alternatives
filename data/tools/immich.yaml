@@ -1,0 +1,8 @@
+name: Immich
+repository: https://github.com/immich-app/immich
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: full
+    note: Mobile backup, timeline, albums, sharing, face recognition and search, on your own server.
+deploy: [container, compose]

@@ -1,0 +1,11 @@
+name: mailcow
+repository: https://github.com/mailcow/mailcow-dockerized
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: Mail, calendars and contacts with SOGo webmail; no office suite.
+  - tool: microsoft-365
+    fit: partial
+    note: Mail, calendars and contacts; ActiveSync for mobile clients.
+deploy: [compose]

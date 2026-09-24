@@ -1,0 +1,8 @@
+name: Navidrome
+repository: https://github.com/navidrome/navidrome
+category: media-server
+replaces:
+  - tool: plex
+    fit: partial
+    note: Music only, streamed to Subsonic-compatible clients.
+deploy: [container, binary, package]

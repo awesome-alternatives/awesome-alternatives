@@ -1,0 +1,8 @@
+name: FreshRSS
+repository: https://github.com/FreshRSS/FreshRSS
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: A self-hosted feed reader with OPML import and the Google Reader and Fever APIs for mobile apps.
+deploy: [container]

@@ -1,0 +1,11 @@
+name: openHAB
+repository: https://github.com/openhab/openhab-core
+category: home-automation
+terms: open
+replaces:
+  - tool: smartthings
+    fit: full
+    note: Vendor-neutral home automation with rules and local control.
+  - tool: home-assistant
+    fit: full
+    note: Runs on the JVM, with rules in several languages.

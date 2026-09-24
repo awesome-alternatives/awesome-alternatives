@@ -1,0 +1,8 @@
+name: HAProxy
+repository: https://github.com/haproxy/haproxy
+category: reverse-proxy
+terms: open
+replaces:
+  - tool: nginx
+    fit: partial
+    note: TCP and HTTP load balancing and TLS termination, without serving static files.

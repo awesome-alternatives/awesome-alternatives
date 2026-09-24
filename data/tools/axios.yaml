@@ -1,0 +1,7 @@
+name: axios
+repository: https://github.com/axios/axios
+category: javascript-http-client
+replaces:
+  - tool: request
+    fit: full
+    note: Promise-based client for Node.js and browsers, with interceptors.

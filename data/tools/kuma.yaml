@@ -1,0 +1,7 @@
+name: Kuma
+repository: https://github.com/kumahq/kuma
+category: service-mesh
+replaces:
+  - tool: linkerd
+    fit: full
+    note: Envoy-based mesh for Kubernetes and VMs, with multi-zone support.

@@ -1,0 +1,11 @@
+name: Huly
+repository: https://github.com/hcengineering/platform
+category: project-management
+terms: open
+replaces:
+  - tool: jira
+    fit: partial
+    note: Issue tracking alongside chat, documents and a calendar.
+  - tool: linear
+    fit: full
+    note: Issues, sprints and GitHub sync.

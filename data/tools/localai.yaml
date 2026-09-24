@@ -1,0 +1,11 @@
+name: LocalAI
+repository: https://github.com/mudler/LocalAI
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: OpenAI-compatible API for local text, image and audio models, on CPU or GPU.
+  - tool: claude
+    fit: partial
+    note: Runs open-weight models behind an OpenAI-compatible API.
+deploy: [container, binary]

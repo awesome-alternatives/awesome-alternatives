@@ -1,0 +1,14 @@
+name: OpenObserve
+repository: https://github.com/openobserve/openobserve
+category: log-storage
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Logs, metrics and traces on object storage, with an Elasticsearch-compatible ingestion API.
+  - tool: splunk
+    fit: partial
+    note: Log search, dashboards and alerts.
+  - tool: datadog
+    fit: partial
+    note: Logs, metrics, traces and dashboards in one service you run yourself.
+deploy: [container, helm]

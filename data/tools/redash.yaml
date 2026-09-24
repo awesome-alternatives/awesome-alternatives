@@ -1,0 +1,7 @@
+name: Redash
+repository: https://github.com/getredash/redash
+category: business-intelligence
+replaces:
+  - tool: tableau
+    fit: partial
+    note: SQL queries turned into charts and dashboards.

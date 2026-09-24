@@ -1,0 +1,7 @@
+name: Vegeta
+repository: https://github.com/tsenart/vegeta
+category: load-testing
+replaces:
+  - tool: jmeter
+    fit: partial
+    note: HTTP load at a constant request rate, from the command line.

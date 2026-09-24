@@ -1,0 +1,10 @@
+name: Jitsi Meet
+repository: https://github.com/jitsi/jitsi-meet
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: full
+    note: Video meetings in the browser and mobile apps, with no account needed to join.
+  - tool: microsoft-teams
+    fit: partial
+    note: Video meetings only.

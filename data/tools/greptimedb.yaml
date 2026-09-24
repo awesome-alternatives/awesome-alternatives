@@ -1,0 +1,8 @@
+name: GreptimeDB
+repository: https://github.com/GreptimeTeam/greptimedb
+category: time-series-database
+replaces:
+  - tool: influxdb
+    fit: full
+    note: Accepts InfluxDB line protocol, queried with SQL or PromQL.
+deploy: [container, helm, binary]

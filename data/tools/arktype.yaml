@@ -1,0 +1,7 @@
+name: ArkType
+repository: https://github.com/arktypeio/arktype
+category: javascript-validation
+replaces:
+  - tool: zod
+    fit: full
+    note: Schemas written in TypeScript's own syntax, with type inference.

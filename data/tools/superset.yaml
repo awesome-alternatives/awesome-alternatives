@@ -1,0 +1,14 @@
+name: Apache Superset
+repository: https://github.com/apache/superset
+category: business-intelligence
+replaces:
+  - tool: tableau
+    fit: full
+    note: Charts, dashboards and a SQL editor over most SQL databases.
+  - tool: power-bi
+    fit: partial
+    note: Dashboards and exploration, without a desktop authoring app.
+  - tool: looker
+    fit: partial
+    note: A semantic layer of datasets and metrics, lighter than LookML.
+deploy: [container, helm]

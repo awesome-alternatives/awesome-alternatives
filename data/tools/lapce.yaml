@@ -1,0 +1,7 @@
+name: Lapce
+repository: https://github.com/lapce/lapce
+category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: Native editor with language servers and a plugin system of its own, without VS Code's extensions.

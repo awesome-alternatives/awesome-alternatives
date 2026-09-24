@@ -1,0 +1,8 @@
+name: Penpot
+repository: https://github.com/penpot/penpot
+category: design-tool
+replaces:
+  - tool: figma
+    fit: full
+    note: Browser-based design and prototyping with components and CSS-based layout.
+deploy: [container, compose, helm]

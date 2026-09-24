@@ -1,0 +1,7 @@
+name: btop
+repository: https://github.com/aristocratos/btop
+category: system-monitor
+replaces:
+  - tool: htop
+    fit: full
+    note: Processes plus CPU, memory, disk, network and GPU graphs.

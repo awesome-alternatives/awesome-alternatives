@@ -1,0 +1,11 @@
+name: OpenProject
+repository: https://github.com/opf/openproject
+category: project-management
+replaces:
+  - tool: jira
+    fit: full
+    note: Work packages, agile boards, Gantt charts and time tracking.
+  - tool: asana
+    fit: partial
+    note: Tasks, boards and timelines.
+deploy: [container, helm]

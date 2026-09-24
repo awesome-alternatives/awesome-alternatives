@@ -1,0 +1,15 @@
+name: authentik
+repository: https://github.com/goauthentik/authentik
+category: identity-provider
+terms: open-core
+replaces:
+  - tool: okta
+    fit: full
+    note: SSO over OpenID Connect, SAML, LDAP and a forward-auth proxy, with visual flows.
+  - tool: auth0
+    fit: full
+    note: Login flows, social login and OpenID Connect for your applications.
+  - tool: keycloak
+    fit: full
+    note: Flows and policies edited in a web UI, plus an outpost proxy for apps without SSO.
+deploy: [container, compose, helm]

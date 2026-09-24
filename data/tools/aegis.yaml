@@ -1,0 +1,10 @@
+name: Aegis
+repository: https://github.com/beemdevelopment/Aegis
+category: authenticator-app
+replaces:
+  - tool: authy
+    fit: full
+    note: TOTP and HOTP codes in an encrypted vault on Android, with exports and an Authy importer.
+  - tool: google-authenticator
+    fit: full
+    note: Encrypted vault, backups and importers for Google Authenticator.

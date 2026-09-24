@@ -1,0 +1,7 @@
+name: Prefect
+repository: https://github.com/PrefectHQ/prefect
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: full
+    note: Workflows as plain Python functions with decorators, without DAG files.

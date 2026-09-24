@@ -1,0 +1,11 @@
+name: ClickHouse
+repository: https://github.com/ClickHouse/ClickHouse
+category: analytical-database
+replaces:
+  - tool: snowflake
+    fit: full
+    note: Columnar SQL analytics on your own servers or object storage.
+  - tool: bigquery
+    fit: full
+    note: Columnar SQL analytics at scale.
+deploy: [container, package]

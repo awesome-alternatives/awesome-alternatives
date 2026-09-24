@@ -1,0 +1,8 @@
+name: Huginn
+repository: https://github.com/huginn/huginn
+category: workflow-automation
+replaces:
+  - tool: zapier
+    fit: partial
+    note: Agents that watch the web and act on events, configured in JSON.
+deploy: [container]

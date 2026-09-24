@@ -5,4 +5,7 @@ replaces:
   - tool: elasticsearch
     fit: full
     note: Fork of Elasticsearch 7.10.2, APIs have diverged since.
+  - tool: splunk
+    fit: partial
+    note: Log search and analytics with OpenSearch Dashboards.
 deploy: [container, compose, helm, package]

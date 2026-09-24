@@ -1,0 +1,10 @@
+name: LibreOffice
+repository: https://github.com/LibreOffice/core
+category: office-suite
+replaces:
+  - tool: microsoft-365
+    fit: partial
+    note: Desktop word processor, spreadsheet and presentations that open Office formats, without cloud services.
+  - tool: google-docs
+    fit: partial
+    note: Desktop apps rather than browser-based co-editing.

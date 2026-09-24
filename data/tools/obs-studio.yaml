@@ -1,0 +1,7 @@
+name: OBS Studio
+repository: https://github.com/obsproject/obs-studio
+category: screen-recording
+replaces:
+  - tool: loom
+    fit: partial
+    note: Records and streams, without instant sharing links.

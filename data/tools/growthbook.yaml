@@ -1,0 +1,9 @@
+name: GrowthBook
+repository: https://github.com/growthbook/growthbook
+category: feature-flags
+terms: open-core
+replaces:
+  - tool: launchdarkly
+    fit: full
+    note: Feature flags with A/B testing analysed from your own data warehouse.
+deploy: [container]

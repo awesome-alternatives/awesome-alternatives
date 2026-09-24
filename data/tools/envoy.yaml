@@ -1,0 +1,8 @@
+name: Envoy
+repository: https://github.com/envoyproxy/envoy
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: Proxy and load balancer configured through an API, without serving static files.
+deploy: [container]

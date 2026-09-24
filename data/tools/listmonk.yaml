@@ -1,0 +1,8 @@
+name: listmonk
+repository: https://github.com/knadh/listmonk
+category: newsletter
+replaces:
+  - tool: mailchimp
+    fit: partial
+    note: Mailing lists, campaigns and templates sent through your own SMTP servers, without a CRM.
+deploy: [container, binary]
