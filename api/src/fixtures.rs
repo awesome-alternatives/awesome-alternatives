@@ -1,4 +1,20 @@
 use crate::catalog::{Fit, Replacement, RepoFacts, Terms, Tool};
+use crate::refresh::{self, Refresh};
+
+pub fn refresh_off() -> Refresh {
+    Refresh::new(
+        refresh::Settings {
+            webhook_secret: None,
+            oidc_audience: refresh::oidc::DEFAULT_AUDIENCE.into(),
+            oidc_jwks_url: "http://127.0.0.1:9".into(),
+            cooldown: refresh::COOLDOWN,
+            dispatch: None,
+        },
+        reqwest::Client::new(),
+        "http://127.0.0.1:9",
+    )
+    .unwrap()
+}
 
 pub fn tool(
     slug: &str,

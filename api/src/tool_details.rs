@@ -147,6 +147,7 @@ mod tests {
             Details::new(upstream, CACHE_BYTES, Arc::new(Shared::disabled())),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
             false,
+            crate::fixtures::refresh_off(),
         );
         router(state).layer(MockConnectInfo(SocketAddr::from(([127, 0, 0, 1], 4000))))
     }

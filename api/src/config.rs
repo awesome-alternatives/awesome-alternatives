@@ -7,6 +7,7 @@ use std::time::Duration;
 use crate::cache;
 use crate::details;
 use crate::jev;
+use crate::refresh::{self, dispatch, oidc};
 use crate::upstream;
 
 const DEFAULT_CATALOG: &str = "https://raw.githubusercontent.com/awesome-alternatives/awesome-alternatives/main/generated/catalog.json";
@@ -30,6 +31,7 @@ pub struct Config {
     pub scorecard_api: String,
     pub details_cache_bytes: u64,
     pub valkey: Option<cache::Settings>,
+    pub refresh: refresh::Settings,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -59,6 +61,7 @@ impl Config {
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
             valkey: valkey()?,
+            refresh: refresh_settings()?,
         })
     }
 }
@@ -85,6 +88,31 @@ fn valkey() -> Result<Option<cache::Settings>, ConfigError> {
             )?),
         },
     }))
+}
+
+fn refresh_settings() -> Result<refresh::Settings, ConfigError> {
+    Ok(refresh::Settings {
+        webhook_secret: text("GITHUB_WEBHOOK_SECRET"),
+        oidc_audience: text("OIDC_AUDIENCE").unwrap_or_else(|| oidc::DEFAULT_AUDIENCE.into()),
+        oidc_jwks_url: text("OIDC_JWKS_URL").unwrap_or_else(|| oidc::GITHUB_JWKS.into()),
+        cooldown: Duration::from_secs(parsed(
+            "REFRESH_COOLDOWN_SECS",
+            &refresh::COOLDOWN.as_secs().to_string(),
+        )?),
+        dispatch: dispatch_app(),
+    })
+}
+
+fn dispatch_app() -> Option<dispatch::Settings> {
+    let (app_id, private_key) = text("DISPATCH_APP_ID").zip(text("DISPATCH_PRIVATE_KEY"))?;
+    Some(dispatch::Settings {
+        app_id,
+        private_key,
+        repository: text("DISPATCH_REPOSITORY")
+            .unwrap_or_else(|| dispatch::DEFAULT_REPOSITORY.into()),
+        workflow: text("DISPATCH_WORKFLOW").unwrap_or_else(|| dispatch::DEFAULT_WORKFLOW.into()),
+        reference: text("DISPATCH_REF").unwrap_or_else(|| dispatch::DEFAULT_REF.into()),
+    })
 }
 
 fn text(name: &str) -> Option<String> {
