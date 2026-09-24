@@ -72,6 +72,8 @@ jobs:
         env:
           SLUG: ${{ matrix.slug }}
           GITHUB_TOKEN: ${{ steps.app.outputs.token }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: entry-${{ matrix.slug }}

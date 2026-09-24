@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
 import { createGitHub } from "./lib/github.ts";
@@ -20,7 +21,7 @@ if (!tool) {
 }
 
 const gh = createGitHub(process.env.GITHUB_TOKEN);
-const enricher = await createEnricher(root, gh, catalog.tools, new Date());
+const enricher = await createEnricher(root, gh, installationsFromEnv(process.env), catalog.tools, new Date());
 const enriched = await enricher.enrich(tool);
 const [owner = null] = enriched ? Object.values(await fetchOwners(gh, [enriched])) : [];
 const entry: RefreshedEntry = { slug, tool: enriched, owner };

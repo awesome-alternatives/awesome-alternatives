@@ -30,6 +30,10 @@ export const pages: Pages = {
       ],
       maintainerFileBefore: "le fichier mainteneur décrit sous",
       maintainerFileLink: "vérifié",
+      releaseBefore: "Entre deux passages nocturnes, une release publiée met à jour son outil en quelques minutes quand le dépôt a installé",
+      releaseApp: "l'app GitHub awesome-alternatives",
+      releaseMiddle: "ou lance",
+      releaseAfter: "dans son workflow de release.",
       commit:
         "Dès que quelque chose a changé, le workflow commite le nouveau catalogue et une nouvelle version de ce site est publiée. Un outil dont GitHub ne renvoie plus le dépôt, parce qu'il a été supprimé ou rendu privé, est exclu du catalogue.",
     },
@@ -45,6 +49,9 @@ export const pages: Pages = {
         fileAfter: "à la racine de sa branche par défaut, avec",
         slugAfter:
           "renseigné sur cette entrée. Seule une personne disposant d'un accès en écriture au dépôt peut l'ajouter, si bien que la marque dit que ses mainteneurs assument l'entrée. La mise à jour lit ce fichier chaque nuit.",
+        appBefore: "La marque est aussi posée quand",
+        appLink: "l'app GitHub awesome-alternatives",
+        appAfter: "est installée sur le dépôt, ce qui demande d'en être administrateur.",
       },
       archived: {
         term: "archivé",

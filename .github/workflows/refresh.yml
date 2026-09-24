@@ -51,6 +51,8 @@ jobs:
       - run: pnpm refresh
         env:
           GITHUB_TOKEN: ${{ steps.app.outputs.token }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Keep the refreshed catalog aside
         run: |
           mkdir -p "$RUNNER_TEMP/refreshed/generated"

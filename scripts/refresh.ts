@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
+import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
 import { Etags } from "./lib/etags.ts";
@@ -14,7 +15,7 @@ const etagsPath = join(root, ".cache/github-etags.json");
 const etags = await readFile(etagsPath, "utf8").then(Etags.parse, () => Etags.empty());
 const gh = createGitHub(process.env.GITHUB_TOKEN, fetch, etags);
 const now = new Date();
-const enricher = await createEnricher(root, gh, catalog.tools, now);
+const enricher = await createEnricher(root, gh, installationsFromEnv(process.env), catalog.tools, now);
 
 const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool));
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
