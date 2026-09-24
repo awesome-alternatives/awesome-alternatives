@@ -11,7 +11,7 @@ use crate::catalog::Tool;
 use crate::embedding::{Embedder, Vector};
 use crate::filters::Filters;
 use crate::interpret;
-use crate::jev::JevClient;
+use crate::jev_budget::MeteredJev;
 use crate::lexical;
 use crate::qualifiers::{self, Unchecked};
 use crate::state::Loaded;
@@ -48,7 +48,7 @@ impl Interpretation {
 }
 
 pub struct Search {
-    jev: Option<JevClient>,
+    jev: Option<MeteredJev>,
     embedder: Option<Arc<dyn Embedder>>,
     shared: Arc<Shared>,
     cache: Cache<String, Interpretation>,
@@ -57,7 +57,7 @@ pub struct Search {
 
 impl Search {
     pub fn new(
-        jev: Option<JevClient>,
+        jev: Option<MeteredJev>,
         embedder: Option<Arc<dyn Embedder>>,
         shared: Arc<Shared>,
     ) -> Self {
@@ -165,7 +165,7 @@ impl Search {
     }
 
     async fn ask_jev(&self, query: &str, vocabulary: &Vocabulary) -> Option<Filters> {
-        let jev = self.jev.as_ref()?;
+        let jev = self.jev.as_ref()?.admitted()?;
         match jev
             .system_one(query, &interpret::questions(query, vocabulary))
             .await
@@ -205,12 +205,21 @@ fn key(revision: &str, normalized: &str) -> String {
 
 #[cfg(test)]
 mod tests {
+    use std::num::NonZeroU32;
+    use std::sync::atomic::{AtomicUsize, Ordering};
+
+    use axum::routing::post;
+    use axum::{Json, Router};
+    use serde_json::json;
+
     use super::*;
     use crate::cache::fake::recording;
     use crate::cache::{SEARCH_TTL, Ttl, fake};
     use crate::catalog::{Catalog, Fit};
     use crate::embedding::fake::{Broken, Words};
     use crate::fixtures::tool;
+    use crate::jev::JevClient;
+    use crate::jev_budget::Limits;
 
     fn catalog() -> Catalog {
         let mut semantic_release = tool("semantic-release", "JavaScript", "MIT", &[], 1);
@@ -381,6 +390,109 @@ mod tests {
         let read = search.interpret("semantic-release in rust", &loaded).await;
         assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
         assert!(read.relevance.is_none());
+    }
+
+    struct MockJev {
+        base: String,
+        calls: Arc<AtomicUsize>,
+    }
+
+    async fn mock_jev() -> MockJev {
+        let calls = Arc::new(AtomicUsize::new(0));
+        let counted = Arc::clone(&calls);
+        let router = Router::new().route(
+            "/v1/systemone",
+            post(move || async move {
+                counted.fetch_add(1, Ordering::SeqCst);
+                Json(json!({
+                    "answers": {
+                        "target": { "type": "choice", "choice": "semantic-release", "confidence": 0.9 }
+                    }
+                }))
+            }),
+        );
+        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+        let addr = listener.local_addr().unwrap();
+        tokio::spawn(async move { axum::serve(listener, router).await.unwrap() });
+        MockJev {
+            base: format!("http://{addr}"),
+            calls,
+        }
+    }
+
+    fn metered(jev: &MockJev, per_minute: u32, per_day: u32) -> (Search, Loaded) {
+        let embedder: Arc<dyn Embedder> = Arc::new(Words);
+        let loaded = Loaded::new(catalog(), Some(embedder.as_ref()));
+        let client = JevClient::new(
+            reqwest::Client::new(),
+            &jev.base,
+            "k".into(),
+            "jev-latest".into(),
+        );
+        let limits = Limits {
+            per_minute: NonZeroU32::new(per_minute).unwrap(),
+            per_day,
+        };
+        let search = Search::new(
+            Some(MeteredJev::new(client, limits)),
+            Some(embedder),
+            Arc::new(Shared::disabled()),
+        );
+        (search, loaded)
+    }
+
+    fn slugs<'a>(read: &Interpretation, loaded: &'a Loaded) -> Vec<&'a str> {
+        read.select(&loaded.catalog.tools)
+            .into_iter()
+            .map(|t| t.slug.as_str())
+            .collect()
+    }
+
+    #[tokio::test]
+    async fn a_query_the_local_steps_cannot_place_goes_to_jev_within_budget() {
+        let jev = mock_jev().await;
+        let (search, loaded) = metered(&jev, 10, 10);
+        let read = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(read.interpreted_by, Interpreter::Jev);
+        assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
+        assert_eq!(jev.calls.load(Ordering::SeqCst), 1);
+    }
+
+    async fn assert_second_query_stays_local(per_minute: u32, per_day: u32) {
+        let jev = mock_jev().await;
+        let (search, loaded) = metered(&jev, per_minute, per_day);
+        let first = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(first.interpreted_by, Interpreter::Jev);
+
+        let second = search
+            .interpret("customizable changelog generator", &loaded)
+            .await;
+        assert_eq!(second.interpreted_by, Interpreter::Local);
+        assert_eq!(second.filters.replaces, None);
+        assert_eq!(slugs(&second, &loaded), ["git-cliff"]);
+        assert_eq!(jev.calls.load(Ordering::SeqCst), 1);
+    }
+
+    #[tokio::test]
+    async fn past_the_process_wide_quota_search_answers_locally_without_calling_jev() {
+        assert_second_query_stays_local(1, 100).await;
+    }
+
+    #[tokio::test]
+    async fn past_the_daily_jev_budget_search_answers_locally_without_calling_jev() {
+        assert_second_query_stays_local(100, 1).await;
+    }
+
+    #[tokio::test]
+    async fn a_zero_daily_budget_keeps_keywords_and_the_local_model_but_never_calls_jev() {
+        let jev = mock_jev().await;
+        let (search, loaded) = metered(&jev, 100, 0);
+        let named = search.interpret("semantic-release in rust", &loaded).await;
+        assert_eq!(named.filters.replaces.as_deref(), Some("semantic-release"));
+        let described = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(described.interpreted_by, Interpreter::Local);
+        assert_eq!(slugs(&described, &loaded), ["git-cliff"]);
+        assert_eq!(jev.calls.load(Ordering::SeqCst), 0);
     }
 
     fn real() -> Loaded {

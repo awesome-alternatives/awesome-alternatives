@@ -7,6 +7,7 @@ use std::time::Duration;
 use crate::cache;
 use crate::details;
 use crate::jev;
+use crate::jev_budget;
 use crate::limits::{self, Limits};
 use crate::refresh::{self, dispatch, oidc};
 use crate::upstream;
@@ -17,6 +18,7 @@ pub struct Jev {
     pub api_key: String,
     pub base_url: String,
     pub model: String,
+    pub limits: jev_budget::Limits,
 }
 
 pub struct Config {
@@ -54,11 +56,7 @@ impl Config {
             details_per_minute: parsed("DETAILS_PER_MINUTE", "30")?,
             trust_proxy: parsed("TRUST_PROXY", "false")?,
             allowed_origins: list("ALLOWED_ORIGINS"),
-            jev: text("TYPESAFE_API_KEY").map(|api_key| Jev {
-                api_key,
-                base_url: text("TYPESAFE_BASE_URL").unwrap_or_else(|| jev::DEFAULT_BASE_URL.into()),
-                model: text("TYPESAFE_MODEL").unwrap_or_else(|| "jev-latest".into()),
-            }),
+            jev: jev()?,
             github_api: text("GITHUB_API_URL").unwrap_or_else(|| upstream::GITHUB_API.into()),
             github_token: text("GITHUB_TOKEN"),
             scorecard_api: text("SCORECARD_API_URL")
@@ -69,6 +67,21 @@ impl Config {
             limits: limits()?,
         })
     }
+}
+
+fn jev() -> Result<Option<Jev>, ConfigError> {
+    let Some(api_key) = text("TYPESAFE_API_KEY") else {
+        return Ok(None);
+    };
+    Ok(Some(Jev {
+        api_key,
+        base_url: text("TYPESAFE_BASE_URL").unwrap_or_else(|| jev::DEFAULT_BASE_URL.into()),
+        model: text("TYPESAFE_MODEL").unwrap_or_else(|| "jev-latest".into()),
+        limits: jev_budget::Limits {
+            per_minute: parsed("JEV_CALLS_PER_MINUTE", "30")?,
+            per_day: parsed("JEV_CALLS_PER_DAY", "2000")?,
+        },
+    }))
 }
 
 fn valkey() -> Result<Option<cache::Settings>, ConfigError> {

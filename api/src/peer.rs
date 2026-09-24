@@ -2,11 +2,25 @@ use std::net::{IpAddr, Ipv4Addr, Ipv6Addr, SocketAddr};
 
 use axum::http::HeaderMap;
 
+const IPV6_PREFIX_BITS: u32 = 64;
+
 pub fn client_ip(headers: &HeaderMap, peer: SocketAddr, trust_proxy: bool) -> IpAddr {
-    if !trust_proxy || !is_trusted(peer.ip()) {
-        return peer.ip();
+    let address = if trust_proxy && is_trusted(peer.ip()) {
+        forwarded_for(headers).unwrap_or_else(|| peer.ip())
+    } else {
+        peer.ip()
+    };
+    bucket(address)
+}
+
+fn bucket(ip: IpAddr) -> IpAddr {
+    match ip.to_canonical() {
+        IpAddr::V6(v6) => {
+            let mask = u128::MAX << (u128::BITS - IPV6_PREFIX_BITS);
+            IpAddr::V6(Ipv6Addr::from_bits(v6.to_bits() & mask))
+        }
+        v4 => v4,
     }
-    forwarded_for(headers).unwrap_or_else(|| peer.ip())
 }
 
 fn forwarded_for(headers: &HeaderMap) -> Option<IpAddr> {
@@ -42,6 +56,10 @@ fn is_trusted_v6(ip: Ipv6Addr) -> bool {
 
 #[cfg(test)]
 mod tests {
+    use std::num::NonZeroU32;
+
+    use governor::{Quota, RateLimiter};
+
     use super::*;
 
     fn forwarded(value: &str) -> HeaderMap {
@@ -105,7 +123,7 @@ mod tests {
         );
         assert_eq!(
             client_ip(&headers, SocketAddr::new(public, 1), true),
-            public
+            IpAddr::from([198, 51, 100, 4])
         );
     }
 
@@ -124,7 +142,41 @@ mod tests {
         let public: IpAddr = "2001:db8::1".parse().unwrap();
         assert_eq!(
             client_ip(&headers, SocketAddr::new(public, 1), true),
-            public
+            "2001:db8::".parse::<IpAddr>().unwrap()
         );
+    }
+
+    fn key(address: &str) -> IpAddr {
+        client_ip(&forwarded(address), peer([10, 0, 0, 2]), true)
+    }
+
+    #[test]
+    fn an_ipv6_client_is_keyed_by_its_64_prefix() {
+        assert_eq!(
+            key("2001:db8:1:2:aaaa:bbbb:cccc:dddd"),
+            "2001:db8:1:2::".parse::<IpAddr>().unwrap()
+        );
+        assert_ne!(key("2001:db8:1:2::1"), key("2001:db8:1:3::1"));
+        assert_ne!(key("2001:db8:1:2::1"), key("2001:db9:1:2::1"));
+    }
+
+    #[test]
+    fn ipv4_and_ipv4_mapped_clients_keep_their_whole_address() {
+        assert_eq!(key("203.0.113.7"), IpAddr::from([203, 0, 113, 7]));
+        assert_eq!(key("::ffff:203.0.113.7"), IpAddr::from([203, 0, 113, 7]));
+        assert_ne!(key("203.0.113.7"), key("203.0.113.8"));
+    }
+
+    #[test]
+    fn rotating_addresses_inside_one_64_drains_a_single_bucket() {
+        let limiter = RateLimiter::keyed(Quota::per_minute(NonZeroU32::MIN));
+        assert!(limiter.check_key(&key("2001:db8:1:2::1")).is_ok());
+        for rotated in ["2001:db8:1:2::2", "2001:db8:1:2:ffff:ffff:ffff:ffff"] {
+            assert!(limiter.check_key(&key(rotated)).is_err(), "{rotated}");
+        }
+        assert!(limiter.check_key(&key("2001:db8:1:3::1")).is_ok());
+        assert!(limiter.check_key(&key("203.0.113.7")).is_ok());
+        assert!(limiter.check_key(&key("203.0.113.8")).is_ok());
+        assert!(limiter.check_key(&key("::ffff:203.0.113.7")).is_err());
     }
 }
