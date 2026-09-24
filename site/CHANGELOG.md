@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.51.0] - 2026-09-24
+
+### Features
+
+- feat: list every replacement a tool covers, and add 60 tools and 20 closed products (#151)
+
 ## [0.50.0] - 2026-09-23
 
 ### Features
