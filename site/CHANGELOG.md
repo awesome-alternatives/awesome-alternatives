@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.56.0] - 2026-09-24
+
+### Features
+
+- feat(refresh): verify a tool whose repository has the app installed, and document release refreshes (#167)
+
 ## [0.55.1] - 2026-09-24
 
 ### Bug Fixes
