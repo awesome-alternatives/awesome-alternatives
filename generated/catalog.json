@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T14:12:30.468Z",
+  "checkedAt": "2026-09-24T14:17:34.579Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -2197,7 +2197,7 @@
         "homepage": "https://anythingllm.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 66403,
+        "stars": 66404,
         "forks": 7396,
         "topics": [
           "agent-computer",
@@ -2433,7 +2433,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-07-27T20:30:22Z",
-        "pushedAt": "2026-09-24T14:11:16Z",
+        "pushedAt": "2026-09-24T14:14:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2536,7 +2536,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-24T14:10:46Z",
+        "pushedAt": "2026-09-24T14:15:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2932,7 +2932,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T14:05:44Z",
+        "pushedAt": "2026-09-24T14:16:18Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3537,13 +3537,13 @@
         "language": "Rust",
         "license": "Apache-2.0",
         "stars": 126305,
-        "forks": 19691,
+        "forks": 19692,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-13T05:37:54Z",
-        "pushedAt": "2026-09-24T13:10:07Z",
+        "pushedAt": "2026-09-24T14:15:59Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5574,7 +5574,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T14:04:21Z",
+        "pushedAt": "2026-09-24T14:14:22Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -7399,7 +7399,7 @@
         "homepage": "https://geminicli.com",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 107145,
+        "stars": 107146,
         "forks": 14630,
         "topics": [
           "ai",
@@ -7807,7 +7807,7 @@
         "homepage": "https://gitea.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 58148,
+        "stars": 58149,
         "forks": 7170,
         "topics": [
           "bitbucket",
@@ -8319,7 +8319,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T14:09:40Z",
+        "pushedAt": "2026-09-24T14:17:50Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9112,7 +9112,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-24T13:58:55Z",
+        "pushedAt": "2026-09-24T14:14:56Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9393,7 +9393,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-04-23T03:54:26Z",
-        "pushedAt": "2026-09-24T14:04:59Z",
+        "pushedAt": "2026-09-24T14:17:21Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -10228,7 +10228,7 @@
         "homepage": "https://k3d.io/",
         "language": "Go",
         "license": "MIT",
-        "stars": 6564,
+        "stars": 6565,
         "forks": 537,
         "topics": [
           "cluster",
@@ -10566,7 +10566,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T14:11:04Z",
+        "pushedAt": "2026-09-24T14:15:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10762,7 +10762,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-16T14:48:28Z",
-        "pushedAt": "2026-09-24T13:30:24Z",
+        "pushedAt": "2026-09-24T14:14:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11399,7 +11399,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44851,
+        "stars": 44852,
         "forks": 9193,
         "topics": [
           "ai",
@@ -11620,7 +11620,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129410,
+        "stars": 129411,
         "forks": 23681,
         "topics": [
           "ggml"
@@ -12157,7 +12157,7 @@
         "homepage": "https://matomo.org/",
         "language": "PHP",
         "license": "GPL-3.0",
-        "stars": 21894,
+        "stars": 21895,
         "forks": 2895,
         "topics": [
           "analytics",
@@ -12280,7 +12280,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T13:52:49Z",
+        "pushedAt": "2026-09-24T14:17:19Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12403,7 +12403,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-23T11:45:28Z",
-        "pushedAt": "2026-09-24T13:35:10Z",
+        "pushedAt": "2026-09-24T14:16:49Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13941,7 +13941,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-24T14:11:14Z",
+        "pushedAt": "2026-09-24T14:16:05Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -14417,8 +14417,8 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 153007,
-        "forks": 22384,
+        "stars": 153008,
+        "forks": 22383,
         "topics": [
           "ai",
           "llm",
@@ -14632,7 +14632,7 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209805,
+        "stars": 209808,
         "forks": 27708,
         "topics": [],
         "archived": false,
@@ -16140,7 +16140,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96622,
+        "stars": 96623,
         "forks": 6497,
         "topics": [
           "automation",
@@ -16257,7 +16257,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T14:11:54Z",
+        "pushedAt": "2026-09-24T14:15:12Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16520,7 +16520,7 @@
         "homepage": "https://python-poetry.org",
         "language": "Python",
         "license": "MIT",
-        "stars": 34304,
+        "stars": 34303,
         "forks": 2508,
         "topics": [
           "dependency-manager",
@@ -17118,7 +17118,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-24T14:12:23Z",
+        "pushedAt": "2026-09-24T14:13:43Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -19612,7 +19612,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T14:09:46Z",
+        "pushedAt": "2026-09-24T14:18:27Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -20470,7 +20470,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-24T18:05:02Z",
-        "pushedAt": "2026-09-24T14:08:29Z",
+        "pushedAt": "2026-09-24T14:16:41Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20547,7 +20547,7 @@
         "homepage": "http://developer.hashicorp.com/terraform",
         "language": "Go",
         "license": "Other",
-        "stars": 49719,
+        "stars": 49718,
         "forks": 10627,
         "topics": [
           "cloud",
@@ -20894,7 +20894,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-13T19:04:02Z",
-        "pushedAt": "2026-09-24T13:26:07Z",
+        "pushedAt": "2026-09-24T14:16:06Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22716,7 +22716,7 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192851,
+        "stars": 192852,
         "forks": 43097,
         "topics": [
           "editor",
@@ -22729,7 +22729,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T14:10:36Z",
+        "pushedAt": "2026-09-24T14:17:25Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22806,7 +22806,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33359,
+        "stars": 33360,
         "forks": 1866,
         "topics": [
           "editor",
@@ -22914,7 +22914,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-24T14:03:37Z",
+        "pushedAt": "2026-09-24T14:16:42Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -23208,7 +23208,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "MIT",
-        "stars": 8094,
+        "stars": 8093,
         "forks": 147,
         "topics": [
           "api-testing",
@@ -23408,7 +23408,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T14:11:48Z",
+        "pushedAt": "2026-09-24T14:16:02Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -23500,7 +23500,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90818,
+        "stars": 90817,
         "forks": 10757,
         "topics": [
           "gpui",
@@ -23589,7 +23589,7 @@
         "homepage": "https://zellij.dev",
         "language": "Rust",
         "license": "MIT",
-        "stars": 35523,
+        "stars": 35522,
         "forks": 1461,
         "topics": [
           "multiplexer",
