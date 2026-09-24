@@ -931,6 +931,7 @@ button.link {
 
 .mark-icon::after {
   content: attr(data-tip);
+  display: none;
   position: absolute;
   bottom: calc(100% + 6px);
   left: 50%;
@@ -947,17 +948,28 @@ button.link {
   text-align: center;
   white-space: normal;
   opacity: 0;
-  visibility: hidden;
   transition:
     opacity 120ms ease,
-    visibility 0s linear 120ms;
+    display 120ms allow-discrete;
 }
 
 .mark-icon:hover::after,
 .mark-icon:focus-visible::after {
+  display: block;
   opacity: 1;
-  visibility: visible;
-  transition-delay: 0s;
+}
+
+@starting-style {
+  .mark-icon:hover::after,
+  .mark-icon:focus-visible::after {
+    opacity: 0;
+  }
+}
+
+.tool-head .mark-compare::after {
+  left: auto;
+  right: 0;
+  transform: none;
 }
 
 .mark-archived {
