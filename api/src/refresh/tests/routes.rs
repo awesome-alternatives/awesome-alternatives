@@ -46,6 +46,7 @@ fn app(refresh: Refresh) -> Router {
             Arc::new(Shared::disabled()),
         ),
         RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
+        RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
         false,
         refresh,
     ))

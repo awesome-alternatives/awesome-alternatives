@@ -107,6 +107,7 @@ pub struct AppState {
     pub search: Arc<Search>,
     pub details: Arc<Details>,
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
+    pub details_limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub trust_proxy: bool,
     pub activity: Activity,
     pub refresh: Arc<Refresh>,
@@ -118,6 +119,7 @@ impl AppState {
         search: Search,
         details: Details,
         limiter: DefaultKeyedRateLimiter<IpAddr>,
+        details_limiter: DefaultKeyedRateLimiter<IpAddr>,
         trust_proxy: bool,
         refresh: Refresh,
     ) -> Self {
@@ -126,6 +128,7 @@ impl AppState {
             search: Arc::new(search),
             details: Arc::new(details),
             limiter: Arc::new(limiter),
+            details_limiter: Arc::new(details_limiter),
             trust_proxy,
             activity: Activity::default(),
             refresh: Arc::new(refresh),

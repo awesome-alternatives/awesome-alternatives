@@ -148,6 +148,7 @@ fn cache<V: Weight + Clone + Send + Sync + 'static>(max_bytes: u64) -> Cache<Str
 mod tests {
     use std::sync::atomic::{AtomicUsize, Ordering};
 
+    use axum::http::StatusCode;
     use axum::routing::get;
     use axum::{Json, Router};
     use serde_json::json;
@@ -259,6 +260,28 @@ mod tests {
         Upstream::new(reqwest::Client::new(), &base, &base, None)
     }
 
+    async fn advisories_answering(status: StatusCode, hits: Arc<Hits>) -> Upstream {
+        let app = Router::new()
+            .route(
+                "/repos/{owner}/{repo}/security-advisories",
+                get(move || {
+                    let hits = Arc::clone(&hits);
+                    async move {
+                        hits.security.fetch_add(1, Ordering::SeqCst);
+                        status
+                    }
+                }),
+            )
+            .route(
+                "/projects/github.com/{owner}/{repo}",
+                get(|| async { Json(json!({ "score": 7.5, "date": "2026-09-22", "checks": [] })) }),
+            );
+        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+        let base = format!("http://{}", listener.local_addr().unwrap());
+        tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
+        Upstream::new(reqwest::Client::new(), &base, &base, None)
+    }
+
     fn unreachable() -> Upstream {
         Upstream::new(
             reqwest::Client::new(),
@@ -351,6 +374,39 @@ mod tests {
         let details = Details::new(unreachable(), CACHE_BYTES, shared);
         assert!(details.readme("example/good").await.is_err());
         assert!(store.written().is_empty());
+    }
+
+    #[tokio::test]
+    async fn a_github_refusal_on_advisories_is_an_error_kept_out_of_both_cache_tiers() {
+        for refusal in [StatusCode::FORBIDDEN, StatusCode::TOO_MANY_REQUESTS] {
+            let (shared, store) = recording();
+            let hits = Arc::new(Hits::default());
+            let details = Details::new(
+                advisories_answering(refusal, Arc::clone(&hits)).await,
+                CACHE_BYTES,
+                shared,
+            );
+            assert!(details.security("example/good").await.is_err(), "{refusal}");
+            assert!(details.security("example/good").await.is_err(), "{refusal}");
+            assert_eq!(hits.security(), 2, "{refusal}");
+            assert!(store.written().is_empty(), "{refusal}");
+        }
+    }
+
+    #[tokio::test]
+    async fn advisories_github_does_not_find_are_an_empty_list_worth_caching() {
+        let (shared, store) = recording();
+        let hits = Arc::new(Hits::default());
+        let details = Details::new(
+            advisories_answering(StatusCode::NOT_FOUND, Arc::clone(&hits)).await,
+            CACHE_BYTES,
+            shared,
+        );
+        let security = details.security("example/good").await.unwrap();
+        assert!(security.advisories.is_empty());
+        details.security("example/good").await.unwrap();
+        assert_eq!(hits.security(), 1);
+        assert_eq!(store.written().len(), 1);
     }
 
     #[tokio::test]

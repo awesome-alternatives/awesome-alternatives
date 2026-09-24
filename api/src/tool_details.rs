@@ -1,9 +1,36 @@
-use axum::Json;
-use axum::extract::{Path, State};
+use std::net::SocketAddr;
+
+use axum::extract::{ConnectInfo, Path, Request, State};
+use axum::middleware::{self, Next};
+use axum::response::Response;
+use axum::routing::get;
+use axum::{Json, Router};
+use governor::clock::Clock;
 
 use crate::details::{Readme, Security};
+use crate::peer::client_ip;
 use crate::routes::ApiError;
 use crate::state::AppState;
+
+pub fn routes(state: AppState) -> Router<AppState> {
+    Router::new()
+        .route("/v1/tools/{slug}/readme", get(readme))
+        .route("/v1/tools/{slug}/security", get(security))
+        .route_layer(middleware::from_fn_with_state(state, throttle))
+}
+
+async fn throttle(
+    State(state): State<AppState>,
+    ConnectInfo(peer): ConnectInfo<SocketAddr>,
+    request: Request,
+    next: Next,
+) -> Result<Response, ApiError> {
+    let ip = client_ip(request.headers(), peer, state.trust_proxy);
+    state.details_limiter.check_key(&ip).map_err(|limited| {
+        ApiError::RateLimited(limited.wait_time_from(state.details_limiter.clock().now()))
+    })?;
+    Ok(next.run(request).await)
+}
 
 fn full_name(state: &AppState, slug: &str) -> Result<String, ApiError> {
     state
@@ -16,7 +43,7 @@ fn full_name(state: &AppState, slug: &str) -> Result<String, ApiError> {
         .ok_or(ApiError::UnknownTool)
 }
 
-pub async fn readme(
+async fn readme(
     State(state): State<AppState>,
     Path(slug): Path<String>,
 ) -> Result<Json<Readme>, ApiError> {
@@ -32,7 +59,7 @@ pub async fn readme(
         })
 }
 
-pub async fn security(
+async fn security(
     State(state): State<AppState>,
     Path(slug): Path<String>,
 ) -> Result<Json<Security>, ApiError> {
@@ -57,8 +84,9 @@ mod tests {
 
     use axum::Router;
     use axum::body::Body;
+    use axum::extract::Path;
     use axum::extract::connect_info::MockConnectInfo;
-    use axum::http::{Request, StatusCode};
+    use axum::http::{Request, StatusCode, header};
     use axum::response::IntoResponse;
     use axum::routing::get;
     use governor::{Quota, RateLimiter};
@@ -96,15 +124,21 @@ mod tests {
             )
             .route(
                 "/repos/example/{repo}/security-advisories",
-                get(|| async {
-                    axum::Json(json!([{
-                        "ghsa_id": "GHSA-aaaa-bbbb-cccc",
-                        "cve_id": null,
-                        "summary": "Path traversal",
-                        "severity": "high",
-                        "published_at": "2026-09-01T00:00:00Z",
-                        "html_url": "https://github.com/example/good/security/advisories/GHSA-aaaa-bbbb-cccc"
-                    }]))
+                get(|Path(repo): Path<String>| async move {
+                    match repo.as_str() {
+                        "forbidden" => StatusCode::FORBIDDEN.into_response(),
+                        "throttled" => StatusCode::TOO_MANY_REQUESTS.into_response(),
+                        "silent" => StatusCode::NOT_FOUND.into_response(),
+                        _ => axum::Json(json!([{
+                            "ghsa_id": "GHSA-aaaa-bbbb-cccc",
+                            "cve_id": null,
+                            "summary": "Path traversal",
+                            "severity": "high",
+                            "published_at": "2026-09-01T00:00:00Z",
+                            "html_url": "https://github.com/example/good/security/advisories/GHSA-aaaa-bbbb-cccc"
+                        }]))
+                        .into_response(),
+                    }
                 }),
             )
             .route(
@@ -131,6 +165,10 @@ mod tests {
     }
 
     fn app(fake: &Fake) -> Router {
+        limited(fake, 10)
+    }
+
+    fn limited(fake: &Fake, per_minute: u32) -> Router {
         let catalog = Catalog {
             revision: "test".into(),
             products: vec![],
@@ -138,6 +176,9 @@ mod tests {
             tools: vec![
                 tool("good", "Rust", "MIT", &[], 1),
                 tool("unscored", "Rust", "MIT", &[], 1),
+                tool("forbidden", "Rust", "MIT", &[], 1),
+                tool("throttled", "Rust", "MIT", &[], 1),
+                tool("silent", "Rust", "MIT", &[], 1),
             ],
         };
         let upstream = Upstream::new(reqwest::Client::new(), &fake.base, &fake.base, None);
@@ -146,6 +187,7 @@ mod tests {
             Search::new(None, None, Arc::new(Shared::disabled())),
             Details::new(upstream, CACHE_BYTES, Arc::new(Shared::disabled())),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
+            RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap())),
             false,
             crate::fixtures::refresh_off(),
         );
@@ -233,5 +275,81 @@ mod tests {
         let (status, body) = get_json(&app(&fake), "/v1/tools/unscored/security").await;
         assert_eq!(status, StatusCode::OK);
         assert!(body["scorecard"].is_null());
+    }
+    #[tokio::test]
+    async fn a_github_refusal_on_advisories_is_a_502_rather_than_no_advisories_and_is_not_cached() {
+        let fake = fake(StatusCode::OK).await;
+        let app = app(&fake);
+        for slug in ["forbidden", "throttled"] {
+            for _ in 0..2 {
+                let (status, body) = get_json(&app, &format!("/v1/tools/{slug}/security")).await;
+                assert_eq!(status, StatusCode::BAD_GATEWAY, "{slug}");
+                assert!(body["error"].is_string(), "{slug}");
+                assert!(body.get("advisories").is_none(), "{slug}");
+            }
+        }
+    }
+
+    #[tokio::test]
+    async fn a_repository_github_has_no_advisories_for_still_answers_an_empty_list() {
+        let fake = fake(StatusCode::OK).await;
+        let (status, body) = get_json(&app(&fake), "/v1/tools/silent/security").await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["advisories"], json!([]));
+    }
+
+    #[tokio::test]
+    async fn a_github_refusal_on_the_readme_is_a_502_and_is_not_cached() {
+        for refusal in [StatusCode::FORBIDDEN, StatusCode::TOO_MANY_REQUESTS] {
+            let fake = fake(refusal).await;
+            let app = app(&fake);
+            for _ in 0..2 {
+                assert_eq!(
+                    get_json(&app, "/v1/tools/good/readme").await.0,
+                    StatusCode::BAD_GATEWAY,
+                    "{refusal}"
+                );
+            }
+            assert_eq!(fake.readme_hits.load(Ordering::SeqCst), 2, "{refusal}");
+        }
+    }
+
+    #[tokio::test]
+    async fn the_detail_routes_share_one_quota_per_client_and_answer_429_with_retry_after() {
+        let fake = fake(StatusCode::OK).await;
+        for (first, second) in [
+            ("/v1/tools/good/readme", "/v1/tools/good/security"),
+            ("/v1/tools/good/security", "/v1/tools/good/readme"),
+        ] {
+            let app = limited(&fake, 1);
+            assert_eq!(get_json(&app, first).await.0, StatusCode::OK, "{first}");
+            let response = app
+                .clone()
+                .oneshot(Request::get(second).body(Body::empty()).unwrap())
+                .await
+                .unwrap();
+            assert_eq!(response.status(), StatusCode::TOO_MANY_REQUESTS, "{second}");
+            let retry_after: u64 = response.headers()[header::RETRY_AFTER]
+                .to_str()
+                .unwrap()
+                .parse()
+                .unwrap();
+            assert!((1..=60).contains(&retry_after), "{retry_after}");
+        }
+    }
+
+    #[tokio::test]
+    async fn the_detail_quota_is_spent_before_an_unknown_slug_is_looked_up() {
+        let fake = fake(StatusCode::OK).await;
+        let app = limited(&fake, 1);
+        assert_eq!(
+            get_json(&app, "/v1/tools/nope/readme").await.0,
+            StatusCode::NOT_FOUND
+        );
+        assert_eq!(
+            get_json(&app, "/v1/tools/good/readme").await.0,
+            StatusCode::TOO_MANY_REQUESTS
+        );
+        assert_eq!(fake.readme_hits.load(Ordering::SeqCst), 0);
     }
 }

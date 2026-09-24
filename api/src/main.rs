@@ -99,6 +99,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         Search::new(jev, embedder, Arc::clone(&shared)),
         Details::new(upstream, config.details_cache_bytes, shared),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
+        RateLimiter::keyed(Quota::per_minute(config.details_per_minute)),
         config.trust_proxy,
         refresh,
     );
@@ -173,6 +174,7 @@ async fn reload_catalog(
     loop {
         ticker.tick().await;
         state.limiter.retain_recent();
+        state.details_limiter.retain_recent();
         match catalog::load(&source, &http).await {
             Ok(catalog) => {
                 tracing::info!(tools = catalog.tools.len(), "catalog refreshed");

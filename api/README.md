@@ -90,6 +90,15 @@ handlers and `javascript:` links are removed, relative images point at `raw.gith
 and relative links at the file on GitHub. Keeping READMEs out of the catalog keeps the nightly
 commit and the API's hourly reload small.
 
+A `403` or `429` from GitHub is a refusal, usually its rate limit, not an answer: it logs a warning
+with the status and fails the whole fetch, so the security report answers 502 rather than "no
+known advisories", and neither cache tier keeps it. Only a `404` means there is nothing to show.
+
+The two routes share a per-client limit of `DETAILS_PER_MINUTE`, keyed the same way as search, and
+answer `429` with `Retry-After` past it. A tool page costs at most two requests, so the default
+leaves a person browsing plenty of room, while one client can no longer spend the GitHub token as
+fast as it can send requests.
+
 Both in-process caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
 kilobytes, so counting entries said nothing about how much memory they held. `DETAILS_CACHE_BYTES`
 is the total budget, 64 MiB by default, split evenly between the two. The weight of an entry is the
@@ -221,6 +230,7 @@ requests are in flight.
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP. |
+| `DETAILS_PER_MINUTE` | `30` | Per client IP, shared by `/v1/tools/{slug}/readme` and `/v1/tools/{slug}/security`. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
 | `ALLOWED_ORIGINS` | unset | Comma-separated origins a browser may read a response from. Unset means same-origin only. |
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
