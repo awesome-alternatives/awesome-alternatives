@@ -10,6 +10,7 @@ export function SearchResults({
   strings,
   result,
   names,
+  capabilities,
   onDrop,
   onMore,
   appending,
@@ -18,7 +19,8 @@ export function SearchResults({
   strings: Islands;
   result: SearchResult;
   names: Record<string, string>;
-  onDrop: (result: SearchResult, key: ChipKey) => void;
+  capabilities: Record<string, string>;
+  onDrop: (result: SearchResult, key: ChipKey, value?: string) => void;
   onMore: () => void;
   appending: boolean;
 }) {
@@ -28,7 +30,12 @@ export function SearchResults({
     copy.chips,
     (slug) => names[slug] ?? slug,
     (terms) => strings.terms[terms],
+    (key) => capabilities[key] ?? key,
   );
+  const requested = result.filters.capabilities ?? [];
+  const labelsOf = (keys: readonly string[]) => keys.map((key) => capabilities[key] ?? key).join(", ");
+  const meets = requested.length > 0 ? format(copy.meets, { list: labelsOf(requested) }) : undefined;
+  const near = result.near ?? [];
   const unchecked = result.unchecked ?? [];
   const landing = alternativesHref(result.filters, unchecked);
   if (read.length === 0 && result.count === 0) {
@@ -44,12 +51,12 @@ export function SearchResults({
     <>
       <div className="chips" aria-label={copy.chipsLabel}>
         {read.map((chip) => (
-          <span key={chip.key} className="chip">
+          <span key={`${chip.key}-${chip.value ?? ""}`} className="chip">
             {chip.label}
             <button
               type="button"
               aria-label={format(copy.removeChip, { label: chip.label })}
-              onClick={() => onDrop(result, chip.key)}
+              onClick={() => onDrop(result, chip.key, chip.value)}
             >
               {copy.removeGlyph}
             </button>
@@ -85,6 +92,7 @@ export function SearchResults({
             strings={strings}
             tool={tool}
             target={result.filters.replaces}
+            criteria={meets}
           />
         ))}
       </div>
@@ -94,6 +102,24 @@ export function SearchResults({
             {appending ? copy.searching : copy.more}
           </button>
         </p>
+      )}
+      {near.length > 0 && (
+        <section className="near">
+          <h2 className="section-label">{copy.nearHeading}</h2>
+          <div className="tools">
+            {near.map(({ tool, missing }) => (
+              <ToolCard
+                key={tool.slug}
+                locale={locale}
+                strings={strings}
+                tool={tool}
+                target={result.filters.replaces}
+                criteria={format(copy.meets, { list: labelsOf(requested.filter((c) => !missing.includes(c))) })}
+                gap={format(copy.missing, { list: labelsOf(missing) })}
+              />
+            ))}
+          </div>
+        </section>
       )}
     </>
   );

@@ -12,3 +12,12 @@ replaces:
     fit: partial
     note: Chat and calls on your own server, without the Microsoft 365 integration.
 terms: open-core
+capabilities:
+  calls:
+    docs: https://docs.rocket.chat/docs/rocketchat-conference-call
+  threads:
+    docs: https://docs.rocket.chat/docs/threads
+  federation:
+    docs: https://docs.rocket.chat/docs/decentralized-communication-with-federation-in-rocketchat
+  e2e-encryption:
+    docs: https://docs.rocket.chat/docs/configure-e2e-encryption

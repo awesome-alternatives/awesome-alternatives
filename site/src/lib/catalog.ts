@@ -92,6 +92,14 @@ export const categoryGroups = groupTools(tools, (t) => t.category);
 export const languageGroups = groupTools(tools, (t) => t.repo.language);
 export const licenseGroups = groupTools(tools, (t) => t.repo.license);
 
+export function capabilityLabels(): Record<string, string> {
+  return Object.fromEntries(
+    Object.values(categories).flatMap((category) =>
+      Object.entries(category.capabilities ?? {}).map(([key, term]) => [key, term.label]),
+    ),
+  );
+}
+
 export function categoryName(key: string): string {
   return categories[key]?.name ?? key;
 }

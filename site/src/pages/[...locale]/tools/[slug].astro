@@ -47,6 +47,11 @@ const related = tools
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
+const capabilityList = Object.entries(tool.capabilities).map(([key, capability]) => ({
+  label: category?.capabilities?.[key]?.label ?? key,
+  docs: capability.docs,
+  note: capability.note ?? null,
+}));
 const withNotes = new Set(
   (await migrationPairs()).filter((pair) => pair.to === tool.slug).map((pair) => pair.from),
 );
@@ -172,6 +177,21 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
             )
           }
         </dl>
+        {
+          capabilityList.length > 0 && (
+            <div class="capabilities">
+              <p class="section-label">{m.tool.capabilities}</p>
+              <ul>
+                {capabilityList.map((capability) => (
+                  <li>
+                    {capability.label} <a href={capability.docs}>{m.tool.capabilityDocs}</a>
+                    {capability.note && <span class="capability-note"> {capability.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
 
         <p class="freshness">
           {

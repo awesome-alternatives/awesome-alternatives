@@ -6,3 +6,8 @@ replaces:
     fit: drop-in
     note: Fork of Vault 1.14 under MPL-2.0, same API.
     migration: https://openbao.org/docs/guides/migration/
+capabilities:
+  dynamic-secrets:
+    docs: https://openbao.org/docs/secrets/databases/
+  pki:
+    docs: https://openbao.org/docs/secrets/pki/

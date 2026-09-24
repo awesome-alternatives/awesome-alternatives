@@ -44,6 +44,7 @@ function tool(slug: string, language: string | null, replaces: [string, Fit][], 
     maintainerVerified: false,
     flags: [],
     terms: "open",
+    capabilities: {},
   };
 }
 
@@ -309,4 +310,23 @@ test("trending shows what it has when fewer tools qualify than there are slots",
     trendingTool(`t${i}`, gained(TRENDING_SLOTS + 3 - i, "2026-09-01T00:00:00Z")),
   );
   assert.equal(trending(many).length, TRENDING_SLOTS);
+});
+
+test("each requested capability is its own chip, and dropping one keeps the others", () => {
+  const filters = { replaces: "gitlab", capabilities: ["ci", "container-registry"] };
+  const read = chips(filters, islands.search.chips, undefined, undefined, (key) => ({ ci: "CI/CD" })[key] ?? key);
+  assert.deepEqual(
+    read.filter((c) => c.key === "capabilities").map((c) => [c.value, c.label]),
+    [
+      ["ci", "CI/CD"],
+      ["container-registry", "container-registry"],
+    ],
+  );
+  assert.deepEqual(without(filters, "capabilities", "ci"), { replaces: "gitlab", capabilities: ["container-registry"] });
+  assert.deepEqual(without({ capabilities: ["ci"] }, "capabilities", "ci"), {});
+});
+
+test("capabilities go to the API as one comma-separated parameter", () => {
+  assert.equal(toQuery({ capabilities: ["ci", "wiki"] }), "capabilities=ci%2Cwiki");
+  assert.equal(toQuery({ capabilities: [] }), "");
 });

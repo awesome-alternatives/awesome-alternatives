@@ -103,11 +103,34 @@ ci-server:
   name: CI servers
   description: Self-hosted servers that run build and deployment pipelines.
   selfHost: true
+  capabilities:
+    container-steps:
+      label: "Steps in containers"
+      match: ["container steps", "steps in containers", "each step in a container", "étapes en conteneurs", "pasos en contenedores"]
+    kubernetes:
+      label: "Runs on Kubernetes"
+      match: ["on kubernetes", "kubernetes native", "sur kubernetes", "en kubernetes", "auf kubernetes"]
 
 git-forge:
   name: Git forges
   description: Self-hosted repositories, code review and issues.
   selfHost: true
+  capabilities:
+    ci:
+      label: "CI/CD"
+      match: ["ci", "ci/cd", "cicd", "continuous integration", "intégration continue", "integración continua", "kontinuierliche integration"]
+    container-registry:
+      label: "Container registry"
+      match: ["container registry", "docker registry", "registre docker", "registre de conteneurs", "registro de contenedores", "registro docker", "container-registry"]
+    package-registry:
+      label: "Package registry"
+      match: ["package registry", "packages registry", "registre de paquets", "registro de paquetes", "paket-registry", "npm registry", "maven registry"]
+    wiki:
+      label: "Wiki"
+      match: ["wiki"]
+    pages:
+      label: "Static site hosting"
+      match: ["static site hosting", "static pages", "gitlab pages", "hébergement de site statique", "pages statiques", "sitios estáticos", "statische seiten"]
 
 password-manager-server:
   name: Password manager servers
@@ -133,6 +156,19 @@ team-chat:
   name: Team chat
   description: Self-hosted messaging for teams.
   selfHost: true
+  capabilities:
+    calls:
+      label: "Voice and video calls"
+      match: ["video calls", "voice calls", "audio calls", "video conferencing", "appels vidéo", "appels audio", "visioconférence", "videollamadas", "videoconferencia", "videoanrufe", "videokonferenzen"]
+    threads:
+      label: "Threads"
+      match: ["threads", "threaded", "fils de discussion", "hilos", "hilos de conversación"]
+    federation:
+      label: "Federation"
+      match: ["federation", "federated", "fédération", "fédéré", "federación", "föderation", "föderiert"]
+    e2e-encryption:
+      label: "End-to-end encryption"
+      match: ["end to end encryption", "end-to-end encryption", "e2e", "e2ee", "chiffrement de bout en bout", "cifrado de extremo a extremo", "ende zu ende verschlüsselung"]
 
 terminal-emulator:
   name: Terminal emulators
@@ -171,6 +207,16 @@ secrets-manager:
   name: Secrets managers
   description: Store, rotate and hand out secrets to applications.
   selfHost: true
+  capabilities:
+    dynamic-secrets:
+      label: "Dynamic secrets"
+      match: ["dynamic secrets", "short-lived credentials", "secrets dynamiques", "secretos dinámicos", "dynamische secrets"]
+    pki:
+      label: "PKI and certificates"
+      match: ["pki", "certificate management", "certificate authority", "gestion des certificats", "autorité de certification", "gestión de certificados", "zertifikatsverwaltung"]
+    secret-rotation:
+      label: "Secret rotation"
+      match: ["secret rotation", "rotate secrets", "rotation des secrets", "rotación de secretos", "secret-rotation"]
 
 git-lfs-server:
   name: Git LFS servers

@@ -19,6 +19,7 @@ export interface ToolEntry {
   affiliation?: string;
   path?: string;
   terms?: DeclaredTerms;
+  capabilities?: Record<string, Capability>;
 }
 
 export interface Tool extends ToolEntry {
@@ -41,16 +42,28 @@ export interface Product extends ProductEntry {
 
 export type ListedProduct = Omit<Product, "file">;
 
+export interface CapabilityTerm {
+  label: string;
+  match: string[];
+}
+
 export interface Category {
   name: string;
   description: string;
   selfHost?: boolean;
+  capabilities?: Record<string, CapabilityTerm>;
+}
+
+export interface Capability {
+  docs: string;
+  note?: string;
 }
 
 export type Severity = "error" | "warning";
 
 export type BlockingCode =
   | "bad-slug"
+  | "capability-unreachable"
   | "duplicate-replacement"
   | "duplicate-repository"
   | "fork"
@@ -62,6 +75,7 @@ export type BlockingCode =
   | "replaces-itself"
   | "schema"
   | "too-new"
+  | "unknown-capability"
   | "unknown-category"
   | "unknown-replacement"
   | "unused-product";
@@ -140,6 +154,7 @@ export interface EnrichedTool {
   maintainerVerified: boolean;
   flags: FlagCode[];
   terms: Terms;
+  capabilities: Record<string, Capability>;
 }
 
 export type OwnerKind = "user" | "organization";

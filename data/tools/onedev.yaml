@@ -14,3 +14,12 @@ replaces:
   - tool: bitbucket
     fit: full
     note: Repositories, pull requests and CI/CD on your own server.
+capabilities:
+  ci:
+    docs: https://docs.onedev.io/category/cicd
+  container-registry:
+    docs: https://docs.onedev.io/tutorials/package/working-with-container-image
+  package-registry:
+    docs: https://docs.onedev.io/tutorials/package/working-with-packages
+  wiki:
+    docs: https://docs.onedev.io/tutorials/wiki/working-with-wiki

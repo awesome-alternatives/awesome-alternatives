@@ -2,7 +2,7 @@ use std::collections::{BTreeMap, BTreeSet};
 
 use serde::Serialize;
 
-use crate::catalog::{Product, Tool};
+use crate::catalog::{Category, Product, Tool};
 
 #[derive(Debug, Default, Clone, Serialize)]
 pub struct Vocabulary {
@@ -10,10 +10,23 @@ pub struct Vocabulary {
     pub languages: Vec<String>,
     pub licenses: Vec<String>,
     pub categories: Vec<String>,
+    pub capabilities: BTreeMap<String, CapabilityWords>,
+}
+
+#[derive(Debug, Clone, Serialize)]
+pub struct CapabilityWords {
+    pub label: String,
+    pub category: String,
+    #[serde(skip)]
+    pub phrases: Vec<String>,
 }
 
 impl Vocabulary {
-    pub fn of(tools: &[Tool], products: &[Product]) -> Self {
+    pub fn of(
+        tools: &[Tool],
+        products: &[Product],
+        categories: &BTreeMap<String, Category>,
+    ) -> Self {
         let name_of = |slug: &str| {
             let tool = tools.iter().find(|t| t.slug == slug).map(|t| &t.name);
             let product = || products.iter().find(|p| p.slug == slug).map(|p| &p.name);
@@ -39,6 +52,21 @@ impl Vocabulary {
             languages: distinct(tools.iter().map(|t| t.repo.language.as_ref()).collect()),
             licenses: distinct(tools.iter().map(|t| t.repo.license.as_ref()).collect()),
             categories: distinct(tools.iter().map(|t| Some(&t.category)).collect()),
+            capabilities: categories
+                .iter()
+                .flat_map(|(key, category)| {
+                    category.capabilities.iter().map(move |(capability, term)| {
+                        (
+                            capability.clone(),
+                            CapabilityWords {
+                                label: term.label.clone(),
+                                category: key.clone(),
+                                phrases: term.phrases.clone(),
+                            },
+                        )
+                    })
+                })
+                .collect(),
         }
     }
 }
@@ -70,7 +98,7 @@ mod tests {
                 1,
             ),
         ];
-        let vocabulary = Vocabulary::of(&tools, &[]);
+        let vocabulary = Vocabulary::of(&tools, &[], &BTreeMap::new());
         assert_eq!(
             vocabulary.targets.keys().collect::<Vec<_>>(),
             ["semantic-release", "unlisted"]
@@ -97,7 +125,7 @@ mod tests {
             category: "coding-agent".into(),
             description: "A coding agent.".into(),
         }];
-        let vocabulary = Vocabulary::of(&tools, &products);
+        let vocabulary = Vocabulary::of(&tools, &products, &BTreeMap::new());
         assert_eq!(vocabulary.targets["claude-code"], "Claude Code");
     }
 }

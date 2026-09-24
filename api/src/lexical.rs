@@ -83,6 +83,7 @@ mod tests {
             ],
             licenses: vec!["Apache-2.0".into(), "MIT".into()],
             categories: vec![],
+            capabilities: BTreeMap::new(),
         }
     }
 

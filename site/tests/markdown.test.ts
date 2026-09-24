@@ -9,6 +9,7 @@ const around: Surroundings = {
   selfHost: false,
   checkedAt: "2026-09-23T03:17:00.000Z",
   migrationNotes: [],
+  capabilityLabels: { ci: "CI/CD" },
   nameOf: (slug) => ({ flake8: "Flake8", black: "Black" })[slug] ?? slug,
   replacedBy: [],
 };
@@ -28,6 +29,7 @@ function tool(over: Partial<EnrichedTool> = {}, repo: Partial<EnrichedTool["repo
     maintainerVerified: false,
     flags: [],
     terms: "open",
+    capabilities: {},
     release: null,
     releases: [],
     ...over,
@@ -144,4 +146,13 @@ test("an official migration guide is linked under the replacement it belongs to"
 test("a replacement with a migration page links to it", () => {
   const out = toolMarkdown(tool({ replaces: [{ tool: "flake8", fit: "full" }] }), { ...around, migrationNotes: ["flake8"] });
   assert.ok(out.includes("  - Migration notes: https://awesome-alternatives.com/migrate/flake8/ruff/"));
+});
+
+test("declared capabilities are listed with their documentation and any known limit", () => {
+  const out = toolMarkdown(
+    tool({ capabilities: { ci: { docs: "https://example.com/ci", note: "Needs a runner." } } }),
+    around,
+  );
+  assert.ok(out.includes(["## Capabilities", "", "- CI/CD: https://example.com/ci (Needs a runner.)"].join("\n")));
+  assert.ok(!toolMarkdown(tool(), around).includes("## Capabilities"));
 });

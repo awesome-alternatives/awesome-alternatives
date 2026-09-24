@@ -3,6 +3,7 @@ use serde::{Deserialize, Serialize};
 use crate::catalog::Terms;
 use crate::filters::Filters;
 use crate::lexical::{mentions, normalize};
+use crate::vocabulary::Vocabulary;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "lowercase")]
@@ -131,6 +132,18 @@ pub fn apply(query: &str, filters: &mut Filters) -> Vec<Unchecked> {
     unchecked
 }
 
+pub fn capabilities(query: &str, vocabulary: &Vocabulary) -> Vec<String> {
+    let query = normalize(query);
+    vocabulary
+        .capabilities
+        .iter()
+        .filter(|(_, words)| {
+            mentions(&query, &words.label) || words.phrases.iter().any(|p| mentions(&query, p))
+        })
+        .map(|(key, _)| key.clone())
+        .collect()
+}
+
 pub fn is_requirement(slug: &str) -> bool {
     let label = normalize(slug);
     PLATFORMS
@@ -239,5 +252,67 @@ mod tests {
         let unchecked = apply("self-hosted alternative to docker on linux", &mut filters);
         assert_eq!(values(&unchecked), ["Linux"]);
         assert!(filters.self_host);
+    }
+
+    fn forge_words() -> Vocabulary {
+        let word =
+            |label: &str, category: &str, phrases: &[&str]| crate::vocabulary::CapabilityWords {
+                label: label.into(),
+                category: category.into(),
+                phrases: phrases.iter().map(|p| (*p).to_owned()).collect(),
+            };
+        Vocabulary {
+            capabilities: std::collections::BTreeMap::from([
+                (
+                    "ci".into(),
+                    word(
+                        "CI/CD",
+                        "git-forge",
+                        &["ci", "continuous integration", "intégration continue"],
+                    ),
+                ),
+                (
+                    "container-registry".into(),
+                    word(
+                        "Container registry",
+                        "git-forge",
+                        &["docker registry", "registre docker"],
+                    ),
+                ),
+                (
+                    "pki".into(),
+                    word(
+                        "PKI and certificates",
+                        "secrets-manager",
+                        &["pki", "certificate authority"],
+                    ),
+                ),
+            ]),
+            ..Vocabulary::default()
+        }
+    }
+
+    #[test]
+    fn capabilities_are_read_from_their_label_or_any_listed_phrase() {
+        let words = forge_words();
+        assert_eq!(
+            capabilities(
+                "leave GitLab but I need CI/CD and a Docker registry",
+                &words
+            ),
+            ["ci", "container-registry"]
+        );
+        assert_eq!(
+            capabilities(
+                "quitter GitLab, avec intégration continue et registre Docker",
+                &words
+            ),
+            ["ci", "container-registry"]
+        );
+    }
+
+    #[test]
+    fn a_capability_needs_a_whole_phrase_not_a_fragment() {
+        assert!(capabilities("a circle of certificates", &forge_words()).is_empty());
     }
 }

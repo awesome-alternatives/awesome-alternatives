@@ -18,6 +18,12 @@ export interface Filters {
   terms?: Terms;
   selfHost?: boolean;
   maintained?: boolean;
+  capabilities?: string[];
+}
+
+export interface NearMiss {
+  tool: ToolView;
+  missing: string[];
 }
 
 export interface Unchecked {
@@ -30,6 +36,7 @@ export interface SearchResult {
   filters: Filters;
   interpretedBy: "jev" | "local";
   unchecked?: Unchecked[];
+  near?: NearMiss[];
   count: number;
   limit: number;
   offset: number;
@@ -41,6 +48,7 @@ export interface ToolList {
   limit: number;
   offset: number;
   tools: ToolView[];
+  near?: NearMiss[];
 }
 
 export interface GridItem {

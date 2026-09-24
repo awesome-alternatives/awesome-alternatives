@@ -8,3 +8,6 @@ replaces:
   - tool: circleci
     fit: full
     note: Self-hosted pipelines, each step in a container.
+capabilities:
+  container-steps:
+    docs: https://concourse-ci.org/docs/tasks/

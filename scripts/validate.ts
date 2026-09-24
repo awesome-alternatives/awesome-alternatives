@@ -4,7 +4,7 @@ import { basename } from "node:path";
 import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
-import { checkHomepage, checkMigrations } from "./lib/links.ts";
+import { checkCapabilityDocs, checkHomepage, checkMigrations } from "./lib/links.ts";
 import { checkMigrationPages } from "./lib/migrations.ts";
 import { renderFindings } from "./lib/report.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
@@ -32,7 +32,7 @@ const homepages = await mapLimit(
 const migrations = await mapLimit(
   catalog.tools.filter((t) => targets.includes(t.slug)),
   4,
-  (tool) => checkMigrations(tool),
+  async (tool) => [...(await checkMigrations(tool)), ...(await checkCapabilityDocs(tool))],
 );
 const pages = await checkMigrationPages(root, catalog.tools);
 const all = [...findings, ...pages, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];

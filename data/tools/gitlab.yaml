@@ -12,3 +12,14 @@ replaces:
   - tool: bitbucket
     fit: full
     note: Repositories, merge requests and CI/CD on your own server.
+capabilities:
+  ci:
+    docs: https://docs.gitlab.com/ci/
+  container-registry:
+    docs: https://docs.gitlab.com/user/packages/container_registry/
+  package-registry:
+    docs: https://docs.gitlab.com/user/packages/package_registry/
+  wiki:
+    docs: https://docs.gitlab.com/user/project/wiki/
+  pages:
+    docs: https://docs.gitlab.com/user/project/pages/

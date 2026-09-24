@@ -115,6 +115,7 @@ mod tests {
             languages: vec!["Go".into(), "Rust".into()],
             licenses: vec!["MIT".into()],
             categories: vec![],
+            capabilities: BTreeMap::new(),
         }
     }
 

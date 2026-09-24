@@ -69,6 +69,7 @@ const enriched = await mapLimit(catalog.tools, 4, async (tool) => {
     maintainerVerified: evidence.maintainerVerified,
     flags,
     terms: termsOf(tool.terms, evidence.repo.license),
+    capabilities: tool.capabilities ?? {},
   };
   return entry;
 });

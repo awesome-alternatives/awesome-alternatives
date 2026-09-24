@@ -40,6 +40,7 @@ function tool(slug: string, addedAt: string, description: string | null = null, 
     maintainerVerified: false,
     flags: [],
     terms: "open",
+    capabilities: {},
   };
 }
 

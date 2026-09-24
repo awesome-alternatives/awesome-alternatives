@@ -120,7 +120,13 @@ mod tests {
 
     fn index() -> Index {
         let tools = catalog();
-        Index::build(&Words, &tools, &[], &Vocabulary::of(&tools, &[])).unwrap()
+        Index::build(
+            &Words,
+            &tools,
+            &[],
+            &Vocabulary::of(&tools, &[], &Default::default()),
+        )
+        .unwrap()
     }
 
     fn query(text: &str) -> Vector {
@@ -158,6 +164,14 @@ mod tests {
     #[test]
     fn a_failing_model_fails_the_build_instead_of_indexing_zeros() {
         let tools = catalog();
-        assert!(Index::build(&Broken, &tools, &[], &Vocabulary::of(&tools, &[])).is_err());
+        assert!(
+            Index::build(
+                &Broken,
+                &tools,
+                &[],
+                &Vocabulary::of(&tools, &[], &Default::default())
+            )
+            .is_err()
+        );
     }
 }

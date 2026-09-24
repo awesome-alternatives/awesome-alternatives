@@ -112,6 +112,20 @@ impl Search {
         }
 
         let unchecked = qualifiers::apply(query, &mut filters);
+        filters.capabilities = qualifiers::capabilities(query, &loaded.vocabulary);
+        if let Some(category) = filters
+            .replaces
+            .as_deref()
+            .and_then(|slug| category_of(slug, loaded))
+        {
+            filters.capabilities.retain(|c| {
+                loaded
+                    .vocabulary
+                    .capabilities
+                    .get(c)
+                    .is_some_and(|w| w.category == category)
+            });
+        }
         let relevance = match (&filters.replaces, &loaded.index, &vector) {
             (None, Some(index), Some(v)) => Some(index.relevance(v)),
             _ => None,
@@ -158,6 +172,22 @@ impl Search {
     pub fn forget(&self) {
         self.cache.invalidate_all();
     }
+}
+
+fn category_of<'a>(slug: &str, loaded: &'a Loaded) -> Option<&'a str> {
+    let catalog = &loaded.catalog;
+    let tool = catalog
+        .tools
+        .iter()
+        .find(|t| t.slug == slug)
+        .map(|t| t.category.as_str());
+    tool.or_else(|| {
+        catalog
+            .products
+            .iter()
+            .find(|p| p.slug == slug)
+            .map(|p| p.category.as_str())
+    })
 }
 
 fn key(revision: &str, normalized: &str) -> String {
@@ -342,5 +372,54 @@ mod tests {
         let read = search.interpret("semantic-release in rust", &loaded).await;
         assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
         assert!(read.relevance.is_none());
+    }
+
+    fn real() -> Loaded {
+        let catalog = Catalog::parse(include_str!("../../generated/catalog.json")).unwrap();
+        Loaded::new(catalog, None)
+    }
+
+    #[tokio::test]
+    async fn leaving_gitlab_for_ci_and_a_registry_keeps_only_forges_that_declare_both() {
+        let loaded = real();
+        let search = Search::new(None, None, Arc::new(Shared::disabled()));
+        let read = search
+            .interpret(
+                "I want to leave GitLab but I need CI/CD and a container registry",
+                &loaded,
+            )
+            .await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("gitlab"));
+        assert_eq!(read.filters.capabilities, ["ci", "container-registry"]);
+        let slugs: Vec<_> = read
+            .select(&loaded.catalog.tools)
+            .into_iter()
+            .map(|t| t.slug.as_str())
+            .collect();
+        assert!(!slugs.is_empty());
+        for slug in &slugs {
+            let tool = loaded
+                .catalog
+                .tools
+                .iter()
+                .find(|t| t.slug == *slug)
+                .unwrap();
+            assert!(
+                tool.capabilities.contains_key("ci")
+                    && tool.capabilities.contains_key("container-registry"),
+                "{slug}"
+            );
+        }
+    }
+
+    #[tokio::test]
+    async fn a_capability_from_another_category_than_the_target_is_dropped() {
+        let loaded = real();
+        let search = Search::new(None, None, Arc::new(Shared::disabled()));
+        let read = search
+            .interpret("jenkins alternative with a container registry", &loaded)
+            .await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("jenkins"));
+        assert!(read.filters.capabilities.is_empty());
     }
 }

@@ -17,9 +17,10 @@ interface Props {
   names: Record<string, string>;
   examples: string[];
   categories: CategoryOption[];
+  capabilities: Record<string, string>;
 }
 
-export default function Search({ locale, strings, names, examples, categories }: Props) {
+export default function Search({ locale, strings, names, examples, categories, capabilities }: Props) {
   const copy = strings.search;
   const hint = copy.suggestions;
 
@@ -138,6 +139,7 @@ export default function Search({ locale, strings, names, examples, categories }:
             strings={strings}
             result={state.result}
             names={names}
+            capabilities={capabilities}
             onDrop={drop}
             onMore={more}
             appending={appending}

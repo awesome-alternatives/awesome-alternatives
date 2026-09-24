@@ -83,6 +83,22 @@ pub struct Tool {
     pub terms: Terms,
     #[serde(default)]
     pub self_host: bool,
+    #[serde(default)]
+    pub capabilities: BTreeMap<String, Capability>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
+pub struct Capability {
+    pub docs: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub note: Option<String>,
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct CapabilityTerm {
+    pub label: String,
+    #[serde(default, rename = "match")]
+    pub phrases: Vec<String>,
 }
 
 impl Tool {
@@ -97,6 +113,8 @@ pub struct Category {
     pub name: String,
     #[serde(default)]
     pub self_host: bool,
+    #[serde(default)]
+    pub capabilities: BTreeMap<String, CapabilityTerm>,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]

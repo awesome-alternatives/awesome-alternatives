@@ -218,6 +218,8 @@ export const es: Messages = {
     selfHostYes: "Sí",
     website: "Sitio web ↗",
     edit: "Editar esta entrada",
+    capabilities: "Funcionalidades",
+    capabilityDocs: "docs ↗",
     checked: "Leído de GitHub el {date}.",
     edited: "Ficha editada por última vez el {date}.",
   },
