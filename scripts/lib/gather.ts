@@ -1,3 +1,4 @@
+import type { Installations } from "./app.ts";
 import { fetchMaintainerClaim, fetchRecentStargazers, fetchRelease, fetchRepo } from "./facts.ts";
 import type { GitHub } from "./github.ts";
 import type { Evidence } from "./rules.ts";
@@ -11,6 +12,7 @@ export async function gather(
   gh: GitHub,
   tool: Tool,
   withStars: boolean,
+  installations: Installations | null = null,
 ): Promise<Gathered> {
   const repo = await fetchRepo(gh, tool.repository);
   if (!repo) return { repo, release: null, recentStars: [], maintainerVerified: false };
@@ -21,7 +23,9 @@ export async function gather(
     withStars ? fetchRecentStargazers(gh, repo.fullName, repo.stars) : Promise.resolve([]),
   ]);
 
-  return { repo, release, recentStars, maintainerVerified: claim.includes(tool.slug) };
+  const maintainerVerified =
+    claim.includes(tool.slug) || (installations !== null && (await installations.isInstalledOn(repo.fullName)));
+  return { repo, release, recentStars, maintainerVerified };
 }
 
 export async function mapLimit<T, R>(items: readonly T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {

@@ -35,6 +35,14 @@ jobs:
           node-version: '24'
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # The etags turn an unchanged repository into a 304, which GitHub does not
+      # count against the hourly budget, so restoring yesterday's cache keeps a
+      # refresh well inside the 5,000 requests the app installation gets.
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .cache/github-etags.json
+          key: github-etags-${{ github.run_id }}
+          restore-keys: github-etags-
       - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: app
         with:

@@ -80,12 +80,12 @@ export function ownerOf(fullName: string): string {
   return fullName.split("/")[0] ?? fullName;
 }
 
-export function trimmed(value: string | null | undefined): string | null {
+function trimmed(value: string | null | undefined): string | null {
   const text = value?.trim();
   return text ? text : null;
 }
 
-export function websiteOf(blog: string | null | undefined): string | null {
+function websiteOf(blog: string | null | undefined): string | null {
   const text = trimmed(blog);
   if (!text) return null;
   const candidate = /^https?:\/\//i.test(text) ? text : `https://${text}`;
@@ -163,34 +163,16 @@ export async function fetchReleases(gh: GitHub, fullName: string): Promise<Relea
   return (releases ?? [])
     .filter((r) => !r.draft)
     .slice(0, RELEASE_HISTORY)
-    .map((r) =>
-      releaseEntry({
+    .map((r) => {
+      const name = r.name?.trim();
+      return {
         tag: r.tag_name,
-        name: r.name ?? null,
-        body: r.body ?? "",
+        name: name && name !== r.tag_name ? name : summaryOf(r.body ?? ""),
         publishedAt: r.published_at,
         url: r.html_url,
         prerelease: r.prerelease ?? false,
-      }),
-    );
-}
-
-export function releaseEntry(release: {
-  tag: string;
-  name: string | null;
-  body: string;
-  publishedAt: string | null;
-  url: string;
-  prerelease: boolean;
-}): ReleaseEntry {
-  const name = release.name?.trim();
-  return {
-    tag: release.tag,
-    name: name && name !== release.tag ? name : summaryOf(release.body),
-    publishedAt: release.publishedAt,
-    url: release.url,
-    prerelease: release.prerelease,
-  };
+      };
+    });
 }
 
 const SUMMARY_LENGTH = 120;
@@ -213,21 +195,19 @@ export function summaryOf(body: string): string | null {
   return null;
 }
 
-export function encodeRef(ref: string): string {
+function encodeRef(ref: string): string {
   return ref.split("/").map(encodeURIComponent).join("/");
 }
 
 async function isTagSigned(gh: GitHub, fullName: string, tag: string): Promise<boolean> {
   const ref = await gh.get<ApiRef>(`/repos/${fullName}/git/ref/tags/${encodeRef(tag)}`);
   if (!ref) return false;
-  if (ref.object.type === "tag") return isAnnotatedTagSigned(gh, fullName, ref.object.sha);
+  if (ref.object.type === "tag") {
+    const annotated = await gh.get<ApiVerification>(`/repos/${fullName}/git/tags/${ref.object.sha}`);
+    return annotated?.verification?.verified === true;
+  }
   const commit = await gh.get<ApiCommit>(`/repos/${fullName}/commits/${ref.object.sha}`);
   return commit?.commit.verification?.verified === true;
-}
-
-export async function isAnnotatedTagSigned(gh: GitHub, fullName: string, sha: string): Promise<boolean> {
-  const annotated = await gh.get<ApiVerification>(`/repos/${fullName}/git/tags/${sha}`);
-  return annotated?.verification?.verified === true;
 }
 
 export function claimedSlugs(text: string): string[] {
