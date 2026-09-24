@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.16.4] - 2026-09-24
+
+### Bug Fixes
+
+- fix(security): allowlist URL schemes, cap upstream bodies, pin base images, ignore .env (#182)
+
 ## [0.16.3] - 2026-09-24
 
 ### Bug Fixes

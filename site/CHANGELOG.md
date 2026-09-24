@@ -4,6 +4,17 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.59.0] - 2026-09-24
+
+### Features
+
+- feat: add log storage with Loki, and 238 tools and 67 closed products across 61 new categories
+
+### Bug Fixes
+
+- fix(site): tell apart tools whose repositories share a description
+- fix(security): allowlist URL schemes, cap upstream bodies, pin base images, ignore .env (#182)
+
 ## [0.58.4] - 2026-09-24
 
 ### Bug Fixes
