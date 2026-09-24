@@ -3,7 +3,9 @@ import { join } from "node:path";
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
+import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { createGitHub } from "./lib/github.ts";
+import { createGraphQL } from "./lib/graphql.ts";
 import type { RefreshedEntry } from "./lib/merge.ts";
 
 const [slug, outDir] = process.argv.slice(2);
@@ -21,9 +23,11 @@ if (!tool) {
 }
 
 const gh = createGitHub(process.env.GITHUB_TOKEN);
-const enricher = await createEnricher(root, gh, installationsFromEnv(process.env), catalog.tools, new Date());
-const enriched = await enricher.enrich(tool);
-const [owner = null] = enriched ? Object.values(await fetchOwners(gh, [enriched])) : [];
+const gql = createGraphQL(process.env.GITHUB_TOKEN);
+const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, new Date());
+const facts = await fetchRepositories(gql, gh, [tool]);
+const enriched = await enricher.enrich(tool, facts.get(slug) ?? null);
+const [owner = null] = enriched ? Object.values(await fetchOwners(gql, [enriched])) : [];
 const entry: RefreshedEntry = { slug, tool: enriched, owner };
 
 await mkdir(outDir, { recursive: true });

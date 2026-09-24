@@ -1,10 +1,7 @@
 import assert from "node:assert/strict";
 import { generateKeyPairSync, verify } from "node:crypto";
 import { describe, it } from "node:test";
-import { appJwt, createInstallations, installationsFromEnv } from "../scripts/lib/app.ts";
-import { gather } from "../scripts/lib/gather.ts";
-import type { GitHub } from "../scripts/lib/github.ts";
-import type { Tool } from "../scripts/lib/types.ts";
+import { appJwt, createInstallations, installationsFromEnv, isMaintainerVerified } from "../scripts/lib/app.ts";
 
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 const pem = privateKey.export({ type: "pkcs8", format: "pem" }).toString();
@@ -78,23 +75,7 @@ describe("installationsFromEnv", () => {
   });
 });
 
-describe("gather with installations", () => {
-  const tool = { slug: "tool", repository: "https://github.com/acme/tool" } as Tool;
-
-  function github(claim: string | null): GitHub {
-    return {
-      async get<T>(path: string): Promise<T | null> {
-        if (path === "/repos/acme/tool") {
-          return { full_name: "acme/tool", default_branch: "main", stargazers_count: 1, license: null, topics: [] } as T;
-        }
-        if (path.startsWith("/repos/acme/tool/contents/") && claim !== null) {
-          return { encoding: "base64", content: Buffer.from(claim).toString("base64") } as T;
-        }
-        return null;
-      },
-    };
-  }
-
+describe("isMaintainerVerified", () => {
   function installedOn(installed: boolean, asked: string[]) {
     return {
       async isInstalledOn(fullName: string) {
@@ -106,20 +87,18 @@ describe("gather with installations", () => {
 
   it("verifies a tool whose repository has the app installed and no claim file", async () => {
     const asked: string[] = [];
-    const gathered = await gather(github(null), tool, false, installedOn(true, asked));
-    assert.equal(gathered.maintainerVerified, true);
+    assert.equal(await isMaintainerVerified("tool", [], "acme/tool", installedOn(true, asked)), true);
     assert.deepEqual(asked, ["acme/tool"]);
   });
 
   it("does not ask about the app when the claim file already verifies the tool", async () => {
     const asked: string[] = [];
-    const gathered = await gather(github("tool\n"), tool, false, installedOn(false, asked));
-    assert.equal(gathered.maintainerVerified, true);
+    assert.equal(await isMaintainerVerified("tool", ["other", "tool"], "acme/tool", installedOn(false, asked)), true);
     assert.deepEqual(asked, []);
   });
 
   it("leaves a tool unverified with neither the file nor the app", async () => {
-    const gathered = await gather(github(null), tool, false, installedOn(false, []));
-    assert.equal(gathered.maintainerVerified, false);
+    assert.equal(await isMaintainerVerified("tool", ["other"], "acme/tool", installedOn(false, [])), false);
+    assert.equal(await isMaintainerVerified("tool", [], "acme/tool", null), false);
   });
 });
