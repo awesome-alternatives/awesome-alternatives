@@ -87,7 +87,7 @@ export const pages: Pages = {
       noRelease: "Das Repository hat weder ein Release noch einen Tag, es gibt also keine Version zum Pinnen.",
       inactive: "Seit mehr als {inactiveDays} Tagen wurde nichts gepusht. Archivierte Repositories sind hiervon ausgenommen.",
       starSpike:
-        "{spikeThreshold} oder mehr der jüngsten Sterne kamen innerhalb von {spikeHours} Stunden. Gekaufte Sterne treffen schubweise ein, ein Launch auf Hacker News aber auch, deshalb entscheidet hier ein Mensch. Diese Prüfung läuft, wenn ein Pull Request den Eintrag anlegt oder ändert, nicht beim nächtlichen Abgleich. Bei den größten Repositories weigert sich GitHub, tief durch die Stargazer zu blättern, dort wird die Prüfung übersprungen statt geraten.",
+        "Ein Tag, der {spikeThreshold} oder mehr Sterne brachte und mindestens das {spikeFactor}-Fache des üblichen täglichen Tempos des Tools im letzten Monat. Gekaufte Sterne treffen schubweise ein, ein Launch auf Hacker News aber auch, deshalb entscheidet hier ein Mensch. GitHub zeigt nicht mehr an, wer ein Repository mit einem Stern markiert hat, also speichert der nächtliche Abgleich die Sternzahl jedes Tages und vergleicht die Tage. Er braucht eine Woche dieser Historie, bevor er urteilt, ein Tool wird also erst geprüft, wenn es gelistet ist.",
       blockingBefore:
         "Andere Probleme blockieren stattdessen den Pull Request: ein Repository, das privat ist, ein Fork, archiviert und trotzdem als Alternative angeboten, jünger als {minAgeDays} Tage oder bereits unter einem anderen Slug gelistet.",
       contributeLink: "Der Leitfaden für Beiträge",

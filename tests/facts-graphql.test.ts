@@ -112,7 +112,7 @@ describe("mapRepository on a recorded response", () => {
   it("follows a renamed repository to its new name, which keeps the moved flag", () => {
     const mapped = mapRepository(node("deno-std"));
     assert.equal(mapped.repo.fullName, "denoland/std");
-    const codes = judge(tools[2] as Tool, { ...mapped, recentStars: [] }, new Date("2026-09-24T00:00:00Z"), new Set()).map((f) => f.code);
+    const codes = judge(tools[2] as Tool, { ...mapped, starHistory: [] }, new Date("2026-09-24T00:00:00Z"), new Set()).map((f) => f.code);
     assert.ok(codes.includes("moved"));
   });
 

@@ -128,6 +128,11 @@ export interface ReleaseFacts {
   signed: boolean;
 }
 
+export interface StarPoint {
+  at: string;
+  stars: number;
+}
+
 export interface TrendFacts {
   stars: number;
   exact: boolean;

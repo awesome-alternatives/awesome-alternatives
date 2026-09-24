@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchRecentStargazers, fetchReleases, licenseOf, ownerOf, RELEASE_HISTORY, STARGAZER_REACH, summaryOf } from "../scripts/lib/facts.ts";
+import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchReleases, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
 import { type GitHub, GitHubError } from "../scripts/lib/github.ts";
 
 describe("licenseOf", () => {
@@ -25,50 +25,6 @@ function github(respond: (path: string) => unknown): GitHub {
     },
   };
 }
-
-describe("fetchRecentStargazers", () => {
-  it("reads the last two pages, where the most recent stars are", async () => {
-    const asked: string[] = [];
-    const stars = await fetchRecentStargazers(
-      github((path) => {
-        asked.push(path);
-        return [{ starred_at: "2026-09-01T00:00:00Z" }];
-      }),
-      "o/r",
-      250,
-    );
-    assert.deepEqual(asked, ["/repos/o/r/stargazers?per_page=100&page=2", "/repos/o/r/stargazers?per_page=100&page=3"]);
-    assert.equal(stars.length, 2);
-  });
-
-  it("asks for nothing when the newest stars sit past the page GitHub serves", async () => {
-    const asked: string[] = [];
-    const stars = await fetchRecentStargazers(
-      github((path) => {
-        asked.push(path);
-        return [{ starred_at: "2026-09-01T00:00:00Z" }];
-      }),
-      "o/r",
-      STARGAZER_REACH + 1,
-    );
-    assert.deepEqual(asked, []);
-    assert.deepEqual(stars, []);
-  });
-
-  it("gives up on the star check when GitHub refuses to page that deep", async () => {
-    const refused = github((path) => {
-      throw new GitHubError(403, path, "Resource not accessible by integration");
-    });
-    assert.deepEqual(await fetchRecentStargazers(refused, "o/r", 12_400), []);
-  });
-
-  it("still fails on any other error, so a real outage is not mistaken for no stars", async () => {
-    const down = github((path) => {
-      throw new GitHubError(502, path, "Bad Gateway");
-    });
-    await assert.rejects(fetchRecentStargazers(down, "o/r", 12_400), GitHubError);
-  });
-});
 
 describe("fetchReleases", () => {
   const release = (tag: string, extra: Record<string, unknown> = {}) => ({
