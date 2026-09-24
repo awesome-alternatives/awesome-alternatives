@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchReleases, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
+import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchReleases, fetchRepo, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
 import { type GitHub, GitHubError } from "../scripts/lib/github.ts";
 
 describe("licenseOf", () => {
@@ -73,6 +73,38 @@ describe("fetchReleases", () => {
 
   it("is empty for a repository with no releases", async () => {
     assert.deepEqual(await fetchReleases(github(() => null), "o/r"), []);
+  });
+});
+
+describe("fetchRepo", () => {
+  const repo = (homepage: string | null) => ({
+    full_name: "acme/tool",
+    description: null,
+    homepage,
+    language: "Rust",
+    license: null,
+    stargazers_count: 1,
+    forks_count: 0,
+    archived: false,
+    fork: false,
+    private: false,
+    created_at: "2026-01-01T00:00:00Z",
+    pushed_at: "2026-09-01T00:00:00Z",
+    default_branch: "main",
+  });
+  const homepageOf = async (homepage: string | null) => (await fetchRepo(github(() => repo(homepage)), "https://github.com/acme/tool"))?.homepage;
+
+  it("drops a homepage that is not a web URL, so it never reaches a link", async () => {
+    assert.equal(await homepageOf("javascript:alert(document.cookie)"), null);
+    assert.equal(await homepageOf("JAVASCRIPT:alert(1)"), null);
+    assert.equal(await homepageOf("data:text/html,<script>alert(1)</script>"), null);
+  });
+
+  it("keeps a web homepage and gives a bare domain a scheme", async () => {
+    assert.equal(await homepageOf("https://example.com/docs"), "https://example.com/docs");
+    assert.equal(await homepageOf("example.com"), "https://example.com");
+    assert.equal(await homepageOf(""), null);
+    assert.equal(await homepageOf(null), null);
   });
 });
 

@@ -26,20 +26,7 @@ pub fn sanitize(html: &str, full_name: &str) -> String {
         .add_tag_attributes("source", ["srcset", "media"])
         .attribute_filter(
             move |element, attribute, value| match (element, attribute) {
-                ("source", "srcset") => Some(Cow::Owned(
-                    value
-                        .split(',')
-                        .map(|candidate| {
-                            let candidate = candidate.trim();
-                            let (url, descriptor) =
-                                candidate.split_once(' ').unwrap_or((candidate, ""));
-                            format!("{} {descriptor}", absolute(url, &srcset_base))
-                                .trim_end()
-                                .to_owned()
-                        })
-                        .collect::<Vec<_>>()
-                        .join(", "),
-                )),
+                ("source", "srcset") => Some(Cow::Owned(srcset(value, &srcset_base))),
                 _ => Some(Cow::Borrowed(value)),
             },
         )
@@ -70,6 +57,21 @@ impl<'a> UrlRelativeEvaluate<'a> for Repository {
         };
         Some(absolute(url, base))
     }
+}
+
+fn srcset(value: &str, base: &Url) -> String {
+    value
+        .split(',')
+        .filter_map(|candidate| {
+            let candidate = candidate.trim();
+            let (url, descriptor) = candidate.split_once(' ').unwrap_or((candidate, ""));
+            let url = absolute(url, base);
+            base.join(&url)
+                .is_ok_and(|parsed| matches!(parsed.scheme(), "http" | "https"))
+                .then(|| format!("{url} {descriptor}").trim_end().to_owned())
+        })
+        .collect::<Vec<_>>()
+        .join(", ")
 }
 
 fn absolute<'u>(value: &'u str, base: &Url) -> Cow<'u, str> {
@@ -132,6 +134,32 @@ mod tests {
             )
         );
         assert!(html.contains(r#"media="(prefers-color-scheme: dark)""#));
+    }
+
+    #[test]
+    fn srcset_keeps_only_web_urls() {
+        for hostile in [
+            "javascript:alert(1)",
+            "JavaScript:alert(1) 2x",
+            "java	script:alert(1)",
+            "data:text/html;base64",
+            "vbscript:msgbox(1)",
+            "mailto:a@b.c",
+        ] {
+            let html = clean(&format!(
+                r#"<picture><source srcset="{hostile}"><img src="a.png"></picture>"#
+            ));
+            assert!(
+                html.contains(r#"<source srcset="">"#),
+                "{hostile:?} gave {html}"
+            );
+        }
+        let html = clean(
+            r#"<picture><source srcset="javascript:alert(1) 1x, ./dark.png 2x, https://cdn.example/a.png 3x, //cdn.example/b.png 4x"><img src="a.png"></picture>"#,
+        );
+        assert!(html.contains(
+            r#"srcset="https://raw.githubusercontent.com/acme/tool/HEAD/dark.png 2x, https://cdn.example/a.png 3x, //cdn.example/b.png 4x""#
+        ), "{html}");
     }
 
     #[test]

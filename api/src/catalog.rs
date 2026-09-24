@@ -3,6 +3,10 @@ use std::path::Path;
 
 use serde::{Deserialize, Serialize};
 
+use crate::body;
+
+pub const CATALOG_BYTES: usize = 16 * 1024 * 1024;
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "kebab-case")]
 pub enum Fit {
@@ -169,7 +173,7 @@ pub enum CatalogError {
     #[error("reading {0}: {1}")]
     Read(String, std::io::Error),
     #[error("fetching {0}: {1}")]
-    Fetch(String, reqwest::Error),
+    Fetch(String, body::Error),
     #[error("parsing the catalog: {0}")]
     Parse(#[from] serde_json::Error),
 }
@@ -187,8 +191,9 @@ pub async fn load(source: &str, http: &reqwest::Client) -> Result<Catalog, Catal
     Ok(Catalog::parse(&body)?)
 }
 
-async fn fetch(url: &str, http: &reqwest::Client) -> Result<String, reqwest::Error> {
-    http.get(url).send().await?.error_for_status()?.text().await
+async fn fetch(url: &str, http: &reqwest::Client) -> Result<String, body::Error> {
+    let response = http.get(url).send().await?.error_for_status()?;
+    body::text(response, CATALOG_BYTES).await
 }
 
 fn revision(body: &str) -> String {
@@ -213,6 +218,22 @@ mod tests {
         assert_eq!(first.revision, again.revision);
         assert_eq!(first.revision.len(), 16);
         assert_ne!(revision("{\"tools\":[]}"), first.revision);
+    }
+
+    #[tokio::test]
+    async fn a_remote_catalog_over_the_size_cap_is_refused() {
+        let app = axum::Router::new().route(
+            "/catalog.json",
+            axum::routing::get(|| async { " ".repeat(CATALOG_BYTES + 1) }),
+        );
+        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+        let url = format!("http://{}/catalog.json", listener.local_addr().unwrap());
+        tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
+        let error = load(&url, &reqwest::Client::new()).await.unwrap_err();
+        assert!(matches!(
+            error,
+            CatalogError::Fetch(_, body::Error::TooLarge(CATALOG_BYTES))
+        ));
     }
 
     #[test]

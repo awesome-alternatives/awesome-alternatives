@@ -4,3 +4,6 @@ site/generated
 site/.astro
 api/target
 .git
+**/.env
+**/.env.*
+!**/.env.example

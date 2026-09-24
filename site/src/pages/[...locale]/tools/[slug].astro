@@ -18,6 +18,7 @@ import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { historyUrl } from "../../../lib/freshness.ts";
+import { webHref } from "../../../lib/href.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { migrationPath } from "../../../lib/migrations.ts";
 import { breadcrumbList, softwareSourceCode } from "../../../lib/structuredData.ts";
@@ -34,6 +35,7 @@ interface Props {
 const { locale, tool } = Astro.props;
 const m = messages(locale);
 const { repo, release, releases } = tool;
+const homepage = webHref(repo.homepage);
 const replacedBy = alternativesTo(tools, tool.slug);
 const category = categories[tool.category];
 const absolute = (path: string) => new URL(path, Astro.site).href;
@@ -232,7 +234,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
 
         <p class="about-links">
           <a class="repo-link" href={source}>github.com/{repo.fullName}{tool.path && `/${tool.path}`} ↗</a>
-          {repo.homepage && <a href={repo.homepage}>{m.tool.website}</a>}
+          {homepage && <a href={homepage}>{m.tool.website}</a>}
           <a href={edit}>{m.tool.edit}</a>
         </p>
       </aside>

@@ -1,4 +1,4 @@
-FROM node:24-slim AS build
+FROM node:24-slim@sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6 AS build
 RUN corepack enable
 WORKDIR /repo
 COPY generated/catalog.json generated/
@@ -17,7 +17,7 @@ RUN pnpm build \
       -o -name '*.webmanifest' \) \
       -exec gzip -9 -k {} +
 
-FROM nginxinc/nginx-unprivileged:1-alpine
+FROM nginxinc/nginx-unprivileged:1-alpine@sha256:6a23acdfca2b9cfbcec61419e3f1426bcbedb91362f2f19306a8567423bb4612
 COPY site/nginx.conf /etc/nginx/conf.d/default.conf
 COPY site/security-headers.conf /etc/nginx/snippets/security-headers.conf
 COPY --from=build /repo/site/generated/compare-pairs.conf /etc/nginx/conf.d/compare-pairs.conf

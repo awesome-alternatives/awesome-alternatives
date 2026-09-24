@@ -7,6 +7,7 @@ import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import { ownerFacts, ownerGroups } from "../../../lib/catalog.ts";
+import { webHref } from "../../../lib/href.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -27,6 +28,7 @@ const { locale, login, facts, tools } = Astro.props;
 const m = messages(locale).owner;
 const name = facts?.name ?? login;
 const profile = facts?.url ?? `https://github.com/${login}`;
+const website = webHref(facts?.website);
 ---
 
 <ToolListing
@@ -42,6 +44,6 @@ const profile = facts?.url ?? `https://github.com/${login}`;
   {facts?.bio && <p class="owner-bio">{facts.bio}</p>}
   <p class="links">
     <a href={profile}>{m.profile}</a>
-    {facts?.website && <a href={facts.website}>{m.website}</a>}
+    {website && <a href={website}>{m.website}</a>}
   </p>
 </ToolListing>
