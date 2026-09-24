@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.53.0] - 2026-09-24
+
+### Features
+
+- feat: hand-written migration notes for five replacements, with review dates (#154)
+
 ## [0.52.1] - 2026-09-24
 
 ### Bug Fixes
