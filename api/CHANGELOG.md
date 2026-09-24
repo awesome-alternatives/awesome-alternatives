@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.16.1] - 2026-09-24
+
+### Bug Fixes
+
+- fix(api): rate-limit the detail routes and never cache a GitHub refusal as no advisories (#179)
+
 ## [0.16.0] - 2026-09-24
 
 ### Features
