@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.54.0] - 2026-09-24
+
+### Features
+
+- feat: search by what a tool can do, with each result saying which asked-for capabilities it has (#158)
+
 ## [0.53.2] - 2026-09-24
 
 ### Bug Fixes

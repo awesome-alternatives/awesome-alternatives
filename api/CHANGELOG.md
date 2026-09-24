@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.14.0] - 2026-09-24
+
+### Features
+
+- feat: search by what a tool can do, with each result saying which asked-for capabilities it has (#158)
+
 ## [0.13.1] - 2026-09-24
 
 ### Refactoring
