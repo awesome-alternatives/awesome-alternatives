@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.55.0] - 2026-09-24
+
+### Features
+
+- feat(refresh): refresh selected tools in a matrix and splice them into the catalog (#165)
+
 ## [0.54.2] - 2026-09-24
 
 ### Bug Fixes
