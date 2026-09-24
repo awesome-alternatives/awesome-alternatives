@@ -5,7 +5,7 @@ import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
-import { publish } from "./lib/publish.ts";
+import { publishOrExplain } from "./lib/publish.ts";
 
 const root = process.cwd();
 const catalog = await loadSoundCatalog(root);
@@ -20,7 +20,8 @@ const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
 const owners = await fetchOwners(gql, tools);
 
-await publish(root, catalog, { checkedAt: now.toISOString(), owners, tools });
+const published = await publishOrExplain(root, catalog, { checkedAt: now.toISOString(), owners, tools });
 
 const { queries, cost, remaining } = gql.spent();
-console.log(`refreshed ${tools.length} tools in ${queries} GraphQL queries costing ${cost} points, ${remaining ?? "?"} left`);
+const outcome = published ? `refreshed ${tools.length} tools` : "refused to publish";
+console.log(`${outcome} in ${queries} GraphQL queries costing ${cost} points, ${remaining ?? "?"} left`);

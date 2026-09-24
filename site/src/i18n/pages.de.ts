@@ -35,7 +35,7 @@ export const pages: Pages = {
       releaseMiddle: "installiert ist oder der Release-Workflow",
       releaseAfter: "ausführt.",
       commit:
-        "Wenn sich etwas geändert hat, committet der Workflow den neuen Katalog und ein neuer Build dieser Seite geht raus. Ein Tool, dessen Repository GitHub nicht mehr zurückgibt, weil es gelöscht oder auf privat gestellt wurde, fällt aus dem Katalog.",
+        "Wenn sich etwas geändert hat, committet der Workflow den neuen Katalog und ein neuer Build dieser Seite geht raus. Gibt GitHub das Repository eines gelisteten Tools nicht mehr zurück, weil es gelöscht oder auf privat gestellt wurde, veröffentlicht der Abgleich nichts und schlägt fehl, damit ein Mensch nachsieht: Ein Tool verlässt den Katalog nur über einen Pull Request, der seinen Eintrag entfernt.",
     },
     marks: {
       heading: "Kennzeichen",
