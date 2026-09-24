@@ -3,6 +3,7 @@ import type { TrendFacts } from "../../../scripts/lib/types.ts";
 import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
 import { comparePath } from "../lib/compare.ts";
+import { migrationPath } from "../lib/migrations.ts";
 import { day, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
@@ -22,9 +23,10 @@ interface Props {
   comparable?: boolean;
   trend?: TrendFacts;
   replaces?: Replaced[];
+  notes?: boolean;
 }
 
-export function ToolCard({ locale, strings, tool, target, targetName, comparable, trend, replaces }: Props) {
+export function ToolCard({ locale, strings, tool, target, targetName, comparable, trend, replaces, notes }: Props) {
   const replacement = target ? tool.replaces.find((r) => r.tool === target) : undefined;
   const { release, repo } = tool;
   const flags = tool.flags.filter((flag): flag is LabelledFlag => flag !== "archived");
@@ -62,6 +64,11 @@ export function ToolCard({ locale, strings, tool, target, targetName, comparable
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       {replacement?.migration && (
         <p className="migration-link">
+          {notes && target && (
+            <>
+              <a href={pathFor(locale, migrationPath(target, tool.slug))}>{card.migrationNotes}</a>{" "}
+            </>
+          )}
           <a href={replacement.migration}>{card.migration}</a>
         </p>
       )}

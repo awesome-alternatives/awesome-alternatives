@@ -13,6 +13,7 @@ import { categories, categoryName, pairs, type Target, targets } from "../../../
 import { comparableWith, comparePath } from "../../../lib/compare.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { targetDescription, targetTitle } from "../../../lib/intent.ts";
+import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { slugify } from "../../../lib/slug.ts";
 import { breadcrumbList, itemList } from "../../../lib/structuredData.ts";
 
@@ -40,6 +41,7 @@ const crumbs = withHome(locale, m.breadcrumb.home, [
     : []),
   { name: title, href: pathFor(locale, `/alternatives/${target.slug}/`) },
 ]);
+const notes = (await migrationPairs()).filter((pair) => pair.from === target.slug).map((pair) => pair.to);
 const shown = new Set(target.alternatives.map((tool) => tool.slug));
 const headToHead = pairs.filter((pair) => shown.has(pair.a.slug) && shown.has(pair.b.slug));
 const structuredData = [
@@ -54,7 +56,7 @@ const structuredData = [
 <Base
   title={title}
   structuredData={structuredData}
-  description={targetDescription(locale, m.target, target.name, target.slug, target.alternatives)}
+  description={targetDescription(m.target, target.name, target.slug, target.alternatives)}
 >
   <Breadcrumbs locale={locale} crumbs={crumbs} />
   <p class="context">
@@ -95,6 +97,7 @@ const structuredData = [
       targetName={target.name}
       comparable={comparable}
       selfHostCategories={selfHostCategories}
+      notes={notes}
     />
   </section>
 

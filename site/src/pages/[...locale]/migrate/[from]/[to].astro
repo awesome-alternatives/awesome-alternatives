@@ -1,0 +1,108 @@
+---
+import type { GetStaticPaths } from "astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
+
+import Breadcrumbs from "../../../../components/Breadcrumbs.astro";
+import type { Locale } from "../../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../../i18n/index.ts";
+import { localePathsFor } from "../../../../i18n/paths.ts";
+import Base from "../../../../layouts/Base.astro";
+import { withHome } from "../../../../lib/breadcrumbs.ts";
+import { categoryName, nameOf, productBySlug, toolBySlug } from "../../../../lib/catalog.ts";
+import { majorOf, migrationPath, pairOf, staleness } from "../../../../lib/migrations.ts";
+import { slugify } from "../../../../lib/slug.ts";
+import { breadcrumbList } from "../../../../lib/structuredData.ts";
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection("migrations");
+  return localePathsFor(
+    entries.flatMap((entry) => {
+      const pair = pairOf(entry.id);
+      return pair ? [{ params: pair, props: { entry, ...pair } }] : [];
+    }),
+  );
+}) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  entry: CollectionEntry<"migrations">;
+  from: string;
+  to: string;
+}
+
+const { locale, entry, from, to } = Astro.props;
+const m = messages(locale);
+const card = m.islands.card;
+const replacing = toolBySlug(to);
+const replacement = replacing?.replaces.find((r) => r.tool === from);
+if (!replacing || !replacement?.migration) throw new Error(`${entry.id}: ${to} gives no official guide for ${from}`);
+const leaving = toolBySlug(from);
+const closed = productBySlug(from);
+const names = { from: nameOf(from), to: nameOf(to) };
+const title = format(m.migrate.title, names);
+const { Content } = await render(entry);
+const due = staleness(entry.data, new Date(), (slug) => majorOf(toolBySlug(slug)?.release?.tag));
+const reasons = due.map((reason) =>
+  reason.kind === "age" ? m.migrate.dueAge : format(m.migrate.dueMajor, { name: nameOf(reason.slug) }),
+);
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  { name: categoryName(replacing.category), href: pathFor(locale, `/categories/${slugify(replacing.category)}/`) },
+  { name: title, href: pathFor(locale, migrationPath(from, to)) },
+]);
+const trail = breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: new URL(crumb.href, Astro.site).href })));
+const termsOf = (tool: typeof replacing) => `${tool.repo.license ?? card.noLicense}, ${m.islands.terms[tool.terms]}`;
+---
+
+<Base title={title} description={format(m.migrate.description, names)} structuredData={[trail]}>
+  <Breadcrumbs locale={locale} crumbs={crumbs} />
+  <p class="context">{m.migrate.context}</p>
+  <h1>{title}</h1>
+  {reasons.length > 0 && <p class="review-due" role="note">{format(m.migrate.due, { reasons: reasons.join("; ") })}</p>}
+
+  <section class="page-section">
+    <h2>{m.migrate.terms}</h2>
+    <dl class="about-facts">
+      <div>
+        <dt>{names.from}</dt>
+        <dd>{leaving ? termsOf(leaving) : closed ? format(m.target.closed, { vendor: closed.vendor }) : ""}</dd>
+      </div>
+      <div>
+        <dt>{names.to}</dt>
+        <dd>{termsOf(replacing)}</dd>
+      </div>
+      <div class="full">
+        <dt>{m.migrate.fit}</dt>
+        <dd>
+          <a href={pathFor(locale, `/about/#${replacement.fit}`)}>{m.islands.fit[replacement.fit]}</a>
+          {replacement.note && <span class="fit-note"> {replacement.note}</span>}
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  {locale !== "en" && <p class="english-only">{m.migrate.englishOnly}</p>}
+  <article class="prose migration-body" lang="en">
+    <Content />
+  </article>
+
+  <section class="page-section">
+    <h2>{m.migrate.guide}</h2>
+    <p class="about-more">
+      <a href={replacement.migration}>{format(m.migrate.guideLink, { name: names.to })}</a>
+    </p>
+    <p class="summary">{format(m.migrate.reviewed, { date: entry.data.reviewed })}</p>
+    <h3>{m.migrate.sources}</h3>
+    <ul class="sources">
+      {
+        entry.data.sources.map((source) => (
+          <li>
+            <a href={source}>{source}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="about-more">
+      <a href={pathFor(locale, `/alternatives/${from}/`)}>{format(m.migrate.alternativesLink, { name: names.from })}</a>
+    </p>
+  </section>
+</Base>

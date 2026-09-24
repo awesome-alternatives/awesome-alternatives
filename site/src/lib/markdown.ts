@@ -14,6 +14,7 @@ export interface Surroundings {
   categoryName: string;
   selfHost: boolean;
   checkedAt: string | null;
+  migrationNotes: string[];
   nameOf: (slug: string) => string;
   replacedBy: { slug: string; name: string }[];
 }
@@ -54,6 +55,9 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
         `- ${around.nameOf(replacement.tool)} (${replacement.fit}):${note || " no note"} ${SITE}/alternatives/${replacement.tool}/`,
       );
       if (replacement.migration) out.push(`  - Official migration guide: ${replacement.migration}`);
+      if (around.migrationNotes.includes(replacement.tool)) {
+        out.push(`  - Migration notes: ${SITE}/migrate/${replacement.tool}/${tool.slug}/`);
+      }
     }
     out.push("");
   }

@@ -68,6 +68,35 @@ description: Anthropic's coding agent, which reads a codebase, edits files and r
   comparison: the comparison lives in each tool's `fit` and `note`.
 - It gets an alternatives page and no tool page, since there are no GitHub facts to show.
 
+## Writing migration notes
+
+A replacement with an official `migration` guide can also get a page at `/migrate/{from}/{to}/`,
+written by hand in `data/migrations/{from}--{to}.md`:
+
+```markdown
+---
+reviewed: 2026-09-24
+majors:
+  redis: 8
+  valkey: 9
+sources:
+  - https://valkey.io/topics/migration/
+---
+
+## Compatibility
+
+## Before you switch
+
+## Pitfalls
+```
+
+- Only write what a source you list says. The page restates the official guide and points at what
+  it leaves out; it never replaces it.
+- `majors` records the major version of each side when you reviewed the page. The page is marked as
+  due for review once `reviewed` is a year old, or when either side ships a newer major release.
+- The licence, terms and fit shown on the page come from the catalog, not from this file.
+- Content is in English for now; the rest of the page is translated.
+
 ## What CI checks
 
 Every pull request runs the checks below against GitHub for the entries it touches, and writes the

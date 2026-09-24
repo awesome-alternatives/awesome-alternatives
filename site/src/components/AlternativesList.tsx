@@ -25,6 +25,7 @@ interface Props {
   targetName: string;
   comparable: string[];
   selfHostCategories: string[];
+  notes: string[];
 }
 
 interface Applied {
@@ -42,6 +43,7 @@ export default function AlternativesList({
   targetName,
   comparable,
   selfHostCategories,
+  notes,
 }: Props) {
   const [filters, setFilters] = useState(NO_FILTERS);
   const [unchecked, setUnchecked] = useState<readonly string[]>([]);
@@ -188,6 +190,7 @@ export default function AlternativesList({
               target={target}
               targetName={targetName}
               comparable={comparable.includes(tool.slug)}
+              notes={notes.includes(tool.slug)}
             />
           ))}
         </div>

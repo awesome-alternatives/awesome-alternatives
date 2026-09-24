@@ -154,6 +154,23 @@ export const es: Messages = {
     home: "Inicio",
   },
 
+  migrate: {
+    title: "Migrar de {from} a {to}",
+    description: "Pasar de {from} a {to}: licencia, compatibilidad, pasos y trampas, según la guía oficial.",
+    context: "migración",
+    terms: "Licencia y condiciones",
+    fit: "Nivel de sustitución",
+    englishOnly: "Esta página está escrita en inglés.",
+    guide: "Guía oficial",
+    guideLink: "Guía de migración de {name} ↗",
+    sources: "Fuentes",
+    reviewed: "Revisada el {date}.",
+    due: "Pendiente de revisión: {reasons}.",
+    dueAge: "la última revisión fue hace más de un año",
+    dueMajor: "{name} ha publicado una nueva versión mayor desde entonces",
+    alternativesLink: "Otras alternativas a {name} →",
+  },
+
   target: {
     title: { one: "1 alternativa a {name}", other: "{n} alternativas a {name}" },
     titleOpen: { one: "1 alternativa de código abierto a {name}", other: "{n} alternativas de código abierto a {name}" },
