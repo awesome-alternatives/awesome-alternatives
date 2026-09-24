@@ -1,4 +1,6 @@
 export const REPO = "https://github.com/awesome-alternatives/awesome-alternatives";
+export const APP = "https://github.com/apps/awesome-alternatives";
+export const REFRESH_ACTION = "https://github.com/awesome-alternatives/refresh-action";
 
 const SKELETON = `name: The name people call it
 repository: https://github.com/owner/name

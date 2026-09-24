@@ -27,6 +27,10 @@ export const pages = {
       ],
       maintainerFileBefore: "the maintainer file described under",
       maintainerFileLink: "verified",
+      releaseBefore: "Between two nightly runs, a published release refreshes its tool within minutes when the repository has the",
+      releaseApp: "awesome-alternatives GitHub App",
+      releaseMiddle: "installed, or runs",
+      releaseAfter: "in its release workflow.",
       commit:
         "When anything changed, the workflow commits the new catalog and a new build of this site goes out. A tool whose repository GitHub no longer returns, because it was deleted or made private, is left out of the catalog.",
     },
@@ -42,6 +46,9 @@ export const pages = {
         fileAfter: "file at the root of its default branch, with",
         slugAfter:
           "set to this entry. Only someone with write access to the repository can add it, so the mark says its maintainers stand behind the entry. The refresh reads the file every night.",
+        appBefore: "The mark is also set when the",
+        appLink: "awesome-alternatives GitHub App",
+        appAfter: "is installed on the repository, since installing an app on it takes admin rights.",
       },
       archived: {
         term: "archived",

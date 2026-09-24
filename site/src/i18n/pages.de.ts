@@ -30,6 +30,10 @@ export const pages: Pages = {
       ],
       maintainerFileBefore: "die Maintainer-Datei, beschrieben unter",
       maintainerFileLink: "Von den Maintainern bestätigt",
+      releaseBefore: "Zwischen zwei nächtlichen Läufen aktualisiert ein veröffentlichtes Release sein Tool innerhalb weniger Minuten, wenn im Repository",
+      releaseApp: "die GitHub App awesome-alternatives",
+      releaseMiddle: "installiert ist oder der Release-Workflow",
+      releaseAfter: "ausführt.",
       commit:
         "Wenn sich etwas geändert hat, committet der Workflow den neuen Katalog und ein neuer Build dieser Seite geht raus. Ein Tool, dessen Repository GitHub nicht mehr zurückgibt, weil es gelöscht oder auf privat gestellt wurde, fällt aus dem Katalog.",
     },
@@ -45,6 +49,9 @@ export const pages: Pages = {
         fileAfter: "mit dem Feld",
         slugAfter:
           "auf diesen Eintrag gesetzt. Nur wer Schreibrechte auf das Repository hat, kann sie anlegen, also sagt das Kennzeichen, dass die Maintainer hinter dem Eintrag stehen. Der Abgleich liest die Datei jede Nacht.",
+        appBefore: "Das Kennzeichen wird auch gesetzt, wenn",
+        appLink: "die GitHub App awesome-alternatives",
+        appAfter: "im Repository installiert ist, denn dafür braucht es Adminrechte.",
       },
       archived: {
         term: "archiviert",

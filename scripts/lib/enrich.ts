@@ -7,6 +7,7 @@ import {
   parseAddedLog,
   parseEditedLog,
 } from "./added.ts";
+import type { Installations } from "./app.ts";
 import { factsChangedAt } from "./changed.ts";
 import { fetchOwner, fetchReleases, ownerOf } from "./facts.ts";
 import { gather, mapLimit } from "./gather.ts";
@@ -21,7 +22,13 @@ export interface Enricher {
   enrich(tool: Tool): Promise<EnrichedTool | null>;
 }
 
-export async function createEnricher(root: string, gh: GitHub, tools: readonly Tool[], now: Date): Promise<Enricher> {
+export async function createEnricher(
+  root: string,
+  gh: GitHub,
+  installations: Installations | null,
+  tools: readonly Tool[],
+  now: Date,
+): Promise<Enricher> {
   const previous = await readPublished(root);
   const replaced = replacedSlugs(tools);
   const carried = carriedAddedAt(previous);
@@ -32,7 +39,7 @@ export async function createEnricher(root: string, gh: GitHub, tools: readonly T
 
   return {
     async enrich(tool) {
-      const evidence = await gather(gh, tool, true);
+      const evidence = await gather(gh, tool, true, installations);
       const flags = judge(tool, evidence, now, replaced)
         .map((f) => f.code)
         .filter(isFlagCode);

@@ -157,6 +157,37 @@ the repository can add it, so the mark says the maintainers stand behind the ent
 One slug per line, so a repository that hosts several listed tools can vouch for all of them in the
 same file. Blank lines and `#` comments are ignored.
 
+Installing the [awesome-alternatives GitHub App](https://github.com/apps/awesome-alternatives) on
+the repository verifies every entry listed from it as well, without a file: installing an app on a
+repository takes admin rights on it. The app only reads the repository's contents. Either way is
+enough, and a repository can do both.
+
+### Refreshing your entry after a release
+
+The catalog is rebuilt every night. To have a new release show up within minutes instead, either
+install the app above, which refreshes the repository's entries whenever it publishes a release, or
+add [`refresh-action`](https://github.com/awesome-alternatives/refresh-action) to your release
+workflow if you would rather not install an app:
+
+```yaml
+on:
+  release:
+    types: [published]
+
+permissions:
+  id-token: write
+
+jobs:
+  awesome-alternatives:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: awesome-alternatives/refresh-action@v1
+```
+
+It needs no secret: GitHub signs a token saying which repository the workflow runs in, and the
+API only refreshes that repository's entries. A repository is refreshed at most once every 10
+minutes, and the step never fails your workflow.
+
 ### The badge
 
 Every listed tool has a badge at `https://awesome-alternatives.com/badge/<slug>.json`, in the

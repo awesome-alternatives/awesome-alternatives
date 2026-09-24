@@ -6,7 +6,7 @@ import { format, pathFor } from "../../i18n/index.ts";
 import { localePaths, t } from "../../i18n/paths.ts";
 import Base from "../../layouts/Base.astro";
 import { refreshCron, tools } from "../../lib/catalog.ts";
-import { REPO } from "../../lib/repo.ts";
+import { APP, REFRESH_ACTION, REPO } from "../../lib/repo.ts";
 import { dailyTime } from "../../lib/schedule.ts";
 
 export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
@@ -50,6 +50,10 @@ const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
       <li>{m.refresh.maintainerFileBefore} <a href="#verified">{m.refresh.maintainerFileLink}</a></li>
     </ul>
     <p>{m.refresh.commit}</p>
+    <p>
+      {m.refresh.releaseBefore} <a href={APP}>{m.refresh.releaseApp}</a> {m.refresh.releaseMiddle}
+      <a href={REFRESH_ACTION}><code>refresh-action</code></a> {m.refresh.releaseAfter}
+    </p>
   </section>
 
   <section class="explainer" id="marks">
@@ -64,6 +68,7 @@ const spikeHours = SPIKE_WINDOW_MS / (60 * 60 * 1000);
         <dd>
           {m.marks.verified.fileBefore} <code>.awesome-alternatives</code> {m.marks.verified.fileAfter}
           <code>slug:</code> {m.marks.verified.slugAfter}
+          {m.marks.verified.appBefore} <a href={APP}>{m.marks.verified.appLink}</a> {m.marks.verified.appAfter}
         </dd>
       </div>
       <div id="archived">
