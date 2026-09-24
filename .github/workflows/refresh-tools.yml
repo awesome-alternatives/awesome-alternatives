@@ -1,0 +1,107 @@
+name: Refresh tools
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: Tool slugs to refresh, separated by spaces
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+run-name: Refresh ${{ inputs.slugs }}
+
+jobs:
+  plan:
+    name: Check the slugs
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.plan.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+          sparse-checkout: data/tools
+      - id: plan
+        env:
+          SLUGS: ${{ inputs.slugs }}
+        run: |
+          slugs=$(
+            for slug in $SLUGS; do
+              if [[ ! $slug =~ ^[a-z0-9]+(-[a-z0-9]+)*$ || ! -f data/tools/$slug.yaml ]]; then
+                echo "::error::$slug is not a tool in data/tools" >&2
+                exit 1
+              fi
+              echo "$slug"
+            done | sort -u | jq -Rnc '[inputs]'
+          )
+          count=$(jq length <<<"$slugs")
+          if (( count == 0 || count > 20 )); then
+            echo "::error::expected between 1 and 20 slugs, got $count" >&2
+            exit 1
+          fi
+          echo "slugs=$slugs" >> "$GITHUB_OUTPUT"
+
+  refresh:
+    name: Refresh ${{ matrix.slug }}
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJSON(needs.plan.outputs.slugs) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - run: node scripts/refresh-tool.ts "$SLUG" entries
+        env:
+          SLUG: ${{ matrix.slug }}
+          GITHUB_TOKEN: ${{ steps.app.outputs.token }}
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: entry-${{ matrix.slug }}
+          path: entries/${{ matrix.slug }}.json
+          retention-days: 1
+
+  merge:
+    name: Merge into the catalog
+    needs: [plan, refresh]
+    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: entry-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/entries
+      - name: Commit the refreshed entries
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUGS: ${{ join(fromJSON(needs.plan.outputs.slugs), ' ') }}
+        run: |
+          scripts/ci/push-catalog.sh "chore(catalog): refresh $SLUGS" node scripts/refresh-merge.ts "$RUNNER_TEMP/entries"
