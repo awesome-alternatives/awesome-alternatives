@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T06:34:56.187Z",
+  "checkedAt": "2026-09-24T06:47:01.330Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -1753,7 +1753,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "beyondgrep/ack3",
@@ -1809,7 +1809,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Aider-AI/aider",
@@ -1899,7 +1899,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "aio-libs/aiohttp",
@@ -1984,7 +1984,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "akka/akka-core",
@@ -1992,7 +1992,7 @@
         "homepage": "https://doc.akka.io/libraries/",
         "language": "Scala",
         "license": "Other",
-        "stars": 13280,
+        "stars": 13279,
         "forks": 3531,
         "topics": [
           "actor-model",
@@ -2081,7 +2081,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "alacritty/alacritty",
@@ -2287,7 +2287,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "withastro/astro",
@@ -2483,7 +2483,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bitwarden/server",
@@ -2668,7 +2668,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "usebruno/bruno",
@@ -2676,7 +2676,7 @@
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47152,
+        "stars": 47153,
         "forks": 2918,
         "topics": [
           "api-client",
@@ -2765,7 +2765,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bugsink/bugsink",
@@ -2862,7 +2862,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "oven-sh/bun",
@@ -2890,7 +2890,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T06:34:11Z",
+        "pushedAt": "2026-09-24T06:44:46Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2966,7 +2966,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 76038,
-        "forks": 4996,
+        "forks": 4995,
         "topics": [
           "acme",
           "automatic-https",
@@ -3049,7 +3049,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "crate-ci/cargo-release",
@@ -3140,7 +3140,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "changesets/changesets",
@@ -3148,7 +3148,7 @@
         "homepage": "https://changesets.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 12431,
+        "stars": 12432,
         "forks": 835,
         "topics": [],
         "archived": false,
@@ -3232,7 +3232,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "cline/cline",
@@ -3308,7 +3308,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "cockroachdb/cockroach",
@@ -3365,7 +3365,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
-      "editedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "cocogitto/cocogitto",
@@ -3465,7 +3465,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openai/codex",
@@ -3473,8 +3473,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126233,
-        "forks": 19668,
+        "stars": 126238,
+        "forks": 19670,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -3547,7 +3547,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "abiosoft/colima",
@@ -3647,7 +3647,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "concourse/concourse",
@@ -3746,7 +3746,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "continuedev/continue",
@@ -3828,7 +3828,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "conventional-changelog/conventional-changelog",
@@ -3911,7 +3911,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "react/create-react-app",
@@ -4004,7 +4004,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "charmbracelet/crush",
@@ -4164,7 +4164,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "curl/curl",
@@ -4641,7 +4641,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "denoland/deno",
@@ -4811,7 +4811,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Wilfred/difftastic",
@@ -4890,7 +4890,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "encode/django-rest-framework",
@@ -4980,7 +4980,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 72132,
-        "forks": 19233,
+        "forks": 19232,
         "topics": [
           "containers",
           "docker",
@@ -5058,7 +5058,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "facebook/docusaurus",
@@ -5236,7 +5236,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dragonflydb/dragonfly",
@@ -5244,7 +5244,7 @@
         "homepage": "https://www.dragonflydb.io/",
         "language": "C++",
         "license": "Other",
-        "stars": 31668,
+        "stars": 31669,
         "forks": 1268,
         "topics": [
           "cache",
@@ -5344,7 +5344,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "drizzle-team/drizzle-orm",
@@ -5352,7 +5352,7 @@
         "homepage": "https://orm.drizzle.team",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 35876,
+        "stars": 35878,
         "forks": 1654,
         "topics": [
           "bunjs",
@@ -5440,7 +5440,7 @@
         "language": "Java",
         "license": "Other",
         "stars": 77970,
-        "forks": 26086,
+        "forks": 26085,
         "topics": [
           "elasticsearch",
           "java",
@@ -5450,7 +5450,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T06:14:11Z",
+        "pushedAt": "2026-09-24T06:45:07Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5522,7 +5522,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "11ty/buildawesome",
@@ -5611,7 +5611,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elysiajs/elysia",
@@ -5797,7 +5797,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 27515,
-        "forks": 5190,
+        "forks": 5191,
         "topics": [
           "ecmascript",
           "eslint",
@@ -5961,7 +5961,7 @@
         "homepage": "https://expressjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 69467,
+        "stars": 69466,
         "forks": 25051,
         "topics": [
           "express",
@@ -6048,7 +6048,7 @@
         "homepage": "https://eza.rocks",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 23356,
+        "stars": 23357,
         "forks": 525,
         "topics": [
           "color",
@@ -6138,7 +6138,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fastapi/fastapi",
@@ -6146,8 +6146,8 @@
         "homepage": "https://fastapi.tiangolo.com/",
         "language": "Python",
         "license": "MIT",
-        "stars": 102565,
-        "forks": 9940,
+        "stars": 102566,
+        "forks": 9941,
         "topics": [
           "api",
           "async",
@@ -6246,7 +6246,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fastify/fastify",
@@ -6476,7 +6476,7 @@
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
-      "editedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/FerrFlow",
@@ -6505,11 +6505,7 @@
         "pushedAt": "2026-09-23T16:26:22Z",
         "defaultBranch": "main"
       },
-      "trend": {
-        "stars": 2,
-        "exact": true,
-        "since": "2026-04-03T16:21:32.000Z"
-      },
+      "trend": null,
       "release": {
         "tag": "v7.25.3",
         "publishedAt": "2026-09-23T16:38:44Z",
@@ -6715,7 +6711,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fluent/fluent-bit",
@@ -6806,7 +6802,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fluent/fluentd",
@@ -6942,7 +6938,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gatling/gatling",
@@ -7002,7 +6998,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gatsbyjs/gatsby",
@@ -7102,7 +7098,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "TwiN/gatus",
@@ -7210,7 +7206,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "google-gemini/gemini-cli",
@@ -7219,7 +7215,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 107138,
-        "forks": 14626,
+        "forks": 14627,
         "topics": [
           "ai",
           "ai-agents",
@@ -7305,7 +7301,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ghostty-org/ghostty",
@@ -7439,7 +7435,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
-      "editedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "orhun/git-cliff",
@@ -7529,7 +7525,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "AGWA/git-crypt",
@@ -7605,7 +7601,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "go-gitea/gitea",
@@ -7718,7 +7714,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gitlabhq/gitlabhq",
@@ -7953,7 +7949,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "aaif-goose/goose",
@@ -7961,7 +7957,7 @@
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54605,
+        "stars": 54606,
         "forks": 6305,
         "topics": [
           "acp",
@@ -8045,7 +8041,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/grafana",
@@ -8053,7 +8049,7 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76878,
+        "stars": 76879,
         "forks": 14776,
         "topics": [
           "alerting",
@@ -8148,7 +8144,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "helix-editor/helix",
@@ -8229,7 +8225,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hexojs/hexo",
@@ -8323,7 +8319,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "honojs/hono",
@@ -8420,7 +8416,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hoppscotch/hoppscotch",
@@ -8428,7 +8424,7 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80491,
+        "stars": 80492,
         "forks": 6124,
         "topics": [
           "api",
@@ -8625,7 +8621,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "encode/httpx",
@@ -8634,7 +8630,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15504,
-        "forks": 1866,
+        "forks": 1867,
         "topics": [
           "asyncio",
           "http",
@@ -8717,7 +8713,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gohugoio/hugo",
@@ -8812,7 +8808,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Infisical/infisical",
@@ -8909,7 +8905,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "influxdata/influxdb",
@@ -8994,7 +8990,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kubernetes/ingress-nginx",
@@ -9016,7 +9012,11 @@
         "pushedAt": "2026-03-23T16:16:29Z",
         "defaultBranch": "main"
       },
-      "trend": null,
+      "trend": {
+        "stars": 4,
+        "exact": true,
+        "since": "2026-03-12T10:20:43.000Z"
+      },
       "release": {
         "tag": "controller-v1.15.1",
         "publishedAt": "2026-03-19T21:17:55Z",
@@ -9102,7 +9102,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-04-23T03:54:26Z",
-        "pushedAt": "2026-09-24T06:23:01Z",
+        "pushedAt": "2026-09-24T06:44:52Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -9171,7 +9171,7 @@
         "homepage": "https://iterm2.com/",
         "language": "Objective-C",
         "license": "GPL-2.0",
-        "stars": 18089,
+        "stars": 18090,
         "forks": 1501,
         "topics": [],
         "archived": false,
@@ -9209,7 +9209,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jaegertracing/jaeger",
@@ -9328,7 +9328,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-17T02:17:10Z",
-        "pushedAt": "2026-09-24T06:24:09Z",
+        "pushedAt": "2026-09-24T06:39:25Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9484,7 +9484,7 @@
         "homepage": "https://jekyllrb.com",
         "language": "Ruby",
         "license": "MIT",
-        "stars": 51683,
+        "stars": 51684,
         "forks": 10300,
         "topics": [
           "blog-engine",
@@ -9821,7 +9821,7 @@
         "language": "C",
         "license": "Other",
         "stars": 35675,
-        "forks": 2387,
+        "forks": 2390,
         "topics": [
           "jq"
         ],
@@ -9991,7 +9991,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/k6",
@@ -9999,7 +9999,7 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31558,
+        "stars": 31559,
         "forks": 1639,
         "topics": [
           "es6",
@@ -10206,7 +10206,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/kibana",
@@ -10390,7 +10390,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kovidgoyal/kitty",
@@ -10490,7 +10490,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
-      "editedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "knope-dev/knope",
@@ -10574,7 +10574,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "koajs/koa",
@@ -10668,7 +10668,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kysely-org/kysely",
@@ -10957,14 +10957,10 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-09-23T00:06:53Z",
+        "pushedAt": "2026-09-24T06:35:48Z",
         "defaultBranch": "main"
       },
-      "trend": {
-        "stars": 1,
-        "exact": true,
-        "since": "2026-09-18T07:25:57.000Z"
-      },
+      "trend": null,
       "release": {
         "tag": "v1.17.1",
         "publishedAt": "2026-09-22T11:21:59Z",
@@ -11041,7 +11037,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44817,
+        "stars": 44820,
         "forks": 9186,
         "topics": [
           "ai",
@@ -11069,7 +11065,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T03:45:01Z",
+        "pushedAt": "2026-09-24T06:43:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11143,7 +11139,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "litestar-org/litestar",
@@ -11254,7 +11250,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129374,
+        "stars": 129373,
         "forks": 23665,
         "topics": [
           "ggml"
@@ -11263,7 +11259,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T06:17:09Z",
+        "pushedAt": "2026-09-24T06:44:35Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11441,7 +11437,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "locustio/locust",
@@ -11862,7 +11858,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mattermost/mattermost",
@@ -11885,7 +11881,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T06:28:10Z",
+        "pushedAt": "2026-09-24T06:40:18Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11957,7 +11953,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meilisearch/meilisearch",
@@ -12054,7 +12050,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "memcached/memcached",
@@ -12105,7 +12101,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mikro-orm/mikro-orm",
@@ -12477,7 +12473,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "squidfunk/mkdocs-material",
@@ -12485,7 +12481,7 @@
         "homepage": "https://squidfunk.github.io/mkdocs-material/",
         "language": "Python",
         "license": "MIT",
-        "stars": 27497,
+        "stars": 27498,
         "forks": 4149,
         "topics": [
           "documentation",
@@ -12560,7 +12556,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mochajs/mocha",
@@ -12712,7 +12708,7 @@
         "homepage": "https://www.mongodb.com/",
         "language": "C++",
         "license": "Other",
-        "stars": 28575,
+        "stars": 28574,
         "forks": 5809,
         "topics": [
           "c-plus-plus",
@@ -12990,7 +12986,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "containerd/nerdctl",
@@ -13079,7 +13075,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T07:14:07.000Z",
-      "editedAt": "2026-09-23T07:14:07.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nextcloud/server",
@@ -13185,7 +13181,7 @@
         "language": "C",
         "license": "BSD-2-Clause",
         "stars": 31721,
-        "forks": 8311,
+        "forks": 8310,
         "topics": [
           "content-cache",
           "http",
@@ -13276,7 +13272,7 @@
         "homepage": "https://nodejs.org",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 122059,
+        "stars": 122058,
         "forks": 37587,
         "topics": [
           "javascript",
@@ -13548,7 +13544,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "JanDeDobbeleer/oh-my-posh",
@@ -13642,7 +13638,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ohmyzsh/ohmyzsh",
@@ -13713,8 +13709,8 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181559,
-        "forks": 17985,
+        "stars": 181560,
+        "forks": 17986,
         "topics": [
           "deepseek",
           "gemma",
@@ -13818,7 +13814,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "theonedev/onedev",
@@ -13923,7 +13919,7 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 152965,
+        "stars": 152967,
         "forks": 22372,
         "topics": [
           "ai",
@@ -14021,7 +14017,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7472,
+        "stars": 7473,
         "forks": 577,
         "topics": [
           "go",
@@ -14109,7 +14105,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "anomalyco/opencode",
@@ -14117,7 +14113,7 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209729,
+        "stars": 209732,
         "forks": 27683,
         "topics": [],
         "archived": false,
@@ -14196,7 +14192,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "OpenHands/OpenHands",
@@ -14204,8 +14200,8 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89015,
-        "forks": 11715,
+        "stars": 89016,
+        "forks": 11714,
         "topics": [
           "agent",
           "artificial-intelligence",
@@ -14296,7 +14292,7 @@
         "homepage": "https://opensearch.org/docs/latest/opensearch/index/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 13766,
+        "stars": 13767,
         "forks": 2969,
         "topics": [
           "analytics",
@@ -14377,7 +14373,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opensearch-project/OpenSearch-Dashboards",
@@ -14470,7 +14466,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "open-telemetry/opentelemetry-collector",
@@ -14564,7 +14560,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opentofu/opentofu",
@@ -14579,7 +14575,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-16T20:01:36Z",
-        "pushedAt": "2026-09-23T17:28:56Z",
+        "pushedAt": "2026-09-24T06:44:26Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14669,7 +14665,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-24T06:24:56Z",
+        "pushedAt": "2026-09-24T06:45:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -14792,7 +14788,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "parcel-bundler/parcel",
@@ -14891,7 +14887,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "passbolt/passbolt_api",
@@ -14988,7 +14984,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pdm-project/pdm",
@@ -15078,7 +15074,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/pekko",
@@ -15135,7 +15131,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "perses/perses",
@@ -15261,7 +15257,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jazzband/pip-tools",
@@ -15347,7 +15343,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pypa/pipenv",
@@ -15553,7 +15549,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/playwright",
@@ -15561,7 +15557,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96597,
+        "stars": 96599,
         "forks": 6496,
         "topics": [
           "automation",
@@ -15675,7 +15671,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T06:26:04Z",
+        "pushedAt": "2026-09-24T06:45:31Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15830,7 +15826,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "podman-desktop/podman-desktop",
@@ -15923,7 +15919,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "python-poetry/poetry",
@@ -16189,7 +16185,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "prisma/orm",
@@ -16225,7 +16221,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-24T06:32:15Z",
+        "pushedAt": "2026-09-24T06:41:45Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16292,7 +16288,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "prometheus/prometheus",
@@ -16382,7 +16378,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/pulsar",
@@ -16476,7 +16472,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pulumi/pulumi",
@@ -16650,7 +16646,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "puppeteer/puppeteer",
@@ -16791,7 +16787,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pyenv/pyenv",
@@ -17042,7 +17038,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "questdb/questdb",
@@ -17145,7 +17141,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rancher-sandbox/rancher-desktop",
@@ -17236,7 +17232,7 @@
         "language": "C",
         "license": "Other",
         "stars": 76456,
-        "forks": 24816,
+        "forks": 24815,
         "topics": [
           "cache",
           "caching",
@@ -17515,7 +17511,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T06:55:40.000Z",
-      "editedAt": "2026-09-22T06:55:40.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "release-plz/release-plz",
@@ -17605,7 +17601,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 54339,
-        "forks": 10694,
+        "forks": 10696,
         "topics": [
           "client",
           "cookies",
@@ -17692,7 +17688,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "BurntSushi/ripgrep",
@@ -17701,7 +17697,7 @@
         "language": "Rust",
         "license": "Unlicense",
         "stars": 68556,
-        "forks": 3362,
+        "forks": 3364,
         "topics": [
           "cli",
           "command-line",
@@ -17795,7 +17791,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "RocketChat/Rocket.Chat",
@@ -17889,7 +17885,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rolldown/rolldown",
@@ -17969,7 +17965,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rollup/rollup",
@@ -17984,7 +17980,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-14T22:26:28Z",
-        "pushedAt": "2026-09-24T05:07:29Z",
+        "pushedAt": "2026-09-24T06:38:09Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -18403,7 +18399,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
-      "editedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rustfs/rustfs",
@@ -18431,7 +18427,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-23T13:45:10Z",
-        "pushedAt": "2026-09-24T06:25:57Z",
+        "pushedAt": "2026-09-24T06:41:39Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18503,7 +18499,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "haiwen/seafile",
@@ -18598,7 +18594,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
-      "editedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "seaweedfs/seaweedfs",
@@ -18606,7 +18602,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34932,
+        "stars": 34933,
         "forks": 3004,
         "topics": [
           "blob-storage",
@@ -18866,7 +18862,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "getsentry/sentry",
@@ -18897,7 +18893,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T06:34:46Z",
+        "pushedAt": "2026-09-24T06:41:57Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -18958,7 +18954,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sequelize/sequelize",
@@ -19059,7 +19055,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "getsops/sops",
@@ -19156,7 +19152,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "withastro/starlight",
@@ -19249,7 +19245,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "starship/starship",
@@ -19431,7 +19427,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "syncthing/syncthing",
@@ -19610,7 +19606,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "tektoncd/pipeline",
@@ -19698,7 +19694,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/tempo",
@@ -19916,7 +19912,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "timescale/timescaledb",
@@ -19924,7 +19920,7 @@
         "homepage": "https://www.tigerdata.com/",
         "language": "C",
         "license": "Other",
-        "stars": 23580,
+        "stars": 23581,
         "forks": 1157,
         "topics": [
           "analytics",
@@ -20014,7 +20010,7 @@
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49457,
+        "stars": 49458,
         "forks": 2909,
         "topics": [],
         "archived": false,
@@ -20093,7 +20089,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "traefik/traefik",
@@ -20184,7 +20180,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "TypeStrong/ts-node",
@@ -20442,7 +20438,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "typeorm/typeorm",
@@ -20544,7 +20540,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "typesense/typesense",
@@ -20652,7 +20648,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Genivia/ugrep",
@@ -20853,7 +20849,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "louislam/uptime-kuma",
@@ -20968,7 +20964,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/uv",
@@ -21060,7 +21056,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "valkey-io/valkey",
@@ -21241,7 +21237,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dani-garcia/vaultwarden",
@@ -21249,7 +21245,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68085,
+        "stars": 68086,
         "forks": 3243,
         "topics": [
           "bitwarden",
@@ -21335,7 +21331,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vectordotdev/vector",
@@ -21446,7 +21442,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "VictoriaMetrics/VictoriaMetrics",
@@ -21477,7 +21473,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-24T06:21:46Z",
+        "pushedAt": "2026-09-24T06:45:20Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -21594,7 +21590,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vitejs/vite",
@@ -21687,7 +21683,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vuejs/vitepress",
@@ -21781,7 +21777,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vitest-dev/vitest",
@@ -21869,8 +21865,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192834,
-        "forks": 43041,
+        "stars": 192836,
+        "forks": 43042,
         "topics": [
           "editor",
           "electron",
@@ -21882,7 +21878,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T06:35:37Z",
+        "pushedAt": "2026-09-24T06:46:54Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22140,7 +22136,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "wezterm/wezterm",
@@ -22234,7 +22230,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "woodpecker-ci/woodpecker",
@@ -22329,7 +22325,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ducaale/xh",
@@ -22505,7 +22501,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "yugabyte/yugabyte-db",
@@ -22533,7 +22529,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T06:32:41Z",
+        "pushedAt": "2026-09-24T06:36:47Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22610,7 +22606,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zed-industries/zed",
@@ -22618,7 +22614,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90796,
+        "stars": 90798,
         "forks": 10749,
         "topics": [
           "gpui",
@@ -22777,7 +22773,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openzipkin/zipkin",
@@ -22870,7 +22866,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "getzola/zola",
