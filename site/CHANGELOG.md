@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.57.7] - 2026-09-24
+
+### Bug Fixes
+
+- perf(refresh): fetch the catalog through GraphQL, twenty repositories per query (#174)
+
 ## [0.57.6] - 2026-09-24
 
 ### Bug Fixes
