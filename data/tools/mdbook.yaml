@@ -1,0 +1,7 @@
+name: mdBook
+repository: https://github.com/rust-lang/mdBook
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Builds a book from Markdown files and a SUMMARY.md, as the original GitBook did.

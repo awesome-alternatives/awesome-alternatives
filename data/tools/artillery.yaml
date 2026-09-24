@@ -1,0 +1,10 @@
+name: Artillery
+repository: https://github.com/artilleryio/artillery
+category: load-testing
+replaces:
+  - tool: jmeter
+    fit: full
+    note: Scenarios in YAML or JavaScript, for HTTP, WebSocket and Playwright browsers.
+  - tool: gatling
+    fit: full
+    note: Scenarios in YAML or JavaScript instead of a Scala, Java or Kotlin DSL.

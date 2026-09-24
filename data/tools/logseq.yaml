@@ -1,0 +1,7 @@
+name: Logseq
+repository: https://github.com/logseq/logseq
+category: note-taking
+replaces:
+  - tool: obsidian
+    fit: full
+    note: Local Markdown or database graph of linked notes, organised as an outline.

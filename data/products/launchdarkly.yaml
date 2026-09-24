@@ -1,0 +1,5 @@
+name: LaunchDarkly
+homepage: https://launchdarkly.com
+vendor: LaunchDarkly
+category: feature-flags
+description: Hosted feature flag and experimentation service.

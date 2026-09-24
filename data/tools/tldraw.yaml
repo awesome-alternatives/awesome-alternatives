@@ -1,0 +1,8 @@
+name: tldraw
+repository: https://github.com/tldraw/tldraw
+category: diagramming
+terms: source-available
+replaces:
+  - tool: miro
+    fit: partial
+    note: An infinite canvas and whiteboard, mostly used as an SDK in other apps.

@@ -1,0 +1,5 @@
+name: Okta
+homepage: https://www.okta.com
+vendor: Okta
+category: identity-provider
+description: Hosted identity service for single sign-on, MFA and user lifecycle management.

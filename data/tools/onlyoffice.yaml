@@ -1,0 +1,10 @@
+name: ONLYOFFICE Docs
+repository: https://github.com/ONLYOFFICE/DocumentServer
+category: office-suite
+replaces:
+  - tool: microsoft-365
+    fit: partial
+    note: Browser-based co-editing of Word, Excel and PowerPoint files, without mail and Teams.
+  - tool: google-docs
+    fit: full
+    note: Real-time co-editing of documents, spreadsheets and presentations, often plugged into Nextcloud.

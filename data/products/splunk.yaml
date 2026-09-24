@@ -1,0 +1,5 @@
+name: Splunk
+homepage: https://www.splunk.com
+vendor: Cisco
+category: log-storage
+description: Platform for indexing, searching and alerting on machine data such as logs, sold as software or a cloud service.

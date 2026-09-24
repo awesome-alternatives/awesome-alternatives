@@ -1,0 +1,7 @@
+name: FreeScout
+repository: https://github.com/freescout-help-desk/freescout
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Shared email inbox with tickets; more features come as modules.

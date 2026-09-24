@@ -1,0 +1,8 @@
+name: Wiki.js
+repository: https://github.com/requarks/wiki
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: full
+    note: Wiki in Markdown or a visual editor, with git sync of pages.
+deploy: [container, helm]

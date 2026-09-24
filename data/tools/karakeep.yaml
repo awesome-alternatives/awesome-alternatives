@@ -1,0 +1,11 @@
+name: Karakeep
+repository: https://github.com/karakeep-app/karakeep
+category: read-later
+replaces:
+  - tool: pocket
+    fit: full
+    note: Bookmarks, notes and images with full-page archives, AI tagging and a Pocket importer.
+  - tool: raindrop-io
+    fit: full
+    note: Bookmarks in lists with tags, search and browser extensions.
+deploy: [container, compose]

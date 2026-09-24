@@ -1,0 +1,7 @@
+name: Quay
+repository: https://github.com/quay/quay
+category: container-registry
+replaces:
+  - tool: docker-hub
+    fit: full
+    note: Organisations, robot accounts, builds and vulnerability scanning with Clair.

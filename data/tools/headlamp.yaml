@@ -1,0 +1,7 @@
+name: Headlamp
+repository: https://github.com/kubernetes-sigs/headlamp
+category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: full
+    note: Desktop app or in-cluster web UI, extensible with plugins.

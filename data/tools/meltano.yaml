@@ -1,0 +1,10 @@
+name: Meltano
+repository: https://github.com/meltano/meltano
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Runs Singer taps and targets as code from a CLI, without a hosted UI.
+  - tool: airbyte
+    fit: partial
+    note: EL pipelines defined in YAML and run from the command line.

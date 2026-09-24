@@ -1,0 +1,5 @@
+name: Lens
+homepage: https://k8slens.dev
+vendor: Mirantis
+category: kubernetes-ui
+description: Desktop app for managing Kubernetes clusters, closed source since 2023.

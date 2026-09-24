@@ -1,0 +1,10 @@
+name: MariaDB
+repository: https://github.com/MariaDB/server
+category: relational-database
+replaces:
+  - tool: mysql
+    fit: full
+    note: Forked from MySQL; keeps its protocol and client libraries, and has diverged since MySQL 8.
+  - tool: oracle-database
+    fit: partial
+    note: An Oracle compatibility mode for part of PL/SQL and Oracle's syntax.

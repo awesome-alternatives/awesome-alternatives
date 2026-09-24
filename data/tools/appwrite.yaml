@@ -1,0 +1,8 @@
+name: Appwrite
+repository: https://github.com/appwrite/appwrite
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: full
+    note: Auth, databases, storage, functions, messaging and realtime, self-hosted or cloud.
+deploy: [container, compose]

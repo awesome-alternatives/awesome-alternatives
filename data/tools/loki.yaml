@@ -1,0 +1,14 @@
+name: Loki
+repository: https://github.com/grafana/loki
+category: log-storage
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Indexes labels rather than full text, and queries log lines with LogQL.
+  - tool: splunk
+    fit: partial
+    note: Log storage and querying, without Splunk's apps and SIEM features.
+  - tool: datadog
+    fit: partial
+    note: Covers log management, usually paired with Grafana for dashboards and alerts.
+deploy: [container, helm, binary]

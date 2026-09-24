@@ -1,0 +1,7 @@
+name: Freelens
+repository: https://github.com/freelensapp/freelens
+category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: full
+    note: Continues the open source Lens desktop app, with no account needed.

@@ -1,0 +1,8 @@
+name: Supabase
+repository: https://github.com/supabase/supabase
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: full
+    note: Postgres with auth, storage, realtime, edge functions and generated APIs.
+deploy: [compose]

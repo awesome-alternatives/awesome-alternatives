@@ -1,0 +1,8 @@
+name: Apache APISIX
+repository: https://github.com/apache/apisix
+category: api-gateway
+replaces:
+  - tool: kong
+    fit: full
+    note: Also built on OpenResty, with etcd for configuration and plugins in Lua and other languages.
+deploy: [container, helm]

@@ -1,0 +1,7 @@
+name: Apache Doris
+repository: https://github.com/apache/doris
+category: analytical-database
+replaces:
+  - tool: snowflake
+    fit: full
+    note: MPP analytical database with a MySQL-compatible protocol and lakehouse queries.

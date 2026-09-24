@@ -1,0 +1,8 @@
+name: Pi-hole
+repository: https://github.com/pi-hole/pi-hole
+category: dns-sinkhole
+terms: open
+replaces:
+  - tool: nextdns
+    fit: partial
+    note: Network-wide ad and tracker blocking over DNS on your own hardware, without encrypted DNS built in.

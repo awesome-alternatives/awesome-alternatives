@@ -1,0 +1,9 @@
+name: NetBird
+repository: https://github.com/netbirdio/netbird
+category: mesh-vpn
+terms: open
+replaces:
+  - tool: tailscale
+    fit: full
+    note: WireGuard mesh with its own clients, management server, SSO and access policies.
+deploy: [container, compose, binary]

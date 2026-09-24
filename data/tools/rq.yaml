@@ -1,0 +1,8 @@
+name: RQ
+repository: https://github.com/rq/rq
+category: python-task-queue
+terms: open
+replaces:
+  - tool: celery
+    fit: partial
+    note: Background jobs backed by Redis only, with a smaller API.

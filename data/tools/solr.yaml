@@ -1,0 +1,7 @@
+name: Apache Solr
+repository: https://github.com/apache/solr
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: full
+    note: Also built on Lucene, with its own query API.

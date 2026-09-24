@@ -1,0 +1,7 @@
+name: curlie
+repository: https://github.com/rs/curlie
+category: http-client
+replaces:
+  - tool: httpie
+    fit: full
+    note: HTTPie's interface on top of curl, with curl's options passed through.

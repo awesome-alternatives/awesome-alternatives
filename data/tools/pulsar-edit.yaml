@@ -1,0 +1,8 @@
+name: Pulsar
+repository: https://github.com/pulsar-edit/pulsar
+category: text-editor
+terms: open
+replaces:
+  - tool: atom
+    fit: drop-in
+    note: A community continuation of Atom that runs its packages and themes.

@@ -1,0 +1,10 @@
+name: Hatch
+repository: https://github.com/pypa/hatch
+category: python-packaging
+replaces:
+  - tool: poetry
+    fit: partial
+    note: Builds and publishes packages and manages environments, without a lockfile of its own.
+  - tool: pipenv
+    fit: partial
+    note: Environment management per project.

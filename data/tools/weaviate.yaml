@@ -1,0 +1,9 @@
+name: Weaviate
+repository: https://github.com/weaviate/weaviate
+category: vector-database
+terms: open-core
+replaces:
+  - tool: pinecone
+    fit: full
+    note: Vector and hybrid search with built-in vectoriser modules.
+deploy: [container, helm]

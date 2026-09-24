@@ -1,0 +1,4 @@
+name: Liquibase
+repository: https://github.com/liquibase/liquibase
+category: database-migrations
+terms: source-available

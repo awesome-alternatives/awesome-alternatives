@@ -1,0 +1,3 @@
+name: Linkerd
+repository: https://github.com/linkerd/linkerd2
+category: service-mesh

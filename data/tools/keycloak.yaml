@@ -1,0 +1,11 @@
+name: Keycloak
+repository: https://github.com/keycloak/keycloak
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: full
+    note: SSO over OpenID Connect and SAML, user federation with LDAP and Active Directory, and MFA.
+  - tool: auth0
+    fit: full
+    note: Hosted login pages, social login and OpenID Connect for your applications.
+deploy: [container]

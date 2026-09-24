@@ -1,0 +1,7 @@
+name: Hound
+repository: https://github.com/hound-search/hound
+category: code-search-server
+replaces:
+  - tool: sourcegraph
+    fit: partial
+    note: Regular-expression search across repositories, without code navigation.

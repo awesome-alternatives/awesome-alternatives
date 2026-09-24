@@ -1,0 +1,10 @@
+name: SiYuan
+repository: https://github.com/siyuan-note/siyuan
+category: note-taking
+replaces:
+  - tool: obsidian
+    fit: full
+    note: Local-first notes with block references and bidirectional links.
+  - tool: notion
+    fit: partial
+    note: Blocks and database views, local-first.

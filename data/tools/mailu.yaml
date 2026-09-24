@@ -1,0 +1,9 @@
+name: Mailu
+repository: https://github.com/Mailu/Mailu
+category: mail-server
+terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: Mail with webmail, spam filtering and an admin UI.
+deploy: [container, compose, helm]

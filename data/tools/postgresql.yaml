@@ -1,0 +1,11 @@
+name: PostgreSQL
+repository: https://github.com/postgres/postgres
+category: relational-database
+terms: open
+replaces:
+  - tool: mysql
+    fit: full
+    note: A relational database with a different SQL dialect and protocol.
+  - tool: oracle-database
+    fit: full
+    note: Covers the same workloads; PL/pgSQL differs from PL/SQL.

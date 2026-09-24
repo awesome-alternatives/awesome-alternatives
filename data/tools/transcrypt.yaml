@@ -1,0 +1,7 @@
+name: transcrypt
+repository: https://github.com/elasticdog/transcrypt
+category: encrypted-files
+replaces:
+  - tool: git-crypt
+    fit: full
+    note: Transparent encryption through git filters, using OpenSSL and a shared password.

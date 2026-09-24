@@ -1,0 +1,5 @@
+name: Oracle Database
+homepage: https://www.oracle.com/database/
+vendor: Oracle
+category: relational-database
+description: Oracle's commercial relational database, programmed in SQL and PL/SQL.

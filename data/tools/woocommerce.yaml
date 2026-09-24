@@ -1,0 +1,8 @@
+name: WooCommerce
+repository: https://github.com/woocommerce/woocommerce
+category: e-commerce
+terms: open
+replaces:
+  - tool: shopify
+    fit: full
+    note: A store on WordPress, with a large extension marketplace.

@@ -1,0 +1,8 @@
+name: MeshCentral
+repository: https://github.com/Ylianst/MeshCentral
+category: remote-desktop
+replaces:
+  - tool: teamviewer
+    fit: partial
+    note: Web-based remote desktop, terminal and file access to machines running its agent.
+deploy: [container]

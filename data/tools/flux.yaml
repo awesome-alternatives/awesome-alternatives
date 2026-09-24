@@ -1,0 +1,7 @@
+name: Flux
+repository: https://github.com/fluxcd/flux2
+category: gitops
+replaces:
+  - tool: argo-cd
+    fit: full
+    note: Reconciles clusters from git with Kubernetes controllers, driven from the CLI rather than a web UI.

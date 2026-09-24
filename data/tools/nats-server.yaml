@@ -1,0 +1,8 @@
+name: NATS
+repository: https://github.com/nats-io/nats-server
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: partial
+    note: Durable streams with JetStream, without Kafka's protocol.
+deploy: [container, binary]

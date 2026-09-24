@@ -1,0 +1,4 @@
+name: conda
+repository: https://github.com/conda/conda
+category: python-packaging
+terms: open

@@ -1,0 +1,13 @@
+name: Salt
+repository: https://github.com/saltstack/salt
+category: config-management
+replaces:
+  - tool: puppet
+    fit: full
+    note: States in YAML and Jinja, pushed over an event bus or pulled by agents.
+  - tool: chef
+    fit: full
+    note: States in YAML and Jinja rather than Ruby recipes.
+  - tool: ansible
+    fit: full
+    note: Agent-based by default, with an agentless SSH mode.

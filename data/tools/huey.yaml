@@ -1,0 +1,7 @@
+name: huey
+repository: https://github.com/coleifer/huey
+category: python-task-queue
+replaces:
+  - tool: celery
+    fit: partial
+    note: A small task queue over Redis, SQLite or memory, with periodic tasks.

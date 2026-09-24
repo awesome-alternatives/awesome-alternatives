@@ -1,0 +1,7 @@
+name: Grida
+repository: https://github.com/gridaco/grida
+category: design-tool
+replaces:
+  - tool: figma
+    fit: partial
+    note: An open canvas editor for design, with vector and SVG editing.

@@ -1,0 +1,7 @@
+name: mamba
+repository: https://github.com/mamba-org/mamba
+category: python-packaging
+replaces:
+  - tool: conda
+    fit: drop-in
+    note: Same commands and environments, with a faster solver written in C++.

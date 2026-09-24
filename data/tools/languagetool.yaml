@@ -1,0 +1,7 @@
+name: LanguageTool
+repository: https://github.com/languagetool-org/languagetool
+category: writing-assistant
+replaces:
+  - tool: grammarly
+    fit: full
+    note: Grammar, style and spelling checks in over 30 languages, with a server you can run yourself.

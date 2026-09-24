@@ -1,0 +1,11 @@
+name: Vikunja
+repository: https://github.com/go-vikunja/vikunja
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban, list, Gantt and table views, with a Trello importer.
+  - tool: asana
+    fit: partial
+    note: Tasks and projects for individuals and small teams.
+deploy: [container, binary]

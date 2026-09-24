@@ -1,0 +1,10 @@
+name: Upptime
+repository: https://github.com/upptime/upptime
+category: uptime-monitoring
+replaces:
+  - tool: pingdom
+    fit: partial
+    note: Checks run from GitHub Actions every five minutes, with issues opened on downtime.
+  - tool: statuspage
+    fit: full
+    note: Publishes a status page to GitHub Pages.

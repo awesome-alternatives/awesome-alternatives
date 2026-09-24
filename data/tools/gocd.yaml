@@ -1,0 +1,7 @@
+name: GoCD
+repository: https://github.com/gocd/gocd
+category: ci-server
+replaces:
+  - tool: jenkins
+    fit: full
+    note: Pipelines and value-stream maps built in, without plugins.

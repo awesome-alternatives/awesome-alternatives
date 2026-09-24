@@ -1,3 +1,7 @@
 name: ESLint
 repository: https://github.com/eslint/eslint
 category: javascript-lint-format
+replaces:
+  - tool: tslint
+    fit: full
+    note: Lints TypeScript through typescript-eslint, which TSLint's maintainers pointed to when deprecating it.

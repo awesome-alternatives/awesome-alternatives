@@ -1,0 +1,7 @@
+name: SuiteCRM
+repository: https://github.com/SuiteCRM/SuiteCRM
+category: crm
+replaces:
+  - tool: salesforce
+    fit: full
+    note: Sales, marketing and service modules, derived from SugarCRM Community Edition.

@@ -1,0 +1,7 @@
+name: pyinfra
+repository: https://github.com/pyinfra-dev/pyinfra
+category: config-management
+replaces:
+  - tool: ansible
+    fit: full
+    note: Agentless over SSH, with deployments written in Python instead of YAML.

@@ -1,0 +1,8 @@
+name: fish
+repository: https://github.com/fish-shell/fish-shell
+category: shell
+terms: open
+replaces:
+  - tool: zsh
+    fit: full
+    note: Autosuggestions, highlighting and completions out of the box, with a non-POSIX syntax.

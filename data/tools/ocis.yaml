@@ -1,0 +1,14 @@
+name: ownCloud Infinite Scale
+repository: https://github.com/owncloud/ocis
+category: file-sync
+replaces:
+  - tool: nextcloud
+    fit: partial
+    note: File sync and sharing, with no database and without Nextcloud's app ecosystem.
+  - tool: dropbox
+    fit: full
+    note: File sync and sharing through desktop and mobile clients.
+  - tool: google-drive
+    fit: partial
+    note: File sync and sharing; documents through a connected office server.
+deploy: [container, helm, binary]

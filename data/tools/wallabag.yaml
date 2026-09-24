@@ -1,0 +1,10 @@
+name: wallabag
+repository: https://github.com/wallabag/wallabag
+category: read-later
+replaces:
+  - tool: pocket
+    fit: full
+    note: Saves articles for reading later, with apps, browser extensions and a Pocket importer.
+  - tool: raindrop-io
+    fit: partial
+    note: Saved articles, without bookmark collections.

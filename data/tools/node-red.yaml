@@ -1,0 +1,7 @@
+name: Node-RED
+repository: https://github.com/node-red/node-red
+category: workflow-automation
+replaces:
+  - tool: zapier
+    fit: partial
+    note: Flow-based wiring of devices, APIs and services, with fewer ready-made SaaS integrations.

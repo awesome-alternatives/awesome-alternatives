@@ -1,0 +1,8 @@
+name: Chroma
+repository: https://github.com/chroma-core/chroma
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Embedded or client-server vector store, aimed at LLM applications.
+deploy: [container]

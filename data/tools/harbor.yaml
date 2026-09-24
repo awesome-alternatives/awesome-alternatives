@@ -1,0 +1,11 @@
+name: Harbor
+repository: https://github.com/goharbor/harbor
+category: container-registry
+replaces:
+  - tool: docker-hub
+    fit: full
+    note: Projects, access control, vulnerability scanning, signing and replication between registries.
+  - tool: distribution
+    fit: full
+    note: Built on Distribution, with a web UI, users and policies on top.
+deploy: [helm]

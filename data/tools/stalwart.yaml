@@ -1,0 +1,12 @@
+name: Stalwart
+repository: https://github.com/stalwartlabs/stalwart
+category: mail-server
+terms: open-core
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: Mail over JMAP, IMAP and SMTP, plus CalDAV and CardDAV, in one Rust server.
+  - tool: microsoft-365
+    fit: partial
+    note: Mail, calendars and contacts only.
+deploy: [container, binary]

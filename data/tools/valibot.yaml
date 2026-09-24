@@ -1,0 +1,10 @@
+name: Valibot
+repository: https://github.com/open-circle/valibot
+category: javascript-validation
+replaces:
+  - tool: zod
+    fit: full
+    note: Modular, tree-shakeable schemas with type inference, and a Zod migration guide.
+  - tool: yup
+    fit: full
+    note: Schemas with TypeScript inference and a small bundle.

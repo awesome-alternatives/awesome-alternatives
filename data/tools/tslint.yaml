@@ -1,0 +1,3 @@
+name: TSLint
+repository: https://github.com/palantir/tslint
+category: javascript-lint-format

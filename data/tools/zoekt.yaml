@@ -1,0 +1,7 @@
+name: Zoekt
+repository: https://github.com/sourcegraph/zoekt
+category: code-search-server
+replaces:
+  - tool: sourcegraph
+    fit: partial
+    note: The trigram code search engine behind Sourcegraph, with a basic web UI.

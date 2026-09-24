@@ -1,0 +1,8 @@
+name: Unleash
+repository: https://github.com/Unleash/unleash
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: full
+    note: Feature toggles, gradual rollouts and SDKs for most languages.
+deploy: [container, helm]

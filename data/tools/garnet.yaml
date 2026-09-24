@@ -1,0 +1,7 @@
+name: Garnet
+repository: https://github.com/microsoft/garnet
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: partial
+    note: Speaks RESP and supports a large part of the Redis commands.

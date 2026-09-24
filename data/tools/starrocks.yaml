@@ -1,0 +1,8 @@
+name: StarRocks
+repository: https://github.com/StarRocks/starrocks
+category: analytical-database
+replaces:
+  - tool: snowflake
+    fit: full
+    note: MPP analytics on local or lake data, with a MySQL-compatible protocol.
+deploy: [container]

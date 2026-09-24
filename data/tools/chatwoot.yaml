@@ -1,0 +1,12 @@
+name: Chatwoot
+repository: https://github.com/chatwoot/chatwoot
+category: helpdesk
+terms: open-core
+replaces:
+  - tool: intercom
+    fit: full
+    note: Live chat widget, shared inbox across email and messaging apps, and a help center.
+  - tool: zendesk
+    fit: partial
+    note: Conversations across channels, lighter on ticketing workflows.
+deploy: [container, helm]

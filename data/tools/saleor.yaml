@@ -1,0 +1,8 @@
+name: Saleor
+repository: https://github.com/saleor/saleor
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A headless GraphQL commerce API; the storefront is yours to build.
+deploy: [container]

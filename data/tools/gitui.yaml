@@ -1,0 +1,10 @@
+name: GitUI
+repository: https://github.com/gitui-org/gitui
+category: git-client
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: Staging, commits, branches and stashes in a terminal UI.
+  - tool: tig
+    fit: full
+    note: Browses history and stages, commits and stashes.

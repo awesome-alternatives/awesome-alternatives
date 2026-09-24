@@ -1,0 +1,11 @@
+name: Ente Auth
+repository: https://github.com/ente/ente
+path: mobile/apps/auth
+category: authenticator-app
+replaces:
+  - tool: authy
+    fit: full
+    note: End-to-end encrypted sync across mobile, desktop and web.
+  - tool: google-authenticator
+    fit: full
+    note: Cross-platform codes with end-to-end encrypted backup.

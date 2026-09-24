@@ -1,0 +1,10 @@
+name: Yaak
+repository: https://github.com/mountain-loop/yaak
+category: api-client
+replaces:
+  - tool: postman
+    fit: full
+    note: REST, GraphQL, gRPC and WebSocket requests in a desktop app, with no account needed.
+  - tool: insomnia
+    fit: full
+    note: Imports Insomnia collections and stores requests locally or in git.

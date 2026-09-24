@@ -1,0 +1,8 @@
+name: Medusa
+repository: https://github.com/medusajs/medusa
+category: e-commerce
+terms: open-core
+replaces:
+  - tool: shopify
+    fit: partial
+    note: Headless commerce modules in Node.js, with an admin and a Next.js starter storefront.

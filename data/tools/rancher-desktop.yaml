@@ -5,3 +5,6 @@ replaces:
   - tool: docker-desktop
     fit: full
     note: Containers and Kubernetes on the desktop, with containerd or dockerd underneath.
+  - tool: orbstack
+    fit: partial
+    note: Containers and a local Kubernetes on macOS, Windows and Linux.

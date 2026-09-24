@@ -1,0 +1,5 @@
+name: Auth0
+homepage: https://auth0.com
+vendor: Okta
+category: identity-provider
+description: Hosted authentication service that developers embed in their applications.

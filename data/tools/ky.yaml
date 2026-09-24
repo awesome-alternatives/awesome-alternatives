@@ -1,0 +1,10 @@
+name: Ky
+repository: https://github.com/sindresorhus/ky
+category: javascript-http-client
+replaces:
+  - tool: request
+    fit: partial
+    note: A small client on top of fetch, with retries and hooks.
+  - tool: axios
+    fit: full
+    note: A fetch-based client with a similar feature set and no dependencies.

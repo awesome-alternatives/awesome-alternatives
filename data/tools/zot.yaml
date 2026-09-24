@@ -1,0 +1,11 @@
+name: zot
+repository: https://github.com/project-zot/zot
+category: container-registry
+replaces:
+  - tool: docker-hub
+    fit: partial
+    note: An OCI-native registry in a single binary, with a web UI and scanning as extensions.
+  - tool: distribution
+    fit: full
+    note: OCI distribution spec, with storage deduplication and sync from other registries.
+deploy: [container, helm, binary]

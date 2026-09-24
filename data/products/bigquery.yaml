@@ -1,0 +1,5 @@
+name: BigQuery
+homepage: https://cloud.google.com/bigquery
+vendor: Google
+category: analytical-database
+description: Google Cloud's serverless data warehouse.

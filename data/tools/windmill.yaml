@@ -1,0 +1,12 @@
+name: Windmill
+repository: https://github.com/windmill-labs/windmill
+category: workflow-automation
+terms: open-core
+replaces:
+  - tool: zapier
+    fit: partial
+    note: Flows built from scripts in Python, TypeScript, Go and others, with generated UIs.
+  - tool: airflow
+    fit: partial
+    note: Schedules and runs workflows written as code.
+deploy: [container, compose, helm]

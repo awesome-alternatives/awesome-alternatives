@@ -1,0 +1,12 @@
+name: Metabase
+repository: https://github.com/metabase/metabase
+category: business-intelligence
+terms: open-core
+replaces:
+  - tool: tableau
+    fit: partial
+    note: Questions, dashboards and alerts, with a query builder for people who do not write SQL.
+  - tool: looker
+    fit: partial
+    note: Models and metrics defined in the UI.
+deploy: [container]

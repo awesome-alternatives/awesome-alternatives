@@ -1,0 +1,11 @@
+name: PostHog
+repository: https://github.com/PostHog/posthog
+category: web-analytics
+terms: open-core
+replaces:
+  - tool: google-analytics
+    fit: full
+    note: Web and product analytics, with session replay and feature flags.
+  - tool: mixpanel
+    fit: full
+    note: Event-based product analytics with funnels, retention and cohorts.

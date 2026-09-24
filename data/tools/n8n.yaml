@@ -1,0 +1,9 @@
+name: n8n
+repository: https://github.com/n8n-io/n8n
+category: workflow-automation
+terms: source-available
+replaces:
+  - tool: zapier
+    fit: full
+    note: Visual workflows with hundreds of integrations and code steps, on your own server.
+deploy: [container]

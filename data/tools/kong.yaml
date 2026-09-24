@@ -1,0 +1,3 @@
+name: Kong Gateway
+repository: https://github.com/Kong/kong
+category: api-gateway

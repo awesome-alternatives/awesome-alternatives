@@ -1,0 +1,14 @@
+name: VictoriaLogs
+repository: https://github.com/VictoriaMetrics/VictoriaLogs
+category: log-storage
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Log storage and full-text search with LogsQL, and ingestion endpoints compatible with Elasticsearch's bulk API.
+  - tool: loki
+    fit: full
+    note: Accepts logs over Loki's push API and adds full-text search on every field.
+  - tool: splunk
+    fit: partial
+    note: Log storage and querying only.
+deploy: [container, binary]

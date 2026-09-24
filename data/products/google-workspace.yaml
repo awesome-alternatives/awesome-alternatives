@@ -1,0 +1,5 @@
+name: Google Workspace
+homepage: https://workspace.google.com
+vendor: Google
+category: mail-server
+description: Google's hosted mail on your own domain, with calendars, documents and storage.

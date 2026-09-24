@@ -1,0 +1,8 @@
+name: Authelia
+repository: https://github.com/authelia/authelia
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: SSO and MFA in front of a reverse proxy, plus an OpenID Connect provider, without user management UI.
+deploy: [container, binary]

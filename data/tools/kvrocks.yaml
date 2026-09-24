@@ -1,0 +1,8 @@
+name: Apache Kvrocks
+repository: https://github.com/apache/kvrocks
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: partial
+    note: Redis protocol on top of RocksDB, keeping data on disk rather than in memory.
+deploy: [container]

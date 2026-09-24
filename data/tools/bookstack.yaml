@@ -1,0 +1,10 @@
+name: BookStack
+repository: https://github.com/BookStackApp/BookStack
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: full
+    note: Wiki organised in shelves, books, chapters and pages.
+  - tool: notion
+    fit: partial
+    note: Documentation pages only.

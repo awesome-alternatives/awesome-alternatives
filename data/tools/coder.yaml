@@ -1,0 +1,9 @@
+name: Coder
+repository: https://github.com/coder/coder
+category: cloud-ide
+terms: open-core
+replaces:
+  - tool: github-codespaces
+    fit: full
+    note: Development workspaces defined in Terraform on your own cloud or Kubernetes, reached from VS Code, JetBrains or SSH.
+deploy: [container, helm, binary, package]

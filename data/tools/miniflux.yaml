@@ -1,0 +1,8 @@
+name: Miniflux
+repository: https://github.com/miniflux/v2
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: A minimalist feed reader in one binary, with Fever and Google Reader APIs.
+deploy: [container, binary, package]

@@ -1,0 +1,11 @@
+name: LibreTranslate
+repository: https://github.com/LibreTranslate/LibreTranslate
+category: machine-translation
+replaces:
+  - tool: deepl
+    fit: partial
+    note: Self-hosted translation API built on Argos Translate models.
+  - tool: google-translate
+    fit: partial
+    note: A translation API and web UI on your own server.
+deploy: [container]

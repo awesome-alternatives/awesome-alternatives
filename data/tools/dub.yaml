@@ -1,0 +1,8 @@
+name: Dub
+repository: https://github.com/dubinc/dub
+category: url-shortener
+terms: open-core
+replaces:
+  - tool: bitly
+    fit: full
+    note: Short links on custom domains, analytics and QR codes.

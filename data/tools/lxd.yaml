@@ -1,0 +1,3 @@
+name: LXD
+repository: https://github.com/canonical/lxd
+category: virtualization

@@ -1,0 +1,8 @@
+name: docker-mailserver
+repository: https://github.com/docker-mailserver/docker-mailserver
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: SMTP and IMAP with spam and virus filtering, configured from files, without webmail.
+deploy: [container, compose, helm]

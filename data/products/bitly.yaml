@@ -1,0 +1,5 @@
+name: Bitly
+homepage: https://bitly.com
+vendor: Bitly
+category: url-shortener
+description: Hosted link shortener with analytics and QR codes.

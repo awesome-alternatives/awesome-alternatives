@@ -1,0 +1,7 @@
+name: bottom
+repository: https://github.com/ClementTsang/bottom
+category: system-monitor
+replaces:
+  - tool: htop
+    fit: full
+    note: Processes and resource graphs, on Linux, macOS and Windows.

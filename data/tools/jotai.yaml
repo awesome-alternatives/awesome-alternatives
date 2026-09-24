@@ -1,0 +1,7 @@
+name: Jotai
+repository: https://github.com/pmndrs/jotai
+category: react-state
+replaces:
+  - tool: redux
+    fit: partial
+    note: Atomic state composed bottom-up, rather than a single store.

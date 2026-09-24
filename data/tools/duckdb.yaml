@@ -1,0 +1,10 @@
+name: DuckDB
+repository: https://github.com/duckdb/duckdb
+category: analytical-database
+replaces:
+  - tool: snowflake
+    fit: partial
+    note: In-process analytical SQL over local files, Parquet and object storage, on one machine.
+  - tool: bigquery
+    fit: partial
+    note: Analytical SQL on one machine.

@@ -1,0 +1,8 @@
+name: Blocky
+repository: https://github.com/0xERR0R/blocky
+category: dns-sinkhole
+replaces:
+  - tool: pi-hole
+    fit: full
+    note: DNS blocking configured in YAML, stateless, with encrypted upstreams.
+deploy: [container, binary]

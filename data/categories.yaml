@@ -287,3 +287,285 @@ time-series-database:
 encrypted-files:
   name: Encrypted files in git
   description: Keep secrets in a repository, encrypted, and decrypted only by the people and machines allowed to.
+
+log-storage:
+  name: Log storage
+  description: Store logs at volume and search them, the back end behind log dashboards.
+  selfHost: true
+
+relational-database:
+  name: Relational databases
+  description: General-purpose SQL databases.
+  selfHost: true
+
+config-management:
+  name: Configuration management
+  description: Describe the state of servers in code and converge them to it.
+
+workflow-automation:
+  name: Workflow automation
+  description: Connect apps and APIs with trigger-and-action workflows.
+  selfHost: true
+
+gitops:
+  name: GitOps
+  description: Keep Kubernetes clusters in sync with manifests stored in git.
+
+container-registry:
+  name: Container registries
+  description: Store and serve OCI images and artefacts.
+  selfHost: true
+
+identity-provider:
+  name: Identity providers
+  description: Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP.
+  selfHost: true
+
+mesh-vpn:
+  name: Mesh VPNs
+  description: Connect devices and servers in a private WireGuard network, wherever they are.
+  selfHost: true
+
+remote-desktop:
+  name: Remote desktop
+  description: Control another computer over the network, for support or remote work.
+  selfHost: true
+
+knowledge-base:
+  name: Wikis and knowledge bases
+  description: Shared pages and documentation for teams, edited in the browser.
+  selfHost: true
+
+note-taking:
+  name: Note-taking apps
+  description: Personal notes on desktop and mobile, with sync.
+
+project-management:
+  name: Project management
+  description: Issues, tasks and boards for planning team work.
+  selfHost: true
+
+video-conferencing:
+  name: Video conferencing
+  description: Video meetings in the browser or an app.
+  selfHost: true
+
+newsletter:
+  name: Newsletters and email marketing
+  description: Mailing lists, campaigns and subscriber management.
+  selfHost: true
+
+forms-surveys:
+  name: Forms and surveys
+  description: Build forms and surveys and collect the answers.
+  selfHost: true
+
+photo-library:
+  name: Photo libraries
+  description: Back up, browse and share photos and videos from your phones.
+  selfHost: true
+
+media-server:
+  name: Media servers
+  description: Stream a personal library of films, series and music to your devices.
+  selfHost: true
+
+business-intelligence:
+  name: Business intelligence
+  description: Query databases and build charts and dashboards for the rest of the company.
+  selfHost: true
+
+backend-as-a-service:
+  name: Backend as a service
+  description: Auth, database, storage and APIs for an app, without writing the backend.
+  selfHost: true
+
+headless-cms:
+  name: Headless CMS
+  description: Manage content in an admin UI and deliver it to any front end through an API.
+  selfHost: true
+
+feature-flags:
+  name: Feature flags
+  description: Turn features on for some users without a deploy, and run experiments.
+  selfHost: true
+
+database-migrations:
+  name: Database migrations
+  description: Version and apply database schema changes.
+
+kubernetes-ui:
+  name: Kubernetes UIs
+  description: Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
+
+virtualization:
+  name: Virtualization
+  description: Run virtual machines and system containers across a cluster of hosts.
+  selfHost: true
+
+code-search-server:
+  name: Code search servers
+  description: Index many repositories and search them from a web UI.
+  selfHost: true
+
+data-integration:
+  name: Data integration
+  description: Extract data from applications and databases and load it into a warehouse.
+  selfHost: true
+
+javascript-http-client:
+  name: JavaScript HTTP clients
+  description: Send HTTP requests from Node.js and browsers.
+
+javascript-utility:
+  name: JavaScript utility libraries
+  description: Helpers for arrays, objects, strings and functions.
+
+css-processing:
+  name: CSS processing
+  description: Compile, transform, prefix and minify stylesheets.
+
+javascript-validation:
+  name: JavaScript schema validation
+  description: Declare schemas and validate data against them at runtime.
+
+react-state:
+  name: React state management
+  description: Share and update application state across React components.
+
+python-task-queue:
+  name: Python task queues
+  description: Run background jobs from Python through a broker.
+
+dataframe:
+  name: DataFrame libraries
+  description: Load, transform and analyse tabular data in memory.
+
+system-monitor:
+  name: System monitors
+  description: Watch processes and resource use from a terminal.
+
+directory-jumper:
+  name: Directory jumpers
+  description: Jump to frequently used directories with a few keystrokes.
+
+fuzzy-finder:
+  name: Fuzzy finders
+  description: Filter lists interactively in a terminal, for files, history and anything piped in.
+
+shell:
+  name: Shells
+  description: Interactive command-line shells.
+
+git-client:
+  name: Git clients
+  description: Stage, commit, branch and browse history outside the bare git command.
+
+office-suite:
+  name: Office suites
+  description: Documents, spreadsheets and presentations.
+
+design-tool:
+  name: Interface design tools
+  description: Design and prototype user interfaces on a shared canvas.
+  selfHost: true
+
+diagramming:
+  name: Diagrams and whiteboards
+  description: Draw diagrams and sketch on a shared canvas.
+
+screen-recording:
+  name: Screen recording
+  description: Record the screen and camera and share the video.
+
+authenticator-app:
+  name: Authenticator apps
+  description: Generate one-time codes for two-factor authentication.
+
+writing-assistant:
+  name: Writing assistants
+  description: Check grammar, spelling and style as you type.
+
+machine-translation:
+  name: Machine translation
+  description: Translate text between languages, through an API or a web UI.
+  selfHost: true
+
+read-later:
+  name: Read-later and bookmarks
+  description: Save links and articles to read or find again later.
+  selfHost: true
+
+feed-reader:
+  name: Feed readers
+  description: Follow sites through RSS and Atom feeds.
+  selfHost: true
+
+dns-sinkhole:
+  name: DNS ad blockers
+  description: Block ads and trackers for a whole network at the DNS level.
+  selfHost: true
+
+erp:
+  name: ERP
+  description: Accounting, inventory, sales and operations in one system.
+  selfHost: true
+
+crm:
+  name: CRM
+  description: Track contacts, companies and deals.
+  selfHost: true
+
+helpdesk:
+  name: Help desks
+  description: Handle customer requests from email, chat and other channels as tickets.
+  selfHost: true
+
+e-commerce:
+  name: E-commerce
+  description: Run an online store, from catalogue to checkout.
+  selfHost: true
+
+url-shortener:
+  name: URL shorteners
+  description: Short links on your own domain, with click statistics.
+  selfHost: true
+
+mail-server:
+  name: Mail servers
+  description: Host email for your own domains.
+  selfHost: true
+
+cloud-ide:
+  name: Cloud development environments
+  description: Development environments on a remote machine, reached from a browser or a local editor.
+  selfHost: true
+
+service-mesh:
+  name: Service meshes
+  description: Encrypt, route and observe traffic between services in a cluster.
+
+api-gateway:
+  name: API gateways
+  description: Route, authenticate and rate-limit API traffic in front of services.
+  selfHost: true
+
+workflow-orchestration:
+  name: Workflow orchestration
+  description: Schedule and run data pipelines and jobs as dependency graphs.
+  selfHost: true
+
+vector-database:
+  name: Vector databases
+  description: Store embeddings and search them by similarity.
+  selfHost: true
+
+analytical-database:
+  name: Analytical databases
+  description: Columnar SQL engines for analytics over large datasets.
+  selfHost: true
+
+home-automation:
+  name: Home automation
+  description: Control and automate smart home devices locally.
+  selfHost: true

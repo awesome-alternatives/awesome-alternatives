@@ -1,0 +1,7 @@
+name: Zustand
+repository: https://github.com/pmndrs/zustand
+category: react-state
+replaces:
+  - tool: redux
+    fit: full
+    note: A hook-based store with no providers or reducers required, and Redux-style middleware.

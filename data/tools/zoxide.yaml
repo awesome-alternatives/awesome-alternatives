@@ -1,0 +1,10 @@
+name: zoxide
+repository: https://github.com/ajeetdsouza/zoxide
+category: directory-jumper
+replaces:
+  - tool: autojump
+    fit: full
+    note: Jumps to frecent directories, with an importer for autojump's database.
+  - tool: z
+    fit: full
+    note: Same frecency model, for most shells, with an importer for z's data.

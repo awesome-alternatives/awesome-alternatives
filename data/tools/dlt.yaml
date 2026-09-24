@@ -1,0 +1,7 @@
+name: dlt
+repository: https://github.com/dlt-hub/dlt
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: A Python library for loading data into warehouses, with schema inference and incremental loads.

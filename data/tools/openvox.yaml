@@ -1,0 +1,7 @@
+name: OpenVox
+repository: https://github.com/OpenVoxProject/openvox
+category: config-management
+replaces:
+  - tool: puppet
+    fit: drop-in
+    note: A community fork of Puppet that runs the same manifests and modules.

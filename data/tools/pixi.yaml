@@ -1,0 +1,10 @@
+name: pixi
+repository: https://github.com/prefix-dev/pixi
+category: python-packaging
+replaces:
+  - tool: conda
+    fit: full
+    note: Installs conda packages into per-project environments with a lockfile.
+  - tool: poetry
+    fit: partial
+    note: Manages project dependencies and a lockfile, from conda-forge and PyPI.

@@ -1,0 +1,7 @@
+name: WebdriverIO
+repository: https://github.com/webdriverio/webdriverio
+category: browser-testing
+replaces:
+  - tool: selenium
+    fit: full
+    note: Drives browsers over WebDriver and WebDriver BiDi from JavaScript and TypeScript.

@@ -1,0 +1,5 @@
+name: Emby
+homepage: https://emby.media
+vendor: Emby
+category: media-server
+description: Media server for streaming a personal library, closed source since 2018.

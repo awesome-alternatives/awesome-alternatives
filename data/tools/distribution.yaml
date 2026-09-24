@@ -1,0 +1,8 @@
+name: Distribution
+repository: https://github.com/distribution/distribution
+category: container-registry
+replaces:
+  - tool: docker-hub
+    fit: partial
+    note: The reference OCI registry server, without a web UI, users or scanning.
+deploy: [container, binary]

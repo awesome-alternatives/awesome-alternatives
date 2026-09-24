@@ -1,0 +1,11 @@
+name: Plane
+repository: https://github.com/makeplane/plane
+category: project-management
+replaces:
+  - tool: jira
+    fit: full
+    note: Issues, cycles, modules and pages, with a Jira importer.
+  - tool: linear
+    fit: full
+    note: Issues, cycles and triage in a similar layout.
+deploy: [container, helm]

@@ -1,0 +1,11 @@
+name: ZITADEL
+repository: https://github.com/zitadel/zitadel
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: full
+    note: Multi-tenant login, OpenID Connect, SAML and passkeys, built for B2B apps.
+  - tool: okta
+    fit: partial
+    note: SSO for your own applications rather than a workforce app catalogue.
+deploy: [container, helm, binary]

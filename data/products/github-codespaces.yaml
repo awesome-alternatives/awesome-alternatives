@@ -1,0 +1,5 @@
+name: GitHub Codespaces
+homepage: https://github.com/features/codespaces
+vendor: GitHub
+category: cloud-ide
+description: Hosted development environments for GitHub repositories, reached from VS Code or the browser.

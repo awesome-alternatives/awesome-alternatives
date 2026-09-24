@@ -1,0 +1,11 @@
+name: Quickwit
+repository: https://github.com/quickwit-oss/quickwit
+category: log-storage
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: Log and trace search on object storage, with an Elasticsearch-compatible subset of its API.
+  - tool: splunk
+    fit: partial
+    note: Log search only.
+deploy: [container, helm, binary]

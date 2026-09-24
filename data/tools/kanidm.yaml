@@ -1,0 +1,11 @@
+name: Kanidm
+repository: https://github.com/kanidm/kanidm
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: Identity server with OAuth2, OpenID Connect, LDAP, passkeys and RADIUS.
+  - tool: keycloak
+    fit: partial
+    note: OpenID Connect and LDAP, without SAML.
+deploy: [container]

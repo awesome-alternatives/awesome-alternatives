@@ -1,0 +1,5 @@
+name: Jira
+homepage: https://www.atlassian.com/software/jira
+vendor: Atlassian
+category: project-management
+description: Atlassian's issue and project tracker, sold as a cloud service.

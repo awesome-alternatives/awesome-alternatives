@@ -1,0 +1,11 @@
+name: Ceph
+repository: https://github.com/ceph/ceph
+category: object-storage
+terms: open
+replaces:
+  - tool: minio
+    fit: full
+    note: S3-compatible storage through the RADOS Gateway, on a cluster that also serves block and file storage.
+  - tool: amazon-s3
+    fit: full
+    note: S3-compatible API through the RADOS Gateway.

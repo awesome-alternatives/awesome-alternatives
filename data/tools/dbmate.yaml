@@ -1,0 +1,10 @@
+name: dbmate
+repository: https://github.com/amacneil/dbmate
+category: database-migrations
+replaces:
+  - tool: flyway
+    fit: full
+    note: Plain SQL migrations with up and down sections, from a standalone binary.
+  - tool: liquibase
+    fit: partial
+    note: SQL migrations only, without changelogs in XML or YAML.

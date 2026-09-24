@@ -1,0 +1,8 @@
+name: Strapi
+repository: https://github.com/strapi/strapi
+category: headless-cms
+terms: open-core
+replaces:
+  - tool: contentful
+    fit: full
+    note: Content types, REST and GraphQL APIs, roles and i18n, in Node.js.

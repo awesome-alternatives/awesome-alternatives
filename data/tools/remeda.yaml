@@ -1,0 +1,7 @@
+name: Remeda
+repository: https://github.com/remeda/remeda
+category: javascript-utility
+replaces:
+  - tool: lodash
+    fit: partial
+    note: Typed utilities for data-first and data-last calls, with a different API.
