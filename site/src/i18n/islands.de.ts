@@ -2,6 +2,7 @@ import type { Islands } from "./messages.ts";
 
 export const islands: Islands = {
   card: {
+    migrationNotes: "Migrationshinweise →",
     migration: "Offizielle Migrationsanleitung ↗",
     compare: "Mit {name} vergleichen",
     archived: "archiviert",

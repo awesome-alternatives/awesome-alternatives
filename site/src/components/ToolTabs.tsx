@@ -16,6 +16,7 @@ export interface ReplacedTool {
   fit: Fit;
   note: string | null;
   migration: string | null;
+  notes: string | null;
 }
 
 export interface Latest {
@@ -339,9 +340,15 @@ function ReplacesPanel({
           <a href={pathFor(locale, `/alternatives/${r.slug}/`)}>{r.name}</a>
           <span className="tool-note">
             {r.note ?? ""}
-            {r.migration && (
+            {r.notes && (
               <>
                 {r.note ? " " : ""}
+                <a href={r.notes}>{strings.card.migrationNotes}</a>
+              </>
+            )}
+            {r.migration && (
+              <>
+                {r.note || r.notes ? " " : ""}
                 <a href={r.migration}>{strings.card.migration}</a>
               </>
             )}

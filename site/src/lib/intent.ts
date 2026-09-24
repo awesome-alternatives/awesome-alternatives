@@ -33,7 +33,6 @@ export function targetTitle(locale: Locale, strings: TargetStrings, name: string
 }
 
 export function targetDescription(
-  locale: Locale,
   strings: TargetStrings,
   name: string,
   target: string,

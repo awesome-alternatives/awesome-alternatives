@@ -5,6 +5,7 @@ import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { checkHomepage, checkMigrations } from "./lib/links.ts";
+import { checkMigrationPages } from "./lib/migrations.ts";
 import { renderFindings } from "./lib/report.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 
@@ -33,7 +34,8 @@ const migrations = await mapLimit(
   4,
   (tool) => checkMigrations(tool),
 );
-const all = [...findings, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
+const pages = await checkMigrationPages(root, catalog.tools);
+const all = [...findings, ...pages, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
 
 const report = renderFindings(all, targets);
 console.log(report);

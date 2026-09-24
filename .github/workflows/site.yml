@@ -2,7 +2,7 @@ name: Site
 
 on:
   pull_request:
-    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', '.github/workflows/refresh.yml', '.github/workflows/site.yml']
+    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'data/migrations/**', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', '.github/workflows/refresh.yml', '.github/workflows/site.yml']
   push:
     branches: [main]
     paths: ['site/**', '.github/workflows/site.yml']

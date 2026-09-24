@@ -12,6 +12,7 @@ const flag: Record<LabelledFlag, string> = {
 
 export const islands = {
   card: {
+    migrationNotes: "Migration notes →",
     migration: "Official migration guide ↗",
     compare: "Compare with {name}",
     archived: "archived",

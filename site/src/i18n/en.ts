@@ -153,6 +153,23 @@ export const en = {
     home: "Home",
   },
 
+  migrate: {
+    title: "Migrating from {from} to {to}",
+    description: "Moving from {from} to {to}: licence, compatibility, the steps and the pitfalls, from the official guide.",
+    context: "migration",
+    terms: "Licence and terms",
+    fit: "Fit",
+    englishOnly: "This page is written in English.",
+    guide: "Official guide",
+    guideLink: "{name}'s migration guide ↗",
+    sources: "Sources",
+    reviewed: "Reviewed on {date}.",
+    due: "Due for review: {reasons}.",
+    dueAge: "last reviewed more than a year ago",
+    dueMajor: "{name} has shipped a new major version since",
+    alternativesLink: "Other alternatives to {name} →",
+  },
+
   target: {
     title: { one: "1 alternative to {name}", other: "{n} alternatives to {name}" },
     titleOpen: { one: "1 open source alternative to {name}", other: "{n} open source alternatives to {name}" },

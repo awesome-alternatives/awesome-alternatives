@@ -8,6 +8,7 @@ const around: Surroundings = {
   categoryName: "Python linting and formatting",
   selfHost: false,
   checkedAt: "2026-09-23T03:17:00.000Z",
+  migrationNotes: [],
   nameOf: (slug) => ({ flake8: "Flake8", black: "Black" })[slug] ?? slug,
   replacedBy: [],
 };
@@ -138,4 +139,9 @@ test("an official migration guide is linked under the replacement it belongs to"
   );
   assert.ok(out.includes("  - Official migration guide: https://example.com/from-flake8"));
   assert.ok(!toolMarkdown(tool({ replaces: [{ tool: "black", fit: "full" }] }), around).includes("migration guide"));
+});
+
+test("a replacement with a migration page links to it", () => {
+  const out = toolMarkdown(tool({ replaces: [{ tool: "flake8", fit: "full" }] }), { ...around, migrationNotes: ["flake8"] });
+  assert.ok(out.includes("  - Migration notes: https://awesome-alternatives.com/migrate/flake8/ruff/"));
 });

@@ -54,6 +54,7 @@ export type BlockingCode =
   | "duplicate-replacement"
   | "duplicate-repository"
   | "fork"
+  | "migration-page"
   | "migration-unreachable"
   | "not-found"
   | "private"

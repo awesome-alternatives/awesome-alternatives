@@ -33,10 +33,10 @@ test("a single alternative reads in the singular, in each language's own wording
 
 test("the description names the drop-in alternatives when there are any", () => {
   const tools = [alt("Valkey", "open", "drop-in"), alt("KeyDB", "open"), alt("Dragonfly", "source-available", "full", "C++")];
-  const text = targetDescription("en", en.target, "Redis", "redis", tools);
+  const text = targetDescription(en.target, "Redis", "redis", tools);
   assert.match(text, /^3 alternatives to Redis, in Rust, C\+\+\./);
   assert.ok(text.endsWith("Drop-in: Valkey."));
-  assert.ok(!targetDescription("en", en.target, "Redis", "redis", [alt("KeyDB", "open")]).includes("Drop-in"));
+  assert.ok(!targetDescription(en.target, "Redis", "redis", [alt("KeyDB", "open")]).includes("Drop-in"));
 });
 
 test("a category of services you run is titled by what people search for", () => {
