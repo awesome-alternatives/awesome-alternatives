@@ -1,0 +1,8 @@
+name: YugabyteDB
+repository: https://github.com/yugabyte/yugabyte-db
+category: distributed-sql
+terms: open-core
+replaces:
+  - tool: cockroachdb
+    fit: full
+    note: "Distributed SQL that reuses PostgreSQL's own query layer."

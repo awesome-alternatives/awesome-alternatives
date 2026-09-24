@@ -8,3 +8,9 @@ replaces:
   - tool: github
     fit: full
     note: Pull requests, issues and Actions that run GitHub Actions workflows, on your own server.
+  - tool: jenkins
+    fit: partial
+    note: Gitea Actions runs GitHub Actions-style workflows inside the forge.
+  - tool: bitbucket
+    fit: full
+    note: Repositories, pull requests and CI on your own server.

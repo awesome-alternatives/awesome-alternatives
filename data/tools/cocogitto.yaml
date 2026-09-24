@@ -4,3 +4,6 @@ category: release-automation
 replaces:
   - tool: semantic-release
     fit: full
+  - tool: conventional-changelog
+    fit: partial
+    note: Generates the changelog as part of cog bump.

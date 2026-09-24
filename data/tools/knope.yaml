@@ -5,3 +5,6 @@ replaces:
   - tool: semantic-release
     fit: full
     note: Also reads changesets, not only conventional commits.
+  - tool: changesets
+    fit: full
+    note: Reads changeset files as well as Conventional Commits.

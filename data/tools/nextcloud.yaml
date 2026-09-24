@@ -1,3 +1,10 @@
 name: Nextcloud
 repository: https://github.com/nextcloud/server
 category: file-sync
+replaces:
+  - tool: dropbox
+    fit: full
+    note: File sync with desktop and mobile clients, sharing links and versioning, self-hosted.
+  - tool: google-drive
+    fit: full
+    note: Files plus collaborative documents through its office integration, self-hosted.

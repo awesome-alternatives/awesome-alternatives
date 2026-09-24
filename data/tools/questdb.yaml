@@ -1,0 +1,7 @@
+name: QuestDB
+repository: https://github.com/questdb/questdb
+category: time-series-database
+replaces:
+  - tool: influxdb
+    fit: full
+    note: Ingests the InfluxDB line protocol and is queried with SQL.

@@ -1,0 +1,7 @@
+name: OpenSearch Dashboards
+repository: https://github.com/opensearch-project/OpenSearch-Dashboards
+category: dashboards
+replaces:
+  - tool: kibana
+    fit: full
+    note: Fork of Kibana 7.10, the UI for OpenSearch.

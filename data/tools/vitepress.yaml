@@ -5,3 +5,6 @@ replaces:
   - tool: docusaurus
     fit: full
     note: Markdown first, built on Vue and Vite.
+  - tool: gitbook
+    fit: full
+    note: Documentation from Markdown in your own repository, deployed as a static site.

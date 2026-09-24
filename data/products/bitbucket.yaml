@@ -1,0 +1,5 @@
+name: Bitbucket
+homepage: https://bitbucket.org
+vendor: Atlassian
+category: git-forge
+description: Hosted Git repositories with pull requests and Pipelines CI.

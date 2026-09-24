@@ -8,3 +8,9 @@ replaces:
   - tool: github
     fit: full
     note: Pull requests, issues and built-in CI/CD, with pipelines in its own format rather than GitHub Actions.
+  - tool: jenkins
+    fit: partial
+    note: CI/CD built into the forge.
+  - tool: bitbucket
+    fit: full
+    note: Repositories, pull requests and CI/CD on your own server.

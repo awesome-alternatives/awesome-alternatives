@@ -204,3 +204,40 @@ llm-runtime:
   name: Local model runtimes
   description: Run open-weight language models on your own hardware, behind a local API.
   selfHost: true
+
+container-desktop:
+  name: Container desktops
+  description: Run containers and a local Kubernetes on a laptop, with the engine managed for you.
+
+dashboards:
+  name: Dashboards
+  description: Build dashboards and explore metrics, logs and traces from a web UI.
+  selfHost: true
+
+actor-framework:
+  name: Actor toolkits
+  description: Actor-model runtimes for building concurrent and distributed JVM applications.
+
+distributed-sql:
+  name: Distributed SQL databases
+  description: SQL databases that spread data across nodes and speak the PostgreSQL wire protocol.
+  selfHost: true
+
+error-tracking:
+  name: Error tracking
+  description: Collect exceptions from applications through an SDK and group them into issues.
+  selfHost: true
+
+tracing:
+  name: Distributed tracing
+  description: Collect and search traces of requests as they cross services.
+  selfHost: true
+
+time-series-database:
+  name: Time-series databases
+  description: Store and query timestamped measurements at high write rates.
+  selfHost: true
+
+encrypted-files:
+  name: Encrypted files in git
+  description: Keep secrets in a repository, encrypted, and decrypted only by the people and machines allowed to.

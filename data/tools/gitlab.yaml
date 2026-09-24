@@ -6,3 +6,9 @@ replaces:
   - tool: github
     fit: full
     note: Repositories, merge requests, CI/CD and registries on your own server. Some features need a paid tier.
+  - tool: jenkins
+    fit: partial
+    note: CI/CD built into the forge, configured in .gitlab-ci.yml.
+  - tool: bitbucket
+    fit: full
+    note: Repositories, merge requests and CI/CD on your own server.

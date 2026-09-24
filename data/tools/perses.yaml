@@ -1,0 +1,7 @@
+name: Perses
+repository: https://github.com/perses/perses
+category: dashboards
+replaces:
+  - tool: grafana
+    fit: partial
+    note: Dashboards as code with an open specification, and fewer data sources than Grafana.

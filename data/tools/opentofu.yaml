@@ -5,3 +5,6 @@ replaces:
   - tool: terraform
     fit: drop-in
     note: Fork of Terraform 1.5, reads the same configuration and state.
+  - tool: aws-cloudformation
+    fit: full
+    note: HCL configuration for AWS and other clouds.

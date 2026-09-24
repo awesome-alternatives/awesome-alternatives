@@ -1,0 +1,5 @@
+name: Google Drive
+homepage: https://www.google.com/drive/
+vendor: Google
+category: file-sync
+description: "Hosted file storage and sharing with Google's office apps."

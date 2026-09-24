@@ -1,0 +1,10 @@
+name: OpenTelemetry Collector
+repository: https://github.com/open-telemetry/opentelemetry-collector
+category: log-pipeline
+replaces:
+  - tool: logstash
+    fit: partial
+    note: Receives, processes and exports logs, metrics and traces in the OpenTelemetry format.
+  - tool: fluentd
+    fit: partial
+    note: Receives, processes and exports logs, metrics and traces in the OpenTelemetry format.

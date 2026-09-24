@@ -1,0 +1,7 @@
+name: Difftastic
+repository: https://github.com/Wilfred/difftastic
+category: git-diff-pager
+replaces:
+  - tool: diff-so-fancy
+    fit: partial
+    note: "Compares files by syntax tree rather than by line, run as git's external diff instead of a pager."

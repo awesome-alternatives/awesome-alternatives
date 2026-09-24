@@ -1,0 +1,14 @@
+name: Astro
+repository: https://github.com/withastro/astro
+category: static-site-generator
+terms: open
+replaces:
+  - tool: gatsby
+    fit: full
+    note: Ships HTML without JavaScript by default and renders React, Vue or Svelte components only where needed.
+  - tool: jekyll
+    fit: full
+    note: Markdown and MDX content collections, built to static HTML.
+  - tool: hexo
+    fit: full
+    note: Content collections in Markdown and MDX, built to static HTML.

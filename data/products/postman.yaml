@@ -1,0 +1,5 @@
+name: Postman
+homepage: https://www.postman.com
+vendor: Postman
+category: api-client
+description: Hosted API platform with a desktop client for building and testing HTTP requests.

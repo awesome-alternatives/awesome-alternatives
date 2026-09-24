@@ -5,4 +5,7 @@ replaces:
   - tool: elasticsearch
     fit: partial
     note: Search-as-you-type for apps and sites, not log analytics.
+  - tool: algolia
+    fit: full
+    note: Typo-tolerant instant search you can host yourself.
 terms: open-core

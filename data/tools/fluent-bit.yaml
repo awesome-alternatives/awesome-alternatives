@@ -5,3 +5,6 @@ replaces:
   - tool: logstash
     fit: full
     note: Lightweight agent in C, built for nodes and edge devices.
+  - tool: fluentd
+    fit: full
+    note: From the same project, written in C with a much smaller footprint.

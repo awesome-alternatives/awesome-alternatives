@@ -5,3 +5,9 @@ replaces:
   - tool: prometheus
     fit: full
     note: Accepts Prometheus remote write and scrape configs, queried with PromQL-compatible MetricsQL.
+  - tool: influxdb
+    fit: partial
+    note: Accepts the InfluxDB line protocol for writes, but is queried with MetricsQL.
+  - tool: datadog
+    fit: partial
+    note: Metrics storage and alerting you run yourself; logs and traces need other tools.

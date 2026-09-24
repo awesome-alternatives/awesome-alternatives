@@ -5,3 +5,6 @@ replaces:
   - tool: iterm2
     fit: full
     note: GPU-rendered with a native UI on macOS and Linux.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.

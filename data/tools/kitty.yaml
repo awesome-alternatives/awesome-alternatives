@@ -5,3 +5,6 @@ replaces:
   - tool: iterm2
     fit: full
     note: GPU-rendered, cross-platform, with tabs, splits and a graphics protocol.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.

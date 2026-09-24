@@ -1,0 +1,4 @@
+name: curl
+repository: https://github.com/curl/curl
+category: http-client
+terms: open

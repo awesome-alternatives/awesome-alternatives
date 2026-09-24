@@ -1,3 +1,7 @@
 name: Docusaurus
 repository: https://github.com/facebook/docusaurus
 category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation from Markdown in your own repository, deployed as a static site.

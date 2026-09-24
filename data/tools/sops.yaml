@@ -1,0 +1,7 @@
+name: SOPS
+repository: https://github.com/getsops/sops
+category: encrypted-files
+replaces:
+  - tool: git-crypt
+    fit: full
+    note: Encrypts the values inside YAML, JSON and env files with age, PGP or cloud KMS keys.

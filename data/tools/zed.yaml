@@ -5,4 +5,10 @@ replaces:
   - tool: vscode
     fit: full
     note: Native editor with multiplayer editing built in.
+  - tool: cursor
+    fit: partial
+    note: An editor with its own agent and edit predictions, with the model of your choice.
+  - tool: sublime-text
+    fit: full
+    note: A fast native editor with language servers and collaboration built in.
 terms: open

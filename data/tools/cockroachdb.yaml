@@ -1,0 +1,4 @@
+name: CockroachDB
+repository: https://github.com/cockroachdb/cockroach
+category: distributed-sql
+terms: source-available

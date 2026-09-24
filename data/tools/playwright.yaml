@@ -5,3 +5,9 @@ replaces:
   - tool: selenium
     fit: full
     note: Chromium, Firefox and WebKit from one API, with auto-waiting.
+  - tool: puppeteer
+    fit: full
+    note: The same style of browser automation, across Chromium, Firefox and WebKit.
+  - tool: cypress
+    fit: full
+    note: Tests across Chromium, Firefox and WebKit, run in parallel by default.

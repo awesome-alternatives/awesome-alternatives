@@ -1,0 +1,7 @@
+name: Rolldown
+repository: https://github.com/rolldown/rolldown
+category: javascript-bundler
+replaces:
+  - tool: rollup
+    fit: full
+    note: "Aims at Rollup's plugin API, written in Rust."

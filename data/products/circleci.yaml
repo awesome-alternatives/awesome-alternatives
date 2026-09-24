@@ -1,0 +1,5 @@
+name: CircleCI
+homepage: https://circleci.com
+vendor: CircleCI
+category: ci-server
+description: Hosted continuous integration and delivery.

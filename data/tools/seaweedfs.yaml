@@ -5,3 +5,6 @@ replaces:
   - tool: minio
     fit: full
     note: S3 API on top of a distributed file system built for billions of small files.
+  - tool: amazon-s3
+    fit: full
+    note: S3-compatible API on your own servers.

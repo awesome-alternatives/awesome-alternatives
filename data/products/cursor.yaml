@@ -1,0 +1,5 @@
+name: Cursor
+homepage: https://cursor.com
+vendor: Anysphere
+category: code-assistant
+description: An AI code editor built on VS Code, with an agent, chat and completions.

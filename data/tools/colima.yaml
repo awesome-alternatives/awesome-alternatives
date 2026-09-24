@@ -1,0 +1,7 @@
+name: Colima
+repository: https://github.com/abiosoft/colima
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: Runs a container runtime and an optional Kubernetes from the command line, with no GUI.

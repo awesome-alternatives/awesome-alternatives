@@ -5,3 +5,6 @@ replaces:
   - tool: github-copilot
     fit: full
     note: Completions, chat and edits in VS Code and JetBrains IDEs, with a hosted or a local model.
+  - tool: cursor
+    fit: partial
+    note: Adds chat, edits and completions to VS Code or JetBrains instead of a separate editor.

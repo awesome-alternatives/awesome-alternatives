@@ -2,3 +2,10 @@ name: Bitwarden server
 repository: https://github.com/bitwarden/server
 category: password-manager-server
 terms: open-core
+replaces:
+  - tool: 1password
+    fit: full
+    note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+  - tool: lastpass
+    fit: full
+    note: Use it with the Bitwarden apps and browser extensions, self-hosted.

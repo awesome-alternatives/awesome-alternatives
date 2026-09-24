@@ -5,3 +5,6 @@ replaces:
   - tool: the-silver-searcher
     fit: full
     note: Respects .gitignore like ag, usually faster on large trees.
+  - tool: ack
+    fit: full
+    note: Recursive search that respects .gitignore, much faster than ack.

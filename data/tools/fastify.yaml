@@ -5,3 +5,6 @@ replaces:
   - tool: express
     fit: full
     note: Schema-based validation and serialisation, and a plugin system.
+  - tool: koa
+    fit: full
+    note: Plugin architecture with schema-based validation and serialisation.

@@ -1,0 +1,7 @@
+name: Rancher Desktop
+repository: https://github.com/rancher-sandbox/rancher-desktop
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: full
+    note: Containers and Kubernetes on the desktop, with containerd or dockerd underneath.

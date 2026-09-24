@@ -5,3 +5,6 @@ replaces:
   - tool: httpie
     fit: full
     note: HTTPie-style syntax in a single static binary.
+  - tool: curl
+    fit: partial
+    note: Friendlier syntax and formatted output, for HTTP only.

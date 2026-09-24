@@ -5,3 +5,6 @@ replaces:
   - tool: nginx
     fit: partial
     note: Reverse proxy and load balancer configured from container labels, not a general web server.
+  - tool: ingress-nginx
+    fit: full
+    note: A Kubernetes ingress controller with automatic HTTPS.
