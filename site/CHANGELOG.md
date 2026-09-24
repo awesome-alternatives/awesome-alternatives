@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.53.1] - 2026-09-24
+
+### Refactoring
+
+- refactor(site): split the search island into its two state machines and its views (#156)
+
 ## [0.53.0] - 2026-09-24
 
 ### Features

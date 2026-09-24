@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.13.1] - 2026-09-24
+
+### Refactoring
+
+- refactor(api): let the cache own the read-through for search (#155)
+
 ## [0.13.0] - 2026-09-24
 
 ### Features
