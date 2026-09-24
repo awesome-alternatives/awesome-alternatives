@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T06:47:01.330Z",
+  "checkedAt": "2026-09-24T07:06:10.019Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -2187,7 +2187,7 @@
         "homepage": "https://anythingllm.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 66390,
+        "stars": 66391,
         "forks": 7393,
         "topics": [
           "agent-computer",
@@ -2289,7 +2289,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "withastro/astro",
@@ -2390,7 +2390,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "biomejs/biome",
@@ -2489,7 +2489,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bitwarden/server",
@@ -2675,7 +2675,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "usebruno/bruno",
@@ -2705,7 +2705,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-09-27T20:51:45Z",
-        "pushedAt": "2026-09-24T06:10:37Z",
+        "pushedAt": "2026-09-24T06:48:12Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2780,7 +2780,7 @@
         "homepage": "https://www.bugsink.com/",
         "language": "Python",
         "license": "Other",
-        "stars": 2089,
+        "stars": 2090,
         "forks": 134,
         "topics": [],
         "archived": false,
@@ -2870,7 +2870,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "oven-sh/bun",
@@ -2898,7 +2898,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T06:44:46Z",
+        "pushedAt": "2026-09-24T07:05:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2973,7 +2973,7 @@
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 76038,
+        "stars": 76040,
         "forks": 4995,
         "topics": [
           "acme",
@@ -3248,7 +3248,7 @@
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69194,
+        "stars": 69195,
         "forks": 7503,
         "topics": [],
         "archived": false,
@@ -3324,7 +3324,7 @@
         "homepage": "https://www.cockroachlabs.com",
         "language": "Go",
         "license": "Other",
-        "stars": 32491,
+        "stars": 32492,
         "forks": 4116,
         "topics": [
           "cockroachdb",
@@ -3481,8 +3481,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126238,
-        "forks": 19670,
+        "stars": 126243,
+        "forks": 19674,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -3927,7 +3927,7 @@
         "homepage": "https://create-react-app.dev/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 103254,
+        "stars": 103255,
         "forks": 26896,
         "topics": [
           "build-tools",
@@ -4208,7 +4208,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-03-18T22:32:22Z",
-        "pushedAt": "2026-09-23T21:42:27Z",
+        "pushedAt": "2026-09-24T06:56:33Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -4473,7 +4473,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 48665,
-        "forks": 3031,
+        "forks": 3033,
         "topics": [
           "date",
           "date-formatting",
@@ -4657,7 +4657,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108487,
+        "stars": 108489,
         "forks": 6381,
         "topics": [
           "deno",
@@ -5275,7 +5275,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-24T05:32:48Z",
+        "pushedAt": "2026-09-24T07:03:53Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5458,7 +5458,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T06:45:07Z",
+        "pushedAt": "2026-09-24T06:57:58Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -6345,7 +6345,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FerretDB/FerretDB",
@@ -6353,7 +6353,7 @@
         "homepage": "https://www.ferretdb.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 11077,
+        "stars": 11078,
         "forks": 488,
         "topics": [
           "database",
@@ -7015,7 +7015,7 @@
         "homepage": "https://www.gatsbyjs.com",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 55942,
+        "stars": 55943,
         "forks": 10114,
         "topics": [
           "blog",
@@ -7223,7 +7223,7 @@
         "homepage": "https://geminicli.com",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 107138,
+        "stars": 107139,
         "forks": 14627,
         "topics": [
           "ai",
@@ -7611,7 +7611,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "go-gitea/gitea",
@@ -7619,8 +7619,8 @@
         "homepage": "https://gitea.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 58143,
-        "forks": 7168,
+        "stars": 58144,
+        "forks": 7169,
         "topics": [
           "bitbucket",
           "cicd",
@@ -7647,7 +7647,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-11-01T02:13:26Z",
-        "pushedAt": "2026-09-24T00:54:33Z",
+        "pushedAt": "2026-09-24T07:01:44Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8059,8 +8059,8 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76879,
-        "forks": 14776,
+        "stars": 76880,
+        "forks": 14777,
         "topics": [
           "alerting",
           "analytics",
@@ -8082,7 +8082,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T06:19:12Z",
+        "pushedAt": "2026-09-24T06:56:28Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8162,7 +8162,7 @@
         "homepage": "https://helix-editor.com",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 46317,
+        "stars": 46318,
         "forks": 3772,
         "topics": [
           "kakoune",
@@ -8243,7 +8243,7 @@
         "homepage": "https://hexo.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 41777,
+        "stars": 41779,
         "forks": 44,
         "topics": [
           "hacktoberfest",
@@ -8337,7 +8337,7 @@
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32315,
+        "stars": 32317,
         "forks": 1340,
         "topics": [
           "aws-lambda",
@@ -8434,7 +8434,7 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80492,
+        "stars": 80493,
         "forks": 6124,
         "topics": [
           "api",
@@ -8640,7 +8640,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15504,
-        "forks": 1867,
+        "forks": 1868,
         "topics": [
           "asyncio",
           "http",
@@ -8731,7 +8731,7 @@
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89915,
+        "stars": 89916,
         "forks": 8386,
         "topics": [
           "blog-engine",
@@ -8827,7 +8827,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 29401,
-        "forks": 2279,
+        "forks": 2280,
         "topics": [
           "acme",
           "certificate-management",
@@ -8854,7 +8854,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-24T05:15:55Z",
+        "pushedAt": "2026-09-24T07:04:38Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9338,7 +9338,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-17T02:17:10Z",
-        "pushedAt": "2026-09-24T06:39:25Z",
+        "pushedAt": "2026-09-24T06:53:07Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9413,7 +9413,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "MIT",
-        "stars": 3773,
+        "stars": 3774,
         "forks": 121,
         "topics": [
           "jq",
@@ -9831,7 +9831,7 @@
         "language": "C",
         "license": "Other",
         "stars": 35675,
-        "forks": 2390,
+        "forks": 2392,
         "topics": [
           "jq"
         ],
@@ -10107,7 +10107,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-23T23:05:24Z",
+        "pushedAt": "2026-09-24T07:00:04Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -10239,7 +10239,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T06:32:39Z",
+        "pushedAt": "2026-09-24T06:58:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10408,7 +10408,7 @@
         "homepage": "https://sw.kovidgoyal.net/kitty/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 35053,
+        "stars": 35054,
         "forks": 1522,
         "topics": [
           "c",
@@ -11047,7 +11047,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44820,
+        "stars": 44821,
         "forks": 9186,
         "topics": [
           "ai",
@@ -11261,7 +11261,7 @@
         "language": "C++",
         "license": "MIT",
         "stars": 129373,
-        "forks": 23665,
+        "forks": 23666,
         "topics": [
           "ggml"
         ],
@@ -11269,7 +11269,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T06:44:35Z",
+        "pushedAt": "2026-09-24T06:57:32Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11281,6 +11281,13 @@
         "signed": false
       },
       "releases": [
+        {
+          "tag": "b11154",
+          "name": "test-save-load-state : print a per-model results table in --models mode (#29316)",
+          "publishedAt": "2026-09-24T06:48:25Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11154",
+          "prerelease": true
+        },
         {
           "tag": "b11153",
           "name": "hexagon: reject MUL_MAT_ID when src1 precision is F32 (#29348)",
@@ -11307,13 +11314,6 @@
           "name": "opencl: add A8 Q6_K non-MoE dp4a binary kernel (#29057)",
           "publishedAt": "2026-09-23T19:03:52Z",
           "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11147",
-          "prerelease": true
-        },
-        {
-          "tag": "b11146",
-          "name": "llama.cpp : bump version to 0.5.0 (#29333)",
-          "publishedAt": "2026-09-23T18:36:37Z",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11146",
           "prerelease": true
         }
       ],
@@ -11349,8 +11349,8 @@
         "homepage": "https://lobehub.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 82793,
-        "forks": 15917,
+        "stars": 82796,
+        "forks": 15918,
         "topics": [
           "agent",
           "agent-collaboration",
@@ -11714,7 +11714,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "moment/luxon",
@@ -11767,7 +11767,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "matomo-org/matomo",
@@ -11871,7 +11871,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mattermost/mattermost",
@@ -11894,7 +11894,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T06:40:18Z",
+        "pushedAt": "2026-09-24T07:05:20Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11967,7 +11967,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meilisearch/meilisearch",
@@ -12496,7 +12496,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 27498,
-        "forks": 4149,
+        "forks": 4148,
         "topics": [
           "documentation",
           "framework",
@@ -12734,7 +12734,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-24T05:09:56Z",
+        "pushedAt": "2026-09-24T07:04:28Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12911,7 +12911,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "neovim/neovim",
@@ -12919,8 +12919,8 @@
         "homepage": "https://neovim.io",
         "language": "Vim Script",
         "license": "Other",
-        "stars": 102547,
-        "forks": 7131,
+        "stars": 102549,
+        "forks": 7132,
         "topics": [
           "api",
           "c",
@@ -13195,7 +13195,7 @@
         "homepage": "https://nginx.org/",
         "language": "C",
         "license": "BSD-2-Clause",
-        "stars": 31721,
+        "stars": 31722,
         "forks": 8310,
         "topics": [
           "content-cache",
@@ -13288,7 +13288,7 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 122058,
-        "forks": 37587,
+        "forks": 37588,
         "topics": [
           "javascript",
           "js",
@@ -13373,7 +13373,7 @@
         "homepage": "https://docs.npmjs.com/cli/",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 10138,
+        "stars": 10139,
         "forks": 4762,
         "topics": [
           "javascript",
@@ -13661,8 +13661,8 @@
         "homepage": "https://ohmyz.sh",
         "language": "Shell",
         "license": "MIT",
-        "stars": 189893,
-        "forks": 27348,
+        "stars": 189894,
+        "forks": 27349,
         "topics": [
           "cli",
           "cli-app",
@@ -13724,7 +13724,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181560,
+        "stars": 181563,
         "forks": 17986,
         "topics": [
           "deepseek",
@@ -13934,8 +13934,8 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 152967,
-        "forks": 22372,
+        "stars": 152969,
+        "forks": 22375,
         "topics": [
           "ai",
           "llm",
@@ -14025,7 +14025,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openbao/openbao",
@@ -14129,8 +14129,8 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209732,
-        "forks": 27683,
+        "stars": 209738,
+        "forks": 27685,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -14216,8 +14216,8 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89016,
-        "forks": 11714,
+        "stars": 89018,
+        "forks": 11715,
         "topics": [
           "agent",
           "artificial-intelligence",
@@ -14577,7 +14577,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opentofu/opentofu",
@@ -14660,7 +14660,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "oxc-project/oxc",
@@ -14683,7 +14683,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-24T06:45:36Z",
+        "pushedAt": "2026-09-24T06:56:10Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15093,7 +15093,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/pekko",
@@ -15241,7 +15241,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 10288,
-        "forks": 3388,
+        "forks": 3387,
         "topics": [
           "packaging",
           "pip",
@@ -15456,7 +15456,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "plausible/analytics",
@@ -15570,7 +15570,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "microsoft/playwright",
@@ -15578,8 +15578,8 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96599,
-        "forks": 6496,
+        "stars": 96600,
+        "forks": 6497,
         "topics": [
           "automation",
           "chrome",
@@ -15669,7 +15669,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pnpm/pnpm",
@@ -15693,7 +15693,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T06:45:31Z",
+        "pushedAt": "2026-09-24T07:01:20Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15849,7 +15849,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "podman-desktop/podman-desktop",
@@ -16032,7 +16032,7 @@
         "homepage": null,
         "language": "Shell",
         "license": "MIT",
-        "stars": 55144,
+        "stars": 55145,
         "forks": 2442,
         "topics": [
           "zsh"
@@ -16110,7 +16110,7 @@
         "homepage": "https://prettier.io",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 52298,
+        "stars": 52299,
         "forks": 5018,
         "topics": [
           "angular",
@@ -16136,7 +16136,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-11-29T17:13:37Z",
-        "pushedAt": "2026-09-24T06:08:28Z",
+        "pushedAt": "2026-09-24T07:01:48Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16319,7 +16319,7 @@
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66197,
+        "stars": 66199,
         "forks": 10853,
         "topics": [
           "alerting",
@@ -16496,7 +16496,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pulumi/pulumi",
@@ -16530,7 +16530,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-23T22:00:31Z",
+        "pushedAt": "2026-09-24T07:01:58Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17063,7 +17063,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "questdb/questdb",
@@ -17626,7 +17626,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 54339,
-        "forks": 10696,
+        "forks": 10698,
         "topics": [
           "client",
           "cookies",
@@ -17722,7 +17722,7 @@
         "language": "Rust",
         "license": "Unlicense",
         "stars": 68556,
-        "forks": 3364,
+        "forks": 3367,
         "topics": [
           "cli",
           "command-line",
@@ -18005,7 +18005,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-14T22:26:28Z",
-        "pushedAt": "2026-09-24T06:38:09Z",
+        "pushedAt": "2026-09-24T06:55:20Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -18166,7 +18166,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "web-infra-dev/rspack",
@@ -18175,7 +18175,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 12916,
-        "forks": 855,
+        "forks": 856,
         "topics": [
           "build-tool",
           "bundler",
@@ -18197,7 +18197,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-04-01T08:45:30Z",
-        "pushedAt": "2026-09-24T06:31:48Z",
+        "pushedAt": "2026-09-24T07:01:53Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18433,7 +18433,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33744,
+        "stars": 33745,
         "forks": 1509,
         "topics": [
           "ai-native",
@@ -18453,7 +18453,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-11-23T13:45:10Z",
-        "pushedAt": "2026-09-24T06:41:39Z",
+        "pushedAt": "2026-09-24T07:04:45Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18919,7 +18919,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T06:41:57Z",
+        "pushedAt": "2026-09-24T06:51:43Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -19089,7 +19089,7 @@
         "homepage": "https://getsops.io",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 23200,
+        "stars": 23201,
         "forks": 1084,
         "topics": [
           "aws",
@@ -19279,7 +19279,7 @@
         "homepage": "https://starship.rs",
         "language": "Rust",
         "license": "ISC",
-        "stars": 60026,
+        "stars": 60027,
         "forks": 2673,
         "topics": [
           "bash",
@@ -19461,7 +19461,7 @@
         "homepage": "https://syncthing.net/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 88884,
+        "stars": 88885,
         "forks": 5489,
         "topics": [
           "go",
@@ -19947,7 +19947,7 @@
         "language": "C",
         "license": "Other",
         "stars": 23581,
-        "forks": 1157,
+        "forks": 1158,
         "topics": [
           "analytics",
           "database",
@@ -19967,7 +19967,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-03-07T20:03:41Z",
-        "pushedAt": "2026-09-23T17:20:39Z",
+        "pushedAt": "2026-09-24T07:01:48Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20567,7 +20567,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "typesense/typesense",
@@ -20787,8 +20787,8 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 38982,
-        "forks": 8107,
+        "stars": 38983,
+        "forks": 8108,
         "topics": [
           "analytics",
           "audience-segmentation",
@@ -20884,7 +20884,7 @@
         "homepage": "https://uptime.kuma.pet",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 91756,
+        "stars": 91758,
         "forks": 8455,
         "topics": [
           "docker",
@@ -20992,7 +20992,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "astral-sh/uv",
@@ -21085,7 +21085,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "valkey-io/valkey",
@@ -21094,7 +21094,7 @@
         "language": "C",
         "license": "BSD-3-Clause",
         "stars": 27282,
-        "forks": 1330,
+        "forks": 1331,
         "topics": [
           "cache",
           "database",
@@ -21274,7 +21274,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68086,
+        "stars": 68088,
         "forks": 3243,
         "topics": [
           "bitwarden",
@@ -21502,7 +21502,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-24T06:45:20Z",
+        "pushedAt": "2026-09-24T07:03:11Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -21640,7 +21640,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-04-21T05:03:57Z",
-        "pushedAt": "2026-09-23T23:07:07Z",
+        "pushedAt": "2026-09-24T07:03:27Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -21807,7 +21807,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vitest-dev/vitest",
@@ -21895,8 +21895,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192836,
-        "forks": 43042,
+        "stars": 192838,
+        "forks": 43044,
         "topics": [
           "editor",
           "electron",
@@ -21908,7 +21908,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T06:46:54Z",
+        "pushedAt": "2026-09-24T07:02:51Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -21983,7 +21983,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33355,
+        "stars": 33356,
         "forks": 1865,
         "topics": [
           "editor",
@@ -22268,7 +22268,7 @@
         "homepage": "https://woodpecker-ci.org",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 7908,
+        "stars": 7909,
         "forks": 685,
         "topics": [
           "automation",
@@ -22559,7 +22559,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T06:36:47Z",
+        "pushedAt": "2026-09-24T07:00:42Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22637,7 +22637,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zed-industries/zed",
@@ -22645,8 +22645,8 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90798,
-        "forks": 10749,
+        "stars": 90800,
+        "forks": 10750,
         "topics": [
           "gpui",
           "rust-lang",
@@ -22657,7 +22657,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-24T02:57:58Z",
+        "pushedAt": "2026-09-24T07:04:40Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22905,7 +22905,7 @@
         "homepage": "https://www.getzola.org",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 17463,
+        "stars": 17464,
         "forks": 1187,
         "topics": [
           "blog-engine",
@@ -22997,7 +22997,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T07:05:49.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zulip/zulip",
