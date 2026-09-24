@@ -53,7 +53,6 @@ export interface GqlRepository {
       isDraft: boolean;
     }[];
   };
-  stargazers: { edges: { starredAt: string }[] };
   claim: Blob | null;
   claimAt?: Blob | null;
 }
@@ -73,7 +72,6 @@ export interface RepositoryFacts {
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   claim: string[];
-  recentStars: string[];
 }
 
 export interface MappedRepository extends RepositoryFacts {
@@ -95,7 +93,6 @@ fragment Facts on Repository {
   releases(first: ${RELEASE_HISTORY}, orderBy: {field: CREATED_AT, direction: DESC}) {
     nodes { tagName name description publishedAt url isPrerelease isDraft }
   }
-  stargazers(first: 100, orderBy: {field: STARRED_AT, direction: DESC}) { edges { starredAt } }
 }`;
 
 export function repositoryQuery(tools: readonly Pick<Tool, "repository" | "path">[]): {
@@ -199,7 +196,7 @@ export function mapRepository(node: GqlRepository): MappedRepository {
 
   const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
 
-  return { repo, release, annotatedTag, releases, claim, recentStars: node.stargazers.edges.map((e) => e.starredAt) };
+  return { repo, release, annotatedTag, releases, claim };
 }
 
 export function mapOwner(node: GqlOwner): OwnerFacts {
