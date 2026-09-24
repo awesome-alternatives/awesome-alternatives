@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.58.0] - 2026-09-24
+
+### Features
+
+- feat(refresh): compute the star trend and the spike check from the catalog's own history (#175)
+
 ## [0.57.8] - 2026-09-24
 
 ### Bug Fixes
