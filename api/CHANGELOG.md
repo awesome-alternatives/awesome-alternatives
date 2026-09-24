@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.15.0] - 2026-09-24
+
+### Features
+
+- feat(api): trigger a targeted refresh on a release webhook or a maintainer's OIDC call (#166)
+
 ## [0.14.0] - 2026-09-24
 
 ### Features
