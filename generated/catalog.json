@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T09:48:19.796Z",
+  "checkedAt": "2026-09-24T11:36:12.118Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -1788,7 +1788,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "aider",
@@ -1818,7 +1819,7 @@
         "homepage": "https://aider.chat/",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 49143,
+        "stars": 49146,
         "forks": 4987,
         "topics": [
           "anthropic",
@@ -1890,7 +1891,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "aiohttp",
@@ -1925,7 +1927,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-10-01T23:04:01Z",
-        "pushedAt": "2026-09-23T16:37:59Z",
+        "pushedAt": "2026-09-24T11:15:08Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -1976,7 +1978,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "akka",
@@ -2063,7 +2066,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "alacritty",
@@ -2093,8 +2097,8 @@
         "homepage": "https://alacritty.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 65804,
-        "forks": 3623,
+        "stars": 65805,
+        "forks": 3625,
         "topics": [
           "bsd",
           "gpu",
@@ -2162,7 +2166,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "anything-llm",
@@ -2184,7 +2189,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Mintplex-Labs/anything-llm",
@@ -2193,7 +2198,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 66397,
-        "forks": 7393,
+        "forks": 7394,
         "topics": [
           "agent-computer",
           "agent-harness",
@@ -2308,8 +2313,8 @@
         "homepage": "https://astro.build",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 62778,
-        "forks": 3808,
+        "stars": 62781,
+        "forks": 3809,
         "topics": [
           "astro",
           "blog",
@@ -2378,7 +2383,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "biome",
@@ -2410,7 +2416,7 @@
         "homepage": "https://biomejs.dev",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 25852,
+        "stars": 25853,
         "forks": 1243,
         "topics": [
           "css",
@@ -2478,7 +2484,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "bitwarden",
@@ -2502,7 +2509,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bitwarden/server",
@@ -2510,7 +2517,7 @@
         "homepage": "https://bitwarden.com",
         "language": "C#",
         "license": "Other",
-        "stars": 20191,
+        "stars": 20192,
         "forks": 1776,
         "topics": [
           "api",
@@ -2671,7 +2678,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "bruno",
@@ -2702,7 +2710,7 @@
         "homepage": "https://www.usebruno.com/",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 47157,
+        "stars": 47160,
         "forks": 2918,
         "topics": [
           "api-client",
@@ -2724,7 +2732,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-09-27T20:51:45Z",
-        "pushedAt": "2026-09-24T09:22:05Z",
+        "pushedAt": "2026-09-24T11:06:28Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2775,7 +2783,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "bugsink",
@@ -2792,7 +2801,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "bugsink/bugsink",
@@ -2903,7 +2912,7 @@
         "homepage": "https://bun.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 96027,
+        "stars": 96028,
         "forks": 5057,
         "topics": [
           "bun",
@@ -2923,7 +2932,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T09:39:21Z",
+        "pushedAt": "2026-09-24T11:20:17Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2974,7 +2983,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "caddy",
@@ -2991,7 +3001,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "caddyserver/caddy",
@@ -2999,8 +3009,8 @@
         "homepage": "https://caddyserver.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 76046,
-        "forks": 4995,
+        "stars": 76047,
+        "forks": 4996,
         "topics": [
           "acme",
           "automatic-https",
@@ -3159,7 +3169,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "changesets",
@@ -3247,7 +3258,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "cline",
@@ -3282,14 +3294,14 @@
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69207,
-        "forks": 7505,
+        "stars": 69208,
+        "forks": 7506,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2024-07-06T07:28:10Z",
-        "pushedAt": "2026-09-24T08:48:55Z",
+        "pushedAt": "2026-09-24T10:04:43Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3340,7 +3352,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "cockroachdb",
@@ -3351,7 +3364,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "cockroachdb/cockroach",
@@ -3492,7 +3505,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "codex",
@@ -3522,14 +3536,14 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126268,
-        "forks": 19681,
+        "stars": 126281,
+        "forks": 19687,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-13T05:37:54Z",
-        "pushedAt": "2026-09-24T09:25:35Z",
+        "pushedAt": "2026-09-24T11:21:13Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3580,7 +3594,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "colima",
@@ -3605,7 +3620,7 @@
         "homepage": "https://colima.run",
         "language": "Go",
         "license": "MIT",
-        "stars": 30968,
+        "stars": 30969,
         "forks": 620,
         "topics": [
           "containerd",
@@ -3676,7 +3691,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "concourse",
@@ -3698,7 +3714,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "concourse/concourse",
@@ -3816,8 +3832,8 @@
         "homepage": "https://continue.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 36011,
-        "forks": 5421,
+        "stars": 36014,
+        "forks": 5422,
         "topics": [
           "agent",
           "ai",
@@ -3880,7 +3896,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "conventional-changelog",
@@ -3964,7 +3981,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "create-react-app",
@@ -4047,7 +4065,8 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "crush",
@@ -4089,7 +4108,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2025-05-21T12:14:57Z",
-        "pushedAt": "2026-09-24T08:29:17Z",
+        "pushedAt": "2026-09-24T11:06:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -4140,7 +4159,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "cuberite",
@@ -4157,7 +4177,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "cuberite/cuberite",
@@ -4243,7 +4263,7 @@
         "language": "C",
         "license": "Other",
         "stars": 42912,
-        "forks": 7376,
+        "forks": 7377,
         "topics": [
           "c",
           "client",
@@ -4270,7 +4290,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-03-18T22:32:22Z",
-        "pushedAt": "2026-09-24T09:35:48Z",
+        "pushedAt": "2026-09-24T11:19:28Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -4321,7 +4341,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "cypress",
@@ -4418,7 +4439,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "date-fns",
@@ -4512,7 +4534,8 @@
         "no-license"
       ],
       "terms": "unknown",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "dayjs",
@@ -4537,8 +4560,8 @@
         "homepage": "https://day.js.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 48665,
-        "forks": 3052,
+        "stars": 48666,
+        "forks": 3068,
         "topics": [
           "date",
           "date-formatting",
@@ -4602,7 +4625,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "delta",
@@ -4627,7 +4651,7 @@
         "homepage": "https://dandavison.github.io/delta/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 32318,
+        "stars": 32320,
         "forks": 581,
         "topics": [
           "color-themes",
@@ -4694,7 +4718,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "deno",
@@ -4724,7 +4749,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108491,
+        "stars": 108493,
         "forks": 6382,
         "topics": [
           "deno",
@@ -4787,7 +4812,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "diff-so-fancy",
@@ -4871,7 +4897,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "difftastic",
@@ -4957,7 +4984,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "django-rest-framework",
@@ -4988,7 +5016,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-03-02T17:13:56Z",
-        "pushedAt": "2026-09-23T22:25:53Z",
+        "pushedAt": "2026-09-24T10:51:51Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5039,7 +5067,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "docker",
@@ -5121,7 +5150,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "docusaurus",
@@ -5146,8 +5176,8 @@
         "homepage": "https://docusaurus.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 66327,
-        "forks": 10044,
+        "stars": 66329,
+        "forks": 10043,
         "topics": [
           "documentation",
           "hacktoberfest",
@@ -5160,7 +5190,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-06-20T16:13:53Z",
-        "pushedAt": "2026-09-24T09:40:40Z",
+        "pushedAt": "2026-09-24T11:25:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5211,7 +5241,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "dprint",
@@ -5296,7 +5327,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "dragonfly",
@@ -5318,7 +5350,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dragonflydb/dragonfly",
@@ -5349,7 +5381,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-24T10:56:52Z",
+        "pushedAt": "2026-09-24T11:23:22Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5443,7 +5475,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 35883,
-        "forks": 1654,
+        "forks": 1657,
         "topics": [
           "bunjs",
           "mysql",
@@ -5460,7 +5492,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-06-24T09:03:05Z",
-        "pushedAt": "2026-09-24T09:07:20Z",
+        "pushedAt": "2026-09-24T10:00:42Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5511,7 +5543,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "elasticsearch",
@@ -5522,7 +5555,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/elasticsearch",
@@ -5541,7 +5574,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T10:49:21Z",
+        "pushedAt": "2026-09-24T11:35:34Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5691,7 +5724,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "elysia",
@@ -5716,7 +5750,7 @@
         "homepage": "https://elysiajs.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 19175,
+        "stars": 19177,
         "forks": 603,
         "topics": [
           "bun",
@@ -5730,7 +5764,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-12-04T12:53:30Z",
-        "pushedAt": "2026-09-24T09:34:16Z",
+        "pushedAt": "2026-09-24T10:30:26Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5781,7 +5815,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "esbuild",
@@ -5876,7 +5911,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "eslint",
@@ -5895,7 +5931,7 @@
         "homepage": "https://eslint.org",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 27516,
+        "stars": 27515,
         "forks": 5191,
         "topics": [
           "ecmascript",
@@ -5959,7 +5995,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "exa",
@@ -6043,7 +6080,8 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "express",
@@ -6125,7 +6163,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "eza",
@@ -6150,7 +6189,7 @@
         "homepage": "https://eza.rocks",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 23359,
+        "stars": 23360,
         "forks": 525,
         "topics": [
           "color",
@@ -6219,7 +6258,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "fastapi",
@@ -6250,7 +6290,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 102574,
-        "forks": 9942,
+        "forks": 9943,
         "topics": [
           "api",
           "async",
@@ -6328,7 +6368,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "fastify",
@@ -6373,7 +6414,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-09-28T19:10:14Z",
-        "pushedAt": "2026-09-24T04:27:51Z",
+        "pushedAt": "2026-09-24T10:01:44Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -6424,7 +6465,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ferretdb",
@@ -6442,7 +6484,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FerretDB/FerretDB",
@@ -6615,18 +6657,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-09-24T10:38:58Z",
+        "pushedAt": "2026-09-24T11:35:40Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "release": {
-        "tag": "v7.25.3",
-        "publishedAt": "2026-09-23T16:38:44Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.25.3",
+        "tag": "v7.26.0",
+        "publishedAt": "2026-09-24T11:09:45Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.26.0",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v7.26.0",
+          "name": "feat(fuzz): fuzz the config, format, commit and version parsers (#1182)",
+          "publishedAt": "2026-09-24T11:09:45Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.26.0",
+          "prerelease": false
+        },
         {
           "tag": "v7.25.3",
           "name": "fix(release): drop the stray padding from the unreachable-forge error (#1179)",
@@ -6654,19 +6703,13 @@
           "publishedAt": "2026-09-22T21:39:51Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.25.0",
           "prerelease": false
-        },
-        {
-          "tag": "v7.24.7",
-          "name": "fix(forge): accept an underscore in a hostname (#1164)",
-          "publishedAt": "2026-09-22T19:06:37Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.24.7",
-          "prerelease": false
         }
       ],
       "maintainerVerified": true,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "flake8",
@@ -6720,7 +6763,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "flask",
@@ -6740,7 +6784,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 74769,
-        "forks": 17004,
+        "forks": 17005,
         "topics": [
           "flask",
           "jinja",
@@ -6805,7 +6849,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "fluent-bit",
@@ -6827,7 +6872,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fluent/fluent-bit",
@@ -6924,7 +6969,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "fluent/fluentd",
@@ -7056,7 +7101,8 @@
         "no-release"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "gatling",
@@ -7117,7 +7163,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "gatsby",
@@ -7202,7 +7249,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "gatus",
@@ -7229,7 +7277,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "TwiN/gatus",
@@ -7352,7 +7400,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 107140,
-        "forks": 14627,
+        "forks": 14629,
         "topics": [
           "ai",
           "ai-agents",
@@ -7417,7 +7465,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ghostty",
@@ -7447,7 +7496,7 @@
         "homepage": "https://ghostty.org",
         "language": "Zig",
         "license": "MIT",
-        "stars": 61494,
+        "stars": 61498,
         "forks": 3503,
         "topics": [],
         "archived": false,
@@ -7477,7 +7526,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "giftless",
@@ -7494,7 +7544,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
-      "editedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "datopian/giftless",
@@ -7658,7 +7708,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "git-crypt",
@@ -7714,7 +7765,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "gitea",
@@ -7747,7 +7799,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "go-gitea/gitea",
@@ -7878,7 +7930,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gitlabhq/gitlabhq",
@@ -7951,7 +8003,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "GlowstoneMC/Glowstone",
@@ -8119,7 +8171,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "goose",
@@ -8149,7 +8202,7 @@
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54608,
+        "stars": 54611,
         "forks": 6305,
         "topics": [
           "acp",
@@ -8212,7 +8265,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "grafana",
@@ -8234,7 +8288,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/grafana",
@@ -8242,8 +8296,8 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76885,
-        "forks": 14779,
+        "stars": 76886,
+        "forks": 14780,
         "topics": [
           "alerting",
           "analytics",
@@ -8265,7 +8319,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T11:02:05Z",
+        "pushedAt": "2026-09-24T11:32:14Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8353,7 +8407,7 @@
         "language": "Rust",
         "license": "MPL-2.0",
         "stars": 46317,
-        "forks": 3772,
+        "forks": 3773,
         "topics": [
           "kakoune",
           "rust",
@@ -8415,7 +8469,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "hexo",
@@ -8434,7 +8489,7 @@
         "homepage": "https://hexo.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 41779,
+        "stars": 41778,
         "forks": 44,
         "topics": [
           "hacktoberfest",
@@ -8499,7 +8554,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "hono",
@@ -8529,8 +8585,8 @@
         "homepage": "https://hono.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 32319,
-        "forks": 1341,
+        "stars": 32320,
+        "forks": 1342,
         "topics": [
           "aws-lambda",
           "bun",
@@ -8597,7 +8653,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "hoppscotch",
@@ -8627,7 +8684,7 @@
         "homepage": "https://hoppscotch.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 80494,
+        "stars": 80495,
         "forks": 6124,
         "topics": [
           "api",
@@ -8653,7 +8710,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-08-21T13:15:24Z",
-        "pushedAt": "2026-09-24T09:42:54Z",
+        "pushedAt": "2026-09-24T10:08:52Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8704,7 +8761,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "httpie",
@@ -8723,7 +8781,7 @@
         "homepage": "https://httpie.io",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 38575,
+        "stars": 38576,
         "forks": 4010,
         "topics": [
           "api",
@@ -8804,7 +8862,8 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "httpx",
@@ -8834,8 +8893,8 @@
         "homepage": "https://www.python-httpx.org/",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 15504,
-        "forks": 1884,
+        "stars": 15505,
+        "forks": 1902,
         "topics": [
           "asyncio",
           "http",
@@ -8897,7 +8956,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "hugo",
@@ -8927,7 +8987,7 @@
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89922,
+        "stars": 89923,
         "forks": 8387,
         "topics": [
           "blog-engine",
@@ -8942,7 +9002,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-07-04T15:26:26Z",
-        "pushedAt": "2026-09-24T08:23:06Z",
+        "pushedAt": "2026-09-24T10:16:36Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -8993,7 +9053,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "infisical",
@@ -9015,7 +9076,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Infisical/infisical",
@@ -9128,7 +9189,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "influxdata/influxdb",
@@ -9219,7 +9280,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kubernetes/ingress-nginx",
@@ -9314,7 +9375,7 @@
         "homepage": "https://insomnia.rest",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 40032,
+        "stars": 40033,
         "forks": 2370,
         "topics": [
           "api",
@@ -9332,7 +9393,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-04-23T03:54:26Z",
-        "pushedAt": "2026-09-24T09:25:00Z",
+        "pushedAt": "2026-09-24T09:57:51Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -9383,7 +9444,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "iterm2",
@@ -9424,7 +9486,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "jaeger",
@@ -9441,7 +9504,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jaegertracing/jaeger",
@@ -9543,7 +9606,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "janhq/jan",
@@ -9567,7 +9630,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-17T02:17:10Z",
-        "pushedAt": "2026-09-24T10:56:59Z",
+        "pushedAt": "2026-09-24T11:32:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9710,7 +9773,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "jekyll",
@@ -9794,7 +9858,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "jenkins",
@@ -9805,7 +9870,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-22T16:48:22.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jenkinsci/jenkins",
@@ -9814,7 +9879,7 @@
         "language": "Java",
         "license": "MIT",
         "stars": 26582,
-        "forks": 9832,
+        "forks": 9833,
         "topics": [
           "cicd",
           "continuous-delivery",
@@ -9975,7 +10040,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "jmeter",
@@ -10056,7 +10122,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "jq",
@@ -10075,8 +10142,8 @@
         "homepage": "https://jqlang.org",
         "language": "C",
         "license": "Other",
-        "stars": 35676,
-        "forks": 2419,
+        "stars": 35679,
+        "forks": 2430,
         "topics": [
           "jq"
         ],
@@ -10135,7 +10202,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "k3d",
@@ -10161,7 +10229,7 @@
         "language": "Go",
         "license": "MIT",
         "stars": 6563,
-        "forks": 536,
+        "forks": 537,
         "topics": [
           "cluster",
           "docker",
@@ -10226,7 +10294,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "k6",
@@ -10256,7 +10325,7 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31561,
+        "stars": 31563,
         "forks": 1639,
         "topics": [
           "es6",
@@ -10273,7 +10342,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-03-21T15:30:24Z",
-        "pushedAt": "2026-09-24T09:03:08Z",
+        "pushedAt": "2026-09-24T11:26:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -10324,7 +10393,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "kafka",
@@ -10335,7 +10405,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/kafka",
@@ -10355,7 +10425,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-15T18:06:16Z",
-        "pushedAt": "2026-09-24T10:31:17Z",
+        "pushedAt": "2026-09-24T11:06:05Z",
         "defaultBranch": "trunk"
       },
       "trend": null,
@@ -10390,7 +10460,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Snapchat/KeyDB",
@@ -10473,7 +10543,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/kibana",
@@ -10496,7 +10566,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T11:02:34Z",
+        "pushedAt": "2026-09-24T11:35:19Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10576,7 +10646,7 @@
         "homepage": "https://kind.sigs.k8s.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 15504,
+        "stars": 15505,
         "forks": 1801,
         "topics": [
           "docker",
@@ -10641,7 +10711,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "kitty",
@@ -10742,7 +10813,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "knope",
@@ -10838,7 +10910,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "koa",
@@ -10917,7 +10990,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "kysely",
@@ -11025,7 +11099,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "lerna",
@@ -11108,7 +11183,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "lfs-test-server",
@@ -11189,7 +11265,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "lfsx",
@@ -11206,7 +11283,7 @@
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
-      "editedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/LFSX",
@@ -11236,22 +11313,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-09-24T11:02:52Z",
+        "pushedAt": "2026-09-24T11:25:10Z",
         "defaultBranch": "main"
       },
-      "trend": {
-        "stars": 1,
-        "exact": true,
-        "since": "2026-09-18T07:25:57.000Z"
-      },
+      "trend": null,
       "release": {
-        "tag": "v1.17.2",
-        "publishedAt": "2026-09-24T07:34:52Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.17.2",
+        "tag": "v1.18.0",
+        "publishedAt": "2026-09-24T11:07:12Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.18.0",
         "source": "release",
         "signed": true
       },
       "releases": [
+        {
+          "tag": "v1.18.0",
+          "name": "feat(chart): expose the lookup budget and the staging age (#426)",
+          "publishedAt": "2026-09-24T11:07:12Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.18.0",
+          "prerelease": false
+        },
         {
           "tag": "v1.17.2",
           "name": "fix(auth): sign the App JWT once instead of once per lookup (#420)",
@@ -11278,13 +11358,6 @@
           "name": "feat(auth): keep a public repository's objects to whoever can push (#398)",
           "publishedAt": "2026-09-20T08:48:41Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.17",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.16.10",
-          "name": "fix(chart): give Artifact Hub the maintainer, the changelog and the kubeVersion (#383)",
-          "publishedAt": "2026-09-18T16:20:58Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.16.10",
           "prerelease": false
         }
       ],
@@ -11318,7 +11391,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "LibreChat-AI/LibreChat",
@@ -11354,7 +11427,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T11:04:03Z",
+        "pushedAt": "2026-09-24T11:34:46Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11443,7 +11516,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 8478,
-        "forks": 652,
+        "forks": 653,
         "topics": [
           "api",
           "asgi",
@@ -11516,7 +11589,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "llama-cpp",
@@ -11538,7 +11612,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ggml-org/llama.cpp",
@@ -11546,7 +11620,7 @@
         "homepage": "https://llama.app",
         "language": "C++",
         "license": "MIT",
-        "stars": 129396,
+        "stars": 129397,
         "forks": 23678,
         "topics": [
           "ggml"
@@ -11555,7 +11629,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T10:56:24Z",
+        "pushedAt": "2026-09-24T11:16:52Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11633,7 +11707,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "lobehub/lobehub",
@@ -11667,7 +11741,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-24T11:02:00Z",
+        "pushedAt": "2026-09-24T11:34:15Z",
         "defaultBranch": "canary"
       },
       "trend": null,
@@ -11822,7 +11896,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "logstash",
@@ -11833,7 +11908,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "elastic/logstash",
@@ -12000,7 +12075,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "luxon",
@@ -12054,7 +12130,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "matomo",
@@ -12072,7 +12149,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "matomo-org/matomo",
@@ -12180,7 +12257,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mattermost/mattermost",
@@ -12203,7 +12280,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-24T10:52:24Z",
+        "pushedAt": "2026-09-24T11:31:07Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12290,7 +12367,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meilisearch/meilisearch",
@@ -12424,7 +12501,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "mikro-orm",
@@ -12454,7 +12532,7 @@
         "homepage": "https://mikro-orm.io",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 9235,
+        "stars": 9236,
         "forks": 673,
         "topics": [
           "database",
@@ -12482,7 +12560,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-03-15T09:21:10Z",
-        "pushedAt": "2026-09-24T07:39:00Z",
+        "pushedAt": "2026-09-24T11:25:39Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -12533,7 +12611,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "minestom",
@@ -12624,7 +12703,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "minikube",
@@ -12708,7 +12788,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "minio",
@@ -12719,7 +12800,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
-      "editedAt": "2026-09-22T16:05:03.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "minio/minio",
@@ -12834,7 +12915,7 @@
         "homepage": "https://squidfunk.github.io/mkdocs-material/",
         "language": "Python",
         "license": "MIT",
-        "stars": 27498,
+        "stars": 27499,
         "forks": 4148,
         "topics": [
           "documentation",
@@ -12899,7 +12980,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "mocha",
@@ -12989,7 +13071,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "moment",
@@ -13009,7 +13092,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 47909,
-        "forks": 6978,
+        "forks": 6979,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -13045,7 +13128,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "mongodb",
@@ -13056,7 +13140,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "mongodb/mongo",
@@ -13195,7 +13279,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "mypy",
@@ -13242,7 +13327,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "neovim",
@@ -13283,7 +13369,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-01-31T13:39:22Z",
-        "pushedAt": "2026-09-24T05:26:27Z",
+        "pushedAt": "2026-09-24T10:19:38Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13334,7 +13420,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "nerdctl",
@@ -13419,7 +13506,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "nextcloud",
@@ -13441,7 +13529,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T07:14:07.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nextcloud/server",
@@ -13450,7 +13538,7 @@
         "language": "PHP",
         "license": "AGPL-3.0",
         "stars": 36900,
-        "forks": 5246,
+        "forks": 5245,
         "topics": [
           "cloud",
           "collaboration",
@@ -13544,7 +13632,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-22T15:54:01.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "nginx/nginx",
@@ -13649,8 +13737,8 @@
         "homepage": "https://nodejs.org",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 122059,
-        "forks": 37621,
+        "stars": 122058,
+        "forks": 37634,
         "topics": [
           "javascript",
           "js",
@@ -13717,7 +13805,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "npm",
@@ -13736,8 +13825,8 @@
         "homepage": "https://docs.npmjs.com/cli/",
         "language": "JavaScript",
         "license": "Other",
-        "stars": 10141,
-        "forks": 4762,
+        "stars": 10142,
+        "forks": 4763,
         "topics": [
           "javascript",
           "nodejs",
@@ -13801,7 +13890,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "nx",
@@ -13851,7 +13941,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-24T08:46:53Z",
+        "pushedAt": "2026-09-24T10:28:22Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13902,7 +13992,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "oh-my-posh",
@@ -13932,7 +14023,7 @@
         "homepage": "https://ohmyposh.dev",
         "language": "Go",
         "license": "MIT",
-        "stars": 23500,
+        "stars": 23501,
         "forks": 2787,
         "topics": [
           "bash",
@@ -14008,7 +14099,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ohmyzsh",
@@ -14027,8 +14119,8 @@
         "homepage": "https://ohmyz.sh",
         "language": "Shell",
         "license": "MIT",
-        "stars": 189897,
-        "forks": 27373,
+        "stars": 189899,
+        "forks": 27392,
         "topics": [
           "cli",
           "cli-app",
@@ -14061,7 +14153,8 @@
         "no-release"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ollama",
@@ -14083,7 +14176,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ollama/ollama",
@@ -14091,7 +14184,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181572,
+        "stars": 181578,
         "forks": 17988,
         "topics": [
           "deepseek",
@@ -14201,7 +14294,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "theonedev/onedev",
@@ -14316,7 +14409,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "open-webui/open-webui",
@@ -14324,8 +14417,8 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 152984,
-        "forks": 22381,
+        "stars": 152987,
+        "forks": 22382,
         "topics": [
           "ai",
           "llm",
@@ -14421,7 +14514,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openbao/openbao",
@@ -14539,14 +14632,14 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209773,
-        "forks": 27692,
+        "stars": 209787,
+        "forks": 27699,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-30T20:08:00Z",
-        "pushedAt": "2026-09-24T08:10:17Z",
+        "pushedAt": "2026-09-24T11:30:28Z",
         "defaultBranch": "dev"
       },
       "trend": null,
@@ -14597,7 +14690,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "openhands",
@@ -14627,8 +14721,8 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89039,
-        "forks": 11719,
+        "stars": 89047,
+        "forks": 11723,
         "topics": [
           "agent",
           "artificial-intelligence",
@@ -14695,7 +14789,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "opensearch",
@@ -14712,7 +14807,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-22T15:52:41.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opensearch-project/OpenSearch",
@@ -14808,7 +14903,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "opensearch-project/OpenSearch-Dashboards",
@@ -14908,7 +15003,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "open-telemetry/opentelemetry-collector",
@@ -15016,7 +15111,7 @@
         "homepage": "https://opentofu.org",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 30273,
+        "stars": 30274,
         "forks": 1378,
         "topics": [],
         "archived": false,
@@ -15074,7 +15169,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "oxc",
@@ -15101,7 +15197,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 22871,
-        "forks": 1314,
+        "forks": 1315,
         "topics": [
           "compiler",
           "javascript",
@@ -15166,7 +15262,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "paper",
@@ -15218,7 +15315,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "parcel",
@@ -15318,7 +15416,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "passbolt",
@@ -15340,7 +15439,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "passbolt/passbolt_api",
@@ -15518,7 +15617,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pekko",
@@ -15562,7 +15662,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-10-31T08:40:39Z",
-        "pushedAt": "2026-09-22T18:59:46Z",
+        "pushedAt": "2026-09-24T10:07:20Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15577,7 +15677,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "perses",
@@ -15594,7 +15695,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "perses/perses",
@@ -15615,7 +15716,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-01-26T20:41:33Z",
-        "pushedAt": "2026-09-24T09:47:19Z",
+        "pushedAt": "2026-09-24T11:10:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15716,7 +15817,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pip-tools",
@@ -15803,7 +15905,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pipenv",
@@ -15886,7 +15989,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "plausible",
@@ -15909,7 +16013,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "plausible/analytics",
@@ -15917,8 +16021,8 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29199,
-        "forks": 1873,
+        "stars": 29200,
+        "forks": 1872,
         "topics": [
           "analytics",
           "analytics-dashboard",
@@ -16036,7 +16140,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96604,
+        "stars": 96611,
         "forks": 6497,
         "topics": [
           "automation",
@@ -16110,7 +16214,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pnpm",
@@ -16136,7 +16241,7 @@
         "homepage": "https://pnpm.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 36628,
+        "stars": 36627,
         "forks": 1759,
         "topics": [
           "dependency-manager",
@@ -16152,7 +16257,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T09:48:35Z",
+        "pushedAt": "2026-09-24T11:29:10Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16203,7 +16308,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "podman",
@@ -16228,8 +16334,8 @@
         "homepage": "https://podman.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 32919,
-        "forks": 3386,
+        "stars": 32920,
+        "forks": 3385,
         "topics": [
           "containers",
           "docker",
@@ -16292,7 +16398,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "podman-desktop",
@@ -16319,7 +16426,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 8025,
-        "forks": 569,
+        "forks": 568,
         "topics": [
           "container",
           "containers",
@@ -16336,7 +16443,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-03-03T18:45:51Z",
-        "pushedAt": "2026-09-24T09:37:42Z",
+        "pushedAt": "2026-09-24T11:33:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16387,7 +16494,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "poetry",
@@ -16413,7 +16521,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 34304,
-        "forks": 2507,
+        "forks": 2508,
         "topics": [
           "dependency-manager",
           "package-manager",
@@ -16476,7 +16584,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "powerlevel10k",
@@ -16495,7 +16604,7 @@
         "homepage": null,
         "language": "Shell",
         "license": "MIT",
-        "stars": 55145,
+        "stars": 55146,
         "forks": 2442,
         "topics": [
           "zsh"
@@ -16555,7 +16664,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "prettier",
@@ -16575,7 +16685,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 52300,
-        "forks": 5018,
+        "forks": 5019,
         "topics": [
           "angular",
           "ast",
@@ -16600,7 +16710,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-11-29T17:13:37Z",
-        "pushedAt": "2026-09-24T07:15:59Z",
+        "pushedAt": "2026-09-24T11:17:17Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16651,7 +16761,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "prisma",
@@ -16681,8 +16792,8 @@
         "homepage": "https://www.prisma.io",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 47666,
-        "forks": 2542,
+        "stars": 47667,
+        "forks": 2541,
         "topics": [
           "cockroachdb",
           "database",
@@ -16709,7 +16820,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-24T09:45:31Z",
+        "pushedAt": "2026-09-24T10:49:38Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16760,7 +16871,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "prometheus",
@@ -16777,7 +16889,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "prometheus/prometheus",
@@ -16786,7 +16898,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 66204,
-        "forks": 10854,
+        "forks": 10855,
         "topics": [
           "alerting",
           "graphing",
@@ -16800,7 +16912,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-11-24T11:14:12Z",
-        "pushedAt": "2026-09-23T18:52:56Z",
+        "pushedAt": "2026-09-24T11:15:20Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16872,7 +16984,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "apache/pulsar",
@@ -16894,7 +17006,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-28T07:00:03Z",
-        "pushedAt": "2026-09-23T12:36:43Z",
+        "pushedAt": "2026-09-24T11:34:16Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17006,7 +17118,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-24T09:42:47Z",
+        "pushedAt": "2026-09-24T11:30:36Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17057,7 +17169,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pumpkin",
@@ -17074,7 +17187,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
-      "editedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Pumpkin-MC/Pumpkin",
@@ -17100,7 +17213,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-07-28T21:07:38Z",
-        "pushedAt": "2026-09-24T09:59:07Z",
+        "pushedAt": "2026-09-24T11:35:23Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17178,7 +17291,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-05-09T22:16:13Z",
-        "pushedAt": "2026-09-24T09:30:42Z",
+        "pushedAt": "2026-09-24T10:45:23Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -17229,7 +17342,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "purpur",
@@ -17285,7 +17399,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pyenv",
@@ -17314,7 +17429,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-08-31T06:57:52Z",
-        "pushedAt": "2026-09-24T04:23:53Z",
+        "pushedAt": "2026-09-24T11:20:15Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17365,7 +17480,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pylint",
@@ -17385,7 +17501,7 @@
         "language": "Python",
         "license": "GPL-2.0",
         "stars": 5726,
-        "forks": 1345,
+        "forks": 1346,
         "topics": [
           "closember",
           "code-quality",
@@ -17450,7 +17566,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "pyright",
@@ -17475,7 +17592,7 @@
         "homepage": null,
         "language": "Python",
         "license": "Other",
-        "stars": 15655,
+        "stars": 15656,
         "forks": 1816,
         "topics": [],
         "archived": false,
@@ -17533,7 +17650,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "questdb",
@@ -17551,7 +17669,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "questdb/questdb",
@@ -17587,7 +17705,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-04-28T23:29:15Z",
-        "pushedAt": "2026-09-24T10:31:30Z",
+        "pushedAt": "2026-09-24T11:09:25Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17681,7 +17799,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-10-23T17:20:58Z",
-        "pushedAt": "2026-09-24T08:41:07Z",
+        "pushedAt": "2026-09-24T09:54:10Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -17732,7 +17850,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "redis",
@@ -17743,7 +17862,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "redis/redis",
@@ -17752,7 +17871,7 @@
         "language": "C",
         "license": "Other",
         "stars": 76461,
-        "forks": 24816,
+        "forks": 24817,
         "topics": [
           "cache",
           "caching",
@@ -17851,7 +17970,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "redpanda-data/redpanda",
@@ -17860,7 +17979,7 @@
         "language": "C++",
         "license": null,
         "stars": 12570,
-        "forks": 793,
+        "forks": 794,
         "topics": [
           "containers",
           "cpp",
@@ -18022,7 +18141,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "release-plz",
@@ -18064,7 +18184,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-19T18:46:33Z",
-        "pushedAt": "2026-09-24T08:41:45Z",
+        "pushedAt": "2026-09-24T11:26:56Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18115,7 +18235,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "requests",
@@ -18135,7 +18256,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 54341,
-        "forks": 10723,
+        "forks": 10740,
         "topics": [
           "client",
           "cookies",
@@ -18201,7 +18322,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ripgrep",
@@ -18231,8 +18353,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Unlicense",
-        "stars": 68562,
-        "forks": 3393,
+        "stars": 68564,
+        "forks": 3410,
         "topics": [
           "cli",
           "command-line",
@@ -18300,7 +18422,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "rocketchat",
@@ -18327,7 +18450,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "RocketChat/Rocket.Chat",
@@ -18460,7 +18583,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-09-18T14:20:28Z",
-        "pushedAt": "2026-09-24T09:22:38Z",
+        "pushedAt": "2026-09-24T11:00:00Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18511,7 +18634,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "rollup",
@@ -18537,18 +18661,25 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-14T22:26:28Z",
-        "pushedAt": "2026-09-24T09:49:00Z",
+        "pushedAt": "2026-09-24T10:09:55Z",
         "defaultBranch": "master"
       },
       "trend": null,
       "release": {
-        "tag": "v4.63.4",
-        "publishedAt": "2026-09-19T06:38:02Z",
-        "url": "https://github.com/rollup/rollup/releases/tag/v4.63.4",
+        "tag": "v4.63.5",
+        "publishedAt": "2026-09-24T10:09:48Z",
+        "url": "https://github.com/rollup/rollup/releases/tag/v4.63.5",
         "source": "release",
         "signed": false
       },
       "releases": [
+        {
+          "tag": "v4.63.5",
+          "name": "_2026-09-24_",
+          "publishedAt": "2026-09-24T10:09:48Z",
+          "url": "https://github.com/rollup/rollup/releases/tag/v4.63.5",
+          "prerelease": false
+        },
         {
           "tag": "v4.63.4",
           "name": "_2026-09-19_",
@@ -18576,19 +18707,13 @@
           "publishedAt": "2026-08-28T06:01:35Z",
           "url": "https://github.com/rollup/rollup/releases/tag/v4.63.1",
           "prerelease": false
-        },
-        {
-          "tag": "v4.63.0",
-          "name": "_2026-08-25_",
-          "publishedAt": "2026-08-25T13:05:57Z",
-          "url": "https://github.com/rollup/rollup/releases/tag/v4.63.0",
-          "prerelease": false
         }
       ],
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "roxycloud",
@@ -18631,7 +18756,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-09-24T08:22:40Z",
+        "pushedAt": "2026-09-24T11:25:49Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18682,7 +18807,8 @@
       "maintainerVerified": true,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "rspack",
@@ -18731,7 +18857,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-04-01T08:45:30Z",
-        "pushedAt": "2026-09-24T09:37:46Z",
+        "pushedAt": "2026-09-24T10:55:54Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18782,7 +18908,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "rudolfs",
@@ -18799,7 +18926,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
-      "editedAt": "2026-09-22T18:19:45.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jasonwhite/rudolfs",
@@ -18874,8 +19001,8 @@
         "homepage": "https://docs.astral.sh/ruff",
         "language": "Rust",
         "license": "MIT",
-        "stars": 49760,
-        "forks": 2433,
+        "stars": 49762,
+        "forks": 2434,
         "topics": [
           "linter",
           "pep8",
@@ -18893,7 +19020,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-24T09:04:23Z",
+        "pushedAt": "2026-09-24T11:32:28Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -18944,7 +19071,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "rustfs",
@@ -18966,7 +19094,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "rustfs/rustfs",
@@ -18974,7 +19102,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33764,
+        "stars": 33766,
         "forks": 1511,
         "topics": [
           "ai-native",
@@ -19074,7 +19202,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "haiwen/seafile",
@@ -19174,7 +19302,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:05:03.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "seaweedfs/seaweedfs",
@@ -19350,7 +19478,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "semantic-release",
@@ -19440,7 +19569,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "sentry",
@@ -19451,7 +19581,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "getsentry/sentry",
@@ -19459,7 +19589,7 @@
         "homepage": "https://sentry.io",
         "language": "Python",
         "license": "Other",
-        "stars": 44833,
+        "stars": 44834,
         "forks": 4864,
         "topics": [
           "apm",
@@ -19482,7 +19612,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T11:09:00Z",
+        "pushedAt": "2026-09-24T11:36:34Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -19582,7 +19712,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-07-22T07:11:11Z",
-        "pushedAt": "2026-09-24T09:01:24Z",
+        "pushedAt": "2026-09-24T10:16:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -19633,7 +19763,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "sops",
@@ -19726,7 +19857,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "starlight",
@@ -19769,7 +19901,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-16T15:55:33Z",
-        "pushedAt": "2026-09-23T17:15:14Z",
+        "pushedAt": "2026-09-24T11:28:53Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -19820,7 +19952,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "starship",
@@ -19850,8 +19983,8 @@
         "homepage": "https://starship.rs",
         "language": "Rust",
         "license": "ISC",
-        "stars": 60031,
-        "forks": 2674,
+        "stars": 60032,
+        "forks": 2675,
         "topics": [
           "bash",
           "fish",
@@ -19921,7 +20054,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "steelmc",
@@ -19938,7 +20072,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T21:40:07.000Z",
-      "editedAt": "2026-09-22T21:40:07.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Steel-Foundation/SteelMC",
@@ -19953,7 +20087,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2025-10-15T12:53:07Z",
-        "pushedAt": "2026-09-24T07:45:22Z",
+        "pushedAt": "2026-09-24T11:35:10Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -20031,7 +20165,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "syncthing/syncthing",
@@ -20132,7 +20266,7 @@
         "homepage": "https://tabbyml.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 33890,
+        "stars": 33892,
         "forks": 1786,
         "topics": [
           "ai",
@@ -20200,7 +20334,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open-core",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "tekton",
@@ -20225,7 +20360,7 @@
         "homepage": "https://tekton.dev",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 9067,
+        "stars": 9068,
         "forks": 1962,
         "topics": [
           "cdf",
@@ -20297,7 +20432,8 @@
           "docs": "https://tekton.dev/docs/concepts/overview/",
           "note": "Pipelines are Kubernetes resources."
         }
-      }
+      },
+      "deploy": []
     },
     {
       "slug": "tempo",
@@ -20314,7 +20450,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "grafana/tempo",
@@ -20334,7 +20470,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-24T18:05:02Z",
-        "pushedAt": "2026-09-24T10:51:05Z",
+        "pushedAt": "2026-09-24T11:35:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20411,7 +20547,7 @@
         "homepage": "http://developer.hashicorp.com/terraform",
         "language": "Go",
         "license": "Other",
-        "stars": 49717,
+        "stars": 49718,
         "forks": 10626,
         "topics": [
           "cloud",
@@ -20424,7 +20560,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-03-13T22:25:48Z",
-        "pushedAt": "2026-09-24T08:54:47Z",
+        "pushedAt": "2026-09-24T11:34:42Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20475,7 +20611,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "the-silver-searcher",
@@ -20494,7 +20631,7 @@
         "homepage": "http://geoff.greer.fm/ag/",
         "language": "C",
         "license": "Apache-2.0",
-        "stars": 27124,
+        "stars": 27125,
         "forks": 1439,
         "topics": [
           "ag",
@@ -20525,7 +20662,8 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "timescaledb",
@@ -20542,7 +20680,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "timescale/timescaledb",
@@ -20645,14 +20783,14 @@
         "homepage": null,
         "language": "C",
         "license": "ISC",
-        "stars": 49465,
+        "stars": 49466,
         "forks": 2909,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2015-06-03T23:32:55Z",
-        "pushedAt": "2026-09-24T09:44:57Z",
+        "pushedAt": "2026-09-24T11:20:16Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -20703,7 +20841,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "traefik",
@@ -20725,7 +20864,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:54:01.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "traefik/traefik",
@@ -20901,7 +21040,8 @@
         "inactive"
       ],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "turborepo",
@@ -20990,7 +21130,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "ty",
@@ -21015,7 +21156,7 @@
         "homepage": "https://docs.astral.sh/ty/",
         "language": "Python",
         "license": "MIT",
-        "stars": 19741,
+        "stars": 19740,
         "forks": 334,
         "topics": [],
         "archived": false,
@@ -21073,7 +21214,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "typeorm",
@@ -21165,7 +21307,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "typesense",
@@ -21188,7 +21331,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "typesense/typesense",
@@ -21224,7 +21367,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-01-18T08:01:47Z",
-        "pushedAt": "2026-09-23T08:51:07Z",
+        "pushedAt": "2026-09-24T11:19:33Z",
         "defaultBranch": "v31"
       },
       "trend": null,
@@ -21385,7 +21528,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "umami",
@@ -21407,7 +21551,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T16:42:28.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "umami-software/umami",
@@ -21509,7 +21653,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "louislam/uptime-kuma",
@@ -21638,7 +21782,7 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90128,
+        "stars": 90130,
         "forks": 3609,
         "topics": [
           "packaging",
@@ -21650,7 +21794,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-24T09:48:16Z",
+        "pushedAt": "2026-09-24T10:59:35Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -21701,7 +21845,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "valkey",
@@ -21724,7 +21869,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T07:05:49.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "valkey-io/valkey",
@@ -21813,7 +21958,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-23T12:59:19.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "hashicorp/vault",
@@ -21915,7 +22060,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dani-garcia/vaultwarden",
@@ -22014,7 +22159,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "vectordotdev/vector",
@@ -22048,7 +22193,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-24T10:19:46Z",
+        "pushedAt": "2026-09-24T11:23:04Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22132,7 +22277,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T15:52:41.000Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "VictoriaMetrics/VictoriaMetrics",
@@ -22163,7 +22308,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-09-30T09:58:01Z",
-        "pushedAt": "2026-09-24T10:37:16Z",
+        "pushedAt": "2026-09-24T11:36:46Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -22239,7 +22384,7 @@
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40925,
+        "stars": 40927,
         "forks": 6134,
         "topics": [
           "c",
@@ -22266,7 +22411,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "vite",
@@ -22296,8 +22442,8 @@
         "homepage": "http://vite.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 82971,
-        "forks": 8773,
+        "stars": 82973,
+        "forks": 8776,
         "topics": [
           "build-tool",
           "dev-server",
@@ -22309,7 +22455,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-04-21T05:03:57Z",
-        "pushedAt": "2026-09-24T09:49:06Z",
+        "pushedAt": "2026-09-24T11:30:51Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22360,7 +22506,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "vitepress",
@@ -22455,7 +22602,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "vitest",
@@ -22497,7 +22645,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-03T19:19:49Z",
-        "pushedAt": "2026-09-24T08:51:36Z",
+        "pushedAt": "2026-09-24T11:17:57Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22548,7 +22696,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "vscode",
@@ -22567,8 +22716,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 192845,
-        "forks": 43071,
+        "stars": 192848,
+        "forks": 43089,
         "topics": [
           "editor",
           "electron",
@@ -22580,7 +22729,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T09:47:17Z",
+        "pushedAt": "2026-09-24T11:04:24Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22631,7 +22780,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "vscodium",
@@ -22656,7 +22806,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33358,
+        "stars": 33360,
         "forks": 1866,
         "topics": [
           "editor",
@@ -22720,7 +22870,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "webpack",
@@ -22763,7 +22914,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-24T09:47:24Z",
+        "pushedAt": "2026-09-24T11:26:24Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22814,7 +22965,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "wezterm",
@@ -22849,8 +23001,8 @@
         "homepage": "https://wezterm.org/",
         "language": "Rust",
         "license": "Other",
-        "stars": 29010,
-        "forks": 1757,
+        "stars": 29011,
+        "forks": 1758,
         "topics": [
           "rust",
           "serial",
@@ -22914,7 +23066,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "woodpecker",
@@ -22936,7 +23089,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "woodpecker-ci/woodpecker",
@@ -23055,7 +23208,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "MIT",
-        "stars": 8093,
+        "stars": 8094,
         "forks": 147,
         "topics": [
           "api-testing",
@@ -23120,7 +23273,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "yarn",
@@ -23208,7 +23362,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "yugabytedb",
@@ -23225,7 +23380,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "yugabyte/yugabyte-db",
@@ -23253,7 +23408,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T10:55:47Z",
+        "pushedAt": "2026-09-24T11:16:29Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -23345,8 +23500,8 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90807,
-        "forks": 10754,
+        "stars": 90815,
+        "forks": 10756,
         "topics": [
           "gpui",
           "rust-lang",
@@ -23357,7 +23512,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-24T09:47:09Z",
+        "pushedAt": "2026-09-24T10:46:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -23408,7 +23563,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "zellij",
@@ -23495,7 +23651,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "zipkin",
@@ -23506,7 +23663,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-09-24T06:46:37.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "openzipkin/zipkin",
@@ -23613,7 +23770,7 @@
         "homepage": "https://www.getzola.org",
         "language": "Rust",
         "license": "EUPL-1.2",
-        "stars": 17463,
+        "stars": 17464,
         "forks": 1187,
         "topics": [
           "blog-engine",
@@ -23683,7 +23840,8 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
-      "capabilities": {}
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "zulip",
@@ -23706,7 +23864,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-22T16:48:22.000Z",
-      "editedAt": "2026-09-24T09:16:51.000Z",
+      "editedAt": "2026-09-24T11:35:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "zulip/zulip",
