@@ -4,7 +4,7 @@
     "categories": 63,
     "targets": 122
   },
-  "checkedAt": "2026-09-24T13:57:47.667Z",
+  "checkedAt": "2026-09-24T14:12:30.468Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -57,7 +57,7 @@
     "aio-libs": {
       "login": "aio-libs",
       "kind": "organization",
-      "name": "aio-libs",
+      "name": null,
       "bio": "The set of asyncio-based libraries built with high quality: https://aio-libs.org/sponsors",
       "website": "https://github.com/orgs/aio-libs/discussions",
       "url": "https://github.com/aio-libs"
@@ -201,7 +201,7 @@
     "containerd": {
       "login": "containerd",
       "kind": "organization",
-      "name": "containerd",
+      "name": null,
       "bio": null,
       "website": "https://containerd.io",
       "url": "https://github.com/containerd"
@@ -241,7 +241,7 @@
     "curl": {
       "login": "curl",
       "kind": "organization",
-      "name": "curl",
+      "name": null,
       "bio": "groks those URLs",
       "website": "https://curl.se/",
       "url": "https://github.com/curl"
@@ -273,7 +273,7 @@
     "date-fns": {
       "login": "date-fns",
       "kind": "organization",
-      "name": "date-fns",
+      "name": null,
       "bio": "Modern JavaScript date utility library",
       "website": "https://date-fns.org",
       "url": "https://github.com/date-fns"
@@ -329,7 +329,7 @@
     "elastic": {
       "login": "elastic",
       "kind": "organization",
-      "name": "elastic",
+      "name": null,
       "bio": null,
       "website": "https://www.elastic.co/",
       "url": "https://github.com/elastic"
@@ -409,7 +409,7 @@
     "FerretDB": {
       "login": "FerretDB",
       "kind": "organization",
-      "name": "FerretDB",
+      "name": null,
       "bio": "A truly Open Source MongoDB alternative",
       "website": "https://www.ferretdb.com",
       "url": "https://github.com/FerretDB"
@@ -417,7 +417,7 @@
     "FerrLabs": {
       "login": "FerrLabs",
       "kind": "organization",
-      "name": "FerrLabs",
+      "name": null,
       "bio": "We build small, opinionated tools for the parts of the dev workflow you should not have to think about. One org, one login, one bill across every product",
       "website": "https://ferrlabs.com",
       "url": "https://github.com/FerrLabs"
@@ -553,7 +553,7 @@
     "google-gemini": {
       "login": "google-gemini",
       "kind": "organization",
-      "name": "google-gemini",
+      "name": null,
       "bio": "Get started building with the Gemini API",
       "website": "https://ai.google.dev/gemini-api/docs",
       "url": "https://github.com/google-gemini"
@@ -641,7 +641,7 @@
     "Infisical": {
       "login": "Infisical",
       "kind": "organization",
-      "name": "Infisical",
+      "name": null,
       "bio": "Infisical is the open-source secrets management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI",
       "website": "https://www.infisical.com",
       "url": "https://github.com/Infisical"
@@ -761,7 +761,7 @@
     "Kong": {
       "login": "Kong",
       "kind": "organization",
-      "name": "Kong",
+      "name": null,
       "bio": "Powering the API world. No AI without APIs.",
       "website": "https://konghq.com",
       "url": "https://github.com/Kong"
@@ -809,7 +809,7 @@
     "LibreChat-AI": {
       "login": "LibreChat-AI",
       "kind": "organization",
-      "name": "LibreChat-AI",
+      "name": null,
       "bio": "Every AI for Everyone",
       "website": "https://librechat.ai",
       "url": "https://github.com/LibreChat-AI"
@@ -905,7 +905,7 @@
     "Minestom": {
       "login": "Minestom",
       "kind": "organization",
-      "name": "Minestom",
+      "name": null,
       "bio": "Reimplementing a light Minecraft server",
       "website": "https://www.minestom.net",
       "url": "https://github.com/Minestom"
@@ -953,7 +953,7 @@
     "mongodb": {
       "login": "mongodb",
       "kind": "organization",
-      "name": "mongodb",
+      "name": null,
       "bio": null,
       "website": "http://www.mongodb.com/",
       "url": "https://github.com/mongodb"
@@ -961,7 +961,7 @@
     "moonrepo": {
       "login": "moonrepo",
       "kind": "organization",
-      "name": "moonrepo",
+      "name": null,
       "bio": "Productivity and developer tools for the web ecosystem, written in Rust.",
       "website": "https://moonrepo.dev",
       "url": "https://github.com/moonrepo"
@@ -985,7 +985,7 @@
     "nginx": {
       "login": "nginx",
       "kind": "organization",
-      "name": "nginx",
+      "name": null,
       "bio": "Home of NGINX and related open source projects",
       "website": "https://nginx.org/",
       "url": "https://github.com/nginx"
@@ -1001,7 +1001,7 @@
     "npm": {
       "login": "npm",
       "kind": "organization",
-      "name": "npm",
+      "name": null,
       "bio": "JavaScript Package Manager, Registry & Website",
       "website": "https://npmjs.com",
       "url": "https://github.com/npm"
@@ -1073,7 +1073,7 @@
     "OpenHands": {
       "login": "OpenHands",
       "kind": "organization",
-      "name": "OpenHands",
+      "name": null,
       "bio": null,
       "website": "https://openhands.dev",
       "url": "https://github.com/OpenHands"
@@ -1137,7 +1137,7 @@
     "PaperMC": {
       "login": "PaperMC",
       "kind": "organization",
-      "name": "PaperMC",
+      "name": null,
       "bio": "PaperMC is a Minecraft Software organization focusing on improving the Minecraft ecosystem with faster and more secure software.",
       "website": "https://papermc.io/",
       "url": "https://github.com/PaperMC"
@@ -1185,7 +1185,7 @@
     "pnpm": {
       "login": "pnpm",
       "kind": "organization",
-      "name": "pnpm",
+      "name": null,
       "bio": "Fast, disk space efficient package manager",
       "website": "https://pnpm.io",
       "url": "https://github.com/pnpm"
@@ -1265,7 +1265,7 @@
     "PurpurMC": {
       "login": "PurpurMC",
       "kind": "organization",
-      "name": "PurpurMC",
+      "name": null,
       "bio": "Your Minecraft, your way",
       "website": "https://purpurmc.org",
       "url": "https://github.com/PurpurMC"
@@ -1281,7 +1281,7 @@
     "pyenv": {
       "login": "pyenv",
       "kind": "organization",
-      "name": "pyenv",
+      "name": null,
       "bio": "pyenv",
       "website": "https://github.com/pyenv",
       "url": "https://github.com/pyenv"
@@ -1289,7 +1289,7 @@
     "pylint-dev": {
       "login": "pylint-dev",
       "kind": "organization",
-      "name": "pylint-dev",
+      "name": null,
       "bio": "An organization that focuses on pylint and its ecosystem",
       "website": null,
       "url": "https://github.com/pylint-dev"
@@ -1353,7 +1353,7 @@
     "redpanda-data": {
       "login": "redpanda-data",
       "kind": "organization",
-      "name": "redpanda-data",
+      "name": null,
       "bio": "The streaming data platform for developers",
       "website": "https://redpanda.com",
       "url": "https://github.com/redpanda-data"
@@ -1521,7 +1521,7 @@
     "tmux": {
       "login": "tmux",
       "kind": "organization",
-      "name": "tmux",
+      "name": null,
       "bio": "tmux terminal multiplexer",
       "website": "http://tmux.github.io/",
       "url": "https://github.com/tmux"
@@ -1561,7 +1561,7 @@
     "TypeStrong": {
       "login": "TypeStrong",
       "kind": "organization",
-      "name": "TypeStrong",
+      "name": null,
       "bio": "TypeScript workflows",
       "website": null,
       "url": "https://github.com/TypeStrong"
@@ -1609,7 +1609,7 @@
     "VictoriaMetrics": {
       "login": "VictoriaMetrics",
       "kind": "organization",
-      "name": "VictoriaMetrics",
+      "name": null,
       "bio": "Easy to use and fast monitoring solution",
       "website": "https://victoriametrics.com",
       "url": "https://github.com/VictoriaMetrics"
@@ -1641,7 +1641,7 @@
     "VSCodium": {
       "login": "VSCodium",
       "kind": "organization",
-      "name": "VSCodium",
+      "name": null,
       "bio": "Binary releases of VS Code without MS branding/telemetry/licensing",
       "website": "https://vscodium.com",
       "url": "https://github.com/VSCodium"
@@ -1665,7 +1665,7 @@
     "webpack": {
       "login": "webpack",
       "kind": "organization",
-      "name": "webpack",
+      "name": null,
       "bio": null,
       "website": "https://webpack.js.org",
       "url": "https://github.com/webpack"
@@ -1713,7 +1713,7 @@
     "yugabyte": {
       "login": "yugabyte",
       "kind": "organization",
-      "name": "yugabyte",
+      "name": null,
       "bio": "YugabyteDB is the high-performance distributed SQL database for global, internet-scale apps.",
       "website": "https://www.yugabyte.com",
       "url": "https://github.com/yugabyte"
@@ -2313,7 +2313,7 @@
         "homepage": "https://astro.build",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 62784,
+        "stars": 62785,
         "forks": 3809,
         "topics": [
           "astro",
@@ -2332,7 +2332,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-03-15T17:19:47Z",
-        "pushedAt": "2026-09-24T09:40:50Z",
+        "pushedAt": "2026-09-24T14:11:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2352,13 +2352,6 @@
           "prerelease": false
         },
         {
-          "tag": "astro@7.3.4",
-          "name": "Updated dependencies [3fd16ee, 8358d59]:",
-          "publishedAt": "2026-09-22T18:55:08Z",
-          "url": "https://github.com/withastro/astro/releases/tag/astro%407.3.4",
-          "prerelease": false
-        },
-        {
           "tag": "@astrojs/vercel@11.0.11",
           "name": null,
           "publishedAt": "2026-09-22T18:55:17Z",
@@ -2366,17 +2359,24 @@
           "prerelease": false
         },
         {
-          "tag": "@astrojs/ts-content-mapper@0.2.0",
-          "name": null,
-          "publishedAt": "2026-09-22T18:55:02Z",
-          "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/ts-content-mapper%400.2.0",
+          "tag": "@astrojs/mdx@8.0.2",
+          "name": "Updated dependencies [3fd16ee, 8358d59]:",
+          "publishedAt": "2026-09-22T18:55:14Z",
+          "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.0.2",
           "prerelease": false
         },
         {
-          "tag": "@astrojs/react@7.0.0",
-          "name": "Adds an opt-in compiler option for the Oxc-based React Compiler. Install oxc-transform-react and enable it in your Astr…",
-          "publishedAt": "2026-09-22T18:54:56Z",
-          "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react%407.0.0",
+          "tag": "@astrojs/cloudflare@14.3.3",
+          "name": "Updated dependencies []:",
+          "publishedAt": "2026-09-22T18:55:11Z",
+          "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/cloudflare%4014.3.3",
+          "prerelease": false
+        },
+        {
+          "tag": "astro@7.3.4",
+          "name": "Updated dependencies [3fd16ee, 8358d59]:",
+          "publishedAt": "2026-09-22T18:55:08Z",
+          "url": "https://github.com/withastro/astro/releases/tag/astro%407.3.4",
           "prerelease": false
         }
       ],
@@ -2433,7 +2433,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-07-27T20:30:22Z",
-        "pushedAt": "2026-09-24T13:26:50Z",
+        "pushedAt": "2026-09-24T14:11:16Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2536,7 +2536,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-24T13:51:07Z",
+        "pushedAt": "2026-09-24T14:10:46Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -2932,7 +2932,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-24T13:57:40Z",
+        "pushedAt": "2026-09-24T14:05:44Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -3220,20 +3220,6 @@
       },
       "releases": [
         {
-          "tag": "@changesets/get-release-plan@5.0.2",
-          "name": "Updated dependencies [e522996]:",
-          "publishedAt": "2026-09-14T15:27:16Z",
-          "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/get-release-plan%405.0.2",
-          "prerelease": false
-        },
-        {
-          "tag": "@changesets/config@4.0.1",
-          "name": null,
-          "publishedAt": "2026-09-14T15:27:10Z",
-          "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/config%404.0.1",
-          "prerelease": false
-        },
-        {
           "tag": "@changesets/cli@3.0.3",
           "name": "Updated dependencies [3f163da, bfe9050, e522996]:",
           "publishedAt": "2026-09-14T15:27:19Z",
@@ -3241,10 +3227,24 @@
           "prerelease": false
         },
         {
+          "tag": "@changesets/get-release-plan@5.0.2",
+          "name": "Updated dependencies [e522996]:",
+          "publishedAt": "2026-09-14T15:27:16Z",
+          "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/get-release-plan%405.0.2",
+          "prerelease": false
+        },
+        {
           "tag": "@changesets/apply-release-plan@8.1.1",
           "name": "Updated dependencies [e522996]:",
           "publishedAt": "2026-09-14T15:27:13Z",
           "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/apply-release-plan%408.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "@changesets/config@4.0.1",
+          "name": null,
+          "publishedAt": "2026-09-14T15:27:10Z",
+          "url": "https://github.com/changesets/changesets/releases/tag/%40changesets/config%404.0.1",
           "prerelease": false
         },
         {
@@ -3294,8 +3294,8 @@
         "homepage": "https://cline.bot",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 69214,
-        "forks": 7507,
+        "stars": 69215,
+        "forks": 7508,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -3314,13 +3314,6 @@
       },
       "releases": [
         {
-          "tag": "sdk/sdk/v0.0.86",
-          "name": "SDK v0.0.86",
-          "publishedAt": "2026-09-24T05:43:55Z",
-          "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.86",
-          "prerelease": false
-        },
-        {
           "tag": "desktop-v0.0.35",
           "name": "Desktop v0.0.35",
           "publishedAt": "2026-09-24T08:34:28Z",
@@ -3335,17 +3328,24 @@
           "prerelease": false
         },
         {
+          "tag": "sdk/sdk/v0.0.86",
+          "name": "SDK v0.0.86",
+          "publishedAt": "2026-09-24T05:43:55Z",
+          "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.86",
+          "prerelease": false
+        },
+        {
+          "tag": "desktop-v0.0.34",
+          "name": "Desktop v0.0.34",
+          "publishedAt": "2026-09-22T21:10:28Z",
+          "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.34",
+          "prerelease": false
+        },
+        {
           "tag": "v4.1.20",
           "name": "Sub-agents spawned in the same step now run their tool calls at the same time rather than one after another. Tools that…",
           "publishedAt": "2026-09-22T20:45:17Z",
           "url": "https://github.com/cline/cline/releases/tag/v4.1.20",
-          "prerelease": false
-        },
-        {
-          "tag": "sdk/sdk/v0.0.85",
-          "name": "SDK v0.0.85",
-          "publishedAt": "2026-09-22T08:13:58Z",
-          "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.85",
           "prerelease": false
         }
       ],
@@ -3536,7 +3536,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126304,
+        "stars": 126305,
         "forks": 19691,
         "topics": [],
         "archived": false,
@@ -3570,13 +3570,6 @@
           "prerelease": true
         },
         {
-          "tag": "rust-v0.156.1",
-          "name": "0.156.1",
-          "publishedAt": "2026-09-23T02:41:36Z",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.1",
-          "prerelease": false
-        },
-        {
           "tag": "rust-v0.158.0-alpha.6",
           "name": "0.158.0-alpha.6",
           "publishedAt": "2026-09-23T23:41:29Z",
@@ -3588,6 +3581,13 @@
           "name": "0.158.0-alpha.5",
           "publishedAt": "2026-09-23T22:10:20Z",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.158.0-alpha.5",
+          "prerelease": true
+        },
+        {
+          "tag": "rust-v0.155.0-alpha.16.4",
+          "name": "0.155.0-alpha.16.4",
+          "publishedAt": "2026-09-23T19:55:18Z",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.16.4",
           "prerelease": true
         }
       ],
@@ -3858,13 +3858,6 @@
       },
       "releases": [
         {
-          "tag": "v2.1.0-vscode",
-          "name": null,
-          "publishedAt": "2026-06-19T00:24:00Z",
-          "url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
-          "prerelease": true
-        },
-        {
           "tag": "v2.0.0-vscode",
           "name": null,
           "publishedAt": "2026-06-19T00:24:01Z",
@@ -3872,10 +3865,10 @@
           "prerelease": false
         },
         {
-          "tag": "v1.3.40-vscode",
-          "name": "Pre-release of the Continue VS Code extension (final-release cleanup).",
-          "publishedAt": "2026-06-15T16:09:49Z",
-          "url": "https://github.com/continuedev/continue/releases/tag/v1.3.40-vscode",
+          "tag": "v2.1.0-vscode",
+          "name": null,
+          "publishedAt": "2026-06-19T00:24:00Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v2.1.0-vscode",
           "prerelease": true
         },
         {
@@ -3891,6 +3884,13 @@
           "publishedAt": "2026-06-15T16:27:25Z",
           "url": "https://github.com/continuedev/continue/releases/tag/v1.2.23-vscode",
           "prerelease": false
+        },
+        {
+          "tag": "v1.3.40-vscode",
+          "name": "Pre-release of the Continue VS Code extension (final-release cleanup).",
+          "publishedAt": "2026-06-15T16:09:49Z",
+          "url": "https://github.com/continuedev/continue/releases/tag/v1.3.40-vscode",
+          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -3950,17 +3950,17 @@
           "prerelease": false
         },
         {
-          "tag": "conventional-changelog-conventionalcommits-v10.4.0",
-          "name": "conventional-changelog-conventionalcommits: v10.4.0",
-          "publishedAt": "2026-08-18T21:36:08Z",
-          "url": "https://github.com/conventional-changelog/conventional-changelog/releases/tag/conventional-changelog-conventionalcommits-v10.4.0",
-          "prerelease": false
-        },
-        {
           "tag": "conventional-changelog-angular-v9.4.0",
           "name": "conventional-changelog-angular: v9.4.0",
           "publishedAt": "2026-08-18T21:36:09Z",
           "url": "https://github.com/conventional-changelog/conventional-changelog/releases/tag/conventional-changelog-angular-v9.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "conventional-changelog-conventionalcommits-v10.4.0",
+          "name": "conventional-changelog-conventionalcommits: v10.4.0",
+          "publishedAt": "2026-08-18T21:36:08Z",
+          "url": "https://github.com/conventional-changelog/conventional-changelog/releases/tag/conventional-changelog-conventionalcommits-v10.4.0",
           "prerelease": false
         },
         {
@@ -4096,7 +4096,7 @@
         "homepage": null,
         "language": "Go",
         "license": "Other",
-        "stars": 28281,
+        "stars": 28282,
         "forks": 2284,
         "topics": [
           "agentic-ai",
@@ -4290,7 +4290,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-03-18T22:32:22Z",
-        "pushedAt": "2026-09-24T13:56:44Z",
+        "pushedAt": "2026-09-24T14:05:19Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -4651,7 +4651,7 @@
         "homepage": "https://dandavison.github.io/delta/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 32321,
+        "stars": 32322,
         "forks": 581,
         "topics": [
           "color-themes",
@@ -4749,7 +4749,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108494,
+        "stars": 108495,
         "forks": 6382,
         "topics": [
           "deno",
@@ -5190,7 +5190,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-06-20T16:13:53Z",
-        "pushedAt": "2026-09-24T13:56:35Z",
+        "pushedAt": "2026-09-24T14:03:06Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5381,7 +5381,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-11T10:00:42Z",
-        "pushedAt": "2026-09-24T13:19:09Z",
+        "pushedAt": "2026-09-24T14:11:29Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5505,17 +5505,17 @@
       },
       "releases": [
         {
-          "tag": "0.45.3",
-          "name": "> Note: The Netlify DB driver is developed and maintained by the Netlify team.",
-          "publishedAt": "2026-09-21T10:02:25Z",
-          "url": "https://github.com/drizzle-team/drizzle-orm/releases/tag/0.45.3",
-          "prerelease": false
-        },
-        {
           "tag": "drizzle-kit@0.31.11",
           "name": "Warn about silent migration skips on drizzle-kit checks - thanks @shaneikennedy",
           "publishedAt": "2026-09-21T10:02:50Z",
           "url": "https://github.com/drizzle-team/drizzle-orm/releases/tag/drizzle-kit%400.31.11",
+          "prerelease": false
+        },
+        {
+          "tag": "0.45.3",
+          "name": "> Note: The Netlify DB driver is developed and maintained by the Netlify team.",
+          "publishedAt": "2026-09-21T10:02:25Z",
+          "url": "https://github.com/drizzle-team/drizzle-orm/releases/tag/0.45.3",
           "prerelease": false
         },
         {
@@ -5563,7 +5563,7 @@
         "homepage": "https://www.elastic.co/products/elasticsearch",
         "language": "Java",
         "license": "Other",
-        "stars": 77976,
+        "stars": 77977,
         "forks": 26086,
         "topics": [
           "elasticsearch",
@@ -5574,7 +5574,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-24T13:57:36Z",
+        "pushedAt": "2026-09-24T14:04:21Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -5615,10 +5615,10 @@
           "prerelease": false
         },
         {
-          "tag": "v9.4.6",
-          "name": "Elasticsearch 9.4.6",
-          "publishedAt": "2026-09-01T12:51:12Z",
-          "url": "https://github.com/elastic/elasticsearch/releases/tag/v9.4.6",
+          "tag": "v8.19.21",
+          "name": "Elasticsearch 8.19.21",
+          "publishedAt": "2026-09-01T12:53:43Z",
+          "url": "https://github.com/elastic/elasticsearch/releases/tag/v8.19.21",
           "prerelease": false
         }
       ],
@@ -5686,17 +5686,17 @@
       },
       "releases": [
         {
-          "tag": "v4.0.0-alpha.9",
-          "name": "Build Awesome (11ty) v4.0.0-alpha.9",
-          "publishedAt": "2026-07-01T17:00:59Z",
-          "url": "https://github.com/11ty/buildawesome/releases/tag/v4.0.0-alpha.9",
-          "prerelease": true
-        },
-        {
           "tag": "v4.0.0-alpha.10",
           "name": "Build Awesome (11ty) v4.0.0-alpha.10",
           "publishedAt": "2026-07-01T20:56:57Z",
           "url": "https://github.com/11ty/buildawesome/releases/tag/v4.0.0-alpha.10",
+          "prerelease": true
+        },
+        {
+          "tag": "v4.0.0-alpha.9",
+          "name": "Build Awesome (11ty) v4.0.0-alpha.9",
+          "publishedAt": "2026-07-01T17:00:59Z",
+          "url": "https://github.com/11ty/buildawesome/releases/tag/v4.0.0-alpha.9",
           "prerelease": true
         },
         {
@@ -6101,7 +6101,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 69467,
-        "forks": 25056,
+        "forks": 25058,
         "topics": [
           "express",
           "javascript",
@@ -6125,6 +6125,13 @@
       },
       "releases": [
         {
+          "tag": "v4.22.3",
+          "name": "Update path-to-regexp to 0.1.13 to fix CVE-2026-4867",
+          "publishedAt": "2026-09-14T06:45:17Z",
+          "url": "https://github.com/expressjs/express/releases/tag/v4.22.3",
+          "prerelease": false
+        },
+        {
           "tag": "v4.22.2",
           "name": "fix: restore >20 array parsing for req.query repeated keys (8d09bfe6)",
           "publishedAt": "2026-05-11T18:54:02Z",
@@ -6139,13 +6146,6 @@
           "prerelease": false
         },
         {
-          "tag": "v5.2.0",
-          "name": "Security fix for CVE-2024-51999 (GHSA-pj86-cfqh-vqx6)",
-          "publishedAt": "2025-12-01T16:21:03Z",
-          "url": "https://github.com/expressjs/express/releases/tag/v5.2.0",
-          "prerelease": false
-        },
-        {
           "tag": "v4.22.1",
           "name": "> [!IMPORTANT]",
           "publishedAt": "2025-12-01T20:55:45Z",
@@ -6153,10 +6153,10 @@
           "prerelease": false
         },
         {
-          "tag": "4.22.0",
+          "tag": "v5.2.0",
           "name": "Security fix for CVE-2024-51999 (GHSA-pj86-cfqh-vqx6)",
-          "publishedAt": "2025-12-01T16:19:48Z",
-          "url": "https://github.com/expressjs/express/releases/tag/4.22.0",
+          "publishedAt": "2025-12-01T16:21:03Z",
+          "url": "https://github.com/expressjs/express/releases/tag/v5.2.0",
           "prerelease": false
         }
       ],
@@ -7434,20 +7434,6 @@
           "prerelease": true
         },
         {
-          "tag": "v0.62.0-preview.0",
-          "name": "Release v0.62.0-preview.0",
-          "publishedAt": "2026-09-23T23:47:50Z",
-          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-preview.0",
-          "prerelease": true
-        },
-        {
-          "tag": "v0.62.0-nightly.20260923.g62364cb20",
-          "name": "Release v0.62.0-nightly.20260923.g62364cb20",
-          "publishedAt": "2026-09-23T01:24:23Z",
-          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260923.g62364cb20",
-          "prerelease": true
-        },
-        {
           "tag": "v0.61.0",
           "name": "Release v0.61.0",
           "publishedAt": "2026-09-23T23:59:15Z",
@@ -7455,10 +7441,24 @@
           "prerelease": false
         },
         {
+          "tag": "v0.62.0-preview.0",
+          "name": "Release v0.62.0-preview.0",
+          "publishedAt": "2026-09-23T23:47:50Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-preview.0",
+          "prerelease": true
+        },
+        {
           "tag": "v0.61.0-preview.1",
           "name": "Release v0.61.0-preview.1",
           "publishedAt": "2026-09-23T22:53:10Z",
           "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0-preview.1",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.62.0-nightly.20260923.g62364cb20",
+          "name": "Release v0.62.0-nightly.20260923.g62364cb20",
+          "publishedAt": "2026-09-23T01:24:23Z",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0-nightly.20260923.g62364cb20",
           "prerelease": true
         }
       ],
@@ -8202,7 +8202,7 @@
         "homepage": "https://goose-docs.ai/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 54612,
+        "stars": 54613,
         "forks": 6308,
         "topics": [
           "acp",
@@ -8319,7 +8319,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-24T13:57:45Z",
+        "pushedAt": "2026-09-24T14:09:40Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8332,20 +8332,6 @@
       },
       "releases": [
         {
-          "tag": "v13.2.2",
-          "name": "13.2.2",
-          "publishedAt": "2026-09-15T12:21:32Z",
-          "url": "https://github.com/grafana/grafana/releases/tag/v13.2.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v13.1.6",
-          "name": "13.1.6",
-          "publishedAt": "2026-09-15T12:25:01Z",
-          "url": "https://github.com/grafana/grafana/releases/tag/v13.1.6",
-          "prerelease": false
-        },
-        {
           "tag": "v13.0.9",
           "name": "13.0.9",
           "publishedAt": "2026-09-15T12:43:46Z",
@@ -8357,6 +8343,20 @@
           "name": "12.4.11",
           "publishedAt": "2026-09-15T12:27:34Z",
           "url": "https://github.com/grafana/grafana/releases/tag/v12.4.11",
+          "prerelease": false
+        },
+        {
+          "tag": "v13.1.6",
+          "name": "13.1.6",
+          "publishedAt": "2026-09-15T12:25:01Z",
+          "url": "https://github.com/grafana/grafana/releases/tag/v13.1.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v13.2.2",
+          "name": "13.2.2",
+          "publishedAt": "2026-09-15T12:21:32Z",
+          "url": "https://github.com/grafana/grafana/releases/tag/v13.2.2",
           "prerelease": false
         },
         {
@@ -9112,7 +9112,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-24T13:27:09Z",
+        "pushedAt": "2026-09-24T13:58:55Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -9226,17 +9226,17 @@
       },
       "releases": [
         {
+          "tag": "v3.9.13",
+          "name": "v3.9.13 | 09-04-26",
+          "publishedAt": "2026-09-08T18:57:32Z",
+          "url": "https://github.com/influxdata/influxdb/releases/tag/v3.9.13",
+          "prerelease": false
+        },
+        {
           "tag": "v3.11.4",
           "name": "v3.11.4 | 09-04-26",
           "publishedAt": "2026-09-08T18:55:40Z",
           "url": "https://github.com/influxdata/influxdb/releases/tag/v3.11.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v3.11.3",
-          "name": "v3.11.3 | 08-28-26",
-          "publishedAt": "2026-09-08T18:58:05Z",
-          "url": "https://github.com/influxdata/influxdb/releases/tag/v3.11.3",
           "prerelease": false
         },
         {
@@ -9247,17 +9247,17 @@
           "prerelease": false
         },
         {
-          "tag": "v3.9.13",
-          "name": "v3.9.13 | 09-04-26",
-          "publishedAt": "2026-09-08T18:57:32Z",
-          "url": "https://github.com/influxdata/influxdb/releases/tag/v3.9.13",
+          "tag": "v3.11.3",
+          "name": "v3.11.3 | 08-28-26",
+          "publishedAt": "2026-09-08T18:58:05Z",
+          "url": "https://github.com/influxdata/influxdb/releases/tag/v3.11.3",
           "prerelease": false
         },
         {
-          "tag": "v3.11.2",
-          "name": "v3.11.2 | 08-20-26",
-          "publishedAt": "2026-09-08T18:58:52Z",
-          "url": "https://github.com/influxdata/influxdb/releases/tag/v3.11.2",
+          "tag": "v1.13.1",
+          "name": "mTLS support: Add mutual TLS (mTLS) authentication for the HTTP, OpenTSDB, and subscriber services, including certifica…",
+          "publishedAt": "2026-09-09T22:07:46Z",
+          "url": "https://github.com/influxdata/influxdb/releases/tag/v1.13.1",
           "prerelease": false
         }
       ],
@@ -9312,10 +9312,24 @@
       },
       "releases": [
         {
+          "tag": "controller-v1.15.1",
+          "name": "Images:",
+          "publishedAt": "2026-03-19T21:17:55Z",
+          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1",
+          "prerelease": false
+        },
+        {
           "tag": "helm-chart-4.15.1",
           "name": "This file documents all notable changes to ingress-nginx Helm Chart. The release numbering uses semantic versioning.",
           "publishedAt": "2026-03-19T21:16:16Z",
           "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.15.1",
+          "prerelease": false
+        },
+        {
+          "tag": "controller-v1.14.5",
+          "name": "Images:",
+          "publishedAt": "2026-03-19T21:14:52Z",
+          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.14.5",
           "prerelease": false
         },
         {
@@ -9326,24 +9340,10 @@
           "prerelease": false
         },
         {
-          "tag": "helm-chart-4.13.9",
-          "name": "This file documents all notable changes to ingress-nginx Helm Chart. The release numbering uses semantic versioning.",
-          "publishedAt": "2026-03-19T21:08:46Z",
-          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.13.9",
-          "prerelease": false
-        },
-        {
-          "tag": "controller-v1.15.1",
+          "tag": "controller-v1.13.9",
           "name": "Images:",
-          "publishedAt": "2026-03-19T21:17:55Z",
-          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1",
-          "prerelease": false
-        },
-        {
-          "tag": "controller-v1.14.5",
-          "name": "Images:",
-          "publishedAt": "2026-03-19T21:14:52Z",
-          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.14.5",
+          "publishedAt": "2026-03-19T21:14:04Z",
+          "url": "https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.13.9",
           "prerelease": false
         }
       ],
@@ -9393,7 +9393,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-04-23T03:54:26Z",
-        "pushedAt": "2026-09-24T09:57:51Z",
+        "pushedAt": "2026-09-24T14:04:59Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -10325,7 +10325,7 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31562,
+        "stars": 31563,
         "forks": 1639,
         "topics": [
           "es6",
@@ -10342,7 +10342,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-03-21T15:30:24Z",
-        "pushedAt": "2026-09-24T13:13:39Z",
+        "pushedAt": "2026-09-24T14:05:04Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -10566,7 +10566,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-24T13:58:05Z",
+        "pushedAt": "2026-09-24T14:11:04Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -10607,10 +10607,10 @@
           "prerelease": false
         },
         {
-          "tag": "v9.4.6",
-          "name": "Kibana 9.4.6",
-          "publishedAt": "2026-09-01T12:51:19Z",
-          "url": "https://github.com/elastic/kibana/releases/tag/v9.4.6",
+          "tag": "v8.19.21",
+          "name": "Kibana 8.19.21",
+          "publishedAt": "2026-09-01T12:53:50Z",
+          "url": "https://github.com/elastic/kibana/releases/tag/v8.19.21",
           "prerelease": false
         }
       ],
@@ -10742,7 +10742,7 @@
         "homepage": "https://sw.kovidgoyal.net/kitty/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 35054,
+        "stars": 35053,
         "forks": 1524,
         "topics": [
           "c",
@@ -10872,13 +10872,6 @@
       },
       "releases": [
         {
-          "tag": "versioning/v0.8.0",
-          "name": "versioning 0.8.0 (2026-05-24)",
-          "publishedAt": "2026-05-24T19:28:42Z",
-          "url": "https://github.com/knope-dev/knope/releases/tag/versioning/v0.8.0",
-          "prerelease": false
-        },
-        {
           "tag": "knope/v0.23.0",
           "name": "knope 0.23.0 (2026-05-24)",
           "publishedAt": "2026-05-24T19:35:03Z",
@@ -10890,6 +10883,13 @@
           "name": "config 0.4.3 (2026-05-24)",
           "publishedAt": "2026-05-24T19:28:43Z",
           "url": "https://github.com/knope-dev/knope/releases/tag/config/v0.4.3",
+          "prerelease": false
+        },
+        {
+          "tag": "versioning/v0.8.0",
+          "name": "versioning 0.8.0 (2026-05-24)",
+          "publishedAt": "2026-05-24T19:28:42Z",
+          "url": "https://github.com/knope-dev/knope/releases/tag/versioning/v0.8.0",
           "prerelease": false
         },
         {
@@ -10966,17 +10966,17 @@
           "prerelease": false
         },
         {
-          "tag": "v3.1.2",
-          "name": "fix: typo in troubleshooting.md",
-          "publishedAt": "2026-02-25T13:37:14Z",
-          "url": "https://github.com/koajs/koa/releases/tag/v3.1.2",
-          "prerelease": false
-        },
-        {
           "tag": "v2.16.4",
           "name": "fix(security): Host Header Injection via ctx.hostname by @killagu",
           "publishedAt": "2026-02-25T13:38:28Z",
           "url": "https://github.com/koajs/koa/releases/tag/v2.16.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.1.2",
+          "name": "fix: typo in troubleshooting.md",
+          "publishedAt": "2026-02-25T13:37:14Z",
+          "url": "https://github.com/koajs/koa/releases/tag/v3.1.2",
           "prerelease": false
         },
         {
@@ -11326,6 +11326,13 @@
       },
       "releases": [
         {
+          "tag": "site@2026.9.18",
+          "name": null,
+          "publishedAt": "2026-09-24T11:54:02Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.18",
+          "prerelease": false
+        },
+        {
           "tag": "v1.18.0",
           "name": "feat(chart): expose the lookup budget and the staging age (#426)",
           "publishedAt": "2026-09-24T11:07:12Z",
@@ -11340,13 +11347,6 @@
           "prerelease": false
         },
         {
-          "tag": "site@2026.9.18",
-          "name": null,
-          "publishedAt": "2026-09-24T11:54:02Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.18",
-          "prerelease": false
-        },
-        {
           "tag": "v1.17.1",
           "name": "fix(chart): stop Artifact Hub indexing the versions that never had an image (#410)",
           "publishedAt": "2026-09-22T11:21:59Z",
@@ -11354,10 +11354,10 @@
           "prerelease": false
         },
         {
-          "tag": "v1.17.0",
+          "tag": "site@2026.9.17",
           "name": "feat(auth): keep a public repository's objects to whoever can push (#398)",
-          "publishedAt": "2026-09-20T08:48:40Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.17.0",
+          "publishedAt": "2026-09-20T08:48:41Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.17",
           "prerelease": false
         }
       ],
@@ -11427,7 +11427,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-12T01:06:52Z",
-        "pushedAt": "2026-09-24T13:56:43Z",
+        "pushedAt": "2026-09-24T14:10:45Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -11629,7 +11629,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-24T13:50:39Z",
+        "pushedAt": "2026-09-24T14:03:13Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -11715,7 +11715,7 @@
         "homepage": "https://lobehub.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 82799,
+        "stars": 82800,
         "forks": 15921,
         "topics": [
           "agent",
@@ -11761,17 +11761,17 @@
           "prerelease": true
         },
         {
-          "tag": "v2.2.19-canary.15",
-          "name": "Desktop Canary v2.2.19-canary.15",
-          "publishedAt": "2026-09-24T03:10:55Z",
-          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.15",
-          "prerelease": true
-        },
-        {
           "tag": "v0.0.0-nightly.pr19922.31662",
           "name": "PR Build v0.0.0-nightly.pr19922.31662",
           "publishedAt": "2026-09-24T11:59:19Z",
           "url": "https://github.com/lobehub/lobehub/releases/tag/v0.0.0-nightly.pr19922.31662",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.2.19-canary.15",
+          "name": "Desktop Canary v2.2.19-canary.15",
+          "publishedAt": "2026-09-24T03:10:55Z",
+          "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.19-canary.15",
           "prerelease": true
         },
         {
@@ -11950,17 +11950,17 @@
           "prerelease": false
         },
         {
-          "tag": "v9.5.4",
-          "name": "Logstash 9.5.4",
-          "publishedAt": "2026-09-15T18:19:12Z",
-          "url": "https://github.com/elastic/logstash/releases/tag/v9.5.4",
-          "prerelease": false
-        },
-        {
           "tag": "v9.4.7",
           "name": "Logstash 9.4.7",
           "publishedAt": "2026-09-15T18:19:41Z",
           "url": "https://github.com/elastic/logstash/releases/tag/v9.4.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.5.4",
+          "name": "Logstash 9.5.4",
+          "publishedAt": "2026-09-15T18:19:12Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v9.5.4",
           "prerelease": false
         },
         {
@@ -11971,10 +11971,10 @@
           "prerelease": false
         },
         {
-          "tag": "v9.4.6",
-          "name": "Logstash 9.4.6",
-          "publishedAt": "2026-09-01T12:51:02Z",
-          "url": "https://github.com/elastic/logstash/releases/tag/v9.4.6",
+          "tag": "v8.19.21",
+          "name": "Logstash 8.19.21",
+          "publishedAt": "2026-09-01T12:53:46Z",
+          "url": "https://github.com/elastic/logstash/releases/tag/v8.19.21",
           "prerelease": false
         }
       ],
@@ -12221,10 +12221,10 @@
           "prerelease": true
         },
         {
-          "tag": "6.0.0-b2",
+          "tag": "5.14.1-alpha.20260917180610",
           "name": "We recommend to read this FAQ before using a pre-release in a production environment.",
-          "publishedAt": "2026-09-17T15:23:26Z",
-          "url": "https://github.com/matomo-org/matomo/releases/tag/6.0.0-b2",
+          "publishedAt": "2026-09-17T18:41:44Z",
+          "url": "https://github.com/matomo-org/matomo/releases/tag/5.14.1-alpha.20260917180610",
           "prerelease": true
         }
       ],
@@ -12437,17 +12437,17 @@
           "prerelease": false
         },
         {
-          "tag": "v1.53.0",
-          "name": "v1.53.0 🖇️​",
-          "publishedAt": "2026-08-10T09:15:27Z",
-          "url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.53.0",
-          "prerelease": false
-        },
-        {
           "tag": "v1.52.3",
           "name": "v1.52.3 🐠",
           "publishedAt": "2026-08-10T16:11:43Z",
           "url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.52.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.52.2",
+          "name": "v1.52.2 🐠",
+          "publishedAt": "2026-08-10T14:18:50Z",
+          "url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.52.2",
           "prerelease": false
         }
       ],
@@ -12560,7 +12560,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-03-15T09:21:10Z",
-        "pushedAt": "2026-09-24T12:29:26Z",
+        "pushedAt": "2026-09-24T14:06:16Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13160,7 +13160,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-01-15T16:15:18Z",
-        "pushedAt": "2026-09-24T12:49:19Z",
+        "pushedAt": "2026-09-24T14:03:36Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13565,7 +13565,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-24T13:49:46Z",
+        "pushedAt": "2026-09-24T14:10:01Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -13606,10 +13606,10 @@
           "prerelease": true
         },
         {
-          "tag": "v34.0.4",
+          "tag": "v32.0.15",
           "name": null,
-          "publishedAt": "2026-09-10T13:16:15Z",
-          "url": "https://github.com/nextcloud/server/releases/tag/v34.0.4",
+          "publishedAt": "2026-09-10T13:54:33Z",
+          "url": "https://github.com/nextcloud/server/releases/tag/v32.0.15",
           "prerelease": false
         }
       ],
@@ -13676,17 +13676,17 @@
       },
       "releases": [
         {
-          "tag": "release-1.31.6",
-          "name": "nginx-1.31.6 mainline version has been released, with fixes for buffer overflow vulnerability when using ngx_http_v3_mo…",
-          "publishedAt": "2026-09-15T15:34:19Z",
-          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.6",
-          "prerelease": false
-        },
-        {
           "tag": "release-1.30.5",
           "name": "nginx-1.30.5 stable version has been released, with fixes for buffer overflow vulnerability when using ngx_http_v3_modu…",
           "publishedAt": "2026-09-15T15:37:15Z",
           "url": "https://github.com/nginx/nginx/releases/tag/release-1.30.5",
+          "prerelease": false
+        },
+        {
+          "tag": "release-1.31.6",
+          "name": "nginx-1.31.6 mainline version has been released, with fixes for buffer overflow vulnerability when using ngx_http_v3_mo…",
+          "publishedAt": "2026-09-15T15:34:19Z",
+          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.6",
           "prerelease": false
         },
         {
@@ -13704,10 +13704,10 @@
           "prerelease": false
         },
         {
-          "tag": "release-1.31.3",
-          "name": "nginx-1.31.3 mainline version has been released, with fixes for buffer overflow vulnerability when using map with regex…",
-          "publishedAt": "2026-07-15T18:00:58Z",
-          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.3",
+          "tag": "release-1.30.4",
+          "name": "nginx-1.30.4 stable version has been released, with fixes for buffer overflow vulnerability when using map with regex (…",
+          "publishedAt": "2026-07-15T17:57:36Z",
+          "url": "https://github.com/nginx/nginx/releases/tag/release-1.30.4",
           "prerelease": false
         }
       ],
@@ -13754,7 +13754,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-11-26T19:57:11Z",
-        "pushedAt": "2026-09-24T12:04:15Z",
+        "pushedAt": "2026-09-24T14:12:13Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -13852,27 +13852,6 @@
       },
       "releases": [
         {
-          "tag": "v12.1.0",
-          "name": "6400533 #9948 token: support read-write-stage-only granular access tokens (#9948) (@Tayvon, @Copilot)",
-          "publishedAt": "2026-09-22T20:21:08Z",
-          "url": "https://github.com/npm/cli/releases/tag/v12.1.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v11.20.0",
-          "name": "0b3c699 #9994 token: support read-write-stage-only granular access tokens (#9994) (@github-actions[bot], @Tayvon, @Copi…",
-          "publishedAt": "2026-09-22T21:34:44Z",
-          "url": "https://github.com/npm/cli/releases/tag/v11.20.0",
-          "prerelease": false
-        },
-        {
-          "tag": "libnpmpublish-v12.0.1",
-          "name": "libnpmpublish: v12.0.1",
-          "publishedAt": "2026-09-22T20:21:16Z",
-          "url": "https://github.com/npm/cli/releases/tag/libnpmpublish-v12.0.1",
-          "prerelease": false
-        },
-        {
           "tag": "libnpmpublish-v11.2.1",
           "name": "libnpmpublish: v11.2.1",
           "publishedAt": "2026-09-22T21:34:51Z",
@@ -13884,6 +13863,27 @@
           "name": "libnpmpack: v9.1.14",
           "publishedAt": "2026-09-22T21:34:50Z",
           "url": "https://github.com/npm/cli/releases/tag/libnpmpack-v9.1.14",
+          "prerelease": false
+        },
+        {
+          "tag": "libnpmfund-v7.0.27",
+          "name": "libnpmfund: v7.0.27",
+          "publishedAt": "2026-09-22T21:34:49Z",
+          "url": "https://github.com/npm/cli/releases/tag/libnpmfund-v7.0.27",
+          "prerelease": false
+        },
+        {
+          "tag": "libnpmexec-v10.3.3",
+          "name": "libnpmexec: v10.3.3",
+          "publishedAt": "2026-09-22T21:34:48Z",
+          "url": "https://github.com/npm/cli/releases/tag/libnpmexec-v10.3.3",
+          "prerelease": false
+        },
+        {
+          "tag": "libnpmdiff-v8.1.13",
+          "name": "libnpmdiff: v8.1.13",
+          "publishedAt": "2026-09-22T21:34:47Z",
+          "url": "https://github.com/npm/cli/releases/tag/libnpmdiff-v8.1.13",
           "prerelease": false
         }
       ],
@@ -13941,7 +13941,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-24T13:56:11Z",
+        "pushedAt": "2026-09-24T14:11:14Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -14184,7 +14184,7 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181592,
+        "stars": 181594,
         "forks": 17989,
         "topics": [
           "deepseek",
@@ -14417,7 +14417,7 @@
         "homepage": "https://openwebui.com",
         "language": "Python",
         "license": "Other",
-        "stars": 153005,
+        "stars": 153007,
         "forks": 22384,
         "topics": [
           "ai",
@@ -14632,14 +14632,14 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209804,
-        "forks": 27707,
+        "stars": 209805,
+        "forks": 27708,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-30T20:08:00Z",
-        "pushedAt": "2026-09-24T13:55:30Z",
+        "pushedAt": "2026-09-24T14:04:18Z",
         "defaultBranch": "dev"
       },
       "trend": null,
@@ -14721,7 +14721,7 @@
         "homepage": "https://openhands.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 89060,
+        "stars": 89061,
         "forks": 11726,
         "topics": [
           "agent",
@@ -15238,13 +15238,6 @@
           "prerelease": false
         },
         {
-          "tag": "crates_v0.151.0",
-          "name": "oxc crates_v0.151.0",
-          "publishedAt": "2026-09-21T12:27:01Z",
-          "url": "https://github.com/oxc-project/oxc/releases/tag/crates_v0.151.0",
-          "prerelease": false
-        },
-        {
           "tag": "apps_v1.84.0",
           "name": "oxlint v1.84.0 & oxfmt v0.69.0",
           "publishedAt": "2026-09-21T13:03:33Z",
@@ -15252,10 +15245,17 @@
           "prerelease": false
         },
         {
-          "tag": "crates_v0.150.0",
-          "name": "oxc crates_v0.150.0",
-          "publishedAt": "2026-09-14T11:37:46Z",
-          "url": "https://github.com/oxc-project/oxc/releases/tag/crates_v0.150.0",
+          "tag": "crates_v0.151.0",
+          "name": "oxc crates_v0.151.0",
+          "publishedAt": "2026-09-21T12:27:01Z",
+          "url": "https://github.com/oxc-project/oxc/releases/tag/crates_v0.151.0",
+          "prerelease": false
+        },
+        {
+          "tag": "apps_v1.83.0",
+          "name": "oxlint v1.83.0 & oxfmt v0.68.0",
+          "publishedAt": "2026-09-14T12:12:16Z",
+          "url": "https://github.com/oxc-project/oxc/releases/tag/apps_v1.83.0",
           "prerelease": false
         }
       ],
@@ -15283,7 +15283,7 @@
         "language": "Java",
         "license": "Other",
         "stars": 12678,
-        "forks": 3538,
+        "forks": 3539,
         "topics": [
           "bukkit",
           "java",
@@ -16049,7 +16049,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-12-04T22:33:36Z",
-        "pushedAt": "2026-09-24T13:29:16Z",
+        "pushedAt": "2026-09-24T14:06:46Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -16140,7 +16140,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96621,
+        "stars": 96622,
         "forks": 6497,
         "topics": [
           "automation",
@@ -16257,7 +16257,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-24T13:55:59Z",
+        "pushedAt": "2026-09-24T14:11:54Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16291,18 +16291,18 @@
           "prerelease": false
         },
         {
-          "tag": "v12.5.0",
-          "name": "pnpm 12.5",
-          "publishedAt": "2026-09-18T17:02:57Z",
-          "url": "https://github.com/pnpm/pnpm/releases/tag/v12.5.0",
-          "prerelease": false
-        },
-        {
           "tag": "pnpr@0.1.0-alpha.12",
           "name": "pnpr 0.1.0-alpha.12",
           "publishedAt": "2026-09-18T16:43:44Z",
           "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.12",
           "prerelease": true
+        },
+        {
+          "tag": "v12.5.0",
+          "name": "pnpm 12.5",
+          "publishedAt": "2026-09-18T17:02:57Z",
+          "url": "https://github.com/pnpm/pnpm/releases/tag/v12.5.0",
+          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -16443,7 +16443,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-03-03T18:45:51Z",
-        "pushedAt": "2026-09-24T11:58:48Z",
+        "pushedAt": "2026-09-24T14:11:50Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16820,7 +16820,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-24T13:50:28Z",
+        "pushedAt": "2026-09-24T14:12:14Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -16861,11 +16861,11 @@
           "prerelease": true
         },
         {
-          "tag": "v8.0.0-rc.7",
-          "name": "ORM collection pagination renames to limit/offset, and the toolchain releases against @prisma/cli-engine@0.2.3, the eng…",
-          "publishedAt": "2026-08-25T10:22:19Z",
-          "url": "https://github.com/prisma/orm/releases/tag/v8.0.0-rc.7",
-          "prerelease": true
+          "tag": "7.10.0",
+          "name": "Prisma ORM 7.10.0 introduces a compatibility package for running Prisma 7 alongside newer Prisma versions, secures Pris…",
+          "publishedAt": "2026-08-25T12:54:43Z",
+          "url": "https://github.com/prisma/orm/releases/tag/7.10.0",
+          "prerelease": false
         }
       ],
       "maintainerVerified": false,
@@ -17118,7 +17118,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-24T13:46:34Z",
+        "pushedAt": "2026-09-24T14:12:23Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -17304,10 +17304,10 @@
       },
       "releases": [
         {
-          "tag": "puppeteer-v25.12.0",
-          "name": "puppeteer: v25.12.0",
-          "publishedAt": "2026-09-23T12:52:04Z",
-          "url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.12.0",
+          "tag": "browsers-v3.2.3",
+          "name": "browsers: v3.2.3",
+          "publishedAt": "2026-09-23T12:52:06Z",
+          "url": "https://github.com/puppeteer/puppeteer/releases/tag/browsers-v3.2.3",
           "prerelease": false
         },
         {
@@ -17318,17 +17318,10 @@
           "prerelease": false
         },
         {
-          "tag": "browsers-v3.2.3",
-          "name": "browsers: v3.2.3",
-          "publishedAt": "2026-09-23T12:52:06Z",
-          "url": "https://github.com/puppeteer/puppeteer/releases/tag/browsers-v3.2.3",
-          "prerelease": false
-        },
-        {
-          "tag": "puppeteer-v25.11.0",
-          "name": "puppeteer: v25.11.0",
-          "publishedAt": "2026-09-14T08:59:59Z",
-          "url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.11.0",
+          "tag": "puppeteer-v25.12.0",
+          "name": "puppeteer: v25.12.0",
+          "publishedAt": "2026-09-23T12:52:04Z",
+          "url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.12.0",
           "prerelease": false
         },
         {
@@ -17336,6 +17329,13 @@
           "name": "puppeteer-core: v25.11.0",
           "publishedAt": "2026-09-14T09:00:00Z",
           "url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-core-v25.11.0",
+          "prerelease": false
+        },
+        {
+          "tag": "puppeteer-v25.11.0",
+          "name": "puppeteer: v25.11.0",
+          "publishedAt": "2026-09-14T08:59:59Z",
+          "url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.11.0",
           "prerelease": false
         }
       ],
@@ -17677,7 +17677,7 @@
         "homepage": "https://questdb.com",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 17346,
+        "stars": 17347,
         "forks": 1651,
         "topics": [
           "apache-arrow",
@@ -18019,17 +18019,17 @@
           "prerelease": false
         },
         {
-          "tag": "v26.1.17",
-          "name": "Fixed an issue where audit-log initialization unconditionally sent a CreateTopics request to the controller leader, cau…",
-          "publishedAt": "2026-08-20T00:03:34Z",
-          "url": "https://github.com/redpanda-data/redpanda/releases/tag/v26.1.17",
-          "prerelease": false
-        },
-        {
           "tag": "v25.3.17",
           "name": "adds the cloud_storage_prefetch_segments_max cluster config which can be used to enable small segment prefetching in cl…",
           "publishedAt": "2026-08-20T00:04:06Z",
           "url": "https://github.com/redpanda-data/redpanda/releases/tag/v25.3.17",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.1.17",
+          "name": "Fixed an issue where audit-log initialization unconditionally sent a CreateTopics request to the controller leader, cau…",
+          "publishedAt": "2026-08-20T00:03:34Z",
+          "url": "https://github.com/redpanda-data/redpanda/releases/tag/v26.1.17",
           "prerelease": false
         },
         {
@@ -18477,7 +18477,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-24T13:46:31Z",
+        "pushedAt": "2026-09-24T14:06:36Z",
         "defaultBranch": "develop"
       },
       "trend": null,
@@ -19020,7 +19020,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-09T17:17:44Z",
-        "pushedAt": "2026-09-24T13:53:51Z",
+        "pushedAt": "2026-09-24T14:09:41Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -19102,7 +19102,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33770,
+        "stars": 33772,
         "forks": 1512,
         "topics": [
           "ai-native",
@@ -19612,7 +19612,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-24T13:49:35Z",
+        "pushedAt": "2026-09-24T14:09:46Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -19935,17 +19935,17 @@
           "prerelease": false
         },
         {
-          "tag": "@astrojs/starlight@0.42.0",
-          "name": "⚠️ Potentially breaking change: If you use a theme plugin, custom styles, or component overrides targeting the MobileMe…",
-          "publishedAt": "2026-09-02T11:13:55Z",
-          "url": "https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.0",
-          "prerelease": false
-        },
-        {
           "tag": "@astrojs/starlight-docsearch@0.8.0",
           "name": null,
           "publishedAt": "2026-09-02T11:13:58Z",
           "url": "https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight-docsearch%400.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "@astrojs/starlight@0.42.0",
+          "name": "⚠️ Potentially breaking change: If you use a theme plugin, custom styles, or component overrides targeting the MobileMe…",
+          "publishedAt": "2026-09-02T11:13:55Z",
+          "url": "https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.0",
           "prerelease": false
         }
       ],
@@ -20173,7 +20173,7 @@
         "homepage": "https://syncthing.net/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 88896,
+        "stars": 88897,
         "forks": 5489,
         "topics": [
           "go",
@@ -20470,7 +20470,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-24T18:05:02Z",
-        "pushedAt": "2026-09-24T13:16:05Z",
+        "pushedAt": "2026-09-24T14:08:29Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20709,7 +20709,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-03-07T20:03:41Z",
-        "pushedAt": "2026-09-24T10:07:45Z",
+        "pushedAt": "2026-09-24T14:07:09Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -21079,7 +21079,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-24T03:49:36Z",
+        "pushedAt": "2026-09-24T14:06:06Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -21276,17 +21276,17 @@
           "prerelease": false
         },
         {
-          "tag": "1.1.0",
-          "name": "chore(legacy-naming-strategies): bump to 1.0.0",
-          "publishedAt": "2026-07-13T19:07:27Z",
-          "url": "https://github.com/typeorm/typeorm/releases/tag/1.1.0",
-          "prerelease": false
-        },
-        {
           "tag": "0.3.31",
           "name": "cache: release query runner on error in storeInCache (#12545) (a84b9b3)",
           "publishedAt": "2026-07-13T19:24:24Z",
           "url": "https://github.com/typeorm/typeorm/releases/tag/0.3.31",
+          "prerelease": false
+        },
+        {
+          "tag": "1.1.0",
+          "name": "chore(legacy-naming-strategies): bump to 1.0.0",
+          "publishedAt": "2026-07-13T19:07:27Z",
+          "url": "https://github.com/typeorm/typeorm/releases/tag/1.1.0",
           "prerelease": false
         },
         {
@@ -21782,7 +21782,7 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90130,
+        "stars": 90131,
         "forks": 3609,
         "topics": [
           "packaging",
@@ -21927,17 +21927,17 @@
           "prerelease": false
         },
         {
-          "tag": "8.1.10",
-          "name": "Valkey 8.1.10  -  Released Mon 31 August 2026",
-          "publishedAt": "2026-08-31T23:29:53Z",
-          "url": "https://github.com/valkey-io/valkey/releases/tag/8.1.10",
-          "prerelease": false
-        },
-        {
           "tag": "8.0.11",
           "name": "Valkey 8.0.11  -  Released Mon 31 August 2026",
           "publishedAt": "2026-08-31T23:27:40Z",
           "url": "https://github.com/valkey-io/valkey/releases/tag/8.0.11",
+          "prerelease": false
+        },
+        {
+          "tag": "8.1.10",
+          "name": "Valkey 8.1.10  -  Released Mon 31 August 2026",
+          "publishedAt": "2026-08-31T23:29:53Z",
+          "url": "https://github.com/valkey-io/valkey/releases/tag/8.1.10",
           "prerelease": false
         }
       ],
@@ -22285,7 +22285,7 @@
         "homepage": "https://victoriametrics.com/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 17764,
+        "stars": 17765,
         "forks": 1749,
         "topics": [
           "database",
@@ -22342,17 +22342,17 @@
           "prerelease": false
         },
         {
-          "tag": "v1.148.1",
-          "name": "Released at 2026-07-31",
-          "publishedAt": "2026-08-05T12:38:42Z",
-          "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.148.1",
-          "prerelease": false
-        },
-        {
           "tag": "v1.136.15",
           "name": "Released at 2026-07-31",
           "publishedAt": "2026-08-05T12:38:49Z",
           "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.136.15",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.148.1",
+          "name": "Released at 2026-07-31",
+          "publishedAt": "2026-08-05T12:38:42Z",
+          "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.148.1",
           "prerelease": false
         }
       ],
@@ -22384,7 +22384,7 @@
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40928,
+        "stars": 40929,
         "forks": 6135,
         "topics": [
           "c",
@@ -22442,7 +22442,7 @@
         "homepage": "http://vite.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 82972,
+        "stars": 82973,
         "forks": 8777,
         "topics": [
           "build-tool",
@@ -22475,17 +22475,17 @@
           "prerelease": false
         },
         {
-          "tag": "v8.3.0",
-          "name": "build: avoid settling seen preload dependencies for performance (#23446) (e6f6b3e)",
-          "publishedAt": "2026-09-10T11:25:16Z",
-          "url": "https://github.com/vitejs/vite/releases/tag/v8.3.0",
-          "prerelease": false
-        },
-        {
           "tag": "create-vite@9.2.1",
           "name": "deps: update all non-major dependencies (#23404) (238ad81)",
           "publishedAt": "2026-09-10T11:41:17Z",
           "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v8.3.0",
+          "name": "build: avoid settling seen preload dependencies for performance (#23446) (e6f6b3e)",
+          "publishedAt": "2026-09-10T11:25:16Z",
+          "url": "https://github.com/vitejs/vite/releases/tag/v8.3.0",
           "prerelease": false
         },
         {
@@ -22729,7 +22729,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-24T13:41:47Z",
+        "pushedAt": "2026-09-24T14:10:36Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -22914,7 +22914,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-24T13:54:59Z",
+        "pushedAt": "2026-09-24T14:03:37Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -23408,7 +23408,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-10-05T21:56:00Z",
-        "pushedAt": "2026-09-24T13:57:43Z",
+        "pushedAt": "2026-09-24T14:11:48Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -23501,7 +23501,7 @@
         "language": "Rust",
         "license": "Other",
         "stars": 90818,
-        "forks": 10756,
+        "forks": 10757,
         "topics": [
           "gpui",
           "rust-lang",
@@ -23512,7 +23512,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-02-20T03:01:06Z",
-        "pushedAt": "2026-09-24T13:26:55Z",
+        "pushedAt": "2026-09-24T14:06:33Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -23525,18 +23525,18 @@
       },
       "releases": [
         {
-          "tag": "v1.22.0-pre",
-          "name": "This week's release includes BYOK support for Claude Opus 5.5 (Anthropic) and GPT-6 Astra, Sol, and Luna (OpenAI), per-…",
-          "publishedAt": "2026-09-23T16:21:36Z",
-          "url": "https://github.com/zed-industries/zed/releases/tag/v1.22.0-pre",
-          "prerelease": true
-        },
-        {
           "tag": "v1.21.0",
           "name": "This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server c…",
           "publishedAt": "2026-09-23T15:42:38Z",
           "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0",
           "prerelease": false
+        },
+        {
+          "tag": "v1.22.0-pre",
+          "name": "This week's release includes BYOK support for Claude Opus 5.5 (Anthropic) and GPT-6 Astra, Sol, and Luna (OpenAI), per-…",
+          "publishedAt": "2026-09-23T16:21:36Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.22.0-pre",
+          "prerelease": true
         },
         {
           "tag": "v1.20.2",
@@ -23546,18 +23546,18 @@
           "prerelease": false
         },
         {
-          "tag": "v1.21.0-pre",
-          "name": "This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server c…",
-          "publishedAt": "2026-09-16T16:53:39Z",
-          "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0-pre",
-          "prerelease": true
-        },
-        {
           "tag": "v1.20.1",
           "name": "This week's release includes an optional cursor movement animation, a setting to open Markdown files directly in the re…",
           "publishedAt": "2026-09-16T16:23:43Z",
           "url": "https://github.com/zed-industries/zed/releases/tag/v1.20.1",
           "prerelease": false
+        },
+        {
+          "tag": "v1.21.0-pre",
+          "name": "This week's release includes faster rendering in syntax-highlighted files and Markdown code blocks, a language server c…",
+          "publishedAt": "2026-09-16T16:53:39Z",
+          "url": "https://github.com/zed-industries/zed/releases/tag/v1.21.0-pre",
+          "prerelease": true
         }
       ],
       "maintainerVerified": false,
@@ -23600,7 +23600,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-09-01T14:04:28Z",
-        "pushedAt": "2026-09-24T13:42:09Z",
+        "pushedAt": "2026-09-24T14:11:34Z",
         "defaultBranch": "main"
       },
       "trend": null,
