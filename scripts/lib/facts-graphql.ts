@@ -216,7 +216,8 @@ export function mapOwner(node: GqlOwner): OwnerFacts {
 
 class BatchRejected extends Error {
   constructor(errors: readonly GraphQLErrorEntry[]) {
-    super(`GitHub GraphQL rejected the batch: ${errors.map((e) => e.message).join("; ")}`);
+    const described = errors.map((e) => (e.path?.length ? `${e.path.join(".")}: ${e.message}` : e.message));
+    super(`GitHub GraphQL rejected the batch: ${[...new Set(described)].join("; ")}`);
   }
 }
 

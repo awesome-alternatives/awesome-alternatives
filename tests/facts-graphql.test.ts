@@ -172,7 +172,7 @@ describe("fetchRepositories", () => {
       },
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
-    await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1)), /nope/);
+    await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1)), /r0: nope/);
   });
 });
 
