@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.16.3] - 2026-09-24
+
+### Bug Fixes
+
+- fix(api): cap the cost of search per /64, per process and per day of Jev calls (#181)
+
 ## [0.16.2] - 2026-09-24
 
 ### Bug Fixes
