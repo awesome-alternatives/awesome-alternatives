@@ -59,4 +59,5 @@ jobs:
       - name: Commit the refreshed catalog
         env:
           GH_TOKEN: ${{ github.token }}
-        run: scripts/ci/push-catalog.sh "chore(catalog): refresh from GitHub" cp -r "$RUNNER_TEMP/refreshed/." .
+        run: |
+          scripts/ci/push-catalog.sh "chore(catalog): refresh from GitHub" cp -r "$RUNNER_TEMP/refreshed/." .

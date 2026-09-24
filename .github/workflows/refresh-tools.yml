@@ -103,4 +103,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           SLUGS: ${{ join(fromJSON(needs.plan.outputs.slugs), ' ') }}
-        run: scripts/ci/push-catalog.sh "chore(catalog): refresh $SLUGS" node scripts/refresh-merge.ts "$RUNNER_TEMP/entries"
+        run: |
+          scripts/ci/push-catalog.sh "chore(catalog): refresh $SLUGS" node scripts/refresh-merge.ts "$RUNNER_TEMP/entries"
