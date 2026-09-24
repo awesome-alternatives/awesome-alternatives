@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.57.2] - 2026-09-24
+
+### Bug Fixes
+
+- fix(site): keep hidden mark tooltips out of the page width (#170)
+
 ## [0.57.1] - 2026-09-24
 
 ### Bug Fixes
