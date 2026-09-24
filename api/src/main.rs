@@ -13,6 +13,7 @@ mod lexical;
 mod peer;
 mod qualifiers;
 mod readme;
+mod refresh;
 mod routes;
 mod search;
 mod semantic;
@@ -32,6 +33,7 @@ use crate::config::Config;
 use crate::details::Details;
 use crate::embedding::{Embedder, LocalModel};
 use crate::jev::JevClient;
+use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::state::{AppState, Loaded};
 use crate::upstream::Upstream;
@@ -74,6 +76,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             "GITHUB_TOKEN is not set: README and security tabs share GitHub's 60 requests an hour, cached for 12 hours per tool"
         );
     }
+    if config.refresh.webhook_secret.is_none() {
+        tracing::warn!("GITHUB_WEBHOOK_SECRET is not set: POST /webhooks/github answers 503");
+    }
+    if config.refresh.dispatch.is_none() {
+        tracing::warn!(
+            "DISPATCH_APP_ID or DISPATCH_PRIVATE_KEY is not set: release-triggered refreshes are disabled and both refresh endpoints answer 503"
+        );
+    }
+    let refresh = Refresh::new(config.refresh, http.clone(), &config.github_api)?;
     let upstream = Upstream::new(
         http.clone(),
         &config.github_api,
@@ -89,8 +100,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         Details::new(upstream, config.details_cache_bytes, shared),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         config.trust_proxy,
+        refresh,
     );
-    tokio::spawn(refresh(
+    tokio::spawn(reload_catalog(
         state.clone(),
         config.catalog_source,
         config.catalog_refresh,
@@ -150,7 +162,7 @@ async fn load_embedder() -> Option<Arc<dyn Embedder>> {
     }
 }
 
-async fn refresh(
+async fn reload_catalog(
     state: AppState,
     source: String,
     every: std::time::Duration,

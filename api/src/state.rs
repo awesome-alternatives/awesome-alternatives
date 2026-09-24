@@ -8,6 +8,7 @@ use serde::Serialize;
 use crate::catalog::Catalog;
 use crate::details::Details;
 use crate::embedding::Embedder;
+use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::semantic::Index;
 use crate::vocabulary::Vocabulary;
@@ -108,6 +109,7 @@ pub struct AppState {
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub trust_proxy: bool,
     pub activity: Activity,
+    pub refresh: Arc<Refresh>,
 }
 
 impl AppState {
@@ -117,6 +119,7 @@ impl AppState {
         details: Details,
         limiter: DefaultKeyedRateLimiter<IpAddr>,
         trust_proxy: bool,
+        refresh: Refresh,
     ) -> Self {
         Self {
             loaded: Arc::new(RwLock::new(Arc::new(loaded))),
@@ -125,6 +128,7 @@ impl AppState {
             limiter: Arc::new(limiter),
             trust_proxy,
             activity: Activity::default(),
+            refresh: Arc::new(refresh),
         }
     }
 

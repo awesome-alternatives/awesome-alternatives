@@ -14,6 +14,7 @@ use crate::catalog::Tool;
 use crate::filters::{Filters, NearMiss};
 use crate::peer::client_ip;
 use crate::qualifiers::Unchecked;
+use crate::refresh;
 use crate::search::Interpreter;
 use crate::state::{AppState, Quiescence};
 use crate::tool_details;
@@ -22,17 +23,18 @@ use crate::vocabulary::Vocabulary;
 pub const MAX_QUERY_CHARS: usize = 300;
 
 pub fn router(state: AppState) -> Router {
-    let v1 = Router::new()
+    let api = Router::new()
         .route("/v1/tools", get(tools))
         .route("/v1/vocabulary", get(vocabulary))
         .route("/v1/search", post(search))
         .route("/v1/tools/{slug}/readme", get(tool_details::readme))
         .route("/v1/tools/{slug}/security", get(tool_details::security))
+        .merge(refresh::routes())
         .route_layer(middleware::from_fn_with_state(state.clone(), in_flight));
     Router::new()
         .route("/healthz", get(|| async { "ok" }))
         .route("/quiesce", get(quiesce))
-        .merge(v1)
+        .merge(api)
         .with_state(state)
 }
 
@@ -282,6 +284,7 @@ mod tests {
             ),
             limiter,
             false,
+            crate::fixtures::refresh_off(),
         )
     }
 

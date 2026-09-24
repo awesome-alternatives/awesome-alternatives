@@ -13,6 +13,8 @@ Rust and axum.
 | `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. Nothing in this repository calls it: it is here for anyone building against the catalog, which is CC0, and it is part of the published surface rather than an internal helper. |
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
 | `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
+| `POST` | `/webhooks/github` | GitHub App webhook. Signed with `X-Hub-Signature-256`, `401` when the signature does not match. A published release of a repository in the catalog answers `202` and triggers a refresh of its tools (see [Release-triggered refresh](#release-triggered-refresh)); every other event, action or repository answers `204`. |
+| `POST` | `/v1/refresh` | Called from a maintainer's own workflow with `Authorization: Bearer <GitHub Actions OIDC token>`. Refreshes the tools backed by the repository the token was issued to. `202` with `{ "slugs": [...], "dispatched": true }`, `dispatched` being `false` when a refresh for that repository already went out within the cooldown. `401` when the token does not verify, `404` when the repository is not in the catalog. |
 | `GET` | `/healthz` | `ok` |
 | `GET` | `/quiesce` | Whether the process is safe to stop. `200` when it is, `409` when it is not. |
 
@@ -132,6 +134,40 @@ not have it. The chain and the hostname are both verified, and there is no optio
 Without `VALKEY_URL` nothing is connected and nothing is attempted, the caches stay in-process, and
 startup says so once.
 
+## Release-triggered refresh
+
+A tool's entry normally catches up with a new release at the nightly refresh. These two endpoints
+let a maintainer have it refreshed within minutes instead, by dispatching `refresh-tools.yml` on
+`awesome-alternatives/awesome-alternatives` with the slugs the repository backs, space-separated in
+its `slugs` input. A monorepo can back several tools, and they all go in the same dispatch.
+
+There are two ways in, and both end up in the same place:
+
+- **The GitHub App.** Installed on the tool's repository, it sends a `release` webhook to
+  `POST /webhooks/github` (`https://awesome-alternatives.com/api/webhooks/github`). The body is
+  checked against `GITHUB_WEBHOOK_SECRET` with HMAC-SHA256, in constant time. Only `published`
+  releases count.
+- **A step in the maintainer's release workflow**, for those who would rather not install an app.
+  The job requests an OIDC token with the audience `awesome-alternatives` and posts it to
+  `POST /v1/refresh`. The token is verified against GitHub's JWKS (RS256, issuer
+  `https://token.actions.githubusercontent.com`, audience `OIDC_AUDIENCE`, expiry with 30 seconds
+  of leeway), and the repository comes from its `repository` claim, which GitHub signs: a workflow
+  can only ask for its own repository. The keys are cached, and a token naming a key the cache does
+  not have refetches them at most once a minute.
+
+Each repository gets at most one dispatch per `REFRESH_COOLDOWN_SECS`, 10 minutes by default,
+whichever path it comes through, so a batch of releases in a monorepo or both paths firing on the
+same release cost one run. A dispatch that fails answers `502`, is logged, and does not start the
+cooldown, so the next event tries again.
+
+The dispatch is made by a second GitHub App, private and installed only on this repository with
+`Actions: write`, so the public app never holds more than read access to anyone's repository. The
+API signs an app JWT with `DISPATCH_PRIVATE_KEY`, looks up the installation on
+`DISPATCH_REPOSITORY` once, and asks for an installation token scoped to that one repository and
+`actions: write`, which it reuses until 5 minutes before it expires. Without `DISPATCH_APP_ID` and
+`DISPATCH_PRIVATE_KEY` both endpoints answer `503`, and without `GITHUB_WEBHOOK_SECRET` the webhook
+does; startup logs a warning for each.
+
 ## Rollouts
 
 `GET /quiesce` answers `200` when the process is safe to stop and `409` when it is not, with the
@@ -192,6 +228,15 @@ requests are in flight.
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
 | `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
+| `GITHUB_WEBHOOK_SECRET` | unset | The GitHub App's webhook secret. Unset means `POST /webhooks/github` answers `503`. |
+| `OIDC_AUDIENCE` | `awesome-alternatives` | The audience a `POST /v1/refresh` token must carry. |
+| `OIDC_JWKS_URL` | GitHub's, `https://token.actions.githubusercontent.com/.well-known/jwks` | |
+| `REFRESH_COOLDOWN_SECS` | `600` | At most one dispatch per repository in this window. |
+| `DISPATCH_APP_ID` | unset | The dispatch app. Unset, or without `DISPATCH_PRIVATE_KEY`, means both refresh endpoints answer `503`. |
+| `DISPATCH_PRIVATE_KEY` | unset | The dispatch app's private key, PEM. |
+| `DISPATCH_REPOSITORY` | `awesome-alternatives/awesome-alternatives` | Where the refresh workflow lives. |
+| `DISPATCH_WORKFLOW` | `refresh-tools.yml` | |
+| `DISPATCH_REF` | `main` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
 | `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the in-process README and security caches together. |
 | `VALKEY_URL` | unset | A `rediss://` URL, password included. Unset means in-process caches only. |
