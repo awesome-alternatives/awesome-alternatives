@@ -64,3 +64,12 @@ export function categoryDescription(
     count,
   });
 }
+
+type Described = { slug: string; name: string; repo: { description: string | null } };
+
+export function toolDescription(tool: Described, tools: readonly Described[], fallback: string): string {
+  const description = tool.repo.description?.trim();
+  if (!description) return fallback;
+  const shared = tools.some((other) => other.slug !== tool.slug && other.repo.description?.trim() === description);
+  return shared ? `${tool.name}: ${description}` : description;
+}

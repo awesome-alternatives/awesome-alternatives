@@ -19,6 +19,7 @@ import { alternativesTo } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { historyUrl } from "../../../lib/freshness.ts";
 import { webHref } from "../../../lib/href.ts";
+import { toolDescription } from "../../../lib/intent.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { migrationPath } from "../../../lib/migrations.ts";
 import { breadcrumbList, softwareSourceCode } from "../../../lib/structuredData.ts";
@@ -76,7 +77,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
     language: repo.language ?? m.tool.titleFallbackLanguage,
     category: category?.name.toLowerCase() ?? tool.category,
   })}
-  description={repo.description ?? format(m.tool.descriptionFallback, { name: tool.name })}
+  description={toolDescription(tool, tools, format(m.tool.descriptionFallback, { name: tool.name }))}
   canonicalPath={canonicalForTool(tool.slug, replacedBy.length)}
   structuredData={[
     softwareSourceCode(tool, absolute(pathFor(locale, `/tools/${tool.slug}/`))),

@@ -11,6 +11,7 @@ import {
   lowerFirst,
   targetDescription,
   targetTitle,
+  toolDescription,
 } from "../src/lib/intent.ts";
 import type { Terms } from "../src/lib/types.ts";
 
@@ -59,4 +60,16 @@ test("an acronym keeps its capitals when a name moves inside a sentence", () => 
 
 test("an empty list is never called open source", () => {
   assert.equal(allOpen([]), false);
+});
+
+test("a tool whose repository description another tool shares is told apart by its name", () => {
+  const lxd = { slug: "lxd", name: "LXD", repo: { description: "System container manager" } };
+  const incus = { slug: "incus", name: "Incus", repo: { description: "System container manager " } };
+  const k9s = { slug: "k9s", name: "k9s", repo: { description: "Kubernetes CLI" } };
+  const bare = { slug: "bare", name: "Bare", repo: { description: null } };
+  const all = [lxd, incus, k9s, bare];
+  assert.equal(toolDescription(incus, all, "fallback"), "Incus: System container manager");
+  assert.equal(toolDescription(lxd, all, "fallback"), "LXD: System container manager");
+  assert.equal(toolDescription(k9s, all, "fallback"), "Kubernetes CLI");
+  assert.equal(toolDescription(bare, all, "fallback"), "fallback");
 });
