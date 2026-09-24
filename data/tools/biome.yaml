@@ -5,6 +5,8 @@ replaces:
   - tool: eslint
     fit: partial
     note: Covers a subset of ESLint and typescript-eslint rules.
+    migration: https://biomejs.dev/guides/migrate-eslint-prettier/
   - tool: prettier
     fit: full
     note: Its formatter targets Prettier-compatible output.
+    migration: https://biomejs.dev/guides/migrate-eslint-prettier/

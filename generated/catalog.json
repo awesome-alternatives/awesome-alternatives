@@ -2271,12 +2271,14 @@
         {
           "tool": "gatsby",
           "fit": "full",
-          "note": "Ships HTML without JavaScript by default and renders React, Vue or Svelte components only where needed."
+          "note": "Ships HTML without JavaScript by default and renders React, Vue or Svelte components only where needed.",
+          "migration": "https://docs.astro.build/en/guides/migrate-to-astro/from-gatsby/"
         },
         {
           "tool": "jekyll",
           "fit": "full",
-          "note": "Markdown and MDX content collections, built to static HTML."
+          "note": "Markdown and MDX content collections, built to static HTML.",
+          "migration": "https://docs.astro.build/en/guides/migrate-to-astro/from-jekyll/"
         },
         {
           "tool": "hexo",
@@ -2375,12 +2377,14 @@
         {
           "tool": "eslint",
           "fit": "partial",
-          "note": "Covers a subset of ESLint and typescript-eslint rules."
+          "note": "Covers a subset of ESLint and typescript-eslint rules.",
+          "migration": "https://biomejs.dev/guides/migrate-eslint-prettier/"
         },
         {
           "tool": "prettier",
           "fit": "full",
-          "note": "Its formatter targets Prettier-compatible output."
+          "note": "Its formatter targets Prettier-compatible output.",
+          "migration": "https://biomejs.dev/guides/migrate-eslint-prettier/"
         }
       ],
       "affiliation": null,
@@ -2472,12 +2476,14 @@
         {
           "tool": "1password",
           "fit": "full",
-          "note": "Use it with the Bitwarden apps and browser extensions, self-hosted."
+          "note": "Use it with the Bitwarden apps and browser extensions, self-hosted.",
+          "migration": "https://bitwarden.com/help/import-from-1password/"
         },
         {
           "tool": "lastpass",
           "fit": "full",
-          "note": "Use it with the Bitwarden apps and browser extensions, self-hosted."
+          "note": "Use it with the Bitwarden apps and browser extensions, self-hosted.",
+          "migration": "https://bitwarden.com/help/import-from-lastpass/"
         }
       ],
       "affiliation": null,
@@ -2662,7 +2668,8 @@
         {
           "tool": "postman",
           "fit": "full",
-          "note": "Collections stored as plain files in your repository, no account needed."
+          "note": "Collections stored as plain files in your repository, no account needed.",
+          "migration": "https://docs.usebruno.com/get-started/import-export-data/postman-migration"
         }
       ],
       "affiliation": null,
@@ -2846,7 +2853,8 @@
         {
           "tool": "npm",
           "fit": "full",
-          "note": "bun install reads package.json and writes its own lockfile."
+          "note": "bun install reads package.json and writes its own lockfile.",
+          "migration": "https://bun.com/guides/install/from-npm-install-to-bun-install"
         },
         {
           "tool": "ts-node",
@@ -6330,7 +6338,8 @@
         {
           "tool": "mongodb",
           "fit": "drop-in",
-          "note": "Speaks the MongoDB wire protocol on top of PostgreSQL."
+          "note": "Speaks the MongoDB wire protocol on top of PostgreSQL.",
+          "migration": "https://docs.ferretdb.io/migration/"
         }
       ],
       "affiliation": null,
@@ -7585,7 +7594,8 @@
         {
           "tool": "github",
           "fit": "full",
-          "note": "Pull requests, issues and Actions that run GitHub Actions workflows, on your own server."
+          "note": "Pull requests, issues and Actions that run GitHub Actions workflows, on your own server.",
+          "migration": "https://docs.gitea.com/usage/migration"
         },
         {
           "tool": "jenkins",
@@ -11697,7 +11707,8 @@
         {
           "tool": "moment",
           "fit": "full",
-          "note": "Immutable, with Intl-based time zones, from Moment's maintainers."
+          "note": "Immutable, with Intl-based time zones, from Moment's maintainers.",
+          "migration": "https://moment.github.io/luxon/#/moment"
         }
       ],
       "affiliation": null,
@@ -11749,7 +11760,8 @@
         {
           "tool": "google-analytics",
           "fit": "full",
-          "note": "Close to Google Analytics in scope, on your own server, with a plugin to import past Google Analytics data."
+          "note": "Close to Google Analytics in scope, on your own server, with a plugin to import past Google Analytics data.",
+          "migration": "https://matomo.org/guide/installation-maintenance/import-google-analytics/"
         }
       ],
       "affiliation": null,
@@ -11847,7 +11859,8 @@
         {
           "tool": "slack",
           "fit": "full",
-          "note": "Channels, threads and calls on your own server, with an importer for Slack exports."
+          "note": "Channels, threads and calls on your own server, with an importer for Slack exports.",
+          "migration": "https://docs.mattermost.com/administration-guide/onboard/migrate-from-slack"
         },
         {
           "tool": "microsoft-teams",
@@ -11947,7 +11960,8 @@
         {
           "tool": "algolia",
           "fit": "full",
-          "note": "Typo-tolerant instant search you can host yourself."
+          "note": "Typo-tolerant instant search you can host yourself.",
+          "migration": "https://www.meilisearch.com/docs/learn/update_and_migration/algolia_migration"
         }
       ],
       "affiliation": null,
@@ -12890,7 +12904,8 @@
         {
           "tool": "vim",
           "fit": "drop-in",
-          "note": "Reads most Vim configuration and plugins, adds Lua and a built-in LSP client."
+          "note": "Reads most Vim configuration and plugins, adds Lua and a built-in LSP client.",
+          "migration": "https://neovim.io/doc/user/nvim/#nvim-from-vim"
         }
       ],
       "affiliation": null,
@@ -14003,7 +14018,8 @@
         {
           "tool": "vault",
           "fit": "drop-in",
-          "note": "Fork of Vault 1.14 under MPL-2.0, same API."
+          "note": "Fork of Vault 1.14 under MPL-2.0, same API.",
+          "migration": "https://openbao.org/docs/guides/migration/"
         }
       ],
       "affiliation": null,
@@ -14549,7 +14565,8 @@
         {
           "tool": "terraform",
           "fit": "drop-in",
-          "note": "Fork of Terraform 1.5, reads the same configuration and state."
+          "note": "Fork of Terraform 1.5, reads the same configuration and state.",
+          "migration": "https://opentofu.org/docs/intro/migration/"
         },
         {
           "tool": "aws-cloudformation",
@@ -14636,7 +14653,8 @@
         {
           "tool": "eslint",
           "fit": "partial",
-          "note": "oxlint implements a large share of ESLint rules, without custom JavaScript plugins."
+          "note": "oxlint implements a large share of ESLint rules, without custom JavaScript plugins.",
+          "migration": "https://oxc.rs/docs/guide/usage/linter/migrate-from-eslint"
         }
       ],
       "affiliation": null,
@@ -15068,7 +15086,8 @@
         {
           "tool": "akka",
           "fit": "full",
-          "note": "Fork of Akka 2.6 under Apache-2.0, with packages renamed to org.apache.pekko."
+          "note": "Fork of Akka 2.6 under Apache-2.0, with packages renamed to org.apache.pekko.",
+          "migration": "https://pekko.apache.org/docs/pekko/current/project/migration-guides.html"
         }
       ],
       "affiliation": null,
@@ -15430,7 +15449,8 @@
         {
           "tool": "google-analytics",
           "fit": "partial",
-          "note": "Page views, sources and goals without cookies, and no reports on individual visitors."
+          "note": "Page views, sources and goals without cookies, and no reports on individual visitors.",
+          "migration": "https://plausible.io/docs/google-analytics-import"
         }
       ],
       "affiliation": null,
@@ -15538,7 +15558,8 @@
         {
           "tool": "puppeteer",
           "fit": "full",
-          "note": "The same style of browser automation, across Chromium, Firefox and WebKit."
+          "note": "The same style of browser automation, across Chromium, Firefox and WebKit.",
+          "migration": "https://playwright.dev/docs/puppeteer"
         },
         {
           "tool": "cypress",
@@ -15641,7 +15662,8 @@
         {
           "tool": "npm",
           "fit": "full",
-          "note": "Same package.json, a content-addressed store and its own lockfile."
+          "note": "Same package.json, a content-addressed store and its own lockfile.",
+          "migration": "https://pnpm.io/cli/import"
         }
       ],
       "affiliation": null,
@@ -15820,7 +15842,8 @@
         {
           "tool": "docker-desktop",
           "fit": "full",
-          "note": "Containers, images, pods and a local Kubernetes through Podman, with Docker API compatibility."
+          "note": "Containers, images, pods and a local Kubernetes through Podman, with Docker API compatibility.",
+          "migration": "https://podman-desktop.io/docs/migrating-from-docker"
         }
       ],
       "affiliation": null,
@@ -16461,7 +16484,8 @@
         {
           "tool": "terraform",
           "fit": "full",
-          "note": "Infrastructure in general-purpose languages instead of HCL."
+          "note": "Infrastructure in general-purpose languages instead of HCL.",
+          "migration": "https://www.pulumi.com/docs/iac/adopting-pulumi/migrating-to-pulumi/from-terraform/"
         },
         {
           "tool": "aws-cloudformation",
@@ -17032,7 +17056,8 @@
         {
           "tool": "influxdb",
           "fit": "full",
-          "note": "Ingests the InfluxDB line protocol and is queried with SQL."
+          "note": "Ingests the InfluxDB line protocol and is queried with SQL.",
+          "migration": "https://questdb.com/docs/guides/influxdb-migration/"
         }
       ],
       "affiliation": null,
@@ -18134,7 +18159,8 @@
         {
           "tool": "webpack",
           "fit": "drop-in",
-          "note": "Accepts webpack configuration and most of its loaders and plugins."
+          "note": "Accepts webpack configuration and most of its loaders and plugins.",
+          "migration": "https://rspack.rs/guide/migration/webpack"
         }
       ],
       "affiliation": null,
@@ -20534,7 +20560,8 @@
         {
           "tool": "algolia",
           "fit": "full",
-          "note": "Typo-tolerant instant search you can host yourself."
+          "note": "Typo-tolerant instant search you can host yourself.",
+          "migration": "https://typesense.org/docs/guide/migrating-from-algolia.html"
         }
       ],
       "affiliation": null,
@@ -20938,7 +20965,8 @@
         {
           "tool": "pip",
           "fit": "full",
-          "note": "uv pip mirrors pip's commands and options."
+          "note": "uv pip mirrors pip's commands and options.",
+          "migration": "https://docs.astral.sh/uv/guides/migration/pip-to-project/"
         },
         {
           "tool": "poetry",
@@ -21045,7 +21073,8 @@
         {
           "tool": "redis",
           "fit": "drop-in",
-          "note": "Fork of Redis 7.2.4, same protocol and commands."
+          "note": "Fork of Redis 7.2.4, same protocol and commands.",
+          "migration": "https://valkey.io/topics/migration/"
         },
         {
           "tool": "memcached",
@@ -21766,7 +21795,8 @@
         {
           "tool": "jest",
           "fit": "full",
-          "note": "Jest-compatible API, running on Vite's transform pipeline."
+          "note": "Jest-compatible API, running on Vite's transform pipeline.",
+          "migration": "https://vitest.dev/guide/migration/jest"
         },
         {
           "tool": "mocha",
@@ -22590,7 +22620,8 @@
         {
           "tool": "vscode",
           "fit": "full",
-          "note": "Native editor with multiplayer editing built in."
+          "note": "Native editor with multiplayer editing built in.",
+          "migration": "https://zed.dev/docs/migrate/vs-code"
         },
         {
           "tool": "cursor",
@@ -22959,7 +22990,8 @@
         {
           "tool": "slack",
           "fit": "full",
-          "note": "Conversations split into topics inside each channel, with an importer for Slack exports."
+          "note": "Conversations split into topics inside each channel, with an importer for Slack exports.",
+          "migration": "https://zulip.com/help/import-from-slack"
         }
       ],
       "affiliation": null,

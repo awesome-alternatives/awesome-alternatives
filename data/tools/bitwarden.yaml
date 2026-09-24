@@ -6,6 +6,8 @@ replaces:
   - tool: 1password
     fit: full
     note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+    migration: https://bitwarden.com/help/import-from-1password/
   - tool: lastpass
     fit: full
     note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+    migration: https://bitwarden.com/help/import-from-lastpass/

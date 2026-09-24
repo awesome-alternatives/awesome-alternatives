@@ -4,7 +4,7 @@ import { basename } from "node:path";
 import { loadCatalog } from "./lib/catalog.ts";
 import { gather, mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
-import { checkHomepage } from "./lib/homepage.ts";
+import { checkHomepage, checkMigrations } from "./lib/links.ts";
 import { renderFindings } from "./lib/report.ts";
 import { judge, replacedSlugs } from "./lib/rules.ts";
 
@@ -28,7 +28,12 @@ const homepages = await mapLimit(
   4,
   (product) => checkHomepage(product),
 );
-const all = [...findings, ...remote.flat(), ...homepages.flat()];
+const migrations = await mapLimit(
+  catalog.tools.filter((t) => targets.includes(t.slug)),
+  4,
+  (tool) => checkMigrations(tool),
+);
+const all = [...findings, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
 
 const report = renderFindings(all, targets);
 console.log(report);

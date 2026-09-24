@@ -5,3 +5,4 @@ replaces:
   - tool: mongodb
     fit: drop-in
     note: Speaks the MongoDB wire protocol on top of PostgreSQL.
+    migration: https://docs.ferretdb.io/migration/

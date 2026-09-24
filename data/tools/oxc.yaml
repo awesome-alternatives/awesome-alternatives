@@ -5,3 +5,4 @@ replaces:
   - tool: eslint
     fit: partial
     note: oxlint implements a large share of ESLint rules, without custom JavaScript plugins.
+    migration: https://oxc.rs/docs/guide/usage/linter/migrate-from-eslint

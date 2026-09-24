@@ -5,3 +5,4 @@ replaces:
   - tool: npm
     fit: full
     note: Same package.json, a content-addressed store and its own lockfile.
+    migration: https://pnpm.io/cli/import

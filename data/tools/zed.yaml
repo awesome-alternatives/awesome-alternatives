@@ -5,6 +5,7 @@ replaces:
   - tool: vscode
     fit: full
     note: Native editor with multiplayer editing built in.
+    migration: https://zed.dev/docs/migrate/vs-code
   - tool: cursor
     fit: partial
     note: An editor with its own agent and edit predictions, with the model of your choice.

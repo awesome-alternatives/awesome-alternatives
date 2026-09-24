@@ -18,6 +18,7 @@ pub fn tool(
                 tool: (*tool).into(),
                 fit: *fit,
                 note: None,
+                migration: None,
             })
             .collect(),
         affiliation: None,

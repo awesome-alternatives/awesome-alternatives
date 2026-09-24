@@ -38,6 +38,11 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 200
+          },
+          "migration": {
+            "type": "string",
+            "pattern": "^https://\\S+$",
+            "maxLength": 300
           }
         }
       }

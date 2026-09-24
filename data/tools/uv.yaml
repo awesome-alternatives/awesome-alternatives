@@ -5,6 +5,7 @@ replaces:
   - tool: pip
     fit: full
     note: "uv pip mirrors pip's commands and options."
+    migration: https://docs.astral.sh/uv/guides/migration/pip-to-project/
   - tool: poetry
     fit: full
     note: Project management with a uv.lock lockfile.

@@ -60,6 +60,11 @@ export function ToolCard({ locale, strings, tool, target, targetName, comparable
       </header>
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
+      {replacement?.migration && (
+        <p className="migration-link">
+          <a href={replacement.migration}>{card.migration}</a>
+        </p>
+      )}
       <dl className="facts">
         {replaces && replaces.length > 0 && (
           <Fact

@@ -5,3 +5,4 @@ replaces:
   - tool: moment
     fit: full
     note: "Immutable, with Intl-based time zones, from Moment's maintainers."
+    migration: https://moment.github.io/luxon/#/moment

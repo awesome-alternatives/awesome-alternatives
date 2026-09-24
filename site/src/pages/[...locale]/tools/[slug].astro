@@ -45,7 +45,13 @@ const related = tools
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
-const replaces = tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool), fit: r.fit, note: r.note ?? null }));
+const replaces = tool.replaces.map((r) => ({
+  slug: r.tool,
+  name: nameOf(r.tool),
+  fit: r.fit,
+  note: r.note ?? null,
+  migration: r.migration ?? null,
+}));
 const login = loginOf(repo.fullName);
 const comparable = pairForTool(pairs, tool.slug);
 const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.b : comparable.a);

@@ -5,6 +5,7 @@ replaces:
   - tool: terraform
     fit: full
     note: Infrastructure in general-purpose languages instead of HCL.
+    migration: https://www.pulumi.com/docs/iac/adopting-pulumi/migrating-to-pulumi/from-terraform/
   - tool: aws-cloudformation
     fit: full
     note: "Infrastructure as code in TypeScript, Python, Go or C#, for AWS and other clouds."

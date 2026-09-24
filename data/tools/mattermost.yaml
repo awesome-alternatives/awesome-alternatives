@@ -5,6 +5,7 @@ replaces:
   - tool: slack
     fit: full
     note: Channels, threads and calls on your own server, with an importer for Slack exports.
+    migration: https://docs.mattermost.com/administration-guide/onboard/migrate-from-slack
   - tool: microsoft-teams
     fit: partial
     note: Chat and calls on your own server, without the Microsoft 365 integration.

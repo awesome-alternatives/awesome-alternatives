@@ -5,3 +5,4 @@ replaces:
   - tool: docker-desktop
     fit: full
     note: Containers, images, pods and a local Kubernetes through Podman, with Docker API compatibility.
+    migration: https://podman-desktop.io/docs/migrating-from-docker

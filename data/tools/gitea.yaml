@@ -8,6 +8,7 @@ replaces:
   - tool: github
     fit: full
     note: Pull requests, issues and Actions that run GitHub Actions workflows, on your own server.
+    migration: https://docs.gitea.com/usage/migration
   - tool: jenkins
     fit: partial
     note: Gitea Actions runs GitHub Actions-style workflows inside the forge.

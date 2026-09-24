@@ -8,6 +8,7 @@ replaces:
   - tool: npm
     fit: full
     note: bun install reads package.json and writes its own lockfile.
+    migration: https://bun.com/guides/install/from-npm-install-to-bun-install
   - tool: ts-node
     fit: full
     note: Runs TypeScript files directly, with no separate compile step.

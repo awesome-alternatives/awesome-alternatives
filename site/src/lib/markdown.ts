@@ -53,6 +53,7 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
       out.push(
         `- ${around.nameOf(replacement.tool)} (${replacement.fit}):${note || " no note"} ${SITE}/alternatives/${replacement.tool}/`,
       );
+      if (replacement.migration) out.push(`  - Official migration guide: ${replacement.migration}`);
     }
     out.push("");
   }

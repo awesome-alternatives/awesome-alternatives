@@ -24,6 +24,9 @@ replaces:
 - `fit` is `drop-in` when the tool accepts the original's configuration or interface unchanged,
   `full` when it covers the same job in its own way, `partial` when it covers part of it. Use
   `note` to say which part.
+- `migration` is optional, on a `replaces` item: a link to the replacing project's own guide for moving
+  off that tool. Only an official page counts, not a blog post or a third-party tutorial. CI fails the
+  entry if the link does not answer.
 - `affiliation` is required if you maintain, work on, or are paid by the tool. Listing your own
   project is welcome; not saying so is grounds for removal.
 - `terms` says what the licence lets people do, and is usually left out. When GitHub detects an
