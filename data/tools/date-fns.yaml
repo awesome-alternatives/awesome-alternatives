@@ -1,6 +1,7 @@
 name: date-fns
 repository: https://github.com/date-fns/date-fns
 category: javascript-date-library
+terms: open
 replaces:
   - tool: moment
     fit: full
