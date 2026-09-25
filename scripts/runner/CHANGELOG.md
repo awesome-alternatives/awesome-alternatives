@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.0] - 2026-09-25
+
+### Features
+
+- feat: show a project's age, release cadence, active contributors and platforms (#234)
+
 ## [0.3.0] - 2026-09-25
 
 ### Features

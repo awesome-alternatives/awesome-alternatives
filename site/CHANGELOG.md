@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.77.0] - 2026-09-25
+
+### Features
+
+- feat: show a project's age, release cadence, active contributors and platforms (#234)
+
 ## [0.76.1] - 2026-09-25
 
 ### Bug Fixes
