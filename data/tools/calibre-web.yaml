@@ -1,0 +1,11 @@
+name: Calibre-Web
+repository: https://github.com/janeczku/calibre-web
+category: book-server
+replaces:
+  - tool: google-play-books
+    fit: partial
+    note: Browse and read a Calibre library of your own ebooks in the browser and OPDS apps, with no store.
+  - tool: amazon-kindle
+    fit: partial
+    note: The cloud library for your own DRM-free books, synced to Kobo devices or sent to a Kindle by email, not the store.
+deploy: [package]
