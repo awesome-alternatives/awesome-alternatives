@@ -1,0 +1,9 @@
+name: Flipt
+repository: https://github.com/flipt-io/flipt
+category: feature-flags
+terms: source-available
+replaces:
+  - tool: launchdarkly
+    fit: partial
+    note: Feature flags and segments with their state kept in git; no experimentation.
+deploy: [container, helm, binary]

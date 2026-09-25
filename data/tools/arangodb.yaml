@@ -1,0 +1,9 @@
+name: ArangoDB
+repository: https://github.com/arangodb/arangodb
+category: document-database
+terms: source-available
+replaces:
+  - tool: mongodb
+    fit: partial
+    note: Documents, graphs and search queried in AQL, not through the MongoDB protocol.
+deploy: [container]

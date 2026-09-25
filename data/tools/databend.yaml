@@ -1,0 +1,9 @@
+name: Databend
+repository: https://github.com/databendlabs/databend
+category: analytical-database
+terms: open-core
+replaces:
+  - tool: snowflake
+    fit: full
+    note: A warehouse on object storage with compute separated from storage, on your own servers.
+deploy: [container, helm, binary, package]

@@ -1,0 +1,8 @@
+name: Dex
+repository: https://github.com/dexidp/dex
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: Federates LDAP, SAML, GitHub and other connectors into OpenID Connect, without user management of its own.
+deploy: [container, helm]

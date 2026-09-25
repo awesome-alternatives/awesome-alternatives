@@ -1,0 +1,5 @@
+name: SendGrid
+homepage: https://www.twilio.com/en-us/sendgrid
+vendor: Twilio
+category: mail-server
+description: Hosted email delivery service for transactional and marketing mail, over SMTP and an HTTP API.

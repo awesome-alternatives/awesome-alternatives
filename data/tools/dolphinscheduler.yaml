@@ -1,0 +1,8 @@
+name: Apache DolphinScheduler
+repository: https://github.com/apache/dolphinscheduler
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: full
+    note: Workflows drawn in a web UI or written with a Python SDK, with multi-tenant scheduling.
+deploy: [container, compose, helm]

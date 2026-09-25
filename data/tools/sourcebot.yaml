@@ -1,0 +1,9 @@
+name: Sourcebot
+repository: https://github.com/sourcebot-dev/sourcebot
+category: code-search-server
+terms: source-available
+replaces:
+  - tool: sourcegraph
+    fit: partial
+    note: Zoekt-based search across repositories from many code hosts, without batch changes or code insights.
+deploy: [container, compose, helm]

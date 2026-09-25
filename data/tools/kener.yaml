@@ -1,0 +1,8 @@
+name: Kener
+repository: https://github.com/rajnandan1/kener
+category: uptime-monitoring
+replaces:
+  - tool: statuspage
+    fit: full
+    note: Status pages with incidents and maintenance windows, fed by its own monitors.
+deploy: [container, compose]

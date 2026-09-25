@@ -1,0 +1,7 @@
+name: Luigi
+repository: https://github.com/spotify/luigi
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: partial
+    note: Pipelines of Python tasks with dependencies, started by cron rather than a scheduler of its own.

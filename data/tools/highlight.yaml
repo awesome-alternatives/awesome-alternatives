@@ -1,0 +1,9 @@
+name: Highlight
+repository: https://github.com/highlight/highlight
+category: error-tracking
+terms: open-core
+replaces:
+  - tool: sentry
+    fit: full
+    note: Errors with session replay, logs and traces in one app, through its own SDKs.
+deploy: [container, compose]

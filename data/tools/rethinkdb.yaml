@@ -1,0 +1,9 @@
+name: RethinkDB
+repository: https://github.com/rethinkdb/rethinkdb
+category: document-database
+terms: open
+replaces:
+  - tool: mongodb
+    fit: partial
+    note: JSON documents queried in ReQL, with changefeeds that push query results as they change.
+deploy: [container]

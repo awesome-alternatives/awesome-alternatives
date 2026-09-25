@@ -1,0 +1,4 @@
+name: NSQ
+repository: https://github.com/nsqio/nsq
+category: message-streaming
+deploy: [container, binary]

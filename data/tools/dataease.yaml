@@ -1,0 +1,8 @@
+name: DataEase
+repository: https://github.com/dataease/dataease
+category: business-intelligence
+replaces:
+  - tool: tableau
+    fit: partial
+    note: Drag-and-drop charts and dashboards over databases and files.
+deploy: [container, compose]

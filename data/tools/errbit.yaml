@@ -1,0 +1,8 @@
+name: Errbit
+repository: https://github.com/errbit/errbit
+category: error-tracking
+replaces:
+  - tool: airbrake
+    fit: drop-in
+    note: Implements the Airbrake API, so the Airbrake notifier libraries only need to point at your server.
+deploy: [container]

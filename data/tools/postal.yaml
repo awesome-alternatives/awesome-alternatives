@@ -1,0 +1,8 @@
+name: Postal
+repository: https://github.com/postalserver/postal
+category: mail-server
+replaces:
+  - tool: sendgrid
+    fit: full
+    note: Sends and receives mail over SMTP and an HTTP API, with delivery tracking and webhooks.
+deploy: [container]

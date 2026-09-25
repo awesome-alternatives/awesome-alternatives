@@ -1,0 +1,9 @@
+name: Netmaker
+repository: https://github.com/gravitl/netmaker
+category: mesh-vpn
+terms: open-core
+replaces:
+  - tool: tailscale
+    fit: full
+    note: WireGuard mesh with its own clients, a management server and access controls.
+deploy: [container, compose, helm, binary]

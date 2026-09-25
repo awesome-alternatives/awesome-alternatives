@@ -1,0 +1,8 @@
+name: Logto
+repository: https://github.com/logto-io/logto
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: full
+    note: Sign-in pages, social and enterprise SSO, MFA and organizations over OpenID Connect.
+deploy: [container, compose]

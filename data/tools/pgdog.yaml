@@ -1,0 +1,8 @@
+name: PgDog
+repository: https://github.com/pgdogdev/pgdog
+category: distributed-sql
+replaces:
+  - tool: citus
+    fit: partial
+    note: Shards ordinary PostgreSQL servers from a proxy, with connection pooling and load balancing, instead of an extension.
+deploy: [container, helm, binary, package]

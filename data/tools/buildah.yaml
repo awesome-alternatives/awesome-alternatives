@@ -1,0 +1,7 @@
+name: Buildah
+repository: https://github.com/podman-container-tools/buildah
+category: container-engine
+replaces:
+  - tool: docker
+    fit: partial
+    note: Builds OCI images from Dockerfiles or shell scripts without a daemon; running them is left to Podman.

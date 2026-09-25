@@ -1,0 +1,8 @@
+name: Dolt
+repository: https://github.com/dolthub/dolt
+category: relational-database
+replaces:
+  - tool: mysql
+    fit: full
+    note: Speaks the MySQL protocol and adds git-style branches, merges and diffs of the data.
+deploy: [container, binary, package]

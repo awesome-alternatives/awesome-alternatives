@@ -1,0 +1,8 @@
+name: rqlite
+repository: https://github.com/rqlite/rqlite
+category: relational-database
+replaces:
+  - tool: sqlite
+    fit: partial
+    note: SQLite replicated across nodes with Raft, reached over an HTTP API rather than in process.
+deploy: [container, helm, binary, package]

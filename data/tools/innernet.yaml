@@ -1,0 +1,8 @@
+name: innernet
+repository: https://github.com/tonarino/innernet
+category: mesh-vpn
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: WireGuard mesh organised in CIDR groups, run from a command line, with no web UI or SSO.
+deploy: [package]

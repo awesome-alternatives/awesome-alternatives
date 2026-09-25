@@ -1,0 +1,5 @@
+name: Airbrake
+homepage: https://airbrake.io
+vendor: LogicMonitor
+category: error-tracking
+description: Hosted error and performance monitoring that collects exceptions from notifier libraries.
