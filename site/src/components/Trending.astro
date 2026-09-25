@@ -34,6 +34,7 @@ const ranked = trending(tools).map(({ tool, trend }) => ({
               strings={m.islands}
               tool={item.tool}
               boost={item.boost}
+              starHistory={item.tool.starHistory}
               replaces={item.replaces}
             />
           ))}
