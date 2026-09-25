@@ -1,0 +1,8 @@
+name: Papra
+repository: https://github.com/papra-hq/papra
+category: document-management
+replaces:
+  - tool: paperless-ngx
+    fit: full
+    note: A simpler archive shared per organisation, with tags, tagging rules and ingestion from email or a watched folder.
+deploy: [container, compose]

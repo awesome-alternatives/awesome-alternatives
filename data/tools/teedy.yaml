@@ -1,0 +1,11 @@
+name: Teedy
+repository: https://github.com/sismics/docs
+category: document-management
+replaces:
+  - tool: paperless-ngx
+    fit: full
+    note: Nested tags, Dublin Core metadata, approval workflows, file versioning and encrypted storage, without automatic tag matching.
+  - tool: docuware
+    fit: partial
+    note: Permissions, approval workflows, file versioning and an audit log for a team archive, without invoice processing or ERP integrations.
+deploy: [container, compose]
