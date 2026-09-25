@@ -1,0 +1,4 @@
+name: Restreamer
+repository: https://github.com/datarhei/restreamer
+category: video-hosting
+deploy: [container]

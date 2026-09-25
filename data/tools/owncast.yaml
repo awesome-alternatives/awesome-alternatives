@@ -1,0 +1,8 @@
+name: Owncast
+repository: https://github.com/owncast/owncast
+category: video-hosting
+replaces:
+  - tool: twitch
+    fit: partial
+    note: One live channel with its own chat, without uploaded videos or a directory of other streamers.
+deploy: [container, compose, binary]

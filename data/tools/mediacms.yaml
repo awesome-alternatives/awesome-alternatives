@@ -1,0 +1,11 @@
+name: MediaCMS
+repository: https://github.com/mediacms-io/mediacms
+category: video-hosting
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Uploaded videos with playlists, comments and embeds, without live streaming.
+  - tool: vimeo
+    fit: partial
+    note: Public, unlisted and private videos with an embeddable player, without live streaming.
+deploy: [container, compose]

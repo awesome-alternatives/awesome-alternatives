@@ -370,6 +370,11 @@ media-server:
   description: Stream a personal library of films, series and music to your devices.
   selfHost: true
 
+video-hosting:
+  name: Video hosting and streaming
+  description: Publish videos and live streams on your own site for an audience to watch.
+  selfHost: true
+
 business-intelligence:
   name: Business intelligence
   description: Query databases and build charts and dashboards for the rest of the company.
