@@ -12,14 +12,12 @@ esac
 
 : "${APP_ID:?APP_ID is required}"
 : "${APP_PRIVATE_KEY:?APP_PRIVATE_KEY is required}"
-: "${PUSH_APP_ID:?PUSH_APP_ID is required}"
-: "${PUSH_APP_PRIVATE_KEY:?PUSH_APP_PRIVATE_KEY is required}"
 repository=${REPOSITORY:-awesome-alternatives/awesome-alternatives}
 workdir=${WORK_DIR:-/work}
 app=$(cd "$(dirname "$0")/../.." && pwd)
 record_failed=75
 
-GITHUB_TOKEN=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts")
+GITHUB_TOKEN=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts" read)
 export GITHUB_TOKEN
 
 checkout="$workdir/repository"
@@ -29,11 +27,11 @@ git clone --quiet "https://github.com/$repository.git" "$checkout"
 cd "$checkout"
 
 if [ "$command" = backfill ]; then
-  exec env -u PUSH_APP_ID -u PUSH_APP_PRIVATE_KEY -u APP_PRIVATE_KEY node "$app/scripts/backfill-facts.ts"
+  exec env -u APP_PRIVATE_KEY node "$app/scripts/backfill-facts.ts"
 fi
 
 status=0
-env -u PUSH_APP_ID -u PUSH_APP_PRIVATE_KEY node "$app/scripts/refresh.ts" || status=$?
+node "$app/scripts/refresh.ts" || status=$?
 if [ "$status" -ne 0 ] && [ "$status" -ne "$record_failed" ]; then
   exit "$status"
 fi
@@ -41,7 +39,7 @@ fi
 mkdir -p "$refreshed/generated"
 cp generated/catalog.json "$refreshed/generated/"
 cp README.md "$refreshed/"
-push_token=$(REPOSITORY="$repository" APP_ID="$PUSH_APP_ID" APP_PRIVATE_KEY="$PUSH_APP_PRIVATE_KEY" node "$app/scripts/runner/token.ts")
+push_token=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts" write)
 GIT_CONFIG_COUNT=1 \
   GIT_CONFIG_KEY_0="http.https://github.com/.extraheader" \
   GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$push_token" | base64 -w0)" \

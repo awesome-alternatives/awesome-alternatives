@@ -86,10 +86,13 @@ function field(value: unknown, key: string): unknown {
   return typeof value === "object" && value !== null ? Reflect.get(value, key) : undefined;
 }
 
+export type ContentsAccess = "read" | "write";
+
 export async function installationToken(
   appId: string,
   privateKey: string,
   repository: string,
+  contents: ContentsAccess,
   fetchImpl: typeof fetch = fetch,
   now: Date = new Date(),
 ): Promise<string> {
@@ -99,7 +102,7 @@ export async function installationToken(
   const id = field(await appRequest(fetchImpl, jwt, `/repos/${owner}/${name}/installation`), "id");
   if (typeof id !== "number") throw new Error(`GitHub returned no installation id for ${repository}`);
   const path = `/app/installations/${id}/access_tokens`;
-  const token = field(await appRequest(fetchImpl, jwt, path, { repositories: [name] }), "token");
+  const token = field(await appRequest(fetchImpl, jwt, path, { repositories: [name], permissions: { contents, metadata: "read" } }), "token");
   if (typeof token !== "string") throw new Error(`GitHub returned no token on ${path}`);
   return token;
 }
