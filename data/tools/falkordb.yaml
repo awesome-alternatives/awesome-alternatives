@@ -1,0 +1,10 @@
+name: FalkorDB
+repository: https://github.com/FalkorDB/FalkorDB
+category: graph-database
+terms: source-available
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Runs a subset of OpenCypher through the Redis protocol and its own clients, not over Bolt, so Neo4j drivers and procedures do not carry over.
+    migration: https://docs.falkordb.com/operations/migration/neo4j-to-falkordb
+deploy: [container, helm]

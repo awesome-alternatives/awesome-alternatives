@@ -1,0 +1,5 @@
+name: Amazon Neptune
+homepage: https://aws.amazon.com/neptune/
+vendor: Amazon Web Services
+category: graph-database
+description: Managed graph database service from AWS, queried in Gremlin, openCypher or SPARQL.

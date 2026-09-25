@@ -1,0 +1,5 @@
+name: Azure Cosmos DB for Apache Gremlin
+homepage: https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/
+vendor: Microsoft
+category: graph-database
+description: Managed graph database API of Azure Cosmos DB, queried in Gremlin.

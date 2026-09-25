@@ -1,0 +1,5 @@
+name: TigerGraph
+homepage: https://www.tigergraph.com/
+vendor: TigerGraph
+category: graph-database
+description: Closed-source distributed graph database queried in GSQL, offered as a managed cloud service and as licensed software.

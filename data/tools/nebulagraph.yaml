@@ -1,0 +1,12 @@
+name: NebulaGraph
+repository: https://github.com/vesoft-inc/nebula
+category: graph-database
+replaces:
+  - tool: tigergraph
+    fit: partial
+    note: A distributed graph queried in nGQL, which accepts part of openCypher; GSQL queries need rewriting.
+  - tool: neo4j
+    fit: partial
+    note: Queried in nGQL rather than full Cypher and without Bolt, so Neo4j drivers do not connect.
+    migration: https://docs.nebula-graph.io/3.8.0/import-export/nebula-exchange/use-exchange/ex-ug-import-from-neo4j/
+deploy: [container, compose, package, binary]
