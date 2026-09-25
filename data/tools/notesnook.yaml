@@ -1,0 +1,8 @@
+name: Notesnook
+repository: https://github.com/streetwriters/notesnook
+category: note-taking
+replaces:
+  - tool: evernote
+    fit: full
+    note: End-to-end encrypted notes on desktop, mobile and web, with a sync server you can host.
+    migration: https://help.notesnook.com/importing-notes/import-notes-from-evernote

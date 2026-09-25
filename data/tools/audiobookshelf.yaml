@@ -1,0 +1,4 @@
+name: Audiobookshelf
+repository: https://github.com/advplyr/audiobookshelf
+category: media-server
+deploy: [container, compose]

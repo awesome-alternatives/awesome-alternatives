@@ -1,0 +1,7 @@
+name: CryptPad
+repository: https://github.com/cryptpad/cryptpad
+category: office-suite
+replaces:
+  - tool: google-docs
+    fit: full
+    note: End-to-end encrypted documents, spreadsheets, presentations and forms, edited together in the browser.

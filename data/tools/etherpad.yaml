@@ -1,0 +1,7 @@
+name: Etherpad
+repository: https://github.com/ether/etherpad
+category: office-suite
+replaces:
+  - tool: google-docs
+    fit: partial
+    note: Real-time collaborative text editing only, without spreadsheets or slides.

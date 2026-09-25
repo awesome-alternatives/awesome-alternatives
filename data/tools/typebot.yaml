@@ -1,0 +1,9 @@
+name: Typebot
+repository: https://github.com/baptisteArno/typebot.io
+category: forms-surveys
+terms: source-available
+replaces:
+  - tool: typeform
+    fit: partial
+    note: Conversational, chat-style forms with logic and integrations.
+deploy: [container, compose]

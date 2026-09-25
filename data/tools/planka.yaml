@@ -1,0 +1,9 @@
+name: PLANKA
+repository: https://github.com/plankanban/planka
+category: project-management
+terms: source-available
+replaces:
+  - tool: trello
+    fit: full
+    note: Real-time kanban boards with lists, cards, labels and notifications.
+deploy: [container, compose, helm]

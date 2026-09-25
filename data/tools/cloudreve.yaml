@@ -1,0 +1,11 @@
+name: Cloudreve
+repository: https://github.com/cloudreve/cloudreve
+category: file-sync
+replaces:
+  - tool: dropbox
+    fit: partial
+    note: Web file manager with share links, WebDAV and a desktop sync client, over local or S3-compatible storage.
+  - tool: google-drive
+    fit: partial
+    note: File storage and sharing, without the office editors.
+deploy: [container, compose, binary]

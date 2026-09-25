@@ -1,0 +1,8 @@
+name: Zigbee2MQTT
+repository: https://github.com/Koenkk/zigbee2mqtt
+category: home-automation
+replaces:
+  - tool: smartthings
+    fit: partial
+    note: Controls Zigbee devices locally without a vendor hub; automations come from Home Assistant or another controller.
+deploy: [container, compose, helm]

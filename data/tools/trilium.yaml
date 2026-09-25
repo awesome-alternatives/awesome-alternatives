@@ -1,0 +1,7 @@
+name: Trilium Notes
+repository: https://github.com/TriliumNext/Trilium
+category: note-taking
+replaces:
+  - tool: evernote
+    fit: full
+    note: Hierarchical notes with a web clipper and Evernote import, synced through a server you host.

@@ -1,0 +1,8 @@
+name: Sunshine
+repository: https://github.com/LizardByte/Sunshine
+category: remote-desktop
+replaces:
+  - tool: parsec
+    fit: partial
+    note: Low-latency desktop and game streaming host for Moonlight clients, with no account or relay service.
+deploy: [container, package]

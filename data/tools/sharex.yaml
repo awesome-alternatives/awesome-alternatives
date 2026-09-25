@@ -1,0 +1,10 @@
+name: ShareX
+repository: https://github.com/ShareX/ShareX
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: full
+    note: Screenshots, screen recording, annotation and upload, on Windows.
+  - tool: loom
+    fit: partial
+    note: Records the screen on Windows and uploads to a host you choose, without viewer pages or comments.

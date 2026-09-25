@@ -1,0 +1,7 @@
+name: Screenity
+repository: https://github.com/alyssaxuu/screenity
+category: screen-recording
+replaces:
+  - tool: loom
+    fit: partial
+    note: Records the screen and camera from a Chrome extension and exports the video, without hosted share links.
