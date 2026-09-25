@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.68.1] - 2026-09-25
+
+### Bug Fixes
+
+- fix(site): describe the nightly refresh without reading the Actions schedule
+
 ## [0.68.0] - 2026-09-25
 
 ### Features
