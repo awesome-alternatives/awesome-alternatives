@@ -1,0 +1,8 @@
+name: KitchenOwl
+repository: https://github.com/TomBursch/kitchenowl
+category: recipe-manager
+replaces:
+  - tool: anylist
+    fit: full
+    note: Shared shopping lists synced in real time, with recipes and meal plans, in native mobile and desktop apps.
+deploy: [container, compose]
