@@ -2,8 +2,9 @@
 import type { Locale } from "../i18n/index.ts";
 import { messages, pathFor } from "../i18n/index.ts";
 import { fitFor } from "../lib/filter.ts";
-import { day } from "../lib/format.ts";
+import { day, stars } from "../lib/format.ts";
 import type { ToolView } from "../lib/types.ts";
+import { Sparkline } from "./Sparkline.tsx";
 
 interface Props {
   locale: Locale;
@@ -26,6 +27,7 @@ const hosted = new Set(selfHostCategories);
       <tr>
         <th scope="col">{m.target.toolColumn}</th>
         {target && <th scope="col">{m.islands.facets.fit}</th>}
+        <th scope="col">{card.factStars}</th>
         <th scope="col">{card.factLicense}</th>
         <th scope="col">{m.tool.terms}</th>
         <th scope="col">{m.tool.selfHost}</th>
@@ -44,6 +46,10 @@ const hosted = new Set(selfHostCategories);
                 <a href={pathFor(locale, `/tools/${tool.slug}/`)}>{tool.name}</a>
               </th>
               {target && <td>{fit ? <a href={pathFor(locale, `/about/#${fit}`)}>{m.islands.fit[fit]}</a> : ""}</td>}
+              <td class="comparison-stars">
+                {stars(tool.repo.stars)}
+                {tool.starHistory && <Sparkline series={tool.starHistory} />}
+              </td>
               <td>{tool.repo.license ?? card.noLicense}</td>
               <td>{m.islands.terms[tool.terms]}</td>
               <td>{hosted.has(tool.category) ? m.tool.selfHostYes : m.tool.selfHostNo}</td>

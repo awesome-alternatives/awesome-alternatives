@@ -443,7 +443,7 @@ main {
 
 .comparison th,
 .comparison td {
-  padding: 10px 20px 10px 0;
+  padding: 10px 16px 10px 0;
   border-bottom: 1px solid var(--line);
   text-align: start;
   vertical-align: baseline;
@@ -799,6 +799,11 @@ button.link {
 
 .facts .sparkline {
   margin-inline-start: 10px;
+}
+
+.comparison-stars .sparkline {
+  width: 40px;
+  margin-inline-start: 8px;
 }
 
 .boost-growth {
