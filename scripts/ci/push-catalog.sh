@@ -9,9 +9,11 @@ fi
 message=$1
 shift
 
-git config user.name 'github-actions[bot]'
-git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-gh auth setup-git
+git config user.name "${GIT_AUTHOR_NAME:-github-actions[bot]}"
+git config user.email "${GIT_AUTHOR_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+if [ "${GITHUB_ACTIONS:-}" = true ]; then
+  gh auth setup-git
+fi
 
 for attempt in 1 2 3 4 5; do
   git fetch --quiet origin main
@@ -24,7 +26,9 @@ for attempt in 1 2 3 4 5; do
   fi
   git commit --quiet -m "$message"
   if git push --quiet origin HEAD:main; then
-    gh workflow run release.yml --ref main
+    if [ "${GITHUB_ACTIONS:-}" = true ]; then
+      gh workflow run release.yml --ref main
+    fi
     exit 0
   fi
   echo "main moved while committing, attempt $attempt, starting over from the new head"

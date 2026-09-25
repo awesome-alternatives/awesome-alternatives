@@ -1,11 +1,13 @@
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
+import { RECORD_FAILED_EXIT_CODE, recordFacts } from "./lib/facts-db.ts";
 import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
 import { publishOrExplain } from "./lib/publish.ts";
+import { runRows } from "./lib/tool-facts.ts";
 
 const root = process.cwd();
 const catalog = await loadSoundCatalog(root);
@@ -20,7 +22,13 @@ const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
 const owners = await fetchOwners(gql, tools);
 
-const published = await publishOrExplain(root, catalog, { checkedAt: now.toISOString(), owners, tools });
+const checkedAt = now.toISOString();
+const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools });
+
+const databaseUrl = process.env.DATABASE_URL;
+if (published && databaseUrl && !(await recordFacts(databaseUrl, runRows(checkedAt, tools, facts)))) {
+  process.exitCode = RECORD_FAILED_EXIT_CODE;
+}
 
 const { queries, cost, remaining } = gql.spent();
 const outcome = published ? `refreshed ${tools.length} tools` : "refused to publish";

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { generateKeyPairSync, verify } from "node:crypto";
 import { describe, it } from "node:test";
-import { appJwt, createInstallations, installationsFromEnv, isMaintainerVerified } from "../scripts/lib/app.ts";
+import { appJwt, createInstallations, installationsFromEnv, installationToken, isMaintainerVerified } from "../scripts/lib/app.ts";
 
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 const pem = privateKey.export({ type: "pkcs8", format: "pem" }).toString();
@@ -100,5 +100,62 @@ describe("isMaintainerVerified", () => {
   it("leaves a tool unverified with neither the file nor the app", async () => {
     assert.equal(await isMaintainerVerified("tool", ["other"], "acme/tool", installedOn(false, [])), false);
     assert.equal(await isMaintainerVerified("tool", [], "acme/tool", null), false);
+  });
+});
+
+describe("installationToken", () => {
+  interface Call {
+    url: string;
+    method: string;
+    authorization: string;
+    body: unknown;
+  }
+
+  function github(responses: Record<string, { status: number; body: unknown }>, calls: Call[]): typeof fetch {
+    return (async (url: string, init: RequestInit) => {
+      calls.push({
+        url,
+        method: init.method ?? "GET",
+        authorization: (init.headers as Record<string, string>).authorization ?? "",
+        body: init.body ? JSON.parse(init.body as string) : undefined,
+      });
+      const answer = responses[url] ?? { status: 404, body: { message: "Not Found" } };
+      return new Response(JSON.stringify(answer.body), { status: answer.status });
+    }) as typeof fetch;
+  }
+
+  const installation = "https://api.github.com/repos/acme/catalog/installation";
+  const tokens = "https://api.github.com/app/installations/77/access_tokens";
+
+  it("finds the repository's installation and mints a token scoped to that repository alone", async () => {
+    const calls: Call[] = [];
+    const fetchImpl = github(
+      { [installation]: { status: 200, body: { id: 77 } }, [tokens]: { status: 201, body: { token: "ghs_x" } } },
+      calls,
+    );
+    assert.equal(await installationToken("42", pem, "acme/catalog", fetchImpl), "ghs_x");
+    assert.deepEqual(
+      calls.map((c) => [c.method, c.url, c.body]),
+      [
+        ["GET", installation, undefined],
+        ["POST", tokens, { repositories: ["catalog"] }],
+      ],
+    );
+    assert.ok(calls.every((c) => /^Bearer [\w-]+\.[\w-]+\.[\w-]+$/.test(c.authorization)));
+  });
+
+  it("fails loudly when the app is not installed on the repository", async () => {
+    await assert.rejects(installationToken("42", pem, "acme/catalog", github({}, [])), /GitHub 404 on \/repos\/acme\/catalog\/installation/);
+  });
+
+  it("rejects a response without a token instead of pushing anonymously", async () => {
+    const fetchImpl = github({ [installation]: { status: 200, body: { id: 77 } }, [tokens]: { status: 201, body: {} } }, []);
+    await assert.rejects(installationToken("42", pem, "acme/catalog", fetchImpl), /no token/);
+  });
+
+  it("refuses a repository that is not owner/name before calling GitHub", async () => {
+    const calls: Call[] = [];
+    await assert.rejects(installationToken("42", pem, "https://github.com/acme/catalog", github({}, calls)), /not an owner\/name/);
+    assert.deepEqual(calls, []);
   });
 });

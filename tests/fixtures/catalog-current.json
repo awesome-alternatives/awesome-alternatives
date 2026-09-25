@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "tools": 478,
+    "categories": 124,
+    "targets": 231
+  },
+  "checkedAt": "2026-09-24T18:14:51.088Z",
+  "owners": {},
+  "tools": [
+    {
+      "slug": "dub",
+      "name": "Dub",
+      "repository": "https://github.com/dubinc/dub",
+      "category": "url-shortener",
+      "replaces": [
+        {
+          "tool": "bitly",
+          "fit": "full",
+          "note": "Short links on custom domains, analytics and QR codes."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-24T17:57:37.549Z",
+      "editedAt": "2026-09-24T18:14:14.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "dubinc/dub",
+        "description": "The modern link attribution platform. Loved by world-class marketing teams like Framer, Perplexity, Superhuman, Twilio, Buffer and more.",
+        "homepage": "https://dub.co",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 24811,
+        "forks": 3302,
+        "topics": [
+          "clickhouse",
+          "mysql",
+          "nextjs",
+          "open-source",
+          "planetscale",
+          "prisma",
+          "tailwindcss",
+          "tinybird",
+          "typescript",
+          "upstash",
+          "vercel"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-08-27T22:15:11Z",
+        "pushedAt": "2026-09-24T18:06:48Z",
+        "defaultBranch": "main"
+      },
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T18:14:14.000Z"
+      },
+      "release": null,
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": [
+        "no-release"
+      ],
+      "terms": "open-core",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "ack",
+      "name": "ack",
+      "repository": "https://github.com/beyondgrep/ack3",
+      "category": "code-search",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-24T06:34:56.187Z",
+      "editedAt": "2026-09-24T06:46:37.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "beyondgrep/ack3",
+        "description": "ack is a grep-like search tool optimized for source code.",
+        "homepage": "https://beyondgrep.com/",
+        "language": "Perl",
+        "license": "Other",
+        "stars": 828,
+        "forks": 76,
+        "topics": [
+          "ack",
+          "cli",
+          "grep",
+          "perl"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-03-03T15:28:03Z",
+        "pushedAt": "2026-09-06T01:03:39Z",
+        "defaultBranch": "dev"
+      },
+      "trend": {
+        "stars": 0,
+        "exact": false,
+        "since": "2026-09-24T18:14:14.000Z"
+      },
+      "release": {
+        "tag": "v3.10.0",
+        "publishedAt": null,
+        "url": "https://github.com/beyondgrep/ack3/releases/tag/v3.10.0",
+        "source": "tag",
+        "signed": false
+      },
+      "releases": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    }
+  ],
+  "products": [],
+  "categories": {}
+}

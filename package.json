@@ -9,11 +9,13 @@
   "scripts": {
     "validate": "node scripts/validate.ts",
     "refresh": "node scripts/refresh.ts",
+    "backfill-facts": "node scripts/backfill-facts.ts",
     "test": "node --test \"tests/**/*.test.ts\"",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "ajv": "^8.17.1",
+    "postgres": "^3.4.9",
     "yaml": "^2.8.1"
   },
   "devDependencies": {
