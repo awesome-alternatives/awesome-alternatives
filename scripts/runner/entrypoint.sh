@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+command=${1:-refresh}
+case "$command" in
+  refresh | backfill) ;;
+  *)
+    echo "usage: entrypoint.sh [refresh|backfill]" >&2
+    exit 2
+    ;;
+esac
+
 : "${APP_ID:?APP_ID is required}"
 : "${APP_PRIVATE_KEY:?APP_PRIVATE_KEY is required}"
 repository=${REPOSITORY:-awesome-alternatives/awesome-alternatives}
@@ -19,6 +28,10 @@ refreshed="$workdir/refreshed"
 rm -rf "$checkout" "$refreshed"
 git clone --quiet "https://github.com/$repository.git" "$checkout"
 cd "$checkout"
+
+if [ "$command" = backfill ]; then
+  exec node "$app/scripts/backfill-facts.ts"
+fi
 
 node "$app/scripts/refresh.ts"
 

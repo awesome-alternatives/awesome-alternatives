@@ -277,4 +277,5 @@ The image built from [`scripts/runner/Dockerfile`](scripts/runner/Dockerfile) ru
 refresh in the cluster. It mints an installation token from `APP_ID` and `APP_PRIVATE_KEY` for
 `REPOSITORY` (default `awesome-alternatives/awesome-alternatives`), clones it into `WORK_DIR`
 (default `/work`), refreshes, and pushes the catalog as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`,
-the app's bot user, falling back to `github-actions[bot]`.
+the app's bot user, falling back to `github-actions[bot]`. Given `backfill` as its argument, it clones the
+same way and runs the backfill instead.
