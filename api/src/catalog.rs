@@ -1,11 +1,13 @@
 use std::collections::BTreeMap;
 use std::path::Path;
+use std::time::Duration;
 
 use serde::{Deserialize, Serialize};
 
 use crate::body;
 
 pub const CATALOG_BYTES: usize = 16 * 1024 * 1024;
+const FETCH_TIMEOUT: Duration = Duration::from_secs(60);
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "kebab-case")]
@@ -192,7 +194,12 @@ pub async fn load(source: &str, http: &reqwest::Client) -> Result<Catalog, Catal
 }
 
 async fn fetch(url: &str, http: &reqwest::Client) -> Result<String, body::Error> {
-    let response = http.get(url).send().await?.error_for_status()?;
+    let response = http
+        .get(url)
+        .timeout(FETCH_TIMEOUT)
+        .send()
+        .await?
+        .error_for_status()?;
     body::text(response, CATALOG_BYTES).await
 }
 

@@ -88,7 +88,10 @@ waiting never runs.
 
 Every route under `/v1` and `POST /webhooks/github` answers `504` once it has run for
 `REQUEST_TIMEOUT_SECS`, 15 by default. The work behind it is dropped with it, apart from an
-embedding already running, which cannot be interrupted and finishes on its own.
+embedding already running, which cannot be interrupted and finishes on its own, and a refresh
+dispatch (see [Release-triggered refresh](#release-triggered-refresh)). Outbound calls give up
+before that: 5 seconds to connect and 10 seconds in all, except the catalog download, which runs
+outside any request and gets 60 seconds.
 
 No browser on another origin can read a response unless `ALLOWED_ORIGINS` names its origin. The
 site is served from the same origin as the API, at `/api`, so it needs no entry and the default is
@@ -229,6 +232,12 @@ Each repository gets at most one dispatch per `REFRESH_COOLDOWN_SECS`, 10 minute
 whichever path it comes through, so a batch of releases in a monorepo or both paths firing on the
 same release cost one run. A dispatch that fails answers `502`, is logged, and does not start the
 cooldown, so the next event tries again.
+
+The dispatch runs in a task of its own that the request only waits on, so a request dropped on the
+way (a client that hangs up, GitHub giving up on a webhook after 10 seconds, the `504` at
+`REQUEST_TIMEOUT_SECS`) does not cancel it. The task finishes either way: the cooldown stays when
+the dispatch went out, and is cleared when it failed, so a lost answer never holds a repository back
+with nothing sent.
 
 The dispatch is made by a second GitHub App, private and installed only on this repository with
 `Actions: write`, so the public app never holds more than read access to anyone's repository. The

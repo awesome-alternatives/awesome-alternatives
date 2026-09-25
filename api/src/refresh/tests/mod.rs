@@ -119,6 +119,7 @@ pub struct GitHub {
     pub tokens_issued: Arc<AtomicUsize>,
     pub failing_dispatches: Arc<AtomicUsize>,
     pub expires_at: &'static str,
+    pub token_delay: Duration,
 }
 
 #[derive(Deserialize)]
@@ -182,6 +183,7 @@ impl GitHub {
             tokens_issued: Arc::default(),
             failing_dispatches: Arc::default(),
             expires_at,
+            token_delay: Duration::ZERO,
         }
     }
 
@@ -232,6 +234,7 @@ async fn access_token(
     if request.repositories != ["awesome-alternatives"] || request.permissions.actions != "write" {
         return StatusCode::UNPROCESSABLE_ENTITY.into_response();
     }
+    tokio::time::sleep(github.token_delay).await;
     let issued = github.tokens_issued.fetch_add(1, Ordering::SeqCst) + 1;
     (
         StatusCode::CREATED,
