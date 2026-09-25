@@ -1,0 +1,12 @@
+name: Ghost
+repository: https://github.com/TryGhost/Ghost
+category: newsletter
+replaces:
+  - tool: substack
+    fit: full
+    note: Publishing with free and paid newsletter subscriptions on your own domain.
+    migration: https://ghost.org/docs/migration/substack/
+  - tool: mailchimp
+    fit: partial
+    note: Newsletters to the members of a Ghost site, not general marketing campaigns.
+deploy: [compose]

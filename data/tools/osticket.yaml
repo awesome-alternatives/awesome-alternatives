@@ -1,0 +1,10 @@
+name: osTicket
+repository: https://github.com/osTicket/osTicket
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Email and web form tickets with SLAs and a knowledge base, without live chat or phone.
+  - tool: freshdesk
+    fit: partial
+    note: Email and web form tickets with SLAs and a knowledge base, without live chat or phone.

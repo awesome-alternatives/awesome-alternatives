@@ -1,0 +1,7 @@
+name: Bagisto
+repository: https://github.com/bagisto/bagisto
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: Laravel store with catalogue, checkout, multiple channels and a marketplace module.

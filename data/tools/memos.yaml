@@ -1,0 +1,7 @@
+name: Memos
+repository: https://github.com/usememos/memos
+category: note-taking
+replaces:
+  - tool: google-keep
+    fit: full
+    note: Quick Markdown notes in a timeline with tags, on your own server.

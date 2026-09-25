@@ -1,0 +1,8 @@
+name: Kutt
+repository: https://github.com/thedevs-network/kutt
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: full
+    note: Short links on custom domains, with click statistics and an API.
+deploy: [container, compose]

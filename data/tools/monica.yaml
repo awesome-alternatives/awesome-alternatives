@@ -1,0 +1,4 @@
+name: Monica
+repository: https://github.com/monicahq/monica
+category: crm
+deploy: [container, compose, helm]

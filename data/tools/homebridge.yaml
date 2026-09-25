@@ -1,0 +1,4 @@
+name: Homebridge
+repository: https://github.com/homebridge/homebridge
+category: home-automation
+deploy: [container, package]

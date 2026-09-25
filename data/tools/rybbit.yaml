@@ -1,0 +1,8 @@
+name: Rybbit
+repository: https://github.com/rybbit-io/rybbit
+category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: full
+    note: Cookieless analytics with funnels, goals, user journeys and session replay.
+deploy: [container, compose]

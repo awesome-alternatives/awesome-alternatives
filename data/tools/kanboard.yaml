@@ -1,0 +1,8 @@
+name: Kanboard
+repository: https://github.com/kanboard/kanboard
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban boards with swimlanes, subtasks and automatic actions.
+deploy: [container, compose]

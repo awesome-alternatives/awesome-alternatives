@@ -1,0 +1,7 @@
+name: Spree Commerce
+repository: https://github.com/spree/spree
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: Rails commerce API with an admin dashboard and a Next.js storefront.

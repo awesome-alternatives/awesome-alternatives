@@ -1,0 +1,11 @@
+name: Shiori
+repository: https://github.com/go-shiori/shiori
+category: read-later
+replaces:
+  - tool: pocket
+    fit: full
+    note: Bookmarks with archived offline copies of pages, read in a web app.
+  - tool: raindrop-io
+    fit: partial
+    note: Bookmarks and tags, without collections shared with others.
+deploy: [container, compose, binary]

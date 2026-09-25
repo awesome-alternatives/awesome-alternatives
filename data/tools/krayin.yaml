@@ -1,0 +1,10 @@
+name: Krayin CRM
+repository: https://github.com/krayin/laravel-crm
+category: crm
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Leads, contacts, pipelines and quotes, without the marketing and service clouds.
+  - tool: hubspot
+    fit: partial
+    note: Sales CRM only, without the marketing hub.

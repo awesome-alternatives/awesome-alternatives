@@ -1,0 +1,8 @@
+name: Leantime
+repository: https://github.com/Leantime/leantime
+category: project-management
+replaces:
+  - tool: asana
+    fit: full
+    note: Tasks, kanban boards, timelines, goals and time tracking.
+deploy: [container, compose]

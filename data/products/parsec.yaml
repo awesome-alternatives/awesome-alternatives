@@ -1,0 +1,5 @@
+name: Parsec
+homepage: https://parsec.app
+vendor: Unity Technologies
+category: remote-desktop
+description: Low-latency remote desktop and game streaming app, connected through Parsec's service.

@@ -1,0 +1,7 @@
+name: Mail-in-a-Box
+repository: https://github.com/mail-in-a-box/mailinabox
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: Mail, contacts and calendars for your own domains on one Ubuntu server, without the office apps.

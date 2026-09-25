@@ -1,0 +1,8 @@
+name: Dolibarr
+repository: https://github.com/Dolibarr/dolibarr
+category: erp
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Invoicing, orders, stock, projects and HR modules sized for small businesses.
+deploy: [container]

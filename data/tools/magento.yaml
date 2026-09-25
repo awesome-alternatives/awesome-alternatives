@@ -1,0 +1,7 @@
+name: Magento Open Source
+repository: https://github.com/magento/magento2
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: Self-hosted store with catalogue, checkout and extensions; Adobe Commerce is the paid edition.
