@@ -546,6 +546,11 @@ erp:
   description: Accounting, inventory, sales and operations in one system.
   selfHost: true
 
+personal-finance:
+  name: Budgeting and personal finance
+  description: Track accounts, spending and budgets for a person or a household.
+  selfHost: true
+
 crm:
   name: CRM
   description: Track contacts, companies and deals.

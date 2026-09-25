@@ -1,0 +1,9 @@
+name: Actual Budget
+repository: https://github.com/actualbudget/actual
+category: personal-finance
+replaces:
+  - tool: ynab
+    fit: full
+    note: Envelope budgeting in a local-first app, with an optional sync server and bank sync through providers such as SimpleFIN or Enable Banking.
+    migration: https://actualbudget.org/docs/migration/nynab/
+deploy: [container, compose, binary]

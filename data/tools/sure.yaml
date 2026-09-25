@@ -1,0 +1,11 @@
+name: Sure
+repository: https://github.com/we-promise/sure
+category: personal-finance
+replaces:
+  - tool: maybe
+    fit: full
+    note: Community fork of the Maybe codebase, maintained since Maybe was archived.
+  - tool: monarch-money
+    fit: full
+    note: Accounts, net worth, budgets and investments, with bank sync through providers such as Plaid or SimpleFIN using your own credentials.
+deploy: [container, compose, helm]
