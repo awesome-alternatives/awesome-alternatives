@@ -35,6 +35,7 @@ pub struct Config {
     pub scorecard_api: String,
     pub details_cache_bytes: u64,
     pub valkey: Option<cache::Settings>,
+    pub database_url: Option<String>,
     pub refresh: refresh::Settings,
     pub limits: Limits,
 }
@@ -63,6 +64,7 @@ impl Config {
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
             valkey: valkey()?,
+            database_url: text("DATABASE_URL"),
             refresh: refresh_settings()?,
             limits: limits()?,
         })
@@ -103,6 +105,10 @@ fn valkey() -> Result<Option<cache::Settings>, ConfigError> {
             search: Duration::from_secs(parsed(
                 "VALKEY_SEARCH_TTL_SECS",
                 &cache::SEARCH_TTL.as_secs().to_string(),
+            )?),
+            history: Duration::from_secs(parsed(
+                "VALKEY_HISTORY_TTL_SECS",
+                &cache::HISTORY_TTL.as_secs().to_string(),
             )?),
         },
     }))

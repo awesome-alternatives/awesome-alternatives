@@ -13,6 +13,7 @@ Rust and axum.
 | `GET` | `/v1/vocabulary` | Every tool something replaces, and every language, licence and category present. Nothing in this repository calls it: it is here for anyone building against the catalog, which is CC0, and it is part of the published surface rather than an internal helper. |
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
 | `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
+| `GET` | `/v1/tools/{slug}/history` | The tool's daily facts for charts, oldest day first. `days` sets the window, 365 by default, 1 to 730, anything else answers `400`. See [Tool history](#tool-history). |
 | `POST` | `/webhooks/github` | GitHub App webhook. Signed with `X-Hub-Signature-256`, `401` when the signature does not match. A published release of a repository in the catalog answers `202` and triggers a refresh of its tools (see [Release-triggered refresh](#release-triggered-refresh)); every other event, action or repository answers `204`. |
 | `POST` | `/v1/refresh` | Called from a maintainer's own workflow with `Authorization: Bearer <GitHub Actions OIDC token>`. Refreshes the tools backed by the repository the token was issued to. `202` with `{ "slugs": [...], "dispatched": true }`, `dispatched` being `false` when a refresh for that repository already went out within the cooldown. `401` when the token does not verify, `404` when the repository is not in the catalog. |
 | `GET` | `/healthz` | `ok` |
@@ -116,8 +117,8 @@ A `403` or `429` from GitHub is a refusal, usually its rate limit, not an answer
 with the status and fails the whole fetch, so the security report answers 502 rather than "no
 known advisories", and neither cache tier keeps it. Only a `404` means there is nothing to show.
 
-The two routes share a per-client limit of `DETAILS_PER_MINUTE`, keyed the same way as search, and
-answer `429` with `Retry-After` past it. A tool page costs at most two requests, so the default
+The README, security and history routes share a per-client limit of `DETAILS_PER_MINUTE`, keyed the
+same way as search, and answer `429` with `Retry-After` past it. A tool page costs at most three requests, so the default
 leaves a person browsing plenty of room, while one client can no longer spend the GitHub token as
 fast as it can send requests.
 
@@ -135,6 +136,8 @@ fetched upstream is written back to both. Three things are shared: rendered READ
 report next to them, and the interpretation of a search, which is the filters, the interpreter that
 read them and the relevance scores behind the ranking. The tools themselves are not: every replica
 holds the catalog already, and the interpretation is what the embedding pass and Jev are spent on.
+Tool history is cached in Valkey only, with no in-process tier: without Valkey every request reads
+the database.
 
 Keys are `aa:<version>:<kind>:<id>`. The version segment is the shape of what is stored, so a
 release that changes it reads none of the old entries rather than misreading them. Search keys carry
@@ -146,6 +149,7 @@ refresh retires every search entry it invalidates without touching a key.
 | `aa:v1:readme:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | The in-process cache expires on its own 12-hour constant, so raising this one keeps entries in Valkey longer than in memory, and lowering it means memory answers after Valkey has forgotten. |
 | `aa:v1:security:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | |
 | `aa:v1:search:<revision>:<query>` | `VALKEY_SEARCH_TTL_SECS`, 15 minutes | Free text, so the key space is open. |
+| `aa:v1:history:<slug>:<days>` | `VALKEY_HISTORY_TTL_SECS`, 1 hour | Only slugs in the catalog and `days` from 1 to 730 reach it. |
 
 **Every key is written with an expiry, and that is not optional.** The server runs with no
 `maxmemory` and `noeviction`, which the operator does not let us change: a key written without a TTL
@@ -164,6 +168,41 @@ for the CA that signs the server certificate: it is an internal CA, so the syste
 not have it. The chain and the hostname are both verified, and there is no option to skip either.
 Without `VALKEY_URL` nothing is connected and nothing is attempted, the caches stay in-process, and
 startup says so once.
+
+## Tool history
+
+`GET /v1/tools/{slug}/history` reads the continuous aggregate `tool_facts_daily` in TimescaleDB,
+which the in-cluster refresh fills every night (#176):
+
+```json
+{
+  "slug": "knope",
+  "points": [
+    {
+      "day": "2026-09-24",
+      "stars": 600,
+      "forks": 30,
+      "openIssues": 12,
+      "pushedAt": "2026-09-23T18:04:05Z",
+      "release": { "tag": "v0.21.0", "publishedAt": "2026-09-20T09:00:00Z", "signed": true }
+    }
+  ]
+}
+```
+
+`day` is the UTC day of the bucket. `openIssues` and `pushedAt` are `null` when the refresh did not
+record them, and `release` is `null` until the tool has a release; inside it, `publishedAt` and
+`signed` can each be `null` on their own. Days the refresh missed are absent rather than filled in.
+
+The site calls it for charts only and builds without it, so the API never waits on the database to
+start or stay healthy. The pool connects on the first request, at most 4 connections, and a request
+that cannot get one within 3 seconds, or whose query fails, answers `502` and is not cached. Without
+`DATABASE_URL` the route answers `503` and startup logs a warning. An unknown slug answers `404`
+and a bad `days` answers `400` before the database is touched.
+
+`DATABASE_URL` is a `postgres://` URL for a role with `SELECT` on `tool_facts_daily` and nothing
+else. TLS follows its `sslmode`: `sslmode=verify-full&sslrootcert=/path/ca.crt` for the cluster's
+internal CA; plain TCP inside the cluster works without it.
 
 ## Release-triggered refresh
 
@@ -258,7 +297,7 @@ requests are in flight.
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP, per /64 for IPv6. |
-| `DETAILS_PER_MINUTE` | `30` | Per client IP (per /64 for IPv6), shared by `/v1/tools/{slug}/readme` and `/v1/tools/{slug}/security`. |
+| `DETAILS_PER_MINUTE` | `30` | Per client IP (per /64 for IPv6), shared by `/v1/tools/{slug}/readme`, `/security` and `/history`. |
 | `SEARCH_CONCURRENCY` | `32` | Searches served at once by the whole process. Past it a search answers `503` with `Retry-After: 1` instead of waiting. |
 | `REQUEST_TIMEOUT_SECS` | `15` | Every route under `/v1` and the webhook answer `504` past it. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
@@ -286,6 +325,8 @@ requests are in flight.
 | `VALKEY_TIMEOUT_MS` | `200` | Per operation. Past it the request carries on without the cache. |
 | `VALKEY_DETAILS_TTL_SECS` | `43200` | 12 hours, for READMEs and security reports. |
 | `VALKEY_SEARCH_TTL_SECS` | `900` | 15 minutes, for interpreted searches. |
+| `VALKEY_HISTORY_TTL_SECS` | `3600` | 1 hour, for tool history. The data changes nightly. |
+| `DATABASE_URL` | unset | The TimescaleDB holding `tool_facts_daily`. Unset means `/v1/tools/{slug}/history` answers `503`. |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |
 | `RUST_LOG` | `info` | |
 
