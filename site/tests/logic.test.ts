@@ -19,7 +19,7 @@ import {
 import { alternativesHref, fromSearch, listParams, readListUrl } from "../src/lib/listUrl.ts";
 import { growth, stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
-import { boostOf, TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
+import { boostOf, TRENDING_MIN_STARS, TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
 import { slugify } from "../src/lib/slug.ts";
 import type { DeployMethod, Fit, ToolView } from "../src/lib/types.ts";
 
@@ -303,16 +303,29 @@ test("two values that slugify alike fail the build instead of sharing a page", (
   assert.throws(() => groupTools([tool("a", "Vim Script", []), tool("b", "Vim script", [])], (t) => t.repo.language), /vim-script/);
 });
 
-test("trending ranks on stars gained, then on how fast they came, then on the slug", () => {
+test("trending ranks on growth over the stars a tool started from, then on stars gained, then on the slug", () => {
   const ranked = trending([
-    trendingTool("slow", gained(40, "2026-08-25T00:00:00Z")),
-    trendingTool("fast", gained(200, "2026-09-18T00:00:00Z", false)),
-    trendingTool("steady", gained(200, "2026-09-02T00:00:00Z", false)),
-    trendingTool("b-tie", gained(40, "2026-08-25T00:00:00Z")),
+    trendingTool("big", gained(200, "2026-09-01T00:00:00Z"), 100_000),
+    trendingTool("small", gained(30, "2026-09-01T00:00:00Z"), 330),
+    trendingTool("fifty", gained(50, "2026-09-01T00:00:00Z"), 1_050),
+    trendingTool("hundred", gained(100, "2026-09-01T00:00:00Z"), 2_100),
+    trendingTool("brand-new", gained(25, "2026-09-01T00:00:00Z"), 25),
   ]);
   assert.deepEqual(
     ranked.map((t) => t.tool.slug),
-    ["fast", "steady", "b-tie", "slow"],
+    ["brand-new", "small", "hundred", "fifty", "big"],
+  );
+});
+
+test("trending needs a minimum number of new stars, so one star on a tiny project is not a boost", () => {
+  const ranked = trending([
+    trendingTool("tiny", gained(1, "2026-09-01T00:00:00Z"), 4),
+    trendingTool("just-under", gained(TRENDING_MIN_STARS - 1, "2026-09-01T00:00:00Z"), 40),
+    trendingTool("just-enough", gained(TRENDING_MIN_STARS, "2026-09-01T00:00:00Z"), 100_000),
+  ]);
+  assert.deepEqual(
+    ranked.map((t) => t.tool.slug),
+    ["just-enough"],
   );
 });
 
@@ -320,7 +333,7 @@ test("trending leaves out a tool with no measurement rather than ranking it last
   const ranked = trending([
     trendingTool("unmeasured", null, 90_000),
     trendingTool("missing-field", undefined, 80_000),
-    trendingTool("measured", gained(3, "2026-07-01T00:00:00Z")),
+    trendingTool("measured", gained(30, "2026-07-01T00:00:00Z")),
     trendingTool("flat", gained(0, "2026-01-01T00:00:00Z")),
   ]);
   assert.deepEqual(
@@ -331,7 +344,7 @@ test("trending leaves out a tool with no measurement rather than ranking it last
 
 test("trending leaves out a tool that replaces nothing, since the section lists alternatives", () => {
   const target = { ...tool("target", "Rust", [], 900), trend: gained(500, "2026-09-15T00:00:00Z") };
-  const ranked = trending([target, trendingTool("alternative", gained(5, "2026-08-01T00:00:00Z"))]);
+  const ranked = trending([target, trendingTool("alternative", gained(50, "2026-08-01T00:00:00Z"))]);
   assert.deepEqual(
     ranked.map((t) => t.tool.slug),
     ["alternative"],
@@ -341,7 +354,7 @@ test("trending leaves out a tool that replaces nothing, since the section lists 
 test("trending skips an archived repository, like the rest of the catalog", () => {
   const archived = trendingTool("archived", gained(900, "2026-09-10T00:00:00Z"));
   archived.repo.archived = true;
-  const ranked = trending([archived, trendingTool("live", gained(5, "2026-08-01T00:00:00Z"))]);
+  const ranked = trending([archived, trendingTool("live", gained(50, "2026-08-01T00:00:00Z"))]);
   assert.deepEqual(
     ranked.map((t) => t.tool.slug),
     ["live"],
@@ -349,11 +362,11 @@ test("trending skips an archived repository, like the rest of the catalog", () =
 });
 
 test("trending shows what it has when fewer tools qualify than there are slots", () => {
-  const two = [trendingTool("a", gained(9, "2026-09-01T00:00:00Z")), trendingTool("b", gained(4, "2026-09-01T00:00:00Z"))];
+  const two = [trendingTool("a", gained(90, "2026-09-01T00:00:00Z")), trendingTool("b", gained(40, "2026-09-01T00:00:00Z"))];
   assert.equal(trending(two).length, 2);
   assert.equal(trending([]).length, 0);
   const many = Array.from({ length: TRENDING_SLOTS + 3 }, (_, i) =>
-    trendingTool(`t${i}`, gained(TRENDING_SLOTS + 3 - i, "2026-09-01T00:00:00Z")),
+    trendingTool(`t${i}`, gained(TRENDING_MIN_STARS + i, "2026-09-01T00:00:00Z")),
   );
   assert.equal(trending(many).length, TRENDING_SLOTS);
 });

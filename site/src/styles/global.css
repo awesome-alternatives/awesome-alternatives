@@ -775,18 +775,18 @@ button.link {
 }
 
 .boost {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 10px;
-  margin: 10px 0 0;
+  position: relative;
+  margin-inline-start: auto;
   color: var(--accent);
   font-family: var(--mono);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 700;
+  white-space: nowrap;
+  cursor: default;
 }
 
 .boost-growth {
+  margin-inline-start: 8px;
   color: var(--soft);
   font-weight: 500;
 }
@@ -946,7 +946,8 @@ button.link {
   color: var(--dim);
 }
 
-.mark-icon::after {
+.mark-icon::after,
+.boost::after {
   content: attr(data-tip);
   display: none;
   position: absolute;
@@ -971,19 +972,24 @@ button.link {
 }
 
 .mark-icon:hover::after,
-.mark-icon:focus-visible::after {
+.mark-icon:focus-visible::after,
+.boost:hover::after,
+.boost:focus-visible::after {
   display: block;
   opacity: 1;
 }
 
 @starting-style {
   .mark-icon:hover::after,
-  .mark-icon:focus-visible::after {
+  .mark-icon:focus-visible::after,
+  .boost:hover::after,
+  .boost:focus-visible::after {
     opacity: 0;
   }
 }
 
-.tool-head .mark-compare::after {
+.tool-head .mark-compare::after,
+.boost::after {
   left: auto;
   right: 0;
   transform: none;
