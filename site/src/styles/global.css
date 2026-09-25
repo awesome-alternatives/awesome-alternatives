@@ -742,7 +742,6 @@ button.link {
 }
 
 .tools.trending {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 20px;
 }
 
@@ -1947,10 +1946,6 @@ h1 .mark-archived {
 }
 
 @media (max-width: 960px) {
-  .tools.trending {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .tool-layout {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -2170,10 +2165,6 @@ a.tag:hover {
   }
 
   .targets,
-  .tools.trending {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
