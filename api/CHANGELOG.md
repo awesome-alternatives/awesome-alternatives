@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.18.1] - 2026-09-25
+
+### Bug Fixes
+
+- fix(api): bound the search caches by bytes and hash queries into their keys (#218)
+
 ## [0.18.0] - 2026-09-25
 
 ### Features
