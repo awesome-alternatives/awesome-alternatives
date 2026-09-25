@@ -185,7 +185,12 @@ mod tests {
         };
         let state = AppState::new(
             Loaded::new(catalog, Some(&Words)),
-            Search::new(None, Some(model), Arc::new(Shared::disabled())),
+            Search::new(
+                None,
+                Some(model),
+                crate::search::CACHE_BYTES,
+                Arc::new(Shared::disabled()),
+            ),
             Details::new(
                 Upstream::new(
                     reqwest::Client::new(),

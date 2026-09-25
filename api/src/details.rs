@@ -6,6 +6,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::body;
 use crate::cache::{DETAILS_TTL, Shared};
+use crate::memory::{self, Weight};
 use crate::readme;
 use crate::upstream::{Advisory, Check, Scorecard, Upstream};
 
@@ -37,8 +38,8 @@ impl Details {
         Self {
             upstream,
             shared,
-            readmes: cache(half),
-            security: cache(half),
+            readmes: memory::cache(half, DETAILS_TTL),
+            security: memory::cache(half, DETAILS_TTL),
         }
     }
 
@@ -90,10 +91,6 @@ fn key(kind: &str, full_name: &str) -> String {
     crate::cache::key(&[kind, full_name])
 }
 
-trait Weight {
-    fn bytes(&self) -> usize;
-}
-
 impl Weight for Readme {
     fn bytes(&self) -> usize {
         size_of::<Self>() + self.html.as_ref().map_or(0, String::len)
@@ -133,16 +130,6 @@ impl Weight for Advisory {
             + self.published_at.as_ref().map_or(0, String::len)
             + self.url.len()
     }
-}
-
-fn cache<V: Weight + Clone + Send + Sync + 'static>(max_bytes: u64) -> Cache<String, V> {
-    Cache::builder()
-        .max_capacity(max_bytes)
-        .weigher(|key: &String, value: &V| {
-            u32::try_from(size_of::<String>() + key.len() + value.bytes()).unwrap_or(u32::MAX)
-        })
-        .time_to_live(DETAILS_TTL)
-        .build()
 }
 
 #[cfg(test)]
@@ -430,7 +417,7 @@ mod tests {
 
     #[tokio::test]
     async fn the_cache_evicts_on_bytes_rather_than_on_entry_count() {
-        let cache = cache::<Readme>(64 * 1024);
+        let cache = memory::cache::<Readme>(64 * 1024, DETAILS_TTL);
         for i in 0..64 {
             cache
                 .insert(format!("owner/repo-{i}"), readme(4 * 1024))
@@ -447,7 +434,7 @@ mod tests {
 
     #[tokio::test]
     async fn an_entry_larger_than_the_limit_never_blows_the_limit() {
-        let cache = cache::<Readme>(64 * 1024);
+        let cache = memory::cache::<Readme>(64 * 1024, DETAILS_TTL);
         cache.insert("owner/repo".into(), readme(1024 * 1024)).await;
         cache.run_pending_tasks().await;
         assert!(

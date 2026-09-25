@@ -10,6 +10,7 @@ use crate::jev;
 use crate::jev_budget;
 use crate::limits::{self, Limits};
 use crate::refresh::{self, dispatch, oidc};
+use crate::search;
 use crate::upstream;
 
 const DEFAULT_CATALOG: &str = "https://raw.githubusercontent.com/awesome-alternatives/awesome-alternatives/main/generated/catalog.json";
@@ -34,6 +35,7 @@ pub struct Config {
     pub github_token: Option<String>,
     pub scorecard_api: String,
     pub details_cache_bytes: u64,
+    pub search_cache_bytes: u64,
     pub valkey: Option<cache::Settings>,
     pub database_url: Option<String>,
     pub refresh: refresh::Settings,
@@ -63,6 +65,7 @@ impl Config {
             scorecard_api: text("SCORECARD_API_URL")
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
+            search_cache_bytes: parsed("SEARCH_CACHE_BYTES", &search::CACHE_BYTES.to_string())?,
             valkey: valkey()?,
             database_url: text("DATABASE_URL"),
             refresh: refresh_settings()?,

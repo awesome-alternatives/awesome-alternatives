@@ -45,7 +45,7 @@ replace:
    `none`, and whether a drop-in is needed. Answers below 0.6 confidence and labels outside the
    catalog are dropped, so the model can narrow a search but never invent a filter. Choices are
    capped at 255 options by the API; past that, the options sharing the most words with the query
-   are kept. Answers are cached for a day per normalised query.
+   are kept.
 
    Jev is the only step that costs money, so it has a budget of its own, shared by every client of
    the process: at most `JEV_CALLS_PER_MINUTE` calls a minute and `JEV_CALLS_PER_DAY` calls per UTC
@@ -58,6 +58,14 @@ replace:
 `interpretedBy` says `local` or `jev`. Without a Jev key the API logs a warning at startup and
 runs on the first two steps. If the model cannot be loaded, it logs a warning and runs on keywords
 alone. Neither stops it from serving.
+
+Every interpretation is cached in the process under its normalised query, for
+`VALKEY_SEARCH_TTL_SECS` when Valkey is configured and 15 minutes otherwise. The cache is bounded by
+bytes, `SEARCH_CACHE_BYTES`, 32 MiB by default, because queries are free text and entries vary a
+lot in size: a reading without a target keeps a relevance score for every tool close enough to the
+query, tens of kilobytes when that is most of the catalog, while one that names a target weighs a
+few hundred bytes. An entry weighs its key, its filters and the slugs it scores. Which
+interpretations are also shared between replicas is under [Shared cache](#shared-cache).
 
 The model thresholds (0.45 to pick a target, 0.05 of lead over the runner-up, 0.40 to keep a
 result) were measured against the catalog on queries that name no tool, in the four languages the
@@ -142,6 +150,13 @@ holds the catalog already, and the interpretation is what the embedding pass and
 Tool history is cached in Valkey only, with no in-process tier: without Valkey every request reads
 the database.
 
+Not every interpretation is shared. One is written to Valkey when it names a target, or when Jev
+read it. The first kind carries no relevance scores, so it stays a few hundred bytes whatever was
+typed. The second can score most of the catalog, but Jev's per-minute budget caps how many are
+written. What is left, a reading with no target that the keywords and the local model made on
+their own, is both the heaviest entry and the cheapest to redo, one embedding, so it stays in the
+process that made it and another replica embeds the query again.
+
 Keys are `aa:<version>:<kind>:<id>`. The version segment is the shape of what is stored, so a
 release that changes it reads none of the old entries rather than misreading them. Search keys carry
 the catalog revision as well, a digest of the document the catalog was loaded from, so the nightly
@@ -151,13 +166,14 @@ refresh retires every search entry it invalidates without touching a key.
 |---|---|---|
 | `aa:v1:readme:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | The in-process cache expires on its own 12-hour constant, so raising this one keeps entries in Valkey longer than in memory, and lowering it means memory answers after Valkey has forgotten. |
 | `aa:v1:security:<owner>/<repo>` | `VALKEY_DETAILS_TTL_SECS`, 12 hours | |
-| `aa:v1:search:<revision>:<query>` | `VALKEY_SEARCH_TTL_SECS`, 15 minutes | Free text, so the key space is open. |
+| `aa:v1:search:<revision>:<digest>` | `VALKEY_SEARCH_TTL_SECS`, 15 minutes | The digest is the SHA-256 of the normalised query in hex, so a key is the same length whatever was typed and never holds the query itself. The key space is still open: one key per distinct query. |
 | `aa:v1:history:<slug>:<days>` | `VALKEY_HISTORY_TTL_SECS`, 1 hour | Only slugs in the catalog and `days` from 1 to 730 reach it. |
 
 **Every key is written with an expiry, and that is not optional.** The server runs with no
 `maxmemory` and `noeviction`, which the operator does not let us change: a key written without a TTL
 is a key held forever, and the pod is OOMKilled rather than evicting anything. That is why search
-entries, whose keys are whatever people type, expire in minutes rather than hours.
+entries, one per distinct query, are kept to the small ones and the ones Jev's budget caps, and
+expire after `VALKEY_SEARCH_TTL_SECS`, 15 minutes by default, in Valkey and in memory alike.
 
 The cache fails open. Every operation is bound by `VALKEY_TIMEOUT_MS`, and an unreachable server, a
 timeout, a rejected password, a certificate that does not verify or an entry that cannot be parsed
@@ -329,11 +345,12 @@ requests are in flight.
 | `DISPATCH_REF` | `main` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |
 | `DETAILS_CACHE_BYTES` | `67108864` | 64 MiB, the total for the in-process README and security caches together. |
+| `SEARCH_CACHE_BYTES` | `33554432` | 32 MiB, for the in-process cache of interpreted searches. |
 | `VALKEY_URL` | unset | A `rediss://` URL, password included. Unset means in-process caches only. |
 | `VALKEY_CA_CERT` | unset | Path to the PEM bundle of the CA that signs the server certificate. |
 | `VALKEY_TIMEOUT_MS` | `200` | Per operation. Past it the request carries on without the cache. |
 | `VALKEY_DETAILS_TTL_SECS` | `43200` | 12 hours, for READMEs and security reports. |
-| `VALKEY_SEARCH_TTL_SECS` | `900` | 15 minutes, for interpreted searches. |
+| `VALKEY_SEARCH_TTL_SECS` | `900` | 15 minutes, for interpreted searches, in Valkey and in the process. Without `VALKEY_URL` it is not read and the process keeps 15 minutes. |
 | `VALKEY_HISTORY_TTL_SECS` | `3600` | 1 hour, for tool history. The data changes nightly. |
 | `DATABASE_URL` | unset | The TimescaleDB holding `tool_facts_daily`. Unset means `/v1/tools/{slug}/history` answers `503`. |
 | `FASTEMBED_CACHE_DIR` | `.fastembed_cache` | Where the model is read from, `/models` in the image. `cargo run` downloads it there on first start. |

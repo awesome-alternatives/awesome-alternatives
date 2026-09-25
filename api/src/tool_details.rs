@@ -222,7 +222,12 @@ mod tests {
         let upstream = Upstream::new(reqwest::Client::new(), &fake.base, &fake.base, None);
         let state = AppState::new(
             Loaded::new(catalog, None),
-            Search::new(None, None, Arc::new(Shared::disabled())),
+            Search::new(
+                None,
+                None,
+                crate::search::CACHE_BYTES,
+                Arc::new(Shared::disabled()),
+            ),
             Details::new(upstream, CACHE_BYTES, Arc::new(Shared::disabled())),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(10).unwrap())),
             RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap())),

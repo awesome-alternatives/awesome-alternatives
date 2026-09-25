@@ -287,7 +287,12 @@ mod tests {
         let limiter = RateLimiter::keyed(Quota::per_minute(NonZeroU32::new(per_minute).unwrap()));
         AppState::new(
             Loaded::new(catalog, embedder.as_deref()),
-            Search::new(None, embedder, Arc::new(Shared::disabled())),
+            Search::new(
+                None,
+                embedder,
+                crate::search::CACHE_BYTES,
+                Arc::new(Shared::disabled()),
+            ),
             Details::new(
                 Upstream::new(
                     reqwest::Client::new(),

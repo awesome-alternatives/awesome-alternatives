@@ -1,9 +1,9 @@
 use std::collections::HashMap;
 use std::sync::Arc;
-use std::time::Duration;
 
 use moka::future::Cache;
 use serde::{Deserialize, Serialize};
+use sha2::{Digest, Sha256};
 use tokio::sync::Mutex;
 
 use crate::cache::Shared;
@@ -13,9 +13,12 @@ use crate::filters::Filters;
 use crate::interpret;
 use crate::jev_budget::MeteredJev;
 use crate::lexical;
+use crate::memory::{self, Weight};
 use crate::qualifiers::{self, Unchecked};
 use crate::state::Loaded;
 use crate::vocabulary::Vocabulary;
+
+pub const CACHE_BYTES: u64 = 32 * 1024 * 1024;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
 #[serde(rename_all = "lowercase")]
@@ -45,6 +48,43 @@ impl Interpretation {
         }
         selected
     }
+
+    fn worth_sharing(&self) -> bool {
+        self.filters.replaces.is_some() || self.interpreted_by == Interpreter::Jev
+    }
+}
+
+impl Weight for Interpretation {
+    fn bytes(&self) -> usize {
+        size_of::<Self>()
+            + self.filters.bytes()
+            + self.relevance.as_ref().map_or(0, |relevance| {
+                relevance
+                    .keys()
+                    .map(|slug| size_of::<(String, f32)>() + slug.len())
+                    .sum()
+            })
+            + self
+                .unchecked
+                .iter()
+                .map(|u| size_of::<Unchecked>() + u.value.len())
+                .sum::<usize>()
+    }
+}
+
+impl Weight for Filters {
+    fn bytes(&self) -> usize {
+        let text = |value: &Option<String>| value.as_ref().map_or(0, String::len);
+        text(&self.replaces)
+            + text(&self.language)
+            + text(&self.license)
+            + text(&self.category)
+            + self
+                .capabilities
+                .iter()
+                .map(|c| size_of::<String>() + c.len())
+                .sum::<usize>()
+    }
 }
 
 pub struct Search {
@@ -59,16 +99,14 @@ impl Search {
     pub fn new(
         jev: Option<MeteredJev>,
         embedder: Option<Arc<dyn Embedder>>,
+        cache_bytes: u64,
         shared: Arc<Shared>,
     ) -> Self {
         Self {
             jev,
             embedder,
+            cache: memory::cache(cache_bytes, shared.ttl.search),
             shared,
-            cache: Cache::builder()
-                .max_capacity(10_000)
-                .time_to_live(Duration::from_secs(24 * 3600))
-                .build(),
             model_turn: Arc::default(),
         }
     }
@@ -83,10 +121,16 @@ impl Search {
             return remembered;
         }
         let key = key(&loaded.catalog.revision, &normalized);
-        let read = self
-            .shared
-            .remembered(&key, self.shared.ttl.search, self.read(query, loaded))
-            .await;
+        let read = match self.shared.get(&key).await {
+            Some(shared) => shared,
+            None => {
+                let fresh = self.read(query, loaded).await;
+                if fresh.worth_sharing() {
+                    self.shared.set(&key, &fresh, self.shared.ttl.search).await;
+                }
+                fresh
+            }
+        };
         self.cache.insert(normalized, read.clone()).await;
         read
     }
@@ -200,13 +244,15 @@ fn category_of<'a>(slug: &str, loaded: &'a Loaded) -> Option<&'a str> {
 }
 
 fn key(revision: &str, normalized: &str) -> String {
-    crate::cache::key(&["search", revision, normalized])
+    let digest = hex::encode(Sha256::digest(normalized.as_bytes()));
+    crate::cache::key(&["search", revision, &digest])
 }
 
 #[cfg(test)]
 mod tests {
     use std::num::NonZeroU32;
     use std::sync::atomic::{AtomicUsize, Ordering};
+    use std::time::Duration;
 
     use axum::routing::post;
     use axum::{Json, Router};
@@ -249,7 +295,7 @@ mod tests {
 
     fn shared_with(embedder: Option<Arc<dyn Embedder>>, shared: Arc<Shared>) -> (Search, Loaded) {
         let loaded = Loaded::new(catalog(), embedder.as_deref());
-        (Search::new(None, embedder, shared), loaded)
+        (Search::new(None, embedder, CACHE_BYTES, shared), loaded)
     }
 
     #[tokio::test]
@@ -326,14 +372,117 @@ mod tests {
     }
 
     #[tokio::test]
-    async fn an_interpretation_is_shared_under_a_key_carrying_the_version_and_the_revision() {
+    async fn an_interpretation_is_shared_under_a_key_carrying_the_version_the_revision_and_a_digest()
+     {
         let (shared, store) = recording();
         let (search, loaded) = shared_with(Some(Arc::new(Words)), shared);
-        search.interpret("changelog generator", &loaded).await;
+        search
+            .interpret("Fully automated, version management!", &loaded)
+            .await;
         let written = store.written();
         assert_eq!(written.len(), 1);
-        assert_eq!(written[0].key, "aa:v1:search:rev-one:changelog generator");
+        assert_eq!(
+            written[0].key,
+            "aa:v1:search:rev-one:654da1616560c0166059248d38206515edb1f7fff9e2147d7c19fa30d865d0e3"
+        );
         assert_eq!(written[0].ttl, SEARCH_TTL);
+    }
+
+    #[test]
+    fn a_search_key_has_a_fixed_length_and_never_carries_the_query() {
+        let short = key("rev-one", "rust");
+        let long = key("rev-one", &"semantic release written in rust ".repeat(9));
+        assert_eq!(short.len(), long.len());
+        for written in [&short, &long] {
+            let digest = written
+                .strip_prefix("aa:v1:search:rev-one:")
+                .unwrap_or_else(|| panic!("{written}"));
+            assert_eq!(digest.len(), 64, "{written}");
+            assert!(digest.chars().all(|c| c.is_ascii_hexdigit()), "{written}");
+        }
+        assert!(
+            !long.contains("semantic") && !long.contains("rust"),
+            "{long}"
+        );
+    }
+
+    async fn shared_key(query: &str) -> String {
+        let (shared, store) = recording();
+        let (search, loaded) = shared_with(None, shared);
+        let read = search.interpret(query, &loaded).await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
+        let written = store.written();
+        assert_eq!(written.len(), 1, "{query}");
+        written[0].key.clone()
+    }
+
+    #[tokio::test]
+    async fn queries_that_normalise_the_same_share_a_key_and_different_ones_do_not() {
+        let plain = shared_key("semantic-release in rust").await;
+        assert_eq!(shared_key("  Semantic-Release, in RUST!  ").await, plain);
+        assert_ne!(shared_key("semantic-release in go").await, plain);
+    }
+
+    #[tokio::test]
+    async fn a_local_reading_without_a_target_stays_in_this_process() {
+        let (shared, store) = recording();
+        let (search, loaded) = shared_with(Some(Arc::new(Words)), shared);
+        let read = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(read.filters.replaces, None);
+        assert_eq!(read.interpreted_by, Interpreter::Local);
+        assert!(store.written().is_empty());
+        assert!(search.cache.get("changelog generator").await.is_some());
+    }
+
+    #[tokio::test]
+    async fn the_in_process_cache_expires_on_the_configured_search_ttl() {
+        let ttl = Ttl {
+            search: Duration::from_millis(100),
+            ..Ttl::default()
+        };
+        let shared = Arc::new(Shared::new(
+            Box::new(fake::Broken),
+            Duration::from_millis(50),
+            ttl,
+        ));
+        let (search, loaded) = shared_with(None, shared);
+        search.interpret("semantic-release in rust", &loaded).await;
+        assert!(search.cache.get("semantic release in rust").await.is_some());
+        tokio::time::sleep(Duration::from_millis(300)).await;
+        assert!(search.cache.get("semantic release in rust").await.is_none());
+    }
+
+    fn ranked(tools: usize) -> Interpretation {
+        Interpretation {
+            filters: Filters::default(),
+            interpreted_by: Interpreter::Local,
+            relevance: Some(
+                (0..tools)
+                    .map(|i| (format!("a-tool-with-a-long-slug-{i}"), 0.5))
+                    .collect(),
+            ),
+            unchecked: vec![],
+        }
+    }
+
+    #[tokio::test]
+    async fn the_in_process_cache_evicts_on_bytes_rather_than_on_entry_count() {
+        let budget = 256 * 1024;
+        let search = Search::new(None, None, budget, Arc::new(Shared::disabled()));
+        for i in 0..64 {
+            search.cache.insert(format!("query {i}"), ranked(500)).await;
+        }
+        search.cache.run_pending_tasks().await;
+        assert!(
+            search.cache.weighted_size() <= budget,
+            "{}",
+            search.cache.weighted_size()
+        );
+        assert!(
+            search.cache.entry_count() < 64,
+            "{}",
+            search.cache.entry_count()
+        );
     }
 
     #[tokio::test]
@@ -398,17 +547,23 @@ mod tests {
     }
 
     async fn mock_jev() -> MockJev {
+        mock_jev_answering(json!({
+            "target": { "type": "choice", "choice": "semantic-release", "confidence": 0.9 }
+        }))
+        .await
+    }
+
+    async fn mock_jev_answering(answers: serde_json::Value) -> MockJev {
         let calls = Arc::new(AtomicUsize::new(0));
         let counted = Arc::clone(&calls);
         let router = Router::new().route(
             "/v1/systemone",
-            post(move || async move {
-                counted.fetch_add(1, Ordering::SeqCst);
-                Json(json!({
-                    "answers": {
-                        "target": { "type": "choice", "choice": "semantic-release", "confidence": 0.9 }
-                    }
-                }))
+            post(move || {
+                let answers = answers.clone();
+                async move {
+                    counted.fetch_add(1, Ordering::SeqCst);
+                    Json(json!({ "answers": answers }))
+                }
             }),
         );
         let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
@@ -421,6 +576,15 @@ mod tests {
     }
 
     fn metered(jev: &MockJev, per_minute: u32, per_day: u32) -> (Search, Loaded) {
+        metered_sharing(jev, per_minute, per_day, Arc::new(Shared::disabled()))
+    }
+
+    fn metered_sharing(
+        jev: &MockJev,
+        per_minute: u32,
+        per_day: u32,
+        shared: Arc<Shared>,
+    ) -> (Search, Loaded) {
         let embedder: Arc<dyn Embedder> = Arc::new(Words);
         let loaded = Loaded::new(catalog(), Some(embedder.as_ref()));
         let client = JevClient::new(
@@ -436,7 +600,8 @@ mod tests {
         let search = Search::new(
             Some(MeteredJev::new(client, limits)),
             Some(embedder),
-            Arc::new(Shared::disabled()),
+            CACHE_BYTES,
+            shared,
         );
         (search, loaded)
     }
@@ -456,6 +621,21 @@ mod tests {
         assert_eq!(read.interpreted_by, Interpreter::Jev);
         assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
         assert_eq!(jev.calls.load(Ordering::SeqCst), 1);
+    }
+
+    #[tokio::test]
+    async fn a_reading_jev_paid_for_is_shared_even_without_a_target() {
+        let jev = mock_jev_answering(json!({
+            "language": { "type": "choice", "choice": "Rust", "confidence": 0.9 }
+        }))
+        .await;
+        let (shared, store) = recording();
+        let (search, loaded) = metered_sharing(&jev, 10, 10, shared);
+        let read = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(read.interpreted_by, Interpreter::Jev);
+        assert_eq!(read.filters.replaces, None);
+        assert_eq!(read.filters.language.as_deref(), Some("Rust"));
+        assert_eq!(store.written().len(), 1);
     }
 
     async fn assert_second_query_stays_local(per_minute: u32, per_day: u32) {
@@ -503,7 +683,7 @@ mod tests {
     #[tokio::test]
     async fn leaving_gitlab_for_ci_and_a_registry_keeps_only_forges_that_declare_both() {
         let loaded = real();
-        let search = Search::new(None, None, Arc::new(Shared::disabled()));
+        let search = Search::new(None, None, CACHE_BYTES, Arc::new(Shared::disabled()));
         let read = search
             .interpret(
                 "I want to leave GitLab but I need CI/CD and a container registry",
@@ -536,7 +716,7 @@ mod tests {
     #[tokio::test]
     async fn a_capability_from_another_category_than_the_target_is_dropped() {
         let loaded = real();
-        let search = Search::new(None, None, Arc::new(Shared::disabled()));
+        let search = Search::new(None, None, CACHE_BYTES, Arc::new(Shared::disabled()));
         let read = search
             .interpret("jenkins alternative with a container registry", &loaded)
             .await;
