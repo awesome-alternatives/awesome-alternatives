@@ -1,0 +1,4 @@
+name: SQLite
+repository: https://github.com/sqlite/sqlite
+category: relational-database
+terms: open

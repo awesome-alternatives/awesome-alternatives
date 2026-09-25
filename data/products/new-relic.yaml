@@ -1,0 +1,5 @@
+name: New Relic
+homepage: https://newrelic.com
+vendor: New Relic
+category: tracing
+description: Hosted observability platform for application performance monitoring, logs and infrastructure metrics.

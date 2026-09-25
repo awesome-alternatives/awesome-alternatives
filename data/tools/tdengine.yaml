@@ -1,0 +1,8 @@
+name: TDengine
+repository: https://github.com/taosdata/TDengine
+category: time-series-database
+replaces:
+  - tool: influxdb
+    fit: full
+    note: Time series queried in SQL, with one table per device grouped under supertables.
+deploy: [container]

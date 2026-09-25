@@ -1,0 +1,5 @@
+name: Amazon SQS
+homepage: https://aws.amazon.com/sqs/
+vendor: Amazon Web Services
+category: message-streaming
+description: Hosted message queue service from AWS.

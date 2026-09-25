@@ -1,0 +1,11 @@
+name: Garage
+repository: https://github.com/deuxfleurs-org/garage
+category: object-storage
+replaces:
+  - tool: amazon-s3
+    fit: partial
+    note: The core S3 API on your own servers, built for small nodes spread across sites.
+  - tool: minio
+    fit: partial
+    note: Replication instead of erasure coding, and a smaller part of the S3 API.
+deploy: [container, helm]

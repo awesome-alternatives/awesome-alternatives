@@ -1,0 +1,8 @@
+name: Consul
+repository: https://github.com/hashicorp/consul
+category: service-mesh
+terms: source-available
+replaces:
+  - tool: istio
+    fit: full
+    note: Service discovery and a mesh that also spans virtual machines outside Kubernetes.

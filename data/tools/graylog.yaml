@@ -1,0 +1,9 @@
+name: Graylog
+repository: https://github.com/Graylog2/graylog2-server
+category: log-storage
+terms: source-available
+replaces:
+  - tool: splunk
+    fit: full
+    note: Log collection, search, dashboards and alerts, with its own query syntax instead of SPL.
+deploy: [container, compose, package]

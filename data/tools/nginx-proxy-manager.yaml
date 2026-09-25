@@ -1,0 +1,4 @@
+name: Nginx Proxy Manager
+repository: https://github.com/NginxProxyManager/nginx-proxy-manager
+category: reverse-proxy
+deploy: [container, compose]

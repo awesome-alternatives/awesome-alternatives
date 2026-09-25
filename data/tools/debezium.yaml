@@ -1,0 +1,8 @@
+name: Debezium
+repository: https://github.com/debezium/debezium
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Change data capture from databases into Kafka or other sinks; no SaaS application connectors.
+deploy: [container]

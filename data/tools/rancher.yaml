@@ -1,0 +1,7 @@
+name: Rancher
+repository: https://github.com/rancher/rancher
+category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: full
+    note: A web UI served from a management cluster, which also provisions and upgrades clusters.

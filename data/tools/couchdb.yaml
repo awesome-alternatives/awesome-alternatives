@@ -1,0 +1,8 @@
+name: Apache CouchDB
+repository: https://github.com/apache/couchdb
+category: document-database
+replaces:
+  - tool: mongodb
+    fit: full
+    note: JSON documents over an HTTP API with multi-primary replication, not the MongoDB protocol.
+deploy: [container, helm, package]

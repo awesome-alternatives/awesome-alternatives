@@ -1,0 +1,8 @@
+name: Parse Server
+repository: https://github.com/parse-community/parse-server
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: full
+    note: Database, auth, files, push and cloud functions behind one API, on Node.js with MongoDB or PostgreSQL.
+deploy: [container]

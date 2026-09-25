@@ -1,0 +1,8 @@
+name: Zabbix
+repository: https://github.com/zabbix/zabbix
+category: metrics
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Infrastructure and network monitoring with agents, templates and alerting; no APM.
+deploy: [container, compose, package]

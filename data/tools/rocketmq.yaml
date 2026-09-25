@@ -1,0 +1,8 @@
+name: Apache RocketMQ
+repository: https://github.com/apache/rocketmq
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: full
+    note: Streaming and messaging with transactional and delayed messages, through its own protocol and clients.
+deploy: [container]

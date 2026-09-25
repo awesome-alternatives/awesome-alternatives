@@ -1,0 +1,8 @@
+name: TiDB
+repository: https://github.com/pingcap/tidb
+category: relational-database
+replaces:
+  - tool: mysql
+    fit: full
+    note: Speaks the MySQL protocol and scales out across nodes; triggers and some MySQL features are missing.
+deploy: [container]

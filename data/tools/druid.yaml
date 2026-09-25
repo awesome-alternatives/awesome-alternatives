@@ -1,0 +1,4 @@
+name: Apache Druid
+repository: https://github.com/apache/druid
+category: analytical-database
+deploy: [container]

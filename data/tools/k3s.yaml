@@ -1,0 +1,7 @@
+name: K3s
+repository: https://github.com/k3s-io/k3s
+category: local-kubernetes
+replaces:
+  - tool: minikube
+    fit: full
+    note: A single-binary Kubernetes distribution that runs on a laptop and in production alike.

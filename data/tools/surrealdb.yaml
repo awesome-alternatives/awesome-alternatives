@@ -1,0 +1,9 @@
+name: SurrealDB
+repository: https://github.com/surrealdb/surrealdb
+category: document-database
+terms: source-available
+replaces:
+  - tool: mongodb
+    fit: partial
+    note: A multi-model database queried in SurrealQL, not through the MongoDB protocol.
+deploy: [container, helm, binary]

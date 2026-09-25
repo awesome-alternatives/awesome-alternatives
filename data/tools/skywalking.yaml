@@ -1,0 +1,8 @@
+name: Apache SkyWalking
+repository: https://github.com/apache/skywalking
+category: tracing
+replaces:
+  - tool: new-relic
+    fit: partial
+    note: APM with language agents, service topology and alerting; logs and metrics are secondary.
+deploy: [container, helm]

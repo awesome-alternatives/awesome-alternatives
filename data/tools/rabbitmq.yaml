@@ -1,0 +1,12 @@
+name: RabbitMQ
+repository: https://github.com/rabbitmq/rabbitmq-server
+category: message-streaming
+terms: open
+replaces:
+  - tool: amazon-sqs
+    fit: full
+    note: Queues over AMQP, MQTT and STOMP on your own servers.
+  - tool: kafka
+    fit: partial
+    note: A message broker first; streams add a replayable, Kafka-like log.
+deploy: [binary, package]

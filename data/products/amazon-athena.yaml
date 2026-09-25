@@ -1,0 +1,5 @@
+name: Amazon Athena
+homepage: https://aws.amazon.com/athena/
+vendor: Amazon Web Services
+category: analytical-database
+description: Hosted, serverless SQL query service over data stored in Amazon S3.

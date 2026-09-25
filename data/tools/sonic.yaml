@@ -1,0 +1,8 @@
+name: Sonic
+repository: https://github.com/valeriansaliou/sonic
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: A lightweight index that returns document IDs only, next to the database that holds the documents.
+deploy: [container, binary]

@@ -1,0 +1,7 @@
+name: KubeVirt
+repository: https://github.com/kubevirt/kubevirt
+category: virtualization
+replaces:
+  - tool: vmware-vsphere
+    fit: partial
+    note: Virtual machines as Kubernetes resources, run next to containers on the same cluster.
