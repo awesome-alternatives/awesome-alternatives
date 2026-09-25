@@ -18,10 +18,10 @@ export const pages: Pages = {
     },
     refresh: {
       heading: "La mise à jour nocturne",
-      workflowBefore:
-        "Chaque jour à {refreshedAt}, et à chaque changement des données du catalogue sur la branche main, un",
-      workflowLink: "workflow GitHub Actions",
-      workflowAfter: "lit chaque dépôt listé depuis l'API GitHub :",
+      runBefore:
+        "Chaque nuit, et à chaque changement des données du catalogue sur la branche main, le",
+      runLink: "refresh",
+      runAfter: "lit chaque dépôt listé depuis l'API GitHub :",
       reads: [
         "description, page d'accueil, langage, licence, étoiles, forks et topics",
         "si le dépôt est archivé, et la date de son dernier push",
@@ -35,7 +35,7 @@ export const pages: Pages = {
       releaseMiddle: "ou lance",
       releaseAfter: "dans son workflow de release.",
       commit:
-        "Dès que quelque chose a changé, le workflow commite le nouveau catalogue et une nouvelle version de ce site est publiée. Si GitHub ne renvoie plus le dépôt d'un outil listé, parce qu'il a été supprimé ou rendu privé, la mise à jour ne publie rien et échoue, pour qu'une personne regarde : un outil ne quitte le catalogue que par une pull request qui retire son entrée.",
+        "Dès que quelque chose a changé, le refresh commite le nouveau catalogue et une nouvelle version de ce site est publiée. Si GitHub ne renvoie plus le dépôt d'un outil listé, parce qu'il a été supprimé ou rendu privé, la mise à jour ne publie rien et échoue, pour qu'une personne regarde : un outil ne quitte le catalogue que par une pull request qui retire son entrée.",
     },
     marks: {
       heading: "Marques",

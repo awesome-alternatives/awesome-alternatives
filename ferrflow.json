@@ -24,8 +24,7 @@
         "data/categories.yaml",
         "data/migrations",
         "scripts/lib/types.ts",
-        "scripts/lib/rules.ts",
-        ".github/workflows/refresh.yml"
+        "scripts/lib/rules.ts"
       ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
     },

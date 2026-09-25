@@ -18,10 +18,10 @@ export const pages: Pages = {
     },
     refresh: {
       heading: "Der nächtliche Abgleich",
-      workflowBefore:
-        "Täglich um {refreshedAt}, und immer wenn sich die Katalogdaten auf dem main-Branch ändern, liest ein",
-      workflowLink: "GitHub-Actions-Workflow",
-      workflowAfter: "jedes gelistete Repository über die GitHub-API aus:",
+      runBefore:
+        "Jede Nacht, und immer wenn sich die Katalogdaten auf dem main-Branch ändern, liest der",
+      runLink: "Refresh",
+      runAfter: "jedes gelistete Repository über die GitHub-API aus:",
       reads: [
         "Beschreibung, Homepage, Sprache, Lizenz, Sterne, Forks und Topics",
         "ob das Repository archiviert ist, und das Datum seines letzten Push",
@@ -35,7 +35,7 @@ export const pages: Pages = {
       releaseMiddle: "installiert ist oder der Release-Workflow",
       releaseAfter: "ausführt.",
       commit:
-        "Wenn sich etwas geändert hat, committet der Workflow den neuen Katalog und ein neuer Build dieser Seite geht raus. Gibt GitHub das Repository eines gelisteten Tools nicht mehr zurück, weil es gelöscht oder auf privat gestellt wurde, veröffentlicht der Abgleich nichts und schlägt fehl, damit ein Mensch nachsieht: Ein Tool verlässt den Katalog nur über einen Pull Request, der seinen Eintrag entfernt.",
+        "Wenn sich etwas geändert hat, committet der Refresh den neuen Katalog und ein neuer Build dieser Seite geht raus. Gibt GitHub das Repository eines gelisteten Tools nicht mehr zurück, weil es gelöscht oder auf privat gestellt wurde, veröffentlicht der Abgleich nichts und schlägt fehl, damit ein Mensch nachsieht: Ein Tool verlässt den Katalog nur über einen Pull Request, der seinen Eintrag entfernt.",
     },
     marks: {
       heading: "Kennzeichen",
