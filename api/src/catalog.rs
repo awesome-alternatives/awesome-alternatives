@@ -103,6 +103,14 @@ pub struct Tool {
     pub capabilities: BTreeMap<String, Capability>,
     #[serde(default)]
     pub deploy: Vec<DeployMethod>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub star_history: Option<StarHistory>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
+pub struct StarHistory {
+    pub from: String,
+    pub stars: Vec<u64>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
@@ -334,5 +342,26 @@ mod tests {
 
         entry["deploy"] = serde_json::json!(["snap"]);
         assert!(serde_json::from_value::<Tool>(entry).is_err());
+    }
+
+    #[test]
+    fn a_star_history_comes_through_and_is_left_out_when_absent() {
+        let gitea = crate::fixtures::tool("gitea", "Go", "MIT", &[], 3);
+        let mut entry = serde_json::to_value(&gitea).unwrap();
+        assert!(entry.get("starHistory").is_none());
+
+        entry["starHistory"] = serde_json::json!({ "from": "2026-09-22", "stars": [1, 2, 3] });
+        let read: Tool = serde_json::from_value(entry).unwrap();
+        assert_eq!(
+            read.star_history,
+            Some(StarHistory {
+                from: "2026-09-22".into(),
+                stars: vec![1, 2, 3],
+            })
+        );
+        assert_eq!(
+            serde_json::to_value(&read).unwrap()["starHistory"],
+            serde_json::json!({ "from": "2026-09-22", "stars": [1, 2, 3] })
+        );
     }
 }

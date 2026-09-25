@@ -58,5 +58,6 @@ pub fn tool(
         self_host: false,
         capabilities: Default::default(),
         deploy: Vec::new(),
+        star_history: None,
     }
 }
