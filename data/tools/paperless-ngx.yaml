@@ -1,0 +1,16 @@
+name: Paperless-ngx
+repository: https://github.com/paperless-ngx/paperless-ngx
+category: document-management
+replaces:
+  - tool: paperless-ng
+    fit: drop-in
+    note: Its maintained successor, started by pointing the existing setup at the new container image.
+    migration: https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/setup.md#migrating-to-paperless-ngx
+  - tool: paperless
+    fit: full
+    note: Its maintained successor, reading the same documents and database after the setup is adapted.
+    migration: https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/setup.md#migrating-to-paperless-ngx
+  - tool: docuware
+    fit: partial
+    note: OCR, tagging, matching rules and full-text search for a document archive, without approval workflows or ERP integrations.
+deploy: [container, compose]

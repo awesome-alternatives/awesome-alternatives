@@ -475,6 +475,11 @@ office-suite:
   name: Office suites
   description: Documents, spreadsheets and presentations.
 
+document-management:
+  name: Document management
+  description: Scan, OCR, tag and search paper and PDF documents.
+  selfHost: true
+
 design-tool:
   name: Interface design tools
   description: Design and prototype user interfaces on a shared canvas.

@@ -1,0 +1,8 @@
+name: Docspell
+repository: https://github.com/eikek/docspell
+category: document-management
+replaces:
+  - tool: paperless-ngx
+    fit: full
+    note: Suggests tags, correspondents and dates with NLP, running as a REST server and a separate job executor on the JVM.
+deploy: [container, compose, helm, package]
