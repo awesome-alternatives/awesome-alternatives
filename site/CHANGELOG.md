@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.61.2] - 2026-09-25
+
+### Bug Fixes
+
+- perf(site): load JetBrains Mono as one preloaded variable font with metric-matched fallbacks (#193)
+
 ## [0.61.1] - 2026-09-25
 
 ### Bug Fixes
