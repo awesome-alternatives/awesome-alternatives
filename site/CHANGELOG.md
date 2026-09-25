@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.71.0] - 2026-09-25
+
+### Features
+
+- feat(catalog): add a self-hosted PaaS category (#225)
+
 ## [0.70.4] - 2026-09-25
 
 ### Bug Fixes
