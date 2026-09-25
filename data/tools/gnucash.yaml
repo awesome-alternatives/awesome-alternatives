@@ -1,0 +1,10 @@
+name: GnuCash
+repository: https://github.com/Gnucash/gnucash
+category: personal-finance
+terms: open
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Double-entry accounts, investments and reports on the desktop, with import of Quicken's QIF and QFX files; online banking goes through AqBanking and mostly serves German banks.
+    migration: https://wiki.gnucash.org/wiki/Quicken_Migration
+deploy: [binary]

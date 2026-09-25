@@ -1,0 +1,8 @@
+name: Firefly III
+repository: https://github.com/firefly-iii/firefly-iii
+category: personal-finance
+replaces:
+  - tool: ynab
+    fit: partial
+    note: Accounts, budgets, rules and reports in a web app, but budgets are spending limits rather than YNAB's zero-based envelopes.
+deploy: [container, compose, helm]

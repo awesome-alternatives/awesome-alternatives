@@ -1,0 +1,5 @@
+name: YNAB
+homepage: https://www.ynab.com
+vendor: YNAB
+category: personal-finance
+description: Hosted budgeting app built around zero-based budgeting, where every unit of income is assigned to a category.

@@ -1,0 +1,4 @@
+name: ezBookkeeping
+repository: https://github.com/mayswind/ezbookkeeping
+category: personal-finance
+deploy: [container, binary]
