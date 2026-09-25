@@ -1,10 +1,12 @@
 import { Fragment, type ComponentChildren } from "preact";
+import type { StarHistory } from "../../../scripts/lib/types.ts";
 import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
 import { comparePath } from "../lib/compare.ts";
 import { migrationPath } from "../lib/migrations.ts";
 import { day, growth, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
+import { Sparkline } from "./Sparkline.tsx";
 import { slugify } from "../lib/slug.ts";
 import type { Boost } from "../lib/trending.ts";
 import type { ToolView } from "../lib/types.ts";
@@ -22,6 +24,7 @@ interface Props {
   targetName?: string;
   comparable?: boolean;
   boost?: Boost;
+  starHistory?: StarHistory;
   replaces?: Replaced[];
   notes?: boolean;
   criteria?: string;
@@ -36,6 +39,7 @@ export function ToolCard({
   targetName,
   comparable,
   boost,
+  starHistory,
   replaces,
   notes,
   criteria,
@@ -65,7 +69,7 @@ export function ToolCard({
             {strings.fit[replacement.fit]}
           </a>
         )}
-        {boost && <BoostMark boost={boost} locale={locale} strings={card} />}
+        {boost && <BoostMark boost={boost} series={starHistory} locale={locale} strings={card} />}
         {target && comparable && (
           <Mark
             icon="compare"
@@ -177,7 +181,17 @@ function Fact({ label, value }: { label: string; value: ComponentChildren }) {
   );
 }
 
-function BoostMark({ boost, locale, strings }: { boost: Boost; locale: Locale; strings: Islands["card"] }) {
+function BoostMark({
+  boost,
+  series,
+  locale,
+  strings,
+}: {
+  boost: Boost;
+  series: StarHistory | undefined;
+  locale: Locale;
+  strings: Islands["card"];
+}) {
   const percent = boost.growth === null ? null : growth(boost.growth, locale);
   const gained = format(boost.days === 1 ? strings.boostOneDay : strings.boost, {
     n: stars(boost.stars),
@@ -186,6 +200,7 @@ function BoostMark({ boost, locale, strings }: { boost: Boost; locale: Locale; s
   const detail = percent === null ? gained : `${gained} (${percent})`;
   return (
     <span className="boost" data-tip={detail} tabIndex={0}>
+      {series && <Sparkline series={series} />}
       <span aria-hidden="true">
         +{stars(boost.stars)} ★{percent !== null && <span className="boost-growth">{percent}</span>}
       </span>
