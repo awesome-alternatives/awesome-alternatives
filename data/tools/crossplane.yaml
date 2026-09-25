@@ -1,0 +1,10 @@
+name: Crossplane
+repository: https://github.com/crossplane/crossplane
+category: infrastructure-as-code
+replaces:
+  - tool: terraform
+    fit: partial
+    note: Cloud resources declared as Kubernetes objects and reconciled continuously by controllers.
+  - tool: aws-cloudformation
+    fit: partial
+    note: Manages AWS and other clouds from a Kubernetes cluster.

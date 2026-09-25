@@ -1,0 +1,4 @@
+name: Citus
+repository: https://github.com/citusdata/citus
+category: distributed-sql
+deploy: [container, package]

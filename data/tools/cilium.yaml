@@ -1,0 +1,7 @@
+name: Cilium
+repository: https://github.com/cilium/cilium
+category: service-mesh
+replaces:
+  - tool: istio
+    fit: partial
+    note: eBPF networking with a sidecar-free mesh; fewer traffic management features than Istio.

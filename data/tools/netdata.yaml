@@ -1,0 +1,9 @@
+name: Netdata
+repository: https://github.com/netdata/netdata
+category: metrics
+terms: open-core
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Per-second infrastructure metrics and alerts; the agent is GPL, its dashboard UI is closed source.
+deploy: [container, helm, binary, package]

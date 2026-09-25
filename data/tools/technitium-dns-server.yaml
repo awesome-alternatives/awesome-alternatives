@@ -1,0 +1,11 @@
+name: Technitium DNS Server
+repository: https://github.com/TechnitiumSoftware/DnsServer
+category: dns-sinkhole
+replaces:
+  - tool: pi-hole
+    fit: full
+    note: A full authoritative and recursive DNS server that also blocks ads, with encrypted DNS built in.
+  - tool: nextdns
+    fit: full
+    note: Encrypted DNS, block lists and per-client rules on your own server.
+deploy: [container, compose]

@@ -1,0 +1,11 @@
+name: Trino
+repository: https://github.com/trinodb/trino
+category: analytical-database
+replaces:
+  - tool: amazon-athena
+    fit: full
+    note: "Athena's current engine is based on Trino; here you run the cluster yourself."
+  - tool: bigquery
+    fit: partial
+    note: Distributed SQL over object storage and other databases, which keep the data.
+deploy: [container, helm]

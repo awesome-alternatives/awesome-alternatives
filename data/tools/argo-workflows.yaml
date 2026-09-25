@@ -1,0 +1,8 @@
+name: Argo Workflows
+repository: https://github.com/argoproj/argo-workflows
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: full
+    note: Workflows declared as Kubernetes resources, each step a container, instead of Python DAGs.
+deploy: [container, helm, binary]

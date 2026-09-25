@@ -1,0 +1,8 @@
+name: Portainer
+repository: https://github.com/portainer/portainer
+category: kubernetes-ui
+terms: open
+replaces:
+  - tool: lens
+    fit: partial
+    note: A web UI for Docker, Swarm and Kubernetes, with fewer Kubernetes views than Lens.

@@ -1,0 +1,11 @@
+name: Casdoor
+repository: https://github.com/casdoor/casdoor
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: full
+    note: OIDC, OAuth 2, SAML, CAS and LDAP with social logins, on your own servers.
+  - tool: okta
+    fit: partial
+    note: Single sign-on and MFA for your apps; no workforce lifecycle management.
+deploy: [container, compose, helm, binary]

@@ -1,0 +1,12 @@
+name: SigNoz
+repository: https://github.com/SigNoz/signoz
+category: tracing
+terms: open-core
+replaces:
+  - tool: datadog
+    fit: full
+    note: Metrics, logs and traces in one app, built on OpenTelemetry and ClickHouse.
+  - tool: new-relic
+    fit: full
+    note: APM, logs and dashboards from OpenTelemetry data, on your own servers.
+deploy: [container, compose, helm]

@@ -1,0 +1,7 @@
+name: containerd
+repository: https://github.com/containerd/containerd
+category: container-engine
+replaces:
+  - tool: docker
+    fit: partial
+    note: The runtime Docker itself runs on, without image builds or the Docker CLI; driven by Kubernetes or nerdctl.
