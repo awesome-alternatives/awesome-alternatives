@@ -146,6 +146,10 @@ export const es: Messages = {
     title: "Herramientas publicadas por {name}",
     description: "{count} herramientas del catálogo que pertenecen a {name} en GitHub, con lenguaje, licencia, estrellas y última versión.",
     lede: "Repositorios que pertenecen a {name} en GitHub.",
+    kindLede: {
+      organization: "Repositorios que pertenecen a {name}, una organización en GitHub.",
+      user: "Repositorios que pertenecen a {name}, una persona en GitHub.",
+    },
     profile: "Perfil de GitHub ↗",
     website: "Sitio web ↗",
   },
@@ -202,6 +206,7 @@ export const es: Messages = {
     archived: "archivado",
     aboutLabel: "Acerca de",
     owner: "Propietario",
+    ownerKind: { organization: "organización", user: "persona" },
     archivedNote:
       "Este repositorio está archivado y ya no recibe cambios. Aparece en la lista para que puedas encontrar lo que lo sustituye.",
     signed: "Versión firmada, verificada por GitHub",

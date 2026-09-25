@@ -13,7 +13,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import Base from "../../../layouts/Base.astro";
 import { withHome } from "../../../lib/breadcrumbs.ts";
 import { canonicalForTool } from "../../../lib/canonical.ts";
-import { categories, checkedAt, nameOf, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
+import { categories, checkedAt, nameOf, ownerFacts, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
 import { comparePath, pairForTool } from "../../../lib/compare.ts";
 import { loginOf } from "../../../lib/owners.ts";
 import { alternativesTo } from "../../../lib/filter.ts";
@@ -68,6 +68,7 @@ const replaces = tool.replaces.map((r) => ({
   notes: withNotes.has(r.tool) ? pathFor(locale, migrationPath(r.tool, tool.slug)) : null,
 }));
 const login = loginOf(repo.fullName);
+const ownerKind = ownerFacts(login)?.kind;
 const comparable = pairForTool(pairs, tool.slug);
 const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.b : comparable.a);
 const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
@@ -152,7 +153,10 @@ const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
         <dl class="about-facts">
           <div class="full">
             <dt>{m.tool.owner}</dt>
-            <dd><a href={ownerHref(locale, login)}>{ownerName(login)}</a></dd>
+            <dd>
+              <a href={ownerHref(locale, login)}>{ownerName(login)}</a>
+              {ownerKind && <span class="owner-kind"> {m.tool.ownerKind[ownerKind]}</span>}
+            </dd>
           </div>
           <div>
             <dt>{m.tool.stars}</dt>

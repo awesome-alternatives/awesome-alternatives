@@ -38,7 +38,7 @@ const website = webHref(facts?.website);
   context={m.context}
   parent={pathFor(locale, "/owners/")}
   heading={name}
-  lede={format(m.lede, { name })}
+  lede={format(facts ? m.kindLede[facts.kind] : m.lede, { name })}
   tools={tools}
 >
   {facts?.bio && <p class="owner-bio">{facts.bio}</p>}
