@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.1] - 2026-09-25
+
+### Bug Fixes
+
+- fix(refresh): leave today's bucket to real-time aggregation after a backfill (#215)
+
 ## [0.2.0] - 2026-09-25
 
 ### Features
