@@ -37,9 +37,12 @@ export function pathFor(locale: Locale, path: string): string {
   const cut = path.search(/[#?]/);
   const route = cut < 0 ? path : path.slice(0, cut);
   const rest = cut < 0 ? "" : path.slice(cut);
-  const bare = stripLocale(route);
+  const page = stripLocale(route);
+  const bare = FILE.test(route) ? page.slice(0, -1) : page;
   return `${locale === DEFAULT_LOCALE ? bare : `/${locale}${bare}`}${rest}`;
 }
+
+const FILE = /\.[a-z]+$/i;
 
 export function format(template: string, values: Record<string, string | number> = {}): string {
   return template.replace(/\{(\w+)\}/g, (whole, key: string) => {

@@ -19,7 +19,7 @@ for attempt in 1 2 3 4 5; do
   git fetch --quiet origin main
   git reset --quiet --hard origin/main
   "$@"
-  git add generated/catalog.json README.md
+  git add generated/catalog.json generated/events.json README.md
   if git diff --cached --quiet; then
     echo "catalog unchanged"
     exit 0

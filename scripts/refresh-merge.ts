@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { loadSoundCatalog } from "./lib/catalog.ts";
+import { gitEventHistory } from "./lib/event-history.ts";
 import { mergeEntries, type RefreshedEntry } from "./lib/merge.ts";
 import { publishOrExplain, readPublished } from "./lib/publish.ts";
 
@@ -17,6 +18,7 @@ const entries = await Promise.all(
   files.map(async (f) => JSON.parse(await readFile(join(entriesDir, f), "utf8")) as RefreshedEntry),
 );
 
-if (await publishOrExplain(root, catalog, mergeEntries(await readPublished(root), entries))) {
+const context = { now: new Date(), history: gitEventHistory(root) };
+if (await publishOrExplain(root, catalog, mergeEntries(await readPublished(root), entries), context)) {
   console.log(`merged ${entries.map((e) => e.slug).join(", ")}`);
 }

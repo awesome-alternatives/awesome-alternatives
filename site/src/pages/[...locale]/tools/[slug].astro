@@ -70,6 +70,7 @@ const replaces = tool.replaces.map((r) => ({
 const login = loginOf(repo.fullName);
 const comparable = pairForTool(pairs, tool.slug);
 const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.b : comparable.a);
+const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
 ---
 
 <Base
@@ -84,6 +85,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
     softwareSourceCode(tool, absolute(pathFor(locale, `/tools/${tool.slug}/`))),
     breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: absolute(crumb.href) }))),
   ]}
+  feeds={[{ title: format(m.changes.toolFeedTitle, { name: tool.name }), path: feed }]}
 >
   <div class="wide">
     <Breadcrumbs locale={locale} crumbs={crumbs} />
@@ -239,6 +241,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
           <a class="repo-link" href={source}>github.com/{repo.fullName}{tool.path && `/${tool.path}`} ↗</a>
           {homepage && <a href={homepage}>{m.tool.website}</a>}
           <a href={edit}>{m.tool.edit}</a>
+          <a href={feed}>{format(m.changes.followTool, { name: tool.name })}</a>
         </p>
       </aside>
     </div>

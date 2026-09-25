@@ -47,7 +47,7 @@ jobs:
       - name: Keep the refreshed catalog aside
         run: |
           mkdir -p "$RUNNER_TEMP/refreshed/generated"
-          cp generated/catalog.json "$RUNNER_TEMP/refreshed/generated/"
+          cp generated/catalog.json generated/events.json "$RUNNER_TEMP/refreshed/generated/"
           cp README.md "$RUNNER_TEMP/refreshed/"
       - name: Commit the refreshed catalog
         env:

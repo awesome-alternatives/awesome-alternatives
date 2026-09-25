@@ -6,7 +6,7 @@ import ComparisonTable from "../../../components/ComparisonTable.astro";
 import LinkGrid from "../../../components/LinkGrid.astro";
 import ToolListing from "../../../components/ToolListing.astro";
 import type { Locale } from "../../../i18n/index.ts";
-import { messages, pathFor } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
 import { categories, categoryGroups, categoryName, targetItems, targets } from "../../../lib/catalog.ts";
 import { categoryDescription, categoryTitle } from "../../../lib/intent.ts";
@@ -34,6 +34,7 @@ const members = new Set(tools.map((tool) => tool.slug));
 const replacedItems = targetItems(
   targets().filter((target) => target.alternatives.some((tool) => members.has(tool.slug))),
 ).map((item) => ({ ...item, href: pathFor(locale, item.href) }));
+const feed = pathFor(locale, `/categories/${Astro.params.key}/feed.xml`);
 ---
 
 <ToolListing
@@ -45,7 +46,9 @@ const replacedItems = targetItems(
   heading={name}
   lede={category.description}
   tools={tools}
+  feeds={[{ title: format(m.changes.categoryFeedTitle, { name }), path: feed }]}
 >
+  <p class="feed-link"><a href={feed}>{m.changes.followCategory}</a></p>
   <section class="page-section">
     <h2>{m.category.comparison}</h2>
     <ComparisonTable locale={locale} caption={name} tools={tools} selfHostCategories={selfHostCategories} />

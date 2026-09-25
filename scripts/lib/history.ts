@@ -14,8 +14,12 @@ interface Snapshot {
   tools: { slug: string; repo: { stars: number } }[];
 }
 
+export function fileLogArgs(path: string, since: Date | null = null): string[] {
+  return ["log", ...(since ? [`--since=${since.toISOString()}`] : []), "--format=%H %cI", "--", path];
+}
+
 export function catalogLogArgs(since: Date | null = null): string[] {
-  return ["log", ...(since ? [`--since=${since.toISOString()}`] : []), "--format=%H %cI", "--", CATALOG_PATH];
+  return fileLogArgs(CATALOG_PATH, since);
 }
 
 export function historyLogArgs(now: Date): string[] {
@@ -51,21 +55,37 @@ export function starSeries(snapshots: readonly { at: string; catalog: Snapshot }
   return series;
 }
 
-export interface CatalogRevision {
-  at: string;
+export function git(root: string, args: readonly string[]): string {
+  return execFileSync("git", args, { cwd: root, encoding: "utf8", maxBuffer: 256 * 1024 * 1024, stdio: ["ignore", "pipe", "pipe"] });
+}
+
+export function logRevisions(root: string, logArgs: readonly string[]): Revision[] {
+  return parseRevisions(git(root, logArgs));
+}
+
+export interface FileRevision extends Revision {
+  content: unknown;
+}
+
+export function* fileRevisions(root: string, path: string, revisions: readonly Revision[]): Generator<FileRevision> {
+  for (const revision of revisions) {
+    let content: unknown;
+    try {
+      content = JSON.parse(git(root, ["show", `${revision.sha}:${path}`]));
+    } catch {
+      continue;
+    }
+    yield { ...revision, content };
+  }
+}
+
+export interface CatalogRevision extends Revision {
   catalog: unknown;
 }
 
 export function* dailyCatalogs(root: string, logArgs: readonly string[]): Generator<CatalogRevision> {
-  const git = (args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8", maxBuffer: 256 * 1024 * 1024 });
-  for (const { sha, at } of lastPerDay(parseRevisions(git([...logArgs])))) {
-    let catalog: unknown;
-    try {
-      catalog = JSON.parse(git(["show", `${sha}:${CATALOG_PATH}`]));
-    } catch {
-      continue;
-    }
-    yield { at, catalog };
+  for (const { content, ...revision } of fileRevisions(root, CATALOG_PATH, lastPerDay(logRevisions(root, logArgs)))) {
+    yield { ...revision, catalog: content };
   }
 }
 

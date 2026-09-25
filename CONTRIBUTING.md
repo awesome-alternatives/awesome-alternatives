@@ -269,6 +269,32 @@ node scripts/refresh-merge.ts entries
 The first writes the entry to `entries/release-plz.json`, the second splices every file in
 `entries/` into the published catalog and leaves the other tools as they were.
 
+### What changed: `generated/events.json`
+
+Both paths also append to [`generated/events.json`](generated/events.json), the dated stream behind
+[awesome-alternatives.com/changes/](https://awesome-alternatives.com/changes/) and its RSS feeds
+(the whole catalog, `/tools/<slug>/feed.xml`, `/categories/<key>/feed.xml`). Before writing, the
+refresh diffs the catalog it is about to publish against the one already published, matching tools
+by slug, and records a short list of changes: a tool added or removed, a licence changed, a
+repository renamed, archived or unarchived, the `inactive` flag appearing or clearing, and a new
+latest release that is not a prerelease. Star counts, and fields an older catalog simply did not
+have yet, never produce an event. The catalog, the event log and the README are written together.
+
+The log keeps a year of events and the last 10 releases of each tool. An event is dated when the
+refresh saw it. Its commit is not known until the push, so it is stored as `null` and the next
+refresh that has the full history (the nightly one does) fills in the first commit whose
+`generated/events.json` carries it; until then the site links to that day's commits. That relies on
+the refresh commits reaching `main` as they were pushed: squashing or rewriting them leaves those
+events without a commit, and the refresh says so once they are two days old. The order of tools in
+the catalog does not matter, since tools are matched by slug.
+
+The file was seeded once from every commit of `generated/catalog.json` since 2026-09-22. To rebuild
+it from the history, which needs a full clone, delete it and run:
+
+```bash
+pnpm backfill-events
+```
+
 ### Daily facts and the cluster runner
 
 With `DATABASE_URL` set, `pnpm refresh` also writes one row per tool to the `tool_facts` table in

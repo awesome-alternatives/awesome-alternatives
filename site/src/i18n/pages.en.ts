@@ -33,6 +33,11 @@ export const pages = {
       releaseAfter: "in its release workflow.",
       commit:
         "When anything changed, the refresh commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the refresh publishes nothing and fails, so a person looks: a tool leaves the catalog only through a pull request that removes its entry.",
+      changesBefore:
+        "Each refresh also compares the new catalog with the previous one and records what changed: a licence, a repository name, an archive, a new release, a tool joining or leaving. The",
+      changesLink: "what changed",
+      changesAfter:
+        "page lists it by day, with an RSS feed for the whole catalog, one for each tool and one for each category. A change in stars never counts.",
     },
     marks: {
       heading: "Marks",

@@ -63,6 +63,16 @@ any of those, so a number in this list cannot be inflated or left to go stale.
 
 The site explains every warning a maintainer reviews on the [about page](https://awesome-alternatives.com/about/).
 
+## What changed
+
+Each refresh compares the catalog with the previous one and keeps a dated list of what changed:
+a licence, a renamed or archived repository, a new release, a tool joining or leaving. Star counts
+never count. The list is on [awesome-alternatives.com/changes/](https://awesome-alternatives.com/changes/),
+with an RSS feed for the whole catalog, one per tool (`/tools/<slug>/feed.xml`) and one per
+category (`/categories/<key>/feed.xml`). Following the feed of the tool you use tells you when it
+gets archived or relicensed, without an account. The raw stream is
+[`generated/events.json`](generated/events.json).
+
 ## Catalog
 
 Each category folds open. The same data, searchable in plain words ("semantic-release, but written

@@ -27,6 +27,12 @@ describe("pathFor", () => {
     assert.equal(pathFor("de", "/#browse"), "/de/#browse");
     assert.equal(pathFor("es", "/tools/?q=rust"), "/es/tools/?q=rust");
   });
+
+  test("leaves a file without the trailing slash a page gets, which nginx would answer with a 404", () => {
+    assert.equal(pathFor("en", "/feed.xml"), "/feed.xml");
+    assert.equal(pathFor("fr", "/tools/vite/feed.xml"), "/fr/tools/vite/feed.xml");
+    assert.equal(pathFor("de", "/licenses/mpl-2.0/"), "/de/licenses/mpl-2.0/");
+  });
 });
 
 test("every locale declares a writing direction the html element can use", () => {

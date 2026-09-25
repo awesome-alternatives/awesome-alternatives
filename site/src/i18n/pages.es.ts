@@ -35,6 +35,11 @@ export const pages: Pages = {
       releaseAfter: "en su workflow de release.",
       commit:
         "Cuando algo ha cambiado, la actualización confirma el nuevo catálogo y sale una nueva compilación de este sitio. Si GitHub deja de devolver el repositorio de una herramienta listada, porque se ha borrado o se ha hecho privado, la actualización no publica nada y falla, para que una persona lo revise: una herramienta solo sale del catálogo mediante un pull request que retira su entrada.",
+      changesBefore:
+        "Cada refresh compara además el nuevo catálogo con el anterior y anota lo que cambió: una licencia, el nombre de un repositorio, un archivado, una nueva release, una herramienta que entra o sale. La página",
+      changesLink: "qué ha cambiado",
+      changesAfter:
+        "lo muestra por día, con un feed RSS para todo el catálogo, uno por herramienta y uno por categoría. Un cambio de estrellas nunca cuenta.",
     },
     marks: {
       heading: "Marcas",

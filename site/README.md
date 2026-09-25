@@ -4,6 +4,14 @@ Static Astro build. Pages are prerendered from `../generated/catalog.json` and
 `../data/categories.yaml`; the search box is a React island that calls the [API](../api). `/feed.xml` is an RSS feed of
 the 50 most recently added tools, ordered by the `addedAt` the refresh keeps in the catalog.
 
+`/changes/` lists the latest 200 entries of `../generated/events.json` by day, and
+`/changes/feed.xml`, `/tools/<slug>/feed.xml` and `/categories/<key>/feed.xml` carry the latest 50
+of the whole catalog, one tool and one category. On the page and in the catalog and category feeds,
+the tools added on the same day form one entry ("298 tools added: ..."), listed after that day's other
+changes, so a batch import does not bury them; a day with a single addition keeps its normal line,
+and a tool's own feed is never grouped. Each item has a stable `guid` (the event, or the day for a
+group of additions), so a reader does not show it twice when its commit link is filled in later.
+
 `/compare/<a>-vs-<b>/` puts two tools side by side. A pair gets a page when the two sit on a
 `replaces` edge or share a target, and when at least one of those relations carries a note;
 archived repositories are left out. The slug pair is alphabetical, so a pair has one URL and

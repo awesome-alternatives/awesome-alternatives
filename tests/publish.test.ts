@@ -1,12 +1,14 @@
 import assert from "node:assert/strict";
-import { mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import type { Catalog } from "../scripts/lib/catalog.ts";
+import { EVENTS_PATH, eventsJson, parseEventLog } from "../scripts/lib/event-log.ts";
+import { mergeEntries } from "../scripts/lib/merge.ts";
 import { CATALOG_PATH, catalogJson, LostTools, lostTools, publish, publishOrExplain } from "../scripts/lib/publish.ts";
 import { END, START } from "../scripts/lib/render.ts";
-import type { EnrichedTool, Tool } from "../scripts/lib/types.ts";
+import type { CatalogEvent, EnrichedTool, Tool } from "../scripts/lib/types.ts";
 
 const slugs = (...names: string[]) => names.map((slug) => ({ slug }));
 
@@ -101,6 +103,7 @@ describe("publish", () => {
     });
     assert.equal(await readFile(join(root, CATALOG_PATH), "utf8"), before);
     assert.equal(await readFile(join(root, "README.md"), "utf8"), README);
+    await assert.rejects(access(join(root, EVENTS_PATH)));
   });
 
   it("publishes a run where a tool left data/tools through a pull request", async () => {
@@ -134,5 +137,61 @@ describe("publish", () => {
     assert.equal(process.exitCode, 1);
     process.exitCode = 0;
     assert.match(errors[0] ?? "", /^b: in the published catalog/);
+  });
+});
+
+describe("publish and the event log", () => {
+  const now = new Date("2026-09-25T03:00:00.000Z");
+  const context = { now, history: null };
+  const events = async (root: string) => parseEventLog(await readFile(join(root, EVENTS_PATH), "utf8"));
+  const archivedTool = (slug: string) => ({ ...enriched(slug), repo: { ...enriched(slug).repo, archived: true } });
+  const released = (slug: string, tag: string) => ({
+    ...enriched(slug),
+    release: { tag, publishedAt: now.toISOString(), url: "", source: "release" as const, signed: false },
+  });
+
+  it("starts the log on the first run and records what changed against the published catalog", async () => {
+    const root = await published(["a", "b"]);
+    await publish(root, catalogOf("a", "c"), { ...snapshot("a", "c"), tools: [archivedTool("a"), enriched("c")] }, context);
+    assert.deepEqual(
+      (await events(root)).map((e) => `${e.slug} ${e.type} ${e.at} ${e.commit}`),
+      [
+        "a archived 2026-09-25T03:00:00.000Z null",
+        "b removed 2026-09-25T03:00:00.000Z null",
+        "c added 2026-09-25T03:00:00.000Z null",
+      ],
+    );
+  });
+
+  it("appends to the published log and does not repeat itself when the same catalog is published again", async () => {
+    const root = await published(["a"]);
+    const earlier: CatalogEvent = { type: "added", slug: "a", at: "2026-09-22T00:00:00.000Z", commit: "abc" };
+    await writeFile(join(root, EVENTS_PATH), eventsJson([earlier]));
+    const next = { ...snapshot("a"), tools: [archivedTool("a")] };
+    await publish(root, catalogOf("a"), next, context);
+    await publish(root, catalogOf("a"), next, { now: new Date("2026-09-26T03:00:00.000Z"), history: null });
+    assert.deepEqual(
+      (await events(root)).map((e) => `${e.slug} ${e.type}`),
+      ["a added", "a archived"],
+    );
+  });
+
+  it("records the release of a tool refreshed on its own and nothing for the tools left as they were", async () => {
+    const root = await published(["a", "b"]);
+    const previous = JSON.parse(await readFile(join(root, CATALOG_PATH), "utf8"));
+    const merged = mergeEntries(previous, [{ slug: "b", tool: released("b", "v2.0.0"), owner: null }]);
+    await publish(root, catalogOf("a", "b"), merged, context);
+    assert.deepEqual(await events(root), [
+      { type: "released", slug: "b", at: now.toISOString(), commit: null, from: null, to: "v2.0.0" },
+    ]);
+  });
+
+  it("links earlier events to the commit found in the history", async () => {
+    const root = await published(["a"]);
+    const pending: CatalogEvent = { type: "archived", slug: "a", at: "2026-09-24T03:00:00.000Z", commit: null };
+    await writeFile(join(root, EVENTS_PATH), eventsJson([pending]));
+    const history = { revisionsSince: () => [{ sha: "c0ffee", events: [pending] }] };
+    await publish(root, catalogOf("a"), snapshot("a"), { now, history });
+    assert.equal((await events(root))[0]?.commit, "c0ffee");
   });
 });
