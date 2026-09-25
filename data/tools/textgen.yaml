@@ -1,0 +1,10 @@
+name: TextGen
+repository: https://github.com/oobabooga/textgen
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop and web app that runs open models locally through llama.cpp and other backends, or calls a hosted API.
+  - tool: claude
+    fit: partial
+    note: Desktop and web app that runs open models locally through llama.cpp and other backends, or calls a hosted API.

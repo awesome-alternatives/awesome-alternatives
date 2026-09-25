@@ -1,0 +1,8 @@
+name: Notepad++
+repository: https://github.com/notepad-plus-plus/notepad-plus-plus
+category: text-editor
+terms: open
+replaces:
+  - tool: sublime-text
+    fit: partial
+    note: A fast native editor with plugins, on Windows only.

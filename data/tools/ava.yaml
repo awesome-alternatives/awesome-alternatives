@@ -1,0 +1,7 @@
+name: AVA
+repository: https://github.com/avajs/ava
+category: javascript-test-runner
+replaces:
+  - tool: mocha
+    fit: full
+    note: Runs each test file in its own process, concurrently, with assertions built in.

@@ -1,0 +1,7 @@
+name: docsify
+repository: https://github.com/docsifyjs/docsify
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: partial
+    note: Renders Markdown from your repository in the browser, with no build step and no hosted editor.

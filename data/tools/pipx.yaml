@@ -1,0 +1,3 @@
+name: pipx
+repository: https://github.com/pypa/pipx
+category: python-packaging

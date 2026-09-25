@@ -1,0 +1,8 @@
+name: llamafile
+repository: https://github.com/mozilla-ai/llamafile
+category: llm-runtime
+terms: open
+replaces:
+  - tool: ollama
+    fit: partial
+    note: Packs llama.cpp and a model into one executable that runs on most systems, with a local API and web chat.

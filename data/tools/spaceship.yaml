@@ -1,0 +1,10 @@
+name: Spaceship
+repository: https://github.com/spaceship-prompt/spaceship-prompt
+category: shell-prompt
+replaces:
+  - tool: powerlevel10k
+    fit: full
+    note: An asynchronous zsh prompt built from configurable sections.
+  - tool: ohmyzsh
+    fit: partial
+    note: "Replaces the prompt theme only, not Oh My Zsh's plugins and aliases."

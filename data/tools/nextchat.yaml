@@ -1,0 +1,10 @@
+name: NextChat
+repository: https://github.com/ChatGPTNextWeb/NextChat
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A chat app you deploy yourself in front of OpenAI, Anthropic, Google or a local model. The model comes from elsewhere.
+  - tool: claude
+    fit: partial
+    note: A chat app you deploy yourself in front of OpenAI, Anthropic, Google or a local model. The model comes from elsewhere.

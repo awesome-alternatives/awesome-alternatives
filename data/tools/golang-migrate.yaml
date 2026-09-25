@@ -1,0 +1,8 @@
+name: migrate
+repository: https://github.com/golang-migrate/migrate
+category: database-migrations
+terms: open
+replaces:
+  - tool: flyway
+    fit: partial
+    note: Versioned up and down SQL migrations, as a CLI or a Go library, without repeatable migrations.

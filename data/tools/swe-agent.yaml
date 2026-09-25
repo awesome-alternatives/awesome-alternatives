@@ -1,0 +1,7 @@
+name: SWE-agent
+repository: https://github.com/SWE-agent/SWE-agent
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: Takes a GitHub issue and works on a fix with the model of your choice, aimed at autonomous runs rather than interactive sessions.

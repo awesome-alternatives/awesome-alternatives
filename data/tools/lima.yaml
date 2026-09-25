@@ -1,0 +1,10 @@
+name: Lima
+repository: https://github.com/lima-vm/lima
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: Linux VMs running containerd or Docker, driven from the command line, with no GUI.
+  - tool: orbstack
+    fit: partial
+    note: Linux VMs for containers on macOS, from the command line.
