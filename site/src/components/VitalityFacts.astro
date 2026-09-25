@@ -1,0 +1,59 @@
+---
+import type { EnrichedTool } from "../../../scripts/lib/types.ts";
+import type { Locale } from "../i18n/index.ts";
+import { format, messages, plural } from "../i18n/index.ts";
+import { checkedAt } from "../lib/catalog.ts";
+import { vitalityOf } from "../lib/vitality.ts";
+
+interface Props {
+  locale: Locale;
+  tool: EnrichedTool;
+}
+
+const { locale, tool } = Astro.props;
+const m = messages(locale);
+const { created, cadenceDays, contributors, platforms } = vitalityOf(tool, checkedAt);
+const age =
+  created.years === 0
+    ? format(m.vitality.ageNew, { year: created.year })
+    : plural(locale, m.vitality.age, created.years, { year: created.year });
+const active =
+  contributors &&
+  (contributors.capped
+    ? format(m.vitality.contributorsCapped, { n: contributors.count })
+    : plural(locale, m.vitality.contributorsCount, contributors.count));
+---
+
+<div class={cadenceDays === null ? "full" : undefined}>
+  <dt>{m.vitality.created}</dt>
+  <dd>{age}</dd>
+</div>
+{
+  cadenceDays !== null && (
+    <div>
+      <dt>{m.compare.factCadence}</dt>
+      <dd>{plural(locale, m.compare.cadence, cadenceDays)}</dd>
+    </div>
+  )
+}
+{
+  contributors && (
+    <div class="full">
+      <dt>{m.vitality.contributors}</dt>
+      <dd>
+        {active}
+        {contributors.monorepoPath && (
+          <span class="fact-note">{format(m.vitality.wholeRepository, { path: contributors.monorepoPath })}</span>
+        )}
+      </dd>
+    </div>
+  )
+}
+{
+  platforms && (
+    <div class="full">
+      <dt>{m.vitality.platforms}</dt>
+      <dd>{platforms}</dd>
+    </div>
+  )
+}

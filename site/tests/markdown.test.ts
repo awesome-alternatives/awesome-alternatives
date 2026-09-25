@@ -163,3 +163,25 @@ test("deploy methods are spelled out in their declared order, and the line is le
   assert.ok(out.includes("- Deploy: container image, Helm chart, OS packages\n"));
   assert.ok(!toolMarkdown(tool(), { ...around, selfHost: true }).includes("- Deploy:"));
 });
+
+test("the facts say how old the project is and who committed lately, and leave out platforms nobody named", () => {
+  const out = toolMarkdown(tool({ contributors: { count: 1, capped: false }, platforms: [] }), around);
+  assert.ok(out.includes("- Created: 2022, 4 years ago\n"));
+  assert.ok(out.includes("- Active contributors: 1 commit author on the default branch in the last 90 days, bots left out\n"));
+  assert.ok(!out.includes("- Platforms"));
+  assert.ok(!out.includes("- Release cadence"));
+});
+
+test("a capped contributor count reads as a lower bound, and a monorepo entry says it counts the whole repository", () => {
+  const out = toolMarkdown(
+    tool({
+      path: "apps/oxlint",
+      contributors: { count: 57, capped: true },
+      platforms: [{ os: "linux", architectures: ["x86_64"] }],
+    }),
+    around,
+  );
+  assert.match(out, /- Active contributors: at least 57 commit authors \(only the latest 500 commits were read\)/);
+  assert.match(out, /counted across the whole repository, not only apps\/oxlint\n/);
+  assert.ok(out.includes("- Platforms, read from the latest release's files: Linux (x86_64)\n"));
+});

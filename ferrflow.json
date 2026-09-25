@@ -24,7 +24,9 @@
         "data/categories.yaml",
         "data/migrations",
         "scripts/lib/types.ts",
-        "scripts/lib/rules.ts"
+        "scripts/lib/rules.ts",
+        "scripts/lib/trending.ts",
+        "scripts/lib/contributors.ts"
       ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
     },

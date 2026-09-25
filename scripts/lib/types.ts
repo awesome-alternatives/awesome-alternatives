@@ -152,6 +152,24 @@ export interface ReleaseEntry {
   prerelease: boolean;
 }
 
+export const OPERATING_SYSTEMS = ["linux", "macos", "windows", "freebsd", "openbsd", "netbsd", "android"] as const;
+
+export type OperatingSystem = (typeof OPERATING_SYSTEMS)[number];
+
+export const ARCHITECTURES = ["x86_64", "arm64", "x86", "armv7", "arm", "riscv64", "ppc64le", "s390x", "universal"] as const;
+
+export type Architecture = (typeof ARCHITECTURES)[number];
+
+export interface Platform {
+  os: OperatingSystem;
+  architectures: Architecture[];
+}
+
+export interface ActiveContributors {
+  count: number;
+  capped: boolean;
+}
+
 export interface EnrichedTool {
   slug: string;
   name: string;
@@ -168,6 +186,8 @@ export interface EnrichedTool {
   starHistory?: StarHistory;
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
+  contributors?: ActiveContributors | null;
+  platforms?: Platform[];
   maintainerVerified: boolean;
   flags: FlagCode[];
   terms: Terms;

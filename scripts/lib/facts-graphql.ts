@@ -9,10 +9,14 @@ import {
   trimmed,
   websiteOf,
 } from "./facts.ts";
+import { walkHistories } from "./commit-history.ts";
+import { activeSince, contributorsOf, startWalk } from "./contributors.ts";
 import { mapLimit } from "./gather.ts";
 import { type GitHub, repoPath } from "./github.ts";
-import { type GraphQL, type GraphQLErrorEntry, GraphQLTransportError } from "./graphql.ts";
-import type { OwnerFacts, ReleaseEntry, ReleaseFacts, RepoFacts, Tool } from "./types.ts";
+import type { GraphQL } from "./graphql.ts";
+import { aliasOf, BatchRejected, inBatches } from "./graphql-batch.ts";
+import { platformsOf } from "./platforms.ts";
+import type { ActiveContributors, OwnerFacts, Platform, ReleaseEntry, ReleaseFacts, RepoFacts, Tool } from "./types.ts";
 
 export const REPOSITORY_BATCH = 20;
 export const OWNER_BATCH = 100;
@@ -40,8 +44,14 @@ export interface GqlRepository {
   isPrivate: boolean;
   createdAt: string;
   pushedAt: string | null;
-  defaultBranchRef: { name: string } | null;
-  latestRelease: { tagName: string; publishedAt: string | null; url: string; tag: { target: GitObject } | null } | null;
+  defaultBranchRef: { name: string; target: { oid?: string } | null } | null;
+  latestRelease: {
+    tagName: string;
+    publishedAt: string | null;
+    url: string;
+    tag: { target: GitObject } | null;
+    releaseAssets: { nodes: { name: string }[] };
+  } | null;
   tags: { nodes: { name: string; target: GitObject }[] };
   releases: {
     nodes: {
@@ -74,10 +84,13 @@ export interface RepositoryFacts {
   releases: ReleaseEntry[];
   claim: string[];
   openIssues: number;
+  contributors: ActiveContributors | null;
+  platforms: Platform[];
 }
 
-export interface MappedRepository extends RepositoryFacts {
+export interface MappedRepository extends Omit<RepositoryFacts, "contributors"> {
   annotatedTag: string | null;
+  head: string | null;
 }
 
 const FRAGMENTS = `
@@ -90,8 +103,8 @@ fragment Facts on Repository {
   issues(states: OPEN) { totalCount }
   repositoryTopics(first: 20) { nodes { topic { name } } }
   isArchived isFork isPrivate createdAt pushedAt
-  defaultBranchRef { name }
-  latestRelease { tagName publishedAt url tag { target { ...Signed } } }
+  defaultBranchRef { name target { ... on Commit { oid } } }
+  latestRelease { tagName publishedAt url tag { target { ...Signed } } releaseAssets(first: 100) { nodes { name } } }
   tags: refs(refPrefix: "refs/tags/", first: 1, orderBy: {field: ALPHABETICAL, direction: DESC}) { nodes { name target { ...Signed } } }
   releases(first: ${RELEASE_HISTORY}, orderBy: {field: CREATED_AT, direction: DESC}) {
     nodes { tagName name description publishedAt url isPrerelease isDraft }
@@ -198,8 +211,10 @@ export function mapRepository(node: GqlRepository): MappedRepository {
     );
 
   const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
+  const head = node.defaultBranchRef?.target?.oid ?? null;
+  const platforms = platformsOf(latest?.releaseAssets.nodes.map((asset) => asset.name) ?? []);
 
-  return { repo, release, annotatedTag, releases, claim, openIssues: node.issues.totalCount };
+  return { repo, release, annotatedTag, releases, claim, openIssues: node.issues.totalCount, head, platforms };
 }
 
 export function mapOwner(node: GqlOwner): OwnerFacts {
@@ -214,42 +229,11 @@ export function mapOwner(node: GqlOwner): OwnerFacts {
   };
 }
 
-class BatchRejected extends Error {
-  constructor(errors: readonly GraphQLErrorEntry[]) {
-    const described = errors.map((e) => (e.path?.length ? `${e.path.join(".")}: ${e.message}` : e.message));
-    super(`GitHub GraphQL rejected the batch: ${[...new Set(described)].join("; ")}`);
-  }
-}
-
-async function inBatches<T, R>(items: readonly T[], size: number, run: (batch: readonly T[]) => Promise<R[]>): Promise<R[]> {
-  const out: R[] = [];
-  for (let start = 0; start < items.length; start += size) {
-    out.push(...(await splitting(items.slice(start, start + size), run)));
-  }
-  return out;
-}
-
-async function splitting<T, R>(batch: readonly T[], run: (batch: readonly T[]) => Promise<R[]>): Promise<R[]> {
-  try {
-    return await run(batch);
-  } catch (error) {
-    const retriable = error instanceof BatchRejected || (error instanceof GraphQLTransportError && error.retriable);
-    if (!retriable || batch.length === 1) throw error;
-    const half = Math.ceil(batch.length / 2);
-    console.log(`graphql batch of ${batch.length} failed (${(error as Error).message}), retrying in halves`);
-    return [...(await splitting(batch.slice(0, half), run)), ...(await splitting(batch.slice(half), run))];
-  }
-}
-
-function aliasOf(error: GraphQLErrorEntry): string | undefined {
-  const [alias] = error.path ?? [];
-  return typeof alias === "string" ? alias : undefined;
-}
-
 export async function fetchRepositories(
   gql: GraphQL,
   gh: GitHub,
   tools: readonly Tool[],
+  now: Date,
   size = REPOSITORY_BATCH,
 ): Promise<Map<string, RepositoryFacts | null>> {
   const mapped = await inBatches(tools, size, async (batch) => {
@@ -264,7 +248,19 @@ export async function fetchRepositories(
     });
   });
 
-  const resolved = await mapLimit(mapped, 4, async (entry) => {
+  const histories = await walkHistories(
+    gql,
+    mapped.map((entry) => (entry?.head ? startWalk(entry.repo.fullName, entry.head) : null)),
+    activeSince(now),
+  );
+  const counted = mapped.map((entry, i) => {
+    if (!entry) return null;
+    const { head: _, ...rest } = entry;
+    const walked = histories[i];
+    const platforms = tools[i]?.path ? [] : rest.platforms;
+    return { ...rest, platforms, contributors: walked ? contributorsOf(walked) : null };
+  });
+  const resolved = await mapLimit(counted, 4, async (entry): Promise<RepositoryFacts | null> => {
     if (!entry) return null;
     const { annotatedTag, ...facts } = entry;
     if (!annotatedTag || !facts.release) return facts;

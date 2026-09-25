@@ -322,6 +322,20 @@ export const es: Messages = {
     replaces: "Sustituye a {names}.",
   },
 
+  vitality: {
+    created: "Creación",
+    age: { one: "{year}, hace {n} año", other: "{year}, hace {n} años" },
+    ageNew: "{year}, hace menos de un año",
+    contributors: "Colaboradores activos",
+    contributorsCount: {
+      one: "{n} autor de commits en la rama por defecto en los últimos 90 días",
+      other: "{n} autores de commits en la rama por defecto en los últimos 90 días",
+    },
+    contributorsCapped: "{n}+ autores de commits en la rama por defecto en los últimos 90 días",
+    wholeRepository: "Contados en todo el repositorio, no solo en {path}.",
+    platforms: "Plataformas",
+  },
+
   islands,
   pages,
 };

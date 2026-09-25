@@ -1,5 +1,7 @@
+import { ACTIVE_DAYS, HISTORY_LIMIT } from "../../../scripts/lib/contributors.ts";
 import type { DeployMethod, EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
 import { historyUrl } from "./freshness.ts";
+import { vitalityOf } from "./vitality.ts";
 
 const SITE = "https://awesome-alternatives.com";
 
@@ -26,6 +28,28 @@ export interface Surroundings {
   capabilityLabels: Record<string, string>;
   nameOf: (slug: string) => string;
   replacedBy: { slug: string; name: string }[];
+}
+
+function counted(n: number, noun: string): string {
+  return `${n} ${noun}${n === 1 ? "" : "s"}`;
+}
+
+function vitality(tool: EnrichedTool, checkedAt: string | null): string[] {
+  const { created, cadenceDays, contributors, platforms } = vitalityOf(tool, checkedAt);
+  const age = created.years === 0 ? "less than a year ago" : `${counted(created.years, "year")} ago`;
+  const lines = [`- Created: ${created.year}, ${age}`];
+  if (cadenceDays !== null) {
+    lines.push(`- Release cadence: about ${counted(cadenceDays, "day")} between stable releases, the median gap between the latest ones`);
+  }
+  if (contributors) {
+    const authors = contributors.capped
+      ? `at least ${contributors.count} commit authors (only the latest ${HISTORY_LIMIT} commits were read)`
+      : counted(contributors.count, "commit author");
+    const scope = contributors.monorepoPath ? `, counted across the whole repository, not only ${contributors.monorepoPath}` : "";
+    lines.push(`- Active contributors: ${authors} on the default branch in the last ${ACTIVE_DAYS} days, bots left out${scope}`);
+  }
+  if (platforms) lines.push(`- Platforms, read from the latest release's files: ${platforms}`);
+  return lines;
 }
 
 function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): string[] {
@@ -80,7 +104,13 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     out.push("");
   }
 
-  out.push("## Facts from GitHub", "", ...facts(tool, around.categoryName, around.selfHost), "");
+  out.push(
+    "## Facts from GitHub",
+    "",
+    ...facts(tool, around.categoryName, around.selfHost),
+    ...vitality(tool, around.checkedAt),
+    "",
+  );
 
   out.push(
     "## Freshness",

@@ -49,6 +49,12 @@ Everything else is read from GitHub by CI every night: language, licence, stars,
 releases and whether the newest one is signed. The schema rejects a pull request that tries to state
 any of those, so a number in this list cannot be inflated or left to go stale.
 
+Each tool page also shows how alive a project is, as counts and dates rather than a score: when the
+repository was created, the median gap between its latest stable releases (once there are three),
+how many distinct people committed to the default branch in the last 90 days (bots left out, and
+shown as a lower bound such as `40+` past the 500 most recent commits), and the operating systems and
+architectures named by the files of the latest release, when they name any.
+
 ## What the marks mean
 
 - **drop-in**, **full**, **partial**: how much of the original the tool covers. `drop-in` means you

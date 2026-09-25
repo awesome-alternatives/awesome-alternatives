@@ -4,7 +4,7 @@ WORKDIR /repo
 COPY generated/catalog.json generated/events.json generated/
 COPY CONTRIBUTING.md ./
 COPY data/categories.yaml data/
-COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/
+COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/contributors.ts scripts/lib/
 COPY .github/workflows/refresh.yml .github/workflows/
 COPY site/package.json site/pnpm-lock.yaml site/pnpm-workspace.yaml site/
 WORKDIR /repo/site
