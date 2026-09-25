@@ -1,0 +1,7 @@
+name: TestCafe
+repository: https://github.com/DevExpress/testcafe
+category: browser-testing
+replaces:
+  - tool: selenium
+    fit: partial
+    note: Drives browsers without WebDriver, with tests in JavaScript or TypeScript only.

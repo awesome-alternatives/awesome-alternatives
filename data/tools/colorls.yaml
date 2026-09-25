@@ -1,0 +1,7 @@
+name: colorls
+repository: https://github.com/athityakumar/colorls
+category: file-listing
+replaces:
+  - tool: exa
+    fit: full
+    note: A Ruby gem with colours, icons, git status and a tree view.

@@ -1,0 +1,7 @@
+name: YAPF
+repository: https://github.com/google/yapf
+category: python-lint-format
+replaces:
+  - tool: black
+    fit: full
+    note: A configurable style (pep8, google, facebook or your own) instead of a fixed one.

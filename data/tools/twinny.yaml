@@ -1,0 +1,7 @@
+name: twinny
+repository: https://github.com/twinnydotdev/twinny
+category: code-assistant
+replaces:
+  - tool: github-copilot
+    fit: full
+    note: Completions, chat and inline edits in VS Code, with a local model or a hosted API.

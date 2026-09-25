@@ -1,0 +1,10 @@
+name: Nextra
+repository: https://github.com/shuding/nextra
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation from Markdown and MDX in your own repository, built with Next.js.
+  - tool: docusaurus
+    fit: full
+    note: Built on Next.js and MDX instead of its own React framework.

@@ -1,0 +1,8 @@
+name: DevPod
+repository: https://github.com/loft-sh/devpod
+category: cloud-ide
+replaces:
+  - tool: github-codespaces
+    fit: full
+    note: Dev containers from devcontainer.json on your machine, a cloud VM or Kubernetes, opened from VS Code, JetBrains or SSH, with no server to run.
+deploy: [binary, package]

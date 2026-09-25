@@ -1,0 +1,10 @@
+name: Pure
+repository: https://github.com/sindresorhus/pure
+category: shell-prompt
+replaces:
+  - tool: powerlevel10k
+    fit: full
+    note: A minimal asynchronous zsh prompt with few options to configure.
+  - tool: ohmyzsh
+    fit: partial
+    note: "Replaces the prompt theme only, not Oh My Zsh's plugins and aliases."

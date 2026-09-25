@@ -1,0 +1,7 @@
+name: Jasmine
+repository: https://github.com/jasmine/jasmine
+category: javascript-test-runner
+replaces:
+  - tool: mocha
+    fit: full
+    note: describe and it tests with assertions and spies built in, no extra libraries needed.

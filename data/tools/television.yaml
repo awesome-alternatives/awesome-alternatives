@@ -1,0 +1,7 @@
+name: Television
+repository: https://github.com/alexpasmantier/television
+category: fuzzy-finder
+replaces:
+  - tool: fzf
+    fit: full
+    note: Channels for files, text, git and more, with previews, configured in TOML.

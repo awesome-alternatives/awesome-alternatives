@@ -1,0 +1,7 @@
+name: CodeCompanion.nvim
+repository: https://github.com/olimorris/codecompanion.nvim
+category: code-assistant
+replaces:
+  - tool: github-copilot
+    fit: partial
+    note: Chat, inline edits and agent tools in Neovim, with any model provider.

@@ -1,0 +1,8 @@
+name: exo
+repository: https://github.com/exo-explore/exo
+category: llm-runtime
+replaces:
+  - tool: ollama
+    fit: partial
+    note: Splits one model across several of your devices, behind OpenAI, Claude and Ollama compatible APIs.
+deploy: [binary]

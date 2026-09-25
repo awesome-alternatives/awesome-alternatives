@@ -1,0 +1,10 @@
+name: avante.nvim
+repository: https://github.com/avante-corp/avante.nvim
+category: code-assistant
+replaces:
+  - tool: cursor
+    fit: partial
+    note: Cursor-style chat and code edits inside Neovim instead of a separate editor, with any model provider.
+  - tool: github-copilot
+    fit: partial
+    note: Chat and code edits in Neovim, with any model provider.

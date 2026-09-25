@@ -1,0 +1,10 @@
+name: Hyper
+repository: https://github.com/vercel/hyper
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: full
+    note: Cross-platform and built on Electron, extended with JavaScript plugins and themes.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.

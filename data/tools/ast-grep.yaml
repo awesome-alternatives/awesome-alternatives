@@ -1,0 +1,7 @@
+name: ast-grep
+repository: https://github.com/ast-grep/ast-grep
+category: code-search
+replaces:
+  - tool: ripgrep
+    fit: partial
+    note: Matches code by syntax tree patterns rather than text, and can rewrite what it finds.

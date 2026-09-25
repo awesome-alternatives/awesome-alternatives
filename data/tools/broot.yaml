@@ -1,0 +1,7 @@
+name: broot
+repository: https://github.com/Canop/broot
+category: file-listing
+replaces:
+  - tool: exa
+    fit: partial
+    note: Mainly a tree navigator, which also lists files with sizes, dates and permissions.

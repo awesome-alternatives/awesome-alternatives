@@ -1,0 +1,7 @@
+name: Starlette
+repository: https://github.com/Kludex/starlette
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: partial
+    note: A lightweight ASGI toolkit with routing, middleware and WebSockets, the base FastAPI is built on.

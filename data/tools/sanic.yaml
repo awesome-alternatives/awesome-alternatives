@@ -1,0 +1,7 @@
+name: Sanic
+repository: https://github.com/sanic-org/sanic
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: full
+    note: Flask-like routing and blueprints, async, on its own production server.

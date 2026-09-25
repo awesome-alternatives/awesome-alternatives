@@ -1,0 +1,7 @@
+name: MLC LLM
+repository: https://github.com/mlc-ai/mlc-llm
+category: llm-runtime
+replaces:
+  - tool: ollama
+    fit: partial
+    note: Compiles models for GPUs, phones and browsers, and serves them behind an OpenAI-compatible API.

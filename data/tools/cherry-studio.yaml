@@ -1,0 +1,11 @@
+name: Cherry Studio
+repository: https://github.com/CherryHQ/cherry-studio
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop app for many hosted providers and local models, with assistants, knowledge bases and MCP. The model comes from elsewhere.
+  - tool: claude
+    fit: partial
+    note: Desktop app for many hosted providers and local models, with assistants, knowledge bases and MCP. The model comes from elsewhere.
+deploy: [binary, package]

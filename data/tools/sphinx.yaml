@@ -1,0 +1,8 @@
+name: Sphinx
+repository: https://github.com/sphinx-doc/sphinx
+category: documentation-site
+terms: open
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation from reStructuredText or Markdown in your repository, with API reference from docstrings and PDF output.

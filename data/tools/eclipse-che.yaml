@@ -1,0 +1,7 @@
+name: Eclipse Che
+repository: https://github.com/eclipse-che/che
+category: cloud-ide
+replaces:
+  - tool: github-codespaces
+    fit: full
+    note: Workspaces defined by devfiles on your own Kubernetes or OpenShift cluster, opened in a browser IDE or a local editor.

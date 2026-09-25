@@ -1,0 +1,7 @@
+name: curl_cffi
+repository: https://github.com/lexiforest/curl_cffi
+category: python-http-client
+replaces:
+  - tool: requests
+    fit: full
+    note: Requests-like API on curl-impersonate, able to match browser TLS and HTTP/2 fingerprints, with async support.
