@@ -1,0 +1,11 @@
+name: BookLore
+repository: https://github.com/booklore-app/booklore
+category: book-server
+replaces:
+  - tool: google-play-books
+    fit: partial
+    note: The library and reader for your own ebooks, PDFs and comics, in the browser and OPDS apps, not the store.
+  - tool: amazon-kindle
+    fit: partial
+    note: The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader, not the store. Books bought from Amazon stay on Kindle.
+deploy: [container, compose]

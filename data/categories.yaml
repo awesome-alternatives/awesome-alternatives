@@ -385,6 +385,11 @@ video-hosting:
   description: Publish videos and live streams on your own site for an audience to watch.
   selfHost: true
 
+book-server:
+  name: Book and comic servers
+  description: Serve a personal library of ebooks, comics and manga to readers and reading apps.
+  selfHost: true
+
 business-intelligence:
   name: Business intelligence
   description: Query databases and build charts and dashboards for the rest of the company.

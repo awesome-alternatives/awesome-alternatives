@@ -1,0 +1,5 @@
+name: Google Play Books
+homepage: https://play.google.com/books
+vendor: Google
+category: book-server
+description: Google's ebook and audiobook store and reading app, which also takes uploaded EPUB and PDF files.

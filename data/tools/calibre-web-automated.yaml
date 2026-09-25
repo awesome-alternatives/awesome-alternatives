@@ -1,0 +1,15 @@
+name: Calibre-Web Automated
+repository: https://github.com/crocodilestick/Calibre-Web-Automated
+category: book-server
+replaces:
+  - tool: calibre-web
+    fit: drop-in
+    note: Takes over an existing Calibre-Web config folder and Calibre library, users and settings included.
+    migration: https://github.com/crocodilestick/Calibre-Web-Automated#users-migrating-from-stock-calibre-web
+  - tool: google-play-books
+    fit: partial
+    note: Imports, converts and serves your own ebooks to the browser and OPDS apps, with no store.
+  - tool: amazon-kindle
+    fit: partial
+    note: The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader or sent to a Kindle, not the store.
+deploy: [container, compose]

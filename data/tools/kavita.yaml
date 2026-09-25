@@ -1,0 +1,11 @@
+name: Kavita
+repository: https://github.com/Kareadita/Kavita
+category: book-server
+replaces:
+  - tool: google-play-books
+    fit: partial
+    note: The library and reader for your own ebooks, comics and manga, in the browser and OPDS apps, not the store.
+  - tool: amazon-kindle
+    fit: partial
+    note: The cloud library and reading progress for your own DRM-free books, synced with KOReader, not the store. Books bought from Amazon stay on Kindle.
+deploy: [container, compose, binary]
