@@ -1,6 +1,7 @@
 name: Mattermost
 repository: https://github.com/mattermost/mattermost
 category: team-chat
+terms: open-core
 replaces:
   - tool: slack
     fit: full
