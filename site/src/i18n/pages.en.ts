@@ -16,9 +16,9 @@ export const pages = {
     },
     refresh: {
       heading: "The nightly refresh",
-      workflowBefore: "Every day at {refreshedAt}, and whenever the catalog data changes on the main branch, a",
-      workflowLink: "GitHub Actions workflow",
-      workflowAfter: "reads every listed repository from the GitHub API:",
+      runBefore: "Every night, and whenever the catalog data changes on the main branch, the",
+      runLink: "refresh",
+      runAfter: "reads every listed repository from the GitHub API:",
       reads: [
         "description, homepage, language, licence, stars, forks and topics",
         "whether the repository is archived, and the date of its last push",
@@ -32,7 +32,7 @@ export const pages = {
       releaseMiddle: "installed, or runs",
       releaseAfter: "in its release workflow.",
       commit:
-        "When anything changed, the workflow commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the refresh publishes nothing and fails, so a person looks: a tool leaves the catalog only through a pull request that removes its entry.",
+        "When anything changed, the refresh commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the refresh publishes nothing and fails, so a person looks: a tool leaves the catalog only through a pull request that removes its entry.",
     },
     marks: {
       heading: "Marks",

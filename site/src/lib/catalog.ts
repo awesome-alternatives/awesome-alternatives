@@ -123,10 +123,3 @@ export function targetItems(from: readonly Target[] = targets()): GridItem[] {
   });
 }
 
-interface Workflow {
-  on: { schedule: { cron: string }[] };
-}
-
-const refresh: Workflow = parse(readFileSync(resolve(ROOT, ".github/workflows/refresh.yml"), "utf8"));
-
-export const refreshCron = refresh.on.schedule[0]?.cron ?? "";

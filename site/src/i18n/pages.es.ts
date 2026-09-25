@@ -18,9 +18,9 @@ export const pages: Pages = {
     },
     refresh: {
       heading: "La actualización nocturna",
-      workflowBefore: "Cada día a las {refreshedAt}, y cada vez que los datos del catálogo cambian en la rama principal, un",
-      workflowLink: "flujo de trabajo de GitHub Actions",
-      workflowAfter: "lee cada repositorio listado desde la API de GitHub:",
+      runBefore: "Cada noche, y cada vez que los datos del catálogo cambian en la rama principal, la",
+      runLink: "actualización",
+      runAfter: "lee cada repositorio listado desde la API de GitHub:",
       reads: [
         "descripción, página principal, lenguaje, licencia, estrellas, forks y temas",
         "si el repositorio está archivado, y la fecha de su último push",
@@ -34,7 +34,7 @@ export const pages: Pages = {
       releaseMiddle: "o ejecuta",
       releaseAfter: "en su workflow de release.",
       commit:
-        "Cuando algo ha cambiado, el flujo de trabajo confirma el nuevo catálogo y sale una nueva compilación de este sitio. Si GitHub deja de devolver el repositorio de una herramienta listada, porque se ha borrado o se ha hecho privado, la actualización no publica nada y falla, para que una persona lo revise: una herramienta solo sale del catálogo mediante un pull request que retira su entrada.",
+        "Cuando algo ha cambiado, la actualización confirma el nuevo catálogo y sale una nueva compilación de este sitio. Si GitHub deja de devolver el repositorio de una herramienta listada, porque se ha borrado o se ha hecho privado, la actualización no publica nada y falla, para que una persona lo revise: una herramienta solo sale del catálogo mediante un pull request que retira su entrada.",
     },
     marks: {
       heading: "Marcas",
