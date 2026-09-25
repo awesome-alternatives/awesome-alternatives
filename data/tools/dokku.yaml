@@ -1,0 +1,8 @@
+name: Dokku
+repository: https://github.com/dokku/dokku
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Heroku buildpacks, Procfile and app.json carry over with a git push; add-ons become plugins and the CLI is its own.
+deploy: [container, package]

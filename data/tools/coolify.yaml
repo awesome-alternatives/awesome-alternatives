@@ -1,0 +1,20 @@
+name: Coolify
+repository: https://github.com/coollabsio/coolify
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Builds from a git provider with Nixpacks, a Dockerfile or Compose, with one-click databases and scheduled backups.
+  - tool: render
+    fit: full
+    note: Services, databases, scheduled tasks and pull request previews from a dashboard, on servers you bring.
+  - tool: railway
+    fit: full
+    note: Services and one-click databases from a dashboard, on servers you bring.
+  - tool: vercel
+    fit: partial
+    note: Static sites and Node frameworks with pull request previews, served from your own servers without a global edge network.
+  - tool: netlify
+    fit: partial
+    note: Static sites with pull request previews, without Netlify Functions, Forms or a global CDN.
+deploy: [container, compose]

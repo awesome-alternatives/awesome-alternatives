@@ -390,6 +390,11 @@ backend-as-a-service:
   description: Auth, database, storage and APIs for an app, without writing the backend.
   selfHost: true
 
+self-hosted-paas:
+  name: Self-hosted PaaS
+  description: Deploy apps and databases to your own servers from a git push or a dashboard.
+  selfHost: true
+
 headless-cms:
   name: Headless CMS
   description: Manage content in an admin UI and deliver it to any front end through an API.

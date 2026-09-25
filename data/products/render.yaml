@@ -1,0 +1,5 @@
+name: Render
+homepage: https://render.com
+vendor: Render
+category: self-hosted-paas
+description: Render's hosted platform that deploys web services, workers, cron jobs and managed Postgres from a git repository.

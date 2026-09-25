@@ -1,0 +1,8 @@
+name: Kubero
+repository: https://github.com/kubero-dev/kubero
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Pipelines with review apps, buildpacks and add-ons such as PostgreSQL and Redis, on a Kubernetes cluster.
+deploy: [container]

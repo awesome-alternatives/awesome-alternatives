@@ -1,0 +1,5 @@
+name: Railway
+homepage: https://railway.com
+vendor: Railway
+category: self-hosted-paas
+description: Railway's hosted platform that deploys services and databases from a git repository or a container image.

@@ -1,0 +1,8 @@
+name: CapRover
+repository: https://github.com/caprover/caprover
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Deploys from a dashboard, the CLI or a git webhook onto Docker Swarm, with one-click apps for databases.
+deploy: [container]
