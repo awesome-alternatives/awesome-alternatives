@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.60.0] - 2026-09-25
+
+### Features
+
+- feat(catalog): add a video hosting category (#190)
+
 ## [0.59.2] - 2026-09-25
 
 ### Bug Fixes
