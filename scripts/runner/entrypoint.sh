@@ -12,16 +12,14 @@ esac
 
 : "${APP_ID:?APP_ID is required}"
 : "${APP_PRIVATE_KEY:?APP_PRIVATE_KEY is required}"
+: "${PUSH_APP_ID:?PUSH_APP_ID is required}"
+: "${PUSH_APP_PRIVATE_KEY:?PUSH_APP_PRIVATE_KEY is required}"
 repository=${REPOSITORY:-awesome-alternatives/awesome-alternatives}
 workdir=${WORK_DIR:-/work}
 app=$(cd "$(dirname "$0")/../.." && pwd)
 
 GITHUB_TOKEN=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts")
 export GITHUB_TOKEN
-export GIT_CONFIG_COUNT=1
-export GIT_CONFIG_KEY_0="http.https://github.com/.extraheader"
-GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)"
-export GIT_CONFIG_VALUE_0
 
 checkout="$workdir/repository"
 refreshed="$workdir/refreshed"
@@ -30,12 +28,16 @@ git clone --quiet "https://github.com/$repository.git" "$checkout"
 cd "$checkout"
 
 if [ "$command" = backfill ]; then
-  exec node "$app/scripts/backfill-facts.ts"
+  exec env -u PUSH_APP_ID -u PUSH_APP_PRIVATE_KEY -u APP_PRIVATE_KEY node "$app/scripts/backfill-facts.ts"
 fi
 
-node "$app/scripts/refresh.ts"
+env -u PUSH_APP_ID -u PUSH_APP_PRIVATE_KEY node "$app/scripts/refresh.ts"
 
 mkdir -p "$refreshed/generated"
 cp generated/catalog.json "$refreshed/generated/"
 cp README.md "$refreshed/"
-"$app/scripts/ci/push-catalog.sh" "chore(catalog): refresh from GitHub" cp -r "$refreshed/." .
+push_token=$(REPOSITORY="$repository" APP_ID="$PUSH_APP_ID" APP_PRIVATE_KEY="$PUSH_APP_PRIVATE_KEY" node "$app/scripts/runner/token.ts")
+GIT_CONFIG_COUNT=1 \
+  GIT_CONFIG_KEY_0="http.https://github.com/.extraheader" \
+  GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$push_token" | base64 -w0)" \
+  "$app/scripts/ci/push-catalog.sh" "chore(catalog): refresh from GitHub" cp -r "$refreshed/." .
