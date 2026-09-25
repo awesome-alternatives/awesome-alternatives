@@ -1,0 +1,7 @@
+name: Apache Accumulo
+repository: https://github.com/apache/accumulo
+category: wide-column-database
+replaces:
+  - tool: bigtable
+    fit: full
+    note: Bigtable's design on top of HDFS, with cell-level visibility labels, through its own Java client.

@@ -69,6 +69,11 @@ document-database:
   description: Databases storing JSON-like documents.
   selfHost: true
 
+wide-column-database:
+  name: Wide-column databases
+  description: Distributed databases storing wide, sparse rows partitioned across nodes.
+  selfHost: true
+
 message-streaming:
   name: Event streaming
   description: Durable, partitioned logs for events and messages.

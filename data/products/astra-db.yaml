@@ -1,0 +1,5 @@
+name: Astra DB
+homepage: https://www.ibm.com/products/datastax
+vendor: IBM
+category: wide-column-database
+description: DataStax's serverless database service built on Apache Cassandra, with CQL and a JSON Data API.

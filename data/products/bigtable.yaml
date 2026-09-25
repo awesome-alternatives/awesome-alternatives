@@ -1,0 +1,5 @@
+name: Bigtable
+homepage: https://cloud.google.com/bigtable
+vendor: Google
+category: wide-column-database
+description: Google Cloud's wide-column database, with its own client libraries and an HBase-compatible client for Java.

@@ -1,0 +1,11 @@
+name: Apache Cassandra
+repository: https://github.com/apache/cassandra
+category: wide-column-database
+replaces:
+  - tool: amazon-keyspaces
+    fit: drop-in
+    note: Keyspaces implements Cassandra's CQL API, so drivers and queries carry over; IAM authentication becomes Cassandra roles.
+  - tool: astra-db
+    fit: full
+    note: Astra DB is built on Cassandra, so CQL tables and drivers carry over; the Data API and serverless scaling do not.
+deploy: [package]

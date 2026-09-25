@@ -1,0 +1,5 @@
+name: Amazon Keyspaces
+homepage: https://aws.amazon.com/keyspaces/
+vendor: Amazon Web Services
+category: wide-column-database
+description: Serverless database service from AWS compatible with Apache Cassandra's CQL API.

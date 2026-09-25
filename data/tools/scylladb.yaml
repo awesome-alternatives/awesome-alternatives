@@ -1,0 +1,17 @@
+name: ScyllaDB
+repository: https://github.com/scylladb/scylladb
+category: wide-column-database
+replaces:
+  - tool: cassandra
+    fit: drop-in
+    note: Speaks CQL, reads Cassandra SSTables and works with the same drivers and nodetool; triggers, Java UDFs and SAI indexes are missing.
+    migration: https://docs.scylladb.com/manual/stable/operating-scylla/procedures/cassandra-to-scylla-migration-process.html
+  - tool: amazon-keyspaces
+    fit: drop-in
+    note: Speaks the Cassandra CQL API that Keyspaces implements; IAM authentication becomes ScyllaDB roles.
+  - tool: amazon-dynamodb
+    fit: partial
+    note: The Alternator API serves DynamoDB requests, without transactions, PartiQL or the on-demand backup calls.
+    migration: https://migrator.docs.scylladb.com/stable/migrate-from-dynamodb.html
+terms: source-available
+deploy: [container, helm, package]
