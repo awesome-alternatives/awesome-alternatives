@@ -1,0 +1,8 @@
+name: yarr
+repository: https://github.com/nkanaev/yarr
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: A small web reader in one binary, run as a desktop app or on a server, without discovery or team features.
+deploy: [binary]

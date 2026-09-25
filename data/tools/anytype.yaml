@@ -1,0 +1,9 @@
+name: Anytype
+repository: https://github.com/anyproto/anytype-ts
+category: note-taking
+terms: source-available
+replaces:
+  - tool: notion
+    fit: full
+    note: Pages, databases and custom types in a local-first app, with end-to-end encrypted sync and a Notion importer.
+    migration: https://doc.anytype.io/anytype/data/import-and-export

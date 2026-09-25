@@ -1,0 +1,8 @@
+name: NewsBlur
+repository: https://github.com/samuelclay/NewsBlur
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: Web, iOS and Android reader with story training, text extraction and sharing, self-hosted with Docker Compose.
+deploy: [container, compose]

@@ -1,0 +1,11 @@
+name: Collabora Online
+repository: https://github.com/CollaboraOnline/online
+category: office-suite
+terms: open
+replaces:
+  - tool: google-docs
+    fit: full
+    note: Real-time co-editing of documents, spreadsheets and presentations built on LibreOffice, usually plugged into Nextcloud or another file host.
+  - tool: microsoft-365
+    fit: partial
+    note: Browser editing of Word, Excel and PowerPoint files, without mail and Teams.

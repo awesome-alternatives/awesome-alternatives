@@ -1,0 +1,7 @@
+name: Decap CMS
+repository: https://github.com/decaporg/decap-cms
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: partial
+    note: An admin app that commits content as files to your Git repository, for static sites; there is no delivery API.

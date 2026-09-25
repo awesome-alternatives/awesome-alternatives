@@ -1,0 +1,7 @@
+name: Vale
+repository: https://github.com/vale-cli/vale
+category: writing-assistant
+replaces:
+  - tool: grammarly
+    fit: partial
+    note: Style guide rules for Markdown, AsciiDoc and other markup, run in the editor or in CI, without grammar correction.

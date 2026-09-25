@@ -1,0 +1,8 @@
+name: Koel
+repository: https://github.com/koel/koel
+category: media-server
+replaces:
+  - tool: plex
+    fit: partial
+    note: Music and podcasts only, streamed to its web player and mobile apps.
+deploy: [container]

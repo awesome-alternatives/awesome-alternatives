@@ -1,0 +1,8 @@
+name: HedgeDoc
+repository: https://github.com/hedgedoc/hedgedoc
+category: knowledge-base
+replaces:
+  - tool: hackmd
+    fit: full
+    note: Real-time collaborative Markdown notes and slides in the browser, grown from the code HackMD once published as open source.
+deploy: [container, compose]

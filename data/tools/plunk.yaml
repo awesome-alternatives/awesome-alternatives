@@ -1,0 +1,8 @@
+name: Plunk
+repository: https://github.com/useplunk/plunk
+category: newsletter
+replaces:
+  - tool: mailchimp
+    fit: partial
+    note: Campaigns, segments and workflow automations next to transactional email, sent through Amazon SES.
+deploy: [container, compose]

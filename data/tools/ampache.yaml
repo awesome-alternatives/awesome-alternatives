@@ -1,0 +1,8 @@
+name: Ampache
+repository: https://github.com/ampache/ampache
+category: media-server
+replaces:
+  - tool: plex
+    fit: partial
+    note: Mostly music, streamed to its web interface and to Ampache and Subsonic API clients.
+deploy: [container, compose]

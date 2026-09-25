@@ -1,0 +1,8 @@
+name: CommaFeed
+repository: https://github.com/Athou/commafeed
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: A Google Reader style web reader with OPML import, filtering rules, and Fever and Google Reader APIs for mobile apps.
+deploy: [container, binary]

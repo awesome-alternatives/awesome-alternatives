@@ -1,0 +1,8 @@
+name: Apache Guacamole
+repository: https://github.com/apache/guacamole-server
+category: remote-desktop
+replaces:
+  - tool: teamviewer
+    fit: partial
+    note: A browser gateway to machines reachable over VNC, RDP or SSH, with no client to install but no NAT traversal either.
+deploy: [container]

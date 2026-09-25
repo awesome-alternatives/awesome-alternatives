@@ -1,0 +1,9 @@
+name: Akaunting
+repository: https://github.com/akaunting/akaunting
+category: erp
+terms: source-available
+replaces:
+  - tool: quickbooks
+    fit: full
+    note: Invoices, bills, bank accounts and reports in the browser; inventory, payroll and more come as paid apps.
+deploy: [container]

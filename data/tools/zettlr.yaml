@@ -1,0 +1,7 @@
+name: Zettlr
+repository: https://github.com/Zettlr/Zettlr
+category: note-taking
+replaces:
+  - tool: obsidian
+    fit: partial
+    note: Linked Markdown files in local folders, geared to academic writing with Zotero citations and Pandoc export, without mobile apps.

@@ -1,0 +1,12 @@
+name: Stratum
+repository: https://github.com/stratumauth/app
+category: authenticator-app
+replaces:
+  - tool: authy
+    fit: full
+    note: TOTP, HOTP, Steam and mOTP codes on Android and Wear OS, with encrypted backups and an Authy importer.
+    migration: https://github.com/stratumauth/app/wiki/Importing-from-Authy
+  - tool: google-authenticator
+    fit: full
+    note: Encrypted backups, icons and categories on Android, with a Google Authenticator importer.
+    migration: https://github.com/stratumauth/app/wiki/Importing-from-Google-Authenticator
