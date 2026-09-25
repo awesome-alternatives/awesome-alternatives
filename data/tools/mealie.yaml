@@ -1,0 +1,13 @@
+name: Mealie
+repository: https://github.com/mealie-recipes/mealie
+category: recipe-manager
+replaces:
+  - tool: paprika
+    fit: full
+    note: Imports recipes from any site, with a meal planner and shopping lists in a web app shared by the household.
+    migration: https://mealie.io/documentation/getting-started/features/#importing-recipes
+  - tool: plan-to-eat
+    fit: full
+    note: Recipe collection, meal planner and shopping lists built from the planned recipes.
+    migration: https://mealie.io/documentation/getting-started/features/#importing-recipes
+deploy: [container, compose]

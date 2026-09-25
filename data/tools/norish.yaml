@@ -1,0 +1,8 @@
+name: Norish
+repository: https://github.com/norish-recipes/norish
+category: recipe-manager
+replaces:
+  - tool: paprika
+    fit: full
+    note: Recipe import from links and photos, meal planning, and grocery lists with aisles and a pantry, shared in real time.
+deploy: [container, compose]

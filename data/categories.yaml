@@ -350,6 +350,11 @@ note-taking:
   name: Note-taking apps
   description: Personal notes on desktop and mobile, with sync.
 
+recipe-manager:
+  name: Recipe managers
+  description: Keep recipes, plan meals and build shopping lists from them.
+  selfHost: true
+
 project-management:
   name: Project management
   description: Issues, tasks and boards for planning team work.

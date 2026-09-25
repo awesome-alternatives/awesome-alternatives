@@ -1,0 +1,14 @@
+name: Tandoor Recipes
+repository: https://github.com/TandoorRecipes/recipes
+category: recipe-manager
+terms: source-available
+replaces:
+  - tool: paprika
+    fit: full
+    note: Recipes, meal plans and shopping lists in a web app shared by the household, with a Paprika importer.
+    migration: https://docs.tandoor.dev/features/import_export/#paprika
+  - tool: plan-to-eat
+    fit: full
+    note: Meal planner and shopping lists generated from the planned recipes, with a Plan to Eat importer.
+    migration: https://docs.tandoor.dev/features/import_export/#plan-to-eat
+deploy: [container, compose]
