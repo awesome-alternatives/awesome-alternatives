@@ -11,8 +11,9 @@
   --accent: #b8ff3c;
   --accent-ink: #0b0b0b;
   --warn: #ffb347;
-  --display: "Courier Prime", "Courier New", monospace;
-  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --display: "Courier Prime", "Display Fallback", "Courier New", monospace;
+  --mono: "JetBrains Mono Variable", "Mono Fallback Menlo", "Mono Fallback Consolas", "Mono Fallback Courier", ui-monospace,
+    monospace;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
 }

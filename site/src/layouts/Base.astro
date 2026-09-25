@@ -1,8 +1,7 @@
 ---
 import "@fontsource/courier-prime/latin-700.css";
-import "@fontsource/jetbrains-mono/latin-400.css";
-import "@fontsource/jetbrains-mono/latin-500.css";
-import "@fontsource/jetbrains-mono/latin-700.css";
+import monoFont from "@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url";
+import "../styles/fonts.css";
 import "../styles/global.css";
 import { DEFAULT_LOCALE, localeOf, LOCALES, messages, pathFor, stripLocale } from "../i18n/index.ts";
 import { REPO } from "../lib/repo.ts";
@@ -59,6 +58,7 @@ const link = (path: string) => pathFor(locale, path);
 <html lang={m.locale.htmlLang} dir={m.locale.dir}>
   <head>
     <meta charset="utf-8" />
+    <link rel="preload" href={monoFont} as="font" type="font/woff2" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
