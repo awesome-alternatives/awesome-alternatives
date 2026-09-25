@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.72.0] - 2026-09-25
+
+### Features
+
+- feat(catalog): add a graph databases category (#226)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
 ## [0.71.0] - 2026-09-25
 
 ### Features
