@@ -785,13 +785,20 @@ button.link {
   cursor: default;
 }
 
-.boost .sparkline {
+.sparkline {
   display: inline-block;
   width: 60px;
   height: 16px;
-  margin-inline-end: 10px;
   overflow: visible;
   vertical-align: -3px;
+}
+
+.boost .sparkline {
+  margin-inline-end: 10px;
+}
+
+.facts .sparkline {
+  margin-inline-start: 10px;
 }
 
 .boost-growth {

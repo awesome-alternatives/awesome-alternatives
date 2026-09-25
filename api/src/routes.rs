@@ -270,6 +270,10 @@ mod tests {
                 },
                 crate::catalog::Tool {
                     self_host: true,
+                    star_history: Some(crate::catalog::StarHistory {
+                        from: "2026-09-22".into(),
+                        stars: vec![13900, 13950, 14000],
+                    }),
                     ..tool(
                         "goreleaser",
                         "Go",
@@ -331,6 +335,19 @@ mod tests {
             .header("content-type", "application/json")
             .body(Body::from(json!({ "q": q }).to_string()))
             .unwrap()
+    }
+
+    #[tokio::test]
+    async fn a_search_result_carries_the_star_history_the_catalog_has() {
+        let (status, answer) = call(&app(10), search_request("semantic-release")).await;
+        assert_eq!(status, StatusCode::OK);
+        let tools = answer["tools"].as_array().unwrap();
+        let by_slug = |slug: &str| tools.iter().find(|t| t["slug"] == slug).unwrap();
+        assert_eq!(
+            by_slug("goreleaser")["starHistory"],
+            json!({ "from": "2026-09-22", "stars": [13900, 13950, 14000] })
+        );
+        assert!(by_slug("knope").get("starHistory").is_none());
     }
 
     #[tokio::test]

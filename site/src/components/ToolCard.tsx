@@ -122,7 +122,15 @@ export function ToolCard({
           label={card.factLicense}
           value={<IndexLink locale={locale} index="licenses" value={repo.license} fallback={card.noLicense} />}
         />
-        <Fact label={card.factStars} value={stars(repo.stars)} />
+        <Fact
+          label={card.factStars}
+          value={
+            <>
+              {stars(repo.stars)}
+              {!boost && tool.starHistory && <Sparkline series={tool.starHistory} />}
+            </>
+          }
+        />
         {release && (
           <Fact
             label={card.factLatest}
