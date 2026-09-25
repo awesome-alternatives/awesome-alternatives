@@ -133,29 +133,39 @@ describe("installationToken", () => {
       { [installation]: { status: 200, body: { id: 77 } }, [tokens]: { status: 201, body: { token: "ghs_x" } } },
       calls,
     );
-    assert.equal(await installationToken("42", pem, "acme/catalog", fetchImpl), "ghs_x");
+    assert.equal(await installationToken("42", pem, "acme/catalog", "read", fetchImpl), "ghs_x");
     assert.deepEqual(
       calls.map((c) => [c.method, c.url, c.body]),
       [
         ["GET", installation, undefined],
-        ["POST", tokens, { repositories: ["catalog"] }],
+        ["POST", tokens, { repositories: ["catalog"], permissions: { contents: "read", metadata: "read" } }],
       ],
     );
     assert.ok(calls.every((c) => /^Bearer [\w-]+\.[\w-]+\.[\w-]+$/.test(c.authorization)));
   });
 
+  it("asks for write access to contents only when told to, so the refresh never holds a write token", async () => {
+    const calls: Call[] = [];
+    const fetchImpl = github(
+      { [installation]: { status: 200, body: { id: 77 } }, [tokens]: { status: 201, body: { token: "ghs_w" } } },
+      calls,
+    );
+    assert.equal(await installationToken("42", pem, "acme/catalog", "write", fetchImpl), "ghs_w");
+    assert.deepEqual(calls.at(-1)?.body, { repositories: ["catalog"], permissions: { contents: "write", metadata: "read" } });
+  });
+
   it("fails loudly when the app is not installed on the repository", async () => {
-    await assert.rejects(installationToken("42", pem, "acme/catalog", github({}, [])), /GitHub 404 on \/repos\/acme\/catalog\/installation/);
+    await assert.rejects(installationToken("42", pem, "acme/catalog", "read", github({}, [])), /GitHub 404 on \/repos\/acme\/catalog\/installation/);
   });
 
   it("rejects a response without a token instead of pushing anonymously", async () => {
     const fetchImpl = github({ [installation]: { status: 200, body: { id: 77 } }, [tokens]: { status: 201, body: {} } }, []);
-    await assert.rejects(installationToken("42", pem, "acme/catalog", fetchImpl), /no token/);
+    await assert.rejects(installationToken("42", pem, "acme/catalog", "write", fetchImpl), /no token/);
   });
 
   it("refuses a repository that is not owner/name before calling GitHub", async () => {
     const calls: Call[] = [];
-    await assert.rejects(installationToken("42", pem, "https://github.com/acme/catalog", github({}, calls)), /not an owner\/name/);
+    await assert.rejects(installationToken("42", pem, "https://github.com/acme/catalog", "write", github({}, calls)), /not an owner\/name/);
     assert.deepEqual(calls, []);
   });
 });

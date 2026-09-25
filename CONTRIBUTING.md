@@ -275,9 +275,9 @@ DATABASE_URL=postgres://... pnpm backfill-facts
 
 The image built from [`scripts/runner/Dockerfile`](scripts/runner/Dockerfile) runs the nightly
 refresh in the cluster. It clones `REPOSITORY` (default `awesome-alternatives/awesome-alternatives`)
-into `WORK_DIR` (default `/work`) and refreshes with a read-only installation token of the public app
-(`APP_ID`, `APP_PRIVATE_KEY`). Only then does it mint a token from the app installed on this
-repository alone with Contents: write (`PUSH_APP_ID`, `PUSH_APP_PRIVATE_KEY`), and hands it to the
-push, never to the refresh. Commits are authored as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, that
-app's bot user, falling back to `github-actions[bot]`. Given `backfill` as its argument, it clones
-the same way and runs the backfill instead.
+into `WORK_DIR` (default `/work`) and refreshes with an installation token of the app (`APP_ID`,
+`APP_PRIVATE_KEY`) limited to reading contents. Only then does it mint a second token from the same
+app, with Contents: write on this repository alone, and hands it to the push. Commits are authored
+as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, the app's bot user, falling back to
+`github-actions[bot]`. Given `backfill` as its argument, it clones the same way and runs the
+backfill instead.
