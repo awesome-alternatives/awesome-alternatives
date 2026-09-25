@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.64.0] - 2026-09-25
+
+### Features
+
+- feat(refresh): publish each tool's daily star series in the catalog (#207)
+
 ## [0.63.1] - 2026-09-25
 
 ### Bug Fixes
