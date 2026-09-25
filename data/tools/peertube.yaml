@@ -1,0 +1,16 @@
+name: PeerTube
+repository: https://github.com/Chocobozzz/PeerTube
+category: video-hosting
+replaces:
+  - tool: youtube
+    fit: full
+    note: Channels, playlists, comments and live streams on your own instance, federated with other instances over ActivityPub.
+    migration: https://docs.joinpeertube.org/use/channel-sync
+  - tool: vimeo
+    fit: full
+    note: Public, unlisted, private and password-protected videos with an embeddable player.
+    migration: https://docs.joinpeertube.org/use/channel-sync
+  - tool: twitch
+    fit: partial
+    note: Live streams on a channel with replays, and chat only through a plugin.
+deploy: [container, compose]
