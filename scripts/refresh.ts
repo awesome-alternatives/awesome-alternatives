@@ -1,6 +1,7 @@
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
+import { gitEventHistory } from "./lib/event-history.ts";
 import { RECORD_FAILED_EXIT_CODE, recordFacts } from "./lib/facts-db.ts";
 import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { mapLimit } from "./lib/gather.ts";
@@ -23,7 +24,7 @@ const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCom
 const owners = await fetchOwners(gql, tools);
 
 const checkedAt = now.toISOString();
-const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools });
+const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools }, { now, history: gitEventHistory(root) });
 
 const databaseUrl = process.env.DATABASE_URL;
 if (published && databaseUrl && !(await recordFacts(databaseUrl, runRows(checkedAt, tools, facts)))) {

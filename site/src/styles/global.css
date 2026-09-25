@@ -1807,6 +1807,55 @@ h1 .mark-archived {
   text-decoration: none;
 }
 
+.changes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.changes li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 24px;
+  padding: 12px 0;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--line);
+}
+
+.changes-additions {
+  flex: 1 1 32rem;
+}
+
+.changes-additions summary {
+  width: fit-content;
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.changes-day {
+  font-family: var(--mono);
+}
+
+.changes-source,
+.feed-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+}
+
+.changes-source {
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+.feed-link a {
+  color: var(--muted);
+}
+
 .tablist {
   display: flex;
   flex-wrap: wrap;

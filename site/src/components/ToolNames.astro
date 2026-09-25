@@ -1,0 +1,16 @@
+---
+interface Props {
+  tools: { name: string; href: string | null }[];
+}
+
+const { tools } = Astro.props;
+---
+
+{
+  tools.map((tool, i) => (
+    <>
+      {i > 0 && ", "}
+      {tool.href ? <a href={tool.href}>{tool.name}</a> : tool.name}
+    </>
+  ))
+}

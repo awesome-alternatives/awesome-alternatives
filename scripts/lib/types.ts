@@ -191,3 +191,31 @@ export interface CatalogStats {
   categories: number;
   targets: number;
 }
+
+interface EventStamp {
+  slug: string;
+  at: string;
+  commit: string | null;
+}
+
+export type CatalogEvent = EventStamp &
+  (
+    | { type: "added" | "removed" | "archived" | "unarchived" | "inactive" | "reactivated" }
+    | { type: "license-changed"; from: string | null; to: string | null }
+    | { type: "renamed"; from: string; to: string }
+    | { type: "released"; from: string | null; to: string }
+  );
+
+export type EventType = CatalogEvent["type"];
+
+export const EVENT_ORDER: Record<EventType, number> = {
+  added: 0,
+  removed: 1,
+  renamed: 2,
+  "license-changed": 3,
+  archived: 4,
+  unarchived: 5,
+  inactive: 6,
+  reactivated: 7,
+  released: 8,
+};

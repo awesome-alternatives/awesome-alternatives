@@ -35,6 +35,7 @@ test("barePaths lists home, the index pages, every tool, every target and every 
     "/languages/",
     "/licenses/",
     "/owners/",
+    "/changes/",
     "/tools/ferrflow/",
     "/tools/cocogitto/",
     "/tools/ferrvault/",

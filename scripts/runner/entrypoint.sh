@@ -37,7 +37,7 @@ if [ "$status" -ne 0 ] && [ "$status" -ne "$record_failed" ]; then
 fi
 
 mkdir -p "$refreshed/generated"
-cp generated/catalog.json "$refreshed/generated/"
+cp generated/catalog.json generated/events.json "$refreshed/generated/"
 cp README.md "$refreshed/"
 push_token=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts" write)
 GIT_CONFIG_COUNT=1 \

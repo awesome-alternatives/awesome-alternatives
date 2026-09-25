@@ -5,6 +5,7 @@ import "../styles/fonts.css";
 import "../styles/global.css";
 import { DEFAULT_LOCALE, localeOf, LOCALES, messages, pathFor, stripLocale } from "../i18n/index.ts";
 import { REPO } from "../lib/repo.ts";
+import type { FeedLink } from "../lib/types.ts";
 import { serialize, type StructuredData } from "../lib/structuredData.ts";
 
 interface Props {
@@ -16,6 +17,7 @@ interface Props {
   noindex?: boolean;
   canonicalPath?: string;
   structuredData?: StructuredData[];
+  feeds?: FeedLink[];
 }
 
 interface SocialImage {
@@ -40,6 +42,7 @@ const {
   noindex = false,
   canonicalPath,
   structuredData = [],
+  feeds = [],
 } = Astro.props;
 const bare = canonicalPath ?? stripLocale(Astro.url.pathname);
 const canonical = new URL(pathFor(locale, bare), Astro.site);
@@ -89,6 +92,7 @@ const link = (path: string) => pathFor(locale, path);
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title={m.chrome.feedTitle} href={feed} />
+    {feeds.map((extra) => <link rel="alternate" type="application/rss+xml" title={extra.title} href={new URL(extra.path, Astro.site)} />)}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
@@ -187,6 +191,7 @@ const link = (path: string) => pathFor(locale, path);
       </p>
       <nav aria-label={m.chrome.footer.label}>
         <a href={link("/about/")}>{m.chrome.footer.howItWorks}</a>
+        <a href={link("/changes/")}>{m.chrome.footer.changes}</a>
         <a href={link("/feed.xml")}>{m.chrome.footer.rss}</a>
         <a href={link("/legal-notice/")}>{m.chrome.footer.legalNotice}</a>
         <a href={link("/privacy/")}>{m.chrome.footer.privacy}</a>

@@ -1,7 +1,7 @@
 FROM node:24-slim@sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6 AS build
 RUN corepack enable
 WORKDIR /repo
-COPY generated/catalog.json generated/
+COPY generated/catalog.json generated/events.json generated/
 COPY CONTRIBUTING.md ./
 COPY data/categories.yaml data/
 COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/

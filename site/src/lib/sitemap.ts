@@ -15,7 +15,7 @@ export interface SitemapAudit {
 }
 
 const UNWANTED = ["/404/"];
-const INDEXES = ["/tools/", "/alternatives/", "/categories/", "/languages/", "/licenses/", "/owners/"];
+const INDEXES = ["/tools/", "/alternatives/", "/categories/", "/languages/", "/licenses/", "/owners/", "/changes/"];
 
 export function barePaths(tools: CatalogEntry[]): string[] {
   const targets = new Set(tools.flatMap((t) => t.replaces.map((r) => r.tool)));

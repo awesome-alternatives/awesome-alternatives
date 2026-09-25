@@ -1,0 +1,110 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import ToolNames from "../../../components/ToolNames.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { messages, pathFor, plural } from "../../../i18n/index.ts";
+import { localePaths } from "../../../i18n/paths.ts";
+import Base from "../../../layouts/Base.astro";
+import { events, nameOf, toolBySlug } from "../../../lib/catalog.ts";
+import {
+  ADDED_NAMES_SHOWN,
+  additionsTitle,
+  type ChangeEntry,
+  changeDays,
+  daySourceUrl,
+  sentence,
+  sourceLabel,
+  sourceUrl,
+} from "../../../lib/changes.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = messages(locale).changes;
+const feed = pathFor(locale, "/changes/feed.xml");
+
+const toolHref = (slug: string) => (toolBySlug(slug) ? pathFor(locale, `/tools/${slug}/`) : null);
+
+function row(entry: ChangeEntry) {
+  if (entry.kind === "event") {
+    const { event } = entry;
+    return {
+      kind: "event" as const,
+      parts: sentence(event, m, nameOf(event.slug)),
+      href: toolHref(event.slug),
+      source: sourceUrl(event),
+      label: sourceLabel(event, m),
+    };
+  }
+  const tools = entry.slugs
+    .map((slug) => ({ name: nameOf(slug), href: toolHref(slug) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const rest = tools.slice(ADDED_NAMES_SHOWN);
+  return {
+    kind: "additions" as const,
+    title: additionsTitle(locale, m, tools.length),
+    shown: tools.slice(0, ADDED_NAMES_SHOWN),
+    rest,
+    more: plural(locale, m.addedMore, rest.length),
+    source: daySourceUrl(entry.day),
+    label: m.commitsOfDay,
+  };
+}
+
+const days = changeDays(events).map(({ day, entries }) => ({ day, rows: entries.map(row) }));
+---
+
+<Base title={m.title} description={m.description} feeds={[{ title: m.feedTitle, path: feed }]}>
+  <section class="hero">
+    <p class="eyebrow">{m.eyebrow}</p>
+    <h1>{m.heading}</h1>
+    <p class="lede">{m.lede}</p>
+    <p class="links paths">
+      <a class="repo-link" href={feed}>{m.feedLink}</a>
+    </p>
+    <p class="context">{m.feedNote}</p>
+  </section>
+
+  {days.length === 0 && <p class="empty">{m.empty}</p>}
+
+  {
+    days.map(({ day, rows }) => (
+      <section class="page-section" id={day}>
+        <h2 class="changes-day">
+          <time datetime={day}>{day}</time>
+        </h2>
+        <ul class="changes">
+          {rows.map((row) => (
+            <li>
+              {row.kind === "event" ? (
+                <span>
+                  {row.parts.before}
+                  {row.href ? <a href={row.href}>{row.parts.name}</a> : row.parts.name}
+                  {row.parts.after}
+                </span>
+              ) : (
+                <div class="changes-additions">
+                  {row.title}: <ToolNames tools={row.shown} />
+                  {row.rest.length > 0 && (
+                    <details>
+                      <summary>{row.more}</summary>
+                      <ToolNames tools={row.rest} />
+                    </details>
+                  )}
+                </div>
+              )}
+              <a class="changes-source" href={row.source}>
+                {row.label} ↗
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

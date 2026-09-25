@@ -11,6 +11,11 @@ export type ToolView = Omit<EnrichedTool, "repo" | "releases" | "addedAt" | "edi
   >;
 };
 
+export interface FeedLink {
+  title: string;
+  path: string;
+}
+
 export interface Filters {
   replaces?: string;
   language?: string;

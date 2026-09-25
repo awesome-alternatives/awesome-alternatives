@@ -46,6 +46,9 @@ const { fit, flag } = strings.islands;
     </ul>
     <p>{m.refresh.commit}</p>
     <p>
+      {m.refresh.changesBefore} <a href={pathFor(locale, "/changes/")}>{m.refresh.changesLink}</a> {m.refresh.changesAfter}
+    </p>
+    <p>
       {m.refresh.releaseBefore} <a href={APP}>{m.refresh.releaseApp}</a> {m.refresh.releaseMiddle}{" "}
       <a href={REFRESH_ACTION}><code>refresh-action</code></a> {m.refresh.releaseAfter}
     </p>

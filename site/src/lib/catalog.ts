@@ -6,7 +6,7 @@ import { parse } from "yaml";
 import type { Locale } from "../i18n/index.ts";
 import { pathFor } from "../i18n/index.ts";
 
-import type { Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
+import type { CatalogEvent, Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
 import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
@@ -39,6 +39,8 @@ const catalog: {
 );
 
 export const tools: EnrichedTool[] = catalog.tools.map(withDeploy);
+
+export const events: CatalogEvent[] = JSON.parse(readFileSync(resolve(ROOT, "generated/events.json"), "utf8"));
 
 export const checkedAt: string | null = catalog.checkedAt ?? null;
 

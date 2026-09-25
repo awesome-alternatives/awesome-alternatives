@@ -3,7 +3,7 @@ import type { Locale } from "../i18n/index.ts";
 import { messages, pathFor, plural } from "../i18n/index.ts";
 import Base from "../layouts/Base.astro";
 import { itemList } from "../lib/structuredData.ts";
-import type { ToolView } from "../lib/types.ts";
+import type { FeedLink, ToolView } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
 interface Props {
@@ -15,9 +15,10 @@ interface Props {
   heading: string;
   lede: string;
   tools: ToolView[];
+  feeds?: FeedLink[];
 }
 
-const { locale, title, description, context, parent, heading, lede, tools } = Astro.props;
+const { locale, title, description, context, parent, heading, lede, tools, feeds = [] } = Astro.props;
 const m = messages(locale);
 const listed = itemList(
   heading,
@@ -25,7 +26,7 @@ const listed = itemList(
 );
 ---
 
-<Base title={title} description={description} structuredData={[listed]}>
+<Base title={title} description={description} structuredData={[listed]} feeds={feeds}>
   <a class="back" href={parent}>{m.listing.back}</a>
   <p class="context"><a href={parent}>{context}</a></p>
   <h1>{heading}</h1>
