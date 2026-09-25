@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.67.0] - 2026-09-25
+
+### Features
+
+- feat: show the star sparkline in search results and tool lists (#212)
+
 ## [0.66.0] - 2026-09-25
 
 ### Features
