@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
-import { batches, SCHEMA_FILE, splitStatements } from "../scripts/lib/facts-db.ts";
+import { batches, recordFacts, SCHEMA_FILE, splitStatements } from "../scripts/lib/facts-db.ts";
 
 describe("splitStatements", () => {
   it("splits on semicolons outside quotes and dollar-quoted bodies", () => {
@@ -26,5 +26,17 @@ describe("batches", () => {
   it("cuts rows into fixed-size batches with a shorter last one", () => {
     assert.deepEqual(batches([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
     assert.deepEqual(batches([], 2), []);
+  });
+});
+
+describe("recordFacts", () => {
+  it("reports an unreachable database instead of throwing, so the catalog still gets pushed", async (t) => {
+    const errors = t.mock.method(console, "error", () => {});
+    const row = { time: "2026-09-25T03:17:00.000Z", slug: "a", stars: 1, forks: 0, open_issues: null, pushed_at: null, release_tag: null, release_published_at: null, signed: null };
+    assert.equal(await recordFacts("postgres://nobody:secret@127.0.0.1:1/facts?connect_timeout=2", [row]), false);
+    assert.equal(errors.mock.callCount(), 1);
+    const logged = String(errors.mock.calls[0]?.arguments[0]);
+    assert.match(logged, /recording its facts failed/);
+    assert.doesNotMatch(logged, /secret/);
   });
 });

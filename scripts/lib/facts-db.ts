@@ -4,6 +4,7 @@ import type { ToolFactsRow } from "./tool-facts.ts";
 
 export const SCHEMA_FILE = new URL("../db/schema.sql", import.meta.url);
 const INSERT_BATCH = 1000;
+export const RECORD_FAILED_EXIT_CODE = 75;
 
 const COLUMNS = [
   "time",
@@ -80,5 +81,19 @@ export async function withDatabase<T>(url: string, run: (sql: Sql) => Promise<T>
     return await run(sql);
   } finally {
     await sql.end();
+  }
+}
+
+export async function recordFacts(url: string, rows: readonly ToolFactsRow[]): Promise<boolean> {
+  try {
+    const inserted = await withDatabase(url, async (sql) => {
+      await applySchema(sql);
+      return insertFacts(sql, rows);
+    });
+    console.log(`recorded facts for ${inserted} tools`);
+    return true;
+  } catch (error) {
+    console.error(`the catalog is published, but recording its facts failed: ${error instanceof Error ? error.message : error}`);
+    return false;
   }
 }

@@ -1,7 +1,7 @@
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { createEnricher, fetchOwners } from "./lib/enrich.ts";
-import { applySchema, insertFacts, withDatabase } from "./lib/facts-db.ts";
+import { RECORD_FAILED_EXIT_CODE, recordFacts } from "./lib/facts-db.ts";
 import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
@@ -26,12 +26,8 @@ const checkedAt = now.toISOString();
 const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools });
 
 const databaseUrl = process.env.DATABASE_URL;
-if (published && databaseUrl) {
-  const inserted = await withDatabase(databaseUrl, async (sql) => {
-    await applySchema(sql);
-    return insertFacts(sql, runRows(checkedAt, tools, facts));
-  });
-  console.log(`recorded facts for ${inserted} tools`);
+if (published && databaseUrl && !(await recordFacts(databaseUrl, runRows(checkedAt, tools, facts)))) {
+  process.exitCode = RECORD_FAILED_EXIT_CODE;
 }
 
 const { queries, cost, remaining } = gql.spent();
