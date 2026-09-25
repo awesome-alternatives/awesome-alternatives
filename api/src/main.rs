@@ -46,6 +46,8 @@ use crate::state::{AppState, Loaded};
 use crate::upstream::Upstream;
 
 const LIMITER_SWEEP: Duration = Duration::from_secs(60);
+const CONNECT_TIMEOUT: Duration = Duration::from_secs(5);
+const OUTBOUND_TIMEOUT: Duration = Duration::from_secs(10);
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -68,6 +70,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             "awesome-alternatives-api/",
             env!("CARGO_PKG_VERSION")
         ))
+        .connect_timeout(CONNECT_TIMEOUT)
+        .timeout(OUTBOUND_TIMEOUT)
         .build()?;
     let catalog = catalog::load(&config.catalog_source, &http).await?;
     tracing::info!(tools = catalog.tools.len(), source = %config.catalog_source, "catalog loaded");

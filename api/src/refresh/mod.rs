@@ -5,6 +5,7 @@ mod signature;
 #[cfg(test)]
 mod tests;
 
+use std::sync::Arc;
 use std::time::Duration;
 
 use axum::Json;
@@ -68,7 +69,7 @@ pub struct Triggered {
 pub struct Refresh {
     webhook_secret: Option<String>,
     oidc: Oidc,
-    dispatcher: Option<Dispatcher>,
+    dispatcher: Option<Arc<Dispatcher>>,
     recent: Cache<String, ()>,
 }
 
@@ -87,13 +88,13 @@ impl Refresh {
             ),
             dispatcher: settings
                 .dispatch
-                .map(|app| Dispatcher::new(http, github_api, app))
+                .map(|app| Dispatcher::new(http, github_api, app).map(Arc::new))
                 .transpose()?,
             recent: Cache::builder().time_to_live(settings.cooldown).build(),
         })
     }
 
-    fn dispatcher(&self) -> Result<&Dispatcher, RefreshError> {
+    fn dispatcher(&self) -> Result<&Arc<Dispatcher>, RefreshError> {
         self.dispatcher.as_ref().ok_or(RefreshError::Unconfigured)
     }
 
@@ -105,35 +106,53 @@ impl Refresh {
 
     async fn trigger(
         &self,
-        dispatcher: &Dispatcher,
+        dispatcher: &Arc<Dispatcher>,
         full_name: &str,
         slugs: Vec<String>,
     ) -> Result<Triggered, RefreshError> {
         let key = full_name.to_ascii_lowercase();
-        if !self
-            .recent
-            .entry(key.clone())
-            .or_insert(())
-            .await
-            .is_fresh()
-        {
-            tracing::info!(repository = full_name, ?slugs, "refresh coalesced");
-            return Ok(Triggered {
-                slugs,
-                dispatched: false,
-            });
-        }
-        if let Err(error) = dispatcher.dispatch(&slugs).await {
-            self.recent.invalidate(&key).await;
-            tracing::error!(%error, repository = full_name, ?slugs, "refresh dispatch failed");
-            return Err(RefreshError::Dispatch);
-        }
-        tracing::info!(repository = full_name, ?slugs, "refresh dispatched");
-        Ok(Triggered {
+        let task = tokio::spawn(dispatch_once(
+            self.recent.clone(),
+            Arc::clone(dispatcher),
+            key.clone(),
+            full_name.to_owned(),
             slugs,
-            dispatched: true,
-        })
+        ));
+        match task.await {
+            Ok(triggered) => triggered,
+            Err(error) => {
+                self.recent.invalidate(&key).await;
+                tracing::error!(%error, repository = full_name, "refresh dispatch did not finish");
+                Err(RefreshError::Dispatch)
+            }
+        }
     }
+}
+
+async fn dispatch_once(
+    recent: Cache<String, ()>,
+    dispatcher: Arc<Dispatcher>,
+    key: String,
+    full_name: String,
+    slugs: Vec<String>,
+) -> Result<Triggered, RefreshError> {
+    if !recent.entry(key.clone()).or_insert(()).await.is_fresh() {
+        tracing::info!(repository = full_name, ?slugs, "refresh coalesced");
+        return Ok(Triggered {
+            slugs,
+            dispatched: false,
+        });
+    }
+    if let Err(error) = dispatcher.dispatch(&slugs).await {
+        recent.invalidate(&key).await;
+        tracing::error!(%error, repository = full_name, ?slugs, "refresh dispatch failed");
+        return Err(RefreshError::Dispatch);
+    }
+    tracing::info!(repository = full_name, ?slugs, "refresh dispatched");
+    Ok(Triggered {
+        slugs,
+        dispatched: true,
+    })
 }
 
 pub fn slugs_for(tools: &[Tool], full_name: &str) -> Vec<String> {
