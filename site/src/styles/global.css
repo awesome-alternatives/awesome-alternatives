@@ -432,6 +432,10 @@ main {
   overflow-x: auto;
 }
 
+.table-scroll.wide {
+  max-width: none;
+}
+
 .comparison {
   width: 100%;
   border-collapse: collapse;
@@ -443,7 +447,7 @@ main {
 
 .comparison th,
 .comparison td {
-  padding: 10px 16px 10px 0;
+  padding: 10px 20px 10px 0;
   border-bottom: 1px solid var(--line);
   text-align: start;
   vertical-align: baseline;
@@ -802,8 +806,7 @@ button.link {
 }
 
 .comparison-stars .sparkline {
-  width: 40px;
-  margin-inline-start: 8px;
+  margin-inline-start: 10px;
 }
 
 .boost-growth {
