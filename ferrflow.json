@@ -28,6 +28,12 @@
         ".github/workflows/refresh.yml"
       ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
+    },
+    {
+      "name": "refresh",
+      "path": "scripts/runner",
+      "changelog": "scripts/runner/CHANGELOG.md",
+      "sharedPaths": ["scripts", "package.json", "pnpm-lock.yaml"]
     }
   ]
 }

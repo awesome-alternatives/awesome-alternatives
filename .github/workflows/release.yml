@@ -34,7 +34,7 @@ jobs:
         id: tags
         run: |
           git fetch -q --tags origin main
-          tags=$(git tag --points-at FETCH_HEAD | grep -E '^(api|site)-v' | jq -Rsc 'split("\n") | map(select(length > 0))')
+          tags=$(git tag --points-at FETCH_HEAD | grep -E '^(api|site|refresh)-v' | jq -Rsc 'split("\n") | map(select(length > 0))')
           echo "tags=$tags" >> "$GITHUB_OUTPUT"
           echo "Released: $tags"
 
@@ -68,6 +68,7 @@ jobs:
           case "$name" in
             api) context=api; file=api/Dockerfile ;;
             site) context=.; file=site/Dockerfile ;;
+            refresh) context=.; file=scripts/runner/Dockerfile ;;
           esac
           echo "$TOKEN" | docker login ghcr.io -u "$ACTOR" --password-stdin
           docker build -f "$file" \
