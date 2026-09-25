@@ -427,6 +427,33 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn a_terms_value_outside_the_catalog_vocabulary_is_refused_rather_than_ignored() {
+        let app = app(10);
+        let status = |uri: &'static str| {
+            let app = app.clone();
+            async move {
+                app.oneshot(Request::get(uri).body(Body::empty()).unwrap())
+                    .await
+                    .unwrap()
+                    .status()
+            }
+        };
+        assert_eq!(
+            status("/v1/tools?terms=libre").await,
+            StatusCode::BAD_REQUEST
+        );
+        assert_eq!(
+            status("/v1/tools?terms=Open").await,
+            StatusCode::BAD_REQUEST
+        );
+        assert_eq!(
+            status("/v1/tools?terms=libre&language=rust").await,
+            StatusCode::BAD_REQUEST
+        );
+        assert_eq!(status("/v1/tools?terms=unknown").await, StatusCode::OK);
+    }
+
+    #[tokio::test]
     async fn capabilities_are_read_from_a_comma_list_and_near_misses_come_back_with_their_gap() {
         let (status, body) = call(
             &app(10),

@@ -147,6 +147,10 @@ export const de: Messages = {
     title: "Tools von {name}",
     description: "{count} Tools im Katalog gehören {name} auf GitHub, mit Sprache, Lizenz, Sternen und letztem Release.",
     lede: "Repositories, die {name} auf GitHub gehören.",
+    kindLede: {
+      organization: "Repositories von {name}, einer Organisation auf GitHub.",
+      user: "Repositories von {name}, einer Person auf GitHub.",
+    },
     profile: "GitHub-Profil ↗",
     website: "Website ↗",
   },
@@ -203,6 +207,7 @@ export const de: Messages = {
     archived: "archiviert",
     aboutLabel: "Überblick",
     owner: "Inhaber",
+    ownerKind: { organization: "Organisation", user: "Person" },
     archivedNote:
       "Dieses Repository ist archiviert und bekommt keine Änderungen mehr. Es steht hier, damit sich der Ersatz dafür finden lässt.",
     signed: "Signiertes Release, von GitHub geprüft",

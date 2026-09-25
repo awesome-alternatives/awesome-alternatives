@@ -145,6 +145,10 @@ export const en = {
     title: "Tools published by {name}",
     description: "{count} tools in the catalog owned by {name} on GitHub, with language, licence, stars and latest release.",
     lede: "Repositories owned by {name} on GitHub.",
+    kindLede: {
+      organization: "Repositories owned by {name}, an organisation on GitHub.",
+      user: "Repositories owned by {name}, a person on GitHub.",
+    },
     profile: "GitHub profile ↗",
     website: "Website ↗",
   },
@@ -201,6 +205,7 @@ export const en = {
     archived: "archived",
     aboutLabel: "About",
     owner: "Owner",
+    ownerKind: { organization: "organisation", user: "person" },
     archivedNote:
       "This repository is archived and no longer receives changes. It is listed so you can find what replaces it.",
     signed: "Signed release, verified by GitHub",
