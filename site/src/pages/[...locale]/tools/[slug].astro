@@ -4,6 +4,7 @@ import type { GetStaticPaths } from "astro";
 
 import { Mark } from "../../../components/Mark.tsx";
 import ReplacedBy from "../../../components/ReplacedBy.astro";
+import StarChart from "../../../components/StarChart.astro";
 import ToolTabs from "../../../components/ToolTabs.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
@@ -187,6 +188,7 @@ const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.
               </div>
             )
           }
+          {tool.starHistory && <StarChart locale={locale} series={tool.starHistory} />}
         </dl>
         {
           capabilityList.length > 0 && (

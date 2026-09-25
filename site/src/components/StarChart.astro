@@ -1,0 +1,58 @@
+---
+import type { Locale } from "../i18n/index.ts";
+import { format, messages } from "../i18n/index.ts";
+import { count } from "../lib/format.ts";
+import type { StarHistory } from "../../../scripts/lib/types.ts";
+import { chartOf } from "../lib/sparkline.ts";
+
+interface Props {
+  locale: Locale;
+  series: StarHistory;
+}
+
+const WIDTH = 300;
+const HEIGHT = 56;
+
+const { locale, series } = Astro.props;
+const m = messages(locale);
+const chart = chartOf(series, WIDTH, HEIGHT);
+const first = chart?.points[0];
+const last = chart?.points.at(-1);
+---
+
+{
+  chart && first && last && (
+    <div class="full star-chart">
+      <dt>{format(m.tool.starChart, { days: chart.points.length })}</dt>
+      <dd>
+        <svg
+          viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+          preserveAspectRatio="none"
+          role="img"
+          aria-label={format(m.tool.starChartSummary, {
+            from: count(first.stars, locale),
+            start: first.day,
+            to: count(last.stars, locale),
+            end: last.day,
+          })}
+        >
+          <path class="star-chart-area" d={chart.area} />
+          <path class="star-chart-line" d={chart.line} vector-effect="non-scaling-stroke" />
+          {chart.points.map((point) => (
+            <rect class="star-chart-day" x={point.x - chart.step / 2} y="0" width={chart.step} height={HEIGHT}>
+              <title>{format(m.tool.starChartDay, { day: point.day, n: count(point.stars, locale) })}</title>
+            </rect>
+          ))}
+        </svg>
+        <p class="star-chart-range">
+          <span>
+            {first.day} {count(first.stars, locale)}
+          </span>
+          <span>
+            {last.day} {count(last.stars, locale)}
+          </span>
+        </p>
+      </dd>
+    </div>
+  )
+}
