@@ -260,3 +260,21 @@ node scripts/refresh-merge.ts entries
 
 The first writes the entry to `entries/release-plz.json`, the second splices every file in
 `entries/` into the published catalog and leaves the other tools as they were.
+
+### Daily facts and the cluster runner
+
+With `DATABASE_URL` set, `pnpm refresh` also writes one row per tool to the `tool_facts` table in
+TimescaleDB once the catalog is published, and creates the schema in
+[`scripts/db/schema.sql`](scripts/db/schema.sql) on the way. Without it, the refresh does exactly
+what it does in Actions. To seed the table from every day in the catalog's git history, which is
+safe to run again:
+
+```bash
+DATABASE_URL=postgres://... pnpm backfill-facts
+```
+
+The image built from [`scripts/runner/Dockerfile`](scripts/runner/Dockerfile) runs the nightly
+refresh in the cluster. It mints an installation token from `APP_ID` and `APP_PRIVATE_KEY` for
+`REPOSITORY` (default `awesome-alternatives/awesome-alternatives`), clones it into `WORK_DIR`
+(default `/work`), refreshes, and pushes the catalog as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`,
+the app's bot user, falling back to `github-actions[bot]`.
