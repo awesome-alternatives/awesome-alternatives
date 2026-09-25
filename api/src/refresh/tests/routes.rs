@@ -35,7 +35,12 @@ fn app(refresh: Refresh) -> Router {
     };
     let state = AppState::new(
         Loaded::new(catalog, None),
-        Search::new(None, None, Arc::new(Shared::disabled())),
+        Search::new(
+            None,
+            None,
+            crate::search::CACHE_BYTES,
+            Arc::new(Shared::disabled()),
+        ),
         Details::new(
             Upstream::new(
                 reqwest::Client::new(),

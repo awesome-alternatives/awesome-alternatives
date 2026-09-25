@@ -1,4 +1,3 @@
-use std::convert::Infallible;
 use std::future::Future;
 use std::pin::Pin;
 use std::sync::Mutex;
@@ -174,20 +173,6 @@ impl Shared {
         let value = load.await?;
         self.set(key, &value, ttl).await;
         Ok(value)
-    }
-
-    pub async fn remembered<T, F>(&self, key: &str, ttl: Duration, load: F) -> T
-    where
-        T: Serialize + DeserializeOwned,
-        F: Future<Output = T>,
-    {
-        match self
-            .through::<T, Infallible, _>(key, ttl, async move { Ok(load.await) })
-            .await
-        {
-            Ok(value) => value,
-            Err(impossible) => match impossible {},
-        }
     }
 
     async fn bounded<T>(&self, work: Answer<'_, T>) -> Result<T, Error> {

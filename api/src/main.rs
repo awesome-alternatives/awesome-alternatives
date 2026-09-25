@@ -14,6 +14,7 @@ mod jev;
 mod jev_budget;
 mod lexical;
 mod limits;
+mod memory;
 mod peer;
 mod qualifiers;
 mod readme;
@@ -119,7 +120,12 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let loaded = Loaded::build(catalog, embedder.clone()).await;
     let state = AppState::new(
         loaded,
-        Search::new(jev, embedder, Arc::clone(&shared)),
+        Search::new(
+            jev,
+            embedder,
+            config.search_cache_bytes,
+            Arc::clone(&shared),
+        ),
         Details::new(upstream, config.details_cache_bytes, shared),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         RateLimiter::keyed(Quota::per_minute(config.details_per_minute)),
