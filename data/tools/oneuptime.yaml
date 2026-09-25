@@ -1,0 +1,12 @@
+name: OneUptime
+repository: https://github.com/OneUptime/oneuptime
+category: uptime-monitoring
+terms: open-core
+replaces:
+  - tool: pingdom
+    fit: full
+    note: Checks for websites, APIs and servers, with alerts and on-call schedules.
+  - tool: statuspage
+    fit: full
+    note: Status pages with incident updates and subscribers.
+deploy: [container, compose, helm]

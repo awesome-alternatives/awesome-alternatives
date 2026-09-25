@@ -1,0 +1,11 @@
+name: Checkmate
+repository: https://github.com/bluewave-labs/Checkmate
+category: uptime-monitoring
+replaces:
+  - tool: pingdom
+    fit: full
+    note: Uptime, page speed and server checks with alerts, self-hosted.
+  - tool: statuspage
+    fit: full
+    note: Public status pages built from its monitors.
+deploy: [container, compose, helm]

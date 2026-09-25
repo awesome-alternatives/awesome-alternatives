@@ -1,0 +1,9 @@
+name: Defguard
+repository: https://github.com/DefGuard/defguard
+category: mesh-vpn
+terms: open-core
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: WireGuard VPN with MFA and a built-in OpenID provider; clients connect through gateways rather than a mesh.
+deploy: [container, compose, binary, package]

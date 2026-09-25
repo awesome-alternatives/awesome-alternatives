@@ -1,0 +1,9 @@
+name: OpenResty
+repository: https://github.com/openresty/openresty
+category: reverse-proxy
+terms: open
+replaces:
+  - tool: nginx
+    fit: drop-in
+    note: The nginx core bundled with LuaJIT and Lua modules, reading the same configuration.
+deploy: [container, package]

@@ -1,0 +1,7 @@
+name: Fleet
+repository: https://github.com/rancher/fleet
+category: gitops
+replaces:
+  - tool: argo-cd
+    fit: full
+    note: Deploys bundles from git to large numbers of clusters, driven by custom resources or from Rancher.

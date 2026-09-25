@@ -1,0 +1,8 @@
+name: Nhost
+repository: https://github.com/nhost/nhost
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: full
+    note: Postgres with a GraphQL API through Hasura, auth, storage and serverless functions.
+deploy: [compose]

@@ -1,0 +1,8 @@
+name: Healthchecks
+repository: https://github.com/healthchecks/healthchecks
+category: uptime-monitoring
+replaces:
+  - tool: cronitor
+    fit: partial
+    note: Cron job and heartbeat monitoring, without outgoing uptime checks.
+deploy: [container, compose]

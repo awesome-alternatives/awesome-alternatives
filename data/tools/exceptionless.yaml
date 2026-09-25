@@ -1,0 +1,8 @@
+name: Exceptionless
+repository: https://github.com/exceptionless/Exceptionless
+category: error-tracking
+replaces:
+  - tool: sentry
+    fit: partial
+    note: Errors, logs and feature usage events from its own .NET and JavaScript clients.
+deploy: [container, compose, helm]

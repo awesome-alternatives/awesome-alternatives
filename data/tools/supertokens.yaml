@@ -1,0 +1,9 @@
+name: SuperTokens
+repository: https://github.com/supertokens/supertokens-core
+category: identity-provider
+terms: open-core
+replaces:
+  - tool: auth0
+    fit: full
+    note: Login flows, sessions and social login with prebuilt UI embedded in your app; MFA and multi-tenancy need a licence key.
+deploy: [container]

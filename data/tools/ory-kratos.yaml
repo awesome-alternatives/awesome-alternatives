@@ -1,0 +1,8 @@
+name: Ory Kratos
+repository: https://github.com/ory/kratos
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: partial
+    note: Registration, login, MFA and account recovery through an API; you bring the login pages.
+deploy: [container, helm, binary]

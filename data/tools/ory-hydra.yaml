@@ -1,0 +1,8 @@
+name: Ory Hydra
+repository: https://github.com/ory/hydra
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: partial
+    note: An OAuth 2.0 and OpenID Connect server; login, consent and users stay in your own app.
+deploy: [container, helm, binary]

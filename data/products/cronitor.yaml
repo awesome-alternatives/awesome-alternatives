@@ -1,0 +1,5 @@
+name: Cronitor
+homepage: https://cronitor.io
+vendor: Cronitor
+category: uptime-monitoring
+description: Hosted monitoring for cron jobs, heartbeats and websites, with status pages.

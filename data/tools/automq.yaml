@@ -1,0 +1,8 @@
+name: AutoMQ
+repository: https://github.com/AutoMQ/automq
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: drop-in
+    note: A Kafka fork that keeps partitions in S3-compatible object storage, with the same protocol and tools.
+deploy: [container, compose]

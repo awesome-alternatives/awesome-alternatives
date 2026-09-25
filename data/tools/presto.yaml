@@ -1,0 +1,8 @@
+name: Presto
+repository: https://github.com/prestodb/presto
+category: analytical-database
+replaces:
+  - tool: amazon-athena
+    fit: full
+    note: "Athena's first engines were based on Presto; here you run the cluster yourself."
+deploy: [container, helm]

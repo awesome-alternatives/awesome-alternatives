@@ -1,0 +1,7 @@
+name: Pinpoint
+repository: https://github.com/pinpoint-apm/pinpoint
+category: tracing
+replaces:
+  - tool: new-relic
+    fit: partial
+    note: APM agents for Java, PHP and Python with call-stack traces and a server map; no log or infrastructure monitoring.
