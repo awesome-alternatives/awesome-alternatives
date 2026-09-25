@@ -1,0 +1,5 @@
+name: Vercel
+homepage: https://vercel.com
+vendor: Vercel
+category: self-hosted-paas
+description: Vercel's hosted platform for front-end frameworks, with preview deployments, serverless functions and a global edge network.

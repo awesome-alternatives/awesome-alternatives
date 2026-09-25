@@ -1,0 +1,5 @@
+name: Netlify
+homepage: https://www.netlify.com
+vendor: Netlify
+category: self-hosted-paas
+description: Netlify's hosted platform for static sites and front-end apps, with deploy previews, serverless functions and forms.

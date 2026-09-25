@@ -1,0 +1,5 @@
+name: Heroku
+homepage: https://www.heroku.com
+vendor: Salesforce
+category: self-hosted-paas
+description: Salesforce's hosted platform that builds apps from a git push with buildpacks and runs them with managed add-ons such as Postgres.

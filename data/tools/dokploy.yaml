@@ -1,0 +1,21 @@
+name: Dokploy
+repository: https://github.com/Dokploy/dokploy
+category: self-hosted-paas
+terms: open-core
+replaces:
+  - tool: heroku
+    fit: full
+    note: Builds from git with Nixpacks, Railpack, Heroku or Paketo buildpacks or a Dockerfile, with managed databases and backups.
+  - tool: render
+    fit: full
+    note: Applications, databases, scheduled jobs and preview deployments from a dashboard, on servers you bring.
+  - tool: railway
+    fit: full
+    note: Applications and databases from a dashboard, on servers you bring.
+  - tool: vercel
+    fit: partial
+    note: Static sites and Node frameworks with preview deployments, served from your own servers without a global edge network.
+  - tool: netlify
+    fit: partial
+    note: Static sites with preview deployments, without Netlify Functions, Forms or a global CDN.
+deploy: [container]

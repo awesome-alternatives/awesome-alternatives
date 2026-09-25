@@ -1,0 +1,7 @@
+name: Piku
+repository: https://github.com/piku/piku
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: partial
+    note: Git push deploys with a Procfile and an ENV file on a single server, built per language without buildpacks or managed databases.
