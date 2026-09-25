@@ -1,10 +1,10 @@
 {
   "stats": {
-    "tools": 708,
-    "categories": 128,
-    "targets": 269
+    "tools": 732,
+    "categories": 132,
+    "targets": 283
   },
-  "checkedAt": "2026-09-25T14:39:01.115Z",
+  "checkedAt": "2026-09-25T14:53:04.969Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -53,6 +53,14 @@
       "bio": "Automate your work, Open source alternative to Zapier, Tray.io, make",
       "website": "https://activepieces.com",
       "url": "https://github.com/activepieces"
+    },
+    "actualbudget": {
+      "login": "actualbudget",
+      "kind": "organization",
+      "name": "Actual",
+      "bio": null,
+      "website": "https://actualbudget.org",
+      "url": "https://github.com/actualbudget"
     },
     "AdguardTeam": {
       "login": "AdguardTeam",
@@ -494,6 +502,14 @@
       "website": "https://defn.io",
       "url": "https://github.com/Bogdanp"
     },
+    "booklore-app": {
+      "login": "booklore-app",
+      "kind": "organization",
+      "name": "Booklore",
+      "bio": "Booklore is a self-hosted platform to organize, read, and track your books across devices, with OPDS support and a built-in reader.",
+      "website": "https://booklore.org",
+      "url": "https://github.com/booklore-app"
+    },
     "BookStackApp": {
       "login": "BookStackApp",
       "kind": "organization",
@@ -806,6 +822,14 @@
       "website": null,
       "url": "https://github.com/crate-ci"
     },
+    "crocodilestick": {
+      "login": "crocodilestick",
+      "kind": "user",
+      "name": "CrocodileStick",
+      "bio": "An automation enthusiast looking to make mine and the lives of others just that little bit easier where at all possible",
+      "website": null,
+      "url": "https://github.com/crocodilestick"
+    },
     "crossplane": {
       "login": "crossplane",
       "kind": "organization",
@@ -1005,6 +1029,14 @@
       "bio": "OpenID Connect Identity (OIDC) and OAuth 2.0 Provider with Pluggable Connectors",
       "website": "https://dexidp.io",
       "url": "https://github.com/dexidp"
+    },
+    "dgraph-io": {
+      "login": "dgraph-io",
+      "kind": "organization",
+      "name": "Dgraph",
+      "bio": null,
+      "website": "https://dgraph.io",
+      "url": "https://github.com/dgraph-io"
     },
     "directus": {
       "login": "directus",
@@ -1326,6 +1358,14 @@
       "website": "https://opensource.fb.com",
       "url": "https://github.com/facebook"
     },
+    "FalkorDB": {
+      "login": "FalkorDB",
+      "kind": "organization",
+      "name": null,
+      "bio": "The fastest way to your knowledge",
+      "website": "https://www.falkordb.com",
+      "url": "https://github.com/FalkorDB"
+    },
     "fastapi": {
       "login": "fastapi",
       "kind": "organization",
@@ -1357,6 +1397,14 @@
       "bio": "We build small, opinionated tools for the parts of the dev workflow you should not have to think about. One org, one login, one bill across every product",
       "website": "https://ferrlabs.com",
       "url": "https://github.com/FerrLabs"
+    },
+    "firefly-iii": {
+      "login": "firefly-iii",
+      "kind": "organization",
+      "name": "Firefly III",
+      "bio": "The makers of your favorite personal finances application, Firefly III",
+      "website": "https://www.firefly-iii.org/",
+      "url": "https://github.com/firefly-iii"
     },
     "firezone": {
       "login": "firezone",
@@ -1614,6 +1662,14 @@
       "website": "https://iterm2.com/",
       "url": "https://github.com/gnachman"
     },
+    "Gnucash": {
+      "login": "Gnucash",
+      "kind": "organization",
+      "name": "GnuCash Developers",
+      "bio": null,
+      "website": "http://wiki.gnucash.org/wiki/",
+      "url": "https://github.com/Gnucash"
+    },
     "go-gitea": {
       "login": "go-gitea",
       "kind": "organization",
@@ -1717,6 +1773,14 @@
       "bio": "Release engineering, simplified",
       "website": "https://goreleaser.com",
       "url": "https://github.com/goreleaser"
+    },
+    "gotson": {
+      "login": "gotson",
+      "kind": "user",
+      "name": "Gauthier",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/gotson"
     },
     "grafana": {
       "login": "grafana",
@@ -2006,6 +2070,14 @@
       "website": "https://ohmyposh.dev",
       "url": "https://github.com/JanDeDobbeleer"
     },
+    "janeczku": {
+      "login": "janeczku",
+      "kind": "user",
+      "name": "Jan B",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/janeczku"
+    },
     "janhq": {
       "login": "janhq",
       "kind": "organization",
@@ -2013,6 +2085,14 @@
       "bio": "Jan is building Open Intelligence.",
       "website": "https://jan.ai",
       "url": "https://github.com/janhq"
+    },
+    "JanusGraph": {
+      "login": "JanusGraph",
+      "kind": "organization",
+      "name": null,
+      "bio": "Open-source, distributed graph database",
+      "website": "https://janusgraph.org",
+      "url": "https://github.com/JanusGraph"
     },
     "jashkenas": {
       "login": "jashkenas",
@@ -2197,6 +2277,14 @@
       "bio": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search. Owned by Localhost Labs Ltd.",
       "website": "https://karakeep.app",
       "url": "https://github.com/karakeep-app"
+    },
+    "Kareadita": {
+      "login": "Kareadita",
+      "kind": "organization",
+      "name": "Kavita",
+      "bio": "A self-hosted manga/comic/book server and reader",
+      "website": "https://kavitareader.com",
+      "url": "https://github.com/Kareadita"
     },
     "kestra-io": {
       "login": "kestra-io",
@@ -2662,6 +2750,30 @@
       "website": null,
       "url": "https://github.com/mawww"
     },
+    "maybe-finance": {
+      "login": "maybe-finance",
+      "kind": "organization",
+      "name": "Maybe",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/maybe-finance"
+    },
+    "mayswind": {
+      "login": "mayswind",
+      "kind": "user",
+      "name": null,
+      "bio": "Blog: http://cnblogs.com/mayswind\r\nWeibo: http://weibo.com/sunyunchen",
+      "website": "https://mayswind.net",
+      "url": "https://github.com/mayswind"
+    },
+    "mealie-recipes": {
+      "login": "mealie-recipes",
+      "kind": "organization",
+      "name": "Mealie",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/mealie-recipes"
+    },
     "mediacms-io": {
       "login": "mediacms-io",
       "kind": "organization",
@@ -2701,6 +2813,14 @@
       "bio": null,
       "website": "http://memcached.org/",
       "url": "https://github.com/memcached"
+    },
+    "memgraph": {
+      "login": "memgraph",
+      "kind": "organization",
+      "name": "Memgraph",
+      "bio": "High-performance open-source in-memory graph database for GraphRAG, AI memory, agentic AI, and real-time graph analytics.",
+      "website": "https://memgraph.com",
+      "url": "https://github.com/memgraph"
     },
     "mermaid-js": {
       "login": "mermaid-js",
@@ -2926,6 +3046,14 @@
       "website": "https://www.navidrome.org",
       "url": "https://github.com/navidrome"
     },
+    "neo4j": {
+      "login": "neo4j",
+      "kind": "organization",
+      "name": "Neo4j",
+      "bio": null,
+      "website": "http://neo4j.com/",
+      "url": "https://github.com/neo4j"
+    },
     "neovim": {
       "login": "neovim",
       "kind": "organization",
@@ -3029,6 +3157,14 @@
       "bio": null,
       "website": "https://nodejs.org",
       "url": "https://github.com/nodejs"
+    },
+    "norish-recipes": {
+      "login": "norish-recipes",
+      "kind": "organization",
+      "name": "Norish",
+      "bio": "A realtime, self-hosted recipe app for families & friends",
+      "website": null,
+      "url": "https://github.com/norish-recipes"
     },
     "notepad-plus-plus": {
       "login": "notepad-plus-plus",
@@ -4422,6 +4558,14 @@
       "website": "https://streetwriters.co/",
       "url": "https://github.com/streetwriters"
     },
+    "stumpapp": {
+      "login": "stumpapp",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/stumpapp"
+    },
     "SuiteCRM": {
       "login": "SuiteCRM",
       "kind": "organization",
@@ -4501,6 +4645,14 @@
       "bio": "Creators of Tailwind CSS and Headless UI, and authors of Refactoring UI.",
       "website": "https://tailwindcss.com",
       "url": "https://github.com/tailwindlabs"
+    },
+    "TandoorRecipes": {
+      "login": "TandoorRecipes",
+      "kind": "organization",
+      "name": "Tandoor Recipes",
+      "bio": "Django application for managing recipes",
+      "website": "https://tandoor.dev/",
+      "url": "https://github.com/TandoorRecipes"
     },
     "taosdata": {
       "login": "taosdata",
@@ -4613,6 +4765,14 @@
       "bio": "Building for a semantic future. To shape, not to adapt. https://affine.pro",
       "website": null,
       "url": "https://github.com/toeverything"
+    },
+    "TomBursch": {
+      "login": "TomBursch",
+      "kind": "user",
+      "name": "Tom Bursch",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/TomBursch"
     },
     "tonarino": {
       "login": "tonarino",
@@ -4838,6 +4998,14 @@
       "website": "https://vercel.com",
       "url": "https://github.com/vercel"
     },
+    "vesoft-inc": {
+      "login": "vesoft-inc",
+      "kind": "organization",
+      "name": "vesoft inc.",
+      "bio": null,
+      "website": "https://vesoft.com",
+      "url": "https://github.com/vesoft-inc"
+    },
     "VictoriaMetrics": {
       "login": "VictoriaMetrics",
       "kind": "organization",
@@ -4909,6 +5077,14 @@
       "bio": "An open-source, cross-platform terminal for seamless workflows",
       "website": "https://waveterm.dev",
       "url": "https://github.com/wavetermdev"
+    },
+    "we-promise": {
+      "login": "we-promise",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/we-promise"
     },
     "weaviate": {
       "login": "weaviate",
@@ -5280,7 +5456,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-12-03T02:52:46Z",
-        "pushedAt": "2026-09-25T14:21:08Z",
+        "pushedAt": "2026-09-25T14:47:47Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -5343,6 +5519,104 @@
       "deploy": [
         "container",
         "compose"
+      ]
+    },
+    {
+      "slug": "actual-budget",
+      "name": "Actual Budget",
+      "repository": "https://github.com/actualbudget/actual",
+      "category": "personal-finance",
+      "replaces": [
+        {
+          "tool": "ynab",
+          "fit": "full",
+          "note": "Envelope budgeting in a local-first app, with an optional sync server and bank sync through providers such as SimpleFIN or Enable Banking.",
+          "migration": "https://actualbudget.org/docs/migration/nynab/"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "actualbudget/actual",
+        "description": "A local-first personal finance app",
+        "homepage": "https://actualbudget.org",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 29142,
+        "forks": 3020,
+        "topics": [
+          "budgeting",
+          "finance",
+          "money",
+          "personal-finance"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-04-29T02:41:34Z",
+        "pushedAt": "2026-09-24T19:59:48Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [29142]
+      },
+      "release": {
+        "tag": "v26.9.0",
+        "publishedAt": "2026-09-01T09:15:56Z",
+        "url": "https://github.com/actualbudget/actual/releases/tag/v26.9.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v26.9.0",
+          "name": ":link: View release notes",
+          "publishedAt": "2026-09-01T09:15:56Z",
+          "url": "https://github.com/actualbudget/actual/releases/tag/v26.9.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.8.1",
+          "name": ":link: View release notes",
+          "publishedAt": "2026-08-07T21:17:24Z",
+          "url": "https://github.com/actualbudget/actual/releases/tag/v26.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.8.0",
+          "name": ":link: View release notes",
+          "publishedAt": "2026-08-02T20:40:05Z",
+          "url": "https://github.com/actualbudget/actual/releases/tag/v26.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.7.0",
+          "name": ":link: View release notes",
+          "publishedAt": "2026-07-02T16:31:47Z",
+          "url": "https://github.com/actualbudget/actual/releases/tag/v26.7.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.6.0",
+          "name": ":link: View release notes",
+          "publishedAt": "2026-06-01T17:31:24Z",
+          "url": "https://github.com/actualbudget/actual/releases/tag/v26.6.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
       ]
     },
     {
@@ -6113,7 +6387,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 46970,
-        "forks": 17913,
+        "forks": 17912,
         "topics": [
           "airflow",
           "apache",
@@ -6522,7 +6796,7 @@
         "homepage": "https://alacritty.org",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 65815,
+        "stars": 65816,
         "forks": 3625,
         "topics": [
           "bsd",
@@ -6544,13 +6818,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 24,
+        "stars": 25,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [65791,65800,65809,65815]
+        "stars": [65791,65800,65809,65816]
       },
       "release": {
         "tag": "v0.17.0",
@@ -6996,6 +7270,105 @@
       "deploy": []
     },
     {
+      "slug": "apache-age",
+      "name": "Apache AGE",
+      "repository": "https://github.com/apache/age",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "neo4j",
+          "fit": "partial",
+          "note": "Runs openCypher inside PostgreSQL through SQL; there is no Bolt endpoint, so Neo4j drivers do not connect."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/age",
+        "description": "Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL.",
+        "homepage": "https://age.apache.org",
+        "language": "C",
+        "license": "Apache-2.0",
+        "stars": 4851,
+        "forks": 529,
+        "topics": [
+          "age-database",
+          "agensgraph",
+          "analytics",
+          "graph-database",
+          "graphdb",
+          "multi-model-dbms",
+          "postgresql",
+          "postgresql-extension"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-07-01T06:15:47Z",
+        "pushedAt": "2026-09-19T12:43:27Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [4851]
+      },
+      "release": {
+        "tag": "PG18/v1.8.0-rc0",
+        "publishedAt": "2026-07-09T00:21:23Z",
+        "url": "https://github.com/apache/age/releases/tag/PG18/v1.8.0-rc0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "PG15/v1.8.0-rc0",
+          "name": "Release v1.8.0 for PG15",
+          "publishedAt": "2026-09-19T16:02:16Z",
+          "url": "https://github.com/apache/age/releases/tag/PG15/v1.8.0-rc0",
+          "prerelease": true
+        },
+        {
+          "tag": "PG18/v1.8.0-rc0",
+          "name": "Release v1.8.0 for PG18",
+          "publishedAt": "2026-07-09T00:21:23Z",
+          "url": "https://github.com/apache/age/releases/tag/PG18/v1.8.0-rc0",
+          "prerelease": false
+        },
+        {
+          "tag": "PG17/v1.7.0-rc0",
+          "name": "Release v1.7.0 for PG17",
+          "publishedAt": "2026-02-11T17:08:27Z",
+          "url": "https://github.com/apache/age/releases/tag/PG17/v1.7.0-rc0",
+          "prerelease": false
+        },
+        {
+          "tag": "PG18/v1.7.0-rc0",
+          "name": "Release v1.7.0 for PG18",
+          "publishedAt": "2026-01-21T20:26:32Z",
+          "url": "https://github.com/apache/age/releases/tag/PG18/v1.7.0-rc0",
+          "prerelease": false
+        },
+        {
+          "tag": "PG15/v1.6.0-rc0",
+          "name": "Release v1.6.0 for PG15",
+          "publishedAt": "2025-11-20T18:41:38Z",
+          "url": "https://github.com/apache/age/releases/tag/PG15/v1.6.0-rc0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
       "slug": "apisix",
       "name": "Apache APISIX",
       "repository": "https://github.com/apache/apisix",
@@ -7133,7 +7506,7 @@
         "homepage": "https://appflowy.com",
         "language": "Dart",
         "license": "AGPL-3.0",
-        "stars": 76928,
+        "stars": 76929,
         "forks": 6039,
         "topics": [
           "blog",
@@ -7157,13 +7530,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 16,
+        "stars": 17,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [76912,76928]
+        "stars": [76912,76929]
       },
       "release": {
         "tag": "0.14.5",
@@ -7266,7 +7639,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-04-08T16:36:25Z",
-        "pushedAt": "2026-09-25T14:37:22Z",
+        "pushedAt": "2026-09-25T14:40:49Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -7413,7 +7786,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 24241,
-        "forks": 7886,
+        "forks": 7885,
         "topics": [
           "argo",
           "argo-cd",
@@ -7547,7 +7920,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-21T18:50:44Z",
-        "pushedAt": "2026-09-25T13:56:20Z",
+        "pushedAt": "2026-09-25T14:41:55Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -8037,7 +8410,7 @@
         "homepage": "https://astro.build",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 62811,
+        "stars": 62812,
         "forks": 3810,
         "topics": [
           "astro",
@@ -8060,13 +8433,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 23,
+        "stars": 24,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [62788,62811]
+        "stars": [62788,62812]
       },
       "release": {
         "tag": "astro@7.3.5",
@@ -8551,7 +8924,7 @@
         "homepage": "https://goauthentik.io",
         "language": "Python",
         "license": "Other",
-        "stars": 25716,
+        "stars": 25717,
         "forks": 2041,
         "topics": [
           "authentication",
@@ -8576,17 +8949,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-12-30T09:19:48Z",
-        "pushedAt": "2026-09-25T14:27:42Z",
+        "pushedAt": "2026-09-25T14:51:37Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 7,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [25709,25716]
+        "stars": [25709,25717]
       },
       "release": {
         "tag": "version/2026.8.3",
@@ -9297,7 +9670,7 @@
         "homepage": "https://babel.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44019,
+        "stars": 44020,
         "forks": 5991,
         "topics": [
           "ast",
@@ -9318,7 +9691,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [44019]
+        "stars": [44020]
       },
       "release": {
         "tag": "v8.0.6",
@@ -9830,7 +10203,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-25T14:37:18Z",
+        "pushedAt": "2026-09-25T14:43:38Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -10096,6 +10469,113 @@
       "deploy": [
         "container",
         "binary"
+      ]
+    },
+    {
+      "slug": "booklore",
+      "name": "BookLore",
+      "repository": "https://github.com/booklore-app/booklore",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "The library and reader for your own ebooks, PDFs and comics, in the browser and OPDS apps, not the store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader, not the store. Books bought from Amazon stay on Kindle."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "booklore-app/booklore",
+        "description": "BookLore: A self-hosted, multi-user digital library with smart shelves, auto metadata, Kobo & KOReader sync, BookDrop imports, OPDS support, and a built-in reader for EPUB, PDF, and comics.",
+        "homepage": "https://booklore.org",
+        "language": "Java",
+        "license": "AGPL-3.0",
+        "stars": 1245,
+        "forks": 91,
+        "topics": [
+          "angular",
+          "book-management",
+          "ebooks",
+          "java",
+          "library-management-system",
+          "metadata-management",
+          "oidc",
+          "opds",
+          "self-hosted",
+          "spring-boot"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-12-13T19:54:00Z",
+        "pushedAt": "2026-09-25T03:07:38Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [1245]
+      },
+      "release": {
+        "tag": "v2.4.0",
+        "publishedAt": "2026-09-19T16:46:56Z",
+        "url": "https://github.com/booklore-app/booklore/releases/tag/v2.4.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.4.0",
+          "name": "Release v2.4.0",
+          "publishedAt": "2026-09-19T16:46:56Z",
+          "url": "https://github.com/booklore-app/booklore/releases/tag/v2.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.3.1",
+          "name": "Release v2.3.1",
+          "publishedAt": "2026-06-26T20:30:49Z",
+          "url": "https://github.com/booklore-app/booklore/releases/tag/v2.3.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.3.0",
+          "name": "Release v2.3.0",
+          "publishedAt": "2026-04-29T17:20:50Z",
+          "url": "https://github.com/booklore-app/booklore/releases/tag/v2.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.2",
+          "name": "Release v2.2.2",
+          "publishedAt": "2026-04-14T14:35:57Z",
+          "url": "https://github.com/booklore-app/booklore/releases/tag/v2.2.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.1",
+          "name": "Release v2.2.1",
+          "publishedAt": "2026-03-14T02:30:54Z",
+          "url": "https://github.com/booklore-app/booklore/releases/tag/v2.2.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
       ]
     },
     {
@@ -10429,7 +10909,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 47192,
-        "forks": 2919,
+        "forks": 2920,
         "topics": [
           "api-client",
           "api-testing",
@@ -10854,7 +11334,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-25T14:37:44Z",
+        "pushedAt": "2026-09-25T14:52:55Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -11029,6 +11509,223 @@
       ]
     },
     {
+      "slug": "calibre-web",
+      "name": "Calibre-Web",
+      "repository": "https://github.com/janeczku/calibre-web",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "Browse and read a Calibre library of your own ebooks in the browser and OPDS apps, with no store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library for your own DRM-free books, synced to Kobo devices or sent to a Kindle by email, not the store."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "janeczku/calibre-web",
+        "description": ":books: Web app for browsing, reading and downloading eBooks stored in a Calibre database",
+        "homepage": null,
+        "language": "Fluent",
+        "license": "GPL-3.0",
+        "stars": 18244,
+        "forks": 1866,
+        "topics": [
+          "calibre",
+          "ebook",
+          "ebook-manager",
+          "epub",
+          "mobi"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-08-02T19:01:42Z",
+        "pushedAt": "2026-09-20T07:39:01Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [18244]
+      },
+      "release": {
+        "tag": "0.6.27",
+        "publishedAt": "2026-08-08T16:09:50Z",
+        "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.27",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "0.6.27",
+          "name": "V 0.6.27 - Ludmila",
+          "publishedAt": "2026-08-08T16:09:50Z",
+          "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.27",
+          "prerelease": false
+        },
+        {
+          "tag": "0.6.26",
+          "name": "V 0.6.26 - Ismara",
+          "publishedAt": "2026-02-06T21:17:44Z",
+          "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.26",
+          "prerelease": false
+        },
+        {
+          "tag": "0.6.25",
+          "name": "V 0.6.25 - Sissel",
+          "publishedAt": "2025-08-24T08:51:55Z",
+          "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.25",
+          "prerelease": false
+        },
+        {
+          "tag": "0.6.24",
+          "name": "V0.6.24 - Nicolette",
+          "publishedAt": "2024-11-16T06:47:56Z",
+          "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.24",
+          "prerelease": false
+        },
+        {
+          "tag": "0.6.23",
+          "name": "V0.6.23 Teofila",
+          "publishedAt": "2024-08-05T17:10:22Z",
+          "url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.23",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "package"
+      ]
+    },
+    {
+      "slug": "calibre-web-automated",
+      "name": "Calibre-Web Automated",
+      "repository": "https://github.com/crocodilestick/Calibre-Web-Automated",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "calibre-web",
+          "fit": "drop-in",
+          "note": "Takes over an existing Calibre-Web config folder and Calibre library, users and settings included.",
+          "migration": "https://github.com/crocodilestick/Calibre-Web-Automated#users-migrating-from-stock-calibre-web"
+        },
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "Imports, converts and serves your own ebooks to the browser and OPDS apps, with no store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader or sent to a Kindle, not the store."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "crocodilestick/Calibre-Web-Automated",
+        "description": "Calibre-Web but Automated and with tons of New Features! Fully automate and simplify your eBook set up!",
+        "homepage": "https://github.com/crocodilestick/Calibre-Web-Automated",
+        "language": "JavaScript",
+        "license": "GPL-3.0",
+        "stars": 6336,
+        "forks": 525,
+        "topics": [
+          "automation",
+          "calibre",
+          "calibre-web",
+          "conversion",
+          "docker",
+          "ebook",
+          "ebooks",
+          "epub",
+          "import",
+          "kepub",
+          "kindle",
+          "kobo",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-06-23T12:46:02Z",
+        "pushedAt": "2026-08-07T09:21:14Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [6336]
+      },
+      "release": {
+        "tag": "v4.0.6",
+        "publishedAt": "2026-02-04T23:41:12Z",
+        "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.6",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v4.0.6",
+          "name": "Version 4.0.6 - Smart Automatic Duplicate Handling & Resolution 🔍, a Gorgeous & Powerful New Stats Centre 📊, Magic Shelves ✨, Robust OAuth, Auto-Send & Auto-Fetch ✈️ Huge Performance Uplifts and more!",
+          "publishedAt": "2026-02-04T23:41:12Z",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.5",
+          "name": "Version 4.0.5 - Smart Automatic Duplicate Handling & Resolution 🔍, a Gorgeous & Powerful New Stats Centre 📊, Magic Shelves ✨, Robust OAuth, Auto-Send & Auto-Fetch ✈️ Huge Performance Uplifts and more!",
+          "publishedAt": "2026-02-02T13:13:04Z",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.4",
+          "name": "Version 4.0.4 - Smart Automatic Duplicate Handling & Resolution 🔍, a Gorgeous & Powerful New Stats Centre 📊, Magic Shelves ✨, Robust OAuth, Auto-Send & Auto-Fetch ✈️ Huge Performance Uplifts and more!",
+          "publishedAt": "2026-02-01T00:56:32Z",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.3",
+          "name": "Version 4.0.3 - Smart Automatic Duplicate Handling & Resolution 🔍, a Gorgeous & Powerful New Stats Centre 📊, Magic Shelves ✨, Robust OAuth, Auto-Send & Auto-Fetch ✈️ Huge Performance Uplifts and more!",
+          "publishedAt": "2026-01-31T18:52:46Z",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.2",
+          "name": "Version 4.0.2 - Smart Automatic Duplicate Handling & Resolution 🔍, a Gorgeous & Powerful New Stats Centre 📊, Magic Shelves ✨, Robust OAuth, Auto-Send & Auto-Fetch ✈️ Huge Performance Uplifts and more!",
+          "publishedAt": "2026-01-30T22:36:01Z",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.2",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "cap",
       "name": "Cap",
       "repository": "https://github.com/CapSoftware/Cap",
@@ -11051,7 +11748,7 @@
         "homepage": "https://cap.so",
         "language": "Rust",
         "license": "Other",
-        "stars": 22794,
+        "stars": 22796,
         "forks": 1967,
         "topics": [
           "app",
@@ -11083,13 +11780,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 36,
+        "stars": 38,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [22758,22794]
+        "stars": [22758,22796]
       },
       "release": {
         "tag": "cap-v0.6.0",
@@ -11540,7 +12237,7 @@
         "homepage": "https://docs.celeryq.dev",
         "language": "Python",
         "license": "Other",
-        "stars": 28914,
+        "stars": 28915,
         "forks": 5184,
         "topics": [
           "amqp",
@@ -11566,13 +12263,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 3,
+        "stars": 4,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [28911,28914]
+        "stars": [28911,28915]
       },
       "release": {
         "tag": "v5.6.3",
@@ -11937,8 +12634,8 @@
         "homepage": "https://www.chatwoot.com/help-center",
         "language": "Ruby",
         "license": "Other",
-        "stars": 37182,
-        "forks": 9039,
+        "stars": 37184,
+        "forks": 9038,
         "topics": [
           "actioncable",
           "chat-widget",
@@ -11968,13 +12665,13 @@
         "defaultBranch": "develop"
       },
       "trend": {
-        "stars": 27,
+        "stars": 29,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [37155,37182]
+        "stars": [37155,37184]
       },
       "release": {
         "tag": "v4.18.0",
@@ -12363,7 +13060,7 @@
         "homepage": "https://www.trychroma.com/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 29373,
+        "stars": 29375,
         "forks": 2533,
         "topics": [
           "agents",
@@ -12381,13 +13078,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 6,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [29367,29373]
+        "stars": [29367,29375]
       },
       "release": {
         "tag": "1.5.9",
@@ -12488,7 +13185,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-12-16T12:33:31Z",
-        "pushedAt": "2026-09-25T13:44:48Z",
+        "pushedAt": "2026-09-25T14:47:14Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -12563,7 +13260,7 @@
         "homepage": "https://www.citusdata.com",
         "language": "C",
         "license": "AGPL-3.0",
-        "stars": 12785,
+        "stars": 12786,
         "forks": 797,
         "topics": [
           "citus",
@@ -12583,13 +13280,13 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-02-01T21:58:39Z",
-        "pushedAt": "2026-09-25T14:22:14Z",
+        "pushedAt": "2026-09-25T14:49:45Z",
         "defaultBranch": "main"
       },
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [12785]
+        "stars": [12786]
       },
       "release": {
         "tag": "v14.2.0",
@@ -12697,7 +13394,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T08:28:18Z",
-        "pushedAt": "2026-09-25T14:33:28Z",
+        "pushedAt": "2026-09-25T14:51:44Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -13056,7 +13753,7 @@
         "homepage": "https://docs.cocogitto.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 1196,
+        "stars": 1197,
         "forks": 88,
         "topics": [
           "changelog",
@@ -13080,13 +13777,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 3,
+        "stars": 4,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [1193,1194,1194,1196]
+        "stars": [1193,1194,1194,1197]
       },
       "release": {
         "tag": "7.0.0",
@@ -13161,7 +13858,7 @@
         "homepage": "https://coder.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 79414,
+        "stars": 79416,
         "forks": 6871,
         "topics": [
           "browser-ide",
@@ -13180,13 +13877,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 13,
+        "stars": 15,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [79401,79414]
+        "stars": [79401,79416]
       },
       "release": {
         "tag": "v4.138.0",
@@ -13390,7 +14087,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-22T06:08:52Z",
-        "pushedAt": "2026-09-25T14:32:25Z",
+        "pushedAt": "2026-09-25T14:53:02Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -13485,7 +14182,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126424,
+        "stars": 126425,
         "forks": 19730,
         "topics": [],
         "archived": false,
@@ -13496,13 +14193,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 267,
+        "stars": 268,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [126157,126328,126424]
+        "stars": [126157,126328,126425]
       },
       "release": {
         "tag": "rust-v0.157.0",
@@ -14731,7 +15428,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-01-25T20:54:01Z",
-        "pushedAt": "2026-09-25T13:00:12Z",
+        "pushedAt": "2026-09-25T14:45:54Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -15493,7 +16190,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-03-18T22:32:22Z",
-        "pushedAt": "2026-09-25T14:38:23Z",
+        "pushedAt": "2026-09-25T14:40:12Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -17476,6 +18173,103 @@
       ]
     },
     {
+      "slug": "dgraph",
+      "name": "Dgraph",
+      "repository": "https://github.com/dgraph-io/dgraph",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "amazon-neptune",
+          "fit": "partial",
+          "note": "Queried in DQL or GraphQL, so Gremlin, openCypher and SPARQL queries need rewriting."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "dgraph-io/dgraph",
+        "description": "high-performance graph database for real-time use cases",
+        "homepage": "https://dgraph.io",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 21808,
+        "forks": 1606,
+        "topics": [
+          "database",
+          "distributed",
+          "go",
+          "knowledge-graph"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-08-25T07:15:56Z",
+        "pushedAt": "2026-09-24T17:05:03Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [21808]
+      },
+      "release": {
+        "tag": "v25.4.1",
+        "publishedAt": "2026-08-24T19:28:23Z",
+        "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.4.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v25.4.1",
+          "name": "fix(posting): make rollup failures diagnosable in logs",
+          "publishedAt": "2026-08-24T19:28:23Z",
+          "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.4.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v25.4.0",
+          "name": "feat(zero):  Zero now accepts a --security superflag (token=...;whitelist=...), matching Alpha's, and",
+          "publishedAt": "2026-07-30T18:23:57Z",
+          "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v25.3.8",
+          "name": "add stale action",
+          "publishedAt": "2026-07-09T00:31:54Z",
+          "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.3.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v25.3.7",
+          "name": "fix(security): bump golang.org/x/crypto and x/net for HIGH CVEs",
+          "publishedAt": "2026-06-25T17:26:37Z",
+          "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.3.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v25.3.6",
+          "name": "ci: remove labeler and simplify change detection",
+          "publishedAt": "2026-06-19T20:35:59Z",
+          "url": "https://github.com/dgraph-io/dgraph/releases/tag/v25.3.6",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "binary"
+      ]
+    },
+    {
       "slug": "diff-so-fancy",
       "name": "diff-so-fancy",
       "repository": "https://github.com/so-fancy/diff-so-fancy",
@@ -17802,7 +18596,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 10622,
-        "forks": 2792,
+        "forks": 2793,
         "topics": [
           "cncf",
           "containers",
@@ -18244,7 +19038,7 @@
         "homepage": "https://docker-mailserver.github.io/docker-mailserver/latest/",
         "language": "Shell",
         "license": "MIT",
-        "stars": 18875,
+        "stars": 18874,
         "forks": 2047,
         "topics": [
           "container",
@@ -18263,17 +19057,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-03-28T14:56:28Z",
-        "pushedAt": "2026-09-25T14:31:33Z",
+        "pushedAt": "2026-09-25T14:51:48Z",
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 2,
+        "stars": 1,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [18873,18875]
+        "stars": [18873,18874]
       },
       "release": {
         "tag": "v16.0.1",
@@ -18687,7 +19481,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-06-20T16:13:53Z",
-        "pushedAt": "2026-09-25T14:38:39Z",
+        "pushedAt": "2026-09-25T14:43:44Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -19003,7 +19797,7 @@
         "homepage": "https://www.dolibarr.org",
         "language": "PHP",
         "license": "GPL-3.0",
-        "stars": 7657,
+        "stars": 7658,
         "forks": 3537,
         "topics": [
           "accounting",
@@ -19037,7 +19831,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [7657]
+        "stars": [7658]
       },
       "release": {
         "tag": "24.0.1",
@@ -20126,7 +20920,7 @@
         "language": "C++",
         "license": "MIT",
         "stars": 41705,
-        "forks": 3825,
+        "forks": 3824,
         "topics": [
           "analytics",
           "database",
@@ -20138,7 +20932,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-06-26T15:04:45Z",
-        "pushedAt": "2026-09-25T14:21:59Z",
+        "pushedAt": "2026-09-25T14:49:14Z",
         "defaultBranch": "v2.0-cyanoptera"
       },
       "trend": {
@@ -20324,7 +21118,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-02-08T13:20:56Z",
-        "pushedAt": "2026-09-25T14:36:11Z",
+        "pushedAt": "2026-09-25T14:52:33Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -20645,7 +21439,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-11-01T06:10:25Z",
-        "pushedAt": "2026-09-25T13:03:16Z",
+        "pushedAt": "2026-09-25T14:48:12Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -20756,7 +21550,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-11-01T06:10:25Z",
-        "pushedAt": "2026-09-25T13:03:16Z",
+        "pushedAt": "2026-09-25T14:48:12Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -20856,7 +21650,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-08-08T15:07:24Z",
-        "pushedAt": "2026-09-25T13:00:03Z",
+        "pushedAt": "2026-09-25T14:48:51Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -21458,7 +22252,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-06T23:23:25Z",
-        "pushedAt": "2026-09-25T14:27:00Z",
+        "pushedAt": "2026-09-25T14:50:35Z",
         "defaultBranch": "dev"
       },
       "trend": null,
@@ -21658,7 +22452,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 18556,
-        "forks": 3047,
+        "forks": 3046,
         "topics": [
           "collaboration",
           "collaborative",
@@ -21956,8 +22750,8 @@
         "homepage": "https://excalidraw.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 132881,
-        "forks": 15455,
+        "stars": 132883,
+        "forks": 15456,
         "topics": [
           "canvas",
           "collaboration",
@@ -21975,13 +22769,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 77,
+        "stars": 79,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [132804,132881]
+        "stars": [132804,132883]
       },
       "release": {
         "tag": "v0.18.1",
@@ -22431,6 +23225,214 @@
       "deploy": []
     },
     {
+      "slug": "ezbookkeeping",
+      "name": "ezBookkeeping",
+      "repository": "https://github.com/mayswind/ezbookkeeping",
+      "category": "personal-finance",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "mayswind/ezbookkeeping",
+        "description": "ezBookkeeping is an open source, powerful, self-hosted personal finance app that is easy to use.",
+        "homepage": "https://ezbookkeeping.mayswind.net",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 5653,
+        "forks": 693,
+        "topics": [
+          "accounting",
+          "app",
+          "bookkeeping",
+          "docker",
+          "expense-manager",
+          "expense-tracker",
+          "expenses",
+          "finance",
+          "finance-management",
+          "finances",
+          "financial",
+          "golang",
+          "homelab",
+          "mobile",
+          "money",
+          "money-manager",
+          "personal-finance",
+          "self-hosted",
+          "typescript",
+          "vue"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-10-17T08:54:02Z",
+        "pushedAt": "2026-09-25T14:48:07Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [5653]
+      },
+      "release": {
+        "tag": "v2.0.0",
+        "publishedAt": "2026-09-16T16:42:24Z",
+        "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v2.0.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.0.0",
+          "name": "\\[Breaking\\]",
+          "publishedAt": "2026-09-16T16:42:24Z",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v2.0.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.6.1",
+          "name": "\\[Bug Fixes\\]",
+          "publishedAt": "2026-07-20T14:11:38Z",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v1.6.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.6.0",
+          "name": "\\[Breaking\\]",
+          "publishedAt": "2026-07-19T16:30:28Z",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v1.6.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.5.1",
+          "name": "\\[Enhancements\\]",
+          "publishedAt": "2026-05-31T16:12:47Z",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v1.5.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.5.0",
+          "name": "\\[Breaking\\]",
+          "publishedAt": "2026-05-13T15:35:40Z",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v1.5.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary"
+      ]
+    },
+    {
+      "slug": "falkordb",
+      "name": "FalkorDB",
+      "repository": "https://github.com/FalkorDB/FalkorDB",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "neo4j",
+          "fit": "partial",
+          "note": "Runs a subset of OpenCypher through the Redis protocol and its own clients, not over Bolt, so Neo4j drivers and procedures do not carry over.",
+          "migration": "https://docs.falkordb.com/operations/migration/neo4j-to-falkordb"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "FalkorDB/FalkorDB",
+        "description": "A super fast Graph Database uses GraphBLAS under the hood for its sparse adjacency matrix graph representation. Our goal is to provide the best Knowledge Graph for LLM (GraphRAG).",
+        "homepage": "https://www.falkordb.com/",
+        "language": "Rust",
+        "license": "Other",
+        "stars": 6304,
+        "forks": 468,
+        "topics": [
+          "cloud-database",
+          "database",
+          "database-as-a-service",
+          "developer-tools",
+          "devtools",
+          "graph-database",
+          "graphrag",
+          "knowledge-graph",
+          "realtime-database"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-07-20T10:47:51Z",
+        "pushedAt": "2026-09-25T06:15:29Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [6304]
+      },
+      "release": {
+        "tag": "v4.20.7",
+        "publishedAt": "2026-09-24T16:11:13Z",
+        "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.7",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v4.20.7",
+          "name": "Patch release on top of v4.20.6. Contains a security update, two bug fixes, and a CI change.",
+          "publishedAt": "2026-09-24T16:11:13Z",
+          "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.20.6",
+          "name": "🐛 Bug fixes",
+          "publishedAt": "2026-09-16T11:34:52Z",
+          "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.20.5",
+          "name": "🐛 Bug fixes",
+          "publishedAt": "2026-09-15T13:11:27Z",
+          "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.5",
+          "prerelease": true
+        },
+        {
+          "tag": "v4.20.4",
+          "name": "fix(effects): stop replica SIGSEGV on UPDATE_EDGE/UPDATE_NODE divergence - replicas no longer crash when an effect refe…",
+          "publishedAt": "2026-08-20T19:55:55Z",
+          "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.20.3",
+          "name": "Hotfix release: reverts the RediSearch 8.6 upgrade (shipped in 4.20.2,",
+          "publishedAt": "2026-08-13T21:52:50Z",
+          "url": "https://github.com/FalkorDB/FalkorDB/releases/tag/v4.20.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
+    },
+    {
       "slug": "fastapi",
       "name": "FastAPI",
       "repository": "https://github.com/fastapi/fastapi",
@@ -22459,7 +23461,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 102608,
-        "forks": 9946,
+        "forks": 9945,
         "topics": [
           "api",
           "async",
@@ -22576,7 +23578,7 @@
         "homepage": "https://www.fastify.dev",
         "language": "JavaScript",
         "license": "MIT",
-        "stars": 37194,
+        "stars": 37195,
         "forks": 3038,
         "topics": [
           "fastify",
@@ -22595,13 +23597,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 7,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [37187,37187,37189,37194]
+        "stars": [37187,37187,37189,37195]
       },
       "release": {
         "tag": "v5.12.5",
@@ -22911,6 +23913,117 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "firefly-iii",
+      "name": "Firefly III",
+      "repository": "https://github.com/firefly-iii/firefly-iii",
+      "category": "personal-finance",
+      "replaces": [
+        {
+          "tool": "ynab",
+          "fit": "partial",
+          "note": "Accounts, budgets, rules and reports in a web app, but budgets are spending limits rather than YNAB's zero-based envelopes."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "firefly-iii/firefly-iii",
+        "description": "Firefly III: a personal finances manager",
+        "homepage": "https://firefly-iii.org/",
+        "language": "PHP",
+        "license": "AGPL-3.0",
+        "stars": 24725,
+        "forks": 2297,
+        "topics": [
+          "accounting",
+          "budget",
+          "budgeting",
+          "budgets",
+          "cash-flow",
+          "cashflow",
+          "credit-card",
+          "docker",
+          "expenses",
+          "finance",
+          "finances",
+          "financial",
+          "linux",
+          "money",
+          "paycheck",
+          "personal-finance",
+          "php",
+          "php7"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-06-28T07:37:32Z",
+        "pushedAt": "2026-09-25T14:28:38Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [24725]
+      },
+      "release": {
+        "tag": "v6.7.3",
+        "publishedAt": "2026-09-18T12:11:23Z",
+        "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "develop-20260925.2",
+          "name": "Development release for 2026-09-25",
+          "publishedAt": "2026-09-25T14:28:39Z",
+          "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/develop-20260925.2",
+          "prerelease": true
+        },
+        {
+          "tag": "develop-20260925.1",
+          "name": "Development release for 2026-09-25",
+          "publishedAt": "2026-09-25T05:44:01Z",
+          "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/develop-20260925.1",
+          "prerelease": true
+        },
+        {
+          "tag": "develop-20260925",
+          "name": "Development release for 2026-09-25",
+          "publishedAt": "2026-09-25T05:18:39Z",
+          "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/develop-20260925",
+          "prerelease": true
+        },
+        {
+          "tag": "develop-20260924.2",
+          "name": "Development release for 2026-09-24",
+          "publishedAt": "2026-09-24T09:36:54Z",
+          "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/develop-20260924.2",
+          "prerelease": true
+        },
+        {
+          "tag": "v6.7.3",
+          "name": "Welcome to release v6.7.3 of Firefly III. It contains the latest fixes, translations and features. Docker users can fin…",
+          "publishedAt": "2026-09-18T12:11:23Z",
+          "url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "firezone",
@@ -24714,7 +25827,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-08-21T21:54:58Z",
-        "pushedAt": "2026-09-25T14:39:43Z",
+        "pushedAt": "2026-09-25T14:53:51Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -25305,7 +26418,7 @@
         "homepage": "https://ghostty.org",
         "language": "Zig",
         "license": "MIT",
-        "stars": 61536,
+        "stars": 61537,
         "forks": 3515,
         "topics": [],
         "archived": false,
@@ -25316,13 +26429,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 104,
+        "stars": 105,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [61432,61463,61508,61536]
+        "stars": [61432,61463,61508,61537]
       },
       "release": {
         "tag": "v1.3.1",
@@ -25744,7 +26857,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-01-31T14:56:22Z",
-        "pushedAt": "2026-09-25T13:11:27Z",
+        "pushedAt": "2026-09-25T14:41:06Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -26542,6 +27655,97 @@
           "name": "Monthly release of Glowstone for June 2018. Changelog here.",
           "publishedAt": "2018-07-03T00:38:37Z",
           "url": "https://github.com/GlowstoneMC/Glowstone/releases/tag/2018.6.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "binary"
+      ]
+    },
+    {
+      "slug": "gnucash",
+      "name": "GnuCash",
+      "repository": "https://github.com/Gnucash/gnucash",
+      "category": "personal-finance",
+      "replaces": [
+        {
+          "tool": "quicken",
+          "fit": "partial",
+          "note": "Double-entry accounts, investments and reports on the desktop, with import of Quicken's QIF and QFX files; online banking goes through AqBanking and mostly serves German banks.",
+          "migration": "https://wiki.gnucash.org/wiki/Quicken_Migration"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Gnucash/gnucash",
+        "description": "GnuCash Double-Entry Accounting Program.",
+        "homepage": "http://code.gnucash.org/website/",
+        "language": "C",
+        "license": "Other",
+        "stars": 4356,
+        "forks": 990,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-02-01T21:22:29Z",
+        "pushedAt": "2026-09-24T22:58:51Z",
+        "defaultBranch": "stable"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [4356]
+      },
+      "release": {
+        "tag": "5.16",
+        "publishedAt": "2026-06-28T19:03:21Z",
+        "url": "https://github.com/Gnucash/gnucash/releases/tag/5.16",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "5.16",
+          "name": "GnuCash 5.16 Released",
+          "publishedAt": "2026-06-28T19:03:21Z",
+          "url": "https://github.com/Gnucash/gnucash/releases/tag/5.16",
+          "prerelease": false
+        },
+        {
+          "tag": "5.15",
+          "name": "GnuCash 5.15 Released",
+          "publishedAt": "2026-03-29T16:28:43Z",
+          "url": "https://github.com/Gnucash/gnucash/releases/tag/5.15",
+          "prerelease": false
+        },
+        {
+          "tag": "5.14",
+          "name": "GnuCash 5.14",
+          "publishedAt": "2025-12-21T18:03:53Z",
+          "url": "https://github.com/Gnucash/gnucash/releases/tag/5.14",
+          "prerelease": false
+        },
+        {
+          "tag": "5.13",
+          "name": "GnuCash 5.13 Released",
+          "publishedAt": "2025-09-29T03:45:50Z",
+          "url": "https://github.com/Gnucash/gnucash/releases/tag/5.13",
+          "prerelease": false
+        },
+        {
+          "tag": "5.12",
+          "name": "GnuCash 5.12 Released",
+          "publishedAt": "2025-06-30T03:34:31Z",
+          "url": "https://github.com/Gnucash/gnucash/releases/tag/5.12",
           "prerelease": false
         }
       ],
@@ -27418,7 +28622,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-12-11T15:59:56Z",
-        "pushedAt": "2026-09-25T14:39:43Z",
+        "pushedAt": "2026-09-25T14:53:33Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -27531,7 +28735,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-05-17T21:27:02Z",
-        "pushedAt": "2026-09-25T14:37:19Z",
+        "pushedAt": "2026-09-25T14:43:56Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -28761,8 +29965,8 @@
         "homepage": null,
         "language": "Go",
         "license": "BSD-3-Clause",
-        "stars": 44117,
-        "forks": 2584,
+        "stars": 44118,
+        "forks": 2585,
         "topics": [
           "tailscale",
           "tailscale-control-server",
@@ -28773,17 +29977,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-06-21T09:21:05Z",
-        "pushedAt": "2026-09-25T13:59:50Z",
+        "pushedAt": "2026-09-25T14:43:48Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 18,
+        "stars": 19,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [44099,44117]
+        "stars": [44099,44118]
       },
       "release": {
         "tag": "v0.29.4",
@@ -28862,7 +30066,7 @@
         "homepage": "https://healthchecks.io",
         "language": "Python",
         "license": "BSD-3-Clause",
-        "stars": 10364,
+        "stars": 10365,
         "forks": 1013,
         "topics": [
           "cron",
@@ -28882,7 +30086,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [10364]
+        "stars": [10365]
       },
       "release": {
         "tag": "v4.4",
@@ -29067,7 +30271,7 @@
         "homepage": "https://helix-editor.com",
         "language": "Rust",
         "license": "MPL-2.0",
-        "stars": 46327,
+        "stars": 46328,
         "forks": 3777,
         "topics": [
           "kakoune",
@@ -29083,13 +30287,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 24,
+        "stars": 25,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [46303,46310,46322,46327]
+        "stars": [46303,46310,46322,46328]
       },
       "release": {
         "tag": "25.07.1",
@@ -30178,7 +31382,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15509,
-        "forks": 2065,
+        "forks": 2066,
         "topics": [
           "asyncio",
           "http",
@@ -30351,6 +31555,104 @@
       "deploy": []
     },
     {
+      "slug": "hugegraph",
+      "name": "Apache HugeGraph",
+      "repository": "https://github.com/apache/hugegraph",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "amazon-neptune",
+          "fit": "partial",
+          "note": "Covers Gremlin and openCypher queries; SPARQL and RDF data are not supported."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/hugegraph",
+        "description": "A graph database that supports more than 100+ billion data, high performance and scalability (Include OLTP Engine & REST-API & Backends)",
+        "homepage": "https://hugegraph.apache.org",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 3189,
+        "forks": 639,
+        "topics": [
+          "big-data",
+          "database",
+          "graph",
+          "graph-database",
+          "graphdb",
+          "gremlin"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-07-18T03:30:20Z",
+        "pushedAt": "2026-09-25T07:05:57Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [3189]
+      },
+      "release": {
+        "tag": "1.7.0",
+        "publishedAt": "2025-11-16T15:28:32Z",
+        "url": "https://github.com/apache/hugegraph/releases/tag/1.7.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "1.7.0",
+          "name": "Apache HugeGraph 1.7.0 (Release)",
+          "publishedAt": "2025-11-16T15:28:32Z",
+          "url": "https://github.com/apache/hugegraph/releases/tag/1.7.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.5.0",
+          "name": "Apache HugeGraph(incubating) Release 1.5.0",
+          "publishedAt": "2024-12-10T09:57:03Z",
+          "url": "https://github.com/apache/hugegraph/releases/tag/1.5.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.3.0",
+          "name": "Apache HugeGraph(incubating) Release 1.3.0",
+          "publishedAt": "2024-03-29T05:14:29Z",
+          "url": "https://github.com/apache/hugegraph/releases/tag/1.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.2.0",
+          "name": "Apache HugeGraph(incubating) Release 1.2.0",
+          "publishedAt": "2023-12-23T15:31:07Z",
+          "url": "https://github.com/apache/hugegraph/releases/tag/1.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.0.0",
+          "name": "Apache HugeGraph(incubating) Release 1.0.0",
+          "publishedAt": "2023-02-23T15:03:05Z",
+          "url": "https://github.com/apache/hugegraph/releases/tag/1.0.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "huginn",
       "name": "Huginn",
       "repository": "https://github.com/huginn/huginn",
@@ -30485,7 +31787,7 @@
         "homepage": "https://gohugo.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 89944,
+        "stars": 89945,
         "forks": 8389,
         "topics": [
           "blog-engine",
@@ -30504,13 +31806,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 39,
+        "stars": 40,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [89905,89914,89930,89944]
+        "stars": [89905,89914,89930,89945]
       },
       "release": {
         "tag": "v0.166.0",
@@ -30962,7 +32264,7 @@
         "homepage": "https://immich.app",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 115021,
+        "stars": 115022,
         "forks": 7063,
         "topics": [
           "backup-tool",
@@ -30986,17 +32288,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-02-03T15:56:27Z",
-        "pushedAt": "2026-09-25T14:33:08Z",
+        "pushedAt": "2026-09-25T14:51:44Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 57,
+        "stars": 58,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [114964,115021]
+        "stars": [114964,115022]
       },
       "release": {
         "tag": "v3.2.2",
@@ -31181,7 +32483,7 @@
         "homepage": "https://infisical.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 29426,
+        "stars": 29427,
         "forks": 2284,
         "topics": [
           "acme",
@@ -31209,17 +32511,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-08-05T13:50:00Z",
-        "pushedAt": "2026-09-25T14:32:22Z",
+        "pushedAt": "2026-09-25T14:52:20Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 51,
+        "stars": 52,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [29375,29392,29413,29426]
+        "stars": [29375,29392,29413,29427]
       },
       "release": {
         "tag": "v0.165.16",
@@ -32245,6 +33547,113 @@
       ]
     },
     {
+      "slug": "janusgraph",
+      "name": "JanusGraph",
+      "repository": "https://github.com/JanusGraph/janusgraph",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "azure-cosmos-db-gremlin",
+          "fit": "full",
+          "note": "Serves Gremlin to the same TinkerPop drivers; Cosmos DB's partition keys and request-unit scaling have no equivalent."
+        },
+        {
+          "tool": "amazon-neptune",
+          "fit": "partial",
+          "note": "Covers Neptune's Gremlin side through TinkerPop drivers; openCypher and SPARQL are not supported."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "JanusGraph/janusgraph",
+        "description": "JanusGraph: an open-source, distributed graph database",
+        "homepage": "https://janusgraph.org",
+        "language": "Java",
+        "license": "Other",
+        "stars": 5841,
+        "forks": 1221,
+        "topics": [
+          "bigtable",
+          "cassandra",
+          "elasticsearch",
+          "graph",
+          "graph-database",
+          "graphdb",
+          "gremlin",
+          "hbase",
+          "solr",
+          "tinkerpop"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-12-26T13:26:29Z",
+        "pushedAt": "2026-09-25T13:08:55Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [5841]
+      },
+      "release": {
+        "tag": "v1.1.0",
+        "publishedAt": "2024-11-09T01:29:58Z",
+        "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v1.1.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.1.0",
+          "name": "1.1.0",
+          "publishedAt": "2024-11-09T01:29:58Z",
+          "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v1.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.0.1",
+          "name": "1.0.1",
+          "publishedAt": "2024-11-08T21:41:28Z",
+          "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v1.0.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.0.0",
+          "name": "1.0.0",
+          "publishedAt": "2023-10-22T02:40:57Z",
+          "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v1.0.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.6.4",
+          "name": "0.6.4",
+          "publishedAt": "2023-10-09T05:14:24Z",
+          "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v0.6.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.0.0-rc2",
+          "name": "1.0.0-rc2",
+          "publishedAt": "2023-02-26T14:20:07Z",
+          "url": "https://github.com/JanusGraph/janusgraph/releases/tag/v1.0.0-rc2",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "jaq",
       "name": "jaq",
       "repository": "https://github.com/01mf02/jaq",
@@ -32451,7 +33860,7 @@
         "homepage": "https://jekyllrb.com",
         "language": "Ruby",
         "license": "MIT",
-        "stars": 51689,
+        "stars": 51690,
         "forks": 10300,
         "topics": [
           "blog-engine",
@@ -32469,13 +33878,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 8,
+        "stars": 9,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [51681,51682,51685,51689]
+        "stars": [51681,51682,51685,51690]
       },
       "release": {
         "tag": "v4.4.1",
@@ -32555,7 +33964,7 @@
         "homepage": "https://jellyfin.org",
         "language": "C#",
         "license": "GPL-2.0",
-        "stars": 57490,
+        "stars": 57491,
         "forks": 5554,
         "topics": [
           "csharp",
@@ -32571,13 +33980,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 26,
+        "stars": 27,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [57464,57490]
+        "stars": [57464,57491]
       },
       "release": {
         "tag": "v12.1",
@@ -33407,7 +34816,7 @@
         "homepage": "https://k3d.io/",
         "language": "Go",
         "license": "MIT",
-        "stars": 6567,
+        "stars": 6568,
         "forks": 537,
         "topics": [
           "cluster",
@@ -33426,13 +34835,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 4,
+        "stars": 5,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [6563,6564,6565,6567]
+        "stars": [6563,6564,6565,6568]
       },
       "release": {
         "tag": "v5.9.0",
@@ -34258,6 +35667,124 @@
       ]
     },
     {
+      "slug": "kavita",
+      "name": "Kavita",
+      "repository": "https://github.com/Kareadita/Kavita",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "The library and reader for your own ebooks, comics and manga, in the browser and OPDS apps, not the store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library and reading progress for your own DRM-free books, synced with KOReader, not the store. Books bought from Amazon stay on Kindle."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Kareadita/Kavita",
+        "description": "Kavita is a fast, feature rich, cross platform reading server. Built with the goal of being a full solution for all your reading needs. Setup your own server and share your reading collection with your friends and family.",
+        "homepage": "http://www.kavitareader.com",
+        "language": "C#",
+        "license": "GPL-3.0",
+        "stars": 11741,
+        "forks": 670,
+        "topics": [
+          "annotations",
+          "cbz",
+          "comicinfo",
+          "comics",
+          "comics-reader",
+          "cross-platform",
+          "csharp",
+          "epub",
+          "epub-reader",
+          "free",
+          "linux",
+          "manga",
+          "media-server",
+          "metadata",
+          "opds",
+          "opds-feed",
+          "pdf",
+          "self-hosted",
+          "ubooquity",
+          "windows"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-12-12T22:23:54Z",
+        "pushedAt": "2026-09-24T12:59:35Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [11741]
+      },
+      "release": {
+        "tag": "v0.9.1.4",
+        "publishedAt": "2026-09-02T21:07:38Z",
+        "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.1.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.9.1.4",
+          "name": "v0.9.1.4 - Hardcover Recommendations + Hotfix",
+          "publishedAt": "2026-09-02T21:07:38Z",
+          "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.1.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.9.1.0",
+          "name": "v0.9.1 - Kavita+ Overhaul and 100K Installs!",
+          "publishedAt": "2026-08-28T15:50:43Z",
+          "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.9.0.2",
+          "name": "v0.9.0.2 - Security Hotfix",
+          "publishedAt": "2026-05-14T14:04:05Z",
+          "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.0.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.9.0",
+          "name": "v0.9.0 - Reading List Overhaul and Spring Cleaning",
+          "publishedAt": "2026-04-30T21:58:37Z",
+          "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.8.9.1",
+          "name": "v0.8.9.1 - Hotfix",
+          "publishedAt": "2026-01-18T23:04:08Z",
+          "url": "https://github.com/Kareadita/Kavita/releases/tag/v0.8.9.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
+    },
+    {
       "slug": "kener",
       "name": "Kener",
       "repository": "https://github.com/rajnandan1/kener",
@@ -34409,7 +35936,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-08-24T13:56:15Z",
-        "pushedAt": "2026-09-25T14:26:11Z",
+        "pushedAt": "2026-09-25T14:43:21Z",
         "defaultBranch": "develop"
       },
       "trend": {
@@ -34503,7 +36030,7 @@
         "language": "Java",
         "license": "Apache-2.0",
         "stars": 36987,
-        "forks": 8970,
+        "forks": 8969,
         "topics": [
           "keycloak",
           "oidc",
@@ -34706,7 +36233,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-01-26T04:00:59Z",
-        "pushedAt": "2026-09-25T14:33:05Z",
+        "pushedAt": "2026-09-25T14:52:21Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -34869,6 +36396,108 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "kitchenowl",
+      "name": "KitchenOwl",
+      "repository": "https://github.com/TomBursch/kitchenowl",
+      "category": "recipe-manager",
+      "replaces": [
+        {
+          "tool": "anylist",
+          "fit": "full",
+          "note": "Shared shopping lists synced in real time, with recipes and meal plans, in native mobile and desktop apps."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:48:28.000Z",
+      "editedAt": "2026-09-25T14:48:28.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "TomBursch/kitchenowl",
+        "description": "KitchenOwl is a self-hosted grocery list and recipe manager. The backend is made with Flask and the frontend with Flutter. Easily add items to your shopping list before you go shopping. You can also create recipes and add items based on what you want to cook.",
+        "homepage": "https://kitchenowl.org/",
+        "language": "Dart",
+        "license": "AGPL-3.0",
+        "stars": 3696,
+        "forks": 241,
+        "topics": [
+          "android",
+          "cross-platform",
+          "expense-tracker",
+          "flutter",
+          "grocery-list",
+          "ios",
+          "kitchenowl",
+          "mobile-app",
+          "recipe-manager",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-02-03T08:39:06Z",
+        "pushedAt": "2026-08-29T00:23:02Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [3696]
+      },
+      "release": {
+        "tag": "v0.7.10",
+        "publishedAt": "2026-07-26T18:32:32Z",
+        "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.10",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.7.10",
+          "name": "KitchenOwl v0.7.10",
+          "publishedAt": "2026-07-26T18:32:32Z",
+          "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.9",
+          "name": "KitchenOwl v0.7.9",
+          "publishedAt": "2026-06-04T18:07:59Z",
+          "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.9",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.8",
+          "name": "KitchenOwl v0.7.8",
+          "publishedAt": "2026-04-26T14:45:42Z",
+          "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.7",
+          "name": "KitchenOwl v0.7.7",
+          "publishedAt": "2026-04-03T18:41:40Z",
+          "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.6",
+          "name": "KitchenOwl v0.7.6",
+          "publishedAt": "2026-01-24T01:21:14Z",
+          "url": "https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.6",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "kitty",
@@ -35369,6 +36998,115 @@
       "capabilities": {},
       "deploy": [
         "container"
+      ]
+    },
+    {
+      "slug": "komga",
+      "name": "Komga",
+      "repository": "https://github.com/gotson/komga",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "The library and reader for your own comics, manga and ebooks, in the browser and OPDS apps, not the store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader, not the store. Books bought from Amazon stay on Kindle."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "gotson/komga",
+        "description": "Media server for comics/mangas/BDs/magazines/eBooks with API, OPDS, Kobo Sync and KOReader Sync support",
+        "homepage": "https://komga.org",
+        "language": "Kotlin",
+        "license": "MIT",
+        "stars": 6690,
+        "forks": 413,
+        "topics": [
+          "api",
+          "comics",
+          "ddd",
+          "docker",
+          "domain-driven-design",
+          "kobo",
+          "koreader-sync",
+          "kotlin",
+          "manga",
+          "opds",
+          "opds-feed",
+          "spring-boot"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-08-08T09:48:49Z",
+        "pushedAt": "2026-09-25T01:30:04Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [6690]
+      },
+      "release": {
+        "tag": "1.27.1",
+        "publishedAt": "2026-09-22T04:57:57Z",
+        "url": "https://github.com/gotson/komga/releases/tag/1.27.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "1.27.1",
+          "name": "Release 1.27.1",
+          "publishedAt": "2026-09-22T04:57:57Z",
+          "url": "https://github.com/gotson/komga/releases/tag/1.27.1",
+          "prerelease": false
+        },
+        {
+          "tag": "1.27.0",
+          "name": "Release 1.27.0",
+          "publishedAt": "2026-09-17T04:02:36Z",
+          "url": "https://github.com/gotson/komga/releases/tag/1.27.0",
+          "prerelease": false
+        },
+        {
+          "tag": "1.26.3",
+          "name": "Release 1.26.3",
+          "publishedAt": "2026-08-12T10:28:21Z",
+          "url": "https://github.com/gotson/komga/releases/tag/1.26.3",
+          "prerelease": false
+        },
+        {
+          "tag": "1.26.2",
+          "name": "Release 1.26.2",
+          "publishedAt": "2026-08-12T01:35:46Z",
+          "url": "https://github.com/gotson/komga/releases/tag/1.26.2",
+          "prerelease": false
+        },
+        {
+          "tag": "1.26.1",
+          "name": "Release 1.26.1",
+          "publishedAt": "2026-08-10T04:12:56Z",
+          "url": "https://github.com/gotson/komga/releases/tag/1.26.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
       ]
     },
     {
@@ -36525,7 +38263,7 @@
         "homepage": "https://lap.dev/lapce/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 38870,
+        "stars": 38871,
         "forks": 1335,
         "topics": [
           "code-editor",
@@ -36542,13 +38280,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 3,
+        "stars": 4,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [38867,38870]
+        "stars": [38867,38871]
       },
       "release": {
         "tag": "v0.4.6",
@@ -36633,7 +38371,7 @@
         "homepage": null,
         "language": "Go",
         "license": "MIT",
-        "stars": 82670,
+        "stars": 82671,
         "forks": 3049,
         "topics": [
           "cli",
@@ -36648,13 +38386,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 24,
+        "stars": 25,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [82646,82670]
+        "stars": [82646,82671]
       },
       "release": {
         "tag": "v0.65.1",
@@ -37139,7 +38877,7 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44935,
+        "stars": 44937,
         "forks": 9207,
         "topics": [
           "ai",
@@ -37171,13 +38909,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 160,
+        "stars": 162,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [44775,44873,44935]
+        "stars": [44775,44873,44937]
       },
       "release": {
         "tag": "v0.8.8-rc4",
@@ -37273,7 +39011,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-10-31T15:46:52Z",
-        "pushedAt": "2026-09-25T14:13:56Z",
+        "pushedAt": "2026-09-25T14:49:49Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -37538,7 +39276,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-03-19T09:44:40Z",
-        "pushedAt": "2026-09-25T14:28:57Z",
+        "pushedAt": "2026-09-25T14:53:55Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -37844,7 +39582,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-01-30T14:14:53Z",
-        "pushedAt": "2026-09-25T14:18:03Z",
+        "pushedAt": "2026-09-25T14:53:00Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -38757,7 +40495,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-25T14:38:34Z",
+        "pushedAt": "2026-09-25T14:54:15Z",
         "defaultBranch": "canary"
       },
       "trend": {
@@ -38850,7 +40588,7 @@
         "homepage": "https://localai.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 49266,
+        "stars": 49268,
         "forks": 4472,
         "topics": [
           "agents",
@@ -38880,13 +40618,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 10,
+        "stars": 12,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [49256,49266]
+        "stars": [49256,49268]
       },
       "release": {
         "tag": "v4.10.0",
@@ -39493,7 +41231,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-16T09:22:48Z",
-        "pushedAt": "2026-09-25T14:20:20Z",
+        "pushedAt": "2026-09-25T14:51:41Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -39846,7 +41584,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-11-04T22:40:52Z",
-        "pushedAt": "2026-09-25T14:19:36Z",
+        "pushedAt": "2026-09-25T14:44:49Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -40587,7 +42325,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-05-15T10:58:50Z",
-        "pushedAt": "2026-09-25T14:00:48Z",
+        "pushedAt": "2026-09-25T14:50:01Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -40804,7 +42542,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-06-15T06:50:02Z",
-        "pushedAt": "2026-09-25T14:22:03Z",
+        "pushedAt": "2026-09-25T14:53:45Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -40984,6 +42722,99 @@
       "deploy": []
     },
     {
+      "slug": "maybe",
+      "name": "Maybe",
+      "repository": "https://github.com/maybe-finance/maybe",
+      "category": "personal-finance",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "maybe-finance/maybe",
+        "description": "The personal finance app for everyone",
+        "homepage": null,
+        "language": "Ruby",
+        "license": "AGPL-3.0",
+        "stars": 54263,
+        "forks": 5684,
+        "topics": [
+          "finance",
+          "hotwire",
+          "personal-finance",
+          "postgresql",
+          "ruby",
+          "ruby-on-rails",
+          "stimulusjs",
+          "turbo"
+        ],
+        "archived": true,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-01-01T22:23:46Z",
+        "pushedAt": "2025-07-24T22:20:44Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [54263]
+      },
+      "release": {
+        "tag": "v0.6.0",
+        "publishedAt": "2025-07-24T22:05:26Z",
+        "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.6.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.6.0",
+          "name": "!maybe-meet-again",
+          "publishedAt": "2025-07-24T22:05:26Z",
+          "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.6.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.5.0",
+          "name": "We are now using Sidekiq + Redis for background jobs.  To update your self hosted instance, you will need to follow the…",
+          "publishedAt": "2025-04-11T16:04:43Z",
+          "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.5.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.4.3",
+          "name": "This release comes with a wide mix of stability improvements and quality of life updates; particularly for self hosted…",
+          "publishedAt": "2025-02-28T20:17:17Z",
+          "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.4.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.4.1",
+          "name": "Patch release for git versioning info crash error",
+          "publishedAt": "2025-02-21T19:20:43Z",
+          "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.4.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.4.0",
+          "name": "This latest version comes with a brand new and simplified UI plus a ton of huge performance improvements on the transac…",
+          "publishedAt": "2025-02-21T17:44:25Z",
+          "url": "https://github.com/maybe-finance/maybe/releases/tag/v0.4.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [
+        "archived"
+      ],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "mdbook",
       "name": "mdBook",
       "repository": "https://github.com/rust-lang/mdBook",
@@ -41074,6 +42905,108 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "mealie",
+      "name": "Mealie",
+      "repository": "https://github.com/mealie-recipes/mealie",
+      "category": "recipe-manager",
+      "replaces": [
+        {
+          "tool": "paprika",
+          "fit": "full",
+          "note": "Imports recipes from any site, with a meal planner and shopping lists in a web app shared by the household.",
+          "migration": "https://mealie.io/documentation/getting-started/features/#importing-recipes"
+        },
+        {
+          "tool": "plan-to-eat",
+          "fit": "full",
+          "note": "Recipe collection, meal planner and shopping lists built from the planned recipes.",
+          "migration": "https://mealie.io/documentation/getting-started/features/#importing-recipes"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:48:28.000Z",
+      "editedAt": "2026-09-25T14:48:28.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "mealie-recipes/mealie",
+        "description": "Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor",
+        "homepage": "https://docs.mealie.io",
+        "language": "Python",
+        "license": "AGPL-3.0",
+        "stars": 13311,
+        "forks": 1517,
+        "topics": [
+          "meal-plans",
+          "recipe-manager",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-12-07T01:04:17Z",
+        "pushedAt": "2026-09-25T02:57:13Z",
+        "defaultBranch": "mealie-next"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [13311]
+      },
+      "release": {
+        "tag": "v3.28.0",
+        "publishedAt": "2026-09-24T15:57:43Z",
+        "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v3.28.0",
+          "name": "With the popularity of agentic AI, pull requests are popping and the contributors list keeps growing! Lots of exciting…",
+          "publishedAt": "2026-09-24T15:57:43Z",
+          "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.27.0",
+          "name": "This release contains a few critical bug fixes for the previous version, as well as new connectivity testing for AI pro…",
+          "publishedAt": "2026-09-17T13:40:44Z",
+          "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.27.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.26.0",
+          "name": "Welcome to the latest release of Mealie! We have tons of new features packed into this one, as well as a large collecti…",
+          "publishedAt": "2026-09-14T01:43:52Z",
+          "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.26.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.25.1",
+          "name": "Patch release to fix auth issues when embedding Mealie in an iframe.",
+          "publishedAt": "2026-09-04T03:22:44Z",
+          "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.25.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.25.0",
+          "name": "This release comes with an overhaul to Mealie's internal auth, making it more inline with what you generally expect, sp…",
+          "publishedAt": "2026-09-02T19:03:27Z",
+          "url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.25.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "mediacms",
@@ -41208,7 +43141,7 @@
         "language": "TypeScript",
         "license": "Other",
         "stars": 36461,
-        "forks": 5302,
+        "forks": 5303,
         "topics": [
           "ai-coding",
           "ai-tools",
@@ -41581,6 +43514,115 @@
       "deploy": []
     },
     {
+      "slug": "memgraph",
+      "name": "Memgraph",
+      "repository": "https://github.com/memgraph/memgraph",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "neo4j",
+          "fit": "partial",
+          "note": "Speaks Bolt and Cypher, so Neo4j drivers connect; the Cypher dialect differs in places and APOC and GDS procedures are only partly covered.",
+          "migration": "https://memgraph.com/docs/data-migration/migrate-from-neo4j"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "memgraph/memgraph",
+        "description": "High-performance open-source in-memory graph database for GraphRAG, AI memory, agentic AI, and real-time graph analytics. Cypher-compatible, built in C++.",
+        "homepage": "https://memgraph.com",
+        "language": "C++",
+        "license": "Other",
+        "stars": 4581,
+        "forks": 284,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "context-graph",
+          "cypher",
+          "enterprise-context",
+          "graph",
+          "graph-algorithms",
+          "graph-analysis",
+          "graph-database",
+          "graphrag",
+          "kafka",
+          "nosql",
+          "opencypher",
+          "streaming"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-09-21T10:14:04Z",
+        "pushedAt": "2026-09-25T14:45:04Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [4581]
+      },
+      "release": {
+        "tag": "v3.13.1",
+        "publishedAt": "2026-09-14T12:41:52Z",
+        "url": "https://github.com/memgraph/memgraph/releases/tag/v3.13.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v3.13.1",
+          "name": "Added experimental, Enterprise-only FIPS 140-3 support: a new memgraph/memgraph:<version>-fips Docker image bundling th…",
+          "publishedAt": "2026-09-14T12:41:52Z",
+          "url": "https://github.com/memgraph/memgraph/releases/tag/v3.13.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.13.0",
+          "name": "The APOC compatibility names apoc.convert.fromJsonList and apoc.convert.toJson now resolve to the C++ convert module (c…",
+          "publishedAt": "2026-09-09T09:45:18Z",
+          "url": "https://github.com/memgraph/memgraph/releases/tag/v3.13.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.12.0",
+          "name": "The deprecated high availability startup flags --instance-down-timeout-sec and --instance-health-check-frequency-sec ha…",
+          "publishedAt": "2026-07-15T09:26:36Z",
+          "url": "https://github.com/memgraph/memgraph/releases/tag/v3.12.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.11.0",
+          "name": "--query-modules-directory is now ignored on coordinator instances and query modules are no longer loaded there. The emb…",
+          "publishedAt": "2026-06-17T10:34:44Z",
+          "url": "https://github.com/memgraph/memgraph/releases/tag/v3.11.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.10.1",
+          "name": "Fixed Memgraph and MAGE Docker containers failing to start when there are no command line arguments provided, e.g. dock…",
+          "publishedAt": "2026-05-15T09:42:30Z",
+          "url": "https://github.com/memgraph/memgraph/releases/tag/v3.10.1",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
+    },
+    {
       "slug": "memos",
       "name": "Memos",
       "repository": "https://github.com/usememos/memos",
@@ -41705,7 +43747,7 @@
         "homepage": "https://mermaid.ai/open-source/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 90417,
+        "stars": 90418,
         "forks": 9301,
         "topics": [
           "diagrams",
@@ -41727,7 +43769,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [90417]
+        "stars": [90418]
       },
       "release": {
         "tag": "@mermaid-js/layout-tidy-tree@1.0.1",
@@ -41934,7 +43976,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-02-02T19:25:47Z",
-        "pushedAt": "2026-09-25T14:40:20Z",
+        "pushedAt": "2026-09-25T14:49:17Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -42326,7 +44368,7 @@
         "homepage": "https://milvus.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 46254,
+        "stars": 46255,
         "forks": 4271,
         "topics": [
           "anns",
@@ -42356,13 +44398,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 7,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [46247,46254]
+        "stars": [46247,46255]
       },
       "release": {
         "tag": "v3.0.2",
@@ -43050,7 +45092,7 @@
         "homepage": "https://squidfunk.github.io/mkdocs-material/",
         "language": "Python",
         "license": "MIT",
-        "stars": 27501,
+        "stars": 27502,
         "forks": 4150,
         "topics": [
           "documentation",
@@ -43068,13 +45110,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 2,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [27500,27501]
+        "stars": [27500,27502]
       },
       "release": {
         "tag": "9.7.7",
@@ -44039,7 +46081,7 @@
         "homepage": "https://n8n.io",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 205926,
+        "stars": 205928,
         "forks": 60889,
         "topics": [
           "ai",
@@ -44067,17 +46109,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-22T09:24:21Z",
-        "pushedAt": "2026-09-25T14:40:27Z",
+        "pushedAt": "2026-09-25T14:54:06Z",
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 54,
+        "stars": 56,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [205872,205926]
+        "stars": [205872,205928]
       },
       "release": {
         "tag": "n8n@2.40.7",
@@ -44177,7 +46219,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-10-29T16:12:24Z",
-        "pushedAt": "2026-09-25T14:25:05Z",
+        "pushedAt": "2026-09-25T14:51:22Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -44265,7 +46307,7 @@
         "homepage": "https://www.navidrome.org",
         "language": "Go",
         "license": "GPL-3.0",
-        "stars": 23788,
+        "stars": 23789,
         "forks": 1725,
         "topics": [
           "airsonic",
@@ -44291,13 +46333,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 17,
+        "stars": 18,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [23771,23788]
+        "stars": [23771,23789]
       },
       "release": {
         "tag": "v0.64.2",
@@ -44354,6 +46396,228 @@
       ]
     },
     {
+      "slug": "nebulagraph",
+      "name": "NebulaGraph",
+      "repository": "https://github.com/vesoft-inc/nebula",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "tigergraph",
+          "fit": "partial",
+          "note": "A distributed graph queried in nGQL, which accepts part of openCypher; GSQL queries need rewriting."
+        },
+        {
+          "tool": "neo4j",
+          "fit": "partial",
+          "note": "Queried in nGQL rather than full Cypher and without Bolt, so Neo4j drivers do not connect.",
+          "migration": "https://docs.nebula-graph.io/3.8.0/import-export/nebula-exchange/use-exchange/ex-ug-import-from-neo4j/"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "vesoft-inc/nebula",
+        "description": "  A distributed, fast open-source graph database featuring horizontal scalability and high availability",
+        "homepage": "https://nebula-graph.io",
+        "language": "C++",
+        "license": "Apache-2.0",
+        "stars": 12405,
+        "forks": 1330,
+        "topics": [
+          "big-data",
+          "cpp",
+          "database",
+          "distributed",
+          "distributed-systems",
+          "graph",
+          "graph-database",
+          "graphdb",
+          "graphrag",
+          "hacktoberfest",
+          "knowledge-base",
+          "knowledge-graph",
+          "nebula",
+          "nebula-graph",
+          "nebulagraph",
+          "raft",
+          "scalability"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-08-28T14:25:09Z",
+        "pushedAt": "2026-09-08T06:42:15Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [12405]
+      },
+      "release": {
+        "tag": "v3.8.0",
+        "publishedAt": "2024-05-17T10:33:59Z",
+        "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.8.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v3.8.0",
+          "name": "NebulaGraph v3.8.0",
+          "publishedAt": "2024-05-17T10:33:59Z",
+          "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.8.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.6.0",
+          "name": "NebulaGraph v3.6.0",
+          "publishedAt": "2023-08-11T03:55:34Z",
+          "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.6.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.5.0",
+          "name": "NebulaGraph v3.5.0",
+          "publishedAt": "2023-05-23T10:06:24Z",
+          "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.5.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.4.1",
+          "name": "NebulaGraph v3.4.1",
+          "publishedAt": "2023-03-08T03:14:19Z",
+          "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.4.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.4.0",
+          "name": "NebulaGraph v3.4.0",
+          "publishedAt": "2023-02-09T10:19:49Z",
+          "url": "https://github.com/vesoft-inc/nebula/releases/tag/v3.4.0",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "package",
+        "binary"
+      ]
+    },
+    {
+      "slug": "neo4j",
+      "name": "Neo4j",
+      "repository": "https://github.com/neo4j/neo4j",
+      "category": "graph-database",
+      "replaces": [
+        {
+          "tool": "amazon-neptune",
+          "fit": "partial",
+          "note": "Serves Cypher over Bolt, which covers Neptune's openCypher side; Gremlin and SPARQL queries need rewriting."
+        },
+        {
+          "tool": "tigergraph",
+          "fit": "partial",
+          "note": "Queried in Cypher rather than GSQL, and the community edition in this repository runs on a single server."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:42:55.000Z",
+      "editedAt": "2026-09-25T14:42:55.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "neo4j/neo4j",
+        "description": "Graphs for Everyone",
+        "homepage": "http://neo4j.com",
+        "language": "Java",
+        "license": "GPL-3.0",
+        "stars": 17259,
+        "forks": 2701,
+        "topics": [
+          "cypher",
+          "database",
+          "graph",
+          "graph-database",
+          "graphdb",
+          "neo4j",
+          "nosql"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-11-12T08:46:15Z",
+        "pushedAt": "2026-09-22T10:36:59Z",
+        "defaultBranch": "2026.09"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [17259]
+      },
+      "release": {
+        "tag": "3.2.0-alpha08",
+        "publishedAt": "2017-04-11T08:47:47Z",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "3.3.0-beta01",
+          "name": "Release 3.3.0-beta01",
+          "publishedAt": "2017-09-15T12:28:27Z",
+          "url": "https://github.com/neo4j/neo4j/releases/tag/3.3.0-beta01",
+          "prerelease": true
+        },
+        {
+          "tag": "3.2.0-alpha08",
+          "name": "Overwriting property with same value no longer generates write command \\#9056",
+          "publishedAt": "2017-04-11T08:47:47Z",
+          "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.0",
+          "name": "Release Notes:  3.1.0",
+          "publishedAt": "2016-12-13T07:40:12Z",
+          "url": "https://github.com/neo4j/neo4j/releases/tag/3.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.0-M12-beta2",
+          "name": "Release Notes: 3.1.0-BETA2",
+          "publishedAt": "2016-10-24T21:41:30Z",
+          "url": "https://github.com/neo4j/neo4j/releases/tag/3.1.0-M12-beta2",
+          "prerelease": true
+        },
+        {
+          "tag": "3.1.0-BETA1",
+          "name": "Release Notes: Neo4j 3.1.0-BETA1",
+          "publishedAt": "2016-10-22T01:28:20Z",
+          "url": "https://github.com/neo4j/neo4j/releases/tag/3.1.0-BETA1",
+          "prerelease": true
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm",
+        "package"
+      ]
+    },
+    {
       "slug": "neovim",
       "name": "Neovim",
       "repository": "https://github.com/neovim/neovim",
@@ -44377,7 +46641,7 @@
         "homepage": "https://neovim.io",
         "language": "Vim Script",
         "license": "Other",
-        "stars": 102571,
+        "stars": 102572,
         "forks": 7135,
         "topics": [
           "api",
@@ -44396,13 +46660,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 54,
+        "stars": 55,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [102517,102532,102552,102571]
+        "stars": [102517,102532,102552,102572]
       },
       "release": {
         "tag": "v0.12.5",
@@ -45250,7 +47514,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T07:44:14Z",
-        "pushedAt": "2026-09-25T14:40:40Z",
+        "pushedAt": "2026-09-25T14:53:46Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -45641,7 +47905,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 34231,
-        "forks": 3914,
+        "forks": 3916,
         "topics": [
           "nginx",
           "nginx-proxy"
@@ -46135,7 +48399,7 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 122079,
-        "forks": 37815,
+        "forks": 37814,
         "topics": [
           "javascript",
           "js",
@@ -46212,6 +48476,102 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "norish",
+      "name": "Norish",
+      "repository": "https://github.com/norish-recipes/norish",
+      "category": "recipe-manager",
+      "replaces": [
+        {
+          "tool": "paprika",
+          "fit": "full",
+          "note": "Recipe import from links and photos, meal planning, and grocery lists with aisles and a pantry, shared in real time."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:48:28.000Z",
+      "editedAt": "2026-09-25T14:48:28.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "norish-recipes/norish",
+        "description": "Norish - A realtime, self-hosted recipe app for families & friends ",
+        "homepage": null,
+        "language": "TypeScript",
+        "license": "AGPL-3.0",
+        "stars": 1229,
+        "forks": 108,
+        "topics": [
+          "food",
+          "meal-planner",
+          "recipes",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-12-03T09:15:43Z",
+        "pushedAt": "2026-09-24T21:19:44Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [1229]
+      },
+      "release": {
+        "tag": "v0.24.0-beta",
+        "publishedAt": "2026-09-24T19:08:26Z",
+        "url": "https://github.com/norish-recipes/norish/releases/tag/v0.24.0-beta",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.24.0-beta",
+          "name": "V0.24.0-beta - Hi my name is Jev",
+          "publishedAt": "2026-09-24T19:08:26Z",
+          "url": "https://github.com/norish-recipes/norish/releases/tag/v0.24.0-beta",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.0-beta",
+          "name": "v0.23.0-beta - Groceries",
+          "publishedAt": "2026-09-09T18:40:58Z",
+          "url": "https://github.com/norish-recipes/norish/releases/tag/v0.23.0-beta",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.22.0-beta",
+          "name": "V0.22.0-beta - Cookbooks and user management",
+          "publishedAt": "2026-09-03T08:56:17Z",
+          "url": "https://github.com/norish-recipes/norish/releases/tag/v0.22.0-beta",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.21.0-beta",
+          "name": "v0.21.0-beta - UI refresh, image generation.",
+          "publishedAt": "2026-08-22T15:54:58Z",
+          "url": "https://github.com/norish-recipes/norish/releases/tag/v0.21.0-beta",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.20.0-beta",
+          "name": "v0.20.0-beta - Offline available, recipe provenance and improves ingredient linking.",
+          "publishedAt": "2026-08-07T19:48:04Z",
+          "url": "https://github.com/norish-recipes/norish/releases/tag/v0.20.0-beta",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "notepad-plus-plus",
@@ -46744,7 +49104,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-08-11T18:50:23Z",
-        "pushedAt": "2026-09-25T14:30:45Z",
+        "pushedAt": "2026-09-25T14:54:06Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -47049,7 +49409,7 @@
         "homepage": "https://www.odoo.com",
         "language": "Python",
         "license": "Other",
-        "stars": 54598,
+        "stars": 54599,
         "forks": 33832,
         "topics": [
           "apps",
@@ -47068,13 +49428,13 @@
         "defaultBranch": "20.0"
       },
       "trend": {
-        "stars": 33,
+        "stars": 34,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [54565,54598]
+        "stars": [54565,54599]
       },
       "release": {
         "tag": "5.0.0-2-addons",
@@ -47118,7 +49478,7 @@
         "homepage": "https://ohmyposh.dev",
         "language": "Go",
         "license": "MIT",
-        "stars": 23510,
+        "stars": 23511,
         "forks": 2790,
         "topics": [
           "bash",
@@ -47147,13 +49507,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 19,
+        "stars": 20,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [23491,23495,23505,23510]
+        "stars": [23491,23495,23505,23511]
       },
       "release": {
         "tag": "v31.3.0",
@@ -47295,8 +49655,8 @@
         "homepage": "https://ollama.com",
         "language": "Go",
         "license": "MIT",
-        "stars": 181687,
-        "forks": 18002,
+        "stars": 181689,
+        "forks": 18003,
         "topics": [
           "deepseek",
           "gemma",
@@ -47322,13 +49682,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 162,
+        "stars": 164,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [181525,181617,181687]
+        "stars": [181525,181617,181689]
       },
       "release": {
         "tag": "v0.34.4",
@@ -48089,7 +50449,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7558,
+        "stars": 7566,
         "forks": 581,
         "topics": [
           "go",
@@ -48104,13 +50464,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 100,
+        "stars": 108,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [7458,7468,7484,7558]
+        "stars": [7458,7468,7484,7566]
       },
       "release": {
         "tag": "v2.7.0",
@@ -48207,8 +50567,8 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 209984,
-        "forks": 27758,
+        "stars": 209988,
+        "forks": 27760,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -48218,13 +50578,13 @@
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 359,
+        "stars": 363,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [209625,209847,209984]
+        "stars": [209625,209847,209988]
       },
       "release": {
         "tag": "v1.18.32",
@@ -48474,7 +50834,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 89144,
-        "forks": 11739,
+        "forks": 11738,
         "topics": [
           "agent",
           "artificial-intelligence",
@@ -48490,7 +50850,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-03-13T03:33:31Z",
-        "pushedAt": "2026-09-25T14:34:26Z",
+        "pushedAt": "2026-09-25T14:54:40Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -48613,7 +50973,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-02T03:29:51Z",
-        "pushedAt": "2026-09-25T13:58:17Z",
+        "pushedAt": "2026-09-25T14:53:33Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -48734,7 +51094,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-11-28T09:59:11Z",
-        "pushedAt": "2026-09-25T14:25:26Z",
+        "pushedAt": "2026-09-25T14:47:08Z",
         "defaultBranch": "dev"
       },
       "trend": {
@@ -49966,7 +52326,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-09T05:46:51Z",
-        "pushedAt": "2026-09-25T14:38:27Z",
+        "pushedAt": "2026-09-25T14:42:36Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -50937,7 +53297,7 @@
         "homepage": "https://payloadcms.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 44945,
+        "stars": 44946,
         "forks": 4212,
         "topics": [
           "cms",
@@ -50964,17 +53324,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-01-05T18:49:45Z",
-        "pushedAt": "2026-09-25T14:16:44Z",
+        "pushedAt": "2026-09-25T14:54:19Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 21,
+        "stars": 22,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [44924,44945]
+        "stars": [44924,44946]
       },
       "release": {
         "tag": "v3.90.2",
@@ -51516,7 +53876,7 @@
         "homepage": "https://penpot.app",
         "language": "Clojure",
         "license": "MPL-2.0",
-        "stars": 60369,
+        "stars": 60371,
         "forks": 4136,
         "topics": [
           "clojure",
@@ -51535,13 +53895,13 @@
         "defaultBranch": "develop"
       },
       "trend": {
-        "stars": 35,
+        "stars": 37,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [60334,60369]
+        "stars": [60334,60371]
       },
       "release": {
         "tag": "2.18.0",
@@ -52806,7 +55166,7 @@
         "language": "TypeScript",
         "license": "AGPL-3.0",
         "stars": 59874,
-        "forks": 5868,
+        "forks": 5869,
         "topics": [
           "boards",
           "bug-tracker",
@@ -53124,7 +55484,7 @@
         "homepage": "https://plausible.io",
         "language": "Elixir",
         "license": "AGPL-3.0",
-        "stars": 29213,
+        "stars": 29214,
         "forks": 1874,
         "topics": [
           "analytics",
@@ -53156,13 +55516,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 24,
+        "stars": 25,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [29189,29195,29205,29213]
+        "stars": [29189,29195,29205,29214]
       },
       "release": {
         "tag": "v3.2.1",
@@ -53251,7 +55611,7 @@
         "homepage": "https://playwright.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 96664,
+        "stars": 96665,
         "forks": 6502,
         "topics": [
           "automation",
@@ -53278,13 +55638,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 148,
+        "stars": 149,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [96516,96565,96632,96664]
+        "stars": [96516,96565,96632,96665]
       },
       "release": {
         "tag": "v1.63.0",
@@ -53451,8 +55811,8 @@
         "homepage": "https://pnpm.io",
         "language": "Rust",
         "license": "MIT",
-        "stars": 36637,
-        "forks": 1806,
+        "stars": 36638,
+        "forks": 1805,
         "topics": [
           "dependency-manager",
           "install",
@@ -53467,17 +55827,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-01-28T07:40:43Z",
-        "pushedAt": "2026-09-25T14:39:48Z",
+        "pushedAt": "2026-09-25T14:54:34Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 26,
+        "stars": 27,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [36611,36622,36631,36637]
+        "stars": [36611,36622,36631,36638]
       },
       "release": {
         "tag": "v12.6.0",
@@ -53651,7 +56011,7 @@
         "homepage": "https://podman.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 32931,
+        "stars": 32932,
         "forks": 3390,
         "topics": [
           "containers",
@@ -53668,13 +56028,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 16,
+        "stars": 17,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [32915,32919,32922,32931]
+        "stars": [32915,32919,32922,32932]
       },
       "release": {
         "tag": "v6.1.2",
@@ -53773,7 +56133,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-03-03T18:45:51Z",
-        "pushedAt": "2026-09-25T13:14:04Z",
+        "pushedAt": "2026-09-25T14:47:15Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -53972,7 +56332,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-05-13T19:45:33Z",
-        "pushedAt": "2026-09-25T14:29:16Z",
+        "pushedAt": "2026-09-25T14:46:42Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -54436,7 +56796,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-23T22:46:58Z",
-        "pushedAt": "2026-09-25T14:40:58Z",
+        "pushedAt": "2026-09-25T14:55:11Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -55147,7 +57507,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-06-20T13:33:47Z",
-        "pushedAt": "2026-09-25T14:40:48Z",
+        "pushedAt": "2026-09-25T14:54:46Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -55662,7 +58022,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-10-31T21:02:47Z",
-        "pushedAt": "2026-09-25T14:39:26Z",
+        "pushedAt": "2026-09-25T14:48:38Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -56479,7 +58839,7 @@
         "homepage": "http://pyrefly.org/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 7013,
+        "stars": 7014,
         "forks": 521,
         "topics": [
           "code-quality",
@@ -56510,7 +58870,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [7013]
+        "stars": [7014]
       },
       "release": {
         "tag": "1.3.1",
@@ -56677,7 +59037,7 @@
         "homepage": "https://qdrant.tech",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 34814,
+        "stars": 34816,
         "forks": 2695,
         "topics": [
           "ai-search",
@@ -56709,13 +59069,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 22,
+        "stars": 24,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [34792,34814]
+        "stars": [34792,34816]
       },
       "release": {
         "tag": "v1.19.1",
@@ -56920,7 +59280,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-04-28T23:29:15Z",
-        "pushedAt": "2026-09-25T14:34:28Z",
+        "pushedAt": "2026-09-25T14:53:16Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -58870,7 +61230,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "Unlicense",
-        "stars": 68596,
+        "stars": 68598,
         "forks": 3596,
         "topics": [
           "cli",
@@ -58892,13 +61252,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 85,
+        "stars": 87,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [68511,68542,68573,68596]
+        "stars": [68511,68542,68573,68598]
       },
       "release": {
         "tag": "15.2.0",
@@ -59002,7 +61362,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-05-19T07:36:09Z",
-        "pushedAt": "2026-09-25T14:01:00Z",
+        "pushedAt": "2026-09-25T14:51:24Z",
         "defaultBranch": "develop"
       },
       "trend": {
@@ -59886,7 +62246,7 @@
         "homepage": "https://docs.astral.sh/ruff",
         "language": "Rust",
         "license": "MIT",
-        "stars": 49784,
+        "stars": 49785,
         "forks": 2438,
         "topics": [
           "linter",
@@ -59909,13 +62269,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 51,
+        "stars": 52,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [49733,49744,49767,49784]
+        "stars": [49733,49744,49767,49785]
       },
       "release": {
         "tag": "0.16.9",
@@ -60064,8 +62424,8 @@
         "homepage": "https://rustdesk.com",
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 124506,
-        "forks": 19252,
+        "stars": 124507,
+        "forks": 19253,
         "topics": [
           "android",
           "anydesk",
@@ -60095,13 +62455,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 64,
+        "stars": 65,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [124442,124506]
+        "stars": [124442,124507]
       },
       "release": {
         "tag": "1.4.9",
@@ -60181,7 +62541,7 @@
         "homepage": "https://rustfs.com/download/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 33884,
+        "stars": 33886,
         "forks": 1519,
         "topics": [
           "ai-native",
@@ -60205,13 +62565,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 229,
+        "stars": 231,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [33655,33720,33789,33884]
+        "stars": [33655,33720,33789,33886]
       },
       "release": {
         "tag": "1.0.0",
@@ -61013,7 +63373,7 @@
         "homepage": "https://seaweedfs.com",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34973,
+        "stars": 34974,
         "forks": 3007,
         "topics": [
           "blob-storage",
@@ -61042,13 +63402,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 70,
+        "stars": 71,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [34903,34918,34952,34973]
+        "stars": [34903,34918,34952,34974]
       },
       "release": {
         "tag": "4.47",
@@ -61122,7 +63482,7 @@
         "homepage": "https://selenium.dev",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 34515,
+        "stars": 34513,
         "forks": 8719,
         "topics": [
           "dotnet",
@@ -61142,13 +63502,13 @@
         "defaultBranch": "trunk"
       },
       "trend": {
-        "stars": 4,
+        "stars": 2,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [34511,34514,34515,34515]
+        "stars": [34511,34514,34515,34513]
       },
       "release": {
         "tag": "selenium-4.49.0",
@@ -61339,7 +63699,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-08-30T22:06:41Z",
-        "pushedAt": "2026-09-25T14:40:52Z",
+        "pushedAt": "2026-09-25T14:49:28Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -61568,7 +63928,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-01-08T04:15:52Z",
-        "pushedAt": "2026-09-25T14:24:46Z",
+        "pushedAt": "2026-09-25T14:43:18Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -63823,7 +66183,7 @@
         "homepage": "https://starship.rs",
         "language": "Rust",
         "license": "ISC",
-        "stars": 60044,
+        "stars": 60045,
         "forks": 2676,
         "topics": [
           "bash",
@@ -63847,13 +66207,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 46,
+        "stars": 47,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [59998,60016,60036,60044]
+        "stars": [59998,60016,60036,60045]
       },
       "release": {
         "tag": "v1.26.0",
@@ -64227,6 +66587,112 @@
       "deploy": []
     },
     {
+      "slug": "stump",
+      "name": "Stump",
+      "repository": "https://github.com/stumpapp/stump",
+      "category": "book-server",
+      "replaces": [
+        {
+          "tool": "google-play-books",
+          "fit": "partial",
+          "note": "The library and reader for your own comics, manga and ebooks, in the browser and OPDS apps, not the store."
+        },
+        {
+          "tool": "amazon-kindle",
+          "fit": "partial",
+          "note": "The cloud library and reading progress for your own DRM-free books, synced to Kobo and KOReader, not the store. Books bought from Amazon stay on Kindle."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:45:57.000Z",
+      "editedAt": "2026-09-25T14:45:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "stumpapp/stump",
+        "description": "A free and open source comics, manga and digital book server with OPDS support",
+        "homepage": "https://stumpapp.dev",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 2716,
+        "forks": 165,
+        "topics": [
+          "books",
+          "comics",
+          "media-server",
+          "opds",
+          "react",
+          "rust",
+          "self-hosted",
+          "tauri"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-12-30T19:15:14Z",
+        "pushedAt": "2026-09-24T23:33:41Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [2716]
+      },
+      "release": {
+        "tag": "v0.1.10",
+        "publishedAt": "2026-09-21T16:28:54Z",
+        "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.10",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.1.10",
+          "name": "This release contains a fix for a privately-reported security issue. The details of this are outlined in GHSA-v4g4-xqjg…",
+          "publishedAt": "2026-09-21T16:28:54Z",
+          "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.9",
+          "name": "This release contains a few important security fixes reported privately to me (thank you). Please update as soon as pos…",
+          "publishedAt": "2026-09-19T23:39:53Z",
+          "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.9",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.8",
+          "name": "This release is coming out a bit early because there are some dependency upgrades (vulnerability fixes) I want to get i…",
+          "publishedAt": "2026-09-19T20:13:12Z",
+          "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.7",
+          "name": "There aren't technically breaking changes in this release, however there are two high impact changed areas that I have…",
+          "publishedAt": "2026-09-03T23:24:39Z",
+          "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.6",
+          "name": "🐛 (expo): Fix language key in epub reader menu",
+          "publishedAt": "2026-08-02T18:09:15Z",
+          "url": "https://github.com/stumpapp/stump/releases/tag/v0.1.6",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
+    },
+    {
       "slug": "suitecrm",
       "name": "SuiteCRM",
       "repository": "https://github.com/SuiteCRM/SuiteCRM",
@@ -64359,7 +66825,7 @@
         "homepage": "http://app.lizardbyte.dev/Sunshine/",
         "language": "C++",
         "license": "GPL-3.0",
-        "stars": 41532,
+        "stars": 41533,
         "forks": 2148,
         "topics": [
           "cpm",
@@ -64389,7 +66855,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [41532]
+        "stars": [41533]
       },
       "release": {
         "tag": "v2026.914.233613",
@@ -64468,7 +66934,7 @@
         "language": "TypeScript",
         "license": "Apache-2.0",
         "stars": 110758,
-        "forks": 14826,
+        "forks": 14827,
         "topics": [
           "ai",
           "alternative",
@@ -64494,7 +66960,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-10-12T05:56:49Z",
-        "pushedAt": "2026-09-25T14:37:07Z",
+        "pushedAt": "2026-09-25T14:55:00Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -64705,7 +67171,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-07-21T18:55:34Z",
-        "pushedAt": "2026-09-25T14:39:08Z",
+        "pushedAt": "2026-09-25T14:53:09Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -64878,6 +67344,103 @@
       "capabilities": {},
       "deploy": [
         "container"
+      ]
+    },
+    {
+      "slug": "sure",
+      "name": "Sure",
+      "repository": "https://github.com/we-promise/sure",
+      "category": "personal-finance",
+      "replaces": [
+        {
+          "tool": "maybe",
+          "fit": "full",
+          "note": "Community fork of the Maybe codebase, maintained since Maybe was archived."
+        },
+        {
+          "tool": "monarch-money",
+          "fit": "full",
+          "note": "Accounts, net worth, budgets and investments, with bank sync through providers such as Plaid or SimpleFIN using your own credentials."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:51:29.000Z",
+      "editedAt": "2026-09-25T14:51:29.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "we-promise/sure",
+        "description": "The personal finance app for everyone (by everyone)",
+        "homepage": "https://sure.am",
+        "language": "Ruby",
+        "license": "AGPL-3.0",
+        "stars": 10037,
+        "forks": 527,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-07-23T04:13:55Z",
+        "pushedAt": "2026-09-25T06:37:19Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [10037]
+      },
+      "release": {
+        "tag": "v0.7.4",
+        "publishedAt": "2026-08-31T04:57:15Z",
+        "url": "https://github.com/we-promise/sure/releases/tag/v0.7.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.7.5-alpha.11",
+          "name": "This release includes debug builds of the mobile applications.  Download from the Assets area below.",
+          "publishedAt": "2026-09-24T01:48:44Z",
+          "url": "https://github.com/we-promise/sure/releases/tag/v0.7.5-alpha.11",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.7.5-alpha.10",
+          "name": "This release includes debug builds of the mobile applications.  Download from the Assets area below.",
+          "publishedAt": "2026-09-23T06:45:58Z",
+          "url": "https://github.com/we-promise/sure/releases/tag/v0.7.5-alpha.10",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.7.5-alpha.9",
+          "name": "This release includes debug builds of the mobile applications.  Download from the Assets area below.",
+          "publishedAt": "2026-09-16T06:20:04Z",
+          "url": "https://github.com/we-promise/sure/releases/tag/v0.7.5-alpha.9",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.7.4",
+          "name": "Sure v0.7.4 - Passkeys, new `/plan` area (budgets + goals) and more!",
+          "publishedAt": "2026-08-31T04:57:15Z",
+          "url": "https://github.com/we-promise/sure/releases/tag/v0.7.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.7.3",
+          "name": "Sure v0.7.3 - Insights, property/rental valuations, and (experimental) macOS app",
+          "publishedAt": "2026-07-31T21:36:35Z",
+          "url": "https://github.com/we-promise/sure/releases/tag/v0.7.3",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
       ]
     },
     {
@@ -65327,7 +67890,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-12-13T14:40:43Z",
-        "pushedAt": "2026-09-25T14:13:09Z",
+        "pushedAt": "2026-09-25T14:45:03Z",
         "defaultBranch": "develop"
       },
       "trend": {
@@ -65520,7 +68083,7 @@
         "homepage": "https://tabbyml.com",
         "language": "Rust",
         "license": "Other",
-        "stars": 33892,
+        "stars": 33893,
         "forks": 1788,
         "topics": [
           "ai",
@@ -65541,13 +68104,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 2,
+        "stars": 3,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [33890,33892,33892]
+        "stars": [33890,33892,33893]
       },
       "release": {
         "tag": "v0.32.0",
@@ -65715,7 +68278,7 @@
         "homepage": "https://tailwindcss.com/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 97671,
+        "stars": 97673,
         "forks": 6594,
         "topics": [
           "css",
@@ -65736,7 +68299,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [97671]
+        "stars": [97673]
       },
       "release": {
         "tag": "v4.3.3",
@@ -65787,6 +68350,117 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "tandoor-recipes",
+      "name": "Tandoor Recipes",
+      "repository": "https://github.com/TandoorRecipes/recipes",
+      "category": "recipe-manager",
+      "replaces": [
+        {
+          "tool": "paprika",
+          "fit": "full",
+          "note": "Recipes, meal plans and shopping lists in a web app shared by the household, with a Paprika importer.",
+          "migration": "https://docs.tandoor.dev/features/import_export/#paprika"
+        },
+        {
+          "tool": "plan-to-eat",
+          "fit": "full",
+          "note": "Meal planner and shopping lists generated from the planned recipes, with a Plan to Eat importer.",
+          "migration": "https://docs.tandoor.dev/features/import_export/#plan-to-eat"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-25T14:48:28.000Z",
+      "editedAt": "2026-09-25T14:48:28.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "TandoorRecipes/recipes",
+        "description": "Application for managing recipes, planning meals, building shopping lists and much much more!",
+        "homepage": "https://docs.tandoor.dev",
+        "language": "HTML",
+        "license": "Other",
+        "stars": 8627,
+        "forks": 874,
+        "topics": [
+          "cookbook",
+          "cooking",
+          "django",
+          "docker",
+          "food",
+          "hacktoberfest",
+          "markdown",
+          "meal-planner",
+          "recipe",
+          "recipes",
+          "selfhosted",
+          "shopping"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-11-13T20:34:02Z",
+        "pushedAt": "2026-09-24T19:49:04Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-25",
+        "stars": [8627]
+      },
+      "release": {
+        "tag": "2.6.15",
+        "publishedAt": "2026-09-07T06:21:29Z",
+        "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.15",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2.6.15",
+          "name": "added pestle import support (thanks to LLf13 #4637)",
+          "publishedAt": "2026-09-07T06:21:29Z",
+          "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.15",
+          "prerelease": false
+        },
+        {
+          "tag": "2.6.14",
+          "name": "added new selection field for all places where you select any food, unit, ...",
+          "publishedAt": "2026-09-06T06:54:44Z",
+          "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.14",
+          "prerelease": false
+        },
+        {
+          "tag": "2.6.13",
+          "name": "updated translations",
+          "publishedAt": "2026-07-05T12:56:29Z",
+          "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.13",
+          "prerelease": false
+        },
+        {
+          "tag": "2.6.12",
+          "name": "fixed private recipes could be manipulated by space users trough steps API",
+          "publishedAt": "2026-06-30T18:44:59Z",
+          "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.12",
+          "prerelease": false
+        },
+        {
+          "tag": "2.6.11",
+          "name": "improved pantry booking dialog and table",
+          "publishedAt": "2026-06-21T16:40:04Z",
+          "url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.11",
+          "prerelease": false
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "tdengine",
@@ -66738,7 +69412,7 @@
         "homepage": "https://thanos.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 14218,
+        "stars": 14219,
         "forks": 2373,
         "topics": [
           "cncf",
@@ -66764,13 +69438,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [14218,14218]
+        "stars": [14218,14219]
       },
       "release": {
         "tag": "v0.42.4",
@@ -67115,7 +69789,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-06-25T12:48:26Z",
-        "pushedAt": "2026-09-23T15:44:58Z",
+        "pushedAt": "2026-09-25T14:44:21Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -67423,7 +70097,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-05-09T11:48:37Z",
-        "pushedAt": "2026-09-25T14:41:30Z",
+        "pushedAt": "2026-09-25T14:55:31Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -67686,7 +70360,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2009-09-09T04:55:16Z",
-        "pushedAt": "2026-09-22T14:09:48Z",
+        "pushedAt": "2026-09-25T14:53:06Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -67973,7 +70647,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-05-23T00:30:20Z",
-        "pushedAt": "2026-09-25T14:40:29Z",
+        "pushedAt": "2026-09-25T14:49:50Z",
         "defaultBranch": "main"
       },
       "trend": null,
@@ -68473,7 +71147,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-25T14:10:47Z",
+        "pushedAt": "2026-09-25T14:43:01Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -68588,7 +71262,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-12-01T13:04:40Z",
-        "pushedAt": "2026-09-25T14:41:22Z",
+        "pushedAt": "2026-09-25T14:54:44Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -68783,7 +71457,7 @@
         "homepage": "https://docs.astral.sh/ty/",
         "language": "Python",
         "license": "MIT",
-        "stars": 19748,
+        "stars": 19749,
         "forks": 334,
         "topics": [],
         "archived": false,
@@ -68794,13 +71468,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 17,
+        "stars": 18,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [19731,19737,19739,19748]
+        "stars": [19731,19737,19739,19749]
       },
       "release": {
         "tag": "0.0.84",
@@ -70116,7 +72790,7 @@
         "homepage": "https://docs.astral.sh/uv",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 90168,
+        "stars": 90169,
         "forks": 3613,
         "topics": [
           "packaging",
@@ -70128,17 +72802,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-25T14:36:28Z",
+        "pushedAt": "2026-09-25T14:45:31Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 98,
+        "stars": 99,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [90070,90101,90138,90168]
+        "stars": [90070,90101,90138,90169]
       },
       "release": {
         "tag": "0.12.19",
@@ -70875,7 +73549,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-08-27T16:57:34Z",
-        "pushedAt": "2026-09-25T14:38:55Z",
+        "pushedAt": "2026-09-25T14:56:11Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -71403,8 +74077,8 @@
         "homepage": "https://www.vim.org",
         "language": "Vim Script",
         "license": "Vim",
-        "stars": 40944,
-        "forks": 6136,
+        "stars": 40945,
+        "forks": 6137,
         "topics": [
           "c",
           "cross-platform",
@@ -71419,13 +74093,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 28,
+        "stars": 29,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [40916,40920,40933,40944]
+        "stars": [40916,40920,40933,40945]
       },
       "release": {
         "tag": "v9.2.1129",
@@ -71778,7 +74452,7 @@
         "homepage": "https://vllm.ai",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 92667,
+        "stars": 92668,
         "forks": 22658,
         "topics": [
           "amd",
@@ -71810,13 +74484,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 36,
+        "stars": 37,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [92631,92667]
+        "stars": [92631,92668]
       },
       "release": {
         "tag": "v0.30.0",
@@ -71894,7 +74568,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 192889,
-        "forks": 43311,
+        "forks": 43312,
         "topics": [
           "editor",
           "electron",
@@ -71906,7 +74580,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-09-03T20:23:38Z",
-        "pushedAt": "2026-09-25T14:40:50Z",
+        "pushedAt": "2026-09-25T14:48:38Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -71991,7 +74665,7 @@
         "homepage": "https://vscodium.com",
         "language": "Shell",
         "license": "MIT",
-        "stars": 33392,
+        "stars": 33393,
         "forks": 1869,
         "topics": [
           "editor",
@@ -72008,13 +74682,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 51,
+        "stars": 52,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [33341,33350,33359,33392]
+        "stars": [33341,33350,33359,33393]
       },
       "release": {
         "tag": "1.135.06055",
@@ -72432,7 +75106,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-30T19:02:35Z",
-        "pushedAt": "2026-09-25T14:36:20Z",
+        "pushedAt": "2026-09-25T14:46:16Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -72535,7 +75209,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-25T14:15:45Z",
+        "pushedAt": "2026-09-25T14:53:00Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -72732,7 +75406,7 @@
         "homepage": "https://wezterm.org/",
         "language": "Rust",
         "license": "Other",
-        "stars": 29026,
+        "stars": 29027,
         "forks": 1760,
         "topics": [
           "rust",
@@ -72750,13 +75424,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 39,
+        "stars": 40,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [28987,29003,29015,29026]
+        "stars": [28987,29003,29015,29027]
       },
       "release": {
         "tag": "20240203-110809-5046fc22",
@@ -72954,7 +75628,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-05-05T02:21:17Z",
-        "pushedAt": "2026-09-25T14:39:40Z",
+        "pushedAt": "2026-09-25T14:56:17Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -73144,7 +75818,7 @@
         "language": "PHP",
         "license": "Other",
         "stars": 10535,
-        "forks": 10670,
+        "forks": 10669,
         "topics": [
           "automattic",
           "ecommerce",
@@ -73159,7 +75833,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2011-08-09T15:12:11Z",
-        "pushedAt": "2026-09-25T14:40:32Z",
+        "pushedAt": "2026-09-25T14:54:40Z",
         "defaultBranch": "trunk"
       },
       "trend": {
@@ -73368,7 +76042,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "MIT",
-        "stars": 8100,
+        "stars": 8101,
         "forks": 147,
         "topics": [
           "api-testing",
@@ -73386,13 +76060,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 13,
+        "stars": 14,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [8087,8090,8095,8100]
+        "stars": [8087,8090,8095,8101]
       },
       "release": {
         "tag": "v0.26.2",
@@ -76030,7 +78704,7 @@
         "homepage": "https://zustand-demo.pmnd.rs/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 58743,
+        "stars": 58745,
         "forks": 2193,
         "topics": [
           "hacktoberfest",
@@ -76049,13 +78723,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 6,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [58737,58743]
+        "stars": [58737,58745]
       },
       "release": {
         "tag": "v5.0.15",
@@ -76158,6 +78832,22 @@
       "slug": "amazon-keyspaces"
     },
     {
+      "name": "Amazon Kindle",
+      "homepage": "https://www.amazon.com/kindle",
+      "vendor": "Amazon",
+      "category": "book-server",
+      "description": "Amazon's ebook store, cloud library, reading apps and e-readers, which also keep personal documents sent to them.",
+      "slug": "amazon-kindle"
+    },
+    {
+      "name": "Amazon Neptune",
+      "homepage": "https://aws.amazon.com/neptune/",
+      "vendor": "Amazon Web Services",
+      "category": "graph-database",
+      "description": "Managed graph database service from AWS, queried in Gremlin, openCypher or SPARQL.",
+      "slug": "amazon-neptune"
+    },
+    {
       "name": "Amazon S3",
       "homepage": "https://aws.amazon.com/s3/",
       "vendor": "Amazon Web Services",
@@ -76180,6 +78870,14 @@
       "category": "remote-desktop",
       "description": "Remote desktop software that connects through AnyDesk's network.",
       "slug": "anydesk"
+    },
+    {
+      "name": "AnyList",
+      "homepage": "https://www.anylist.com",
+      "vendor": "Purple Cover",
+      "category": "recipe-manager",
+      "description": "Shared grocery list app for households, with a recipe organizer and a meal planning calendar.",
+      "slug": "anylist"
     },
     {
       "name": "Asana",
@@ -76220,6 +78918,14 @@
       "category": "infrastructure-as-code",
       "description": "AWS's own infrastructure as code service, for AWS resources only.",
       "slug": "aws-cloudformation"
+    },
+    {
+      "name": "Azure Cosmos DB for Apache Gremlin",
+      "homepage": "https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/",
+      "vendor": "Microsoft",
+      "category": "graph-database",
+      "description": "Managed graph database API of Azure Cosmos DB, queried in Gremlin.",
+      "slug": "azure-cosmos-db-gremlin"
     },
     {
       "name": "BigQuery",
@@ -76526,6 +79232,14 @@
       "slug": "google-photos"
     },
     {
+      "name": "Google Play Books",
+      "homepage": "https://play.google.com/books",
+      "vendor": "Google",
+      "category": "book-server",
+      "description": "Google's ebook and audiobook store and reading app, which also takes uploaded EPUB and PDF files.",
+      "slug": "google-play-books"
+    },
+    {
       "name": "Google Translate",
       "homepage": "https://translate.google.com",
       "vendor": "Google",
@@ -76686,6 +79400,14 @@
       "slug": "mixpanel"
     },
     {
+      "name": "Monarch Money",
+      "homepage": "https://www.monarch.com",
+      "vendor": "Monarch Money",
+      "category": "personal-finance",
+      "description": "Hosted personal finance app that links bank and investment accounts to track spending, budgets and net worth.",
+      "slug": "monarch-money"
+    },
+    {
       "name": "Netlify",
       "homepage": "https://www.netlify.com",
       "vendor": "Netlify",
@@ -76758,6 +79480,14 @@
       "slug": "orbstack"
     },
     {
+      "name": "Paprika Recipe Manager",
+      "homepage": "https://www.paprikaapp.com",
+      "vendor": "Hindsight Labs",
+      "category": "recipe-manager",
+      "description": "Recipe manager app that saves recipes from the web, plans meals and builds grocery lists, synced across devices through Paprika's cloud.",
+      "slug": "paprika"
+    },
+    {
       "name": "Parsec",
       "homepage": "https://parsec.app",
       "vendor": "Unity Technologies",
@@ -76780,6 +79510,14 @@
       "category": "uptime-monitoring",
       "description": "Hosted uptime and page speed monitoring.",
       "slug": "pingdom"
+    },
+    {
+      "name": "Plan to Eat",
+      "homepage": "https://www.plantoeat.com",
+      "vendor": "Plan to Eat",
+      "category": "recipe-manager",
+      "description": "Web and mobile meal planner that collects recipes from any site and turns a weekly plan into a shopping list.",
+      "slug": "plan-to-eat"
     },
     {
       "name": "Plex",
@@ -76820,6 +79558,14 @@
       "category": "erp",
       "description": "Intuit's accounting software for small businesses, for invoicing, expenses and bookkeeping.",
       "slug": "quickbooks"
+    },
+    {
+      "name": "Quicken",
+      "homepage": "https://www.quicken.com",
+      "vendor": "Quicken Inc.",
+      "category": "personal-finance",
+      "description": "Personal finance software for tracking bank accounts, bills, budgets and investments.",
+      "slug": "quicken"
     },
     {
       "name": "Railway",
@@ -76974,6 +79720,14 @@
       "slug": "teamviewer"
     },
     {
+      "name": "TigerGraph",
+      "homepage": "https://www.tigergraph.com/",
+      "vendor": "TigerGraph",
+      "category": "graph-database",
+      "description": "Closed-source distributed graph database queried in GSQL, offered as a managed cloud service and as licensed software.",
+      "slug": "tigergraph"
+    },
+    {
       "name": "Trello",
       "homepage": "https://trello.com",
       "vendor": "Atlassian",
@@ -77028,6 +79782,14 @@
       "category": "terminal-emulator",
       "description": "A terminal with built-in AI features and cloud accounts.",
       "slug": "warp"
+    },
+    {
+      "name": "YNAB",
+      "homepage": "https://www.ynab.com",
+      "vendor": "YNAB",
+      "category": "personal-finance",
+      "description": "Hosted budgeting app built around zero-based budgeting, where every unit of income is assigned to a category.",
+      "slug": "ynab"
     },
     {
       "name": "YouTube",
@@ -77154,6 +79916,11 @@
     "wide-column-database": {
       "name": "Wide-column databases",
       "description": "Distributed databases storing wide, sparse rows partitioned across nodes.",
+      "selfHost": true
+    },
+    "graph-database": {
+      "name": "Graph databases",
+      "description": "Databases storing nodes and the relationships between them, queried by traversing the graph.",
       "selfHost": true
     },
     "message-streaming": {
@@ -77561,6 +80328,11 @@
       "name": "Note-taking apps",
       "description": "Personal notes on desktop and mobile, with sync."
     },
+    "recipe-manager": {
+      "name": "Recipe managers",
+      "description": "Keep recipes, plan meals and build shopping lists from them.",
+      "selfHost": true
+    },
     "project-management": {
       "name": "Project management",
       "description": "Issues, tasks and boards for planning team work.",
@@ -77594,6 +80366,11 @@
     "video-hosting": {
       "name": "Video hosting and streaming",
       "description": "Publish videos and live streams on your own site for an audience to watch.",
+      "selfHost": true
+    },
+    "book-server": {
+      "name": "Book and comic servers",
+      "description": "Serve a personal library of ebooks, comics and manga to readers and reading apps.",
       "selfHost": true
     },
     "business-intelligence": {
@@ -77745,6 +80522,11 @@
     "erp": {
       "name": "ERP",
       "description": "Accounting, inventory, sales and operations in one system.",
+      "selfHost": true
+    },
+    "personal-finance": {
+      "name": "Budgeting and personal finance",
+      "description": "Track accounts, spending and budgets for a person or a household.",
       "selfHost": true
     },
     "crm": {
