@@ -794,5 +794,13 @@
   {"type":"added","slug":"uvdesk","at":"2026-09-25T13:51:53.712Z","commit":"5762001ce3fa9f0143e9071f4a6b1d58373e8470"},
   {"type":"added","slug":"vale","at":"2026-09-25T13:51:53.712Z","commit":"5762001ce3fa9f0143e9071f4a6b1d58373e8470"},
   {"type":"added","slug":"yarr","at":"2026-09-25T13:51:53.712Z","commit":"5762001ce3fa9f0143e9071f4a6b1d58373e8470"},
-  {"type":"added","slug":"zettlr","at":"2026-09-25T13:51:53.712Z","commit":"5762001ce3fa9f0143e9071f4a6b1d58373e8470"}
+  {"type":"added","slug":"zettlr","at":"2026-09-25T13:51:53.712Z","commit":"5762001ce3fa9f0143e9071f4a6b1d58373e8470"},
+  {"type":"added","slug":"caprover","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"added","slug":"coolify","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"added","slug":"dokku","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"added","slug":"dokploy","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"inactive","slug":"git-crypt","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"added","slug":"kubero","at":"2026-09-25T14:39:01.115Z","commit":null},
+  {"type":"released","slug":"lightdash","at":"2026-09-25T14:39:01.115Z","commit":null,"from":"2.343.0","to":"2.344.1"},
+  {"type":"added","slug":"piku","at":"2026-09-25T14:39:01.115Z","commit":null}
 ]
