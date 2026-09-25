@@ -1,0 +1,7 @@
+name: Apache HBase
+repository: https://github.com/apache/hbase
+category: wide-column-database
+replaces:
+  - tool: bigtable
+    fit: full
+    note: Same data model; code written against Bigtable's HBase client for Java carries over, the native Bigtable client libraries do not.

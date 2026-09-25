@@ -1,0 +1,5 @@
+name: Amazon DynamoDB
+homepage: https://aws.amazon.com/dynamodb/
+vendor: Amazon Web Services
+category: wide-column-database
+description: Serverless key-value and document database from AWS.
