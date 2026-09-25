@@ -1,4 +1,5 @@
 import type { Snapshot } from "./publish.ts";
+import { mergeSeries } from "./star-series.ts";
 import type { EnrichedTool, OwnerFacts } from "./types.ts";
 
 export interface RefreshedEntry {
@@ -11,7 +12,7 @@ export function mergeEntries(previous: Snapshot, entries: readonly RefreshedEntr
   const tools = new Map(previous.tools.map((t) => [t.slug, t]));
   const owners = { ...previous.owners };
   for (const { slug, tool, owner } of entries) {
-    if (tool) tools.set(slug, tool);
+    if (tool) tools.set(slug, withKeptSeries(tools.get(slug), tool));
     else tools.delete(slug);
     if (owner) owners[owner.login] = owner;
   }
@@ -20,4 +21,9 @@ export function mergeEntries(previous: Snapshot, entries: readonly RefreshedEntr
     owners,
     tools: [...tools.values()].sort((a, b) => a.slug.localeCompare(b.slug)),
   };
+}
+
+function withKeptSeries(published: EnrichedTool | undefined, refreshed: EnrichedTool): EnrichedTool {
+  if (!refreshed.starHistory) return refreshed;
+  return { ...refreshed, starHistory: mergeSeries(published?.starHistory, refreshed.starHistory) };
 }

@@ -133,6 +133,11 @@ export interface StarPoint {
   stars: number;
 }
 
+export interface StarHistory {
+  from: string;
+  stars: number[];
+}
+
 export interface TrendFacts {
   stars: number;
   exact: boolean;
@@ -160,6 +165,7 @@ export interface EnrichedTool {
   factsChangedAt: string | null;
   repo: RepoFacts;
   trend?: TrendFacts | null;
+  starHistory?: StarHistory;
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   maintainerVerified: boolean;

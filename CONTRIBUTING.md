@@ -159,7 +159,15 @@ The nightly refresh adds one more on listed tools: a day that gained 50 or more 
 five times the tool's usual daily pace over the last month. Bought stars arrive in bursts. A launch
 on Hacker News produces the same shape, which is why it is a warning and a person decides. GitHub no
 longer lists who starred a repository, so the refresh compares the star counts it kept from earlier
-days, read from the history of `generated/catalog.json`, and needs a week of them before it judges.
+days, and needs a week of them before it judges.
+
+Those counts are published with each tool in `generated/catalog.json` as `starHistory`: `from` is a
+UTC date and `stars` holds one count per day from there to today, over the last 31 days. The count of
+a day is the last one a refresh recorded that day, and a day no refresh ran on is interpolated
+between its neighbours. Each refresh carries the series of the previous catalog forward and falls
+back on the git history of the catalog for the days it lacks. A tool starts with a single day, the
+day it joins the catalog: GitHub does not say how many stars a repository had before that. The
+monthly trend is read from the same series.
 
 ## Verifying a tool you maintain
 

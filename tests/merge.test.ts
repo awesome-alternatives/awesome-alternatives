@@ -1,10 +1,10 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { mergeEntries } from "../scripts/lib/merge.ts";
-import type { EnrichedTool, OwnerFacts } from "../scripts/lib/types.ts";
+import type { EnrichedTool, OwnerFacts, StarHistory } from "../scripts/lib/types.ts";
 
-function tool(slug: string, stars: number): EnrichedTool {
-  return { slug, repo: { stars } } as unknown as EnrichedTool;
+function tool(slug: string, stars: number, starHistory?: StarHistory): EnrichedTool {
+  return { slug, repo: { stars }, ...(starHistory ? { starHistory } : {}) } as unknown as EnrichedTool;
 }
 
 function owner(login: string, name: string): OwnerFacts {
@@ -61,5 +61,18 @@ describe("mergeEntries", () => {
     mergeEntries(previous, [{ slug: "alpha", tool: null, owner: owner("acme", "Other") }]);
     assert.equal(previous.tools.length, 3);
     assert.equal(previous.owners.acme.name, "Acme");
+  });
+
+  it("extends the published star series with the refreshed day and keeps the days the refresh did not read", () => {
+    const published = { ...previous, tools: [tool("beta", 12, { from: "2026-09-20", stars: [10, 11, 12] })] };
+    const refreshed = tool("beta", 15, { from: "2026-09-23", stars: [15] });
+    const [beta] = mergeEntries(published, [{ slug: "beta", tool: refreshed, owner: null }]).tools;
+    assert.deepEqual(beta?.starHistory, { from: "2026-09-20", stars: [10, 11, 12, 15] });
+  });
+
+  it("publishes a new tool's one-day series as refreshed", () => {
+    const refreshed = tool("aardvark", 5, { from: "2026-09-23", stars: [5] });
+    const merged = mergeEntries(previous, [{ slug: "aardvark", tool: refreshed, owner: null }]);
+    assert.deepEqual(merged.tools[0]?.starHistory, { from: "2026-09-23", stars: [5] });
   });
 });

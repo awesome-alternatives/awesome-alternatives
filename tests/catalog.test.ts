@@ -272,4 +272,15 @@ describe("the generated catalog", () => {
     const { trend: _trend, ...without } = catalog.tools[0];
     assert.ok(validate({ ...catalog, tools: [without] }), JSON.stringify(validate.errors));
   });
+
+  it("accepts a daily star series and rejects one the refresh could not have written", async () => {
+    const { validate, catalog } = await schema();
+    const [first] = catalog.tools;
+    const withSeries = (starHistory: unknown) => validate({ ...catalog, tools: [{ ...first, starHistory }] });
+    assert.ok(withSeries({ from: "2026-09-22", stars: [100, 110] }), JSON.stringify(validate.errors));
+    assert.equal(withSeries({ from: "2026-09-22T00:00:00Z", stars: [100] }), false);
+    assert.equal(withSeries({ from: "2026-09-22", stars: [] }), false);
+    assert.equal(withSeries({ from: "2026-09-22", stars: [1.5] }), false);
+    assert.equal(withSeries({ from: "2026-09-22", stars: Array.from({ length: 33 }, () => 1) }), false);
+  });
 });
