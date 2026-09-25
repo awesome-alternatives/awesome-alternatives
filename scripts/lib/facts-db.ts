@@ -72,7 +72,7 @@ export async function insertFacts(sql: Sql, rows: readonly ToolFactsRow[], size 
 }
 
 export async function refreshDaily(sql: Sql): Promise<void> {
-  await sql`call refresh_continuous_aggregate('tool_facts_daily', null, null)`;
+  await sql`call refresh_continuous_aggregate('tool_facts_daily', null, time_bucket(interval '1 day', now()))`;
 }
 
 export async function withDatabase<T>(url: string, run: (sql: Sql) => Promise<T>): Promise<T> {
