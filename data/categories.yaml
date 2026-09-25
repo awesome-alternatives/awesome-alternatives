@@ -74,6 +74,11 @@ wide-column-database:
   description: Distributed databases storing wide, sparse rows partitioned across nodes.
   selfHost: true
 
+graph-database:
+  name: Graph databases
+  description: Databases storing nodes and the relationships between them, queried by traversing the graph.
+  selfHost: true
+
 message-streaming:
   name: Event streaming
   description: Durable, partitioned logs for events and messages.

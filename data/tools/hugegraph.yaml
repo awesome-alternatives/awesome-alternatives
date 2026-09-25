@@ -1,0 +1,8 @@
+name: Apache HugeGraph
+repository: https://github.com/apache/hugegraph
+category: graph-database
+replaces:
+  - tool: amazon-neptune
+    fit: partial
+    note: Covers Gremlin and openCypher queries; SPARQL and RDF data are not supported.
+deploy: [container, compose]

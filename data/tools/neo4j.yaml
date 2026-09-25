@@ -1,0 +1,11 @@
+name: Neo4j
+repository: https://github.com/neo4j/neo4j
+category: graph-database
+replaces:
+  - tool: amazon-neptune
+    fit: partial
+    note: Serves Cypher over Bolt, which covers Neptune's openCypher side; Gremlin and SPARQL queries need rewriting.
+  - tool: tigergraph
+    fit: partial
+    note: Queried in Cypher rather than GSQL, and the community edition in this repository runs on a single server.
+deploy: [container, helm, package]

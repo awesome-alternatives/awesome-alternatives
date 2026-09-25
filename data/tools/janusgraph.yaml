@@ -1,0 +1,12 @@
+name: JanusGraph
+repository: https://github.com/JanusGraph/janusgraph
+category: graph-database
+terms: open
+replaces:
+  - tool: azure-cosmos-db-gremlin
+    fit: full
+    note: Serves Gremlin to the same TinkerPop drivers; Cosmos DB's partition keys and request-unit scaling have no equivalent.
+  - tool: amazon-neptune
+    fit: partial
+    note: Covers Neptune's Gremlin side through TinkerPop drivers; openCypher and SPARQL are not supported.
+deploy: [container, compose]

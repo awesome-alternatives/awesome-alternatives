@@ -1,0 +1,10 @@
+name: Memgraph
+repository: https://github.com/memgraph/memgraph
+category: graph-database
+terms: source-available
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Speaks Bolt and Cypher, so Neo4j drivers connect; the Cypher dialect differs in places and APOC and GDS procedures are only partly covered.
+    migration: https://memgraph.com/docs/data-migration/migrate-from-neo4j
+deploy: [container, helm, package]

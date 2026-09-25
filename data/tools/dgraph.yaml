@@ -1,0 +1,8 @@
+name: Dgraph
+repository: https://github.com/dgraph-io/dgraph
+category: graph-database
+replaces:
+  - tool: amazon-neptune
+    fit: partial
+    note: Queried in DQL or GraphQL, so Gremlin, openCypher and SPARQL queries need rewriting.
+deploy: [container, helm, binary]

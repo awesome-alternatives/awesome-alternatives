@@ -1,0 +1,8 @@
+name: Apache AGE
+repository: https://github.com/apache/age
+category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Runs openCypher inside PostgreSQL through SQL; there is no Bolt endpoint, so Neo4j drivers do not connect.
+deploy: [container]
