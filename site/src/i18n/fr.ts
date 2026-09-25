@@ -50,7 +50,7 @@ export const fr: Messages = {
     noscriptLink: "parcourir par outil à remplacer",
     noscriptAfter: ".",
     trendingLabel: "Tendance ce mois-ci",
-    trendingLede: "Étoiles gagnées ces {days} derniers jours, comptées depuis GitHub.",
+    trendingLede: "Étoiles gagnées sur GitHub ces {days} derniers jours, ou depuis le début du comptage s'il est plus récent.",
     browseLabel: "Parcourir par outil",
     allTools: "Tous les outils",
     categories: "Catégories",

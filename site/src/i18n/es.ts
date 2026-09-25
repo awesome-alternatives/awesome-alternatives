@@ -50,7 +50,7 @@ export const es: Messages = {
     noscriptLink: "explora por la herramienta que quieres sustituir",
     noscriptAfter: ".",
     trendingLabel: "Tendencia este mes",
-    trendingLede: "Estrellas ganadas en los últimos {days} días, contadas desde GitHub.",
+    trendingLede: "Estrellas ganadas en GitHub en los últimos {days} días, o desde que empezó el recuento si es más reciente.",
     browseLabel: "Explorar por herramienta",
     allTools: "Todas las herramientas",
     categories: "Categorías",

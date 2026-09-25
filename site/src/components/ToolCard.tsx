@@ -1,12 +1,12 @@
 import { Fragment, type ComponentChildren } from "preact";
-import type { TrendFacts } from "../../../scripts/lib/types.ts";
 import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
 import { comparePath } from "../lib/compare.ts";
 import { migrationPath } from "../lib/migrations.ts";
-import { day, stars } from "../lib/format.ts";
+import { day, growth, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { slugify } from "../lib/slug.ts";
+import type { Boost } from "../lib/trending.ts";
 import type { ToolView } from "../lib/types.ts";
 
 interface Replaced {
@@ -21,7 +21,7 @@ interface Props {
   target?: string;
   targetName?: string;
   comparable?: boolean;
-  trend?: TrendFacts;
+  boost?: Boost;
   replaces?: Replaced[];
   notes?: boolean;
   criteria?: string;
@@ -35,7 +35,7 @@ export function ToolCard({
   target,
   targetName,
   comparable,
-  trend,
+  boost,
   replaces,
   notes,
   criteria,
@@ -74,6 +74,12 @@ export function ToolCard({
           />
         )}
       </header>
+      {boost && (
+        <p className="boost">
+          {format(boost.days === 1 ? card.boostOneDay : card.boost, { n: stars(boost.stars), days: boost.days })}
+          {boost.growth !== null && <span className="boost-growth">{growth(boost.growth, locale)}</span>}
+        </p>
+      )}
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       {replacement?.migration && (
@@ -118,12 +124,6 @@ export function ToolCard({
           value={<IndexLink locale={locale} index="licenses" value={repo.license} fallback={card.noLicense} />}
         />
         <Fact label={card.factStars} value={stars(repo.stars)} />
-        {trend && (
-          <Fact
-            label={card.factTrend}
-            value={format(trend.exact ? card.trendStars : card.trendStarsFloor, { n: trend.stars })}
-          />
-        )}
         {release && (
           <Fact
             label={card.factLatest}

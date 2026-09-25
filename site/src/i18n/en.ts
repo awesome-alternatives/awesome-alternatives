@@ -49,7 +49,7 @@ export const en = {
     noscriptLink: "browse by the tool you want to replace",
     noscriptAfter: ".",
     trendingLabel: "Trending this month",
-    trendingLede: "Stars gained in the last {days} days, counted from GitHub.",
+    trendingLede: "Stars gained on GitHub over the last {days} days, or since counting began if that is more recent.",
     browseLabel: "Browse by tool",
     allTools: "All tools",
     categories: "Categories",

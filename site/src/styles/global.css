@@ -774,6 +774,23 @@ button.link {
   text-decoration: none;
 }
 
+.boost {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 10px 0 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.boost-growth {
+  color: var(--soft);
+  font-weight: 500;
+}
+
 .tool-description {
   margin: 8px 0 0;
   color: var(--soft);
