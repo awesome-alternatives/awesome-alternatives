@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.1.1] - 2026-09-25
+
+### Bug Fixes
+
+- fix(refresh): push with the awesome-alternatives app, through a write token minted for the push alone (#197)
+
 ## [0.1.0] - 2026-09-25
 
 ### Features

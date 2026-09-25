@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.61.4] - 2026-09-25
+
+### Bug Fixes
+
+- fix(site): list trending tools one per row like every other tool list (#196)
+
 ## [0.61.3] - 2026-09-25
 
 ### Bug Fixes
