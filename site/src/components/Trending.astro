@@ -2,8 +2,8 @@
 import { TREND_WINDOW_DAYS } from "../../../scripts/lib/trending.ts";
 import type { Locale } from "../i18n/index.ts";
 import { format, messages } from "../i18n/index.ts";
-import { nameOf, tools } from "../lib/catalog.ts";
-import { trending } from "../lib/trending.ts";
+import { checkedAt, nameOf, tools } from "../lib/catalog.ts";
+import { boostOf, trending } from "../lib/trending.ts";
 import { ToolCard } from "./ToolCard.tsx";
 
 interface Props {
@@ -12,9 +12,10 @@ interface Props {
 
 const { locale } = Astro.props;
 const m = messages(locale);
+const now = checkedAt ?? new Date().toISOString();
 const ranked = trending(tools).map(({ tool, trend }) => ({
   tool,
-  trend,
+  boost: boostOf(trend, tool.repo.stars, now),
   replaces: tool.replaces.map((r) => ({ slug: r.tool, name: nameOf(r.tool) })),
 }));
 ---
@@ -32,7 +33,7 @@ const ranked = trending(tools).map(({ tool, trend }) => ({
               locale={locale}
               strings={m.islands}
               tool={item.tool}
-              trend={item.trend}
+              boost={item.boost}
               replaces={item.replaces}
             />
           ))}

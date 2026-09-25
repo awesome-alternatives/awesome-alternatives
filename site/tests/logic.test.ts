@@ -17,9 +17,9 @@ import {
   toggled,
 } from "../src/lib/filter.ts";
 import { alternativesHref, fromSearch, listParams, readListUrl } from "../src/lib/listUrl.ts";
-import { stars } from "../src/lib/format.ts";
+import { growth, stars } from "../src/lib/format.ts";
 import { groupTools } from "../src/lib/groups.ts";
-import { TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
+import { boostOf, TRENDING_SLOTS, trending } from "../src/lib/trending.ts";
 import { slugify } from "../src/lib/slug.ts";
 import type { DeployMethod, Fit, ToolView } from "../src/lib/types.ts";
 
@@ -375,4 +375,24 @@ test("each requested capability is its own chip, and dropping one keeps the othe
 test("capabilities go to the API as one comma-separated parameter", () => {
   assert.equal(toQuery({ capabilities: ["ci", "wiki"] }), "capabilities=ci%2Cwiki");
   assert.equal(toQuery({ capabilities: [] }), "");
+});
+
+test("a boost covering the whole window reads as that window, with growth over the stars it started from", () => {
+  const boost = boostOf(gained(300, "2026-08-26T08:00:00Z"), 1_300, "2026-09-25T08:00:00Z");
+  assert.deepEqual(boost, { stars: 300, days: 30, growth: 0.3 });
+});
+
+test("a boost from a young history counts the days it actually covers, at least one", () => {
+  assert.equal(boostOf(gained(311, "2026-09-23T17:48:06Z", false), 209_936, "2026-09-25T08:54:27Z").days, 2);
+  assert.equal(boostOf(gained(12, "2026-09-25T06:00:00Z", false), 5_000, "2026-09-25T08:54:27Z").days, 1);
+});
+
+test("a repository that had no stars before the window has no growth ratio rather than an infinite one", () => {
+  assert.equal(boostOf(gained(40, "2026-09-10T00:00:00Z"), 40, "2026-09-25T00:00:00Z").growth, null);
+});
+
+test("growth is signed and rounded to two significant digits in the reader's locale", () => {
+  assert.equal(growth(311 / 209_625, "en"), "+0.15%");
+  assert.equal(growth(0.3, "en"), "+30%");
+  assert.equal(growth(311 / 209_625, "fr").replace(/\s/g, " "), "+0,15 %");
 });
