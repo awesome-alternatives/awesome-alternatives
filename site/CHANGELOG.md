@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.68.0] - 2026-09-25
+
+### Features
+
+- feat(site): add stars and their trend to the comparison table (#214)
+
 ## [0.67.1] - 2026-09-25
 
 ### Bug Fixes
