@@ -65,6 +65,7 @@ export function ToolCard({
             {strings.fit[replacement.fit]}
           </a>
         )}
+        {boost && <BoostMark boost={boost} locale={locale} strings={card} />}
         {target && comparable && (
           <Mark
             icon="compare"
@@ -74,12 +75,6 @@ export function ToolCard({
           />
         )}
       </header>
-      {boost && (
-        <p className="boost">
-          {format(boost.days === 1 ? card.boostOneDay : card.boost, { n: stars(boost.stars), days: boost.days })}
-          {boost.growth !== null && <span className="boost-growth">{growth(boost.growth, locale)}</span>}
-        </p>
-      )}
       {repo.description && <p className="tool-description">{repo.description}</p>}
       {replacement?.note && <p className="tool-note">{replacement.note}</p>}
       {replacement?.migration && (
@@ -179,5 +174,22 @@ function Fact({ label, value }: { label: string; value: ComponentChildren }) {
       <dt>{label}</dt>
       <dd>{value}</dd>
     </div>
+  );
+}
+
+function BoostMark({ boost, locale, strings }: { boost: Boost; locale: Locale; strings: Islands["card"] }) {
+  const percent = boost.growth === null ? null : growth(boost.growth, locale);
+  const gained = format(boost.days === 1 ? strings.boostOneDay : strings.boost, {
+    n: stars(boost.stars),
+    days: boost.days,
+  });
+  const detail = percent === null ? gained : `${gained} (${percent})`;
+  return (
+    <span className="boost" data-tip={detail} tabIndex={0}>
+      <span aria-hidden="true">
+        +{stars(boost.stars)} ★{percent !== null && <span className="boost-growth">{percent}</span>}
+      </span>
+      <span className="visually-hidden">{detail}</span>
+    </span>
   );
 }
