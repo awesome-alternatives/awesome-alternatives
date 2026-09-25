@@ -669,5 +669,6 @@
   {"type":"released","slug":"vitest","at":"2026-09-25T10:46:19.000Z","commit":"37dcbe5f0d2c4b27ab6c90e682f05a1d794e9cbe","from":"v5.0.1","to":"v5.0.2"},
   {"type":"released","slug":"vscode","at":"2026-09-25T10:46:19.000Z","commit":"37dcbe5f0d2c4b27ab6c90e682f05a1d794e9cbe","from":"1.139.0","to":"1.139.1"},
   {"type":"released","slug":"wekan","at":"2026-09-25T10:46:19.000Z","commit":"37dcbe5f0d2c4b27ab6c90e682f05a1d794e9cbe","from":"v12.01","to":"v12.02"},
-  {"type":"released","slug":"lightdash","at":"2026-09-25T11:36:44.000Z","commit":"cacc88eb4bacd534f771e1a754cd92a1517d238f","from":"2.341.0","to":"2.342.1"}
+  {"type":"released","slug":"lightdash","at":"2026-09-25T11:36:44.000Z","commit":"cacc88eb4bacd534f771e1a754cd92a1517d238f","from":"2.341.0","to":"2.342.1"},
+  {"type":"released","slug":"lightdash","at":"2026-09-25T13:00:31.993Z","commit":null,"from":"2.342.1","to":"2.342.3"}
 ]
