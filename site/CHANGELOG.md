@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.61.0] - 2026-09-25
+
+### Features
+
+- feat(catalog): add a document management category (#192)
+- feat(catalog): add a wide-column databases category (#191)
+
 ## [0.60.0] - 2026-09-25
 
 ### Features
