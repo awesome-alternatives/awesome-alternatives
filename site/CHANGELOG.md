@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.65.0] - 2026-09-25
+
+### Features
+
+- feat(site): draw a small star chart on each tool page (#208)
+
 ## [0.64.1] - 2026-09-25
 
 ### Bug Fixes
