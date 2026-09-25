@@ -12,6 +12,10 @@ export function growth(ratio: number, locale: string): string {
   }).format(ratio);
 }
 
+export function count(n: number, locale: string): string {
+  return new Intl.NumberFormat(locale).format(n);
+}
+
 export function day(iso: string | null): string | null {
   return iso ? iso.slice(0, 10) : null;
 }
