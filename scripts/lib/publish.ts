@@ -35,6 +35,13 @@ export function lostTools(published: readonly Slugged[], declared: readonly Slug
     .sort((a, b) => a.localeCompare(b));
 }
 
+const NUMBER_ARRAY = /\[\n\s+(-?\d+(?:,\n\s+-?\d+)*)\n\s*\]/g;
+
+export function catalogJson(catalog: unknown): string {
+  const indented = JSON.stringify(catalog, null, 2);
+  return `${indented.replace(NUMBER_ARRAY, (_, numbers: string) => `[${numbers.split(/,\s+/).join(",")}]`)}\n`;
+}
+
 export async function readPublished(root: string): Promise<Snapshot> {
   return JSON.parse(await readFile(join(root, CATALOG_PATH), "utf8")) as Snapshot;
 }
@@ -50,10 +57,7 @@ export async function publish(root: string, catalog: Catalog, { checkedAt, owner
   const readmePath = join(root, "README.md");
   const readme = spliceReadme(await readFile(readmePath, "utf8"), renderCatalog(tools, products, catalog.categories));
 
-  await writeFile(
-    join(root, CATALOG_PATH),
-    `${JSON.stringify({ stats: statsOf(tools), checkedAt, owners, tools, products, categories }, null, 2)}\n`,
-  );
+  await writeFile(join(root, CATALOG_PATH), catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, categories }));
   await writeFile(readmePath, readme);
 }
 

@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import type { Catalog } from "../scripts/lib/catalog.ts";
-import { CATALOG_PATH, LostTools, lostTools, publish, publishOrExplain } from "../scripts/lib/publish.ts";
+import { CATALOG_PATH, catalogJson, LostTools, lostTools, publish, publishOrExplain } from "../scripts/lib/publish.ts";
 import { END, START } from "../scripts/lib/render.ts";
 import type { EnrichedTool, Tool } from "../scripts/lib/types.ts";
 
@@ -21,6 +21,17 @@ describe("lostTools", () => {
 
   it("does not count a tool that was never published", () => {
     assert.deepEqual(lostTools(slugs("a"), slugs("a", "new"), slugs("a")), []);
+  });
+});
+
+describe("catalogJson", () => {
+  it("writes a star series on one line and everything else indented, without changing the data", () => {
+    const catalog = { tools: [{ slug: "a", topics: ["x", "y"], starHistory: { from: "2026-09-24", stars: [1, 20, 300] } }], empty: [] };
+    const json = catalogJson(catalog);
+    assert.match(json, /\n {8}"stars": \[1,20,300\]\n/);
+    assert.match(json, /"topics": \[\n {8}"x",\n {8}"y"\n {6}\]/);
+    assert.deepEqual(JSON.parse(json), catalog);
+    assert.ok(json.endsWith("}\n"));
   });
 });
 
@@ -101,6 +112,13 @@ describe("publish", () => {
       ["a"],
     );
     assert.match(await readFile(join(root, "README.md"), "utf8"), /\[a\]\(https:\/\/github.com\/acme\/a\)/);
+  });
+
+  it("writes each tool's star series on one line", async () => {
+    const root = await published(["a"]);
+    const tools = [{ ...enriched("a"), starHistory: { from: "2026-09-23", stars: [3, 5] } }];
+    await publish(root, catalogOf("a"), { checkedAt: "2026-09-24T03:17:00.000Z", owners: {}, tools });
+    assert.match(await readFile(join(root, CATALOG_PATH), "utf8"), /\n {8}"stars": \[3,5\]\n/);
   });
 
   it("sets a failing exit code and names the lost tools instead of throwing", async () => {
