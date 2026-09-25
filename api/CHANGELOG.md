@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.17.0] - 2026-09-25
+
+### Features
+
+- feat(api): serve a tool's daily history from TimescaleDB (#185)
+
 ## [0.16.4] - 2026-09-24
 
 ### Bug Fixes
