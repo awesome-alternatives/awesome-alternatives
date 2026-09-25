@@ -1,0 +1,7 @@
+name: TinaCMS
+repository: https://github.com/tinacms/tinacms
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: partial
+    note: Content kept as Markdown and JSON in Git, with visual editing and a GraphQL API over it.

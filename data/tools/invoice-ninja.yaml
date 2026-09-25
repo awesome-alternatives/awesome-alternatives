@@ -1,0 +1,9 @@
+name: Invoice Ninja
+repository: https://github.com/invoiceninja/invoiceninja
+category: erp
+terms: source-available
+replaces:
+  - tool: quickbooks
+    fit: partial
+    note: Invoices, quotes, recurring billing, expenses and online payments, without a general ledger.
+deploy: [container]

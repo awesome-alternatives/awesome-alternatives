@@ -1,0 +1,7 @@
+name: TigerVNC
+repository: https://github.com/TigerVNC/tigervnc
+category: remote-desktop
+replaces:
+  - tool: teamviewer
+    fit: partial
+    note: VNC server and viewer for direct connections, without a relay or an ID service.

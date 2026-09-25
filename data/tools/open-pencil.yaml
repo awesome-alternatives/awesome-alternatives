@@ -1,0 +1,8 @@
+name: OpenPencil
+repository: https://github.com/open-pencil/open-pencil
+category: design-tool
+replaces:
+  - tool: figma
+    fit: partial
+    note: Opens and saves Figma files in a desktop app or the browser, with components, auto layout and peer-to-peer collaboration; still maturing.
+deploy: [binary, package]

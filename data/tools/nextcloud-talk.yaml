@@ -1,0 +1,10 @@
+name: Nextcloud Talk
+repository: https://github.com/nextcloud/spreed
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Calls, meetings and webinars inside a Nextcloud server, with a separate signaling server needed for larger calls.
+  - tool: microsoft-teams
+    fit: partial
+    note: Team chat, calls and screen sharing next to Nextcloud files and calendars.

@@ -1,0 +1,10 @@
+name: UVdesk
+repository: https://github.com/uvdesk/community-skeleton
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Tickets from email and web forms, a support centre portal, workflows and saved replies.
+  - tool: freshdesk
+    fit: partial
+    note: Email ticketing with a customer portal and automation rules.

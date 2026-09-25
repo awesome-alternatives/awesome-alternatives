@@ -1,0 +1,10 @@
+name: Ente Photos
+repository: https://github.com/ente/ente
+path: mobile/apps/photos
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: full
+    note: End-to-end encrypted backup from phones and desktops, with albums, sharing and on-device face and object search.
+    migration: https://ente.com/help/photos/migration/from-google-photos/
+deploy: [container, compose]

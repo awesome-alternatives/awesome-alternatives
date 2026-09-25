@@ -1,0 +1,7 @@
+name: D2
+repository: https://github.com/d2lang/d2
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: Architecture and flow diagrams from a declarative text language, with several layout engines and themes.

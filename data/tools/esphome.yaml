@@ -1,0 +1,5 @@
+name: ESPHome
+repository: https://github.com/esphome/esphome
+category: home-automation
+terms: open
+deploy: [container]

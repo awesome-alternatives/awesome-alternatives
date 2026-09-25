@@ -1,0 +1,8 @@
+name: LibrePhotos
+repository: https://github.com/LibrePhotos/librephotos
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Face recognition, object detection and semantic search over photos on your server, without an official phone backup app.
+deploy: [container, compose]

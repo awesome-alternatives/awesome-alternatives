@@ -1,0 +1,8 @@
+name: EverShop
+repository: https://github.com/evershopcommerce/evershop
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: A TypeScript store with admin, catalogue, checkout, themes and extensions.
+deploy: [container, compose]

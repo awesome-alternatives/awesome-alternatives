@@ -1,0 +1,8 @@
+name: Photoview
+repository: https://github.com/photoview/photoview
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Browsing, face recognition and sharing links over photo folders already on the server; it does not upload from phones.
+deploy: [container, compose]

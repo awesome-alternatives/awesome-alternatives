@@ -1,0 +1,7 @@
+name: Onlook
+repository: https://github.com/onlook-dev/onlook
+category: design-tool
+replaces:
+  - tool: figma
+    fit: partial
+    note: Designs on a canvas over a live React and Tailwind app and writes the changes back to its code, rather than drawing vector mockups.

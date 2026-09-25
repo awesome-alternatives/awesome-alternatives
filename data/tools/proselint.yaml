@@ -1,0 +1,7 @@
+name: proselint
+repository: https://github.com/amperser/proselint
+category: writing-assistant
+replaces:
+  - tool: grammarly
+    fit: partial
+    note: Rule-based checks for English usage, cliches and jargon, from the command line or an editor plugin.

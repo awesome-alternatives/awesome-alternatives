@@ -1,0 +1,7 @@
+name: PlantUML
+repository: https://github.com/plantuml/plantuml
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: UML, sequence, architecture and other diagrams generated from text, not drawn by hand.

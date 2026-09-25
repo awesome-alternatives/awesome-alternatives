@@ -1,0 +1,7 @@
+name: Mermaid
+repository: https://github.com/mermaid-js/mermaid
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: Flowcharts, sequence, Gantt and other diagrams from Markdown-like text, rendered by GitHub and many docs tools.

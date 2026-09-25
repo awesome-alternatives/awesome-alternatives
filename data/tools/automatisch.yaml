@@ -1,0 +1,9 @@
+name: Automatisch
+repository: https://github.com/automatisch/automatisch
+category: workflow-automation
+terms: open-core
+replaces:
+  - tool: zapier
+    fit: full
+    note: Trigger-and-action flows with a visual editor, on your own server.
+deploy: [container, compose]

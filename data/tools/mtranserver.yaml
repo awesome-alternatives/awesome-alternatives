@@ -1,0 +1,11 @@
+name: MTranServer
+repository: https://github.com/xxnuo/MTranServer
+category: machine-translation
+replaces:
+  - tool: deepl
+    fit: partial
+    note: Offline translation on CPU with a DeepL API v2 compatible endpoint; its small models trade quality for speed.
+  - tool: google-translate
+    fit: partial
+    note: A translation API and web UI on your own server, with no GPU needed.
+deploy: [container, compose, binary]

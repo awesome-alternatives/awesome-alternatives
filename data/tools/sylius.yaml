@@ -1,0 +1,7 @@
+name: Sylius
+repository: https://github.com/Sylius/Sylius
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Symfony framework for custom stores, with an admin and a shop API, built out by developers rather than configured.
