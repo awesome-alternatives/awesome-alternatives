@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { HISTORY_DAYS, historyLogArgs, lastPerDay, parseRevisions, starSeries } from "../scripts/lib/history.ts";
+import { catalogLogArgs, HISTORY_DAYS, historyLogArgs, lastPerDay, parseRevisions, starSeries } from "../scripts/lib/history.ts";
 
 describe("parseRevisions", () => {
   it("reads git's hash and committer date, in UTC", () => {
@@ -45,5 +45,11 @@ describe("historyLogArgs", () => {
     const since = args.find((a) => a.startsWith("--since="))?.slice("--since=".length) ?? "";
     assert.equal((Date.parse("2026-09-24T12:00:00Z") - Date.parse(since)) / 86_400_000, HISTORY_DAYS);
     assert.equal(args.at(-1), "generated/catalog.json");
+  });
+});
+
+describe("catalogLogArgs", () => {
+  it("walks the catalog's whole history when given no start", () => {
+    assert.deepEqual(catalogLogArgs(), ["log", "--format=%H %cI", "--", "generated/catalog.json"]);
   });
 });

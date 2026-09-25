@@ -33,6 +33,7 @@ export interface GqlRepository {
   licenseInfo: { spdxId: string | null } | null;
   stargazerCount: number;
   forkCount: number;
+  issues: { totalCount: number };
   repositoryTopics: { nodes: { topic: { name: string } }[] };
   isArchived: boolean;
   isFork: boolean;
@@ -72,6 +73,7 @@ export interface RepositoryFacts {
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   claim: string[];
+  openIssues: number;
 }
 
 export interface MappedRepository extends RepositoryFacts {
@@ -85,6 +87,7 @@ fragment Facts on Repository {
   primaryLanguage { name }
   licenseInfo { spdxId }
   stargazerCount forkCount
+  issues(states: OPEN) { totalCount }
   repositoryTopics(first: 20) { nodes { topic { name } } }
   isArchived isFork isPrivate createdAt pushedAt
   defaultBranchRef { name }
@@ -196,7 +199,7 @@ export function mapRepository(node: GqlRepository): MappedRepository {
 
   const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
 
-  return { repo, release, annotatedTag, releases, claim };
+  return { repo, release, annotatedTag, releases, claim, openIssues: node.issues.totalCount };
 }
 
 export function mapOwner(node: GqlOwner): OwnerFacts {

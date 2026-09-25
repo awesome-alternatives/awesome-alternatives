@@ -84,6 +84,13 @@ describe("mapRepository on a recorded response", () => {
     );
   });
 
+  it("counts open issues beside the repository facts, so they stay out of the catalog", () => {
+    const mapped = mapRepository(node("deno"));
+    assert.equal(mapped.openIssues, 2381);
+    assert.ok(!("openIssues" in mapped.repo));
+    assert.equal(mapRepository(node("deno-std")).openIssues, 0);
+  });
+
   it("reads a signed commit behind the release tag as signed", () => {
     assert.equal(mapRepository(node("deno")).release?.signed, true);
   });
@@ -201,6 +208,7 @@ describe("repositoryQuery", () => {
       p1: "HEAD:apps/cli/.awesome-alternatives",
     });
     assert.ok(!query.includes("acme"));
+    assert.ok(query.includes("issues(states: OPEN) { totalCount }"));
     assert.equal(query.match(/claimAt:/g)?.length, 1);
   });
 });

@@ -14,9 +14,12 @@ interface Snapshot {
   tools: { slug: string; repo: { stars: number } }[];
 }
 
+export function catalogLogArgs(since: Date | null = null): string[] {
+  return ["log", ...(since ? [`--since=${since.toISOString()}`] : []), "--format=%H %cI", "--", CATALOG_PATH];
+}
+
 export function historyLogArgs(now: Date): string[] {
-  const since = new Date(now.getTime() - HISTORY_DAYS * 24 * 60 * 60 * 1000).toISOString();
-  return ["log", `--since=${since}`, "--format=%H %cI", "--", CATALOG_PATH];
+  return catalogLogArgs(new Date(now.getTime() - HISTORY_DAYS * 24 * 60 * 60 * 1000));
 }
 
 export function parseRevisions(output: string): Revision[] {
@@ -48,14 +51,25 @@ export function starSeries(snapshots: readonly { at: string; catalog: Snapshot }
   return series;
 }
 
-export function readStarHistory(root: string, now: Date): Map<string, StarPoint[]> {
+export interface CatalogRevision {
+  at: string;
+  catalog: unknown;
+}
+
+export function* dailyCatalogs(root: string, logArgs: readonly string[]): Generator<CatalogRevision> {
   const git = (args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8", maxBuffer: 256 * 1024 * 1024 });
-  const snapshots = lastPerDay(parseRevisions(git(historyLogArgs(now)))).flatMap(({ sha, at }) => {
+  for (const { sha, at } of lastPerDay(parseRevisions(git([...logArgs])))) {
+    let catalog: unknown;
     try {
-      return [{ at, catalog: JSON.parse(git(["show", `${sha}:${CATALOG_PATH}`])) as Snapshot }];
+      catalog = JSON.parse(git(["show", `${sha}:${CATALOG_PATH}`]));
     } catch {
-      return [];
+      continue;
     }
-  });
+    yield { at, catalog };
+  }
+}
+
+export function readStarHistory(root: string, now: Date): Map<string, StarPoint[]> {
+  const snapshots = [...dailyCatalogs(root, historyLogArgs(now))].map(({ at, catalog }) => ({ at, catalog: catalog as Snapshot }));
   return starSeries(snapshots);
 }
