@@ -318,6 +318,20 @@ export const en = {
     replaces: "Replaces {names}.",
   },
 
+  vitality: {
+    created: "Created",
+    age: { one: "{year}, {n} year ago", other: "{year}, {n} years ago" },
+    ageNew: "{year}, less than a year ago",
+    contributors: "Active contributors",
+    contributorsCount: {
+      one: "{n} commit author on the default branch in the last 90 days",
+      other: "{n} commit authors on the default branch in the last 90 days",
+    },
+    contributorsCapped: "{n}+ commit authors on the default branch in the last 90 days",
+    wholeRepository: "Counted across the whole repository, not only {path}.",
+    platforms: "Platforms",
+  },
+
   islands,
   pages,
 };

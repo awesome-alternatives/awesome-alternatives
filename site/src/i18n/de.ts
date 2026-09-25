@@ -320,6 +320,20 @@ export const de: Messages = {
     replaces: "Ersetzt {names}.",
   },
 
+  vitality: {
+    created: "Erstellt",
+    age: { one: "{year}, vor {n} Jahr", other: "{year}, vor {n} Jahren" },
+    ageNew: "{year}, vor weniger als einem Jahr",
+    contributors: "Aktive Mitwirkende",
+    contributorsCount: {
+      one: "{n} Commit-Autor auf dem Standard-Branch in den letzten 90 Tagen",
+      other: "{n} Commit-Autoren auf dem Standard-Branch in den letzten 90 Tagen",
+    },
+    contributorsCapped: "{n}+ Commit-Autoren auf dem Standard-Branch in den letzten 90 Tagen",
+    wholeRepository: "Gezählt über das ganze Repository, nicht nur {path}.",
+    platforms: "Plattformen",
+  },
+
   islands,
   pages,
 };

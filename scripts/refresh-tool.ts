@@ -24,8 +24,9 @@ if (!tool) {
 
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const gql = createGraphQL(process.env.GITHUB_TOKEN);
-const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, new Date());
-const facts = await fetchRepositories(gql, gh, [tool]);
+const now = new Date();
+const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, now);
+const facts = await fetchRepositories(gql, gh, [tool], now);
 const enriched = await enricher.enrich(tool, facts.get(slug) ?? null);
 const [owner = null] = enriched ? Object.values(await fetchOwners(gql, [enriched])) : [];
 const entry: RefreshedEntry = { slug, tool: enriched, owner };

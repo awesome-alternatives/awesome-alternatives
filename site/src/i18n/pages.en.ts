@@ -24,7 +24,11 @@ export const pages = {
         "whether the repository is archived, and the date of its last push",
         "the latest release, or the latest tag when there is no release, and whether it is signed",
         "the last five published releases, shown on the tool page",
+        "the authors of the commits on the default branch over the last {days} days, of which only the count is kept",
+        "the names of the files attached to the latest release, read for the operating systems and architectures they name",
       ],
+      activity:
+        "The tool page turns these into how alive a project is, never into a score. Its age is counted from the day the repository was created. The release cadence is the median gap between its latest stable releases, shown once there are three. Active contributors are the distinct commit authors on the default branch in the last {days} days: accounts whose name ends in [bot] are left out, and a commit linked to no GitHub account counts by its email, which is never published. Only the latest {commits} commits are read, so a busier project shows a lower bound such as 40+. A squash-merge workflow credits one author per pull request, whoever else co-wrote it, and for a tool that lives in a monorepo the count covers the whole repository, which the page says. Platforms are shown only when the file names of the latest release name them, and nothing is guessed when they do not, nor for a tool in a monorepo, whose latest release may be another package's.",
       maintainerFileBefore: "the maintainer file described under",
       maintainerFileLink: "verified",
       releaseBefore: "Between two nightly runs, a published release refreshes its tool within minutes when the repository has the",

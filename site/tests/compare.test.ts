@@ -162,15 +162,23 @@ test("release cadence is the median gap between stable releases", () => {
   );
 });
 
-test("release cadence ignores pre-releases and undated tags, and is missing below two releases", () => {
+test("release cadence ignores pre-releases and undated tags", () => {
   assert.equal(
     cadenceDays([
+      release("v3", "2026-03-29T00:00:00Z"),
       release("v2", "2026-03-01T00:00:00Z"),
       release("v2-rc1", "2026-02-28T00:00:00Z", true),
       release("v1", "2026-02-01T00:00:00Z"),
+      release("v0", null),
     ]),
     28,
   );
-  assert.equal(cadenceDays([release("v1", "2026-03-01T00:00:00Z"), release("v0", null)]), null);
+});
+
+test("release cadence needs three stable releases, since one gap is not a rhythm", () => {
+  const two = [release("v2", "2026-03-01T00:00:00Z"), release("v1", "2026-02-01T00:00:00Z")];
+  assert.equal(cadenceDays(two), null);
+  assert.equal(cadenceDays([...two, release("v1-rc1", "2026-01-20T00:00:00Z", true)]), null);
+  assert.equal(cadenceDays([...two, release("v0", "2026-01-01T00:00:00Z")]), 30);
   assert.equal(cadenceDays([]), null);
 });

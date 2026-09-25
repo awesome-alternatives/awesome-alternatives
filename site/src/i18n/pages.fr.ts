@@ -27,7 +27,11 @@ export const pages: Pages = {
         "si le dépôt est archivé, et la date de son dernier push",
         "la dernière release, ou le dernier tag à défaut de release, et si elle est signée",
         "les cinq dernières releases publiées, affichées sur la page de l'outil",
+        "les auteurs des commits sur la branche par défaut ces {days} derniers jours, dont seul le nombre est gardé",
+        "les noms des fichiers joints à la dernière release, lus pour les systèmes d'exploitation et architectures qu'ils nomment",
       ],
+      activity:
+        "La page de l'outil en tire à quel point un projet est vivant, jamais une note. Son âge compte depuis la création du dépôt. Le rythme des releases est l'écart médian entre ses dernières releases stables, affiché à partir de trois. Les contributeurs actifs sont les auteurs de commits distincts sur la branche par défaut ces {days} derniers jours : les comptes dont le nom finit par [bot] sont écartés, et un commit lié à aucun compte GitHub compte par son email, qui n'est jamais publié. Seuls les {commits} derniers commits sont lus, un projet plus actif affiche donc un minimum comme 40+. Un workflow en squash merge ne crédite qu'un auteur par pull request, même à plusieurs mains, et pour un outil logé dans un monorepo le nombre couvre tout le dépôt, ce que la page précise. Les plateformes n'apparaissent que si les noms de fichiers de la dernière release les nomment, et rien n'est deviné sinon, ni pour un outil dans un monorepo, dont la dernière release peut être celle d'un autre paquet.",
       maintainerFileBefore: "le fichier mainteneur décrit sous",
       maintainerFileLink: "vérifié",
       releaseBefore: "Entre deux passages nocturnes, une release publiée met à jour son outil en quelques minutes quand le dépôt a installé",

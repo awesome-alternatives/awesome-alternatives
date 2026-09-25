@@ -6,6 +6,7 @@ import { Mark } from "../../../components/Mark.tsx";
 import ReplacedBy from "../../../components/ReplacedBy.astro";
 import StarChart from "../../../components/StarChart.astro";
 import ToolTabs from "../../../components/ToolTabs.tsx";
+import VitalityFacts from "../../../components/VitalityFacts.astro";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
@@ -194,6 +195,7 @@ const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
               </div>
             )
           }
+          <VitalityFacts locale={locale} tool={tool} />
           {tool.starHistory && <StarChart locale={locale} series={tool.starHistory} />}
         </dl>
         {

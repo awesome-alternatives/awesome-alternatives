@@ -1,5 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
+import { ACTIVE_DAYS, HISTORY_LIMIT } from "../../../../scripts/lib/contributors.ts";
 import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_FACTOR, SPIKE_THRESHOLD } from "../../../../scripts/lib/rules.ts";
 import type { Locale } from "../../i18n/index.ts";
 import { format, pathFor } from "../../i18n/index.ts";
@@ -41,9 +42,10 @@ const { fit, flag } = strings.islands;
       {m.refresh.runBefore} <a href={`${REPO}/blob/main/scripts/refresh.ts`}>{m.refresh.runLink}</a> {m.refresh.runAfter}
     </p>
     <ul class="explainer-list">
-      {m.refresh.reads.map((item) => <li>{item}</li>)}
+      {m.refresh.reads.map((item) => <li>{format(item, { days: ACTIVE_DAYS })}</li>)}
       <li>{m.refresh.maintainerFileBefore} <a href="#verified">{m.refresh.maintainerFileLink}</a></li>
     </ul>
+    <p id="activity">{format(m.refresh.activity, { days: ACTIVE_DAYS, commits: HISTORY_LIMIT })}</p>
     <p>{m.refresh.commit}</p>
     <p>
       {m.refresh.changesBefore} <a href={pathFor(locale, "/changes/")}>{m.refresh.changesLink}</a> {m.refresh.changesAfter}

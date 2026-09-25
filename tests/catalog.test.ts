@@ -283,4 +283,17 @@ describe("the generated catalog", () => {
     assert.equal(withSeries({ from: "2026-09-22", stars: [1.5] }), false);
     assert.equal(withSeries({ from: "2026-09-22", stars: Array.from({ length: 33 }, () => 1) }), false);
   });
+
+  it("accepts the contributor count and platforms the refresh writes, and nothing rawer", async () => {
+    const { validate, catalog } = await schema();
+    const [first] = catalog.tools;
+    const withActivity = (contributors: unknown, platforms: unknown) =>
+      validate({ ...catalog, tools: [{ ...first, contributors, platforms }] });
+    assert.ok(withActivity({ count: 12, capped: true }, [{ os: "linux", architectures: ["x86_64", "arm64"] }]), JSON.stringify(validate.errors));
+    assert.ok(withActivity(null, []), JSON.stringify(validate.errors));
+    assert.equal(withActivity({ count: -1, capped: false }, []), false);
+    assert.equal(withActivity({ count: 3, capped: false, emails: ["a@b.c"] }, []), false);
+    assert.equal(withActivity(null, ["ripgrep-x86_64-unknown-linux-musl.tar.gz"]), false);
+    assert.equal(withActivity(null, [{ os: "solaris", architectures: [] }]), false);
+  });
 });

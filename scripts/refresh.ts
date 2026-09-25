@@ -18,7 +18,7 @@ const gql = createGraphQL(process.env.GITHUB_TOKEN);
 const now = new Date();
 const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, now);
 
-const facts = await fetchRepositories(gql, gh, catalog.tools);
+const facts = await fetchRepositories(gql, gh, catalog.tools, now);
 const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool, facts.get(tool.slug) ?? null));
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
 const owners = await fetchOwners(gql, tools);

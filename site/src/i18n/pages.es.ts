@@ -26,7 +26,11 @@ export const pages: Pages = {
         "si el repositorio está archivado, y la fecha de su último push",
         "la última versión, o el último tag cuando no hay versión, y si está firmada",
         "las cinco últimas versiones publicadas, que se muestran en la página de la herramienta",
+        "los autores de los commits en la rama por defecto en los últimos {days} días, de los que solo se guarda el número",
+        "los nombres de los archivos adjuntos a la última versión, leídos para los sistemas operativos y arquitecturas que nombran",
       ],
+      activity:
+        "La página de la herramienta convierte esto en lo vivo que está un proyecto, nunca en una puntuación. Su edad se cuenta desde la creación del repositorio. El ritmo de versiones es la separación mediana entre sus últimas versiones estables, y aparece a partir de tres. Los colaboradores activos son los autores de commits distintos en la rama por defecto en los últimos {days} días: las cuentas cuyo nombre termina en [bot] quedan fuera, y un commit sin cuenta de GitHub vinculada cuenta por su email, que nunca se publica. Solo se leen los {commits} últimos commits, así que un proyecto más activo muestra un mínimo como 40+. Un flujo con squash merge atribuye cada pull request a un solo autor, aunque la escribieran varios, y para una herramienta que vive en un monorepo el número cubre todo el repositorio, y la página lo indica. Las plataformas solo aparecen cuando los nombres de archivo de la última versión las nombran, y no se adivina nada cuando no lo hacen, ni para una herramienta en un monorepo, cuya última versión puede ser la de otro paquete.",
       maintainerFileBefore: "el archivo de mantenedores descrito en",
       maintainerFileLink: "verificada",
       releaseBefore: "Entre dos pasadas nocturnas, una release publicada actualiza su herramienta en pocos minutos si el repositorio tiene instalada",

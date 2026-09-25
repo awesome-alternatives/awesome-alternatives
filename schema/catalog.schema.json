@@ -127,6 +127,8 @@
         "starHistory": { "$ref": "#/$defs/starHistory" },
         "release": { "oneOf": [{ "$ref": "#/$defs/release" }, { "type": "null" }] },
         "releases": { "type": "array", "items": { "$ref": "#/$defs/releaseEntry" } },
+        "contributors": { "oneOf": [{ "$ref": "#/$defs/contributors" }, { "type": "null" }] },
+        "platforms": { "type": "array", "items": { "$ref": "#/$defs/platform" } },
         "maintainerVerified": { "type": "boolean" },
         "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "terms": { "enum": ["open", "source-available", "open-core", "unknown"] },
@@ -212,6 +214,28 @@
         "url": { "type": "string", "minLength": 1 },
         "source": { "enum": ["release", "tag"] },
         "signed": { "type": "boolean" }
+      }
+    },
+    "contributors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "capped"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "capped": { "type": "boolean" }
+      }
+    },
+    "platform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["os", "architectures"],
+      "properties": {
+        "os": { "enum": ["linux", "macos", "windows", "freebsd", "openbsd", "netbsd", "android"] },
+        "architectures": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["x86_64", "arm64", "x86", "armv7", "arm", "riscv64", "ppc64le", "s390x", "universal"] }
+        }
       }
     },
     "releaseEntry": {

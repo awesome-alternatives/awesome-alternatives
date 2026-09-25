@@ -245,7 +245,9 @@ category: javascript-lint-format
 Two entries sharing a repository without distinct paths are rejected. For an entry with a `path`,
 the refresh reads `.awesome-alternatives` both at the repository root and in that directory, so each
 package can carry its own file. Stars, releases and the other facts are still those of the whole
-repository.
+repository, and so is the count of active contributors, which the tool page says it counts across the
+whole repository. Platforms are not read for such an entry, since the repository's latest release may
+belong to another package.
 
 ## Running the checks locally
 

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
+import { type CommitAuthor, HISTORY_PAGES, type HistoryPage } from "../scripts/lib/contributors.ts";
 import {
   fetchOwnerFacts,
   fetchRepositories,
@@ -29,7 +30,12 @@ interface RestFacts {
 
 const fixture = (name: string) => JSON.parse(readFileSync(new URL(`fixtures/${name}`, import.meta.url), "utf8"));
 const recorded: Recorded = fixture("graphql-repositories.json");
+for (const repository of Object.values(recorded.response.data)) {
+  if (repository?.defaultBranchRef) repository.defaultBranchRef.target ??= null;
+  if (repository?.latestRelease) repository.latestRelease.releaseAssets ??= { nodes: [] };
+}
 const rest: (RestFacts | null)[] = fixture("rest-facts.json");
+const NOW = new Date("2026-09-24T00:00:00Z");
 const slugs = ["deno", "gitea", "deno-std", "gone", "kafka", "fd", "ferrflow", "oxlint"];
 const tools = recorded.tools.map((t, i) => ({ ...t, slug: slugs[i], name: slugs[i], category: "c", file: "" }) as Tool);
 const node = (slug: string) => recorded.response.data[`r${slugs.indexOf(slug)}`] as GqlRepository;
@@ -143,7 +149,7 @@ describe("fetchRepositories", () => {
     const annotated = ["gitea", "kafka", "ferrflow"].map((slug) => mapRepository(node(slug)).annotatedTag as string);
     const verified = Object.fromEntries(annotated.map((oid, i) => [oid, i !== 1]));
     const asked: string[] = [];
-    const facts = await fetchRepositories(recordedGraphQL(), restTags(verified, asked), tools);
+    const facts = await fetchRepositories(recordedGraphQL(), restTags(verified, asked), tools, NOW);
 
     assert.equal(facts.get("gone"), null);
     assert.equal(facts.get("gitea")?.release?.signed, true);
@@ -173,7 +179,7 @@ describe("fetchRepositories", () => {
     const five = ["a", "b", "c", "d", "e"].map(
       (name) => ({ slug: name, name, repository: `https://github.com/acme/${name}`, category: "c", file: "" }) as Tool,
     );
-    const facts = await fetchRepositories(gql, restTags({}), five, 5);
+    const facts = await fetchRepositories(gql, restTags({}), five, NOW, 5);
     assert.deepEqual(
       five.map((t) => facts.get(t.slug)?.repo.fullName),
       ["acme/a", "acme/b", "acme/c", "acme/d", "acme/e"],
@@ -188,7 +194,118 @@ describe("fetchRepositories", () => {
       },
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
-    await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1)), /r0: nope/);
+    await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1), NOW), /r0: nope/);
+  });
+});
+
+describe("active contributors", () => {
+  const commit = (author: CommitAuthor) => ({ author });
+  const person = (login: string) => commit({ name: login, email: `${login}@example.com`, user: { login } });
+  const unlinked = (email: string) => commit({ name: "Someone", email, user: null });
+  const bot = commit({ name: "renovate[bot]", email: "29139614+renovate[bot]@users.noreply.github.com", user: null });
+  const page = (nodes: HistoryPage["nodes"], cursor: string | null): HistoryPage => ({
+    pageInfo: { hasNextPage: cursor !== null, endCursor: cursor },
+    nodes,
+  });
+
+  function paging(next: (asked: number) => HistoryPage | null): GraphQL & { variables: Record<string, string>[] } {
+    const variables: Record<string, string>[] = [];
+    let asked = 0;
+    return {
+      variables,
+      async query<T>(query: string, vars: Record<string, string>) {
+        if (query.includes("...Facts")) {
+          const repository = { ...node("fd"), defaultBranchRef: { name: "master", target: { oid: "abc123" } } };
+          return { data: { r0: repository } as T, errors: [] };
+        }
+        variables.push(vars);
+        const history = next(asked++);
+        return { data: { r0: history ? { object: { history } } : null } as T, errors: [] };
+      },
+      spent: () => ({ queries: variables.length, cost: 0, remaining: null }),
+    };
+  }
+
+  it("counts each author once across pages, leaving bots out and keeping unlinked authors by email", async () => {
+    const gql = paging((asked) =>
+      asked === 0
+        ? page([person("alice"), bot, person("bob"), unlinked("Carol@Example.org")], "c1")
+        : page([person("Alice"), unlinked("carol@example.org"), unlinked("dave@example.org")], null),
+    );
+    const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
+    assert.deepEqual(facts.get("fd")?.contributors, { count: 4, capped: false });
+    assert.deepEqual(
+      gql.variables.map((v) => ({ head: v.h0, after: v.a0, since: v.since })),
+      [
+        { head: "abc123", after: undefined, since: "2026-06-26T00:00:00.000Z" },
+        { head: "abc123", after: "c1", since: "2026-06-26T00:00:00.000Z" },
+      ],
+    );
+  });
+
+  it("stops after the page cap and publishes the count as a lower bound", async () => {
+    const gql = paging((asked) => page([person(`p${asked}`)], `c${asked}`));
+    const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
+    assert.deepEqual(facts.get("fd")?.contributors, { count: HISTORY_PAGES, capped: true });
+    assert.equal(gql.variables.length, HISTORY_PAGES);
+  });
+
+  it("reads a later page GitHub did not return as a lower bound rather than a complete count", async () => {
+    const gql = paging((asked) => (asked === 0 ? page([person("alice")], "c1") : null));
+    const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
+    assert.deepEqual(facts.get("fd")?.contributors, { count: 1, capped: true });
+  });
+
+  it("has no count when not even the first page came back, and zero when nobody committed", async () => {
+    const lost = await fetchRepositories(paging(() => null), restTags({}), tools.slice(5, 6), NOW);
+    assert.equal(lost.get("fd")?.contributors, null);
+    const quiet = await fetchRepositories(paging(() => page([], null)), restTags({}), tools.slice(5, 6), NOW);
+    assert.deepEqual(quiet.get("fd")?.contributors, { count: 0, capped: false });
+  });
+
+  it("walks no history for a default branch that points at no commit", async () => {
+    const gql = recordedGraphQL();
+    const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
+    assert.equal(facts.get("fd")?.contributors, null);
+    assert.ok(!gql.asked.some((query) => query.includes("history(")));
+  });
+
+  it("keeps commit history out of the facts query, which GitHub times out on when it carries both", () => {
+    assert.ok(!repositoryQuery(tools).query.includes("history("));
+  });
+});
+
+describe("platforms", () => {
+  it("reads operating systems and architectures from the latest release's asset names", () => {
+    const latest = node("fd").latestRelease;
+    assert.ok(latest);
+    const names = ["fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz", "fd-v10.3.0-aarch64-apple-darwin.tar.gz", "checksums.txt"];
+    const released = { ...node("fd"), latestRelease: { ...latest, releaseAssets: { nodes: names.map((name) => ({ name })) } } };
+    assert.deepEqual(mapRepository(released).platforms, [
+      { os: "linux", architectures: ["x86_64"] },
+      { os: "macos", architectures: ["arm64"] },
+    ]);
+  });
+
+  it("reads no platform for a monorepo package, whose repository's latest release may be another package's", async () => {
+    const latest = node("oxlint").latestRelease;
+    assert.ok(latest);
+    const assets = { nodes: [{ name: "oxfmt-x86_64-unknown-linux-gnu.tar.gz" }] };
+    const gql: GraphQL = {
+      async query<T>() {
+        const r0 = { ...node("oxlint"), latestRelease: { ...latest, releaseAssets: assets } };
+        return { data: { r0, r1: r0 } as T, errors: [] };
+      },
+      spent: () => ({ queries: 0, cost: 0, remaining: null }),
+    };
+    const { path: _, ...oxlint } = tools[7] as Tool;
+    const facts = await fetchRepositories(gql, restTags({}), [tools[7] as Tool, { ...oxlint, slug: "oxc" }], NOW);
+    assert.deepEqual(facts.get("oxlint")?.platforms, []);
+    assert.deepEqual(facts.get("oxc")?.platforms, [{ os: "linux", architectures: ["x86_64"] }]);
+  });
+
+  it("reads no platform from a repository that only has tags", () => {
+    assert.deepEqual(mapRepository(node("kafka")).platforms, []);
   });
 });
 

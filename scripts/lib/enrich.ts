@@ -66,6 +66,8 @@ export async function createEnricher(
         starHistory: series,
         release: facts.release,
         releases: facts.releases,
+        contributors: facts.contributors,
+        platforms: facts.platforms,
         maintainerVerified: await isMaintainerVerified(tool.slug, facts.claim, facts.repo.fullName, installations),
         flags,
         terms: termsOf(tool.terms, facts.repo.license),

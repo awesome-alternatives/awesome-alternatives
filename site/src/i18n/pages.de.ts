@@ -27,7 +27,11 @@ export const pages: Pages = {
         "ob das Repository archiviert ist, und das Datum seines letzten Push",
         "das neueste Release, oder den neuesten Tag, wenn es kein Release gibt, und ob es signiert ist",
         "die letzten fünf veröffentlichten Releases, die auf der Tool-Seite stehen",
+        "die Autoren der Commits auf dem Standard-Branch in den letzten {days} Tagen, von denen nur die Anzahl bleibt",
+        "die Namen der Dateien am neuesten Release, gelesen auf die Betriebssysteme und Architekturen hin, die sie nennen",
       ],
+      activity:
+        "Die Tool-Seite macht daraus, wie lebendig ein Projekt ist, nie eine Bewertung. Sein Alter zählt ab der Erstellung des Repositorys. Der Release-Rhythmus ist der mittlere Abstand (Median) zwischen den letzten stabilen Releases und erscheint ab drei. Aktive Mitwirkende sind die verschiedenen Commit-Autoren auf dem Standard-Branch in den letzten {days} Tagen: Konten, deren Name auf [bot] endet, zählen nicht, und ein Commit ohne verknüpftes GitHub-Konto zählt über seine E-Mail, die nie veröffentlicht wird. Gelesen werden nur die letzten {commits} Commits, ein aktiveres Projekt zeigt daher eine Untergrenze wie 40+. Ein Squash-Merge-Workflow rechnet jeden Pull Request einem einzigen Autor zu, auch wenn mehrere daran geschrieben haben, und bei einem Tool in einem Monorepo gilt die Zahl für das ganze Repository, was die Seite dazusagt. Plattformen erscheinen nur, wenn die Dateinamen des neuesten Releases sie nennen, und geraten wird nichts, auch nicht bei einem Tool in einem Monorepo, dessen neuestes Release zu einem anderen Paket gehören kann.",
       maintainerFileBefore: "die Maintainer-Datei, beschrieben unter",
       maintainerFileLink: "Von den Maintainern bestätigt",
       releaseBefore: "Zwischen zwei nächtlichen Läufen aktualisiert ein veröffentlichtes Release sein Tool innerhalb weniger Minuten, wenn im Repository",

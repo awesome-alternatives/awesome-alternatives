@@ -1771,6 +1771,15 @@ h1 .mark-archived {
   color: var(--text);
 }
 
+.about-facts .fact-note {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
 .freshness {
   display: grid;
   gap: 4px;
