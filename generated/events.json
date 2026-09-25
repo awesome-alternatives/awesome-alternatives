@@ -534,7 +534,6 @@
   {"type":"added","slug":"zoxide","at":"2026-09-24T18:14:14.000Z","commit":"d4495f0a1fe7328624ceb4ee5aaeef24f34c4054"},
   {"type":"added","slug":"zsh","at":"2026-09-24T18:14:14.000Z","commit":"d4495f0a1fe7328624ceb4ee5aaeef24f34c4054"},
   {"type":"added","slug":"zustand","at":"2026-09-24T18:14:14.000Z","commit":"d4495f0a1fe7328624ceb4ee5aaeef24f34c4054"},
-  {"type":"released","slug":"lightdash","at":"2026-09-24T18:17:27.000Z","commit":"72ef56b2486099a27b28c8d79c440f57943c07e1","from":"2.327.2","to":"2.328.0"},
   {"type":"released","slug":"activepieces","at":"2026-09-25T07:15:48.000Z","commit":"cbbc3ad356bf2901b21395b9036c051f93833371","from":"0.91.2","to":"0.91.3"},
   {"type":"added","slug":"ajv","at":"2026-09-25T07:15:48.000Z","commit":"cbbc3ad356bf2901b21395b9036c051f93833371"},
   {"type":"added","slug":"argo-workflows","at":"2026-09-25T07:15:48.000Z","commit":"cbbc3ad356bf2901b21395b9036c051f93833371"},
@@ -827,9 +826,11 @@
   {"type":"added","slug":"stump","at":"2026-09-25T14:53:04.969Z","commit":"1bc543cf52ad366f0cdcc76b73e362067f72e57e"},
   {"type":"added","slug":"sure","at":"2026-09-25T14:53:04.969Z","commit":"1bc543cf52ad366f0cdcc76b73e362067f72e57e"},
   {"type":"added","slug":"tandoor-recipes","at":"2026-09-25T14:53:04.969Z","commit":"1bc543cf52ad366f0cdcc76b73e362067f72e57e"},
-  {"type":"released","slug":"ezbookkeeping","at":"2026-09-25T16:18:44.806Z","commit":null,"from":"v2.0.0","to":"v2.0.1"},
-  {"type":"released","slug":"firefly-iii","at":"2026-09-25T16:18:44.806Z","commit":null,"from":"v6.7.3","to":"v6.7.4"},
-  {"type":"unarchived","slug":"huly","at":"2026-09-25T16:18:44.806Z","commit":null},
-  {"type":"released","slug":"lightdash","at":"2026-09-25T16:18:44.806Z","commit":null,"from":"2.344.1","to":"2.344.5"},
-  {"type":"released","slug":"openhands","at":"2026-09-25T16:18:44.806Z","commit":null,"from":"v1.23.0","to":"v1.24.0"}
+  {"type":"released","slug":"ezbookkeeping","at":"2026-09-25T16:18:44.806Z","commit":"919c841421b75048637cf41aaf0cdbf79bd37bb4","from":"v2.0.0","to":"v2.0.1"},
+  {"type":"released","slug":"firefly-iii","at":"2026-09-25T16:18:44.806Z","commit":"919c841421b75048637cf41aaf0cdbf79bd37bb4","from":"v6.7.3","to":"v6.7.4"},
+  {"type":"unarchived","slug":"huly","at":"2026-09-25T16:18:44.806Z","commit":"919c841421b75048637cf41aaf0cdbf79bd37bb4"},
+  {"type":"released","slug":"lightdash","at":"2026-09-25T16:18:44.806Z","commit":"919c841421b75048637cf41aaf0cdbf79bd37bb4","from":"2.344.1","to":"2.344.5"},
+  {"type":"released","slug":"openhands","at":"2026-09-25T16:18:44.806Z","commit":"919c841421b75048637cf41aaf0cdbf79bd37bb4","from":"v1.23.0","to":"v1.24.0"},
+  {"type":"released","slug":"lfsx","at":"2026-09-25T16:48:49.912Z","commit":null,"from":"site@2026.9.18","to":"v1.18.1"},
+  {"type":"released","slug":"lightdash","at":"2026-09-25T16:48:49.912Z","commit":null,"from":"2.344.5","to":"2.344.6"}
 ]
