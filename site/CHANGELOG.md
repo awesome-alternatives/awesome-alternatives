@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.76.0] - 2026-09-25
+
+### Features
+
+- feat(site): say whether an owner is an organisation or a person (#231)
+
+### Refactoring
+
+- refactor: finish the September cleanup (#233)
+
 ## [0.75.1] - 2026-09-25
 
 ### Bug Fixes
