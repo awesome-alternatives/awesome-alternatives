@@ -1,0 +1,7 @@
+name: yq
+repository: https://github.com/mikefarah/yq
+category: json-processor
+replaces:
+  - tool: jq
+    fit: partial
+    note: jq-like expressions that also read and write YAML, XML, TOML and CSV, without the full jq language.

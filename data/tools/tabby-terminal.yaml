@@ -1,0 +1,10 @@
+name: Tabby
+repository: https://github.com/Eugeny/tabby
+category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: full
+    note: Cross-platform, with tabs, splits and a built-in SSH and serial client.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.

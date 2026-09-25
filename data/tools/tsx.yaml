@@ -1,0 +1,7 @@
+name: tsx
+repository: https://github.com/privatenumber/tsx
+category: javascript-runtime
+replaces:
+  - tool: ts-node
+    fit: full
+    note: Runs TypeScript on Node.js through esbuild, in ESM and CommonJS, without type checking.

@@ -1,0 +1,13 @@
+name: SGLang
+repository: https://github.com/sgl-project/sglang
+category: llm-runtime
+replaces:
+  - tool: vllm
+    fit: full
+    note: GPU serving engine for open-weight models behind an OpenAI-compatible API.
+  - tool: chatgpt
+    fit: partial
+    note: Serves open-weight models behind an OpenAI-compatible API, tuned for GPU throughput.
+  - tool: claude
+    fit: partial
+    note: Serves open-weight models behind an OpenAI-compatible API.

@@ -1,0 +1,7 @@
+name: MicroK8s
+repository: https://github.com/canonical/microk8s
+category: local-kubernetes
+replaces:
+  - tool: minikube
+    fit: full
+    note: A single-package Kubernetes with add-ons enabled by one command, native on Linux and in a VM elsewhere.

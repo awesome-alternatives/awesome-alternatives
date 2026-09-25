@@ -1,0 +1,7 @@
+name: Windows Terminal
+repository: https://github.com/microsoft/terminal
+category: terminal-emulator
+replaces:
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI, on Windows only.

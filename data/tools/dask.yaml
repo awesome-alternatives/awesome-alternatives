@@ -1,0 +1,7 @@
+name: Dask
+repository: https://github.com/dask/dask
+category: dataframe
+replaces:
+  - tool: pandas
+    fit: partial
+    note: pandas-like DataFrames split into partitions, processed in parallel or on a cluster, with part of the pandas API.

@@ -1,0 +1,10 @@
+name: GitHub Desktop
+repository: https://github.com/desktop/desktop
+category: git-client
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: Commits, branches and pull requests, centred on GitHub, without a commit graph.
+  - tool: sourcetree
+    fit: partial
+    note: Everyday commits and branches in a desktop app, centred on GitHub.

@@ -1,0 +1,8 @@
+name: GitButler
+repository: https://github.com/gitbutlerapp/gitbutler
+category: git-client
+terms: source-available
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: A desktop client built around several branches applied to the working tree at once.
