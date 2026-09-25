@@ -1,0 +1,10 @@
+name: Chatbox
+repository: https://github.com/chatboxai/chatbox
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop app in front of OpenAI, Anthropic, Google or a local model through Ollama. The model comes from elsewhere.
+  - tool: claude
+    fit: partial
+    note: Desktop app in front of OpenAI, Anthropic, Google or a local model through Ollama. The model comes from elsewhere.

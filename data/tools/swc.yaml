@@ -1,0 +1,7 @@
+name: SWC
+repository: https://github.com/swc-project/swc
+category: javascript-bundler
+replaces:
+  - tool: babel
+    fit: full
+    note: A Rust compiler for TypeScript and JSX, configured in .swcrc, with Wasm plugins instead of Babel plugins.

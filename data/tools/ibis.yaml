@@ -1,0 +1,7 @@
+name: Ibis
+repository: https://github.com/ibis-project/ibis
+category: dataframe
+replaces:
+  - tool: pandas
+    fit: partial
+    note: A dataframe API that compiles to SQL and runs on DuckDB, Polars, PostgreSQL, BigQuery and other backends.

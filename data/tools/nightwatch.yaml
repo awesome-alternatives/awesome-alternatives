@@ -1,0 +1,7 @@
+name: Nightwatch
+repository: https://github.com/nightwatchjs/nightwatch
+category: browser-testing
+replaces:
+  - tool: cypress
+    fit: full
+    note: End-to-end tests in JavaScript or TypeScript over WebDriver, in Chrome, Firefox, Safari and Edge.

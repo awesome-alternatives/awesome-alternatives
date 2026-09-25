@@ -1,0 +1,8 @@
+name: icdiff
+repository: https://github.com/jeffkaufman/icdiff
+category: git-diff-pager
+terms: open
+replaces:
+  - tool: diff-so-fancy
+    fit: partial
+    note: Side-by-side coloured diff, used through git difftool or git icdiff rather than as a pager.

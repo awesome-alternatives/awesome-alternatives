@@ -1,0 +1,7 @@
+name: z.lua
+repository: https://github.com/skywind3000/z.lua
+category: directory-jumper
+replaces:
+  - tool: z
+    fit: full
+    note: Same frecency model, written in Lua, with an interactive selection mode and fzf support.

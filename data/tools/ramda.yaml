@@ -1,0 +1,7 @@
+name: Ramda
+repository: https://github.com/ramda/ramda
+category: javascript-utility
+replaces:
+  - tool: lodash
+    fit: partial
+    note: Auto-curried, data-last functions for a functional style, with a different API.

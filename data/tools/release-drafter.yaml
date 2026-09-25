@@ -1,0 +1,7 @@
+name: Release Drafter
+repository: https://github.com/release-drafter/release-drafter
+category: changelog
+replaces:
+  - tool: conventional-changelog
+    fit: partial
+    note: Drafts GitHub release notes from merged pull requests and their labels, without a CHANGELOG file.

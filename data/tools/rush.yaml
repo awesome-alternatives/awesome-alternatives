@@ -1,0 +1,9 @@
+name: Rush
+repository: https://github.com/microsoft/rushstack
+path: apps/rush
+category: monorepo-tool
+terms: open
+replaces:
+  - tool: lerna
+    fit: full
+    note: Installs, builds, versions and publishes the projects of a large repository, with change files.

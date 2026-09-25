@@ -1,0 +1,8 @@
+name: hapi
+repository: https://github.com/hapijs/hapi
+category: node-web-framework
+terms: open
+replaces:
+  - tool: express
+    fit: full
+    note: Configuration-centric routes and a plugin system instead of middleware chains, with validation built in.

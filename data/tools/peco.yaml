@@ -1,0 +1,7 @@
+name: peco
+repository: https://github.com/peco/peco
+category: fuzzy-finder
+replaces:
+  - tool: fzf
+    fit: partial
+    note: Filters piped input interactively, without a preview window or shell integrations.

@@ -1,0 +1,8 @@
+name: basedpyright
+repository: https://github.com/DetachHead/basedpyright
+category: python-type-checker
+terms: open
+replaces:
+  - tool: pyright
+    fit: full
+    note: A fork that reads Pyright's configuration, with extra rules, baselines and Pylance features in the open language server.

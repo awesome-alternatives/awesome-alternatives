@@ -1,0 +1,7 @@
+name: AdonisJS
+repository: https://github.com/adonisjs/core
+category: node-web-framework
+replaces:
+  - tool: nestjs
+    fit: full
+    note: A TypeScript MVC framework with its own ORM, auth and validation built in.

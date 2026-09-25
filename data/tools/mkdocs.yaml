@@ -1,0 +1,7 @@
+name: MkDocs
+repository: https://github.com/mkdocs/mkdocs
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation site built from Markdown and a YAML config in your repository.

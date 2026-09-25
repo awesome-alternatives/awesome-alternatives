@@ -1,0 +1,10 @@
+name: Pelican
+repository: https://github.com/getpelican/pelican
+category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: Written in Python, with Jinja templates and Markdown or reStructuredText content.
+  - tool: hexo
+    fit: full
+    note: Written in Python, with Jinja templates and Markdown or reStructuredText content.

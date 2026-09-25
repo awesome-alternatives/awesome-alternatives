@@ -1,0 +1,8 @@
+name: tmate
+repository: https://github.com/tmate-io/tmate
+category: terminal-multiplexer
+terms: open
+replaces:
+  - tool: tmux
+    fit: partial
+    note: A tmux fork for sharing a terminal session with others over SSH or the web.

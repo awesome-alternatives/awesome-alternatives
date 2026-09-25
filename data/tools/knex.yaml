@@ -1,0 +1,10 @@
+name: Knex
+repository: https://github.com/knex/knex
+category: typescript-orm
+replaces:
+  - tool: sequelize
+    fit: partial
+    note: A SQL query builder with migrations and seeds rather than an ORM, with no models to define.
+  - tool: typeorm
+    fit: partial
+    note: A SQL query builder with migrations and seeds rather than an ORM, with no entities to map.

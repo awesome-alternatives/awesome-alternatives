@@ -1,0 +1,7 @@
+name: Modin
+repository: https://github.com/modin-project/modin
+category: dataframe
+replaces:
+  - tool: pandas
+    fit: drop-in
+    note: Import modin.pandas instead and the same code runs on every core through Ray or Dask. Unsupported calls fall back to pandas.

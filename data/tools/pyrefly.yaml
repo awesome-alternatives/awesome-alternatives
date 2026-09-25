@@ -1,0 +1,10 @@
+name: Pyrefly
+repository: https://github.com/facebook/pyrefly
+category: python-type-checker
+replaces:
+  - tool: mypy
+    fit: full
+    note: Written in Rust, with a language server for editors.
+  - tool: pyright
+    fit: full
+    note: Type checker and language server written in Rust.

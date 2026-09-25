@@ -1,0 +1,7 @@
+name: cuDF
+repository: https://github.com/NVIDIA/cudf
+category: dataframe
+replaces:
+  - tool: pandas
+    fit: drop-in
+    note: cudf.pandas runs pandas code unchanged on an NVIDIA GPU, falling back to the CPU where needed.

@@ -1,0 +1,7 @@
+name: SuperAgent
+repository: https://github.com/forwardemail/superagent
+category: javascript-http-client
+replaces:
+  - tool: request
+    fit: full
+    note: Chainable, promise-based API for Node.js and browsers, extended with plugins.

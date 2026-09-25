@@ -1,0 +1,8 @@
+name: SillyTavern
+repository: https://github.com/SillyTavern/SillyTavern
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A self-hosted chat front end aimed at character roleplay, in front of hosted APIs or local models.
+deploy: [container, compose]

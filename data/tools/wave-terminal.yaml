@@ -1,0 +1,10 @@
+name: Wave Terminal
+repository: https://github.com/wavetermdev/waveterm
+category: terminal-emulator
+replaces:
+  - tool: warp
+    fit: full
+    note: Built-in AI with your choice of model, plus file previews, a web view and an editor in blocks beside the shell.
+  - tool: iterm2
+    fit: full
+    note: Cross-platform, with splits, SSH connections and blocks for files and web pages.
