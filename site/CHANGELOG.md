@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.63.0] - 2026-09-25
+
+### Features
+
+- feat(site): rank trending tools by growth and show the boost as a compact mark with its detail on hover (#202)
+
 ## [0.62.0] - 2026-09-25
 
 ### Features
