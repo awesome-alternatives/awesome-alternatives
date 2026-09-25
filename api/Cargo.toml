@@ -19,8 +19,9 @@ reqwest = { version = "0.12", default-features = false, features = ["json", "rus
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = "0.11.0"
+sqlx = { version = "0.9", default-features = false, features = ["derive", "postgres", "runtime-tokio", "time", "tls-rustls-ring-webpki"] }
 thiserror = "2"
-time = { version = "0.3.55", features = ["serde", "parsing"] }
+time = { version = "0.3.55", features = ["serde-human-readable"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal", "sync", "time", "fs"] }
 tower = { version = "0.5", features = ["limit", "load-shed", "timeout", "util"] }
 tower-http = { version = "0.6", features = ["cors", "trace"] }
@@ -32,4 +33,5 @@ url = "2.5.8"
 http-body-util = "0.1"
 rand = "0.8"
 rsa = "0.9"
+time = { version = "0.3.55", features = ["macros"] }
 tokio = { version = "1", features = ["io-util"] }

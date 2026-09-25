@@ -8,6 +8,7 @@ mod embedding;
 mod filters;
 #[cfg(test)]
 mod fixtures;
+mod history;
 mod interpret;
 mod jev;
 mod jev_budget;
@@ -36,6 +37,7 @@ use tracing_subscriber::EnvFilter;
 use crate::config::Config;
 use crate::details::Details;
 use crate::embedding::{Embedder, LocalModel};
+use crate::history::{History, Postgres};
 use crate::jev::JevClient;
 use crate::jev_budget::MeteredJev;
 use crate::refresh::Refresh;
@@ -103,6 +105,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     );
     let embedder = load_embedder().await;
     let shared = Arc::new(cache::open(config.valkey).await);
+    let history = match config.database_url.as_deref() {
+        Some(url) => History::new(Box::new(Postgres::lazy(url)?), Arc::clone(&shared)),
+        None => {
+            tracing::warn!("DATABASE_URL is not set: GET /v1/tools/{{slug}}/history answers 503");
+            History::disabled()
+        }
+    };
     let loaded = Loaded::build(catalog, embedder.clone()).await;
     let state = AppState::new(
         loaded,
@@ -112,7 +121,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         RateLimiter::keyed(Quota::per_minute(config.details_per_minute)),
         config.trust_proxy,
         refresh,
-    );
+    )
+    .with_history(history);
     tokio::spawn(forget_idle_clients(state.clone()));
     tokio::spawn(reload_catalog(
         state.clone(),

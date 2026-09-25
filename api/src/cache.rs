@@ -11,6 +11,7 @@ const NAMESPACE: &str = "aa";
 const VERSION: &str = "v1";
 pub const DETAILS_TTL: Duration = Duration::from_secs(12 * 3600);
 pub const SEARCH_TTL: Duration = Duration::from_secs(15 * 60);
+pub const HISTORY_TTL: Duration = Duration::from_secs(3600);
 pub const TIMEOUT: Duration = Duration::from_millis(200);
 const CONNECT_TIMEOUT: Duration = Duration::from_secs(5);
 const QUIET_FOR: Duration = Duration::from_secs(300);
@@ -68,7 +69,7 @@ impl Cause {
     }
 }
 
-pub type Answer<'a, T> = Pin<Box<dyn Future<Output = Result<T, Error>> + Send + 'a>>;
+pub type Answer<'a, T, E = Error> = Pin<Box<dyn Future<Output = Result<T, E>> + Send + 'a>>;
 
 pub trait Store: Send + Sync {
     fn get<'a>(&'a self, key: &'a str) -> Answer<'a, Option<Vec<u8>>>;
@@ -79,6 +80,7 @@ pub trait Store: Send + Sync {
 pub struct Ttl {
     pub details: Duration,
     pub search: Duration,
+    pub history: Duration,
 }
 
 impl Default for Ttl {
@@ -86,6 +88,7 @@ impl Default for Ttl {
         Self {
             details: DETAILS_TTL,
             search: SEARCH_TTL,
+            history: HISTORY_TTL,
         }
     }
 }
@@ -228,7 +231,7 @@ impl Complaints {
 pub async fn open(settings: Option<Settings>) -> Shared {
     let Some(settings) = settings else {
         tracing::info!(
-            "VALKEY_URL is not set: READMEs, security reports and searches are cached in this process only"
+            "VALKEY_URL is not set: READMEs, security reports and searches are cached in this process only, and tool history is not cached"
         );
         return Shared::disabled();
     };
@@ -237,6 +240,7 @@ pub async fn open(settings: Option<Settings>) -> Shared {
             tracing::info!(
                 details_ttl = settings.ttl.details.as_secs(),
                 search_ttl = settings.ttl.search.as_secs(),
+                history_ttl = settings.ttl.history.as_secs(),
                 "shared cache connected"
             );
             Shared::new(Box::new(store), settings.timeout, settings.ttl)

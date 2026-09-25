@@ -1,13 +1,16 @@
 use std::net::SocketAddr;
 
-use axum::extract::{ConnectInfo, Path, Request, State};
+use axum::extract::rejection::QueryRejection;
+use axum::extract::{ConnectInfo, Path, Query, Request, State};
 use axum::middleware::{self, Next};
 use axum::response::Response;
 use axum::routing::get;
 use axum::{Json, Router};
 use governor::clock::Clock;
+use serde::Deserialize;
 
 use crate::details::{Readme, Security};
+use crate::history::{self, Days, Series};
 use crate::peer::client_ip;
 use crate::routes::ApiError;
 use crate::state::AppState;
@@ -16,6 +19,7 @@ pub fn routes(state: AppState) -> Router<AppState> {
     Router::new()
         .route("/v1/tools/{slug}/readme", get(readme))
         .route("/v1/tools/{slug}/security", get(security))
+        .route("/v1/tools/{slug}/history", get(history))
         .route_layer(middleware::from_fn_with_state(state, throttle))
 }
 
@@ -72,6 +76,40 @@ async fn security(
         .map_err(|error| {
             tracing::warn!(%error, slug, "security report unavailable");
             ApiError::Upstream
+        })
+}
+
+#[derive(Deserialize)]
+struct Span {
+    days: Option<u32>,
+}
+
+impl Span {
+    fn days(&self) -> Result<Days, ApiError> {
+        self.days
+            .map_or(Some(Days::default()), Days::new)
+            .ok_or(ApiError::InvalidDays)
+    }
+}
+
+async fn history(
+    State(state): State<AppState>,
+    Path(slug): Path<String>,
+    span: Result<Query<Span>, QueryRejection>,
+) -> Result<Json<Series>, ApiError> {
+    full_name(&state, &slug)?;
+    let days = span.map_err(|_| ApiError::InvalidDays)?.days()?;
+    state
+        .history
+        .series(&slug, days)
+        .await
+        .map(Json)
+        .map_err(|error| match error {
+            history::Error::Unconfigured => ApiError::HistoryUnconfigured,
+            history::Error::Database(error) => {
+                tracing::warn!(%error, slug, "history unavailable");
+                ApiError::HistoryUnavailable
+            }
         })
 }
 

@@ -12,6 +12,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::catalog::Tool;
 use crate::filters::{Filters, NearMiss};
+use crate::history::MAX_DAYS;
 use crate::limits::Limits;
 use crate::peer::client_ip;
 use crate::qualifiers::Unchecked;
@@ -67,6 +68,12 @@ pub enum ApiError {
     UnknownTool,
     #[error("GitHub or OpenSSF did not answer, try again later")]
     Upstream,
+    #[error("days must be a whole number from 1 to {MAX_DAYS}")]
+    InvalidDays,
+    #[error("tool history is not configured on this server")]
+    HistoryUnconfigured,
+    #[error("the history database did not answer, try again later")]
+    HistoryUnavailable,
 }
 
 fn retry_after_secs(wait: Duration) -> u64 {
@@ -76,12 +83,15 @@ fn retry_after_secs(wait: Duration) -> u64 {
 impl IntoResponse for ApiError {
     fn into_response(self) -> Response {
         let (status, retry_after) = match self {
-            Self::EmptyQuery | Self::QueryTooLong => (StatusCode::BAD_REQUEST, None),
+            Self::EmptyQuery | Self::QueryTooLong | Self::InvalidDays => {
+                (StatusCode::BAD_REQUEST, None)
+            }
             Self::RateLimited(wait) => {
                 (StatusCode::TOO_MANY_REQUESTS, Some(retry_after_secs(wait)))
             }
             Self::UnknownTool => (StatusCode::NOT_FOUND, None),
-            Self::Upstream => (StatusCode::BAD_GATEWAY, None),
+            Self::Upstream | Self::HistoryUnavailable => (StatusCode::BAD_GATEWAY, None),
+            Self::HistoryUnconfigured => (StatusCode::SERVICE_UNAVAILABLE, None),
         };
         let mut response = (
             status,

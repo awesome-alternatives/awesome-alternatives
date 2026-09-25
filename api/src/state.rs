@@ -8,6 +8,7 @@ use serde::Serialize;
 use crate::catalog::Catalog;
 use crate::details::Details;
 use crate::embedding::Embedder;
+use crate::history::History;
 use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::semantic::Index;
@@ -106,6 +107,7 @@ pub struct AppState {
     loaded: Arc<RwLock<Arc<Loaded>>>,
     pub search: Arc<Search>,
     pub details: Arc<Details>,
+    pub history: Arc<History>,
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub details_limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub trust_proxy: bool,
@@ -127,11 +129,19 @@ impl AppState {
             loaded: Arc::new(RwLock::new(Arc::new(loaded))),
             search: Arc::new(search),
             details: Arc::new(details),
+            history: Arc::new(History::disabled()),
             limiter: Arc::new(limiter),
             details_limiter: Arc::new(details_limiter),
             trust_proxy,
             activity: Activity::default(),
             refresh: Arc::new(refresh),
+        }
+    }
+
+    pub fn with_history(self, history: History) -> Self {
+        Self {
+            history: Arc::new(history),
+            ..self
         }
     }
 
