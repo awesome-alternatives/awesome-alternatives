@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.80.0] - 2026-09-26
+
+### Features
+
+- feat(site): send contact messages from the contact page (#242)
+
 ## [0.79.1] - 2026-09-26
 
 ### Bug Fixes
