@@ -1,3 +1,5 @@
+export const CONTACT_EMAIL = "contact@ferrlabs.com";
+
 export const publisher = {
   name: "TODO: publisher full name",
   address: "TODO: publisher postal address, or the host's details if the publisher stays anonymous under LCEN art. 6 III 2",

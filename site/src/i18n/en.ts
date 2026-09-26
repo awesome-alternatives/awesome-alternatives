@@ -33,6 +33,7 @@ export const en = {
       howItWorks: "How it works",
       rss: "RSS feed",
       changes: "What changed",
+      contact: "Contact",
       legalNotice: "Legal notice",
       privacy: "Privacy",
       github: "GitHub ↗",
