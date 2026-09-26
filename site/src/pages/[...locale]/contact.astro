@@ -4,6 +4,7 @@ import type { Locale } from "../../i18n/index.ts";
 import { pathFor } from "../../i18n/index.ts";
 import { localePaths, t } from "../../i18n/paths.ts";
 import Base from "../../layouts/Base.astro";
+import { CONTACT_KINDS, CONTACT_LIMITS, contactLocale } from "../../lib/contact.ts";
 import { CONTACT_EMAIL } from "../../lib/legal.ts";
 import { NEW_TOOL_URL, REPO, SUGGEST_TOOL_URL } from "../../lib/repo.ts";
 
@@ -15,6 +16,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const m = t(locale).pages.contact;
+const f = m.form;
 const mail = `mailto:${CONTACT_EMAIL}`;
 ---
 
@@ -64,5 +66,107 @@ const mail = `mailto:${CONTACT_EMAIL}`;
     <p>
       {m.other.before} <a href={mail}>{CONTACT_EMAIL}</a>{m.other.after}
     </p>
+    <form
+      class="contact-form"
+      method="post"
+      hidden
+      data-contact
+      data-incomplete={f.incomplete}
+      data-invalid={f.invalid}
+      data-too-many={f.tooMany}
+      data-failed={f.failed}
+    >
+      <input type="hidden" name="locale" value={contactLocale(locale)} />
+      <label class="contact-field">
+        <span>{f.kind}</span>
+        <select name="kind">
+          {CONTACT_KINDS.map((kind) => <option value={kind}>{f.kinds[kind]}</option>)}
+        </select>
+      </label>
+      <label class="contact-field">
+        <span>{f.email}</span>
+        <input type="email" name="email" required maxlength={CONTACT_LIMITS.email} autocomplete="email" />
+      </label>
+      <label class="contact-field">
+        <span>{f.name} <small>({f.optional})</small></span>
+        <input type="text" name="name" maxlength={CONTACT_LIMITS.name} autocomplete="name" />
+      </label>
+      <label class="contact-field">
+        <span>{f.subject}</span>
+        <input type="text" name="subject" required maxlength={CONTACT_LIMITS.subject} />
+      </label>
+      <label class="contact-field">
+        <span>{f.message}</span>
+        <textarea name="message" required rows="8" maxlength={CONTACT_LIMITS.message}></textarea>
+      </label>
+      <div class="visually-hidden" aria-hidden="true">
+        <label>
+          {f.honeypot}
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </label>
+      </div>
+      <p class="contact-error" role="alert" data-contact-error></p>
+      <button type="submit">{f.submit}</button>
+    </form>
+    <div class="contact-sent" role="status" tabindex="-1" hidden data-contact-sent>
+      <h3>{f.sentTitle}</h3>
+      <p>{f.sentBody}</p>
+      <p>{f.reference}: <code data-contact-reference></code></p>
+    </div>
   </section>
 </Base>
+
+<script>
+  import { CONTACT_ENDPOINT, contactOutcome, contactPayload } from "../../lib/contact.ts";
+
+  const form = document.querySelector<HTMLFormElement>("form[data-contact]");
+  const error = form?.querySelector<HTMLElement>("[data-contact-error]");
+  const button = form?.querySelector<HTMLButtonElement>("button[type='submit']");
+  const sent = document.querySelector<HTMLElement>("[data-contact-sent]");
+  const reference = sent?.querySelector<HTMLElement>("[data-contact-reference]");
+
+  if (form && error && button && sent && reference) {
+    const messages = {
+      incomplete: form.dataset.incomplete ?? "",
+      invalid: form.dataset.invalid ?? "",
+      tooMany: form.dataset.tooMany ?? "",
+      failed: form.dataset.failed ?? "",
+    };
+
+    const send = async () => {
+      const payload = contactPayload(new FormData(form));
+      if (!payload) {
+        error.textContent = messages.incomplete;
+        return;
+      }
+      button.disabled = true;
+      error.textContent = "";
+      try {
+        const response = await fetch(CONTACT_ENDPOINT, {
+          method: "POST",
+          headers: { "content-type": "application/json", accept: "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const outcome = contactOutcome(response.status, await response.json().catch(() => null));
+        if (outcome.state === "error") {
+          error.textContent = messages[outcome.reason];
+          return;
+        }
+        reference.textContent = outcome.reference;
+        form.hidden = true;
+        sent.hidden = false;
+        sent.focus();
+      } catch {
+        error.textContent = messages.failed;
+      } finally {
+        button.disabled = false;
+      }
+    };
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!button.disabled) void send();
+    });
+    form.hidden = false;
+  }
+</script>
