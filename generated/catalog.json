@@ -1,10 +1,10 @@
 {
   "stats": {
-    "tools": 796,
+    "tools": 827,
     "categories": 132,
-    "targets": 288
+    "targets": 291
   },
-  "checkedAt": "2026-09-26T16:34:47.337Z",
+  "checkedAt": "2026-09-26T16:47:25.976Z",
   "owners": {
     "01mf02": {
       "login": "01mf02",
@@ -150,6 +150,14 @@
       "website": "https://akka.io",
       "url": "https://github.com/akka"
     },
+    "akuity": {
+      "login": "akuity",
+      "kind": "organization",
+      "name": "Akuity",
+      "bio": "Deploy with Argo CD, promote seamlessly with Kargo, get advanced visibility with AI dashboards, and use AI agents for safe remediation.",
+      "website": "https://akuity.io/",
+      "url": "https://github.com/akuity"
+    },
     "alacritty": {
       "login": "alacritty",
       "kind": "organization",
@@ -165,6 +173,14 @@
       "bio": null,
       "website": null,
       "url": "https://github.com/alexpasmantier"
+    },
+    "alibaba": {
+      "login": "alibaba",
+      "kind": "organization",
+      "name": "Alibaba",
+      "bio": "Alibaba Open Source",
+      "website": null,
+      "url": "https://github.com/alibaba"
     },
     "alyssaxuu": {
       "login": "alyssaxuu",
@@ -510,6 +526,14 @@
       "website": "https://biomejs.dev",
       "url": "https://github.com/biomejs"
     },
+    "bitnami": {
+      "login": "bitnami",
+      "kind": "organization",
+      "name": "Bitnami",
+      "bio": "Loved by Devs, Trusted by Ops. Our mission is to make awesome software available to everyone, everywhere.",
+      "website": "https://bitnami.com",
+      "url": "https://github.com/bitnami"
+    },
     "bitwarden": {
       "login": "bitwarden",
       "kind": "organization",
@@ -581,6 +605,14 @@
       "bio": null,
       "website": null,
       "url": "https://github.com/bugsink"
+    },
+    "bunkerity": {
+      "login": "bunkerity",
+      "kind": "organization",
+      "name": "Bunkerity",
+      "bio": "Open Source projects focused on Cybersecurity.",
+      "website": "https://www.bunkerity.com",
+      "url": "https://github.com/bunkerity"
     },
     "BurntSushi": {
       "login": "BurntSushi",
@@ -853,6 +885,14 @@
       "bio": "conda is a system-level, binary package and environment manager running on all major operating systems and platforms.",
       "website": "https://conda.org",
       "url": "https://github.com/conda"
+    },
+    "conductor-oss": {
+      "login": "conductor-oss",
+      "kind": "organization",
+      "name": "Conductor OSS",
+      "bio": null,
+      "website": "https://conductor-oss.org/",
+      "url": "https://github.com/conductor-oss"
     },
     "containerd": {
       "login": "containerd",
@@ -1150,6 +1190,14 @@
       "website": "https://dlthub.com",
       "url": "https://github.com/dlt-hub"
     },
+    "DNSCrypt": {
+      "login": "DNSCrypt",
+      "kind": "organization",
+      "name": null,
+      "bio": "DNSCrypt project",
+      "website": "https://dnscrypt.info",
+      "url": "https://github.com/DNSCrypt"
+    },
     "docker-mailserver": {
       "login": "docker-mailserver",
       "kind": "organization",
@@ -1205,6 +1253,14 @@
       "bio": null,
       "website": "https://www.dolthub.com",
       "url": "https://github.com/dolthub"
+    },
+    "dotenvx": {
+      "login": "dotenvx",
+      "kind": "organization",
+      "name": "Dotenvx",
+      "bio": "a secure dotenv–from the creator of `dotenv`",
+      "website": "https://dotenvx.com",
+      "url": "https://github.com/dotenvx"
     },
     "dprint": {
       "login": "dprint",
@@ -1485,6 +1541,14 @@
       "bio": "Fast and low overhead web framework, for Node.js",
       "website": "https://fastify.dev",
       "url": "https://github.com/fastify"
+    },
+    "fatedier": {
+      "login": "fatedier",
+      "kind": "user",
+      "name": null,
+      "bio": "To be yourself.",
+      "website": "https://blog.fatedier.com",
+      "url": "https://github.com/fatedier"
     },
     "FerretDB": {
       "login": "FerretDB",
@@ -1974,6 +2038,14 @@
       "website": "https://www.growthbook.io",
       "url": "https://github.com/growthbook"
     },
+    "gruntwork-io": {
+      "login": "gruntwork-io",
+      "kind": "organization",
+      "name": "Gruntwork",
+      "bio": "Your entire infrastructure. Defined as code. In about a day.",
+      "website": "https://www.gruntwork.io",
+      "url": "https://github.com/gruntwork-io"
+    },
     "haiwen": {
       "login": "haiwen",
       "kind": "organization",
@@ -2021,6 +2093,14 @@
       "bio": "Consistent workflows to provision, secure, connect, and run any infrastructure for any application.",
       "website": "https://hashicorp.com",
       "url": "https://github.com/hashicorp"
+    },
+    "hasura": {
+      "login": "hasura",
+      "kind": "organization",
+      "name": "Hasura",
+      "bio": "Hasura is the universal data access layer for next-gen apps and AI",
+      "website": "https://hasura.io",
+      "url": "https://github.com/hasura"
     },
     "hatchet-dev": {
       "login": "hatchet-dev",
@@ -2070,6 +2150,14 @@
       "website": null,
       "url": "https://github.com/helix-editor"
     },
+    "henrygd": {
+      "login": "henrygd",
+      "kind": "user",
+      "name": "hank",
+      "bio": "Abolish ICE. Free Palestine. Hands off Cuba. No war with Iran.",
+      "website": null,
+      "url": "https://github.com/henrygd"
+    },
     "hexojs": {
       "login": "hexojs",
       "kind": "organization",
@@ -2093,6 +2181,14 @@
       "bio": "The open-source, fullstack monitoring platform.",
       "website": "https://www.highlight.io/",
       "url": "https://github.com/highlight"
+    },
+    "higress-group": {
+      "login": "higress-group",
+      "kind": "organization",
+      "name": "Higress",
+      "bio": null,
+      "website": "https://higress.ai/en",
+      "url": "https://github.com/higress-group"
     },
     "home-assistant": {
       "login": "home-assistant",
@@ -2158,6 +2254,14 @@
       "website": "https://github.com/huginn/huginn",
       "url": "https://github.com/huginn"
     },
+    "hyperdxio": {
+      "login": "hyperdxio",
+      "kind": "organization",
+      "name": "HyperDX",
+      "bio": "Resolve Production Issues, Fast.",
+      "website": "https://www.hyperdx.io/",
+      "url": "https://github.com/hyperdxio"
+    },
     "iamkun": {
       "login": "iamkun",
       "kind": "user",
@@ -2181,6 +2285,14 @@
       "bio": "High-performance self-hosted photo and video management solution",
       "website": "https://immich.app",
       "url": "https://github.com/immich-app"
+    },
+    "imsnif": {
+      "login": "imsnif",
+      "kind": "user",
+      "name": "Aram Drevekenin",
+      "bio": "Rethinking our terminal experience.",
+      "website": "https://www.poor.dev",
+      "url": "https://github.com/imsnif"
     },
     "Infisical": {
       "login": "Infisical",
@@ -3494,6 +3606,14 @@
       "website": "https://obsproject.com",
       "url": "https://github.com/obsproject"
     },
+    "oceanbase": {
+      "login": "oceanbase",
+      "kind": "organization",
+      "name": "OceanBase",
+      "bio": "The Fastest Distributed Database for Transactional, Analytical, and  AI Workloads",
+      "website": "https://en.oceanbase.com/",
+      "url": "https://github.com/oceanbase"
+    },
     "odoo": {
       "login": "odoo",
       "kind": "organization",
@@ -3621,6 +3741,14 @@
       "bio": null,
       "website": null,
       "url": "https://github.com/openbao"
+    },
+    "opencontainers": {
+      "login": "opencontainers",
+      "kind": "organization",
+      "name": "Open Container Initiative",
+      "bio": "Creating open standards around container technology",
+      "website": "https://www.opencontainers.org",
+      "url": "https://github.com/opencontainers"
     },
     "openhab": {
       "login": "openhab",
@@ -3846,6 +3974,14 @@
       "website": "https://papra.app",
       "url": "https://github.com/papra-hq"
     },
+    "paradedb": {
+      "login": "paradedb",
+      "kind": "organization",
+      "name": "ParadeDB",
+      "bio": "One Postgres for your application data, full-text search, vector retrieval, and aggregations.",
+      "website": "https://paradedb.com",
+      "url": "https://github.com/paradedb"
+    },
     "parcel-bundler": {
       "login": "parcel-bundler",
       "kind": "organization",
@@ -4021,6 +4157,14 @@
       "bio": "Fast, disk space efficient package manager",
       "website": "https://pnpm.io",
       "url": "https://github.com/pnpm"
+    },
+    "pocket-id": {
+      "login": "pocket-id",
+      "kind": "organization",
+      "name": "Pocket ID",
+      "bio": "Pocket ID is an easy-to-use OpenID Connect Certified™ and OAuth 2.0 provider that lets users sign in to your applications with passkeys.",
+      "website": "https://pocket-id.org",
+      "url": "https://github.com/pocket-id"
     },
     "pocketbase": {
       "login": "pocketbase",
@@ -5102,6 +5246,14 @@
       "website": "https://tekton.dev",
       "url": "https://github.com/tektoncd"
     },
+    "temporalio": {
+      "login": "temporalio",
+      "kind": "organization",
+      "name": "temporal.io",
+      "bio": "Open source durable execution system. Write code that’s fault tolerant, durable, and simple.",
+      "website": "https://temporal.io",
+      "url": "https://github.com/temporalio"
+    },
     "textlint": {
       "login": "textlint",
       "kind": "organization",
@@ -5270,6 +5422,14 @@
       "website": "http://tsenart.me",
       "url": "https://github.com/tsenart"
     },
+    "tursodatabase": {
+      "login": "tursodatabase",
+      "kind": "organization",
+      "name": "Turso Database",
+      "bio": "The next evolution of SQLite.",
+      "website": "https://turso.tech",
+      "url": "https://github.com/tursodatabase"
+    },
     "twentyhq": {
       "login": "twentyhq",
       "kind": "organization",
@@ -5349,6 +5509,14 @@
       "bio": "TypeScript workflows",
       "website": null,
       "url": "https://github.com/TypeStrong"
+    },
+    "uber": {
+      "login": "uber",
+      "kind": "organization",
+      "name": "Uber Open Source",
+      "bio": "Open Source at Uber",
+      "website": "http://www.uber.com",
+      "url": "https://github.com/uber"
     },
     "umami-software": {
       "login": "umami-software",
@@ -5493,6 +5661,14 @@
       "bio": "A fast build tool for JavaScript apps",
       "website": "https://vite.dev",
       "url": "https://github.com/vitejs"
+    },
+    "vitessio": {
+      "login": "vitessio",
+      "kind": "organization",
+      "name": "Vitess",
+      "bio": null,
+      "website": "https://vitess.io",
+      "url": "https://github.com/vitessio"
     },
     "vitest-dev": {
       "login": "vitest-dev",
@@ -6061,7 +6237,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2022-12-03T02:52:46Z",
-        "pushedAt": "2026-09-26T11:07:20Z",
+        "pushedAt": "2026-09-26T16:45:43Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -6155,7 +6331,7 @@
         "homepage": "https://actualbudget.org",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 29156,
+        "stars": 29157,
         "forks": 3027,
         "topics": [
           "budgeting",
@@ -6171,13 +6347,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 12,
+        "stars": 13,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [29144,29156]
+        "stars": [29144,29157]
       },
       "release": {
         "tag": "v26.9.0",
@@ -6673,7 +6849,7 @@
         "homepage": "https://affine.pro",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 72991,
+        "stars": 72992,
         "forks": 5308,
         "topics": [
           "app",
@@ -6703,13 +6879,13 @@
         "defaultBranch": "canary"
       },
       "trend": {
-        "stars": 51,
+        "stars": 52,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [72940,72966,72991]
+        "stars": [72940,72966,72992]
       },
       "release": {
         "tag": "v0.27.4",
@@ -8366,6 +8542,443 @@
       ]
     },
     {
+      "slug": "apache-cloudstack",
+      "name": "Apache CloudStack",
+      "repository": "https://github.com/apache/cloudstack",
+      "category": "virtualization",
+      "replaces": [
+        {
+          "tool": "vmware-vsphere",
+          "fit": "partial",
+          "note": "Runs KVM, VMware and XenServer hosts as a multi-tenant IaaS cloud with networking and self-service, not a vCenter replacement."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/cloudstack",
+        "description": "Apache CloudStack is an opensource Infrastructure as a Service (IaaS) cloud computing platform",
+        "homepage": "https://cloudstack.apache.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 3081,
+        "forks": 1387,
+        "topics": [
+          "cloud",
+          "cloudstack",
+          "iaas",
+          "infrastructure",
+          "java",
+          "kubernetes",
+          "kvm",
+          "libvirt",
+          "orchestration",
+          "python",
+          "virtual-machine",
+          "virtualization",
+          "vmware",
+          "vsphere",
+          "xcp-ng",
+          "xenserver"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-04-29T22:27:12Z",
+        "pushedAt": "2026-09-25T06:29:36Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [3081]
+      },
+      "release": {
+        "tag": "4.23.0.0",
+        "publishedAt": "2026-09-02T11:33:45Z",
+        "url": "https://github.com/apache/cloudstack/releases/tag/4.23.0.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "4.23.0.0",
+          "name": "Apache CloudStack 4.23.0.0 (Regular)",
+          "publishedAt": "2026-09-02T11:33:45Z",
+          "url": "https://github.com/apache/cloudstack/releases/tag/4.23.0.0",
+          "prerelease": false
+        },
+        {
+          "tag": "4.22.1.1",
+          "name": "Apache CloudStack 4.22.1.1 (LTS Security Release)",
+          "publishedAt": "2026-08-21T07:22:26Z",
+          "url": "https://github.com/apache/cloudstack/releases/tag/4.22.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "4.20.3.1",
+          "name": "Apache CloudStack 4.20.3.1 (LTS Security Release)",
+          "publishedAt": "2026-08-21T07:17:17Z",
+          "url": "https://github.com/apache/cloudstack/releases/tag/4.20.3.1",
+          "prerelease": false
+        },
+        {
+          "tag": "4.22.1.0",
+          "name": "Apache CloudStack 4.22.1.0 (LTS)",
+          "publishedAt": "2026-05-26T13:33:27Z",
+          "url": "https://github.com/apache/cloudstack/releases/tag/4.22.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "4.22.0.1",
+          "name": "Apache CloudStack 4.22.0.1 (LTS Security Release)",
+          "publishedAt": "2026-05-08T13:12:07Z",
+          "url": "https://github.com/apache/cloudstack/releases/tag/4.22.0.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 58,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "apache-seatunnel",
+      "name": "Apache SeaTunnel",
+      "repository": "https://github.com/apache/seatunnel",
+      "category": "data-integration",
+      "replaces": [
+        {
+          "tool": "fivetran",
+          "fit": "partial",
+          "note": "Batch and streaming sync across databases, warehouses and SaaS sources, run on its own engine, Flink or Spark."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/seatunnel",
+        "description": "SeaTunnel is a multimodal, high-performance, distributed, massive data integration tool.",
+        "homepage": "https://seatunnel.apache.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 9679,
+        "forks": 2423,
+        "topics": [
+          "apache",
+          "batch",
+          "cdc",
+          "change-data-capture",
+          "data-ingestion",
+          "data-integration",
+          "elt",
+          "embeddings",
+          "high-performance",
+          "llm",
+          "multimodal",
+          "offline",
+          "real-time",
+          "streaming"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-08-05T09:14:47Z",
+        "pushedAt": "2026-09-26T11:28:43Z",
+        "defaultBranch": "dev"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9679]
+      },
+      "release": {
+        "tag": "2.3.13",
+        "publishedAt": "2026-03-14T02:52:02Z",
+        "url": "https://github.com/apache/seatunnel/releases/tag/2.3.13",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "2.3.13",
+          "name": "2.3.13 Release",
+          "publishedAt": "2026-03-14T02:52:02Z",
+          "url": "https://github.com/apache/seatunnel/releases/tag/2.3.13",
+          "prerelease": false
+        },
+        {
+          "tag": "2.3.12",
+          "name": "2.3.12 Release",
+          "publishedAt": "2025-09-12T08:43:20Z",
+          "url": "https://github.com/apache/seatunnel/releases/tag/2.3.12",
+          "prerelease": false
+        },
+        {
+          "tag": "2.3.11",
+          "name": "2.3.11 Release",
+          "publishedAt": "2025-05-27T01:22:34Z",
+          "url": "https://github.com/apache/seatunnel/releases/tag/2.3.11",
+          "prerelease": false
+        },
+        {
+          "tag": "2.3.10",
+          "name": "2.3.10 Release",
+          "publishedAt": "2025-03-26T12:42:41Z",
+          "url": "https://github.com/apache/seatunnel/releases/tag/2.3.10",
+          "prerelease": false
+        },
+        {
+          "tag": "2.3.9",
+          "name": "2.3.9 Release",
+          "publishedAt": "2025-01-19T15:20:59Z",
+          "url": "https://github.com/apache/seatunnel/releases/tag/2.3.9",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 93,
+        "capped": true
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
+    },
+    {
+      "slug": "apache-shardingsphere",
+      "name": "Apache ShardingSphere",
+      "repository": "https://github.com/apache/shardingsphere",
+      "category": "distributed-sql",
+      "replaces": [
+        {
+          "tool": "citus",
+          "fit": "partial",
+          "note": "Shards ordinary PostgreSQL or MySQL servers from a proxy or a JDBC driver, instead of an extension."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/shardingsphere",
+        "description": "Empowering Data Intelligence with Distributed SQL for Sharding, Scalability, and Security Across All Databases.",
+        "homepage": null,
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 20803,
+        "forks": 6902,
+        "topics": [
+          "bigdata",
+          "data-encryption",
+          "data-pipeline",
+          "database",
+          "database-cluster",
+          "database-gateway",
+          "database-middleware",
+          "distributed-database",
+          "distributed-sql-database",
+          "distributed-transaction",
+          "encrypt",
+          "mysql",
+          "postgresql",
+          "read-write-splitting",
+          "shard",
+          "sql"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-01-18T12:49:26Z",
+        "pushedAt": "2026-09-26T16:40:37Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [20803]
+      },
+      "release": {
+        "tag": "5.5.3",
+        "publishedAt": "2026-02-28T17:46:30Z",
+        "url": "https://github.com/apache/shardingsphere/releases/tag/5.5.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "5.5.3",
+          "name": "1. Fix CVE-2025-55163, CVE-2025-58056, CVE-2025-58057 #36758",
+          "publishedAt": "2026-02-28T17:46:30Z",
+          "url": "https://github.com/apache/shardingsphere/releases/tag/5.5.3",
+          "prerelease": false
+        },
+        {
+          "tag": "5.5.2",
+          "name": "1. Kernel: Add firebird SQL parser module and database type #33773",
+          "publishedAt": "2025-01-22T14:03:10Z",
+          "url": "https://github.com/apache/shardingsphere/releases/tag/5.5.2",
+          "prerelease": false
+        },
+        {
+          "tag": "5.5.1",
+          "name": "1. Authority: Mark privilege provider ALL_PERMITTED as deprecated and will be removed in future",
+          "publishedAt": "2024-10-22T08:58:24Z",
+          "url": "https://github.com/apache/shardingsphere/releases/tag/5.5.1",
+          "prerelease": false
+        },
+        {
+          "tag": "5.5.0",
+          "name": "1. Proxy: Remove the outdated schemaName configuration of the Proxy",
+          "publishedAt": "2024-04-30T07:07:30Z",
+          "url": "https://github.com/apache/shardingsphere/releases/tag/5.5.0",
+          "prerelease": false
+        },
+        {
+          "tag": "5.4.1",
+          "name": "1. Proxy: Supports dbcp and c3p0 connection pools",
+          "publishedAt": "2023-10-21T06:31:44Z",
+          "url": "https://github.com/apache/shardingsphere/releases/tag/5.4.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 24,
+        "capped": true
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
+      "slug": "apache-shenyu",
+      "name": "Apache ShenYu",
+      "repository": "https://github.com/apache/shenyu",
+      "category": "api-gateway",
+      "replaces": [
+        {
+          "tool": "kong",
+          "fit": "partial",
+          "note": "A Java gateway with plugins for HTTP, gRPC, Dubbo and Spring Cloud services, configured from its own admin console."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "apache/shenyu",
+        "description": "Apache ShenYu is a Java native API Gateway for service proxy, protocol conversion and API governance.",
+        "homepage": "https://shenyu.apache.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 8840,
+        "forks": 3074,
+        "topics": [
+          "api-gateway",
+          "dubbo-proxy",
+          "grpc-proxy",
+          "http-proxy",
+          "reactor-java",
+          "sofa-proxy",
+          "spring-cloud-proxy"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-07-11T08:17:45Z",
+        "pushedAt": "2026-09-26T13:00:59Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [8840]
+      },
+      "release": {
+        "tag": "v2.7.1",
+        "publishedAt": "2026-07-08T03:26:49Z",
+        "url": "https://github.com/apache/shenyu/releases/tag/v2.7.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.7.1",
+          "name": "Fix nondeterminsitic tests caused by JSON order issues",
+          "publishedAt": "2026-07-08T03:26:49Z",
+          "url": "https://github.com/apache/shenyu/releases/tag/v2.7.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.7.0.3",
+          "name": "feat(ut): add some tests",
+          "publishedAt": "2025-11-26T01:01:01Z",
+          "url": "https://github.com/apache/shenyu/releases/tag/v2.7.0.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.7.0.2",
+          "name": "[release] 2.7.0.1 release",
+          "publishedAt": "2025-08-20T06:12:43Z",
+          "url": "https://github.com/apache/shenyu/releases/tag/v2.7.0.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.7.0.1",
+          "name": "fixed some bug when using http-polling mode",
+          "publishedAt": "2025-04-25T01:41:17Z",
+          "url": "https://github.com/apache/shenyu/releases/tag/v2.7.0.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.7.0",
+          "name": "1. Upgrade dockerfile java runtime version 8 to 17",
+          "publishedAt": "2025-01-13T11:01:20Z",
+          "url": "https://github.com/apache/shenyu/releases/tag/v2.7.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 31,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "apisix",
       "name": "Apache APISIX",
       "repository": "https://github.com/apache/apisix",
@@ -8774,7 +9387,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-04-08T16:36:25Z",
-        "pushedAt": "2026-09-26T16:16:32Z",
+        "pushedAt": "2026-09-26T16:44:07Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -11391,6 +12004,126 @@
       "deploy": []
     },
     {
+      "slug": "bandwhich",
+      "name": "bandwhich",
+      "repository": "https://github.com/imsnif/bandwhich",
+      "category": "system-monitor",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "imsnif/bandwhich",
+        "description": "Terminal bandwidth utilization tool",
+        "homepage": null,
+        "language": "Rust",
+        "license": "MIT",
+        "stars": 11989,
+        "forks": 350,
+        "topics": [
+          "bandwidth",
+          "cli",
+          "dashboard",
+          "networking"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-09-06T21:08:33Z",
+        "pushedAt": "2026-08-01T01:34:33Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [11989]
+      },
+      "release": {
+        "tag": "v0.23.1",
+        "publishedAt": "2024-10-08T09:41:25Z",
+        "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.23.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.23.1",
+          "name": "Release v0.23.1",
+          "publishedAt": "2024-10-08T09:41:25Z",
+          "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.23.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.23.0",
+          "name": "Release v0.23.0",
+          "publishedAt": "2024-08-17T08:44:16Z",
+          "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.23.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.22.2",
+          "name": "Release v0.22.2",
+          "publishedAt": "2024-01-27T20:33:59Z",
+          "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.22.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.22.1",
+          "name": "Release v0.22.1",
+          "publishedAt": "2024-01-27T18:37:05Z",
+          "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.22.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.22.0",
+          "name": "Release v0.22.0",
+          "publishedAt": "2024-01-27T17:36:10Z",
+          "url": "https://github.com/imsnif/bandwhich/releases/tag/v0.22.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 0,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "armv7"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "android",
+          "architectures": [
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "basedpyright",
       "name": "basedpyright",
       "repository": "https://github.com/DetachHead/basedpyright",
@@ -11610,6 +12343,239 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "beats",
+      "name": "Beats",
+      "repository": "https://github.com/elastic/beats",
+      "category": "log-pipeline",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "elastic/beats",
+        "description": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash",
+        "homepage": "https://www.elastic.co/products/beats",
+        "language": "Go",
+        "license": "Other",
+        "stars": 12658,
+        "forks": 5006,
+        "topics": [
+          "filebeat",
+          "heartbeat",
+          "metricbeat",
+          "packetbeat",
+          "winlogbeat"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2014-02-05T19:01:02Z",
+        "pushedAt": "2026-09-26T15:51:52Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [12658]
+      },
+      "release": {
+        "tag": "v9.5.4",
+        "publishedAt": "2026-09-15T18:19:37Z",
+        "url": "https://github.com/elastic/beats/releases/tag/v9.5.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v8.19.22",
+          "name": "Beats 8.19.22",
+          "publishedAt": "2026-09-23T15:20:19Z",
+          "url": "https://github.com/elastic/beats/releases/tag/v8.19.22",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.5.4",
+          "name": "Beats 9.5.4",
+          "publishedAt": "2026-09-15T18:19:37Z",
+          "url": "https://github.com/elastic/beats/releases/tag/v9.5.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.4.7",
+          "name": "Beats 9.4.7",
+          "publishedAt": "2026-09-15T18:19:11Z",
+          "url": "https://github.com/elastic/beats/releases/tag/v9.4.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.5.3",
+          "name": "Beats 9.5.3",
+          "publishedAt": "2026-09-03T10:08:35Z",
+          "url": "https://github.com/elastic/beats/releases/tag/v9.5.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v9.4.6",
+          "name": "Beats 9.4.6",
+          "publishedAt": "2026-09-01T16:03:46Z",
+          "url": "https://github.com/elastic/beats/releases/tag/v9.4.6",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 58,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open-core",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
+      "slug": "beszel",
+      "name": "Beszel",
+      "repository": "https://github.com/henrygd/beszel",
+      "category": "metrics",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "henrygd/beszel",
+        "description": "Lightweight server monitoring with historical data, docker stats, and alerts.",
+        "homepage": "https://beszel.dev",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 25763,
+        "forks": 1047,
+        "topics": [
+          "homelab",
+          "monitoring",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-07-07T21:36:28Z",
+        "pushedAt": "2026-09-26T16:37:11Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [25763]
+      },
+      "release": {
+        "tag": "v0.20.0",
+        "publishedAt": "2026-09-19T15:33:25Z",
+        "url": "https://github.com/henrygd/beszel/releases/tag/v0.20.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.20.0",
+          "name": "Add network monitoring from agents (#2266, #1911)",
+          "publishedAt": "2026-09-19T15:33:25Z",
+          "url": "https://github.com/henrygd/beszel/releases/tag/v0.20.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.19.0",
+          "name": ":warning:  Potential breaking change: Agents now verify HTTPS certificates. If an agent connects to a hub using a self-…",
+          "publishedAt": "2026-09-03T15:34:30Z",
+          "url": "https://github.com/henrygd/beszel/releases/tag/v0.19.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.18.8",
+          "name": "Add multi-battery monitoring",
+          "publishedAt": "2026-08-17T21:31:00Z",
+          "url": "https://github.com/henrygd/beszel/releases/tag/v0.18.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.18.7",
+          "name": "Add more disk I/O metrics (utilization, read/write time, await, queue depth) (#1866)",
+          "publishedAt": "2026-04-05T20:31:06Z",
+          "url": "https://github.com/henrygd/beszel/releases/tag/v0.18.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.18.6",
+          "name": "Add apple-touch-icon link",
+          "publishedAt": "2026-03-29T17:16:52Z",
+          "url": "https://github.com/henrygd/beszel/releases/tag/v0.18.6",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 48,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "armv7",
+            "arm",
+            "riscv64",
+            "ppc64le"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "freebsd",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "openbsd",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "riscv64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary",
+        "package"
+      ]
     },
     {
       "slug": "bigbluebutton",
@@ -11900,7 +12866,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-23T23:45:33Z",
-        "pushedAt": "2026-09-25T22:08:09Z",
+        "pushedAt": "2026-09-26T16:42:51Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -11987,7 +12953,7 @@
         "homepage": "https://black.readthedocs.io/en/stable/",
         "language": "Python",
         "license": "MIT",
-        "stars": 41856,
+        "stars": 41857,
         "forks": 2888,
         "topics": [
           "autopep8",
@@ -12008,13 +12974,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 8,
+        "stars": 9,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [41848,41850,41850,41852,41856]
+        "stars": [41848,41850,41850,41852,41857]
       },
       "release": {
         "tag": "26.5.1",
@@ -12521,7 +13487,7 @@
         "homepage": "https://codeberg.org/bookstack/bookstack",
         "language": "PHP",
         "license": "MIT",
-        "stars": 19055,
+        "stars": 19056,
         "forks": 2425,
         "topics": [
           "bookstack",
@@ -12539,13 +13505,13 @@
         "defaultBranch": "development"
       },
       "trend": {
-        "stars": 2,
+        "stars": 3,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [19053,19054,19055]
+        "stars": [19053,19054,19056]
       },
       "release": {
         "tag": "v26.09",
@@ -13413,6 +14379,130 @@
       "deploy": []
     },
     {
+      "slug": "buildkit",
+      "name": "BuildKit",
+      "repository": "https://github.com/moby/buildkit",
+      "category": "container-engine",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "moby/buildkit",
+        "description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+        "homepage": "https://github.com/moby/moby/issues/34227",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 10292,
+        "forks": 1530,
+        "topics": [
+          "builder",
+          "buildkit",
+          "cloud-native",
+          "containers",
+          "docker",
+          "dockerfile",
+          "go",
+          "golang",
+          "oci",
+          "oci-image"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-05-31T17:04:10Z",
+        "pushedAt": "2026-09-26T09:29:34Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [10292]
+      },
+      "release": {
+        "tag": "v0.33.0",
+        "publishedAt": "2026-09-02T16:10:54Z",
+        "url": "https://github.com/moby/buildkit/releases/tag/v0.33.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "dockerfile/1.27.0-labs",
+          "name": null,
+          "publishedAt": "2026-09-02T16:08:24Z",
+          "url": "https://github.com/moby/buildkit/releases/tag/dockerfile/1.27.0-labs",
+          "prerelease": false
+        },
+        {
+          "tag": "dockerfile/1.27.0",
+          "name": "Archives with zstd compression can now be used as build context and in ADD instructions. #7069",
+          "publishedAt": "2026-09-02T16:08:38Z",
+          "url": "https://github.com/moby/buildkit/releases/tag/dockerfile/1.27.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.33.0",
+          "name": "Welcome to the v0.33.0 release of buildkit!",
+          "publishedAt": "2026-09-02T16:10:54Z",
+          "url": "https://github.com/moby/buildkit/releases/tag/v0.33.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.33.0-rc2",
+          "name": "Welcome to the v0.33.0-rc2 release of buildkit!",
+          "publishedAt": "2026-09-01T14:06:42Z",
+          "url": "https://github.com/moby/buildkit/releases/tag/v0.33.0-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "dockerfile/1.27.0-rc1-labs",
+          "name": null,
+          "publishedAt": "2026-08-27T08:30:09Z",
+          "url": "https://github.com/moby/buildkit/releases/tag/dockerfile/1.27.0-rc1-labs",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 28,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "arm",
+            "riscv64",
+            "ppc64le",
+            "s390x"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "bun",
       "name": "Bun",
       "repository": "https://github.com/oven-sh/bun",
@@ -13471,7 +14561,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T00:48:17Z",
-        "pushedAt": "2026-09-26T16:27:45Z",
+        "pushedAt": "2026-09-26T16:47:24Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -13573,6 +14663,118 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "bunkerweb",
+      "name": "BunkerWeb",
+      "repository": "https://github.com/bunkerity/bunkerweb",
+      "category": "reverse-proxy",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "bunkerity/bunkerweb",
+        "description": "🛡️ Open-source and cloud-native Web Application Firewall (WAF)",
+        "homepage": "https://www.bunkerweb.io",
+        "language": "Python",
+        "license": "AGPL-3.0",
+        "stars": 11006,
+        "forks": 642,
+        "topics": [
+          "antibot",
+          "cybersecurity",
+          "devops",
+          "devsecops",
+          "dnsbl",
+          "docker",
+          "hardening",
+          "hosting",
+          "kubernetes",
+          "letsencrypt",
+          "modsecurity",
+          "nginx",
+          "reverse-proxy",
+          "security",
+          "security-tuning",
+          "swarm",
+          "waap",
+          "waf",
+          "web-application-firewall",
+          "web-security"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-08-20T21:20:48Z",
+        "pushedAt": "2026-09-25T17:59:04Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [11006]
+      },
+      "release": {
+        "tag": "v1.6.15",
+        "publishedAt": "2026-09-21T11:29:34Z",
+        "url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.15",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.6.16-rc2",
+          "name": "Documentation :",
+          "publishedAt": "2026-09-25T18:22:44Z",
+          "url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.16-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.6.16-rc1",
+          "name": "Documentation :",
+          "publishedAt": "2026-09-21T16:12:04Z",
+          "url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.16-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.6.15",
+          "name": "Documentation :",
+          "publishedAt": "2026-09-21T11:29:34Z",
+          "url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.15",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.6.15-rc3",
+          "name": "Documentation :",
+          "publishedAt": "2026-09-17T21:44:55Z",
+          "url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.15-rc3",
+          "prerelease": true
+        },
+        {
+          "tag": "testing",
+          "name": "Testing",
+          "publishedAt": "2023-08-15T19:15:25Z",
+          "url": "https://github.com/bunkerity/bunkerweb/releases/tag/testing",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 9,
+        "capped": true
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "caddy",
@@ -14188,6 +15390,102 @@
       "capabilities": {},
       "deploy": [
         "container"
+      ]
+    },
+    {
+      "slug": "canal",
+      "name": "Canal",
+      "repository": "https://github.com/alibaba/canal",
+      "category": "data-integration",
+      "replaces": [
+        {
+          "tool": "debezium",
+          "fit": "partial",
+          "note": "Change data capture from MySQL binlogs only, delivered to Kafka, RocketMQ or its client adapters."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "alibaba/canal",
+        "description": "阿里巴巴 MySQL binlog 增量订阅&消费组件 ",
+        "homepage": null,
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 29736,
+        "forks": 7625,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-01-13T10:59:52Z",
+        "pushedAt": "2026-07-30T07:40:52Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [29736]
+      },
+      "release": {
+        "tag": "canal-1.1.8",
+        "publishedAt": "2025-01-16T09:24:14Z",
+        "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.8",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "canal-1.1.8",
+          "name": "v1.1.8",
+          "publishedAt": "2025-01-16T09:24:14Z",
+          "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.8",
+          "prerelease": false
+        },
+        {
+          "tag": "canal-1.1.8-alpha-3",
+          "name": "1.  兼容mysql 8.4的语法关键字",
+          "publishedAt": "2024-09-11T08:27:53Z",
+          "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.8-alpha-3",
+          "prerelease": true
+        },
+        {
+          "tag": "canal-1.1.8-alpha-2",
+          "name": "1. 调整sql解析器为polardbx-parser，兼容mysql/polardb-x的完整SQL语法解析",
+          "publishedAt": "2024-05-27T05:24:47Z",
+          "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.8-alpha-2",
+          "prerelease": false
+        },
+        {
+          "tag": "canal-1.1.8-alpha-1",
+          "name": "1.1.8-alpha",
+          "publishedAt": "2024-01-26T08:33:49Z",
+          "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.8-alpha-1",
+          "prerelease": true
+        },
+        {
+          "tag": "canal-1.1.7",
+          "name": "v1.1.7",
+          "publishedAt": "2023-10-09T08:40:22Z",
+          "url": "https://github.com/alibaba/canal/releases/tag/canal-1.1.7",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
       ]
     },
     {
@@ -15203,7 +16501,7 @@
         "homepage": "https://www.chatwoot.com/help-center",
         "language": "Ruby",
         "license": "Other",
-        "stars": 37212,
+        "stars": 37213,
         "forks": 9047,
         "topics": [
           "actioncable",
@@ -15234,13 +16532,13 @@
         "defaultBranch": "develop"
       },
       "trend": {
-        "stars": 57,
+        "stars": 58,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [37155,37188,37212]
+        "stars": [37155,37188,37213]
       },
       "release": {
         "tag": "v4.18.0",
@@ -16235,7 +17533,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-06-02T08:28:18Z",
-        "pushedAt": "2026-09-26T16:29:14Z",
+        "pushedAt": "2026-09-26T16:42:05Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -17078,7 +18376,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-22T06:08:52Z",
-        "pushedAt": "2026-09-26T16:31:28Z",
+        "pushedAt": "2026-09-26T16:36:24Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -17201,24 +18499,24 @@
         "homepage": null,
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 126579,
+        "stars": 126580,
         "forks": 19757,
         "topics": [],
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2025-04-13T05:37:54Z",
-        "pushedAt": "2026-09-26T16:32:53Z",
+        "pushedAt": "2026-09-26T16:46:23Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 422,
+        "stars": 423,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [126157,126328,126439,126579]
+        "stars": [126157,126328,126439,126580]
       },
       "release": {
         "tag": "rust-v0.157.1",
@@ -18008,6 +19306,111 @@
       "deploy": []
     },
     {
+      "slug": "conductor",
+      "name": "Conductor",
+      "repository": "https://github.com/conductor-oss/conductor",
+      "category": "workflow-orchestration",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "conductor-oss/conductor",
+        "description": "Conductor is an event driven agentic workflow engine providing durable and highly resilient execution engine for applications and AI Agents",
+        "homepage": "https://docs.conductor-oss.org/",
+        "language": "Java",
+        "license": "Apache-2.0",
+        "stars": 32233,
+        "forks": 1020,
+        "topics": [
+          "distributed-systems",
+          "durable-execution",
+          "grpc",
+          "java",
+          "javascript",
+          "microservice-orchestration",
+          "orchestration-engine",
+          "orchestrator",
+          "reactjs",
+          "spring-boot",
+          "workflow-automation",
+          "workflow-engine",
+          "workflow-management",
+          "workflows"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-12-08T06:06:09Z",
+        "pushedAt": "2026-09-26T07:17:14Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [32233]
+      },
+      "release": {
+        "tag": "v3.32.5",
+        "publishedAt": "2026-09-25T04:58:15Z",
+        "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.32.5",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v3.32.5",
+          "name": "A security roll-up: hardens request-driven regexes against ReDoS, closes a path-traversal hole in the default payload s…",
+          "publishedAt": "2026-09-25T04:58:15Z",
+          "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.32.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v3.33.0-rc6",
+          "name": "ci: add least-privilege permissions blocks to GitHub Actions workflows",
+          "publishedAt": "2026-09-24T17:48:59Z",
+          "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.33.0-rc6",
+          "prerelease": true
+        },
+        {
+          "tag": "v3.33.0-rc5",
+          "name": "[CCOR-13376]fix:update example links of java agent create page",
+          "publishedAt": "2026-09-18T05:44:33Z",
+          "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.33.0-rc5",
+          "prerelease": true
+        },
+        {
+          "tag": "v3.33.0-rc4",
+          "name": "feat(cassandra): support username/password authentication",
+          "publishedAt": "2026-09-15T22:35:58Z",
+          "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.33.0-rc4",
+          "prerelease": true
+        },
+        {
+          "tag": "v3.33.0-rc3",
+          "name": "Fix tool-call selection and naming in the agent event listener",
+          "publishedAt": "2026-09-11T18:52:16Z",
+          "url": "https://github.com/conductor-oss/conductor/releases/tag/v3.33.0-rc3",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 32,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "consul",
       "name": "Consul",
       "repository": "https://github.com/hashicorp/consul",
@@ -18151,7 +19554,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2015-11-13T00:27:43Z",
-        "pushedAt": "2026-09-26T00:17:44Z",
+        "pushedAt": "2026-09-26T16:42:30Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -19025,7 +20428,7 @@
         "homepage": null,
         "language": "Go",
         "license": "Other",
-        "stars": 28312,
+        "stars": 28313,
         "forks": 2287,
         "topics": [
           "agentic-ai",
@@ -19041,13 +20444,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 40,
+        "stars": 41,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [28272,28283,28301,28312]
+        "stars": [28272,28283,28301,28313]
       },
       "release": {
         "tag": "v0.96.1",
@@ -20735,6 +22138,99 @@
       ]
     },
     {
+      "slug": "datax",
+      "name": "DataX",
+      "repository": "https://github.com/alibaba/DataX",
+      "category": "data-integration",
+      "replaces": [
+        {
+          "tool": "fivetran",
+          "fit": "partial",
+          "note": "Batch sync between databases, warehouses and file stores through reader and writer plugins; no SaaS connectors or scheduler."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "alibaba/DataX",
+        "description": "DataX是阿里云DataWorks数据集成的开源版本。",
+        "homepage": null,
+        "language": "Java",
+        "license": "Other",
+        "stars": 17362,
+        "forks": 5653,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-01-18T10:09:47Z",
+        "pushedAt": "2026-07-07T08:41:05Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [17362]
+      },
+      "release": {
+        "tag": "datax_v202309",
+        "publishedAt": "2023-09-13T03:42:31Z",
+        "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202309",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "datax_v202309",
+          "name": "支持Phoenix 同步数据添加 where条件",
+          "publishedAt": "2023-09-13T03:42:31Z",
+          "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202309",
+          "prerelease": false
+        },
+        {
+          "tag": "datax_v202308",
+          "name": "OTS 插件更新",
+          "publishedAt": "2023-08-13T00:45:55Z",
+          "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202308",
+          "prerelease": false
+        },
+        {
+          "tag": "datax_v202306",
+          "name": "新增插件",
+          "publishedAt": "2023-07-18T09:01:36Z",
+          "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202306",
+          "prerelease": false
+        },
+        {
+          "tag": "datax_v202303",
+          "name": "新增插件",
+          "publishedAt": "2023-03-23T07:24:08Z",
+          "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202303",
+          "prerelease": false
+        },
+        {
+          "tag": "datax_v202210",
+          "name": "涉及通道能力更新（OceanBase、TDengine、Doris等），具体如下：",
+          "publishedAt": "2022-10-27T08:47:01Z",
+          "url": "https://github.com/alibaba/DataX/releases/tag/datax_v202210",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 2,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "date-fns",
       "name": "date-fns",
       "repository": "https://github.com/date-fns/date-fns",
@@ -20866,7 +22362,7 @@
         "language": "JavaScript",
         "license": "MIT",
         "stars": 48665,
-        "forks": 3421,
+        "forks": 3423,
         "topics": [
           "date",
           "date-formatting",
@@ -21569,7 +23065,7 @@
         "homepage": "https://deno.com",
         "language": "Rust",
         "license": "MIT",
-        "stars": 108520,
+        "stars": 108521,
         "forks": 6384,
         "topics": [
           "deno",
@@ -21585,13 +23081,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 45,
+        "stars": 46,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [108475,108480,108497,108503,108520]
+        "stars": [108475,108480,108497,108503,108521]
       },
       "release": {
         "tag": "v2.9.7",
@@ -22599,7 +24095,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 91193,
-        "forks": 35505,
+        "forks": 35509,
         "topics": [
           "apps",
           "django",
@@ -22765,7 +24261,7 @@
         "homepage": "https://dlthub.com/docs",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 5896,
+        "stars": 5898,
         "forks": 611,
         "topics": [
           "data",
@@ -22787,13 +24283,13 @@
         "defaultBranch": "devel"
       },
       "trend": {
-        "stars": 9,
+        "stars": 11,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [5887,5891,5896]
+        "stars": [5887,5891,5898]
       },
       "release": {
         "tag": "1.30.0",
@@ -22849,6 +24345,171 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "dnscrypt-proxy",
+      "name": "dnscrypt-proxy",
+      "repository": "https://github.com/DNSCrypt/dnscrypt-proxy",
+      "category": "dns-sinkhole",
+      "replaces": [
+        {
+          "tool": "nextdns",
+          "fit": "partial",
+          "note": "Encrypted DNS with blocklists and per-name rules on a machine or a router you run; no web dashboard."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "DNSCrypt/dnscrypt-proxy",
+        "description": "dnscrypt-proxy 2 - A flexible DNS proxy, with support for encrypted DNS protocols.",
+        "homepage": "https://dnscrypt.info",
+        "language": "Go",
+        "license": "ISC",
+        "stars": 13691,
+        "forks": 1136,
+        "topics": [
+          "anonymized",
+          "anonymized-dns",
+          "dns",
+          "dns-over-https",
+          "dnscrypt",
+          "dnscrypt-proxy",
+          "dnscrypt-proxy2",
+          "doh",
+          "oblivious-dns-over-https",
+          "oblivious-doh",
+          "odoh",
+          "proxy"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-01-08T23:21:21Z",
+        "pushedAt": "2026-09-25T03:52:59Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [13691]
+      },
+      "release": {
+        "tag": "2.1.18",
+        "publishedAt": "2026-07-18T12:14:35Z",
+        "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.18",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2.1.18",
+          "name": "Forwarding rules now support the $PROXY: prefix to send selected plain DNS upstreams over DNS-over-TCP through the prox…",
+          "publishedAt": "2026-07-18T12:14:35Z",
+          "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.18",
+          "prerelease": false
+        },
+        {
+          "tag": "2.1.17",
+          "name": "Added support for PQDNSCrypt (DNSCrypt 2026), using post-quantum cryptography with compatible DNSCrypt servers to prote…",
+          "publishedAt": "2026-07-13T15:45:11Z",
+          "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.17",
+          "prerelease": false
+        },
+        {
+          "tag": "2.1.16",
+          "name": "Dashboard HTML pages are no longer cached, preventing stale content from being served after upgrades.",
+          "publishedAt": "2026-05-24T07:44:56Z",
+          "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.16",
+          "prerelease": false
+        },
+        {
+          "tag": "2.1.15",
+          "name": "New public DNS monitoring website: -- Check it out!",
+          "publishedAt": "2025-12-10T14:29:54Z",
+          "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.15",
+          "prerelease": false
+        },
+        {
+          "tag": "2.1.14",
+          "name": "Added support for client IP address encryption in logs using IPCrypt. Three algorithms are supported: deterministic, no…",
+          "publishedAt": "2025-09-03T12:31:24Z",
+          "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.14",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 2,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "x86",
+            "arm",
+            "riscv64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "x86"
+          ]
+        },
+        {
+          "os": "freebsd",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "x86",
+            "arm"
+          ]
+        },
+        {
+          "os": "openbsd",
+          "architectures": [
+            "x86_64",
+            "x86"
+          ]
+        },
+        {
+          "os": "netbsd",
+          "architectures": [
+            "x86_64",
+            "x86"
+          ]
+        },
+        {
+          "os": "android",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "x86",
+            "arm"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "binary"
+      ]
     },
     {
       "slug": "docker",
@@ -23667,7 +25328,7 @@
         "homepage": "https://dokploy.com/",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 37522,
+        "stars": 37523,
         "forks": 3011,
         "topics": [
           "agents",
@@ -23696,13 +25357,13 @@
         "defaultBranch": "canary"
       },
       "trend": {
-        "stars": 15,
+        "stars": 16,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [37507,37522]
+        "stars": [37507,37523]
       },
       "release": {
         "tag": "v0.30.7",
@@ -24161,7 +25822,7 @@
         "language": "Java",
         "license": "Apache-2.0",
         "stars": 16004,
-        "forks": 3962,
+        "forks": 3961,
         "topics": [
           "agent",
           "ai",
@@ -24247,6 +25908,137 @@
         "capped": true
       },
       "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "dotenvx",
+      "name": "dotenvx",
+      "repository": "https://github.com/dotenvx/dotenvx",
+      "category": "encrypted-files",
+      "replaces": [
+        {
+          "tool": "sops",
+          "fit": "partial",
+          "note": "Encrypts the values in .env files with a public key and decrypts them when the process starts; env files only."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "dotenvx/dotenvx",
+        "description": "a secure dotenv—from the creator of `dotenv`",
+        "homepage": "https://dotenvx.com/docs",
+        "language": "JavaScript",
+        "license": "BSD-3-Clause",
+        "stars": 5811,
+        "forks": 155,
+        "topics": [
+          "cli",
+          "configuration-file",
+          "curl",
+          "dotenv",
+          "dotenvx",
+          "end-to-end-encryption",
+          "env",
+          "environment-variables",
+          "homebrew",
+          "secret-management",
+          "secret-manager",
+          "secrets",
+          "secrets-management",
+          "security-tools",
+          "winget"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-11-18T00:55:16Z",
+        "pushedAt": "2026-09-25T20:54:36Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [5811]
+      },
+      "release": {
+        "tag": "v2.30.0",
+        "publishedAt": "2026-09-22T20:23:04Z",
+        "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.30.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.30.0",
+          "name": "see CHANGELOG",
+          "publishedAt": "2026-09-22T20:23:04Z",
+          "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.30.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.29.0",
+          "name": "see CHANGELOG",
+          "publishedAt": "2026-09-21T21:51:46Z",
+          "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.29.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.28.2",
+          "name": "see CHANGELOG",
+          "publishedAt": "2026-09-20T00:19:29Z",
+          "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.28.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.28.1",
+          "name": "see CHANGELOG",
+          "publishedAt": "2026-09-19T23:26:13Z",
+          "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.28.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.28.0",
+          "name": "see CHANGELOG",
+          "publishedAt": "2026-09-16T20:55:11Z",
+          "url": "https://github.com/dotenvx/dotenvx/releases/tag/v2.28.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 4,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "armv7"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
@@ -25037,7 +26829,7 @@
         "homepage": "http://www.duckdb.org",
         "language": "C++",
         "license": "MIT",
-        "stars": 41716,
+        "stars": 41717,
         "forks": 3829,
         "topics": [
           "analytics",
@@ -25054,13 +26846,13 @@
         "defaultBranch": "v2.0-cyanoptera"
       },
       "trend": {
-        "stars": 33,
+        "stars": 34,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [41683,41708,41716]
+        "stars": [41683,41708,41717]
       },
       "release": {
         "tag": "v1.5.5",
@@ -26575,7 +28367,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-06T23:23:25Z",
-        "pushedAt": "2026-09-26T16:34:12Z",
+        "pushedAt": "2026-09-26T16:47:48Z",
         "defaultBranch": "dev"
       },
       "trend": {
@@ -27924,7 +29716,7 @@
         "language": "Rust",
         "license": "Other",
         "stars": 6317,
-        "forks": 469,
+        "forks": 470,
         "topics": [
           "cloud-database",
           "database",
@@ -28044,7 +29836,7 @@
         "language": "Python",
         "license": "MIT",
         "stars": 102632,
-        "forks": 9950,
+        "forks": 9951,
         "topics": [
           "api",
           "async",
@@ -28688,7 +30480,7 @@
         "homepage": "https://firefly-iii.org/",
         "language": "PHP",
         "license": "AGPL-3.0",
-        "stars": 24737,
+        "stars": 24739,
         "forks": 2299,
         "topics": [
           "accounting",
@@ -28718,13 +30510,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 11,
+        "stars": 13,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [24726,24737]
+        "stars": [24726,24739]
       },
       "release": {
         "tag": "v6.7.4",
@@ -30139,7 +31931,7 @@
         "homepage": "https://freelens.app",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 5620,
+        "stars": 5621,
         "forks": 335,
         "topics": [
           "cloud-native",
@@ -30153,17 +31945,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-06-19T10:43:29Z",
-        "pushedAt": "2026-09-26T16:27:34Z",
+        "pushedAt": "2026-09-26T16:47:34Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 4,
+        "stars": 5,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [5616,5619,5620]
+        "stars": [5616,5619,5621]
       },
       "release": {
         "tag": "v1.10.3",
@@ -30557,6 +32349,155 @@
       ]
     },
     {
+      "slug": "frp",
+      "name": "frp",
+      "repository": "https://github.com/fatedier/frp",
+      "category": "reverse-proxy",
+      "replaces": [
+        {
+          "tool": "ngrok",
+          "fit": "partial",
+          "note": "Exposes local TCP, UDP and HTTP services through a server you run, without the hosted edge or dashboard."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "fatedier/frp",
+        "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+        "homepage": null,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 109638,
+        "forks": 15223,
+        "topics": [
+          "expose",
+          "firewall",
+          "frp",
+          "go",
+          "http-proxy",
+          "nat",
+          "p2p",
+          "proxy",
+          "reverse-proxy",
+          "tunnel"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-12-21T15:24:59Z",
+        "pushedAt": "2026-09-15T05:55:33Z",
+        "defaultBranch": "dev"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [109638]
+      },
+      "release": {
+        "tag": "v0.71.0",
+        "publishedAt": "2026-08-14T06:36:29Z",
+        "url": "https://github.com/fatedier/frp/releases/tag/v0.71.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.71.0",
+          "name": "UDP packet payloads for ordinary UDP proxies and SUDP now use a dedicated binary codec when frpc and frps successfully…",
+          "publishedAt": "2026-08-14T06:36:29Z",
+          "url": "https://github.com/fatedier/frp/releases/tag/v0.71.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.70.1",
+          "name": "HTTP vhost servers no longer support HTTP/1.1 Upgrade: h2c requests. Cleartext HTTP/2 prior-knowledge remains supported.",
+          "publishedAt": "2026-07-23T07:55:25Z",
+          "url": "https://github.com/fatedier/frp/releases/tag/v0.70.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.70.0",
+          "name": "Expanded the frps dashboard API v2 migration across Clients, Proxies, Server Overview, Client Detail, and Proxy Detail,…",
+          "publishedAt": "2026-07-11T11:36:05Z",
+          "url": "https://github.com/fatedier/frp/releases/tag/v0.70.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.69.1",
+          "name": "transport.wireProtocol = \"v2\" now also applies to UDP-based proxy payloads, including ordinary UDP and SUDP, so their p…",
+          "publishedAt": "2026-06-01T10:17:17Z",
+          "url": "https://github.com/fatedier/frp/releases/tag/v0.69.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.69.0",
+          "name": "Starting with v0.69.0, each minor release is supported until there are nine newer minor releases. For example, v0.69.0…",
+          "publishedAt": "2026-05-21T17:11:56Z",
+          "url": "https://github.com/fatedier/frp/releases/tag/v0.69.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 5,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "arm",
+            "riscv64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "freebsd",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "openbsd",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "android",
+          "architectures": [
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary"
+      ]
+    },
+    {
       "slug": "fumadocs",
       "name": "Fumadocs",
       "repository": "https://github.com/fuma-nama/fumadocs",
@@ -30702,7 +32643,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-01-25T17:29:43Z",
-        "pushedAt": "2026-09-26T16:31:21Z",
+        "pushedAt": "2026-09-26T16:35:57Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -30809,7 +32750,7 @@
         "language": "Go",
         "license": "MIT",
         "stars": 83256,
-        "forks": 3730,
+        "forks": 3731,
         "topics": [
           "bash",
           "cli",
@@ -31612,7 +33553,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-05-04T11:09:13Z",
-        "pushedAt": "2026-09-26T16:18:08Z",
+        "pushedAt": "2026-09-26T16:40:11Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -31825,7 +33766,7 @@
         "homepage": "https://ghostty.org",
         "language": "Zig",
         "license": "MIT",
-        "stars": 61571,
+        "stars": 61572,
         "forks": 3520,
         "topics": [],
         "archived": false,
@@ -31836,13 +33777,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 139,
+        "stars": 140,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [61432,61463,61508,61539,61571]
+        "stars": [61432,61463,61508,61539,61572]
       },
       "release": {
         "tag": "v1.3.1",
@@ -33466,7 +35407,7 @@
         "homepage": "https://www.goatcounter.com",
         "language": "Go",
         "license": "Other",
-        "stars": 6005,
+        "stars": 6006,
         "forks": 280,
         "topics": [
           "analytics",
@@ -33481,13 +35422,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 7,
+        "stars": 8,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [5998,6004,6005]
+        "stars": [5998,6004,6006]
       },
       "release": {
         "tag": "v2.7.0",
@@ -34603,7 +36544,7 @@
         "homepage": "https://grafana.com",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 76928,
+        "stars": 76929,
         "forks": 14790,
         "topics": [
           "alerting",
@@ -34630,13 +36571,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 40,
+        "stars": 41,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [76888,76904,76928]
+        "stars": [76888,76904,76929]
       },
       "release": {
         "tag": "v13.2.2",
@@ -35093,7 +37034,7 @@
         "homepage": "https://grocy.info",
         "language": "Blade",
         "license": "MIT",
-        "stars": 9531,
+        "stars": 9532,
         "forks": 808,
         "topics": [
           "erp",
@@ -35116,7 +37057,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-09-26",
-        "stars": [9531]
+        "stars": [9532]
       },
       "release": {
         "tag": "v4.7.1",
@@ -35224,7 +37165,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-05-07T23:11:51Z",
-        "pushedAt": "2026-09-26T06:29:07Z",
+        "pushedAt": "2026-09-26T16:45:33Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -36006,6 +37947,139 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "hasura",
+      "name": "Hasura GraphQL Engine",
+      "repository": "https://github.com/hasura/graphql-engine",
+      "category": "backend-as-a-service",
+      "replaces": [
+        {
+          "tool": "firebase",
+          "fit": "partial",
+          "note": "GraphQL and REST APIs generated over Postgres and other databases, with permissions; auth and storage come from elsewhere."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "hasura/graphql-engine",
+        "description": "Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.",
+        "homepage": "https://hasura.io",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 32121,
+        "forks": 3034,
+        "topics": [
+          "access-control",
+          "api",
+          "automatic-api",
+          "bigquery",
+          "graphql",
+          "graphql-api",
+          "graphql-server",
+          "haskell",
+          "hasura",
+          "mongodb",
+          "postgres",
+          "rest-api",
+          "sql-server",
+          "subgraph",
+          "supergraph"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-06-18T07:57:36Z",
+        "pushedAt": "2026-09-21T17:48:10Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [32121]
+      },
+      "release": {
+        "tag": "v2.50.3",
+        "publishedAt": "2026-09-09T00:41:20Z",
+        "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.50.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.50.3",
+          "name": "This is a patch release for v2.50.",
+          "publishedAt": "2026-09-09T00:41:20Z",
+          "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.50.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.50.1",
+          "name": "This is a patch release for v2.50.",
+          "publishedAt": "2026-08-18T18:14:01Z",
+          "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.50.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.50.0",
+          "name": "IMPORTANT: fix a bug in the mssql backend that could in certain cases allow an authenticated user to observe data they…",
+          "publishedAt": "2026-08-05T23:03:34Z",
+          "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.50.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.45.8",
+          "name": "This is a patch release for v2.45.",
+          "publishedAt": "2026-08-05T23:03:24Z",
+          "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.45.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.49.5",
+          "name": "This is a patch release for v2.49.",
+          "publishedAt": "2026-07-21T01:35:19Z",
+          "url": "https://github.com/hasura/graphql-engine/releases/tag/v2.49.5",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 12,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "hatch",
@@ -37291,6 +39365,130 @@
       ]
     },
     {
+      "slug": "higress",
+      "name": "Higress",
+      "repository": "https://github.com/higress-group/higress",
+      "category": "api-gateway",
+      "replaces": [
+        {
+          "tool": "kong",
+          "fit": "partial",
+          "note": "Built on Envoy and Istio, with Wasm plugins and routing for LLM APIs; no Lua plugin ecosystem."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "higress-group/higress",
+        "description": "🤖 AI Gateway | AI Native API Gateway",
+        "homepage": "https://higress.ai",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 9460,
+        "forks": 1317,
+        "topics": [
+          "ai-gateway",
+          "ai-native",
+          "api-gateway",
+          "cloud-native",
+          "envoy"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-10-27T03:53:00Z",
+        "pushedAt": "2026-09-25T01:57:02Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9460]
+      },
+      "release": {
+        "tag": "v2.2.4",
+        "publishedAt": "2026-08-13T23:49:46Z",
+        "url": "https://github.com/higress-group/higress/releases/tag/v2.2.4",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.2.4",
+          "name": "This release includes 96 updates, covering feature enhancements, bug fixes, performance optimizations, and more.",
+          "publishedAt": "2026-08-13T23:49:46Z",
+          "url": "https://github.com/higress-group/higress/releases/tag/v2.2.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.3",
+          "name": "This release includes 48 updates, covering AI Gateway enhancements, multi-provider LLM protocol compatibility, gateway…",
+          "publishedAt": "2026-06-25T02:58:49Z",
+          "url": "https://github.com/higress-group/higress/releases/tag/v2.2.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.2",
+          "name": "This release includes 37 updates, covering feature enhancements, bug fixes, performance optimizations, and more.",
+          "publishedAt": "2026-05-26T01:41:03Z",
+          "url": "https://github.com/higress-group/higress/releases/tag/v2.2.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.2.1",
+          "name": "This release includes 65 updates, covering feature enhancements, bug fixes, and performance optimizations.",
+          "publishedAt": "2026-04-09T12:23:09Z",
+          "url": "https://github.com/higress-group/higress/releases/tag/v2.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.1.11",
+          "name": "This release includes 6 updates, covering feature enhancements, bug fixes, and performance optimizations.",
+          "publishedAt": "2026-02-22T12:29:31Z",
+          "url": "https://github.com/higress-group/higress/releases/tag/v2.1.11",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 27,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "helm"
+      ]
+    },
+    {
       "slug": "home-assistant",
       "name": "Home Assistant",
       "repository": "https://github.com/home-assistant/core",
@@ -37329,7 +39527,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2013-09-17T07:29:48Z",
-        "pushedAt": "2026-09-26T16:15:08Z",
+        "pushedAt": "2026-09-26T16:48:25Z",
         "defaultBranch": "dev"
       },
       "trend": {
@@ -38074,7 +40272,7 @@
         "language": "Python",
         "license": "BSD-3-Clause",
         "stars": 15509,
-        "forks": 2231,
+        "forks": 2232,
         "topics": [
           "asyncio",
           "http",
@@ -38996,6 +41194,122 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "hyperdx",
+      "name": "HyperDX",
+      "repository": "https://github.com/hyperdxio/hyperdx",
+      "category": "dashboards",
+      "replaces": [
+        {
+          "tool": "datadog",
+          "fit": "partial",
+          "note": "Search and chart logs, metrics, traces and session replays stored in ClickHouse, with alerts."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "hyperdxio/hyperdx",
+        "description": "Resolve production issues, fast. An open source observability platform unifying session replays, logs, metrics, traces and errors powered by ClickHouse and OpenTelemetry.",
+        "homepage": "https://hyperdx.io/",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 9916,
+        "forks": 481,
+        "topics": [
+          "alerting",
+          "analytics",
+          "apm",
+          "application-monitoring",
+          "clickhouse",
+          "dashboard",
+          "frontend-monitoring",
+          "kubernetes",
+          "log-management",
+          "logs",
+          "metrics",
+          "monitoring",
+          "observability",
+          "opentelemetry",
+          "react",
+          "self-hosted",
+          "session-replay",
+          "traces",
+          "typescript"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-09-13T00:46:19Z",
+        "pushedAt": "2026-09-25T22:54:41Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9916]
+      },
+      "release": {
+        "tag": "@hyperdx/api@2.39.1",
+        "publishedAt": "2026-09-19T00:43:38Z",
+        "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/api%402.39.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "@hyperdx/api@2.39.1",
+          "name": null,
+          "publishedAt": "2026-09-19T00:43:38Z",
+          "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/api%402.39.1",
+          "prerelease": false
+        },
+        {
+          "tag": "@hyperdx/app@2.39.1",
+          "name": "a9161c94: fix: keep duration axis-tick labels within the chart's width budget",
+          "publishedAt": "2026-09-19T00:43:35Z",
+          "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.39.1",
+          "prerelease": false
+        },
+        {
+          "tag": "@hyperdx/otel-collector@2.39.1",
+          "name": null,
+          "publishedAt": "2026-09-19T00:43:32Z",
+          "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/otel-collector%402.39.1",
+          "prerelease": false
+        },
+        {
+          "tag": "@hyperdx/api@2.39.0",
+          "name": "ff1e77ce: Backfill alert displayName and tags from the referenced saved search or dashboard on API startup. Alerts that…",
+          "publishedAt": "2026-09-18T19:33:05Z",
+          "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/api%402.39.0",
+          "prerelease": false
+        },
+        {
+          "tag": "@hyperdx/app@2.39.0",
+          "name": "e31e5d8d: Offer dashboard tile alerts for Terraform import. clickhouse_clickstack_alert",
+          "publishedAt": "2026-09-18T19:33:02Z",
+          "url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.39.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 40,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "ibis",
@@ -40460,7 +42774,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-04-15T18:49:02Z",
-        "pushedAt": "2026-09-26T16:22:53Z",
+        "pushedAt": "2026-09-26T16:46:20Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -41982,7 +44296,7 @@
         "language": "C",
         "license": "Other",
         "stars": 35698,
-        "forks": 2767,
+        "forks": 2771,
         "topics": [
           "jq"
         ],
@@ -42450,8 +44764,8 @@
         "homepage": "https://grafana.com/oss/k6/",
         "language": "Go",
         "license": "AGPL-3.0",
-        "stars": 31624,
-        "forks": 1644,
+        "stars": 31626,
+        "forks": 1645,
         "topics": [
           "es6",
           "go",
@@ -42471,13 +44785,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 75,
+        "stars": 77,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [31549,31556,31567,31580,31624]
+        "stars": [31549,31556,31567,31580,31626]
       },
       "release": {
         "tag": "v2.3.0",
@@ -42578,7 +44892,7 @@
         "homepage": "https://k9scli.io",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 34685,
+        "stars": 34686,
         "forks": 2295,
         "topics": [
           "go",
@@ -42598,13 +44912,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 15,
+        "stars": 16,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [34670,34674,34685]
+        "stars": [34670,34674,34686]
       },
       "release": {
         "tag": "v0.51.0",
@@ -42711,7 +45025,7 @@
         "homepage": "https://kafka.apache.org/",
         "language": "Java",
         "license": "Apache-2.0",
-        "stars": 33849,
+        "stars": 33850,
         "forks": 15534,
         "topics": [
           "java",
@@ -42727,13 +45041,13 @@
         "defaultBranch": "trunk"
       },
       "trend": {
-        "stars": 65,
+        "stars": 66,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [33784,33798,33821,33837,33849]
+        "stars": [33784,33798,33821,33837,33850]
       },
       "release": {
         "tag": "show",
@@ -43201,6 +45515,124 @@
         "container",
         "compose"
       ]
+    },
+    {
+      "slug": "kargo",
+      "name": "Kargo",
+      "repository": "https://github.com/akuity/kargo",
+      "category": "gitops",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "akuity/kargo",
+        "description": "Application lifecycle orchestration",
+        "homepage": "https://kargo.io/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 3685,
+        "forks": 440,
+        "topics": [
+          "argocd",
+          "cd",
+          "delivery",
+          "gitops",
+          "hacktoberfest",
+          "k8s",
+          "kubernetes",
+          "promotions"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-07-14T22:16:06Z",
+        "pushedAt": "2026-09-25T15:46:03Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [3685]
+      },
+      "release": {
+        "tag": "v1.11.4",
+        "publishedAt": "2026-09-03T23:36:40Z",
+        "url": "https://github.com/akuity/kargo/releases/tag/v1.11.4",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.12.0-rc.1",
+          "name": "First RC for 1.12",
+          "publishedAt": "2026-09-23T21:34:08Z",
+          "url": "https://github.com/akuity/kargo/releases/tag/v1.12.0-rc.1",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.9.12",
+          "name": "This patch release contains a fix for the helm build in the Dockerfile that caused an issue with any chart that had a k…",
+          "publishedAt": "2026-09-03T23:39:04Z",
+          "url": "https://github.com/akuity/kargo/releases/tag/v1.9.12",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.8.16",
+          "name": "This patch release contains a fix for the helm build in the Dockerfile that caused an issue with any chart that had a k…",
+          "publishedAt": "2026-09-03T23:40:12Z",
+          "url": "https://github.com/akuity/kargo/releases/tag/v1.8.16",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.4",
+          "name": "This patch release contains a fix for the helm build in the Dockerfile that caused an issue with any chart that had a k…",
+          "publishedAt": "2026-09-03T23:36:40Z",
+          "url": "https://github.com/akuity/kargo/releases/tag/v1.11.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.10.12",
+          "name": "This patch release contains a fix for the helm build in the Dockerfile that caused an issue with any chart that had a k…",
+          "publishedAt": "2026-09-03T23:37:49Z",
+          "url": "https://github.com/akuity/kargo/releases/tag/v1.10.12",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 37,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "kavita",
@@ -44138,7 +46570,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 27424,
-        "forks": 3199,
+        "forks": 3200,
         "topics": [
           "ai",
           "ai-age",
@@ -44244,7 +46676,7 @@
         "language": "Go",
         "license": "Apache-2.0",
         "stars": 15511,
-        "forks": 1805,
+        "forks": 1806,
         "topics": [
           "docker",
           "golang",
@@ -45399,6 +47831,109 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "kraken",
+      "name": "Kraken",
+      "repository": "https://github.com/uber/kraken",
+      "category": "container-registry",
+      "replaces": [
+        {
+          "tool": "distribution",
+          "fit": "partial",
+          "note": "Serves the registry API and spreads image layers peer to peer across large clusters, with S3, GCS or HDFS behind it."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "uber/kraken",
+        "description": "P2P Docker registry capable of distributing TBs of data in seconds",
+        "homepage": null,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 6750,
+        "forks": 488,
+        "topics": [
+          "bittorrent",
+          "container",
+          "containerd",
+          "docker",
+          "docker-image",
+          "docker-registry",
+          "p2p"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-12-06T06:04:35Z",
+        "pushedAt": "2026-09-25T14:03:19Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [6750]
+      },
+      "release": {
+        "tag": "v0.1.29",
+        "publishedAt": "2026-09-14T13:19:54Z",
+        "url": "https://github.com/uber/kraken/releases/tag/v0.1.29",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.1.29",
+          "name": "feat(bandwidth.Limiter): emit how much bandwidth throttling happens",
+          "publishedAt": "2026-09-14T13:19:54Z",
+          "url": "https://github.com/uber/kraken/releases/tag/v0.1.29",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.28",
+          "name": "fix(integ): Regenerate expired TLS certs used in integ tests",
+          "publishedAt": "2026-08-31T10:56:55Z",
+          "url": "https://github.com/uber/kraken/releases/tag/v0.1.28",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.27",
+          "name": "chore: add stdlib mock for io.Closer and update mockgen install instruction",
+          "publishedAt": "2026-07-06T09:38:25Z",
+          "url": "https://github.com/uber/kraken/releases/tag/v0.1.27",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.26",
+          "name": "ci: add clamav malware scan job",
+          "publishedAt": "2026-06-29T12:12:10Z",
+          "url": "https://github.com/uber/kraken/releases/tag/v0.1.26",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.25",
+          "name": "fix(scheduler): correctly handle torrent eviction from cache",
+          "publishedAt": "2026-06-22T14:26:47Z",
+          "url": "https://github.com/uber/kraken/releases/tag/v0.1.25",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 5,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "helm"
+      ]
     },
     {
       "slug": "krakend",
@@ -47849,6 +50384,124 @@
       ]
     },
     {
+      "slug": "libsql",
+      "name": "libSQL",
+      "repository": "https://github.com/tursodatabase/libsql",
+      "category": "relational-database",
+      "replaces": [
+        {
+          "tool": "sqlite",
+          "fit": "drop-in",
+          "note": "A fork of SQLite that keeps its file format and C API, adding a server mode, replication and vector search."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "tursodatabase/libsql",
+        "description": "libSQL is a fork of SQLite that is both Open Source, and Open Contributions.",
+        "homepage": "https://turso.tech/libsql",
+        "language": "C",
+        "license": "MIT",
+        "stars": 17237,
+        "forks": 533,
+        "topics": [
+          "database",
+          "embedded-database",
+          "rust",
+          "sqlite",
+          "webassembly"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-09-29T18:56:16Z",
+        "pushedAt": "2026-09-16T08:12:49Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [17237]
+      },
+      "release": {
+        "tag": "libsql-server-v0.24.32",
+        "publishedAt": "2025-02-14T12:59:35Z",
+        "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "libsql-server-v0.24.32",
+          "name": "sh",
+          "publishedAt": "2025-02-14T12:59:35Z",
+          "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32",
+          "prerelease": false
+        },
+        {
+          "tag": "libsql-server-v0.24.31",
+          "name": "sh",
+          "publishedAt": "2025-01-06T18:38:19Z",
+          "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.31",
+          "prerelease": false
+        },
+        {
+          "tag": "libsql-server-v0.24.30",
+          "name": "sh",
+          "publishedAt": "2024-12-17T12:52:26Z",
+          "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.30",
+          "prerelease": false
+        },
+        {
+          "tag": "libsql-server-v0.24.29",
+          "name": "sh",
+          "publishedAt": "2024-12-17T11:02:59Z",
+          "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.29",
+          "prerelease": false
+        },
+        {
+          "tag": "libsql-server-v0.24.28",
+          "name": "sh",
+          "publishedAt": "2024-10-30T19:40:05Z",
+          "url": "https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.28",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 3,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
+    },
+    {
       "slug": "lightdash",
       "name": "Lightdash",
       "repository": "https://github.com/lightdash/lightdash",
@@ -49050,7 +51703,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-03-10T18:58:00Z",
-        "pushedAt": "2026-09-26T14:59:16Z",
+        "pushedAt": "2026-09-26T16:39:55Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -49070,6 +51723,13 @@
         "signed": false
       },
       "releases": [
+        {
+          "tag": "b11201",
+          "name": "Revert \"Change max context length for auto-fitting with unified KV (#28849)\" (#29437)",
+          "publishedAt": "2026-09-26T16:39:56Z",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11201",
+          "prerelease": true
+        },
         {
           "tag": "b11200",
           "name": "jinja : implement sameas test (#29448)",
@@ -49096,13 +51756,6 @@
           "name": "opencl: add A8 Q8_0 non-MoE dp4a binary kernel (#29439)",
           "publishedAt": "2026-09-26T07:39:57Z",
           "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11194",
-          "prerelease": true
-        },
-        {
-          "tag": "b11193",
-          "name": "hexagon: find software divide calls using binary inspection tool (#29449)",
-          "publishedAt": "2026-09-26T03:30:45Z",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11193",
           "prerelease": true
         }
       ],
@@ -49282,7 +51935,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-05-21T07:19:12Z",
-        "pushedAt": "2026-09-26T16:33:45Z",
+        "pushedAt": "2026-09-26T16:41:53Z",
         "defaultBranch": "canary"
       },
       "trend": {
@@ -49398,7 +52051,7 @@
         "homepage": "https://localai.io",
         "language": "Go",
         "license": "MIT",
-        "stars": 49274,
+        "stars": 49275,
         "forks": 4472,
         "topics": [
           "agents",
@@ -49428,13 +52081,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 18,
+        "stars": 19,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [49256,49268,49274]
+        "stars": [49256,49268,49275]
       },
       "release": {
         "tag": "v4.10.0",
@@ -49753,7 +52406,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-05-23T00:06:06Z",
-        "pushedAt": "2026-09-26T16:36:15Z",
+        "pushedAt": "2026-09-26T16:42:27Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -55903,7 +58556,7 @@
         "homepage": "https://n8n.io",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 206033,
+        "stars": 206032,
         "forks": 60895,
         "topics": [
           "ai",
@@ -55935,13 +58588,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 161,
+        "stars": 160,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [205872,205943,206033]
+        "stars": [205872,205943,206032]
       },
       "release": {
         "tag": "n8n@2.40.7",
@@ -56917,7 +59570,7 @@
         "homepage": "https://netbird.io",
         "language": "Go",
         "license": "Other",
-        "stars": 29538,
+        "stars": 29539,
         "forks": 1710,
         "topics": [
           "golang",
@@ -56935,17 +59588,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-04-14T12:27:20Z",
-        "pushedAt": "2026-09-26T15:53:56Z",
+        "pushedAt": "2026-09-26T16:41:02Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 43,
+        "stars": 44,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [29495,29518,29538]
+        "stars": [29495,29518,29539]
       },
       "release": {
         "tag": "v0.79.0",
@@ -58664,7 +61317,7 @@
         "language": "JavaScript",
         "license": "Other",
         "stars": 122108,
-        "forks": 37990,
+        "forks": 37991,
         "topics": [
           "javascript",
           "js",
@@ -60033,6 +62686,131 @@
       "deploy": []
     },
     {
+      "slug": "oceanbase",
+      "name": "OceanBase",
+      "repository": "https://github.com/oceanbase/oceanbase",
+      "category": "relational-database",
+      "replaces": [
+        {
+          "tool": "mysql",
+          "fit": "full",
+          "note": "Speaks the MySQL protocol and dialect and scales out across nodes with Paxos replication; some MySQL features are missing."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "oceanbase/oceanbase",
+        "description": "OceanBase is the unified distributed database for the AI era — open-source, multi-model, one engine for your most demanding workloads.",
+        "homepage": "https://en.oceanbase.com",
+        "language": "C++",
+        "license": "Apache-2.0",
+        "stars": 10291,
+        "forks": 1921,
+        "topics": [
+          "analytics",
+          "cloud-native",
+          "database",
+          "distributed-database",
+          "fulltext",
+          "fulltext-search",
+          "fulltext-support",
+          "hacktoberfest",
+          "htap",
+          "mysql",
+          "mysql-compatibility",
+          "oceanbase",
+          "olap",
+          "oltp",
+          "paxos",
+          "scalable",
+          "vector",
+          "vector-database",
+          "vector-search",
+          "vectors"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2021-05-31T14:36:17Z",
+        "pushedAt": "2026-09-25T01:00:47Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [10291]
+      },
+      "release": {
+        "tag": "v4.4.2_CE_BP3",
+        "publishedAt": "2026-09-15T02:39:26Z",
+        "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v4.4.2_CE_BP3",
+          "name": "发布时间：2026 年 09 月 10 日",
+          "publishedAt": "2026-09-15T02:39:26Z",
+          "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP3",
+          "prerelease": false
+        },
+        {
+          "tag": "v5.0.1_CE",
+          "name": "| 项目 |     描述    |",
+          "publishedAt": "2026-08-10T07:26:18Z",
+          "url": "https://github.com/oceanbase/oceanbase/releases/tag/v5.0.1_CE",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.4.2_CE_BP2",
+          "name": "| 项目 | 描述 |",
+          "publishedAt": "2026-07-21T02:26:04Z",
+          "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP2",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.6.0_CE",
+          "name": "| 项目 |     描述    |",
+          "publishedAt": "2026-07-17T09:59:02Z",
+          "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.6.0_CE",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.4.2_CE_BP1",
+          "name": "| 项目 |     描述    |",
+          "publishedAt": "2026-05-08T06:26:44Z",
+          "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 81,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "package"
+      ]
+    },
+    {
       "slug": "ocis",
       "name": "ownCloud Infinite Scale",
       "repository": "https://github.com/owncloud/ocis",
@@ -60532,7 +63310,7 @@
         "language": "Shell",
         "license": "MIT",
         "stars": 189946,
-        "forks": 27724,
+        "forks": 27725,
         "topics": [
           "cli",
           "cli-app",
@@ -60934,7 +63712,7 @@
         "homepage": "https://oneuptime.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 7657,
+        "stars": 7658,
         "forks": 465,
         "topics": [
           "devops",
@@ -60953,13 +63731,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1,
+        "stars": 2,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [7656,7657]
+        "stars": [7656,7658]
       },
       "release": {
         "tag": "14.0.6",
@@ -61734,7 +64512,7 @@
         "homepage": "https://openbao.org/",
         "language": "Go",
         "license": "MPL-2.0",
-        "stars": 7926,
+        "stars": 7928,
         "forks": 589,
         "topics": [
           "go",
@@ -61749,13 +64527,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 468,
+        "stars": 470,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [7458,7468,7484,7603,7926]
+        "stars": [7458,7468,7484,7603,7928]
       },
       "release": {
         "tag": "v2.7.0",
@@ -61881,8 +64659,8 @@
         "homepage": "https://opencode.ai",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 210190,
-        "forks": 27799,
+        "stars": 210189,
+        "forks": 27800,
         "topics": [],
         "archived": false,
         "fork": false,
@@ -61892,13 +64670,13 @@
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 565,
+        "stars": 564,
         "exact": false,
         "since": "2026-09-23T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-23",
-        "stars": [209625,209847,210005,210190]
+        "stars": [209625,209847,210005,210189]
       },
       "release": {
         "tag": "v1.18.32",
@@ -64211,7 +66989,7 @@
         "homepage": "https://papermc.io/software/paper",
         "language": "Java",
         "license": "Other",
-        "stars": 12686,
+        "stars": 12687,
         "forks": 3540,
         "topics": [
           "bukkit",
@@ -64233,13 +67011,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 10,
+        "stars": 11,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [12676,12677,12678,12683,12686]
+        "stars": [12676,12677,12678,12683,12687]
       },
       "release": {
         "tag": "26.2",
@@ -64497,7 +67275,7 @@
         "homepage": "http://docs.paperless-ngx.com/",
         "language": "Python",
         "license": "GPL-3.0",
-        "stars": 46049,
+        "stars": 46050,
         "forks": 3188,
         "topics": [
           "ai",
@@ -64521,13 +67299,13 @@
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 36,
+        "stars": 37,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [46013,46049]
+        "stars": [46013,46050]
       },
       "release": {
         "tag": "v3.2.1",
@@ -64691,6 +67469,139 @@
       "deploy": [
         "container",
         "compose"
+      ]
+    },
+    {
+      "slug": "paradedb",
+      "name": "ParadeDB",
+      "repository": "https://github.com/paradedb/paradedb",
+      "category": "search-engine",
+      "replaces": [
+        {
+          "tool": "elasticsearch",
+          "fit": "partial",
+          "note": "BM25 full-text search and aggregations inside Postgres through the pg_search extension, queried in SQL."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "paradedb/paradedb",
+        "description": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
+        "homepage": "https://paradedb.com",
+        "language": "Rust",
+        "license": "AGPL-3.0",
+        "stars": 9309,
+        "forks": 465,
+        "topics": [
+          "aggregations",
+          "analytics",
+          "bm25",
+          "columnar-storage",
+          "distributed-search",
+          "full-text-search",
+          "htap",
+          "hybrid-search",
+          "mpp",
+          "olap",
+          "postgresql",
+          "postgresql-extension",
+          "real-time-analytics",
+          "rust",
+          "search-engine",
+          "semantic-search",
+          "similarity-search",
+          "sparse-vector",
+          "vector-database",
+          "vector-search"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-06-30T20:21:47Z",
+        "pushedAt": "2026-09-26T11:48:12Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9309]
+      },
+      "release": {
+        "tag": "v0.25.10",
+        "publishedAt": "2026-09-23T16:50:38Z",
+        "url": "https://github.com/paradedb/paradedb/releases/tag/v0.25.10",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.25.10",
+          "name": "chore: Generate Dockerfiles for v0.25.9 by @paradedb-github-bot[bot] in",
+          "publishedAt": "2026-09-23T16:50:38Z",
+          "url": "https://github.com/paradedb/paradedb/releases/tag/v0.25.10",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.26.0-rc.1",
+          "name": "chore: Generate Dockerfiles for v0.25.0 by @paradedb-github-bot[bot] in",
+          "publishedAt": "2026-09-11T21:57:22Z",
+          "url": "https://github.com/paradedb/paradedb/releases/tag/v0.26.0-rc.1",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.25.9",
+          "name": "chore: Generate Dockerfiles for v0.25.8 by @paradedb-github-bot[bot] in",
+          "publishedAt": "2026-09-11T17:58:52Z",
+          "url": "https://github.com/paradedb/paradedb/releases/tag/v0.25.9",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.25.8",
+          "name": "chore: Generate Dockerfiles for v0.25.7 by @paradedb-github-bot[bot] in",
+          "publishedAt": "2026-09-10T16:47:30Z",
+          "url": "https://github.com/paradedb/paradedb/releases/tag/v0.25.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.25.7",
+          "name": "chore: Generate Dockerfiles for v0.25.6 by @paradedb-github-bot[bot] in",
+          "publishedAt": "2026-09-09T15:19:35Z",
+          "url": "https://github.com/paradedb/paradedb/releases/tag/v0.25.7",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 35,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "package"
       ]
     },
     {
@@ -65071,7 +67982,7 @@
         "language": "TypeScript",
         "license": "MIT",
         "stars": 44976,
-        "forks": 4219,
+        "forks": 4220,
         "topics": [
           "cms",
           "content-management",
@@ -67966,7 +70877,7 @@
         "language": "Rust",
         "license": "MIT",
         "stars": 36653,
-        "forks": 1875,
+        "forks": 1876,
         "topics": [
           "dependency-manager",
           "install",
@@ -68084,6 +70995,140 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "pocket-id",
+      "name": "Pocket ID",
+      "repository": "https://github.com/pocket-id/pocket-id",
+      "category": "identity-provider",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "pocket-id/pocket-id",
+        "description": "The most user-friendly OpenID Connect Certified™ and OAuth 2.0 provider that lets users sign in to your applications with passkeys.",
+        "homepage": "https://pocket-id.org",
+        "language": "Go",
+        "license": "BSD-2-Clause",
+        "stars": 9288,
+        "forks": 312,
+        "topics": [
+          "idp",
+          "oidc",
+          "passkeys",
+          "self-hosted"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-08-11T18:57:32Z",
+        "pushedAt": "2026-09-26T14:05:12Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9288]
+      },
+      "release": {
+        "tag": "v2.16.0",
+        "publishedAt": "2026-09-20T14:48:31Z",
+        "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.16.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.16.0",
+          "name": "update the design of the email templates (3249b0d by @stonith404)",
+          "publishedAt": "2026-09-20T14:48:31Z",
+          "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.16.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.15.0",
+          "name": "show admin UI warning for SQLite on networked filesystem (#1713 by @ItalyPaleAle)",
+          "publishedAt": "2026-09-19T18:35:49Z",
+          "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.15.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.14.0",
+          "name": "> [!TIP]",
+          "publishedAt": "2026-08-18T20:15:41Z",
+          "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.14.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.13.0",
+          "name": "retry qr code login polling for known transient gateway responses (7039692 by @stonith404)",
+          "publishedAt": "2026-08-07T09:26:15Z",
+          "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.13.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.12.0",
+          "name": "> [!WARNING]",
+          "publishedAt": "2026-07-29T23:05:53Z",
+          "url": "https://github.com/pocket-id/pocket-id/releases/tag/v2.12.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 17,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "x86",
+            "armv7"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "freebsd",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "openbsd",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "binary"
+      ]
     },
     {
       "slug": "pocketbase",
@@ -68825,7 +71870,7 @@
         "homepage": "https://postalserver.io",
         "language": "Ruby",
         "license": "MIT",
-        "stars": 16829,
+        "stars": 16828,
         "forks": 1294,
         "topics": [
           "mail",
@@ -68848,7 +71893,7 @@
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [16829,16829]
+        "stars": [16829,16828]
       },
       "release": {
         "tag": "3.3.7",
@@ -69121,7 +72166,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2020-01-23T22:46:58Z",
-        "pushedAt": "2026-09-26T16:34:12Z",
+        "pushedAt": "2026-09-26T16:47:13Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -70115,7 +73160,7 @@
         "homepage": "https://prometheus.io/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 66248,
+        "stars": 66251,
         "forks": 10862,
         "topics": [
           "alerting",
@@ -70134,13 +73179,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 72,
+        "stars": 75,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [66176,66193,66206,66224,66248]
+        "stars": [66176,66193,66206,66224,66251]
       },
       "release": {
         "tag": "v3.15.0",
@@ -71943,7 +74988,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-11-08T17:37:05Z",
-        "pushedAt": "2026-09-26T16:32:18Z",
+        "pushedAt": "2026-09-26T16:37:35Z",
         "defaultBranch": "master"
       },
       "trend": {
@@ -72326,7 +75371,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2025-06-26T01:37:46Z",
-        "pushedAt": "2026-09-26T16:35:35Z",
+        "pushedAt": "2026-09-26T16:46:31Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -73884,7 +76929,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-19T18:46:33Z",
-        "pushedAt": "2026-09-26T15:27:36Z",
+        "pushedAt": "2026-09-26T16:39:32Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -74260,7 +77305,7 @@
         "language": "Python",
         "license": "Apache-2.0",
         "stars": 54347,
-        "forks": 11068,
+        "forks": 11069,
         "topics": [
           "client",
           "cookies",
@@ -74583,8 +77628,8 @@
         "homepage": null,
         "language": "Rust",
         "license": "Unlicense",
-        "stars": 68621,
-        "forks": 3726,
+        "stars": 68622,
+        "forks": 3728,
         "topics": [
           "cli",
           "command-line",
@@ -74605,13 +77650,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 110,
+        "stars": 111,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [68511,68542,68573,68601,68621]
+        "stars": [68511,68542,68573,68601,68622]
       },
       "release": {
         "tag": "15.2.0",
@@ -75847,6 +78892,97 @@
       "deploy": []
     },
     {
+      "slug": "runc",
+      "name": "runc",
+      "repository": "https://github.com/opencontainers/runc",
+      "category": "container-engine",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "opencontainers/runc",
+        "description": "CLI tool for spawning and running containers according to the OCI specification",
+        "homepage": "https://www.opencontainers.org/",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 13460,
+        "forks": 2334,
+        "topics": [
+          "containers",
+          "docker",
+          "oci"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-06-05T23:30:45Z",
+        "pushedAt": "2026-09-25T19:07:55Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [13460]
+      },
+      "release": {
+        "tag": "v1.5.2",
+        "publishedAt": "2026-09-25T21:13:32Z",
+        "url": "https://github.com/opencontainers/runc/releases/tag/v1.5.2",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.5.2",
+          "name": "runc v1.5.2 -- \"Всё сбудется, стоит только расхотеть!\"",
+          "publishedAt": "2026-09-25T21:13:32Z",
+          "url": "https://github.com/opencontainers/runc/releases/tag/v1.5.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.5.1",
+          "name": "runc v1.5.1 -- \"El lujo es vulgaridad, dijo, y me conquistó.\"",
+          "publishedAt": "2026-07-14T01:36:25Z",
+          "url": "https://github.com/opencontainers/runc/releases/tag/v1.5.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.5.0",
+          "name": "runc v1.5.0 -- \"Why do we even have that lever?!\"",
+          "publishedAt": "2026-06-19T11:44:13Z",
+          "url": "https://github.com/opencontainers/runc/releases/tag/v1.5.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.5.0-rc.3",
+          "name": "runc 1.5.0-rc.3 -- \"The best way to get a drink out of a Vogon is to stick your finger down his throat.\"",
+          "publishedAt": "2026-06-13T17:24:34Z",
+          "url": "https://github.com/opencontainers/runc/releases/tag/v1.5.0-rc.3",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.4.3",
+          "name": "runc 1.4.3 -- \"The best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.\"",
+          "publishedAt": "2026-06-13T17:23:20Z",
+          "url": "https://github.com/opencontainers/runc/releases/tag/v1.4.3",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 8,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "rush",
       "name": "Rush",
       "repository": "https://github.com/microsoft/rushstack",
@@ -75953,7 +79089,7 @@
         "language": "Rust",
         "license": "AGPL-3.0",
         "stars": 124576,
-        "forks": 19278,
+        "forks": 19279,
         "topics": [
           "android",
           "anydesk",
@@ -77120,6 +80256,128 @@
       ]
     },
     {
+      "slug": "sealed-secrets",
+      "name": "Sealed Secrets",
+      "repository": "https://github.com/bitnami/sealed-secrets",
+      "category": "encrypted-files",
+      "replaces": [
+        {
+          "tool": "sops",
+          "fit": "partial",
+          "note": "Kubernetes Secrets only, encrypted against a key held by the cluster controller and decrypted there."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "bitnami/sealed-secrets",
+        "description": "A Kubernetes controller and tool for one-way encrypted Secrets",
+        "homepage": null,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 9291,
+        "forks": 779,
+        "topics": [
+          "devops-workflow",
+          "encrypt-secrets",
+          "gitops",
+          "kubernetes",
+          "kubernetes-secrets"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-05-29T03:09:47Z",
+        "pushedAt": "2026-09-23T07:45:20Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9291]
+      },
+      "release": {
+        "tag": "v0.40.0",
+        "publishedAt": "2026-09-10T16:10:29Z",
+        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.40.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "helm-v2.20.0",
+          "name": "Helm chart for the sealed-secrets controller.",
+          "publishedAt": "2026-09-10T18:48:28Z",
+          "url": "https://github.com/bitnami/sealed-secrets/releases/tag/helm-v2.20.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.40.0",
+          "name": "sealed-secrets-v0.40.0",
+          "publishedAt": "2026-09-10T16:10:29Z",
+          "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.40.0",
+          "prerelease": false
+        },
+        {
+          "tag": "helm-v2.19.3",
+          "name": "Helm chart for the sealed-secrets controller.",
+          "publishedAt": "2026-08-20T08:56:57Z",
+          "url": "https://github.com/bitnami/sealed-secrets/releases/tag/helm-v2.19.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.39.1",
+          "name": "sealed-secrets-v0.39.1",
+          "publishedAt": "2026-08-20T08:53:22Z",
+          "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.39.1",
+          "prerelease": false
+        },
+        {
+          "tag": "helm-v2.19.2",
+          "name": "Helm chart for the sealed-secrets controller.",
+          "publishedAt": "2026-08-18T09:57:04Z",
+          "url": "https://github.com/bitnami/sealed-secrets/releases/tag/helm-v2.19.2",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 9,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "arm",
+            "ppc64le"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "seaweedfs",
       "name": "SeaweedFS",
       "repository": "https://github.com/seaweedfs/seaweedfs",
@@ -77639,7 +80897,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2010-07-22T07:11:11Z",
-        "pushedAt": "2026-09-26T16:11:23Z",
+        "pushedAt": "2026-09-26T16:45:24Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -77739,7 +80997,7 @@
         "homepage": "https://sglang.io",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 36451,
+        "stars": 36452,
         "forks": 9158,
         "topics": [
           "attention",
@@ -77765,17 +81023,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-01-08T04:15:52Z",
-        "pushedAt": "2026-09-26T16:13:35Z",
+        "pushedAt": "2026-09-26T16:48:03Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 22,
+        "stars": 23,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [36429,36451]
+        "stars": [36429,36452]
       },
       "release": {
         "tag": "v0.5.20",
@@ -77822,7 +81080,7 @@
         }
       ],
       "contributors": {
-        "count": 169,
+        "count": 170,
         "capped": true
       },
       "platforms": [],
@@ -78230,7 +81488,7 @@
         "homepage": "https://signoz.io",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 32206,
+        "stars": 32207,
         "forks": 2508,
         "topics": [
           "apm",
@@ -78262,13 +81520,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 14,
+        "stars": 15,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [32192,32206]
+        "stars": [32192,32207]
       },
       "release": {
         "tag": "v0.143.0",
@@ -78367,7 +81625,7 @@
         "homepage": "https://sillytavern.app",
         "language": "JavaScript",
         "license": "AGPL-3.0",
-        "stars": 33799,
+        "stars": 33800,
         "forks": 6370,
         "topics": [
           "ai",
@@ -78382,13 +81640,13 @@
         "defaultBranch": "release"
       },
       "trend": {
-        "stars": 33,
+        "stars": 34,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [33766,33799]
+        "stars": [33766,33800]
       },
       "release": {
         "tag": "1.19.0",
@@ -78472,7 +81730,7 @@
         "language": "Vue",
         "license": "AGPL-3.0",
         "stars": 7168,
-        "forks": 5294,
+        "forks": 5293,
         "topics": [
           "analytics",
           "bitly-alternative",
@@ -78579,7 +81837,7 @@
         "homepage": "https://b3log.org/siyuan",
         "language": "TypeScript",
         "license": "AGPL-3.0",
-        "stars": 46521,
+        "stars": 46522,
         "forks": 3029,
         "topics": [
           "agentic-ai",
@@ -78600,13 +81858,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 31,
+        "stars": 32,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [46490,46502,46521]
+        "stars": [46490,46502,46522]
       },
       "release": {
         "tag": "v3.8.5",
@@ -80059,7 +83317,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-01-27T07:47:06Z",
-        "pushedAt": "2026-09-26T15:48:22Z",
+        "pushedAt": "2026-09-26T16:41:53Z",
         "defaultBranch": "develop"
       },
       "trend": {
@@ -81919,7 +85177,7 @@
         "homepage": "https://supabase.com",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 110779,
+        "stars": 110778,
         "forks": 14998,
         "topics": [
           "ai",
@@ -81950,13 +85208,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 47,
+        "stars": 46,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [110732,110761,110779]
+        "stars": [110732,110761,110778]
       },
       "release": {
         "tag": "v1.26.08",
@@ -82145,7 +85403,7 @@
         "homepage": "https://superset.apache.org/",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 74931,
+        "stars": 74933,
         "forks": 18389,
         "topics": [
           "analytics",
@@ -82175,13 +85433,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 20,
+        "stars": 22,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [74911,74919,74931]
+        "stars": [74911,74919,74933]
       },
       "release": {
         "tag": "6.1.0",
@@ -83521,8 +86779,8 @@
         "homepage": "https://tailwindcss.com/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 97693,
-        "forks": 6735,
+        "stars": 97692,
+        "forks": 6737,
         "topics": [
           "css",
           "css-framework",
@@ -83540,13 +86798,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 19,
+        "stars": 18,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [97674,97693]
+        "stars": [97674,97692]
       },
       "release": {
         "tag": "v4.3.3",
@@ -83782,7 +87040,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-01-28T13:37:08Z",
-        "pushedAt": "2026-09-26T15:24:42Z",
+        "pushedAt": "2026-09-26T16:39:45Z",
         "defaultBranch": "development"
       },
       "trend": null,
@@ -84311,6 +87569,112 @@
       "deploy": []
     },
     {
+      "slug": "telegraf",
+      "name": "Telegraf",
+      "repository": "https://github.com/influxdata/telegraf",
+      "category": "metrics",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "influxdata/telegraf",
+        "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
+        "homepage": "https://influxdata.com/telegraf",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 17835,
+        "forks": 5839,
+        "topics": [
+          "golang",
+          "hacktoberfest",
+          "influxdb",
+          "json",
+          "kafka",
+          "logs",
+          "metrics",
+          "modbus",
+          "monitoring",
+          "mqtt",
+          "opcua",
+          "telegraf",
+          "telemetry-collection",
+          "time-series",
+          "windows-eventlog",
+          "xpath"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-04-01T16:28:44Z",
+        "pushedAt": "2026-09-25T13:39:19Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [17835]
+      },
+      "release": {
+        "tag": "v1.40.1",
+        "publishedAt": "2026-09-21T18:35:03Z",
+        "url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.40.1",
+          "name": "Arch | Platform | Package | SHA256",
+          "publishedAt": "2026-09-21T18:35:03Z",
+          "url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.40.0",
+          "name": "PR #19440 fixes an issue",
+          "publishedAt": "2026-09-07T19:17:30Z",
+          "url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.39.3",
+          "name": "Arch | Platform | Package | SHA256",
+          "publishedAt": "2026-08-10T19:30:41Z",
+          "url": "https://github.com/influxdata/telegraf/releases/tag/v1.39.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.39.2",
+          "name": "Arch | Platform | Package | SHA256",
+          "publishedAt": "2026-07-20T19:43:14Z",
+          "url": "https://github.com/influxdata/telegraf/releases/tag/v1.39.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.39.1",
+          "name": "Arch | Platform | Package | SHA256",
+          "publishedAt": "2026-06-29T18:06:33Z",
+          "url": "https://github.com/influxdata/telegraf/releases/tag/v1.39.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 33,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
       "slug": "telescope-nvim",
       "name": "telescope.nvim",
       "repository": "https://github.com/nvim-telescope/telescope.nvim",
@@ -84665,6 +88029,248 @@
       ]
     },
     {
+      "slug": "temporal",
+      "name": "Temporal",
+      "repository": "https://github.com/temporalio/temporal",
+      "category": "workflow-orchestration",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "temporalio/temporal",
+        "description": "Temporal service",
+        "homepage": "https://docs.temporal.io",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 23303,
+        "forks": 1928,
+        "topics": [
+          "cronjob-scheduler",
+          "distributed-cron",
+          "distributed-systems",
+          "durable-execution",
+          "golang",
+          "microservice-framework",
+          "microservice-orchestration",
+          "microservices-architecture",
+          "orchestrator",
+          "service-bus",
+          "service-fabric",
+          "workflow-automation",
+          "workflow-engine",
+          "workflow-management",
+          "workflow-management-system",
+          "workflows"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2019-10-16T22:15:35Z",
+        "pushedAt": "2026-09-26T12:22:25Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [23303]
+      },
+      "release": {
+        "tag": "v1.32.0",
+        "publishedAt": "2026-09-11T16:10:29Z",
+        "url": "https://github.com/temporalio/temporal/releases/tag/v1.32.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.30.7",
+          "name": "Bring in latest manual docker build action to v1.30.x",
+          "publishedAt": "2026-09-18T00:08:08Z",
+          "url": "https://github.com/temporalio/temporal/releases/tag/v1.30.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.31.3",
+          "name": "Cherry-pick #11090: Add panic handlers to matching handler APIs",
+          "publishedAt": "2026-09-18T20:31:24Z",
+          "url": "https://github.com/temporalio/temporal/releases/tag/v1.31.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.32.0",
+          "name": "Standalone Activities and start delay are now enabled by default via activity.enableStandalone and activity.startDelayE…",
+          "publishedAt": "2026-09-11T16:10:29Z",
+          "url": "https://github.com/temporalio/temporal/releases/tag/v1.32.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.30.6",
+          "name": "Bump Alpine to 3.23.5 in",
+          "publishedAt": "2026-07-08T17:10:18Z",
+          "url": "https://github.com/temporalio/temporal/releases/tag/v1.30.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.31.2",
+          "name": "Bump defaultCliVersion to 1.7.2 for v1.31.1 admin-tools",
+          "publishedAt": "2026-07-08T17:10:11Z",
+          "url": "https://github.com/temporalio/temporal/releases/tag/v1.31.2",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 59,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm",
+        "binary"
+      ]
+    },
+    {
+      "slug": "tengine",
+      "name": "Tengine",
+      "repository": "https://github.com/alibaba/tengine",
+      "category": "reverse-proxy",
+      "replaces": [
+        {
+          "tool": "nginx",
+          "fit": "drop-in",
+          "note": "Built on nginx and reads its configuration, adding dynamic upstreams, active health checks and more load-balancing methods."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "alibaba/tengine",
+        "description": "A high-performance web server and reverse proxy, 100% compatible with nginx.",
+        "homepage": "https://tengine.taobao.org",
+        "language": "C",
+        "license": "BSD-2-Clause",
+        "stars": 13381,
+        "forks": 2504,
+        "topics": [
+          "forward-proxy",
+          "health-check",
+          "http3",
+          "kubernetes-ingress",
+          "load-balancer",
+          "lua",
+          "nginx",
+          "quic",
+          "reverse-proxy",
+          "sm2",
+          "tcp-proxy",
+          "tengine",
+          "tlcp",
+          "tls",
+          "web-server"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-03-21T06:34:37Z",
+        "pushedAt": "2026-09-07T02:39:23Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [13381]
+      },
+      "release": {
+        "tag": "3.1.0",
+        "publishedAt": "2023-10-27T11:16:27Z",
+        "url": "https://github.com/alibaba/tengine/releases/tag/3.1.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "3.2.0-rc5",
+          "name": "Tengine-3.2.0-rc5",
+          "publishedAt": "2026-09-04T11:54:32Z",
+          "url": "https://github.com/alibaba/tengine/releases/tag/3.2.0-rc5",
+          "prerelease": true
+        },
+        {
+          "tag": "3.2.0-rc4",
+          "name": "Tengine-3.2.0-rc4",
+          "publishedAt": "2026-09-01T10:55:21Z",
+          "url": "https://github.com/alibaba/tengine/releases/tag/3.2.0-rc4",
+          "prerelease": true
+        },
+        {
+          "tag": "3.2.0-rc3",
+          "name": "Tengine-3.2.0-rc3",
+          "publishedAt": "2026-08-11T14:59:20Z",
+          "url": "https://github.com/alibaba/tengine/releases/tag/3.2.0-rc3",
+          "prerelease": true
+        },
+        {
+          "tag": "3.2.0-rc2",
+          "name": "Tengine-3.2.0-rc2",
+          "publishedAt": "2026-08-07T16:06:32Z",
+          "url": "https://github.com/alibaba/tengine/releases/tag/3.2.0-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "3.2.0-rc1",
+          "name": "Tengine-3.2.0-rc1",
+          "publishedAt": "2026-08-01T20:23:18Z",
+          "url": "https://github.com/alibaba/tengine/releases/tag/3.2.0-rc1",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 2,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
       "slug": "terraform",
       "name": "Terraform",
       "repository": "https://github.com/hashicorp/terraform",
@@ -84758,6 +88364,123 @@
       "maintainerVerified": false,
       "flags": [],
       "terms": "source-available",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "terragrunt",
+      "name": "Terragrunt",
+      "repository": "https://github.com/gruntwork-io/terragrunt",
+      "category": "infrastructure-as-code",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "gruntwork-io/terragrunt",
+        "description": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
+        "homepage": "https://terragrunt.com",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 9856,
+        "forks": 1227,
+        "topics": [
+          "aws",
+          "cli",
+          "developer-tools",
+          "devops",
+          "opentofu",
+          "terraform"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-05-23T22:17:48Z",
+        "pushedAt": "2026-09-26T12:19:46Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [9856]
+      },
+      "release": {
+        "tag": "v1.1.6",
+        "publishedAt": "2026-09-21T13:27:08Z",
+        "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.6",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v1.2.0-rc1",
+          "name": "This is the first release candidate for Terragrunt v1.2.",
+          "publishedAt": "2026-09-24T14:40:25Z",
+          "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "v1.1.6",
+          "name": "On Windows, find, list and browse returned nothing for a Git-based filter such as --filter '[main...HEAD]' when the dif…",
+          "publishedAt": "2026-09-21T13:27:08Z",
+          "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.5",
+          "name": "Two dependency blocks with different labels can point at the same config_path. Both parse, so the same unit is declared…",
+          "publishedAt": "2026-09-14T21:06:29Z",
+          "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.4",
+          "name": "Declaring two dependency blocks with the same label in one terragrunt.hcl configuration file parsed without error, and…",
+          "publishedAt": "2026-08-27T17:52:27Z",
+          "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.4",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.3",
+          "name": "A unit input referencing a values.* key that the unit's values file doesn't define no longer fails with Unsupported att…",
+          "publishedAt": "2026-08-13T14:48:22Z",
+          "url": "https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.3",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 11,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64",
+            "x86"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "x86"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
       "capabilities": {},
       "deploy": []
     },
@@ -85027,7 +88750,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2014-12-25T10:34:46Z",
-        "pushedAt": "2026-09-25T19:19:49Z",
+        "pushedAt": "2026-09-26T16:48:35Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -85658,7 +89381,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2017-03-07T20:03:41Z",
-        "pushedAt": "2026-09-26T16:20:10Z",
+        "pushedAt": "2026-09-26T16:45:29Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -87177,7 +90900,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-10-05T17:37:11Z",
-        "pushedAt": "2026-09-26T16:08:45Z",
+        "pushedAt": "2026-09-26T16:45:53Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -87390,7 +91113,7 @@
         "homepage": "https://twinny.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 3651,
+        "stars": 3652,
         "forks": 229,
         "topics": [
           "ai-coding-assistant",
@@ -87420,13 +91143,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [3651,3651]
+        "stars": [3651,3652]
       },
       "release": {
         "tag": "v4.0.20",
@@ -88222,7 +91945,7 @@
         "homepage": "https://umami.is",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 39027,
+        "stars": 39028,
         "forks": 8126,
         "topics": [
           "analytics",
@@ -88243,13 +91966,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 73,
+        "stars": 74,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [38954,38973,38991,39008,39027]
+        "stars": [38954,38973,38991,39008,39028]
       },
       "release": {
         "tag": "v3.4.0",
@@ -89063,7 +92786,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-10-02T20:24:11Z",
-        "pushedAt": "2026-09-26T13:35:46Z",
+        "pushedAt": "2026-09-26T16:45:44Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -89861,7 +93584,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 68187,
+        "stars": 68188,
         "forks": 3252,
         "topics": [
           "bitwarden",
@@ -89879,13 +93602,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 162,
+        "stars": 163,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [68025,68066,68110,68150,68187]
+        "stars": [68025,68066,68110,68150,68188]
       },
       "release": {
         "tag": "1.37.3",
@@ -91046,6 +94769,111 @@
       "deploy": []
     },
     {
+      "slug": "vitess",
+      "name": "Vitess",
+      "repository": "https://github.com/vitessio/vitess",
+      "category": "relational-database",
+      "replaces": [],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-09-26T16:46:19.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "vitessio/vitess",
+        "description": "Vitess is a database clustering system for horizontal scaling of MySQL.",
+        "homepage": "http://vitess.io",
+        "language": "Go",
+        "license": "Apache-2.0",
+        "stars": 21356,
+        "forks": 2407,
+        "topics": [
+          "cncf",
+          "database-cluster",
+          "kubernetes",
+          "mysql",
+          "shard",
+          "vitess"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2013-06-27T21:20:28Z",
+        "pushedAt": "2026-09-26T16:45:27Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-09-26",
+        "stars": [21356]
+      },
+      "release": {
+        "tag": "v24.0.3",
+        "publishedAt": "2026-09-03T14:40:30Z",
+        "url": "https://github.com/vitessio/vitess/releases/tag/v24.0.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v24.0.3",
+          "name": "Vitess v24.0.3",
+          "publishedAt": "2026-09-03T14:40:30Z",
+          "url": "https://github.com/vitessio/vitess/releases/tag/v24.0.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v23.0.6",
+          "name": "Vitess v23.0.6",
+          "publishedAt": "2026-09-03T14:57:44Z",
+          "url": "https://github.com/vitessio/vitess/releases/tag/v23.0.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v24.0.2",
+          "name": "Vitess v24.0.2",
+          "publishedAt": "2026-06-24T16:26:36Z",
+          "url": "https://github.com/vitessio/vitess/releases/tag/v24.0.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v23.0.5",
+          "name": "Vitess v23.0.5",
+          "publishedAt": "2026-06-24T15:33:49Z",
+          "url": "https://github.com/vitessio/vitess/releases/tag/v23.0.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v24.0.1",
+          "name": "Vitess v24.0.1",
+          "publishedAt": "2026-05-07T15:33:25Z",
+          "url": "https://github.com/vitessio/vitess/releases/tag/v24.0.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 37,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary",
+        "package"
+      ]
+    },
+    {
       "slug": "vitest",
       "name": "Vitest",
       "repository": "https://github.com/vitest-dev/vitest",
@@ -91180,7 +95008,7 @@
         "homepage": "https://vllm.ai",
         "language": "Python",
         "license": "Apache-2.0",
-        "stars": 92718,
+        "stars": 92717,
         "forks": 22687,
         "topics": [
           "amd",
@@ -91212,13 +95040,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 87,
+        "stars": 86,
         "exact": false,
         "since": "2026-09-24T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [92631,92672,92718]
+        "stars": [92631,92672,92717]
       },
       "release": {
         "tag": "v0.30.0",
@@ -91314,8 +95142,8 @@
         "homepage": "https://code.visualstudio.com",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 193009,
-        "forks": 43481,
+        "stars": 193011,
+        "forks": 43483,
         "topics": [
           "editor",
           "electron",
@@ -91331,13 +95159,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 211,
+        "stars": 213,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [192798,192822,192859,192887,193009]
+        "stars": [192798,192822,192859,192887,193011]
       },
       "release": {
         "tag": "1.139.1",
@@ -91752,7 +95580,7 @@
         "homepage": "https://www.waveterm.dev",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 22368,
+        "stars": 22367,
         "forks": 1143,
         "topics": [
           "command-line",
@@ -91772,13 +95600,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 5,
+        "stars": 4,
         "exact": false,
         "since": "2026-09-25T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-25",
-        "stars": [22363,22368]
+        "stars": [22363,22367]
       },
       "release": {
         "tag": "v0.14.5",
@@ -92140,7 +95968,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-03-10T10:08:14Z",
-        "pushedAt": "2026-09-26T16:35:32Z",
+        "pushedAt": "2026-09-26T16:48:49Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -92964,7 +96792,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2019-04-03T18:06:38Z",
-        "pushedAt": "2026-09-26T13:52:11Z",
+        "pushedAt": "2026-09-26T16:45:03Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -93490,7 +97318,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2023-02-16T04:37:02Z",
-        "pushedAt": "2026-09-26T16:22:15Z",
+        "pushedAt": "2026-09-26T16:50:14Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -93999,7 +97827,7 @@
         "language": "Go",
         "license": "MIT",
         "stars": 16017,
-        "forks": 1731,
+        "forks": 1733,
         "topics": [
           "bash",
           "cli",
@@ -94726,7 +98554,7 @@
         "homepage": "https://zed.dev",
         "language": "Rust",
         "license": "Other",
-        "stars": 90926,
+        "stars": 90927,
         "forks": 10783,
         "topics": [
           "gpui",
@@ -94742,13 +98570,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 199,
+        "stars": 200,
         "exact": false,
         "since": "2026-09-22T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-09-22",
-        "stars": [90727,90772,90827,90877,90926]
+        "stars": [90727,90772,90827,90877,90927]
       },
       "release": {
         "tag": "v1.21.0",
@@ -97256,6 +101084,14 @@
       "category": "dns-sinkhole",
       "description": "Hosted DNS resolver that blocks ads, trackers and malicious domains.",
       "slug": "nextdns"
+    },
+    {
+      "name": "ngrok",
+      "homepage": "https://ngrok.com",
+      "vendor": "ngrok",
+      "category": "reverse-proxy",
+      "description": "Hosted tunnels that expose services running on a private machine or network through the vendor's edge.",
+      "slug": "ngrok"
     },
     {
       "name": "Notion",
