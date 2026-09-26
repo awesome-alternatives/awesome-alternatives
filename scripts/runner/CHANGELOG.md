@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.1] - 2026-09-26
+
+### Bug Fixes
+
+- fix(refresh): read around organisations with an IP allow list (#249)
+
 ## [0.4.0] - 2026-09-25
 
 ### Features
