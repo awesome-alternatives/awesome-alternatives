@@ -5,6 +5,7 @@ import "../styles/fonts.css";
 import "../styles/global.css";
 import { DEFAULT_LOCALE, localeOf, LOCALES, messages, pathFor, stripLocale } from "../i18n/index.ts";
 import { REPO } from "../lib/repo.ts";
+import { SEARCHING_SCRIPT } from "../lib/searching.ts";
 import type { FeedLink } from "../lib/types.ts";
 import { serialize, type StructuredData } from "../lib/structuredData.ts";
 
@@ -63,6 +64,11 @@ const link = (path: string) => pathFor(locale, path);
     <meta charset="utf-8" />
     <link rel="preload" href={monoFont} as="font" type="font/woff2" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {
+      revealSearch && (
+        <script is:inline set:html={SEARCHING_SCRIPT} />
+      )
+    }
     <title>{title}</title>
     <meta name="description" content={description} />
     {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
