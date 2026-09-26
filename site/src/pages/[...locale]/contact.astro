@@ -1,0 +1,68 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { Locale } from "../../i18n/index.ts";
+import { pathFor } from "../../i18n/index.ts";
+import { localePaths, t } from "../../i18n/paths.ts";
+import Base from "../../layouts/Base.astro";
+import { CONTACT_EMAIL } from "../../lib/legal.ts";
+import { NEW_TOOL_URL, REPO, SUGGEST_TOOL_URL } from "../../lib/repo.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = t(locale).pages.contact;
+const mail = `mailto:${CONTACT_EMAIL}`;
+---
+
+<Base title={m.title} description={m.description}>
+  <header class="legal-head">
+    <p class="eyebrow">{m.eyebrow}</p>
+    <h1>{m.heading}</h1>
+    <p class="lede">
+      {m.lede} <a href={mail}>{CONTACT_EMAIL}</a>.
+    </p>
+  </header>
+
+  <section class="block legal">
+    <h2>{m.catalog.heading}</h2>
+    <p>
+      {m.catalog.before} <a href={NEW_TOOL_URL}>{m.catalog.pullRequest}</a>{m.catalog.between}
+      <a href={SUGGEST_TOOL_URL}>{m.catalog.suggest}</a>{m.catalog.after}
+      <a href={pathFor(locale, "/contribute/")}>{m.catalog.guide}</a>{m.catalog.end}
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.maintainer.heading}</h2>
+    <p>
+      {m.maintainer.before} <a href={`${pathFor(locale, "/about/")}#verified`}>{m.maintainer.verifiedLink}</a>{m.maintainer.after}
+      <a href={`${REPO}/issues/new`}>{m.maintainer.issueLink}</a>.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.security.heading}</h2>
+    <p>
+      {m.security.before} <a href={`${REPO}/security/policy`}>{m.security.policyLink}</a>{m.security.after}
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.privacy.heading}</h2>
+    <p>
+      {m.privacy.before} <a href={pathFor(locale, "/privacy/")}>{m.privacy.privacyLink}</a>{m.privacy.after}{" "}
+      <a href={mail}>{CONTACT_EMAIL}</a>.
+    </p>
+  </section>
+
+  <section class="block legal">
+    <h2>{m.other.heading}</h2>
+    <p>
+      {m.other.before} <a href={mail}>{CONTACT_EMAIL}</a>{m.other.after}
+    </p>
+  </section>
+</Base>

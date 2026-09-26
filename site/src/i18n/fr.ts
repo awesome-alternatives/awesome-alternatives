@@ -34,6 +34,7 @@ export const fr: Messages = {
       howItWorks: "Comment ça marche",
       rss: "Flux RSS",
       changes: "Ce qui a changé",
+      contact: "Contact",
       legalNotice: "Mentions légales",
       privacy: "Confidentialité",
       github: "GitHub ↗",
