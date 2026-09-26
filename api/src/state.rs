@@ -2,13 +2,14 @@ use std::net::IpAddr;
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::{Arc, RwLock};
 
-use governor::DefaultKeyedRateLimiter;
+use governor::{DefaultKeyedRateLimiter, Quota, RateLimiter};
 use serde::Serialize;
 
 use crate::catalog::Catalog;
 use crate::details::Details;
 use crate::embedding::Embedder;
 use crate::history::History;
+use crate::limits;
 use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::semantic::Index;
@@ -110,6 +111,8 @@ pub struct AppState {
     pub history: Arc<History>,
     pub limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
     pub details_limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
+    pub mcp_limiter: Arc<DefaultKeyedRateLimiter<IpAddr>>,
+    pub allowed_origins: Arc<[String]>,
     pub trust_proxy: bool,
     pub activity: Activity,
     pub refresh: Arc<Refresh>,
@@ -132,6 +135,10 @@ impl AppState {
             history: Arc::new(History::disabled()),
             limiter: Arc::new(limiter),
             details_limiter: Arc::new(details_limiter),
+            mcp_limiter: Arc::new(RateLimiter::keyed(Quota::per_minute(
+                limits::SEARCHES_PER_MINUTE,
+            ))),
+            allowed_origins: Arc::from([]),
             trust_proxy,
             activity: Activity::default(),
             refresh: Arc::new(refresh),
@@ -141,6 +148,20 @@ impl AppState {
     pub fn with_history(self, history: History) -> Self {
         Self {
             history: Arc::new(history),
+            ..self
+        }
+    }
+
+    pub fn with_mcp_limiter(self, limiter: DefaultKeyedRateLimiter<IpAddr>) -> Self {
+        Self {
+            mcp_limiter: Arc::new(limiter),
+            ..self
+        }
+    }
+
+    pub fn with_allowed_origins(self, origins: &[String]) -> Self {
+        Self {
+            allowed_origins: Arc::from(origins),
             ..self
         }
     }

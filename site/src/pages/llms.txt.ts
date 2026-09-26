@@ -37,6 +37,16 @@ Base URL ${SITE}/api. No key, no account.
 - GET /v1/tools/{slug}/security: the OpenSSF Scorecard and the repository's published advisories.
 - POST /v1/search: free text, body \`{"q": "semantic-release but in Rust"}\`. This one is limited to 20 requests a minute per address, and it is the only endpoint that may forward your text to an external language model when it cannot read the query itself. The endpoints above cost nothing and are not limited, so prefer them when you already know what you are filtering on.
 
+## MCP
+
+The same catalog is a Model Context Protocol server at ${SITE}/api/mcp, over Streamable HTTP, with no key and no account. For Claude Code: \`claude mcp add --transport http awesome-alternatives ${SITE}/api/mcp\`.
+
+- \`find_alternatives\`: alternatives to a tool or closed product, by slug or name, each with its fit and a note, with the filters of /v1/tools.
+- \`get_tool\`: everything the catalog holds on one tool, by slug.
+- \`list_tools\`: the /v1/tools filters, paged.
+- \`list_categories\`: every category with its description, tool count and capability keys.
+- \`search\`: free text, read with keywords and the local model only, never sent to an external model. It has its own quota per address and answers a tool error with \`retryAfterSeconds\` past it; the other tools are not limited.
+
 ## What people replace
 
 ${alternatives}

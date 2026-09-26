@@ -1,4 +1,5 @@
-use std::num::NonZeroUsize;
+use std::num::{NonZeroU32, NonZeroUsize};
+use std::sync::Arc;
 use std::time::Duration;
 
 use axum::error_handling::HandleErrorLayer;
@@ -6,12 +7,15 @@ use axum::http::{HeaderValue, StatusCode, header};
 use axum::response::{IntoResponse, Response};
 use axum::routing::MethodRouter;
 use axum::{BoxError, Json, Router};
+use tokio::sync::{OwnedSemaphorePermit, Semaphore};
 use tower::ServiceBuilder;
+use tower::limit::GlobalConcurrencyLimitLayer;
 use tower::load_shed::error::Overloaded;
 use tower::timeout::error::Elapsed;
 
 pub const SEARCH_CONCURRENCY: NonZeroUsize = NonZeroUsize::new(32).expect("32 is not zero");
 pub const TIMEOUT: Duration = Duration::from_secs(15);
+pub const SEARCHES_PER_MINUTE: NonZeroU32 = NonZeroU32::new(20).expect("20 is not zero");
 
 #[derive(Debug, Clone, Copy)]
 pub struct Limits {
@@ -28,7 +32,10 @@ impl Default for Limits {
     }
 }
 
-impl Limits {
+#[derive(Clone)]
+pub struct SearchSlots(Arc<Semaphore>);
+
+impl SearchSlots {
     pub fn shed<S>(&self, route: MethodRouter<S>) -> MethodRouter<S>
     where
         S: Clone + Send + Sync + 'static,
@@ -37,8 +44,20 @@ impl Limits {
             ServiceBuilder::new()
                 .layer(HandleErrorLayer::new(overload))
                 .load_shed()
-                .concurrency_limit(self.search_concurrency.get()),
+                .layer(GlobalConcurrencyLimitLayer::with_semaphore(Arc::clone(
+                    &self.0,
+                ))),
         )
+    }
+
+    pub fn try_take(&self) -> Option<OwnedSemaphorePermit> {
+        Arc::clone(&self.0).try_acquire_owned().ok()
+    }
+}
+
+impl Limits {
+    pub fn search_slots(&self) -> SearchSlots {
+        SearchSlots(Arc::new(Semaphore::new(self.search_concurrency.get())))
     }
 
     pub fn time_out<S>(&self, router: Router<S>) -> Router<S>

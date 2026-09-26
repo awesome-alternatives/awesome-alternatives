@@ -14,6 +14,7 @@ use crate::catalog::Tool;
 use crate::filters::{Filters, NearMiss};
 use crate::history::MAX_DAYS;
 use crate::limits::Limits;
+use crate::mcp;
 use crate::peer::client_ip;
 use crate::qualifiers::Unchecked;
 use crate::refresh;
@@ -21,16 +22,19 @@ use crate::search::Interpreter;
 use crate::state::{AppState, Quiescence};
 use crate::tool_details;
 use crate::vocabulary::Vocabulary;
+use crate::window::Window;
 
 pub const MAX_QUERY_CHARS: usize = 300;
 
 pub fn router(state: AppState, limits: Limits) -> Router {
+    let searches = limits.search_slots();
     let api = Router::new()
         .route("/v1/tools", get(tools))
         .route("/v1/vocabulary", get(vocabulary))
-        .route("/v1/search", limits.shed(post(search)))
+        .route("/v1/search", searches.shed(post(search)))
         .merge(tool_details::routes(state.clone()))
-        .merge(refresh::routes());
+        .merge(refresh::routes())
+        .merge(mcp::routes(state.clone(), searches));
     let api = limits
         .time_out(api)
         .route_layer(middleware::from_fn_with_state(state.clone(), in_flight));
@@ -76,7 +80,7 @@ pub enum ApiError {
     HistoryUnavailable,
 }
 
-fn retry_after_secs(wait: Duration) -> u64 {
+pub fn retry_after_secs(wait: Duration) -> u64 {
     (wait.as_secs() + u64::from(wait.subsec_nanos() > 0)).max(1)
 }
 
@@ -107,24 +111,6 @@ impl IntoResponse for ApiError {
     }
 }
 
-const DEFAULT_LIMIT: usize = 50;
-const MAX_LIMIT: usize = 200;
-
-#[derive(Deserialize)]
-struct Window {
-    limit: Option<usize>,
-    offset: Option<usize>,
-}
-
-impl Window {
-    fn bounds(&self) -> (usize, usize) {
-        (
-            self.limit.unwrap_or(DEFAULT_LIMIT).min(MAX_LIMIT),
-            self.offset.unwrap_or(0),
-        )
-    }
-}
-
 #[derive(Serialize)]
 struct ToolPage {
     count: usize,
@@ -142,12 +128,7 @@ impl ToolPage {
             count: matched.len(),
             limit,
             offset,
-            tools: matched
-                .into_iter()
-                .skip(offset)
-                .take(limit)
-                .cloned()
-                .collect(),
+            tools: window.cut(matched).into_iter().cloned().collect(),
             near: Vec::new(),
         }
     }

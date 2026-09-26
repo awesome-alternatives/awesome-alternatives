@@ -14,6 +14,7 @@ mod jev;
 mod jev_budget;
 mod lexical;
 mod limits;
+mod mcp;
 mod memory;
 mod peer;
 mod qualifiers;
@@ -26,6 +27,7 @@ mod state;
 mod tool_details;
 mod upstream;
 mod vocabulary;
+mod window;
 
 use std::net::SocketAddr;
 use std::sync::Arc;
@@ -132,7 +134,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         config.trust_proxy,
         refresh,
     )
-    .with_history(history);
+    .with_history(history)
+    .with_mcp_limiter(RateLimiter::keyed(Quota::per_minute(
+        config.mcp_searches_per_minute,
+    )))
+    .with_allowed_origins(&config.allowed_origins);
     tokio::spawn(forget_idle_clients(state.clone()));
     tokio::spawn(reload_catalog(
         state.clone(),
@@ -200,6 +206,7 @@ async fn forget_idle_clients(state: AppState) {
         ticker.tick().await;
         state.limiter.retain_recent();
         state.details_limiter.retain_recent();
+        state.mcp_limiter.retain_recent();
     }
 }
 

@@ -114,6 +114,11 @@ export const pages: Pages = {
       privacyLink: "La página de privacidad",
       after: "detalla qué se envía y qué se conserva.",
     },
+    agents: {
+      heading: "Desde un agente de IA",
+      body: "El catálogo también es un servidor Model Context Protocol (MCP) en {url}, sobre Streamable HTTP, sin clave ni cuenta. Un agente puede buscar alternativas a una herramienta o a un producto, listar herramientas por categoría, lenguaje o licencia y leer los datos de una herramienta. Su herramienta de búsqueda lee las consultas solo con palabras clave y el modelo de este servidor, nunca con Jev, y tiene un límite por dirección; las demás herramientas no lo tienen.",
+      setup: "Para añadirlo a Claude Code:",
+    },
     licences: {
       heading: "Licencias",
       dataBefore: "Los datos del catálogo se ceden al dominio público bajo",

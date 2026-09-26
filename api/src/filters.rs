@@ -1,30 +1,49 @@
+use schemars::JsonSchema;
 use serde::{Deserialize, Deserializer, Serialize};
 
 use crate::catalog::{Fit, Terms, Tool};
 
-#[derive(Debug, Default, Clone, PartialEq, Eq, Deserialize, Serialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Deserialize, Serialize, JsonSchema)]
 #[serde(rename_all = "camelCase")]
 pub struct Filters {
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[schemars(
+        description = "Slug of the tool or closed product the results replace, such as semantic-release or gitlab. Results are then ranked by fit (drop-in, full, partial) before stars."
+    )]
     pub replaces: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[schemars(description = "Main language of the repository, any case, such as Rust or Go.")]
     pub language: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[schemars(
+        description = "SPDX licence of the repository, any case, such as MIT or Apache-2.0."
+    )]
     pub license: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[schemars(description = "Category key, as list_categories names it.")]
     pub category: Option<String>,
     #[serde(default)]
+    #[schemars(description = "Only drop-in replacements for the tool in replaces.")]
     pub drop_in: bool,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[schemars(
+        description = "Licence terms: open (OSI licence), open-core, source-available, or unknown (not checked yet)."
+    )]
     pub terms: Option<Terms>,
     #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    #[schemars(description = "Only tools you can host yourself.")]
     pub self_host: bool,
     #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    #[schemars(description = "Leave out archived repositories and those with no push in a year.")]
     pub maintained: bool,
     #[serde(
         default,
         skip_serializing_if = "Vec::is_empty",
         deserialize_with = "list"
+    )]
+    #[schemars(
+        with = "Vec<String>",
+        description = "Capability keys every result must declare, as list_categories lists them, such as ci or container-registry. Tools that have only some of them come back in near, with what they miss."
     )]
     pub capabilities: Vec<String>,
 }

@@ -19,6 +19,7 @@ const { locale } = Astro.props;
 const strings = t(locale);
 const m = strings.pages.about;
 const { fit, flag } = strings.islands;
+const mcpUrl = new URL("/api/mcp", Astro.site).href;
 ---
 
 <Base title={m.title} description={m.description}>
@@ -149,6 +150,14 @@ const { fit, flag } = strings.islands;
       {m.search.before} <a href={pathFor(locale, "/privacy/")}>{m.search.privacyLink}</a> {m.search.after}
     </p>
     <p>{format(m.search.qualifiers, { inactiveDays: INACTIVE_DAYS })}</p>
+  </section>
+
+  <section class="explainer" id="agents">
+    <h2>{m.agents.heading}</h2>
+    <p>{format(m.agents.body, { url: mcpUrl })}</p>
+    <p>
+      {m.agents.setup} <code>claude mcp add --transport http awesome-alternatives {mcpUrl}</code>
+    </p>
   </section>
 
   <section class="explainer" id="licences">
