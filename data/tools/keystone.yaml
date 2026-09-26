@@ -1,0 +1,7 @@
+name: Keystone
+repository: https://github.com/keystonejs/keystone
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: full
+    note: Schema defined in TypeScript, with an admin UI and a GraphQL API, in Node.js.

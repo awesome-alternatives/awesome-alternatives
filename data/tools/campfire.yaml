@@ -1,0 +1,8 @@
+name: Campfire
+repository: https://github.com/basecamp/once-campfire
+category: team-chat
+replaces:
+  - tool: slack
+    fit: partial
+    note: Rooms, direct messages, file attachments and bots for one organisation, without threads or calls.
+deploy: [container]

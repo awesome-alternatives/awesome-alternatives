@@ -1,0 +1,7 @@
+name: ScreenToGif
+repository: https://github.com/NickeManarin/ScreenToGif
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Records the screen, the webcam or a sketchboard on Windows and edits frame by frame, exported as GIF, video or images.

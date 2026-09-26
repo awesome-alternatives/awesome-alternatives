@@ -1,0 +1,8 @@
+name: La Suite Meet
+repository: https://github.com/suitenumerique/meet
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: full
+    note: Video meetings in the browser, built on LiveKit.
+deploy: [container, compose]

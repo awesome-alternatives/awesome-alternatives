@@ -1,0 +1,7 @@
+name: Blinko
+repository: https://github.com/blinkospace/blinko
+category: note-taking
+replaces:
+  - tool: google-keep
+    fit: full
+    note: Quick Markdown notes as cards with tags and AI search, on your own server.

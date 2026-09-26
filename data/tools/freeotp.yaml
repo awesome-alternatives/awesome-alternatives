@@ -1,0 +1,7 @@
+name: FreeOTP
+repository: https://github.com/freeotp/freeotp-android
+category: authenticator-app
+replaces:
+  - tool: google-authenticator
+    fit: full
+    note: TOTP and HOTP codes on Android from QR codes, with no account.

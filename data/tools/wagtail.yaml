@@ -1,0 +1,7 @@
+name: Wagtail
+repository: https://github.com/wagtail/wagtail
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: partial
+    note: A Django CMS with an editor-friendly admin and a read-only content API for headless front ends.

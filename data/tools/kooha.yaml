@@ -1,0 +1,7 @@
+name: Kooha
+repository: https://github.com/SeaDve/Kooha
+category: screen-recording
+replaces:
+  - tool: loom
+    fit: partial
+    note: Records the screen and microphone on Linux, without sharing links.

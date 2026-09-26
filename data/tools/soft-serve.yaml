@@ -1,0 +1,8 @@
+name: Soft Serve
+repository: https://github.com/charmbracelet/soft-serve
+category: git-forge
+replaces:
+  - tool: github
+    fit: partial
+    note: Repositories served over SSH, HTTP and the git protocol with a terminal UI, without a web interface or pull requests.
+deploy: [container, binary, package]

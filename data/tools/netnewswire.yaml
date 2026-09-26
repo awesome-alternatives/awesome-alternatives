@@ -1,0 +1,7 @@
+name: NetNewsWire
+repository: https://github.com/Ranchero-Software/NetNewsWire
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: A native reader for Mac, iPhone and iPad that syncs through iCloud or a feed service, without a web app.

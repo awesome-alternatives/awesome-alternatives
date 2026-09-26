@@ -1,0 +1,7 @@
+name: Grocy
+repository: https://github.com/grocy/grocy
+category: recipe-manager
+replaces:
+  - tool: anylist
+    fit: partial
+    note: Recipes, meal plans and shopping lists next to a stock of what is already in the house.

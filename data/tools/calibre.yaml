@@ -1,0 +1,11 @@
+name: calibre
+repository: https://github.com/kovidgoyal/calibre
+category: book-server
+replaces:
+  - tool: google-play-books
+    fit: partial
+    note: Manages and converts your own ebooks and serves them to browsers and OPDS apps from its content server, with no store.
+  - tool: amazon-kindle
+    fit: partial
+    note: The library for your own DRM-free books, sent to a Kindle by email or USB, not the store.
+deploy: [binary, package]

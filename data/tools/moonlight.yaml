@@ -1,0 +1,8 @@
+name: Moonlight
+repository: https://github.com/moonlight-stream/moonlight-qt
+category: remote-desktop
+replaces:
+  - tool: parsec
+    fit: partial
+    note: The client side of low-latency game and desktop streaming from a Sunshine host, with no account.
+deploy: [binary]

@@ -1,0 +1,8 @@
+name: Ghostfolio
+repository: https://github.com/ghostfolio/ghostfolio
+category: personal-finance
+replaces:
+  - tool: monarch-money
+    fit: partial
+    note: Investments and net worth from recorded or imported activities, without bank sync or budgets.
+deploy: [container, compose]
