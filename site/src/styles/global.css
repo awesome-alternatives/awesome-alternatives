@@ -1627,6 +1627,110 @@ h1 .mark-archived {
   font-size: 0.92rem;
 }
 
+.contact-form {
+  display: grid;
+  gap: 20px;
+  max-width: 62ch;
+  margin-top: 28px;
+}
+
+.contact-form[hidden],
+.contact-sent[hidden] {
+  display: none;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field > span {
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.contact-field small {
+  font-size: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--edge);
+  color-scheme: dark;
+  font: inherit;
+  font-size: 0.92rem;
+}
+
+.contact-field select {
+  appearance: none;
+  padding-inline-end: 32px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--dim) 50%),
+    linear-gradient(135deg, var(--dim) 50%, transparent 50%);
+  background-position: right 17px center, right 12px center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact-form .contact-error {
+  margin: 0;
+  color: var(--warn);
+}
+
+.contact-form .contact-error:empty {
+  display: none;
+}
+
+.contact-form button[type="submit"] {
+  justify-self: start;
+  padding: 12px 26px;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: 0;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.contact-sent {
+  max-width: 62ch;
+  margin-top: 28px;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.contact-sent h3 {
+  margin: 0 0 12px;
+  color: var(--accent);
+}
+
 .placeholder {
   padding: 0 4px;
   color: var(--warn);
