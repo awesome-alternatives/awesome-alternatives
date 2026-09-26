@@ -1,0 +1,3 @@
+name: Bazel
+repository: https://github.com/bazelbuild/bazel
+category: monorepo-tool

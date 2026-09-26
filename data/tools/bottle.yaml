@@ -1,0 +1,7 @@
+name: Bottle
+repository: https://github.com/bottlepy/bottle
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: full
+    note: A micro framework in a single file with no dependencies, with its own routing and templates.

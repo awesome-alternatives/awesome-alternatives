@@ -1,0 +1,7 @@
+name: Posting
+repository: https://github.com/darrenburns/posting
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: HTTP requests in a terminal UI, with collections saved as YAML files next to your code.

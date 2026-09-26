@@ -1,0 +1,7 @@
+name: Elvish
+repository: https://github.com/elves/elvish
+category: shell
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Structured pipelines and a built-in directory navigator, with its own non-POSIX language.

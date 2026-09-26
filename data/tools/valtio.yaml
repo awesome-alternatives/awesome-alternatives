@@ -1,0 +1,7 @@
+name: Valtio
+repository: https://github.com/pmndrs/valtio
+category: react-state
+replaces:
+  - tool: redux
+    fit: partial
+    note: Proxy state you mutate directly, and components re-render only on what they read.

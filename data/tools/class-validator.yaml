@@ -1,0 +1,7 @@
+name: class-validator
+repository: https://github.com/typestack/class-validator
+category: javascript-validation
+replaces:
+  - tool: joi
+    fit: partial
+    note: Validation rules declared as decorators on TypeScript classes instead of a schema object.

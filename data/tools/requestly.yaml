@@ -1,0 +1,8 @@
+name: Requestly
+repository: https://github.com/requestly/requestly
+category: api-client
+terms: open
+replaces:
+  - tool: postman
+    fit: full
+    note: Collections and environments in a local-first app, plus rules to intercept, modify and mock HTTP traffic.

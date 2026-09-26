@@ -1,0 +1,10 @@
+name: Kilo Code
+repository: https://github.com/Kilo-Org/kilocode
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: The agent runs in VS Code, JetBrains or the terminal, and works with any model provider.
+  - tool: cursor
+    fit: partial
+    note: Adds an agent to VS Code or JetBrains instead of a separate editor.

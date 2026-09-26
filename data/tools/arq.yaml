@@ -1,0 +1,7 @@
+name: arq
+repository: https://github.com/python-arq/arq
+category: python-task-queue
+replaces:
+  - tool: celery
+    fit: partial
+    note: Async jobs for asyncio code, over Redis only.

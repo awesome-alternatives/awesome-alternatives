@@ -1,0 +1,7 @@
+name: Khoj
+repository: https://github.com/khoj-ai/khoj
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A self-hosted assistant that answers from your documents and the web, in front of a local or hosted model.

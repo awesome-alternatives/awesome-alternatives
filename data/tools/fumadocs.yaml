@@ -1,0 +1,10 @@
+name: Fumadocs
+repository: https://github.com/fuma-nama/fumadocs
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: full
+    note: Documentation from Markdown and MDX in your own repository, built with React.
+  - tool: nextra
+    fit: full
+    note: A docs framework for Next.js and other React frameworks, with its own content sources and UI.

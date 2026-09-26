@@ -1,0 +1,7 @@
+name: Open Interpreter
+repository: https://github.com/openinterpreter/openinterpreter
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: A terminal agent tuned for low-cost open models, with switchable harnesses that emulate other agents.
