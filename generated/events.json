@@ -955,5 +955,6 @@
   {"type":"added","slug":"temporal","at":"2026-09-26T16:47:25.976Z","commit":"51577ddb1c2c8cf55f6991669c00b9773c7f229c"},
   {"type":"added","slug":"tengine","at":"2026-09-26T16:47:25.976Z","commit":"51577ddb1c2c8cf55f6991669c00b9773c7f229c"},
   {"type":"added","slug":"terragrunt","at":"2026-09-26T16:47:25.976Z","commit":"51577ddb1c2c8cf55f6991669c00b9773c7f229c"},
-  {"type":"added","slug":"vitess","at":"2026-09-26T16:47:25.976Z","commit":"51577ddb1c2c8cf55f6991669c00b9773c7f229c"}
+  {"type":"added","slug":"vitess","at":"2026-09-26T16:47:25.976Z","commit":"51577ddb1c2c8cf55f6991669c00b9773c7f229c"},
+  {"type":"released","slug":"casdoor","at":"2026-09-26T19:04:42.445Z","commit":null,"from":"v4.10.0","to":"v4.11.0"}
 ]
