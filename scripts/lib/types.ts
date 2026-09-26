@@ -126,6 +126,7 @@ export interface ReleaseFacts {
   url: string;
   source: "release" | "tag";
   signed: boolean;
+  tagOid?: string;
 }
 
 export interface StarPoint {

@@ -166,10 +166,10 @@ days, and needs a week of them before it judges.
 Those counts are published with each tool in `generated/catalog.json` as `starHistory`: `from` is a
 UTC date and `stars` holds one count per day from there to today, over the last 31 days. The count of
 a day is the last one a refresh recorded that day, and a day no refresh ran on is interpolated
-between its neighbours. Each refresh carries the series of the previous catalog forward and falls
-back on the git history of the catalog for the days it lacks. A tool starts with a single day, the
-day it joins the catalog: GitHub does not say how many stars a repository had before that. The
-monthly trend is read from the same series.
+between its neighbours. Each refresh carries the series of the previous catalog forward and adds the
+day's count. A tool starts with a single day, the day it joins the catalog, and so does a tool whose
+entry was removed and added back: GitHub does not say how many stars a repository had before that.
+The monthly trend is read from the same series.
 
 ### Organisations with an IP allow list
 
@@ -206,7 +206,7 @@ same file. Blank lines and `#` comments are ignored.
 Installing the [awesome-alternatives GitHub App](https://github.com/apps/awesome-alternatives) on
 the repository verifies every entry listed from it as well, without a file: installing an app on a
 repository takes admin rights on it. The app only reads the repository's contents. Either way is
-enough, and a repository can do both.
+enough, and a repository can do both. A suspended installation does not count.
 
 ### Refreshing your entry after a release
 
@@ -315,6 +315,22 @@ it from the history, which needs a full clone, delete it and run:
 ```bash
 pnpm backfill-events
 ```
+
+### How the refresh reads GitHub
+
+The refresh reads 20 repositories per GraphQL query, four queries at a time, then walks each
+repository's commits of the last 90 days (up to 5 pages of 100) to count active contributors, 10
+repositories per query, three at a time. The owners (100 per query, one query at a time), the
+signatures of annotated release tags and the app's installations are read while that walk runs. The app's installations are listed once per run.
+A tag signature is checked once per tag object: the catalog keeps the object's id as `tagOid`, and a
+release whose tag and object are both unchanged keeps the result of the last check.
+
+When GitHub asks it to slow down (a 403 or 429 with `retry-after`, an exhausted budget with
+`x-ratelimit-reset`, or its secondary rate limit message), the refresh waits as told, up to a minute,
+and tries again, three times at most. A wait longer than that fails the run. A repository whose
+commit history GitHub cannot read is published without an active contributor count, and the run
+logs it. The run fails instead when no commit history at all can be read, or when the repositories
+or owners themselves cannot be. Each phase logs its duration, as in `phase history: 180.2 s`.
 
 ### Daily facts and the cluster runner
 

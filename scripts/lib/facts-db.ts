@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import postgres, { type Sql } from "postgres";
+import { chunks } from "./gather.ts";
 import type { ToolFactsRow } from "./tool-facts.ts";
 
 export const SCHEMA_FILE = new URL("../db/schema.sql", import.meta.url);
@@ -50,12 +51,6 @@ export function splitStatements(script: string): string[] {
   return statements;
 }
 
-export function batches<T>(items: readonly T[], size: number): T[][] {
-  const out: T[][] = [];
-  for (let start = 0; start < items.length; start += size) out.push(items.slice(start, start + size));
-  return out;
-}
-
 export async function applySchema(sql: Sql): Promise<void> {
   for (const statement of splitStatements(await readFile(SCHEMA_FILE, "utf8"))) {
     await sql.unsafe(statement);
@@ -64,7 +59,7 @@ export async function applySchema(sql: Sql): Promise<void> {
 
 export async function insertFacts(sql: Sql, rows: readonly ToolFactsRow[], size = INSERT_BATCH): Promise<number> {
   let inserted = 0;
-  for (const batch of batches(rows, size)) {
+  for (const batch of chunks(rows, size)) {
     const result = await sql`insert into tool_facts ${sql(batch, COLUMNS)} on conflict (slug, time) do nothing`;
     inserted += result.count;
   }

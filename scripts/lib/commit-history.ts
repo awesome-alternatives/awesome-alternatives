@@ -1,19 +1,14 @@
-import { advance, hasMore, HISTORY_PAGE_SIZE, HISTORY_PAGES, type HistoryPage, type HistoryWalk } from "./contributors.ts";
-import { mapLimit } from "./gather.ts";
+import { advance, hasMore, HISTORY_PAGE_SIZE, HISTORY_PAGES, type HistoryPage, type HistoryWalk, stop } from "./contributors.ts";
 import type { GraphQL } from "./graphql.ts";
-import { aliasOf, BatchRejected, inBatches } from "./graphql-batch.ts";
+import { type AliasedBatch, aliasedBatches, aliasedQuery, BatchRejected, type BatchShape, describeErrors, type Outcome } from "./graphql-batch.ts";
 
-const HISTORY_BATCH = 10;
-const HISTORY_CONCURRENCY = 3;
+export const HISTORY_SHAPE: BatchShape = { size: 10, concurrency: 3 };
 
 interface GqlHistoryPage {
   object: { history?: HistoryPage } | null;
 }
 
-function historyPageQuery(
-  walks: readonly HistoryWalk[],
-  since: string,
-): { query: string; variables: Record<string, string> } {
+export function historyPageQuery(walks: readonly HistoryWalk[], since: string): { query: string; variables: Record<string, string> } {
   const declarations = ["$since: GitTimestamp!"];
   const fields: string[] = [];
   const variables: Record<string, string> = { since };
@@ -31,41 +26,41 @@ function historyPageQuery(
       `r${i}: repository(owner: $o${i}, name: $n${i}) { object(oid: $h${i}) { ... on Commit { history(first: ${HISTORY_PAGE_SIZE}, since: $since${after}) { ...Page } } } }`,
     );
   });
-  return {
-    query: `query(${declarations.join(", ")}) {\n  rateLimit { cost remaining }\n  ${fields.join("\n  ")}\n}\nfragment Page on CommitHistoryConnection { pageInfo { hasNextPage endCursor } nodes { author { name email user { login } } } }`,
-    variables,
-  };
+  const fragment = "fragment Page on CommitHistoryConnection { pageInfo { hasNextPage endCursor } nodes { author { name email user { login } } } }";
+  return { query: aliasedQuery(declarations, fields, fragment), variables };
 }
 
-function chunks<T>(items: readonly T[], size: number): T[][] {
-  return Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size));
+function nextWalk(walk: HistoryWalk, page: Outcome<HistoryPage | null>): HistoryWalk {
+  if (page.status === "read" && page.value) return advance(walk, page.value);
+  if (page.status === "failed") {
+    const outcome = walk.pages ? `its count stops at page ${walk.pages}` : "published without an active contributor count";
+    console.error(`${walk.fullName}: commit history unreadable (${describeErrors(page.errors)}), ${outcome}`);
+  }
+  return stop(walk);
 }
 
 export async function walkHistories(
   gql: GraphQL,
   walks: readonly (HistoryWalk | null)[],
   since: string,
+  shape: BatchShape = HISTORY_SHAPE,
 ): Promise<(HistoryWalk | null)[]> {
   const current = [...walks];
-  const nextPages = async (batch: readonly { walk: HistoryWalk }[]): Promise<HistoryWalk[]> => {
-    const { query, variables } = historyPageQuery(batch.map((p) => p.walk), since);
-    const { data, errors } = await gql.query<Record<string, GqlHistoryPage | null>>(query, variables);
-    const fatal = errors.filter((e) => e.type !== "NOT_FOUND" || !aliasOf(e));
-    if (fatal.length || !data) throw new BatchRejected(fatal.length ? fatal : [{ message: "no data" }]);
-    return batch.map(({ walk }, i) => {
-      const history = data[`r${i}`]?.object?.history;
-      return history ? advance(walk, history) : walk;
-    });
+  const spec: AliasedBatch<HistoryWalk, GqlHistoryPage, HistoryPage | null> = {
+    alias: "r",
+    query: (batch) => historyPageQuery(batch, since),
+    read: (node) => node.object?.history ?? null,
+    failures: "report",
   };
   for (let round = 0; round < HISTORY_PAGES; round++) {
     const pending = current.flatMap((walk, index) => (walk && hasMore(walk) ? [{ walk, index }] : []));
     if (!pending.length) break;
-    const advanced = (
-      await mapLimit(chunks(pending, HISTORY_BATCH), HISTORY_CONCURRENCY, (chunk) => inBatches(chunk, HISTORY_BATCH, nextPages))
-    ).flat();
-    advanced.forEach((walk, i) => {
-      const slot = pending[i];
-      if (slot) current[slot.index] = walk;
+    const pages = await aliasedBatches(gql, pending.map(({ walk }) => walk), shape, spec);
+    const failures = pages.flatMap((page) => (page.status === "failed" ? page.errors : []));
+    if (pending.length > 1 && pages.every((page) => page.status === "failed")) throw new BatchRejected(failures);
+    pending.forEach(({ walk, index }, i) => {
+      const page = pages[i];
+      if (page) current[index] = nextWalk(walk, page);
     });
   }
   return current;

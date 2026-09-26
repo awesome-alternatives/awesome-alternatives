@@ -25,6 +25,7 @@ export interface HistoryWalk {
   authors: ReadonlySet<string>;
   pages: number;
   cursor: string | null;
+  stopped: boolean;
 }
 
 export function activeSince(now: Date): string {
@@ -45,11 +46,15 @@ export function authorKey(author: CommitAuthor): string | null {
 }
 
 export function startWalk(fullName: string, head: string): HistoryWalk {
-  return { fullName, head, authors: new Set(), pages: 0, cursor: null };
+  return { fullName, head, authors: new Set(), pages: 0, cursor: null, stopped: false };
+}
+
+export function stop(walk: HistoryWalk): HistoryWalk {
+  return { ...walk, stopped: true };
 }
 
 export function hasMore(walk: HistoryWalk): boolean {
-  return walk.pages < HISTORY_PAGES && (walk.pages === 0 || walk.cursor !== null);
+  return !walk.stopped && walk.pages < HISTORY_PAGES && (walk.pages === 0 || walk.cursor !== null);
 }
 
 export function advance(walk: HistoryWalk, page: HistoryPage): HistoryWalk {

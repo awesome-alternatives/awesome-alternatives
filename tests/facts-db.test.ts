@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
-import { batches, recordFacts, SCHEMA_FILE, splitStatements } from "../scripts/lib/facts-db.ts";
+import { recordFacts, SCHEMA_FILE, splitStatements } from "../scripts/lib/facts-db.ts";
+import { chunks } from "../scripts/lib/gather.ts";
 
 describe("splitStatements", () => {
   it("splits on semicolons outside quotes and dollar-quoted bodies", () => {
@@ -22,10 +23,10 @@ describe("splitStatements", () => {
   });
 });
 
-describe("batches", () => {
+describe("chunks", () => {
   it("cuts rows into fixed-size batches with a shorter last one", () => {
-    assert.deepEqual(batches([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
-    assert.deepEqual(batches([], 2), []);
+    assert.deepEqual(chunks([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
+    assert.deepEqual(chunks([], 2), []);
   });
 });
 
