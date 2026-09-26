@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.79.0] - 2026-09-26
+
+### Features
+
+- feat(site): add a contact page and a footer link to it (#239)
+
 ## [0.78.0] - 2026-09-26
 
 ### Features
