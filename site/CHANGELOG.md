@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.78.0] - 2026-09-26
+
+### Features
+
+- feat(api): serve the catalog as an MCP server at /api/mcp (#236)
+
 ## [0.77.2] - 2026-09-26
 
 ### Bug Fixes
