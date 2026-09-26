@@ -1,0 +1,4 @@
+name: SRS
+repository: https://github.com/ossrs/srs
+category: video-hosting
+deploy: [container]

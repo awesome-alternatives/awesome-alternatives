@@ -1,0 +1,8 @@
+name: Slash
+repository: https://github.com/yourselfhosted/slash
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: partial
+    note: Short links to the pages a team uses most, organised in collections, with a browser extension.
+deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: textlint
+repository: https://github.com/textlint/textlint
+category: writing-assistant
+replaces:
+  - tool: grammarly
+    fit: partial
+    note: Pluggable rules for Markdown and plain text, run from the command line, the editor or CI, checking only what the installed rules cover.

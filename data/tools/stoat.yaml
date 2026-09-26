@@ -1,0 +1,9 @@
+name: Stoat
+repository: https://github.com/stoatchat/stoatchat
+category: team-chat
+terms: open
+replaces:
+  - tool: discord
+    fit: full
+    note: Servers with text and voice channels, roles and bots on your own server. Formerly Revolt.
+deploy: [container, compose]

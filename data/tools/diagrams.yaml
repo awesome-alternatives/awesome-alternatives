@@ -1,0 +1,7 @@
+name: Diagrams
+repository: https://github.com/mingrammer/diagrams
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: Cloud architecture diagrams written as Python code, with icon sets for the major clouds and Kubernetes.

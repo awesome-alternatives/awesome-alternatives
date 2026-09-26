@@ -1,0 +1,8 @@
+name: nopCommerce
+repository: https://github.com/nopSolutions/nopCommerce
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: Storefront, catalogue, checkout and admin in ASP.NET Core, on your own server.
+deploy: [container, compose]

@@ -1,0 +1,10 @@
+name: 2FAS Auth
+repository: https://github.com/twofas/2fas-android
+category: authenticator-app
+replaces:
+  - tool: authy
+    fit: full
+    note: TOTP and HOTP codes on Android and iOS, with encrypted cloud backup and a browser extension.
+  - tool: google-authenticator
+    fit: full
+    note: Codes on Android and iOS with encrypted backup, and an importer for Google Authenticator exports.

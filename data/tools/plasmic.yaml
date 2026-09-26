@@ -1,0 +1,7 @@
+name: Plasmic
+repository: https://github.com/plasmicapp/plasmic
+category: design-tool
+replaces:
+  - tool: webflow
+    fit: partial
+    note: Visual builder for pages and apps that publishes to Plasmic hosting or into your own React codebase.

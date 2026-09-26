@@ -1,0 +1,12 @@
+name: OpnForm
+repository: https://github.com/OpnForm/OpnForm
+category: forms-surveys
+terms: open-core
+replaces:
+  - tool: typeform
+    fit: full
+    note: Form builder with conditional logic, file uploads and integrations.
+  - tool: google-forms
+    fit: full
+    note: Forms and submissions on your own server, with webhooks and integrations.
+deploy: [container, compose]

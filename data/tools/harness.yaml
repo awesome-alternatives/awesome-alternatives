@@ -1,0 +1,11 @@
+name: Harness Open Source
+repository: https://github.com/harness/harness
+category: git-forge
+replaces:
+  - tool: github
+    fit: full
+    note: Repositories, pull requests, pipelines and artifact registries on your own server, with pipelines in its own format.
+  - tool: gitlab
+    fit: full
+    note: Source control, CI pipelines and artifact registries in one self-hosted platform.
+deploy: [container, helm]

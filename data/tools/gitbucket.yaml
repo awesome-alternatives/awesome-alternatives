@@ -1,0 +1,8 @@
+name: GitBucket
+repository: https://github.com/gitbucket/gitbucket
+category: git-forge
+replaces:
+  - tool: github
+    fit: partial
+    note: Repositories, issues, pull requests and a GitHub-compatible API on the JVM, without built-in CI.
+deploy: [binary]

@@ -1,0 +1,7 @@
+name: Sink
+repository: https://github.com/miantiao-me/Sink
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: full
+    note: Short links with analytics, deployed on your own Cloudflare account rather than on a server you run.

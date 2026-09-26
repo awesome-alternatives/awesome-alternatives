@@ -1,0 +1,4 @@
+name: MediaMTX
+repository: https://github.com/bluenviron/mediamtx
+category: video-hosting
+deploy: [container, binary]
