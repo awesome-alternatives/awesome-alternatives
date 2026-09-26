@@ -1,0 +1,37 @@
+name: Freshness
+
+on:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: freshness
+  cancel-in-progress: false
+
+env:
+  STALE_AFTER_HOURS: '26'
+  DEPLOY_GRACE_HOURS: '3'
+
+jobs:
+  check:
+    name: Check the published catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+          sparse-checkout: scripts
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+      - run: node scripts/freshness.ts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
