@@ -1,0 +1,7 @@
+name: telescope.nvim
+repository: https://github.com/nvim-telescope/telescope.nvim
+category: fuzzy-finder
+replaces:
+  - tool: fzf
+    fit: partial
+    note: Inside Neovim only, for files, buffers, grep results and LSP symbols.

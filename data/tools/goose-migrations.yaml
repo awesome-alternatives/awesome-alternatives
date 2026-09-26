@@ -1,0 +1,8 @@
+name: goose
+repository: https://github.com/pressly/goose
+category: database-migrations
+terms: open
+replaces:
+  - tool: golang-migrate
+    fit: full
+    note: SQL or Go migrations, with up and down in one annotated file, as a CLI or a Go library.

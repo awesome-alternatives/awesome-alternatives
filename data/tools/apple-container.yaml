@@ -1,0 +1,10 @@
+name: container
+repository: https://github.com/apple/container
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: Runs Linux containers in lightweight virtual machines on Apple silicon Macs, from the command line, without a GUI or Kubernetes.
+  - tool: orbstack
+    fit: partial
+    note: Containers only, from the command line, without Linux machines or Kubernetes.

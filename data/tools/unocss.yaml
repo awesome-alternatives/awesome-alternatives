@@ -1,0 +1,8 @@
+name: UnoCSS
+repository: https://github.com/unocss/unocss
+category: css-processing
+terms: open
+replaces:
+  - tool: tailwindcss
+    fit: partial
+    note: An atomic CSS engine that generates utilities on demand, with a preset compatible with Tailwind's classes.

@@ -1,0 +1,7 @@
+name: Falcon
+repository: https://github.com/falconry/falcon
+category: python-web-framework
+replaces:
+  - tool: flask
+    fit: partial
+    note: A minimal framework for REST APIs on WSGI or ASGI, without templating.

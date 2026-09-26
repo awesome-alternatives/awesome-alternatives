@@ -1,0 +1,7 @@
+name: release-it
+repository: https://github.com/release-it/release-it
+category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: partial
+    note: Bumps, tags and publishes to npm and GitHub, interactively or in CI; versions from commits need a plugin.

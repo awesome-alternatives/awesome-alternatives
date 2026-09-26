@@ -1,0 +1,8 @@
+name: xonsh
+repository: https://github.com/xonsh/xonsh
+category: shell
+terms: open
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Python and shell commands mixed on the same line, with a Python-based syntax.

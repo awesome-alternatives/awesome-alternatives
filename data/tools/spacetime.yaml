@@ -1,0 +1,8 @@
+name: spacetime
+repository: https://github.com/spencermountain/spacetime
+category: javascript-date-library
+terms: open
+replaces:
+  - tool: moment
+    fit: full
+    note: Timezone-aware dates with the timezone data built in, and an immutable API.

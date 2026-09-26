@@ -1,0 +1,8 @@
+name: Vert.x
+repository: https://github.com/eclipse-vertx/vert.x
+category: actor-framework
+terms: open
+replaces:
+  - tool: akka
+    fit: partial
+    note: Verticles exchange messages over an event bus, an actor-like model without Akka's supervision hierarchies.

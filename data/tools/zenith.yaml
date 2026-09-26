@@ -1,0 +1,7 @@
+name: zenith
+repository: https://github.com/bvaisvil/zenith
+category: system-monitor
+replaces:
+  - tool: htop
+    fit: full
+    note: Processes plus CPU, memory, disk, network and GPU charts you can zoom back through.

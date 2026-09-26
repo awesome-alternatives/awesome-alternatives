@@ -1,0 +1,7 @@
+name: chromedp
+repository: https://github.com/chromedp/chromedp
+category: browser-testing
+replaces:
+  - tool: puppeteer
+    fit: partial
+    note: Drives Chrome over the DevTools Protocol from Go, without Node.js.

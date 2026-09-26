@@ -1,0 +1,7 @@
+name: Hatchet
+repository: https://github.com/hatchet-dev/hatchet
+category: python-task-queue
+replaces:
+  - tool: celery
+    fit: partial
+    note: Tasks and durable workflows on a Postgres-backed engine you run yourself, with SDKs for Python, TypeScript and Go.

@@ -1,0 +1,7 @@
+name: Finch
+repository: https://github.com/runfinch/finch
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: A command-line client built on containerd, nerdctl and BuildKit, with the virtual machine managed for you on macOS and Windows, without a GUI or Kubernetes.
