@@ -1,0 +1,8 @@
+name: Apache ShenYu
+repository: https://github.com/apache/shenyu
+category: api-gateway
+replaces:
+  - tool: kong
+    fit: partial
+    note: A Java gateway with plugins for HTTP, gRPC, Dubbo and Spring Cloud services, configured from its own admin console.
+deploy: [container, compose]

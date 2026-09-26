@@ -1,0 +1,4 @@
+name: BunkerWeb
+repository: https://github.com/bunkerity/bunkerweb
+category: reverse-proxy
+deploy: [container, compose, helm]

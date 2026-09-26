@@ -1,0 +1,8 @@
+name: Apache ShardingSphere
+repository: https://github.com/apache/shardingsphere
+category: distributed-sql
+replaces:
+  - tool: citus
+    fit: partial
+    note: Shards ordinary PostgreSQL or MySQL servers from a proxy or a JDBC driver, instead of an extension.
+deploy: [container]

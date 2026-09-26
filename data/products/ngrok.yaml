@@ -1,0 +1,5 @@
+name: ngrok
+homepage: https://ngrok.com
+vendor: ngrok
+category: reverse-proxy
+description: Hosted tunnels that expose services running on a private machine or network through the vendor's edge.

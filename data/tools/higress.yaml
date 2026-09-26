@@ -1,0 +1,8 @@
+name: Higress
+repository: https://github.com/higress-group/higress
+category: api-gateway
+replaces:
+  - tool: kong
+    fit: partial
+    note: Built on Envoy and Istio, with Wasm plugins and routing for LLM APIs; no Lua plugin ecosystem.
+deploy: [container, helm]

@@ -1,0 +1,8 @@
+name: Apache SeaTunnel
+repository: https://github.com/apache/seatunnel
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Batch and streaming sync across databases, warehouses and SaaS sources, run on its own engine, Flink or Spark.
+deploy: [container, helm]

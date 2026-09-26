@@ -1,0 +1,8 @@
+name: HyperDX
+repository: https://github.com/hyperdxio/hyperdx
+category: dashboards
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Search and chart logs, metrics, traces and session replays stored in ClickHouse, with alerts.
+deploy: [container, compose]

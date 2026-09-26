@@ -1,0 +1,4 @@
+name: Beszel
+repository: https://github.com/henrygd/beszel
+category: metrics
+deploy: [container, compose, helm, binary, package]

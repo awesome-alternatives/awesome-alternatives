@@ -1,0 +1,7 @@
+name: dotenvx
+repository: https://github.com/dotenvx/dotenvx
+category: encrypted-files
+replaces:
+  - tool: sops
+    fit: partial
+    note: Encrypts the values in .env files with a public key and decrypts them when the process starts; env files only.

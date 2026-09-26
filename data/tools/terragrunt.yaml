@@ -1,0 +1,3 @@
+name: Terragrunt
+repository: https://github.com/gruntwork-io/terragrunt
+category: infrastructure-as-code

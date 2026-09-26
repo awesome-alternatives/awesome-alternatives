@@ -1,0 +1,8 @@
+name: Kraken
+repository: https://github.com/uber/kraken
+category: container-registry
+replaces:
+  - tool: distribution
+    fit: partial
+    note: Serves the registry API and spreads image layers peer to peer across large clusters, with S3, GCS or HDFS behind it.
+deploy: [helm]

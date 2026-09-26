@@ -1,0 +1,8 @@
+name: DataX
+repository: https://github.com/alibaba/DataX
+category: data-integration
+terms: open
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Batch sync between databases, warehouses and file stores through reader and writer plugins; no SaaS connectors or scheduler.

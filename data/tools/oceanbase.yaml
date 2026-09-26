@@ -1,0 +1,8 @@
+name: OceanBase
+repository: https://github.com/oceanbase/oceanbase
+category: relational-database
+replaces:
+  - tool: mysql
+    fit: full
+    note: Speaks the MySQL protocol and dialect and scales out across nodes with Paxos replication; some MySQL features are missing.
+deploy: [container, package]
