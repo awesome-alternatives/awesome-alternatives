@@ -1,24 +1,33 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 use crate::catalog::{Product, Tool};
-use crate::embedding::{EmbedError, Embedder, Thresholds, Vector, similarity};
+#[cfg(test)]
+use crate::embedding::Embedder;
+use crate::embedding::{EmbedError, Model, Thresholds, Vector, similarity};
 use crate::vocabulary::Vocabulary;
 
 pub struct Index {
     thresholds: Thresholds,
-    targets: Vec<(String, Vector)>,
-    tools: Vec<(String, Vector)>,
+    targets: Vec<Entry>,
+    tools: Vec<Entry>,
 }
 
-impl Index {
-    pub fn build(
-        embedder: &dyn Embedder,
-        tools: &[Tool],
-        products: &[Product],
-        vocabulary: &Vocabulary,
-    ) -> Result<Self, EmbedError> {
-        let target_slugs: Vec<&String> = vocabulary.targets.keys().collect();
-        let mut texts: Vec<String> = vocabulary
+struct Entry {
+    slug: String,
+    text: String,
+    vector: Vector,
+}
+
+type Vectors<'a> = HashMap<&'a str, &'a [f32]>;
+
+struct Texts {
+    targets: Vec<(String, String)>,
+    tools: Vec<(String, String)>,
+}
+
+impl Texts {
+    fn of(tools: &[Tool], products: &[Product], vocabulary: &Vocabulary) -> Self {
+        let targets = vocabulary
             .targets
             .iter()
             .map(|(slug, name)| {
@@ -29,31 +38,109 @@ impl Index {
                         .find(|p| &p.slug == slug)
                         .map(describe_product)
                 };
-                tool.or_else(product).unwrap_or_else(|| name.clone())
+                let text = tool.or_else(product).unwrap_or_else(|| name.clone());
+                (slug.clone(), text)
             })
-            .collect();
-        texts.extend(tools.iter().map(describe));
-        let mut vectors = embedder.embed(&texts)?.into_iter();
-        let targets = target_slugs
-            .into_iter()
-            .map(|slug| (slug.clone(), vectors.next().unwrap_or_default()))
             .collect();
         let tools = tools
             .iter()
-            .map(|t| (t.slug.clone(), vectors.next().unwrap_or_default()))
+            .map(|t| (t.slug.clone(), describe(t)))
             .collect();
-        Ok(Self {
-            thresholds: embedder.thresholds(),
-            targets,
-            tools,
+        Self { targets, tools }
+    }
+
+    fn missing(&self, known: &Vectors) -> Vec<String> {
+        let mut seen = HashSet::new();
+        self.targets
+            .iter()
+            .chain(&self.tools)
+            .map(|(_, text)| text.as_str())
+            .filter(|text| !known.contains_key(text) && seen.insert(*text))
+            .map(str::to_owned)
+            .collect()
+    }
+
+    fn index<'a>(
+        self,
+        thresholds: Thresholds,
+        mut vectors: Vectors<'a>,
+        missing: &'a [String],
+        embedded: &'a [Vector],
+    ) -> Result<Index, EmbedError> {
+        vectors.extend(
+            missing
+                .iter()
+                .map(String::as_str)
+                .zip(embedded.iter().map(Vec::as_slice)),
+        );
+        Ok(Index {
+            thresholds,
+            targets: entries(self.targets, &vectors)?,
+            tools: entries(self.tools, &vectors)?,
         })
+    }
+}
+
+fn entries(described: Vec<(String, String)>, vectors: &Vectors) -> Result<Vec<Entry>, EmbedError> {
+    described
+        .into_iter()
+        .map(|(slug, text)| {
+            let vector = vectors
+                .get(text.as_str())
+                .ok_or(EmbedError::Incomplete)?
+                .to_vec();
+            Ok(Entry { slug, text, vector })
+        })
+        .collect()
+}
+
+impl Index {
+    pub async fn build(
+        model: &Model,
+        tools: &[Tool],
+        products: &[Product],
+        vocabulary: &Vocabulary,
+        previous: Option<&Index>,
+    ) -> Result<Self, EmbedError> {
+        let texts = Texts::of(tools, products, vocabulary);
+        let known = previous.map(Index::vectors).unwrap_or_default();
+        let missing = texts.missing(&known);
+        let embedded = model.embed(&missing).await?;
+        let index = texts.index(model.thresholds(), known, &missing, &embedded)?;
+        tracing::info!(
+            embedded = missing.len(),
+            entries = index.targets.len() + index.tools.len(),
+            "semantic index built"
+        );
+        Ok(index)
+    }
+
+    #[cfg(test)]
+    pub fn build_blocking(
+        embedder: &dyn Embedder,
+        tools: &[Tool],
+        products: &[Product],
+        vocabulary: &Vocabulary,
+    ) -> Result<Self, EmbedError> {
+        let texts = Texts::of(tools, products, vocabulary);
+        let missing = texts.missing(&Vectors::new());
+        let embedded = embedder.embed(&missing)?;
+        texts.index(embedder.thresholds(), Vectors::new(), &missing, &embedded)
+    }
+
+    fn vectors(&self) -> Vectors<'_> {
+        self.targets
+            .iter()
+            .chain(&self.tools)
+            .map(|e| (e.text.as_str(), e.vector.as_slice()))
+            .collect()
     }
 
     pub fn target(&self, query: &[f32]) -> Option<String> {
         let mut scored: Vec<(&String, f32)> = self
             .targets
             .iter()
-            .map(|(slug, v)| (slug, similarity(query, v)))
+            .map(|e| (&e.slug, similarity(query, &e.vector)))
             .collect();
         scored.sort_by(|a, b| b.1.total_cmp(&a.1));
         let (best, score) = *scored.first()?;
@@ -65,7 +152,7 @@ impl Index {
     pub fn relevance(&self, query: &[f32]) -> HashMap<String, f32> {
         self.tools
             .iter()
-            .map(|(slug, v)| (slug.clone(), similarity(query, v)))
+            .map(|e| (e.slug.clone(), similarity(query, &e.vector)))
             .filter(|(_, score)| *score >= self.thresholds.relevance)
             .collect()
     }
@@ -120,7 +207,7 @@ mod tests {
 
     fn index() -> Index {
         let tools = catalog();
-        Index::build(
+        Index::build_blocking(
             &Words,
             &tools,
             &[],
@@ -165,7 +252,7 @@ mod tests {
     fn a_failing_model_fails_the_build_instead_of_indexing_zeros() {
         let tools = catalog();
         assert!(
-            Index::build(
+            Index::build_blocking(
                 &Broken,
                 &tools,
                 &[],
@@ -173,5 +260,31 @@ mod tests {
             )
             .is_err()
         );
+    }
+
+    struct Mute;
+
+    impl Embedder for Mute {
+        fn embed(&self, _: &[String]) -> Result<Vec<Vector>, EmbedError> {
+            Ok(Vec::new())
+        }
+
+        fn thresholds(&self) -> Thresholds {
+            Words.thresholds()
+        }
+    }
+
+    #[test]
+    fn a_model_that_leaves_texts_without_a_vector_fails_the_build() {
+        let tools = catalog();
+        assert!(matches!(
+            Index::build_blocking(
+                &Mute,
+                &tools,
+                &[],
+                &Vocabulary::of(&tools, &[], &Default::default())
+            ),
+            Err(EmbedError::Incomplete)
+        ));
     }
 }

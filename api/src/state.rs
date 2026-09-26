@@ -7,7 +7,7 @@ use serde::Serialize;
 
 use crate::catalog::Catalog;
 use crate::details::Details;
-use crate::embedding::Embedder;
+use crate::embedding::Model;
 use crate::history::History;
 use crate::limits;
 use crate::refresh::Refresh;
@@ -22,14 +22,35 @@ pub struct Loaded {
 }
 
 impl Loaded {
-    pub fn new(catalog: Catalog, embedder: Option<&dyn Embedder>) -> Self {
+    pub async fn build(catalog: Catalog, model: Option<&Model>, previous: Option<&Index>) -> Self {
+        let vocabulary = Vocabulary::of(&catalog.tools, &catalog.products, &catalog.categories);
+        let index = match model {
+            Some(model) => Index::build(
+                model,
+                &catalog.tools,
+                &catalog.products,
+                &vocabulary,
+                previous,
+            )
+            .await
+            .inspect_err(|error| {
+                tracing::warn!(%error, "semantic index unavailable, search uses keywords only");
+            })
+            .ok(),
+            None => None,
+        };
+        Self {
+            catalog,
+            vocabulary,
+            index,
+        }
+    }
+
+    #[cfg(test)]
+    pub fn new(catalog: Catalog, embedder: Option<&dyn crate::embedding::Embedder>) -> Self {
         let vocabulary = Vocabulary::of(&catalog.tools, &catalog.products, &catalog.categories);
         let index = embedder.and_then(|embedder| {
-            Index::build(embedder, &catalog.tools, &catalog.products, &vocabulary)
-                .inspect_err(|error| {
-                    tracing::warn!(%error, "semantic index unavailable, search uses keywords only");
-                })
-                .ok()
+            Index::build_blocking(embedder, &catalog.tools, &catalog.products, &vocabulary).ok()
         });
         Self {
             catalog,
@@ -38,11 +59,15 @@ impl Loaded {
         }
     }
 
-    pub async fn build(catalog: Catalog, embedder: Option<Arc<dyn Embedder>>) -> Self {
-        tokio::task::spawn_blocking(move || Self::new(catalog, embedder.as_deref()))
-            .await
-            .expect("building the catalog index panicked")
+    fn serves(&self, revision: &str, model: Option<&Model>) -> bool {
+        self.catalog.revision == revision && (self.index.is_some() || model.is_none())
     }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Reload {
+    Unchanged,
+    Rebuilt,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
@@ -170,17 +195,23 @@ impl AppState {
         Arc::clone(&self.loaded.read().unwrap_or_else(|p| p.into_inner()))
     }
 
-    pub async fn replace(&self, catalog: Catalog) {
+    pub async fn replace(&self, catalog: Catalog) -> Reload {
+        let current = self.loaded();
+        let model = self.search.model();
+        if current.serves(&catalog.revision, model) {
+            return Reload::Unchanged;
+        }
         let _busy = self.activity.indexing();
-        let loaded = Loaded::build(catalog, self.search.embedder()).await;
+        let loaded = Loaded::build(catalog, model, current.index.as_ref()).await;
         *self.loaded.write().unwrap_or_else(|p| p.into_inner()) = Arc::new(loaded);
         self.search.forget();
+        Reload::Rebuilt
     }
 
     pub fn quiescence(&self) -> Quiescence {
         let loaded = self.loaded();
         let ready = !loaded.catalog.tools.is_empty()
-            && (loaded.index.is_some() || self.search.embedder().is_none());
+            && (loaded.index.is_some() || self.search.model().is_none());
         let reason = match self.activity.current() {
             Some(reason) => reason,
             None if ready => Reason::Idle,
@@ -194,3 +225,6 @@ impl AppState {
         }
     }
 }
+
+#[cfg(test)]
+mod tests;

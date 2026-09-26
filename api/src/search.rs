@@ -4,11 +4,10 @@ use std::sync::Arc;
 use moka::future::Cache;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
-use tokio::sync::Mutex;
 
 use crate::cache::Shared;
 use crate::catalog::Tool;
-use crate::embedding::{Embedder, Vector};
+use crate::embedding::{Embedder, Model, Vector};
 use crate::filters::Filters;
 use crate::interpret;
 use crate::jev_budget::MeteredJev;
@@ -95,10 +94,9 @@ enum JevPolicy {
 
 pub struct Search {
     jev: Option<MeteredJev>,
-    embedder: Option<Arc<dyn Embedder>>,
+    model: Option<Model>,
     shared: Arc<Shared>,
     cache: Cache<String, Interpretation>,
-    model_turn: Arc<Mutex<()>>,
 }
 
 impl Search {
@@ -110,15 +108,14 @@ impl Search {
     ) -> Self {
         Self {
             jev,
-            embedder,
+            model: embedder.map(Model::new),
             cache: memory::cache(cache_bytes, shared.ttl.search),
             shared,
-            model_turn: Arc::default(),
         }
     }
 
-    pub fn embedder(&self) -> Option<Arc<dyn Embedder>> {
-        self.embedder.clone()
+    pub fn model(&self) -> Option<&Model> {
+        self.model.as_ref()
     }
 
     pub async fn interpret(&self, query: &str, loaded: &Loaded) -> Interpretation {
@@ -211,22 +208,10 @@ impl Search {
 
     async fn embed_query(&self, query: &str, loaded: &Loaded) -> Option<Vector> {
         loaded.index.as_ref()?;
-        let embedder = self.embedder()?;
-        let turn = Arc::clone(&self.model_turn).lock_owned().await;
-        let text = query.to_owned();
-        match tokio::task::spawn_blocking(move || {
-            let _turn = turn;
-            embedder.embed(&[text])
-        })
-        .await
-        {
-            Ok(Ok(mut vectors)) => vectors.pop(),
-            Ok(Err(error)) => {
-                tracing::warn!(%error, "could not embed the query, using keywords only");
-                None
-            }
+        match self.model()?.embed(&[query.to_owned()]).await {
+            Ok(mut vectors) => vectors.pop(),
             Err(error) => {
-                tracing::warn!(%error, "the embedding task failed, using keywords only");
+                tracing::warn!(%error, "could not embed the query, using keywords only");
                 None
             }
         }

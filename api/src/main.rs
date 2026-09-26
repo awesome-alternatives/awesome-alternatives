@@ -45,7 +45,7 @@ use crate::jev::JevClient;
 use crate::jev_budget::MeteredJev;
 use crate::refresh::Refresh;
 use crate::search::Search;
-use crate::state::{AppState, Loaded};
+use crate::state::{AppState, Loaded, Reload};
 use crate::upstream::Upstream;
 
 const LIMITER_SWEEP: Duration = Duration::from_secs(60);
@@ -119,15 +119,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             History::disabled()
         }
     };
-    let loaded = Loaded::build(catalog, embedder.clone()).await;
+    let search = Search::new(
+        jev,
+        embedder,
+        config.search_cache_bytes,
+        Arc::clone(&shared),
+    );
+    let loaded = Loaded::build(catalog, search.model(), None).await;
     let state = AppState::new(
         loaded,
-        Search::new(
-            jev,
-            embedder,
-            config.search_cache_bytes,
-            Arc::clone(&shared),
-        ),
+        search,
         Details::new(upstream, config.details_cache_bytes, shared),
         RateLimiter::keyed(Quota::per_minute(config.searches_per_minute)),
         RateLimiter::keyed(Quota::per_minute(config.details_per_minute)),
@@ -222,8 +223,11 @@ async fn reload_catalog(
         ticker.tick().await;
         match catalog::load(&source, &http).await {
             Ok(catalog) => {
-                tracing::info!(tools = catalog.tools.len(), "catalog refreshed");
-                state.replace(catalog).await;
+                let tools = catalog.tools.len();
+                match state.replace(catalog).await {
+                    Reload::Unchanged => tracing::info!("catalog unchanged, keeping the index"),
+                    Reload::Rebuilt => tracing::info!(tools, "catalog refreshed"),
+                }
             }
             Err(error) => {
                 tracing::warn!(%error, "catalog refresh failed, keeping the previous one")

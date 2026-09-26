@@ -1,15 +1,22 @@
 use std::num::NonZeroUsize;
-use std::sync::Mutex;
+use std::sync::{Arc, Mutex};
 
 use fastembed::{EmbeddingModel, TextEmbedding, TextInitOptions};
+use tokio::task::JoinError;
 
 pub type Vector = Vec<f32>;
 
 pub const BATCH: NonZeroUsize = NonZeroUsize::new(16).expect("16 is not zero");
 
 #[derive(Debug, thiserror::Error)]
-#[error("embedding failed: {0}")]
-pub struct EmbedError(String);
+pub enum EmbedError {
+    #[error("embedding failed: {0}")]
+    Model(String),
+    #[error("the embedding task failed: {0}")]
+    Task(#[from] JoinError),
+    #[error("the model left a text without a vector")]
+    Incomplete,
+}
 
 #[derive(Debug, Clone, Copy)]
 pub struct Thresholds {
@@ -31,19 +38,17 @@ impl LocalModel {
             .with_show_download_progress(false);
         TextEmbedding::try_new(options)
             .map(|model| Self(Mutex::new(model)))
-            .map_err(|e| EmbedError(e.to_string()))
+            .map_err(|e| EmbedError::Model(e.to_string()))
     }
 }
 
 impl Embedder for LocalModel {
     fn embed(&self, texts: &[String]) -> Result<Vec<Vector>, EmbedError> {
         let mut model = self.0.lock().unwrap_or_else(|p| p.into_inner());
-        in_batches(texts, BATCH, |batch| {
-            model
-                .embed(batch, None)
-                .map(|vectors| vectors.into_iter().map(normalized).collect())
-                .map_err(|e| EmbedError(e.to_string()))
-        })
+        model
+            .embed(texts, Some(BATCH.get()))
+            .map(|vectors| vectors.into_iter().map(normalized).collect())
+            .map_err(|e| EmbedError::Model(e.to_string()))
     }
 
     fn thresholds(&self) -> Thresholds {
@@ -55,18 +60,40 @@ impl Embedder for LocalModel {
     }
 }
 
-pub fn in_batches(
-    texts: &[String],
-    size: NonZeroUsize,
-    mut embed: impl FnMut(&[String]) -> Result<Vec<Vector>, EmbedError>,
-) -> Result<Vec<Vector>, EmbedError> {
-    texts.chunks(size.get()).map(&mut embed).try_fold(
-        Vec::with_capacity(texts.len()),
-        |mut all, batch| {
-            all.extend(batch?);
-            Ok(all)
-        },
-    )
+pub struct Model {
+    embedder: Arc<dyn Embedder>,
+    turn: Arc<tokio::sync::Mutex<()>>,
+}
+
+impl Model {
+    pub fn new(embedder: Arc<dyn Embedder>) -> Self {
+        Self {
+            embedder,
+            turn: Arc::default(),
+        }
+    }
+
+    pub fn thresholds(&self) -> Thresholds {
+        self.embedder.thresholds()
+    }
+
+    pub async fn embed(&self, texts: &[String]) -> Result<Vec<Vector>, EmbedError> {
+        let mut vectors = Vec::with_capacity(texts.len());
+        for batch in texts.chunks(BATCH.get()) {
+            vectors.extend(self.embed_batch(batch.to_vec()).await?);
+        }
+        Ok(vectors)
+    }
+
+    async fn embed_batch(&self, batch: Vec<String>) -> Result<Vec<Vector>, EmbedError> {
+        let turn = Arc::clone(&self.turn).lock_owned().await;
+        let embedder = Arc::clone(&self.embedder);
+        tokio::task::spawn_blocking(move || {
+            let _turn = turn;
+            embedder.embed(&batch)
+        })
+        .await?
+    }
 }
 
 pub fn normalized(mut vector: Vector) -> Vector {
@@ -120,7 +147,7 @@ pub mod fake {
 
     impl Embedder for Broken {
         fn embed(&self, _: &[String]) -> Result<Vec<Vector>, EmbedError> {
-            Err(EmbedError("model not loaded".into()))
+            Err(EmbedError::Model("model not loaded".into()))
         }
 
         fn thresholds(&self) -> Thresholds {
@@ -149,44 +176,47 @@ mod tests {
         (0..count).map(|i| format!("tool number {i}")).collect()
     }
 
-    fn size(n: usize) -> NonZeroUsize {
-        NonZeroUsize::new(n).unwrap()
+    #[derive(Default)]
+    struct Recording(Mutex<Vec<usize>>);
+
+    impl Embedder for Recording {
+        fn embed(&self, texts: &[String]) -> Result<Vec<Vector>, EmbedError> {
+            self.0.lock().unwrap().push(texts.len());
+            fake::Words.embed(texts)
+        }
+
+        fn thresholds(&self) -> Thresholds {
+            fake::THRESHOLDS
+        }
     }
 
-    #[test]
-    fn batching_returns_what_a_single_call_would_have_returned() {
-        let texts = texts(7);
-        let batched = in_batches(&texts, size(3), |batch| fake::Words.embed(batch)).unwrap();
-        assert_eq!(batched, fake::Words.embed(&texts).unwrap());
+    #[tokio::test]
+    async fn the_model_is_fed_in_batches_and_answers_what_one_call_would_have() {
+        let recording = Arc::new(Recording::default());
+        let texts = texts(2 * BATCH.get() + 3);
+        let vectors = Model::new(recording.clone()).embed(&texts).await.unwrap();
+        assert_eq!(vectors, fake::Words.embed(&texts).unwrap());
+        assert_eq!(
+            *recording.0.lock().unwrap(),
+            vec![BATCH.get(), BATCH.get(), 3]
+        );
     }
 
-    #[test]
-    fn a_batch_smaller_than_the_input_feeds_the_model_in_chunks() {
-        let texts = texts(7);
-        let mut sizes = Vec::new();
-        let vectors = in_batches(&texts, size(3), |batch| {
-            sizes.push(batch.len());
-            fake::Words.embed(batch)
-        })
-        .unwrap();
-        assert_eq!(sizes, vec![3, 3, 1]);
-        assert_eq!(vectors.len(), 7);
-    }
-
-    #[test]
-    fn an_empty_input_never_reaches_the_model() {
-        let mut called = false;
-        let vectors = in_batches(&[], BATCH, |batch| {
-            called = true;
-            fake::Words.embed(batch)
-        })
-        .unwrap();
+    #[tokio::test]
+    async fn an_empty_input_never_reaches_the_model() {
+        let recording = Arc::new(Recording::default());
+        let vectors = Model::new(recording.clone()).embed(&[]).await.unwrap();
         assert!(vectors.is_empty());
-        assert!(!called);
+        assert!(recording.0.lock().unwrap().is_empty());
     }
 
-    #[test]
-    fn a_failing_batch_fails_the_whole_call() {
-        assert!(in_batches(&texts(7), size(3), |batch| fake::Broken.embed(batch)).is_err());
+    #[tokio::test]
+    async fn a_failing_batch_fails_the_whole_call() {
+        assert!(
+            Model::new(Arc::new(fake::Broken))
+                .embed(&texts(7))
+                .await
+                .is_err()
+        );
     }
 }
