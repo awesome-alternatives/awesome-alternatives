@@ -23,7 +23,7 @@ const ranked = trending(tools).map(({ tool, trend }) => ({
 {
   ranked.length > 0 && (
     <>
-      <hr class="divider" />
+      <hr class="divider trending-divider" />
       <section id="trending">
         <p class="section-label">{m.home.trendingLabel}</p>
         <p class="lede">{format(m.home.trendingLede, { days: TREND_WINDOW_DAYS, min: TRENDING_MIN_STARS })}</p>

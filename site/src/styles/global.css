@@ -2494,3 +2494,12 @@ a.tag:hover {
 .browse-more {
   margin-top: 24px;
 }
+
+[data-searching] #trending,
+[data-searching] .trending-divider {
+  display: none;
+}
+
+[data-searching] .search {
+  min-height: 100vh;
+}

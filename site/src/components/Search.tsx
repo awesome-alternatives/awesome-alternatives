@@ -1,4 +1,4 @@
-import { useCallback } from "preact/hooks";
+import { useCallback, useEffect } from "preact/hooks";
 
 import { format, type Locale, pathFor, plural } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
@@ -31,6 +31,10 @@ export default function Search({ locale, strings, names, examples, categories, c
     [hint.alternativesTo],
   );
   const suggestions = useSuggestions(query, detail);
+
+  useEffect(() => {
+    document.documentElement.toggleAttribute("data-searching", state.kind !== "idle");
+  }, [state.kind]);
 
   function go(suggestion: Suggestion) {
     window.location.assign(pathFor(locale, href(suggestion)));
