@@ -2135,6 +2135,7 @@ a.tag:hover {
 .explainer code {
   font-family: var(--mono);
   font-size: 0.85em;
+  overflow-wrap: anywhere;
 }
 
 .explainer [id],

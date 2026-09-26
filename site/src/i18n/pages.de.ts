@@ -115,6 +115,11 @@ export const pages: Pages = {
       privacyLink: "Die Datenschutzerklärung",
       after: "sagt, was gesendet und was aufbewahrt wird.",
     },
+    agents: {
+      heading: "Aus einem KI-Agenten",
+      body: "Der Katalog ist auch ein Model-Context-Protocol-Server (MCP) unter {url}, über Streamable HTTP, ohne Schlüssel und ohne Konto. Ein Agent kann dort Alternativen zu einem Tool oder Produkt finden, Tools nach Kategorie, Sprache oder Lizenz auflisten und die Angaben zu einem Tool lesen. Das Such-Tool liest Anfragen nur mit Stichwörtern und dem Modell auf diesem Server, nie mit Jev, und ist pro Adresse begrenzt; die anderen Tools sind es nicht.",
+      setup: "In Claude Code eintragen:",
+    },
     licences: {
       heading: "Lizenzen",
       dataBefore: "Die Katalogdaten stehen gemeinfrei unter",

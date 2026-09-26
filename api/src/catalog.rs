@@ -2,6 +2,7 @@ use std::collections::BTreeMap;
 use std::path::Path;
 use std::time::Duration;
 
+use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
 use crate::body;
@@ -17,7 +18,7 @@ pub enum Fit {
     Partial,
 }
 
-#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Deserialize, Serialize)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Deserialize, Serialize, JsonSchema)]
 #[serde(rename_all = "kebab-case")]
 pub enum Terms {
     Open,
@@ -137,6 +138,7 @@ impl Tool {
 #[serde(rename_all = "camelCase")]
 pub struct Category {
     pub name: String,
+    pub description: String,
     #[serde(default)]
     pub self_host: bool,
     #[serde(default)]

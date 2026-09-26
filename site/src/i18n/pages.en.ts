@@ -112,6 +112,11 @@ export const pages = {
       privacyLink: "The privacy page",
       after: "says what is sent and what is kept.",
     },
+    agents: {
+      heading: "From an AI agent",
+      body: "The catalog is also a Model Context Protocol (MCP) server at {url}, over Streamable HTTP, with no key and no account. An agent can find alternatives to a tool or a product, list tools by category, language or licence, and read one tool's facts. Its search tool reads queries with keywords and the model on this server only, never with Jev, and has a limit per address; the other tools have none.",
+      setup: "To add it to Claude Code:",
+    },
     licences: {
       heading: "Licences",
       dataBefore: "The catalog data is dedicated to the public domain under",

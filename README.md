@@ -2160,7 +2160,7 @@ The rules, the fit levels and how to verify a tool you maintain are in
 | [`scripts/`](scripts) | The verifier run on pull requests and the nightly refresh that writes the catalog and this README. |
 | [`generated/`](generated) | `catalog.json`, the enriched catalog the site and the API read. |
 | [`site/`](site) | The website, Astro with Preact islands, prerendered from the catalog. |
-| [`api/`](api) | The Rust API behind search, with a local embedding model and Jev as a fallback. |
+| [`api/`](api) | The Rust API behind search and the [MCP server](api/README.md#mcp), with a local embedding model and Jev as a fallback. |
 
 The site and the API are versioned by [FerrFlow](https://ferrflow.com) and released as container
 images on GHCR. The nightly refresh counts as a patch release of the site, so new facts ship the same

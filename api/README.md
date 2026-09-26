@@ -14,6 +14,7 @@ Rust and axum.
 | `GET` | `/v1/tools/{slug}/readme` | The repository README as HTML, sanitised, with relative links and images pointed at GitHub. `html` is `null` when there is none. |
 | `GET` | `/v1/tools/{slug}/security` | The OpenSSF Scorecard (score, date, checks worst first, `null` when the project was never scored) and the repository's published GitHub security advisories. |
 | `GET` | `/v1/tools/{slug}/history` | The tool's daily facts for charts, oldest day first. `days` sets the window, 365 by default, 1 to 730, anything else answers `400`. See [Tool history](#tool-history). |
+| `POST` | `/mcp` | The catalog as a Model Context Protocol server, public at `https://awesome-alternatives.com/api/mcp`. See [MCP](#mcp). |
 | `POST` | `/webhooks/github` | GitHub App webhook. Signed with `X-Hub-Signature-256`, `401` when the signature does not match. A published release of a repository in the catalog answers `202` and triggers a refresh of its tools (see [Release-triggered refresh](#release-triggered-refresh)); every other event, action or repository answers `204`. |
 | `POST` | `/v1/refresh` | Called from a maintainer's own workflow with `Authorization: Bearer <GitHub Actions OIDC token>`. Refreshes the tools backed by the repository the token was issued to. `202` with `{ "slugs": [...], "dispatched": true }`, `dispatched` being `false` when a refresh for that repository already went out within the cooldown. `401` when the token does not verify, `404` when the repository is not in the catalog. |
 | `GET` | `/healthz` | `ok` |
@@ -87,14 +88,15 @@ client is keyed by its /64, since any host can rotate through the addresses of t
 given; an IPv4-mapped IPv6 address counts as the IPv4 address it carries. Idle keys are forgotten
 every minute, so the limiter's memory follows the clients seen recently.
 
-The process as a whole takes at most `SEARCH_CONCURRENCY` searches at once, 32 by default. One
+The process as a whole takes at most `SEARCH_CONCURRENCY` searches at once, 32 by default,
+counting those made through the MCP `search` tool. One
 more is not queued: it answers `503` with `Retry-After: 1` straight away. The limit is on search
 only, so browsing the catalog, the README and security tabs and both refresh endpoints keep
 answering while searches are turned away. Queries are embedded one at a time, and a search waits
 for its turn on the model without holding a blocking thread, so a search that gives up while
 waiting never runs.
 
-Every route under `/v1` and `POST /webhooks/github` answers `504` once it has run for
+Every route under `/v1`, `POST /mcp` and `POST /webhooks/github` answers `504` once it has run for
 `REQUEST_TIMEOUT_SECS`, 15 by default. The work behind it is dropped with it, apart from an
 embedding already running, which cannot be interrupted and finishes on its own, and a refresh
 dispatch (see [Release-triggered refresh](#release-triggered-refresh)). Outbound calls give up
@@ -114,6 +116,55 @@ A request that reaches the container from a public address keeps its own peer ad
 limit key, whatever it claims in `X-Forwarded-For`, so a direct caller cannot hand itself a fresh
 bucket per request. If the proxy ever fronts the API from a public address, every client collapses
 into one bucket and the limit will look far too strict: that is the symptom to look for.
+
+## MCP
+
+`POST /mcp` serves the catalog to AI agents over the Model Context Protocol, with the
+[Streamable HTTP](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#streamable-http)
+transport, through the official Rust SDK, [rmcp](https://crates.io/crates/rmcp). The site's proxy
+strips `/api`, so the public URL is `https://awesome-alternatives.com/api/mcp`:
+
+```bash
+claude mcp add --transport http awesome-alternatives https://awesome-alternatives.com/api/mcp
+```
+
+It is stateless: no session ID, no server-side state, every request answered on its own with a JSON
+body, so any replica answers any request and a rollout drops nothing. `initialize` still answers
+for clients that start with it, a notification answers `202`, and `GET` answers `405` since there is
+no stream to open. The server calls itself `awesome-alternatives`, versioned with the API.
+
+| Tool | Arguments | |
+|---|---|---|
+| `find_alternatives` | `tool`, plus `language`, `license`, `terms`, `selfHost`, `maintained`, `dropIn`, `capabilities`, `limit`, `offset` | Alternatives to a tool or closed product, each with its `fit`, `note` and `migration`, ranked like `/v1/tools?replaces=`. `tool` is a slug or a name in any case. An unknown one is a tool error listing up to five `closeMatches`. |
+| `get_tool` | `slug` | One tool as `/v1/tools` returns it. |
+| `list_tools` | the `/v1/tools` filters, `limit`, `offset` | Read with the same `Filters` type, so the same values are refused. |
+| `list_categories` | none | Every category with its description, tool count, `selfHost` and capability keys. |
+| `search` | `query`, `limit`, `offset` | `POST /v1/search` without the Jev step (see below). |
+
+Lists answer the same `count`, `limit` and `offset` as `/v1/tools`, with a summary per tool (slug,
+name, category, repository, description, language, licence, terms, stars, self-hosting,
+maintenance, last push, latest release tag and what it replaces) rather than the whole entry, which
+`get_tool` gives. Every answer is JSON, as `structuredContent` and as text. A tool that could not
+answer (an argument that does not parse, an unknown name, a spent quota) returns a result with
+`isError: true` and `{ "error": "..." }`, so the agent reads why, as the protocol asks for errors a
+caller can act on. Only an unknown tool name or a malformed request is a JSON-RPC error.
+
+The filter tools have no limit of their own, like `GET /v1/tools`. `search` runs keywords and the
+local model only and never asks Jev, so an agent calling it in a loop costs nothing outside the
+process. A query it reads without a target is not kept in the in-process cache, so the same query
+typed on the site still gets its turn at Jev; a reading already paid for is reused. It has its own
+limit per client, `MCP_SEARCHES_PER_MINUTE`, keyed like `/v1/search` (IPv6 by /64, `TRUST_PROXY`
+honoured the same way) and counted apart from it. Past it, the call is a tool error with
+`retryAfterSeconds`, not a `429`, which an MCP client may not show to the model. It shares
+`SEARCH_CONCURRENCY` with `/v1/search` (past it, a tool error with `retryAfterSeconds: 1`), and the
+whole route is under `REQUEST_TIMEOUT_SECS` and counted as in flight by `/quiesce`.
+
+A request carrying an `Origin` header is refused with `403` unless `ALLOWED_ORIGINS` lists that
+origin, which is what the protocol asks of a server to keep web pages from driving it. Agents are
+not browsers and send no `Origin`, so they are served. The `Host` header is not checked: that guard
+is against DNS rebinding of a server listening on a developer's machine, and this one is public.
+Bodies are capped at 64 KiB, `413` past it. There is no authentication: the data is public and the
+tools only read it.
 
 ## README and security
 
@@ -322,11 +373,12 @@ requests are in flight.
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
 | `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP, per /64 for IPv6. |
+| `MCP_SEARCHES_PER_MINUTE` | `20` | The MCP `search` tool's own limit, per client IP and per /64 for IPv6, counted apart from `SEARCHES_PER_MINUTE`. The other MCP tools have none. |
 | `DETAILS_PER_MINUTE` | `30` | Per client IP (per /64 for IPv6), shared by `/v1/tools/{slug}/readme`, `/security` and `/history`. |
-| `SEARCH_CONCURRENCY` | `32` | Searches served at once by the whole process. Past it a search answers `503` with `Retry-After: 1` instead of waiting. |
-| `REQUEST_TIMEOUT_SECS` | `15` | Every route under `/v1` and the webhook answer `504` past it. |
+| `SEARCH_CONCURRENCY` | `32` | Searches served at once by the whole process, over HTTP and MCP together. Past it a search answers `503` with `Retry-After: 1` instead of waiting, or a tool error over MCP. |
+| `REQUEST_TIMEOUT_SECS` | `15` | Every route under `/v1`, `/mcp` and the webhook answer `504` past it. |
 | `TRUST_PROXY` | `false` | Honoured only for peers on a loopback, private or link-local address. |
-| `ALLOWED_ORIGINS` | unset | Comma-separated origins a browser may read a response from. Unset means same-origin only. |
+| `ALLOWED_ORIGINS` | unset | Comma-separated origins a browser may read a response from. Unset means same-origin only. `/mcp` refuses any other `Origin` with `403`, the site's own included. |
 | `TYPESAFE_API_KEY` | unset | Enables Jev. |
 | `TYPESAFE_MODEL` | `jev-latest` | Pin a version such as `jev-1.13.0` for stable answers. |
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |

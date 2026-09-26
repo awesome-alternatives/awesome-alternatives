@@ -87,6 +87,12 @@ impl Weight for Filters {
     }
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+enum JevPolicy {
+    Allowed,
+    Skipped,
+}
+
 pub struct Search {
     jev: Option<MeteredJev>,
     embedder: Option<Arc<dyn Embedder>>,
@@ -116,6 +122,21 @@ impl Search {
     }
 
     pub async fn interpret(&self, query: &str, loaded: &Loaded) -> Interpretation {
+        self.interpret_under(query, loaded, JevPolicy::Allowed)
+            .await
+    }
+
+    pub async fn interpret_without_jev(&self, query: &str, loaded: &Loaded) -> Interpretation {
+        self.interpret_under(query, loaded, JevPolicy::Skipped)
+            .await
+    }
+
+    async fn interpret_under(
+        &self,
+        query: &str,
+        loaded: &Loaded,
+        policy: JevPolicy,
+    ) -> Interpretation {
         let normalized = lexical::normalize(query);
         if let Some(remembered) = self.cache.get(&normalized).await {
             return remembered;
@@ -124,18 +145,20 @@ impl Search {
         let read = match self.shared.get(&key).await {
             Some(shared) => shared,
             None => {
-                let fresh = self.read(query, loaded).await;
+                let fresh = self.read(query, loaded, policy).await;
                 if fresh.worth_sharing() {
                     self.shared.set(&key, &fresh, self.shared.ttl.search).await;
                 }
                 fresh
             }
         };
-        self.cache.insert(normalized, read.clone()).await;
+        if policy == JevPolicy::Allowed || read.worth_sharing() {
+            self.cache.insert(normalized, read.clone()).await;
+        }
         read
     }
 
-    async fn read(&self, query: &str, loaded: &Loaded) -> Interpretation {
+    async fn read(&self, query: &str, loaded: &Loaded, policy: JevPolicy) -> Interpretation {
         let mut filters = lexical::interpret(query, &loaded.vocabulary);
         let vector = self.embed_query(query, loaded).await;
         if filters.replaces.is_none() {
@@ -148,6 +171,7 @@ impl Search {
 
         let mut interpreted_by = Interpreter::Local;
         if filters.replaces.is_none()
+            && policy == JevPolicy::Allowed
             && let Some(jev) = self.ask_jev(query, &loaded.vocabulary).await
         {
             filters = Filters {
@@ -250,12 +274,8 @@ fn key(revision: &str, normalized: &str) -> String {
 
 #[cfg(test)]
 mod tests {
-    use std::num::NonZeroU32;
-    use std::sync::atomic::{AtomicUsize, Ordering};
     use std::time::Duration;
 
-    use axum::routing::post;
-    use axum::{Json, Router};
     use serde_json::json;
 
     use super::*;
@@ -263,9 +283,7 @@ mod tests {
     use crate::cache::{SEARCH_TTL, Ttl, fake};
     use crate::catalog::{Catalog, Fit};
     use crate::embedding::fake::{Broken, Words};
-    use crate::fixtures::tool;
-    use crate::jev::JevClient;
-    use crate::jev_budget::Limits;
+    use crate::fixtures::{MockJev, mock_jev, mock_jev_answering, tool};
 
     fn catalog() -> Catalog {
         let mut semantic_release = tool("semantic-release", "JavaScript", "MIT", &[], 1);
@@ -541,40 +559,6 @@ mod tests {
         assert!(read.relevance.is_none());
     }
 
-    struct MockJev {
-        base: String,
-        calls: Arc<AtomicUsize>,
-    }
-
-    async fn mock_jev() -> MockJev {
-        mock_jev_answering(json!({
-            "target": { "type": "choice", "choice": "semantic-release", "confidence": 0.9 }
-        }))
-        .await
-    }
-
-    async fn mock_jev_answering(answers: serde_json::Value) -> MockJev {
-        let calls = Arc::new(AtomicUsize::new(0));
-        let counted = Arc::clone(&calls);
-        let router = Router::new().route(
-            "/v1/systemone",
-            post(move || {
-                let answers = answers.clone();
-                async move {
-                    counted.fetch_add(1, Ordering::SeqCst);
-                    Json(json!({ "answers": answers }))
-                }
-            }),
-        );
-        let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
-        let addr = listener.local_addr().unwrap();
-        tokio::spawn(async move { axum::serve(listener, router).await.unwrap() });
-        MockJev {
-            base: format!("http://{addr}"),
-            calls,
-        }
-    }
-
     fn metered(jev: &MockJev, per_minute: u32, per_day: u32) -> (Search, Loaded) {
         metered_sharing(jev, per_minute, per_day, Arc::new(Shared::disabled()))
     }
@@ -587,18 +571,8 @@ mod tests {
     ) -> (Search, Loaded) {
         let embedder: Arc<dyn Embedder> = Arc::new(Words);
         let loaded = Loaded::new(catalog(), Some(embedder.as_ref()));
-        let client = JevClient::new(
-            reqwest::Client::new(),
-            &jev.base,
-            "k".into(),
-            "jev-latest".into(),
-        );
-        let limits = Limits {
-            per_minute: NonZeroU32::new(per_minute).unwrap(),
-            per_day,
-        };
         let search = Search::new(
-            Some(MeteredJev::new(client, limits)),
+            Some(jev.metered(per_minute, per_day)),
             Some(embedder),
             CACHE_BYTES,
             shared,
@@ -620,7 +594,7 @@ mod tests {
         let read = search.interpret("changelog generator", &loaded).await;
         assert_eq!(read.interpreted_by, Interpreter::Jev);
         assert_eq!(read.filters.replaces.as_deref(), Some("semantic-release"));
-        assert_eq!(jev.calls.load(Ordering::SeqCst), 1);
+        assert_eq!(jev.calls(), 1);
     }
 
     #[tokio::test]
@@ -650,7 +624,7 @@ mod tests {
         assert_eq!(second.interpreted_by, Interpreter::Local);
         assert_eq!(second.filters.replaces, None);
         assert_eq!(slugs(&second, &loaded), ["git-cliff"]);
-        assert_eq!(jev.calls.load(Ordering::SeqCst), 1);
+        assert_eq!(jev.calls(), 1);
     }
 
     #[tokio::test]
@@ -672,7 +646,29 @@ mod tests {
         let described = search.interpret("changelog generator", &loaded).await;
         assert_eq!(described.interpreted_by, Interpreter::Local);
         assert_eq!(slugs(&described, &loaded), ["git-cliff"]);
-        assert_eq!(jev.calls.load(Ordering::SeqCst), 0);
+        assert_eq!(jev.calls(), 0);
+    }
+
+    #[tokio::test]
+    async fn a_reading_without_jev_never_asks_it_and_does_not_keep_the_query_from_it() {
+        let jev = mock_jev().await;
+        let (search, loaded) = metered(&jev, 100, 100);
+        let local = search
+            .interpret_without_jev("changelog generator", &loaded)
+            .await;
+        assert_eq!(local.interpreted_by, Interpreter::Local);
+        assert_eq!(slugs(&local, &loaded), ["git-cliff"]);
+        assert_eq!(jev.calls(), 0);
+
+        let paid = search.interpret("changelog generator", &loaded).await;
+        assert_eq!(paid.interpreted_by, Interpreter::Jev);
+        assert_eq!(jev.calls(), 1);
+
+        let reused = search
+            .interpret_without_jev("changelog generator", &loaded)
+            .await;
+        assert_eq!(reused.interpreted_by, Interpreter::Jev);
+        assert_eq!(jev.calls(), 1);
     }
 
     fn real() -> Loaded {
