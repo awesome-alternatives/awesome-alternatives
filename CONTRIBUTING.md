@@ -317,3 +317,40 @@ app, with Contents: write on this repository alone, and hands it to the push. Co
 as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, the app's bot user, falling back to
 `github-actions[bot]`. Given `backfill` as its argument, it clones the same way and runs the
 backfill instead.
+
+### When the refresh stops publishing
+
+Nothing in the cluster reports a refresh that did not happen, so the
+[Freshness](.github/workflows/freshness.yml) workflow checks from GitHub Actions, every hour, that
+what visitors get still follows it. It reads `checkedAt` from the last commit of
+`generated/catalog.json` on main, then what production serves: the markdown page of the most starred
+tool on the site (its "Read from GitHub" day and its star count) and the first page of
+`GET /v1/tools` on the API (star counts), and compares both with main. It raises an alert when:
+
+- the catalog on main was read from GitHub more than 26 hours ago (`STALE_AFTER_HOURS`), one missed
+  nightly run and some margin
+- the site or the API still serves an older catalog 3 hours after the last catalog commit
+  (`DEPLOY_GRACE_HOURS`), a refresh that committed but never went out
+- the site or the API does not answer after three attempts
+
+The alert is a single issue labelled `refresh-stale`, commented on at most once a day while the
+problem lasts, and closed with the time it recovered. The workflow only fails when the check itself
+could not run (GitHub did not answer, a page no longer carries the lines it reads): a red run means
+the observer is broken, an open issue means production is.
+
+The issue says which case it is. A stale main points at the cluster: read the last job of the
+refresh CronJob and its logs (the app token, the image, a refused push). A site or API behind main
+points at the deploy: find the Release run for the last catalog commit and check that its image
+rolled out. The API also reloads the catalog from main every hour on its own, so an API behind main
+with nothing left to release means that reload fails, which it logs as
+`catalog refresh failed, keeping the previous one`. To publish while the cluster is being fixed, run
+[Refresh](.github/workflows/refresh.yml) by hand.
+
+To run the check locally without touching any issue:
+
+```bash
+node scripts/freshness.ts --dry-run
+STALE_AFTER_HOURS=0.02 node scripts/freshness.ts --dry-run
+```
+
+The second pretends the threshold is about a minute and prints the issue it would open.
