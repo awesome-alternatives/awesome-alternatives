@@ -1,5 +1,5 @@
 import type { RepositoryFacts } from "./facts-graphql.ts";
-import type { EnrichedTool } from "./types.ts";
+import type { EnrichedTool, Read } from "./types.ts";
 
 export interface ToolFactsRow {
   time: string;
@@ -16,19 +16,25 @@ export interface ToolFactsRow {
 export function runRows(
   checkedAt: string,
   tools: readonly EnrichedTool[],
-  facts: ReadonlyMap<string, Pick<RepositoryFacts, "openIssues"> | null>,
+  reads: ReadonlyMap<string, Read<Pick<RepositoryFacts, "openIssues">>>,
 ): ToolFactsRow[] {
-  return tools.map(({ slug, repo, release }) => ({
-    time: checkedAt,
-    slug,
-    stars: repo.stars,
-    forks: repo.forks,
-    open_issues: facts.get(slug)?.openIssues ?? null,
-    pushed_at: repo.pushedAt,
-    release_tag: release?.tag ?? null,
-    release_published_at: release?.publishedAt ?? null,
-    signed: release?.signed ?? null,
-  }));
+  return tools.flatMap(({ slug, repo, release }) => {
+    const read = reads.get(slug);
+    if (read?.status !== "read") return [];
+    return [
+      {
+        time: checkedAt,
+        slug,
+        stars: repo.stars,
+        forks: repo.forks,
+        open_issues: read.value.openIssues,
+        pushed_at: repo.pushedAt,
+        release_tag: release?.tag ?? null,
+        release_published_at: release?.publishedAt ?? null,
+        signed: release?.signed ?? null,
+      },
+    ];
+  });
 }
 
 type Json = Record<string, unknown>;

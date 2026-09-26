@@ -7,8 +7,9 @@ import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
-import { publishOrExplain } from "./lib/publish.ts";
+import { publishOrExplain, readPublished } from "./lib/publish.ts";
 import { runRows } from "./lib/tool-facts.ts";
+import { GONE } from "./lib/types.ts";
 
 const root = process.cwd();
 const catalog = await loadSoundCatalog(root);
@@ -19,9 +20,9 @@ const now = new Date();
 const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, now);
 
 const facts = await fetchRepositories(gql, gh, catalog.tools, now);
-const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool, facts.get(tool.slug) ?? null));
+const enriched = await mapLimit(catalog.tools, 4, (tool) => enricher.enrich(tool, facts.get(tool.slug) ?? GONE));
 const tools = enriched.filter((t) => t !== null).sort((a, b) => a.slug.localeCompare(b.slug));
-const owners = await fetchOwners(gql, tools);
+const owners = await fetchOwners(gql, tools, (await readPublished(root)).owners);
 
 const checkedAt = now.toISOString();
 const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools }, { now, history: gitEventHistory(root) });

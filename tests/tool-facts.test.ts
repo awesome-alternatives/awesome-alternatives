@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { runRows, snapshotRows } from "../scripts/lib/tool-facts.ts";
-import type { EnrichedTool } from "../scripts/lib/types.ts";
+import { BEHIND_ALLOW_LIST, type EnrichedTool, type Read } from "../scripts/lib/types.ts";
 
 const fixture = (name: string): unknown => JSON.parse(readFileSync(new URL(`fixtures/${name}`, import.meta.url), "utf8"));
 
@@ -95,7 +95,11 @@ describe("runRows", () => {
 
   it("stamps every tool with the run's checkedAt and joins the open issues fetched beside the catalog", () => {
     const release = { tag: "v2", publishedAt: "2026-09-20T00:00:00Z", url: "u", source: "release" as const, signed: true };
-    const rows = runRows("2026-09-25T03:17:00.000Z", [tool("a", release), tool("b", null)], new Map([["a", { openIssues: 4 }]]));
+    const reads = new Map([
+      ["a", { status: "read" as const, value: { openIssues: 4 } }],
+      ["b", { status: "read" as const, value: { openIssues: 0 } }],
+    ]);
+    const rows = runRows("2026-09-25T03:17:00.000Z", [tool("a", release), tool("b", null)], reads);
     assert.deepEqual(rows, [
       {
         time: "2026-09-25T03:17:00.000Z",
@@ -113,12 +117,24 @@ describe("runRows", () => {
         slug: "b",
         stars: 10,
         forks: 3,
-        open_issues: null,
+        open_issues: 0,
         pushed_at: "2026-09-24T01:00:00Z",
         release_tag: null,
         release_published_at: null,
         signed: null,
       },
     ]);
+  });
+
+  it("records no sample for a tool this run could not read, whose facts were only carried forward", () => {
+    const reads = new Map<string, Read<{ openIssues: number }>>([
+      ["a", { status: "read", value: { openIssues: 4 } }],
+      ["kept", BEHIND_ALLOW_LIST],
+    ]);
+    const rows = runRows("2026-09-25T03:17:00.000Z", [tool("a", null), tool("kept", null)], reads);
+    assert.deepEqual(
+      rows.map((row) => row.slug),
+      ["a"],
+    );
   });
 });

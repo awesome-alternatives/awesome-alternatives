@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { createGitHub, GitHubError } from "../scripts/lib/github.ts";
+import { AllowListRefusal, createGitHub, GitHubError } from "../scripts/lib/github.ts";
 
 function recording(response: () => Response) {
   const requests: { url: string; headers: Record<string, string> }[] = [];
@@ -65,9 +65,31 @@ describe("createGitHub", () => {
     );
     await assert.rejects(() => gh.get("/repos/a/b"), (error: unknown) => {
       assert.ok(error instanceof GitHubError);
+      assert.ok(!(error instanceof AllowListRefusal));
       assert.match(error.message, /Resource not accessible by integration/);
       assert.doesNotMatch(error.message, /rate limit/);
       return true;
     });
+  });
+
+  it("tells an organisation's IP allow list apart from any other refusal, from the body GitHub sends", async () => {
+    const body = JSON.stringify({
+      message:
+        "Although you appear to have the correct authorization credentials, the `neondatabase` organization has an IP allow list enabled, and your IP address is not permitted to access this resource.",
+      documentation_url: "https://docs.github.com/rest/repos/contents#get-repository-content",
+      status: "403",
+    });
+    const gh = createGitHub("ghs_x", async () => new Response(body, { status: 403, headers: { "x-ratelimit-remaining": "4999" } }));
+    await assert.rejects(() => gh.get("/repos/neondatabase/neon/contents/.awesome-alternatives?ref=main"), (error: unknown) => {
+      assert.ok(error instanceof AllowListRefusal);
+      assert.equal(error.status, 403);
+      assert.equal(error.path, "/repos/neondatabase/neon/contents/.awesome-alternatives?ref=main");
+      return true;
+    });
+  });
+
+  it("does not read an allow-list sentence on another status as an allow list", async () => {
+    const gh = createGitHub(undefined, async () => new Response("the org has an IP allow list enabled", { status: 500 }));
+    await assert.rejects(() => gh.get("/repos/a/b"), (error: unknown) => error instanceof GitHubError && !(error instanceof AllowListRefusal));
   });
 });

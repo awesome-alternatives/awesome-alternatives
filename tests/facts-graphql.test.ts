@@ -9,12 +9,14 @@ import {
   type GqlRepository,
   mapOwner,
   mapRepository,
+  type RepositoryFacts,
   repositoryQuery,
 } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
 import { createGraphQL, type GraphQL, type GraphQLErrorEntry, GraphQLTransportError } from "../scripts/lib/graphql.ts";
+import { isAllowListError } from "../scripts/lib/graphql-batch.ts";
 import { judge } from "../scripts/lib/rules.ts";
-import type { ReleaseEntry, ReleaseFacts, RepoFacts, Tool } from "../scripts/lib/types.ts";
+import { BEHIND_ALLOW_LIST, GONE, type Read, type ReleaseEntry, type ReleaseFacts, type RepoFacts, type Tool } from "../scripts/lib/types.ts";
 
 interface Recorded {
   tools: { repository: string; path?: string }[];
@@ -40,6 +42,10 @@ const slugs = ["deno", "gitea", "deno-std", "gone", "kafka", "fd", "ferrflow", "
 const tools = recorded.tools.map((t, i) => ({ ...t, slug: slugs[i], name: slugs[i], category: "c", file: "" }) as Tool);
 const node = (slug: string) => recorded.response.data[`r${slugs.indexOf(slug)}`] as GqlRepository;
 const expected = (slug: string) => rest[slugs.indexOf(slug)] as RestFacts;
+const factsOf = (facts: ReadonlyMap<string, Read<RepositoryFacts>>, slug: string): RepositoryFacts | undefined => {
+  const read = facts.get(slug);
+  return read?.status === "read" ? read.value : undefined;
+};
 
 function recordedGraphQL(): GraphQL & { asked: string[] } {
   const asked: string[] = [];
@@ -151,13 +157,13 @@ describe("fetchRepositories", () => {
     const asked: string[] = [];
     const facts = await fetchRepositories(recordedGraphQL(), restTags(verified, asked), tools, NOW);
 
-    assert.equal(facts.get("gone"), null);
-    assert.equal(facts.get("gitea")?.release?.signed, true);
-    assert.equal(facts.get("kafka")?.release?.signed, false);
-    assert.equal(facts.get("ferrflow")?.release?.signed, true);
-    assert.equal(facts.get("deno")?.release?.signed, true);
+    assert.deepEqual(facts.get("gone"), GONE);
+    assert.equal(factsOf(facts, "gitea")?.release?.signed, true);
+    assert.equal(factsOf(facts, "kafka")?.release?.signed, false);
+    assert.equal(factsOf(facts, "ferrflow")?.release?.signed, true);
+    assert.equal(factsOf(facts, "deno")?.release?.signed, true);
     assert.equal(asked.length, 3);
-    assert.ok(!("annotatedTag" in (facts.get("deno") ?? {})));
+    assert.ok(!("annotatedTag" in (factsOf(facts, "deno") ?? {})));
   });
 
   it("splits a batch GitHub times out on and keeps every tool in its place", async () => {
@@ -181,7 +187,7 @@ describe("fetchRepositories", () => {
     );
     const facts = await fetchRepositories(gql, restTags({}), five, NOW, 5);
     assert.deepEqual(
-      five.map((t) => facts.get(t.slug)?.repo.fullName),
+      five.map((t) => factsOf(facts, t.slug)?.repo.fullName),
       ["acme/a", "acme/b", "acme/c", "acme/d", "acme/e"],
     );
     assert.deepEqual(sizes, [5, 3, 2, 1, 2]);
@@ -195,6 +201,64 @@ describe("fetchRepositories", () => {
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
     await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1), NOW), /r0: nope/);
+  });
+});
+
+const ALLOW_LIST_MESSAGE =
+  "Although you appear to have the correct authorization credentials, the `neondatabase` organization has an IP allow list enabled, and your IP address is not permitted to access this resource.";
+
+function refusedAt(alias: string) {
+  return { type: "FORBIDDEN", path: [alias], extensions: { saml_failure: false }, locations: [{ line: 3, column: 3 }], message: ALLOW_LIST_MESSAGE };
+}
+
+describe("isAllowListError", () => {
+  it("recognises the error GitHub puts on a repository behind an IP allow list", () => {
+    assert.equal(isAllowListError(refusedAt("r0")), true);
+  });
+
+  it("does not take another refusal, or the same words under another type, for an allow list", () => {
+    assert.equal(isAllowListError({ type: "FORBIDDEN", path: ["r0"], message: "Resource not accessible by integration" }), false);
+    assert.equal(isAllowListError({ type: "NOT_FOUND", path: ["r0"], message: ALLOW_LIST_MESSAGE }), false);
+  });
+});
+
+describe("fetchRepositories with an organisation behind an IP allow list", () => {
+  function refusing(): GraphQL & { asked: number } {
+    const gql = {
+      asked: 0,
+      async query<T>(query: string) {
+        gql.asked++;
+        if (query.includes("...Facts")) {
+          return { data: { r0: null, r1: node("deno") } as T, errors: [refusedAt("r0")] };
+        }
+        return { data: { r0: null } as T, errors: [] };
+      },
+      spent: () => ({ queries: gql.asked, cost: 0, remaining: null }),
+    };
+    return gql;
+  }
+
+  it("marks the refused repository and still reads the others of the same batch", async () => {
+    const neon = { slug: "neon", name: "Neon", repository: "https://github.com/neondatabase/neon", category: "c", file: "" } as Tool;
+    const gql = refusing();
+    const facts = await fetchRepositories(gql, restTags({}), [neon, tools[0] as Tool], NOW);
+    assert.deepEqual(facts.get("neon"), BEHIND_ALLOW_LIST);
+    assert.equal(factsOf(facts, "deno")?.repo.fullName, "denoland/deno");
+  });
+
+  it("keeps an owner behind an allow list apart from one GitHub no longer knows", async () => {
+    const gql: GraphQL = {
+      async query<T>() {
+        const user = { __typename: "User", login: "b", url: "u", name: null, bio: null, websiteUrl: null };
+        return { data: { o0: null, o1: user, o2: null } as T, errors: [refusedAt("o0")] };
+      },
+      spent: () => ({ queries: 0, cost: 0, remaining: null }),
+    };
+    const owners = await fetchOwnerFacts(gql, ["neondatabase", "b", "gone"]);
+    assert.deepEqual(
+      [...owners.values()].map((read) => read.status),
+      ["behind-allow-list", "read", "gone"],
+    );
   });
 });
 
@@ -233,7 +297,7 @@ describe("active contributors", () => {
         : page([person("Alice"), unlinked("carol@example.org"), unlinked("dave@example.org")], null),
     );
     const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
-    assert.deepEqual(facts.get("fd")?.contributors, { count: 4, capped: false });
+    assert.deepEqual(factsOf(facts, "fd")?.contributors, { count: 4, capped: false });
     assert.deepEqual(
       gql.variables.map((v) => ({ head: v.h0, after: v.a0, since: v.since })),
       [
@@ -246,27 +310,27 @@ describe("active contributors", () => {
   it("stops after the page cap and publishes the count as a lower bound", async () => {
     const gql = paging((asked) => page([person(`p${asked}`)], `c${asked}`));
     const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
-    assert.deepEqual(facts.get("fd")?.contributors, { count: HISTORY_PAGES, capped: true });
+    assert.deepEqual(factsOf(facts, "fd")?.contributors, { count: HISTORY_PAGES, capped: true });
     assert.equal(gql.variables.length, HISTORY_PAGES);
   });
 
   it("reads a later page GitHub did not return as a lower bound rather than a complete count", async () => {
     const gql = paging((asked) => (asked === 0 ? page([person("alice")], "c1") : null));
     const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
-    assert.deepEqual(facts.get("fd")?.contributors, { count: 1, capped: true });
+    assert.deepEqual(factsOf(facts, "fd")?.contributors, { count: 1, capped: true });
   });
 
   it("has no count when not even the first page came back, and zero when nobody committed", async () => {
     const lost = await fetchRepositories(paging(() => null), restTags({}), tools.slice(5, 6), NOW);
-    assert.equal(lost.get("fd")?.contributors, null);
+    assert.equal(factsOf(lost, "fd")?.contributors, null);
     const quiet = await fetchRepositories(paging(() => page([], null)), restTags({}), tools.slice(5, 6), NOW);
-    assert.deepEqual(quiet.get("fd")?.contributors, { count: 0, capped: false });
+    assert.deepEqual(factsOf(quiet, "fd")?.contributors, { count: 0, capped: false });
   });
 
   it("walks no history for a default branch that points at no commit", async () => {
     const gql = recordedGraphQL();
     const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
-    assert.equal(facts.get("fd")?.contributors, null);
+    assert.equal(factsOf(facts, "fd")?.contributors, null);
     assert.ok(!gql.asked.some((query) => query.includes("history(")));
   });
 
@@ -300,8 +364,8 @@ describe("platforms", () => {
     };
     const { path: _, ...oxlint } = tools[7] as Tool;
     const facts = await fetchRepositories(gql, restTags({}), [tools[7] as Tool, { ...oxlint, slug: "oxc" }], NOW);
-    assert.deepEqual(facts.get("oxlint")?.platforms, []);
-    assert.deepEqual(facts.get("oxc")?.platforms, [{ os: "linux", architectures: ["x86_64"] }]);
+    assert.deepEqual(factsOf(facts, "oxlint")?.platforms, []);
+    assert.deepEqual(factsOf(facts, "oxc")?.platforms, [{ os: "linux", architectures: ["x86_64"] }]);
   });
 
   it("reads no platform from a repository that only has tags", () => {
@@ -379,7 +443,7 @@ describe("owners", () => {
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
     const owners = await fetchOwnerFacts(gql, ["a", "b"]);
-    assert.deepEqual([...owners.keys()], ["b"]);
+    assert.deepEqual([...owners.values()].map((read) => read.status), ["gone", "read"]);
   });
 });
 

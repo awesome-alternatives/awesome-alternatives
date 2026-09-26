@@ -154,6 +154,8 @@ Reviewed by a maintainer before merge, without blocking:
 - no push in the last year
 - a closed product's homepage does not answer, which often only means it turns scripts away
 - a declared `deploy` method with nothing on GitHub to show for it
+- the repository's organisation has an IP allow list that turns GitHub's runners away
+  (`unreadable-from-ci`), see [below](#organisations-with-an-ip-allow-list)
 
 The nightly refresh adds one more on listed tools: a day that gained 50 or more stars and at least
 five times the tool's usual daily pace over the last month. Bought stars arrive in bursts. A launch
@@ -168,6 +170,23 @@ between its neighbours. Each refresh carries the series of the previous catalog 
 back on the git history of the catalog for the days it lacks. A tool starts with a single day, the
 day it joins the catalog: GitHub does not say how many stars a repository had before that. The
 monthly trend is read from the same series.
+
+### Organisations with an IP allow list
+
+Some organisations, `neondatabase` among them, only let their own networks read their repositories
+through the GitHub API. GitHub applies that to the token of a pull request's checks and to the app
+token the refresh uses, not to a contributor's personal token, so `pnpm validate` can pass on your
+machine and warn in CI.
+
+In CI, GitHub still describes the repository itself, so the checks on it run (public, not a fork,
+not archived, old enough, licence). It refuses the releases, the `.awesome-alternatives` file and
+the files `deploy` is proven from, and the run says so with an `unreadable-from-ci` warning instead
+of failing. A maintainer checks those by hand before merging.
+
+The refresh cannot read such a repository at all. A tool that is already in the catalog keeps the
+facts, star series and verified mark of the last run that could read it, with the edits to its entry
+applied, and every run logs it. A tool no run has read yet is accepted in `data/tools` but stays out
+of the catalog, the README and the site until its organisation lets GitHub's runners in.
 
 ## Verifying a tool you maintain
 

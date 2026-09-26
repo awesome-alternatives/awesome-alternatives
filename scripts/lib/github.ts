@@ -9,6 +9,18 @@ export class GitHubError extends Error {
   }
 }
 
+export class AllowListRefusal extends GitHubError {
+  constructor(path: string, message: string) {
+    super(403, path, message);
+  }
+}
+
+const ALLOW_LIST_REFUSAL = /has an IP allow list enabled/;
+
+export function isAllowListRefusal(message: string): boolean {
+  return ALLOW_LIST_REFUSAL.test(message);
+}
+
 export interface GitHub {
   get<T>(path: string, accept?: string): Promise<T | null>;
 }
@@ -27,6 +39,7 @@ export function createGitHub(token: string | undefined, fetchImpl: typeof fetch 
       if (res.status === 404) return null;
       if (!res.ok) {
         const body = await res.text();
+        if (res.status === 403 && isAllowListRefusal(body)) throw new AllowListRefusal(path, body.slice(0, 300));
         const limited = res.headers.get("x-ratelimit-remaining") === "0";
         throw new GitHubError(res.status, path, limited ? "rate limit exhausted" : body.slice(0, 200));
       }

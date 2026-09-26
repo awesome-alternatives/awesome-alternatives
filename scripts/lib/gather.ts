@@ -1,22 +1,34 @@
 import { fetchMaintainerClaim, fetchRelease, fetchRepo } from "./facts.ts";
-import type { GitHub } from "./github.ts";
+import { AllowListRefusal, type GitHub } from "./github.ts";
 import type { Evidence } from "./rules.ts";
-import type { Tool } from "./types.ts";
+import type { RepoFacts, Tool } from "./types.ts";
 
-export interface Gathered extends Evidence {
-  maintainerVerified: boolean;
+export type Gathered =
+  | { status: "read"; evidence: Evidence; maintainerVerified: boolean }
+  | { status: "behind-allow-list"; repo: RepoFacts | null };
+
+const REFUSED = Symbol("refused by an IP allow list");
+
+async function unlessRefused<T>(read: Promise<T>): Promise<T | typeof REFUSED> {
+  try {
+    return await read;
+  } catch (error) {
+    if (error instanceof AllowListRefusal) return REFUSED;
+    throw error;
+  }
 }
 
 export async function gather(gh: GitHub, tool: Tool): Promise<Gathered> {
-  const repo = await fetchRepo(gh, tool.repository);
-  if (!repo) return { repo, release: null, starHistory: [], maintainerVerified: false };
+  const repo = await unlessRefused(fetchRepo(gh, tool.repository));
+  if (repo === REFUSED) return { status: "behind-allow-list", repo: null };
+  if (!repo) return { status: "read", evidence: { repo, release: null, starHistory: [] }, maintainerVerified: false };
 
-  const [release, claim] = await Promise.all([
-    fetchRelease(gh, repo.fullName),
-    fetchMaintainerClaim(gh, repo.fullName, repo.defaultBranch, tool.path),
-  ]);
-
-  return { repo, release, starHistory: [], maintainerVerified: claim.includes(tool.slug) };
+  const details = await unlessRefused(
+    Promise.all([fetchRelease(gh, repo.fullName), fetchMaintainerClaim(gh, repo.fullName, repo.defaultBranch, tool.path)]),
+  );
+  if (details === REFUSED) return { status: "behind-allow-list", repo };
+  const [release, claim] = details;
+  return { status: "read", evidence: { repo, release, starHistory: [] }, maintainerVerified: claim.includes(tool.slug) };
 }
 
 export async function mapLimit<T, R>(items: readonly T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
