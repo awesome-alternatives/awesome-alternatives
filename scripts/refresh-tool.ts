@@ -2,13 +2,11 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
-import { createEnricher, fetchOwners } from "./lib/enrich.ts";
-import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
 import type { RefreshedEntry } from "./lib/merge.ts";
 import { readPublished } from "./lib/publish.ts";
-import { GONE } from "./lib/types.ts";
+import { refreshTools } from "./lib/refresh-run.ts";
 
 const [slug, outDir] = process.argv.slice(2);
 if (!slug || !outDir) {
@@ -24,13 +22,14 @@ if (!tool) {
   process.exit(1);
 }
 
-const gh = createGitHub(process.env.GITHUB_TOKEN);
-const gql = createGraphQL(process.env.GITHUB_TOKEN);
-const now = new Date();
-const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, now);
-const facts = await fetchRepositories(gql, gh, [tool], now);
-const enriched = await enricher.enrich(tool, facts.get(slug) ?? GONE);
-const [owner = null] = enriched ? Object.values(await fetchOwners(gql, [enriched], (await readPublished(root)).owners)) : [];
+const clients = {
+  gh: createGitHub(process.env.GITHUB_TOKEN),
+  gql: createGraphQL(process.env.GITHUB_TOKEN),
+  installations: installationsFromEnv(process.env),
+};
+const { tools, owners } = await refreshTools(root, await readPublished(root), clients, catalog.tools, [tool], new Date());
+const [enriched = null] = tools;
+const [owner = null] = Object.values(owners);
 const entry: RefreshedEntry = { slug, tool: enriched, owner };
 
 await mkdir(outDir, { recursive: true });

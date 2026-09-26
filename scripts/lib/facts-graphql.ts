@@ -13,12 +13,12 @@ import { walkHistories } from "./commit-history.ts";
 import { activeSince, contributorsOf, startWalk } from "./contributors.ts";
 import { mapLimit } from "./gather.ts";
 import { type GitHub, repoPath } from "./github.ts";
-import type { GraphQL, GraphQLErrorEntry } from "./graphql.ts";
-import { aliasOf, BatchRejected, inBatches, isAllowListError } from "./graphql-batch.ts";
+import type { GraphQL } from "./graphql.ts";
+import { aliasedBatches, aliasedQuery, type BatchShape, everyRead } from "./graphql-batch.ts";
 import { platformsOf } from "./platforms.ts";
+import { timed } from "./timing.ts";
 import {
   type ActiveContributors,
-  BEHIND_ALLOW_LIST,
   GONE,
   type OwnerFacts,
   type Platform,
@@ -29,8 +29,9 @@ import {
   type Tool,
 } from "./types.ts";
 
-export const REPOSITORY_BATCH = 20;
-export const OWNER_BATCH = 100;
+export const REPOSITORY_SHAPE: BatchShape = { size: 20, concurrency: 4 };
+export const OWNER_SHAPE: BatchShape = { size: 100, concurrency: 1 };
+const SIGNATURE_CONCURRENCY = 4;
 
 type GitObject =
   | { __typename: "Commit"; oid: string; signature: { isValid: boolean } | null }
@@ -240,17 +241,69 @@ export function mapOwner(node: GqlOwner): OwnerFacts {
   };
 }
 
-function unreadAliases(errors: readonly GraphQLErrorEntry[]): { missing: Set<string>; refused: Set<string>; fatal: GraphQLErrorEntry[] } {
-  const missing = new Set<string>();
-  const refused = new Set<string>();
-  const fatal: GraphQLErrorEntry[] = [];
-  for (const error of errors) {
-    const alias = aliasOf(error);
-    if (alias && error.type === "NOT_FOUND") missing.add(alias);
-    else if (alias && isAllowListError(error)) refused.add(alias);
-    else fatal.push(error);
-  }
-  return { missing, refused, fatal };
+export async function readRepositories(gql: GraphQL, tools: readonly Tool[], shape = REPOSITORY_SHAPE): Promise<Read<MappedRepository>[]> {
+  return everyRead(await aliasedBatches(gql, tools, shape, { alias: "r", query: repositoryQuery, read: mapRepository, failures: "throw" }));
+}
+
+async function signedRelease(
+  gh: GitHub,
+  fullName: string,
+  release: ReleaseFacts,
+  tagOid: string,
+  published: ReleaseFacts | null | undefined,
+): Promise<ReleaseFacts> {
+  if (published?.tag === release.tag && published.tagOid === tagOid) return { ...release, tagOid, signed: published.signed };
+  return { ...release, tagOid, signed: await isAnnotatedTagSigned(gh, fullName, tagOid) };
+}
+
+async function releasesOf(
+  gh: GitHub,
+  tools: readonly Tool[],
+  mapped: readonly Read<MappedRepository>[],
+  published: ReadonlyMap<string, ReleaseFacts | null>,
+): Promise<(ReleaseFacts | null)[]> {
+  return mapLimit(tools, SIGNATURE_CONCURRENCY, async (tool, i) => {
+    const entry = mapped[i] ?? GONE;
+    if (entry.status !== "read") return null;
+    const { release, annotatedTag, repo } = entry.value;
+    if (!release || !annotatedTag) return release;
+    return signedRelease(gh, repo.fullName, release, annotatedTag, published.get(tool.slug));
+  });
+}
+
+export async function completeRepositories(
+  gql: GraphQL,
+  gh: GitHub,
+  tools: readonly Tool[],
+  mapped: readonly Read<MappedRepository>[],
+  now: Date,
+  published: ReadonlyMap<string, ReleaseFacts | null> = new Map(),
+): Promise<Map<string, Read<RepositoryFacts>>> {
+  const walks = mapped.map((entry) => (entry.status === "read" && entry.value.head ? startWalk(entry.value.repo.fullName, entry.value.head) : null));
+  const [histories, releases] = await Promise.all([
+    timed("history", () => walkHistories(gql, walks, activeSince(now))),
+    timed("signatures", () => releasesOf(gh, tools, mapped, published)),
+  ]);
+  return new Map(
+    tools.map((tool, i): [string, Read<RepositoryFacts>] => {
+      const entry = mapped[i] ?? GONE;
+      if (entry.status !== "read") return [tool.slug, entry];
+      const { head: _, annotatedTag: __, ...rest } = entry.value;
+      const walked = histories[i];
+      return [
+        tool.slug,
+        {
+          status: "read",
+          value: {
+            ...rest,
+            release: releases[i] ?? null,
+            platforms: tool.path ? [] : rest.platforms,
+            contributors: walked ? contributorsOf(walked) : null,
+          },
+        },
+      ];
+    }),
+  );
 }
 
 export async function fetchRepositories(
@@ -258,58 +311,13 @@ export async function fetchRepositories(
   gh: GitHub,
   tools: readonly Tool[],
   now: Date,
-  size = REPOSITORY_BATCH,
+  published: ReadonlyMap<string, ReleaseFacts | null> = new Map(),
+  shape = REPOSITORY_SHAPE,
 ): Promise<Map<string, Read<RepositoryFacts>>> {
-  const mapped = await inBatches(tools, size, async (batch) => {
-    const { query, variables } = repositoryQuery(batch);
-    const { data, errors } = await gql.query<Record<string, GqlRepository | null>>(query, variables);
-    const { missing, refused, fatal } = unreadAliases(errors);
-    if (fatal.length || !data) throw new BatchRejected(fatal.length ? fatal : [{ message: "no data" }]);
-    return batch.map((_, i): Read<MappedRepository> => {
-      const alias = `r${i}`;
-      if (refused.has(alias)) return BEHIND_ALLOW_LIST;
-      const node = data[alias];
-      return node && !missing.has(alias) ? { status: "read", value: mapRepository(node) } : GONE;
-    });
-  });
-
-  const histories = await walkHistories(
-    gql,
-    mapped.map((entry) => (entry.status === "read" && entry.value.head ? startWalk(entry.value.repo.fullName, entry.value.head) : null)),
-    activeSince(now),
-  );
-  const resolved = await mapLimit(
-    mapped.map((entry, i) => ({ entry, i })),
-    4,
-    async ({ entry, i }): Promise<Read<RepositoryFacts>> => {
-      if (entry.status !== "read") return entry;
-      const { head: _, annotatedTag, ...rest } = entry.value;
-      const walked = histories[i];
-      const facts: RepositoryFacts = {
-        ...rest,
-        platforms: tools[i]?.path ? [] : rest.platforms,
-        contributors: walked ? contributorsOf(walked) : null,
-      };
-      if (!annotatedTag || !facts.release) return { status: "read", value: facts };
-      const signed = await isAnnotatedTagSigned(gh, facts.repo.fullName, annotatedTag);
-      return { status: "read", value: { ...facts, release: { ...facts.release, signed } } };
-    },
-  );
-  return new Map(tools.map((tool, i) => [tool.slug, resolved[i] ?? GONE]));
+  return completeRepositories(gql, gh, tools, await readRepositories(gql, tools, shape), now, published);
 }
 
-export async function fetchOwnerFacts(gql: GraphQL, logins: readonly string[], size = OWNER_BATCH): Promise<Map<string, Read<OwnerFacts>>> {
-  const owners = await inBatches(logins, size, async (batch) => {
-    const { query, variables } = ownerQuery(batch);
-    const { data, errors } = await gql.query<Record<string, GqlOwner | null>>(query, variables);
-    const { refused, fatal } = unreadAliases(errors);
-    if (fatal.length || !data) throw new BatchRejected(fatal.length ? fatal : [{ message: "no data" }]);
-    return batch.map((_, i): Read<OwnerFacts> => {
-      const alias = `o${i}`;
-      if (refused.has(alias)) return BEHIND_ALLOW_LIST;
-      const node = data[alias];
-      return node ? { status: "read", value: mapOwner(node) } : GONE;
-    });
-  });
+export async function fetchOwnerFacts(gql: GraphQL, logins: readonly string[], shape = OWNER_SHAPE): Promise<Map<string, Read<OwnerFacts>>> {
+  const owners = everyRead(await aliasedBatches(gql, logins, shape, { alias: "o", query: ownerQuery, read: mapOwner, failures: "throw" }));
   return new Map(logins.map((login, i) => [login, owners[i] ?? GONE]));
 }

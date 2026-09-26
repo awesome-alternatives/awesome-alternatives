@@ -185,7 +185,7 @@ describe("fetchRepositories", () => {
     const five = ["a", "b", "c", "d", "e"].map(
       (name) => ({ slug: name, name, repository: `https://github.com/acme/${name}`, category: "c", file: "" }) as Tool,
     );
-    const facts = await fetchRepositories(gql, restTags({}), five, NOW, 5);
+    const facts = await fetchRepositories(gql, restTags({}), five, NOW, new Map(), { size: 5, concurrency: 1 });
     assert.deepEqual(
       five.map((t) => factsOf(facts, t.slug)?.repo.fullName),
       ["acme/a", "acme/b", "acme/c", "acme/d", "acme/e"],
@@ -201,6 +201,40 @@ describe("fetchRepositories", () => {
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
     await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1), NOW), /r0: nope/);
+  });
+});
+
+describe("fetchRepositories with the published catalog", () => {
+  const annotatedOf = (slug: string) => mapRepository(node(slug)).annotatedTag as string;
+  const releaseOf = (slug: string) => mapRepository(node(slug)).release as ReleaseFacts;
+  const gitea: GraphQL = {
+    async query<T>() {
+      return { data: { r0: node("gitea") } as T, errors: [] };
+    },
+    spent: () => ({ queries: 0, cost: 0, remaining: null }),
+  };
+
+  it("carries a release's signature over when both its tag and the tag object it points at are unchanged", async () => {
+    const asked: string[] = [];
+    const published = new Map([["gitea", { ...releaseOf("gitea"), signed: true, tagOid: annotatedOf("gitea") }]]);
+    const facts = await fetchRepositories(gitea, restTags({}, asked), [tools[1] as Tool], NOW, published);
+    assert.deepEqual(asked, []);
+    assert.equal(factsOf(facts, "gitea")?.release?.signed, true);
+    assert.equal(factsOf(facts, "gitea")?.release?.tagOid, annotatedOf("gitea"));
+  });
+
+  it("checks the signature again when the tag was moved, renamed, or never had its object recorded", async () => {
+    const oid = annotatedOf("gitea");
+    const moved = { ...releaseOf("gitea"), signed: true, tagOid: "0".repeat(40) };
+    const renamed = { ...releaseOf("gitea"), tag: "v0.0.1", signed: true, tagOid: oid };
+    const unrecorded = { ...releaseOf("gitea"), signed: true };
+    for (const previous of [moved, renamed, unrecorded]) {
+      const asked: string[] = [];
+      const facts = await fetchRepositories(gitea, restTags({ [oid]: false }, asked), [tools[1] as Tool], NOW, new Map([["gitea", previous]]));
+      assert.deepEqual(asked, [`/repos/go-gitea/gitea/git/tags/${oid}`]);
+      assert.equal(factsOf(facts, "gitea")?.release?.signed, false);
+      assert.equal(factsOf(facts, "gitea")?.release?.tagOid, oid);
+    }
   });
 });
 

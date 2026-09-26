@@ -1,11 +1,27 @@
 import { createPrivateKey, sign, type KeyObject } from "node:crypto";
+import { mapLimit } from "./gather.ts";
 import { GitHubError } from "./github.ts";
 
 const JWT_LIFETIME_SECONDS = 540;
 const CLOCK_SKEW_SECONDS = 60;
 
+export interface Installed {
+  accounts: ReadonlySet<string>;
+  repositories: ReadonlySet<string>;
+}
+
 export interface Installations {
-  isInstalledOn(fullName: string): Promise<boolean>;
+  list(): Promise<Installed>;
+}
+
+const PAGE_SIZE = 100;
+const INSTALLATION_CONCURRENCY = 4;
+
+interface Installation {
+  id: number;
+  account: string;
+  everyRepository: boolean;
+  suspended: boolean;
 }
 
 function base64url(value: string | Buffer): string {
@@ -29,6 +45,39 @@ function appHeaders(jwt: string): Record<string, string> {
   };
 }
 
+function installationOf(value: unknown): Installation {
+  const id = field(value, "id");
+  const account = field(field(value, "account"), "login");
+  const selection = field(value, "repository_selection");
+  if (typeof id !== "number" || typeof account !== "string" || (selection !== "all" && selection !== "selected")) {
+    throw new Error(`GitHub listed an installation without an id, an account or a repository selection: ${JSON.stringify(value).slice(0, 200)}`);
+  }
+  return { id, account: account.toLowerCase(), everyRepository: selection === "all", suspended: field(value, "suspended_at") != null };
+}
+
+function fullNameOf(value: unknown): string {
+  const fullName = field(value, "full_name");
+  if (typeof fullName !== "string") throw new Error(`GitHub listed an installed repository without a name: ${JSON.stringify(value).slice(0, 200)}`);
+  return fullName.toLowerCase();
+}
+
+async function paged(fetchImpl: typeof fetch, bearer: string, path: string, listed: (body: unknown) => unknown): Promise<unknown[]> {
+  const items: unknown[] = [];
+  for (let page = 1; ; page++) {
+    const body = listed(await appRequest(fetchImpl, bearer, `${path}?per_page=${PAGE_SIZE}&page=${page}`));
+    if (!Array.isArray(body)) throw new Error(`GitHub answered ${path} without a list`);
+    items.push(...body);
+    if (body.length < PAGE_SIZE) return items;
+  }
+}
+
+async function selectedRepositories(fetchImpl: typeof fetch, jwt: string, installation: Installation): Promise<string[]> {
+  const path = `/app/installations/${installation.id}/access_tokens`;
+  const token = field(await appRequest(fetchImpl, jwt, path, { permissions: { metadata: "read" } }), "token");
+  if (typeof token !== "string") throw new Error(`GitHub returned no token on ${path}`);
+  return (await paged(fetchImpl, token, "/installation/repositories", (body) => field(body, "repositories"))).map(fullNameOf);
+}
+
 export function createInstallations(
   appId: string,
   privateKey: string,
@@ -36,34 +85,31 @@ export function createInstallations(
   clock: () => Date = () => new Date(),
 ): Installations {
   const key = createPrivateKey(privateKey);
-  let current: { jwt: string; renewAt: number } | null = null;
-
-  const jwt = () => {
-    const now = clock();
-    if (!current || now.getTime() >= current.renewAt) {
-      current = { jwt: appJwt(appId, key, now), renewAt: now.getTime() + (JWT_LIFETIME_SECONDS - 2 * CLOCK_SKEW_SECONDS) * 1000 };
-    }
-    return current.jwt;
-  };
-
   return {
-    async isInstalledOn(fullName) {
-      const path = `/repos/${fullName}/installation`;
-      const res = await fetchImpl(`https://api.github.com${path}`, { headers: appHeaders(jwt()) });
-      if (res.status === 404) return false;
-      if (!res.ok) throw new GitHubError(res.status, path, (await res.text()).slice(0, 200));
-      return true;
+    async list() {
+      const jwt = appJwt(appId, key, clock());
+      const active = (await paged(fetchImpl, jwt, "/app/installations", (body) => body)).map(installationOf).filter((i) => !i.suspended);
+      const selected = await mapLimit(
+        active.filter((i) => !i.everyRepository),
+        INSTALLATION_CONCURRENCY,
+        (installation) => selectedRepositories(fetchImpl, jwt, installation),
+      );
+      return {
+        accounts: new Set(active.filter((i) => i.everyRepository).map((i) => i.account)),
+        repositories: new Set(selected.flat()),
+      };
     },
   };
 }
 
-export async function isMaintainerVerified(
-  slug: string,
-  claim: readonly string[],
-  fullName: string,
-  installations: Installations | null,
-): Promise<boolean> {
-  return claim.includes(slug) || (installations !== null && (await installations.isInstalledOn(fullName)));
+export function isInstalledOn(installed: Installed, fullName: string): boolean {
+  const name = fullName.toLowerCase();
+  const [account = ""] = name.split("/");
+  return installed.repositories.has(name) || installed.accounts.has(account);
+}
+
+export function isMaintainerVerified(slug: string, claim: readonly string[], fullName: string, installed: Installed | null): boolean {
+  return claim.includes(slug) || (installed !== null && isInstalledOn(installed, fullName));
 }
 
 export function installationsFromEnv(env: NodeJS.ProcessEnv): Installations | null {

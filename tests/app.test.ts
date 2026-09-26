@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { generateKeyPairSync, verify } from "node:crypto";
 import { describe, it } from "node:test";
-import { appJwt, createInstallations, installationsFromEnv, installationToken, isMaintainerVerified } from "../scripts/lib/app.ts";
+import { appJwt, createInstallations, installationsFromEnv, installationToken, isInstalledOn, isMaintainerVerified } from "../scripts/lib/app.ts";
 
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 const pem = privateKey.export({ type: "pkcs8", format: "pem" }).toString();
@@ -29,41 +29,93 @@ describe("appJwt", () => {
   });
 });
 
-function fakeFetch(status: number, seen: { url: string; authorization: string }[]): typeof fetch {
-  return (async (url: string, init: RequestInit) => {
-    seen.push({ url, authorization: (init.headers as Record<string, string>).authorization ?? "" });
-    return new Response(status === 200 ? "{}" : "nope", { status });
-  }) as typeof fetch;
+interface AppCall {
+  method: string;
+  url: string;
+  authorization: string;
+}
+
+interface FakeInstallation {
+  id: number;
+  account: string;
+  selection: "all" | "selected";
+  repositories?: string[];
+  suspended?: boolean;
+}
+
+function appApi(installations: readonly FakeInstallation[], calls: AppCall[], status = 200): typeof fetch {
+  return async (input, init) => {
+    const url = new URL(String(input));
+    const authorization = (init?.headers as Record<string, string>).authorization ?? "";
+    calls.push({ method: init?.method ?? "GET", url: `${url.pathname}${url.search}`, authorization });
+    if (status !== 200) return new Response("nope", { status });
+    const page = Number(url.searchParams.get("page"));
+    const perPage = Number(url.searchParams.get("per_page"));
+    if (url.pathname === "/app/installations") {
+      const listed = installations.slice((page - 1) * perPage, page * perPage).map((i) => ({
+        id: i.id,
+        account: { login: i.account },
+        repository_selection: i.selection,
+        suspended_at: i.suspended ? "2026-09-01T00:00:00Z" : null,
+      }));
+      return Response.json(listed);
+    }
+    const token = url.pathname.match(/^\/app\/installations\/(\d+)\/access_tokens$/);
+    if (token) return Response.json({ token: `ghs_${token[1]}` });
+    if (url.pathname === "/installation/repositories") {
+      const id = Number(authorization.replace("Bearer ghs_", ""));
+      const names = installations.find((i) => i.id === id)?.repositories ?? [];
+      return Response.json({ total_count: names.length, repositories: names.slice((page - 1) * perPage, page * perPage).map((full_name) => ({ full_name })) });
+    }
+    return new Response("not found", { status: 404 });
+  };
 }
 
 describe("createInstallations", () => {
-  it("answers true when the app is installed on the repository", async () => {
-    const seen: { url: string; authorization: string }[] = [];
-    const installations = createInstallations("42", pem, fakeFetch(200, seen));
-    assert.equal(await installations.isInstalledOn("acme/tool"), true);
-    assert.equal(seen[0]?.url, "https://api.github.com/repos/acme/tool/installation");
-    assert.match(seen[0]?.authorization ?? "", /^Bearer [\w-]+\.[\w-]+\.[\w-]+$/);
+  it("lists the installations once and reads the selected repositories with each installation's own token", async () => {
+    const calls: AppCall[] = [];
+    const installations = createInstallations(
+      "42",
+      pem,
+      appApi(
+        [
+          { id: 1, account: "Acme", selection: "all" },
+          { id: 2, account: "bob", selection: "selected", repositories: ["bob/Tool"] },
+          { id: 3, account: "carol", selection: "selected", repositories: ["carol/app"], suspended: true },
+        ],
+        calls,
+      ),
+    );
+    const installed = await installations.list();
+    assert.equal(isInstalledOn(installed, "acme/anything"), true);
+    assert.equal(isInstalledOn(installed, "bob/tool"), true);
+    assert.equal(isInstalledOn(installed, "bob/other"), false);
+    assert.equal(isInstalledOn(installed, "carol/app"), false);
+    assert.deepEqual(
+      calls.map((c) => `${c.method} ${c.url}`),
+      ["GET /app/installations?per_page=100&page=1", "POST /app/installations/2/access_tokens", "GET /installation/repositories?per_page=100&page=1"],
+    );
+    assert.match(calls[0]?.authorization ?? "", /^Bearer [\w-]+\.[\w-]+\.[\w-]+$/);
+    assert.equal(calls[2]?.authorization, "Bearer ghs_2");
   });
 
-  it("answers false on a 404, which is how GitHub says the app is not installed", async () => {
-    assert.equal(await createInstallations("42", pem, fakeFetch(404, [])).isInstalledOn("acme/tool"), false);
+  it("follows the pages of installations and of selected repositories", async () => {
+    const everyAccount = Array.from({ length: 101 }, (_, i): FakeInstallation => ({ id: i + 10, account: `org${i}`, selection: "all" }));
+    const repositories = Array.from({ length: 150 }, (_, i) => `solo/r${i}`);
+    const calls: AppCall[] = [];
+    const installed = await createInstallations(
+      "42",
+      pem,
+      appApi([...everyAccount, { id: 5, account: "solo", selection: "selected", repositories }], calls),
+    ).list();
+    assert.equal(isInstalledOn(installed, "org100/x"), true);
+    assert.equal(isInstalledOn(installed, "solo/r149"), true);
+    assert.equal(calls.filter((c) => c.url.startsWith("/app/installations?")).length, 2);
+    assert.equal(calls.filter((c) => c.url.startsWith("/installation/repositories")).length, 2);
   });
 
-  it("throws on any other failure rather than unverifying a tool", async () => {
-    await assert.rejects(createInstallations("42", pem, fakeFetch(500, [])).isInstalledOn("acme/tool"), /GitHub 500/);
-  });
-
-  it("reuses one token until it nears expiry, then signs a new one", async () => {
-    const seen: { url: string; authorization: string }[] = [];
-    let now = new Date("2026-09-24T12:00:00Z");
-    const installations = createInstallations("42", pem, fakeFetch(200, seen), () => now);
-    await installations.isInstalledOn("a/b");
-    now = new Date("2026-09-24T12:05:00Z");
-    await installations.isInstalledOn("a/b");
-    now = new Date("2026-09-24T12:08:00Z");
-    await installations.isInstalledOn("a/b");
-    assert.equal(seen[0]?.authorization, seen[1]?.authorization);
-    assert.notEqual(seen[1]?.authorization, seen[2]?.authorization);
+  it("throws on a failure rather than unverifying every tool", async () => {
+    await assert.rejects(createInstallations("42", pem, appApi([], [], 500)).list(), /GitHub 500/);
   });
 });
 
@@ -76,30 +128,20 @@ describe("installationsFromEnv", () => {
 });
 
 describe("isMaintainerVerified", () => {
-  function installedOn(installed: boolean, asked: string[]) {
-    return {
-      async isInstalledOn(fullName: string) {
-        asked.push(fullName);
-        return installed;
-      },
-    };
-  }
+  const installed = { accounts: new Set(["acme"]), repositories: new Set(["bob/tool"]) };
 
-  it("verifies a tool whose repository has the app installed and no claim file", async () => {
-    const asked: string[] = [];
-    assert.equal(await isMaintainerVerified("tool", [], "acme/tool", installedOn(true, asked)), true);
-    assert.deepEqual(asked, ["acme/tool"]);
+  it("verifies a tool whose repository has the app installed and no claim file", () => {
+    assert.equal(isMaintainerVerified("tool", [], "Acme/tool", installed), true);
+    assert.equal(isMaintainerVerified("tool", [], "bob/tool", installed), true);
   });
 
-  it("does not ask about the app when the claim file already verifies the tool", async () => {
-    const asked: string[] = [];
-    assert.equal(await isMaintainerVerified("tool", ["other", "tool"], "acme/tool", installedOn(false, asked)), true);
-    assert.deepEqual(asked, []);
+  it("verifies a tool the claim file lists without the app", () => {
+    assert.equal(isMaintainerVerified("tool", ["other", "tool"], "carol/tool", null), true);
   });
 
-  it("leaves a tool unverified with neither the file nor the app", async () => {
-    assert.equal(await isMaintainerVerified("tool", ["other"], "acme/tool", installedOn(false, [])), false);
-    assert.equal(await isMaintainerVerified("tool", [], "acme/tool", null), false);
+  it("leaves a tool unverified with neither the file nor the app", () => {
+    assert.equal(isMaintainerVerified("tool", ["other"], "bob/other", installed), false);
+    assert.equal(isMaintainerVerified("tool", [], "acme/tool", null), false);
   });
 });
 

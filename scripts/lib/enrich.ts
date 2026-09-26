@@ -7,22 +7,21 @@ import {
   parseAddedLog,
   parseEditedLog,
 } from "./added.ts";
-import { type Installations, isMaintainerVerified } from "./app.ts";
+import { type Installed, isMaintainerVerified } from "./app.ts";
 import { factsChangedAt } from "./changed.ts";
-import { readStarHistory } from "./history.ts";
 import { ownerOf } from "./facts.ts";
 import { repoPath } from "./github.ts";
 import { fetchOwnerFacts, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GraphQL } from "./graphql.ts";
-import { readPublished } from "./publish.ts";
+import type { Snapshot } from "./publish.ts";
 import { judge, replacedSlugs } from "./rules.ts";
 import { nextSeries, seriesPoints } from "./star-series.ts";
 import { termsOf } from "./terms.ts";
 import { trendOf } from "./trending.ts";
-import { type EnrichedTool, GONE, isFlagCode, type OwnerFacts, type Read, type Tool } from "./types.ts";
+import { type EnrichedTool, GONE, isFlagCode, type OwnerFacts, type Read, type RepoFacts, type Tool } from "./types.ts";
 
 export interface Enricher {
-  enrich(tool: Tool, read: Read<RepositoryFacts>): Promise<EnrichedTool | null>;
+  enrich(tool: Tool, read: Read<RepositoryFacts>): EnrichedTool | null;
 }
 
 function keptBehindAllowList(tool: Tool, published: EnrichedTool | undefined, editedAt: string): EnrichedTool | null {
@@ -47,23 +46,22 @@ function keptBehindAllowList(tool: Tool, published: EnrichedTool | undefined, ed
   };
 }
 
-export async function createEnricher(
+export function createEnricher(
   root: string,
-  installations: Installations | null,
+  previous: Snapshot,
+  installed: Installed | null,
   tools: readonly Tool[],
   now: Date,
-): Promise<Enricher> {
-  const previous = await readPublished(root);
+): Enricher {
   const replaced = replacedSlugs(tools);
   const carried = carriedAddedAt(previous);
   const before = new Map(previous.tools.map((t) => [t.slug, t]));
   const git = (args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" });
   const history = parseAddedLog(git(ADDED_LOG_ARGS));
   const edits = parseEditedLog(git(EDITED_LOG_ARGS));
-  const stars = readStarHistory(root, now);
 
   return {
-    async enrich(tool, read) {
+    enrich(tool, read) {
       const editedAt = edits.get(tool.slug) ?? now.toISOString();
       if (read.status === "gone") {
         console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
@@ -71,7 +69,7 @@ export async function createEnricher(
       }
       if (read.status === "behind-allow-list") return keptBehindAllowList(tool, before.get(tool.slug), editedAt);
       const facts = read.value;
-      const series = nextSeries(before.get(tool.slug)?.starHistory, stars.get(tool.slug) ?? [], facts.repo.stars, now);
+      const series = nextSeries(before.get(tool.slug)?.starHistory, facts.repo.stars, now);
       const starHistory = seriesPoints(series, now);
       const flags = judge(tool, { ...facts, starHistory }, now, replaced)
         .map((f) => f.code)
@@ -94,7 +92,7 @@ export async function createEnricher(
         releases: facts.releases,
         contributors: facts.contributors,
         platforms: facts.platforms,
-        maintainerVerified: await isMaintainerVerified(tool.slug, facts.claim, facts.repo.fullName, installations),
+        maintainerVerified: isMaintainerVerified(tool.slug, facts.claim, facts.repo.fullName, installed),
         flags,
         terms: termsOf(tool.terms, facts.repo.license),
         capabilities: tool.capabilities ?? {},
@@ -104,12 +102,22 @@ export async function createEnricher(
   };
 }
 
+export function ownerLogins(tools: readonly Tool[], reads: readonly Read<{ repo: RepoFacts }>[], previous: Snapshot): string[] {
+  const before = new Map(previous.tools.map((t) => [t.slug, t]));
+  const listed = tools.flatMap((tool, i) => {
+    const read = reads[i] ?? GONE;
+    if (read.status === "read") return [read.value.repo.fullName];
+    const kept = read.status === "behind-allow-list" ? before.get(tool.slug) : undefined;
+    return kept ? [kept.repo.fullName] : [];
+  });
+  return [...new Set(listed.map(ownerOf))].sort((a, b) => a.localeCompare(b));
+}
+
 export async function fetchOwners(
   gql: GraphQL,
-  tools: readonly EnrichedTool[],
+  logins: readonly string[],
   published: Readonly<Record<string, OwnerFacts>>,
 ): Promise<Record<string, OwnerFacts>> {
-  const logins = [...new Set(tools.map((t) => ownerOf(t.repo.fullName)))].sort((a, b) => a.localeCompare(b));
   const fetched = await fetchOwnerFacts(gql, logins);
   const owners: Record<string, OwnerFacts> = {};
   for (const login of logins) {

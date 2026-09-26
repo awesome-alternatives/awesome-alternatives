@@ -1,3 +1,5 @@
+import { type Clock, patientFetch, SYSTEM_CLOCK } from "./rate-limit.ts";
+
 export class GitHubError extends Error {
   readonly status: number;
   readonly path: string;
@@ -25,7 +27,8 @@ export interface GitHub {
   get<T>(path: string, accept?: string): Promise<T | null>;
 }
 
-export function createGitHub(token: string | undefined, fetchImpl: typeof fetch = fetch): GitHub {
+export function createGitHub(token: string | undefined, fetchImpl: typeof fetch = fetch, clock: Clock = SYSTEM_CLOCK): GitHub {
+  const send = patientFetch(fetchImpl, clock);
   return {
     async get<T>(path: string, accept = "application/vnd.github+json"): Promise<T | null> {
       const headers: Record<string, string> = {
@@ -35,7 +38,7 @@ export function createGitHub(token: string | undefined, fetchImpl: typeof fetch 
       };
       if (token) headers.authorization = `Bearer ${token}`;
 
-      const res = await fetchImpl(`https://api.github.com${path}`, { headers, redirect: "follow" });
+      const res = await send(`https://api.github.com${path}`, { headers, redirect: "follow" });
       if (res.status === 404) return null;
       if (!res.ok) {
         const body = await res.text();

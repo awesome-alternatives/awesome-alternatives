@@ -1,5 +1,7 @@
-import { HISTORY_DAYS } from "./history.ts";
+import { TREND_WINDOW_DAYS } from "./trending.ts";
 import type { StarHistory, StarPoint } from "./types.ts";
+
+export const HISTORY_DAYS = TREND_WINDOW_DAYS + 1;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -11,12 +13,6 @@ function dayOf(instant: Date | string): string {
 
 function addDays(day: string, days: number): string {
   return dayOf(new Date(Date.parse(`${day}T00:00:00.000Z`) + days * DAY_MS));
-}
-
-function observedDays(points: readonly StarPoint[]): DayCounts {
-  const days: DayCounts = new Map();
-  for (const point of [...points].sort((a, b) => a.at.localeCompare(b.at))) days.set(dayOf(point.at), point.stars);
-  return days;
 }
 
 function daysOf(series: StarHistory | undefined): DayCounts {
@@ -45,14 +41,9 @@ function lastDayOf(series: StarHistory): string {
   return addDays(series.from, series.stars.length - 1);
 }
 
-export function nextSeries(
-  previous: StarHistory | undefined,
-  observed: readonly StarPoint[],
-  stars: number,
-  now: Date,
-): StarHistory {
+export function nextSeries(previous: StarHistory | undefined, stars: number, now: Date): StarHistory {
   const today = dayOf(now);
-  const counts = new Map([...observedDays(observed), ...daysOf(previous), [today, stars]]);
+  const counts = new Map([...daysOf(previous), [today, stars]]);
   return seriesUntil(counts, today);
 }
 
