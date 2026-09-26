@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.20.1] - 2026-09-26
+
+### Bug Fixes
+
+- perf(api): rebuild the search index only for what changed, and let searches through between batches (#253)
+
 ## [0.20.0] - 2026-09-26
 
 ### Features
