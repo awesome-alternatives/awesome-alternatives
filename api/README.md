@@ -75,12 +75,20 @@ cannot, such as "what is the weather today" or "comment faire une tarte aux pomm
 and keeps no result at all. The lead is what separates a real answer from a near-tie between two
 unrelated tools, which is the shape a wrong target takes here.
 
-At startup and on every refresh the whole catalog is embedded, in batches of 16 texts. The ONNX
-session pads each batch to its longest text and holds the raw output of every batch until the call
-returns, so one call over the whole catalog made the startup peak grow steeply with the number of
-tools. Batching flattens most of that slope, though not all of it: ONNX Runtime's arena does not
-shrink between runs. The stored vectors are 384 floats, about 1.5 KB per tool, and are not
-affected.
+At startup the whole catalog is embedded, in batches of 16 texts. The ONNX session pads each batch
+to its longest text and holds the raw output of every batch until the call returns, so one call
+over the whole catalog made the startup peak grow steeply with the number of tools. Batching
+flattens most of that slope, though not all of it: ONNX Runtime's arena does not shrink between
+runs. The stored vectors are 384 floats, about 1.5 KB per tool, and are not affected.
+
+The catalog is fetched again every `CATALOG_REFRESH_SECS`. When its revision, the digest of the
+document, is the one already loaded, nothing is rebuilt and the search cache is kept. When it
+changed, the index is rebuilt from the previous one: a vector is keyed by the exact text it was
+embedded from, so only the texts that are new or changed go through the model, and a text that
+appears twice (a tool other entries replace is both a target and a tool) is embedded once. A
+nightly refresh that only moves star counts and push dates embeds nothing. The new index is
+swapped in whole, and the search cache is emptied then, since readings from the old catalog no
+longer apply.
 
 `POST /v1/search` is limited per client IP. Behind a reverse proxy, set `TRUST_PROXY=true` so the
 limit applies to the address in the last `X-Forwarded-For` entry rather than to the proxy. An IPv6
@@ -94,7 +102,9 @@ more is not queued: it answers `503` with `Retry-After: 1` straight away. The li
 only, so browsing the catalog, the README and security tabs and both refresh endpoints keep
 answering while searches are turned away. Queries are embedded one at a time, and a search waits
 for its turn on the model without holding a blocking thread, so a search that gives up while
-waiting never runs.
+waiting never runs. A rebuild takes its turn once per batch of 16 texts rather than once for the
+whole pass, and turns are handed out in order, so a search that arrives mid-rebuild waits for the
+batch in progress and then goes ahead of the next one.
 
 Every route under `/v1`, `POST /mcp` and `POST /webhooks/github` answers `504` once it has run for
 `REQUEST_TIMEOUT_SECS`, 15 by default. The work behind it is dropped with it, apart from an
@@ -329,7 +339,7 @@ same JSON body either way:
 |---|---|
 | `idle` | Ready, nothing in flight. The only case that answers `200`. |
 | `starting` | The catalog or the semantic index is not in place yet. |
-| `indexing` | A catalog refresh is rebuilding the index. |
+| `indexing` | A refreshed catalog changed and the index is being rebuilt. An unchanged one never gets here. |
 | `requests` | Requests are still being served. |
 
 `ready` is its own field so a readiness probe can use it without caring about in-flight work.
@@ -371,7 +381,7 @@ requests are in flight.
 |---|---|---|
 | `BIND` | `0.0.0.0:3000` | |
 | `CATALOG_SOURCE` | the catalog on `main`, from raw.githubusercontent.com | An `https://` URL or a file path. |
-| `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog. |
+| `CATALOG_REFRESH_SECS` | `3600` | A failed refresh keeps the previous catalog, and an unchanged one keeps the index and the search cache. |
 | `SEARCHES_PER_MINUTE` | `20` | Per client IP, per /64 for IPv6. |
 | `MCP_SEARCHES_PER_MINUTE` | `20` | The MCP `search` tool's own limit, per client IP and per /64 for IPv6, counted apart from `SEARCHES_PER_MINUTE`. The other MCP tools have none. |
 | `DETAILS_PER_MINUTE` | `30` | Per client IP (per /64 for IPv6), shared by `/v1/tools/{slug}/readme`, `/security` and `/history`. |
