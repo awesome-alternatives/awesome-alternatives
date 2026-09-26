@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.2] - 2026-09-26
+
+### Bug Fixes
+
+- perf(refresh): read GitHub concurrently and let one repository fail without failing the run (#252)
+
 ## [0.4.1] - 2026-09-26
 
 ### Bug Fixes
