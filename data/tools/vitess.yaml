@@ -1,0 +1,4 @@
+name: Vitess
+repository: https://github.com/vitessio/vitess
+category: relational-database
+deploy: [container, binary, package]

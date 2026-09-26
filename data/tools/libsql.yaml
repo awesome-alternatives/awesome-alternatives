@@ -1,0 +1,8 @@
+name: libSQL
+repository: https://github.com/tursodatabase/libsql
+category: relational-database
+replaces:
+  - tool: sqlite
+    fit: drop-in
+    note: A fork of SQLite that keeps its file format and C API, adding a server mode, replication and vector search.
+deploy: [container, compose, binary]

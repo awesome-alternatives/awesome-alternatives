@@ -1,0 +1,8 @@
+name: ParadeDB
+repository: https://github.com/paradedb/paradedb
+category: search-engine
+replaces:
+  - tool: elasticsearch
+    fit: partial
+    note: BM25 full-text search and aggregations inside Postgres through the pg_search extension, queried in SQL.
+deploy: [container, compose, helm, package]

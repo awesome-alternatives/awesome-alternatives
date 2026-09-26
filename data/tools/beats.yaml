@@ -1,0 +1,5 @@
+name: Beats
+repository: https://github.com/elastic/beats
+category: log-pipeline
+terms: open-core
+deploy: [container]

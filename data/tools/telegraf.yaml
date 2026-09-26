@@ -1,0 +1,4 @@
+name: Telegraf
+repository: https://github.com/influxdata/telegraf
+category: metrics
+deploy: [container]

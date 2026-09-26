@@ -1,0 +1,8 @@
+name: Canal
+repository: https://github.com/alibaba/canal
+category: data-integration
+replaces:
+  - tool: debezium
+    fit: partial
+    note: Change data capture from MySQL binlogs only, delivered to Kafka, RocketMQ or its client adapters.
+deploy: [container, helm]

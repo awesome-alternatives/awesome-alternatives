@@ -1,0 +1,8 @@
+name: Hasura GraphQL Engine
+repository: https://github.com/hasura/graphql-engine
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: partial
+    note: GraphQL and REST APIs generated over Postgres and other databases, with permissions; auth and storage come from elsewhere.
+deploy: [container, compose]

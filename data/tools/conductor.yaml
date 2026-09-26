@@ -1,0 +1,4 @@
+name: Conductor
+repository: https://github.com/conductor-oss/conductor
+category: workflow-orchestration
+deploy: [container, compose]

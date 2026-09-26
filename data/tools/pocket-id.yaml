@@ -1,0 +1,4 @@
+name: Pocket ID
+repository: https://github.com/pocket-id/pocket-id
+category: identity-provider
+deploy: [container, compose, binary]

@@ -1,0 +1,8 @@
+name: Tengine
+repository: https://github.com/alibaba/tengine
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: drop-in
+    note: Built on nginx and reads its configuration, adding dynamic upstreams, active health checks and more load-balancing methods.
+deploy: [container]

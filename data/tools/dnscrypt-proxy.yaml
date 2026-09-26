@@ -1,0 +1,8 @@
+name: dnscrypt-proxy
+repository: https://github.com/DNSCrypt/dnscrypt-proxy
+category: dns-sinkhole
+replaces:
+  - tool: nextdns
+    fit: partial
+    note: Encrypted DNS with blocklists and per-name rules on a machine or a router you run; no web dashboard.
+deploy: [binary]

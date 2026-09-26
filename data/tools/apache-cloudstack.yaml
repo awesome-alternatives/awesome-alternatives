@@ -1,0 +1,7 @@
+name: Apache CloudStack
+repository: https://github.com/apache/cloudstack
+category: virtualization
+replaces:
+  - tool: vmware-vsphere
+    fit: partial
+    note: Runs KVM, VMware and XenServer hosts as a multi-tenant IaaS cloud with networking and self-service, not a vCenter replacement.

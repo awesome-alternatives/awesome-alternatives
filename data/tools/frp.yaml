@@ -1,0 +1,8 @@
+name: frp
+repository: https://github.com/fatedier/frp
+category: reverse-proxy
+replaces:
+  - tool: ngrok
+    fit: partial
+    note: Exposes local TCP, UDP and HTTP services through a server you run, without the hosted edge or dashboard.
+deploy: [container, binary]

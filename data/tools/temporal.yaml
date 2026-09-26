@@ -1,0 +1,4 @@
+name: Temporal
+repository: https://github.com/temporalio/temporal
+category: workflow-orchestration
+deploy: [container, compose, helm, binary]
