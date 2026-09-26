@@ -17,7 +17,7 @@ export function Mark({ icon, label, href, muted = false }: Props) {
       {glyph}
     </a>
   ) : (
-    <span {...attrs} role="img">
+    <span {...attrs} role="img" tabIndex={0}>
       {glyph}
     </span>
   );
