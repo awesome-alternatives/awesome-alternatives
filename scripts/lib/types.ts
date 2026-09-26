@@ -90,7 +90,7 @@ export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-re
 
 export type FlagCode = (typeof FLAG_CODES)[number];
 
-export type FindingCode = BlockingCode | FlagCode | "deploy-unproven" | "homepage-unreachable";
+export type FindingCode = BlockingCode | FlagCode | "deploy-unproven" | "homepage-unreachable" | "unreadable-from-ci";
 
 export function isFlagCode(code: FindingCode): code is FlagCode {
   return (FLAG_CODES as readonly string[]).includes(code);
@@ -239,3 +239,9 @@ export const EVENT_ORDER: Record<EventType, number> = {
   reactivated: 7,
   released: 8,
 };
+
+export type Read<T> = { status: "read"; value: T } | { status: "gone" } | { status: "behind-allow-list" };
+
+export const GONE = { status: "gone" } as const;
+
+export const BEHIND_ALLOW_LIST = { status: "behind-allow-list" } as const;

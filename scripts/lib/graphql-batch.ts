@@ -1,3 +1,4 @@
+import { isAllowListRefusal } from "./github.ts";
 import { type GraphQLErrorEntry, GraphQLTransportError } from "./graphql.ts";
 
 export class BatchRejected extends Error {
@@ -30,4 +31,8 @@ async function splitting<T, R>(batch: readonly T[], run: (batch: readonly T[]) =
 export function aliasOf(error: GraphQLErrorEntry): string | undefined {
   const [alias] = error.path ?? [];
   return typeof alias === "string" ? alias : undefined;
+}
+
+export function isAllowListError(error: GraphQLErrorEntry): boolean {
+  return error.type === "FORBIDDEN" && isAllowListRefusal(error.message);
 }

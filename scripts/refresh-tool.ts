@@ -7,6 +7,8 @@ import { fetchRepositories } from "./lib/facts-graphql.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
 import type { RefreshedEntry } from "./lib/merge.ts";
+import { readPublished } from "./lib/publish.ts";
+import { GONE } from "./lib/types.ts";
 
 const [slug, outDir] = process.argv.slice(2);
 if (!slug || !outDir) {
@@ -27,8 +29,8 @@ const gql = createGraphQL(process.env.GITHUB_TOKEN);
 const now = new Date();
 const enricher = await createEnricher(root, installationsFromEnv(process.env), catalog.tools, now);
 const facts = await fetchRepositories(gql, gh, [tool], now);
-const enriched = await enricher.enrich(tool, facts.get(slug) ?? null);
-const [owner = null] = enriched ? Object.values(await fetchOwners(gql, [enriched])) : [];
+const enriched = await enricher.enrich(tool, facts.get(slug) ?? GONE);
+const [owner = null] = enriched ? Object.values(await fetchOwners(gql, [enriched], (await readPublished(root)).owners)) : [];
 const entry: RefreshedEntry = { slug, tool: enriched, owner };
 
 await mkdir(outDir, { recursive: true });
