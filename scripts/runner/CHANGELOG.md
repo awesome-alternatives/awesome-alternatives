@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.3] - 2026-09-27
+
+### Bug Fixes
+
+- perf(refresh): read release and topic details only for repositories whose releases moved (#255)
+
 ## [0.4.2] - 2026-09-26
 
 ### Bug Fixes
