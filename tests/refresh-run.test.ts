@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import type { Installations } from "../scripts/lib/app.ts";
-import type { GqlRepository } from "../scripts/lib/facts-graphql.ts";
+import type { GqlPulse, GqlRepository } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
 import type { GraphQL, GraphQLErrorEntry, GraphQLResponse } from "../scripts/lib/graphql.ts";
 import { CATALOG_PATH, publish, type Snapshot } from "../scripts/lib/publish.ts";
@@ -15,9 +15,10 @@ const NOW = new Date("2026-09-26T03:17:00.000Z");
 const recorded = JSON.parse(readFileSync(new URL("fixtures/graphql-repositories.json", import.meta.url), "utf8"));
 const template = recorded.response.data.r0 as GqlRepository;
 
-function repository(owner: string, name: string): GqlRepository {
+function repository(owner: string, name: string): GqlRepository & GqlPulse {
   return {
     ...template,
+    newest: { nodes: [] },
     nameWithOwner: `${owner}/${name}`,
     defaultBranchRef: { name: "main", target: { oid: `head-${name}` } },
     latestRelease: null,
@@ -33,7 +34,7 @@ function github(unreadableHistory: ReadonlySet<string>): GraphQL {
       const errors: GraphQLErrorEntry[] = [];
       for (const [key, value] of Object.entries(variables)) {
         const index = key.slice(1);
-        if (query.includes("...Facts") && key.startsWith("n")) data[`r${index}`] = repository(variables[`o${index}`] ?? "", value);
+        if (/\.\.\.(Pulse|Detail)\b/.test(query) && key.startsWith("n")) data[`r${index}`] = repository(variables[`o${index}`] ?? "", value);
         if (query.includes("history(") && key.startsWith("n")) {
           if (unreadableHistory.has(value)) {
             data[`r${index}`] = null;

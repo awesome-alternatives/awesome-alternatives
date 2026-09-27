@@ -318,10 +318,21 @@ pnpm backfill-events
 
 ### How the refresh reads GitHub
 
-The refresh reads 20 repositories per GraphQL query, four queries at a time, then walks each
-repository's commits of the last 90 days (up to 5 pages of 100) to count active contributors, 10
-repositories per query, three at a time. The owners (100 per query, one query at a time), the
-signatures of annotated release tags and the app's installations are read while that walk runs. The app's installations are listed once per run.
+The refresh reads repositories 20 per GraphQL query, one query at a time: GitHub allows about a
+minute of GraphQL server time per minute, and a single stream of queries already comes close to it.
+It reads them in two passes. The pulse, for every repository, carries what changes from day to day:
+stars, forks, open issues, description, licence, the last push, the default branch's head, the
+maintainer file and the tag of the newest release. The detail (topics, releases, the latest
+release's assets and signature, the newest tag) costs about as much again and is read only for a
+repository that is new to the catalog, was renamed, has a newest release other than the published
+one or one published less than a day ago, has no release and was pushed to, or whose day of the week
+it is (each repository gets one). Any other repository keeps the detail the catalog published, and
+the run logs how many were read in full, as in `repositories: 180 of 827 read in full`.
+
+Then the refresh walks each repository's commits of the last 90 days (up to 5 pages of 100) to count
+active contributors, 10 repositories per query, three at a time. The owners (100 per query, one
+query at a time), the signatures of annotated release tags and the app's installations are read
+while that walk runs. The app's installations are listed once per run.
 A tag signature is checked once per tag object: the catalog keeps the object's id as `tagOid`, and a
 release whose tag and object are both unchanged keeps the result of the last check.
 

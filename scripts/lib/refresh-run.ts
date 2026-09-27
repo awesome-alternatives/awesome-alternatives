@@ -28,9 +28,10 @@ export async function refreshTools(
   now: Date,
 ): Promise<Refreshed> {
   const { gql, gh, installations } = clients;
+  const published = new Map(previous.tools.map((t) => [t.slug, t]));
   const releases = new Map(previous.tools.map((t) => [t.slug, t.release]));
   const readFacts = async () => {
-    const mapped = await timed("repositories", () => readRepositories(gql, targets));
+    const mapped = await timed("repositories", () => readRepositories(gql, targets, now, published));
     return Promise.all([
       completeRepositories(gql, gh, targets, mapped, now, releases),
       timed("owners", () => fetchOwners(gql, ownerLogins(targets, mapped, previous), previous.owners)),
