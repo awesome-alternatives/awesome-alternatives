@@ -9,8 +9,7 @@ import {
   trimmed,
   websiteOf,
 } from "./facts.ts";
-import { walkHistories } from "./commit-history.ts";
-import { activeSince, contributorsOf, startWalk } from "./contributors.ts";
+import { type CommitWindow, walkContributors } from "./commit-window.ts";
 import { mapLimit } from "./gather.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
@@ -374,25 +373,34 @@ async function releasesOf(
   });
 }
 
+export interface Previous {
+  releases?: ReadonlyMap<string, ReleaseFacts | null>;
+  windows?: ReadonlyMap<string, CommitWindow>;
+}
+
+export interface Completed {
+  facts: Map<string, Read<RepositoryFacts>>;
+  windows: Map<string, CommitWindow>;
+}
+
 export async function completeRepositories(
   gql: GraphQL,
   gh: GitHub,
   tools: readonly Tool[],
   mapped: readonly Read<MappedRepository>[],
   now: Date,
-  published: ReadonlyMap<string, ReleaseFacts | null> = new Map(),
-): Promise<Map<string, Read<RepositoryFacts>>> {
-  const walks = mapped.map((entry) => (entry.status === "read" && entry.value.head ? startWalk(entry.value.repo.fullName, entry.value.head) : null));
-  const [histories, releases] = await Promise.all([
-    timed("history", () => walkHistories(gql, walks, activeSince(now))),
-    timed("signatures", () => releasesOf(gh, tools, mapped, published)),
+  previous: Previous = {},
+): Promise<Completed> {
+  const heads = mapped.map((entry) => (entry.status === "read" && entry.value.head ? { fullName: entry.value.repo.fullName, head: entry.value.head } : null));
+  const [walked, releases] = await Promise.all([
+    timed("history", () => walkContributors(gql, heads, previous.windows ?? new Map(), now)),
+    timed("signatures", () => releasesOf(gh, tools, mapped, previous.releases ?? new Map())),
   ]);
-  return new Map(
+  const facts = new Map(
     tools.map((tool, i): [string, Read<RepositoryFacts>] => {
       const entry = mapped[i] ?? GONE;
       if (entry.status !== "read") return [tool.slug, entry];
       const { head: _, annotatedTag: __, ...rest } = entry.value;
-      const walked = histories[i];
       return [
         tool.slug,
         {
@@ -401,12 +409,13 @@ export async function completeRepositories(
             ...rest,
             release: releases[i] ?? null,
             platforms: tool.path ? [] : rest.platforms,
-            contributors: walked ? contributorsOf(walked) : null,
+            contributors: walked.contributors[i] ?? null,
           },
         },
       ];
     }),
   );
+  return { facts, windows: walked.windows };
 }
 
 export async function fetchRepositories(
@@ -417,7 +426,8 @@ export async function fetchRepositories(
   published: ReadonlyMap<string, ReleaseFacts | null> = new Map(),
   shape = REPOSITORY_SHAPE,
 ): Promise<Map<string, Read<RepositoryFacts>>> {
-  return completeRepositories(gql, gh, tools, await readRepositories(gql, tools, now, new Map(), shape), now, published);
+  const mapped = await readRepositories(gql, tools, now, new Map(), shape);
+  return (await completeRepositories(gql, gh, tools, mapped, now, { releases: published })).facts;
 }
 
 export async function fetchOwnerFacts(gql: GraphQL, logins: readonly string[], shape = OWNER_SHAPE): Promise<Map<string, Read<OwnerFacts>>> {

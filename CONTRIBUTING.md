@@ -330,7 +330,14 @@ it is (each repository gets one). Any other repository keeps the detail the cata
 the run logs how many were read in full, as in `repositories: 180 of 827 read in full`.
 
 Then the refresh walks each repository's commits of the last 90 days (up to 5 pages of 100) to count
-active contributors, 10 repositories per query, three at a time. The owners (100 per query, one
+active contributors, 10 repositories per query, three at a time. With the database described below,
+it keeps the commits each walk read (the newest 500 in the window, as a short id, a hash of the
+author and a date, never a name or an email) and walks less the next night: nothing when the default
+branch's head has not moved, only the commits since the last walk (with a day of overlap) when it
+has, and the whole window again on the repository's day of the week, for commits a merge brought in
+from further back. The count comes from the same 500 newest commits either way, so it is the one a
+full walk gives. The run logs the split, as in `history: 120 walked in full, 350 from their last
+walk, 357 unchanged`. Without the database, every history is walked in full. The owners (100 per query, one
 query at a time), the signatures of annotated release tags and the app's installations are read
 while that walk runs. The app's installations are listed once per run.
 A tag signature is checked once per tag object: the catalog keeps the object's id as `tagOid`, and a
@@ -339,15 +346,17 @@ release whose tag and object are both unchanged keeps the result of the last che
 When GitHub asks it to slow down (a 403 or 429 with `retry-after`, an exhausted budget with
 `x-ratelimit-reset`, or its secondary rate limit message), the refresh waits as told, up to a minute,
 and tries again, three times at most. A wait longer than that fails the run. A repository whose
-commit history GitHub cannot read is published without an active contributor count, and the run
-logs it. The run fails instead when no commit history at all can be read, or when the repositories
+commit history GitHub cannot read keeps the count of its last walk, or is published without an
+active contributor count when there is none, and the run logs it. The run fails instead when no commit history at all can be read, or when the repositories
 or owners themselves cannot be. Each phase logs its duration, as in `phase history: 180.2 s`.
 
 ### Daily facts and the cluster runner
 
-With `DATABASE_URL` set, `pnpm refresh` also writes one row per tool to the `tool_facts` table in
-TimescaleDB once the catalog is published, and creates the schema in
-[`scripts/db/schema.sql`](scripts/db/schema.sql) on the way. Without it, the refresh does exactly
+With `DATABASE_URL` set, `pnpm refresh` reads the last commit walks from the
+`contributor_windows` table before it starts, and once the catalog is published writes one row per
+tool to the `tool_facts` table in TimescaleDB and the new walks to `contributor_windows`. It
+creates the schema in [`scripts/db/schema.sql`](scripts/db/schema.sql) on the way. A database it
+cannot read only means every history is walked in full. Without it, the refresh does exactly
 what it does in Actions. To seed the table from every day in the catalog's git history, which is
 safe to run again:
 

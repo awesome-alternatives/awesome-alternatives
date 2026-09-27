@@ -41,7 +41,7 @@ function github(unreadableHistory: ReadonlySet<string>): GraphQL {
             errors.push({ path: [`r${index}`, "object", "history"], message: "Something went wrong while executing your query. This may be the result of a timeout" });
           } else {
             const author = { name: "Alice", email: "alice@example.com", user: { login: "alice" } };
-            data[`r${index}`] = { object: { history: { pageInfo: { hasNextPage: false, endCursor: null }, nodes: [{ author }] } } };
+            data[`r${index}`] = { object: { history: { pageInfo: { hasNextPage: false, endCursor: null }, nodes: [{ oid: `head-${value}`, committedDate: "2026-09-25T00:00:00Z", author }] } } };
           }
         }
         if (query.includes("repositoryOwner") && key.startsWith("l")) {
