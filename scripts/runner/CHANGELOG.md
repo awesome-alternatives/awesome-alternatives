@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.4] - 2026-09-27
+
+### Bug Fixes
+
+- perf(refresh): walk only the commits since the last walk, and none when the head has not moved (#257)
+
 ## [0.4.3] - 2026-09-27
 
 ### Bug Fixes

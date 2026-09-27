@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.80.9] - 2026-09-27
+
+### Bug Fixes
+
+- perf(refresh): walk only the commits since the last walk, and none when the head has not moved (#257)
+
 ## [0.80.8] - 2026-09-27
 
 ### Bug Fixes
