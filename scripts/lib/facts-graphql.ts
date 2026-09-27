@@ -16,9 +16,11 @@ import { type GitHub, repoPath } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
 import { aliasedBatches, aliasedQuery, type BatchShape, everyRead } from "./graphql-batch.ts";
 import { platformsOf } from "./platforms.ts";
+import { isCurrent } from "./recheck.ts";
 import { timed } from "./timing.ts";
 import {
   type ActiveContributors,
+  type EnrichedTool,
   GONE,
   type OwnerFacts,
   type Platform,
@@ -29,7 +31,7 @@ import {
   type Tool,
 } from "./types.ts";
 
-export const REPOSITORY_SHAPE: BatchShape = { size: 20, concurrency: 4 };
+export const REPOSITORY_SHAPE: BatchShape = { size: 20, concurrency: 1 };
 export const OWNER_SHAPE: BatchShape = { size: 100, concurrency: 1 };
 const SIGNATURE_CONCURRENCY = 4;
 
@@ -41,7 +43,7 @@ interface Blob {
   text?: string | null;
 }
 
-export interface GqlRepository {
+interface GqlPulseFields {
   nameWithOwner: string;
   description: string | null;
   homepageUrl: string | null;
@@ -50,13 +52,23 @@ export interface GqlRepository {
   stargazerCount: number;
   forkCount: number;
   issues: { totalCount: number };
-  repositoryTopics: { nodes: { topic: { name: string } }[] };
   isArchived: boolean;
   isFork: boolean;
   isPrivate: boolean;
   createdAt: string;
   pushedAt: string | null;
   defaultBranchRef: { name: string; target: { oid?: string } | null } | null;
+  claim: Blob | null;
+  claimAt?: Blob | null;
+}
+
+export interface GqlPulse extends GqlPulseFields {
+  newest: { nodes: { tagName: string }[] };
+}
+
+export interface GqlDetail {
+  nameWithOwner: string;
+  repositoryTopics: { nodes: { topic: { name: string } }[] };
   latestRelease: {
     tagName: string;
     publishedAt: string | null;
@@ -76,9 +88,9 @@ export interface GqlRepository {
       isDraft: boolean;
     }[];
   };
-  claim: Blob | null;
-  claimAt?: Blob | null;
 }
+
+export interface GqlRepository extends GqlPulseFields, GqlDetail {}
 
 export interface GqlOwner {
   __typename: "Organization" | "User";
@@ -105,17 +117,44 @@ export interface MappedRepository extends Omit<RepositoryFacts, "contributors"> 
   head: string | null;
 }
 
-const FRAGMENTS = `
-fragment Signed on GitObject { __typename oid ... on Commit { signature { isValid } } }
-fragment Facts on Repository {
+type PulseRepo = Omit<RepoFacts, "topics">;
+
+interface Pulse {
+  repo: PulseRepo;
+  claim: string[];
+  openIssues: number;
+  head: string | null;
+}
+
+interface Seen extends Pulse {
+  newest: string | null;
+}
+
+interface Detail {
+  topics: string[];
+  release: ReleaseFacts | null;
+  annotatedTag: string | null;
+  releases: ReleaseEntry[];
+  platforms: Platform[];
+}
+
+const PULSE = `
+fragment Pulse on Repository {
   nameWithOwner description homepageUrl
   primaryLanguage { name }
   licenseInfo { spdxId }
   stargazerCount forkCount
   issues(states: OPEN) { totalCount }
-  repositoryTopics(first: 20) { nodes { topic { name } } }
   isArchived isFork isPrivate createdAt pushedAt
   defaultBranchRef { name target { ... on Commit { oid } } }
+  newest: releases(first: 1, orderBy: {field: CREATED_AT, direction: DESC}) { nodes { tagName } }
+}`;
+
+const DETAIL = `
+fragment Signed on GitObject { __typename oid ... on Commit { signature { isValid } } }
+fragment Detail on Repository {
+  nameWithOwner
+  repositoryTopics(first: 20) { nodes { topic { name } } }
   latestRelease { tagName publishedAt url tag { target { ...Signed } } releaseAssets(first: 100) { nodes { name } } }
   tags: refs(refPrefix: "refs/tags/", first: 1, orderBy: {field: ALPHABETICAL, direction: DESC}) { nodes { name target { ...Signed } } }
   releases(first: ${RELEASE_HISTORY}, orderBy: {field: CREATED_AT, direction: DESC}) {
@@ -123,7 +162,7 @@ fragment Facts on Repository {
   }
 }`;
 
-export function repositoryQuery(tools: readonly Pick<Tool, "repository" | "path">[]): {
+export function pulseQuery(tools: readonly Pick<Tool, "repository" | "path">[]): {
   query: string;
   variables: Record<string, string>;
 } {
@@ -143,13 +182,23 @@ export function repositoryQuery(tools: readonly Pick<Tool, "repository" | "path"
       claimAt = ` claimAt: object(expression: $p${i}) { ... on Blob { text } }`;
     }
     fields.push(
-      `r${i}: repository(owner: $o${i}, name: $n${i}) { ...Facts claim: object(expression: $c${i}) { ... on Blob { text } }${claimAt} }`,
+      `r${i}: repository(owner: $o${i}, name: $n${i}) { ...Pulse claim: object(expression: $c${i}) { ... on Blob { text } }${claimAt} }`,
     );
   });
-  return {
-    query: `query(${declarations.join(", ")}) {\n  rateLimit { cost remaining }\n  ${fields.join("\n  ")}\n}\n${FRAGMENTS}`,
-    variables,
-  };
+  return { query: aliasedQuery(declarations, fields, PULSE), variables };
+}
+
+export function detailQuery(fullNames: readonly string[]): { query: string; variables: Record<string, string> } {
+  const declarations: string[] = [];
+  const variables: Record<string, string> = {};
+  const fields = fullNames.map((fullName, i) => {
+    const [owner = "", name = ""] = fullName.split("/");
+    variables[`o${i}`] = owner;
+    variables[`n${i}`] = name;
+    declarations.push(`$o${i}: String!`, `$n${i}: String!`);
+    return `r${i}: repository(owner: $o${i}, name: $n${i}) { ...Detail }`;
+  });
+  return { query: aliasedQuery(declarations, fields, DETAIL), variables };
 }
 
 export function ownerQuery(logins: readonly string[]): { query: string; variables: Record<string, string> } {
@@ -170,17 +219,19 @@ function annotated(target: GitObject | undefined): string | null {
   return target?.__typename === "Tag" ? target.oid : null;
 }
 
-export function mapRepository(node: GqlRepository): MappedRepository {
-  const fullName = node.nameWithOwner;
-  const repo: RepoFacts = {
-    fullName,
+function withTopics({ fullName, description, homepage, language, license, stars, forks, ...rest }: PulseRepo, topics: string[]): RepoFacts {
+  return { fullName, description, homepage, language, license, stars, forks, topics, ...rest };
+}
+
+function mapPulse(node: GqlPulseFields): Pulse {
+  const repo: PulseRepo = {
+    fullName: node.nameWithOwner,
     description: node.description,
     homepage: websiteOf(node.homepageUrl),
     language: node.primaryLanguage?.name ?? null,
     license: licenseOf(node.licenseInfo ? { spdx_id: node.licenseInfo.spdxId } : null),
     stars: node.stargazerCount,
     forks: node.forkCount,
-    topics: node.repositoryTopics.nodes.map((n) => n.topic.name).sort(),
     archived: node.isArchived,
     fork: node.isFork,
     private: node.isPrivate,
@@ -188,7 +239,16 @@ export function mapRepository(node: GqlRepository): MappedRepository {
     pushedAt: node.pushedAt ?? node.createdAt,
     defaultBranch: node.defaultBranchRef?.name ?? "main",
   };
+  const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
+  return { repo, claim, openIssues: node.issues.totalCount, head: node.defaultBranchRef?.target?.oid ?? null };
+}
 
+function readPulse(node: GqlPulse): Seen {
+  return { ...mapPulse(node), newest: node.newest.nodes[0]?.tagName ?? null };
+}
+
+function mapDetail(node: GqlDetail): Detail {
+  const fullName = node.nameWithOwner;
   let release: ReleaseFacts | null = null;
   let annotatedTag: string | null = null;
   const latest = node.latestRelease;
@@ -222,11 +282,31 @@ export function mapRepository(node: GqlRepository): MappedRepository {
       }),
     );
 
-  const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
-  const head = node.defaultBranchRef?.target?.oid ?? null;
-  const platforms = platformsOf(latest?.releaseAssets.nodes.map((asset) => asset.name) ?? []);
+  return {
+    topics: node.repositoryTopics.nodes.map((n) => n.topic.name).sort(),
+    release,
+    annotatedTag,
+    releases,
+    platforms: platformsOf(latest?.releaseAssets.nodes.map((asset) => asset.name) ?? []),
+  };
+}
 
-  return { repo, release, annotatedTag, releases, claim, openIssues: node.issues.totalCount, head, platforms };
+function joined({ repo, claim, openIssues, head }: Pulse, { topics, release, annotatedTag, releases, platforms }: Detail): MappedRepository {
+  return { repo: withTopics(repo, topics), release, annotatedTag, releases, claim, openIssues, head, platforms };
+}
+
+function carried(pulse: Pulse, before: EnrichedTool): MappedRepository {
+  return joined(pulse, {
+    topics: before.repo.topics,
+    release: before.release,
+    annotatedTag: null,
+    releases: before.releases,
+    platforms: before.platforms ?? [],
+  });
+}
+
+export function mapRepository(node: GqlRepository): MappedRepository {
+  return joined(mapPulse(node), mapDetail(node));
 }
 
 export function mapOwner(node: GqlOwner): OwnerFacts {
@@ -241,8 +321,31 @@ export function mapOwner(node: GqlOwner): OwnerFacts {
   };
 }
 
-export async function readRepositories(gql: GraphQL, tools: readonly Tool[], shape = REPOSITORY_SHAPE): Promise<Read<MappedRepository>[]> {
-  return everyRead(await aliasedBatches(gql, tools, shape, { alias: "r", query: repositoryQuery, read: mapRepository, failures: "throw" }));
+export async function readRepositories(
+  gql: GraphQL,
+  tools: readonly Tool[],
+  now: Date,
+  published: ReadonlyMap<string, EnrichedTool> = new Map(),
+  shape = REPOSITORY_SHAPE,
+): Promise<Read<MappedRepository>[]> {
+  const pulses = everyRead(await aliasedBatches(gql, tools, shape, { alias: "r", query: pulseQuery, read: readPulse, failures: "throw" }));
+  const settled = tools.map((tool, i): Read<MappedRepository> | Seen => {
+    const pulse = pulses[i] ?? GONE;
+    if (pulse.status !== "read") return pulse;
+    const before = published.get(tool.slug);
+    return isCurrent(before, pulse.value, now) ? { status: "read", value: carried(pulse.value, before) } : pulse.value;
+  });
+  const due = settled.filter((entry): entry is Seen => !("status" in entry));
+  console.log(`repositories: ${due.length} of ${tools.length} read in full`);
+  const details = everyRead(
+    await aliasedBatches(gql, due.map((seen) => seen.repo.fullName), shape, { alias: "r", query: detailQuery, read: mapDetail, failures: "throw" }),
+  );
+  let next = 0;
+  return settled.map((entry) => {
+    if ("status" in entry) return entry;
+    const detail = details[next++] ?? GONE;
+    return detail.status === "read" ? { status: "read", value: joined(entry, detail.value) } : detail;
+  });
 }
 
 async function signedRelease(
@@ -314,7 +417,7 @@ export async function fetchRepositories(
   published: ReadonlyMap<string, ReleaseFacts | null> = new Map(),
   shape = REPOSITORY_SHAPE,
 ): Promise<Map<string, Read<RepositoryFacts>>> {
-  return completeRepositories(gql, gh, tools, await readRepositories(gql, tools, shape), now, published);
+  return completeRepositories(gql, gh, tools, await readRepositories(gql, tools, now, new Map(), shape), now, published);
 }
 
 export async function fetchOwnerFacts(gql: GraphQL, logins: readonly string[], shape = OWNER_SHAPE): Promise<Map<string, Read<OwnerFacts>>> {

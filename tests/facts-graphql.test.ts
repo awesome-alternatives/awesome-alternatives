@@ -6,17 +6,30 @@ import {
   fetchOwnerFacts,
   fetchRepositories,
   type GqlOwner,
+  detailQuery,
   type GqlRepository,
   mapOwner,
   mapRepository,
+  pulseQuery,
+  readRepositories,
   type RepositoryFacts,
-  repositoryQuery,
 } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
 import { createGraphQL, type GraphQL, type GraphQLErrorEntry, GraphQLTransportError } from "../scripts/lib/graphql.ts";
 import { isAllowListError } from "../scripts/lib/graphql-batch.ts";
+import { isRecheckDay, RECHECK_DAYS } from "../scripts/lib/recheck.ts";
 import { judge } from "../scripts/lib/rules.ts";
-import { BEHIND_ALLOW_LIST, GONE, type Read, type ReleaseEntry, type ReleaseFacts, type RepoFacts, type Tool } from "../scripts/lib/types.ts";
+import {
+  BEHIND_ALLOW_LIST,
+  type EnrichedTool,
+  GONE,
+  type Read,
+  type ReleaseEntry,
+  type ReleaseFacts,
+  type RepoFacts,
+  type Tool,
+} from "../scripts/lib/types.ts";
+import { published } from "./catalog-checkout.ts";
 
 interface Recorded {
   tools: { repository: string; path?: string }[];
@@ -35,6 +48,7 @@ const recorded: Recorded = fixture("graphql-repositories.json");
 for (const repository of Object.values(recorded.response.data)) {
   if (repository?.defaultBranchRef) repository.defaultBranchRef.target ??= null;
   if (repository?.latestRelease) repository.latestRelease.releaseAssets ??= { nodes: [] };
+  if (repository?.releases) Object.assign(repository, { newest: { nodes: repository.releases.nodes.slice(0, 1).map(({ tagName }) => ({ tagName })) } });
 }
 const rest: (RestFacts | null)[] = fixture("rest-facts.json");
 const NOW = new Date("2026-09-24T00:00:00Z");
@@ -51,9 +65,16 @@ function recordedGraphQL(): GraphQL & { asked: string[] } {
   const asked: string[] = [];
   return {
     asked,
-    async query<T>(query: string) {
+    async query<T>(query: string, variables: Record<string, string>) {
       asked.push(query);
-      return { data: recorded.response.data as T, errors: recorded.response.errors };
+      if (!query.includes("...Detail")) return { data: recorded.response.data as T, errors: recorded.response.errors };
+      const byName = new Map(Object.values(recorded.response.data).map((repository) => [repository?.nameWithOwner, repository]));
+      const data = Object.fromEntries(
+        Object.keys(variables)
+          .filter((key) => key.startsWith("o"))
+          .map((key) => [`r${key.slice(1)}`, byName.get(`${variables[key]}/${variables[`n${key.slice(1)}`]}`) ?? null]),
+      );
+      return { data: data as T, errors: [] };
     },
     spent: () => ({ queries: asked.length, cost: 0, remaining: null }),
   };
@@ -190,7 +211,7 @@ describe("fetchRepositories", () => {
       five.map((t) => factsOf(facts, t.slug)?.repo.fullName),
       ["acme/a", "acme/b", "acme/c", "acme/d", "acme/e"],
     );
-    assert.deepEqual(sizes, [5, 3, 2, 1, 2]);
+    assert.deepEqual(sizes, [5, 3, 2, 1, 2, 5, 3, 2, 1, 2]);
   });
 
   it("fails on an error that is not a missing repository rather than dropping tools", async () => {
@@ -201,6 +222,92 @@ describe("fetchRepositories", () => {
       spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
     await assert.rejects(fetchRepositories(gql, restTags({}), tools.slice(0, 1), NOW), /r0: nope/);
+  });
+});
+
+describe("readRepositories with the published catalog", () => {
+  const DAY_MS = 24 * 60 * 60 * 1000;
+  const start = Date.parse("2026-09-24T05:17:00.000Z");
+  const quiet = Array.from({ length: RECHECK_DAYS }, (_, i) => new Date(start + i * DAY_MS)).find(
+    (day) => !isRecheckDay("fd", day) && !isRecheckDay("gitea", day),
+  ) as Date;
+  const byName = new Map(Object.values(recorded.response.data).map((repository) => [repository?.nameWithOwner, repository]));
+
+  function answering(pulse: (repository: GqlRepository) => GqlRepository): GraphQL & { asked: { query: string; variables: Record<string, string> }[] } {
+    const asked: { query: string; variables: Record<string, string> }[] = [];
+    return {
+      asked,
+      async query<T>(query: string, variables: Record<string, string>) {
+        asked.push({ query, variables });
+        const data: Record<string, GqlRepository | null> = {};
+        for (const key of Object.keys(variables).filter((k) => /^o\d+$/.test(k))) {
+          const index = key.slice(1);
+          const repository = byName.get(`${variables[key]}/${variables[`n${index}`]}`);
+          data[`r${index}`] = repository ? (query.includes("...Pulse") ? pulse(repository) : repository) : null;
+        }
+        return { data: data as T, errors: [] };
+      },
+      spent: () => ({ queries: asked.length, cost: 0, remaining: null }),
+    };
+  }
+
+  function publishedAs(tool: Tool, change: Partial<EnrichedTool> = {}): EnrichedTool {
+    const mapped = mapRepository(node(tool.slug));
+    const base = published({ ...tool, repository: `https://github.com/${mapped.repo.fullName}` }, 1, false);
+    return {
+      ...base,
+      repo: { ...mapped.repo, topics: ["kept"] },
+      release: mapped.release && { ...mapped.release, signed: true, tagOid: "a".repeat(40) },
+      releases: mapped.releases,
+      platforms: [{ os: "linux", architectures: ["x86_64"] }],
+      ...change,
+    };
+  }
+
+  const fd = tools[5] as Tool;
+  const gitea = tools[1] as Tool;
+  const starred = (repository: GqlRepository) => ({ ...repository, stargazerCount: 99_999, claim: { text: "fd\n" } });
+
+  it("reads only the pulse of a repository nothing moved in, and keeps its published releases, topics and platforms", async () => {
+    const before = publishedAs(fd);
+    const gql = answering(starred);
+    const [read] = await readRepositories(gql, [fd], quiet, new Map([["fd", before]]));
+
+    assert.deepEqual(gql.asked.map(({ query }) => query.includes("...Pulse")), [true]);
+    assert.equal(read?.status, "read");
+    const value = read?.status === "read" ? read.value : undefined;
+    assert.equal(value?.repo.stars, 99_999);
+    assert.deepEqual(value?.claim, ["fd"]);
+    assert.deepEqual(value?.repo.topics, ["kept"]);
+    assert.deepEqual(value?.release, before.release);
+    assert.deepEqual(value?.releases, before.releases);
+    assert.deepEqual(value?.platforms, before.platforms);
+    assert.equal(value?.annotatedTag, null);
+  });
+
+  it("lays the repository facts out in the same order either way, so a carried tool does not churn the catalog", async () => {
+    const [carried] = await readRepositories(answering(starred), [fd], quiet, new Map([["fd", publishedAs(fd)]]));
+    const [full] = await readRepositories(answering(starred), [fd], quiet);
+    assert.ok(carried?.status === "read" && full?.status === "read");
+    const catalogOrder = Object.keys(published(fd, 1, false).repo);
+    assert.deepEqual(Object.keys(carried.value.repo), catalogOrder);
+    assert.deepEqual(Object.keys(full.value.repo), catalogOrder);
+  });
+
+  it("reads in full only the repositories whose releases moved, and takes their topics and releases from GitHub", async () => {
+    const stale = publishedAs(gitea, { releases: [] });
+    const gql = answering((repository) => repository);
+    const reads = await readRepositories(gql, [fd, gitea], quiet, new Map([["fd", publishedAs(fd)], ["gitea", stale]]));
+
+    const details = gql.asked.filter(({ query }) => query.includes("...Detail"));
+    assert.deepEqual(
+      details.map(({ variables }) => variables),
+      [{ o0: "go-gitea", n0: "gitea" }],
+    );
+    const value = reads[1]?.status === "read" ? reads[1].value : undefined;
+    assert.deepEqual(value?.releases, mapRepository(node("gitea")).releases);
+    assert.deepEqual(value?.repo.topics, mapRepository(node("gitea")).repo.topics);
+    assert.equal(value?.annotatedTag, mapRepository(node("gitea")).annotatedTag);
   });
 });
 
@@ -262,9 +369,10 @@ describe("fetchRepositories with an organisation behind an IP allow list", () =>
       asked: 0,
       async query<T>(query: string) {
         gql.asked++;
-        if (query.includes("...Facts")) {
+        if (query.includes("...Pulse")) {
           return { data: { r0: null, r1: node("deno") } as T, errors: [refusedAt("r0")] };
         }
+        if (query.includes("...Detail")) return { data: { r0: node("deno") } as T, errors: [] };
         return { data: { r0: null } as T, errors: [] };
       },
       spent: () => ({ queries: gql.asked, cost: 0, remaining: null }),
@@ -312,7 +420,7 @@ describe("active contributors", () => {
     return {
       variables,
       async query<T>(query: string, vars: Record<string, string>) {
-        if (query.includes("...Facts")) {
+        if (/\.\.\.(Pulse|Detail)\b/.test(query)) {
           const repository = { ...node("fd"), defaultBranchRef: { name: "master", target: { oid: "abc123" } } };
           return { data: { r0: repository } as T, errors: [] };
         }
@@ -368,8 +476,9 @@ describe("active contributors", () => {
     assert.ok(!gql.asked.some((query) => query.includes("history(")));
   });
 
-  it("keeps commit history out of the facts query, which GitHub times out on when it carries both", () => {
-    assert.ok(!repositoryQuery(tools).query.includes("history("));
+  it("keeps commit history out of the facts queries, which GitHub times out on when they carry both", () => {
+    assert.ok(!pulseQuery(tools).query.includes("history("));
+    assert.ok(!detailQuery(["sharkdp/fd"]).query.includes("history("));
   });
 });
 
@@ -407,9 +516,9 @@ describe("platforms", () => {
   });
 });
 
-describe("repositoryQuery", () => {
+describe("pulseQuery and detailQuery", () => {
   it("passes owners, names and file paths as variables, never inside the query text", () => {
-    const { query, variables } = repositoryQuery([
+    const { query, variables } = pulseQuery([
       { repository: "https://github.com/acme/tool" },
       { repository: "https://github.com/acme/mono", path: "apps/cli" },
     ]);
@@ -425,6 +534,15 @@ describe("repositoryQuery", () => {
     assert.ok(!query.includes("acme"));
     assert.ok(query.includes("issues(states: OPEN) { totalCount }"));
     assert.equal(query.match(/claimAt:/g)?.length, 1);
+  });
+
+  it("asks the detail only by variables, and leaves the fields that change daily to the pulse", () => {
+    const { query, variables } = detailQuery(["acme/tool", "acme/mono"]);
+    assert.deepEqual(variables, { o0: "acme", n0: "tool", o1: "acme", n1: "mono" });
+    assert.ok(!query.includes("acme"));
+    assert.ok(!query.includes("stargazerCount"));
+    assert.ok(query.includes("releaseAssets"));
+    assert.ok(!pulseQuery([{ repository: "https://github.com/acme/tool" }]).query.includes("releaseAssets"));
   });
 });
 
