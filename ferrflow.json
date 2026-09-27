@@ -21,6 +21,8 @@
       "changelog": "site/CHANGELOG.md",
       "sharedPaths": [
         "generated/catalog.json",
+        "generated/events.json",
+        "CONTRIBUTING.md",
         "data/categories.yaml",
         "data/migrations",
         "scripts/lib/types.ts",
