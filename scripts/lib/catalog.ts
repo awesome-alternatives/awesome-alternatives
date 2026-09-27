@@ -5,6 +5,7 @@ import { parse } from "yaml";
 import type { BlockingCode, Category, Finding, Product, ProductEntry, Tool, ToolEntry } from "./types.ts";
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const CATEGORIES_FILE = "data/categories.yaml";
 
 export interface Catalog {
   tools: Tool[];
@@ -18,13 +19,34 @@ export interface LoadResult {
 }
 
 export async function loadCatalog(root: string): Promise<LoadResult> {
-  const categories = new Map(
-    Object.entries(parse(await readFile(join(root, "data/categories.yaml"), "utf8")) as Record<string, Category>),
-  );
+  const categories = await loadCategories(root);
   const tools = await loadEntries<ToolEntry>(root, "tools", "tool.schema.json");
   const products = await loadEntries<ProductEntry>(root, "products", "product.schema.json");
-  const catalog = { tools: tools.entries, products: products.entries, categories };
-  return { catalog, findings: [...tools.findings, ...products.findings, ...checkStructure(catalog)] };
+  const catalog = { tools: tools.entries, products: products.entries, categories: categories.entries };
+  return { catalog, findings: [...categories.findings, ...tools.findings, ...products.findings, ...checkStructure(catalog)] };
+}
+
+async function compiled<T>(root: string, schemaFile: string) {
+  const schema = JSON.parse(await readFile(join(root, "schema", schemaFile), "utf8"));
+  return new Ajv2020({ allErrors: true }).compile<T>(schema);
+}
+
+async function loadCategories(root: string): Promise<{ entries: Map<string, Category>; findings: Finding[] }> {
+  const validate = await compiled<Record<string, Category>>(root, "categories.schema.json");
+  const raw: unknown = parse(await readFile(join(root, CATEGORIES_FILE), "utf8"));
+  if (validate(raw)) return { entries: new Map(Object.entries(raw)), findings: [] };
+  const findings = (validate.errors ?? [])
+    .filter((e) => !e.schemaPath.includes("/propertyNames/"))
+    .map((e) => {
+      const [top, ...rest] = e.instancePath.split("/").slice(1);
+      const at = `${CATEGORIES_FILE} /${rest.join("/")}`;
+      if (e.keyword === "propertyNames") {
+        return error(top ?? e.params.propertyName, "schema", `${at} ${e.params.propertyName} is not a lowercase slug`);
+      }
+      const extra = e.keyword === "additionalProperties" ? ` (${e.params.additionalProperty})` : "";
+      return error(top ?? CATEGORIES_FILE, "schema", `${at} ${e.message ?? "is invalid"}${extra}`);
+    });
+  return { entries: new Map(Object.entries((raw ?? {}) as Record<string, Category>)), findings };
 }
 
 export async function loadSoundCatalog(root: string): Promise<Catalog> {
@@ -41,8 +63,7 @@ async function loadEntries<T>(
   kind: "tools" | "products",
   schemaFile: string,
 ): Promise<{ entries: (T & { slug: string; file: string })[]; findings: Finding[] }> {
-  const schema = JSON.parse(await readFile(join(root, "schema", schemaFile), "utf8"));
-  const validate = new Ajv2020({ allErrors: true }).compile<T>(schema);
+  const validate = await compiled<T>(root, schemaFile);
   const dir = join(root, "data", kind);
   const files = (await listYaml(dir)).sort();
   const entries: (T & { slug: string; file: string })[] = [];
