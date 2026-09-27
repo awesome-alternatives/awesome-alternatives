@@ -13,6 +13,14 @@ CREATE TABLE IF NOT EXISTS tool_facts (
   PRIMARY KEY (slug, time)
 );
 
+CREATE TABLE IF NOT EXISTS contributor_windows (
+  repository text PRIMARY KEY,
+  head text NOT NULL,
+  walked_at timestamptz NOT NULL,
+  complete boolean NOT NULL,
+  commits jsonb NOT NULL
+);
+
 SELECT create_hypertable('tool_facts', by_range('time'), if_not_exists => TRUE);
 
 DO $$

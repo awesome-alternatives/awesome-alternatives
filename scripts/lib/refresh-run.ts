@@ -1,4 +1,5 @@
 import type { Installations } from "./app.ts";
+import type { CommitWindow } from "./commit-window.ts";
 import { createEnricher, fetchOwners, ownerLogins } from "./enrich.ts";
 import { completeRepositories, readRepositories, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GitHub } from "./github.ts";
@@ -17,6 +18,7 @@ export interface Refreshed {
   tools: EnrichedTool[];
   owners: Record<string, OwnerFacts>;
   facts: ReadonlyMap<string, Read<RepositoryFacts>>;
+  windows: ReadonlyMap<string, CommitWindow>;
 }
 
 export async function refreshTools(
@@ -26,6 +28,7 @@ export async function refreshTools(
   declared: readonly Tool[],
   targets: readonly Tool[],
   now: Date,
+  windows: ReadonlyMap<string, CommitWindow> = new Map(),
 ): Promise<Refreshed> {
   const { gql, gh, installations } = clients;
   const published = new Map(previous.tools.map((t) => [t.slug, t]));
@@ -33,17 +36,17 @@ export async function refreshTools(
   const readFacts = async () => {
     const mapped = await timed("repositories", () => readRepositories(gql, targets, now, published));
     return Promise.all([
-      completeRepositories(gql, gh, targets, mapped, now, releases),
+      completeRepositories(gql, gh, targets, mapped, now, { releases, windows }),
       timed("owners", () => fetchOwners(gql, ownerLogins(targets, mapped, previous), previous.owners)),
     ]);
   };
-  const [[facts, owners], installed] = await Promise.all([
+  const [[completed, owners], installed] = await Promise.all([
     readFacts(),
     timed("installations", async () => (installations ? installations.list() : null)),
   ]);
   const enricher = createEnricher(root, previous, installed, declared, now);
   const tools = targets
-    .flatMap((tool) => enricher.enrich(tool, facts.get(tool.slug) ?? GONE) ?? [])
+    .flatMap((tool) => enricher.enrich(tool, completed.facts.get(tool.slug) ?? GONE) ?? [])
     .sort((a, b) => a.slug.localeCompare(b.slug));
-  return { tools, owners, facts };
+  return { tools, owners, facts: completed.facts, windows: completed.windows };
 }

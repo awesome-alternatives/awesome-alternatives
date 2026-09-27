@@ -405,7 +405,8 @@ describe("fetchRepositories with an organisation behind an IP allow list", () =>
 });
 
 describe("active contributors", () => {
-  const commit = (author: CommitAuthor) => ({ author });
+  let made = 0;
+  const commit = (author: CommitAuthor) => ({ oid: String(++made).padStart(12, "0").padEnd(40, "f"), committedDate: "2026-09-23T00:00:00Z", author });
   const person = (login: string) => commit({ name: login, email: `${login}@example.com`, user: { login } });
   const unlinked = (email: string) => commit({ name: "Someone", email, user: null });
   const bot = commit({ name: "renovate[bot]", email: "29139614+renovate[bot]@users.noreply.github.com", user: null });
@@ -441,7 +442,7 @@ describe("active contributors", () => {
     const facts = await fetchRepositories(gql, restTags({}), tools.slice(5, 6), NOW);
     assert.deepEqual(factsOf(facts, "fd")?.contributors, { count: 4, capped: false });
     assert.deepEqual(
-      gql.variables.map((v) => ({ head: v.h0, after: v.a0, since: v.since })),
+      gql.variables.map((v) => ({ head: v.h0, after: v.a0, since: v.s0 })),
       [
         { head: "abc123", after: undefined, since: "2026-06-26T00:00:00.000Z" },
         { head: "abc123", after: "c1", since: "2026-06-26T00:00:00.000Z" },

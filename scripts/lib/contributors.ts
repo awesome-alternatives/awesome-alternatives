@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import type { ActiveContributors } from "./types.ts";
 
 export const ACTIVE_DAYS = 90;
@@ -7,6 +8,7 @@ export const HISTORY_LIMIT = HISTORY_PAGE_SIZE * HISTORY_PAGES;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const BOT = /\[bot\]/i;
+const OID_LENGTH = 12;
 
 export interface CommitAuthor {
   name: string | null;
@@ -16,13 +18,20 @@ export interface CommitAuthor {
 
 export interface HistoryPage {
   pageInfo: { hasNextPage: boolean; endCursor: string | null };
-  nodes: { author: CommitAuthor | null }[];
+  nodes: { oid: string; committedDate: string; author: CommitAuthor | null }[];
+}
+
+export interface WalkedCommit {
+  oid: string;
+  author: string | null;
+  at: number;
 }
 
 export interface HistoryWalk {
   fullName: string;
   head: string;
-  authors: ReadonlySet<string>;
+  since: string;
+  commits: readonly WalkedCommit[];
   pages: number;
   cursor: string | null;
   stopped: boolean;
@@ -45,8 +54,13 @@ export function authorKey(author: CommitAuthor): string | null {
   return name ? `name:${name}` : null;
 }
 
-export function startWalk(fullName: string, head: string): HistoryWalk {
-  return { fullName, head, authors: new Set(), pages: 0, cursor: null, stopped: false };
+export function hashedAuthor(author: CommitAuthor | null): string | null {
+  const key = author && authorKey(author);
+  return key ? createHash("sha256").update(key).digest("base64url").slice(0, 16) : null;
+}
+
+export function startWalk(fullName: string, head: string, since: string): HistoryWalk {
+  return { fullName, head, since, commits: [], pages: 0, cursor: null, stopped: false };
 }
 
 export function stop(walk: HistoryWalk): HistoryWalk {
@@ -58,19 +72,23 @@ export function hasMore(walk: HistoryWalk): boolean {
 }
 
 export function advance(walk: HistoryWalk, page: HistoryPage): HistoryWalk {
-  const authors = new Set(walk.authors);
-  for (const { author } of page.nodes) {
-    const key = author && authorKey(author);
-    if (key) authors.add(key);
-  }
+  const commits = page.nodes.map((node) => ({
+    oid: node.oid.slice(0, OID_LENGTH),
+    author: hashedAuthor(node.author),
+    at: Date.parse(node.committedDate),
+  }));
   return {
     ...walk,
-    authors,
+    commits: [...walk.commits, ...commits],
     pages: walk.pages + 1,
     cursor: page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null,
   };
 }
 
+export function authorsIn(commits: readonly WalkedCommit[]): number {
+  return new Set(commits.flatMap((commit) => (commit.author ? [commit.author] : []))).size;
+}
+
 export function contributorsOf(walk: HistoryWalk): ActiveContributors | null {
-  return walk.pages === 0 ? null : { count: walk.authors.size, capped: walk.cursor !== null };
+  return walk.pages === 0 ? null : { count: authorsIn(walk.commits), capped: walk.cursor !== null };
 }

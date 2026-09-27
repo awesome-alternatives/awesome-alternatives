@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
-import { recordFacts, SCHEMA_FILE, splitStatements } from "../scripts/lib/facts-db.ts";
+import { loadWindows, recordFacts, SCHEMA_FILE, splitStatements, windowOf, windowRow } from "../scripts/lib/facts-db.ts";
 import { chunks } from "../scripts/lib/gather.ts";
 
 describe("splitStatements", () => {
@@ -39,5 +39,30 @@ describe("recordFacts", () => {
     const logged = String(errors.mock.calls[0]?.arguments[0]);
     assert.match(logged, /recording its facts failed/);
     assert.doesNotMatch(logged, /secret/);
+  });
+});
+
+describe("commit windows", () => {
+  it("stores a window as compact rows and reads it back unchanged", () => {
+    const window = {
+      head: "abc",
+      walkedAt: "2026-09-25T03:17:00.000Z",
+      complete: false,
+      commits: [
+        { oid: "0123456789ab", author: "AbCdEfGhIjKlMnOp", at: Date.parse("2026-09-24T10:00:00Z") },
+        { oid: "ba9876543210", author: null, at: Date.parse("2026-09-23T10:00:00Z") },
+      ],
+    };
+    const row = windowRow("acme/tool", window);
+    assert.deepEqual(row.commits[1], ["ba9876543210", null, Date.parse("2026-09-23T10:00:00Z") / 1000]);
+    assert.deepEqual(windowOf(JSON.parse(JSON.stringify(row), (key, value) => (key === "walked_at" ? new Date(value) : value))), ["acme/tool", window]);
+  });
+
+  it("walks every history in full when the last walks cannot be read, rather than failing the refresh", async (t) => {
+    const errors = t.mock.method(console, "error", () => {});
+    const windows = await loadWindows("postgres://nobody:secret@127.0.0.1:1/facts?connect_timeout=2");
+    assert.equal(windows.size, 0);
+    assert.match(String(errors.mock.calls[0]?.arguments[0]), /walked in full/);
+    assert.doesNotMatch(String(errors.mock.calls[0]?.arguments[0]), /secret/);
   });
 });

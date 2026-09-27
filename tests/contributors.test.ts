@@ -15,10 +15,11 @@ import {
 } from "../scripts/lib/contributors.ts";
 
 const author = (over: Partial<CommitAuthor>): CommitAuthor => ({ name: null, email: null, user: null, ...over });
-const walked = (...pages: HistoryPage[]): HistoryWalk => pages.reduce(advance, startWalk("acme/tool", "abc"));
+const walked = (...pages: HistoryPage[]): HistoryWalk => pages.reduce(advance, startWalk("acme/tool", "abc", "2026-06-26T00:00:00.000Z"));
+let made = 0;
 const page = (authors: (CommitAuthor | null)[], cursor: string | null = null): HistoryPage => ({
   pageInfo: { hasNextPage: cursor !== null, endCursor: cursor },
-  nodes: authors.map((a) => ({ author: a })),
+  nodes: authors.map((a) => ({ oid: String(++made).padStart(12, "0").padEnd(40, "f"), committedDate: "2026-09-20T00:00:00Z", author: a })),
 });
 
 describe("isBot", () => {
