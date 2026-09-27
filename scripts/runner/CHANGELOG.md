@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] - 2026-09-27
+
+### Features
+
+- feat(validate): check data/categories.yaml against a schema (#265)
+
 ## [0.4.4] - 2026-09-27
 
 ### Bug Fixes

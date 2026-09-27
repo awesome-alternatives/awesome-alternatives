@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.81.0] - 2026-09-27
+
+### Features
+
+- feat(validate): check data/categories.yaml against a schema (#265)
+
+### Bug Fixes
+
+- fix(site): build the migration guides in the image, and keep the site's file lists in step with what it reads (#264)
+
 ## [0.80.9] - 2026-09-27
 
 ### Bug Fixes
