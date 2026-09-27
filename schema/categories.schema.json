@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/categories.schema.json",
+  "title": "Categories",
+  "description": "The categories tools and products belong to, keyed by slug.",
+  "type": "object",
+  "minProperties": 1,
+  "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+  "additionalProperties": { "$ref": "#/$defs/category" },
+  "$defs": {
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "selfHost": {
+          "description": "Tools in this category can be self-hosted, so their entries may list deploy methods.",
+          "type": "boolean"
+        },
+        "capabilities": {
+          "description": "Features a tool of this category can declare, keyed by slug.",
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "additionalProperties": { "$ref": "#/$defs/capability" }
+        }
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "match"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "match": {
+          "description": "Phrases in a search that ask for this capability, in every language the site has.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

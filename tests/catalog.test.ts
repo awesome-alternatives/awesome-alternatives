@@ -211,6 +211,46 @@ describe("loadCatalog", () => {
     assert.equal(catalog.tools[0]?.slug, "good");
   });
 
+  it("holds data/categories.yaml to its schema and names the category at fault", async () => {
+    const root = await fixture({});
+    await writeFile(
+      join(root, "data/categories.yaml"),
+      [
+        "release-automation:",
+        "  name: Release automation",
+        "  description: Version bumps.",
+        "  selfhost: true",
+        "changelog:",
+        "  name: Changelog generation",
+        "ci:",
+        "  name: CI",
+        "  description: Pipelines.",
+        "  capabilities:",
+        "    kubernetes:",
+        "      label: On Kubernetes",
+        "      match: []",
+        "Bad_Slug:",
+        "  name: Bad",
+        "  description: Bad.",
+      ].join("\n"),
+    );
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(
+      findings.map((f) => [f.slug, f.code, f.message]),
+      [
+        ["Bad_Slug", "schema", "data/categories.yaml / Bad_Slug is not a lowercase slug"],
+        ["release-automation", "schema", "data/categories.yaml / must NOT have additional properties (selfhost)"],
+        ["changelog", "schema", "data/categories.yaml / must have required property 'description'"],
+        ["ci", "schema", "data/categories.yaml /capabilities/kubernetes/match must NOT have fewer than 1 items"],
+      ],
+    );
+  });
+
+  it("accepts the categories the catalog declares", async () => {
+    const { findings } = await loadCatalog(join(import.meta.dirname, ".."));
+    assert.deepEqual(findings.filter((f) => f.code === "schema"), []);
+  });
+
   it("rejects a field the schema does not know, so facts cannot be smuggled in", async () => {
     const root = await fixture({
       "sneaky.yaml":

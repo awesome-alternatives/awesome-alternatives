@@ -19,6 +19,8 @@ replaces:
   category is its own pull request, with at least two tools that belong in it. Mark it
   `selfHost: true` when its tools are services people would otherwise pay someone to run, such as
   a git forge or a team chat, and leave it out for tools that run on your own machine anyway.
+  [`schema/categories.schema.json`](schema/categories.schema.json) lists the fields a category
+  takes, and `pnpm validate` checks the file against it.
 - `replaces` points at other entries by slug. If the tool it replaces is not listed yet, add that
   one in the same pull request, with no `replaces` of its own.
 - `fit` is `drop-in` when the tool accepts the original's configuration or interface unchanged,
