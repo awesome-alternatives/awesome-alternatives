@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.82.0] - 2026-09-29
+
+### Features
+
+- feat(migrations): add notes for ten pairs with an official migration guide (#269)
+
 ## [0.81.2] - 2026-09-29
 
 ### Bug Fixes
