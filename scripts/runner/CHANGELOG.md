@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.1] - 2026-09-30
+
+### Bug Fixes
+
+- fix(refresh): keep the last facts of a repository GitHub keeps failing on instead of failing the run (#271)
+
 ## [0.5.0] - 2026-09-27
 
 ### Features
