@@ -1,6 +1,9 @@
 name: Refresh tools
 
 on:
+  push:
+    branches: [main]
+    paths: ['data/tools/**']
   workflow_dispatch:
     inputs:
       slugs:
@@ -11,7 +14,7 @@ on:
 permissions:
   contents: read
 
-run-name: Refresh ${{ inputs.slugs }}
+run-name: Refresh ${{ inputs.slugs || 'the tools changed on main' }}
 
 jobs:
   plan:
@@ -27,7 +30,19 @@ jobs:
       - id: plan
         env:
           SLUGS: ${{ inputs.slugs }}
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
         run: |
+          if [[ $EVENT == push ]]; then
+            SLUGS=$(
+              gh api "repos/$REPOSITORY/compare/$BEFORE...$AFTER" \
+                --jq '.files[] | select(.status != "removed") | .filename' |
+                sed -n 's#^data/tools/\([^/]*\)\.yaml$#\1#p'
+            )
+          fi
           slugs=$(
             for slug in $SLUGS; do
               if [[ ! $slug =~ ^[a-z0-9]+(-[a-z0-9]+)*$ || ! -f data/tools/$slug.yaml ]]; then
@@ -38,7 +53,10 @@ jobs:
             done | sort -u | jq -Rnc '[inputs]'
           )
           count=$(jq length <<<"$slugs")
-          if (( count == 0 || count > 20 )); then
+          if [[ $EVENT == push ]] && (( count == 0 || count > 20 )); then
+            echo "::notice::$count tools changed, left to the nightly refresh"
+            slugs='[]'
+          elif (( count == 0 || count > 20 )); then
             echo "::error::expected between 1 and 20 slugs, got $count" >&2
             exit 1
           fi
@@ -47,6 +65,7 @@ jobs:
   refresh:
     name: Refresh ${{ matrix.slug }}
     needs: plan
+    if: ${{ needs.plan.outputs.slugs != '[]' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -83,7 +102,7 @@ jobs:
   merge:
     name: Merge into the catalog
     needs: [plan, refresh]
-    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.slugs != '[]' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
