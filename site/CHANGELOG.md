@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.83.0] - 2026-09-30
+
+### Features
+
+- feat(refresh): refresh a tool's facts as soon as its entry lands on main (#270)
+
 ## [0.82.2] - 2026-09-30
 
 ### Bug Fixes
