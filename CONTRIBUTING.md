@@ -281,8 +281,11 @@ GITHUB_TOKEN=$(gh auth token) pnpm validate release-plz
 `pnpm validate --all` checks every entry, `pnpm refresh` rebuilds `generated/catalog.json` and the
 table in the README.
 
-To refresh a few tools without walking the whole catalog, which is what the
-[Refresh tools](.github/workflows/refresh-tools.yml) workflow does after a release, one job per slug:
+A pull request that adds or edits tools gets their GitHub facts within minutes of merging: every
+push to `main` that adds or changes files in `data/tools/` runs the
+[Refresh tools](.github/workflows/refresh-tools.yml) workflow for those slugs, up to 20 (a larger
+batch waits for the nightly refresh). The same workflow can be started by hand with a list of slugs,
+for example after a release. It does, one job per slug:
 
 ```bash
 GITHUB_TOKEN=$(gh auth token) node scripts/refresh-tool.ts release-plz entries
