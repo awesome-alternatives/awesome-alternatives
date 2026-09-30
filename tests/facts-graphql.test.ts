@@ -214,6 +214,30 @@ describe("fetchRepositories", () => {
     assert.deepEqual(sizes, [5, 3, 2, 1, 2, 5, 3, 2, 1, 2]);
   });
 
+  it("keeps the rest of the batch when GitHub keeps failing on one repository, and says why", async () => {
+    const gql: GraphQL = {
+      async query<T>(_: string, variables: Record<string, string>) {
+        const data: Record<string, GqlRepository | null> = {};
+        const errors: GraphQLErrorEntry[] = [];
+        for (const key of Object.keys(variables).filter((k) => /^n\d+$/.test(k))) {
+          const alias = `r${key.slice(1)}`;
+          if (variables[key] === "broken") {
+            data[alias] = null;
+            errors.push({ type: "SERVICE_UNAVAILABLE", path: [alias], message: "Something went wrong" });
+          } else {
+            data[alias] = node("deno");
+          }
+        }
+        return { data: data as T, errors };
+      },
+      spent: () => ({ queries: 0, cost: 0, remaining: null }),
+    };
+    const broken = { ...(tools[0] as Tool), slug: "broken", repository: "https://github.com/acme/broken" };
+    const reads = await readRepositories(gql, [broken, tools[0] as Tool], NOW);
+    assert.deepEqual(reads[0], { status: "unreadable", reason: "r0: Something went wrong" });
+    assert.equal(reads[1]?.status, "read");
+  });
+
   it("fails on an error that is not a missing repository rather than dropping tools", async () => {
     const gql: GraphQL = {
       async query<T>() {

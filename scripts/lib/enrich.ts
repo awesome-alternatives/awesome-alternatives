@@ -24,13 +24,18 @@ export interface Enricher {
   enrich(tool: Tool, read: Read<RepositoryFacts>): EnrichedTool | null;
 }
 
-function keptBehindAllowList(tool: Tool, published: EnrichedTool | undefined, editedAt: string): EnrichedTool | null {
-  const owner = ownerOf(repoPath(tool.repository));
+function whyUnread(tool: Tool, read: Exclude<Read<RepositoryFacts>, { status: "read" | "gone" }>): string {
+  return read.status === "unreadable"
+    ? `GitHub could not read ${tool.repository} (${read.reason})`
+    : `${ownerOf(repoPath(tool.repository))} has an IP allow list that refuses this runner`;
+}
+
+function keptPublished(tool: Tool, published: EnrichedTool | undefined, editedAt: string, why: string): EnrichedTool | null {
   if (!published) {
-    console.error(`${tool.slug}: ${owner} has an IP allow list that refuses this runner, and no earlier run read it, left out of the catalog`);
+    console.error(`${tool.slug}: ${why}, and no earlier run read it, left out of the catalog`);
     return null;
   }
-  console.error(`${tool.slug}: ${owner} has an IP allow list that refuses this runner, kept with its last published facts and maintainer mark`);
+  console.error(`${tool.slug}: ${why}, kept with its last published facts and maintainer mark`);
   return {
     ...published,
     name: tool.name,
@@ -67,7 +72,7 @@ export function createEnricher(
         console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
         return null;
       }
-      if (read.status === "behind-allow-list") return keptBehindAllowList(tool, before.get(tool.slug), editedAt);
+      if (read.status !== "read") return keptPublished(tool, before.get(tool.slug), editedAt, whyUnread(tool, read));
       const facts = read.value;
       const series = nextSeries(before.get(tool.slug)?.starHistory, facts.repo.stars, now);
       const starHistory = seriesPoints(series, now);
@@ -107,7 +112,7 @@ export function ownerLogins(tools: readonly Tool[], reads: readonly Read<{ repo:
   const listed = tools.flatMap((tool, i) => {
     const read = reads[i] ?? GONE;
     if (read.status === "read") return [read.value.repo.fullName];
-    const kept = read.status === "behind-allow-list" ? before.get(tool.slug) : undefined;
+    const kept = read.status === "gone" ? undefined : before.get(tool.slug);
     return kept ? [kept.repo.fullName] : [];
   });
   return [...new Set(listed.map(ownerOf))].sort((a, b) => a.localeCompare(b));

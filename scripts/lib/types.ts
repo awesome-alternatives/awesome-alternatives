@@ -241,7 +241,11 @@ export const EVENT_ORDER: Record<EventType, number> = {
   released: 8,
 };
 
-export type Read<T> = { status: "read"; value: T } | { status: "gone" } | { status: "behind-allow-list" };
+export type Read<T> =
+  | { status: "read"; value: T }
+  | { status: "gone" }
+  | { status: "behind-allow-list" }
+  | { status: "unreadable"; reason: string };
 
 export const GONE = { status: "gone" } as const;
 
