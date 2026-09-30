@@ -352,8 +352,11 @@ When GitHub asks it to slow down (a 403 or 429 with `retry-after`, an exhausted 
 `x-ratelimit-reset`, or its secondary rate limit message), the refresh waits as told, up to a minute,
 and tries again, three times at most. A wait longer than that fails the run. A repository whose
 commit history GitHub cannot read keeps the count of its last walk, or is published without an
-active contributor count when there is none, and the run logs it. The run fails instead when no commit history at all can be read, or when the repositories
-or owners themselves cannot be. Each phase logs its duration, as in `phase history: 180.2 s`.
+active contributor count when there is none, and the run logs it. A repository GitHub keeps failing
+on, after its batch is split down to it alone, keeps its last published facts and maintainer mark,
+as one behind an IP allow list does, or is left out when no run has read it yet. The run fails
+instead when no commit history at all can be read, when more than half of the repositories cannot
+be, or when the owners cannot be. Each phase logs its duration, as in `phase history: 180.2 s`.
 
 ### Daily facts and the cluster runner
 

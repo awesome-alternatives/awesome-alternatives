@@ -13,7 +13,7 @@ import { type CommitWindow, walkContributors } from "./commit-window.ts";
 import { mapLimit } from "./gather.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
-import { aliasedBatches, aliasedQuery, type BatchShape, everyRead } from "./graphql-batch.ts";
+import { aliasedBatches, aliasedQuery, type BatchShape, describeErrors, everyRead, type Outcome } from "./graphql-batch.ts";
 import { platformsOf } from "./platforms.ts";
 import { isCurrent } from "./recheck.ts";
 import { timed } from "./timing.ts";
@@ -320,6 +320,18 @@ export function mapOwner(node: GqlOwner): OwnerFacts {
   };
 }
 
+function tolerated<T>(outcomes: readonly Outcome<T>[]): Read<T>[] {
+  return outcomes.map((outcome) => (outcome.status === "failed" ? { status: "unreadable", reason: describeErrors(outcome.errors) } : outcome));
+}
+
+function unlessMostUnreadable<T>(reads: Read<T>[], total: number): Read<T>[] {
+  const reasons = reads.flatMap((read) => (read.status === "unreadable" ? [read.reason] : []));
+  if (reasons.length * 2 > total) {
+    throw new Error(`GitHub could not read ${reasons.length} of ${total} repositories: ${[...new Set(reasons)].join("; ")}`);
+  }
+  return reads;
+}
+
 export async function readRepositories(
   gql: GraphQL,
   tools: readonly Tool[],
@@ -327,7 +339,7 @@ export async function readRepositories(
   published: ReadonlyMap<string, EnrichedTool> = new Map(),
   shape = REPOSITORY_SHAPE,
 ): Promise<Read<MappedRepository>[]> {
-  const pulses = everyRead(await aliasedBatches(gql, tools, shape, { alias: "r", query: pulseQuery, read: readPulse, failures: "throw" }));
+  const pulses = tolerated(await aliasedBatches(gql, tools, shape, { alias: "r", query: pulseQuery, read: readPulse, failures: "report" }));
   const settled = tools.map((tool, i): Read<MappedRepository> | Seen => {
     const pulse = pulses[i] ?? GONE;
     if (pulse.status !== "read") return pulse;
@@ -336,15 +348,16 @@ export async function readRepositories(
   });
   const due = settled.filter((entry): entry is Seen => !("status" in entry));
   console.log(`repositories: ${due.length} of ${tools.length} read in full`);
-  const details = everyRead(
-    await aliasedBatches(gql, due.map((seen) => seen.repo.fullName), shape, { alias: "r", query: detailQuery, read: mapDetail, failures: "throw" }),
+  const details = tolerated(
+    await aliasedBatches(gql, due.map((seen) => seen.repo.fullName), shape, { alias: "r", query: detailQuery, read: mapDetail, failures: "report" }),
   );
   let next = 0;
-  return settled.map((entry) => {
+  const reads = settled.map((entry): Read<MappedRepository> => {
     if ("status" in entry) return entry;
     const detail = details[next++] ?? GONE;
     return detail.status === "read" ? { status: "read", value: joined(entry, detail.value) } : detail;
   });
+  return unlessMostUnreadable(reads, tools.length);
 }
 
 async function signedRelease(

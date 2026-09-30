@@ -49,6 +49,31 @@ describe("refresh of a tool behind an IP allow list", () => {
   });
 });
 
+describe("refresh of a tool whose repository GitHub keeps failing on", () => {
+  const unreadable = { status: "unreadable", reason: "r0: Something went wrong while executing your query" } as const;
+
+  it("keeps its last published facts and maintainer mark, like a repository behind an IP allow list", async (t) => {
+    const errors = t.mock.method(console, "error", () => {});
+    const before = published(ripgrep, 61000, true);
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon, ripgrep], NOW);
+
+    const kept = enricher.enrich(ripgrep, unreadable);
+    assert.ok(kept);
+    assert.deepEqual(kept.repo, before.repo);
+    assert.deepEqual(kept.release, before.release);
+    assert.equal(kept.maintainerVerified, true);
+    assert.match(String(errors.mock.calls[0]?.arguments[0]), /GitHub could not read .*Something went wrong.*kept with its last published facts/);
+  });
+
+  it("leaves out a tool no run has read yet", async (t) => {
+    t.mock.method(console, "error", () => {});
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon, ripgrep], NOW);
+    assert.equal(enricher.enrich(ripgrep, unreadable), null);
+  });
+});
+
 describe("fetchOwners", () => {
   it("keeps the published owner of an organisation behind an IP allow list", async () => {
     const gql: GraphQL = {
