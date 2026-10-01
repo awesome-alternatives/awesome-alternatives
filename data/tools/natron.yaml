@@ -1,0 +1,7 @@
+name: Natron
+repository: https://github.com/NatronGitHub/Natron
+category: video-editing
+replaces:
+  - tool: after-effects
+    fit: partial
+    note: Node-based compositing with rotoscoping, tracking and keyframe animation, not After Effects' layer-based motion graphics workflow.

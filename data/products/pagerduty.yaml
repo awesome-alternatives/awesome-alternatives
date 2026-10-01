@@ -1,0 +1,5 @@
+name: PagerDuty
+homepage: https://www.pagerduty.com
+vendor: PagerDuty
+category: incident-management
+description: Hosted incident response service that collects alerts from monitoring tools, pages on-call responders through escalation policies and tracks incidents.

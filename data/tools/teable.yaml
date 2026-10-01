@@ -1,0 +1,10 @@
+name: Teable
+repository: https://github.com/teableio/teable
+category: no-code-database
+replaces:
+  - tool: airtable
+    fit: full
+    note: A spreadsheet interface with views, forms and an API, storing its data in PostgreSQL.
+    migration: https://help.teable.ai/en/basic/ai/connect-everything/migrate-airtable
+terms: open
+deploy: [container, compose]

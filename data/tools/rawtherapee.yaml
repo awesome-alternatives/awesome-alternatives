@@ -1,0 +1,7 @@
+name: RawTherapee
+repository: https://github.com/RawTherapee/RawTherapee
+category: raw-photo-editing
+replaces:
+  - tool: lightroom
+    fit: partial
+    note: Raw development with detailed demosaicing control, without digital asset management, printing or uploading.

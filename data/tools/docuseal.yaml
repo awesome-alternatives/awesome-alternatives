@@ -1,0 +1,8 @@
+name: DocuSeal
+repository: https://github.com/docusealco/docuseal
+category: e-signature
+replaces:
+  - tool: docusign
+    fit: partial
+    note: PDF form builder, multiple signers, automatic PDF eSignature and an API; reminders, bulk send, user roles and SSO are paid Pro features.
+deploy: [container, compose]

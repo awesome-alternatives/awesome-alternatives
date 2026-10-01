@@ -1,0 +1,7 @@
+name: Graphite
+repository: https://github.com/GraphiteEditor/Graphite
+category: image-editing
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Nondestructive vector and raster editing with layers and a node graph, in alpha; photo editing and digital painting are still on its roadmap.

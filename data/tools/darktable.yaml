@@ -1,0 +1,7 @@
+name: darktable
+repository: https://github.com/darktable-org/darktable
+category: raw-photo-editing
+replaces:
+  - tool: lightroom
+    fit: partial
+    note: Non-destructive raw development and a photo catalog with its own workflow; the project says it is not a Lightroom replacement.

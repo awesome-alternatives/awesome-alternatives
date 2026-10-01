@@ -1,0 +1,5 @@
+name: Midjourney
+homepage: https://www.midjourney.com
+vendor: Midjourney
+category: image-generation
+description: Hosted service that generates images from text prompts with its own models, through a web app and Discord.

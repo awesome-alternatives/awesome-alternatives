@@ -1,0 +1,10 @@
+name: NocoDB
+repository: https://github.com/nocodb/nocodb
+category: no-code-database
+replaces:
+  - tool: airtable
+    fit: full
+    note: Grid, kanban, gallery, form and calendar views with a REST API, on top of a new or an existing SQL database.
+    migration: https://nocodb.com/docs/product/bases/import-base-from-airtable
+terms: source-available
+deploy: [container, compose, helm]

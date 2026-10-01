@@ -1,0 +1,7 @@
+name: Shotcut
+repository: https://github.com/mltframework/shotcut
+category: video-editing
+replaces:
+  - tool: premiere-pro
+    fit: full
+    note: Timeline-based non-linear video editing with filters and FFmpeg format support, in its own interface.
