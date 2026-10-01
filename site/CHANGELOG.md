@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.86.0] - 2026-10-01
+
+### Features
+
+- feat(catalog): add 16 tools in eight new categories against Photoshop, Airtable, DocuSign and other widely searched products (#289)
+
 ## [0.85.2] - 2026-10-01
 
 ### Bug Fixes
