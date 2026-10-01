@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.84.2] - 2026-10-01
+
+### Bug Fixes
+
+- perf(site): list every tool as one table row on the tools index instead of a full card (#283)
+
 ## [0.84.1] - 2026-10-01
 
 ### Bug Fixes
