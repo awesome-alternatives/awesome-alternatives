@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.85.0] - 2026-10-01
+
+### Features
+
+- feat(site): give each tool, alternatives page and migration guide its own social preview image (#284)
+
 ## [0.84.2] - 2026-10-01
 
 ### Bug Fixes
