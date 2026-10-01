@@ -1,0 +1,7 @@
+name: Pinta
+repository: https://github.com/PintaProject/Pinta
+category: image-editing
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Basic painting, editing, layers and effects modelled on Paint.NET, not Photoshop's full feature set.

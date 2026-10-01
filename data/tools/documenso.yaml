@@ -1,0 +1,9 @@
+name: Documenso
+repository: https://github.com/documenso/documenso
+category: e-signature
+replaces:
+  - tool: docusign
+    fit: full
+    note: Documents and templates sent to several recipients, with an audit log and an API; passkey reauthentication and embedded authoring are enterprise features.
+terms: open-core
+deploy: [container, compose]

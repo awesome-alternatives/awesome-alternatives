@@ -1,0 +1,9 @@
+name: Keep
+repository: https://github.com/keephq/keep
+category: incident-management
+replaces:
+  - tool: pagerduty
+    fit: partial
+    note: Collects, deduplicates and correlates alerts into incidents and runs workflows on them, but has no on-call schedules or escalation policies of its own.
+terms: open-core
+deploy: [container, compose, helm]

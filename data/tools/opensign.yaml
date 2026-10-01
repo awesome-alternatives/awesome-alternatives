@@ -1,0 +1,8 @@
+name: OpenSign
+repository: https://github.com/OpenSignLabs/OpenSign
+category: e-signature
+replaces:
+  - tool: docusign
+    fit: full
+    note: Multiple signers in a set order, templates, OTP checks for guest signers, audit trails with completion certificates and an API.
+deploy: [container, compose]

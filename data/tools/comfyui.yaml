@@ -1,0 +1,7 @@
+name: ComfyUI
+repository: https://github.com/Comfy-Org/ComfyUI
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: Runs open diffusion models on your own GPU through a node graph; Midjourney's own models are not available.

@@ -1,0 +1,11 @@
+name: Kimai
+repository: https://github.com/kimai/kimai
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: full
+    note: Timers and timesheets per customer, project and activity, with rates, reports, exports and a JSON API.
+  - tool: harvest
+    fit: partial
+    note: Time tracking with rates, budgets and invoices; expense tracking is a paid plugin.
+deploy: [container, compose]

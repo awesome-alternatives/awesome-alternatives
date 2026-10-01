@@ -1,0 +1,7 @@
+name: InvokeAI
+repository: https://github.com/invoke-ai/InvokeAI
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: Runs open models such as Stable Diffusion and FLUX locally, with a canvas for inpainting and node workflows; Midjourney's own models are not available.

@@ -1,0 +1,13 @@
+name: solidtime
+repository: https://github.com/solidtime-io/solidtime
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: full
+    note: Timers, projects, tasks, clients and billable rates across several organisations.
+    migration: https://docs.solidtime.io/user-guide/import
+  - tool: harvest
+    fit: partial
+    note: Time tracking with clients, projects and billable rates, without Harvest's expenses and invoicing.
+    migration: https://docs.solidtime.io/user-guide/import
+deploy: [container, compose]

@@ -650,3 +650,39 @@ scheduling:
   name: Scheduling
   description: Share availability and let people book a meeting or vote on a date.
   selfHost: true
+
+image-editing:
+  name: Image editors
+  description: Edit raster and vector images, from retouching photos to drawing graphics.
+
+raw-photo-editing:
+  name: Raw photo editors
+  description: Develop camera raw files and manage a photo catalog non-destructively.
+
+video-editing:
+  name: Video editors
+  description: Cut, compose and render video on a timeline or a node graph.
+
+no-code-database:
+  name: No-code databases
+  description: Spreadsheet-like databases with views, forms and an API, built without code.
+  selfHost: true
+
+e-signature:
+  name: E-signature
+  description: Send documents for signature and collect legally binding signatures online.
+  selfHost: true
+
+incident-management:
+  name: Incident management
+  description: Route alerts, page whoever is on call and track incidents to resolution.
+  selfHost: true
+
+time-tracking:
+  name: Time tracking
+  description: Log time against projects and clients, and turn it into reports or invoices.
+  selfHost: true
+
+image-generation:
+  name: Image generation
+  description: Generate images from text prompts with diffusion models running on your own hardware.
