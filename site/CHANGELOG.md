@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.84.0] - 2026-10-01
+
+### Features
+
+- feat(catalog): add 31 command-line, developer, backup and scheduling tools in ten new categories (#273)
+
 ## [0.83.3] - 2026-10-01
 
 ### Bug Fixes
