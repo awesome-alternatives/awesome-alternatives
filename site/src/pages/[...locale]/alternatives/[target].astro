@@ -15,6 +15,7 @@ import { day, stars } from "../../../lib/format.ts";
 import { targetDescription, targetTitle } from "../../../lib/intent.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { slugify } from "../../../lib/slug.ts";
+import { socialImagePath } from "../../../lib/socialImage.ts";
 import { breadcrumbList, itemList } from "../../../lib/structuredData.ts";
 
 export const getStaticPaths = (() =>
@@ -55,6 +56,7 @@ const structuredData = [
 
 <Base
   title={title}
+  image={{ path: socialImagePath(`/alternatives/${target.slug}/`), alt: title }}
   structuredData={structuredData}
   description={targetDescription(m.target, target.name, target.slug, target.alternatives)}
 >

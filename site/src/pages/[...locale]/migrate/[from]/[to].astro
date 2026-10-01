@@ -11,6 +11,7 @@ import { withHome } from "../../../../lib/breadcrumbs.ts";
 import { categoryName, nameOf, productBySlug, toolBySlug } from "../../../../lib/catalog.ts";
 import { majorOf, migrationPath, pairOf, staleness } from "../../../../lib/migrations.ts";
 import { slugify } from "../../../../lib/slug.ts";
+import { socialImagePath } from "../../../../lib/socialImage.ts";
 import { breadcrumbList } from "../../../../lib/structuredData.ts";
 
 export const getStaticPaths = (async () => {
@@ -53,7 +54,12 @@ const trail = breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: new
 const termsOf = (tool: typeof replacing) => `${tool.repo.license ?? card.noLicense}, ${m.islands.terms[tool.terms]}`;
 ---
 
-<Base title={title} description={format(m.migrate.description, names)} structuredData={[trail]}>
+<Base
+  title={title}
+  description={format(m.migrate.description, names)}
+  image={{ path: socialImagePath(`/migrate/${from}/${to}/`), alt: title }}
+  structuredData={[trail]}
+>
   <Breadcrumbs locale={locale} crumbs={crumbs} />
   <p class="context">{m.migrate.context}</p>
   <h1>{title}</h1>

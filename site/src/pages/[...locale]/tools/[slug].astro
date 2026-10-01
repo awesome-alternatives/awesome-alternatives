@@ -14,6 +14,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import Base from "../../../layouts/Base.astro";
 import { withHome } from "../../../lib/breadcrumbs.ts";
 import { canonicalForTool } from "../../../lib/canonical.ts";
+import { socialImagePath } from "../../../lib/socialImage.ts";
 import { categories, checkedAt, nameOf, ownerFacts, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
 import { comparePath, pairForTool } from "../../../lib/compare.ts";
 import { loginOf } from "../../../lib/owners.ts";
@@ -73,16 +74,19 @@ const ownerKind = ownerFacts(login)?.kind;
 const comparable = pairForTool(pairs, tool.slug);
 const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.b : comparable.a);
 const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
+const toolTitle = format(m.tool.title, {
+  name: tool.name,
+  language: repo.language ?? m.tool.titleFallbackLanguage,
+  category: category?.name.toLowerCase() ?? tool.category,
+});
+const canonical = canonicalForTool(tool.slug, replacedBy.length);
 ---
 
 <Base
-  title={format(m.tool.title, {
-    name: tool.name,
-    language: repo.language ?? m.tool.titleFallbackLanguage,
-    category: category?.name.toLowerCase() ?? tool.category,
-  })}
+  title={toolTitle}
   description={toolDescription(tool, tools, format(m.tool.descriptionFallback, { name: tool.name }))}
-  canonicalPath={canonicalForTool(tool.slug, replacedBy.length)}
+  canonicalPath={canonical}
+  image={{ path: socialImagePath(canonical), alt: toolTitle }}
   structuredData={[
     softwareSourceCode(tool, absolute(pathFor(locale, `/tools/${tool.slug}/`))),
     breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: absolute(crumb.href) }))),
