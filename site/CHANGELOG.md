@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.86.1] - 2026-10-01
+
+### Bug Fixes
+
+- chore(catalog): refresh comfyui darktable documenso docuseal graphite invokeai keep kimai natron nocodb opensign pinta rawtherapee shotcut solidtime teable
+
 ## [0.86.0] - 2026-10-01
 
 ### Features
