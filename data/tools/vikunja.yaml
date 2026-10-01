@@ -8,4 +8,8 @@ replaces:
   - tool: asana
     fit: partial
     note: Tasks and projects for individuals and small teams.
+  - tool: todoist
+    fit: full
+    note: Tasks with projects, labels, saved filters, reminders and repeating due dates, with a Todoist importer.
+    migration: https://vikunja.io/docs/setup-todoist-migration
 deploy: [container, binary]

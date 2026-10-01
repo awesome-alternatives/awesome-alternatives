@@ -9,4 +9,11 @@ replaces:
   - tool: mailchimp
     fit: partial
     note: Newsletters to the members of a Ghost site, not general marketing campaigns.
+  - tool: squarespace
+    fit: partial
+    note: A blog or publication with members and newsletters, not a drag-and-drop site builder or an online store.
+    migration: https://ghost.org/docs/migration/squarespace/
+  - tool: wix
+    fit: partial
+    note: A blog or publication with members and newsletters, not a drag-and-drop site builder or an online store.
 deploy: [compose]

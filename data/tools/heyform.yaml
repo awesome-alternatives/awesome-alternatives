@@ -5,3 +5,9 @@ replaces:
   - tool: typeform
     fit: full
     note: Conversational forms with logic and integrations.
+  - tool: surveymonkey
+    fit: partial
+    note: Surveys and polls shown one question at a time, with drop-off and completion analytics.
+  - tool: jotform
+    fit: partial
+    note: Forms with file uploads, conditional logic and integrations.

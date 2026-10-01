@@ -8,4 +8,10 @@ replaces:
   - tool: asana
     fit: partial
     note: Tasks, boards and timelines.
+  - tool: clickup
+    fit: partial
+    note: Tasks, boards, Gantt charts, wikis and time tracking.
+  - tool: monday-com
+    fit: partial
+    note: Projects, boards, Gantt timelines and time tracking.
 deploy: [container, helm]

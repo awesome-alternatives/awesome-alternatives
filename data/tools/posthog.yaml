@@ -9,3 +9,10 @@ replaces:
   - tool: mixpanel
     fit: full
     note: Event-based product analytics with funnels, retention and cohorts.
+  - tool: hotjar
+    fit: full
+    note: Heatmaps, session replay and in-app surveys.
+  - tool: amplitude
+    fit: full
+    note: Event-based product analytics with experiments and session replay.
+    migration: https://posthog.com/docs/migrate/migrate-from-amplitude

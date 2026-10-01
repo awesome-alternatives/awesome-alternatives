@@ -9,4 +9,10 @@ replaces:
   - tool: google-forms
     fit: full
     note: Forms and surveys with logic, on your own server.
+  - tool: surveymonkey
+    fit: full
+    note: Link surveys with logic and response analysis, plus in-app and website surveys.
+  - tool: jotform
+    fit: partial
+    note: Surveys and feedback forms, not payment or approval forms.
 deploy: [container]

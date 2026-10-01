@@ -9,3 +9,7 @@ replaces:
   - tool: obsidian
     fit: partial
     note: Markdown notes with end-to-end encrypted sync.
+  - tool: onenote
+    fit: full
+    note: Notebooks of Markdown notes rather than free-form pages, with sync through several back ends and a OneNote importer.
+    migration: https://joplinapp.org/help/apps/import_export/#importing-from-onenote

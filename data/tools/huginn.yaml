@@ -5,4 +5,7 @@ replaces:
   - tool: zapier
     fit: partial
     note: Agents that watch the web and act on events, configured in JSON.
+  - tool: ifttt
+    fit: partial
+    note: Agents that watch the web and act on events, configured in JSON, without IFTTT's catalog of device and app services.
 deploy: [container]

@@ -11,4 +11,8 @@ replaces:
     fit: full
     note: Use it with the Bitwarden apps and browser extensions, self-hosted.
     migration: https://bitwarden.com/help/import-from-lastpass/
+  - tool: dashlane
+    fit: full
+    note: Use it with the Bitwarden apps and browser extensions, self-hosted.
+    migration: https://bitwarden.com/help/import-from-dashlane/
 deploy: [container, compose]

@@ -8,4 +8,11 @@ replaces:
   - tool: linear
     fit: full
     note: Issues, cycles and triage in a similar layout.
+  - tool: clickup
+    fit: partial
+    note: Work items, cycles and pages, with a ClickUp importer in Plane Cloud and the Commercial Edition.
+    migration: https://docs.plane.so/importers/clickup
+  - tool: monday-com
+    fit: partial
+    note: Work items in board, calendar, table and timeline layouts.
 deploy: [container, helm]

@@ -9,4 +9,7 @@ replaces:
   - tool: hubspot
     fit: partial
     note: CRM records and workflows, without marketing hubs.
+  - tool: pipedrive
+    fit: full
+    note: Companies, people and opportunities moved through a pipeline on kanban boards, with workflows.
 deploy: [container, compose]

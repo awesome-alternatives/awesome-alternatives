@@ -9,4 +9,13 @@ replaces:
   - tool: nextcloud
     fit: partial
     note: Focuses on file sync and share, without the calendar, contacts and app platform.
+  - tool: icloud-drive
+    fit: full
+    note: Libraries synced by desktop and mobile clients, with versioning and sharing, self-hosted.
+  - tool: onedrive
+    fit: full
+    note: Libraries synced by desktop and mobile clients, with versioning and sharing, self-hosted.
+  - tool: box
+    fit: full
+    note: Libraries synced by desktop and mobile clients, with versioning and sharing, self-hosted.
 deploy: [container, compose]

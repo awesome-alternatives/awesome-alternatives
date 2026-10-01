@@ -5,4 +5,7 @@ replaces:
   - tool: figma
     fit: full
     note: Browser-based design and prototyping with components and CSS-based layout.
+  - tool: canva
+    fit: partial
+    note: Free-form design on a canvas with components and export to PNG, SVG and PDF, without Canva's template and stock media library or video editing.
 deploy: [container, compose, helm]

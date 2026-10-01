@@ -6,4 +6,7 @@ replaces:
   - tool: quickbooks
     fit: full
     note: Invoices, bills, bank accounts and reports in the browser; inventory, payroll and more come as paid apps.
+  - tool: xero
+    fit: full
+    note: Invoices, bills, bank accounts and reports in the browser; inventory, payroll and more come as paid apps.
 deploy: [container]
