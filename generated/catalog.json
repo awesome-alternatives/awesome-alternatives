@@ -2,7 +2,7 @@
   "stats": {
     "tools": 858,
     "categories": 142,
-    "targets": 303
+    "targets": 306
   },
   "checkedAt": "2026-10-01T07:04:28.874Z",
   "owners": {
@@ -52430,12 +52430,27 @@
           "tool": "lfs-test-server",
           "fit": "full",
           "note": "Rust server with S3 and local storage, built for self-hosting."
+        },
+        {
+          "tool": "rudolfs",
+          "fit": "full",
+          "note": "S3 with a local disk cache and encryption at rest like Rudolfs, plus access checked against the forge and file locking."
+        },
+        {
+          "tool": "giftless",
+          "fit": "partial",
+          "note": "Local disk or S3-compatible storage only, no Azure Blob or Google Cloud Storage back end."
+        },
+        {
+          "tool": "github-lfs",
+          "fit": "full",
+          "note": "The repository stays on GitHub; only LFS objects move to your own disk or bucket, with access checked against GitHub."
         }
       ],
       "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
       "path": null,
       "addedAt": "2026-09-22T18:19:45.000Z",
-      "editedAt": "2026-09-24T11:35:54.000Z",
+      "editedAt": "2026-10-01T16:41:29.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "FerrLabs/LFSX",
@@ -52465,7 +52480,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-10-01T02:08:11Z",
+        "pushedAt": "2026-10-01T14:17:54Z",
         "defaultBranch": "main"
       },
       "trend": {
@@ -105410,6 +105425,14 @@
       "category": "code-assistant",
       "description": "GitHub's AI assistant in the editor, with completions, chat and an agent mode.",
       "slug": "github-copilot"
+    },
+    {
+      "name": "GitHub LFS storage",
+      "homepage": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+      "vendor": "GitHub",
+      "category": "git-lfs-server",
+      "description": "Git LFS storage and bandwidth for GitHub repositories, billed apart from the plan beyond a free quota.",
+      "slug": "github-lfs"
     },
     {
       "name": "GitKraken",

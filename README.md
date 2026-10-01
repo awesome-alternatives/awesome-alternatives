@@ -927,7 +927,7 @@ Serve Git LFS objects for repositories hosted anywhere.
 | [lfs-test-server](https://github.com/git-lfs/lfs-test-server) | Go | MIT | [v0.4.0](https://github.com/git-lfs/lfs-test-server/releases/tag/v0.4.0) | 792 | none |
 | [Rudolfs](https://github.com/jasonwhite/rudolfs) | Rust | MIT | [0.3.8](https://github.com/jasonwhite/rudolfs/releases/tag/0.3.8) | 524 | lfs-test-server (full) |
 | [Giftless](https://github.com/datopian/giftless) | Python | MIT | [v0.6.2](https://github.com/datopian/giftless/releases/tag/v0.6.2) signed | 183 | lfs-test-server (full) |
-| [LFSX](https://github.com/FerrLabs/LFSX) verified | Rust | MPL-2.0 | [site@2026.9.20](https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.20) signed | 1 | lfs-test-server (full) |
+| [LFSX](https://github.com/FerrLabs/LFSX) verified | Rust | MPL-2.0 | [site@2026.9.20](https://github.com/FerrLabs/LFSX/releases/tag/site%402026.9.20) signed | 1 | lfs-test-server (full), Rudolfs (full), Giftless (partial), GitHub LFS storage (full) |
 
 </details>
 
