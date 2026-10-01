@@ -1,0 +1,5 @@
+name: GitHub LFS storage
+homepage: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage
+vendor: GitHub
+category: git-lfs-server
+description: Git LFS storage and bandwidth for GitHub repositories, billed apart from the plan beyond a free quota.
