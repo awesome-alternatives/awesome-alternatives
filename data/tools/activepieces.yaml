@@ -9,4 +9,7 @@ replaces:
   - tool: n8n
     fit: full
     note: Visual flows with its community edition under MIT.
+  - tool: ifttt
+    fit: full
+    note: Trigger-and-action flows with a library of integrations, self-hosted.
 deploy: [container, compose]

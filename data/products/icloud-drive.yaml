@@ -1,0 +1,5 @@
+name: iCloud Drive
+homepage: https://www.icloud.com/iclouddrive/
+vendor: Apple
+category: file-sync
+description: Apple's hosted file storage and sync, built into its devices.

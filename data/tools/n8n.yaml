@@ -6,4 +6,7 @@ replaces:
   - tool: zapier
     fit: full
     note: Visual workflows with hundreds of integrations and code steps, on your own server.
+  - tool: ifttt
+    fit: full
+    note: Trigger-and-action workflows with hundreds of integrations and code steps, on your own server.
 deploy: [container]

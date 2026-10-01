@@ -1,0 +1,5 @@
+name: OneDrive
+homepage: https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage
+vendor: Microsoft
+category: file-sync
+description: Microsoft's hosted file storage and sync, built into Windows and Microsoft 365.

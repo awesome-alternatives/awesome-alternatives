@@ -5,4 +5,7 @@ replaces:
   - tool: plex
     fit: partial
     note: Music only, streamed to Subsonic-compatible clients.
+  - tool: spotify
+    fit: partial
+    note: Streams your own music library to Subsonic-compatible clients; there is no catalog of music to stream.
 deploy: [container, binary, package]

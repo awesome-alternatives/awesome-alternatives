@@ -8,3 +8,6 @@ replaces:
   - tool: hubspot
     fit: partial
     note: Contacts, deals and email campaigns.
+  - tool: pipedrive
+    fit: full
+    note: Leads and opportunities tracked by stage on kanban boards, with built-in email.

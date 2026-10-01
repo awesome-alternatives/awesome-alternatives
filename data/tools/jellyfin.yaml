@@ -8,4 +8,7 @@ replaces:
   - tool: emby
     fit: full
     note: Started as a fork of Emby when it went closed source.
+  - tool: netflix
+    fit: partial
+    note: Streams your own films and series to its clients; there is no catalog of content to watch.
 deploy: [container]

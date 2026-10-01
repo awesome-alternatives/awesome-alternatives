@@ -9,3 +9,9 @@ replaces:
   - tool: google-forms
     fit: full
     note: Surveys and forms with exports to CSV, SPSS and R.
+  - tool: surveymonkey
+    fit: full
+    note: Surveys with conditions, quotas, many question types and response statistics.
+  - tool: jotform
+    fit: partial
+    note: Surveys and data collection forms, not payment or approval forms.

@@ -5,4 +5,7 @@ replaces:
   - tool: ynab
     fit: partial
     note: Accounts, budgets, rules and reports in a web app, but budgets are spending limits rather than YNAB's zero-based envelopes.
+  - tool: mint
+    fit: full
+    note: Accounts, budgets, rules and reports in a web app, with bank transactions brought in through its separate data importer.
 deploy: [container, compose, helm]
