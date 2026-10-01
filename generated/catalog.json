@@ -1,8 +1,8 @@
 {
   "stats": {
-    "tools": 858,
-    "categories": 142,
-    "targets": 306
+    "tools": 874,
+    "categories": 150,
+    "targets": 316
   },
   "checkedAt": "2026-10-01T16:41:50.296Z",
   "owners": {
@@ -6197,6 +6197,134 @@
       "bio": "Organized team chat",
       "website": "https://zulip.com",
       "url": "https://github.com/zulip"
+    },
+    "Comfy-Org": {
+      "login": "Comfy-Org",
+      "kind": "organization",
+      "name": "Comfy Org",
+      "bio": null,
+      "website": "https://comfy.org",
+      "url": "https://github.com/Comfy-Org"
+    },
+    "darktable-org": {
+      "login": "darktable-org",
+      "kind": "organization",
+      "name": "darktable",
+      "bio": null,
+      "website": "https://www.darktable.org/",
+      "url": "https://github.com/darktable-org"
+    },
+    "documenso": {
+      "login": "documenso",
+      "kind": "organization",
+      "name": null,
+      "bio": "Documenso - The Open Source DocuSign Alternative.",
+      "website": "https://documenso.com",
+      "url": "https://github.com/documenso"
+    },
+    "docusealco": {
+      "login": "docusealco",
+      "kind": "organization",
+      "name": "DocuSeal",
+      "bio": "Open source DocuSign alternative",
+      "website": "https://www.docuseal.com",
+      "url": "https://github.com/docusealco"
+    },
+    "GraphiteEditor": {
+      "login": "GraphiteEditor",
+      "kind": "organization",
+      "name": "Graphite",
+      "bio": "Open source 2D node-based raster/vector graphics editor",
+      "website": "https://graphite.art",
+      "url": "https://github.com/GraphiteEditor"
+    },
+    "invoke-ai": {
+      "login": "invoke-ai",
+      "kind": "organization",
+      "name": "Invoke",
+      "bio": "Invoke AI is building the next generation of tools for artists and creative teams.",
+      "website": "http://invoke.ai",
+      "url": "https://github.com/invoke-ai"
+    },
+    "keephq": {
+      "login": "keephq",
+      "kind": "organization",
+      "name": "Keep",
+      "bio": null,
+      "website": "https://www.keephq.dev",
+      "url": "https://github.com/keephq"
+    },
+    "kimai": {
+      "login": "kimai",
+      "kind": "organization",
+      "name": "Kimai - Time Tracking Software",
+      "bio": "The #1 open-source time-tracker",
+      "website": "https://www.kimai.org",
+      "url": "https://github.com/kimai"
+    },
+    "NatronGitHub": {
+      "login": "NatronGitHub",
+      "kind": "organization",
+      "name": "Natron",
+      "bio": "Natron source code (including plugins and dependencies)",
+      "website": "https://natrongithub.github.io",
+      "url": "https://github.com/NatronGitHub"
+    },
+    "nocodb": {
+      "login": "nocodb",
+      "kind": "organization",
+      "name": null,
+      "bio": "https://www.nocodb.com",
+      "website": "https://twitter.com/nocodb",
+      "url": "https://github.com/nocodb"
+    },
+    "OpenSignLabs": {
+      "login": "OpenSignLabs",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": "https://www.opensignlabs.com",
+      "url": "https://github.com/OpenSignLabs"
+    },
+    "PintaProject": {
+      "login": "PintaProject",
+      "kind": "organization",
+      "name": "Pinta",
+      "bio": null,
+      "website": "https://pinta-project.com/",
+      "url": "https://github.com/PintaProject"
+    },
+    "RawTherapee": {
+      "login": "RawTherapee",
+      "kind": "organization",
+      "name": null,
+      "bio": "Everything related to RawTherapee, the open-source raw image processing program",
+      "website": "https://rawtherapee.com/",
+      "url": "https://github.com/RawTherapee"
+    },
+    "mltframework": {
+      "login": "mltframework",
+      "kind": "organization",
+      "name": "MLT Framework",
+      "bio": "Multimedia Processing Framework",
+      "website": "http://www.mltframework.org",
+      "url": "https://github.com/mltframework"
+    },
+    "solidtime-io": {
+      "login": "solidtime-io",
+      "kind": "organization",
+      "name": "solidtime",
+      "bio": "The modern open-source time-tracking app",
+      "website": "https://www.solidtime.io",
+      "url": "https://github.com/solidtime-io"
+    },
+    "teableio": {
+      "login": "teableio",
+      "kind": "organization",
+      "name": "Teable",
+      "bio": "The AI Database Agent",
+      "website": "https://teable.ai",
+      "url": "https://github.com/teableio"
     }
   },
   "tools": [
@@ -19875,6 +20003,111 @@
       "deploy": []
     },
     {
+      "slug": "comfyui",
+      "name": "ComfyUI",
+      "repository": "https://github.com/Comfy-Org/ComfyUI",
+      "category": "image-generation",
+      "replaces": [
+        {
+          "tool": "midjourney",
+          "fit": "partial",
+          "note": "Runs open diffusion models on your own GPU through a node graph; Midjourney's own models are not available."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Comfy-Org/ComfyUI",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+        "homepage": "https://www.comfy.org/",
+        "language": "Python",
+        "license": "GPL-3.0",
+        "stars": 135771,
+        "forks": 16103,
+        "topics": [
+          "ai",
+          "comfy",
+          "comfyui",
+          "python",
+          "pytorch",
+          "stable-diffusion"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-01-17T03:15:56Z",
+        "pushedAt": "2026-10-01T19:48:01Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [135771]
+      },
+      "release": {
+        "tag": "v0.38.0",
+        "publishedAt": "2026-09-29T21:46:45Z",
+        "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.38.0",
+          "name": "Improve qwen 2.1 KV cache location logic",
+          "publishedAt": "2026-09-29T21:46:45Z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.37.0",
+          "name": "Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440)",
+          "publishedAt": "2026-09-21T07:35:01Z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.36.0",
+          "name": "Add new model blueprints and reorganize subgraph categories",
+          "publishedAt": "2026-09-15T22:26:17Z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.35.0",
+          "name": "[Partner Nodes] chore(Google): drop retiring Veo 2 and Veo 3.0 models",
+          "publishedAt": "2026-09-09T19:55:08Z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.34.0",
+          "name": "Fix minimax music not working on non dynamic vram.",
+          "publishedAt": "2026-08-26T02:09:08Z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 52,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "windows",
+          "architectures": []
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "commafeed",
       "name": "CommaFeed",
       "repository": "https://github.com/Athou/commafeed",
@@ -22700,6 +22933,121 @@
           "architectures": [
             "x86_64",
             "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "darktable",
+      "name": "darktable",
+      "repository": "https://github.com/darktable-org/darktable",
+      "category": "raw-photo-editing",
+      "replaces": [
+        {
+          "tool": "lightroom",
+          "fit": "partial",
+          "note": "Non-destructive raw development and a photo catalog with its own workflow; the project says it is not a Lightroom replacement."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "darktable-org/darktable",
+        "description": "darktable is an open source photography workflow application and raw developer",
+        "homepage": "https://www.darktable.org",
+        "language": "C",
+        "license": "GPL-3.0",
+        "stars": 13172,
+        "forks": 1448,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-03-21T21:53:04Z",
+        "pushedAt": "2026-10-01T19:58:59Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [13172]
+      },
+      "release": {
+        "tag": "release-5.6.1",
+        "publishedAt": "2026-08-27T07:02:41Z",
+        "url": "https://github.com/darktable-org/darktable/releases/tag/release-5.6.1",
+        "source": "release",
+        "signed": false,
+        "tagOid": "1d8b15525eef682948a461ba32991b9d629be74d"
+      },
+      "releases": [
+        {
+          "tag": "nightly",
+          "name": "Darktable nightly build 20261001",
+          "publishedAt": "2026-10-01T00:46:57Z",
+          "url": "https://github.com/darktable-org/darktable/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "release-5.6.1",
+          "name": "release 5.6.1",
+          "publishedAt": "2026-08-27T07:02:41Z",
+          "url": "https://github.com/darktable-org/darktable/releases/tag/release-5.6.1",
+          "prerelease": false
+        },
+        {
+          "tag": "release-5.6.0",
+          "name": "release 5.6.0",
+          "publishedAt": "2026-06-21T09:18:30Z",
+          "url": "https://github.com/darktable-org/darktable/releases/tag/release-5.6.0",
+          "prerelease": false
+        },
+        {
+          "tag": "release-5.4.1",
+          "name": "release 5.4.1",
+          "publishedAt": "2026-02-05T17:01:49Z",
+          "url": "https://github.com/darktable-org/darktable/releases/tag/release-5.4.1",
+          "prerelease": false
+        },
+        {
+          "tag": "release-5.4.0",
+          "name": "release 5.4.0",
+          "publishedAt": "2025-12-21T08:46:44Z",
+          "url": "https://github.com/darktable-org/darktable/releases/tag/release-5.4.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 41,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
           ]
         }
       ],
@@ -26136,6 +26484,121 @@
       ]
     },
     {
+      "slug": "documenso",
+      "name": "Documenso",
+      "repository": "https://github.com/documenso/documenso",
+      "category": "e-signature",
+      "replaces": [
+        {
+          "tool": "docusign",
+          "fit": "full",
+          "note": "Documents and templates sent to several recipients, with an audit log and an API; passkey reauthentication and embedded authoring are enterprise features."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "documenso/documenso",
+        "description": "The Open Source DocuSign Alternative.",
+        "homepage": "https://documenso.com",
+        "language": "TypeScript",
+        "license": "AGPL-3.0",
+        "stars": 15284,
+        "forks": 3301,
+        "topics": [
+          "digital-signature",
+          "document-signing",
+          "docusign-alternative",
+          "e-signature",
+          "esign",
+          "esignature",
+          "next-auth",
+          "nextjs",
+          "open-source",
+          "pades-standard",
+          "pdf",
+          "pdf-sign",
+          "pdf-signature",
+          "postgresql",
+          "prisma",
+          "self-hosted",
+          "signing",
+          "typescript"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-03-12T16:28:56Z",
+        "pushedAt": "2026-10-01T20:10:12Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [15284]
+      },
+      "release": {
+        "tag": "v2.19.0",
+        "publishedAt": "2026-09-29T04:39:09Z",
+        "url": "https://github.com/documenso/documenso/releases/tag/v2.19.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v2.19.0",
+          "name": "fix: pass csp nonce to @hello-pangea/dnd style elements",
+          "publishedAt": "2026-09-29T04:39:09Z",
+          "url": "https://github.com/documenso/documenso/releases/tag/v2.19.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.18.0",
+          "name": "fix(ui): add type=button to multiselect remove and clear buttons",
+          "publishedAt": "2026-09-09T01:35:09Z",
+          "url": "https://github.com/documenso/documenso/releases/tag/v2.18.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.17.0",
+          "name": "fix: increase global API rate limits to 1000/min",
+          "publishedAt": "2026-08-19T11:01:04Z",
+          "url": "https://github.com/documenso/documenso/releases/tag/v2.17.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.16.0",
+          "name": "chore: extract translations by @github-actions[bot] in",
+          "publishedAt": "2026-08-19T11:00:45Z",
+          "url": "https://github.com/documenso/documenso/releases/tag/v2.16.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.15.0",
+          "name": "fix: auto select field on drop",
+          "publishedAt": "2026-07-21T04:44:55Z",
+          "url": "https://github.com/documenso/documenso/releases/tag/v2.15.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 18,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open-core",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "docusaurus",
       "name": "Docusaurus",
       "repository": "https://github.com/facebook/docusaurus",
@@ -26239,6 +26702,116 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "docuseal",
+      "name": "DocuSeal",
+      "repository": "https://github.com/docusealco/docuseal",
+      "category": "e-signature",
+      "replaces": [
+        {
+          "tool": "docusign",
+          "fit": "partial",
+          "note": "PDF form builder, multiple signers, automatic PDF eSignature and an API; reminders, bulk send, user roles and SSO are paid Pro features."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "docusealco/docuseal",
+        "description": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+        "homepage": "https://www.docuseal.com",
+        "language": "Ruby",
+        "license": "AGPL-3.0",
+        "stars": 18639,
+        "forks": 1880,
+        "topics": [
+          "document-signing",
+          "documents",
+          "e-signature",
+          "hotwired-turbo",
+          "open-source",
+          "pdf",
+          "pdf-sign",
+          "pdf-signature",
+          "ruby-on-rails",
+          "self-hosted",
+          "tailwindcss",
+          "vue",
+          "webpack"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-07-03T19:54:54Z",
+        "pushedAt": "2026-09-28T11:59:14Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [18639]
+      },
+      "release": {
+        "tag": "3.3.0",
+        "publishedAt": "2026-09-28T11:59:15Z",
+        "url": "https://github.com/docusealco/docuseal/releases/tag/3.3.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "3.3.0",
+          "name": "🛠 Improved mobile UI form builder (now all builder features are available on mobile).",
+          "publishedAt": "2026-09-28T11:59:15Z",
+          "url": "https://github.com/docusealco/docuseal/releases/tag/3.3.0",
+          "prerelease": false
+        },
+        {
+          "tag": "3.2.6",
+          "name": "🛠 This release includes various bug fixes and security improvemens",
+          "publishedAt": "2026-09-21T12:25:10Z",
+          "url": "https://github.com/docusealco/docuseal/releases/tag/3.2.6",
+          "prerelease": false
+        },
+        {
+          "tag": "3.2.5",
+          "name": "🛠 Optimized XLSX export and reading",
+          "publishedAt": "2026-09-14T13:05:49Z",
+          "url": "https://github.com/docusealco/docuseal/releases/tag/3.2.5",
+          "prerelease": false
+        },
+        {
+          "tag": "3.2.4",
+          "name": "🆕 It's now possible to set message subject without body via API",
+          "publishedAt": "2026-09-07T10:02:39Z",
+          "url": "https://github.com/docusealco/docuseal/releases/tag/3.2.4",
+          "prerelease": false
+        },
+        {
+          "tag": "3.2.3",
+          "name": "🛠 This release includes various bug fixes, performance improvements, and security hardening",
+          "publishedAt": "2026-08-31T08:57:37Z",
+          "url": "https://github.com/docusealco/docuseal/releases/tag/3.2.3",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 2,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "dokku",
@@ -38359,6 +38932,92 @@
       ]
     },
     {
+      "slug": "graphite",
+      "name": "Graphite",
+      "repository": "https://github.com/GraphiteEditor/Graphite",
+      "category": "image-editing",
+      "replaces": [
+        {
+          "tool": "photoshop",
+          "fit": "partial",
+          "note": "Nondestructive vector and raster editing with layers and a node graph, in alpha; photo editing and digital painting are still on its roadmap."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "GraphiteEditor/Graphite",
+        "description": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics powered by a node-based procedural graphics engine",
+        "homepage": "https://graphite.art",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 27412,
+        "forks": 1272,
+        "topics": [
+          "2d-graphics",
+          "animation",
+          "art",
+          "creative-coding",
+          "design",
+          "graphic-design",
+          "graphics",
+          "graphics-editor",
+          "image-manipulation",
+          "image-processing",
+          "motion-design",
+          "motion-graphics",
+          "node-graph",
+          "photo-editor",
+          "procedural",
+          "procedural-drawing",
+          "procedural-generation",
+          "svg-editor",
+          "vector-graphics"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-04-26T07:29:29Z",
+        "pushedAt": "2026-10-01T19:52:17Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [27412]
+      },
+      "release": {
+        "tag": "pre-4435",
+        "publishedAt": null,
+        "url": "https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435",
+        "source": "tag",
+        "signed": true,
+        "tagOid": "4de27f0cf1d3177b380720def8b6863c28ee13b4"
+      },
+      "releases": [
+        {
+          "tag": "latest-stable",
+          "name": "Latest Stable (Alpha 4 Release Series)",
+          "publishedAt": "2022-02-04T02:17:50Z",
+          "url": "https://github.com/GraphiteEditor/Graphite/releases/tag/latest-stable",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 9,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "graylog",
       "name": "Graylog",
       "repository": "https://github.com/Graylog2/graylog2-server",
@@ -44273,6 +44932,114 @@
       ]
     },
     {
+      "slug": "invokeai",
+      "name": "InvokeAI",
+      "repository": "https://github.com/invoke-ai/InvokeAI",
+      "category": "image-generation",
+      "replaces": [
+        {
+          "tool": "midjourney",
+          "fit": "partial",
+          "note": "Runs open models such as Stable Diffusion and FLUX locally, with a canvas for inpainting and node workflows; Midjourney's own models are not available."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "invoke-ai/InvokeAI",
+        "description": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
+        "homepage": "https://invoke-ai.github.io/InvokeAI/",
+        "language": "Python",
+        "license": "Apache-2.0",
+        "stars": 28323,
+        "forks": 2985,
+        "topics": [
+          "ai-art",
+          "artificial-intelligence",
+          "generative-art",
+          "image-generation",
+          "img2img",
+          "inpainting",
+          "latent-diffusion",
+          "linux",
+          "macos",
+          "outpainting",
+          "stable-diffusion",
+          "txt2img",
+          "windows"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-08-17T01:04:27Z",
+        "pushedAt": "2026-10-01T02:56:09Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [28323]
+      },
+      "release": {
+        "tag": "v6.14.2",
+        "publishedAt": "2026-09-27T18:31:53Z",
+        "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2",
+        "source": "release",
+        "signed": false,
+        "tagOid": "438246b846391385b074eae82bdbc82df2938007"
+      },
+      "releases": [
+        {
+          "tag": "v6.14.2",
+          "name": "Version 6.14.2",
+          "publishedAt": "2026-09-27T18:31:53Z",
+          "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v6.14.1",
+          "name": "Version 6.14.1",
+          "publishedAt": "2026-09-06T17:16:29Z",
+          "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v6.14.0",
+          "name": "InvokeAI 6.14.0",
+          "publishedAt": "2026-08-25T23:12:16Z",
+          "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v6.14.0-rc2",
+          "name": "InvokeAI 6.14.0 (release candidate 2)",
+          "publishedAt": "2026-08-16T22:50:49Z",
+          "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.0-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "v6.13.8",
+          "name": "Recent versions of InvokeAI through 6.13.7 contain two security holes:",
+          "publishedAt": "2026-08-13T21:35:50Z",
+          "url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.13.8",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 27,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "isort",
       "name": "isort",
       "repository": "https://github.com/PyCQA/isort",
@@ -47768,6 +48535,114 @@
       ]
     },
     {
+      "slug": "keep",
+      "name": "Keep",
+      "repository": "https://github.com/keephq/keep",
+      "category": "incident-management",
+      "replaces": [
+        {
+          "tool": "pagerduty",
+          "fit": "partial",
+          "note": "Collects, deduplicates and correlates alerts into incidents and runs workflows on them, but has no on-call schedules or escalation policies of its own."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "keephq/keep",
+        "description": "The open-source AIOps and alert management platform",
+        "homepage": "https://keephq.dev",
+        "language": "Python",
+        "license": "Other",
+        "stars": 12370,
+        "forks": 1525,
+        "topics": [
+          "aiops",
+          "alarm",
+          "alarms",
+          "alerting",
+          "alerts",
+          "monitoring",
+          "monitoring-tool",
+          "python",
+          "python3",
+          "workflow-automation"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-02-04T18:43:27Z",
+        "pushedAt": "2026-09-28T07:11:17Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [12370]
+      },
+      "release": {
+        "tag": "v0.54.3",
+        "publishedAt": "2026-09-09T07:44:58Z",
+        "url": "https://github.com/keephq/keep/releases/tag/v0.54.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.54.3",
+          "name": "Release v0.54.3",
+          "publishedAt": "2026-09-09T07:44:58Z",
+          "url": "https://github.com/keephq/keep/releases/tag/v0.54.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.54.2",
+          "name": "Release v0.54.2",
+          "publishedAt": "2026-07-13T15:12:41Z",
+          "url": "https://github.com/keephq/keep/releases/tag/v0.54.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.54.1",
+          "name": "Release v0.54.1",
+          "publishedAt": "2026-06-24T08:11:57Z",
+          "url": "https://github.com/keephq/keep/releases/tag/v0.54.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.54.0",
+          "name": "Release v0.54.0",
+          "publishedAt": "2026-06-21T14:45:03Z",
+          "url": "https://github.com/keephq/keep/releases/tag/v0.54.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.53.0",
+          "name": "Release v0.53.0",
+          "publishedAt": "2026-06-05T04:56:39Z",
+          "url": "https://github.com/keephq/keep/releases/tag/v0.53.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 18,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open-core",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
+    },
+    {
       "slug": "kener",
       "name": "Kener",
       "repository": "https://github.com/rajnandan1/kener",
@@ -48672,6 +49547,123 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "kimai",
+      "name": "Kimai",
+      "repository": "https://github.com/kimai/kimai",
+      "category": "time-tracking",
+      "replaces": [
+        {
+          "tool": "toggl-track",
+          "fit": "full",
+          "note": "Timers and timesheets per customer, project and activity, with rates, reports, exports and a JSON API."
+        },
+        {
+          "tool": "harvest",
+          "fit": "partial",
+          "note": "Time tracking with rates, budgets and invoices; expense tracking is a paid plugin."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "kimai/kimai",
+        "description": "Kimai is the #1 open-source time-tracking application. From freelancers to companies and organisations - everyone can manage timesheets, generate reports, create invoices and so much more... Web-based multi-user application, available as On-Premise or SaaS version: https://www.kimai.org",
+        "homepage": "https://www.kimai.org",
+        "language": "PHP",
+        "license": "AGPL-3.0",
+        "stars": 5054,
+        "forks": 857,
+        "topics": [
+          "doctrine",
+          "invoice",
+          "invoicing",
+          "kimai",
+          "multilanguage",
+          "php",
+          "self-hosted",
+          "symfony",
+          "tabler",
+          "time-tracker",
+          "time-tracking",
+          "timetracker",
+          "timetracking",
+          "timetrackingapp",
+          "twig"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2016-10-20T17:06:34Z",
+        "pushedAt": "2026-10-01T12:09:35Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [5054]
+      },
+      "release": {
+        "tag": "2.67.0",
+        "publishedAt": "2026-09-13T20:40:29Z",
+        "url": "https://github.com/kimai/kimai/releases/tag/2.67.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "2.67.0",
+          "name": "Compatible with PHP 8.2 to 8.5",
+          "publishedAt": "2026-09-13T20:40:29Z",
+          "url": "https://github.com/kimai/kimai/releases/tag/2.67.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2.66.0",
+          "name": "Compatible with PHP 8.2 to 8.5",
+          "publishedAt": "2026-09-05T19:40:02Z",
+          "url": "https://github.com/kimai/kimai/releases/tag/2.66.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2.65.0",
+          "name": "Compatible with PHP 8.2 to 8.5",
+          "publishedAt": "2026-08-11T15:26:06Z",
+          "url": "https://github.com/kimai/kimai/releases/tag/2.65.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2.64.0",
+          "name": "Compatible with PHP 8.2 to 8.5",
+          "publishedAt": "2026-08-09T17:14:00Z",
+          "url": "https://github.com/kimai/kimai/releases/tag/2.64.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2.63.0",
+          "name": "Compatible with PHP 8.2 to 8.5",
+          "publishedAt": "2026-08-03T11:40:17Z",
+          "url": "https://github.com/kimai/kimai/releases/tag/2.63.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 12,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "kind",
@@ -61559,6 +62551,120 @@
       ]
     },
     {
+      "slug": "natron",
+      "name": "Natron",
+      "repository": "https://github.com/NatronGitHub/Natron",
+      "category": "video-editing",
+      "replaces": [
+        {
+          "tool": "after-effects",
+          "fit": "partial",
+          "note": "Node-based compositing with rotoscoping, tracking and keyframe animation, not After Effects' layer-based motion graphics workflow."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "NatronGitHub/Natron",
+        "description": "Open-source video compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.",
+        "homepage": "http://NatronGitHub.github.io",
+        "language": "C++",
+        "license": "GPL-2.0",
+        "stars": 5562,
+        "forks": 410,
+        "topics": [],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-01-10T10:15:28Z",
+        "pushedAt": "2026-07-24T09:49:49Z",
+        "defaultBranch": "RB-2.6"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [5562]
+      },
+      "release": {
+        "tag": "v2.5.0",
+        "publishedAt": "2022-11-26T00:48:14Z",
+        "url": "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.5.1-pre2",
+          "name": "Natron 2.5.1 pre2",
+          "publishedAt": "2024-09-13T07:44:08Z",
+          "url": "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.1-pre2",
+          "prerelease": true
+        },
+        {
+          "tag": "windows-mingw-package-repo",
+          "name": "Natron MINGW pacman repository",
+          "publishedAt": "2023-07-11T01:45:30Z",
+          "url": "https://github.com/NatronGitHub/Natron/releases/tag/windows-mingw-package-repo",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.5.1-pre1",
+          "name": "Natron 2.5.1 pre1",
+          "publishedAt": "2023-04-15T05:18:22Z",
+          "url": "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.1-pre1",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.6.0-alpha1",
+          "name": "Natron 2.6-pre builds (with Apple Silicon support)",
+          "publishedAt": "2022-12-08T02:12:51Z",
+          "url": "https://github.com/NatronGitHub/Natron/releases/tag/v2.6.0-alpha1",
+          "prerelease": true
+        },
+        {
+          "tag": "v2.5.0",
+          "name": "Natron 2.5.0",
+          "publishedAt": "2022-11-26T00:48:14Z",
+          "url": "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "x86",
+            "universal"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "nats-server",
       "name": "NATS",
       "repository": "https://github.com/nats-io/nats-server",
@@ -64125,6 +65231,119 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "nocodb",
+      "name": "NocoDB",
+      "repository": "https://github.com/nocodb/nocodb",
+      "category": "no-code-database",
+      "replaces": [
+        {
+          "tool": "airtable",
+          "fit": "full",
+          "note": "Grid, kanban, gallery, form and calendar views with a REST API, on top of a new or an existing SQL database.",
+          "migration": "https://nocodb.com/docs/product/bases/import-base-from-airtable"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "nocodb/nocodb",
+        "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+        "homepage": "https://nocodb.com",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 65149,
+        "forks": 5079,
+        "topics": [
+          "airtable",
+          "airtable-alternative",
+          "automatic-api",
+          "hacktoberfest",
+          "low-code",
+          "no-code",
+          "no-code-database",
+          "no-code-platform",
+          "postgresql",
+          "rest-api",
+          "restful-api",
+          "spreadsheet",
+          "sqlite",
+          "swagger"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2017-10-29T18:51:48Z",
+        "pushedAt": "2026-10-01T15:17:45Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [65149]
+      },
+      "release": {
+        "tag": "2026.09.1",
+        "publishedAt": "2026-09-29T14:39:07Z",
+        "url": "https://github.com/nocodb/nocodb/releases/tag/2026.09.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "2026.09.1",
+          "name": "2026.09.1 : MCP for Your Whole Account",
+          "publishedAt": "2026-09-29T14:39:07Z",
+          "url": "https://github.com/nocodb/nocodb/releases/tag/2026.09.1",
+          "prerelease": false
+        },
+        {
+          "tag": "2026.09.0",
+          "name": "2026.09.0 : NocoDB in the Claude Connector Marketplace",
+          "publishedAt": "2026-09-10T12:06:46Z",
+          "url": "https://github.com/nocodb/nocodb/releases/tag/2026.09.0",
+          "prerelease": false
+        },
+        {
+          "tag": "2026.08.2",
+          "name": "2026.08.2 : Introducing Dual-Axis Charts, Embedded Linked Records and Workflow Folders",
+          "publishedAt": "2026-09-03T12:36:17Z",
+          "url": "https://github.com/nocodb/nocodb/releases/tag/2026.08.2",
+          "prerelease": false
+        },
+        {
+          "tag": "2026.08.1",
+          "name": "2026.08.1 : Introducing Realtime Presence and Folders",
+          "publishedAt": "2026-08-19T13:21:39Z",
+          "url": "https://github.com/nocodb/nocodb/releases/tag/2026.08.1",
+          "prerelease": false
+        },
+        {
+          "tag": "2026.08.0",
+          "name": "2026.08.0 : Introducing Interfaces",
+          "publishedAt": "2026-08-05T11:26:21Z",
+          "url": "https://github.com/nocodb/nocodb/releases/tag/2026.08.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 11,
+        "capped": true
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "source-available",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose",
+        "helm"
+      ]
     },
     {
       "slug": "node-red",
@@ -68834,6 +70053,123 @@
       ]
     },
     {
+      "slug": "opensign",
+      "name": "OpenSign",
+      "repository": "https://github.com/OpenSignLabs/OpenSign",
+      "category": "e-signature",
+      "replaces": [
+        {
+          "tool": "docusign",
+          "fit": "full",
+          "note": "Multiple signers in a set order, templates, OTP checks for guest signers, audit trails with completion certificates and an API."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "OpenSignLabs/OpenSign",
+        "description": "🔥 The free & Open Source DocuSign alternative",
+        "homepage": "https://www.opensignlabs.com",
+        "language": "JavaScript",
+        "license": "Other",
+        "stars": 7048,
+        "forks": 834,
+        "topics": [
+          "digital-signature",
+          "document-signing",
+          "docusign-alternative",
+          "docusign-free",
+          "e-signature",
+          "electronic-signature",
+          "electronic-signatures",
+          "esign",
+          "esignature",
+          "hacktoberfest",
+          "javascript",
+          "legaltech",
+          "mongodb",
+          "nodejs",
+          "open-source",
+          "pdf-sign",
+          "pdf-signature",
+          "reactjs",
+          "self-hosted",
+          "sign-pdf-files"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-10-02T15:53:30Z",
+        "pushedAt": "2026-08-21T12:29:09Z",
+        "defaultBranch": "staging"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [7048]
+      },
+      "release": {
+        "tag": "v2.41.3",
+        "publishedAt": "2026-08-21T12:29:09Z",
+        "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.3",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v2.41.3",
+          "name": "OpenSign 2.41.3 Release Notes",
+          "publishedAt": "2026-08-21T12:29:09Z",
+          "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.41.2",
+          "name": "OpenSign 2.41.2 Release Notes",
+          "publishedAt": "2026-08-14T17:52:44Z",
+          "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.41.1",
+          "name": "OpenSign 2.41.1 Release Notes",
+          "publishedAt": "2026-08-11T11:49:14Z",
+          "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.41.0",
+          "name": "This release of OpenSign focuses on enhancing conditional logic capabilities, introducing per-recipient access code fun…",
+          "publishedAt": "2026-06-30T08:29:25Z",
+          "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.40.1",
+          "name": "Bug Fixes:",
+          "publishedAt": "2026-06-17T09:26:47Z",
+          "url": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.40.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 3,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "unknown",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
+    },
+    {
       "slug": "opentelemetry-collector",
       "name": "OpenTelemetry Collector",
       "repository": "https://github.com/open-telemetry/opentelemetry-collector",
@@ -72785,6 +74121,124 @@
         "capped": false
       },
       "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "pinta",
+      "name": "Pinta",
+      "repository": "https://github.com/PintaProject/Pinta",
+      "category": "image-editing",
+      "replaces": [
+        {
+          "tool": "photoshop",
+          "fit": "partial",
+          "note": "Basic painting, editing, layers and effects modelled on Paint.NET, not Photoshop's full feature set."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "PintaProject/Pinta",
+        "description": "Simple GTK Paint Program",
+        "homepage": "http://www.pinta-project.com/",
+        "language": "C#",
+        "license": "MIT",
+        "stars": 4064,
+        "forks": 397,
+        "topics": [
+          "csharp",
+          "dotnet",
+          "drawing",
+          "gtk",
+          "gtk4",
+          "image-editor",
+          "painting",
+          "pinta"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2011-09-09T23:24:17Z",
+        "pushedAt": "2026-10-01T00:37:19Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [4064]
+      },
+      "release": {
+        "tag": "3.1.2",
+        "publishedAt": "2026-04-02T17:27:39Z",
+        "url": "https://github.com/PintaProject/Pinta/releases/tag/3.1.2",
+        "source": "release",
+        "signed": true,
+        "tagOid": "39a3662691289bd89c2017ba3f11ae3ff5564679"
+      },
+      "releases": [
+        {
+          "tag": "3.1.2",
+          "name": "Pinta 3.1.2",
+          "publishedAt": "2026-04-02T17:27:39Z",
+          "url": "https://github.com/PintaProject/Pinta/releases/tag/3.1.2",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1.1",
+          "name": "Pinta 3.1.1",
+          "publishedAt": "2026-01-10T05:33:14Z",
+          "url": "https://github.com/PintaProject/Pinta/releases/tag/3.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "3.1",
+          "name": "Pinta 3.1",
+          "publishedAt": "2025-12-24T04:46:26Z",
+          "url": "https://github.com/PintaProject/Pinta/releases/tag/3.1",
+          "prerelease": false
+        },
+        {
+          "tag": "3.0.5",
+          "name": "Pinta 3.0.5",
+          "publishedAt": "2025-11-25T02:02:36Z",
+          "url": "https://github.com/PintaProject/Pinta/releases/tag/3.0.5",
+          "prerelease": false
+        },
+        {
+          "tag": "3.0.4",
+          "name": "Pinta 3.0.4",
+          "publishedAt": "2025-10-07T03:29:57Z",
+          "url": "https://github.com/PintaProject/Pinta/releases/tag/3.0.4",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 28,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
       "maintainerVerified": false,
       "flags": [],
       "terms": "open",
@@ -79531,6 +80985,125 @@
       "deploy": []
     },
     {
+      "slug": "rawtherapee",
+      "name": "RawTherapee",
+      "repository": "https://github.com/RawTherapee/RawTherapee",
+      "category": "raw-photo-editing",
+      "replaces": [
+        {
+          "tool": "lightroom",
+          "fit": "partial",
+          "note": "Raw development with detailed demosaicing control, without digital asset management, printing or uploading."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "RawTherapee/RawTherapee",
+        "description": "A powerful cross-platform raw photo processing program",
+        "homepage": "https://rawtherapee.com",
+        "language": "C++",
+        "license": "GPL-3.0",
+        "stars": 4189,
+        "forks": 419,
+        "topics": [
+          "photography",
+          "raw",
+          "rawtherapee"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-08-11T11:54:01Z",
+        "pushedAt": "2026-09-28T08:10:23Z",
+        "defaultBranch": "dev"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [4189]
+      },
+      "release": {
+        "tag": "5.13",
+        "publishedAt": "2026-07-26T18:07:26Z",
+        "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.13",
+        "source": "release",
+        "signed": false,
+        "tagOid": "bc7a3e927eea8b0a4c54f40e5c64a81d1ec03883"
+      },
+      "releases": [
+        {
+          "tag": "5.13",
+          "name": "To get the source code, either clone from git and git checkout 5.13, or use the rawtherapee-5.13.tar.xz tarball below.…",
+          "publishedAt": "2026-07-26T18:07:26Z",
+          "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.13",
+          "prerelease": false
+        },
+        {
+          "tag": "5.13-rc1",
+          "name": "To get the source code, either clone from git and git checkout 5.13-rc1, or use the rawtherapee-5.13-rc1.tar.xz tarball…",
+          "publishedAt": "2026-06-21T18:27:20Z",
+          "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.13-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "5.12",
+          "name": "To get the source code, either clone from git and git checkout 5.12, or use the rawtherapee-5.12.tar.xz tarball below.…",
+          "publishedAt": "2025-05-28T06:47:16Z",
+          "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.12",
+          "prerelease": false
+        },
+        {
+          "tag": "5.12-rc2",
+          "name": "To get the source code, either clone from git and git checkout 5.12-rc2, or use the rawtherapee-5.12-rc2.tar.xz tarball…",
+          "publishedAt": "2025-05-04T20:43:43Z",
+          "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.12-rc2",
+          "prerelease": true
+        },
+        {
+          "tag": "5.12-rc1",
+          "name": "To get the source code, either clone from git and git checkout 5.12-rc1, or use the rawtherapee-5.12-rc1.tar.xz tarball…",
+          "publishedAt": "2025-04-23T06:31:40Z",
+          "url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.12-rc1",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 5,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "universal"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "redash",
       "name": "Redash",
       "repository": "https://github.com/getredash/redash",
@@ -85295,6 +86868,123 @@
       ]
     },
     {
+      "slug": "shotcut",
+      "name": "Shotcut",
+      "repository": "https://github.com/mltframework/shotcut",
+      "category": "video-editing",
+      "replaces": [
+        {
+          "tool": "premiere-pro",
+          "fit": "full",
+          "note": "Timeline-based non-linear video editing with filters and FFmpeg format support, in its own interface."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "mltframework/shotcut",
+        "description": "cross-platform (Qt), open-source (GPLv3) video editor",
+        "homepage": "https://www.shotcut.org",
+        "language": "C++",
+        "license": "GPL-3.0",
+        "stars": 15325,
+        "forks": 1524,
+        "topics": [
+          "cross-platform",
+          "gplv3",
+          "mlt",
+          "shotcut",
+          "video-editor"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2012-04-23T22:37:04Z",
+        "pushedAt": "2026-09-30T17:34:26Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [15325]
+      },
+      "release": {
+        "tag": "v26.9.27",
+        "publishedAt": "2026-09-28T00:29:29Z",
+        "url": "https://github.com/mltframework/shotcut/releases/tag/v26.9.27",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v26.9.27",
+          "name": "See a  nicely formatted page on the web site.",
+          "publishedAt": "2026-09-28T00:29:29Z",
+          "url": "https://github.com/mltframework/shotcut/releases/tag/v26.9.27",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.9.6",
+          "name": "v26.9 BETA",
+          "publishedAt": "2026-09-06T19:46:56Z",
+          "url": "https://github.com/mltframework/shotcut/releases/tag/v26.9.6",
+          "prerelease": true
+        },
+        {
+          "tag": "v26.8.1",
+          "name": "Added Elements panel to the File > New and View menus and the Generate buttons.",
+          "publishedAt": "2026-08-01T17:31:16Z",
+          "url": "https://github.com/mltframework/shotcut/releases/tag/v26.8.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v26.7.16",
+          "name": "Fixed corrupt color in dissolve transitions with Settings > Processing Mode > Linear 10-bit CPU.",
+          "publishedAt": "2026-07-16T20:17:45Z",
+          "url": "https://github.com/mltframework/shotcut/releases/tag/v26.7.16",
+          "prerelease": true
+        },
+        {
+          "tag": "v26.6.25",
+          "name": "Three years ago, when we upgraded our UI library to a major new version, we lost support for using an additional system…",
+          "publishedAt": "2026-06-26T23:27:55Z",
+          "url": "https://github.com/mltframework/shotcut/releases/tag/v26.6.25",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 6,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": []
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
       "slug": "signoz",
       "name": "SigNoz",
       "repository": "https://github.com/SigNoz/signoz",
@@ -86271,6 +87961,118 @@
         "container",
         "binary",
         "package"
+      ]
+    },
+    {
+      "slug": "solidtime",
+      "name": "solidtime",
+      "repository": "https://github.com/solidtime-io/solidtime",
+      "category": "time-tracking",
+      "replaces": [
+        {
+          "tool": "toggl-track",
+          "fit": "full",
+          "note": "Timers, projects, tasks, clients and billable rates across several organisations.",
+          "migration": "https://docs.solidtime.io/user-guide/import"
+        },
+        {
+          "tool": "harvest",
+          "fit": "partial",
+          "note": "Time tracking with clients, projects and billable rates, without Harvest's expenses and invoicing.",
+          "migration": "https://docs.solidtime.io/user-guide/import"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "solidtime-io/solidtime",
+        "description": "Modern open-source time-tracking app",
+        "homepage": "https://www.solidtime.io",
+        "language": "PHP",
+        "license": "AGPL-3.0",
+        "stars": 8953,
+        "forks": 513,
+        "topics": [
+          "laravel",
+          "self-hosted",
+          "time-tracker",
+          "time-tracking",
+          "timetracker",
+          "timetracking",
+          "timetrackingapp",
+          "vue"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2024-01-16T15:30:47Z",
+        "pushedAt": "2026-09-28T15:21:29Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [8953]
+      },
+      "release": {
+        "tag": "v0.21.0",
+        "publishedAt": "2026-09-22T16:30:27Z",
+        "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.21.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.21.0",
+          "name": "Update docker image",
+          "publishedAt": "2026-09-22T16:30:27Z",
+          "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.21.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.20.1",
+          "name": "> [!NOTE]",
+          "publishedAt": "2026-09-16T14:40:38Z",
+          "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.20.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.20.0",
+          "name": "solidtime v0.20.0 adds various quality-of-life/performance improvements as well as a new invoicing recipient system for…",
+          "publishedAt": "2026-08-31T15:14:27Z",
+          "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.20.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.19.1",
+          "name": "> [!CAUTION]",
+          "publishedAt": "2026-08-07T09:56:04Z",
+          "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.19.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.19.0",
+          "name": "0.19.0",
+          "publishedAt": "2026-08-06T15:40:25Z",
+          "url": "https://github.com/solidtime-io/solidtime/releases/tag/v0.19.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 7,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
       ]
     },
     {
@@ -91230,6 +93032,116 @@
       "capabilities": {},
       "deploy": [
         "container"
+      ]
+    },
+    {
+      "slug": "teable",
+      "name": "Teable",
+      "repository": "https://github.com/teableio/teable",
+      "category": "no-code-database",
+      "replaces": [
+        {
+          "tool": "airtable",
+          "fit": "full",
+          "note": "A spreadsheet interface with views, forms and an API, storing its data in PostgreSQL.",
+          "migration": "https://help.teable.ai/en/basic/ai/connect-everything/migrate-airtable"
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-01T20:11:46.000Z",
+      "editedAt": "2026-10-01T20:11:46.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "teableio/teable",
+        "description": "✨ AI Spreadsheet for Business",
+        "homepage": "https://teable.ai",
+        "language": "TypeScript",
+        "license": "Other",
+        "stars": 21852,
+        "forks": 1354,
+        "topics": [
+          "ai-agent",
+          "airtable",
+          "airtable-alternative",
+          "app-builder",
+          "database",
+          "internal-tool",
+          "low-code",
+          "no-code",
+          "postgres",
+          "postgresql",
+          "sandbox",
+          "spreadsheet"
+        ],
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2022-11-01T07:02:49Z",
+        "pushedAt": "2026-09-30T13:12:40Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-01",
+        "stars": [21852]
+      },
+      "release": {
+        "tag": "release.2026-09-30T04-47-05Z.3276",
+        "publishedAt": "2026-09-30T13:12:41Z",
+        "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-30T04-47-05Z.3276",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "release.2026-09-30T04-47-05Z.3276",
+          "name": "Fixed a failure when duplicating Bases with link fields containing previously tolerated references.",
+          "publishedAt": "2026-09-30T13:12:41Z",
+          "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-30T04-47-05Z.3276",
+          "prerelease": false
+        },
+        {
+          "tag": "release.2026-09-27T02-14-26Z.3273",
+          "name": "“Contact Support” in the web user menu and mobile settings now opens a Teable Community feedback form instead of the pr…",
+          "publishedAt": "2026-09-27T06:10:00Z",
+          "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-27T02-14-26Z.3273",
+          "prerelease": false
+        },
+        {
+          "tag": "release.2026-09-25T09-38-50Z.3268",
+          "name": "OAuth apps can send in-app notifications with user consent. Users can mute individual apps, and revoking authorization…",
+          "publishedAt": "2026-09-25T11:58:02Z",
+          "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-25T09-38-50Z.3268",
+          "prerelease": false
+        },
+        {
+          "tag": "release.2026-09-25T04-01-19Z.3254",
+          "name": "Administrators can pause new AI sandbox sessions during maintenance, with an optional notification, while allowing exis…",
+          "publishedAt": "2026-09-25T05:57:23Z",
+          "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-25T04-01-19Z.3254",
+          "prerelease": false
+        },
+        {
+          "tag": "release.2026-09-22T03-34-15Z.3202",
+          "name": "After a Business plan expires, custom domains now remain available for a one-week grace period. The owner will be notif…",
+          "publishedAt": "2026-09-22T04:26:33Z",
+          "url": "https://github.com/teableio/teable/releases/tag/release.2026-09-22T03-34-15Z.3202",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
       ]
     },
     {
@@ -105052,12 +106964,28 @@
       "slug": "1password"
     },
     {
+      "name": "After Effects",
+      "homepage": "https://www.adobe.com/products/aftereffects.html",
+      "vendor": "Adobe",
+      "category": "video-editing",
+      "description": "Adobe's layer-based application for motion graphics, visual effects and compositing.",
+      "slug": "after-effects"
+    },
+    {
       "name": "Airbrake",
       "homepage": "https://airbrake.io",
       "vendor": "LogicMonitor",
       "category": "error-tracking",
       "description": "Hosted error and performance monitoring that collects exceptions from notifier libraries.",
       "slug": "airbrake"
+    },
+    {
+      "name": "Airtable",
+      "homepage": "https://www.airtable.com",
+      "vendor": "Airtable",
+      "category": "no-code-database",
+      "description": "Hosted database with a spreadsheet interface, linked records, views, forms, automations and an API.",
+      "slug": "airtable"
     },
     {
       "name": "Algolia",
@@ -105122,6 +107050,14 @@
       "category": "message-streaming",
       "description": "Hosted message queue service from AWS.",
       "slug": "amazon-sqs"
+    },
+    {
+      "name": "Amplitude",
+      "homepage": "https://amplitude.com",
+      "vendor": "Amplitude",
+      "category": "web-analytics",
+      "description": "Hosted event-based product analytics with experiments and session replay.",
+      "slug": "amplitude"
     },
     {
       "name": "AnyDesk",
@@ -105220,12 +107156,28 @@
       "slug": "bitly"
     },
     {
+      "name": "Box",
+      "homepage": "https://www.box.com",
+      "vendor": "Box",
+      "category": "file-sync",
+      "description": "Hosted file storage, sharing and collaboration for businesses.",
+      "slug": "box"
+    },
+    {
       "name": "Calendly",
       "homepage": "https://calendly.com",
       "vendor": "Calendly",
       "category": "scheduling",
       "description": "Hosted scheduling service where people book meetings from a page that shows the owner's calendar availability.",
       "slug": "calendly"
+    },
+    {
+      "name": "Canva",
+      "homepage": "https://www.canva.com",
+      "vendor": "Canva",
+      "category": "design-tool",
+      "description": "Browser-based graphic design tool with templates for social posts, presentations, print and video.",
+      "slug": "canva"
     },
     {
       "name": "ChatGPT",
@@ -105260,6 +107212,14 @@
       "slug": "claude-code"
     },
     {
+      "name": "ClickUp",
+      "homepage": "https://clickup.com",
+      "vendor": "ClickUp",
+      "category": "project-management",
+      "description": "Hosted work management for tasks, docs, goals and time tracking, with list, board and Gantt views.",
+      "slug": "clickup"
+    },
+    {
       "name": "Confluence",
       "homepage": "https://www.atlassian.com/software/confluence",
       "vendor": "Atlassian",
@@ -105290,6 +107250,14 @@
       "category": "code-assistant",
       "description": "An AI code editor built on VS Code, with an agent, chat and completions.",
       "slug": "cursor"
+    },
+    {
+      "name": "Dashlane",
+      "homepage": "https://www.dashlane.com",
+      "vendor": "Dashlane",
+      "category": "password-manager-server",
+      "description": "Hosted password manager for individuals and businesses.",
+      "slug": "dashlane"
     },
     {
       "name": "Datadog",
@@ -105330,6 +107298,14 @@
       "category": "container-registry",
       "description": "Docker's hosted container image registry.",
       "slug": "docker-hub"
+    },
+    {
+      "name": "DocuSign",
+      "homepage": "https://www.docusign.com",
+      "vendor": "Docusign",
+      "category": "e-signature",
+      "description": "Hosted service for sending documents for electronic signature and tracking who has signed them.",
+      "slug": "docusign"
     },
     {
       "name": "DocuWare",
@@ -105564,6 +107540,14 @@
       "slug": "hackmd"
     },
     {
+      "name": "Harvest",
+      "homepage": "https://www.getharvest.com",
+      "vendor": "Harvest",
+      "category": "time-tracking",
+      "description": "Hosted time tracking service that also records expenses, tracks project budgets and turns billable hours into invoices.",
+      "slug": "harvest"
+    },
+    {
       "name": "Heroku",
       "homepage": "https://www.heroku.com",
       "vendor": "Salesforce",
@@ -105572,12 +107556,36 @@
       "slug": "heroku"
     },
     {
+      "name": "Hotjar",
+      "homepage": "https://www.hotjar.com",
+      "vendor": "Contentsquare",
+      "category": "web-analytics",
+      "description": "Hosted heatmaps, session recordings and on-site feedback surveys for websites.",
+      "slug": "hotjar"
+    },
+    {
       "name": "HubSpot",
       "homepage": "https://www.hubspot.com",
       "vendor": "HubSpot",
       "category": "crm",
       "description": "Hosted CRM with marketing, sales and service hubs.",
       "slug": "hubspot"
+    },
+    {
+      "name": "iCloud Drive",
+      "homepage": "https://www.icloud.com/iclouddrive/",
+      "vendor": "Apple",
+      "category": "file-sync",
+      "description": "Apple's hosted file storage and sync, built into its devices.",
+      "slug": "icloud-drive"
+    },
+    {
+      "name": "IFTTT",
+      "homepage": "https://ifttt.com",
+      "vendor": "IFTTT",
+      "category": "workflow-automation",
+      "description": "Hosted service that connects web apps and smart home devices with trigger-and-action applets.",
+      "slug": "ifttt"
     },
     {
       "name": "Intercom",
@@ -105594,6 +107602,14 @@
       "category": "project-management",
       "description": "Atlassian's issue and project tracker, sold as a cloud service.",
       "slug": "jira"
+    },
+    {
+      "name": "Jotform",
+      "homepage": "https://www.jotform.com",
+      "vendor": "Jotform",
+      "category": "forms-surveys",
+      "description": "Hosted form builder for surveys, registrations, payments and approvals.",
+      "slug": "jotform"
     },
     {
       "name": "LastPass",
@@ -105618,6 +107634,14 @@
       "category": "kubernetes-ui",
       "description": "Desktop app for managing Kubernetes clusters, closed source since 2023.",
       "slug": "lens"
+    },
+    {
+      "name": "Lightroom",
+      "homepage": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "vendor": "Adobe",
+      "category": "raw-photo-editing",
+      "description": "Adobe's photo catalog and non-destructive raw developer for organizing, editing and exporting photographs.",
+      "slug": "lightroom"
     },
     {
       "name": "Linear",
@@ -105676,6 +107700,22 @@
       "slug": "microsoft-teams"
     },
     {
+      "name": "Midjourney",
+      "homepage": "https://www.midjourney.com",
+      "vendor": "Midjourney",
+      "category": "image-generation",
+      "description": "Hosted service that generates images from text prompts with its own models, through a web app and Discord.",
+      "slug": "midjourney"
+    },
+    {
+      "name": "Mint",
+      "homepage": "https://mint.intuit.com",
+      "vendor": "Intuit",
+      "category": "personal-finance",
+      "description": "Intuit's budgeting and expense tracking app, discontinued in 2024 with its users moved to Credit Karma.",
+      "slug": "mint"
+    },
+    {
       "name": "Miro",
       "homepage": "https://miro.com",
       "vendor": "Miro",
@@ -105698,6 +107738,22 @@
       "category": "personal-finance",
       "description": "Hosted personal finance app that links bank and investment accounts to track spending, budgets and net worth.",
       "slug": "monarch-money"
+    },
+    {
+      "name": "monday.com",
+      "homepage": "https://monday.com",
+      "vendor": "monday.com",
+      "category": "project-management",
+      "description": "Hosted work management built on boards, with timeline, Gantt and dashboard views and automations.",
+      "slug": "monday-com"
+    },
+    {
+      "name": "Netflix",
+      "homepage": "https://www.netflix.com",
+      "vendor": "Netflix",
+      "category": "media-server",
+      "description": "Video streaming service with a licensed catalog of films and series.",
+      "slug": "netflix"
     },
     {
       "name": "Netlify",
@@ -105764,6 +107820,22 @@
       "slug": "okta"
     },
     {
+      "name": "OneDrive",
+      "homepage": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+      "vendor": "Microsoft",
+      "category": "file-sync",
+      "description": "Microsoft's hosted file storage and sync, built into Windows and Microsoft 365.",
+      "slug": "onedrive"
+    },
+    {
+      "name": "OneNote",
+      "homepage": "https://www.onenote.com",
+      "vendor": "Microsoft",
+      "category": "note-taking",
+      "description": "Microsoft's note-taking app with notebooks of free-form pages, synced through OneDrive.",
+      "slug": "onenote"
+    },
+    {
       "name": "Oracle Database",
       "homepage": "https://www.oracle.com/database/",
       "vendor": "Oracle",
@@ -105778,6 +107850,14 @@
       "category": "container-desktop",
       "description": "macOS app for running Docker containers, Kubernetes and Linux machines.",
       "slug": "orbstack"
+    },
+    {
+      "name": "PagerDuty",
+      "homepage": "https://www.pagerduty.com",
+      "vendor": "PagerDuty",
+      "category": "incident-management",
+      "description": "Hosted incident response service that collects alerts from monitoring tools, pages on-call responders through escalation policies and tracks incidents.",
+      "slug": "pagerduty"
     },
     {
       "name": "Paprika Recipe Manager",
@@ -105796,6 +107876,14 @@
       "slug": "parsec"
     },
     {
+      "name": "Photoshop",
+      "homepage": "https://www.adobe.com/products/photoshop.html",
+      "vendor": "Adobe",
+      "category": "image-editing",
+      "description": "Adobe's raster image editor for photo retouching, compositing and digital painting, with layers, masks and adjustment layers.",
+      "slug": "photoshop"
+    },
+    {
       "name": "Pinecone",
       "homepage": "https://www.pinecone.io",
       "vendor": "Pinecone Systems",
@@ -105810,6 +107898,14 @@
       "category": "uptime-monitoring",
       "description": "Hosted uptime and page speed monitoring.",
       "slug": "pingdom"
+    },
+    {
+      "name": "Pipedrive",
+      "homepage": "https://www.pipedrive.com",
+      "vendor": "Pipedrive",
+      "category": "crm",
+      "description": "Hosted sales CRM organised around a visual pipeline of deals.",
+      "slug": "pipedrive"
     },
     {
       "name": "Plan to Eat",
@@ -105850,6 +107946,14 @@
       "category": "business-intelligence",
       "description": "Microsoft's business intelligence service for reports and dashboards.",
       "slug": "power-bi"
+    },
+    {
+      "name": "Premiere Pro",
+      "homepage": "https://www.adobe.com/products/premiere.html",
+      "vendor": "Adobe",
+      "category": "video-editing",
+      "description": "Adobe's timeline-based non-linear video editor.",
+      "slug": "premiere-pro"
     },
     {
       "name": "QuickBooks",
@@ -105972,6 +108076,22 @@
       "slug": "splunk"
     },
     {
+      "name": "Spotify",
+      "homepage": "https://www.spotify.com",
+      "vendor": "Spotify",
+      "category": "media-server",
+      "description": "Music and podcast streaming service with a licensed catalog.",
+      "slug": "spotify"
+    },
+    {
+      "name": "Squarespace",
+      "homepage": "https://www.squarespace.com",
+      "vendor": "Squarespace",
+      "category": "design-tool",
+      "description": "Hosted website builder with templates, a blog, an online store and hosting.",
+      "slug": "squarespace"
+    },
+    {
       "name": "Statuspage",
       "homepage": "https://www.atlassian.com/software/statuspage",
       "vendor": "Atlassian",
@@ -105994,6 +108114,14 @@
       "category": "newsletter",
       "description": "Hosted publishing platform for newsletters with free and paid subscriptions.",
       "slug": "substack"
+    },
+    {
+      "name": "SurveyMonkey",
+      "homepage": "https://www.surveymonkey.com",
+      "vendor": "SurveyMonkey",
+      "category": "forms-surveys",
+      "description": "Hosted online surveys with question logic and response analysis.",
+      "slug": "surveymonkey"
     },
     {
       "name": "Tableau",
@@ -106026,6 +108154,22 @@
       "category": "graph-database",
       "description": "Closed-source distributed graph database queried in GSQL, offered as a managed cloud service and as licensed software.",
       "slug": "tigergraph"
+    },
+    {
+      "name": "Todoist",
+      "homepage": "https://www.todoist.com",
+      "vendor": "Doist",
+      "category": "project-management",
+      "description": "Hosted to-do list and task manager with projects, labels, filters and recurring due dates.",
+      "slug": "todoist"
+    },
+    {
+      "name": "Toggl Track",
+      "homepage": "https://toggl.com/track/",
+      "vendor": "Toggl",
+      "category": "time-tracking",
+      "description": "Hosted time tracker with timers, projects, clients and reports, available on the web, desktop and mobile.",
+      "slug": "toggl-track"
     },
     {
       "name": "Trello",
@@ -106090,6 +108234,22 @@
       "category": "design-tool",
       "description": "Visual website builder with a design canvas, a CMS and hosting.",
       "slug": "webflow"
+    },
+    {
+      "name": "Wix",
+      "homepage": "https://www.wix.com",
+      "vendor": "Wix.com",
+      "category": "design-tool",
+      "description": "Hosted website builder with a drag-and-drop editor, templates and hosting.",
+      "slug": "wix"
+    },
+    {
+      "name": "Xero",
+      "homepage": "https://www.xero.com",
+      "vendor": "Xero",
+      "category": "erp",
+      "description": "Hosted accounting software for small businesses, for invoicing, bank reconciliation and bookkeeping.",
+      "slug": "xero"
     },
     {
       "name": "YNAB",
@@ -106936,6 +109096,42 @@
       "name": "Scheduling",
       "description": "Share availability and let people book a meeting or vote on a date.",
       "selfHost": true
+    },
+    "image-editing": {
+      "name": "Image editors",
+      "description": "Edit raster and vector images, from retouching photos to drawing graphics."
+    },
+    "raw-photo-editing": {
+      "name": "Raw photo editors",
+      "description": "Develop camera raw files and manage a photo catalog non-destructively."
+    },
+    "video-editing": {
+      "name": "Video editors",
+      "description": "Cut, compose and render video on a timeline or a node graph."
+    },
+    "no-code-database": {
+      "name": "No-code databases",
+      "description": "Spreadsheet-like databases with views, forms and an API, built without code.",
+      "selfHost": true
+    },
+    "e-signature": {
+      "name": "E-signature",
+      "description": "Send documents for signature and collect legally binding signatures online.",
+      "selfHost": true
+    },
+    "incident-management": {
+      "name": "Incident management",
+      "description": "Route alerts, page whoever is on call and track incidents to resolution.",
+      "selfHost": true
+    },
+    "time-tracking": {
+      "name": "Time tracking",
+      "description": "Log time against projects and clients, and turn it into reports or invoices.",
+      "selfHost": true
+    },
+    "image-generation": {
+      "name": "Image generation",
+      "description": "Generate images from text prompts with diffusion models running on your own hardware."
     }
   }
 }

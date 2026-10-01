@@ -2364,6 +2364,102 @@ Share availability and let people book a meeting or vote on a date.
 
 </details>
 
+<details>
+<summary><b>Image editors</b>, 2 tools</summary>
+
+Edit raster and vector images, from retouching photos to drawing graphics.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | Rust | Apache-2.0 | [pre-4435](https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435) signed | 27412 | Photoshop (partial) |
+| [Pinta](https://github.com/PintaProject/Pinta) | C# | MIT | [3.1.2](https://github.com/PintaProject/Pinta/releases/tag/3.1.2) signed | 4064 | Photoshop (partial) |
+
+</details>
+
+<details>
+<summary><b>Raw photo editors</b>, 2 tools</summary>
+
+Develop camera raw files and manage a photo catalog non-destructively.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [darktable](https://github.com/darktable-org/darktable) | C | GPL-3.0 | [release-5.6.1](https://github.com/darktable-org/darktable/releases/tag/release-5.6.1) | 13172 | Lightroom (partial) |
+| [RawTherapee](https://github.com/RawTherapee/RawTherapee) | C++ | GPL-3.0 | [5.13](https://github.com/RawTherapee/RawTherapee/releases/tag/5.13) | 4189 | Lightroom (partial) |
+
+</details>
+
+<details>
+<summary><b>Video editors</b>, 2 tools</summary>
+
+Cut, compose and render video on a timeline or a node graph.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Shotcut](https://github.com/mltframework/shotcut) | C++ | GPL-3.0 | [v26.9.27](https://github.com/mltframework/shotcut/releases/tag/v26.9.27) | 15325 | Premiere Pro (full) |
+| [Natron](https://github.com/NatronGitHub/Natron) | C++ | GPL-2.0 | [v2.5.0](https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0) signed | 5562 | After Effects (partial) |
+
+</details>
+
+<details>
+<summary><b>No-code databases</b>, 2 tools</summary>
+
+Spreadsheet-like databases with views, forms and an API, built without code.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [NocoDB](https://github.com/nocodb/nocodb) | TypeScript | Other | [2026.09.1](https://github.com/nocodb/nocodb/releases/tag/2026.09.1) signed | 65149 | Airtable (full) |
+| [Teable](https://github.com/teableio/teable) | TypeScript | Other | [release.2026-09-30T04-47-05Z.3276](https://github.com/teableio/teable/releases/tag/release.2026-09-30T04-47-05Z.3276) signed | 21852 | Airtable (full) |
+
+</details>
+
+<details>
+<summary><b>E-signature</b>, 3 tools</summary>
+
+Send documents for signature and collect legally binding signatures online.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [DocuSeal](https://github.com/docusealco/docuseal) | Ruby | AGPL-3.0 | [3.3.0](https://github.com/docusealco/docuseal/releases/tag/3.3.0) signed | 18639 | DocuSign (partial) |
+| [Documenso](https://github.com/documenso/documenso) | TypeScript | AGPL-3.0 | [v2.19.0](https://github.com/documenso/documenso/releases/tag/v2.19.0) | 15284 | DocuSign (full) |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | JavaScript | Other | [v2.41.3](https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.3) signed | 7048 | DocuSign (full) |
+
+</details>
+
+<details>
+<summary><b>Incident management</b>, 1 tool</summary>
+
+Route alerts, page whoever is on call and track incidents to resolution.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Keep](https://github.com/keephq/keep) | Python | Other | [v0.54.3](https://github.com/keephq/keep/releases/tag/v0.54.3) signed | 12370 | PagerDuty (partial) |
+
+</details>
+
+<details>
+<summary><b>Time tracking</b>, 2 tools</summary>
+
+Log time against projects and clients, and turn it into reports or invoices.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [solidtime](https://github.com/solidtime-io/solidtime) | PHP | AGPL-3.0 | [v0.21.0](https://github.com/solidtime-io/solidtime/releases/tag/v0.21.0) | 8953 | Toggl Track (full), Harvest (partial) |
+| [Kimai](https://github.com/kimai/kimai) | PHP | AGPL-3.0 | [2.67.0](https://github.com/kimai/kimai/releases/tag/2.67.0) | 5054 | Toggl Track (full), Harvest (partial) |
+
+</details>
+
+<details>
+<summary><b>Image generation</b>, 2 tools</summary>
+
+Generate images from text prompts with diffusion models running on your own hardware.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Python | GPL-3.0 | [v0.38.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0) | 135771 | Midjourney (partial) |
+| [InvokeAI](https://github.com/invoke-ai/InvokeAI) | Python | Apache-2.0 | [v6.14.2](https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2) | 28323 | Midjourney (partial) |
+
+</details>
+
 <!-- catalog:end -->
 
 ## Add a tool

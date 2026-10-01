@@ -1233,5 +1233,21 @@
   {"type":"released","slug":"vite","at":"2026-10-01T16:41:50.296Z","commit":null,"from":"v8.3.1","to":"v8.3.2"},
   {"type":"released","slug":"vitess","at":"2026-10-01T16:41:50.296Z","commit":null,"from":"v24.0.3","to":"v24.0.4"},
   {"type":"released","slug":"windmill","at":"2026-10-01T16:41:50.296Z","commit":null,"from":"v1.820.0","to":"v1.821.0"},
-  {"type":"released","slug":"zitadel","at":"2026-10-01T16:41:50.296Z","commit":null,"from":"v4.19.3","to":"v4.19.4"}
+  {"type":"released","slug":"zitadel","at":"2026-10-01T16:41:50.296Z","commit":null,"from":"v4.19.3","to":"v4.19.4"},
+  {"type":"added","slug":"comfyui","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"darktable","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"documenso","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"docuseal","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"graphite","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"invokeai","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"keep","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"kimai","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"natron","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"nocodb","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"opensign","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"pinta","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"rawtherapee","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"shotcut","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"solidtime","at":"2026-10-01T20:13:27.761Z","commit":null},
+  {"type":"added","slug":"teable","at":"2026-10-01T20:13:27.761Z","commit":null}
 ]
