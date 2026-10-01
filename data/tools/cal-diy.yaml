@@ -1,0 +1,8 @@
+name: Cal.diy
+repository: https://github.com/calcom/cal.diy
+category: scheduling
+replaces:
+  - tool: calendly
+    fit: partial
+    note: Personal booking pages and event types; teams, routing, workflows and SSO are removed from this community edition.
+deploy: [compose]

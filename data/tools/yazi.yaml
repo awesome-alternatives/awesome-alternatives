@@ -1,0 +1,7 @@
+name: yazi
+repository: https://github.com/sxyazi/yazi
+category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: Miller columns and previews like ranger, with async I/O and Lua plugins instead of Python.

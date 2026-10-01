@@ -1,0 +1,17 @@
+name: mise
+repository: https://github.com/jdx/mise
+category: runtime-version-manager
+replaces:
+  - tool: asdf
+    fit: full
+    note: Reads .tool-versions and supports asdf plugins, with its own commands.
+    migration: https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
+  - tool: nvm
+    fit: full
+    note: Manages Node.js versions and can read .nvmrc once idiomatic version files are enabled.
+  - tool: volta
+    fit: full
+    note: Pins Node.js and package manager versions per project, in mise.toml.
+  - tool: pyenv
+    fit: full
+    note: Manages Python versions and can read .python-version once idiomatic version files are enabled.

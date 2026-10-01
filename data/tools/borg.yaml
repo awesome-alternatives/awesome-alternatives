@@ -1,0 +1,4 @@
+name: BorgBackup
+repository: https://github.com/borgbackup/borg
+category: backup
+terms: open

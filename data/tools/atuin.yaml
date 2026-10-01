@@ -1,0 +1,7 @@
+name: atuin
+repository: https://github.com/atuinsh/atuin
+category: shell-history
+replaces:
+  - tool: mcfly
+    fit: full
+    note: Replaces the ctrl-r search with a SQLite-backed history, plus optional encrypted sync between machines.

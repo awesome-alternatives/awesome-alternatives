@@ -1,0 +1,7 @@
+name: fnm
+repository: https://github.com/Schniz/fnm
+category: runtime-version-manager
+replaces:
+  - tool: nvm
+    fit: full
+    note: Reads .nvmrc and .node-version files, a single binary that also runs on Windows.

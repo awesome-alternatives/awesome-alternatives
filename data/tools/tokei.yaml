@@ -1,0 +1,7 @@
+name: tokei
+repository: https://github.com/XAMPPRocky/tokei
+category: code-statistics
+replaces:
+  - tool: cloc
+    fit: full
+    note: Counts code, comments and blanks per language, from a single binary.

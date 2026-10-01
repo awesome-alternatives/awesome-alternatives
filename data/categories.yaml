@@ -609,3 +609,44 @@ home-automation:
   name: Home automation
   description: Control and automate smart home devices locally.
   selfHost: true
+
+terminal-file-manager:
+  name: Terminal file managers
+  description: Browse, preview and move files from a keyboard-driven interface in the terminal.
+
+disk-usage:
+  name: Disk usage analyzers
+  description: Show which directories and files take up the space on a disk.
+
+shell-history:
+  name: Shell history
+  description: Search, sync and recall the commands typed in a shell.
+
+task-runner:
+  name: Task runners
+  description: Name a project's commands in one file and run them, as a lighter make.
+
+git-hooks:
+  name: Git hook managers
+  description: Install and run the checks a repository wants before a commit or a push.
+
+runtime-version-manager:
+  name: Runtime version managers
+  description: Install several versions of a language runtime and switch between them per project.
+
+backup:
+  name: Backup tools
+  description: Take deduplicated, encrypted snapshots of files and restore them from local or cloud storage.
+
+code-statistics:
+  name: Code statistics
+  description: Count the lines of code, comments and blanks in a codebase, by language.
+
+file-watcher:
+  name: File watchers
+  description: Run a command again whenever the files it depends on change.
+
+scheduling:
+  name: Scheduling
+  description: Share availability and let people book a meeting or vote on a date.
+  selfHost: true

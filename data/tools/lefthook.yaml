@@ -1,0 +1,10 @@
+name: lefthook
+repository: https://github.com/evilmartians/lefthook
+category: git-hooks
+replaces:
+  - tool: husky
+    fit: full
+    note: One lefthook.yml for all hooks, a single binary with no Node.js requirement.
+  - tool: pre-commit
+    fit: full
+    note: Runs hook commands in parallel, but uses tools you install instead of building an environment per hook.
