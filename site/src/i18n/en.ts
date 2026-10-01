@@ -110,7 +110,7 @@ export const en = {
     },
     tools: {
       title: "Every tool in the catalog",
-      description: "All {count} tools in awesome-alternatives, with language, licence, stars and latest release.",
+      description: "All {count} tools in awesome-alternatives, with their category, language and stars.",
       heading: "All tools",
       lede: "Every tool in the catalog, by name.",
     },

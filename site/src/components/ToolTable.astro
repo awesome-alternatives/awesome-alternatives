@@ -1,0 +1,54 @@
+---
+import type { Locale } from "../i18n/index.ts";
+import { messages, pathFor } from "../i18n/index.ts";
+import { categoryName } from "../lib/catalog.ts";
+import { stars } from "../lib/format.ts";
+import { slugify } from "../lib/slug.ts";
+import type { ToolView } from "../lib/types.ts";
+
+interface Props {
+  locale: Locale;
+  caption: string;
+  tools: ToolView[];
+}
+
+const { locale, caption, tools } = Astro.props;
+const m = messages(locale);
+const card = m.islands.card;
+---
+
+<div class="table-scroll wide" role="region" aria-label={caption} tabindex="0">
+  <table class="comparison">
+    <caption class="visually-hidden">{caption}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{m.target.toolColumn}</th>
+        <th scope="col">{m.islands.search.refine.category}</th>
+        <th scope="col">{card.factLanguage}</th>
+        <th scope="col">{card.factStars}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        tools.map((tool) => (
+          <tr>
+            <th scope="row">
+              <a href={pathFor(locale, `/tools/${tool.slug}/`)}>{tool.name}</a>
+            </th>
+            <td>
+              <a href={pathFor(locale, `/categories/${tool.category}/`)}>{categoryName(tool.category)}</a>
+            </td>
+            <td>
+              {tool.repo.language ? (
+                <a href={pathFor(locale, `/languages/${slugify(tool.repo.language)}/`)}>{tool.repo.language}</a>
+              ) : (
+                card.unknownLanguage
+              )}
+            </td>
+            <td>{stars(tool.repo.stars)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

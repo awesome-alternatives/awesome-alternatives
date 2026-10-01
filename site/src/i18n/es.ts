@@ -111,7 +111,7 @@ export const es: Messages = {
     },
     tools: {
       title: "Todas las herramientas del catálogo",
-      description: "Las {count} herramientas de awesome-alternatives, con lenguaje, licencia, estrellas y última versión.",
+      description: "Las {count} herramientas de awesome-alternatives, con su categoría, lenguaje y estrellas.",
       heading: "Todas las herramientas",
       lede: "Todas las herramientas del catálogo, por nombre.",
     },
