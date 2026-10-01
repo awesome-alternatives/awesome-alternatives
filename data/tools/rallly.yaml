@@ -1,0 +1,8 @@
+name: Rallly
+repository: https://github.com/lukevella/rallly
+category: scheduling
+replaces:
+  - tool: doodle
+    fit: partial
+    note: Group polls to pick a meeting date, without booking pages or one-to-one scheduling.
+deploy: [container, compose]

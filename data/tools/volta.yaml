@@ -1,0 +1,7 @@
+name: Volta
+repository: https://github.com/volta-cli/volta
+category: runtime-version-manager
+replaces:
+  - tool: nvm
+    fit: full
+    note: Pins Node.js and package manager versions in package.json and switches automatically.

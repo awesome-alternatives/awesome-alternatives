@@ -1,0 +1,7 @@
+name: scc
+repository: https://github.com/boyter/scc
+category: code-statistics
+replaces:
+  - tool: cloc
+    fit: full
+    note: Same per-language counts, faster, with complexity and COCOMO estimates on top.

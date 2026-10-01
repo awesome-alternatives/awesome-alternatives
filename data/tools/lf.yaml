@@ -1,0 +1,7 @@
+name: lf
+repository: https://github.com/gokcehan/lf
+category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: Modeled on ranger, as a single Go binary with its own config format.

@@ -1,0 +1,10 @@
+name: lazydocker
+repository: https://github.com/jesseduffield/lazydocker
+category: container-desktop
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: A terminal UI for containers, images and compose services; it does not install or run the Docker engine.
+  - tool: portainer
+    fit: partial
+    note: Manages the local Docker host from the terminal, without Swarm, Kubernetes or a web interface.

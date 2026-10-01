@@ -1,0 +1,7 @@
+name: nnn
+repository: https://github.com/jarun/nnn
+category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: A single small C binary, extended through plugins rather than a Python config.

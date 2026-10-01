@@ -1,0 +1,7 @@
+name: watchexec
+repository: https://github.com/watchexec/watchexec
+category: file-watcher
+replaces:
+  - tool: entr
+    fit: full
+    note: Watches a directory recursively and respects .gitignore, without piping a file list in.
