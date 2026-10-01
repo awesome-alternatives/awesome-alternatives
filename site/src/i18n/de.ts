@@ -112,7 +112,7 @@ export const de: Messages = {
     },
     tools: {
       title: "Alle Tools im Katalog",
-      description: "Alle {count} Tools in awesome-alternatives, mit Sprache, Lizenz, Sternen und neuestem Release.",
+      description: "Alle {count} Tools in awesome-alternatives, mit Kategorie, Sprache und Sternen.",
       heading: "Alle Tools",
       lede: "Jedes Tool im Katalog, nach Namen.",
     },

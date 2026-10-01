@@ -5,6 +5,7 @@ import Base from "../layouts/Base.astro";
 import { itemList } from "../lib/structuredData.ts";
 import type { FeedLink, ToolView } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
+import ToolTable from "./ToolTable.astro";
 
 interface Props {
   locale: Locale;
@@ -16,9 +17,10 @@ interface Props {
   lede: string;
   tools: ToolView[];
   feeds?: FeedLink[];
+  compact?: boolean;
 }
 
-const { locale, title, description, context, parent, heading, lede, tools, feeds = [] } = Astro.props;
+const { locale, title, description, context, parent, heading, lede, tools, feeds = [], compact = false } = Astro.props;
 const m = messages(locale);
 const listed = itemList(
   heading,
@@ -33,8 +35,14 @@ const listed = itemList(
   <p class="lede">{lede}</p>
   <slot />
   <p class="summary">{plural(locale, m.listing.toolCount, tools.length)}</p>
-  <div class="tools listing">
-    {tools.map((tool) => <ToolCard locale={locale} strings={m.islands} tool={tool} />)}
-  </div>
+  {
+    compact ? (
+      <ToolTable locale={locale} caption={heading} tools={tools} />
+    ) : (
+      <div class="tools listing">
+        {tools.map((tool) => <ToolCard locale={locale} strings={m.islands} tool={tool} />)}
+      </div>
+    )
+  }
   <slot name="after" />
 </Base>
