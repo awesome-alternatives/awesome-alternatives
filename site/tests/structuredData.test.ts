@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { breadcrumbList, itemList, serialize, softwareSourceCode, spdxUrl } from "../src/lib/structuredData.ts";
+import { breadcrumbList, itemList, serialize, softwareSourceCode, spdxUrl, techArticle } from "../src/lib/structuredData.ts";
 
 const PAGE = "https://awesome-alternatives.com/tools/ruff/";
 
@@ -99,4 +99,21 @@ test("a breadcrumb trail numbers each step and points at its page", () => {
       [2, "Key-value stores", "https://awesome-alternatives.com/categories/key-value-store/"],
     ],
   );
+});
+
+test("a migration guide is a TechArticle about both tools, dated by its last review", () => {
+  const url = "https://awesome-alternatives.com/migrate/jest/vitest/";
+  const image = "https://awesome-alternatives.com/og/migrate/jest/vitest.png";
+  assert.deepEqual(techArticle({ headline: "Migrating from Jest to Vitest", url, image, reviewed: "2026-09-24" }, ["Jest", "Vitest"]), {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: "Migrating from Jest to Vitest",
+    url,
+    image,
+    dateModified: "2026-09-24",
+    about: [
+      { "@type": "SoftwareApplication", name: "Jest" },
+      { "@type": "SoftwareApplication", name: "Vitest" },
+    ],
+  });
 });

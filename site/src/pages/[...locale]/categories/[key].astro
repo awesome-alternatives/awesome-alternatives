@@ -8,6 +8,7 @@ import ToolListing from "../../../components/ToolListing.astro";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
+import { withHome } from "../../../lib/breadcrumbs.ts";
 import { categories, categoryGroups, categoryName, targetItems, targets } from "../../../lib/catalog.ts";
 import { categoryDescription, categoryTitle } from "../../../lib/intent.ts";
 
@@ -35,6 +36,10 @@ const replacedItems = targetItems(
   targets().filter((target) => target.alternatives.some((tool) => members.has(tool.slug))),
 ).map((item) => ({ ...item, href: pathFor(locale, item.href) }));
 const feed = pathFor(locale, `/categories/${Astro.params.key}/feed.xml`);
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  { name: m.index.categories.heading, href: pathFor(locale, "/categories/") },
+  { name, href: pathFor(locale, `/categories/${Astro.params.key}/`) },
+]);
 ---
 
 <ToolListing
@@ -47,6 +52,7 @@ const feed = pathFor(locale, `/categories/${Astro.params.key}/feed.xml`);
   lede={category.description}
   tools={tools}
   feeds={[{ title: format(m.changes.categoryFeedTitle, { name }), path: feed }]}
+  crumbs={crumbs}
 >
   <p class="feed-link"><a href={feed}>{m.changes.followCategory}</a></p>
   <section class="page-section">

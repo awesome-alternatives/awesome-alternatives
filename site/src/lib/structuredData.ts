@@ -37,7 +37,17 @@ export interface BreadcrumbList {
   itemListElement: { "@type": "ListItem"; position: number; name: string; item: string }[];
 }
 
-export type StructuredData = SoftwareSourceCode | ItemList | BreadcrumbList;
+export interface TechArticle {
+  "@context": typeof CONTEXT;
+  "@type": "TechArticle";
+  headline: string;
+  url: string;
+  image: string;
+  dateModified: string;
+  about: { "@type": "SoftwareApplication"; name: string }[];
+}
+
+export type StructuredData = SoftwareSourceCode | ItemList | BreadcrumbList | TechArticle;
 
 export function spdxUrl(license: string | null): string | null {
   return license && !UNCLASSIFIED.has(license) ? `https://spdx.org/licenses/${license}.html` : null;
@@ -83,6 +93,21 @@ export function breadcrumbList(crumbs: readonly { name: string; url: string }[])
       name: crumb.name,
       item: crumb.url,
     })),
+  };
+}
+
+export function techArticle(
+  article: { headline: string; url: string; image: string; reviewed: string },
+  about: readonly string[],
+): TechArticle {
+  return {
+    "@context": CONTEXT,
+    "@type": "TechArticle",
+    headline: article.headline,
+    url: article.url,
+    image: article.image,
+    dateModified: article.reviewed,
+    about: about.map((name) => ({ "@type": "SoftwareApplication", name })),
   };
 }
 
