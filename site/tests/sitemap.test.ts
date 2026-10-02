@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { LOCALES } from "../src/i18n/index.ts";
-import { auditSitemap, barePaths, expectedPaths, locs } from "../src/lib/sitemap.ts";
+import { auditSitemap, barePaths, expectedPaths, indexableAs, locs, unindexedPaths } from "../src/lib/sitemap.ts";
 
 const SITE = "https://example.com";
 const catalog = [
@@ -53,14 +53,50 @@ test("barePaths lists an owner only once it holds more than one tool", () => {
   assert.ok(!paths.includes("/owners/cocogitto/"), "an owner with one tool gets no page, so nothing to list");
 });
 
-test("expectedPaths repeats every path in each locale, leaving English unprefixed", () => {
+test("expectedPaths repeats every indexed path in each locale, leaving English unprefixed", () => {
   const paths = expectedPaths(catalog);
-  assert.equal(paths.length, barePaths(catalog).length * LOCALES.length);
-  assert.ok(paths.includes("/tools/ferrflow/"));
+  assert.ok(paths.includes("/tools/cocogitto/"));
   for (const locale of LOCALES.filter((l) => l !== "en")) {
-    assert.ok(paths.includes(`/${locale}/tools/ferrflow/`), `missing ${locale}`);
+    assert.ok(paths.includes(`/${locale}/tools/cocogitto/`), `missing ${locale}`);
   }
-  assert.ok(!paths.includes("/en/tools/ferrflow/"));
+  assert.ok(!paths.includes("/en/tools/cocogitto/"));
+});
+
+test("a tool page that canonicalises to its alternatives page stays out of the sitemap in every locale", () => {
+  const paths = expectedPaths(catalog);
+  for (const locale of LOCALES) {
+    const prefix = locale === "en" ? "" : `/${locale}`;
+    assert.ok(!paths.includes(`${prefix}/tools/ferrflow/`), `${locale} lists a non-canonical tool page`);
+    assert.ok(paths.includes(`${prefix}/alternatives/ferrflow/`));
+  }
+});
+
+test("a tool replaced only by archived tools keeps its own page in the sitemap", () => {
+  const archived = catalog.map((tool) => (tool.slug === "cocogitto" ? { ...tool, repo: { ...tool.repo, archived: true } } : tool));
+  assert.ok(expectedPaths(archived).includes("/tools/ferrflow/"));
+});
+
+test("comparisons are listed in English only", () => {
+  const paths = expectedPaths(catalog).filter((path) => path.includes("/compare/"));
+  assert.deepEqual(paths, ["/compare/cocogitto-vs-ferrflow/"]);
+  assert.ok(unindexedPaths(catalog).includes("/fr/compare/cocogitto-vs-ferrflow/"));
+});
+
+test("auditSitemap flags an unindexed page the sitemap still lists", () => {
+  const listed = [...expectedPaths(catalog), "/de/tools/ferrflow/", "/es/compare/cocogitto-vs-ferrflow/"].map(
+    (path) => new URL(path, SITE).href,
+  );
+  assert.deepEqual(auditSitemap(SITE, catalog, listed).unwanted, [
+    new URL("/es/compare/cocogitto-vs-ferrflow/", SITE).href,
+    new URL("/de/tools/ferrflow/", SITE).href,
+  ]);
+});
+
+test("indexableAs accepts a page only when it canonicalises to itself and is not noindex", () => {
+  const url = `${SITE}/tools/cocogitto/`;
+  assert.ok(indexableAs(url, `<link rel="canonical" href="${url}">`));
+  assert.ok(!indexableAs(url, `<link rel="canonical" href="${SITE}/alternatives/cocogitto/">`));
+  assert.ok(!indexableAs(url, `<meta name="robots" content="noindex" />`));
 });
 
 test("locs reads every loc, trimming whitespace", () => {

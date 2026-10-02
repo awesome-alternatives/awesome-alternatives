@@ -12,7 +12,7 @@ import Base from "../../../layouts/Base.astro";
 import { withHome } from "../../../lib/breadcrumbs.ts";
 import { cadenceDays } from "../../../lib/cadence.ts";
 import { categoryName, nameOf, pairs } from "../../../lib/catalog.ts";
-import type { Pair } from "../../../lib/compare.ts";
+import { compareIndexed, type Pair } from "../../../lib/compare.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { slugify } from "../../../lib/slug.ts";
 import { breadcrumbList } from "../../../lib/structuredData.ts";
@@ -56,6 +56,8 @@ const targetLabel = (target: string) => format(m.compare.targetLink, { name: nam
   title={heading}
   description={format(m.compare.description, { a: a.name, b: b.name })}
   structuredData={[trail]}
+  noindex={!compareIndexed(locale)}
+  translated={false}
 >
   <div class="wide">
     <Breadcrumbs locale={locale} crumbs={crumbs} />

@@ -1,6 +1,7 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
 import { LOCALES, pathFor } from "../i18n/index.ts";
-import { comparePairs } from "./compare.ts";
+import { isReplaced } from "./canonical.ts";
+import { compareIndexed, comparePairs } from "./compare.ts";
 import { type Dated, lastModified } from "./freshness.ts";
 import { listedOwners } from "./owners.ts";
 import { slugify } from "./slug.ts";
@@ -37,12 +38,29 @@ export function lastmodByPath(tools: readonly (Dated & { slug: string })[]): Map
   return out;
 }
 
-export function expectedPaths(tools: CatalogEntry[]): string[] {
-  return LOCALES.flatMap((locale) => barePaths(tools).map((path) => pathFor(locale, path)));
+export function unindexedPaths(tools: CatalogEntry[]): string[] {
+  const replaced = tools.filter((t) => isReplaced(tools, t.slug)).map((t) => `/tools/${t.slug}/`);
+  const comparisons = comparePairs(tools).map((pair) => `/compare/${pair.slug}/`);
+  return LOCALES.flatMap((locale) => [
+    ...replaced.map((path) => pathFor(locale, path)),
+    ...(compareIndexed(locale) ? [] : comparisons.map((path) => pathFor(locale, path))),
+  ]);
 }
 
-export function unwantedPaths(): string[] {
-  return LOCALES.flatMap((locale) => UNWANTED.map((path) => pathFor(locale, path)));
+export function expectedPaths(tools: CatalogEntry[]): string[] {
+  const unindexed = new Set(unindexedPaths(tools));
+  return LOCALES.flatMap((locale) => barePaths(tools).map((path) => pathFor(locale, path))).filter(
+    (path) => !unindexed.has(path),
+  );
+}
+
+export function unwantedPaths(tools: CatalogEntry[]): string[] {
+  return [...LOCALES.flatMap((locale) => UNWANTED.map((path) => pathFor(locale, path))), ...unindexedPaths(tools)];
+}
+
+export function indexableAs(url: string, html: string): boolean {
+  const canonical = /<link rel="canonical" href="([^"]*)"/.exec(html)?.[1];
+  return !/<meta name="robots" content="noindex"/.test(html) && canonical === url;
 }
 
 export function locs(xml: string): string[] {
@@ -56,7 +74,7 @@ export function auditSitemap(site: string, tools: CatalogEntry[], listed: string
     missing: expectedPaths(tools)
       .map(url)
       .filter((u) => !urls.has(u)),
-    unwanted: unwantedPaths()
+    unwanted: unwantedPaths(tools)
       .map(url)
       .filter((u) => urls.has(u)),
   };
