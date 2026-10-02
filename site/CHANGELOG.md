@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.90.0] - 2026-10-02
+
+### Features
+
+- feat(site): add TechArticle data to migration guides and breadcrumbs to category pages (#293)
+
 ## [0.89.0] - 2026-10-02
 
 ### Features
