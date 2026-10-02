@@ -1,0 +1,43 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+
+import IndexPage from "../../../components/IndexPage.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePaths } from "../../../i18n/paths.ts";
+import { nameOf, toolBySlug } from "../../../lib/catalog.ts";
+import { migrationPath, pairOf } from "../../../lib/migrations.ts";
+
+export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const all = messages(locale);
+const m = all.index.migrations;
+const licenceOf = (slug: string) => toolBySlug(slug)?.repo.license ?? all.islands.card.noLicense;
+const entries = await getCollection("migrations");
+const items = entries
+  .flatMap((entry) => {
+    const pair = pairOf(entry.id);
+    return pair ? [{ ...pair, reviewed: entry.data.reviewed }] : [];
+  })
+  .map(({ from, to, reviewed }) => ({
+    href: pathFor(locale, migrationPath(from, to)),
+    name: format(all.migrate.title, { from: nameOf(from), to: nameOf(to) }),
+    detail: format(m.detail, { from: licenceOf(from), to: licenceOf(to), date: reviewed }),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name, locale));
+---
+
+<IndexPage
+  locale={locale}
+  title={m.title}
+  description={format(m.description, { count: items.length })}
+  heading={m.heading}
+  lede={m.lede}
+  items={items}
+/>

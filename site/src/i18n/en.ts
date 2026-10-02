@@ -57,6 +57,7 @@ export const en = {
     categories: "Categories",
     languages: "Languages",
     licenses: "Licences",
+    migrations: "Migration guides",
     owners: "Owners",
     sponsorNote: "The catalog is free and carries no ads.",
     sponsorOpenCollective: "Open Collective ↗",
@@ -95,6 +96,13 @@ export const en = {
       description: "Browse the catalog by the language each tool is written in, across {count} languages.",
       heading: "Languages",
       lede: "The language GitHub reports for each repository.",
+    },
+    migrations: {
+      title: "Migration guides between developer tools",
+      description: "{count} guides to move from a developer tool to its replacement: licence, compatibility, steps and pitfalls, from the official documentation.",
+      heading: "Migration guides",
+      lede: "Each guide follows the replacement's official migration documentation and says when it was last reviewed. The guides are written in English.",
+      detail: "{from} to {to}, reviewed on {date}",
     },
     licenses: {
       title: "Developer tools by licence",

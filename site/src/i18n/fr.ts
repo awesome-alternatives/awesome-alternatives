@@ -58,6 +58,7 @@ export const fr: Messages = {
     categories: "Catégories",
     languages: "Langages",
     licenses: "Licences",
+    migrations: "Guides de migration",
     owners: "Propriétaires",
     sponsorNote: "Le catalogue est gratuit et sans publicité.",
     sponsorOpenCollective: "Open Collective ↗",
@@ -96,6 +97,13 @@ export const fr: Messages = {
       description: "Parcourez le catalogue par langage d'écriture des outils, sur {count} langages.",
       heading: "Langages",
       lede: "Le langage que GitHub indique pour chaque dépôt.",
+    },
+    migrations: {
+      title: "Guides de migration entre outils de développement",
+      description: "{count} guides pour passer d'un outil de développement à son remplaçant : licence, compatibilité, étapes et pièges, d'après la documentation officielle.",
+      heading: "Guides de migration",
+      lede: "Chaque guide suit la documentation de migration officielle du remplaçant et indique sa date de dernière relecture. Les guides sont rédigés en anglais.",
+      detail: "{from} vers {to}, relu le {date}",
     },
     licenses: {
       title: "Outils de développement par licence",

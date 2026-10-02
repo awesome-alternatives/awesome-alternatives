@@ -62,7 +62,7 @@ export interface GridItem {
   href: string;
   name: string;
   detail?: string;
-  count: number;
+  count?: number;
   archived?: boolean;
 }
 

@@ -8,9 +8,8 @@ import { format, messages, pathFor } from "../../../../i18n/index.ts";
 import { localePathsFor } from "../../../../i18n/paths.ts";
 import Base from "../../../../layouts/Base.astro";
 import { withHome } from "../../../../lib/breadcrumbs.ts";
-import { categoryName, nameOf, productBySlug, toolBySlug } from "../../../../lib/catalog.ts";
+import { nameOf, productBySlug, toolBySlug } from "../../../../lib/catalog.ts";
 import { majorOf, migrationPath, pairOf, staleness } from "../../../../lib/migrations.ts";
-import { slugify } from "../../../../lib/slug.ts";
 import { socialImagePath } from "../../../../lib/socialImage.ts";
 import { breadcrumbList } from "../../../../lib/structuredData.ts";
 
@@ -47,7 +46,7 @@ const reasons = due.map((reason) =>
   reason.kind === "age" ? m.migrate.dueAge : format(m.migrate.dueMajor, { name: nameOf(reason.slug) }),
 );
 const crumbs = withHome(locale, m.breadcrumb.home, [
-  { name: categoryName(replacing.category), href: pathFor(locale, `/categories/${slugify(replacing.category)}/`) },
+  { name: m.index.migrations.heading, href: pathFor(locale, "/migrate/") },
   { name: title, href: pathFor(locale, migrationPath(from, to)) },
 ]);
 const trail = breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: new URL(crumb.href, Astro.site).href })));
