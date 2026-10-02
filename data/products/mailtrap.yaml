@@ -1,0 +1,5 @@
+name: Mailtrap
+homepage: https://mailtrap.io
+vendor: Railsware
+category: mail-testing
+description: Hosted email sandbox that captures mail sent from development and staging, alongside a sending service.

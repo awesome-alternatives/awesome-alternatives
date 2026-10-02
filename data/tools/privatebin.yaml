@@ -1,0 +1,12 @@
+name: PrivateBin
+repository: https://github.com/PrivateBin/PrivateBin
+category: pastebin
+terms: open
+replaces:
+  - tool: pastebin
+    fit: full
+    note: Pastes are encrypted in the browser, so the server never reads them, with expiry and burn after reading.
+  - tool: github-gist
+    fit: partial
+    note: Anonymous encrypted pastes, without accounts or revision history.
+deploy: [container, helm]

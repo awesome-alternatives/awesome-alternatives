@@ -1,0 +1,5 @@
+name: GitHub Gist
+homepage: https://gist.github.com
+vendor: GitHub
+category: pastebin
+description: GitHub's snippet sharing service, where each gist is a git repository.

@@ -1,0 +1,11 @@
+name: Traduora
+repository: https://github.com/ever-co/ever-traduora
+category: translation-management
+replaces:
+  - tool: lokalise
+    fit: partial
+    note: Projects, imports and exports in common formats and a REST API; no in-context editing or machine translation.
+  - tool: crowdin
+    fit: partial
+    note: Team translation of app strings with a REST API; no git sync or machine translation.
+deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: smtp4dev
+repository: https://github.com/rnwood/smtp4dev
+category: mail-testing
+replaces:
+  - tool: mailtrap
+    fit: partial
+    note: The email sandbox only, with a web inbox, IMAP access and relay rules; no sending service.

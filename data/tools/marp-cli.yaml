@@ -1,0 +1,13 @@
+name: Marp CLI
+repository: https://github.com/marp-team/marp-cli
+category: slides
+replaces:
+  - tool: microsoft-powerpoint
+    fit: partial
+    note: Turns Markdown into HTML, PDF or PPTX slides. No visual editor.
+  - tool: google-slides
+    fit: partial
+    note: Turns Markdown into HTML, PDF or PPTX slides, without a visual editor or real-time co-editing.
+  - tool: keynote
+    fit: partial
+    note: Turns Markdown into HTML, PDF or PPTX slides. No visual editor.

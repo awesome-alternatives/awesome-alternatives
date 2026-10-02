@@ -1,0 +1,5 @@
+name: WeTransfer
+homepage: https://wetransfer.com
+vendor: WeTransfer
+category: file-sharing
+description: Hosted service for sending large files through a download link that expires.

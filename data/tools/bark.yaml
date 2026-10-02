@@ -1,0 +1,8 @@
+name: Bark
+repository: https://github.com/Finb/bark-server
+category: push-notifications
+replaces:
+  - tool: pushover
+    fit: partial
+    note: iOS only, sent through Apple push to the Bark app.
+deploy: [container, compose, helm, binary]

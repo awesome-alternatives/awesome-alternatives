@@ -1,0 +1,13 @@
+name: Slidev
+repository: https://github.com/slidevjs/slidev
+category: slides
+replaces:
+  - tool: microsoft-powerpoint
+    fit: partial
+    note: Slides written in Markdown with Vue components, shown in the browser and exported to PDF or PPTX. No visual editor.
+  - tool: google-slides
+    fit: partial
+    note: Slides written in Markdown and kept in git, without a visual editor or real-time co-editing.
+  - tool: keynote
+    fit: partial
+    note: Slides written in Markdown with Vue components, shown in the browser. No visual editor.

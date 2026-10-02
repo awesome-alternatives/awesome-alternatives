@@ -1,0 +1,10 @@
+name: Flow Launcher
+repository: https://github.com/Flow-Launcher/Flow.Launcher
+category: app-launcher
+replaces:
+  - tool: raycast
+    fit: full
+    note: Windows only, with a plugin store for searches and commands.
+  - tool: alfred
+    fit: full
+    note: Runs on Windows rather than macOS, with plugins in the place of workflows.

@@ -1,0 +1,9 @@
+name: Gotify
+repository: https://github.com/gotify/server
+category: push-notifications
+terms: open
+replaces:
+  - tool: pushover
+    fit: partial
+    note: REST API, web UI and an Android app over WebSocket; no official iOS app.
+deploy: [container, compose, binary]

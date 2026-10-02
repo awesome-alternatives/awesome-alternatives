@@ -1,0 +1,7 @@
+name: OSV-Scanner
+repository: https://github.com/google/osv-scanner
+category: vulnerability-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Dependency and container image scanning against OSV.dev, with guided remediation for npm and Maven.

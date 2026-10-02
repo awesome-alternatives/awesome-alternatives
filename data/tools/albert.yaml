@@ -1,0 +1,11 @@
+name: Albert
+repository: https://github.com/albertlauncher/albert
+category: app-launcher
+terms: source-available
+replaces:
+  - tool: raycast
+    fit: full
+    note: Plugins in C++ or Python. The licence forbids redistributing modified builds.
+  - tool: alfred
+    fit: full
+    note: Plugins in C++ or Python. The licence forbids redistributing modified builds.

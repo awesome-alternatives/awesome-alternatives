@@ -1,0 +1,7 @@
+name: Grype
+repository: https://github.com/anchore/grype
+category: vulnerability-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Dependency and container image scanning, from an image, a directory or an SBOM; no code or IaC scanning.
