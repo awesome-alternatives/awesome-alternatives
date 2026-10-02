@@ -17,6 +17,7 @@ interface Props {
   image?: SocialImage;
   noindex?: boolean;
   canonicalPath?: string;
+  translated?: boolean;
   structuredData?: StructuredData[];
   feeds?: FeedLink[];
 }
@@ -42,6 +43,7 @@ const {
   image = DEFAULT_IMAGE,
   noindex = false,
   canonicalPath,
+  translated = true,
   structuredData = [],
   feeds = [],
 } = Astro.props;
@@ -73,7 +75,7 @@ const link = (path: string) => pathFor(locale, path);
     <meta name="description" content={description} />
     {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
     {
-      !noindex && (
+      !noindex && translated && (
         <>
           {alternates.map((alternate) => (
             <link rel="alternate" hreflang={alternate.hreflang} href={new URL(alternate.path, Astro.site)} />
