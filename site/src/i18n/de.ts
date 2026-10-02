@@ -58,6 +58,7 @@ export const de: Messages = {
     categories: "Kategorien",
     languages: "Sprachen",
     licenses: "Lizenzen",
+    migrations: "Migrationsleitfäden",
     owners: "Inhaber",
     sponsorNote: "Der Katalog ist kostenlos und werbefrei.",
     sponsorOpenCollective: "Open Collective ↗",
@@ -97,6 +98,13 @@ export const de: Messages = {
         "Den Katalog nach der Sprache durchsuchen, in der ein Tool geschrieben ist, über {count} Sprachen hinweg.",
       heading: "Sprachen",
       lede: "Die Sprache, die GitHub für das jeweilige Repository meldet.",
+    },
+    migrations: {
+      title: "Migrationsleitfäden zwischen Entwickler-Tools",
+      description: "{count} Leitfäden für den Wechsel von einem Entwickler-Tool zu seinem Ersatz: Lizenz, Kompatibilität, Schritte und Fallstricke, nach der offiziellen Dokumentation.",
+      heading: "Migrationsleitfäden",
+      lede: "Jeder Leitfaden folgt der offiziellen Migrationsdokumentation des Ersatzes und nennt das Datum der letzten Prüfung. Die Leitfäden sind auf Englisch verfasst.",
+      detail: "{from} zu {to}, geprüft am {date}",
     },
     licenses: {
       title: "Entwickler-Tools nach Lizenz",

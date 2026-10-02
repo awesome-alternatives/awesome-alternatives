@@ -24,7 +24,7 @@ const m = messages(locale);
             </span>
             {item.detail && <span class="target-category">{item.detail}</span>}
           </span>
-          <span class="target-count">{item.count} →</span>
+          <span class="target-count">{item.count === undefined ? "→" : `${item.count} →`}</span>
         </a>
       </li>
     ))
