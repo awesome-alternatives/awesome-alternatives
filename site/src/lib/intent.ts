@@ -73,3 +73,40 @@ export function toolDescription(tool: Described, tools: readonly Described[], fa
   const shared = tools.some((other) => other.slug !== tool.slug && other.repo.description?.trim() === description);
   return shared ? `${tool.name}: ${description}` : description;
 }
+
+export interface ToolTitleStrings {
+  title: string;
+  titleFallbackLanguage: string;
+  titleReplaces: string;
+  titleReplacesOpen: string;
+}
+
+type Titled = Pick<ToolView, "name" | "terms" | "replaces"> & { repo: { language: string | null } };
+
+const FIT_RANK = { "drop-in": 0, full: 1, partial: 2 } as const;
+const TITLE_TARGETS = 2;
+const TITLE_MAX = 70;
+
+export function toolTitle(
+  locale: Locale,
+  strings: ToolTitleStrings,
+  tool: Titled,
+  category: string,
+  nameOf: (slug: string) => string,
+): string {
+  if (tool.replaces.length === 0) {
+    return format(strings.title, {
+      name: tool.name,
+      language: tool.repo.language ?? strings.titleFallbackLanguage,
+      category,
+    });
+  }
+  const names = [...tool.replaces]
+    .sort((a, b) => FIT_RANK[a.fit] - FIT_RANK[b.fit])
+    .slice(0, TITLE_TARGETS)
+    .map((r) => nameOf(r.tool));
+  const list = new Intl.ListFormat(locale, { type: "conjunction" });
+  const template = tool.terms === "open" ? strings.titleReplacesOpen : strings.titleReplaces;
+  const titles = names.map((_, i) => format(template, { name: tool.name, targets: list.format(names.slice(0, i + 1)) }));
+  return titles.findLast((title) => title.length <= TITLE_MAX) ?? titles[0];
+}

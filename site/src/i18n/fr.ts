@@ -200,6 +200,8 @@ export const fr: Messages = {
   tool: {
     title: "{name} : {language} pour {category}",
     titleFallbackLanguage: "outil",
+    titleReplaces: "{name} : alternative à {targets}",
+    titleReplacesOpen: "{name} : alternative open source à {targets}",
     descriptionFallback: "{name} dans le catalogue awesome-alternatives.",
     alternativeTo: "alternative à",
     replacedBy: { one: "{n} outil remplace {name}", other: "{n} outils remplacent {name}" },
