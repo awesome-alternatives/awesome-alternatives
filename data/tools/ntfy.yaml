@@ -1,0 +1,8 @@
+name: ntfy
+repository: https://github.com/binwiederhier/ntfy
+category: push-notifications
+replaces:
+  - tool: pushover
+    fit: full
+    note: Publish with a plain HTTP PUT or POST, received by Android, iOS and web clients.
+deploy: [container, compose, binary, package]

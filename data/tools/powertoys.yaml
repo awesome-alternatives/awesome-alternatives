@@ -1,0 +1,10 @@
+name: PowerToys
+repository: https://github.com/microsoft/PowerToys
+category: app-launcher
+replaces:
+  - tool: raycast
+    fit: partial
+    note: Windows only. The launcher is Command Palette, one module of a wider utility suite.
+  - tool: alfred
+    fit: partial
+    note: Windows only. The launcher is Command Palette, one module of a wider utility suite.

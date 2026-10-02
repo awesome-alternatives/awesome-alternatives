@@ -1,0 +1,10 @@
+name: Pontoon
+repository: https://github.com/mozilla/pontoon
+category: translation-management
+replaces:
+  - tool: transifex
+    fit: partial
+    note: Translates files kept in a git repository, mainly gettext, Fluent and XLIFF.
+  - tool: crowdin
+    fit: partial
+    note: Community translation synced with a git repository, in a narrower set of file formats.

@@ -1,0 +1,8 @@
+name: PsiTransfer
+repository: https://github.com/psi-4ward/psitransfer
+category: file-sharing
+replaces:
+  - tool: wetransfer
+    fit: full
+    note: Anonymous, resumable uploads of large files into buckets with an expiry time, one-time downloads and an optional password.
+deploy: [container]

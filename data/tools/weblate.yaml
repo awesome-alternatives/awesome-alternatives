@@ -1,0 +1,17 @@
+name: Weblate
+repository: https://github.com/WeblateOrg/weblate
+category: translation-management
+replaces:
+  - tool: crowdin
+    fit: full
+    note: Continuous localisation synced with your git repository, with machine translation and quality checks.
+  - tool: lokalise
+    fit: full
+    note: Projects, glossaries, translation memory and an API, synced with your git repository.
+  - tool: phrase
+    fit: full
+    note: String management with translation memory and machine translation; no professional translation marketplace.
+  - tool: transifex
+    fit: full
+    note: Continuous localisation with a git workflow, review steps and many file formats.
+deploy: [container, compose, helm]

@@ -1,0 +1,10 @@
+name: Wox
+repository: https://github.com/Wox-launcher/Wox
+category: app-launcher
+replaces:
+  - tool: raycast
+    fit: full
+    note: Windows, macOS and Linux, with plugins in Python or Node.js.
+  - tool: alfred
+    fit: full
+    note: Runs on macOS as well as Windows and Linux, with plugins in Python or Node.js.

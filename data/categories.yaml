@@ -686,3 +686,39 @@ time-tracking:
 image-generation:
   name: Image generation
   description: Generate images from text prompts with diffusion models running on your own hardware.
+
+mail-testing:
+  name: Mail testing
+  description: Fake SMTP servers with a web inbox that catch the mail an application sends during development.
+
+translation-management:
+  name: Translation management
+  description: Localisation platforms where teams translate and review an application's strings.
+  selfHost: true
+
+push-notifications:
+  name: Push notifications
+  description: Send push notifications to phones and desktops from a plain HTTP request.
+  selfHost: true
+
+vulnerability-scanner:
+  name: Vulnerability scanners
+  description: Check dependencies and container images against databases of known vulnerabilities.
+
+pastebin:
+  name: Pastebins
+  description: Share code snippets and text through a link.
+  selfHost: true
+
+file-sharing:
+  name: File sharing
+  description: Send large files to someone through a link that expires.
+  selfHost: true
+
+app-launcher:
+  name: App launchers
+  description: Open apps and files and run commands from the keyboard.
+
+slides:
+  name: Slides
+  description: Write presentations, often from Markdown or code instead of a visual editor.

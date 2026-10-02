@@ -1,0 +1,7 @@
+name: Trivy
+repository: https://github.com/aquasecurity/trivy
+category: vulnerability-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Scans dependencies, container images, infrastructure as code and secrets from the CLI or CI; no hosted dashboard or fix pull requests.

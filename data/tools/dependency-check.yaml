@@ -1,0 +1,7 @@
+name: Dependency-Check
+repository: https://github.com/dependency-check/DependencyCheck
+category: vulnerability-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Dependency scanning against the NVD, with Maven, Gradle and Ant plugins; no container image scanning.

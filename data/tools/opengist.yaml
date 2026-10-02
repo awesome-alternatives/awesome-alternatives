@@ -1,0 +1,11 @@
+name: Opengist
+repository: https://github.com/thomiceli/opengist
+category: pastebin
+replaces:
+  - tool: github-gist
+    fit: full
+    note: Each snippet is a git repository you can clone and push to, with public, unlisted and private visibility.
+  - tool: pastebin
+    fit: full
+    note: Snippets with accounts, syntax highlighting and search.
+deploy: [container, compose, helm, binary]

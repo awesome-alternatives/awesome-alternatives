@@ -1,0 +1,5 @@
+name: Pushover
+homepage: https://pushover.net
+vendor: Superblock
+category: push-notifications
+description: Hosted service that delivers push notifications sent over an HTTP API to its Android, iOS and desktop apps.

@@ -1,0 +1,8 @@
+name: Gokapi
+repository: https://github.com/Forceu/Gokapi
+category: file-sharing
+replaces:
+  - tool: wetransfer
+    fit: full
+    note: Links expire after a set number of downloads or days, with end-to-end encryption and S3 storage. Only registered users upload, outsiders through file request links.
+deploy: [container, compose, binary]

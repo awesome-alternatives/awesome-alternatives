@@ -1,0 +1,9 @@
+name: PicoShare
+repository: https://github.com/mtlynch/picoshare
+category: file-sharing
+terms: open
+replaces:
+  - tool: wetransfer
+    fit: full
+    note: Direct download links for files of any size, uploaded behind a single shared secret.
+deploy: [container, compose, binary]

@@ -1,0 +1,5 @@
+name: Crowdin
+homepage: https://crowdin.com
+vendor: Crowdin
+category: translation-management
+description: Hosted localisation platform where teams and translators translate software strings and documents.

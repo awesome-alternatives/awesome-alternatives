@@ -1,0 +1,7 @@
+name: MailCatcher
+repository: https://github.com/sj26/mailcatcher
+category: mail-testing
+replaces:
+  - tool: mailtrap
+    fit: partial
+    note: A local SMTP server and web inbox for development; no API checks or sending service.

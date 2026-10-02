@@ -1,0 +1,13 @@
+name: reveal.js
+repository: https://github.com/hakimel/reveal.js
+category: slides
+replaces:
+  - tool: microsoft-powerpoint
+    fit: partial
+    note: Presentations written in HTML or Markdown and shown in the browser, with speaker notes and PDF export. No visual editor.
+  - tool: google-slides
+    fit: partial
+    note: Presentations written in HTML or Markdown, without a visual editor or real-time co-editing.
+  - tool: keynote
+    fit: partial
+    note: Presentations written in HTML or Markdown and shown in the browser. No visual editor.

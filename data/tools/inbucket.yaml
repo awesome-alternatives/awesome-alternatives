@@ -1,0 +1,7 @@
+name: Inbucket
+repository: https://github.com/inbucket/inbucket
+category: mail-testing
+replaces:
+  - tool: mailtrap
+    fit: partial
+    note: The email sandbox only, with a web inbox, POP3 and a REST API; no sending service.

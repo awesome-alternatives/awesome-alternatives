@@ -1,0 +1,11 @@
+name: Hasty Paste
+repository: https://github.com/enchant97/hasty-paste
+category: pastebin
+replaces:
+  - tool: pastebin
+    fit: full
+    note: Private, unlisted or public pastes with expiry, attachments and OpenID login.
+  - tool: github-gist
+    fit: partial
+    note: User accounts and visibility settings, without revision history or git access.
+deploy: [container, compose]

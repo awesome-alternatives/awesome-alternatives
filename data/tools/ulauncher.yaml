@@ -1,0 +1,11 @@
+name: Ulauncher
+repository: https://github.com/Ulauncher/Ulauncher
+category: app-launcher
+terms: open
+replaces:
+  - tool: raycast
+    fit: full
+    note: Linux only, with extensions written in Python.
+  - tool: alfred
+    fit: full
+    note: Linux only, with extensions written in Python.

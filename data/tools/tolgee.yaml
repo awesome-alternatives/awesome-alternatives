@@ -1,0 +1,15 @@
+name: Tolgee
+repository: https://github.com/tolgee/tolgee-platform
+category: translation-management
+terms: open-core
+replaces:
+  - tool: crowdin
+    fit: full
+    note: Translation platform with in-context editing inside the running app and machine translation.
+  - tool: lokalise
+    fit: full
+    note: Key management, screenshots, in-context editing and SDKs for web frameworks.
+  - tool: phrase
+    fit: partial
+    note: Software string management only; no professional translation marketplace.
+deploy: [container, compose]

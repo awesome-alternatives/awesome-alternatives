@@ -1,0 +1,10 @@
+name: Mailpit
+repository: https://github.com/axllent/mailpit
+category: mail-testing
+replaces:
+  - tool: mailtrap
+    fit: partial
+    note: The email sandbox only, with SMTP capture, a web inbox, HTML checks and an API; no sending service.
+  - tool: mailhog
+    fit: full
+    note: Same default SMTP and web ports, with its own API and an actively maintained codebase.

@@ -1,0 +1,8 @@
+name: Erugo
+repository: https://github.com/ErugoOSS/Erugo
+category: file-sharing
+replaces:
+  - tool: wetransfer
+    fit: full
+    note: Password-protected shares with resumable and folder uploads, plus one-time links for guests to send files back.
+deploy: [container, compose]

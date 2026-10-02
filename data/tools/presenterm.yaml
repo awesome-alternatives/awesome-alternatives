@@ -1,0 +1,10 @@
+name: presenterm
+repository: https://github.com/mfontanini/presenterm
+category: slides
+replaces:
+  - tool: microsoft-powerpoint
+    fit: partial
+    note: Markdown slides presented in the terminal, with PDF and HTML export.
+  - tool: keynote
+    fit: partial
+    note: Markdown slides presented in the terminal, with PDF and HTML export.

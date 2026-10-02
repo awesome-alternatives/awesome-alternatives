@@ -1,0 +1,11 @@
+name: MicroBin
+repository: https://github.com/szabodanika/microbin
+category: pastebin
+replaces:
+  - tool: pastebin
+    fit: full
+    note: Text, files and short URLs in one small binary, with expiry and optional encryption.
+  - tool: github-gist
+    fit: partial
+    note: No accounts or revision history.
+deploy: [container, compose, binary]

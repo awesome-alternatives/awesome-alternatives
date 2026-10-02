@@ -1,0 +1,5 @@
+name: Snyk
+homepage: https://snyk.io
+vendor: Snyk
+category: vulnerability-scanner
+description: Hosted security platform that scans dependencies, container images, code and infrastructure as code for known vulnerabilities.
