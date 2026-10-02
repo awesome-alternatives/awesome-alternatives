@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.88.0] - 2026-10-02
+
+### Features
+
+- feat(site): keep non-canonical tool pages and translated comparisons out of the index (#291)
+
 ## [0.87.0] - 2026-10-02
 
 ### Features
