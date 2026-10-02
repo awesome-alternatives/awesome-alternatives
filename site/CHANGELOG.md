@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.87.0] - 2026-10-02
+
+### Features
+
+- feat(site): title tool pages by what they replace (#290)
+
 ## [0.86.3] - 2026-10-02
 
 ### Bug Fixes
