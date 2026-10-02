@@ -199,6 +199,8 @@ export const en = {
   tool: {
     title: "{name}: {language} for {category}",
     titleFallbackLanguage: "tool",
+    titleReplaces: "{name}: alternative to {targets}",
+    titleReplacesOpen: "{name}: open source alternative to {targets}",
     descriptionFallback: "{name} in the awesome-alternatives catalog.",
     alternativeTo: "alternative to",
     replacedBy: { one: "{n} tool replaces {name}", other: "{n} tools replace {name}" },

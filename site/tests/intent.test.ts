@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { de } from "../src/i18n/de.ts";
+import { es } from "../src/i18n/es.ts";
 import { en } from "../src/i18n/en.ts";
 import { fr } from "../src/i18n/fr.ts";
 import {
@@ -12,6 +13,7 @@ import {
   targetDescription,
   targetTitle,
   toolDescription,
+  toolTitle,
 } from "../src/lib/intent.ts";
 import type { Terms } from "../src/lib/types.ts";
 
@@ -72,4 +74,44 @@ test("a tool whose repository description another tool shares is told apart by i
   assert.equal(toolDescription(lxd, all, "fallback"), "LXD: System container manager");
   assert.equal(toolDescription(k9s, all, "fallback"), "Kubernetes CLI");
   assert.equal(toolDescription(bare, all, "fallback"), "fallback");
+});
+
+function titled(terms: Terms, replaces: { tool: string; fit: "drop-in" | "full" | "partial" }[], language: string | null = "Rust") {
+  return { name: "ripgrep", terms, replaces, repo: { language } } as Parameters<typeof toolTitle>[2];
+}
+
+const names: Record<string, string> = { ack: "ack", ag: "The Silver Searcher", grep: "grep" };
+const nameOf = (slug: string) => names[slug] ?? slug;
+
+test("a tool that replaces others is titled by what it replaces, best fit first, two names at most", () => {
+  const tool = titled("open", [
+    { tool: "grep", fit: "partial" },
+    { tool: "ack", fit: "full" },
+    { tool: "ag", fit: "drop-in" },
+  ]);
+  assert.equal(toolTitle("en", en.tool, tool, "code search", nameOf), "ripgrep: open source alternative to The Silver Searcher and ack");
+  assert.equal(toolTitle("fr", fr.tool, tool, "code search", nameOf), "ripgrep : alternative open source à The Silver Searcher et ack");
+});
+
+test("a tool title says open source only when the tool is", () => {
+  const tool = titled("source-available", [{ tool: "ack", fit: "full" }]);
+  assert.equal(toolTitle("de", de.tool, tool, "code search", nameOf), "ripgrep: Alternative zu ack");
+  assert.equal(toolTitle("es", es.tool, tool, "code search", nameOf), "ripgrep: alternativa a ack");
+});
+
+test("a tool that replaces nothing keeps its language and category title", () => {
+  assert.equal(toolTitle("en", en.tool, titled("open", []), "code search", nameOf), "ripgrep: Rust for code search");
+  assert.equal(toolTitle("en", en.tool, titled("open", [], null), "code search", nameOf), "ripgrep: tool for code search");
+});
+
+test("a tool title drops the second name rather than run past what a search result shows", () => {
+  const long = { ...titled("open", [{ tool: "ack", fit: "full" }, { tool: "grep", fit: "full" }]), name: "A rather long tool name" };
+  const wide = (slug: string) => (slug === "grep" ? "a second product with a long name" : nameOf(slug));
+  assert.equal(toolTitle("en", en.tool, long, "code search", wide), "A rather long tool name: open source alternative to ack");
+});
+
+test("a single name too long for the limit still makes the title", () => {
+  const tool = titled("open", [{ tool: "huge", fit: "full" }]);
+  const huge = () => "x".repeat(80);
+  assert.equal(toolTitle("en", en.tool, tool, "code search", huge), `ripgrep: open source alternative to ${"x".repeat(80)}`);
 });
