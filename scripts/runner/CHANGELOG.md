@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.2] - 2026-10-03
+
+### Bug Fixes
+
+- fix(refresh): read repositories behind an IP allow list without a token (#297)
+
 ## [0.5.1] - 2026-09-30
 
 ### Bug Fixes

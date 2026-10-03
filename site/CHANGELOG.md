@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.91.3] - 2026-10-03
+
+### Bug Fixes
+
+- fix(refresh): read repositories behind an IP allow list without a token (#297)
+
 ## [0.91.2] - 2026-10-03
 
 ### Bug Fixes
