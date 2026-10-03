@@ -16,7 +16,7 @@ function unreadableFromCi(tool: Tool, repo: RepoFacts | null): Finding {
     slug: tool.slug,
     severity: "warning",
     code: "unreadable-from-ci",
-    message: `\`${owner}\` has an IP allow list that refuses GitHub's runners, so ${unchecked}. The nightly refresh is refused too, see CONTRIBUTING`,
+    message: `\`${owner}\` has an IP allow list that refuses GitHub's runners, so ${unchecked}. The nightly refresh reads it without a token, see CONTRIBUTING`,
   };
 }
 

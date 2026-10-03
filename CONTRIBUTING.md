@@ -185,10 +185,13 @@ not archived, old enough, licence). It refuses the releases, the `.awesome-alter
 the files `deploy` is proven from, and the run says so with an `unreadable-from-ci` warning instead
 of failing. A maintainer checks those by hand before merging.
 
-The refresh cannot read such a repository at all. A tool that is already in the catalog keeps the
-facts, star series and verified mark of the last run that could read it, with the edits to its entry
-applied, and every run logs it. A tool no run has read yet is accepted in `data/tools` but stays out
-of the catalog, the README and the site until its organisation lets GitHub's runners in.
+The allow list only applies to authenticated requests, so the refresh reads such a repository, and
+its owner, again over the REST API without a token. Those reads share GitHub's anonymous budget of 60
+requests an hour, enough for a handful of tools, and they carry no active contributor count: that
+comes from a history walk only GraphQL can do. When the read without a token fails too, a tool that
+is already in the catalog keeps the facts, star series and verified mark of the last run that could
+read it, with the edits to its entry applied, and a tool no run has read yet stays out of the
+catalog. Every run logs which path each such tool took.
 
 ## Verifying a tool you maintain
 
@@ -354,7 +357,7 @@ and tries again, three times at most. A wait longer than that fails the run. A r
 commit history GitHub cannot read keeps the count of its last walk, or is published without an
 active contributor count when there is none, and the run logs it. A repository GitHub keeps failing
 on, after its batch is split down to it alone, keeps its last published facts and maintainer mark,
-as one behind an IP allow list does, or is left out when no run has read it yet. The run fails
+as one behind an IP allow list does when even the read without a token fails, or is left out when no run has read it yet. The run fails
 instead when no commit history at all can be read, when more than half of the repositories cannot
 be, or when the owners cannot be. Each phase logs its duration, as in `phase history: 180.2 s`.
 

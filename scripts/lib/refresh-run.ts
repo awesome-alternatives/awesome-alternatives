@@ -1,6 +1,7 @@
 import type { Installations } from "./app.ts";
 import type { CommitWindow } from "./commit-window.ts";
 import { createEnricher, fetchOwners, ownerLogins } from "./enrich.ts";
+import { retryBehindAllowList } from "./facts-anonymous.ts";
 import { completeRepositories, readRepositories, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GitHub } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
@@ -11,6 +12,7 @@ import { type EnrichedTool, GONE, type OwnerFacts, type Read, type Tool } from "
 export interface RefreshClients {
   gql: GraphQL;
   gh: GitHub;
+  anonymous: GitHub;
   installations: Installations | null;
 }
 
@@ -30,14 +32,15 @@ export async function refreshTools(
   now: Date,
   windows: ReadonlyMap<string, CommitWindow> = new Map(),
 ): Promise<Refreshed> {
-  const { gql, gh, installations } = clients;
+  const { gql, gh, anonymous, installations } = clients;
   const published = new Map(previous.tools.map((t) => [t.slug, t]));
   const releases = new Map(previous.tools.map((t) => [t.slug, t.release]));
   const readFacts = async () => {
-    const mapped = await timed("repositories", () => readRepositories(gql, targets, now, published));
+    const read = await timed("repositories", () => readRepositories(gql, targets, now, published));
+    const mapped = await retryBehindAllowList(anonymous, targets, read);
     return Promise.all([
       completeRepositories(gql, gh, targets, mapped, now, { releases, windows }),
-      timed("owners", () => fetchOwners(gql, ownerLogins(targets, mapped, previous), previous.owners)),
+      timed("owners", () => fetchOwners(gql, anonymous, ownerLogins(targets, mapped, previous), previous.owners)),
     ]);
   };
   const [[completed, owners], installed] = await Promise.all([

@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { createEnricher, fetchOwners } from "../scripts/lib/enrich.ts";
+import type { GitHub } from "../scripts/lib/github.ts";
 import type { GraphQL } from "../scripts/lib/graphql.ts";
 import { CATALOG_PATH, publish, type Snapshot } from "../scripts/lib/publish.ts";
 import { BEHIND_ALLOW_LIST, type OwnerFacts } from "../scripts/lib/types.ts";
@@ -75,14 +76,41 @@ describe("refresh of a tool whose repository GitHub keeps failing on", () => {
 });
 
 describe("fetchOwners", () => {
-  it("keeps the published owner of an organisation behind an IP allow list", async () => {
-    const gql: GraphQL = {
-      async query<T>() {
-        const message = "the `neondatabase` organization has an IP allow list enabled, and your IP address is not permitted to access this resource.";
-        return { data: { o0: null } as T, errors: [{ type: "FORBIDDEN", path: ["o0"], message }] };
+  const allowListed: GraphQL = {
+    async query<T>() {
+      const message = "the `neondatabase` organization has an IP allow list enabled, and your IP address is not permitted to access this resource.";
+      return { data: { o0: null } as T, errors: [{ type: "FORBIDDEN", path: ["o0"], message }] };
+    },
+    spent: () => ({ queries: 0, cost: 0, remaining: null }),
+  };
+  const refusingRest: GitHub = {
+    async get() {
+      throw new Error("rate limit exhausted");
+    },
+  };
+
+  it("keeps the published owner of an organisation behind an IP allow list when the read without a token fails too", async () => {
+    const gql = allowListed;
+    assert.deepEqual(await fetchOwners(gql, refusingRest, ["neondatabase"], { neondatabase: owner }), { neondatabase: owner });
+  });
+
+  it("reads an organisation behind an IP allow list without a token when it can", async () => {
+    const anonymous: GitHub = {
+      async get<T>(path: string) {
+        return (path === "/orgs/neondatabase"
+          ? { login: "neondatabase", name: "Neon", description: "Serverless Postgres", blog: "neon.tech", html_url: "https://github.com/neondatabase" }
+          : null) as T | null;
       },
-      spent: () => ({ queries: 0, cost: 0, remaining: null }),
     };
-    assert.deepEqual(await fetchOwners(gql, ["neondatabase"], { neondatabase: owner }), { neondatabase: owner });
+    assert.deepEqual(await fetchOwners(allowListed, anonymous, ["neondatabase"], {}), {
+      neondatabase: {
+        login: "neondatabase",
+        kind: "organization",
+        name: "Neon",
+        bio: "Serverless Postgres",
+        website: "https://neon.tech",
+        url: "https://github.com/neondatabase",
+      },
+    });
   });
 });
