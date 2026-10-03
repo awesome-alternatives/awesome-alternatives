@@ -15,6 +15,7 @@ const catalog = await loadSoundCatalog(root);
 
 const clients = {
   gh: createGitHub(process.env.GITHUB_TOKEN),
+  anonymous: createGitHub(undefined),
   gql: createGraphQL(process.env.GITHUB_TOKEN),
   installations: installationsFromEnv(process.env),
 };

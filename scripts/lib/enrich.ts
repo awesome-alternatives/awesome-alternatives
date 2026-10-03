@@ -9,8 +9,8 @@ import {
 } from "./added.ts";
 import { type Installed, isMaintainerVerified } from "./app.ts";
 import { factsChangedAt } from "./changed.ts";
-import { ownerOf } from "./facts.ts";
-import { repoPath } from "./github.ts";
+import { fetchOwner, ownerOf } from "./facts.ts";
+import { type GitHub, repoPath } from "./github.ts";
 import { fetchOwnerFacts, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GraphQL } from "./graphql.ts";
 import type { Snapshot } from "./publish.ts";
@@ -120,6 +120,7 @@ export function ownerLogins(tools: readonly Tool[], reads: readonly Read<{ repo:
 
 export async function fetchOwners(
   gql: GraphQL,
+  anonymous: GitHub,
   logins: readonly string[],
   published: Readonly<Record<string, OwnerFacts>>,
 ): Promise<Record<string, OwnerFacts>> {
@@ -132,9 +133,12 @@ export async function fetchOwners(
         owners[read.value.login] = read.value;
         break;
       case "behind-allow-list": {
-        const kept = published[login];
-        if (kept) owners[login] = kept;
-        console.error(`${login}: IP allow list refuses this runner, ${kept ? "kept the owner published before" : "listed without an owner"}`);
+        const anonymously = await fetchOwner(anonymous, login).catch(() => null);
+        const kept = anonymously ?? published[login];
+        if (kept) owners[kept.login] = kept;
+        if (!anonymously) {
+          console.error(`${login}: IP allow list refuses this runner, ${kept ? "kept the owner published before" : "listed without an owner"}`);
+        }
         break;
       }
       case "gone":

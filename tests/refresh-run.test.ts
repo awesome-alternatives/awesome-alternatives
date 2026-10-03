@@ -80,7 +80,7 @@ describe("refreshTools", () => {
     const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [published(broken, 1, false), published(fine, 1, false)] };
     const root = await checkout(snapshot);
     const installations = installedOnAcme();
-    const clients = { gql: github(new Set(["broken"])), gh: rest, installations };
+    const clients = { gql: github(new Set(["broken"])), gh: rest, anonymous: rest, installations };
     const { tools, owners } = await refreshTools(root, snapshot, clients, [broken, fine], [broken, fine], NOW);
 
     const bySlug = new Map(tools.map((t) => [t.slug, t]));
@@ -103,7 +103,7 @@ describe("refreshTools", () => {
     const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
     const root = await checkout(snapshot);
     const installations = installedOnAcme();
-    const clients = { gql: github(new Set()), gh: rest, installations };
+    const clients = { gql: github(new Set()), gh: rest, anonymous: rest, installations };
     const { tools } = await refreshTools(root, snapshot, clients, [fine, other, broken], [fine, other, broken], NOW);
     assert.equal(installations.lists, 1);
     assert.deepEqual(
@@ -119,7 +119,7 @@ describe("refreshTools", () => {
   it("fails loudly when no commit history at all can be read, rather than publishing every tool without a count", async () => {
     const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
     const root = await checkout(snapshot);
-    const clients = { gql: github(new Set(["fine", "other"])), gh: rest, installations: null };
+    const clients = { gql: github(new Set(["fine", "other"])), gh: rest, anonymous: rest, installations: null };
     await assert.rejects(refreshTools(root, snapshot, clients, [fine, other], [fine, other], NOW), /rejected the batch/);
   });
 });
