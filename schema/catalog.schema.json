@@ -212,7 +212,7 @@
         "tag": { "type": "string", "minLength": 1 },
         "publishedAt": { "oneOf": [{ "$ref": "#/$defs/timestamp" }, { "type": "null" }] },
         "url": { "type": "string", "minLength": 1 },
-        "source": { "enum": ["release", "tag"] },
+        "source": { "enum": ["release", "tag", "package"] },
         "signed": { "type": "boolean" },
         "tagOid": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
       }
