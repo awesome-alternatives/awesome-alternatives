@@ -77,20 +77,20 @@ test("a tool replaced only by archived tools keeps its own page in the sitemap",
   assert.ok(expectedPaths(archived).includes("/tools/ferrflow/"));
 });
 
-test("comparisons are listed in English only", () => {
+test("comparisons are listed in every locale", () => {
   const paths = expectedPaths(catalog).filter((path) => path.includes("/compare/"));
-  assert.deepEqual(paths, ["/compare/cocogitto-vs-ferrflow/"]);
-  assert.ok(unindexedPaths(catalog).includes("/fr/compare/cocogitto-vs-ferrflow/"));
+  assert.deepEqual(paths, [
+    "/compare/cocogitto-vs-ferrflow/",
+    "/fr/compare/cocogitto-vs-ferrflow/",
+    "/es/compare/cocogitto-vs-ferrflow/",
+    "/de/compare/cocogitto-vs-ferrflow/",
+  ]);
+  assert.ok(!unindexedPaths(catalog).some((path) => path.includes("/compare/")));
 });
 
 test("auditSitemap flags an unindexed page the sitemap still lists", () => {
-  const listed = [...expectedPaths(catalog), "/de/tools/ferrflow/", "/es/compare/cocogitto-vs-ferrflow/"].map(
-    (path) => new URL(path, SITE).href,
-  );
-  assert.deepEqual(auditSitemap(SITE, catalog, listed).unwanted, [
-    new URL("/es/compare/cocogitto-vs-ferrflow/", SITE).href,
-    new URL("/de/tools/ferrflow/", SITE).href,
-  ]);
+  const listed = [...expectedPaths(catalog), "/de/tools/ferrflow/"].map((path) => new URL(path, SITE).href);
+  assert.deepEqual(auditSitemap(SITE, catalog, listed).unwanted, [new URL("/de/tools/ferrflow/", SITE).href]);
 });
 
 test("indexableAs accepts a page only when it canonicalises to itself and is not noindex", () => {

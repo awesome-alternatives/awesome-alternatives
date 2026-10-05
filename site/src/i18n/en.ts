@@ -246,6 +246,7 @@ export const en = {
 
   compare: {
     title: "{a} vs {b}",
+    pageTitle: "{a} vs {b}",
     description:
       "{a} and {b} side by side: language, licence, stars, releases, and the reviewed fit and note that join them.",
     context: "compare",

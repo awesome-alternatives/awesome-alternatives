@@ -247,8 +247,9 @@ export const fr: Messages = {
 
   compare: {
     title: "{a} vs {b}",
+    pageTitle: "{a} vs {b} : comparatif",
     description:
-      "{a} et {b} côte à côte : langage, licence, étoiles, releases, ainsi que la compatibilité et la note qui les relient.",
+      "{a} ou {b} ? Les deux côte à côte : langage, licence, étoiles, releases, ainsi que la compatibilité et la note qui les relient.",
     context: "comparer",
     lede: "Les mêmes faits pour les deux, lus sur GitHub chaque nuit, et la relation qu'une personne a relue.",
     factColumn: "Fait",
