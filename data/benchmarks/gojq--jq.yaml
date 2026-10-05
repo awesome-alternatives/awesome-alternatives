@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "jaq benchmark suite"
+    url: https://github.com/01mf02/jaq#performance
+    ranBy: third-party
+    date: 2026-03-26
+    result: "AMD Ryzen 5 5500U, ms: empty x512 gojq 270, jq 430. group-by 1580 vs 1790. reduce-update 1320 vs 720. Run by the jaq author."

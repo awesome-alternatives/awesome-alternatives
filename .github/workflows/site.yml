@@ -2,10 +2,10 @@ name: Site
 
 on:
   pull_request:
-    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'data/migrations/**', 'CONTRIBUTING.md', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', 'scripts/lib/contributors.ts', '.github/workflows/site.yml']
+    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'data/migrations/**', 'data/benchmarks/**', 'CONTRIBUTING.md', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', 'scripts/lib/contributors.ts', '.github/workflows/site.yml']
   push:
     branches: [main]
-    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'data/migrations/**', 'CONTRIBUTING.md', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', 'scripts/lib/contributors.ts', '.github/workflows/site.yml']
+    paths: ['site/**', 'generated/**', 'data/categories.yaml', 'data/migrations/**', 'data/benchmarks/**', 'CONTRIBUTING.md', 'scripts/lib/types.ts', 'scripts/lib/rules.ts', 'scripts/lib/trending.ts', 'scripts/lib/contributors.ts', '.github/workflows/site.yml']
 
 permissions:
   contents: read

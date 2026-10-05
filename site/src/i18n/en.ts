@@ -267,6 +267,11 @@ export const en = {
     toolLink: "Everything about {name} →",
     guidesLabel: "Migration guides",
     contributorsUnknown: "not counted",
+    benchmarksLede:
+      "Published benchmarks, each linked to its source. The numbers depend on the hardware and the workload they were measured on.",
+    ranByProject: "Run by the {name} project, {date}",
+    ranByThirdParty: "Third-party benchmark, {date}",
+    benchmarkSource: "Read the benchmark ↗",
   },
 
   contribute: {

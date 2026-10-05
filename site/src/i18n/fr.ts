@@ -268,6 +268,11 @@ export const fr: Messages = {
     toolLink: "Tout sur {name} →",
     guidesLabel: "Guides de migration",
     contributorsUnknown: "non compté",
+    benchmarksLede:
+      "Des benchmarks publiés, chacun lié à sa source. Les chiffres dépendent de la machine et de la charge sur lesquelles ils ont été mesurés.",
+    ranByProject: "Mené par le projet {name}, {date}",
+    ranByThirdParty: "Benchmark mené par un tiers, {date}",
+    benchmarkSource: "Lire le benchmark ↗",
   },
 
   contribute: {

@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Hello-world HTTP throughput with autocannon"
+    url: https://github.com/fastify/benchmarks#benchmarks
+    ranBy: fastify
+    date: 2026-10-01
+    result: "Node v24, 4 vCPUs, 100 connections: Fastify 5.12.5 50372.8 req/s, Express 5.2.1 27474.4 req/s."

@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Type checking home-assistant on the command line without caching"
+    url: https://astral.sh/blog/ty
+    ranBy: ty
+    date: 2025-12-16
+    result: "Apple M4: ty 2.19s, mypy 45.66s (Pyrefly 5.32s, Pyright 19.62s)."

@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Formatting an already formatted project"
+    url: https://github.com/biomejs/biome/blob/b03b8dcf12cb8bcf65df0b3d0758ae2b7050e9fe/benchmark/README.md
+    ranBy: biome
+    date: 2024-08-29
+    result: "MacBook Pro M1: Biome ~25x faster than Prettier, ~20x faster than parallel-prettier, ~7x faster single-threaded."

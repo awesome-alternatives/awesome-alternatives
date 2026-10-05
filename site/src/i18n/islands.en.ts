@@ -153,6 +153,7 @@ export const islands = {
       replaces: "Replaces",
       overview: "Overview",
       resources: "Resources",
+      performance: "Performance",
     },
     readme: {
       loading: "Loading the README",

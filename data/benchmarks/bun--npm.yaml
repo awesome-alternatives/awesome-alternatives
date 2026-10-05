@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Running a package.json script"
+    url: https://bun.sh/blog/bun-v1.0
+    ranBy: bun
+    date: 2023-09-08
+    result: "Average time: bun run 7ms, npm run 176ms (yarn run 131ms, pnpm run 259ms)."

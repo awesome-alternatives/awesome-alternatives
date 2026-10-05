@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Resolving and installing the Trio dependencies"
+    url: https://astral.sh/blog/uv
+    ranBy: uv
+    date: 2024-02-15
+    result: "uv 8-10x faster than pip and pip-tools without caching, 80-115x faster with a warm cache."

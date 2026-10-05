@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Single-instance throughput and latency"
+    url: https://docs.keydb.dev/blog/2019/10/07/blog-post/
+    ranBy: keydb
+    date: 2019-10-06
+    result: "Single KeyDB instance: 5.13x to 5.49x the ops/sec of a single Redis 5 instance, with 4.6x to 5.1x lower latency."

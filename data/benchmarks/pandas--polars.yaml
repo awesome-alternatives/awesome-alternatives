@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "PDS-H (TPC-H derived) queries at scale factor 10"
+    url: https://pola.rs/posts/benchmarks/
+    ranBy: polars
+    date: 2025-06-01
+    result: "Total time on AWS c7a.24xlarge: Polars 1.30 streaming 3.89 s, in-memory 9.68 s, pandas 2.2.3 365.71 s."

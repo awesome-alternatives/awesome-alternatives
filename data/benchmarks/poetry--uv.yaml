@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Resolving the Transformers project with all optional dependencies"
+    url: https://astral.sh/blog/uv-unified-python-packaging
+    ranBy: uv
+    date: 2024-08-20
+    result: "Without cache: uv 7.48s, Poetry 47.91s (PDM 91.91s). With cache: uv 0.14s, Poetry 4.32s."

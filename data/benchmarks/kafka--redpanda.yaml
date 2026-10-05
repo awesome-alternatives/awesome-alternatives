@@ -1,0 +1,11 @@
+benchmarks:
+  - title: "End-to-end p99.99 latency with OpenMessaging Benchmark"
+    url: https://www.redpanda.com/blog/redpanda-vs-kafka-performance-benchmark
+    ranBy: redpanda
+    date: 2022-10-13
+    result: "1 GB/s: Kafka 3.2 5509.73ms on 6 nodes, Redpanda 79.574ms on 3. 50 MB/s: Kafka 164.57ms, Redpanda 13.91ms, 3 nodes each."
+  - title: "Rerunning the Redpanda 1 GB/s benchmark with modified workloads"
+    url: https://jack-vanlightly.com/blog/2023/5/15/kafka-vs-redpanda-performance-do-the-claims-add-up
+    ranBy: third-party
+    date: 2023-05-15
+    result: "TLS, 50 producers: Redpanda reached 850 of 1000 MB/s. With record keys: Kafka 500 MB/s, Redpanda 330 MB/s. By a Confluent engineer."

@@ -18,13 +18,21 @@ export interface CompareSide {
 interface Props {
   strings: Islands;
   sides: [CompareSide, CompareSide];
+  measured: boolean;
   overview?: ComponentChildren;
+  performance?: ComponentChildren;
   resources?: ComponentChildren;
 }
 
-const COMPARE_TABS = ["overview", "releases", "security", "resources"] as const;
+type CompareTab = "overview" | "performance" | "releases" | "security" | "resources";
 
-export default function CompareTabs({ strings, sides, overview, resources }: Props) {
+export function compareTabs(measured: boolean): [CompareTab, ...CompareTab[]] {
+  return measured
+    ? ["overview", "performance", "releases", "security", "resources"]
+    : ["overview", "releases", "security", "resources"];
+}
+
+export default function CompareTabs({ strings, sides, measured, overview, performance, resources }: Props) {
   const copy = strings.tabs;
   const columns = (render: (side: CompareSide) => ComponentChildren) => (
     <div className="compare-columns">
@@ -40,11 +48,12 @@ export default function CompareTabs({ strings, sides, overview, resources }: Pro
     <Tabs
       label={copy.label}
       className="tool-tabs compare-tabs"
-      tabs={COMPARE_TABS}
+      tabs={compareTabs(measured)}
       names={copy.names}
       panel={(tab, active) => (
         <>
           {tab === "overview" && overview}
+          {tab === "performance" && performance}
           {tab === "releases" &&
             columns((side) => <ReleasesPanel strings={copy} releases={side.releases} latest={side.latest} />)}
           {tab === "security" &&

@@ -147,6 +147,7 @@ export const islands: Islands = {
       replaces: "Ersetzt",
       overview: "Überblick",
       resources: "Ressourcen",
+      performance: "Leistung",
     },
     readme: {
       loading: "Die README wird geladen",

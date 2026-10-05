@@ -1,0 +1,11 @@
+benchmarks:
+  - title: "Word regex search over the Linux kernel source tree"
+    url: https://github.com/BurntSushi/ripgrep#quick-examples-comparing-tools
+    ranBy: ripgrep
+    date: 2026-07-17
+    result: "rg -n -w '[A-Z]+_SUSPEND': ripgrep 0.082s, ag 0.443s (5.43x) on a built Linux tree, Intel i9-12900K."
+  - title: "Literal search in the Linux kernel with default settings (linux_literal_default)"
+    url: https://burntsushi.net/ripgrep/
+    ranBy: ripgrep
+    date: 2016-09-23
+    result: "Pattern PM_RESUME, each tool's defaults: rg 0.349s, ag 1.589s (git grep 0.342s, ucg 0.218s)."

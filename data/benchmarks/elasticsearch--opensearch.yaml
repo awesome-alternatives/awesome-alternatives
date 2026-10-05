@@ -1,0 +1,11 @@
+benchmarks:
+  - title: "Elasticsearch 8.7 vs OpenSearch 2.7 on a logging workload"
+    url: https://www.elastic.co/blog/elasticsearch-opensearch-performance-gap
+    ranBy: elasticsearch
+    date: 2023-08-08
+    result: "Elasticsearch 40% to 140% faster overall: text queries 76% faster, date histograms 81% faster, range queries 40% faster."
+  - title: "OpenSearch 2.17.1 vs Elasticsearch 8.15.4 on the Big5 and Vectorsearch workloads"
+    url: https://blog.trailofbits.com/2025/03/06/benchmarking-opensearch-and-elasticsearch/
+    ranBy: third-party
+    date: 2025-03-06
+    result: "Geomean of p90 service time: OpenSearch 1.6x faster on Big5, 11% faster on Vectorsearch. Text queries 2.42x slower. By Trail of Bits for AWS."

@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Installing the alotta-files project"
+    url: https://pnpm.io/benchmarks
+    ranBy: pnpm
+    date: 2026-10-04
+    result: "Fresh clone: npm 12.2.0 45.6s, pnpm 12.9.1 4.47s. Cache and lockfile present: npm 7.14s, pnpm 826ms."

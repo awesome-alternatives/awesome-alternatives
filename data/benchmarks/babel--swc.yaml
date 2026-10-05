@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Synchronous transform on a single core"
+    url: https://swc.rs/blog/perf-swc-vs-babel
+    ranBy: swc
+    date: 2020-01-31
+    result: "transformSync: swc (es3) 616 ops/sec, swc (es2018) 2,555 ops/sec, babel (es5) 34.05 ops/sec."
