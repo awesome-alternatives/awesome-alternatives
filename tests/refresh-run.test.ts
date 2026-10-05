@@ -20,6 +20,7 @@ function repository(owner: string, name: string): GqlRepository & GqlPulse {
     ...template,
     newest: { nodes: [] },
     nameWithOwner: `${owner}/${name}`,
+    pushedAt: "2026-09-25T00:00:00Z",
     defaultBranchRef: { name: "main", target: { oid: `head-${name}` } },
     latestRelease: null,
     tags: { nodes: [] },
@@ -114,6 +115,27 @@ describe("refreshTools", () => {
         ["other", true],
       ],
     );
+  });
+
+  it("keeps the published detail of a repository nothing moved in, unless the run is forced", async () => {
+    const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [published(other, 1, false)] };
+    const root = await checkout(snapshot);
+    const run = async (force: boolean) => {
+      const inner = github(new Set());
+      let details = 0;
+      const gql: GraphQL = {
+        async query<T>(query: string, variables: Record<string, string>) {
+          if (query.includes("...Detail")) details++;
+          return inner.query<T>(query, variables);
+        },
+        spent: inner.spent,
+      };
+      const { tools } = await refreshTools(root, snapshot, { gql, gh: rest, anonymous: rest, installations: null }, [other], [other], NOW, { force });
+      return { details, release: tools[0]?.release ?? null };
+    };
+
+    assert.deepEqual(await run(false), { details: 0, release: snapshot.tools[0]?.release });
+    assert.deepEqual(await run(true), { details: 1, release: null });
   });
 
   it("fails loudly when no commit history at all can be read, rather than publishing every tool without a count", async () => {

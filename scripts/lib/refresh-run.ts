@@ -30,13 +30,13 @@ export async function refreshTools(
   declared: readonly Tool[],
   targets: readonly Tool[],
   now: Date,
-  windows: ReadonlyMap<string, CommitWindow> = new Map(),
+  { windows = new Map(), force = false }: { windows?: ReadonlyMap<string, CommitWindow>; force?: boolean } = {},
 ): Promise<Refreshed> {
   const { gql, gh, anonymous, installations } = clients;
   const published = new Map(previous.tools.map((t) => [t.slug, t]));
   const releases = new Map(previous.tools.map((t) => [t.slug, t.release]));
   const readFacts = async () => {
-    const read = await timed("repositories", () => readRepositories(gql, targets, now, published));
+    const read = await timed("repositories", () => readRepositories(gql, targets, now, force ? new Map() : published));
     const mapped = await retryBehindAllowList(anonymous, targets, read);
     return Promise.all([
       completeRepositories(gql, gh, targets, mapped, now, { releases, windows }),
