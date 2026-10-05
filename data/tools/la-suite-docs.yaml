@@ -1,0 +1,11 @@
+name: La Suite Docs
+repository: https://github.com/suitenumerique/docs
+category: knowledge-base
+replaces:
+  - tool: notion
+    fit: partial
+    note: Real-time collaborative block editor with nested pages and sharing, without databases.
+  - tool: confluence
+    fit: partial
+    note: Collaborative pages organised in a tree, with access control and exports.
+deploy: [container, compose, helm]

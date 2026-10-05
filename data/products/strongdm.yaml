@@ -1,0 +1,5 @@
+name: StrongDM
+homepage: https://www.strongdm.com
+vendor: StrongDM
+category: privileged-access
+description: Hosted access gateway that brokers connections to servers, databases and Kubernetes clusters with just-in-time grants and session audit logs.

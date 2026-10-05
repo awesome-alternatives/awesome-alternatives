@@ -1,0 +1,5 @@
+name: WakaTime
+homepage: https://wakatime.com
+vendor: WakaTime
+category: time-tracking
+description: Hosted service that collects coding activity from editor plugins and reports time per project, language and editor.

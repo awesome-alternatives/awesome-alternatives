@@ -1,0 +1,8 @@
+name: Grist
+repository: https://github.com/gristlabs/grist-core
+category: no-code-database
+replaces:
+  - tool: airtable
+    fit: full
+    note: Relational spreadsheet tables with Python formulas, linked views, forms and access rules.
+deploy: [container, compose]

@@ -1,0 +1,8 @@
+name: OpenCart
+repository: https://github.com/opencart/opencart
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A PHP store with themes, extensions and an admin panel, which you host and keep up to date yourself.
+terms: open

@@ -1,0 +1,8 @@
+name: Vendure
+repository: https://github.com/vendurehq/vendure
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A headless commerce server in TypeScript with a GraphQL API and an admin UI; the storefront is yours to build.
+terms: open

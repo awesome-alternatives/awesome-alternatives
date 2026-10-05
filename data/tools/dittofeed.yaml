@@ -1,0 +1,11 @@
+name: Dittofeed
+repository: https://github.com/dittofeed/dittofeed
+category: notification-infrastructure
+replaces:
+  - tool: courier
+    fit: partial
+    note: Segment-driven journeys and broadcasts over email, SMS, mobile push, WhatsApp and Slack.
+  - tool: knock
+    fit: partial
+    note: Segment-driven journeys and broadcasts over email, SMS, mobile push, WhatsApp and Slack.
+deploy: [container, compose, helm]

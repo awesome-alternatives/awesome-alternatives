@@ -1,0 +1,8 @@
+name: TiddlyWiki
+repository: https://github.com/TiddlyWiki/TiddlyWiki5
+category: knowledge-base
+replaces:
+  - tool: notion
+    fit: partial
+    note: A personal non-linear wiki that runs as a single HTML file or a Node.js server; little built for team collaboration.
+terms: open

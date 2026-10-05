@@ -1,0 +1,5 @@
+name: Courier
+homepage: https://www.courier.com
+vendor: Courier
+category: notification-infrastructure
+description: Hosted API for sending product notifications across email, SMS, push, chat and an in-app inbox from one set of templates.

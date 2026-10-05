@@ -1,0 +1,11 @@
+name: Libredesk
+repository: https://github.com/abhinavxd/libredesk
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: A shared inbox for email, live chat and WhatsApp with SLAs, automation rules, macros and a help center, in a single Go binary.
+  - tool: freshdesk
+    fit: partial
+    note: Email and chat conversations with teams, SLAs, CSAT ratings and a knowledge base.
+deploy: [container, compose, binary]

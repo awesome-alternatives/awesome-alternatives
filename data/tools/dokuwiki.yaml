@@ -1,0 +1,8 @@
+name: DokuWiki
+repository: https://github.com/dokuwiki/dokuwiki
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: partial
+    note: A wiki stored as plain text files with no database, namespaces, access control lists and plugins; no real-time co-editing.
+deploy: [container]

@@ -1,0 +1,11 @@
+name: Reactive Resume
+repository: https://github.com/reactive-resume/reactive-resume
+category: resume-builder
+replaces:
+  - tool: resume-io
+    fit: full
+    note: Template-based editor with PDF export, in the browser or on your own server.
+  - tool: kickresume
+    fit: full
+    note: Template-based editor with PDF export and optional AI writing through your own provider.
+deploy: [container, compose]

@@ -1,0 +1,8 @@
+name: JumpServer
+repository: https://github.com/jumpserver/jumpserver
+category: privileged-access
+replaces:
+  - tool: strongdm
+    fit: full
+    note: Web bastion for SSH, RDP, Kubernetes and databases, with asset permissions and session recording.
+deploy: [container, helm]

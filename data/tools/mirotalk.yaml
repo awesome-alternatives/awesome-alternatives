@@ -1,0 +1,8 @@
+name: MiroTalk P2P
+repository: https://github.com/miroslavpejic85/mirotalk
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Browser video calls over peer-to-peer WebRTC with screen sharing, chat and recording; suits small groups since each peer sends to every other.
+deploy: [container, compose]

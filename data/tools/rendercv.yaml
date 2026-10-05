@@ -1,0 +1,11 @@
+name: RenderCV
+repository: https://github.com/rendercv/rendercv
+category: resume-builder
+replaces:
+  - tool: resume-io
+    fit: partial
+    note: Command-line tool that renders a resume written in YAML to PDF through Typst themes, with no visual editor.
+  - tool: kickresume
+    fit: partial
+    note: Command-line tool that renders a resume written in YAML to PDF through Typst themes, with no visual editor.
+deploy: [binary]

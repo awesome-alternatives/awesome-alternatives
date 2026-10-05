@@ -1,0 +1,8 @@
+name: An Otter Wiki
+repository: https://github.com/redimp/otterwiki
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: partial
+    note: A Markdown wiki whose pages are kept in a git repository, with page history and user permissions; no real-time co-editing.
+deploy: [container, compose, helm]

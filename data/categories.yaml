@@ -761,3 +761,18 @@ page-change-monitoring:
   name: Page change monitoring
   description: Watch web pages and get alerts when they change.
   selfHost: true
+
+notification-infrastructure:
+  name: Notification infrastructure
+  description: Send product notifications across email, SMS, push, chat and in-app feeds from one API, with templates and user preferences.
+  selfHost: true
+
+privileged-access:
+  name: Privileged access
+  description: Give engineers audited access to servers, databases and Kubernetes through one gateway, with short-lived credentials and session recording.
+  selfHost: true
+
+resume-builder:
+  name: Resume builders
+  description: Write resumes from templates and export them to PDF.
+  selfHost: true
