@@ -1,5 +1,4 @@
 import type { Fit, Replacement } from "../../../scripts/lib/types.ts";
-import { DEFAULT_LOCALE, type Locale } from "../i18n/index.ts";
 
 export interface PairTool {
   slug: string;
@@ -112,8 +111,4 @@ export function pairForTool<T extends PairTool>(pairs: readonly Pair<T>[], slug:
       .filter((pair) => pair.a.slug === slug || pair.b.slug === slug)
       .sort((x, y) => y.edges.length - x.edges.length || partnerStars(y) - partnerStars(x))[0] ?? null
   );
-}
-
-export function compareIndexed(locale: Locale): boolean {
-  return locale === DEFAULT_LOCALE;
 }

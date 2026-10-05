@@ -247,8 +247,9 @@ export const es: Messages = {
 
   compare: {
     title: "{a} vs {b}",
+    pageTitle: "{a} vs {b}: comparativa",
     description:
-      "{a} y {b} lado a lado: lenguaje, licencia, estrellas, versiones y la compatibilidad y la nota que los relacionan.",
+      "¿{a} o {b}? Las dos lado a lado: lenguaje, licencia, estrellas, versiones y la compatibilidad y la nota que las relacionan.",
     context: "comparar",
     lede: "Los mismos datos para ambos, leídos de GitHub cada noche, y la relación que revisó una persona.",
     factColumn: "Dato",

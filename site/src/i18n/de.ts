@@ -248,8 +248,9 @@ export const de: Messages = {
 
   compare: {
     title: "{a} vs {b}",
+    pageTitle: "{a} vs {b}: Vergleich",
     description:
-      "{a} und {b} nebeneinander: Sprache, Lizenz, Sterne, Releases sowie die geprüfte Passung und die Notiz, die beide verbindet.",
+      "{a} oder {b}? Beide nebeneinander: Sprache, Lizenz, Sterne, Releases sowie die geprüfte Passung und die Notiz, die beide verbindet.",
     context: "vergleichen",
     lede: "Dieselben Fakten für beide, jede Nacht von GitHub gelesen, dazu die von Hand geprüfte Beziehung.",
     factColumn: "Fakt",
