@@ -1,6 +1,6 @@
 export const TAG_CANDIDATES = 20;
 
-const VERSION = /^(\D*?)(\d+(?:[._]\d+)+)(.*)$/;
+const CORE = /^\d+(?:[._]\d+)+/;
 const BARE_PREFIX = /^v?$/i;
 const STABLE_SUFFIX = /^(?:[.-]?(?:final|release|ga))?(?:\+.*)?$/i;
 
@@ -11,9 +11,12 @@ interface Version {
 }
 
 function versionOf(tag: string): Version | null {
-  const match = VERSION.exec(tag);
-  if (!match) return null;
-  const [, prefix = "", core = "", suffix = ""] = match;
+  const start = tag.search(/\d/);
+  if (start < 0) return null;
+  const core = CORE.exec(tag.slice(start))?.[0];
+  if (!core) return null;
+  const prefix = tag.slice(0, start);
+  const suffix = tag.slice(start + core.length);
   return { parts: core.split(/[._]/).map(Number), stable: STABLE_SUFFIX.test(suffix), bare: BARE_PREFIX.test(prefix) };
 }
 
