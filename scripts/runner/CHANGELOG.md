@@ -4,6 +4,13 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.1] - 2026-10-05
+
+### Bug Fixes
+
+- fix(refresh): prefer a plain version tag over a prefixed artefact tag (#310)
+- fix(refresh): pick the newest version tag when a repository has no release (#308)
+
 ## [0.6.0] - 2026-10-05
 
 ### Features
