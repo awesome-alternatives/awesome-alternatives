@@ -1,0 +1,11 @@
+name: Mastodon
+repository: https://github.com/mastodon/mastodon
+category: microblogging
+replaces:
+  - tool: x-twitter
+    fit: full
+    note: Posts, replies, boosts and follows on your own server, federated with the rest of the fediverse over ActivityPub.
+  - tool: threads
+    fit: full
+    note: Short posts on your own server, and Threads accounts that enable fediverse sharing can be followed from it.
+deploy: [container, compose, helm]

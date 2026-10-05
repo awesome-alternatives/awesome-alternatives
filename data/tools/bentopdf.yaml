@@ -1,0 +1,14 @@
+name: BentoPDF
+repository: https://github.com/alam00000/bentopdf
+category: pdf-tools
+replaces:
+  - tool: smallpdf
+    fit: full
+    note: Merging, splitting, converting, compressing and signing PDFs, processed entirely in the browser.
+  - tool: ilovepdf
+    fit: full
+    note: Merging, splitting, converting, compressing and signing PDFs, processed entirely in the browser.
+  - tool: adobe-acrobat
+    fit: partial
+    note: Covers page operations, conversion, forms and signing, without Acrobat's document cloud.
+deploy: [container, compose, helm]

@@ -722,3 +722,42 @@ app-launcher:
 slides:
   name: Slides
   description: Write presentations, often from Markdown or code instead of a visual editor.
+
+internal-tools:
+  name: Internal tool builders
+  description: Build internal apps and admin panels on top of databases and APIs.
+  selfHost: true
+
+database-client:
+  name: Database clients
+  description: Desktop and web clients to browse, edit and query databases.
+
+llm-observability:
+  name: LLM observability
+  description: Trace, evaluate and monitor LLM applications.
+  selfHost: true
+
+pdf-tools:
+  name: PDF tools
+  description: Edit, merge, split, convert and sign PDF files.
+  selfHost: true
+
+microblogging:
+  name: Microblogging
+  description: Federated or self-hosted social networks for short public posts.
+  selfHost: true
+
+forum:
+  name: Forums and Q&A
+  description: Community forums, link aggregators and question and answer sites.
+  selfHost: true
+
+billing:
+  name: Billing
+  description: Usage-based billing, subscription management and invoicing.
+  selfHost: true
+
+page-change-monitoring:
+  name: Page change monitoring
+  description: Watch web pages and get alerts when they change.
+  selfHost: true

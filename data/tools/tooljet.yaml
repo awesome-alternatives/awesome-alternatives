@@ -1,0 +1,8 @@
+name: ToolJet
+repository: https://github.com/ToolJet/ToolJet
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: full
+    note: Drag-and-drop app builder over databases and APIs, with JavaScript and Python queries.
+deploy: [container, compose, helm]

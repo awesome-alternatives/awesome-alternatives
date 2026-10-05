@@ -1,0 +1,12 @@
+name: Langfuse
+repository: https://github.com/langfuse/langfuse
+category: llm-observability
+terms: open-core
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Tracing, prompt management, datasets and evaluations, with OpenTelemetry ingestion.
+  - tool: weave
+    fit: full
+    note: Tracing and evaluations of LLM calls, with SDKs for Python and JavaScript.
+deploy: [container, compose, helm]

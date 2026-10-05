@@ -1,0 +1,5 @@
+name: Visualping
+homepage: https://visualping.io
+vendor: Visualping
+category: page-change-monitoring
+description: Hosted service that checks web pages on a schedule and sends alerts when they change.

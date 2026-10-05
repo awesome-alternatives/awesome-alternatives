@@ -1,0 +1,11 @@
+name: urlwatch
+repository: https://github.com/thp/urlwatch
+category: page-change-monitoring
+terms: open
+replaces:
+  - tool: visualping
+    fit: partial
+    note: Command-line tool run from cron and configured in YAML, with no web interface.
+  - tool: distill
+    fit: partial
+    note: Command-line tool run from cron and configured in YAML, with no web interface.

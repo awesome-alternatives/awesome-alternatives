@@ -1,0 +1,12 @@
+name: Pangolin
+repository: https://github.com/fosrl/pangolin
+category: reverse-proxy
+terms: open-core
+replaces:
+  - tool: cloudflare-tunnel
+    fit: full
+    note: WireGuard tunnels from private networks to a reverse proxy you run, with access control in front of each resource.
+  - tool: ngrok
+    fit: partial
+    note: Publishes long-lived services through a server you run, without ad-hoc tunnels started from a CLI.
+deploy: [container, compose, helm]

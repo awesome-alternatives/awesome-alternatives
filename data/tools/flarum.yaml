@@ -1,0 +1,10 @@
+name: Flarum
+repository: https://github.com/flarum/framework
+category: forum
+replaces:
+  - tool: circle
+    fit: partial
+    note: Discussions with tags, mentions and extensions, without chat, events or courses.
+  - tool: reddit
+    fit: partial
+    note: One community per site, not a network of communities.

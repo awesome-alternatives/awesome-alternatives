@@ -1,0 +1,14 @@
+name: Discourse
+repository: https://github.com/discourse/discourse
+category: forum
+replaces:
+  - tool: circle
+    fit: full
+    note: Discussions, chat, events and paid subscriptions through bundled plugins, without Circle's courses.
+  - tool: reddit
+    fit: partial
+    note: One community per site, with categories and topic voting, not a network of communities.
+  - tool: stack-internal
+    fit: partial
+    note: Accepted answers and post voting through bundled plugins, on top of a forum.
+deploy: [container]

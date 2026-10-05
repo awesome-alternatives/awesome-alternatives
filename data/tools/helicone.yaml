@@ -1,0 +1,8 @@
+name: Helicone
+repository: https://github.com/Helicone/helicone
+category: llm-observability
+replaces:
+  - tool: langsmith
+    fit: partial
+    note: Logs requests through a proxy gateway, with cost tracking and prompt versions, lighter on agent traces and evaluations.
+deploy: [compose]

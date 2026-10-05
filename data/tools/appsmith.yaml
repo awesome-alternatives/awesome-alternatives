@@ -1,0 +1,8 @@
+name: Appsmith
+repository: https://github.com/appsmithorg/appsmith
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: full
+    note: Widget-based app builder over databases and APIs, with JavaScript in every binding.
+deploy: [container, compose, helm]

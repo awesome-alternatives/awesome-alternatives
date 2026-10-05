@@ -1,0 +1,11 @@
+name: Opik
+repository: https://github.com/comet-ml/opik
+category: llm-observability
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Tracing, datasets, experiments and LLM-as-a-judge evaluations.
+  - tool: weave
+    fit: full
+    note: Tracing and evaluations of LLM calls, with production monitoring dashboards.
+deploy: [container, compose, helm]

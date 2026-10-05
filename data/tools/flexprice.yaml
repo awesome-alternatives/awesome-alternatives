@@ -1,0 +1,12 @@
+name: Flexprice
+repository: https://github.com/flexprice/flexprice
+category: billing
+terms: open-core
+replaces:
+  - tool: stripe-billing
+    fit: full
+    note: Usage metering, credits, plans and invoices, with some features in an enterprise directory.
+  - tool: chargebee
+    fit: partial
+    note: Focused on usage-based pricing and credits rather than subscription management alone.
+deploy: [compose]

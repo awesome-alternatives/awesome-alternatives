@@ -1,0 +1,14 @@
+name: PDF Arranger
+repository: https://github.com/pdfarranger/pdfarranger
+category: pdf-tools
+replaces:
+  - tool: smallpdf
+    fit: partial
+    note: Desktop app for merging, splitting, rotating, cropping and reordering pages, without conversion or signing.
+  - tool: ilovepdf
+    fit: partial
+    note: Desktop app for merging, splitting, rotating, cropping and reordering pages, without conversion or signing.
+  - tool: adobe-acrobat
+    fit: partial
+    note: Covers Acrobat's page organisation only.
+deploy: [binary]

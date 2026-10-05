@@ -1,0 +1,8 @@
+name: Apache Answer
+repository: https://github.com/apache/answer
+category: forum
+replaces:
+  - tool: stack-internal
+    fit: full
+    note: Questions, answers, votes, tags and reputation on your own server.
+deploy: [container, compose, helm, binary]

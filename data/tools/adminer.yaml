@@ -1,0 +1,8 @@
+name: Adminer
+repository: https://github.com/vrana/adminer
+category: database-client
+terms: open
+replaces:
+  - tool: tableplus
+    fit: partial
+    note: A single PHP file served from a web server, for browsing, editing and querying.
