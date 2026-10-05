@@ -4,6 +4,7 @@ export const MIN_AGE_DAYS = 30;
 export const INACTIVE_DAYS = 365;
 export const SPIKE_THRESHOLD = 50;
 export const SPIKE_FACTOR = 5;
+export const SPIKE_SHARE_PERCENT = 3;
 export const SPIKE_BASELINE_DAYS = 7;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -77,13 +78,14 @@ export function spikeOf(history: readonly StarPoint[], stars: number, now: Date)
   const daily = points.slice(1).map((point, i) => {
     const previous = points[i] as StarPoint;
     const days = Math.max(1, Math.round((Date.parse(point.at) - Date.parse(previous.at)) / DAY_MS));
-    return { rate: (point.stars - previous.stars) / days, on: point.at.slice(0, 10) };
+    return { rate: (point.stars - previous.stars) / days, before: previous.stars, on: point.at.slice(0, 10) };
   });
   const [first, ...rest] = daily;
   if (!first || daily.length < SPIKE_BASELINE_DAYS) return null;
   const peak = rest.reduce((best, day) => (day.rate > best.rate ? day : best), first);
   const usual = median(daily.filter((day) => day !== peak).map((day) => day.rate));
   if (peak.rate < SPIKE_THRESHOLD || peak.rate < SPIKE_FACTOR * Math.max(usual, 1)) return null;
+  if (peak.rate * 100 < SPIKE_SHARE_PERCENT * Math.max(peak.before, 1)) return null;
   return { gained: Math.round(peak.rate), usual: Math.round(usual), on: peak.on };
 }
 

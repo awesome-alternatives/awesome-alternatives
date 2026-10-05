@@ -185,8 +185,9 @@ Reviewed by a maintainer before merge, without blocking:
 - the repository's organisation has an IP allow list that turns GitHub's runners away
   (`unreadable-from-ci`), see [below](#organisations-with-an-ip-allow-list)
 
-The nightly refresh adds one more on listed tools: a day that gained 50 or more stars and at least
-five times the tool's usual daily pace over the last month. Bought stars arrive in bursts. A launch
+The nightly refresh adds one more on listed tools: a day that gained 50 or more stars, at least
+five times the tool's usual daily pace over the last month, and at least 3% of the stars the repository had
+the day before, so a large project's ordinary good day is not flagged. Bought stars arrive in bursts. A launch
 on Hacker News produces the same shape, which is why it is a warning and a person decides. GitHub no
 longer lists who starred a repository, so the refresh compares the star counts it kept from earlier
 days, and needs a week of them before it judges.
