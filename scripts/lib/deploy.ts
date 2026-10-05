@@ -30,10 +30,22 @@ interface ApiOwnedRepo {
 
 const SIBLING_PAGES = 10;
 
-const NOT_A_BINARY = /(^|[._-])(checksums?|sha\d*sums?|sbom|provenance|source)([._-]|$)|\.(sha\d*|md5|asc|sig|pem|crt|spdx|json|txt|intoto\.jsonl|bundle)$/i;
+const NOT_A_BINARY = [
+  /(^|[._-])(checksums?|sha\d*sums?|sbom|provenance|source)([._-]|$)/i,
+  /\.(sha\d*|md5|asc|sig|pem|crt|spdx|json|txt|intoto\.jsonl|bundle)$/i,
+];
+const DOCUMENT = /\.(md|txt|rst|adoc|html)$/i;
+const CONTAINERFILE = [/^(Dockerfile|Containerfile)([._-][\w.-]+)?$/i, /^[\w.-]+\.(Dockerfile|Containerfile)$/i];
 const PACKAGE_ASSET = /\.(deb|rpm|apk|msi|pkg|pkg\.tar\.\w+)$/i;
 
-const byName = (pattern: RegExp) => (path: string) => pattern.test(path.split("/").pop() ?? "");
+const fileName = (path: string) => path.split("/").pop() ?? "";
+
+const byName = (pattern: RegExp) => (path: string) => pattern.test(fileName(path));
+
+const isContainerfile = (path: string) => {
+  const name = fileName(path);
+  return !DOCUMENT.test(name) && CONTAINERFILE.some((pattern) => pattern.test(name));
+};
 
 const sibling = (generic: RegExp, own: RegExp) => (repo: string, name: string) =>
   generic.test(repo) || (repo.toLowerCase().includes(name.toLowerCase()) && own.test(repo));
@@ -47,7 +59,7 @@ interface Clue {
 
 const CLUES: Record<DeployMethod, Clue> = {
   container: {
-    file: byName(/^(?!.*\.(md|txt|rst|adoc|html)$)((Dockerfile|Containerfile)([._-][\w.-]+)?|[\w.-]+\.(Dockerfile|Containerfile))$/i),
+    file: isContainerfile,
     readme: /\b(docker|podman) (run|pull)\b|\bghcr\.io\/|\bquay\.io\/|\bdocker\.io\//i,
     sibling: sibling(/^(docker|dockerfiles|containers?)$/i, /docker|container|image/i),
   },
@@ -62,7 +74,7 @@ const CLUES: Record<DeployMethod, Clue> = {
     sibling: sibling(/^(helm|charts|helm-charts?)$/i, /helm|chart/i),
   },
   binary: {
-    asset: (name) => !NOT_A_BINARY.test(name),
+    asset: (name) => !NOT_A_BINARY.some((pattern) => pattern.test(name)),
   },
   package: {
     asset: (name) => PACKAGE_ASSET.test(name),
@@ -76,7 +88,7 @@ export function provenMethods({ name, paths, assets, readme, siblings }: DeployE
     if (
       (clue.file && paths?.some(clue.file)) ||
       (clue.asset && assets.some(clue.asset)) ||
-      (clue.readme && clue.readme.test(readme)) ||
+      clue.readme?.test(readme) ||
       (clue.sibling && siblings.some((repo) => clue.sibling?.(repo, name)))
     ) {
       proven.add(method);

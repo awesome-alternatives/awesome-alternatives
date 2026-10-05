@@ -26,7 +26,7 @@ export function messages(locale: Locale): Messages {
 }
 
 export function localeOf(pathname: string): Locale {
-  const first = pathname.split("/").filter(Boolean)[0] ?? "";
+  const first = pathname.split("/").find(Boolean) ?? "";
   return isLocale(first) ? first : DEFAULT_LOCALE;
 }
 
@@ -42,7 +42,8 @@ export function pathFor(locale: Locale, path: string): string {
   const rest = cut < 0 ? "" : path.slice(cut);
   const page = stripLocale(route);
   const bare = FILE.test(route) ? page.slice(0, -1) : page;
-  return `${locale === DEFAULT_LOCALE ? bare : `/${locale}${bare}`}${rest}`;
+  const localized = locale === DEFAULT_LOCALE ? bare : `/${locale}${bare}`;
+  return `${localized}${rest}`;
 }
 
 const FILE = /\.[a-z]+$/i;

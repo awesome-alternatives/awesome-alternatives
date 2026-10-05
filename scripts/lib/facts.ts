@@ -73,8 +73,7 @@ export function ownerOf(fullName: string): string {
 }
 
 export function trimmed(value: string | null | undefined): string | null {
-  const text = value?.trim();
-  return text ? text : null;
+  return value?.trim() || null;
 }
 
 export function websiteOf(blog: string | null | undefined): string | null {
@@ -188,17 +187,56 @@ export function releaseEntry(release: {
 const SUMMARY_LENGTH = 120;
 const BOILERPLATE = /^(what'?s changed|changes|changelog|full changelog|new contributors|release notes)\b/i;
 
+const AUTHOR_CREDIT = /^by @[\w-]+ in https?:\/\/\S+$/;
+const BARE_URL = /https?:\/\/\S+/g;
+
+function withLinkText(line: string): string {
+  let result = "";
+  let from = 0;
+  for (;;) {
+    const open = line.indexOf("[", from);
+    const close = open < 0 ? -1 : line.indexOf("]", open);
+    if (close < 0) break;
+    if (line[close + 1] !== "(") {
+      result += line.slice(from, close);
+      from = close;
+      continue;
+    }
+    const end = line.indexOf(")", close + 2);
+    if (end < 0) break;
+    result += line.slice(from, open) + line.slice(open + 1, close);
+    from = end + 1;
+  }
+  return result + line.slice(from);
+}
+
+function withoutAuthorCredit(line: string): string {
+  const start = line.lastIndexOf("by @");
+  const credited = start > 0 && /\s/.test(line.charAt(start - 1)) && AUTHOR_CREDIT.test(line.slice(start));
+  return credited ? line.slice(0, start).trimEnd() : line;
+}
+
+function withoutUrls(line: string): string {
+  let result = "";
+  let from = 0;
+  for (const match of line.matchAll(BARE_URL)) {
+    const before = line.slice(from, match.index);
+    result += (before.endsWith("(") ? before.slice(0, -1) : before).trimEnd();
+    from = match.index + match[0].length;
+  }
+  return result + line.slice(from);
+}
+
+function plainLine(raw: string): string {
+  const unmarked = withLinkText(raw.trim().replace(/^[-*+]\s+/, ""))
+    .replace(/\*\*|__|`/g, "")
+    .replace(/\*([^*]+)\*/g, "$1");
+  return withoutUrls(withoutAuthorCredit(unmarked)).trim();
+}
+
 export function summaryOf(body: string): string | null {
   for (const raw of body.split(/\r?\n/)) {
-    const line = raw
-      .trim()
-      .replace(/^[-*+]\s+/, "")
-      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-      .replace(/\*\*|__|`/g, "")
-      .replace(/\*([^*]+)\*/g, "$1")
-      .replace(/\s+by @[\w-]+ in https?:\/\/\S+$/, "")
-      .replace(/\s*\(?https?:\/\/\S+\)?/g, "")
-      .trim();
+    const line = plainLine(raw);
     if (!line || line.startsWith("#") || line.startsWith("<") || BOILERPLATE.test(line)) continue;
     return line.length > SUMMARY_LENGTH ? `${line.slice(0, SUMMARY_LENGTH - 1).trimEnd()}…` : line;
   }
@@ -241,7 +279,7 @@ export async function fetchMaintainerClaim(
       const file = await gh.get<ApiContent>(
         `/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`,
       );
-      if (!file || file.encoding !== "base64") return [];
+      if (file?.encoding !== "base64") return [];
       return claimedSlugs(Buffer.from(file.content, "base64").toString("utf8"));
     }),
   );

@@ -3,10 +3,11 @@ import type { Finding } from "./types.ts";
 export function renderFindings(findings: readonly Finding[], checked: readonly string[]): string {
   const errors = findings.filter((f) => f.severity === "error");
   const warnings = findings.filter((f) => f.severity === "warning");
+  const scope = checked.length ? checked.map((s) => `\`${s}\``).join(", ") : "nothing changed";
   const lines = [
     "## Catalog verification",
     "",
-    `Checked against GitHub: ${checked.length ? checked.map((s) => `\`${s}\``).join(", ") : "nothing changed"}.`,
+    `Checked against GitHub: ${scope}.`,
     "",
   ];
 

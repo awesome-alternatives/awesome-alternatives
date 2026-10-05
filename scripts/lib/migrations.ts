@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parse } from "yaml";
+import { byCodeUnit } from "./order.ts";
 import type { Finding, Tool } from "./types.ts";
 
 const FILE = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)\.md$/;
@@ -13,38 +14,54 @@ interface Frontmatter {
   sources?: unknown;
 }
 
+interface Pair {
+  from: string;
+  to: string;
+}
+
 export function checkMigrationPage(file: string, text: string, tools: readonly Tool[]): Finding[] {
-  const problems: string[] = [];
   const name = FILE.exec(file);
-  const [from, to] = name ? [name[1] as string, name[2] as string] : ["", ""];
-  if (!name) problems.push("the file name must be {from}--{to}.md with two slugs");
-
-  const parts = FRONTMATTER.exec(text.replace(/\r\n/g, "\n"));
+  const pair = name ? { from: name[1] as string, to: name[2] as string } : null;
+  const parts = FRONTMATTER.exec(text.replaceAll("\r\n", "\n"));
   const meta: Frontmatter = parts ? ((parse(parts[1] as string) as Frontmatter | null) ?? {}) : {};
-  if (!parts) problems.push("the file must start with a frontmatter block");
-  if (parts && !(parts[2] ?? "").trim()) problems.push("the page has no content");
 
+  const problems: string[] = [];
+  if (!pair) problems.push("the file name must be {from}--{to}.md with two slugs");
+  problems.push(...frontmatterProblems(parts));
   if (typeof meta.reviewed !== "string" || !DATE.test(meta.reviewed)) {
     problems.push("reviewed must be a YYYY-MM-DD date");
   }
-  const majors = meta.majors as Record<string, unknown> | undefined;
-  const keys = majors && typeof majors === "object" ? Object.keys(majors).sort() : [];
-  const validMajors =
-    keys.join() === [from, to].sort().join() && keys.every((k) => Number.isInteger(majors?.[k]) && (majors?.[k] as number) >= 0);
-  if (name && !validMajors) problems.push(`majors must give the major version of exactly ${from} and ${to}`);
-  const sources = meta.sources;
-  if (!Array.isArray(sources) || sources.length === 0 || !sources.every((s) => typeof s === "string" && s.startsWith("https://"))) {
-    problems.push("sources must list at least one https URL");
+  if (pair && !hasExactMajors(meta.majors, pair)) {
+    problems.push(`majors must give the major version of exactly ${pair.from} and ${pair.to}`);
   }
-
-  if (name) {
-    const replacing = tools.find((t) => t.slug === to);
-    const replacement = replacing?.replaces?.find((r) => r.tool === from);
-    if (!replacement) problems.push(`${to} does not list ${from} in its replaces`);
-    else if (!replacement.migration) problems.push(`${to} gives no official migration guide for ${from}`);
-  }
+  if (!hasHttpsSources(meta.sources)) problems.push("sources must list at least one https URL");
+  if (pair) problems.push(...replacementProblems(pair, tools));
 
   return problems.map((message) => ({ slug: file, severity: "error", code: "migration-page", message }));
+}
+
+function frontmatterProblems(parts: RegExpExecArray | null): string[] {
+  if (!parts) return ["the file must start with a frontmatter block"];
+  return (parts[2] ?? "").trim() ? [] : ["the page has no content"];
+}
+
+function hasExactMajors(value: unknown, { from, to }: Pair): boolean {
+  const majors = value as Record<string, unknown> | undefined;
+  const keys = majors && typeof majors === "object" ? Object.keys(majors).sort(byCodeUnit) : [];
+  return (
+    keys.join() === [from, to].sort(byCodeUnit).join() &&
+    keys.every((k) => Number.isInteger(majors?.[k]) && (majors?.[k] as number) >= 0)
+  );
+}
+
+function hasHttpsSources(sources: unknown): boolean {
+  return Array.isArray(sources) && sources.length > 0 && sources.every((s) => typeof s === "string" && s.startsWith("https://"));
+}
+
+function replacementProblems({ from, to }: Pair, tools: readonly Tool[]): string[] {
+  const replacement = tools.find((t) => t.slug === to)?.replaces?.find((r) => r.tool === from);
+  if (!replacement) return [`${to} does not list ${from} in its replaces`];
+  return replacement.migration ? [] : [`${to} gives no official migration guide for ${from}`];
 }
 
 export async function checkMigrationPages(root: string, tools: readonly Tool[]): Promise<Finding[]> {

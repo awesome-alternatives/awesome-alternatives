@@ -42,6 +42,11 @@ export async function findOpenIssue(gh: GitHub, repository: string, now: Date): 
   return { number: issue.number, url: issue.html_url, lastUpdateAt: lastUpdateAt(issue, comments ?? []) };
 }
 
+async function expect(res: Response, path: string): Promise<Response> {
+  if (!res.ok) throw new GitHubError(res.status, path, (await res.text()).slice(0, 200));
+  return res;
+}
+
 export function createIssueWriter(repository: string, token: string, fetchImpl: typeof fetch = fetch): IssueWriter {
   const base = `/repos/${repository}`;
 
@@ -57,11 +62,6 @@ export function createIssueWriter(repository: string, token: string, fetchImpl: 
       },
       body: JSON.stringify(body),
     });
-  }
-
-  async function expect(res: Response, path: string): Promise<Response> {
-    if (!res.ok) throw new GitHubError(res.status, path, (await res.text()).slice(0, 200));
-    return res;
   }
 
   async function ensureLabel(): Promise<void> {

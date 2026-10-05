@@ -64,5 +64,6 @@ export function fromSearch(filters: Filters, unchecked: readonly Unchecked[] = [
 export function alternativesHref(filters: Filters, unchecked: readonly Unchecked[] = []): string | null {
   if (!filters.replaces) return null;
   const query = listParams(fromSearch(filters, unchecked)).toString();
-  return `/alternatives/${filters.replaces}/${query ? `?${query}` : ""}`;
+  const search = query ? `?${query}` : "";
+  return `/alternatives/${filters.replaces}/${search}`;
 }

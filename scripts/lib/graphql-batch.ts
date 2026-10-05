@@ -94,13 +94,7 @@ export async function aliasedBatch<I, N, T>(gql: GraphQL, batch: readonly I[], s
     return apart(gql, batch, spec, [{ message: error.message }]);
   }
 
-  const byAlias = new Map<string, GraphQLErrorEntry[]>();
-  const global: GraphQLErrorEntry[] = [];
-  for (const error of answer.errors) {
-    const alias = aliasOf(error);
-    if (alias && isAliasOf(spec.alias, alias)) byAlias.set(alias, [...(byAlias.get(alias) ?? []), error]);
-    else global.push(error);
-  }
+  const { byAlias, global } = errorsByAlias(answer.errors, spec.alias);
   if (global.some(isQueryError)) throw new BatchRejected(global);
   const { data } = answer;
   if (global.length || !data) return apart(gql, batch, spec, global.length ? global : [{ message: "no data" }]);
@@ -110,6 +104,28 @@ export async function aliasedBatch<I, N, T>(gql: GraphQL, batch: readonly I[], s
     return { item, outcome: outcomeOf(data[alias], byAlias.get(alias) ?? [], spec.read) };
   });
   if (batch.length === 1) return answered.map(({ outcome }) => (outcome.status === "failed" ? failed(spec, outcome.errors) : outcome));
+  return retryFailuresAlone(gql, answered, spec);
+}
+
+function errorsByAlias(
+  errors: readonly GraphQLErrorEntry[],
+  prefix: string,
+): { byAlias: Map<string, GraphQLErrorEntry[]>; global: GraphQLErrorEntry[] } {
+  const byAlias = new Map<string, GraphQLErrorEntry[]>();
+  const global: GraphQLErrorEntry[] = [];
+  for (const error of errors) {
+    const alias = aliasOf(error);
+    if (alias && isAliasOf(prefix, alias)) byAlias.set(alias, [...(byAlias.get(alias) ?? []), error]);
+    else global.push(error);
+  }
+  return { byAlias, global };
+}
+
+async function retryFailuresAlone<I, N, T>(
+  gql: GraphQL,
+  answered: readonly { item: I; outcome: Outcome<T> }[],
+  spec: AliasedBatch<I, N, T>,
+): Promise<Outcome<T>[]> {
   const settled: Outcome<T>[] = [];
   for (const { item, outcome } of answered) {
     if (outcome.status === "failed") settled.push(...(await aliasedBatch(gql, [item], spec)));

@@ -14,6 +14,7 @@ import { mapLimit } from "./gather.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
 import { aliasedBatches, aliasedQuery, type BatchShape, describeErrors, everyRead, type Outcome } from "./graphql-batch.ts";
+import { byCodeUnit } from "./order.ts";
 import { platformsOf } from "./platforms.ts";
 import { isCurrent } from "./recheck.ts";
 import { newestTag, TAG_CANDIDATES } from "./tags.ts";
@@ -283,7 +284,7 @@ function mapDetail(node: GqlDetail): Detail {
     );
 
   return {
-    topics: node.repositoryTopics.nodes.map((n) => n.topic.name).sort(),
+    topics: node.repositoryTopics.nodes.map((n) => n.topic.name).sort(byCodeUnit),
     release,
     annotatedTag,
     releases,

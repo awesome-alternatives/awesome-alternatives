@@ -50,8 +50,19 @@ export function categoryTitle(
   category: { name: string; selfHost?: boolean },
   tools: readonly Pick<ToolView, "terms">[],
 ): string {
-  const forms = category.selfHost ? strings.titleSelfHost : allOpen(tools) ? strings.titleOpen : strings.title;
-  return plural(locale, forms, tools.length, { name: category.name, lower: lowerFirst(category.name) });
+  return plural(locale, categoryTitleForms(strings, category, tools), tools.length, {
+    name: category.name,
+    lower: lowerFirst(category.name),
+  });
+}
+
+function categoryTitleForms(
+  strings: CategoryStrings,
+  category: { selfHost?: boolean },
+  tools: readonly Pick<ToolView, "terms">[],
+): Plural {
+  if (category.selfHost) return strings.titleSelfHost;
+  return allOpen(tools) ? strings.titleOpen : strings.title;
 }
 
 export function categoryDescription(

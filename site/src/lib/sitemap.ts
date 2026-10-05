@@ -60,7 +60,7 @@ export function indexableAs(url: string, html: string): boolean {
 }
 
 export function locs(xml: string): string[] {
-  return [...xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/g)].map((m) => m[1]);
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 }
 
 export function auditSitemap(site: string, tools: CatalogEntry[], listed: string[]): SitemapAudit {

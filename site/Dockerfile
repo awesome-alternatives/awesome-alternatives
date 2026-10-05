@@ -6,7 +6,7 @@ COPY CONTRIBUTING.md ./
 COPY data/categories.yaml data/
 COPY data/migrations data/migrations/
 COPY data/benchmarks data/benchmarks/
-COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/contributors.ts scripts/lib/
+COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/contributors.ts scripts/lib/order.ts scripts/lib/
 COPY site/package.json site/pnpm-lock.yaml site/pnpm-workspace.yaml site/
 WORKDIR /repo/site
 RUN pnpm install --frozen-lockfile

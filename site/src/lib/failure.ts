@@ -77,7 +77,7 @@ export function guessTarget(query: string, names: Record<string, string>): strin
 }
 
 function mentions(text: string, word: string): boolean {
-  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
   return new RegExp(`(^|[^a-z0-9])${escaped}($|[^a-z0-9])`).test(text);
 }
 

@@ -1,8 +1,9 @@
 import { SearchError, failureFromResponse, failureFromThrown } from "./failure.ts";
 import { toQuery } from "./query.ts";
+import { trimTrailing } from "./trim.ts";
 import type { Filters, Readme, SearchResult, SecurityReport, ToolList } from "./types.ts";
 
-const API_URL = (import.meta.env.PUBLIC_API_URL ?? "/api").replace(/\/+$/, "");
+const API_URL = trimTrailing(import.meta.env.PUBLIC_API_URL ?? "/api", "/");
 const TIMEOUT_MS = 15_000;
 
 async function send<T>(path: string, init: RequestInit & { signal: AbortSignal }): Promise<T> {
@@ -33,7 +34,8 @@ export function search(q: string, signal: AbortSignal, offset = 0): Promise<Sear
 
 export function listTools(filters: Filters, signal: AbortSignal, offset = 0): Promise<ToolList> {
   const query = toQuery(filters);
-  return send(`/v1/tools?${query}${offset ? `&offset=${offset}` : ""}`, { signal });
+  const page = offset ? `&offset=${offset}` : "";
+  return send(`/v1/tools?${query}${page}`, { signal });
 }
 
 export function readme(slug: string, signal: AbortSignal): Promise<Readme> {

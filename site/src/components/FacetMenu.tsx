@@ -8,6 +8,17 @@ type Props<T extends string> = FacetProps<T> & { describe: (value: T) => string 
 
 const NAMED_UP_TO = 2;
 
+function summaryOf<T extends string>({
+  locale,
+  strings,
+  selected,
+  describe,
+}: Pick<Props<T>, "locale" | "strings" | "selected" | "describe">): string {
+  if (selected.length === 0) return strings.any;
+  if (selected.length <= NAMED_UP_TO) return selected.map(describe).join(", ");
+  return plural(locale, strings.chosen, selected.length);
+}
+
 export function FacetMenu<T extends string>({
   locale,
   strings,
@@ -69,15 +80,8 @@ export function FacetMenu<T extends string>({
     }
   };
 
-  const summary =
-    selected.length === 0
-      ? strings.any
-      : selected.length <= NAMED_UP_TO
-        ? selected.map(describe).join(", ")
-        : plural(locale, strings.chosen, selected.length);
-
   return (
-    <div className="facet facet-menu" ref={root} onKeyDown={onKeyDown}>
+    <div className="facet facet-menu" ref={root}>
       <span className="facet-label" id={`${id}-label`}>
         {label}
       </span>
@@ -91,14 +95,15 @@ export function FacetMenu<T extends string>({
           aria-labelledby={`${id}-label ${id}-value`}
           data-active={selected.length > 0}
           onClick={() => (open ? close() : setOpen(true))}
+          onKeyDown={onKeyDown}
         >
-          <span id={`${id}-value`}>{summary}</span>
+          <span id={`${id}-value`}>{summaryOf({ locale, strings, selected, describe })}</span>
           <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false">
             <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" d="m4 6 4 4 4-4" />
           </svg>
         </button>
         {open && (
-          <div className="facet-panel" id={`${id}-panel`} role="group" aria-labelledby={`${id}-label`}>
+          <fieldset className="facet-panel" id={`${id}-panel`} aria-labelledby={`${id}-label`}>
             <input
               type="search"
               ref={search}
@@ -109,6 +114,7 @@ export function FacetMenu<T extends string>({
               spellcheck={false}
               value={query}
               onInput={(event) => setQuery(event.currentTarget.value)}
+              onKeyDown={onKeyDown}
             />
             {shown.length === 0 ? (
               <p className="facet-none">{strings.noMatch}</p>
@@ -121,6 +127,7 @@ export function FacetMenu<T extends string>({
                         type="checkbox"
                         checked={selected.includes(value)}
                         onChange={() => onToggle(value)}
+                        onKeyDown={onKeyDown}
                       />
                       <span>{describe(value)}</span>
                       <span className="count">{count}</span>
@@ -137,11 +144,12 @@ export function FacetMenu<T extends string>({
                   onClear();
                   search.current?.focus();
                 }}
+                onKeyDown={onKeyDown}
               >
                 {strings.clearOne}
               </button>
             )}
-          </div>
+          </fieldset>
         )}
       </div>
     </div>

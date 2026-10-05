@@ -20,7 +20,8 @@ export function SearchRefine({
   onChange: (next: Refinement) => void;
 }) {
   return (
-    <div className="refine" role="group" aria-label={copy.label}>
+    <fieldset className="refine">
+      <legend className="visually-hidden">{copy.label}</legend>
       <label className="refine-field">
         <span>{copy.category}</span>
         <select
@@ -45,6 +46,6 @@ export function SearchRefine({
         />
         <span>{copy.dropIn}</span>
       </label>
-    </div>
+    </fieldset>
   );
 }

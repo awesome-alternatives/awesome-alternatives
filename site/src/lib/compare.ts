@@ -51,42 +51,62 @@ function carriesNote<T extends PairTool>(pair: Pair<T>): boolean {
   );
 }
 
-export function comparePairs<T extends PairTool>(tools: readonly T[]): Pair<T>[] {
-  const live = tools.filter((tool) => !tool.repo.archived);
+type PairsBySlug<T extends PairTool> = Map<string, Pair<T>>;
+
+function pairOf<T extends PairTool>(pairs: PairsBySlug<T>, one: T, other: T): Pair<T> {
+  const [a, b] = one.slug < other.slug ? [one, other] : [other, one];
+  const slug = pairSlug(a.slug, b.slug);
+  const known = pairs.get(slug);
+  if (known) return known;
+  const created: Pair<T> = { slug, a, b, edges: [], shared: [] };
+  pairs.set(slug, created);
+  return created;
+}
+
+function relationOf(replacement: Replacement): Relation {
+  return { fit: replacement.fit, note: replacement.note ?? null };
+}
+
+function addEdges<T extends PairTool>(pairs: PairsBySlug<T>, live: readonly T[]): void {
   const bySlug = new Map(live.map((tool) => [tool.slug, tool]));
-  const pairs = new Map<string, Pair<T>>();
+  for (const tool of live) {
+    for (const replacement of tool.replaces) {
+      const other = bySlug.get(replacement.tool);
+      if (other && other.slug !== tool.slug) {
+        pairOf(pairs, tool, other).edges.push({ from: tool.slug, to: other.slug, ...relationOf(replacement) });
+      }
+    }
+  }
+}
 
-  const pairOf = (one: T, other: T): Pair<T> => {
-    const [a, b] = one.slug < other.slug ? [one, other] : [other, one];
-    const slug = pairSlug(a.slug, b.slug);
-    const known = pairs.get(slug);
-    if (known) return known;
-    const created: Pair<T> = { slug, a, b, edges: [], shared: [] };
-    pairs.set(slug, created);
-    return created;
-  };
-
+function replacersByTarget<T extends PairTool>(live: readonly T[]): Map<string, Replacer<T>[]> {
   const replacers = new Map<string, Replacer<T>[]>();
   for (const tool of live) {
     for (const replacement of tool.replaces) {
-      const relation: Relation = { fit: replacement.fit, note: replacement.note ?? null };
-      const other = bySlug.get(replacement.tool);
-      if (other && other.slug !== tool.slug) {
-        pairOf(tool, other).edges.push({ from: tool.slug, to: other.slug, ...relation });
-      }
+      const relation = relationOf(replacement);
       replacers.set(replacement.tool, [...(replacers.get(replacement.tool) ?? []), { tool, relation }]);
     }
   }
+  return replacers;
+}
 
-  for (const [target, group] of replacers) {
+function addShared<T extends PairTool>(pairs: PairsBySlug<T>, live: readonly T[]): void {
+  for (const [target, group] of replacersByTarget(live)) {
     for (const [index, one] of group.entries()) {
       for (const other of group.slice(index + 1)) {
-        const pair = pairOf(one.tool, other.tool);
+        const pair = pairOf(pairs, one.tool, other.tool);
         const [a, b] = pair.a.slug === one.tool.slug ? [one, other] : [other, one];
         pair.shared.push({ target, a: a.relation, b: b.relation });
       }
     }
   }
+}
+
+export function comparePairs<T extends PairTool>(tools: readonly T[]): Pair<T>[] {
+  const live = tools.filter((tool) => !tool.repo.archived);
+  const pairs: PairsBySlug<T> = new Map();
+  addEdges(pairs, live);
+  addShared(pairs, live);
 
   return [...pairs.values()]
     .filter(carriesNote)

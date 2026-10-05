@@ -17,7 +17,8 @@ try {
   const counts = new Map<string, number>();
   for (const event of events) counts.set(event.type, (counts.get(event.type) ?? 0) + 1);
   const summary = [...counts].map(([type, n]) => `${n} ${type}`).join(", ");
-  console.log(`wrote ${events.length} events to ${EVENTS_PATH}${summary ? `: ${summary}` : ""}`);
+  const wrote = `wrote ${events.length} events to ${EVENTS_PATH}`;
+  console.log(summary ? `${wrote}: ${summary}` : wrote);
 } catch (error) {
   if (!(error instanceof IncompleteHistory)) throw error;
   console.error(error.message);

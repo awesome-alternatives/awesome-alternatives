@@ -112,5 +112,5 @@ export function techArticle(
 }
 
 export function serialize(data: StructuredData): string {
-  return JSON.stringify(data).replace(/</g, "\\u003c");
+  return JSON.stringify(data).replaceAll("<", String.raw`\u003c`);
 }

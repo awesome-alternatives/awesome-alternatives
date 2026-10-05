@@ -25,6 +25,10 @@ describe("provenMethods", () => {
     assert.deepEqual(proven({ paths: ["build/package/Containerfile"] }), ["container"]);
     assert.deepEqual(proven({ paths: ["docker/server.Dockerfile"] }), ["container"]);
     assert.deepEqual(proven({ paths: ["docs/dockerfile-guide.md"] }), []);
+    assert.deepEqual(proven({ paths: ["Dockerfile.dev"] }), ["container"]);
+    assert.deepEqual(proven({ paths: ["build/Dockerfile_prod"] }), ["container"]);
+    assert.deepEqual(proven({ paths: ["Containerfile.md"] }), []);
+    assert.deepEqual(proven({ paths: ["server.Containerfile.txt"] }), []);
   });
 
   it("reads a container from a README that pulls or runs an image", () => {
@@ -47,6 +51,8 @@ describe("provenMethods", () => {
   it("reads binaries from release assets that are not checksums, signatures or metadata", () => {
     assert.deepEqual(proven({ assets: ["tool_linux_amd64.tar.gz"] }), ["binary"]);
     assert.deepEqual(proven({ assets: ["checksums.txt", "tool.tar.gz.sig", "tool.sbom.json", "SHA256SUMS"] }), []);
+    assert.deepEqual(proven({ assets: ["tool-1.0-source.tar.gz", "tool_sha512sums", "tool.intoto.jsonl", "tool.pem", "tool.bundle"] }), []);
+    assert.deepEqual(proven({ assets: ["sourcegraph-cli.tar.gz"] }), ["binary"]);
   });
 
   it("reads OS packages from .deb or .rpm assets, or a package manager install in the README", () => {
