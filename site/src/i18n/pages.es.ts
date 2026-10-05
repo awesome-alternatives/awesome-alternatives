@@ -60,6 +60,8 @@ export const pages: Pages = {
         appBefore: "La marca también se pone cuando",
         appLink: "la app de GitHub awesome-alternatives",
         appAfter: "está instalada en el repositorio, porque instalarla exige ser administrador del mismo.",
+        stale:
+          "El archivo fecha la verificación con su último commit, y una ficha editada después de esa fecha muestra «editada desde la verificación» hasta que los mantenedores hagan un nuevo commit en el archivo, para lo que basta un comentario # con fecha.",
       },
       archived: {
         term: "archivado",

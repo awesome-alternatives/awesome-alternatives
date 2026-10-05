@@ -1,4 +1,5 @@
-import { fetchMaintainerClaim, fetchRelease, fetchReleases, fetchRepo } from "./facts.ts";
+import type { ClaimFile } from "./claim-dates.ts";
+import { claimLocations, fetchClaimFile, fetchMaintainerClaim, fetchRelease, fetchReleases, fetchRepo } from "./facts.ts";
 import type { MappedRepository } from "./facts-graphql.ts";
 import type { GitHub } from "./github.ts";
 import { platformsOf } from "./platforms.ts";
@@ -10,6 +11,10 @@ interface ApiLatest {
 
 interface ApiSearch {
   total_count: number;
+}
+
+interface ApiCommitDate {
+  commit: { committer: { date: string } | null };
 }
 
 export async function readAnonymously(gh: GitHub, tool: Pick<Tool, "repository" | "path">): Promise<Read<MappedRepository>> {
@@ -60,4 +65,17 @@ export async function retryBehindAllowList(
     }
   }
   return retried;
+}
+
+export async function readClaimFilesAnonymously(gh: GitHub, fullName: string, branch: string, path: string | null): Promise<ClaimFile[]> {
+  return Promise.all(
+    claimLocations(path).map(async (location) => {
+      const query = `sha=${encodeURIComponent(branch)}&path=${encodeURIComponent(location)}&per_page=1`;
+      const [slugs, commits] = await Promise.all([
+        fetchClaimFile(gh, fullName, branch, location),
+        gh.get<ApiCommitDate[]>(`/repos/${fullName}/commits?${query}`),
+      ]);
+      return { slugs, at: commits?.[0]?.commit.committer?.date ?? null };
+    }),
+  );
 }

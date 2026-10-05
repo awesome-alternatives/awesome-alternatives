@@ -21,7 +21,7 @@ import { trendOf } from "./trending.ts";
 import { type EnrichedTool, GONE, isFlagCode, type OwnerFacts, type Read, type RepoFacts, type Tool } from "./types.ts";
 
 export interface Enricher {
-  enrich(tool: Tool, read: Read<RepositoryFacts>): EnrichedTool | null;
+  enrich(tool: Tool, read: Read<RepositoryFacts>, verifiedAt: string | null): EnrichedTool | null;
 }
 
 function whyUnread(tool: Tool, read: Exclude<Read<RepositoryFacts>, { status: "read" | "gone" }>): string {
@@ -66,7 +66,7 @@ export function createEnricher(
   const edits = parseEditedLog(git(EDITED_LOG_ARGS));
 
   return {
-    enrich(tool, read) {
+    enrich(tool, read, verifiedAt) {
       const editedAt = edits.get(tool.slug) ?? now.toISOString();
       if (read.status === "gone") {
         console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
@@ -98,6 +98,7 @@ export function createEnricher(
         contributors: facts.contributors,
         platforms: facts.platforms,
         maintainerVerified: isMaintainerVerified(tool.slug, facts.claim, facts.repo.fullName, installed),
+        verifiedAt: facts.claim.includes(tool.slug) ? verifiedAt : null,
         flags,
         terms: termsOf(tool.terms, facts.repo.license),
         capabilities: tool.capabilities ?? {},

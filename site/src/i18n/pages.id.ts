@@ -60,6 +60,8 @@ export const pages: Pages = {
         appBefore: "Tanda ini juga diberikan jika",
         appLink: "GitHub App awesome-alternatives",
         appAfter: "dipasang di repositori tersebut, karena memasang app di sana membutuhkan hak admin.",
+        stale:
+          "File itu memberi tanggal verifikasi dari commit terakhirnya, dan entri yang diedit setelah tanggal itu menampilkan “diedit sejak verifikasi” sampai maintainer melakukan commit baru pada file tersebut, cukup dengan komentar # bertanggal.",
       },
       archived: {
         term: "diarsipkan",

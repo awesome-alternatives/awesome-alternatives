@@ -117,6 +117,41 @@ describe("refreshTools", () => {
     );
   });
 
+  it("dates the verification of a tool its .awesome-alternatives file names, and not of one the app verifies", async () => {
+    const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
+    const root = await checkout(snapshot);
+    const inner = github(new Set());
+    const claimDates: string[][] = [];
+    const gql: GraphQL = {
+      async query<T>(query: string, variables: Record<string, string>) {
+        if (query.includes("root: object(")) {
+          claimDates.push(Object.entries(variables).flatMap(([key, value]) => (key.startsWith("n") ? [value] : [])));
+          const history = { root: { nodes: [{ committedDate: "2026-09-10T00:00:00Z" }] } };
+          const data: Record<string, unknown> = { r0: { root: { text: "fine\n" }, defaultBranchRef: { target: history } } };
+          return { data, errors: [] } as GraphQLResponse<T>;
+        }
+        const answer = await inner.query<Record<string, GqlPulse | null>>(query, variables);
+        if (query.includes("...Pulse")) {
+          for (const node of Object.values(answer.data ?? {})) {
+            if (node?.nameWithOwner === "acme/fine") node.claim = { text: "fine\n" };
+          }
+        }
+        return answer as GraphQLResponse<T>;
+      },
+      spent: inner.spent,
+    };
+    const clients = { gql, gh: rest, anonymous: rest, installations: installedOnAcme() };
+    const { tools } = await refreshTools(root, snapshot, clients, [fine, other], [fine, other], NOW);
+    assert.deepEqual(claimDates, [["fine"]]);
+    assert.deepEqual(
+      tools.map((t) => [t.slug, t.maintainerVerified, t.verifiedAt]),
+      [
+        ["fine", true, "2026-09-10T00:00:00.000Z"],
+        ["other", true, null],
+      ],
+    );
+  });
+
   it("keeps the published detail of a repository nothing moved in, unless the run is forced", async () => {
     const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [published(other, 1, false)] };
     const root = await checkout(snapshot);

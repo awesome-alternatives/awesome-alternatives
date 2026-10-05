@@ -61,6 +61,8 @@ export const pages: Pages = {
         appBefore: "Das Kennzeichen wird auch gesetzt, wenn",
         appLink: "die GitHub App awesome-alternatives",
         appAfter: "im Repository installiert ist, denn dafür braucht es Adminrechte.",
+        stale:
+          "Die Datei datiert die Bestätigung auf ihren letzten Commit, und ein danach bearbeiteter Eintrag zeigt „seit der Bestätigung bearbeitet“, bis die Maintainer die Datei erneut committen, wofür ein datierter #-Kommentar genügt.",
       },
       archived: {
         term: "archiviert",

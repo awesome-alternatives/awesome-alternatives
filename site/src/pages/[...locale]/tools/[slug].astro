@@ -27,6 +27,7 @@ import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { migrationPath } from "../../../lib/migrations.ts";
 import { breadcrumbList, softwareSourceCode } from "../../../lib/structuredData.ts";
 import { slugify } from "../../../lib/slug.ts";
+import { editedSinceVerification } from "../../../lib/verification.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } })))) satisfies GetStaticPaths;
@@ -53,6 +54,7 @@ const related = tools
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
+const verifiedNote = editedSinceVerification(tool) ? format(m.tool.verifiedOn, { date: day(tool.verifiedAt ?? null) ?? "" }) : null;
 const capabilityList = Object.entries(tool.capabilities).map(([key, capability]) => ({
   label: category?.capabilities?.[key]?.label ?? key,
   docs: capability.docs,
@@ -112,6 +114,13 @@ const canonical = canonicalForTool(tool.slug, replacedBy.length);
         label={tool.maintainerVerified ? m.tool.verified : m.tool.unverified}
         href={`${pathFor(locale, "/about/")}#verified`}
       />
+      {
+        verifiedNote && (
+          <a class="mark mark-stale" href={`${pathFor(locale, "/about/")}#verified`} title={verifiedNote}>
+            {m.tool.editedSinceVerification}
+          </a>
+        )
+      }
       {
         repo.archived && (
           <a class="mark mark-archived" href={`${pathFor(locale, "/about/")}#archived`}>
@@ -221,6 +230,7 @@ const canonical = canonicalForTool(tool.slug, replacedBy.length);
             )
           }
           <a href={historyUrl(tool.slug)}>{format(m.tool.edited, { date: day(tool.editedAt) ?? "" })}</a>
+          {verifiedNote && <span>{verifiedNote}</span>}
         </p>
 
         {

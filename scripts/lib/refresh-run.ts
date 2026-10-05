@@ -1,5 +1,6 @@
 import type { Installations } from "./app.ts";
 import type { CommitWindow } from "./commit-window.ts";
+import { readVerifiedAt } from "./claim-dates.ts";
 import { createEnricher, fetchOwners, ownerLogins } from "./enrich.ts";
 import { retryBehindAllowList } from "./facts-anonymous.ts";
 import { completeRepositories, readRepositories, type RepositoryFacts } from "./facts-graphql.ts";
@@ -46,15 +47,16 @@ export async function refreshTools(
         facts: await timed("packages", () => withPackageReleases(targets, completed.facts, releases, registry)),
       })),
       timed("owners", () => fetchOwners(gql, anonymous, ownerLogins(targets, mapped, previous), previous.owners)),
+      timed("verification", () => readVerifiedAt(gql, anonymous, targets, mapped, published)),
     ]);
   };
-  const [[completed, owners], installed] = await Promise.all([
+  const [[completed, owners, verifiedAt], installed] = await Promise.all([
     readFacts(),
     timed("installations", async () => (installations ? installations.list() : null)),
   ]);
   const enricher = createEnricher(root, previous, installed, declared, now);
   const tools = targets
-    .flatMap((tool) => enricher.enrich(tool, completed.facts.get(tool.slug) ?? GONE) ?? [])
+    .flatMap((tool) => enricher.enrich(tool, completed.facts.get(tool.slug) ?? GONE, verifiedAt.get(tool.slug) ?? null) ?? [])
     .sort((a, b) => a.slug.localeCompare(b.slug));
   return { tools, owners, facts: completed.facts, windows: completed.windows };
 }

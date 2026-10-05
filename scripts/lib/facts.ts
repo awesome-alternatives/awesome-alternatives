@@ -267,21 +267,22 @@ export function claimedSlugs(text: string): string[] {
     .filter((line) => line.length > 0);
 }
 
+export function claimLocations(path: string | null | undefined): string[] {
+  return path ? [MAINTAINER_FILE, `${path}/${MAINTAINER_FILE}`] : [MAINTAINER_FILE];
+}
+
+export async function fetchClaimFile(gh: GitHub, fullName: string, branch: string, location: string): Promise<string[]> {
+  const file = await gh.get<ApiContent>(`/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`);
+  if (file?.encoding !== "base64") return [];
+  return claimedSlugs(Buffer.from(file.content, "base64").toString("utf8"));
+}
+
 export async function fetchMaintainerClaim(
   gh: GitHub,
   fullName: string,
   branch: string,
   path?: string,
 ): Promise<string[]> {
-  const locations = path ? [MAINTAINER_FILE, `${path}/${MAINTAINER_FILE}`] : [MAINTAINER_FILE];
-  const found = await Promise.all(
-    locations.map(async (location) => {
-      const file = await gh.get<ApiContent>(
-        `/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`,
-      );
-      if (file?.encoding !== "base64") return [];
-      return claimedSlugs(Buffer.from(file.content, "base64").toString("utf8"));
-    }),
-  );
+  const found = await Promise.all(claimLocations(path).map((location) => fetchClaimFile(gh, fullName, branch, location)));
   return found.flat();
 }

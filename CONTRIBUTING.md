@@ -238,6 +238,20 @@ the repository verifies every entry listed from it as well, without a file: inst
 repository takes admin rights on it. The app only reads the repository's contents. Either way is
 enough, and a repository can do both. A suspended installation does not count.
 
+A file also gives the verification a date: that of the last commit on the default branch that
+touched it (for an entry with a `path`, the later of the two files that name the entry). When the
+entry is edited in this catalog after that date, its page says "edited since verification", since
+the maintainers vouched for an earlier version of it. To confirm the current entry, commit to the
+file again. A dated comment is enough:
+
+```
+release-plz
+# reviewed 2026-10-06
+```
+
+The mention goes away at the next refresh. Verification through the app carries no date, so an
+entry verified only that way never shows the mention.
+
 ### Refreshing your entry after a release
 
 The catalog is rebuilt every night. To have a new release show up within minutes instead, either

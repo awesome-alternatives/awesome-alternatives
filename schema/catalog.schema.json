@@ -130,6 +130,7 @@
         "contributors": { "oneOf": [{ "$ref": "#/$defs/contributors" }, { "type": "null" }] },
         "platforms": { "type": "array", "items": { "$ref": "#/$defs/platform" } },
         "maintainerVerified": { "type": "boolean" },
+        "verifiedAt": { "oneOf": [{ "$ref": "#/$defs/timestamp" }, { "type": "null" }] },
         "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "terms": { "enum": ["open", "source-available", "open-core", "unknown"] },
         "capabilities": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["docs"], "properties": {"docs": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "minLength": 1}}}},
