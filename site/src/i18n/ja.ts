@@ -245,6 +245,9 @@ export const ja: Messages = {
     capabilityDocs: "ドキュメント ↗",
     checked: "{date}に GitHub から取得。",
     edited: "エントリの最終編集日：{date}。",
+    editedSinceVerification: "確認後に編集あり",
+    verifiedOn:
+      "メンテナーは{date}にこのエントリを確認しました。その後エントリが変更されています。メンテナーが .awesome-alternatives ファイルを更新すると、再び確認済みになります。",
   },
 
   compare: {

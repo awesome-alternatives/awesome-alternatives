@@ -193,6 +193,7 @@ export interface EnrichedTool {
   contributors?: ActiveContributors | null;
   platforms?: Platform[];
   maintainerVerified: boolean;
+  verifiedAt?: string | null;
   flags: FlagCode[];
   terms: Terms;
   capabilities: Record<string, Capability>;

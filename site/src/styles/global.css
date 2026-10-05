@@ -1019,7 +1019,8 @@ button.link {
   transform: none;
 }
 
-.mark-archived {
+.mark-archived,
+.mark-stale {
   color: var(--muted);
   border-color: var(--dim);
   vertical-align: middle;

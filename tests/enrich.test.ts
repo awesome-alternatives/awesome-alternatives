@@ -3,10 +3,11 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { createEnricher, fetchOwners } from "../scripts/lib/enrich.ts";
+import type { RepositoryFacts } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
 import type { GraphQL } from "../scripts/lib/graphql.ts";
 import { CATALOG_PATH, publish, type Snapshot } from "../scripts/lib/publish.ts";
-import { BEHIND_ALLOW_LIST, type OwnerFacts } from "../scripts/lib/types.ts";
+import { BEHIND_ALLOW_LIST, type EnrichedTool, type OwnerFacts, type Read } from "../scripts/lib/types.ts";
 import { catalogOf, checkout, declared, published } from "./catalog-checkout.ts";
 
 const NOW = new Date("2026-09-26T03:17:00.000Z");
@@ -23,7 +24,7 @@ describe("refresh of a tool behind an IP allow list", () => {
     const enricher = createEnricher(root, snapshot, null, [neon, ripgrep], NOW);
     const edited = { ...neon, category: "relational-database" };
 
-    const kept = enricher.enrich(edited, BEHIND_ALLOW_LIST);
+    const kept = enricher.enrich(edited, BEHIND_ALLOW_LIST, null);
     assert.ok(kept);
     assert.deepEqual(kept.repo, before.repo);
     assert.deepEqual(kept.starHistory, before.starHistory);
@@ -45,7 +46,7 @@ describe("refresh of a tool behind an IP allow list", () => {
     const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [listed] };
     const root = await checkout(snapshot);
     const enricher = createEnricher(root, snapshot, null, [neon, ripgrep], NOW);
-    assert.equal(enricher.enrich(neon, BEHIND_ALLOW_LIST), null);
+    assert.equal(enricher.enrich(neon, BEHIND_ALLOW_LIST, null), null);
     await publish(root, catalogOf(neon, ripgrep), { checkedAt: NOW.toISOString(), owners: {}, tools: [listed] });
   });
 });
@@ -59,7 +60,7 @@ describe("refresh of a tool whose repository GitHub keeps failing on", () => {
     const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
     const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon, ripgrep], NOW);
 
-    const kept = enricher.enrich(ripgrep, unreadable);
+    const kept = enricher.enrich(ripgrep, unreadable, null);
     assert.ok(kept);
     assert.deepEqual(kept.repo, before.repo);
     assert.deepEqual(kept.release, before.release);
@@ -71,7 +72,40 @@ describe("refresh of a tool whose repository GitHub keeps failing on", () => {
     t.mock.method(console, "error", () => {});
     const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
     const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon, ripgrep], NOW);
-    assert.equal(enricher.enrich(ripgrep, unreadable), null);
+    assert.equal(enricher.enrich(ripgrep, unreadable, null), null);
+  });
+});
+
+describe("the verification date of a tool", () => {
+  const verifiedOn = "2026-09-20T08:00:00.000Z";
+  const facts = (before: EnrichedTool, claim: string[]): Read<RepositoryFacts> => ({
+    status: "read",
+    value: { repo: before.repo, release: null, releases: [], claim, openIssues: 0, contributors: null, platforms: [] },
+  });
+
+  it("is the one read for its .awesome-alternatives file when the file names it", async () => {
+    const before = published(ripgrep, 61000, false);
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, null, [ripgrep], NOW);
+    const tool = enricher.enrich(ripgrep, facts(before, ["ripgrep"]), verifiedOn);
+    assert.deepEqual([tool?.maintainerVerified, tool?.verifiedAt], [true, verifiedOn]);
+  });
+
+  it("is null for a tool verified only through the app, which carries no date", async () => {
+    const before = published(ripgrep, 61000, false);
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
+    const installed = { accounts: new Set(["burntsushi"]), repositories: new Set<string>() };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, installed, [ripgrep], NOW);
+    const tool = enricher.enrich(ripgrep, facts(before, ["ripgrep-all"]), verifiedOn);
+    assert.deepEqual([tool?.maintainerVerified, tool?.verifiedAt], [true, null]);
+  });
+
+  it("is kept from the last published run when the repository cannot be read", async (t) => {
+    t.mock.method(console, "error", () => {});
+    const before = { ...published(neon, 23132, true), verifiedAt: verifiedOn };
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon], NOW);
+    assert.equal(enricher.enrich(neon, BEHIND_ALLOW_LIST, null)?.verifiedAt, verifiedOn);
   });
 });
 

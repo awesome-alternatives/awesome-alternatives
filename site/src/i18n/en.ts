@@ -244,6 +244,9 @@ export const en = {
     capabilityDocs: "docs ↗",
     checked: "Read from GitHub on {date}.",
     edited: "Entry last edited on {date}.",
+    editedSinceVerification: "edited since verification",
+    verifiedOn:
+      "Its maintainers verified this entry on {date}. It has changed since, and they confirm it again by updating their .awesome-alternatives file.",
   },
 
   compare: {

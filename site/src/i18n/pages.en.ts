@@ -58,6 +58,8 @@ export const pages = {
         appBefore: "The mark is also set when the",
         appLink: "awesome-alternatives GitHub App",
         appAfter: "is installed on the repository, since installing an app on it takes admin rights.",
+        stale:
+          "A file dates the verification by its last commit, and an entry edited after that date shows “edited since verification” until the maintainers commit to the file again, where a dated # comment is enough.",
       },
       archived: {
         term: "archived",

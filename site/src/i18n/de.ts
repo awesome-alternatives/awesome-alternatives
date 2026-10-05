@@ -246,6 +246,9 @@ export const de: Messages = {
     capabilityDocs: "Doku ↗",
     checked: "Am {date} von GitHub gelesen.",
     edited: "Eintrag zuletzt am {date} bearbeitet.",
+    editedSinceVerification: "seit der Bestätigung bearbeitet",
+    verifiedOn:
+      "Die Maintainer haben diesen Eintrag am {date} bestätigt. Seitdem hat er sich geändert. Sie bestätigen ihn erneut, indem sie ihre Datei .awesome-alternatives aktualisieren.",
   },
 
   compare: {

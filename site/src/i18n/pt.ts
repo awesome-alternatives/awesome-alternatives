@@ -245,6 +245,9 @@ export const pt: Messages = {
     capabilityDocs: "docs ↗",
     checked: "Lido do GitHub em {date}.",
     edited: "Entrada editada pela última vez em {date}.",
+    editedSinceVerification: "editada desde a verificação",
+    verifiedOn:
+      "Os mantenedores verificaram esta entrada em {date}. Ela mudou desde então, e eles a confirmam de novo atualizando o arquivo .awesome-alternatives.",
   },
 
   compare: {

@@ -245,6 +245,9 @@ export const id: Messages = {
     capabilityDocs: "dokumentasi ↗",
     checked: "Dibaca dari GitHub pada {date}.",
     edited: "Entri terakhir diedit pada {date}.",
+    editedSinceVerification: "diedit sejak verifikasi",
+    verifiedOn:
+      "Maintainer-nya memverifikasi entri ini pada {date}. Entri ini sudah berubah sejak itu, dan mereka mengonfirmasinya lagi dengan memperbarui file .awesome-alternatives mereka.",
   },
 
   compare: {
