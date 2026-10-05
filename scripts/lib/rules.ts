@@ -79,8 +79,9 @@ export function spikeOf(history: readonly StarPoint[], stars: number, now: Date)
     const days = Math.max(1, Math.round((Date.parse(point.at) - Date.parse(previous.at)) / DAY_MS));
     return { rate: (point.stars - previous.stars) / days, on: point.at.slice(0, 10) };
   });
-  if (daily.length < SPIKE_BASELINE_DAYS) return null;
-  const peak = daily.reduce((best, day) => (day.rate > best.rate ? day : best));
+  const [first, ...rest] = daily;
+  if (!first || daily.length < SPIKE_BASELINE_DAYS) return null;
+  const peak = rest.reduce((best, day) => (day.rate > best.rate ? day : best), first);
   const usual = median(daily.filter((day) => day !== peak).map((day) => day.rate));
   if (peak.rate < SPIKE_THRESHOLD || peak.rate < SPIKE_FACTOR * Math.max(usual, 1)) return null;
   return { gained: Math.round(peak.rate), usual: Math.round(usual), on: peak.on };

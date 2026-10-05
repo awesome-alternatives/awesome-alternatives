@@ -40,7 +40,8 @@ const NUMBER_ARRAY = /\[\n\s+(-?\d+(?:,\n\s+-?\d+)*)\n\s*\]/g;
 
 export function catalogJson(catalog: unknown): string {
   const indented = JSON.stringify(catalog, null, 2);
-  return `${indented.replace(NUMBER_ARRAY, (_, numbers: string) => `[${numbers.split(/,\s+/).join(",")}]`)}\n`;
+  const compacted = indented.replace(NUMBER_ARRAY, (_, numbers: string) => `[${numbers.replaceAll(/,\s+/g, ",")}]`);
+  return `${compacted}\n`;
 }
 
 export async function readPublished(root: string): Promise<Snapshot> {
@@ -61,7 +62,7 @@ export async function publish(
   root: string,
   catalog: Catalog,
   { checkedAt, owners, tools }: Snapshot,
-  { now, history }: PublishContext = { now: new Date(), history: null },
+  { now = new Date(), history = null }: Partial<PublishContext> = {},
 ): Promise<void> {
   const previous = await readPublished(root);
   const lost = lostTools(previous.tools, catalog.tools, tools);

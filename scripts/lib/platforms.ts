@@ -1,7 +1,33 @@
 import { ARCHITECTURES, type Architecture, OPERATING_SYSTEMS, type OperatingSystem, type Platform } from "./types.ts";
 
-const SIDECAR =
-  /\.(sha1|sha256|sha512|sha256sum|sha512sum|md5|sig|asc|pem|crt|cert|minisig|sigstore|bundle|sbom|spdx|cdx|intoto\.jsonl|json|txt|yml|yaml|blockmap|zsync)$/;
+const SIDECAR_EXTENSIONS = [
+  "sha1",
+  "sha256",
+  "sha512",
+  "sha256sum",
+  "sha512sum",
+  "md5",
+  "sig",
+  "asc",
+  "pem",
+  "crt",
+  "cert",
+  "minisig",
+  "sigstore",
+  "bundle",
+  "sbom",
+  "spdx",
+  "cdx",
+  "intoto.jsonl",
+  "json",
+  "txt",
+  "yml",
+  "yaml",
+  "blockmap",
+  "zsync",
+];
+
+const isSidecar = (name: string) => SIDECAR_EXTENSIONS.some((extension) => name.endsWith(`.${extension}`));
 
 const OS_TOKENS: Readonly<Record<string, OperatingSystem>> = {
   linux: "linux",
@@ -91,7 +117,7 @@ export function platformsOf(assetNames: readonly string[]): Platform[] {
   const found = new Map<OperatingSystem, Set<Architecture>>();
   for (const raw of assetNames) {
     const name = raw.trim().toLowerCase();
-    if (SIDECAR.test(name)) continue;
+    if (isSidecar(name)) continue;
     const tokens = tokensOf(name);
     const architectures = tokens.flatMap((token) => ARCH_TOKENS[token] ?? []);
     for (const os of systemsOf(name, tokens)) {

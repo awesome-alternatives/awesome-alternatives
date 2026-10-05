@@ -29,7 +29,8 @@
         "scripts/lib/types.ts",
         "scripts/lib/rules.ts",
         "scripts/lib/trending.ts",
-        "scripts/lib/contributors.ts"
+        "scripts/lib/contributors.ts",
+        "scripts/lib/order.ts"
       ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
     },

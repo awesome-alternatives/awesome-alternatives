@@ -53,7 +53,7 @@ export function checkBenchmarkFile(file: string, text: string, tools: readonly R
   if (!name) problems.push("the file name must be {a}--{b}.yaml with two slugs");
   else {
     const [a, b] = pair as [string, string];
-    if (a >= b) problems.push(`the slugs must be in alphabetical order: ${[a, b].sort().join("--")}.yaml`);
+    if (a >= b) problems.push(`the slugs must be in alphabetical order: ${b}--${a}.yaml`);
     for (const slug of pair) if (!tools.some((t) => t.slug === slug)) problems.push(`${slug} has no entry in data/tools`);
     if (problems.length === 0 && !related(tools, a, b)) {
       problems.push(`${a} and ${b} have no comparison page: neither replaces the other and they replace nothing in common`);

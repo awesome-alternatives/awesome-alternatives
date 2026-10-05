@@ -141,6 +141,20 @@ describe("summaryOf", () => {
     );
   });
 
+  it("reduces a link to its text only when brackets are followed by a target", () => {
+    assert.equal(summaryOf("[docs] and [guide](https://x.dev/guide)"), "[docs] and guide");
+    assert.equal(summaryOf("see [a [b](https://x) c"), "see a [b c");
+  });
+
+  it("drops a bare URL with the parenthesis and spaces around it", () => {
+    assert.equal(summaryOf("Fix the crash (https://github.com/o/r/issues/1)"), "Fix the crash");
+  });
+
+  it("drops the author credit only at the end of the line", () => {
+    assert.equal(summaryOf("Credit goes by @bob to the team"), "Credit goes by @bob to the team");
+    assert.equal(summaryOf("Fix sync by @bob in https://github.com/o/r/pull/3 and more"), "Fix sync by @bob in and more");
+  });
+
   it("strips emphasis and inline code markers", () => {
     assert.equal(summaryOf("**Breaking:** rename `tagTemplate`"), "Breaking: rename tagTemplate");
   });

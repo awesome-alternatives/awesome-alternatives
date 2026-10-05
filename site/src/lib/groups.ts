@@ -19,6 +19,6 @@ export function groupTools<T extends ToolView>(tools: readonly T[], pick: (tool:
     else throw new Error(`"${group.label}" and "${label}" both slugify to "${slug}"`);
   }
   return [...groups.values()]
-    .map((group) => ({ ...group, tools: group.tools.sort((a, b) => b.repo.stars - a.repo.stars) }))
+    .map((group) => ({ ...group, tools: group.tools.toSorted((a, b) => b.repo.stars - a.repo.stars) }))
     .sort((a, b) => b.tools.length - a.tools.length || a.label.localeCompare(b.label));
 }

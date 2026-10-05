@@ -1,5 +1,5 @@
 import { ACTIVE_DAYS, HISTORY_LIMIT } from "../../../scripts/lib/contributors.ts";
-import type { DeployMethod, EnrichedTool, Terms } from "../../../scripts/lib/types.ts";
+import type { Capability, DeployMethod, EnrichedTool, ReleaseFacts, Replacement, Terms } from "../../../scripts/lib/types.ts";
 import { historyUrl } from "./freshness.ts";
 import { vitalityOf } from "./vitality.ts";
 
@@ -63,11 +63,7 @@ function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): str
     `- Forks: ${repo.forks}`,
     `- Last push: ${repo.pushedAt.slice(0, 10)}`,
   ];
-  lines.push(
-    release
-      ? `- Latest release: ${release.tag}${release.signed ? ", signed" : ", unsigned"}, ${release.url}`
-      : "- Latest release: none",
-  );
+  lines.push(releaseLine(release));
   if (selfHost) lines.push("- Self-hosted: you can run it on your own machines");
   if (tool.deploy.length > 0) lines.push(`- Deploy: ${tool.deploy.map((method) => DEPLOY[method]).join(", ")}`);
   if (repo.archived) lines.push("- Archived: the repository no longer receives changes");
@@ -76,66 +72,68 @@ function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): str
   return lines;
 }
 
+function releaseLine(release: ReleaseFacts | null): string {
+  if (!release) return "- Latest release: none";
+  const signature = release.signed ? "signed" : "unsigned";
+  return `- Latest release: ${release.tag}, ${signature}, ${release.url}`;
+}
+
+function replacementLines(tool: EnrichedTool, replacement: Replacement, around: Surroundings): string[] {
+  const note = replacement.note ? ` ${replacement.note}` : " no note";
+  const lines = [`- ${around.nameOf(replacement.tool)} (${replacement.fit}):${note} ${SITE}/alternatives/${replacement.tool}/`];
+  if (replacement.migration) lines.push(`  - Official migration guide: ${replacement.migration}`);
+  if (around.migrationNotes.includes(replacement.tool)) {
+    lines.push(`  - Migration notes: ${SITE}/migrate/${replacement.tool}/${tool.slug}/`);
+  }
+  return lines;
+}
+
+function replacesSection(tool: EnrichedTool, around: Surroundings): string[] {
+  if (tool.replaces.length === 0) return [];
+  return ["## Replaces", "", ...tool.replaces.flatMap((replacement) => replacementLines(tool, replacement, around)), ""];
+}
+
+function replacedBySection(around: Surroundings): string[] {
+  if (around.replacedBy.length === 0) return [];
+  return ["## Replaced by", "", ...around.replacedBy.map((other) => `- ${other.name}: ${SITE}/tools/${other.slug}.md`), ""];
+}
+
+function capabilityLine(label: string, capability: Capability): string {
+  const note = capability.note ? ` (${capability.note})` : "";
+  return `- ${label}: ${capability.docs}${note}`;
+}
+
+function capabilitiesSection(tool: EnrichedTool, around: Surroundings): string[] {
+  const capabilities = Object.entries(tool.capabilities);
+  if (capabilities.length === 0) return [];
+  return [
+    "## Capabilities",
+    "",
+    ...capabilities.map(([key, capability]) => capabilityLine(around.capabilityLabels[key] ?? key, capability)),
+    "",
+  ];
+}
+
 export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
   const { repo } = tool;
-  const out = [`# ${tool.name}`, ""];
-  if (repo.description) out.push(`> ${repo.description}`, "");
-
-  if (tool.replaces.length > 0) {
-    out.push("## Replaces", "");
-    for (const replacement of tool.replaces) {
-      const note = replacement.note ? ` ${replacement.note}` : "";
-      out.push(
-        `- ${around.nameOf(replacement.tool)} (${replacement.fit}):${note || " no note"} ${SITE}/alternatives/${replacement.tool}/`,
-      );
-      if (replacement.migration) out.push(`  - Official migration guide: ${replacement.migration}`);
-      if (around.migrationNotes.includes(replacement.tool)) {
-        out.push(`  - Migration notes: ${SITE}/migrate/${replacement.tool}/${tool.slug}/`);
-      }
-    }
-    out.push("");
-  }
-
-  if (around.replacedBy.length > 0) {
-    out.push("## Replaced by", "");
-    for (const other of around.replacedBy) {
-      out.push(`- ${other.name}: ${SITE}/tools/${other.slug}.md`);
-    }
-    out.push("");
-  }
-
-  out.push(
+  return [
+    `# ${tool.name}`,
+    "",
+    ...(repo.description ? [`> ${repo.description}`, ""] : []),
+    ...replacesSection(tool, around),
+    ...replacedBySection(around),
     "## Facts from GitHub",
     "",
     ...facts(tool, around.categoryName, around.selfHost),
     ...vitality(tool, around.checkedAt),
     "",
-  );
-
-  out.push(
     "## Freshness",
     "",
     ...(around.checkedAt ? [`- Read from GitHub: ${around.checkedAt.slice(0, 10)}`] : []),
     `- Entry last edited: ${tool.editedAt.slice(0, 10)}, ${historyUrl(tool.slug)}`,
     "",
-  );
-
-  const capabilities = Object.entries(tool.capabilities);
-  if (capabilities.length > 0) {
-    out.push(
-      "## Capabilities",
-      "",
-      ...capabilities.map(
-        ([key, capability]) =>
-          `- ${around.capabilityLabels[key] ?? key}: ${capability.docs}${capability.note ? ` (${capability.note})` : ""}`,
-      ),
-      "",
-    );
-  }
-
-  if (tool.affiliation) out.push("## Affiliation", "", tool.affiliation, "");
-
-  out.push(
+    ...capabilitiesSection(tool, around),
+    ...(tool.affiliation ? ["## Affiliation", "", tool.affiliation, ""] : []),
     "## Links",
     "",
     `- Repository: ${tool.repository}`,
@@ -144,6 +142,5 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     "",
     `Figures above are read from GitHub every night. The whole catalog, under CC0 1.0, is at ${SITE}/llms.txt`,
     "",
-  );
-  return out.join("\n");
+  ].join("\n");
 }

@@ -1122,7 +1122,10 @@ h1 .mark-archived {
   flex-wrap: wrap;
   align-items: center;
   gap: 12px 24px;
+  min-inline-size: auto;
   margin: 28px 0 0;
+  padding: 0;
+  border: 0;
   font-family: var(--mono);
   font-size: 0.8rem;
   color: var(--dim);
@@ -1255,6 +1258,8 @@ h1 .mark-archived {
   display: grid;
   gap: 8px;
   width: min(280px, calc(100vw - 32px));
+  min-inline-size: auto;
+  margin: 0;
   padding: 8px;
   background: var(--surface);
   border: 1px solid var(--line);

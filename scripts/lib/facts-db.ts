@@ -21,33 +21,31 @@ const COLUMNS = [
   "signed",
 ] as const satisfies readonly (keyof ToolFactsRow)[];
 
+function openingQuote(script: string, at: number): string | null {
+  if (script[at] === "'") return "'";
+  if (script[at] !== "$") return null;
+  return /^\$\w*\$/.exec(script.slice(at))?.[0] ?? null;
+}
+
+function quotedEnd(script: string, at: number, quote: string): number {
+  const close = script.indexOf(quote, at + quote.length);
+  return close < 0 ? script.length : close + quote.length;
+}
+
 export function splitStatements(script: string): string[] {
   const statements: string[] = [];
   let current = "";
-  let quote: string | null = null;
-  for (let i = 0; i < script.length; i++) {
-    const char = script[i] as string;
-    if (quote) {
-      if (script.startsWith(quote, i)) {
-        current += quote;
-        i += quote.length - 1;
-        quote = null;
-      } else {
-        current += char;
-      }
-      continue;
-    }
-    const dollar = char === "$" ? /^\$\w*\$/.exec(script.slice(i)) : null;
-    if (dollar || char === "'") {
-      quote = dollar ? dollar[0] : "'";
-      current += quote;
-      i += quote.length - 1;
-    } else if (char === ";") {
+  let i = 0;
+  while (i < script.length) {
+    const quote = openingQuote(script, i);
+    const end = quote ? quotedEnd(script, i, quote) : i + 1;
+    if (!quote && script[i] === ";") {
       if (current.trim()) statements.push(current.trim());
       current = "";
     } else {
-      current += char;
+      current += script.slice(i, end);
     }
+    i = end;
   }
   if (current.trim()) statements.push(current.trim());
   return statements;

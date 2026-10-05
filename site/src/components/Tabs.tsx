@@ -3,6 +3,11 @@ import { useEffect, useState } from "preact/hooks";
 
 import { tabFromHash } from "../lib/tabs.ts";
 
+const ARROW_STEPS = new Map([
+  ["ArrowRight", 1],
+  ["ArrowLeft", -1],
+]);
+
 interface Props<T extends string> {
   label: string;
   className: string;
@@ -39,7 +44,7 @@ export function Tabs<T extends string>({ label, className, tabs, names, counts =
             tabIndex={active === tab ? 0 : -1}
             onClick={() => select(tab)}
             onKeyDown={(e) => {
-              const step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+              const step = ARROW_STEPS.get(e.key) ?? 0;
               if (!step) return;
               const next = tabs[(tabs.indexOf(tab) + step + tabs.length) % tabs.length];
               if (next) {

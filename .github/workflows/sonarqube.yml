@@ -125,6 +125,7 @@ jobs:
         -Dsonar.projectVersion=${{ needs.version.outputs.version }}
         -Dsonar.rust.cobertura.reportPaths=.sonarcov/cobertura.xml
         -Dsonar.javascript.lcov.reportPaths=.sonarcov/node.lcov
+        -Dsonar.cpd.exclusions=site/src/i18n/**
     # Passed by name, not inherited: `inherit` only carries secrets to a
     # workflow in the caller's own organisation, and this one is in FerrLabs.
     secrets:

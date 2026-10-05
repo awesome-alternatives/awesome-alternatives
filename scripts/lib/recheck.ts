@@ -14,7 +14,7 @@ export function isRecheckDay(slug: string, now: Date): boolean {
 }
 
 export function isCurrent(before: EnrichedTool | undefined, seen: PulseSignals, now: Date): before is EnrichedTool {
-  if (!before || before.repo.fullName !== seen.repo.fullName) return false;
+  if (before?.repo.fullName !== seen.repo.fullName) return false;
   const newest = before.releases[0];
   if ((newest?.tag ?? null) !== seen.newest) return false;
   if (!newest && before.repo.pushedAt !== seen.repo.pushedAt) return false;

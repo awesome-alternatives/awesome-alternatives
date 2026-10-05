@@ -5,8 +5,11 @@ interface Props {
   muted?: boolean;
 }
 
+const GLYPHS = { signed: Shield, compare: Swap, verified: Manifest };
+
 export function Mark({ icon, label, href, muted = false }: Props) {
-  const glyph = icon === "signed" ? <Shield /> : icon === "compare" ? <Swap /> : <Manifest />;
+  const Glyph = GLYPHS[icon];
+  const glyph = <Glyph />;
   const attrs = {
     class: `mark-icon mark-${icon}${muted ? " is-muted" : ""}`,
     "aria-label": label,

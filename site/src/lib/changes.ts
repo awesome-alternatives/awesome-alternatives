@@ -2,6 +2,7 @@ import { INACTIVE_DAYS } from "../../../scripts/lib/rules.ts";
 import type { CatalogEvent, EnrichedTool } from "../../../scripts/lib/types.ts";
 import { format, type Locale, type Messages, plural } from "../i18n/index.ts";
 import type { FeedItem } from "./feed.ts";
+import { byCodeUnit } from "../../../scripts/lib/order.ts";
 import { REPO } from "./repo.ts";
 
 export const CHANGES_PAGE_SIZE = 200;
@@ -49,7 +50,7 @@ export function changeEntries(events: readonly CatalogEvent[], groupAdditions: b
     if (!groupAdditions || added.length < 2 || !newest) return ofDay.map(single);
     return [
       ...ofDay.filter((event) => event.type !== "added").map(single),
-      { kind: "additions", day, at: newest.at, slugs: added.map((event) => event.slug).sort() },
+      { kind: "additions", day, at: newest.at, slugs: added.map((event) => event.slug).sort(byCodeUnit) },
     ];
   });
 }
