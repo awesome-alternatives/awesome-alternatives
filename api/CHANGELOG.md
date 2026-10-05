@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.21.0] - 2026-10-05
+
+### Features
+
+- feat(api): read search qualifiers in Portuguese, Japanese and Indonesian (#305)
+
 ## [0.20.1] - 2026-09-26
 
 ### Bug Fixes
