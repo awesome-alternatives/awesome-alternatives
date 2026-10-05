@@ -7,6 +7,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import CompareRow from "../../../components/CompareRow.astro";
 import CompareTabs from "../../../components/CompareTabs.tsx";
 import { Mark } from "../../../components/Mark.tsx";
+import { StarCount } from "../../../components/StarCount.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor, plural } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
@@ -15,7 +16,7 @@ import { withHome } from "../../../lib/breadcrumbs.ts";
 import { cadenceDays } from "../../../lib/cadence.ts";
 import { categoryName, nameOf, pairs } from "../../../lib/catalog.ts";
 import type { Pair } from "../../../lib/compare.ts";
-import { day, stars } from "../../../lib/format.ts";
+import { day } from "../../../lib/format.ts";
 import { webHref } from "../../../lib/href.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { migrationPath } from "../../../lib/migrations.ts";
@@ -135,8 +136,8 @@ const ranBy = (slug: string, date: string) =>
             </CompareRow>
 
             <CompareRow label={card.factStars} names={names}>
-              <Fragment slot="a">{stars(a.repo.stars)}</Fragment>
-              <Fragment slot="b">{stars(b.repo.stars)}</Fragment>
+              <Fragment slot="a"><StarCount count={a.repo.stars} /></Fragment>
+              <Fragment slot="b"><StarCount count={b.repo.stars} /></Fragment>
             </CompareRow>
 
             <CompareRow label={card.factLatest} names={names}>

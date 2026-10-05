@@ -4,6 +4,7 @@ import type { GetStaticPaths } from "astro";
 import AlternativesList from "../../../components/AlternativesList.tsx";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ComparisonTable from "../../../components/ComparisonTable.astro";
+import { StarCount } from "../../../components/StarCount.tsx";
 import type { Locale } from "../../../i18n/index.ts";
 import { format, messages, pathFor } from "../../../i18n/index.ts";
 import { localePathsFor } from "../../../i18n/paths.ts";
@@ -11,7 +12,7 @@ import Base from "../../../layouts/Base.astro";
 import { withHome } from "../../../lib/breadcrumbs.ts";
 import { categories, categoryName, pairs, type Target, targets } from "../../../lib/catalog.ts";
 import { comparableWith, comparePath } from "../../../lib/compare.ts";
-import { day, stars } from "../../../lib/format.ts";
+import { day } from "../../../lib/format.ts";
 import { targetDescription, targetTitle } from "../../../lib/intent.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { slugify } from "../../../lib/slug.ts";
@@ -136,7 +137,7 @@ const structuredData = [
             </div>
             <div>
               <dt>{card.factStars}</dt>
-              <dd>{stars(target.listed.repo.stars)}</dd>
+              <dd><StarCount count={target.listed.repo.stars} /></dd>
             </div>
             <div>
               <dt>{card.factLastPush}</dt>

@@ -3,6 +3,7 @@ import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
 
 import { Mark } from "../../../components/Mark.tsx";
+import { StarCount } from "../../../components/StarCount.tsx";
 import ReplacedBy from "../../../components/ReplacedBy.astro";
 import StarChart from "../../../components/StarChart.astro";
 import ToolTabs from "../../../components/ToolTabs.tsx";
@@ -170,7 +171,7 @@ const canonical = canonicalForTool(tool.slug, replacedBy.length);
           </div>
           <div>
             <dt>{m.tool.stars}</dt>
-            <dd>{stars(repo.stars)}</dd>
+            <dd><StarCount count={repo.stars} /></dd>
           </div>
           <div>
             <dt>{m.tool.forks}</dt>

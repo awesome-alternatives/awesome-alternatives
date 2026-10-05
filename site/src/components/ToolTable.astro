@@ -2,7 +2,7 @@
 import type { Locale } from "../i18n/index.ts";
 import { messages, pathFor } from "../i18n/index.ts";
 import { categoryName } from "../lib/catalog.ts";
-import { stars } from "../lib/format.ts";
+import { StarCount } from "./StarCount.tsx";
 import { slugify } from "../lib/slug.ts";
 import type { ToolView } from "../lib/types.ts";
 
@@ -45,7 +45,7 @@ const card = m.islands.card;
                 card.unknownLanguage
               )}
             </td>
-            <td>{stars(tool.repo.stars)}</td>
+            <td><StarCount count={tool.repo.stars} /></td>
           </tr>
         ))
       }

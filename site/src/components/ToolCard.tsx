@@ -6,6 +6,7 @@ import { comparePath } from "../lib/compare.ts";
 import { migrationPath } from "../lib/migrations.ts";
 import { day, growth, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
+import { StarCount } from "./StarCount.tsx";
 import { Sparkline } from "./Sparkline.tsx";
 import { slugify } from "../lib/slug.ts";
 import type { Boost } from "../lib/trending.ts";
@@ -126,7 +127,7 @@ export function ToolCard({
           label={card.factStars}
           value={
             <>
-              {stars(repo.stars)}
+              <StarCount count={repo.stars} />
               {!boost && tool.starHistory && <Sparkline series={tool.starHistory} />}
             </>
           }
