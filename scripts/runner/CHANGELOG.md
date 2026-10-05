@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.0] - 2026-10-05
+
+### Features
+
+- feat(site): add a Performance tab with published benchmarks (#303)
+
 ## [0.5.2] - 2026-10-03
 
 ### Bug Fixes
