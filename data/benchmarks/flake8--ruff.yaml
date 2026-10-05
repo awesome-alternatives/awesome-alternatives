@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Linting the CPython codebase without caching"
+    url: https://github.com/astral-sh/ruff/blob/main/CONTRIBUTING.md#cpython-benchmark
+    ranBy: ruff
+    date: 2026-10-01
+    result: "hyperfine on CPython 3.10: ruff check --no-cache 294.3 ms, flake8 12.260 s (41.66x)."

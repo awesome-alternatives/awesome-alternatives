@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Formatting the Zulip codebase without caching"
+    url: https://astral.sh/blog/the-ruff-formatter
+    ranBy: ruff
+    date: 2023-10-24
+    result: "~250,000 lines: Ruff 0.10s, Black 3.20s (YAPF 17.77s, autopep8 19.56s)."

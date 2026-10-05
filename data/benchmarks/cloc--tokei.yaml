@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Counting the Redis source on Linux"
+    url: https://boyter.org/posts/sloc-cloc-code/
+    ranBy: third-party
+    date: 2018-04-16
+    result: "hyperfine on a 16 vCPU droplet, ~180,000 lines: tokei 7.0.1 28.1 ms, cloc 1.60 1.485 s. Run by the scc author."

@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Word regex search over the Linux kernel source tree"
+    url: https://github.com/BurntSushi/ripgrep#quick-examples-comparing-tools
+    ranBy: ripgrep
+    date: 2026-07-17
+    result: "rg -n -w '[A-Z]+_SUSPEND': ripgrep 0.082s, ack 2.935s (35.94x) on a built Linux tree, Intel i9-12900K."

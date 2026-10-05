@@ -129,6 +129,31 @@ sources:
 - The licence, terms and fit shown on the page come from the catalog, not from this file.
 - Content is in English for now; the rest of the page is translated.
 
+## Adding a benchmark
+
+A comparison page shows a Performance tab when its pair has published benchmarks, listed in
+`data/benchmarks/{a}--{b}.yaml` with the two slugs in alphabetical order:
+
+```yaml
+benchmarks:
+  - title: Word regex search over the Linux kernel source tree
+    url: https://github.com/BurntSushi/ripgrep#quick-examples-comparing-tools
+    ranBy: ripgrep
+    date: 2026-07-17
+    result: "ripgrep 0.082s, ack 2.935s on a built Linux tree, Intel i9-12900K."
+```
+
+- Only a benchmark someone published, linked to the page that holds the numbers. Never numbers you
+  measured yourself and nowhere else.
+- `result` copies the numbers as the source gives them, with units and the setup in a few words, in
+  200 characters at most. No adjectives.
+- `ranBy` is the slug of whichever of the two projects ran it, its maintainers or its company
+  included, or `third-party` for anyone else. A third party is often a competitor of both, so say who
+  in `result`.
+- `date` is when the benchmark was published or last updated.
+- The two tools must have a comparison page: one replaces the other, or both replace the same entry.
+  CI checks that, the fields, and that every link answers.
+
 ## What CI checks
 
 Every pull request runs the checks below against GitHub for the entries it touches, and writes the

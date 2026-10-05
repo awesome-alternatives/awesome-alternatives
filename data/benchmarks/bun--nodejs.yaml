@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Startup time and HTTP requests per second"
+    url: https://bun.sh/blog/bun-v1.0
+    ranBy: bun
+    date: 2023-09-08
+    result: "Bun starts up to 4x faster than Node.js and serves 4x more requests per second than Node.js with Bun.serve."

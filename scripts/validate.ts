@@ -1,6 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { appendFile } from "node:fs/promises";
 import { basename } from "node:path";
+import { checkBenchmarks } from "./lib/benchmarks.ts";
 import { loadCatalog } from "./lib/catalog.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
@@ -36,7 +37,8 @@ const migrations = await mapLimit(
   async (tool) => [...(await checkMigrations(tool)), ...(await checkCapabilityDocs(tool))],
 );
 const pages = await checkMigrationPages(root, catalog.tools);
-const all = [...findings, ...pages, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
+const benchmarks = await checkBenchmarks(root, catalog.tools, now);
+const all = [...findings, ...pages, ...benchmarks, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
 
 const report = renderFindings(all, targets);
 console.log(report);

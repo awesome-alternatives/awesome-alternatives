@@ -25,6 +25,7 @@
         "CONTRIBUTING.md",
         "data/categories.yaml",
         "data/migrations",
+        "data/benchmarks",
         "scripts/lib/types.ts",
         "scripts/lib/rules.ts",
         "scripts/lib/trending.ts",

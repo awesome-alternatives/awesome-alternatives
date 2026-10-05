@@ -75,6 +75,8 @@ export type BlockingCode =
   | "fork"
   | "migration-page"
   | "migration-unreachable"
+  | "benchmark"
+  | "benchmark-unreachable"
   | "not-found"
   | "private"
   | "product-collides"
@@ -250,3 +252,4 @@ export type Read<T> =
 export const GONE = { status: "gone" } as const;
 
 export const BEHIND_ALLOW_LIST = { status: "behind-allow-list" } as const;
+export const THIRD_PARTY = "third-party";

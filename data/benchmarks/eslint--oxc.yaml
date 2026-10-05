@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Linting the VS Code codebase"
+    url: https://github.com/oxc-project/bench-javascript-linter#vs-code-benchmark-results
+    ranBy: oxc
+    date: 2026-07-16
+    result: "MacBook Pro M2 Max: Oxlint 499.6 ms, ESLint v9 31.025 s (62.10x). M4 Max: Oxlint 177.2 ms, ESLint 20.957 s (118.25x)."

@@ -1,0 +1,11 @@
+benchmarks:
+  - title: "CPU and memory of the CloudWatch output plugins on c5.9xlarge"
+    url: https://aws.amazon.com/blogs/opensource/centralized-container-logging-fluent-bit/
+    ranBy: third-party
+    date: 2019-07-09
+    result: "10,000 log lines/s: Fluent Bit 0.19 vCPU and 65 MB, Fluentd 1.03 vCPU and 376 MB. Run by AWS."
+  - title: "Maximum Kubernetes log throughput with 100 pods"
+    url: https://victoriametrics.com/blog/log-collectors-benchmark-2026/
+    ranBy: third-party
+    date: 2026-03-20
+    result: "Fluent Bit 4.2.3 31,300 logs/s, Fluentd 1.19.1 5,100 logs/s (vlagent 143,000). Run by VictoriaMetrics."

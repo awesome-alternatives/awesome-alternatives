@@ -1,0 +1,11 @@
+benchmarks:
+  - title: "memtier_benchmark SET and GET throughput on AWS m5.xlarge"
+    url: https://github.com/dragonflydb/dragonfly#benchmarks
+    ranBy: dragonfly
+    date: 2026-09-21
+    result: "SET: Redis 190K QPS, Dragonfly 279K QPS. GET: Redis 220K QPS, Dragonfly 305K QPS. On c6gn.16xlarge Dragonfly crossed 3.8M QPS."
+  - title: "40-shard Redis 7 cluster vs Dragonfly on AWS c6gn.16xlarge"
+    url: https://redis.io/blog/redis-architecture-13-years-later/
+    ranBy: redis
+    date: 2022-06-28
+    result: "GET pipeline 1: Redis 4.43M ops/sec, Dragonfly 3.8M reproduced. GET pipeline 30: Redis 22.9M, Dragonfly 15.9M ops/sec."

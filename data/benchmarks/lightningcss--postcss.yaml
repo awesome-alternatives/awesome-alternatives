@@ -1,0 +1,6 @@
+benchmarks:
+  - title: "Minifying CSS files against cssnano (PostCSS)"
+    url: https://github.com/parcel-bundler/lightningcss#benchmarks
+    ranBy: lightningcss
+    date: 2024-03-04
+    result: "bootstrap-4.css: lightningcss 4.16ms, cssnano 544.809ms. tailwind.css: 43.368ms vs 2.198s (esbuild 17.199ms, 107.668ms)."

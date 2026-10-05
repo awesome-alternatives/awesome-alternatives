@@ -1,6 +1,7 @@
 ---
 import type { EnrichedTool } from "../../../../../scripts/lib/types.ts";
 import type { GetStaticPaths } from "astro";
+import { getEntry } from "astro:content";
 
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import CompareRow from "../../../components/CompareRow.astro";
@@ -20,6 +21,7 @@ import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { migrationPath } from "../../../lib/migrations.ts";
 import { slugify } from "../../../lib/slug.ts";
 import { breadcrumbList } from "../../../lib/structuredData.ts";
+import { THIRD_PARTY } from "../../../../../scripts/lib/types.ts";
 
 export const getStaticPaths = (() =>
   localePathsFor(
@@ -70,6 +72,9 @@ const sideOf = (tool: EnrichedTool) => ({
 });
 const between = new Set([`${a.slug}/${b.slug}`, `${b.slug}/${a.slug}`]);
 const guides = (await migrationPairs()).filter((guide) => between.has(`${guide.from}/${guide.to}`));
+const measured = await getEntry("benchmarks", [a.slug, b.slug].sort().join("--"));
+const ranBy = (slug: string, date: string) =>
+  slug === THIRD_PARTY ? format(m.compare.ranByThirdParty, { date }) : format(m.compare.ranByProject, { name: nameOf(slug), date });
 ---
 
 <Base
@@ -83,7 +88,7 @@ const guides = (await migrationPairs()).filter((guide) => between.has(`${guide.f
     <h1>{heading}</h1>
     <p class="lede">{m.compare.lede}</p>
 
-    <CompareTabs client:load strings={m.islands} sides={[sideOf(a), sideOf(b)]}>
+    <CompareTabs client:load strings={m.islands} sides={[sideOf(a), sideOf(b)]} measured={measured !== undefined}>
       <Fragment slot="overview">
         <table class="compare" role="table">
           <caption class="visually-hidden">{heading}</caption>
@@ -251,6 +256,25 @@ const guides = (await migrationPairs()).filter((guide) => between.has(`${guide.f
           </ul>
         </section>
       </Fragment>
+      {
+        measured && (
+          <Fragment slot="performance">
+            <p class="lede">{m.compare.benchmarksLede}</p>
+            <ul class="benchmarks">
+              {measured.data.benchmarks.map((benchmark) => (
+                <li>
+                  <p class="benchmark-title">{benchmark.title}</p>
+                  <p class="benchmark-result">{benchmark.result}</p>
+                  <p class="benchmark-meta">
+                    <span>{ranBy(benchmark.ranBy, benchmark.date)}</span>
+                    <a href={benchmark.url}>{m.compare.benchmarkSource}</a>
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Fragment>
+        )
+      }
       <Fragment slot="resources">
         {
           guides.length > 0 && (
