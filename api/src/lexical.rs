@@ -2,17 +2,29 @@ use crate::filters::Filters;
 use crate::qualifiers;
 use crate::vocabulary::Vocabulary;
 
+fn is_cjk(c: char) -> bool {
+    matches!(
+        c,
+        '\u{3040}'..='\u{30ff}' | '\u{3400}'..='\u{4dbf}' | '\u{4e00}'..='\u{9fff}' | '\u{ff66}'..='\u{ff9f}'
+    )
+}
+
 pub fn normalize(text: &str) -> String {
-    let spaced: String = text
-        .chars()
-        .map(|c| {
-            if c.is_alphanumeric() || matches!(c, '+' | '#' | '.') {
-                c.to_ascii_lowercase()
-            } else {
-                ' '
+    let mut spaced = String::with_capacity(text.len());
+    let mut previous_cjk: Option<bool> = None;
+    for c in text.chars() {
+        if c.is_alphanumeric() || matches!(c, '+' | '#' | '.') {
+            let cjk = is_cjk(c);
+            if previous_cjk.is_some_and(|was| was != cjk) {
+                spaced.push(' ');
             }
-        })
-        .collect();
+            spaced.push(c.to_ascii_lowercase());
+            previous_cjk = Some(cjk);
+        } else {
+            spaced.push(' ');
+            previous_cjk = None;
+        }
+    }
     spaced
         .split_whitespace()
         .map(|w| w.trim_matches('.'))
@@ -23,7 +35,13 @@ pub fn normalize(text: &str) -> String {
 
 pub fn mentions(query: &str, label: &str) -> bool {
     let label = normalize(label);
-    !label.is_empty() && format!(" {query} ").contains(&format!(" {label} "))
+    if label.is_empty() {
+        return false;
+    }
+    if label.chars().any(is_cjk) {
+        return query.contains(&label);
+    }
+    format!(" {query} ").contains(&format!(" {label} "))
 }
 
 pub fn relevance(query: &str, label: &str) -> usize {
@@ -97,6 +115,26 @@ mod tests {
         assert_eq!(filters.language.as_deref(), Some("Rust"));
         assert_eq!(filters.license.as_deref(), Some("MIT"));
         assert!(!filters.drop_in);
+    }
+
+    #[test]
+    fn splits_latin_words_out_of_japanese_written_without_spaces() {
+        assert_eq!(
+            normalize("Rustで書かれたsemantic-releaseの代替"),
+            "rust で書かれた semantic release の代替"
+        );
+        let filters = interpret("Rustで書かれたsemantic-releaseの代替、MIT", &vocabulary());
+        assert_eq!(filters.replaces.as_deref(), Some("semantic-release"));
+        assert_eq!(filters.language.as_deref(), Some("Rust"));
+        assert_eq!(filters.license.as_deref(), Some("MIT"));
+    }
+
+    #[test]
+    fn finds_a_japanese_phrase_inside_a_run_but_a_latin_word_only_whole() {
+        let query = normalize("オープンソースのgo製ツール");
+        assert!(mentions(&query, "オープンソース"));
+        assert!(mentions(&query, "go"));
+        assert!(!mentions(&normalize("gorillaツール"), "go"));
     }
 
     #[test]
