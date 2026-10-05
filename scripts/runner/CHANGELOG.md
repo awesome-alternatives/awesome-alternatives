@@ -4,6 +4,14 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.8.0] - 2026-10-05
+
+### Features
+
+- feat(site): show when a verified entry changed after its verification (#325)
+- feat(site): add 14 migration guides and allow closed products as the source side (#322)
+- feat(refresh): read a monorepo package's version from npm (#319)
+
 ## [0.7.0] - 2026-10-05
 
 ### Features

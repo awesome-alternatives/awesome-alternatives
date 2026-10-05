@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.22.0] - 2026-10-05
+
+### Features
+
+- feat(api): accept releases read from a package registry (#318)
+
 ## [0.21.0] - 2026-10-05
 
 ### Features
