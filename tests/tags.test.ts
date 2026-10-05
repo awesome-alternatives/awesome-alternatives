@@ -43,6 +43,11 @@ describe("newestTag", () => {
     assert.equal(pick("v0.26.dev0", "v0.25.dev3"), "v0.26.dev0");
   });
 
+  it("prefers a plain version over one behind a prefix, which is usually another artefact", () => {
+    assert.equal(pick("v0.8.8", "chart-2.0.17", "chart-2.0.16", "v0.8.8-rc4"), "v0.8.8");
+    assert.equal(pick("cassandra-6.0-alpha2", "cassandra-5.0.9", "cassandra-4.1.12"), "cassandra-5.0.9");
+  });
+
   it("prefers the shorter name when two tags carry the same version", () => {
     assert.equal(pick("mysql-cluster-26.7.0", "mysql-9.7.2", "mysql-26.7.0"), "mysql-26.7.0");
   });
