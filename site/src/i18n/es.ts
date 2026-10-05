@@ -265,6 +265,11 @@ export const es: Messages = {
     sharedLine: "Ambos sustituyen a {target}.",
     targetLink: "Alternativas a {name} →",
     entry: "Comparar {a} y {b} →",
+    sourceLink: "Código fuente en GitHub ↗",
+    homepageLink: "Sitio web ↗",
+    toolLink: "Todo sobre {name} →",
+    guidesLabel: "Guías de migración",
+    contributorsUnknown: "sin contar",
   },
 
   contribute: {

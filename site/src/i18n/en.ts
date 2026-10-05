@@ -261,6 +261,11 @@ export const en = {
     sharedLine: "Both replace {target}.",
     targetLink: "Alternatives to {name} →",
     entry: "Compare {a} and {b} →",
+    sourceLink: "Source on GitHub ↗",
+    homepageLink: "Website ↗",
+    toolLink: "Everything about {name} →",
+    guidesLabel: "Migration guides",
+    contributorsUnknown: "not counted",
   },
 
   contribute: {
