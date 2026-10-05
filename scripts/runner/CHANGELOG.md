@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.2] - 2026-10-05
+
+### Bug Fixes
+
+- fix: resolve SonarQube findings and exclude translations from duplication (#311)
+
 ## [0.6.1] - 2026-10-05
 
 ### Bug Fixes
