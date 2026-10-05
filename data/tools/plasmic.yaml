@@ -1,5 +1,6 @@
 name: Plasmic
 repository: https://github.com/plasmicapp/plasmic
+package: npm:@plasmicapp/loader-react
 category: design-tool
 replaces:
   - tool: webflow

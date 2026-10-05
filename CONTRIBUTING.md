@@ -298,6 +298,21 @@ repository, and so is the count of active contributors, which the tool page says
 whole repository. Platforms are not read for such an entry, since the repository's latest release may
 belong to another package.
 
+The latest release has the same problem in a repository that tags or releases each package
+separately: the newest one is usually another package's. When the tool is published to npm, name it
+with `package`, and the refresh reads its version from the npm registry instead of from GitHub:
+
+```yaml
+name: Rush
+repository: https://github.com/microsoft/rushstack
+path: apps/rush
+package: npm:@microsoft/rush
+category: monorepo-tool
+```
+
+The version is the one npm tags `latest`. If the registry cannot be read, the entry keeps the version
+it had. `package` works with or without `path`, and npm is the only registry it reads for now.
+
 ## Running the checks locally
 
 ```bash
