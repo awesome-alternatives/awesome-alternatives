@@ -1,0 +1,11 @@
+name: Kill Bill
+repository: https://github.com/killbill/killbill
+category: billing
+replaces:
+  - tool: stripe-billing
+    fit: full
+    note: Subscriptions, usage billing and invoicing, with payment gateways added as plugins.
+  - tool: chargebee
+    fit: full
+    note: Subscription catalog, invoicing and dunning on your own server.
+deploy: [container, compose]

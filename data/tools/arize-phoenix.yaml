@@ -1,0 +1,12 @@
+name: Arize Phoenix
+repository: https://github.com/Arize-ai/phoenix
+category: llm-observability
+terms: source-available
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Tracing over OpenTelemetry, datasets, experiments and evaluations.
+  - tool: weave
+    fit: full
+    note: Tracing and evaluations of LLM calls, built on OpenInference instrumentation.
+deploy: [container, compose, helm]

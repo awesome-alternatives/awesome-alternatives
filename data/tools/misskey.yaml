@@ -1,0 +1,11 @@
+name: Misskey
+repository: https://github.com/misskey-dev/misskey
+category: microblogging
+replaces:
+  - tool: x-twitter
+    fit: full
+    note: Notes, renotes, emoji reactions and a file drive on your own server, federated over ActivityPub.
+  - tool: threads
+    fit: full
+    note: Short posts on your own server, federated over ActivityPub.
+deploy: [container, compose]

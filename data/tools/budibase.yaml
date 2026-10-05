@@ -1,0 +1,9 @@
+name: Budibase
+repository: https://github.com/Budibase/budibase
+category: internal-tools
+terms: open-core
+replaces:
+  - tool: retool
+    fit: full
+    note: Apps, forms and automations over external databases and APIs or its built-in tables.
+deploy: [container, compose, helm]

@@ -1,0 +1,10 @@
+name: DBeaver
+repository: https://github.com/dbeaver/dbeaver
+category: database-client
+replaces:
+  - tool: tableplus
+    fit: full
+    note: Desktop client for any database with a JDBC driver.
+  - tool: datagrip
+    fit: full
+    note: SQL editor with completion, ER diagrams and data transfer across many engines.

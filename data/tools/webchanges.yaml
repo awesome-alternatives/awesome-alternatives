@@ -1,0 +1,11 @@
+name: webchanges
+repository: https://github.com/mborsetti/webchanges
+category: page-change-monitoring
+terms: open
+replaces:
+  - tool: visualping
+    fit: partial
+    note: Command-line tool configured in YAML, with no web interface, that can render pages in a browser and diff images.
+  - tool: distill
+    fit: partial
+    note: Command-line tool configured in YAML, with no web interface.

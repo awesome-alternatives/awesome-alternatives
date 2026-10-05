@@ -1,0 +1,10 @@
+name: CloudBeaver
+repository: https://github.com/dbeaver/cloudbeaver
+category: database-client
+replaces:
+  - tool: tableplus
+    fit: partial
+    note: Runs as a web server and is used from the browser, shared by a team.
+  - tool: datagrip
+    fit: partial
+    note: SQL editor and data browsing in the browser, without the IDE's code analysis.

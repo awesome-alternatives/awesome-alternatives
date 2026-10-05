@@ -1,0 +1,11 @@
+name: NodeBB
+repository: https://github.com/NodeBB/NodeBB
+category: forum
+replaces:
+  - tool: circle
+    fit: partial
+    note: Discussions, chat and plugins, without events or courses.
+  - tool: reddit
+    fit: partial
+    note: One community per site with voting, federated with other forums over ActivityPub.
+deploy: [container, compose]

@@ -1,0 +1,8 @@
+name: Hollo
+repository: https://github.com/fedify-dev/hollo
+category: microblogging
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Single-user server with no web interface of its own, used through Mastodon-compatible clients.
+deploy: [container, compose]

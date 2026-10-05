@@ -1,0 +1,5 @@
+name: Stripe Billing
+homepage: https://stripe.com/billing
+vendor: Stripe
+category: billing
+description: Stripe's service for recurring subscriptions, usage-based pricing and invoicing.

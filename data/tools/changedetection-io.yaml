@@ -1,0 +1,11 @@
+name: changedetection.io
+repository: https://github.com/dgtlmoon/changedetection.io
+category: page-change-monitoring
+replaces:
+  - tool: visualping
+    fit: full
+    note: Scheduled checks, a visual element selector and alerts to many notification services, on your own server.
+  - tool: distill
+    fit: full
+    note: Watches pages or parts of them, with browser steps for pages behind logins, on your own server.
+deploy: [container, compose]

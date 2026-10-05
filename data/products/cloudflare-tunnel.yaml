@@ -1,0 +1,5 @@
+name: Cloudflare Tunnel
+homepage: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+vendor: Cloudflare
+category: reverse-proxy
+description: Outbound-only connector that publishes services from a private network through Cloudflare's edge.

@@ -1,0 +1,5 @@
+name: DataGrip
+homepage: https://www.jetbrains.com/datagrip/
+vendor: JetBrains
+category: database-client
+description: JetBrains' desktop IDE for writing SQL and managing many database engines.

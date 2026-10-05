@@ -1,0 +1,10 @@
+name: DbGate
+repository: https://github.com/dbgate/dbgate
+category: database-client
+replaces:
+  - tool: tableplus
+    fit: full
+    note: Desktop or web client for SQL and NoSQL databases, with a data editor and query designer.
+  - tool: datagrip
+    fit: partial
+    note: SQL editor, schema compare and data export, without the IDE's code analysis.

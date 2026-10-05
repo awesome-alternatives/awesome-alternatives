@@ -1,0 +1,5 @@
+name: W&B Weave
+homepage: https://wandb.ai/site/weave/
+vendor: Weights & Biases
+category: llm-observability
+description: Weights & Biases' toolkit for tracing, evaluating and monitoring LLM applications.

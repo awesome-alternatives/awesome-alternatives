@@ -1,0 +1,11 @@
+name: Beekeeper Studio
+repository: https://github.com/beekeeper-studio/beekeeper-studio
+category: database-client
+terms: open-core
+replaces:
+  - tool: tableplus
+    fit: full
+    note: Desktop SQL editor and table browser for the common relational engines.
+  - tool: datagrip
+    fit: partial
+    note: Query editor and data browsing, without schema refactoring or project-wide code analysis.

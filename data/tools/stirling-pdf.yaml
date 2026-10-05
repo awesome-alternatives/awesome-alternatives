@@ -1,0 +1,15 @@
+name: Stirling PDF
+repository: https://github.com/Stirling-Tools/Stirling-PDF
+category: pdf-tools
+terms: open-core
+replaces:
+  - tool: adobe-acrobat
+    fit: partial
+    note: Editing, merging, splitting, conversion, OCR and signing on your own server; some features sit in proprietary directories.
+  - tool: smallpdf
+    fit: full
+    note: The same browser-based PDF operations, run on your own server.
+  - tool: ilovepdf
+    fit: full
+    note: The same browser-based PDF operations, run on your own server.
+deploy: [container, compose, helm, binary, package]

@@ -1,0 +1,8 @@
+name: Lemmy
+repository: https://github.com/LemmyNet/lemmy
+category: forum
+replaces:
+  - tool: reddit
+    fit: full
+    note: Communities, link and text posts, votes and threaded comments, federated across servers over ActivityPub.
+deploy: [container, compose]

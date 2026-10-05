@@ -1,0 +1,11 @@
+name: Lago
+repository: https://github.com/getlago/lago
+category: billing
+replaces:
+  - tool: stripe-billing
+    fit: full
+    note: Usage metering, plans, subscriptions and invoices, with Stripe, Adyen or GoCardless collecting payments.
+  - tool: chargebee
+    fit: full
+    note: Subscriptions, usage-based plans, coupons and invoices on your own server.
+deploy: [container, compose, helm]
