@@ -69,6 +69,7 @@ pub struct RepoFacts {
 pub enum ReleaseSource {
     Release,
     Tag,
+    Package,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -280,6 +281,13 @@ mod tests {
         };
         assert!(hosted("gitea"));
         assert!(!hosted("ruff"));
+    }
+
+    #[test]
+    fn reads_a_version_taken_from_a_package_registry() {
+        let raw = r#"{"tag": "5.180.0", "publishedAt": null, "url": "https://www.npmjs.com/package/@microsoft/rush/v/5.180.0", "source": "package", "signed": false}"#;
+        let release: ReleaseFacts = serde_json::from_str(raw).unwrap();
+        assert_eq!(release.source, ReleaseSource::Package);
     }
 
     #[test]
