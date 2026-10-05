@@ -1,0 +1,8 @@
+name: Warpgate
+repository: https://github.com/warp-tech/warpgate
+category: privileged-access
+replaces:
+  - tool: strongdm
+    fit: partial
+    note: A single bastion for SSH, HTTPS, Kubernetes, MySQL, PostgreSQL, RDP and VNC that records sessions, without a client app.
+deploy: [container, compose, helm, binary]

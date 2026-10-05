@@ -1,0 +1,11 @@
+name: Kaneo
+repository: https://github.com/usekaneo/kaneo
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban boards with tasks, labels, assignees and due dates.
+  - tool: asana
+    fit: partial
+    note: Projects with board, list, calendar and Gantt views, subtasks and dependencies, without portfolios or goals.
+deploy: [container, compose, helm]

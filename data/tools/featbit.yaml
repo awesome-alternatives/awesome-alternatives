@@ -1,0 +1,8 @@
+name: FeatBit
+repository: https://github.com/featbit/featbit
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: full
+    note: Feature flags with targeting rules, percentage rollouts, experiments and audit logs, with server and client SDKs.
+deploy: [container, compose, helm]

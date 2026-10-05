@@ -1,0 +1,7 @@
+name: Solidus
+repository: https://github.com/solidusio/solidus
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Ruby on Rails commerce framework you build your store on, not a ready-made hosted shop.

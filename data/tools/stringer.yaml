@@ -1,0 +1,8 @@
+name: Stringer
+repository: https://github.com/stringer-rss/stringer
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: A single-user reader with keyboard shortcuts, OPML import and a Fever API, without feed discovery or team boards.
+deploy: [container, compose]

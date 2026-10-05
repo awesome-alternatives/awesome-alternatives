@@ -1,0 +1,12 @@
+name: Novu
+repository: https://github.com/novuhq/novu
+category: notification-infrastructure
+terms: open-core
+replaces:
+  - tool: courier
+    fit: full
+    note: Workflows across email, SMS, push, chat and an embeddable in-app inbox, with subscriber preferences.
+  - tool: knock
+    fit: full
+    note: Workflows across email, SMS, push, chat and an embeddable in-app inbox, with subscriber preferences.
+deploy: [container, compose]

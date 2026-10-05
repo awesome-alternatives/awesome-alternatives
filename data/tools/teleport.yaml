@@ -1,0 +1,8 @@
+name: Teleport
+repository: https://github.com/gravitational/teleport
+category: privileged-access
+replaces:
+  - tool: strongdm
+    fit: full
+    note: Certificate-based access to SSH, Kubernetes, databases, desktops and web apps, with session recording.
+deploy: [container, helm, package]

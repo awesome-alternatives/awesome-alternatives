@@ -1,0 +1,8 @@
+name: TimeTagger
+repository: https://github.com/almarklein/timetagger
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: partial
+    note: A timeline of records grouped by tags, with targets and PDF or CSV reports; no clients, rates or team workspaces.
+deploy: [container, compose]

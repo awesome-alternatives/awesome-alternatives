@@ -1,0 +1,8 @@
+name: Super Productivity
+repository: https://github.com/super-productivity/super-productivity
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: A personal to-do list with time tracking, timeboxing and Jira, GitHub and GitLab issue import; runs locally with optional sync.
+deploy: [binary, package]

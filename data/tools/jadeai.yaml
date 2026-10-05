@@ -1,0 +1,11 @@
+name: JadeAI
+repository: https://github.com/LingyiChen-AI/JadeAI
+category: resume-builder
+replaces:
+  - tool: kickresume
+    fit: full
+    note: Template-based editor with AI writing, resume parsing and PDF export, using your own model provider.
+  - tool: resume-io
+    fit: full
+    note: Template-based editor with PDF export, as a web app or a desktop app.
+deploy: [container, binary]

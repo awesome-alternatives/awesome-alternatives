@@ -1,0 +1,8 @@
+name: Wakapi
+repository: https://github.com/muety/wakapi
+category: time-tracking
+replaces:
+  - tool: wakatime
+    fit: full
+    note: Receives data from the WakaTime editor plugins once their API URL points at it; implements part of the WakaTime API.
+deploy: [container, compose, binary]

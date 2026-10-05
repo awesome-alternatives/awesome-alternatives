@@ -1,0 +1,11 @@
+name: LinkAce
+repository: https://github.com/Kovah/LinkAce
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: full
+    note: Bookmarks in lists with tags, dead link checks, Internet Archive backups and a REST API.
+  - tool: pocket
+    fit: partial
+    note: Saves and organises links, without a reading view.
+deploy: [container, compose]

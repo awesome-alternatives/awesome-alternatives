@@ -1,0 +1,9 @@
+name: Shaarli
+repository: https://github.com/shaarli/Shaarli
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: partial
+    note: A personal bookmark list with tags, notes and an RSS feed, stored in a flat file; no page archiving.
+deploy: [container, compose]
+terms: open

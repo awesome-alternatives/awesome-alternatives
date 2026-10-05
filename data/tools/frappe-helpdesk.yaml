@@ -1,0 +1,11 @@
+name: Helpdesk
+repository: https://github.com/frappe/helpdesk
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Tickets with SLAs, saved replies, assignment rules and a customer portal with a knowledge base, built on the Frappe framework.
+  - tool: freshdesk
+    fit: partial
+    note: Tickets with SLAs, agent teams and a self-service knowledge base.
+deploy: [container, compose]

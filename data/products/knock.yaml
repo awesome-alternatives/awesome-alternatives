@@ -1,0 +1,5 @@
+name: Knock
+homepage: https://knock.app
+vendor: Knock
+category: notification-infrastructure
+description: Hosted notification platform that routes workflow messages to email, SMS, push, chat and in-app feeds with per-user preferences.

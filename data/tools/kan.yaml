@@ -1,0 +1,8 @@
+name: Kan
+repository: https://github.com/kanbn/kan
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Boards, lists, cards, labels and workspace members, with an importer for Trello boards.
+deploy: [container, compose]
