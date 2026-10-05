@@ -384,7 +384,7 @@ Run, cache and orchestrate tasks across the packages of one repository.
 | [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.7](https://github.com/vercel/turborepo/releases/tag/v2.11.7) signed | 31172 | Lerna (partial) |
 | [Nx](https://github.com/nrwl/nx) | TypeScript | MIT | [22.7.12](https://github.com/nrwl/nx/releases/tag/22.7.12) | 29393 | Lerna (full) |
 | [Bazel](https://github.com/bazelbuild/bazel) | Java | Apache-2.0 | [9.2.0](https://github.com/bazelbuild/bazel/releases/tag/9.2.0) | 25919 | none |
-| [Rush](https://github.com/microsoft/rushstack) | TypeScript | Other | [@rushstack/set-webpack-public-path-plugin_v5.3.27](https://github.com/microsoft/rushstack/releases/tag/%40rushstack/set-webpack-public-path-plugin_v5.3.27) | 6498 | Lerna (full) |
+| [Rush](https://github.com/microsoft/rushstack) | TypeScript | Other | [5.180.0](https://www.npmjs.com/package/@microsoft/rush/v/5.180.0) | 6498 | Lerna (full) |
 | [moon](https://github.com/moonrepo/moon) | Rust | MIT | [v2.6.0](https://github.com/moonrepo/moon/releases/tag/v2.6.0) | 4133 | Lerna (partial) |
 
 </details>
@@ -1882,7 +1882,7 @@ Design and prototype user interfaces on a shared canvas.
 | [Penpot](https://github.com/penpot/penpot) | Clojure | MPL-2.0 | [2.18.2](https://github.com/penpot/penpot/releases/tag/2.18.2) | 60722 | Figma (full), Canva (partial) |
 | [Onlook](https://github.com/onlook-dev/onlook) | TypeScript | Apache-2.0 | [v0.2.32](https://github.com/onlook-dev/onlook/releases/tag/v0.2.32) signed | 26858 | Figma (partial) |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | TypeScript | MIT | [v0.15.1](https://github.com/open-pencil/open-pencil/releases/tag/v0.15.1) | 8753 | Figma (partial) |
-| [Plasmic](https://github.com/plasmicapp/plasmic) | TypeScript | MIT | [@plasmicpkgs/react-youtube@7.13.169](https://github.com/plasmicapp/plasmic/releases/tag/%40plasmicpkgs/react-youtube%407.13.169) | 7068 | Webflow (partial) |
+| [Plasmic](https://github.com/plasmicapp/plasmic) | TypeScript | MIT | [2.0.23](https://www.npmjs.com/package/@plasmicapp/loader-react/v/2.0.23) | 7068 | Webflow (partial) |
 | [Grida](https://github.com/gridaco/grida) | TypeScript | Apache-2.0 | [v0.0.24](https://github.com/gridaco/grida/releases/tag/v0.0.24) signed | 2655 | Figma (partial) |
 
 </details>
