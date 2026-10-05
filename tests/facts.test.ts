@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchReleases, fetchRepo, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
+import { claimedSlugs, fetchMaintainerClaim, fetchOwner, fetchRelease, fetchReleases, fetchRepo, licenseOf, ownerOf, RELEASE_HISTORY, summaryOf } from "../scripts/lib/facts.ts";
 import { type GitHub, GitHubError } from "../scripts/lib/github.ts";
 
 describe("licenseOf", () => {
@@ -73,6 +73,27 @@ describe("fetchReleases", () => {
 
   it("is empty for a repository with no releases", async () => {
     assert.deepEqual(await fetchReleases(github(() => null), "o/r"), []);
+  });
+});
+
+describe("fetchRelease", () => {
+  it("falls back to the newest version among the tags when there is no release", async () => {
+    const asked: string[] = [];
+    const tags = ["show", "4.4.0-rc3", "4.3.1", "4.2.2"].map((name) => ({ name, commit: { sha: "c" } }));
+    const release = await fetchRelease(
+      github((path) => {
+        asked.push(path);
+        if (path.endsWith("/tags?per_page=100")) return tags;
+        if (path.includes("/git/ref/tags/")) return { object: { type: "commit", sha: "c" } };
+        return null;
+      }),
+      "apache/kafka",
+    );
+    assert.deepEqual(
+      { tag: release?.tag, source: release?.source, url: release?.url },
+      { tag: "4.3.1", source: "tag", url: "https://github.com/apache/kafka/releases/tag/4.3.1" },
+    );
+    assert.ok(asked.includes("/repos/apache/kafka/tags?per_page=100"));
   });
 });
 
