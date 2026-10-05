@@ -1,11 +1,11 @@
-import { type CatalogEvent, EVENT_ORDER } from "./types.ts";
+import { type CatalogEvent, EVENT_ORDER, type ReleaseFacts } from "./types.ts";
 
 const PRERELEASE_TAG = /(?:[-.+_](?:alpha|beta|rc|pre|preview|next|canary|dev|nightly|snapshot)(?![a-z])|\d(?:a|b|rc)\d+$)/i;
 
 interface TrackedRelease {
   tag: string;
   publishedAt: string | null;
-  fromTags: boolean;
+  source: ReleaseFacts["source"];
   prerelease: boolean;
 }
 
@@ -40,12 +40,12 @@ function flaggedPrerelease(releases: unknown, tag: string): boolean {
 function trackRelease(release: unknown, releases: unknown): TrackedRelease | null | undefined {
   if (release === null) return null;
   if (!isFields(release) || typeof release.tag !== "string") return undefined;
-  const fromTags = release.source === "tag";
+  const source = release.source === "tag" || release.source === "package" ? release.source : "release";
   return {
     tag: release.tag,
     publishedAt: typeof release.publishedAt === "string" ? release.publishedAt : null,
-    fromTags,
-    prerelease: fromTags ? isPrereleaseTag(release.tag) : flaggedPrerelease(releases, release.tag),
+    source,
+    prerelease: source === "release" ? flaggedPrerelease(releases, release.tag) : isPrereleaseTag(release.tag),
   };
 }
 
@@ -75,7 +75,7 @@ function bySlug(tools: readonly unknown[]): Map<string, TrackedTool> {
 
 function isNewRelease(before: TrackedRelease | null, after: TrackedRelease): boolean {
   if (before?.tag === after.tag || after.prerelease) return false;
-  if (before && !before.fromTags && after.fromTags) return false;
+  if (before && before.source !== after.source && after.source !== "release") return false;
   if (before?.publishedAt && after.publishedAt && after.publishedAt <= before.publishedAt) return false;
   return true;
 }

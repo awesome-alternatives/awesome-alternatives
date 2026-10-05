@@ -22,6 +22,7 @@ export interface ToolEntry {
   replaces?: Replacement[];
   affiliation?: string;
   path?: string;
+  package?: string;
   terms?: DeclaredTerms;
   capabilities?: Record<string, Capability>;
   deploy?: DeployMethod[];
@@ -126,7 +127,7 @@ export interface ReleaseFacts {
   tag: string;
   publishedAt: string | null;
   url: string;
-  source: "release" | "tag";
+  source: "release" | "tag" | "package";
   signed: boolean;
   tagOid?: string;
 }

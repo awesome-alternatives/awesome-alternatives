@@ -9,7 +9,7 @@ interface Shape {
   fullName?: string;
   archived?: boolean;
   stars?: number;
-  release?: { tag: string; publishedAt?: string | null; source?: "release" | "tag" } | null;
+  release?: { tag: string; publishedAt?: string | null; source?: "release" | "tag" | "package" } | null;
   releases?: { tag: string; prerelease: boolean }[];
   flags?: string[];
 }
@@ -114,6 +114,16 @@ describe("diffCatalogs", () => {
     const tagOnly = tool("a", { release: { tag: "v2.1.0", source: "tag" } });
     assert.deepEqual(diff([newer], [older]), []);
     assert.deepEqual(diff([newer], [tagOnly]), []);
+  });
+
+  it("skips a switch to a package registry, then reports the package's own new versions", () => {
+    const tagged = tool("a", { release: { tag: "@scope/other_v5.3.27", source: "tag" } });
+    const first = tool("a", { release: { tag: "5.180.0", publishedAt: "2026-09-29T00:00:00Z", source: "package" } });
+    const next = tool("a", { release: { tag: "5.181.0", publishedAt: "2026-10-04T00:00:00Z", source: "package" } });
+    const beta = tool("a", { release: { tag: "5.182.0-beta.1", publishedAt: "2026-10-05T00:00:00Z", source: "package" } });
+    assert.deepEqual(diff([tagged], [first]), []);
+    assert.deepEqual(kinds([first], [next]), ["a:released"]);
+    assert.deepEqual(diff([next], [beta]), []);
   });
 
   it("orders several changes to one tool the same way every time", () => {

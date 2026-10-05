@@ -1,6 +1,7 @@
 name: Rush
 repository: https://github.com/microsoft/rushstack
 path: apps/rush
+package: npm:@microsoft/rush
 category: monorepo-tool
 terms: open
 replaces:
