@@ -42,7 +42,7 @@ const mail = `mailto:${CONTACT_EMAIL}`;
     <h2>{m.maintainer.heading}</h2>
     <p>
       {m.maintainer.before} <a href={`${pathFor(locale, "/about/")}#verified`}>{m.maintainer.verifiedLink}</a>{m.maintainer.after}
-      <a href={`${REPO}/issues/new`}>{m.maintainer.issueLink}</a>.
+      <a href={`${REPO}/issues/new`}>{m.maintainer.issueLink}</a>{t(locale).locale.stop}
     </p>
   </section>
 

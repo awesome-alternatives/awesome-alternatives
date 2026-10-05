@@ -95,7 +95,10 @@ describe("the catalogs", () => {
 
   test("every locale declares its own html lang", () => {
     const langs = LOCALES.map((locale) => messages(locale).locale.htmlLang);
-    assert.deepEqual(langs, [...LOCALES]);
+    assert.deepEqual(
+      langs.map((lang) => lang.split("-")[0]),
+      [...LOCALES],
+    );
     assert.equal(new Set(langs).size, LOCALES.length);
   });
 
@@ -112,11 +115,14 @@ describe("the catalogs", () => {
     }
   });
 
-  test("no translated string drops a placeholder the English one carries", () => {
+  test("no translated string drops or invents a placeholder, past the count a plural form may name", () => {
     const tokens = (value: string) => [...value.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort();
     const walk = (english: unknown, other: unknown, path: string): void => {
       if (typeof english === "string") {
-        assert.deepEqual(tokens(english), tokens(other as string), path);
+        const said = tokens(other as string);
+        const allowed = path.endsWith(".one") ? [...tokens(english), "n"] : tokens(english);
+        assert.deepEqual(tokens(english).filter((token) => !said.includes(token)), [], `${path} drops one`);
+        assert.deepEqual(said.filter((token) => !allowed.includes(token)), [], `${path} invents one`);
         return;
       }
       if (Array.isArray(english)) return;

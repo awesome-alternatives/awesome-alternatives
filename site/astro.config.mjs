@@ -19,13 +19,13 @@ export default defineConfig({
   trailingSlash: "always",
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr", "es", "de"],
+    locales: ["en", "fr", "es", "de", "pt", "ja", "id"],
     routing: { prefixDefaultLocale: false },
   },
   integrations: [
     preact(),
     sitemap({
-      i18n: { defaultLocale: "en", locales: { en: "en", fr: "fr", es: "es", de: "de" } },
+      i18n: { defaultLocale: "en", locales: { en: "en", fr: "fr", es: "es", de: "de", pt: "pt-BR", ja: "ja", id: "id" } },
       filter: (page) => !unindexed.has(new URL(page).pathname),
       serialize(item) {
         const lastmod = lastmods.get(new URL(item.url).pathname);

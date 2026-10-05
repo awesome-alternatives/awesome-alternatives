@@ -65,7 +65,7 @@ export const islands: Islands = {
       empty: "Aucun nom ne correspond. Entrée cherche dans tout le catalogue.",
       alternativesTo: "alternatives à {name}",
     },
-    count: { one: "1 outil", other: "{n} outils" },
+    count: { one: "{n} outil", other: "{n} outils" },
     refine: {
       label: "Affiner ces résultats",
       category: "Catégorie",
@@ -114,7 +114,7 @@ export const islands: Islands = {
     rateLimited: "Trop de recherches depuis votre connexion. Attendez une minute et réessayez.",
     rateLimitedWait: "Trop de recherches depuis votre connexion. Réessayez dans {wait}.",
     refused: "La recherche a été refusée ({status}).",
-    seconds: { one: "1 seconde", other: "{n} secondes" },
+    seconds: { one: "{n} seconde", other: "{n} secondes" },
   },
   facets: {
     language: "Langage",
@@ -122,7 +122,7 @@ export const islands: Islands = {
     fit: "Remplacement",
     terms: "Conditions",
     any: "Tous",
-    total: { one: "1 alternative", other: "{n} alternatives" },
+    total: { one: "{n} alternative", other: "{n} alternatives" },
     narrowed: "{shown} sur {total}",
     emptyLead: "Aucun résultat. ",
     clear: "Effacer les filtres",
