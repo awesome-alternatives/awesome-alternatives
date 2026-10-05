@@ -31,8 +31,9 @@ export function checkMigrationPage(file: string, text: string, tools: readonly T
   if (typeof meta.reviewed !== "string" || !DATE.test(meta.reviewed)) {
     problems.push("reviewed must be a YYYY-MM-DD date");
   }
-  if (pair && !hasExactMajors(meta.majors, pair)) {
-    problems.push(`majors must give the major version of exactly ${pair.from} and ${pair.to}`);
+  const versioned = pair ? versionedSides(pair, tools) : [];
+  if (pair && !hasExactMajors(meta.majors, versioned)) {
+    problems.push(`majors must give the major version of exactly ${versioned.join(" and ")}`);
   }
   if (!hasHttpsSources(meta.sources)) problems.push("sources must list at least one https URL");
   if (pair) problems.push(...replacementProblems(pair, tools));
@@ -45,11 +46,15 @@ function frontmatterProblems(parts: RegExpExecArray | null): string[] {
   return (parts[2] ?? "").trim() ? [] : ["the page has no content"];
 }
 
-function hasExactMajors(value: unknown, { from, to }: Pair): boolean {
+function versionedSides({ from, to }: Pair, tools: readonly Tool[]): string[] {
+  return [from, to].filter((slug) => tools.some((t) => t.slug === slug));
+}
+
+function hasExactMajors(value: unknown, versioned: readonly string[]): boolean {
   const majors = value as Record<string, unknown> | undefined;
   const keys = majors && typeof majors === "object" ? Object.keys(majors).sort(byCodeUnit) : [];
   return (
-    keys.join() === [from, to].sort(byCodeUnit).join() &&
+    keys.join() === [...versioned].sort(byCodeUnit).join() &&
     keys.every((k) => Number.isInteger(majors?.[k]) && (majors?.[k] as number) >= 0)
   );
 }
