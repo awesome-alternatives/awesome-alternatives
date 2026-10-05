@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.7.0] - 2026-10-05
+
+### Features
+
+- feat(refresh): add a force input that reads every repository in full (#314)
+
 ## [0.6.3] - 2026-10-05
 
 ### Bug Fixes

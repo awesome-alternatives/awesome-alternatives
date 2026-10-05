@@ -4,6 +4,17 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.96.0] - 2026-10-05
+
+### Features
+
+- feat(catalog): add eight categories with 30 tools and 18 products (#316)
+- feat(refresh): add a force input that reads every repository in full (#314)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
 ## [0.95.3] - 2026-10-05
 
 ### Bug Fixes
