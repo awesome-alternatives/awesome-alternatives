@@ -36,6 +36,14 @@ const OPEN: &[&str] = &[
     "quelloffener",
     "quelloffenen",
     "freie software",
+    "código aberto",
+    "codigo aberto",
+    "software livre",
+    "オープンソース",
+    "フリーソフトウェア",
+    "sumber terbuka",
+    "kode terbuka",
+    "perangkat lunak bebas",
 ];
 
 const MAINTAINED: &[&str] = &[
@@ -59,6 +67,19 @@ const MAINTAINED: &[&str] = &[
     "gewartet",
     "gewartete",
     "aktiv entwickelt",
+    "mantido",
+    "mantida",
+    "mantidos",
+    "mantidas",
+    "ativamente desenvolvido",
+    "メンテナンスされている",
+    "保守されている",
+    "terawat",
+    "dipelihara",
+    "aktif dikembangkan",
+    "masih dikembangkan",
+    "dikelola",
+    "aktif dikelola",
 ];
 
 const SELF_HOSTED: &[&str] = &[
@@ -93,6 +114,20 @@ const SELF_HOSTED: &[&str] = &[
     "meinem server",
     "eigenen server",
     "meinem vps",
+    "auto hospedado",
+    "auto hospedada",
+    "autohospedada",
+    "hospedagem própria",
+    "meu servidor",
+    "minha vps",
+    "meu vps",
+    "セルフホスト",
+    "オンプレミス",
+    "自前のサーバー",
+    "自分のサーバー",
+    "server sendiri",
+    "vps sendiri",
+    "hosting sendiri",
 ];
 
 const PLATFORMS: &[(&str, &str)] = &[
@@ -115,6 +150,10 @@ const DEPLOYMENTS: &[(&str, &str)] = &[
     ("binaire", "Single binary"),
     ("binario", "Single binary"),
     ("binärdatei", "Single binary"),
+    ("binário", "Single binary"),
+    ("単一バイナリ", "Single binary"),
+    ("シングルバイナリ", "Single binary"),
+    ("biner", "Single binary"),
 ];
 
 pub fn apply(query: &str, filters: &mut Filters) -> Vec<Unchecked> {
@@ -215,6 +254,20 @@ mod tests {
             read("eine quelloffene Alternative").0.terms,
             Some(Terms::Open)
         );
+    }
+
+    #[test]
+    fn reads_them_in_portuguese_japanese_and_indonesian() {
+        for query in [
+            "alternativa de código aberto ao redis, mantida e auto-hospedada",
+            "オープンソースで保守されているセルフホスト型のRedis代替",
+            "alternatif sumber terbuka untuk redis, terawat, di server sendiri",
+        ] {
+            let (filters, _) = read(query);
+            assert_eq!(filters.terms, Some(Terms::Open), "{query}");
+            assert!(filters.maintained, "{query}");
+            assert!(filters.self_host, "{query}");
+        }
     }
 
     #[test]
