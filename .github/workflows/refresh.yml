@@ -2,6 +2,11 @@ name: Refresh
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: Read every repository in full, ignoring the facts the catalog already published
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -44,6 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.app.outputs.token }}
           APP_ID: ${{ secrets.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+          REFRESH_FORCE: ${{ inputs.force }}
       - name: Keep the refreshed catalog aside
         run: |
           mkdir -p "$RUNNER_TEMP/refreshed/generated"

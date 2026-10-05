@@ -360,7 +360,9 @@ release's assets and signature, the newest tag) costs about as much again and is
 repository that is new to the catalog, was renamed, has a newest release other than the published
 one or one published less than a day ago, has no release and was pushed to, or whose day of the week
 it is (each repository gets one). Any other repository keeps the detail the catalog published, and
-the run logs how many were read in full, as in `repositories: 180 of 827 read in full`.
+the run logs how many were read in full, as in `repositories: 180 of 827 read in full`. After a
+change to how the detail is read, start [Refresh](.github/workflows/refresh.yml) by hand with
+`force` ticked (or set `REFRESH_FORCE=true`) to read every repository in full once.
 
 Then the refresh walks each repository's commits of the last 90 days (up to 5 pages of 100) to count
 active contributors, 10 repositories per query, three at a time. With the database described below,

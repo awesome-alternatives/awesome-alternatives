@@ -23,7 +23,10 @@ const now = new Date();
 const previous = await readPublished(root);
 const databaseUrl = process.env.DATABASE_URL;
 const stored = databaseUrl ? await loadWindows(databaseUrl) : new Map();
-const { tools, owners, facts, windows } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, stored);
+const { tools, owners, facts, windows } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, {
+  windows: stored,
+  force: process.env.REFRESH_FORCE === "true",
+});
 
 const checkedAt = now.toISOString();
 const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools }, { now, history: gitEventHistory(root) });
