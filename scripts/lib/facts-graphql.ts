@@ -16,6 +16,7 @@ import type { GraphQL } from "./graphql.ts";
 import { aliasedBatches, aliasedQuery, type BatchShape, describeErrors, everyRead, type Outcome } from "./graphql-batch.ts";
 import { platformsOf } from "./platforms.ts";
 import { isCurrent } from "./recheck.ts";
+import { newestTag, TAG_CANDIDATES } from "./tags.ts";
 import { timed } from "./timing.ts";
 import {
   type ActiveContributors,
@@ -155,7 +156,7 @@ fragment Detail on Repository {
   nameWithOwner
   repositoryTopics(first: 20) { nodes { topic { name } } }
   latestRelease { tagName publishedAt url tag { target { ...Signed } } releaseAssets(first: 100) { nodes { name } } }
-  tags: refs(refPrefix: "refs/tags/", first: 1, orderBy: {field: ALPHABETICAL, direction: DESC}) { nodes { name target { ...Signed } } }
+  tags: refs(refPrefix: "refs/tags/", first: ${TAG_CANDIDATES}, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) { nodes { name target { ...Signed } } }
   releases(first: ${RELEASE_HISTORY}, orderBy: {field: CREATED_AT, direction: DESC}) {
     nodes { tagName name description publishedAt url isPrerelease isDraft }
   }
@@ -251,7 +252,7 @@ function mapDetail(node: GqlDetail): Detail {
   let release: ReleaseFacts | null = null;
   let annotatedTag: string | null = null;
   const latest = node.latestRelease;
-  const tag = node.tags.nodes[0];
+  const tag = newestTag(node.tags.nodes);
   if (latest) {
     const target = latest.tag?.target;
     release = { tag: latest.tagName, publishedAt: latest.publishedAt, url: latest.url, source: "release", signed: signedCommit(target) };

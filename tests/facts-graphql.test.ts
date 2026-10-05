@@ -140,13 +140,24 @@ describe("mapRepository on a recorded response", () => {
     assert.match(annotatedTag ?? "", /^[0-9a-f]{40}$/);
   });
 
-  it("falls back to the newest tag by name when there is no release, as the REST tag list does", () => {
-    const { release, releases } = mapRepository(node("kafka"));
+  it("falls back to the newest version among the recent tags when there is no release", () => {
+    const kafka = node("kafka");
+    const [recorded] = kafka.tags.nodes;
+    assert.ok(recorded);
+    const names = ["4.4.0-rc3", "4.2.2", "show", "4.3.1", "4.3.1-rc2"];
+    const tags = { nodes: names.map((name) => ({ ...recorded, name })) };
+    const { release, releases, annotatedTag } = mapRepository({ ...kafka, tags });
     assert.deepEqual(
-      { tag: release?.tag, source: release?.source, publishedAt: release?.publishedAt },
-      { tag: "show", source: "tag", publishedAt: null },
+      { tag: release?.tag, source: release?.source, publishedAt: release?.publishedAt, url: release?.url },
+      { tag: "4.3.1", source: "tag", publishedAt: null, url: "https://github.com/apache/kafka/releases/tag/4.3.1" },
     );
+    assert.equal(annotatedTag, mapRepository(kafka).annotatedTag);
     assert.deepEqual(releases, []);
+  });
+
+  it("asks for the most recent tags by commit date, not the last by name", () => {
+    const { query } = detailQuery(["apache/kafka"]);
+    assert.match(query, /refs\(refPrefix: "refs\/tags\/", first: 20, orderBy: \{field: TAG_COMMIT_DATE, direction: DESC\}\)/);
   });
 
   it("follows a renamed repository to its new name, which keeps the moved flag", () => {

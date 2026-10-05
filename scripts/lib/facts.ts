@@ -1,4 +1,5 @@
 import { type GitHub, repoPath } from "./github.ts";
+import { newestTag } from "./tags.ts";
 import type { OwnerFacts, OwnerKind, ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
 
 interface ApiRepo {
@@ -135,8 +136,8 @@ export async function fetchRelease(gh: GitHub, fullName: string): Promise<Releas
     };
   }
 
-  const tags = await gh.get<ApiTag[]>(`/repos/${fullName}/tags?per_page=1`);
-  const tag = tags?.[0];
+  const tags = await gh.get<ApiTag[]>(`/repos/${fullName}/tags?per_page=100`);
+  const tag = newestTag(tags ?? []);
   if (!tag) return null;
   return {
     tag: tag.name,
