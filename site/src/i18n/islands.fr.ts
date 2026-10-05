@@ -145,6 +145,8 @@ export const islands: Islands = {
       security: "Sécurité",
       alternatives: "Alternatives",
       replaces: "Remplace",
+      overview: "Vue d'ensemble",
+      resources: "Ressources",
     },
     readme: {
       loading: "Chargement du README",

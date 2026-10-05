@@ -263,6 +263,11 @@ export const de: Messages = {
     sharedLine: "Beide ersetzen {target}.",
     targetLink: "Alternativen zu {name} →",
     entry: "{a} und {b} vergleichen →",
+    sourceLink: "Quellcode auf GitHub ↗",
+    homepageLink: "Website ↗",
+    toolLink: "Alles über {name} →",
+    guidesLabel: "Migrationsleitfäden",
+    contributorsUnknown: "nicht gezählt",
   },
 
   contribute: {

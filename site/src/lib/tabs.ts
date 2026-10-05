@@ -1,30 +1,18 @@
-export const TABS = ["readme", "releases", "security", "alternatives", "replaces"] as const;
-
-export type TabId = (typeof TABS)[number];
-
-export function isTab(value: string): value is TabId {
-  return (TABS as readonly string[]).includes(value);
-}
+export type TabId = "readme" | "releases" | "security" | "alternatives" | "replaces";
 
 export interface TabCounts {
   alternatives: number;
   replaces: number;
 }
 
-export function tabsFor(counts: TabCounts): TabId[] {
-  return [
-    ...(counts.alternatives > 0 ? (["alternatives"] as const) : []),
-    "readme",
-    "releases",
-    "security",
-    ...(counts.replaces > 0 ? (["replaces"] as const) : []),
-  ];
+export function tabsFor(counts: TabCounts): [TabId, ...TabId[]] {
+  const rest: TabId[] = ["releases", "security", ...(counts.replaces > 0 ? (["replaces"] as const) : [])];
+  return counts.alternatives > 0 ? ["alternatives", "readme", ...rest] : ["readme", ...rest];
 }
 
-export function tabFromHash(hash: string, available: readonly TabId[]): TabId {
+export function tabFromHash<T extends string>(hash: string, available: readonly T[]): T | undefined {
   const wanted = hash.replace(/^#/, "").toLowerCase();
-  const first = available[0] ?? "readme";
-  return isTab(wanted) && available.includes(wanted) ? wanted : first;
+  return available.find((tab) => tab === wanted) ?? available[0];
 }
 
 export function scoreLevel(score: number | null): "good" | "fair" | "poor" | "none" {
