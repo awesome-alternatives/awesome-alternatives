@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.92.0] - 2026-10-05
+
+### Features
+
+- feat(site): split comparison pages into tabs (#300)
+
 ## [0.91.6] - 2026-10-05
 
 ### Bug Fixes
