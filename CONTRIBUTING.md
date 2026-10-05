@@ -124,7 +124,8 @@ sources:
 
 - Only write what a source you list says. The page restates the official guide and points at what
   it leaves out; it never replaces it.
-- `majors` records the major version of each side when you reviewed the page. The page is marked as
+- `majors` records the major version of each side that is a tool in the catalog when you reviewed
+  the page. A closed product has no release to track, so it gets none. The page is marked as
   due for review once `reviewed` is a year old, or when either side ships a newer major release.
 - The licence, terms and fit shown on the page come from the catalog, not from this file.
 - Content is in English for now; the rest of the page is translated.
