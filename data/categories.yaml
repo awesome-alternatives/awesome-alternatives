@@ -116,10 +116,10 @@ ci-server:
   capabilities:
     container-steps:
       label: "Steps in containers"
-      match: ["container steps", "steps in containers", "each step in a container", "étapes en conteneurs", "pasos en contenedores"]
+      match: ["container steps", "steps in containers", "each step in a container", "étapes en conteneurs", "pasos en contenedores", "etapas em contêineres", "コンテナでステップ実行", "langkah dalam kontainer"]
     kubernetes:
       label: "Runs on Kubernetes"
-      match: ["on kubernetes", "kubernetes native", "sur kubernetes", "en kubernetes", "auf kubernetes"]
+      match: ["on kubernetes", "kubernetes native", "sur kubernetes", "en kubernetes", "auf kubernetes", "no kubernetes", "kubernetes上", "di kubernetes"]
 
 git-forge:
   name: Git forges
@@ -128,19 +128,19 @@ git-forge:
   capabilities:
     ci:
       label: "CI/CD"
-      match: ["ci", "ci/cd", "cicd", "continuous integration", "intégration continue", "integración continua", "kontinuierliche integration"]
+      match: ["ci", "ci/cd", "cicd", "continuous integration", "intégration continue", "integración continua", "kontinuierliche integration", "integração contínua", "継続的インテグレーション", "integrasi berkelanjutan"]
     container-registry:
       label: "Container registry"
-      match: ["container registry", "docker registry", "registre docker", "registre de conteneurs", "registro de contenedores", "registro docker", "container-registry"]
+      match: ["container registry", "docker registry", "registre docker", "registre de conteneurs", "registro de contenedores", "registro docker", "container-registry", "registro de contêineres", "コンテナレジストリ", "registri kontainer"]
     package-registry:
       label: "Package registry"
-      match: ["package registry", "packages registry", "registre de paquets", "registro de paquetes", "paket-registry", "npm registry", "maven registry"]
+      match: ["package registry", "packages registry", "registre de paquets", "registro de paquetes", "paket-registry", "npm registry", "maven registry", "registro de pacotes", "パッケージレジストリ", "registri paket"]
     wiki:
       label: "Wiki"
-      match: ["wiki"]
+      match: ["wiki", "ウィキ"]
     pages:
       label: "Static site hosting"
-      match: ["static site hosting", "static pages", "gitlab pages", "hébergement de site statique", "pages statiques", "sitios estáticos", "statische seiten"]
+      match: ["static site hosting", "static pages", "gitlab pages", "hébergement de site statique", "pages statiques", "sitios estáticos", "statische seiten", "hospedagem de site estático", "静的サイトホスティング", "hosting situs statis"]
 
 password-manager-server:
   name: Password manager servers
@@ -169,16 +169,16 @@ team-chat:
   capabilities:
     calls:
       label: "Voice and video calls"
-      match: ["video calls", "voice calls", "audio calls", "video conferencing", "appels vidéo", "appels audio", "visioconférence", "videollamadas", "videoconferencia", "videoanrufe", "videokonferenzen"]
+      match: ["video calls", "voice calls", "audio calls", "video conferencing", "appels vidéo", "appels audio", "visioconférence", "videollamadas", "videoconferencia", "videoanrufe", "videokonferenzen", "chamadas de vídeo", "videoconferência", "ビデオ通話", "音声通話", "panggilan video", "konferensi video"]
     threads:
       label: "Threads"
-      match: ["threads", "threaded", "fils de discussion", "hilos", "hilos de conversación"]
+      match: ["threads", "threaded", "fils de discussion", "hilos", "hilos de conversación", "tópicos", "スレッド", "utas"]
     federation:
       label: "Federation"
-      match: ["federation", "federated", "fédération", "fédéré", "federación", "föderation", "föderiert"]
+      match: ["federation", "federated", "fédération", "fédéré", "federación", "föderation", "föderiert", "federação", "federado", "フェデレーション", "federasi"]
     e2e-encryption:
       label: "End-to-end encryption"
-      match: ["end to end encryption", "end-to-end encryption", "e2e", "e2ee", "chiffrement de bout en bout", "cifrado de extremo a extremo", "ende zu ende verschlüsselung"]
+      match: ["end to end encryption", "end-to-end encryption", "e2e", "e2ee", "chiffrement de bout en bout", "cifrado de extremo a extremo", "ende zu ende verschlüsselung", "criptografia de ponta a ponta", "エンドツーエンド暗号化", "enkripsi ujung ke ujung"]
 
 terminal-emulator:
   name: Terminal emulators
@@ -220,13 +220,13 @@ secrets-manager:
   capabilities:
     dynamic-secrets:
       label: "Dynamic secrets"
-      match: ["dynamic secrets", "short-lived credentials", "secrets dynamiques", "secretos dinámicos", "dynamische secrets"]
+      match: ["dynamic secrets", "short-lived credentials", "secrets dynamiques", "secretos dinámicos", "dynamische secrets", "segredos dinâmicos", "動的シークレット", "rahasia dinamis"]
     pki:
       label: "PKI and certificates"
-      match: ["pki", "certificate management", "certificate authority", "gestion des certificats", "autorité de certification", "gestión de certificados", "zertifikatsverwaltung"]
+      match: ["pki", "certificate management", "certificate authority", "gestion des certificats", "autorité de certification", "gestión de certificados", "zertifikatsverwaltung", "gerenciamento de certificados", "証明書管理", "manajemen sertifikat"]
     secret-rotation:
       label: "Secret rotation"
-      match: ["secret rotation", "rotate secrets", "rotation des secrets", "rotación de secretos", "secret-rotation"]
+      match: ["secret rotation", "rotate secrets", "rotation des secrets", "rotación de secretos", "secret-rotation", "rotação de segredos", "シークレットのローテーション", "rotasi rahasia"]
 
 git-lfs-server:
   name: Git LFS servers

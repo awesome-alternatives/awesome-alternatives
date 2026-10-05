@@ -8,6 +8,8 @@ export const fr: Messages = {
     htmlLang: "fr",
     dir: "ltr",
     ogLocale: "fr_FR",
+    stop: ".",
+    comma: ",",
   },
 
   chrome: {
@@ -75,7 +77,7 @@ export const fr: Messages = {
   listing: {
     back: "← retour",
     browse: "parcourir",
-    toolCount: { one: "1 outil", other: "{n} outils" },
+    toolCount: { one: "{n} outil", other: "{n} outils" },
   },
 
   index: {
@@ -127,9 +129,9 @@ export const fr: Messages = {
 
   category: {
     context: "catégorie",
-    title: { one: "{name} : 1 outil", other: "{name} : {n} outils" },
-    titleOpen: { one: "{name} : 1 outil open source", other: "{name} : {n} outils open source" },
-    titleSelfHost: { one: "1 outil auto-hébergeable : {lower}", other: "{n} outils auto-hébergeables : {lower}" },
+    title: { one: "{name} : {n} outil", other: "{name} : {n} outils" },
+    titleOpen: { one: "{name} : {n} outil open source", other: "{name} : {n} outils open source" },
+    titleSelfHost: { one: "{n} outil auto-hébergeable : {lower}", other: "{n} outils auto-hébergeables : {lower}" },
     descriptionSelfHost: "{description} Chacun tourne sur votre propre serveur. {count} outils comparés par langage, licence, étoiles et dernière release.",
     comparison: "Côte à côte",
     replaces: "Ce que ces outils remplacent",
@@ -186,8 +188,8 @@ export const fr: Messages = {
   },
 
   target: {
-    title: { one: "1 alternative à {name}", other: "{n} alternatives à {name}" },
-    titleOpen: { one: "1 alternative open source à {name}", other: "{n} alternatives open source à {name}" },
+    title: { one: "{n} alternative à {name}", other: "{n} alternatives à {name}" },
+    titleOpen: { one: "{n} alternative open source à {name}", other: "{n} alternatives open source à {name}" },
     dropIns: "Drop-in : {names}.",
     comparison: "Côte à côte",
     listHeading: "Toutes les alternatives",

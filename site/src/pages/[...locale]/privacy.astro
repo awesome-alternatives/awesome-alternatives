@@ -27,7 +27,7 @@ const m = t(locale).pages.privacy;
   <section class="block legal">
     <h2>{m.controller.heading}</h2>
     <p>
-      {m.controller.before} <a href={pathFor(locale, "/legal-notice/")}>{m.controller.legalNoticeLink}</a>,{" "}
+      {m.controller.before} <a href={pathFor(locale, "/legal-notice/")}>{m.controller.legalNoticeLink}</a>{t(locale).locale.comma}{" "}
       <Detail value={publisher.name} />{m.controller.beforeEmail}{" "}
       <Detail value={publisher.email} href={`mailto:${publisher.email}`} />.
     </p>
@@ -165,7 +165,7 @@ const m = t(locale).pages.privacy;
     </p>
     <p>
       {m.rights.complaintBefore}{" "}
-      <a href="https://www.cnil.fr/fr/plaintes">{m.rights.complaintLink}</a>.
+      <a href="https://www.cnil.fr/fr/plaintes">{m.rights.complaintLink}</a>{t(locale).locale.stop}
     </p>
   </section>
 </Base>

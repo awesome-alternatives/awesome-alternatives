@@ -2,9 +2,12 @@ import { de } from "./de.ts";
 import { en } from "./en.ts";
 import { es } from "./es.ts";
 import { fr } from "./fr.ts";
+import { id } from "./id.ts";
+import { ja } from "./ja.ts";
 import type { Messages } from "./messages.ts";
+import { pt } from "./pt.ts";
 
-export const LOCALES = ["en", "fr", "es", "de"] as const;
+export const LOCALES = ["en", "fr", "es", "de", "pt", "ja", "id"] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
@@ -12,7 +15,7 @@ export type { Islands, Messages, Pages } from "./messages.ts";
 
 export const DEFAULT_LOCALE: Locale = "en";
 
-const CATALOG: Record<Locale, Messages> = { en, fr, es, de };
+const CATALOG: Record<Locale, Messages> = { en, fr, es, de, pt, ja, id };
 
 export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value);

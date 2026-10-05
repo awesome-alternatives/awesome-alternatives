@@ -8,6 +8,8 @@ export const es: Messages = {
     htmlLang: "es",
     dir: "ltr",
     ogLocale: "es_ES",
+    stop: ".",
+    comma: ",",
   },
 
   chrome: {

@@ -7,6 +7,8 @@ export const en = {
     htmlLang: "en",
     dir: "ltr",
     ogLocale: "en_US",
+    stop: ".",
+    comma: ",",
   },
 
   chrome: {

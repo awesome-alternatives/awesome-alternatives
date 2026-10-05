@@ -79,12 +79,10 @@ test("a tool replaced only by archived tools keeps its own page in the sitemap",
 
 test("comparisons are listed in every locale", () => {
   const paths = expectedPaths(catalog).filter((path) => path.includes("/compare/"));
-  assert.deepEqual(paths, [
-    "/compare/cocogitto-vs-ferrflow/",
-    "/fr/compare/cocogitto-vs-ferrflow/",
-    "/es/compare/cocogitto-vs-ferrflow/",
-    "/de/compare/cocogitto-vs-ferrflow/",
-  ]);
+  assert.deepEqual(
+    paths,
+    LOCALES.map((locale) => `${locale === "en" ? "" : `/${locale}`}/compare/cocogitto-vs-ferrflow/`),
+  );
   assert.ok(!unindexedPaths(catalog).some((path) => path.includes("/compare/")));
 });
 

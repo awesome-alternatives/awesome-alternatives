@@ -164,7 +164,7 @@ const mcpUrl = new URL("/api/mcp", Astro.site).href;
     <h2>{m.licences.heading}</h2>
     <p>
       {m.licences.dataBefore} <a href={`${REPO}/blob/main/LICENSE-DATA`}>{m.licences.dataLink}</a>{m.licences.codeBefore}{" "}
-      <a href={`${REPO}/blob/main/LICENSE`}>{m.licences.codeLink}</a>.
+      <a href={`${REPO}/blob/main/LICENSE`}>{m.licences.codeLink}</a>{strings.locale.stop}
     </p>
   </section>
 </Base>
