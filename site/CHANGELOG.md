@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.93.0] - 2026-10-05
+
+### Features
+
+- feat(site): index translated comparison pages with localised titles (#302)
+
 ## [0.92.0] - 2026-10-05
 
 ### Features
