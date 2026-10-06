@@ -1,0 +1,7 @@
+name: Nebula
+repository: https://github.com/slackhq/nebula
+category: mesh-vpn
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: Certificate-based overlay network with lighthouses you run, configured by files rather than an admin console.

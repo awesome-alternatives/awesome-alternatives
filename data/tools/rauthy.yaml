@@ -1,0 +1,7 @@
+name: Rauthy
+repository: https://github.com/sebadob/rauthy
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: Lightweight OpenID Connect provider with passkeys and MFA, without SAML.

@@ -1,0 +1,7 @@
+name: step-ca
+repository: https://github.com/smallstep/certificates
+category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: full
+    note: Private CA with ACME, OIDC and cloud identity provisioners for X.509 and SSH certificates.

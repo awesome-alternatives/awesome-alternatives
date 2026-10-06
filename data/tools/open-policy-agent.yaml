@@ -1,0 +1,3 @@
+name: Open Policy Agent
+repository: https://github.com/open-policy-agent/opa
+category: authorization-service

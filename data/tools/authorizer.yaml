@@ -1,0 +1,7 @@
+name: Authorizer
+repository: https://github.com/authorizerdev/authorizer
+category: identity-provider
+replaces:
+  - tool: auth0
+    fit: partial
+    note: Login, signup and role-based access for your applications over OAuth and OpenID Connect.

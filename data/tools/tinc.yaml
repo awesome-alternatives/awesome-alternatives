@@ -1,0 +1,8 @@
+name: tinc
+repository: https://github.com/gsliepen/tinc
+category: mesh-vpn
+terms: open
+replaces:
+  - tool: tailscale
+    fit: partial
+    note: Mesh VPN daemon configured by files, without a coordination server or SSO.

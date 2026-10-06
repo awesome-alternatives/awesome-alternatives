@@ -1,0 +1,7 @@
+name: Apereo CAS
+repository: https://github.com/apereo/cas
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: Web single sign-on over CAS, SAML and OpenID Connect with MFA, common in universities.

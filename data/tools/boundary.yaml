@@ -1,0 +1,8 @@
+name: Boundary
+repository: https://github.com/hashicorp/boundary
+category: privileged-access
+terms: source-available
+replaces:
+  - tool: strongdm
+    fit: partial
+    note: Identity-based access to hosts and databases with credential injection; session recording needs the enterprise edition.

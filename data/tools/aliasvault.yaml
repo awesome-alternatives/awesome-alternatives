@@ -1,0 +1,7 @@
+name: AliasVault
+repository: https://github.com/aliasvault/aliasvault
+category: password-manager-server
+replaces:
+  - tool: 1password
+    fit: partial
+    note: End-to-end encrypted password manager with a built-in email alias server, self-hosted.

@@ -1,0 +1,3 @@
+name: lego
+repository: https://github.com/go-acme/lego
+category: acme-client

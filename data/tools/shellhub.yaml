@@ -1,0 +1,7 @@
+name: ShellHub
+repository: https://github.com/shellhub-io/shellhub
+category: privileged-access
+replaces:
+  - tool: strongdm
+    fit: partial
+    note: SSH access to devices behind NAT through a central gateway; SSH only.

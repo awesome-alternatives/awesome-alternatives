@@ -1,0 +1,3 @@
+name: Certimate
+repository: https://github.com/certimate-go/certimate
+category: acme-client

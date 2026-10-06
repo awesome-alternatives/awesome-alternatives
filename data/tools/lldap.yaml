@@ -1,0 +1,7 @@
+name: LLDAP
+repository: https://github.com/lldap/lldap
+category: ldap-directory
+replaces:
+  - tool: active-directory
+    fit: partial
+    note: Users and groups over LDAP for self-hosted apps, without Kerberos, group policy or domain joins.

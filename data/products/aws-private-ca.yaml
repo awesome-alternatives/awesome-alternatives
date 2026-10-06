@@ -1,0 +1,5 @@
+name: AWS Private CA
+homepage: https://aws.amazon.com/private-ca/
+vendor: Amazon Web Services
+category: certificate-authority
+description: Managed private certificate authority on AWS for issuing internal certificates.

@@ -1,0 +1,7 @@
+name: 2FAuth
+repository: https://github.com/Bubka/2FAuth
+category: authenticator-app
+replaces:
+  - tool: google-authenticator
+    fit: partial
+    note: TOTP and HOTP codes in a web app you host, reached from any browser rather than a phone.

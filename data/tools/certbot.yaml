@@ -1,0 +1,4 @@
+name: Certbot
+repository: https://github.com/certbot/certbot
+category: acme-client
+terms: open

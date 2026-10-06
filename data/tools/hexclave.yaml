@@ -1,0 +1,8 @@
+name: Hexclave
+repository: https://github.com/hexclave/hexclave
+category: identity-provider
+terms: open
+replaces:
+  - tool: clerk
+    fit: full
+    note: User management with prebuilt sign-in components, organisations and permissions, hosted or self-hosted.
