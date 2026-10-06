@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.98.0] - 2026-10-06
+
+### Features
+
+- feat(site): show a star icon next to star counts (#332)
+
+### Bug Fixes
+
+- fix(refresh): require a star burst to be a real share of the repository's stars (#330)
+
 ## [0.97.2] - 2026-10-06
 
 ### Bug Fixes

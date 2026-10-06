@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.8.1] - 2026-10-06
+
+### Bug Fixes
+
+- fix(refresh): require a star burst to be a real share of the repository's stars (#330)
+
 ## [0.8.0] - 2026-10-05
 
 ### Features
