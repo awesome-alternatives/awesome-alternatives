@@ -1,0 +1,7 @@
+name: SVG-Edit
+repository: https://github.com/SVG-Edit/svgedit
+category: image-editing
+replaces:
+  - tool: canva
+    fit: partial
+    note: Draws vector graphics in the browser and exports SVG or PNG, without templates, stock media or collaboration.

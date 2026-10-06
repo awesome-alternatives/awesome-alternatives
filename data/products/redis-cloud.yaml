@@ -1,0 +1,5 @@
+name: Redis Cloud
+homepage: https://redis.io/cloud/
+vendor: Redis
+category: key-value-store
+description: The managed database service from Redis that runs Redis on AWS, Google Cloud and Azure.

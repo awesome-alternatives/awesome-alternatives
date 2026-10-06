@@ -8,3 +8,6 @@ replaces:
   - tool: hubspot
     fit: partial
     note: Sales CRM only, without the marketing hub.
+  - tool: pipedrive
+    fit: full
+    note: Leads moved through configurable pipeline stages on a kanban board, with activities, emails and quotes.

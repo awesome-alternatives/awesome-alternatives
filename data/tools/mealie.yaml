@@ -10,4 +10,7 @@ replaces:
     fit: full
     note: Recipe collection, meal planner and shopping lists built from the planned recipes.
     migration: https://mealie.io/documentation/getting-started/features/#importing-recipes
+  - tool: anylist
+    fit: partial
+    note: Shopping lists shared by the household, built from recipes and meal plans.
 deploy: [container, compose]

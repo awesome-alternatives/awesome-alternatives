@@ -1,4 +1,8 @@
 name: Restreamer
 repository: https://github.com/datarhei/restreamer
 category: video-hosting
+replaces:
+  - tool: twitch
+    fit: partial
+    note: Takes one live stream from a camera or OBS to its own player page and on to other platforms, without chat or a directory of other streamers.
 deploy: [container]

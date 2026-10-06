@@ -1,0 +1,8 @@
+name: Filmulator
+repository: https://github.com/CarVac/filmulator-gui
+category: raw-photo-editing
+terms: open
+replaces:
+  - tool: lightroom
+    fit: partial
+    note: Raw import, a photo library and a short set of film-simulation development tools, much narrower than Lightroom's develop module.

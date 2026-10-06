@@ -1,0 +1,15 @@
+name: OpenReplay
+repository: https://github.com/openreplay/openreplay
+category: web-analytics
+terms: open-core
+replaces:
+  - tool: hotjar
+    fit: partial
+    note: Session replay with clickmaps and product analytics, without on-site feedback surveys.
+  - tool: mixpanel
+    fit: partial
+    note: Funnels, journeys and trends built on recorded sessions, with replay and DevTools next to them.
+  - tool: amplitude
+    fit: partial
+    note: Funnels, journeys and trends built on recorded sessions, without experiments.
+deploy: [compose, helm]

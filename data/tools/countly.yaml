@@ -1,0 +1,11 @@
+name: Countly
+repository: https://github.com/Countly/countly-server
+category: web-analytics
+replaces:
+  - tool: mixpanel
+    fit: partial
+    note: Sessions, events, views, crashes and dashboards for mobile, web and desktop apps; funnels, cohorts and retention are in the paid Enterprise edition.
+  - tool: amplitude
+    fit: partial
+    note: Sessions, events, views, crashes and dashboards for mobile, web and desktop apps; funnels, cohorts and retention are in the paid Enterprise edition.
+deploy: [container, compose]

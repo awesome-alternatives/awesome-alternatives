@@ -8,4 +8,7 @@ replaces:
   - tool: freshdesk
     fit: partial
     note: Email and chat conversations with teams, SLAs, CSAT ratings and a knowledge base.
+  - tool: intercom
+    fit: partial
+    note: Live chat and email in a shared inbox with a help center, without product tours or outbound messages.
 deploy: [container, compose, binary]

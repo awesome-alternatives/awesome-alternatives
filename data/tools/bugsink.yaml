@@ -6,4 +6,7 @@ replaces:
   - tool: sentry
     fit: partial
     note: Accepts events from the Sentry SDKs; error tracking only, without performance monitoring.
+  - tool: airbrake
+    fit: partial
+    note: Error tracking through the Sentry SDKs instead of the Airbrake notifiers, without performance monitoring.
 deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: Photoflare
+repository: https://github.com/PhotoFlare/photoflare
+category: image-editing
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Quick image edits, painting, filters and batch processing on Linux and Windows, without layers.

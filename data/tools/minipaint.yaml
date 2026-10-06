@@ -1,0 +1,8 @@
+name: miniPaint
+repository: https://github.com/viliusle/miniPaint
+category: image-editing
+terms: open
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Layers, selections, filters and basic retouching in the browser, with no upload of your images, not Photoshop's full feature set.

@@ -1,0 +1,11 @@
+name: Universal Media Server
+repository: https://github.com/UniversalMediaServer/UniversalMediaServer
+category: media-server
+replaces:
+  - tool: netflix
+    fit: partial
+    note: Streams your own films and series to TVs, consoles and browsers over DLNA and a web player; there is no catalog of content to watch.
+  - tool: emby
+    fit: partial
+    note: Streams and transcodes your library to DLNA devices and a web player, without dedicated client apps.
+deploy: [binary]

@@ -1,0 +1,7 @@
+name: CodeChecker
+repository: https://github.com/Ericsson/codechecker
+category: static-analysis
+replaces:
+  - tool: sonarcloud
+    fit: partial
+    note: Stores, compares and triages the results of Clang, GCC and other analyzers on a server you run, mainly for C and C++.

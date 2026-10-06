@@ -1,0 +1,8 @@
+name: Money Manager Ex
+repository: https://github.com/moneymanagerex/moneymanagerex
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Accounts, budgets, scheduled transactions and stock portfolios on the desktop, with QIF import and no online banking.
+deploy: [binary, package]

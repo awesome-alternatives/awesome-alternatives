@@ -1,0 +1,7 @@
+name: Spacebar
+repository: https://github.com/spacebarchat/server
+category: team-chat
+replaces:
+  - tool: discord
+    fit: partial
+    note: Reimplements Discord's backend so existing Discord clients and bots can connect to your own server, though some clients do not work yet.

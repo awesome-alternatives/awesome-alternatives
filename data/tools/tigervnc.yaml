@@ -5,3 +5,6 @@ replaces:
   - tool: teamviewer
     fit: partial
     note: VNC server and viewer for direct connections, without a relay or an ID service.
+  - tool: anydesk
+    fit: partial
+    note: VNC server and viewer for direct connections, without a relay or an ID service.

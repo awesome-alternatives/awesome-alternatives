@@ -8,4 +8,7 @@ replaces:
   - tool: mint
     fit: full
     note: Accounts, budgets, rules and reports in a web app, with bank transactions brought in through its separate data importer.
+  - tool: monarch-money
+    fit: partial
+    note: Accounts, budgets, rules and reports in a web app, with bank transactions brought in through its separate data importer; no investment tracking.
 deploy: [container, compose, helm]

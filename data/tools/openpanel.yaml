@@ -1,0 +1,11 @@
+name: OpenPanel
+repository: https://github.com/Openpanel-dev/openpanel
+category: web-analytics
+replaces:
+  - tool: mixpanel
+    fit: full
+    note: Event analytics with funnels, cohorts, user profiles and alerts, for web, mobile and server events.
+  - tool: amplitude
+    fit: full
+    note: Event analytics with funnels, cohorts, A/B test breakdowns and session replay.
+deploy: [container]

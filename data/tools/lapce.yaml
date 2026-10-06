@@ -5,3 +5,6 @@ replaces:
   - tool: vscode
     fit: partial
     note: Native editor with language servers and a plugin system of its own, without VS Code's extensions.
+  - tool: sublime-text
+    fit: full
+    note: A fast native editor with modal editing, language servers and plugins.

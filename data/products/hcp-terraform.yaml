@@ -1,0 +1,5 @@
+name: HCP Terraform
+homepage: https://developer.hashicorp.com/terraform/cloud-docs
+vendor: HashiCorp
+category: infrastructure-as-code
+description: HashiCorp's hosted service, formerly Terraform Cloud, that runs Terraform plans and applies remotely and stores state, with workspaces, a private module registry and policy checks.

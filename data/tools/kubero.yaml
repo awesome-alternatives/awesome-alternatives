@@ -5,4 +5,16 @@ replaces:
   - tool: heroku
     fit: full
     note: Pipelines with review apps, buildpacks and add-ons such as PostgreSQL and Redis, on a Kubernetes cluster.
+  - tool: vercel
+    fit: partial
+    note: Pipelines with pull request review apps on a Kubernetes cluster you run, without serverless functions or a global edge network.
+  - tool: netlify
+    fit: partial
+    note: Pipelines with pull request review apps on a Kubernetes cluster you run, without Netlify Functions, Forms or a global CDN.
+  - tool: railway
+    fit: full
+    note: Apps and add-ons such as PostgreSQL and Redis from a dashboard, on a Kubernetes cluster you run.
+  - tool: render
+    fit: full
+    note: Web services, add-ons and pull request review apps from a dashboard, on a Kubernetes cluster you run.
 deploy: [container]

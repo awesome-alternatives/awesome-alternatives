@@ -1,0 +1,12 @@
+name: RecipeSage
+repository: https://github.com/julianpoy/RecipeSage
+category: recipe-manager
+terms: source-available
+replaces:
+  - tool: plan-to-eat
+    fit: full
+    note: Recipe collection with import from websites, meal plans and shopping lists shared with other people.
+  - tool: anylist
+    fit: partial
+    note: Shopping lists and meal plans shared with other people, next to a recipe collection.
+deploy: [container, compose]

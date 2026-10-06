@@ -5,4 +5,7 @@ replaces:
   - tool: sentry
     fit: partial
     note: Errors, logs and feature usage events from its own .NET and JavaScript clients.
+  - tool: airbrake
+    fit: partial
+    note: Errors and logs from its own .NET and JavaScript clients instead of the Airbrake notifiers.
 deploy: [container, compose, helm]

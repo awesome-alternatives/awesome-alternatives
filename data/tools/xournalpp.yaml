@@ -1,0 +1,7 @@
+name: Xournal++
+repository: https://github.com/xournalpp/xournalpp
+category: note-taking
+replaces:
+  - tool: onenote
+    fit: partial
+    note: Handwritten notes and PDF annotation with a pen on the desktop, without sync or typed notebooks.

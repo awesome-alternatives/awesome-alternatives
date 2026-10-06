@@ -1,0 +1,7 @@
+name: RapidRAW
+repository: https://github.com/CyberTimon/RapidRAW
+category: raw-photo-editing
+replaces:
+  - tool: lightroom
+    fit: partial
+    note: Non-destructive, GPU-accelerated raw editing with masks on desktop and Android, browsing folders rather than a catalog, without cloud sync.

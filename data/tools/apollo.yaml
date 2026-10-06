@@ -1,0 +1,8 @@
+name: Apollo
+repository: https://github.com/ClassicOldSong/Apollo
+category: remote-desktop
+replaces:
+  - tool: parsec
+    fit: partial
+    note: Windows streaming host for Moonlight and Artemis clients that creates a virtual display matching each client's resolution, with no account or relay service.
+deploy: [binary]

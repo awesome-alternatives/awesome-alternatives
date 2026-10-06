@@ -1,0 +1,8 @@
+name: Nexus Repository
+repository: https://github.com/sonatype/nexus-public
+category: artifact-repository
+terms: open-core
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: The open source core hosts and proxies Maven, raw and APT repositories; npm, Docker, PyPI and the other formats need the Community Edition binary, which is not open source.

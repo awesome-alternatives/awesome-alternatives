@@ -1,0 +1,10 @@
+name: Publii
+repository: https://github.com/GetPublii/Publii
+category: static-site-generator
+replaces:
+  - tool: wix
+    fit: partial
+    note: A desktop app that builds static sites and blogs from themes and uploads them to your own hosting, without drag-and-drop layout.
+  - tool: squarespace
+    fit: partial
+    note: A desktop app that builds static sites and blogs from themes and uploads them to your own hosting, without commerce.

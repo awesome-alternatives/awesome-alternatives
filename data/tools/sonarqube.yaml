@@ -1,0 +1,7 @@
+name: SonarQube Community Build
+repository: https://github.com/SonarSource/sonarqube
+category: static-analysis
+replaces:
+  - tool: sonarcloud
+    fit: partial
+    note: The same kind of analysis on a server you run, for the main branch only, without branch analysis or pull request decoration.

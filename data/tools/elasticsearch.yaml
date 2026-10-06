@@ -1,5 +1,9 @@
 name: Elasticsearch
 repository: https://github.com/elastic/elasticsearch
 category: search-engine
+replaces:
+  - tool: elastic-cloud
+    fit: full
+    note: The same Elasticsearch, with Kibana installed alongside, run on your own machines.
 terms: open-core
 deploy: [container, package]

@@ -5,3 +5,6 @@ replaces:
   - tool: jenkins
     fit: full
     note: Pipelines and value-stream maps built in, without plugins.
+  - tool: circleci
+    fit: full
+    note: Pipelines declared in YAML or the UI, run on agents you operate.

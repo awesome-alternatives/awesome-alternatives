@@ -1,0 +1,7 @@
+name: Terrakube
+repository: https://github.com/terrakube-io/terrakube
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: full
+    note: Workspaces, remote state, a private module registry and remote runs for Terraform and OpenTofu, on a server you run.

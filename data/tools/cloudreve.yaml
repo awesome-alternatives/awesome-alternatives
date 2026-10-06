@@ -8,4 +8,10 @@ replaces:
   - tool: google-drive
     fit: partial
     note: File storage and sharing, without the office editors.
+  - tool: box
+    fit: partial
+    note: Web file manager with share links, WebDAV and a desktop sync client, over local or S3-compatible storage.
+  - tool: onedrive
+    fit: partial
+    note: File storage and sharing, without the office editors.
 deploy: [container, compose, binary]

@@ -6,3 +6,6 @@ replaces:
   - tool: atom
     fit: drop-in
     note: A community continuation of Atom that runs its packages and themes.
+  - tool: sublime-text
+    fit: full
+    note: A hackable editor with packages and themes, continuing Atom.

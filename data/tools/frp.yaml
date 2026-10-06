@@ -5,4 +5,7 @@ replaces:
   - tool: ngrok
     fit: partial
     note: Exposes local TCP, UDP and HTTP services through a server you run, without the hosted edge or dashboard.
+  - tool: cloudflare-tunnel
+    fit: partial
+    note: Publishes services from a private network through a server you run over an outbound client connection, without access policies or a CDN.
 deploy: [container, binary]

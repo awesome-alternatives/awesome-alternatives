@@ -5,4 +5,7 @@ replaces:
   - tool: tableau
     fit: partial
     note: Drag-and-drop charts and dashboards over databases and files.
+  - tool: power-bi
+    fit: partial
+    note: Drag-and-drop charts and dashboards over databases and files, in the browser.
 deploy: [container, compose]

@@ -6,4 +6,7 @@ replaces:
     fit: full
     note: Envelope budgeting in a local-first app, with an optional sync server and bank sync through providers such as SimpleFIN or Enable Banking.
     migration: https://actualbudget.org/docs/migration/nynab/
+  - tool: mint
+    fit: partial
+    note: Envelope budgeting with bank sync through providers such as SimpleFIN or Enable Banking, without investment tracking.
 deploy: [container, compose, binary]

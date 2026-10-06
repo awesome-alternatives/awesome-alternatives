@@ -5,3 +5,6 @@ replaces:
   - tool: google-translate
     fit: partial
     note: Offline translation from Python or the command line, with downloadable language packages.
+  - tool: deepl
+    fit: partial
+    note: Offline translation from Python or the command line, with downloadable language packages.

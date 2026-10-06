@@ -1,0 +1,8 @@
+name: Tiledesk
+repository: https://github.com/Tiledesk/tiledesk
+category: helpdesk
+replaces:
+  - tool: intercom
+    fit: partial
+    note: A live chat widget with chatbots that hand conversations over to human agents.
+deploy: [container, compose, helm]

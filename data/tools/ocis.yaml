@@ -11,4 +11,13 @@ replaces:
   - tool: google-drive
     fit: partial
     note: File sync and sharing; documents through a connected office server.
+  - tool: box
+    fit: full
+    note: File sync and sharing through desktop and mobile clients, with project spaces for teams.
+  - tool: onedrive
+    fit: partial
+    note: File sync and sharing; documents through a connected office server.
+  - tool: icloud-drive
+    fit: full
+    note: File sync and sharing through desktop and mobile clients.
 deploy: [container, helm, binary]

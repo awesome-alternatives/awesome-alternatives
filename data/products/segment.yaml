@@ -1,0 +1,5 @@
+name: Segment
+homepage: https://segment.com
+vendor: Twilio
+category: data-integration
+description: Hosted customer data platform that collects events from websites, apps and servers and routes them to analytics tools and data warehouses.

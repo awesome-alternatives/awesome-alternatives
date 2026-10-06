@@ -1,0 +1,7 @@
+name: Tasks.org
+repository: https://github.com/tasks/tasks
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: A to-do app for Android and desktop with tags, filters, reminders and recurring tasks, syncing through CalDAV, Google Tasks or EteSync.

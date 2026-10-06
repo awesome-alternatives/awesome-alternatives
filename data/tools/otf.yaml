@@ -1,0 +1,7 @@
+name: OTF
+repository: https://github.com/leg100/otf
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: full
+    note: Implements the HCP Terraform API, so the cloud block and terraform login work against a server you run, with workspaces, remote runs and state.

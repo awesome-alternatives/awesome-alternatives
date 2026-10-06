@@ -1,0 +1,7 @@
+name: Motion Canvas
+repository: https://github.com/motion-canvas/motion-canvas
+category: video-editing
+replaces:
+  - tool: after-effects
+    fit: partial
+    note: Animations written in TypeScript with a live-preview editor and rendered to video, without a layer timeline or effects to apply by hand.

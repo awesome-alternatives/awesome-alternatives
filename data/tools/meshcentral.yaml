@@ -5,4 +5,7 @@ replaces:
   - tool: teamviewer
     fit: partial
     note: Web-based remote desktop, terminal and file access to machines running its agent.
+  - tool: anydesk
+    fit: partial
+    note: Web-based remote desktop, terminal and file access to machines running its agent.
 deploy: [container]

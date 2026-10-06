@@ -15,4 +15,7 @@ replaces:
   - tool: jotform
     fit: partial
     note: Surveys and feedback forms, not payment or approval forms.
+  - tool: hotjar
+    fit: partial
+    note: On-site and in-app feedback surveys, without heatmaps or session recordings.
 deploy: [container]

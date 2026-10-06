@@ -1,0 +1,7 @@
+name: Revideo
+repository: https://github.com/midrender/revideo
+category: video-editing
+replaces:
+  - tool: after-effects
+    fit: partial
+    note: Scenes and animations described in TypeScript and rendered to video through a headless API, for generated motion graphics rather than hand-built compositions.

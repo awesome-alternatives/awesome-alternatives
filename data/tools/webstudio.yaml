@@ -1,0 +1,13 @@
+name: Webstudio
+repository: https://github.com/webstudio-is/webstudio
+category: design-tool
+replaces:
+  - tool: webflow
+    fit: full
+    note: A visual builder exposing CSS properties directly, with content from headless CMSs and export to your own hosting.
+  - tool: wix
+    fit: partial
+    note: Visual site building aimed at people who know CSS, without an app market or an online store.
+  - tool: squarespace
+    fit: partial
+    note: Visual site building aimed at people who know CSS, without commerce or scheduling.

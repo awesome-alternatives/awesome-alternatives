@@ -1,0 +1,7 @@
+name: SMS Gateway for Android
+repository: https://github.com/capcom6/android-sms-gateway
+category: notification-infrastructure
+replaces:
+  - tool: twilio
+    fit: partial
+    note: Sends and receives SMS through an Android phone over a REST API with webhooks, directly or through a relay server; no voice.

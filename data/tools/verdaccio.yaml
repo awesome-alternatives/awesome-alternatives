@@ -1,0 +1,7 @@
+name: Verdaccio
+repository: https://github.com/verdaccio/verdaccio
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: A private npm registry that proxies the public one, for npm packages only.

@@ -1,0 +1,5 @@
+name: MongoDB Atlas
+homepage: https://www.mongodb.com/products/platform/atlas-database
+vendor: MongoDB
+category: document-database
+description: MongoDB's managed database service that runs MongoDB clusters on AWS, Google Cloud and Azure, with backups, scaling and search.

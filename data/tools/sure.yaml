@@ -8,4 +8,10 @@ replaces:
   - tool: monarch-money
     fit: full
     note: Accounts, net worth, budgets and investments, with bank sync through providers such as Plaid or SimpleFIN using your own credentials.
+  - tool: ynab
+    fit: partial
+    note: Monthly budgets per category next to accounts and net worth, rather than YNAB's zero-based envelopes.
+  - tool: mint
+    fit: full
+    note: Accounts, transactions, budgets and net worth, with bank sync through providers such as Plaid or SimpleFIN using your own credentials.
 deploy: [container, compose, helm]

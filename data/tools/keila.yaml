@@ -1,0 +1,8 @@
+name: Keila
+repository: https://github.com/pentacent/keila
+category: newsletter
+replaces:
+  - tool: substack
+    fit: partial
+    note: Newsletter campaigns with sign-up forms and subscriber lists, without a publication website or paid subscriptions.
+deploy: [container]

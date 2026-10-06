@@ -1,0 +1,7 @@
+name: SD.Next
+repository: https://github.com/vladmandic/sdnext
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: A web UI for generating images with open diffusion models on your own hardware; Midjourney's own models are not available.

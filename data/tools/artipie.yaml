@@ -1,0 +1,7 @@
+name: Artipie
+repository: https://github.com/artipie/artipie
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: full
+    note: Hosts and proxies Maven, npm, PyPI, Docker, Helm, Debian, RPM and other repositories from one server.

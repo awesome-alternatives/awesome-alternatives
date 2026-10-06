@@ -1,0 +1,7 @@
+name: Presenton
+repository: https://github.com/presenton/presenton
+category: slides
+replaces:
+  - tool: canva
+    fit: partial
+    note: Generates presentations from a prompt or a document with templates and an AI provider you choose, edited by hand and exported to PPTX or PDF; covers only Canva's presentations.

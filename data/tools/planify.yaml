@@ -1,0 +1,7 @@
+name: Planify
+repository: https://github.com/alainm23/planify
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: A Linux desktop task manager that works locally or syncs with Todoist itself or a CalDAV server such as Nextcloud.

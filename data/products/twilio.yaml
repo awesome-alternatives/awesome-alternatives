@@ -1,0 +1,5 @@
+name: Twilio
+homepage: https://www.twilio.com
+vendor: Twilio
+category: notification-infrastructure
+description: Hosted communications APIs for SMS, voice calls, WhatsApp, email and phone number verification.

@@ -1,0 +1,8 @@
+name: useSend
+repository: https://github.com/usesend/useSend
+category: newsletter
+replaces:
+  - tool: sendgrid
+    fit: full
+    note: Transactional and marketing email over a REST API and SMTP, with webhooks and delivery stats, sent through Amazon SES.
+deploy: [container]

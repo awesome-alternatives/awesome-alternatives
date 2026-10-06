@@ -1,0 +1,7 @@
+name: Git Cola
+repository: https://github.com/git-cola/git-cola
+category: git-client
+replaces:
+  - tool: sourcetree
+    fit: full
+    note: Staging, commits, branches, stashes and a history graph in a desktop app for Windows, macOS and Linux.

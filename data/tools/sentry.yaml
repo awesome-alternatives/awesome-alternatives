@@ -1,5 +1,9 @@
 name: Sentry
 repository: https://github.com/getsentry/sentry
 category: error-tracking
+replaces:
+  - tool: airbrake
+    fit: full
+    note: Error and performance monitoring through Sentry's own SDKs instead of the Airbrake notifiers.
 terms: source-available
 deploy: [container, compose]

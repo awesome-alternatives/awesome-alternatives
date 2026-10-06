@@ -8,5 +8,8 @@ replaces:
   - tool: memcached
     fit: full
     note: "Speaks the memcached protocol as well as Redis's."
+  - tool: redis-cloud
+    fit: full
+    note: A multithreaded server compatible with the Redis API, run on your own machines.
 terms: source-available
 deploy: [container, compose, helm, binary, package]

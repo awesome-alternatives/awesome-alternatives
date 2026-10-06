@@ -1,0 +1,9 @@
+name: Elastic Cloud on Kubernetes
+repository: https://github.com/elastic/cloud-on-k8s
+category: search-engine
+terms: source-available
+replaces:
+  - tool: elastic-cloud
+    fit: full
+    note: Deploys, scales and upgrades Elasticsearch, Kibana and the rest of the Elastic Stack on your own Kubernetes cluster.
+deploy: [helm]

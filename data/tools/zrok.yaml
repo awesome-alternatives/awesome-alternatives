@@ -1,0 +1,11 @@
+name: zrok
+repository: https://github.com/openziti/zrok
+category: reverse-proxy
+replaces:
+  - tool: ngrok
+    fit: full
+    note: Public and private shares of HTTP, TCP and UDP services started from a CLI, on the hosted service or an instance you run.
+  - tool: cloudflare-tunnel
+    fit: partial
+    note: Publishes private services through an OpenZiti overlay with outbound connections only, without a CDN or per-application access policies.
+deploy: [binary]

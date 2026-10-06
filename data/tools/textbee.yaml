@@ -1,0 +1,8 @@
+name: textbee
+repository: https://github.com/textbee/textbee
+category: notification-infrastructure
+replaces:
+  - tool: twilio
+    fit: partial
+    note: Sends and receives SMS through Android phones over a REST API and webhooks; no voice, and volume depends on the phones and their plans.
+deploy: [compose]

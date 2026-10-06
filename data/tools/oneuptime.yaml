@@ -9,4 +9,10 @@ replaces:
   - tool: statuspage
     fit: full
     note: Status pages with incident updates and subscribers.
+  - tool: pagerduty
+    fit: full
+    note: On-call policies with escalation rules and incidents, fed by its own monitors or by incoming webhooks.
+  - tool: cronitor
+    fit: full
+    note: Heartbeat monitors for cron jobs next to uptime checks and status pages.
 deploy: [container, compose, helm]

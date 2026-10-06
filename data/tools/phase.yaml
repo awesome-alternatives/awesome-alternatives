@@ -1,0 +1,9 @@
+name: Phase
+repository: https://github.com/phasehq/console
+category: secrets-manager
+terms: open
+replaces:
+  - tool: doppler
+    fit: full
+    note: Secrets per app and environment, synced to CI and cloud providers, on a server you run.
+deploy: [compose]

@@ -1,0 +1,8 @@
+name: Alerta
+repository: https://github.com/alerta/alerta
+category: incident-management
+replaces:
+  - tool: pagerduty
+    fit: partial
+    note: Collects, deduplicates and correlates alerts from monitoring tools in one console, without on-call schedules or escalation policies.
+deploy: [container]

@@ -1,0 +1,9 @@
+name: Jitsu
+repository: https://github.com/jitsucom/jitsu
+category: data-integration
+replaces:
+  - tool: segment
+    fit: full
+    note: Event collection through SDKs, an HTTP API or a Segment proxy, streamed to warehouses and other tools with JavaScript functions.
+    migration: https://jitsu.com/docs/sending-data/segment-proxy
+deploy: [container, compose, helm]
