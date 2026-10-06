@@ -12,6 +12,7 @@ WORKDIR /repo/site
 RUN pnpm install --frozen-lockfile
 COPY site/ ./
 ARG PUBLIC_API_URL=/api
+ENV NODE_OPTIONS=--max-old-space-size=6144
 RUN pnpm build \
  && find dist -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.svg' \
       -o -name '*.json' -o -name '*.xml' -o -name '*.txt' -o -name '*.md' \
