@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.105.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add two categories, 79 tools and 8 products to fill out thin product pages (#343)
+
 ## [0.104.0] - 2026-10-06
 
 ### Features
