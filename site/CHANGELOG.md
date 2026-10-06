@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.112.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 50 productivity and business tools (#357)
+
 ## [0.111.0] - 2026-10-06
 
 ### Features
