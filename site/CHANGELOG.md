@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.119.1] - 2026-10-06
+
+### Bug Fixes
+
+- fix(site): raise the Node heap for the site build (#382)
+
 ## [0.119.0] - 2026-10-06
 
 ### Features
