@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.108.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): rename RoxyCloud to Stashden (#349)
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+
 ## [0.107.0] - 2026-10-06
 
 ### Features
