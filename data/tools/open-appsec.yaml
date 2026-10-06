@@ -1,0 +1,7 @@
+name: open-appsec
+repository: https://github.com/openappsec/openappsec
+category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: Machine-learning WAF for NGINX, Kubernetes ingress and API gateways, without a CDN.

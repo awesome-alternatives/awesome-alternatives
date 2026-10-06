@@ -1,0 +1,4 @@
+name: Snort 3
+repository: https://github.com/snort3/snort3
+category: intrusion-detection
+terms: open

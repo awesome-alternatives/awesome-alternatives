@@ -1,0 +1,8 @@
+name: OpenVPN
+repository: https://github.com/OpenVPN/openvpn
+category: vpn-server
+terms: open
+replaces:
+  - tool: openvpn-access-server
+    fit: partial
+    note: The same VPN daemon, configured by files, without the web admin interface or user portal.

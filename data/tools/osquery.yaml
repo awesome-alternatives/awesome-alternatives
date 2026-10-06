@@ -1,0 +1,4 @@
+name: osquery
+repository: https://github.com/osquery/osquery
+category: endpoint-detection
+terms: open

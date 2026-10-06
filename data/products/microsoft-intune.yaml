@@ -1,0 +1,5 @@
+name: Microsoft Intune
+homepage: https://www.microsoft.com/security/business/microsoft-intune
+vendor: Microsoft
+category: device-management
+description: Hosted service that manages and secures Windows, macOS, iOS and Android devices.

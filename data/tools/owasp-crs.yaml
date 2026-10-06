@@ -1,0 +1,3 @@
+name: OWASP CRS
+repository: https://github.com/coreruleset/coreruleset
+category: waf

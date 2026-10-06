@@ -1,0 +1,7 @@
+name: NeuVector
+repository: https://github.com/neuvector/neuvector
+category: runtime-security
+replaces:
+  - tool: sysdig-secure
+    fit: full
+    note: Runtime protection, network segmentation, admission control and image scanning for Kubernetes, run in your cluster.

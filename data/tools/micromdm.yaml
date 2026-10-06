@@ -1,0 +1,7 @@
+name: MicroMDM
+repository: https://github.com/micromdm/micromdm
+category: device-management
+replaces:
+  - tool: jamf-pro
+    fit: partial
+    note: Apple MDM protocol server driven by an API, without inventory, app catalog or a web console.

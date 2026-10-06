@@ -1,0 +1,7 @@
+name: Falco
+repository: https://github.com/falcosecurity/falco
+category: runtime-security
+replaces:
+  - tool: sysdig-secure
+    fit: partial
+    note: The runtime detection engine, without the hosted console, posture checks or vulnerability management.

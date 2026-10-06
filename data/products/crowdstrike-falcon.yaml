@@ -1,0 +1,5 @@
+name: CrowdStrike Falcon
+homepage: https://www.crowdstrike.com/platform/
+vendor: CrowdStrike
+category: endpoint-detection
+description: Hosted endpoint detection and response platform with an agent on each device and managed threat hunting.

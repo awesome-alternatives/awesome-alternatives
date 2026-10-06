@@ -1,0 +1,5 @@
+name: Little Snitch
+homepage: https://www.obdev.at/products/littlesnitch/
+vendor: Objective Development
+category: application-firewall
+description: macOS firewall that asks which apps may connect to which servers.

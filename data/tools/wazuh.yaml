@@ -1,0 +1,12 @@
+name: Wazuh
+repository: https://github.com/wazuh/wazuh
+category: siem
+terms: open
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Security events, file integrity and compliance checks from its own agents; not a general log search platform.
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Endpoint agent with threat detection and active response, without managed hunting.
+deploy: [container, compose]

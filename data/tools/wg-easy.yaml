@@ -1,0 +1,7 @@
+name: wg-easy
+repository: https://github.com/wg-easy/wg-easy
+category: vpn-server
+replaces:
+  - tool: openvpn-access-server
+    fit: partial
+    note: WireGuard server with a web UI to add clients and share configs, without directory integration.

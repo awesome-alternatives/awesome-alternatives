@@ -1,0 +1,8 @@
+name: Velociraptor
+repository: https://github.com/Velocidex/velociraptor
+category: endpoint-detection
+terms: open
+replaces:
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Endpoint hunting, monitoring and forensic collection at scale, without managed detection or prevention.

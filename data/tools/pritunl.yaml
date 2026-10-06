@@ -1,0 +1,8 @@
+name: Pritunl
+repository: https://github.com/pritunl/pritunl
+category: vpn-server
+terms: source-available
+replaces:
+  - tool: openvpn-access-server
+    fit: full
+    note: OpenVPN and WireGuard server with a web console, organisations and SSO.

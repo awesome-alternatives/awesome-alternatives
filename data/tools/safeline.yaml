@@ -1,0 +1,7 @@
+name: SafeLine
+repository: https://github.com/chaitin/SafeLine
+category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: full
+    note: Reverse proxy WAF with a web console, rate limiting and bot challenges, in front of your own sites.

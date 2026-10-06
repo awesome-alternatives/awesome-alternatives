@@ -1,0 +1,7 @@
+name: WireGuard Portal
+repository: https://github.com/h44z/wg-portal
+category: vpn-server
+replaces:
+  - tool: openvpn-access-server
+    fit: partial
+    note: WireGuard server with a web portal, LDAP and OAuth login and self-service client configs.

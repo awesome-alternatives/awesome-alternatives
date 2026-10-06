@@ -1,0 +1,7 @@
+name: LuLu
+repository: https://github.com/objective-see/LuLu
+category: application-firewall
+replaces:
+  - tool: little-snitch
+    fit: partial
+    note: Blocks unknown outgoing connections per application on macOS, with fewer rule options and no traffic map.
