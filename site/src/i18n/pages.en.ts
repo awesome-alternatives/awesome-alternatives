@@ -60,6 +60,7 @@ export const pages = {
         appAfter: "is installed on the repository, since installing an app on it takes admin rights.",
         stale:
           "A file dates the verification by its last commit, and an entry edited after that date shows “edited since verification” until the maintainers commit to the file again, where a dated # comment is enough.",
+        ranking: "In every list, a verified tool comes before unverified ones that fit the same way, and stars order the rest. It never moves above a better fit.",
       },
       archived: {
         term: "archived",

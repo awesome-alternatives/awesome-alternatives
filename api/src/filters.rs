@@ -92,7 +92,13 @@ impl Filters {
             })
             .filter(|t| self.replaces.is_none() || self.fit(t).is_some())
             .collect();
-        matched.sort_by_key(|t| (self.fit(t).map(fit_rank), std::cmp::Reverse(t.repo.stars)));
+        matched.sort_by_key(|t| {
+            (
+                self.fit(t).map(fit_rank),
+                !t.maintainer_verified,
+                std::cmp::Reverse(t.repo.stars),
+            )
+        });
         matched
     }
 
@@ -200,6 +206,52 @@ mod tests {
         assert_eq!(
             slugs(filters.apply(&tools)),
             ["drop-in", "full-small", "partial-big"]
+        );
+    }
+
+    #[test]
+    fn ranks_a_verified_tool_first_within_its_fit_only() {
+        let mut verified_full = tool(
+            "verified-full",
+            "Rust",
+            "MIT",
+            &[("semantic-release", Fit::Full)],
+            3,
+        );
+        verified_full.maintainer_verified = true;
+        let mut verified_partial = tool(
+            "verified-partial",
+            "Rust",
+            "MIT",
+            &[("semantic-release", Fit::Partial)],
+            9000,
+        );
+        verified_partial.maintainer_verified = true;
+        let tools = [
+            tool(
+                "full-big",
+                "Go",
+                "MIT",
+                &[("semantic-release", Fit::Full)],
+                900,
+            ),
+            verified_partial,
+            verified_full,
+            tool(
+                "drop-in",
+                "Rust",
+                "MIT",
+                &[("semantic-release", Fit::DropIn)],
+                1,
+            ),
+        ];
+        let filters = Filters {
+            replaces: Some("semantic-release".into()),
+            ..Filters::default()
+        };
+        assert_eq!(
+            slugs(filters.apply(&tools)),
+            ["drop-in", "verified-full", "full-big", "verified-partial"]
         );
     }
 

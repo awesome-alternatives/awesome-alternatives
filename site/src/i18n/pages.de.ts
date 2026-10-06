@@ -63,6 +63,7 @@ export const pages: Pages = {
         appAfter: "im Repository installiert ist, denn dafür braucht es Adminrechte.",
         stale:
           "Die Datei datiert die Bestätigung auf ihren letzten Commit, und ein danach bearbeiteter Eintrag zeigt „seit der Bestätigung bearbeitet“, bis die Maintainer die Datei erneut committen, wofür ein datierter #-Kommentar genügt.",
+        ranking: "In jeder Liste steht ein bestätigtes Tool vor nicht bestätigten mit demselben Ersatzgrad, die Sterne ordnen den Rest. Vor einen besseren Ersatz rückt es nie.",
       },
       archived: {
         term: "archiviert",

@@ -63,6 +63,7 @@ export const pages: Pages = {
         appAfter: "est installée sur le dépôt, ce qui demande d'en être administrateur.",
         stale:
           "Le fichier date la vérification de son dernier commit, et une fiche modifiée après cette date affiche « modifiée depuis la vérification » jusqu'à ce que les mainteneurs fassent un nouveau commit sur le fichier, un commentaire # daté suffisant.",
+        ranking: "Dans chaque liste, un outil vérifié passe avant les outils non vérifiés qui le remplacent au même niveau, et les étoiles ordonnent le reste. Il ne passe jamais devant un meilleur remplacement.",
       },
       archived: {
         term: "archivé",

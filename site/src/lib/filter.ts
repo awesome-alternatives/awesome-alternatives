@@ -43,6 +43,13 @@ export function fitFor(tool: Pick<ToolView, "replaces">, target: string): Fit | 
   return tool.replaces.find((r) => r.tool === target)?.fit ?? null;
 }
 
+export function byStanding(
+  a: Pick<ToolView, "maintainerVerified" | "repo">,
+  b: Pick<ToolView, "maintainerVerified" | "repo">,
+): number {
+  return Number(b.maintainerVerified) - Number(a.maintainerVerified) || b.repo.stars - a.repo.stars;
+}
+
 export function alternativesTo<T extends ToolView>(tools: readonly T[], target: string): T[] {
   const rank = (tool: T) => {
     const fit = fitFor(tool, target);
@@ -50,7 +57,7 @@ export function alternativesTo<T extends ToolView>(tools: readonly T[], target: 
   };
   return tools
     .filter((t) => !t.repo.archived && rank(t) >= 0)
-    .sort((a, b) => rank(a) - rank(b) || b.repo.stars - a.repo.stars);
+    .sort((a, b) => rank(a) - rank(b) || byStanding(a, b));
 }
 
 export function dropInCount(alternatives: readonly ToolView[], target: string): number {
