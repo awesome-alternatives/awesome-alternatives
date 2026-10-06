@@ -1674,5 +1674,8 @@
   {"type":"added","slug":"worklenz","at":"2026-10-06T09:34:51.479Z","commit":null},
   {"type":"added","slug":"writefreely","at":"2026-10-06T09:34:51.479Z","commit":null},
   {"type":"added","slug":"xournalpp","at":"2026-10-06T09:34:51.479Z","commit":null},
-  {"type":"added","slug":"zrok","at":"2026-10-06T09:34:51.479Z","commit":null}
+  {"type":"added","slug":"zrok","at":"2026-10-06T09:34:51.479Z","commit":null},
+  {"type":"added","slug":"asterisk","at":"2026-10-06T10:47:06.366Z","commit":null},
+  {"type":"added","slug":"freeswitch","at":"2026-10-06T10:47:06.366Z","commit":null},
+  {"type":"added","slug":"jambonz","at":"2026-10-06T10:47:06.366Z","commit":null}
 ]

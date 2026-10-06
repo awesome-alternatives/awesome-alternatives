@@ -1,7 +1,7 @@
 {
   "stats": {
-    "tools": 1045,
-    "categories": 171,
+    "tools": 1048,
+    "categories": 172,
     "targets": 385,
     "verified": 3
   },
@@ -7614,6 +7614,30 @@
       "bio": "Organized team chat",
       "website": "https://zulip.com",
       "url": "https://github.com/zulip"
+    },
+    "asterisk": {
+      "login": "asterisk",
+      "kind": "organization",
+      "name": "The Asterisk Project",
+      "bio": "Asterisk is a free and open source framework for building communications applications.",
+      "website": "https://www.asterisk.org",
+      "url": "https://github.com/asterisk"
+    },
+    "signalwire": {
+      "login": "signalwire",
+      "kind": "organization",
+      "name": "SignalWire",
+      "bio": "Programmable Unified Communications",
+      "website": "https://signalwire.com",
+      "url": "https://github.com/signalwire"
+    },
+    "jambonz": {
+      "login": "jambonz",
+      "kind": "organization",
+      "name": null,
+      "bio": "open source // self-hosted // \"bring your own everything\" CPaaS",
+      "website": "https://jambonz.org",
+      "url": "https://github.com/jambonz"
     }
   },
   "tools": [
@@ -13305,6 +13329,108 @@
           ]
         }
       ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "asterisk",
+      "name": "Asterisk",
+      "repository": "https://github.com/asterisk/asterisk",
+      "category": "telephony",
+      "replaces": [
+        {
+          "tool": "twilio",
+          "fit": "partial",
+          "note": "A PBX and SIP toolkit with call control over its REST Interface (ARI) and Manager Interface; voice only, and numbers come from your own SIP trunks."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-06T10:46:12.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "asterisk/asterisk",
+        "description": "The official Asterisk Project repository.",
+        "homepage": "https://www.asterisk.org",
+        "language": "C",
+        "license": "Other",
+        "stars": 3598,
+        "forks": 1329,
+        "topics": [
+          "asterisk",
+          "c",
+          "pbx",
+          "sip",
+          "voip"
+        ],
+        "databaseId": 33784533,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2015-04-11T17:07:55Z",
+        "pushedAt": "2026-10-05T14:51:24Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-06",
+        "stars": [3598]
+      },
+      "release": {
+        "tag": "23.5.0",
+        "publishedAt": "2026-08-27T15:29:27Z",
+        "url": "https://github.com/asterisk/asterisk/releases/tag/23.5.0",
+        "source": "release",
+        "signed": false,
+        "tagOid": "553a4717fa44ad3a662b2a4ea2393e7f584f822f"
+      },
+      "releases": [
+        {
+          "tag": "24.0.0-rc1",
+          "name": "Asterisk Release 24.0.0-rc1",
+          "publishedAt": "2026-09-17T14:59:40Z",
+          "url": "https://github.com/asterisk/asterisk/releases/tag/24.0.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "22.12.0-rc1",
+          "name": "Asterisk Release 22.12.0-rc1",
+          "publishedAt": "2026-09-17T14:43:50Z",
+          "url": "https://github.com/asterisk/asterisk/releases/tag/22.12.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "23.6.0-rc1",
+          "name": "Asterisk Release 23.6.0-rc1",
+          "publishedAt": "2026-09-17T14:43:36Z",
+          "url": "https://github.com/asterisk/asterisk/releases/tag/23.6.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "20.22.0-rc1",
+          "name": "Asterisk Release 20.22.0-rc1",
+          "publishedAt": "2026-09-17T14:42:26Z",
+          "url": "https://github.com/asterisk/asterisk/releases/tag/20.22.0-rc1",
+          "prerelease": true
+        },
+        {
+          "tag": "22.11.0",
+          "name": "Asterisk Release 22.11.0",
+          "publishedAt": "2026-08-27T15:29:50Z",
+          "url": "https://github.com/asterisk/asterisk/releases/tag/22.11.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 32,
+        "capped": false
+      },
+      "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
       "flags": [],
@@ -25499,7 +25625,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T09:34:31.000Z",
-      "editedAt": "2026-10-06T09:34:31.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "Countly/countly-server",
@@ -25536,7 +25662,7 @@
         "fork": false,
         "private": false,
         "createdAt": "2012-05-28T18:48:40Z",
-        "pushedAt": "2026-10-06T09:30:16Z",
+        "pushedAt": "2026-10-06T10:13:52Z",
         "defaultBranch": "master"
       },
       "trend": null,
@@ -25596,7 +25722,7 @@
       "maintainerVerified": false,
       "verifiedAt": null,
       "flags": [],
-      "terms": "unknown",
+      "terms": "open",
       "capabilities": {},
       "deploy": [
         "container",
@@ -41191,6 +41317,120 @@
       "deploy": []
     },
     {
+      "slug": "freeswitch",
+      "name": "FreeSWITCH",
+      "repository": "https://github.com/signalwire/freeswitch",
+      "category": "telephony",
+      "replaces": [
+        {
+          "tool": "twilio",
+          "fit": "partial",
+          "note": "A softswitch for SIP calls, IVR, conferencing and recording, scripted through its event socket and Lua; no hosted REST API, phone numbers or SMS out of the box."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-06T10:46:12.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "signalwire/freeswitch",
+        "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a versatile software implementation that runs on any commodity hardware. From a Raspberry PI to a multi-core server, FreeSWITCH can unlock the telecommunications potential of any device.",
+        "homepage": "https://freeswitch.com/#getting-started",
+        "language": "C",
+        "license": "Other",
+        "stars": 5208,
+        "forks": 1871,
+        "topics": [
+          "freeswitch",
+          "iot",
+          "open-source",
+          "signalwire",
+          "sip",
+          "source-code",
+          "telephony",
+          "voip",
+          "webrtc"
+        ],
+        "databaseId": 154525111,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2018-10-24T15:30:09Z",
+        "pushedAt": "2026-10-02T21:44:53Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-06",
+        "stars": [5208]
+      },
+      "release": {
+        "tag": "v1.11.3",
+        "publishedAt": "2026-08-28T22:27:30Z",
+        "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.3",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v1.11.3",
+          "name": "FreeSWITCH v1.11.3 Release",
+          "publishedAt": "2026-08-28T22:27:30Z",
+          "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.2",
+          "name": "FreeSWITCH v1.11.2 Release",
+          "publishedAt": "2026-08-09T18:05:32Z",
+          "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.1",
+          "name": "FreeSWITCH v1.11.1 Release",
+          "publishedAt": "2026-05-26T23:20:10Z",
+          "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.11.0",
+          "name": "FreeSWITCH v1.11.0 Release",
+          "publishedAt": "2026-05-07T23:41:57Z",
+          "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.10.12",
+          "name": "FreeSWITCH v1.10.12 Release",
+          "publishedAt": "2024-08-03T15:48:16Z",
+          "url": "https://github.com/signalwire/freeswitch/releases/tag/v1.10.12",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 6,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "package"
+      ]
+    },
+    {
       "slug": "freshrss",
       "name": "FreshRSS",
       "repository": "https://github.com/FreshRSS/FreshRSS",
@@ -54319,6 +54559,68 @@
       ]
     },
     {
+      "slug": "jambonz",
+      "name": "jambonz",
+      "repository": "https://github.com/jambonz/jambonz-feature-server",
+      "category": "telephony",
+      "replaces": [
+        {
+          "tool": "twilio",
+          "fit": "partial",
+          "note": "Voice call control through webhooks and a WebSocket API, over your own SIP carriers and speech providers; you run the SIP, media and database layers yourself."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-06T10:46:12.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "jambonz/jambonz-feature-server",
+        "description": "Core telephony feature server for the jambones platform",
+        "homepage": null,
+        "language": "JavaScript",
+        "license": "MIT",
+        "stars": 103,
+        "forks": 78,
+        "topics": [],
+        "databaseId": 234564654,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2020-01-17T14:26:43Z",
+        "pushedAt": "2026-10-04T13:20:27Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-06",
+        "stars": [103]
+      },
+      "release": {
+        "tag": "v0.9.14",
+        "publishedAt": null,
+        "url": "https://github.com/jambonz/jambonz-feature-server/releases/tag/v0.9.14",
+        "source": "tag",
+        "signed": false,
+        "tagOid": "e43aa6cc9760ea8a277b9d7fe5e23a2d3af6ed98"
+      },
+      "releases": [],
+      "contributors": {
+        "count": 7,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container"
+      ]
+    },
+    {
       "slug": "jan",
       "name": "Jan",
       "repository": "https://github.com/janhq/jan",
@@ -54705,7 +55007,7 @@
       "slug": "jasmin",
       "name": "Jasmin",
       "repository": "https://github.com/jookies/jasmin",
-      "category": "notification-infrastructure",
+      "category": "telephony",
       "replaces": [
         {
           "tool": "twilio",
@@ -54716,7 +55018,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T09:34:31.000Z",
-      "editedAt": "2026-10-06T09:34:31.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "jookies/jasmin",
@@ -106597,7 +106899,7 @@
       "slug": "sms-gateway-for-android",
       "name": "SMS Gateway for Android",
       "repository": "https://github.com/capcom6/android-sms-gateway",
-      "category": "notification-infrastructure",
+      "category": "telephony",
       "replaces": [
         {
           "tool": "twilio",
@@ -106608,7 +106910,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T09:34:31.000Z",
-      "editedAt": "2026-10-06T09:34:31.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "capcom6/android-sms-gateway",
@@ -115119,7 +115421,7 @@
       "slug": "textbee",
       "name": "textbee",
       "repository": "https://github.com/textbee/textbee",
-      "category": "notification-infrastructure",
+      "category": "telephony",
       "replaces": [
         {
           "tool": "twilio",
@@ -115130,7 +115432,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T09:34:31.000Z",
-      "editedAt": "2026-10-06T09:34:31.000Z",
+      "editedAt": "2026-10-06T10:46:12.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "textbee/textbee",
@@ -115138,7 +115440,7 @@
         "homepage": "https://textbee.dev",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 3132,
+        "stars": 3133,
         "forks": 460,
         "topics": [
           "android",
@@ -115170,7 +115472,7 @@
       "trend": null,
       "starHistory": {
         "from": "2026-10-06",
-        "stars": [3132]
+        "stars": [3133]
       },
       "release": {
         "tag": "v2.9.0",
@@ -133323,6 +133625,11 @@
     "static-analysis": {
       "name": "Static analysis",
       "description": "Inspect source code for bugs, code smells and security issues, and track the findings across branches and pull requests.",
+      "selfHost": true
+    },
+    "telephony": {
+      "name": "Telephony and SMS gateways",
+      "description": "Run voice calls, SIP trunks and SMS sending on your own servers behind an API.",
       "selfHost": true
     }
   }

@@ -2773,17 +2773,14 @@ Watch web pages and get alerts when they change.
 </details>
 
 <details>
-<summary><b>Notification infrastructure</b>, 5 tools</summary>
+<summary><b>Notification infrastructure</b>, 2 tools</summary>
 
 Send product notifications across email, SMS, push, chat and in-app feeds from one API, with templates and user preferences.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Novu](https://github.com/novuhq/novu) | TypeScript | Other | [@novu/framework@v2.14.0](https://github.com/novuhq/novu/releases/tag/%40novu/framework%40v2.14.0) signed | 40119 | Courier (full), Knock (full) |
-| [SMS Gateway for Android](https://github.com/capcom6/android-sms-gateway) | Kotlin | Apache-2.0 | [v1.77.1](https://github.com/capcom6/android-sms-gateway/releases/tag/v1.77.1) | 5828 | Twilio (partial) |
-| [textbee](https://github.com/textbee/textbee) | TypeScript | MIT | [v2.9.0](https://github.com/textbee/textbee/releases/tag/v2.9.0) | 3132 | Twilio (partial) |
 | [Dittofeed](https://github.com/dittofeed/dittofeed) | TypeScript | MIT | [v0.23.0](https://github.com/dittofeed/dittofeed/releases/tag/v0.23.0) signed | 2982 | Courier (partial), Knock (partial) |
-| [Jasmin](https://github.com/jookies/jasmin) | Python | Other | [0.11.0](https://github.com/jookies/jasmin/releases/tag/0.11.0) signed | 1208 | Twilio (partial) |
 
 </details>
 
@@ -2839,6 +2836,22 @@ Inspect source code for bugs, code smells and security issues, and track the fin
 | [SonarQube Community Build](https://github.com/SonarSource/sonarqube) | Java | LGPL-3.0 | [26.9.0.129388](https://github.com/SonarSource/sonarqube/releases/tag/26.9.0.129388) | 11046 | SonarQube Cloud (partial) |
 | [CodeChecker](https://github.com/Ericsson/codechecker) | Python | Apache-2.0 | [v6.29.1](https://github.com/Ericsson/codechecker/releases/tag/v6.29.1) | 2628 | SonarQube Cloud (partial) |
 | [MegaLinter](https://github.com/oxsecurity/megalinter) | Dockerfile | AGPL-3.0 | [v10.1.0](https://github.com/oxsecurity/megalinter/releases/tag/v10.1.0) | 2611 | SonarQube Cloud (partial) |
+
+</details>
+
+<details>
+<summary><b>Telephony and SMS gateways</b>, 6 tools</summary>
+
+Run voice calls, SIP trunks and SMS sending on your own servers behind an API.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [SMS Gateway for Android](https://github.com/capcom6/android-sms-gateway) | Kotlin | Apache-2.0 | [v1.77.1](https://github.com/capcom6/android-sms-gateway/releases/tag/v1.77.1) | 5828 | Twilio (partial) |
+| [FreeSWITCH](https://github.com/signalwire/freeswitch) | C | Other | [v1.11.3](https://github.com/signalwire/freeswitch/releases/tag/v1.11.3) | 5208 | Twilio (partial) |
+| [Asterisk](https://github.com/asterisk/asterisk) | C | Other | [23.5.0](https://github.com/asterisk/asterisk/releases/tag/23.5.0) | 3598 | Twilio (partial) |
+| [textbee](https://github.com/textbee/textbee) | TypeScript | MIT | [v2.9.0](https://github.com/textbee/textbee/releases/tag/v2.9.0) | 3133 | Twilio (partial) |
+| [Jasmin](https://github.com/jookies/jasmin) | Python | Other | [0.11.0](https://github.com/jookies/jasmin/releases/tag/0.11.0) signed | 1208 | Twilio (partial) |
+| [jambonz](https://github.com/jambonz/jambonz-feature-server) | JavaScript | MIT | [v0.9.14](https://github.com/jambonz/jambonz-feature-server/releases/tag/v0.9.14) | 103 | Twilio (partial) |
 
 </details>
 
