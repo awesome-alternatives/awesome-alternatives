@@ -1,0 +1,7 @@
+name: mautrix-discord
+repository: https://github.com/mautrix/discord
+category: chat-bridge
+replaces:
+  - tool: beeper
+    fit: partial
+    note: Brings Discord direct messages and guild channels into a Matrix homeserver you run.

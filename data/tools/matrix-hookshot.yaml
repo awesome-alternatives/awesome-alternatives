@@ -1,0 +1,4 @@
+name: Hookshot
+repository: https://github.com/matrix-org/matrix-hookshot
+category: chat-bridge
+deploy: [container]

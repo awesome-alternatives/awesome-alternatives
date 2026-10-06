@@ -1,0 +1,8 @@
+name: Tuwunel
+repository: https://github.com/matrix-construct/tuwunel
+category: team-chat
+replaces:
+  - tool: synapse
+    fit: full
+    note: A Matrix homeserver in Rust with an embedded RocksDB database, run as one binary.
+deploy: [container, binary, package]

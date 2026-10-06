@@ -1,0 +1,7 @@
+name: mautrix-signal
+repository: https://github.com/mautrix/signal
+category: chat-bridge
+replaces:
+  - tool: beeper
+    fit: partial
+    note: Brings Signal chats into a Matrix homeserver you run, one network per bridge.

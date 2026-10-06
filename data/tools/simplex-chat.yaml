@@ -1,0 +1,7 @@
+name: SimpleX Chat
+repository: https://github.com/simplex-chat/simplex-chat
+category: messenger
+replaces:
+  - tool: whatsapp
+    fit: full
+    note: Encrypted messages, groups and calls with no phone number or user identifier, over relays you can host.

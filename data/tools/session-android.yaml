@@ -1,0 +1,7 @@
+name: Session for Android
+repository: https://github.com/session-foundation/session-android
+category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Encrypted messages and groups routed through an onion network, with no phone number; calls are in beta.

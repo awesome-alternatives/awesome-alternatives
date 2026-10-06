@@ -1,0 +1,9 @@
+name: ejabberd
+repository: https://github.com/processone/ejabberd
+category: team-chat
+terms: open
+replaces:
+  - tool: slack
+    fit: partial
+    note: An XMPP server for chat, group chat and presence, with an MQTT broker built in; teams chat through any XMPP client.
+deploy: [container, binary, package]

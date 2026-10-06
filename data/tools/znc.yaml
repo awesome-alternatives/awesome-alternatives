@@ -1,0 +1,4 @@
+name: ZNC
+repository: https://github.com/znc/znc
+category: irc-server
+deploy: [container]

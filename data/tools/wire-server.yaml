@@ -1,0 +1,11 @@
+name: Wire Server
+repository: https://github.com/wireapp/wire-server
+category: team-chat
+replaces:
+  - tool: slack
+    fit: partial
+    note: End-to-end encrypted team messaging, calls and file sharing through the Wire apps.
+  - tool: microsoft-teams
+    fit: partial
+    note: Encrypted chat and calls only.
+deploy: [helm]

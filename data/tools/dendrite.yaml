@@ -1,0 +1,8 @@
+name: Dendrite
+repository: https://github.com/element-hq/dendrite
+category: team-chat
+replaces:
+  - tool: synapse
+    fit: partial
+    note: A Matrix homeserver in Go that runs as one binary, in maintenance mode and missing some Synapse features.
+deploy: [container]

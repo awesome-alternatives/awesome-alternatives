@@ -1,0 +1,4 @@
+name: Ergo
+repository: https://github.com/ergochat/ergo
+category: irc-server
+deploy: [container, binary]

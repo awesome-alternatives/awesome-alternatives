@@ -1,0 +1,7 @@
+name: Quiet
+repository: https://github.com/TryQuiet/quiet
+category: messenger
+replaces:
+  - tool: slack
+    fit: partial
+    note: Peer-to-peer team chat over Tor with no server, so messages sync only while members are online.

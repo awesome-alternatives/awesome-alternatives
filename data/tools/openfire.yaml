@@ -1,0 +1,8 @@
+name: Openfire
+repository: https://github.com/igniterealtime/Openfire
+category: team-chat
+replaces:
+  - tool: slack
+    fit: partial
+    note: An XMPP server with a web admin console; teams chat through an XMPP client such as Spark.
+deploy: [package]

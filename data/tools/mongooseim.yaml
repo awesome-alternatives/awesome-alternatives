@@ -1,0 +1,9 @@
+name: MongooseIM
+repository: https://github.com/esl/MongooseIM
+category: team-chat
+terms: open
+replaces:
+  - tool: slack
+    fit: partial
+    note: A clustered XMPP server built for large deployments; teams chat through an XMPP client.
+deploy: [container, helm]

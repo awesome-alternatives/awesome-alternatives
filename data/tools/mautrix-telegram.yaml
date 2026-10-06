@@ -1,0 +1,7 @@
+name: mautrix-telegram
+repository: https://github.com/mautrix/telegram
+category: chat-bridge
+replaces:
+  - tool: beeper
+    fit: partial
+    note: Brings Telegram chats into a Matrix homeserver you run, one network per bridge.

@@ -1,0 +1,5 @@
+name: Beeper
+homepage: https://www.beeper.com
+vendor: Automattic
+category: chat-bridge
+description: Hosted chat app that puts WhatsApp, Signal, Telegram, Discord and other networks in one inbox.
