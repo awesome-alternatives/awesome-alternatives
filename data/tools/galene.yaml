@@ -1,0 +1,7 @@
+name: Galene
+repository: https://github.com/jech/galene
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: A light videoconference server for lectures and meetings, used from the browser only.

@@ -1,0 +1,8 @@
+name: Centrifugo
+repository: https://github.com/centrifugal/centrifugo
+category: realtime-messaging
+replaces:
+  - tool: pusher
+    fit: full
+    note: Channels, presence and message history over WebSocket, SSE and other transports, from one Go server.
+deploy: [container, binary, package, helm]

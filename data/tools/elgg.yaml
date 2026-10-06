@@ -1,0 +1,8 @@
+name: Elgg
+repository: https://github.com/Elgg/Elgg
+category: social-network
+terms: open
+replaces:
+  - tool: facebook
+    fit: partial
+    note: A framework for building a social network with profiles, groups, blogs and an activity stream.

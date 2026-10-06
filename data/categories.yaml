@@ -1362,3 +1362,27 @@ internet-radio:
   name: Internet radio
   description: Run a web radio station with playlists, live DJs, scheduling and streaming.
   selfHost: true
+
+webrtc-server:
+  name: WebRTC media servers
+  description: Route audio and video between WebRTC peers through an SFU, or relay it through a TURN server.
+  selfHost: true
+
+social-client:
+  name: Social network clients
+  description: Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
+
+photo-sharing:
+  name: Photo and video sharing networks
+  description: Federated social networks built around photo posts and short videos.
+  selfHost: true
+
+social-network:
+  name: Social networks
+  description: Self-hosted social networks with profiles, groups and an activity stream.
+  selfHost: true
+
+realtime-messaging:
+  name: Real-time messaging servers
+  description: Push events from a backend to browsers and apps over WebSocket or Server-Sent Events, with channels and presence.
+  selfHost: true

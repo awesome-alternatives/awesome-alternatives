@@ -1,0 +1,5 @@
+name: Pusher Channels
+homepage: https://pusher.com
+vendor: Bird
+category: realtime-messaging
+description: Hosted WebSocket channels that push real-time events from a server to browsers and apps, with presence.

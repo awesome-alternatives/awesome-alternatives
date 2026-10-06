@@ -1,0 +1,8 @@
+name: OpenVidu
+repository: https://github.com/OpenVidu/openvidu
+category: webrtc-server
+replaces:
+  - tool: agora
+    fit: full
+    note: A platform built on LiveKit with recording, egress and an admin console, deployable on your own servers.
+deploy: [container]

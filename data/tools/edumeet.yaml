@@ -1,0 +1,8 @@
+name: edumeet
+repository: https://github.com/edumeet/edumeet
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Browser meetings through a mediasoup SFU, with screen sharing, chat and file sharing.
+deploy: [container]

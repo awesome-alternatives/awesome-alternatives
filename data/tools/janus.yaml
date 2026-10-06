@@ -1,0 +1,7 @@
+name: Janus
+repository: https://github.com/meetecho/janus-gateway
+category: webrtc-server
+replaces:
+  - tool: agora
+    fit: partial
+    note: A general-purpose WebRTC server with plugins for video rooms, streaming and SIP; client SDKs are thin.

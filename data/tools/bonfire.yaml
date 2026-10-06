@@ -1,0 +1,9 @@
+name: Bonfire
+repository: https://github.com/bonfire-networks/bonfire-app
+category: social-network
+terms: open
+replaces:
+  - tool: facebook
+    fit: partial
+    note: Profiles, posts and groups with fine-grained control over who sees what, federated over ActivityPub.
+deploy: [container]

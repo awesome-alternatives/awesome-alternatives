@@ -1,0 +1,7 @@
+name: mediasoup
+repository: https://github.com/versatica/mediasoup
+category: webrtc-server
+replaces:
+  - tool: agora
+    fit: partial
+    note: An SFU library for Node.js and Rust; you write the signalling and the app around it.

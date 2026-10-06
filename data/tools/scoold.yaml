@@ -1,0 +1,7 @@
+name: Scoold
+repository: https://github.com/Erudika/scoold
+category: forum
+replaces:
+  - tool: stack-internal
+    fit: partial
+    note: Questions, answers, voting and reputation for a team; SAML, LDAP and some integrations are in the paid Pro edition.

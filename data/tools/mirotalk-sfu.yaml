@@ -1,0 +1,8 @@
+name: MiroTalk SFU
+repository: https://github.com/miroslavpejic85/mirotalksfu
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Browser meetings through a mediasoup SFU, with recording, whiteboard and screen sharing, for larger groups than MiroTalk P2P.
+deploy: [container, compose]
