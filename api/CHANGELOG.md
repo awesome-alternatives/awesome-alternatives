@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.24.0] - 2026-10-06
+
+### Features
+
+- feat: relicense the code under AGPL-3.0 and the catalog data under CC BY-SA 4.0 (#345)
+
 ## [0.23.0] - 2026-10-06
 
 ### Features
