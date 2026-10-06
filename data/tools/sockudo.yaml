@@ -1,0 +1,8 @@
+name: Sockudo
+repository: https://github.com/sockudo/sockudo
+category: realtime-messaging
+replaces:
+  - tool: pusher
+    fit: drop-in
+    note: Speaks the Pusher Channels protocol, so existing Pusher client and server SDKs connect to it.
+deploy: [container]

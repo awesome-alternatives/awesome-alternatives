@@ -1,0 +1,8 @@
+name: Element Call
+repository: https://github.com/element-hq/element-call
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: partial
+    note: End-to-end encrypted group calls in Matrix rooms or standalone in the browser, without webinars.
+deploy: [container]

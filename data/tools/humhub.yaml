@@ -1,0 +1,8 @@
+name: HumHub
+repository: https://github.com/humhub/humhub
+category: social-network
+terms: open
+replaces:
+  - tool: facebook
+    fit: partial
+    note: Spaces, profiles and an activity stream for an organisation or community, extended with modules.

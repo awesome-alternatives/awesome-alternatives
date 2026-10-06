@@ -1,0 +1,7 @@
+name: Pixelfed
+repository: https://github.com/pixelfed/pixelfed
+category: photo-sharing
+replaces:
+  - tool: instagram
+    fit: full
+    note: Photo posts, albums, stories and follows without ads, federated with the fediverse over ActivityPub.

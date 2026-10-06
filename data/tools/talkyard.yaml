@@ -1,0 +1,7 @@
+name: Talkyard
+repository: https://github.com/debiki/talkyard
+category: forum
+replaces:
+  - tool: stack-internal
+    fit: partial
+    note: Question topics with accepted answers alongside forum discussions, chat and embedded blog comments.

@@ -1,0 +1,7 @@
+name: diaspora*
+repository: https://github.com/diaspora/diaspora
+category: social-network
+replaces:
+  - tool: facebook
+    fit: partial
+    note: Profiles and a stream where each post is shared with chosen groups of contacts, across federated pods.

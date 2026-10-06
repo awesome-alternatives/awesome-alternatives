@@ -1,0 +1,8 @@
+name: LiveKit
+repository: https://github.com/livekit/livekit
+category: webrtc-server
+replaces:
+  - tool: agora
+    fit: full
+    note: An SFU with client SDKs for web, mobile and servers, for adding audio, video and data to apps.
+deploy: [container, binary, helm]

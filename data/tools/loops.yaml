@@ -1,0 +1,7 @@
+name: Loops
+repository: https://github.com/joinloops/loops-server
+category: photo-sharing
+replaces:
+  - tool: tiktok
+    fit: partial
+    note: Short looping videos with likes and comments on your own server, federated over ActivityPub.

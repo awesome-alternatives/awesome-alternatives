@@ -1,0 +1,4 @@
+name: Kurento
+repository: https://github.com/Kurento/kurento
+category: webrtc-server
+deploy: [container]

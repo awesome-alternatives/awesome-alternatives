@@ -1,0 +1,4 @@
+name: nostream
+repository: https://github.com/cameri/nostream
+category: microblogging
+deploy: [compose]

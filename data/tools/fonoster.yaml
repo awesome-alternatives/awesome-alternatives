@@ -1,0 +1,7 @@
+name: Fonoster
+repository: https://github.com/fonoster/fonoster
+category: telephony
+replaces:
+  - tool: twilio
+    fit: partial
+    note: Programmable voice over your own SIP trunks, with an SDK and API for call apps; no SMS or email.

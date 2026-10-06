@@ -1,0 +1,7 @@
+name: Mbin
+repository: https://github.com/MbinOrg/mbin
+category: forum
+replaces:
+  - tool: reddit
+    fit: full
+    note: Magazines of links, threads and microblog posts with votes, federated with Lemmy and Mastodon over ActivityPub.

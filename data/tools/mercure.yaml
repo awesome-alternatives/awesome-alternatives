@@ -1,0 +1,8 @@
+name: Mercure
+repository: https://github.com/dunglas/mercure
+category: realtime-messaging
+replaces:
+  - tool: pusher
+    fit: partial
+    note: A hub that pushes updates your backend publishes to browsers over Server-Sent Events; no client-to-client messages.
+deploy: [container, binary, helm]

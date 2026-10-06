@@ -1,0 +1,8 @@
+name: plugNmeet
+repository: https://github.com/mynaparrot/plugNmeet-server
+category: video-conferencing
+replaces:
+  - tool: zoom
+    fit: full
+    note: Browser meetings with breakout rooms, whiteboard, shared notes, polls and recording, built on LiveKit.
+deploy: [container]

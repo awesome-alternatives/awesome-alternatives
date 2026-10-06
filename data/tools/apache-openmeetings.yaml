@@ -1,0 +1,8 @@
+name: Apache OpenMeetings
+repository: https://github.com/apache/openmeetings
+category: video-conferencing
+terms: open
+replaces:
+  - tool: zoom
+    fit: partial
+    note: Browser meetings with whiteboard, recording and calendar, plus a room booking system.

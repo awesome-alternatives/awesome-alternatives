@@ -1,0 +1,9 @@
+name: Bluesky PDS
+repository: https://github.com/bluesky-social/pds
+category: microblogging
+terms: open
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Hosts your own Bluesky account and data; feeds and discovery go through the shared Bluesky network.
+deploy: [container, compose]

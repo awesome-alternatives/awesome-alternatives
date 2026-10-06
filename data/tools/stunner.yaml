@@ -1,0 +1,4 @@
+name: STUNner
+repository: https://github.com/l7mp/stunner
+category: webrtc-server
+deploy: [helm]

@@ -1,0 +1,8 @@
+name: Lobsters
+repository: https://github.com/lobsters/lobsters
+category: forum
+terms: open
+replaces:
+  - tool: reddit
+    fit: partial
+    note: One invite-only link aggregator with tags and threaded comments, not a network of communities.

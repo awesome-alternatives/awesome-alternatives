@@ -1,0 +1,5 @@
+name: coturn
+repository: https://github.com/coturn/coturn
+category: webrtc-server
+terms: open
+deploy: [container]

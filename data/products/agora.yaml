@@ -1,0 +1,5 @@
+name: Agora
+homepage: https://www.agora.io
+vendor: Agora
+category: webrtc-server
+description: Hosted real-time voice, video and live streaming SDKs for building calls into apps.
