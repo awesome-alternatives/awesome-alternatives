@@ -1,0 +1,7 @@
+name: Modoboa
+repository: https://github.com/modoboa/modoboa
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: A web admin and webmail that sets up Postfix and Dovecot for mail, calendars and contacts.

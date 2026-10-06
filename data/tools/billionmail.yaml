@@ -1,0 +1,7 @@
+name: BillionMail
+repository: https://github.com/Billionmail/BillionMail
+category: newsletter
+replaces:
+  - tool: mailchimp
+    fit: partial
+    note: Campaigns and subscriber lists sent from a bundled mail server, with webmail included.

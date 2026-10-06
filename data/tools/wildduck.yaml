@@ -1,0 +1,4 @@
+name: WildDuck
+repository: https://github.com/zone-eu/wildduck
+category: mail-server
+deploy: [container]

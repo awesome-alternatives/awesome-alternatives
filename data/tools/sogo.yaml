@@ -1,0 +1,7 @@
+name: SOGo
+repository: https://github.com/Alinto/sogo
+category: webmail
+replaces:
+  - tool: microsoft-365
+    fit: partial
+    note: Webmail, calendars and contacts over IMAP, CalDAV and CardDAV, with ActiveSync for phones.

@@ -1,0 +1,8 @@
+name: Maddy
+repository: https://github.com/foxcpp/maddy
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: SMTP, IMAP, DKIM, SPF and DMARC in one Go binary; mail only.
+deploy: [container, binary]

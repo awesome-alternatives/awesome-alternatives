@@ -1,0 +1,7 @@
+name: Mox
+repository: https://github.com/mjl-/mox
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: SMTP, IMAP, webmail, spam filtering and automatic TLS in one Go binary; mail only.

@@ -1,0 +1,8 @@
+name: Roundcube
+repository: https://github.com/roundcube/roundcubemail
+category: webmail
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: Webmail with an address book and plugins, on top of an IMAP and SMTP server you run.
+deploy: [container]

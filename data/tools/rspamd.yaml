@@ -1,0 +1,4 @@
+name: Rspamd
+repository: https://github.com/rspamd/rspamd
+category: mail-server
+terms: open

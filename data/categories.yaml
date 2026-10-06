@@ -896,6 +896,34 @@ irc-server:
   description: Run an IRC network or keep a persistent connection to one with a bouncer.
   selfHost: true
 
+email-client:
+  name: Email clients
+  description: Desktop, mobile and terminal apps that read and send mail over IMAP and SMTP.
+
+webmail:
+  name: Webmail
+  description: Read and send mail in the browser from an IMAP server you run.
+  selfHost: true
+
+email-alias:
+  name: Email aliases
+  description: Hand out forwarding addresses that hide your real inbox and can be turned off one by one.
+  selfHost: true
+
+email-templating:
+  name: Email templating
+  description: Write HTML emails from components or markup and compile them to code that renders across mail clients.
+
+email-archiving:
+  name: Email archiving
+  description: Store, index and search every message an organisation sends and receives, for retention and legal holds.
+  selfHost: true
+
+dmarc-reporting:
+  name: DMARC reporting
+  description: Collect and chart the DMARC aggregate and failure reports that mailbox providers send about your domains.
+  selfHost: true
+
 nvr:
   name: Network video recorders
   description: Record, watch and analyse IP camera streams on your own hardware.
