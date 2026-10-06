@@ -1,0 +1,7 @@
+name: KICS
+repository: https://github.com/Checkmarx/kics
+category: iac-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Only the infrastructure as code checks, with queries for Terraform, Kubernetes, Docker and more.

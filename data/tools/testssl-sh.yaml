@@ -1,0 +1,3 @@
+name: testssl.sh
+repository: https://github.com/testssl/testssl.sh
+category: security-audit

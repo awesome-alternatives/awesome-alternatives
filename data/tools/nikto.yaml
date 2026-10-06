@@ -1,0 +1,4 @@
+name: Nikto
+repository: https://github.com/sullo/nikto
+category: dast-scanner
+terms: open-core

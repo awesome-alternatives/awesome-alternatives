@@ -1,0 +1,4 @@
+name: Brakeman
+repository: https://github.com/presidentbeef/brakeman
+category: static-analysis
+terms: source-available

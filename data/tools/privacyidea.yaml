@@ -1,0 +1,7 @@
+name: privacyIDEA
+repository: https://github.com/privacyidea/privacyidea
+category: mfa-server
+replaces:
+  - tool: duo
+    fit: full
+    note: MFA server for TOTP, push, WebAuthn and more, with RADIUS, LDAP and identity provider plugins.

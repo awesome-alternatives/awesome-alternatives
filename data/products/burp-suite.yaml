@@ -1,0 +1,5 @@
+name: Burp Suite
+homepage: https://portswigger.net/burp
+vendor: PortSwigger
+category: dast-scanner
+description: Web application security testing toolkit with an intercepting proxy and an automated scanner.

@@ -1,0 +1,7 @@
+name: Opengrep
+repository: https://github.com/opengrep/opengrep
+category: static-analysis
+replaces:
+  - tool: semgrep
+    fit: drop-in
+    note: Fork of the Semgrep engine that runs Semgrep rules unchanged.

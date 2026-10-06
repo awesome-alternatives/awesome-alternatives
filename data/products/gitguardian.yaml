@@ -1,0 +1,5 @@
+name: GitGuardian
+homepage: https://www.gitguardian.com
+vendor: GitGuardian
+category: secret-scanning
+description: Hosted service that detects secrets in repositories and tracks their remediation.

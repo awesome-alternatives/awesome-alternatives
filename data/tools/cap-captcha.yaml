@@ -1,0 +1,11 @@
+name: Cap
+repository: https://github.com/tiagozip/cap
+category: captcha
+terms: open
+replaces:
+  - tool: recaptcha
+    fit: full
+    note: Proof-of-work CAPTCHA with a self-hosted server and an invisible mode.
+  - tool: hcaptcha
+    fit: full
+    note: Proof-of-work CAPTCHA with a self-hosted server and an invisible mode.

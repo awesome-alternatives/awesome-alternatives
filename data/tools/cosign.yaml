@@ -1,0 +1,3 @@
+name: Cosign
+repository: https://github.com/sigstore/cosign
+category: supply-chain-security

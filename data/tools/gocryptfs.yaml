@@ -1,0 +1,3 @@
+name: gocryptfs
+repository: https://github.com/rfjakob/gocryptfs
+category: file-encryption

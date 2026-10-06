@@ -1,0 +1,5 @@
+name: hCaptcha
+homepage: https://www.hcaptcha.com
+vendor: Intuition Machines
+category: captcha
+description: Hosted CAPTCHA service that challenges visitors to tell humans from bots.

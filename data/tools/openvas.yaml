@@ -1,0 +1,7 @@
+name: OpenVAS
+repository: https://github.com/greenbone/openvas-scanner
+category: security-audit
+replaces:
+  - tool: nessus
+    fit: full
+    note: Network vulnerability scanner with a daily updated feed of checks, run from your own server.

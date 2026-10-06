@@ -1,0 +1,5 @@
+name: Splunk SOAR
+homepage: https://www.splunk.com/en_us/products/splunk-security-orchestration-and-automation.html
+vendor: Cisco
+category: soar
+description: Security orchestration and automation platform that runs response playbooks and manages cases.

@@ -1,0 +1,7 @@
+name: Vuls
+repository: https://github.com/future-architect/vuls
+category: security-audit
+replaces:
+  - tool: nessus
+    fit: partial
+    note: Agentless vulnerability scanning of Linux and FreeBSD packages over SSH, not network services.

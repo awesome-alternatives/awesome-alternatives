@@ -1,0 +1,7 @@
+name: Clair
+repository: https://github.com/quay/clair
+category: vulnerability-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Container image scanning as a service behind a registry; no code or dependency scanning.

@@ -1,0 +1,3 @@
+name: Syft
+repository: https://github.com/anchore/syft
+category: sbom-tool

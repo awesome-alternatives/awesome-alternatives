@@ -1,0 +1,7 @@
+name: Prowler
+repository: https://github.com/prowler-cloud/prowler
+category: cloud-security-posture
+replaces:
+  - tool: wiz
+    fit: partial
+    note: Posture and compliance checks for AWS, Azure, Google Cloud and Kubernetes, without agentless workload scanning.

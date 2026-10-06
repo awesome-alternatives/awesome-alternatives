@@ -1,0 +1,7 @@
+name: Kingfisher
+repository: https://github.com/mongodb/kingfisher
+category: secret-scanning
+replaces:
+  - tool: gitguardian
+    fit: partial
+    note: Fast secret scanning with live validation from the CLI, without a dashboard.

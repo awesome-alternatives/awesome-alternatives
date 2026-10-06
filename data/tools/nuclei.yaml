@@ -1,0 +1,7 @@
+name: Nuclei
+repository: https://github.com/projectdiscovery/nuclei
+category: dast-scanner
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Template-driven scanning for known vulnerabilities and misconfigurations, without an intercepting proxy.
