@@ -1,0 +1,7 @@
+name: Bludit
+repository: https://github.com/bludit/bludit
+category: blogging
+replaces:
+  - tool: medium
+    fit: partial
+    note: A flat-file blog with no database, on your own domain.

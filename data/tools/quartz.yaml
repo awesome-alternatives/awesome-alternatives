@@ -1,0 +1,7 @@
+name: Quartz
+repository: https://github.com/jackyzha0/quartz
+category: static-site-generator
+replaces:
+  - tool: obsidian-publish
+    fit: full
+    note: Publishes a folder of Markdown notes with backlinks, a graph view and search, on any static host.

@@ -1,0 +1,7 @@
+name: Concrete CMS
+repository: https://github.com/concretecms/concretecms
+category: website-cms
+replaces:
+  - tool: squarespace
+    fit: partial
+    note: In-context page editing with blocks and themes, on a PHP server you run.

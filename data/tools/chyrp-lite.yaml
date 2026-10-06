@@ -1,0 +1,7 @@
+name: Chyrp Lite
+repository: https://github.com/xenocrat/chyrp-lite
+category: blogging
+replaces:
+  - tool: medium
+    fit: partial
+    note: A blog or tumblelog on your own domain, without a reader network.

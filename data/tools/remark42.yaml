@@ -1,0 +1,8 @@
+name: Remark42
+repository: https://github.com/umputun/remark42
+category: comments
+replaces:
+  - tool: disqus
+    fit: full
+    note: Comment widget with social and email login, moderation and Disqus import, without tracking.
+deploy: [container, compose, binary]

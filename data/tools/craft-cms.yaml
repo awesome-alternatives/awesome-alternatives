@@ -1,0 +1,8 @@
+name: Craft CMS
+repository: https://github.com/craftcms/cms
+category: website-cms
+terms: source-available
+replaces:
+  - tool: contentful
+    fit: partial
+    note: Custom content models with a GraphQL API; the Pro edition needs a paid licence.

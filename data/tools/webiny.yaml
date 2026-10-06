@@ -1,0 +1,8 @@
+name: Webiny
+repository: https://github.com/webiny/webiny-js
+category: headless-cms
+terms: open-core
+replaces:
+  - tool: contentful
+    fit: full
+    note: Headless CMS with a GraphQL API, deployed serverless to your own AWS account.

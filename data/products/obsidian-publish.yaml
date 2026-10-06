@@ -1,0 +1,5 @@
+name: Obsidian Publish
+homepage: https://obsidian.md/publish
+vendor: Obsidian
+category: static-site-generator
+description: Hosted service that publishes notes from an Obsidian vault as a website.

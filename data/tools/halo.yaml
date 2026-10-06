@@ -1,0 +1,7 @@
+name: Halo
+repository: https://github.com/halo-dev/halo
+category: blogging
+replaces:
+  - tool: medium
+    fit: partial
+    note: A blog on your own domain with themes and plugins, without a reader network.

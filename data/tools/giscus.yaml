@@ -1,0 +1,7 @@
+name: giscus
+repository: https://github.com/giscus/giscus
+category: comments
+replaces:
+  - tool: disqus
+    fit: partial
+    note: Stores comments in GitHub Discussions, so commenters need a GitHub account.

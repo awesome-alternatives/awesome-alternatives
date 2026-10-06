@@ -1,0 +1,7 @@
+name: Jupyter Book
+repository: https://github.com/jupyter-book/jupyter-book
+category: documentation-site
+replaces:
+  - tool: gitbook
+    fit: partial
+    note: Books and documentation from Markdown and Jupyter notebooks, with executable content.

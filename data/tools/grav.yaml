@@ -1,0 +1,7 @@
+name: Grav
+repository: https://github.com/getgrav/grav
+category: website-cms
+replaces:
+  - tool: squarespace
+    fit: partial
+    note: A flat-file CMS with an admin plugin and themes, no database and no hosted editor.

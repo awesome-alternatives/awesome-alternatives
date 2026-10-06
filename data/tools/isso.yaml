@@ -1,0 +1,8 @@
+name: Isso
+repository: https://github.com/isso-comments/isso
+category: comments
+replaces:
+  - tool: disqus
+    fit: full
+    note: A Python comment server with SQLite storage, anonymous comments and Disqus import.
+deploy: [container]

@@ -1,0 +1,10 @@
+name: Microweber
+repository: https://github.com/microweber/microweber
+category: website-cms
+replaces:
+  - tool: wix
+    fit: partial
+    note: Drag-and-drop page editing and a built-in shop, on a Laravel server you run.
+  - tool: squarespace
+    fit: partial
+    note: Drag-and-drop page editing and a built-in shop, on a Laravel server you run.

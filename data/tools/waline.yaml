@@ -1,0 +1,7 @@
+name: Waline
+repository: https://github.com/walinejs/waline
+category: comments
+replaces:
+  - tool: disqus
+    fit: full
+    note: A comment system with an admin panel, reactions and pageview counts, on serverless or Node.js.

@@ -1,0 +1,8 @@
+name: Squidex
+repository: https://github.com/Squidex/squidex
+category: headless-cms
+replaces:
+  - tool: contentful
+    fit: full
+    note: Schemas, REST and GraphQL APIs, workflows and assets, in .NET with MongoDB.
+deploy: [container, compose]

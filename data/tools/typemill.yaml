@@ -1,0 +1,7 @@
+name: Typemill
+repository: https://github.com/typemill/typemill
+category: website-cms
+replaces:
+  - tool: gitbook
+    fit: partial
+    note: Flat-file Markdown sites for manuals and documentation, with a browser editor.

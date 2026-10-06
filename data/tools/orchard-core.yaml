@@ -1,0 +1,7 @@
+name: Orchard Core
+repository: https://github.com/OrchardCMS/OrchardCore
+category: website-cms
+replaces:
+  - tool: contentful
+    fit: partial
+    note: A .NET CMS framework that can also run headless with GraphQL.

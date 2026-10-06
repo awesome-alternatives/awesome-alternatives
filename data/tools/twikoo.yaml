@@ -1,0 +1,7 @@
+name: Twikoo
+repository: https://github.com/twikoojs/twikoo
+category: comments
+replaces:
+  - tool: disqus
+    fit: partial
+    note: A comment widget that runs on serverless platforms or a small Node.js server.

@@ -1,0 +1,8 @@
+name: Statamic
+repository: https://github.com/statamic/cms
+category: website-cms
+terms: source-available
+replaces:
+  - tool: contentful
+    fit: partial
+    note: Flat-file Laravel CMS with REST and GraphQL APIs; the Pro features need a paid licence.
