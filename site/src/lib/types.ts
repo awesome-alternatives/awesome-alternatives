@@ -41,7 +41,6 @@ export interface Unchecked {
 export interface SearchResult {
   query: string;
   filters: Filters;
-  interpretedBy: "jev" | "local";
   unchecked?: Unchecked[];
   near?: NearMiss[];
   count: number;

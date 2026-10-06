@@ -89,7 +89,6 @@ export const islands: Islands = {
     removeChip: "{label}を解除",
     removeGlyph: "×",
     closest: "入力内容に最も近いツール",
-    interpreter: { jev: "Jev で解釈", local: "ローカルで一致" },
     fallbackTargeted: {
       before: "",
       link: "{name}の代替",
