@@ -982,7 +982,7 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV 
 | [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28798 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |
 | [Seafile](https://github.com/haiwen/seafile) | C | Other | [v9.0.5](https://github.com/haiwen/seafile/releases/tag/v9.0.5) | 15308 | Dropbox (full), Nextcloud (partial), iCloud Drive (full), OneDrive (full), Box (full) |
 | [ownCloud Infinite Scale](https://github.com/owncloud/ocis) | Go | Apache-2.0 | [v8.2.1](https://github.com/owncloud/ocis/releases/tag/v8.2.1) signed | 2143 | Nextcloud (partial), Dropbox (full), Google Drive (partial), Box (full), OneDrive (partial), iCloud Drive (full) |
-| [RoxyCloud](https://github.com/FerrLabs/RoxyCloud) verified | Rust | AGPL-3.0 | [v0.33.1](https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1) | 1 | Nextcloud (partial) |
+| [Stashden](https://github.com/FerrLabs/Stashden) | Rust | AGPL-3.0 | [v0.33.1](https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1) | 1 | Nextcloud (partial) |
 
 </details>
 

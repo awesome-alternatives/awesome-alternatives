@@ -3,7 +3,7 @@
     "tools": 1048,
     "categories": 172,
     "targets": 385,
-    "verified": 3
+    "verified": 2
   },
   "checkedAt": "2026-10-06T09:34:51.479Z",
   "owners": {
@@ -101497,132 +101497,6 @@
       "deploy": []
     },
     {
-      "slug": "stashden",
-      "name": "Stashden",
-      "repository": "https://github.com/FerrLabs/Stashden",
-      "category": "file-sync",
-      "replaces": [
-        {
-          "tool": "nextcloud",
-          "fit": "partial",
-          "note": "Covers file storage and WebDAV only, not the calendar, contacts and app platform around them."
-        }
-      ],
-      "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
-      "path": null,
-      "addedAt": "2026-09-23T07:14:07.000Z",
-      "editedAt": "2026-09-23T07:14:07.000Z",
-      "factsChangedAt": null,
-      "repo": {
-        "fullName": "FerrLabs/Stashden",
-        "description": "Self-hosted file storage with WebDAV, built in Rust over a content-addressed blob store.",
-        "homepage": null,
-        "language": "Rust",
-        "license": "AGPL-3.0",
-        "stars": 1,
-        "forks": 0,
-        "topics": [
-          "agpl",
-          "axum",
-          "cloud-storage",
-          "file-storage",
-          "file-sync",
-          "nextcloud-alternative",
-          "rust",
-          "self-hosted",
-          "tauri",
-          "webdav"
-        ],
-        "databaseId": 1355603360,
-        "archived": false,
-        "fork": false,
-        "private": false,
-        "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-10-06T06:58:48Z",
-        "defaultBranch": "main"
-      },
-      "trend": {
-        "stars": 1,
-        "exact": false,
-        "since": "2026-09-23T23:59:59.999Z"
-      },
-      "starHistory": {
-        "from": "2026-09-23",
-        "stars": [0,0,0,0,0,0,0,0,0,0,1,1,1,1]
-      },
-      "release": {
-        "tag": "v0.33.1",
-        "publishedAt": "2026-10-06T06:50:34Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1",
-        "source": "release",
-        "signed": false,
-        "tagOid": "0b2cd1fbb767f4c459c191045bc0a2e8859e35db"
-      },
-      "releases": [
-        {
-          "tag": "v0.33.1",
-          "name": "fix(sync): bring down server changes while watching, with a pass on start and every minute (#275)",
-          "publishedAt": "2026-10-06T06:50:34Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.33.0",
-          "name": "feat: call the product Stashden in the app, the site and the docs (#251)",
-          "publishedAt": "2026-10-03T12:13:09Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.32.0",
-          "name": "feat(desktop): upload from the file picker and from files dropped on the window (#206)",
-          "publishedAt": "2026-09-25T10:36:47Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.32.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.31.2",
-          "name": "fix(desktop): let the window's CSP show image and PDF previews (#211)",
-          "publishedAt": "2026-09-25T08:43:25Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.31.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.31.1",
-          "name": "fix(desktop): let the window's CSP apply the app's styles (#210)",
-          "publishedAt": "2026-09-25T07:47:16Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.31.1",
-          "prerelease": false
-        }
-      ],
-      "contributors": {
-        "count": 1,
-        "capped": false
-      },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
-      "maintainerVerified": true,
-      "verifiedAt": "2026-09-22T19:53:15.000Z",
-      "flags": [
-        "moved"
-      ],
-      "terms": "open",
-      "capabilities": {},
-      "deploy": []
-    },
-    {
       "slug": "rq",
       "name": "RQ",
       "repository": "https://github.com/rq/rq",
@@ -109668,6 +109542,130 @@
         },
         {
           "os": "freebsd",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "stashden",
+      "name": "Stashden",
+      "repository": "https://github.com/FerrLabs/Stashden",
+      "category": "file-sync",
+      "replaces": [
+        {
+          "tool": "nextcloud",
+          "fit": "partial",
+          "note": "Covers file storage and WebDAV only, not the calendar, contacts and app platform around them."
+        }
+      ],
+      "affiliation": "Maintained by FerrLabs, whose founder also maintains this directory.",
+      "path": null,
+      "addedAt": "2026-09-23T07:14:07.000Z",
+      "editedAt": "2026-10-06T10:55:35.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "FerrLabs/Stashden",
+        "description": "Self-hosted file storage with WebDAV, built in Rust over a content-addressed blob store.",
+        "homepage": null,
+        "language": "Rust",
+        "license": "AGPL-3.0",
+        "stars": 1,
+        "forks": 0,
+        "topics": [
+          "agpl",
+          "axum",
+          "cloud-storage",
+          "file-storage",
+          "file-sync",
+          "nextcloud-alternative",
+          "rust",
+          "self-hosted",
+          "tauri",
+          "webdav"
+        ],
+        "databaseId": 1355603360,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-09-03T06:35:14Z",
+        "pushedAt": "2026-10-06T06:58:48Z",
+        "defaultBranch": "main"
+      },
+      "trend": {
+        "stars": 1,
+        "exact": false,
+        "since": "2026-09-23T23:59:59.999Z"
+      },
+      "starHistory": {
+        "from": "2026-09-23",
+        "stars": [0,0,0,0,0,0,0,0,0,0,1,1,1,1]
+      },
+      "release": {
+        "tag": "v0.33.1",
+        "publishedAt": "2026-10-06T06:50:34Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1",
+        "source": "release",
+        "signed": false,
+        "tagOid": "0b2cd1fbb767f4c459c191045bc0a2e8859e35db"
+      },
+      "releases": [
+        {
+          "tag": "v0.33.1",
+          "name": "fix(sync): bring down server changes while watching, with a pass on start and every minute (#275)",
+          "publishedAt": "2026-10-06T06:50:34Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.33.0",
+          "name": "feat: call the product Stashden in the app, the site and the docs (#251)",
+          "publishedAt": "2026-10-03T12:13:09Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.33.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.32.0",
+          "name": "feat(desktop): upload from the file picker and from files dropped on the window (#206)",
+          "publishedAt": "2026-09-25T10:36:47Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.32.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.31.2",
+          "name": "fix(desktop): let the window's CSP show image and PDF previews (#211)",
+          "publishedAt": "2026-09-25T08:43:25Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.31.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.31.1",
+          "name": "fix(desktop): let the window's CSP apply the app's styles (#210)",
+          "publishedAt": "2026-09-25T07:47:16Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.31.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "windows",
           "architectures": [
             "x86_64"
           ]
