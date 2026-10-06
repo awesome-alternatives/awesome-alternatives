@@ -1,0 +1,7 @@
+name: Errands
+repository: https://github.com/mrvladus/Errands
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: GNOME to-do app with sub-tasks, tags and CalDAV sync, for example with Nextcloud.

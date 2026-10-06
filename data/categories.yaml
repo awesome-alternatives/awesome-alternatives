@@ -809,3 +809,40 @@ irc-server:
   name: IRC servers
   description: Run an IRC network or keep a persistent connection to one with a bouncer.
   selfHost: true
+
+nvr:
+  name: Network video recorders
+  description: Record, watch and analyse IP camera streams on your own hardware.
+  selfHost: true
+
+expense-splitting:
+  name: Expense splitting
+  description: Track shared expenses in a group and work out who owes whom.
+  selfHost: true
+
+fitness-tracking:
+  name: Fitness tracking
+  description: Log workouts, activities and body measurements, and follow progress over time.
+  selfHost: true
+
+habit-tracker:
+  name: Habit trackers
+  description: Check off daily habits and follow streaks and progress.
+
+web-archiving:
+  name: Web archiving
+  description: Save complete copies of web pages so they stay readable after the original changes or disappears.
+
+feed-generator:
+  name: Feed generators
+  description: Produce RSS and Atom feeds for sites and accounts that do not publish one.
+  selfHost: true
+
+homelab-dashboard:
+  name: Homelab dashboards
+  description: Start pages that link to self-hosted services and show their status and widgets.
+  selfHost: true
+
+start-page:
+  name: Browser start pages
+  description: Replace the browser's new tab page with a clock, links, weather and backgrounds.

@@ -1,0 +1,7 @@
+name: Beancount
+repository: https://github.com/beancount/beancount
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Double-entry accounting from plain text files, with importers and reports; no bank sync or graphical app of its own.

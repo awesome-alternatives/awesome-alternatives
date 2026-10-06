@@ -1,0 +1,14 @@
+name: Frigate
+repository: https://github.com/blakeblackshear/frigate
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: full
+    note: Recording and object detection on a Coral, GPU or CPU, reviewed in a web UI; runs on Linux in a container rather than on Windows.
+  - tool: ring
+    fit: partial
+    note: Local recording and object detection for your own IP cameras without a subscription; no camera hardware.
+  - tool: nest-aware
+    fit: partial
+    note: Local event recording and history for your own IP cameras without a subscription; no camera hardware.
+deploy: [container]

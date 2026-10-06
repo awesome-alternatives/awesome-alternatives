@@ -1,0 +1,4 @@
+name: Heimdall
+repository: https://github.com/linuxserver/Heimdall
+category: homelab-dashboard
+deploy: [container]

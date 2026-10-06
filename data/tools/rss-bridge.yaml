@@ -1,0 +1,8 @@
+name: RSS-Bridge
+repository: https://github.com/RSS-Bridge/rss-bridge
+category: feed-generator
+replaces:
+  - tool: rss-app
+    fit: partial
+    note: PHP app that produces feeds for sites without them through one bridge per site; no visual feed builder.
+deploy: [container]

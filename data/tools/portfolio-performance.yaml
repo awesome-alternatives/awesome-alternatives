@@ -1,0 +1,7 @@
+name: Portfolio Performance
+repository: https://github.com/portfolio-performance/portfolio
+category: personal-finance
+replaces:
+  - tool: empower
+    fit: partial
+    note: Computes time-weighted and money-weighted returns from imported broker transactions in a desktop app; no account aggregation.

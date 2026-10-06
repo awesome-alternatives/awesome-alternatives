@@ -1,0 +1,7 @@
+name: Beaver Habit Tracker
+repository: https://github.com/daya0576/beaverhabits
+category: habit-tracker
+replaces:
+  - tool: habitify
+    fit: partial
+    note: Self-hosted habit tracking web app with a calendar view; no reminders.

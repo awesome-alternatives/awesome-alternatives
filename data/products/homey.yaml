@@ -1,0 +1,5 @@
+name: Homey
+homepage: https://homey.app
+vendor: Athom
+category: home-automation
+description: Smart home hub and app that controls Zigbee, Z-Wave, Matter and Wi-Fi devices and runs automations called flows.

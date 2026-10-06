@@ -1,0 +1,7 @@
+name: UrBackup
+repository: https://github.com/uroni/urbackup_backend
+category: backup
+replaces:
+  - tool: crashplan
+    fit: partial
+    note: Client and server for file and image backups of Windows, macOS and Linux machines to your own server.

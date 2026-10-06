@@ -1,0 +1,7 @@
+name: Budget Board
+repository: https://github.com/teelur/budget-board
+category: personal-finance
+replaces:
+  - tool: mint
+    fit: partial
+    note: Self-hosted budgets, goals and trends, with bank transactions pulled through SimpleFIN.

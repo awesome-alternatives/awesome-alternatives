@@ -1,0 +1,5 @@
+name: Backblaze Personal Backup
+homepage: https://www.backblaze.com/cloud-backup
+vendor: Backblaze
+category: backup
+description: "Subscription that continuously backs up a computer to Backblaze's cloud storage."

@@ -1,0 +1,8 @@
+name: FitTrackee
+repository: https://github.com/SamR1/FitTrackee
+category: fitness-tracking
+replaces:
+  - tool: strava
+    fit: partial
+    note: Imports GPX, FIT, KML and TCX files of outdoor workouts and shows routes, statistics and records; no segments.
+deploy: [container]

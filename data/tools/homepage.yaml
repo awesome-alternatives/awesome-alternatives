@@ -1,0 +1,4 @@
+name: Homepage
+repository: https://github.com/gethomepage/homepage
+category: homelab-dashboard
+deploy: [container]

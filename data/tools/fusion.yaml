@@ -1,0 +1,8 @@
+name: Fusion
+repository: https://github.com/0x2E/fusion
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: Lightweight self-hosted reader in a single binary, with groups, search and an installable web app.
+deploy: [container, binary]

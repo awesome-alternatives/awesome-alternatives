@@ -1,0 +1,8 @@
+name: Duplicacy
+repository: https://github.com/gilbertchen/duplicacy
+category: backup
+replaces:
+  - tool: crashplan
+    fit: partial
+    note: Lock-free deduplicated backups from many computers to one cloud store you provide; the CLI is free for personal use only.
+terms: source-available

@@ -1,0 +1,7 @@
+name: selfoss
+repository: https://github.com/fossar/selfoss
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: Self-hosted web reader that also aggregates non-RSS sources through plugins.

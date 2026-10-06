@@ -1,0 +1,7 @@
+name: Workout.cool
+repository: https://github.com/Snouzy/workout-cool
+category: fitness-tracking
+replaces:
+  - tool: hevy
+    fit: partial
+    note: Builds workout sessions from an exercise library and tracks progress, in a web app.

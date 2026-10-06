@@ -1,0 +1,7 @@
+name: Feeder
+repository: https://github.com/spacecowboy/Feeder
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: Android reader that fetches feeds on the device, with no account or sync service.

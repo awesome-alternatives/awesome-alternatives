@@ -1,0 +1,8 @@
+name: Habitica
+repository: https://github.com/HabitRPG/habitica
+category: habit-tracker
+replaces:
+  - tool: habitify
+    fit: partial
+    note: Habits, dailies and to-dos turned into a role-playing game, with a hosted service and mobile apps.
+terms: open

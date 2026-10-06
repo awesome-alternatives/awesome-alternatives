@@ -1,0 +1,4 @@
+name: evcc
+repository: https://github.com/evcc-io/evcc
+category: home-automation
+deploy: [container, package]

@@ -1,0 +1,7 @@
+name: Wealthfolio
+repository: https://github.com/wealthfolio/wealthfolio
+category: personal-finance
+replaces:
+  - tool: empower
+    fit: partial
+    note: Tracks holdings, performance and dividends across investment accounts in a desktop app, without bank aggregation.

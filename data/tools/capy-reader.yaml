@@ -1,0 +1,7 @@
+name: Capy Reader
+repository: https://github.com/jocmp/capyreader
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: Android reader with local feeds or Feedbin, Miniflux and FreshRSS accounts.

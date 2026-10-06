@@ -1,0 +1,7 @@
+name: ArchiveBox
+repository: https://github.com/ArchiveBox/ArchiveBox
+category: web-archiving
+replaces:
+  - tool: pinboard
+    fit: partial
+    note: "Archives saved links as HTML, PDF, screenshots and WARC on your own machine, like Pinboard's archiving tier, without the social bookmarking."

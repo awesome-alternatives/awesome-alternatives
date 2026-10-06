@@ -1,0 +1,8 @@
+name: Donetick
+repository: https://github.com/donetick/donetick
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: Shared tasks and chores for a household, with recurring schedules, assignees and natural language input.
+deploy: [container]

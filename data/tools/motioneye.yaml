@@ -1,0 +1,8 @@
+name: motionEye
+repository: https://github.com/motioneye-project/motioneye
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: partial
+    note: Web front end for motion with recording, motion detection and notifications, without object detection.
+deploy: [container]

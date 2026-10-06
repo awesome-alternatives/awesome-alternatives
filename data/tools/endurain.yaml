@@ -1,0 +1,8 @@
+name: Endurain
+repository: https://github.com/endurain-project/endurain
+category: fitness-tracking
+replaces:
+  - tool: strava
+    fit: partial
+    note: Self-hosted activity tracker with Strava and Garmin Connect sync, GPX and FIT import and gear tracking.
+deploy: [container]

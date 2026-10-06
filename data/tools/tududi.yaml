@@ -1,0 +1,8 @@
+name: tududi
+repository: https://github.com/chrisvel/tududi
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: Self-hosted personal task manager with projects, areas, notes and a Telegram integration.
+deploy: [container]

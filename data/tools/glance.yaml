@@ -1,0 +1,4 @@
+name: Glance
+repository: https://github.com/glanceapp/glance
+category: homelab-dashboard
+deploy: [container, binary]
