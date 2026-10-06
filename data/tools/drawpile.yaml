@@ -1,0 +1,7 @@
+name: Drawpile
+repository: https://github.com/drawpile/Drawpile
+category: digital-painting
+replaces:
+  - tool: procreate
+    fit: partial
+    note: Painting with layers and brushes, alone or live with others on a shared canvas, on desktop and Android.

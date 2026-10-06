@@ -1,0 +1,8 @@
+name: LibreCAD
+repository: https://github.com/LibreCAD/LibreCAD
+category: cad
+terms: open
+replaces:
+  - tool: autocad
+    fit: partial
+    note: 2D drafting that reads DXF and DWG and writes DXF, without 3D or AutoLISP.

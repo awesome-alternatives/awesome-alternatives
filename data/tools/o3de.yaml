@@ -1,0 +1,8 @@
+name: Open 3D Engine
+repository: https://github.com/o3de/o3de
+category: game-engine
+terms: open
+replaces:
+  - tool: unreal-engine
+    fit: partial
+    note: Modular 3D engine with an editor, a physically based renderer and scripting in C++, Lua and Script Canvas, with a smaller ecosystem.

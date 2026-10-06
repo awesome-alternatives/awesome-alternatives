@@ -1,0 +1,7 @@
+name: Omniclip
+repository: https://github.com/omni-media/omniclip
+category: video-editing
+replaces:
+  - tool: capcut
+    fit: partial
+    note: Timeline editor that runs in the browser on your machine, with fewer effects and no templates.

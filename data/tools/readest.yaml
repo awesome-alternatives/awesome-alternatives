@@ -1,0 +1,7 @@
+name: Readest
+repository: https://github.com/readest/readest
+category: ebook-reader
+replaces:
+  - tool: amazon-kindle
+    fit: partial
+    note: Reads your own DRM-free books on desktop, mobile and the web with synced progress; books bought on Kindle stay there.

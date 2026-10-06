@@ -1,0 +1,10 @@
+name: FreeCAD
+repository: https://github.com/FreeCAD/FreeCAD
+category: cad
+replaces:
+  - tool: solidworks
+    fit: partial
+    note: Parametric parts, assemblies and drawings with FEM and CAM workbenches; reads STEP and IGES but not native SolidWorks files.
+  - tool: fusion-360
+    fit: partial
+    note: Parametric modelling with CAM on the desktop, without cloud storage or collaboration.

@@ -1,0 +1,7 @@
+name: Koodo Reader
+repository: https://github.com/koodo-reader/koodo-reader
+category: ebook-reader
+replaces:
+  - tool: apple-books
+    fit: partial
+    note: Library and reader for your own EPUB, PDF and comics, synced through storage you choose; there is no store.

@@ -1,0 +1,7 @@
+name: MyPaint
+repository: https://github.com/mypaint/mypaint
+category: digital-painting
+replaces:
+  - tool: procreate
+    fit: partial
+    note: Natural-media brushes on an unlimited canvas for a pen tablet, on desktop rather than iPad.

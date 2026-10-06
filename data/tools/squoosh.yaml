@@ -1,0 +1,7 @@
+name: Squoosh
+repository: https://github.com/GoogleChromeLabs/squoosh
+category: media-converter
+replaces:
+  - tool: tinypng
+    fit: partial
+    note: Compresses and converts one image at a time in the browser, with the codec settings exposed.

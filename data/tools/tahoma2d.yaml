@@ -1,0 +1,8 @@
+name: Tahoma2D
+repository: https://github.com/tahoma2d/tahoma2d
+category: animation
+terms: open
+replaces:
+  - tool: toon-boom-harmony
+    fit: partial
+    note: Built on OpenToonz with a simpler interface and stop-motion capture.

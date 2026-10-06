@@ -1,0 +1,7 @@
+name: VERT
+repository: https://github.com/VERT-sh/VERT
+category: media-converter
+replaces:
+  - tool: cloudconvert
+    fit: partial
+    note: Converts images, audio and documents in the browser with WebAssembly; video goes through a server you can host.

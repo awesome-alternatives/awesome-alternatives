@@ -1,0 +1,8 @@
+name: Remotion
+repository: https://github.com/remotion-dev/remotion
+category: video-editing
+terms: source-available
+replaces:
+  - tool: after-effects
+    fit: partial
+    note: Videos written as React components and rendered to file, without a timeline to edit by hand.

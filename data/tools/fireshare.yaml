@@ -1,0 +1,8 @@
+name: Fireshare
+repository: https://github.com/fireshare-app/fireshare
+category: video-hosting
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Shares your own videos and game clips by link from your server, without discovery or recommendations.
+deploy: [container, compose]

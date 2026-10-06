@@ -1,0 +1,7 @@
+name: nomacs
+repository: https://github.com/nomacs/nomacs
+category: image-viewer
+replaces:
+  - tool: irfanview
+    fit: full
+    note: Viewer with thumbnails, basic adjustments and batch processing, on Windows, Linux and macOS.

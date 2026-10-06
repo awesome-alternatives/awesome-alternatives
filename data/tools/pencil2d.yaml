@@ -1,0 +1,7 @@
+name: Pencil2D
+repository: https://github.com/pencil2d/pencil
+category: animation
+replaces:
+  - tool: adobe-animate
+    fit: partial
+    note: Frame-by-frame raster and vector drawing with onion skinning, without tweening or rigging.

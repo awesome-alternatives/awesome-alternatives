@@ -1,0 +1,7 @@
+name: OrcaSlicer
+repository: https://github.com/OrcaSlicer/OrcaSlicer
+category: 3d-printing
+replaces:
+  - tool: simplify3d
+    fit: full
+    note: Slices models for most FDM printers, with calibration tools and per-object settings.

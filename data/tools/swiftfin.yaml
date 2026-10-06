@@ -1,0 +1,7 @@
+name: Swiftfin
+repository: https://github.com/jellyfin/Swiftfin
+category: video-player
+replaces:
+  - tool: infuse
+    fit: partial
+    note: Native iOS and tvOS player for a Jellyfin server; it does not play local files or network shares.

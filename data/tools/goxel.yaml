@@ -1,0 +1,7 @@
+name: Goxel
+repository: https://github.com/guillaumechereau/goxel
+category: 3d-modeling
+replaces:
+  - tool: magicavoxel
+    fit: full
+    note: Voxel editor with layers and procedural scripts that reads and writes MagicaVoxel files and exports meshes.

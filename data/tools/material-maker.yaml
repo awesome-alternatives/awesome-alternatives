@@ -1,0 +1,7 @@
+name: Material Maker
+repository: https://github.com/RodZill4/material-maker
+category: 3d-modeling
+replaces:
+  - tool: substance-3d-designer
+    fit: partial
+    note: Node-based procedural textures and materials with export to game engines, with a smaller node library.

@@ -1,0 +1,7 @@
+name: Shutter
+repository: https://github.com/shutter-project/shutter
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Screenshots with an annotation editor and upload, on Linux only; no video recording.

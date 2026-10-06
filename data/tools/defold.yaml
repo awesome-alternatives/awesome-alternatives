@@ -1,0 +1,8 @@
+name: Defold
+repository: https://github.com/defold/defold
+category: game-engine
+terms: source-available
+replaces:
+  - tool: unity
+    fit: partial
+    note: Engine and editor focused on 2D, scripted in Lua, exporting to desktop, mobile, web and consoles.

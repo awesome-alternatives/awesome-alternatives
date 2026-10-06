@@ -1,0 +1,8 @@
+name: Kodi
+repository: https://github.com/xbmc/xbmc
+category: video-player
+terms: open
+replaces:
+  - tool: infuse
+    fit: partial
+    note: Plays and organises media from local and network shares with fetched artwork and metadata; on iOS it has to be sideloaded.

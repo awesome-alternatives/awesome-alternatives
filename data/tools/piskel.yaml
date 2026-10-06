@@ -1,0 +1,7 @@
+name: Piskel
+repository: https://github.com/piskelapp/piskel
+category: pixel-art
+replaces:
+  - tool: aseprite
+    fit: partial
+    note: Browser-based sprite editor with frames and onion skinning, with a smaller tool set.

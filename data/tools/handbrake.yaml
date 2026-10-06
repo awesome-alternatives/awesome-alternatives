@@ -1,0 +1,8 @@
+name: HandBrake
+repository: https://github.com/HandBrake/HandBrake
+category: media-converter
+terms: open
+replaces:
+  - tool: adobe-media-encoder
+    fit: partial
+    note: Transcodes video with presets to H.264, H.265, AV1 and VP9, without Premiere or After Effects integration.

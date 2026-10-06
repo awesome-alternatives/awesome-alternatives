@@ -1,0 +1,7 @@
+name: Chili3D
+repository: https://github.com/xiangechen/chili3d
+category: cad
+replaces:
+  - tool: onshape
+    fit: partial
+    note: 3D CAD that runs in the browser on your machine with OpenCascade, without cloud documents or collaboration.

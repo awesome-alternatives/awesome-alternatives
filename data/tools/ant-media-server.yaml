@@ -1,0 +1,8 @@
+name: Ant Media Server
+repository: https://github.com/ant-media/Ant-Media-Server
+category: video-hosting
+terms: open-core
+replaces:
+  - tool: wowza-streaming-engine
+    fit: partial
+    note: WebRTC, RTMP, SRT and HLS live streaming; adaptive bitrate and clustering need the paid Enterprise Edition.

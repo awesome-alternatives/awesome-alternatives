@@ -1,0 +1,11 @@
+name: GDevelop
+repository: https://github.com/4ian/GDevelop
+category: game-engine
+terms: open
+replaces:
+  - tool: construct
+    fit: full
+    note: Builds 2D and 3D games from visual events in the browser or on the desktop.
+  - tool: gamemaker
+    fit: partial
+    note: 2D games built from visual events instead of a scripting language like GML.

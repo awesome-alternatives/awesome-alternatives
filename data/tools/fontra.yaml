@@ -1,0 +1,7 @@
+name: Fontra
+repository: https://github.com/fontra/fontra
+category: font-editor
+replaces:
+  - tool: glyphs
+    fit: partial
+    note: Browser-based editor built for variable fonts, younger and with fewer features.

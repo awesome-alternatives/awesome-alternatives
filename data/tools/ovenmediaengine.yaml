@@ -1,0 +1,8 @@
+name: OvenMediaEngine
+repository: https://github.com/OvenMediaLabs/OvenMediaEngine
+category: video-hosting
+replaces:
+  - tool: wowza-streaming-engine
+    fit: full
+    note: Ingests WebRTC, RTMP and SRT and delivers sub-second WebRTC and low-latency HLS, with transcoding.
+deploy: [container]

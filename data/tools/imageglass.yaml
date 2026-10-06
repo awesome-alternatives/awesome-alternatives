@@ -1,0 +1,8 @@
+name: ImageGlass
+repository: https://github.com/d2phap/ImageGlass
+category: image-viewer
+terms: open
+replaces:
+  - tool: irfanview
+    fit: full
+    note: Fast viewer for more than 90 formats with slideshow, crop and colour picker.

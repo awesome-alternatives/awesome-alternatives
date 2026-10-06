@@ -1,0 +1,7 @@
+name: Pencil
+repository: https://github.com/evolus/pencil
+category: design-tool
+replaces:
+  - tool: balsamiq
+    fit: full
+    note: Desktop GUI mockups and wireframes from stencil collections.

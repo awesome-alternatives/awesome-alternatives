@@ -1,0 +1,7 @@
+name: Satty
+repository: https://github.com/Satty-org/Satty
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Annotates screenshots taken by another tool, on Linux.

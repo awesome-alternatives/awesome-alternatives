@@ -1,0 +1,7 @@
+name: OpenCut
+repository: https://github.com/OpenCut-app/OpenCut
+category: video-editing
+replaces:
+  - tool: capcut
+    fit: partial
+    note: Timeline editor for short videos, without CapCut's templates and stock library.

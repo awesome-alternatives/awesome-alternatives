@@ -1,0 +1,7 @@
+name: LibreSprite
+repository: https://github.com/LibreSprite/LibreSprite
+category: pixel-art
+replaces:
+  - tool: aseprite
+    fit: full
+    note: Continues the last GPL-licensed version of Aseprite, without the features added since.

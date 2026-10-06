@@ -1,0 +1,7 @@
+name: Thorium Reader
+repository: https://github.com/edrlab/thorium-reader
+category: ebook-reader
+replaces:
+  - tool: adobe-digital-editions
+    fit: partial
+    note: Desktop reader for EPUB, PDF and audiobooks; it opens books protected with Readium LCP, not Adobe DRM.

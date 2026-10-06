@@ -1,0 +1,8 @@
+name: PhotoDemon
+repository: https://github.com/tannerhelland/PhotoDemon
+category: image-editing
+terms: open
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Portable Windows editor with layers, adjustments, effects and macros, without Photoshop's full feature set.

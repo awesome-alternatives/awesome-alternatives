@@ -1,0 +1,7 @@
+name: ksnip
+repository: https://github.com/ksnip/ksnip
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Screenshots with annotation and upload, on Linux, Windows and macOS; no video recording.

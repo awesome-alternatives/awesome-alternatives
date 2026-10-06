@@ -1,0 +1,8 @@
+name: FontForge
+repository: https://github.com/fontforge/fontforge
+category: font-editor
+terms: open
+replaces:
+  - tool: fontlab
+    fit: partial
+    note: Draws outlines, edits kerning and OpenType features and generates TrueType, OpenType and WOFF fonts, in an older interface.

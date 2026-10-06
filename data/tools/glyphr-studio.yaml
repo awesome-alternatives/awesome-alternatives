@@ -1,0 +1,8 @@
+name: Glyphr Studio
+repository: https://github.com/glyphr-studio/Glyphr-Studio-2
+category: font-editor
+terms: open
+replaces:
+  - tool: glyphs
+    fit: partial
+    note: Browser-based font editor aimed at hobbyists and beginners.

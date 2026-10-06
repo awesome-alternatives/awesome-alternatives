@@ -1494,3 +1494,59 @@ continuous-profiling:
   name: Continuous profiling
   description: Collect CPU and memory profiles from running services all the time and query them over time like metrics.
   selfHost: true
+
+video-player:
+  name: Video players
+  description: Play local video files and streams, or the library of your own media server.
+
+media-converter:
+  name: Media converters
+  description: Convert, compress and transcode video, audio and image files between formats.
+
+subtitle-editor:
+  name: Subtitle editors
+  description: Create, time and translate subtitles for video.
+
+image-viewer:
+  name: Image viewers
+  description: Browse and view images quickly, with light edits.
+
+digital-painting:
+  name: Digital painting
+  description: Paint and sketch on a raster canvas with a pen tablet, alone or with others.
+
+pixel-art:
+  name: Pixel art editors
+  description: Draw pixel art and animate sprites frame by frame.
+
+animation:
+  name: 2D animation
+  description: Draw, rig and tween 2D animation on a timeline and render it to video.
+
+ebook-reader:
+  name: Ebook readers
+  description: Read EPUB, PDF and comic files on a desktop, phone or e-ink device.
+
+font-editor:
+  name: Font editors
+  description: Draw glyphs, set spacing and kerning, and export fonts.
+
+3d-printing:
+  name: 3D printing
+  description: Slice models into G-code and control 3D printers.
+
+cad:
+  name: CAD
+  description: Draft 2D drawings and model parametric 3D parts for engineering and fabrication.
+
+3d-modeling:
+  name: 3D modelling
+  description: Model, process, texture and view 3D meshes and assets.
+
+game-engine:
+  name: Game engines
+  description: Build 2D and 3D games with an engine, an editor or a framework, and export them to desktop, mobile and the web.
+
+game-map-editor:
+  name: Game level editors
+  description: Design tile maps and levels and export them to a game engine.
