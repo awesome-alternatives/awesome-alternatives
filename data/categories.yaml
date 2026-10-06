@@ -1267,3 +1267,68 @@ vpn-server:
   name: VPN servers
   description: Run a remote-access or site-to-site VPN server for your users and networks.
   selfHost: true
+
+web-file-manager:
+  name: Web file managers
+  description: Browse, upload and share files on a server or storage back end from a browser.
+  selfHost: true
+
+local-file-transfer:
+  name: Direct file transfer
+  description: Send files straight from one device to another, nearby or through a relay, without uploading them to a storage service.
+
+home-inventory:
+  name: Inventory of belongings
+  description: Catalogue the things a household owns or collects, with locations, photos and warranties.
+  selfHost: true
+
+genealogy:
+  name: Genealogy
+  description: Build family trees with sources and events, and share them with relatives.
+  selfHost: true
+
+location-history:
+  name: Location history
+  description: Record where your devices have been and browse the history on a map.
+  selfHost: true
+
+travel-planning:
+  name: Travel and trail planning
+  description: Plan trips and hikes and keep a log of the places you have been.
+  selfHost: true
+
+maps-navigation:
+  name: Maps and navigation
+  description: Map apps with search and turn-by-turn directions, built on open map data.
+
+map-services:
+  name: Map services
+  description: Serve map tiles, routing and geocoding from OpenStreetMap data behind your own API.
+  selfHost: true
+
+weather:
+  name: Weather
+  description: Forecast apps, forecast APIs and software for personal weather stations.
+
+android-launcher:
+  name: Android launchers
+  description: Replace the Android home screen and app drawer.
+
+privacy-frontend:
+  name: Privacy front ends
+  description: Alternative web front ends to YouTube, Reddit and other sites, without ads, tracking or an account.
+  selfHost: true
+
+youtube-client:
+  name: Ad-free video clients
+  description: Apps that play YouTube and other video sites without ads or a Google account.
+
+home-server-platform:
+  name: Home server platforms
+  description: Turn a machine at home into a server with an app store, storage management and a web dashboard.
+  selfHost: true
+
+speed-test:
+  name: Speed tests
+  description: Measure bandwidth and latency to your own server, or track your connection over time.
+  selfHost: true

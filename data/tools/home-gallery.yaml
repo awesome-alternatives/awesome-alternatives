@@ -1,0 +1,7 @@
+name: HomeGallery
+repository: https://github.com/xemle/home-gallery
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Browses a local photo and video collection with similarity and face search; reads your folders and does not back up phones.

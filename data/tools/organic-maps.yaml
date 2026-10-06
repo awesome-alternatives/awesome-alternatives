@@ -1,0 +1,8 @@
+name: Organic Maps
+repository: https://github.com/organicmaps/organicmaps
+category: maps-navigation
+replaces:
+  - tool: google-maps
+    fit: partial
+    note: Offline maps and navigation from OpenStreetMap data without tracking; no live traffic or Street View.
+terms: open

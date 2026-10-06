@@ -1,0 +1,7 @@
+name: YunoHost
+repository: https://github.com/YunoHost/yunohost
+category: home-server-platform
+replaces:
+  - tool: synology-dsm
+    fit: partial
+    note: Debian-based server OS with an app catalogue, users, single sign-on and mail, on your own hardware.

@@ -1,0 +1,7 @@
+name: Headway
+repository: https://github.com/headwaymaps/headway
+category: maps-navigation
+replaces:
+  - tool: google-maps
+    fit: partial
+    note: Self-hosted maps web app with search and directions for the regions you build from OpenStreetMap data.

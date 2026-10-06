@@ -1,0 +1,7 @@
+name: webtrees
+repository: https://github.com/fisharebest/webtrees
+category: genealogy
+replaces:
+  - tool: myheritage
+    fit: partial
+    note: Family tree website shared with relatives, with GEDCOM import and export; no record search or DNA.

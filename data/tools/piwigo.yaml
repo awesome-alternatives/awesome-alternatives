@@ -1,0 +1,7 @@
+name: Piwigo
+repository: https://github.com/Piwigo/Piwigo
+category: photo-library
+replaces:
+  - tool: flickr
+    fit: partial
+    note: Self-hosted photo gallery with albums, permissions, plugins and themes, without the community features.

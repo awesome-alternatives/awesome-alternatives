@@ -1,0 +1,9 @@
+name: Cosmos
+repository: https://github.com/azukaar/Cosmos-Server
+category: home-server-platform
+replaces:
+  - tool: unraid
+    fit: partial
+    note: App store, reverse proxy, authentication and storage management over Docker; selling it as a service is not allowed.
+terms: source-available
+deploy: [container]

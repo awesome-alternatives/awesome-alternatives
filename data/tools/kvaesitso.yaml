@@ -1,0 +1,7 @@
+name: Kvaesitso
+repository: https://github.com/MM2-0/Kvaesitso
+category: android-launcher
+replaces:
+  - tool: niagara-launcher
+    fit: partial
+    note: Search-focused home screen with widgets and no app grid on the home page.

@@ -1,0 +1,7 @@
+name: PairDrop
+repository: https://github.com/schlagmichdoch/PairDrop
+category: local-file-transfer
+replaces:
+  - tool: airdrop
+    fit: partial
+    note: Transfers files from the browser between devices on the same network or paired across networks, with no app to install.

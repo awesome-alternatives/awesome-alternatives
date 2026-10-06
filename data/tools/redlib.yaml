@@ -1,0 +1,8 @@
+name: Redlib
+repository: https://github.com/redlib-org/redlib
+category: privacy-frontend
+replaces:
+  - tool: reddit
+    fit: partial
+    note: Reads Reddit without ads, tracking or JavaScript; cannot post, vote or log in.
+deploy: [container]

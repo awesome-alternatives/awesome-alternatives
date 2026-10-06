@@ -1,0 +1,4 @@
+name: Speedtest Tracker
+repository: https://github.com/alexjustesen/speedtest-tracker
+category: speed-test
+deploy: [container]

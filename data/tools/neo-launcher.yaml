@@ -1,0 +1,7 @@
+name: Neo Launcher
+repository: https://github.com/NeoApplications/Neo-Launcher
+category: android-launcher
+replaces:
+  - tool: nova-launcher
+    fit: partial
+    note: Customisable home screen with gestures, icon packs, drawer categories and themes.

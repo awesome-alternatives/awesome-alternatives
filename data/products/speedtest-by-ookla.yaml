@@ -1,0 +1,5 @@
+name: Speedtest by Ookla
+homepage: https://www.speedtest.net
+vendor: Ookla
+category: speed-test
+description: "Hosted internet speed test measuring download, upload and latency to Ookla's servers."

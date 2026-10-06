@@ -1,0 +1,7 @@
+name: Vicinae
+repository: https://github.com/vicinaehq/vicinae
+category: app-launcher
+replaces:
+  - tool: raycast
+    fit: partial
+    note: Raycast-style launcher for Linux with extensions, clipboard history and file search.

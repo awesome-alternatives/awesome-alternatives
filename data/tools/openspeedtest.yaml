@@ -1,0 +1,8 @@
+name: OpenSpeedTest
+repository: https://github.com/openspeedtest/Speed-Test
+category: speed-test
+replaces:
+  - tool: speedtest-by-ookla
+    fit: partial
+    note: Measures speed to a server you host from any browser, not to a global network of test servers.
+deploy: [container]

@@ -1,0 +1,8 @@
+name: Lychee
+repository: https://github.com/LycheeOrg/Lychee
+category: photo-library
+replaces:
+  - tool: flickr
+    fit: partial
+    note: Self-hosted photo albums with sharing and EXIF data, without the community features.
+deploy: [container]

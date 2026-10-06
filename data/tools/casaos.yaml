@@ -1,0 +1,7 @@
+name: CasaOS
+repository: https://github.com/IceWhaleTech/CasaOS
+category: home-server-platform
+replaces:
+  - tool: unraid
+    fit: partial
+    note: App store and dashboard over Docker on an existing Linux install; no disk array or virtual machines.

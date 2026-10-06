@@ -1,0 +1,8 @@
+name: OSRM
+repository: https://github.com/Project-OSRM/osrm-backend
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Routing and travel-time tables over OpenStreetMap data behind an HTTP API; no live traffic.
+deploy: [container]

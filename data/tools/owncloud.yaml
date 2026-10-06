@@ -1,0 +1,10 @@
+name: ownCloud Server
+repository: https://github.com/owncloud/core
+category: file-sync
+replaces:
+  - tool: dropbox
+    fit: full
+    note: Self-hosted file storage with desktop and mobile sync clients and share links.
+  - tool: google-drive
+    fit: partial
+    note: Self-hosted file storage and sharing, with document editing only through an integrated office server.

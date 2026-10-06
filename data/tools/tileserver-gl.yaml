@@ -1,0 +1,9 @@
+name: TileServer GL
+repository: https://github.com/maptiler/tileserver-gl
+category: map-services
+replaces:
+  - tool: mapbox
+    fit: partial
+    note: Serves vector tiles and renders raster tiles from MBTiles files with GL styles; no routing or geocoding.
+terms: open
+deploy: [container]

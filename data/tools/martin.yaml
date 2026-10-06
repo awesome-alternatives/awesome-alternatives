@@ -1,0 +1,8 @@
+name: Martin
+repository: https://github.com/maplibre/martin
+category: map-services
+replaces:
+  - tool: mapbox
+    fit: partial
+    note: Serves vector tiles from PostGIS, MBTiles and PMTiles; no routing or geocoding.
+deploy: [container, binary]

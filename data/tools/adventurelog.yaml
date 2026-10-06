@@ -1,0 +1,8 @@
+name: AdventureLog
+repository: https://github.com/seanmorley15/AdventureLog
+category: travel-planning
+replaces:
+  - tool: tripit
+    fit: partial
+    note: Trips, itineraries and visited places logged by hand on your own server; does not parse booking emails.
+terms: open

@@ -1,0 +1,7 @@
+name: Piped
+repository: https://github.com/TeamPiped/Piped
+category: privacy-frontend
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Watches YouTube videos without ads or a Google account, with SponsorBlock built in and video proxied through the instance.

@@ -1,0 +1,4 @@
+name: Koillection
+repository: https://github.com/benjaminjonard/koillection
+category: home-inventory
+deploy: [container]

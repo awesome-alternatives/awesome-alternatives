@@ -1,0 +1,7 @@
+name: FreeTube
+repository: https://github.com/FreeTubeApp/FreeTube
+category: youtube-client
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Desktop YouTube player without ads or a Google account, with local subscriptions and playlists.

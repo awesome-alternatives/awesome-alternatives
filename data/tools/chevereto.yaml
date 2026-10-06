@@ -1,0 +1,7 @@
+name: Chevereto
+repository: https://github.com/chevereto/chevereto
+category: photo-library
+replaces:
+  - tool: flickr
+    fit: partial
+    note: Self-hosted image hosting with albums, users and embeddable links.

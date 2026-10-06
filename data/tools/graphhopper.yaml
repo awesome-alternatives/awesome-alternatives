@@ -1,0 +1,7 @@
+name: GraphHopper
+repository: https://github.com/graphhopper/graphhopper
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Routing and distance matrices over OpenStreetMap data behind an HTTP API; no live traffic.

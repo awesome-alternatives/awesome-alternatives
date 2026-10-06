@@ -1,0 +1,5 @@
+name: Unraid
+homepage: https://unraid.net
+vendor: Lime Technology
+category: home-server-platform
+description: Paid operating system for home servers and NAS builds, with a disk array, Docker apps and virtual machines.

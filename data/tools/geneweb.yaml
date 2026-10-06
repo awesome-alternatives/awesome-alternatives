@@ -1,0 +1,7 @@
+name: GeneWeb
+repository: https://github.com/geneweb/geneweb
+category: genealogy
+replaces:
+  - tool: myheritage
+    fit: partial
+    note: Genealogy server with GEDCOM import, relationship computation and tree displays; no record search or DNA.

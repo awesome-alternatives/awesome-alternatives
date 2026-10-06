@@ -1,0 +1,7 @@
+name: Nominatim
+repository: https://github.com/osm-search/Nominatim
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Geocoding and reverse geocoding over OpenStreetMap data.

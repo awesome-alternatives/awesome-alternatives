@@ -1,0 +1,5 @@
+name: OpenWeather
+homepage: https://openweathermap.org
+vendor: OpenWeather
+category: weather
+description: Weather data API with current conditions, forecasts and history, priced by call volume.

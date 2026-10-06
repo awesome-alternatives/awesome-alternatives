@@ -1,0 +1,7 @@
+name: Magic Wormhole
+repository: https://github.com/magic-wormhole/magic-wormhole
+category: local-file-transfer
+replaces:
+  - tool: wetransfer
+    fit: partial
+    note: Sends files between two computers with a short code and end-to-end encryption; both sides must be online at once.

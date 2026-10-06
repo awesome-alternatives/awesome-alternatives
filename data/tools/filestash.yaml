@@ -1,0 +1,4 @@
+name: Filestash
+repository: https://github.com/mickael-kerjean/filestash
+category: web-file-manager
+deploy: [container]

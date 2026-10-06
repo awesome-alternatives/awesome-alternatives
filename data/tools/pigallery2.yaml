@@ -1,0 +1,4 @@
+name: PiGallery 2
+repository: https://github.com/bpatrik/pigallery2
+category: photo-library
+deploy: [container]

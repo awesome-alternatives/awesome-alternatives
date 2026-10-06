@@ -1,0 +1,7 @@
+name: SmartTube
+repository: https://github.com/yuliskov/SmartTube
+category: youtube-client
+replaces:
+  - tool: youtube
+    fit: partial
+    note: YouTube player for Android TV without ads, with SponsorBlock and adjustable playback speed.

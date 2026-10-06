@@ -1,0 +1,11 @@
+name: Pydio Cells
+repository: https://github.com/pydio/cells
+category: file-sync
+replaces:
+  - tool: box
+    fit: partial
+    note: Self-hosted file sharing with workspaces, access policies and sync clients.
+  - tool: dropbox
+    fit: partial
+    note: Self-hosted file storage with sync clients and share links.
+deploy: [container]

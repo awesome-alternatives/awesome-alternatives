@@ -1,0 +1,7 @@
+name: Open-Meteo
+repository: https://github.com/open-meteo/open-meteo
+category: weather
+replaces:
+  - tool: openweather
+    fit: partial
+    note: Forecast API built on national weather service models, free for non-commercial use or self-hosted.
