@@ -1,0 +1,8 @@
+name: VerneMQ
+repository: https://github.com/vernemq/vernemq
+category: mqtt-broker
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: Clustered MQTT broker built on Erlang/OTP; MQTT only, no device management.
+deploy: [container]

@@ -1,0 +1,7 @@
+name: mongo-express
+repository: https://github.com/mongo-express/mongo-express
+category: database-client
+replaces:
+  - tool: studio-3t
+    fit: partial
+    note: Browse and edit MongoDB databases, collections and documents from a web UI.

@@ -1,0 +1,8 @@
+name: HiveMQ Community Edition
+repository: https://github.com/hivemq/hivemq-community-edition
+category: mqtt-broker
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: MQTT 5 broker on a single node, extended with Java plugins.
+deploy: [container, binary]

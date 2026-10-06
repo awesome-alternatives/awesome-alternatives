@@ -1,0 +1,8 @@
+name: Apache ActiveMQ Artemis
+repository: https://github.com/apache/artemis
+category: message-streaming
+replaces:
+  - tool: amazon-mq
+    fit: partial
+    note: Broker speaking AMQP, MQTT, STOMP and OpenWire; not the ActiveMQ Classic engine Amazon MQ runs.
+deploy: [container]

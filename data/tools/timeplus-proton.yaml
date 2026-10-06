@@ -1,0 +1,8 @@
+name: Timeplus Proton
+repository: https://github.com/timeplus-io/proton
+category: stream-processing
+replaces:
+  - tool: ksqldb
+    fit: partial
+    note: Streaming SQL over Kafka topics in a single binary built on ClickHouse.
+deploy: [container, binary]

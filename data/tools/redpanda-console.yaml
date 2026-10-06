@@ -1,0 +1,4 @@
+name: Redpanda Console
+repository: https://github.com/redpanda-data/console
+category: kafka-ui
+terms: source-available

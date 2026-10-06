@@ -1,0 +1,8 @@
+name: Arroyo
+repository: https://github.com/ArroyoSystems/arroyo
+category: stream-processing
+replaces:
+  - tool: amazon-managed-flink
+    fit: partial
+    note: Streaming SQL engine in Rust with windows and joins, run as one binary or on Kubernetes; no Java API.
+deploy: [container, helm]

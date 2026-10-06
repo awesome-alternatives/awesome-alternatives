@@ -1,0 +1,8 @@
+name: Apache Flink
+repository: https://github.com/apache/flink
+category: stream-processing
+replaces:
+  - tool: amazon-managed-flink
+    fit: full
+    note: The same Apache Flink, run on your own cluster or on Kubernetes.
+deploy: [container]

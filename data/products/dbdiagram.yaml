@@ -1,0 +1,5 @@
+name: dbdiagram.io
+homepage: https://dbdiagram.io
+vendor: Holistics
+category: diagramming
+description: Hosted tool that draws entity-relationship diagrams from schema code written in DBML.

@@ -1,0 +1,8 @@
+name: Fluvio
+repository: https://github.com/fluvio-community/fluvio
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: partial
+    note: Streaming in Rust with WebAssembly transforms, with its own protocol and clients.
+deploy: [binary]

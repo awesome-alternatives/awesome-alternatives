@@ -1,0 +1,5 @@
+name: ksqlDB
+repository: https://github.com/confluentinc/ksql
+category: stream-processing
+terms: source-available
+deploy: [container]

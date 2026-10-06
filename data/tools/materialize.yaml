@@ -1,0 +1,5 @@
+name: Materialize
+repository: https://github.com/MaterializeInc/materialize
+category: stream-processing
+terms: source-available
+deploy: [container]

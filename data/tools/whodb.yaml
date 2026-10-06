@@ -1,0 +1,7 @@
+name: WhoDB
+repository: https://github.com/clidey/whodb
+category: database-client
+replaces:
+  - tool: tableplus
+    fit: partial
+    note: Web client for PostgreSQL, MySQL, SQLite, MongoDB, Redis and other databases.

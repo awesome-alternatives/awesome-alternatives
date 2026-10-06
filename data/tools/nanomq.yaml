@@ -1,0 +1,8 @@
+name: NanoMQ
+repository: https://github.com/nanomq/nanomq
+category: mqtt-broker
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: Lightweight MQTT broker for edge devices, with bridging to cloud brokers and a rules engine.
+deploy: [container, package]

@@ -1,0 +1,5 @@
+name: Hazelcast
+repository: https://github.com/hazelcast/hazelcast
+category: stream-processing
+terms: open-core
+deploy: [container]

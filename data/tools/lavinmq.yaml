@@ -1,0 +1,8 @@
+name: LavinMQ
+repository: https://github.com/cloudamqp/lavinmq
+category: message-streaming
+replaces:
+  - tool: rabbitmq
+    fit: partial
+    note: Speaks AMQP 0-9-1 and MQTT, so RabbitMQ clients connect without changes; no RabbitMQ plugins.
+deploy: [container, package]

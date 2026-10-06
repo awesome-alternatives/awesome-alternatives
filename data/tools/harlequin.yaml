@@ -1,0 +1,7 @@
+name: Harlequin
+repository: https://github.com/tconbeer/harlequin
+category: database-client
+replaces:
+  - tool: datagrip
+    fit: partial
+    note: SQL IDE in the terminal for DuckDB, SQLite, PostgreSQL, MySQL and other engines through adapters.

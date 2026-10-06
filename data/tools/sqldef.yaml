@@ -1,0 +1,8 @@
+name: sqldef
+repository: https://github.com/sqldef/sqldef
+category: database-migrations
+terms: open
+replaces:
+  - tool: atlas
+    fit: partial
+    note: Declarative schema diffs from plain DDL files for MySQL, PostgreSQL, SQLite and SQL Server.

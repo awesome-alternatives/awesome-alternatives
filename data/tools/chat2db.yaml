@@ -1,0 +1,8 @@
+name: Chat2DB
+repository: https://github.com/OtterMind/Chat2DB
+category: database-client
+terms: source-available
+replaces:
+  - tool: navicat
+    fit: partial
+    note: SQL client for many databases with AI-assisted query writing.

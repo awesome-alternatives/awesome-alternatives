@@ -1,0 +1,3 @@
+name: Apache Storm
+repository: https://github.com/apache/storm
+category: stream-processing

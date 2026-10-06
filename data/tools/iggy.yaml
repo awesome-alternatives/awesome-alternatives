@@ -1,0 +1,8 @@
+name: Apache Iggy
+repository: https://github.com/apache/iggy
+category: message-streaming
+replaces:
+  - tool: kafka
+    fit: partial
+    note: Persistent message streaming in Rust over TCP, QUIC and HTTP, with its own protocol and clients.
+deploy: [container]

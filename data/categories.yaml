@@ -1386,3 +1386,17 @@ realtime-messaging:
   name: Real-time messaging servers
   description: Push events from a backend to browsers and apps over WebSocket or Server-Sent Events, with channels and presence.
   selfHost: true
+
+mqtt-broker:
+  name: MQTT brokers
+  description: Route MQTT messages between devices and services.
+  selfHost: true
+
+kafka-ui:
+  name: Kafka web UIs
+  description: Browse topics, messages, consumer groups and connectors of a Kafka cluster from a web UI.
+
+stream-processing:
+  name: Stream processing
+  description: Run continuous queries, joins and aggregations over event streams.
+  selfHost: true

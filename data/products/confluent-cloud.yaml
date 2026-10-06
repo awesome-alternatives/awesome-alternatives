@@ -1,0 +1,5 @@
+name: Confluent Cloud
+homepage: https://www.confluent.io/confluent-cloud/
+vendor: Confluent
+category: message-streaming
+description: Hosted Apache Kafka with managed connectors, schema registry and stream processing.
