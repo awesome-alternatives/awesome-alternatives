@@ -122,10 +122,10 @@ export const pages = {
     },
     licences: {
       heading: "Licences",
-      dataBefore: "The catalog data is dedicated to the public domain under",
-      dataLink: "CC0 1.0",
-      codeBefore: ". The code of the site, the API and the scripts is under the",
-      codeLink: "MIT licence",
+      dataBefore: "The catalog data is under",
+      dataLink: "CC BY-SA 4.0",
+      codeBefore: ": reuse it freely, with a link to awesome-alternatives.com and under the same licence. The code of the site, the API and the scripts is under the",
+      codeLink: "GNU AGPL v3",
     },
   },
 
@@ -243,9 +243,9 @@ export const pages = {
     content: {
       heading: "Content",
       licenceBefore: "The catalog is released under",
-      dataLink: "CC0",
+      dataLink: "CC BY-SA 4.0",
       licenceMiddle: "and the code under",
-      codeLink: "MIT",
+      codeLink: "AGPL-3.0",
       licenceAfter:
         ". Repository figures (stars, releases, licences, descriptions) come from the public GitHub API, along with the public name and description of the account each repository belongs to. Project names and trademarks belong to their owners.",
       reportBefore: "To report an error or ask for an entry to be removed, open an issue on",

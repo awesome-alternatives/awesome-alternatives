@@ -124,10 +124,10 @@ export const pages: Pages = {
     },
     licences: {
       heading: "ライセンス",
-      dataBefore: "カタログのデータは",
-      dataLink: "CC0 1.0",
-      codeBefore: "のもとでパブリックドメインに提供しています。サイト、API、スクリプトのコードのライセンスは",
-      codeLink: "MIT ライセンス",
+      dataBefore: "カタログのデータのライセンスは",
+      dataLink: "CC BY-SA 4.0",
+      codeBefore: " です。awesome-alternatives.com へのリンクを示し、同じライセンスで公開すれば自由に再利用できます。サイト、API、スクリプトのコードのライセンスは",
+      codeLink: "GNU AGPL v3",
     },
   },
 
@@ -245,9 +245,9 @@ export const pages: Pages = {
     content: {
       heading: "コンテンツ",
       licenceBefore: "カタログは",
-      dataLink: "CC0",
+      dataLink: "CC BY-SA 4.0",
       licenceMiddle: "のもとで、コードは",
-      codeLink: "MIT",
+      codeLink: "AGPL-3.0",
       licenceAfter:
         " のもとで公開しています。リポジトリの数値（スター数、リリース、ライセンス、説明文）は、各リポジトリが属するアカウントの公開名と説明とともに、公開されている GitHub API から取得しています。プロジェクト名と商標はそれぞれの所有者に帰属します。",
       reportBefore: "誤りの報告やエントリの削除依頼は、",

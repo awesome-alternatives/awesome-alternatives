@@ -141,7 +141,7 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     ...(repo.homepage ? [`- Homepage: ${url(repo.homepage)}`] : []),
     `- Page: ${SITE}/tools/${tool.slug}/`,
     "",
-    `Figures above are read from GitHub every night. The whole catalog, under CC0 1.0, is at ${SITE}/llms.txt`,
+    `Figures above are read from GitHub every night. The whole catalog, under CC BY-SA 4.0, is at ${SITE}/llms.txt`,
     "",
   ].join("\n");
 }
