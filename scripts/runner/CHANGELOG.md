@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.10.0] - 2026-10-06
+
+### Features
+
+- feat(refresh): apply factual fields from the maintainer file (#335)
+
 ## [0.9.0] - 2026-10-06
 
 ### Features
