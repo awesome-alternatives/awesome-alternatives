@@ -1,0 +1,7 @@
+name: pgvectorscale
+repository: https://github.com/timescale/pgvectorscale
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Adds a disk-based StreamingDiskANN index and label filtering to pgvector inside PostgreSQL.

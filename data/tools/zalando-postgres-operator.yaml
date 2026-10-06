@@ -1,0 +1,8 @@
+name: Postgres Operator
+repository: https://github.com/zalando/postgres-operator
+category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: Patroni-managed PostgreSQL clusters on Kubernetes, with WAL-G backups and a web UI; PostgreSQL only.
+deploy: [helm, container]

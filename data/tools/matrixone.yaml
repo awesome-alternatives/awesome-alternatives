@@ -1,0 +1,8 @@
+name: MatrixOne
+repository: https://github.com/matrixorigin/matrixone
+category: distributed-sql
+replaces:
+  - tool: mysql
+    fit: partial
+    note: Speaks the MySQL protocol and runs transactional and analytical queries on shared object storage.
+deploy: [container]

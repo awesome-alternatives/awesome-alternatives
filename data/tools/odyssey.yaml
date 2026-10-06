@@ -1,0 +1,8 @@
+name: Odyssey
+repository: https://github.com/yandex/odyssey
+category: database-proxy
+replaces:
+  - tool: amazon-rds-proxy
+    fit: partial
+    note: Multi-threaded PostgreSQL connection pooler with per-route pool settings; PostgreSQL only.
+deploy: [container]

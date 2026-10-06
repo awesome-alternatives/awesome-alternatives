@@ -1,0 +1,7 @@
+name: RxDB
+repository: https://github.com/pubkey/rxdb
+category: document-database
+replaces:
+  - tool: firebase
+    fit: partial
+    note: Offline-first local database for JavaScript apps that syncs with a backend you run; no hosted auth, functions or storage.

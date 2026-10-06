@@ -1,0 +1,8 @@
+name: Percona Operator for MySQL based on Percona XtraDB Cluster
+repository: https://github.com/percona/percona-xtradb-cluster-operator
+category: relational-database
+terms: open
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: Synchronously replicated MySQL clusters on Kubernetes, with ProxySQL or HAProxy in front and scheduled backups.

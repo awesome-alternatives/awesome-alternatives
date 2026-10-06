@@ -1,0 +1,5 @@
+name: Amazon Redshift
+homepage: https://aws.amazon.com/redshift/
+vendor: Amazon Web Services
+category: analytical-database
+description: Hosted columnar data warehouse on AWS, queried in a PostgreSQL-derived SQL dialect.

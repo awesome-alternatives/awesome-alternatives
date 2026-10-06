@@ -1,0 +1,5 @@
+name: Microsoft SQL Server
+homepage: https://www.microsoft.com/sql-server
+vendor: Microsoft
+category: relational-database
+description: Microsoft's relational database server, queried in T-SQL.

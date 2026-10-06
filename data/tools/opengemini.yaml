@@ -1,0 +1,8 @@
+name: openGemini
+repository: https://github.com/openGemini/openGemini
+category: time-series-database
+replaces:
+  - tool: influxdb
+    fit: partial
+    note: Accepts InfluxDB line protocol writes and InfluxQL queries, and clusters in the open source version.
+deploy: [container]

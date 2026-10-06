@@ -1,0 +1,3 @@
+name: PouchDB
+repository: https://github.com/apache/pouchdb
+category: document-database

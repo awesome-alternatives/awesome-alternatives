@@ -1,0 +1,8 @@
+name: Apache IoTDB
+repository: https://github.com/apache/iotdb
+category: time-series-database
+replaces:
+  - tool: amazon-timestream
+    fit: partial
+    note: Time series storage for IoT device data, queried in SQL, run on your own servers or at the edge.
+deploy: [container]

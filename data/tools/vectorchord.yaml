@@ -1,0 +1,9 @@
+name: VectorChord
+repository: https://github.com/supervc-stack/VectorChord
+category: vector-database
+terms: open
+replaces:
+  - tool: pgvector
+    fit: partial
+    note: PostgreSQL extension that indexes pgvector's vector type with its own index, for larger collections.
+deploy: [container]

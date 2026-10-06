@@ -1,0 +1,5 @@
+name: Amazon RDS Proxy
+homepage: https://aws.amazon.com/rds/proxy/
+vendor: Amazon Web Services
+category: database-proxy
+description: Managed connection pooling proxy in front of RDS and Aurora databases.

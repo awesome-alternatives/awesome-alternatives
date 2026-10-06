@@ -1,0 +1,8 @@
+name: Apache Pinot
+repository: https://github.com/apache/pinot
+category: analytical-database
+replaces:
+  - tool: druid
+    fit: full
+    note: Real-time OLAP over events ingested from Kafka or Pulsar and batch files, queried in SQL.
+deploy: [container, helm]

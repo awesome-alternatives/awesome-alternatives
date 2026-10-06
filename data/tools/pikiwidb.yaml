@@ -1,0 +1,8 @@
+name: PikiwiDB
+repository: https://github.com/OpenAtomFoundation/pikiwidb
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: partial
+    note: Speaks the Redis protocol and keeps data on disk in RocksDB, for datasets larger than memory.
+deploy: [container, binary]

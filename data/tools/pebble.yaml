@@ -1,0 +1,7 @@
+name: Pebble
+repository: https://github.com/cockroachdb/pebble
+category: embedded-key-value
+replaces:
+  - tool: rocksdb
+    fit: partial
+    note: LSM key-value store in Go with RocksDB's design and part of its feature set, without cgo.

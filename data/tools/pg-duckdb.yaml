@@ -1,0 +1,4 @@
+name: pg_duckdb
+repository: https://github.com/duckdb/pg_duckdb
+category: analytical-database
+deploy: [container]

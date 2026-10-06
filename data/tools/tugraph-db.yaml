@@ -1,0 +1,8 @@
+name: TuGraph
+repository: https://github.com/TuGraph-family/tugraph-db
+category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Queried in Cypher, also over the Bolt protocol, on a single machine with high-availability replicas.
+deploy: [container]

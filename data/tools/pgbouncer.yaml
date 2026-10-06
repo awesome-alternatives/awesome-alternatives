@@ -1,0 +1,8 @@
+name: PgBouncer
+repository: https://github.com/pgbouncer/pgbouncer
+category: database-proxy
+terms: open
+replaces:
+  - tool: amazon-rds-proxy
+    fit: partial
+    note: Pools PostgreSQL connections in front of any server; no IAM authentication and no MySQL.

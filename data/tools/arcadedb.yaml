@@ -1,0 +1,8 @@
+name: ArcadeDB
+repository: https://github.com/ArcadeData/arcadedb
+category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Multi-model database that answers Cypher, Gremlin and SQL queries, with a plugin for Neo4j's Bolt protocol.
+deploy: [container]

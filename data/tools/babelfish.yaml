@@ -1,0 +1,7 @@
+name: Babelfish for PostgreSQL
+repository: https://github.com/babelfish-for-postgresql/babelfish_extensions
+category: relational-database
+replaces:
+  - tool: microsoft-sql-server
+    fit: partial
+    note: Lets PostgreSQL accept SQL Server's TDS wire protocol and much of T-SQL, so some applications move with few query changes.

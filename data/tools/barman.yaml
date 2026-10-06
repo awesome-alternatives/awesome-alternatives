@@ -1,0 +1,3 @@
+name: Barman
+repository: https://github.com/EnterpriseDB/barman
+category: database-backup

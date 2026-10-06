@@ -1,0 +1,5 @@
+name: Google Cloud Spanner
+homepage: https://cloud.google.com/spanner
+vendor: Google
+category: distributed-sql
+description: Hosted distributed SQL database with strongly consistent transactions across regions.

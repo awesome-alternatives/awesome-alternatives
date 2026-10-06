@@ -1,0 +1,4 @@
+name: TiKV
+repository: https://github.com/tikv/tikv
+category: distributed-key-value
+deploy: [container]

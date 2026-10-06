@@ -1,0 +1,4 @@
+name: FoundationDB
+repository: https://github.com/apple/foundationdb
+category: distributed-key-value
+deploy: [container, package]

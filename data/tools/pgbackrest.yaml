@@ -1,0 +1,4 @@
+name: pgBackRest
+repository: https://github.com/pgbackrest/pgbackrest
+category: database-backup
+terms: open

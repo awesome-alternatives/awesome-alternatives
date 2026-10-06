@@ -1,0 +1,7 @@
+name: PGlite
+repository: https://github.com/electric-sql/pglite
+category: relational-database
+replaces:
+  - tool: sqlite
+    fit: partial
+    note: Embedded SQL database for JavaScript in the browser, Node.js, Bun and Deno, with PostgreSQL's SQL dialect instead of SQLite's.

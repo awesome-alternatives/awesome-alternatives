@@ -1,0 +1,7 @@
+name: YDB
+repository: https://github.com/ydb-platform/ydb
+category: distributed-sql
+replaces:
+  - tool: google-cloud-spanner
+    fit: partial
+    note: Distributed SQL with serializable transactions across availability zones, on your own servers; its own SQL dialect, YQL.

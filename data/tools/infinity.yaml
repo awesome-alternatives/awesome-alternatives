@@ -1,0 +1,8 @@
+name: Infinity
+repository: https://github.com/infiniflow/infinity
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Dense, sparse, tensor and full-text search in one engine, with filtering.
+deploy: [container]

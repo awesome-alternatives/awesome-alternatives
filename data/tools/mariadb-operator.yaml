@@ -1,0 +1,8 @@
+name: mariadb-operator
+repository: https://github.com/mariadb-operator/mariadb-operator
+category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: MariaDB with replication or Galera, backups and failover on Kubernetes; MariaDB only.
+deploy: [helm, container]
