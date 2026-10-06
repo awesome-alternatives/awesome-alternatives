@@ -1,0 +1,11 @@
+name: KeePassXC
+repository: https://github.com/keepassxreboot/keepassxc
+category: password-manager
+terms: open
+replaces:
+  - tool: 1password
+    fit: partial
+    note: Local KeePass database with browser integration, TOTP and passkeys; syncing the file is up to you.
+  - tool: lastpass
+    fit: partial
+    note: Local KeePass database with browser integration and TOTP; syncing the file is up to you.

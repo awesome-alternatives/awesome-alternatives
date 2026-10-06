@@ -1,0 +1,7 @@
+name: EJBCA
+repository: https://github.com/Keyfactor/ejbca-ce
+category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: full
+    note: Full PKI with multiple CAs, ACME, SCEP, EST and CMP enrollment.

@@ -1,0 +1,11 @@
+name: Hanko
+repository: https://github.com/teamhanko/hanko
+category: identity-provider
+terms: open
+replaces:
+  - tool: clerk
+    fit: partial
+    note: Passkey-first login and user management with embeddable web components.
+  - tool: auth0
+    fit: partial
+    note: Passkeys, passwords and social login for your applications, without enterprise SAML.

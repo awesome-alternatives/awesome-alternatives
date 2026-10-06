@@ -1,0 +1,8 @@
+name: Conjur
+repository: https://github.com/cyberark/conjur
+category: secrets-manager
+terms: open
+replaces:
+  - tool: vault
+    fit: partial
+    note: Machine identities and secrets for applications, Kubernetes and CI, with policies as code.

@@ -1426,3 +1426,26 @@ data-processing-engine:
   name: Data processing engines
   description: Run batch and streaming jobs over large datasets across a cluster.
   selfHost: true
+
+ldap-directory:
+  name: Directory servers
+  description: Keep users and groups in an LDAP directory that other systems authenticate against.
+  selfHost: true
+
+authorization-service:
+  name: Authorization services
+  description: Decide who may do what in an application, with policies or relationship-based permissions served over an API.
+  selfHost: true
+
+password-manager:
+  name: Password managers
+  description: Apps that keep passwords and other secrets in an encrypted vault on your own devices.
+
+certificate-authority:
+  name: Certificate authorities
+  description: Issue, renew and revoke X.509 certificates from a PKI you run.
+  selfHost: true
+
+acme-client:
+  name: Certificate automation
+  description: "Request and renew TLS certificates over ACME from Let's Encrypt or another ACME authority."

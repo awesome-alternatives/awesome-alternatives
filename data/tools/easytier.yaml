@@ -1,0 +1,7 @@
+name: EasyTier
+repository: https://github.com/EasyTier/EasyTier
+category: mesh-vpn
+replaces:
+  - tool: tailscale
+    fit: full
+    note: Decentralised mesh VPN with NAT traversal and an optional self-hosted web console.

@@ -1,0 +1,7 @@
+name: OpenXPKI
+repository: https://github.com/openxpki/openxpki
+category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: full
+    note: PKI with configurable workflows and SCEP, EST and RPC enrollment.

@@ -1,0 +1,7 @@
+name: Janssen
+repository: https://github.com/JanssenProject/jans
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: OpenID Connect, OAuth and SAML server with scriptable authentication flows, operated on Kubernetes or a VM.

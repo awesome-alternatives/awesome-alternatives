@@ -1,0 +1,7 @@
+name: FreeIPA
+repository: https://github.com/freeipa/freeipa
+category: ldap-directory
+replaces:
+  - tool: active-directory
+    fit: full
+    note: LDAP directory, Kerberos, DNS and a CA for Linux fleets, with trusts to Active Directory domains.

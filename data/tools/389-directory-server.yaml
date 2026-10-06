@@ -1,0 +1,4 @@
+name: 389 Directory Server
+repository: https://github.com/389ds/389-ds-base
+category: ldap-directory
+terms: open

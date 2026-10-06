@@ -1,0 +1,5 @@
+name: Clerk
+homepage: https://clerk.com
+vendor: Clerk
+category: identity-provider
+description: Hosted authentication and user management service with drop-in sign-in components.

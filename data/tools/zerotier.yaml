@@ -1,0 +1,8 @@
+name: ZeroTier
+repository: https://github.com/zerotier/ZeroTierOne
+category: mesh-vpn
+terms: open-core
+replaces:
+  - tool: tailscale
+    fit: full
+    note: Virtual network managed through a hosted or self-run controller.
