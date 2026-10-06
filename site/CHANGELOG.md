@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.102.0] - 2026-10-06
+
+### Features
+
+- feat(site): fill in the legal notice and privacy policy (#337)
+
 ## [0.101.1] - 2026-10-06
 
 ### Bug Fixes
