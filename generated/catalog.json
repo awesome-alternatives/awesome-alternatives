@@ -101497,9 +101497,9 @@
       "deploy": []
     },
     {
-      "slug": "roxycloud",
-      "name": "RoxyCloud",
-      "repository": "https://github.com/FerrLabs/RoxyCloud",
+      "slug": "stashden",
+      "name": "Stashden",
+      "repository": "https://github.com/FerrLabs/Stashden",
       "category": "file-sync",
       "replaces": [
         {

@@ -1,5 +1,5 @@
-name: RoxyCloud
-repository: https://github.com/FerrLabs/RoxyCloud
+name: Stashden
+repository: https://github.com/FerrLabs/Stashden
 category: file-sync
 replaces:
   - tool: nextcloud
