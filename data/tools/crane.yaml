@@ -1,0 +1,4 @@
+name: crane
+repository: https://github.com/google/go-containerregistry
+path: cmd/crane
+category: container-image-tools

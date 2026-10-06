@@ -1,0 +1,7 @@
+name: gVisor
+repository: https://github.com/google/gvisor
+category: container-engine
+replaces:
+  - tool: runc
+    fit: drop-in
+    note: OCI runtime that runs containers on a user-space kernel for isolation, at some cost in syscall speed.

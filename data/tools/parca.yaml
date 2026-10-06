@@ -1,0 +1,7 @@
+name: Parca
+repository: https://github.com/parca-dev/parca
+category: continuous-profiling
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Continuous profiling only, with an eBPF agent that needs no code changes.

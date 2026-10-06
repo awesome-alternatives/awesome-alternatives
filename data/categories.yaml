@@ -1485,3 +1485,12 @@ dns-server:
   name: DNS servers
   description: Authoritative and recursive DNS servers that host your zones and answer queries behind an API.
   selfHost: true
+
+container-image-tools:
+  name: Container image tools
+  description: Inspect, copy, sign and shrink OCI images and work with registries without a container daemon.
+
+continuous-profiling:
+  name: Continuous profiling
+  description: Collect CPU and memory profiles from running services all the time and query them over time like metrics.
+  selfHost: true

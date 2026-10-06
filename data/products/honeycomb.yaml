@@ -1,0 +1,5 @@
+name: Honeycomb
+homepage: https://www.honeycomb.io
+vendor: Honeycomb
+category: tracing
+description: Hosted observability service that stores traces and wide events and queries them by any field.

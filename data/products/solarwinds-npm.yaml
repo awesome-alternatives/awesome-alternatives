@@ -1,0 +1,5 @@
+name: SolarWinds Network Performance Monitor
+homepage: https://www.solarwinds.com/network-performance-monitor
+vendor: SolarWinds
+category: metrics
+description: Commercial network monitoring software that discovers devices, polls them over SNMP and maps and alerts on network performance.

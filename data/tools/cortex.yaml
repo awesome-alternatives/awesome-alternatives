@@ -1,0 +1,7 @@
+name: Cortex
+repository: https://github.com/cortexproject/cortex
+category: metrics
+replaces:
+  - tool: prometheus
+    fit: partial
+    note: Horizontally scaled, multi-tenant long-term storage for Prometheus metrics, fed by remote write.

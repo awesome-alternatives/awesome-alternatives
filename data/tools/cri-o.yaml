@@ -1,0 +1,7 @@
+name: CRI-O
+repository: https://github.com/cri-o/cri-o
+category: container-engine
+replaces:
+  - tool: containerd
+    fit: full
+    note: Implements the Kubernetes container runtime interface and nothing else.

@@ -1,0 +1,4 @@
+name: Vagrant
+repository: https://github.com/hashicorp/vagrant
+category: virtualization
+terms: source-available

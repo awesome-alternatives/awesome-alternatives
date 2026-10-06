@@ -1,0 +1,7 @@
+name: Grafana Pyroscope
+repository: https://github.com/grafana/pyroscope
+category: continuous-profiling
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Continuous profiling only, the part Datadog sells as its Continuous Profiler.

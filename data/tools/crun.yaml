@@ -1,0 +1,7 @@
+name: crun
+repository: https://github.com/containers/crun
+category: container-engine
+replaces:
+  - tool: runc
+    fit: drop-in
+    note: OCI runtime written in C, used by Podman by default.

@@ -1,0 +1,7 @@
+name: regclient
+repository: https://github.com/regclient/regclient
+category: container-image-tools
+replaces:
+  - tool: skopeo
+    fit: full
+    note: Copies, inspects and lists images and tags in registries from the regctl CLI, also usable as a Go library.

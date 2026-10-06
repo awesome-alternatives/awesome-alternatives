@@ -1,0 +1,10 @@
+name: Uptrace
+repository: https://github.com/uptrace/uptrace
+category: tracing
+replaces:
+  - tool: honeycomb
+    fit: partial
+    note: Traces, logs and metrics from OpenTelemetry stored in ClickHouse, queried with filters and group-bys.
+  - tool: datadog
+    fit: partial
+    note: "APM, logs and metrics from OpenTelemetry data, without Datadog's agents and integrations."

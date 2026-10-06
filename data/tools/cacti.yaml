@@ -1,0 +1,7 @@
+name: Cacti
+repository: https://github.com/Cacti/cacti
+category: metrics
+replaces:
+  - tool: solarwinds-npm
+    fit: partial
+    note: SNMP polling and RRD graphs for network devices, with threshold alerts through plugins.

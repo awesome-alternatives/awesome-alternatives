@@ -1,0 +1,4 @@
+name: LXC
+repository: https://github.com/lxc/lxc
+category: container-engine
+terms: open

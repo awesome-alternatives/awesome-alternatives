@@ -1,0 +1,7 @@
+name: Icinga
+repository: https://github.com/Icinga/icinga2
+category: metrics
+replaces:
+  - tool: prtg
+    fit: full
+    note: Host and service checks with Nagios-compatible plugins, notifications and a web UI.

@@ -1,0 +1,4 @@
+name: Apptainer
+repository: https://github.com/apptainer/apptainer
+category: container-engine
+terms: open

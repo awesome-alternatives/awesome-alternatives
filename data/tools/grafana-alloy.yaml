@@ -1,0 +1,7 @@
+name: Grafana Alloy
+repository: https://github.com/grafana/alloy
+category: log-pipeline
+replaces:
+  - tool: opentelemetry-collector
+    fit: full
+    note: Distribution of the OpenTelemetry Collector with Prometheus scraping and a programmable pipeline syntax.

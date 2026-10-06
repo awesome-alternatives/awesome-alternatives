@@ -1,0 +1,8 @@
+name: syslog-ng
+repository: https://github.com/syslog-ng/syslog-ng
+category: log-pipeline
+terms: open
+replaces:
+  - tool: rsyslog
+    fit: full
+    note: Syslog collection, parsing and routing with its own configuration language.
