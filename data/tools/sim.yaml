@@ -1,0 +1,8 @@
+name: Sim
+repository: https://github.com/simstudioai/sim
+category: llm-app-builder
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: A visual builder for agent workflows with many integrations, on your own server.
+deploy: [container, compose, helm]

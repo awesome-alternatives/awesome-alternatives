@@ -1,0 +1,3 @@
+name: Vosk
+repository: https://github.com/alphacep/vosk-api
+category: speech-to-text

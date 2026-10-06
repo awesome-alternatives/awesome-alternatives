@@ -1,0 +1,9 @@
+name: Onyx
+repository: https://github.com/onyx-dot-app/onyx
+category: document-qa
+terms: open-core
+replaces:
+  - tool: glean
+    fit: full
+    note: Search and chat over company apps through connectors, respecting their permissions.
+deploy: [compose, helm]

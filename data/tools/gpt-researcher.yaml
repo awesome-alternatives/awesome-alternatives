@@ -1,0 +1,8 @@
+name: GPT Researcher
+repository: https://github.com/assafelovic/gpt-researcher
+category: ai-search
+replaces:
+  - tool: perplexity
+    fit: partial
+    note: A research agent that writes cited reports from web and local sources.
+deploy: [compose]

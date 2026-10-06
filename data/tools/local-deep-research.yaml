@@ -1,0 +1,8 @@
+name: Local Deep Research
+repository: https://github.com/LearningCircuit/local-deep-research
+category: ai-search
+replaces:
+  - tool: perplexity
+    fit: partial
+    note: Iterative research over web and local document search, with local models if you want.
+deploy: [container, compose]

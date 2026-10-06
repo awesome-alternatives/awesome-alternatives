@@ -915,3 +915,37 @@ llm-evaluation:
 llm-cli:
   name: LLM command-line tools
   description: Prompt language models from a terminal and pipe their answers into other commands.
+
+llm-app-builder:
+  name: LLM app builders
+  description: Build chatbots, agents and RAG workflows in a visual editor and serve them behind an API.
+  selfHost: true
+
+document-qa:
+  name: Document Q&A
+  description: Ask questions about your own documents and sources through retrieval-augmented generation, with cited answers.
+  selfHost: true
+
+ai-search:
+  name: AI search engines
+  description: Answer questions from live web searches with a language model, citing the pages it read.
+  selfHost: true
+
+autonomous-agent:
+  name: Autonomous AI agents
+  description: Agents that plan and carry out multi-step tasks on their own, browsing, running code and calling tools.
+  selfHost: true
+
+browser-agent:
+  name: AI browser agents
+  description: Let a language model drive a web browser to navigate sites, fill forms and extract data.
+  selfHost: true
+
+ai-app-builder:
+  name: AI app builders
+  description: Generate and edit a web app or interface from a chat prompt, with a live preview.
+
+speech-to-text:
+  name: Speech to text
+  description: Transcribe recordings, meetings and dictation with speech recognition models on your own hardware.
+  selfHost: true

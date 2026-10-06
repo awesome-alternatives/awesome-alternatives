@@ -1,0 +1,5 @@
+name: NotebookLM
+homepage: https://notebooklm.google
+vendor: Google
+category: document-qa
+description: Google's research notebook that answers questions about uploaded sources with citations and turns them into audio overviews.

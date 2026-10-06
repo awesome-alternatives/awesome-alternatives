@@ -1,0 +1,4 @@
+name: Speaches
+repository: https://github.com/speaches-ai/speaches
+category: speech-to-text
+deploy: [container, compose]

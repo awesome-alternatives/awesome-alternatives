@@ -1,0 +1,9 @@
+name: Agent Zero
+repository: https://github.com/agent0ai/agent-zero
+category: autonomous-agent
+terms: open
+replaces:
+  - tool: manus
+    fit: partial
+    note: An agent with its own Linux environment that writes and runs code and browses to complete tasks.
+deploy: [container]

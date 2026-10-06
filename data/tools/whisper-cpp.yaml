@@ -1,0 +1,4 @@
+name: whisper.cpp
+repository: https://github.com/ggml-org/whisper.cpp
+category: speech-to-text
+deploy: [container]

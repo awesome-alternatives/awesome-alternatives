@@ -1,0 +1,12 @@
+name: SurfSense
+repository: https://github.com/MODSetter/SurfSense
+category: document-qa
+terms: open-core
+replaces:
+  - tool: notebooklm
+    fit: full
+    note: A research notebook over your documents and connected apps, with podcast generation.
+  - tool: glean
+    fit: partial
+    note: Search and chat over connected apps like Slack, Notion and GitHub, for a team.
+deploy: [container, compose]

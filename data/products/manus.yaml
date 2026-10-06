@@ -1,0 +1,5 @@
+name: Manus
+homepage: https://manus.im
+vendor: Manus
+category: autonomous-agent
+description: General AI agent that carries out multi-step tasks in a cloud sandbox with a browser and code execution.

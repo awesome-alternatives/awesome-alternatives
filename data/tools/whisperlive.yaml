@@ -1,0 +1,4 @@
+name: WhisperLive
+repository: https://github.com/collabora/WhisperLive
+category: speech-to-text
+deploy: [container]

@@ -1,0 +1,9 @@
+name: AutoGPT
+repository: https://github.com/Significant-Gravitas/AutoGPT
+category: autonomous-agent
+terms: open-core
+replaces:
+  - tool: manus
+    fit: partial
+    note: A platform to build and run continuous agents from blocks in a visual editor.
+deploy: [compose]

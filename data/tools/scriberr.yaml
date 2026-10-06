@@ -1,0 +1,8 @@
+name: Scriberr
+repository: https://github.com/rishikanthc/Scriberr
+category: speech-to-text
+replaces:
+  - tool: otter-ai
+    fit: partial
+    note: Self-hosted transcription with speaker labels and summaries for uploaded recordings.
+deploy: [container, compose]

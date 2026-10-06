@@ -1,0 +1,5 @@
+name: v0
+homepage: https://v0.app
+vendor: Vercel
+category: ai-app-builder
+description: Vercel's generator for React and Next.js interfaces and apps from chat prompts.

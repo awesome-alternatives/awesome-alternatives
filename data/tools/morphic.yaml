@@ -1,0 +1,8 @@
+name: Morphic
+repository: https://github.com/miurla/morphic
+category: ai-search
+replaces:
+  - tool: perplexity
+    fit: partial
+    note: An answer engine with a generative UI over web search results.
+deploy: [compose]

@@ -1,0 +1,8 @@
+name: Coze Studio
+repository: https://github.com/coze-dev/coze-studio
+category: llm-app-builder
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: A visual builder for agents and workflows, the open edition of Coze.
+deploy: [compose]

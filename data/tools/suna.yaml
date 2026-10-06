@@ -1,0 +1,8 @@
+name: Suna
+repository: https://github.com/kortix-ai/suna
+category: autonomous-agent
+terms: source-available
+replaces:
+  - tool: manus
+    fit: partial
+    note: An agent platform with browser automation, file handling and web search in a sandbox.

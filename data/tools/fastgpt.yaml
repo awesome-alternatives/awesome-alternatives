@@ -1,0 +1,9 @@
+name: FastGPT
+repository: https://github.com/labring/FastGPT
+category: llm-app-builder
+terms: source-available
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: Knowledge-base chatbots and visual workflows, served behind an OpenAI-compatible API.
+deploy: [container, compose]

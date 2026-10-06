@@ -1,0 +1,8 @@
+name: MaxKB
+repository: https://github.com/1Panel-dev/MaxKB
+category: llm-app-builder
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: Knowledge-base agents with a workflow editor, embeddable in a website.
+deploy: [container]

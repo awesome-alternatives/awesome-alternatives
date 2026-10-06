@@ -1,0 +1,8 @@
+name: PrivateGPT
+repository: https://github.com/zylon-ai/private-gpt
+category: document-qa
+replaces:
+  - tool: notebooklm
+    fit: partial
+    note: Q&A over your documents through an API and a simple UI, with everything running locally.
+deploy: [container]

@@ -1,0 +1,7 @@
+name: OpenManus
+repository: https://github.com/FoundationAgents/OpenManus
+category: autonomous-agent
+replaces:
+  - tool: manus
+    fit: partial
+    note: An agent that plans and carries out tasks with browser, code and file tools, from the command line.
