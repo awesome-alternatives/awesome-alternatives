@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.103.0] - 2026-10-06
+
+### Features
+
+- feat: rank maintainer-verified tools first within the same fit (#339)
+
 ## [0.102.0] - 2026-10-06
 
 ### Features
