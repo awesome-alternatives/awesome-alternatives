@@ -1,0 +1,10 @@
+name: Docling
+repository: https://github.com/docling-project/docling
+category: document-parsing
+replaces:
+  - tool: llamaparse
+    fit: full
+    note: Parses PDF, DOCX, PPTX, HTML and images into Markdown or JSON with layout and table models.
+  - tool: amazon-textract
+    fit: partial
+    note: Extracts text and tables from scans with OCR, without form key-value extraction.

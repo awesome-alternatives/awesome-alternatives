@@ -1,0 +1,10 @@
+name: Kubeflow Pipelines
+repository: https://github.com/kubeflow/pipelines
+category: ml-pipelines
+replaces:
+  - tool: google-vertex-ai
+    fit: partial
+    note: Runs the same pipeline definitions as Vertex AI Pipelines, on your own Kubernetes cluster.
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Pipelines of containerised ML steps on Kubernetes.

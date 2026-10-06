@@ -1,0 +1,8 @@
+name: IndexTTS
+repository: https://github.com/index-tts/index-tts
+category: text-to-speech
+terms: source-available
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Zero-shot TTS with voice cloning and control over duration and emotion.

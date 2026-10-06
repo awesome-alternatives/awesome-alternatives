@@ -1,0 +1,8 @@
+name: ebook2audiobook
+repository: https://github.com/DrewThomasson/ebook2audiobook
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Converts ebooks into audiobooks with local TTS models, including cloned voices.
+deploy: [container, compose]

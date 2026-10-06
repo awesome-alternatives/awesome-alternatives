@@ -1,0 +1,5 @@
+name: Amazon Textract
+homepage: https://aws.amazon.com/textract/
+vendor: Amazon Web Services
+category: document-parsing
+description: AWS service that extracts text, forms and tables from scanned documents.

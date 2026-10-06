@@ -1,0 +1,7 @@
+name: TensorBoard
+repository: https://github.com/tensorflow/tensorboard
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: partial
+    note: Visualises training metrics, graphs and embeddings from local log files.

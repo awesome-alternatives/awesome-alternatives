@@ -1,0 +1,5 @@
+name: Amazon SageMaker
+homepage: https://aws.amazon.com/sagemaker/
+vendor: Amazon Web Services
+category: ml-pipelines
+description: Managed AWS service for building, training and deploying machine learning models.

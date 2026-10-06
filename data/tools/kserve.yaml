@@ -1,0 +1,8 @@
+name: KServe
+repository: https://github.com/kserve/kserve
+category: model-serving
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Kubernetes resources for serving predictive and generative models with autoscaling.
+deploy: [helm]

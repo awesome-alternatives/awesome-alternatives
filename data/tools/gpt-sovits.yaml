@@ -1,0 +1,8 @@
+name: GPT-SoVITS
+repository: https://github.com/RVC-Boss/GPT-SoVITS
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Voice cloning and fine-tuning from a minute of audio, with a web UI.
+deploy: [container, compose]

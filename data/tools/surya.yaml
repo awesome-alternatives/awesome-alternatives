@@ -1,0 +1,7 @@
+name: Surya
+repository: https://github.com/datalab-to/surya
+category: ocr
+replaces:
+  - tool: abbyy-finereader
+    fit: partial
+    note: OCR, layout and reading-order detection in 90+ languages, from Python or a CLI.

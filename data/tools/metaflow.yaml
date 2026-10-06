@@ -1,0 +1,7 @@
+name: Metaflow
+repository: https://github.com/Netflix/metaflow
+category: ml-pipelines
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Python flows that scale from a laptop to Kubernetes or AWS Batch, with versioned artefacts.

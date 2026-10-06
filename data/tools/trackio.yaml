@@ -1,0 +1,7 @@
+name: Trackio
+repository: https://github.com/gradio-app/trackio
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: drop-in
+    note: Accepts the wandb init and log calls; dashboards are stored locally or on a Hugging Face Space.

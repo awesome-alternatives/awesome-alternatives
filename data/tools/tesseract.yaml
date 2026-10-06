@@ -1,0 +1,7 @@
+name: Tesseract
+repository: https://github.com/tesseract-ocr/tesseract
+category: ocr
+replaces:
+  - tool: abbyy-finereader
+    fit: partial
+    note: The OCR engine and a command line, without a document editor.

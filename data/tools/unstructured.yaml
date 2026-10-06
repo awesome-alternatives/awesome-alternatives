@@ -1,0 +1,7 @@
+name: Unstructured
+repository: https://github.com/Unstructured-IO/unstructured
+category: document-parsing
+replaces:
+  - tool: llamaparse
+    fit: partial
+    note: Partitions documents into typed elements for RAG pipelines, from Python.

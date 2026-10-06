@@ -1,0 +1,7 @@
+name: MLRun
+repository: https://github.com/mlrun/mlrun
+category: ml-pipelines
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Pipelines, model serving and monitoring on Kubernetes.

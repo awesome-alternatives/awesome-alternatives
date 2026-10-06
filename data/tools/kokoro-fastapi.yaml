@@ -1,0 +1,8 @@
+name: Kokoro-FastAPI
+repository: https://github.com/remsky/Kokoro-FastAPI
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: An OpenAI-compatible speech API around the Kokoro model, on CPU or GPU, without voice cloning.
+deploy: [container, compose]

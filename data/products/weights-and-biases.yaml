@@ -1,0 +1,5 @@
+name: Weights & Biases
+homepage: https://wandb.ai/site/models
+vendor: Weights & Biases
+category: experiment-tracking
+description: Hosted platform for tracking ML experiments and managing models and datasets.

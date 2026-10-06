@@ -1,0 +1,5 @@
+name: LlamaParse
+homepage: https://www.llamaindex.ai/llamaparse
+vendor: LlamaIndex
+category: document-parsing
+description: Hosted service that parses PDFs and other documents into Markdown and JSON for LLM applications.

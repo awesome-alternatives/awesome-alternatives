@@ -1,0 +1,9 @@
+name: Fish Speech
+repository: https://github.com/fishaudio/fish-speech
+category: text-to-speech
+terms: source-available
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Multilingual TTS with voice cloning, under a non-commercial licence.
+deploy: [container, compose]

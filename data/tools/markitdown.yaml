@@ -1,0 +1,7 @@
+name: MarkItDown
+repository: https://github.com/microsoft/markitdown
+category: document-parsing
+replaces:
+  - tool: llamaparse
+    fit: partial
+    note: Converts office files, PDFs and more to Markdown, without layout models.

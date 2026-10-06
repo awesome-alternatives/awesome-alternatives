@@ -1,0 +1,7 @@
+name: CosyVoice
+repository: https://github.com/QwenAudio/CosyVoice
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Multilingual TTS with zero-shot voice cloning and streaming output.

@@ -1,0 +1,8 @@
+name: Label Studio
+repository: https://github.com/HumanSignal/label-studio
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: full
+    note: Labeling for images, text, audio, video and time series, with model-assisted pre-labeling.
+deploy: [container, compose]

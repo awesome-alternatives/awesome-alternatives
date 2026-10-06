@@ -1,0 +1,7 @@
+name: Aim
+repository: https://github.com/aimhubio/aim
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: partial
+    note: Logs and compares training runs in a local UI, without hosted collaboration.

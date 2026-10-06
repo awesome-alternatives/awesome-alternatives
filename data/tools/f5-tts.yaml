@@ -1,0 +1,8 @@
+name: F5-TTS
+repository: https://github.com/SWivid/F5-TTS
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Voice cloning from a short reference clip, with a Gradio app.
+deploy: [container]

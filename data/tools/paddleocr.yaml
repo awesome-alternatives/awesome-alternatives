@@ -1,0 +1,7 @@
+name: PaddleOCR
+repository: https://github.com/PaddlePaddle/PaddleOCR
+category: ocr
+replaces:
+  - tool: abbyy-finereader
+    fit: partial
+    note: OCR for 100+ languages with layout and table recognition, as a Python library and CLI.

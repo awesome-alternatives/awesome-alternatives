@@ -1,0 +1,11 @@
+name: MLflow
+repository: https://github.com/mlflow/mlflow
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: full
+    note: A tracking server for runs, metrics and artefacts, with a model registry.
+  - tool: comet
+    fit: full
+    note: A tracking server for runs, metrics and artefacts, with a model registry.
+deploy: [container]

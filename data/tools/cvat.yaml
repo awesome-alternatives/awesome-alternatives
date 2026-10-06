@@ -1,0 +1,8 @@
+name: CVAT
+repository: https://github.com/cvat-ai/cvat
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: partial
+    note: Image and video annotation for computer vision, with automatic annotation models.
+deploy: [compose, helm]

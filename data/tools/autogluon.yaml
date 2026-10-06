@@ -1,0 +1,7 @@
+name: AutoGluon
+repository: https://github.com/autogluon/autogluon
+category: automl
+replaces:
+  - tool: datarobot
+    fit: partial
+    note: Trains and ensembles models on tabular, text, image and time series data in a few lines of Python.

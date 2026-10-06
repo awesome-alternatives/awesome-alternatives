@@ -1,0 +1,7 @@
+name: Ludwig
+repository: https://github.com/ludwig-ai/ludwig
+category: automl
+replaces:
+  - tool: datarobot
+    fit: partial
+    note: Trains deep learning models and fine-tunes LLMs from declarative YAML configs.

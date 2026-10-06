@@ -1,0 +1,8 @@
+name: Argilla
+repository: https://github.com/argilla-io/argilla
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: partial
+    note: Collects human feedback and annotations on text and LLM outputs.
+deploy: [container]

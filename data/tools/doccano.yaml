@@ -1,0 +1,8 @@
+name: doccano
+repository: https://github.com/doccano/doccano
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: partial
+    note: Text annotation for classification, sequence labeling and sequence-to-sequence tasks.
+deploy: [container, compose]

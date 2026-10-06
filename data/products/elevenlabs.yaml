@@ -1,0 +1,5 @@
+name: ElevenLabs
+homepage: https://elevenlabs.io
+vendor: ElevenLabs
+category: text-to-speech
+description: Hosted text-to-speech and voice cloning service, with an API.

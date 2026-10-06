@@ -1,0 +1,8 @@
+name: Triton Inference Server
+repository: https://github.com/triton-inference-server/server
+category: model-serving
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Serves TensorRT, PyTorch, ONNX and other models over HTTP and gRPC, with dynamic batching.
+deploy: [container]

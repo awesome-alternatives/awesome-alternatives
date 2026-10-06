@@ -1,0 +1,7 @@
+name: X-AnyLabeling
+repository: https://github.com/CVHub520/X-AnyLabeling
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: partial
+    note: Desktop image and video annotation with model-assisted labeling.
