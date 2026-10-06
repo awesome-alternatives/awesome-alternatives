@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.104.0] - 2026-10-06
+
+### Features
+
+- feat(site): show FerrLabs as the publisher in the legal notice (#342)
+
 ## [0.103.0] - 2026-10-06
 
 ### Features
