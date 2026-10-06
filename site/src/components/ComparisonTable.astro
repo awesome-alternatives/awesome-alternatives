@@ -2,7 +2,8 @@
 import type { Locale } from "../i18n/index.ts";
 import { messages, pathFor } from "../i18n/index.ts";
 import { fitFor } from "../lib/filter.ts";
-import { day, stars } from "../lib/format.ts";
+import { day } from "../lib/format.ts";
+import { StarCount } from "./StarCount.tsx";
 import type { ToolView } from "../lib/types.ts";
 import { Sparkline } from "./Sparkline.tsx";
 
@@ -47,7 +48,7 @@ const hosted = new Set(selfHostCategories);
               </th>
               {target && <td>{fit ? <a href={pathFor(locale, `/about/#${fit}`)}>{m.islands.fit[fit]}</a> : ""}</td>}
               <td class="comparison-stars">
-                {stars(tool.repo.stars)}
+                <StarCount count={tool.repo.stars} />
                 {tool.starHistory && <Sparkline series={tool.starHistory} />}
               </td>
               <td>{tool.repo.license ?? card.noLicense}</td>

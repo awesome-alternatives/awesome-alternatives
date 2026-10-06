@@ -2579,3 +2579,15 @@ a.tag:hover {
 [data-searching] .search {
   min-height: 100vh;
 }
+
+.star-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.star-count svg {
+  flex: none;
+  color: var(--dim);
+}
