@@ -1,0 +1,7 @@
+name: minuet-ai.nvim
+repository: https://github.com/milanglacier/minuet-ai.nvim
+category: code-assistant
+replaces:
+  - tool: github-copilot
+    fit: partial
+    note: Inline completions in Neovim from hosted or local models.

@@ -1,0 +1,8 @@
+name: New API
+repository: https://github.com/QuantumNous/new-api
+category: llm-gateway
+replaces:
+  - tool: openrouter
+    fit: partial
+    note: One OpenAI-compatible API over many providers, with users, quotas and usage billing. You bring the provider keys.
+deploy: [container, compose]

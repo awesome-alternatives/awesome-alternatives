@@ -1,0 +1,7 @@
+name: promptfoo
+repository: https://github.com/promptfoo/promptfoo
+category: llm-evaluation
+replaces:
+  - tool: braintrust
+    fit: partial
+    note: Evals and red-teaming from a YAML config, run from the CLI or in CI, with a local web viewer.

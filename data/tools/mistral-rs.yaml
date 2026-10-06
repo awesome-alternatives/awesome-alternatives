@@ -1,0 +1,8 @@
+name: mistral.rs
+repository: https://github.com/EricLBuehler/mistral.rs
+category: llm-runtime
+replaces:
+  - tool: lm-studio
+    fit: partial
+    note: Runs text, vision and speech models locally behind an OpenAI-compatible API, without a desktop app.
+deploy: [container]

@@ -1,0 +1,7 @@
+name: llama.vscode
+repository: https://github.com/ggml-org/llama.vscode
+category: code-assistant
+replaces:
+  - tool: github-copilot
+    fit: partial
+    note: Completions and chat in VS Code from a local llama.cpp server.

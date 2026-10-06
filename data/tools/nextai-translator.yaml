@@ -1,0 +1,7 @@
+name: NextAI Translator
+repository: https://github.com/nextai-translator/nextai-translator
+category: machine-translation
+replaces:
+  - tool: deepl
+    fit: partial
+    note: A desktop app and browser extension that translates and polishes text through an LLM API.

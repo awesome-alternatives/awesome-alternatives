@@ -1,0 +1,7 @@
+name: SwarmUI
+repository: https://github.com/mcmonkeyprojects/SwarmUI
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: A web UI for local diffusion models, with ComfyUI as its backend; Midjourney models are not available.

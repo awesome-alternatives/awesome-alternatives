@@ -1,0 +1,7 @@
+name: KISS Translator
+repository: https://github.com/fishjar/kiss-translator
+category: machine-translation
+replaces:
+  - tool: google-translate
+    fit: partial
+    note: A browser extension that shows web pages in two languages, through many translation APIs.

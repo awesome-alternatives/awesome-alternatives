@@ -1,0 +1,7 @@
+name: DeepEval
+repository: https://github.com/confident-ai/deepeval
+category: llm-evaluation
+replaces:
+  - tool: braintrust
+    fit: partial
+    note: Pytest-style evaluations with LLM-as-judge metrics, in Python.

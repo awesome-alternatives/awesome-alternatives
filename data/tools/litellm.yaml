@@ -1,0 +1,9 @@
+name: LiteLLM
+repository: https://github.com/BerriAI/litellm
+category: llm-gateway
+terms: open-core
+replaces:
+  - tool: openrouter
+    fit: partial
+    note: A proxy with one OpenAI-compatible API over 100+ providers, with virtual keys, budgets and fallbacks. You bring the provider keys.
+deploy: [container, compose, helm]

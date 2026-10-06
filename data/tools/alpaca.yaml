@@ -1,0 +1,7 @@
+name: Alpaca
+repository: https://github.com/Jeffser/Alpaca
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A GNOME desktop app for chatting with local models through Ollama.

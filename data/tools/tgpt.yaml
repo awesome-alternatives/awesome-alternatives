@@ -1,0 +1,7 @@
+name: tgpt
+repository: https://github.com/aandrew-me/tgpt
+category: llm-cli
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Terminal chat with several providers, some usable without an API key.

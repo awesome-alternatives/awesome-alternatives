@@ -1,0 +1,8 @@
+name: PDFMathTranslate
+repository: https://github.com/PDFMathTranslate/PDFMathTranslate
+category: machine-translation
+replaces:
+  - tool: deepl
+    fit: partial
+    note: Translates scientific PDFs while keeping formulas, charts and layout.
+deploy: [container]

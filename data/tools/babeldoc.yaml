@@ -1,0 +1,7 @@
+name: BabelDOC
+repository: https://github.com/funstory-ai/BabelDOC
+category: machine-translation
+replaces:
+  - tool: deepl
+    fit: partial
+    note: Translates PDF documents into bilingual or translated-only PDFs from the command line.

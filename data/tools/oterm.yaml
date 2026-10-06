@@ -1,0 +1,7 @@
+name: oterm
+repository: https://github.com/ggozad/oterm
+category: llm-cli
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A terminal chat client for Ollama models.

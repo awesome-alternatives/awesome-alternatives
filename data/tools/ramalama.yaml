@@ -1,0 +1,8 @@
+name: RamaLama
+repository: https://github.com/containers/ramalama
+category: llm-runtime
+replaces:
+  - tool: lm-studio
+    fit: partial
+    note: Pulls and runs models in containers from the command line, behind an OpenAI-compatible API.
+deploy: [package]

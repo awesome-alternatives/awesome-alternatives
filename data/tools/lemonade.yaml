@@ -1,0 +1,8 @@
+name: Lemonade
+repository: https://github.com/lemonade-sdk/lemonade
+category: llm-runtime
+replaces:
+  - tool: lm-studio
+    fit: partial
+    note: A local server and app for running models, tuned for AMD GPUs and NPUs.
+deploy: [binary]

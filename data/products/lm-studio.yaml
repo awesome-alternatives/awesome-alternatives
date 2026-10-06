@@ -1,0 +1,5 @@
+name: LM Studio
+homepage: https://lmstudio.ai
+vendor: Element Labs
+category: llm-runtime
+description: Desktop app to download and run open-weight language models locally, with a chat window and a local API server.

@@ -1,0 +1,8 @@
+name: Portkey Gateway
+repository: https://github.com/Portkey-AI/gateway
+category: llm-gateway
+replaces:
+  - tool: openrouter
+    fit: partial
+    note: Routing, retries and fallbacks across many providers through one API. You bring the provider keys.
+deploy: [container]

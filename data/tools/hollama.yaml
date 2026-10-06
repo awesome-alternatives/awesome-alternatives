@@ -1,0 +1,8 @@
+name: Hollama
+repository: https://github.com/fmaclen/hollama
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A minimal web chat in front of Ollama or an OpenAI-compatible server.
+deploy: [container, binary]

@@ -1,0 +1,4 @@
+name: TabbyAPI
+repository: https://github.com/theroyallab/tabbyAPI
+category: llm-runtime
+deploy: [container]

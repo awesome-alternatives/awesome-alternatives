@@ -1,0 +1,5 @@
+name: Braintrust
+homepage: https://www.braintrust.dev
+vendor: Braintrust
+category: llm-evaluation
+description: Hosted platform for evaluating, logging and monitoring LLM applications.

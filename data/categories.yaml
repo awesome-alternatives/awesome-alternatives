@@ -902,3 +902,16 @@ database-backup:
 database-high-availability:
   name: Database high availability
   description: Manage replication and automatic failover for a cluster of database servers.
+
+llm-gateway:
+  name: LLM gateways
+  description: One OpenAI-compatible API in front of many model providers, with keys, budgets, fallbacks and usage logs.
+  selfHost: true
+
+llm-evaluation:
+  name: LLM evaluation
+  description: Test prompts, models and agents against datasets, assertions and red-team probes, locally or in CI.
+
+llm-cli:
+  name: LLM command-line tools
+  description: Prompt language models from a terminal and pipe their answers into other commands.

@@ -1,0 +1,7 @@
+name: Page Assist
+repository: https://github.com/n4ze3m/page-assist
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A browser sidebar and web UI for chatting with local models through Ollama or an OpenAI-compatible API.

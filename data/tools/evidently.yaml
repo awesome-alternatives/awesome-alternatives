@@ -1,0 +1,8 @@
+name: Evidently
+repository: https://github.com/evidentlyai/evidently
+category: llm-observability
+replaces:
+  - tool: langsmith
+    fit: partial
+    note: Evaluations and monitoring for ML and LLM systems, from a Python library with a self-hosted UI.
+deploy: [container]

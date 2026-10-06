@@ -1,0 +1,8 @@
+name: Xinference
+repository: https://github.com/xorbitsai/inference
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Serves open-weight language, embedding and speech models behind an OpenAI-compatible API.
+deploy: [container]
