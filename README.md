@@ -16,8 +16,8 @@
   <a href="https://awesome-alternatives.com/alternatives/"><img alt="Tools with alternatives listed" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.targets&label=tools%20with%20alternatives&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
   <a href="CONTRIBUTING.md#verifying-a-tool-you-maintain"><img alt="Tools verified by their maintainers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.verified&label=verified%20by%20maintainers&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
   <a href="https://github.com/awesome-alternatives/awesome-alternatives/actions/workflows/freshness.yml"><img alt="Catalog freshness" src="https://github.com/awesome-alternatives/awesome-alternatives/actions/workflows/freshness.yml/badge.svg"></a>
-  <a href="LICENSE-DATA"><img alt="Data: CC0 1.0" src="https://img.shields.io/badge/data-CC0%201.0-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
-  <a href="LICENSE"><img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
+  <a href="LICENSE-DATA"><img alt="Data: CC BY-SA 4.0" src="https://img.shields.io/badge/data-CC%20BY--SA%204.0-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
+  <a href="LICENSE"><img alt="Code: AGPL-3.0" src="https://img.shields.io/badge/code-AGPL--3.0-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -2880,6 +2880,8 @@ sponsor the maintainer directly.
 
 ## Licence
 
-The catalog data is dedicated to the public domain under [CC0 1.0](LICENSE-DATA): copy it, mirror it,
-build on it, no attribution needed. The scripts, the site and the API are [MIT](LICENSE).
+The catalog data is under [CC BY-SA 4.0](LICENSE-DATA): copy it, mirror it, build on it, as long as
+you credit awesome-alternatives.com with a link and share what you build from it under the same licence.
+The scripts, the site and the API are under [AGPL-3.0](LICENSE). Copies taken before 6 October 2026
+keep the terms they were published under, CC0 1.0 for the data and MIT for the code.
 Security issues: see [SECURITY.md](SECURITY.md).

@@ -124,10 +124,10 @@ export const pages: Pages = {
     },
     licences: {
       heading: "Licencias",
-      dataBefore: "Los datos del catálogo se ceden al dominio público bajo",
-      dataLink: "CC0 1.0",
-      codeBefore: ". El código del sitio, de la API y de los scripts está bajo la",
-      codeLink: "licencia MIT",
+      dataBefore: "Los datos del catálogo están bajo",
+      dataLink: "CC BY-SA 4.0",
+      codeBefore: ": puede reutilizarlos libremente, con un enlace a awesome-alternatives.com y bajo la misma licencia. El código del sitio, de la API y de los scripts está bajo la",
+      codeLink: "licencia GNU AGPL v3",
     },
   },
 
@@ -245,9 +245,9 @@ export const pages: Pages = {
     content: {
       heading: "Contenido",
       licenceBefore: "El catálogo se publica bajo",
-      dataLink: "CC0",
+      dataLink: "CC BY-SA 4.0",
       licenceMiddle: "y el código bajo",
-      codeLink: "MIT",
+      codeLink: "AGPL-3.0",
       licenceAfter:
         ". Las cifras de los repositorios (estrellas, versiones, licencias, descripciones) provienen de la API pública de GitHub, junto con el nombre público y la descripción de la cuenta a la que pertenece cada repositorio. Los nombres de los proyectos y las marcas pertenecen a sus titulares.",
       reportBefore: "Para señalar un error o pedir que se retire una entrada, abre una issue en",

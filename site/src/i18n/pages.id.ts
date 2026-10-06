@@ -124,10 +124,10 @@ export const pages: Pages = {
     },
     licences: {
       heading: "Lisensi",
-      dataBefore: "Data katalog didedikasikan ke domain publik di bawah",
-      dataLink: "CC0 1.0",
-      codeBefore: ". Kode situs, API, dan skripnya berada di bawah",
-      codeLink: "lisensi MIT",
+      dataBefore: "Data katalog berada di bawah",
+      dataLink: "CC BY-SA 4.0",
+      codeBefore: ": Anda bebas memakainya kembali, dengan tautan ke awesome-alternatives.com dan di bawah lisensi yang sama. Kode situs, API, dan skripnya berada di bawah",
+      codeLink: "lisensi GNU AGPL v3",
     },
   },
 
@@ -245,9 +245,9 @@ export const pages: Pages = {
     content: {
       heading: "Konten",
       licenceBefore: "Katalog dirilis di bawah",
-      dataLink: "CC0",
+      dataLink: "CC BY-SA 4.0",
       licenceMiddle: "dan kodenya di bawah",
-      codeLink: "MIT",
+      codeLink: "AGPL-3.0",
       licenceAfter:
         ". Angka repositori (bintang, rilis, lisensi, deskripsi) berasal dari GitHub API publik, beserta nama dan deskripsi publik dari akun pemilik setiap repositori. Nama proyek dan merek dagang adalah milik pemiliknya masing-masing.",
       reportBefore: "Untuk melaporkan kesalahan atau meminta entri dihapus, buka issue di",

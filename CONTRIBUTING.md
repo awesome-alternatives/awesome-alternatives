@@ -77,8 +77,9 @@ replaces:
 Do not add stars, versions, licences or descriptions. The schema rejects them: those come from
 GitHub, so they cannot drift or be inflated.
 
-By opening a pull request that adds or edits a file under `data/`, you dedicate that contribution to the
-public domain under [CC0 1.0](LICENSE-DATA), like the rest of the catalog.
+By opening a pull request that adds or edits a file under `data/`, you license that contribution under
+[CC BY-SA 4.0](LICENSE-DATA), like the rest of the catalog. Code contributions are licensed under
+[AGPL-3.0](LICENSE).
 
 ## Replacing a closed product
 
