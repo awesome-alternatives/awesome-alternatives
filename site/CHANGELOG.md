@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.126.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 117 media and creative tools (#376)
+- feat(catalog): add 43 devops and infrastructure tools (#373)
+
 ## [0.125.0] - 2026-10-06
 
 ### Features
