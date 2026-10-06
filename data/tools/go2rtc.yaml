@@ -1,0 +1,4 @@
+name: go2rtc
+repository: https://github.com/AlexxIT/go2rtc
+category: nvr
+deploy: [container, binary]

@@ -1,0 +1,7 @@
+name: ZoneMinder
+repository: https://github.com/ZoneMinder/zoneminder
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: full
+    note: Records and monitors IP and analog cameras with motion detection, zones and a web console.

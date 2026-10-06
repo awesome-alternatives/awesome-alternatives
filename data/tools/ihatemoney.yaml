@@ -1,0 +1,8 @@
+name: I Hate Money
+repository: https://github.com/spiral-project/ihatemoney
+category: expense-splitting
+replaces:
+  - tool: splitwise
+    fit: full
+    note: Shared projects that track who paid what and compute settlements, in a web app.
+terms: open

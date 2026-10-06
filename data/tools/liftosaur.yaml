@@ -1,0 +1,7 @@
+name: Liftosaur
+repository: https://github.com/astashov/liftosaur
+category: fitness-tracking
+replaces:
+  - tool: hevy
+    fit: partial
+    note: Weightlifting tracker whose programs are written in a small scripting language that automates progression.

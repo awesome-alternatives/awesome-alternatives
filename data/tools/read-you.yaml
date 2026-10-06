@@ -1,0 +1,7 @@
+name: Read You
+repository: https://github.com/ReadYouApp/ReadYou
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: Android reader with local feeds or sync through Fever, the Google Reader API and FreshRSS.

@@ -1,0 +1,10 @@
+name: Tiny Tiny RSS
+repository: https://github.com/tt-rss/tt-rss
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: Self-hosted web feed reader with filters, labels, plugins and an API for mobile apps.
+  - tool: inoreader
+    fit: partial
+    note: "Filters and labels on your own server, without Inoreader's newsletters or social feeds."

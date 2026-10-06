@@ -1,0 +1,4 @@
+name: Homarr
+repository: https://github.com/homarr-labs/homarr
+category: homelab-dashboard
+deploy: [container]

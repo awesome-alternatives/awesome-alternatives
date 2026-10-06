@@ -1,0 +1,8 @@
+name: Ledger
+repository: https://github.com/ledger/ledger
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Command-line double-entry accounting over plain text journals; no bank sync or graphical interface.
+terms: open

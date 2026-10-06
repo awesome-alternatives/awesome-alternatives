@@ -1,0 +1,10 @@
+name: Folo
+repository: https://github.com/RSSNext/Folo
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: Hosted reader for feeds, newsletters and social accounts through RSSHub, with desktop and mobile apps.
+  - tool: inoreader
+    fit: full
+    note: Feeds, newsletters and social accounts in one hosted reader with search and filters.

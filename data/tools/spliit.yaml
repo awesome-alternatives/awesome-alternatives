@@ -1,0 +1,7 @@
+name: Spliit
+repository: https://github.com/spliit-app/spliit
+category: expense-splitting
+replaces:
+  - tool: splitwise
+    fit: full
+    note: Groups, shared expenses, balances and suggested reimbursements in a web app, without accounts.

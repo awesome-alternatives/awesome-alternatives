@@ -1,0 +1,7 @@
+name: buku
+repository: https://github.com/jarun/buku
+category: read-later
+replaces:
+  - tool: pinboard
+    fit: partial
+    note: Command-line bookmark manager with tags and search over a local SQLite database, with browser import; no hosted sync.

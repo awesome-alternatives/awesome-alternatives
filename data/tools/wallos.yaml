@@ -1,0 +1,8 @@
+name: Wallos
+repository: https://github.com/ellite/Wallos
+category: personal-finance
+replaces:
+  - tool: rocket-money
+    fit: partial
+    note: Tracks subscriptions, their costs and renewal dates with notifications; no bank connection or cancellation service.
+deploy: [container]

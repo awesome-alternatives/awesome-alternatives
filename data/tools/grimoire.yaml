@@ -1,0 +1,8 @@
+name: Grimoire
+repository: https://github.com/goniszewski/grimoire
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: partial
+    note: Self-hosted bookmarks with tags, categories, fetched metadata and a browser extension.
+deploy: [container]

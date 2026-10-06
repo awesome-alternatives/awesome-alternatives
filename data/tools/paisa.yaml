@@ -1,0 +1,7 @@
+name: Paisa
+repository: https://github.com/ananthakumaran/paisa
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Ledger-based finance manager with a web UI for budgets, investments, goals and taxes; no bank sync.

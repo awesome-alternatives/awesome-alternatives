@@ -1,0 +1,11 @@
+name: Domoticz
+repository: https://github.com/domoticz/domoticz
+category: home-automation
+replaces:
+  - tool: smartthings
+    fit: partial
+    note: Local hub for Z-Wave, Zigbee, 433 MHz and MQTT devices, with scripting and a web dashboard.
+  - tool: homey
+    fit: partial
+    note: Local hub with rules and scripts, but Zigbee and Z-Wave need a USB stick or gateway.
+deploy: [container]

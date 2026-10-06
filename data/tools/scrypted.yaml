@@ -1,0 +1,8 @@
+name: Scrypted
+repository: https://github.com/koush/scrypted
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: partial
+    note: Camera hub that bridges cameras to HomeKit, Google Home and Alexa; recording comes from its NVR plugin, which is paid.
+deploy: [container]

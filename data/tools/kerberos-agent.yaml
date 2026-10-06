@@ -1,0 +1,8 @@
+name: Kerberos Agent
+repository: https://github.com/kerberos-io/agent
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: partial
+    note: One agent per camera with motion-based recording, scaled out by running more containers.
+deploy: [container]

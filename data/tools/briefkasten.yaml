@@ -1,0 +1,7 @@
+name: Briefkasten
+repository: https://github.com/ndom91/briefkasten
+category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: partial
+    note: Self-hosted bookmarks with categories, tags, image previews and a browser extension.

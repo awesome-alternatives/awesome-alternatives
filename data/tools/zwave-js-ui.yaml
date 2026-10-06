@@ -1,0 +1,4 @@
+name: Z-Wave JS UI
+repository: https://github.com/zwave-js/zwave-js-ui
+category: home-automation
+deploy: [container]

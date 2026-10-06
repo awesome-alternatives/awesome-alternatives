@@ -1,0 +1,7 @@
+name: ioBroker
+repository: https://github.com/ioBroker/ioBroker.js-controller
+category: home-automation
+replaces:
+  - tool: smartthings
+    fit: partial
+    note: Local integration platform with adapters for devices and services, visual scripts and dashboards.

@@ -1,0 +1,7 @@
+name: Fava
+repository: https://github.com/beancount/fava
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Web interface for Beancount files with charts, reports, budgets and an editor; no bank sync.

@@ -1,0 +1,7 @@
+name: BackupPC
+repository: https://github.com/backuppc/backuppc
+category: backup
+replaces:
+  - tool: crashplan
+    fit: partial
+    note: Server that pulls backups from many machines over rsync, SMB or tar, with pooled deduplication and no client agent.

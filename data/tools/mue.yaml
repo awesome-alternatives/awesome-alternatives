@@ -1,0 +1,7 @@
+name: Mue
+repository: https://github.com/mue/mue
+category: start-page
+replaces:
+  - tool: momentum
+    fit: partial
+    note: New tab page with photos, quotes, weather and quick links, without a to-do list.

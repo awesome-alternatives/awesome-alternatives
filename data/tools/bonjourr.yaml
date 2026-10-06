@@ -1,0 +1,7 @@
+name: Bonjourr
+repository: https://github.com/victrme/Bonjourr
+category: start-page
+replaces:
+  - tool: momentum
+    fit: full
+    note: New tab page with backgrounds, a clock, weather, quick links and notes, for Chrome, Firefox, Edge and Safari.

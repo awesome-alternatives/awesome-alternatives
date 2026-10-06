@@ -1,0 +1,7 @@
+name: Feedbin
+repository: https://github.com/feedbin/feedbin
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: full
+    note: The source of the hosted Feedbin reader, which also takes newsletters and has an API for third-party apps.

@@ -1,0 +1,7 @@
+name: Vorta
+repository: https://github.com/borgbase/vorta
+category: backup
+replaces:
+  - tool: backblaze-personal-backup
+    fit: partial
+    note: Scheduled BorgBackup snapshots from a desktop app, to storage you provide.

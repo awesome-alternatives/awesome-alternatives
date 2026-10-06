@@ -1,0 +1,11 @@
+name: wger
+repository: https://github.com/wger-project/wger
+category: fitness-tracking
+replaces:
+  - tool: hevy
+    fit: partial
+    note: Workout routines and logs with an exercise database, on your own server or the public instance.
+  - tool: myfitnesspal
+    fit: partial
+    note: Nutrition plans and logs with calorie and macro counts, without a barcode-scanning food diary of the same size.
+deploy: [container]

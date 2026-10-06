@@ -1,0 +1,11 @@
+name: Gladys Assistant
+repository: https://github.com/GladysAssistant/Gladys
+category: home-automation
+replaces:
+  - tool: smartthings
+    fit: full
+    note: Local smart home hub with Zigbee, Z-Wave, MQTT and Matter integrations, scenes and a mobile-friendly dashboard.
+  - tool: homey
+    fit: partial
+    note: Local hub with scenes and integrations, running on your own machine instead of dedicated hardware.
+deploy: [container]

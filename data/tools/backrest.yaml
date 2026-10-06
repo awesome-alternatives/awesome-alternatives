@@ -1,0 +1,7 @@
+name: Backrest
+repository: https://github.com/garethgeorge/backrest
+category: backup
+replaces:
+  - tool: backblaze-personal-backup
+    fit: partial
+    note: Web UI over restic for scheduled backups to local disks, SFTP or cloud storage you provide.

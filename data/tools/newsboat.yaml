@@ -1,0 +1,7 @@
+name: Newsboat
+repository: https://github.com/newsboat/newsboat
+category: feed-reader
+replaces:
+  - tool: feedly
+    fit: partial
+    note: Terminal feed reader with podcasts, filters and macros, syncing with several reader services.

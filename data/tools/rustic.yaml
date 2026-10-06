@@ -1,0 +1,7 @@
+name: rustic
+repository: https://github.com/rustic-rs/rustic
+category: backup
+replaces:
+  - tool: restic
+    fit: partial
+    note: Reads and writes restic repositories, with lock-free operation and configuration profiles; still in beta.

@@ -1,0 +1,7 @@
+name: hledger
+repository: https://github.com/hledgerorg/hledger
+category: personal-finance
+replaces:
+  - tool: quicken
+    fit: partial
+    note: Plain text double-entry accounting with command-line, terminal and web interfaces, compatible with Ledger journals.

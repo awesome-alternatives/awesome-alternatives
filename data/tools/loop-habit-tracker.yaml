@@ -1,0 +1,7 @@
+name: Loop Habit Tracker
+repository: https://github.com/iSoron/uhabits
+category: habit-tracker
+replaces:
+  - tool: habitify
+    fit: partial
+    note: Android habit tracker with scores, streaks and widgets, stored on the device with no account or sync.

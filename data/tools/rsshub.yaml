@@ -1,0 +1,8 @@
+name: RSSHub
+repository: https://github.com/DIYgod/RSSHub
+category: feed-generator
+replaces:
+  - tool: rss-app
+    fit: full
+    note: Generates feeds for thousands of sites and social accounts from community routes, on your own instance.
+deploy: [container, compose]

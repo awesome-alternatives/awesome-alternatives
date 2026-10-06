@@ -1,0 +1,9 @@
+name: Moonfire NVR
+repository: https://github.com/scottlamb/moonfire-nvr
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: partial
+    note: Records H.264 streams without re-encoding, with no motion or object detection.
+terms: open
+deploy: [binary]

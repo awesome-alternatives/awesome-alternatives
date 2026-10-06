@@ -1,0 +1,8 @@
+name: Viseron
+repository: https://github.com/roflcoopter/viseron
+category: nvr
+replaces:
+  - tool: blue-iris
+    fit: partial
+    note: Recording with object, face and license plate recognition in a web UI, on Linux in a container.
+deploy: [container]
