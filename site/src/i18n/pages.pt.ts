@@ -159,11 +159,13 @@ export const pages: Pages = {
       dataBefore: "Endereço IP, data e hora, endereço solicitado (incluindo uma pesquisa digitada na barra de endereço como",
       dataAfter: "), status e tamanho da resposta, página de origem, user agent do navegador, cabeçalho forwarded-for",
       purpose: "Operar o site, diagnosticar erros, detectar e impedir abusos",
+      retention: "Guardado apenas na saída do contêiner no servidor: no máximo 5 arquivos de 10 MB, as linhas mais antigas sobrescritas primeiro, e apagado quando o contêiner é substituído. Não é copiado para nenhum outro lugar.",
     },
     reverseProxyLog: {
       heading: "Log de acesso do proxy reverso",
       body: "As requisições ao site e à sua API de pesquisa passam por um proxy reverso no provedor de hospedagem, que mantém o seu próprio log de acesso com o mesmo tipo de dados.",
       purpose: "Rotear requisições, diagnosticar erros, detectar e impedir abusos",
+      proxyAndRetention: "Traefik, no servidor do provedor de hospedagem na França. Seu log de acesso é guardado da mesma forma: na saída do contêiner, no máximo 5 arquivos de 10 MB, sem cópia em outro lugar.",
     },
     rateLimiting: {
       heading: "Limite de pesquisas",
@@ -183,6 +185,7 @@ export const pages: Pages = {
       purpose: "Responder à pesquisa que você fez",
       retention:
         "As pesquisas interpretadas pelo Jev ficam em cache na memória da API junto com o resultado, sem nenhum vínculo com quem as enviou, por no máximo 24 horas. O cache também é esvaziado toda vez que o catálogo é atualizado, de hora em hora, e a cada reinicialização. Nunca gravado em disco.",
+      where: "Estados Unidos, onde a TypeSafe hospeda o Jev. A política de privacidade dela não cita nenhum mecanismo de transferência a partir da UE, por isso a API envia apenas o texto da busca, nunca um endereço IP ou identificador.",
       addressBefore: "A pesquisa também coloca a sua consulta no endereço da página",
       addressAfter:
         ") para que os resultados possam ser compartilhados. Ela fica no histórico do seu navegador e chega aos logs de acesso acima quando esse endereço é carregado.",
@@ -225,10 +228,11 @@ export const pages: Pages = {
       address: "Endereço",
       email: "Email",
       phone: "Telefone",
+      registration: "Registro",
     },
     publisher: {
       heading: "Editor",
-      body: "awesome-alternatives.com é publicado por uma pessoa física, em caráter não profissional.",
+      body: "awesome-alternatives.com é publicado por Bryan Ferrando, empresário individual (entrepreneur individuel) com o nome comercial FerrLabs. IVA não aplicável, artigo 293 B do Código Geral de Impostos francês.",
     },
     publicationDirector: {
       heading: "Diretor de publicação",
@@ -317,7 +321,7 @@ export const pages: Pages = {
       incomplete: "Preencha seu email, um assunto e uma mensagem.",
       invalid: "Confira seu endereço de email, e se o assunto e a mensagem não estão longos demais.",
       tooMany: "Muitas mensagens daqui em pouco tempo. Tente de novo em alguns minutos.",
-      failed: "Não foi possível enviar a mensagem. Tente de novo, ou escreva para contact@ferrlabs.com.",
+      failed: "Não foi possível enviar a mensagem. Tente de novo, ou escreva para contact@awesome-alternatives.com.",
     },
   },
 };

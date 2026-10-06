@@ -157,11 +157,13 @@ export const pages = {
       dataBefore: "IP address, date and time, requested address (including a search typed in the address bar as",
       dataAfter: "), response status and size, referring page, browser user agent, forwarded-for header",
       purpose: "Running the site, diagnosing errors, detecting and stopping abuse",
+      retention: "Kept only in the container's output on the server: at most 5 files of 10 MB, the oldest lines overwritten first, and gone when the container is replaced. Not copied anywhere else.",
     },
     reverseProxyLog: {
       heading: "Reverse proxy access log",
       body: "Requests to the site and to its search API pass through a reverse proxy at the host, which keeps its own access log with the same kind of data.",
       purpose: "Routing requests, diagnosing errors, detecting and stopping abuse",
+      proxyAndRetention: "Traefik, on the host's server in France. Its access log is kept the same way: in the container's output, at most 5 files of 10 MB, not copied anywhere else.",
     },
     rateLimiting: {
       heading: "Search rate limiting",
@@ -181,6 +183,7 @@ export const pages = {
       purpose: "Answering the search you asked for",
       retention:
         "Queries interpreted by Jev are cached in the API's memory with their result, without any link to who sent them, for at most 24 hours. The cache is also emptied every time the catalog is refreshed, hourly, and at every restart. Never written to disk.",
+      where: "United States, where TypeSafe hosts Jev. Its privacy policy cites no mechanism for transfers from the EU, so the API sends it the query text alone, never an IP address or identifier.",
       addressBefore: "The search also puts your query in the page address",
       addressAfter:
         ") so the results can be shared. It stays in your browser history, and reaches the access logs above when that address is loaded.",
@@ -223,10 +226,11 @@ export const pages = {
       address: "Address",
       email: "Email",
       phone: "Phone",
+      registration: "Registration",
     },
     publisher: {
       heading: "Publisher",
-      body: "awesome-alternatives.com is published by a private individual, on a non-professional basis.",
+      body: "awesome-alternatives.com is published by Bryan Ferrando, a sole proprietor (entrepreneur individuel) trading as FerrLabs. VAT is not applicable under article 293 B of the French Tax Code.",
     },
     publicationDirector: {
       heading: "Publication director",
@@ -315,7 +319,7 @@ export const pages = {
       incomplete: "Fill in your email, a subject and a message.",
       invalid: "Check your email address, and that the subject and message are not too long.",
       tooMany: "Too many messages from here in a short time. Please try again in a few minutes.",
-      failed: "The message could not be sent. Please try again, or write to contact@ferrlabs.com.",
+      failed: "The message could not be sent. Please try again, or write to contact@awesome-alternatives.com.",
     },
   },
 };

@@ -161,11 +161,13 @@ export const pages: Pages = {
       dataAfter:
         "), Status und Größe der Antwort, verweisende Seite, User-Agent des Browsers, Forwarded-For-Header",
       purpose: "Betrieb der Seite, Fehlersuche, Erkennen und Unterbinden von Missbrauch",
+      retention: "Nur in der Ausgabe des Containers auf dem Server gespeichert: höchstens 5 Dateien zu 10 MB, die ältesten Zeilen werden zuerst überschrieben, und gelöscht, wenn der Container ersetzt wird. Nirgendwo anders hin kopiert.",
     },
     reverseProxyLog: {
       heading: "Zugriffslog des Reverse Proxy",
       body: "Anfragen an die Seite und an ihre Such-API laufen über einen Reverse Proxy beim Host, der ein eigenes Zugriffslog mit derselben Art von Daten führt.",
       purpose: "Weiterleiten von Anfragen, Fehlersuche, Erkennen und Unterbinden von Missbrauch",
+      proxyAndRetention: "Traefik, auf dem Server des Hosters in Frankreich. Sein Zugriffsprotokoll wird genauso aufbewahrt: in der Ausgabe des Containers, höchstens 5 Dateien zu 10 MB, nirgendwo anders hin kopiert.",
     },
     rateLimiting: {
       heading: "Ratenbegrenzung der Suche",
@@ -184,6 +186,7 @@ export const pages: Pages = {
       purpose: "Beantworten der gestellten Suchanfrage",
       retention:
         "Von Jev gedeutete Anfragen liegen mit ihrem Ergebnis höchstens 24 Stunden im Arbeitsspeicher der API, ohne Bezug dazu, wer sie geschickt hat. Der Zwischenspeicher wird außerdem bei jeder stündlichen Aktualisierung des Katalogs und bei jedem Neustart geleert. Nie auf die Festplatte geschrieben.",
+      where: "Vereinigte Staaten, wo TypeSafe Jev betreibt. Seine Datenschutzerklärung nennt keinen Mechanismus für Übermittlungen aus der EU, daher sendet die API nur den Suchtext, nie eine IP-Adresse oder Kennung.",
       addressBefore: "Die Suche schreibt die Anfrage außerdem in die Adresse der Seite",
       addressAfter:
         "), damit sich die Ergebnisse teilen lassen. Sie bleibt im Browserverlauf und landet in den oben genannten Zugriffslogs, sobald diese Adresse geladen wird.",
@@ -226,10 +229,11 @@ export const pages: Pages = {
       address: "Anschrift",
       email: "E-Mail",
       phone: "Telefon",
+      registration: "Registrierung",
     },
     publisher: {
       heading: "Herausgeber",
-      body: "awesome-alternatives.com wird von einer Privatperson herausgegeben, nicht gewerblich.",
+      body: "awesome-alternatives.com wird von Bryan Ferrando herausgegeben, Einzelunternehmer (entrepreneur individuel) unter dem Handelsnamen FerrLabs. Keine Umsatzsteuer gemäß Artikel 293 B des französischen Steuergesetzbuchs.",
     },
     publicationDirector: {
       heading: "Verantwortlich für den Inhalt",
@@ -318,7 +322,7 @@ export const pages: Pages = {
       incomplete: "Gib deine E-Mail, einen Betreff und eine Nachricht an.",
       invalid: "Prüfe deine E-Mail-Adresse und ob Betreff und Nachricht nicht zu lang sind.",
       tooMany: "Zu viele Nachrichten von hier in kurzer Zeit. Versuch es in ein paar Minuten noch einmal.",
-      failed: "Die Nachricht konnte nicht gesendet werden. Versuch es noch einmal, oder schreib an contact@ferrlabs.com.",
+      failed: "Die Nachricht konnte nicht gesendet werden. Versuch es noch einmal, oder schreib an contact@awesome-alternatives.com.",
     },
   },
 };

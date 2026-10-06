@@ -159,11 +159,13 @@ export const pages: Pages = {
       dataBefore: "Dirección IP, fecha y hora, dirección solicitada (incluida una búsqueda escrita en la barra de direcciones como",
       dataAfter: "), estado y tamaño de la respuesta, página de origen, user agent del navegador, cabecera forwarded-for",
       purpose: "Hacer funcionar el sitio, diagnosticar errores, detectar y frenar abusos",
+      retention: "Solo se guarda en la salida del contenedor en el servidor: como máximo 5 archivos de 10 MB, las líneas más antiguas se sobrescriben primero, y se borra cuando se reemplaza el contenedor. No se copia en ningún otro sitio.",
     },
     reverseProxyLog: {
       heading: "Registro de acceso del proxy inverso",
       body: "Las peticiones al sitio y a su API de búsqueda pasan por un proxy inverso en el proveedor de alojamiento, que mantiene su propio registro de acceso con el mismo tipo de datos.",
       purpose: "Enrutar las peticiones, diagnosticar errores, detectar y frenar abusos",
+      proxyAndRetention: "Traefik, en el servidor del proveedor de alojamiento en Francia. Su registro de acceso se guarda igual: en la salida del contenedor, como máximo 5 archivos de 10 MB, sin copia en ningún otro sitio.",
     },
     rateLimiting: {
       heading: "Límite de búsquedas",
@@ -183,6 +185,7 @@ export const pages: Pages = {
       purpose: "Responder a la búsqueda que has pedido",
       retention:
         "Las consultas interpretadas por Jev se guardan en la memoria de la API junto con su resultado, sin ningún vínculo con quien las envió, durante 24 horas como máximo. La caché también se vacía cada vez que se actualiza el catálogo, cada hora, y en cada reinicio. Nunca se escribe en disco.",
+      where: "Estados Unidos, donde TypeSafe aloja Jev. Su política de privacidad no cita ningún mecanismo de transferencia desde la UE, así que la API solo le envía el texto de la búsqueda, nunca una dirección IP ni un identificador.",
       addressBefore: "La búsqueda también coloca tu consulta en la dirección de la página",
       addressAfter:
         ") para que los resultados se puedan compartir. Permanece en el historial de tu navegador y llega a los registros anteriores cuando se carga esa dirección.",
@@ -225,10 +228,11 @@ export const pages: Pages = {
       address: "Dirección",
       email: "Correo electrónico",
       phone: "Teléfono",
+      registration: "Registro",
     },
     publisher: {
       heading: "Editor",
-      body: "awesome-alternatives.com lo publica un particular, a título no profesional.",
+      body: "awesome-alternatives.com lo publica Bryan Ferrando, empresario individual (entrepreneur individuel) que opera con el nombre comercial FerrLabs. IVA no aplicable, artículo 293 B del Código General de Impuestos francés.",
     },
     publicationDirector: {
       heading: "Director de la publicación",
@@ -317,7 +321,7 @@ export const pages: Pages = {
       incomplete: "Indica tu correo, un asunto y un mensaje.",
       invalid: "Revisa tu dirección de correo, y que el asunto y el mensaje no sean demasiado largos.",
       tooMany: "Demasiados mensajes desde aquí en poco tiempo. Vuelve a intentarlo en unos minutos.",
-      failed: "No se pudo enviar el mensaje. Vuelve a intentarlo, o escribe a contact@ferrlabs.com.",
+      failed: "No se pudo enviar el mensaje. Vuelve a intentarlo, o escribe a contact@awesome-alternatives.com.",
     },
   },
 };

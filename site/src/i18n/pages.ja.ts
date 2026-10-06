@@ -159,11 +159,13 @@ export const pages: Pages = {
       dataBefore: "IP アドレス、日時、リクエストされたアドレス（アドレスバーに",
       dataAfter: "として入力された検索を含む）、レスポンスのステータスとサイズ、参照元ページ、ブラウザのユーザーエージェント、forwarded-for ヘッダー",
       purpose: "サイトの運用、エラーの診断、不正利用の検出と阻止",
+      retention: "サーバー上のコンテナの出力にのみ保存されます。最大10 MBのファイル5つまでで、古い行から上書きされ、コンテナが置き換えられると消去されます。他の場所にはコピーされません。",
     },
     reverseProxyLog: {
       heading: "リバースプロキシのアクセスログ",
       body: "サイトとその検索 API へのリクエストはホスティング事業者のリバースプロキシを経由し、そこでも同じ種類のデータを含む独自のアクセスログが記録されます。",
       purpose: "リクエストのルーティング、エラーの診断、不正利用の検出と阻止",
+      proxyAndRetention: "Traefik（フランスにあるホスティング事業者のサーバー上）。アクセスログも同じ方法で保存されます。コンテナの出力に最大10 MBのファイル5つまでで、他の場所にはコピーされません。",
     },
     rateLimiting: {
       heading: "検索のレート制限",
@@ -183,6 +185,7 @@ export const pages: Pages = {
       purpose: "依頼された検索に応答するため",
       retention:
         "Jev が解釈したクエリは、送信者とのつながりを一切持たない形で、その結果とともに API のメモリに最大24時間キャッシュします。キャッシュはカタログが更新されるたび（1時間ごと）と再起動のたびにも消去します。ディスクには書き込みません。",
+      where: "米国（TypeSafe が Jev をホストしている国）。同社のプライバシーポリシーは EU からの移転に関する仕組みに触れていないため、API が送るのは検索テキストのみで、IP アドレスや識別子は送りません。",
       addressBefore: "検索結果を共有できるように、検索はクエリをページのアドレスにも含めます",
       addressAfter:
         ")。このアドレスはブラウザの履歴に残り、そのアドレスが読み込まれると上記のアクセスログにも記録されます。",
@@ -225,10 +228,11 @@ export const pages: Pages = {
       address: "住所",
       email: "メールアドレス",
       phone: "電話番号",
+      registration: "登録番号",
     },
     publisher: {
       heading: "発行者",
-      body: "awesome-alternatives.com は、個人が非営利で発行しています。",
+      body: "awesome-alternatives.com は、FerrLabs の名称で事業を営む個人事業主（entrepreneur individuel）の Bryan Ferrando が運営しています。フランス租税一般法第293 B条により付加価値税は適用されません。",
     },
     publicationDirector: {
       heading: "発行責任者",
@@ -317,7 +321,7 @@ export const pages: Pages = {
       incomplete: "メールアドレス、件名、メッセージを入力してください。",
       invalid: "メールアドレスを確認し、件名とメッセージが長すぎないか確認してください。",
       tooMany: "短時間にこの接続から送信されたメッセージが多すぎます。数分後に再度お試しください。",
-      failed: "メッセージを送信できませんでした。再度お試しいただくか、contact@ferrlabs.com までご連絡ください。",
+      failed: "メッセージを送信できませんでした。再度お試しいただくか、contact@awesome-alternatives.com までご連絡ください。",
     },
   },
 };
