@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.114.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 47 web and commerce tools (#353)
+
 ## [0.113.0] - 2026-10-06
 
 ### Features
