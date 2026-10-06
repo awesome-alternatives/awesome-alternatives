@@ -1,0 +1,7 @@
+name: CudaText
+repository: https://github.com/Alexey-T/CudaText
+category: text-editor
+replaces:
+  - tool: sublime-text
+    fit: full
+    note: Cross-platform editor with multiple carets, a minimap and Python plugins.

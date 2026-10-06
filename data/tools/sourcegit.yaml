@@ -1,0 +1,10 @@
+name: SourceGit
+repository: https://github.com/sourcegit-scm/sourcegit
+category: git-client
+replaces:
+  - tool: sourcetree
+    fit: full
+    note: Desktop client with a history graph, stashes, worktrees and interactive rebase, on Windows, macOS and Linux.
+  - tool: gitkraken
+    fit: partial
+    note: A desktop git client without accounts or cloud workspaces.

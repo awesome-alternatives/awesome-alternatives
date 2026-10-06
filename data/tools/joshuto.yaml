@@ -1,0 +1,7 @@
+name: joshuto
+repository: https://github.com/kamiyaa/joshuto
+category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: A ranger-like file manager written in Rust, with similar keybindings and previews.

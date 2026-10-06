@@ -1,0 +1,7 @@
+name: vfox
+repository: https://github.com/version-fox/vfox
+category: runtime-version-manager
+replaces:
+  - tool: asdf
+    fit: partial
+    note: A version manager for many runtimes with Lua plugins, that also runs on Windows.

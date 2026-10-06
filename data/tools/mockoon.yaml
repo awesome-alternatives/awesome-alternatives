@@ -1,0 +1,7 @@
+name: Mockoon
+repository: https://github.com/mockoon/mockoon
+category: mock-server
+replaces:
+  - tool: postman
+    fit: partial
+    note: Mock APIs only, run locally or in CI without an account.

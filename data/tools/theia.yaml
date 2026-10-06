@@ -1,0 +1,7 @@
+name: Eclipse Theia
+repository: https://github.com/eclipse-theia/theia
+category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: An IDE and framework that runs VS Code extensions, on the desktop or in a browser.

@@ -1,0 +1,3 @@
+name: Overcommit
+repository: https://github.com/sds/overcommit
+category: git-hooks

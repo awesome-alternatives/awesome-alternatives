@@ -1,0 +1,4 @@
+name: Termux
+repository: https://github.com/termux/termux-app
+category: terminal-emulator
+terms: open

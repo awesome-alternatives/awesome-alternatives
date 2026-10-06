@@ -1,0 +1,7 @@
+name: Geany
+repository: https://github.com/geany/geany
+category: text-editor
+replaces:
+  - tool: sublime-text
+    fit: partial
+    note: A lightweight GTK editor with build commands, symbol lists and plugins.

@@ -1,0 +1,7 @@
+name: ATAC
+repository: https://github.com/Julien-cpsn/ATAC
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: A terminal UI client that imports Postman collections, without an account.

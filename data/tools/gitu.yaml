@@ -1,0 +1,7 @@
+name: gitu
+repository: https://github.com/altsem/gitu
+category: git-client
+replaces:
+  - tool: magit
+    fit: partial
+    note: Magit's keybindings and workflow in a standalone terminal UI, outside Emacs.

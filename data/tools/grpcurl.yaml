@@ -1,0 +1,3 @@
+name: gRPCurl
+repository: https://github.com/fullstorydev/grpcurl
+category: grpc-client

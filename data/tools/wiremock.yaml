@@ -1,0 +1,3 @@
+name: WireMock
+repository: https://github.com/wiremock/wiremock
+category: mock-server

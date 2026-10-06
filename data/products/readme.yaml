@@ -1,0 +1,5 @@
+name: ReadMe
+homepage: https://readme.com
+vendor: ReadMe
+category: api-documentation
+description: Hosted developer portal that publishes API reference pages from OpenAPI files alongside guides and changelogs.

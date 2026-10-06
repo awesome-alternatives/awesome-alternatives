@@ -1,0 +1,7 @@
+name: Gitnuro
+repository: https://github.com/JetpackDuba/Gitnuro
+category: git-client
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: A desktop git client with a commit graph, without accounts or cloud workspaces.

@@ -1,0 +1,7 @@
+name: n
+repository: https://github.com/tj/n
+category: runtime-version-manager
+replaces:
+  - tool: nvm
+    fit: full
+    note: Switches Node.js versions from a single script, without a subshell or a profile hook.

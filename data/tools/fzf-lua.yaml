@@ -1,0 +1,7 @@
+name: fzf-lua
+repository: https://github.com/ibhagwan/fzf-lua
+category: fuzzy-finder
+replaces:
+  - tool: telescope-nvim
+    fit: full
+    note: A Neovim picker for files, buffers, grep and LSP results, built on fzf.

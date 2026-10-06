@@ -1,0 +1,7 @@
+name: Redoc
+repository: https://github.com/Redocly/redoc
+category: api-documentation
+replaces:
+  - tool: readme
+    fit: partial
+    note: Reference docs rendered from an OpenAPI file, without a hosted developer portal.

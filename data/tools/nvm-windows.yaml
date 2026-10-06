@@ -1,0 +1,7 @@
+name: NVM for Windows
+repository: https://github.com/nvm-windows/nvm
+category: runtime-version-manager
+replaces:
+  - tool: nvm
+    fit: partial
+    note: A Node.js version manager for Windows, with its own commands.

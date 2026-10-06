@@ -1,0 +1,7 @@
+name: REST Client
+repository: https://github.com/Huachao/vscode-restclient
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: Requests written in .http files and sent from VS Code, without a collections UI or team workspaces.

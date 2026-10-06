@@ -1,0 +1,3 @@
+name: SDKMAN!
+repository: https://github.com/sdkman/sdkman-cli
+category: runtime-version-manager

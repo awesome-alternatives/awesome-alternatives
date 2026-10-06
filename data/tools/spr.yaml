@@ -1,0 +1,7 @@
+name: spr
+repository: https://github.com/ejoffe/spr
+category: stacked-pull-requests
+replaces:
+  - tool: graphite-dev
+    fit: partial
+    note: Each commit on a branch becomes its own stacked GitHub pull request.

@@ -1,0 +1,10 @@
+name: proto
+repository: https://github.com/moonrepo/proto
+category: runtime-version-manager
+replaces:
+  - tool: volta
+    fit: full
+    note: Pins Node.js and package manager versions per project, in .prototools.
+  - tool: nvm
+    fit: full
+    note: Installs and switches Node.js versions, among other tools.

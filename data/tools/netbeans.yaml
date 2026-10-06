@@ -1,0 +1,7 @@
+name: Apache NetBeans
+repository: https://github.com/apache/netbeans
+category: text-editor
+replaces:
+  - tool: intellij-idea
+    fit: partial
+    note: A Java IDE with Maven, Gradle and Ant projects, a debugger and a profiler.

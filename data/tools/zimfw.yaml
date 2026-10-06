@@ -1,0 +1,7 @@
+name: Zim
+repository: https://github.com/zimfw/zimfw
+category: shell-prompt
+replaces:
+  - tool: ohmyzsh
+    fit: full
+    note: A zsh framework with modules declared in .zimrc, built for fast startup.

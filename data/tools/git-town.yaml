@@ -1,0 +1,7 @@
+name: Git Town
+repository: https://github.com/git-town/git-town
+category: stacked-pull-requests
+replaces:
+  - tool: graphite-dev
+    fit: partial
+    note: Branch stacks kept in sync with their parents and proposed to GitHub, GitLab, Gitea or Bitbucket.

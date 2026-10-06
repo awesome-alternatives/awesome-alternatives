@@ -1,0 +1,7 @@
+name: NotepadNext
+repository: https://github.com/dail8859/NotepadNext
+category: text-editor
+replaces:
+  - tool: notepad-plus-plus
+    fit: full
+    note: A reimplementation of Notepad++ that also runs on Linux and macOS.
