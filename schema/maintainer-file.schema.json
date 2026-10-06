@@ -46,6 +46,7 @@
             "additionalProperties": { "$ref": "#/$defs/url" }
           },
           "replaces": {
+            "description": "The whole list of tools this one replaces. Never applied directly: a difference with the entry opens a pull request that a person reviews.",
             "type": "array",
             "maxItems": 30,
             "items": {
@@ -59,8 +60,14 @@
               }
             }
           },
-          "category": { "$ref": "#/$defs/slug" },
-          "affiliation": { "$ref": "#/$defs/text" }
+          "category": {
+            "description": "A category from data/categories.yaml. Never applied directly: a difference with the entry opens a pull request that a person reviews.",
+            "$ref": "#/$defs/slug"
+          },
+          "affiliation": {
+            "description": "How the maintainers are tied to the tool. Never applied directly: a difference with the entry opens a pull request that a person reviews.",
+            "$ref": "#/$defs/text"
+          }
         }
       }
     }

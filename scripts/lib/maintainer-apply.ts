@@ -4,6 +4,7 @@ import { encodeRef, fileLocation } from "./facts.ts";
 import type { RepositoryFacts } from "./facts-graphql.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import { type FieldChange, fieldName, own, proposals, replacementOf, speakingFor, withChange } from "./maintainer-fields.ts";
+import { editorialOf, type Proposal, type Source } from "./maintainer-editorial.ts";
 import { type LocatedFile, type MaintainerEntry, printable } from "./maintainer-file.ts";
 import { type CatalogGuard, catalogGuard, sameRepository } from "./maintainer-guard.ts";
 import type { MigrationPage } from "./migrations.ts";
@@ -23,12 +24,6 @@ export interface MaintainerApply {
   catalog: Catalog;
   migrationPages: readonly MigrationPage[];
   checks: FieldChecks;
-}
-
-export interface Source {
-  fullName: string;
-  location: string;
-  commit: string | null;
 }
 
 export interface Applied {
@@ -189,12 +184,13 @@ export async function applyMaintainerFiles(
   facts: ReadonlyMap<string, Read<RepositoryFacts>>,
   published: ReadonlyMap<string, Published>,
   { catalog: current, migrationPages, checks }: MaintainerApply,
-): Promise<{ tools: Tool[]; applied: Applied[] }> {
+): Promise<{ tools: Tool[]; applied: Applied[]; proposed: Proposal[] }> {
   const catalog = new Map(declared.map((tool) => [tool.slug, tool]));
   const guard = catalogGuard(current, migrationPages);
   const logged = new Set<string>();
   const tools: Tool[] = [];
   const applied: Applied[] = [];
+  const proposed: Proposal[] = [];
   let budget = MAX_TOOLS_PER_RUN;
   let inspected = 0;
   for (const tool of targets) {
@@ -215,8 +211,15 @@ export async function applyMaintainerFiles(
       continue;
     }
     const speaking = speakingFor(tool.slug, maintainerFiles);
-    const changes = speaking ? proposals(tool, speaking.entry, new Set(published.get(tool.slug)?.maintainerFields ?? [])) : [];
-    if (!speaking || changes.length === 0) {
+    if (!speaking) {
+      tools.push(tool);
+      continue;
+    }
+    const source = { fullName: repo.fullName, location: fileLocation(speaking.file.scope, tool.path), commit: speaking.file.commit };
+    const editorial = editorialOf(speaking.entry);
+    if (editorial) proposed.push({ slug: tool.slug, source, editorial });
+    const changes = proposals(tool, speaking.entry, new Set(published.get(tool.slug)?.maintainerFields ?? []));
+    if (changes.length === 0) {
       tools.push(tool);
       continue;
     }
@@ -232,9 +235,8 @@ export async function applyMaintainerFiles(
     tools.push(planned.tool);
     if (planned.accepted.length) {
       budget--;
-      const source = { fullName: repo.fullName, location: fileLocation(speaking.file.scope, tool.path), commit: speaking.file.commit };
       applied.push({ slug: tool.slug, file: tool.file, source, changes: planned.accepted });
     }
   }
-  return { tools, applied };
+  return { tools, applied, proposed };
 }
