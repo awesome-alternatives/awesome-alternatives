@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.107.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add a telephony category with jambonz, FreeSWITCH and Asterisk (#347)
+
+### Bug Fixes
+
+- chore(catalog): refresh asterisk countly freeswitch jambonz jasmin sms-gateway-for-android textbee
+
 ## [0.106.0] - 2026-10-06
 
 ### Features
