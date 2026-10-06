@@ -1,0 +1,7 @@
+name: H2O
+repository: https://github.com/h2o/h2o
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: HTTP/1, HTTP/2 and HTTP/3 server and reverse proxy, scriptable with mruby.

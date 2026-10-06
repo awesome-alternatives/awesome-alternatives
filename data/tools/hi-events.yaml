@@ -1,0 +1,9 @@
+name: Hi.Events
+repository: https://github.com/HiEventsDev/Hi.Events
+category: event-ticketing
+terms: open-core
+replaces:
+  - tool: eventbrite
+    fit: full
+    note: Ticket sales, check-in and attendee management, with payments through Stripe.
+deploy: [container, compose]

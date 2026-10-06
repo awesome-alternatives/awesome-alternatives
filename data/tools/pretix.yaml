@@ -1,0 +1,9 @@
+name: pretix
+repository: https://github.com/pretix/pretix
+category: event-ticketing
+terms: open
+replaces:
+  - tool: eventbrite
+    fit: full
+    note: Ticket shop with seating plans, check-in apps and many payment providers.
+deploy: [container]

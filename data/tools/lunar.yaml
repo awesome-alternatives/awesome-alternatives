@@ -1,0 +1,7 @@
+name: Lunar
+repository: https://github.com/lunarphp/lunar
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: Laravel packages for catalogue, cart and orders with a Filament admin; the storefront is yours to build.

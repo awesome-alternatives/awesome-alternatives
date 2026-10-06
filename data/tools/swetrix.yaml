@@ -1,0 +1,8 @@
+name: Swetrix
+repository: https://github.com/Swetrix/swetrix
+category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Cookie-free traffic, events, errors and performance data.
+deploy: [container]

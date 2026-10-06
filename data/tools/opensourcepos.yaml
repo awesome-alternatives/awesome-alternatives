@@ -1,0 +1,9 @@
+name: Open Source Point of Sale
+repository: https://github.com/opensourcepos/opensourcepos
+category: point-of-sale
+terms: open
+replaces:
+  - tool: square-pos
+    fit: partial
+    note: Web-based point of sale with inventory, receipts and reports, without card reader hardware.
+deploy: [container, compose]

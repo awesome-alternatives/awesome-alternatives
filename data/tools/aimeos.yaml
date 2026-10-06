@@ -1,0 +1,7 @@
+name: Aimeos
+repository: https://github.com/aimeos/aimeos-laravel
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Laravel e-commerce package with a JSON API, for shops built into Laravel apps.

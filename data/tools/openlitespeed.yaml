@@ -1,0 +1,7 @@
+name: OpenLiteSpeed
+repository: https://github.com/litespeedtech/openlitespeed
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: Web server with Apache-compatible rewrite rules and built-in page caching for PHP apps.

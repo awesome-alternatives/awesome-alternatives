@@ -1,0 +1,7 @@
+name: Instant
+repository: https://github.com/instantdb/instant
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: partial
+    note: A realtime relational database with auth, permissions and storage, queried from the client.

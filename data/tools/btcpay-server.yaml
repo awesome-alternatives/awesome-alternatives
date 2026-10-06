@@ -1,0 +1,8 @@
+name: BTCPay Server
+repository: https://github.com/btcpayserver/btcpayserver
+category: payments
+replaces:
+  - tool: bitpay
+    fit: full
+    note: Accepts Bitcoin payments straight to your own wallet, with no processor in between.
+deploy: [container, compose]

@@ -1,0 +1,8 @@
+name: Kuzzle
+repository: https://github.com/kuzzleio/kuzzle
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: partial
+    note: Realtime database API, auth and pub/sub on top of Elasticsearch.
+deploy: [container, compose]

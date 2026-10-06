@@ -1,0 +1,8 @@
+name: Static Web Server
+repository: https://github.com/static-web-server/static-web-server
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: Serves static files only, from a single Rust binary.
+deploy: [container, binary]

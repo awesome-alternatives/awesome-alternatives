@@ -1,0 +1,8 @@
+name: Laudspeaker
+repository: https://github.com/laudspeaker/laudspeaker
+category: notification-infrastructure
+terms: open-core
+replaces:
+  - tool: knock
+    fit: partial
+    note: Customer journeys across email, SMS, push and in-app messages, built in a visual editor.

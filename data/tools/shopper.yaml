@@ -1,0 +1,7 @@
+name: Shopper
+repository: https://github.com/shopperlabs/shopper
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Laravel admin for catalogue, customers and orders; the storefront is yours to build.

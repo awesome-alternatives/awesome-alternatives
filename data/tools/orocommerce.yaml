@@ -1,0 +1,8 @@
+name: OroCommerce
+repository: https://github.com/oroinc/orocommerce
+category: e-commerce
+terms: open
+replaces:
+  - tool: shopify
+    fit: partial
+    note: B2B commerce with customer-specific price lists, quotes and approval workflows.

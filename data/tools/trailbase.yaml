@@ -1,0 +1,11 @@
+name: TrailBase
+repository: https://github.com/trailbaseio/trailbase
+category: backend-as-a-service
+replaces:
+  - tool: firebase
+    fit: partial
+    note: One executable with a SQLite database, auth, realtime APIs and a WebAssembly runtime.
+  - tool: pocketbase
+    fit: full
+    note: One executable with SQLite, auth, realtime APIs and an admin UI, written in Rust.
+deploy: [container, binary]

@@ -1,0 +1,8 @@
+name: ILLA Builder
+repository: https://github.com/illacloud/illa-builder
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: full
+    note: Drag-and-drop app builder over databases and APIs.
+deploy: [container]

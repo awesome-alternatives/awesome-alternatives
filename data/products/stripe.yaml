@@ -1,0 +1,5 @@
+name: Stripe Payments
+homepage: https://stripe.com/payments
+vendor: Stripe
+category: payments
+description: Hosted payment processing for cards, wallets and local payment methods through an API.

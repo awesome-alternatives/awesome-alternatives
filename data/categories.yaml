@@ -777,6 +777,40 @@ billing:
   description: Usage-based billing, subscription management and invoicing.
   selfHost: true
 
+payments:
+  name: Payment processing
+  description: Accept and route online payments from servers you run.
+  selfHost: true
+
+webhooks:
+  name: Webhook delivery
+  description: Send and receive webhooks with retries, signatures and delivery logs.
+  selfHost: true
+
+seo:
+  name: SEO tools
+  description: Track search rankings and audit sites for technical SEO issues.
+  selfHost: true
+
+consent-management:
+  name: Cookie consent
+  description: Show a consent banner and hold back tracking scripts until visitors agree.
+
+event-ticketing:
+  name: Event ticketing
+  description: Sell tickets, manage attendees and check people in at events.
+  selfHost: true
+
+point-of-sale:
+  name: Point of sale
+  description: Ring up in-store sales, print receipts and track stock.
+  selfHost: true
+
+image-proxy:
+  name: Image processing servers
+  description: Resize, crop and convert images on the fly from URL parameters.
+  selfHost: true
+
 page-change-monitoring:
   name: Page change monitoring
   description: Watch web pages and get alerts when they change.

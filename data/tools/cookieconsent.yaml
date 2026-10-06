@@ -1,0 +1,7 @@
+name: CookieConsent
+repository: https://github.com/orestbida/cookieconsent
+category: consent-management
+replaces:
+  - tool: cookiebot
+    fit: partial
+    note: A consent banner and preferences modal that blocks scripts until consent, with no cookie scanning.

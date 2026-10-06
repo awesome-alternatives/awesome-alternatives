@@ -1,0 +1,7 @@
+name: Django Oscar
+repository: https://github.com/django-oscar/django-oscar
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Django framework for building a shop, not a ready-made store.

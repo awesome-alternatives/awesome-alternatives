@@ -1,0 +1,7 @@
+name: Thumbor
+repository: https://github.com/thumbor/thumbor
+category: image-proxy
+replaces:
+  - tool: imgix
+    fit: full
+    note: On-demand cropping, resizing and filters, with smart cropping based on feature detection.

@@ -1,0 +1,7 @@
+name: Autumn
+repository: https://github.com/useautumn/autumn
+category: billing
+replaces:
+  - tool: stripe-billing
+    fit: partial
+    note: Plans, usage limits and entitlements on top of Stripe, which still processes the payments.

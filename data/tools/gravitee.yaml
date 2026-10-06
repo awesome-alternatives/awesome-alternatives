@@ -1,0 +1,11 @@
+name: Gravitee
+repository: https://github.com/gravitee-io/gravitee-api-management
+category: api-gateway
+replaces:
+  - tool: apigee
+    fit: full
+    note: Gateway, management console, developer portal and analytics on your own infrastructure.
+  - tool: kong
+    fit: full
+    note: Gateway with policies, a management console and a developer portal, also for event and message APIs.
+deploy: [container, helm]

@@ -1,0 +1,8 @@
+name: Shopware
+repository: https://github.com/shopware/shopware
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: full
+    note: Storefront, admin, checkout and a rule builder in PHP and Symfony, on your own server.
+deploy: [container]

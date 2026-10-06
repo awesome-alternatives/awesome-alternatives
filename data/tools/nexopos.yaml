@@ -1,0 +1,7 @@
+name: NexoPOS
+repository: https://github.com/Blair2004/NexoPOS
+category: point-of-sale
+replaces:
+  - tool: square-pos
+    fit: partial
+    note: Point of sale and inventory management on a Laravel server, without card reader hardware.

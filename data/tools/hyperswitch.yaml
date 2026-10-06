@@ -1,0 +1,8 @@
+name: Hyperswitch
+repository: https://github.com/juspay/hyperswitch
+category: payments
+replaces:
+  - tool: stripe
+    fit: partial
+    note: Routes payments across Stripe, Adyen and other processors from one API; it does not acquire payments itself.
+deploy: [container, compose, helm]
