@@ -1,0 +1,5 @@
+name: OpenRouter
+homepage: https://openrouter.ai
+vendor: OpenRouter
+category: llm-gateway
+description: Hosted API that routes requests to hundreds of models from many providers, with one key and one bill.

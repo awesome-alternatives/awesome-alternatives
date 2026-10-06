@@ -1,0 +1,8 @@
+name: 5ire
+repository: https://github.com/nanbingxyz/5ire
+category: chat-interface
+terms: source-available
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop chat app for hosted and local models, with MCP tools and a local knowledge base.

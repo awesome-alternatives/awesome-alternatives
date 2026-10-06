@@ -1,0 +1,10 @@
+name: DeepChat
+repository: https://github.com/ThinkInAIXYZ/deepchat
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Desktop chat app for hosted and local models, with MCP tool calling.
+  - tool: claude
+    fit: partial
+    note: Desktop chat app with MCP tool calling, in front of Claude or any other model API.

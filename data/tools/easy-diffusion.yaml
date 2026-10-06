@@ -1,0 +1,8 @@
+name: Easy Diffusion
+repository: https://github.com/easydiffusion/easydiffusion
+category: image-generation
+terms: source-available
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: A one-click installer and web UI for Stable Diffusion models on your own GPU.

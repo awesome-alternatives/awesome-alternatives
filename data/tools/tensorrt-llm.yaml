@@ -1,0 +1,9 @@
+name: TensorRT-LLM
+repository: https://github.com/NVIDIA/TensorRT-LLM
+category: llm-runtime
+terms: open
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Serves open-weight models on NVIDIA GPUs behind an OpenAI-compatible API.
+deploy: [container]

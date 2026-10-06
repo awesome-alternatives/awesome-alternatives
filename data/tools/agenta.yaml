@@ -1,0 +1,9 @@
+name: Agenta
+repository: https://github.com/Agenta-AI/agenta
+category: llm-observability
+terms: open-core
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Prompt management, evaluations and tracing in one platform.
+deploy: [compose]

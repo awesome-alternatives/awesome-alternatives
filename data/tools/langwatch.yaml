@@ -1,0 +1,8 @@
+name: LangWatch
+repository: https://github.com/langwatch/langwatch
+category: llm-observability
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Tracing, evaluations and agent simulations, with OpenTelemetry ingestion.
+deploy: [compose, helm]

@@ -1,0 +1,7 @@
+name: Fabric
+repository: https://github.com/danielmiessler/Fabric
+category: llm-cli
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Runs a library of reusable prompts over text piped in from the terminal.

@@ -1,0 +1,8 @@
+name: Chat UI
+repository: https://github.com/huggingface/chat-ui
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: The chat app behind HuggingChat, self-hosted in front of any OpenAI-compatible API.
+deploy: [container]

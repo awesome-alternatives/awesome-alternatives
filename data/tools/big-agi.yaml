@@ -1,0 +1,8 @@
+name: big-AGI
+repository: https://github.com/enricoros/big-AGI
+category: chat-interface
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Web chat in front of hosted or local models, with answers from several models side by side.
+deploy: [container]

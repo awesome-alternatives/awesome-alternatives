@@ -1,0 +1,4 @@
+name: llama-swap
+repository: https://github.com/mostlygeek/llama-swap
+category: llm-runtime
+deploy: [container, binary]

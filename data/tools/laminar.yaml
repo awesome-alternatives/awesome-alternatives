@@ -1,0 +1,8 @@
+name: Laminar
+repository: https://github.com/lmnr-ai/lmnr
+category: llm-observability
+replaces:
+  - tool: langsmith
+    fit: full
+    note: Tracing, evaluations and datasets for LLM apps and agents, with OpenTelemetry ingestion.
+deploy: [compose]

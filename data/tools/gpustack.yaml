@@ -1,0 +1,8 @@
+name: GPUStack
+repository: https://github.com/gpustack/gpustack
+category: llm-runtime
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Manages a cluster of GPUs and serves open-weight models across it behind an OpenAI-compatible API.
+deploy: [container]

@@ -1,0 +1,7 @@
+name: Stability Matrix
+repository: https://github.com/LykosAI/StabilityMatrix
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: Installs and manages local image generation UIs with a shared model library.

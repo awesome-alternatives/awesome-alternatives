@@ -1,0 +1,7 @@
+name: mini-SWE-agent
+repository: https://github.com/SWE-agent/mini-swe-agent
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: A minimal agent that works through bash commands only, aimed at benchmarks and scripting.

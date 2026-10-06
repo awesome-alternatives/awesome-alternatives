@@ -1,0 +1,8 @@
+name: Bifrost
+repository: https://github.com/maximhq/bifrost
+category: llm-gateway
+replaces:
+  - tool: openrouter
+    fit: partial
+    note: A Go gateway with one OpenAI-compatible API over many providers, with virtual keys, budgets and failover. You bring the provider keys.
+deploy: [container]

@@ -1,0 +1,7 @@
+name: ShellGPT
+repository: https://github.com/TheR1D/shell_gpt
+category: llm-cli
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: A terminal assistant that answers questions and suggests shell commands.

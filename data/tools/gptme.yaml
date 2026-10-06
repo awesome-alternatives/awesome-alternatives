@@ -1,0 +1,7 @@
+name: gptme
+repository: https://github.com/gptme/gptme
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: A terminal agent that edits files, runs shell and Python and browses, with any hosted or local model.

@@ -1,0 +1,7 @@
+name: LLM
+repository: https://github.com/simonw/llm
+category: llm-cli
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Prompts hosted and local models from the terminal and logs every exchange to SQLite.
