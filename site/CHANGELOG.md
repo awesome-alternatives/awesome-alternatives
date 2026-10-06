@@ -4,6 +4,14 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.116.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 97 developer tools (#365)
+- feat(catalog): add 43 communication tools (#359)
+- feat(catalog): add 49 AI and machine learning tools (#362)
+
 ## [0.115.0] - 2026-10-06
 
 ### Features
