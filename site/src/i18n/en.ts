@@ -189,6 +189,10 @@ export const en = {
   target: {
     title: { one: "1 alternative to {name}", other: "{n} alternatives to {name}" },
     titleOpen: { one: "1 open source alternative to {name}", other: "{n} open source alternatives to {name}" },
+    namesSuffix: ": {names}",
+    named: "{names}.",
+    namedMore: "{names} and more.",
+    namesSeparator: ", ",
     dropIns: "Drop-in: {names}.",
     comparison: "Side by side",
     listHeading: "Every alternative",

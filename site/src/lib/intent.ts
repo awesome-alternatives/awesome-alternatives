@@ -7,7 +7,11 @@ type Listed = Pick<ToolView, "name" | "terms" | "replaces" | "repo">;
 export interface TargetStrings {
   title: Plural;
   titleOpen: Plural;
+  namesSuffix: string;
   description: string;
+  named: string;
+  namedMore: string;
+  namesSeparator: string;
   dropIns: string;
 }
 
@@ -32,7 +36,16 @@ export function targetTitle(locale: Locale, strings: TargetStrings, name: string
   return plural(locale, allOpen(tools) ? strings.titleOpen : strings.title, tools.length, { name });
 }
 
+export function targetPageTitle(locale: Locale, strings: TargetStrings, name: string, tools: readonly Listed[]): string {
+  const base = targetTitle(locale, strings, name, tools);
+  const list = new Intl.ListFormat(locale, { type: "conjunction" });
+  const names = tools.slice(0, PAGE_TITLE_NAMES).map((tool) => tool.name);
+  const titles = names.map((_, i) => base + format(strings.namesSuffix, { names: list.format(names.slice(0, i + 1)) }));
+  return titles.findLast((title) => title.length <= TITLE_MAX) ?? base;
+}
+
 export function targetDescription(
+  locale: Locale,
   strings: TargetStrings,
   name: string,
   target: string,
@@ -40,8 +53,14 @@ export function targetDescription(
 ): string {
   const languages = [...new Set(tools.flatMap((tool) => tool.repo.language ?? []))];
   const base = format(strings.description, { count: tools.length, name, languages: languages.join(", ") });
+  const named = tools.slice(0, DESCRIPTION_NAMES).map((tool) => tool.name);
+  const more = tools.length > named.length;
+  const list = more ? named.join(strings.namesSeparator) : new Intl.ListFormat(locale, { type: "conjunction" }).format(named);
+  const lead = format(more ? strings.namedMore : strings.named, { names: list });
   const dropIns = tools.filter((tool) => fitFor(tool, target) === "drop-in").map((tool) => tool.name);
-  return dropIns.length > 0 ? `${base} ${format(strings.dropIns, { names: dropIns.join(", ") })}` : base;
+  const parts = [...(named.length > 0 ? [lead] : []), base];
+  if (dropIns.length > 0) parts.push(format(strings.dropIns, { names: dropIns.join(", ") }));
+  return parts.join(SENTENCE_GAP[locale] ?? " ");
 }
 
 export function categoryTitle(
@@ -97,6 +116,9 @@ type Titled = Pick<ToolView, "name" | "terms" | "replaces"> & { repo: { language
 const FIT_RANK = { "drop-in": 0, full: 1, partial: 2 } as const;
 const TITLE_TARGETS = 2;
 const TITLE_MAX = 70;
+const PAGE_TITLE_NAMES = 2;
+const DESCRIPTION_NAMES = 3;
+const SENTENCE_GAP: Partial<Record<Locale, string>> = { ja: "" };
 
 export function toolTitle(
   locale: Locale,

@@ -13,7 +13,7 @@ import { withHome } from "../../../lib/breadcrumbs.ts";
 import { categories, categoryName, pairs, type Target, targets } from "../../../lib/catalog.ts";
 import { comparableWith, comparePath } from "../../../lib/compare.ts";
 import { day } from "../../../lib/format.ts";
-import { targetDescription, targetTitle } from "../../../lib/intent.ts";
+import { targetDescription, targetPageTitle, targetTitle } from "../../../lib/intent.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
 import { slugify } from "../../../lib/slug.ts";
 import { socialImagePath } from "../../../lib/socialImage.ts";
@@ -35,6 +35,7 @@ const card = m.islands.card;
 const absolute = (path: string) => new URL(path, Astro.site).href;
 const comparable = comparableWith(pairs, target.slug);
 const title = targetTitle(locale, m.target, target.name, target.alternatives);
+const pageTitle = targetPageTitle(locale, m.target, target.name, target.alternatives);
 const selfHostCategories = Object.keys(categories).filter((key) => categories[key]?.selfHost === true);
 const categoryKey = target.listed?.category ?? target.product?.category ?? target.alternatives[0]?.category;
 const crumbs = withHome(locale, m.breadcrumb.home, [
@@ -56,10 +57,10 @@ const structuredData = [
 ---
 
 <Base
-  title={title}
+  title={pageTitle}
   image={{ path: socialImagePath(`/alternatives/${target.slug}/`), alt: title }}
   structuredData={structuredData}
-  description={targetDescription(m.target, target.name, target.slug, target.alternatives)}
+  description={targetDescription(locale, m.target, target.name, target.slug, target.alternatives)}
 >
   <Breadcrumbs locale={locale} crumbs={crumbs} />
   <p class="context">

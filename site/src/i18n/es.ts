@@ -190,6 +190,10 @@ export const es: Messages = {
   target: {
     title: { one: "1 alternativa a {name}", other: "{n} alternativas a {name}" },
     titleOpen: { one: "1 alternativa de código abierto a {name}", other: "{n} alternativas de código abierto a {name}" },
+    namesSuffix: ": {names}",
+    named: "{names}.",
+    namedMore: "{names} y otras.",
+    namesSeparator: ", ",
     dropIns: "Sustitución directa: {names}.",
     comparison: "Comparativa",
     listHeading: "Todas las alternativas",
