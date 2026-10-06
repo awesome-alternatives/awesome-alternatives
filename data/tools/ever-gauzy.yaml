@@ -1,0 +1,11 @@
+name: Ever Gauzy
+repository: https://github.com/ever-co/ever-gauzy
+category: erp
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Time tracking, HR, CRM, invoicing and expenses for service companies, without manufacturing.
+  - tool: harvest
+    fit: full
+    note: Timers, timesheets, project budgets and invoices from tracked time.
+deploy: [container, compose]

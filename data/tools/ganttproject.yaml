@@ -1,0 +1,8 @@
+name: GanttProject
+repository: https://github.com/bardsoftware/ganttproject
+category: project-management
+replaces:
+  - tool: microsoft-project
+    fit: full
+    note: Desktop Gantt charts with resources, dependencies and baselines, with import and export of Microsoft Project files.
+deploy: [package]

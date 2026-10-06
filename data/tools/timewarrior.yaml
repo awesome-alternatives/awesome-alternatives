@@ -1,0 +1,7 @@
+name: Timewarrior
+repository: https://github.com/GothenburgBitFactory/timewarrior
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: partial
+    note: Command-line timers with tags and reports, without a web app.

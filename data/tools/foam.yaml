@@ -1,0 +1,8 @@
+name: Foam
+repository: https://github.com/foambubble/foam
+category: note-taking
+terms: open
+replaces:
+  - tool: obsidian
+    fit: partial
+    note: Linked Markdown notes with backlinks and a graph, inside VS Code.

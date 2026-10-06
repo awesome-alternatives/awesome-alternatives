@@ -1,0 +1,11 @@
+name: Taiga
+repository: https://github.com/taigaio/taiga-back
+category: project-management
+replaces:
+  - tool: jira
+    fit: full
+    note: Scrum and kanban projects with epics, user stories, sprints and a Jira importer.
+  - tool: trello
+    fit: partial
+    note: Kanban boards with swimlanes and a Trello importer.
+deploy: [container]

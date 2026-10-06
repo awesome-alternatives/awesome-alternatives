@@ -1,0 +1,8 @@
+name: 4ga Boards
+repository: https://github.com/RARgames/4gaBoards
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Real-time kanban boards grouped in projects.
+deploy: [container, compose]

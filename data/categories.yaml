@@ -846,3 +846,13 @@ homelab-dashboard:
 start-page:
   name: Browser start pages
   description: Replace the browser's new tab page with a clock, links, weather and backgrounds.
+
+invoicing:
+  name: Invoicing
+  description: Send quotes and invoices to clients and track the payments.
+  selfHost: true
+
+hr-management:
+  name: HR management
+  description: Employee records, leave, recruitment and payroll.
+  selfHost: true

@@ -1,0 +1,7 @@
+name: Nextcloud Deck
+repository: https://github.com/nextcloud/deck
+category: project-management
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban boards with lists, cards, labels and due dates inside Nextcloud, with mobile apps.

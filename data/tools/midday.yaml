@@ -1,0 +1,10 @@
+name: Midday
+repository: https://github.com/midday-ai/midday
+category: invoicing
+replaces:
+  - tool: freshbooks
+    fit: full
+    note: Invoices, time tracking, receipts matched to bank transactions and financial reports.
+  - tool: harvest
+    fit: partial
+    note: Project time tracking that feeds invoices.

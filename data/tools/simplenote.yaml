@@ -1,0 +1,7 @@
+name: Simplenote
+repository: https://github.com/Automattic/simplenote-electron
+category: note-taking
+replaces:
+  - tool: google-keep
+    fit: partial
+    note: Plain-text and Markdown notes with tags, synced through Automattic's hosted service.

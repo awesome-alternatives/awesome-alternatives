@@ -1,0 +1,8 @@
+name: OroCRM
+repository: https://github.com/oroinc/crm
+category: crm
+terms: open
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Accounts, contacts, leads, opportunities and workflows.

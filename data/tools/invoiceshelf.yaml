@@ -1,0 +1,8 @@
+name: InvoiceShelf
+repository: https://github.com/InvoiceShelf/InvoiceShelf
+category: invoicing
+replaces:
+  - tool: freshbooks
+    fit: partial
+    note: Estimates, invoices, recurring invoices, payments and expenses, without time tracking.
+deploy: [container, compose]

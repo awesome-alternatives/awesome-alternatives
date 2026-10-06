@@ -1,0 +1,10 @@
+name: XWiki
+repository: https://github.com/xwiki/xwiki-platform
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: full
+    note: Structured wiki with spaces, page rights, extensions and a Confluence importer.
+  - tool: notion
+    fit: partial
+    note: Wiki pages and structured data in app pages, without the block editor.

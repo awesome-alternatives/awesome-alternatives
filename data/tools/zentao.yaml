@@ -1,0 +1,9 @@
+name: ZenTao
+repository: https://github.com/easysoft/zentaopms
+category: project-management
+terms: open
+replaces:
+  - tool: jira
+    fit: full
+    note: Products, sprints, bugs, test cases and releases in one scrum tool.
+deploy: [container]

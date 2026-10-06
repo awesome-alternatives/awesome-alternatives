@@ -1,0 +1,10 @@
+name: Nextcloud Notes
+repository: https://github.com/nextcloud/notes
+category: note-taking
+replaces:
+  - tool: google-keep
+    fit: partial
+    note: Markdown notes stored as files in Nextcloud, with Android and iOS apps.
+  - tool: evernote
+    fit: partial
+    note: Notes in categories, without notebooks of rich-text pages.

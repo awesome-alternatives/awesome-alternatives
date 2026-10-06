@@ -1,0 +1,7 @@
+name: Taskwarrior
+repository: https://github.com/GothenburgBitFactory/taskwarrior
+category: project-management
+replaces:
+  - tool: todoist
+    fit: partial
+    note: Command-line task list with projects, tags, priorities and recurrence, synced through its own server.

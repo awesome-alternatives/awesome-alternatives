@@ -1,0 +1,7 @@
+name: MarkText
+repository: https://github.com/marktext/marktext
+category: note-taking
+replaces:
+  - tool: typora
+    fit: full
+    note: A live-preview Markdown editor for single files, with themes and export to HTML and PDF.

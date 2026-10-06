@@ -1,0 +1,11 @@
+name: SilverBullet
+repository: https://github.com/silverbulletmd/silverbullet
+category: knowledge-base
+replaces:
+  - tool: notion
+    fit: partial
+    note: Markdown pages with queries and templates, scripted in Lua, without databases or a block editor.
+  - tool: obsidian
+    fit: partial
+    note: Linked Markdown notes in the browser, served from your own folder.
+deploy: [container]

@@ -1,0 +1,10 @@
+name: Rnote
+repository: https://github.com/flxzt/rnote
+category: note-taking
+replaces:
+  - tool: goodnotes
+    fit: partial
+    note: Handwritten notes and sketches with a stylus on Linux, Windows and macOS, without sync.
+  - tool: onenote
+    fit: partial
+    note: Handwriting and drawing on an infinite canvas, not typed notebooks.

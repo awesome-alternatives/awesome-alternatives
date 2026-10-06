@@ -1,0 +1,8 @@
+name: Horilla
+repository: https://github.com/horilla/horilla-hr
+category: hr-management
+replaces:
+  - tool: bamboohr
+    fit: full
+    note: Employees, recruitment, onboarding, attendance, leave, performance and payroll.
+deploy: [container, compose]

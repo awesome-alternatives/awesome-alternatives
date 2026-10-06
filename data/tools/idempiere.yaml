@@ -1,0 +1,9 @@
+name: iDempiere
+repository: https://github.com/idempiere/idempiere
+category: erp
+terms: open
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Accounting, sales, purchasing, inventory and manufacturing on an OSGi platform.
+deploy: [container]

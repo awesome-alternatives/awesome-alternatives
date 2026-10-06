@@ -1,0 +1,7 @@
+name: flatnotes
+repository: https://github.com/dullage/flatnotes
+category: note-taking
+replaces:
+  - tool: google-keep
+    fit: partial
+    note: Markdown notes in a self-hosted web app, stored as flat files with full-text search.

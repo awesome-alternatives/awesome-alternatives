@@ -1,0 +1,7 @@
+name: Documize
+repository: https://github.com/documize/community
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: full
+    note: Spaces of documents with sections, approvals, versions and search.

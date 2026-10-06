@@ -1,0 +1,7 @@
+name: Zim
+repository: https://github.com/zim-desktop-wiki/zim-desktop-wiki
+category: note-taking
+replaces:
+  - tool: onenote
+    fit: partial
+    note: Desktop wiki of linked pages stored as text files, without sync.

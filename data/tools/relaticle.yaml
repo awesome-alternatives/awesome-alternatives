@@ -1,0 +1,7 @@
+name: Relaticle
+repository: https://github.com/relaticle/relaticle
+category: crm
+replaces:
+  - tool: pipedrive
+    fit: partial
+    note: Companies, people and opportunities with custom fields, tasks and notes.

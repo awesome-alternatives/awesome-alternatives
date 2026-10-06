@@ -1,0 +1,7 @@
+name: Saber
+repository: https://github.com/saber-notes/saber
+category: note-taking
+replaces:
+  - tool: goodnotes
+    fit: full
+    note: Handwritten notes and PDF annotation on Android, iOS and desktop, with encrypted sync through Nextcloud.
