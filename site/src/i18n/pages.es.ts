@@ -233,7 +233,7 @@ export const pages: Pages = {
     },
     publisher: {
       heading: "Editor",
-      body: "awesome-alternatives.com lo publica Bryan Ferrando, empresario individual (entrepreneur individuel) que opera con el nombre comercial FerrLabs. IVA no aplicable, artículo 293 B del Código General de Impuestos francés.",
+      body: "awesome-alternatives.com lo publica FerrLabs, nombre comercial de Bryan Ferrando, empresario individual (entrepreneur individuel, EI). IVA no aplicable, artículo 293 B del Código General de Impuestos francés.",
     },
     publicationDirector: {
       heading: "Director de la publicación",

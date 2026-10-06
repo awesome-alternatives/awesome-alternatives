@@ -233,7 +233,7 @@ export const pages: Pages = {
     },
     publisher: {
       heading: "Penerbit",
-      body: "awesome-alternatives.com diterbitkan oleh Bryan Ferrando, pengusaha perorangan (entrepreneur individuel) dengan nama dagang FerrLabs. PPN tidak berlaku berdasarkan pasal 293 B Kode Pajak Prancis.",
+      body: "awesome-alternatives.com diterbitkan oleh FerrLabs, nama dagang Bryan Ferrando, pengusaha perorangan (entrepreneur individuel, EI). PPN tidak berlaku berdasarkan pasal 293 B Kode Pajak Prancis.",
     },
     publicationDirector: {
       heading: "Direktur publikasi",

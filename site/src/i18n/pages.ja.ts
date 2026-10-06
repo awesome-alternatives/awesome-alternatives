@@ -233,7 +233,7 @@ export const pages: Pages = {
     },
     publisher: {
       heading: "発行者",
-      body: "awesome-alternatives.com は、FerrLabs の名称で事業を営む個人事業主（entrepreneur individuel）の Bryan Ferrando が運営しています。フランス租税一般法第293 B条により付加価値税は適用されません。",
+      body: "awesome-alternatives.com は FerrLabs が運営しています。FerrLabs は個人事業主（entrepreneur individuel、EI）Bryan Ferrando の屋号です。フランス租税一般法第293 B条により付加価値税は適用されません。",
     },
     publicationDirector: {
       heading: "発行責任者",

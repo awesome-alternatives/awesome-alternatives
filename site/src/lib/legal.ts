@@ -1,7 +1,8 @@
 export const CONTACT_EMAIL = "contact@awesome-alternatives.com";
 
 export const publisher = {
-  name: "Bryan Ferrando",
+  name: "FerrLabs (Bryan Ferrando, EI)",
+  director: "Bryan Ferrando",
   address: "187 avenue Charles Saint-Venant, Appartement 64, 59800 Lille, France",
   email: CONTACT_EMAIL,
   phone: "+33 7 69 31 58 91",

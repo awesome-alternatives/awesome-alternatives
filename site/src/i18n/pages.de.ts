@@ -234,7 +234,7 @@ export const pages: Pages = {
     },
     publisher: {
       heading: "Herausgeber",
-      body: "awesome-alternatives.com wird von Bryan Ferrando herausgegeben, Einzelunternehmer (entrepreneur individuel) unter dem Handelsnamen FerrLabs. Keine Umsatzsteuer gemäß Artikel 293 B des französischen Steuergesetzbuchs.",
+      body: "awesome-alternatives.com wird von FerrLabs herausgegeben, dem Handelsnamen von Bryan Ferrando, Einzelunternehmer (entrepreneur individuel, EI). Keine Umsatzsteuer gemäß Artikel 293 B des französischen Steuergesetzbuchs.",
     },
     publicationDirector: {
       heading: "Verantwortlich für den Inhalt",
