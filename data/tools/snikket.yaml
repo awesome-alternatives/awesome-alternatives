@@ -1,0 +1,8 @@
+name: Snikket
+repository: https://github.com/snikket-im/snikket-server
+category: team-chat
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Chats, calls and file sharing for a family or group on your own XMPP server, through the Snikket apps.
+deploy: [container, compose]

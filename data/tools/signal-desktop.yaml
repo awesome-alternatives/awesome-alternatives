@@ -1,0 +1,7 @@
+name: Signal Desktop
+repository: https://github.com/signalapp/Signal-Desktop
+category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Desktop app linked to a Signal account on a phone.

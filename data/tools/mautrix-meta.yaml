@@ -1,0 +1,7 @@
+name: mautrix-meta
+repository: https://github.com/mautrix/meta
+category: chat-bridge
+replaces:
+  - tool: beeper
+    fit: partial
+    note: Brings Facebook Messenger and Instagram direct messages into a Matrix homeserver you run.

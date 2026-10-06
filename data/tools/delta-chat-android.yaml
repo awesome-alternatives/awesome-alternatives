@@ -1,0 +1,7 @@
+name: Delta Chat for Android
+repository: https://github.com/deltachat/deltachat-android
+category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Encrypted chats and groups carried over email, through any mail account or a chatmail relay.

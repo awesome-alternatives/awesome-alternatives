@@ -1,0 +1,7 @@
+name: Ferdium
+repository: https://github.com/ferdium/ferdium-app
+category: chat-client
+replaces:
+  - tool: rambox
+    fit: full
+    note: Messaging and other web apps in one desktop window, with workspaces and an optional self-hosted sync server.

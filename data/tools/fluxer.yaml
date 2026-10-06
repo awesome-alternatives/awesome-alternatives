@@ -1,0 +1,7 @@
+name: Fluxer
+repository: https://github.com/fluxerapp/fluxer
+category: team-chat
+replaces:
+  - tool: discord
+    fit: full
+    note: Community servers with text, voice and video channels, roles and bots, on the hosted service or your own instance.

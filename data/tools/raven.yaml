@@ -1,0 +1,7 @@
+name: Raven
+repository: https://github.com/frappe/raven
+category: team-chat
+replaces:
+  - tool: slack
+    fit: partial
+    note: Channels, threads and direct messages inside a Frappe or ERPNext site, linked to its documents.

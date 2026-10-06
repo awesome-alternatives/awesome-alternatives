@@ -791,3 +791,21 @@ telephony:
   name: Telephony and SMS gateways
   description: Run voice calls, SIP trunks and SMS sending on your own servers behind an API.
   selfHost: true
+
+chat-client:
+  name: Chat clients
+  description: Desktop, mobile and web apps for Matrix, XMPP and IRC.
+
+chat-bridge:
+  name: Chat bridges
+  description: Relay conversations between Matrix and other chat networks, so one client reaches them all.
+  selfHost: true
+
+messenger:
+  name: Private messengers
+  description: End-to-end encrypted messaging apps for one-to-one and group chats on a phone or a desktop.
+
+irc-server:
+  name: IRC servers
+  description: Run an IRC network or keep a persistent connection to one with a bouncer.
+  selfHost: true

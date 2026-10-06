@@ -1,0 +1,4 @@
+name: InspIRCd
+repository: https://github.com/inspircd/inspircd
+category: irc-server
+terms: open

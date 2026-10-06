@@ -1,0 +1,8 @@
+name: Tinode
+repository: https://github.com/tinode/chat
+category: team-chat
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: A messaging server with web, Android and iOS clients and a gRPC API for bots.
+deploy: [container, binary]

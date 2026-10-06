@@ -1,0 +1,7 @@
+name: mautrix-whatsapp
+repository: https://github.com/mautrix/whatsapp
+category: chat-bridge
+replaces:
+  - tool: beeper
+    fit: partial
+    note: Brings WhatsApp chats into a Matrix homeserver you run, one network per bridge.
