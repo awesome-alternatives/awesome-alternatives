@@ -189,9 +189,19 @@ A `403` or `429` from GitHub is a refusal, usually its rate limit, not an answer
 with the status and fails the whole fetch, so the security report answers 502 rather than "no
 known advisories", and neither cache tier keeps it. Only a `404` means there is nothing to show.
 
+GitHub is read with an installation token of the dispatch app (see
+[Release-triggered refresh](#release-triggered-refresh)), so both tabs draw on the installation's
+limit of 5,000 requests an hour instead of the 60 an hour GitHub allows anonymous callers. Both
+endpoints serve public repositories to any installation token, whether or not the app is installed
+on them, so the token is narrowed to `metadata: read` on `DISPATCH_REPOSITORY` and carries no
+other permission. It is reused until 5 minutes before it expires; a `401` drops it and the request
+is retried once with a fresh one. If GitHub will not mint a token, the request goes out
+anonymously rather than failing. Without the app, `GITHUB_TOKEN` is sent instead when set, which
+is meant for local development; with neither, startup logs a warning.
+
 The README, security and history routes share a per-client limit of `DETAILS_PER_MINUTE`, keyed the
 same way as search, and answer `429` with `Retry-After` past it. A tool page costs at most three requests, so the default
-leaves a person browsing plenty of room, while one client can no longer spend the GitHub token as
+leaves a person browsing plenty of room, while one client can no longer spend the GitHub rate limit as
 fast as it can send requests.
 
 Both in-process caches are bounded by bytes rather than by entry count: a rendered README runs to hundreds of
@@ -320,9 +330,11 @@ The dispatch is made by a second GitHub App, private and installed only on this 
 `Actions: write`, so the public app never holds more than read access to anyone's repository. The
 API signs an app JWT with `DISPATCH_PRIVATE_KEY`, looks up the installation on
 `DISPATCH_REPOSITORY` once, and asks for an installation token scoped to that one repository and
-`actions: write`, which it reuses until 5 minutes before it expires. Without `DISPATCH_APP_ID` and
-`DISPATCH_PRIVATE_KEY` both endpoints answer `503`, and without `GITHUB_WEBHOOK_SECRET` the webhook
-does; startup logs a warning for each.
+`actions: write`, which it reuses until 5 minutes before it expires and replaces at once if GitHub
+answers `401`. The same app, with a separate token, authenticates the README and security reads.
+The app JWT is backdated 60 seconds against clock drift and expires 9 minutes after it is signed.
+Without `DISPATCH_APP_ID` and `DISPATCH_PRIVATE_KEY` both endpoints answer `503`, and without
+`GITHUB_WEBHOOK_SECRET` the webhook does; startup logs a warning for each.
 
 ## Rollouts
 
@@ -394,15 +406,15 @@ requests are in flight.
 | `TYPESAFE_BASE_URL` | `https://api.typesafe.ai` | |
 | `JEV_CALLS_PER_MINUTE` | `30` | For the whole process. Past it, search answers without Jev. |
 | `JEV_CALLS_PER_DAY` | `2000` | For the whole process, reset at midnight UTC. `0` turns the Jev step off. |
-| `GITHUB_TOKEN` | unset | Raises GitHub's limit from 60 to 5,000 requests an hour for READMEs and advisories. A read-only token with no scopes is enough. |
+| `GITHUB_TOKEN` | unset | Fallback for local development: used for READMEs and advisories only when the dispatch app is not configured. A token with no scopes is enough. |
 | `GITHUB_API_URL` | `https://api.github.com` | |
 | `GITHUB_WEBHOOK_SECRET` | unset | The GitHub App's webhook secret. Unset means `POST /webhooks/github` answers `503`. |
 | `OIDC_AUDIENCE` | `awesome-alternatives` | The audience a `POST /v1/refresh` token must carry. |
 | `OIDC_JWKS_URL` | GitHub's, `https://token.actions.githubusercontent.com/.well-known/jwks` | |
 | `REFRESH_COOLDOWN_SECS` | `600` | At most one dispatch per repository in this window. |
-| `DISPATCH_APP_ID` | unset | The dispatch app. Unset, or without `DISPATCH_PRIVATE_KEY`, means both refresh endpoints answer `503`. |
+| `DISPATCH_APP_ID` | unset | The dispatch app, which also authenticates README and advisory reads. Unset, or without `DISPATCH_PRIVATE_KEY`, means both refresh endpoints answer `503` and reads fall back to `GITHUB_TOKEN`. |
 | `DISPATCH_PRIVATE_KEY` | unset | The dispatch app's private key, PEM. |
-| `DISPATCH_REPOSITORY` | `awesome-alternatives/awesome-alternatives` | Where the refresh workflow lives. |
+| `DISPATCH_REPOSITORY` | `awesome-alternatives/awesome-alternatives` | Where the refresh workflow lives, and where the app's installation is looked up. |
 | `DISPATCH_WORKFLOW` | `refresh-tools.yml` | |
 | `DISPATCH_REF` | `main` | |
 | `SCORECARD_API_URL` | `https://api.securityscorecards.dev` | |

@@ -8,6 +8,7 @@ mod embedding;
 mod filters;
 #[cfg(test)]
 mod fixtures;
+mod github_app;
 mod history;
 mod interpret;
 mod jev;
@@ -40,13 +41,14 @@ use tracing_subscriber::EnvFilter;
 use crate::config::Config;
 use crate::details::Details;
 use crate::embedding::{Embedder, LocalModel};
+use crate::github_app::App;
 use crate::history::{History, Postgres};
 use crate::jev::JevClient;
 use crate::jev_budget::MeteredJev;
 use crate::refresh::Refresh;
 use crate::search::Search;
 use crate::state::{AppState, Loaded, Reload};
-use crate::upstream::Upstream;
+use crate::upstream::{Auth, Upstream};
 
 const LIMITER_SWEEP: Duration = Duration::from_secs(60);
 const CONNECT_TIMEOUT: Duration = Duration::from_secs(5);
@@ -90,25 +92,30 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             "TYPESAFE_API_KEY is not set: Jev is disabled, search runs on the local model and keywords only"
         );
     }
-    if config.github_token.is_none() {
-        tracing::warn!(
-            "GITHUB_TOKEN is not set: README and security tabs share GitHub's 60 requests an hour, cached for 12 hours per tool"
-        );
-    }
     if config.refresh.webhook_secret.is_none() {
         tracing::warn!("GITHUB_WEBHOOK_SECRET is not set: POST /webhooks/github answers 503");
     }
-    if config.refresh.dispatch.is_none() {
+    let app = config
+        .github_app
+        .map(|settings| App::new(http.clone(), &config.github_api, settings).map(Arc::new))
+        .transpose()?;
+    if app.is_none() {
         tracing::warn!(
-            "DISPATCH_APP_ID or DISPATCH_PRIVATE_KEY is not set: release-triggered refreshes are disabled and both refresh endpoints answer 503"
+            "DISPATCH_APP_ID or DISPATCH_PRIVATE_KEY is not set: release-triggered refreshes are disabled, both refresh endpoints answer 503, and GitHub reads use GITHUB_TOKEN if set"
         );
     }
-    let refresh = Refresh::new(config.refresh, http.clone(), &config.github_api)?;
+    let auth = Auth::select(app.clone(), config.github_token);
+    if matches!(auth, Auth::Anonymous) {
+        tracing::warn!(
+            "neither the GitHub App nor GITHUB_TOKEN is configured: README and security tabs share GitHub's 60 requests an hour, cached for 12 hours per tool"
+        );
+    }
+    let refresh = Refresh::new(config.refresh, http.clone(), app);
     let upstream = Upstream::new(
         http.clone(),
         &config.github_api,
         &config.scorecard_api,
-        config.github_token.clone(),
+        auth,
     );
     let embedder = load_embedder().await;
     let shared = Arc::new(cache::open(config.valkey).await);

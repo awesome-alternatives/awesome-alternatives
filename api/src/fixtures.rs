@@ -18,12 +18,14 @@ pub fn refresh_off() -> Refresh {
             oidc_audience: refresh::oidc::DEFAULT_AUDIENCE.into(),
             oidc_jwks_url: "http://127.0.0.1:9".into(),
             cooldown: refresh::COOLDOWN,
-            dispatch: None,
+            dispatch: refresh::dispatch::Settings {
+                workflow: refresh::dispatch::DEFAULT_WORKFLOW.into(),
+                reference: refresh::dispatch::DEFAULT_REF.into(),
+            },
         },
         reqwest::Client::new(),
-        "http://127.0.0.1:9",
+        None,
     )
-    .unwrap()
 }
 
 pub fn tool(

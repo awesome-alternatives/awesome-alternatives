@@ -4,7 +4,7 @@ mod routes;
 mod trigger;
 
 use std::sync::atomic::{AtomicUsize, Ordering};
-use std::sync::{Arc, LazyLock, Mutex};
+use std::sync::{Arc, Mutex};
 use std::time::Duration;
 
 use axum::extract::{Path, State};
@@ -12,45 +12,20 @@ use axum::http::{HeaderMap, StatusCode, header};
 use axum::response::{IntoResponse, Response};
 use axum::routing::{get, post};
 use axum::{Json, Router};
-use jsonwebtoken::jwk::{Jwk, JwkSet};
-use jsonwebtoken::{Algorithm, DecodingKey, EncodingKey, Header, Validation, decode, encode};
-use rsa::RsaPrivateKey;
-use rsa::pkcs1::{EncodeRsaPrivateKey, LineEnding};
+use jsonwebtoken::jwk::JwkSet;
+use jsonwebtoken::{Algorithm, DecodingKey, Header, Validation, decode, encode};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
-use super::dispatch::Settings;
-use super::dispatch::{DEFAULT_REF, DEFAULT_REPOSITORY, DEFAULT_WORKFLOW};
+use super::dispatch::{DEFAULT_REF, DEFAULT_WORKFLOW, Settings};
 use super::oidc::{DEFAULT_AUDIENCE, GITHUB_ISSUER};
 use super::{Refresh, Settings as RefreshSettings};
+pub use crate::github_app::tests::{APP_ID, KEY, KID, serve};
+use crate::github_app::{self, App, DEFAULT_REPOSITORY};
 
-pub const KID: &str = "test-key";
-pub const APP_ID: &str = "12345";
 pub const INSTALLATION: u64 = 42;
 pub const FAR_FUTURE: &str = "2099-01-01T00:00:00Z";
 pub const SECRET: &str = "webhook-secret";
-
-pub struct Key {
-    pem: String,
-    encoding: EncodingKey,
-    jwk: Jwk,
-}
-
-static KEY: LazyLock<Key> = LazyLock::new(|| {
-    let private = RsaPrivateKey::new(&mut rand::thread_rng(), 2048).unwrap();
-    let pem = private.to_pkcs1_pem(LineEnding::LF).unwrap().to_string();
-    let encoding = EncodingKey::from_rsa_pem(pem.as_bytes()).unwrap();
-    let mut jwk = Jwk::from_encoding_key(&encoding, Algorithm::RS256).unwrap();
-    jwk.common.key_id = Some(KID.into());
-    Key { pem, encoding, jwk }
-});
-
-pub async fn serve(router: Router) -> String {
-    let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
-    let base = format!("http://{}", listener.local_addr().unwrap());
-    tokio::spawn(async move { axum::serve(listener, router).await.unwrap() });
-    base
-}
 
 #[derive(Serialize)]
 pub struct OidcClaims {
@@ -274,12 +249,24 @@ async fn workflow_dispatch(
 
 pub fn dispatch_settings() -> Settings {
     Settings {
-        app_id: APP_ID.into(),
-        private_key: KEY.pem.clone(),
-        repository: DEFAULT_REPOSITORY.into(),
         workflow: DEFAULT_WORKFLOW.into(),
         reference: DEFAULT_REF.into(),
     }
+}
+
+pub fn dispatch_app(github: &str) -> Arc<App> {
+    Arc::new(
+        App::new(
+            reqwest::Client::new(),
+            github,
+            github_app::Settings {
+                app_id: APP_ID.into(),
+                private_key: KEY.pem.clone(),
+                repository: DEFAULT_REPOSITORY.into(),
+            },
+        )
+        .unwrap(),
+    )
 }
 
 pub fn refresh(github: &str, jwks: &str, dispatching: bool) -> Refresh {
@@ -289,10 +276,9 @@ pub fn refresh(github: &str, jwks: &str, dispatching: bool) -> Refresh {
             oidc_audience: DEFAULT_AUDIENCE.into(),
             oidc_jwks_url: jwks.into(),
             cooldown: Duration::from_secs(600),
-            dispatch: dispatching.then(dispatch_settings),
+            dispatch: dispatch_settings(),
         },
         reqwest::Client::new(),
-        github,
+        dispatching.then(|| dispatch_app(github)),
     )
-    .unwrap()
 }

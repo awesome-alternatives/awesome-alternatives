@@ -13,7 +13,7 @@ use crate::embedding::fake::Words;
 use crate::embedding::{BATCH, EmbedError, Embedder, Thresholds, Vector};
 use crate::fixtures::{refresh_off, tool};
 use crate::search::{self, Search};
-use crate::upstream::Upstream;
+use crate::upstream::{Auth, Upstream};
 
 const RELEASES: &str = "Fully automated version management and package publishing";
 
@@ -62,7 +62,7 @@ fn state(loaded: Loaded, model: Arc<dyn Embedder>) -> AppState {
                 reqwest::Client::new(),
                 "http://127.0.0.1:9",
                 "http://127.0.0.1:9",
-                None,
+                Auth::Anonymous,
             ),
             details::CACHE_BYTES,
             Arc::new(Shared::disabled()),
