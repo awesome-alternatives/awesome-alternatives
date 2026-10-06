@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.111.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 80 personal and home tools (#360)
+
 ## [0.110.0] - 2026-10-06
 
 ### Features
