@@ -1,0 +1,7 @@
+name: Frescobaldi
+repository: https://github.com/frescobaldi/frescobaldi
+category: music-notation
+replaces:
+  - tool: sibelius
+    fit: partial
+    note: Scores are written as LilyPond text with a live engraved preview, not edited graphically.

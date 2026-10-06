@@ -1,0 +1,7 @@
+name: Strawberry
+repository: https://github.com/strawberrymusicplayer/strawberry
+category: music-player
+replaces:
+  - tool: musicbee
+    fit: full
+    note: Library player with tag editing, smart playlists and scrobbling, on Linux, macOS and Windows.

@@ -1,0 +1,7 @@
+name: Finamp
+repository: https://github.com/finamp-app/finamp
+category: music-player
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Plays your own Jellyfin music library on Android and iOS with offline downloads; there is no catalog of music to stream.

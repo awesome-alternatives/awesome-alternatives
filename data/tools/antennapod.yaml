@@ -1,0 +1,7 @@
+name: AntennaPod
+repository: https://github.com/AntennaPod/AntennaPod
+category: podcast-player
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Plays any podcast from its RSS feed on Android; shows exclusive to Spotify are not available.

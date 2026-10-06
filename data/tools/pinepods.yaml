@@ -1,0 +1,4 @@
+name: PinePods
+repository: https://github.com/madeofpendletonwool/PinePods
+category: podcast-server
+deploy: [container, compose, helm]

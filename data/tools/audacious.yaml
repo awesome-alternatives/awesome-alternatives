@@ -1,0 +1,8 @@
+name: Audacious
+repository: https://github.com/audacious-media-player/audacious
+category: music-player
+terms: open
+replaces:
+  - tool: foobar2000
+    fit: partial
+    note: Lightweight player with plugins and Winamp 2 skin support, with fewer library features.

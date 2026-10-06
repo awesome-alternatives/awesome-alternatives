@@ -1,0 +1,9 @@
+name: Gerbera
+repository: https://github.com/gerbera/gerbera
+category: media-server
+terms: open
+replaces:
+  - tool: plex
+    fit: partial
+    note: Serves your media to UPnP and DLNA devices on the local network, without remote streaming or apps of its own.
+deploy: [container]

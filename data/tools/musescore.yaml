@@ -1,0 +1,11 @@
+name: MuseScore
+repository: https://github.com/musescore/MuseScore
+category: music-notation
+terms: open
+replaces:
+  - tool: sibelius
+    fit: full
+    note: Score writing, playback and engraving, with MusicXML import for scores exported from Sibelius.
+  - tool: guitar-pro
+    fit: partial
+    note: Tablature staves with playback, and imports Guitar Pro files.

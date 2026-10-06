@@ -1,0 +1,8 @@
+name: gonic
+repository: https://github.com/sentriz/gonic
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music to Subsonic-compatible clients; there is no catalog of music to stream.
+deploy: [container]

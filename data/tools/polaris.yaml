@@ -1,0 +1,7 @@
+name: Polaris
+repository: https://github.com/agersant/polaris
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music collection to its web and Android apps; there is no catalog of music to stream.

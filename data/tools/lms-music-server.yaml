@@ -1,0 +1,8 @@
+name: LMS
+repository: https://github.com/epoupon/lms
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music with a web player and the Subsonic API; there is no catalog of music to stream.
+deploy: [container]

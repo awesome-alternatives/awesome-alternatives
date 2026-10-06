@@ -1,0 +1,8 @@
+name: LibreTime
+repository: https://github.com/libretime/libretime
+category: internet-radio
+replaces:
+  - tool: radio-co
+    fit: full
+    note: Scheduling, playout automation and streaming for an internet or broadcast station.
+deploy: [container, compose]

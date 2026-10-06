@@ -1,0 +1,7 @@
+name: MusicBrainz Picard
+repository: https://github.com/metabrainz/picard
+category: music-tagger
+replaces:
+  - tool: mp3tag
+    fit: partial
+    note: Tags files from MusicBrainz by metadata or acoustic fingerprint, with scripts for naming files; less suited to free-form batch edits.

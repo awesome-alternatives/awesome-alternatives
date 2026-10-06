@@ -1,0 +1,7 @@
+name: Quod Libet
+repository: https://github.com/quodlibet/quodlibet
+category: music-player
+replaces:
+  - tool: musicbee
+    fit: partial
+    note: Library player and tag editor with saved searches over large libraries; no device sync.
