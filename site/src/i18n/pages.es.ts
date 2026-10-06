@@ -62,6 +62,7 @@ export const pages: Pages = {
         appAfter: "está instalada en el repositorio, porque instalarla exige ser administrador del mismo.",
         stale:
           "El archivo fecha la verificación con su último commit, y una ficha editada después de esa fecha muestra «editada desde la verificación» hasta que los mantenedores hagan un nuevo commit en el archivo, para lo que basta un comentario # con fecha.",
+        ranking: "En cada lista, una herramienta verificada va antes que las no verificadas con el mismo grado de sustitución, y las estrellas ordenan el resto. Nunca pasa por delante de una sustitución mejor.",
       },
       archived: {
         term: "archivado",

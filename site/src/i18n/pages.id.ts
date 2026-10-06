@@ -62,6 +62,7 @@ export const pages: Pages = {
         appAfter: "dipasang di repositori tersebut, karena memasang app di sana membutuhkan hak admin.",
         stale:
           "File itu memberi tanggal verifikasi dari commit terakhirnya, dan entri yang diedit setelah tanggal itu menampilkan “diedit sejak verifikasi” sampai maintainer melakukan commit baru pada file tersebut, cukup dengan komentar # bertanggal.",
+        ranking: "Di setiap daftar, alat yang terverifikasi ditampilkan sebelum alat yang belum terverifikasi dengan tingkat kecocokan yang sama, dan bintang mengurutkan sisanya. Alat itu tidak pernah melewati pengganti yang lebih cocok.",
       },
       archived: {
         term: "diarsipkan",

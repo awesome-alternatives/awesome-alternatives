@@ -75,6 +75,28 @@ test("alternatives rank by fit, then stars, and skip archived and unrelated tool
   );
 });
 
+test("a verified tool comes first among tools that fit the same way, never above a better fit", () => {
+  const verified = { ...tool("verified", "Rust", [["sr", "full"]], 5), maintainerVerified: true };
+  const tools = [
+    tool("full-big", "Rust", [["sr", "full"]], 900),
+    verified,
+    tool("drop-in", "Go", [["sr", "drop-in"]], 1),
+    { ...tool("verified-partial", "Go", [["sr", "partial"]], 9000), maintainerVerified: true },
+  ];
+  assert.deepEqual(
+    alternativesTo(tools, "sr").map((t) => t.slug),
+    ["drop-in", "verified", "full-big", "verified-partial"],
+  );
+});
+
+test("a listing puts verified tools first, then orders by stars", () => {
+  const groups = groupTools(
+    [tool("big", "Rust", [], 900), { ...tool("small", "Rust", [], 3), maintainerVerified: true }, tool("mid", "Rust", [], 50)],
+    (t) => t.repo.language,
+  );
+  assert.deepEqual(groups[0]?.tools.map((t) => t.slug), ["small", "big", "mid"]);
+});
+
 test("the summary counts the alternatives the page lists, and the drop-in subset of them", () => {
   const archived = tool("archived", "Rust", [["sr", "drop-in"]], 99);
   archived.repo.archived = true;

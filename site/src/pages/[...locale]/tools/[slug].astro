@@ -19,7 +19,7 @@ import { socialImagePath } from "../../../lib/socialImage.ts";
 import { categories, checkedAt, nameOf, ownerFacts, ownerHref, ownerName, pairs, tools } from "../../../lib/catalog.ts";
 import { comparePath, pairForTool } from "../../../lib/compare.ts";
 import { loginOf } from "../../../lib/owners.ts";
-import { alternativesTo } from "../../../lib/filter.ts";
+import { alternativesTo, byStanding } from "../../../lib/filter.ts";
 import { day, stars } from "../../../lib/format.ts";
 import { historyUrl } from "../../../lib/freshness.ts";
 import { webHref } from "../../../lib/href.ts";
@@ -51,7 +51,7 @@ const crumbs = withHome(locale, m.breadcrumb.home, [
 ]);
 const related = tools
   .filter((other) => other.category === tool.category && other.slug !== tool.slug && !other.repo.archived)
-  .sort((a, b) => b.repo.stars - a.repo.stars);
+  .sort(byStanding);
 const topics = repo.topics.filter((t) => t !== "hacktoberfest").slice(0, 8);
 const edit = `https://github.com/awesome-alternatives/awesome-alternatives/edit/main/data/tools/${tool.slug}.yaml`;
 const source = tool.path ? `${tool.repository}/tree/HEAD/${tool.path}` : tool.repository;
