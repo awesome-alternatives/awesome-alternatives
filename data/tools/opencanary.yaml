@@ -1,0 +1,7 @@
+name: OpenCanary
+repository: https://github.com/thinkst/opencanary
+category: honeypot
+replaces:
+  - tool: thinkst-canary
+    fit: partial
+    note: The decoy services and alerts, configured by file, without the hosted console or canary tokens.

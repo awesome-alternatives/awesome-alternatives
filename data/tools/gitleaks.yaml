@@ -1,0 +1,7 @@
+name: Gitleaks
+repository: https://github.com/gitleaks/gitleaks
+category: secret-scanning
+replaces:
+  - tool: gitguardian
+    fit: partial
+    note: Scans repositories, history and diffs for secrets from the CLI, a pre-commit hook or CI, without a dashboard.

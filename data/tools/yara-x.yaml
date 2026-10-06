@@ -1,0 +1,7 @@
+name: YARA-X
+repository: https://github.com/VirusTotal/yara-x
+category: malware-scanner
+replaces:
+  - tool: yara
+    fit: full
+    note: Rewrite of YARA in Rust that runs most existing rules unchanged.

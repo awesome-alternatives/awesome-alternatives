@@ -1,0 +1,7 @@
+name: LinOTP
+repository: https://github.com/LinOTP/LinOTP
+category: mfa-server
+replaces:
+  - tool: duo
+    fit: partial
+    note: Token-based MFA server with RADIUS and REST integrations and fewer ready-made connectors.

@@ -1,0 +1,3 @@
+name: OpenSSF Scorecard
+repository: https://github.com/ossf/scorecard
+category: supply-chain-security

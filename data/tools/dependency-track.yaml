@@ -1,0 +1,10 @@
+name: Dependency-Track
+repository: https://github.com/DependencyTrack/dependency-track
+category: vulnerability-management
+replaces:
+  - tool: black-duck
+    fit: partial
+    note: Tracks components, licences and vulnerabilities from CycloneDX SBOMs; no scanning of its own.
+  - tool: snyk
+    fit: partial
+    note: Continuous monitoring of dependencies from SBOMs with policies, without fix pull requests.

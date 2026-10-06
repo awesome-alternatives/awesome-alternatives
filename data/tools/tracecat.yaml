@@ -1,0 +1,7 @@
+name: Tracecat
+repository: https://github.com/TracecatHQ/tracecat
+category: soar
+replaces:
+  - tool: splunk-soar
+    fit: full
+    note: Playbooks as workflows, case management and integrations, self-hosted.

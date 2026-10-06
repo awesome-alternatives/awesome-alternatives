@@ -1,0 +1,5 @@
+name: Black Duck
+homepage: https://www.blackduck.com
+vendor: Black Duck Software
+category: vulnerability-management
+description: Software composition analysis platform that tracks open source components, licences and vulnerabilities.

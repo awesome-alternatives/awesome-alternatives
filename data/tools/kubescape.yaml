@@ -1,0 +1,7 @@
+name: Kubescape
+repository: https://github.com/kubescape/kubescape
+category: cloud-security-posture
+replaces:
+  - tool: wiz
+    fit: partial
+    note: Kubernetes posture, image vulnerabilities and runtime checks only.

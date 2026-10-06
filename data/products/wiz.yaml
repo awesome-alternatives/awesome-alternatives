@@ -1,0 +1,5 @@
+name: Wiz
+homepage: https://www.wiz.io
+vendor: Wiz
+category: cloud-security-posture
+description: Hosted cloud security platform that scans cloud accounts for misconfigurations, vulnerabilities and exposed secrets.

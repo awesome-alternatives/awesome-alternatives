@@ -1,0 +1,5 @@
+name: reCAPTCHA
+homepage: https://cloud.google.com/security/products/recaptcha
+vendor: Google
+category: captcha
+description: "Google's service that scores or challenges visitors to tell humans from bots."

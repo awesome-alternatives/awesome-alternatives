@@ -1,0 +1,5 @@
+name: Nessus
+homepage: https://www.tenable.com/products/nessus
+vendor: Tenable
+category: security-audit
+description: Vulnerability scanner that checks hosts and network devices for known vulnerabilities and misconfigurations.

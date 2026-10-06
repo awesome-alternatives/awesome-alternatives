@@ -1,0 +1,7 @@
+name: Shuffle
+repository: https://github.com/Shuffle/Shuffle
+category: soar
+replaces:
+  - tool: splunk-soar
+    fit: full
+    note: Visual playbooks with app integrations, triggers and case handoff, self-hosted.

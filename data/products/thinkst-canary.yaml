@@ -1,0 +1,5 @@
+name: Thinkst Canary
+homepage: https://canary.tools
+vendor: Thinkst
+category: honeypot
+description: Hosted honeypot service with decoy devices and canary tokens that alert on access.

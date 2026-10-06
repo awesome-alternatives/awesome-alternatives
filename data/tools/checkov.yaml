@@ -1,0 +1,7 @@
+name: Checkov
+repository: https://github.com/bridgecrewio/checkov
+category: iac-scanner
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Only the infrastructure as code checks, for Terraform, CloudFormation, Kubernetes and more.

@@ -1580,3 +1580,86 @@ runbook-automation:
   name: Runbook automation
   description: Turn operational procedures into jobs that run on servers on demand, on a schedule or in response to events, with access control and an audit trail.
   selfHost: true
+
+vulnerability-management:
+  name: Vulnerability management
+  description: Collect findings from scanners and SBOMs in one place, track them per product and follow them to a fix.
+  selfHost: true
+
+sbom-tool:
+  name: SBOM generators
+  description: Generate software bills of materials in SPDX or CycloneDX from source trees, images and binaries.
+
+dast-scanner:
+  name: Web vulnerability scanners
+  description: Probe running web applications and APIs for vulnerabilities from the outside.
+
+iac-scanner:
+  name: Infrastructure as code scanners
+  description: Check Terraform, Kubernetes manifests and other infrastructure code for insecure settings before it is applied.
+
+cloud-security-posture:
+  name: Cloud security posture
+  description: Audit cloud accounts and Kubernetes clusters against security benchmarks and report misconfigurations.
+  selfHost: true
+
+security-audit:
+  name: Host and network audits
+  description: Scan servers, networks and TLS endpoints for missing patches, weak configuration and known vulnerabilities.
+  selfHost: true
+
+secret-scanning:
+  name: Secret scanners
+  description: Find API keys, passwords and tokens committed to code, git history and other places they should not be.
+
+supply-chain-security:
+  name: Software supply chain
+  description: Sign and verify artifacts, and assess the security practices of the projects you depend on.
+
+soar:
+  name: Security orchestration and response
+  description: Automate security response playbooks and track alerts and incidents as cases.
+  selfHost: true
+
+threat-intelligence:
+  name: Threat intelligence platforms
+  description: Collect, enrich and share indicators of compromise and knowledge about threats.
+  selfHost: true
+
+honeypot:
+  name: Honeypots
+  description: Decoy services that attract attackers and record what they try.
+  selfHost: true
+
+malware-scanner:
+  name: Malware scanners
+  description: Scan files for malware with signatures, pattern rules or sandboxed execution.
+  selfHost: true
+
+captcha:
+  name: CAPTCHAs and bot checks
+  description: Tell humans from bots on forms and sign-ups without sending visitors to a third-party tracker.
+  selfHost: true
+
+mfa-server:
+  name: MFA servers
+  description: Run two-factor authentication for VPNs, servers and applications from your own server.
+  selfHost: true
+
+file-encryption:
+  name: File and volume encryption
+  description: Encrypt single files, folders or whole volumes before they are stored or synced.
+
+content-blocker:
+  name: Content blockers
+  description: Browser extensions that block ads, trackers and other unwanted content on web pages.
+
+secret-sharing:
+  name: One-time secret sharing
+  description: Share a password or other secret through a link that stops working once it is read.
+  selfHost: true
+
+private-search:
+  name: Private search engines
+  description: Metasearch engines you host, which query other search engines without profiling who searches.
+  selfHost: true

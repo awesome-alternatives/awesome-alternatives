@@ -1,0 +1,10 @@
+name: ALTCHA
+repository: https://github.com/altcha-org/altcha
+category: captcha
+replaces:
+  - tool: recaptcha
+    fit: full
+    note: Proof-of-work widget verified on your own server, with no cookies or tracking.
+  - tool: hcaptcha
+    fit: full
+    note: Proof-of-work widget verified on your own server, with no cookies or tracking.

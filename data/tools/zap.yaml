@@ -1,0 +1,7 @@
+name: ZAP
+repository: https://github.com/zaproxy/zaproxy
+category: dast-scanner
+replaces:
+  - tool: burp-suite
+    fit: full
+    note: Intercepting proxy, active and passive scanner and automation framework for web apps and APIs.

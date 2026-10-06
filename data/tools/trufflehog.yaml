@@ -1,0 +1,7 @@
+name: TruffleHog
+repository: https://github.com/trufflesecurity/trufflehog
+category: secret-scanning
+replaces:
+  - tool: gitguardian
+    fit: partial
+    note: Finds and verifies secrets in git, buckets, chat and more from the CLI or CI, without a remediation dashboard.

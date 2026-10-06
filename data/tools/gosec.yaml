@@ -1,0 +1,3 @@
+name: gosec
+repository: https://github.com/securego/gosec
+category: static-analysis

@@ -1,0 +1,7 @@
+name: T-Pot
+repository: https://github.com/telekom-security/tpotce
+category: honeypot
+replaces:
+  - tool: thinkst-canary
+    fit: partial
+    note: Many honeypots and dashboards on one host you run, aimed at research rather than quiet internal tripwires.
