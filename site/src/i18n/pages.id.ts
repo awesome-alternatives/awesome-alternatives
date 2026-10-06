@@ -159,11 +159,13 @@ export const pages: Pages = {
       dataBefore: "Alamat IP, tanggal dan waktu, alamat yang diminta (termasuk pencarian yang diketik di bilah alamat sebagai",
       dataAfter: "), status dan ukuran respons, halaman perujuk, user agent browser, header forwarded-for",
       purpose: "Menjalankan situs, mendiagnosis error, mendeteksi dan menghentikan penyalahgunaan",
+      retention: "Hanya disimpan di keluaran kontainer di server: paling banyak 5 berkas berukuran 10 MB, baris tertua ditimpa lebih dulu, dan hilang saat kontainer diganti. Tidak disalin ke tempat lain.",
     },
     reverseProxyLog: {
       heading: "Log akses reverse proxy",
       body: "Permintaan ke situs dan ke API pencariannya melewati reverse proxy di penyedia hosting, yang menyimpan log aksesnya sendiri dengan jenis data yang sama.",
       purpose: "Merutekan permintaan, mendiagnosis error, mendeteksi dan menghentikan penyalahgunaan",
+      proxyAndRetention: "Traefik, di server penyedia hosting di Prancis. Log aksesnya disimpan dengan cara yang sama: di keluaran kontainer, paling banyak 5 berkas berukuran 10 MB, tidak disalin ke tempat lain.",
     },
     rateLimiting: {
       heading: "Pembatasan laju pencarian",
@@ -183,6 +185,7 @@ export const pages: Pages = {
       purpose: "Menjawab pencarian yang Anda minta",
       retention:
         "Kueri yang ditafsirkan oleh Jev di-cache di memori API bersama hasilnya, tanpa kaitan apa pun dengan pengirimnya, paling lama 24 jam. Cache juga dikosongkan setiap kali katalog diperbarui, setiap jam, dan setiap kali server dimulai ulang. Tidak pernah ditulis ke disk.",
+      where: "Amerika Serikat, tempat TypeSafe menghosting Jev. Kebijakan privasinya tidak menyebut mekanisme transfer dari UE, sehingga API hanya mengirim teks pencarian, tidak pernah alamat IP atau pengenal.",
       addressBefore: "Pencarian juga menaruh kueri Anda di alamat halaman",
       addressAfter:
         ") agar hasilnya bisa dibagikan. Kueri itu tetap ada di riwayat browser Anda, dan masuk ke log akses di atas saat alamat tersebut dimuat.",
@@ -225,10 +228,11 @@ export const pages: Pages = {
       address: "Alamat",
       email: "Email",
       phone: "Telepon",
+      registration: "Nomor registrasi",
     },
     publisher: {
       heading: "Penerbit",
-      body: "awesome-alternatives.com diterbitkan oleh perorangan, secara non-profesional.",
+      body: "awesome-alternatives.com diterbitkan oleh Bryan Ferrando, pengusaha perorangan (entrepreneur individuel) dengan nama dagang FerrLabs. PPN tidak berlaku berdasarkan pasal 293 B Kode Pajak Prancis.",
     },
     publicationDirector: {
       heading: "Direktur publikasi",
@@ -317,7 +321,7 @@ export const pages: Pages = {
       incomplete: "Isi email, subjek, dan pesan Anda.",
       invalid: "Periksa alamat email Anda, dan pastikan subjek serta pesannya tidak terlalu panjang.",
       tooMany: "Terlalu banyak pesan dari sini dalam waktu singkat. Silakan coba lagi dalam beberapa menit.",
-      failed: "Pesan tidak dapat dikirim. Silakan coba lagi, atau kirim surat ke contact@ferrlabs.com.",
+      failed: "Pesan tidak dapat dikirim. Silakan coba lagi, atau kirim surat ke contact@awesome-alternatives.com.",
     },
   },
 };
