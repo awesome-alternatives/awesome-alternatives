@@ -1,0 +1,5 @@
+name: PRTG Network Monitor
+homepage: https://www.paessler.com/prtg
+vendor: Paessler
+category: metrics
+description: Commercial infrastructure and network monitoring software for Windows, licensed by the number of sensors.

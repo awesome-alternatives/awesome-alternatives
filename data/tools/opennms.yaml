@@ -1,0 +1,8 @@
+name: OpenNMS
+repository: https://github.com/OpenNMS/opennms
+category: metrics
+terms: open
+replaces:
+  - tool: solarwinds-npm
+    fit: full
+    note: Network discovery, SNMP and flow collection, event correlation and alarms.

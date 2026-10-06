@@ -1,0 +1,3 @@
+name: Sensu Go
+repository: https://github.com/sensu/sensu-go
+category: metrics

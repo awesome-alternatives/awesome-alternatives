@@ -1,0 +1,7 @@
+name: youki
+repository: https://github.com/youki-dev/youki
+category: container-engine
+replaces:
+  - tool: runc
+    fit: drop-in
+    note: OCI runtime written in Rust.

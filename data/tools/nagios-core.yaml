@@ -1,0 +1,7 @@
+name: Nagios Core
+repository: https://github.com/NagiosEnterprises/nagioscore
+category: metrics
+replaces:
+  - tool: prtg
+    fit: partial
+    note: Host and service checks with plugins and notifications, with a basic CGI web UI.

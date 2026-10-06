@@ -1,0 +1,3 @@
+name: Jib
+repository: https://github.com/GoogleContainerTools/jib
+category: container-engine

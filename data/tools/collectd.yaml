@@ -1,0 +1,4 @@
+name: collectd
+repository: https://github.com/collectd/collectd
+category: metrics
+terms: open

@@ -1,0 +1,7 @@
+name: Checkmk
+repository: https://github.com/Checkmk/checkmk
+category: metrics
+replaces:
+  - tool: prtg
+    fit: full
+    note: Agent and SNMP monitoring with automatic service discovery, in the GPL Raw edition.

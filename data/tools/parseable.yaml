@@ -1,0 +1,7 @@
+name: Parseable
+repository: https://github.com/parseablehq/parseable
+category: log-storage
+replaces:
+  - tool: splunk
+    fit: partial
+    note: "Log ingestion, SQL search and alerts on object storage, without Splunk's apps and SPL."

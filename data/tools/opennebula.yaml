@@ -1,0 +1,7 @@
+name: OpenNebula
+repository: https://github.com/OpenNebula/one
+category: virtualization
+replaces:
+  - tool: vmware-vsphere
+    fit: full
+    note: Manages KVM and LXC hosts, storage and networks from one web UI, with multi-tenancy.

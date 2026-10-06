@@ -1,0 +1,8 @@
+name: Xen Orchestra
+repository: https://github.com/vatesfr/xen-orchestra
+category: virtualization
+terms: open
+replaces:
+  - tool: vmware-vsphere
+    fit: partial
+    note: Web management and backups for XCP-ng and XenServer pools, which provide the hypervisor.

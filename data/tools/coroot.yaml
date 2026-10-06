@@ -1,0 +1,7 @@
+name: Coroot
+repository: https://github.com/coroot/coroot
+category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: eBPF-based service maps, metrics, logs, traces and profiles, with no code changes needed.

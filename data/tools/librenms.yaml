@@ -1,0 +1,11 @@
+name: LibreNMS
+repository: https://github.com/librenms/librenms
+category: metrics
+terms: open
+replaces:
+  - tool: solarwinds-npm
+    fit: full
+    note: SNMP discovery, graphs, alerting and maps for network devices from many vendors.
+  - tool: prtg
+    fit: partial
+    note: "Network devices and servers over SNMP, without PRTG's range of application sensors."

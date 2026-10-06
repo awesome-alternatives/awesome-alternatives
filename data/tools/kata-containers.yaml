@@ -1,0 +1,7 @@
+name: Kata Containers
+repository: https://github.com/kata-containers/kata-containers
+category: container-engine
+replaces:
+  - tool: runc
+    fit: drop-in
+    note: OCI runtime that runs each container or pod in a lightweight virtual machine.

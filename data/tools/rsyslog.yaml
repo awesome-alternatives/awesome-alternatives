@@ -1,0 +1,3 @@
+name: rsyslog
+repository: https://github.com/rsyslog/rsyslog
+category: log-pipeline
