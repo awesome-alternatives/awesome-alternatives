@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.119.0] - 2026-10-06
+
+### Features
+
+- feat(site): drop the local or Jev label from search results (#379)
+- feat(catalog): add 52 security and identity tools (#358)
+
 ## [0.118.1] - 2026-10-06
 
 ### Bug Fixes
