@@ -1,0 +1,7 @@
+name: Renovate
+repository: https://github.com/renovatebot/renovate
+category: dependency-updates
+replaces:
+  - tool: dependabot-core
+    fit: full
+    note: Opens update pull requests on GitHub, GitLab, Bitbucket and other forges, with grouping and automerge rules.

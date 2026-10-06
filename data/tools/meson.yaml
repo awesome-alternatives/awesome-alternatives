@@ -1,0 +1,3 @@
+name: Meson
+repository: https://github.com/mesonbuild/meson
+category: build-system

@@ -1,0 +1,7 @@
+name: sccache
+repository: https://github.com/mozilla/sccache
+category: build-cache
+replaces:
+  - tool: ccache
+    fit: full
+    note: Caches C and C++ like ccache, plus Rust and CUDA, with optional cloud storage backends.

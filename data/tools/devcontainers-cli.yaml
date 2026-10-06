@@ -1,0 +1,7 @@
+name: Dev Container CLI
+repository: https://github.com/devcontainers/cli
+category: dev-environment
+replaces:
+  - tool: github-codespaces
+    fit: partial
+    note: Builds and runs devcontainer.json environments on your own machine or server.

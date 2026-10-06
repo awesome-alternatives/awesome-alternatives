@@ -1,0 +1,4 @@
+name: ccache
+repository: https://github.com/ccache/ccache
+category: build-cache
+terms: open

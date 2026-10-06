@@ -1,0 +1,3 @@
+name: direnv
+repository: https://github.com/direnv/direnv
+category: dev-environment

@@ -1,0 +1,3 @@
+name: PHP_CodeSniffer
+repository: https://github.com/PHPCSStandards/PHP_CodeSniffer
+category: php-lint-format

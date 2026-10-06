@@ -1,0 +1,3 @@
+name: Psalm
+repository: https://github.com/vimeo/psalm
+category: php-lint-format

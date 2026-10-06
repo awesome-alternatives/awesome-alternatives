@@ -1,0 +1,3 @@
+name: PHP CS Fixer
+repository: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
+category: php-lint-format

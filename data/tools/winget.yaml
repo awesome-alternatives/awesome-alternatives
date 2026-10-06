@@ -1,0 +1,3 @@
+name: WinGet
+repository: https://github.com/microsoft/winget-cli
+category: system-package-manager

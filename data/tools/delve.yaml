@@ -1,0 +1,3 @@
+name: Delve
+repository: https://github.com/go-delve/delve
+category: debugger

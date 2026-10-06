@@ -1,0 +1,3 @@
+name: Conan
+repository: https://github.com/conan-io/conan
+category: cpp-package-manager
