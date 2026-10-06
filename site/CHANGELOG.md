@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.99.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): count maintainer-verified tools and show it in the README (#328)
+
 ## [0.98.0] - 2026-10-06
 
 ### Features
