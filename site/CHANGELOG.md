@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.117.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 54 AI and machine learning tools (#363)
+
 ## [0.116.0] - 2026-10-06
 
 ### Features
