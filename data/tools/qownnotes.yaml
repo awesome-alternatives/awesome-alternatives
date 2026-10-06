@@ -1,0 +1,10 @@
+name: QOwnNotes
+repository: https://github.com/pbek/QOwnNotes
+category: note-taking
+replaces:
+  - tool: evernote
+    fit: partial
+    note: Markdown notes kept as plain files, synced through Nextcloud or any folder sync.
+  - tool: obsidian
+    fit: partial
+    note: Desktop Markdown notes over a local folder, with scripting.

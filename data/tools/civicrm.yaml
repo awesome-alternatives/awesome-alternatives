@@ -1,0 +1,7 @@
+name: CiviCRM
+repository: https://github.com/civicrm/civicrm-core
+category: crm
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Contacts, donations, memberships, events and mailings for nonprofits, running on Drupal, WordPress, Joomla or Backdrop.

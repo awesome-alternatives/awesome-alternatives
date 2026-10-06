@@ -1,0 +1,8 @@
+name: OrangeHRM
+repository: https://github.com/orangehrm/orangehrm
+category: hr-management
+replaces:
+  - tool: bamboohr
+    fit: partial
+    note: Employee records, leave, time, recruitment and performance reviews, without payroll.
+deploy: [container]

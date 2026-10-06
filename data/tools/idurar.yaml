@@ -1,0 +1,7 @@
+name: IDURAR
+repository: https://github.com/idurar/idurar-erp-crm
+category: crm
+replaces:
+  - tool: quickbooks
+    fit: partial
+    note: Customers, quotes, invoices and payments, without bookkeeping.

@@ -1,0 +1,9 @@
+name: metasfresh
+repository: https://github.com/metasfresh/metasfresh
+category: erp
+terms: open
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Sales, purchasing, warehouse, manufacturing and accounting, focused on wholesale and food.
+deploy: [container]

@@ -1,0 +1,8 @@
+name: Axelor Open Suite
+repository: https://github.com/axelor/axelor-open-suite
+category: erp
+terms: open
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Sales, purchasing, stock, accounting, projects and HR modules on a low-code platform.

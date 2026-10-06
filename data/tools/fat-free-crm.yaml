@@ -1,0 +1,8 @@
+name: Fat Free CRM
+repository: https://github.com/fatfreecrm/fat_free_crm
+category: crm
+terms: open
+replaces:
+  - tool: salesforce
+    fit: partial
+    note: Leads, contacts, accounts, opportunities and campaigns in a Rails app.

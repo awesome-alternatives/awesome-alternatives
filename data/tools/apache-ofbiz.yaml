@@ -1,0 +1,8 @@
+name: Apache OFBiz
+repository: https://github.com/apache/ofbiz-framework
+category: erp
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Accounting, orders, inventory, manufacturing and e-commerce components on a Java framework.
+deploy: [container]

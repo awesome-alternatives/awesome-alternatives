@@ -1,0 +1,7 @@
+name: Atomic CRM
+repository: https://github.com/marmelab/atomic-crm
+category: crm
+replaces:
+  - tool: pipedrive
+    fit: partial
+    note: Contacts, companies, notes and deals on a kanban pipeline, running on Supabase.

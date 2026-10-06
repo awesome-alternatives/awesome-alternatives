@@ -1,0 +1,8 @@
+name: CherryTree
+repository: https://github.com/giuspen/cherrytree
+category: note-taking
+terms: open
+replaces:
+  - tool: onenote
+    fit: partial
+    note: Hierarchical notes with rich text and code nodes, stored in one local file, without sync.

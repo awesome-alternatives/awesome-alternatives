@@ -1,0 +1,10 @@
+name: Standard Notes
+repository: https://github.com/standardnotes/app
+category: note-taking
+replaces:
+  - tool: evernote
+    fit: partial
+    note: End-to-end encrypted notes and files with tags.
+  - tool: google-keep
+    fit: partial
+    note: Encrypted notes synced across web, desktop and mobile.

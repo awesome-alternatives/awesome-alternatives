@@ -1,0 +1,8 @@
+name: wikmd
+repository: https://github.com/Linbreux/wikmd
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: partial
+    note: Markdown pages stored as plain files with git history, for small teams.
+deploy: [container]

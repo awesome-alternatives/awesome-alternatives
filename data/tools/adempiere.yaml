@@ -1,0 +1,7 @@
+name: ADempiere
+repository: https://github.com/adempiere/adempiere
+category: erp
+replaces:
+  - tool: netsuite
+    fit: partial
+    note: Accounting, distribution, manufacturing and point of sale for small and medium businesses.

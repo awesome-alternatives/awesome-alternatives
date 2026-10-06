@@ -1,0 +1,11 @@
+name: Frappe CRM
+repository: https://github.com/frappe/crm
+category: crm
+replaces:
+  - tool: pipedrive
+    fit: full
+    note: Leads and deals on kanban boards, with email, calls, notes and tasks.
+  - tool: salesforce
+    fit: partial
+    note: Leads, deals and custom fields, without marketing or service clouds.
+deploy: [compose]

@@ -1,0 +1,11 @@
+name: ActivityWatch
+repository: https://github.com/ActivityWatch/activitywatch
+category: time-tracking
+replaces:
+  - tool: rescuetime
+    fit: full
+    note: Automatic tracking of active apps, window titles and websites, stored on your own machine.
+  - tool: wakatime
+    fit: partial
+    note: Editor watchers track coding time locally, with fewer language and project reports.
+deploy: [binary]

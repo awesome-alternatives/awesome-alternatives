@@ -1,0 +1,9 @@
+name: IceHrm
+repository: https://github.com/gamonoid/icehrm
+category: hr-management
+terms: source-available
+replaces:
+  - tool: bamboohr
+    fit: partial
+    note: Employee records, leave, attendance and time sheets.
+deploy: [compose]

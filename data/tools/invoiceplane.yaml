@@ -1,0 +1,8 @@
+name: InvoicePlane
+repository: https://github.com/InvoicePlane/InvoicePlane
+category: invoicing
+terms: open
+replaces:
+  - tool: freshbooks
+    fit: partial
+    note: Clients, quotes, invoices and payments, with recurring invoices and online payment providers.

@@ -1,0 +1,5 @@
+name: OpenCATS
+repository: https://github.com/opencats/OpenCATS
+category: hr-management
+terms: open
+deploy: [compose]

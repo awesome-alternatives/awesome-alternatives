@@ -1,0 +1,8 @@
+name: Traggo
+repository: https://github.com/traggo/server
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: partial
+    note: Time spans tagged with key-value pairs instead of projects, with dashboards.
+deploy: [container]

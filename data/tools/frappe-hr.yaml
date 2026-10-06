@@ -1,0 +1,8 @@
+name: Frappe HR
+repository: https://github.com/frappe/hrms
+category: hr-management
+replaces:
+  - tool: bamboohr
+    fit: full
+    note: Employee records, leave, attendance, expense claims, performance and payroll.
+deploy: [compose]

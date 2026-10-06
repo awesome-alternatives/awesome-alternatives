@@ -1,0 +1,10 @@
+name: Nextcloud Collectives
+repository: https://github.com/nextcloud/collectives
+category: knowledge-base
+replaces:
+  - tool: confluence
+    fit: partial
+    note: Team wikis of Markdown pages inside Nextcloud, with shared editing and templates.
+  - tool: notion
+    fit: partial
+    note: Nested pages edited together, without databases.

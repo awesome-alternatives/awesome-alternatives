@@ -1,0 +1,11 @@
+name: titra
+repository: https://github.com/titraio/titra
+category: time-tracking
+replaces:
+  - tool: toggl-track
+    fit: full
+    note: Timers and timesheets per project and customer, with reports and an API.
+  - tool: harvest
+    fit: partial
+    note: Time tracking with rates and budgets, without invoices or expenses.
+deploy: [container, compose]

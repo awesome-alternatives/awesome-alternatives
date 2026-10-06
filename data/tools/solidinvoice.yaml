@@ -1,0 +1,8 @@
+name: SolidInvoice
+repository: https://github.com/SolidInvoice/SolidInvoice
+category: invoicing
+replaces:
+  - tool: freshbooks
+    fit: partial
+    note: Quotes, invoices, recurring billing and online payments, without expenses or time tracking.
+deploy: [container]

@@ -1,0 +1,14 @@
+name: Focalboard
+repository: https://github.com/mattermost-community/focalboard
+category: project-management
+terms: open
+replaces:
+  - tool: trello
+    fit: full
+    note: Kanban boards with cards, properties and templates.
+  - tool: asana
+    fit: partial
+    note: Tasks in board, table, gallery and calendar views.
+  - tool: notion
+    fit: partial
+    note: Board databases with views, without wiki pages.
