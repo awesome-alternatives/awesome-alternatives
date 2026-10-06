@@ -1,0 +1,8 @@
+name: Supavisor
+repository: https://github.com/supabase/supavisor
+category: database-proxy
+replaces:
+  - tool: amazon-rds-proxy
+    fit: partial
+    note: Multi-tenant PostgreSQL connection pooler built for many databases behind one cluster.
+deploy: [container]

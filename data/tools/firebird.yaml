@@ -1,0 +1,5 @@
+name: Firebird
+repository: https://github.com/FirebirdSQL/firebird
+category: relational-database
+terms: open
+deploy: [container, binary]

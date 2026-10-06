@@ -1,0 +1,8 @@
+name: OrientDB
+repository: https://github.com/orientechnologies/orientdb
+category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Multi-model graph and document database queried in an SQL dialect and Gremlin rather than Cypher.
+deploy: [container]

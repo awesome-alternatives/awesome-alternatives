@@ -1,0 +1,7 @@
+name: Apache Cloudberry
+repository: https://github.com/apache/cloudberry
+category: analytical-database
+replaces:
+  - tool: amazon-redshift
+    fit: partial
+    note: MPP data warehouse built on PostgreSQL and derived from Greenplum, run on your own servers.

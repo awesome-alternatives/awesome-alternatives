@@ -1,0 +1,7 @@
+name: chDB
+repository: https://github.com/chdb-io/chdb
+category: analytical-database
+replaces:
+  - tool: duckdb
+    fit: partial
+    note: In-process SQL OLAP engine for Python built on ClickHouse, with ClickHouse's SQL dialect and functions.

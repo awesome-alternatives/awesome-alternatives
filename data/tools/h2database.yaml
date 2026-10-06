@@ -1,0 +1,4 @@
+name: H2 Database Engine
+repository: https://github.com/h2database/h2database
+category: relational-database
+terms: open

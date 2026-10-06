@@ -1,0 +1,8 @@
+name: Turso Database
+repository: https://github.com/tursodatabase/turso
+category: relational-database
+replaces:
+  - tool: sqlite
+    fit: partial
+    note: Rewrite of SQLite in Rust that reads and writes SQLite files and adds concurrent writes; still in beta.
+deploy: [binary]

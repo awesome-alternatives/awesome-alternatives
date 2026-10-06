@@ -1,0 +1,4 @@
+name: pg_auto_failover
+repository: https://github.com/hapostgres/pg_auto_failover
+category: database-high-availability
+terms: open

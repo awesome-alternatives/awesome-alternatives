@@ -1,0 +1,4 @@
+name: TerminusDB
+repository: https://github.com/terminusdb/terminusdb
+category: graph-database
+deploy: [container]

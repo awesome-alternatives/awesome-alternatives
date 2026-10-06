@@ -1,0 +1,8 @@
+name: ProxySQL
+repository: https://github.com/sysown/proxysql
+category: database-proxy
+replaces:
+  - tool: amazon-rds-proxy
+    fit: partial
+    note: Pools and routes MySQL and PostgreSQL connections, with query rules, caching and read/write splitting.
+deploy: [container, package]

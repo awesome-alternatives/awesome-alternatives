@@ -1,0 +1,4 @@
+name: Apache Kylin
+repository: https://github.com/apache/kylin
+category: analytical-database
+deploy: [container]

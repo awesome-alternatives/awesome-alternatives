@@ -1,0 +1,7 @@
+name: LanceDB
+repository: https://github.com/lancedb/lancedb
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Embedded vector and full-text search over Lance files on local disk or object storage, without a server to run.

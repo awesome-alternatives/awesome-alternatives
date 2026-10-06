@@ -1,0 +1,4 @@
+name: OrioleDB
+repository: https://github.com/orioledb/orioledb
+category: relational-database
+deploy: [container]

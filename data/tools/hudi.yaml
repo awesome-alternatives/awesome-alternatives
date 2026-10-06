@@ -1,0 +1,3 @@
+name: Apache Hudi
+repository: https://github.com/apache/hudi
+category: table-format

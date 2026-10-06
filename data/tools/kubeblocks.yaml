@@ -1,0 +1,8 @@
+name: KubeBlocks
+repository: https://github.com/apecloud/kubeblocks
+category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: One Kubernetes operator for PostgreSQL, MySQL, Redis, MongoDB and other engines, with backups, failover and scaling.
+deploy: [helm]

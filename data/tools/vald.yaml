@@ -1,0 +1,8 @@
+name: Vald
+repository: https://github.com/vdaas/vald
+category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Distributed approximate nearest-neighbour search that runs on Kubernetes.
+deploy: [helm, container]

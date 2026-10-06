@@ -1,0 +1,4 @@
+name: etcd
+repository: https://github.com/etcd-io/etcd
+category: distributed-key-value
+deploy: [container, binary]

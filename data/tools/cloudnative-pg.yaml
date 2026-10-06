@@ -1,0 +1,8 @@
+name: CloudNativePG
+repository: https://github.com/cloudnative-pg/cloudnative-pg
+category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: PostgreSQL clusters with failover, backups to object storage and point-in-time recovery on your own Kubernetes; PostgreSQL only.
+deploy: [helm, container]

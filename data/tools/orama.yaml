@@ -1,0 +1,8 @@
+name: Orama
+repository: https://github.com/oramasearch/orama
+category: search-engine
+terms: open
+replaces:
+  - tool: algolia
+    fit: partial
+    note: Full-text, vector and hybrid search that runs in the browser or a JavaScript server, over an index you build and ship.

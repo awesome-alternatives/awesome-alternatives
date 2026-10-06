@@ -1,0 +1,7 @@
+name: Fjall
+repository: https://github.com/fjall-rs/fjall
+category: embedded-key-value
+replaces:
+  - tool: rocksdb
+    fit: partial
+    note: LSM-tree key-value store in Rust with keyspaces and transactions, without C++ bindings.

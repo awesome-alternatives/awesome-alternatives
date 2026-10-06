@@ -856,3 +856,29 @@ hr-management:
   name: HR management
   description: Employee records, leave, recruitment and payroll.
   selfHost: true
+
+embedded-key-value:
+  name: Embedded key-value stores
+  description: Key-value storage engines linked into a program as a library, with no server to run.
+
+distributed-key-value:
+  name: Distributed key-value stores
+  description: Replicated, transactional key-value stores that run as a cluster.
+  selfHost: true
+
+table-format:
+  name: Lakehouse table formats
+  description: Open table formats that add transactions, schema evolution and time travel to files on object storage.
+
+database-proxy:
+  name: Database proxies and connection poolers
+  description: Pool, route and multiplex client connections in front of a database server.
+  selfHost: true
+
+database-backup:
+  name: Database backup
+  description: Physical backups, WAL archiving and point-in-time recovery for database servers.
+
+database-high-availability:
+  name: Database high availability
+  description: Manage replication and automatic failover for a cluster of database servers.

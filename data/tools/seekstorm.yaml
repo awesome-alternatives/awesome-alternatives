@@ -1,0 +1,7 @@
+name: SeekStorm
+repository: https://github.com/SeekStorm/SeekStorm
+category: search-engine
+replaces:
+  - tool: algolia
+    fit: partial
+    note: Full-text search as a Rust library or an HTTP server with a REST API; no hosted dashboard.

@@ -1,0 +1,3 @@
+name: Patroni
+repository: https://github.com/patroni/patroni
+category: database-high-availability

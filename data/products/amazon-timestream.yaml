@@ -1,0 +1,5 @@
+name: Amazon Timestream
+homepage: https://aws.amazon.com/timestream/
+vendor: Amazon Web Services
+category: time-series-database
+description: Hosted time series database on AWS, offered with its own engine and as managed InfluxDB.

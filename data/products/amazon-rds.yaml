@@ -1,0 +1,5 @@
+name: Amazon RDS
+homepage: https://aws.amazon.com/rds/
+vendor: Amazon Web Services
+category: relational-database
+description: Managed relational databases on AWS, including PostgreSQL, MySQL, MariaDB, SQL Server and Oracle.

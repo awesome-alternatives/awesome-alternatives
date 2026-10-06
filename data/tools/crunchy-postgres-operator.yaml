@@ -1,0 +1,7 @@
+name: Crunchy Postgres for Kubernetes
+repository: https://github.com/CrunchyData/postgres-operator
+category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: PostgreSQL clusters on Kubernetes with pgBackRest backups, Patroni failover and PgBouncer pooling; PostgreSQL only.

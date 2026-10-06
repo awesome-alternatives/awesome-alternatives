@@ -1,0 +1,5 @@
+name: RavenDB
+repository: https://github.com/ravendb/ravendb
+category: document-database
+terms: source-available
+deploy: [container]

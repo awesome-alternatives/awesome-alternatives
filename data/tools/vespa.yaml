@@ -1,0 +1,8 @@
+name: Vespa
+repository: https://github.com/vespa-engine/vespa
+category: search-engine
+replaces:
+  - tool: algolia
+    fit: partial
+    note: Text, vector and structured search with custom ranking on your own servers; no hosted dashboard or UI widgets.
+deploy: [container]
