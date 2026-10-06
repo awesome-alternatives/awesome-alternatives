@@ -1,0 +1,7 @@
+name: Kellnr
+repository: https://github.com/kellnr/kellnr
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Rust crates only, as a private registry and crates.io proxy.

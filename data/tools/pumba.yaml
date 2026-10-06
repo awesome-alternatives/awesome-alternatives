@@ -1,0 +1,7 @@
+name: Pumba
+repository: https://github.com/alexei-led/pumba
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: partial
+    note: Kills, pauses and degrades the network of Docker containers from a CLI.

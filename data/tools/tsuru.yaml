@@ -1,0 +1,7 @@
+name: Tsuru
+repository: https://github.com/tsuru/tsuru
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Deploys apps from git or images onto Kubernetes, with service add-ons and teams.

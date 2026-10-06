@@ -1,0 +1,7 @@
+name: flagd
+repository: https://github.com/open-feature/flagd
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: partial
+    note: Evaluates flags from files, HTTP or Kubernetes resources for OpenFeature SDKs, with no management UI.

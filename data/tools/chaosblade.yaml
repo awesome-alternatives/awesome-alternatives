@@ -1,0 +1,7 @@
+name: ChaosBlade
+repository: https://github.com/chaosblade-io/chaosblade
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: full
+    note: CPU, memory, disk, network, process and JVM faults on hosts, containers and Kubernetes.

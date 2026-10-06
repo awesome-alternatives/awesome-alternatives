@@ -1,0 +1,7 @@
+name: Fission
+repository: https://github.com/fission/fission
+category: serverless-platform
+replaces:
+  - tool: aws-lambda
+    fit: full
+    note: Functions from source in several languages on Kubernetes, triggered by HTTP, timers and queues.

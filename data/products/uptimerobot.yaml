@@ -1,0 +1,5 @@
+name: UptimeRobot
+homepage: https://uptimerobot.com
+vendor: UptimeRobot
+category: uptime-monitoring
+description: Hosted uptime monitoring for websites, ports and cron jobs, with alerts and status pages.

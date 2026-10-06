@@ -1,0 +1,5 @@
+name: Octopus Deploy
+homepage: https://octopus.com
+vendor: Octopus Deploy
+category: continuous-delivery
+description: Commercial release and deployment server that promotes builds through environments, available hosted or on your own servers.

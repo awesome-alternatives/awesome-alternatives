@@ -1,0 +1,5 @@
+name: Red Hat Ansible Automation Platform
+homepage: https://www.redhat.com/en/technologies/management/ansible
+vendor: Red Hat
+category: config-management
+description: "Red Hat's subscription product around Ansible, with a web controller for running playbooks, credentials, RBAC and certified content."

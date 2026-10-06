@@ -1,0 +1,7 @@
+name: Buildbot
+repository: https://github.com/buildbot/buildbot
+category: ci-server
+replaces:
+  - tool: jenkins
+    fit: full
+    note: Build pipelines configured in Python, with distributed workers.

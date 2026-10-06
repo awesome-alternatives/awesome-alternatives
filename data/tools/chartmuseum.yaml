@@ -1,0 +1,7 @@
+name: ChartMuseum
+repository: https://github.com/helm/chartmuseum
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Helm charts only, stored on local disk or object storage.

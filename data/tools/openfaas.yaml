@@ -1,0 +1,8 @@
+name: OpenFaaS
+repository: https://github.com/openfaas/faas
+category: serverless-platform
+terms: source-available
+replaces:
+  - tool: aws-lambda
+    fit: partial
+    note: Functions packaged as containers on Kubernetes, scaled on requests, with event connectors in paid editions.

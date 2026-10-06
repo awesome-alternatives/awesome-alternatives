@@ -1,0 +1,7 @@
+name: Tofu Controller
+repository: https://github.com/flux-iac/tofu-controller
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: partial
+    note: Reconciles Terraform and OpenTofu from Flux sources, with plans and drift detection, without a run UI.

@@ -1,0 +1,7 @@
+name: Apache OpenWhisk
+repository: https://github.com/apache/openwhisk
+category: serverless-platform
+replaces:
+  - tool: aws-lambda
+    fit: full
+    note: Event-driven functions in many languages, with triggers, rules and sequences.

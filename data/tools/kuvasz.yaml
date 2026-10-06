@@ -1,0 +1,7 @@
+name: Kuvasz
+repository: https://github.com/kuvasz-uptime/kuvasz
+category: uptime-monitoring
+replaces:
+  - tool: uptimerobot
+    fit: partial
+    note: HTTP and TLS certificate monitoring with alerts and status pages, configured from YAML or an API.

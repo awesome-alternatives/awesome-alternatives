@@ -1,0 +1,7 @@
+name: Epinio
+repository: https://github.com/epinio/epinio
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: partial
+    note: Pushes source code to Kubernetes with buildpacks and binds services, without a managed database offering.

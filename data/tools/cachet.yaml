@@ -1,0 +1,8 @@
+name: Cachet
+repository: https://github.com/cachethq/cachet
+category: uptime-monitoring
+terms: source-available
+replaces:
+  - tool: statuspage
+    fit: full
+    note: Status page with components, incidents, scheduled maintenance and subscriber notifications.

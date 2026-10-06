@@ -1,0 +1,7 @@
+name: PipeCD
+repository: https://github.com/pipe-cd/pipecd
+category: continuous-delivery
+replaces:
+  - tool: octopus-deploy
+    fit: partial
+    note: GitOps deployments to Kubernetes, ECS, Lambda, Cloud Run and Terraform, with canary analysis.

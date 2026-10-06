@@ -1,0 +1,7 @@
+name: Toxiproxy
+repository: https://github.com/Shopify/toxiproxy
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: partial
+    note: Network faults such as latency and dropped connections between services in tests, nothing at host level.

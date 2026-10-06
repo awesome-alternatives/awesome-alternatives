@@ -1,0 +1,8 @@
+name: AWX
+repository: https://github.com/ansible/awx
+category: config-management
+terms: open
+replaces:
+  - tool: ansible-automation-platform
+    fit: full
+    note: The upstream of the automation controller in the Red Hat product, without support or certified content.

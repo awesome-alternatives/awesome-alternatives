@@ -1,0 +1,7 @@
+name: KRR
+repository: https://github.com/robusta-dev/krr
+category: cloud-cost
+replaces:
+  - tool: kubecost
+    fit: partial
+    note: CPU and memory request recommendations from Prometheus history, without cost allocation.

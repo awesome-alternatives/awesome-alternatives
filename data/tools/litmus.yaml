@@ -1,0 +1,7 @@
+name: LitmusChaos
+repository: https://github.com/litmuschaos/litmus
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: full
+    note: Chaos experiments from a hub, scheduled and observed from a control plane, on Kubernetes and hosts.

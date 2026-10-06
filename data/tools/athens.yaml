@@ -1,0 +1,7 @@
+name: Athens
+repository: https://github.com/gomods/athens
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Go modules only, as a module proxy and cache.

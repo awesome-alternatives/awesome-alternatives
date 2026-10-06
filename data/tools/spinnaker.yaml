@@ -1,0 +1,7 @@
+name: Spinnaker
+repository: https://github.com/spinnaker/spinnaker
+category: continuous-delivery
+replaces:
+  - tool: octopus-deploy
+    fit: full
+    note: Multi-cloud deployment pipelines with canary analysis, approvals and rollbacks.

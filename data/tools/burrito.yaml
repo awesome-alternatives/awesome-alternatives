@@ -1,0 +1,7 @@
+name: Burrito
+repository: https://github.com/padok-team/burrito
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: partial
+    note: Runs Terraform and OpenTofu plans, applies and drift detection from a Kubernetes operator, with no state hosting.

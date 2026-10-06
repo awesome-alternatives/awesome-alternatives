@@ -1,0 +1,5 @@
+name: AWS Lambda
+homepage: https://aws.amazon.com/lambda/
+vendor: Amazon Web Services
+category: serverless-platform
+description: AWS service that runs functions on demand in response to events and bills per request and compute time.

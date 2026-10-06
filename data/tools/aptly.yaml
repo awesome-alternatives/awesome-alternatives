@@ -1,0 +1,7 @@
+name: aptly
+repository: https://github.com/aptly-dev/aptly
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Debian packages only, with mirrors, snapshots and published repositories.
