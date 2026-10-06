@@ -94,8 +94,8 @@ Version bumps, changelogs, tags and published releases from commit history.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [semantic-release](https://github.com/semantic-release/semantic-release) | JavaScript | MIT | [v25.0.9](https://github.com/semantic-release/semantic-release/releases/tag/v25.0.9) signed | 24090 | none |
-| [GoReleaser](https://github.com/goreleaser/goreleaser) | Go | MIT | [v2.18.2](https://github.com/goreleaser/goreleaser/releases/tag/v2.18.2) signed | 16089 | none |
+| [semantic-release](https://github.com/semantic-release/semantic-release) | JavaScript | MIT | [v25.0.9](https://github.com/semantic-release/semantic-release/releases/tag/v25.0.9) signed | 24091 | none |
+| [GoReleaser](https://github.com/goreleaser/goreleaser) | Go | MIT | [v2.18.2](https://github.com/goreleaser/goreleaser/releases/tag/v2.18.2) signed | 16090 | none |
 | [Changesets](https://github.com/changesets/changesets) | TypeScript | MIT | [@changesets/cli@3.0.3](https://github.com/changesets/changesets/releases/tag/%40changesets/cli%403.0.3) signed | 12468 | semantic-release (full), Lerna (partial) |
 | [release-it](https://github.com/release-it/release-it) | JavaScript | MIT | [21.1.0](https://github.com/release-it/release-it/releases/tag/21.1.0) | 9066 | semantic-release (partial) |
 | [release-please](https://github.com/googleapis/release-please) | TypeScript | Apache-2.0 | [v17.11.2](https://github.com/googleapis/release-please/releases/tag/v17.11.2) signed | 7597 | semantic-release (full) |
@@ -130,7 +130,7 @@ Engines that run JavaScript and TypeScript outside the browser.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Node.js](https://github.com/nodejs/node) | JavaScript | Other | [v26.10.0](https://github.com/nodejs/node/releases/tag/v26.10.0) signed | 122403 | none |
+| [Node.js](https://github.com/nodejs/node) | JavaScript | Other | [v26.10.0](https://github.com/nodejs/node/releases/tag/v26.10.0) signed | 122405 | none |
 | [Deno](https://github.com/denoland/deno) | Rust | MIT | [v2.9.7](https://github.com/denoland/deno/releases/tag/v2.9.7) signed | 108686 | Node.js (full), ts-node (full) |
 | [Bun](https://github.com/oven-sh/bun) | Rust | Other | [bun-v1.4.2](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.2) | 96139 | Node.js (full), npm (full), ts-node (full), Jest (partial) |
 | [ts-node](https://github.com/TypeStrong/ts-node) | TypeScript | MIT | [v10.9.2](https://github.com/TypeStrong/ts-node/releases/tag/v10.9.2) | 13119 | none |
@@ -158,14 +158,14 @@ Bundle, transform and serve front-end code.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Create React App](https://github.com/react/create-react-app) | JavaScript | MIT | [v5.0.1](https://github.com/react/create-react-app/releases/tag/v5.0.1) signed | 103227 | none |
+| [Create React App](https://github.com/react/create-react-app) | JavaScript | MIT | [v5.0.1](https://github.com/react/create-react-app/releases/tag/v5.0.1) signed | 103226 | none |
 | [Vite](https://github.com/vitejs/vite) | TypeScript | MIT | [v8.3.3](https://github.com/vitejs/vite/releases/tag/v8.3.3) signed | 83227 | webpack (full), Create React App (full) |
 | [webpack](https://github.com/webpack/webpack) | JavaScript | MIT | [v5.111.1](https://github.com/webpack/webpack/releases/tag/v5.111.1) signed | 66063 | none |
-| [Babel](https://github.com/babel/babel) | TypeScript | MIT | [v8.0.6](https://github.com/babel/babel/releases/tag/v8.0.6) | 44139 | none |
+| [Babel](https://github.com/babel/babel) | TypeScript | MIT | [v8.0.6](https://github.com/babel/babel/releases/tag/v8.0.6) | 44138 | none |
 | [Parcel](https://github.com/parcel-bundler/parcel) | JavaScript | MIT | [v2.16.4](https://github.com/parcel-bundler/parcel/releases/tag/v2.16.4) | 44017 | webpack (full), Create React App (partial) |
 | [esbuild](https://github.com/evanw/esbuild) | Go | MIT | [v0.28.2](https://github.com/evanw/esbuild/releases/tag/v0.28.2) | 40074 | webpack (partial) |
 | [SWC](https://github.com/swc-project/swc) | Rust | Apache-2.0 | [v1.16.13](https://github.com/swc-project/swc/releases/tag/v1.16.13) | 34211 | Babel (full) |
-| [Rollup](https://github.com/rollup/rollup) | JavaScript | Other | [v4.64.0](https://github.com/rollup/rollup/releases/tag/v4.64.0) | 26305 | none |
+| [Rollup](https://github.com/rollup/rollup) | JavaScript | Other | [v4.64.0](https://github.com/rollup/rollup/releases/tag/v4.64.0) | 26304 | none |
 | [Rolldown](https://github.com/rolldown/rolldown) | Rust | MIT | [v1.2.12](https://github.com/rolldown/rolldown/releases/tag/v1.2.12) signed | 13964 | Rollup (full) |
 | [Rspack](https://github.com/web-infra-dev/rspack) | Rust | MIT | [v2.2.8](https://github.com/web-infra-dev/rspack/releases/tag/v2.2.8) | 12933 | webpack (drop-in) |
 
@@ -178,7 +178,7 @@ Linters and formatters for JavaScript and TypeScript.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Prettier](https://github.com/prettier/prettier) | JavaScript | MIT | [3.9.9](https://github.com/prettier/prettier/releases/tag/3.9.9) | 52413 | none |
+| [Prettier](https://github.com/prettier/prettier) | JavaScript | MIT | [3.9.9](https://github.com/prettier/prettier/releases/tag/3.9.9) | 52414 | none |
 | [ESLint](https://github.com/eslint/eslint) | JavaScript | MIT | [v10.12.0](https://github.com/eslint/eslint/releases/tag/v10.12.0) | 27629 | TSLint (full) |
 | [Biome](https://github.com/biomejs/biome) | Rust | Apache-2.0 | [@biomejs/biome@2.5.15](https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.5.15) signed | 25906 | ESLint (partial), Prettier (full) |
 | [Oxc](https://github.com/oxc-project/oxc) | Rust | MIT | [oxlint_v1.87.0](https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0) | 22952 | ESLint (partial) |
@@ -209,7 +209,7 @@ Install dependencies, manage environments and lock Python projects.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.12.23](https://github.com/astral-sh/uv/releases/tag/0.12.23) signed | 90436 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
+| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.12.23](https://github.com/astral-sh/uv/releases/tag/0.12.23) signed | 90438 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
 | [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.8](https://github.com/pyenv/pyenv/releases/tag/v2.8.8) | 45125 | none |
 | [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.1](https://github.com/python-poetry/poetry/releases/tag/2.5.1) | 34306 | Pipenv (full) |
 | [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.8.0](https://github.com/pypa/pipenv/releases/tag/v2026.8.0) | 25025 | none |
@@ -231,7 +231,7 @@ Linters and formatters for Python.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ruff](https://github.com/astral-sh/ruff) | Rust | MIT | [0.16.10](https://github.com/astral-sh/ruff/releases/tag/0.16.10) signed | 49925 | Flake8 (full), Black (drop-in), Pylint (partial), isort (full) |
+| [Ruff](https://github.com/astral-sh/ruff) | Rust | MIT | [0.16.10](https://github.com/astral-sh/ruff/releases/tag/0.16.10) signed | 49926 | Flake8 (full), Black (drop-in), Pylint (partial), isort (full) |
 | [Black](https://github.com/psf/black) | Python | MIT | [26.10.0](https://github.com/psf/black/releases/tag/26.10.0) signed | 41871 | none |
 | [YAPF](https://github.com/google/yapf) | Python | Apache-2.0 | [v0.43.0](https://github.com/google/yapf/releases/tag/v0.43.0) | 13991 | Black (full) |
 | [isort](https://github.com/PyCQA/isort) | Python | MIT | [9.0.2](https://github.com/PyCQA/isort/releases/tag/9.0.2) | 6964 | none |
@@ -248,8 +248,8 @@ Declare cloud infrastructure in files and apply the difference.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.16.5](https://github.com/hashicorp/terraform/releases/tag/v1.16.5) signed | 49832 | none |
-| [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.1](https://github.com/opentofu/opentofu/releases/tag/v1.13.1) | 30397 | Terraform (drop-in), AWS CloudFormation (full) |
-| [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.1](https://github.com/anomalyco/sst/releases/tag/v4.17.1) signed | 26341 | none |
+| [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.1](https://github.com/opentofu/opentofu/releases/tag/v1.13.1) | 30398 | Terraform (drop-in), AWS CloudFormation (full) |
+| [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.1](https://github.com/anomalyco/sst/releases/tag/v4.17.1) signed | 26342 | none |
 | [Pulumi](https://github.com/pulumi/pulumi) | Go | Apache-2.0 | [v3.267.0](https://github.com/pulumi/pulumi/releases/tag/v3.267.0) signed | 25765 | Terraform (full), AWS CloudFormation (full) |
 | [AWS CDK](https://github.com/aws/aws-cdk) | TypeScript | Apache-2.0 | [v2.272.0](https://github.com/aws/aws-cdk/releases/tag/v2.272.0) signed | 12921 | none |
 | [Crossplane](https://github.com/crossplane/crossplane) | Go | Apache-2.0 | [v2.4.2](https://github.com/crossplane/crossplane/releases/tag/v2.4.2) | 12134 | Terraform (partial), AWS CloudFormation (partial) |
@@ -269,7 +269,7 @@ Build and run OCI containers.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Docker Engine (Moby)](https://github.com/moby/moby) | Go | Apache-2.0 | [docker-v29.8.2](https://github.com/moby/moby/releases/tag/docker-v29.8.2) signed | 72155 | none |
-| [Podman](https://github.com/podman-container-tools/podman) | Go | Apache-2.0 | [v6.1.3](https://github.com/podman-container-tools/podman/releases/tag/v6.1.3) signed | 33004 | Docker Engine (Moby) (drop-in) |
+| [Podman](https://github.com/podman-container-tools/podman) | Go | Apache-2.0 | [v6.1.3](https://github.com/podman-container-tools/podman/releases/tag/v6.1.3) signed | 33005 | Docker Engine (Moby) (drop-in) |
 | [containerd](https://github.com/containerd/containerd) | Go | Apache-2.0 | [v2.4.1](https://github.com/containerd/containerd/releases/tag/v2.4.1) signed | 21384 | Docker Engine (Moby) (partial) |
 | [runc](https://github.com/opencontainers/runc) | Go | Apache-2.0 | [v1.5.2](https://github.com/opencontainers/runc/releases/tag/v1.5.2) signed | 13473 | none |
 | [nerdctl](https://github.com/containerd/nerdctl) | Go | Apache-2.0 | [v2.4.1](https://github.com/containerd/nerdctl/releases/tag/v2.4.1) signed | 10419 | Docker Engine (Moby) (full) |
@@ -304,11 +304,11 @@ Full-text search servers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Elasticsearch](https://github.com/elastic/elasticsearch) | Java | Other | [v9.5.4](https://github.com/elastic/elasticsearch/releases/tag/v9.5.4) signed | 78197 | Elastic Cloud (full) |
+| [Elasticsearch](https://github.com/elastic/elasticsearch) | Java | Other | [v9.5.5](https://github.com/elastic/elasticsearch/releases/tag/v9.5.5) signed | 78197 | Elastic Cloud (full) |
 | [Meilisearch](https://github.com/meilisearch/meilisearch) | Rust | Other | [v1.54.3](https://github.com/meilisearch/meilisearch/releases/tag/v1.54.3) | 59502 | Elasticsearch (partial), Algolia (full) |
-| [Typesense](https://github.com/typesense/typesense) | C++ | GPL-3.0 | [v30.2](https://github.com/typesense/typesense/releases/tag/v30.2) | 26633 | Elasticsearch (partial), Algolia (full) |
+| [Typesense](https://github.com/typesense/typesense) | C++ | GPL-3.0 | [v30.2](https://github.com/typesense/typesense/releases/tag/v30.2) | 26634 | Elasticsearch (partial), Algolia (full) |
 | [Sonic](https://github.com/valeriansaliou/sonic) | Rust | MPL-2.0 | [v1.10.2](https://github.com/valeriansaliou/sonic/releases/tag/v1.10.2) signed | 21358 | Elasticsearch (partial) |
-| [ZincSearch](https://github.com/zincsearch/zincsearch) | Go | Other | [v1.0.0-beta3](https://github.com/zincsearch/zincsearch/releases/tag/v1.0.0-beta3) signed | 17918 | Elasticsearch (partial) |
+| [ZincSearch](https://github.com/zincsearch/zincsearch) | Go | Other | [v1.0.0-beta3](https://github.com/zincsearch/zincsearch/releases/tag/v1.0.0-beta3) signed | 17919 | Elasticsearch (partial) |
 | [OpenSearch](https://github.com/opensearch-project/OpenSearch) | Java | Apache-2.0 | [3.9.0](https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0) signed | 13817 | Elasticsearch (full), Splunk (partial), Elastic Cloud (full) |
 | [Manticore Search](https://github.com/manticoresoftware/manticoresearch) | C++ | GPL-3.0 | [release-29.9.0](https://github.com/manticoresoftware/manticoresearch/releases/tag/release-29.9.0) | 12044 | Elasticsearch (partial), Algolia (partial) |
 | [Orama](https://github.com/oramasearch/orama) | TypeScript | Other | [v3.1.18](https://github.com/oramasearch/orama/releases/tag/v3.1.18) | 10570 | Algolia (partial) |
@@ -329,8 +329,8 @@ Collect, store and query time series.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Netdata](https://github.com/netdata/netdata) | Go | GPL-3.0 | [v2.12.0](https://github.com/netdata/netdata/releases/tag/v2.12.0) | 80810 | Datadog (partial) |
-| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.15.0](https://github.com/prometheus/prometheus/releases/tag/v3.15.0) | 66390 | Datadog (partial) |
-| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.0](https://github.com/henrygd/beszel/releases/tag/v0.21.0) signed | 25998 | none |
+| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.15.0](https://github.com/prometheus/prometheus/releases/tag/v3.15.0) | 66391 | Datadog (partial) |
+| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.0](https://github.com/henrygd/beszel/releases/tag/v0.21.0) signed | 25999 | none |
 | [Telegraf](https://github.com/influxdata/telegraf) | Go | MIT | [v1.40.1](https://github.com/influxdata/telegraf/releases/tag/v1.40.1) | 17848 | none |
 | [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | Go | Apache-2.0 | [v1.153.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0) | 17830 | Prometheus (full), InfluxDB (partial), Datadog (partial) |
 | [Thanos](https://github.com/thanos-io/thanos) | Go | Apache-2.0 | [v0.42.4](https://github.com/thanos-io/thanos/releases/tag/v0.42.4) signed | 14230 | Prometheus (partial), Datadog (partial) |
@@ -347,7 +347,7 @@ Send HTTP requests from a terminal.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [curl](https://github.com/curl/curl) | C | Other | [curl-8_22_0](https://github.com/curl/curl/releases/tag/curl-8_22_0) signed | 43120 | none |
-| [HTTPie](https://github.com/httpie/cli) | Python | BSD-3-Clause | [3.2.4](https://github.com/httpie/cli/releases/tag/3.2.4) | 38734 | none |
+| [HTTPie](https://github.com/httpie/cli) | Python | BSD-3-Clause | [3.2.4](https://github.com/httpie/cli/releases/tag/3.2.4) | 38733 | none |
 | [Hurl](https://github.com/Orange-OpenSource/hurl) | Rust | Apache-2.0 | [8.0.1](https://github.com/Orange-OpenSource/hurl/releases/tag/8.0.1) | 19237 | curl (partial) |
 | [xh](https://github.com/ducaale/xh) | Rust | MIT | [v0.26.2](https://github.com/ducaale/xh/releases/tag/v0.26.2) | 8118 | HTTPie (full), curl (partial) |
 | [curlie](https://github.com/rs/curlie) | Go | MIT | [v1.8.2](https://github.com/rs/curlie/releases/tag/v1.8.2) | 3730 | HTTPie (full) |
@@ -361,9 +361,9 @@ Search file contents recursively from a terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 68880 | The Silver Searcher (full), ack (full) |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 68881 | The Silver Searcher (full), ack (full) |
 | [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) | C | Apache-2.0 | [2.2.0](https://github.com/ggreer/the_silver_searcher/releases/tag/2.2.0) | 27125 | none |
-| [ast-grep](https://github.com/ast-grep/ast-grep) | Rust | MIT | [0.45.3](https://github.com/ast-grep/ast-grep/releases/tag/0.45.3) signed | 16127 | ripgrep (partial) |
+| [ast-grep](https://github.com/ast-grep/ast-grep) | Rust | MIT | [0.45.3](https://github.com/ast-grep/ast-grep/releases/tag/0.45.3) signed | 16128 | ripgrep (partial) |
 | [ripgrep-all](https://github.com/phiresky/ripgrep-all) | Rust | Other | [v0.10.10](https://github.com/phiresky/ripgrep-all/releases/tag/v0.10.10) | 9870 | none |
 | [ugrep](https://github.com/Genivia/ugrep) | C++ | BSD-3-Clause | [v7.8.5](https://github.com/Genivia/ugrep/releases/tag/v7.8.5) | 3306 | The Silver Searcher (full), ack (full) |
 | [ack](https://github.com/beyondgrep/ack3) | Perl | Other | [v3.10.0](https://github.com/beyondgrep/ack3/releases/tag/v3.10.0) | 830 | none |
@@ -378,7 +378,7 @@ Build, send and share HTTP and GraphQL requests from a desktop or browser app.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.9.0](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.9.0) signed | 80581 | Insomnia (full), Postman (full) |
-| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.2.1](https://github.com/usebruno/bruno/releases/tag/v4.2.1) | 47367 | Insomnia (full), Postman (full) |
+| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.2.1](https://github.com/usebruno/bruno/releases/tag/v4.2.1) | 47368 | Insomnia (full), Postman (full) |
 | [Insomnia](https://github.com/Kong/insomnia) | TypeScript | Apache-2.0 | [core@13.3.0](https://github.com/Kong/insomnia/releases/tag/core%4013.3.0) | 40034 | none |
 | [Yaak](https://github.com/mountain-loop/yaak) | TypeScript | MIT | [v2026.8.1](https://github.com/mountain-loop/yaak/releases/tag/v2026.8.1) signed | 19291 | Postman (full), Insomnia (full) |
 | [Posting](https://github.com/darrenburns/posting) | Python | Apache-2.0 | [2.11.2](https://github.com/darrenburns/posting/releases/tag/2.11.2) signed | 12489 | Postman (partial) |
@@ -398,7 +398,7 @@ Run, cache and orchestrate tasks across the packages of one repository.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Lerna](https://github.com/lerna/lerna) | TypeScript | MIT | [v10.0.1](https://github.com/lerna/lerna/releases/tag/v10.0.1) | 36046 | none |
-| [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.7](https://github.com/vercel/turborepo/releases/tag/v2.11.7) signed | 31180 | Lerna (partial) |
+| [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.7](https://github.com/vercel/turborepo/releases/tag/v2.11.7) signed | 31179 | Lerna (partial) |
 | [Nx](https://github.com/nrwl/nx) | TypeScript | MIT | [22.7.12](https://github.com/nrwl/nx/releases/tag/22.7.12) | 29394 | Lerna (full) |
 | [Bazel](https://github.com/bazelbuild/bazel) | Java | Apache-2.0 | [9.2.0](https://github.com/bazelbuild/bazel/releases/tag/9.2.0) | 25921 | none |
 | [Rush](https://github.com/microsoft/rushstack) | TypeScript | Other | [5.181.0](https://www.npmjs.com/package/@microsoft/rush/v/5.181.0) | 6499 | Lerna (full) |
@@ -417,7 +417,7 @@ Customisable prompts showing git state, runtimes and context.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Shell | MIT | none | 190196 | none |
-| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.26.0](https://github.com/starship/starship/releases/tag/v1.26.0) signed | 60170 | Powerlevel10k (full), Oh My Zsh (partial) |
+| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.26.0](https://github.com/starship/starship/releases/tag/v1.26.0) signed | 60172 | Powerlevel10k (full), Oh My Zsh (partial) |
 | [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Shell | MIT | [v1.20.0](https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0) signed | 55206 | none |
 | [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) | Go | MIT | [v31.4.1](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.4.1) | 23552 | Powerlevel10k (full), Oh My Zsh (partial) |
 | [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) | Shell | MIT | [v4.22.5](https://github.com/spaceship-prompt/spaceship-prompt/releases/tag/v4.22.5) | 20583 | Powerlevel10k (full), Oh My Zsh (partial) |
@@ -436,7 +436,7 @@ Split, detach and reattach terminal sessions.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [tmux](https://github.com/tmux/tmux) | C | ISC | [3.7c](https://github.com/tmux/tmux/releases/tag/3.7c) | 49798 | none |
+| [tmux](https://github.com/tmux/tmux) | C | ISC | [3.7c](https://github.com/tmux/tmux/releases/tag/3.7c) | 49799 | none |
 | [Zellij](https://github.com/zellij-org/zellij) | Rust | MIT | [v0.45.1](https://github.com/zellij-org/zellij/releases/tag/v0.45.1) | 35658 | tmux (full) |
 | [tmate](https://github.com/tmate-io/tmate) | C | Other | [2.4.0](https://github.com/tmate-io/tmate/releases/tag/2.4.0) | 6132 | tmux (partial) |
 
@@ -449,7 +449,7 @@ Databases storing JSON-like documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v3.3.0](https://github.com/surrealdb/surrealdb/releases/tag/v3.3.0) signed | 33106 | MongoDB (partial) |
+| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v3.3.0](https://github.com/surrealdb/surrealdb/releases/tag/v3.3.0) signed | 33107 | MongoDB (partial) |
 | [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r8.3.11](https://github.com/mongodb/mongo/releases/tag/r8.3.11) | 28618 | MongoDB Atlas (full) |
 | [RethinkDB](https://github.com/rethinkdb/rethinkdb) | C++ | Other | [v2.4.4](https://github.com/rethinkdb/rethinkdb/releases/tag/v2.4.4) | 27007 | MongoDB (partial) |
 | [RxDB](https://github.com/pubkey/rxdb) | TypeScript | Apache-2.0 | [17.6.0](https://github.com/pubkey/rxdb/releases/tag/17.6.0) | 23401 | Firebase (partial) |
@@ -485,8 +485,8 @@ Databases storing nodes and the relationships between them, queried by traversin
 |---|---|---|---|---:|---|
 | [Dgraph](https://github.com/dgraph-io/dgraph) | Go | Apache-2.0 | [v25.4.1](https://github.com/dgraph-io/dgraph/releases/tag/v25.4.1) signed | 21805 | Amazon Neptune (partial) |
 | [Neo4j](https://github.com/neo4j/neo4j) | Java | GPL-3.0 | [3.2.0-alpha08](https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08) | 17278 | Amazon Neptune (partial), TigerGraph (partial) |
-| [NebulaGraph](https://github.com/vesoft-inc/nebula) | C++ | Apache-2.0 | [v3.8.0](https://github.com/vesoft-inc/nebula/releases/tag/v3.8.0) signed | 12408 | TigerGraph (partial), Neo4j (partial) |
-| [FalkorDB](https://github.com/FalkorDB/FalkorDB) | Rust | Other | [v6.0.1](https://github.com/FalkorDB/FalkorDB/releases/tag/v6.0.1) signed | 7622 | Neo4j (partial) |
+| [NebulaGraph](https://github.com/vesoft-inc/nebula) | C++ | Apache-2.0 | [v3.8.0](https://github.com/vesoft-inc/nebula/releases/tag/v3.8.0) signed | 12407 | TigerGraph (partial), Neo4j (partial) |
+| [FalkorDB](https://github.com/FalkorDB/FalkorDB) | Rust | Other | [v6.0.1](https://github.com/FalkorDB/FalkorDB/releases/tag/v6.0.1) signed | 7628 | Neo4j (partial) |
 | [JanusGraph](https://github.com/JanusGraph/janusgraph) | Java | Other | [v1.1.0](https://github.com/JanusGraph/janusgraph/releases/tag/v1.1.0) | 5843 | Azure Cosmos DB for Apache Gremlin (full), Amazon Neptune (partial) |
 | [OrientDB](https://github.com/orientechnologies/orientdb) | Java | Apache-2.0 | [3.2.57](https://github.com/orientechnologies/orientdb/releases/tag/3.2.57) | 4991 | Neo4j (partial) |
 | [Apache AGE](https://github.com/apache/age) | C | Apache-2.0 | [PG18/v1.8.0-rc0](https://github.com/apache/age/releases/tag/PG18/v1.8.0-rc0) signed | 4874 | Neo4j (partial) |
@@ -494,7 +494,7 @@ Databases storing nodes and the relationships between them, queried by traversin
 | [TypeDB](https://github.com/typedb/typedb) | Rust | MPL-2.0 | [3.13.6](https://github.com/typedb/typedb/releases/tag/3.13.6) signed | 4477 | none |
 | [TerminusDB](https://github.com/terminusdb/terminusdb) | Prolog | Apache-2.0 | [v12.0.7](https://github.com/terminusdb/terminusdb/releases/tag/v12.0.7) signed | 3432 | none |
 | [Apache HugeGraph](https://github.com/apache/hugegraph) | Java | Apache-2.0 | [1.7.0](https://github.com/apache/hugegraph/releases/tag/1.7.0) signed | 3193 | Amazon Neptune (partial) |
-| [TuGraph](https://github.com/TuGraph-family/tugraph-db) | C++ | Apache-2.0 | [v4.5.2](https://github.com/TuGraph-family/tugraph-db/releases/tag/v4.5.2) signed | 1762 | Neo4j (partial) |
+| [TuGraph](https://github.com/TuGraph-family/tugraph-db) | C++ | Apache-2.0 | [v4.5.2](https://github.com/TuGraph-family/tugraph-db/releases/tag/v4.5.2) signed | 1763 | Neo4j (partial) |
 | [ArcadeDB](https://github.com/ArcadeData/arcadedb) | Java | Apache-2.0 | [26.10.1](https://github.com/ArcadeData/arcadedb/releases/tag/26.10.1) | 1182 | Neo4j (partial) |
 
 </details>
@@ -525,15 +525,15 @@ Serve sites, terminate TLS and route traffic to services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.0](https://github.com/fatedier/frp/releases/tag/v0.71.0) | 109759 | ngrok (partial), Cloudflare Tunnel (partial) |
+| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.0](https://github.com/fatedier/frp/releases/tag/v0.71.0) | 109760 | ngrok (partial), Cloudflare Tunnel (partial) |
 | [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.7](https://github.com/caddyserver/caddy/releases/tag/v2.11.7) signed | 77383 | nginx (full) |
-| [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.14](https://github.com/traefik/traefik/releases/tag/v3.7.14) signed | 65087 | nginx (partial), ingress-nginx (full) |
+| [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.14](https://github.com/traefik/traefik/releases/tag/v3.7.14) signed | 65088 | nginx (partial), ingress-nginx (full) |
 | [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | TypeScript | MIT | [v2.16.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0) signed | 34328 | none |
 | [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.6](https://github.com/nginx/nginx/releases/tag/release-1.31.6) | 31804 | none |
 | [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.39.2](https://github.com/envoyproxy/envoy/releases/tag/v1.39.2) | 29043 | nginx (partial) |
 | [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.24.0](https://github.com/fosrl/pangolin/releases/tag/1.24.0) signed | 23018 | Cloudflare Tunnel (full), ngrok (partial) |
 | [ingress-nginx](https://github.com/kubernetes/ingress-nginx) archived | Go | Apache-2.0 | [controller-v1.15.1](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1) signed | 19456 | none |
-| [OpenResty](https://github.com/openresty/openresty) | C | Other | [v1.27.1.2](https://github.com/openresty/openresty/releases/tag/v1.27.1.2) | 14063 | nginx (drop-in) |
+| [OpenResty](https://github.com/openresty/openresty) | C | Other | [v1.27.1.2](https://github.com/openresty/openresty/releases/tag/v1.27.1.2) | 14062 | nginx (drop-in) |
 | [Tengine](https://github.com/alibaba/tengine) | C | BSD-2-Clause | [3.1.0](https://github.com/alibaba/tengine/releases/tag/3.1.0) signed | 13385 | nginx (drop-in) |
 | [H2O](https://github.com/h2o/h2o) | C | MIT | [tag-no-more-releases](https://github.com/h2o/h2o/releases/tag/tag-no-more-releases) | 11551 | nginx (partial) |
 | [FrankenPHP](https://github.com/php/frankenphp) | Go | MIT | [v1.13.0](https://github.com/php/frankenphp/releases/tag/v1.13.0) | 11389 | nginx (partial) |
@@ -558,7 +558,7 @@ Turn Markdown into a searchable documentation site.
 | [Docusaurus](https://github.com/facebook/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/facebook/docusaurus/releases/tag/v3.10.2) | 66429 | GitBook (full) |
 | [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.0.0](https://github.com/docsifyjs/docsify/releases/tag/v5.0.0) signed | 31542 | GitBook (partial) |
 | [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.7.7](https://github.com/squidfunk/mkdocs-material/releases/tag/9.7.7) signed | 27544 | GitBook (full), Docusaurus (full) |
-| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22495 | GitBook (full) |
+| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22496 | GitBook (full) |
 | [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22196 | GitBook (full) |
 | [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18384 | Docusaurus (full), GitBook (full) |
 | [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13936 | GitBook (full), Docusaurus (full) |
@@ -582,7 +582,7 @@ Build websites from templates and content files.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Hugo](https://github.com/gohugoio/hugo) | Go | Apache-2.0 | [v0.167.0](https://github.com/gohugoio/hugo/releases/tag/v0.167.0) | 90049 | Jekyll (full), Hexo (full) |
-| [Astro](https://github.com/withastro/astro) | TypeScript | Other | [@astrojs/vercel@11.0.12](https://github.com/withastro/astro/releases/tag/%40astrojs/vercel%4011.0.12) signed | 63077 | Gatsby (full), Jekyll (full), Hexo (full) |
+| [Astro](https://github.com/withastro/astro) | TypeScript | Other | [@astrojs/vercel@11.0.12](https://github.com/withastro/astro/releases/tag/%40astrojs/vercel%4011.0.12) signed | 63078 | Gatsby (full), Jekyll (full), Hexo (full) |
 | [Gatsby](https://github.com/gatsbyjs/gatsby) | JavaScript | MIT | [gatsby@5.16.1](https://github.com/gatsbyjs/gatsby/releases/tag/gatsby%405.16.1) | 55945 | none |
 | [Jekyll](https://github.com/jekyll/jekyll) | Ruby | MIT | [v4.4.1](https://github.com/jekyll/jekyll/releases/tag/v4.4.1) | 51710 | none |
 | [Hexo](https://github.com/hexojs/hexo) | TypeScript | MIT | [v8.1.2](https://github.com/hexojs/hexo/releases/tag/v8.1.2) | 41776 | none |
@@ -621,7 +621,7 @@ Routing and middleware for HTTP servers in JavaScript and TypeScript.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [NestJS](https://github.com/nestjs/nest) | TypeScript | MIT | [v12.1.1](https://github.com/nestjs/nest/releases/tag/v12.1.1) | 76795 | none |
-| [Express](https://github.com/expressjs/express) | JavaScript | MIT | [v5.2.1](https://github.com/expressjs/express/releases/tag/v5.2.1) | 69587 | none |
+| [Express](https://github.com/expressjs/express) | JavaScript | MIT | [v5.2.1](https://github.com/expressjs/express/releases/tag/v5.2.1) | 69588 | none |
 | [Fastify](https://github.com/fastify/fastify) | JavaScript | MIT | [v5.12.5](https://github.com/fastify/fastify/releases/tag/v5.12.5) signed | 37233 | Express (full), Koa (full) |
 | [Koa](https://github.com/koajs/koa) | JavaScript | MIT | [v3.2.1](https://github.com/koajs/koa/releases/tag/v3.2.1) signed | 35681 | none |
 | [Hono](https://github.com/honojs/hono) | TypeScript | MIT | [v4.13.13](https://github.com/honojs/hono/releases/tag/v4.13.13) | 32428 | Express (full), Koa (full) |
@@ -685,9 +685,9 @@ Self-hosted repositories, code review and issues.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.0.0](https://github.com/go-gitea/gitea/releases/tag/v28.0.0) signed | 58328 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
+| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.0.0](https://github.com/go-gitea/gitea/releases/tag/v28.0.0) signed | 58330 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
 | [Gogs](https://github.com/gogs/gogs) | Go | MIT | [v0.14.3](https://github.com/gogs/gogs/releases/tag/v0.14.3) signed | 47860 | GitHub (partial), Bitbucket (partial) |
-| [Harness Open Source](https://github.com/harness/harness) | Go | Apache-2.0 | [v2.28.2](https://github.com/harness/harness/releases/tag/v2.28.2) | 38492 | GitHub (full), GitLab (full) |
+| [Harness Open Source](https://github.com/harness/harness) | Go | Apache-2.0 | [v2.28.2](https://github.com/harness/harness/releases/tag/v2.28.2) | 38493 | GitHub (full), GitLab (full) |
 | [GitLab](https://github.com/gitlabhq/gitlabhq) | Ruby | Other | [v19.4.1](https://github.com/gitlabhq/gitlabhq/releases/tag/v19.4.1) | 24555 | GitHub (full), Jenkins (partial), Bitbucket (full) |
 | [OneDev](https://github.com/theonedev/onedev) | Java | MIT | [v16.8.4](https://github.com/theonedev/onedev/releases/tag/v16.8.4) | 15281 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full) |
 | [GitBucket](https://github.com/gitbucket/gitbucket) | Scala | Apache-2.0 | [4.48.0](https://github.com/gitbucket/gitbucket/releases/tag/4.48.0) | 9403 | GitHub (partial) |
@@ -716,12 +716,12 @@ Self-hostable, privacy-friendly site analytics.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.653](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.653) | 40163 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
-| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.0](https://github.com/umami-software/umami/releases/tag/v3.4.0) signed | 39195 | Matomo (full), Google Analytics (partial) |
+| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.0](https://github.com/umami-software/umami/releases/tag/v3.4.0) signed | 39196 | Matomo (full), Google Analytics (partial) |
 | [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29326 | Matomo (full), Google Analytics (partial) |
 | [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.1](https://github.com/matomo-org/matomo/releases/tag/5.14.1) | 21926 | Google Analytics (full) |
 | [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21002 | Google Analytics (partial) |
 | [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.0](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.0) | 13099 | Google Analytics (full) |
-| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) signed | 12947 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
+| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) signed | 12948 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
 | [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v2.3.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v2.3.0) | 7094 | Mixpanel (full), Amplitude (full) |
 | [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6041 | Google Analytics (partial) |
 | [Countly](https://github.com/Countly/countly-server) | JavaScript | Other | [25.03.53-LTS](https://github.com/Countly/countly-server/releases/tag/25.03.53-LTS) signed | 5911 | Mixpanel (partial), Amplitude (partial) |
@@ -739,7 +739,7 @@ Check that services answer, alert when they do not, and publish a status page.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.5](https://github.com/louislam/uptime-kuma/releases/tag/2.5.5) signed | 92153 | Pingdom (full), Statuspage (full), Cronitor (partial) |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.5](https://github.com/louislam/uptime-kuma/releases/tag/2.5.5) signed | 92155 | Pingdom (full), Statuspage (full), Cronitor (partial) |
 | [Upptime](https://github.com/upptime/upptime) | Markdown | MIT | [v2.0.0](https://github.com/upptime/upptime/releases/tag/v2.0.0) signed | 17180 | Pingdom (partial), Statuspage (full) |
 | [Gatus](https://github.com/TwiN/gatus) | Go | Apache-2.0 | [v5.37.0](https://github.com/TwiN/gatus/releases/tag/v5.37.0) signed | 12249 | Uptime Kuma (full), Pingdom (full), Statuspage (full), Cronitor (partial) |
 | [Checkmate](https://github.com/bluewave-labs/Checkmate) | TypeScript | AGPL-3.0 | [v3.12.0](https://github.com/bluewave-labs/Checkmate/releases/tag/v3.12.0) signed | 10913 | Pingdom (full), Statuspage (full) |
@@ -757,9 +757,9 @@ Collect, transform and ship logs and events.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Vector](https://github.com/vectordotdev/vector) | Rust | MPL-2.0 | [vdev-v0.3.26](https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.26) signed | 22673 | Logstash (full), Fluentd (full) |
-| [Logstash](https://github.com/elastic/logstash) | Java | Other | [v9.5.4](https://github.com/elastic/logstash/releases/tag/v9.5.4) signed | 14960 | none |
+| [Logstash](https://github.com/elastic/logstash) | Java | Other | [v9.5.5](https://github.com/elastic/logstash/releases/tag/v9.5.5) signed | 14960 | none |
 | [Fluentd](https://github.com/fluent/fluentd) | Ruby | Apache-2.0 | [v1.19.4](https://github.com/fluent/fluentd/releases/tag/v1.19.4) | 13598 | none |
-| [Beats](https://github.com/elastic/beats) | Go | Other | [v9.5.4](https://github.com/elastic/beats/releases/tag/v9.5.4) signed | 12659 | none |
+| [Beats](https://github.com/elastic/beats) | Go | Other | [v9.5.5](https://github.com/elastic/beats/releases/tag/v9.5.5) signed | 12659 | none |
 | [Fluent Bit](https://github.com/fluent/fluent-bit) | C | Apache-2.0 | [v5.1.3](https://github.com/fluent/fluent-bit/releases/tag/v5.1.3) | 8134 | Logstash (full), Fluentd (full) |
 | [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) | Go | Apache-2.0 | [v0.162.0](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.162.0) signed | 7637 | Logstash (partial), Fluentd (partial) |
 
@@ -777,7 +777,7 @@ Self-hosted messaging for teams.
 | [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [12.3](https://github.com/zulip/zulip/releases/tag/12.3) | 25999 | Mattermost (full), Slack (full) |
 | [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13528 | WhatsApp (partial) |
 | [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-app-proxy@2026.1006.1600](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-app-proxy%402026.1006.1600) signed | 10490 | Discord (full) |
-| [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.915](https://github.com/mumble-voip/mumble/releases/tag/v1.5.915) | 8322 | Discord (partial) |
+| [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.915](https://github.com/mumble-voip/mumble/releases/tag/v1.5.915) | 8323 | Discord (partial) |
 | [ejabberd](https://github.com/processone/ejabberd) | Erlang | Other | [26.09](https://github.com/processone/ejabberd/releases/tag/26.09) | 6736 | Slack (partial) |
 | [Campfire](https://github.com/basecamp/once-campfire) | Ruby | MIT | [v1.5.1](https://github.com/basecamp/once-campfire/releases/tag/v1.5.1) signed | 4738 | Slack (partial) |
 | [Synapse](https://github.com/element-hq/synapse) | Python | AGPL-3.0 | [v1.162.0](https://github.com/element-hq/synapse/releases/tag/v1.162.0) signed | 4681 | Slack (partial), Microsoft Teams (partial), Discord (partial) |
@@ -803,11 +803,11 @@ Desktop terminal applications.
 | [Windows Terminal](https://github.com/microsoft/terminal) | C++ | MIT | [v1.25.2733.0](https://github.com/microsoft/terminal/releases/tag/v1.25.2733.0) | 105089 | Warp (partial) |
 | [Tabby](https://github.com/Eugeny/tabby) | TypeScript | MIT | [v1.0.237](https://github.com/Eugeny/tabby/releases/tag/v1.0.237) | 74839 | iTerm2 (full), Warp (partial) |
 | [Alacritty](https://github.com/alacritty/alacritty) | Rust | Apache-2.0 | [v0.17.0](https://github.com/alacritty/alacritty/releases/tag/v0.17.0) signed | 65892 | iTerm2 (partial), Warp (partial) |
-| [Termux](https://github.com/termux/termux-app) | Java | Other | [v0.118.3](https://github.com/termux/termux-app/releases/tag/v0.118.3) signed | 62091 | none |
+| [Termux](https://github.com/termux/termux-app) | Java | Other | [v0.118.3](https://github.com/termux/termux-app/releases/tag/v0.118.3) signed | 62092 | none |
 | [Ghostty](https://github.com/ghostty-org/ghostty) | Zig | MIT | [v1.3.1](https://github.com/ghostty-org/ghostty/releases/tag/v1.3.1) signed | 61894 | iTerm2 (full), Warp (partial) |
 | [Hyper](https://github.com/vercel/hyper) | TypeScript | MIT | [v3.4.1](https://github.com/vercel/hyper/releases/tag/v3.4.1) | 44741 | iTerm2 (full), Warp (partial) |
 | [kitty](https://github.com/kovidgoyal/kitty) | Python | GPL-3.0 | [v0.49.2](https://github.com/kovidgoyal/kitty/releases/tag/v0.49.2) signed | 35180 | iTerm2 (full), Warp (partial) |
-| [WezTerm](https://github.com/wezterm/wezterm) | Rust | Other | [20240203-110809-5046fc22](https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22) signed | 29140 | iTerm2 (full), Warp (partial), tmux (partial) |
+| [WezTerm](https://github.com/wezterm/wezterm) | Rust | Other | [20240203-110809-5046fc22](https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22) signed | 29138 | iTerm2 (full), Warp (partial), tmux (partial) |
 | [Wave Terminal](https://github.com/wavetermdev/waveterm) | Go | Apache-2.0 | [v0.14.5](https://github.com/wavetermdev/waveterm/releases/tag/v0.14.5) signed | 22430 | Warp (full), iTerm2 (full) |
 | [iTerm2](https://github.com/gnachman/iTerm2) | Swift | GPL-2.0 | [v3.7.4](https://github.com/gnachman/iTerm2/releases/tag/v3.7.4) | 18126 | none |
 | [electerm](https://github.com/electerm/electerm) | JavaScript | MIT | [v5.5.66](https://github.com/electerm/electerm/releases/tag/v5.5.66) | 15278 | Termius (partial) |
@@ -825,22 +825,22 @@ Editors for writing code.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Visual Studio Code](https://github.com/microsoft/vscode) | TypeScript | MIT | [1.140.0](https://github.com/microsoft/vscode/releases/tag/1.140.0) signed | 193599 | Atom (full) |
-| [Neovim](https://github.com/neovim/neovim) | Vim Script | Other | [v0.12.5](https://github.com/neovim/neovim/releases/tag/v0.12.5) signed | 102886 | Vim (drop-in) |
-| [Zed](https://github.com/zed-industries/zed) | Rust | Other | [v1.22.0](https://github.com/zed-industries/zed/releases/tag/v1.22.0) signed | 91347 | Visual Studio Code (full), Cursor (partial), Sublime Text (full), Atom (full) |
+| [Neovim](https://github.com/neovim/neovim) | Vim Script | Other | [v0.12.5](https://github.com/neovim/neovim/releases/tag/v0.12.5) signed | 102885 | Vim (drop-in) |
+| [Zed](https://github.com/zed-industries/zed) | Rust | Other | [v1.22.0](https://github.com/zed-industries/zed/releases/tag/v1.22.0) signed | 91348 | Visual Studio Code (full), Cursor (partial), Sublime Text (full), Atom (full) |
 | [Atom](https://github.com/atom/atom) archived | JavaScript | MIT | [v1.60.0](https://github.com/atom/atom/releases/tag/v1.60.0) | 60719 | none |
-| [Helix](https://github.com/helix-editor/helix) | Rust | MPL-2.0 | [25.07.1](https://github.com/helix-editor/helix/releases/tag/25.07.1) signed | 46484 | Vim (partial), Neovim (partial) |
+| [Helix](https://github.com/helix-editor/helix) | Rust | MPL-2.0 | [25.07.1](https://github.com/helix-editor/helix/releases/tag/25.07.1) signed | 46483 | Vim (partial), Neovim (partial) |
 | [Vim](https://github.com/vim/vim) | Vim Script | Vim | [v9.2.1167](https://github.com/vim/vim/releases/tag/v9.2.1167) signed | 41148 | none |
 | [Lapce](https://github.com/lapce/lapce) | Rust | Apache-2.0 | [v0.4.6](https://github.com/lapce/lapce/releases/tag/v0.4.6) signed | 38902 | Visual Studio Code (partial), Sublime Text (full) |
 | [VSCodium](https://github.com/VSCodium/vscodium) | Shell | MIT | [1.135.06055](https://github.com/VSCodium/vscodium/releases/tag/1.135.06055) signed | 33521 | Visual Studio Code (drop-in) |
 | [micro](https://github.com/micro-editor/micro) | Go | MIT | [v2.0.15](https://github.com/micro-editor/micro/releases/tag/v2.0.15) | 29670 | none |
-| [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | C++ | Other | [v8.9.8.1](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.8.1) | 29472 | Sublime Text (partial) |
+| [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | C++ | Other | [v8.9.8.1](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.8.1) | 29471 | Sublime Text (partial) |
 | [NvChad](https://github.com/NvChad/NvChad) | Lua | GPL-3.0 | [v2.5](https://github.com/NvChad/NvChad/releases/tag/v2.5) | 28509 | none |
 | [LazyVim](https://github.com/LazyVim/LazyVim) | Lua | Apache-2.0 | [v16.0.1](https://github.com/LazyVim/LazyVim/releases/tag/v16.0.1) signed | 27612 | none |
 | [Spacemacs](https://github.com/syl20bnr/spacemacs) | Emacs Lisp | GPL-3.0 | [v0.200.13](https://github.com/syl20bnr/spacemacs/releases/tag/v0.200.13) | 24541 | none |
 | [Doom Emacs](https://github.com/doomemacs/core) | Emacs Lisp | MIT | [v2.2.4](https://github.com/doomemacs/core/releases/tag/v2.2.4) signed | 22727 | none |
 | [Eclipse Theia](https://github.com/eclipse-theia/theia) | TypeScript | EPL-2.0 | [v1.76.0](https://github.com/eclipse-theia/theia/releases/tag/v1.76.0) signed | 21707 | Visual Studio Code (partial) |
 | [IntelliJ IDEA open-source build](https://github.com/JetBrains/intellij-community) | Java | Other | [pycharm/2026.2.3](https://github.com/JetBrains/intellij-community/releases/tag/pycharm/2026.2.3) | 20610 | IntelliJ IDEA (partial) |
-| [NotepadNext](https://github.com/dail8859/NotepadNext) | C++ | GPL-3.0 | [v0.15](https://github.com/dail8859/NotepadNext/releases/tag/v0.15) | 14660 | Notepad++ (full) |
+| [NotepadNext](https://github.com/dail8859/NotepadNext) | C++ | GPL-3.0 | [v0.15](https://github.com/dail8859/NotepadNext/releases/tag/v0.15) | 14659 | Notepad++ (full) |
 | [AstroNvim](https://github.com/AstroNvim/AstroNvim) | Lua | GPL-3.0 | [v6.1.0](https://github.com/AstroNvim/AstroNvim/releases/tag/v6.1.0) | 14455 | none |
 | [Kakoune](https://github.com/mawww/kakoune) | C++ | Unlicense | [v2026.05.21](https://github.com/mawww/kakoune/releases/tag/v2026.05.21) | 11089 | Vim (partial) |
 | [Spyder](https://github.com/spyder-ide/spyder) | Python | MIT | [v6.1.7](https://github.com/spyder-ide/spyder/releases/tag/v6.1.7) | 9349 | none |
@@ -893,7 +893,7 @@ Query and transform JSON from the command line.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [jq](https://github.com/jqlang/jq) | C | Other | [jq-1.8.2](https://github.com/jqlang/jq/releases/tag/jq-1.8.2) signed | 35750 | none |
-| [fx](https://github.com/antonmedv/fx) | Go | MIT | [40.0.0](https://github.com/antonmedv/fx/releases/tag/40.0.0) signed | 20645 | jq (partial) |
+| [fx](https://github.com/antonmedv/fx) | Go | MIT | [40.0.0](https://github.com/antonmedv/fx/releases/tag/40.0.0) signed | 20646 | jq (partial) |
 | [yq](https://github.com/mikefarah/yq) | Go | MIT | [v4.54.1](https://github.com/mikefarah/yq/releases/tag/v4.54.1) | 16062 | jq (partial) |
 | [jc](https://github.com/kellyjonbrazil/jc) | Python | MIT | [v1.26.0](https://github.com/kellyjonbrazil/jc/releases/tag/v1.26.0) signed | 8691 | none |
 | [dasel](https://github.com/TomWright/dasel) | Go | MIT | [v3.11.2](https://github.com/TomWright/dasel/releases/tag/v3.11.2) | 8045 | jq (partial), yq (partial) |
@@ -911,10 +911,10 @@ Generate traffic to measure how a service holds up.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.3.0](https://github.com/grafana/k6/releases/tag/v2.3.0) | 31808 | Apache JMeter (full), Gatling (full) |
+| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.3.0](https://github.com/grafana/k6/releases/tag/v2.3.0) | 31809 | Apache JMeter (full), Gatling (full) |
 | [Locust](https://github.com/locustio/locust) | Python | MIT | [2.46.7](https://github.com/locustio/locust/releases/tag/2.46.7) signed | 28199 | Apache JMeter (full), Gatling (full) |
 | [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25217 | Apache JMeter (partial) |
-| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10579 | none |
+| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10578 | none |
 | [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9552 | none |
 | [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9091 | Apache JMeter (full), Gatling (full) |
 | [Gatling](https://github.com/gatling/gatling) | Scala | Apache-2.0 | [v3.16.0](https://github.com/gatling/gatling/releases/tag/v3.16.0) | 6958 | none |
@@ -928,8 +928,8 @@ Drive real browsers for end-to-end tests.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Playwright](https://github.com/microsoft/playwright) | TypeScript | Apache-2.0 | [v1.63.0](https://github.com/microsoft/playwright/releases/tag/v1.63.0) signed | 97171 | Selenium (full), Puppeteer (full), Cypress (full) |
-| [Puppeteer](https://github.com/puppeteer/puppeteer) | TypeScript | Apache-2.0 | [browsers-v3.2.3](https://github.com/puppeteer/puppeteer/releases/tag/browsers-v3.2.3) signed | 95663 | none |
+| [Playwright](https://github.com/microsoft/playwright) | TypeScript | Apache-2.0 | [v1.63.0](https://github.com/microsoft/playwright/releases/tag/v1.63.0) signed | 97172 | Selenium (full), Puppeteer (full), Cypress (full) |
+| [Puppeteer](https://github.com/puppeteer/puppeteer) | TypeScript | Apache-2.0 | [browsers-v3.2.3](https://github.com/puppeteer/puppeteer/releases/tag/browsers-v3.2.3) signed | 95664 | none |
 | [Cypress](https://github.com/cypress-io/cypress) | TypeScript | MIT | [v16.1.1](https://github.com/cypress-io/cypress/releases/tag/v16.1.1) | 51041 | Selenium (partial) |
 | [Selenium](https://github.com/SeleniumHQ/selenium) | Java | Apache-2.0 | [selenium-4.50.0](https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.50.0) signed | 34522 | none |
 | [chromedp](https://github.com/chromedp/chromedp) | Go | MIT | [v0.20.1](https://github.com/chromedp/chromedp/releases/tag/v0.20.1) | 13300 | Puppeteer (partial) |
@@ -946,10 +946,10 @@ Build HTTP APIs and sites in Python.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [FastAPI](https://github.com/fastapi/fastapi) | Python | MIT | [0.142.2](https://github.com/fastapi/fastapi/releases/tag/0.142.2) signed | 102840 | Flask (full), Django REST framework (partial) |
+| [FastAPI](https://github.com/fastapi/fastapi) | Python | MIT | [0.142.2](https://github.com/fastapi/fastapi/releases/tag/0.142.2) signed | 102842 | Flask (full), Django REST framework (partial) |
 | [Django](https://github.com/django/django) | Python | BSD-3-Clause | [6.1.2](https://github.com/django/django/releases/tag/6.1.2) signed | 91364 | none |
 | [Flask](https://github.com/pallets/flask) | Python | BSD-3-Clause | [3.1.3](https://github.com/pallets/flask/releases/tag/3.1.3) signed | 74921 | none |
-| [Django REST framework](https://github.com/encode/django-rest-framework) | Python | Other | [3.18.1](https://github.com/encode/django-rest-framework/releases/tag/3.18.1) signed | 30204 | none |
+| [Django REST framework](https://github.com/encode/django-rest-framework) | Python | Other | [3.18.1](https://github.com/encode/django-rest-framework/releases/tag/3.18.1) signed | 30205 | none |
 | [Reflex](https://github.com/reflex-dev/reflex) | Python | Apache-2.0 | [v0.9.12](https://github.com/reflex-dev/reflex/releases/tag/v0.9.12) signed | 28941 | none |
 | [Tornado](https://github.com/tornadoweb/tornado) | Python | Apache-2.0 | [v6.5.10](https://github.com/tornadoweb/tornado/releases/tag/v6.5.10) | 22168 | none |
 | [Sanic](https://github.com/sanic-org/sanic) | Python | MIT | [v25.12.1](https://github.com/sanic-org/sanic/releases/tag/v25.12.1) signed | 18638 | Flask (full) |
@@ -1041,7 +1041,7 @@ Server software for Minecraft: Java Edition, from forks of the Bukkit line to im
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Paper](https://github.com/PaperMC/Paper) | Java | Other | [26.2](https://github.com/PaperMC/Paper/releases/tag/26.2) | 12702 | none |
-| [Pumpkin](https://github.com/Pumpkin-MC/Pumpkin) | Rust | GPL-3.0 | [0.2.0+26.3-26.51](https://github.com/Pumpkin-MC/Pumpkin/releases/tag/0.2.0%2B26.3-26.51) | 12014 | Paper (partial) |
+| [Pumpkin](https://github.com/Pumpkin-MC/Pumpkin) | Rust | GPL-3.0 | [0.2.0+26.3-26.51](https://github.com/Pumpkin-MC/Pumpkin/releases/tag/0.2.0%2B26.3-26.51) | 12015 | Paper (partial) |
 | [Cuberite](https://github.com/cuberite/cuberite) | C++ | Other | [1.7EOL](https://github.com/cuberite/cuberite/releases/tag/1.7EOL) | 5450 | Paper (partial) |
 | [Folia](https://github.com/PaperMC/Folia) | Shell | GPL-3.0 | none | 4387 | Paper (partial) |
 | [Minestom](https://github.com/Minestom/Minestom) | Java | Apache-2.0 | [2026.10.05-26.2](https://github.com/Minestom/Minestom/releases/tag/2026.10.05-26.2) signed | 3298 | Paper (partial) |
@@ -1058,7 +1058,7 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.6](https://github.com/syncthing/syncthing/releases/tag/v2.1.6) | 89182 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
+| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.6](https://github.com/syncthing/syncthing/releases/tag/v2.1.6) | 89180 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
 | [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v35.0.1](https://github.com/nextcloud/server/releases/tag/v35.0.1) | 37010 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
 | [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28799 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |
 | [Seafile](https://github.com/haiwen/seafile) | C | Other | [v9.0.5](https://github.com/haiwen/seafile/releases/tag/v9.0.5) | 15309 | Dropbox (full), Nextcloud (partial), iCloud Drive (full), OneDrive (full), Box (full) |
@@ -1074,19 +1074,19 @@ Agents that read a codebase, edit files and run commands from a prompt, in the t
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenCode](https://github.com/anomalyco/opencode) | TypeScript | MIT | [v1.18.34](https://github.com/anomalyco/opencode/releases/tag/v1.18.34) | 211970 | Claude Code (full), GitHub Copilot (partial), Cursor (partial) |
-| [Codex CLI](https://github.com/openai/codex) | Rust | Apache-2.0 | [rust-v0.160.1](https://github.com/openai/codex/releases/tag/rust-v0.160.1) | 128023 | Claude Code (full), GitHub Copilot (partial) |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | TypeScript | Apache-2.0 | [v0.62.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0) | 107251 | Claude Code (full), GitHub Copilot (partial) |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | TypeScript | MIT | [v1.25.0](https://github.com/OpenHands/OpenHands/releases/tag/v1.25.0) signed | 90095 | Claude Code (full), GitHub Copilot (partial) |
-| [Cline](https://github.com/cline/cline) | TypeScript | Apache-2.0 | [desktop-v0.0.43](https://github.com/cline/cline/releases/tag/desktop-v0.0.43) | 69935 | Claude Code (partial), GitHub Copilot (partial), Cursor (partial) |
-| [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Rust | Apache-2.0 | [rust-v0.0.55](https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.55) signed | 68523 | Claude Code (partial) |
-| [goose](https://github.com/aaif-goose/goose) | Rust | Apache-2.0 | [v1.53.0](https://github.com/aaif-goose/goose/releases/tag/v1.53.0) | 54998 | Claude Code (full), GitHub Copilot (partial) |
+| [OpenCode](https://github.com/anomalyco/opencode) | TypeScript | MIT | [v1.18.34](https://github.com/anomalyco/opencode/releases/tag/v1.18.34) | 211976 | Claude Code (full), GitHub Copilot (partial), Cursor (partial) |
+| [Codex CLI](https://github.com/openai/codex) | Rust | Apache-2.0 | [rust-v0.160.1](https://github.com/openai/codex/releases/tag/rust-v0.160.1) | 128027 | Claude Code (full), GitHub Copilot (partial) |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | TypeScript | Apache-2.0 | [v0.62.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0) | 107252 | Claude Code (full), GitHub Copilot (partial) |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | TypeScript | MIT | [v1.25.0](https://github.com/OpenHands/OpenHands/releases/tag/v1.25.0) signed | 90099 | Claude Code (full), GitHub Copilot (partial) |
+| [Cline](https://github.com/cline/cline) | TypeScript | Apache-2.0 | [desktop-v0.0.43](https://github.com/cline/cline/releases/tag/desktop-v0.0.43) | 69937 | Claude Code (partial), GitHub Copilot (partial), Cursor (partial) |
+| [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Rust | Apache-2.0 | [rust-v0.0.55](https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.55) signed | 68521 | Claude Code (partial) |
+| [goose](https://github.com/aaif-goose/goose) | Rust | Apache-2.0 | [v1.53.0](https://github.com/aaif-goose/goose/releases/tag/v1.53.0) | 54999 | Claude Code (full), GitHub Copilot (partial) |
 | [Aider](https://github.com/Aider-AI/aider) | Python | Apache-2.0 | [v0.86.0](https://github.com/Aider-AI/aider/releases/tag/v0.86.0) | 49396 | Claude Code (partial), GitHub Copilot (partial) |
 | [Crush](https://github.com/charmbracelet/crush) | Go | Other | [v0.97.1](https://github.com/charmbracelet/crush/releases/tag/v0.97.1) signed | 28505 | Claude Code (full), GitHub Copilot (partial) |
 | [Qwen Code](https://github.com/QwenLM/qwen-code) | TypeScript | Apache-2.0 | [sdk-typescript-v0.1.18](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18) | 28333 | Claude Code (full), GitHub Copilot (partial) |
-| [Kilo Code](https://github.com/Kilo-Org/kilocode) | TypeScript | MIT | [v7.8.3](https://github.com/Kilo-Org/kilocode/releases/tag/v7.8.3) | 27507 | Claude Code (partial), Cursor (partial) |
-| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | Python | MIT | [v1.1.0](https://github.com/SWE-agent/SWE-agent/releases/tag/v1.1.0) signed | 20495 | Claude Code (partial) |
-| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | Python | MIT | [v2.4.6](https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.6) signed | 8236 | Claude Code (partial) |
+| [Kilo Code](https://github.com/Kilo-Org/kilocode) | TypeScript | MIT | [v7.8.3](https://github.com/Kilo-Org/kilocode/releases/tag/v7.8.3) | 27508 | Claude Code (partial), Cursor (partial) |
+| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | Python | MIT | [v1.1.0](https://github.com/SWE-agent/SWE-agent/releases/tag/v1.1.0) signed | 20496 | Claude Code (partial) |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | Python | MIT | [v2.4.6](https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.6) signed | 8237 | Claude Code (partial) |
 | [gptme](https://github.com/gptme/gptme) | Python | MIT | [v0.34.0](https://github.com/gptme/gptme/releases/tag/v0.34.0) | 4445 | Claude Code (partial) |
 
 </details>
@@ -1098,8 +1098,8 @@ Completions and chat inside the editor, backed by a hosted or a local model.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Continue](https://github.com/continuedev/continue) | TypeScript | Apache-2.0 | [v2.0.0-vscode](https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode) | 36129 | GitHub Copilot (full), Cursor (partial) |
-| [Tabby](https://github.com/TabbyML/tabby) | Rust | Other | [v0.32.0](https://github.com/TabbyML/tabby/releases/tag/v0.32.0) | 33899 | GitHub Copilot (full) |
+| [Continue](https://github.com/continuedev/continue) | TypeScript | Apache-2.0 | [v2.0.0-vscode](https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode) | 36130 | GitHub Copilot (full), Cursor (partial) |
+| [Tabby](https://github.com/TabbyML/tabby) | Rust | Other | [v0.32.0](https://github.com/TabbyML/tabby/releases/tag/v0.32.0) | 33900 | GitHub Copilot (full) |
 | [avante.nvim](https://github.com/avante-corp/avante.nvim) | Lua | Apache-2.0 | [v0.4.0](https://github.com/avante-corp/avante.nvim/releases/tag/v0.4.0) | 18178 | Cursor (partial), GitHub Copilot (partial) |
 | [CodeCompanion.nvim](https://github.com/olimorris/codecompanion.nvim) | Lua | Apache-2.0 | [v19.27.0](https://github.com/olimorris/codecompanion.nvim/releases/tag/v19.27.0) signed | 6886 | GitHub Copilot (partial) |
 | [twinny](https://github.com/twinnydotdev/twinny) | TypeScript | MIT | [v4.0.20](https://github.com/twinnydotdev/twinny/releases/tag/v4.0.20) | 3662 | GitHub Copilot (full) |
@@ -1116,21 +1116,21 @@ Apps to chat with language models, whether the model runs locally or behind an A
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Open WebUI](https://github.com/open-webui/open-webui) | Python | Other | [v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) signed | 154076 | ChatGPT (partial), Claude (partial) |
-| [NextChat](https://github.com/ChatGPTNextWeb/NextChat) | TypeScript | MIT | [v2.16.1](https://github.com/ChatGPTNextWeb/NextChat/releases/tag/v2.16.1) | 88836 | ChatGPT (partial), Claude (partial) |
-| [LobeHub](https://github.com/lobehub/lobehub) | TypeScript | Other | [v2.2.18](https://github.com/lobehub/lobehub/releases/tag/v2.2.18) signed | 83017 | ChatGPT (partial), Claude (partial) |
-| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | JavaScript | MIT | [v1.17.0](https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.17.0) signed | 66750 | ChatGPT (partial), Claude (partial) |
-| [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | TypeScript | AGPL-3.0 | [v2.1.4](https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.4) signed | 52398 | ChatGPT (partial), Claude (partial) |
-| [TextGen](https://github.com/oobabooga/textgen) | Python | AGPL-3.0 | [v4.9](https://github.com/oobabooga/textgen/releases/tag/v4.9) | 47726 | ChatGPT (partial), Claude (partial) |
-| [LibreChat](https://github.com/danny-avila/LibreChat) | TypeScript | MIT | [v0.8.8](https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.8) signed | 45333 | ChatGPT (partial), Claude (partial) |
-| [Jan](https://github.com/janhq/jan) | Rust | Other | [v0.8.4](https://github.com/janhq/jan/releases/tag/v0.8.4) signed | 44820 | ChatGPT (partial), Claude (partial) |
-| [Chatbox](https://github.com/chatboxai/chatbox) | TypeScript | GPL-3.0 | [v1.23.5](https://github.com/chatboxai/chatbox/releases/tag/v1.23.5) signed | 41954 | ChatGPT (partial), Claude (partial) |
+| [Open WebUI](https://github.com/open-webui/open-webui) | Python | Other | [v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) signed | 154078 | ChatGPT (partial), Claude (partial) |
+| [NextChat](https://github.com/ChatGPTNextWeb/NextChat) | TypeScript | MIT | [v2.16.1](https://github.com/ChatGPTNextWeb/NextChat/releases/tag/v2.16.1) | 88835 | ChatGPT (partial), Claude (partial) |
+| [LobeHub](https://github.com/lobehub/lobehub) | TypeScript | Other | [v2.2.18](https://github.com/lobehub/lobehub/releases/tag/v2.2.18) signed | 83016 | ChatGPT (partial), Claude (partial) |
+| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | JavaScript | MIT | [v1.17.0](https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.17.0) signed | 66749 | ChatGPT (partial), Claude (partial) |
+| [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | TypeScript | AGPL-3.0 | [v2.1.4](https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.4) signed | 52397 | ChatGPT (partial), Claude (partial) |
+| [TextGen](https://github.com/oobabooga/textgen) | Python | AGPL-3.0 | [v4.9](https://github.com/oobabooga/textgen/releases/tag/v4.9) | 47727 | ChatGPT (partial), Claude (partial) |
+| [LibreChat](https://github.com/danny-avila/LibreChat) | TypeScript | MIT | [v0.8.8](https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.8) signed | 45334 | ChatGPT (partial), Claude (partial) |
+| [Jan](https://github.com/janhq/jan) | Rust | Other | [v0.8.4](https://github.com/janhq/jan/releases/tag/v0.8.4) signed | 44821 | ChatGPT (partial), Claude (partial) |
+| [Chatbox](https://github.com/chatboxai/chatbox) | TypeScript | GPL-3.0 | [v1.23.5](https://github.com/chatboxai/chatbox/releases/tag/v1.23.5) signed | 41953 | ChatGPT (partial), Claude (partial) |
 | [Khoj](https://github.com/khoj-ai/khoj) | Python | AGPL-3.0 | [2.0.0-beta.28](https://github.com/khoj-ai/khoj/releases/tag/2.0.0-beta.28) | 37570 | ChatGPT (partial) |
-| [SillyTavern](https://github.com/SillyTavern/SillyTavern) | JavaScript | AGPL-3.0 | [1.19.0](https://github.com/SillyTavern/SillyTavern/releases/tag/1.19.0) signed | 34130 | ChatGPT (partial) |
+| [SillyTavern](https://github.com/SillyTavern/SillyTavern) | JavaScript | AGPL-3.0 | [1.19.0](https://github.com/SillyTavern/SillyTavern/releases/tag/1.19.0) signed | 34131 | ChatGPT (partial) |
 | [Chat UI](https://github.com/huggingface/chat-ui) | TypeScript | Apache-2.0 | [v0.10.0](https://github.com/huggingface/chat-ui/releases/tag/v0.10.0) | 10975 | ChatGPT (partial) |
 | [Page Assist](https://github.com/n4ze3m/page-assist) | TypeScript | MIT | [v1.5.86](https://github.com/n4ze3m/page-assist/releases/tag/v1.5.86) signed | 8247 | ChatGPT (partial) |
 | [big-AGI](https://github.com/enricoros/big-AGI) | TypeScript | MIT | [v2.1.0](https://github.com/enricoros/big-AGI/releases/tag/v2.1.0) | 7138 | ChatGPT (partial) |
-| [DeepChat](https://github.com/ThinkInAIXYZ/deepchat) | TypeScript | Apache-2.0 | [v1.1.2](https://github.com/ThinkInAIXYZ/deepchat/releases/tag/v1.1.2) | 6354 | ChatGPT (partial), Claude (partial) |
+| [DeepChat](https://github.com/ThinkInAIXYZ/deepchat) | TypeScript | Apache-2.0 | [v1.1.2](https://github.com/ThinkInAIXYZ/deepchat/releases/tag/v1.1.2) | 6353 | ChatGPT (partial), Claude (partial) |
 | [5ire](https://github.com/nanbingxyz/5ire) | TypeScript | Other | [v0.15.4](https://github.com/nanbingxyz/5ire/releases/tag/v0.15.4) | 5368 | ChatGPT (partial) |
 | [Alpaca](https://github.com/Jeffser/Alpaca) | Python | GPL-3.0 | [9.2.5](https://github.com/Jeffser/Alpaca/releases/tag/9.2.5) | 1646 | ChatGPT (partial) |
 | [Hollama](https://github.com/fmaclen/hollama) | TypeScript | MIT | [0.36.0](https://github.com/fmaclen/hollama/releases/tag/0.36.0) | 1189 | ChatGPT (partial) |
@@ -1144,20 +1144,20 @@ Run open-weight language models on your own hardware, behind a local API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ollama](https://github.com/ollama/ollama) | Go | MIT | [v0.35.1](https://github.com/ollama/ollama/releases/tag/v0.35.1) signed | 182341 | ChatGPT (partial), Claude (partial) |
-| [llama.cpp](https://github.com/ggml-org/llama.cpp) | C++ | MIT | [v0.6.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0) | 130458 | ChatGPT (partial), Claude (partial) |
-| [vLLM](https://github.com/vllm-project/vllm) | Python | Apache-2.0 | [v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) | 93271 | ChatGPT (partial), Claude (partial) |
+| [Ollama](https://github.com/ollama/ollama) | Go | MIT | [v0.35.1](https://github.com/ollama/ollama/releases/tag/v0.35.1) signed | 182343 | ChatGPT (partial), Claude (partial) |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) | C++ | MIT | [v0.6.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0) | 130460 | ChatGPT (partial), Claude (partial) |
+| [vLLM](https://github.com/vllm-project/vllm) | Python | Apache-2.0 | [v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) | 93273 | ChatGPT (partial), Claude (partial) |
 | [LocalAI](https://github.com/mudler/LocalAI) | Go | MIT | [v4.11.0](https://github.com/mudler/LocalAI/releases/tag/v4.11.0) signed | 49412 | ChatGPT (partial), Claude (partial) |
-| [exo](https://github.com/exo-explore/exo) | Python | Apache-2.0 | [v1.0.71](https://github.com/exo-explore/exo/releases/tag/v1.0.71) signed | 47760 | Ollama (partial) |
+| [exo](https://github.com/exo-explore/exo) | Python | Apache-2.0 | [v1.0.71](https://github.com/exo-explore/exo/releases/tag/v1.0.71) signed | 47761 | Ollama (partial) |
 | [SGLang](https://github.com/sgl-project/sglang) | Python | Apache-2.0 | [v0.5.21](https://github.com/sgl-project/sglang/releases/tag/v0.5.21) | 36818 | vLLM (full), ChatGPT (partial), Claude (partial) |
 | [llamafile](https://github.com/mozilla-ai/llamafile) | C++ | Other | [0.10.6](https://github.com/mozilla-ai/llamafile/releases/tag/0.10.6) signed | 26181 | Ollama (partial) |
 | [MLC LLM](https://github.com/mlc-ai/mlc-llm) | Python | Apache-2.0 | [v0.20.0](https://github.com/mlc-ai/mlc-llm/releases/tag/v0.20.0) | 23211 | Ollama (partial) |
 | [KTransformers](https://github.com/kvcache-ai/ktransformers) | Python | Apache-2.0 | [v0.7.1](https://github.com/kvcache-ai/ktransformers/releases/tag/v0.7.1) signed | 19569 | none |
-| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Python | Other | [v1.2.1](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1) signed | 14766 | ChatGPT (partial) |
+| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Python | Other | [v1.2.1](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1) signed | 14767 | ChatGPT (partial) |
 | [Xinference](https://github.com/xorbitsai/inference) | Python | Apache-2.0 | [v3.5.0](https://github.com/xorbitsai/inference/releases/tag/v3.5.0) signed | 9600 | ChatGPT (partial) |
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | Python | Apache-2.0 | [v0.18.0](https://github.com/InternLM/lmdeploy/releases/tag/v0.18.0) signed | 8104 | ChatGPT (partial) |
 | [mistral.rs](https://github.com/EricLBuehler/mistral.rs) | Rust | MIT | [v0.9.4](https://github.com/EricLBuehler/mistral.rs/releases/tag/v0.9.4) signed | 7733 | LM Studio (partial) |
-| [llama-swap](https://github.com/mostlygeek/llama-swap) | Go | MIT | [v262](https://github.com/mostlygeek/llama-swap/releases/tag/v262) signed | 5870 | none |
+| [llama-swap](https://github.com/mostlygeek/llama-swap) | Go | MIT | [v262](https://github.com/mostlygeek/llama-swap/releases/tag/v262) signed | 5871 | none |
 | [Lemonade](https://github.com/lemonade-sdk/lemonade) | C++ | Apache-2.0 | [v2026.40.0](https://github.com/lemonade-sdk/lemonade/releases/tag/v2026.40.0) | 5833 | LM Studio (partial) |
 | [GPUStack](https://github.com/gpustack/gpustack) | Python | Apache-2.0 | [v2.2.3](https://github.com/gpustack/gpustack/releases/tag/v2.2.3) | 5784 | ChatGPT (partial) |
 | [RamaLama](https://github.com/containers/ramalama) | Python | MIT | [v0.25.0](https://github.com/containers/ramalama/releases/tag/v0.25.0) signed | 3073 | LM Studio (partial) |
@@ -1189,8 +1189,8 @@ Build dashboards and explore metrics, logs and traces from a web UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.2.3](https://github.com/grafana/grafana/releases/tag/v13.2.3) | 77108 | Kibana (partial), Datadog (partial), Splunk (partial) |
-| [Kibana](https://github.com/elastic/kibana) | TypeScript | Other | [v9.5.4](https://github.com/elastic/kibana/releases/tag/v9.5.4) signed | 21309 | none |
+| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.2.3](https://github.com/grafana/grafana/releases/tag/v13.2.3) | 77109 | Kibana (partial), Datadog (partial), Splunk (partial) |
+| [Kibana](https://github.com/elastic/kibana) | TypeScript | Other | [v9.5.5](https://github.com/elastic/kibana/releases/tag/v9.5.5) signed | 21309 | none |
 | [HyperDX](https://github.com/hyperdxio/hyperdx) | TypeScript | MIT | [cli-v0.6.4](https://github.com/hyperdxio/hyperdx/releases/tag/cli-v0.6.4) signed | 9928 | Datadog (partial) |
 | [Perses](https://github.com/perses/perses) | Go | Apache-2.0 | [v0.54.0](https://github.com/perses/perses/releases/tag/v0.54.0) signed | 2470 | Grafana (partial) |
 | [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) | TypeScript | Apache-2.0 | [3.8.0](https://github.com/opensearch-project/OpenSearch-Dashboards/releases/tag/3.8.0) signed | 2130 | Kibana (full) |
@@ -1267,8 +1267,8 @@ Store and query timestamped measurements at high write rates.
 |---|---|---|---|---:|---|
 | [InfluxDB](https://github.com/influxdata/influxdb) | Rust | Apache-2.0 | [v3.11.4](https://github.com/influxdata/influxdb/releases/tag/v3.11.4) | 31759 | none |
 | [TDengine](https://github.com/taosdata/TDengine) | C | AGPL-3.0 | [ver-3.4.1.6](https://github.com/taosdata/TDengine/releases/tag/ver-3.4.1.6) | 25151 | InfluxDB (full) |
-| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.30.2](https://github.com/timescale/timescaledb/releases/tag/2.30.2) signed | 23652 | InfluxDB (full) |
-| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.0.1](https://github.com/questdb/questdb/releases/tag/10.0.1) | 17426 | InfluxDB (full) |
+| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.30.2](https://github.com/timescale/timescaledb/releases/tag/2.30.2) signed | 23651 | InfluxDB (full) |
+| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.0.1](https://github.com/questdb/questdb/releases/tag/10.0.1) | 17425 | InfluxDB (full) |
 | [GreptimeDB](https://github.com/GreptimeTeam/greptimedb) | Rust | Apache-2.0 | [v1.2.1](https://github.com/GreptimeTeam/greptimedb/releases/tag/v1.2.1) | 6725 | InfluxDB (full) |
 | [Apache IoTDB](https://github.com/apache/iotdb) | Java | Apache-2.0 | [v2.0.11](https://github.com/apache/iotdb/releases/tag/v2.0.11) | 6405 | Amazon Timestream (partial) |
 | [openGemini](https://github.com/openGemini/openGemini) | Go | Apache-2.0 | [v1.5.2](https://github.com/openGemini/openGemini/releases/tag/v1.5.2) | 1174 | InfluxDB (partial) |
@@ -1298,11 +1298,11 @@ Store logs at volume and search them, the back end behind log dashboards.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Loki](https://github.com/grafana/loki) | Go | AGPL-3.0 | [v3.7.8](https://github.com/grafana/loki/releases/tag/v3.7.8) signed | 28990 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
-| [OpenObserve](https://github.com/openobserve/openobserve) | TypeScript | AGPL-3.0 | [v1.1.0-rc1](https://github.com/openobserve/openobserve/releases/tag/v1.1.0-rc1) | 22274 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
+| [Loki](https://github.com/grafana/loki) | Go | AGPL-3.0 | [v3.7.8](https://github.com/grafana/loki/releases/tag/v3.7.8) signed | 28991 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
+| [OpenObserve](https://github.com/openobserve/openobserve) | TypeScript | AGPL-3.0 | [v1.1.0-rc1](https://github.com/openobserve/openobserve/releases/tag/v1.1.0-rc1) | 22275 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
 | [Quickwit](https://github.com/quickwit-oss/quickwit) | Rust | Apache-2.0 | [v0.9.1](https://github.com/quickwit-oss/quickwit/releases/tag/v0.9.1) signed | 11699 | Elasticsearch (partial), Splunk (partial) |
 | [Graylog](https://github.com/Graylog2/graylog2-server) | Java | Other | [7.1.9](https://github.com/Graylog2/graylog2-server/releases/tag/7.1.9) | 8150 | Splunk (full) |
-| [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs) | Go | Apache-2.0 | [v1.53.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.53.0) signed | 2347 | Elasticsearch (partial), Loki (full), Splunk (partial) |
+| [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs) | Go | Apache-2.0 | [v1.53.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.53.0) signed | 2348 | Elasticsearch (partial), Loki (full), Splunk (partial) |
 
 </details>
 
@@ -1315,18 +1315,18 @@ General-purpose SQL databases.
 |---|---|---|---|---:|---|
 | [TiDB](https://github.com/pingcap/tidb) | Go | Apache-2.0 | [v7.5.8](https://github.com/pingcap/tidb/releases/tag/v7.5.8) signed | 40632 | MySQL (full) |
 | [Turso Database](https://github.com/tursodatabase/turso) | Rust | MIT | [v0.8.2](https://github.com/tursodatabase/turso/releases/tag/v0.8.2) | 24650 | SQLite (partial) |
-| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.4.1](https://github.com/dolthub/dolt/releases/tag/v2.4.1) | 24582 | MySQL (full) |
+| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.4.1](https://github.com/dolthub/dolt/releases/tag/v2.4.1) | 24581 | MySQL (full) |
 | [Neon](https://github.com/neondatabase/neon) | Rust | Apache-2.0 | [release-proxy-8853](https://github.com/neondatabase/neon/releases/tag/release-proxy-8853) | 23175 | none |
 | [PostgreSQL](https://github.com/postgres/postgres) | C | Other | [REL_18_6](https://github.com/postgres/postgres/releases/tag/REL_18_6) | 22296 | MySQL (full), Oracle Database (full) |
-| [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.4](https://github.com/vitessio/vitess/releases/tag/v24.0.4) signed | 21369 | none |
+| [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.4](https://github.com/vitessio/vitess/releases/tag/v24.0.4) signed | 21370 | none |
 | [rqlite](https://github.com/rqlite/rqlite) | Go | MIT | [v10.5.2](https://github.com/rqlite/rqlite/releases/tag/v10.5.2) signed | 17784 | SQLite (partial) |
 | [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17260 | SQLite (drop-in) |
 | [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite@0.5.8](https://github.com/electric-sql/pglite/releases/tag/%40electric-sql/pglite%400.5.8) | 16130 | SQLite (partial) |
 | [MySQL](https://github.com/mysql/mysql-server) | C++ | Other | [mysql-26.7.0](https://github.com/mysql/mysql-server/releases/tag/mysql-26.7.0) | 12440 | none |
 | [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.53.4](https://github.com/sqlite/sqlite/releases/tag/version-3.53.4) | 10607 | none |
-| [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.4.2_CE_BP3](https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP3) | 10297 | MySQL (full) |
+| [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.4.2_CE_BP3](https://github.com/oceanbase/oceanbase/releases/tag/v4.4.2_CE_BP3) | 10298 | MySQL (full) |
 | [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg) | Go | Apache-2.0 | [v1.30.1](https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.1) signed | 9408 | Amazon RDS (partial) |
-| [MariaDB](https://github.com/MariaDB/server) | C++ | GPL-2.0 | [mariadb-13.0.2](https://github.com/MariaDB/server/releases/tag/mariadb-13.0.2) | 8323 | MySQL (full), Oracle Database (partial) |
+| [MariaDB](https://github.com/MariaDB/server) | C++ | GPL-2.0 | [mariadb-13.0.2](https://github.com/MariaDB/server/releases/tag/mariadb-13.0.2) | 8324 | MySQL (full), Oracle Database (partial) |
 | [Postgres Operator](https://github.com/zalando/postgres-operator) | Go | MIT | [v2.0.3](https://github.com/zalando/postgres-operator/releases/tag/v2.0.3) signed | 5255 | Amazon RDS (partial) |
 | [H2 Database Engine](https://github.com/h2database/h2database) | Java | Other | [version-2.5.252](https://github.com/h2database/h2database/releases/tag/version-2.5.252) signed | 4632 | none |
 | [Crunchy Postgres for Kubernetes](https://github.com/CrunchyData/postgres-operator) | Go | Apache-2.0 | [v6.0.2](https://github.com/CrunchyData/postgres-operator/releases/tag/v6.0.2) | 4451 | Amazon RDS (partial) |
@@ -1362,11 +1362,11 @@ Connect apps and APIs with trigger-and-action workflows.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [n8n](https://github.com/n8n-io/n8n) | TypeScript | Other | [n8n@2.42.3](https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.3) signed | 206757 | Zapier (full), IFTTT (full) |
+| [n8n](https://github.com/n8n-io/n8n) | TypeScript | Other | [n8n@2.42.3](https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.3) signed | 206758 | Zapier (full), IFTTT (full) |
 | [Huginn](https://github.com/huginn/huginn) | Ruby | MIT | [v2026.10.04](https://github.com/huginn/huginn/releases/tag/v2026.10.04) | 50024 | Zapier (partial), IFTTT (partial) |
-| [Activepieces](https://github.com/activepieces/activepieces) | TypeScript | Other | [0.92.1](https://github.com/activepieces/activepieces/releases/tag/0.92.1) | 24921 | Zapier (full), n8n (full), IFTTT (full) |
+| [Activepieces](https://github.com/activepieces/activepieces) | TypeScript | Other | [0.92.1](https://github.com/activepieces/activepieces/releases/tag/0.92.1) | 24922 | Zapier (full), n8n (full), IFTTT (full) |
 | [Node-RED](https://github.com/node-red/node-red) | JavaScript | Apache-2.0 | [5.0.7](https://github.com/node-red/node-red/releases/tag/5.0.7) signed | 23718 | Zapier (partial) |
-| [Windmill](https://github.com/windmill-labs/windmill) | Rust | Other | [v1.825.0](https://github.com/windmill-labs/windmill/releases/tag/v1.825.0) signed | 18113 | Zapier (partial), Apache Airflow (partial) |
+| [Windmill](https://github.com/windmill-labs/windmill) | Rust | Other | [v1.825.0](https://github.com/windmill-labs/windmill/releases/tag/v1.825.0) signed | 18114 | Zapier (partial), Apache Airflow (partial) |
 | [Automatisch](https://github.com/automatisch/automatisch) | JavaScript | Other | [v0.15.0](https://github.com/automatisch/automatisch/releases/tag/v0.15.0) | 13990 | Zapier (full) |
 
 </details>
@@ -1392,10 +1392,10 @@ Store and serve OCI images and artefacts.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.3](https://github.com/goharbor/harbor/releases/tag/v2.15.3) | 29497 | Docker Hub (full), Distribution (full) |
+| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.3](https://github.com/goharbor/harbor/releases/tag/v2.15.3) | 29498 | Docker Hub (full), Distribution (full) |
 | [Distribution](https://github.com/distribution/distribution) | Go | Apache-2.0 | [v3.1.2](https://github.com/distribution/distribution/releases/tag/v3.1.2) signed | 10642 | Docker Hub (partial) |
 | [Kraken](https://github.com/uber/kraken) | Go | Apache-2.0 | [v0.1.31](https://github.com/uber/kraken/releases/tag/v0.1.31) signed | 6754 | Distribution (partial) |
-| [zot](https://github.com/project-zot/zot) | Go | Apache-2.0 | [v2.1.21](https://github.com/project-zot/zot/releases/tag/v2.1.21) signed | 2841 | Docker Hub (partial), Distribution (full) |
+| [zot](https://github.com/project-zot/zot) | Go | Apache-2.0 | [v2.1.21](https://github.com/project-zot/zot/releases/tag/v2.1.21) signed | 2842 | Docker Hub (partial), Distribution (full) |
 | [Quay](https://github.com/quay/quay) | Python | Apache-2.0 | [v3.17.5](https://github.com/quay/quay/releases/tag/v3.17.5) signed | 2827 | Docker Hub (full) |
 
 </details>
@@ -1413,7 +1413,7 @@ Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP.
 | [Ory Hydra](https://github.com/ory/hydra) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/hydra/releases/tag/v26.2.0) | 17591 | Auth0 (partial) |
 | [SuperTokens](https://github.com/supertokens/supertokens-core) | Java | Other | [v12.2.0](https://github.com/supertokens/supertokens-core/releases/tag/v12.2.0) | 15336 | Auth0 (full) |
 | [ZITADEL](https://github.com/zitadel/zitadel) | Go | AGPL-3.0 | [v4.19.4](https://github.com/zitadel/zitadel/releases/tag/v4.19.4) signed | 15222 | Auth0 (full), Okta (partial) |
-| [Logto](https://github.com/logto-io/logto) | TypeScript | MPL-2.0 | [v1.44.0](https://github.com/logto-io/logto/releases/tag/v1.44.0) signed | 14656 | Auth0 (full) |
+| [Logto](https://github.com/logto-io/logto) | TypeScript | MPL-2.0 | [v1.44.0](https://github.com/logto-io/logto/releases/tag/v1.44.0) signed | 14657 | Auth0 (full) |
 | [Casdoor](https://github.com/casdoor/casdoor) | Go | Apache-2.0 | [v4.15.0](https://github.com/casdoor/casdoor/releases/tag/v4.15.0) | 14519 | Auth0 (full), Okta (partial) |
 | [Ory Kratos](https://github.com/ory/kratos) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/kratos/releases/tag/v26.2.0) | 13908 | Auth0 (partial) |
 | [Dex](https://github.com/dexidp/dex) | Go | Apache-2.0 | [v2.45.1](https://github.com/dexidp/dex/releases/tag/v2.45.1) signed | 11160 | Okta (partial) |
@@ -1429,8 +1429,8 @@ Connect devices and servers in a private WireGuard network, wherever they are.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Headscale](https://github.com/juanfont/headscale) | Go | BSD-3-Clause | [v0.29.4](https://github.com/juanfont/headscale/releases/tag/v0.29.4) | 44385 | Tailscale (partial) |
-| [NetBird](https://github.com/netbirdio/netbird) | Go | Other | [v0.80.0](https://github.com/netbirdio/netbird/releases/tag/v0.80.0) signed | 29776 | Tailscale (full) |
+| [Headscale](https://github.com/juanfont/headscale) | Go | BSD-3-Clause | [v0.29.4](https://github.com/juanfont/headscale/releases/tag/v0.29.4) | 44386 | Tailscale (partial) |
+| [NetBird](https://github.com/netbirdio/netbird) | Go | Other | [v0.80.0](https://github.com/netbirdio/netbird/releases/tag/v0.80.0) signed | 29777 | Tailscale (full) |
 | [Netmaker](https://github.com/gravitl/netmaker) | Go | Other | [v1.7.0](https://github.com/gravitl/netmaker/releases/tag/v1.7.0) signed | 11820 | Tailscale (full) |
 | [Firezone](https://github.com/firezone/firezone) | Elixir | Apache-2.0 | [android-client-1.5.15](https://github.com/firezone/firezone/releases/tag/android-client-1.5.15) signed | 9108 | Tailscale (partial) |
 | [innernet](https://github.com/tonarino/innernet) | Rust | MIT | [v2.0.0](https://github.com/tonarino/innernet/releases/tag/v2.0.0) | 5559 | Tailscale (partial) |
@@ -1445,7 +1445,7 @@ Control another computer over the network, for support or remote work.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [RustDesk](https://github.com/rustdesk/rustdesk) | Rust | AGPL-3.0 | [1.5.0](https://github.com/rustdesk/rustdesk/releases/tag/1.5.0) signed | 125243 | TeamViewer (full), AnyDesk (full) |
+| [RustDesk](https://github.com/rustdesk/rustdesk) | Rust | AGPL-3.0 | [1.5.0](https://github.com/rustdesk/rustdesk/releases/tag/1.5.0) signed | 125242 | TeamViewer (full), AnyDesk (full) |
 | [Sunshine](https://github.com/LizardByte/Sunshine) | C++ | GPL-3.0 | [v2026.914.233613](https://github.com/LizardByte/Sunshine/releases/tag/v2026.914.233613) signed | 41910 | Parsec (partial) |
 | [Moonlight](https://github.com/moonlight-stream/moonlight-qt) | C++ | GPL-3.0 | [v6.2.0](https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0) | 18947 | Parsec (partial) |
 | [noVNC](https://github.com/novnc/noVNC) | JavaScript | Other | [v1.7.0](https://github.com/novnc/noVNC/releases/tag/v1.7.0) | 14070 | none |
@@ -1464,10 +1464,10 @@ Shared pages and documentation for teams, edited in the browser.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.14.7](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.7) signed | 77162 | Notion (full) |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 73259 | Notion (full), Miro (partial), OneNote (partial) |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.14.7](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.7) signed | 77163 | Notion (full) |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 73260 | Notion (full), Miro (partial), OneNote (partial) |
 | [Outline](https://github.com/outline/outline) | TypeScript | Other | [v1.10.1](https://github.com/outline/outline/releases/tag/v1.10.1) signed | 40826 | Notion (partial), Confluence (full), HackMD (partial) |
-| [Wiki.js](https://github.com/requarks/wiki) | Vue | AGPL-3.0 | [3.0.0-beta.628](https://github.com/requarks/wiki/releases/tag/3.0.0-beta.628) signed | 29013 | Confluence (full) |
+| [Wiki.js](https://github.com/requarks/wiki) | Vue | AGPL-3.0 | [3.0.0-beta.628](https://github.com/requarks/wiki/releases/tag/3.0.0-beta.628) signed | 29014 | Confluence (full) |
 | [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.96.0](https://github.com/docmost/docmost/releases/tag/v0.96.0) | 21879 | Confluence (full), Notion (partial) |
 | [BookStack](https://github.com/BookStackApp/BookStack) | PHP | MIT | [v26.09.1](https://github.com/BookStackApp/BookStack/releases/tag/v26.09.1) signed | 19076 | Confluence (full), Notion (partial) |
 | [La Suite Docs](https://github.com/suitenumerique/docs) | Python | MIT | [v5.7.0](https://github.com/suitenumerique/docs/releases/tag/v5.7.0) signed | 16897 | Notion (partial), Confluence (partial) |
@@ -1491,19 +1491,19 @@ Personal notes on desktop and mobile, with sync.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Memos](https://github.com/usememos/memos) | Go | MIT | [v0.31.0](https://github.com/usememos/memos/releases/tag/v0.31.0) signed | 63561 | Google Keep (full) |
-| [MarkText](https://github.com/marktext/marktext) | TypeScript | MIT | [v0.20.0](https://github.com/marktext/marktext/releases/tag/v0.20.0) | 62166 | Typora (full) |
+| [MarkText](https://github.com/marktext/marktext) | TypeScript | MIT | [v0.20.0](https://github.com/marktext/marktext/releases/tag/v0.20.0) | 62167 | Typora (full) |
 | [Joplin](https://github.com/laurent22/joplin) | TypeScript | Other | [v3.7.21](https://github.com/laurent22/joplin/releases/tag/v3.7.21) | 56618 | Evernote (full), Obsidian (partial), OneNote (full) |
-| [SiYuan](https://github.com/siyuan-note/siyuan) | TypeScript | AGPL-3.0 | [v3.8.6](https://github.com/siyuan-note/siyuan/releases/tag/v3.8.6) signed | 46645 | Obsidian (full), Notion (partial) |
-| [Logseq](https://github.com/logseq/logseq) | Clojure | AGPL-3.0 | [2.0.1](https://github.com/logseq/logseq/releases/tag/2.0.1) | 45150 | Obsidian (full) |
-| [Trilium Notes](https://github.com/TriliumNext/Trilium) | TypeScript | AGPL-3.0 | [v0.106.0](https://github.com/TriliumNext/Trilium/releases/tag/v0.106.0) signed | 38223 | Evernote (full), OneNote (partial) |
+| [SiYuan](https://github.com/siyuan-note/siyuan) | TypeScript | AGPL-3.0 | [v3.8.6](https://github.com/siyuan-note/siyuan/releases/tag/v3.8.6) signed | 46646 | Obsidian (full), Notion (partial) |
+| [Logseq](https://github.com/logseq/logseq) | Clojure | AGPL-3.0 | [2.0.1](https://github.com/logseq/logseq/releases/tag/2.0.1) | 45152 | Obsidian (full) |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | TypeScript | AGPL-3.0 | [v0.106.0](https://github.com/TriliumNext/Trilium/releases/tag/v0.106.0) signed | 38224 | Evernote (full), OneNote (partial) |
 | [Foam](https://github.com/foambubble/foam) | TypeScript | Other | [vscode@0.46.0](https://github.com/foambubble/foam/releases/tag/vscode%400.46.0) | 17442 | Obsidian (partial) |
 | [Xournal++](https://github.com/xournalpp/xournalpp) | C++ | GPL-2.0 | [v1.3.8](https://github.com/xournalpp/xournalpp/releases/tag/v1.3.8) | 15481 | OneNote (partial) |
 | [Notesnook](https://github.com/streetwriters/notesnook) | TypeScript | GPL-3.0 | [v3.4.9](https://github.com/streetwriters/notesnook/releases/tag/v3.4.9) signed | 14719 | Evernote (full), Google Keep (full) |
 | [Zettlr](https://github.com/Zettlr/Zettlr) | TypeScript | GPL-3.0 | [v4.8.0](https://github.com/Zettlr/Zettlr/releases/tag/v4.8.0) signed | 13724 | Obsidian (partial) |
 | [Rnote](https://github.com/flxzt/rnote) | Rust | GPL-3.0 | [v0.14.2](https://github.com/flxzt/rnote/releases/tag/v0.14.2) signed | 11730 | GoodNotes (partial), OneNote (partial) |
-| [Blinko](https://github.com/blinkospace/blinko) | TypeScript | GPL-3.0 | [1.8.8](https://github.com/blinkospace/blinko/releases/tag/1.8.8) | 11060 | Google Keep (full) |
+| [Blinko](https://github.com/blinkospace/blinko) | TypeScript | GPL-3.0 | [1.8.8](https://github.com/blinkospace/blinko/releases/tag/1.8.8) | 11062 | Google Keep (full) |
 | [Anytype](https://github.com/anyproto/anytype-ts) | TypeScript | Other | [v0.57.4](https://github.com/anyproto/anytype-ts/releases/tag/v0.57.4) signed | 8886 | Notion (full) |
-| [Standard Notes](https://github.com/standardnotes/app) | TypeScript | AGPL-3.0 | [@standardnotes/desktop@3.202.7](https://github.com/standardnotes/app/releases/tag/%40standardnotes/desktop%403.202.7) signed | 6644 | Evernote (partial), Google Keep (partial) |
+| [Standard Notes](https://github.com/standardnotes/app) | TypeScript | AGPL-3.0 | [@standardnotes/desktop@3.202.7](https://github.com/standardnotes/app/releases/tag/%40standardnotes/desktop%403.202.7) signed | 6645 | Evernote (partial), Google Keep (partial) |
 | [QOwnNotes](https://github.com/pbek/QOwnNotes) | C++ | GPL-2.0 | [v26.10.2](https://github.com/pbek/QOwnNotes/releases/tag/v26.10.2) signed | 5892 | Evernote (partial), Obsidian (partial) |
 | [Simplenote](https://github.com/Automattic/simplenote-electron) | TypeScript | GPL-2.0 | [v2.27.1](https://github.com/Automattic/simplenote-electron/releases/tag/v2.27.1) signed | 5270 | Google Keep (partial) |
 | [Saber](https://github.com/saber-notes/saber) | Dart | GPL-3.0 | [v1.36.1](https://github.com/saber-notes/saber/releases/tag/v1.36.1) signed | 4879 | GoodNotes (full) |
@@ -1521,7 +1521,7 @@ Keep recipes, plan meals and build shopping lists from them.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.28.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0) | 13454 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
+| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.28.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0) | 13455 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
 | [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9556 | AnyList (partial) |
 | [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.6.15](https://github.com/TandoorRecipes/recipes/releases/tag/2.6.15) signed | 8656 | Paprika Recipe Manager (full), Plan to Eat (full) |
 | [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.7.10](https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.10) signed | 3726 | AnyList (full) |
@@ -1539,14 +1539,14 @@ Issues, tasks and boards for planning team work.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Plane](https://github.com/makeplane/plane) | TypeScript | AGPL-3.0 | [v1.4.2](https://github.com/makeplane/plane/releases/tag/v1.4.2) signed | 60433 | Jira (full), Linear (full), ClickUp (partial), monday.com (partial) |
-| [Huly](https://github.com/hcengineering/platform) | TypeScript | EPL-2.0 | [v0.7.426](https://github.com/hcengineering/platform/releases/tag/v0.7.426) | 27839 | Jira (partial), Linear (full), ClickUp (partial) |
+| [Plane](https://github.com/makeplane/plane) | TypeScript | AGPL-3.0 | [v1.4.2](https://github.com/makeplane/plane/releases/tag/v1.4.2) signed | 60434 | Jira (full), Linear (full), ClickUp (partial), monday.com (partial) |
+| [Huly](https://github.com/hcengineering/platform) | TypeScript | EPL-2.0 | [v0.7.426](https://github.com/hcengineering/platform/releases/tag/v0.7.426) | 27840 | Jira (partial), Linear (full), ClickUp (partial) |
 | [Focalboard](https://github.com/mattermost-community/focalboard) | TypeScript | Other | [v8.0.0](https://github.com/mattermost-community/focalboard/releases/tag/v8.0.0) signed | 26496 | Trello (full), Asana (partial), Notion (partial) |
-| [Super Productivity](https://github.com/super-productivity/super-productivity) | TypeScript | MIT | [v19.1.0](https://github.com/super-productivity/super-productivity/releases/tag/v19.1.0) | 22580 | Todoist (partial) |
+| [Super Productivity](https://github.com/super-productivity/super-productivity) | TypeScript | MIT | [v19.1.0](https://github.com/super-productivity/super-productivity/releases/tag/v19.1.0) | 22579 | Todoist (partial) |
 | [WeKan](https://github.com/wekan/wekan) | JavaScript | MIT | [v12.19](https://github.com/wekan/wekan/releases/tag/v12.19) | 21109 | Trello (full) |
 | [OpenProject](https://github.com/opf/openproject) | Ruby | GPL-3.0 | [v17.9.1](https://github.com/opf/openproject/releases/tag/v17.9.1) signed | 16325 | Jira (full), Asana (partial), ClickUp (partial), monday.com (partial) |
 | [PLANKA](https://github.com/plankanban/planka) | JavaScript | Other | [v2.2.1](https://github.com/plankanban/planka/releases/tag/v2.2.1) | 12605 | Trello (full) |
-| [Leantime](https://github.com/Leantime/leantime) | PHP | AGPL-3.0 | [v3.10.4](https://github.com/Leantime/leantime/releases/tag/v3.10.4) signed | 11735 | Asana (full) |
+| [Leantime](https://github.com/Leantime/leantime) | PHP | AGPL-3.0 | [v3.10.4](https://github.com/Leantime/leantime/releases/tag/v3.10.4) signed | 11736 | Asana (full) |
 | [Kanboard](https://github.com/kanboard/kanboard) | PHP | MIT | [v1.2.54](https://github.com/kanboard/kanboard/releases/tag/v1.2.54) | 9896 | Trello (full) |
 | [Kaneo](https://github.com/usekaneo/kaneo) | TypeScript | MIT | [v2.33.0](https://github.com/usekaneo/kaneo/releases/tag/v2.33.0) | 9357 | Trello (full), Asana (partial), Linear (partial) |
 | [Taskwarrior](https://github.com/GothenburgBitFactory/taskwarrior) | C++ | MIT | [v3.5.0](https://github.com/GothenburgBitFactory/taskwarrior/releases/tag/v3.5.0) | 6104 | Todoist (partial) |
@@ -1554,7 +1554,7 @@ Issues, tasks and boards for planning team work.
 | [Planify](https://github.com/alainm23/planify) | Vala | GPL-3.0 | [v4.20.0](https://github.com/alainm23/planify/releases/tag/v4.20.0) signed | 5733 | Todoist (partial) |
 | [Tasks.org](https://github.com/tasks/tasks) | Kotlin | GPL-3.0 | [15.12](https://github.com/tasks/tasks/releases/tag/15.12) | 5634 | Todoist (partial) |
 | [Vikunja](https://github.com/go-vikunja/vikunja) | Go | AGPL-3.0 | [v2.7.0](https://github.com/go-vikunja/vikunja/releases/tag/v2.7.0) signed | 5619 | Trello (full), Asana (partial), Todoist (full) |
-| [tududi](https://github.com/chrisvel/tududi) | JavaScript | MIT | [v1.7.11](https://github.com/chrisvel/tududi/releases/tag/v1.7.11) | 3412 | Todoist (partial) |
+| [tududi](https://github.com/chrisvel/tududi) | JavaScript | MIT | [v1.7.11](https://github.com/chrisvel/tududi/releases/tag/v1.7.11) | 3411 | Todoist (partial) |
 | [Worklenz](https://github.com/Worklenz/worklenz) | TypeScript | AGPL-3.0 | [v3.1.0](https://github.com/Worklenz/worklenz/releases/tag/v3.1.0) | 3197 | monday.com (partial), ClickUp (partial) |
 | [Donetick](https://github.com/donetick/donetick) | Go | AGPL-3.0 | [v0.1.80](https://github.com/donetick/donetick/releases/tag/v0.1.80) signed | 2622 | Todoist (partial) |
 | [ZenTao](https://github.com/easysoft/zentaopms) | PHP | Other | [zentaopms_21.7.1_20250529](https://github.com/easysoft/zentaopms/releases/tag/zentaopms_21.7.1_20250529) | 1693 | Jira (full) |
@@ -1590,12 +1590,12 @@ Mailing lists, campaigns and subscriber management.
 |---|---|---|---|---:|---|
 | [Ghost](https://github.com/TryGhost/Ghost) | TypeScript | MIT | [v6.67.0](https://github.com/TryGhost/Ghost/releases/tag/v6.67.0) | 55492 | Substack (full), Mailchimp (partial), Squarespace (partial), Wix (partial) |
 | [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v6.2.0](https://github.com/knadh/listmonk/releases/tag/v6.2.0) | 23704 | Mailchimp (partial) |
-| [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 15858 | Mailchimp (partial) |
+| [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 15857 | Mailchimp (partial) |
 | [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.1](https://github.com/mautic/mautic/releases/tag/7.2.1) signed | 10715 | Mailchimp (full) |
 | [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.15.0](https://github.com/useplunk/plunk/releases/tag/v0.15.0) signed | 5505 | Mailchimp (partial), SendGrid (partial) |
 | [WriteFreely](https://github.com/writefreely/writefreely) | Go | AGPL-3.0 | [v0.17.2](https://github.com/writefreely/writefreely/releases/tag/v0.17.2) | 5264 | Substack (partial) |
 | [useSend](https://github.com/usesend/useSend) | TypeScript | AGPL-3.0 | [v1.9.8](https://github.com/usesend/useSend/releases/tag/v1.9.8) signed | 4703 | SendGrid (full) |
-| [Notifuse](https://github.com/Notifuse/notifuse) | Go | Other | [v41.0](https://github.com/Notifuse/notifuse/releases/tag/v41.0) | 2234 | Mailchimp (partial) |
+| [Notifuse](https://github.com/Notifuse/notifuse) | Go | Other | [v41.0](https://github.com/Notifuse/notifuse/releases/tag/v41.0) | 2235 | Mailchimp (partial) |
 | [Keila](https://github.com/pentacent/keila) | Elixir | AGPL-3.0 | [0.30.3](https://github.com/pentacent/keila/releases/tag/0.30.3) | 2228 | Substack (partial) |
 | [phpList](https://github.com/phpList/phplist3) | PHP | AGPL-3.0 | [v3.6.17](https://github.com/phpList/phplist3/releases/tag/v3.6.17) | 875 | Mailchimp (partial) |
 | [Sympa](https://github.com/sympa-community/sympa) | Perl | GPL-2.0 | [6.2.80](https://github.com/sympa-community/sympa/releases/tag/6.2.80) | 317 | none |
@@ -1612,8 +1612,8 @@ Build forms and surveys and collect the answers.
 | [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.0.2](https://github.com/formbricks/formbricks/releases/tag/6.0.2) signed | 13069 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
 | [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.0](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.0) signed | 10500 | Typeform (partial) |
 | [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.3](https://github.com/heyform/heyform/releases/tag/v3.0.3) | 8999 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
-| [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.5.0](https://github.com/OpnForm/OpnForm/releases/tag/v2.5.0) signed | 3786 | Typeform (full), Google Forms (full) |
-| [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.4.0+260928](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.4.0%2B260928) | 3745 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |
+| [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.5.0](https://github.com/OpnForm/OpnForm/releases/tag/v2.5.0) signed | 3787 | Typeform (full), Google Forms (full) |
+| [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.4.0+260928](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.4.0%2B260928) | 3746 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |
 | [Form.io](https://github.com/formio/formio) | JavaScript | OSL-3.0 | [v4.10.1](https://github.com/formio/formio/releases/tag/v4.10.1) | 2320 | Jotform (partial) |
 | [Nextcloud Forms](https://github.com/nextcloud/forms) | JavaScript | AGPL-3.0 | [v5.4.0](https://github.com/nextcloud/forms/releases/tag/v5.4.0) signed | 383 | Google Forms (full) |
 | [ODK Central](https://github.com/getodk/central) | JavaScript | Apache-2.0 | [v2026.3.1](https://github.com/getodk/central/releases/tag/v2026.3.1) signed | 228 | Google Forms (partial) |
@@ -1630,7 +1630,7 @@ Back up, browse and share photos and videos from your phones.
 |---|---|---|---|---:|---|
 | [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.2.4](https://github.com/immich-app/immich/releases/tag/v3.2.4) | 115665 | Google Photos (full) |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [260919-28c46a116](https://github.com/photoprism/photoprism/releases/tag/260919-28c46a116) | 40274 | Google Photos (partial) |
-| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [photos-v1.3.65](https://github.com/ente/ente/releases/tag/photos-v1.3.65) | 29259 | Google Photos (full) |
+| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ensu-v0.1.21](https://github.com/ente/ente/releases/tag/ensu-v0.1.21) | 29259 | Google Photos (full) |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | Python | MIT | [1.2.1](https://github.com/LibrePhotos/librephotos/releases/tag/1.2.1) signed | 8090 | Google Photos (partial) |
 | [Photoview](https://github.com/photoview/photoview) | Go | AGPL-3.0 | [v2.4.0](https://github.com/photoview/photoview/releases/tag/v2.4.0) signed | 6542 | Google Photos (partial) |
 
@@ -1643,8 +1643,8 @@ Stream a personal library of films, series and music to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.2](https://github.com/jellyfin/jellyfin/releases/tag/v12.2) | 57832 | Plex (full), Emby (full), Netflix (partial) |
-| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 23994 | Plex (partial), Spotify (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.2](https://github.com/jellyfin/jellyfin/releases/tag/v12.2) | 57833 | Plex (full), Emby (full), Netflix (partial) |
+| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 23997 | Plex (partial), Spotify (partial) |
 | [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17271 | Plex (partial), Spotify (partial) |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.37.1](https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.1) | 14557 | none |
 | [Streama](https://github.com/streamaserver/streama) | JavaScript | MIT | [v1.11.0](https://github.com/streamaserver/streama/releases/tag/v1.11.0) | 9819 | Netflix (partial), Emby (partial) |
@@ -1680,7 +1680,7 @@ Serve a personal library of ebooks, comics and manga to readers and reading apps
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [calibre](https://github.com/kovidgoyal/calibre) | Python | GPL-3.0 | [v9.15.0](https://github.com/kovidgoyal/calibre/releases/tag/v9.15.0) signed | 26073 | Google Play Books (partial), Amazon Kindle (partial) |
-| [Calibre-Web](https://github.com/janeczku/calibre-web) | Fluent | GPL-3.0 | [0.6.27](https://github.com/janeczku/calibre-web/releases/tag/0.6.27) | 18330 | Google Play Books (partial), Amazon Kindle (partial) |
+| [Calibre-Web](https://github.com/janeczku/calibre-web) | Fluent | GPL-3.0 | [0.6.27](https://github.com/janeczku/calibre-web/releases/tag/0.6.27) | 18332 | Google Play Books (partial), Amazon Kindle (partial) |
 | [Kavita](https://github.com/Kareadita/Kavita) | C# | GPL-3.0 | [v0.9.1.4](https://github.com/Kareadita/Kavita/releases/tag/v0.9.1.4) signed | 11806 | Google Play Books (partial), Amazon Kindle (partial) |
 | [Komga](https://github.com/gotson/komga) | Kotlin | MIT | [1.28.1](https://github.com/gotson/komga/releases/tag/1.28.1) | 6714 | Google Play Books (partial), Amazon Kindle (partial) |
 | [Calibre-Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated) | JavaScript | GPL-3.0 | [v4.0.8](https://github.com/crocodilestick/Calibre-Web-Automated/releases/tag/v4.0.8) | 6374 | Calibre-Web (drop-in), Google Play Books (partial), Amazon Kindle (partial) |
@@ -1711,7 +1711,7 @@ Auth, database, storage and APIs for an app, without writing the backend.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Supabase](https://github.com/supabase/supabase) | TypeScript | Apache-2.0 | [v1.26.08](https://github.com/supabase/supabase/releases/tag/v1.26.08) signed | 111161 | Firebase (full) |
+| [Supabase](https://github.com/supabase/supabase) | TypeScript | Apache-2.0 | [v1.26.08](https://github.com/supabase/supabase/releases/tag/v1.26.08) signed | 111165 | Firebase (full) |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | Go | MIT | [v0.40.4](https://github.com/pocketbase/pocketbase/releases/tag/v0.40.4) | 61305 | Firebase (partial) |
 | [Appwrite](https://github.com/appwrite/appwrite) | PHP | BSD-3-Clause | [2.3.0](https://github.com/appwrite/appwrite/releases/tag/2.3.0) signed | 57582 | Firebase (full) |
 | [Hasura GraphQL Engine](https://github.com/hasura/graphql-engine) | TypeScript | Apache-2.0 | [v2.50.3](https://github.com/hasura/graphql-engine/releases/tag/v2.50.3) | 32133 | Firebase (partial) |
@@ -1719,7 +1719,7 @@ Auth, database, storage and APIs for an app, without writing the backend.
 | [Convex](https://github.com/get-convex/convex-backend) | TypeScript | Other | [precompiled-2026-09-28-5c7cb5b](https://github.com/get-convex/convex-backend/releases/tag/precompiled-2026-09-28-5c7cb5b) | 12660 | Firebase (full) |
 | [Instant](https://github.com/instantdb/instant) | TypeScript | Apache-2.0 | none | 10543 | Firebase (partial) |
 | [Nhost](https://github.com/nhost/nhost) | TypeScript | MIT | [cli@1.51.2](https://github.com/nhost/nhost/releases/tag/cli%401.51.2) signed | 9348 | Firebase (full) |
-| [TrailBase](https://github.com/trailbaseio/trailbase) | Rust | OSL-3.0 | [v0.34.4](https://github.com/trailbaseio/trailbase/releases/tag/v0.34.4) | 5646 | Firebase (partial), PocketBase (full) |
+| [TrailBase](https://github.com/trailbaseio/trailbase) | Rust | OSL-3.0 | [v0.34.4](https://github.com/trailbaseio/trailbase/releases/tag/v0.34.4) | 5647 | Firebase (partial), PocketBase (full) |
 | [Kuzzle](https://github.com/kuzzleio/kuzzle) | TypeScript | Apache-2.0 | [v2.59.0](https://github.com/kuzzleio/kuzzle/releases/tag/v2.59.0) | 1669 | Firebase (partial) |
 
 </details>
@@ -1731,8 +1731,8 @@ Deploy apps and databases to your own servers from a git push or a dashboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.3.23](https://github.com/coollabsio/coolify/releases/tag/v4.3.23) | 62642 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.30.8](https://github.com/Dokploy/dokploy/releases/tag/v0.30.8) | 37681 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.3.23](https://github.com/coollabsio/coolify/releases/tag/v4.3.23) | 62644 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.30.8](https://github.com/Dokploy/dokploy/releases/tag/v0.30.8) | 37683 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
 | [Dokku](https://github.com/dokku/dokku) | Go | MIT | [v0.38.31](https://github.com/dokku/dokku/releases/tag/v0.38.31) | 32169 | Heroku (full) |
 | [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.15.4](https://github.com/caprover/caprover/releases/tag/v1.15.4) signed | 15178 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
 | [Piku](https://github.com/piku/piku) | Python | MIT | [v1.0.0](https://github.com/piku/piku/releases/tag/v1.0.0) signed | 6604 | Heroku (partial) |
@@ -1747,9 +1747,9 @@ Manage content in an admin UI and deliver it to any front end through an API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.56.0](https://github.com/strapi/strapi/releases/tag/v5.56.0) | 73286 | Contentful (full) |
+| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.56.0](https://github.com/strapi/strapi/releases/tag/v5.56.0) | 73287 | Contentful (full) |
 | [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.90.2](https://github.com/payloadcms/payload/releases/tag/v3.90.2) | 45111 | Contentful (full), Strapi (full) |
-| [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.4.1](https://github.com/directus/directus/releases/tag/v12.4.1) signed | 38068 | Contentful (full) |
+| [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.4.1](https://github.com/directus/directus/releases/tag/v12.4.1) signed | 38071 | Contentful (full) |
 | [Wagtail](https://github.com/wagtail/wagtail) | Python | BSD-3-Clause | [v8.0](https://github.com/wagtail/wagtail/releases/tag/v8.0) | 20529 | Contentful (partial) |
 | [Decap CMS](https://github.com/decaporg/decap-cms) | JavaScript | MIT | [decap-cms@3.16.3](https://github.com/decaporg/decap-cms/releases/tag/decap-cms%403.16.3) | 19415 | Contentful (partial) |
 | [TinaCMS](https://github.com/tinacms/tinacms) | TypeScript | Apache-2.0 | [tinacms@3.14.2](https://github.com/tinacms/tinacms/releases/tag/tinacms%403.14.2) signed | 13825 | Contentful (partial) |
@@ -1788,7 +1788,7 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [ClassicPress](https://github.com/ClassicPress/ClassicPress) | PHP | GPL-2.0 | [2.7.3+dev](https://github.com/ClassicPress/ClassicPress/releases/tag/2.7.3%2Bdev) | 860 | none |
 | [Concrete CMS](https://github.com/concretecms/concretecms) | PHP | MIT | [9.5.4](https://github.com/concretecms/concretecms/releases/tag/9.5.4) signed | 852 | Squarespace (partial) |
 | [WonderCMS](https://github.com/WonderCMS/wondercms) | PHP | MIT | [3.6.0](https://github.com/WonderCMS/wondercms/releases/tag/3.6.0) signed | 740 | none |
-| [Typemill](https://github.com/typemill/typemill) | JavaScript | MIT | [v2.27.0](https://github.com/typemill/typemill/releases/tag/v2.27.0) | 619 | GitBook (partial) |
+| [Typemill](https://github.com/typemill/typemill) | JavaScript | MIT | [v2.27.0](https://github.com/typemill/typemill/releases/tag/v2.27.0) | 620 | GitBook (partial) |
 | [Bolt CMS](https://github.com/bolt/core) | PHP | MIT | [6.1.8](https://github.com/bolt/core/releases/tag/6.1.8) | 591 | none |
 
 </details>
@@ -1800,7 +1800,7 @@ Publish a blog with posts, tags, themes and comments from your own server.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Halo](https://github.com/halo-dev/halo) | Java | GPL-3.0 | [v2.26.1](https://github.com/halo-dev/halo/releases/tag/v2.26.1) signed | 39931 | Medium (partial) |
+| [Halo](https://github.com/halo-dev/halo) | Java | GPL-3.0 | [v2.26.1](https://github.com/halo-dev/halo/releases/tag/v2.26.1) signed | 39932 | Medium (partial) |
 | [Typecho](https://github.com/typecho/typecho) | PHP | GPL-2.0 | [v1.3.0](https://github.com/typecho/typecho/releases/tag/v1.3.0) signed | 12448 | Medium (partial) |
 | [Bludit](https://github.com/bludit/bludit) | PHP | MIT | [3.22.0](https://github.com/bludit/bludit/releases/tag/3.22.0) signed | 1467 | Medium (partial) |
 | [Chyrp Lite](https://github.com/xenocrat/chyrp-lite) | PHP | BSD-3-Clause | [v2026.02.02](https://github.com/xenocrat/chyrp-lite/releases/tag/v2026.02.02) | 494 | Medium (partial) |
@@ -1875,7 +1875,7 @@ Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.1](https://github.com/portainer/portainer/releases/tag/2.45.1) signed | 38621 | Lens (partial) |
+| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.1](https://github.com/portainer/portainer/releases/tag/2.45.1) signed | 38622 | Lens (partial) |
 | [k9s](https://github.com/derailed/k9s) | Go | Apache-2.0 | [v0.51.0](https://github.com/derailed/k9s/releases/tag/v0.51.0) | 34746 | Lens (partial) |
 | [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.2](https://github.com/rancher/rancher/releases/tag/v2.15.2) signed | 25960 | Lens (full) |
 | [Headlamp](https://github.com/kubernetes-sigs/headlamp) | TypeScript | Apache-2.0 | [v0.45.0](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.45.0) | 7389 | Lens (full) |
@@ -1891,7 +1891,7 @@ Run virtual machines and system containers across a cluster of hosts.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [KubeVirt](https://github.com/kubevirt/kubevirt) | Go | Apache-2.0 | [v1.9.0](https://github.com/kubevirt/kubevirt/releases/tag/v1.9.0) signed | 7100 | VMware vSphere (partial) |
-| [Incus](https://github.com/lxc/incus) | Go | Apache-2.0 | [v7.5.1](https://github.com/lxc/incus/releases/tag/v7.5.1) signed | 6340 | LXD (full), VMware vSphere (partial) |
+| [Incus](https://github.com/lxc/incus) | Go | Apache-2.0 | [v7.5.1](https://github.com/lxc/incus/releases/tag/v7.5.1) signed | 6341 | LXD (full), VMware vSphere (partial) |
 | [Harvester](https://github.com/harvester/harvester) | Go | Apache-2.0 | [v1.9.0](https://github.com/harvester/harvester/releases/tag/v1.9.0) | 5196 | VMware vSphere (full) |
 | [LXD](https://github.com/canonical/lxd) | Go | AGPL-3.0 | [lxd-6.9](https://github.com/canonical/lxd/releases/tag/lxd-6.9) signed | 4832 | none |
 | [Apache CloudStack](https://github.com/apache/cloudstack) | Java | Apache-2.0 | [4.23.0.0](https://github.com/apache/cloudstack/releases/tag/4.23.0.0) signed | 3090 | VMware vSphere (partial) |
@@ -1919,10 +1919,10 @@ Extract data from applications and databases and load it into a warehouse.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Canal](https://github.com/alibaba/canal) | Java | Apache-2.0 | [canal-1.1.8](https://github.com/alibaba/canal/releases/tag/canal-1.1.8) | 29739 | Debezium (partial) |
+| [Canal](https://github.com/alibaba/canal) | Java | Apache-2.0 | [canal-1.1.8](https://github.com/alibaba/canal/releases/tag/canal-1.1.8) | 29740 | Debezium (partial) |
 | [Airbyte](https://github.com/airbytehq/airbyte) | Python | Other | [v2.0.0](https://github.com/airbytehq/airbyte/releases/tag/v2.0.0) signed | 22180 | Fivetran (full) |
 | [DataX](https://github.com/alibaba/DataX) | Java | Other | [datax_v202309](https://github.com/alibaba/DataX/releases/tag/datax_v202309) signed | 17364 | Fivetran (partial) |
-| [Debezium](https://github.com/debezium/debezium) | Java | Apache-2.0 | [v3.7.0.Final](https://github.com/debezium/debezium/releases/tag/v3.7.0.Final) | 13184 | Fivetran (partial) |
+| [Debezium](https://github.com/debezium/debezium) | Java | Apache-2.0 | [v3.7.0.Final](https://github.com/debezium/debezium/releases/tag/v3.7.0.Final) | 13185 | Fivetran (partial) |
 | [Apache SeaTunnel](https://github.com/apache/seatunnel) | Java | Apache-2.0 | [v3.0.0](https://github.com/apache/seatunnel/releases/tag/v3.0.0) | 9698 | Fivetran (partial) |
 | [Snowplow](https://github.com/snowplow/snowplow) | Scala | Apache-2.0 | [22.01](https://github.com/snowplow/snowplow/releases/tag/22.01) | 7036 | Segment (partial) |
 | [dlt](https://github.com/dlt-hub/dlt) | Python | Apache-2.0 | [1.30.0](https://github.com/dlt-hub/dlt/releases/tag/1.30.0) signed | 5935 | Fivetran (partial) |
@@ -1939,7 +1939,7 @@ Send HTTP requests from Node.js and browsers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [axios](https://github.com/axios/axios) | JavaScript | MIT | [v1.20.0](https://github.com/axios/axios/releases/tag/v1.20.0) signed | 109350 | request (full) |
+| [axios](https://github.com/axios/axios) | JavaScript | MIT | [v1.20.0](https://github.com/axios/axios/releases/tag/v1.20.0) signed | 109349 | request (full) |
 | [request](https://github.com/request/request) | JavaScript | Apache-2.0 | [v2.88.1](https://github.com/request/request/releases/tag/v2.88.1) | 25495 | none |
 | [Ky](https://github.com/sindresorhus/ky) | TypeScript | MIT | [v2.1.0](https://github.com/sindresorhus/ky/releases/tag/v2.1.0) | 17105 | request (partial), axios (full) |
 | [SuperAgent](https://github.com/forwardemail/superagent) | JavaScript | MIT | [v10.4.1](https://github.com/forwardemail/superagent/releases/tag/v10.4.1) | 16634 | request (full) |
@@ -1988,7 +1988,7 @@ Declare schemas and validate data against them at runtime.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Zod](https://github.com/colinhacks/zod) | TypeScript | MIT | [v4.6.5](https://github.com/colinhacks/zod/releases/tag/v4.6.5) | 44066 | Yup (full), Joi (full) |
-| [Yup](https://github.com/jquense/yup) | TypeScript | MIT | [v1.0.0](https://github.com/jquense/yup/releases/tag/v1.0.0) | 23659 | none |
+| [Yup](https://github.com/jquense/yup) | TypeScript | MIT | [v1.0.0](https://github.com/jquense/yup/releases/tag/v1.0.0) | 23658 | none |
 | [Joi](https://github.com/hapijs/joi) | JavaScript | Other | [v18.2.9](https://github.com/hapijs/joi/releases/tag/v18.2.9) | 21164 | none |
 | [Ajv](https://github.com/ajv-validator/ajv) | TypeScript | MIT | [v8.20.0](https://github.com/ajv-validator/ajv/releases/tag/v8.20.0) signed | 14854 | none |
 | [class-validator](https://github.com/typestack/class-validator) | TypeScript | MIT | [v0.15.1](https://github.com/typestack/class-validator/releases/tag/v0.15.1) signed | 11836 | Joi (partial) |
@@ -2004,9 +2004,9 @@ Share and update application state across React components.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Redux](https://github.com/reduxjs/redux) | TypeScript | MIT | [v5.0.1](https://github.com/reduxjs/redux/releases/tag/v5.0.1) | 61482 | none |
+| [Redux](https://github.com/reduxjs/redux) | TypeScript | MIT | [v5.0.1](https://github.com/reduxjs/redux/releases/tag/v5.0.1) | 61481 | none |
 | [Zustand](https://github.com/pmndrs/zustand) | TypeScript | MIT | [v5.0.15](https://github.com/pmndrs/zustand/releases/tag/v5.0.15) | 58795 | Redux (full) |
-| [XState](https://github.com/statelyai/xstate) | TypeScript | MIT | [xstate@5.33.2](https://github.com/statelyai/xstate/releases/tag/xstate%405.33.2) signed | 30244 | none |
+| [XState](https://github.com/statelyai/xstate) | TypeScript | MIT | [xstate@5.33.2](https://github.com/statelyai/xstate/releases/tag/xstate%405.33.2) signed | 30246 | none |
 | [MobX](https://github.com/mobxjs/mobx) | TypeScript | MIT | [mobx@7.0.6](https://github.com/mobxjs/mobx/releases/tag/mobx%407.0.6) | 28212 | Redux (full) |
 | [Jotai](https://github.com/pmndrs/jotai) | TypeScript | MIT | [v3.0.1](https://github.com/pmndrs/jotai/releases/tag/v3.0.1) | 21292 | Redux (partial) |
 | [Valtio](https://github.com/pmndrs/valtio) | TypeScript | MIT | [v2.3.2](https://github.com/pmndrs/valtio/releases/tag/v2.3.2) | 10241 | Redux (partial) |
@@ -2037,7 +2037,7 @@ Load, transform and analyse tabular data in memory.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [pandas](https://github.com/pandas-dev/pandas) | Python | BSD-3-Clause | [v3.0.6](https://github.com/pandas-dev/pandas/releases/tag/v3.0.6) | 49922 | none |
-| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.0.0](https://github.com/pola-rs/polars/releases/tag/py-2.0.0) signed | 39927 | pandas (full) |
+| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.0.0](https://github.com/pola-rs/polars/releases/tag/py-2.0.0) signed | 39930 | pandas (full) |
 | [Dask](https://github.com/dask/dask) | Python | BSD-3-Clause | [2026.8.0](https://github.com/dask/dask/releases/tag/2026.8.0) | 13934 | pandas (partial) |
 | [Modin](https://github.com/modin-project/modin) | Python | Apache-2.0 | [0.37.1](https://github.com/modin-project/modin/releases/tag/0.37.1) signed | 10394 | pandas (drop-in) |
 | [cuDF](https://github.com/NVIDIA/cudf) | C++ | Apache-2.0 | [v26.08.01](https://github.com/NVIDIA/cudf/releases/tag/v26.08.01) | 9771 | pandas (drop-in) |
@@ -2085,7 +2085,7 @@ Filter lists interactively in a terminal, for files, history and anything piped 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [fzf](https://github.com/junegunn/fzf) | Go | MIT | [v0.74.4](https://github.com/junegunn/fzf/releases/tag/v0.74.4) signed | 83399 | none |
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Lua | MIT | [v0.2.1](https://github.com/nvim-telescope/telescope.nvim/releases/tag/v0.2.1) | 19813 | fzf (partial) |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Lua | MIT | [v0.2.1](https://github.com/nvim-telescope/telescope.nvim/releases/tag/v0.2.1) | 19811 | fzf (partial) |
 | [peco](https://github.com/peco/peco) | Go | MIT | [v0.6.0](https://github.com/peco/peco/releases/tag/v0.6.0) | 7914 | fzf (partial) |
 | [skim](https://github.com/skim-rs/skim) | Rust | MIT | [v5.7.4](https://github.com/skim-rs/skim/releases/tag/v5.7.4) signed | 6981 | fzf (full) |
 | [Television](https://github.com/alexpasmantier/television) | Rust | MIT | [0.15.9](https://github.com/alexpasmantier/television/releases/tag/0.15.9) | 6328 | fzf (full) |
@@ -2100,7 +2100,7 @@ Interactive command-line shells.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PowerShell](https://github.com/PowerShell/PowerShell) | C# | MIT | [v7.6.6](https://github.com/PowerShell/PowerShell/releases/tag/v7.6.6) | 55611 | none |
+| [PowerShell](https://github.com/PowerShell/PowerShell) | C# | MIT | [v7.6.6](https://github.com/PowerShell/PowerShell/releases/tag/v7.6.6) | 55613 | none |
 | [Nushell](https://github.com/nushell/nushell) | Rust | MIT | [0.116.1](https://github.com/nushell/nushell/releases/tag/0.116.1) signed | 40625 | Zsh (partial) |
 | [fish](https://github.com/fish-shell/fish-shell) | Rust | Other | [4.9.3](https://github.com/fish-shell/fish-shell/releases/tag/4.9.3) signed | 34262 | Zsh (full) |
 | [xonsh](https://github.com/xonsh/xonsh) | Python | Other | [0.24.2](https://github.com/xonsh/xonsh/releases/tag/0.24.2) signed | 9660 | Zsh (partial) |
@@ -2118,7 +2118,7 @@ Stage, commit, branch and browse history outside the bare git command.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [lazygit](https://github.com/jesseduffield/lazygit) | Go | MIT | [v0.66.0](https://github.com/jesseduffield/lazygit/releases/tag/v0.66.0) | 82927 | GitKraken (partial), Sourcetree (partial), tig (full) |
+| [lazygit](https://github.com/jesseduffield/lazygit) | Go | MIT | [v0.66.0](https://github.com/jesseduffield/lazygit/releases/tag/v0.66.0) | 82929 | GitKraken (partial), Sourcetree (partial), tig (full) |
 | [Jujutsu](https://github.com/jj-vcs/jj) | Rust | Apache-2.0 | [v0.45.1](https://github.com/jj-vcs/jj/releases/tag/v0.45.1) | 31907 | none |
 | [GitUI](https://github.com/gitui-org/gitui) | Rust | MIT | [v0.28.1](https://github.com/gitui-org/gitui/releases/tag/v0.28.1) | 22548 | GitKraken (partial), tig (full) |
 | [GitHub Desktop](https://github.com/desktop/desktop) | TypeScript | MIT | [release-3.6.6](https://github.com/desktop/desktop/releases/tag/release-3.6.6) | 21917 | GitKraken (partial), Sourcetree (partial) |
@@ -2143,7 +2143,7 @@ Documents, spreadsheets and presentations.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Etherpad](https://github.com/ether/etherpad) | TypeScript | Apache-2.0 | [v3.3.7](https://github.com/ether/etherpad/releases/tag/v3.3.7) | 18568 | Google Docs (partial) |
+| [Etherpad](https://github.com/ether/etherpad) | TypeScript | Apache-2.0 | [v3.3.7](https://github.com/ether/etherpad/releases/tag/v3.3.7) | 18569 | Google Docs (partial) |
 | [CryptPad](https://github.com/cryptpad/cryptpad) | JavaScript | AGPL-3.0 | [2026.5.1](https://github.com/cryptpad/cryptpad/releases/tag/2026.5.1) signed | 7991 | Google Docs (full), HackMD (partial) |
 | [ONLYOFFICE Docs](https://github.com/ONLYOFFICE/DocumentServer) | Shell | AGPL-3.0 | [v9.4.0](https://github.com/ONLYOFFICE/DocumentServer/releases/tag/v9.4.0) | 6971 | Microsoft 365 (partial), Google Docs (full) |
 | [ONLYOFFICE Desktop Editors](https://github.com/ONLYOFFICE/DesktopEditors) | unknown | AGPL-3.0 | [v9.4.0](https://github.com/ONLYOFFICE/DesktopEditors/releases/tag/v9.4.0) | 5481 | Microsoft 365 (partial) |
@@ -2160,7 +2160,7 @@ Scan, OCR, tag and search paper and PDF documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Python | GPL-3.0 | [v3.3.0](https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.0) | 46322 | Paperless-ng (drop-in), Paperless (full), DocuWare (partial) |
+| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Python | GPL-3.0 | [v3.3.0](https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.0) | 46324 | Paperless-ng (drop-in), Paperless (full), DocuWare (partial) |
 | [Paperless](https://github.com/the-paperless-project/paperless) archived | Python | GPL-3.0 | [2.7.0](https://github.com/the-paperless-project/paperless/releases/tag/2.7.0) | 7914 | none |
 | [Papra](https://github.com/papra-hq/papra) | TypeScript | AGPL-3.0 | [@papra/lecture@0.5.2](https://github.com/papra-hq/papra/releases/tag/%40papra/lecture%400.5.2) signed | 5540 | Paperless-ngx (full) |
 | [Paperless-ng](https://github.com/jonaswinkler/paperless-ng) archived | Python | GPL-3.0 | [ng-1.5.0](https://github.com/jonaswinkler/paperless-ng/releases/tag/ng-1.5.0) | 5408 | none |
@@ -2176,8 +2176,8 @@ Design and prototype user interfaces on a shared canvas.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Penpot](https://github.com/penpot/penpot) | Clojure | MPL-2.0 | [2.18.3](https://github.com/penpot/penpot/releases/tag/2.18.3) | 60746 | Figma (full), Canva (partial) |
-| [Onlook](https://github.com/onlook-dev/onlook) | TypeScript | Apache-2.0 | [v0.2.32](https://github.com/onlook-dev/onlook/releases/tag/v0.2.32) signed | 26868 | Figma (partial) |
+| [Penpot](https://github.com/penpot/penpot) | Clojure | MPL-2.0 | [2.18.3](https://github.com/penpot/penpot/releases/tag/2.18.3) | 60747 | Figma (full), Canva (partial) |
+| [Onlook](https://github.com/onlook-dev/onlook) | TypeScript | Apache-2.0 | [v0.2.32](https://github.com/onlook-dev/onlook/releases/tag/v0.2.32) signed | 26867 | Figma (partial) |
 | [GrapesJS](https://github.com/GrapesJS/grapesjs) | TypeScript | Other | [v0.23.6](https://github.com/GrapesJS/grapesjs/releases/tag/v0.23.6) signed | 26291 | Webflow (partial) |
 | [Puck](https://github.com/puckeditor/puck) | TypeScript | MIT | [v0.23.0](https://github.com/puckeditor/puck/releases/tag/v0.23.0) | 13430 | none |
 | [Webstudio](https://github.com/webstudio-is/webstudio) | TypeScript | AGPL-3.0 | [0.305.0](https://github.com/webstudio-is/webstudio/releases/tag/0.305.0) | 9036 | Webflow (full), Wix (partial), Squarespace (partial) |
@@ -2195,13 +2195,13 @@ Draw diagrams and sketch on a shared canvas.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Excalidraw](https://github.com/excalidraw/excalidraw) | TypeScript | MIT | [v0.18.1](https://github.com/excalidraw/excalidraw/releases/tag/v0.18.1) | 133596 | Miro (partial), Lucidchart (partial) |
+| [Excalidraw](https://github.com/excalidraw/excalidraw) | TypeScript | MIT | [v0.18.1](https://github.com/excalidraw/excalidraw/releases/tag/v0.18.1) | 133597 | Miro (partial), Lucidchart (partial) |
 | [Mermaid](https://github.com/mermaid-js/mermaid) | TypeScript | MIT | [@mermaid-js/tiny@12.1.0](https://github.com/mermaid-js/mermaid/releases/tag/%40mermaid-js/tiny%4012.1.0) | 90566 | Lucidchart (partial) |
-| [tldraw](https://github.com/tldraw/tldraw) | TypeScript | Other | [v5.5.2](https://github.com/tldraw/tldraw/releases/tag/v5.5.2) | 50779 | Miro (partial) |
+| [tldraw](https://github.com/tldraw/tldraw) | TypeScript | Other | [v5.5.2](https://github.com/tldraw/tldraw/releases/tag/v5.5.2) | 50780 | Miro (partial) |
 | [Diagrams](https://github.com/mingrammer/diagrams) | Python | MIT | [v0.25.1](https://github.com/mingrammer/diagrams/releases/tag/v0.25.1) signed | 42681 | Lucidchart (partial) |
 | [drawDB](https://github.com/drawdb-io/drawdb) | JavaScript | AGPL-3.0 | [v1.8.2](https://github.com/drawdb-io/drawdb/releases/tag/v1.8.2) | 39843 | Lucidchart (partial) |
 | [D2](https://github.com/d2lang/d2) | Go | MPL-2.0 | [v0.9.0](https://github.com/d2lang/d2/releases/tag/v0.9.0) signed | 25571 | Lucidchart (partial) |
-| [Drawnix](https://github.com/plait-board/drawnix) | TypeScript | MIT | [v0.4.0](https://github.com/plait-board/drawnix/releases/tag/v0.4.0) | 14903 | Miro (partial), XMind (partial) |
+| [Drawnix](https://github.com/plait-board/drawnix) | TypeScript | MIT | [v0.4.0](https://github.com/plait-board/drawnix/releases/tag/v0.4.0) | 14904 | Miro (partial), XMind (partial) |
 | [PlantUML](https://github.com/plantuml/plantuml) | Java | LGPL-3.0 | [v1.2026.8](https://github.com/plantuml/plantuml/releases/tag/v1.2026.8) | 13356 | Lucidchart (partial) |
 | [markmap](https://github.com/markmap/markmap) | TypeScript | MIT | [v0.18.0](https://github.com/markmap/markmap/releases/tag/v0.18.0) | 13149 | none |
 | [SimpleMindMap](https://github.com/wanglin2/mind-map) | JavaScript | MIT | [0.20.0](https://github.com/wanglin2/mind-map/releases/tag/0.20.0) | 12793 | XMind (full) |
@@ -2222,11 +2222,11 @@ Record the screen and camera and share the video.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [32.2.2](https://github.com/obsproject/obs-studio/releases/tag/32.2.2) | 77052 | Loom (partial) |
+| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [32.2.2](https://github.com/obsproject/obs-studio/releases/tag/32.2.2) | 77054 | Loom (partial) |
 | [ShareX](https://github.com/ShareX/ShareX) | C# | GPL-3.0 | [v21.0.0](https://github.com/ShareX/ShareX/releases/tag/v21.0.0) | 39908 | Snagit (full), Loom (partial) |
 | [Flameshot](https://github.com/flameshot-org/flameshot) | C++ | GPL-3.0 | [v14.0.0](https://github.com/flameshot-org/flameshot/releases/tag/v14.0.0) signed | 31098 | Snagit (partial) |
 | [ScreenToGif](https://github.com/NickeManarin/ScreenToGif) | C# | MS-PL | [2.43.2](https://github.com/NickeManarin/ScreenToGif/releases/tag/2.43.2) | 27748 | Snagit (partial) |
-| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.0](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.0) | 23081 | Loom (full) |
+| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.0](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.0) | 23082 | Loom (full) |
 | [Screenity](https://github.com/alyssaxuu/screenity) | JavaScript | GPL-3.0 | [v4.6.12](https://github.com/alyssaxuu/screenity/releases/tag/v4.6.12) | 18755 | Loom (partial) |
 | [Greenshot](https://github.com/greenshot/greenshot) | C# | GPL-3.0 | [v1.3.315](https://github.com/greenshot/greenshot/releases/tag/v1.3.315) | 5142 | Snagit (partial) |
 | [Kooha](https://github.com/SeaDve/Kooha) | Rust | GPL-3.0 | [v2.3.2](https://github.com/SeaDve/Kooha/releases/tag/v2.3.2) signed | 3526 | Loom (partial) |
@@ -2240,7 +2240,7 @@ Generate one-time codes for two-factor authentication.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [photos-v1.3.65](https://github.com/ente/ente/releases/tag/photos-v1.3.65) | 29259 | Twilio Authy (full), Google Authenticator (full) |
+| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ensu-v0.1.21](https://github.com/ente/ente/releases/tag/ensu-v0.1.21) | 29259 | Twilio Authy (full), Google Authenticator (full) |
 | [Aegis](https://github.com/beemdevelopment/Aegis) | Java | GPL-3.0 | [v3.4.3](https://github.com/beemdevelopment/Aegis/releases/tag/v3.4.3) | 13216 | Twilio Authy (full), Google Authenticator (full) |
 | [Stratum](https://github.com/stratumauth/app) | C# | GPL-3.0 | [v1.6.2](https://github.com/stratumauth/app/releases/tag/v1.6.2) signed | 4605 | Twilio Authy (full), Google Authenticator (full) |
 | [FreeOTP](https://github.com/freeotp/freeotp-android) | Java | Apache-2.0 | [v2.0.6](https://github.com/freeotp/freeotp-android/releases/tag/v2.0.6) | 1676 | Google Authenticator (full) |
@@ -2255,7 +2255,7 @@ Check grammar, spelling and style as you type.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Harper](https://github.com/Automattic/harper) | Rust | Apache-2.0 | [v2.12.0](https://github.com/Automattic/harper/releases/tag/v2.12.0) | 16185 | Grammarly (partial) |
+| [Harper](https://github.com/Automattic/harper) | Rust | Apache-2.0 | [v2.12.0](https://github.com/Automattic/harper/releases/tag/v2.12.0) | 16187 | Grammarly (partial) |
 | [LanguageTool](https://github.com/languagetool-org/languagetool) | Java | LGPL-2.1 | [v6.8](https://github.com/languagetool-org/languagetool/releases/tag/v6.8) | 15107 | Grammarly (full) |
 | [Vale](https://github.com/vale-cli/vale) | Go | MIT | [v3.24.0](https://github.com/vale-cli/vale/releases/tag/v3.24.0) signed | 6207 | Grammarly (partial) |
 | [proselint](https://github.com/amperser/proselint) | JavaScript | BSD-3-Clause | [v0.16.0](https://github.com/amperser/proselint/releases/tag/v0.16.0) | 4581 | Grammarly (partial) |
@@ -2270,13 +2270,13 @@ Translate text between languages, through an API or a web UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | Python | AGPL-3.0 | [v1.9.11](https://github.com/PDFMathTranslate/PDFMathTranslate/releases/tag/v1.9.11) | 37359 | DeepL (partial) |
+| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | Python | AGPL-3.0 | [v1.9.11](https://github.com/PDFMathTranslate/PDFMathTranslate/releases/tag/v1.9.11) | 37360 | DeepL (partial) |
 | [NextAI Translator](https://github.com/nextai-translator/nextai-translator) | TypeScript | AGPL-3.0 | [v0.6.43](https://github.com/nextai-translator/nextai-translator/releases/tag/v0.6.43) | 24998 | DeepL (partial) |
 | [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) | Python | AGPL-3.0 | [v1.9.6](https://github.com/LibreTranslate/LibreTranslate/releases/tag/v1.9.6) | 16994 | DeepL (partial), Google Translate (partial) |
 | [KISS Translator](https://github.com/fishjar/kiss-translator) | JavaScript | GPL-3.0 | [v2.1.0](https://github.com/fishjar/kiss-translator/releases/tag/v2.1.0) | 12764 | Google Translate (partial) |
-| [BabelDOC](https://github.com/funstory-ai/BabelDOC) | Python | AGPL-3.0 | [v0.6.4](https://github.com/funstory-ai/BabelDOC/releases/tag/v0.6.4) | 9658 | DeepL (partial) |
+| [BabelDOC](https://github.com/funstory-ai/BabelDOC) | Python | AGPL-3.0 | [v0.6.4](https://github.com/funstory-ai/BabelDOC/releases/tag/v0.6.4) | 9657 | DeepL (partial) |
 | [Argos Translate](https://github.com/argosopentech/argos-translate) | Python | MIT | [v1.4.0](https://github.com/argosopentech/argos-translate/releases/tag/v1.4.0) | 6531 | Google Translate (partial), DeepL (partial) |
-| [MTranServer](https://github.com/xxnuo/MTranServer) | C++ | Apache-2.0 | [v4.0.33](https://github.com/xxnuo/MTranServer/releases/tag/v4.0.33) | 4714 | DeepL (partial), Google Translate (partial) |
+| [MTranServer](https://github.com/xxnuo/MTranServer) | C++ | Apache-2.0 | [v4.0.33](https://github.com/xxnuo/MTranServer/releases/tag/v4.0.33) | 4713 | DeepL (partial), Google Translate (partial) |
 
 </details>
 
@@ -2288,7 +2288,7 @@ Save links and articles to read or find again later.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Karakeep](https://github.com/karakeep-app/karakeep) | TypeScript | AGPL-3.0 | [v0.33.2](https://github.com/karakeep-app/karakeep/releases/tag/v0.33.2) signed | 29479 | Pocket (full), Raindrop.io (full) |
-| [Linkwarden](https://github.com/linkwarden/linkwarden) | TypeScript | AGPL-3.0 | [v2.16.3](https://github.com/linkwarden/linkwarden/releases/tag/v2.16.3) signed | 19942 | Raindrop.io (full), Pocket (full) |
+| [Linkwarden](https://github.com/linkwarden/linkwarden) | TypeScript | AGPL-3.0 | [v2.16.3](https://github.com/linkwarden/linkwarden/releases/tag/v2.16.3) signed | 19943 | Raindrop.io (full), Pocket (full) |
 | [wallabag](https://github.com/wallabag/wallabag) | PHP | MIT | [2.6.14](https://github.com/wallabag/wallabag/releases/tag/2.6.14) signed | 12996 | Pocket (full), Raindrop.io (partial) |
 | [Shiori](https://github.com/go-shiori/shiori) | Go | MIT | [v1.8.0](https://github.com/go-shiori/shiori/releases/tag/v1.8.0) signed | 11662 | Pocket (full), Raindrop.io (partial) |
 | [linkding](https://github.com/sissbruecker/linkding) | Python | MIT | [v1.47.0](https://github.com/sissbruecker/linkding/releases/tag/v1.47.0) | 11278 | Raindrop.io (full), Pocket (partial) |
@@ -2308,19 +2308,19 @@ Follow sites through RSS and Atom feeds.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.15.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.15.0) signed | 39065 | Feedly (full), Inoreader (full) |
+| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.15.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.15.0) signed | 39064 | Feedly (full), Inoreader (full) |
 | [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.30.1](https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.1) signed | 16238 | Feedly (full) |
 | [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [mac-7.1.5](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.1.5) | 10449 | Feedly (partial) |
 | [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.3](https://github.com/miniflux/v2/releases/tag/2.3.3) | 9769 | Feedly (full) |
 | [Fluent Reader](https://github.com/yang991178/fluent-reader) | TypeScript | BSD-3-Clause | [v1.2.2](https://github.com/yang991178/fluent-reader/releases/tag/v1.2.2) | 9693 | Feedly (partial) |
 | [NewsBlur](https://github.com/samuelclay/NewsBlur) | Python | MIT | [v0.2.2](https://github.com/samuelclay/NewsBlur/releases/tag/v0.2.2) | 7642 | Feedly (full) |
-| [Read You](https://github.com/ReadYouApp/ReadYou) | Kotlin | GPL-3.0 | [0.16.2](https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2) signed | 7577 | Feedly (partial) |
+| [Read You](https://github.com/ReadYouApp/ReadYou) | Kotlin | GPL-3.0 | [0.16.2](https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2) signed | 7578 | Feedly (partial) |
 | [Stringer](https://github.com/stringer-rss/stringer) | Ruby | MIT | none | 4131 | Feedly (partial) |
 | [yarr](https://github.com/nkanaev/yarr) | Go | MIT | [v2.9](https://github.com/nkanaev/yarr/releases/tag/v2.9) | 4064 | Feedly (partial) |
 | [Newsboat](https://github.com/newsboat/newsboat) | C++ | MIT | [r2.45](https://github.com/newsboat/newsboat/releases/tag/r2.45) | 3915 | Feedly (partial) |
 | [Feedbin](https://github.com/feedbin/feedbin) | Ruby | MIT | none | 3781 | Feedly (full) |
 | [CommaFeed](https://github.com/Athou/commafeed) | Java | Apache-2.0 | [7.3.2](https://github.com/Athou/commafeed/releases/tag/7.3.2) | 3629 | Feedly (full) |
-| [Feeder](https://github.com/spacecowboy/Feeder) | Kotlin | GPL-3.0 | [2.23.2](https://github.com/spacecowboy/Feeder/releases/tag/2.23.2) signed | 3067 | Feedly (partial) |
+| [Feeder](https://github.com/spacecowboy/Feeder) | Kotlin | GPL-3.0 | [2.23.2](https://github.com/spacecowboy/Feeder/releases/tag/2.23.2) signed | 3068 | Feedly (partial) |
 | [selfoss](https://github.com/fossar/selfoss) | HTML | GPL-3.0 | [2.19](https://github.com/fossar/selfoss/releases/tag/2.19) signed | 2474 | Feedly (full) |
 | [Fusion](https://github.com/0x2E/fusion) | TypeScript | MIT | [v1.2.1](https://github.com/0x2E/fusion/releases/tag/v1.2.1) signed | 2188 | Feedly (full) |
 | [Capy Reader](https://github.com/jocmp/capyreader) | Kotlin | GPL-3.0 | [2026.07.1212](https://github.com/jocmp/capyreader/releases/tag/2026.07.1212) | 1403 | Feedly (partial) |
@@ -2351,12 +2351,12 @@ Accounting, inventory, sales and operations in one system.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 54861 | NetSuite (full) |
-| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v15.121.6](https://github.com/frappe/erpnext/releases/tag/v15.121.6) | 39842 | NetSuite (full), Odoo (full) |
-| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.13.43](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.43) signed | 10231 | QuickBooks (partial) |
+| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v16.50.0](https://github.com/frappe/erpnext/releases/tag/v16.50.0) | 39843 | NetSuite (full), Odoo (full) |
+| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.13.43](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.43) signed | 10232 | QuickBooks (partial) |
 | [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.2.4](https://github.com/akaunting/akaunting/releases/tag/3.2.4) | 10163 | QuickBooks (full), Xero (full) |
-| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) | TypeScript | AGPL-3.0 | [v111.48.2](https://github.com/ever-co/ever-gauzy/releases/tag/v111.48.2) signed | 8203 | NetSuite (partial), Harvest (full) |
+| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) | TypeScript | AGPL-3.0 | [v111.48.2](https://github.com/ever-co/ever-gauzy/releases/tag/v111.48.2) signed | 8204 | NetSuite (partial), Harvest (full) |
 | [Dolibarr](https://github.com/Dolibarr/dolibarr) | PHP | GPL-3.0 | [24.0.1](https://github.com/Dolibarr/dolibarr/releases/tag/24.0.1) | 7692 | NetSuite (partial) |
-| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.42](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.42) signed | 3922 | QuickBooks (full), Xero (full) |
+| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.42](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.42) signed | 3923 | QuickBooks (full), Xero (full) |
 | [metasfresh](https://github.com/metasfresh/metasfresh) | Java | none | [5.175](https://github.com/metasfresh/metasfresh/releases/tag/5.175) | 2442 | NetSuite (partial) |
 | [Apache OFBiz](https://github.com/apache/ofbiz-framework) | Java | Apache-2.0 | [release24.09.07](https://github.com/apache/ofbiz-framework/releases/tag/release24.09.07) | 1125 | NetSuite (partial) |
 | [Axelor Open Suite](https://github.com/axelor/axelor-open-suite) | Java | Other | [v9.1.9](https://github.com/axelor/axelor-open-suite/releases/tag/v9.1.9) | 980 | NetSuite (partial) |
@@ -2382,7 +2382,7 @@ Track accounts, spending and budgets for a person or a household.
 | [Wallos](https://github.com/ellite/Wallos) | PHP | GPL-3.0 | [v5.8.3](https://github.com/ellite/Wallos/releases/tag/v5.8.3) signed | 8634 | Rocket Money (partial) |
 | [Beancount](https://github.com/beancount/beancount) | Python | GPL-2.0 | [3.2.3](https://github.com/beancount/beancount/releases/tag/3.2.3) | 6053 | Quicken (partial) |
 | [Ledger](https://github.com/ledger/ledger) | C++ | Other | [v3.4.1](https://github.com/ledger/ledger/releases/tag/v3.4.1) signed | 6053 | Quicken (partial) |
-| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping) | Go | MIT | [v2.0.1](https://github.com/mayswind/ezbookkeeping/releases/tag/v2.0.1) | 5720 | Mint (partial), Quicken (partial) |
+| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping) | Go | MIT | [v2.0.1](https://github.com/mayswind/ezbookkeeping/releases/tag/v2.0.1) | 5719 | Mint (partial), Quicken (partial) |
 | [hledger](https://github.com/hledgerorg/hledger) | Haskell | GPL-3.0 | [1.52.4](https://github.com/hledgerorg/hledger/releases/tag/1.52.4) signed | 4745 | Quicken (partial) |
 | [GnuCash](https://github.com/Gnucash/gnucash) | C | Other | [5.17](https://github.com/Gnucash/gnucash/releases/tag/5.17) | 4367 | Quicken (partial) |
 | [Portfolio Performance](https://github.com/portfolio-performance/portfolio) | Java | EPL-1.0 | [0.88.0](https://github.com/portfolio-performance/portfolio/releases/tag/0.88.0) signed | 4089 | Empower Personal Dashboard (partial) |
@@ -2400,12 +2400,12 @@ Track contacts, companies and deals.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [twenty/v2.45.0](https://github.com/twentyhq/twenty/releases/tag/twenty/v2.45.0) signed | 57962 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [twenty/v2.45.0](https://github.com/twentyhq/twenty/releases/tag/twenty/v2.45.0) signed | 57965 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
 | [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25438 | none |
 | [Krayin CRM](https://github.com/krayin/laravel-crm) | PHP | MIT | [v2.2.6](https://github.com/krayin/laravel-crm/releases/tag/v2.2.6) signed | 23974 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
 | [IDURAR](https://github.com/idurar/idurar-erp-crm) | JavaScript | AGPL-3.0 | [4.1.1](https://github.com/idurar/idurar-erp-crm/releases/tag/4.1.1) signed | 8851 | QuickBooks (partial) |
 | [SuiteCRM](https://github.com/SuiteCRM/SuiteCRM) | PHP | AGPL-3.0 | [v7.15.2](https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2) | 5782 | Salesforce (full) |
-| [Frappe CRM](https://github.com/frappe/crm) | Vue | AGPL-3.0 | [v1.86.0](https://github.com/frappe/crm/releases/tag/v1.86.0) | 3728 | Pipedrive (full), Salesforce (partial) |
+| [Frappe CRM](https://github.com/frappe/crm) | Vue | AGPL-3.0 | [v1.86.0](https://github.com/frappe/crm/releases/tag/v1.86.0) | 3729 | Pipedrive (full), Salesforce (partial) |
 | [Fat Free CRM](https://github.com/fatfreecrm/fat_free_crm) | Ruby | Other | [v0.28.0](https://github.com/fatfreecrm/fat_free_crm/releases/tag/v0.28.0) signed | 3633 | Salesforce (partial) |
 | [EspoCRM](https://github.com/espocrm/espocrm) | PHP | AGPL-3.0 | [10.0.9](https://github.com/espocrm/espocrm/releases/tag/10.0.9) | 3442 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
 | [Relaticle](https://github.com/relaticle/relaticle) | PHP | AGPL-3.0 | [v3.6.2](https://github.com/relaticle/relaticle/releases/tag/v3.6.2) signed | 1753 | Pipedrive (partial) |
@@ -2424,7 +2424,7 @@ Handle customer requests from email, chat and other channels as tickets.
 |---|---|---|---|---:|---|
 | [Chatwoot](https://github.com/chatwoot/chatwoot) | Ruby | Other | [v4.18.0](https://github.com/chatwoot/chatwoot/releases/tag/v4.18.0) | 37583 | Intercom (full), Zendesk (partial) |
 | [UVdesk](https://github.com/uvdesk/community-skeleton) | CSS | OSL-3.0 | [v1.1.8](https://github.com/uvdesk/community-skeleton/releases/tag/v1.1.8) signed | 19625 | Zendesk (partial), Freshdesk (partial) |
-| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [11.0.11](https://github.com/glpi-project/glpi/releases/tag/11.0.11) | 6428 | ServiceNow (partial) |
+| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [11.0.11](https://github.com/glpi-project/glpi/releases/tag/11.0.11) | 6429 | ServiceNow (partial) |
 | [Zammad](https://github.com/zammad/zammad) | Ruby | AGPL-3.0 | [7.2.1](https://github.com/zammad/zammad/releases/tag/7.2.1) signed | 5984 | Zendesk (full), Freshdesk (full) |
 | [FreeScout](https://github.com/freescout-help-desk/freescout) | PHP | AGPL-3.0 | [1.8.245](https://github.com/freescout-help-desk/freescout/releases/tag/1.8.245) | 4587 | Zendesk (partial) |
 | [osTicket](https://github.com/osTicket/osTicket) | PHP | GPL-2.0 | [v1.18.4](https://github.com/osTicket/osTicket/releases/tag/v1.18.4) | 3974 | Zendesk (partial), Freshdesk (partial) |
@@ -2449,15 +2449,15 @@ Run an online store, from catalogue to checkout.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.21.2](https://github.com/medusajs/medusa/releases/tag/v2.21.2) signed | 36623 | Shopify (partial) |
+| [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.21.2](https://github.com/medusajs/medusa/releases/tag/v2.21.2) signed | 36622 | Shopify (partial) |
 | [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.4.13](https://github.com/bagisto/bagisto/releases/tag/v2.4.13) | 28214 | Shopify (full) |
-| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.39](https://github.com/saleor/saleor/releases/tag/3.23.39) signed | 23416 | Shopify (partial) |
+| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.39](https://github.com/saleor/saleor/releases/tag/3.23.39) signed | 23417 | Shopify (partial) |
 | [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v5.6.1](https://github.com/spree/spree/releases/tag/v5.6.1) | 15742 | Shopify (full) |
 | [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.9](https://github.com/magento/magento2/releases/tag/2.4.9) | 12197 | Shopify (full) |
 | [WooCommerce](https://github.com/woocommerce/woocommerce) | PHP | Other | [11.1.2](https://github.com/woocommerce/woocommerce/releases/tag/11.1.2) signed | 10538 | Shopify (full) |
 | [EverShop](https://github.com/evershopcommerce/evershop) | TypeScript | GPL-3.0 | [v2.2.1](https://github.com/evershopcommerce/evershop/releases/tag/v2.2.1) | 10501 | Shopify (full) |
 | [nopCommerce](https://github.com/nopSolutions/nopCommerce) | C# | Other | [release-4.90.8](https://github.com/nopSolutions/nopCommerce/releases/tag/release-4.90.8) | 10160 | Shopify (full) |
-| [PrestaShop](https://github.com/PrestaShop/PrestaShop) | PHP | Other | [9.2.0](https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.0) signed | 9226 | Shopify (full) |
+| [PrestaShop](https://github.com/PrestaShop/PrestaShop) | PHP | Other | [9.2.0](https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.0) signed | 9225 | Shopify (full) |
 | [Aimeos](https://github.com/aimeos/aimeos-laravel) | PHP | MIT | [2026.10.1](https://github.com/aimeos/aimeos-laravel/releases/tag/2026.10.1) | 8707 | Shopify (partial) |
 | [Sylius](https://github.com/Sylius/Sylius) | PHP | MIT | [v2.3.0](https://github.com/Sylius/Sylius/releases/tag/v2.3.0) signed | 8551 | Shopify (partial) |
 | [Vendure](https://github.com/vendurehq/vendure) | TypeScript | Other | [v3.7.4](https://github.com/vendurehq/vendure/releases/tag/v3.7.4) | 8506 | Shopify (partial) |
@@ -2480,10 +2480,10 @@ Short links on your own domain, with click statistics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dub](https://github.com/dubinc/dub) | TypeScript | Other | none | 24868 | Bitly (full) |
+| [Dub](https://github.com/dubinc/dub) | TypeScript | Other | none | 24869 | Bitly (full) |
 | [YOURLS](https://github.com/YOURLS/YOURLS) | PHP | MIT | [1.10.6](https://github.com/YOURLS/YOURLS/releases/tag/1.10.6) signed | 12254 | Bitly (full) |
-| [Kutt](https://github.com/thedevs-network/kutt) | JavaScript | MIT | [v3.2.6](https://github.com/thedevs-network/kutt/releases/tag/v3.2.6) | 11138 | Bitly (full) |
-| [Sink](https://github.com/miantiao-me/Sink) | TypeScript | AGPL-3.0 | [v0.3.1](https://github.com/miantiao-me/Sink/releases/tag/v0.3.1) | 7195 | Bitly (full) |
+| [Kutt](https://github.com/thedevs-network/kutt) | JavaScript | MIT | [v3.2.6](https://github.com/thedevs-network/kutt/releases/tag/v3.2.6) | 11139 | Bitly (full) |
+| [Sink](https://github.com/miantiao-me/Sink) | TypeScript | AGPL-3.0 | [v0.3.1](https://github.com/miantiao-me/Sink/releases/tag/v0.3.1) | 7193 | Bitly (full) |
 | [Shlink](https://github.com/shlinkio/shlink) | PHP | MIT | [v5.1.7](https://github.com/shlinkio/shlink/releases/tag/v5.1.7) | 5318 | Bitly (full) |
 | [Slash](https://github.com/yourselfhosted/slash) | TypeScript | AGPL-3.0 | [v0.5.3](https://github.com/yourselfhosted/slash/releases/tag/v0.5.3) | 3185 | Bitly (partial) |
 | [Chhoto URL](https://github.com/SinTan1729/chhoto-url) | Rust | MIT | [7.8.2](https://github.com/SinTan1729/chhoto-url/releases/tag/7.8.2) signed | 980 | Bitly (partial) |
@@ -2500,11 +2500,11 @@ Host email for your own domains.
 | [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v16.0.1](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1) signed | 18905 | Google Workspace (partial) |
 | [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.3.7](https://github.com/postalserver/postal/releases/tag/3.3.7) signed | 16854 | SendGrid (full) |
 | [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15436 | Google Workspace (partial) |
-| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v0.16.25](https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.25) | 14974 | Google Workspace (partial), Microsoft 365 (partial) |
+| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v0.16.25](https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.25) | 14975 | Google Workspace (partial), Microsoft 365 (partial) |
 | [mailcow](https://github.com/mailcow/mailcow-dockerized) | JavaScript | GPL-3.0 | [2026-09a](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-09a) signed | 13563 | Google Workspace (partial), Microsoft 365 (partial) |
 | [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.61](https://github.com/Mailu/Mailu/releases/tag/2024.06.61) signed | 7537 | Google Workspace (partial) |
 | [Maddy](https://github.com/foxcpp/maddy) | Go | GPL-3.0 | [v0.9.6](https://github.com/foxcpp/maddy/releases/tag/v0.9.6) signed | 6099 | Google Workspace (partial) |
-| [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5886 | Google Workspace (partial) |
+| [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5887 | Google Workspace (partial) |
 | [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.3.4](https://github.com/haraka/Haraka/releases/tag/v3.3.4) signed | 5613 | SendGrid (partial) |
 | [Modoboa](https://github.com/modoboa/modoboa) | Python | ISC | [2.11.0](https://github.com/modoboa/modoboa/releases/tag/2.11.0) signed | 3542 | Google Workspace (partial) |
 | [Rspamd](https://github.com/rspamd/rspamd) | C | Other | [4.2.1](https://github.com/rspamd/rspamd/releases/tag/4.2.1) signed | 2538 | none |
@@ -2528,9 +2528,9 @@ Development environments on a remote machine, reached from a browser or a local 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [code-server](https://github.com/coder/code-server) | TypeScript | MIT | [v4.140.0](https://github.com/coder/code-server/releases/tag/v4.140.0) signed | 79555 | GitHub Codespaces (partial) |
+| [code-server](https://github.com/coder/code-server) | TypeScript | MIT | [v4.140.0](https://github.com/coder/code-server/releases/tag/v4.140.0) signed | 79554 | GitHub Codespaces (partial) |
 | [Coder](https://github.com/coder/coder) | Go | AGPL-3.0 | [v2.36.7](https://github.com/coder/coder/releases/tag/v2.36.7) | 16864 | GitHub Codespaces (full) |
-| [DevPod](https://github.com/loft-sh/devpod) | Go | MPL-2.0 | [v0.6.15](https://github.com/loft-sh/devpod/releases/tag/v0.6.15) | 15250 | GitHub Codespaces (full) |
+| [DevPod](https://github.com/loft-sh/devpod) | Go | MPL-2.0 | [v0.6.15](https://github.com/loft-sh/devpod/releases/tag/v0.6.15) | 15249 | GitHub Codespaces (full) |
 | [Eclipse Che](https://github.com/eclipse-che/che) | TypeScript | EPL-2.0 | [7.123.0](https://github.com/eclipse-che/che/releases/tag/7.123.0) | 7168 | GitHub Codespaces (full) |
 
 </details>
@@ -2558,7 +2558,7 @@ Route, authenticate and rate-limit API traffic in front of services.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.3](https://github.com/Kong/kong/releases/tag/3.9.3) signed | 44245 | none |
-| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17199 | Kong Gateway (full) |
+| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17200 | Kong Gateway (full) |
 | [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.15.1](https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1) signed | 10853 | Kong Gateway (full) |
 | [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9495 | Kong Gateway (partial) |
 | [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.1](https://github.com/apache/shenyu/releases/tag/v2.7.1) | 8844 | Kong Gateway (partial) |
@@ -2579,10 +2579,10 @@ Schedule and run data pipelines and jobs as dependency graphs.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Apache Airflow](https://github.com/apache/airflow) | Python | Apache-2.0 | [3.3.2](https://github.com/apache/airflow/releases/tag/3.3.2) | 47070 | none |
-| [Conductor](https://github.com/conductor-oss/conductor) | Java | Apache-2.0 | [v3.32.5](https://github.com/conductor-oss/conductor/releases/tag/v3.32.5) | 32270 | none |
-| [Kestra](https://github.com/kestra-io/kestra) | Java | Apache-2.0 | [v2.0.5](https://github.com/kestra-io/kestra/releases/tag/v2.0.5) | 29301 | Apache Airflow (full) |
-| [Prefect](https://github.com/PrefectHQ/prefect) | Python | Apache-2.0 | [3.8.7](https://github.com/PrefectHQ/prefect/releases/tag/3.8.7) signed | 23978 | Apache Airflow (full) |
-| [Temporal](https://github.com/temporalio/temporal) | Go | MIT | [v1.32.0](https://github.com/temporalio/temporal/releases/tag/v1.32.0) signed | 23497 | none |
+| [Conductor](https://github.com/conductor-oss/conductor) | Java | Apache-2.0 | [v3.32.5](https://github.com/conductor-oss/conductor/releases/tag/v3.32.5) | 32269 | none |
+| [Kestra](https://github.com/kestra-io/kestra) | Java | Apache-2.0 | [v2.0.5](https://github.com/kestra-io/kestra/releases/tag/v2.0.5) | 29302 | Apache Airflow (full) |
+| [Prefect](https://github.com/PrefectHQ/prefect) | Python | Apache-2.0 | [3.8.7](https://github.com/PrefectHQ/prefect/releases/tag/3.8.7) signed | 23979 | Apache Airflow (full) |
+| [Temporal](https://github.com/temporalio/temporal) | Go | MIT | [v1.32.0](https://github.com/temporalio/temporal/releases/tag/v1.32.0) signed | 23498 | none |
 | [Luigi](https://github.com/spotify/luigi) | Python | Apache-2.0 | [v3.8.1](https://github.com/spotify/luigi/releases/tag/v3.8.1) | 18781 | Apache Airflow (partial) |
 | [Argo Workflows](https://github.com/argoproj/argo-workflows) | Go | Apache-2.0 | [v4.1.4](https://github.com/argoproj/argo-workflows/releases/tag/v4.1.4) signed | 17024 | Apache Airflow (full) |
 | [Dagster](https://github.com/dagster-io/dagster) | Python | Apache-2.0 | [1.13.25](https://github.com/dagster-io/dagster/releases/tag/1.13.25) | 16240 | Apache Airflow (full) |
@@ -2598,11 +2598,11 @@ Store embeddings and search them by similarity.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Milvus](https://github.com/milvus-io/milvus) | Go | Apache-2.0 | [v3.0.2](https://github.com/milvus-io/milvus/releases/tag/v3.0.2) signed | 46327 | Pinecone (full) |
-| [Qdrant](https://github.com/qdrant/qdrant) | Rust | Apache-2.0 | [v1.19.2](https://github.com/qdrant/qdrant/releases/tag/v1.19.2) signed | 34948 | Pinecone (full) |
+| [Qdrant](https://github.com/qdrant/qdrant) | Rust | Apache-2.0 | [v1.19.2](https://github.com/qdrant/qdrant/releases/tag/v1.19.2) signed | 34947 | Pinecone (full) |
 | [Chroma](https://github.com/chroma-core/chroma) | Rust | Apache-2.0 | [1.5.9](https://github.com/chroma-core/chroma/releases/tag/1.5.9) signed | 29453 | Pinecone (partial) |
 | [pgvector](https://github.com/pgvector/pgvector) | C | Other | [v0.8.7](https://github.com/pgvector/pgvector/releases/tag/v0.8.7) | 23255 | Pinecone (partial) |
 | [Weaviate](https://github.com/weaviate/weaviate) | Go | Other | [v1.39.9](https://github.com/weaviate/weaviate/releases/tag/v1.39.9) | 16866 | Pinecone (full) |
-| [LanceDB](https://github.com/lancedb/lancedb) | Rust | Apache-2.0 | [v0.39.0](https://github.com/lancedb/lancedb/releases/tag/v0.39.0) | 11610 | Pinecone (partial) |
+| [LanceDB](https://github.com/lancedb/lancedb) | Rust | Apache-2.0 | [v0.39.0](https://github.com/lancedb/lancedb/releases/tag/v0.39.0) | 11609 | Pinecone (partial) |
 | [Deep Lake](https://github.com/activeloopai/deeplake) | C++ | Apache-2.0 | [v4.5.2](https://github.com/activeloopai/deeplake/releases/tag/v4.5.2) signed | 9249 | none |
 | [Infinity](https://github.com/infiniflow/infinity) | C++ | Apache-2.0 | [v0.7.3](https://github.com/infiniflow/infinity/releases/tag/v0.7.3) signed | 4732 | Pinecone (partial) |
 | [pgvectorscale](https://github.com/timescale/pgvectorscale) | Rust | PostgreSQL | [0.9.1](https://github.com/timescale/pgvectorscale/releases/tag/0.9.1) | 3136 | Pinecone (partial) |
@@ -2618,8 +2618,8 @@ Columnar SQL engines for analytics over large datasets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ClickHouse](https://github.com/ClickHouse/ClickHouse) | C++ | Apache-2.0 | [v26.3.43.4-lts](https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.43.4-lts) | 50273 | Snowflake (full), BigQuery (full) |
-| [DuckDB](https://github.com/duckdb/duckdb) | C++ | MIT | [v1.5.6](https://github.com/duckdb/duckdb/releases/tag/v1.5.6) signed | 41940 | Snowflake (partial), BigQuery (partial) |
+| [ClickHouse](https://github.com/ClickHouse/ClickHouse) | C++ | Apache-2.0 | [v26.7.23.7-stable](https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.23.7-stable) | 50273 | Snowflake (full), BigQuery (full) |
+| [DuckDB](https://github.com/duckdb/duckdb) | C++ | MIT | [v1.5.6](https://github.com/duckdb/duckdb/releases/tag/v1.5.6) signed | 41941 | Snowflake (partial), BigQuery (partial) |
 | [Presto](https://github.com/prestodb/presto) | Java | Apache-2.0 | [0.299](https://github.com/prestodb/presto/releases/tag/0.299) | 16753 | Amazon Athena (full) |
 | [Apache Doris](https://github.com/apache/doris) | Java | Apache-2.0 | [4.1.4.1](https://github.com/apache/doris/releases/tag/4.1.4.1) | 16024 | Snowflake (full) |
 | [Apache Druid](https://github.com/apache/druid) | Java | Apache-2.0 | [druid-38.0.0](https://github.com/apache/druid/releases/tag/druid-38.0.0) | 14059 | none |
@@ -2641,7 +2641,7 @@ Control and automate smart home devices locally.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Home Assistant](https://github.com/home-assistant/core) | Python | Apache-2.0 | [2026.9.4](https://github.com/home-assistant/core/releases/tag/2026.9.4) signed | 91275 | SmartThings (full) |
+| [Home Assistant](https://github.com/home-assistant/core) | Python | Apache-2.0 | [2026.9.4](https://github.com/home-assistant/core/releases/tag/2026.9.4) signed | 91276 | SmartThings (full) |
 | [Homebridge](https://github.com/homebridge/homebridge) | TypeScript | Apache-2.0 | [v2.4.0](https://github.com/homebridge/homebridge/releases/tag/v2.4.0) | 25502 | none |
 | [Tasmota](https://github.com/arendst/Tasmota) | C | GPL-3.0 | [v15.6.0](https://github.com/arendst/Tasmota/releases/tag/v15.6.0) | 24800 | none |
 | [WLED](https://github.com/wled/WLED) | C++ | EUPL-1.2 | [v16.0.1](https://github.com/wled/WLED/releases/tag/v16.0.1) | 18755 | none |
@@ -2652,7 +2652,7 @@ Control and automate smart home devices locally.
 | [Domoticz](https://github.com/domoticz/domoticz) | C++ | GPL-3.0 | [2026.4](https://github.com/domoticz/domoticz/releases/tag/2026.4) signed | 3816 | SmartThings (partial), Homey (partial) |
 | [Gladys Assistant](https://github.com/GladysAssistant/Gladys) | JavaScript | Apache-2.0 | [v5.1.4](https://github.com/GladysAssistant/Gladys/releases/tag/v5.1.4) | 3223 | SmartThings (full), Homey (partial) |
 | [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) | Vue | MIT | [v11.24.2](https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.2) | 1243 | none |
-| [openHAB](https://github.com/openhab/openhab-core) | Java | EPL-2.0 | [5.2.1](https://github.com/openhab/openhab-core/releases/tag/5.2.1) | 1144 | SmartThings (full), Home Assistant (full) |
+| [openHAB](https://github.com/openhab/openhab-core) | Java | EPL-2.0 | [5.2.1](https://github.com/openhab/openhab-core/releases/tag/5.2.1) | 1145 | SmartThings (full), Home Assistant (full) |
 | [Jeedom](https://github.com/jeedom/core) | PHP | GPL-2.0 | [4.6.1](https://github.com/jeedom/core/releases/tag/4.6.1) | 414 | SmartThings (partial) |
 | [ioBroker](https://github.com/ioBroker/ioBroker.js-controller) | TypeScript | MIT | [v7.2.5](https://github.com/ioBroker/ioBroker.js-controller/releases/tag/v7.2.5) signed | 291 | SmartThings (partial) |
 
@@ -2666,7 +2666,7 @@ Browse, preview and move files from a keyboard-driven interface in the terminal.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 42644 | ranger (full) |
-| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 23685 | none |
+| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 23686 | none |
 | [nnn](https://github.com/jarun/nnn) | C | BSD-2-Clause | [v5.3](https://github.com/jarun/nnn/releases/tag/v5.3) signed | 22047 | ranger (full) |
 | [ranger](https://github.com/ranger/ranger) | Python | GPL-3.0 | [v1.9.4](https://github.com/ranger/ranger/releases/tag/v1.9.4) signed | 17418 | none |
 | [lf](https://github.com/gokcehan/lf) | Go | MIT | [r42](https://github.com/gokcehan/lf/releases/tag/r42) signed | 9533 | ranger (full) |
@@ -2834,7 +2834,7 @@ Static analysers, linters and formatters for PHP.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.0](https://github.com/phpstan/phpstan/releases/tag/2.3.0) | 14121 | none |
+| [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.0](https://github.com/phpstan/phpstan/releases/tag/2.3.0) | 14122 | none |
 | [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.27](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.27) signed | 13560 | none |
 | [Psalm](https://github.com/vimeo/psalm) | PHP | MIT | [6.19.1](https://github.com/vimeo/psalm/releases/tag/6.19.1) signed | 5896 | none |
 | [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) | PHP | BSD-3-Clause | [4.0.4](https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/tag/4.0.4) signed | 1560 | none |
@@ -2889,7 +2889,7 @@ Check YAML files, Dockerfiles and CI workflow definitions for mistakes.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12460 | none |
-| [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4296 | none |
+| [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4297 | none |
 | [yamllint](https://github.com/adrienverge/yamllint) | Python | GPL-3.0 | [v1.38.0](https://github.com/adrienverge/yamllint/releases/tag/v1.38.0) | 3473 | none |
 
 </details>
@@ -2951,9 +2951,9 @@ Compile, test and package projects from a declared build, for C, C++, the JVM an
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gradle](https://github.com/gradle/gradle) | Groovy | Apache-2.0 | [v9.8.0](https://github.com/gradle/gradle/releases/tag/v9.8.0) signed | 18876 | none |
+| [Gradle](https://github.com/gradle/gradle) | Groovy | Apache-2.0 | [v9.8.0](https://github.com/gradle/gradle/releases/tag/v9.8.0) signed | 18877 | none |
 | [Ninja](https://github.com/ninja-build/ninja) | C++ | Apache-2.0 | [v1.13.2](https://github.com/ninja-build/ninja/releases/tag/v1.13.2) | 13287 | none |
-| [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.1](https://github.com/xmake-io/xmake/releases/tag/v3.1.1) | 12246 | none |
+| [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.1](https://github.com/xmake-io/xmake/releases/tag/v3.1.1) | 12247 | none |
 | [Meson](https://github.com/mesonbuild/meson) | Python | Apache-2.0 | [1.12.1](https://github.com/mesonbuild/meson/releases/tag/1.12.1) | 6641 | none |
 | [Apache Maven](https://github.com/apache/maven) | Java | Apache-2.0 | [maven-3.10.0](https://github.com/apache/maven/releases/tag/maven-3.10.0) | 5369 | none |
 | [sbt](https://github.com/sbt/sbt) | Scala | Apache-2.0 | [v2.0.10](https://github.com/sbt/sbt/releases/tag/v2.0.10) signed | 4954 | none |
@@ -3061,7 +3061,7 @@ Show file contents in the terminal with syntax highlighting or rendering.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [bat](https://github.com/sharkdp/bat) | Rust | Apache-2.0 | [v0.26.1](https://github.com/sharkdp/bat/releases/tag/v0.26.1) signed | 60689 | none |
-| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 27596 | none |
+| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 27597 | none |
 
 </details>
 
@@ -3096,7 +3096,7 @@ Short, example-based help pages for command-line tools, read from the terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [tldr-pages](https://github.com/tldr-pages/tldr) | Markdown | Other | [v2.3](https://github.com/tldr-pages/tldr/releases/tag/v2.3) signed | 63829 | none |
+| [tldr-pages](https://github.com/tldr-pages/tldr) | Markdown | Other | [v2.3](https://github.com/tldr-pages/tldr/releases/tag/v2.3) signed | 63830 | none |
 | [navi](https://github.com/denisidoro/navi) | Rust | Apache-2.0 | [v2.24.0](https://github.com/denisidoro/navi/releases/tag/v2.24.0) signed | 17727 | none |
 | [cheat](https://github.com/cheat/cheat) | Go | MIT | [5.1.0](https://github.com/cheat/cheat/releases/tag/5.1.0) | 13474 | none |
 | [tealdeer](https://github.com/tealdeer-rs/tealdeer) | Rust | Apache-2.0 | [v1.9.0](https://github.com/tealdeer-rs/tealdeer/releases/tag/v1.9.0) signed | 6577 | none |
@@ -3186,7 +3186,7 @@ Search, sync and recall the commands typed in a shell.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.23.0](https://github.com/atuinsh/atuin/releases/tag/v18.23.0) signed | 31909 | mcfly (full) |
+| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.23.0](https://github.com/atuinsh/atuin/releases/tag/v18.23.0) signed | 31908 | mcfly (full) |
 | [mcfly](https://github.com/cantino/mcfly) | Rust | MIT | [v0.9.4](https://github.com/cantino/mcfly/releases/tag/v0.9.4) | 7806 | none |
 
 </details>
@@ -3216,7 +3216,7 @@ Install and run the checks a repository wants before a commit or a push.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35340 | none |
-| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.6.2](https://github.com/pre-commit/pre-commit/releases/tag/v4.6.2) | 15610 | none |
+| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.6.2](https://github.com/pre-commit/pre-commit/releases/tag/v4.6.2) | 15609 | none |
 | [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.1.17](https://github.com/evilmartians/lefthook/releases/tag/v2.1.17) signed | 8883 | husky (full), pre-commit (full) |
 | [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.5](https://github.com/j178/prek/releases/tag/v0.5.5) signed | 8571 | pre-commit (drop-in) |
 | [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.73.0](https://github.com/sds/overcommit/releases/tag/v0.73.0) signed | 4005 | none |
@@ -3232,8 +3232,8 @@ Install several versions of a language runtime and switch between them per proje
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [nvm](https://github.com/nvm-sh/nvm) | Shell | MIT | [v0.40.8](https://github.com/nvm-sh/nvm/releases/tag/v0.40.8) signed | 95275 | none |
-| [NVM for Windows](https://github.com/nvm-windows/nvm) | Inno Setup | MIT | [v2.0.1](https://github.com/nvm-windows/nvm/releases/tag/v2.0.1) signed | 47867 | nvm (partial) |
-| [mise](https://github.com/jdx/mise) | Rust | MIT | [v2026.10.3](https://github.com/jdx/mise/releases/tag/v2026.10.3) signed | 34646 | asdf (full), nvm (full), Volta (full), pyenv (full) |
+| [NVM for Windows](https://github.com/nvm-windows/nvm) | Inno Setup | MIT | [v2.0.1](https://github.com/nvm-windows/nvm/releases/tag/v2.0.1) signed | 47866 | nvm (partial) |
+| [mise](https://github.com/jdx/mise) | Rust | MIT | [v2026.10.3](https://github.com/jdx/mise/releases/tag/v2026.10.3) signed | 34647 | asdf (full), nvm (full), Volta (full), pyenv (full) |
 | [fnm](https://github.com/Schniz/fnm) | Rust | GPL-3.0 | [v1.39.0](https://github.com/Schniz/fnm/releases/tag/v1.39.0) signed | 27041 | nvm (full) |
 | [asdf](https://github.com/asdf-vm/asdf) | Go | MIT | [v0.20.2](https://github.com/asdf-vm/asdf/releases/tag/v0.20.2) signed | 25595 | none |
 | [n](https://github.com/tj/n) | Shell | MIT | [v10.2.0](https://github.com/tj/n/releases/tag/v10.2.0) | 19516 | nvm (full) |
@@ -3253,15 +3253,15 @@ Take deduplicated, encrypted snapshots of files and restore them from local or c
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.19.1](https://github.com/restic/restic/releases/tag/v0.19.1) signed | 36439 | none |
+| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.19.1](https://github.com/restic/restic/releases/tag/v0.19.1) signed | 36440 | none |
 | [Duplicati](https://github.com/duplicati/duplicati) | C# | Other | [v2.4.0.0_stable_2026-09-03](https://github.com/duplicati/duplicati/releases/tag/v2.4.0.0_stable_2026-09-03) | 15063 | none |
 | [Kopia](https://github.com/kopia/kopia) | Go | Apache-2.0 | [v0.23.1](https://github.com/kopia/kopia/releases/tag/v0.23.1) | 14269 | none |
 | [BorgBackup](https://github.com/borgbackup/borg) | Python | Other | [1.4.5](https://github.com/borgbackup/borg/releases/tag/1.4.5) signed | 13813 | none |
 | [Backrest](https://github.com/garethgeorge/backrest) | TypeScript | GPL-3.0 | [v1.14.1](https://github.com/garethgeorge/backrest/releases/tag/v1.14.1) signed | 7469 | Backblaze Personal Backup (partial) |
 | [Duplicacy](https://github.com/gilbertchen/duplicacy) | Go | Other | [v3.2.5](https://github.com/gilbertchen/duplicacy/releases/tag/v3.2.5) | 5695 | CrashPlan (partial) |
 | [Timeshift](https://github.com/linuxmint/timeshift) | Vala | none | [master.lmde7](https://github.com/linuxmint/timeshift/releases/tag/master.lmde7) | 4296 | none |
-| [rustic](https://github.com/rustic-rs/rustic) | Rust | Apache-2.0 | [v0.11.4](https://github.com/rustic-rs/rustic/releases/tag/v0.11.4) | 3311 | restic (partial) |
-| [Vorta](https://github.com/borgbase/vorta) | Python | GPL-3.0 | [v0.11.6](https://github.com/borgbase/vorta/releases/tag/v0.11.6) | 2508 | Backblaze Personal Backup (partial) |
+| [rustic](https://github.com/rustic-rs/rustic) | Rust | Apache-2.0 | [v0.11.4](https://github.com/rustic-rs/rustic/releases/tag/v0.11.4) | 3310 | restic (partial) |
+| [Vorta](https://github.com/borgbase/vorta) | Python | GPL-3.0 | [v0.11.6](https://github.com/borgbase/vorta/releases/tag/v0.11.6) | 2509 | Backblaze Personal Backup (partial) |
 | [borgmatic](https://github.com/borgmatic-collective/borgmatic) | Python | GPL-3.0 | [2.1.10](https://github.com/borgmatic-collective/borgmatic/releases/tag/2.1.10) | 2340 | none |
 | [Plakar](https://github.com/PlakarKorp/plakar) | Go | ISC | [v1.1.7](https://github.com/PlakarKorp/plakar/releases/tag/v1.1.7) | 2077 | none |
 | [BackupPC](https://github.com/backuppc/backuppc) | Perl | GPL-3.0 | [4.4.0](https://github.com/backuppc/backuppc/releases/tag/4.4.0) | 1627 | CrashPlan (partial) |
@@ -3278,7 +3278,7 @@ Count the lines of code, comments and blanks in a codebase, by language.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [cloc](https://github.com/AlDanial/cloc) | Perl | GPL-2.0 | [v2.10](https://github.com/AlDanial/cloc/releases/tag/v2.10) | 23577 | none |
-| [tokei](https://github.com/XAMPPRocky/tokei) | Rust | Other | [v15.0.0](https://github.com/XAMPPRocky/tokei/releases/tag/v15.0.0) | 14982 | cloc (full) |
+| [tokei](https://github.com/XAMPPRocky/tokei) | Rust | Other | [v15.0.0](https://github.com/XAMPPRocky/tokei/releases/tag/v15.0.0) | 14983 | cloc (full) |
 | [scc](https://github.com/boyter/scc) | Go | MIT | [v4.1.0](https://github.com/boyter/scc/releases/tag/v4.1.0) | 8798 | cloc (full) |
 
 </details>
@@ -3291,7 +3291,7 @@ Run a command again whenever the files it depends on change.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [nodemon](https://github.com/remy/nodemon) | JavaScript | MIT | [v3.1.14](https://github.com/remy/nodemon/releases/tag/v3.1.14) | 26658 | none |
-| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24050 | none |
+| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24049 | none |
 | [Watchman](https://github.com/facebook/watchman) | C++ | MIT | [v2026.10.05.00](https://github.com/facebook/watchman/releases/tag/v2026.10.05.00) | 13736 | none |
 | [watchexec](https://github.com/watchexec/watchexec) | Rust | Apache-2.0 | [v2.7.4](https://github.com/watchexec/watchexec/releases/tag/v2.7.4) | 7218 | entr (full) |
 | [entr](https://github.com/eradman/entr) | C | Other | [5.9](https://github.com/eradman/entr/releases/tag/5.9) | 5696 | none |
@@ -3305,8 +3305,8 @@ Share availability and let people book a meeting or vote on a date.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Cal.diy](https://github.com/calcom/cal.diy) | TypeScript | MIT | [v6.2.0](https://github.com/calcom/cal.diy/releases/tag/v6.2.0) signed | 48887 | Calendly (partial) |
-| [Rallly](https://github.com/lukevella/rallly) | TypeScript | AGPL-3.0 | [v4.15.4](https://github.com/lukevella/rallly/releases/tag/v4.15.4) | 5291 | Doodle (partial) |
+| [Cal.diy](https://github.com/calcom/cal.diy) | TypeScript | MIT | [v6.2.0](https://github.com/calcom/cal.diy/releases/tag/v6.2.0) signed | 48889 | Calendly (partial) |
+| [Rallly](https://github.com/lukevella/rallly) | TypeScript | AGPL-3.0 | [v4.15.4](https://github.com/lukevella/rallly/releases/tag/v4.15.4) | 5292 | Doodle (partial) |
 | [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | PHP | GPL-3.0 | [1.6.0](https://github.com/alextselegidis/easyappointments/releases/tag/1.6.0) | 4414 | Calendly (partial) |
 | [Nextcloud Calendar](https://github.com/nextcloud/calendar) | JavaScript | AGPL-3.0 | [v3.3.2](https://github.com/nextcloud/calendar/releases/tag/v3.3.2) signed | 1188 | Calendly (partial) |
 | [LibreBooking](https://github.com/LibreBooking/librebooking) | PHP | GPL-3.0 | [v6.1.0](https://github.com/LibreBooking/librebooking/releases/tag/v6.1.0) | 818 | Calendly (partial) |
@@ -3324,7 +3324,7 @@ Edit raster and vector images, from retouching photos to drawing graphics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Graphite](https://github.com/GraphiteEditor/Graphite) | Rust | Apache-2.0 | [pre-4435](https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435) signed | 27447 | Photoshop (partial) |
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | Rust | Apache-2.0 | [pre-4435](https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435) signed | 27448 | Photoshop (partial) |
 | [SVG-Edit](https://github.com/SVG-Edit/svgedit) | JavaScript | MIT | [v.7.3.3](https://github.com/SVG-Edit/svgedit/releases/tag/v.7.3.3) | 7860 | Canva (partial) |
 | [Pinta](https://github.com/PintaProject/Pinta) | C# | MIT | [3.1.2](https://github.com/PintaProject/Pinta/releases/tag/3.1.2) signed | 4071 | Photoshop (partial) |
 | [miniPaint](https://github.com/viliusle/miniPaint) | JavaScript | Other | [v4.14.3](https://github.com/viliusle/miniPaint/releases/tag/v4.14.3) | 3473 | Photoshop (partial) |
@@ -3353,8 +3353,8 @@ Cut, compose and render video on a timeline or a node graph.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | TypeScript | MIT | [v3.17.2](https://github.com/motion-canvas/motion-canvas/releases/tag/v3.17.2) | 19242 | After Effects (partial) |
-| [Shotcut](https://github.com/mltframework/shotcut) | C++ | GPL-3.0 | [v26.9.27](https://github.com/mltframework/shotcut/releases/tag/v26.9.27) | 15360 | Premiere Pro (full) |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | TypeScript | MIT | [v3.17.2](https://github.com/motion-canvas/motion-canvas/releases/tag/v3.17.2) | 19243 | After Effects (partial) |
+| [Shotcut](https://github.com/mltframework/shotcut) | C++ | GPL-3.0 | [v26.9.27](https://github.com/mltframework/shotcut/releases/tag/v26.9.27) | 15361 | Premiere Pro (full) |
 | [OpenShot](https://github.com/OpenShot/openshot-qt) | Python | Other | [v4.0.1](https://github.com/OpenShot/openshot-qt/releases/tag/v4.0.1) | 6596 | Premiere Pro (full) |
 | [Natron](https://github.com/NatronGitHub/Natron) | C++ | GPL-2.0 | [v2.5.0](https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0) signed | 5569 | After Effects (partial) |
 | [Revideo](https://github.com/midrender/revideo) | TypeScript | MIT | [v0.11.0](https://github.com/midrender/revideo/releases/tag/v0.11.0) | 4084 | After Effects (partial) |
@@ -3369,7 +3369,7 @@ Spreadsheet-like databases with views, forms and an API, built without code.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [NocoDB](https://github.com/nocodb/nocodb) | TypeScript | Other | [2026.09.1](https://github.com/nocodb/nocodb/releases/tag/2026.09.1) signed | 65203 | Airtable (full) |
+| [NocoDB](https://github.com/nocodb/nocodb) | TypeScript | Other | [2026.09.1](https://github.com/nocodb/nocodb/releases/tag/2026.09.1) signed | 65204 | Airtable (full) |
 | [Teable](https://github.com/teableio/teable) | TypeScript | Other | [release.2026-10-02T04-02-20Z.3278](https://github.com/teableio/teable/releases/tag/release.2026-10-02T04-02-20Z.3278) signed | 21861 | Airtable (full) |
 | [Grist](https://github.com/gristlabs/grist-core) | TypeScript | Apache-2.0 | [v1.7.20](https://github.com/gristlabs/grist-core/releases/tag/v1.7.20) signed | 11908 | Airtable (full) |
 
@@ -3409,7 +3409,7 @@ Log time against projects and clients, and turn it into reports or invoices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.0](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.0) signed | 19077 | RescueTime (full), WakaTime (partial) |
+| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.0](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.0) signed | 19078 | RescueTime (full), WakaTime (partial) |
 | [solidtime](https://github.com/solidtime-io/solidtime) | PHP | AGPL-3.0 | [v0.21.0](https://github.com/solidtime-io/solidtime/releases/tag/v0.21.0) | 8964 | Toggl Track (full), Harvest (partial) |
 | [Kimai](https://github.com/kimai/kimai) | PHP | AGPL-3.0 | [2.68.0](https://github.com/kimai/kimai/releases/tag/2.68.0) signed | 5059 | Toggl Track (full), Harvest (partial) |
 | [Wakapi](https://github.com/muety/wakapi) | Go | MIT | [2.18.1](https://github.com/muety/wakapi/releases/tag/2.18.1) | 4442 | WakaTime (full) |
@@ -3427,11 +3427,11 @@ Generate images from text prompts with diffusion models running on your own hard
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Python | GPL-3.0 | [v0.39.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0) | 136295 | Midjourney (partial) |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Python | GPL-3.0 | [v0.39.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0) | 136297 | Midjourney (partial) |
 | [InvokeAI](https://github.com/invoke-ai/InvokeAI) | TypeScript | Apache-2.0 | [v6.14.2](https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2) | 28348 | Midjourney (partial) |
 | [Krita AI Diffusion](https://github.com/Acly/krita-ai-diffusion) | Python | GPL-3.0 | [v1.53.0](https://github.com/Acly/krita-ai-diffusion/releases/tag/v1.53.0) signed | 10669 | Midjourney (partial) |
-| [Easy Diffusion](https://github.com/easydiffusion/easydiffusion) | JavaScript | Other | [v3.0.16](https://github.com/easydiffusion/easydiffusion/releases/tag/v3.0.16) | 10471 | Midjourney (partial) |
-| [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) | C# | AGPL-3.0 | [v2.16.4](https://github.com/LykosAI/StabilityMatrix/releases/tag/v2.16.4) signed | 8877 | Midjourney (partial) |
+| [Easy Diffusion](https://github.com/easydiffusion/easydiffusion) | JavaScript | Other | [v3.0.16](https://github.com/easydiffusion/easydiffusion/releases/tag/v3.0.16) | 10472 | Midjourney (partial) |
+| [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) | C# | AGPL-3.0 | [v2.16.4](https://github.com/LykosAI/StabilityMatrix/releases/tag/v2.16.4) signed | 8876 | Midjourney (partial) |
 | [SD.Next](https://github.com/vladmandic/sdnext) | Python | Apache-2.0 | [2026-07-14](https://github.com/vladmandic/sdnext/releases/tag/2026-07-14) signed | 7350 | Midjourney (partial) |
 | [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) | C# | MIT | [0.9.8-Beta](https://github.com/mcmonkeyprojects/SwarmUI/releases/tag/0.9.8-Beta) | 4634 | Midjourney (partial) |
 
@@ -3460,7 +3460,7 @@ Localisation platforms where teams translate and review an application's strings
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Weblate](https://github.com/WeblateOrg/weblate) | Python | GPL-3.0 | [weblate-2026.10](https://github.com/WeblateOrg/weblate/releases/tag/weblate-2026.10) signed | 6107 | Crowdin (full), Lokalise (full), Phrase (full), Transifex (full) |
-| [Tolgee](https://github.com/tolgee/tolgee-platform) | TypeScript | Other | [v3.226.1](https://github.com/tolgee/tolgee-platform/releases/tag/v3.226.1) | 4124 | Crowdin (full), Lokalise (full), Phrase (partial) |
+| [Tolgee](https://github.com/tolgee/tolgee-platform) | TypeScript | Other | [v3.226.2](https://github.com/tolgee/tolgee-platform/releases/tag/v3.226.2) | 4124 | Crowdin (full), Lokalise (full), Phrase (partial) |
 | [Traduora](https://github.com/ever-co/ever-traduora) | JavaScript | AGPL-3.0 | [v0.21.0](https://github.com/ever-co/ever-traduora/releases/tag/v0.21.0) signed | 2133 | Lokalise (partial), Crowdin (partial) |
 | [Pontoon](https://github.com/mozilla/pontoon) | Python | BSD-3-Clause | [v2026.09.23](https://github.com/mozilla/pontoon/releases/tag/v2026.09.23) signed | 1671 | Transifex (partial), Crowdin (partial) |
 
@@ -3473,7 +3473,7 @@ Send push notifications to phones and desktops from a plain HTTP request.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ntfy](https://github.com/binwiederhier/ntfy) | Go | Apache-2.0 | [v2.28.0](https://github.com/binwiederhier/ntfy/releases/tag/v2.28.0) | 34647 | Pushover (full) |
+| [ntfy](https://github.com/binwiederhier/ntfy) | Go | Apache-2.0 | [v2.28.0](https://github.com/binwiederhier/ntfy/releases/tag/v2.28.0) | 34649 | Pushover (full) |
 | [Apprise](https://github.com/caronc/apprise) | Python | BSD-2-Clause | [v2.0.1](https://github.com/caronc/apprise/releases/tag/v2.0.1) | 17534 | Pushover (partial) |
 | [Gotify](https://github.com/gotify/server) | Go | Other | [v3.1.1](https://github.com/gotify/server/releases/tag/v3.1.1) signed | 16035 | Pushover (partial) |
 | [Bark](https://github.com/Finb/bark-server) | Go | MIT | [v2.3.7](https://github.com/Finb/bark-server/releases/tag/v2.3.7) | 3648 | Pushover (partial) |
@@ -3489,8 +3489,8 @@ Check dependencies and container images against databases of known vulnerabiliti
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Trivy](https://github.com/aquasecurity/trivy) | Go | Apache-2.0 | [v0.75.0](https://github.com/aquasecurity/trivy/releases/tag/v0.75.0) signed | 38260 | Snyk (partial) |
-| [Grype](https://github.com/anchore/grype) | Go | Apache-2.0 | [v0.120.0](https://github.com/anchore/grype/releases/tag/v0.120.0) | 12982 | Snyk (partial) |
+| [Trivy](https://github.com/aquasecurity/trivy) | Go | Apache-2.0 | [v0.75.0](https://github.com/aquasecurity/trivy/releases/tag/v0.75.0) signed | 38261 | Snyk (partial) |
+| [Grype](https://github.com/anchore/grype) | Go | Apache-2.0 | [v0.120.0](https://github.com/anchore/grype/releases/tag/v0.120.0) | 12983 | Snyk (partial) |
 | [OSV-Scanner](https://github.com/google/osv-scanner) | Go | Apache-2.0 | [v2.6.0](https://github.com/google/osv-scanner/releases/tag/v2.6.0) signed | 11146 | Snyk (partial) |
 | [Dependency-Check](https://github.com/dependency-check/DependencyCheck) | Java | Apache-2.0 | [v13.0.0](https://github.com/dependency-check/DependencyCheck/releases/tag/v13.0.0) | 7718 | Snyk (partial) |
 
@@ -3531,9 +3531,9 @@ Open apps and files and run commands from the keyboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PowerToys](https://github.com/microsoft/PowerToys) | C | MIT | [v0.101.2362.0](https://github.com/microsoft/PowerToys/releases/tag/v0.101.2362.0) | 139264 | Raycast (partial), Alfred (partial) |
+| [PowerToys](https://github.com/microsoft/PowerToys) | C | MIT | [v0.101.2362.0](https://github.com/microsoft/PowerToys/releases/tag/v0.101.2362.0) | 139265 | Raycast (partial), Alfred (partial) |
 | [Wox](https://github.com/Wox-launcher/Wox) | Go | GPL-3.0 | [v2.4.6](https://github.com/Wox-launcher/Wox/releases/tag/v2.4.6) | 27491 | Raycast (full), Alfred (full) |
-| [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) | C# | MIT | [v2.1.4](https://github.com/Flow-Launcher/Flow.Launcher/releases/tag/v2.1.4) signed | 15719 | Raycast (full), Alfred (full) |
+| [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) | C# | MIT | [v2.1.4](https://github.com/Flow-Launcher/Flow.Launcher/releases/tag/v2.1.4) signed | 15720 | Raycast (full), Alfred (full) |
 | [Albert](https://github.com/albertlauncher/albert) | C++ | Other | [v35.1.0](https://github.com/albertlauncher/albert/releases/tag/v35.1.0) | 8005 | Raycast (full), Alfred (full) |
 | [Ulauncher](https://github.com/Ulauncher/Ulauncher) | Python | Other | [5.16.2](https://github.com/Ulauncher/Ulauncher/releases/tag/5.16.2) | 4521 | Raycast (full), Alfred (full) |
 
@@ -3550,7 +3550,7 @@ Write presentations, often from Markdown or code instead of a visual editor.
 | [Slidev](https://github.com/slidevjs/slidev) | TypeScript | MIT | [v53.0.0](https://github.com/slidevjs/slidev/releases/tag/v53.0.0) signed | 48940 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
 | [Presenton](https://github.com/presenton/presenton) | TypeScript | Apache-2.0 | [electron-v0.9.11-beta](https://github.com/presenton/presenton/releases/tag/electron-v0.9.11-beta) signed | 10966 | Canva (partial) |
 | [presenterm](https://github.com/mfontanini/presenterm) | Rust | BSD-2-Clause | [v0.16.1](https://github.com/mfontanini/presenterm/releases/tag/v0.16.1) signed | 8899 | Microsoft PowerPoint (partial), Keynote (partial) |
-| [Marp CLI](https://github.com/marp-team/marp-cli) | TypeScript | MIT | [v4.5.1](https://github.com/marp-team/marp-cli/releases/tag/v4.5.1) | 3854 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
+| [Marp CLI](https://github.com/marp-team/marp-cli) | TypeScript | MIT | [v4.5.1](https://github.com/marp-team/marp-cli/releases/tag/v4.5.1) | 3855 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
 
 </details>
 
@@ -3595,13 +3595,13 @@ Trace, evaluate and monitor LLM applications.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Langfuse](https://github.com/langfuse/langfuse) | TypeScript | Other | [v4.53.0](https://github.com/langfuse/langfuse/releases/tag/v4.53.0) | 35434 | LangSmith (full), W&B Weave (full) |
-| [Opik](https://github.com/comet-ml/opik) | Python | Apache-2.0 | [2.2.92](https://github.com/comet-ml/opik/releases/tag/2.2.92) signed | 22405 | LangSmith (full), W&B Weave (full) |
+| [Langfuse](https://github.com/langfuse/langfuse) | TypeScript | Other | [v4.53.0](https://github.com/langfuse/langfuse/releases/tag/v4.53.0) | 35435 | LangSmith (full), W&B Weave (full) |
+| [Opik](https://github.com/comet-ml/opik) | Python | Apache-2.0 | [2.2.92](https://github.com/comet-ml/opik/releases/tag/2.2.92) signed | 22404 | LangSmith (full), W&B Weave (full) |
 | [Arize Phoenix](https://github.com/Arize-ai/phoenix) | Python | Other | [arize-phoenix-v20.19.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.19.0) signed | 11723 | LangSmith (full), W&B Weave (full) |
 | [Evidently](https://github.com/evidentlyai/evidently) | Jupyter Notebook | Apache-2.0 | [v0.7.23](https://github.com/evidentlyai/evidently/releases/tag/v0.7.23) | 7969 | LangSmith (partial) |
 | [Helicone](https://github.com/Helicone/helicone) | TypeScript | Apache-2.0 | [v2025.08.21-1](https://github.com/Helicone/helicone/releases/tag/v2025.08.21-1) | 6201 | LangSmith (partial) |
 | [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.20.1](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.20.1) | 4920 | LangSmith (full) |
-| [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.122.1](https://github.com/Agenta-AI/agenta/releases/tag/v0.122.1) signed | 4811 | LangSmith (full) |
+| [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.122.1](https://github.com/Agenta-AI/agenta/releases/tag/v0.122.1) signed | 4812 | LangSmith (full) |
 | [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.2.5](https://github.com/lmnr-ai/lmnr/releases/tag/v0.2.5) signed | 3340 | LangSmith (full) |
 | [OpenLIT](https://github.com/openlit/openlit) | TypeScript | Apache-2.0 | [openlit-2.1.0](https://github.com/openlit/openlit/releases/tag/openlit-2.1.0) | 2819 | LangSmith (partial) |
 
@@ -3614,9 +3614,9 @@ Edit, merge, split, convert and sign PDF files.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Stirling PDF](https://github.com/Stirling-Tools/Stirling-PDF) | TypeScript | Other | [v3.1.0](https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.1.0) signed | 93660 | Adobe Acrobat (partial), Smallpdf (full), iLovePDF (full) |
+| [Stirling PDF](https://github.com/Stirling-Tools/Stirling-PDF) | TypeScript | Other | [v3.1.0](https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.1.0) signed | 93662 | Adobe Acrobat (partial), Smallpdf (full), iLovePDF (full) |
 | [BentoPDF](https://github.com/alam00000/bentopdf) | JavaScript | AGPL-3.0 | [v2.8.8](https://github.com/alam00000/bentopdf/releases/tag/v2.8.8) | 15844 | Smallpdf (full), iLovePDF (full), Adobe Acrobat (partial) |
-| [PDF Arranger](https://github.com/pdfarranger/pdfarranger) | Python | GPL-3.0 | [1.14.0](https://github.com/pdfarranger/pdfarranger/releases/tag/1.14.0) | 5956 | Smallpdf (partial), iLovePDF (partial), Adobe Acrobat (partial) |
+| [PDF Arranger](https://github.com/pdfarranger/pdfarranger) | Python | GPL-3.0 | [1.14.0](https://github.com/pdfarranger/pdfarranger/releases/tag/1.14.0) | 5955 | Smallpdf (partial), iLovePDF (partial), Adobe Acrobat (partial) |
 
 </details>
 
@@ -3656,7 +3656,7 @@ Usage-based billing, subscription management and invoicing.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Lago](https://github.com/getlago/lago) | Go | AGPL-3.0 | [v1.53.0](https://github.com/getlago/lago/releases/tag/v1.53.0) signed | 10660 | Stripe Billing (full), Chargebee (full) |
-| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [@polar-sh/tanstack-start@1.0.1](https://github.com/polarsource/polar/releases/tag/%40polar-sh/tanstack-start%401.0.1) | 10332 | none |
+| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [@polar-sh/tanstack-start@1.0.1](https://github.com/polarsource/polar/releases/tag/%40polar-sh/tanstack-start%401.0.1) | 10333 | none |
 | [Flexprice](https://github.com/flexprice/flexprice) | Go | AGPL-3.0 | [v2.1.34](https://github.com/flexprice/flexprice/releases/tag/v2.1.34) signed | 6882 | Stripe Billing (full), Chargebee (partial) |
 | [Kill Bill](https://github.com/killbill/killbill) | Java | Apache-2.0 | [killbill-0.24.22](https://github.com/killbill/killbill/releases/tag/killbill-0.24.22) | 5785 | Stripe Billing (full), Chargebee (full) |
 | [Autumn](https://github.com/useautumn/autumn) | TypeScript | Apache-2.0 | [atmn-v2.0.77](https://github.com/useautumn/autumn/releases/tag/atmn-v2.0.77) signed | 2785 | Stripe Billing (partial) |
@@ -3671,7 +3671,7 @@ Accept and route online payments from servers you run.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Hyperswitch](https://github.com/juspay/hyperswitch) | Rust | Apache-2.0 | [v1.127.0](https://github.com/juspay/hyperswitch/releases/tag/v1.127.0) | 45291 | Stripe Payments (partial) |
+| [Hyperswitch](https://github.com/juspay/hyperswitch) | Rust | Apache-2.0 | [v1.127.0](https://github.com/juspay/hyperswitch/releases/tag/v1.127.0) | 45290 | Stripe Payments (partial) |
 | [BTCPay Server](https://github.com/btcpayserver/btcpayserver) | C# | MIT | [v2.4.5](https://github.com/btcpayserver/btcpayserver/releases/tag/v2.4.5) | 7785 | BitPay (full) |
 
 </details>
@@ -3775,7 +3775,7 @@ Send product notifications across email, SMS, push, chat and in-app feeds from o
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Novu](https://github.com/novuhq/novu) | TypeScript | Other | [@novu/framework@v2.14.0](https://github.com/novuhq/novu/releases/tag/%40novu/framework%40v2.14.0) signed | 40121 | Courier (full), Knock (full) |
-| [Dittofeed](https://github.com/dittofeed/dittofeed) | TypeScript | MIT | [v0.23.0](https://github.com/dittofeed/dittofeed/releases/tag/v0.23.0) signed | 2984 | Courier (partial), Knock (partial) |
+| [Dittofeed](https://github.com/dittofeed/dittofeed) | TypeScript | MIT | [v0.23.0](https://github.com/dittofeed/dittofeed/releases/tag/v0.23.0) signed | 2985 | Courier (partial), Knock (partial) |
 | [Laudspeaker](https://github.com/laudspeaker/laudspeaker) | TypeScript | Other | [v.1.7.0](https://github.com/laudspeaker/laudspeaker/releases/tag/v.1.7.0) signed | 2629 | Knock (partial) |
 
 </details>
@@ -3800,7 +3800,7 @@ Write resumes from templates and export them to PDF.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Reactive Resume](https://github.com/reactive-resume/reactive-resume) | TypeScript | MIT | [v6.0.0](https://github.com/reactive-resume/reactive-resume/releases/tag/v6.0.0) signed | 43889 | Resume.io (full), Kickresume (full) |
+| [Reactive Resume](https://github.com/reactive-resume/reactive-resume) | TypeScript | MIT | [v6.0.0](https://github.com/reactive-resume/reactive-resume/releases/tag/v6.0.0) signed | 43891 | Resume.io (full), Kickresume (full) |
 | [RenderCV](https://github.com/rendercv/rendercv) | Python | MIT | [v2.8](https://github.com/rendercv/rendercv/releases/tag/v2.8) | 17706 | Resume.io (partial), Kickresume (partial) |
 | [JadeAI](https://github.com/LingyiChen-AI/JadeAI) | TypeScript | Apache-2.0 | [v0.7.0](https://github.com/LingyiChen-AI/JadeAI/releases/tag/v0.7.0) | 1983 | Kickresume (full), Resume.io (full) |
 
@@ -3813,7 +3813,7 @@ Host and proxy packages and build artefacts for Maven, npm, PyPI, containers and
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Verdaccio](https://github.com/verdaccio/verdaccio) | TypeScript | MIT | [v6.10.5](https://github.com/verdaccio/verdaccio/releases/tag/v6.10.5) signed | 17912 | JFrog Artifactory (partial) |
+| [Verdaccio](https://github.com/verdaccio/verdaccio) | TypeScript | MIT | [v6.10.5](https://github.com/verdaccio/verdaccio/releases/tag/v6.10.5) signed | 17913 | JFrog Artifactory (partial) |
 | [Nexus Repository](https://github.com/sonatype/nexus-public) | Java | EPL-1.0 | [release-3.96.4-01](https://github.com/sonatype/nexus-public/releases/tag/release-3.96.4-01) | 2665 | JFrog Artifactory (partial) |
 | [Reposilite](https://github.com/dzikoysk/reposilite) | Kotlin | Apache-2.0 | [3.6.3](https://github.com/dzikoysk/reposilite/releases/tag/3.6.3) | 1882 | JFrog Artifactory (partial) |
 | [Artipie](https://github.com/artipie/artipie) | Java | MIT | [v1.17.16](https://github.com/artipie/artipie/releases/tag/v1.17.16) | 692 | JFrog Artifactory (full) |
@@ -3861,7 +3861,7 @@ Desktop, mobile and web apps for Matrix, XMPP and IRC.
 |---|---|---|---|---:|---|
 | [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.30](https://github.com/element-hq/element-web/releases/tag/v1.12.30) signed | 13544 | none |
 | [The Lounge](https://github.com/thelounge/thelounge) | TypeScript | MIT | [v4.5.2](https://github.com/thelounge/thelounge/releases/tag/v4.5.2) | 6345 | none |
-| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4654 | Rambox (full) |
+| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4653 | Rambox (full) |
 | [Halloy](https://github.com/squidowl/halloy) | Rust | GPL-3.0 | [2026.9](https://github.com/squidowl/halloy/releases/tag/2026.9) signed | 4532 | none |
 | [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.7](https://github.com/cinnyapp/cinny/releases/tag/v4.12.7) signed | 3921 | none |
 | [WeeChat](https://github.com/weechat/weechat) | C | GPL-3.0 | [v4.10.1](https://github.com/weechat/weechat/releases/tag/v4.10.1) | 3397 | none |
@@ -3955,7 +3955,7 @@ Read and send mail in the browser from an IMAP server you run.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Roundcube](https://github.com/roundcube/roundcubemail) | PHP | GPL-3.0 | [1.7.4](https://github.com/roundcube/roundcubemail/releases/tag/1.7.4) signed | 7207 | Google Workspace (partial) |
+| [Roundcube](https://github.com/roundcube/roundcubemail) | PHP | GPL-3.0 | [1.7.4](https://github.com/roundcube/roundcubemail/releases/tag/1.7.4) signed | 7206 | Google Workspace (partial) |
 | [SOGo](https://github.com/Alinto/sogo) | Objective-C | GPL-2.0 | [SOGo-5.12.11](https://github.com/Alinto/sogo/releases/tag/SOGo-5.12.11) | 2171 | Microsoft 365 (partial) |
 | [Cypht](https://github.com/cypht-org/cypht) | PHP | LGPL-2.1 | [v2.12.2](https://github.com/cypht-org/cypht/releases/tag/v2.12.2) | 1751 | none |
 | [Nextcloud Mail](https://github.com/nextcloud/mail) | JavaScript | AGPL-3.0 | [v1.13.0](https://github.com/nextcloud/mail/releases/tag/v1.13.0) signed | 1034 | none |
@@ -3982,7 +3982,7 @@ Write HTML emails from components or markup and compile them to code that render
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [React Email](https://github.com/resend/react-email) | TypeScript | MIT | [react-email@6.11.0](https://github.com/resend/react-email/releases/tag/react-email%406.11.0) signed | 19812 | none |
+| [React Email](https://github.com/resend/react-email) | TypeScript | MIT | [react-email@6.11.0](https://github.com/resend/react-email/releases/tag/react-email%406.11.0) signed | 19813 | none |
 | [MJML](https://github.com/mjmlio/mjml) | JavaScript | MIT | [v5.4.1](https://github.com/mjmlio/mjml/releases/tag/v5.4.1) | 18252 | none |
 | [Maizzle](https://github.com/maizzle/framework) | TypeScript | MIT | [v6.1.7](https://github.com/maizzle/framework/releases/tag/v6.1.7) | 1615 | none |
 
@@ -4019,7 +4019,7 @@ Record, watch and analyse IP camera streams on your own hardware.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Frigate](https://github.com/blakeblackshear/frigate) | Python | MIT | [v0.18.0](https://github.com/blakeblackshear/frigate/releases/tag/v0.18.0) signed | 36395 | Blue Iris (full), Ring (partial), Google Nest Aware (partial) |
+| [Frigate](https://github.com/blakeblackshear/frigate) | Python | MIT | [v0.18.0](https://github.com/blakeblackshear/frigate/releases/tag/v0.18.0) signed | 36394 | Blue Iris (full), Ring (partial), Google Nest Aware (partial) |
 | [go2rtc](https://github.com/AlexxIT/go2rtc) | Go | MIT | [v1.9.14](https://github.com/AlexxIT/go2rtc/releases/tag/v1.9.14) | 14312 | none |
 | [Scrypted](https://github.com/koush/scrypted) | TypeScript | Other | [v0.147.0](https://github.com/koush/scrypted/releases/tag/v0.147.0) | 6001 | Blue Iris (partial) |
 | [ZoneMinder](https://github.com/ZoneMinder/zoneminder) | PHP | GPL-2.0 | [1.38.6](https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.6) | 5941 | Blue Iris (full) |
@@ -4051,7 +4051,7 @@ Log workouts, activities and body measurements, and follow progress over time.
 |---|---|---|---|---:|---|
 | [Workout.cool](https://github.com/Snouzy/workout-cool) | TypeScript | MIT | [v1.3.2](https://github.com/Snouzy/workout-cool/releases/tag/v1.3.2) signed | 8550 | Hevy (partial) |
 | [wger](https://github.com/wger-project/wger) | Python | AGPL-3.0 | [2.7](https://github.com/wger-project/wger/releases/tag/2.7) | 7041 | Hevy (partial), MyFitnessPal (partial) |
-| [openScale](https://github.com/oliexdev/openScale) | Kotlin | GPL-3.0 | [v3.1.3](https://github.com/oliexdev/openScale/releases/tag/v3.1.3) | 2563 | none |
+| [openScale](https://github.com/oliexdev/openScale) | Kotlin | GPL-3.0 | [v3.1.3](https://github.com/oliexdev/openScale/releases/tag/v3.1.3) | 2564 | none |
 | [Endurain](https://github.com/endurain-project/endurain) | Python | AGPL-3.0 | [v0.17.7](https://github.com/endurain-project/endurain/releases/tag/v0.17.7) | 2234 | Strava (partial) |
 | [FitTrackee](https://github.com/SamR1/FitTrackee) | Python | AGPL-3.0 | [v1.3.5](https://github.com/SamR1/FitTrackee/releases/tag/v1.3.5) | 1170 | Strava (partial) |
 | [Liftosaur](https://github.com/astashov/liftosaur) | TypeScript | AGPL-3.0 | none | 732 | Hevy (partial) |
@@ -4091,7 +4091,7 @@ Produce RSS and Atom feeds for sites and accounts that do not publish one.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | none | 46423 | RSS.app (full) |
+| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | none | 46424 | RSS.app (full) |
 | [RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge) | PHP | Unlicense | [2025-08-05](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2025-08-05) signed | 9265 | RSS.app (partial) |
 
 </details>
@@ -4103,7 +4103,7 @@ Start pages that link to self-hosted services and show their status and widgets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Glance](https://github.com/glanceapp/glance) | Go | AGPL-3.0 | [v0.8.6](https://github.com/glanceapp/glance/releases/tag/v0.8.6) | 37355 | none |
+| [Glance](https://github.com/glanceapp/glance) | Go | AGPL-3.0 | [v0.8.6](https://github.com/glanceapp/glance/releases/tag/v0.8.6) | 37357 | none |
 | [Homepage](https://github.com/gethomepage/homepage) | JavaScript | GPL-3.0 | [v2.4.0](https://github.com/gethomepage/homepage/releases/tag/v2.4.0) signed | 32990 | none |
 | [Dashy](https://github.com/lissy93/dashy) | Vue | MIT | [4.7.0](https://github.com/lissy93/dashy/releases/tag/4.7.0) | 26638 | none |
 | [Homer](https://github.com/bastienwirtz/homer) | Vue | Apache-2.0 | [v26.08.3](https://github.com/bastienwirtz/homer/releases/tag/v26.08.3) | 11644 | none |
@@ -4164,10 +4164,10 @@ Key-value storage engines linked into a program as a library, with no server to 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [RocksDB](https://github.com/facebook/rocksdb) | C++ | GPL-2.0 | [v11.8.1](https://github.com/facebook/rocksdb/releases/tag/v11.8.1) | 32170 | none |
-| [Badger](https://github.com/dgraph-io/badger) | Go | Apache-2.0 | [v4.9.6](https://github.com/dgraph-io/badger/releases/tag/v4.9.6) signed | 15781 | none |
+| [Badger](https://github.com/dgraph-io/badger) | Go | Apache-2.0 | [v4.9.6](https://github.com/dgraph-io/badger/releases/tag/v4.9.6) signed | 15782 | none |
 | [bbolt](https://github.com/etcd-io/bbolt) | Go | MIT | [v1.5.0](https://github.com/etcd-io/bbolt/releases/tag/v1.5.0) signed | 9767 | none |
 | [Pebble](https://github.com/cockroachdb/pebble) | Go | BSD-3-Clause | [v2.1.7](https://github.com/cockroachdb/pebble/releases/tag/v2.1.7) | 6048 | RocksDB (partial) |
-| [redb](https://github.com/cberner/redb) | Rust | Apache-2.0 | [v4.3.0](https://github.com/cberner/redb/releases/tag/v4.3.0) | 4828 | none |
+| [redb](https://github.com/cberner/redb) | Rust | Apache-2.0 | [v4.3.0](https://github.com/cberner/redb/releases/tag/v4.3.0) | 4827 | none |
 | [Fjall](https://github.com/fjall-rs/fjall) | Rust | Apache-2.0 | [3.1.12](https://github.com/fjall-rs/fjall/releases/tag/3.1.12) | 2366 | RocksDB (partial) |
 
 </details>
@@ -4246,7 +4246,7 @@ One OpenAI-compatible API in front of many model providers, with keys, budgets, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.104.0](https://github.com/BerriAI/litellm/releases/tag/v1.104.0) signed | 60225 | OpenRouter (partial) |
+| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.104.0](https://github.com/BerriAI/litellm/releases/tag/v1.104.0) signed | 60227 | OpenRouter (partial) |
 | [New API](https://github.com/QuantumNous/new-api) | Go | AGPL-3.0 | [v1.0.0-rc.41](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.41) signed | 49315 | OpenRouter (partial) |
 | [Portkey Gateway](https://github.com/Portkey-AI/gateway) | TypeScript | MIT | [v1.15.2](https://github.com/Portkey-AI/gateway/releases/tag/v1.15.2) signed | 13133 | OpenRouter (partial) |
 | [Bifrost](https://github.com/maximhq/bifrost) | Go | Apache-2.0 | [ent-v2.2.6-base](https://github.com/maximhq/bifrost/releases/tag/ent-v2.2.6-base) signed | 8582 | OpenRouter (partial) |
@@ -4260,7 +4260,7 @@ Test prompts, models and agents against datasets, assertions and red-team probes
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.1](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.1) signed | 25745 | Braintrust (partial) |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.1](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.1) signed | 25744 | Braintrust (partial) |
 | [DeepEval](https://github.com/confident-ai/deepeval) | Python | Apache-2.0 | [python-v4.2.4](https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4) | 18657 | Braintrust (partial) |
 | [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) | Python | MIT | [v0.4.13](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) signed | 14139 | none |
 | [garak](https://github.com/NVIDIA/garak) | Python | Apache-2.0 | [v0.17.0](https://github.com/NVIDIA/garak/releases/tag/v0.17.0) signed | 9454 | none |
@@ -4293,9 +4293,9 @@ Build chatbots, agents and RAG workflows in a visual editor and serve them behin
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Dify](https://github.com/langgenius/dify) | TypeScript | Other | [1.17.1](https://github.com/langgenius/dify/releases/tag/1.17.1) signed | 157951 | Microsoft Copilot Studio (partial) |
-| [Langflow](https://github.com/langflow-ai/langflow) | Python | MIT | [v1.12.4](https://github.com/langflow-ai/langflow/releases/tag/v1.12.4) signed | 155545 | Microsoft Copilot Studio (partial) |
+| [Langflow](https://github.com/langflow-ai/langflow) | Python | MIT | [v1.12.4](https://github.com/langflow-ai/langflow/releases/tag/v1.12.4) signed | 155544 | Microsoft Copilot Studio (partial) |
 | [Sim](https://github.com/simstudioai/sim) | TypeScript | Apache-2.0 | [v0.9.14](https://github.com/simstudioai/sim/releases/tag/v0.9.14) signed | 29786 | Microsoft Copilot Studio (partial) |
-| [FastGPT](https://github.com/labring/FastGPT) | TypeScript | Other | [v4.17.1](https://github.com/labring/FastGPT/releases/tag/v4.17.1) signed | 29781 | Microsoft Copilot Studio (partial) |
+| [FastGPT](https://github.com/labring/FastGPT) | TypeScript | Other | [v4.17.1](https://github.com/labring/FastGPT/releases/tag/v4.17.1) signed | 29782 | Microsoft Copilot Studio (partial) |
 | [MaxKB](https://github.com/1Panel-dev/MaxKB) | Python | GPL-3.0 | [v2.10.6-lts](https://github.com/1Panel-dev/MaxKB/releases/tag/v2.10.6-lts) signed | 22907 | Microsoft Copilot Studio (partial) |
 | [Coze Studio](https://github.com/coze-dev/coze-studio) | TypeScript | Apache-2.0 | [v0.5.1](https://github.com/coze-dev/coze-studio/releases/tag/v0.5.1) signed | 21680 | Microsoft Copilot Studio (partial) |
 | [BISHENG](https://github.com/dataelement/bisheng) | Python | Apache-2.0 | [v2.6.0-fix2](https://github.com/dataelement/bisheng/releases/tag/v2.6.0-fix2) | 12027 | Microsoft Copilot Studio (partial) |
@@ -4313,7 +4313,7 @@ Ask questions about your own documents and sources through retrieval-augmented g
 | [RAGFlow](https://github.com/infiniflow/ragflow) | Go | Apache-2.0 | [v1.0.0-rc1](https://github.com/infiniflow/ragflow/releases/tag/v1.0.0-rc1) signed | 91727 | NotebookLM (partial) |
 | [PrivateGPT](https://github.com/zylon-ai/private-gpt) | Python | Apache-2.0 | [v1.0.1](https://github.com/zylon-ai/private-gpt/releases/tag/v1.0.1) signed | 57562 | NotebookLM (partial) |
 | [LightRAG](https://github.com/HKUDS/LightRAG) | Python | MIT | [v1.5.7](https://github.com/HKUDS/LightRAG/releases/tag/v1.5.7) | 39996 | none |
-| [Open Notebook](https://github.com/lfnovo/open-notebook) | TypeScript | MIT | [v1.15.0](https://github.com/lfnovo/open-notebook/releases/tag/v1.15.0) signed | 39862 | NotebookLM (full) |
+| [Open Notebook](https://github.com/lfnovo/open-notebook) | TypeScript | MIT | [v1.15.0](https://github.com/lfnovo/open-notebook/releases/tag/v1.15.0) signed | 39863 | NotebookLM (full) |
 | [Onyx](https://github.com/onyx-dot-app/onyx) | Python | Other | [v4.8.4](https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.4) signed | 32336 | Glean (full) |
 | [kotaemon](https://github.com/Cinnamon/kotaemon) | Python | Apache-2.0 | [v0.12.0](https://github.com/Cinnamon/kotaemon/releases/tag/v0.12.0) | 25798 | NotebookLM (partial) |
 | [DocsGPT](https://github.com/arc53/DocsGPT) | Python | MIT | [0.21.0](https://github.com/arc53/DocsGPT/releases/tag/0.21.0) signed | 18314 | Glean (partial) |
@@ -4329,7 +4329,7 @@ Answer questions from live web searches with a language model, citing the pages 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Vane](https://github.com/ItzCrazyKns/Vane) | TypeScript | MIT | [v1.12.2](https://github.com/ItzCrazyKns/Vane/releases/tag/v1.12.2) | 37021 | Perplexity (partial) |
+| [Vane](https://github.com/ItzCrazyKns/Vane) | TypeScript | MIT | [v1.12.2](https://github.com/ItzCrazyKns/Vane/releases/tag/v1.12.2) | 37022 | Perplexity (partial) |
 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Python | Apache-2.0 | [v3.7.0](https://github.com/assafelovic/gpt-researcher/releases/tag/v3.7.0) signed | 29928 | Perplexity (partial) |
 | [Scira](https://github.com/zaidmukaddam/scira) | TypeScript | AGPL-3.0 | none | 11902 | Perplexity (partial) |
 | [Local Deep Research](https://github.com/LearningCircuit/local-deep-research) | Python | MIT | [v1.10.7](https://github.com/LearningCircuit/local-deep-research/releases/tag/v1.10.7) signed | 9156 | Perplexity (partial) |
@@ -4344,10 +4344,10 @@ Agents that plan and carry out multi-step tasks on their own, browsing, running 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Python | Other | [autogpt-platform-beta-v0.8.2](https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.8.2) signed | 187675 | Manus (partial) |
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Python | Other | [autogpt-platform-beta-v0.8.2](https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.8.2) signed | 187673 | Manus (partial) |
 | [OpenManus](https://github.com/FoundationAgents/OpenManus) | Python | MIT | [v0.3.0](https://github.com/FoundationAgents/OpenManus/releases/tag/v0.3.0) | 58471 | Manus (partial) |
 | [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | TypeScript | Apache-2.0 | [v0.3.0](https://github.com/bytedance/UI-TARS-desktop/releases/tag/v0.3.0) | 39211 | Manus (partial) |
-| [Letta](https://github.com/letta-ai/letta) | unknown | Apache-2.0 | [0.16.8](https://github.com/letta-ai/letta/releases/tag/0.16.8) signed | 25045 | none |
+| [Letta](https://github.com/letta-ai/letta) | unknown | Apache-2.0 | [0.16.8](https://github.com/letta-ai/letta/releases/tag/0.16.8) signed | 25046 | none |
 | [Suna](https://github.com/kortix-ai/suna) | TypeScript | Other | [v0.13.51](https://github.com/kortix-ai/suna/releases/tag/v0.13.51) signed | 20252 | Manus (partial) |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | Python | Other | [v2.13](https://github.com/agent0ai/agent-zero/releases/tag/v2.13) | 19380 | Manus (partial) |
 
@@ -4362,8 +4362,8 @@ Let a language model drive a web browser to navigate sites, fill forms and extra
 |---|---|---|---|---:|---|
 | [Browser Use](https://github.com/browser-use/browser-use) | Python | MIT | [0.13.10](https://github.com/browser-use/browser-use/releases/tag/0.13.10) signed | 117255 | none |
 | [Skyvern](https://github.com/Skyvern-AI/skyvern) | Python | AGPL-3.0 | [v1.0.55](https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.55) signed | 23141 | none |
-| [Browser Use Web UI](https://github.com/browser-use/web-ui) | Python | MIT | [v3.0.0](https://github.com/browser-use/web-ui/releases/tag/v3.0.0) signed | 16605 | none |
-| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | TypeScript | Apache-2.0 | [v0.2.0](https://github.com/nanobrowser/nanobrowser/releases/tag/v0.2.0) | 13986 | none |
+| [Browser Use Web UI](https://github.com/browser-use/web-ui) | Python | MIT | [v3.0.0](https://github.com/browser-use/web-ui/releases/tag/v3.0.0) signed | 16606 | none |
+| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | TypeScript | Apache-2.0 | [v0.2.0](https://github.com/nanobrowser/nanobrowser/releases/tag/v0.2.0) | 13985 | none |
 | [Steel Browser](https://github.com/steel-dev/steel-browser) | TypeScript | Apache-2.0 | [v0.5.4-beta](https://github.com/steel-dev/steel-browser/releases/tag/v0.5.4-beta) signed | 7741 | Browserbase (full) |
 
 </details>
@@ -4376,7 +4376,7 @@ Generate and edit a web app or interface from a chat prompt, with a live preview
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Python | MIT | none | 80025 | v0 (partial) |
-| [OpenUI](https://github.com/wandb/openui) | TypeScript | Apache-2.0 | none | 22567 | v0 (partial) |
+| [OpenUI](https://github.com/wandb/openui) | TypeScript | Apache-2.0 | none | 22568 | v0 (partial) |
 | [Dyad](https://github.com/dyad-sh/dyad) | TypeScript | Other | [v1.18.0](https://github.com/dyad-sh/dyad/releases/tag/v1.18.0) | 21664 | Lovable (partial), Bolt.new (partial) |
 
 </details>
@@ -4388,17 +4388,17 @@ Transcribe recordings, meetings and dictation with speech recognition models on 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Whisper](https://github.com/openai/whisper) | Python | MIT | [v20250625](https://github.com/openai/whisper/releases/tag/v20250625) | 110042 | none |
+| [Whisper](https://github.com/openai/whisper) | Python | MIT | [v20250625](https://github.com/openai/whisper/releases/tag/v20250625) | 110043 | none |
 | [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | C++ | MIT | [v1.9.4](https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.4) | 54170 | none |
-| [Handy](https://github.com/cjpais/Handy) | Rust | MIT | [v0.9.8](https://github.com/cjpais/Handy/releases/tag/v0.9.8) | 33006 | Wispr Flow (partial) |
-| [Meetily](https://github.com/Zackriya-Solutions/meetily) | Rust | MIT | [v0.4.1](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.4.1) signed | 31477 | Otter.ai (partial) |
-| [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Python | MIT | [v1.2.1](https://github.com/SYSTRAN/faster-whisper/releases/tag/v1.2.1) signed | 25724 | none |
-| [WhisperX](https://github.com/m-bain/whisperX) | Python | BSD-2-Clause | [v3.8.6](https://github.com/m-bain/whisperX/releases/tag/v3.8.6) | 24384 | none |
+| [Handy](https://github.com/cjpais/Handy) | Rust | MIT | [v0.9.8](https://github.com/cjpais/Handy/releases/tag/v0.9.8) | 33010 | Wispr Flow (partial) |
+| [Meetily](https://github.com/Zackriya-Solutions/meetily) | Rust | MIT | [v0.4.1](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.4.1) signed | 31479 | Otter.ai (partial) |
+| [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Python | MIT | [v1.2.1](https://github.com/SYSTRAN/faster-whisper/releases/tag/v1.2.1) signed | 25725 | none |
+| [WhisperX](https://github.com/m-bain/whisperX) | Python | BSD-2-Clause | [v3.8.6](https://github.com/m-bain/whisperX/releases/tag/v3.8.6) | 24385 | none |
 | [Buzz](https://github.com/chidiwilliams/buzz) | Python | MIT | [v1.4.5](https://github.com/chidiwilliams/buzz/releases/tag/v1.4.5) signed | 21844 | Otter.ai (partial) |
 | [Vosk](https://github.com/alphacep/vosk-api) | Jupyter Notebook | Apache-2.0 | [v0.3.50](https://github.com/alphacep/vosk-api/releases/tag/v0.3.50) | 15165 | none |
 | [Vibe](https://github.com/thewh1teagle/vibe) | TypeScript | MIT | [v3.2.2](https://github.com/thewh1teagle/vibe/releases/tag/v3.2.2) signed | 7705 | Otter.ai (partial) |
 | [WhisperLive](https://github.com/collabora/WhisperLive) | Python | MIT | [v0.10.0](https://github.com/collabora/WhisperLive/releases/tag/v0.10.0) signed | 4306 | none |
-| [Speaches](https://github.com/speaches-ai/speaches) | Python | MIT | [v0.9.0-rc.3](https://github.com/speaches-ai/speaches/releases/tag/v0.9.0-rc.3) | 3698 | none |
+| [Speaches](https://github.com/speaches-ai/speaches) | Python | MIT | [v0.9.0-rc.3](https://github.com/speaches-ai/speaches/releases/tag/v0.9.0-rc.3) | 3699 | none |
 | [Scriberr](https://github.com/rishikanthc/Scriberr) | Go | MIT | [v1.2.0](https://github.com/rishikanthc/Scriberr/releases/tag/v1.2.0) | 3088 | Otter.ai (partial) |
 | [Whishper](https://github.com/pluja/whishper) | Svelte | AGPL-3.0 | [v3.1.4](https://github.com/pluja/whishper/releases/tag/v3.1.4) | 3082 | Otter.ai (partial) |
 
@@ -4411,14 +4411,14 @@ Generate speech from text, with voice cloning on some models, on your own hardwa
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) | Python | MIT | [20250606v2pro](https://github.com/RVC-Boss/GPT-SoVITS/releases/tag/20250606v2pro) signed | 62407 | ElevenLabs (partial) |
+| [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) | Python | MIT | [20250606v2pro](https://github.com/RVC-Boss/GPT-SoVITS/releases/tag/20250606v2pro) signed | 62408 | ElevenLabs (partial) |
 | [Fish Speech](https://github.com/fishaudio/fish-speech) | Python | Other | [v1.5.1](https://github.com/fishaudio/fish-speech/releases/tag/v1.5.1) signed | 32952 | ElevenLabs (partial) |
 | [Chatterbox](https://github.com/resemble-ai/chatterbox) | Python | MIT | [v0.1.2](https://github.com/resemble-ai/chatterbox/releases/tag/v0.1.2) signed | 26758 | ElevenLabs (partial) |
 | [IndexTTS](https://github.com/index-tts/index-tts) | Python | Other | [v2.5.0](https://github.com/index-tts/index-tts/releases/tag/v2.5.0) signed | 24326 | ElevenLabs (partial) |
 | [CosyVoice](https://github.com/QwenAudio/CosyVoice) | Python | Apache-2.0 | [v2.0](https://github.com/QwenAudio/CosyVoice/releases/tag/v2.0) | 23847 | ElevenLabs (partial) |
-| [ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook) | Python | Apache-2.0 | [v26.10.1](https://github.com/DrewThomasson/ebook2audiobook/releases/tag/v26.10.1) signed | 20291 | ElevenLabs (partial) |
+| [ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook) | Python | Apache-2.0 | [v26.10.1](https://github.com/DrewThomasson/ebook2audiobook/releases/tag/v26.10.1) signed | 20290 | ElevenLabs (partial) |
 | [F5-TTS](https://github.com/SWivid/F5-TTS) | Python | MIT | [1.1.22](https://github.com/SWivid/F5-TTS/releases/tag/1.1.22) signed | 15346 | ElevenLabs (partial) |
-| [Piper](https://github.com/OHF-Voice/piper1-gpl) | C++ | GPL-3.0 | [v1.8.0](https://github.com/OHF-Voice/piper1-gpl/releases/tag/v1.8.0) | 5772 | ElevenLabs (partial) |
+| [Piper](https://github.com/OHF-Voice/piper1-gpl) | C++ | GPL-3.0 | [v1.8.0](https://github.com/OHF-Voice/piper1-gpl/releases/tag/v1.8.0) | 5773 | ElevenLabs (partial) |
 | [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI) | Python | Apache-2.0 | [v0.9.0](https://github.com/remsky/Kokoro-FastAPI/releases/tag/v0.9.0) signed | 5513 | ElevenLabs (partial) |
 
 </details>
@@ -4430,7 +4430,7 @@ Recognise text in scanned documents and images.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Python | Apache-2.0 | [v3.7.0](https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v3.7.0) signed | 90686 | ABBYY FineReader (partial) |
+| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Python | Apache-2.0 | [v3.7.0](https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v3.7.0) signed | 90687 | ABBYY FineReader (partial) |
 | [Tesseract](https://github.com/tesseract-ocr/tesseract) | C++ | Apache-2.0 | [5.5.3](https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.3) signed | 76840 | ABBYY FineReader (partial) |
 | [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | Python | MPL-2.0 | [v17.13.0](https://github.com/ocrmypdf/OCRmyPDF/releases/tag/v17.13.0) | 34943 | ABBYY FineReader (partial), Adobe Acrobat (partial) |
 | [Surya](https://github.com/datalab-to/surya) | Python | Apache-2.0 | [v0.22.1](https://github.com/datalab-to/surya/releases/tag/v0.22.1) signed | 21453 | ABBYY FineReader (partial) |
@@ -4445,9 +4445,9 @@ Convert PDFs, office files and scans into Markdown or JSON that language models 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MarkItDown](https://github.com/microsoft/markitdown) | Python | MIT | [v0.1.8](https://github.com/microsoft/markitdown/releases/tag/v0.1.8) | 188798 | LlamaParse (partial) |
-| [MinerU](https://github.com/opendatalab/MinerU) | Python | Other | [mineru-4.0.10-released](https://github.com/opendatalab/MinerU/releases/tag/mineru-4.0.10-released) | 81155 | LlamaParse (full) |
-| [Docling](https://github.com/docling-project/docling) | Python | MIT | [v2.134.0](https://github.com/docling-project/docling/releases/tag/v2.134.0) | 68443 | LlamaParse (full), Amazon Textract (partial) |
+| [MarkItDown](https://github.com/microsoft/markitdown) | Python | MIT | [v0.1.8](https://github.com/microsoft/markitdown/releases/tag/v0.1.8) | 188804 | LlamaParse (partial) |
+| [MinerU](https://github.com/opendatalab/MinerU) | Python | Other | [mineru-4.0.10-released](https://github.com/opendatalab/MinerU/releases/tag/mineru-4.0.10-released) | 81158 | LlamaParse (full) |
+| [Docling](https://github.com/docling-project/docling) | Python | MIT | [v2.134.0](https://github.com/docling-project/docling/releases/tag/v2.134.0) | 68445 | LlamaParse (full), Amazon Textract (partial) |
 | [Marker](https://github.com/datalab-to/marker) | Python | Apache-2.0 | [v2.0.0](https://github.com/datalab-to/marker/releases/tag/v2.0.0) signed | 40221 | LlamaParse (full) |
 | [Unstructured](https://github.com/Unstructured-IO/unstructured) | HTML | Apache-2.0 | [0.27.16](https://github.com/Unstructured-IO/unstructured/releases/tag/0.27.16) signed | 15532 | LlamaParse (partial) |
 
@@ -4460,12 +4460,12 @@ Fine-tune language and diffusion models on your own data and GPUs.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Unsloth](https://github.com/unslothai/unsloth) | Python | Apache-2.0 | [v0.1.902-beta](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta) | 77267 | none |
+| [Unsloth](https://github.com/unslothai/unsloth) | Python | Apache-2.0 | [v0.1.902-beta](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta) | 77269 | none |
 | [LLaMA-Factory](https://github.com/hiyouga/LlamaFactory) | Python | Apache-2.0 | [v0.9.5](https://github.com/hiyouga/LlamaFactory/releases/tag/v0.9.5) signed | 75335 | none |
-| [TRL](https://github.com/huggingface/trl) | Python | Apache-2.0 | [v1.14.1](https://github.com/huggingface/trl/releases/tag/v1.14.1) | 19454 | none |
+| [TRL](https://github.com/huggingface/trl) | Python | Apache-2.0 | [v1.14.1](https://github.com/huggingface/trl/releases/tag/v1.14.1) | 19455 | none |
 | [Kohya's GUI](https://github.com/bmaltais/kohya_ss) | Python | Apache-2.0 | [v26.0.0](https://github.com/bmaltais/kohya_ss/releases/tag/v26.0.0) signed | 12614 | none |
 | [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Python | Apache-2.0 | [v0.20.0](https://github.com/axolotl-ai-cloud/axolotl/releases/tag/v0.20.0) signed | 12525 | none |
-| [AI Toolkit](https://github.com/ostris/ai-toolkit) | Python | MIT | none | 12211 | none |
+| [AI Toolkit](https://github.com/ostris/ai-toolkit) | Python | MIT | none | 12212 | none |
 | [torchtune](https://github.com/meta-pytorch/torchtune) | Python | BSD-3-Clause | [v0.6.1](https://github.com/meta-pytorch/torchtune/releases/tag/v0.6.1) signed | 5810 | none |
 | [OneTrainer](https://github.com/Nerogar/OneTrainer) | Python | AGPL-3.0 | [pre-upgrade](https://github.com/Nerogar/OneTrainer/releases/tag/pre-upgrade) signed | 3227 | none |
 
@@ -4478,11 +4478,11 @@ Log the metrics, parameters and artefacts of training runs and compare them in a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.16.1](https://github.com/mlflow/mlflow/releases/tag/v3.16.1) signed | 28283 | Weights & Biases (full), Comet (full) |
+| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.16.1](https://github.com/mlflow/mlflow/releases/tag/v3.16.1) signed | 28284 | Weights & Biases (full), Comet (full) |
 | [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 15901 | Weights & Biases (partial) |
 | [TensorBoard](https://github.com/tensorflow/tensorboard) | TypeScript | Apache-2.0 | [2.21.0](https://github.com/tensorflow/tensorboard/releases/tag/2.21.0) | 7231 | Weights & Biases (partial) |
 | [ClearML](https://github.com/clearml/clearml) | Python | Apache-2.0 | [v2.1.12](https://github.com/clearml/clearml/releases/tag/v2.1.12) signed | 6900 | Weights & Biases (full), Comet (full) |
-| [Aim](https://github.com/aimhubio/aim) | Python | Apache-2.0 | [v3.29.1](https://github.com/aimhubio/aim/releases/tag/v3.29.1) | 6277 | Weights & Biases (partial) |
+| [Aim](https://github.com/aimhubio/aim) | Python | Apache-2.0 | [v3.29.1](https://github.com/aimhubio/aim/releases/tag/v3.29.1) | 6278 | Weights & Biases (partial) |
 | [Polyaxon](https://github.com/polyaxon/polyaxon) | MDX | Apache-2.0 | [v2.17.0](https://github.com/polyaxon/polyaxon/releases/tag/v2.17.0) | 3739 | Weights & Biases (partial) |
 | [Trackio](https://github.com/gradio-app/trackio) | Python | MIT | [trackio@0.40.0](https://github.com/gradio-app/trackio/releases/tag/trackio%400.40.0) | 1709 | Weights & Biases (drop-in) |
 
@@ -4571,7 +4571,7 @@ Track stock, parts and equipment, and who has them where.
 | [Snipe-IT](https://github.com/grokability/snipe-it) | PHP | AGPL-3.0 | [v8.8.0](https://github.com/grokability/snipe-it/releases/tag/v8.8.0) | 15007 | none |
 | [InvenTree](https://github.com/inventree/InvenTree) | Python | MIT | [1.5.6](https://github.com/inventree/InvenTree/releases/tag/1.5.6) signed | 7674 | none |
 | [Shelf](https://github.com/Shelf-nu/shelf.nu) | TypeScript | Other | [shelf@2.3.0](https://github.com/Shelf-nu/shelf.nu/releases/tag/shelf%402.3.0) signed | 3023 | none |
-| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.19.2](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.19.2) | 1787 | none |
+| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.19.2](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.19.2) | 1788 | none |
 | [OpenBoxes](https://github.com/openboxes/openboxes) | Groovy | EPL-1.0 | [v0.9.8-hotfix1](https://github.com/openboxes/openboxes/releases/tag/v0.9.8-hotfix1) | 910 | none |
 
 </details>
@@ -4602,8 +4602,8 @@ Learn with spaced repetition flashcards.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Anki](https://github.com/ankitects/anki) | Rust | Other | [26.09.3](https://github.com/ankitects/anki/releases/tag/26.09.3) | 31797 | Quizlet (partial) |
-| [AnkiDroid](https://github.com/ankidroid/Anki-Android) | Kotlin | GPL-3.0 | [v2.25.0](https://github.com/ankidroid/Anki-Android/releases/tag/v2.25.0) | 11942 | Quizlet (partial) |
+| [Anki](https://github.com/ankitects/anki) | Rust | Other | [26.09.3](https://github.com/ankitects/anki/releases/tag/26.09.3) | 31800 | Quizlet (partial) |
+| [AnkiDroid](https://github.com/ankidroid/Anki-Android) | Kotlin | GPL-3.0 | [v2.25.0](https://github.com/ankidroid/Anki-Android/releases/tag/v2.25.0) | 11943 | Quizlet (partial) |
 
 </details>
 
@@ -4630,6 +4630,148 @@ Collect papers and sources, organise them and cite them in documents.
 |---|---|---|---|---:|---|
 | [Zotero](https://github.com/zotero/zotero) | JavaScript | Other | [10.0.5](https://github.com/zotero/zotero/releases/tag/10.0.5) | 15481 | Mendeley (full), EndNote (full) |
 | [JabRef](https://github.com/JabRef/jabref) | Java | MIT | [v5.15](https://github.com/JabRef/jabref/releases/tag/v5.15) | 4788 | Mendeley (partial), EndNote (partial) |
+
+</details>
+
+<details>
+<summary><b>SIEM and security monitoring</b>, 3 tools</summary>
+
+Collect security events and logs from hosts and networks, correlate them and raise alerts on threats.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Wazuh](https://github.com/wazuh/wazuh) | C++ | Other | [v4.14.8](https://github.com/wazuh/wazuh/releases/tag/v4.14.8) signed | 17131 | Splunk (partial), CrowdStrike Falcon (partial) |
+| [Security Onion](https://github.com/Security-Onion-Solutions/securityonion) | Shell | Other | [3.3.0-20260911](https://github.com/Security-Onion-Solutions/securityonion/releases/tag/3.3.0-20260911) signed | 4917 | Splunk (partial) |
+| [Malcolm](https://github.com/cisagov/Malcolm) | Python | Other | [v26.09.0](https://github.com/cisagov/Malcolm/releases/tag/v26.09.0) signed | 2539 | none |
+
+</details>
+
+<details>
+<summary><b>Intrusion detection</b>, 9 tools</summary>
+
+Watch network traffic or hosts for attacks, and report or block what matches.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 18725 | none |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.1](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.1) signed | 15086 | Fail2ban (full) |
+| [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.4](https://github.com/stamparm/maltrail/releases/tag/3.4) | 8620 | none |
+| [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.0](https://github.com/zeek/zeek/releases/tag/v9.0.0) | 8070 | none |
+| [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.8.0](https://github.com/arkime/arkime/releases/tag/v6.8.0) signed | 7525 | none |
+| [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.7](https://github.com/OISF/suricata/releases/tag/suricata-8.0.7) | 6700 | none |
+| [OSSEC](https://github.com/ossec/ossec-hids) | C | GPL-2.0 | [4.4.0](https://github.com/ossec/ossec-hids/releases/tag/4.4.0) signed | 5062 | none |
+| [Snort 3](https://github.com/snort3/snort3) | C++ | Other | [3.12.2.0](https://github.com/snort3/snort3/releases/tag/3.12.2.0) signed | 3433 | none |
+| [AIDE](https://github.com/aide/aide) | C | GPL-2.0 | [v0.19.4](https://github.com/aide/aide/releases/tag/v0.19.4) signed | 752 | none |
+
+</details>
+
+<details>
+<summary><b>Container runtime security</b>, 5 tools</summary>
+
+Detect and block suspicious behaviour in running containers and Kubernetes workloads.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Falco](https://github.com/falcosecurity/falco) | C++ | Apache-2.0 | [0.45.0](https://github.com/falcosecurity/falco/releases/tag/0.45.0) | 9455 | Sysdig Secure (partial) |
+| [Tetragon](https://github.com/cilium/tetragon) | C | Apache-2.0 | [v1.7.1](https://github.com/cilium/tetragon/releases/tag/v1.7.1) | 5060 | Sysdig Secure (partial) |
+| [Tracee](https://github.com/aquasecurity/tracee) | Go | Apache-2.0 | [v0.24.1](https://github.com/aquasecurity/tracee/releases/tag/v0.24.1) signed | 4632 | none |
+| [KubeArmor](https://github.com/kubearmor/KubeArmor) | Go | Apache-2.0 | [v1.7.6-rc5](https://github.com/kubearmor/KubeArmor/releases/tag/v1.7.6-rc5) signed | 2623 | none |
+| [NeuVector](https://github.com/neuvector/neuvector) | Go | Apache-2.0 | [v5.6.2](https://github.com/neuvector/neuvector/releases/tag/v5.6.2) | 1346 | Sysdig Secure (full) |
+
+</details>
+
+<details>
+<summary><b>Endpoint detection and forensics</b>, 5 tools</summary>
+
+Query laptops and servers, hunt for threats on them and collect forensic evidence.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [osquery](https://github.com/osquery/osquery) | C++ | Other | [5.23.1](https://github.com/osquery/osquery/releases/tag/5.23.1) | 23616 | none |
+| [GRR Rapid Response](https://github.com/google/grr) | Python | Apache-2.0 | [v.4.0.0.0-release](https://github.com/google/grr/releases/tag/v.4.0.0.0-release) signed | 5088 | none |
+| [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4302 | CrowdStrike Falcon (partial) |
+| [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.16.5](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.16.5) signed | 3682 | none |
+| [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.1.0](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.1.0) signed | 3383 | none |
+
+</details>
+
+<details>
+<summary><b>Device management</b>, 5 tools</summary>
+
+Enroll, configure, patch and inventory laptops, phones and servers from one console.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Fleet](https://github.com/fleetdm/fleet) | Go | Other | [fleet-v4.92.3](https://github.com/fleetdm/fleet/releases/tag/fleet-v4.92.3) signed | 6951 | Jamf Pro (full), Microsoft Intune (partial) |
+| [Tactical RMM](https://github.com/amidaware/tacticalrmm) | Python | Other | [v1.5.2](https://github.com/amidaware/tacticalrmm/releases/tag/v1.5.2) | 4494 | NinjaOne (full) |
+| [MicroMDM](https://github.com/micromdm/micromdm) | Go | MIT | [v1.13.1](https://github.com/micromdm/micromdm/releases/tag/v1.13.1) | 2682 | Jamf Pro (partial) |
+| [NanoMDM](https://github.com/micromdm/nanomdm) | Go | MIT | [v0.9.0](https://github.com/micromdm/nanomdm/releases/tag/v0.9.0) signed | 673 | Jamf Pro (partial) |
+| [Headwind MDM](https://github.com/h-mdm/hmdm-server) | Java | Apache-2.0 | [v5.41.1](https://github.com/h-mdm/hmdm-server/releases/tag/v5.41.1) | 554 | Microsoft Intune (partial) |
+
+</details>
+
+<details>
+<summary><b>Web application firewalls</b>, 6 tools</summary>
+
+Inspect HTTP traffic and block attacks, bots and abuse before they reach an application.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.27.0](https://github.com/TecharoHQ/anubis/releases/tag/v1.27.0) | 23118 | Cloudflare WAF (partial) |
+| [SafeLine](https://github.com/chaitin/SafeLine) | Go | GPL-3.0 | [v9.4.2](https://github.com/chaitin/SafeLine/releases/tag/v9.4.2) signed | 22707 | Cloudflare WAF (full) |
+| [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9791 | Cloudflare WAF (partial) |
+| [Coraza](https://github.com/corazawaf/coraza) | Go | Apache-2.0 | [v3.8.1](https://github.com/corazawaf/coraza/releases/tag/v3.8.1) signed | 3873 | Cloudflare WAF (partial) |
+| [OWASP CRS](https://github.com/coreruleset/coreruleset) | Python | Apache-2.0 | [v4.30.0](https://github.com/coreruleset/coreruleset/releases/tag/v4.30.0) signed | 3291 | none |
+| [open-appsec](https://github.com/openappsec/openappsec) | C++ | Apache-2.0 | [1.1.36](https://github.com/openappsec/openappsec/releases/tag/1.1.36) signed | 1718 | Cloudflare WAF (partial) |
+
+</details>
+
+<details>
+<summary><b>Firewalls and routers</b>, 3 tools</summary>
+
+Firewall and router systems that filter traffic for a host or a whole network.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [OPNsense](https://github.com/opnsense/core) | PHP | BSD-2-Clause | [26.7.5](https://github.com/opnsense/core/releases/tag/26.7.5) | 4710 | none |
+| [firewalld](https://github.com/firewalld/firewalld) | Python | GPL-2.0 | [v2.5.2](https://github.com/firewalld/firewalld/releases/tag/v2.5.2) | 1049 | none |
+| [VyOS](https://github.com/vyos/vyos-1x) | Python | LGPL-2.1 | [1.4.0](https://github.com/vyos/vyos-1x/releases/tag/1.4.0) | 497 | none |
+
+</details>
+
+<details>
+<summary><b>Application firewalls</b>, 7 tools</summary>
+
+Show and control which apps on a computer or phone may connect to the network.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [OpenSnitch](https://github.com/evilsocket/opensnitch) | Python | GPL-3.0 | [v1.8.0](https://github.com/evilsocket/opensnitch/releases/tag/v1.8.0) signed | 14129 | Little Snitch (full) |
+| [Portmaster](https://github.com/safing/portmaster) | Go | GPL-3.0 | [v2.2.3](https://github.com/safing/portmaster/releases/tag/v2.2.3) | 13883 | Little Snitch (full), GlassWire (full) |
+| [LuLu](https://github.com/objective-see/LuLu) | Objective-C | GPL-3.0 | [v4.5.1](https://github.com/objective-see/LuLu/releases/tag/v4.5.1) | 13288 | Little Snitch (partial) |
+| [simplewall](https://github.com/henrypp/simplewall) | C | GPL-3.0 | [v.3.8.7](https://github.com/henrypp/simplewall/releases/tag/v.3.8.7) signed | 9106 | GlassWire (partial) |
+| [Rethink DNS + Firewall](https://github.com/celzero/rethink-app) | Kotlin | Apache-2.0 | [v0.5.7](https://github.com/celzero/rethink-app/releases/tag/v0.5.7) signed | 5538 | GlassWire (partial) |
+| [Blokada](https://github.com/blokadaorg/blokada) | Dart | MPL-2.0 | [android.v5.23.2.1](https://github.com/blokadaorg/blokada/releases/tag/android.v5.23.2.1) | 3265 | none |
+| [TrackerControl](https://github.com/TrackerControl/tracker-control-android) | Java | GPL-3.0 | [2026080501](https://github.com/TrackerControl/tracker-control-android/releases/tag/2026080501) | 2665 | none |
+
+</details>
+
+<details>
+<summary><b>VPN servers</b>, 9 tools</summary>
+
+Run a remote-access or site-to-site VPN server for your users and networks.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30410 | none |
+| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.4.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.4.0) | 27074 | OpenVPN Access Server (partial) |
+| [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.7](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.7) | 14644 | OpenVPN Access Server (partial) |
+| [SoftEther VPN](https://github.com/SoftEtherVPN/SoftEtherVPN) | C | Apache-2.0 | [5.2.5188](https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5188) signed | 13614 | none |
+| [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6257 | none |
+| [Pritunl](https://github.com/pritunl/pritunl) | Python | Other | [1.34.4763.45](https://github.com/pritunl/pritunl/releases/tag/1.34.4763.45) signed | 5030 | OpenVPN Access Server (full) |
+| [WGDashboard](https://github.com/WGDashboard/WGDashboard) | Vue | Apache-2.0 | [v4.3.3](https://github.com/WGDashboard/WGDashboard/releases/tag/v4.3.3) signed | 3740 | none |
+| [strongSwan](https://github.com/strongswan/strongswan) | C | Other | [6.1.0](https://github.com/strongswan/strongswan/releases/tag/6.1.0) | 2999 | none |
+| [WireGuard Portal](https://github.com/h44z/wg-portal) | Go | MIT | [v2.3.1](https://github.com/h44z/wg-portal/releases/tag/v2.3.1) signed | 1837 | OpenVPN Access Server (partial) |
 
 </details>
 
