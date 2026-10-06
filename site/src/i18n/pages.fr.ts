@@ -237,7 +237,7 @@ export const pages: Pages = {
     },
     publisher: {
       heading: "Éditeur",
-      body: "awesome-alternatives.com est édité par Bryan Ferrando, entrepreneur individuel exerçant sous le nom commercial FerrLabs. TVA non applicable, article 293 B du Code général des impôts.",
+      body: "awesome-alternatives.com est édité par FerrLabs, nom commercial de Bryan Ferrando, entrepreneur individuel (EI). TVA non applicable, article 293 B du Code général des impôts.",
     },
     publicationDirector: {
       heading: "Directeur de la publication",

@@ -231,7 +231,7 @@ export const pages = {
     },
     publisher: {
       heading: "Publisher",
-      body: "awesome-alternatives.com is published by Bryan Ferrando, a sole proprietor (entrepreneur individuel) trading as FerrLabs. VAT is not applicable under article 293 B of the French Tax Code.",
+      body: "awesome-alternatives.com is published by FerrLabs, the trade name of Bryan Ferrando, a sole proprietor (entrepreneur individuel, EI). VAT is not applicable under article 293 B of the French Tax Code.",
     },
     publicationDirector: {
       heading: "Publication director",
