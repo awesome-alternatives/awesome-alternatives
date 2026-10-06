@@ -143,7 +143,7 @@ mod tests {
 
     use super::*;
     use crate::cache::fake::{Write, recording};
-    use crate::upstream::README_BYTES;
+    use crate::upstream::{Auth, README_BYTES};
 
     fn readme(bytes: usize) -> Readme {
         Readme {
@@ -246,7 +246,7 @@ mod tests {
         let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
         let base = format!("http://{}", listener.local_addr().unwrap());
         tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
-        Upstream::new(reqwest::Client::new(), &base, &base, None)
+        Upstream::new(reqwest::Client::new(), &base, &base, Auth::Anonymous)
     }
 
     async fn advisories_answering(status: StatusCode, hits: Arc<Hits>) -> Upstream {
@@ -268,7 +268,7 @@ mod tests {
         let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
         let base = format!("http://{}", listener.local_addr().unwrap());
         tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
-        Upstream::new(reqwest::Client::new(), &base, &base, None)
+        Upstream::new(reqwest::Client::new(), &base, &base, Auth::Anonymous)
     }
 
     fn unreachable() -> Upstream {
@@ -276,7 +276,7 @@ mod tests {
             reqwest::Client::new(),
             "http://127.0.0.1:9",
             "http://127.0.0.1:9",
-            None,
+            Auth::Anonymous,
         )
     }
 
@@ -408,7 +408,7 @@ mod tests {
         let base = format!("http://{}", listener.local_addr().unwrap());
         tokio::spawn(async move { axum::serve(listener, app).await.unwrap() });
         let (shared, store) = recording();
-        let upstream = Upstream::new(reqwest::Client::new(), &base, &base, None);
+        let upstream = Upstream::new(reqwest::Client::new(), &base, &base, Auth::Anonymous);
         let details = Details::new(upstream, CACHE_BYTES, shared);
         let error = details.readme("example/huge").await.unwrap_err();
         assert!(matches!(*error, body::Error::TooLarge(README_BYTES)));

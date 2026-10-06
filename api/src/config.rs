@@ -6,6 +6,7 @@ use std::time::Duration;
 
 use crate::cache;
 use crate::details;
+use crate::github_app;
 use crate::jev;
 use crate::jev_budget;
 use crate::limits::{self, Limits};
@@ -34,6 +35,7 @@ pub struct Config {
     pub jev: Option<Jev>,
     pub github_api: String,
     pub github_token: Option<String>,
+    pub github_app: Option<github_app::Settings>,
     pub scorecard_api: String,
     pub details_cache_bytes: u64,
     pub search_cache_bytes: u64,
@@ -70,6 +72,7 @@ impl Config {
             jev: jev()?,
             github_api: text("GITHUB_API_URL").unwrap_or_else(|| upstream::GITHUB_API.into()),
             github_token: text("GITHUB_TOKEN"),
+            github_app: github_app(),
             scorecard_api: text("SCORECARD_API_URL")
                 .unwrap_or_else(|| upstream::SCORECARD_API.into()),
             details_cache_bytes: parsed("DETAILS_CACHE_BYTES", &details::CACHE_BYTES.to_string())?,
@@ -148,19 +151,21 @@ fn refresh_settings() -> Result<refresh::Settings, ConfigError> {
             "REFRESH_COOLDOWN_SECS",
             &refresh::COOLDOWN.as_secs().to_string(),
         )?),
-        dispatch: dispatch_app(),
+        dispatch: dispatch::Settings {
+            workflow: text("DISPATCH_WORKFLOW")
+                .unwrap_or_else(|| dispatch::DEFAULT_WORKFLOW.into()),
+            reference: text("DISPATCH_REF").unwrap_or_else(|| dispatch::DEFAULT_REF.into()),
+        },
     })
 }
 
-fn dispatch_app() -> Option<dispatch::Settings> {
+fn github_app() -> Option<github_app::Settings> {
     let (app_id, private_key) = text("DISPATCH_APP_ID").zip(text("DISPATCH_PRIVATE_KEY"))?;
-    Some(dispatch::Settings {
+    Some(github_app::Settings {
         app_id,
         private_key,
         repository: text("DISPATCH_REPOSITORY")
-            .unwrap_or_else(|| dispatch::DEFAULT_REPOSITORY.into()),
-        workflow: text("DISPATCH_WORKFLOW").unwrap_or_else(|| dispatch::DEFAULT_WORKFLOW.into()),
-        reference: text("DISPATCH_REF").unwrap_or_else(|| dispatch::DEFAULT_REF.into()),
+            .unwrap_or_else(|| github_app::DEFAULT_REPOSITORY.into()),
     })
 }
 

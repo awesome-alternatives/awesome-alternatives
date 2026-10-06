@@ -145,7 +145,7 @@ mod tests {
     use crate::routes::router;
     use crate::search::Search;
     use crate::state::{AppState, Loaded};
-    use crate::upstream::Upstream;
+    use crate::upstream::{Auth, Upstream};
 
     #[derive(Default)]
     struct Held {
@@ -215,7 +215,7 @@ mod tests {
                     reqwest::Client::new(),
                     "http://127.0.0.1:9",
                     "http://127.0.0.1:9",
-                    None,
+                    Auth::Anonymous,
                 ),
                 CACHE_BYTES,
                 Arc::new(Shared::disabled()),

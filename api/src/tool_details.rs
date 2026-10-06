@@ -139,7 +139,7 @@ mod tests {
     use crate::routes::router;
     use crate::search::Search;
     use crate::state::{AppState, Loaded};
-    use crate::upstream::Upstream;
+    use crate::upstream::{Auth, Upstream};
 
     struct Fake {
         base: String,
@@ -219,7 +219,12 @@ mod tests {
                 tool("silent", "Rust", "MIT", &[], 1),
             ],
         };
-        let upstream = Upstream::new(reqwest::Client::new(), &fake.base, &fake.base, None);
+        let upstream = Upstream::new(
+            reqwest::Client::new(),
+            &fake.base,
+            &fake.base,
+            Auth::Anonymous,
+        );
         let state = AppState::new(
             Loaded::new(catalog, None),
             Search::new(

@@ -21,7 +21,7 @@ use crate::limits::Limits;
 use crate::routes::router;
 use crate::search::Search;
 use crate::state::{AppState, Loaded};
-use crate::upstream::Upstream;
+use crate::upstream::{Auth, Upstream};
 
 const SITE: &str = "https://awesome-alternatives.com";
 
@@ -128,7 +128,7 @@ impl Setup {
                     reqwest::Client::new(),
                     "http://127.0.0.1:9",
                     "http://127.0.0.1:9",
-                    None,
+                    Auth::Anonymous,
                 ),
                 CACHE_BYTES,
                 Arc::new(Shared::disabled()),

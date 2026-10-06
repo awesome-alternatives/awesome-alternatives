@@ -15,6 +15,7 @@ use moka::future::Cache;
 use serde::Serialize;
 
 use crate::catalog::Tool;
+use crate::github_app::App;
 use dispatch::Dispatcher;
 use oidc::Oidc;
 pub use routes::routes;
@@ -26,7 +27,7 @@ pub struct Settings {
     pub oidc_audience: String,
     pub oidc_jwks_url: String,
     pub cooldown: Duration,
-    pub dispatch: Option<dispatch::Settings>,
+    pub dispatch: dispatch::Settings,
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -74,24 +75,17 @@ pub struct Refresh {
 }
 
 impl Refresh {
-    pub fn new(
-        settings: Settings,
-        http: reqwest::Client,
-        github_api: &str,
-    ) -> Result<Self, jsonwebtoken::errors::Error> {
-        Ok(Self {
+    pub fn new(settings: Settings, http: reqwest::Client, app: Option<Arc<App>>) -> Self {
+        Self {
             webhook_secret: settings.webhook_secret,
             oidc: Oidc::new(
                 http.clone(),
                 &settings.oidc_jwks_url,
                 &settings.oidc_audience,
             ),
-            dispatcher: settings
-                .dispatch
-                .map(|app| Dispatcher::new(http, github_api, app).map(Arc::new))
-                .transpose()?,
+            dispatcher: app.map(|app| Arc::new(Dispatcher::new(app, settings.dispatch))),
             recent: Cache::builder().time_to_live(settings.cooldown).build(),
-        })
+        }
     }
 
     fn dispatcher(&self) -> Result<&Arc<Dispatcher>, RefreshError> {

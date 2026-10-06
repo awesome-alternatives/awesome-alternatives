@@ -20,7 +20,7 @@ use crate::refresh::signature::sign;
 use crate::routes::router;
 use crate::search::Search;
 use crate::state::{AppState, Loaded};
-use crate::upstream::Upstream;
+use crate::upstream::{Auth, Upstream};
 
 fn app(refresh: Refresh) -> Router {
     let mut cli = tool("mono-cli", "Rust", "MIT", &[], 1);
@@ -46,7 +46,7 @@ fn app(refresh: Refresh) -> Router {
                 reqwest::Client::new(),
                 "http://127.0.0.1:9",
                 "http://127.0.0.1:9",
-                None,
+                Auth::Anonymous,
             ),
             CACHE_BYTES,
             Arc::new(Shared::disabled()),

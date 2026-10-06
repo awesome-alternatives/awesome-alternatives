@@ -223,7 +223,7 @@ mod tests {
     use crate::fixtures::tool;
     use crate::search::Search;
     use crate::state::Loaded;
-    use crate::upstream::Upstream;
+    use crate::upstream::{Auth, Upstream};
 
     fn state(per_minute: u32, embedder: Option<Arc<dyn Embedder>>) -> AppState {
         let catalog = Catalog {
@@ -279,7 +279,7 @@ mod tests {
                     reqwest::Client::new(),
                     "http://127.0.0.1:9",
                     "http://127.0.0.1:9",
-                    None,
+                    Auth::Anonymous,
                 ),
                 CACHE_BYTES,
                 Arc::new(Shared::disabled()),

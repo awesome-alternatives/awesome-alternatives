@@ -1,15 +1,10 @@
 use std::sync::atomic::Ordering;
 
-use super::{Dispatched, GitHub, dispatch_settings};
+use super::{Dispatched, GitHub, dispatch_app, dispatch_settings};
 use crate::refresh::dispatch::Dispatcher;
 
 async fn dispatcher(github: &GitHub) -> Dispatcher {
-    Dispatcher::new(
-        reqwest::Client::new(),
-        &github.serve().await,
-        dispatch_settings(),
-    )
-    .unwrap()
+    Dispatcher::new(dispatch_app(&github.serve().await), dispatch_settings())
 }
 
 fn slugs(names: &[&str]) -> Vec<String> {
