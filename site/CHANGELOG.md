@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.109.0] - 2026-10-06
+
+### Features
+
+- feat(refresh): propose maintainers' editorial changes as pull requests (#350)
+
 ## [0.108.1] - 2026-10-06
 
 ### Bug Fixes
