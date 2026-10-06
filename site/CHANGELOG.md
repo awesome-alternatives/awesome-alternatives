@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.124.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 49 security and identity tools (#371)
+
 ## [0.123.0] - 2026-10-06
 
 ### Features
