@@ -1,0 +1,11 @@
+name: rathole
+repository: https://github.com/rathole-org/rathole
+category: reverse-proxy
+replaces:
+  - tool: ngrok
+    fit: partial
+    note: Exposes TCP and UDP services behind NAT through your own server, without request inspection or a dashboard.
+  - tool: frp
+    fit: full
+    note: Same NAT traversal model with a smaller binary and a TOML configuration.
+deploy: [binary]

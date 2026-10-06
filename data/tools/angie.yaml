@@ -1,0 +1,7 @@
+name: Angie
+repository: https://github.com/webserver-llc/angie
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: drop-in
+    note: Fork of nginx that reads its configuration, with a status API and ACME support built in.

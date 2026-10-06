@@ -1,0 +1,3 @@
+name: Cluster API
+repository: https://github.com/kubernetes-sigs/cluster-api
+category: container-orchestration

@@ -1,0 +1,5 @@
+name: Amazon EKS
+homepage: https://aws.amazon.com/eks/
+vendor: Amazon Web Services
+category: container-orchestration
+description: Managed Kubernetes on AWS, where AWS runs the control plane and the worker nodes run in your account.

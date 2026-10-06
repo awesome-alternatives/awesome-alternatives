@@ -1,0 +1,5 @@
+name: Amazon Route 53
+homepage: https://aws.amazon.com/route53/
+vendor: Amazon Web Services
+category: dns-server
+description: AWS managed DNS service for hosted zones, domain registration and health-checked routing.

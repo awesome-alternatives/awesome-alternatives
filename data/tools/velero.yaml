@@ -1,0 +1,4 @@
+name: Velero
+repository: https://github.com/velero-io/velero
+category: kubernetes-backup
+deploy: [binary]

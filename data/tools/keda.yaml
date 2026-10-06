@@ -1,0 +1,3 @@
+name: KEDA
+repository: https://github.com/kedacore/keda
+category: kubernetes-autoscaling

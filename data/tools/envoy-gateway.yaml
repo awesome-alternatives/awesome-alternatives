@@ -1,0 +1,3 @@
+name: Envoy Gateway
+repository: https://github.com/envoyproxy/gateway
+category: reverse-proxy

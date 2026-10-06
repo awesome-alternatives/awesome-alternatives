@@ -1,0 +1,9 @@
+name: k0s
+repository: https://github.com/k0sproject/k0s
+category: container-orchestration
+terms: open
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: Conformant Kubernetes in a single binary, with the control plane on hosts you run.
+deploy: [binary]

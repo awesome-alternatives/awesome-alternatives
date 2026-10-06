@@ -1,0 +1,4 @@
+name: Rook
+repository: https://github.com/rook/rook
+category: distributed-storage
+deploy: [helm]

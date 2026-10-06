@@ -1,0 +1,7 @@
+name: PowerDNS
+repository: https://github.com/PowerDNS/pdns
+category: dns-server
+replaces:
+  - tool: amazon-route-53
+    fit: partial
+    note: Authoritative server with an HTTP API and database backends, without domain registration.

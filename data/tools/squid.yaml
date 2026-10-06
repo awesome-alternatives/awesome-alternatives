@@ -1,0 +1,3 @@
+name: Squid
+repository: https://github.com/squid-cache/squid
+category: reverse-proxy

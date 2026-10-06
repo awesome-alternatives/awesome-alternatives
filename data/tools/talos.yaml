@@ -1,0 +1,8 @@
+name: Talos Linux
+repository: https://github.com/siderolabs/talos
+category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: Immutable Linux that only runs Kubernetes, managed through an API instead of SSH.
+deploy: [binary]

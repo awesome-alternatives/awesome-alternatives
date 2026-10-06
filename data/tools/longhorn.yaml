@@ -1,0 +1,4 @@
+name: Longhorn
+repository: https://github.com/longhorn/longhorn
+category: distributed-storage
+deploy: [helm]

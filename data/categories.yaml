@@ -1449,3 +1449,39 @@ certificate-authority:
 acme-client:
   name: Certificate automation
   description: "Request and renew TLS certificates over ACME from Let's Encrypt or another ACME authority."
+
+container-orchestration:
+  name: Container orchestration
+  description: Schedule and run containers across a cluster of machines, from full Kubernetes distributions to lighter schedulers.
+  selfHost: true
+
+kubernetes-packaging:
+  name: Kubernetes packaging
+  description: Template, package and version Kubernetes manifests so one application can be installed and configured per environment.
+
+kubernetes-development:
+  name: Kubernetes development
+  description: Build, deploy and debug code against a Kubernetes cluster from a developer machine, with live reload or traffic proxied to the laptop.
+
+kubernetes-autoscaling:
+  name: Kubernetes autoscaling
+  description: Add and remove pods and nodes in a Kubernetes cluster as load and pending work change.
+
+container-networking:
+  name: Container networking
+  description: Pod networking, network policy and load balancer addresses for Kubernetes clusters, especially on bare metal.
+
+distributed-storage:
+  name: Distributed storage
+  description: Replicated block and file storage pooled from the disks of a cluster, often as persistent volumes for Kubernetes.
+  selfHost: true
+
+kubernetes-backup:
+  name: Kubernetes backup
+  description: Back up and restore Kubernetes resources and persistent volumes, and migrate workloads between clusters.
+  selfHost: true
+
+dns-server:
+  name: DNS servers
+  description: Authoritative and recursive DNS servers that host your zones and answer queries behind an API.
+  selfHost: true

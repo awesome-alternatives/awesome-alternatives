@@ -1,0 +1,8 @@
+name: CoreDNS
+repository: https://github.com/coredns/coredns
+category: dns-server
+replaces:
+  - tool: amazon-route-53
+    fit: partial
+    note: Serves zones from files, etcd or Kubernetes through plugins, without domain registration or health-checked routing.
+deploy: [binary]

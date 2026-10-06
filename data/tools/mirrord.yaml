@@ -1,0 +1,7 @@
+name: mirrord
+repository: https://github.com/metalbear-co/mirrord
+category: kubernetes-development
+replaces:
+  - tool: telepresence
+    fit: full
+    note: Runs a local process in the context of a remote pod without installing anything in the cluster beforehand.

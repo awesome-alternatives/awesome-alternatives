@@ -1,0 +1,3 @@
+name: Helmfile
+repository: https://github.com/helmfile/helmfile
+category: kubernetes-packaging
