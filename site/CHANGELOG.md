@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.113.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 63 database and data tools (#356)
+
 ## [0.112.0] - 2026-10-06
 
 ### Features
