@@ -1,0 +1,8 @@
+name: HomeBox
+repository: https://github.com/sysadminsmedia/homebox
+category: home-inventory
+replaces:
+  - tool: sortly
+    fit: partial
+    note: Home inventory with locations, labels, warranties and printable QR labels, for one household rather than a business.
+deploy: [container]

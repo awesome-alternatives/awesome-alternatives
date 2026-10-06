@@ -1,0 +1,7 @@
+name: Cerebro
+repository: https://github.com/cerebroapp/cerebro
+category: app-launcher
+replaces:
+  - tool: alfred
+    fit: partial
+    note: Cross-platform launcher with plugins for search, calculation and app control.

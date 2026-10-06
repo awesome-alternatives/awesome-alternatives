@@ -1,0 +1,7 @@
+name: croc
+repository: https://github.com/schollz/croc
+category: local-file-transfer
+replaces:
+  - tool: wetransfer
+    fit: partial
+    note: Sends files from one computer to another through a relay with a code phrase and end-to-end encryption; nothing waits online for later download.

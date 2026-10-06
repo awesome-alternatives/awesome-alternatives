@@ -1,0 +1,7 @@
+name: Olauncher
+repository: https://github.com/tanujnotes/Olauncher
+category: android-launcher
+replaces:
+  - tool: niagara-launcher
+    fit: partial
+    note: Minimal text-only home screen with a few favourite apps and gestures.

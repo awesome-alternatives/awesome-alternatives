@@ -1,0 +1,8 @@
+name: Reitti
+repository: https://github.com/dedicatedcode/reitti
+category: location-history
+replaces:
+  - tool: google-maps-timeline
+    fit: full
+    note: Location history with visit and trip detection, Google Takeout import and sharing between users.
+deploy: [container]

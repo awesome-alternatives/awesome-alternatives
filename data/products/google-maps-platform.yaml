@@ -1,0 +1,5 @@
+name: Google Maps Platform
+homepage: https://mapsplatform.google.com
+vendor: Google
+category: map-services
+description: "Google's paid APIs for maps, routes, geocoding and places."

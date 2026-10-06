@@ -1,0 +1,8 @@
+name: Dawarich
+repository: https://github.com/Freika/dawarich
+category: location-history
+replaces:
+  - tool: google-maps-timeline
+    fit: full
+    note: Imports Google Timeline exports and records new points from OwnTracks or Overland, with maps, visits and trip statistics.
+deploy: [container, compose]

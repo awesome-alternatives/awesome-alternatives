@@ -1,0 +1,9 @@
+name: Valhalla
+repository: https://github.com/valhalla/valhalla
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Routing, isochrones and map matching over OpenStreetMap data behind an HTTP API; no live traffic.
+terms: open
+deploy: [container]

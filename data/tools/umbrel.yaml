@@ -1,0 +1,8 @@
+name: umbrelOS
+repository: https://github.com/getumbrel/umbrel
+category: home-server-platform
+replaces:
+  - tool: unraid
+    fit: partial
+    note: Home server OS with an app store and storage management; free for non-commercial use only.
+terms: source-available

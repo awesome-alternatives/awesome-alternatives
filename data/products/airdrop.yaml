@@ -1,0 +1,5 @@
+name: AirDrop
+homepage: https://support.apple.com/en-us/119857
+vendor: Apple
+category: local-file-transfer
+description: "Apple's feature for sending files between nearby iPhones, iPads and Macs over Wi-Fi and Bluetooth."

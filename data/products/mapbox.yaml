@@ -1,0 +1,5 @@
+name: Mapbox
+homepage: https://www.mapbox.com
+vendor: Mapbox
+category: map-services
+description: Hosted platform for map tiles, styles, navigation and geocoding APIs.

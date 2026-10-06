@@ -1,0 +1,7 @@
+name: Pelias
+repository: https://github.com/pelias/pelias
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Geocoding and autocomplete over OpenStreetMap and other open datasets.

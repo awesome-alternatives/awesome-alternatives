@@ -1,0 +1,7 @@
+name: Runtipi
+repository: https://github.com/runtipi/runtipi
+category: home-server-platform
+replaces:
+  - tool: unraid
+    fit: partial
+    note: One-click Docker apps from an app store and dashboard on an existing Linux install; no disk array or virtual machines.

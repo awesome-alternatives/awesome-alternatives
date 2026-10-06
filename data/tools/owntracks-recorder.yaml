@@ -1,0 +1,8 @@
+name: OwnTracks Recorder
+repository: https://github.com/owntracks/recorder
+category: location-history
+replaces:
+  - tool: google-maps-timeline
+    fit: partial
+    note: Stores locations posted by the OwnTracks apps and shows tracks on a map, without visit detection.
+terms: open

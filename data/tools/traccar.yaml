@@ -1,0 +1,4 @@
+name: Traccar
+repository: https://github.com/traccar/traccar
+category: location-history
+deploy: [container]

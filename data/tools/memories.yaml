@@ -1,0 +1,7 @@
+name: Memories
+repository: https://github.com/pulsejet/memories
+category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Timeline, albums and face and object recognition for photos stored in Nextcloud.

@@ -1,0 +1,8 @@
+name: Lawnchair
+repository: https://github.com/LawnchairLauncher/lawnchair
+category: android-launcher
+replaces:
+  - tool: nova-launcher
+    fit: partial
+    note: Pixel-style home screen with icon packs, gestures and a customisable dock and drawer.
+terms: open

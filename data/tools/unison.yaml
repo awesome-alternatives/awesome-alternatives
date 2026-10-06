@@ -1,0 +1,7 @@
+name: Unison
+repository: https://github.com/bcpierce00/unison
+category: file-sync
+replaces:
+  - tool: dropbox
+    fit: partial
+    note: Two-way sync between two machines over SSH with conflict detection, with no server or web access.

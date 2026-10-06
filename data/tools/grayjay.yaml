@@ -1,0 +1,8 @@
+name: Grayjay
+repository: https://github.com/futo-org/grayjay-android
+category: youtube-client
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Android player that follows creators across YouTube and other platforms through plugins, without ads.
+terms: source-available

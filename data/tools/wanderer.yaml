@@ -1,0 +1,7 @@
+name: wanderer
+repository: https://github.com/open-wanderer/wanderer
+category: travel-planning
+replaces:
+  - tool: alltrails
+    fit: partial
+    note: Self-hosted trail database with GPX upload, route planning, lists and statistics.

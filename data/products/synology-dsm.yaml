@@ -1,0 +1,5 @@
+name: Synology DiskStation Manager
+homepage: https://www.synology.com/en-global/dsm
+vendor: Synology
+category: home-server-platform
+description: Operating system of Synology NAS devices, with storage management and a package centre for apps.

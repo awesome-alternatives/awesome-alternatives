@@ -1,0 +1,7 @@
+name: LibreTube
+repository: https://github.com/libre-tube/LibreTube
+category: youtube-client
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Android YouTube player without ads, through Piped or a local extractor, with background play and downloads.

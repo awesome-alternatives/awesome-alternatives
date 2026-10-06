@@ -1,0 +1,8 @@
+name: OsmAnd
+repository: https://github.com/osmandapp/OsmAnd
+category: maps-navigation
+replaces:
+  - tool: google-maps
+    fit: partial
+    note: Offline maps and turn-by-turn navigation from OpenStreetMap data on Android and iOS; no live traffic or Street View.
+terms: open

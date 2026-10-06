@@ -1,0 +1,11 @@
+name: openmediavault
+repository: https://github.com/openmediavault/openmediavault
+category: home-server-platform
+replaces:
+  - tool: synology-dsm
+    fit: partial
+    note: Debian-based NAS OS with RAID, shares, users and plugins on your own hardware.
+  - tool: unraid
+    fit: partial
+    note: NAS OS with shares, users and Docker through plugins; RAID is classic mdadm rather than a mixed-size array.
+terms: open

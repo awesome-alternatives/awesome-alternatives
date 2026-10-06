@@ -1,0 +1,7 @@
+name: Photon
+repository: https://github.com/komoot/photon
+category: map-services
+replaces:
+  - tool: google-maps-platform
+    fit: partial
+    note: Search-as-you-type geocoding over OpenStreetMap data.

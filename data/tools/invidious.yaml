@@ -1,0 +1,8 @@
+name: Invidious
+repository: https://github.com/iv-org/invidious
+category: privacy-frontend
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Watches YouTube videos without ads, tracking or a Google account, with subscriptions kept on the instance.
+deploy: [container]

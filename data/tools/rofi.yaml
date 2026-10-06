@@ -1,0 +1,8 @@
+name: rofi
+repository: https://github.com/davatorium/rofi
+category: app-launcher
+replaces:
+  - tool: alfred
+    fit: partial
+    note: Application launcher, window switcher and menu for X11 and Wayland on Linux, scripted through modes.
+terms: open

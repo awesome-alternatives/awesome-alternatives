@@ -1,0 +1,7 @@
+name: NewPipe
+repository: https://github.com/TeamNewPipe/NewPipe
+category: youtube-client
+replaces:
+  - tool: youtube
+    fit: partial
+    note: Android YouTube player without ads or Google services, with background play and downloads.

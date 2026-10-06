@@ -1,0 +1,7 @@
+name: Walker
+repository: https://github.com/abenz1267/walker
+category: app-launcher
+replaces:
+  - tool: alfred
+    fit: partial
+    note: Wayland launcher for Linux with app search, calculator, clipboard history and custom providers.

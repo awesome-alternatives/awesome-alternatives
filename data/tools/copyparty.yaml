@@ -1,0 +1,4 @@
+name: copyparty
+repository: https://github.com/9001/copyparty
+category: web-file-manager
+deploy: [container, binary]

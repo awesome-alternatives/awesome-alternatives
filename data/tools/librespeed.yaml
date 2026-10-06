@@ -1,0 +1,8 @@
+name: LibreSpeed
+repository: https://github.com/librespeed/speedtest
+category: speed-test
+replaces:
+  - tool: speedtest-by-ookla
+    fit: partial
+    note: Measures download, upload, ping and jitter to a server you host, not to a global network of test servers.
+deploy: [container]

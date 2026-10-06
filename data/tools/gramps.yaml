@@ -1,0 +1,7 @@
+name: Gramps
+repository: https://github.com/gramps-project/gramps
+category: genealogy
+replaces:
+  - tool: ancestry
+    fit: partial
+    note: Desktop family tree editor with sources, events, charts and GEDCOM import and export; no record collections or DNA.

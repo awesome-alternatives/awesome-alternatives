@@ -1,0 +1,7 @@
+name: LocalSend
+repository: https://github.com/localsend/localsend
+category: local-file-transfer
+replaces:
+  - tool: airdrop
+    fit: full
+    note: Sends files and text between nearby devices on the same network, across Windows, macOS, Linux, Android and iOS.

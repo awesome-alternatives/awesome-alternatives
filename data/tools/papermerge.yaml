@@ -1,0 +1,8 @@
+name: Papermerge
+repository: https://github.com/papermerge/papermerge-core
+category: document-management
+replaces:
+  - tool: docuware
+    fit: partial
+    note: Document archive with OCR, tags, folders and versions, without approval workflows.
+deploy: [container]

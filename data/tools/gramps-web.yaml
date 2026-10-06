@@ -1,0 +1,11 @@
+name: Gramps Web
+repository: https://github.com/gramps-project/gramps-web
+category: genealogy
+replaces:
+  - tool: ancestry
+    fit: partial
+    note: Collaborative family tree in the browser on your own server; no record collections or DNA.
+  - tool: myheritage
+    fit: partial
+    note: Shared family tree in the browser on your own server; no record search or DNA.
+deploy: [container]
