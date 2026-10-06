@@ -1,0 +1,7 @@
+name: Gardener
+repository: https://github.com/gardener/gardener
+category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: Runs Kubernetes control planes as a service across clouds and on-premises infrastructure.

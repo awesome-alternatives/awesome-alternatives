@@ -1,0 +1,3 @@
+name: SwarmKit
+repository: https://github.com/moby/swarmkit
+category: container-orchestration

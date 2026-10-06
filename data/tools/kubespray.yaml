@@ -1,0 +1,7 @@
+name: Kubespray
+repository: https://github.com/kubernetes-sigs/kubespray
+category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: Ansible playbooks that install production Kubernetes on your own servers or cloud instances.

@@ -1,0 +1,7 @@
+name: Tilt
+repository: https://github.com/tilt-dev/tilt
+category: kubernetes-development
+replaces:
+  - tool: skaffold
+    fit: full
+    note: Live update of running containers configured in Starlark, with a web UI showing each resource.

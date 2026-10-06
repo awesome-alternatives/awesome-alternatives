@@ -1,0 +1,4 @@
+name: Nomad
+repository: https://github.com/hashicorp/nomad
+category: container-orchestration
+terms: source-available

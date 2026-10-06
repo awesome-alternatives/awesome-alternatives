@@ -1,0 +1,7 @@
+name: kube-vip
+repository: https://github.com/kube-vip/kube-vip
+category: container-networking
+replaces:
+  - tool: metallb
+    fit: partial
+    note: Load balancer addresses over ARP or BGP, plus a virtual IP for the control plane.

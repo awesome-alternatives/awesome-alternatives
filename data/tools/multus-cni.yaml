@@ -1,0 +1,3 @@
+name: Multus CNI
+repository: https://github.com/k8snetworkplumbingwg/multus-cni
+category: container-networking

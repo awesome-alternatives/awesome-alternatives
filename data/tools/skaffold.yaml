@@ -1,0 +1,3 @@
+name: Skaffold
+repository: https://github.com/GoogleContainerTools/skaffold
+category: kubernetes-development

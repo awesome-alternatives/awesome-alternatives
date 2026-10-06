@@ -1,0 +1,3 @@
+name: vcluster
+repository: https://github.com/loft-sh/vcluster
+category: container-orchestration

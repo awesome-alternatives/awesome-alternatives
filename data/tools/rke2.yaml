@@ -1,0 +1,8 @@
+name: RKE2
+repository: https://github.com/rancher/rke2
+category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: Conformant Kubernetes distribution with a CIS-hardened default configuration, on hosts you run.
+deploy: [binary]

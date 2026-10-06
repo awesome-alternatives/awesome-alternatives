@@ -1,0 +1,7 @@
+name: Timoni
+repository: https://github.com/stefanprodan/timoni
+category: kubernetes-packaging
+replaces:
+  - tool: helm
+    fit: full
+    note: Modules written in CUE instead of Go templates, distributed as OCI artefacts.

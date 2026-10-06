@@ -1,0 +1,4 @@
+name: JuiceFS
+repository: https://github.com/juicedata/juicefs
+category: distributed-storage
+deploy: [binary]

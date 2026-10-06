@@ -1,0 +1,7 @@
+name: DevSpace
+repository: https://github.com/devspace-sh/devspace
+category: kubernetes-development
+replaces:
+  - tool: skaffold
+    fit: full
+    note: Build, deploy and file sync into running containers, configured in one devspace.yaml.

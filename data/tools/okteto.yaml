@@ -1,0 +1,3 @@
+name: Okteto CLI
+repository: https://github.com/okteto/okteto
+category: kubernetes-development

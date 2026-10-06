@@ -1,0 +1,7 @@
+name: Kubernetes
+repository: https://github.com/kubernetes/kubernetes
+category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: full
+    note: The upstream project EKS runs, operated on your own machines including the control plane.

@@ -1,0 +1,7 @@
+name: Zoraxy
+repository: https://github.com/tobychui/zoraxy
+category: reverse-proxy
+replaces:
+  - tool: nginx-proxy-manager
+    fit: full
+    note: Reverse proxy with a web UI and ACME certificates, plus stream proxying, uptime checks and access rules.

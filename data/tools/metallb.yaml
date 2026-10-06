@@ -1,0 +1,3 @@
+name: MetalLB
+repository: https://github.com/metallb/metallb
+category: container-networking

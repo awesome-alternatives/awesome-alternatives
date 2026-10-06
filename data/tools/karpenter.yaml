@@ -1,0 +1,7 @@
+name: Karpenter
+repository: https://github.com/kubernetes-sigs/karpenter
+category: kubernetes-autoscaling
+replaces:
+  - tool: cluster-autoscaler
+    fit: full
+    note: Provisions right-sized nodes directly from pending pods instead of resizing fixed node groups.

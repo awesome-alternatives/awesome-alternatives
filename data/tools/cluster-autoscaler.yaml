@@ -1,0 +1,4 @@
+name: Cluster Autoscaler
+repository: https://github.com/kubernetes/autoscaler
+path: cluster-autoscaler
+category: kubernetes-autoscaling
