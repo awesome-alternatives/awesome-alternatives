@@ -4,6 +4,14 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.115.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 109 developer tools (#354)
+- feat(catalog): add 55 web and commerce tools (#364)
+- feat(catalog): add 50 AI and machine learning tools (#355)
+
 ## [0.114.0] - 2026-10-06
 
 ### Features
