@@ -1,0 +1,7 @@
+name: OpenSnitch
+repository: https://github.com/evilsocket/opensnitch
+category: application-firewall
+replaces:
+  - tool: little-snitch
+    fit: full
+    note: Per-application connection prompts and rules on Linux.

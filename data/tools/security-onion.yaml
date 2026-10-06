@@ -1,0 +1,8 @@
+name: Security Onion
+repository: https://github.com/Security-Onion-Solutions/securityonion
+category: siem
+terms: source-available
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Network and host security monitoring with alerting, hunting and case management, not general log analytics.

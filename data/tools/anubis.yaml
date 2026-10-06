@@ -1,0 +1,7 @@
+name: Anubis
+repository: https://github.com/TecharoHQ/anubis
+category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: "Only the bot challenge: a proof-of-work check in front of a site to keep scrapers out."

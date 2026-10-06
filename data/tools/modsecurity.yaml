@@ -1,0 +1,7 @@
+name: ModSecurity
+repository: https://github.com/owasp-modsecurity/ModSecurity
+category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: WAF engine for nginx, Apache and IIS on your own servers, used with a rule set such as the OWASP CRS.

@@ -1,0 +1,5 @@
+name: Cloudflare WAF
+homepage: https://www.cloudflare.com/products/waf/
+vendor: Cloudflare
+category: waf
+description: "Web application firewall that filters traffic at Cloudflare's edge in front of a site."

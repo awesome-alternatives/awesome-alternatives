@@ -1,0 +1,7 @@
+name: Rethink DNS + Firewall
+repository: https://github.com/celzero/rethink-app
+category: application-firewall
+replaces:
+  - tool: glasswire
+    fit: partial
+    note: Per-app firewall and DNS-level blocking on Android.

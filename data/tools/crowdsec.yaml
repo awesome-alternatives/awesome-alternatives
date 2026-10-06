@@ -1,0 +1,7 @@
+name: CrowdSec
+repository: https://github.com/crowdsecurity/crowdsec
+category: intrusion-detection
+replaces:
+  - tool: fail2ban
+    fit: full
+    note: Parses logs for attacks and bans the sources, with shared blocklists and bouncers for many proxies and firewalls.

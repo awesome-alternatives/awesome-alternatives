@@ -1,0 +1,7 @@
+name: Tetragon
+repository: https://github.com/cilium/tetragon
+category: runtime-security
+replaces:
+  - tool: sysdig-secure
+    fit: partial
+    note: eBPF runtime observability and enforcement in Kubernetes, without a hosted console.

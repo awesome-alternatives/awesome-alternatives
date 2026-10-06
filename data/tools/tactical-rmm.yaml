@@ -1,0 +1,8 @@
+name: Tactical RMM
+repository: https://github.com/amidaware/tacticalrmm
+category: device-management
+terms: source-available
+replaces:
+  - tool: ninjaone
+    fit: full
+    note: Remote monitoring, scripting, patching and remote access for Windows, Linux and macOS agents.

@@ -1,0 +1,7 @@
+name: Headwind MDM
+repository: https://github.com/h-mdm/hmdm-server
+category: device-management
+replaces:
+  - tool: microsoft-intune
+    fit: partial
+    note: Android devices only, with kiosk mode and app distribution.

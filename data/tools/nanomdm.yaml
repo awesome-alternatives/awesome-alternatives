@@ -1,0 +1,7 @@
+name: NanoMDM
+repository: https://github.com/micromdm/nanomdm
+category: device-management
+replaces:
+  - tool: jamf-pro
+    fit: partial
+    note: Minimal Apple MDM server for building your own tooling around it.

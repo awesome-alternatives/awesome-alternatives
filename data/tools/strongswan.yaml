@@ -1,0 +1,4 @@
+name: strongSwan
+repository: https://github.com/strongswan/strongswan
+category: vpn-server
+terms: open

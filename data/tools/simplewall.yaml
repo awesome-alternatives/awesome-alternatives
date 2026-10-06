@@ -1,0 +1,7 @@
+name: simplewall
+repository: https://github.com/henrypp/simplewall
+category: application-firewall
+replaces:
+  - tool: glasswire
+    fit: partial
+    note: Per-application allow and block rules on Windows through the Windows Filtering Platform, without traffic graphs.

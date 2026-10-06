@@ -1,0 +1,7 @@
+name: Coraza
+repository: https://github.com/corazawaf/coraza
+category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: WAF library in Go, compatible with ModSecurity rules, embedded in Caddy, Envoy or your own proxy.

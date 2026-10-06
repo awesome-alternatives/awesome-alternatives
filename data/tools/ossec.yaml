@@ -1,0 +1,3 @@
+name: OSSEC
+repository: https://github.com/ossec/ossec-hids
+category: intrusion-detection

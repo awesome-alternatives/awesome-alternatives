@@ -1,0 +1,5 @@
+name: OpenVPN Access Server
+homepage: https://openvpn.net/access-server/
+vendor: OpenVPN Inc.
+category: vpn-server
+description: Commercial OpenVPN server with a web admin interface and user management, licensed per connection.

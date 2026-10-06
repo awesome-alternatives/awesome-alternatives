@@ -1,0 +1,11 @@
+name: Fleet
+repository: https://github.com/fleetdm/fleet
+category: device-management
+terms: open-core
+replaces:
+  - tool: jamf-pro
+    fit: full
+    note: MDM for macOS, iOS and iPadOS with osquery-based inventory and GitOps configuration.
+  - tool: microsoft-intune
+    fit: partial
+    note: Manages Windows, macOS, Linux and mobile devices, with osquery-based visibility and fewer built-in compliance policies.

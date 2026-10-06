@@ -1,0 +1,4 @@
+name: Fail2ban
+repository: https://github.com/fail2ban/fail2ban
+category: intrusion-detection
+terms: open

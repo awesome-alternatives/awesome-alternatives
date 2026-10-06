@@ -1223,3 +1223,47 @@ typesetting:
 reference-manager:
   name: Reference managers
   description: Collect papers and sources, organise them and cite them in documents.
+
+siem:
+  name: SIEM and security monitoring
+  description: Collect security events and logs from hosts and networks, correlate them and raise alerts on threats.
+  selfHost: true
+
+intrusion-detection:
+  name: Intrusion detection
+  description: Watch network traffic or hosts for attacks, and report or block what matches.
+  selfHost: true
+
+runtime-security:
+  name: Container runtime security
+  description: Detect and block suspicious behaviour in running containers and Kubernetes workloads.
+  selfHost: true
+
+endpoint-detection:
+  name: Endpoint detection and forensics
+  description: Query laptops and servers, hunt for threats on them and collect forensic evidence.
+  selfHost: true
+
+device-management:
+  name: Device management
+  description: Enroll, configure, patch and inventory laptops, phones and servers from one console.
+  selfHost: true
+
+waf:
+  name: Web application firewalls
+  description: Inspect HTTP traffic and block attacks, bots and abuse before they reach an application.
+  selfHost: true
+
+firewall:
+  name: Firewalls and routers
+  description: Firewall and router systems that filter traffic for a host or a whole network.
+  selfHost: true
+
+application-firewall:
+  name: Application firewalls
+  description: Show and control which apps on a computer or phone may connect to the network.
+
+vpn-server:
+  name: VPN servers
+  description: Run a remote-access or site-to-site VPN server for your users and networks.
+  selfHost: true

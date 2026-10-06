@@ -1,0 +1,5 @@
+name: Sysdig Secure
+homepage: https://www.sysdig.com/platform/secure
+vendor: Sysdig
+category: runtime-security
+description: Hosted security platform for containers, Kubernetes and cloud with runtime threat detection.
