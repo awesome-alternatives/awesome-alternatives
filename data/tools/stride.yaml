@@ -1,0 +1,7 @@
+name: Stride
+repository: https://github.com/stride3d/stride
+category: game-engine
+replaces:
+  - tool: unity
+    fit: full
+    note: "C# engine with a visual editor for 3D games on desktop and mobile."

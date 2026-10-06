@@ -1,0 +1,7 @@
+name: Caesium
+repository: https://github.com/Lymphatus/caesium-image-compressor
+category: media-converter
+replaces:
+  - tool: tinypng
+    fit: full
+    note: Compresses JPEG, PNG, WebP and TIFF in batches on your machine.

@@ -1,0 +1,7 @@
+name: Synfig
+repository: https://github.com/synfig/synfig
+category: animation
+replaces:
+  - tool: adobe-animate
+    fit: partial
+    note: Vector and bitmap animation with automatic tweening and bones, rendered to video and image sequences.

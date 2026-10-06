@@ -1,0 +1,5 @@
+name: Wowza Streaming Engine
+homepage: https://www.wowza.com/streaming-engine
+vendor: Wowza Media Systems
+category: video-hosting
+description: Live streaming media server that ingests and transcodes streams and delivers them over HLS, WebRTC and other protocols.

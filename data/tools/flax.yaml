@@ -1,0 +1,8 @@
+name: Flax Engine
+repository: https://github.com/FlaxEngine/FlaxEngine
+category: game-engine
+terms: source-available
+replaces:
+  - tool: unreal-engine
+    fit: partial
+    note: "3D engine with a visual editor, scripted in C# and C++, under a royalty-based licence."

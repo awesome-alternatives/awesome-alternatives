@@ -1,0 +1,7 @@
+name: Godot
+repository: https://github.com/godotengine/godot
+category: game-engine
+replaces:
+  - tool: unity
+    fit: full
+    note: "2D and 3D engine with its own editor, scripted in GDScript or C#, exporting to desktop, mobile and the web."

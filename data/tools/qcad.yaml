@@ -1,0 +1,8 @@
+name: QCAD
+repository: https://github.com/qcad/qcad
+category: cad
+terms: open
+replaces:
+  - tool: autocad
+    fit: partial
+    note: 2D drafting on DXF; DWG support comes with a proprietary plugin in QCAD Professional.

@@ -1,0 +1,5 @@
+name: TinyPNG
+homepage: https://tinypng.com
+vendor: Voormedia
+category: media-converter
+description: Online service that compresses PNG, JPEG and WebP images, with an API.

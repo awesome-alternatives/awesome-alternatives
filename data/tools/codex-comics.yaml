@@ -1,0 +1,4 @@
+name: Codex
+repository: https://github.com/ajslater/codex
+category: book-server
+deploy: [container]

@@ -1,0 +1,8 @@
+name: OpenToonz
+repository: https://github.com/opentoonz/opentoonz
+category: animation
+terms: open
+replaces:
+  - tool: toon-boom-harmony
+    fit: full
+    note: Production 2D animation with scanning, ink and paint, a node-based effects schematic and bone rigging.

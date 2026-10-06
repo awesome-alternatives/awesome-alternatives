@@ -1,0 +1,7 @@
+name: KOReader
+repository: https://github.com/koreader/koreader
+category: ebook-reader
+replaces:
+  - tool: amazon-kindle
+    fit: partial
+    note: Reader for your own DRM-free books that runs on Kindle, Kobo, PocketBook and Android devices; not the Kindle store.

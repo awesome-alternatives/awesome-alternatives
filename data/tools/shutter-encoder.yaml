@@ -1,0 +1,7 @@
+name: Shutter Encoder
+repository: https://github.com/paulpacifico/shutter-encoder
+category: media-converter
+replaces:
+  - tool: adobe-media-encoder
+    fit: full
+    note: Batch encodes video and audio to delivery and editing codecs such as ProRes and DNxHD, using FFmpeg.

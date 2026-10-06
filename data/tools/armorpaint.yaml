@@ -1,0 +1,8 @@
+name: ArmorPaint
+repository: https://github.com/armory3d/armorpaint
+category: 3d-modeling
+terms: open
+replaces:
+  - tool: substance-3d-painter
+    fit: full
+    note: Paints PBR materials on 3D models with layers, masks and node materials; free to build from source, the prebuilt app is paid.

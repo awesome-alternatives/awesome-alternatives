@@ -1,0 +1,5 @@
+name: Simplify3D
+homepage: https://www.simplify3d.com
+vendor: Simplify3D
+category: 3d-printing
+description: Commercial slicer that turns 3D models into G-code for FDM printers.

@@ -1,0 +1,8 @@
+name: Cocos Creator
+repository: https://github.com/cocos/cocos-engine
+category: game-engine
+terms: open
+replaces:
+  - tool: unity
+    fit: partial
+    note: TypeScript engine and editor focused on 2D and 3D games for mobile and the web.

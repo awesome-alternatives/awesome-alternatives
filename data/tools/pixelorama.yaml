@@ -1,0 +1,7 @@
+name: Pixelorama
+repository: https://github.com/Orama-Interactive/Pixelorama
+category: pixel-art
+replaces:
+  - tool: aseprite
+    fit: full
+    note: Sprite editor with layers, frames, onion skinning and tilemaps, also in the browser.

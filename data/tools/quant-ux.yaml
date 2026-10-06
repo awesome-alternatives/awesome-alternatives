@@ -1,0 +1,7 @@
+name: Quant-UX
+repository: https://github.com/KlausSchaefers/quant-ux
+category: design-tool
+replaces:
+  - tool: axure
+    fit: partial
+    note: Clickable prototypes with usability tests and analytics on recorded sessions, without Axure's conditional logic.

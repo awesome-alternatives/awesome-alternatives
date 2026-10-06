@@ -1,0 +1,7 @@
+name: ConvertX
+repository: https://github.com/C4illin/ConvertX
+category: media-converter
+replaces:
+  - tool: cloudconvert
+    fit: full
+    note: Converts documents, images, audio and video on your own server behind a web interface.

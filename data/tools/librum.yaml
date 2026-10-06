@@ -1,0 +1,7 @@
+name: Librum
+repository: https://github.com/Librum-Reader/Librum
+category: ebook-reader
+replaces:
+  - tool: amazon-kindle
+    fit: partial
+    note: Library and reader for your own books with cloud sync; there is no store.

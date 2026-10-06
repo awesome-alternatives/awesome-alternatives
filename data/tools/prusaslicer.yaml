@@ -1,0 +1,7 @@
+name: PrusaSlicer
+repository: https://github.com/prusa3d/PrusaSlicer
+category: 3d-printing
+replaces:
+  - tool: simplify3d
+    fit: full
+    note: Slices models for FDM and resin printers, with supports, variable layer height and per-region modifiers.

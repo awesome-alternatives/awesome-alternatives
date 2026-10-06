@@ -1,0 +1,7 @@
+name: UltiMaker Cura
+repository: https://github.com/Ultimaker/Cura
+category: 3d-printing
+replaces:
+  - tool: simplify3d
+    fit: full
+    note: Slices models for FDM printers, with hundreds of printer profiles and plugins.

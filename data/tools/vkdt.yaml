@@ -1,0 +1,7 @@
+name: vkdt
+repository: https://github.com/hanatos/vkdt
+category: raw-photo-editing
+replaces:
+  - tool: lightroom
+    fit: partial
+    note: GPU-processed raw development graph and a light table, with its own workflow and no cloud sync.
