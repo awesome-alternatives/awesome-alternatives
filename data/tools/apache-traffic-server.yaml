@@ -1,0 +1,7 @@
+name: Apache Traffic Server
+repository: https://github.com/apache/trafficserver
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: A caching forward and reverse proxy for high-traffic sites and CDNs.

@@ -1,0 +1,8 @@
+name: Easegress
+repository: https://github.com/easegress-io/easegress
+category: api-gateway
+replaces:
+  - tool: kong
+    fit: partial
+    note: A Go traffic gateway with filters for rate limits, auth and resilience, configured in YAML.
+deploy: [container, binary]

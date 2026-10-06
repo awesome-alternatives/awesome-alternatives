@@ -1,0 +1,5 @@
+name: imgix
+homepage: https://imgix.com
+vendor: imgix
+category: image-proxy
+description: Hosted image processing and delivery service driven by URL parameters.

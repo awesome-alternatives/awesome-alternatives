@@ -1,0 +1,5 @@
+name: BitPay
+homepage: https://www.bitpay.com
+vendor: BitPay
+category: payments
+description: Hosted processor that lets merchants accept cryptocurrency payments.

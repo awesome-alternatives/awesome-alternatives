@@ -1,0 +1,8 @@
+name: Python SEO Analyzer
+repository: https://github.com/sethblack/python-seo-analyzer
+category: seo
+terms: open
+replaces:
+  - tool: screaming-frog
+    fit: partial
+    note: Crawls a site from the command line and reports on-page SEO issues.

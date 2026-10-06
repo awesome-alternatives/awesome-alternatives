@@ -1,0 +1,7 @@
+name: react-admin
+repository: https://github.com/marmelab/react-admin
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: partial
+    note: A React framework for admin panels on REST or GraphQL APIs, written as code.

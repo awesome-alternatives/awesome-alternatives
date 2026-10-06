@@ -1,0 +1,5 @@
+name: Apigee
+homepage: https://cloud.google.com/apigee
+vendor: Google
+category: api-gateway
+description: Google Cloud's API management platform with a gateway, a developer portal and analytics.

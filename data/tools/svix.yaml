@@ -1,0 +1,8 @@
+name: Svix
+repository: https://github.com/svix/svix-webhooks
+category: webhooks
+replaces:
+  - tool: hookdeck
+    fit: partial
+    note: Sends outgoing webhooks with retries, signatures and a consumer portal; it does not receive them.
+deploy: [container, compose]

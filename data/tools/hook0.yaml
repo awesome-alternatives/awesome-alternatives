@@ -1,0 +1,9 @@
+name: Hook0
+repository: https://github.com/hook0/hook0
+category: webhooks
+terms: source-available
+replaces:
+  - tool: hookdeck
+    fit: partial
+    note: Sends outgoing webhooks with retries, subscriptions and a dashboard.
+deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: Unlighthouse
+repository: https://github.com/harlan-zw/unlighthouse
+category: seo
+replaces:
+  - tool: screaming-frog
+    fit: partial
+    note: Runs Lighthouse on every page of a site and reports the scores page by page.

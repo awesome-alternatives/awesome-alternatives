@@ -1,0 +1,7 @@
+name: tarteaucitron.js
+repository: https://github.com/AmauriC/tarteaucitron.js
+category: consent-management
+replaces:
+  - tool: cookiebot
+    fit: partial
+    note: A consent manager with ready-made integrations for common third-party services, with no cookie scanning.

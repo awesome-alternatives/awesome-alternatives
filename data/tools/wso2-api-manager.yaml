@@ -1,0 +1,7 @@
+name: WSO2 API Manager
+repository: https://github.com/wso2/product-apim
+category: api-gateway
+replaces:
+  - tool: apigee
+    fit: full
+    note: Gateway, publisher, developer portal and analytics, in Java.

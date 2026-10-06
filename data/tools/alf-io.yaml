@@ -1,0 +1,8 @@
+name: alf.io
+repository: https://github.com/alfio-event/alf.io
+category: event-ticketing
+replaces:
+  - tool: eventbrite
+    fit: full
+    note: Ticket reservation for conferences and meetups, with check-in and payments through Stripe or PayPal.
+deploy: [container]

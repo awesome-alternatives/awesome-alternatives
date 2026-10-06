@@ -1,0 +1,8 @@
+name: GoAccess
+repository: https://github.com/allinurl/goaccess
+category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Reports built from web server logs, in a terminal or an HTML page, with no tracking script.
+deploy: [container, package]

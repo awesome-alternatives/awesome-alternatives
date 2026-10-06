@@ -1,0 +1,9 @@
+name: NocoBase
+repository: https://github.com/nocobase/nocobase
+category: internal-tools
+terms: source-available
+replaces:
+  - tool: retool
+    fit: partial
+    note: Plugin-based builder for data models, forms, tables and workflows on your own database.
+deploy: [container, compose]

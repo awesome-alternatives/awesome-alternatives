@@ -1,0 +1,7 @@
+name: Thelia
+repository: https://github.com/thelia/thelia
+category: e-commerce
+replaces:
+  - tool: shopify
+    fit: partial
+    note: A Symfony-based shop with a back office, modules and templates.

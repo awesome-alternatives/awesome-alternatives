@@ -1,0 +1,8 @@
+name: Fusio
+repository: https://github.com/apioo/fusio
+category: api-gateway
+replaces:
+  - tool: apigee
+    fit: partial
+    note: Builds APIs from database actions or code and adds a developer portal and API monetization.
+deploy: [container]

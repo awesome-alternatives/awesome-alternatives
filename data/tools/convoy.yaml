@@ -1,0 +1,9 @@
+name: Convoy
+repository: https://github.com/frain-dev/convoy
+category: webhooks
+terms: source-available
+replaces:
+  - tool: hookdeck
+    fit: full
+    note: Receives and sends webhooks with retries, rate limits and a dashboard.
+deploy: [container, compose, helm]

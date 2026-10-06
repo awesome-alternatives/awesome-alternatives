@@ -1,0 +1,8 @@
+name: SEOnaut
+repository: https://github.com/StJudeWasHere/seonaut
+category: seo
+replaces:
+  - tool: screaming-frog
+    fit: partial
+    note: Crawls a site and reports broken links, redirects and on-page SEO issues in a web UI.
+deploy: [compose]

@@ -1,0 +1,8 @@
+name: FrankenPHP
+repository: https://github.com/php/frankenphp
+category: reverse-proxy
+replaces:
+  - tool: nginx
+    fit: partial
+    note: Serves PHP apps directly, with automatic HTTPS and a worker mode, built on Caddy.
+deploy: [container, binary]

@@ -1,0 +1,7 @@
+name: counter.dev
+repository: https://github.com/ihucos/counter.dev
+category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Cookie-free visitor counts, sources and devices, with no per-visitor data.

@@ -1,0 +1,5 @@
+name: Hookdeck
+homepage: https://hookdeck.com
+vendor: Hookdeck
+category: webhooks
+description: Hosted service that receives, queues and delivers webhooks.

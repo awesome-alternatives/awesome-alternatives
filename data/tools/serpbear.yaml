@@ -1,0 +1,8 @@
+name: SerpBear
+repository: https://github.com/towfiqi/serpbear
+category: seo
+replaces:
+  - tool: semrush
+    fit: partial
+    note: Tracks keyword positions in Google results, without backlink or competitor data.
+deploy: [container, compose]

@@ -1,0 +1,8 @@
+name: Ackee
+repository: https://github.com/electerious/Ackee
+category: web-analytics
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Page views, referrers and durations without cookies, in Node.js with MongoDB.
+deploy: [container, compose]

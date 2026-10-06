@@ -1,0 +1,7 @@
+name: Refine
+repository: https://github.com/refinedev/refine
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: partial
+    note: A React framework for admin panels and internal tools that you write as code.

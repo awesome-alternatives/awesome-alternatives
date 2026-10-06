@@ -1,0 +1,8 @@
+name: imgproxy
+repository: https://github.com/imgproxy/imgproxy
+category: image-proxy
+replaces:
+  - tool: imgix
+    fit: full
+    note: Resizes, crops and converts images on the fly from URL parameters, with signed URLs.
+deploy: [container]

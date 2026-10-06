@@ -1,0 +1,9 @@
+name: Medama
+repository: https://github.com/medama-io/medama
+category: web-analytics
+terms: open
+replaces:
+  - tool: google-analytics
+    fit: partial
+    note: Cookie-free page views and referrers from a single binary with an embedded database.
+deploy: [container, binary]

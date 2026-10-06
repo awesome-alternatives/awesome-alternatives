@@ -1,0 +1,8 @@
+name: Lowcoder
+repository: https://github.com/lowcoder-org/lowcoder
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: full
+    note: Drag-and-drop app builder over databases and APIs, with JavaScript in queries.
+deploy: [container, compose, helm]

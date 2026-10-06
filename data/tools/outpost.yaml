@@ -1,0 +1,8 @@
+name: Outpost
+repository: https://github.com/hookdeck/outpost
+category: webhooks
+replaces:
+  - tool: hookdeck
+    fit: partial
+    note: Delivers outgoing events to webhooks, queues and event buses; it does not receive them.
+deploy: [container, compose, helm]

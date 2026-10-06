@@ -1,0 +1,8 @@
+name: OpenMeter
+repository: https://github.com/openmeterio/openmeter
+category: billing
+replaces:
+  - tool: stripe-billing
+    fit: partial
+    note: Usage metering, entitlements and usage-based invoicing.
+deploy: [container, helm]

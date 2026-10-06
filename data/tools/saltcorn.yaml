@@ -1,0 +1,7 @@
+name: Saltcorn
+repository: https://github.com/saltcorn/saltcorn
+category: internal-tools
+replaces:
+  - tool: retool
+    fit: partial
+    note: No-code builder for database apps with views, forms and plugins.
