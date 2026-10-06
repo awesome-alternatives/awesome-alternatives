@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.127.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 88 devops and infrastructure tools (#377)
+
 ## [0.126.0] - 2026-10-06
 
 ### Features

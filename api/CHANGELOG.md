@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.25.0] - 2026-10-06
+
+### Features
+
+- feat(api): read GitHub with the dispatch app's installation token (#383)
+
 ## [0.24.0] - 2026-10-06
 
 ### Features
