@@ -1,0 +1,4 @@
+name: Apache James
+repository: https://github.com/apache/james-project
+category: mail-server
+deploy: [container]

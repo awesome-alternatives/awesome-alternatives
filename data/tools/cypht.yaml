@@ -1,0 +1,4 @@
+name: Cypht
+repository: https://github.com/cypht-org/cypht
+category: webmail
+deploy: [container]

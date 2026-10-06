@@ -1,0 +1,4 @@
+name: Cyrus IMAP
+repository: https://github.com/cyrusimap/cyrus-imapd
+category: mail-server
+terms: open

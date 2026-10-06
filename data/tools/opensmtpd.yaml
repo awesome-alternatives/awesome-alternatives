@@ -1,0 +1,4 @@
+name: OpenSMTPD
+repository: https://github.com/OpenSMTPD/OpenSMTPD
+category: mail-server
+terms: open

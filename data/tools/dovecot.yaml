@@ -1,0 +1,4 @@
+name: Dovecot
+repository: https://github.com/dovecot/core
+category: mail-server
+terms: open

@@ -1,0 +1,4 @@
+name: SimpleLogin
+repository: https://github.com/simple-login/app
+category: email-alias
+deploy: [container]

@@ -1,0 +1,8 @@
+name: Inbox Zero
+repository: https://github.com/elie222/inbox-zero
+category: email-client
+terms: open-core
+replaces:
+  - tool: superhuman
+    fit: partial
+    note: An AI assistant that labels, archives and drafts replies in Gmail and Outlook, rather than a full client.

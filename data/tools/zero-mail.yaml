@@ -1,0 +1,7 @@
+name: Zero
+repository: https://github.com/Mail-0/Zero
+category: email-client
+replaces:
+  - tool: superhuman
+    fit: partial
+    note: A web client for Gmail accounts with AI summaries and drafting, hosted or on your own server.

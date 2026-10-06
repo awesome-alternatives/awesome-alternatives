@@ -1,0 +1,8 @@
+name: Notifuse
+repository: https://github.com/Notifuse/notifuse
+category: newsletter
+terms: source-available
+replaces:
+  - tool: mailchimp
+    fit: partial
+    note: Newsletters, broadcasts, transactional templates and automations sent through your own email provider.

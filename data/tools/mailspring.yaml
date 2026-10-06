@@ -1,0 +1,7 @@
+name: Mailspring
+repository: https://github.com/Foundry376/Mailspring
+category: email-client
+replaces:
+  - tool: microsoft-outlook
+    fit: partial
+    note: Desktop mail for IMAP, Gmail and Office 365 accounts on Windows, macOS and Linux, without a calendar.

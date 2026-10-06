@@ -1,0 +1,5 @@
+name: piler
+repository: https://github.com/jsuto/piler
+category: email-archiving
+terms: open
+deploy: [container]

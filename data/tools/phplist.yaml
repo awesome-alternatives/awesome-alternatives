@@ -1,0 +1,7 @@
+name: phpList
+repository: https://github.com/phpList/phplist3
+category: newsletter
+replaces:
+  - tool: mailchimp
+    fit: partial
+    note: Mailing lists, campaigns and bounce handling sent through your own SMTP server, without automations.

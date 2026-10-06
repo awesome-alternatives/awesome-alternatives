@@ -1,0 +1,7 @@
+name: Thunderbird for Android
+repository: https://github.com/thunderbird/thunderbird-android
+category: email-client
+replaces:
+  - tool: microsoft-outlook
+    fit: partial
+    note: Mail for any IMAP or POP3 account on Android, with a unified inbox; no calendar.

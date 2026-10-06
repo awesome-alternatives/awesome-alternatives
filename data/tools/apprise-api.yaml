@@ -1,0 +1,4 @@
+name: Apprise API
+repository: https://github.com/caronc/apprise-api
+category: push-notifications
+deploy: [container]

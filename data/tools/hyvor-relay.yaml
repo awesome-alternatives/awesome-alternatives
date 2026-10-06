@@ -1,0 +1,7 @@
+name: Hyvor Relay
+repository: https://github.com/hyvor/relay
+category: mail-server
+replaces:
+  - tool: sendgrid
+    fit: partial
+    note: Transactional sending over an HTTP API and SMTP with bounce handling and webhooks; no marketing campaigns.

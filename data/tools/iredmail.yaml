@@ -1,0 +1,7 @@
+name: iRedMail
+repository: https://github.com/iredmail/iRedMail
+category: mail-server
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: A shell script that installs and configures Postfix, Dovecot, webmail and spam filtering on one server.

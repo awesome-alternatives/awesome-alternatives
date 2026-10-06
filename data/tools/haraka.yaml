@@ -1,0 +1,7 @@
+name: Haraka
+repository: https://github.com/haraka/Haraka
+category: mail-server
+replaces:
+  - tool: sendgrid
+    fit: partial
+    note: A plugin-based SMTP server in Node.js for high-volume inbound and outbound mail, without an HTTP API or tracking dashboard.

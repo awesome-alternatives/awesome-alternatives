@@ -1,0 +1,7 @@
+name: FairEmail
+repository: https://github.com/M66B/FairEmail
+category: email-client
+replaces:
+  - tool: microsoft-outlook
+    fit: partial
+    note: Privacy-focused mail for any IMAP or POP3 account on Android; no calendar.
