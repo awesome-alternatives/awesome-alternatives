@@ -215,6 +215,7 @@ export interface CatalogStats {
   tools: number;
   categories: number;
   targets: number;
+  verified: number;
 }
 
 interface EventStamp {
