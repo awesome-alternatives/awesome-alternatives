@@ -280,6 +280,14 @@ Every field is optional, and a slug with nothing under it is just a verification
 match [`schema/maintainer-file.schema.json`](schema/maintainer-file.schema.json), which your editor
 can check as you type.
 
+The fields come in two kinds. Facts you know better than the catalog, and that a check can confirm,
+are applied by the refresh. Judgement calls, what the tool replaces and how well, its category and
+its affiliation, are [proposed as a pull request](#fields-proposed-as-a-pull-request) that a person
+reviews. The catalog is worth reading because it is neutral, and the maintainers of a tool are the
+people with the most reason to call it a drop-in for every competitor.
+
+#### Fields applied by the refresh
+
 The nightly refresh applies these fields, each only when its check passes:
 
 | Field | Applied when |
@@ -303,7 +311,7 @@ next refresh. Deleting the file changes nothing in the entry: only the verificat
 A file speaks only for tools whose `repository` is the repository holding it, read at the root or,
 for an entry with a `path`, in that directory. A key naming another repository's tool, or a slug
 the catalog does not have, is ignored and noted in the refresh log. When the entry's repository now
-answers under another name, nothing is applied until the entry is updated to follow the move. A run
+answers under another name, nothing is applied or proposed until the entry is updated to follow the move. A run
 applies changes to at most 20 entries and checks at most 100, and leaves the rest to the next one.
 
 The file is treated as untrusted input. It is ignored as a whole, including the slugs it vouches
@@ -311,10 +319,45 @@ for, when it is larger than 16 KiB, is not valid YAML, uses anchors, aliases or 
 does not match the schema: only the fields above and the ones below, slugs as keys, `https://` links
 on a host name with the default port and without credentials, plain text of at most 200 characters.
 
-`replaces` (with `tool`, `fit` and `note`), `category` and `affiliation` are accepted by the schema
-too. They are judgement calls rather than facts, so they are never applied directly: a later step
-will turn a difference with the entry into a pull request here that a person reviews. Until then,
-they are read and ignored.
+#### Fields proposed as a pull request
+
+`replaces` (each with `tool`, `fit` and an optional `note`), `category` and `affiliation` are never
+applied directly. When they differ from `data/tools/<slug>.yaml`, a pull request here proposes the
+change from the branch `maintainer/<slug>`, with a link to your file at the commit it was read at.
+The usual checks run on it, and a person merges or closes it.
+
+```yaml
+tools:
+  ripgrep:
+    category: code-search
+    replaces:
+      - tool: the-silver-searcher
+        fit: full
+        note: Respects .gitignore like ag.
+    affiliation: Maintained by the ripgrep authors.
+```
+
+- `replaces`, when present, is the whole list: a tool you take out of it is proposed for removal
+  from the entry, and `replaces: []` proposes removing them all. A `note` left out keeps the entry's
+  note, and the migration guide stays in `migration` above.
+- A field left out proposes nothing, so removing `category` or `affiliation` from the file leaves
+  the entry as it is.
+- A category that is not in `data/categories.yaml`, a replacement the catalog does not have, the
+  tool itself or a tool listed twice is left out of the proposal and noted in the log. So is the
+  whole change when it would make the catalog fail its checks, such as a category whose vocabulary
+  lacks the entry's `capabilities`.
+- Listing what your tool replaces is listing what it competes with, so the pull request says so
+  and shows the entry's `affiliation`, or that it has none.
+- There is one pull request per tool, updated when the file changes again, and a run opens or
+  updates at most 5. A proposal that was closed, merged or not, is not opened again for the same
+  values: only a change to these fields in your file opens a new one.
+- Deleting the file proposes nothing and reverts nothing.
+
+The pull requests are opened by the [Refresh](.github/workflows/refresh.yml) workflow in GitHub
+Actions, with the workflow's own token, so the app needs no new permission on your repository. That
+token cannot start other workflows through a pull request, so the workflow starts the checks on the
+branch itself. Refresh runs after every change to `data/` on main and can be started by hand; the
+nightly run in the cluster applies the fields above but does not open pull requests.
 
 ### Refreshing your entry after a release
 
@@ -353,7 +396,8 @@ Every listed tool has a badge at `https://awesome-alternatives.com/badge/<slug>.
 
 It reads "alternative to semantic-release" for a tool that replaces something, and "7 alternatives"
 for a tool that others replace. It is grey while the entry is unverified and turns green once the
-refresh finds the `.awesome-alternatives` file, which is what adding that file buys you. The badge
+refresh finds the `.awesome-alternatives` file, which is what adding that file buys you. The same
+file can keep part of the entry up to date, see [the maintainer file](#the-maintainer-file). The badge
 is rebuilt every night with the catalog, so it follows the entry without anyone editing a README
 again.
 

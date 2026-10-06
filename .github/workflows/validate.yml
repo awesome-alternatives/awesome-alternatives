@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -30,10 +31,10 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - name: Check changed entries against GitHub
-        if: github.event_name == 'pull_request'
+        if: github.event_name != 'push'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          BASE_REF: ${{ github.base_ref }}
+          BASE_REF: ${{ github.base_ref || 'main' }}
         run: pnpm validate --changed-from "origin/${BASE_REF}"
       - name: Check catalog structure
         if: github.event_name == 'push'

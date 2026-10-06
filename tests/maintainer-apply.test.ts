@@ -231,7 +231,7 @@ describe("applyMaintainerFiles", () => {
 
   it("applies a tool's own fields and never another repository's", async () => {
     const competitor = tool({ slug: "competitor", repository: "https://github.com/rival/competitor", file: "data/tools/competitor.yaml" });
-    const text = "tools:\n  ripgrep:\n    deploy: [binary]\n  competitor:\n    deploy: [helm]\n    path: src\n";
+    const text = "tools:\n  ripgrep:\n    deploy: [binary]\n    category: library\n  competitor:\n    deploy: [helm]\n    path: src\n    category: library\n    affiliation: Not theirs.\n";
     const read = new Map([
       ["ripgrep", facts([located(text)])],
       ["competitor", facts([], "rival/competitor")],
@@ -249,6 +249,13 @@ describe("applyMaintainerFiles", () => {
         changes: [{ field: "deploy", value: ["binary"] }],
       },
     ]);
+    assert.deepEqual(result.proposed, [
+      {
+        slug: "ripgrep",
+        source: { fullName: "acme/ripgrep", location: ".awesome-alternatives", commit: "0123456789abcdef0123456789abcdef01234567" },
+        editorial: { category: "library" },
+      },
+    ]);
   });
 
   it("changes nothing when the file is gone, the repository unreadable or the file rejected", async () => {
@@ -256,7 +263,7 @@ describe("applyMaintainerFiles", () => {
     const earlier = new Map([["ripgrep", { maintainerFields: ["deploy"] }]]);
     for (const read of [facts([]), { status: "gone" } as const, facts([located(`tools:\n  ripgrep: {}\n${"#".repeat(20_000)}`)])]) {
       const result = await applyMaintainerFiles([current], [current], new Map([["ripgrep", read]]), earlier, { catalog: catalogOf(current), migrationPages: [], checks: checks() });
-      assert.deepEqual(result, { tools: [current], applied: [] });
+      assert.deepEqual(result, { tools: [current], applied: [], proposed: [] });
     }
   });
 
@@ -300,15 +307,15 @@ describe("applyMaintainerFiles", () => {
         migrationPages: [],
         checks: checks(),
       });
-    assert.deepEqual(await run(99), { tools: [tool()], applied: [] });
+    assert.deepEqual(await run(99), { tools: [tool()], applied: [], proposed: [] });
     assert.equal((await run(7)).applied.length, 1);
   });
 
   it("applies nothing from a repository that now answers under another name", async () => {
     const fieldChecks = checks();
-    const read = new Map([["ripgrep", facts([located("tools:\n  ripgrep:\n    deploy: [binary]\n")], "squatter/ripgrep")]]);
+    const read = new Map([["ripgrep", facts([located("tools:\n  ripgrep:\n    deploy: [binary]\n    category: library\n")], "squatter/ripgrep")]]);
     const result = await applyMaintainerFiles([tool()], [tool()], read, new Map(), { catalog: catalogOf(tool()), migrationPages: [], checks: fieldChecks });
-    assert.deepEqual(result, { tools: [tool()], applied: [] });
+    assert.deepEqual(result, { tools: [tool()], applied: [], proposed: [] });
     assert.deepEqual(fieldChecks.asked, { directories: [], deploys: [], links: [] });
   });
 
@@ -327,12 +334,12 @@ describe("applyMaintainerFiles", () => {
     it("refuses a path that collides with a sibling's, whatever its case", async () => {
       for (const path of ["crates/core", "Crates/Core"]) {
         const result = await apply(`\n    path: ${path}`);
-        assert.deepEqual(result, { tools: [rg], applied: [] }, path);
+        assert.deepEqual(result, { tools: [rg], applied: [], proposed: [] }, path);
       }
     });
 
     it("refuses to remove the path that keeps the entry apart from its siblings", async () => {
-      assert.deepEqual(await apply(" {}", ["path"]), { tools: [rg], applied: [] });
+      assert.deepEqual(await apply(" {}", ["path"]), { tools: [rg], applied: [], proposed: [] });
     });
 
     it("still moves the entry to a free path", async () => {
@@ -351,7 +358,7 @@ describe("applyMaintainerFiles", () => {
       new Map([["ripgrep", { maintainerFields: ["migration.ack"] }]]),
       { catalog: catalogOf(current), migrationPages: [page], checks: checks() },
     );
-    assert.deepEqual(result, { tools: [current], applied: [] });
+    assert.deepEqual(result, { tools: [current], applied: [], proposed: [] });
   });
 });
 

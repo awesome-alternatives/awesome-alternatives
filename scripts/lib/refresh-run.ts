@@ -7,6 +7,7 @@ import { completeRepositories, readRepositories, type RepositoryFacts } from "./
 import type { GitHub } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
 import { type Applied, applyMaintainerFiles, type MaintainerApply } from "./maintainer-apply.ts";
+import type { Proposal } from "./maintainer-editorial.ts";
 import type { Snapshot } from "./publish.ts";
 import { withPackageReleases } from "./packages.ts";
 import { timed } from "./timing.ts";
@@ -26,6 +27,7 @@ export interface Refreshed {
   facts: ReadonlyMap<string, Read<RepositoryFacts>>;
   windows: ReadonlyMap<string, CommitWindow>;
   applied: Applied[];
+  proposed: Proposal[];
 }
 
 export interface RefreshOptions {
@@ -64,10 +66,10 @@ export async function refreshTools(
   ]);
   const maintained = maintainerFiles
     ? await timed("maintainer files", () => applyMaintainerFiles(declared, targets, completed.facts, published, maintainerFiles))
-    : { tools: [...targets], applied: [] };
+    : { tools: [...targets], applied: [], proposed: [] };
   const enricher = createEnricher(root, previous, installed, declared, now);
   const tools = maintained.tools
     .flatMap((tool) => enricher.enrich(tool, completed.facts.get(tool.slug) ?? GONE, verifiedAt.get(tool.slug) ?? null) ?? [])
     .sort((a, b) => a.slug.localeCompare(b.slug));
-  return { tools, owners, facts: completed.facts, windows: completed.windows, applied: maintained.applied };
+  return { tools, owners, facts: completed.facts, windows: completed.windows, applied: maintained.applied, proposed: maintained.proposed };
 }

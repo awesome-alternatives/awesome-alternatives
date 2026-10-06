@@ -27,7 +27,7 @@ const now = new Date();
 const previous = await readPublished(root);
 const databaseUrl = process.env.DATABASE_URL;
 const stored = databaseUrl ? await loadWindows(databaseUrl) : new Map();
-const { tools, owners, facts, windows, applied } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, {
+const { tools, owners, facts, windows, applied, proposed } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, {
   windows: stored,
   force: process.env.REFRESH_FORCE === "true",
   maintainerFiles: { catalog, migrationPages: await readMigrationPages(root), checks: githubChecks(clients.gh) },
@@ -42,6 +42,9 @@ if (published) {
   if (messageFile) await writeFile(messageFile, commitMessage("chore(catalog): refresh from GitHub", applied));
   for (const { slug, changes } of applied) console.log(`${slug}: applied ${changes.length} values from its maintainer file`);
 }
+
+const proposalsFile = process.env.REFRESH_PROPOSALS;
+if (proposalsFile) await writeFile(proposalsFile, JSON.stringify(proposed));
 
 if (published && databaseUrl && !(await recordFacts(databaseUrl, runRows(checkedAt, tools, facts), windows))) {
   process.exitCode = RECORD_FAILED_EXIT_CODE;

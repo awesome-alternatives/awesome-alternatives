@@ -1,8 +1,10 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { isDeepStrictEqual } from "node:util";
 import { type Document, isMap, isSeq, parseDocument } from "yaml";
 import type { Applied } from "./maintainer-apply.ts";
 import { type FieldChange, fieldName } from "./maintainer-fields.ts";
+import type { Tool, ToolEntry } from "./types.ts";
 
 export const APPLIED_TRAILER = "Maintainer-file";
 
@@ -58,12 +60,32 @@ function edit(doc: Document, change: FieldChange): void {
   }
 }
 
-export function editedYaml(text: string, changes: readonly FieldChange[]): string {
+function rewritten(text: string, change: (doc: Document) => void): string {
   const crlf = text.includes("\r\n");
   const doc = parseDocument(crlf ? text.replaceAll("\r\n", "\n") : text);
-  for (const change of changes) edit(doc, change);
+  change(doc);
   const edited = doc.toString({ lineWidth: 0, flowCollectionPadding: false });
   return crlf ? edited.replaceAll("\n", "\r\n") : edited;
+}
+
+export function editedYaml(text: string, changes: readonly FieldChange[]): string {
+  return rewritten(text, (doc) => {
+    for (const change of changes) edit(doc, change);
+  });
+}
+
+function setOrDelete(doc: Document, key: keyof ToolEntry, before: unknown, after: unknown): void {
+  if (isDeepStrictEqual(before, after)) return;
+  if (after === undefined) doc.delete(key);
+  else doc.set(key, doc.createNode(after));
+}
+
+export function proposedYaml(text: string, before: Tool, after: Tool): string {
+  return rewritten(text, (doc) => {
+    setOrDelete(doc, "category", before.category, after.category);
+    setOrDelete(doc, "replaces", before.replaces, after.replaces);
+    setOrDelete(doc, "affiliation", before.affiliation, after.affiliation);
+  });
 }
 
 export async function writeApplied(root: string, applied: readonly Applied[]): Promise<void> {
