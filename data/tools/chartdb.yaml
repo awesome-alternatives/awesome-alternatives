@@ -1,0 +1,7 @@
+name: ChartDB
+repository: https://github.com/chartdb/chartdb
+category: diagramming
+replaces:
+  - tool: dbdiagram
+    fit: partial
+    note: Imports a schema from a live database with one query, draws an editable diagram and exports DDL.

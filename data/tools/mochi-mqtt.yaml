@@ -1,0 +1,4 @@
+name: Mochi MQTT
+repository: https://github.com/mochi-mqtt/server
+category: mqtt-broker
+deploy: [container]

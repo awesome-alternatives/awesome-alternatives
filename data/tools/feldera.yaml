@@ -1,0 +1,5 @@
+name: Feldera
+repository: https://github.com/feldera/feldera
+category: stream-processing
+terms: open-core
+deploy: [container]

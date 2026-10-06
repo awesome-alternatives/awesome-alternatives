@@ -1,0 +1,8 @@
+name: Bytebase
+repository: https://github.com/bytebase/bytebase
+category: database-migrations
+terms: open-core
+replaces:
+  - tool: flyway
+    fit: partial
+    note: Schema changes reviewed and applied from a web console, with SQL review rules and drift detection.

@@ -1,0 +1,5 @@
+name: AWS IoT Core
+homepage: https://aws.amazon.com/iot-core/
+vendor: Amazon Web Services
+category: mqtt-broker
+description: Managed MQTT broker on AWS with a device registry, device shadows and a rules engine.

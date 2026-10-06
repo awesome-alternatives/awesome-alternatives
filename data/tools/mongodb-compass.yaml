@@ -1,0 +1,8 @@
+name: MongoDB Compass
+repository: https://github.com/mongodb-js/compass
+category: database-client
+terms: source-available
+replaces:
+  - tool: studio-3t
+    fit: partial
+    note: MongoDB's own GUI for queries, aggregation pipelines, schema analysis and indexes; no SQL query translation.

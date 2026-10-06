@@ -1,0 +1,8 @@
+name: Strimzi
+repository: https://github.com/strimzi/strimzi-kafka-operator
+category: message-streaming
+replaces:
+  - tool: confluent-cloud
+    fit: partial
+    note: Runs Apache Kafka, Kafka Connect and MirrorMaker on your own Kubernetes; no hosted schema registry or ksqlDB.
+deploy: [helm, container]

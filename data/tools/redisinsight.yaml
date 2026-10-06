@@ -1,0 +1,4 @@
+name: Redis Insight
+repository: https://github.com/redis/RedisInsight
+category: database-client
+terms: source-available

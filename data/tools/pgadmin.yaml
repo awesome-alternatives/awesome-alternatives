@@ -1,0 +1,8 @@
+name: pgAdmin 4
+repository: https://github.com/pgadmin-org/pgadmin4
+category: database-client
+terms: open
+replaces:
+  - tool: datagrip
+    fit: partial
+    note: PostgreSQL only, in the browser or as a desktop app.

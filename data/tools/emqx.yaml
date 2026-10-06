@@ -1,0 +1,9 @@
+name: EMQX
+repository: https://github.com/emqx/emqx
+category: mqtt-broker
+terms: source-available
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: Clustered MQTT broker with a rules engine and data bridges; the licence allows one production node for free.
+deploy: [container, helm]

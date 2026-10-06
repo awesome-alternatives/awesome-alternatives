@@ -1,0 +1,9 @@
+name: Eclipse Mosquitto
+repository: https://github.com/eclipse-mosquitto/mosquitto
+category: mqtt-broker
+terms: open
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: MQTT broker only, on a single node; no device registry, shadows or rules engine.
+deploy: [container]

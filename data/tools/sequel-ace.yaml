@@ -1,0 +1,8 @@
+name: Sequel Ace
+repository: https://github.com/Sequel-Ace/Sequel-Ace
+category: database-client
+terms: open
+replaces:
+  - tool: tableplus
+    fit: partial
+    note: MySQL and MariaDB only, on macOS.

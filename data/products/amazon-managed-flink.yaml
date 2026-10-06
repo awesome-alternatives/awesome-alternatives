@@ -1,0 +1,5 @@
+name: Amazon Managed Service for Apache Flink
+homepage: https://aws.amazon.com/managed-service-apache-flink/
+vendor: Amazon Web Services
+category: stream-processing
+description: Hosted Apache Flink applications and notebooks on AWS.

@@ -1,0 +1,7 @@
+name: phpMyAdmin
+repository: https://github.com/phpmyadmin/phpmyadmin
+category: database-client
+replaces:
+  - tool: navicat
+    fit: partial
+    note: MySQL and MariaDB administration in the browser.

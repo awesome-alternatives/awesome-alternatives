@@ -1,0 +1,8 @@
+name: Apache ActiveMQ
+repository: https://github.com/apache/activemq
+category: message-streaming
+replaces:
+  - tool: amazon-mq
+    fit: full
+    note: The ActiveMQ Classic broker that Amazon MQ runs, on your own servers.
+deploy: [container]

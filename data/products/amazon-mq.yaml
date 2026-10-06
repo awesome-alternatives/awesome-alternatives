@@ -1,0 +1,5 @@
+name: Amazon MQ
+homepage: https://aws.amazon.com/amazon-mq/
+vendor: Amazon Web Services
+category: message-streaming
+description: Managed ActiveMQ and RabbitMQ message brokers on AWS.
