@@ -708,7 +708,6 @@ button.link {
   font-size: 0.85rem;
 }
 
-.interpreter,
 .summary,
 .count {
   color: var(--dim);

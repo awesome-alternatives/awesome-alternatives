@@ -68,9 +68,6 @@ export function SearchResults({
           </span>
         ))}
         {read.length === 0 && <span className="summary">{copy.closest}</span>}
-        <span className="interpreter">
-          {result.interpretedBy === "jev" ? copy.interpreter.jev : copy.interpreter.local}
-        </span>
       </div>
       {landing && result.filters.replaces && (
         <p className="landing">

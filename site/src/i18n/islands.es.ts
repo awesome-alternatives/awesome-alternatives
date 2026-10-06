@@ -89,7 +89,6 @@ export const islands: Islands = {
     removeChip: "Quitar {label}",
     removeGlyph: "×",
     closest: "Resultados más cercanos a tu descripción",
-    interpreter: { jev: "Leído por Jev", local: "Interpretado localmente" },
     fallbackTargeted: {
       before: "Abre las ",
       link: "alternativas a {name}",
