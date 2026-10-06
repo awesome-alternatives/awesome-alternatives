@@ -1,0 +1,7 @@
+name: Keystatic
+repository: https://github.com/Thinkmill/keystatic
+category: headless-cms
+replaces:
+  - tool: decap-cms
+    fit: full
+    note: Edits Markdown, YAML and JSON files in a repository through a typed schema and an admin UI.

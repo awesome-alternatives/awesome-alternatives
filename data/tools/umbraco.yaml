@@ -1,0 +1,7 @@
+name: Umbraco
+repository: https://github.com/umbraco/Umbraco-CMS
+category: website-cms
+replaces:
+  - tool: contentful
+    fit: partial
+    note: A .NET CMS whose Content Delivery API serves content to headless front ends.

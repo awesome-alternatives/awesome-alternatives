@@ -1,0 +1,7 @@
+name: Nikola
+repository: https://github.com/getnikola/nikola
+category: static-site-generator
+replaces:
+  - tool: pelican
+    fit: full
+    note: Python generator with incremental builds and input in Markdown, reStructuredText or Jupyter notebooks.

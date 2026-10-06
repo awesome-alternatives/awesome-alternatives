@@ -1,0 +1,8 @@
+name: Kirby
+repository: https://github.com/getkirby/kirby
+category: website-cms
+terms: source-available
+replaces:
+  - tool: contentful
+    fit: partial
+    note: File-based CMS with a configurable panel and a content API; production use needs a paid licence.

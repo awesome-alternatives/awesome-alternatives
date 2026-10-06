@@ -1,0 +1,7 @@
+name: Pages CMS
+repository: https://github.com/hunvreus/pagescms
+category: headless-cms
+replaces:
+  - tool: decap-cms
+    fit: full
+    note: An admin UI that commits content files to GitHub repositories, configured from one file.

@@ -415,6 +415,26 @@ headless-cms:
   description: Manage content in an admin UI and deliver it to any front end through an API.
   selfHost: true
 
+website-cms:
+  name: Website CMS
+  description: Run a website from a web back office, with pages, menus, themes and plugins.
+  selfHost: true
+
+blogging:
+  name: Blogging engines
+  description: Publish a blog with posts, tags, themes and comments from your own server.
+  selfHost: true
+
+comments:
+  name: Comment systems
+  description: Embed a comment thread under the pages of a static or dynamic site.
+  selfHost: true
+
+link-in-bio:
+  name: Link-in-bio pages
+  description: Publish a single page listing your links, for the profile of a social account.
+  selfHost: true
+
 feature-flags:
   name: Feature flags
   description: Turn features on for some users without a deploy, and run experiments.

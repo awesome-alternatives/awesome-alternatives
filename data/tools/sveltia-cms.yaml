@@ -1,0 +1,7 @@
+name: Sveltia CMS
+repository: https://github.com/sveltia/sveltia-cms
+category: headless-cms
+replaces:
+  - tool: decap-cms
+    fit: drop-in
+    note: Reads the existing Decap CMS configuration and commits content to the same Git repository.

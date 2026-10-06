@@ -1,0 +1,10 @@
+name: Joomla
+repository: https://github.com/joomla/joomla-cms
+category: website-cms
+replaces:
+  - tool: wix
+    fit: partial
+    note: A self-hosted CMS with themes and extensions, without a hosted drag-and-drop editor or hosting.
+  - tool: squarespace
+    fit: partial
+    note: A self-hosted CMS with themes and extensions, without a hosted drag-and-drop editor or hosting.

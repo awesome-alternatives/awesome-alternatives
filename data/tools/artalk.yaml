@@ -1,0 +1,8 @@
+name: Artalk
+repository: https://github.com/ArtalkJS/Artalk
+category: comments
+replaces:
+  - tool: disqus
+    fit: full
+    note: A Go comment server with an admin panel, notifications and import from other systems.
+deploy: [container, binary]

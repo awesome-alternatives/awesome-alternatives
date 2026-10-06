@@ -1,0 +1,8 @@
+name: Chhoto URL
+repository: https://github.com/SinTan1729/chhoto-url
+category: url-shortener
+replaces:
+  - tool: bitly
+    fit: partial
+    note: Short links with hit counts in a small Rust server, without analytics dashboards or QR codes.
+deploy: [container, compose]

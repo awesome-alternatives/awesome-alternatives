@@ -1,0 +1,7 @@
+name: Typecho
+repository: https://github.com/typecho/typecho
+category: blogging
+replaces:
+  - tool: medium
+    fit: partial
+    note: A lightweight PHP blog on your own domain, without a reader network.

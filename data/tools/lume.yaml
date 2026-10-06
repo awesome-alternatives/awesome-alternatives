@@ -1,0 +1,7 @@
+name: Lume
+repository: https://github.com/lumeland/lume
+category: static-site-generator
+replaces:
+  - tool: eleventy
+    fit: full
+    note: Deno-based generator supporting several template engines, with a plugin system.

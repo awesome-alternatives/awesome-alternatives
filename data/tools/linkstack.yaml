@@ -1,0 +1,8 @@
+name: LinkStack
+repository: https://github.com/LinkStackOrg/LinkStack
+category: link-in-bio
+replaces:
+  - tool: linktree
+    fit: full
+    note: Link pages for several users, with themes and an admin panel, on your own server.
+deploy: [container]

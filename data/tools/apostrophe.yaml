@@ -1,0 +1,8 @@
+name: ApostropheCMS
+repository: https://github.com/apostrophecms/apostrophe
+category: headless-cms
+terms: open
+replaces:
+  - tool: contentful
+    fit: partial
+    note: In-context editing and a REST API for headless front ends, in Node.js with MongoDB.

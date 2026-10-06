@@ -1,0 +1,8 @@
+name: Outstatic
+repository: https://github.com/avitorio/outstatic
+category: headless-cms
+terms: source-available
+replaces:
+  - tool: decap-cms
+    fit: partial
+    note: Edits Markdown content stored in a GitHub repository, for Next.js sites only.

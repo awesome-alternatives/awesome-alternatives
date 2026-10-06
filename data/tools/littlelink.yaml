@@ -1,0 +1,7 @@
+name: LittleLink
+repository: https://github.com/sethcottle/littlelink
+category: link-in-bio
+replaces:
+  - tool: linktree
+    fit: partial
+    note: A static HTML template you edit by hand, with brand-styled buttons and no admin panel.

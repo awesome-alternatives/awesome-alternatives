@@ -1,0 +1,8 @@
+name: Cockpit
+repository: https://github.com/Cockpit-HQ/Cockpit
+category: headless-cms
+terms: open
+replaces:
+  - tool: contentful
+    fit: partial
+    note: Content models with REST and GraphQL APIs, running on PHP with SQLite or MongoDB.

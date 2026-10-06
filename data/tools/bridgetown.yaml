@@ -1,0 +1,7 @@
+name: Bridgetown
+repository: https://github.com/bridgetownrb/bridgetown
+category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: Ruby generator that started from Jekyll, with components and an optional server-rendered mode.

@@ -1,0 +1,7 @@
+name: Zensical
+repository: https://github.com/zensical/zensical
+category: documentation-site
+replaces:
+  - tool: mkdocs-material
+    fit: full
+    note: From the Material for MkDocs team, reads mkdocs.yml and builds the same Markdown sites faster.
