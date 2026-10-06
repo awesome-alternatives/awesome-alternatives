@@ -80,7 +80,7 @@ describe("the verification date of a tool", () => {
   const verifiedOn = "2026-09-20T08:00:00.000Z";
   const facts = (before: EnrichedTool, claim: string[]): Read<RepositoryFacts> => ({
     status: "read",
-    value: { repo: before.repo, release: null, releases: [], claim, openIssues: 0, contributors: null, platforms: [] },
+    value: { repo: before.repo, release: null, releases: [], claim, maintainerFiles: [], openIssues: 0, contributors: null, platforms: [] },
   });
 
   it("is the one read for its .awesome-alternatives file when the file names it", async () => {

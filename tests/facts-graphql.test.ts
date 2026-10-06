@@ -180,6 +180,27 @@ describe("mapRepository on a recorded response", () => {
     const withPath = { ...node("ferrflow"), claimAt: { text: "# the CLI\nferrflow-cli\n" } };
     assert.deepEqual(mapRepository(withPath).claim, ["ferrflow", "ferrflow-cli"]);
   });
+
+  it("claims the keys of a richer file and keeps it parsed, with the commit it was read at", () => {
+    const richer = { ...node("ferrflow"), claim: null, claimAt: { text: "tools:\n  ferrflow-cli:\n    deploy: [binary]\n" } };
+    const mapped = mapRepository(richer);
+    assert.deepEqual(mapped.claim, ["ferrflow-cli"]);
+    assert.deepEqual(
+      mapped.maintainerFiles.map(({ scope, commit, file }) => [scope, commit, file.form]),
+      [["path", mapped.head, "fields"]],
+    );
+  });
+
+  it("keeps the repository's id, so a name taken over by another repository can be told apart", () => {
+    assert.equal(mapRepository({ ...node("ferrflow"), databaseId: 42 }).repo.databaseId, 42);
+    assert.equal("databaseId" in mapRepository({ ...node("ferrflow"), databaseId: null }).repo, false);
+    assert.match(pulseQuery([{ repository: "https://github.com/o/r" }]).query, /nameWithOwner databaseId/);
+  });
+
+  it("claims nothing from a richer file that fails a check", () => {
+    const rejected = { ...node("ferrflow"), claim: { text: "tools:\n  ferrflow:\n    path: ../../\n" } };
+    assert.deepEqual(mapRepository(rejected).claim, []);
+  });
 });
 
 describe("fetchRepositories", () => {

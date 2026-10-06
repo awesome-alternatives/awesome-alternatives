@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { editedSinceVerification } from "../src/lib/verification.ts";
+import { editedSinceVerification, maintainerKinds } from "../src/lib/verification.ts";
 
 const verified = { maintainerVerified: true, verifiedAt: "2026-09-10T12:00:00.000Z", editedAt: "2026-09-01T00:00:00.000Z" };
 
@@ -29,4 +29,14 @@ test("a tool verified through the app carries no date and is never flagged", () 
 
 test("an unverified tool is never flagged, even with a date left over", () => {
   assert.equal(editedSinceVerification({ ...verified, maintainerVerified: false, editedAt: "2026-10-01T00:00:00.000Z" }), false);
+});
+
+test("the fields its maintainers provide are grouped by kind, in a fixed order", () => {
+  assert.deepEqual(maintainerKinds(["migration.ack", "capabilities.ci", "deploy", "capabilities.sso"]), ["deploy", "capabilities", "migration"]);
+  assert.deepEqual(maintainerKinds(["path"]), ["path"]);
+});
+
+test("an entry nothing came to from its maintainers says nothing about them", () => {
+  assert.deepEqual(maintainerKinds(), []);
+  assert.deepEqual(maintainerKinds(["deployment", "capabilitiesx"]), []);
 });

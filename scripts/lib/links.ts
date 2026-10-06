@@ -1,7 +1,9 @@
+import { TIMEOUT_MS, unsafeOrUnreachable, USER_AGENT } from "./safe-link.ts";
 import type { Finding, Product, Tool } from "./types.ts";
 
-const TIMEOUT_MS = 15_000;
-const USER_AGENT = "awesome-alternatives-validate (+https://awesome-alternatives.com/contribute/)";
+export type LinkCheck = (url: string) => Promise<string | null>;
+
+const safely: LinkCheck = (url) => unsafeOrUnreachable(url);
 
 export async function unreachable(url: string, fetchImpl: typeof fetch = fetch): Promise<string | null> {
   try {
@@ -19,9 +21,9 @@ export async function unreachable(url: string, fetchImpl: typeof fetch = fetch):
 
 export async function checkHomepage(
   product: Pick<Product, "slug" | "homepage">,
-  fetchImpl: typeof fetch = fetch,
+  check: LinkCheck = safely,
 ): Promise<Finding[]> {
-  const problem = await unreachable(product.homepage, fetchImpl);
+  const problem = await check(product.homepage);
   return problem
     ? [{ slug: product.slug, severity: "warning", code: "homepage-unreachable", message: `${problem}, check it in a browser` }]
     : [];
@@ -29,11 +31,11 @@ export async function checkHomepage(
 
 export async function checkCapabilityDocs(
   tool: Pick<Tool, "slug" | "capabilities">,
-  fetchImpl: typeof fetch = fetch,
+  check: LinkCheck = safely,
 ): Promise<Finding[]> {
   const findings: Finding[] = [];
   for (const [key, capability] of Object.entries(tool.capabilities ?? {})) {
-    const problem = await unreachable(capability.docs, fetchImpl);
+    const problem = await check(capability.docs);
     if (problem) {
       findings.push({
         slug: tool.slug,
@@ -48,12 +50,12 @@ export async function checkCapabilityDocs(
 
 export async function checkMigrations(
   tool: Pick<Tool, "slug" | "replaces">,
-  fetchImpl: typeof fetch = fetch,
+  check: LinkCheck = safely,
 ): Promise<Finding[]> {
   const findings: Finding[] = [];
   for (const replacement of tool.replaces ?? []) {
     if (!replacement.migration) continue;
-    const problem = await unreachable(replacement.migration, fetchImpl);
+    const problem = await check(replacement.migration);
     if (problem) {
       findings.push({
         slug: tool.slug,

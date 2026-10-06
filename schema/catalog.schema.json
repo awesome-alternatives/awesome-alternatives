@@ -135,7 +135,12 @@
         "flags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "terms": { "enum": ["open", "source-available", "open-core", "unknown"] },
         "capabilities": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["docs"], "properties": {"docs": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "minLength": 1}}}},
-        "deploy": { "type": "array", "uniqueItems": true, "items": { "enum": ["container", "compose", "helm", "binary", "package"] } }
+        "deploy": { "type": "array", "uniqueItems": true, "items": { "enum": ["container", "compose", "helm", "binary", "package"] } },
+        "maintainerFields": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^(path|deploy|capabilities\\.[a-z0-9]+(-[a-z0-9]+)*|migration\\.[a-z0-9]+(-[a-z0-9]+)*)$" }
+        }
       }
     },
     "repo": {
@@ -159,6 +164,7 @@
       ],
       "properties": {
         "fullName": { "type": "string", "minLength": 1 },
+        "databaseId": { "type": "integer", "minimum": 1 },
         "description": { "type": ["string", "null"] },
         "homepage": { "type": ["string", "null"] },
         "language": { "type": ["string", "null"] },

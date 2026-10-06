@@ -252,6 +252,13 @@ export const id: Messages = {
     editedSinceVerification: "diedit sejak verifikasi",
     verifiedOn:
       "Maintainer-nya memverifikasi entri ini pada {date}. Entri ini sudah berubah sejak itu, dan mereka mengonfirmasinya lagi dengan memperbarui file .awesome-alternatives mereka.",
+    fromMaintainers: "Disediakan oleh maintainer-nya dalam file .awesome-alternatives mereka: {fields}.",
+    maintainerFields: {
+      path: "direktori paket",
+      deploy: "metode deploy",
+      capabilities: "dokumentasi kemampuan",
+      migration: "panduan migrasi",
+    },
   },
 
   compare: {

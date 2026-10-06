@@ -13,6 +13,7 @@ import { fetchOwner, ownerOf } from "./facts.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import { fetchOwnerFacts, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GraphQL } from "./graphql.ts";
+import { maintainerFieldsOf, speakingFor } from "./maintainer-fields.ts";
 import type { Snapshot } from "./publish.ts";
 import { judge, replacedSlugs } from "./rules.ts";
 import { nextSeries, seriesPoints } from "./star-series.ts";
@@ -30,13 +31,18 @@ function whyUnread(tool: Tool, read: Exclude<Read<RepositoryFacts>, { status: "r
     : `${ownerOf(repoPath(tool.repository))} has an IP allow list that refuses this runner`;
 }
 
+function withMaintainerFields(enriched: EnrichedTool, fields: readonly string[]): EnrichedTool {
+  const { maintainerFields: _, ...rest } = enriched;
+  return fields.length ? { ...rest, maintainerFields: [...fields] } : rest;
+}
+
 function keptPublished(tool: Tool, published: EnrichedTool | undefined, editedAt: string, why: string): EnrichedTool | null {
   if (!published) {
     console.error(`${tool.slug}: ${why}, and no earlier run read it, left out of the catalog`);
     return null;
   }
   console.error(`${tool.slug}: ${why}, kept with its last published facts and maintainer mark`);
-  return {
+  return withMaintainerFields({
     ...published,
     name: tool.name,
     repository: tool.repository,
@@ -48,7 +54,7 @@ function keptPublished(tool: Tool, published: EnrichedTool | undefined, editedAt
     terms: termsOf(tool.terms, published.repo.license),
     capabilities: tool.capabilities ?? {},
     deploy: tool.deploy ?? [],
-  };
+  }, maintainerFieldsOf(tool, null, published.maintainerFields ?? []));
 }
 
 export function createEnricher(
@@ -79,7 +85,9 @@ export function createEnricher(
       const flags = judge(tool, { ...facts, starHistory }, now, replaced)
         .map((f) => f.code)
         .filter(isFlagCode);
-      return {
+      const speaking = speakingFor(tool.slug, facts.maintainerFiles);
+      const fields = maintainerFieldsOf(tool, speaking?.entry ?? null, before.get(tool.slug)?.maintainerFields ?? []);
+      return withMaintainerFields({
         slug: tool.slug,
         name: tool.name,
         repository: tool.repository,
@@ -103,7 +111,7 @@ export function createEnricher(
         terms: termsOf(tool.terms, facts.repo.license),
         capabilities: tool.capabilities ?? {},
         deploy: tool.deploy ?? [],
-      };
+      }, fields);
     },
   };
 }

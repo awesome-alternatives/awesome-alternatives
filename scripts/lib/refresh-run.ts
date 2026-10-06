@@ -6,6 +6,7 @@ import { retryBehindAllowList } from "./facts-anonymous.ts";
 import { completeRepositories, readRepositories, type RepositoryFacts } from "./facts-graphql.ts";
 import type { GitHub } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
+import { type Applied, applyMaintainerFiles, type MaintainerApply } from "./maintainer-apply.ts";
 import type { Snapshot } from "./publish.ts";
 import { withPackageReleases } from "./packages.ts";
 import { timed } from "./timing.ts";
@@ -24,6 +25,13 @@ export interface Refreshed {
   owners: Record<string, OwnerFacts>;
   facts: ReadonlyMap<string, Read<RepositoryFacts>>;
   windows: ReadonlyMap<string, CommitWindow>;
+  applied: Applied[];
+}
+
+export interface RefreshOptions {
+  windows?: ReadonlyMap<string, CommitWindow>;
+  force?: boolean;
+  maintainerFiles?: MaintainerApply;
 }
 
 export async function refreshTools(
@@ -33,7 +41,7 @@ export async function refreshTools(
   declared: readonly Tool[],
   targets: readonly Tool[],
   now: Date,
-  { windows = new Map(), force = false }: { windows?: ReadonlyMap<string, CommitWindow>; force?: boolean } = {},
+  { windows = new Map(), force = false, maintainerFiles }: RefreshOptions = {},
 ): Promise<Refreshed> {
   const { gql, gh, anonymous, installations, registry } = clients;
   const published = new Map(previous.tools.map((t) => [t.slug, t]));
@@ -54,9 +62,12 @@ export async function refreshTools(
     readFacts(),
     timed("installations", async () => (installations ? installations.list() : null)),
   ]);
+  const maintained = maintainerFiles
+    ? await timed("maintainer files", () => applyMaintainerFiles(declared, targets, completed.facts, published, maintainerFiles))
+    : { tools: [...targets], applied: [] };
   const enricher = createEnricher(root, previous, installed, declared, now);
-  const tools = targets
+  const tools = maintained.tools
     .flatMap((tool) => enricher.enrich(tool, completed.facts.get(tool.slug) ?? GONE, verifiedAt.get(tool.slug) ?? null) ?? [])
     .sort((a, b) => a.slug.localeCompare(b.slug));
-  return { tools, owners, facts: completed.facts, windows: completed.windows };
+  return { tools, owners, facts: completed.facts, windows: completed.windows, applied: maintained.applied };
 }

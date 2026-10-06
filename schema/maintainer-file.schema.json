@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/maintainer-file.schema.json",
+  "title": "Maintainer file",
+  "description": "The .awesome-alternatives file a repository keeps to vouch for its entries in the catalog. See https://github.com/awesome-alternatives/awesome-alternatives/blob/main/CONTRIBUTING.md#the-maintainer-file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tools"],
+  "properties": {
+    "tools": {
+      "type": "object",
+      "maxProperties": 50,
+      "propertyNames": { "$ref": "#/$defs/slug" },
+      "additionalProperties": {
+        "type": ["object", "null"],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^(?!.*(^|/)\\.\\.?(/|$))[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$",
+            "maxLength": 200
+          },
+          "deploy": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "enum": ["container", "compose", "helm", "binary", "package"] }
+          },
+          "capabilities": {
+            "type": "object",
+            "maxProperties": 30,
+            "propertyNames": { "$ref": "#/$defs/slug" },
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["docs"],
+              "properties": {
+                "docs": { "$ref": "#/$defs/url" }
+              }
+            }
+          },
+          "migration": {
+            "type": "object",
+            "maxProperties": 30,
+            "propertyNames": { "$ref": "#/$defs/slug" },
+            "additionalProperties": { "$ref": "#/$defs/url" }
+          },
+          "replaces": {
+            "type": "array",
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["tool", "fit"],
+              "properties": {
+                "tool": { "$ref": "#/$defs/slug" },
+                "fit": { "enum": ["drop-in", "full", "partial"] },
+                "note": { "$ref": "#/$defs/text" }
+              }
+            }
+          },
+          "category": { "$ref": "#/$defs/slug" },
+          "affiliation": { "$ref": "#/$defs/text" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 100
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://[^\\s<>\"'`\\\\{}|^]+$",
+      "maxLength": 300
+    },
+    "text": {
+      "type": "string",
+      "pattern": "^[^\\u0000-\\u001f\\u007f-\\u009f\\u2028\\u2029\\u202a-\\u202e\\u2066-\\u2069]+$",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  }
+}

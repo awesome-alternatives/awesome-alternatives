@@ -251,6 +251,13 @@ export const en = {
     editedSinceVerification: "edited since verification",
     verifiedOn:
       "Its maintainers verified this entry on {date}. It has changed since, and they confirm it again by updating their .awesome-alternatives file.",
+    fromMaintainers: "Provided by its maintainers in their .awesome-alternatives file: {fields}.",
+    maintainerFields: {
+      path: "package directory",
+      deploy: "deploy methods",
+      capabilities: "capability documentation",
+      migration: "migration guides",
+    },
   },
 
   compare: {

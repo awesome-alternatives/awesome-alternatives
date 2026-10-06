@@ -1,6 +1,7 @@
 import { ACTIVE_DAYS, HISTORY_LIMIT } from "../../../scripts/lib/contributors.ts";
 import type { Capability, DeployMethod, EnrichedTool, ReleaseFacts, Replacement, Terms } from "../../../scripts/lib/types.ts";
 import { historyUrl } from "./freshness.ts";
+import { markdownText as text, markdownUrl as url } from "./markdownText.ts";
 import { vitalityOf } from "./vitality.ts";
 
 const SITE = "https://awesome-alternatives.com";
@@ -45,7 +46,7 @@ function vitality(tool: EnrichedTool, checkedAt: string | null): string[] {
     const authors = contributors.capped
       ? `at least ${contributors.count} commit authors (only the latest ${HISTORY_LIMIT} commits were read)`
       : counted(contributors.count, "commit author");
-    const scope = contributors.monorepoPath ? `, counted across the whole repository, not only ${contributors.monorepoPath}` : "";
+    const scope = contributors.monorepoPath ? `, counted across the whole repository, not only ${text(contributors.monorepoPath)}` : "";
     lines.push(`- Active contributors: ${authors} on the default branch in the last ${ACTIVE_DAYS} days, bots left out${scope}`);
   }
   if (platforms) lines.push(`- Platforms, read from the latest release's files: ${platforms}`);
@@ -55,9 +56,9 @@ function vitality(tool: EnrichedTool, checkedAt: string | null): string[] {
 function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): string[] {
   const { repo, release } = tool;
   const lines = [
-    `- Category: ${categoryName}`,
-    `- Language: ${repo.language ?? "not detected"}`,
-    `- Licence: ${repo.license ?? "not detected"}`,
+    `- Category: ${text(categoryName)}`,
+    `- Language: ${repo.language ? text(repo.language) : "not detected"}`,
+    `- Licence: ${repo.license ? text(repo.license) : "not detected"}`,
     `- Terms: ${TERMS[tool.terms]}`,
     `- Stars: ${repo.stars}`,
     `- Forks: ${repo.forks}`,
@@ -75,13 +76,13 @@ function facts(tool: EnrichedTool, categoryName: string, selfHost: boolean): str
 function releaseLine(release: ReleaseFacts | null): string {
   if (!release) return "- Latest release: none";
   const signature = release.signed ? "signed" : "unsigned";
-  return `- Latest release: ${release.tag}, ${signature}, ${release.url}`;
+  return `- Latest release: ${text(release.tag)}, ${signature}, ${url(release.url)}`;
 }
 
 function replacementLines(tool: EnrichedTool, replacement: Replacement, around: Surroundings): string[] {
-  const note = replacement.note ? ` ${replacement.note}` : " no note";
-  const lines = [`- ${around.nameOf(replacement.tool)} (${replacement.fit}):${note} ${SITE}/alternatives/${replacement.tool}/`];
-  if (replacement.migration) lines.push(`  - Official migration guide: ${replacement.migration}`);
+  const note = replacement.note ? ` ${text(replacement.note)}` : " no note";
+  const lines = [`- ${text(around.nameOf(replacement.tool))} (${replacement.fit}):${note} ${SITE}/alternatives/${replacement.tool}/`];
+  if (replacement.migration) lines.push(`  - Official migration guide: ${url(replacement.migration)}`);
   if (around.migrationNotes.includes(replacement.tool)) {
     lines.push(`  - Migration notes: ${SITE}/migrate/${replacement.tool}/${tool.slug}/`);
   }
@@ -95,12 +96,12 @@ function replacesSection(tool: EnrichedTool, around: Surroundings): string[] {
 
 function replacedBySection(around: Surroundings): string[] {
   if (around.replacedBy.length === 0) return [];
-  return ["## Replaced by", "", ...around.replacedBy.map((other) => `- ${other.name}: ${SITE}/tools/${other.slug}.md`), ""];
+  return ["## Replaced by", "", ...around.replacedBy.map((other) => `- ${text(other.name)}: ${SITE}/tools/${other.slug}.md`), ""];
 }
 
 function capabilityLine(label: string, capability: Capability): string {
-  const note = capability.note ? ` (${capability.note})` : "";
-  return `- ${label}: ${capability.docs}${note}`;
+  const note = capability.note ? ` (${text(capability.note)})` : "";
+  return `- ${text(label)}: ${url(capability.docs)}${note}`;
 }
 
 function capabilitiesSection(tool: EnrichedTool, around: Surroundings): string[] {
@@ -117,9 +118,9 @@ function capabilitiesSection(tool: EnrichedTool, around: Surroundings): string[]
 export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
   const { repo } = tool;
   return [
-    `# ${tool.name}`,
+    `# ${text(tool.name)}`,
     "",
-    ...(repo.description ? [`> ${repo.description}`, ""] : []),
+    ...(repo.description ? [`> ${text(repo.description)}`, ""] : []),
     ...replacesSection(tool, around),
     ...replacedBySection(around),
     "## Facts from GitHub",
@@ -133,11 +134,11 @@ export function toolMarkdown(tool: EnrichedTool, around: Surroundings): string {
     `- Entry last edited: ${tool.editedAt.slice(0, 10)}, ${historyUrl(tool.slug)}`,
     "",
     ...capabilitiesSection(tool, around),
-    ...(tool.affiliation ? ["## Affiliation", "", tool.affiliation, ""] : []),
+    ...(tool.affiliation ? ["## Affiliation", "", text(tool.affiliation), ""] : []),
     "## Links",
     "",
-    `- Repository: ${tool.repository}`,
-    ...(repo.homepage ? [`- Homepage: ${repo.homepage}`] : []),
+    `- Repository: ${url(tool.repository)}`,
+    ...(repo.homepage ? [`- Homepage: ${url(repo.homepage)}`] : []),
     `- Page: ${SITE}/tools/${tool.slug}/`,
     "",
     `Figures above are read from GitHub every night. The whole catalog, under CC0 1.0, is at ${SITE}/llms.txt`,

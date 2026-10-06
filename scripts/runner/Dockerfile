@@ -7,6 +7,7 @@ RUN apt-get update \
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile --prod
+COPY schema ./schema
 COPY scripts ./scripts
 USER node
 ENTRYPOINT ["/app/scripts/runner/entrypoint.sh"]

@@ -11,6 +11,7 @@ shift
 
 git config user.name "${GIT_AUTHOR_NAME:-github-actions[bot]}"
 git config user.email "${GIT_AUTHOR_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+unset GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL
 if [ "${GITHUB_ACTIONS:-}" = true ]; then
   gh auth setup-git
 fi
@@ -19,12 +20,16 @@ for attempt in 1 2 3 4 5; do
   git fetch --quiet origin main
   git reset --quiet --hard origin/main
   "$@"
-  git add generated/catalog.json generated/events.json README.md
+  git add generated/catalog.json generated/events.json README.md data/tools
   if git diff --cached --quiet; then
     echo "catalog unchanged"
     exit 0
   fi
-  git commit --quiet -m "$message"
+  if [ -s "${COMMIT_MESSAGE_FILE:-}" ]; then
+    git commit --quiet -F "$COMMIT_MESSAGE_FILE"
+  else
+    git commit --quiet -m "$message"
+  fi
   if git push --quiet origin HEAD:main; then
     if [ "${GITHUB_ACTIONS:-}" = true ]; then
       gh workflow run release.yml --ref main

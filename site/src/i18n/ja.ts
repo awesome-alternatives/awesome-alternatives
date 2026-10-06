@@ -252,6 +252,13 @@ export const ja: Messages = {
     editedSinceVerification: "確認後に編集あり",
     verifiedOn:
       "メンテナーは{date}にこのエントリを確認しました。その後エントリが変更されています。メンテナーが .awesome-alternatives ファイルを更新すると、再び確認済みになります。",
+    fromMaintainers: "メンテナーが .awesome-alternatives ファイルで提供: {fields}。",
+    maintainerFields: {
+      path: "パッケージのディレクトリ",
+      deploy: "デプロイ方法",
+      capabilities: "機能のドキュメント",
+      migration: "移行ガイド",
+    },
   },
 
   compare: {
