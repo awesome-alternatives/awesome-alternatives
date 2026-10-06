@@ -1,6 +1,7 @@
 name: Countly
 repository: https://github.com/Countly/countly-server
 category: web-analytics
+terms: open
 replaces:
   - tool: mixpanel
     fit: partial

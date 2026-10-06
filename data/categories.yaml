@@ -786,3 +786,8 @@ static-analysis:
   name: Static analysis
   description: Inspect source code for bugs, code smells and security issues, and track the findings across branches and pull requests.
   selfHost: true
+
+telephony:
+  name: Telephony and SMS gateways
+  description: Run voice calls, SIP trunks and SMS sending on your own servers behind an API.
+  selfHost: true

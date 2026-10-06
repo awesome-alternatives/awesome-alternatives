@@ -1,0 +1,8 @@
+name: jambonz
+repository: https://github.com/jambonz/jambonz-feature-server
+category: telephony
+replaces:
+  - tool: twilio
+    fit: partial
+    note: Voice call control through webhooks and a WebSocket API, over your own SIP carriers and speech providers; you run the SIP, media and database layers yourself.
+deploy: [container]

@@ -1,0 +1,8 @@
+name: Asterisk
+repository: https://github.com/asterisk/asterisk
+category: telephony
+terms: open
+replaces:
+  - tool: twilio
+    fit: partial
+    note: A PBX and SIP toolkit with call control over its REST Interface (ARI) and Manager Interface; voice only, and numbers come from your own SIP trunks.
