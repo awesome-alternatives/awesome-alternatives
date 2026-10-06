@@ -191,6 +191,10 @@ export const de: Messages = {
   target: {
     title: { one: "1 Alternative zu {name}", other: "{n} Alternativen zu {name}" },
     titleOpen: { one: "1 Open-Source-Alternative zu {name}", other: "{n} Open-Source-Alternativen zu {name}" },
+    namesSuffix: ": {names}",
+    named: "{names}.",
+    namedMore: "{names} und weitere.",
+    namesSeparator: ", ",
     dropIns: "Drop-in: {names}.",
     comparison: "Im Vergleich",
     listHeading: "Alle Alternativen",

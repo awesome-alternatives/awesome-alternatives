@@ -190,6 +190,10 @@ export const ja: Messages = {
   target: {
     title: { one: "{name}の代替{n}選", other: "{name}の代替{n}選" },
     titleOpen: { one: "{name}のオープンソース代替{n}選", other: "{name}のオープンソース代替{n}選" },
+    namesSuffix: "：{names}",
+    named: "{names}。",
+    namedMore: "{names} など。",
+    namesSeparator: "、",
     dropIns: "ドロップイン置換：{names}。",
     comparison: "比較表",
     listHeading: "すべての代替ツール",

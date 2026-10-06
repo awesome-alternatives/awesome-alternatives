@@ -190,6 +190,10 @@ export const id: Messages = {
   target: {
     title: { one: "1 alternatif {name}", other: "{n} alternatif {name}" },
     titleOpen: { one: "1 alternatif open source untuk {name}", other: "{n} alternatif open source untuk {name}" },
+    namesSuffix: ": {names}",
+    named: "{names}.",
+    namedMore: "{names} dan lainnya.",
+    namesSeparator: ", ",
     dropIns: "Drop-in: {names}.",
     comparison: "Perbandingan berdampingan",
     listHeading: "Semua alternatif",

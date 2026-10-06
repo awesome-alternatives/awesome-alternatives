@@ -11,6 +11,7 @@ import {
   categoryTitle,
   lowerFirst,
   targetDescription,
+  targetPageTitle,
   targetTitle,
   toolDescription,
   toolTitle,
@@ -36,10 +37,30 @@ test("a single alternative reads in the singular, in each language's own wording
 
 test("the description names the drop-in alternatives when there are any", () => {
   const tools = [alt("Valkey", "open", "drop-in"), alt("KeyDB", "open"), alt("Dragonfly", "source-available", "full", "C++")];
-  const text = targetDescription(en.target, "Redis", "redis", tools);
-  assert.match(text, /^3 alternatives to Redis, in Rust, C\+\+\./);
+  const text = targetDescription("en", en.target, "Redis", "redis", tools);
+  assert.match(text, /^Valkey, KeyDB, and Dragonfly\. 3 alternatives to Redis, in Rust, C\+\+\./);
   assert.ok(text.endsWith("Drop-in: Valkey."));
-  assert.ok(!targetDescription(en.target, "Redis", "redis", [alt("KeyDB", "open")]).includes("Drop-in"));
+  assert.ok(!targetDescription("en", en.target, "Redis", "redis", [alt("KeyDB", "open")]).includes("Drop-in"));
+});
+
+test("the description opens with the first three alternatives, in the page's order, so a search result shows them", () => {
+  const tools = ["Valkey", "KeyDB", "Dragonfly", "Garnet"].map((name) => alt(name, "open"));
+  assert.ok(targetDescription("en", en.target, "Redis", "redis", tools).startsWith("Valkey, KeyDB, Dragonfly and more. 4 alternatives"));
+  assert.ok(targetDescription("fr", fr.target, "Redis", "redis", tools).startsWith("Valkey, KeyDB, Dragonfly et d'autres."));
+  assert.ok(targetDescription("en", en.target, "Redis", "redis", tools.slice(0, 2)).startsWith("Valkey and KeyDB. 2 alternatives"));
+});
+
+test("the page title adds the first alternatives while it fits a search result", () => {
+  const tools = ["Valkey", "KeyDB", "Dragonfly"].map((name) => alt(name, "open"));
+  assert.equal(targetPageTitle("en", en.target, "Redis", tools), "3 open source alternatives to Redis: Valkey and KeyDB");
+  assert.equal(targetPageTitle("fr", fr.target, "Redis", tools), "3 alternatives open source à Redis : Valkey et KeyDB");
+  const long = [alt("Calibre-Web Automated", "open"), alt("Audiobookshelf", "open")];
+  assert.equal(
+    targetPageTitle("en", en.target, "Google Play Books", long),
+    "2 open source alternatives to Google Play Books: Calibre-Web Automated",
+  );
+  const huge = [alt("x".repeat(60), "open")];
+  assert.equal(targetPageTitle("en", en.target, "Redis", huge), "1 open source alternative to Redis");
 });
 
 test("a category of services you run is titled by what people search for", () => {

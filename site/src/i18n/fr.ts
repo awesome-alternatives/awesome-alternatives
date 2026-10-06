@@ -190,6 +190,10 @@ export const fr: Messages = {
   target: {
     title: { one: "{n} alternative à {name}", other: "{n} alternatives à {name}" },
     titleOpen: { one: "{n} alternative open source à {name}", other: "{n} alternatives open source à {name}" },
+    namesSuffix: " : {names}",
+    named: "{names}.",
+    namedMore: "{names} et d'autres.",
+    namesSeparator: ", ",
     dropIns: "Drop-in : {names}.",
     comparison: "Côte à côte",
     listHeading: "Toutes les alternatives",
