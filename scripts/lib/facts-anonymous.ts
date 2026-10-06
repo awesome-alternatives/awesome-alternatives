@@ -1,7 +1,8 @@
 import type { ClaimFile } from "./claim-dates.ts";
-import { claimLocations, fetchClaimFile, fetchMaintainerClaim, fetchRelease, fetchReleases, fetchRepo } from "./facts.ts";
+import { claimLocations, fetchClaimFile, fetchMaintainerFiles, fetchRelease, fetchReleases, fetchRepo } from "./facts.ts";
 import type { MappedRepository } from "./facts-graphql.ts";
 import type { GitHub } from "./github.ts";
+import { slugsOf } from "./maintainer-file.ts";
 import { platformsOf } from "./platforms.ts";
 import { GONE, type Read, type Tool } from "./types.ts";
 
@@ -22,10 +23,10 @@ export async function readAnonymously(gh: GitHub, tool: Pick<Tool, "repository" 
   if (!repo) return GONE;
   const { fullName } = repo;
   const openIssues = `repo:${fullName} is:issue is:open`;
-  const [release, releases, claim, latest, issues] = await Promise.all([
+  const [release, releases, maintainerFiles, latest, issues] = await Promise.all([
     fetchRelease(gh, fullName),
     fetchReleases(gh, fullName),
-    fetchMaintainerClaim(gh, fullName, repo.defaultBranch, tool.path),
+    fetchMaintainerFiles(gh, fullName, repo.defaultBranch, tool.path),
     gh.get<ApiLatest>(`/repos/${fullName}/releases/latest`),
     gh.get<ApiSearch>(`/search/issues?q=${encodeURIComponent(openIssues)}&per_page=1`),
   ]);
@@ -35,7 +36,8 @@ export async function readAnonymously(gh: GitHub, tool: Pick<Tool, "repository" 
       repo,
       release,
       releases,
-      claim,
+      claim: maintainerFiles.flatMap(({ file }) => slugsOf(file)),
+      maintainerFiles,
       openIssues: issues?.total_count ?? 0,
       platforms: platformsOf(latest?.assets.map((asset) => asset.name) ?? []),
       annotatedTag: null,

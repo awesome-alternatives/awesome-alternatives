@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { checkCapabilityDocs, checkHomepage, checkMigrations } from "../scripts/lib/links.ts";
 
 const product = { slug: "closed", homepage: "https://example.com/" };
-const answering = (status: number) => (async () => new Response(null, { status })) as typeof fetch;
+const answering = (status: number) => async (url: string) => (status < 400 ? null : `${url} answered ${status}`);
 
 describe("checkHomepage", () => {
   it("passes a homepage that answers", async () => {
@@ -20,9 +20,7 @@ describe("checkHomepage", () => {
   });
 
   it("warns when the request itself fails", async () => {
-    const failing = (async () => {
-      throw new TypeError("getaddrinfo ENOTFOUND");
-    }) as typeof fetch;
+    const failing = async (url: string) => `${url} did not resolve: getaddrinfo ENOTFOUND`;
     const [finding] = await checkHomepage(product, failing);
     assert.equal(finding?.code, "homepage-unreachable");
     assert.match(finding?.message ?? "", /ENOTFOUND/);
@@ -63,5 +61,14 @@ describe("checkCapabilityDocs", () => {
     const findings = await checkCapabilityDocs(tool, answering(404));
     assert.deepEqual(findings.map((f) => [f.severity, f.code]), [["error", "capability-unreachable"]]);
     assert.match(findings[0]?.message ?? "", /for ci.*404/);
+  });
+});
+
+describe("the default link check", () => {
+  it("refuses an internal or plain-http link without fetching it, since entries can now be written from maintainer files", async () => {
+    const tool = { slug: "x", replaces: [{ tool: "y", fit: "full" as const, migration: "https://127.0.0.1/admin" }] };
+    assert.match((await checkMigrations(tool))[0]?.message ?? "", /names an IP address/);
+    const capability = { slug: "x", capabilities: { ci: { docs: "http://docs.example.com/" } } };
+    assert.match((await checkCapabilityDocs(capability))[0]?.message ?? "", /is not https/);
   });
 });

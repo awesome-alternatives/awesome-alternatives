@@ -38,7 +38,7 @@
       "name": "refresh",
       "path": "scripts/runner",
       "changelog": "scripts/runner/CHANGELOG.md",
-      "sharedPaths": ["scripts", "package.json", "pnpm-lock.yaml"]
+      "sharedPaths": ["scripts", "schema/maintainer-file.schema.json", "package.json", "pnpm-lock.yaml"]
     }
   ]
 }

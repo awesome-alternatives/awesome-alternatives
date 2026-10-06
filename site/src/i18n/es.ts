@@ -252,6 +252,13 @@ export const es: Messages = {
     editedSinceVerification: "editada desde la verificación",
     verifiedOn:
       "Sus mantenedores verificaron esta ficha el {date}. Ha cambiado desde entonces, y la confirman de nuevo actualizando su archivo .awesome-alternatives.",
+    fromMaintainers: "Aportado por sus mantenedores en su archivo .awesome-alternatives: {fields}.",
+    maintainerFields: {
+      path: "directorio del paquete",
+      deploy: "métodos de despliegue",
+      capabilities: "documentación de funcionalidades",
+      migration: "guías de migración",
+    },
   },
 
   compare: {

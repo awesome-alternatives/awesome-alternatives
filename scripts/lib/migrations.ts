@@ -69,7 +69,12 @@ function replacementProblems({ from, to }: Pair, tools: readonly Tool[]): string
   return replacement.migration ? [] : [`${to} gives no official migration guide for ${from}`];
 }
 
-export async function checkMigrationPages(root: string, tools: readonly Tool[]): Promise<Finding[]> {
+export interface MigrationPage {
+  file: string;
+  text: string;
+}
+
+export async function readMigrationPages(root: string): Promise<MigrationPage[]> {
   const dir = join(root, "data", "migrations");
   let files: string[];
   try {
@@ -78,8 +83,9 @@ export async function checkMigrationPages(root: string, tools: readonly Tool[]):
     if ((e as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw e;
   }
-  const findings = await Promise.all(
-    files.map(async (file) => checkMigrationPage(file, await readFile(join(dir, file), "utf8"), tools)),
-  );
-  return findings.flat();
+  return Promise.all(files.map(async (file) => ({ file, text: await readFile(join(dir, file), "utf8") })));
+}
+
+export async function checkMigrationPages(root: string, tools: readonly Tool[]): Promise<Finding[]> {
+  return (await readMigrationPages(root)).flatMap(({ file, text }) => checkMigrationPage(file, text, tools));
 }

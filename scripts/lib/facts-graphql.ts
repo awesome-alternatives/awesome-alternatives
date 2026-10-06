@@ -1,8 +1,8 @@
 import {
-  claimedSlugs,
   encodeRef,
   isAnnotatedTagSigned,
   licenseOf,
+  locatedFile,
   MAINTAINER_FILE,
   RELEASE_HISTORY,
   releaseEntry,
@@ -11,6 +11,7 @@ import {
 } from "./facts.ts";
 import { type CommitWindow, walkContributors } from "./commit-window.ts";
 import { mapLimit } from "./gather.ts";
+import { type LocatedFile, slugsOf } from "./maintainer-file.ts";
 import { type GitHub, repoPath } from "./github.ts";
 import type { GraphQL } from "./graphql.ts";
 import { aliasedBatches, aliasedQuery, type BatchShape, describeErrors, everyRead, type Outcome } from "./graphql-batch.ts";
@@ -46,6 +47,7 @@ interface Blob {
 
 interface GqlPulseFields {
   nameWithOwner: string;
+  databaseId?: number | null;
   description: string | null;
   homepageUrl: string | null;
   primaryLanguage: { name: string } | null;
@@ -108,6 +110,7 @@ export interface RepositoryFacts {
   release: ReleaseFacts | null;
   releases: ReleaseEntry[];
   claim: string[];
+  maintainerFiles: LocatedFile[];
   openIssues: number;
   contributors: ActiveContributors | null;
   platforms: Platform[];
@@ -123,6 +126,7 @@ type PulseRepo = Omit<RepoFacts, "topics">;
 interface Pulse {
   repo: PulseRepo;
   claim: string[];
+  maintainerFiles: LocatedFile[];
   openIssues: number;
   head: string | null;
 }
@@ -141,7 +145,7 @@ interface Detail {
 
 const PULSE = `
 fragment Pulse on Repository {
-  nameWithOwner description homepageUrl
+  nameWithOwner databaseId description homepageUrl
   primaryLanguage { name }
   licenseInfo { spdxId }
   stargazerCount forkCount
@@ -227,6 +231,7 @@ function withTopics({ fullName, description, homepage, language, license, stars,
 function mapPulse(node: GqlPulseFields): Pulse {
   const repo: PulseRepo = {
     fullName: node.nameWithOwner,
+    ...(node.databaseId ? { databaseId: node.databaseId } : {}),
     description: node.description,
     homepage: websiteOf(node.homepageUrl),
     language: node.primaryLanguage?.name ?? null,
@@ -240,8 +245,10 @@ function mapPulse(node: GqlPulseFields): Pulse {
     pushedAt: node.pushedAt ?? node.createdAt,
     defaultBranch: node.defaultBranchRef?.name ?? "main",
   };
-  const claim = [node.claim, node.claimAt].flatMap((blob) => (blob?.text ? claimedSlugs(blob.text) : []));
-  return { repo, claim, openIssues: node.issues.totalCount, head: node.defaultBranchRef?.target?.oid ?? null };
+  const head = node.defaultBranchRef?.target?.oid ?? null;
+  const maintainerFiles = [...locatedFile("root", node.claim?.text, head), ...locatedFile("path", node.claimAt?.text, head)];
+  const claim = maintainerFiles.flatMap(({ file }) => slugsOf(file));
+  return { repo, claim, maintainerFiles, openIssues: node.issues.totalCount, head };
 }
 
 function readPulse(node: GqlPulse): Seen {
@@ -292,8 +299,11 @@ function mapDetail(node: GqlDetail): Detail {
   };
 }
 
-function joined({ repo, claim, openIssues, head }: Pulse, { topics, release, annotatedTag, releases, platforms }: Detail): MappedRepository {
-  return { repo: withTopics(repo, topics), release, annotatedTag, releases, claim, openIssues, head, platforms };
+function joined(
+  { repo, claim, maintainerFiles, openIssues, head }: Pulse,
+  { topics, release, annotatedTag, releases, platforms }: Detail,
+): MappedRepository {
+  return { repo: withTopics(repo, topics), release, annotatedTag, releases, claim, maintainerFiles, openIssues, head, platforms };
 }
 
 function carried(pulse: Pulse, before: EnrichedTool): MappedRepository {

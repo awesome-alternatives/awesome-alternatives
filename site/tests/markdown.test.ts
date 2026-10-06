@@ -185,3 +185,28 @@ test("a capped contributor count reads as a lower bound, and a monorepo entry sa
   assert.match(out, /counted across the whole repository, not only apps\/oxlint\n/);
   assert.ok(out.includes("- Platforms, read from the latest release's files: Linux (x86_64)\n"));
 });
+
+test("text from an entry or from GitHub cannot inject structure into the markdown", () => {
+  const hostile = "fine\n---\ntitle: injected\n# Owned <script>alert(1)</script> [x](javascript:1)";
+  const out = toolMarkdown(
+    tool(
+      {
+        name: "# Ruff",
+        affiliation: "# Owned by nobody",
+        replaces: [{ tool: "flake8", fit: "full", note: hostile, migration: "https://example.com/a](javascript:x)" }],
+        capabilities: { ci: { docs: "https://example.com/ci", note: hostile } },
+      },
+      { description: hostile, language: "<b>Rust</b>", license: "[MIT](javascript:1)" },
+    ),
+    around,
+  );
+  const lines = out.split("\n");
+  assert.equal(lines[0], "# \\# Ruff");
+  assert.deepEqual(
+    lines.filter((line) => /^(#|---|title:)/.test(line)),
+    ["# \\# Ruff", "## Replaces", "## Facts from GitHub", "## Freshness", "## Capabilities", "## Affiliation", "## Links"],
+  );
+  assert.ok(lines.includes("\\# Owned by nobody"));
+  assert.ok(!/(^|[^\\])[[<]/.test(out.replaceAll("Linux (x86_64)", "")));
+  assert.ok(out.includes("- Official migration guide: https://example.com/a%5D(javascript:x)"));
+});

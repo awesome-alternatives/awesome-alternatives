@@ -1,9 +1,13 @@
+import { writeFile } from "node:fs/promises";
 import { installationsFromEnv } from "./lib/app.ts";
 import { loadSoundCatalog } from "./lib/catalog.ts";
 import { gitEventHistory } from "./lib/event-history.ts";
 import { loadWindows, RECORD_FAILED_EXIT_CODE, recordFacts } from "./lib/facts-db.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
+import { githubChecks } from "./lib/maintainer-apply.ts";
+import { commitMessage, writeApplied } from "./lib/maintainer-write.ts";
+import { readMigrationPages } from "./lib/migrations.ts";
 import { publishOrExplain, readPublished } from "./lib/publish.ts";
 import { refreshTools } from "./lib/refresh-run.ts";
 import { secondsSince } from "./lib/timing.ts";
@@ -23,13 +27,21 @@ const now = new Date();
 const previous = await readPublished(root);
 const databaseUrl = process.env.DATABASE_URL;
 const stored = databaseUrl ? await loadWindows(databaseUrl) : new Map();
-const { tools, owners, facts, windows } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, {
+const { tools, owners, facts, windows, applied } = await refreshTools(root, previous, clients, catalog.tools, catalog.tools, now, {
   windows: stored,
   force: process.env.REFRESH_FORCE === "true",
+  maintainerFiles: { catalog, migrationPages: await readMigrationPages(root), checks: githubChecks(clients.gh) },
 });
 
 const checkedAt = now.toISOString();
 const published = await publishOrExplain(root, catalog, { checkedAt, owners, tools }, { now, history: gitEventHistory(root) });
+
+if (published) {
+  await writeApplied(root, applied);
+  const messageFile = process.env.REFRESH_COMMIT_MESSAGE;
+  if (messageFile) await writeFile(messageFile, commitMessage("chore(catalog): refresh from GitHub", applied));
+  for (const { slug, changes } of applied) console.log(`${slug}: applied ${changes.length} values from its maintainer file`);
+}
 
 if (published && databaseUrl && !(await recordFacts(databaseUrl, runRows(checkedAt, tools, facts), windows))) {
   process.exitCode = RECORD_FAILED_EXIT_CODE;

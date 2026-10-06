@@ -253,6 +253,13 @@ export const de: Messages = {
     editedSinceVerification: "seit der Bestätigung bearbeitet",
     verifiedOn:
       "Die Maintainer haben diesen Eintrag am {date} bestätigt. Seitdem hat er sich geändert. Sie bestätigen ihn erneut, indem sie ihre Datei .awesome-alternatives aktualisieren.",
+    fromMaintainers: "Von den Maintainern in ihrer Datei .awesome-alternatives angegeben: {fields}.",
+    maintainerFields: {
+      path: "Paketverzeichnis",
+      deploy: "Bereitstellungsmethoden",
+      capabilities: "Dokumentation der Funktionen",
+      migration: "Migrationsanleitungen",
+    },
   },
 
   compare: {

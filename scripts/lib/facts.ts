@@ -1,8 +1,10 @@
 import { type GitHub, repoPath } from "./github.ts";
+import { type FileScope, type LocatedFile, parseMaintainerFile, slugsOf } from "./maintainer-file.ts";
 import { newestTag } from "./tags.ts";
 import type { OwnerFacts, OwnerKind, ReleaseEntry, ReleaseFacts, RepoFacts } from "./types.ts";
 
 interface ApiRepo {
+  id?: number;
   full_name: string;
   description: string | null;
   homepage: string | null;
@@ -107,6 +109,7 @@ export async function fetchRepo(gh: GitHub, repository: string): Promise<RepoFac
   if (!r) return null;
   return {
     fullName: r.full_name,
+    ...(r.id ? { databaseId: r.id } : {}),
     description: r.description,
     homepage: websiteOf(r.homepage),
     language: r.language,
@@ -261,20 +264,40 @@ export async function isAnnotatedTagSigned(gh: GitHub, fullName: string, sha: st
 }
 
 export function claimedSlugs(text: string): string[] {
-  return text
-    .split(/\r?\n/)
-    .map((line) => line.replace(/#.*/, "").trim())
-    .filter((line) => line.length > 0);
+  return slugsOf(parseMaintainerFile(text));
+}
+
+export function fileLocation(scope: FileScope, path: string | null | undefined): string {
+  return scope === "path" && path ? `${path}/${MAINTAINER_FILE}` : MAINTAINER_FILE;
+}
+
+function scopesOf(path: string | null | undefined): FileScope[] {
+  return path ? ["root", "path"] : ["root"];
 }
 
 export function claimLocations(path: string | null | undefined): string[] {
-  return path ? [MAINTAINER_FILE, `${path}/${MAINTAINER_FILE}`] : [MAINTAINER_FILE];
+  return scopesOf(path).map((scope) => fileLocation(scope, path));
+}
+
+export function locatedFile(scope: FileScope, text: string | null | undefined, commit: string | null): LocatedFile[] {
+  return typeof text === "string" ? [{ scope, commit, file: parseMaintainerFile(text) }] : [];
+}
+
+async function fetchFileText(gh: GitHub, fullName: string, branch: string, location: string): Promise<string | null> {
+  const file = await gh.get<ApiContent>(`/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`);
+  return file?.encoding === "base64" ? Buffer.from(file.content, "base64").toString("utf8") : null;
 }
 
 export async function fetchClaimFile(gh: GitHub, fullName: string, branch: string, location: string): Promise<string[]> {
-  const file = await gh.get<ApiContent>(`/repos/${fullName}/contents/${encodeRef(location)}?ref=${encodeURIComponent(branch)}`);
-  if (file?.encoding !== "base64") return [];
-  return claimedSlugs(Buffer.from(file.content, "base64").toString("utf8"));
+  const text = await fetchFileText(gh, fullName, branch, location);
+  return text === null ? [] : claimedSlugs(text);
+}
+
+export async function fetchMaintainerFiles(gh: GitHub, fullName: string, branch: string, path?: string | null): Promise<LocatedFile[]> {
+  const found = await Promise.all(
+    scopesOf(path).map(async (scope) => locatedFile(scope, await fetchFileText(gh, fullName, branch, fileLocation(scope, path)), null)),
+  );
+  return found.flat();
 }
 
 export async function fetchMaintainerClaim(
@@ -283,6 +306,5 @@ export async function fetchMaintainerClaim(
   branch: string,
   path?: string,
 ): Promise<string[]> {
-  const found = await Promise.all(claimLocations(path).map((location) => fetchClaimFile(gh, fullName, branch, location)));
-  return found.flat();
+  return (await fetchMaintainerFiles(gh, fullName, branch, path)).flatMap(({ file }) => slugsOf(file));
 }

@@ -6,6 +6,7 @@ import { describe, it } from "node:test";
 import type { Installations } from "../scripts/lib/app.ts";
 import type { GqlPulse, GqlRepository } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
+import type { FieldChecks } from "../scripts/lib/maintainer-apply.ts";
 import type { GraphQL, GraphQLErrorEntry, GraphQLResponse } from "../scripts/lib/graphql.ts";
 import { CATALOG_PATH, publish, type Snapshot } from "../scripts/lib/publish.ts";
 import { refreshTools } from "../scripts/lib/refresh-run.ts";
@@ -149,6 +150,49 @@ describe("refreshTools", () => {
         ["fine", true, "2026-09-10T00:00:00.000Z"],
         ["other", true, null],
       ],
+    );
+  });
+
+  it("applies the factual fields of a tool's own maintainer file, verifies it, and marks which fields came from there", async () => {
+    const snapshot: Snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [published(fine, 1, false), published(other, 1, false)] };
+    const root = await checkout(snapshot);
+    const inner = github(new Set());
+    const gql: GraphQL = {
+      async query<T>(query: string, variables: Record<string, string>) {
+        const answer = await inner.query<Record<string, GqlPulse | null>>(query, variables);
+        if (query.includes("...Pulse")) {
+          for (const node of Object.values(answer.data ?? {})) {
+            if (node?.nameWithOwner === "acme/fine") node.claim = { text: "tools:\n  fine:\n    path: packages/fine\n  other:\n    path: src\n" };
+          }
+        }
+        return answer as GraphQLResponse<T>;
+      },
+      spent: inner.spent,
+    };
+    const checked: string[] = [];
+    const checks: FieldChecks = {
+      async directoryExists(fullName, _, path) {
+        checked.push(`${fullName}:${path}`);
+        return true;
+      },
+      unprovenDeploy: async () => [],
+      unreachable: async () => null,
+    };
+    const clients = { gql, gh: rest, anonymous: rest, installations: null };
+    const { tools, applied } = await refreshTools(root, snapshot, clients, [fine, other], [fine, other], NOW, {
+      maintainerFiles: { catalog: catalogOf(fine, other), migrationPages: [], checks },
+    });
+    assert.deepEqual(
+      tools.map((t) => [t.slug, t.maintainerVerified, t.path, t.maintainerFields ?? null]),
+      [
+        ["fine", true, "packages/fine", ["path"]],
+        ["other", false, null, null],
+      ],
+    );
+    assert.deepEqual(checked, ["acme/fine:packages/fine"]);
+    assert.deepEqual(
+      applied.map((a) => [a.slug, a.source.fullName, a.source.commit, a.changes]),
+      [["fine", "acme/fine", "head-fine", [{ field: "path", value: "packages/fine" }]]],
     );
   });
 

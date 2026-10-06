@@ -5,3 +5,11 @@ export type Verified = Pick<EnrichedTool, "maintainerVerified" | "verifiedAt" | 
 export function editedSinceVerification({ maintainerVerified, verifiedAt, editedAt }: Verified): boolean {
   return maintainerVerified && verifiedAt != null && Date.parse(editedAt) > Date.parse(verifiedAt);
 }
+
+export const MAINTAINER_KINDS = ["path", "deploy", "capabilities", "migration"] as const;
+
+export type MaintainerKind = (typeof MAINTAINER_KINDS)[number];
+
+export function maintainerKinds(fields: readonly string[] = []): MaintainerKind[] {
+  return MAINTAINER_KINDS.filter((kind) => fields.some((field) => field === kind || field.startsWith(`${kind}.`)));
+}

@@ -1,4 +1,5 @@
 import { categoryGroups, categoryName, targets, tools } from "../lib/catalog.ts";
+import { markdownText } from "../lib/markdownText.ts";
 
 const SITE = "https://awesome-alternatives.com";
 const CATALOG =
@@ -6,10 +7,10 @@ const CATALOG =
 
 function body(): string {
   const alternatives = targets()
-    .map((target) => `- [Alternatives to ${target.name}](${SITE}/alternatives/${target.slug}/): ${target.alternatives.length}`)
+    .map((target) => `- [Alternatives to ${markdownText(target.name)}](${SITE}/alternatives/${target.slug}/): ${target.alternatives.length}`)
     .join("\n");
   const browse = categoryGroups
-    .map((group) => `- [${categoryName(group.label)}](${SITE}/categories/${group.slug}/): ${group.tools.length}`)
+    .map((group) => `- [${markdownText(categoryName(group.label))}](${SITE}/categories/${group.slug}/): ${group.tools.length}`)
     .join("\n");
 
   return `# awesome-alternatives

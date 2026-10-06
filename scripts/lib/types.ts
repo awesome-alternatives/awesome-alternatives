@@ -108,6 +108,7 @@ export interface Finding {
 
 export interface RepoFacts {
   fullName: string;
+  databaseId?: number;
   description: string | null;
   homepage: string | null;
   language: string | null;
@@ -198,6 +199,7 @@ export interface EnrichedTool {
   terms: Terms;
   capabilities: Record<string, Capability>;
   deploy: DeployMethod[];
+  maintainerFields?: string[];
 }
 
 export type OwnerKind = "user" | "organization";

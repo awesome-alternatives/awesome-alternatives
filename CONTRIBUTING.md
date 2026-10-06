@@ -233,7 +233,8 @@ The nightly refresh reads it and marks the entry as verified. Only someone with 
 the repository can add it, so the mark says the maintainers stand behind the entry.
 
 One slug per line, so a repository that hosts several listed tools can vouch for all of them in the
-same file. Blank lines and `#` comments are ignored.
+same file. Blank lines and `#` comments are ignored. The same file can also keep some facts of the
+entry up to date from your repository, see [the maintainer file](#the-maintainer-file).
 
 Installing the [awesome-alternatives GitHub App](https://github.com/apps/awesome-alternatives) on
 the repository verifies every entry listed from it as well, without a file: installing an app on a
@@ -253,6 +254,66 @@ release-plz
 
 The mention goes away at the next refresh. Verification through the app carries no date, so an
 entry verified only that way never shows the mention.
+
+### The maintainer file
+
+`.awesome-alternatives` can also be a YAML mapping with a `tools` key. Each key under `tools` is a
+slug the repository vouches for, exactly like a line of the plain file, and can carry facts the
+maintainers know better than the catalog:
+
+```yaml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/awesome-alternatives/awesome-alternatives/main/schema/maintainer-file.schema.json
+tools:
+  ripgrep:
+    path: crates/rg
+    deploy: [binary, package]
+    capabilities:
+      ci:
+        docs: https://example.com/docs/ci
+    migration:
+      ack: https://example.com/migrate-from-ack
+  ripgrep-core:
+```
+
+Every field is optional, and a slug with nothing under it is just a verification. The file must
+match [`schema/maintainer-file.schema.json`](schema/maintainer-file.schema.json), which your editor
+can check as you type.
+
+The nightly refresh applies these fields, each only when its check passes:
+
+| Field | Applied when |
+|---|---|
+| `path` | it is a normalised relative directory, without `..` or a leading `/`, that exists on the default branch, and is not the path of another entry from the same repository |
+| `deploy` | the category is one of things people run themselves, and each method passes the same check as `deploy-unproven` on pull requests |
+| `capabilities.<key>.docs` | the key is in the category's vocabulary in `data/categories.yaml` and the link answers |
+| `migration.<tool>` | the entry already replaces `<tool>` and the link answers |
+
+A link answers when it is reached over `https` at every redirect, five at most, on a host name (not
+an IP address) with the default port, and every address it resolves to is public. A value that fails
+its check is not applied: the published value stays, and the refresh log says why. Neither is a
+change that would leave the catalog failing its own checks, such as removing the `path` that keeps an
+entry apart from another one in the same repository, or a migration guide that a page under
+`data/migrations/` relies on. Applied values are written into `data/tools/<slug>.yaml` by the refresh commit, whose message
+names your repository, the file and the commit it was read at, so this repository stays the source
+of truth. The tool page says which facts came from the maintainers, and those commits do not count
+as edits since your verification. Removing a field from the file removes it from the entry at the
+next refresh. Deleting the file changes nothing in the entry: only the verification goes.
+
+A file speaks only for tools whose `repository` is the repository holding it, read at the root or,
+for an entry with a `path`, in that directory. A key naming another repository's tool, or a slug
+the catalog does not have, is ignored and noted in the refresh log. When the entry's repository now
+answers under another name, nothing is applied until the entry is updated to follow the move. A run
+applies changes to at most 20 entries and checks at most 100, and leaves the rest to the next one.
+
+The file is treated as untrusted input. It is ignored as a whole, including the slugs it vouches
+for, when it is larger than 16 KiB, is not valid YAML, uses anchors, aliases or explicit tags, or
+does not match the schema: only the fields above and the ones below, slugs as keys, `https://` links
+on a host name with the default port and without credentials, plain text of at most 200 characters.
+
+`replaces` (with `tool`, `fit` and `note`), `category` and `affiliation` are accepted by the schema
+too. They are judgement calls rather than facts, so they are never applied directly: a later step
+will turn a difference with the entry into a pull request here that a person reviews. Until then,
+they are read and ignored.
 
 ### Refreshing your entry after a release
 
