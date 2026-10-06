@@ -1,0 +1,7 @@
+name: ImHex
+repository: https://github.com/WerWolv/ImHex
+category: hex-editor
+replaces:
+  - tool: 010-editor
+    fit: partial
+    note: A pattern language for parsing binary structures, a data inspector and a disassembler.

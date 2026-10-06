@@ -1,0 +1,3 @@
+name: Dependabot
+repository: https://github.com/dependabot/dependabot-core
+category: dependency-updates

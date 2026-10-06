@@ -1,0 +1,3 @@
+name: SwiftFormat
+repository: https://github.com/nicklockwood/SwiftFormat
+category: swift-lint-format

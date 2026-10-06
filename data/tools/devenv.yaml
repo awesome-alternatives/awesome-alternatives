@@ -1,0 +1,3 @@
+name: devenv
+repository: https://github.com/cachix/devenv
+category: dev-environment

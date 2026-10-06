@@ -666,6 +666,118 @@ stacked-pull-requests:
   name: Stacked pull requests
   description: Split a change into a stack of dependent branches or commits and keep their pull requests in sync.
 
+shell-lint-format:
+  name: Shell linting and formatting
+  description: Linters and formatters for shell scripts.
+
+markdown-lint:
+  name: Markdown linting
+  description: Check Markdown files against style and syntax rules.
+
+go-lint:
+  name: Go linting
+  description: Linters and static checkers for Go.
+
+php-lint-format:
+  name: PHP linting and formatting
+  description: Static analysers, linters and formatters for PHP.
+
+jvm-lint-format:
+  name: Java and Kotlin linting and formatting
+  description: Linters, bug finders and formatters for Java, Kotlin and other JVM languages.
+
+swift-lint-format:
+  name: Swift linting and formatting
+  description: Linters and formatters for Swift.
+
+ruby-lint-format:
+  name: Ruby linting and formatting
+  description: Linters and formatters for Ruby.
+
+config-file-lint:
+  name: Configuration file linting
+  description: Check YAML files, Dockerfiles and CI workflow definitions for mistakes.
+
+sql-lint-format:
+  name: SQL linting and formatting
+  description: Linters and formatters for SQL queries and dialects.
+
+spell-checker:
+  name: Code spell checkers
+  description: Find misspelled words in source code, identifiers and documentation.
+
+multi-language-formatter:
+  name: Multi-language formatters
+  description: Run or provide formatting for many languages from one command and one configuration.
+
+lua-lint-format:
+  name: Lua linting and formatting
+  description: Linters and formatters for Lua.
+
+build-system:
+  name: Build systems
+  description: Compile, test and package projects from a declared build, for C, C++, the JVM and other languages.
+
+build-cache:
+  name: Compiler caches
+  description: Cache compiler output so unchanged sources are not rebuilt, locally or on shared storage.
+
+system-package-manager:
+  name: System package managers
+  description: Install command-line tools and applications on macOS, Windows or Linux from package definitions.
+
+cpp-package-manager:
+  name: C and C++ package managers
+  description: Fetch, build and version C and C++ libraries for a project.
+
+dev-environment:
+  name: Development environments
+  description: Declare a project's tools and services in a file and get the same shell on every machine.
+
+debugger:
+  name: Debuggers
+  description: Step through running programs, inspect their state and replay their execution.
+
+profiler:
+  name: Profilers
+  description: Measure where a program spends its time and memory, and draw it as flame graphs or timelines.
+
+file-viewer:
+  name: Terminal file viewers
+  description: Show file contents in the terminal with syntax highlighting or rendering.
+
+hex-editor:
+  name: Hex editors
+  description: View and edit the raw bytes of binary files.
+
+command-benchmark:
+  name: Command benchmarking
+  description: Time shell commands over repeated runs and compare the results statistically.
+
+cheatsheet:
+  name: Command cheatsheets
+  description: Short, example-based help pages for command-line tools, read from the terminal.
+
+find-replace:
+  name: Find and replace
+  description: Search and replace text across files from the terminal, with previews or structural matching.
+
+log-viewer:
+  name: Terminal log viewers
+  description: Read, highlight and filter log files in the terminal.
+
+terminal-recording:
+  name: Terminal recording
+  description: Record terminal sessions and replay them or render them as GIFs and videos.
+
+commit-lint:
+  name: Commit message tooling
+  description: Check commit messages against a convention, or prompt for them in that format.
+
+dependency-updates:
+  name: Dependency update bots
+  description: Open pull requests that bump dependencies when new versions are released.
+
 disk-usage:
   name: Disk usage analyzers
   description: Show which directories and files take up the space on a disk.

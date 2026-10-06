@@ -1,0 +1,4 @@
+name: Scoop
+repository: https://github.com/ScoopInstaller/Scoop
+category: system-package-manager
+terms: open

@@ -1,0 +1,4 @@
+name: PMD
+repository: https://github.com/pmd/pmd
+category: jvm-lint-format
+terms: open

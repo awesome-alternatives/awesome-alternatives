@@ -1,0 +1,3 @@
+name: pyinstrument
+repository: https://github.com/joerick/pyinstrument
+category: profiler

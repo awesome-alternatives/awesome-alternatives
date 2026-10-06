@@ -1,0 +1,8 @@
+name: Standard Ruby
+repository: https://github.com/standardrb/standard
+category: ruby-lint-format
+replaces:
+  - tool: rubocop
+    fit: partial
+    note: RuboCop with a fixed rule set that is not meant to be configured.
+terms: open

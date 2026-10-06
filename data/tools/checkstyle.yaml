@@ -1,0 +1,3 @@
+name: Checkstyle
+repository: https://github.com/checkstyle/checkstyle
+category: jvm-lint-format

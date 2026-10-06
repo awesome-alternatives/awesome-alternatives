@@ -1,0 +1,3 @@
+name: Homebrew
+repository: https://github.com/Homebrew/brew
+category: system-package-manager

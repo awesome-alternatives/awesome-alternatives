@@ -1,0 +1,3 @@
+name: golangci-lint
+repository: https://github.com/golangci/golangci-lint
+category: go-lint

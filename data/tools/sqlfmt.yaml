@@ -1,0 +1,4 @@
+name: sqlfmt
+repository: https://github.com/tconbeer/sqlfmt
+category: sql-lint-format
+terms: open

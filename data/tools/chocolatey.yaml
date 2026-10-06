@@ -1,0 +1,4 @@
+name: Chocolatey
+repository: https://github.com/chocolatey/choco
+category: system-package-manager
+terms: open

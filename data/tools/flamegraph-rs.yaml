@@ -1,0 +1,3 @@
+name: cargo-flamegraph
+repository: https://github.com/flamegraph-rs/flamegraph
+category: profiler

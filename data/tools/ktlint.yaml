@@ -1,0 +1,3 @@
+name: ktlint
+repository: https://github.com/ktlint/ktlint
+category: jvm-lint-format
