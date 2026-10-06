@@ -1,0 +1,7 @@
+name: Canine
+repository: https://github.com/CanineHQ/canine
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: full
+    note: Deploys from GitHub with buildpacks or Dockerfiles onto your Kubernetes cluster, with add-ons from Helm charts.

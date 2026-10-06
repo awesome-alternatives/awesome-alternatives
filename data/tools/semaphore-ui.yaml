@@ -1,0 +1,7 @@
+name: Semaphore UI
+repository: https://github.com/semaphoreui/semaphore
+category: config-management
+replaces:
+  - tool: ansible-automation-platform
+    fit: partial
+    note: Web UI to run Ansible, Terraform and OpenTofu tasks with schedules and access control, as a single binary.

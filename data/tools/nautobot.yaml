@@ -1,0 +1,7 @@
+name: Nautobot
+repository: https://github.com/nautobot/nautobot
+category: infrastructure-inventory
+replaces:
+  - tool: netbox
+    fit: full
+    note: Fork of NetBox with jobs, Git-backed data and an app platform for network automation.

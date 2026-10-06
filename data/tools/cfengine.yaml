@@ -1,0 +1,4 @@
+name: CFEngine
+repository: https://github.com/cfengine/core
+category: config-management
+terms: open

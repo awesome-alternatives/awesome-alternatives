@@ -1,0 +1,5 @@
+name: Kubecost
+homepage: https://www.apptio.com/products/kubecost/
+vendor: IBM
+category: cloud-cost
+description: Commercial Kubernetes cost monitoring that allocates cloud spend to namespaces and workloads and recommends savings.

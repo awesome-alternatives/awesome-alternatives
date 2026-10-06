@@ -1,0 +1,10 @@
+name: Peekaping
+repository: https://github.com/0xfurai/peekaping
+category: uptime-monitoring
+replaces:
+  - tool: uptimerobot
+    fit: full
+    note: HTTP, TCP, ping, DNS and push monitors with notifications and status pages.
+  - tool: uptime-kuma
+    fit: full
+    note: Similar monitors and status pages, with a Go API server and a choice of database.

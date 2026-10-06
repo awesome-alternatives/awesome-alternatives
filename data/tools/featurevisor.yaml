@@ -1,0 +1,7 @@
+name: Featurevisor
+repository: https://github.com/featurevisor/featurevisor
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: partial
+    note: Flags, segments and experiments declared in git and built into static datafiles served from a CDN.

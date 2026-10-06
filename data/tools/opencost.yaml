@@ -1,0 +1,7 @@
+name: OpenCost
+repository: https://github.com/opencost/opencost
+category: cloud-cost
+replaces:
+  - tool: kubecost
+    fit: partial
+    note: The cost allocation engine Kubecost is built on, without its savings recommendations or multi-cluster views.

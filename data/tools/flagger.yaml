@@ -1,0 +1,7 @@
+name: Flagger
+repository: https://github.com/fluxcd/flagger
+category: continuous-delivery
+replaces:
+  - tool: argo-rollouts
+    fit: full
+    note: Canary, A/B and blue-green releases driven by metrics, on top of standard Deployments and a service mesh or ingress.

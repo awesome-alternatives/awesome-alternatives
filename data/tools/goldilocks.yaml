@@ -1,0 +1,7 @@
+name: Goldilocks
+repository: https://github.com/FairwindsOps/goldilocks
+category: cloud-cost
+replaces:
+  - tool: kubecost
+    fit: partial
+    note: Request and limit recommendations per workload from the Vertical Pod Autoscaler, without cost allocation.

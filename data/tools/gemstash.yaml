@@ -1,0 +1,7 @@
+name: Gemstash
+repository: https://github.com/rubygems/gemstash
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Ruby gems only, as a private gem server and rubygems.org cache.

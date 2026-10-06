@@ -1,0 +1,4 @@
+name: Packer
+repository: https://github.com/hashicorp/packer
+category: infrastructure-as-code
+terms: source-available

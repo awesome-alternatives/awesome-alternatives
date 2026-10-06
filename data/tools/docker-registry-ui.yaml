@@ -1,0 +1,3 @@
+name: Docker Registry UI
+repository: https://github.com/Joxit/docker-registry-ui
+category: container-registry

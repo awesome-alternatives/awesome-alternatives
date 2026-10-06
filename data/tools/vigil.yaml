@@ -1,0 +1,7 @@
+name: Vigil
+repository: https://github.com/valeriansaliou/vigil
+category: uptime-monitoring
+replaces:
+  - tool: statuspage
+    fit: partial
+    note: Status page driven by its own probes, without incident write-ups for subscribers.

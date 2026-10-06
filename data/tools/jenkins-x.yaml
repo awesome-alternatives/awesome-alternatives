@@ -1,0 +1,7 @@
+name: Jenkins X
+repository: https://github.com/jenkins-x/jx
+category: ci-server
+replaces:
+  - tool: circleci
+    fit: partial
+    note: Pipelines on Tekton with preview environments and GitOps promotion, on your own Kubernetes cluster.

@@ -1,0 +1,7 @@
+name: Alertmanager
+repository: https://github.com/prometheus/alertmanager
+category: incident-management
+replaces:
+  - tool: pagerduty
+    fit: partial
+    note: Groups, deduplicates, silences and routes alerts to receivers, without on-call schedules or escalation.

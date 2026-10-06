@@ -1,0 +1,7 @@
+name: Nuclio
+repository: https://github.com/nuclio/nuclio
+category: serverless-platform
+replaces:
+  - tool: aws-lambda
+    fit: full
+    note: Functions triggered by HTTP, queues and streams, built for data and ML workloads.

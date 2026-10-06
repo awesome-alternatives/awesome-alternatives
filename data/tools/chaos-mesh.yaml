@@ -1,0 +1,7 @@
+name: Chaos Mesh
+repository: https://github.com/chaos-mesh/chaos-mesh
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: full
+    note: Pod, network, I/O, time and kernel faults on Kubernetes, with workflows and a dashboard.

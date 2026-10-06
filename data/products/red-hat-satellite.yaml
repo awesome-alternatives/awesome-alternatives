@@ -1,0 +1,5 @@
+name: Red Hat Satellite
+homepage: https://www.redhat.com/en/technologies/management/satellite
+vendor: Red Hat
+category: config-management
+description: "Red Hat's subscription product for provisioning, patching and managing the content and configuration of RHEL fleets."

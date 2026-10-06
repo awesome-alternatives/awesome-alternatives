@@ -1,0 +1,8 @@
+name: pypiserver
+repository: https://github.com/pypiserver/pypiserver
+category: artifact-repository
+terms: open
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Python packages only, as a minimal PyPI-compatible index.

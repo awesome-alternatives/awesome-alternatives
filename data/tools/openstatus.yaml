@@ -1,0 +1,10 @@
+name: OpenStatus
+repository: https://github.com/openstatusHQ/openstatus
+category: uptime-monitoring
+replaces:
+  - tool: statuspage
+    fit: full
+    note: Status pages fed by its own monitors, with incidents and maintenance.
+  - tool: uptimerobot
+    fit: full
+    note: HTTP and TCP checks from several regions, with alerts and status pages.

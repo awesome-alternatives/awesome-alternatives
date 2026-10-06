@@ -1,0 +1,7 @@
+name: Chaos Toolkit
+repository: https://github.com/chaostoolkit/chaostoolkit
+category: chaos-engineering
+replaces:
+  - tool: gremlin
+    fit: partial
+    note: Experiments declared in JSON or YAML and run from a CLI, with drivers for clouds and Kubernetes, without an agent or UI.

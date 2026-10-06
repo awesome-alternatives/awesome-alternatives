@@ -1,0 +1,3 @@
+name: Kubetail
+repository: https://github.com/kubetail-org/kubetail
+category: kubernetes-ui

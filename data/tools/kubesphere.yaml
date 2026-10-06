@@ -1,0 +1,4 @@
+name: KubeSphere
+repository: https://github.com/kubesphere/kubesphere
+category: kubernetes-ui
+terms: source-available

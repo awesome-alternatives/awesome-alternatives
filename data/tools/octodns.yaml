@@ -1,0 +1,7 @@
+name: octoDNS
+repository: https://github.com/octodns/octodns
+category: infrastructure-as-code
+replaces:
+  - tool: dnscontrol
+    fit: full
+    note: DNS records as YAML synced to many providers, written in Python.

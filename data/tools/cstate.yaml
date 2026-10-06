@@ -1,0 +1,7 @@
+name: cState
+repository: https://github.com/cstate/cstate
+category: uptime-monitoring
+replaces:
+  - tool: statuspage
+    fit: partial
+    note: Static status page built with Hugo from Markdown incidents, with no monitoring of its own.

@@ -1,0 +1,7 @@
+name: GO Feature Flag
+repository: https://github.com/thomaspoignant/go-feature-flag
+category: feature-flags
+replaces:
+  - tool: launchdarkly
+    fit: partial
+    note: Flags kept in a file you host and served through OpenFeature providers, with rollouts and targeting.

@@ -1,0 +1,7 @@
+name: Knative Serving
+repository: https://github.com/knative/serving
+category: serverless-platform
+replaces:
+  - tool: aws-lambda
+    fit: partial
+    note: Request-driven containers with scale to zero and revisions on Kubernetes, rather than function code.

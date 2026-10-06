@@ -1550,3 +1550,33 @@ game-engine:
 game-map-editor:
   name: Game level editors
   description: Design tile maps and levels and export them to a game engine.
+
+continuous-delivery:
+  name: Continuous delivery
+  description: Promote builds through environments with canary, blue-green and progressive rollouts, and roll back on failing metrics.
+  selfHost: true
+
+serverless-platform:
+  name: Serverless platforms
+  description: Run functions and scale-to-zero services on your own cluster, triggered by HTTP requests or events.
+  selfHost: true
+
+chaos-engineering:
+  name: Chaos engineering
+  description: Inject failures such as killed pods, network latency and resource pressure to test how systems hold up.
+  selfHost: true
+
+cloud-cost:
+  name: Cloud cost
+  description: Estimate, allocate and cut cloud and Kubernetes spending, per team, workload or pull request.
+  selfHost: true
+
+infrastructure-inventory:
+  name: Infrastructure inventory
+  description: Model racks, devices, cables, IP addresses and circuits as the source of truth for network and data centre automation.
+  selfHost: true
+
+runbook-automation:
+  name: Runbook automation
+  description: Turn operational procedures into jobs that run on servers on demand, on a schedule or in response to events, with access control and an audit trail.
+  selfHost: true

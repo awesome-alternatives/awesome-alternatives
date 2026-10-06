@@ -1,0 +1,7 @@
+name: Kamal
+repository: https://github.com/basecamp/kamal
+category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: partial
+    note: Deploys containers to your own servers over SSH with zero-downtime switches, without buildpacks or managed add-ons.

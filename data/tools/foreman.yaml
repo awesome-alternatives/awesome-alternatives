@@ -1,0 +1,7 @@
+name: Foreman
+repository: https://github.com/theforeman/foreman
+category: config-management
+replaces:
+  - tool: red-hat-satellite
+    fit: full
+    note: The upstream of Satellite, provisioning and managing hosts with Katello for content.
