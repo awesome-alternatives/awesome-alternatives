@@ -1,6 +1,6 @@
 name: Jasmin
 repository: https://github.com/jookies/jasmin
-category: notification-infrastructure
+category: telephony
 terms: open
 replaces:
   - tool: twilio

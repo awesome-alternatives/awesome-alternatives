@@ -1,6 +1,6 @@
 name: textbee
 repository: https://github.com/textbee/textbee
-category: notification-infrastructure
+category: telephony
 replaces:
   - tool: twilio
     fit: partial

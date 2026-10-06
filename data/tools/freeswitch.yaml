@@ -1,0 +1,9 @@
+name: FreeSWITCH
+repository: https://github.com/signalwire/freeswitch
+category: telephony
+terms: open
+replaces:
+  - tool: twilio
+    fit: partial
+    note: A softswitch for SIP calls, IVR, conferencing and recording, scripted through its event socket and Lua; no hosted REST API, phone numbers or SMS out of the box.
+deploy: [package]

@@ -1,6 +1,6 @@
 name: SMS Gateway for Android
 repository: https://github.com/capcom6/android-sms-gateway
-category: notification-infrastructure
+category: telephony
 replaces:
   - tool: twilio
     fit: partial
