@@ -97,7 +97,7 @@ export const pages: Pages = {
       noRelease: "O repositório não tem release nem tag, então não há versão para fixar.",
       inactive: "Nada foi enviado por push há mais de {inactiveDays} dias. Repositórios arquivados ficam de fora deste aviso.",
       starSpike:
-        "Um dia que ganhou {spikeThreshold} estrelas ou mais, e pelo menos {spikeFactor} vezes o ritmo diário habitual da ferramenta no último mês. Estrelas compradas chegam em rajadas, e um lançamento no Hacker News também, por isso quem decide é uma pessoa. O GitHub não lista mais quem deu estrela em um repositório, então a atualização noturna guarda a contagem de estrelas de cada dia e compara os dias. Ela precisa de uma semana desse histórico antes de julgar, ou seja, uma ferramenta só é verificada depois de listada.",
+        "Um dia que ganhou {spikeThreshold} estrelas ou mais, e pelo menos {spikeFactor} vezes o ritmo diário habitual da ferramenta no último mês, e pelo menos {spikeShare}% das estrelas que ela tinha no dia anterior, para que um bom dia comum de um projeto grande não conte. Estrelas compradas chegam em rajadas, e um lançamento no Hacker News também, por isso quem decide é uma pessoa. O GitHub não lista mais quem deu estrela em um repositório, então a atualização noturna guarda a contagem de estrelas de cada dia e compara os dias. Ela precisa de uma semana desse histórico antes de julgar, ou seja, uma ferramenta só é verificada depois de listada.",
       blockingBefore:
         "Alguns problemas bloqueiam o pull request: um repositório privado, um fork, arquivado mas oferecido como alternativa, com menos de {minAgeDays} dias, ou já listado sob outro slug.",
       contributeLink: "O guia de contribuição",

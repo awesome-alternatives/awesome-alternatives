@@ -99,7 +99,7 @@ export const pages: Pages = {
       inactive:
         "Rien n'a été poussé depuis plus de {inactiveDays} jours. Les dépôts archivés sont exclus de cet avertissement.",
       starSpike:
-        "Une journée qui a apporté au moins {spikeThreshold} étoiles, et au moins {spikeFactor} fois le rythme quotidien habituel de l'outil sur le dernier mois. Les étoiles achetées arrivent par salves, un lancement sur Hacker News aussi, et c'est pourquoi la décision revient à une personne. GitHub ne liste plus qui a mis une étoile à un dépôt : la mise à jour nocturne garde donc le nombre d'étoiles de chaque jour et compare les jours entre eux. Il lui faut une semaine de cet historique pour juger, si bien qu'un outil n'est vérifié qu'une fois listé.",
+        "Une journée qui a apporté au moins {spikeThreshold} étoiles, et au moins {spikeFactor} fois le rythme quotidien habituel de l'outil sur le dernier mois, et au moins {spikeShare} % des étoiles qu'il avait la veille : une bonne journée ordinaire d'un gros projet ne compte pas. Les étoiles achetées arrivent par salves, un lancement sur Hacker News aussi, et c'est pourquoi la décision revient à une personne. GitHub ne liste plus qui a mis une étoile à un dépôt : la mise à jour nocturne garde donc le nombre d'étoiles de chaque jour et compare les jours entre eux. Il lui faut une semaine de cet historique pour juger, si bien qu'un outil n'est vérifié qu'une fois listé.",
       blockingBefore:
         "D'autres problèmes bloquent plutôt la pull request : un dépôt privé, un fork, archivé mais proposé comme alternative, plus jeune que {minAgeDays} jours, ou déjà listé sous un autre slug.",
       contributeLink: "Le guide du contributeur",

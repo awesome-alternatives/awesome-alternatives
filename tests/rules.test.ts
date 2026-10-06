@@ -128,6 +128,22 @@ describe("spikeOf", () => {
     assert.equal(spikeOf(busy, 2900, NOW), null);
   });
 
+  it("stays quiet when the day is a small share of a large project's stars, however unusual for it", () => {
+    const large = daily([100_000, 100_020, 100_040, 100_060, 100_080, 100_100, 100_120, 100_140]);
+    assert.equal(spikeOf(large, 100_640, NOW), null);
+  });
+
+  it("flags the same day on a small repository, where it is most of its stars", () => {
+    const small = daily([100, 101, 102, 103, 104, 105, 106, 107]);
+    assert.deepEqual(spikeOf(small, 607, NOW), { gained: 500, usual: 1, on: NOW.toISOString().slice(0, 10) });
+  });
+
+  it("measures the share against the stars before the day, not after", () => {
+    const edge = daily([2000, 2010, 2020, 2030, 2040, 2050, 2060, 2070]);
+    assert.notEqual(spikeOf(edge, 2070 + 63, NOW), null);
+    assert.equal(spikeOf(edge, 2070 + 61, NOW), null);
+  });
+
   it("stays quiet under the absolute threshold, whatever the ratio", () => {
     assert.equal(spikeOf(daily([10, 10, 10, 10, 10, 10, 10, 10]), 49, NOW), null);
   });

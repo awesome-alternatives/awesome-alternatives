@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import { ACTIVE_DAYS, HISTORY_LIMIT } from "../../../../scripts/lib/contributors.ts";
-import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_FACTOR, SPIKE_THRESHOLD } from "../../../../scripts/lib/rules.ts";
+import { INACTIVE_DAYS, MIN_AGE_DAYS, SPIKE_FACTOR, SPIKE_SHARE_PERCENT, SPIKE_THRESHOLD } from "../../../../scripts/lib/rules.ts";
 import type { Locale } from "../../i18n/index.ts";
 import { format, pathFor } from "../../i18n/index.ts";
 import { localePaths, t } from "../../i18n/paths.ts";
@@ -131,7 +131,7 @@ const mcpUrl = new URL("/api/mcp", Astro.site).href;
       </div>
       <div id="star-spike">
         <dt><span class="mark mark-warn">{flag["star-spike"]}</span></dt>
-        <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeFactor: SPIKE_FACTOR })}</dd>
+        <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeFactor: SPIKE_FACTOR, spikeShare: SPIKE_SHARE_PERCENT })}</dd>
       </div>
     </dl>
     <p>
