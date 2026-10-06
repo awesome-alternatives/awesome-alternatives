@@ -1,0 +1,4 @@
+name: Part-DB
+repository: https://github.com/Part-DB/Part-DB-server
+category: inventory
+deploy: [container]

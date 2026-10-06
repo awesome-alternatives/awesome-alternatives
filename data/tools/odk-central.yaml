@@ -1,0 +1,8 @@
+name: ODK Central
+repository: https://github.com/getodk/central
+category: forms-surveys
+replaces:
+  - tool: google-forms
+    fit: partial
+    note: Server for XLSForm surveys filled in offline in the ODK Collect app or the browser.
+deploy: [compose]

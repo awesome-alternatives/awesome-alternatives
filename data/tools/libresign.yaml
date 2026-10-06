@@ -1,0 +1,7 @@
+name: LibreSign
+repository: https://github.com/LibreSign/libresign
+category: e-signature
+replaces:
+  - tool: docusign
+    fit: partial
+    note: PDF signing with certificates and signature requests inside Nextcloud.

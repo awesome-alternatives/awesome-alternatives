@@ -1,0 +1,8 @@
+name: Fider
+repository: https://github.com/getfider/fider
+category: feedback-board
+replaces:
+  - tool: canny
+    fit: full
+    note: Public boards where users post and vote on ideas, with statuses and tags.
+deploy: [container]

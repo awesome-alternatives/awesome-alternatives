@@ -1,0 +1,10 @@
+name: Open edX
+repository: https://github.com/openedx/openedx-platform
+category: lms
+replaces:
+  - tool: teachable
+    fit: partial
+    note: Online courses with video, problems and certificates at scale, run through a separate deployment tool.
+  - tool: blackboard
+    fit: partial
+    note: Course authoring and delivery, without much of the campus administration.

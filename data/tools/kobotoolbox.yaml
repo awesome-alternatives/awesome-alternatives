@@ -1,0 +1,8 @@
+name: KoboToolbox
+repository: https://github.com/kobotoolbox/kpi
+category: forms-surveys
+replaces:
+  - tool: google-forms
+    fit: partial
+    note: Field data collection forms that work offline on mobile, built on XLSForm.
+deploy: [container]

@@ -1,0 +1,8 @@
+name: EtherCalc
+repository: https://github.com/audreyt/ethercalc
+category: office-suite
+terms: open
+replaces:
+  - tool: google-docs
+    fit: partial
+    note: Spreadsheets edited together in the browser, without documents or presentations.

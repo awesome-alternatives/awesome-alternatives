@@ -1,0 +1,9 @@
+name: Chaskiq
+repository: https://github.com/chaskiq/chaskiq
+category: helpdesk
+terms: source-available
+replaces:
+  - tool: intercom
+    fit: full
+    note: Live chat widget, shared inbox, bots, help center and in-app messages.
+deploy: [container]

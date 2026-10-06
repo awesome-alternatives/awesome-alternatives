@@ -1,0 +1,8 @@
+name: Anki
+repository: https://github.com/ankitects/anki
+category: flashcards
+terms: open
+replaces:
+  - tool: quizlet
+    fit: partial
+    note: Spaced repetition flashcards with media and custom card types, without games or classes.

@@ -1,0 +1,7 @@
+name: AnkiDroid
+repository: https://github.com/ankidroid/Anki-Android
+category: flashcards
+replaces:
+  - tool: quizlet
+    fit: partial
+    note: Anki flashcards on Android, synced through AnkiWeb or your own sync server.

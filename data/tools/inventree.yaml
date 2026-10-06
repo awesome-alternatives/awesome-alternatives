@@ -1,0 +1,4 @@
+name: InvenTree
+repository: https://github.com/inventree/InvenTree
+category: inventory
+deploy: [container, compose]

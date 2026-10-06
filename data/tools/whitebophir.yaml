@@ -1,0 +1,7 @@
+name: WBO
+repository: https://github.com/lovasoa/whitebophir
+category: diagramming
+replaces:
+  - tool: miro
+    fit: partial
+    note: Real-time collaborative whiteboard for freehand drawing, shapes and text.

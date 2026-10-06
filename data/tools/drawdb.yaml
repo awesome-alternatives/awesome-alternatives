@@ -1,0 +1,7 @@
+name: drawDB
+repository: https://github.com/drawdb-io/drawdb
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: Entity relationship diagrams in the browser, with SQL import and export.

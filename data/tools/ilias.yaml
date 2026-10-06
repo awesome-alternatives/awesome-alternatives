@@ -1,0 +1,7 @@
+name: ILIAS
+repository: https://github.com/ILIAS-eLearning/ILIAS
+category: lms
+replaces:
+  - tool: blackboard
+    fit: full
+    note: Courses, tests, learning modules, forums and grades for universities and companies.

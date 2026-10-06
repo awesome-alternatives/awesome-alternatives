@@ -1,0 +1,7 @@
+name: Nextcloud Forms
+repository: https://github.com/nextcloud/forms
+category: forms-surveys
+replaces:
+  - tool: google-forms
+    fit: full
+    note: Forms and surveys inside Nextcloud, with results exported to a spreadsheet.

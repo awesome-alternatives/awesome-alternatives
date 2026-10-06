@@ -1,0 +1,7 @@
+name: Indico
+repository: https://github.com/indico/indico
+category: event-ticketing
+replaces:
+  - tool: eventbrite
+    fit: partial
+    note: Registration, timetables, abstracts and room booking for conferences and meetings.

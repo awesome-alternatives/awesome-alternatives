@@ -1,0 +1,7 @@
+name: Canvas LMS
+repository: https://github.com/instructure/canvas-lms
+category: lms
+replaces:
+  - tool: blackboard
+    fit: full
+    note: Courses, assignments, quizzes, grades and discussions, used by universities and schools.

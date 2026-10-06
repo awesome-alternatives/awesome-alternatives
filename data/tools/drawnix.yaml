@@ -1,0 +1,10 @@
+name: Drawnix
+repository: https://github.com/plait-board/drawnix
+category: diagramming
+replaces:
+  - tool: miro
+    fit: partial
+    note: Whiteboard with mind maps, flowcharts and freehand drawing, saved in the browser.
+  - tool: xmind
+    fit: partial
+    note: Mind maps on a whiteboard.
