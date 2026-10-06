@@ -1,0 +1,4 @@
+name: Music Assistant
+repository: https://github.com/music-assistant/server
+category: media-server
+deploy: [container]

@@ -1,0 +1,8 @@
+name: Audacity
+repository: https://github.com/audacity/audacity
+category: music-production
+terms: open
+replaces:
+  - tool: adobe-audition
+    fit: partial
+    note: Records and edits audio with effects, noise reduction and multitrack mixing; no spectral repair suite or video sync.

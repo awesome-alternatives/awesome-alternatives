@@ -1,0 +1,4 @@
+name: Tunarr
+repository: https://github.com/chrisbenincasa/tunarr
+category: media-server
+deploy: [container, binary]

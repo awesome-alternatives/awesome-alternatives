@@ -1,0 +1,11 @@
+name: Mixxx
+repository: https://github.com/mixxxdj/mixxx
+category: music-production
+terms: open
+replaces:
+  - tool: traktor
+    fit: full
+    note: DJ decks with sync, effects, recording and mappings for many controllers.
+  - tool: serato-dj
+    fit: full
+    note: DJ decks with sync, effects, recording and mappings for many controllers.

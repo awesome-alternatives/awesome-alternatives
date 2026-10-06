@@ -1,0 +1,7 @@
+name: Supersonic
+repository: https://github.com/supersonic-app/supersonic
+category: music-player
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Desktop player for your own library on a Subsonic-compatible or Jellyfin server; there is no catalog of music to stream.

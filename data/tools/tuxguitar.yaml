@@ -1,0 +1,7 @@
+name: TuxGuitar
+repository: https://github.com/helge17/tuxguitar
+category: music-notation
+replaces:
+  - tool: guitar-pro
+    fit: full
+    note: Tablature editor with playback that imports and exports Guitar Pro files.

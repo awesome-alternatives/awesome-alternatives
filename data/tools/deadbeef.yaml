@@ -1,0 +1,8 @@
+name: DeaDBeeF
+repository: https://github.com/DeaDBeeF-Player/deadbeef
+category: music-player
+terms: open
+replaces:
+  - tool: foobar2000
+    fit: full
+    note: Lightweight player with a customisable layout and plugins, on Linux, macOS and Windows.

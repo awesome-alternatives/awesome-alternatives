@@ -1332,3 +1332,33 @@ speed-test:
   name: Speed tests
   description: Measure bandwidth and latency to your own server, or track your connection over time.
   selfHost: true
+
+music-production:
+  name: Music production
+  description: Record, edit and mix audio, and compose with DAWs, trackers, sequencers and software synthesizers.
+
+music-notation:
+  name: Music notation
+  description: Write, play back and engrave sheet music and tablature.
+
+music-player:
+  name: Music players
+  description: Play and organise a local music library, or stream it from your own server.
+
+music-tagger:
+  name: Music taggers
+  description: Fix the tags, cover art and file names of a music library, often from MusicBrainz.
+
+podcast-player:
+  name: Podcast players
+  description: Subscribe to podcasts by RSS, download episodes and keep your place.
+
+podcast-server:
+  name: Podcast servers
+  description: Fetch and archive podcast feeds on your own server and listen from any device.
+  selfHost: true
+
+internet-radio:
+  name: Internet radio
+  description: Run a web radio station with playlists, live DJs, scheduling and streaming.
+  selfHost: true

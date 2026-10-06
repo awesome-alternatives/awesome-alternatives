@@ -1,0 +1,7 @@
+name: Feishin
+repository: https://github.com/jeffvli/feishin
+category: music-player
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Desktop and web player for your own Navidrome or Jellyfin library; there is no catalog of music to stream.

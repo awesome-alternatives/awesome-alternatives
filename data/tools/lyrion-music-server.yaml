@@ -1,0 +1,5 @@
+name: Lyrion Music Server
+repository: https://github.com/LMS-Community/slimserver
+category: media-server
+terms: open
+deploy: [container]

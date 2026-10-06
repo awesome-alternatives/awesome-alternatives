@@ -1,0 +1,8 @@
+name: AzuraCast
+repository: https://github.com/AzuraCast/AzuraCast
+category: internet-radio
+replaces:
+  - tool: radio-co
+    fit: full
+    note: Runs stations with AutoDJ playlists, live DJ streaming, scheduling and listener statistics on your own server.
+deploy: [container, compose]

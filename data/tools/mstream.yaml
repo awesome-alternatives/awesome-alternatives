@@ -1,0 +1,7 @@
+name: mStream
+repository: https://github.com/IrosTheBeggar/mStream
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music to a web player and Subsonic clients; there is no catalog of music to stream.

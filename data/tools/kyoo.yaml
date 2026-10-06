@@ -1,0 +1,11 @@
+name: Kyoo
+repository: https://github.com/zoriya/Kyoo
+category: media-server
+replaces:
+  - tool: plex
+    fit: full
+    note: Streams your films and series with transcoding and fetched metadata to its web and mobile apps.
+  - tool: netflix
+    fit: partial
+    note: Streams your own films and series; there is no catalog of content to watch.
+deploy: [container, compose, helm]

@@ -1,0 +1,8 @@
+name: Black Candy
+repository: https://github.com/blackcandy-org/blackcandy
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music to its web and mobile apps; there is no catalog of music to stream.
+deploy: [container]

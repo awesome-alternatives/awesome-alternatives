@@ -1,0 +1,8 @@
+name: puddletag
+repository: https://github.com/puddletag/puddletag
+category: music-tagger
+terms: open
+replaces:
+  - tool: mp3tag
+    fit: full
+    note: Spreadsheet-style tag editor modelled on Mp3tag, with actions, format strings and online lookups, on Linux.

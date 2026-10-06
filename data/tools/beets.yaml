@@ -1,0 +1,7 @@
+name: beets
+repository: https://github.com/beetbox/beets
+category: music-tagger
+replaces:
+  - tool: mp3tag
+    fit: partial
+    note: Command-line library manager that tags from MusicBrainz and moves files into an organised tree.
