@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.110.0] - 2026-10-06
+
+### Features
+
+- feat(catalog): add 49 communication tools (#352)
+
 ## [0.109.0] - 2026-10-06
 
 ### Features
