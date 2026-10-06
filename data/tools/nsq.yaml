@@ -1,4 +1,8 @@
 name: NSQ
 repository: https://github.com/nsqio/nsq
 category: message-streaming
+replaces:
+  - tool: amazon-sqs
+    fit: partial
+    note: Distributed queues with at-least-once delivery, through its own protocol and clients.
 deploy: [container, binary]

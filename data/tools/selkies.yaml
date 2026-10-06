@@ -1,0 +1,8 @@
+name: Selkies
+repository: https://github.com/selkies-project/selkies
+category: remote-desktop
+replaces:
+  - tool: parsec
+    fit: partial
+    note: Streams a Linux desktop or game to a browser over WebRTC with GPU encoding, with no client to install and no Windows host.
+deploy: [container, compose, package]

@@ -8,4 +8,7 @@ replaces:
   - tool: splunk
     fit: partial
     note: Log search and analytics with OpenSearch Dashboards.
+  - tool: elastic-cloud
+    fit: full
+    note: Fork of Elasticsearch 7.10.2 with OpenSearch Dashboards, run on your own machines; APIs have diverged since.
 deploy: [container, compose, helm, package]

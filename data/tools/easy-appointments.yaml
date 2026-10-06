@@ -1,0 +1,8 @@
+name: Easy!Appointments
+repository: https://github.com/alextselegidis/easyappointments
+category: scheduling
+replaces:
+  - tool: calendly
+    fit: partial
+    note: A booking page for services and providers with working plans and Google Calendar sync.
+deploy: [container]

@@ -1,0 +1,8 @@
+name: OpenShot
+repository: https://github.com/OpenShot/openshot-qt
+category: video-editing
+terms: open
+replaces:
+  - tool: premiere-pro
+    fit: full
+    note: Timeline-based non-linear editing with transitions, keyframe animation and titles on Linux, macOS and Windows, in its own interface.

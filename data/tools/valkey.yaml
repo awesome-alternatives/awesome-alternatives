@@ -9,4 +9,7 @@ replaces:
   - tool: memcached
     fit: partial
     note: "Serves as a cache in memcached's place, but through the Redis protocol."
+  - tool: redis-cloud
+    fit: full
+    note: Fork of Redis 7.2.4 with the same protocol and core commands, run on your own machines.
 deploy: [container]

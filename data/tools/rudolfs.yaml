@@ -5,4 +5,7 @@ replaces:
   - tool: lfs-test-server
     fit: full
     note: Caching server with S3 or local storage.
+  - tool: github-lfs
+    fit: partial
+    note: The repository stays on GitHub and LFS objects go to S3 or disk, without client authentication, so it belongs on an internal network.
 deploy: [container, compose]

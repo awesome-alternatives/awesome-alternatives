@@ -1,0 +1,7 @@
+name: Reposilite
+repository: https://github.com/dzikoysk/reposilite
+category: artifact-repository
+replaces:
+  - tool: jfrog-artifactory
+    fit: partial
+    note: Hosts and proxies Maven repositories only.

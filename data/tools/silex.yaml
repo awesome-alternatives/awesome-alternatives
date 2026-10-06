@@ -1,0 +1,14 @@
+name: Silex
+repository: https://github.com/silexlabs/Silex
+category: design-tool
+replaces:
+  - tool: webflow
+    fit: partial
+    note: A visual editor that produces static sites, with content from headless CMSs, published to your own hosting or git.
+  - tool: wix
+    fit: partial
+    note: A visual editor for static sites, without hosting, an app market or an online store.
+  - tool: squarespace
+    fit: partial
+    note: A visual editor for static sites, without hosting or commerce.
+deploy: [container, binary, package]

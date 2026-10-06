@@ -1,0 +1,9 @@
+name: Percona Operator for MongoDB
+repository: https://github.com/percona/percona-server-mongodb-operator
+category: document-database
+terms: open
+replaces:
+  - tool: mongodb-atlas
+    fit: full
+    note: Deploys, scales and backs up replica sets and sharded clusters of Percona Server for MongoDB on your own Kubernetes cluster.
+deploy: [helm]

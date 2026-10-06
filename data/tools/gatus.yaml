@@ -11,4 +11,7 @@ replaces:
   - tool: statuspage
     fit: full
     note: A status page built from its own health checks.
+  - tool: cronitor
+    fit: partial
+    note: External endpoints take heartbeats pushed from jobs, next to its own checks and a status page.
 deploy: [container, compose, helm]

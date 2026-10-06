@@ -1,0 +1,7 @@
+name: MegaLinter
+repository: https://github.com/oxsecurity/megalinter
+category: static-analysis
+replaces:
+  - tool: sonarcloud
+    fit: partial
+    note: Runs many linters and analyzers in CI and reports on pull requests, with no server keeping history.

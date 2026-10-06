@@ -1,0 +1,7 @@
+name: Krita AI Diffusion
+repository: https://github.com/Acly/krita-ai-diffusion
+category: image-generation
+replaces:
+  - tool: midjourney
+    fit: partial
+    note: Generates, inpaints and upscales images with open models inside Krita, on your own GPU or a cloud service; Midjourney's own models are not available.

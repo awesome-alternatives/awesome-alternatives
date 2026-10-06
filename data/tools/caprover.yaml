@@ -5,4 +5,16 @@ replaces:
   - tool: heroku
     fit: full
     note: Deploys from a dashboard, the CLI or a git webhook onto Docker Swarm, with one-click apps for databases.
+  - tool: vercel
+    fit: partial
+    note: Node and static apps deployed from a dashboard, the CLI or a git webhook, without preview deployments or a global edge network.
+  - tool: netlify
+    fit: partial
+    note: Static sites deployed from a dashboard, the CLI or a git webhook, without preview deployments, functions or forms.
+  - tool: railway
+    fit: full
+    note: Apps and one-click databases from a dashboard, on servers you bring.
+  - tool: render
+    fit: full
+    note: Web services and one-click databases from a dashboard or a git webhook, on servers you bring.
 deploy: [container]

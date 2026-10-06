@@ -1,0 +1,8 @@
+name: GrapesJS
+repository: https://github.com/GrapesJS/grapesjs
+category: design-tool
+terms: open
+replaces:
+  - tool: webflow
+    fit: partial
+    note: A JavaScript framework for embedding a drag-and-drop page builder in your own application, not a hosted product.

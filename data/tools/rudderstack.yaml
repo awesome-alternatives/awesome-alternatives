@@ -1,0 +1,9 @@
+name: RudderStack
+repository: https://github.com/rudderlabs/rudder-server
+category: data-integration
+terms: source-available
+replaces:
+  - tool: segment
+    fit: full
+    note: Event collection compatible with the Segment API, routed to tool and warehouse destinations.
+deploy: [container, compose, helm]

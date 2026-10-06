@@ -1,0 +1,8 @@
+name: Snowplow
+repository: https://github.com/snowplow/snowplow
+category: data-integration
+terms: source-available
+replaces:
+  - tool: segment
+    fit: partial
+    note: Event collection from its own trackers, validated against schemas and enriched, then loaded into a warehouse, lake or stream; no audiences.

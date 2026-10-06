@@ -1,0 +1,7 @@
+name: Gittyup
+repository: https://github.com/Murmele/Gittyup
+category: git-client
+replaces:
+  - tool: sourcetree
+    fit: full
+    note: A desktop client with a commit graph, staging by hunk and side-by-side diffs, for Windows, macOS and Linux.

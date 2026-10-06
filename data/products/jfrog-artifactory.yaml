@@ -1,0 +1,5 @@
+name: JFrog Artifactory
+homepage: https://jfrog.com/artifactory/
+vendor: JFrog
+category: artifact-repository
+description: JFrog's binary repository manager that hosts and proxies packages, container images and build artefacts across dozens of formats, as a cloud service or a self-managed install.

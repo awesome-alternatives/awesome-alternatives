@@ -5,4 +5,7 @@ replaces:
   - tool: plex
     fit: partial
     note: Music and podcasts only, streamed to its web player and mobile apps.
+  - tool: spotify
+    fit: partial
+    note: Streams your own music and podcasts to its web player and mobile apps; there is no catalog of music to stream.
 deploy: [container]

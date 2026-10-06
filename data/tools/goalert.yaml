@@ -1,0 +1,8 @@
+name: GoAlert
+repository: https://github.com/target/goalert
+category: incident-management
+replaces:
+  - tool: pagerduty
+    fit: full
+    note: On-call schedules, escalation policies and notifications by SMS, voice, email and Slack, on a server you run.
+deploy: [binary]

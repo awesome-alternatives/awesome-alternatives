@@ -1,0 +1,8 @@
+name: ElasticMQ
+repository: https://github.com/softwaremill/elasticmq
+category: message-streaming
+replaces:
+  - tool: amazon-sqs
+    fit: drop-in
+    note: Implements the SQS API, so the AWS SDKs and CLI only need to point at its endpoint.
+deploy: [container, compose, binary]

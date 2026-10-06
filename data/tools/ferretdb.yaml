@@ -6,4 +6,7 @@ replaces:
     fit: drop-in
     note: Speaks the MongoDB wire protocol on top of PostgreSQL.
     migration: https://docs.ferretdb.io/migration/
+  - tool: mongodb-atlas
+    fit: partial
+    note: Speaks the MongoDB wire protocol on top of PostgreSQL, run by you, without every MongoDB command or Atlas service.
 deploy: [container, compose, binary, package]

@@ -5,3 +5,6 @@ replaces:
   - tool: sops
     fit: partial
     note: Encrypts the values in .env files with a public key and decrypts them when the process starts; env files only.
+  - tool: doppler
+    fit: partial
+    note: Encrypted .env files kept with the code and decrypted when the process starts, with no server to sync from.

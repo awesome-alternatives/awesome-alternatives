@@ -5,4 +5,7 @@ replaces:
   - tool: redis
     fit: partial
     note: Redis protocol on top of RocksDB, keeping data on disk rather than in memory.
+  - tool: redis-cloud
+    fit: partial
+    note: Redis protocol on top of RocksDB, keeping data on disk rather than in memory.
 deploy: [container]

@@ -1,0 +1,8 @@
+name: WriteFreely
+repository: https://github.com/writefreely/writefreely
+category: newsletter
+replaces:
+  - tool: substack
+    fit: partial
+    note: Federated blogs whose posts are emailed to subscribers, without paid subscriptions.
+deploy: [container, binary]

@@ -1,0 +1,9 @@
+name: Jasmin
+repository: https://github.com/jookies/jasmin
+category: notification-infrastructure
+terms: open
+replaces:
+  - tool: twilio
+    fit: partial
+    note: An SMS gateway with HTTP and SMPP APIs, routing and delivery receipts, sending through your own SMPP connections to carriers; no voice.
+deploy: [container, compose]

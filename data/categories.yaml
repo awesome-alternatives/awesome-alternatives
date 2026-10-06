@@ -776,3 +776,13 @@ resume-builder:
   name: Resume builders
   description: Write resumes from templates and export them to PDF.
   selfHost: true
+
+artifact-repository:
+  name: Artifact repositories
+  description: Host and proxy packages and build artefacts for Maven, npm, PyPI, containers and other formats.
+  selfHost: true
+
+static-analysis:
+  name: Static analysis
+  description: Inspect source code for bugs, code smells and security issues, and track the findings across branches and pull requests.
+  selfHost: true

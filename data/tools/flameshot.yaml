@@ -1,0 +1,7 @@
+name: Flameshot
+repository: https://github.com/flameshot-org/flameshot
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Screenshots with in-place annotation on Linux, macOS and Windows, without screen recording.

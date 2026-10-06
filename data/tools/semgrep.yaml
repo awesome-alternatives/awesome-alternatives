@@ -1,0 +1,7 @@
+name: Semgrep
+repository: https://github.com/semgrep/semgrep
+category: static-analysis
+replaces:
+  - tool: sonarcloud
+    fit: partial
+    note: Rule-based scans of many languages from the CLI or in CI, with no server keeping findings across branches.

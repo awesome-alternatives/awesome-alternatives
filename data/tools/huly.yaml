@@ -9,3 +9,6 @@ replaces:
   - tool: linear
     fit: full
     note: Issues, sprints and GitHub sync.
+  - tool: clickup
+    fit: partial
+    note: Tasks, documents, chat and a calendar in one workspace.

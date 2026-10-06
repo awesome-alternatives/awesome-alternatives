@@ -1,0 +1,7 @@
+name: Octelium
+repository: https://github.com/octelium/octelium
+category: reverse-proxy
+replaces:
+  - tool: cloudflare-tunnel
+    fit: partial
+    note: Publishes private resources publicly or behind identity-based access policies through a cluster you run on Kubernetes, without a CDN.

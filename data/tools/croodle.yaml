@@ -1,0 +1,7 @@
+name: Croodle
+repository: https://github.com/jelhan/croodle
+category: scheduling
+replaces:
+  - tool: doodle
+    fit: partial
+    note: End-to-end encrypted polls to pick a date or answer a question, without accounts or calendar integration.

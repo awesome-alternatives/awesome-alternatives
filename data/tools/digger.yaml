@@ -1,0 +1,7 @@
+name: Digger
+repository: https://github.com/diggerhq/digger
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: partial
+    note: Runs plan and apply inside your existing CI from pull requests, with locks and policies, without remote workspaces.

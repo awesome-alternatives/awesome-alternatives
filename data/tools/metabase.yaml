@@ -9,4 +9,7 @@ replaces:
   - tool: looker
     fit: partial
     note: Models and metrics defined in the UI.
+  - tool: power-bi
+    fit: partial
+    note: Questions and dashboards in the browser, without a desktop authoring app or DAX.
 deploy: [container]

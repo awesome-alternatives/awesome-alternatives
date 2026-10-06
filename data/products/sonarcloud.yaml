@@ -1,0 +1,5 @@
+name: SonarQube Cloud
+homepage: https://www.sonarsource.com/products/sonarqube/cloud/
+vendor: SonarSource
+category: static-analysis
+description: SonarSource's hosted static analysis service, formerly SonarCloud, that analyses code from connected repositories for bugs, code smells and vulnerabilities and reports on branches and pull requests.

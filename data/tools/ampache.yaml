@@ -5,4 +5,7 @@ replaces:
   - tool: plex
     fit: partial
     note: Mostly music, streamed to its web interface and to Ampache and Subsonic API clients.
+  - tool: spotify
+    fit: partial
+    note: Streams your own music library to its web interface and to Ampache and Subsonic API clients; there is no catalog of music to stream.
 deploy: [container, compose]

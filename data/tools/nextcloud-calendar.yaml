@@ -1,0 +1,7 @@
+name: Nextcloud Calendar
+repository: https://github.com/nextcloud/calendar
+category: scheduling
+replaces:
+  - tool: calendly
+    fit: partial
+    note: Appointment booking links over your Nextcloud calendars, with an optional Talk room per booking; needs a Nextcloud server.

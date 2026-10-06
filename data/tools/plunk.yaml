@@ -5,4 +5,7 @@ replaces:
   - tool: mailchimp
     fit: partial
     note: Campaigns, segments and workflow automations next to transactional email, sent through Amazon SES.
+  - tool: sendgrid
+    fit: partial
+    note: Transactional email over an HTTP API next to campaigns and automations, sent through Amazon SES.
 deploy: [container, compose]

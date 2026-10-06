@@ -8,4 +8,7 @@ replaces:
   - tool: astra-db
     fit: full
     note: Astra DB is built on Cassandra, so CQL tables and drivers carry over; the Data API and serverless scaling do not.
+  - tool: amazon-dynamodb
+    fit: partial
+    note: Partitioned wide-column tables with tunable consistency through CQL, not the DynamoDB API.
 deploy: [package]

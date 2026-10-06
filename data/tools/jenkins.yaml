@@ -1,4 +1,8 @@
 name: Jenkins
 repository: https://github.com/jenkinsci/jenkins
 category: ci-server
+replaces:
+  - tool: circleci
+    fit: full
+    note: Pipelines in a Jenkinsfile run on agents you operate, extended through plugins.
 deploy: [container, helm, binary, package]

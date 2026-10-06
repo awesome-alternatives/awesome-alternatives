@@ -1,0 +1,5 @@
+name: Elastic Cloud
+homepage: https://www.elastic.co/cloud
+vendor: Elastic
+category: search-engine
+description: Elastic's managed service that runs Elasticsearch and Kibana on AWS, Google Cloud and Azure.

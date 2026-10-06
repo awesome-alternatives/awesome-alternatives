@@ -1,5 +1,9 @@
 name: MongoDB
 repository: https://github.com/mongodb/mongo
 category: document-database
+replaces:
+  - tool: mongodb-atlas
+    fit: full
+    note: The server Atlas runs, operated by you, with replication, sharding, backups and upgrades yours to manage.
 terms: source-available
 deploy: [container, package]

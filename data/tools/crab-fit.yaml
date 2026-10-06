@@ -1,0 +1,7 @@
+name: Crab Fit
+repository: https://github.com/GRA0007/crab.fit
+category: scheduling
+replaces:
+  - tool: doodle
+    fit: partial
+    note: Each participant paints their availability on a grid and the overlap shows the best time, without accounts.

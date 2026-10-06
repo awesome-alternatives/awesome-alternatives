@@ -9,4 +9,7 @@ replaces:
   - tool: confluence
     fit: full
     note: Team wiki with collections, search and permissions.
+  - tool: hackmd
+    fit: partial
+    note: Real-time collaborative documents with Markdown shortcuts, Markdown import and export, organised as a team wiki rather than standalone notes.
 deploy: [container]

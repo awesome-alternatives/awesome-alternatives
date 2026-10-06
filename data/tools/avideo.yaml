@@ -1,0 +1,15 @@
+name: AVideo
+repository: https://github.com/WWBN/AVideo
+category: video-hosting
+terms: source-available
+replaces:
+  - tool: youtube
+    fit: partial
+    note: A video site with uploads, channels, playlists, comments and embeds on your own server.
+  - tool: vimeo
+    fit: partial
+    note: Hosted videos with an embeddable player and private or unlisted videos, on your own server.
+  - tool: twitch
+    fit: partial
+    note: Live streams with chat through its live plugin and RTMP server, alongside uploaded videos.
+deploy: [compose]

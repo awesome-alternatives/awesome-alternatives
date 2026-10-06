@@ -1,0 +1,11 @@
+name: Bigcapital
+repository: https://github.com/bigcapitalhq/bigcapital
+category: erp
+replaces:
+  - tool: quickbooks
+    fit: full
+    note: Double-entry accounting with invoices, bills, bank feeds, inventory items and financial reports.
+  - tool: xero
+    fit: full
+    note: Double-entry accounting with invoices, bills, bank feeds, inventory items and financial reports.
+deploy: [container, compose]

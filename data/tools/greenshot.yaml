@@ -1,0 +1,7 @@
+name: Greenshot
+repository: https://github.com/greenshot/greenshot
+category: screen-recording
+replaces:
+  - tool: snagit
+    fit: partial
+    note: Screenshots with an annotation editor and export to files, the clipboard or other apps on Windows, without screen recording.

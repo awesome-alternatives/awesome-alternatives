@@ -6,3 +6,7 @@ replaces:
     fit: full
     note: End-to-end encrypted notes on desktop, mobile and web, with a sync server you can host.
     migration: https://help.notesnook.com/importing-notes/import-notes-from-evernote
+  - tool: google-keep
+    fit: full
+    note: End-to-end encrypted notes and checklists on desktop, mobile and web, with a Google Keep importer.
+    migration: https://help.notesnook.com/importing-notes/import-notes-from-googlekeep

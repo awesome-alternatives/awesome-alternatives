@@ -8,4 +8,7 @@ replaces:
   - tool: statuspage
     fit: full
     note: Public status pages next to the monitors, self-hosted.
+  - tool: cronitor
+    fit: partial
+    note: Push monitors for heartbeats next to uptime checks and status pages, without start and finish telemetry for jobs.
 deploy: [container, compose]

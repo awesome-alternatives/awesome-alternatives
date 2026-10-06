@@ -1,0 +1,8 @@
+name: Swing Music
+repository: https://github.com/swingmx/swingmusic
+category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music library to a web player and an Android app, with daily mixes and listening stats; there is no catalog of music to stream.
+deploy: [container]

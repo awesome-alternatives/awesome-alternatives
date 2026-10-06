@@ -1,0 +1,8 @@
+name: OpenSearch Kubernetes Operator
+repository: https://github.com/opensearch-project/opensearch-k8s-operator
+category: search-engine
+replaces:
+  - tool: elastic-cloud
+    fit: partial
+    note: Deploys, scales and upgrades OpenSearch and OpenSearch Dashboards on your own Kubernetes cluster; OpenSearch APIs have diverged from Elasticsearch.
+deploy: [helm]

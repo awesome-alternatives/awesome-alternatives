@@ -1,0 +1,8 @@
+name: sish
+repository: https://github.com/antoniomika/sish
+category: reverse-proxy
+replaces:
+  - tool: ngrok
+    fit: full
+    note: HTTP, WebSocket and TCP tunnels opened with a plain SSH client to a server you run, with no agent to install.
+deploy: [container, compose, binary]

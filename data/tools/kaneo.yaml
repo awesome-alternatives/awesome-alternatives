@@ -8,4 +8,7 @@ replaces:
   - tool: asana
     fit: partial
     note: Projects with board, list, calendar and Gantt views, subtasks and dependencies, without portfolios or goals.
+  - tool: linear
+    fit: partial
+    note: Issues on board, list, calendar and Gantt views with a backlog, filters and GitHub and Gitea integrations.
 deploy: [container, compose, helm]

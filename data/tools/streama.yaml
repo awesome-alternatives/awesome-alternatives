@@ -1,0 +1,11 @@
+name: Streama
+repository: https://github.com/streamaserver/streama
+category: media-server
+replaces:
+  - tool: netflix
+    fit: partial
+    note: A web player for your own films and series with metadata and user accounts; there is no catalog of content to watch.
+  - tool: emby
+    fit: partial
+    note: Films and series with metadata in a web player, without music or native client apps.
+deploy: [binary]

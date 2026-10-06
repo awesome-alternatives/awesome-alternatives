@@ -5,3 +5,6 @@ replaces:
   - tool: google-docs
     fit: full
     note: End-to-end encrypted documents, spreadsheets, presentations and forms, edited together in the browser.
+  - tool: hackmd
+    fit: partial
+    note: Its code pad edits Markdown together in real time with a live preview, end-to-end encrypted, without HackMD's slide mode.

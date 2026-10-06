@@ -5,4 +5,7 @@ replaces:
   - tool: kafka
     fit: partial
     note: Durable streams with JetStream, without Kafka's protocol.
+  - tool: amazon-sqs
+    fit: partial
+    note: Work queues on JetStream streams, through its own protocol and clients.
 deploy: [container, binary]

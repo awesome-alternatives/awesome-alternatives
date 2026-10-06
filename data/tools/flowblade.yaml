@@ -1,0 +1,7 @@
+name: Flowblade
+repository: https://github.com/jliljebl/flowblade
+category: video-editing
+replaces:
+  - tool: premiere-pro
+    fit: full
+    note: Multitrack non-linear editing with filters and compositing, on Linux only.

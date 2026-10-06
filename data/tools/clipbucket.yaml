@@ -1,0 +1,12 @@
+name: ClipBucket
+repository: https://github.com/MacWarrior/clipbucket-v5
+category: video-hosting
+terms: open
+replaces:
+  - tool: youtube
+    fit: partial
+    note: A video sharing site with uploads, channels, playlists and comments, without live streaming.
+  - tool: vimeo
+    fit: partial
+    note: Uploaded videos with an embeddable player and private videos, without live streaming.
+deploy: [container, compose]

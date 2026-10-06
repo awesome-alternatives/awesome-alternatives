@@ -9,3 +9,6 @@ replaces:
   - tool: miro
     fit: partial
     note: Includes an edgeless whiteboard mode.
+  - tool: onenote
+    fit: partial
+    note: Pages that switch between a document and a free-form edgeless canvas, local-first or synced.

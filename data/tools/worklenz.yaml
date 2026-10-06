@@ -1,0 +1,11 @@
+name: Worklenz
+repository: https://github.com/Worklenz/worklenz
+category: project-management
+replaces:
+  - tool: monday-com
+    fit: partial
+    note: Projects with list, board and Gantt views, time tracking, resource planning and workload reports.
+  - tool: clickup
+    fit: partial
+    note: Tasks in list, board and Gantt views with time tracking and a cross-project planner, without docs or chat.
+deploy: [compose]

@@ -1,0 +1,7 @@
+name: Atlantis
+repository: https://github.com/runatlantis/atlantis
+category: infrastructure-as-code
+replaces:
+  - tool: hcp-terraform
+    fit: partial
+    note: Runs plan and apply from pull request comments on a server you run, without remote state, workspaces or a module registry.

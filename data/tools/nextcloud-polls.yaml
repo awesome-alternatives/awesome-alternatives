@@ -1,0 +1,7 @@
+name: Nextcloud Polls
+repository: https://github.com/nextcloud/polls
+category: scheduling
+replaces:
+  - tool: doodle
+    fit: full
+    note: Date and text polls with public share links, inside a Nextcloud server.

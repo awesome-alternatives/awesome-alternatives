@@ -1,0 +1,9 @@
+name: Aerospike
+repository: https://github.com/aerospike/aerospike-server
+category: key-value-store
+terms: open
+replaces:
+  - tool: amazon-dynamodb
+    fit: partial
+    note: Key-value and document records sharded and replicated across nodes, through its own clients rather than the DynamoDB API.
+deploy: [package]

@@ -1,0 +1,12 @@
+name: LedgerSMB
+repository: https://github.com/ledgersmb/LedgerSMB
+category: erp
+terms: open
+replaces:
+  - tool: quickbooks
+    fit: partial
+    note: Double-entry accounting, invoicing, orders and inventory in the browser on PostgreSQL, without bank feeds or payroll.
+  - tool: xero
+    fit: partial
+    note: Double-entry accounting, invoicing, orders and inventory in the browser on PostgreSQL, without bank feeds or payroll.
+deploy: [container]

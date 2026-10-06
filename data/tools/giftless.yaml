@@ -5,4 +5,7 @@ replaces:
   - tool: lfs-test-server
     fit: full
     note: Pluggable Python server with cloud storage back ends.
+  - tool: github-lfs
+    fit: partial
+    note: The repository stays on GitHub and LFS objects go to local or cloud storage, with GitHub permissions as one of its auth options.
 deploy: [container]

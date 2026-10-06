@@ -1,0 +1,9 @@
+name: Mumble
+repository: https://github.com/mumble-voip/mumble
+category: team-chat
+terms: open
+replaces:
+  - tool: discord
+    fit: partial
+    note: Low-latency voice chat in channels on your own server, with text messages but no message history or video.
+deploy: [container, binary]

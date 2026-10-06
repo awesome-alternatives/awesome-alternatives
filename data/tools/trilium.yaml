@@ -5,3 +5,6 @@ replaces:
   - tool: evernote
     fit: full
     note: Hierarchical notes with a web clipper and Evernote import, synced through a server you host.
+  - tool: onenote
+    fit: partial
+    note: A hierarchy of rich-text notes synced through a server you host, without OneNote's free-form pages or handwriting.
