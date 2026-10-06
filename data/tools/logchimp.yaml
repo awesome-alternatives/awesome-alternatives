@@ -1,0 +1,9 @@
+name: LogChimp
+repository: https://github.com/logchimp/logchimp
+category: feedback-board
+terms: open-core
+replaces:
+  - tool: canny
+    fit: full
+    note: Feedback boards with voting and a public roadmap.
+deploy: [container, compose]

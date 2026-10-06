@@ -1,0 +1,10 @@
+name: JabRef
+repository: https://github.com/JabRef/jabref
+category: reference-manager
+replaces:
+  - tool: mendeley
+    fit: partial
+    note: Desktop manager for BibTeX and BibLaTeX libraries, aimed at LaTeX users.
+  - tool: endnote
+    fit: partial
+    note: Reference libraries with linked PDFs, stored as BibTeX.

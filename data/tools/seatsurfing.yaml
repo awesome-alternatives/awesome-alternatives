@@ -1,0 +1,4 @@
+name: Seatsurfing
+repository: https://github.com/seatsurfing/seatsurfing
+category: scheduling
+deploy: [container]

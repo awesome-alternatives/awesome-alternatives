@@ -1,0 +1,7 @@
+name: Sakai
+repository: https://github.com/sakaiproject/sakai
+category: lms
+replaces:
+  - tool: blackboard
+    fit: full
+    note: Course sites with assignments, tests, gradebook and forums, run by universities.

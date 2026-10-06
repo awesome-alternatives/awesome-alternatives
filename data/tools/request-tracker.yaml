@@ -1,0 +1,7 @@
+name: Request Tracker
+repository: https://github.com/bestpractical/rt
+category: helpdesk
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Email-driven tickets with queues, custom fields, scrips and a self-service portal.

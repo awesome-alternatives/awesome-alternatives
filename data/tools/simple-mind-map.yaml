@@ -1,0 +1,7 @@
+name: SimpleMindMap
+repository: https://github.com/wanglin2/mind-map
+category: diagramming
+replaces:
+  - tool: xmind
+    fit: full
+    note: Mind maps in the browser or on desktop, with structures, themes and XMind import and export.

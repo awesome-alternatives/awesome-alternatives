@@ -1,0 +1,7 @@
+name: ClassroomIO
+repository: https://github.com/classroomio/classroomio
+category: lms
+replaces:
+  - tool: teachable
+    fit: partial
+    note: Courses, lessons, exercises and certificates for companies and bootcamps.

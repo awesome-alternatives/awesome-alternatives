@@ -1,0 +1,4 @@
+name: OpenBoxes
+repository: https://github.com/openboxes/openboxes
+category: inventory
+deploy: [container]

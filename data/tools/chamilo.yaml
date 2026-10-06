@@ -1,0 +1,7 @@
+name: Chamilo
+repository: https://github.com/chamilo/chamilo-lms
+category: lms
+replaces:
+  - tool: blackboard
+    fit: full
+    note: Courses, exercises, assignments, forums and gradebooks.

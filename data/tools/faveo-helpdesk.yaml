@@ -1,0 +1,8 @@
+name: Faveo Helpdesk
+repository: https://github.com/faveosuite/faveo-helpdesk
+category: helpdesk
+terms: open
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Email tickets with departments, SLAs and a knowledge base.

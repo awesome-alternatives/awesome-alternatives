@@ -1,0 +1,9 @@
+name: Trudesk
+repository: https://github.com/polonel/trudesk
+category: helpdesk
+terms: open
+replaces:
+  - tool: zendesk
+    fit: partial
+    note: Tickets from email and a web portal, with groups, teams and SLAs, without chat or phone.
+deploy: [container, compose]

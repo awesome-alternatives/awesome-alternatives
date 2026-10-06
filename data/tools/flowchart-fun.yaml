@@ -1,0 +1,7 @@
+name: Flowchart Fun
+repository: https://github.com/tone-row/flowchart-fun
+category: diagramming
+replaces:
+  - tool: lucidchart
+    fit: partial
+    note: Flowcharts generated from indented text.

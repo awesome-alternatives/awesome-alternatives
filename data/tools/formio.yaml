@@ -1,0 +1,8 @@
+name: Form.io
+repository: https://github.com/formio/formio
+category: forms-surveys
+replaces:
+  - tool: jotform
+    fit: partial
+    note: Drag-and-drop form builder with a REST API, for embedding forms in your own apps.
+deploy: [container, compose]

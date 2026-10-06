@@ -1,0 +1,11 @@
+name: Zotero
+repository: https://github.com/zotero/zotero
+category: reference-manager
+terms: open
+replaces:
+  - tool: mendeley
+    fit: full
+    note: Collects, organises and annotates papers, cites them in Word, LibreOffice and Google Docs, and imports a Mendeley library.
+  - tool: endnote
+    fit: full
+    note: Libraries of references and PDFs with citations in thousands of styles.

@@ -1,0 +1,7 @@
+name: Frappe Learning
+repository: https://github.com/frappe/lms
+category: lms
+replaces:
+  - tool: teachable
+    fit: partial
+    note: Courses with lessons, quizzes, batches and certificates, with paid courses.

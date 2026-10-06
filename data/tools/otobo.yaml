@@ -1,0 +1,11 @@
+name: OTOBO
+repository: https://github.com/RotherOSS/otobo
+category: helpdesk
+replaces:
+  - tool: servicenow
+    fit: partial
+    note: Ticketing with ITSM modules for incidents, changes and a CMDB.
+  - tool: zendesk
+    fit: partial
+    note: Tickets from email, phone and a customer portal, with queues and SLAs.
+deploy: [container]

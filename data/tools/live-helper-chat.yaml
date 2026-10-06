@@ -1,0 +1,8 @@
+name: Live Helper Chat
+repository: https://github.com/LiveHelperChat/livehelperchat
+category: helpdesk
+replaces:
+  - tool: intercom
+    fit: partial
+    note: Live chat widget with operators, departments, bots and chat routing, without a ticket inbox.
+deploy: [container]

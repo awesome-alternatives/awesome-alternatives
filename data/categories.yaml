@@ -1196,3 +1196,30 @@ data-labeling:
 automl:
   name: AutoML
   description: Train, tune and compare models automatically from tabular, text or image data.
+
+feedback-board:
+  name: Feedback boards
+  description: Collect feature requests, let users vote on them and publish a roadmap.
+  selfHost: true
+
+inventory:
+  name: Inventory and asset management
+  description: Track stock, parts and equipment, and who has them where.
+  selfHost: true
+
+lms:
+  name: Learning platforms
+  description: Courses, assignments and grades for schools, universities and companies.
+  selfHost: true
+
+flashcards:
+  name: Flashcards
+  description: Learn with spaced repetition flashcards.
+
+typesetting:
+  name: Typesetting
+  description: Write documents in a markup language such as LaTeX or Typst and compile them to PDF.
+
+reference-manager:
+  name: Reference managers
+  description: Collect papers and sources, organise them and cite them in documents.

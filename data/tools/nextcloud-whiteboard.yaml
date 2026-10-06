@@ -1,0 +1,7 @@
+name: Nextcloud Whiteboard
+repository: https://github.com/nextcloud/whiteboard
+category: diagramming
+replaces:
+  - tool: miro
+    fit: partial
+    note: Excalidraw-based whiteboards stored as files in Nextcloud, edited together in real time.

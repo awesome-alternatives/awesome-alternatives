@@ -1,0 +1,10 @@
+name: Znuny
+repository: https://github.com/znuny/Znuny
+category: helpdesk
+replaces:
+  - tool: servicenow
+    fit: partial
+    note: Ticketing with queues, SLAs and an ITSM package for changes and a CMDB.
+  - tool: zendesk
+    fit: partial
+    note: Tickets from email and a customer portal, with queues and SLAs.

@@ -1,0 +1,7 @@
+name: LibreBooking
+repository: https://github.com/LibreBooking/librebooking
+category: scheduling
+replaces:
+  - tool: calendly
+    fit: partial
+    note: Reservations of rooms and equipment with quotas and approvals, not personal booking pages.

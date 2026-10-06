@@ -1,0 +1,7 @@
+name: ONLYOFFICE Desktop Editors
+repository: https://github.com/ONLYOFFICE/DesktopEditors
+category: office-suite
+replaces:
+  - tool: microsoft-365
+    fit: partial
+    note: Desktop editors for Word, Excel and PowerPoint files, without mail or cloud storage.

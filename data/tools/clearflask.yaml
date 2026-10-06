@@ -1,0 +1,8 @@
+name: ClearFlask
+repository: https://github.com/clearflask/clearflask
+category: feedback-board
+replaces:
+  - tool: canny
+    fit: full
+    note: Feedback boards with voting, a roadmap and a changelog.
+deploy: [container, compose]

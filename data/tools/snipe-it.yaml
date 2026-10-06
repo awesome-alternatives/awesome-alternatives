@@ -1,0 +1,4 @@
+name: Snipe-IT
+repository: https://github.com/grokability/snipe-it
+category: inventory
+deploy: [container, compose]

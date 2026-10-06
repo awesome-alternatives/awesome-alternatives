@@ -1,0 +1,7 @@
+name: iTop
+repository: https://github.com/Combodo/iTop
+category: helpdesk
+replaces:
+  - tool: servicenow
+    fit: partial
+    note: CMDB with incident, request, problem and change management.

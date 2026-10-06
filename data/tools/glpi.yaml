@@ -1,0 +1,8 @@
+name: GLPI
+repository: https://github.com/glpi-project/glpi
+category: helpdesk
+replaces:
+  - tool: servicenow
+    fit: partial
+    note: IT service desk with incidents, problems, changes, an asset inventory and a CMDB.
+deploy: [container]

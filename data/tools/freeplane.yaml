@@ -1,0 +1,7 @@
+name: Freeplane
+repository: https://github.com/freeplane/freeplane
+category: diagramming
+replaces:
+  - tool: xmind
+    fit: full
+    note: Desktop mind maps with styles, formulas, scripting and export to many formats.
