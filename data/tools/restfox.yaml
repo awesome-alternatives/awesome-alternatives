@@ -1,0 +1,10 @@
+name: Restfox
+repository: https://github.com/flawiddsouza/Restfox
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: Offline-first HTTP and WebSocket client in the browser or on the desktop, imports Postman collections.
+  - tool: insomnia
+    fit: partial
+    note: Imports Insomnia exports, with a similar request and environment layout.

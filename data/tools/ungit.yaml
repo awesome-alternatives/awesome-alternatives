@@ -1,0 +1,7 @@
+name: ungit
+repository: https://github.com/FredrikNoren/ungit
+category: git-client
+replaces:
+  - tool: sourcetree
+    fit: partial
+    note: A git client served locally and used from the browser.

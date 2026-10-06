@@ -1,0 +1,8 @@
+name: IntelliJ IDEA open-source build
+repository: https://github.com/JetBrains/intellij-community
+category: text-editor
+replaces:
+  - tool: intellij-idea
+    fit: partial
+    note: The Apache-licensed build of IntelliJ IDEA, without the commercial features of the paid edition.
+terms: open

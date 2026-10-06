@@ -1,0 +1,7 @@
+name: far2l
+repository: https://github.com/elfmz/far2l
+category: terminal-file-manager
+replaces:
+  - tool: far-manager
+    fit: full
+    note: A port of Far Manager to Linux, macOS and the BSDs.

@@ -1,0 +1,5 @@
+name: Termius
+homepage: https://termius.com
+vendor: Termius
+category: terminal-emulator
+description: SSH and SFTP client for desktop and mobile with hosts and keys synced through an account.

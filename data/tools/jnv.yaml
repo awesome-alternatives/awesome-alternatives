@@ -1,0 +1,7 @@
+name: jnv
+repository: https://github.com/ynqa/jnv
+category: json-processor
+replaces:
+  - tool: jq
+    fit: partial
+    note: An interactive viewer where jq filters are edited with a live preview.

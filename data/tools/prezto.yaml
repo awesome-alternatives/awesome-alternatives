@@ -1,0 +1,7 @@
+name: Prezto
+repository: https://github.com/sorin-ionescu/prezto
+category: shell-prompt
+replaces:
+  - tool: ohmyzsh
+    fit: full
+    note: A zsh configuration framework with modules and prompt themes.

@@ -1,0 +1,7 @@
+name: git-branchless
+repository: https://github.com/arxanas/git-branchless
+category: stacked-pull-requests
+replaces:
+  - tool: graphite-dev
+    fit: partial
+    note: Stacked commits with a smartlog, restacking and undo, without a review dashboard.

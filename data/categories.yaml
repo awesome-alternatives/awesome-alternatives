@@ -634,6 +634,38 @@ terminal-file-manager:
   name: Terminal file managers
   description: Browse, preview and move files from a keyboard-driven interface in the terminal.
 
+file-finder:
+  name: File finders
+  description: Find files by name, type, size or date from the terminal, as a faster find.
+
+grpc-client:
+  name: gRPC clients
+  description: Call gRPC services from the command line or a browser, using reflection or proto files.
+
+mock-server:
+  name: Mock servers
+  description: Stand in for HTTP APIs during development and tests with recorded or declared responses.
+
+api-documentation:
+  name: API documentation
+  description: Render interactive API reference pages from OpenAPI and AsyncAPI documents.
+
+code-documentation:
+  name: Code documentation generators
+  description: Build reference documentation from source code and its doc comments.
+
+git-extensions:
+  name: Git extensions
+  description: Extra git subcommands for history rewriting and everyday repository chores.
+
+repository-statistics:
+  name: Repository statistics
+  description: Summarise a git repository's contributors, activity, languages and size.
+
+stacked-pull-requests:
+  name: Stacked pull requests
+  description: Split a change into a stack of dependent branches or commits and keep their pull requests in sync.
+
 disk-usage:
   name: Disk usage analyzers
   description: Show which directories and files take up the space on a disk.

@@ -1,0 +1,7 @@
+name: Slumber
+repository: https://github.com/LucasPickering/slumber
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: A terminal UI client with collections kept in a YAML file.

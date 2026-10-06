@@ -1,0 +1,5 @@
+name: Graphite
+homepage: https://graphite.dev
+vendor: Graphite
+category: stacked-pull-requests
+description: Hosted code review service and CLI for creating, syncing and merging stacked GitHub pull requests.

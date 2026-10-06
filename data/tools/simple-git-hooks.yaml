@@ -1,0 +1,7 @@
+name: simple-git-hooks
+repository: https://github.com/toplenboren/simple-git-hooks
+category: git-hooks
+replaces:
+  - tool: husky
+    fit: partial
+    note: Hooks declared in package.json, without a hooks directory, one command per hook.

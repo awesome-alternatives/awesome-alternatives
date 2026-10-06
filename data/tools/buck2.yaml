@@ -1,0 +1,7 @@
+name: Buck2
+repository: https://github.com/facebook/buck2
+category: monorepo-tool
+replaces:
+  - tool: bazel
+    fit: full
+    note: Starlark build rules with remote execution, from Meta.

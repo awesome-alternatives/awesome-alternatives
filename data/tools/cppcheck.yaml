@@ -1,0 +1,3 @@
+name: Cppcheck
+repository: https://github.com/cppcheck-opensource/cppcheck
+category: static-analysis

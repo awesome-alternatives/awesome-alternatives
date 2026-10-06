@@ -1,0 +1,3 @@
+name: rbenv
+repository: https://github.com/rbenv/rbenv
+category: runtime-version-manager

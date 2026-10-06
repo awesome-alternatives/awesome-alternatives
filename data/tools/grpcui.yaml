@@ -1,0 +1,7 @@
+name: gRPC UI
+repository: https://github.com/fullstorydev/grpcui
+category: grpc-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: A browser UI for calling gRPC methods only.

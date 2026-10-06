@@ -1,0 +1,7 @@
+name: riff
+repository: https://github.com/walles/riff
+category: git-diff-pager
+replaces:
+  - tool: diff-so-fancy
+    fit: partial
+    note: Highlights the changed parts of each line, as a pager for git and diff.

@@ -1,0 +1,7 @@
+name: electerm
+repository: https://github.com/electerm/electerm
+category: terminal-emulator
+replaces:
+  - tool: termius
+    fit: partial
+    note: Terminal, SSH and SFTP client with saved bookmarks, on the desktop or in a browser, without hosted sync.

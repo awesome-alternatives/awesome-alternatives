@@ -1,0 +1,10 @@
+name: Scalar
+repository: https://github.com/scalar/scalar
+category: api-documentation
+replaces:
+  - tool: readme
+    fit: partial
+    note: API references and a built-in API client generated from an OpenAPI document.
+  - tool: postman
+    fit: partial
+    note: An API client generated from an OpenAPI document.

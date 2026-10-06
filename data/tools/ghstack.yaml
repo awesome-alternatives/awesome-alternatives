@@ -1,0 +1,7 @@
+name: ghstack
+repository: https://github.com/ezyang/ghstack
+category: stacked-pull-requests
+replaces:
+  - tool: graphite-dev
+    fit: partial
+    note: Pushes each commit of a stack as its own GitHub pull request.

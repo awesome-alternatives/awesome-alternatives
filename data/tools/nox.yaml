@@ -1,0 +1,7 @@
+name: Nox
+repository: https://github.com/wntrblm/nox
+category: task-runner
+replaces:
+  - tool: tox
+    fit: partial
+    note: Sessions are defined in a Python noxfile instead of an ini file.

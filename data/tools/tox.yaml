@@ -1,0 +1,3 @@
+name: tox
+repository: https://github.com/tox-dev/tox
+category: task-runner

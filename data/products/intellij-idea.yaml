@@ -1,0 +1,5 @@
+name: IntelliJ IDEA
+homepage: https://www.jetbrains.com/idea/
+vendor: JetBrains
+category: text-editor
+description: JetBrains IDE for Java, Kotlin and other JVM languages, with a paid edition for web and enterprise frameworks.

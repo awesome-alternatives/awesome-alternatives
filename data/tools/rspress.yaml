@@ -1,0 +1,7 @@
+name: Rspress
+repository: https://github.com/web-infra-dev/rspress
+category: documentation-site
+replaces:
+  - tool: docusaurus
+    fit: full
+    note: A React documentation site generator built on Rspack, with MDX pages.

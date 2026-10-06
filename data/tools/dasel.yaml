@@ -1,0 +1,10 @@
+name: dasel
+repository: https://github.com/TomWright/dasel
+category: json-processor
+replaces:
+  - tool: jq
+    fit: partial
+    note: One selector syntax across JSON, YAML, TOML, XML and CSV, not jq's filter language.
+  - tool: yq
+    fit: partial
+    note: Reads and writes YAML, TOML, XML and CSV with its own selector syntax.

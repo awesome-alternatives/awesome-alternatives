@@ -1,0 +1,7 @@
+name: Pants
+repository: https://github.com/pantsbuild/pants
+category: monorepo-tool
+replaces:
+  - tool: bazel
+    fit: partial
+    note: Infers dependencies from imports, for Python, Go, JVM and shell repositories.

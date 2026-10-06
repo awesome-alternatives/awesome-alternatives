@@ -1,0 +1,7 @@
+name: av
+repository: https://github.com/aviator-co/av
+category: stacked-pull-requests
+replaces:
+  - tool: graphite-dev
+    fit: partial
+    note: A CLI for stacked branches and their GitHub pull requests, without a review dashboard.

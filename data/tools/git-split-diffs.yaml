@@ -1,0 +1,7 @@
+name: git-split-diffs
+repository: https://github.com/banga/git-split-diffs
+category: git-diff-pager
+replaces:
+  - tool: diff-so-fancy
+    fit: partial
+    note: Side-by-side diffs with syntax highlighting, styled like GitHub's.

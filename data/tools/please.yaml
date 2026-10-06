@@ -1,0 +1,7 @@
+name: Please
+repository: https://github.com/thought-machine/please
+category: monorepo-tool
+replaces:
+  - tool: bazel
+    fit: full
+    note: Bazel-style BUILD files with a smaller toolchain.
