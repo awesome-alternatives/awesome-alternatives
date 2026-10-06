@@ -1,0 +1,7 @@
+name: DVC
+repository: https://github.com/treeverse/dvc
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: partial
+    note: Versions data and models alongside git and tracks experiments from the command line.

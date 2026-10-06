@@ -1,0 +1,11 @@
+name: ClearML
+repository: https://github.com/clearml/clearml
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: full
+    note: Experiment tracking, data versioning, pipelines and remote execution on one server.
+  - tool: comet
+    fit: full
+    note: Experiment tracking and a model registry on your own server.
+deploy: [compose, helm]

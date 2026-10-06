@@ -1,0 +1,8 @@
+name: MinerU
+repository: https://github.com/opendatalab/MinerU
+category: document-parsing
+terms: source-available
+replaces:
+  - tool: llamaparse
+    fit: full
+    note: Converts PDFs to Markdown and JSON, keeping formulas and tables.

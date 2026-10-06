@@ -1,0 +1,7 @@
+name: H2O-3
+repository: https://github.com/h2oai/h2o-3
+category: automl
+replaces:
+  - tool: datarobot
+    fit: partial
+    note: A distributed ML platform with AutoML, with Python and R clients and a web notebook.

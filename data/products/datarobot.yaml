@@ -1,0 +1,5 @@
+name: DataRobot
+homepage: https://www.datarobot.com
+vendor: DataRobot
+category: automl
+description: Platform for building, deploying and monitoring ML models with automated machine learning.

@@ -1,0 +1,10 @@
+name: OCRmyPDF
+repository: https://github.com/ocrmypdf/OCRmyPDF
+category: ocr
+replaces:
+  - tool: abbyy-finereader
+    fit: partial
+    note: Adds a searchable text layer to scanned PDFs from the command line.
+  - tool: adobe-acrobat
+    fit: partial
+    note: "The OCR step only: makes scanned PDFs searchable."

@@ -1,0 +1,5 @@
+name: Vertex AI
+homepage: https://cloud.google.com/vertex-ai
+vendor: Google Cloud
+category: ml-pipelines
+description: Managed Google Cloud platform for training, tuning and deploying ML and generative AI models.

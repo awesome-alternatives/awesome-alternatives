@@ -1,0 +1,8 @@
+name: Polyaxon
+repository: https://github.com/polyaxon/polyaxon
+category: experiment-tracking
+replaces:
+  - tool: weights-and-biases
+    fit: partial
+    note: Tracking, hyperparameter search and job scheduling on Kubernetes.
+deploy: [helm]

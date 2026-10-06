@@ -1,0 +1,8 @@
+name: MLServer
+repository: https://github.com/SeldonIO/MLServer
+category: model-serving
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: A Python inference server speaking the V2 inference protocol.
+deploy: [container]

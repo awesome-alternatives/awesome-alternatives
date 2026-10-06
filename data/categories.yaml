@@ -1015,3 +1015,44 @@ speech-to-text:
   name: Speech to text
   description: Transcribe recordings, meetings and dictation with speech recognition models on your own hardware.
   selfHost: true
+
+text-to-speech:
+  name: Text to speech
+  description: Generate speech from text, with voice cloning on some models, on your own hardware.
+  selfHost: true
+
+ocr:
+  name: OCR
+  description: Recognise text in scanned documents and images.
+
+document-parsing:
+  name: Document parsing
+  description: Convert PDFs, office files and scans into Markdown or JSON that language models and pipelines can read.
+
+model-fine-tuning:
+  name: Model fine-tuning
+  description: Fine-tune language and diffusion models on your own data and GPUs.
+
+experiment-tracking:
+  name: Experiment tracking
+  description: Log the metrics, parameters and artefacts of training runs and compare them in a dashboard.
+  selfHost: true
+
+ml-pipelines:
+  name: ML pipelines
+  description: Define, run and track machine learning pipelines from data preparation to deployment.
+  selfHost: true
+
+model-serving:
+  name: Model serving
+  description: Serve trained machine learning models behind an API, with batching, scaling and versioning.
+  selfHost: true
+
+data-labeling:
+  name: Data labeling
+  description: Annotate images, video, text and audio to build training and evaluation datasets.
+  selfHost: true
+
+automl:
+  name: AutoML
+  description: Train, tune and compare models automatically from tabular, text or image data.

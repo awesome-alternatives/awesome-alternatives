@@ -1,0 +1,7 @@
+name: FLAML
+repository: https://github.com/microsoft/FLAML
+category: automl
+replaces:
+  - tool: datarobot
+    fit: partial
+    note: Fast hyperparameter tuning and model selection, as a Python library.

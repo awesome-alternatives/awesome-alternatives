@@ -1,0 +1,7 @@
+name: Marker
+repository: https://github.com/datalab-to/marker
+category: document-parsing
+replaces:
+  - tool: llamaparse
+    fit: full
+    note: Converts PDF, DOCX and images to Markdown, JSON or HTML, with optional LLM help.

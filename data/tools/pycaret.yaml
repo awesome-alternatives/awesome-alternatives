@@ -1,0 +1,8 @@
+name: PyCaret
+repository: https://github.com/pycaret/pycaret
+category: automl
+terms: source-available
+replaces:
+  - tool: datarobot
+    fit: partial
+    note: A low-code Python library that compares and tunes many models in a few calls.

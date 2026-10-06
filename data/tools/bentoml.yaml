@@ -1,0 +1,7 @@
+name: BentoML
+repository: https://github.com/bentoml/BentoML
+category: model-serving
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Packages models as API services and container images to run anywhere.

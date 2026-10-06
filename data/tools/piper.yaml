@@ -1,0 +1,7 @@
+name: Piper
+repository: https://github.com/OHF-Voice/piper1-gpl
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: Fast offline voices that run on a Raspberry Pi, without voice cloning.

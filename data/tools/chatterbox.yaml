@@ -1,0 +1,7 @@
+name: Chatterbox
+repository: https://github.com/resemble-ai/chatterbox
+category: text-to-speech
+replaces:
+  - tool: elevenlabs
+    fit: partial
+    note: An open TTS model with zero-shot voice cloning and emotion control.

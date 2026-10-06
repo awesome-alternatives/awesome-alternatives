@@ -1,0 +1,8 @@
+name: ZenML
+repository: https://github.com/zenml-io/zenml
+category: ml-pipelines
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Portable pipelines that run on your own orchestrators and clouds, with a model registry.
+deploy: [container, helm]

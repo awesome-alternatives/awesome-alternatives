@@ -1,0 +1,7 @@
+name: Labelme
+repository: https://github.com/wkentaro/labelme
+category: data-labeling
+replaces:
+  - tool: labelbox
+    fit: partial
+    note: Desktop polygon, box and point annotation for images.
