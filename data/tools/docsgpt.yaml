@@ -1,0 +1,8 @@
+name: DocsGPT
+repository: https://github.com/arc53/DocsGPT
+category: document-qa
+replaces:
+  - tool: glean
+    fit: partial
+    note: An assistant that answers from your docs and connected sources, embeddable as a chat widget.
+deploy: [compose]

@@ -1,0 +1,11 @@
+name: Dyad
+repository: https://github.com/dyad-sh/dyad
+category: ai-app-builder
+terms: open-core
+replaces:
+  - tool: lovable
+    fit: partial
+    note: A local desktop app that builds full-stack web apps from a chat, with your own model keys.
+  - tool: bolt-new
+    fit: partial
+    note: Builds and previews web apps from a chat on your machine, with your own model keys.

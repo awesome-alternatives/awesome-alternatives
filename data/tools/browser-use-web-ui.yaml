@@ -1,0 +1,4 @@
+name: Browser Use Web UI
+repository: https://github.com/browser-use/web-ui
+category: browser-agent
+deploy: [compose]

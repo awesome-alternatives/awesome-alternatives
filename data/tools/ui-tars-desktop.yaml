@@ -1,0 +1,7 @@
+name: UI-TARS Desktop
+repository: https://github.com/bytedance/UI-TARS-desktop
+category: autonomous-agent
+replaces:
+  - tool: manus
+    fit: partial
+    note: A desktop app that operates your own computer and browser from instructions, instead of a cloud sandbox.

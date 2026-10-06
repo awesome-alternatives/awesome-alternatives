@@ -1,0 +1,7 @@
+name: Meetily
+repository: https://github.com/Zackriya-Solutions/meetily
+category: speech-to-text
+replaces:
+  - tool: otter-ai
+    fit: partial
+    note: Records meetings on your machine and transcribes and summarises them locally, without a bot joining the call.

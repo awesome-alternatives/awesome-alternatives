@@ -1,0 +1,8 @@
+name: Langflow
+repository: https://github.com/langflow-ai/langflow
+category: llm-app-builder
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: A visual editor for agent and RAG flows, served behind an API or as an MCP server.
+deploy: [container, compose]

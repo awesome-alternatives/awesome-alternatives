@@ -1,0 +1,5 @@
+name: Browserbase
+homepage: https://www.browserbase.com
+vendor: Browserbase
+category: browser-agent
+description: Hosted headless browsers for AI agents and automation, driven through Playwright, Puppeteer or its own SDK.

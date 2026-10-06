@@ -1,0 +1,8 @@
+name: kotaemon
+repository: https://github.com/Cinnamon/kotaemon
+category: document-qa
+replaces:
+  - tool: notebooklm
+    fit: partial
+    note: A web app to chat with your documents, with citations shown in a PDF preview.
+deploy: [container]

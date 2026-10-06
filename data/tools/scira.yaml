@@ -1,0 +1,7 @@
+name: Scira
+repository: https://github.com/zaidmukaddam/scira
+category: ai-search
+replaces:
+  - tool: perplexity
+    fit: partial
+    note: A minimal answer engine that cites web, academic and social search results.

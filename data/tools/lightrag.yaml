@@ -1,0 +1,4 @@
+name: LightRAG
+repository: https://github.com/HKUDS/LightRAG
+category: document-qa
+deploy: [container, compose]

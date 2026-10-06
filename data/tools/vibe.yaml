@@ -1,0 +1,7 @@
+name: Vibe
+repository: https://github.com/thewh1teagle/vibe
+category: speech-to-text
+replaces:
+  - tool: otter-ai
+    fit: partial
+    note: A desktop app that transcribes audio and video offline, with speaker labels.

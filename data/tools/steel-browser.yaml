@@ -1,0 +1,8 @@
+name: Steel Browser
+repository: https://github.com/steel-dev/steel-browser
+category: browser-agent
+replaces:
+  - tool: browserbase
+    fit: full
+    note: A browser API for agents with sessions, proxies and Puppeteer or Playwright access, on your own server.
+deploy: [container, compose]

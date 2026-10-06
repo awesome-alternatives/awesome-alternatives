@@ -1,0 +1,8 @@
+name: RAGFlow
+repository: https://github.com/infiniflow/ragflow
+category: document-qa
+replaces:
+  - tool: notebooklm
+    fit: partial
+    note: Chat over uploaded documents with cited sources, with layout-aware parsing, on your own server.
+deploy: [container, compose]

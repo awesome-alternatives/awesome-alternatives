@@ -1,0 +1,5 @@
+name: Microsoft Copilot Studio
+homepage: https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio
+vendor: Microsoft
+category: llm-app-builder
+description: Microsoft's low-code platform for building agents and chatbots on hosted models, connected to Microsoft 365 and other data sources.

@@ -1,0 +1,9 @@
+name: Dify
+repository: https://github.com/langgenius/dify
+category: llm-app-builder
+terms: source-available
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: A visual builder for chatbots, agents and RAG workflows on any model provider, served behind an API.
+deploy: [container, compose]

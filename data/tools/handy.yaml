@@ -1,0 +1,7 @@
+name: Handy
+repository: https://github.com/cjpais/Handy
+category: speech-to-text
+replaces:
+  - tool: wispr-flow
+    fit: partial
+    note: Push-to-talk dictation into any app, transcribed offline, without reformatting by a model.

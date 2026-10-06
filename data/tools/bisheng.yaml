@@ -1,0 +1,8 @@
+name: BISHENG
+repository: https://github.com/dataelement/bisheng
+category: llm-app-builder
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: Workflows and agents aimed at enterprise document and Q&A use cases.
+deploy: [compose]

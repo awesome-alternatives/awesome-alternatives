@@ -1,0 +1,7 @@
+name: screenshot-to-code
+repository: https://github.com/abi/screenshot-to-code
+category: ai-app-builder
+replaces:
+  - tool: v0
+    fit: partial
+    note: Turns screenshots, mockups and recordings into HTML, Tailwind, React or Vue code.

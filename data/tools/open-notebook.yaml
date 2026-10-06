@@ -1,0 +1,8 @@
+name: Open Notebook
+repository: https://github.com/lfnovo/open-notebook
+category: document-qa
+replaces:
+  - tool: notebooklm
+    fit: full
+    note: Notebooks of sources with chat, notes and podcast generation, on any model provider.
+deploy: [container, compose]

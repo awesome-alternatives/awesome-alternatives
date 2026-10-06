@@ -1,0 +1,5 @@
+name: Morphik
+repository: https://github.com/morphik-org/morphik-core
+category: document-qa
+terms: source-available
+deploy: [compose]

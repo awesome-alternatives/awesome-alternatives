@@ -1,0 +1,8 @@
+name: Vane
+repository: https://github.com/ItzCrazyKns/Vane
+category: ai-search
+replaces:
+  - tool: perplexity
+    fit: partial
+    note: Answers questions from SearxNG search results with cited sources, on any model provider.
+deploy: [container, compose]

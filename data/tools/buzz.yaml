@@ -1,0 +1,7 @@
+name: Buzz
+repository: https://github.com/chidiwilliams/buzz
+category: speech-to-text
+replaces:
+  - tool: otter-ai
+    fit: partial
+    note: A desktop app that transcribes and translates audio files offline with Whisper models.

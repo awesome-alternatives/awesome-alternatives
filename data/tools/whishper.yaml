@@ -1,0 +1,8 @@
+name: Whishper
+repository: https://github.com/pluja/whishper
+category: speech-to-text
+replaces:
+  - tool: otter-ai
+    fit: partial
+    note: A self-hosted web app to transcribe, translate and edit subtitles for uploaded audio.
+deploy: [compose]
