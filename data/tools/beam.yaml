@@ -1,0 +1,7 @@
+name: Apache Beam
+repository: https://github.com/apache/beam
+category: data-processing-engine
+replaces:
+  - tool: google-cloud-dataflow
+    fit: partial
+    note: The SDK Dataflow runs; pipelines also run on Flink or Spark on your own cluster.

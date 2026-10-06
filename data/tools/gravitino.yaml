@@ -1,0 +1,4 @@
+name: Apache Gravitino
+repository: https://github.com/apache/gravitino
+category: data-catalog
+deploy: [container]

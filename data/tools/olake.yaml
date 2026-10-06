@@ -1,0 +1,8 @@
+name: OLake
+repository: https://github.com/datazip-inc/olake
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Replicates databases and Kafka into Apache Iceberg tables; few SaaS sources.
+deploy: [container]

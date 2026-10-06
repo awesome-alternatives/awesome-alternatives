@@ -1,0 +1,4 @@
+name: PowerJob
+repository: https://github.com/PowerJob/PowerJob
+category: workflow-orchestration
+deploy: [container]

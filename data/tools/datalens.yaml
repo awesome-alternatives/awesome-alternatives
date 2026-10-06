@@ -1,0 +1,8 @@
+name: DataLens
+repository: https://github.com/datalens-tech/datalens
+category: business-intelligence
+replaces:
+  - tool: tableau
+    fit: partial
+    note: Charts and dashboards in the browser over ClickHouse, PostgreSQL and other sources; no desktop authoring app.
+deploy: [compose]

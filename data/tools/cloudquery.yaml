@@ -1,0 +1,8 @@
+name: CloudQuery
+repository: https://github.com/cloudquery/cloudquery
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: ELT from cloud provider APIs and SaaS sources into databases, run from a CLI with plugins.
+deploy: [binary]

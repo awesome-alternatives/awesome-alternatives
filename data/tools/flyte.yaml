@@ -1,0 +1,8 @@
+name: Flyte
+repository: https://github.com/flyteorg/flyte
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: partial
+    note: Typed, containerised Python workflows on Kubernetes, aimed at ML and data pipelines.
+deploy: [helm]

@@ -1,0 +1,4 @@
+name: Conduit
+repository: https://github.com/ConduitIO/conduit
+category: data-integration
+deploy: [container, binary, package]

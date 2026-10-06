@@ -1,0 +1,7 @@
+name: Apache Atlas
+repository: https://github.com/apache/atlas
+category: data-catalog
+replaces:
+  - tool: collibra
+    fit: partial
+    note: Metadata, classification and lineage, centred on the Hadoop ecosystem.

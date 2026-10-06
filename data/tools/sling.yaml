@@ -1,0 +1,8 @@
+name: Sling
+repository: https://github.com/slingdata-io/sling-cli
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Replicates between databases, files and object storage from a CLI and YAML; far fewer SaaS sources.
+deploy: [binary, container]

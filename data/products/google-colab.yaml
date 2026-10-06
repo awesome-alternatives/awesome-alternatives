@@ -1,0 +1,5 @@
+name: Google Colab
+homepage: https://colab.research.google.com
+vendor: Google
+category: data-notebook
+description: Hosted Jupyter notebooks with free and paid GPU access, stored in Google Drive.

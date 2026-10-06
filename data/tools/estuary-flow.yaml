@@ -1,0 +1,8 @@
+name: Estuary Flow
+repository: https://github.com/estuary/flow
+category: data-integration
+terms: source-available
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Real-time CDC and batch connectors into warehouses and other destinations.

@@ -1,0 +1,5 @@
+name: Google Cloud Dataflow
+homepage: https://cloud.google.com/products/dataflow
+vendor: Google
+category: data-processing-engine
+description: Managed service that runs Apache Beam batch and streaming pipelines.

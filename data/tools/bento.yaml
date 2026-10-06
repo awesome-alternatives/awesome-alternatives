@@ -1,0 +1,9 @@
+name: Bento
+repository: https://github.com/warpstreamlabs/bento
+category: data-integration
+terms: open
+replaces:
+  - tool: redpanda-connect
+    fit: partial
+    note: Continues Benthos from before its relicensing, MIT throughout, with Benthos 4 style YAML pipelines.
+deploy: [container, binary]

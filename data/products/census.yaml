@@ -1,0 +1,5 @@
+name: Census
+homepage: https://www.getcensus.com
+vendor: Fivetran
+category: data-integration
+description: Hosted reverse ETL service that syncs warehouse data into business tools, now part of Fivetran.

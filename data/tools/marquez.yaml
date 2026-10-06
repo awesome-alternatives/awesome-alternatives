@@ -1,0 +1,4 @@
+name: Marquez
+repository: https://github.com/MarquezProject/marquez
+category: data-catalog
+deploy: [container, compose]

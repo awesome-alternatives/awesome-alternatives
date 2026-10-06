@@ -1,0 +1,11 @@
+name: OpenMetadata
+repository: https://github.com/open-metadata/OpenMetadata
+category: data-catalog
+replaces:
+  - tool: alation
+    fit: partial
+    note: Catalog, column-level lineage, glossary and data quality tests in one service.
+  - tool: collibra
+    fit: partial
+    note: Glossary, ownership, classification and policies; lighter governance workflows.
+deploy: [container, helm, compose]

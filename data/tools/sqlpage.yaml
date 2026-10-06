@@ -1,0 +1,4 @@
+name: SQLPage
+repository: https://github.com/sqlpage/SQLPage
+category: business-intelligence
+deploy: [container, binary]

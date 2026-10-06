@@ -1,0 +1,8 @@
+name: Unity Catalog
+repository: https://github.com/unitycatalog/unitycatalog
+category: data-catalog
+replaces:
+  - tool: databricks
+    fit: partial
+    note: The open source release of Databricks' catalog for tables, volumes and functions; the catalog only.
+deploy: [container]

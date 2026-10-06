@@ -1,0 +1,8 @@
+name: Apache NiFi
+repository: https://github.com/apache/nifi
+category: data-integration
+replaces:
+  - tool: informatica
+    fit: partial
+    note: Flow-based routing and transformation of data between systems, designed in a web UI.
+deploy: [container]

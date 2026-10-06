@@ -1400,3 +1400,29 @@ stream-processing:
   name: Stream processing
   description: Run continuous queries, joins and aggregations over event streams.
   selfHost: true
+
+data-transformation:
+  name: Data transformation
+  description: Build and test SQL and Python models inside a warehouse, with dependencies between them.
+
+data-catalog:
+  name: Data catalogs
+  description: Search, document and trace the lineage of tables, dashboards and pipelines across a data stack.
+  selfHost: true
+
+data-quality:
+  name: Data quality
+  description: Declare tests on datasets and check them in pipelines.
+
+semantic-layer:
+  name: Semantic layers
+  description: Define metrics and dimensions once and serve them to BI tools and applications.
+
+data-notebook:
+  name: Data notebooks
+  description: Notebooks that mix code, queries, charts and prose for data analysis.
+
+data-processing-engine:
+  name: Data processing engines
+  description: Run batch and streaming jobs over large datasets across a cluster.
+  selfHost: true

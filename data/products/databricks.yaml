@@ -1,0 +1,5 @@
+name: Databricks
+homepage: https://www.databricks.com
+vendor: Databricks
+category: data-processing-engine
+description: Hosted data and AI platform built on Apache Spark, with notebooks, a catalog and SQL warehouses.

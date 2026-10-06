@@ -1,0 +1,7 @@
+name: Elementary
+repository: https://github.com/elementary-data/elementary
+category: data-quality
+replaces:
+  - tool: monte-carlo
+    fit: partial
+    note: Data tests, anomaly detection and alerts for dbt projects, as a dbt package and a CLI; dbt only.

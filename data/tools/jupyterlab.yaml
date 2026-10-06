@@ -1,0 +1,7 @@
+name: JupyterLab
+repository: https://github.com/jupyterlab/jupyterlab
+category: data-notebook
+replaces:
+  - tool: google-colab
+    fit: partial
+    note: Notebooks on your own machine or server; no free hosted GPUs.

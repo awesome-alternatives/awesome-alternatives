@@ -1,0 +1,5 @@
+name: dbt Cloud
+homepage: https://www.getdbt.com
+vendor: dbt Labs
+category: data-transformation
+description: dbt Labs' hosted service that develops, schedules and documents dbt projects.

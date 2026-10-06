@@ -1,0 +1,4 @@
+name: XXL-JOB
+repository: https://github.com/xuxueli/xxl-job
+category: workflow-orchestration
+deploy: [container]
