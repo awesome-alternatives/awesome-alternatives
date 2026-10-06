@@ -1,0 +1,11 @@
+name: Multiwoven
+repository: https://github.com/Multiwoven/multiwoven
+category: data-integration
+replaces:
+  - tool: hightouch
+    fit: full
+    note: Reverse ETL that syncs warehouse models into CRMs, ad platforms and other business tools.
+  - tool: census
+    fit: full
+    note: Reverse ETL that syncs warehouse models into CRMs, ad platforms and other business tools.
+deploy: [container, compose]

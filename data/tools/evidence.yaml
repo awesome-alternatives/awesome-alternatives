@@ -1,0 +1,7 @@
+name: Evidence
+repository: https://github.com/evidence-dev/evidence
+category: business-intelligence
+replaces:
+  - tool: looker
+    fit: partial
+    note: Reports written in Markdown and SQL, built into a static site; no point-and-click exploration.

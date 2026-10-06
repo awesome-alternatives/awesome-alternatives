@@ -1,0 +1,5 @@
+name: Redpanda Connect
+repository: https://github.com/redpanda-data/connect
+category: data-integration
+terms: open-core
+deploy: [container, binary]

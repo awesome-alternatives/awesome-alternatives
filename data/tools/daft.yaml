@@ -1,0 +1,7 @@
+name: Daft
+repository: https://github.com/Eventual-Inc/Daft
+category: dataframe
+replaces:
+  - tool: spark
+    fit: partial
+    note: Python and SQL DataFrames on a laptop or a Ray cluster, without the JVM.

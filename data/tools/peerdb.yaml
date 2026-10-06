@@ -1,0 +1,8 @@
+name: PeerDB
+repository: https://github.com/PeerDB-io/peerdb
+category: data-integration
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: CDC replication from PostgreSQL into ClickHouse, Snowflake, BigQuery and queues; PostgreSQL sources only.
+deploy: [container, compose]

@@ -1,0 +1,11 @@
+name: DataHub
+repository: https://github.com/datahub-project/datahub
+category: data-catalog
+replaces:
+  - tool: alation
+    fit: partial
+    note: Metadata search, lineage, ownership and glossary across warehouses, BI tools and pipelines.
+  - tool: atlan
+    fit: partial
+    note: Metadata search, lineage, ownership and glossary across warehouses, BI tools and pipelines.
+deploy: [container]

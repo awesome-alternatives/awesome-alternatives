@@ -1,0 +1,7 @@
+name: Dataform
+repository: https://github.com/dataform-co/dataform
+category: data-transformation
+replaces:
+  - tool: dbt
+    fit: partial
+    note: SQL workflows written in SQLX and compiled by a CLI, for BigQuery.

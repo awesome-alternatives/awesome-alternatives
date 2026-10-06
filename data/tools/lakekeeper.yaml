@@ -1,0 +1,4 @@
+name: Lakekeeper
+repository: https://github.com/lakekeeper/lakekeeper
+category: data-catalog
+deploy: [container, helm]

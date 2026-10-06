@@ -1,0 +1,7 @@
+name: Rill
+repository: https://github.com/rilldata/rill
+category: business-intelligence
+replaces:
+  - tool: looker
+    fit: partial
+    note: Metrics views and dashboards defined as code over DuckDB, ClickHouse and other OLAP engines.

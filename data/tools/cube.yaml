@@ -1,0 +1,8 @@
+name: Cube
+repository: https://github.com/cube-js/cube
+category: semantic-layer
+terms: open
+replaces:
+  - tool: looker
+    fit: partial
+    note: Semantic layer with metrics, caching and SQL, REST and GraphQL APIs; charts come from other tools.

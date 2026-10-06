@@ -1,0 +1,4 @@
+name: Pentaho Data Integration
+repository: https://github.com/pentaho/pentaho-kettle
+category: data-integration
+terms: source-available

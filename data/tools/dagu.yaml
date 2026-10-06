@@ -1,0 +1,8 @@
+name: Dagu
+repository: https://github.com/dagucloud/dagu
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: partial
+    note: Workflows as YAML DAGs run from a single binary with a web UI, without a database.
+deploy: [container, binary, package]

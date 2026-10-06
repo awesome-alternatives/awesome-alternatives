@@ -1,0 +1,8 @@
+name: Mage
+repository: https://github.com/mage-ai/mage-ai
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: partial
+    note: Pipelines built from Python, SQL and R blocks in a notebook-style editor, with scheduling.
+deploy: [container]

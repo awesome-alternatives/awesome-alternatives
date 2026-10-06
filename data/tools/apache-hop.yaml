@@ -1,0 +1,8 @@
+name: Apache Hop
+repository: https://github.com/apache/hop
+category: data-integration
+replaces:
+  - tool: talend
+    fit: partial
+    note: Visual designer for ETL pipelines and workflows, run locally, on a server or on Spark, Flink and Dataflow.
+deploy: [container]

@@ -1,0 +1,5 @@
+name: Monte Carlo
+homepage: https://www.montecarlodata.com
+vendor: Monte Carlo
+category: data-quality
+description: Hosted data observability service that monitors tables for freshness, volume and schema changes.

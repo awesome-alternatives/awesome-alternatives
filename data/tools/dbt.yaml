@@ -1,0 +1,7 @@
+name: dbt
+repository: https://github.com/dbt-labs/dbt
+category: data-transformation
+replaces:
+  - tool: dbt-cloud
+    fit: partial
+    note: The dbt engine, run from the command line; no hosted IDE, scheduler or catalog.

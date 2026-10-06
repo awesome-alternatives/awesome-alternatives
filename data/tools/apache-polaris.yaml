@@ -1,0 +1,4 @@
+name: Apache Polaris
+repository: https://github.com/apache/polaris
+category: data-catalog
+deploy: [container]

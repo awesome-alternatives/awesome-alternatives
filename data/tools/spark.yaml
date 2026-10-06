@@ -1,0 +1,8 @@
+name: Apache Spark
+repository: https://github.com/apache/spark
+category: data-processing-engine
+replaces:
+  - tool: databricks
+    fit: partial
+    note: The engine Databricks is built on, without its notebooks, catalog or managed clusters.
+deploy: [container]

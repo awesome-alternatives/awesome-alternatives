@@ -1,0 +1,8 @@
+name: ingestr
+repository: https://github.com/bruin-data/ingestr
+category: data-integration
+terms: source-available
+replaces:
+  - tool: fivetran
+    fit: partial
+    note: Copies tables between databases and SaaS sources with one command, without a server.

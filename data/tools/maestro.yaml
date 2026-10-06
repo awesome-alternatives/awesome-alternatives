@@ -1,0 +1,7 @@
+name: Maestro
+repository: https://github.com/Netflix/maestro
+category: workflow-orchestration
+replaces:
+  - tool: airflow
+    fit: partial
+    note: Netflix's workflow orchestrator, with workflows in JSON, foreach loops and parameters set at run time.

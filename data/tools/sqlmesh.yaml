@@ -1,0 +1,7 @@
+name: SQLMesh
+repository: https://github.com/SQLMesh/sqlmesh
+category: data-transformation
+replaces:
+  - tool: dbt
+    fit: partial
+    note: Reads dbt projects, plans changes before applying them and builds virtual environments of the warehouse.
