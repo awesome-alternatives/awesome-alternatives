@@ -1,4 +1,8 @@
 name: Privacy Badger
 repository: https://github.com/EFForg/privacybadger
 category: content-blocker
+replaces:
+  - tool: adblock-plus
+    fit: partial
+    note: Learns which third parties track you and blocks them, without filter lists for ads.
 terms: open

@@ -1,3 +1,7 @@
 name: uBlock Origin
 repository: https://github.com/gorhill/uBlock
 category: content-blocker
+replaces:
+  - tool: adblock-plus
+    fit: full
+    note: Blocks ads and trackers with filter lists and dynamic rules, with no acceptable ads program.

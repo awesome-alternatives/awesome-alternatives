@@ -1,3 +1,7 @@
 name: Jib
 repository: https://github.com/GoogleContainerTools/jib
 category: container-engine
+replaces:
+  - tool: docker
+    fit: partial
+    note: Builds container images from Maven or Gradle without a Dockerfile or a Docker daemon, for Java apps only.

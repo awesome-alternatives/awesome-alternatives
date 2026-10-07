@@ -1,3 +1,10 @@
 name: phpBB
 repository: https://github.com/phpbb/phpbb
 category: forum
+replaces:
+  - tool: vbulletin
+    fit: full
+    note: Forum software with forums, topics, permissions and extensions.
+  - tool: invision-community
+    fit: partial
+    note: Forum software with extensions and styles, without the store or blogs.

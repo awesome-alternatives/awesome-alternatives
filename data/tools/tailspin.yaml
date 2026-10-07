@@ -1,3 +1,7 @@
 name: tailspin
 repository: https://github.com/bensadeh/tailspin
 category: log-viewer
+replaces:
+  - tool: lnav
+    fit: partial
+    note: Highlights log files in the terminal, without filtering or SQL queries.

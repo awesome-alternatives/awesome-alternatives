@@ -1,3 +1,7 @@
 name: conventional-changelog
 repository: https://github.com/conventional-changelog/conventional-changelog
 category: changelog
+replaces:
+  - tool: semantic-release
+    fit: partial
+    note: Changelog generation from Conventional Commits only, with no version bump or publish.

@@ -1,3 +1,7 @@
 name: "fre:ac"
 repository: https://github.com/enzo1982/freac
 category: media-converter
+replaces:
+  - tool: dbpoweramp
+    fit: full
+    note: Audio converter and CD ripper with many encoders and tag support.

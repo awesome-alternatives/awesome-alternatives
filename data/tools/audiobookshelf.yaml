@@ -1,4 +1,8 @@
 name: Audiobookshelf
 repository: https://github.com/advplyr/audiobookshelf
 category: media-server
+replaces:
+  - tool: audible
+    fit: partial
+    note: Streams and tracks your own audiobooks and podcasts, with apps for phones; there is no store to buy from.
 deploy: [container, compose]

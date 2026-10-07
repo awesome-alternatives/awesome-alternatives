@@ -1,3 +1,7 @@
 name: usql
 repository: https://github.com/xo/usql
 category: database-client
+replaces:
+  - tool: datagrip
+    fit: partial
+    note: Terminal client with one interface for many databases, without the IDE features.

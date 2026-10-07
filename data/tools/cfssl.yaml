@@ -1,3 +1,7 @@
 name: CFSSL
 repository: https://github.com/cloudflare/cfssl
 category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: partial
+    note: Signs and bundles certificates over an API and CLI, without a managed service or console.

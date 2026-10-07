@@ -1,3 +1,10 @@
 name: lego
 repository: https://github.com/go-acme/lego
 category: acme-client
+replaces:
+  - tool: certbot
+    fit: full
+    note: ACME client and Go library, with many DNS providers built in.
+  - tool: acme-sh
+    fit: full
+    note: ACME client as a single Go binary with many DNS providers.

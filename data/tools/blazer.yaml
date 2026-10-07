@@ -1,3 +1,7 @@
 name: Blazer
 repository: https://github.com/ankane/blazer
 category: business-intelligence
+replaces:
+  - tool: looker
+    fit: partial
+    note: Saved SQL queries, charts and dashboards inside a Rails app, with no modelling layer.

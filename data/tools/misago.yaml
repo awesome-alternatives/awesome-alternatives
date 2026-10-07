@@ -1,3 +1,10 @@
 name: Misago
 repository: https://github.com/rafalp/Misago
 category: forum
+replaces:
+  - tool: discourse
+    fit: partial
+    note: Threaded forum with categories, moderation and a Django back end.
+  - tool: vbulletin
+    fit: full
+    note: Forum software with categories, threads, private messages and moderation.

@@ -1,3 +1,7 @@
 name: lazysql
 repository: https://github.com/jorgerojas26/lazysql
 category: database-client
+replaces:
+  - tool: tableplus
+    fit: partial
+    note: Terminal client for MySQL, PostgreSQL and SQLite, with no GUI features such as structure editors.

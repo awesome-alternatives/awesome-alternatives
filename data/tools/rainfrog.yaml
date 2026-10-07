@@ -1,3 +1,10 @@
 name: rainfrog
 repository: https://github.com/achristmascarl/rainfrog
 category: database-client
+replaces:
+  - tool: datagrip
+    fit: partial
+    note: Terminal client for PostgreSQL, MySQL and SQLite with a query editor and table browser.
+  - tool: tableplus
+    fit: partial
+    note: Terminal client for PostgreSQL, MySQL and SQLite, without the GUI editors.

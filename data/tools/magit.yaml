@@ -1,3 +1,10 @@
 name: Magit
 repository: https://github.com/magit/magit
 category: git-client
+replaces:
+  - tool: gitkraken
+    fit: partial
+    note: Git interface inside Emacs, covering staging, rebasing and history, without a graph view or hosted integrations.
+  - tool: sourcetree
+    fit: partial
+    note: Git interface inside Emacs, so it needs Emacs.

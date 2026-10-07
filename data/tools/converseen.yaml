@@ -1,3 +1,7 @@
 name: Converseen
 repository: https://github.com/Faster3ck/Converseen
 category: media-converter
+replaces:
+  - tool: irfanview
+    fit: partial
+    note: Batch image conversion and resizing in a desktop app, without a viewer.

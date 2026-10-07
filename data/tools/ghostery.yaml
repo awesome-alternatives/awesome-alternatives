@@ -1,3 +1,10 @@
 name: Ghostery
 repository: https://github.com/ghostery/ghostery-extension
 category: content-blocker
+replaces:
+  - tool: adblock-plus
+    fit: partial
+    note: Blocks ads and trackers in the browser, with a tracker list shown per page.
+  - tool: privacy-badger
+    fit: partial
+    note: Blocks trackers in the browser from a maintained list rather than by learning.

@@ -1,3 +1,7 @@
 name: Geeqie
 repository: https://github.com/BestImageViewer/geeqie
 category: image-viewer
+replaces:
+  - tool: irfanview
+    fit: partial
+    note: Image browser with thumbnails, metadata and external editor hooks, for Linux.

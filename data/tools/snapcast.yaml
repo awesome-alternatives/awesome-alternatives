@@ -1,3 +1,7 @@
 name: Snapcast
 repository: https://github.com/snapcast/snapcast
 category: media-server
+replaces:
+  - tool: sonos
+    fit: partial
+    note: Synchronous multiroom audio over the network, without the speakers or a streaming app.

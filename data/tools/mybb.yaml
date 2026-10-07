@@ -1,3 +1,10 @@
 name: MyBB
 repository: https://github.com/mybb/mybb
 category: forum
+replaces:
+  - tool: vbulletin
+    fit: full
+    note: Forum software with forums, threads, private messages and plugins.
+  - tool: invision-community
+    fit: partial
+    note: Forum software with plugins and themes, without the store, blogs or gallery apps.

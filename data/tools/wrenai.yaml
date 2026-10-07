@@ -1,4 +1,8 @@
 name: WrenAI
 repository: https://github.com/Canner/WrenAI
 category: business-intelligence
+replaces:
+  - tool: looker
+    fit: partial
+    note: Natural language questions answered through a semantic model, without LookML.
 terms: open

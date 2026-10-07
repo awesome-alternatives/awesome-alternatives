@@ -1,3 +1,7 @@
 name: Cppcheck
 repository: https://github.com/cppcheck-opensource/cppcheck
 category: static-analysis
+replaces:
+  - tool: sonarcloud
+    fit: partial
+    note: Finds bugs and undefined behaviour in C and C++ code, with no server or dashboard.

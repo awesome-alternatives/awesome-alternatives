@@ -1,3 +1,7 @@
 name: Blokada
 repository: https://github.com/blokadaorg/blokada
 category: application-firewall
+replaces:
+  - tool: nextdns
+    fit: partial
+    note: Blocks ads and trackers on the phone through a local VPN and DNS rules, without a hosted resolver.

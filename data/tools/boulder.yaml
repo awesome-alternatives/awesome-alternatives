@@ -1,3 +1,7 @@
 name: Boulder
 repository: https://github.com/letsencrypt/boulder
 category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: partial
+    note: "The ACME certificate authority that Let's Encrypt runs, without a managed service around it."

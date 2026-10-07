@@ -1,3 +1,7 @@
 name: hl
 repository: https://github.com/pamburus/hl
 category: log-viewer
+replaces:
+  - tool: lnav
+    fit: partial
+    note: Viewer that turns JSON and logfmt logs into readable lines, with filtering and no SQL.

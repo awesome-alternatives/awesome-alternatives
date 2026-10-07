@@ -1,4 +1,8 @@
 name: Bearer
 repository: https://github.com/Bearer/bearer
 category: static-analysis
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Static analysis for security and privacy issues in code, with sensitive data flow reports.
 terms: source-available

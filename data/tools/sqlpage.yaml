@@ -1,4 +1,8 @@
 name: SQLPage
 repository: https://github.com/sqlpage/SQLPage
 category: business-intelligence
+replaces:
+  - tool: retool
+    fit: partial
+    note: Builds data apps and dashboards from SQL files only, without a drag and drop editor.
 deploy: [container, binary]

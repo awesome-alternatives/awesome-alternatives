@@ -1,0 +1,5 @@
+name: Privnote
+homepage: https://privnote.com
+vendor: Privnote
+category: secret-sharing
+description: Web service that turns a note into a link that is destroyed after it is read.

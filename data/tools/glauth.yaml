@@ -1,3 +1,7 @@
 name: GLAuth
 repository: https://github.com/glauth/glauth
 category: ldap-directory
+replaces:
+  - tool: active-directory
+    fit: partial
+    note: Lightweight LDAP server for users and groups, without Kerberos, group policy or domain joins.

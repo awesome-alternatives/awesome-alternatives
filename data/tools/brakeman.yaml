@@ -1,4 +1,8 @@
 name: Brakeman
 repository: https://github.com/presidentbeef/brakeman
 category: static-analysis
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Static analysis for Ruby on Rails apps only.
 terms: source-available

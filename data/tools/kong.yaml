@@ -1,3 +1,7 @@
 name: Kong Gateway
 repository: https://github.com/Kong/kong
 category: api-gateway
+replaces:
+  - tool: apigee
+    fit: partial
+    note: API gateway with plugins for auth and rate limiting; the developer portal and monetization sit in paid editions.

@@ -1,4 +1,11 @@
 name: Music Assistant
 repository: https://github.com/music-assistant/server
 category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Unifies your own library and streaming accounts and plays them to speakers around the house.
+  - tool: sonos
+    fit: partial
+    note: Multiroom playback to many speaker types from one library, controlled from Home Assistant.
 deploy: [container]

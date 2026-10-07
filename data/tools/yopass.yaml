@@ -1,3 +1,10 @@
 name: Yopass
 repository: https://github.com/jhaals/yopass
 category: secret-sharing
+replaces:
+  - tool: privnote
+    fit: full
+    note: Shares text through a link that is encrypted in the browser and expires.
+  - tool: onetimesecret
+    fit: full
+    note: Shares secrets through expiring links, encrypted in the browser.

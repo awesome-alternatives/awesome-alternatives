@@ -1,3 +1,7 @@
 name: Argo Rollouts
 repository: https://github.com/argoproj/argo-rollouts
 category: continuous-delivery
+replaces:
+  - tool: octopus-deploy
+    fit: partial
+    note: Blue-green and canary rollouts on Kubernetes, with no release orchestration beyond the cluster.

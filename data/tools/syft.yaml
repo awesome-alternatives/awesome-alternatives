@@ -1,3 +1,7 @@
 name: Syft
 repository: https://github.com/anchore/syft
 category: sbom-tool
+replaces:
+  - tool: black-duck
+    fit: partial
+    note: Generates SBOMs from images and directories, with no vulnerability or licence policy management.

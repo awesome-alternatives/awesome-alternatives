@@ -1,3 +1,7 @@
 name: acme.sh
 repository: https://github.com/acmesh-official/acme.sh
 category: acme-client
+replaces:
+  - tool: certbot
+    fit: full
+    note: Shell-script ACME client with many DNS provider plugins and no dependencies.
