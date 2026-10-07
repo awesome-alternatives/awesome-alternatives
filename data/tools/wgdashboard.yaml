@@ -1,3 +1,7 @@
 name: WGDashboard
 repository: https://github.com/WGDashboard/WGDashboard
 category: vpn-server
+replaces:
+  - tool: openvpn-access-server
+    fit: partial
+    note: Web interface for managing WireGuard peers and configurations, without OpenVPN support.

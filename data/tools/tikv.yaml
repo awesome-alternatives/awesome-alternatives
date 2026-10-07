@@ -1,4 +1,8 @@
 name: TiKV
 repository: https://github.com/tikv/tikv
 category: distributed-key-value
+replaces:
+  - tool: foundationdb
+    fit: partial
+    note: Raft-based transactional key-value store with a distributed transaction API.
 deploy: [container]

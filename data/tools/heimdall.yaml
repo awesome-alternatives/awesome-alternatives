@@ -1,4 +1,8 @@
 name: Heimdall
 repository: https://github.com/linuxserver/Heimdall
 category: homelab-dashboard
+replaces:
+  - tool: dashy
+    fit: partial
+    note: Launcher of app tiles with some enhanced app widgets, with less layout and theming control.
 deploy: [container]

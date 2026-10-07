@@ -1,4 +1,8 @@
 name: go2rtc
 repository: https://github.com/AlexxIT/go2rtc
 category: nvr
+replaces:
+  - tool: scrypted
+    fit: partial
+    note: Camera stream relay with WebRTC and RTSP conversion; no recording, detection or home hub integrations.
 deploy: [container, binary]

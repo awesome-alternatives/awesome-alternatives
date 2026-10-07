@@ -1,4 +1,8 @@
 name: MediaMTX
 repository: https://github.com/bluenviron/mediamtx
 category: video-hosting
+replaces:
+  - tool: wowza-streaming-engine
+    fit: partial
+    note: Ingests and republishes RTSP, RTMP, SRT, WebRTC and HLS streams; no built-in transcoding.
 deploy: [container, binary]

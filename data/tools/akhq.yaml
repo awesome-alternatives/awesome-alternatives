@@ -1,3 +1,7 @@
 name: AKHQ
 repository: https://github.com/tchiotludo/akhq
 category: kafka-ui
+replaces:
+  - tool: conduktor
+    fit: partial
+    note: Browses topics, consumer groups and schema registry, with no managed access policies.

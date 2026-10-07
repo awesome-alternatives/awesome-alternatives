@@ -1,3 +1,7 @@
 name: Kanister
 repository: https://github.com/kanisterio/kanister
 category: kubernetes-backup
+replaces:
+  - tool: velero
+    fit: partial
+    note: Runs application-aware backup and restore workflows from blueprints; data movement is up to the blueprint.

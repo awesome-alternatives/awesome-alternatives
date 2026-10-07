@@ -1,3 +1,7 @@
 name: OpenEBS
 repository: https://github.com/openebs/openebs
 category: distributed-storage
+replaces:
+  - tool: longhorn
+    fit: full
+    note: Replicated block storage for Kubernetes persistent volumes with several storage engines.

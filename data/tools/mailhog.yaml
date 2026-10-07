@@ -1,3 +1,10 @@
 name: MailHog
 repository: https://github.com/mailhog/MailHog
 category: mail-testing
+replaces:
+  - tool: mailtrap
+    fit: partial
+    note: SMTP catch-all with a web inbox and API; no sending service or HTML checks.
+  - tool: mailcatcher
+    fit: full
+    note: SMTP catch-all with a web inbox, with a Go binary and message storage options.

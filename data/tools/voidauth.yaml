@@ -1,3 +1,10 @@
 name: VoidAuth
 repository: https://github.com/voidauth/voidauth
 category: identity-provider
+replaces:
+  - tool: authentik
+    fit: partial
+    note: OIDC provider with user management and invitations, without flows or SAML.
+  - tool: authelia
+    fit: partial
+    note: Self-hosted OIDC login with user management and a web UI.

@@ -1,3 +1,10 @@
 name: git-crypt
 repository: https://github.com/AGWA/git-crypt
 category: encrypted-files
+replaces:
+  - tool: git-secret
+    fit: full
+    note: Encrypts files in a git repository for a set of GPG keys.
+  - tool: sops
+    fit: partial
+    note: Transparent whole-file encryption, with no editing of individual values.

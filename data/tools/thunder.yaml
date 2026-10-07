@@ -1,3 +1,7 @@
 name: Thunder
 repository: https://github.com/thunder-app/thunder
 category: social-client
+replaces:
+  - tool: reddit
+    fit: partial
+    note: iOS and Android client for Lemmy and PieFed; communities and history do not carry over from Reddit.

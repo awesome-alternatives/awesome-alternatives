@@ -1,4 +1,8 @@
 name: PMD
 repository: https://github.com/pmd/pmd
 category: jvm-lint-format
+replaces:
+  - tool: sonarqube
+    fit: partial
+    note: Static analysis rules for Java and other languages, run as a CLI or build plugin without a server.
 terms: open

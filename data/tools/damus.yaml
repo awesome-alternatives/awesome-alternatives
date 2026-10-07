@@ -1,3 +1,7 @@
 name: Damus
 repository: https://github.com/damus-io/damus
 category: social-client
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: iOS client for Nostr, a different network, so existing followers do not carry over.

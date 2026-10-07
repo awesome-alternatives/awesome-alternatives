@@ -1,3 +1,7 @@
 name: Cluster API
 repository: https://github.com/kubernetes-sigs/cluster-api
 category: container-orchestration
+replaces:
+  - tool: rancher
+    fit: partial
+    note: Declarative cluster provisioning and lifecycle through the Kubernetes API, with no UI or user management.

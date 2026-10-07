@@ -1,3 +1,7 @@
 name: SoftEther VPN
 repository: https://github.com/SoftEtherVPN/SoftEtherVPN
 category: vpn-server
+replaces:
+  - tool: openvpn-access-server
+    fit: full
+    note: Multi-protocol VPN server including an OpenVPN-compatible mode, with a management GUI.

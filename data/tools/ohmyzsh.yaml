@@ -1,3 +1,7 @@
 name: Oh My Zsh
 repository: https://github.com/ohmyzsh/ohmyzsh
 category: shell-prompt
+replaces:
+  - tool: prezto
+    fit: full
+    note: Zsh framework of plugins, themes and completions with a larger plugin collection.

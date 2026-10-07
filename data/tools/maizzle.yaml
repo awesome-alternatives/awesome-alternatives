@@ -1,3 +1,7 @@
 name: Maizzle
 repository: https://github.com/maizzle/framework
 category: email-templating
+replaces:
+  - tool: mjml
+    fit: full
+    note: Builds HTML email from HTML and Tailwind CSS instead of a custom markup language.

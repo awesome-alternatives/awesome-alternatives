@@ -1,3 +1,7 @@
 name: Flame
 repository: https://github.com/pawelmalak/flame
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: partial
+    note: Start page of apps and bookmarks, with fewer service integrations.

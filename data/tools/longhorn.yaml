@@ -1,4 +1,8 @@
 name: Longhorn
 repository: https://github.com/longhorn/longhorn
 category: distributed-storage
+replaces:
+  - tool: openebs
+    fit: full
+    note: Replicated block volumes for Kubernetes with snapshots and backups, managed from a UI.
 deploy: [helm]

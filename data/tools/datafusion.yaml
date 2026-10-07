@@ -1,3 +1,10 @@
 name: Apache DataFusion
 repository: https://github.com/apache/datafusion
 category: dataframe
+replaces:
+  - tool: pandas
+    fit: partial
+    note: Rust query engine with a DataFrame API and SQL, aimed at larger-than-memory data.
+  - tool: spark
+    fit: partial
+    note: Single-node query engine with SQL and DataFrames and no cluster to run.

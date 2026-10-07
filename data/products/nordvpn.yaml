@@ -1,0 +1,5 @@
+name: NordVPN
+homepage: https://nordvpn.com
+vendor: Nord Security
+category: vpn-server
+description: Subscription VPN service that routes traffic through a large network of provider-run servers.

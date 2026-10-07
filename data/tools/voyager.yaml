@@ -1,3 +1,7 @@
 name: Voyager
 repository: https://github.com/aeharding/voyager
 category: social-client
+replaces:
+  - tool: reddit
+    fit: partial
+    note: Web and mobile client for Lemmy and PieFed; communities and history do not carry over from Reddit.

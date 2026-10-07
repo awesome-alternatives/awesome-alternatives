@@ -1,4 +1,11 @@
 name: Pocket ID
 repository: https://github.com/pocket-id/pocket-id
 category: identity-provider
+replaces:
+  - tool: keycloak
+    fit: partial
+    note: Passkey-only OIDC provider without federation or an admin directory.
+  - tool: authentik
+    fit: partial
+    note: Passkey-only OIDC provider without flows, policies or SAML.
 deploy: [container, compose, binary]

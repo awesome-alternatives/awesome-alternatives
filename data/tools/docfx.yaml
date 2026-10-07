@@ -1,3 +1,10 @@
 name: DocFX
 repository: https://github.com/dotnet/docfx
 category: documentation-site
+replaces:
+  - tool: doxygen
+    fit: partial
+    note: API reference for .NET code generated from XML comments, plus Markdown articles.
+  - tool: sphinx
+    fit: partial
+    note: Documentation site from Markdown and .NET API metadata rather than reStructuredText.

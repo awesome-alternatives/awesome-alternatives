@@ -1,3 +1,10 @@
 name: Outline Server
 repository: https://github.com/OutlineFoundation/outline-server
 category: vpn-server
+replaces:
+  - tool: nordvpn
+    fit: partial
+    note: Shadowsocks-based proxy server you run yourself, with access keys per user; one exit location.
+  - tool: openvpn-access-server
+    fit: partial
+    note: Self-hosted access keys and a manager app, with no OpenVPN protocol or per-user policy.

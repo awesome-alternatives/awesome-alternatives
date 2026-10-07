@@ -1,4 +1,8 @@
 name: z
 repository: https://github.com/rupa/z
 category: directory-jumper
+replaces:
+  - tool: autojump
+    fit: full
+    note: Jumps to frecent directories from a single shell script.
 terms: open

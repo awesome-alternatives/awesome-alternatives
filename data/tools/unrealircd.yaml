@@ -1,3 +1,7 @@
 name: UnrealIRCd
 repository: https://github.com/unrealircd/unrealircd
 category: irc-server
+replaces:
+  - tool: inspircd
+    fit: full
+    note: Full-featured IRC server with built-in channel and anti-flood modules.

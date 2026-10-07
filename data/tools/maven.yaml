@@ -1,3 +1,7 @@
 name: Apache Maven
 repository: https://github.com/apache/maven
 category: build-system
+replaces:
+  - tool: gradle
+    fit: full
+    note: Fixed build lifecycle and XML configuration instead of build scripts.

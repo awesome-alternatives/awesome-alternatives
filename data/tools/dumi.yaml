@@ -1,3 +1,7 @@
 name: dumi
 repository: https://github.com/umijs/dumi
 category: documentation-site
+replaces:
+  - tool: docusaurus
+    fit: partial
+    note: Documentation sites built around React component demos and API tables.

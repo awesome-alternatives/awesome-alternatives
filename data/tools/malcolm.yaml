@@ -1,4 +1,8 @@
 name: Malcolm
 repository: https://github.com/cisagov/Malcolm
 category: siem
+replaces:
+  - tool: security-onion
+    fit: partial
+    note: Network traffic analysis from PCAP, Zeek logs and Suricata alerts, with no host agents.
 terms: open

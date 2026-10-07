@@ -1,3 +1,7 @@
 name: Gradle
 repository: https://github.com/gradle/gradle
 category: build-system
+replaces:
+  - tool: maven
+    fit: full
+    note: Build scripts in Groovy or Kotlin instead of XML, with the same dependency repositories.

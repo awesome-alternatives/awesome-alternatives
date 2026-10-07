@@ -1,4 +1,8 @@
 name: JuiceFS
 repository: https://github.com/juicedata/juicefs
 category: distributed-storage
+replaces:
+  - tool: glusterfs
+    fit: partial
+    note: POSIX file system on top of object storage, needing a separate metadata engine and object store.
 deploy: [binary]

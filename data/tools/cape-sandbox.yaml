@@ -1,4 +1,8 @@
 name: CAPE Sandbox
 repository: https://github.com/kevoreilly/CAPEv2
 category: malware-scanner
+replaces:
+  - tool: any-run
+    fit: partial
+    note: Self-hosted analysis of samples with payload and config extraction; no shared community of submissions.
 terms: open

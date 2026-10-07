@@ -1,4 +1,8 @@
 name: Glance
 repository: https://github.com/glanceapp/glance
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: partial
+    note: Single-page dashboard of feeds and widgets rather than a launcher of app tiles.
 deploy: [container, binary]

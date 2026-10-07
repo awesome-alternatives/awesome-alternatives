@@ -1,4 +1,11 @@
 name: Ergo
 repository: https://github.com/ergochat/ergo
 category: irc-server
+replaces:
+  - tool: inspircd
+    fit: full
+    note: IRC server with accounts, history and an optional built-in bouncer in a single binary.
+  - tool: znc
+    fit: partial
+    note: Built-in history playback covers the bouncer role without a separate process.
 deploy: [container, binary]

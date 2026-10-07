@@ -1,3 +1,7 @@
 name: Ice Cubes
 repository: https://github.com/Dimillian/IceCubesApp
 category: social-client
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: iOS and macOS client for Mastodon, a different network, so existing followers do not carry over.

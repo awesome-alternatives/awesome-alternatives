@@ -1,4 +1,8 @@
 name: FoundationDB
 repository: https://github.com/apple/foundationdb
 category: distributed-key-value
+replaces:
+  - tool: tikv
+    fit: partial
+    note: Ordered transactional key-value store, used as a base for layers.
 deploy: [container, package]

@@ -1,4 +1,8 @@
 name: etcd
 repository: https://github.com/etcd-io/etcd
 category: distributed-key-value
+replaces:
+  - tool: consul
+    fit: partial
+    note: Raft-backed key-value store with watches and leases, without service discovery or a service mesh.
 deploy: [container, binary]

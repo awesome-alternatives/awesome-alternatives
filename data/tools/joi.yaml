@@ -1,4 +1,11 @@
 name: Joi
 repository: https://github.com/hapijs/joi
 category: javascript-validation
+replaces:
+  - tool: yup
+    fit: full
+    note: Chained schema builders with validation and coercion.
+  - tool: zod
+    fit: full
+    note: Schema builders for Node.js with detailed validation messages.
 terms: open

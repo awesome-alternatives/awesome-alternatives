@@ -1,3 +1,7 @@
 name: Mastodon for iOS
 repository: https://github.com/mastodon/mastodon-ios
 category: social-client
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Official iOS app for Mastodon, a different network, so existing followers do not carry over.

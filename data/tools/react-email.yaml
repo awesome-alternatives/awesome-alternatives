@@ -1,3 +1,7 @@
 name: React Email
 repository: https://github.com/resend/react-email
 category: email-templating
+replaces:
+  - tool: mjml
+    fit: full
+    note: Builds HTML email from React components instead of a custom markup language.

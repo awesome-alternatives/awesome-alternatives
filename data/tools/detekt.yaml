@@ -1,3 +1,7 @@
 name: detekt
 repository: https://github.com/detekt/detekt
 category: jvm-lint-format
+replaces:
+  - tool: sonarqube
+    fit: partial
+    note: Static analysis for Kotlin only, run from the build without a server.

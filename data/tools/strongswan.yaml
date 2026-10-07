@@ -1,4 +1,8 @@
 name: strongSwan
 repository: https://github.com/strongswan/strongswan
 category: vpn-server
+replaces:
+  - tool: openvpn-access-server
+    fit: partial
+    note: IPsec VPN server configured by file, with no web admin interface or user management.
 terms: open

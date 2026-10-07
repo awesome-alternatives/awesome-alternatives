@@ -1,4 +1,8 @@
 name: Redpanda Console
 repository: https://github.com/redpanda-data/console
 category: kafka-ui
+replaces:
+  - tool: conduktor
+    fit: partial
+    note: Browses topics, consumer groups and schemas and manages ACLs, with no data policies.
 terms: source-available
