@@ -1,4 +1,11 @@
 name: Conduit
 repository: https://github.com/ConduitIO/conduit
 category: data-integration
+replaces:
+  - tool: airbyte
+    fit: partial
+    note: Streaming data pipelines between systems using connectors, with change data capture and a smaller connector catalog.
+  - tool: fivetran
+    fit: partial
+    note: Moves data between databases and services using connectors, with a smaller connector catalog.
 deploy: [container, binary, package]

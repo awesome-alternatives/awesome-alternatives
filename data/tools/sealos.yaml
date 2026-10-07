@@ -1,4 +1,8 @@
 name: Sealos
 repository: https://github.com/labring/sealos
 category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: partial
+    note: Deploys apps onto a Kubernetes-based cloud, with a desktop-style web console.
 terms: source-available

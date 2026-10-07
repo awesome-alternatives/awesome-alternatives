@@ -1,3 +1,7 @@
 name: ranger
 repository: https://github.com/ranger/ranger
 category: terminal-file-manager
+replaces:
+  - tool: midnight-commander
+    fit: partial
+    note: Keyboard-driven terminal file manager with a multi-column layout and previews instead of two panes.

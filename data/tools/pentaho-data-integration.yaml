@@ -1,4 +1,11 @@
 name: Pentaho Data Integration
 repository: https://github.com/pentaho/pentaho-kettle
 category: data-integration
+replaces:
+  - tool: talend
+    fit: full
+    note: Visual ETL designer with a large set of connectors and transformations.
+  - tool: informatica
+    fit: partial
+    note: Visual ETL designer and scheduler, without Informatica's governance tooling.
 terms: source-available

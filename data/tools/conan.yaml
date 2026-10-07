@@ -1,3 +1,7 @@
 name: Conan
 repository: https://github.com/conan-io/conan
 category: cpp-package-manager
+replaces:
+  - tool: vcpkg
+    fit: full
+    note: C and C++ package manager that builds from source or fetches binaries, with a decentralised package model.

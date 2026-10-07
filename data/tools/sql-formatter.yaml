@@ -1,3 +1,7 @@
 name: SQL Formatter
 repository: https://github.com/sql-formatter-org/sql-formatter
 category: sql-lint-format
+replaces:
+  - tool: sqlfmt
+    fit: full
+    note: Formats SQL with dialect-aware rules, with no linting.

@@ -1,3 +1,10 @@
 name: addy.io
 repository: https://github.com/anonaddy/anonaddy
 category: email-alias
+replaces:
+  - tool: simplelogin
+    fit: full
+    note: Email aliases and custom domains with a catch-all, and it is self-hostable.
+  - tool: firefox-relay
+    fit: full
+    note: Email aliases that forward to your real address, with custom domains and no browser tie-in.

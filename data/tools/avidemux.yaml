@@ -1,4 +1,11 @@
 name: Avidemux
 repository: https://github.com/mean00/avidemux2
 category: video-editing
+replaces:
+  - tool: premiere-pro
+    fit: partial
+    note: Cuts, filters and re-encodes video, with no multitrack timeline.
+  - tool: handbrake
+    fit: partial
+    note: Re-encodes video with filters, and also cuts and joins clips.
 terms: open

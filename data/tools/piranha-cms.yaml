@@ -1,3 +1,10 @@
 name: Piranha CMS
 repository: https://github.com/PiranhaCMS/piranha.core
 category: website-cms
+replaces:
+  - tool: umbraco
+    fit: partial
+    note: ASP.NET Core CMS with page types and blocks, with a smaller community.
+  - tool: orchard-core
+    fit: partial
+    note: ASP.NET Core CMS with a lighter content model.

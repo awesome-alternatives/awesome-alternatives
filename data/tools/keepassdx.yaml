@@ -1,3 +1,10 @@
 name: KeePassDX
 repository: https://github.com/Kunzisoft/KeePassDX
 category: password-manager
+replaces:
+  - tool: lastpass
+    fit: partial
+    note: Android client for local KeePass databases with autofill, and no hosted sync.
+  - tool: 1password
+    fit: partial
+    note: Android client for local KeePass databases with autofill, and no hosted sync.

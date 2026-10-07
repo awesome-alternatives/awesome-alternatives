@@ -1,3 +1,7 @@
 name: Patroni
 repository: https://github.com/patroni/patroni
 category: database-high-availability
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: Automatic PostgreSQL failover and leader election on your own servers, without the managed service.

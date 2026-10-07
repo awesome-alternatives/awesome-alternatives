@@ -1,4 +1,8 @@
 name: sqlfmt
 repository: https://github.com/tconbeer/sqlfmt
 category: sql-lint-format
+replaces:
+  - tool: sql-formatter
+    fit: full
+    note: Opinionated SQL formatter with no configuration, which also handles Jinja in dbt models.
 terms: open

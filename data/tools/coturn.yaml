@@ -1,5 +1,9 @@
 name: coturn
 repository: https://github.com/coturn/coturn
 category: webrtc-server
+replaces:
+  - tool: twilio
+    fit: partial
+    note: STUN and TURN server for WebRTC, covering Twilio's network traversal only.
 terms: open
 deploy: [container]

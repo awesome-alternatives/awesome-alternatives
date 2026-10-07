@@ -1,5 +1,15 @@
 name: Kibana
 repository: https://github.com/elastic/kibana
 category: dashboards
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Search and dashboards for logs in Elasticsearch.
+  - tool: datadog
+    fit: partial
+    note: Log search and dashboards on Elasticsearch data, without hosted APM.
+  - tool: grafana
+    fit: partial
+    note: Dashboards and exploration on Elasticsearch data.
 terms: open
 deploy: [container, package]

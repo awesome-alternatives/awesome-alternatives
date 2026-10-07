@@ -1,4 +1,11 @@
 name: STUNner
 repository: https://github.com/l7mp/stunner
 category: webrtc-server
+replaces:
+  - tool: coturn
+    fit: partial
+    note: Kubernetes-native STUN and TURN gateway, driven by Gateway API resources.
+  - tool: twilio
+    fit: partial
+    note: Self-hosted TURN service for WebRTC on Kubernetes.
 deploy: [helm]

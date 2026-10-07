@@ -1,3 +1,7 @@
 name: WeeWX
 repository: https://github.com/weewx/weewx
 category: weather
+replaces:
+  - tool: weather-display
+    fit: partial
+    note: Reads a personal weather station, stores the data and publishes reports to a website, on Linux and macOS as well.

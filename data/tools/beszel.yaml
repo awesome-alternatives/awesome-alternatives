@@ -1,4 +1,11 @@
 name: Beszel
 repository: https://github.com/henrygd/beszel
 category: metrics
+replaces:
+  - tool: netdata
+    fit: partial
+    note: Lightweight server resource monitoring with a hub and agents, with shorter history and fewer metrics.
+  - tool: datadog
+    fit: partial
+    note: Host and Docker metrics with alerts, without APM, logs or integrations.
 deploy: [container, compose, helm, binary, package]

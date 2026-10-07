@@ -1,3 +1,7 @@
 name: Dragonfly
 repository: https://github.com/dragonflyoss/dragonfly
 category: container-registry
+replaces:
+  - tool: kraken
+    fit: full
+    note: Peer-to-peer image and file distribution inside a cluster.

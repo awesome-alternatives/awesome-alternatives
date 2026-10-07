@@ -1,3 +1,7 @@
 name: Lynis
 repository: https://github.com/CISOfy/lynis
 category: security-audit
+replaces:
+  - tool: nessus
+    fit: partial
+    note: Host hardening audit with a score, without network vulnerability scanning.

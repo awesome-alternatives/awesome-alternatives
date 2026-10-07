@@ -1,4 +1,11 @@
 name: Telegraf
 repository: https://github.com/influxdata/telegraf
 category: metrics
+replaces:
+  - tool: collectd
+    fit: full
+    note: Plugin-driven agent that collects and ships metrics to many outputs.
+  - tool: datadog
+    fit: partial
+    note: Agent that collects host and service metrics, with storage and dashboards done elsewhere.
 deploy: [container]

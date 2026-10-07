@@ -1,3 +1,10 @@
 name: Spegel
 repository: https://github.com/spegel-org/spegel
 category: container-registry
+replaces:
+  - tool: dragonfly-p2p
+    fit: partial
+    note: Stateless peer-to-peer image mirror between Kubernetes nodes, with no scheduler or manager.
+  - tool: kraken
+    fit: partial
+    note: Shares image layers between nodes without a central tracker or origin.

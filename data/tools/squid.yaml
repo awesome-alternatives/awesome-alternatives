@@ -1,3 +1,7 @@
 name: Squid
 repository: https://github.com/squid-cache/squid
 category: reverse-proxy
+replaces:
+  - tool: apache-traffic-server
+    fit: partial
+    note: Caching forward and reverse proxy, with ACLs and authentication for outbound traffic.

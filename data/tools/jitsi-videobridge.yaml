@@ -1,3 +1,10 @@
 name: Jitsi Videobridge
 repository: https://github.com/jitsi/jitsi-videobridge
 category: webrtc-server
+replaces:
+  - tool: agora
+    fit: partial
+    note: WebRTC selective forwarding unit that routes video between participants, without client SDKs for every platform.
+  - tool: mediasoup
+    fit: full
+    note: WebRTC selective forwarding unit with simulcast and bandwidth estimation.

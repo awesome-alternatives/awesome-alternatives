@@ -1,3 +1,7 @@
 name: Contour
 repository: https://github.com/projectcontour/contour
 category: reverse-proxy
+replaces:
+  - tool: ingress-nginx
+    fit: full
+    note: Kubernetes ingress controller on Envoy with HTTPProxy routing and Gateway API support.

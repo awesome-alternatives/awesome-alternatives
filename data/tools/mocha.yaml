@@ -1,3 +1,10 @@
 name: Mocha
 repository: https://github.com/mochajs/mocha
 category: javascript-test-runner
+replaces:
+  - tool: jasmine
+    fit: full
+    note: JavaScript test framework for Node and browsers, using an assertion library of your choice.
+  - tool: ava
+    fit: partial
+    note: JavaScript test runner with a different style, running tests serially by default.

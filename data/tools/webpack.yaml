@@ -1,3 +1,7 @@
 name: webpack
 repository: https://github.com/webpack/webpack
 category: javascript-bundler
+replaces:
+  - tool: parcel
+    fit: full
+    note: Bundles JavaScript and assets for browsers, with a loader and plugin system.

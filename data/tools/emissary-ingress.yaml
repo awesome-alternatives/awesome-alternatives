@@ -1,3 +1,10 @@
 name: Emissary-ingress
 repository: https://github.com/emissary-ingress/emissary
 category: reverse-proxy
+replaces:
+  - tool: ingress-nginx
+    fit: full
+    note: Envoy-based Kubernetes ingress controller with its own Mapping resources.
+  - tool: kong
+    fit: partial
+    note: API gateway features such as auth and rate limiting on Kubernetes, with a smaller plugin set.

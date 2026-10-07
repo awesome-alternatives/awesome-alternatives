@@ -1,3 +1,10 @@
 name: SSLyze
 repository: https://github.com/nabla-c0d3/sslyze
 category: security-audit
+replaces:
+  - tool: testssl-sh
+    fit: full
+    note: Command-line TLS scanner that checks protocols, ciphers and known vulnerabilities.
+  - tool: qualys-ssl-labs
+    fit: partial
+    note: Scans a server's TLS setup from your own machine, with no letter grade.

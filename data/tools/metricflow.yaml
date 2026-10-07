@@ -1,3 +1,10 @@
 name: MetricFlow
 repository: https://github.com/dbt-labs/metricflow
 category: semantic-layer
+replaces:
+  - tool: cube
+    fit: full
+    note: Semantic layer that defines metrics in YAML and generates SQL for them.
+  - tool: looker
+    fit: partial
+    note: Metric definitions in YAML like LookML, without the BI front end.

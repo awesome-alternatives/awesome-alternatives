@@ -1,3 +1,7 @@
 name: WonderCMS
 repository: https://github.com/WonderCMS/wondercms
 category: website-cms
+replaces:
+  - tool: grav
+    fit: partial
+    note: Flat-file CMS for very small sites with an admin panel and plugins, and far fewer features.

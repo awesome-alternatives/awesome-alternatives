@@ -1,3 +1,7 @@
 name: Breezy Weather
 repository: https://github.com/breezy-weather/breezy-weather
 category: weather
+replaces:
+  - tool: the-weather-channel
+    fit: partial
+    note: Android weather app with forecasts and a choice of data sources, with no radar service.

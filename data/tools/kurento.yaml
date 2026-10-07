@@ -1,4 +1,11 @@
 name: Kurento
 repository: https://github.com/Kurento/kurento
 category: webrtc-server
+replaces:
+  - tool: janus
+    fit: partial
+    note: WebRTC media server with pipelines for recording and processing media.
+  - tool: agora
+    fit: partial
+    note: Self-hosted WebRTC media server, without hosted global infrastructure.
 deploy: [container]

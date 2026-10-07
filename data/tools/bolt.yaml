@@ -1,3 +1,10 @@
 name: Bolt CMS
 repository: https://github.com/bolt/core
 category: website-cms
+replaces:
+  - tool: craft-cms
+    fit: partial
+    note: Symfony-based CMS with content types and a custom admin, with a much smaller plugin ecosystem.
+  - tool: statamic
+    fit: partial
+    note: Content-type driven CMS for developers, but backed by a database instead of flat files.

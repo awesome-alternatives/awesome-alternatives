@@ -1,3 +1,10 @@
 name: Jest
 repository: https://github.com/jestjs/jest
 category: javascript-test-runner
+replaces:
+  - tool: mocha
+    fit: full
+    note: JavaScript test runner with assertions, mocking and coverage built in.
+  - tool: jasmine
+    fit: full
+    note: JavaScript test runner with assertions, mocking and coverage built in.

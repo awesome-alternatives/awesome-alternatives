@@ -1,3 +1,13 @@
 name: Puppet
 repository: https://github.com/puppetlabs/puppet
 category: config-management
+replaces:
+  - tool: chef
+    fit: full
+    note: Declarative agent-based configuration management with its own DSL.
+  - tool: ansible
+    fit: full
+    note: Declarative configuration management with an agent and a server, instead of agentless SSH runs.
+  - tool: salt
+    fit: full
+    note: Agent-based configuration management with a declarative language.

@@ -1,3 +1,10 @@
 name: gopass
 repository: https://github.com/gopasspw/gopass
 category: password-manager
+replaces:
+  - tool: 1password
+    fit: partial
+    note: Command-line team password store built on GPG and Git, with no hosted sync.
+  - tool: lastpass
+    fit: partial
+    note: Shared password store on Git, with a CLI and browser integration.

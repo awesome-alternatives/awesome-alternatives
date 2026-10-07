@@ -1,4 +1,11 @@
 name: Midnight Commander
 repository: https://github.com/MidnightCommander/mc
 category: terminal-file-manager
+replaces:
+  - tool: far-manager
+    fit: full
+    note: Dual-pane console file manager with an internal viewer and editor, on Unix.
+  - tool: total-commander
+    fit: partial
+    note: Dual-pane file manager in the terminal, with FTP and archive browsing.
 terms: open

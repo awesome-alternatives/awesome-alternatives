@@ -1,4 +1,8 @@
 name: Rainbond
 repository: https://github.com/goodrain/rainbond
 category: self-hosted-paas
+replaces:
+  - tool: heroku
+    fit: partial
+    note: Deploys apps from source or images onto Kubernetes with a web UI and a built-in application model.
 terms: source-available

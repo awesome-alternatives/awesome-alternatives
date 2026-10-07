@@ -1,4 +1,11 @@
 name: BunkerWeb
 repository: https://github.com/bunkerity/bunkerweb
 category: reverse-proxy
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: Web application firewall in front of your own sites, without the CDN.
+  - tool: modsecurity
+    fit: partial
+    note: Bundles ModSecurity with the core rules and adds bot and rate limiting plus a web UI.
 deploy: [container, compose, helm]

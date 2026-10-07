@@ -1,3 +1,10 @@
 name: OpenBoard
 repository: https://github.com/OpenBoard-org/OpenBoard
 category: diagramming
+replaces:
+  - tool: miro
+    fit: partial
+    note: Whiteboard for teaching and presenting on one screen, without real-time collaboration.
+  - tool: smart-notebook
+    fit: full
+    note: Interactive classroom whiteboard software that works with most interactive displays.

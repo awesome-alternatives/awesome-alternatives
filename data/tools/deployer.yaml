@@ -1,3 +1,7 @@
 name: Deployer
 repository: https://github.com/deployphp/deployer
 category: config-management
+replaces:
+  - tool: capistrano
+    fit: full
+    note: PHP deployment tool with releases, shared files and rollbacks over SSH.

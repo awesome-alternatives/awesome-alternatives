@@ -1,3 +1,7 @@
 name: markmap
 repository: https://github.com/markmap/markmap
 category: diagramming
+replaces:
+  - tool: xmind
+    fit: partial
+    note: Turns Markdown into an interactive mind map, without manual layout editing.

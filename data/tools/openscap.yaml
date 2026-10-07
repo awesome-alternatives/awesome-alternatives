@@ -1,3 +1,7 @@
 name: OpenSCAP
 repository: https://github.com/OpenSCAP/openscap
 category: security-audit
+replaces:
+  - tool: nessus
+    fit: partial
+    note: Compliance and vulnerability scanning of hosts against SCAP and CIS content.

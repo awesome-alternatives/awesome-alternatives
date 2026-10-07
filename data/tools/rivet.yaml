@@ -1,3 +1,7 @@
 name: Rivet
 repository: https://github.com/Ironclad/rivet
 category: llm-app-builder
+replaces:
+  - tool: langflow
+    fit: partial
+    note: Visual graph editor for LLM pipelines that runs on the desktop.

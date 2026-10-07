@@ -1,3 +1,7 @@
 name: LXD
 repository: https://github.com/canonical/lxd
 category: virtualization
+replaces:
+  - tool: vmware-vsphere
+    fit: partial
+    note: Runs virtual machines and system containers in a cluster with a REST API, without the vCenter ecosystem.
