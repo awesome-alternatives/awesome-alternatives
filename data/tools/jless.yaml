@@ -1,3 +1,7 @@
 name: jless
 repository: https://github.com/PaulJuliusMartinez/jless
 category: json-processor
+replaces:
+  - tool: jq
+    fit: partial
+    note: Interactive viewer for browsing JSON, which does not transform or filter it.

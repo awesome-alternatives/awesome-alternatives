@@ -1,3 +1,7 @@
 name: Armory
 repository: https://github.com/armory3d/armory
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: Scripted 3D engine built into Blender, with no dedicated editor of its own and a much smaller asset ecosystem.

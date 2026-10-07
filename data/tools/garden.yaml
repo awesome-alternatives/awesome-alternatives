@@ -1,3 +1,7 @@
 name: Garden
 repository: https://github.com/garden-io/garden
 category: kubernetes-development
+replaces:
+  - tool: skaffold
+    fit: partial
+    note: Builds and deploys to a cluster during development and adds a dependency graph across services.

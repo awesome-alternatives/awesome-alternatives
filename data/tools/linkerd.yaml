@@ -1,3 +1,7 @@
 name: Linkerd
 repository: https://github.com/linkerd/linkerd2
 category: service-mesh
+replaces:
+  - tool: istio
+    fit: full
+    note: Service mesh with mutual TLS, retries and traffic metrics, with a smaller feature set and lighter proxies.

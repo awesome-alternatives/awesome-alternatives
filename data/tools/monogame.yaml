@@ -1,4 +1,8 @@
 name: MonoGame
 repository: https://github.com/MonoGame/MonoGame
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: "C# framework for 2D and 3D games with no editor, so scenes and tooling are yours to build."
 terms: open

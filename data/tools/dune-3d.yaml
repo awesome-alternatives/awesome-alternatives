@@ -1,3 +1,7 @@
 name: Dune 3D
 repository: https://github.com/dune3d/dune3d
 category: cad
+replaces:
+  - tool: solidworks
+    fit: partial
+    note: Parametric 3D CAD with sketches and constraints, still missing assemblies and drawings.

@@ -1,3 +1,10 @@
 name: Websurfx
 repository: https://github.com/neon-mmd/websurfx
 category: private-search
+replaces:
+  - tool: google-search
+    fit: partial
+    note: Metasearch engine written in Rust that aggregates other engines without tracking, with fewer engines than SearXNG.
+  - tool: searxng
+    fit: full
+    note: Self-hosted metasearch engine, with fewer engines and settings.

@@ -1,3 +1,7 @@
 name: AIDE
 repository: https://github.com/aide/aide
 category: intrusion-detection
+replaces:
+  - tool: tripwire
+    fit: full
+    note: File integrity checking against a database of hashes and attributes, without a managed console.

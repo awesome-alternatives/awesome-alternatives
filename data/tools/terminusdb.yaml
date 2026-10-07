@@ -1,4 +1,8 @@
 name: TerminusDB
 repository: https://github.com/terminusdb/terminusdb
 category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Document and graph store with git-like versioning, queried in WOQL or GraphQL instead of Cypher.
 deploy: [container]

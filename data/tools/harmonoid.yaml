@@ -1,4 +1,8 @@
 name: Harmonoid
 repository: https://github.com/harmonoid/harmonoid
 category: music-player
+replaces:
+  - tool: musicbee
+    fit: partial
+    note: Local music library player for desktop and mobile, without MusicBee's tagging and library tools.
 terms: source-available

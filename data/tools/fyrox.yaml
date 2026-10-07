@@ -1,3 +1,7 @@
 name: Fyrox
 repository: https://github.com/FyroxEngine/Fyrox
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: Rust engine with a scene editor for 2D and 3D games, without Unity's asset store or console support.

@@ -1,3 +1,7 @@
 name: Wapiti
 repository: https://github.com/wapiti-scanner/wapiti
 category: dast-scanner
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Black-box scanner that fuzzes forms and parameters, without an intercepting proxy or manual testing tools.

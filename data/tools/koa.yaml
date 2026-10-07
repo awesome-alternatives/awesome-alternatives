@@ -1,3 +1,7 @@
 name: Koa
 repository: https://github.com/koajs/koa
 category: node-web-framework
+replaces:
+  - tool: express
+    fit: full
+    note: Minimal Node.js web framework built on async functions, with fewer built-in middleware.

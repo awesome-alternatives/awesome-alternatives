@@ -1,3 +1,10 @@
 name: Phaser
 repository: https://github.com/phaserjs/phaser
 category: game-engine
+replaces:
+  - tool: construct
+    fit: partial
+    note: JavaScript framework for 2D browser games, written in code instead of a visual editor.
+  - tool: gamemaker
+    fit: partial
+    note: Code-first 2D engine that exports to the web, without a built-in editor or console exports.

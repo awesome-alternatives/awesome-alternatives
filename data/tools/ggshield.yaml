@@ -1,3 +1,7 @@
 name: ggshield
 repository: https://github.com/GitGuardian/ggshield
 category: secret-scanning
+replaces:
+  - tool: gitleaks
+    fit: partial
+    note: Scans for secrets in commits and pre-commit hooks, with detection that needs a GitGuardian account.

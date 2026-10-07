@@ -1,3 +1,7 @@
 name: VHS
 repository: https://github.com/charmbracelet/vhs
 category: terminal-recording
+replaces:
+  - tool: asciinema
+    fit: partial
+    note: Records terminal sessions from a script into a GIF or video, rather than capturing a live session as text.

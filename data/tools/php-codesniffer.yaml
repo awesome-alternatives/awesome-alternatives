@@ -1,3 +1,7 @@
 name: PHP_CodeSniffer
 repository: https://github.com/PHPCSStandards/PHP_CodeSniffer
 category: php-lint-format
+replaces:
+  - tool: php-cs-fixer
+    fit: partial
+    note: Checks code against coding standards and fixes many violations, with a rule-based sniff approach.

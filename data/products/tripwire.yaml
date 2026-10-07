@@ -1,0 +1,5 @@
+name: Tripwire
+homepage: https://www.tripwire.com
+vendor: Fortra
+category: intrusion-detection
+description: Commercial file integrity monitoring and security configuration management for servers and network devices.

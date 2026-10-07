@@ -1,3 +1,7 @@
 name: Damselfly
 repository: https://github.com/Webreaper/Damselfly
 category: photo-library
+replaces:
+  - tool: google-photos
+    fit: partial
+    note: Self-hosted photo browser with tagging, face recognition and search, without mobile backup.

@@ -1,3 +1,7 @@
 name: Air
 repository: https://github.com/air-verse/air
 category: file-watcher
+replaces:
+  - tool: nodemon
+    fit: partial
+    note: Rebuilds and restarts Go programs when files change, for Go projects only.

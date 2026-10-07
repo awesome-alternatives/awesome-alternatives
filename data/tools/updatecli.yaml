@@ -1,3 +1,7 @@
 name: Updatecli
 repository: https://github.com/updatecli/updatecli
 category: dependency-updates
+replaces:
+  - tool: renovate
+    fit: partial
+    note: Applies declarative update pipelines to files, images and other sources, without a dashboard of pending updates.

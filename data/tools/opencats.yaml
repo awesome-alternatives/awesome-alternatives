@@ -1,5 +1,9 @@
 name: OpenCATS
 repository: https://github.com/opencats/OpenCATS
 category: hr-management
+replaces:
+  - tool: greenhouse
+    fit: partial
+    note: Applicant tracking with job postings and candidate pipelines, without Greenhouse's scheduling and integrations.
 terms: open
 deploy: [compose]

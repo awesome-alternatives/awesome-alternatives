@@ -1,3 +1,10 @@
 name: ytt
 repository: https://github.com/carvel-dev/ytt
 category: kubernetes-packaging
+replaces:
+  - tool: helm
+    fit: partial
+    note: Templates YAML with a structure-aware overlay language, without chart packaging or release tracking.
+  - tool: kustomize
+    fit: partial
+    note: Overlays on YAML with a programmable template language, with a steeper learning curve.

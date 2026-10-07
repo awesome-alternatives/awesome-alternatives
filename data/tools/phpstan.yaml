@@ -1,3 +1,7 @@
 name: PHPStan
 repository: https://github.com/phpstan/phpstan
 category: php-lint-format
+replaces:
+  - tool: psalm
+    fit: full
+    note: Static analysis for PHP with levels, baselines and a plugin ecosystem.

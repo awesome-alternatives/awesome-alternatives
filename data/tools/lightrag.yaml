@@ -1,4 +1,8 @@
 name: LightRAG
 repository: https://github.com/HKUDS/LightRAG
 category: document-qa
+replaces:
+  - tool: notebooklm
+    fit: partial
+    note: Graph-based retrieval library for answering questions over your documents, without a ready-made interface.
 deploy: [container, compose]

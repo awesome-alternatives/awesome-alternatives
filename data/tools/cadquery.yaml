@@ -1,4 +1,8 @@
 name: CadQuery
 repository: https://github.com/CadQuery/cadquery
 category: cad
+replaces:
+  - tool: fusion-360
+    fit: partial
+    note: Parametric 3D modelling written as Python code, with no GUI and no CAM or simulation.
 terms: open

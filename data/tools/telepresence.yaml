@@ -1,3 +1,7 @@
 name: Telepresence
 repository: https://github.com/telepresenceio/telepresence
 category: kubernetes-development
+replaces:
+  - tool: mirrord
+    fit: partial
+    note: Connects a local process to a remote cluster, using a traffic manager installed in the cluster.

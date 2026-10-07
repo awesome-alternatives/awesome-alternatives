@@ -1,3 +1,10 @@
 name: Okteto CLI
 repository: https://github.com/okteto/okteto
 category: kubernetes-development
+replaces:
+  - tool: github-codespaces
+    fit: partial
+    note: Remote development environments that run in your own Kubernetes cluster, without a hosted editor.
+  - tool: skaffold
+    fit: partial
+    note: Syncs code into a running cluster for development, rather than rebuilding images on every change.
