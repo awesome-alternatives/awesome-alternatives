@@ -1,0 +1,7 @@
+name: Scholarsome
+repository: https://github.com/hwgilbert16/scholarsome
+category: flashcards
+replaces:
+  - tool: quizlet
+    fit: partial
+    note: Flashcard sets with study modes on your own server; no public library of shared sets.

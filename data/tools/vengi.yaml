@@ -1,0 +1,8 @@
+name: vengi
+repository: https://github.com/vengi-voxel/vengi
+category: 3d-modeling
+terms: open
+replaces:
+  - tool: magicavoxel
+    fit: full
+    note: Voxel editor with layers and palettes that reads and writes many formats including vox; rendering is less polished.

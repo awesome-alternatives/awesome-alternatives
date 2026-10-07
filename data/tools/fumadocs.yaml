@@ -8,3 +8,6 @@ replaces:
   - tool: nextra
     fit: full
     note: A docs framework for Next.js and other React frameworks, with its own content sources and UI.
+  - tool: readme
+    fit: partial
+    note: Docs framework with OpenAPI reference pages and versioning; no hosted developer hub, feedback or usage metrics.

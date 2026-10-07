@@ -11,4 +11,7 @@ replaces:
   - tool: collibra
     fit: full
     note: Catalog with search, lineage and glossary terms across data sources.
+  - tool: monte-carlo
+    fit: partial
+    note: Lineage and data assertions in the open source edition; automated anomaly monitors are part of the hosted product.
 deploy: [container]

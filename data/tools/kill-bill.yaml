@@ -8,4 +8,7 @@ replaces:
   - tool: chargebee
     fit: full
     note: Subscription catalog, invoicing and dunning on your own server.
+  - tool: stripe
+    fit: partial
+    note: Orchestrates payments through gateway plugins with retries and subscriptions; does not process cards itself.
 deploy: [container, compose]

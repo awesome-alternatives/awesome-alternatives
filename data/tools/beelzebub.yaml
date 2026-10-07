@@ -1,0 +1,7 @@
+name: Beelzebub
+repository: https://github.com/beelzebub-labs/beelzebub
+category: honeypot
+replaces:
+  - tool: thinkst-canary
+    fit: partial
+    note: Configurable honeypot that fakes SSH, HTTP and other services and logs attackers; no hardware devices or canary tokens.

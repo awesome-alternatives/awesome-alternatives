@@ -5,3 +5,6 @@ replaces:
   - tool: jamf-pro
     fit: partial
     note: Apple MDM protocol server driven by an API, without inventory, app catalog or a web console.
+  - tool: microsoft-intune
+    fit: partial
+    note: Apple device enrolment and command delivery over the MDM protocol; no Windows or Android management.

@@ -8,4 +8,7 @@ replaces:
   - tool: pocket
     fit: partial
     note: Bookmarks with read-later flags and snapshots.
+  - tool: pinboard
+    fit: full
+    note: Tagged bookmarks with search, archived snapshots and an API; no social sharing.
 deploy: [container]

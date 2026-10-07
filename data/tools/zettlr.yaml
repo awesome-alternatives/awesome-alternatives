@@ -5,3 +5,6 @@ replaces:
   - tool: obsidian
     fit: partial
     note: Linked Markdown files in local folders, geared to academic writing with Zotero citations and Pandoc export, without mobile apps.
+  - tool: typora
+    fit: partial
+    note: Markdown editor with live rendering; geared toward academic writing and citations.

@@ -9,4 +9,7 @@ replaces:
   - tool: mint
     fit: partial
     note: Envelope budgeting with bank sync through providers such as SimpleFIN or Enable Banking, without investment tracking.
+  - tool: rocket-money
+    fit: partial
+    note: Budgeting and transaction tracking with bank sync; no subscription cancellation or bill negotiation.
 deploy: [container, compose, binary]

@@ -8,3 +8,9 @@ replaces:
   - tool: odoo
     fit: full
     note: A comparable module set without a paid edition.
+  - tool: sortly
+    fit: partial
+    note: Stock items, warehouses, batches and barcodes inside a full ERP; heavier to set up than a dedicated inventory app.
+  - tool: square-pos
+    fit: partial
+    note: Point of sale module with offline mode and stock sync; payment terminals need extra setup.

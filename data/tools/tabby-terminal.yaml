@@ -8,3 +8,6 @@ replaces:
   - tool: warp
     fit: partial
     note: A terminal without accounts or built-in AI.
+  - tool: termius
+    fit: partial
+    note: SSH client with saved profiles, SFTP and a terminal; no mobile apps.

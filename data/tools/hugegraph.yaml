@@ -8,4 +8,7 @@ replaces:
   - tool: azure-cosmos-db-gremlin
     fit: full
     note: Property graph database queried with Apache TinkerPop Gremlin.
+  - tool: tigergraph
+    fit: partial
+    note: Distributed graph database queried with Gremlin; no GSQL or built-in analytics library.
 deploy: [container, compose]

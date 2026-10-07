@@ -5,3 +5,6 @@ replaces:
   - tool: jfrog-artifactory
     fit: full
     note: Hosts and mirrors RPM, Debian, Python, container, Maven, npm and Ansible content, each format added as a plugin.
+  - tool: red-hat-satellite
+    fit: partial
+    note: Repository mirroring, content versioning and publication for RPM and other formats; no host provisioning or subscription management.

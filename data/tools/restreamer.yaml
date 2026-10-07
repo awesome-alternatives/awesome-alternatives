@@ -5,4 +5,7 @@ replaces:
   - tool: twitch
     fit: partial
     note: Takes one live stream from a camera or OBS to its own player page and on to other platforms, without chat or a directory of other streamers.
+  - tool: wowza-streaming-engine
+    fit: partial
+    note: Ingests a stream and relays it to platforms or a player page; no transcoding ladder or server API.
 deploy: [container]

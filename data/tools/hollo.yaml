@@ -5,4 +5,7 @@ replaces:
   - tool: x-twitter
     fit: partial
     note: Single-user server with no web interface of its own, used through Mastodon-compatible clients.
+  - tool: threads
+    fit: partial
+    note: ActivityPub microblog for a single user, usable from Mastodon clients; no multi-user timelines.
 deploy: [container, compose]

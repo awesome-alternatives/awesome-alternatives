@@ -1,0 +1,7 @@
+name: Tockler
+repository: https://github.com/MayGo/tockler
+category: time-tracking
+replaces:
+  - tool: rescuetime
+    fit: partial
+    note: Tracks active windows and idle time locally on a timeline; no cloud sync, goals or distraction blocking.

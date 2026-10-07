@@ -8,3 +8,9 @@ replaces:
   - tool: datagrip
     fit: partial
     note: SQL editor, schema compare and data export, without the IDE's code analysis.
+  - tool: navicat
+    fit: partial
+    note: Data editor, query editor and schema tools for SQL databases and MongoDB; fewer data transfer and sync tools.
+  - tool: studio-3t
+    fit: partial
+    note: Collection browser, query editor and data editing for MongoDB; no visual aggregation builder.

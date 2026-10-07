@@ -1,0 +1,7 @@
+name: OpenWhispr
+repository: https://github.com/OpenWhispr/openwhispr
+category: speech-to-text
+replaces:
+  - tool: wispr-flow
+    fit: full
+    note: Hotkey dictation into the focused app using local or cloud Whisper models, on Windows, macOS and Linux.

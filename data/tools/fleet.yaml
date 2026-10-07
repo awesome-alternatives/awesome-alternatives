@@ -9,3 +9,6 @@ replaces:
   - tool: microsoft-intune
     fit: partial
     note: Manages Windows, macOS, Linux and mobile devices, with osquery-based visibility and fewer built-in compliance policies.
+  - tool: ninjaone
+    fit: partial
+    note: Inventory, queries, policies and scripts across computers through osquery; no remote desktop or ticketing.

@@ -1,0 +1,7 @@
+name: Tangram
+repository: https://github.com/sonnyp/Tangram
+category: chat-client
+replaces:
+  - tool: rambox
+    fit: partial
+    note: Keeps web apps in tabs with a separate session each; GNOME desktop only.

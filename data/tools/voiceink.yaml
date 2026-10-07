@@ -1,0 +1,8 @@
+name: VoiceInk
+repository: https://github.com/Beingpax/VoiceInk
+category: speech-to-text
+terms: open
+replaces:
+  - tool: wispr-flow
+    fit: partial
+    note: Dictates into any app with a hotkey using local Whisper models; macOS only.

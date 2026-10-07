@@ -5,3 +5,6 @@ replaces:
   - tool: microsoft-outlook
     fit: partial
     note: Desktop mail for IMAP, Gmail and Office 365 accounts on Windows, macOS and Linux, without a calendar.
+  - tool: superhuman
+    fit: partial
+    note: Snooze, send later, templates and read receipts in a fast client; some of these need the paid Pro plan, and there is no command-driven triage.

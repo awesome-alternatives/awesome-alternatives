@@ -8,3 +8,6 @@ replaces:
   - tool: hcaptcha
     fit: partial
     note: Proof-of-work challenge that filters bots from a whole site, not from a single form.
+  - tool: recaptcha
+    fit: partial
+    note: Proof-of-work challenge that screens out scrapers and bots; no per-user risk scoring and not a form widget.

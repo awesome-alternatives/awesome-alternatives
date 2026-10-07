@@ -5,3 +5,6 @@ replaces:
   - tool: niagara-launcher
     fit: partial
     note: Search-focused home screen with widgets and no app grid on the home page.
+  - tool: nova-launcher
+    fit: partial
+    note: Search-first launcher with widgets and a customizable home screen; no icon grid like Nova.

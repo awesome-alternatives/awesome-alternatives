@@ -1,0 +1,7 @@
+name: Red5 Server
+repository: https://github.com/Red5/red5-server
+category: video-hosting
+replaces:
+  - tool: wowza-streaming-engine
+    fit: full
+    note: Streaming server for RTMP, WebRTC and HLS with clustering and an application API; smaller ecosystem and tooling.

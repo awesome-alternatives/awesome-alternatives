@@ -1,0 +1,7 @@
+name: Papis
+repository: https://github.com/papis/papis
+category: reference-manager
+replaces:
+  - tool: mendeley
+    fit: partial
+    note: Command-line library with BibTeX export and git-based sync; no graphical PDF annotation or cloud sync.

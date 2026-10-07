@@ -1,0 +1,7 @@
+name: Uyuni
+repository: https://github.com/uyuni-project/uyuni
+category: config-management
+replaces:
+  - tool: red-hat-satellite
+    fit: full
+    note: Salt-based patching, provisioning, configuration and content lifecycle for Linux fleets including RHEL clones; Red Hat subscription handling differs.

@@ -1,0 +1,7 @@
+name: qimgv
+repository: https://github.com/easymodo/qimgv
+category: image-viewer
+replaces:
+  - tool: irfanview
+    fit: partial
+    note: Fast viewer with basic editing and video playback; no batch conversion or plugin set.

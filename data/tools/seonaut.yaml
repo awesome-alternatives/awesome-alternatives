@@ -5,4 +5,7 @@ replaces:
   - tool: screaming-frog
     fit: partial
     note: Crawls a site and reports broken links, redirects and on-page SEO issues in a web UI.
+  - tool: semrush
+    fit: partial
+    note: Technical site audits for broken links, redirects and missing tags; no keyword research or backlink data.
 deploy: [compose]

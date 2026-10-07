@@ -1,0 +1,7 @@
+name: Katello
+repository: https://github.com/Katello/katello
+category: config-management
+replaces:
+  - tool: red-hat-satellite
+    fit: full
+    note: The content and subscription management plugin for Foreman that Satellite is built on; community support only.

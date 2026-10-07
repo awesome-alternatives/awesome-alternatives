@@ -5,4 +5,10 @@ replaces:
   - tool: blue-iris
     fit: partial
     note: Recording with object, face and license plate recognition in a web UI, on Linux in a container.
+  - tool: nest-aware
+    fit: partial
+    note: Local object detection and recording for cameras with RTSP streams; no cloud history or Nest app notifications.
+  - tool: ring
+    fit: partial
+    note: Local object detection and recording for cameras with RTSP streams; no doorbell button, chime or Ring app.
 deploy: [container]

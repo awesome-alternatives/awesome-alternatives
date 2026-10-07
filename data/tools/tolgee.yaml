@@ -12,4 +12,7 @@ replaces:
   - tool: phrase
     fit: partial
     note: Software string management only; no professional translation marketplace.
+  - tool: transifex
+    fit: partial
+    note: Translation platform with in-context editing and machine translation; fewer enterprise workflow features.
 deploy: [container, compose]

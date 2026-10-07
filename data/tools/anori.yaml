@@ -1,0 +1,7 @@
+name: Anori
+repository: https://github.com/OlegWock/anori
+category: start-page
+replaces:
+  - tool: momentum
+    fit: partial
+    note: New-tab page with configurable widgets such as clock, weather and notes; browser extension only.

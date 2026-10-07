@@ -5,3 +5,6 @@ replaces:
   - tool: unraid
     fit: partial
     note: App store and dashboard over Docker on an existing Linux install; no disk array or virtual machines.
+  - tool: synology-dsm
+    fit: partial
+    note: App store and file sharing for a home server; no DSM-style storage management, snapshots or package ecosystem.

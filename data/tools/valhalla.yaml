@@ -5,5 +5,8 @@ replaces:
   - tool: google-maps-platform
     fit: partial
     note: Routing, isochrones and map matching over OpenStreetMap data behind an HTTP API; no live traffic.
+  - tool: mapbox
+    fit: partial
+    note: Routing, isochrones and map matching on OpenStreetMap data; no map styling or tile hosting.
 terms: open
 deploy: [container]

@@ -5,4 +5,7 @@ replaces:
   - tool: asana
     fit: full
     note: Tasks, kanban boards, timelines, goals and time tracking.
+  - tool: microsoft-project
+    fit: partial
+    note: Timeline view and task dependencies for small teams; no resource leveling or critical path.
 deploy: [container, compose]

@@ -1,0 +1,7 @@
+name: XPipe
+repository: https://github.com/xpipe-io/xpipe
+category: terminal-emulator
+replaces:
+  - tool: termius
+    fit: partial
+    note: Desktop connection hub that opens SSH, containers and remote files with your own terminal; no cloud sync.

@@ -1,0 +1,7 @@
+name: TREK
+repository: https://github.com/liketrek/TREK
+category: travel-planning
+replaces:
+  - tool: tripit
+    fit: partial
+    note: Collaborative itinerary planner with maps and budgets; no import from forwarded confirmation emails.

@@ -5,3 +5,6 @@ replaces:
   - tool: gitbook
     fit: full
     note: Documentation from Markdown in your own repository, deployed as a static site.
+  - tool: readme
+    fit: partial
+    note: Versioned docs site that can render API references through plugins; no hosted editor or usage metrics.

@@ -1,0 +1,7 @@
+name: Workout Tracker
+repository: https://github.com/jovandeginste/workout-tracker
+category: fitness-tracking
+replaces:
+  - tool: strava
+    fit: partial
+    note: Imports GPX and FIT files and shows maps, statistics and records; no social feed or segments.

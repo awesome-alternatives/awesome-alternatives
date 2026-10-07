@@ -5,4 +5,10 @@ replaces:
   - tool: blue-iris
     fit: partial
     note: Camera hub that bridges cameras to HomeKit, Google Home and Alexa; recording comes from its NVR plugin, which is paid.
+  - tool: nest-aware
+    fit: partial
+    note: Brings Nest and other cameras into your own recording and automation setup; video history needs the separate NVR plugin.
+  - tool: ring
+    fit: partial
+    note: Integrates Ring cameras and doorbells with local automation and recording; video history needs the separate NVR plugin.
 deploy: [container]

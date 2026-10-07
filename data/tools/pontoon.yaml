@@ -8,3 +8,6 @@ replaces:
   - tool: crowdin
     fit: partial
     note: Community translation synced with a git repository, in a narrower set of file formats.
+  - tool: phrase
+    fit: partial
+    note: Localization with translation memory and review roles, built around Mozilla projects; fewer integrations.

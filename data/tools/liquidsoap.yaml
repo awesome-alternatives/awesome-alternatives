@@ -1,0 +1,7 @@
+name: Liquidsoap
+repository: https://github.com/savonet/liquidsoap
+category: internet-radio
+replaces:
+  - tool: radio-co
+    fit: partial
+    note: Scripted automation with playlists, live source switching and streaming to Icecast; no web dashboard or hosting.

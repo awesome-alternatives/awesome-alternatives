@@ -8,3 +8,6 @@ replaces:
   - tool: circleci
     fit: full
     note: Pipelines declared in YAML or the UI, run on agents you operate.
+  - tool: octopus-deploy
+    fit: partial
+    note: Deployment pipelines with environments, approvals and promotion; no release versioning or multi-tenant deployments.

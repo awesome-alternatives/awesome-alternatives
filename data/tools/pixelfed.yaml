@@ -5,3 +5,6 @@ replaces:
   - tool: instagram
     fit: full
     note: Photo posts, albums, stories and follows without ads, federated with the fediverse over ActivityPub.
+  - tool: tiktok
+    fit: partial
+    note: Short videos and photos in a federated feed; no algorithmic For You page or effects editor.

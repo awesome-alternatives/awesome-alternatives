@@ -8,4 +8,7 @@ replaces:
   - tool: ifttt
     fit: partial
     note: Agents that watch the web and act on events, configured in JSON, without IFTTT's catalog of device and app services.
+  - tool: rss-app
+    fit: partial
+    note: Agents can turn web pages and APIs into feeds; needs agent setup and has no feed builder interface.
 deploy: [container]

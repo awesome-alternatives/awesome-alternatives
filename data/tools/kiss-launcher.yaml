@@ -1,0 +1,7 @@
+name: KISS Launcher
+repository: https://github.com/Neamar/KISS
+category: android-launcher
+replaces:
+  - tool: niagara-launcher
+    fit: partial
+    note: Fast launcher built around search with a minimal home screen; no alphabetical scroll list.
