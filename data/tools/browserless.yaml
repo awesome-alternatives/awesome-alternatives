@@ -1,0 +1,8 @@
+name: Browserless
+repository: https://github.com/browserless/browserless
+category: browser-agent
+terms: source-available
+replaces:
+  - tool: browserbase
+    fit: full
+    note: Headless Chrome behind Puppeteer and Playwright endpoints, with sessions and a debugger, in a container you run.

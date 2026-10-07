@@ -5,4 +5,7 @@ replaces:
   - tool: mysql
     fit: full
     note: Speaks the MySQL protocol and scales out across nodes; triggers and some MySQL features are missing.
+  - tool: google-cloud-spanner
+    fit: full
+    note: Distributed SQL with MySQL compatibility and strongly consistent transactions.
 deploy: [container]

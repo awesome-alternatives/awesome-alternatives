@@ -6,3 +6,6 @@ replaces:
   - tool: glyphs
     fit: partial
     note: Browser-based font editor aimed at hobbyists and beginners.
+  - tool: fontlab
+    fit: partial
+    note: Font editor in the browser for drawing glyphs, kerning and exporting OpenType; no variable font editing.

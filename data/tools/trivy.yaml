@@ -5,3 +5,6 @@ replaces:
   - tool: snyk
     fit: partial
     note: Scans dependencies, container images, infrastructure as code and secrets from the CLI or CI; no hosted dashboard or fix pull requests.
+  - tool: black-duck
+    fit: partial
+    note: Scans dependencies and images for vulnerabilities and reports licences; no snippet matching or approval workflow.

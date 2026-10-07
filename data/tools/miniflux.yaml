@@ -5,4 +5,7 @@ replaces:
   - tool: feedly
     fit: full
     note: A minimalist feed reader in one binary, with Fever and Google Reader APIs.
+  - tool: inoreader
+    fit: partial
+    note: Feed reader with filter and blocklist rules and full text search; no newsletter subscriptions.
 deploy: [container, binary, package]

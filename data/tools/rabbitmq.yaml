@@ -9,4 +9,7 @@ replaces:
   - tool: kafka
     fit: partial
     note: A message broker first; streams add a replayable, Kafka-like log.
+  - tool: amazon-mq
+    fit: drop-in
+    note: The same RabbitMQ broker that Amazon MQ hosts, run on your own servers.
 deploy: [binary, package]

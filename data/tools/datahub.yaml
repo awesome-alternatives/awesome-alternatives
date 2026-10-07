@@ -8,4 +8,7 @@ replaces:
   - tool: atlan
     fit: partial
     note: Metadata search, lineage, ownership and glossary across warehouses, BI tools and pipelines.
+  - tool: collibra
+    fit: full
+    note: Catalog with search, lineage and glossary terms across data sources.
 deploy: [container]

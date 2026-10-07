@@ -5,3 +5,6 @@ replaces:
   - tool: balsamiq
     fit: full
     note: Desktop GUI mockups and wireframes from stencil collections.
+  - tool: axure
+    fit: partial
+    note: Wireframes and clickable links between pages; no conditional logic.

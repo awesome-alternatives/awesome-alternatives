@@ -8,4 +8,7 @@ replaces:
   - tool: nextdns
     fit: full
     note: Encrypted DNS, block lists and per-client rules on your own server.
+  - tool: amazon-route-53
+    fit: partial
+    note: Authoritative DNS server with zones, records and a web console; no domain registration or health-checked routing.
 deploy: [container, compose]

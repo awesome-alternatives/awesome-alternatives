@@ -1,0 +1,8 @@
+name: sqlmap
+repository: https://github.com/sqlmapproject/sqlmap
+category: dast-scanner
+terms: open
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Detects and exploits SQL injection from the command line; no intercepting proxy.

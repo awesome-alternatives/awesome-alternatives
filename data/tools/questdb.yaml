@@ -6,4 +6,7 @@ replaces:
     fit: full
     note: Ingests the InfluxDB line protocol and is queried with SQL.
     migration: https://questdb.com/docs/guides/influxdb-migration/
+  - tool: amazon-timestream
+    fit: full
+    note: Time series database with SQL and fast ingestion, including the InfluxDB line protocol.
 deploy: [container, helm, binary]

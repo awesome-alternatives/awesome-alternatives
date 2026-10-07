@@ -8,3 +8,6 @@ replaces:
   - tool: bigquery
     fit: partial
     note: Analytical SQL on one machine.
+  - tool: amazon-athena
+    fit: partial
+    note: Queries Parquet and CSV files in S3 with SQL from a local process; no serverless service to run it for you.

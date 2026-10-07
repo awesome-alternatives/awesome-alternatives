@@ -5,4 +5,7 @@ replaces:
   - tool: auth0
     fit: full
     note: Sign-in pages, social and enterprise SSO, MFA and organizations over OpenID Connect.
+  - tool: clerk
+    fit: full
+    note: Sign-in experience, social and enterprise SSO and user management with prebuilt UI.
 deploy: [container, compose]

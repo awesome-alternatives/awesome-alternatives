@@ -5,3 +5,6 @@ replaces:
   - tool: onenote
     fit: partial
     note: Handwritten notes and PDF annotation with a pen on the desktop, without sync or typed notebooks.
+  - tool: goodnotes
+    fit: partial
+    note: Handwritten notes and PDF annotation on the desktop; no iPad app.

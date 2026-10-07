@@ -6,3 +6,6 @@ replaces:
   - tool: fontlab
     fit: partial
     note: Draws outlines, edits kerning and OpenType features and generates TrueType, OpenType and WOFF fonts, in an older interface.
+  - tool: glyphs
+    fit: partial
+    note: Outline font editor with kerning and OpenType features; variable font support is limited.

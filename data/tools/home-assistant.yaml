@@ -5,3 +5,6 @@ replaces:
   - tool: smartthings
     fit: full
     note: Local control of thousands of device integrations, with automations and dashboards.
+  - tool: homey
+    fit: full
+    note: Local control of Zigbee, Z-Wave, Matter and Wi-Fi devices with automations and dashboards.

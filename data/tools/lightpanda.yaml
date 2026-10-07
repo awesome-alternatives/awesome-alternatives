@@ -1,0 +1,7 @@
+name: Lightpanda
+repository: https://github.com/lightpanda-io/browser
+category: browser-agent
+replaces:
+  - tool: browserbase
+    fit: partial
+    note: Headless browser built for automation that speaks CDP to Puppeteer and Playwright; not a hosted session service.

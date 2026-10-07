@@ -5,4 +5,7 @@ replaces:
   - tool: ksqldb
     fit: partial
     note: Streaming SQL in the PostgreSQL dialect with materialized views over Kafka and CDC sources.
+  - tool: amazon-managed-flink
+    fit: partial
+    note: Streaming SQL database with materialized views over Kafka streams; SQL only, no DataStream API.
 deploy: [container, helm]

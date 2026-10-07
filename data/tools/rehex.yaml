@@ -1,0 +1,7 @@
+name: "Reverse Engineers' Hex Editor"
+repository: https://github.com/solemnwarning/rehex
+category: hex-editor
+replaces:
+  - tool: 010-editor
+    fit: partial
+    note: Binary editor with a data inspector, comments and data type highlighting; no scriptable templates.

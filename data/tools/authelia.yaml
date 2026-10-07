@@ -5,4 +5,7 @@ replaces:
   - tool: okta
     fit: partial
     note: SSO and MFA in front of a reverse proxy, plus an OpenID Connect provider, without user management UI.
+  - tool: duo
+    fit: partial
+    note: Self-hosted two-factor portal in front of web apps with TOTP, WebAuthn and push; no VPN or desktop login integrations.
 deploy: [container, binary]

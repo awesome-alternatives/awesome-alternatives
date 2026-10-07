@@ -11,4 +11,7 @@ replaces:
   - tool: amazon-dynamodb
     fit: partial
     note: Partitioned wide-column tables with tunable consistency through CQL, not the DynamoDB API.
+  - tool: bigtable
+    fit: partial
+    note: Wide-column database with partitioned rows, queried with CQL instead of the HBase client.
 deploy: [package]

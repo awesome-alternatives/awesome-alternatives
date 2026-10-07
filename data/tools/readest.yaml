@@ -5,3 +5,9 @@ replaces:
   - tool: amazon-kindle
     fit: partial
     note: Reads your own DRM-free books on desktop, mobile and the web with synced progress; books bought on Kindle stay there.
+  - tool: adobe-digital-editions
+    fit: partial
+    note: Reads EPUB and PDF on desktop and mobile with highlights and sync; no Adobe DRM support.
+  - tool: apple-books
+    fit: partial
+    note: Reads EPUB and PDF on iPhone, iPad and Mac with highlights and sync; no book store or audiobooks.

@@ -5,3 +5,6 @@ replaces:
   - tool: glyphs
     fit: partial
     note: Browser-based editor built for variable fonts, younger and with fewer features.
+  - tool: fontlab
+    fit: partial
+    note: Font editor in the browser with variable font support; fewer tools for production spacing and kerning.

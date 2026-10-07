@@ -5,3 +5,6 @@ replaces:
   - tool: red-hat-satellite
     fit: full
     note: The upstream of Satellite, provisioning and managing hosts with Katello for content.
+  - tool: ansible-automation-platform
+    fit: partial
+    note: Host management server that runs Ansible roles and playbooks from its web UI; not a workflow controller.

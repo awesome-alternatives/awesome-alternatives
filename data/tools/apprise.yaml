@@ -5,3 +5,6 @@ replaces:
   - tool: pushover
     fit: partial
     note: One command or Python call that delivers to Pushover, ntfy, Gotify, chat apps and many other services; it sends but has no app of its own.
+  - tool: courier
+    fit: partial
+    note: Sends one message to dozens of services through one API; no template editor or preference centre.

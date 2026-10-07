@@ -1,0 +1,7 @@
+name: ffuf
+repository: https://github.com/ffuf/ffuf
+category: dast-scanner
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Fuzzes paths, parameters and virtual hosts from the command line; no intercepting proxy or crawler.

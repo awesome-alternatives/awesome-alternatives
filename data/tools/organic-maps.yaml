@@ -5,4 +5,7 @@ replaces:
   - tool: google-maps
     fit: partial
     note: Offline maps and navigation from OpenStreetMap data without tracking; no live traffic or Street View.
+  - tool: alltrails
+    fit: partial
+    note: Offline OpenStreetMap maps with hiking trails and GPX tracks; no trail reviews or photos.
 terms: open

@@ -5,3 +5,6 @@ replaces:
   - tool: v0
     fit: partial
     note: Describe an interface and get HTML or framework components with a live preview, from any model.
+  - tool: bolt-new
+    fit: partial
+    note: Generates UI components from a prompt with a live preview; no full app generation or deploy.

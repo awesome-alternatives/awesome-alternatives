@@ -5,3 +5,6 @@ replaces:
   - tool: dbt
     fit: partial
     note: SQL workflows written in SQLX and compiled by a CLI, for BigQuery.
+  - tool: dbt-cloud
+    fit: partial
+    note: SQLX models with dependencies and assertions; BigQuery first.

@@ -6,3 +6,6 @@ replaces:
   - tool: premiere-pro
     fit: full
     note: Timeline-based non-linear editing with transitions, keyframe animation and titles on Linux, macOS and Windows, in its own interface.
+  - tool: capcut
+    fit: partial
+    note: Timeline video editor with titles, transitions and effects; no templates or automatic captions.

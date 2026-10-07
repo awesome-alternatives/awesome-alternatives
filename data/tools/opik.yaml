@@ -8,4 +8,7 @@ replaces:
   - tool: weave
     fit: full
     note: Tracing and evaluations of LLM calls, with production monitoring dashboards.
+  - tool: braintrust
+    fit: full
+    note: Traces, datasets and evaluation metrics for LLM apps, self-hosted.
 deploy: [container, compose, helm]

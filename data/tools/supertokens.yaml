@@ -6,4 +6,7 @@ replaces:
   - tool: auth0
     fit: full
     note: Login flows, sessions and social login with prebuilt UI embedded in your app; MFA and multi-tenancy need a licence key.
+  - tool: clerk
+    fit: partial
+    note: Prebuilt sign-in components and SDKs for sessions, passwordless login and MFA, with an admin dashboard.
 deploy: [container]

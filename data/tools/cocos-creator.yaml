@@ -6,3 +6,6 @@ replaces:
   - tool: unity
     fit: partial
     note: TypeScript engine and editor focused on 2D and 3D games for mobile and the web.
+  - tool: construct
+    fit: partial
+    note: 2D focused editor that exports to the web, scripted in TypeScript rather than event sheets.

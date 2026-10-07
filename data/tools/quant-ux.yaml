@@ -5,3 +5,6 @@ replaces:
   - tool: axure
     fit: partial
     note: Clickable prototypes with usability tests and analytics on recorded sessions, without Axure's conditional logic.
+  - tool: balsamiq
+    fit: partial
+    note: Draws wireframes and clickable prototypes in the browser; no sketch style set.

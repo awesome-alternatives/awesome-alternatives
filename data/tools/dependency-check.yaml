@@ -5,3 +5,6 @@ replaces:
   - tool: snyk
     fit: partial
     note: Dependency scanning against the NVD, with Maven, Gradle and Ant plugins; no container image scanning.
+  - tool: black-duck
+    fit: partial
+    note: Matches dependencies against known vulnerabilities from the NVD; no licence compliance or snippet matching.

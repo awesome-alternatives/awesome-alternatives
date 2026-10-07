@@ -5,3 +5,6 @@ replaces:
   - tool: ableton-live
     fit: partial
     note: A DAW in the browser with tracks, devices and automation, with far fewer instruments and effects.
+  - tool: fl-studio
+    fit: partial
+    note: A DAW in the browser with tracks, devices and automation; no step sequencer.

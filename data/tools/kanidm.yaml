@@ -8,4 +8,7 @@ replaces:
   - tool: keycloak
     fit: partial
     note: OpenID Connect and LDAP, without SAML.
+  - tool: active-directory
+    fit: partial
+    note: Identity server with users, groups, an LDAP interface and RADIUS; no Kerberos or group policy.
 deploy: [container]

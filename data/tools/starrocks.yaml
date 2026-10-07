@@ -5,4 +5,7 @@ replaces:
   - tool: snowflake
     fit: full
     note: MPP analytics on local or lake data, with a MySQL-compatible protocol.
+  - tool: amazon-redshift
+    fit: full
+    note: MPP columnar warehouse that speaks the MySQL protocol, with a shared-data mode on object storage.
 deploy: [container]

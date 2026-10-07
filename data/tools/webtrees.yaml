@@ -5,3 +5,6 @@ replaces:
   - tool: myheritage
     fit: partial
     note: Family tree website shared with relatives, with GEDCOM import and export; no record search or DNA.
+  - tool: ancestry
+    fit: partial
+    note: Online family trees with sources, media and shared editing; no historical record collections or DNA matching.

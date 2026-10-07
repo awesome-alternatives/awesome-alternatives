@@ -8,3 +8,6 @@ replaces:
   - tool: fusion-360
     fit: partial
     note: Parametric modelling with CAM on the desktop, without cloud storage or collaboration.
+  - tool: autocad
+    fit: partial
+    note: Parametric 3D modelling with a 2D drafting workbench; DWG import and export goes through converters.
