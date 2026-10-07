@@ -1,0 +1,5 @@
+name: AWS Step Functions
+homepage: https://aws.amazon.com/step-functions/
+vendor: Amazon
+category: workflow-orchestration
+description: Managed state-machine service for coordinating AWS services into workflows.

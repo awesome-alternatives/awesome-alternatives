@@ -1,3 +1,7 @@
 name: devenv
 repository: https://github.com/cachix/devenv
 category: dev-environment
+replaces:
+  - tool: vagrant
+    fit: partial
+    note: Declarative Nix-based dev environments with services, without a virtual machine.

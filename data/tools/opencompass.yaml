@@ -1,3 +1,7 @@
 name: OpenCompass
 repository: https://github.com/open-compass/opencompass
 category: llm-evaluation
+replaces:
+  - tool: lm-evaluation-harness
+    fit: full
+    note: Runs benchmark suites over local and API models from a config.

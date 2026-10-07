@@ -1,3 +1,7 @@
 name: Findroid
 repository: https://github.com/jarnedemeulemeester/findroid
 category: video-player
+replaces:
+  - tool: plex
+    fit: partial
+    note: Native Android client for a Jellyfin server; it needs the server and does not use Plex libraries.

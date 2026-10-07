@@ -2,3 +2,10 @@ name: Apache Polaris
 repository: https://github.com/apache/polaris
 category: data-catalog
 deploy: [container]
+replaces:
+  - tool: unity-catalog
+    fit: partial
+    note: Open Iceberg REST catalog; it covers tables and access control but not Delta or ML assets.
+  - tool: aws-glue-data-catalog
+    fit: partial
+    note: Iceberg REST catalog that works across engines instead of tying to AWS services.

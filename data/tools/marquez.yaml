@@ -2,3 +2,7 @@ name: Marquez
 repository: https://github.com/MarquezProject/marquez
 category: data-catalog
 deploy: [container, compose]
+replaces:
+  - tool: datahub
+    fit: partial
+    note: Collects and shows data lineage through OpenLineage; it has no wider data discovery or glossary.

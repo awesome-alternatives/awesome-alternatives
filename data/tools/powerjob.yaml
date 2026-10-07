@@ -2,3 +2,10 @@ name: PowerJob
 repository: https://github.com/PowerJob/PowerJob
 category: workflow-orchestration
 deploy: [container]
+replaces:
+  - tool: xxl-job
+    fit: full
+    note: Distributed scheduler with a web console, including workflow and MapReduce-style jobs.
+  - tool: quartz
+    fit: partial
+    note: Adds a web console and cluster scheduling on top of cron-style job triggers.

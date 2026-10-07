@@ -1,3 +1,7 @@
 name: CloudSploit
 repository: https://github.com/aquasecurity/cloudsploit
 category: cloud-security-posture
+replaces:
+  - tool: wiz
+    fit: partial
+    note: Scans cloud accounts for misconfigurations; no agentless workload scanning or risk graph.

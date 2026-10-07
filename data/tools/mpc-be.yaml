@@ -1,3 +1,7 @@
 name: MPC-BE
 repository: https://github.com/Aleksoid1978/MPC-BE
 category: video-player
+replaces:
+  - tool: potplayer
+    fit: full
+    note: Windows player with built-in codecs, filters and subtitle rendering.

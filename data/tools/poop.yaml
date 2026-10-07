@@ -1,3 +1,7 @@
 name: poop
 repository: https://github.com/andrewrk/poop
 category: command-benchmark
+replaces:
+  - tool: hyperfine
+    fit: partial
+    note: Compares two commands with CPU counters and memory use; Linux only.

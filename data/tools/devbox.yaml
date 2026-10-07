@@ -1,3 +1,10 @@
 name: Devbox
 repository: https://github.com/jetify-com/devbox
 category: dev-environment
+replaces:
+  - tool: vagrant
+    fit: partial
+    note: Reproducible dev shells from a JSON file using Nix, without a virtual machine.
+  - tool: github-codespaces
+    fit: partial
+    note: Same environment on any machine, but locally and not as a hosted workspace.

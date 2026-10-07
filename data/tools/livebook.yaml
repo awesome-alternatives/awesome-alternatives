@@ -1,3 +1,10 @@
 name: Livebook
 repository: https://github.com/livebook-dev/livebook
 category: data-notebook
+replaces:
+  - tool: jupyterlab
+    fit: partial
+    note: Elixir notebooks with live collaboration and smart cells; no Python kernels.
+  - tool: google-colab
+    fit: partial
+    note: Runs Elixir notebooks you host yourself, not on shared GPUs.

@@ -1,3 +1,10 @@
 name: Polaris
 repository: https://github.com/FairwindsOps/polaris
 category: cloud-security-posture
+replaces:
+  - tool: kubescape
+    fit: partial
+    note: Checks Kubernetes workloads against best practices; narrower set of frameworks.
+  - tool: sysdig-secure
+    fit: partial
+    note: Validates workload configuration only, with no runtime protection.

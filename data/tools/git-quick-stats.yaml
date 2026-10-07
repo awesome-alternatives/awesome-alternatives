@@ -1,3 +1,7 @@
 name: git-quick-stats
 repository: https://github.com/git-quick-stats/git-quick-stats
 category: repository-statistics
+replaces:
+  - tool: github
+    fit: partial
+    note: Commit, author and activity statistics for a local repo from the terminal, without the web insights.

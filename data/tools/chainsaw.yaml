@@ -1,3 +1,7 @@
 name: Chainsaw
 repository: https://github.com/WithSecureOpenSource/chainsaw
 category: endpoint-detection
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Hunts Sigma rules and keywords through Windows event logs offline; no ingestion or dashboards.

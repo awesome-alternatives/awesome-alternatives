@@ -1,3 +1,10 @@
 name: Flox
 repository: https://github.com/flox/flox
 category: dev-environment
+replaces:
+  - tool: homebrew
+    fit: partial
+    note: Per-project environments on Nix with a catalog of packages and versions.
+  - tool: asdf
+    fit: partial
+    note: Pins tool versions per project, from a wider package set.

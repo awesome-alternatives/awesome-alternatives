@@ -1,3 +1,7 @@
 name: Schism Tracker
 repository: https://github.com/schismtracker/schismtracker
 category: music-production
+replaces:
+  - tool: renoise
+    fit: partial
+    note: Impulse Tracker clone that reads and writes IT modules; no VST hosting or modern mixer.

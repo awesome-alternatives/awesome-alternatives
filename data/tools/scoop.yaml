@@ -2,3 +2,7 @@ name: Scoop
 repository: https://github.com/ScoopInstaller/Scoop
 category: system-package-manager
 terms: open
+replaces:
+  - tool: chocolatey
+    fit: partial
+    note: Installs portable apps per user without admin rights; no installer-based packages.

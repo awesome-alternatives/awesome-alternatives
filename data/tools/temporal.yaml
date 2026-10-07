@@ -2,3 +2,7 @@ name: Temporal
 repository: https://github.com/temporalio/temporal
 category: workflow-orchestration
 deploy: [container, compose, helm, binary]
+replaces:
+  - tool: aws-step-functions
+    fit: partial
+    note: Durable workflows written in code rather than state-machine JSON, hosted by you or in Temporal Cloud.

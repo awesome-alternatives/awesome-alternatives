@@ -1,0 +1,5 @@
+name: QuickTime Player
+homepage: https://support.apple.com/guide/quicktime-player/welcome/mac
+vendor: Apple
+category: video-player
+description: The media player bundled with macOS.

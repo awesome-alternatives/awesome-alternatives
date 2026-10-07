@@ -2,3 +2,7 @@ name: Apache Gravitino
 repository: https://github.com/apache/gravitino
 category: data-catalog
 deploy: [container]
+replaces:
+  - tool: unity-catalog
+    fit: full
+    note: Federated metadata catalog over Hive, Iceberg, relational databases and Kafka.

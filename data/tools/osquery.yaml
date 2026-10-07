@@ -2,3 +2,7 @@ name: osquery
 repository: https://github.com/osquery/osquery
 category: endpoint-detection
 terms: open
+replaces:
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Queries endpoint state with SQL; no prevention or managed detection.

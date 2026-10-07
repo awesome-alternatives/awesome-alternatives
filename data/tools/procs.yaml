@@ -1,3 +1,7 @@
 name: procs
 repository: https://github.com/dalance/procs
 category: system-monitor
+replaces:
+  - tool: htop
+    fit: partial
+    note: Colourised, searchable process listing with extra columns; it is not an interactive monitor.

@@ -1,3 +1,10 @@
 name: Stoplight Elements
 repository: https://github.com/stoplightio/elements
 category: api-documentation
+replaces:
+  - tool: swagger-ui
+    fit: full
+    note: Embeddable OpenAPI docs component with a try-it console and Markdown pages.
+  - tool: readme
+    fit: partial
+    note: Docs generated from an OpenAPI spec you host yourself; no hosted portal or analytics.

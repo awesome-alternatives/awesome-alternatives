@@ -1,0 +1,5 @@
+name: WizTree
+homepage: https://diskanalyzer.com
+vendor: Antibody Software
+category: disk-usage
+description: Windows disk space analyzer that reads the NTFS master file table.

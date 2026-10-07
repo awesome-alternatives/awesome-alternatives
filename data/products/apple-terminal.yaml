@@ -1,0 +1,5 @@
+name: Terminal
+homepage: https://support.apple.com/guide/terminal/welcome/mac
+vendor: Apple
+category: terminal-emulator
+description: The terminal emulator bundled with macOS.

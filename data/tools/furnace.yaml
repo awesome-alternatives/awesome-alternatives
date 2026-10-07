@@ -2,3 +2,7 @@ name: Furnace
 repository: https://github.com/tildearrow/furnace
 category: music-production
 terms: open
+replaces:
+  - tool: deflemask
+    fit: full
+    note: Opens DefleMask modules and supports more chips, with its own tracker format.

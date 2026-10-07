@@ -1,3 +1,10 @@
 name: Streamyfin
 repository: https://github.com/streamyfin/streamyfin
 category: video-player
+replaces:
+  - tool: plex
+    fit: partial
+    note: Mobile client for a Jellyfin server; it needs the server and does not use Plex libraries.
+  - tool: infuse
+    fit: partial
+    note: Jellyfin client for iOS and Android; it plays from the server only, not from network shares.

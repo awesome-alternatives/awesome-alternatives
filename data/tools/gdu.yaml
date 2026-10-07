@@ -1,3 +1,10 @@
 name: gdu
 repository: https://github.com/dundee/gdu
 category: disk-usage
+replaces:
+  - tool: daisydisk
+    fit: partial
+    note: Terminal disk usage view with deletion; no graphical map.
+  - tool: wiztree
+    fit: partial
+    note: Terminal disk usage view that works on every platform; slower to scan on NTFS.

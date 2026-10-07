@@ -1,3 +1,7 @@
 name: WinGet
 repository: https://github.com/microsoft/winget-cli
 category: system-package-manager
+replaces:
+  - tool: chocolatey
+    fit: full
+    note: Windows package manager from Microsoft; fewer packages and no paid tier.

@@ -1,3 +1,7 @@
 name: dua
 repository: https://github.com/Byron/dua-cli
 category: disk-usage
+replaces:
+  - tool: daisydisk
+    fit: partial
+    note: Terminal disk usage view with interactive deletion; no graphical map.

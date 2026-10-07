@@ -2,3 +2,10 @@ name: Conductor
 repository: https://github.com/conductor-oss/conductor
 category: workflow-orchestration
 deploy: [container, compose]
+replaces:
+  - tool: aws-step-functions
+    fit: partial
+    note: JSON workflow definitions with retries and human tasks, hosted by you.
+  - tool: temporal
+    fit: partial
+    note: Workflows defined as JSON rather than code, with a server-side engine.

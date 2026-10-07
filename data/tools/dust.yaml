@@ -1,3 +1,7 @@
 name: dust
 repository: https://github.com/bootandy/dust
 category: disk-usage
+replaces:
+  - tool: daisydisk
+    fit: partial
+    note: Directory tree sorted by size in the terminal; no graphical map.

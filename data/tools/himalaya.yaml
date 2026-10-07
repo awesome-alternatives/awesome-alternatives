@@ -1,3 +1,7 @@
 name: Himalaya
 repository: https://github.com/pimalaya/himalaya
 category: email-client
+replaces:
+  - tool: neomutt
+    fit: partial
+    note: Scriptable command-line mail client rather than an interactive terminal UI.

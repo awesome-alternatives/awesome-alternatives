@@ -1,3 +1,10 @@
 name: Puck
 repository: https://github.com/puckeditor/puck
 category: design-tool
+replaces:
+  - tool: webflow
+    fit: partial
+    note: Visual page editor embedded in your own React app; no hosting or CMS.
+  - tool: plasmic
+    fit: partial
+    note: Open source page editor you wire to your own React components.

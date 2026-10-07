@@ -1,3 +1,7 @@
 name: Terminator
 repository: https://github.com/gnome-terminator/terminator
 category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: partial
+    note: Split panes and broadcast input on Linux; no macOS build.

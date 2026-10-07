@@ -1,3 +1,7 @@
 name: Swagger UI
 repository: https://github.com/swagger-api/swagger-ui
 category: api-documentation
+replaces:
+  - tool: readme
+    fit: partial
+    note: Interactive API reference from an OpenAPI spec; no guides or hosted portal.
