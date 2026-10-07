@@ -1,8 +1,0 @@
-name: VLC for iOS
-repository: https://github.com/videolan/vlc-ios
-category: video-player
-terms: open
-replaces:
-  - tool: infuse
-    fit: partial
-    note: Plays local files, network shares and streams on iPhone, iPad and Apple TV; no online metadata scraping.
