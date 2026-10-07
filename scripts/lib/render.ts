@@ -2,30 +2,37 @@ import type { Category, EnrichedTool, ListedProduct } from "./types.ts";
 
 export const START = "<!-- catalog:start -->";
 export const END = "<!-- catalog:end -->";
+export const CATALOG_DIR = "catalog";
+
+export interface RenderedCatalog {
+  index: string;
+  pages: ReadonlyMap<string, string>;
+}
+
+type Names = ReadonlyMap<string, { name: string }>;
 
 export function renderCatalog(
   tools: readonly EnrichedTool[],
   products: readonly ListedProduct[],
   categories: ReadonlyMap<string, Category>,
-): string {
-  const bySlug = new Map<string, { name: string }>([...tools, ...products].map((t) => [t.slug, t]));
-  const sections: string[] = [];
+): RenderedCatalog {
+  const bySlug: Names = new Map([...tools, ...products].map((t) => [t.slug, t]));
+  const rows: string[] = [];
+  const pages = new Map<string, string>();
 
   for (const [key, category] of categories) {
     const members = tools.filter((t) => t.category === key).sort((a, b) => b.repo.stars - a.repo.stars);
-    if (members.length) sections.push(...categorySection(category, members, bySlug));
+    if (!members.length) continue;
+    pages.set(`${CATALOG_DIR}/${key}.md`, categoryPage(category, members, bySlug));
+    rows.push(`| [${category.name}](${CATALOG_DIR}/${key}.md) | ${members.length} | ${category.description} |`);
   }
 
-  return sections.join("\n").trimEnd();
+  return { index: ["| Category | Tools | What it covers |", "|---|---:|---|", ...rows].join("\n"), pages };
 }
 
-type Names = ReadonlyMap<string, { name: string }>;
-
-function categorySection(category: Category, members: readonly EnrichedTool[], bySlug: Names): string[] {
-  const count = members.length === 1 ? "1 tool" : `${members.length} tools`;
+function categoryPage(category: Category, members: readonly EnrichedTool[], bySlug: Names): string {
   return [
-    "<details>",
-    `<summary><b>${category.name}</b>, ${count}</summary>`,
+    `# ${category.name}`,
     "",
     category.description,
     "",
@@ -33,9 +40,9 @@ function categorySection(category: Category, members: readonly EnrichedTool[], b
     "|---|---|---|---|---:|---|",
     ...members.map((t) => toolRow(t, bySlug)),
     "",
-    "</details>",
+    "[All categories](../README.md#catalog)",
     "",
-  ];
+  ].join("\n");
 }
 
 function toolRow(t: EnrichedTool, bySlug: Names): string {

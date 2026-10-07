@@ -46,6 +46,7 @@ fi
 mkdir -p "$refreshed/generated"
 cp generated/catalog.json generated/events.json "$refreshed/generated/"
 cp README.md "$refreshed/"
+cp -r catalog "$refreshed/"
 git diff --binary -- data/tools >"$patch"
 push_token=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts" write)
 GIT_CONFIG_COUNT=1 \

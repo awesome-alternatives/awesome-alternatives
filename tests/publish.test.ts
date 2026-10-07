@@ -114,7 +114,17 @@ describe("publish", () => {
       written.tools.map((t: { slug: string }) => t.slug),
       ["a"],
     );
-    assert.match(await readFile(join(root, "README.md"), "utf8"), /\[a\]\(https:\/\/github.com\/acme\/a\)/);
+    assert.match(await readFile(join(root, "catalog/c.md"), "utf8"), /\[a\]\(https:\/\/github.com\/acme\/a\)/);
+    assert.match(await readFile(join(root, "README.md"), "utf8"), /\[C\]\(catalog\/c\.md\) \| 1 \|/);
+  });
+
+  it("removes the page of a category that no longer has a tool", async () => {
+    const root = await published(["a"]);
+    await mkdir(join(root, "catalog"));
+    await writeFile(join(root, "catalog/gone.md"), "old");
+    await publish(root, catalogOf("a"), snapshot("a"));
+    await assert.rejects(readFile(join(root, "catalog/gone.md"), "utf8"), { code: "ENOENT" });
+    assert.match(await readFile(join(root, "catalog/c.md"), "utf8"), /# C/);
   });
 
   it("writes each tool's star series on one line", async () => {

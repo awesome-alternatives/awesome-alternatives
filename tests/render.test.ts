@@ -60,8 +60,9 @@ describe("spliceReadme", () => {
 
 describe("renderCatalog", () => {
   const categories = new Map([["c", { name: "C", description: "d" }]]);
+  const page = (tools: EnrichedTool[]) => renderCatalog(tools, [], categories).pages.get("catalog/c.md") ?? "";
   const row = (tools: EnrichedTool[], slug: string) =>
-    renderCatalog(tools, [], categories)
+    page(tools)
       .split("\n")
       .find((line) => line.startsWith(`| [${slug}]`));
 
@@ -72,11 +73,24 @@ describe("renderCatalog", () => {
     assert.doesNotMatch(row([old, next], "next") ?? "", /archived/);
   });
 
-  it("folds each category into a details block that says how many tools it holds", () => {
-    const out = renderCatalog([entry("a"), entry("b")], [], categories);
-    assert.ok(out.startsWith("<details>\n<summary><b>C</b>, 2 tools</summary>\n\nd\n"));
-    assert.ok(out.endsWith("</details>"));
-    assert.ok(renderCatalog([entry("a")], [], categories).includes("<b>C</b>, 1 tool</summary>"));
+  it("lists each category in the README index with its count and a link to its own page", () => {
+    const { index } = renderCatalog([entry("a"), entry("b")], [], categories);
+    assert.match(index, /\| \[C\]\(catalog\/c\.md\) \| 2 \| d \|/);
+  });
+
+  it("writes a page per category, sorted by stars, that links back to the README", () => {
+    const small = entry("small");
+    const big = entry("big", { repo: { ...entry("big").repo, stars: 90 } });
+    const lines = page([small, big]).split("\n");
+    assert.equal(lines[0], "# C");
+    assert.ok(lines.findIndex((l) => l.startsWith("| [big]")) < lines.findIndex((l) => l.startsWith("| [small]")));
+    assert.ok(lines.includes("[All categories](../README.md#catalog)"));
+  });
+
+  it("leaves out a category that has no tool", () => {
+    const { index, pages } = renderCatalog([entry("a", { category: "other" })], [], categories);
+    assert.equal(pages.size, 0);
+    assert.doesNotMatch(index, /catalog\/c\.md/);
   });
 
   it("names a closed product in the replaces column rather than printing its slug", () => {
@@ -89,7 +103,7 @@ describe("renderCatalog", () => {
       description: "d",
     };
     const agent = entry("agent", { replaces: [{ tool: "claude-code", fit: "full" }] });
-    assert.match(renderCatalog([agent], [product], categories), /\| Claude Code \(full\) \|/);
+    assert.match(renderCatalog([agent], [product], categories).pages.get("catalog/c.md") ?? "", /\| Claude Code \(full\) \|/);
   });
 
   it("keeps both marks when a verified tool is later archived", () => {
