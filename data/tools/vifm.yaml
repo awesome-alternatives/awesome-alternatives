@@ -1,3 +1,10 @@
 name: Vifm
 repository: https://github.com/vifm/vifm
 category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: Vim-like terminal file manager with a two-pane layout.
+  - tool: midnight-commander
+    fit: partial
+    note: Terminal file manager with two panes and vi keys.

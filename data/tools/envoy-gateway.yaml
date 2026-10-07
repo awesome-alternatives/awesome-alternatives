@@ -1,3 +1,7 @@
 name: Envoy Gateway
 repository: https://github.com/envoyproxy/gateway
 category: reverse-proxy
+replaces:
+  - tool: ingress-nginx
+    fit: full
+    note: Gateway API implementation on Envoy, so routes are written as Gateway API resources instead of Ingress annotations.

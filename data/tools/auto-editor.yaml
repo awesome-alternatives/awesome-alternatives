@@ -1,3 +1,7 @@
 name: Auto-Editor
 repository: https://github.com/WyattBlue/auto-editor
 category: video-editing
+replaces:
+  - tool: premiere-pro
+    fit: partial
+    note: Cuts silent and motionless sections automatically and exports a timeline, with no manual editing.

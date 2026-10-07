@@ -1,4 +1,8 @@
 name: collectd
 repository: https://github.com/collectd/collectd
 category: metrics
+replaces:
+  - tool: telegraf
+    fit: full
+    note: System statistics daemon written in C with plugins for most inputs and outputs.
 terms: open

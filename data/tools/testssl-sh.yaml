@@ -1,3 +1,10 @@
 name: testssl.sh
 repository: https://github.com/testssl/testssl.sh
 category: security-audit
+replaces:
+  - tool: sslyze
+    fit: full
+    note: Command-line TLS scanner that checks protocols, ciphers and known vulnerabilities.
+  - tool: qualys-ssl-labs
+    fit: partial
+    note: Checks a server's TLS setup from your own machine, including internal hosts, with no letter grade.

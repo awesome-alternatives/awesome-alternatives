@@ -1,3 +1,10 @@
 name: Sensu Go
 repository: https://github.com/sensu/sensu-go
 category: metrics
+replaces:
+  - tool: nagios-core
+    fit: full
+    note: Check-based monitoring with agents that push events and handlers for alerting.
+  - tool: icinga
+    fit: partial
+    note: Check-based monitoring built around an event pipeline instead of a poller.

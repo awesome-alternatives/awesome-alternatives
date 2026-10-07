@@ -1,4 +1,11 @@
 name: Codex
 repository: https://github.com/ajslater/codex
 category: book-server
+replaces:
+  - tool: komga
+    fit: full
+    note: Comic and manga server with a web reader and OPDS.
+  - tool: kavita
+    fit: full
+    note: Comic server with a web reader and OPDS, for comics only.
 deploy: [container]

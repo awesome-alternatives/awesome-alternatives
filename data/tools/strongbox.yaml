@@ -1,3 +1,10 @@
 name: Strongbox
 repository: https://github.com/strongbox-password-safe/Strongbox
 category: password-manager
+replaces:
+  - tool: 1password
+    fit: partial
+    note: iOS and macOS client for KeePass databases with autofill, and no hosted sync.
+  - tool: lastpass
+    fit: partial
+    note: iOS and macOS client for KeePass databases with autofill, and no hosted sync.

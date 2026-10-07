@@ -1,3 +1,7 @@
 name: vcpkg
 repository: https://github.com/microsoft/vcpkg
 category: cpp-package-manager
+replaces:
+  - tool: conan
+    fit: full
+    note: C and C++ package manager that builds from source, with a curated registry and CMake integration.

@@ -1,4 +1,11 @@
 name: SimpleLogin
 repository: https://github.com/simple-login/app
 category: email-alias
+replaces:
+  - tool: addy-io
+    fit: full
+    note: Email aliases that forward to your real inbox, with custom domains and PGP.
+  - tool: firefox-relay
+    fit: full
+    note: Email aliases that forward to your real inbox, with custom domains.
 deploy: [container]

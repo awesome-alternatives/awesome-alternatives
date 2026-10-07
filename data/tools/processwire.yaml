@@ -1,4 +1,11 @@
 name: ProcessWire
 repository: https://github.com/processwire/processwire
 category: website-cms
+replaces:
+  - tool: craft-cms
+    fit: partial
+    note: PHP CMS with custom fields and a flexible content tree, with a smaller plugin ecosystem.
+  - tool: kirby
+    fit: partial
+    note: PHP CMS with custom fields and a template-driven front end, backed by a database.
 terms: open

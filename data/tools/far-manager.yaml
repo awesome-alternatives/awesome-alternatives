@@ -1,3 +1,10 @@
 name: Far Manager
 repository: https://github.com/FarGroup/FarManager
 category: terminal-file-manager
+replaces:
+  - tool: midnight-commander
+    fit: full
+    note: Dual-pane console file manager with an internal viewer and editor, for Windows.
+  - tool: total-commander
+    fit: partial
+    note: Dual-pane file manager in the console with plugins, for Windows only.

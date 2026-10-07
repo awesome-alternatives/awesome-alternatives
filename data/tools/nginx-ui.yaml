@@ -1,3 +1,7 @@
 name: Nginx UI
 repository: https://github.com/0xJacky/nginx-ui
 category: reverse-proxy
+replaces:
+  - tool: nginx-proxy-manager
+    fit: partial
+    note: Web UI for managing nginx sites and certificates, editing the real nginx config instead of hiding it.

@@ -1,4 +1,8 @@
 name: nginx
 repository: https://github.com/nginx/nginx
 category: reverse-proxy
+replaces:
+  - tool: haproxy
+    fit: partial
+    note: Reverse proxy and load balancer that also serves static files, with less detailed health checks and stats.
 deploy: [container, package]

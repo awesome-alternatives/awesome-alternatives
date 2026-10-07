@@ -1,0 +1,5 @@
+name: Qualys SSL Labs
+homepage: https://www.ssllabs.com/ssltest/
+vendor: Qualys
+category: security-audit
+description: Hosted service that tests a public server's TLS configuration and grades it.

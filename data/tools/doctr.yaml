@@ -1,3 +1,13 @@
 name: docTR
 repository: https://github.com/mindee/doctr
 category: ocr
+replaces:
+  - tool: tesseract
+    fit: full
+    note: OCR library with text detection and recognition models that run in Python.
+  - tool: paddleocr
+    fit: full
+    note: OCR library with text detection and recognition models that run in Python.
+  - tool: amazon-textract
+    fit: partial
+    note: Text extraction from documents on your own machine, without forms or tables.

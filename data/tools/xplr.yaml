@@ -1,3 +1,10 @@
 name: xplr
 repository: https://github.com/sayanarijit/xplr
 category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: partial
+    note: Hackable terminal file explorer configured and extended in Lua.
+  - tool: nnn
+    fit: partial
+    note: Terminal file explorer driven by a scriptable key map.

@@ -1,3 +1,7 @@
 name: Firecracker
 repository: https://github.com/firecracker-microvm/firecracker
 category: virtualization
+replaces:
+  - tool: cloud-hypervisor
+    fit: partial
+    note: KVM-based microVM monitor with minimal devices and fast boot, without hotplug.

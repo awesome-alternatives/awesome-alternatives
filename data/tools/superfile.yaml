@@ -1,3 +1,10 @@
 name: superfile
 repository: https://github.com/yorukot/superfile
 category: terminal-file-manager
+replaces:
+  - tool: ranger
+    fit: full
+    note: Terminal file manager with previews, multiple panels and vim-style keys.
+  - tool: midnight-commander
+    fit: partial
+    note: Terminal file manager with multiple panels and a modern interface.

@@ -1,4 +1,11 @@
 name: Rollup
 repository: https://github.com/rollup/rollup
 category: javascript-bundler
+replaces:
+  - tool: webpack
+    fit: partial
+    note: Bundles ES modules into libraries with tree shaking, with a smaller feature set for apps.
+  - tool: parcel
+    fit: partial
+    note: Bundles ES modules with plugins, and needs more configuration.
 terms: open

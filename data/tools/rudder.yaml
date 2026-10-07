@@ -1,3 +1,13 @@
 name: Rudder
 repository: https://github.com/Normation/rudder
 category: config-management
+replaces:
+  - tool: puppet
+    fit: full
+    note: Continuous configuration management with a web UI and compliance reports built in.
+  - tool: chef
+    fit: full
+    note: Continuous configuration management with a web UI and compliance reports built in.
+  - tool: red-hat-satellite
+    fit: partial
+    note: Configuration and compliance reporting, without a content repository or patch lifecycle.

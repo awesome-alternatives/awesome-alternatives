@@ -1,4 +1,11 @@
 name: pg_auto_failover
 repository: https://github.com/hapostgres/pg_auto_failover
 category: database-high-availability
+replaces:
+  - tool: patroni
+    fit: full
+    note: PostgreSQL failover with a monitor node instead of an external consensus store.
+  - tool: amazon-rds
+    fit: partial
+    note: Automatic PostgreSQL failover on your own servers, without the managed service.
 terms: open

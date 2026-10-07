@@ -1,4 +1,8 @@
 name: Aseprite
 repository: https://github.com/aseprite/aseprite
 category: pixel-art
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Sprite editor with animation timelines and palettes, covering pixel art only.
 terms: source-available

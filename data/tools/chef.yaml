@@ -1,3 +1,10 @@
 name: Chef
 repository: https://github.com/chef/chef
 category: config-management
+replaces:
+  - tool: puppet
+    fit: full
+    note: Agent-based configuration management with a Ruby DSL.
+  - tool: ansible
+    fit: full
+    note: Configuration management through Ruby recipes, with an agent and a server instead of SSH.

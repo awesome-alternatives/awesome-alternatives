@@ -1,3 +1,7 @@
 name: Colmena
 repository: https://github.com/nix-community/colmena
 category: config-management
+replaces:
+  - tool: ansible
+    fit: partial
+    note: Deploys NixOS configurations to many hosts over SSH, for NixOS machines only.

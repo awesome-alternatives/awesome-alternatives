@@ -1,3 +1,7 @@
 name: Sōzu
 repository: https://github.com/sozu-proxy/sozu
 category: reverse-proxy
+replaces:
+  - tool: haproxy
+    fit: partial
+    note: Hot-reconfigurable HTTP and TCP reverse proxy written in Rust, with fewer features.

@@ -1,3 +1,7 @@
 name: LosslessCut
 repository: https://github.com/mifi/lossless-cut
 category: video-editing
+replaces:
+  - tool: avidemux
+    fit: partial
+    note: Cuts and joins clips without re-encoding, with no filters or encoding options.

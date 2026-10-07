@@ -1,3 +1,10 @@
 name: mgmt
 repository: https://github.com/purpleidea/mgmt
 category: config-management
+replaces:
+  - tool: puppet
+    fit: partial
+    note: Declarative, event-driven configuration management with its own language, much younger and with far fewer modules.
+  - tool: ansible
+    fit: partial
+    note: Declarative configuration management with live resource graphs, with far fewer modules.

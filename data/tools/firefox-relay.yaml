@@ -1,4 +1,11 @@
 name: Firefox Relay
 repository: https://github.com/mozilla/fx-private-relay
 category: email-alias
+replaces:
+  - tool: simplelogin
+    fit: full
+    note: Masked email aliases that forward to your real inbox.
+  - tool: addy-io
+    fit: full
+    note: Masked email aliases that forward to your real inbox.
 terms: open

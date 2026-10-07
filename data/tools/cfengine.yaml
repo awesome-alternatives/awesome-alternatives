@@ -1,4 +1,11 @@
 name: CFEngine
 repository: https://github.com/cfengine/core
 category: config-management
+replaces:
+  - tool: puppet
+    fit: full
+    note: Declarative, agent-based configuration management with a very light agent.
+  - tool: chef
+    fit: full
+    note: Declarative, agent-based configuration management with a very light agent.
 terms: open

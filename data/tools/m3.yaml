@@ -1,3 +1,13 @@
 name: M3
 repository: https://github.com/m3db/m3
 category: metrics
+replaces:
+  - tool: thanos
+    fit: full
+    note: Long-term, horizontally scalable storage for Prometheus metrics.
+  - tool: cortex
+    fit: full
+    note: Distributed, multi-tenant storage backend for Prometheus remote write.
+  - tool: victoriametrics
+    fit: full
+    note: Distributed time series database that ingests Prometheus metrics.

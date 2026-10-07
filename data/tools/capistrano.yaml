@@ -1,3 +1,7 @@
 name: Capistrano
 repository: https://github.com/capistrano/capistrano
 category: config-management
+replaces:
+  - tool: deployer
+    fit: full
+    note: Ruby-based remote deployment scripts with releases, symlinks and rollbacks over SSH.

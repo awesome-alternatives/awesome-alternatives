@@ -1,4 +1,8 @@
 name: Cloud Hypervisor
 repository: https://github.com/cloud-hypervisor/cloud-hypervisor
 category: virtualization
+replaces:
+  - tool: firecracker
+    fit: partial
+    note: KVM-based virtual machine monitor in Rust that adds device hotplug and Windows guests.
 terms: open

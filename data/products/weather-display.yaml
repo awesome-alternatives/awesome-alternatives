@@ -1,0 +1,5 @@
+name: Weather Display
+homepage: https://www.weather-display.com
+vendor: Brian Hamilton
+category: weather
+description: Windows software that reads a personal weather station, logs the data and publishes it to a website.

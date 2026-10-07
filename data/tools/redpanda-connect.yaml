@@ -1,5 +1,12 @@
 name: Redpanda Connect
 repository: https://github.com/redpanda-data/connect
 category: data-integration
+replaces:
+  - tool: logstash
+    fit: partial
+    note: Stream processor with inputs, transforms and outputs, configured in YAML.
+  - tool: nifi
+    fit: partial
+    note: Declarative stream processing with many connectors, without a drag-and-drop canvas.
 terms: open-core
 deploy: [container, binary]

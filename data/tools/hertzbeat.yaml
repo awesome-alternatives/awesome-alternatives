@@ -1,3 +1,13 @@
 name: Apache HertzBeat
 repository: https://github.com/apache/hertzbeat
 category: metrics
+replaces:
+  - tool: zabbix
+    fit: full
+    note: Agentless monitoring for servers, networks, databases and websites, with alerting.
+  - tool: datadog
+    fit: partial
+    note: Monitoring and alerting across hosts and services, without APM or log search.
+  - tool: prtg
+    fit: partial
+    note: Network device and service monitoring with alerts and dashboards.

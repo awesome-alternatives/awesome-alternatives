@@ -1,3 +1,13 @@
 name: Ansible
 repository: https://github.com/ansible/ansible
 category: config-management
+replaces:
+  - tool: puppet
+    fit: full
+    note: Agentless configuration management over SSH with YAML playbooks.
+  - tool: chef
+    fit: full
+    note: Agentless configuration management over SSH with YAML playbooks instead of Ruby recipes.
+  - tool: salt
+    fit: full
+    note: Agentless by default, and orchestrates over SSH without a master or minions.

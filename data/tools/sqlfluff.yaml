@@ -1,3 +1,10 @@
 name: SQLFluff
 repository: https://github.com/sqlfluff/sqlfluff
 category: sql-lint-format
+replaces:
+  - tool: sql-formatter
+    fit: partial
+    note: Formats SQL and also lints it with rules.
+  - tool: sqlfmt
+    fit: partial
+    note: Formats SQL and also lints it with rules.
