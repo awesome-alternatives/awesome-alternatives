@@ -443,8 +443,8 @@ pnpm test
 GITHUB_TOKEN=$(gh auth token) pnpm validate release-plz
 ```
 
-`pnpm validate --all` checks every entry, `pnpm refresh` rebuilds `generated/catalog.json` and the
-table in the README.
+`pnpm validate --all` checks every entry, `pnpm refresh` rebuilds `generated/catalog.json`, the
+category index in the README and the pages under `catalog/`.
 
 A pull request that adds or edits tools gets their GitHub facts within minutes of merging: every
 push to `main` that adds or changes files in `data/tools/` runs the
@@ -469,7 +469,7 @@ refresh diffs the catalog it is about to publish against the one already publish
 by slug, and records a short list of changes: a tool added or removed, a licence changed, a
 repository renamed, archived or unarchived, the `inactive` flag appearing or clearing, and a new
 latest release that is not a prerelease. Star counts, and fields an older catalog simply did not
-have yet, never produce an event. The catalog, the event log and the README are written together.
+have yet, never produce an event. The catalog, the event log, the README and the category pages are written together.
 
 The log keeps a year of events and the last 10 releases of each tool. An event is dated when the
 refresh saw it. Its commit is not known until the push, so it is stored as `null` and the next

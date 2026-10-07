@@ -1,8 +1,8 @@
-import { readFile, rename, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { mkdir, readdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
 import type { Catalog } from "./catalog.ts";
 import { type EventHistory, EVENTS_PATH, eventsJson, nextEventLog, PENDING_GRACE_DAYS, readEventLog } from "./event-log.ts";
-import { renderCatalog, spliceReadme } from "./render.ts";
+import { CATALOG_DIR, renderCatalog, spliceReadme } from "./render.ts";
 import { statsOf } from "./stats.ts";
 import type { EnrichedTool, ListedProduct, OwnerFacts } from "./types.ts";
 
@@ -54,8 +54,19 @@ export interface PublishContext {
 }
 
 async function writeTogether(root: string, files: readonly (readonly [string, string])[]): Promise<void> {
+  await Promise.all(files.map(([path]) => mkdir(join(root, dirname(path)), { recursive: true })));
   await Promise.all(files.map(([path, content]) => writeFile(join(root, `${path}.tmp`), content)));
   for (const [path] of files) await rename(join(root, `${path}.tmp`), join(root, path));
+}
+
+async function removeStalePages(root: string, kept: ReadonlySet<string>): Promise<void> {
+  const present = await readdir(join(root, CATALOG_DIR)).catch(() => []);
+  await Promise.all(
+    present
+      .map((name) => `${CATALOG_DIR}/${name}`)
+      .filter((path) => path.endsWith(".md") && !kept.has(path))
+      .map((path) => rm(join(root, path))),
+  );
 }
 
 export async function publish(
@@ -79,13 +90,16 @@ export async function publish(
     .map(({ file: _, ...product }) => product)
     .sort((a, b) => a.slug.localeCompare(b.slug));
   const categories = Object.fromEntries(catalog.categories);
-  const readme = spliceReadme(await readFile(join(root, "README.md"), "utf8"), renderCatalog(tools, products, catalog.categories));
+  const { index, pages } = renderCatalog(tools, products, catalog.categories);
+  const readme = spliceReadme(await readFile(join(root, "README.md"), "utf8"), index);
 
   await writeTogether(root, [
     [CATALOG_PATH, catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, categories })],
     [EVENTS_PATH, eventsJson(events)],
     ["README.md", readme],
+    ...pages,
   ]);
+  await removeStalePages(root, new Set(pages.keys()));
 }
 
 export async function publishOrExplain(

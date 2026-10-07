@@ -1,0 +1,14 @@
+# Kubernetes packaging
+
+Template, package and version Kubernetes manifests so one application can be installed and configured per environment.
+
+| Tool | Language | Licence | Latest | Stars | Replaces |
+|---|---|---|---|---:|---|
+| [Helm](https://github.com/helm/helm) | Go | Apache-2.0 | [v4.3.0](https://github.com/helm/helm/releases/tag/v4.3.0) signed | 30310 | none |
+| [Kustomize](https://github.com/kubernetes-sigs/kustomize) | Go | Apache-2.0 | [kustomize/v5.8.2](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.2) | 12179 | none |
+| [Helmfile](https://github.com/helmfile/helmfile) | Go | MIT | [v1.8.1](https://github.com/helmfile/helmfile/releases/tag/v1.8.1) signed | 5213 | none |
+| [cdk8s](https://github.com/cdk8s-team/cdk8s) | JavaScript | Apache-2.0 | [redirect](https://github.com/cdk8s-team/cdk8s/releases/tag/redirect) signed | 4857 | none |
+| [Timoni](https://github.com/stefanprodan/timoni) | Go | Apache-2.0 | [v0.35.0](https://github.com/stefanprodan/timoni/releases/tag/v0.35.0) signed | 2021 | Helm (full) |
+| [ytt](https://github.com/carvel-dev/ytt) | Go | Apache-2.0 | [v0.55.3](https://github.com/carvel-dev/ytt/releases/tag/v0.55.3) | 1884 | none |
+
+[All categories](../README.md#catalog)

@@ -11,6 +11,9 @@ refreshed=$1
 patch=$2
 drafted=$3
 
+if [ -d "$refreshed/catalog" ]; then
+  rm -rf catalog
+fi
 cp -r "$refreshed/." .
 : >"$COMMIT_MESSAGE_FILE"
 if [ ! -s "$patch" ]; then
