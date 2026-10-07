@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.128.2] - 2026-10-07
+
+### Bug Fixes
+
+- fix(readme): split the catalog into one page per category (#396)
+
 ## [0.128.1] - 2026-10-06
 
 ### Bug Fixes
