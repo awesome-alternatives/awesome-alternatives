@@ -1,3 +1,7 @@
 name: borgmatic
 repository: https://github.com/borgmatic-collective/borgmatic
 category: backup
+replaces:
+  - tool: resticprofile
+    fit: partial
+    note: Configuration-driven scheduling and retention for borg instead of restic.

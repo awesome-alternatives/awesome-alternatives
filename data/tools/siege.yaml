@@ -1,3 +1,7 @@
 name: Siege
 repository: https://github.com/JoeDog/siege
 category: load-testing
+replaces:
+  - tool: jmeter
+    fit: partial
+    note: "HTTP load and regression testing from the command line, without JMeter's other protocols or GUI."

@@ -1,3 +1,10 @@
 name: Delta Lake
 repository: https://github.com/delta-io/delta
 category: table-format
+replaces:
+  - tool: iceberg
+    fit: full
+    note: Open table format with ACID transactions and time travel on object storage.
+  - tool: hudi
+    fit: full
+    note: Open table format with ACID transactions and time travel on object storage.

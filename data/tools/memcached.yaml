@@ -1,3 +1,7 @@
 name: Memcached
 repository: https://github.com/memcached/memcached
 category: key-value-store
+replaces:
+  - tool: redis
+    fit: partial
+    note: In-memory key-value cache only, without persistence or data structures.

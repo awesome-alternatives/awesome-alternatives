@@ -1,4 +1,8 @@
 name: mypy
 repository: https://github.com/python/mypy
 category: python-type-checker
+replaces:
+  - tool: pyright
+    fit: full
+    note: Static type checker for Python with a plugin system, run from the command line or an editor.
 terms: open

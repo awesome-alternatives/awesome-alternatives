@@ -1,3 +1,7 @@
 name: tealdeer
 repository: https://github.com/tealdeer-rs/tealdeer
 category: cheatsheet
+replaces:
+  - tool: tldr
+    fit: drop-in
+    note: Fast Rust client for the tldr pages, with the same commands and pages.

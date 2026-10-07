@@ -1,3 +1,7 @@
 name: Plakar
 repository: https://github.com/PlakarKorp/plakar
 category: backup
+replaces:
+  - tool: restic
+    fit: partial
+    note: Deduplicated, encrypted snapshots in its own Kloset format; a younger project than restic.

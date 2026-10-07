@@ -1,4 +1,8 @@
 name: Apache Kylin
 repository: https://github.com/apache/kylin
 category: analytical-database
+replaces:
+  - tool: druid
+    fit: partial
+    note: OLAP engine that pre-computes cubes over Hadoop and Spark data for fast aggregate queries.
 deploy: [container]

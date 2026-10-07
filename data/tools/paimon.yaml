@@ -1,3 +1,10 @@
 name: Apache Paimon
 repository: https://github.com/apache/paimon
 category: table-format
+replaces:
+  - tool: iceberg
+    fit: partial
+    note: Lake table format built for streaming writes with Flink and Spark, with changelog production.
+  - tool: hudi
+    fit: partial
+    note: Lake table format built for streaming writes with Flink and Spark, with changelog production.

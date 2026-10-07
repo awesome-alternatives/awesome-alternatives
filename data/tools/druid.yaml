@@ -1,4 +1,11 @@
 name: Apache Druid
 repository: https://github.com/apache/druid
 category: analytical-database
+replaces:
+  - tool: pinot
+    fit: full
+    note: Real-time analytics database that ingests streams and answers sub-second queries.
+  - tool: clickhouse
+    fit: partial
+    note: Real-time analytics database built around streaming ingestion and time-based segments.
 deploy: [container]

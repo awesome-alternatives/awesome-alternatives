@@ -1,3 +1,7 @@
 name: autocannon
 repository: https://github.com/mcollina/autocannon
 category: load-testing
+replaces:
+  - tool: vegeta
+    fit: partial
+    note: HTTP/1.1 load generator for the command line or as a Node.js library, with pipelining.

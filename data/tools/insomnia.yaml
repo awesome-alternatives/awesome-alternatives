@@ -1,3 +1,7 @@
 name: Insomnia
 repository: https://github.com/Kong/insomnia
 category: api-client
+replaces:
+  - tool: postman
+    fit: full
+    note: REST, GraphQL, gRPC and WebSocket requests with imports of Postman collections.

@@ -1,3 +1,7 @@
 name: Gatling
 repository: https://github.com/gatling/gatling
 category: load-testing
+replaces:
+  - tool: jmeter
+    fit: full
+    note: Load tests written as code in Scala, Java, Kotlin, JavaScript or TypeScript instead of a GUI test plan.

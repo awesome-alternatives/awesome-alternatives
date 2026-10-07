@@ -1,3 +1,10 @@
 name: Apache Iceberg
 repository: https://github.com/apache/iceberg
 category: table-format
+replaces:
+  - tool: delta-lake
+    fit: full
+    note: Open table format with ACID transactions, schema evolution and time travel on object storage.
+  - tool: hudi
+    fit: full
+    note: Open table format with ACID transactions, schema evolution and time travel on object storage.

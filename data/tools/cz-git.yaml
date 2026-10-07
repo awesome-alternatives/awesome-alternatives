@@ -1,3 +1,7 @@
 name: cz-git
 repository: https://github.com/Zhengqbbb/cz-git
 category: commit-lint
+replaces:
+  - tool: commitizen
+    fit: full
+    note: Commitizen adapter with interactive prompts, a standalone czg CLI and optional AI-written messages.

@@ -1,4 +1,8 @@
 name: Timeshift
 repository: https://github.com/linuxmint/timeshift
 category: backup
+replaces:
+  - tool: time-machine
+    fit: partial
+    note: System snapshots of a Linux install with scheduled restore points, using rsync or Btrfs.
 terms: open

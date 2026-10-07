@@ -1,4 +1,8 @@
 name: Koillection
 repository: https://github.com/benjaminjonard/koillection
 category: home-inventory
+replaces:
+  - tool: homebox
+    fit: partial
+    note: Catalogues personal collections such as books, coins or wines with custom fields and wishlists, rather than household inventory.
 deploy: [container]

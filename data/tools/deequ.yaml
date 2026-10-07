@@ -1,3 +1,7 @@
 name: Deequ
 repository: https://github.com/awslabs/deequ
 category: data-quality
+replaces:
+  - tool: great-expectations
+    fit: partial
+    note: Data quality checks and metrics on Apache Spark, written in Scala.

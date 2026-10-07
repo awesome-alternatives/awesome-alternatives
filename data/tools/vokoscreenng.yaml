@@ -1,3 +1,7 @@
 name: vokoscreenNG
 repository: https://github.com/vkohaupt/vokoscreenNG
 category: screen-recording
+replaces:
+  - tool: obs-studio
+    fit: partial
+    note: Records the screen, a window or an area with audio, without scenes or streaming.

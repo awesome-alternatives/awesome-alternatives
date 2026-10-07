@@ -1,3 +1,7 @@
 name: pdoc
 repository: https://github.com/mitmproxy/pdoc
 category: code-documentation
+replaces:
+  - tool: sphinx
+    fit: partial
+    note: Generates Python API docs straight from docstrings with no configuration, without cross-project docs or extensions.

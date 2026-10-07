@@ -1,3 +1,7 @@
 name: Pandera
 repository: https://github.com/unionai-oss/pandera
 category: data-quality
+replaces:
+  - tool: great-expectations
+    fit: partial
+    note: Schema validation for dataframes in Python, without data docs or a checkpoint runner.

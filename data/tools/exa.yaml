@@ -1,3 +1,7 @@
 name: exa
 repository: https://github.com/ogham/exa
 category: file-listing
+replaces:
+  - tool: lsd
+    fit: partial
+    note: Colorful directory listings with git status and a tree view; no longer maintained.

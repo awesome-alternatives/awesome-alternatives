@@ -1,4 +1,8 @@
 name: BorgBackup
 repository: https://github.com/borgbackup/borg
 category: backup
+replaces:
+  - tool: restic
+    fit: full
+    note: "Deduplicated, encrypted backups to local disks or SSH hosts, without restic's native cloud backends."
 terms: open

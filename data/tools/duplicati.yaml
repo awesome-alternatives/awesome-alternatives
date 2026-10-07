@@ -1,4 +1,11 @@
 name: Duplicati
 repository: https://github.com/duplicati/duplicati
 category: backup
+replaces:
+  - tool: crashplan
+    fit: partial
+    note: Scheduled encrypted backups from a web UI to cloud storage you provide, without a managed cloud.
+  - tool: backblaze-personal-backup
+    fit: partial
+    note: Scheduled encrypted backups to the storage provider of your choice, including Backblaze B2.
 terms: open-core

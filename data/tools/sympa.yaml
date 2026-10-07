@@ -1,3 +1,10 @@
 name: Sympa
 repository: https://github.com/sympa-community/sympa
 category: newsletter
+replaces:
+  - tool: google-groups
+    fit: partial
+    note: Self-hosted mailing list manager with subscriptions, moderation and archives.
+  - tool: mailchimp
+    fit: partial
+    note: Self-hosted mailing lists and newsletters to subscribers, without campaign design or analytics.

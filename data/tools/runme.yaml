@@ -1,3 +1,7 @@
 name: Runme
 repository: https://github.com/runmedev/runme
 category: task-runner
+replaces:
+  - tool: just
+    fit: partial
+    note: Runs the commands in fenced code blocks of Markdown files, instead of a separate recipe file.

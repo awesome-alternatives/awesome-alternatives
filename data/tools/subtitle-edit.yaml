@@ -1,3 +1,7 @@
 name: Subtitle Edit
 repository: https://github.com/SubtitleEdit/subtitleedit
 category: subtitle-editor
+replaces:
+  - tool: aegisub
+    fit: partial
+    note: Subtitle editing with audio waveform, OCR of image subtitles and many formats; not focused on ASS typesetting.

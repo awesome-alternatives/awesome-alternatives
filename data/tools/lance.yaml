@@ -1,3 +1,10 @@
 name: Lance
 repository: https://github.com/lance-format/lance
 category: table-format
+replaces:
+  - tool: iceberg
+    fit: partial
+    note: Columnar table format aimed at ML and multimodal data, with fast random access and vector indexes.
+  - tool: delta-lake
+    fit: partial
+    note: Columnar table format aimed at ML and multimodal data, with versioning and vector indexes.

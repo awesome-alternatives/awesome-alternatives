@@ -1,3 +1,7 @@
 name: Taurus
 repository: https://github.com/Blazemeter/taurus
 category: load-testing
+replaces:
+  - tool: jmeter
+    fit: partial
+    note: Runs JMeter and other executors from YAML configs, so JMeter still does the load generation.

@@ -1,4 +1,8 @@
 name: llama-swap
 repository: https://github.com/mostlygeek/llama-swap
 category: llm-runtime
+replaces:
+  - tool: ollama
+    fit: partial
+    note: Proxy that loads and swaps local models on demand behind one OpenAI-compatible endpoint, over servers like llama.cpp or vLLM.
 deploy: [container, binary]

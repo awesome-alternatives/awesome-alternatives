@@ -1,3 +1,7 @@
 name: KTransformers
 repository: https://github.com/kvcache-ai/ktransformers
 category: llm-runtime
+replaces:
+  - tool: llama-cpp
+    fit: partial
+    note: Runs large mixture-of-experts models split across CPU and GPU, on top of its own optimized kernels.

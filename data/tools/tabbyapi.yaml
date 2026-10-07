@@ -1,4 +1,8 @@
 name: TabbyAPI
 repository: https://github.com/theroyallab/tabbyAPI
 category: llm-runtime
+replaces:
+  - tool: ollama
+    fit: partial
+    note: OpenAI-compatible server for ExLlama quantized models on NVIDIA GPUs, without a model library.
 deploy: [container]

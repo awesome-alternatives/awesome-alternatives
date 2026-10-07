@@ -1,3 +1,7 @@
 name: typos
 repository: https://github.com/crate-ci/typos
 category: spell-checker
+replaces:
+  - tool: codespell
+    fit: full
+    note: Finds source code typos from a list of known misspellings, written in Rust and fast on large repos.

@@ -1,3 +1,7 @@
 name: ghz
 repository: https://github.com/bojand/ghz
 category: load-testing
+replaces:
+  - tool: k6
+    fit: partial
+    note: Load tests for gRPC services only, with a simple CLI.

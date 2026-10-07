@@ -1,5 +1,12 @@
 name: CockroachDB
 repository: https://github.com/cockroachdb/cockroach
 category: distributed-sql
+replaces:
+  - tool: yugabytedb
+    fit: full
+    note: Distributed SQL over a PostgreSQL wire protocol, with serializable transactions across regions.
+  - tool: google-cloud-spanner
+    fit: full
+    note: Globally distributed SQL with strongly consistent transactions, which you can run yourself.
 terms: source-available
 deploy: [container, helm]

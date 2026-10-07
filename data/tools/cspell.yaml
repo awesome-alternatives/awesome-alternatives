@@ -1,3 +1,10 @@
 name: CSpell
 repository: https://github.com/streetsidesoftware/cspell
 category: spell-checker
+replaces:
+  - tool: codespell
+    fit: partial
+    note: Spell checker for code that splits identifiers and uses dictionaries, rather than a list of known misspellings.
+  - tool: typos
+    fit: partial
+    note: Spell checker for code that splits identifiers and uses dictionaries, rather than a list of known misspellings.

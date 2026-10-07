@@ -1,3 +1,10 @@
 name: navi
 repository: https://github.com/denisidoro/navi
 category: cheatsheet
+replaces:
+  - tool: cheat
+    fit: partial
+    note: Interactive cheatsheets with fuzzy search and placeholders you fill in before running.
+  - tool: tldr
+    fit: partial
+    note: Interactive cheatsheets with fuzzy search, kept in your own files or imported from tldr pages.

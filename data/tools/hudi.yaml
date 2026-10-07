@@ -1,3 +1,10 @@
 name: Apache Hudi
 repository: https://github.com/apache/hudi
 category: table-format
+replaces:
+  - tool: delta-lake
+    fit: full
+    note: Table format with upserts, deletes and incremental processing on a data lake.
+  - tool: iceberg
+    fit: full
+    note: Table format with upserts, deletes and incremental processing on a data lake.

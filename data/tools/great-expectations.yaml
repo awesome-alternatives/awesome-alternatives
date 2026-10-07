@@ -1,3 +1,10 @@
 name: Great Expectations
 repository: https://github.com/fivetran/great_expectations
 category: data-quality
+replaces:
+  - tool: soda-core
+    fit: full
+    note: Declarative data tests run in pipelines, written in Python or YAML.
+  - tool: monte-carlo
+    fit: partial
+    note: Expectation-based validation you define and run yourself, without automated anomaly detection.

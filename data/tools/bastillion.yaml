@@ -1,4 +1,11 @@
 name: Bastillion
 repository: https://github.com/Loophole-LLC/Bastillion
 category: privileged-access
+replaces:
+  - tool: strongdm
+    fit: partial
+    note: Browser-based SSH access to servers with key management, without database or Kubernetes access.
+  - tool: teleport
+    fit: partial
+    note: Browser-based SSH access to servers with key management and session audit, without certificates or non-SSH targets.
 terms: source-available
