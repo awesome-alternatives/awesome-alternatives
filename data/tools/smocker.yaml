@@ -1,3 +1,10 @@
 name: Smocker
 repository: https://github.com/smocker-dev/smocker
 category: mock-server
+replaces:
+  - tool: wiremock
+    fit: full
+    note: HTTP mock server and proxy with a web UI and a REST API for defining mocks.
+  - tool: postman
+    fit: partial
+    note: Mock servers for testing, without collections or a request editor.

@@ -1,4 +1,8 @@
 name: Skyvern
 repository: https://github.com/Skyvern-AI/skyvern
 category: browser-agent
+replaces:
+  - tool: uipath
+    fit: partial
+    note: Automates browser workflows with computer vision and an LLM instead of selectors; no desktop automation.
 deploy: [compose]

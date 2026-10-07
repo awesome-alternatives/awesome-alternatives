@@ -1,3 +1,7 @@
 name: Murex
 repository: https://github.com/lmorg/murex
 category: shell
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Shell with typed pipelines and built-in data tooling, with its own non-POSIX language.

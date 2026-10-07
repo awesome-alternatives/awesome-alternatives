@@ -1,3 +1,7 @@
 name: Nanobrowser
 repository: https://github.com/nanobrowser/nanobrowser
 category: browser-agent
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Chrome extension with multi-agent web automation using your own LLM API key; browser tasks only, no chat product.

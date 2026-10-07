@@ -1,3 +1,7 @@
 name: KDash
 repository: https://github.com/kdash-rs/kdash
 category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: partial
+    note: Terminal dashboard for Kubernetes resources and logs, without Lens extensions or multi-cluster workspaces.

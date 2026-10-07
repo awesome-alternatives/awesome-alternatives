@@ -1,5 +1,12 @@
 name: piler
 repository: https://github.com/jsuto/piler
 category: email-archiving
+replaces:
+  - tool: mailstore
+    fit: full
+    note: Archives mail with full-text search, retention rules, legal hold and audit, self-hosted.
+  - tool: mimecast
+    fit: partial
+    note: Mail archive with search and legal hold, without the email security gateway.
 terms: open
 deploy: [container]

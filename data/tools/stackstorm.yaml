@@ -1,3 +1,7 @@
 name: StackStorm
 repository: https://github.com/StackStorm/st2
 category: runbook-automation
+replaces:
+  - tool: ansible-automation-platform
+    fit: partial
+    note: Event-driven automation that runs actions and workflows in response to triggers, with an Ansible integration.

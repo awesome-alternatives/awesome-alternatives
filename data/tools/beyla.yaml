@@ -1,3 +1,10 @@
 name: Grafana Beyla
 repository: https://github.com/grafana/beyla
 category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: eBPF auto-instrumentation that produces traces and metrics without code changes; it needs a separate backend to store and view them.
+  - tool: new-relic
+    fit: partial
+    note: Zero-code request traces and RED metrics for HTTP and gRPC services, sent to a backend you choose.

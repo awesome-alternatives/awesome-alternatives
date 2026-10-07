@@ -1,3 +1,7 @@
 name: WireMock
 repository: https://github.com/wiremock/wiremock
 category: mock-server
+replaces:
+  - tool: postman
+    fit: partial
+    note: Mock servers with request matching, stateful scenarios and fault injection, without collections or a request editor.

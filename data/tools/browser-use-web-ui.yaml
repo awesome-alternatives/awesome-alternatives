@@ -1,4 +1,8 @@
 name: Browser Use Web UI
 repository: https://github.com/browser-use/web-ui
 category: browser-agent
+replaces:
+  - tool: manus
+    fit: partial
+    note: Web interface for running a browser agent with your own LLM key, limited to browser tasks.
 deploy: [compose]

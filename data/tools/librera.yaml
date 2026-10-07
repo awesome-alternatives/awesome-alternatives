@@ -1,4 +1,8 @@
 name: Librera Reader
 repository: https://github.com/foobnix/LibreraReader
 category: ebook-reader
+replaces:
+  - tool: amazon-kindle
+    fit: partial
+    note: Android reader for your own EPUB, PDF and MOBI books; there is no store and no Kindle DRM support.
 terms: open

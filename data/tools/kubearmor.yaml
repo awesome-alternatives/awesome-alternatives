@@ -1,3 +1,7 @@
 name: KubeArmor
 repository: https://github.com/kubearmor/KubeArmor
 category: runtime-security
+replaces:
+  - tool: sysdig-secure
+    fit: partial
+    note: Runtime enforcement of policies on containers and nodes using LSMs, without a hosted console or posture checks.

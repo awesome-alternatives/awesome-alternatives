@@ -1,3 +1,7 @@
 name: The Lounge
 repository: https://github.com/thelounge/thelounge
 category: chat-client
+replaces:
+  - tool: irccloud
+    fit: full
+    note: Self-hosted web IRC client that stays connected, keeps the backlog and syncs between devices.

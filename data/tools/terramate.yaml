@@ -1,3 +1,7 @@
 name: Terramate
 repository: https://github.com/terramate-io/terramate
 category: infrastructure-as-code
+replaces:
+  - tool: terragrunt
+    fit: partial
+    note: Orchestrates stacks and generates code around plain Terraform or OpenTofu, with change detection to run only affected stacks.

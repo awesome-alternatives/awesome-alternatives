@@ -1,3 +1,10 @@
 name: Odigos
 repository: https://github.com/odigos-io/odigos
 category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Instruments applications for traces without code changes using OpenTelemetry and eBPF; it sends data to a backend you pick.
+  - tool: new-relic
+    fit: partial
+    note: Automatic OpenTelemetry instrumentation of Kubernetes workloads, without its own storage or UI.

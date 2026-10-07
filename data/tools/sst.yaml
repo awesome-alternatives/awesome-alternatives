@@ -1,3 +1,10 @@
 name: SST
 repository: https://github.com/anomalyco/sst
 category: infrastructure-as-code
+replaces:
+  - tool: vercel
+    fit: partial
+    note: Deploys Next.js, Astro and other web frameworks to your own AWS account instead of a hosted platform.
+  - tool: aws-cdk
+    fit: partial
+    note: Infrastructure for AWS apps in TypeScript, with live local development against deployed resources.

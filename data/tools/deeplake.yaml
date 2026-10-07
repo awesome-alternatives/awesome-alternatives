@@ -1,3 +1,7 @@
 name: Deep Lake
 repository: https://github.com/activeloopai/deeplake
 category: vector-database
+replaces:
+  - tool: pinecone
+    fit: partial
+    note: Vector search over a multimodal data lake, kept alongside the raw data it was built from.

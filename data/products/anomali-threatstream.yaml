@@ -1,0 +1,5 @@
+name: Anomali ThreatStream
+homepage: https://www.anomali.com/products/threatstream
+vendor: Anomali
+category: threat-intelligence
+description: Commercial threat intelligence platform that collects intelligence feeds, scores indicators and shares them with security tools.

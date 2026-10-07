@@ -1,3 +1,10 @@
 name: mountebank
 repository: https://github.com/mountebank-testing/mountebank
 category: mock-server
+replaces:
+  - tool: wiremock
+    fit: full
+    note: Programmable test doubles for HTTP, TCP and SMTP, driven by a REST API.
+  - tool: postman
+    fit: partial
+    note: Mock servers for testing, without collections or a request editor.

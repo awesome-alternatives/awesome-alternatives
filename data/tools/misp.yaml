@@ -1,3 +1,7 @@
 name: MISP
 repository: https://github.com/MISP/MISP
 category: threat-intelligence
+replaces:
+  - tool: anomali-threatstream
+    fit: partial
+    note: Collects, correlates and shares indicators and events between organizations; the intelligence feeds are up to you.

@@ -1,3 +1,10 @@
 name: HTTPie
 repository: https://github.com/httpie/cli
 category: http-client
+replaces:
+  - tool: curl
+    fit: partial
+    note: Friendlier syntax, JSON support and formatted output for HTTP requests, without the other protocols curl supports.
+  - tool: postman
+    fit: partial
+    note: Command line and desktop client for sending HTTP requests and saving sessions, without collections or team workspaces.

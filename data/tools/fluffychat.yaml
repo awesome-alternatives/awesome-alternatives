@@ -1,3 +1,7 @@
 name: FluffyChat
 repository: https://github.com/krille-chan/fluffychat
 category: chat-client
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Matrix messenger for phones and desktop with encrypted chats and groups; contacts must be on Matrix.

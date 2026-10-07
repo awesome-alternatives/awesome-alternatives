@@ -1,3 +1,7 @@
 name: Kiwi IRC
 repository: https://github.com/kiwiirc/kiwiirc
 category: chat-client
+replaces:
+  - tool: irccloud
+    fit: partial
+    note: Web IRC client you host or embed; staying connected while the page is closed needs a bouncer.

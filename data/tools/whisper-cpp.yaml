@@ -1,4 +1,8 @@
 name: whisper.cpp
 repository: https://github.com/ggml-org/whisper.cpp
 category: speech-to-text
+replaces:
+  - tool: whisper
+    fit: full
+    note: C and C++ port of Whisper that runs on CPU and Apple silicon without Python or PyTorch.
 deploy: [container]

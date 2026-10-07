@@ -1,3 +1,10 @@
 name: Pixie
 repository: https://github.com/pixie-io/pixie
 category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: eBPF-based traces, metrics and profiles for Kubernetes workloads without code changes, kept in the cluster.
+  - tool: new-relic
+    fit: partial
+    note: Cluster-local telemetry with a scripting interface; data is not retained long term.

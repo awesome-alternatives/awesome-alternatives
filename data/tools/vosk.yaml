@@ -1,3 +1,10 @@
 name: Vosk
 repository: https://github.com/alphacep/vosk-api
 category: speech-to-text
+replaces:
+  - tool: whisper
+    fit: partial
+    note: Small offline models with streaming recognition and an API for many languages, less accurate than Whisper.
+  - tool: amazon-transcribe
+    fit: partial
+    note: Offline speech recognition on your own device, without speaker labels or a managed service.

@@ -1,0 +1,5 @@
+name: Azure Resource Manager
+homepage: https://learn.microsoft.com/azure/azure-resource-manager/
+vendor: Microsoft
+category: infrastructure-as-code
+description: Azure deployment and management service, driven by JSON templates that declare the resources to create.

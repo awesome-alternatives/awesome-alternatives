@@ -1,4 +1,8 @@
 name: Flake8
 repository: https://github.com/PyCQA/flake8
 category: python-lint-format
+replaces:
+  - tool: pylint
+    fit: partial
+    note: Style and error checks from pycodestyle and pyflakes, with fewer rules and no deeper code analysis.
 terms: open

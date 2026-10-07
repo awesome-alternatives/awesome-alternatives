@@ -1,4 +1,8 @@
 name: Apprise API
 repository: https://github.com/caronc/apprise-api
 category: push-notifications
+replaces:
+  - tool: pushover
+    fit: partial
+    note: HTTP API in front of Apprise that delivers to Pushover, ntfy and many other services; it sends but has no app of its own.
 deploy: [container]

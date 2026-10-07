@@ -1,4 +1,8 @@
 name: Quassel IRC
 repository: https://github.com/quassel/quassel
 category: chat-client
+replaces:
+  - tool: irccloud
+    fit: full
+    note: A core that stays connected to IRC and keeps the backlog, with desktop and mobile clients that attach to it.
 terms: open

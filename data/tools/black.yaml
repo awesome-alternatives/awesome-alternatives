@@ -1,3 +1,7 @@
 name: Black
 repository: https://github.com/psf/black
 category: python-lint-format
+replaces:
+  - tool: yapf
+    fit: full
+    note: Opinionated formatter with almost no options, so the output does not depend on configuration.

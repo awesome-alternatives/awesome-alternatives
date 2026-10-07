@@ -1,3 +1,7 @@
 name: Tracee
 repository: https://github.com/aquasecurity/tracee
 category: runtime-security
+replaces:
+  - tool: sysdig-secure
+    fit: partial
+    note: eBPF runtime detection of suspicious behavior in containers and hosts, without a hosted console or posture checks.

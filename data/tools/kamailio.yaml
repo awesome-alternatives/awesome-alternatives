@@ -1,4 +1,8 @@
 name: Kamailio
 repository: https://github.com/kamailio/kamailio
 category: telephony
+replaces:
+  - tool: twilio
+    fit: partial
+    note: SIP proxy and registrar for routing calls at scale; no media handling, REST API or phone numbers.
 terms: open

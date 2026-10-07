@@ -1,4 +1,8 @@
 name: Speedtest Tracker
 repository: https://github.com/alexjustesen/speedtest-tracker
 category: speed-test
+replaces:
+  - tool: speedtest-by-ookla
+    fit: partial
+    note: Runs scheduled speed tests from your server with the Ookla CLI and keeps graphs of the results.
 deploy: [container]

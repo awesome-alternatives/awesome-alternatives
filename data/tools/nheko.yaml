@@ -1,3 +1,7 @@
 name: Nheko
 repository: https://github.com/Nheko-Reborn/nheko
 category: chat-client
+replaces:
+  - tool: slack
+    fit: partial
+    note: Native desktop Matrix client for rooms and threads; needs a Matrix homeserver.

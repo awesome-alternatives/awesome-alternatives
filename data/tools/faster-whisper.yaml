@@ -1,3 +1,7 @@
 name: faster-whisper
 repository: https://github.com/SYSTRAN/faster-whisper
 category: speech-to-text
+replaces:
+  - tool: whisper
+    fit: full
+    note: Reimplementation of Whisper on CTranslate2 that loads the same models and runs several times faster with less memory.

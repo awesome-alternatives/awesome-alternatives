@@ -1,3 +1,7 @@
 name: Foliate
 repository: https://github.com/johnfactotum/foliate
 category: ebook-reader
+replaces:
+  - tool: apple-books
+    fit: partial
+    note: Linux reader for your own EPUB, MOBI and other books with annotations; there is no store.

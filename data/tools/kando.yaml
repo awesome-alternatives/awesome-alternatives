@@ -1,4 +1,11 @@
 name: Kando
 repository: https://github.com/kando-menu/kando
 category: app-launcher
+replaces:
+  - tool: raycast
+    fit: partial
+    note: Pie menu that launches apps and runs actions with hotkeys and gestures, without text search or extensions.
+  - tool: alfred
+    fit: partial
+    note: Pie menu that launches apps and runs actions with hotkeys and gestures, without text search or workflows.
 terms: open
