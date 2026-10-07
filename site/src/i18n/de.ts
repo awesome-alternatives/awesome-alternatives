@@ -315,6 +315,15 @@ export const de: Messages = {
     ledeAfter: ".",
   },
 
+  banned: {
+    title: "{name} ist nicht mehr gelistet",
+    description: "{name} wurde aus dem awesome-alternatives-Katalog entfernt.",
+    heading: "{name} ist nicht mehr gelistet",
+    notice: "Dieses Tool wurde aus dem Katalog entfernt und wird hier nicht mehr empfohlen.",
+    reason: "Grund",
+    back: "Zurück zum Katalog",
+  },
+
   changes: {
     title: "Was sich im Katalog geändert hat: Lizenzen, Archive, Releases",
     description:

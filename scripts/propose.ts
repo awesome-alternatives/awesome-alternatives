@@ -1,7 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { loadSoundCatalog } from "./lib/catalog.ts";
+import { loadListedCatalog } from "./lib/catalog.ts";
 import type { Proposal } from "./lib/maintainer-editorial.ts";
 import { catalogGuard } from "./lib/maintainer-guard.ts";
 import { createProposalHost } from "./lib/maintainer-host.ts";
@@ -16,7 +16,7 @@ if (!file || !GH_TOKEN || !GITHUB_REPOSITORY) {
 }
 
 const root = process.cwd();
-const catalog = await loadSoundCatalog(root);
+const catalog = await loadListedCatalog(root);
 const proposals = JSON.parse(await readFile(file, "utf8")) as Proposal[];
 const outcomes = await proposeAll(proposals, {
   catalog,

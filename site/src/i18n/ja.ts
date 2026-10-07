@@ -314,6 +314,15 @@ export const ja: Messages = {
     ledeAfter: "してください。",
   },
 
+  banned: {
+    title: "{name} は掲載されていません",
+    description: "{name} は awesome-alternatives のカタログから削除されました。",
+    heading: "{name} は掲載されていません",
+    notice: "このツールはカタログから削除されており、ここでは推奨していません。",
+    reason: "理由",
+    back: "カタログに戻る",
+  },
+
   changes: {
     title: "カタログの変更履歴：ライセンス、アーカイブ、リリース",
     description:

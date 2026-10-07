@@ -16,6 +16,7 @@ interface Props {
   revealSearch?: boolean;
   image?: SocialImage;
   noindex?: boolean;
+  nofollow?: boolean;
   canonicalPath?: string;
   structuredData?: StructuredData[];
   feeds?: FeedLink[];
@@ -41,6 +42,7 @@ const {
   revealSearch = false,
   image = DEFAULT_IMAGE,
   noindex = false,
+  nofollow = false,
   canonicalPath,
   structuredData = [],
   feeds = [],
@@ -71,7 +73,7 @@ const link = (path: string) => pathFor(locale, path);
     }
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+    {noindex ? <meta name="robots" content={nofollow ? "noindex,nofollow" : "noindex"} /> : <link rel="canonical" href={canonical} />}
     {
       !noindex && (
         <>

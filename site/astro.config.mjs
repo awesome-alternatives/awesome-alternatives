@@ -8,11 +8,11 @@ import { defineConfig } from "astro/config";
 import { cspDirectives } from "./src/lib/csp.ts";
 import { repoLinks } from "./src/lib/repo.ts";
 import { SEARCHING_SCRIPT_HASH } from "./src/lib/searching.ts";
-import { lastmodByPath, unindexedPaths } from "./src/lib/sitemap.ts";
+import { bannedPaths, lastmodByPath, unindexedPaths } from "./src/lib/sitemap.ts";
 
 const catalog = JSON.parse(readFileSync(new URL("../generated/catalog.json", import.meta.url), "utf8"));
 const lastmods = lastmodByPath(catalog.tools);
-const unindexed = new Set(unindexedPaths(catalog.tools));
+const unindexed = new Set([...unindexedPaths(catalog.tools), ...bannedPaths(catalog.banned ?? [])]);
 
 export default defineConfig({
   site: "https://awesome-alternatives.com",

@@ -16,7 +16,7 @@ export interface Clash {
 const LANG = /<html lang="([^"]*)"/;
 const TITLE = /<title>([^<]*)<\/title>/;
 const DESCRIPTION = /<meta name="description" content="([^"]*)"/;
-const NOINDEX = /<meta name="robots" content="noindex"/;
+const NOINDEX = /<meta name="robots" content="noindex[",]/;
 
 export function metaOf(path: string, html: string): PageMeta {
   return {

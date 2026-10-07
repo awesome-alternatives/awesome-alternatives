@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { installationsFromEnv } from "./lib/app.ts";
-import { loadSoundCatalog } from "./lib/catalog.ts";
+import { loadListedCatalog } from "./lib/catalog.ts";
 import { createGitHub } from "./lib/github.ts";
 import { createGraphQL } from "./lib/graphql.ts";
 import type { RefreshedEntry } from "./lib/merge.ts";
@@ -15,7 +15,7 @@ if (!slug || !outDir) {
 }
 
 const root = process.cwd();
-const catalog = await loadSoundCatalog(root);
+const catalog = await loadListedCatalog(root);
 const tool = catalog.tools.find((t) => t.slug === slug);
 if (!tool) {
   console.error(`${slug}: no such tool in data/tools`);

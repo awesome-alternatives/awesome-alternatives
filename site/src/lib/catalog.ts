@@ -6,7 +6,7 @@ import { parse } from "yaml";
 import type { Locale } from "../i18n/index.ts";
 import { pathFor } from "../i18n/index.ts";
 
-import type { CatalogEvent, Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
+import type { BannedTool, CatalogEvent, Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
 import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
@@ -34,6 +34,7 @@ const catalog: {
   owners: Record<string, OwnerFacts>;
   tools: (Omit<EnrichedTool, "deploy"> & Partial<Deploy>)[];
   products: ListedProduct[];
+  banned?: BannedTool[];
 } = JSON.parse(
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
 );
@@ -45,6 +46,8 @@ export const events: CatalogEvent[] = JSON.parse(readFileSync(resolve(ROOT, "gen
 export const checkedAt: string | null = catalog.checkedAt ?? null;
 
 export const products: ListedProduct[] = catalog.products;
+
+export const banned: BannedTool[] = catalog.banned ?? [];
 
 export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),

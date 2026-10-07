@@ -314,6 +314,15 @@ export const id: Messages = {
     ledeAfter: " yang Anda cari.",
   },
 
+  banned: {
+    title: "{name} tidak lagi terdaftar",
+    description: "{name} telah dihapus dari katalog awesome-alternatives.",
+    heading: "{name} tidak lagi terdaftar",
+    notice: "Alat ini telah dihapus dari katalog dan tidak lagi direkomendasikan di sini.",
+    reason: "Alasan",
+    back: "Kembali ke katalog",
+  },
+
   changes: {
     title: "Apa yang berubah di katalog: lisensi, arsip, rilis",
     description:

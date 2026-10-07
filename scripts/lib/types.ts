@@ -26,6 +26,7 @@ export interface ToolEntry {
   terms?: DeclaredTerms;
   capabilities?: Record<string, Capability>;
   deploy?: DeployMethod[];
+  banned?: string;
 }
 
 export interface Tool extends ToolEntry {
@@ -47,6 +48,14 @@ export interface Product extends ProductEntry {
 }
 
 export type ListedProduct = Omit<Product, "file">;
+
+export interface BannedTool {
+  slug: string;
+  name: string;
+  repository: string;
+  category: string;
+  reason: string;
+}
 
 export interface CapabilityTerm {
   label: string;

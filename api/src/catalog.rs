@@ -255,6 +255,12 @@ mod tests {
     }
 
     #[test]
+    fn ignores_the_banned_list_it_does_not_serve() {
+        let raw = r#"{"tools":[],"banned":[{"slug":"gone","name":"Gone","repository":"https://github.com/acme/gone","category":"c","reason":"No."}]}"#;
+        assert!(Catalog::parse(raw).unwrap().tools.is_empty());
+    }
+
+    #[test]
     fn parses_the_generated_catalog() {
         let raw = include_str!("../../generated/catalog.json");
         let catalog = Catalog::parse(raw).unwrap();

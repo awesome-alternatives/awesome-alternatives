@@ -2,7 +2,7 @@ import { execFileSync } from "node:child_process";
 import { mkdir, mkdtemp, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import type { Catalog } from "../scripts/lib/catalog.ts";
+import type { ListedCatalog } from "../scripts/lib/listed.ts";
 import { CATALOG_PATH, type Snapshot } from "../scripts/lib/publish.ts";
 import { END, START } from "../scripts/lib/render.ts";
 import type { EnrichedTool, Tool } from "../scripts/lib/types.ts";
@@ -69,6 +69,6 @@ export async function checkout(snapshot: Snapshot): Promise<string> {
   return root;
 }
 
-export function catalogOf(...tools: Tool[]): Catalog {
-  return { tools, products: [], categories: new Map([["c", { name: "C", description: "D" }], ["relational-database", { name: "R", description: "D" }]]) };
+export function catalogOf(...tools: Tool[]): ListedCatalog {
+  return { tools, products: [], banned: [], categories: new Map([["c", { name: "C", description: "D" }], ["relational-database", { name: "R", description: "D" }]]) };
 }

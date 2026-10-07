@@ -3,8 +3,8 @@ import { access, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
-import type { Catalog } from "../scripts/lib/catalog.ts";
 import { EVENTS_PATH, eventsJson, parseEventLog } from "../scripts/lib/event-log.ts";
+import { type ListedCatalog, listedCatalog } from "../scripts/lib/listed.ts";
 import { mergeEntries } from "../scripts/lib/merge.ts";
 import { CATALOG_PATH, catalogJson, LostTools, lostTools, publish, publishOrExplain } from "../scripts/lib/publish.ts";
 import { END, START } from "../scripts/lib/render.ts";
@@ -86,11 +86,18 @@ async function published(tools: string[]): Promise<string> {
   return root;
 }
 
-function catalogOf(...names: string[]): Catalog {
-  return { tools: names.map(declared), products: [], categories: new Map([["c", { name: "C", description: "D" }]]) };
+function catalogOf(...names: string[]): ListedCatalog {
+  return { tools: names.map(declared), products: [], banned: [], categories: new Map([["c", { name: "C", description: "D" }]]) };
 }
 
 const snapshot = (...names: string[]) => ({ checkedAt: "2026-09-24T03:17:00.000Z", owners: {}, tools: names.map(enriched) });
+
+describe("lostTools and a ban", () => {
+  it("does not raise for a published tool that became banned, since the listed catalog no longer declares it", () => {
+    const listed = listedCatalog({ ...catalogOf("a", "b"), tools: [declared("a"), { ...declared("b"), banned: "reason" }] });
+    assert.deepEqual(lostTools(slugs("a", "b"), listed.tools, slugs("a")), []);
+  });
+});
 
 describe("publish", () => {
   it("refuses a run that lost a tool and writes neither the catalog nor the README", async () => {
@@ -116,6 +123,18 @@ describe("publish", () => {
     );
     assert.match(await readFile(join(root, "catalog/c.md"), "utf8"), /\[a\]\(https:\/\/github.com\/acme\/a\)/);
     assert.match(await readFile(join(root, "README.md"), "utf8"), /\[C\]\(catalog\/c\.md\) \| 1 \|/);
+  });
+
+  it("writes the banned entries at the top level and keeps the banned tool out of the tools and pages", async () => {
+    const root = await published(["a", "b"]);
+    const listed = listedCatalog({ ...catalogOf("a", "b"), tools: [declared("a"), { ...declared("b"), banned: "no longer acceptable" }] });
+    await publish(root, listed, snapshot("a"));
+    const written = JSON.parse(await readFile(join(root, CATALOG_PATH), "utf8"));
+    assert.deepEqual(written.banned, [
+      { slug: "b", name: "b", repository: "https://github.com/acme/b", category: "c", reason: "no longer acceptable" },
+    ]);
+    assert.deepEqual(written.tools.map((t: { slug: string }) => t.slug), ["a"]);
+    assert.doesNotMatch(await readFile(join(root, "catalog/c.md"), "utf8"), /github\.com\/acme\/b\b/);
   });
 
   it("removes the page of a category that no longer has a tool", async () => {

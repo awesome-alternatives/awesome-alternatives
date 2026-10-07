@@ -2,6 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import { Ajv2020 } from "ajv/dist/2020.js";
 import { parse } from "yaml";
+import { type ListedCatalog, listedCatalog } from "./listed.ts";
 import { byCodeUnit } from "./order.ts";
 import type { BlockingCode, Category, Finding, Product, ProductEntry, Tool, ToolEntry } from "./types.ts";
 
@@ -48,6 +49,10 @@ async function loadCategories(root: string): Promise<{ entries: Map<string, Cate
       return error(top ?? CATEGORIES_FILE, "schema", `${at} ${e.message ?? "is invalid"}${extra}`);
     });
   return { entries: new Map(Object.entries((raw ?? {}) as Record<string, Category>)), findings };
+}
+
+export async function loadListedCatalog(root: string): Promise<ListedCatalog> {
+  return listedCatalog(await loadSoundCatalog(root));
 }
 
 export async function loadSoundCatalog(root: string): Promise<Catalog> {

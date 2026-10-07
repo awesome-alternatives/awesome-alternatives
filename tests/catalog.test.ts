@@ -337,3 +337,39 @@ describe("the generated catalog", () => {
     assert.equal(withActivity(null, [{ os: "solaris", architectures: [] }]), false);
   });
 });
+
+describe("banned", () => {
+  const entry = (banned: string) => `name: Bad\nrepository: https://github.com/acme/bad\ncategory: release-automation\nbanned: ${JSON.stringify(banned)}\n`;
+
+  async function findingsFor(banned: string) {
+    const root = await mkdtemp(join(tmpdir(), "aa-"));
+    await cp(join(import.meta.dirname, "../schema"), join(root, "schema"), { recursive: true });
+    await cp(join(import.meta.dirname, "../data/categories.yaml"), join(root, "data/categories.yaml"));
+    await mkdir(join(root, "data/tools"), { recursive: true });
+    await writeFile(join(root, "data/tools/bad.yaml"), entry(banned));
+    return loadCatalog(root);
+  }
+
+  it("loads a banned entry with its reason", async () => {
+    const { catalog, findings } = await findingsFor("Hosts malware.");
+    assert.deepEqual(findings, []);
+    assert.equal(catalog.tools[0]?.banned, "Hosts malware.");
+  });
+
+  it("rejects an empty reason and one past 300 characters", async () => {
+    for (const reason of ["", "x".repeat(301)]) {
+      const { findings } = await findingsFor(reason);
+      assert.deepEqual(findings.map((f) => `${f.slug}:${f.code}`), ["bad:schema"]);
+    }
+  });
+
+  it("is accepted by the published catalog schema as a top-level list", async () => {
+    const validate = new Ajv2020({ allErrors: true }).compile(
+      JSON.parse(await readFile(join(import.meta.dirname, "../schema/catalog.schema.json"), "utf8")),
+    );
+    const catalog = JSON.parse(await readFile(join(import.meta.dirname, "../generated/catalog.json"), "utf8"));
+    const banned = { slug: "bad", name: "Bad", repository: "https://github.com/acme/bad", category: "c", reason: "No." };
+    assert.ok(validate({ ...catalog, banned: [banned] }), JSON.stringify(validate.errors));
+    assert.ok(!validate({ ...catalog, banned: [{ ...banned, reason: "" }] }));
+  });
+});

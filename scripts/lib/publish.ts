@@ -1,7 +1,7 @@
 import { mkdir, readdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import type { Catalog } from "./catalog.ts";
 import { type EventHistory, EVENTS_PATH, eventsJson, nextEventLog, PENDING_GRACE_DAYS, readEventLog } from "./event-log.ts";
+import type { ListedCatalog } from "./listed.ts";
 import { CATALOG_DIR, renderCatalog, spliceReadme } from "./render.ts";
 import { statsOf } from "./stats.ts";
 import type { EnrichedTool, ListedProduct, OwnerFacts } from "./types.ts";
@@ -71,7 +71,7 @@ async function removeStalePages(root: string, kept: ReadonlySet<string>): Promis
 
 export async function publish(
   root: string,
-  catalog: Catalog,
+  catalog: ListedCatalog,
   { checkedAt, owners, tools }: Snapshot,
   { now = new Date(), history = null }: Partial<PublishContext> = {},
 ): Promise<void> {
@@ -94,7 +94,7 @@ export async function publish(
   const readme = spliceReadme(await readFile(join(root, "README.md"), "utf8"), index);
 
   await writeTogether(root, [
-    [CATALOG_PATH, catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, categories })],
+    [CATALOG_PATH, catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, banned: catalog.banned, categories })],
     [EVENTS_PATH, eventsJson(events)],
     ["README.md", readme],
     ...pages,
@@ -104,7 +104,7 @@ export async function publish(
 
 export async function publishOrExplain(
   root: string,
-  catalog: Catalog,
+  catalog: ListedCatalog,
   snapshot: Snapshot,
   context?: PublishContext,
 ): Promise<boolean> {

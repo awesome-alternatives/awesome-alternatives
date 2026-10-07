@@ -1,6 +1,6 @@
 import { writeFile } from "node:fs/promises";
 import { installationsFromEnv } from "./lib/app.ts";
-import { loadSoundCatalog } from "./lib/catalog.ts";
+import { loadListedCatalog } from "./lib/catalog.ts";
 import { gitEventHistory } from "./lib/event-history.ts";
 import { loadWindows, RECORD_FAILED_EXIT_CODE, recordFacts } from "./lib/facts-db.ts";
 import { createGitHub } from "./lib/github.ts";
@@ -15,7 +15,7 @@ import { runRows } from "./lib/tool-facts.ts";
 
 const started = performance.now();
 const root = process.cwd();
-const catalog = await loadSoundCatalog(root);
+const catalog = await loadListedCatalog(root);
 
 const clients = {
   gh: createGitHub(process.env.GITHUB_TOKEN),
