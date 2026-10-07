@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.129.0] - 2026-10-07
+
+### Features
+
+- feat(catalog): let an entry be banned with a reason (#398)
+
 ## [0.128.2] - 2026-10-07
 
 ### Bug Fixes
