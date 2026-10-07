@@ -5,3 +5,6 @@ replaces:
   - tool: weights-and-biases
     fit: partial
     note: Logs and compares training runs in a local UI, without hosted collaboration.
+  - tool: comet
+    fit: full
+    note: Tracks and compares runs with a UI for parameters and metrics.

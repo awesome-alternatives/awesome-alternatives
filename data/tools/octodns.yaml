@@ -5,3 +5,6 @@ replaces:
   - tool: dnscontrol
     fit: full
     note: DNS records as YAML synced to many providers, written in Python.
+  - tool: amazon-route-53
+    fit: partial
+    note: Keeps DNS records in files and syncs them to Route 53 and other providers; no DNS hosting of its own.

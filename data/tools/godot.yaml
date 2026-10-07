@@ -5,3 +5,9 @@ replaces:
   - tool: unity
     fit: full
     note: "2D and 3D engine with its own editor, scripted in GDScript or C#, exporting to desktop, mobile and the web."
+  - tool: construct
+    fit: partial
+    note: 2D and 3D engine with a node editor and GDScript; no event sheets.
+  - tool: gamemaker
+    fit: partial
+    note: 2D and 3D engine with its own GDScript language and an editor.

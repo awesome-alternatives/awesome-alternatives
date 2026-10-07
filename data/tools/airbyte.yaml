@@ -6,3 +6,6 @@ replaces:
   - tool: fivetran
     fit: full
     note: Hundreds of connectors syncing sources into warehouses, and a builder for new ones.
+  - tool: informatica
+    fit: partial
+    note: Moves data from many sources into warehouses and lakes; no data quality or governance modules.

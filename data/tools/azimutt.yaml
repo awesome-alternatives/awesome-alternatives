@@ -1,0 +1,7 @@
+name: Azimutt
+repository: https://github.com/azimuttapp/azimutt
+category: diagramming
+replaces:
+  - tool: dbdiagram
+    fit: full
+    note: Entity relationship diagrams from a live schema or its own text format, with layouts and documentation.

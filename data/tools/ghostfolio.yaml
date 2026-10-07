@@ -5,4 +5,7 @@ replaces:
   - tool: monarch-money
     fit: partial
     note: Investments and net worth from recorded or imported activities, without bank sync or budgets.
+  - tool: empower
+    fit: partial
+    note: Tracks portfolio performance and allocation; no bank account aggregation.
 deploy: [container, compose]

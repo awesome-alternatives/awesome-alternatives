@@ -5,5 +5,8 @@ replaces:
   - tool: kafka
     fit: drop-in
     note: Kafka API compatible, without ZooKeeper or a JVM.
+  - tool: confluent-cloud
+    fit: full
+    note: Kafka API compatible broker with a built-in schema registry; connectors come through Redpanda Connect.
 terms: source-available
 deploy: [container, compose, helm, package]

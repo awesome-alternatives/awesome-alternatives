@@ -8,4 +8,10 @@ replaces:
   - tool: canva
     fit: partial
     note: Free-form design on a canvas with components and export to PNG, SVG and PDF, without Canva's template and stock media library or video editing.
+  - tool: axure
+    fit: partial
+    note: Clickable prototypes with flows and animations on a design canvas; no conditional logic.
+  - tool: balsamiq
+    fit: partial
+    note: Designs and prototypes interfaces on a shared canvas; wireframes use plain shapes, with no sketch style.
 deploy: [container, compose, helm]

@@ -1,0 +1,7 @@
+name: BitCart
+repository: https://github.com/bitcart/bitcart
+category: payments
+replaces:
+  - tool: bitpay
+    fit: full
+    note: Self-hosted crypto payment processor with invoices, stores and wallets for Bitcoin and other coins.

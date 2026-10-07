@@ -6,3 +6,6 @@ replaces:
   - tool: adobe-media-encoder
     fit: partial
     note: Transcodes video with presets to H.264, H.265, AV1 and VP9, without Premiere or After Effects integration.
+  - tool: cloudconvert
+    fit: partial
+    note: Video transcoding only, from a desktop app or the command line.

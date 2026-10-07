@@ -8,4 +8,7 @@ replaces:
   - tool: comet
     fit: full
     note: A tracking server for runs, metrics and artefacts, with a model registry.
+  - tool: databricks
+    fit: partial
+    note: Experiment tracking, model registry and serving; no notebooks or SQL warehouses.
 deploy: [container]

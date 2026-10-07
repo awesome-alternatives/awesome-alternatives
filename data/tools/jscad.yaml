@@ -1,0 +1,7 @@
+name: JSCAD
+repository: https://github.com/jscad/OpenJSCAD.org
+category: cad
+replaces:
+  - tool: fusion-360
+    fit: partial
+    note: Parametric solid models written as JavaScript, in the browser or on the command line; no CAM or assemblies.

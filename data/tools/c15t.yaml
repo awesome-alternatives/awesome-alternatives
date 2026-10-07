@@ -1,0 +1,7 @@
+name: c15t
+repository: https://github.com/c15t/c15t
+category: consent-management
+replaces:
+  - tool: cookiebot
+    fit: partial
+    note: Consent banner and preference manager with script blocking, shipped as a JavaScript library; no automatic cookie scanner.

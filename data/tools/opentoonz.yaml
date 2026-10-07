@@ -6,3 +6,6 @@ replaces:
   - tool: toon-boom-harmony
     fit: full
     note: Production 2D animation with scanning, ink and paint, a node-based effects schematic and bone rigging.
+  - tool: adobe-animate
+    fit: partial
+    note: Frame by frame 2D animation with vector and raster drawing tools; no HTML5 Canvas export.

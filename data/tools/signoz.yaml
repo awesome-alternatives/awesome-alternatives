@@ -9,4 +9,7 @@ replaces:
   - tool: new-relic
     fit: full
     note: APM, logs and dashboards from OpenTelemetry data, on your own servers.
+  - tool: honeycomb
+    fit: full
+    note: Traces, logs and metrics on OpenTelemetry data with a query builder and dashboards.
 deploy: [container, compose, helm]

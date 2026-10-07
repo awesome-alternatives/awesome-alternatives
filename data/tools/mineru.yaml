@@ -6,3 +6,6 @@ replaces:
   - tool: llamaparse
     fit: full
     note: Converts PDFs to Markdown and JSON, keeping formulas and tables.
+  - tool: amazon-textract
+    fit: partial
+    note: Parses PDFs and scans into Markdown or JSON with OCR, tables and formulas; no form key-value API.

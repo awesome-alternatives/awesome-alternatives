@@ -5,4 +5,7 @@ replaces:
   - tool: databricks
     fit: partial
     note: The engine Databricks is built on, without its notebooks, catalog or managed clusters.
+  - tool: google-cloud-dataflow
+    fit: partial
+    note: Runs Apache Beam pipelines through its Spark runner, or Spark jobs, on a cluster you operate.
 deploy: [container]

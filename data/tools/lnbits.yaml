@@ -1,0 +1,7 @@
+name: LNbits
+repository: https://github.com/lnbits/lnbits
+category: payments
+replaces:
+  - tool: bitpay
+    fit: partial
+    note: Lightning wallets with an invoice API and payment extensions; Lightning only.

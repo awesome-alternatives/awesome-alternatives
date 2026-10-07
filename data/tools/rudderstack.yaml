@@ -6,4 +6,10 @@ replaces:
   - tool: segment
     fit: full
     note: Event collection compatible with the Segment API, routed to tool and warehouse destinations.
+  - tool: census
+    fit: partial
+    note: Warehouse-first pipelines that can send warehouse tables to destinations; reverse ETL is one feature among event collection.
+  - tool: hightouch
+    fit: partial
+    note: Warehouse-first pipelines that can send warehouse tables to destinations; reverse ETL is one feature among event collection.
 deploy: [container, compose, helm]

@@ -1,0 +1,7 @@
+name: picfit
+repository: https://github.com/thoas/picfit
+category: image-proxy
+replaces:
+  - tool: imgix
+    fit: partial
+    note: Resizes and crops images from URL parameters, with storage backends and caching; fewer transformations.

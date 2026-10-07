@@ -1,0 +1,7 @@
+name: VS Code Hex Editor
+repository: https://github.com/microsoft/vscode-hexeditor
+category: hex-editor
+replaces:
+  - tool: 010-editor
+    fit: partial
+    note: Hex editor inside VS Code with a data inspector and search; no templates.

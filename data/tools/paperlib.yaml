@@ -1,0 +1,7 @@
+name: Paperlib
+repository: https://github.com/Future-Scholars/paperlib
+category: reference-manager
+replaces:
+  - tool: endnote
+    fit: partial
+    note: Paper library with metadata lookup, a quick-copy reference plugin and an MS Word plugin; fewer citation styles.

@@ -5,3 +5,6 @@ replaces:
   - tool: sibelius
     fit: partial
     note: Scores are written as LilyPond text with a live engraved preview, not edited graphically.
+  - tool: guitar-pro
+    fit: partial
+    note: Text editor for LilyPond scores, which can engrave tablature; scores are written as code instead of edited visually.

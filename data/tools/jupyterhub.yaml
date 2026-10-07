@@ -1,0 +1,7 @@
+name: JupyterHub
+repository: https://github.com/jupyterhub/jupyterhub
+category: data-notebook
+replaces:
+  - tool: google-colab
+    fit: partial
+    note: Serves Jupyter notebooks to many users from your own servers, with GPUs if you attach them; no Google Drive storage.

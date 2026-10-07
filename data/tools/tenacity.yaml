@@ -1,0 +1,8 @@
+name: Tenacity
+repository: https://github.com/tenacityteam/tenacity
+category: music-production
+terms: open
+replaces:
+  - tool: adobe-audition
+    fit: partial
+    note: Audacity fork for recording and editing audio with effects and a spectrogram view; no spectral repair tools.

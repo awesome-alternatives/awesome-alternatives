@@ -5,4 +5,7 @@ replaces:
   - tool: zipkin
     fit: full
     note: Accepts Zipkin-format spans alongside OpenTelemetry.
+  - tool: honeycomb
+    fit: partial
+    note: Distributed tracing with search and a trace UI; no wide event analysis.
 deploy: [container, compose, helm, binary]

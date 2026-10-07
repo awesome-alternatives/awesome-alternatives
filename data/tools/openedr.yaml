@@ -1,0 +1,8 @@
+name: OpenEDR
+repository: https://github.com/ComodoSecurity/openedr
+category: endpoint-detection
+terms: source-available
+replaces:
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Endpoint agent for Windows that records and analyses host activity; no managed threat hunting.

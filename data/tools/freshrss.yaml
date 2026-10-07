@@ -5,4 +5,7 @@ replaces:
   - tool: feedly
     fit: full
     note: A self-hosted feed reader with OPML import and the Google Reader and Fever APIs for mobile apps.
+  - tool: inoreader
+    fit: full
+    note: Self-hosted feed reader with filters, search and a mobile API; no newsletter inbox.
 deploy: [container]

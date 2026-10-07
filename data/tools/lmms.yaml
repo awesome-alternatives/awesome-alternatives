@@ -5,3 +5,6 @@ replaces:
   - tool: fl-studio
     fit: partial
     note: Pattern-based beat making with a piano roll, built-in synthesizers and VST support; no audio recording on tracks.
+  - tool: ableton-live
+    fit: partial
+    note: Pattern based beat making with a piano roll, built-in synthesizers and VST support; no clip launching view.

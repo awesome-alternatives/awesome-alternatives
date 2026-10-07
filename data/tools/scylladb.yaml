@@ -13,5 +13,8 @@ replaces:
     fit: partial
     note: The Alternator API serves DynamoDB requests, without transactions, PartiQL or the on-demand backup calls.
     migration: https://migrator.docs.scylladb.com/stable/migrate-from-dynamodb.html
+  - tool: astra-db
+    fit: full
+    note: Cassandra compatible database queried with CQL on your own cluster; no JSON Data API.
 terms: source-available
 deploy: [container, helm, package]

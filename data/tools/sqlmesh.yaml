@@ -5,3 +5,6 @@ replaces:
   - tool: dbt
     fit: partial
     note: Reads dbt projects, plans changes before applying them and builds virtual environments of the warehouse.
+  - tool: dbt-cloud
+    fit: full
+    note: Runs SQL model projects with environments and a built-in scheduler, and can run existing dbt projects.

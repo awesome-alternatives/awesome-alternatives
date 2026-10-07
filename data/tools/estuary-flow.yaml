@@ -6,3 +6,9 @@ replaces:
   - tool: fivetran
     fit: partial
     note: Real-time CDC and batch connectors into warehouses and other destinations.
+  - tool: census
+    fit: partial
+    note: Streams collections into materialization destinations; fewer SaaS destinations than a reverse ETL specialist.
+  - tool: hightouch
+    fit: partial
+    note: Streams collections into materialization destinations; fewer SaaS destinations than a reverse ETL specialist.

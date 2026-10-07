@@ -1,0 +1,7 @@
+name: VibeSDK
+repository: https://github.com/cloudflare/vibesdk
+category: ai-app-builder
+replaces:
+  - tool: bolt-new
+    fit: full
+    note: Generates a web app from a prompt with a live preview and deploys it, running on your own Cloudflare account.

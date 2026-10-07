@@ -5,3 +5,6 @@ replaces:
   - tool: hex
     fit: partial
     note: Reactive Python notebooks stored as plain .py files, with SQL cells and notebooks served as apps.
+  - tool: google-colab
+    fit: partial
+    note: Python notebooks in the browser or locally; no hosted GPUs.

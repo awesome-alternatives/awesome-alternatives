@@ -8,4 +8,7 @@ replaces:
   - tool: collibra
     fit: partial
     note: Glossary, ownership, classification and policies; lighter governance workflows.
+  - tool: atlan
+    fit: full
+    note: Data catalog with lineage, glossary and governance workflows, with connectors for common warehouses.
 deploy: [container, helm, compose]

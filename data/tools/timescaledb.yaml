@@ -6,4 +6,7 @@ replaces:
   - tool: influxdb
     fit: full
     note: Time series as a PostgreSQL extension, queried with plain SQL.
+  - tool: amazon-timestream
+    fit: full
+    note: Time series on PostgreSQL with SQL, compression and continuous aggregates.
 deploy: [container, package]

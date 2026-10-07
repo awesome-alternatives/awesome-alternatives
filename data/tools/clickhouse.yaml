@@ -8,4 +8,7 @@ replaces:
   - tool: bigquery
     fit: full
     note: Columnar SQL analytics at scale.
+  - tool: amazon-redshift
+    fit: full
+    note: Columnar warehouse for analytical SQL at scale, with its own SQL dialect instead of PostgreSQL.
 deploy: [container, package]

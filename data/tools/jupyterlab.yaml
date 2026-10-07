@@ -5,3 +5,6 @@ replaces:
   - tool: google-colab
     fit: partial
     note: Notebooks on your own machine or server; no free hosted GPUs.
+  - tool: hex
+    fit: partial
+    note: Notebooks with SQL and Python through extensions; no built-in app publishing or shared workspace.

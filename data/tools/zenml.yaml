@@ -5,4 +5,7 @@ replaces:
   - tool: amazon-sagemaker
     fit: partial
     note: Portable pipelines that run on your own orchestrators and clouds, with a model registry.
+  - tool: google-vertex-ai
+    fit: partial
+    note: Pipeline framework that runs on Kubernetes and cloud orchestrators; model serving is up to you.
 deploy: [container, helm]

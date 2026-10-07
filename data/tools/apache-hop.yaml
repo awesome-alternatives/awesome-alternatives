@@ -5,4 +5,7 @@ replaces:
   - tool: talend
     fit: partial
     note: Visual designer for ETL pipelines and workflows, run locally, on a server or on Spark, Flink and Dataflow.
+  - tool: informatica
+    fit: full
+    note: Visual pipelines and workflows for moving and transforming data, run on your own servers.
 deploy: [container]

@@ -5,3 +5,6 @@ replaces:
   - tool: lucidchart
     fit: partial
     note: Entity relationship diagrams in the browser, with SQL import and export.
+  - tool: dbdiagram
+    fit: full
+    note: Draws entity relationship diagrams in the browser and exports SQL.

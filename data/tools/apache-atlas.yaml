@@ -5,3 +5,9 @@ replaces:
   - tool: collibra
     fit: partial
     note: Metadata, classification and lineage, centred on the Hadoop ecosystem.
+  - tool: alation
+    fit: partial
+    note: Metadata catalog with classification, glossary and lineage, centred on Hadoop ecosystem sources.
+  - tool: atlan
+    fit: partial
+    note: Metadata catalog with classification, glossary and lineage, centred on Hadoop ecosystem sources.

@@ -5,4 +5,7 @@ replaces:
   - tool: amazon-managed-flink
     fit: full
     note: The same Apache Flink, run on your own cluster or on Kubernetes.
+  - tool: google-cloud-dataflow
+    fit: partial
+    note: Runs Apache Beam pipelines through its runner, or its own APIs, on a cluster you operate.
 deploy: [container]

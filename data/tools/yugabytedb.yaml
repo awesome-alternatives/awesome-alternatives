@@ -6,4 +6,13 @@ replaces:
   - tool: cockroachdb
     fit: full
     note: "Distributed SQL that reuses PostgreSQL's own query layer."
+  - tool: amazon-keyspaces
+    fit: partial
+    note: Distributed SQL database whose YCQL API covers a subset of CQL next to its PostgreSQL compatible API.
+  - tool: astra-db
+    fit: partial
+    note: Distributed SQL database whose YCQL API covers a subset of CQL; no JSON Data API.
+  - tool: google-cloud-spanner
+    fit: partial
+    note: Distributed SQL with PostgreSQL compatibility and synchronous replication across zones; no TrueTime.
 deploy: [container, compose, helm]

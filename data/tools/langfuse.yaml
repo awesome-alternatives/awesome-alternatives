@@ -9,4 +9,7 @@ replaces:
   - tool: weave
     fit: full
     note: Tracing and evaluations of LLM calls, with SDKs for Python and JavaScript.
+  - tool: braintrust
+    fit: partial
+    note: Traces, prompt management and evaluation datasets for LLM apps, self-hosted.
 deploy: [container, compose, helm]

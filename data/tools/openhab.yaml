@@ -9,3 +9,6 @@ replaces:
   - tool: home-assistant
     fit: full
     note: Runs on the JVM, with rules in several languages.
+  - tool: homey
+    fit: full
+    note: Rules and bindings for devices across many protocols, with a web UI.

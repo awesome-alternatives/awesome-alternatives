@@ -1,0 +1,14 @@
+name: Ardour
+repository: https://github.com/Ardour/ardour
+category: music-production
+terms: open
+replaces:
+  - tool: ableton-live
+    fit: partial
+    note: Records, edits and mixes audio and MIDI on a timeline, with a cue page for launching clips.
+  - tool: adobe-audition
+    fit: partial
+    note: Multitrack recording, editing and mixing of audio; no spectral frequency editor.
+  - tool: fl-studio
+    fit: partial
+    note: Records and arranges audio and MIDI on a timeline with plugin support; no pattern sequencer.

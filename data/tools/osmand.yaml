@@ -5,4 +5,7 @@ replaces:
   - tool: google-maps
     fit: partial
     note: Offline maps and turn-by-turn navigation from OpenStreetMap data on Android and iOS; no live traffic or Street View.
+  - tool: alltrails
+    fit: partial
+    note: Offline maps with hiking trails, GPX recording and route planning; no community trail reviews.
 terms: open

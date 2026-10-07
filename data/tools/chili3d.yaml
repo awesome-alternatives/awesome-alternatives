@@ -5,3 +5,6 @@ replaces:
   - tool: onshape
     fit: partial
     note: 3D CAD that runs in the browser on your machine with OpenCascade, without cloud documents or collaboration.
+  - tool: fusion-360
+    fit: partial
+    note: Parametric modelling in the browser or as a desktop app; no CAM or simulation.

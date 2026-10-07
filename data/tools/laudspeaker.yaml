@@ -6,3 +6,6 @@ replaces:
   - tool: knock
     fit: partial
     note: Customer journeys across email, SMS, push and in-app messages, built in a visual editor.
+  - tool: courier
+    fit: partial
+    note: Journey builder that sends email, SMS and push messages from templates; aimed at lifecycle campaigns.

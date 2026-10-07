@@ -5,4 +5,7 @@ replaces:
   - tool: neo4j
     fit: partial
     note: Multi-model database that answers Cypher, Gremlin and SQL queries, with a plugin for Neo4j's Bolt protocol.
+  - tool: azure-cosmos-db-gremlin
+    fit: partial
+    note: Multi-model database that also answers Gremlin queries, next to SQL and Cypher.
 deploy: [container]

@@ -5,3 +5,6 @@ replaces:
   - tool: musicbee
     fit: full
     note: Library player with tag editing, smart playlists and scrobbling, on Linux, macOS and Windows.
+  - tool: foobar2000
+    fit: full
+    note: Music player and library manager with tag editing and playlists; no component system.
