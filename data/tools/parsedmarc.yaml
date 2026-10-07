@@ -1,3 +1,7 @@
 name: parsedmarc
 repository: https://github.com/domainaware/parsedmarc
 category: dmarc-reporting
+replaces:
+  - tool: dmarcian
+    fit: partial
+    note: "Parses aggregate and forensic DMARC reports into JSON or Elasticsearch, with no hosted dashboards."

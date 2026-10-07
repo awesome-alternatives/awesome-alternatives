@@ -3,3 +3,7 @@ repository: https://github.com/MaterializeInc/materialize
 category: stream-processing
 terms: source-available
 deploy: [container]
+replaces:
+  - tool: ksqldb
+    fit: partial
+    note: "Streaming SQL with incrementally maintained views, over the Postgres wire protocol; source-available."

@@ -1,0 +1,5 @@
+name: PlanetScale
+homepage: https://planetscale.com
+vendor: PlanetScale
+category: relational-database
+description: "A managed database platform for MySQL and Postgres, with MySQL sharding built on Vitess."

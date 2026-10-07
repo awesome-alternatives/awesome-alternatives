@@ -2,3 +2,7 @@ name: Hakyll
 repository: https://github.com/jaspervdj/hakyll
 category: static-site-generator
 terms: open
+replaces:
+  - tool: jekyll
+    fit: partial
+    note: "A Haskell library where the site is a program you compile, rather than a configured generator."

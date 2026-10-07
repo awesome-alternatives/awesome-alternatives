@@ -1,3 +1,7 @@
 name: Ralph
 repository: https://github.com/allegro/ralph
 category: infrastructure-inventory
+replaces:
+  - tool: servicenow
+    fit: partial
+    note: "Asset and CMDB for data center and back office hardware, without ticketing or workflows."

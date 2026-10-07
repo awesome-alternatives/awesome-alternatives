@@ -2,3 +2,7 @@ name: crane
 repository: https://github.com/google/go-containerregistry
 path: cmd/crane
 category: container-image-tools
+replaces:
+  - tool: skopeo
+    fit: full
+    note: "Copies, inspects and lists images and tags in registries from a single static binary."

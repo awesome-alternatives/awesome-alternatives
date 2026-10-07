@@ -1,3 +1,7 @@
 name: NvChad
 repository: https://github.com/NvChad/NvChad
 category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: "A Neovim setup with LSP, a file tree and a theme switcher; terminal-based, with fewer extensions."

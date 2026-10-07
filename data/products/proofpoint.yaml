@@ -1,0 +1,5 @@
+name: Proofpoint
+homepage: https://www.proofpoint.com
+vendor: Proofpoint
+category: mail-server
+description: "Hosted email security and filtering that screens inbound mail for spam, phishing and malware."

@@ -3,3 +3,7 @@ repository: https://github.com/hazelcast/hazelcast
 category: stream-processing
 terms: open-core
 deploy: [container]
+replaces:
+  - tool: amazon-managed-flink
+    fit: partial
+    note: "Stream processing next to an in-memory data store, run on your own cluster."

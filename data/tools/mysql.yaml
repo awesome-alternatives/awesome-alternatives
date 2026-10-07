@@ -2,3 +2,10 @@ name: MySQL
 repository: https://github.com/mysql/mysql-server
 category: relational-database
 terms: open
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: "The same MySQL engine that RDS runs, on your own servers without managed backups or failover."
+  - tool: microsoft-sql-server
+    fit: partial
+    note: "A widely used SQL database with replication, though it does not run T-SQL."

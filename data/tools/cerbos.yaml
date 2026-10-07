@@ -1,3 +1,10 @@
 name: Cerbos
 repository: https://github.com/cerbos/cerbos
 category: authorization-service
+replaces:
+  - tool: aws-verified-permissions
+    fit: partial
+    note: Policy-based RBAC and ABAC written in YAML and evaluated by a service you run; open core.
+  - tool: oso-cloud
+    fit: partial
+    note: Declarative authorization policies evaluated by your own service instead of a hosted one.

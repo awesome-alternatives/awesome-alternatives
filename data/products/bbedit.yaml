@@ -1,0 +1,5 @@
+name: BBEdit
+homepage: https://www.barebones.com/products/bbedit/
+vendor: Bare Bones Software
+category: text-editor
+description: "Bare Bones Software's text editor for macOS, with syntax coloring, grep search and scripting."

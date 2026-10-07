@@ -1,3 +1,7 @@
 name: Open Policy Agent
 repository: https://github.com/open-policy-agent/opa
 category: authorization-service
+replaces:
+  - tool: aws-verified-permissions
+    fit: partial
+    note: "General-purpose policy engine with the Rego language, not limited to application permissions."

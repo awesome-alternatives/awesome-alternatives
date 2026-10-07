@@ -2,3 +2,7 @@ name: WildDuck
 repository: https://github.com/zone-eu/wildduck
 category: mail-server
 deploy: [container]
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "IMAP, POP3 and SMTP mail with an HTTP API for building webmail; no calendars or documents."

@@ -1,3 +1,7 @@
 name: Overcommit
 repository: https://github.com/sds/overcommit
 category: git-hooks
+replaces:
+  - tool: pre-commit
+    fit: partial
+    note: "A Ruby hook manager configured in YAML, with built-in hooks for common linters."

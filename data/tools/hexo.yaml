@@ -1,3 +1,7 @@
 name: Hexo
 repository: https://github.com/hexojs/hexo
 category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: full
+    note: "A Node.js blog generator that turns Markdown into static pages, with themes and plugins."

@@ -1,3 +1,7 @@
 name: Bambu Studio
 repository: https://github.com/bambulab/BambuStudio
 category: 3d-printing
+replaces:
+  - tool: simplify3d
+    fit: partial
+    note: A slicer based on PrusaSlicer with multi-plate projects and tree supports; tuned for Bambu Lab printers.

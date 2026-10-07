@@ -1,3 +1,7 @@
 name: Typst
 repository: https://github.com/typst/typst
 category: typesetting
+replaces:
+  - tool: overleaf
+    fit: partial
+    note: "A typesetting system with a web editor and live preview, but its own markup instead of LaTeX."

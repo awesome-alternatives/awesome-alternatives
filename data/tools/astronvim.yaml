@@ -1,3 +1,7 @@
 name: AstroNvim
 repository: https://github.com/AstroNvim/AstroNvim
 category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: "A preconfigured Neovim setup with LSP, completion and a file tree; terminal-based, with fewer extensions."

@@ -1,3 +1,10 @@
 name: Topaz
 repository: https://github.com/aserto-dev/topaz
 category: authorization-service
+replaces:
+  - tool: aws-verified-permissions
+    fit: partial
+    note: "Fine-grained authorization combining OPA policies with a Zanzibar-style relationship store, self-hosted."
+  - tool: oso-cloud
+    fit: partial
+    note: Policies and a relationship directory run on your own infrastructure.

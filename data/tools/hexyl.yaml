@@ -1,3 +1,7 @@
 name: hexyl
 repository: https://github.com/sharkdp/hexyl
 category: hex-editor
+replaces:
+  - tool: 010-editor
+    fit: partial
+    note: "A colored hex dump in the terminal; read-only, with no editing or binary templates."

@@ -1,0 +1,5 @@
+name: Oso Cloud
+homepage: https://www.osohq.com
+vendor: Oso
+category: authorization-service
+description: "Oso's hosted authorization service, with policies written in its Polar language."

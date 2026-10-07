@@ -1,3 +1,7 @@
 name: ArchiveWeb.page
 repository: https://github.com/webrecorder/archiveweb.page
 category: web-archiving
+replaces:
+  - tool: pinboard
+    fit: partial
+    note: "Archives pages as WARC files in the browser while you browse, without social bookmarking."

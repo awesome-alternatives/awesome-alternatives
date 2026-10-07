@@ -2,3 +2,7 @@ name: Dovecot
 repository: https://github.com/dovecot/core
 category: mail-server
 terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "IMAP and POP3 mailbox storage with sieve filtering, needing a separate SMTP server and webmail."

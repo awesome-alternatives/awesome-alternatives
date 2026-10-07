@@ -1,3 +1,7 @@
 name: Fluidd
 repository: https://github.com/fluidd-core/fluidd
 category: 3d-printing
+replaces:
+  - tool: octoprint
+    fit: partial
+    note: "A web interface for printers running Klipper, without OctoPrint's plugin ecosystem."

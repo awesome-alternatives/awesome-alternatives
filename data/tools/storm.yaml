@@ -1,3 +1,7 @@
 name: Apache Storm
 repository: https://github.com/apache/storm
 category: stream-processing
+replaces:
+  - tool: google-cloud-dataflow
+    fit: partial
+    note: "Real-time stream topologies on your own cluster, without a unified batch model or managed service."

@@ -1,3 +1,7 @@
 name: SingleFile
 repository: https://github.com/gildas-lormeau/SingleFile
 category: web-archiving
+replaces:
+  - tool: pocket
+    fit: partial
+    note: "Saves a faithful offline copy of a page in one HTML file, without a reading list or sync."

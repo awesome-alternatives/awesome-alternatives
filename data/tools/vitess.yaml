@@ -2,3 +2,10 @@ name: Vitess
 repository: https://github.com/vitessio/vitess
 category: relational-database
 deploy: [container, binary, package]
+replaces:
+  - tool: planetscale
+    fit: partial
+    note: "The MySQL sharding layer PlanetScale is built on, run by you without the managed dashboard or deploy requests."
+  - tool: google-cloud-spanner
+    fit: partial
+    note: "Horizontal scaling for MySQL through sharding, without Spanner's global consistency."

@@ -1,3 +1,7 @@
 name: Session Desktop
 repository: https://github.com/session-foundation/session-desktop
 category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: "Messaging with no phone number required and onion-routed delivery; text, files and group chat, without voice and video parity."

@@ -1,0 +1,5 @@
+name: pfSense
+homepage: https://www.pfsense.org
+vendor: Netgate
+category: firewall
+description: "Netgate's FreeBSD-based firewall and router software, sold as pfSense Plus."

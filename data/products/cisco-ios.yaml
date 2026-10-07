@@ -1,0 +1,5 @@
+name: Cisco IOS
+homepage: https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-xe/index.html
+vendor: Cisco
+category: firewall
+description: "Cisco's network operating system for routers and switches."

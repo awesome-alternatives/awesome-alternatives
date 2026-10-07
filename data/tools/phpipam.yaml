@@ -1,3 +1,7 @@
 name: phpIPAM
 repository: https://github.com/phpipam/phpipam
 category: infrastructure-inventory
+replaces:
+  - tool: infoblox
+    fit: partial
+    note: "IP address management with subnets, VLANs and a scanning agent, without managed DNS and DHCP."

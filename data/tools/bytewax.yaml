@@ -1,3 +1,7 @@
 name: Bytewax
 repository: https://github.com/bytewax/bytewax
 category: stream-processing
+replaces:
+  - tool: google-cloud-dataflow
+    fit: partial
+    note: Python dataflows with stateful stream processing; no managed autoscaling service.

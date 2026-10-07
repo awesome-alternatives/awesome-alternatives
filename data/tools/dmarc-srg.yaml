@@ -1,3 +1,7 @@
 name: DmarcSrg
 repository: https://github.com/liuch/dmarc-srg
 category: dmarc-reporting
+replaces:
+  - tool: dmarcian
+    fit: partial
+    note: "Parses incoming DMARC reports and shows summaries, without sender inventories or guided fixes."

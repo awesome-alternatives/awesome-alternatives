@@ -1,3 +1,10 @@
 name: Barman
 repository: https://github.com/EnterpriseDB/barman
 category: database-backup
+replaces:
+  - tool: pgbackrest
+    fit: full
+    note: "Physical backups, WAL archiving and point-in-time recovery for PostgreSQL."
+  - tool: amazon-rds
+    fit: partial
+    note: "Point-in-time recovery for self-hosted PostgreSQL, like RDS automated backups."

@@ -1,3 +1,10 @@
 name: NetBox
 repository: https://github.com/netbox-community/netbox
 category: infrastructure-inventory
+replaces:
+  - tool: device42
+    fit: partial
+    note: "Source of truth for devices, racks, IP addresses and circuits, without automated discovery."
+  - tool: servicenow
+    fit: partial
+    note: "Network and infrastructure inventory only, without ticketing or workflows."

@@ -2,3 +2,7 @@ name: Part-DB
 repository: https://github.com/Part-DB/Part-DB-server
 category: inventory
 deploy: [container]
+replaces:
+  - tool: sortly
+    fit: partial
+    note: "Inventory for electronic components with storage locations, footprints and datasheets."

@@ -1,3 +1,7 @@
 name: Neon
 repository: https://github.com/neondatabase/neon
 category: relational-database
+replaces:
+  - tool: amazon-rds
+    fit: partial
+    note: Serverless Postgres with branching and scale to zero; self-hosting its storage layer is not turnkey.

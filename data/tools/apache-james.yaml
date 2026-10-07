@@ -2,3 +2,7 @@ name: Apache James
 repository: https://github.com/apache/james-project
 category: mail-server
 deploy: [container]
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "SMTP, IMAP and JMAP mail server for your own domain; no calendar or documents."

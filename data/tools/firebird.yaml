@@ -3,3 +3,7 @@ repository: https://github.com/FirebirdSQL/firebird
 category: relational-database
 terms: open
 deploy: [container, binary]
+replaces:
+  - tool: microsoft-sql-server
+    fit: partial
+    note: "A full SQL database with stored procedures, triggers and an embedded mode; it does not run T-SQL."

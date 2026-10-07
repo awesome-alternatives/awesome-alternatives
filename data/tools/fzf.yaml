@@ -1,3 +1,10 @@
 name: fzf
 repository: https://github.com/junegunn/fzf
 category: fuzzy-finder
+replaces:
+  - tool: peco
+    fit: full
+    note: "Filters any line-based input interactively, with a preview window and key bindings."
+  - tool: skim
+    fit: full
+    note: "Interactive fuzzy finder for lists of files, history and processes, as a single binary."

@@ -2,3 +2,7 @@ name: OpenBoxes
 repository: https://github.com/openboxes/openboxes
 category: inventory
 deploy: [container]
+replaces:
+  - tool: sortly
+    fit: partial
+    note: "Stock levels and movements across locations, aimed at warehouses and medical supplies."

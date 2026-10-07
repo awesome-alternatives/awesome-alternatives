@@ -1,3 +1,7 @@
 name: husky
 repository: https://github.com/typicode/husky
 category: git-hooks
+replaces:
+  - tool: pre-commit
+    fit: partial
+    note: Git hooks managed through npm and package.json; no hook repository or per-language environments.
