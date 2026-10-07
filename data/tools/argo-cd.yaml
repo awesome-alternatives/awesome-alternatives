@@ -1,3 +1,13 @@
 name: Argo CD
 repository: https://github.com/argoproj/argo-cd
 category: gitops
+replaces:
+  - tool: flux
+    fit: full
+    note: Reconciles clusters from git, with a web UI and application-level view.
+  - tool: spinnaker
+    fit: partial
+    note: Continuous delivery to Kubernetes only, driven from git rather than pipelines.
+  - tool: octopus-deploy
+    fit: partial
+    note: Deploys to Kubernetes from git; no support for other targets.

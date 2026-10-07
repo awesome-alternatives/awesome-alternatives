@@ -1,3 +1,7 @@
 name: Invoke
 repository: https://github.com/pyinvoke/invoke
 category: task-runner
+replaces:
+  - tool: just
+    fit: partial
+    note: Tasks written as Python functions and run from the command line.

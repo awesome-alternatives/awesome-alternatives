@@ -1,4 +1,8 @@
 name: Liquibase
 repository: https://github.com/liquibase/liquibase
 category: database-migrations
+replaces:
+  - tool: flyway
+    fit: full
+    note: Versioned changesets applied in order, written in SQL, XML, YAML or JSON.
 terms: source-available

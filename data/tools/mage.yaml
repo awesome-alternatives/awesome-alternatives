@@ -1,3 +1,10 @@
 name: Mage
 repository: https://github.com/magefile/mage
 category: task-runner
+replaces:
+  - tool: just
+    fit: partial
+    note: Tasks written as Go functions instead of a recipe file.
+  - tool: task
+    fit: partial
+    note: Tasks written as Go functions instead of a YAML Taskfile.

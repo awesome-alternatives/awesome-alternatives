@@ -1,0 +1,5 @@
+name: Time Machine
+homepage: https://support.apple.com/en-us/104984
+vendor: Apple
+category: backup
+description: macOS built-in backup that keeps hourly, daily and weekly snapshots of a Mac on an external disk or network volume.

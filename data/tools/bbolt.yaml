@@ -1,3 +1,7 @@
 name: bbolt
 repository: https://github.com/etcd-io/bbolt
 category: embedded-key-value
+replaces:
+  - tool: rocksdb
+    fit: partial
+    note: B+tree key-value store in Go with ACID transactions, suited to read-heavy workloads rather than heavy writes.

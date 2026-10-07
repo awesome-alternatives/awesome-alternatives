@@ -1,3 +1,7 @@
 name: codespell
 repository: https://github.com/codespell-project/codespell
 category: spell-checker
+replaces:
+  - tool: typos
+    fit: full
+    note: Finds source code typos from a list of known misspellings, with interactive fixing.

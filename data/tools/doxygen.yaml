@@ -1,3 +1,7 @@
 name: Doxygen
 repository: https://github.com/doxygen/doxygen
 category: code-documentation
+replaces:
+  - tool: sphinx
+    fit: partial
+    note: "Generates API docs from source comments, mainly for C and C++, without Sphinx's prose-oriented authoring."

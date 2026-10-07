@@ -1,3 +1,13 @@
 name: Kopia
 repository: https://github.com/kopia/kopia
 category: backup
+replaces:
+  - tool: restic
+    fit: full
+    note: Deduplicated, encrypted snapshots with a CLI and a web UI, to local disks or cloud storage.
+  - tool: borg
+    fit: full
+    note: Deduplicated, encrypted snapshots with a CLI and a web UI, to local disks or cloud storage.
+  - tool: crashplan
+    fit: partial
+    note: Backs up computers to storage you provide, without a managed cloud or central console.

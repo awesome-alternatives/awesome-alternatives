@@ -1,3 +1,7 @@
 name: tox
 repository: https://github.com/tox-dev/tox
 category: task-runner
+replaces:
+  - tool: nox
+    fit: partial
+    note: Test environments defined in an ini or TOML file instead of Python code.

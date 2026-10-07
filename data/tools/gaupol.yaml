@@ -1,3 +1,10 @@
 name: Gaupol
 repository: https://github.com/otsaloma/gaupol
 category: subtitle-editor
+replaces:
+  - tool: aegisub
+    fit: partial
+    note: Editor for text-based subtitle formats on Linux, without ASS typesetting.
+  - tool: subtitle-edit
+    fit: partial
+    note: Editor for text-based subtitle formats on Linux, without OCR or automatic translation.

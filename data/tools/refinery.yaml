@@ -1,3 +1,7 @@
 name: Refinery
 repository: https://github.com/rust-db/refinery
 category: database-migrations
+replaces:
+  - tool: flyway
+    fit: partial
+    note: Versioned SQL or Rust migrations run from a Rust library or CLI.

@@ -1,3 +1,7 @@
 name: werf
 repository: https://github.com/werf/werf
 category: gitops
+replaces:
+  - tool: argo-cd
+    fit: partial
+    note: Builds images and deploys Helm charts to Kubernetes from CI, with deploy tracking; not a continuously reconciling controller.

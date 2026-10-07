@@ -1,4 +1,8 @@
 name: Aegisub
 repository: https://github.com/TypesettingTools/Aegisub
 category: subtitle-editor
+replaces:
+  - tool: subtitle-edit
+    fit: partial
+    note: Timing and typesetting of ASS subtitles with audio and video preview.
 terms: open

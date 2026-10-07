@@ -1,3 +1,7 @@
 name: bombardier
 repository: https://github.com/codesenberg/bombardier
 category: load-testing
+replaces:
+  - tool: vegeta
+    fit: partial
+    note: HTTP benchmarking from a single Go binary with a fixed request rate or connection count.

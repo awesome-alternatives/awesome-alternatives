@@ -1,3 +1,7 @@
 name: pgroll
 repository: https://github.com/xataio/pgroll
 category: database-migrations
+replaces:
+  - tool: flyway
+    fit: partial
+    note: "PostgreSQL only: applies each migration as a reversible, zero-downtime change with old and new schema versions side by side."

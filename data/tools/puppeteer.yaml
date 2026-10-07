@@ -1,3 +1,7 @@
 name: Puppeteer
 repository: https://github.com/puppeteer/puppeteer
 category: browser-testing
+replaces:
+  - tool: selenium
+    fit: partial
+    note: Controls Chrome and Firefox through the DevTools protocol and WebDriver BiDi, from JavaScript only.

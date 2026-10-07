@@ -1,3 +1,7 @@
 name: SimpleScreenRecorder
 repository: https://github.com/MaartenBaert/ssr
 category: screen-recording
+replaces:
+  - tool: obs-studio
+    fit: partial
+    note: Records the screen or a window on Linux with a simple wizard, without scenes or streaming.

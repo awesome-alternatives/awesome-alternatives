@@ -1,3 +1,10 @@
 name: golangci-lint
 repository: https://github.com/golangci/golangci-lint
 category: go-lint
+replaces:
+  - tool: staticcheck
+    fit: full
+    note: Runs staticcheck together with other linters in one pass.
+  - tool: revive
+    fit: full
+    note: Runs revive together with other linters in one pass.

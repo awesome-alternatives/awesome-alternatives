@@ -1,3 +1,7 @@
 name: Kargo
 repository: https://github.com/akuity/kargo
 category: gitops
+replaces:
+  - tool: spinnaker
+    fit: partial
+    note: Promotes versions across environments for Kubernetes, writing the result back to git.

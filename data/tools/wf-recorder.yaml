@@ -1,3 +1,7 @@
 name: wf-recorder
 repository: https://github.com/ammen99/wf-recorder
 category: screen-recording
+replaces:
+  - tool: obs-studio
+    fit: partial
+    note: Command-line screen recorder for Wayland compositors, without scenes or streaming.

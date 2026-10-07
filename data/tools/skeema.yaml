@@ -1,3 +1,7 @@
 name: Skeema
 repository: https://github.com/skeema/skeema
 category: database-migrations
+replaces:
+  - tool: atlas
+    fit: partial
+    note: Declarative schema management for MySQL and MariaDB only, with schemas kept as CREATE statements.

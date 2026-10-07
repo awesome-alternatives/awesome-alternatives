@@ -1,4 +1,8 @@
 name: pg_duckdb
 repository: https://github.com/duckdb/pg_duckdb
 category: analytical-database
+replaces:
+  - tool: snowflake
+    fit: partial
+    note: "DuckDB's analytical engine inside PostgreSQL, for Parquet and object storage on a single node."
 deploy: [container]

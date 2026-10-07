@@ -1,3 +1,7 @@
 name: cheat
 repository: https://github.com/cheat/cheat
 category: cheatsheet
+replaces:
+  - tool: tldr
+    fit: partial
+    note: Your own cheatsheets in plain files, alongside community ones, rather than a shared page collection.

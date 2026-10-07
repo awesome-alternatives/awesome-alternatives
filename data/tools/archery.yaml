@@ -1,3 +1,7 @@
 name: Archery
 repository: https://github.com/hhyo/Archery
 category: database-migrations
+replaces:
+  - tool: bytebase
+    fit: partial
+    note: Web platform for SQL review and approval before changes run, with query access control; the interface is in Chinese.

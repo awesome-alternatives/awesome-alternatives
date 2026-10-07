@@ -1,3 +1,7 @@
 name: resticprofile
 repository: https://github.com/creativeprojects/resticprofile
 category: backup
+replaces:
+  - tool: borgmatic
+    fit: partial
+    note: Configuration profiles and scheduling for restic instead of borg.

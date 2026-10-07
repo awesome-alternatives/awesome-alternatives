@@ -1,3 +1,7 @@
 name: Task
 repository: https://github.com/go-task/task
 category: task-runner
+replaces:
+  - tool: just
+    fit: full
+    note: Tasks defined in a YAML Taskfile, with file-change checks and dependencies.

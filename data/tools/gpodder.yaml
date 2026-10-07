@@ -1,3 +1,10 @@
 name: gPodder
 repository: https://github.com/gpodder/gpodder
 category: podcast-player
+replaces:
+  - tool: antennapod
+    fit: partial
+    note: Desktop podcast client with subscription sync through a gPodder server; not a mobile app.
+  - tool: spotify
+    fit: partial
+    note: Plays and downloads any podcast from its RSS feed on the desktop.

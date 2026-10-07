@@ -1,3 +1,7 @@
 name: Fortio
 repository: https://github.com/fortio/fortio
 category: load-testing
+replaces:
+  - tool: vegeta
+    fit: partial
+    note: Constant requests-per-second load for HTTP and gRPC with latency histograms, plus a web UI.

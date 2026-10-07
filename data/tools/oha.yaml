@@ -1,3 +1,7 @@
 name: oha
 repository: https://github.com/hatoo/oha
 category: load-testing
+replaces:
+  - tool: vegeta
+    fit: partial
+    note: HTTP load generator with a live terminal dashboard, in Rust.

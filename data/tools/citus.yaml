@@ -1,4 +1,11 @@
 name: Citus
 repository: https://github.com/citusdata/citus
 category: distributed-sql
+replaces:
+  - tool: cockroachdb
+    fit: partial
+    note: Distributes PostgreSQL tables across nodes as an extension, with a coordinator.
+  - tool: yugabytedb
+    fit: partial
+    note: Distributes PostgreSQL tables across nodes as an extension, running on stock PostgreSQL.
 deploy: [container, package]

@@ -1,3 +1,7 @@
 name: Staticcheck
 repository: https://github.com/dominikh/go-tools
 category: go-lint
+replaces:
+  - tool: golangci-lint
+    fit: partial
+    note: One linter focused on bugs and performance, run on its own without aggregating others.

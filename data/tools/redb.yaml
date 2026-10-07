@@ -1,3 +1,10 @@
 name: redb
 repository: https://github.com/cberner/redb
 category: embedded-key-value
+replaces:
+  - tool: bbolt
+    fit: full
+    note: Copy-on-write B-tree key-value store with ACID transactions, in Rust instead of Go.
+  - tool: rocksdb
+    fit: partial
+    note: Embedded key-value store in pure Rust with ACID transactions, without LSM-tree write throughput.

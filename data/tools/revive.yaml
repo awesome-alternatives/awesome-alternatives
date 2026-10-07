@@ -1,3 +1,7 @@
 name: revive
 repository: https://github.com/revive-lint/revive
 category: go-lint
+replaces:
+  - tool: golangci-lint
+    fit: partial
+    note: One configurable linter focused on style, run on its own without aggregating others.

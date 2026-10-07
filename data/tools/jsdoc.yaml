@@ -1,3 +1,7 @@
 name: JSDoc
 repository: https://github.com/jsdoc/jsdoc
 category: code-documentation
+replaces:
+  - tool: typedoc
+    fit: partial
+    note: Documentation from JSDoc comments in JavaScript, without reading TypeScript types.

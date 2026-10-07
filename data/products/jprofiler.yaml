@@ -1,0 +1,5 @@
+name: JProfiler
+homepage: https://www.ej-technologies.com/jprofiler
+vendor: ej-technologies
+category: profiler
+description: Commercial Java profiler with a GUI for CPU, memory and thread analysis of JVM applications.

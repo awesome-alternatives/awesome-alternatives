@@ -1,3 +1,7 @@
 name: Pocket Casts for Android
 repository: https://github.com/Automattic/pocket-casts-android
 category: podcast-player
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Plays any podcast on Android with sync through a Pocket Casts account.

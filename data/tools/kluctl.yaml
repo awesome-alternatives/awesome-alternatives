@@ -1,3 +1,10 @@
 name: Kluctl
 repository: https://github.com/kluctl/kluctl
 category: gitops
+replaces:
+  - tool: argo-cd
+    fit: partial
+    note: Deploys composed Helm and Kustomize projects to Kubernetes from the CLI or a controller.
+  - tool: flux
+    fit: partial
+    note: Deploys composed Helm and Kustomize projects to Kubernetes from the CLI or a controller.

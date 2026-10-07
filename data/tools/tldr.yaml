@@ -1,4 +1,8 @@
 name: tldr-pages
 repository: https://github.com/tldr-pages/tldr
 category: cheatsheet
+replaces:
+  - tool: cheat
+    fit: partial
+    note: Shared, community-maintained command examples instead of your own cheatsheets.
 terms: open

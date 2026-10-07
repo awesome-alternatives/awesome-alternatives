@@ -1,4 +1,11 @@
 name: PinePods
 repository: https://github.com/madeofpendletonwool/PinePods
 category: podcast-server
+replaces:
+  - tool: pocket-casts
+    fit: partial
+    note: Self-hosted podcast server with a web app, multi-user accounts and sync across devices.
+  - tool: spotify
+    fit: partial
+    note: Self-hosted podcast server; no music or exclusive shows.
 deploy: [container, compose, helm]
