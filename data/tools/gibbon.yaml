@@ -1,3 +1,7 @@
 name: Gibbon
 repository: https://github.com/GibbonEdu/core
 category: lms
+replaces:
+  - tool: blackboard
+    fit: partial
+    note: School management with timetables, student records, markbook and planner, with less course content tooling.

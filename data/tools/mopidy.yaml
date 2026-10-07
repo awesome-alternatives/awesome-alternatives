@@ -1,3 +1,7 @@
 name: Mopidy
 repository: https://github.com/mopidy/mopidy
 category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Plays your own library and streaming backends through an extensible server controlled from MPD and web clients.

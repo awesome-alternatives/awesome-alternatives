@@ -1,3 +1,7 @@
 name: Dogtag PKI
 repository: https://github.com/dogtagpki/pki
 category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: partial
+    note: Full CA with OCSP, key recovery and smartcard enrollment, installed and run yourself.

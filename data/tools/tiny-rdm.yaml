@@ -1,3 +1,10 @@
 name: Tiny RDM
 repository: https://github.com/tiny-craft/tiny-rdm
 category: database-client
+replaces:
+  - tool: redisinsight
+    fit: full
+    note: Browse keys, edit values and run commands on Redis servers from a desktop app.
+  - tool: another-redis-desktop-manager
+    fit: full
+    note: Same desktop key browser, written in Go with Wails.

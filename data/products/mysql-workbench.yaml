@@ -1,0 +1,5 @@
+name: MySQL Workbench
+homepage: https://www.mysql.com/products/workbench/
+vendor: Oracle
+category: database-client
+description: Oracle visual tool for designing, querying and administering MySQL databases.

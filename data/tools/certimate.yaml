@@ -1,3 +1,7 @@
 name: Certimate
 repository: https://github.com/certimate-go/certimate
 category: acme-client
+replaces:
+  - tool: certbot
+    fit: partial
+    note: Web UI that issues, renews and deploys ACME certificates to many cloud providers.

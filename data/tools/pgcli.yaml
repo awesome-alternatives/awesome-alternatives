@@ -1,3 +1,7 @@
 name: pgcli
 repository: https://github.com/dbcli/pgcli
 category: database-client
+replaces:
+  - tool: pgadmin
+    fit: partial
+    note: Terminal PostgreSQL client with completion and syntax highlighting, no administration GUI.

@@ -1,3 +1,7 @@
 name: litecli
 repository: https://github.com/dbcli/litecli
 category: database-client
+replaces:
+  - tool: sqlitebrowser
+    fit: partial
+    note: Terminal SQLite client with completion and syntax highlighting, no visual table editor.

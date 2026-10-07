@@ -1,4 +1,8 @@
 name: XCA
 repository: https://github.com/chris2511/xca
 category: certificate-authority
+replaces:
+  - tool: aws-private-ca
+    fit: partial
+    note: Desktop app to create and manage CAs, certificates and revocation lists on one machine.
 terms: open

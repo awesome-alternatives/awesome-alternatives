@@ -1,4 +1,8 @@
 name: Redis Insight
 repository: https://github.com/redis/RedisInsight
 category: database-client
+replaces:
+  - tool: another-redis-desktop-manager
+    fit: full
+    note: Key browser and command console for Redis servers on the desktop.
 terms: source-available

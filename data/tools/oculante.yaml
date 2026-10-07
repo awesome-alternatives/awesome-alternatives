@@ -1,3 +1,7 @@
 name: Oculante
 repository: https://github.com/woelper/oculante
 category: image-viewer
+replaces:
+  - tool: irfanview
+    fit: partial
+    note: Fast image viewer with basic edits for Windows, Linux and macOS.

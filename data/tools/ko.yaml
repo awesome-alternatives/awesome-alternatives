@@ -1,3 +1,7 @@
 name: ko
 repository: https://github.com/ko-build/ko
 category: container-engine
+replaces:
+  - tool: docker
+    fit: partial
+    note: Builds and pushes container images for Go apps without a Dockerfile or a Docker daemon.

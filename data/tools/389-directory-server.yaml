@@ -1,4 +1,8 @@
 name: 389 Directory Server
 repository: https://github.com/389ds/389-ds-base
 category: ldap-directory
+replaces:
+  - tool: active-directory
+    fit: partial
+    note: LDAP directory with multi-supplier replication, without Kerberos domain services or group policy.
 terms: open

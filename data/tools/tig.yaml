@@ -1,3 +1,10 @@
 name: tig
 repository: https://github.com/jonas/tig
 category: git-client
+replaces:
+  - tool: sourcetree
+    fit: partial
+    note: Terminal browser for history, diffs and staging, with no GUI.
+  - tool: gitkraken
+    fit: partial
+    note: Terminal browser for history and diffs, without a graph view or hosted integrations.

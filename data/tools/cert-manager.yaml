@@ -1,3 +1,7 @@
 name: cert-manager
 repository: https://github.com/cert-manager/cert-manager
 category: acme-client
+replaces:
+  - tool: certbot
+    fit: partial
+    note: Issues and renews ACME certificates for Kubernetes ingresses and services only.

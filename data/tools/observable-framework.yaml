@@ -1,3 +1,10 @@
 name: Observable Framework
 repository: https://github.com/observablehq/framework
 category: business-intelligence
+replaces:
+  - tool: tableau
+    fit: partial
+    note: Dashboards written as code and built to a static site, with no drag and drop editor.
+  - tool: power-bi
+    fit: partial
+    note: Dashboards written as code in Markdown and JavaScript, with no visual report builder.

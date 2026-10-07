@@ -1,4 +1,8 @@
 name: Apptainer
 repository: https://github.com/apptainer/apptainer
 category: container-engine
+replaces:
+  - tool: docker
+    fit: partial
+    note: Runs containers without root and without a daemon, built for HPC with single-file SIF images.
 terms: open

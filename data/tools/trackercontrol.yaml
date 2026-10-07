@@ -1,3 +1,10 @@
 name: TrackerControl
 repository: https://github.com/TrackerControl/tracker-control-android
 category: application-firewall
+replaces:
+  - tool: little-snitch
+    fit: partial
+    note: Shows which apps contact trackers on Android and blocks them per app, with no general firewall rules.
+  - tool: nextdns
+    fit: partial
+    note: Blocks tracker hosts per app on one Android device through a local VPN.

@@ -1,3 +1,7 @@
 name: win-acme
 repository: https://github.com/win-acme/win-acme
 category: acme-client
+replaces:
+  - tool: certbot
+    fit: partial
+    note: ACME client for Windows that installs certificates into IIS and the Windows certificate store.

@@ -1,4 +1,8 @@
 name: Cowrie
 repository: https://github.com/cowrie/cowrie
 category: honeypot
+replaces:
+  - tool: thinkst-canary
+    fit: partial
+    note: SSH and Telnet honeypot that logs attacker sessions, without the hosted console or other device types.
 terms: open

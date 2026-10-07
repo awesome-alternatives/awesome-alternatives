@@ -1,4 +1,11 @@
 name: ImageMagick
 repository: https://github.com/ImageMagick/ImageMagick
 category: media-converter
+replaces:
+  - tool: tinypng
+    fit: partial
+    note: Compresses and converts images from the command line or in scripts, with the settings left to you.
+  - tool: cloudconvert
+    fit: partial
+    note: Converts hundreds of image formats locally, with no audio or video.
 terms: open

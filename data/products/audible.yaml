@@ -1,0 +1,5 @@
+name: Audible
+homepage: https://www.audible.com
+vendor: Amazon
+category: media-server
+description: Audiobook store and player with a subscription catalog.

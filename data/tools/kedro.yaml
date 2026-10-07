@@ -1,4 +1,11 @@
 name: Kedro
 repository: https://github.com/kedro-org/kedro
 category: ml-pipelines
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Structures data and ML pipelines as code, without managed training or hosting.
+  - tool: google-vertex-ai
+    fit: partial
+    note: Structures data and ML pipelines as code, without managed training or hosting.
 terms: open

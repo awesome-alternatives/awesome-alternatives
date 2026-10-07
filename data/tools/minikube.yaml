@@ -1,3 +1,10 @@
 name: minikube
 repository: https://github.com/kubernetes/minikube
 category: local-kubernetes
+replaces:
+  - tool: docker-desktop
+    fit: partial
+    note: Single-node local Kubernetes cluster started from the CLI, without the container GUI.
+  - tool: rancher-desktop
+    fit: partial
+    note: Local Kubernetes cluster started from the CLI, without the desktop app.

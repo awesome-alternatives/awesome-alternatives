@@ -1,4 +1,11 @@
 name: Simple Machines Forum
 repository: https://github.com/SimpleMachines/SMF
 category: forum
+replaces:
+  - tool: vbulletin
+    fit: full
+    note: Forum software with boards, topics, permissions and mods.
+  - tool: invision-community
+    fit: partial
+    note: Forum software with mods and themes, without the store or blogs.
 terms: open

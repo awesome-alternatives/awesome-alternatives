@@ -1,3 +1,10 @@
 name: gosec
 repository: https://github.com/securego/gosec
 category: static-analysis
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Scans Go source for security problems only.
+  - tool: sonarcloud
+    fit: partial
+    note: Go security rules from the CLI or CI, with no server or dashboard.

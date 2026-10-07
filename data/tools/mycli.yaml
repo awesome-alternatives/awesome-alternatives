@@ -1,3 +1,7 @@
 name: mycli
 repository: https://github.com/dbcli/mycli
 category: database-client
+replaces:
+  - tool: mysql-workbench
+    fit: partial
+    note: Terminal MySQL client with completion and syntax highlighting, no schema designer or administration screens.

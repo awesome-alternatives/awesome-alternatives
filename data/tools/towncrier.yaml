@@ -1,3 +1,7 @@
 name: towncrier
 repository: https://github.com/twisted/towncrier
 category: changelog
+replaces:
+  - tool: conventional-changelog
+    fit: partial
+    note: Builds the changelog from news fragment files instead of commit messages.

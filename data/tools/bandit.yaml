@@ -1,3 +1,10 @@
 name: Bandit
 repository: https://github.com/PyCQA/bandit
 category: static-analysis
+replaces:
+  - tool: snyk
+    fit: partial
+    note: Finds common security issues in Python code only.
+  - tool: sonarcloud
+    fit: partial
+    note: Python security checks only, run from the CLI or CI.

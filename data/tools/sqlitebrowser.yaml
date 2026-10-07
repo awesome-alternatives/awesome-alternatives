@@ -1,4 +1,8 @@
 name: DB Browser for SQLite
 repository: https://github.com/sqlitebrowser/sqlitebrowser
 category: database-client
+replaces:
+  - tool: navicat
+    fit: partial
+    note: "Visual editor for SQLite files only: tables, indexes, data and queries."
 terms: open

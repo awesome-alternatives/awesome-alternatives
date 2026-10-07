@@ -1,3 +1,7 @@
 name: Spin
 repository: https://github.com/spinframework/spin
 category: serverless-platform
+replaces:
+  - tool: aws-lambda
+    fit: partial
+    note: WebAssembly serverless functions that run locally, on Kubernetes or on Fermyon Cloud, without AWS triggers.

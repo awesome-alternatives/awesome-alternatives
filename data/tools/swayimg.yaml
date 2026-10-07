@@ -1,3 +1,7 @@
 name: swayimg
 repository: https://github.com/artemsen/swayimg
 category: image-viewer
+replaces:
+  - tool: irfanview
+    fit: partial
+    note: Image viewer for Wayland compositors, with a gallery mode and no editing.

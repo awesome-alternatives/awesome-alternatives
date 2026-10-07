@@ -1,3 +1,7 @@
 name: lnav
 repository: https://github.com/tstack/lnav
 category: log-viewer
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Searches, filters and runs SQL over log files on one machine, with no indexing across hosts.

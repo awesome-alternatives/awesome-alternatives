@@ -1,5 +1,9 @@
 name: Lyrion Music Server
 repository: https://github.com/LMS-Community/slimserver
 category: media-server
+replaces:
+  - tool: spotify
+    fit: partial
+    note: Streams your own music library and internet radio to Squeezebox-style players; there is no catalog of music to stream.
 terms: open
 deploy: [container]
