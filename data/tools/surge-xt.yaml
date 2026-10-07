@@ -1,3 +1,7 @@
 name: Surge XT
 repository: https://github.com/surge-synthesizer/surge
 category: music-production
+replaces:
+  - tool: serum
+    fit: full
+    note: Wavetable-based hybrid synthesizer with modulation and effects, as a plug-in or standalone.

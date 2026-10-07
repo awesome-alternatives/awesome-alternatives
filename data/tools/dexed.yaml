@@ -1,3 +1,7 @@
 name: Dexed
 repository: https://github.com/asb2m10/dexed
 category: music-production
+replaces:
+  - tool: fm8
+    fit: partial
+    note: Plays DX7 patches and SysEx banks; FM8 has a wider operator matrix and effects.

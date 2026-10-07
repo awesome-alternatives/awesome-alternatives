@@ -2,3 +2,10 @@ name: copyparty
 repository: https://github.com/9001/copyparty
 category: web-file-manager
 deploy: [container, binary]
+replaces:
+  - tool: wetransfer
+    fit: partial
+    note: Share links and resumable uploads from your own server; no hosted delivery.
+  - tool: dropbox
+    fit: partial
+    note: Portable file server with WebDAV and uploads; no sync client or collaboration.

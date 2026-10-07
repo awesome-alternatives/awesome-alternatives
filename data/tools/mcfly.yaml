@@ -1,3 +1,7 @@
 name: mcfly
 repository: https://github.com/cantino/mcfly
 category: shell-history
+replaces:
+  - tool: atuin
+    fit: partial
+    note: Ctrl-R replacement that ranks history by context; no sync server.

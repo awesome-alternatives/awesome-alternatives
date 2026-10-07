@@ -1,3 +1,7 @@
 name: Giskard
 repository: https://github.com/Giskard-AI/giskard-oss
 category: llm-evaluation
+replaces:
+  - tool: braintrust
+    fit: partial
+    note: Open source testing and scanning of LLM agents, run in your own CI.

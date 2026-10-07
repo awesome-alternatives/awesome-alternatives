@@ -1,3 +1,7 @@
 name: NeoMutt
 repository: https://github.com/neomutt/neomutt
 category: email-client
+replaces:
+  - tool: microsoft-outlook
+    fit: partial
+    note: Terminal mail client with IMAP, threading and PGP; no calendar or contacts.

@@ -2,3 +2,7 @@ name: mpv
 repository: https://github.com/mpv-player/mpv
 category: video-player
 terms: open
+replaces:
+  - tool: potplayer
+    fit: partial
+    note: Minimal player driven by config and keyboard; no bundled GUI settings.

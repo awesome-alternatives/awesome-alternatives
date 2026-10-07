@@ -1,3 +1,7 @@
 name: TastyIgniter
 repository: https://github.com/tastyigniter/TastyIgniter
 category: e-commerce
+replaces:
+  - tool: square-pos
+    fit: partial
+    note: Restaurant online ordering and table reservations; no in-person POS hardware.

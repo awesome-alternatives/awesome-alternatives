@@ -1,3 +1,10 @@
 name: pkgx
 repository: https://github.com/pkgxdev/pkgx
 category: system-package-manager
+replaces:
+  - tool: homebrew
+    fit: partial
+    note: Runs a tool on demand without installing it, from the same author as Homebrew.
+  - tool: asdf
+    fit: partial
+    note: Fetches the tool version a project asks for; no plugin ecosystem.

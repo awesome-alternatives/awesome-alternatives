@@ -1,0 +1,5 @@
+name: AWS Glue Data Catalog
+homepage: https://aws.amazon.com/glue/
+vendor: Amazon
+category: data-catalog
+description: Managed metadata catalog for tables and schemas in AWS analytics services.

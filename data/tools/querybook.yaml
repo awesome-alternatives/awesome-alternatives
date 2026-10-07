@@ -1,3 +1,7 @@
 name: Querybook
 repository: https://github.com/pinterest/querybook
 category: data-notebook
+replaces:
+  - tool: hex
+    fit: partial
+    note: SQL notebooks with table metadata and sharing, self-hosted; no Python cells.

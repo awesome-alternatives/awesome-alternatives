@@ -1,3 +1,10 @@
 name: Inspect
 repository: https://github.com/UKGovernmentBEIS/inspect_ai
 category: llm-evaluation
+replaces:
+  - tool: braintrust
+    fit: partial
+    note: Code-defined evals with scorers and agent tasks, run locally or in CI.
+  - tool: lm-evaluation-harness
+    fit: partial
+    note: Runs benchmark tasks, but is built around custom evals and agents.

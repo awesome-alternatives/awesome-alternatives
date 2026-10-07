@@ -1,3 +1,10 @@
 name: RapiDoc
 repository: https://github.com/rapi-doc/RapiDoc
 category: api-documentation
+replaces:
+  - tool: redoc
+    fit: full
+    note: Renders an OpenAPI spec as a web component with a try-it console.
+  - tool: swagger-ui
+    fit: full
+    note: Renders an OpenAPI spec as a web component with a try-it console.

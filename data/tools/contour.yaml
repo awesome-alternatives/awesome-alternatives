@@ -1,3 +1,7 @@
 name: Contour
 repository: https://github.com/contour-terminal/contour
 category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: partial
+    note: GPU-rendered terminal for Linux, macOS and Windows; no AppleScript or Python API.

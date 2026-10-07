@@ -1,3 +1,7 @@
 name: The Silver Searcher
 repository: https://github.com/ggreer/the_silver_searcher
 category: code-search
+replaces:
+  - tool: ack
+    fit: full
+    note: Same recursive code search with .gitignore handling, noticeably faster.

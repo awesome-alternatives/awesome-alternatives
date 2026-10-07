@@ -2,3 +2,7 @@ name: ossia score
 repository: https://github.com/ossia/score
 category: music-production
 terms: open
+replaces:
+  - tool: qlab
+    fit: partial
+    note: Timeline sequencer that drives audio, video and lighting over OSC and other protocols.

@@ -1,3 +1,7 @@
 name: Bespoke Synth
 repository: https://github.com/BespokeSynth/BespokeSynth
 category: music-production
+replaces:
+  - tool: max-msp
+    fit: partial
+    note: Modular patching of synths and effects in real time; not a general-purpose multimedia environment.

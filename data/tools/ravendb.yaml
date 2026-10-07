@@ -3,3 +3,7 @@ repository: https://github.com/ravendb/ravendb
 category: document-database
 terms: source-available
 deploy: [container]
+replaces:
+  - tool: mongodb
+    fit: partial
+    note: ACID document database with its own query language; not wire compatible.

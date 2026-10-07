@@ -1,3 +1,7 @@
 name: AI Toolkit
 repository: https://github.com/ostris/ai-toolkit
 category: model-fine-tuning
+replaces:
+  - tool: kohya-ss
+    fit: partial
+    note: Trains LoRAs for current diffusion models from a config file, with a web UI.

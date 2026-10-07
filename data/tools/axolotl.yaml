@@ -1,3 +1,10 @@
 name: Axolotl
 repository: https://github.com/axolotl-ai-cloud/axolotl
 category: model-fine-tuning
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Fine-tunes open LLMs from a YAML config on hardware you choose; no managed endpoints.
+  - tool: google-vertex-ai
+    fit: partial
+    note: Covers model tuning only, not hosting or MLOps.

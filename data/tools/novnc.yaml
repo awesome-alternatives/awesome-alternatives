@@ -2,3 +2,7 @@ name: noVNC
 repository: https://github.com/novnc/noVNC
 category: remote-desktop
 terms: open
+replaces:
+  - tool: teamviewer
+    fit: partial
+    note: Browser access to a VNC server you run; no relay service or file transfer.

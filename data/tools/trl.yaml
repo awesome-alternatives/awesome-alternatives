@@ -1,3 +1,7 @@
 name: TRL
 repository: https://github.com/huggingface/trl
 category: model-fine-tuning
+replaces:
+  - tool: google-vertex-ai
+    fit: partial
+    note: Supervised fine-tuning and RLHF-style training as a Python library; no hosting.

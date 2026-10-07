@@ -1,3 +1,7 @@
 name: OneTrainer
 repository: https://github.com/Nerogar/OneTrainer
 category: model-fine-tuning
+replaces:
+  - tool: kohya-ss
+    fit: partial
+    note: GUI and CLI trainer for LoRA and full diffusion fine-tuning with its own config format.

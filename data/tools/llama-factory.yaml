@@ -1,3 +1,10 @@
 name: LLaMA-Factory
 repository: https://github.com/hiyouga/LlamaFactory
 category: model-fine-tuning
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Fine-tunes 100+ open models through a CLI or web UI; no managed hosting.
+  - tool: google-vertex-ai
+    fit: partial
+    note: Covers model tuning only, not hosting or MLOps.

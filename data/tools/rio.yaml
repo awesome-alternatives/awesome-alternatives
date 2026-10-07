@@ -1,3 +1,10 @@
 name: Rio
 repository: https://github.com/raphamorim/rio
 category: terminal-emulator
+replaces:
+  - tool: iterm2
+    fit: partial
+    note: GPU-rendered terminal that also runs in the browser; fewer integrations.
+  - tool: warp
+    fit: partial
+    note: A terminal without accounts or built-in AI.

@@ -1,3 +1,7 @@
 name: Hayabusa
 repository: https://github.com/Yamato-Security/hayabusa
 category: endpoint-detection
+replaces:
+  - tool: splunk
+    fit: partial
+    note: Builds a timeline from Windows event logs with Sigma rules offline; no ingestion or dashboards.

@@ -2,3 +2,7 @@ name: Filestash
 repository: https://github.com/mickael-kerjean/filestash
 category: web-file-manager
 deploy: [container]
+replaces:
+  - tool: dropbox
+    fit: partial
+    note: Web file manager over your own S3, SFTP or WebDAV storage; no desktop sync client.

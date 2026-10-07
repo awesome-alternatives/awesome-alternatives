@@ -1,3 +1,7 @@
 name: aiohttp
 repository: https://github.com/aio-libs/aiohttp
 category: python-http-client
+replaces:
+  - tool: requests
+    fit: partial
+    note: Async HTTP client with WebSocket support, and a server too; the API is not the same.

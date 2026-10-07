@@ -2,3 +2,7 @@ name: XXL-JOB
 repository: https://github.com/xuxueli/xxl-job
 category: workflow-orchestration
 deploy: [container]
+replaces:
+  - tool: quartz
+    fit: partial
+    note: Adds a web console and distributed scheduling for Java jobs.

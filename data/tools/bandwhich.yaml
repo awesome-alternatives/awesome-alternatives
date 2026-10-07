@@ -1,3 +1,7 @@
 name: bandwhich
 repository: https://github.com/imsnif/bandwhich
 category: system-monitor
+replaces:
+  - tool: glasswire
+    fit: partial
+    note: Shows live bandwidth per process and connection in the terminal; no history or firewall.

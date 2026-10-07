@@ -1,3 +1,7 @@
 name: garak
 repository: https://github.com/NVIDIA/garak
 category: llm-evaluation
+replaces:
+  - tool: promptfoo
+    fit: partial
+    note: Probes a model for vulnerabilities such as prompt injection and leakage; it does not run general evals.

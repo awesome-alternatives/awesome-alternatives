@@ -1,3 +1,7 @@
 name: Unsloth
 repository: https://github.com/unslothai/unsloth
 category: model-fine-tuning
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: Fine-tunes and runs open LLMs locally with lower memory use; no managed endpoints.

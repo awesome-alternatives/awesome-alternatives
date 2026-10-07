@@ -1,3 +1,7 @@
 name: Letta
 repository: https://github.com/letta-ai/letta
 category: autonomous-agent
+replaces:
+  - tool: microsoft-copilot-studio
+    fit: partial
+    note: Self-hosted agent runtime with long-term memory and tools; no low-code builder.

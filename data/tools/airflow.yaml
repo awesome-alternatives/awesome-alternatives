@@ -1,3 +1,10 @@
 name: Apache Airflow
 repository: https://github.com/apache/airflow
 category: workflow-orchestration
+replaces:
+  - tool: control-m
+    fit: partial
+    note: Python-defined workflows and schedules; no vendor support contract or mainframe agents.
+  - tool: azure-data-factory
+    fit: partial
+    note: Code-first orchestration you host yourself; no visual copy activities.

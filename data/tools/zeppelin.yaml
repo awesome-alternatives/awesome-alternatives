@@ -1,3 +1,10 @@
 name: Apache Zeppelin
 repository: https://github.com/apache/zeppelin
 category: data-notebook
+replaces:
+  - tool: databricks
+    fit: partial
+    note: Notebook interface for Spark and SQL on your own cluster; no managed runtime.
+  - tool: jupyterlab
+    fit: partial
+    note: Multi-language notebooks with Spark integration; less extension support.

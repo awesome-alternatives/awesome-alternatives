@@ -2,3 +2,10 @@ name: Lakekeeper
 repository: https://github.com/lakekeeper/lakekeeper
 category: data-catalog
 deploy: [container, helm]
+replaces:
+  - tool: unity-catalog
+    fit: partial
+    note: Iceberg REST catalog with access control and credential vending; Iceberg tables only.
+  - tool: aws-glue-data-catalog
+    fit: partial
+    note: Iceberg REST catalog that works across engines instead of tying to AWS services.

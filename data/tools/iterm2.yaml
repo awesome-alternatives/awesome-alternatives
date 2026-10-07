@@ -1,3 +1,7 @@
 name: iTerm2
 repository: https://github.com/gnachman/iTerm2
 category: terminal-emulator
+replaces:
+  - tool: apple-terminal
+    fit: full
+    note: macOS terminal with tabs, splits, profiles and scripting.

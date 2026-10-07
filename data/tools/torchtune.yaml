@@ -1,3 +1,7 @@
 name: torchtune
 repository: https://github.com/meta-pytorch/torchtune
 category: model-fine-tuning
+replaces:
+  - tool: amazon-sagemaker
+    fit: partial
+    note: PyTorch-native post-training recipes for open LLMs; no managed infrastructure.

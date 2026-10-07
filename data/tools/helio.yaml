@@ -1,3 +1,7 @@
 name: Helio
 repository: https://github.com/helio-fm/helio-sequencer
 category: music-production
+replaces:
+  - tool: fl-studio
+    fit: partial
+    note: Pattern and piano roll sequencing on desktop and mobile; it has no mixer or sample editing.

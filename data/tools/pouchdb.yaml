@@ -1,3 +1,7 @@
 name: PouchDB
 repository: https://github.com/apache/pouchdb
 category: document-database
+replaces:
+  - tool: firebase
+    fit: partial
+    note: Offline-first JavaScript database that syncs with CouchDB; no auth or hosting.

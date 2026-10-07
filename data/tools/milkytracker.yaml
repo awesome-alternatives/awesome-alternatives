@@ -2,3 +2,7 @@ name: MilkyTracker
 repository: https://github.com/milkytracker/MilkyTracker
 category: music-production
 terms: open
+replaces:
+  - tool: renoise
+    fit: partial
+    note: Tracker with XM and MOD support; no VST hosting or modern mixer.

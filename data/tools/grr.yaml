@@ -1,3 +1,10 @@
 name: GRR Rapid Response
 repository: https://github.com/google/grr
 category: endpoint-detection
+replaces:
+  - tool: velociraptor
+    fit: full
+    note: Remote live forensics and hunts across fleets of endpoints.
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Live response and artefact collection; no prevention or managed threat hunting.

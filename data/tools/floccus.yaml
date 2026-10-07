@@ -1,3 +1,7 @@
 name: Floccus
 repository: https://github.com/floccusaddon/floccus
 category: read-later
+replaces:
+  - tool: raindrop-io
+    fit: partial
+    note: Syncs browser bookmarks through your own storage; no tags view or page archive.
