@@ -232,7 +232,7 @@ async fn workflow_dispatch(
     };
     if github
         .failing_dispatches
-        .fetch_update(Ordering::SeqCst, Ordering::SeqCst, |left| {
+        .try_update(Ordering::SeqCst, Ordering::SeqCst, |left| {
             left.checked_sub(1)
         })
         .is_ok()

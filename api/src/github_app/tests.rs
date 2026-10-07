@@ -167,7 +167,7 @@ async fn access_token(
     github.permissions.lock().unwrap().push(request.permissions);
     if github
         .refusals
-        .fetch_update(Ordering::SeqCst, Ordering::SeqCst, |left| {
+        .try_update(Ordering::SeqCst, Ordering::SeqCst, |left| {
             left.checked_sub(1)
         })
         .is_ok()
