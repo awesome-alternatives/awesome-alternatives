@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.25.1] - 2026-10-07
+
+### Bug Fixes
+
+- fix(api): use try_update in tests, fetch_update is deprecated (#402)
+
 ## [0.25.0] - 2026-10-06
 
 ### Features
