@@ -1,3 +1,13 @@
 name: asdf
 repository: https://github.com/asdf-vm/asdf
 category: runtime-version-manager
+replaces:
+  - tool: nvm
+    fit: full
+    note: Installs and switches Node.js versions through a plugin, and also covers other languages.
+  - tool: rbenv
+    fit: full
+    note: Installs and switches Ruby versions through a plugin, and reads .tool-versions.
+  - tool: sdkman
+    fit: partial
+    note: Manages JVM tools through a plugin, without SDKMAN's curated candidate list.

@@ -1,3 +1,7 @@
 name: Skaffold
 repository: https://github.com/GoogleContainerTools/skaffold
 category: kubernetes-development
+replaces:
+  - tool: tilt
+    fit: partial
+    note: Builds, deploys and watches code for Kubernetes development, with no live-update UI.

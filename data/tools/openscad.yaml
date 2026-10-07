@@ -1,4 +1,11 @@
 name: OpenSCAD
 repository: https://github.com/openscad/openscad
 category: cad
+replaces:
+  - tool: fusion-360
+    fit: partial
+    note: Solid models described in a script instead of drawn, with no sketching UI, CAM or simulation.
+  - tool: solidworks
+    fit: partial
+    note: Script-driven solid modelling for parts, without assemblies, drawings or simulation.
 terms: open

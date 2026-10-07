@@ -1,4 +1,8 @@
 name: Z-Wave JS UI
 repository: https://github.com/zwave-js/zwave-js-ui
 category: home-automation
+replaces:
+  - tool: smartthings
+    fit: partial
+    note: Z-Wave controller and device management with an MQTT gateway, without Zigbee, cloud services or a phone app.
 deploy: [container]

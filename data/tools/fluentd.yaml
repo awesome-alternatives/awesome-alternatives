@@ -1,4 +1,8 @@
 name: Fluentd
 repository: https://github.com/fluent/fluentd
 category: log-pipeline
+replaces:
+  - tool: logstash
+    fit: full
+    note: Collects, filters and routes logs through plugins, as a Ruby service.
 deploy: [container, helm, package]

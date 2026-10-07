@@ -1,3 +1,7 @@
 name: Bevy
 repository: https://github.com/bevyengine/bevy
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: Code-first ECS engine in Rust with no visual editor yet.

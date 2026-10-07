@@ -1,3 +1,7 @@
 name: Calico
 repository: https://github.com/projectcalico/calico
 category: container-networking
+replaces:
+  - tool: flannel
+    fit: full
+    note: Pod networking with network policy enforcement, which flannel leaves to another component.

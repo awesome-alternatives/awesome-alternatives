@@ -1,3 +1,7 @@
 name: MetalLB
 repository: https://github.com/metallb/metallb
 category: container-networking
+replaces:
+  - tool: kube-vip
+    fit: partial
+    note: Gives LoadBalancer services an address on bare-metal clusters, without a virtual IP for the control plane.

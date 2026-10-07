@@ -1,3 +1,7 @@
 name: Tauon
 repository: https://github.com/Taiko2k/Tauon
 category: music-player
+replaces:
+  - tool: musicbee
+    fit: partial
+    note: Linux music player with a library, lyrics and a compact mode, without MusicBee's tagging tools.

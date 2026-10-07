@@ -1,4 +1,8 @@
 name: Castle Game Engine
 repository: https://github.com/castle-engine/castle-engine
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: Object Pascal engine with its own editor for 3D and 2D games, with far fewer assets and tutorials.
 terms: open

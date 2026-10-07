@@ -1,3 +1,7 @@
 name: Kustomize
 repository: https://github.com/kubernetes-sigs/kustomize
 category: kubernetes-packaging
+replaces:
+  - tool: helm
+    fit: partial
+    note: Patches plain YAML with overlays instead of templating it, and does not track releases or package charts.

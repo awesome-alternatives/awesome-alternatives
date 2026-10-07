@@ -1,3 +1,10 @@
 name: OSSEC
 repository: https://github.com/ossec/ossec-hids
 category: intrusion-detection
+replaces:
+  - tool: crowdstrike-falcon
+    fit: partial
+    note: Host-based intrusion detection with log analysis and file integrity checks, but no managed threat hunting or cloud-based detection.
+  - tool: tripwire
+    fit: partial
+    note: Covers file integrity monitoring alongside log analysis and rootkit detection, without a policy and compliance console.

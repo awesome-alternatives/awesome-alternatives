@@ -1,3 +1,7 @@
 name: Excalibur
 repository: https://github.com/excaliburjs/Excalibur
 category: game-engine
+replaces:
+  - tool: construct
+    fit: partial
+    note: Code-first 2D engine in TypeScript for the browser, with no visual editor.

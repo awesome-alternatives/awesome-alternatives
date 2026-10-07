@@ -1,3 +1,10 @@
 name: SolveSpace
 repository: https://github.com/solvespace/solvespace
 category: cad
+replaces:
+  - tool: solidworks
+    fit: partial
+    note: Parametric 3D CAD with constraint sketches and assemblies, with a much smaller feature set and no simulation.
+  - tool: fusion-360
+    fit: partial
+    note: Parametric part and assembly modelling that runs offline, without CAM, simulation or cloud collaboration.

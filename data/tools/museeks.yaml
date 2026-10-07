@@ -1,3 +1,7 @@
 name: Museeks
 repository: https://github.com/martpie/museeks
 category: music-player
+replaces:
+  - tool: musicbee
+    fit: partial
+    note: Simple cross-platform library player, without MusicBee's tagging, plugins and playlist rules.

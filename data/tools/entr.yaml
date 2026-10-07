@@ -1,3 +1,7 @@
 name: entr
 repository: https://github.com/eradman/entr
 category: file-watcher
+replaces:
+  - tool: nodemon
+    fit: partial
+    note: Runs any command when listed files change, with no restart handling or config file.

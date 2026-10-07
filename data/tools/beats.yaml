@@ -1,5 +1,9 @@
 name: Beats
 repository: https://github.com/elastic/beats
 category: log-pipeline
+replaces:
+  - tool: logstash
+    fit: partial
+    note: Lightweight shippers for logs and metrics that forward data, with only basic processing.
 terms: open-core
 deploy: [container]

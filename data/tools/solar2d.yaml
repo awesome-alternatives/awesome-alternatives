@@ -1,3 +1,7 @@
 name: Solar2D
 repository: https://github.com/coronalabs/corona
 category: game-engine
+replaces:
+  - tool: gamemaker
+    fit: partial
+    note: Lua engine for 2D mobile and desktop games, with no visual room or sprite editor.

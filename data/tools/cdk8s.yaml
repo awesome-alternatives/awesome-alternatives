@@ -1,3 +1,7 @@
 name: cdk8s
 repository: https://github.com/cdk8s-team/cdk8s
 category: kubernetes-packaging
+replaces:
+  - tool: helm
+    fit: partial
+    note: Generates Kubernetes manifests from TypeScript, Python, Java or Go code, but has no chart repositories or release tracking.

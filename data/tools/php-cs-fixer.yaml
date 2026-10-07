@@ -1,3 +1,7 @@
 name: PHP CS Fixer
 repository: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
 category: php-lint-format
+replaces:
+  - tool: php-codesniffer
+    fit: partial
+    note: Fixes coding style automatically, but does not report violations without changing files.

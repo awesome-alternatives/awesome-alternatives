@@ -1,3 +1,7 @@
 name: rsyslog
 repository: https://github.com/rsyslog/rsyslog
 category: log-pipeline
+replaces:
+  - tool: syslog-ng
+    fit: full
+    note: Syslog daemon with filtering, templates and forwarding, configured with its own syntax.

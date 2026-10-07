@@ -1,3 +1,7 @@
 name: Psalm
 repository: https://github.com/vimeo/psalm
 category: php-lint-format
+replaces:
+  - tool: phpstan
+    fit: full
+    note: Static analysis for PHP with taint analysis and error levels.

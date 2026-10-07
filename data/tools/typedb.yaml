@@ -1,3 +1,7 @@
 name: TypeDB
 repository: https://github.com/typedb/typedb
 category: graph-database
+replaces:
+  - tool: neo4j
+    fit: partial
+    note: Strongly typed knowledge graph queried in TypeQL instead of Cypher.

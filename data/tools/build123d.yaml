@@ -1,3 +1,10 @@
 name: build123d
 repository: https://github.com/gumyr/build123d
 category: cad
+replaces:
+  - tool: fusion-360
+    fit: partial
+    note: Parametric 3D modelling written as Python code, with no GUI and no CAM or simulation.
+  - tool: cadquery
+    fit: partial
+    note: Python CAD on the same OpenCascade kernel, with a builder syntax instead of a fluent chain.

@@ -1,3 +1,7 @@
 name: markdownlint-cli2
 repository: https://github.com/DavidAnson/markdownlint-cli2
 category: markdown-lint
+replaces:
+  - tool: markdownlint-cli
+    fit: full
+    note: Lints Markdown with the same rules and config files, with globbing built in and faster on large trees.

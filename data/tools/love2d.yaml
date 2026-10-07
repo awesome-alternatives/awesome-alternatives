@@ -1,4 +1,8 @@
 name: LÖVE
 repository: https://github.com/love2d/love
 category: game-engine
+replaces:
+  - tool: gamemaker
+    fit: partial
+    note: Lua framework for 2D games that you write entirely in code, without a visual editor.
 terms: open

@@ -1,3 +1,7 @@
 name: Dependabot
 repository: https://github.com/dependabot/dependabot-core
 category: dependency-updates
+replaces:
+  - tool: renovate
+    fit: partial
+    note: The update engine behind GitHub Dependabot, with fewer package managers and less configurable grouping.

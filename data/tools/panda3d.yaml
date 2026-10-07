@@ -1,4 +1,8 @@
 name: Panda3D
 repository: https://github.com/panda3d/panda3d
 category: game-engine
+replaces:
+  - tool: unity
+    fit: partial
+    note: Python and C++ 3D engine with no integrated editor.
 terms: open

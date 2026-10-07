@@ -1,3 +1,7 @@
 name: SearXNG
 repository: https://github.com/searxng/searxng
 category: private-search
+replaces:
+  - tool: google-search
+    fit: partial
+    note: Metasearch that aggregates results from other engines without tracking you, so results depend on those engines.

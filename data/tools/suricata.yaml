@@ -1,3 +1,7 @@
 name: Suricata
 repository: https://github.com/OISF/suricata
 category: intrusion-detection
+replaces:
+  - tool: snort-3
+    fit: full
+    note: Reads Snort rules and adds multi-threading, plus protocol logging in EVE JSON.

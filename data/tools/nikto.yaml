@@ -1,4 +1,8 @@
 name: Nikto
 repository: https://github.com/sullo/nikto
 category: dast-scanner
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Scans web servers for known misconfigurations and outdated software, without an intercepting proxy or manual testing tools.
 terms: open-core

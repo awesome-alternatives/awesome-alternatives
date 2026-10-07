@@ -1,3 +1,7 @@
 name: degoog
 repository: https://github.com/degoog-org/degoog
 category: private-search
+replaces:
+  - tool: google-search
+    fit: partial
+    note: Self-hosted search aggregator extended through plugins, with results coming from other engines.
