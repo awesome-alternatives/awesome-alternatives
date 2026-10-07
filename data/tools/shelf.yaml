@@ -2,3 +2,7 @@ name: Shelf
 repository: https://github.com/Shelf-nu/shelf.nu
 category: inventory
 terms: open-core
+replaces:
+  - tool: sortly
+    fit: partial
+    note: "Asset tracking with QR codes, custody assignment and bookings."

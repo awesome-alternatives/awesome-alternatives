@@ -1,3 +1,7 @@
 name: Skopeo
 repository: https://github.com/podman-container-tools/skopeo
 category: container-image-tools
+replaces:
+  - tool: crane
+    fit: partial
+    note: "Copies and inspects images across registries and local formats, with signing; no library API."

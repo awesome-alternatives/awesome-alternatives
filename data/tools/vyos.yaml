@@ -1,3 +1,7 @@
 name: VyOS
 repository: https://github.com/vyos/vyos-1x
 category: firewall
+replaces:
+  - tool: cisco-ios
+    fit: partial
+    note: "Routing, VPN, firewall and NAT from a CLI modelled on Junos; the syntax is not IOS."

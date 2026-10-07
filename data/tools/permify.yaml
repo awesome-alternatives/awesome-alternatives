@@ -1,3 +1,10 @@
 name: Permify
 repository: https://github.com/Permify/permify
 category: authorization-service
+replaces:
+  - tool: oso-cloud
+    fit: partial
+    note: Zanzibar-inspired fine-grained permissions on your own infrastructure.
+  - tool: aws-verified-permissions
+    fit: partial
+    note: Relationship-based checks with its own schema language rather than Cedar.

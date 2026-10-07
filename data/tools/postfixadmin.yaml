@@ -2,3 +2,7 @@ name: PostfixAdmin
 repository: https://github.com/postfixadmin/postfixadmin
 category: mail-server
 terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "A web admin panel for domains, mailboxes and aliases on Postfix and Dovecot; it is not a mail server itself."

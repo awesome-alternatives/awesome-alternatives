@@ -1,0 +1,5 @@
+name: Infoblox
+homepage: https://www.infoblox.com
+vendor: Infoblox
+category: infrastructure-inventory
+description: "A commercial DDI platform for DNS, DHCP and IP address management."

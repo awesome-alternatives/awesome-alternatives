@@ -1,3 +1,7 @@
 name: lfs-test-server
 repository: https://github.com/git-lfs/lfs-test-server
 category: git-lfs-server
+replaces:
+  - tool: github-lfs
+    fit: partial
+    note: A reference Git LFS server that stores objects on local disk; not meant for production use.

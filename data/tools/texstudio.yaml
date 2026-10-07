@@ -1,3 +1,7 @@
 name: TeXstudio
 repository: https://github.com/texstudio-org/texstudio
 category: typesetting
+replaces:
+  - tool: overleaf
+    fit: partial
+    note: "A desktop LaTeX editor with live preview and completion, without real-time collaboration."

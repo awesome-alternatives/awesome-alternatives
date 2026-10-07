@@ -1,3 +1,7 @@
 name: Doom Emacs
 repository: https://github.com/doomemacs/core
 category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: "An Emacs configuration with LSP, git and project navigation; keyboard-driven, with a smaller extension pool."

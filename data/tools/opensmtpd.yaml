@@ -2,3 +2,7 @@ name: OpenSMTPD
 repository: https://github.com/OpenSMTPD/OpenSMTPD
 category: mail-server
 terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: The SMTP half of self-hosted mail with simple configuration; no mailboxes or webmail.

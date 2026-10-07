@@ -1,3 +1,7 @@
 name: TeamPass
 repository: https://github.com/nilsteampassnet/TeamPass
 category: password-manager-server
+replaces:
+  - tool: lastpass
+    fit: partial
+    note: "A shared vault with folders and role-based access, in a web interface."

@@ -1,3 +1,10 @@
 name: OpenFGA
 repository: https://github.com/openfga/openfga
 category: authorization-service
+replaces:
+  - tool: auth0
+    fit: partial
+    note: "Relationship-based authorization only; the engine behind Auth0 FGA, without Auth0's login and user management."
+  - tool: aws-verified-permissions
+    fit: partial
+    note: "Zanzibar-style relationship checks instead of Cedar policies, hosted on your own infrastructure."

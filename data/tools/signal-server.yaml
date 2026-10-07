@@ -1,3 +1,7 @@
 name: Signal Server
 repository: https://github.com/signalapp/Signal-Server
 category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: "The server for Signal's end-to-end encrypted messaging, which works with the Signal clients."

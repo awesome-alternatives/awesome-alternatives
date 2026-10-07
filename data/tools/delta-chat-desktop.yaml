@@ -1,3 +1,7 @@
 name: Delta Chat Desktop
 repository: https://github.com/deltachat/deltachat-desktop
 category: messenger
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Chat over ordinary email accounts with end-to-end encryption; contacts need to use Delta Chat or email.

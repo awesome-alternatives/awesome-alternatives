@@ -1,3 +1,13 @@
 name: Polar
 repository: https://github.com/polarsource/polar
 category: billing
+replaces:
+  - tool: paddle
+    fit: partial
+    note: "A merchant of record for software subscriptions and digital products, aimed at developers."
+  - tool: lemon-squeezy
+    fit: partial
+    note: "A merchant of record for software subscriptions and digital products, aimed at developers."
+  - tool: stripe-billing
+    fit: partial
+    note: "Subscriptions and usage-based billing with sales tax handled for you; checkout runs on Polar's own platform."

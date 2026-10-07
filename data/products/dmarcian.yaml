@@ -1,0 +1,5 @@
+name: dmarcian
+homepage: https://dmarcian.com
+vendor: dmarcian
+category: dmarc-reporting
+description: A hosted service that collects DMARC reports and turns them into dashboards and sender inventories.

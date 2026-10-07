@@ -1,3 +1,7 @@
 name: OPNsense
 repository: https://github.com/opnsense/core
 category: firewall
+replaces:
+  - tool: pfsense
+    fit: full
+    note: "A FreeBSD firewall and router with a web UI, VPNs, plugins and traffic shaping."

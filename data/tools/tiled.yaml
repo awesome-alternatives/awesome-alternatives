@@ -2,3 +2,7 @@ name: Tiled
 repository: https://github.com/mapeditor/tiled
 category: game-map-editor
 terms: open
+replaces:
+  - tool: ldtk
+    fit: partial
+    note: A general tile map editor with a long-standing TMX format and wide engine support.

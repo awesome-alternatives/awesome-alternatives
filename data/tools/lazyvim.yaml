@@ -1,3 +1,7 @@
 name: LazyVim
 repository: https://github.com/LazyVim/LazyVim
 category: text-editor
+replaces:
+  - tool: vscode
+    fit: partial
+    note: "A Neovim distribution with LSP, completion, git and a file explorer set up; terminal-based, with fewer extensions."

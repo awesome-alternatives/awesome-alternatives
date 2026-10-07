@@ -1,3 +1,7 @@
 name: Gatsby
 repository: https://github.com/gatsbyjs/gatsby
 category: static-site-generator
+replaces:
+  - tool: jekyll
+    fit: partial
+    note: "A React-based static site generator with a GraphQL data layer, which needs more tooling than Jekyll."

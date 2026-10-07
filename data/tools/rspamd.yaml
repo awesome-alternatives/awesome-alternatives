@@ -2,3 +2,7 @@ name: Rspamd
 repository: https://github.com/rspamd/rspamd
 category: mail-server
 terms: open
+replaces:
+  - tool: proofpoint
+    fit: partial
+    note: "Spam filtering with DKIM, SPF and DMARC checks, rate limits and Bayesian scoring; no hosted threat feeds or sandboxing."

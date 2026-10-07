@@ -1,3 +1,7 @@
 name: pre-commit
 repository: https://github.com/pre-commit/pre-commit
 category: git-hooks
+replaces:
+  - tool: husky
+    fit: partial
+    note: "Language-agnostic hooks installed from shared repositories, in Python rather than npm."

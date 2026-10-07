@@ -2,3 +2,7 @@ name: Snipe-IT
 repository: https://github.com/grokability/snipe-it
 category: inventory
 deploy: [container, compose]
+replaces:
+  - tool: sortly
+    fit: partial
+    note: "Asset check-in and check-out, licences and consumables, focused on IT equipment."

@@ -1,3 +1,7 @@
 name: Spyder
 repository: https://github.com/spyder-ide/spyder
 category: text-editor
+replaces:
+  - tool: matlab
+    fit: partial
+    note: "A scientific IDE with a variable explorer, plots and a console, for Python rather than the MATLAB language."

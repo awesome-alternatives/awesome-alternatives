@@ -1,0 +1,5 @@
+name: AWS Verified Permissions
+homepage: https://aws.amazon.com/verified-permissions/
+vendor: Amazon Web Services
+category: authorization-service
+description: "Amazon's managed authorization service, which evaluates application permissions written as Cedar policies."

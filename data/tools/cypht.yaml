@@ -2,3 +2,7 @@ name: Cypht
 repository: https://github.com/cypht-org/cypht
 category: webmail
 deploy: [container]
+replaces:
+  - tool: microsoft-outlook
+    fit: partial
+    note: "Webmail that combines IMAP, JMAP and Exchange (EWS) accounts into one inbox, without calendars."

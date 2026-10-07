@@ -1,3 +1,7 @@
 name: Nextcloud Mail
 repository: https://github.com/nextcloud/mail
 category: webmail
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "A mail client inside Nextcloud next to its files, calendar and contacts, on top of an IMAP server you run."

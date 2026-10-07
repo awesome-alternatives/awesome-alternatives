@@ -2,3 +2,10 @@ name: pgBackRest
 repository: https://github.com/pgbackrest/pgbackrest
 category: database-backup
 terms: open
+replaces:
+  - tool: barman
+    fit: full
+    note: "Physical backups, WAL archiving and point-in-time recovery for PostgreSQL, with parallel and incremental backups."
+  - tool: amazon-rds
+    fit: partial
+    note: "Point-in-time recovery for self-hosted PostgreSQL, like RDS automated backups."

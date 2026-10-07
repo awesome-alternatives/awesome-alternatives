@@ -2,3 +2,7 @@ name: Berty
 repository: https://github.com/berty/berty
 category: messenger
 terms: open
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: Peer-to-peer messaging that works over Bluetooth and local networks without phone numbers; far fewer users.

@@ -1,3 +1,7 @@
 name: LDtk
 repository: https://github.com/deepnight/ldtk
 category: game-map-editor
+replaces:
+  - tool: tiled
+    fit: partial
+    note: A level editor with auto-layers and rules for 2D games; the format is its own rather than TMX.

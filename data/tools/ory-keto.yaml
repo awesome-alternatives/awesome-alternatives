@@ -1,3 +1,7 @@
 name: Ory Keto
 repository: https://github.com/ory/keto
 category: authorization-service
+replaces:
+  - tool: oso-cloud
+    fit: partial
+    note: "Zanzibar-style relationship-based permissions, self-hosted and exposed over gRPC and REST."

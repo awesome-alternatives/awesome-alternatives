@@ -1,3 +1,10 @@
 name: SpiceDB
 repository: https://github.com/authzed/spicedb
 category: authorization-service
+replaces:
+  - tool: oso-cloud
+    fit: partial
+    note: "Relationship-based permissions in the style of Google Zanzibar, self-hosted instead of a hosted service."
+  - tool: aws-verified-permissions
+    fit: partial
+    note: "Zanzibar-style relationship checks instead of Cedar policies, run on your own infrastructure."

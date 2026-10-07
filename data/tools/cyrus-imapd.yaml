@@ -2,3 +2,7 @@ name: Cyrus IMAP
 repository: https://github.com/cyrusimap/cyrus-imapd
 category: mail-server
 terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "IMAP, POP3 and JMAP mail with CalDAV and CardDAV, without documents or chat."

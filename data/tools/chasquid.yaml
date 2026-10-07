@@ -2,3 +2,7 @@ name: chasquid
 repository: https://github.com/albertito/chasquid
 category: mail-server
 terms: open
+replaces:
+  - tool: google-workspace
+    fit: partial
+    note: "An SMTP server for small domains with DKIM, SPF and TLS support; needs a separate IMAP server and has no webmail."

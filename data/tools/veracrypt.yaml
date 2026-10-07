@@ -1,3 +1,7 @@
 name: VeraCrypt
 repository: https://github.com/veracrypt/VeraCrypt
 category: file-encryption
+replaces:
+  - tool: bitlocker
+    fit: partial
+    note: "Encrypts whole volumes, system drives and file containers on Windows, macOS and Linux; no TPM-based unlock."

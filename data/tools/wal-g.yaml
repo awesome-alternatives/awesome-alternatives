@@ -2,3 +2,10 @@ name: WAL-G
 repository: https://github.com/wal-g/wal-g
 category: database-backup
 terms: open
+replaces:
+  - tool: pgbackrest
+    fit: partial
+    note: "Pushes base backups and WAL to object storage, and also handles MySQL and other databases."
+  - tool: amazon-rds
+    fit: partial
+    note: Point-in-time recovery to S3-compatible storage for self-hosted databases.
