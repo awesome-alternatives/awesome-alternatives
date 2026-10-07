@@ -4,7 +4,7 @@ Cache compiler output so unchanged sources are not rebuilt, locally or on shared
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [sccache](https://github.com/mozilla/sccache) | Rust | Apache-2.0 | [v0.18.0](https://github.com/mozilla/sccache/releases/tag/v0.18.0) | 7759 | ccache (full) |
+| [sccache](https://github.com/mozilla/sccache) | Rust | Apache-2.0 | [v0.18.0](https://github.com/mozilla/sccache/releases/tag/v0.18.0) | 7762 | ccache (full) |
 | [ccache](https://github.com/ccache/ccache) | C++ | Other | [v4.14.1](https://github.com/ccache/ccache/releases/tag/v4.14.1) signed | 2967 | none |
 
 [All categories](../README.md#catalog)
