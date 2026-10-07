@@ -1,3 +1,7 @@
 name: strfry
 repository: https://github.com/hoytech/strfry
 category: microblogging
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Relay for the Nostr protocol that stores and forwards notes; posting goes through separate Nostr clients.

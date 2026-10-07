@@ -1,3 +1,10 @@
 name: WhisperX
 repository: https://github.com/m-bain/whisperX
 category: speech-to-text
+replaces:
+  - tool: whisper
+    fit: full
+    note: Adds word-level timestamps, voice activity detection and speaker diarization on top of faster-whisper.
+  - tool: amazon-transcribe
+    fit: partial
+    note: Batch transcription with speaker labels on your own hardware; no managed service or streaming.

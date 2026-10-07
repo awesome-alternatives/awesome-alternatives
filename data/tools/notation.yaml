@@ -1,3 +1,7 @@
 name: Notation
 repository: https://github.com/notaryproject/notation
 category: supply-chain-security
+replaces:
+  - tool: cosign
+    fit: full
+    note: Signs and verifies OCI artifacts using X.509 certificates and a trust policy.

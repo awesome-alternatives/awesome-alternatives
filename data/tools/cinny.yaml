@@ -1,3 +1,10 @@
 name: Cinny
 repository: https://github.com/cinnyapp/cinny
 category: chat-client
+replaces:
+  - tool: slack
+    fit: partial
+    note: Matrix client for rooms, threads and spaces; needs a Matrix homeserver and has no Slack app integrations.
+  - tool: discord
+    fit: partial
+    note: Matrix client with spaces and rooms; no built-in voice channels.

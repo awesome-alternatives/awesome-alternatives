@@ -1,3 +1,7 @@
 name: Shoutrrr
 repository: https://github.com/containrrr/shoutrrr
 category: push-notifications
+replaces:
+  - tool: pushover
+    fit: partial
+    note: Go library and command line tool that delivers notifications to many services; it sends but has no app of its own.

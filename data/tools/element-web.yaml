@@ -1,3 +1,10 @@
 name: Element Web
 repository: https://github.com/element-hq/element-web
 category: chat-client
+replaces:
+  - tool: slack
+    fit: partial
+    note: Matrix client for team rooms, threads and calls in the browser; needs a Matrix homeserver.
+  - tool: discord
+    fit: partial
+    note: Spaces, rooms and voice or video calls over Matrix.

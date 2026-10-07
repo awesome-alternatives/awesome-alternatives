@@ -1,3 +1,7 @@
 name: karma
 repository: https://github.com/prymitive/karma
 category: incident-management
+replaces:
+  - tool: pagerduty
+    fit: partial
+    note: Alert dashboard for Alertmanager with grouping, filtering and silences, without on-call schedules or paging.

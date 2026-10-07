@@ -1,3 +1,10 @@
 name: pip-tools
 repository: https://github.com/jazzband/pip-tools
 category: python-packaging
+replaces:
+  - tool: pipenv
+    fit: partial
+    note: Compiles pinned requirements files and syncs an environment from them, without managing virtualenvs.
+  - tool: poetry
+    fit: partial
+    note: Locks dependencies into pinned requirements files, without building or publishing packages.

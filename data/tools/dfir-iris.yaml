@@ -1,3 +1,7 @@
 name: DFIR-IRIS
 repository: https://github.com/dfir-iris/iris-web
 category: soar
+replaces:
+  - tool: splunk-soar
+    fit: partial
+    note: Case management, evidence and collaboration for incident response, without playbook automation.

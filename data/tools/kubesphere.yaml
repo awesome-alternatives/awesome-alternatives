@@ -1,4 +1,11 @@
 name: KubeSphere
 repository: https://github.com/kubesphere/kubesphere
 category: kubernetes-ui
+replaces:
+  - tool: rancher
+    fit: full
+    note: Multi-cluster management, multi-tenancy and RBAC, with built-in DevOps pipelines and monitoring.
+  - tool: lens
+    fit: partial
+    note: Web console for workloads and resources rather than a desktop app.
 terms: source-available

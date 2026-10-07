@@ -1,3 +1,10 @@
 name: Kite
 repository: https://github.com/kite-org/kite
 category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: partial
+    note: Lightweight web dashboard for browsing and editing resources across several clusters.
+  - tool: rancher
+    fit: partial
+    note: Multi-cluster resource views in the browser, without provisioning clusters or managing users.

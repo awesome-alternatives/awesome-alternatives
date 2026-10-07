@@ -1,3 +1,10 @@
 name: Element X Android
 repository: https://github.com/element-hq/element-x-android
 category: chat-client
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: End-to-end encrypted Matrix messenger for chats and groups; contacts must be on Matrix and there is no phone number sign-up.
+  - tool: slack
+    fit: partial
+    note: Mobile client for Matrix rooms and threads; needs a Matrix homeserver.

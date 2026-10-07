@@ -1,3 +1,7 @@
 name: DNSControl
 repository: https://github.com/DNSControl/dnscontrol
 category: infrastructure-as-code
+replaces:
+  - tool: octodns
+    fit: full
+    note: DNS records kept in a config file and pushed to many providers, with a diff before each push.

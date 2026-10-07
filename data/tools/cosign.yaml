@@ -1,3 +1,7 @@
 name: Cosign
 repository: https://github.com/sigstore/cosign
 category: supply-chain-security
+replaces:
+  - tool: notation
+    fit: full
+    note: Signs and verifies container images and other artifacts, with keyless signing through Sigstore.

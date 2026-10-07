@@ -1,4 +1,11 @@
 name: Zipkin
 repository: https://github.com/openzipkin/zipkin
 category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: Collects and shows distributed traces only; no metrics, logs or hosted service.
+  - tool: honeycomb
+    fit: partial
+    note: Trace storage and a dependency and latency view, without high-cardinality queries.
 deploy: [container, compose, helm]

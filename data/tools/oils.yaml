@@ -1,4 +1,8 @@
 name: Oils
 repository: https://github.com/oils-for-unix/oils
 category: shell
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Runs most bash scripts as OSH and adds a cleaner language, YSH, for new scripts.
 terms: open

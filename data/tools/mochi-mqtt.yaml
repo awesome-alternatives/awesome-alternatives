@@ -1,4 +1,8 @@
 name: Mochi MQTT
 repository: https://github.com/mochi-mqtt/server
 category: mqtt-broker
+replaces:
+  - tool: aws-iot-core
+    fit: partial
+    note: Embeddable MQTT 5 broker written in Go; no device registry, shadows or rules engine.
 deploy: [container]

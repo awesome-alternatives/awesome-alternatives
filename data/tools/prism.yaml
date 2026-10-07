@@ -1,3 +1,7 @@
 name: Prism
 repository: https://github.com/stoplightio/prism
 category: mock-server
+replaces:
+  - tool: postman
+    fit: partial
+    note: Mock server built from an OpenAPI file or Postman collection, with request validation; no request editor.

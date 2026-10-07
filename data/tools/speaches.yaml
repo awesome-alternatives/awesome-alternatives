@@ -1,4 +1,11 @@
 name: Speaches
 repository: https://github.com/speaches-ai/speaches
 category: speech-to-text
+replaces:
+  - tool: amazon-transcribe
+    fit: partial
+    note: OpenAI API-compatible server for streaming transcription with faster-whisper, run on your own hardware.
+  - tool: elevenlabs
+    fit: partial
+    note: Text to speech with Kokoro and Piper voices over an OpenAI-compatible endpoint; no voice cloning.
 deploy: [container, compose]

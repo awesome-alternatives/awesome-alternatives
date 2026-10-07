@@ -1,3 +1,7 @@
 name: Whisper
 repository: https://github.com/openai/whisper
 category: speech-to-text
+replaces:
+  - tool: amazon-transcribe
+    fit: partial
+    note: Open model that transcribes and translates audio files on your own hardware; no managed service, streaming or speaker labels.

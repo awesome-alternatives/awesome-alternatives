@@ -1,3 +1,7 @@
 name: IntelOwl
 repository: https://github.com/intelowlproject/IntelOwl
 category: threat-intelligence
+replaces:
+  - tool: recorded-future
+    fit: partial
+    note: Enriches an IP, domain, hash or URL with dozens of analyzers in one request; the data comes from services you configure.

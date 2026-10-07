@@ -1,4 +1,11 @@
 name: Open Archiver
 repository: https://github.com/LogicLabs-OU/OpenArchiver
 category: email-archiving
+replaces:
+  - tool: mailstore
+    fit: partial
+    note: Archives mail from IMAP, Google Workspace and Microsoft 365 into a searchable store, self-hosted.
+  - tool: mimecast
+    fit: partial
+    note: Mail archive with search and retention, without the email security gateway.
 deploy: [container, compose]

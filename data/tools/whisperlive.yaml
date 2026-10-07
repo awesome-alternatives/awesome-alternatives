@@ -1,4 +1,8 @@
 name: WhisperLive
 repository: https://github.com/collabora/WhisperLive
 category: speech-to-text
+replaces:
+  - tool: amazon-transcribe
+    fit: partial
+    note: Near-live transcription of microphone or stream audio over WebSocket, run on your own server.
 deploy: [container]

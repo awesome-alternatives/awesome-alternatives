@@ -1,4 +1,8 @@
 name: nostream
 repository: https://github.com/cameri/nostream
 category: microblogging
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Relay for the Nostr protocol that stores and forwards notes; posting goes through separate Nostr clients.
 deploy: [compose]

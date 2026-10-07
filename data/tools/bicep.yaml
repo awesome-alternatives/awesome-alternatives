@@ -1,3 +1,10 @@
 name: Bicep
 repository: https://github.com/Azure/bicep
 category: infrastructure-as-code
+replaces:
+  - tool: azure-resource-manager
+    fit: full
+    note: Declarative language that compiles to ARM templates and deploys through the same service, with simpler syntax.
+  - tool: terraform
+    fit: partial
+    note: Declarative infrastructure for Azure only.

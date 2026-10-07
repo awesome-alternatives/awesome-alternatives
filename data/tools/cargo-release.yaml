@@ -1,3 +1,7 @@
 name: cargo-release
 repository: https://github.com/crate-ci/cargo-release
 category: release-automation
+replaces:
+  - tool: semantic-release
+    fit: partial
+    note: Bumps the version, tags and publishes Cargo workspaces from a command, without deriving the bump from commit messages.

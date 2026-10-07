@@ -1,5 +1,12 @@
 name: HashiCorp Vault
 repository: https://github.com/hashicorp/vault
 category: secrets-manager
+replaces:
+  - tool: aws-secrets-manager
+    fit: full
+    note: Stores secrets with access policies, audit logs and rotation, on any cloud or on premises.
+  - tool: doppler
+    fit: partial
+    note: Secrets engine with an API and CLI, without a hosted dashboard for syncing to CI and cloud providers.
 terms: source-available
 deploy: [container, helm, package]

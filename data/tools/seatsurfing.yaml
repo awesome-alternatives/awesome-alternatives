@@ -1,4 +1,8 @@
 name: Seatsurfing
 repository: https://github.com/seatsurfing/seatsurfing
 category: scheduling
+replaces:
+  - tool: robin
+    fit: partial
+    note: Desk and room booking with a floor plan and enterprise sign-in, self-hosted; no occupancy analytics.
 deploy: [container]

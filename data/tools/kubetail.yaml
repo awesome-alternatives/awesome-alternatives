@@ -1,3 +1,7 @@
 name: Kubetail
 repository: https://github.com/kubetail-org/kubetail
 category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: partial
+    note: Real-time log viewer for pods in the browser or terminal, without resource management.

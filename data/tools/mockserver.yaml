@@ -1,3 +1,10 @@
 name: MockServer
 repository: https://github.com/mock-server/mockserver-monorepo
 category: mock-server
+replaces:
+  - tool: postman
+    fit: partial
+    note: Mock APIs and proxy and record traffic for tests, without collections or a request editor.
+  - tool: wiremock
+    fit: full
+    note: HTTP mocking, request matching and fault injection from code or configuration.

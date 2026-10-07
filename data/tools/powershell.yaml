@@ -1,3 +1,7 @@
 name: PowerShell
 repository: https://github.com/PowerShell/PowerShell
 category: shell
+replaces:
+  - tool: zsh
+    fit: partial
+    note: Object pipelines and a .NET based scripting language on Linux, macOS and Windows, with a non-POSIX syntax.

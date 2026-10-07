@@ -1,4 +1,8 @@
 name: Monal
 repository: https://github.com/monal-im/Monal
 category: chat-client
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: XMPP messenger for iOS and macOS with OMEMO encryption and group chats; contacts need an XMPP account.
 terms: open

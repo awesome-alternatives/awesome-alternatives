@@ -1,3 +1,7 @@
 name: Dino
 repository: https://github.com/dino/dino
 category: chat-client
+replaces:
+  - tool: whatsapp
+    fit: partial
+    note: XMPP messenger with OMEMO encryption, group chats and calls; contacts need an XMPP account.

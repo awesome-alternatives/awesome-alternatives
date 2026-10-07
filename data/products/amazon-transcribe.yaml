@@ -1,0 +1,5 @@
+name: Amazon Transcribe
+homepage: https://aws.amazon.com/transcribe/
+vendor: Amazon Web Services
+category: speech-to-text
+description: Managed speech recognition service that transcribes audio files and live streams, with speaker labels and custom vocabularies.

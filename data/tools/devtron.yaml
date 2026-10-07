@@ -1,3 +1,10 @@
 name: Devtron
 repository: https://github.com/devtron-labs/devtron
 category: kubernetes-ui
+replaces:
+  - tool: lens
+    fit: partial
+    note: Web dashboard for clusters, workloads and Helm apps, with built-in CI/CD pipelines, instead of a desktop app.
+  - tool: octopus-deploy
+    fit: partial
+    note: Deployment pipelines and release promotion for Kubernetes workloads and Helm charts.

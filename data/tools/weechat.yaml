@@ -1,3 +1,7 @@
 name: WeeChat
 repository: https://github.com/weechat/weechat
 category: chat-client
+replaces:
+  - tool: irssi
+    fit: full
+    note: Terminal IRC client with a plugin API and scripts in several languages, with a built-in relay for remote clients.

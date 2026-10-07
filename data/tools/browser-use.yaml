@@ -1,3 +1,7 @@
 name: Browser Use
 repository: https://github.com/browser-use/browser-use
 category: browser-agent
+replaces:
+  - tool: manus
+    fit: partial
+    note: Python library that lets an LLM of your choice drive a browser; no sandbox, file tools or hosted service.

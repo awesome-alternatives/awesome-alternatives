@@ -1,3 +1,10 @@
 name: AWS CDK
 repository: https://github.com/aws/aws-cdk
 category: infrastructure-as-code
+replaces:
+  - tool: aws-cloudformation
+    fit: partial
+    note: "Defines AWS resources in TypeScript, Python, Java or C#, then synthesizes CloudFormation templates and deploys through it."
+  - tool: terraform
+    fit: partial
+    note: Infrastructure in general-purpose languages, for AWS only.

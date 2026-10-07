@@ -1,3 +1,10 @@
 name: DeepFlow
 repository: https://github.com/deepflowio/deepflow
 category: tracing
+replaces:
+  - tool: datadog
+    fit: partial
+    note: eBPF-based distributed tracing, network metrics and profiling with its own storage and UI; no hosted service or log management.
+  - tool: new-relic
+    fit: partial
+    note: Zero-code tracing and profiling for services and Kubernetes, self-hosted.

@@ -1,3 +1,7 @@
 name: Rundeck
 repository: https://github.com/rundeck/rundeck
 category: runbook-automation
+replaces:
+  - tool: ansible-automation-platform
+    fit: partial
+    note: Job scheduling, access control and runbooks across nodes, with Ansible as one of its executors.

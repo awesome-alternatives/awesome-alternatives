@@ -1,4 +1,11 @@
 name: OpenCTI
 repository: https://github.com/OpenCTI-Platform/opencti
 category: threat-intelligence
+replaces:
+  - tool: recorded-future
+    fit: partial
+    note: Knowledge graph of threat actors, malware and indicators with connectors for feeds; no proprietary intelligence collection.
+  - tool: anomali-threatstream
+    fit: partial
+    note: Ingests, links and shares intelligence from many feeds in STIX format, self-hosted.
 terms: open-core

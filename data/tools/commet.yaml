@@ -1,3 +1,7 @@
 name: Commet
 repository: https://github.com/commetchat/commet
 category: chat-client
+replaces:
+  - tool: discord
+    fit: partial
+    note: Matrix client with spaces, rooms and calls on desktop and Android; it needs a Matrix homeserver.

@@ -1,3 +1,7 @@
 name: Yeti
 repository: https://github.com/yeti-platform/yeti
 category: threat-intelligence
+replaces:
+  - tool: anomali-threatstream
+    fit: partial
+    note: Stores observables and threat entities and links them, with feeds and analytics; smaller than a commercial platform.
