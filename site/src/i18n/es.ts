@@ -317,6 +317,15 @@ export const es: Messages = {
     ledeAfter: " que buscabas.",
   },
 
+  banned: {
+    title: "{name} ya no figura en la lista",
+    description: "{name} se ha retirado del catálogo de awesome-alternatives.",
+    heading: "{name} ya no figura en la lista",
+    notice: "Esta herramienta se ha retirado del catálogo y ya no se recomienda aquí.",
+    reason: "Motivo",
+    back: "Volver al catálogo",
+  },
+
   changes: {
     title: "Qué ha cambiado en el catálogo: licencias, archivos, releases",
     description:

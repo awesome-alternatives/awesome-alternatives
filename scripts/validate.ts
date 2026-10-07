@@ -6,6 +6,7 @@ import { loadCatalog } from "./lib/catalog.ts";
 import { mapLimit } from "./lib/gather.ts";
 import { createGitHub } from "./lib/github.ts";
 import { checkCapabilityDocs, checkHomepage, checkMigrations } from "./lib/links.ts";
+import { checkable } from "./lib/listed.ts";
 import { checkMigrationPages } from "./lib/migrations.ts";
 import { renderFindings } from "./lib/report.ts";
 import { replacedSlugs } from "./lib/rules.ts";
@@ -20,9 +21,10 @@ const targets = selectSlugs(args, known);
 const gh = createGitHub(process.env.GITHUB_TOKEN);
 const now = new Date();
 const replaced = replacedSlugs(catalog.tools);
+const checked = checkable(catalog.tools, targets);
 
 const remote = await mapLimit(
-  catalog.tools.filter((t) => targets.includes(t.slug)),
+  checked,
   4,
   (tool) => verifyTool(gh, tool, now, replaced),
 );
@@ -32,7 +34,7 @@ const homepages = await mapLimit(
   (product) => checkHomepage(product),
 );
 const migrations = await mapLimit(
-  catalog.tools.filter((t) => targets.includes(t.slug)),
+  checked,
   4,
   async (tool) => [...(await checkMigrations(tool)), ...(await checkCapabilityDocs(tool))],
 );

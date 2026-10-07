@@ -313,6 +313,15 @@ export const en = {
     ledeAfter: " you were looking for.",
   },
 
+  banned: {
+    title: "{name} is no longer listed",
+    description: "{name} has been removed from the awesome-alternatives catalog.",
+    heading: "{name} is no longer listed",
+    notice: "This tool has been removed from the catalog and is not recommended here.",
+    reason: "Reason",
+    back: "Back to the catalog",
+  },
+
   changes: {
     title: "What changed in the catalog: licences, archives, releases",
     description:

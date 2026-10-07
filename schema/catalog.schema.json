@@ -30,12 +30,28 @@
       "type": "array",
       "items": { "$ref": "#/$defs/product" }
     },
+    "banned": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/banned" }
+    },
     "categories": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/category" }
     }
   },
   "$defs": {
+    "banned": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "name", "repository", "category", "reason"],
+      "properties": {
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "repository": { "type": "string", "pattern": "^https://github\\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+$" },
+        "category": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 300 }
+      }
+    },
     "category": {
       "type": "object",
       "additionalProperties": false,

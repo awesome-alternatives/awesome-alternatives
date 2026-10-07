@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { basename, resolve } from "node:path";
 
 import config from "../astro.config.mjs";
-import { tools } from "../src/lib/catalog.ts";
+import { banned, tools } from "../src/lib/catalog.ts";
 import { auditSitemap, indexableAs, locs } from "../src/lib/sitemap.ts";
 
 const DIST = resolve(import.meta.dirname, "../dist");
@@ -12,7 +12,7 @@ const site = config.site;
 if (!site) throw new Error("astro.config.mjs sets no site");
 
 const listed = locs(read("sitemap-index.xml")).flatMap((sitemap) => locs(read(basename(new URL(sitemap).pathname))));
-const { missing, unwanted } = auditSitemap(site, tools, listed);
+const { missing, unwanted } = auditSitemap(site, tools, listed, banned);
 
 const pageOf = (url: string) => resolve(DIST, `.${new URL(url).pathname}`, "index.html");
 const elsewhere = listed.filter((url) => !indexableAs(url, readFileSync(pageOf(url), "utf8")));

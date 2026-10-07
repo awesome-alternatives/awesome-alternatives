@@ -74,12 +74,44 @@ replaces:
   such as `helm-charts` or `docker`, and warns about any it cannot find. An artefact published
   elsewhere, like a vendor's own apt repository, is fine: say where in the pull request.
 
+- `banned` is optional and set by maintainers, see [Banning an entry](#banning-an-entry).
+
 Do not add stars, versions, licences or descriptions. The schema rejects them: those come from
 GitHub, so they cannot drift or be inflated.
 
 By opening a pull request that adds or edits a file under `data/`, you license that contribution under
 [CC BY-SA 4.0](LICENSE-DATA), like the rest of the catalog. Code contributions are licensed under
 [AGPL-3.0](LICENSE).
+
+## Banning an entry
+
+A maintainer can take an entry off the site without deleting it, for a tool that is harmful or
+that the catalog can no longer accept. Add `banned` with the reason, in plain English, up to 300
+characters, stating facts a reader can check:
+
+```yaml
+name: Example
+repository: https://github.com/acme/example
+category: release-automation
+banned: The maintainers removed the licence file and the repository now ships a closed binary.
+```
+
+A banned entry:
+
+- disappears from the catalog, the README, the category pages, the counts, search, the
+  alternatives and comparison pages, the feeds and the API, and the refresh stops reading its
+  repository. Replacements that pointed at it are dropped from the published catalog, and a
+  closed product only that tool replaced is dropped with it. The YAML in `data/` is never
+  rewritten.
+- keeps its slug, so nobody adds it again under the same name.
+- keeps its page at `/tools/<slug>/`, in every language, with the name, a notice that it is no
+  longer listed, the reason and a link back to the catalog. The page is `noindex,nofollow` and
+  left out of the sitemap.
+- skips the GitHub checks in CI, so a banned tool whose repository vanished does not fail the
+  build. The schema and structure checks still apply.
+
+Published banned entries are listed under `banned` in `generated/catalog.json`. To lift a ban,
+delete the `banned` line: the tool is listed again at the next refresh.
 
 ## Replacing a closed product
 

@@ -1,6 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { loadSoundCatalog } from "./lib/catalog.ts";
+import { loadListedCatalog } from "./lib/catalog.ts";
 import { gitEventHistory } from "./lib/event-history.ts";
 import { mergeEntries, type RefreshedEntry } from "./lib/merge.ts";
 import { publishOrExplain, readPublished } from "./lib/publish.ts";
@@ -12,7 +12,7 @@ if (!entriesDir) {
 }
 
 const root = process.cwd();
-const catalog = await loadSoundCatalog(root);
+const catalog = await loadListedCatalog(root);
 const files = (await readdir(entriesDir)).filter((f) => f.endsWith(".json"));
 const entries = await Promise.all(
   files.map(async (f) => JSON.parse(await readFile(join(entriesDir, f), "utf8")) as RefreshedEntry),

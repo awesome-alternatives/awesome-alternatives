@@ -96,6 +96,7 @@ test("indexableAs accepts a page only when it canonicalises to itself and is not
   assert.ok(indexableAs(url, `<link rel="canonical" href="${url}">`));
   assert.ok(!indexableAs(url, `<link rel="canonical" href="${SITE}/alternatives/cocogitto/">`));
   assert.ok(!indexableAs(url, `<meta name="robots" content="noindex" />`));
+  assert.ok(!indexableAs(url, `<link rel="canonical" href="${url}"><meta name="robots" content="noindex,nofollow" />`));
 });
 
 test("locs reads every loc, trimming whitespace", () => {
@@ -119,4 +120,14 @@ test("auditSitemap reports what a locale is missing and flags a translated 404",
 test("auditSitemap treats a URL without its trailing slash as missing", () => {
   const listed = expectedPaths(catalog).map((p) => new URL(p, SITE).href.replace(/\/$/, ""));
   assert.equal(auditSitemap(SITE, catalog, listed).missing.length, expectedPaths(catalog).length);
+});
+
+test("auditSitemap flags a banned tool page the sitemap lists, in every locale", () => {
+  const banned = [{ slug: "gone" }];
+  const listed = [...expectedPaths(catalog), "/tools/gone/", "/fr/tools/gone/"].map((path) => new URL(path, SITE).href);
+  assert.deepEqual(auditSitemap(SITE, catalog, listed, banned).unwanted, [
+    new URL("/tools/gone/", SITE).href,
+    new URL("/fr/tools/gone/", SITE).href,
+  ]);
+  assert.deepEqual(auditSitemap(SITE, catalog, expectedPaths(catalog).map((path) => new URL(path, SITE).href), banned).unwanted, []);
 });

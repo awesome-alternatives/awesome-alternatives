@@ -43,6 +43,10 @@ export function unindexedPaths(tools: CatalogEntry[]): string[] {
   return LOCALES.flatMap((locale) => replaced.map((path) => pathFor(locale, path)));
 }
 
+export function bannedPaths(banned: readonly { slug: string }[]): string[] {
+  return LOCALES.flatMap((locale) => banned.map((b) => pathFor(locale, `/tools/${b.slug}/`)));
+}
+
 export function expectedPaths(tools: CatalogEntry[]): string[] {
   const unindexed = new Set(unindexedPaths(tools));
   return LOCALES.flatMap((locale) => barePaths(tools).map((path) => pathFor(locale, path))).filter(
@@ -50,27 +54,36 @@ export function expectedPaths(tools: CatalogEntry[]): string[] {
   );
 }
 
-export function unwantedPaths(tools: CatalogEntry[]): string[] {
-  return [...LOCALES.flatMap((locale) => UNWANTED.map((path) => pathFor(locale, path))), ...unindexedPaths(tools)];
+export function unwantedPaths(tools: CatalogEntry[], banned: readonly { slug: string }[] = []): string[] {
+  return [
+    ...LOCALES.flatMap((locale) => UNWANTED.map((path) => pathFor(locale, path))),
+    ...unindexedPaths(tools),
+    ...bannedPaths(banned),
+  ];
 }
 
 export function indexableAs(url: string, html: string): boolean {
   const canonical = /<link rel="canonical" href="([^"]*)"/.exec(html)?.[1];
-  return !/<meta name="robots" content="noindex"/.test(html) && canonical === url;
+  return !/<meta name="robots" content="noindex[",]/.test(html) && canonical === url;
 }
 
 export function locs(xml: string): string[] {
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 }
 
-export function auditSitemap(site: string, tools: CatalogEntry[], listed: string[]): SitemapAudit {
+export function auditSitemap(
+  site: string,
+  tools: CatalogEntry[],
+  listed: string[],
+  banned: readonly { slug: string }[] = [],
+): SitemapAudit {
   const urls = new Set(listed);
   const url = (path: string) => new URL(path, site).href;
   return {
     missing: expectedPaths(tools)
       .map(url)
       .filter((u) => !urls.has(u)),
-    unwanted: unwantedPaths(tools)
+    unwanted: unwantedPaths(tools, banned)
       .map(url)
       .filter((u) => urls.has(u)),
   };
