@@ -1,0 +1,7 @@
+name: Pirate Weather
+repository: https://github.com/Pirate-Weather/pirateweather
+category: weather
+replaces:
+  - tool: openweather
+    fit: partial
+    note: Forecast API with minutely, hourly and daily data built on public weather models; narrower than the OpenWeather API.

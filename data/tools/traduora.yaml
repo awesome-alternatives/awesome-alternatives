@@ -8,4 +8,10 @@ replaces:
   - tool: crowdin
     fit: partial
     note: Team translation of app strings with a REST API; no git sync or machine translation.
+  - tool: phrase
+    fit: partial
+    note: Terms, locales and an API for translators; no translation memory workflow or review stages.
+  - tool: transifex
+    fit: partial
+    note: Terms, locales and an API for translators; no translation memory workflow or review stages.
 deploy: [container, compose]

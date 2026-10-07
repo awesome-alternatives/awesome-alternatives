@@ -8,3 +8,6 @@ replaces:
   - tool: black-duck
     fit: partial
     note: Scans dependencies and images for vulnerabilities and reports licences; no snippet matching or approval workflow.
+  - tool: wiz
+    fit: partial
+    note: Scans images, repositories, IaC and Kubernetes clusters for vulnerabilities and misconfigurations; no cloud account graph or attack path analysis.

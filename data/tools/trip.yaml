@@ -1,0 +1,7 @@
+name: TRIP
+repository: https://github.com/itskovacs/trip
+category: travel-planning
+replaces:
+  - tool: tripit
+    fit: partial
+    note: Self-hosted itinerary and points of interest on a map; no email import.

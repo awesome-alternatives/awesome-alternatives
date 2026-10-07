@@ -1,0 +1,8 @@
+name: SparkyFitness
+repository: https://github.com/CodeWithCJ/SparkyFitness
+category: fitness-tracking
+terms: source-available
+replaces:
+  - tool: myfitnesspal
+    fit: full
+    note: Food diary, workouts and goals on your own server; the licence allows non-commercial use only.

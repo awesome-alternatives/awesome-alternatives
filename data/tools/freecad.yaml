@@ -11,3 +11,6 @@ replaces:
   - tool: autocad
     fit: partial
     note: Parametric 3D modelling with a 2D drafting workbench; DWG import and export goes through converters.
+  - tool: onshape
+    fit: partial
+    note: Parametric solid modelling with sketches and assemblies on the desktop; no browser access or live collaboration.

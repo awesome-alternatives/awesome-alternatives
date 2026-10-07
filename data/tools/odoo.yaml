@@ -6,3 +6,9 @@ replaces:
   - tool: netsuite
     fit: full
     note: Accounting, inventory, sales, manufacturing and HR modules; some apps are in the Enterprise edition only.
+  - tool: sortly
+    fit: partial
+    note: Inventory app with barcode scanning, locations and reordering rules; part of a larger business suite.
+  - tool: square-pos
+    fit: partial
+    note: Point of sale app with offline mode, receipts and payment terminal support; part of a larger business suite.

@@ -5,4 +5,7 @@ replaces:
   - tool: bitpay
     fit: full
     note: Accepts Bitcoin payments straight to your own wallet, with no processor in between.
+  - tool: stripe
+    fit: partial
+    note: Accepts Bitcoin and other crypto payments with no processor in between; no card payments.
 deploy: [container, compose]

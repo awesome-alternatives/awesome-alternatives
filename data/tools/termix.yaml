@@ -1,0 +1,8 @@
+name: Termix
+repository: https://github.com/Termix-SSH/Termix
+category: terminal-emulator
+terms: open
+replaces:
+  - tool: termius
+    fit: full
+    note: Web-based SSH terminals, tunnels and file manager with saved hosts, running on your own server.

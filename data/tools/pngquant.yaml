@@ -1,0 +1,8 @@
+name: pngquant
+repository: https://github.com/kornelski/pngquant
+category: media-converter
+terms: open
+replaces:
+  - tool: tinypng
+    fit: full
+    note: Lossy PNG compression by palette quantization from the command line; no JPEG or WebP support and no web interface.

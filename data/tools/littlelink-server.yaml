@@ -1,0 +1,7 @@
+name: LittleLink Server
+repository: https://github.com/timothystewart6/littlelink-server
+category: link-in-bio
+replaces:
+  - tool: linktree
+    fit: full
+    note: Self-hosted link page configured through environment variables; no admin interface or analytics.

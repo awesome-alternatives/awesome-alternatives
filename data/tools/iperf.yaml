@@ -1,0 +1,8 @@
+name: iperf
+repository: https://github.com/esnet/iperf
+category: speed-test
+terms: open
+replaces:
+  - tool: speedtest-by-ookla
+    fit: partial
+    note: Throughput tests between two hosts you control; no public server network.

@@ -8,3 +8,6 @@ replaces:
   - tool: bolt-new
     fit: partial
     note: Generates UI components from a prompt with a live preview; no full app generation or deploy.
+  - tool: lovable
+    fit: partial
+    note: Generates UI components from a prompt with live preview; no backend, database or deployment.

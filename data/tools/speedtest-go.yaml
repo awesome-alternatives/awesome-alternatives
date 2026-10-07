@@ -1,0 +1,7 @@
+name: speedtest-go
+repository: https://github.com/showwin/speedtest-go
+category: speed-test
+replaces:
+  - tool: speedtest-by-ookla
+    fit: partial
+    note: Command-line client that measures speed against speedtest.net servers; no desktop app or result history.

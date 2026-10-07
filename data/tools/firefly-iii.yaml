@@ -11,4 +11,7 @@ replaces:
   - tool: monarch-money
     fit: partial
     note: Accounts, budgets, rules and reports in a web app, with bank transactions brought in through its separate data importer; no investment tracking.
+  - tool: rocket-money
+    fit: partial
+    note: Budgets, recurring transactions and reports; no subscription cancellation or bill negotiation.
 deploy: [container, compose, helm]

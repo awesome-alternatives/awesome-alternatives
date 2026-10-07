@@ -5,3 +5,6 @@ replaces:
   - tool: google-maps-platform
     fit: partial
     note: Geocoding and autocomplete over OpenStreetMap and other open datasets.
+  - tool: mapbox
+    fit: partial
+    note: Geocoding and reverse geocoding on open data; no maps or routing.

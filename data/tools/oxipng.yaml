@@ -1,0 +1,7 @@
+name: oxipng
+repository: https://github.com/oxipng/oxipng
+category: media-converter
+replaces:
+  - tool: tinypng
+    fit: partial
+    note: Lossless PNG optimization; smaller gains than TinyPNG lossy compression and no JPEG support.

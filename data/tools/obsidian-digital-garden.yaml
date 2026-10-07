@@ -1,0 +1,7 @@
+name: Obsidian Digital Garden
+repository: https://github.com/oleeskild/obsidian-digital-garden
+category: static-site-generator
+replaces:
+  - tool: obsidian-publish
+    fit: full
+    note: Publishes chosen Obsidian notes to your own site with backlinks and a graph; needs a GitHub repository and a static host.

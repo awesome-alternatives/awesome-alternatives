@@ -5,3 +5,6 @@ replaces:
   - tool: adobe-animate
     fit: partial
     note: Frame-by-frame raster and vector drawing with onion skinning, without tweening or rigging.
+  - tool: toon-boom-harmony
+    fit: partial
+    note: Frame-by-frame 2D animation with bitmap and vector layers; no rigging or compositing.

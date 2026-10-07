@@ -1,0 +1,7 @@
+name: Perlite
+repository: https://github.com/secure-77/Perlite
+category: knowledge-base
+replaces:
+  - tool: obsidian-publish
+    fit: partial
+    note: Renders an Obsidian vault on a PHP server with search and graph view; publishes the whole vault folder.

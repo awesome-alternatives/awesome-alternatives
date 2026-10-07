@@ -11,3 +11,6 @@ replaces:
   - tool: gamemaker
     fit: partial
     note: 2D and 3D engine with its own GDScript language and an editor.
+  - tool: unreal-engine
+    fit: partial
+    note: Open source engine with 2D and 3D rendering and its own scripting language; less capable for high-fidelity 3D.

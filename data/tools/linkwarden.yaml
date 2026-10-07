@@ -8,4 +8,7 @@ replaces:
   - tool: pocket
     fit: full
     note: Saves pages with a reader view.
+  - tool: pinboard
+    fit: full
+    note: Tagged bookmarks in collections with page archiving and full-text search.
 deploy: [container, compose]

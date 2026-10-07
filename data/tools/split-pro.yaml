@@ -1,0 +1,7 @@
+name: Split Pro
+repository: https://github.com/oss-apps/split-pro
+category: expense-splitting
+replaces:
+  - tool: splitwise
+    fit: full
+    note: Shared expenses, balances and settle-up with multiple currencies, on your own server.

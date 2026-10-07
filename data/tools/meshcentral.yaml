@@ -8,4 +8,7 @@ replaces:
   - tool: anydesk
     fit: partial
     note: Web-based remote desktop, terminal and file access to machines running its agent.
+  - tool: ninjaone
+    fit: partial
+    note: Remote desktop, terminal and file access to managed machines through an agent; no patch management or ticketing.
 deploy: [container]

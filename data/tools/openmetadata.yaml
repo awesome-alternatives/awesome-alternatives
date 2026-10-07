@@ -11,4 +11,7 @@ replaces:
   - tool: atlan
     fit: full
     note: Data catalog with lineage, glossary and governance workflows, with connectors for common warehouses.
+  - tool: monte-carlo
+    fit: partial
+    note: Data quality tests, profiling, lineage and alerts; no learned anomaly detection.
 deploy: [container, helm, compose]

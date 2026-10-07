@@ -9,3 +9,6 @@ replaces:
   - tool: bolt-new
     fit: partial
     note: Builds and previews web apps from a chat on your machine, with your own model keys.
+  - tool: v0
+    fit: full
+    note: Prompts generate a working React app on your own machine with your own model keys; no hosted preview or one-click deploy.

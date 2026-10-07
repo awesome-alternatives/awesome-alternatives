@@ -1,0 +1,10 @@
+name: Zoo Modeling App
+repository: https://github.com/KittyCAD/modeling-app
+category: cad
+replaces:
+  - tool: onshape
+    fit: partial
+    note: Parametric CAD driven by code and a visual editor, on the desktop or in the browser; fewer assembly and drawing tools.
+  - tool: solidworks
+    fit: partial
+    note: Parametric CAD driven by code and a visual editor; fewer assembly and drawing tools.

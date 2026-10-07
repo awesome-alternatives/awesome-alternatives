@@ -8,3 +8,6 @@ replaces:
   - tool: fusion-360
     fit: partial
     note: Parametric modelling in the browser or as a desktop app; no CAM or simulation.
+  - tool: solidworks
+    fit: partial
+    note: Browser-based parametric modelling with sketches and boolean operations; no assemblies or drawings.

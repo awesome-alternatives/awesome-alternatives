@@ -9,4 +9,7 @@ replaces:
   - tool: ifttt
     fit: full
     note: Trigger-and-action workflows with hundreds of integrations and code steps, on your own server.
+  - tool: splunk-soar
+    fit: partial
+    note: Workflow automation with many integrations for building response playbooks; no case management or built-in security actions.
 deploy: [container]

@@ -1,0 +1,7 @@
+name: Convex Chef
+repository: https://github.com/get-convex/chef
+category: ai-app-builder
+replaces:
+  - tool: lovable
+    fit: full
+    note: Builds a full-stack app with backend and database from a prompt; tied to the Convex backend.

@@ -5,3 +5,6 @@ replaces:
   - tool: photoshop
     fit: partial
     note: Nondestructive vector and raster editing with layers and a node graph, in alpha; photo editing and digital painting are still on its roadmap.
+  - tool: procreate
+    fit: partial
+    note: Raster and vector editor with brushes and layers; no touch-first iPad interface.

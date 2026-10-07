@@ -1,0 +1,7 @@
+name: OpenNutriTracker
+repository: https://github.com/simonoppowa/OpenNutriTracker
+category: fitness-tracking
+replaces:
+  - tool: myfitnesspal
+    fit: partial
+    note: Calorie and macro tracking with barcode scanning; no social features and a smaller food database.

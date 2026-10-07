@@ -8,3 +8,6 @@ replaces:
   - tool: airbyte
     fit: partial
     note: EL pipelines defined in YAML and run from the command line.
+  - tool: talend
+    fit: partial
+    note: Singer-based extract and load pipelines with dbt transforms; code-first, with no visual designer.

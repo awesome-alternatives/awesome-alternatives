@@ -5,3 +5,6 @@ replaces:
   - tool: adobe-animate
     fit: partial
     note: Vector and bitmap animation with automatic tweening and bones, rendered to video and image sequences.
+  - tool: toon-boom-harmony
+    fit: partial
+    note: Vector animation with bones and tweening; less suited to frame-by-frame drawing.

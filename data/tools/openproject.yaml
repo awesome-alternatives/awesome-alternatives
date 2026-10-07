@@ -14,4 +14,7 @@ replaces:
   - tool: monday-com
     fit: partial
     note: Projects, boards, Gantt timelines and time tracking.
+  - tool: microsoft-project
+    fit: partial
+    note: Gantt charts with task dependencies and work packages; no resource leveling.
 deploy: [container, helm]

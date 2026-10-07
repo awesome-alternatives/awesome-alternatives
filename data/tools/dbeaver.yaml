@@ -8,3 +8,6 @@ replaces:
   - tool: datagrip
     fit: full
     note: SQL editor with completion, ER diagrams and data transfer across many engines.
+  - tool: navicat
+    fit: full
+    note: SQL editor, schema browser, data editor and ER diagrams for many databases; NoSQL support is in the paid edition.

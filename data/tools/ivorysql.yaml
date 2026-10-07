@@ -1,0 +1,7 @@
+name: IvorySQL
+repository: https://github.com/IvorySQL/IvorySQL
+category: relational-database
+replaces:
+  - tool: oracle-database
+    fit: full
+    note: PostgreSQL with Oracle-compatible syntax and PL/iSQL; no RAC or Data Guard equivalents.

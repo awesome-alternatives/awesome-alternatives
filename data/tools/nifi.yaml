@@ -5,4 +5,7 @@ replaces:
   - tool: informatica
     fit: partial
     note: Flow-based routing and transformation of data between systems, designed in a web UI.
+  - tool: talend
+    fit: partial
+    note: Visual flow design for moving and transforming data between systems; no data quality components or code generation.
 deploy: [container]

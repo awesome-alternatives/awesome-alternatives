@@ -8,3 +8,6 @@ replaces:
   - tool: notion
     fit: partial
     note: Blocks and database views, local-first.
+  - tool: typora
+    fit: partial
+    note: Block-based WYSIWYG markdown editor; a full note system rather than a single-file editor.

@@ -1,0 +1,7 @@
+name: Clementine
+repository: https://github.com/clementine-player/Clementine
+category: music-player
+replaces:
+  - tool: musicbee
+    fit: partial
+    note: Library player with tag editing, smart playlists and internet radio; no MusicBee skins or plugin set.

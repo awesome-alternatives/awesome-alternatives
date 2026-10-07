@@ -5,3 +5,6 @@ replaces:
   - tool: guitar-pro
     fit: full
     note: Tablature editor with playback that imports and exports Guitar Pro files.
+  - tool: sibelius
+    fit: partial
+    note: Scores in standard notation and tablature with playback; aimed at guitar and weaker for orchestral engraving.
