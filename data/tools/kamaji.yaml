@@ -1,3 +1,7 @@
 name: Kamaji
 repository: https://github.com/clastix/kamaji
 category: container-orchestration
+replaces:
+  - tool: amazon-eks
+    fit: partial
+    note: Hosted control planes you run as pods on your own management cluster.

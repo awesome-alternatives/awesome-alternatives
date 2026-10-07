@@ -1,3 +1,7 @@
 name: VuePress
 repository: https://github.com/vuepress/core
 category: documentation-site
+replaces:
+  - tool: docusaurus
+    fit: full
+    note: Markdown documentation site with Vue components instead of React.

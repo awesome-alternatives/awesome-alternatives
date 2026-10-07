@@ -1,3 +1,7 @@
 name: Organizr
 repository: https://github.com/causefx/Organizr
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: full
+    note: Self-hosted homepage that groups services as tabs, with user login and access groups.

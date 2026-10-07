@@ -1,4 +1,8 @@
 name: InspIRCd
 repository: https://github.com/inspircd/inspircd
 category: irc-server
+replaces:
+  - tool: unrealircd
+    fit: full
+    note: Modular IRC server with a configurable module set.
 terms: open

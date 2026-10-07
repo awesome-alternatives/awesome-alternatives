@@ -1,3 +1,7 @@
 name: SimpleSAMLphp
 repository: https://github.com/simplesamlphp/simplesamlphp
 category: identity-provider
+replaces:
+  - tool: keycloak
+    fit: partial
+    note: SAML and OIDC identity provider and service provider written in PHP, with no admin console.

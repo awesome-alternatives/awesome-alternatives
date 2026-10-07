@@ -1,3 +1,7 @@
 name: Photon
 repository: https://github.com/Xyphyn/photon
 category: social-client
+replaces:
+  - tool: reddit
+    fit: partial
+    note: Web client for Lemmy; communities and history do not carry over from Reddit.

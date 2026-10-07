@@ -1,0 +1,5 @@
+name: ANY.RUN
+homepage: https://any.run
+vendor: ANY.RUN
+category: malware-scanner
+description: Hosted interactive malware sandbox that runs submitted samples in virtual machines and reports their behaviour.

@@ -1,3 +1,7 @@
 name: sbt
 repository: https://github.com/sbt/sbt
 category: build-system
+replaces:
+  - tool: maven
+    fit: partial
+    note: Builds JVM projects from a Scala build definition, strongest on Scala; Maven plugins do not carry over.

@@ -1,4 +1,8 @@
 name: Traccar
 repository: https://github.com/traccar/traccar
 category: location-history
+replaces:
+  - tool: google-maps-timeline
+    fit: partial
+    note: Tracks phones and GPS devices on your own server; a live map and history, with no automatic place detection.
 deploy: [container]

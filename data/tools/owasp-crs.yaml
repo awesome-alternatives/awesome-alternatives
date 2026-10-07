@@ -1,3 +1,7 @@
 name: OWASP CRS
 repository: https://github.com/coreruleset/coreruleset
 category: waf
+replaces:
+  - tool: cloudflare-waf
+    fit: partial
+    note: Open rule set of generic attack detection that runs on ModSecurity or Coraza, with no managed rule updates.

@@ -1,4 +1,8 @@
 name: ZNC
 repository: https://github.com/znc/znc
 category: irc-server
+replaces:
+  - tool: irccloud
+    fit: partial
+    note: Bouncer that stays connected and replays buffers; bring your own IRC client.
 deploy: [container]

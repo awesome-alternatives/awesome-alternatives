@@ -1,3 +1,7 @@
 name: Premake
 repository: https://github.com/premake/premake-core
 category: build-system
+replaces:
+  - tool: meson
+    fit: partial
+    note: Generates project files from Lua scripts and leaves compilation to the generated build system.

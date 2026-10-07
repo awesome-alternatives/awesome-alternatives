@@ -1,3 +1,7 @@
 name: CookCLI
 repository: https://github.com/cooklang/cookcli
 category: recipe-manager
+replaces:
+  - tool: paprika
+    fit: partial
+    note: Recipes as plain text files with a CLI and web server; no mobile apps or sync.

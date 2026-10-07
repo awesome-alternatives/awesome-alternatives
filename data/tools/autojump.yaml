@@ -1,4 +1,8 @@
 name: autojump
 repository: https://github.com/wting/autojump
 category: directory-jumper
+replaces:
+  - tool: z
+    fit: full
+    note: Jumps to frecent directories from a Python script with its own database.
 terms: open

@@ -1,3 +1,7 @@
 name: Homer
 repository: https://github.com/bastienwirtz/homer
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: partial
+    note: Static page of service links built from a YAML file, with no admin interface.

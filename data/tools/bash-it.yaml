@@ -1,3 +1,7 @@
 name: Bash-it
 repository: https://github.com/Bash-it/bash-it
 category: shell-prompt
+replaces:
+  - tool: oh-my-bash
+    fit: full
+    note: Bash framework of themes, aliases and completions loaded from a plugin directory.

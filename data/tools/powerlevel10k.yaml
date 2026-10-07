@@ -1,3 +1,10 @@
 name: Powerlevel10k
 repository: https://github.com/romkatv/powerlevel10k
 category: shell-prompt
+replaces:
+  - tool: starship
+    fit: partial
+    note: Fast prompt for Zsh only, with a guided configuration wizard.
+  - tool: spaceship
+    fit: full
+    note: Zsh prompt with git status and language segments, loaded instantly.

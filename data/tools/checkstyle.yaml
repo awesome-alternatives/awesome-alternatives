@@ -1,3 +1,7 @@
 name: Checkstyle
 repository: https://github.com/checkstyle/checkstyle
 category: jvm-lint-format
+replaces:
+  - tool: sonarqube
+    fit: partial
+    note: Java style and convention rules only, with no server, dashboard or history.

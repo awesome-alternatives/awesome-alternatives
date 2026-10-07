@@ -1,3 +1,7 @@
 name: SwarmKit
 repository: https://github.com/moby/swarmkit
 category: container-orchestration
+replaces:
+  - tool: kubernetes
+    fit: partial
+    note: Docker-native clustering and scheduling with far fewer features and extension points.

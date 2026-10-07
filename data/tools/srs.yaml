@@ -1,4 +1,8 @@
 name: SRS
 repository: https://github.com/ossrs/srs
 category: video-hosting
+replaces:
+  - tool: wowza-streaming-engine
+    fit: partial
+    note: Live streaming server for RTMP, WebRTC, SRT and HLS, without DRM or a commercial control panel.
 deploy: [container]

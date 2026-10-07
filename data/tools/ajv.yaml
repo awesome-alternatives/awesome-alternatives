@@ -1,3 +1,10 @@
 name: Ajv
 repository: https://github.com/ajv-validator/ajv
 category: javascript-validation
+replaces:
+  - tool: joi
+    fit: partial
+    note: Validates against JSON Schema documents instead of a builder API.
+  - tool: zod
+    fit: partial
+    note: Validates against JSON Schema documents, with no built-in TypeScript type inference from the schema.

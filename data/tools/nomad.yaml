@@ -1,4 +1,8 @@
 name: Nomad
 repository: https://github.com/hashicorp/nomad
 category: container-orchestration
+replaces:
+  - tool: kubernetes
+    fit: partial
+    note: Schedules containers and plain binaries with its own job spec; far smaller ecosystem.
 terms: source-available

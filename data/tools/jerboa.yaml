@@ -1,3 +1,7 @@
 name: Jerboa
 repository: https://github.com/LemmyNet/jerboa
 category: social-client
+replaces:
+  - tool: reddit
+    fit: partial
+    note: Android client for Lemmy; communities and history do not carry over from Reddit.

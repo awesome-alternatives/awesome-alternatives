@@ -1,0 +1,5 @@
+name: IRCCloud
+homepage: https://www.irccloud.com
+vendor: IRCCloud
+category: irc-server
+description: Hosted IRC client that stays connected for you and syncs history between web and mobile apps.

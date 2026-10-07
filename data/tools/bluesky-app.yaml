@@ -1,3 +1,7 @@
 name: Bluesky
 repository: https://github.com/bluesky-social/social-app
 category: social-client
+replaces:
+  - tool: x-twitter
+    fit: partial
+    note: Short-post timeline on the AT Protocol network; followers and history do not carry over.

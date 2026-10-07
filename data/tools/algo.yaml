@@ -1,3 +1,7 @@
 name: Algo VPN
 repository: https://github.com/trailofbits/algo
 category: vpn-server
+replaces:
+  - tool: nordvpn
+    fit: partial
+    note: Sets up a personal WireGuard and IPsec server on your own cloud account; one exit location, no server network.

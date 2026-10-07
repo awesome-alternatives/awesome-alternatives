@@ -1,4 +1,8 @@
 name: Homarr
 repository: https://github.com/homarr-labs/homarr
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: full
+    note: Dashboard of app tiles with a drag and drop editor and service integrations.
 deploy: [container]

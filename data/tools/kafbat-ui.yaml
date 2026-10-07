@@ -1,3 +1,7 @@
 name: Kafbat UI
 repository: https://github.com/kafbat/kafka-ui
 category: kafka-ui
+replaces:
+  - tool: conduktor
+    fit: partial
+    note: Browses topics, consumers and schemas and edits configs, with no managed data policies.

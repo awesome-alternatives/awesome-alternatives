@@ -1,3 +1,7 @@
 name: Kafdrop
 repository: https://github.com/obsidiandynamics/kafdrop
 category: kafka-ui
+replaces:
+  - tool: conduktor
+    fit: partial
+    note: Read-mostly browser for topics, partitions and consumer groups.

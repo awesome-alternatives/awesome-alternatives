@@ -1,3 +1,7 @@
 name: Xmake
 repository: https://github.com/xmake-io/xmake
 category: build-system
+replaces:
+  - tool: meson
+    fit: full
+    note: Lua build files with a built-in package manager for C and C++ projects.

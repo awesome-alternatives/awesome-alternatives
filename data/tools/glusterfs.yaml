@@ -1,3 +1,7 @@
 name: GlusterFS
 repository: https://github.com/gluster/glusterfs
 category: distributed-storage
+replaces:
+  - tool: ceph
+    fit: partial
+    note: Scale-out network file system only, with no block or object storage.

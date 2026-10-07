@@ -1,3 +1,7 @@
 name: Tinyauth
 repository: https://github.com/tinyauthapp/tinyauth
 category: identity-provider
+replaces:
+  - tool: authelia
+    fit: partial
+    note: Forward-auth login for reverse proxies with local users and OAuth providers; fewer access rules.

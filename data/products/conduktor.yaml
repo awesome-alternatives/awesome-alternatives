@@ -1,0 +1,5 @@
+name: Conduktor
+homepage: https://www.conduktor.io
+vendor: Conduktor
+category: kafka-ui
+description: Commercial console for Apache Kafka that browses topics, consumer groups and schemas and manages access and data policies.

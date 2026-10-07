@@ -1,3 +1,7 @@
 name: SpotBugs
 repository: https://github.com/spotbugs/spotbugs
 category: jvm-lint-format
+replaces:
+  - tool: sonarqube
+    fit: partial
+    note: Bytecode analysis for Java bugs, run as a CLI or build plugin without a server.

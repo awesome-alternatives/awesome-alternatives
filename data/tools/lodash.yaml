@@ -1,4 +1,8 @@
 name: Lodash
 repository: https://github.com/lodash/lodash
 category: javascript-utility
+replaces:
+  - tool: underscore
+    fit: full
+    note: Same utility functions and chaining, with a larger set and modular imports.
 terms: open

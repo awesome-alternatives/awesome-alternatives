@@ -1,3 +1,10 @@
 name: Mill
 repository: https://github.com/com-lihaoyi/mill
 category: build-system
+replaces:
+  - tool: sbt
+    fit: full
+    note: Scala builds with cached tasks, defined in a Scala build file.
+  - tool: maven
+    fit: partial
+    note: Builds JVM projects with its own build file and plugins; Maven plugins do not carry over.

@@ -1,3 +1,10 @@
 name: Oh My Bash
 repository: https://github.com/ohmybash/oh-my-bash
 category: shell-prompt
+replaces:
+  - tool: bash-it
+    fit: full
+    note: Bash framework of themes, aliases and plugins, modelled on Oh My Zsh.
+  - tool: ohmyzsh
+    fit: partial
+    note: Same framework idea for Bash instead of Zsh.

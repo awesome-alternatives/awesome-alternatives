@@ -1,4 +1,8 @@
 name: Rook
 repository: https://github.com/rook/rook
 category: distributed-storage
+replaces:
+  - tool: longhorn
+    fit: partial
+    note: Runs Ceph on Kubernetes for block, file and object storage; heavier to operate than a block-only system.
 deploy: [helm]

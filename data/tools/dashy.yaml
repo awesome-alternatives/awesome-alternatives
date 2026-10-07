@@ -1,4 +1,8 @@
 name: Dashy
 repository: https://github.com/lissy93/dashy
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: full
+    note: Self-hosted start page of service links with a YAML config and status checks.
 deploy: [container]

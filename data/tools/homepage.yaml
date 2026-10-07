@@ -1,4 +1,8 @@
 name: Homepage
 repository: https://github.com/gethomepage/homepage
 category: homelab-dashboard
+replaces:
+  - tool: heimdall
+    fit: full
+    note: Dashboard of service links configured in YAML, with live widgets for many self-hosted apps.
 deploy: [container]

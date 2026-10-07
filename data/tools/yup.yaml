@@ -1,3 +1,10 @@
 name: Yup
 repository: https://github.com/jquense/yup
 category: javascript-validation
+replaces:
+  - tool: joi
+    fit: full
+    note: Chained schema builders with validation and casting, for browsers and Node.js.
+  - tool: zod
+    fit: full
+    note: Schema builders with TypeScript type inference.
