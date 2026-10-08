@@ -4,7 +4,7 @@ Linters and formatters for Swift.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19748 | none |
+| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19750 | none |
 | [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.63.1](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.63.1) | 8927 | none |
 
 [All categories](../README.md#catalog)

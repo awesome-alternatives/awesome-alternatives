@@ -4,17 +4,17 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Grav](https://github.com/getgrav/grav) | PHP | MIT | [2.2.5](https://github.com/getgrav/grav/releases/tag/2.2.5) signed | 15682 | Squarespace (partial) |
+| [Grav](https://github.com/getgrav/grav) | PHP | MIT | [2.2.5](https://github.com/getgrav/grav/releases/tag/2.2.5) signed | 15683 | Squarespace (partial) |
 | [django CMS](https://github.com/django-cms/django-cms) | Python | Other | [5.1.3](https://github.com/django-cms/django-cms/releases/tag/5.1.3) signed | 10674 | none |
-| [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8194 | Contentful (partial) |
-| [Umbraco](https://github.com/umbraco/Umbraco-CMS) | C# | MIT | [release-18.2.1](https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.2.1) signed | 5261 | Contentful (partial) |
-| [Joomla](https://github.com/joomla/joomla-cms) | PHP | GPL-2.0 | [6.1.4](https://github.com/joomla/joomla-cms/releases/tag/6.1.4) signed | 5143 | Wix (partial), Squarespace (partial) |
+| [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8195 | Contentful (partial) |
+| [Umbraco](https://github.com/umbraco/Umbraco-CMS) | C# | MIT | [release-18.2.1](https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.2.1) signed | 5265 | Contentful (partial) |
+| [Joomla](https://github.com/joomla/joomla-cms) | PHP | GPL-2.0 | [6.1.4](https://github.com/joomla/joomla-cms/releases/tag/6.1.4) signed | 5144 | Wix (partial), Squarespace (partial) |
 | [Statamic](https://github.com/statamic/cms) | PHP | Other | [v6.35.1](https://github.com/statamic/cms/releases/tag/v6.35.1) | 4905 | Contentful (partial) |
-| [Craft CMS](https://github.com/craftcms/cms) | PHP | Other | [5.11.4](https://github.com/craftcms/cms/releases/tag/5.11.4) | 3611 | Contentful (partial) |
+| [Craft CMS](https://github.com/craftcms/cms) | PHP | Other | [5.11.5](https://github.com/craftcms/cms/releases/tag/5.11.5) | 3611 | Contentful (partial) |
 | [Microweber](https://github.com/microweber/microweber) | HTML | MIT | [v2.0.20](https://github.com/microweber/microweber/releases/tag/v2.0.20) | 3440 | Wix (partial), Squarespace (partial) |
 | [Piranha CMS](https://github.com/PiranhaCMS/piranha.core) | C# | MIT | [v12.2](https://github.com/PiranhaCMS/piranha.core/releases/tag/v12.2) | 2197 | Umbraco (partial), Orchard Core (partial) |
 | [Kirby](https://github.com/getkirby/kirby) | PHP | Other | [5.6.1](https://github.com/getkirby/kirby/releases/tag/5.6.1) signed | 1535 | Contentful (partial) |
-| [Winter CMS](https://github.com/wintercms/winter) | PHP | MIT | [v1.2.14](https://github.com/wintercms/winter/releases/tag/v1.2.14) | 1520 | none |
+| [Winter CMS](https://github.com/wintercms/winter) | PHP | MIT | [v1.2.14](https://github.com/wintercms/winter/releases/tag/v1.2.14) | 1521 | none |
 | [ProcessWire](https://github.com/processwire/processwire) | PHP | Other | [3.0.259](https://github.com/processwire/processwire/releases/tag/3.0.259) | 1155 | Craft CMS (partial), Kirby (partial) |
 | [Backdrop CMS](https://github.com/backdrop/backdrop) | PHP | GPL-2.0 | [1.35.1](https://github.com/backdrop/backdrop/releases/tag/1.35.1) | 1049 | none |
 | [ClassicPress](https://github.com/ClassicPress/ClassicPress) | PHP | GPL-2.0 | [2.7.3+dev](https://github.com/ClassicPress/ClassicPress/releases/tag/2.7.3%2Bdev) | 859 | none |

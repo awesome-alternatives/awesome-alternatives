@@ -4,23 +4,23 @@ Draw diagrams and sketch on a shared canvas.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Excalidraw](https://github.com/excalidraw/excalidraw) | TypeScript | MIT | [v0.18.1](https://github.com/excalidraw/excalidraw/releases/tag/v0.18.1) | 133631 | Miro (partial), Lucidchart (partial) |
-| [Mermaid](https://github.com/mermaid-js/mermaid) | TypeScript | MIT | [@mermaid-js/tiny@12.1.0](https://github.com/mermaid-js/mermaid/releases/tag/%40mermaid-js/tiny%4012.1.0) | 90567 | Lucidchart (partial) |
-| [tldraw](https://github.com/tldraw/tldraw) | TypeScript | Other | [v5.5.2](https://github.com/tldraw/tldraw/releases/tag/v5.5.2) | 50793 | Miro (partial) |
-| [Diagrams](https://github.com/mingrammer/diagrams) | Python | MIT | [v0.25.1](https://github.com/mingrammer/diagrams/releases/tag/v0.25.1) signed | 42685 | Lucidchart (partial) |
-| [drawDB](https://github.com/drawdb-io/drawdb) | JavaScript | AGPL-3.0 | [v1.8.2](https://github.com/drawdb-io/drawdb/releases/tag/v1.8.2) | 39840 | Lucidchart (partial), dbdiagram.io (full) |
-| [D2](https://github.com/d2lang/d2) | Go | MPL-2.0 | [v0.9.0](https://github.com/d2lang/d2/releases/tag/v0.9.0) signed | 25572 | Lucidchart (partial) |
-| [ChartDB](https://github.com/chartdb/chartdb) | TypeScript | AGPL-3.0 | [v1.20.1](https://github.com/chartdb/chartdb/releases/tag/v1.20.1) signed | 22987 | dbdiagram.io (partial) |
-| [Drawnix](https://github.com/plait-board/drawnix) | TypeScript | MIT | [v0.4.0](https://github.com/plait-board/drawnix/releases/tag/v0.4.0) | 14914 | Miro (partial), XMind (partial) |
+| [Excalidraw](https://github.com/excalidraw/excalidraw) | TypeScript | MIT | [v0.18.1](https://github.com/excalidraw/excalidraw/releases/tag/v0.18.1) | 133664 | Miro (partial), Lucidchart (partial) |
+| [Mermaid](https://github.com/mermaid-js/mermaid) | TypeScript | MIT | [@mermaid-js/tiny@12.1.0](https://github.com/mermaid-js/mermaid/releases/tag/%40mermaid-js/tiny%4012.1.0) | 90576 | Lucidchart (partial) |
+| [tldraw](https://github.com/tldraw/tldraw) | TypeScript | Other | [v5.5.2](https://github.com/tldraw/tldraw/releases/tag/v5.5.2) | 50801 | Miro (partial) |
+| [Diagrams](https://github.com/mingrammer/diagrams) | Python | MIT | [v0.25.1](https://github.com/mingrammer/diagrams/releases/tag/v0.25.1) signed | 42686 | Lucidchart (partial) |
+| [drawDB](https://github.com/drawdb-io/drawdb) | JavaScript | AGPL-3.0 | [v1.8.2](https://github.com/drawdb-io/drawdb/releases/tag/v1.8.2) | 39846 | Lucidchart (partial), dbdiagram.io (full) |
+| [D2](https://github.com/d2lang/d2) | Go | MPL-2.0 | [v0.9.0](https://github.com/d2lang/d2/releases/tag/v0.9.0) signed | 25576 | Lucidchart (partial) |
+| [ChartDB](https://github.com/chartdb/chartdb) | TypeScript | AGPL-3.0 | [v1.20.1](https://github.com/chartdb/chartdb/releases/tag/v1.20.1) signed | 22988 | dbdiagram.io (partial) |
+| [Drawnix](https://github.com/plait-board/drawnix) | TypeScript | MIT | [v0.4.0](https://github.com/plait-board/drawnix/releases/tag/v0.4.0) | 14917 | Miro (partial), XMind (partial) |
 | [PlantUML](https://github.com/plantuml/plantuml) | Java | LGPL-3.0 | [v1.2026.8](https://github.com/plantuml/plantuml/releases/tag/v1.2026.8) | 13356 | Lucidchart (partial) |
-| [markmap](https://github.com/markmap/markmap) | TypeScript | MIT | [v0.18.0](https://github.com/markmap/markmap/releases/tag/v0.18.0) | 13150 | XMind (partial) |
-| [SimpleMindMap](https://github.com/wanglin2/mind-map) | JavaScript | MIT | [0.20.0](https://github.com/wanglin2/mind-map/releases/tag/0.20.0) | 12792 | XMind (full) |
-| [draw.io](https://github.com/jgraph/drawio) | JavaScript | Apache-2.0 | [v32.2.0](https://github.com/jgraph/drawio/releases/tag/v32.2.0) | 8604 | Lucidchart (full), Miro (partial) |
+| [markmap](https://github.com/markmap/markmap) | TypeScript | MIT | [v0.18.0](https://github.com/markmap/markmap/releases/tag/v0.18.0) | 13149 | XMind (partial) |
+| [SimpleMindMap](https://github.com/wanglin2/mind-map) | JavaScript | MIT | [0.20.0](https://github.com/wanglin2/mind-map/releases/tag/0.20.0) | 12800 | XMind (full) |
+| [draw.io](https://github.com/jgraph/drawio) | JavaScript | Apache-2.0 | [v32.3.0](https://github.com/jgraph/drawio/releases/tag/v32.3.0) | 8613 | Lucidchart (full), Miro (partial) |
 | [Freeplane](https://github.com/freeplane/freeplane) | Java | GPL-2.0 | [release-1.13.3](https://github.com/freeplane/freeplane/releases/tag/release-1.13.3) | 4394 | XMind (full) |
-| [Kroki](https://github.com/yuzutech/kroki) | JavaScript | MIT | [v0.33.0](https://github.com/yuzutech/kroki/releases/tag/v0.33.0) | 4363 | none |
+| [Kroki](https://github.com/yuzutech/kroki) | JavaScript | MIT | [v0.33.0](https://github.com/yuzutech/kroki/releases/tag/v0.33.0) | 4364 | none |
 | [Flowchart Fun](https://github.com/tone-row/flowchart-fun) | TypeScript | MIT | [1.70.0](https://github.com/tone-row/flowchart-fun/releases/tag/1.70.0) signed | 3371 | Lucidchart (partial) |
 | [OpenBoard](https://github.com/OpenBoard-org/OpenBoard) | C++ | GPL-3.0 | [v1.7.7](https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.7) | 3064 | Miro (partial), SMART Notebook (full) |
-| [WBO](https://github.com/lovasoa/whitebophir) | JavaScript | AGPL-3.0 | [v2.17.1](https://github.com/lovasoa/whitebophir/releases/tag/v2.17.1) | 2660 | Miro (partial) |
+| [WBO](https://github.com/lovasoa/whitebophir) | JavaScript | AGPL-3.0 | [v2.17.1](https://github.com/lovasoa/whitebophir/releases/tag/v2.17.1) | 2661 | Miro (partial) |
 | [Azimutt](https://github.com/azimuttapp/azimutt) | Elm | MIT | none | 2190 | dbdiagram.io (full) |
 | [Nextcloud Whiteboard](https://github.com/nextcloud/whiteboard) | JavaScript | AGPL-3.0 | [v2.0.0](https://github.com/nextcloud/whiteboard/releases/tag/v2.0.0) | 219 | Miro (partial) |
 
