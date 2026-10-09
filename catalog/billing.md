@@ -4,11 +4,11 @@ Usage-based billing, subscription management and invoicing.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Lago](https://github.com/getlago/lago) | Go | AGPL-3.0 | [v1.55.0](https://github.com/getlago/lago/releases/tag/v1.55.0) signed | 10662 | Stripe Billing (full), Chargebee (full) |
-| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [@polar-sh/better-auth@2.1.0](https://github.com/polarsource/polar/releases/tag/%40polar-sh/better-auth%402.1.0) | 10340 | Paddle (partial), Lemon Squeezy (partial), Stripe Billing (partial) |
-| [Flexprice](https://github.com/flexprice/flexprice) | Go | AGPL-3.0 | [v2.1.34](https://github.com/flexprice/flexprice/releases/tag/v2.1.34) signed | 6878 | Stripe Billing (full), Chargebee (partial) |
-| [Kill Bill](https://github.com/killbill/killbill) | Java | Apache-2.0 | [killbill-0.24.22](https://github.com/killbill/killbill/releases/tag/killbill-0.24.22) | 5787 | Stripe Billing (full), Chargebee (full), Stripe Payments (partial) |
-| [Autumn](https://github.com/useautumn/autumn) | TypeScript | Apache-2.0 | [atmn-v2.0.91](https://github.com/useautumn/autumn/releases/tag/atmn-v2.0.91) | 2792 | Stripe Billing (partial) |
-| [OpenMeter](https://github.com/openmeterio/openmeter) | Go | Apache-2.0 | [v1.0.0-beta.235](https://github.com/openmeterio/openmeter/releases/tag/v1.0.0-beta.235) | 2372 | Stripe Billing (partial) |
+| [Lago](https://github.com/getlago/lago) | Go | AGPL-3.0 | [v1.55.0](https://github.com/getlago/lago/releases/tag/v1.55.0) signed | 10665 | Stripe Billing (full), Chargebee (full) |
+| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [@polar-sh/better-auth@2.1.0](https://github.com/polarsource/polar/releases/tag/%40polar-sh/better-auth%402.1.0) | 10343 | Paddle (partial), Lemon Squeezy (partial), Stripe Billing (partial) |
+| [Flexprice](https://github.com/flexprice/flexprice) | Go | AGPL-3.0 | [v2.1.35](https://github.com/flexprice/flexprice/releases/tag/v2.1.35) signed | 6877 | Stripe Billing (full), Chargebee (partial) |
+| [Kill Bill](https://github.com/killbill/killbill) | Java | Apache-2.0 | [killbill-0.24.22](https://github.com/killbill/killbill/releases/tag/killbill-0.24.22) | 5790 | Stripe Billing (full), Chargebee (full), Stripe Payments (partial) |
+| [Autumn](https://github.com/useautumn/autumn) | TypeScript | Apache-2.0 | [atmn-v2.0.95](https://github.com/useautumn/autumn/releases/tag/atmn-v2.0.95) | 2800 | Stripe Billing (partial) |
+| [OpenMeter](https://github.com/openmeterio/openmeter) | Go | Apache-2.0 | [v1.0.0-beta.235](https://github.com/openmeterio/openmeter/releases/tag/v1.0.0-beta.235) | 2375 | Stripe Billing (partial) |
 
 [All categories](../README.md#catalog)
