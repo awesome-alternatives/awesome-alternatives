@@ -1,0 +1,4 @@
+name: CPython
+repository: https://github.com/python/cpython
+category: programming-language
+terms: open

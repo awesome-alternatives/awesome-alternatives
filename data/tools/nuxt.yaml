@@ -1,0 +1,7 @@
+name: Nuxt
+repository: https://github.com/nuxt/nuxt
+category: frontend-framework
+replaces:
+  - tool: nextjs
+    fit: partial
+    note: The same server-rendered, file-routed model built on Vue instead of React.

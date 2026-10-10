@@ -2,3 +2,7 @@ name: git filter-repo
 repository: https://github.com/newren/git-filter-repo
 category: git-extensions
 terms: open
+replaces:
+  - tool: git
+    fit: partial
+    note: Rewrites history faster than git filter-branch, which ships with Git.

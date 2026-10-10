@@ -1,0 +1,7 @@
+name: Svelte
+repository: https://github.com/sveltejs/svelte
+category: frontend-framework
+replaces:
+  - tool: react
+    fit: partial
+    note: Compiles components at build time instead of shipping a runtime.

@@ -1,0 +1,8 @@
+name: libsodium
+repository: https://github.com/jedisct1/libsodium
+category: cryptography-library
+terms: open
+replaces:
+  - tool: openssl
+    fit: partial
+    note: A smaller API with fixed algorithm choices and no TLS implementation.

@@ -1,3 +1,7 @@
 name: Dust3D
 repository: https://github.com/huxingyi/dust3d
 category: 3d-modeling
+replaces:
+  - tool: blender
+    fit: partial
+    note: Skeleton-based modelling of organic shapes, without animation or rendering.

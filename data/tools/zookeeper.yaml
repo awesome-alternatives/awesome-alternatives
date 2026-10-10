@@ -1,0 +1,3 @@
+name: Apache ZooKeeper
+repository: https://github.com/apache/zookeeper
+category: distributed-key-value

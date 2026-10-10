@@ -2,3 +2,7 @@ name: Wings 3D
 repository: https://github.com/dgud/wings
 category: 3d-modeling
 terms: open
+replaces:
+  - tool: blender
+    fit: partial
+    note: Subdivision modelling only, without animation or rendering.

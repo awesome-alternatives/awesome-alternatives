@@ -1,0 +1,4 @@
+name: OpenWrt
+repository: https://github.com/openwrt/openwrt
+category: firewall
+terms: open

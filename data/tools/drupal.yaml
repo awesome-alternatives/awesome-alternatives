@@ -1,0 +1,8 @@
+name: Drupal
+repository: https://github.com/drupal/drupal
+category: website-cms
+terms: open
+replaces:
+  - tool: wordpress
+    fit: partial
+    note: Content-modelling CMS with fine-grained permissions and a smaller plugin catalogue.

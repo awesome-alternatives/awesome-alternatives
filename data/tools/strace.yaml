@@ -1,0 +1,4 @@
+name: strace
+repository: https://github.com/strace/strace
+category: debugger
+terms: open

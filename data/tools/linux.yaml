@@ -1,0 +1,4 @@
+name: Linux
+repository: https://github.com/torvalds/linux
+category: operating-system
+terms: open

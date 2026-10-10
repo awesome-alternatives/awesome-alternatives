@@ -1,0 +1,4 @@
+name: OpenSSH
+repository: https://github.com/openssh/openssh-portable
+category: remote-shell
+terms: open

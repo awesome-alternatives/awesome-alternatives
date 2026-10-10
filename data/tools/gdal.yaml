@@ -1,0 +1,4 @@
+name: GDAL
+repository: https://github.com/OSGeo/gdal
+category: gis
+terms: open

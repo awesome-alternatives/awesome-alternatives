@@ -1,0 +1,8 @@
+name: Git
+repository: https://github.com/git/git
+category: version-control
+terms: open
+replaces:
+  - tool: subversion
+    fit: full
+    note: Distributed history instead of a central server.

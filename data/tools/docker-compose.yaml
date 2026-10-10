@@ -1,0 +1,3 @@
+name: Docker Compose
+repository: https://github.com/docker/compose
+category: container-orchestration

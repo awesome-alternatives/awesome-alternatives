@@ -1,0 +1,5 @@
+name: Google Chrome
+homepage: https://www.google.com/chrome/
+vendor: Google
+category: web-browser
+description: Google's web browser, built on the Chromium engine with Google account sync and the Chrome Web Store.

@@ -1,0 +1,7 @@
+name: Vue
+repository: https://github.com/vuejs/core
+category: frontend-framework
+replaces:
+  - tool: react
+    fit: partial
+    note: Template-based components with built-in reactivity instead of JSX and hooks.

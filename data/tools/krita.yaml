@@ -1,0 +1,7 @@
+name: Krita
+repository: https://github.com/KDE/krita
+category: digital-painting
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Built for digital painting rather than photo retouching.

@@ -1,0 +1,3 @@
+name: Flatpak
+repository: https://github.com/flatpak/flatpak
+category: system-package-manager

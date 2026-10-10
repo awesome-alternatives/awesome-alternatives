@@ -1,3 +1,7 @@
 name: Blockbench
 repository: https://github.com/JannisX11/blockbench
 category: 3d-modeling
+replaces:
+  - tool: blender
+    fit: partial
+    note: Low-poly modelling and texturing for game assets, with no sculpting or rendering suite.

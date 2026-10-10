@@ -1,3 +1,7 @@
 name: SCons
 repository: https://github.com/SCons/scons
 category: build-system
+replaces:
+  - tool: cmake
+    fit: partial
+    note: Python build scripts that drive the build directly instead of generating project files.

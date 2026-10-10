@@ -1,0 +1,7 @@
+name: KiCad
+repository: https://github.com/KiCad/kicad-source-mirror
+category: pcb-design
+replaces:
+  - tool: altium-designer
+    fit: partial
+    note: Schematic capture and board layout with its own file formats and libraries.

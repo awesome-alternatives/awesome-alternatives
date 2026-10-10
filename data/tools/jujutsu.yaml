@@ -1,3 +1,7 @@
 name: Jujutsu
 repository: https://github.com/jj-vcs/jj
 category: git-client
+replaces:
+  - tool: git
+    fit: partial
+    note: A separate version control interface that stores its data in Git repositories.

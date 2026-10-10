@@ -1,0 +1,8 @@
+name: FreeBSD
+repository: https://github.com/freebsd/freebsd-src
+category: operating-system
+terms: open
+replaces:
+  - tool: linux
+    fit: partial
+    note: A BSD-licensed kernel and userland that is not binary compatible with Linux.

@@ -1,0 +1,7 @@
+name: Ghidra
+repository: https://github.com/NationalSecurityAgency/ghidra
+category: reverse-engineering
+replaces:
+  - tool: ida-pro
+    fit: full
+    note: Disassembler and decompiler with Java and Python scripting.

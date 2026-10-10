@@ -1,0 +1,7 @@
+name: Kdenlive
+repository: https://github.com/KDE/kdenlive
+category: video-editing
+replaces:
+  - tool: premiere-pro
+    fit: partial
+    note: Multi-track editor built on the MLT framework; it does not open Premiere projects.

@@ -1,0 +1,4 @@
+name: hashcat
+repository: https://github.com/hashcat/hashcat
+category: penetration-testing
+terms: open

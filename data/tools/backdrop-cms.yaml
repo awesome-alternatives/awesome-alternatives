@@ -1,3 +1,7 @@
 name: Backdrop CMS
 repository: https://github.com/backdrop/backdrop
 category: website-cms
+replaces:
+  - tool: drupal
+    fit: full
+    note: A fork of Drupal 7 with its own module and theme API and a smaller extension pool.

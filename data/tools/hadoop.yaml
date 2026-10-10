@@ -1,0 +1,3 @@
+name: Apache Hadoop
+repository: https://github.com/apache/hadoop
+category: data-processing-engine

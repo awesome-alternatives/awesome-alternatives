@@ -2,3 +2,7 @@ name: django CMS
 repository: https://github.com/django-cms/django-cms
 category: website-cms
 terms: open
+replaces:
+  - tool: wagtail
+    fit: partial
+    note: Another Django CMS, with in-page editing and a plugin-based content model.

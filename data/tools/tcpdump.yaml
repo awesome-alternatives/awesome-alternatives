@@ -1,0 +1,4 @@
+name: tcpdump
+repository: https://github.com/the-tcpdump-group/tcpdump
+category: network-analysis
+terms: open

@@ -1,0 +1,4 @@
+name: rsync
+repository: https://github.com/RsyncProject/rsync
+category: file-sync
+terms: open

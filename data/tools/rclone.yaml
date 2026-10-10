@@ -1,0 +1,3 @@
+name: rclone
+repository: https://github.com/rclone/rclone
+category: file-sync

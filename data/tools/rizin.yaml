@@ -1,0 +1,7 @@
+name: Rizin
+repository: https://github.com/rizinorg/rizin
+category: reverse-engineering
+replaces:
+  - tool: radare2
+    fit: full
+    note: A fork of radare2 with a revised command set and API.
