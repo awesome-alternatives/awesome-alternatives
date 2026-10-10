@@ -14,7 +14,10 @@ replaces:
     note: Cargo workspaces only.
 ```
 
-- `repository` is the upstream GitHub repository, not a fork or a mirror.
+- `repository` is the upstream GitHub repository, not a fork or a mirror. A mirror is accepted
+  only for an established project whose GitHub copy is the one people actually follow (WordPress,
+  PostgreSQL and Blender are listed that way), and a reviewer approves it in the pull request. An
+  obscure mirror of a project whose real home is another forge is not.
 - `category` must be one of the keys in [`data/categories.yaml`](data/categories.yaml). A new
   category is its own pull request, with at least two tools that belong in it. Mark it
   `selfHost: true` when its tools are services people would otherwise pay someone to run, such as
