@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { checkCapabilityDocs, checkHomepage, checkMigrations, unreachable } from "../scripts/lib/links.ts";
+import { checkCapabilityDocs, checkHomepage, checkMigrations, githubContentsApi, unreachable } from "../scripts/lib/links.ts";
 
 const product = { slug: "closed", homepage: "https://example.com/" };
 const answering = (status: number) => async (url: string) => (status < 400 ? null : `${url} answered ${status}`);
@@ -112,5 +112,53 @@ describe("unreachable", () => {
     }) as unknown as typeof fetch;
     assert.equal(await unreachable("https://example.com/a", fetchImpl, noWait), null);
     assert.equal(n, 3);
+  });
+});
+
+describe("githubContentsApi", () => {
+  it("maps a blob link to the contents API at its ref, without the anchor", () => {
+    assert.equal(
+      githubContentsApi("https://github.com/biomejs/biome/blob/b03b8dc/benchmark/README.md#results"),
+      "https://api.github.com/repos/biomejs/biome/contents/benchmark/README.md?ref=b03b8dc",
+    );
+  });
+
+  it("leaves anything else alone", () => {
+    assert.equal(githubContentsApi("https://github.com/acme/tool"), null);
+    assert.equal(githubContentsApi("https://example.com/acme/tool/blob/main/a.md"), null);
+  });
+});
+
+describe("unreachable with a token", () => {
+  const blob = "https://github.com/acme/tool/blob/main/docs/bench.md";
+  const noWait = async () => {};
+
+  function server(answer: (url: string) => number) {
+    const seen: { url: string; authorization: string | null }[] = [];
+    const fetchImpl = (async (url: string, init?: RequestInit) => {
+      seen.push({ url, authorization: new Headers(init?.headers).get("authorization") });
+      return new Response(null, { status: answer(url) });
+    }) as unknown as typeof fetch;
+    return { seen, fetchImpl };
+  }
+
+  it("takes the API's word and never loads the page", async () => {
+    const { seen, fetchImpl } = server((url) => (url.startsWith("https://api.github.com/") ? 200 : 503));
+    assert.equal(await unreachable(blob, fetchImpl, noWait, "t0ken"), null);
+    assert.equal(seen.length, 1);
+    assert.equal(seen[0]?.authorization, "Bearer t0ken");
+  });
+
+  it("falls back to the page when the API does not confirm it", async () => {
+    const { seen, fetchImpl } = server((url) => (url.startsWith("https://api.github.com/") ? 404 : 200));
+    assert.equal(await unreachable(blob, fetchImpl, noWait, "t0ken"), null);
+    assert.deepEqual(seen.map((s) => s.url.startsWith("https://api.github.com/")), [true, false]);
+    assert.equal(seen[1]?.authorization, null);
+  });
+
+  it("never sends the token to another host", async () => {
+    const { seen, fetchImpl } = server(() => 200);
+    await unreachable("https://example.com/a", fetchImpl, noWait, "t0ken");
+    assert.deepEqual(seen.map((s) => s.authorization), [null]);
   });
 });
