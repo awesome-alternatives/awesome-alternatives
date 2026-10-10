@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.134.1] - 2026-10-10
+
+### Bug Fixes
+
+- fix(site): read a stale catalog under the categories that took over merged ones (#430)
+- chore(catalog): refresh from GitHub
+
 ## [0.134.0] - 2026-10-10
 
 ### Features
