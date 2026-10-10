@@ -4,6 +4,17 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.132.0] - 2026-10-10
+
+### Features
+
+- feat(site): rebuild the 404 page (#415)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+- chore(catalog): refresh zen-idp
+
 ## [0.131.0] - 2026-10-10
 
 ### Features
