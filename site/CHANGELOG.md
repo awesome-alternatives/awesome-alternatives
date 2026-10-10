@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.129.5] - 2026-10-10
+
+### Bug Fixes
+
+- fix(site): raise the Node heap to 12 GiB for the site build (#410)
+
 ## [0.129.4] - 2026-10-10
 
 ### Bug Fixes
