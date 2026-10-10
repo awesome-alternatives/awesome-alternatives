@@ -1,0 +1,15 @@
+name: Zen IdP
+repository: https://github.com/varavelio/zen-idp
+category: identity-provider
+replaces:
+  - tool: okta
+    fit: partial
+    note: OIDC sign-in with TOTP for users defined in YAML; its README documents no SAML, social login or directory sync.
+  - tool: keycloak
+    fit: partial
+    note: OIDC provider configured from YAML files with TOTP login and one SQLite file; no realms, federation or SAML documented.
+  - tool: pocket-id
+    fit: partial
+    note: Same single-binary self-hosted OIDC idea, with users and clients in YAML and TOTP instead of passkeys.
+affiliation: Suggested by its maintainers.
+deploy: [container, binary]
