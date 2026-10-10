@@ -4,6 +4,16 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.14.0] - 2026-10-10
+
+### Features
+
+- feat(api): accept a merged category slug in the category filter (#427)
+
+### Refactoring
+
+- refactor(catalog): merge thin and overlapping categories (#425)
+
 ## [0.13.0] - 2026-10-10
 
 ### Features

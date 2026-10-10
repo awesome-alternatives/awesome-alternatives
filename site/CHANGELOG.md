@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.134.0] - 2026-10-10
+
+### Features
+
+- feat(site): redirect merged categories to the category that took their tools (#426)
+
+### Refactoring
+
+- refactor(catalog): merge thin and overlapping categories (#425)
+
 ## [0.133.0] - 2026-10-10
 
 ### Features
