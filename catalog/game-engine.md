@@ -4,16 +4,16 @@ Build 2D and 3D games with an engine, an editor or a framework, and export them 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Godot](https://github.com/godotengine/godot) | C++ | MIT | [4.7.2-stable](https://github.com/godotengine/godot/releases/tag/4.7.2-stable) signed | 118200 | Unity (full), Construct (partial), GameMaker (partial), Unreal Engine (partial) |
-| [Bevy](https://github.com/bevyengine/bevy) | Rust | Apache-2.0 | [v0.20.0](https://github.com/bevyengine/bevy/releases/tag/v0.20.0) | 48823 | Unity (partial) |
-| [Phaser](https://github.com/phaserjs/phaser) | JavaScript | MIT | [v4.2.1](https://github.com/phaserjs/phaser/releases/tag/v4.2.1) | 40445 | Construct (partial), GameMaker (partial) |
-| [raylib](https://github.com/raysan5/raylib) | C | Zlib | [6.0](https://github.com/raysan5/raylib/releases/tag/6.0) signed | 35136 | none |
-| [GDevelop](https://github.com/4ian/GDevelop) | JavaScript | Other | [v5.6.283](https://github.com/4ian/GDevelop/releases/tag/v5.6.283) signed | 27334 | Construct (full), GameMaker (partial) |
-| [MonoGame](https://github.com/MonoGame/MonoGame) | C# | Other | [v3.8.5.1](https://github.com/MonoGame/MonoGame/releases/tag/v3.8.5.1) | 14502 | Unity (partial) |
-| [Ebitengine](https://github.com/hajimehoshi/ebiten) | Go | Apache-2.0 | [v2.10.5](https://github.com/hajimehoshi/ebiten/releases/tag/v2.10.5) | 13548 | none |
+| [Godot](https://github.com/godotengine/godot) | C++ | MIT | [4.7.2-stable](https://github.com/godotengine/godot/releases/tag/4.7.2-stable) signed | 118208 | Unity (full), Construct (partial), GameMaker (partial), Unreal Engine (partial) |
+| [Bevy](https://github.com/bevyengine/bevy) | Rust | Apache-2.0 | [v0.20.0](https://github.com/bevyengine/bevy/releases/tag/v0.20.0) | 48825 | Unity (partial) |
+| [Phaser](https://github.com/phaserjs/phaser) | JavaScript | MIT | [v4.2.1](https://github.com/phaserjs/phaser/releases/tag/v4.2.1) | 40446 | Construct (partial), GameMaker (partial) |
+| [raylib](https://github.com/raysan5/raylib) | C | Zlib | [6.0](https://github.com/raysan5/raylib/releases/tag/6.0) signed | 35137 | none |
+| [GDevelop](https://github.com/4ian/GDevelop) | JavaScript | Other | [v5.6.283](https://github.com/4ian/GDevelop/releases/tag/v5.6.283) signed | 27339 | Construct (full), GameMaker (partial) |
+| [MonoGame](https://github.com/MonoGame/MonoGame) | C# | Other | [v3.8.5.1](https://github.com/MonoGame/MonoGame/releases/tag/v3.8.5.1) | 14501 | Unity (partial) |
+| [Ebitengine](https://github.com/hajimehoshi/ebiten) | Go | Apache-2.0 | [v2.10.5](https://github.com/hajimehoshi/ebiten/releases/tag/v2.10.5) | 13549 | none |
 | [Cocos Creator](https://github.com/cocos/cocos-engine) | C++ | Other | [3.8.8](https://github.com/cocos/cocos-engine/releases/tag/3.8.8) signed | 9853 | Unity (partial), Construct (partial) |
 | [Open 3D Engine](https://github.com/o3de/o3de) | C++ | Other | [2605.0](https://github.com/o3de/o3de/releases/tag/2605.0) signed | 9737 | Unreal Engine (partial) |
-| [Fyrox](https://github.com/FyroxEngine/Fyrox) | Rust | MIT | [v1.0.0](https://github.com/FyroxEngine/Fyrox/releases/tag/v1.0.0) | 9580 | Unity (partial) |
+| [Fyrox](https://github.com/FyroxEngine/Fyrox) | Rust | MIT | [v1.0.0](https://github.com/FyroxEngine/Fyrox/releases/tag/v1.0.0) | 9581 | Unity (partial) |
 | [LÖVE](https://github.com/love2d/love) | C++ | Other | [11.5](https://github.com/love2d/love/releases/tag/11.5) | 8811 | GameMaker (partial) |
 | [Stride](https://github.com/stride3d/stride) | C# | MIT | [releases/4.3.0.2507](https://github.com/stride3d/stride/releases/tag/releases/4.3.0.2507) | 7852 | Unity (full) |
 | [Flax Engine](https://github.com/FlaxEngine/FlaxEngine) | C++ | Other | [1.12.6912](https://github.com/FlaxEngine/FlaxEngine/releases/tag/1.12.6912) | 7045 | Unreal Engine (partial) |

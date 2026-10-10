@@ -4,7 +4,7 @@ Enroll, configure, patch and inventory laptops, phones and servers from one cons
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Fleet](https://github.com/fleetdm/fleet) | Go | Other | [fleet-v4.93.0](https://github.com/fleetdm/fleet/releases/tag/fleet-v4.93.0) signed | 6973 | Jamf Pro (full), Microsoft Intune (partial), NinjaOne (partial) |
+| [Fleet](https://github.com/fleetdm/fleet) | Go | Other | [fleet-v4.93.0](https://github.com/fleetdm/fleet/releases/tag/fleet-v4.93.0) signed | 6974 | Jamf Pro (full), Microsoft Intune (partial), NinjaOne (partial) |
 | [Tactical RMM](https://github.com/amidaware/tacticalrmm) | Python | Other | [v1.5.2](https://github.com/amidaware/tacticalrmm/releases/tag/v1.5.2) | 4496 | NinjaOne (full) |
 | [MicroMDM](https://github.com/micromdm/micromdm) | Go | MIT | [v1.13.1](https://github.com/micromdm/micromdm/releases/tag/v1.13.1) | 2681 | Jamf Pro (partial), Microsoft Intune (partial) |
 | [NanoMDM](https://github.com/micromdm/nanomdm) | Go | MIT | [v0.9.0](https://github.com/micromdm/nanomdm/releases/tag/v0.9.0) signed | 677 | Jamf Pro (partial) |

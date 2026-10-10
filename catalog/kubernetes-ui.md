@@ -6,9 +6,9 @@ Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
 |---|---|---|---|---:|---|
 | [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.2](https://github.com/portainer/portainer/releases/tag/2.45.2) signed | 38628 | Lens (partial) |
 | [k9s](https://github.com/derailed/k9s) | Go | Apache-2.0 | [v0.51.0](https://github.com/derailed/k9s/releases/tag/v0.51.0) | 34781 | Lens (partial) |
-| [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.2](https://github.com/rancher/rancher/releases/tag/v2.15.2) signed | 25967 | Lens (full) |
+| [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.2](https://github.com/rancher/rancher/releases/tag/v2.15.2) signed | 25968 | Lens (full) |
 | [KubeSphere](https://github.com/kubesphere/kubesphere) | Go | Other | [v4.1.3](https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3) signed | 17056 | Rancher (full), Lens (partial) |
-| [Headlamp](https://github.com/kubernetes-sigs/headlamp) | TypeScript | Apache-2.0 | [v0.45.0](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.45.0) | 7412 | Lens (full) |
+| [Headlamp](https://github.com/kubernetes-sigs/headlamp) | TypeScript | Apache-2.0 | [v0.45.0](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.45.0) | 7414 | Lens (full) |
 | [Freelens](https://github.com/freelensapp/freelens) | TypeScript | MIT | [v1.10.3](https://github.com/freelensapp/freelens/releases/tag/v1.10.3) signed | 5678 | Lens (full) |
 | [Devtron](https://github.com/devtron-labs/devtron) | Go | Apache-2.0 | [v2.2.0](https://github.com/devtron-labs/devtron/releases/tag/v2.2.0) signed | 5606 | Lens (partial), Octopus Deploy (partial) |
 | [Kite](https://github.com/kite-org/kite) | TypeScript | Apache-2.0 | [v0.16.0](https://github.com/kite-org/kite/releases/tag/v0.16.0) | 3160 | Lens (partial), Rancher (partial) |

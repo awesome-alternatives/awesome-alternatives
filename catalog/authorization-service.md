@@ -5,7 +5,7 @@ Decide who may do what in an application, with policies or relationship-based pe
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Open Policy Agent](https://github.com/open-policy-agent/opa) | Go | Apache-2.0 | [v1.21.1](https://github.com/open-policy-agent/opa/releases/tag/v1.21.1) | 12339 | AWS Verified Permissions (partial) |
-| [SpiceDB](https://github.com/authzed/spicedb) | Go | Apache-2.0 | [v1.56.2](https://github.com/authzed/spicedb/releases/tag/v1.56.2) signed | 7135 | Oso Cloud (partial), AWS Verified Permissions (partial) |
+| [SpiceDB](https://github.com/authzed/spicedb) | Go | Apache-2.0 | [v1.56.2](https://github.com/authzed/spicedb/releases/tag/v1.56.2) signed | 7136 | Oso Cloud (partial), AWS Verified Permissions (partial) |
 | [Permify](https://github.com/Permify/permify) | Go | AGPL-3.0 | [v1.7.5](https://github.com/Permify/permify/releases/tag/v1.7.5) signed | 5962 | Oso Cloud (partial), AWS Verified Permissions (partial) |
 | [OpenFGA](https://github.com/openfga/openfga) | Go | Apache-2.0 | [v1.22.0](https://github.com/openfga/openfga/releases/tag/v1.22.0) signed | 5943 | Auth0 (partial), AWS Verified Permissions (partial) |
 | [Ory Keto](https://github.com/ory/keto) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/keto/releases/tag/v26.2.0) | 5408 | Oso Cloud (partial) |

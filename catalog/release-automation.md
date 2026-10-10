@@ -14,6 +14,6 @@ Version bumps, changelogs, tags and published releases from commit history.
 | [release-plz](https://github.com/release-plz/release-plz) | Rust | Apache-2.0 | [release-plz-v0.3.171](https://github.com/release-plz/release-plz/releases/tag/release-plz-v0.3.171) | 1499 | semantic-release (partial), cargo-release (full) |
 | [cocogitto](https://github.com/cocogitto/cocogitto) | Rust | MIT | [7.0.0](https://github.com/cocogitto/cocogitto/releases/tag/7.0.0) | 1211 | semantic-release (full), conventional-changelog (partial) |
 | [knope](https://github.com/knope-dev/knope) | Rust | MIT | [knope/v0.23.0](https://github.com/knope-dev/knope/releases/tag/knope/v0.23.0) signed | 197 | semantic-release (full), Changesets (full) |
-| [FerrFlow](https://github.com/FerrLabs/FerrFlow) verified | Rust | MIT | [v7.28.5](https://github.com/FerrLabs/FerrFlow/releases/tag/v7.28.5) signed | 7 | semantic-release (full), release-please (full), Changesets (full), release-plz (full), knope (full), cocogitto (full), git-cliff (partial), Lerna (partial), conventional-changelog (partial), cargo-release (full) |
+| [FerrFlow](https://github.com/FerrLabs/FerrFlow) verified | Rust | MIT | [v7.29.0](https://github.com/FerrLabs/FerrFlow/releases/tag/v7.29.0) signed | 7 | semantic-release (full), release-please (full), Changesets (full), release-plz (full), knope (full), cocogitto (full), git-cliff (partial), Lerna (partial), conventional-changelog (partial), cargo-release (full) |
 
 [All categories](../README.md#catalog)

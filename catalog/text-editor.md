@@ -4,18 +4,18 @@ Editors for writing code.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Visual Studio Code](https://github.com/microsoft/vscode) | TypeScript | MIT | [1.141.0](https://github.com/microsoft/vscode/releases/tag/1.141.0) signed | 193508 | Atom (full), IntelliJ IDEA (partial) |
-| [Neovim](https://github.com/neovim/neovim) | Vim Script | Other | [v0.12.6](https://github.com/neovim/neovim/releases/tag/v0.12.6) signed | 102961 | Vim (drop-in) |
-| [Zed](https://github.com/zed-industries/zed) | Rust | Other | [v1.23.2](https://github.com/zed-industries/zed/releases/tag/v1.23.2) signed | 91523 | Visual Studio Code (full), Cursor (partial), Sublime Text (full), Atom (full) |
-| [Atom](https://github.com/atom/atom) archived | JavaScript | MIT | [v1.60.0](https://github.com/atom/atom/releases/tag/v1.60.0) | 60712 | none |
-| [Helix](https://github.com/helix-editor/helix) | Rust | MPL-2.0 | [25.07.1](https://github.com/helix-editor/helix/releases/tag/25.07.1) signed | 46527 | Vim (partial), Neovim (partial) |
-| [Vim](https://github.com/vim/vim) | Vim Script | Vim | [v9.2.1172](https://github.com/vim/vim/releases/tag/v9.2.1172) signed | 41183 | none |
-| [Lapce](https://github.com/lapce/lapce) | Rust | Apache-2.0 | [v0.4.6](https://github.com/lapce/lapce/releases/tag/v0.4.6) signed | 38903 | Visual Studio Code (partial), Sublime Text (full) |
-| [VSCodium](https://github.com/VSCodium/vscodium) | Shell | MIT | [1.135.06055](https://github.com/VSCodium/vscodium/releases/tag/1.135.06055) signed | 33569 | Visual Studio Code (drop-in) |
+| [Visual Studio Code](https://github.com/microsoft/vscode) | TypeScript | MIT | [1.141.0](https://github.com/microsoft/vscode/releases/tag/1.141.0) signed | 193512 | Atom (full), IntelliJ IDEA (partial) |
+| [Neovim](https://github.com/neovim/neovim) | Vim Script | Other | [v0.12.6](https://github.com/neovim/neovim/releases/tag/v0.12.6) signed | 102962 | Vim (drop-in) |
+| [Zed](https://github.com/zed-industries/zed) | Rust | Other | [v1.23.2](https://github.com/zed-industries/zed/releases/tag/v1.23.2) signed | 91522 | Visual Studio Code (full), Cursor (partial), Sublime Text (full), Atom (full) |
+| [Atom](https://github.com/atom/atom) archived | JavaScript | MIT | [v1.60.0](https://github.com/atom/atom/releases/tag/v1.60.0) | 60713 | none |
+| [Helix](https://github.com/helix-editor/helix) | Rust | MPL-2.0 | [25.07.1](https://github.com/helix-editor/helix/releases/tag/25.07.1) signed | 46526 | Vim (partial), Neovim (partial) |
+| [Vim](https://github.com/vim/vim) | Vim Script | Vim | [v9.2.1172](https://github.com/vim/vim/releases/tag/v9.2.1172) signed | 41184 | none |
+| [Lapce](https://github.com/lapce/lapce) | Rust | Apache-2.0 | [v0.4.6](https://github.com/lapce/lapce/releases/tag/v0.4.6) signed | 38902 | Visual Studio Code (partial), Sublime Text (full) |
+| [VSCodium](https://github.com/VSCodium/vscodium) | Shell | MIT | [1.135.06055](https://github.com/VSCodium/vscodium/releases/tag/1.135.06055) signed | 33570 | Visual Studio Code (drop-in) |
 | [micro](https://github.com/micro-editor/micro) | Go | MIT | [v2.0.15](https://github.com/micro-editor/micro/releases/tag/v2.0.15) | 29687 | Sublime Text (partial) |
-| [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | C++ | Other | [v8.9.8.1](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.8.1) | 29513 | Sublime Text (partial) |
-| [NvChad](https://github.com/NvChad/NvChad) | Lua | GPL-3.0 | [v2.5](https://github.com/NvChad/NvChad/releases/tag/v2.5) | 28514 | Visual Studio Code (partial) |
-| [LazyVim](https://github.com/LazyVim/LazyVim) | Lua | Apache-2.0 | [v16.0.1](https://github.com/LazyVim/LazyVim/releases/tag/v16.0.1) signed | 27623 | Visual Studio Code (partial) |
+| [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | C++ | Other | [v8.9.8.1](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.8.1) | 29514 | Sublime Text (partial) |
+| [NvChad](https://github.com/NvChad/NvChad) | Lua | GPL-3.0 | [v2.5](https://github.com/NvChad/NvChad/releases/tag/v2.5) | 28513 | Visual Studio Code (partial) |
+| [LazyVim](https://github.com/LazyVim/LazyVim) | Lua | Apache-2.0 | [v16.0.1](https://github.com/LazyVim/LazyVim/releases/tag/v16.0.1) signed | 27624 | Visual Studio Code (partial) |
 | [Spacemacs](https://github.com/syl20bnr/spacemacs) | Emacs Lisp | GPL-3.0 | [v0.200.13](https://github.com/syl20bnr/spacemacs/releases/tag/v0.200.13) | 24541 | none |
 | [Doom Emacs](https://github.com/doomemacs/core) | Emacs Lisp | MIT | [v2.2.4](https://github.com/doomemacs/core/releases/tag/v2.2.4) signed | 22735 | Visual Studio Code (partial) |
 | [Eclipse Theia](https://github.com/eclipse-theia/theia) | TypeScript | EPL-2.0 | [v1.76.0](https://github.com/eclipse-theia/theia/releases/tag/v1.76.0) signed | 21702 | Visual Studio Code (partial) |

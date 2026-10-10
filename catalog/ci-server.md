@@ -4,8 +4,8 @@ Self-hosted servers that run build and deployment pipelines.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [act](https://github.com/nektos/act) | Go | MIT | [v0.2.89](https://github.com/nektos/act/releases/tag/v0.2.89) | 72254 | none |
-| [Jenkins](https://github.com/jenkinsci/jenkins) | Java | MIT | [jenkins-2.585](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.585) | 26634 | CircleCI (full) |
+| [act](https://github.com/nektos/act) | Go | MIT | [v0.2.89](https://github.com/nektos/act/releases/tag/v0.2.89) | 72255 | none |
+| [Jenkins](https://github.com/jenkinsci/jenkins) | Java | MIT | [jenkins-2.585](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.585) | 26635 | CircleCI (full) |
 | [Dagger](https://github.com/dagger/dagger) | Go | Apache-2.0 | [v0.21.10](https://github.com/dagger/dagger/releases/tag/v0.21.10) signed | 16334 | none |
 | [Tekton](https://github.com/tektoncd/pipeline) | Go | Apache-2.0 | [v1.17.0](https://github.com/tektoncd/pipeline/releases/tag/v1.17.0) | 9077 | Jenkins (partial) |
 | [Woodpecker CI](https://github.com/woodpecker-ci/woodpecker) | Go | Apache-2.0 | [v3.19.0](https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.19.0) signed | 7975 | Jenkins (full), CircleCI (full) |

@@ -4,13 +4,13 @@ Stream a personal library of films, series and music to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.2](https://github.com/jellyfin/jellyfin/releases/tag/v12.2) | 57960 | Plex (full), Emby (full), Netflix (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.2](https://github.com/jellyfin/jellyfin/releases/tag/v12.2) | 57962 | Plex (full), Emby (full), Netflix (partial) |
 | [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24072 | Plex (partial), Spotify (partial) |
 | [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17275 | Plex (partial), Spotify (partial) |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.37.1](https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.1) | 14602 | Audible (partial) |
 | [Streama](https://github.com/streamaserver/streama) | JavaScript | MIT | [v1.11.0](https://github.com/streamaserver/streama/releases/tag/v1.11.0) | 9820 | Netflix (partial), Emby (partial) |
-| [Mopidy](https://github.com/mopidy/mopidy) | Python | Apache-2.0 | [v4.0.4](https://github.com/mopidy/mopidy/releases/tag/v4.0.4) signed | 8593 | Spotify (partial) |
-| [Snapcast](https://github.com/snapcast/snapcast) | C++ | GPL-3.0 | [v0.35.0](https://github.com/snapcast/snapcast/releases/tag/v0.35.0) | 7910 | Sonos (partial) |
+| [Mopidy](https://github.com/mopidy/mopidy) | Python | Apache-2.0 | [v4.0.4](https://github.com/mopidy/mopidy/releases/tag/v4.0.4) signed | 8594 | Spotify (partial) |
+| [Snapcast](https://github.com/snapcast/snapcast) | C++ | GPL-3.0 | [v0.35.0](https://github.com/snapcast/snapcast/releases/tag/v0.35.0) | 7911 | Sonos (partial) |
 | [Black Candy](https://github.com/blackcandy-org/blackcandy) | Ruby | MIT | [v3.2.1](https://github.com/blackcandy-org/blackcandy/releases/tag/v3.2.1) | 4424 | Spotify (partial) |
 | [Ampache](https://github.com/ampache/ampache) | PHP | AGPL-3.0 | [8.2.2](https://github.com/ampache/ampache/releases/tag/8.2.2) signed | 3831 | Plex (partial), Spotify (partial) |
 | [Music Assistant](https://github.com/music-assistant/server) | Python | Apache-2.0 | [2.10.6](https://github.com/music-assistant/server/releases/tag/2.10.6) | 3159 | Spotify (partial), Sonos (partial) |

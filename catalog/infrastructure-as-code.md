@@ -16,8 +16,8 @@ Declare cloud infrastructure in files and apply the difference.
 | [Digger](https://github.com/diggerhq/digger) | Go | MIT | [v0.6.154](https://github.com/diggerhq/digger/releases/tag/v0.6.154) signed | 5047 | HCP Terraform (partial) |
 | [DNSControl](https://github.com/DNSControl/dnscontrol) | Go | MIT | [v5.4.0](https://github.com/DNSControl/dnscontrol/releases/tag/v5.4.0) | 3963 | octoDNS (full) |
 | [octoDNS](https://github.com/octodns/octodns) | Python | MIT | [v1.22.0](https://github.com/octodns/octodns/releases/tag/v1.22.0) signed | 3772 | DNSControl (full), Amazon Route 53 (partial) |
-| [Bicep](https://github.com/Azure/bicep) | Bicep | MIT | [v0.48.1](https://github.com/Azure/bicep/releases/tag/v0.48.1) signed | 3653 | Azure Resource Manager (full), Terraform (partial) |
-| [Terramate](https://github.com/terramate-io/terramate) | Go | MPL-2.0 | [v0.17.3](https://github.com/terramate-io/terramate/releases/tag/v0.17.3) signed | 3636 | Terragrunt (partial) |
+| [Bicep](https://github.com/Azure/bicep) | Bicep | MIT | [v0.48.1](https://github.com/Azure/bicep/releases/tag/v0.48.1) signed | 3654 | Azure Resource Manager (full), Terraform (partial) |
+| [Terramate](https://github.com/terramate-io/terramate) | Go | MPL-2.0 | [v0.17.3](https://github.com/terramate-io/terramate/releases/tag/v0.17.3) signed | 3635 | Terragrunt (partial) |
 | [Tofu Controller](https://github.com/flux-iac/tofu-controller) | Go | Apache-2.0 | [v0.16.5](https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.5) | 1710 | HCP Terraform (partial) |
 | [Terrakube](https://github.com/terrakube-io/terrakube) | Java | Apache-2.0 | [2.33.2](https://github.com/terrakube-io/terrakube/releases/tag/2.33.2) signed | 966 | HCP Terraform (full) |
 | [Burrito](https://github.com/padok-team/burrito) | Go | Apache-2.0 | [v0.14.1](https://github.com/padok-team/burrito/releases/tag/v0.14.1) signed | 757 | HCP Terraform (partial) |

@@ -4,8 +4,8 @@ Measure where a program spends its time and memory, and draw it as flame graphs 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.14.1](https://github.com/wolfpld/tracy/releases/tag/v0.14.1) signed | 16904 | none |
-| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.2](https://github.com/benfred/py-spy/releases/tag/v0.4.2) | 15556 | none |
+| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.14.1](https://github.com/wolfpld/tracy/releases/tag/v0.14.1) signed | 16905 | none |
+| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.2](https://github.com/benfred/py-spy/releases/tag/v0.4.2) | 15557 | none |
 | [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15372 | none |
 | [Scalene](https://github.com/plasma-umass/scalene) | Python | Apache-2.0 | [v2.3.0](https://github.com/plasma-umass/scalene/releases/tag/v2.3.0) signed | 13526 | none |
 | [pprof](https://github.com/google/pprof) | Go | Apache-2.0 | none | 9297 | none |

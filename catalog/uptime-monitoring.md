@@ -4,11 +4,11 @@ Check that services answer, alert when they do not, and publish a status page.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.6](https://github.com/louislam/uptime-kuma/releases/tag/2.5.6) signed | 92283 | Pingdom (full), Statuspage (full), Cronitor (partial) |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.6](https://github.com/louislam/uptime-kuma/releases/tag/2.5.6) signed | 92285 | Pingdom (full), Statuspage (full), Cronitor (partial) |
 | [Upptime](https://github.com/upptime/upptime) | Markdown | MIT | [v2.0.0](https://github.com/upptime/upptime/releases/tag/v2.0.0) signed | 17179 | Pingdom (partial), Statuspage (full) |
 | [Cachet](https://github.com/cachethq/cachet) | PHP | Other | [v2.4.1](https://github.com/cachethq/cachet/releases/tag/v2.4.1) | 15253 | Statuspage (full) |
 | [Gatus](https://github.com/TwiN/gatus) | Go | Apache-2.0 | [v5.37.0](https://github.com/TwiN/gatus/releases/tag/v5.37.0) signed | 12277 | Uptime Kuma (full), Pingdom (full), Statuspage (full), Cronitor (partial) |
-| [Checkmate](https://github.com/bluewave-labs/Checkmate) | TypeScript | AGPL-3.0 | [v3.12.0](https://github.com/bluewave-labs/Checkmate/releases/tag/v3.12.0) signed | 10922 | Pingdom (full), Statuspage (full) |
+| [Checkmate](https://github.com/bluewave-labs/Checkmate) | TypeScript | AGPL-3.0 | [v3.12.0](https://github.com/bluewave-labs/Checkmate/releases/tag/v3.12.0) signed | 10923 | Pingdom (full), Statuspage (full) |
 | [Healthchecks](https://github.com/healthchecks/healthchecks) | Python | BSD-3-Clause | [v4.4](https://github.com/healthchecks/healthchecks/releases/tag/v4.4) signed | 10404 | Cronitor (partial) |
 | [OpenStatus](https://github.com/openstatusHQ/openstatus) | TypeScript | AGPL-3.0 | none | 9178 | Statuspage (full), UptimeRobot (full) |
 | [OneUptime](https://github.com/OneUptime/oneuptime) | TypeScript | Other | [14.0.30](https://github.com/OneUptime/oneuptime/releases/tag/14.0.30) signed | 7720 | Pingdom (full), Statuspage (full), PagerDuty (full), Cronitor (full) |

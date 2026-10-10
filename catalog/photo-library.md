@@ -4,9 +4,9 @@ Back up, browse and share photos and videos from your phones.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.3.1](https://github.com/immich-app/immich/releases/tag/v3.3.1) | 115898 | Google Photos (full) |
-| [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [261007-65faaae5d](https://github.com/photoprism/photoprism/releases/tag/261007-65faaae5d) | 40280 | Google Photos (partial) |
-| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ensu-v0.1.21](https://github.com/ente/ente/releases/tag/ensu-v0.1.21) | 29336 | Google Photos (full) |
+| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.3.1](https://github.com/immich-app/immich/releases/tag/v3.3.1) | 115907 | Google Photos (full) |
+| [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [261007-65faaae5d](https://github.com/photoprism/photoprism/releases/tag/261007-65faaae5d) | 40281 | Google Photos (partial) |
+| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ensu-v0.1.21](https://github.com/ente/ente/releases/tag/ensu-v0.1.21) | 29339 | Google Photos (full) |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | Python | MIT | [1.2.1](https://github.com/LibrePhotos/librephotos/releases/tag/1.2.1) signed | 8098 | Google Photos (partial) |
 | [Photoview](https://github.com/photoview/photoview) | Go | AGPL-3.0 | [v2.4.0](https://github.com/photoview/photoview/releases/tag/v2.4.0) signed | 6549 | Google Photos (partial) |
 | [Lychee](https://github.com/LycheeOrg/Lychee) | PHP | MIT | [v7.10.0](https://github.com/LycheeOrg/Lychee/releases/tag/v7.10.0) signed | 4310 | Flickr (partial) |

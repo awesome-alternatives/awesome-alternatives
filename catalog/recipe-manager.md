@@ -5,7 +5,7 @@ Keep recipes, plan meals and build shopping lists from them.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.28.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0) | 13496 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
-| [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9569 | AnyList (partial) |
+| [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9570 | AnyList (partial) |
 | [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.6.15](https://github.com/TandoorRecipes/recipes/releases/tag/2.6.15) signed | 8659 | Paprika Recipe Manager (full), Plan to Eat (full) |
 | [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.7.10](https://github.com/TomBursch/kitchenowl/releases/tag/v0.7.10) signed | 3731 | AnyList (full) |
 | [CookCLI](https://github.com/cooklang/cookcli) | Rust | MIT | [v0.38.1](https://github.com/cooklang/cookcli/releases/tag/v0.38.1) signed | 1404 | Paprika Recipe Manager (partial) |

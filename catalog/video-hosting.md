@@ -9,7 +9,7 @@ Publish videos and live streams on your own site for an audience to watch.
 | [PeerTube](https://github.com/Chocobozzz/PeerTube) | TypeScript | AGPL-3.0 | [v8.3.1](https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.1) signed | 15351 | YouTube (full), Vimeo (full), Twitch (partial) |
 | [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11582 | Twitch (partial) |
 | [Restreamer](https://github.com/datarhei/restreamer) | HTML | Apache-2.0 | [v2.12.0](https://github.com/datarhei/restreamer/releases/tag/v2.12.0) | 5214 | Twitch (partial), Wowza Streaming Engine (partial) |
-| [MediaCMS](https://github.com/mediacms-io/mediacms) | Python | AGPL-3.0 | [v9.2.1](https://github.com/mediacms-io/mediacms/releases/tag/v9.2.1) | 5142 | YouTube (partial), Vimeo (partial) |
+| [MediaCMS](https://github.com/mediacms-io/mediacms) | Python | AGPL-3.0 | [v9.2.1](https://github.com/mediacms-io/mediacms/releases/tag/v9.2.1) | 5143 | YouTube (partial), Vimeo (partial) |
 | [Ant Media Server](https://github.com/ant-media/Ant-Media-Server) | Java | Other | [ams-v3.1.0](https://github.com/ant-media/Ant-Media-Server/releases/tag/ams-v3.1.0) | 4742 | Wowza Streaming Engine (partial) |
 | [Red5 Server](https://github.com/Red5/red5-server) | HTML | Apache-2.0 | [v2.0.46](https://github.com/Red5/red5-server/releases/tag/v2.0.46) | 3414 | Wowza Streaming Engine (full) |
 | [OvenMediaEngine](https://github.com/OvenMediaLabs/OvenMediaEngine) | C++ | AGPL-3.0 | [v0.21.0](https://github.com/OvenMediaLabs/OvenMediaEngine/releases/tag/v0.21.0) | 3288 | Wowza Streaming Engine (full) |

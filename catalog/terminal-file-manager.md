@@ -4,7 +4,7 @@ Browse, preview and move files from a keyboard-driven interface in the terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 42726 | ranger (full) |
+| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 42729 | ranger (full) |
 | [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 23776 | ranger (full), Midnight Commander (partial) |
 | [nnn](https://github.com/jarun/nnn) | C | BSD-2-Clause | [v5.3](https://github.com/jarun/nnn/releases/tag/v5.3) signed | 22058 | ranger (full) |
 | [ranger](https://github.com/ranger/ranger) | Python | GPL-3.0 | [v1.9.4](https://github.com/ranger/ranger/releases/tag/v1.9.4) signed | 17423 | Midnight Commander (partial) |
@@ -14,6 +14,6 @@ Browse, preview and move files from a keyboard-driven interface in the terminal.
 | [Vifm](https://github.com/vifm/vifm) | C | GPL-2.0 | [v0.14.4](https://github.com/vifm/vifm/releases/tag/v0.14.4) signed | 3280 | ranger (full), Midnight Commander (partial) |
 | [Far Manager](https://github.com/FarGroup/FarManager) | C++ | BSD-3-Clause | [ci/v3.0.6744.5018](https://github.com/FarGroup/FarManager/releases/tag/ci/v3.0.6744.5018) | 2237 | Midnight Commander (full), Total Commander (partial) |
 | [far2l](https://github.com/elfmz/far2l) | C++ | GPL-2.0 | [v_2.9.1](https://github.com/elfmz/far2l/releases/tag/v_2.9.1) | 2220 | Far Manager (full) |
-| [Midnight Commander](https://github.com/MidnightCommander/mc) | C | Other | [4.8.33](https://github.com/MidnightCommander/mc/releases/tag/4.8.33) | 1012 | Far Manager (full), Total Commander (partial) |
+| [Midnight Commander](https://github.com/MidnightCommander/mc) | C | Other | [4.8.33](https://github.com/MidnightCommander/mc/releases/tag/4.8.33) | 1011 | Far Manager (full), Total Commander (partial) |
 
 [All categories](../README.md#catalog)

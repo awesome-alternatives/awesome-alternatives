@@ -9,10 +9,10 @@ Turn Markdown into a searchable documentation site.
 | [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.7.7](https://github.com/squidfunk/mkdocs-material/releases/tag/9.7.7) signed | 27554 | GitBook (full), Docusaurus (full) |
 | [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22497 | GitBook (full) |
 | [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22207 | GitBook (full) |
-| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18394 | Docusaurus (full), GitBook (full) |
-| [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13936 | GitBook (full), Docusaurus (full) |
-| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [@fumadocs/asyncapi@0.4.4](https://github.com/fuma-nama/fumadocs/releases/tag/%40fumadocs/asyncapi%400.4.4) signed | 13326 | GitBook (full), Nextra (full), ReadMe (partial) |
-| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.6](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.6) signed | 9389 | Docusaurus (full), GitBook (full) |
+| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18395 | Docusaurus (full), GitBook (full) |
+| [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13935 | GitBook (full), Docusaurus (full) |
+| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [@fumadocs/asyncapi@0.4.4](https://github.com/fuma-nama/fumadocs/releases/tag/%40fumadocs/asyncapi%400.4.4) signed | 13328 | GitBook (full), Nextra (full), ReadMe (partial) |
+| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.6](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.6) signed | 9388 | Docusaurus (full), GitBook (full) |
 | [Sphinx](https://github.com/sphinx-doc/sphinx) | Python | Other | [v9.1.0](https://github.com/sphinx-doc/sphinx/releases/tag/v9.1.0) | 8057 | GitBook (full) |
 | [Zensical](https://github.com/zensical/zensical) | Rust | MIT | [v0.0.69](https://github.com/zensical/zensical/releases/tag/v0.0.69) | 5870 | Material for MkDocs (full) |
 | [DocFX](https://github.com/dotnet/docfx) | C# | MIT | [v2.81.0](https://github.com/dotnet/docfx/releases/tag/v2.81.0) signed | 4447 | Doxygen (partial), Sphinx (partial) |
