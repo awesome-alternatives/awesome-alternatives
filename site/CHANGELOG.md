@@ -4,6 +4,17 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.130.0] - 2026-10-10
+
+### Features
+
+- feat(catalog): add 95 incumbent open source tools (#408)
+- feat(search): filter on how a tool deploys (#411)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
 ## [0.129.5] - 2026-10-10
 
 ### Bug Fixes

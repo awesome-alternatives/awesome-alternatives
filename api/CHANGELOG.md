@@ -4,6 +4,12 @@ All notable changes to `api` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.27.0] - 2026-10-10
+
+### Features
+
+- feat(search): filter on how a tool deploys (#411)
+
 ## [0.26.0] - 2026-10-07
 
 ### Features
