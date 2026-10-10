@@ -307,11 +307,9 @@ export const ja: Messages = {
     title: "ページが見つかりません",
     description: "このページはカタログにありません。",
     heading: "カタログにありません",
-    ledeBefore: "このアドレスには何もありません。",
-    ledeSearch: "カタログを検索する",
-    ledeBetween: "か、探していた",
-    ledeAdd: "ツールを追加",
-    ledeAfter: "してください。",
+    lede: "このアドレスには何もありません。探していたツールを検索するか、下の一覧から探してください。",
+    browseLabel: "一覧から探す",
+    didYouMean: "もしかして",
   },
 
   banned: {

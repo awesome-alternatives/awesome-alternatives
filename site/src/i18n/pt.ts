@@ -307,11 +307,9 @@ export const pt: Messages = {
     title: "Não encontrado",
     description: "Esta página não está no catálogo.",
     heading: "Não está no catálogo",
-    ledeBefore: "Não há nada neste endereço. ",
-    ledeSearch: "Pesquise no catálogo",
-    ledeBetween: " ou ",
-    ledeAdd: "adicione a ferramenta",
-    ledeAfter: " que você estava procurando.",
+    lede: "Não há nada neste endereço. Pesquise a ferramenta que você procurava ou comece por uma das listas abaixo.",
+    browseLabel: "Começar por uma lista",
+    didYouMean: "Você quis dizer",
   },
 
   banned: {

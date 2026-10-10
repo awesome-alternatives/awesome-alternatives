@@ -10,7 +10,7 @@ type IndexState =
   | { kind: "ready"; index: SuggestIndex }
   | { kind: "failed" };
 
-async function loadIndex(signal: AbortSignal): Promise<SuggestIndex> {
+export async function loadIndex(signal: AbortSignal): Promise<SuggestIndex> {
   const response = await fetch("/search-index.json", { signal });
   if (!response.ok) throw new Error(String(response.status));
   return await response.json();

@@ -2570,6 +2570,19 @@ a.tag:hover {
   margin-top: 24px;
 }
 
+.missing-browse,
+.missing {
+  margin-top: 40px;
+}
+
+.missing {
+  min-height: 13rem;
+}
+
+.missing .targets {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 [data-searching] #trending,
 [data-searching] .trending-divider {
   display: none;

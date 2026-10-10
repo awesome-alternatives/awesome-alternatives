@@ -306,11 +306,9 @@ export const en = {
     title: "Not found",
     description: "This page is not in the catalog.",
     heading: "Not in the catalog",
-    ledeBefore: "Nothing lives at this address. ",
-    ledeSearch: "Search the catalog",
-    ledeBetween: ", or ",
-    ledeAdd: "add the tool",
-    ledeAfter: " you were looking for.",
+    lede: "Nothing lives at this address. Search for the tool you were looking for, or start from one of the lists below.",
+    browseLabel: "Start from a list",
+    didYouMean: "Did you mean",
   },
 
   banned: {

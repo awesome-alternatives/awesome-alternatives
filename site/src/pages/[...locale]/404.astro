@@ -1,10 +1,13 @@
 ---
 import type { GetStaticPaths } from "astro";
 
+import DidYouMean from "../../components/DidYouMean.tsx";
+import Search from "../../components/Search.tsx";
 import type { Locale } from "../../i18n/index.ts";
 import { messages, pathFor } from "../../i18n/index.ts";
 import { localePaths } from "../../i18n/paths.ts";
 import Base from "../../layouts/Base.astro";
+import { searchProps } from "../../lib/searchProps.ts";
 
 export const getStaticPaths = (() => localePaths()) satisfies GetStaticPaths;
 
@@ -14,13 +17,32 @@ interface Props {
 
 const { locale } = Astro.props;
 const m = messages(locale);
+const entries = [
+  { path: "/tools/", label: m.home.allTools },
+  { path: "/categories/", label: m.home.categories },
+  { path: "/alternatives/", label: m.index.alternatives.heading },
+  { path: "/contribute/", label: m.chrome.nav.contribute },
+];
 ---
 
-<Base title={m.notFound.title} description={m.notFound.description} noindex>
-  <h1>{m.notFound.heading}</h1>
-  <p class="lede">
-    {m.notFound.ledeBefore}<a href={pathFor(locale, "/")}>{m.notFound.ledeSearch}</a>{m.notFound.ledeBetween}<a
-      href={pathFor(locale, "/contribute/")}>{m.notFound.ledeAdd}</a
-    >{m.notFound.ledeAfter}
-  </p>
+<Base revealSearch title={m.notFound.title} description={m.notFound.description} noindex>
+  <section class="hero">
+    <h1>{m.notFound.heading}</h1>
+    <p class="lede">{m.notFound.lede}</p>
+    <div data-reveal-anchor>
+      <Search client:idle locale={locale} strings={m.islands} examples={m.home.examples} {...searchProps()} />
+    </div>
+  </section>
+  <section class="missing-browse">
+    <h2 class="section-label">{m.notFound.browseLabel}</h2>
+    <p class="links">
+      {entries.map((entry) => <a href={pathFor(locale, entry.path)}>{entry.label}</a>)}
+    </p>
+  </section>
+  <DidYouMean
+    client:idle
+    locale={locale}
+    heading={m.notFound.didYouMean}
+    alternativesTo={m.islands.search.suggestions.alternativesTo}
+  />
 </Base>
