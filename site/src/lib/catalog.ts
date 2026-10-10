@@ -39,22 +39,26 @@ const catalog: {
   readFileSync(resolve(ROOT, "generated/catalog.json"), "utf8"),
 );
 
-export const tools: EnrichedTool[] = catalog.tools.map(withDeploy);
+export const categoryRedirects: Record<string, string> =
+  parse(readFileSync(resolve(ROOT, "data/category-redirects.yaml"), "utf8")) ?? {};
+
+export function inCurrentCategory<T extends { category: string }>(entry: T, redirects: Readonly<Record<string, string>>): T {
+  const category = redirects[entry.category];
+  return category ? { ...entry, category } : entry;
+}
+
+export const tools: EnrichedTool[] = catalog.tools.map((tool) => inCurrentCategory(withDeploy(tool), categoryRedirects));
 
 export const events: CatalogEvent[] = JSON.parse(readFileSync(resolve(ROOT, "generated/events.json"), "utf8"));
 
 export const checkedAt: string | null = catalog.checkedAt ?? null;
 
-export const products: ListedProduct[] = catalog.products;
+export const products: ListedProduct[] = catalog.products.map((product) => inCurrentCategory(product, categoryRedirects));
 
-export const banned: BannedTool[] = catalog.banned ?? [];
+export const banned: BannedTool[] = (catalog.banned ?? []).map((entry) => inCurrentCategory(entry, categoryRedirects));
 
 export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
-);
-
-export const categoryRedirects: Record<string, string> = parse(
-  readFileSync(resolve(ROOT, "data/category-redirects.yaml"), "utf8"),
 );
 
 export const pairs: Pair<EnrichedTool>[] = comparePairs(tools);
