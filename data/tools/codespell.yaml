@@ -1,6 +1,6 @@
 name: codespell
 repository: https://github.com/codespell-project/codespell
-category: spell-checker
+category: lint-format
 replaces:
   - tool: typos
     fit: full

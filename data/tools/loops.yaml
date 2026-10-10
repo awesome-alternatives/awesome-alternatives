@@ -1,6 +1,6 @@
 name: Loops
 repository: https://github.com/joinloops/loops-server
-category: photo-sharing
+category: social-network
 replaces:
   - tool: tiktok
     fit: partial

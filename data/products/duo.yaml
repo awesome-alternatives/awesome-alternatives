@@ -1,5 +1,5 @@
 name: Duo
 homepage: https://duo.com
 vendor: Cisco
-category: mfa-server
+category: identity-provider
 description: Hosted two-factor authentication service with push approvals, used in front of VPNs and applications.

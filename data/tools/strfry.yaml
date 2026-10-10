@@ -1,6 +1,6 @@
 name: strfry
 repository: https://github.com/hoytech/strfry
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: partial

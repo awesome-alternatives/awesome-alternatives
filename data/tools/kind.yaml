@@ -1,6 +1,6 @@
 name: kind
 repository: https://github.com/kubernetes-sigs/kind
-category: local-kubernetes
+category: container-desktop
 replaces:
   - tool: minikube
     fit: full

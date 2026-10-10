@@ -1,6 +1,6 @@
 name: git-quick-stats
 repository: https://github.com/git-quick-stats/git-quick-stats
-category: repository-statistics
+category: code-statistics
 replaces:
   - tool: github
     fit: partial

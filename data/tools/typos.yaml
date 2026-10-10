@@ -1,6 +1,6 @@
 name: typos
 repository: https://github.com/crate-ci/typos
-category: spell-checker
+category: lint-format
 replaces:
   - tool: codespell
     fit: full

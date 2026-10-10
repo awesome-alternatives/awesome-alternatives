@@ -1,6 +1,6 @@
 name: sccache
 repository: https://github.com/mozilla/sccache
-category: build-cache
+category: build-system
 replaces:
   - tool: ccache
     fit: full

@@ -1,6 +1,6 @@
 name: Bluesky PDS
 repository: https://github.com/bluesky-social/pds
-category: microblogging
+category: social-network
 terms: open
 replaces:
   - tool: x-twitter

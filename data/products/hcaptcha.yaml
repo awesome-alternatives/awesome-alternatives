@@ -1,5 +1,5 @@
 name: hCaptcha
 homepage: https://www.hcaptcha.com
 vendor: Intuition Machines
-category: captcha
+category: waf
 description: Hosted CAPTCHA service that challenges visitors to tell humans from bots.

@@ -1,6 +1,6 @@
 name: poop
 repository: https://github.com/andrewrk/poop
-category: command-benchmark
+category: profiler
 replaces:
   - tool: hyperfine
     fit: partial

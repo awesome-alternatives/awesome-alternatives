@@ -1,6 +1,6 @@
 name: Standard Ruby
 repository: https://github.com/standardrb/standard
-category: ruby-lint-format
+category: lint-format
 replaces:
   - tool: rubocop
     fit: partial

@@ -1,6 +1,6 @@
 name: markdownlint-cli2
 repository: https://github.com/DavidAnson/markdownlint-cli2
-category: markdown-lint
+category: lint-format
 replaces:
   - tool: markdownlint-cli
     fit: full

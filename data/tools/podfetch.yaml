@@ -1,6 +1,6 @@
 name: PodFetch
 repository: https://github.com/SamTV12345/PodFetch
-category: podcast-server
+category: media-server
 replaces:
   - tool: pocket-casts
     fit: partial

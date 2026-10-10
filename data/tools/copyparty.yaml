@@ -1,6 +1,6 @@
 name: copyparty
 repository: https://github.com/9001/copyparty
-category: web-file-manager
+category: file-sync
 deploy: [container, binary]
 replaces:
   - tool: wetransfer

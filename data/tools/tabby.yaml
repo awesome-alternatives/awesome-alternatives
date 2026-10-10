@@ -1,6 +1,6 @@
 name: Tabby
 repository: https://github.com/TabbyML/tabby
-category: code-assistant
+category: coding-agent
 terms: open-core
 replaces:
   - tool: github-copilot

@@ -1,6 +1,6 @@
 name: git filter-repo
 repository: https://github.com/newren/git-filter-repo
-category: git-extensions
+category: git-client
 terms: open
 replaces:
   - tool: git

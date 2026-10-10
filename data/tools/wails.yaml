@@ -1,6 +1,6 @@
 name: Wails
 repository: https://github.com/wailsapp/wails
-category: desktop-app-framework
+category: app-framework
 replaces:
   - tool: electron
     fit: partial

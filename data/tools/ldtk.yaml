@@ -1,6 +1,6 @@
 name: LDtk
 repository: https://github.com/deepnight/ldtk
-category: game-map-editor
+category: game-engine
 replaces:
   - tool: tiled
     fit: partial

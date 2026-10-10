@@ -1,6 +1,6 @@
 name: cz-git
 repository: https://github.com/Zhengqbbb/cz-git
-category: commit-lint
+category: git-hooks
 replaces:
   - tool: commitizen
     fit: full

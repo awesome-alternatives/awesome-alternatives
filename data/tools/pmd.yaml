@@ -1,6 +1,6 @@
 name: PMD
 repository: https://github.com/pmd/pmd
-category: jvm-lint-format
+category: lint-format
 replaces:
   - tool: sonarqube
     fit: partial

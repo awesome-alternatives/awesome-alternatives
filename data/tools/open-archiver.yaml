@@ -1,6 +1,6 @@
 name: Open Archiver
 repository: https://github.com/LogicLabs-OU/OpenArchiver
-category: email-archiving
+category: mail-server
 replaces:
   - tool: mailstore
     fit: partial

@@ -1,6 +1,6 @@
 name: ProxyAI
 repository: https://github.com/carlrobertoh/ProxyAI
-category: code-assistant
+category: coding-agent
 replaces:
   - tool: github-copilot
     fit: partial

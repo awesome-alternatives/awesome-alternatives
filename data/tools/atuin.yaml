@@ -1,6 +1,6 @@
 name: atuin
 repository: https://github.com/atuinsh/atuin
-category: shell-history
+category: fuzzy-finder
 replaces:
   - tool: mcfly
     fit: full

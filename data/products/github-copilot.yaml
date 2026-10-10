@@ -1,5 +1,5 @@
 name: GitHub Copilot
 homepage: https://github.com/features/copilot
 vendor: GitHub
-category: code-assistant
+category: coding-agent
 description: GitHub's AI assistant in the editor, with completions, chat and an agent mode.

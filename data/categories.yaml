@@ -25,6 +25,9 @@ python-packaging:
 python-lint-format:
   name: Python linting and formatting
   description: Linters and formatters for Python.
+lint-format:
+  name: Linters and formatters
+  description: Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, shell, SQL, Markdown, config files and code spelling, and formatters that cover many languages.
 infrastructure-as-code:
   name: Infrastructure as code
   description: Declare cloud infrastructure in files and apply the difference.
@@ -50,11 +53,11 @@ http-client:
   name: Command-line HTTP clients
   description: Send HTTP requests from a terminal.
 code-search:
-  name: Code search
-  description: Search file contents recursively from a terminal.
+  name: Code and file search
+  description: Search file contents recursively, or find files by name, type, size or date, from a terminal.
 api-client:
   name: API clients
-  description: Build, send and share HTTP and GraphQL requests from a desktop or browser app.
+  description: Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser app, or call gRPC services from the command line.
 monorepo-tool:
   name: Monorepo tools
   description: Run, cache and orchestrate tasks across the packages of one repository.
@@ -210,9 +213,6 @@ python-http-client:
 javascript-date-library:
   name: JavaScript date libraries
   description: Parse, format and compute dates in JavaScript.
-local-kubernetes:
-  name: Local Kubernetes
-  description: Run a Kubernetes cluster on a laptop or in CI.
 secrets-manager:
   name: Secrets managers
   description: Store, rotate and hand out secrets to applications.
@@ -240,16 +240,12 @@ minecraft-server:
 
 file-sync:
   name: File sync and share
-  description: Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client.
+  description: Self-hosted storage for files you reach from more than one machine, over WebDAV, a sync client or a web file manager.
   selfHost: true
 
 coding-agent:
-  name: AI coding agents
-  description: Agents that read a codebase, edit files and run commands from a prompt, in the terminal or the editor.
-
-code-assistant:
-  name: AI code assistants
-  description: Completions and chat inside the editor, backed by a hosted or a local model.
+  name: AI coding agents and assistants
+  description: Agents that read a codebase, edit files and run commands from a prompt, and completions and chat inside the editor, backed by a hosted or a local model.
 
 chat-interface:
   name: AI chat interfaces
@@ -262,8 +258,8 @@ llm-runtime:
   selfHost: true
 
 container-desktop:
-  name: Container desktops
-  description: Run containers and a local Kubernetes on a laptop, with the engine managed for you.
+  name: Container desktops and local Kubernetes
+  description: Run containers and a Kubernetes cluster on a laptop or in CI, with the engine managed for you.
 
 dashboards:
   name: Dashboards
@@ -285,8 +281,8 @@ error-tracking:
   selfHost: true
 
 tracing:
-  name: Distributed tracing
-  description: Collect and search traces of requests as they cross services.
+  name: Tracing and continuous profiling
+  description: Collect and search traces of requests as they cross services, and CPU and memory profiles of running services over time.
   selfHost: true
 
 time-series-database:
@@ -314,7 +310,7 @@ config-management:
 
 workflow-automation:
   name: Workflow automation
-  description: Connect apps and APIs with trigger-and-action workflows.
+  description: Connect apps and APIs with trigger-and-action workflows, and turn operational runbooks into jobs that run on servers with an audit trail.
   selfHost: true
 
 gitops:
@@ -328,7 +324,7 @@ container-registry:
 
 identity-provider:
   name: Identity providers
-  description: Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP.
+  description: Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP, including two-factor servers for VPNs and applications.
   selfHost: true
 
 mesh-vpn:
@@ -382,7 +378,7 @@ photo-library:
 
 media-server:
   name: Media servers
-  description: Stream a personal library of films, series and music to your devices.
+  description: Stream a personal library of films, series, music and podcasts to your devices.
   selfHost: true
 
 video-hosting:
@@ -500,16 +496,16 @@ directory-jumper:
   description: Jump to frequently used directories with a few keystrokes.
 
 fuzzy-finder:
-  name: Fuzzy finders
-  description: Filter lists interactively in a terminal, for files, history and anything piped in.
+  name: Fuzzy finders and history search
+  description: Filter lists interactively in a terminal, for files, anything piped in and the shell history, which some also sync between machines.
 
 shell:
   name: Shells
   description: Interactive command-line shells.
 
 git-client:
-  name: Git clients
-  description: Stage, commit, branch and browse history outside the bare git command.
+  name: Git clients and extensions
+  description: Stage, commit, branch, browse and rewrite history outside the bare git command, from a GUI, a terminal UI or extra subcommands.
 
 office-suite:
   name: Office suites
@@ -530,8 +526,8 @@ diagramming:
   description: Draw diagrams and sketch on a shared canvas.
 
 screen-recording:
-  name: Screen recording
-  description: Record the screen and camera and share the video.
+  name: Screen and terminal recording
+  description: Record the screen, the camera or a terminal session and share it as a video, a GIF or a replayable cast.
 
 authenticator-app:
   name: Authenticator apps
@@ -552,8 +548,8 @@ read-later:
   selfHost: true
 
 feed-reader:
-  name: Feed readers
-  description: Follow sites through RSS and Atom feeds.
+  name: Feed readers and generators
+  description: Follow sites through RSS and Atom feeds, and produce feeds for sites and accounts that do not publish one.
   selfHost: true
 
 dns-sinkhole:
@@ -582,8 +578,8 @@ helpdesk:
   selfHost: true
 
 e-commerce:
-  name: E-commerce
-  description: Run an online store, from catalogue to checkout.
+  name: E-commerce and point of sale
+  description: Run an online store, from catalogue to checkout, or ring up in-store sales and print receipts.
   selfHost: true
 
 url-shortener:
@@ -593,7 +589,7 @@ url-shortener:
 
 mail-server:
   name: Mail servers
-  description: Host email for your own domains.
+  description: Host email for your own domains, archive and search every message for retention, and collect the DMARC reports sent about your domains.
   selfHost: true
 
 cloud-ide:
@@ -634,14 +630,6 @@ terminal-file-manager:
   name: Terminal file managers
   description: Browse, preview and move files from a keyboard-driven interface in the terminal.
 
-file-finder:
-  name: File finders
-  description: Find files by name, type, size or date from the terminal, as a faster find.
-
-grpc-client:
-  name: gRPC clients
-  description: Call gRPC services from the command line or a browser, using reflection or proto files.
-
 mock-server:
   name: Mock servers
   description: Stand in for HTTP APIs during development and tests with recorded or declared responses.
@@ -654,73 +642,13 @@ code-documentation:
   name: Code documentation generators
   description: Build reference documentation from source code and its doc comments.
 
-git-extensions:
-  name: Git extensions
-  description: Extra git subcommands for history rewriting and everyday repository chores.
-
-repository-statistics:
-  name: Repository statistics
-  description: Summarise a git repository's contributors, activity, languages and size.
-
 stacked-pull-requests:
   name: Stacked pull requests
   description: Split a change into a stack of dependent branches or commits and keep their pull requests in sync.
 
-shell-lint-format:
-  name: Shell linting and formatting
-  description: Linters and formatters for shell scripts.
-
-markdown-lint:
-  name: Markdown linting
-  description: Check Markdown files against style and syntax rules.
-
-go-lint:
-  name: Go linting
-  description: Linters and static checkers for Go.
-
-php-lint-format:
-  name: PHP linting and formatting
-  description: Static analysers, linters and formatters for PHP.
-
-jvm-lint-format:
-  name: Java and Kotlin linting and formatting
-  description: Linters, bug finders and formatters for Java, Kotlin and other JVM languages.
-
-swift-lint-format:
-  name: Swift linting and formatting
-  description: Linters and formatters for Swift.
-
-ruby-lint-format:
-  name: Ruby linting and formatting
-  description: Linters and formatters for Ruby.
-
-config-file-lint:
-  name: Configuration file linting
-  description: Check YAML files, Dockerfiles and CI workflow definitions for mistakes.
-
-sql-lint-format:
-  name: SQL linting and formatting
-  description: Linters and formatters for SQL queries and dialects.
-
-spell-checker:
-  name: Code spell checkers
-  description: Find misspelled words in source code, identifiers and documentation.
-
-multi-language-formatter:
-  name: Multi-language formatters
-  description: Run or provide formatting for many languages from one command and one configuration.
-
-lua-lint-format:
-  name: Lua linting and formatting
-  description: Linters and formatters for Lua.
-
 build-system:
-  name: Build systems
-  description: Compile, test and package projects from a declared build, for C, C++, the JVM and other languages.
-
-build-cache:
-  name: Compiler caches
-  description: Cache compiler output so unchanged sources are not rebuilt, locally or on shared storage.
+  name: Build systems and compiler caches
+  description: Compile, test and package projects from a declared build, for C, C++, the JVM and other languages, and cache compiler output between builds.
 
 system-package-manager:
   name: System package managers
@@ -739,20 +667,16 @@ debugger:
   description: Step through running programs, inspect their state and replay their execution.
 
 profiler:
-  name: Profilers
-  description: Measure where a program spends its time and memory, and draw it as flame graphs or timelines.
+  name: Profilers and benchmarking
+  description: Measure where a program spends its time and memory, draw it as flame graphs or timelines, and time commands over repeated runs.
 
 file-viewer:
-  name: Terminal file viewers
-  description: Show file contents in the terminal with syntax highlighting or rendering.
+  name: Terminal file and log viewers
+  description: Show files in the terminal with syntax highlighting or rendering, and read, highlight and filter log files.
 
 hex-editor:
   name: Hex editors
   description: View and edit the raw bytes of binary files.
-
-command-benchmark:
-  name: Command benchmarking
-  description: Time shell commands over repeated runs and compare the results statistically.
 
 cheatsheet:
   name: Command cheatsheets
@@ -762,18 +686,6 @@ find-replace:
   name: Find and replace
   description: Search and replace text across files from the terminal, with previews or structural matching.
 
-log-viewer:
-  name: Terminal log viewers
-  description: Read, highlight and filter log files in the terminal.
-
-terminal-recording:
-  name: Terminal recording
-  description: Record terminal sessions and replay them or render them as GIFs and videos.
-
-commit-lint:
-  name: Commit message tooling
-  description: Check commit messages against a convention, or prompt for them in that format.
-
 dependency-updates:
   name: Dependency update bots
   description: Open pull requests that bump dependencies when new versions are released.
@@ -782,17 +694,13 @@ disk-usage:
   name: Disk usage analyzers
   description: Show which directories and files take up the space on a disk.
 
-shell-history:
-  name: Shell history
-  description: Search, sync and recall the commands typed in a shell.
-
 task-runner:
   name: Task runners
   description: Name a project's commands in one file and run them, as a lighter make.
 
 git-hooks:
-  name: Git hook managers
-  description: Install and run the checks a repository wants before a commit or a push.
+  name: Git hooks and commit messages
+  description: Install and run the checks a repository wants before a commit or a push, and check or prompt for commit messages in a convention.
 
 runtime-version-manager:
   name: Runtime version managers
@@ -803,8 +711,8 @@ backup:
   description: Take deduplicated, encrypted snapshots of files and restore them from local or cloud storage.
 
 code-statistics:
-  name: Code statistics
-  description: Count the lines of code, comments and blanks in a codebase, by language.
+  name: Code and repository statistics
+  description: Count the lines of code, comments and blanks in a codebase by language, and summarise a git repository's contributors, activity and size.
 
 file-watcher:
   name: File watchers
@@ -867,7 +775,7 @@ push-notifications:
 
 vulnerability-scanner:
   name: Vulnerability scanners
-  description: Check dependencies and container images against databases of known vulnerabilities.
+  description: Check dependencies and container images against databases of known vulnerabilities, and infrastructure code for insecure settings before it is applied.
 
 pastebin:
   name: Pastebins
@@ -906,11 +814,6 @@ pdf-tools:
   description: Edit, merge, split, convert and sign PDF files.
   selfHost: true
 
-microblogging:
-  name: Microblogging
-  description: Federated or self-hosted social networks for short public posts.
-  selfHost: true
-
 forum:
   name: Forums and Q&A
   description: Community forums, link aggregators and question and answer sites.
@@ -943,11 +846,6 @@ consent-management:
 event-ticketing:
   name: Event ticketing
   description: Sell tickets, manage attendees and check people in at events.
-  selfHost: true
-
-point-of-sale:
-  name: Point of sale
-  description: Ring up in-store sales, print receipts and track stock.
   selfHost: true
 
 image-proxy:
@@ -1026,16 +924,6 @@ email-templating:
   name: Email templating
   description: Write HTML emails from components or markup and compile them to code that renders across mail clients.
 
-email-archiving:
-  name: Email archiving
-  description: Store, index and search every message an organisation sends and receives, for retention and legal holds.
-  selfHost: true
-
-dmarc-reporting:
-  name: DMARC reporting
-  description: Collect and chart the DMARC aggregate and failure reports that mailbox providers send about your domains.
-  selfHost: true
-
 nvr:
   name: Network video recorders
   description: Record, watch and analyse IP camera streams on your own hardware.
@@ -1058,11 +946,6 @@ habit-tracker:
 web-archiving:
   name: Web archiving
   description: Save complete copies of web pages so they stay readable after the original changes or disappears.
-
-feed-generator:
-  name: Feed generators
-  description: Produce RSS and Atom feeds for sites and accounts that do not publish one.
-  selfHost: true
 
 homelab-dashboard:
   name: Homelab dashboards
@@ -1204,7 +1087,7 @@ feedback-board:
 
 inventory:
   name: Inventory and asset management
-  description: Track stock, parts and equipment, and who has them where.
+  description: Track stock, parts, equipment and household belongings, and who has them where.
   selfHost: true
 
 lms:
@@ -1250,8 +1133,8 @@ device-management:
   selfHost: true
 
 waf:
-  name: Web application firewalls
-  description: Inspect HTTP traffic and block attacks, bots and abuse before they reach an application.
+  name: Web application firewalls and bot checks
+  description: Inspect HTTP traffic and block attacks, bots and abuse before they reach an application, or ask visitors to prove they are human.
   selfHost: true
 
 firewall:
@@ -1268,19 +1151,9 @@ vpn-server:
   description: Run a remote-access or site-to-site VPN server for your users and networks.
   selfHost: true
 
-web-file-manager:
-  name: Web file managers
-  description: Browse, upload and share files on a server or storage back end from a browser.
-  selfHost: true
-
 local-file-transfer:
   name: Direct file transfer
   description: Send files straight from one device to another, nearby or through a relay, without uploading them to a storage service.
-
-home-inventory:
-  name: Inventory of belongings
-  description: Catalogue the things a household owns or collects, with locations, photos and warranties.
-  selfHost: true
 
 genealogy:
   name: Genealogy
@@ -1342,21 +1215,12 @@ music-notation:
   description: Write, play back and engrave sheet music and tablature.
 
 music-player:
-  name: Music players
-  description: Play and organise a local music library, or stream it from your own server.
-
-music-tagger:
-  name: Music taggers
-  description: Fix the tags, cover art and file names of a music library, often from MusicBrainz.
+  name: Music players and taggers
+  description: Play and organise a local music library or stream it from your own server, and fix its tags, cover art and file names.
 
 podcast-player:
   name: Podcast players
   description: Subscribe to podcasts by RSS, download episodes and keep your place.
-
-podcast-server:
-  name: Podcast servers
-  description: Fetch and archive podcast feeds on your own server and listen from any device.
-  selfHost: true
 
 internet-radio:
   name: Internet radio
@@ -1372,14 +1236,9 @@ social-client:
   name: Social network clients
   description: Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 
-photo-sharing:
-  name: Photo and video sharing networks
-  description: Federated social networks built around photo posts and short videos.
-  selfHost: true
-
 social-network:
   name: Social networks
-  description: Self-hosted social networks with profiles, groups and an activity stream.
+  description: Self-hosted and federated social networks, for short public posts, photos and videos, or profiles, groups and an activity stream.
   selfHost: true
 
 realtime-messaging:
@@ -1402,8 +1261,8 @@ stream-processing:
   selfHost: true
 
 data-transformation:
-  name: Data transformation
-  description: Build and test SQL and Python models inside a warehouse, with dependencies between them.
+  name: Data transformation and semantic layers
+  description: Build and test SQL and Python models inside a warehouse, and define metrics and dimensions once for BI tools and applications.
 
 data-catalog:
   name: Data catalogs
@@ -1413,10 +1272,6 @@ data-catalog:
 data-quality:
   name: Data quality
   description: Declare tests on datasets and check them in pipelines.
-
-semantic-layer:
-  name: Semantic layers
-  description: Define metrics and dimensions once and serve them to BI tools and applications.
 
 data-notebook:
   name: Data notebooks
@@ -1490,11 +1345,6 @@ container-image-tools:
   name: Container image tools
   description: Inspect, copy, sign and shrink OCI images and work with registries without a container daemon.
 
-continuous-profiling:
-  name: Continuous profiling
-  description: Collect CPU and memory profiles from running services all the time and query them over time like metrics.
-  selfHost: true
-
 video-player:
   name: Video players
   description: Play local video files and streams, or the library of your own media server.
@@ -1536,8 +1386,8 @@ font-editor:
   description: Slice models into G-code and control 3D printers.
 
 cad:
-  name: CAD
-  description: Draft 2D drawings and model parametric 3D parts for engineering and fabrication.
+  name: CAD and PCB design
+  description: Draft 2D drawings, model parametric 3D parts and lay out printed circuit boards for engineering and fabrication.
 
 3d-modeling:
   name: 3D modelling
@@ -1545,11 +1395,7 @@ cad:
 
 game-engine:
   name: Game engines
-  description: Build 2D and 3D games with an engine, an editor or a framework, and export them to desktop, mobile and the web.
-
-game-map-editor:
-  name: Game level editors
-  description: Design tile maps and levels and export them to a game engine.
+  description: Build 2D and 3D games with an engine, an editor or a framework, design their maps and levels, and export them to desktop, mobile and the web.
 
 continuous-delivery:
   name: Continuous delivery
@@ -1576,27 +1422,14 @@ infrastructure-inventory:
   description: Model racks, devices, cables, IP addresses and circuits as the source of truth for network and data centre automation.
   selfHost: true
 
-runbook-automation:
-  name: Runbook automation
-  description: Turn operational procedures into jobs that run on servers on demand, on a schedule or in response to events, with access control and an audit trail.
-  selfHost: true
-
 vulnerability-management:
   name: Vulnerability management
   description: Collect findings from scanners and SBOMs in one place, track them per product and follow them to a fix.
   selfHost: true
 
-sbom-tool:
-  name: SBOM generators
-  description: Generate software bills of materials in SPDX or CycloneDX from source trees, images and binaries.
-
 dast-scanner:
   name: Web vulnerability scanners
   description: Probe running web applications and APIs for vulnerabilities from the outside.
-
-iac-scanner:
-  name: Infrastructure as code scanners
-  description: Check Terraform, Kubernetes manifests and other infrastructure code for insecure settings before it is applied.
 
 cloud-security-posture:
   name: Cloud security posture
@@ -1614,7 +1447,7 @@ secret-scanning:
 
 supply-chain-security:
   name: Software supply chain
-  description: Sign and verify artifacts, and assess the security practices of the projects you depend on.
+  description: Generate software bills of materials, sign and verify artifacts, and assess the security practices of the projects you depend on.
 
 soar:
   name: Security orchestration and response
@@ -1634,16 +1467,6 @@ honeypot:
 malware-scanner:
   name: Malware scanners
   description: Scan files for malware with signatures, pattern rules or sandboxed execution.
-  selfHost: true
-
-captcha:
-  name: CAPTCHAs and bot checks
-  description: Tell humans from bots on forms and sign-ups without sending visitors to a third-party tracker.
-  selfHost: true
-
-mfa-server:
-  name: MFA servers
-  description: Run two-factor authentication for VPNs, servers and applications from your own server.
   selfHost: true
 
 file-encryption:
@@ -1681,12 +1504,8 @@ compression:
   description: Archive and compress files and streams.
 
 download-manager:
-  name: Download managers
-  description: Fetch files and media from the web from a terminal or a queue.
-
-bittorrent-client:
-  name: BitTorrent clients
-  description: Download and seed files over the BitTorrent protocol.
+  name: Download managers and BitTorrent clients
+  description: Fetch files and media from the web from a terminal or a queue, or download and seed them over BitTorrent.
 
 media-automation:
   name: Media library automation
@@ -1697,25 +1516,17 @@ frontend-framework:
   name: Front-end frameworks
   description: Component frameworks for building browser user interfaces.
 
-desktop-app-framework:
-  name: Desktop app frameworks
-  description: Build desktop applications from web technologies.
-
-mobile-app-framework:
-  name: Mobile app frameworks
-  description: Build iOS and Android applications from one codebase.
+app-framework:
+  name: App frameworks
+  description: Build desktop and mobile applications for several platforms from one codebase, often with web technologies.
 
 java-web-framework:
   name: Java web frameworks
   description: Frameworks for building web services and applications on the JVM.
 
 programming-language:
-  name: Programming languages
-  description: Language implementations with their compiler, interpreter and standard library.
-
-compiler:
-  name: Compilers
-  description: Compiler toolchains that turn source code into machine code.
+  name: Programming languages and compilers
+  description: Language implementations with their compiler, interpreter and standard library, and compiler toolchains that turn source code into machine code.
 
 machine-learning-framework:
   name: Machine learning frameworks
@@ -1732,10 +1543,6 @@ operating-system:
 window-manager:
   name: Window managers
   description: Tiling and stacking window managers and compositors for Linux desktops.
-
-pcb-design:
-  name: PCB design
-  description: Schematic capture and printed circuit board layout.
 
 version-control:
   name: Version control systems

@@ -1,6 +1,6 @@
 name: PinePods
 repository: https://github.com/madeofpendletonwool/PinePods
-category: podcast-server
+category: media-server
 replaces:
   - tool: pocket-casts
     fit: partial

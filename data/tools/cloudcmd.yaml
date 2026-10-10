@@ -1,4 +1,4 @@
 name: Cloud Commander
 repository: https://github.com/coderaiser/cloudcmd
-category: web-file-manager
+category: file-sync
 deploy: [container]

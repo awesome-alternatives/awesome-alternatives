@@ -1,6 +1,6 @@
 name: Open Source Point of Sale
 repository: https://github.com/opensourcepos/opensourcepos
-category: point-of-sale
+category: e-commerce
 terms: open
 replaces:
   - tool: square-pos

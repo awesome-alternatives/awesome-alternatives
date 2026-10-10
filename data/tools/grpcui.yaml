@@ -1,6 +1,6 @@
 name: gRPC UI
 repository: https://github.com/fullstorydev/grpcui
-category: grpc-client
+category: api-client
 replaces:
   - tool: postman
     fit: partial

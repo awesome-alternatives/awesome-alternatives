@@ -1,6 +1,6 @@
 name: nostream
 repository: https://github.com/cameri/nostream
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: partial

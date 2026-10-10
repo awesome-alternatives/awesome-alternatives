@@ -1,6 +1,6 @@
 name: detekt
 repository: https://github.com/detekt/detekt
-category: jvm-lint-format
+category: lint-format
 replaces:
   - tool: sonarqube
     fit: partial

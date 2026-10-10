@@ -1,6 +1,6 @@
 name: CSpell
 repository: https://github.com/streetsidesoftware/cspell
-category: spell-checker
+category: lint-format
 replaces:
   - tool: codespell
     fit: partial

@@ -1,6 +1,6 @@
 name: sqlfmt
 repository: https://github.com/tconbeer/sqlfmt
-category: sql-lint-format
+category: lint-format
 replaces:
   - tool: sql-formatter
     fit: full

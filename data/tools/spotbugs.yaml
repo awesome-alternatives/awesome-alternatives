@@ -1,6 +1,6 @@
 name: SpotBugs
 repository: https://github.com/spotbugs/spotbugs
-category: jvm-lint-format
+category: lint-format
 replaces:
   - tool: sonarqube
     fit: partial

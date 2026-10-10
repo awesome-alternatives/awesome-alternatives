@@ -1,6 +1,6 @@
 name: Hollo
 repository: https://github.com/fedify-dev/hollo
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: partial

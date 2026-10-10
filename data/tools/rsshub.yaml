@@ -1,6 +1,6 @@
 name: RSSHub
 repository: https://github.com/DIYgod/RSSHub
-category: feed-generator
+category: feed-reader
 replaces:
   - tool: rss-app
     fit: full

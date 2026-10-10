@@ -1,6 +1,6 @@
 name: MicroK8s
 repository: https://github.com/canonical/microk8s
-category: local-kubernetes
+category: container-desktop
 replaces:
   - tool: minikube
     fit: full

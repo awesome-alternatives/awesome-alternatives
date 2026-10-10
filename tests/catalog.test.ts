@@ -284,6 +284,29 @@ describe("loadCatalog", () => {
       ["bad-slug"],
     );
   });
+
+  it("sends a merged category to a live one, and rejects a redirect that shadows a category or leads nowhere", async () => {
+    const root = await fixture({});
+    await writeFile(
+      join(root, "data/category-redirects.yaml"),
+      ["semver-tools: release-automation", "changelog: release-automation", "go-lint: nowhere", "chained: semver-tools"].join("\n"),
+    );
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(
+      findings.map((f) => `${f.slug}:${f.code}`),
+      ["changelog:redirect-shadows-category", "go-lint:unknown-category", "chained:unknown-category"],
+    );
+  });
+
+  it("holds data/category-redirects.yaml to its schema", async () => {
+    const root = await fixture({});
+    await writeFile(join(root, "data/category-redirects.yaml"), "Old_Slug: release-automation\n");
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(
+      findings.map((f) => `${f.slug}:${f.code}`),
+      ["data/category-redirects.yaml:schema"],
+    );
+  });
 });
 
 describe("the generated catalog", () => {

@@ -1,6 +1,6 @@
 name: Mastodon
 repository: https://github.com/mastodon/mastodon
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: full

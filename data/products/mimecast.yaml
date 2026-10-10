@@ -1,5 +1,5 @@
 name: Mimecast
 homepage: https://www.mimecast.com
 vendor: Mimecast
-category: email-archiving
+category: mail-server
 description: Hosted email security service that includes a cloud archive of mail with search and legal hold.
