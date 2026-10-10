@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
+  exitCodeOf,
   type MainCatalog,
   mainCatalog,
   type OpenIssue,
@@ -15,7 +16,8 @@ import {
   thresholdsFrom,
 } from "../scripts/lib/freshness.ts";
 import { lastUpdateAt } from "../scripts/lib/freshness-issues.ts";
-import { titleOf } from "../scripts/lib/freshness-report.ts";
+import { loginsFrom, mentionLine } from "../scripts/lib/freshness-notify.ts";
+import { openingBody, type Report, stillStaleBody, titleOf } from "../scripts/lib/freshness-report.ts";
 import { readApi, request, type Retry } from "../scripts/lib/freshness-sources.ts";
 
 const HOUR = 60 * 60 * 1000;
@@ -194,5 +196,66 @@ describe("thresholdsFrom", () => {
     assert.deepEqual(thresholdsFrom({ STALE_AFTER_HOURS: "0.5" }).staleAfterHours, 0.5);
     assert.throws(() => thresholdsFrom({ STALE_AFTER_HOURS: "0" }), /positive/);
     assert.throws(() => thresholdsFrom({ DEPLOY_GRACE_HOURS: "soon" }), /positive/);
+  });
+});
+
+describe("loginsFrom", () => {
+  it("keeps valid GitHub logins, trims them, drops a leading @ and repeats", () => {
+    assert.deepEqual(loginsFrom(" alice, @Bob-1 ,alice"), ["alice", "Bob-1"]);
+  });
+
+  it("drops anything that is not a login, so a typo cannot inject markup into the issue", () => {
+    assert.deepEqual(loginsFrom("-lead,trail-,dou--ble,has space,a/b,x\n@y,ok,a,"+"z".repeat(40)), ["ok", "a"]);
+  });
+
+  it("yields nothing for an unset or empty variable", () => {
+    assert.deepEqual(loginsFrom(undefined), []);
+    assert.deepEqual(loginsFrom(""), []);
+    assert.deepEqual(loginsFrom(" , "), []);
+  });
+});
+
+describe("mentions in the issue", () => {
+  const report: Report = {
+    now: at("2026-09-27T12:00:00Z"),
+    main,
+    served: current,
+    problems: [{ kind: "not-refreshed", ageHours: 30 }],
+    thresholds,
+    repository: "o/r",
+    siteUrl: "https://x.test",
+    apiUrl: "https://x.test/api",
+    runUrl: null,
+    notify: ["alice", "bob"],
+  };
+
+  it("starts the opening body and the still-stale comment with the cc line", () => {
+    assert.deepEqual(mentionLine(["alice", "bob"]), ["cc @alice @bob", ""]);
+    assert.ok(openingBody(report).startsWith("cc @alice @bob\n\n- No refresh has reached main"));
+    assert.ok(stillStaleBody(report).startsWith("cc @alice @bob\n\nStill not fresh:"));
+  });
+
+  it("mentions nobody when no login is configured", () => {
+    const quiet = { ...report, notify: [] };
+    assert.ok(openingBody(quiet).startsWith("- No refresh has reached main"));
+    assert.ok(stillStaleBody(quiet).startsWith("Still not fresh:"));
+  });
+
+  it("re-mentions at most once per 24 hours: a comment is only planned a full day after the last one", () => {
+    const issue = (lastUpdateAt: string): OpenIssue => ({ number: 7, url: "u", lastUpdateAt });
+    const last = "2026-09-26T12:00:00Z";
+    assert.equal(planAction(report.problems, issue(last), hoursAfter(last, 23.9)).kind, "none");
+    assert.equal(planAction(report.problems, issue(last), hoursAfter(last, 24)).kind, "comment");
+  });
+});
+
+describe("exitCodeOf", () => {
+  it("is red while a problem is reported, whether the issue is being opened, kept or left alone", () => {
+    assert.equal(exitCodeOf([{ kind: "not-refreshed", ageHours: 30 }]), 1);
+    assert.equal(exitCodeOf([{ kind: "unreachable", surface: "api", reason: "HTTP 502" }]), 1);
+  });
+
+  it("is green once everything recovered, which is also when the issue is closed", () => {
+    assert.equal(exitCodeOf([]), 0);
   });
 });

@@ -605,9 +605,18 @@ tool on the site (its "Read from GitHub" day and its star count) and the first p
 - the site or the API does not answer after three attempts
 
 The alert is a single issue labelled `refresh-stale`, commented on at most once a day while the
-problem lasts, and closed with the time it recovered. The workflow only fails when the check itself
-could not run (GitHub did not answer, a page no longer carries the lines it reads): a red run means
-the observer is broken, an open issue means production is.
+problem lasts, and closed with the time it recovered. The run itself ends red for as long as any of
+the cases above holds, on every hourly check and not only when the issue is opened, so GitHub's
+failed-run notification fires as well. It turns green at the check that closes the issue. A run
+that could not do its job (GitHub did not answer, a page no longer carries the lines it reads) is
+red too.
+
+An issue and a red run only reach someone who watches the repository, so set the `FRESHNESS_NOTIFY`
+repository variable (Settings, Secrets and variables, Actions, Variables) to a comma separated list
+of GitHub logins, for example `alice,bob`. Those people are mentioned on the first line of the
+opening issue and again in the daily update comment, at most once every 24 hours, which is what
+makes the alert reach a person. Entries that are not valid GitHub logins are ignored. Left unset,
+nothing is mentioned.
 
 The issue says which case it is. A stale main points at the cluster: read the last job of the
 refresh CronJob and its logs (the app token, the image, a refused push). A site or API behind main

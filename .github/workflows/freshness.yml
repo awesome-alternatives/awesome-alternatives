@@ -35,3 +35,4 @@ jobs:
       - run: node scripts/freshness.ts
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          FRESHNESS_NOTIFY: ${{ vars.FRESHNESS_NOTIFY }}

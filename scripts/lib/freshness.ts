@@ -113,6 +113,10 @@ export function planAction(problems: readonly Problem[], open: OpenIssue | null,
   return now.getTime() - Date.parse(open.lastUpdateAt) >= DAY_MS ? { kind: "comment", issue: open } : { kind: "none" };
 }
 
+export function exitCodeOf(problems: readonly Problem[]): 0 | 1 {
+  return problems.length === 0 ? 0 : 1;
+}
+
 export function thresholdsFrom(env: NodeJS.ProcessEnv): Thresholds {
   return {
     staleAfterHours: positiveHours(env, "STALE_AFTER_HOURS", 26),
