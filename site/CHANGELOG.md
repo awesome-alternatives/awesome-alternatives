@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.132.1] - 2026-10-10
+
+### Bug Fixes
+
+- fix(runner): push with the private app so the public one only reads (#417)
+
 ## [0.132.0] - 2026-10-10
 
 ### Features
