@@ -1,6 +1,6 @@
 name: RSS-Bridge
 repository: https://github.com/RSS-Bridge/rss-bridge
-category: feed-generator
+category: feed-reader
 replaces:
   - tool: rss-app
     fit: partial

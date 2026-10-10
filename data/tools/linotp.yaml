@@ -1,6 +1,6 @@
 name: LinOTP
 repository: https://github.com/LinOTP/LinOTP
-category: mfa-server
+category: identity-provider
 replaces:
   - tool: duo
     fit: partial

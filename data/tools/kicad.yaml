@@ -1,6 +1,6 @@
 name: KiCad
 repository: https://github.com/KiCad/kicad-source-mirror
-category: pcb-design
+category: cad
 replaces:
   - tool: altium-designer
     fit: partial

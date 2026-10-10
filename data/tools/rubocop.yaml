@@ -1,3 +1,3 @@
 name: RuboCop
 repository: https://github.com/rubocop/rubocop
-category: ruby-lint-format
+category: lint-format

@@ -1,6 +1,6 @@
 name: mcfly
 repository: https://github.com/cantino/mcfly
-category: shell-history
+category: fuzzy-finder
 replaces:
   - tool: atuin
     fit: partial

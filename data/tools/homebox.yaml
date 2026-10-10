@@ -1,6 +1,6 @@
 name: HomeBox
 repository: https://github.com/sysadminsmedia/homebox
-category: home-inventory
+category: inventory
 replaces:
   - tool: sortly
     fit: partial

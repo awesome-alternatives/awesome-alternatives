@@ -1,6 +1,6 @@
 name: llama.vscode
 repository: https://github.com/ggml-org/llama.vscode
-category: code-assistant
+category: coding-agent
 replaces:
   - tool: github-copilot
     fit: partial

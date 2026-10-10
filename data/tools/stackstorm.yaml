@@ -1,6 +1,6 @@
 name: StackStorm
 repository: https://github.com/StackStorm/st2
-category: runbook-automation
+category: workflow-automation
 replaces:
   - tool: ansible-automation-platform
     fit: partial

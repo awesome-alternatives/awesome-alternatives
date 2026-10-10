@@ -1,6 +1,6 @@
 name: DmarcSrg
 repository: https://github.com/liuch/dmarc-srg
-category: dmarc-reporting
+category: mail-server
 replaces:
   - tool: dmarcian
     fit: partial

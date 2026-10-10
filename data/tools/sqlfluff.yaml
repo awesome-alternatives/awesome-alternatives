@@ -1,6 +1,6 @@
 name: SQLFluff
 repository: https://github.com/sqlfluff/sqlfluff
-category: sql-lint-format
+category: lint-format
 replaces:
   - tool: sql-formatter
     fit: partial

@@ -1,6 +1,6 @@
 name: Koillection
 repository: https://github.com/benjaminjonard/koillection
-category: home-inventory
+category: inventory
 replaces:
   - tool: homebox
     fit: partial

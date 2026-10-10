@@ -1,6 +1,6 @@
 name: Pixelfed
 repository: https://github.com/pixelfed/pixelfed
-category: photo-sharing
+category: social-network
 replaces:
   - tool: instagram
     fit: full

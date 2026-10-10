@@ -1,6 +1,6 @@
 name: Cube
 repository: https://github.com/cube-js/cube
-category: semantic-layer
+category: data-transformation
 terms: open
 replaces:
   - tool: looker

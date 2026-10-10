@@ -1,6 +1,6 @@
 name: minikube
 repository: https://github.com/kubernetes/minikube
-category: local-kubernetes
+category: container-desktop
 replaces:
   - tool: docker-desktop
     fit: partial

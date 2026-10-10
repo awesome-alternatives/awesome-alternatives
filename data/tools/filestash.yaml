@@ -1,6 +1,6 @@
 name: Filestash
 repository: https://github.com/mickael-kerjean/filestash
-category: web-file-manager
+category: file-sync
 deploy: [container]
 replaces:
   - tool: dropbox

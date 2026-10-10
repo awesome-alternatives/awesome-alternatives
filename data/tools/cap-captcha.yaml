@@ -1,6 +1,6 @@
 name: Cap
 repository: https://github.com/tiagozip/cap
-category: captcha
+category: waf
 terms: open
 replaces:
   - tool: recaptcha

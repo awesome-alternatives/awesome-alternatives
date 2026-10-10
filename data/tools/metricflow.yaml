@@ -1,6 +1,6 @@
 name: MetricFlow
 repository: https://github.com/dbt-labs/metricflow
-category: semantic-layer
+category: data-transformation
 replaces:
   - tool: cube
     fit: full

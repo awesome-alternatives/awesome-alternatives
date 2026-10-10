@@ -1,6 +1,6 @@
 name: puddletag
 repository: https://github.com/puddletag/puddletag
-category: music-tagger
+category: music-player
 terms: open
 replaces:
   - tool: mp3tag

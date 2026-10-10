@@ -1,6 +1,6 @@
 name: Psalm
 repository: https://github.com/vimeo/psalm
-category: php-lint-format
+category: lint-format
 replaces:
   - tool: phpstan
     fit: full

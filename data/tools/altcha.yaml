@@ -1,6 +1,6 @@
 name: ALTCHA
 repository: https://github.com/altcha-org/altcha
-category: captcha
+category: waf
 replaces:
   - tool: recaptcha
     fit: full

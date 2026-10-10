@@ -1,6 +1,6 @@
 name: LibrePCB
 repository: https://github.com/LibrePCB/LibrePCB
-category: pcb-design
+category: cad
 replaces:
   - tool: kicad
     fit: partial

@@ -1,6 +1,6 @@
 name: Staticcheck
 repository: https://github.com/dominikh/go-tools
-category: go-lint
+category: lint-format
 replaces:
   - tool: golangci-lint
     fit: partial

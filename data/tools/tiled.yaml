@@ -1,6 +1,6 @@
 name: Tiled
 repository: https://github.com/mapeditor/tiled
-category: game-map-editor
+category: game-engine
 terms: open
 replaces:
   - tool: ldtk

@@ -1,6 +1,6 @@
 name: beets
 repository: https://github.com/beetbox/beets
-category: music-tagger
+category: music-player
 replaces:
   - tool: mp3tag
     fit: partial

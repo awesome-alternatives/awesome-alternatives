@@ -1,6 +1,6 @@
 name: Misskey
 repository: https://github.com/misskey-dev/misskey
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: full

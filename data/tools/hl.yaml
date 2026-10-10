@@ -1,6 +1,6 @@
 name: hl
 repository: https://github.com/pamburus/hl
-category: log-viewer
+category: file-viewer
 replaces:
   - tool: lnav
     fit: partial

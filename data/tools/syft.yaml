@@ -1,6 +1,6 @@
 name: Syft
 repository: https://github.com/anchore/syft
-category: sbom-tool
+category: supply-chain-security
 replaces:
   - tool: black-duck
     fit: partial

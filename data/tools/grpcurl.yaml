@@ -1,6 +1,6 @@
 name: gRPCurl
 repository: https://github.com/fullstorydev/grpcurl
-category: grpc-client
+category: api-client
 replaces:
   - tool: postman
     fit: partial

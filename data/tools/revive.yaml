@@ -1,6 +1,6 @@
 name: revive
 repository: https://github.com/revive-lint/revive
-category: go-lint
+category: lint-format
 replaces:
   - tool: golangci-lint
     fit: partial

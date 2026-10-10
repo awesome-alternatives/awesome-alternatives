@@ -1,6 +1,6 @@
 name: Grafana Pyroscope
 repository: https://github.com/grafana/pyroscope
-category: continuous-profiling
+category: tracing
 replaces:
   - tool: datadog
     fit: partial

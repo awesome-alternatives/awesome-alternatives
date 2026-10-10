@@ -1,4 +1,4 @@
 name: google-java-format
 repository: https://github.com/google/google-java-format
-category: jvm-lint-format
+category: lint-format
 terms: open

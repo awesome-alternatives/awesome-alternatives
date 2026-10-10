@@ -1,6 +1,6 @@
 name: parsedmarc
 repository: https://github.com/domainaware/parsedmarc
-category: dmarc-reporting
+category: mail-server
 replaces:
   - tool: dmarcian
     fit: partial

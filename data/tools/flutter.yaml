@@ -1,6 +1,6 @@
 name: Flutter
 repository: https://github.com/flutter/flutter
-category: mobile-app-framework
+category: app-framework
 replaces:
   - tool: react-native
     fit: partial

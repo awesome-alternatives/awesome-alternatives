@@ -1,6 +1,6 @@
 name: nostr-rs-relay
 repository: https://github.com/scsibug/nostr-rs-relay
-category: microblogging
+category: social-network
 replaces:
   - tool: x-twitter
     fit: partial

@@ -1,6 +1,6 @@
 name: Tauri
 repository: https://github.com/tauri-apps/tauri
-category: desktop-app-framework
+category: app-framework
 replaces:
   - tool: electron
     fit: partial

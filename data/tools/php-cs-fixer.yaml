@@ -1,6 +1,6 @@
 name: PHP CS Fixer
 repository: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
-category: php-lint-format
+category: lint-format
 replaces:
   - tool: php-codesniffer
     fit: partial

@@ -8,6 +8,7 @@ import type { BlockingCode, Category, Finding, Product, ProductEntry, Tool, Tool
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const CATEGORIES_FILE = "data/categories.yaml";
+const REDIRECTS_FILE = "data/category-redirects.yaml";
 
 export interface Catalog {
   tools: Tool[];
@@ -24,8 +25,44 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
   const categories = await loadCategories(root);
   const tools = await loadEntries<ToolEntry>(root, "tools", "tool.schema.json");
   const products = await loadEntries<ProductEntry>(root, "products", "product.schema.json");
+  const redirects = await loadRedirects(root, categories.entries);
   const catalog = { tools: tools.entries, products: products.entries, categories: categories.entries };
-  return { catalog, findings: [...categories.findings, ...tools.findings, ...products.findings, ...checkStructure(catalog)] };
+  return {
+    catalog,
+    findings: [...categories.findings, ...redirects, ...tools.findings, ...products.findings, ...checkStructure(catalog)],
+  };
+}
+
+export async function loadCategoryRedirects(root: string): Promise<Record<string, string>> {
+  try {
+    return parse(await readFile(join(root, REDIRECTS_FILE), "utf8")) ?? {};
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "ENOENT") return {};
+    throw e;
+  }
+}
+
+async function loadRedirects(root: string, categories: ReadonlyMap<string, Category>): Promise<Finding[]> {
+  const validate = await compiled<Record<string, string>>(root, "category-redirects.schema.json");
+  const redirects: unknown = await loadCategoryRedirects(root);
+  if (!validate(redirects)) {
+    return (validate.errors ?? [])
+      .filter((e) => !e.schemaPath.includes("/propertyNames/"))
+      .map((e) => error(REDIRECTS_FILE, "schema", `${REDIRECTS_FILE} ${e.instancePath || "/"} ${e.message ?? "is invalid"}`));
+  }
+  return redirectFindings(redirects, categories);
+}
+
+export function redirectFindings(redirects: Readonly<Record<string, string>>, categories: ReadonlyMap<string, Category>): Finding[] {
+  return Object.entries(redirects).flatMap(([old, target]) => {
+    if (categories.has(old)) {
+      return [error(old, "redirect-shadows-category", `${old} is still in data/categories.yaml, so ${REDIRECTS_FILE} cannot send it to ${target}`)];
+    }
+    if (!categories.has(target)) {
+      return [error(old, "unknown-category", `${REDIRECTS_FILE} sends ${old} to ${target}, which is not in data/categories.yaml`)];
+    }
+    return [];
+  });
 }
 
 async function compiled<T>(root: string, schemaFile: string) {

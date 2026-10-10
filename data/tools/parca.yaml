@@ -1,6 +1,6 @@
 name: Parca
 repository: https://github.com/parca-dev/parca
-category: continuous-profiling
+category: tracing
 replaces:
   - tool: datadog
     fit: partial

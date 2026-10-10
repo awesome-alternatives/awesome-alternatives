@@ -1,6 +1,6 @@
 name: Rundeck
 repository: https://github.com/rundeck/rundeck
-category: runbook-automation
+category: workflow-automation
 replaces:
   - tool: ansible-automation-platform
     fit: partial

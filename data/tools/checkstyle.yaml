@@ -1,6 +1,6 @@
 name: Checkstyle
 repository: https://github.com/checkstyle/checkstyle
-category: jvm-lint-format
+category: lint-format
 replaces:
   - tool: sonarqube
     fit: partial

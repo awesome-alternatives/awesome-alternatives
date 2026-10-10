@@ -1,6 +1,6 @@
 name: MusicBrainz Picard
 repository: https://github.com/metabrainz/picard
-category: music-tagger
+category: music-player
 replaces:
   - tool: mp3tag
     fit: partial

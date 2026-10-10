@@ -1,6 +1,6 @@
 name: Checkov
 repository: https://github.com/bridgecrewio/checkov
-category: iac-scanner
+category: vulnerability-scanner
 replaces:
   - tool: snyk
     fit: partial

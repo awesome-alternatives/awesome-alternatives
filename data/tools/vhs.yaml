@@ -1,6 +1,6 @@
 name: VHS
 repository: https://github.com/charmbracelet/vhs
-category: terminal-recording
+category: screen-recording
 replaces:
   - tool: asciinema
     fit: partial

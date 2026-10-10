@@ -1,5 +1,5 @@
 name: Mp3tag
 homepage: https://www.mp3tag.de/en/
 vendor: Florian Heidenreich
-category: music-tagger
+category: music-player
 description: Tag editor for audio files on Windows and macOS, with batch edits and online database lookups.

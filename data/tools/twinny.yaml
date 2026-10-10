@@ -1,6 +1,6 @@
 name: twinny
 repository: https://github.com/twinnydotdev/twinny
-category: code-assistant
+category: coding-agent
 replaces:
   - tool: github-copilot
     fit: full

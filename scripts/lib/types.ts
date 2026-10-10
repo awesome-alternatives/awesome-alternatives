@@ -90,6 +90,7 @@ export type BlockingCode =
   | "not-found"
   | "private"
   | "product-collides"
+  | "redirect-shadows-category"
   | "replaces-itself"
   | "schema"
   | "too-new"

@@ -1,6 +1,6 @@
 name: cdxgen
 repository: https://github.com/cdxgen/cdxgen
-category: sbom-tool
+category: supply-chain-security
 replaces:
   - tool: black-duck
     fit: partial

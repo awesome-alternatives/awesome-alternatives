@@ -1,6 +1,6 @@
 name: onefetch
 repository: https://github.com/o2sh/onefetch
-category: repository-statistics
+category: code-statistics
 replaces:
   - tool: github
     fit: partial

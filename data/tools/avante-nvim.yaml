@@ -1,6 +1,6 @@
 name: avante.nvim
 repository: https://github.com/avante-corp/avante.nvim
-category: code-assistant
+category: coding-agent
 replaces:
   - tool: cursor
     fit: partial

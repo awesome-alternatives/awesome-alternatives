@@ -1,6 +1,6 @@
 name: KICS
 repository: https://github.com/Checkmarx/kics
-category: iac-scanner
+category: vulnerability-scanner
 replaces:
   - tool: snyk
     fit: partial

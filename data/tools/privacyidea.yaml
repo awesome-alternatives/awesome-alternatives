@@ -1,6 +1,6 @@
 name: privacyIDEA
 repository: https://github.com/privacyidea/privacyidea
-category: mfa-server
+category: identity-provider
 replaces:
   - tool: duo
     fit: full

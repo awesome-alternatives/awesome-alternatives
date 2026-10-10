@@ -1,6 +1,6 @@
 name: NexoPOS
 repository: https://github.com/Blair2004/NexoPOS
-category: point-of-sale
+category: e-commerce
 replaces:
   - tool: square-pos
     fit: partial

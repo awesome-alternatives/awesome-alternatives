@@ -1,6 +1,6 @@
 name: SBOM Tool
 repository: https://github.com/microsoft/sbom-tool
-category: sbom-tool
+category: supply-chain-security
 replaces:
   - tool: black-duck
     fit: partial

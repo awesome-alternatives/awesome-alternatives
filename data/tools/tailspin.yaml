@@ -1,6 +1,6 @@
 name: tailspin
 repository: https://github.com/bensadeh/tailspin
-category: log-viewer
+category: file-viewer
 replaces:
   - tool: lnav
     fit: partial
