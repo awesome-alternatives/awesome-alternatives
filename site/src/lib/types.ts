@@ -1,4 +1,4 @@
-import type { EnrichedTool, RepoFacts, Terms } from "../../../scripts/lib/types.ts";
+import type { DeployMethod, EnrichedTool, RepoFacts, Terms } from "../../../scripts/lib/types.ts";
 
 export { DEPLOY_METHODS } from "../../../scripts/lib/types.ts";
 
@@ -26,15 +26,17 @@ export interface Filters {
   selfHost?: boolean;
   maintained?: boolean;
   capabilities?: string[];
+  deploy?: DeployMethod[];
 }
 
 export interface NearMiss {
   tool: ToolView;
   missing: string[];
+  missingDeploy?: DeployMethod[];
 }
 
 export interface Unchecked {
-  kind: "platform" | "deploy";
+  kind: "platform";
   value: string;
 }
 

@@ -241,6 +241,10 @@ mod tests {
                         },
                     )]
                     .into(),
+                    deploy: vec![
+                        crate::catalog::DeployMethod::Container,
+                        crate::catalog::DeployMethod::Helm,
+                    ],
                     ..tool(
                         "knope",
                         "Rust",
@@ -447,6 +451,31 @@ mod tests {
         assert_eq!(body["count"], 0);
         assert_eq!(body["near"][0]["tool"]["slug"], "knope");
         assert_eq!(body["near"][0]["missing"], json!(["wiki"]));
+    }
+
+    #[tokio::test]
+    async fn deploy_methods_are_read_from_a_comma_list_and_all_of_them_are_required() {
+        let get = |uri: &'static str| async move {
+            call(&app(10), Request::get(uri).body(Body::empty()).unwrap()).await
+        };
+        let (status, body) = get("/v1/tools?deploy=container,helm").await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["count"], 1);
+        assert_eq!(body["tools"][0]["slug"], "knope");
+        let (_, none) = get("/v1/tools?deploy=container,binary").await;
+        assert_eq!(none["count"], 0);
+        assert_eq!(none["near"][0]["tool"]["slug"], "knope");
+        assert_eq!(none["near"][0]["missingDeploy"], json!(["binary"]));
+        assert_eq!(none["near"][0]["missing"], json!([]));
+        let refused = app(10)
+            .oneshot(
+                Request::get("/v1/tools?deploy=snap")
+                    .body(Body::empty())
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+        assert_eq!(refused.status(), StatusCode::BAD_REQUEST);
     }
 
     #[tokio::test]

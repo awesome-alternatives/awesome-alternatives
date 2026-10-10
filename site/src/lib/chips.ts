@@ -1,6 +1,6 @@
 import { format } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
-import type { Filters, Terms } from "./types.ts";
+import type { DeployMethod, Filters, Terms } from "./types.ts";
 
 export type ChipKey =
   | "replaces"
@@ -10,7 +10,8 @@ export type ChipKey =
   | "terms"
   | "selfHost"
   | "maintained"
-  | "capabilities";
+  | "capabilities"
+  | "deploy";
 
 export type ChipStrings = Islands["search"]["chips"];
 
@@ -40,15 +41,42 @@ export function chips(
   for (const capability of filters.capabilities ?? []) {
     out.push({ key: "capabilities", value: capability, label: describeCapability(capability) });
   }
+  for (const method of filters.deploy ?? []) {
+    out.push({ key: "deploy", value: method, label: strings.deploy[method] });
+  }
   return out;
+}
+
+export interface Gap {
+  missing: readonly string[];
+  missingDeploy?: readonly DeployMethod[];
+}
+
+export function requirementLabels(
+  filters: Filters,
+  strings: ChipStrings,
+  describeCapability: (key: string) => string,
+  lacking: Gap = { missing: [] },
+): string[] {
+  return [
+    ...(filters.capabilities ?? []).filter((c) => !lacking.missing.includes(c)).map(describeCapability),
+    ...(filters.deploy ?? []).filter((m) => !lacking.missingDeploy?.includes(m)).map((m) => strings.deploy[m]),
+  ];
+}
+
+export function gapLabels(gap: Gap, strings: ChipStrings, describeCapability: (key: string) => string): string[] {
+  return [...gap.missing.map(describeCapability), ...(gap.missingDeploy ?? []).map((m) => strings.deploy[m])];
+}
+
+function keeping<T extends string>(all: readonly T[] | undefined, dropped: string | undefined): T[] | undefined {
+  const kept = (all ?? []).filter((v) => v !== dropped);
+  return kept.length > 0 ? kept : undefined;
 }
 
 export function without(filters: Filters, key: ChipKey, value?: string): Filters {
   const next: Filters = { ...filters, [key]: undefined };
-  if (key === "capabilities") {
-    const kept = (filters.capabilities ?? []).filter((c) => c !== value);
-    next.capabilities = kept.length > 0 ? kept : undefined;
-  }
+  if (key === "capabilities") next.capabilities = keeping(filters.capabilities, value);
+  if (key === "deploy") next.deploy = keeping(filters.deploy, value);
   if (key === "replaces") next.dropIn = undefined;
   return Object.fromEntries(Object.entries(next).filter(([, v]) => v !== undefined && v !== false));
 }

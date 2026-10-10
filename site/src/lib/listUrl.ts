@@ -56,6 +56,7 @@ export function fromSearch(filters: Filters, unchecked: readonly Unchecked[] = [
       terms: filters.terms ? [filters.terms] : [],
       maintenance: filters.maintained ? ["maintained"] : [],
       hosting: filters.selfHost ? ["self-hosted"] : [],
+      deploy: filters.deploy ?? [],
     },
     unchecked: unchecked.map((u) => u.value),
   };

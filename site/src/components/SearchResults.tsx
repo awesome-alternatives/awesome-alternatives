@@ -1,6 +1,6 @@
 import { format, type Locale, pathFor, plural } from "../i18n/index.ts";
 import type { Islands } from "../i18n/islands.en.ts";
-import { type ChipKey, chips } from "../lib/chips.ts";
+import { type ChipKey, chips, gapLabels, requirementLabels } from "../lib/chips.ts";
 import { alternativesHref } from "../lib/listUrl.ts";
 import type { SearchResult } from "../lib/types.ts";
 import { ToolCard } from "./ToolCard.tsx";
@@ -32,9 +32,9 @@ export function SearchResults({
     (terms) => strings.terms[terms],
     (key) => capabilities[key] ?? key,
   );
-  const requested = result.filters.capabilities ?? [];
-  const labelsOf = (keys: readonly string[]) => keys.map((key) => capabilities[key] ?? key).join(", ");
-  const meets = requested.length > 0 ? format(copy.meets, { list: labelsOf(requested) }) : undefined;
+  const describe = (key: string) => capabilities[key] ?? key;
+  const wanted = requirementLabels(result.filters, copy.chips, describe);
+  const meets = wanted.length > 0 ? format(copy.meets, { list: wanted.join(", ") }) : undefined;
   const near = result.near ?? [];
   const unchecked = result.unchecked ?? [];
   const landing = alternativesHref(result.filters, unchecked);
@@ -104,15 +104,19 @@ export function SearchResults({
         <section className="near">
           <h2 className="section-label">{copy.nearHeading}</h2>
           <div className="tools">
-            {near.map(({ tool, missing }) => (
+            {near.map(({ tool, missing, missingDeploy }) => (
               <ToolCard
                 key={tool.slug}
                 locale={locale}
                 strings={strings}
                 tool={tool}
                 target={result.filters.replaces}
-                criteria={format(copy.meets, { list: labelsOf(requested.filter((c) => !missing.includes(c))) })}
-                gap={format(copy.missing, { list: labelsOf(missing) })}
+                criteria={format(copy.meets, {
+                  list: requirementLabels(result.filters, copy.chips, describe, { missing, missingDeploy }).join(", "),
+                })}
+                gap={format(copy.missing, {
+                  list: gapLabels({ missing, missingDeploy }, copy.chips, describe).join(", "),
+                })}
               />
             ))}
           </div>

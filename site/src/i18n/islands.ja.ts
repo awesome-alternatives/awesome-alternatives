@@ -79,6 +79,13 @@ export const islands: Islands = {
       dropIn: "ドロップインのみ",
       selfHost: "セルフホスト",
       maintained: "メンテナンスされている",
+      deploy: {
+        container: "コンテナイメージ（Docker）",
+        compose: "Docker Composeファイル",
+        helm: "Kubernetes向けHelmチャート",
+        binary: "単一バイナリ",
+        package: "OSパッケージ",
+      },
     },
     chipsLabel: "クエリから読み取ったフィルター",
     meets: "該当：{list}",

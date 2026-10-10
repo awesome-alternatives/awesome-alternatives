@@ -63,7 +63,11 @@ pub fn interpret(query: &str, vocabulary: &Vocabulary) -> Filters {
     let named: Vec<&String> = vocabulary
         .targets
         .iter()
-        .filter(|(slug, name)| mentions(&query, slug) || mentions(&query, name))
+        .filter(|(slug, name)| {
+            [slug, name]
+                .into_iter()
+                .any(|label| mentions(&query, label) && !qualifiers::is_swallowed(&query, label))
+        })
         .map(|(slug, _)| slug)
         .collect();
     let replaced = named
@@ -185,6 +189,20 @@ mod tests {
             Some("redis")
         );
         assert_eq!(pick("an alternative to docker").as_deref(), Some("docker"));
+    }
+
+    #[test]
+    fn a_name_inside_a_deployment_phrase_is_not_a_target() {
+        let vocabulary = Vocabulary {
+            targets: BTreeMap::from([("docker".into(), "Docker".into())]),
+            ..Vocabulary::default()
+        };
+        let pick = |q: &str| interpret(q, &vocabulary).replaces;
+        assert_eq!(pick("docker compose url shortener"), None);
+        assert_eq!(
+            pick("alternative to docker, with docker compose").as_deref(),
+            Some("docker")
+        );
     }
 
     #[test]
