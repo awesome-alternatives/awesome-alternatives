@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parse } from "yaml";
+import { mapLimit } from "./gather.ts";
 import { unreachable } from "./links.ts";
 import { type Finding, THIRD_PARTY, type Tool } from "./types.ts";
 
@@ -8,6 +9,7 @@ const FILE = /^([a-z0-9]+(?:-[a-z0-9]+)*)--([a-z0-9]+(?:-[a-z0-9]+)*)\.yaml$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const TITLE_LENGTH = 100;
 const RESULT_LENGTH = 200;
+const LINK_CHECK_CONCURRENCY = 4;
 
 export interface Benchmark {
   title: string;
@@ -85,8 +87,10 @@ export async function checkBenchmarks(
     if ((e as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw e;
   }
-  const findings = await Promise.all(
-    files.map(async (file) => {
+  const findings = await mapLimit(
+    files,
+    LINK_CHECK_CONCURRENCY,
+    async (file) => {
       const text = await readFile(join(dir, file), "utf8");
       const found = checkBenchmarkFile(file, text, tools, now);
       if (found.length > 0) return found;
@@ -95,7 +99,7 @@ export async function checkBenchmarks(
       return links.flatMap((problem): Finding[] =>
         problem ? [{ slug: file, severity: "error", code: "benchmark-unreachable", message: problem }] : [],
       );
-    }),
+    },
   );
   return findings.flat();
 }
