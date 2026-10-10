@@ -1,0 +1,4 @@
+name: Transmission
+repository: https://github.com/transmission/transmission
+category: bittorrent-client
+terms: open

@@ -1,0 +1,3 @@
+name: PostGIS
+repository: https://github.com/postgis/postgis
+category: gis

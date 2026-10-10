@@ -1663,3 +1663,92 @@ private-search:
   name: Private search engines
   description: Metasearch engines you host, which query other search engines without profiling who searches.
   selfHost: true
+
+web-browser:
+  name: Web browsers
+  description: Browsers for the desktop, built on an open source engine.
+
+reverse-engineering:
+  name: Reverse engineering
+  description: Disassemble, decompile and debug compiled programs without their source.
+
+remote-shell:
+  name: Remote shell clients and servers
+  description: Log in to other machines and run commands over an encrypted connection.
+
+compression:
+  name: Compression
+  description: Archive and compress files and streams.
+
+download-manager:
+  name: Download managers
+  description: Fetch files and media from the web from a terminal or a queue.
+
+bittorrent-client:
+  name: BitTorrent clients
+  description: Download and seed files over the BitTorrent protocol.
+
+media-automation:
+  name: Media library automation
+  description: Search for, grab and organise TV shows, movies and other media for a home library.
+  selfHost: true
+
+frontend-framework:
+  name: Front-end frameworks
+  description: Component frameworks for building browser user interfaces.
+
+desktop-app-framework:
+  name: Desktop app frameworks
+  description: Build desktop applications from web technologies.
+
+mobile-app-framework:
+  name: Mobile app frameworks
+  description: Build iOS and Android applications from one codebase.
+
+java-web-framework:
+  name: Java web frameworks
+  description: Frameworks for building web services and applications on the JVM.
+
+programming-language:
+  name: Programming languages
+  description: Language implementations with their compiler, interpreter and standard library.
+
+compiler:
+  name: Compilers
+  description: Compiler toolchains that turn source code into machine code.
+
+machine-learning-framework:
+  name: Machine learning frameworks
+  description: Libraries for building and training machine learning models.
+
+gis:
+  name: Geographic information systems
+  description: Desktop and library tools for geospatial data.
+
+operating-system:
+  name: Operating systems
+  description: Kernels and complete operating systems with public source.
+
+window-manager:
+  name: Window managers
+  description: Tiling and stacking window managers and compositors for Linux desktops.
+
+pcb-design:
+  name: PCB design
+  description: Schematic capture and printed circuit board layout.
+
+version-control:
+  name: Version control systems
+  description: Track changes to source code and share them between people.
+
+network-analysis:
+  name: Network analysis
+  description: Capture and inspect network traffic and scan hosts.
+
+penetration-testing:
+  name: Penetration testing
+  description: Exploit frameworks and password recovery tools used in security assessments.
+
+cryptography-library:
+  name: Cryptography libraries
+  description: Libraries that implement TLS and cryptographic primitives for other software.

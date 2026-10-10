@@ -1,0 +1,8 @@
+name: MediaWiki
+repository: https://github.com/wikimedia/mediawiki
+category: knowledge-base
+terms: open
+replaces:
+  - tool: confluence
+    fit: partial
+    note: Wiki engine with full revision history; page permissions and editing workflows come from extensions.

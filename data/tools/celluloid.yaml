@@ -1,3 +1,7 @@
 name: Celluloid
 repository: https://github.com/celluloid-player/celluloid
 category: video-player
+replaces:
+  - tool: vlc
+    fit: partial
+    note: A GTK front end for mpv with a conventional player window.

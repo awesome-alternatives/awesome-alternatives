@@ -1,0 +1,5 @@
+name: IDA Pro
+homepage: https://hex-rays.com/ida-pro/
+vendor: Hex-Rays
+category: reverse-engineering
+description: Commercial interactive disassembler and debugger for analysing compiled binaries, with an optional decompiler.

@@ -1,0 +1,7 @@
+name: Angular
+repository: https://github.com/angular/angular
+category: frontend-framework
+replaces:
+  - tool: react
+    fit: partial
+    note: A full framework with its own router, forms and dependency injection.

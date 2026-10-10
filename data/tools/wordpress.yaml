@@ -1,0 +1,11 @@
+name: WordPress
+repository: https://github.com/WordPress/WordPress
+category: website-cms
+terms: open
+replaces:
+  - tool: squarespace
+    fit: partial
+    note: Self-hosted CMS with themes and plugins; hosting, updates and backups are yours to run.
+  - tool: wix
+    fit: partial
+    note: Self-hosted CMS with themes and plugins; hosting and updates are yours to run.

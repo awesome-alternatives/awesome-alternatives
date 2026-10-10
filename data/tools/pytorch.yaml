@@ -1,0 +1,4 @@
+name: PyTorch
+repository: https://github.com/pytorch/pytorch
+category: machine-learning-framework
+terms: open

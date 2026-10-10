@@ -1,3 +1,7 @@
 name: Sapling
 repository: https://github.com/facebook/sapling
 category: git-client
+replaces:
+  - tool: git
+    fit: partial
+    note: A source control client with stacked commits and its own server backend, able to work against Git repositories.

@@ -1,0 +1,8 @@
+name: Redmine
+repository: https://github.com/redmine/redmine
+category: project-management
+terms: open
+replaces:
+  - tool: jira
+    fit: partial
+    note: Self-hosted issue tracker with trackers, roles and a Gantt chart; workflows are configured per project.

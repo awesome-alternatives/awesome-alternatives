@@ -1,0 +1,8 @@
+name: Blender
+repository: https://github.com/blender/blender
+category: 3d-modeling
+terms: open
+replaces:
+  - tool: autodesk-maya
+    fit: full
+    note: Modelling, rigging, animation and rendering in one program, with a different interface and Python API.

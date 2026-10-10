@@ -1,0 +1,7 @@
+name: VLC
+repository: https://github.com/videolan/vlc
+category: video-player
+replaces:
+  - tool: quicktime-player
+    fit: partial
+    note: Plays most audio and video formats on every desktop platform.

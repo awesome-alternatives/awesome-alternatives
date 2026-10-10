@@ -1,0 +1,8 @@
+name: FFmpeg
+repository: https://github.com/FFmpeg/FFmpeg
+category: media-converter
+terms: open
+replaces:
+  - tool: adobe-media-encoder
+    fit: partial
+    note: Command-line transcoding with no queue or presets interface.

@@ -1,0 +1,8 @@
+name: GIMP
+repository: https://github.com/GNOME/gimp
+category: image-editing
+terms: open
+replaces:
+  - tool: photoshop
+    fit: partial
+    note: Layer-based raster editing that opens PSD files, with its own plugin system.

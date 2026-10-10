@@ -1,0 +1,7 @@
+name: Zen Browser
+repository: https://github.com/zen-browser/desktop
+category: web-browser
+replaces:
+  - tool: firefox
+    fit: partial
+    note: Firefox-based browser with vertical tabs and workspaces.

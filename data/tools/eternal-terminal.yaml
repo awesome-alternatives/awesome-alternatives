@@ -1,0 +1,7 @@
+name: Eternal Terminal
+repository: https://github.com/MisterTea/EternalTerminal
+category: remote-shell
+replaces:
+  - tool: openssh
+    fit: partial
+    note: Keeps a session alive across network changes and logs in through SSH.

@@ -1,0 +1,8 @@
+name: radare2
+repository: https://github.com/radareorg/radare2
+category: reverse-engineering
+terms: open
+replaces:
+  - tool: ida-pro
+    fit: partial
+    note: Command-line disassembly and debugging, with decompilers added as plugins.

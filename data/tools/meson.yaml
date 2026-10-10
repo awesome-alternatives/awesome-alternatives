@@ -1,3 +1,7 @@
 name: Meson
 repository: https://github.com/mesonbuild/meson
 category: build-system
+replaces:
+  - tool: cmake
+    fit: full
+    note: Its own declarative build language that generates Ninja files.

@@ -1,3 +1,7 @@
 name: SMPlayer
 repository: https://github.com/smplayer-dev/smplayer
 category: video-player
+replaces:
+  - tool: vlc
+    fit: partial
+    note: A Qt front end for mpv and MPlayer with a conventional player window.

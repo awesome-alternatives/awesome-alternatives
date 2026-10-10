@@ -1,0 +1,7 @@
+name: Quarkus
+repository: https://github.com/quarkusio/quarkus
+category: java-web-framework
+replaces:
+  - tool: spring-boot
+    fit: partial
+    note: Build-time optimised Java framework with native-image support and its own extension model.

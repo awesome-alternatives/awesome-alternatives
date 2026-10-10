@@ -1,0 +1,8 @@
+name: October CMS
+repository: https://github.com/octobercms/october
+category: website-cms
+terms: source-available
+replaces:
+  - tool: wordpress
+    fit: partial
+    note: Laravel-based CMS with its own plugin marketplace; the licence is a purchased EULA.

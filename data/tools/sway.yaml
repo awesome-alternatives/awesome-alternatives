@@ -1,0 +1,7 @@
+name: Sway
+repository: https://github.com/swaywm/sway
+category: window-manager
+replaces:
+  - tool: i3
+    fit: drop-in
+    note: Reads i3 configuration files and speaks the same IPC protocol on Wayland.

@@ -1,0 +1,3 @@
+name: OpenSSL
+repository: https://github.com/openssl/openssl
+category: cryptography-library

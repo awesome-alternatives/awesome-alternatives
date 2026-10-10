@@ -1,0 +1,4 @@
+name: QEMU
+repository: https://github.com/qemu/qemu
+category: virtualization
+terms: open

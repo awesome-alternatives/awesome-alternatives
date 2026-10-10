@@ -1,0 +1,7 @@
+name: Chromium
+repository: https://github.com/chromium/chromium
+category: web-browser
+replaces:
+  - tool: google-chrome
+    fit: full
+    note: The open source base Chrome is built from, without Google account sync and automatic updates.

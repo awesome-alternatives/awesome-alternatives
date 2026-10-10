@@ -1,0 +1,3 @@
+name: snapd
+repository: https://github.com/canonical/snapd
+category: system-package-manager

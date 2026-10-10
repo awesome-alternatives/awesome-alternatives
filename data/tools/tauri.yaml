@@ -1,0 +1,7 @@
+name: Tauri
+repository: https://github.com/tauri-apps/tauri
+category: desktop-app-framework
+replaces:
+  - tool: electron
+    fit: partial
+    note: Uses the system webview with a Rust backend instead of bundling Chromium.

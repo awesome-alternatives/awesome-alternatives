@@ -1,0 +1,7 @@
+name: JAX
+repository: https://github.com/jax-ml/jax
+category: machine-learning-framework
+replaces:
+  - tool: tensorflow
+    fit: partial
+    note: Function transformations over NumPy-style arrays instead of a graph-and-layers API.

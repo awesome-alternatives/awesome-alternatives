@@ -1,0 +1,7 @@
+name: Brave
+repository: https://github.com/brave/brave-browser
+category: web-browser
+replaces:
+  - tool: google-chrome
+    fit: full
+    note: Chromium-based browser with built-in content blocking that installs Chrome Web Store extensions.

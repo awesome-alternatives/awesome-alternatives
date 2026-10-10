@@ -1,0 +1,7 @@
+name: LibrePCB
+repository: https://github.com/LibrePCB/LibrePCB
+category: pcb-design
+replaces:
+  - tool: kicad
+    fit: partial
+    note: Library-centred schematic and board editor with a smaller component set.

@@ -1,0 +1,7 @@
+name: Wails
+repository: https://github.com/wailsapp/wails
+category: desktop-app-framework
+replaces:
+  - tool: electron
+    fit: partial
+    note: Uses the system webview with a Go backend instead of bundling Chromium.

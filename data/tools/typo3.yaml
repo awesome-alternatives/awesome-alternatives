@@ -1,0 +1,7 @@
+name: TYPO3
+repository: https://github.com/TYPO3/typo3
+category: website-cms
+replaces:
+  - tool: wordpress
+    fit: partial
+    note: PHP enterprise CMS with multi-site and multilingual support built in.

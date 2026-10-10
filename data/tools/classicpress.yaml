@@ -1,3 +1,7 @@
 name: ClassicPress
 repository: https://github.com/ClassicPress/ClassicPress
 category: website-cms
+replaces:
+  - tool: wordpress
+    fit: full
+    note: A fork of WordPress 4.9 that keeps the classic editor and most plugins and themes working.

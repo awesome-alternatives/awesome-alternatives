@@ -1,0 +1,8 @@
+name: Firefox
+repository: https://github.com/mozilla-firefox/firefox
+category: web-browser
+terms: open
+replaces:
+  - tool: google-chrome
+    fit: full
+    note: Gecko engine instead of Blink, with WebExtensions-based add-ons.

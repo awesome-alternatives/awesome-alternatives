@@ -1,0 +1,7 @@
+name: Flutter
+repository: https://github.com/flutter/flutter
+category: mobile-app-framework
+replaces:
+  - tool: react-native
+    fit: partial
+    note: Draws its own widgets in Dart instead of using native views.

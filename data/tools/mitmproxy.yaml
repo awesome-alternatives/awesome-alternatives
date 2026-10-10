@@ -1,0 +1,7 @@
+name: mitmproxy
+repository: https://github.com/mitmproxy/mitmproxy
+category: network-analysis
+replaces:
+  - tool: burp-suite
+    fit: partial
+    note: Intercepting proxy scripted in Python, with no built-in vulnerability scanner.

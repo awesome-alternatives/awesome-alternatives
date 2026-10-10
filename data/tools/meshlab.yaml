@@ -1,3 +1,7 @@
 name: MeshLab
 repository: https://github.com/cnr-isti-vclab/meshlab
 category: 3d-modeling
+replaces:
+  - tool: blender
+    fit: partial
+    note: Cleans, repairs and measures scanned meshes, without a modelling or animation suite.

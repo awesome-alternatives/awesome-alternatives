@@ -1,0 +1,4 @@
+name: Zstandard
+repository: https://github.com/facebook/zstd
+category: compression
+terms: open

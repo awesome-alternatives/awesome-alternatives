@@ -1,0 +1,4 @@
+name: Nmap
+repository: https://github.com/nmap/nmap
+category: network-analysis
+terms: source-available

@@ -1,3 +1,7 @@
 name: Winter CMS
 repository: https://github.com/wintercms/winter
 category: website-cms
+replaces:
+  - tool: october-cms
+    fit: full
+    note: A community fork of October CMS 1.x that stays under the MIT licence.
