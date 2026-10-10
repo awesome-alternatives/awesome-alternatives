@@ -37,6 +37,12 @@
     "categories": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/category" }
+    },
+    "categoryRedirects": {
+      "description": "Merged categories, keyed by the old slug, each naming the category that took its tools.",
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "additionalProperties": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
     }
   },
   "$defs": {

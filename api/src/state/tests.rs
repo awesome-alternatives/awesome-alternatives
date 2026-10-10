@@ -28,6 +28,7 @@ fn catalog(revision: &str, tools: Vec<Tool>) -> Catalog {
         revision: revision.into(),
         products: vec![],
         categories: Default::default(),
+        category_redirects: Default::default(),
         tools,
     }
 }

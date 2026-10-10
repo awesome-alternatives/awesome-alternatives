@@ -1,5 +1,6 @@
 import { mkdir, readdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
+import { loadCategoryRedirects } from "./catalog.ts";
 import { type EventHistory, EVENTS_PATH, eventsJson, nextEventLog, PENDING_GRACE_DAYS, readEventLog } from "./event-log.ts";
 import type { ListedCatalog } from "./listed.ts";
 import { CATALOG_DIR, renderCatalog, spliceReadme } from "./render.ts";
@@ -90,11 +91,13 @@ export async function publish(
     .map(({ file: _, ...product }) => product)
     .sort((a, b) => a.slug.localeCompare(b.slug));
   const categories = Object.fromEntries(catalog.categories);
+  const banned = catalog.banned;
+  const categoryRedirects = await loadCategoryRedirects(root);
   const { index, pages } = renderCatalog(tools, products, catalog.categories);
   const readme = spliceReadme(await readFile(join(root, "README.md"), "utf8"), index);
 
   await writeTogether(root, [
-    [CATALOG_PATH, catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, banned: catalog.banned, categories })],
+    [CATALOG_PATH, catalogJson({ stats: statsOf(tools), checkedAt, owners, tools, products, banned, categories, categoryRedirects })],
     [EVENTS_PATH, eventsJson(events)],
     ["README.md", readme],
     ...pages,

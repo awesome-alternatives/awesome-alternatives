@@ -72,6 +72,7 @@ fn app(history: History) -> Router {
         revision: "test".into(),
         products: vec![],
         categories: Default::default(),
+        category_redirects: Default::default(),
         tools: vec![tool("good", "Rust", "MIT", &[], 1)],
     };
     let state = AppState::new(

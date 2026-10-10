@@ -80,6 +80,7 @@ fn catalog() -> Catalog {
             },
         )]
         .into(),
+        category_redirects: [("semver".to_owned(), "release-automation".to_owned())].into(),
         tools: vec![
             described(
                 semantic_release,
@@ -366,6 +367,9 @@ async fn the_tool_list_reads_the_same_filters_as_the_http_api() {
 
     let binaries = answer(&app, "list_tools", json!({ "deploy": "binary" })).await;
     assert_eq!(slugs(&binaries["tools"]), ["goreleaser"]);
+
+    let merged = answer(&app, "list_tools", json!({ "category": "semver" })).await;
+    assert_eq!(merged["count"], 4);
     let found = answer(
         &app,
         "find_alternatives",

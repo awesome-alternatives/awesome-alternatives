@@ -137,6 +137,15 @@ describe("publish", () => {
     assert.doesNotMatch(await readFile(join(root, "catalog/c.md"), "utf8"), /github\.com\/acme\/b\b/);
   });
 
+  it("carries the merged categories into the catalog, so the API can still filter by an old slug", async () => {
+    const root = await published(["a"]);
+    await mkdir(join(root, "data"));
+    await writeFile(join(root, "data/category-redirects.yaml"), "old-c: c\n");
+    await publish(root, catalogOf("a"), snapshot("a"));
+    const written = JSON.parse(await readFile(join(root, CATALOG_PATH), "utf8"));
+    assert.deepEqual(written.categoryRedirects, { "old-c": "c" });
+  });
+
   it("removes the page of a category that no longer has a tool", async () => {
     const root = await published(["a"]);
     await mkdir(join(root, "catalog"));

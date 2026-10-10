@@ -211,6 +211,7 @@ mod tests {
             revision: "test".into(),
             products: vec![],
             categories: Default::default(),
+            category_redirects: Default::default(),
             tools: vec![
                 tool("good", "Rust", "MIT", &[], 1),
                 tool("unscored", "Rust", "MIT", &[], 1),

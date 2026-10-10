@@ -197,6 +197,7 @@ mod tests {
             revision: "test".into(),
             products: vec![],
             categories: Default::default(),
+            category_redirects: Default::default(),
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 1),
                 tool("git-cliff", "Rust", "MIT", &[], 1),
