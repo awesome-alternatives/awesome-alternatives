@@ -119,6 +119,18 @@ export function installationsFromEnv(env: NodeJS.ProcessEnv): Installations | nu
 
 export const DEFAULT_REPOSITORY = "awesome-alternatives/awesome-alternatives";
 
+export interface AppCredentials {
+  appId: string;
+  privateKey: string;
+}
+
+export function appCredentials(access: ContentsAccess, env: NodeJS.ProcessEnv): AppCredentials | null {
+  const writer = access === "write" && env.WRITE_APP_ID && env.WRITE_APP_PRIVATE_KEY;
+  const appId = writer ? env.WRITE_APP_ID : env.APP_ID;
+  const privateKey = writer ? env.WRITE_APP_PRIVATE_KEY : env.APP_PRIVATE_KEY;
+  return appId && privateKey ? { appId, privateKey } : null;
+}
+
 async function appRequest(fetchImpl: typeof fetch, jwt: string, path: string, body?: unknown): Promise<unknown> {
   const res = await fetchImpl(`https://api.github.com${path}`, {
     headers: appHeaders(jwt),
