@@ -11,7 +11,7 @@ Version and apply database schema changes.
 | [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.10.0](https://github.com/flyway/flyway/releases/tag/flyway-13.10.0) | 10135 | Liquibase (full) |
 | [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.3.0](https://github.com/ariga/atlas/releases/tag/v1.3.0) signed | 8764 | Liquibase (full), Flyway (full) |
 | [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.36.0](https://github.com/amacneil/dbmate/releases/tag/v2.36.0) signed | 7444 | Flyway (full), Liquibase (partial) |
-| [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7060 | Bytebase (partial) |
+| [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7061 | Bytebase (partial) |
 | [pgroll](https://github.com/xataio/pgroll) | Go | Apache-2.0 | [v0.16.3](https://github.com/xataio/pgroll/releases/tag/v0.16.3) | 6597 | Flyway (partial) |
 | [Liquibase](https://github.com/liquibase/liquibase) | Java | Other | [v5.0.4](https://github.com/liquibase/liquibase/releases/tag/v5.0.4) signed | 5622 | Flyway (full) |
 | [Alembic](https://github.com/sqlalchemy/alembic) | Python | MIT | [rel_1_20_0](https://github.com/sqlalchemy/alembic/releases/tag/rel_1_20_0) | 4438 | Flyway (partial) |

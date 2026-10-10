@@ -102,7 +102,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Infrastructure as code](catalog/infrastructure-as-code.md) | 18 | Declare cloud infrastructure in files and apply the difference. |
 | [Container engines](catalog/container-engine.md) | 18 | Build and run OCI containers. |
 | [In-memory key-value stores](catalog/key-value-store.md) | 9 | Caches and data structure servers speaking the Redis protocol or close to it. |
-| [Search engines](catalog/search-engine.md) | 14 | Full-text search servers. |
+| [Search engines](catalog/search-engine.md) | 15 | Full-text search servers. |
 | [Metrics and monitoring](catalog/metrics.md) | 19 | Collect, store and query time series. |
 | [Command-line HTTP clients](catalog/http-client.md) | 5 | Send HTTP requests from a terminal. |
 | [Code search](catalog/code-search.md) | 6 | Search file contents recursively from a terminal. |
@@ -114,7 +114,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Wide-column databases](catalog/wide-column-database.md) | 4 | Distributed databases storing wide, sparse rows partitioned across nodes. |
 | [Graph databases](catalog/graph-database.md) | 13 | Databases storing nodes and the relationships between them, queried by traversing the graph. |
 | [Event streaming](catalog/message-streaming.md) | 15 | Durable, partitioned logs for events and messages. |
-| [Web servers and reverse proxies](catalog/reverse-proxy.md) | 30 | Serve sites, terminate TLS and route traffic to services. |
+| [Web servers and reverse proxies](catalog/reverse-proxy.md) | 31 | Serve sites, terminate TLS and route traffic to services. |
 | [Documentation site generators](catalog/documentation-site.md) | 16 | Turn Markdown into a searchable documentation site. |
 | [Static site generators](catalog/static-site-generator.md) | 15 | Build websites from templates and content files. |
 | [Python type checkers](catalog/python-type-checker.md) | 5 | Check Python type annotations before the code runs. |
@@ -129,7 +129,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Log pipelines](catalog/log-pipeline.md) | 9 | Collect, transform and ship logs and events. |
 | [Team chat](catalog/team-chat.md) | 18 | Self-hosted messaging for teams. |
 | [Terminal emulators](catalog/terminal-emulator.md) | 16 | Desktop terminal applications. |
-| [Code editors](catalog/text-editor.md) | 27 | Editors for writing code. |
+| [Code editors](catalog/text-editor.md) | 28 | Editors for writing code. |
 | [File listing](catalog/file-listing.md) | 5 | Replacements for ls with colours, icons and git status. |
 | [Git diff pagers](catalog/git-diff-pager.md) | 6 | Make git diff output readable in a terminal. |
 | [JSON processors](catalog/json-processor.md) | 9 | Query and transform JSON from the command line. |
@@ -142,7 +142,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Secrets managers](catalog/secrets-manager.md) | 6 | Store, rotate and hand out secrets to applications. |
 | [Git LFS servers](catalog/git-lfs-server.md) | 4 | Serve Git LFS objects for repositories hosted anywhere. |
 | [Minecraft servers](catalog/minecraft-server.md) | 8 | Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch. |
-| [File sync and share](catalog/file-sync.md) | 9 | Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client. |
+| [File sync and share](catalog/file-sync.md) | 11 | Self-hosted storage for files you reach from more than one machine, over WebDAV or a sync client. |
 | [AI coding agents](catalog/coding-agent.md) | 14 | Agents that read a codebase, edit files and run commands from a prompt, in the terminal or the editor. |
 | [AI code assistants](catalog/code-assistant.md) | 8 | Completions and chat inside the editor, backed by a hosted or a local model. |
 | [AI chat interfaces](catalog/chat-interface.md) | 18 | Apps to chat with language models, whether the model runs locally or behind an API. |
@@ -164,10 +164,10 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Identity providers](catalog/identity-provider.md) | 21 | Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP. |
 | [Mesh VPNs](catalog/mesh-vpn.md) | 10 | Connect devices and servers in a private WireGuard network, wherever they are. |
 | [Remote desktop](catalog/remote-desktop.md) | 9 | Control another computer over the network, for support or remote work. |
-| [Wikis and knowledge bases](catalog/knowledge-base.md) | 17 | Shared pages and documentation for teams, edited in the browser. |
+| [Wikis and knowledge bases](catalog/knowledge-base.md) | 18 | Shared pages and documentation for teams, edited in the browser. |
 | [Note-taking apps](catalog/note-taking.md) | 21 | Personal notes on desktop and mobile, with sync. |
 | [Recipe managers](catalog/recipe-manager.md) | 8 | Keep recipes, plan meals and build shopping lists from them. |
-| [Project management](catalog/project-management.md) | 24 | Issues, tasks and boards for planning team work. |
+| [Project management](catalog/project-management.md) | 25 | Issues, tasks and boards for planning team work. |
 | [Video conferencing](catalog/video-conferencing.md) | 11 | Video meetings in the browser or an app. |
 | [Newsletters and email marketing](catalog/newsletter.md) | 11 | Mailing lists, campaigns and subscriber management. |
 | [Forms and surveys](catalog/forms-surveys.md) | 9 | Build forms and surveys and collect the answers. |
@@ -179,14 +179,14 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Backend as a service](catalog/backend-as-a-service.md) | 10 | Auth, database, storage and APIs for an app, without writing the backend. |
 | [Self-hosted PaaS](catalog/self-hosted-paas.md) | 12 | Deploy apps and databases to your own servers from a git push or a dashboard. |
 | [Headless CMS](catalog/headless-cms.md) | 15 | Manage content in an admin UI and deliver it to any front end through an API. |
-| [Website CMS](catalog/website-cms.md) | 18 | Run a website from a web back office, with pages, menus, themes and plugins. |
+| [Website CMS](catalog/website-cms.md) | 22 | Run a website from a web back office, with pages, menus, themes and plugins. |
 | [Blogging engines](catalog/blogging.md) | 4 | Publish a blog with posts, tags, themes and comments from your own server. |
 | [Comment systems](catalog/comments.md) | 6 | Embed a comment thread under the pages of a static or dynamic site. |
 | [Link-in-bio pages](catalog/link-in-bio.md) | 3 | Publish a single page listing your links, for the profile of a social account. |
 | [Feature flags](catalog/feature-flags.md) | 8 | Turn features on for some users without a deploy, and run experiments. |
 | [Database migrations](catalog/database-migrations.md) | 15 | Version and apply database schema changes. |
 | [Kubernetes UIs](catalog/kubernetes-ui.md) | 10 | Browse and operate Kubernetes clusters from a desktop, web or terminal UI. |
-| [Virtualization](catalog/virtualization.md) | 10 | Run virtual machines and system containers across a cluster of hosts. |
+| [Virtualization](catalog/virtualization.md) | 12 | Run virtual machines and system containers across a cluster of hosts. |
 | [Code search servers](catalog/code-search-server.md) | 4 | Index many repositories and search them from a web UI. |
 | [Data integration](catalog/data-integration.md) | 23 | Extract data from applications and databases and load it into a warehouse. |
 | [JavaScript HTTP clients](catalog/javascript-http-client.md) | 6 | Send HTTP requests from Node.js and browsers. |
@@ -247,12 +247,12 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Code spell checkers](catalog/spell-checker.md) | 3 | Find misspelled words in source code, identifiers and documentation. |
 | [Multi-language formatters](catalog/multi-language-formatter.md) | 2 | Run or provide formatting for many languages from one command and one configuration. |
 | [Lua linting and formatting](catalog/lua-lint-format.md) | 2 | Linters and formatters for Lua. |
-| [Build systems](catalog/build-system.md) | 9 | Compile, test and package projects from a declared build, for C, C++, the JVM and other languages. |
+| [Build systems](catalog/build-system.md) | 10 | Compile, test and package projects from a declared build, for C, C++, the JVM and other languages. |
 | [Compiler caches](catalog/build-cache.md) | 2 | Cache compiler output so unchanged sources are not rebuilt, locally or on shared storage. |
-| [System package managers](catalog/system-package-manager.md) | 6 | Install command-line tools and applications on macOS, Windows or Linux from package definitions. |
+| [System package managers](catalog/system-package-manager.md) | 9 | Install command-line tools and applications on macOS, Windows or Linux from package definitions. |
 | [C and C++ package managers](catalog/cpp-package-manager.md) | 2 | Fetch, build and version C and C++ libraries for a project. |
 | [Development environments](catalog/dev-environment.md) | 5 | Declare a project's tools and services in a file and get the same shell on every machine. |
-| [Debuggers](catalog/debugger.md) | 5 | Step through running programs, inspect their state and replay their execution. |
+| [Debuggers](catalog/debugger.md) | 6 | Step through running programs, inspect their state and replay their execution. |
 | [Profilers](catalog/profiler.md) | 10 | Measure where a program spends its time and memory, and draw it as flame graphs or timelines. |
 | [Terminal file viewers](catalog/file-viewer.md) | 2 | Show file contents in the terminal with syntax highlighting or rendering. |
 | [Hex editors](catalog/hex-editor.md) | 4 | View and edit the raw bytes of binary files. |
@@ -272,9 +272,9 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Code statistics](catalog/code-statistics.md) | 3 | Count the lines of code, comments and blanks in a codebase, by language. |
 | [File watchers](catalog/file-watcher.md) | 5 | Run a command again whenever the files it depends on change. |
 | [Scheduling](catalog/scheduling.md) | 9 | Share availability and let people book a meeting or vote on a date. |
-| [Image editors](catalog/image-editing.md) | 6 | Edit raster and vector images, from retouching photos to drawing graphics. |
+| [Image editors](catalog/image-editing.md) | 7 | Edit raster and vector images, from retouching photos to drawing graphics. |
 | [Raw photo editors](catalog/raw-photo-editing.md) | 5 | Develop camera raw files and manage a photo catalog non-destructively. |
-| [Video editors](catalog/video-editing.md) | 13 | Cut, compose and render video on a timeline or a node graph. |
+| [Video editors](catalog/video-editing.md) | 14 | Cut, compose and render video on a timeline or a node graph. |
 | [No-code databases](catalog/no-code-database.md) | 3 | Spreadsheet-like databases with views, forms and an API, built without code. |
 | [E-signature](catalog/e-signature.md) | 4 | Send documents for signature and collect legally binding signatures online. |
 | [Incident management](catalog/incident-management.md) | 5 | Route alerts, page whoever is on call and track incidents to resolution. |
@@ -330,7 +330,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Invoicing](catalog/invoicing.md) | 5 | Send quotes and invoices to clients and track the payments. |
 | [HR management](catalog/hr-management.md) | 5 | Employee records, leave, recruitment and payroll. |
 | [Embedded key-value stores](catalog/embedded-key-value.md) | 6 | Key-value storage engines linked into a program as a library, with no server to run. |
-| [Distributed key-value stores](catalog/distributed-key-value.md) | 3 | Replicated, transactional key-value stores that run as a cluster. |
+| [Distributed key-value stores](catalog/distributed-key-value.md) | 4 | Replicated, transactional key-value stores that run as a cluster. |
 | [Lakehouse table formats](catalog/table-format.md) | 5 | Open table formats that add transactions, schema evolution and time travel to files on object storage. |
 | [Database proxies and connection poolers](catalog/database-proxy.md) | 4 | Pool, route and multiplex client connections in front of a database server. |
 | [Database backup](catalog/database-backup.md) | 3 | Physical backups, WAL archiving and point-in-time recovery for database servers. |
@@ -356,7 +356,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [AutoML](catalog/automl.md) | 5 | Train, tune and compare models automatically from tabular, text or image data. |
 | [Feedback boards](catalog/feedback-board.md) | 3 | Collect feature requests, let users vote on them and publish a roadmap. |
 | [Inventory and asset management](catalog/inventory.md) | 5 | Track stock, parts and equipment, and who has them where. |
-| [Learning platforms](catalog/lms.md) | 9 | Courses, assignments and grades for schools, universities and companies. |
+| [Learning platforms](catalog/lms.md) | 10 | Courses, assignments and grades for schools, universities and companies. |
 | [Flashcards](catalog/flashcards.md) | 3 | Learn with spaced repetition flashcards. |
 | [Typesetting](catalog/typesetting.md) | 4 | Write documents in a markup language such as LaTeX or Typst and compile them to PDF. |
 | [Reference managers](catalog/reference-manager.md) | 4 | Collect papers and sources, organise them and cite them in documents. |
@@ -366,7 +366,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Endpoint detection and forensics](catalog/endpoint-detection.md) | 6 | Query laptops and servers, hunt for threats on them and collect forensic evidence. |
 | [Device management](catalog/device-management.md) | 5 | Enroll, configure, patch and inventory laptops, phones and servers from one console. |
 | [Web application firewalls](catalog/waf.md) | 6 | Inspect HTTP traffic and block attacks, bots and abuse before they reach an application. |
-| [Firewalls and routers](catalog/firewall.md) | 3 | Firewall and router systems that filter traffic for a host or a whole network. |
+| [Firewalls and routers](catalog/firewall.md) | 4 | Firewall and router systems that filter traffic for a host or a whole network. |
 | [Application firewalls](catalog/application-firewall.md) | 7 | Show and control which apps on a computer or phone may connect to the network. |
 | [VPN servers](catalog/vpn-server.md) | 9 | Run a remote-access or site-to-site VPN server for your users and networks. |
 | [Web file managers](catalog/web-file-manager.md) | 3 | Browse, upload and share files on a server or storage back end from a browser. |
@@ -383,7 +383,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Ad-free video clients](catalog/youtube-client.md) | 5 | Apps that play YouTube and other video sites without ads or a Google account. |
 | [Home server platforms](catalog/home-server-platform.md) | 6 | Turn a machine at home into a server with an app store, storage management and a web dashboard. |
 | [Speed tests](catalog/speed-test.md) | 5 | Measure bandwidth and latency to your own server, or track your connection over time. |
-| [Music production](catalog/music-production.md) | 17 | Record, edit and mix audio, and compose with DAWs, trackers, sequencers and software synthesizers. |
+| [Music production](catalog/music-production.md) | 18 | Record, edit and mix audio, and compose with DAWs, trackers, sequencers and software synthesizers. |
 | [Music notation](catalog/music-notation.md) | 3 | Write, play back and engrave sheet music and tablature. |
 | [Music players](catalog/music-player.md) | 13 | Play and organise a local music library, or stream it from your own server. |
 | [Music taggers](catalog/music-tagger.md) | 3 | Fix the tags, cover art and file names of a music library, often from MusicBrainz. |
@@ -403,34 +403,34 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Data quality](catalog/data-quality.md) | 5 | Declare tests on datasets and check them in pipelines. |
 | [Semantic layers](catalog/semantic-layer.md) | 2 | Define metrics and dimensions once and serve them to BI tools and applications. |
 | [Data notebooks](catalog/data-notebook.md) | 6 | Notebooks that mix code, queries, charts and prose for data analysis. |
-| [Data processing engines](catalog/data-processing-engine.md) | 2 | Run batch and streaming jobs over large datasets across a cluster. |
+| [Data processing engines](catalog/data-processing-engine.md) | 3 | Run batch and streaming jobs over large datasets across a cluster. |
 | [Directory servers](catalog/ldap-directory.md) | 4 | Keep users and groups in an LDAP directory that other systems authenticate against. |
 | [Authorization services](catalog/authorization-service.md) | 7 | Decide who may do what in an application, with policies or relationship-based permissions served over an API. |
 | [Password managers](catalog/password-manager.md) | 4 | Apps that keep passwords and other secrets in an encrypted vault on your own devices. |
 | [Certificate authorities](catalog/certificate-authority.md) | 7 | Issue, renew and revoke X.509 certificates from a PKI you run. |
 | [Certificate automation](catalog/acme-client.md) | 6 | Request and renew TLS certificates over ACME from Let's Encrypt or another ACME authority. |
-| [Container orchestration](catalog/container-orchestration.md) | 11 | Schedule and run containers across a cluster of machines, from full Kubernetes distributions to lighter schedulers. |
+| [Container orchestration](catalog/container-orchestration.md) | 12 | Schedule and run containers across a cluster of machines, from full Kubernetes distributions to lighter schedulers. |
 | [Kubernetes packaging](catalog/kubernetes-packaging.md) | 6 | Template, package and version Kubernetes manifests so one application can be installed and configured per environment. |
 | [Kubernetes development](catalog/kubernetes-development.md) | 7 | Build, deploy and debug code against a Kubernetes cluster from a developer machine, with live reload or traffic proxied to the laptop. |
 | [Kubernetes autoscaling](catalog/kubernetes-autoscaling.md) | 3 | Add and remove pods and nodes in a Kubernetes cluster as load and pending work change. |
 | [Container networking](catalog/container-networking.md) | 5 | Pod networking, network policy and load balancer addresses for Kubernetes clusters, especially on bare metal. |
 | [Distributed storage](catalog/distributed-storage.md) | 5 | Replicated block and file storage pooled from the disks of a cluster, often as persistent volumes for Kubernetes. |
 | [Kubernetes backup](catalog/kubernetes-backup.md) | 3 | Back up and restore Kubernetes resources and persistent volumes, and migrate workloads between clusters. |
-| [DNS servers](catalog/dns-server.md) | 2 | Authoritative and recursive DNS servers that host your zones and answer queries behind an API. |
+| [DNS servers](catalog/dns-server.md) | 4 | Authoritative and recursive DNS servers that host your zones and answer queries behind an API. |
 | [Container image tools](catalog/container-image-tools.md) | 4 | Inspect, copy, sign and shrink OCI images and work with registries without a container daemon. |
 | [Continuous profiling](catalog/continuous-profiling.md) | 2 | Collect CPU and memory profiles from running services all the time and query them over time like metrics. |
-| [Video players](catalog/video-player.md) | 10 | Play local video files and streams, or the library of your own media server. |
-| [Media converters](catalog/media-converter.md) | 11 | Convert, compress and transcode video, audio and image files between formats. |
+| [Video players](catalog/video-player.md) | 11 | Play local video files and streams, or the library of your own media server. |
+| [Media converters](catalog/media-converter.md) | 13 | Convert, compress and transcode video, audio and image files between formats. |
 | [Subtitle editors](catalog/subtitle-editor.md) | 3 | Create, time and translate subtitles for video. |
 | [Image viewers](catalog/image-viewer.md) | 6 | Browse and view images quickly, with light edits. |
-| [Digital painting](catalog/digital-painting.md) | 2 | Paint and sketch on a raster canvas with a pen tablet, alone or with others. |
+| [Digital painting](catalog/digital-painting.md) | 3 | Paint and sketch on a raster canvas with a pen tablet, alone or with others. |
 | [Pixel art editors](catalog/pixel-art.md) | 4 | Draw pixel art and animate sprites frame by frame. |
 | [2D animation](catalog/animation.md) | 4 | Draw, rig and tween 2D animation on a timeline and render it to video. |
 | [Ebook readers](catalog/ebook-reader.md) | 8 | Read EPUB, PDF and comic files on a desktop, phone or e-ink device. |
 | [Font editors](catalog/font-editor.md) | 3 | Draw glyphs, set spacing and kerning, and export fonts. |
 | [3D printing](catalog/3d-printing.md) | 8 | Slice models into G-code and control 3D printers. |
 | [CAD](catalog/cad.md) | 11 | Draft 2D drawings and model parametric 3D parts for engineering and fabrication. |
-| [3D modelling](catalog/3d-modeling.md) | 9 | Model, process, texture and view 3D meshes and assets. |
+| [3D modelling](catalog/3d-modeling.md) | 10 | Model, process, texture and view 3D meshes and assets. |
 | [Game engines](catalog/game-engine.md) | 21 | Build 2D and 3D games with an engine, an editor or a framework, and export them to desktop, mobile and the web. |
 | [Game level editors](catalog/game-map-editor.md) | 2 | Design tile maps and levels and export them to a game engine. |
 | [Continuous delivery](catalog/continuous-delivery.md) | 4 | Promote builds through environments with canary, blue-green and progressive rollouts, and roll back on failing metrics. |
@@ -457,6 +457,28 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Content blockers](catalog/content-blocker.md) | 5 | Browser extensions that block ads, trackers and other unwanted content on web pages. |
 | [One-time secret sharing](catalog/secret-sharing.md) | 3 | Share a password or other secret through a link that stops working once it is read. |
 | [Private search engines](catalog/private-search.md) | 3 | Metasearch engines you host, which query other search engines without profiling who searches. |
+| [Web browsers](catalog/web-browser.md) | 4 | Browsers for the desktop, built on an open source engine. |
+| [Reverse engineering](catalog/reverse-engineering.md) | 3 | Disassemble, decompile and debug compiled programs without their source. |
+| [Remote shell clients and servers](catalog/remote-shell.md) | 2 | Log in to other machines and run commands over an encrypted connection. |
+| [Compression](catalog/compression.md) | 3 | Archive and compress files and streams. |
+| [Download managers](catalog/download-manager.md) | 2 | Fetch files and media from the web from a terminal or a queue. |
+| [BitTorrent clients](catalog/bittorrent-client.md) | 2 | Download and seed files over the BitTorrent protocol. |
+| [Media library automation](catalog/media-automation.md) | 3 | Search for, grab and organise TV shows, movies and other media for a home library. |
+| [Front-end frameworks](catalog/frontend-framework.md) | 6 | Component frameworks for building browser user interfaces. |
+| [Desktop app frameworks](catalog/desktop-app-framework.md) | 3 | Build desktop applications from web technologies. |
+| [Mobile app frameworks](catalog/mobile-app-framework.md) | 2 | Build iOS and Android applications from one codebase. |
+| [Java web frameworks](catalog/java-web-framework.md) | 2 | Frameworks for building web services and applications on the JVM. |
+| [Programming languages](catalog/programming-language.md) | 4 | Language implementations with their compiler, interpreter and standard library. |
+| [Compilers](catalog/compiler.md) | 2 | Compiler toolchains that turn source code into machine code. |
+| [Machine learning frameworks](catalog/machine-learning-framework.md) | 4 | Libraries for building and training machine learning models. |
+| [Geographic information systems](catalog/gis.md) | 3 | Desktop and library tools for geospatial data. |
+| [Operating systems](catalog/operating-system.md) | 2 | Kernels and complete operating systems with public source. |
+| [Window managers](catalog/window-manager.md) | 2 | Tiling and stacking window managers and compositors for Linux desktops. |
+| [PCB design](catalog/pcb-design.md) | 2 | Schematic capture and printed circuit board layout. |
+| [Version control systems](catalog/version-control.md) | 2 | Track changes to source code and share them between people. |
+| [Network analysis](catalog/network-analysis.md) | 4 | Capture and inspect network traffic and scan hosts. |
+| [Penetration testing](catalog/penetration-testing.md) | 3 | Exploit frameworks and password recovery tools used in security assessments. |
+| [Cryptography libraries](catalog/cryptography-library.md) | 2 | Libraries that implement TLS and cryptographic primitives for other software. |
 
 <!-- catalog:end -->
 

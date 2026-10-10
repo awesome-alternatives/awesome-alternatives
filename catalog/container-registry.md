@@ -4,7 +4,7 @@ Store and serve OCI images and artefacts.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.4](https://github.com/goharbor/harbor/releases/tag/v2.15.4) signed | 29525 | Docker Hub (full), Distribution (full) |
+| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.4](https://github.com/goharbor/harbor/releases/tag/v2.15.4) signed | 29526 | Docker Hub (full), Distribution (full) |
 | [Distribution](https://github.com/distribution/distribution) | Go | Apache-2.0 | [v3.1.2](https://github.com/distribution/distribution/releases/tag/v3.1.2) signed | 10643 | Docker Hub (partial) |
 | [Kraken](https://github.com/uber/kraken) | Go | Apache-2.0 | [v0.1.31](https://github.com/uber/kraken/releases/tag/v0.1.31) signed | 6760 | Distribution (partial) |
 | [Spegel](https://github.com/spegel-org/spegel) | Go | MIT | [v0.7.4](https://github.com/spegel-org/spegel/releases/tag/v0.7.4) signed | 3808 | Dragonfly (partial), Kraken (partial) |

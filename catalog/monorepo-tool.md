@@ -4,9 +4,9 @@ Run, cache and orchestrate tasks across the packages of one repository.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Lerna](https://github.com/lerna/lerna) | TypeScript | MIT | [v10.1.0](https://github.com/lerna/lerna/releases/tag/v10.1.0) | 36042 | none |
-| [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.7](https://github.com/vercel/turborepo/releases/tag/v2.11.7) signed | 31181 | Lerna (partial) |
-| [Nx](https://github.com/nrwl/nx) | TypeScript | MIT | [23.3.0](https://github.com/nrwl/nx/releases/tag/23.3.0) signed | 29399 | Lerna (full) |
+| [Lerna](https://github.com/lerna/lerna) | TypeScript | MIT | [v10.1.0](https://github.com/lerna/lerna/releases/tag/v10.1.0) | 36041 | none |
+| [Turborepo](https://github.com/vercel/turborepo) | Rust | MIT | [v2.11.7](https://github.com/vercel/turborepo/releases/tag/v2.11.7) signed | 31182 | Lerna (partial) |
+| [Nx](https://github.com/nrwl/nx) | TypeScript | MIT | [23.3.0](https://github.com/nrwl/nx/releases/tag/23.3.0) signed | 29401 | Lerna (full) |
 | [Bazel](https://github.com/bazelbuild/bazel) | Java | Apache-2.0 | [9.3.0](https://github.com/bazelbuild/bazel/releases/tag/9.3.0) | 25933 | none |
 | [Rush](https://github.com/microsoft/rushstack) | TypeScript | Other | [5.181.0](https://www.npmjs.com/package/@microsoft/rush/v/5.181.0) | 6499 | Lerna (full) |
 | [Buck2](https://github.com/facebook/buck2) | Rust | Apache-2.0 | [latest](https://github.com/facebook/buck2/releases/tag/latest) | 4464 | Bazel (full) |

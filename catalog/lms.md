@@ -5,6 +5,7 @@ Courses, assignments and grades for schools, universities and companies.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Open edX](https://github.com/openedx/openedx-platform) | Python | AGPL-3.0 | [named-release/birch](https://github.com/openedx/openedx-platform/releases/tag/named-release/birch) | 8195 | Teachable (partial), Blackboard Learn (partial) |
+| [Moodle](https://github.com/moodle/moodle) | PHP | GPL-3.0 | [v5.3.0](https://github.com/moodle/moodle/releases/tag/v5.3.0) | 7473 | none |
 | [Canvas LMS](https://github.com/instructure/canvas-lms) | Ruby | AGPL-3.0 | [release/2026-05-20.143](https://github.com/instructure/canvas-lms/releases/tag/release/2026-05-20.143) | 6863 | Blackboard Learn (full) |
 | [Frappe Learning](https://github.com/frappe/lms) | TypeScript | AGPL-3.0 | [v2.64.0](https://github.com/frappe/lms/releases/tag/v2.64.0) | 3298 | Teachable (partial) |
 | [ClassroomIO](https://github.com/classroomio/classroomio) | TypeScript | AGPL-3.0 | [v1.0.0](https://github.com/classroomio/classroomio/releases/tag/v1.0.0) | 1716 | Teachable (partial) |

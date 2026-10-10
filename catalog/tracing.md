@@ -4,12 +4,12 @@ Collect and search traces of requests as they cross services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SigNoz](https://github.com/SigNoz/signoz) | TypeScript | Other | [v0.145.0](https://github.com/SigNoz/signoz/releases/tag/v0.145.0) signed | 32323 | Datadog (full), New Relic (full), Honeycomb (full) |
+| [SigNoz](https://github.com/SigNoz/signoz) | TypeScript | Other | [v0.145.0](https://github.com/SigNoz/signoz/releases/tag/v0.145.0) signed | 32325 | Datadog (full), New Relic (full), Honeycomb (full) |
 | [Apache SkyWalking](https://github.com/apache/skywalking) | Java | Apache-2.0 | [v11.0.0](https://github.com/apache/skywalking/releases/tag/v11.0.0) | 24964 | New Relic (partial) |
-| [Jaeger](https://github.com/jaegertracing/jaeger) | Go | Apache-2.0 | [v2.22.0](https://github.com/jaegertracing/jaeger/releases/tag/v2.22.0) signed | 23272 | Zipkin (full), Honeycomb (partial) |
-| [Zipkin](https://github.com/openzipkin/zipkin) | Java | Apache-2.0 | [3.6.1](https://github.com/openzipkin/zipkin/releases/tag/3.6.1) | 17469 | Datadog (partial), Honeycomb (partial) |
+| [Jaeger](https://github.com/jaegertracing/jaeger) | Go | Apache-2.0 | [v2.22.0](https://github.com/jaegertracing/jaeger/releases/tag/v2.22.0) signed | 23271 | Zipkin (full), Honeycomb (partial) |
+| [Zipkin](https://github.com/openzipkin/zipkin) | Java | Apache-2.0 | [3.6.1](https://github.com/openzipkin/zipkin/releases/tag/3.6.1) | 17470 | Datadog (partial), Honeycomb (partial) |
 | [Pinpoint](https://github.com/pinpoint-apm/pinpoint) | Java | Apache-2.0 | [v3.1.1](https://github.com/pinpoint-apm/pinpoint/releases/tag/v3.1.1) | 13868 | New Relic (partial) |
-| [Coroot](https://github.com/coroot/coroot) | Go | Apache-2.0 | [v1.27.2](https://github.com/coroot/coroot/releases/tag/v1.27.2) signed | 7964 | Datadog (partial) |
+| [Coroot](https://github.com/coroot/coroot) | Go | Apache-2.0 | [v1.27.2](https://github.com/coroot/coroot/releases/tag/v1.27.2) signed | 7965 | Datadog (partial) |
 | [Pixie](https://github.com/pixie-io/pixie) | C++ | Apache-2.0 | [release/cloud/v0.1.9](https://github.com/pixie-io/pixie/releases/tag/release/cloud/v0.1.9) | 6544 | Datadog (partial), New Relic (partial) |
 | [Grafana Tempo](https://github.com/grafana/tempo) | Go | AGPL-3.0 | [v3.1.0](https://github.com/grafana/tempo/releases/tag/v3.1.0) signed | 5518 | Zipkin (full) |
 | [Uptrace](https://github.com/uptrace/uptrace) | Go | AGPL-3.0 | [v2.1.0-rc.1](https://github.com/uptrace/uptrace/releases/tag/v2.1.0-rc.1) signed | 4300 | Honeycomb (partial), Datadog (partial) |

@@ -4,7 +4,7 @@ Share availability and let people book a meeting or vote on a date.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Cal.diy](https://github.com/calcom/cal.diy) | TypeScript | MIT | [v6.2.0](https://github.com/calcom/cal.diy/releases/tag/v6.2.0) signed | 48933 | Calendly (partial) |
+| [Cal.diy](https://github.com/calcom/cal.diy) | TypeScript | MIT | [v6.2.0](https://github.com/calcom/cal.diy/releases/tag/v6.2.0) signed | 48932 | Calendly (partial) |
 | [Rallly](https://github.com/lukevella/rallly) | TypeScript | AGPL-3.0 | [v4.15.4](https://github.com/lukevella/rallly/releases/tag/v4.15.4) | 5297 | Doodle (partial) |
 | [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | PHP | GPL-3.0 | [1.6.0](https://github.com/alextselegidis/easyappointments/releases/tag/1.6.0) | 4424 | Calendly (partial) |
 | [Nextcloud Calendar](https://github.com/nextcloud/calendar) | JavaScript | AGPL-3.0 | [v3.3.2](https://github.com/nextcloud/calendar/releases/tag/v3.3.2) signed | 1190 | Calendly (partial) |
