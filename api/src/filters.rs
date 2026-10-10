@@ -1,3 +1,5 @@
+use std::collections::BTreeMap;
+
 use schemars::JsonSchema;
 use serde::de::value::StrDeserializer;
 use serde::{Deserialize, Deserializer, Serialize};
@@ -21,7 +23,9 @@ pub struct Filters {
     )]
     pub license: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
-    #[schemars(description = "Category key, as list_categories names it.")]
+    #[schemars(
+        description = "Category key, as list_categories names it. The key of a category merged into another still works."
+    )]
     pub category: Option<String>,
     #[serde(default)]
     #[schemars(description = "Only drop-in replacements for the tool in replaces.")]
@@ -93,6 +97,13 @@ where
 }
 
 impl Filters {
+    pub fn following(self, category_redirects: &BTreeMap<String, String>) -> Self {
+        let category = self
+            .category
+            .map(|key| category_redirects.get(&key).cloned().unwrap_or(key));
+        Self { category, ..self }
+    }
+
     pub fn apply<'a>(&self, tools: &'a [Tool]) -> Vec<&'a Tool> {
         let mut matched: Vec<&Tool> = tools
             .iter()

@@ -144,6 +144,7 @@ async fn tools(
     Query(window): Query<Window>,
 ) -> Json<ToolPage> {
     let loaded = state.loaded();
+    let filters = filters.following(&loaded.catalog.category_redirects);
     let tools = &loaded.catalog.tools;
     Json(ToolPage::of(filters.apply(tools), &window).with_near(filters.near_misses(tools)))
 }
@@ -230,6 +231,7 @@ mod tests {
             revision: "test".into(),
             products: vec![],
             categories: Default::default(),
+            category_redirects: [("semver".to_owned(), "release-automation".to_owned())].into(),
             tools: vec![
                 tool("semantic-release", "JavaScript", "MIT", &[], 20000),
                 crate::catalog::Tool {
@@ -498,6 +500,19 @@ mod tests {
         )
         .await;
         assert_eq!(empty["count"], 0);
+    }
+
+    #[tokio::test]
+    async fn a_merged_category_still_filters_as_the_category_that_took_its_tools() {
+        let (status, body) = call(
+            &app(10),
+            Request::get("/v1/tools?category=semver")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK);
+        assert_eq!(body["count"], 3);
     }
 
     #[tokio::test]

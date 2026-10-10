@@ -163,6 +163,8 @@ pub struct Catalog {
     pub products: Vec<Product>,
     #[serde(default)]
     pub categories: BTreeMap<String, Category>,
+    #[serde(default, rename = "categoryRedirects")]
+    pub category_redirects: BTreeMap<String, String>,
     #[serde(skip)]
     pub revision: String,
 }

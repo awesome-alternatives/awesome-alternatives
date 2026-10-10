@@ -97,13 +97,9 @@ impl CatalogServer {
                 parse(arguments).and_then(|args| encode(catalog_tool(&loaded, &args)?))
             }
             Name::ListTools => parse(arguments).and_then(|args: ListTools| {
-                let misses = args.filters.near_misses(&loaded.catalog.tools);
-                encode(&answers::listing(
-                    &loaded,
-                    &args.filters,
-                    &args.window,
-                    &misses,
-                ))
+                let filters = args.filters.following(&loaded.catalog.category_redirects);
+                let misses = filters.near_misses(&loaded.catalog.tools);
+                encode(&answers::listing(&loaded, &filters, &args.window, &misses))
             }),
             Name::ListCategories => encode(&answers::categories(&loaded)),
             Name::Search => {
