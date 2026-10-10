@@ -5,18 +5,38 @@ export type LinkCheck = (url: string) => Promise<string | null>;
 
 const safely: LinkCheck = (url) => unsafeOrUnreachable(url);
 
-export async function unreachable(url: string, fetchImpl: typeof fetch = fetch): Promise<string | null> {
-  try {
-    const res = await fetchImpl(url, {
-      headers: { "user-agent": USER_AGENT },
-      redirect: "follow",
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
-    await res.body?.cancel();
-    return res.ok ? null : `${url} answered ${res.status}`;
-  } catch (e) {
-    return `${url} did not answer: ${(e as Error).message}`;
+const ATTEMPTS = 3;
+const BACKOFF_MS = 1000;
+
+const pause = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
+
+function transient(status: number): boolean {
+  return status === 429 || status >= 500;
+}
+
+export async function unreachable(
+  url: string,
+  fetchImpl: typeof fetch = fetch,
+  wait: (ms: number) => Promise<void> = pause,
+): Promise<string | null> {
+  let problem = "";
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
+    try {
+      const res = await fetchImpl(url, {
+        headers: { "user-agent": USER_AGENT },
+        redirect: "follow",
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+      await res.body?.cancel();
+      if (res.ok) return null;
+      problem = `${url} answered ${res.status}`;
+      if (!transient(res.status)) return problem;
+    } catch (e) {
+      problem = `${url} did not answer: ${(e as Error).message}`;
+    }
+    if (attempt < ATTEMPTS) await wait(BACKOFF_MS * attempt);
   }
+  return problem;
 }
 
 export async function checkHomepage(

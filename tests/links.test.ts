@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { checkCapabilityDocs, checkHomepage, checkMigrations } from "../scripts/lib/links.ts";
+import { checkCapabilityDocs, checkHomepage, checkMigrations, unreachable } from "../scripts/lib/links.ts";
 
 const product = { slug: "closed", homepage: "https://example.com/" };
 const answering = (status: number) => async (url: string) => (status < 400 ? null : `${url} answered ${status}`);
@@ -70,5 +70,47 @@ describe("the default link check", () => {
     assert.match((await checkMigrations(tool))[0]?.message ?? "", /names an IP address/);
     const capability = { slug: "x", capabilities: { ci: { docs: "http://docs.example.com/" } } };
     assert.match((await checkCapabilityDocs(capability))[0]?.message ?? "", /is not https/);
+  });
+});
+
+describe("unreachable", () => {
+  const answers = (...statuses: number[]) => {
+    const calls: string[] = [];
+    const fetchImpl = (async (url: string) => {
+      calls.push(url);
+      return new Response(null, { status: statuses[Math.min(calls.length - 1, statuses.length - 1)] ?? 200 });
+    }) as unknown as typeof fetch;
+    return { calls, fetchImpl };
+  };
+  const noWait = async () => {};
+
+  it("accepts a page that answers a transient 503 and then 200", async () => {
+    const { calls, fetchImpl } = answers(503, 200);
+    assert.equal(await unreachable("https://example.com/a", fetchImpl, noWait), null);
+    assert.equal(calls.length, 2);
+  });
+
+  it("gives up after three attempts on a page that keeps failing", async () => {
+    const { calls, fetchImpl } = answers(503);
+    assert.match((await unreachable("https://example.com/a", fetchImpl, noWait)) ?? "", /answered 503/);
+    assert.equal(calls.length, 3);
+  });
+
+  it("does not retry a page that is really gone", async () => {
+    const { calls, fetchImpl } = answers(404);
+    assert.match((await unreachable("https://example.com/a", fetchImpl, noWait)) ?? "", /answered 404/);
+    assert.equal(calls.length, 1);
+  });
+
+  it("retries a rate limit and a network error", async () => {
+    let n = 0;
+    const fetchImpl = (async () => {
+      n++;
+      if (n === 1) return new Response(null, { status: 429 });
+      if (n === 2) throw new Error("socket hang up");
+      return new Response(null, { status: 200 });
+    }) as unknown as typeof fetch;
+    assert.equal(await unreachable("https://example.com/a", fetchImpl, noWait), null);
+    assert.equal(n, 3);
   });
 });
