@@ -4,7 +4,7 @@ import { test } from "node:test";
 
 import { DEFAULT_LOCALE, LOCALES } from "../src/i18n/index.ts";
 import { pairs } from "../src/lib/catalog.ts";
-import { pairMap, reversedPairs } from "../src/lib/redirects.ts";
+import { categoryMap, pairMap, redirectMaps, reversedPairs } from "../src/lib/redirects.ts";
 
 const nginx = readFileSync(new URL("../nginx.conf", import.meta.url), "utf8");
 const pair = (a: string, b: string) => ({ a: { slug: a }, b: { slug: b } });
@@ -47,7 +47,6 @@ test("the table is an nginx map with an empty default and one sorted line per re
   assert.equal(
     pairMap(reversedPairs([pair("alacritty", "kitty"), pair("ferrflow", "semantic-release")])),
     [
-      "map_hash_bucket_size 64;",
       "map $compare_pair $compare_canonical {",
       `    default "";`,
       "    kitty-vs-alacritty alacritty-vs-kitty;",
@@ -68,10 +67,19 @@ test("every comparison the site builds is reachable by its reversed URL", () => 
   }
 });
 
-test("the hash holds the longest key, so nginx does not refuse the map at startup", () => {
+test("the hash holds the longest key of either map, so nginx does not refuse them at startup", () => {
   const long = (length: number) => "x".repeat(length);
-  assert.match(pairMap(reversedPairs([pair(long(30), long(33))])), /^map_hash_bucket_size 128;/);
-  assert.match(pairMap(reversedPairs([pair("alacritty", "kitty")])), /^map_hash_bucket_size 64;/);
+  assert.match(redirectMaps(reversedPairs([pair(long(30), long(33))]), {}), /^map_hash_bucket_size 128;/);
+  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { [long(60)]: "waf" }), /^map_hash_bucket_size 128;/);
+  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { captcha: "waf" }), /^map_hash_bucket_size 64;/);
+});
+
+test("the image loads the redirect maps before nginx.conf, whose own map would lock the bucket size first", () => {
+  const dockerfile = readFileSync(new URL("../Dockerfile", import.meta.url), "utf8");
+  const maps = dockerfile.match(/generated\/redirects\.conf \/etc\/nginx\/conf\.d\/(\S+)/)?.[1];
+  const site = dockerfile.match(/nginx\.conf \/etc\/nginx\/conf\.d\/(\S+)/)?.[1];
+  assert.ok(maps && site);
+  assert.ok(maps < site, `${maps} loads after ${site}`);
 });
 
 test("nginx reads the pair the map is keyed on and redirects on the page it answers", () => {
@@ -120,4 +128,40 @@ test("every other missing page gets the root 404, which the error_page serves fr
     assert.equal(pattern.test(path), false, path);
   }
   assert.match(nginx, /error_page 403 404 =404 \/\$not_found_page;/);
+});
+
+function categoryLocation(): RegExp {
+  const match = nginx.match(/location ~ (\S*category_slug\S*) \{/);
+  assert.ok(match, "nginx.conf has the category location");
+  return new RegExp(match[1]);
+}
+
+test("the category table is an nginx map with an empty default and one sorted line per merged category", () => {
+  assert.equal(
+    categoryMap({ "go-lint": "lint-format", captcha: "waf" }),
+    ["map $category_slug $category_target {", `    default "";`, "    captcha waf;", "    go-lint lint-format;", "}", ""].join("\n"),
+  );
+});
+
+test("nginx keys the category map on the slug it captures and keeps the locale and the rest of the path", () => {
+  const [, source, target] = categoryMap({}).match(/map \$(\S+) \$(\S+) \{/) ?? [];
+  assert.ok(source && target);
+  assert.ok(nginx.includes(`(?<${source}>`));
+  assert.ok(nginx.includes(`if ($${target})`));
+  assert.ok(nginx.includes(`return 301 /\${category_locale}categories/$${target}/$category_rest$is_args$args;`));
+});
+
+test("the category location catches a category page and its feed in every locale, and nothing else", () => {
+  const pattern = categoryLocation();
+  assert.equal(pattern.exec("/categories/go-lint/")?.groups?.category_slug, "go-lint");
+  assert.equal(pattern.exec("/categories/go-lint")?.groups?.category_slug, "go-lint");
+  for (const locale of LOCALES.filter((one) => one !== DEFAULT_LOCALE)) {
+    const groups = pattern.exec(`/${locale}/categories/go-lint/feed.xml`)?.groups;
+    assert.equal(groups?.category_locale, `${locale}/`);
+    assert.equal(groups?.category_slug, "go-lint");
+    assert.equal(groups?.category_rest, "feed.xml");
+  }
+  assert.equal(pattern.test("/categories/"), false);
+  assert.equal(pattern.test("/it/categories/go-lint/"), false);
+  assert.equal(pattern.test("/tools/go-lint/"), false);
 });

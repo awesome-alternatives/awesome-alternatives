@@ -17,10 +17,14 @@ group of additions), so a reader does not show it twice when its commit link is 
 archived repositories are left out. The slug pair is alphabetical, so a pair has one URL and
 `/compare/<b>-vs-<a>/` is not a second copy of it: it answers 301 to the canonical spelling,
 keeping the locale prefix. `pnpm build` writes the reversed spellings to
-`generated/compare-pairs.conf`, an nginx `map` the image drops in `conf.d`, and `nginx.conf` looks
+`generated/redirects.conf`, an nginx `map` the image drops in `conf.d`, and `nginx.conf` looks
 the pair segment up in it. Only a pair that has a page is in the table, so an unknown one still
-answers 404, and no canonical URL is a key, so a redirect never chains. The redirect belongs to
-nginx; `pnpm dev` and `pnpm preview` serve the reversed URLs as 404.
+answers 404, and no canonical URL is a key, so a redirect never chains.
+
+A category merged into another keeps its URLs: `/categories/<old>/` and everything under it answer
+301 to the same path under the category that took its tools, in every locale. The pairs come from
+`data/category-redirects.yaml`, which `pnpm validate` checks, and land in a second `map` in the same
+file. Both redirects belong to nginx; `pnpm dev` and `pnpm preview` serve those URLs as 404.
 
 ```bash
 pnpm install

@@ -24,6 +24,7 @@
         "generated/events.json",
         "CONTRIBUTING.md",
         "data/categories.yaml",
+        "data/category-redirects.yaml",
         "data/migrations",
         "data/benchmarks",
         "scripts/lib/types.ts",
