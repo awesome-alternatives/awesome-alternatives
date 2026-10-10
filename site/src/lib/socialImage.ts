@@ -58,13 +58,15 @@ export function titleSize(title: string): number {
 const OG_IMAGE = /<meta property="og:image" content="([^"]+)"/;
 
 export function missingImages(
-  pages: readonly { path: string; html: string }[],
+  pages: Iterable<{ path: string; html: string }>,
   exists: (path: string) => boolean,
 ): { page: string; image: string }[] {
-  return pages.flatMap(({ path, html }) => {
-    const url = OG_IMAGE.exec(html)?.[1];
-    if (!url) return [];
-    const image = new URL(url).pathname;
-    return exists(image) ? [] : [{ page: path, image }];
-  });
+  return Iterator.from(pages)
+    .flatMap(({ path, html }) => {
+      const url = OG_IMAGE.exec(html)?.[1];
+      if (!url) return [];
+      const image = new URL(url).pathname;
+      return exists(image) ? [] : [{ page: path, image }];
+    })
+    .toArray();
 }

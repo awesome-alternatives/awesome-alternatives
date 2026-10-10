@@ -23,6 +23,17 @@ test("two indexed pages sharing a title or a description are reported with both 
   ]);
 });
 
+test("pages streamed once from a generator are checked for both fields", () => {
+  function* streamed() {
+    yield page("/a/", "Same", "One");
+    yield page("/b/", "Same", "One");
+  }
+  assert.deepEqual(
+    clashes(streamed()).map((clash) => clash.field),
+    ["title", "description"],
+  );
+});
+
 test("the same page in two languages may share a title made only of names", () => {
   assert.deepEqual(clashes([page("/compare/a-vs-b/", "A vs B", "D1"), page("/fr/compare/a-vs-b/", "A vs B", "D2", false, "fr")]), []);
 });
