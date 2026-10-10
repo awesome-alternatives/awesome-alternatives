@@ -2,7 +2,7 @@ use rmcp::model::{Tool, ToolAnnotations};
 use schemars::JsonSchema;
 use serde::Deserialize;
 
-use crate::catalog::Terms;
+use crate::catalog::{DeployMethod, Terms};
 use crate::filters::Filters;
 use crate::window::Window;
 
@@ -62,7 +62,7 @@ impl Name {
         match self {
             Self::FindAlternatives => (
                 "Find open-source alternatives",
-                "Open-source alternatives to a tool or a closed product, such as GitHub Copilot, Jira, Vercel or semantic-release. Give its slug or its name in any case. Each alternative says how well it replaces it (fit: drop-in, full or partial) and what differs, ranked by fit then stars. Narrow with language, license, terms, selfHost, maintained, dropIn and capabilities. An unknown name is an error that lists close matches. Start here when someone wants to replace something.",
+                "Open-source alternatives to a tool or a closed product, such as GitHub Copilot, Jira, Vercel or semantic-release. Give its slug or its name in any case. Each alternative says how well it replaces it (fit: drop-in, full or partial) and what differs, ranked by fit then stars. Narrow with language, license, terms, selfHost, maintained, dropIn, capabilities and deploy. An unknown name is an error that lists close matches. Start here when someone wants to replace something.",
             ),
             Self::GetTool => (
                 "Get one tool",
@@ -70,7 +70,7 @@ impl Name {
             ),
             Self::ListTools => (
                 "List tools by filter",
-                "Catalog tools matching exact filters, the same as GET /v1/tools: replaces, category, language, license, terms, selfHost, maintained, dropIn and capabilities, all optional and combined. Paged with limit and offset; count is how many match in all. Use it to browse a category or a language, or to combine filters precisely. Archived repositories are never listed.",
+                "Catalog tools matching exact filters, the same as GET /v1/tools: replaces, category, language, license, terms, selfHost, maintained, dropIn, capabilities and deploy, all optional and combined. Paged with limit and offset; count is how many match in all. Use it to browse a category or a language, or to combine filters precisely. Archived repositories are never listed.",
             ),
             Self::ListCategories => (
                 "List categories",
@@ -122,6 +122,11 @@ pub struct AlternativesTo {
         description = "Capability keys every alternative must declare, as list_categories lists them, such as ci or container-registry. Alternatives that have only some of them come back in near, with what they miss."
     )]
     pub capabilities: Vec<String>,
+    #[serde(default)]
+    #[schemars(
+        description = "Ways to deploy every alternative must offer: container, compose, helm, binary or package. Alternatives that offer only some of them come back in near, with what they miss."
+    )]
+    pub deploy: Vec<DeployMethod>,
     #[serde(flatten)]
     pub window: Window,
 }
@@ -138,6 +143,7 @@ impl AlternativesTo {
             self_host: self.self_host,
             maintained: self.maintained,
             capabilities: self.capabilities.clone(),
+            deploy: self.deploy.clone(),
         }
     }
 }

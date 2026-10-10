@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 
 use crate::cache::Shared;
-use crate::catalog::Tool;
+use crate::catalog::{DeployMethod, Tool};
 use crate::embedding::{Embedder, Model, Vector};
 use crate::filters::Filters;
 use crate::interpret;
@@ -83,6 +83,7 @@ impl Weight for Filters {
                 .iter()
                 .map(|c| size_of::<String>() + c.len())
                 .sum::<usize>()
+            + self.deploy.len() * size_of::<DeployMethod>()
     }
 }
 
@@ -692,6 +693,39 @@ mod tests {
                 "{slug}"
             );
         }
+    }
+
+    #[tokio::test]
+    async fn a_deployment_word_filters_on_what_the_catalog_declares_for_it() {
+        let loaded = real();
+        let search = Search::new(None, None, CACHE_BYTES, Arc::new(Shared::disabled()));
+        let read = search
+            .interpret("docker compose self hosted url shortener", &loaded)
+            .await;
+        assert_eq!(read.filters.deploy, [DeployMethod::Compose]);
+        assert!(read.filters.self_host);
+        assert!(read.unchecked.is_empty());
+        let selected = read.select(&loaded.catalog.tools);
+        assert!(!selected.is_empty());
+        for tool in selected {
+            assert!(
+                tool.deploy.contains(&DeployMethod::Compose),
+                "{}",
+                tool.slug
+            );
+            assert!(tool.self_host, "{}", tool.slug);
+        }
+    }
+
+    #[tokio::test]
+    async fn the_tool_being_replaced_is_not_a_deployment_requirement() {
+        let loaded = real();
+        let search = Search::new(None, None, CACHE_BYTES, Arc::new(Shared::disabled()));
+        let read = search
+            .interpret("alternatives to kubernetes", &loaded)
+            .await;
+        assert_eq!(read.filters.replaces.as_deref(), Some("kubernetes"));
+        assert!(read.filters.deploy.is_empty());
     }
 
     #[tokio::test]

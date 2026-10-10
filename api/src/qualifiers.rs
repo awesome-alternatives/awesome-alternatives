@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::catalog::Terms;
+use crate::catalog::{DeployMethod, Terms};
 use crate::filters::Filters;
 use crate::lexical::{mentions, normalize};
 use crate::vocabulary::Vocabulary;
@@ -9,7 +9,6 @@ use crate::vocabulary::Vocabulary;
 #[serde(rename_all = "lowercase")]
 pub enum Pending {
     Platform,
-    Deploy,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
@@ -140,20 +139,25 @@ const PLATFORMS: &[(&str, &str)] = &[
     ("raspberry pi", "Raspberry Pi"),
 ];
 
-const DEPLOYMENTS: &[(&str, &str)] = &[
-    ("docker compose", "Docker Compose"),
-    ("docker", "Docker"),
-    ("kubernetes", "Kubernetes"),
-    ("k8s", "Kubernetes"),
-    ("helm", "Helm"),
-    ("single binary", "Single binary"),
-    ("binaire", "Single binary"),
-    ("binario", "Single binary"),
-    ("binärdatei", "Single binary"),
-    ("binário", "Single binary"),
-    ("単一バイナリ", "Single binary"),
-    ("シングルバイナリ", "Single binary"),
-    ("biner", "Single binary"),
+const DEPLOYMENTS: &[(&str, DeployMethod, &str)] = &[
+    ("docker compose", DeployMethod::Compose, "docker compose"),
+    ("compose", DeployMethod::Compose, "docker compose"),
+    ("docker", DeployMethod::Container, "docker"),
+    ("kubernetes", DeployMethod::Helm, "kubernetes"),
+    ("k8s", DeployMethod::Helm, "kubernetes"),
+    ("helm", DeployMethod::Helm, "helm"),
+    ("single binary", DeployMethod::Binary, "single binary"),
+    ("binaire", DeployMethod::Binary, "single binary"),
+    ("binario", DeployMethod::Binary, "single binary"),
+    ("binärdatei", DeployMethod::Binary, "single binary"),
+    ("binário", DeployMethod::Binary, "single binary"),
+    ("単一バイナリ", DeployMethod::Binary, "single binary"),
+    ("シングルバイナリ", DeployMethod::Binary, "single binary"),
+    ("biner", DeployMethod::Binary, "single binary"),
+    ("deb package", DeployMethod::Package, "deb package"),
+    ("rpm package", DeployMethod::Package, "rpm package"),
+    ("os package", DeployMethod::Package, "os package"),
+    ("os packages", DeployMethod::Package, "os package"),
 ];
 
 pub fn apply(query: &str, filters: &mut Filters) -> Vec<Unchecked> {
@@ -165,8 +169,8 @@ pub fn apply(query: &str, filters: &mut Filters) -> Vec<Unchecked> {
     filters.self_host |= said(SELF_HOSTED);
     filters.maintained |= said(MAINTAINED);
     let target = filters.replaces.as_deref().map(normalize);
-    let mut unchecked = pending(&query, Pending::Platform, PLATFORMS);
-    unchecked.extend(pending(&query, Pending::Deploy, DEPLOYMENTS));
+    filters.deploy = deployments(&query, target.as_deref());
+    let mut unchecked = pending(&query, PLATFORMS);
     unchecked.retain(|u| target.as_deref() != Some(normalize(&u.value).as_str()));
     unchecked
 }
@@ -185,27 +189,70 @@ pub fn capabilities(query: &str, vocabulary: &Vocabulary) -> Vec<String> {
 
 pub fn is_requirement(slug: &str) -> bool {
     let label = normalize(slug);
-    PLATFORMS
-        .iter()
-        .chain(DEPLOYMENTS)
-        .any(|(word, _)| normalize(word) == label)
+    requirement_words().any(|word| normalize(word) == label)
 }
 
-fn pending(query: &str, kind: Pending, table: &[(&str, &str)]) -> Vec<Unchecked> {
-    let said: Vec<&(&str, &str)> = table
+fn requirement_words() -> impl Iterator<Item = &'static str> {
+    PLATFORMS
         .iter()
-        .filter(|(word, _)| mentions(query, word))
+        .map(|(word, _)| *word)
+        .chain(DEPLOYMENTS.iter().map(|(word, _, _)| *word))
+}
+
+fn said_outside_longer(query: &str, word: &str, said: &[&str]) -> bool {
+    let rest = said
+        .iter()
+        .filter(|other| **other != word && mentions(&normalize(other), word))
+        .fold(query.to_owned(), |rest, other| {
+            rest.replace(&normalize(other), " ")
+        });
+    mentions(&rest, word)
+}
+
+fn alone<'a>(query: &str, words: impl Iterator<Item = &'a str>) -> Vec<&'a str> {
+    let said: Vec<&str> = words.filter(|word| mentions(query, word)).collect();
+    said.iter()
+        .filter(|word| said_outside_longer(query, word, &said))
+        .copied()
+        .collect()
+}
+
+pub fn is_swallowed(query: &str, name: &str) -> bool {
+    let query = normalize(query);
+    let said: Vec<&str> = requirement_words()
+        .filter(|word| mentions(&query, word))
         .collect();
+    let name = normalize(name);
+    mentions(&query, &name) && !said_outside_longer(&query, &name, &said)
+}
+
+fn pending(query: &str, table: &[(&str, &str)]) -> Vec<Unchecked> {
     let mut out: Vec<Unchecked> = Vec::new();
-    for (word, label) in &said {
-        let inside_longer = said
+    for word in alone(query, table.iter().map(|(word, _)| *word)) {
+        let label = table
             .iter()
-            .any(|(other, _)| other != word && mentions(&normalize(other), word));
-        if !inside_longer && !out.iter().any(|u| u.value == *label) {
+            .find_map(|(w, label)| (*w == word).then_some(*label));
+        if let Some(label) = label
+            && !out.iter().any(|u| u.value == label)
+        {
             out.push(Unchecked {
-                kind,
-                value: (*label).to_owned(),
+                kind: Pending::Platform,
+                value: label.to_owned(),
             });
+        }
+    }
+    out
+}
+
+fn deployments(query: &str, target: Option<&str>) -> Vec<DeployMethod> {
+    let mut out: Vec<DeployMethod> = Vec::new();
+    for word in alone(query, DEPLOYMENTS.iter().map(|(word, _, _)| *word)) {
+        let found = DEPLOYMENTS.iter().find(|(w, _, _)| *w == word);
+        if let Some((_, method, subject)) = found
+            && target != Some(normalize(subject).as_str())
+            && !out.contains(method)
+        {
+            out.push(*method);
         }
     }
     out
@@ -283,28 +330,123 @@ mod tests {
     }
 
     #[test]
-    fn platforms_and_deployments_are_reported_as_unchecked() {
-        let (_, unchecked) = read("runs on linux and arm, deployed with docker compose");
-        assert_eq!(values(&unchecked), ["Linux", "ARM", "Docker Compose"]);
-        assert_eq!(unchecked[0].kind, Pending::Platform);
-        assert_eq!(unchecked[2].kind, Pending::Deploy);
+    fn platforms_are_reported_as_unchecked_and_deployments_are_not() {
+        let (filters, unchecked) = read("runs on linux and arm, deployed with docker compose");
+        assert_eq!(values(&unchecked), ["Linux", "ARM"]);
+        assert!(unchecked.iter().all(|u| u.kind == Pending::Platform));
+        assert_eq!(filters.deploy, [DeployMethod::Compose]);
     }
 
     #[test]
     fn two_words_for_one_platform_report_it_once() {
-        let (_, unchecked) = read("mac or macos, kubernetes or k8s");
-        assert_eq!(values(&unchecked), ["macOS", "Kubernetes"]);
+        let (_, unchecked) = read("mac or macos on raspberry pi");
+        assert_eq!(values(&unchecked), ["macOS", "Raspberry Pi"]);
+    }
+
+    fn deploy_of(query: &str) -> Vec<DeployMethod> {
+        read(query).0.deploy
+    }
+
+    #[test]
+    fn each_deployment_word_names_the_method_it_proves() {
+        assert_eq!(
+            deploy_of("a url shortener in docker"),
+            [DeployMethod::Container]
+        );
+        assert_eq!(
+            deploy_of("docker compose url shortener"),
+            [DeployMethod::Compose]
+        );
+        assert_eq!(deploy_of("compose file wiki"), [DeployMethod::Compose]);
+        for query in ["runs on kubernetes", "k8s ready", "with a helm chart"] {
+            assert_eq!(deploy_of(query), [DeployMethod::Helm], "{query}");
+        }
+        assert_eq!(deploy_of("a single binary wiki"), [DeployMethod::Binary]);
+        assert_eq!(deploy_of("an rpm package"), [DeployMethod::Package]);
+    }
+
+    #[test]
+    fn deployment_words_are_read_in_every_language_the_site_speaks() {
+        for query in [
+            "un wiki en binaire unique",
+            "un wiki como binario",
+            "ein wiki als binärdatei",
+            "um wiki em binário",
+            "単一バイナリのwiki",
+            "シングルバイナリのwiki",
+            "wiki dalam biner tunggal",
+        ] {
+            assert_eq!(deploy_of(query), [DeployMethod::Binary], "{query}");
+        }
+    }
+
+    #[test]
+    fn docker_compose_is_one_requirement_not_two() {
+        assert_eq!(deploy_of("docker compose"), [DeployMethod::Compose]);
+        assert_eq!(
+            deploy_of("docker, docker compose and kubernetes or k8s"),
+            [
+                DeployMethod::Compose,
+                DeployMethod::Container,
+                DeployMethod::Helm
+            ]
+        );
+    }
+
+    #[test]
+    fn a_deployment_word_inside_a_name_is_not_a_requirement() {
+        assert!(deploy_of("dockerfile linter and helmfile and composer").is_empty());
     }
 
     #[test]
     fn the_tool_being_replaced_is_not_also_a_requirement() {
+        for (target, query) in [
+            ("docker", "self-hosted alternative to docker on linux"),
+            ("kubernetes", "alternatives to k8s"),
+            ("kubernetes", "alternatives to kubernetes"),
+            ("docker-compose", "an alternative to docker compose"),
+            ("helm", "an alternative to helm"),
+        ] {
+            let mut filters = Filters {
+                replaces: Some(target.into()),
+                ..Filters::default()
+            };
+            apply(query, &mut filters);
+            assert!(filters.deploy.is_empty(), "{query}");
+        }
+    }
+
+    #[test]
+    fn a_requirement_next_to_a_different_target_still_filters() {
         let mut filters = Filters {
-            replaces: Some("docker".into()),
+            replaces: Some("redis".into()),
             ..Filters::default()
         };
-        let unchecked = apply("self-hosted alternative to docker on linux", &mut filters);
+        let unchecked = apply("alternative to redis for kubernetes on linux", &mut filters);
+        assert_eq!(filters.deploy, [DeployMethod::Helm]);
         assert_eq!(values(&unchecked), ["Linux"]);
-        assert!(filters.self_host);
+    }
+
+    #[test]
+    fn a_platform_target_is_not_reported_as_unchecked() {
+        let mut filters = Filters {
+            replaces: Some("linux".into()),
+            ..Filters::default()
+        };
+        let unchecked = apply("alternative to linux", &mut filters);
+        assert!(unchecked.is_empty());
+    }
+
+    #[test]
+    fn a_name_only_found_inside_a_longer_requirement_is_swallowed() {
+        assert!(is_swallowed("docker compose url shortener", "docker"));
+        assert!(!is_swallowed(
+            "docker compose url shortener",
+            "docker compose"
+        ));
+        assert!(!is_swallowed("docker or docker compose", "docker"));
+        assert!(!is_swallowed("an alternative to docker", "docker"));
+        assert!(!is_swallowed("an alternative to redis", "docker"));
     }
 
     fn forge_words() -> Vocabulary {

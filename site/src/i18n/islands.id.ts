@@ -79,6 +79,13 @@ export const islands: Islands = {
       dropIn: "Hanya drop-in",
       selfHost: "Self-hosted",
       maintained: "Aktif dikelola",
+      deploy: {
+        container: "Image kontainer (Docker)",
+        compose: "File Docker Compose",
+        helm: "Chart Helm untuk Kubernetes",
+        binary: "Biner tunggal",
+        package: "Paket OS",
+      },
     },
     chipsLabel: "Filter yang dibaca dari kueri Anda",
     meets: "Memiliki {list}",

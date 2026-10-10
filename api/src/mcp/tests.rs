@@ -49,6 +49,7 @@ fn catalog() -> Catalog {
     };
     let goreleaser = Tool {
         self_host: true,
+        deploy: vec![crate::catalog::DeployMethod::Binary],
         ..tool(
             "goreleaser",
             "Go",
@@ -363,6 +364,16 @@ async fn the_tool_list_reads_the_same_filters_as_the_http_api() {
     assert_eq!(slugs(&hosted["tools"]), ["goreleaser"]);
     assert_eq!(hosted["limit"], 1);
 
+    let binaries = answer(&app, "list_tools", json!({ "deploy": "binary" })).await;
+    assert_eq!(slugs(&binaries["tools"]), ["goreleaser"]);
+    let found = answer(
+        &app,
+        "find_alternatives",
+        json!({ "tool": "semantic-release", "deploy": ["binary"] }),
+    )
+    .await;
+    assert_eq!(found["count"], 1);
+
     let near = answer(
         &app,
         "list_tools",
@@ -382,6 +393,7 @@ async fn a_filter_value_outside_the_vocabulary_is_a_tool_error_not_a_silent_miss
         json!({ "terms": "Open" }),
         json!({ "limit": -1 }),
         json!({ "selfHost": "yes" }),
+        json!({ "deploy": "snap" }),
     ] {
         let refused = refusal(&app, "list_tools", arguments.clone()).await;
         assert!(

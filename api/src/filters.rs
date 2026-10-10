@@ -1,7 +1,8 @@
 use schemars::JsonSchema;
+use serde::de::value::StrDeserializer;
 use serde::{Deserialize, Deserializer, Serialize};
 
-use crate::catalog::{Fit, Terms, Tool};
+use crate::catalog::{DeployMethod, Fit, Terms, Tool};
 
 #[derive(Debug, Default, Clone, PartialEq, Eq, Deserialize, Serialize, JsonSchema)]
 #[serde(rename_all = "camelCase")]
@@ -46,32 +47,49 @@ pub struct Filters {
         description = "Capability keys every result must declare, as list_categories lists them, such as ci or container-registry. Tools that have only some of them come back in near, with what they miss."
     )]
     pub capabilities: Vec<String>,
+    #[serde(
+        default,
+        skip_serializing_if = "Vec::is_empty",
+        deserialize_with = "list"
+    )]
+    #[schemars(
+        with = "Vec<DeployMethod>",
+        description = "Ways to deploy every result must offer: container, compose, helm, binary or package. A comma list or an array. Tools that offer only some of them come back in near, with what they miss."
+    )]
+    pub deploy: Vec<DeployMethod>,
 }
 
 #[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
 pub struct NearMiss {
     pub tool: Tool,
     pub missing: Vec<String>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub missing_deploy: Vec<DeployMethod>,
 }
 
 pub const NEAR_LIMIT: usize = 10;
 
-fn list<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Vec<String>, D::Error> {
+fn list<'de, D, T>(deserializer: D) -> Result<Vec<T>, D::Error>
+where
+    D: Deserializer<'de>,
+    T: Deserialize<'de>,
+{
     #[derive(Deserialize)]
     #[serde(untagged)]
-    enum Given {
+    enum Given<T> {
         Joined(String),
-        Listed(Vec<String>),
+        Listed(Vec<T>),
     }
-    Ok(match Given::deserialize(deserializer)? {
+    match Given::<T>::deserialize(deserializer)? {
         Given::Joined(text) => text
             .split(',')
             .map(str::trim)
             .filter(|s| !s.is_empty())
-            .map(str::to_owned)
+            .map(|s| T::deserialize(StrDeserializer::<D::Error>::new(s)))
             .collect(),
-        Given::Listed(items) => items,
-    })
+        Given::Listed(items) => Ok(items),
+    }
 }
 
 impl Filters {
@@ -90,6 +108,7 @@ impl Filters {
                     .iter()
                     .all(|c| t.capabilities.contains_key(c))
             })
+            .filter(|t| self.deploy.iter().all(|m| t.deploy.contains(m)))
             .filter(|t| self.replaces.is_none() || self.fit(t).is_some())
             .collect();
         matched.sort_by_key(|t| {
@@ -111,11 +130,13 @@ impl Filters {
     }
 
     pub fn near_misses(&self, tools: &[Tool]) -> Vec<NearMiss> {
-        if self.capabilities.is_empty() {
+        let required = self.capabilities.len() + self.deploy.len();
+        if required == 0 {
             return Vec::new();
         }
         let relaxed = Filters {
             capabilities: Vec::new(),
+            deploy: Vec::new(),
             ..self.clone()
         };
         let mut near: Vec<NearMiss> = relaxed
@@ -128,13 +149,21 @@ impl Filters {
                     .filter(|c| !tool.capabilities.contains_key(*c))
                     .cloned()
                     .collect();
-                (!missing.is_empty() && missing.len() < self.capabilities.len()).then(|| NearMiss {
+                let missing_deploy: Vec<DeployMethod> = self
+                    .deploy
+                    .iter()
+                    .filter(|m| !tool.deploy.contains(m))
+                    .copied()
+                    .collect();
+                let lacking = missing.len() + missing_deploy.len();
+                (lacking > 0 && lacking < required).then(|| NearMiss {
                     tool: tool.clone(),
                     missing,
+                    missing_deploy,
                 })
             })
             .collect();
-        near.sort_by_key(|n| n.missing.len());
+        near.sort_by_key(|n| n.missing.len() + n.missing_deploy.len());
         near.truncate(NEAR_LIMIT);
         near
     }
@@ -168,6 +197,13 @@ fn fit_rank(fit: Fit) -> u8 {
 mod tests {
     use super::*;
     use crate::fixtures::tool;
+
+    fn deployed(slug: &str, methods: &[DeployMethod]) -> Tool {
+        Tool {
+            deploy: methods.to_vec(),
+            ..tool(slug, "Go", "MIT", &[], 1)
+        }
+    }
 
     fn slugs(tools: Vec<&Tool>) -> Vec<&str> {
         tools.into_iter().map(|t| t.slug.as_str()).collect()
@@ -408,6 +444,86 @@ mod tests {
         assert_eq!(near[0].tool.slug, "ci-only");
         assert_eq!(near[0].missing, ["container-registry"]);
         assert!(Filters::default().near_misses(&tools).is_empty());
+    }
+
+    #[test]
+    fn every_requested_deploy_method_must_be_offered() {
+        use DeployMethod::{Binary, Compose, Container, Helm};
+        let tools = [
+            deployed("both", &[Container, Compose, Helm]),
+            deployed("container-only", &[Container]),
+            deployed("undeclared", &[]),
+            deployed("binary", &[Binary]),
+        ];
+        let only = |methods: &[DeployMethod]| {
+            slugs(
+                Filters {
+                    deploy: methods.to_vec(),
+                    ..Filters::default()
+                }
+                .apply(&tools),
+            )
+        };
+        assert_eq!(only(&[Container]), ["both", "container-only"]);
+        assert_eq!(only(&[Container, Helm]), ["both"]);
+        assert!(only(&[Binary, Helm]).is_empty());
+        assert_eq!(only(&[]).len(), 4);
+    }
+
+    #[test]
+    fn a_near_miss_counts_deploy_methods_next_to_capabilities() {
+        use DeployMethod::{Container, Helm};
+        let with_ci = |slug: &str, methods: &[DeployMethod]| Tool {
+            deploy: methods.to_vec(),
+            ..with_capabilities(slug, &["ci"])
+        };
+        let tools = [
+            with_ci("full", &[Container, Helm]),
+            with_ci("no-helm", &[Container]),
+            with_capabilities("no-ci-no-helm", &[]),
+            Tool {
+                deploy: vec![Container, Helm],
+                ..with_capabilities("no-ci", &[])
+            },
+        ];
+        let filters = Filters {
+            capabilities: vec!["ci".into()],
+            deploy: vec![Container, Helm],
+            ..Filters::default()
+        };
+        assert_eq!(slugs(filters.apply(&tools)), ["full"]);
+        let near = filters.near_misses(&tools);
+        let gaps: Vec<_> = near
+            .iter()
+            .map(|n| {
+                (
+                    n.tool.slug.as_str(),
+                    n.missing.clone(),
+                    n.missing_deploy.clone(),
+                )
+            })
+            .collect();
+        assert_eq!(
+            gaps,
+            [
+                ("no-helm", vec![], vec![Helm]),
+                ("no-ci", vec!["ci".to_owned()], vec![]),
+            ]
+        );
+    }
+
+    #[test]
+    fn deploy_reads_from_a_comma_list_or_an_array_and_refuses_an_unknown_method() {
+        let joined: Filters = serde_json::from_str(r#"{"deploy":"container, helm"}"#).unwrap();
+        let listed: Filters = serde_json::from_str(r#"{"deploy":["container","helm"]}"#).unwrap();
+        let expected = [DeployMethod::Container, DeployMethod::Helm];
+        assert_eq!(joined.deploy, expected);
+        assert_eq!(listed.deploy, expected);
+        assert!(serde_json::from_str::<Filters>(r#"{"deploy":"container,snap"}"#).is_err());
+        assert_eq!(
+            serde_json::to_string(&listed).unwrap(),
+            r#"{"dropIn":false,"deploy":["container","helm"]}"#
+        );
     }
 
     #[test]

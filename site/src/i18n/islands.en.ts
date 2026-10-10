@@ -85,6 +85,13 @@ export const islands = {
       dropIn: "Drop-in only",
       selfHost: "Self-hosted",
       maintained: "Maintained",
+      deploy: {
+        container: "Container image (Docker)",
+        compose: "Docker Compose file",
+        helm: "Helm chart for Kubernetes",
+        binary: "Single binary",
+        package: "OS package",
+      },
     },
     chipsLabel: "Filters read from your query",
     meets: "Has {list}",

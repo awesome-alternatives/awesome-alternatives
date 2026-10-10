@@ -3,7 +3,7 @@ import { test } from "node:test";
 
 import { islands } from "../src/i18n/islands.en.ts";
 import { toQuery } from "../src/lib/query.ts";
-import { chips, without } from "../src/lib/chips.ts";
+import { chips, gapLabels, requirementLabels, without } from "../src/lib/chips.ts";
 import { canonicalForTool } from "../src/lib/canonical.ts";
 import { withDeploy } from "../src/lib/catalog.ts";
 import {
@@ -198,6 +198,39 @@ test("chips name the licence terms, maintenance and self-hosting read from the q
   );
 });
 
+test("each deploy method read from the query is a chip of its own that removes only itself", () => {
+  const filters = { replaces: "sr", deploy: ["container" as const, "helm" as const] };
+  const read = chips(filters, islands.search.chips);
+  assert.deepEqual(
+    read.map((c) => [c.key, c.value, c.label]),
+    [
+      ["replaces", undefined, "Replaces sr"],
+      ["deploy", "container", "Container image (Docker)"],
+      ["deploy", "helm", "Helm chart for Kubernetes"],
+    ],
+  );
+  assert.deepEqual(without(filters, "deploy", "helm"), { replaces: "sr", deploy: ["container"] });
+  assert.deepEqual(without({ deploy: ["helm" as const] }, "deploy", "helm"), {});
+});
+
+test("deploy methods are listed with the capabilities a result meets and a near miss lacks", () => {
+  const filters = { capabilities: ["ci"], deploy: ["container" as const, "helm" as const] };
+  const describe = (key: string) => key.toUpperCase();
+  const strings = islands.search.chips;
+  assert.deepEqual(requirementLabels(filters, strings, describe), [
+    "CI",
+    "Container image (Docker)",
+    "Helm chart for Kubernetes",
+  ]);
+  const gap = { missing: [], missingDeploy: ["helm" as const] };
+  assert.deepEqual(requirementLabels(filters, strings, describe, gap), ["CI", "Container image (Docker)"]);
+  assert.deepEqual(gapLabels({ missing: ["ci"], missingDeploy: ["helm"] }, strings, describe), [
+    "CI",
+    "Helm chart for Kubernetes",
+  ]);
+  assert.deepEqual(gapLabels({ missing: [] }, strings, describe), []);
+});
+
 test("maintenance and hosting narrow the list like any other facet", () => {
   const idle = tool("idle", "Rust", [["sr", "full"]]);
   idle.flags = ["inactive"];
@@ -280,6 +313,17 @@ test("drop-in in a search becomes the drop-in fit, and a search without a target
   assert.deepEqual(fromSearch({ replaces: "sr", dropIn: true }).filters.fit, ["drop-in"]);
   assert.equal(alternativesHref({ language: "Rust" }), null);
   assert.equal(alternativesHref({ replaces: "redis" }), "/alternatives/redis/");
+});
+
+test("a search that read deploy methods lands on the alternatives page with them applied", () => {
+  const href = alternativesHref({ replaces: "redis", deploy: ["compose", "binary"] });
+  const { filters } = readListUrl(href?.slice(href.indexOf("?")) ?? "");
+  assert.deepEqual(filters.deploy, ["compose", "binary"]);
+  assert.deepEqual(fromSearch({ replaces: "redis" }).filters.deploy, []);
+});
+
+test("the tools query sends deploy methods as one comma list", () => {
+  assert.equal(toQuery({ deploy: ["container", "helm"] }), "deploy=container%2Chelm");
 });
 
 test("the tools query omits unset filters and a false drop-in", () => {
