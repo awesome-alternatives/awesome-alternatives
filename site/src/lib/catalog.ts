@@ -53,6 +53,10 @@ export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
 );
 
+export const categoryRedirects: Record<string, string> = parse(
+  readFileSync(resolve(ROOT, "data/category-redirects.yaml"), "utf8"),
+);
+
 export const pairs: Pair<EnrichedTool>[] = comparePairs(tools);
 
 export function toolBySlug(slug: string): EnrichedTool | null {

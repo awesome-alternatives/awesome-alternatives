@@ -35,14 +35,20 @@ function bucketSize(keys: readonly string[]): number {
   return size;
 }
 
-export function pairMap(table: ReadonlyMap<string, string>): string {
+function nginxMap(source: string, target: string, table: ReadonlyMap<string, string>): string {
   const entries = [...table].sort(([one], [other]) => one.localeCompare(other));
-  return [
-    `map_hash_bucket_size ${bucketSize([...table.keys()])};`,
-    "map $compare_pair $compare_canonical {",
-    `    default "";`,
-    ...entries.map(([reversed, canonical]) => `    ${reversed} ${canonical};`),
-    "}",
-    "",
-  ].join("\n");
+  return [`map $${source} $${target} {`, `    default "";`, ...entries.map(([from, to]) => `    ${from} ${to};`), "}", ""].join("\n");
+}
+
+export function pairMap(table: ReadonlyMap<string, string>): string {
+  return nginxMap("compare_pair", "compare_canonical", table);
+}
+
+export function categoryMap(redirects: Readonly<Record<string, string>>): string {
+  return nginxMap("category_slug", "category_target", new Map(Object.entries(redirects)));
+}
+
+export function redirectMaps(pairs: ReadonlyMap<string, string>, categories: Readonly<Record<string, string>>): string {
+  const keys = [...pairs.keys(), ...Object.keys(categories)];
+  return [`map_hash_bucket_size ${bucketSize(keys)};`, pairMap(pairs), categoryMap(categories)].join("\n");
 }
