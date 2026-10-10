@@ -310,11 +310,9 @@ export const es: Messages = {
     title: "No encontrado",
     description: "Esta página no está en el catálogo.",
     heading: "No está en el catálogo",
-    ledeBefore: "En esta dirección no hay nada. ",
-    ledeSearch: "Busca en el catálogo",
-    ledeBetween: ", o ",
-    ledeAdd: "añade la herramienta",
-    ledeAfter: " que buscabas.",
+    lede: "En esta dirección no hay nada. Busca la herramienta que querías o empieza por una de las listas de abajo.",
+    browseLabel: "Empezar por una lista",
+    didYouMean: "Quizá querías decir",
   },
 
   banned: {

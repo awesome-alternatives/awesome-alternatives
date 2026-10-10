@@ -308,11 +308,9 @@ export const de: Messages = {
     title: "Nicht gefunden",
     description: "Diese Seite steht nicht im Katalog.",
     heading: "Nicht im Katalog",
-    ledeBefore: "Unter dieser Adresse liegt nichts. ",
-    ledeSearch: "Den Katalog durchsuchen",
-    ledeBetween: " oder ",
-    ledeAdd: "das gesuchte Tool eintragen",
-    ledeAfter: ".",
+    lede: "Unter dieser Adresse liegt nichts. Suche das gesuchte Tool oder beginne mit einer der Listen unten.",
+    browseLabel: "Mit einer Liste beginnen",
+    didYouMean: "Meintest du",
   },
 
   banned: {

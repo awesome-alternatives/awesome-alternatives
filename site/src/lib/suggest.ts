@@ -44,29 +44,25 @@ export function suggest(
 ): Suggestion[] {
   const needle = normalise(query);
   if (!needle) return [];
-  const targets = new Set(index.targets);
-  const nameOf = new Map(index.tools.map((tool) => [tool.slug, tool.name]));
-
-  const scored = index.tools
+  const ranked = index.tools
     .map((entry) => ({ entry, score: rank(entry, needle) }))
     .filter(({ score }) => score >= 0)
-    .sort((a, b) => a.score - b.score || a.entry.name.localeCompare(b.entry.name));
+    .sort((a, b) => a.score - b.score || a.entry.name.localeCompare(b.entry.name))
+    .map(({ entry }) => entry);
+  return toSuggestions(index, ranked.slice(0, limit), alternativesTo);
+}
 
-  const out: Suggestion[] = [];
-  for (const { entry } of scored) {
-    if (targets.has(entry.slug)) {
-      out.push({
-        kind: "target",
-        slug: entry.slug,
-        name: alternativesTo(nameOf.get(entry.slug) ?? entry.slug),
-        detail: entry.category,
-      });
-    } else {
-      out.push({ kind: "tool", slug: entry.slug, name: entry.name, detail: entry.category });
-    }
-    if (out.length === limit) break;
-  }
-  return out;
+export function toSuggestions(
+  index: SuggestIndex,
+  entries: IndexEntry[],
+  alternativesTo: (name: string) => string,
+): Suggestion[] {
+  const targets = new Set(index.targets);
+  return entries.map((entry) =>
+    targets.has(entry.slug)
+      ? { kind: "target", slug: entry.slug, name: alternativesTo(entry.name), detail: entry.category }
+      : { kind: "tool", slug: entry.slug, name: entry.name, detail: entry.category },
+  );
 }
 
 export function href(suggestion: Suggestion): string {

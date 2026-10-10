@@ -307,11 +307,9 @@ export const id: Messages = {
     title: "Tidak ditemukan",
     description: "Halaman ini tidak ada di katalog.",
     heading: "Tidak ada di katalog",
-    ledeBefore: "Tidak ada apa pun di alamat ini. ",
-    ledeSearch: "Cari di katalog",
-    ledeBetween: ", atau ",
-    ledeAdd: "tambahkan alat",
-    ledeAfter: " yang Anda cari.",
+    lede: "Tidak ada apa pun di alamat ini. Cari alat yang Anda maksud, atau mulai dari salah satu daftar di bawah.",
+    browseLabel: "Mulai dari daftar",
+    didYouMean: "Maksud Anda",
   },
 
   banned: {

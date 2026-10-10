@@ -307,11 +307,9 @@ export const fr: Messages = {
     title: "Introuvable",
     description: "Cette page n'est pas dans le catalogue.",
     heading: "Pas dans le catalogue",
-    ledeBefore: "Rien à cette adresse. ",
-    ledeSearch: "Cherchez dans le catalogue",
-    ledeBetween: ", ou ",
-    ledeAdd: "ajoutez l'outil",
-    ledeAfter: " que vous cherchiez.",
+    lede: "Rien à cette adresse. Cherchez l'outil que vous vouliez, ou partez d'une des listes ci-dessous.",
+    browseLabel: "Partir d'une liste",
+    didYouMean: "Vouliez-vous dire",
   },
 
   banned: {

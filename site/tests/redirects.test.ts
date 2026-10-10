@@ -95,3 +95,29 @@ test("the location catches a comparison URL in every locale, and catches nothing
   assert.equal(pattern.test("/tools/kitty/"), false);
   assert.equal(pattern.test("/alternatives/kitty/"), false);
 });
+
+function notFoundMap(): { fallback: string; pattern: RegExp; target: string } {
+  const block = nginx.match(/map \$uri \$not_found_page \{([^}]*)\}/)?.[1];
+  assert.ok(block, "nginx.conf maps the request to its not-found page");
+  const fallback = block.match(/default (\S+);/)?.[1];
+  const rule = block.match(/~(\S+) (\S+);/);
+  assert.ok(fallback && rule);
+  return { fallback, pattern: new RegExp(rule[1]), target: rule[2] };
+}
+
+test("a missing page under a locale is answered with that locale's own 404 page", () => {
+  const { pattern, target } = notFoundMap();
+  for (const locale of LOCALES.filter((one) => one !== DEFAULT_LOCALE)) {
+    const groups = pattern.exec(`/${locale}/tools/nope/`)?.groups;
+    assert.equal(target.replace("$not_found_locale", groups?.not_found_locale ?? ""), `${locale}/404/`);
+  }
+});
+
+test("every other missing page gets the root 404, which the error_page serves from the site root", () => {
+  const { fallback, pattern } = notFoundMap();
+  assert.equal(fallback, "404.html");
+  for (const path of ["/tools/nope/", "/it/tools/nope/", "/tools/fr/", "/fr", "/frog/"]) {
+    assert.equal(pattern.test(path), false, path);
+  }
+  assert.match(nginx, /error_page 403 404 =404 \/\$not_found_page;/);
+});
