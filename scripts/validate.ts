@@ -39,7 +39,7 @@ const migrations = await mapLimit(
   async (tool) => [...(await checkMigrations(tool)), ...(await checkCapabilityDocs(tool))],
 );
 const pages = await checkMigrationPages(root, catalog.tools);
-const benchmarks = await checkBenchmarks(root, catalog.tools, now);
+const benchmarks = await checkBenchmarks(root, catalog.tools, now, fetch, process.env.GITHUB_TOKEN);
 const all = [...findings, ...pages, ...benchmarks, ...remote.flat(), ...homepages.flat(), ...migrations.flat()];
 
 const report = renderFindings(all, targets);

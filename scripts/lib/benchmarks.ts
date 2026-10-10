@@ -78,6 +78,7 @@ export async function checkBenchmarks(
   tools: readonly Related[],
   now: Date,
   fetchImpl: typeof fetch = fetch,
+  token?: string,
 ): Promise<Finding[]> {
   const dir = join(root, "data", "benchmarks");
   let files: string[];
@@ -95,7 +96,7 @@ export async function checkBenchmarks(
       const found = checkBenchmarkFile(file, text, tools, now);
       if (found.length > 0) return found;
       const { benchmarks } = parse(text) as { benchmarks: Benchmark[] };
-      const links = await Promise.all(benchmarks.map((b) => unreachable(b.url, fetchImpl)));
+      const links = await Promise.all(benchmarks.map((b) => unreachable(b.url, fetchImpl, undefined, token)));
       return links.flatMap((problem): Finding[] =>
         problem ? [{ slug: file, severity: "error", code: "benchmark-unreachable", message: problem }] : [],
       );

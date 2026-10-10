@@ -14,11 +14,34 @@ function transient(status: number): boolean {
   return status === 429 || status >= 500;
 }
 
+const GITHUB_BLOB = /^https:\/\/github\.com\/([A-Za-z0-9-]+)\/([A-Za-z0-9._-]+)\/blob\/([^/#?]+)\/([^#?]+)/;
+
+export function githubContentsApi(url: string): string | null {
+  const match = GITHUB_BLOB.exec(url);
+  return match ? `https://api.github.com/repos/${match[1]}/${match[2]}/contents/${match[4]}?ref=${match[3]}` : null;
+}
+
+async function confirmedByApi(api: string, token: string, fetchImpl: typeof fetch): Promise<boolean> {
+  try {
+    const res = await fetchImpl(api, {
+      headers: { "user-agent": USER_AGENT, accept: "application/vnd.github+json", authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    await res.body?.cancel();
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 export async function unreachable(
   url: string,
   fetchImpl: typeof fetch = fetch,
   wait: (ms: number) => Promise<void> = pause,
+  token?: string,
 ): Promise<string | null> {
+  const api = token ? githubContentsApi(url) : null;
+  if (api && token && (await confirmedByApi(api, token, fetchImpl))) return null;
   let problem = "";
   for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
     try {
