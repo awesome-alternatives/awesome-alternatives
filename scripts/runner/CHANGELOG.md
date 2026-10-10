@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.13.0] - 2026-10-10
+
+### Features
+
+- feat(freshness): turn the run red and mention people while the catalog is stale (#421)
+
 ## [0.12.3] - 2026-10-10
 
 ### Bug Fixes

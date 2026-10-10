@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.133.0] - 2026-10-10
+
+### Features
+
+- feat(freshness): turn the run red and mention people while the catalog is stale (#421)
+
 ## [0.132.1] - 2026-10-10
 
 ### Bug Fixes
