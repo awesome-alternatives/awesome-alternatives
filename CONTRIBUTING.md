@@ -277,7 +277,8 @@ entry up to date from your repository, see [the maintainer file](#the-maintainer
 
 Installing the [awesome-alternatives GitHub App](https://github.com/apps/awesome-alternatives) on
 the repository verifies every entry listed from it as well, without a file: installing an app on a
-repository takes admin rights on it. The app only reads the repository's contents. Either way is
+repository takes admin rights on it. The app asks for read access to the repository's contents and
+metadata, nothing more: the app that writes to this catalog is a separate private one. Either way is
 enough, and a repository can do both. A suspended installation does not count.
 
 A file also gives the verification a date: that of the last commit on the default branch that
@@ -580,8 +581,10 @@ DATABASE_URL=postgres://... pnpm backfill-facts
 The image built from [`scripts/runner/Dockerfile`](scripts/runner/Dockerfile) runs the nightly
 refresh in the cluster. It clones `REPOSITORY` (default `awesome-alternatives/awesome-alternatives`)
 into `WORK_DIR` (default `/work`) and refreshes with an installation token of the app (`APP_ID`,
-`APP_PRIVATE_KEY`) limited to reading contents. Only then does it mint a second token from the same
-app, with Contents: write on this repository alone, and hands it to the push. Commits are authored
+`APP_PRIVATE_KEY`) limited to reading contents. Only then does it mint a second token, from the
+private app that is installed on this repository alone (`WRITE_APP_ID`, `WRITE_APP_PRIVATE_KEY`, the
+same app as the API's dispatch app; `APP_ID` is used until they are set), with Contents: write on
+this repository alone, and hands it to the push. The refresh process itself never sees the write key. Commits are authored
 as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, the app's bot user, falling back to
 `github-actions[bot]`. Given `backfill` as its argument, it clones the same way and runs the
 backfill instead.

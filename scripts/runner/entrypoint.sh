@@ -29,7 +29,7 @@ git clone --quiet "https://github.com/$repository.git" "$checkout"
 cd "$checkout"
 
 if [ "$command" = backfill ]; then
-  exec env -u APP_PRIVATE_KEY node "$app/scripts/backfill-facts.ts"
+  exec env -u APP_PRIVATE_KEY -u WRITE_APP_PRIVATE_KEY node "$app/scripts/backfill-facts.ts"
 fi
 
 drafted="$workdir/drafted-message"
@@ -38,7 +38,7 @@ patch="$workdir/maintainer-values.patch"
 rm -f "$drafted" "$message" "$patch"
 
 status=0
-REFRESH_COMMIT_MESSAGE="$drafted" node "$app/scripts/refresh.ts" || status=$?
+REFRESH_COMMIT_MESSAGE="$drafted" env -u WRITE_APP_PRIVATE_KEY node "$app/scripts/refresh.ts" || status=$?
 if [ "$status" -ne 0 ] && [ "$status" -ne "$record_failed" ]; then
   exit "$status"
 fi

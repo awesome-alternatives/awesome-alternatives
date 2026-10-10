@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { generateKeyPairSync, verify } from "node:crypto";
 import { describe, it } from "node:test";
-import { appJwt, createInstallations, installationsFromEnv, installationToken, isInstalledOn, isMaintainerVerified } from "../scripts/lib/app.ts";
+import { appCredentials, appJwt, createInstallations, installationsFromEnv, installationToken, isInstalledOn, isMaintainerVerified } from "../scripts/lib/app.ts";
 
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 const pem = privateKey.export({ type: "pkcs8", format: "pem" }).toString();
@@ -124,6 +124,25 @@ describe("installationsFromEnv", () => {
     assert.equal(installationsFromEnv({}), null);
     assert.equal(installationsFromEnv({ APP_ID: "42" }), null);
     assert.notEqual(installationsFromEnv({ APP_ID: "42", APP_PRIVATE_KEY: pem }), null);
+  });
+});
+
+describe("appCredentials", () => {
+  const env = { APP_ID: "1", APP_PRIVATE_KEY: "read-key", WRITE_APP_ID: "2", WRITE_APP_PRIVATE_KEY: "write-key" };
+
+  it("reads with the public app and writes with the private one", () => {
+    assert.deepEqual(appCredentials("read", env), { appId: "1", privateKey: "read-key" });
+    assert.deepEqual(appCredentials("write", env), { appId: "2", privateKey: "write-key" });
+  });
+
+  it("falls back to the one app until a writer is configured", () => {
+    const { WRITE_APP_ID: _id, WRITE_APP_PRIVATE_KEY: _key, ...single } = env;
+    assert.deepEqual(appCredentials("write", single), { appId: "1", privateKey: "read-key" });
+  });
+
+  it("does not write with half a pair, and has nothing without a key", () => {
+    assert.deepEqual(appCredentials("write", { ...env, WRITE_APP_PRIVATE_KEY: "" }), { appId: "1", privateKey: "read-key" });
+    assert.equal(appCredentials("read", { WRITE_APP_ID: "2", WRITE_APP_PRIVATE_KEY: "write-key" }), null);
   });
 });
 

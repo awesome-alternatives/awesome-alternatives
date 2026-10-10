@@ -327,7 +327,8 @@ the dispatch went out, and is cleared when it failed, so a lost answer never hol
 with nothing sent.
 
 The dispatch is made by a second GitHub App, private and installed only on this repository with
-`Actions: write`, so the public app never holds more than read access to anyone's repository. The
+`Actions: write` and `Contents: write` (the nightly runner pushes the catalog with it), so the
+public app never holds more than read access to anyone's repository. The
 API signs an app JWT with `DISPATCH_PRIVATE_KEY`, looks up the installation on
 `DISPATCH_REPOSITORY` once, and asks for an installation token scoped to that one repository and
 `actions: write`, which it reuses until 5 minutes before it expires and replaces at once if GitHub
