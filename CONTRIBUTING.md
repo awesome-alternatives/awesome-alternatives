@@ -210,6 +210,9 @@ Blocking:
 - a closed product is replaced by at least one tool, and its slug is not also a tool
 - `deploy` is only set on a tool whose category is `selfHost`
 
+There is no star or popularity threshold beyond that: a young or small tool is accepted when it
+passes these checks, and its page shows the stars, releases and activity so readers can judge it.
+
 Reviewed by a maintainer before merge, without blocking:
 
 - the repository was renamed or moved
