@@ -28,19 +28,21 @@ export function metaOf(path: string, html: string): PageMeta {
   };
 }
 
-export function clashes(pages: readonly PageMeta[]): Clash[] {
-  const out: Clash[] = [];
-  for (const field of ["title", "description"] as const) {
-    const byValue = new Map<string, string[]>();
-    for (const page of pages) {
-      if (page.noindex) continue;
+const FIELDS = ["title", "description"] as const;
+
+export function clashes(pages: Iterable<PageMeta>): Clash[] {
+  const seen = { title: new Map<string, string[]>(), description: new Map<string, string[]>() };
+  for (const page of pages) {
+    if (page.noindex) continue;
+    for (const field of FIELDS) {
       const key = JSON.stringify([page.lang, page[field]]);
-      byValue.set(key, [...(byValue.get(key) ?? []), page.path]);
-    }
-    for (const [key, paths] of byValue) {
-      const [lang, value] = JSON.parse(key) as [string, string];
-      if (paths.length > 1) out.push({ field, lang, value, paths });
+      seen[field].set(key, [...(seen[field].get(key) ?? []), page.path]);
     }
   }
-  return out;
+  return FIELDS.flatMap((field) =>
+    [...seen[field]].flatMap(([key, paths]) => {
+      const [lang, value] = JSON.parse(key) as [string, string];
+      return paths.length > 1 ? [{ field, lang, value, paths }] : [];
+    }),
+  );
 }
