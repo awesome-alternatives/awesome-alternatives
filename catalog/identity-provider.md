@@ -25,5 +25,6 @@ Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP.
 | [Rauthy](https://github.com/sebadob/rauthy) | Rust | Apache-2.0 | [v0.37.1](https://github.com/sebadob/rauthy/releases/tag/v0.37.1) signed | 1365 | Okta (partial) |
 | [SimpleSAMLphp](https://github.com/simplesamlphp/simplesamlphp) | PHP | LGPL-2.1 | [v2.5.3.1](https://github.com/simplesamlphp/simplesamlphp/releases/tag/v2.5.3.1) | 1143 | Keycloak (partial) |
 | [Janssen](https://github.com/JanssenProject/jans) | Java | Apache-2.0 | [v2.5.0](https://github.com/JanssenProject/jans/releases/tag/v2.5.0) | 652 | Okta (partial) |
+| [Zen IdP](https://github.com/varavelio/zen-idp) | Go | MIT | [v0.1.0](https://github.com/varavelio/zen-idp/releases/tag/v0.1.0) | 15 | Okta (partial), Keycloak (partial), Pocket ID (partial) |
 
 [All categories](../README.md#catalog)

@@ -3949,5 +3949,6 @@
   {"type":"added","slug":"yt-dlp","at":"2026-10-10T08:29:50.981Z","commit":null},
   {"type":"added","slug":"zen-browser","at":"2026-10-10T08:29:50.981Z","commit":null},
   {"type":"added","slug":"zookeeper","at":"2026-10-10T08:29:50.981Z","commit":null},
-  {"type":"added","slug":"zstd","at":"2026-10-10T08:29:50.981Z","commit":null}
+  {"type":"added","slug":"zstd","at":"2026-10-10T08:29:50.981Z","commit":null},
+  {"type":"added","slug":"zen-idp","at":"2026-10-10T10:27:49.996Z","commit":null}
 ]

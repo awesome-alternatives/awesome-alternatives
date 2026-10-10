@@ -161,7 +161,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Workflow automation](catalog/workflow-automation.md) | 6 | Connect apps and APIs with trigger-and-action workflows. |
 | [GitOps](catalog/gitops.md) | 6 | Keep Kubernetes clusters in sync with manifests stored in git. |
 | [Container registries](catalog/container-registry.md) | 8 | Store and serve OCI images and artefacts. |
-| [Identity providers](catalog/identity-provider.md) | 21 | Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP. |
+| [Identity providers](catalog/identity-provider.md) | 22 | Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP. |
 | [Mesh VPNs](catalog/mesh-vpn.md) | 10 | Connect devices and servers in a private WireGuard network, wherever they are. |
 | [Remote desktop](catalog/remote-desktop.md) | 9 | Control another computer over the network, for support or remote work. |
 | [Wikis and knowledge bases](catalog/knowledge-base.md) | 18 | Shared pages and documentation for teams, edited in the browser. |

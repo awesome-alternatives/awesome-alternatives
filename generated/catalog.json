@@ -1,8 +1,8 @@
 {
   "stats": {
-    "tools": 2749,
+    "tools": 2750,
     "categories": 389,
-    "targets": 921,
+    "targets": 922,
     "verified": 3
   },
   "checkedAt": "2026-10-10T08:29:50.981Z",
@@ -19606,6 +19606,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "varavelio": {
+      "login": "varavelio",
+      "kind": "organization",
+      "name": "Varavel",
+      "bio": null,
+      "website": "https://varavel.com",
+      "url": "https://github.com/varavelio"
     }
   },
   "tools": [
@@ -331169,6 +331177,144 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "zen-idp",
+      "name": "Zen IdP",
+      "repository": "https://github.com/varavelio/zen-idp",
+      "category": "identity-provider",
+      "replaces": [
+        {
+          "tool": "okta",
+          "fit": "partial",
+          "note": "OIDC sign-in with TOTP for users defined in YAML; its README documents no SAML, social login or directory sync."
+        },
+        {
+          "tool": "keycloak",
+          "fit": "partial",
+          "note": "OIDC provider configured from YAML files with TOTP login and one SQLite file; no realms, federation or SAML documented."
+        },
+        {
+          "tool": "pocket-id",
+          "fit": "partial",
+          "note": "Same single-binary self-hosted OIDC idea, with users and clients in YAML and TOTP instead of passkeys."
+        }
+      ],
+      "affiliation": "Suggested by its maintainers.",
+      "path": null,
+      "addedAt": "2026-10-10T10:26:49.000Z",
+      "editedAt": "2026-10-10T10:26:49.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "varavelio/zen-idp",
+        "description": "Declarative, zero-maintenance OIDC Identity Provider",
+        "homepage": "https://zen-idp.varavel.com",
+        "language": "Go",
+        "license": "MIT",
+        "stars": 15,
+        "forks": 0,
+        "topics": [
+          "authentication",
+          "idp",
+          "oidc",
+          "oidc-server",
+          "single-sign-on",
+          "sso",
+          "varavel"
+        ],
+        "databaseId": 1309395217,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-07-23T01:11:00Z",
+        "pushedAt": "2026-08-19T02:47:43Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-10",
+        "stars": [15]
+      },
+      "release": {
+        "tag": "v0.1.0",
+        "publishedAt": "2026-08-16T04:47:32Z",
+        "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.1.0",
+          "name": null,
+          "publishedAt": "2026-08-16T04:47:32Z",
+          "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.0-alpha.7",
+          "name": null,
+          "publishedAt": "2026-08-16T02:11:04Z",
+          "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0-alpha.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.0-alpha.6",
+          "name": null,
+          "publishedAt": "2026-08-15T06:46:37Z",
+          "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0-alpha.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.0-alpha.5",
+          "name": null,
+          "publishedAt": "2026-08-15T06:25:18Z",
+          "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0-alpha.5",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.0-alpha.4",
+          "name": null,
+          "publishedAt": "2026-08-15T06:06:10Z",
+          "url": "https://github.com/varavelio/zen-idp/releases/tag/v0.1.0-alpha.4",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary"
+      ]
     },
     {
       "slug": "zenith",
