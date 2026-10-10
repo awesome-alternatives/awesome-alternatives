@@ -1,3 +1,4 @@
+import { mentionLine } from "./freshness-notify.ts";
 import { hoursBetween, type MainCatalog, type Problem, type Served, type Surface, type Thresholds } from "./freshness.ts";
 
 export interface Report {
@@ -10,6 +11,7 @@ export interface Report {
   siteUrl: string;
   apiUrl: string;
   runUrl: string | null;
+  notify: readonly string[];
 }
 
 const NAMES: Record<Surface, string> = { site: "The site", api: "The API" };
@@ -85,18 +87,22 @@ function footer(report: Report): string[] {
   ];
 }
 
-export function openingBody(report: Report): string {
+function details(report: Report): string[] {
   return [
     ...report.problems.map((problem) => `- ${sentence(problem, report)}`),
     "",
     ...measurements(report),
     "",
     ...footer(report),
-  ].join("\n");
+  ];
+}
+
+export function openingBody(report: Report): string {
+  return [...mentionLine(report.notify), ...details(report)].join("\n");
 }
 
 export function stillStaleBody(report: Report): string {
-  return `Still not fresh:\n\n${openingBody(report)}`;
+  return [...mentionLine(report.notify), "Still not fresh:", "", ...details(report)].join("\n");
 }
 
 export function recoveryBody(report: Report): string {

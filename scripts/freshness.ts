@@ -1,4 +1,5 @@
-import { type Action, planAction, probeSlug, problemsOf, servedBy, STALE_LABEL, thresholdsFrom } from "./lib/freshness.ts";
+import { type Action, exitCodeOf, planAction, probeSlug, problemsOf, servedBy, STALE_LABEL, thresholdsFrom } from "./lib/freshness.ts";
+import { loginsFrom } from "./lib/freshness-notify.ts";
 import { createIssueWriter, findOpenIssue, type IssueWriter } from "./lib/freshness-issues.ts";
 import { openingBody, recoveryBody, type Report, stillStaleBody, titleOf } from "./lib/freshness-report.ts";
 import { RETRY, readApi, readMain, readSite } from "./lib/freshness-sources.ts";
@@ -23,7 +24,18 @@ const [site, api] = await Promise.all([
 const now = new Date();
 const served = { site: servedBy(site, main), api: servedBy(api, main) };
 const problems = problemsOf(now, main, served, thresholds);
-const report: Report = { now, main, served, problems, thresholds, repository, siteUrl, apiUrl, runUrl };
+const report: Report = {
+  now,
+  main,
+  served,
+  problems,
+  thresholds,
+  repository,
+  siteUrl,
+  apiUrl,
+  runUrl,
+  notify: loginsFrom(process.env.FRESHNESS_NOTIFY),
+};
 
 console.log(`main: read from GitHub at ${main.checkedAt}, committed at ${main.committedAt} in ${main.sha}`);
 console.log(`site: ${JSON.stringify(served.site)}`);
@@ -66,4 +78,5 @@ console.log(`${dryRun ? "dry run, would" : "will"} ${describe(action)}`);
 if (!dryRun) {
   if (!token) throw new Error("GITHUB_TOKEN is required to open or update the issue, or pass --dry-run");
   await apply(action, createIssueWriter(repository, token));
+  process.exitCode = exitCodeOf(problems);
 }
