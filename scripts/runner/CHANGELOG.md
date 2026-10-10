@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.12.2] - 2026-10-10
+
+### Bug Fixes
+
+- fix(validate): retry transient link failures and limit benchmark concurrency (#419)
+
 ## [0.12.1] - 2026-10-10
 
 ### Bug Fixes
