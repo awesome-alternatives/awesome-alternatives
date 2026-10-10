@@ -4,7 +4,7 @@ Run functions and scale-to-zero services on your own cluster, triggered by HTTP 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenFaaS](https://github.com/openfaas/faas) | Go | Other | [0.27.13](https://github.com/openfaas/faas/releases/tag/0.27.13) | 26242 | AWS Lambda (partial) |
+| [OpenFaaS](https://github.com/openfaas/faas) | Go | Other | [0.27.13](https://github.com/openfaas/faas/releases/tag/0.27.13) | 26244 | AWS Lambda (partial) |
 | [Fission](https://github.com/fission/fission) | Go | Apache-2.0 | [v1.27.0](https://github.com/fission/fission/releases/tag/v1.27.0) signed | 8930 | AWS Lambda (full) |
 | [Apache OpenWhisk](https://github.com/apache/openwhisk) | Scala | Apache-2.0 | [2.0.0](https://github.com/apache/openwhisk/releases/tag/2.0.0) signed | 6802 | AWS Lambda (full) |
 | [Spin](https://github.com/spinframework/spin) | Rust | Apache-2.0 | [v4.2.2](https://github.com/spinframework/spin/releases/tag/v4.2.2) signed | 6526 | AWS Lambda (partial) |

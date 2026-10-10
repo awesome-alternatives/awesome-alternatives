@@ -4,7 +4,7 @@ Run continuous queries, joins and aggregations over event streams.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Apache Flink](https://github.com/apache/flink) | Java | Apache-2.0 | [release-2.3.0](https://github.com/apache/flink/releases/tag/release-2.3.0) | 26395 | Amazon Managed Service for Apache Flink (full), Google Cloud Dataflow (partial) |
+| [Apache Flink](https://github.com/apache/flink) | Java | Apache-2.0 | [release-2.3.0](https://github.com/apache/flink/releases/tag/release-2.3.0) | 26397 | Amazon Managed Service for Apache Flink (full), Google Cloud Dataflow (partial) |
 | [RisingWave](https://github.com/risingwavelabs/risingwave) | Rust | Apache-2.0 | [v3.1.0](https://github.com/risingwavelabs/risingwave/releases/tag/v3.1.0) signed | 9365 | ksqlDB (partial), Amazon Managed Service for Apache Flink (partial) |
 | [Apache Storm](https://github.com/apache/storm) | Java | Apache-2.0 | [v3.1.0](https://github.com/apache/storm/releases/tag/v3.1.0) | 6694 | Google Cloud Dataflow (partial) |
 | [Hazelcast](https://github.com/hazelcast/hazelcast) | Java | Other | [v5.7.0](https://github.com/hazelcast/hazelcast/releases/tag/v5.7.0) | 6618 | Amazon Managed Service for Apache Flink (partial) |

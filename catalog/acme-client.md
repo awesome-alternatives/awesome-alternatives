@@ -4,7 +4,7 @@ Request and renew TLS certificates over ACME from Let's Encrypt or another ACME 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [acme.sh](https://github.com/acmesh-official/acme.sh) | Shell | GPL-3.0 | [3.1.6](https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6) signed | 47802 | Certbot (full) |
+| [acme.sh](https://github.com/acmesh-official/acme.sh) | Shell | GPL-3.0 | [3.1.6](https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6) signed | 47804 | Certbot (full) |
 | [Certbot](https://github.com/certbot/certbot) | Python | Other | [v5.8.0](https://github.com/certbot/certbot/releases/tag/v5.8.0) | 33262 | none |
 | [cert-manager](https://github.com/cert-manager/cert-manager) | Go | Apache-2.0 | [v1.21.2](https://github.com/cert-manager/cert-manager/releases/tag/v1.21.2) signed | 14106 | Certbot (partial) |
 | [lego](https://github.com/go-acme/lego) | Go | MIT | [v5.5.2](https://github.com/go-acme/lego/releases/tag/v5.5.2) signed | 9921 | Certbot (full), acme.sh (full) |

@@ -4,9 +4,9 @@ Serve trained machine learning models behind an API, with batching, scaling and 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Triton Inference Server](https://github.com/triton-inference-server/server) | Python | BSD-3-Clause | [v2.73.0](https://github.com/triton-inference-server/server/releases/tag/v2.73.0) signed | 11064 | Amazon SageMaker (partial) |
-| [BentoML](https://github.com/bentoml/BentoML) | Python | Apache-2.0 | [v1.4.39](https://github.com/bentoml/BentoML/releases/tag/v1.4.39) signed | 8893 | Amazon SageMaker (partial) |
-| [KServe](https://github.com/kserve/kserve) | Go | Apache-2.0 | [v0.21.0](https://github.com/kserve/kserve/releases/tag/v0.21.0) signed | 6096 | Amazon SageMaker (partial) |
+| [Triton Inference Server](https://github.com/triton-inference-server/server) | Python | BSD-3-Clause | [v2.73.0](https://github.com/triton-inference-server/server/releases/tag/v2.73.0) signed | 11066 | Amazon SageMaker (partial) |
+| [BentoML](https://github.com/bentoml/BentoML) | Python | Apache-2.0 | [v1.4.39](https://github.com/bentoml/BentoML/releases/tag/v1.4.39) signed | 8894 | Amazon SageMaker (partial) |
+| [KServe](https://github.com/kserve/kserve) | Go | Apache-2.0 | [v0.21.0](https://github.com/kserve/kserve/releases/tag/v0.21.0) signed | 6098 | Amazon SageMaker (partial) |
 | [MLServer](https://github.com/SeldonIO/MLServer) | Python | Apache-2.0 | [1.7.1](https://github.com/SeldonIO/MLServer/releases/tag/1.7.1) | 901 | Amazon SageMaker (partial) |
 
 [All categories](../README.md#catalog)
