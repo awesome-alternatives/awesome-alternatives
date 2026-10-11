@@ -1,0 +1,7 @@
+name: Hedgewars
+repository: https://github.com/hedgewars/hw
+category: puzzle-game
+replaces:
+  - tool: worms
+    fit: partial
+    note: Turn-based strategy game where teams of up to 8 hedgehogs fight with over 40 weapons.

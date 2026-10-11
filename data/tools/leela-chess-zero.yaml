@@ -1,0 +1,7 @@
+name: Leela Chess Zero
+repository: https://github.com/LeelaChessZero/lc0
+category: chess-engine
+replaces:
+  - tool: fritz
+    fit: partial
+    note: Neural network chess engine with GPU acceleration; engine only, used through a UCI GUI.

@@ -1,0 +1,8 @@
+name: DevilutionX
+repository: https://github.com/diasurgical/DevilutionX
+category: game-engine-recreation
+terms: source-available
+replaces:
+  - tool: diablo
+    fit: full
+    note: Port of Diablo and Hellfire that needs DIABDAT.MPQ from the original game or the shareware spawn.mpq.

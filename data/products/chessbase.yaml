@@ -1,0 +1,5 @@
+name: ChessBase
+homepage: https://en.chessbase.com/
+vendor: ChessBase
+category: chess-engine
+description: Chess database and analysis software used to store, search and study games.

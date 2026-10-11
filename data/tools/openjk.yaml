@@ -1,0 +1,7 @@
+name: OpenJK
+repository: https://github.com/JACoders/OpenJK
+category: game-engine-recreation
+replaces:
+  - tool: star-wars-jedi-knight-jedi-academy
+    fit: full
+    note: Community-maintained engine for Jedi Academy; requires an installed copy of the game for its data.

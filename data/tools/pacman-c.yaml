@@ -1,0 +1,7 @@
+name: pacman.c
+repository: https://github.com/floooh/pacman.c
+category: puzzle-game
+replaces:
+  - tool: pac-man
+    fit: partial
+    note: Pacman clone written in C99 with minimal dependencies for Windows, macOS, Linux and WASM.
