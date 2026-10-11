@@ -1,7 +1,0 @@
-name: ioquake3
-repository: https://github.com/ioquake/ioq3
-category: first-person-shooter-game
-replaces:
-  - tool: quake-iii-arena
-    fit: drop-in
-    note: Engine for Quake III Arena, Team Arena and their mods; needs the baseq3 pk3 files from the original game.

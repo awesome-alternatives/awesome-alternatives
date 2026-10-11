@@ -1,7 +1,0 @@
-name: "shapez Community Edition"
-repository: https://github.com/tobspr-games/shapez-community-edition
-category: sandbox-game
-replaces:
-  - tool: factorio
-    fit: partial
-    note: "Community continuation of shapez, where you cut, rotate and paint shapes on belts; must be built from source."
