@@ -1,0 +1,7 @@
+name: "HMCL"
+repository: https://github.com/HMCL-dev/HMCL
+category: minecraft-launcher
+replaces:
+  - tool: minecraft-launcher
+    fit: full
+    note: "Cross-platform launcher with mod loader and modpack installation."

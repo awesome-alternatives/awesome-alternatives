@@ -1,0 +1,7 @@
+name: Julius
+repository: https://github.com/bvschaik/julius
+category: simulation-management-game
+replaces:
+  - tool: caesar-iii
+    fit: drop-in
+    note: "Requires the original Caesar 3 files; its save games are compatible with the original in both directions."

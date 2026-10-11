@@ -1,0 +1,7 @@
+name: 2 Ship 2 Harkinian
+repository: https://github.com/2ship2harkinian/2ship2harkinian
+category: game-engine-recreation
+replaces:
+  - tool: zelda-majoras-mask
+    fit: full
+    note: PC port that includes no copyrighted assets and requires a supported copy of the game supplied by the player.

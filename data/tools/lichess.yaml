@@ -1,0 +1,7 @@
+name: Lichess
+repository: https://github.com/lichess-org/lila
+category: board-game
+replaces:
+  - tool: chess-com
+    fit: full
+    note: Free, adless chess server; the repository is the server code behind lichess.org.

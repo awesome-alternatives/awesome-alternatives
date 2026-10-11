@@ -1,0 +1,7 @@
+name: Endless Sky
+repository: https://github.com/endless-sky/endless-sky
+category: space-game
+replaces:
+  - tool: elite-dangerous
+    fit: partial
+    note: Single-player 2D space trading, combat and mission game, similar to Elite and Escape Velocity per its README. No online galaxy.

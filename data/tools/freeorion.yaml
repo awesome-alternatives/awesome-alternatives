@@ -1,0 +1,8 @@
+name: FreeOrion
+repository: https://github.com/freeorion/freeorion
+category: turn-based-strategy-game
+terms: open
+replaces:
+  - tool: master-of-orion
+    fit: partial
+    note: Turn-based space 4X inspired by Master of Orion but explicitly not a clone, with scripted game content.

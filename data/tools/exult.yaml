@@ -1,0 +1,7 @@
+name: Exult
+repository: https://github.com/exult/exult
+category: role-playing-game
+replaces:
+  - tool: ultima-vii
+    fit: full
+    note: Engine for Ultima VII The Black Gate and Serpent Isle that uses the original data files, so you need to own the games.

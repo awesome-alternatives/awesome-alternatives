@@ -1,0 +1,8 @@
+name: SuperTuxKart
+repository: https://github.com/supertuxkart/stk-code
+category: racing-game
+terms: open
+replaces:
+  - tool: mario-kart
+    fit: full
+    note: "Kart racer with items and arcade physics; code is GPL-3.0, game data is under a mixture of licenses."

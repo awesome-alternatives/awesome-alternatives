@@ -1,0 +1,8 @@
+name: Open Hexagon
+repository: https://github.com/vittorioromeo/SSVOpenHexagon
+category: puzzle-game
+terms: open
+replaces:
+  - tool: super-hexagon
+    fit: partial
+    note: C++ open source game inspired by Super Hexagon, with JSON and Lua customizable level files.

@@ -1,0 +1,7 @@
+name: Cockatrice
+repository: https://github.com/Cockatrice/Cockatrice
+category: board-game
+replaces:
+  - tool: magic-the-gathering-arena
+    fit: partial
+    note: Virtual tabletop for multiplayer card games; it is not an official client and has its own card data.

@@ -1,0 +1,8 @@
+name: "Freeminer"
+repository: https://github.com/freeminer/freeminer
+category: sandbox-game
+replaces:
+  - tool: minecraft-java-edition
+    fit: partial
+    note: "Sandbox game based on Minetest and inspired by Minecraft; has its own mods and worlds."
+terms: open

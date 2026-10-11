@@ -1,0 +1,7 @@
+name: Dethrace
+repository: https://github.com/dethrace-labs/dethrace
+category: racing-game
+replaces:
+  - tool: carmageddon
+    fit: drop-in
+    note: "GPL-3.0 reimplementation that ships no content and needs the data from the original game."

@@ -1,0 +1,7 @@
+name: OpenTyrian
+repository: https://github.com/opentyrian/opentyrian
+category: game-engine-recreation
+replaces:
+  - tool: tyrian
+    fit: full
+    note: Open source port of the scrolling shooter Tyrian; needs the Tyrian 2.1 data files.

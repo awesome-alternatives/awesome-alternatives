@@ -1,0 +1,7 @@
+name: Rigs of Rods
+repository: https://github.com/RigsOfRods/rigs-of-rods
+category: racing-game
+replaces:
+  - tool: beamng-drive
+    fit: partial
+    note: "GPL-3.0 soft-body physics sandbox that simulates vehicle deformation in real time; fewer vehicles and less polish."

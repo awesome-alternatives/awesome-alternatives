@@ -1,0 +1,7 @@
+name: SuperTux
+repository: https://github.com/SuperTux/supertux
+category: platformer-game
+replaces:
+  - tool: super-mario-bros
+    fit: partial
+    note: "Jump'n'run game strongly inspired by Super Mario Bros. with its own characters, worlds and levels."

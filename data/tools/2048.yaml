@@ -1,0 +1,7 @@
+name: "2048"
+repository: https://github.com/gabrielecirulli/2048
+category: puzzle-game
+replaces:
+  - tool: threes
+    fit: partial
+    note: Sliding tile puzzle in the same style; a different game with its own rules, played in the browser.

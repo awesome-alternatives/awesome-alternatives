@@ -1,0 +1,7 @@
+name: "Pandora"
+repository: https://github.com/Moulberry/PandoraLauncher
+category: minecraft-launcher
+replaces:
+  - tool: minecraft-launcher
+    fit: full
+    note: "Launcher with instance management for Minecraft."

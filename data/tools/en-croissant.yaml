@@ -1,0 +1,7 @@
+name: En Croissant
+repository: https://github.com/franciscoBSalgueiro/en-croissant
+category: chess-engine
+replaces:
+  - tool: chessbase
+    fit: partial
+    note: Chess GUI with multi-engine analysis, game databases and spaced repetition for repertoires.

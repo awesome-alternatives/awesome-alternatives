@@ -1,0 +1,8 @@
+name: Pioneer
+repository: https://github.com/pioneerspacesim/pioneer
+category: space-game
+terms: open
+replaces:
+  - tool: elite-dangerous
+    fit: partial
+    note: Single-player open-ended space adventure with planetary landing, trading and missions. No multiplayer.

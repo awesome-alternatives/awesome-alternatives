@@ -1,0 +1,8 @@
+name: Oolite
+repository: https://github.com/OoliteProject/oolite
+category: space-game
+terms: open
+replaces:
+  - tool: elite-dangerous
+    fit: partial
+    note: Open source Elite clone that can be extended with expansion packs. Single-player and 3D, without the online galaxy.

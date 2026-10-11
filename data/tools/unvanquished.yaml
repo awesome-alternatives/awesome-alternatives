@@ -1,0 +1,8 @@
+name: Unvanquished
+repository: https://github.com/Unvanquished/Unvanquished
+category: first-person-shooter-game
+replaces:
+  - tool: natural-selection-2
+    fit: partial
+    note: Arena game with RTS elements in which two factions fight and players can build; the code is GPL and the media is CC BY-SA 2.5.
+terms: open

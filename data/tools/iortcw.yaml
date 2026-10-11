@@ -1,0 +1,7 @@
+name: ioRTCW
+repository: https://github.com/iortcw/iortcw
+category: first-person-shooter-game
+replaces:
+  - tool: return-to-castle-wolfenstein
+    fit: drop-in
+    note: ioquake3-based engine for the single and multiplayer games; needs the pk3 files from an original installation.

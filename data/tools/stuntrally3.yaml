@@ -1,0 +1,7 @@
+name: Stunt Rally 3
+repository: https://github.com/stuntrally/stuntrally3
+category: racing-game
+replaces:
+  - tool: trackmania
+    fit: partial
+    note: "GPL-3.0 stunt racing game with sci-fi tracks and its own track editor; no online leaderboards or official track campaign."

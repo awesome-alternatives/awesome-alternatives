@@ -1,0 +1,7 @@
+name: Chocolate Doom
+repository: https://github.com/chocolate-doom/chocolate-doom
+category: first-person-shooter-game
+replaces:
+  - tool: doom
+    fit: drop-in
+    note: Reproduces the DOS version, including bugs, and reads its demo, configuration and savegame files.

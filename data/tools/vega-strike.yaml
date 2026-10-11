@@ -1,0 +1,8 @@
+name: Vega Strike
+repository: https://github.com/vegastrike/Vega-Strike-Engine-Source
+category: space-game
+terms: open
+replaces:
+  - tool: elite-dangerous
+    fit: partial
+    note: Space flight simulator for exploring, trading and fighting, with original art assets. Single-player.

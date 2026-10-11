@@ -1,0 +1,8 @@
+name: Fallout Community Edition
+repository: https://github.com/alexbatalov/fallout1-ce
+category: role-playing-game
+terms: source-available
+replaces:
+  - tool: fallout
+    fit: drop-in
+    note: Drop-in replacement for falloutw.exe that uses the data of your own copy. The licence limits use to internal business or non-commercial use.

@@ -1,0 +1,7 @@
+name: OpenJK
+repository: https://github.com/JACoders/OpenJK
+category: first-person-shooter-game
+replaces:
+  - tool: star-wars-jedi-knight-jedi-academy
+    fit: drop-in
+    note: Maintains the engine of Jedi Academy and Jedi Outcast with full backwards compatibility with existing games and mods; Jedi Outcast multiplayer is not supported.

@@ -1,0 +1,7 @@
+name: "ATLauncher"
+repository: https://github.com/ATLauncher/ATLauncher
+category: minecraft-launcher
+replaces:
+  - tool: minecraft-launcher
+    fit: full
+    note: "Launcher that integrates several modpack platforms; written in Java."

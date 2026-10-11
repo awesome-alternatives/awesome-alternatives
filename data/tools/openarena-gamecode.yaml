@@ -1,0 +1,7 @@
+name: OpenArena
+repository: https://github.com/OpenArena/gamecode
+category: first-person-shooter-game
+replaces:
+  - tool: quake-iii-arena
+    fit: full
+    note: Game code of OpenArena, which runs on the ioquake3 engine; this repository holds the QVM sources only, built into a pk3.

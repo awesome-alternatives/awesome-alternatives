@@ -1,0 +1,8 @@
+name: Hextris
+repository: https://github.com/Hextris/hextris
+category: puzzle-game
+terms: open
+replaces:
+  - tool: tetris
+    fit: partial
+    note: HTML5 puzzle game inspired by Tetris, played on a hexagon instead of a well.

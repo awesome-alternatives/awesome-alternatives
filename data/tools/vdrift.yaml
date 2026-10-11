@@ -1,0 +1,7 @@
+name: VDrift
+repository: https://github.com/VDrift/vdrift
+category: racing-game
+replaces:
+  - tool: gran-turismo
+    fit: partial
+    note: "GPL-3.0 driving simulation with a drift and racing physics model; no licensed cars or career structure."
