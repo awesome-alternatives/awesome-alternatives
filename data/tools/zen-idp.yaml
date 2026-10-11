@@ -11,5 +11,4 @@ replaces:
   - tool: pocket-id
     fit: partial
     note: Same single-binary self-hosted OIDC idea, with users and clients in YAML and TOTP instead of passkeys.
-affiliation: Suggested by its maintainers.
 deploy: [container, binary]
