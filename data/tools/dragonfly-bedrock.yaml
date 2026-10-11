@@ -1,0 +1,7 @@
+name: "Dragonfly"
+repository: https://github.com/df-mc/dragonfly
+category: minecraft-bedrock-server
+replaces:
+  - tool: minecraft-bedrock-dedicated-server
+    fit: partial
+    note: "Bedrock server library in Go that you extend in code; it is not a configurable drop-in binary."

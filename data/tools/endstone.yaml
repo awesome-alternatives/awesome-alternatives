@@ -1,0 +1,7 @@
+name: "Endstone"
+repository: https://github.com/EndstoneMC/endstone
+category: minecraft-bedrock-server
+replaces:
+  - tool: minecraft-bedrock-dedicated-server
+    fit: partial
+    note: "Adds a Paper-like plugin API on top of the official server binary, so it still needs Mojang's closed-source server."

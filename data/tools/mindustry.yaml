@@ -1,0 +1,7 @@
+name: "Mindustry"
+repository: https://github.com/Anuken/Mindustry
+category: sandbox-game
+replaces:
+  - tool: factorio
+    fit: partial
+    note: "Factory building combined with tower defense and RTS waves, in 2D; written in Java with desktop, mobile and server builds."

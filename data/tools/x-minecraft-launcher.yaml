@@ -1,0 +1,7 @@
+name: "X Minecraft Launcher"
+repository: https://github.com/Voxelum/x-minecraft-launcher
+category: minecraft-launcher
+replaces:
+  - tool: minecraft-launcher
+    fit: full
+    note: "Launcher that shares game files between instances to save disk space."

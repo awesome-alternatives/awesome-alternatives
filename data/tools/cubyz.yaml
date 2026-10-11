@@ -1,0 +1,7 @@
+name: "Cubyz"
+repository: https://github.com/PixelGuys/Cubyz
+category: sandbox-game
+replaces:
+  - tool: minecraft-java-edition
+    fit: partial
+    note: "Written in Zig; adds level of detail rendering, 3D chunks with no height limit and procedural tool crafting. Windows and Linux only."
