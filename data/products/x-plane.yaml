@@ -1,0 +1,5 @@
+name: X-Plane
+homepage: https://www.x-plane.com
+vendor: Laminar Research
+category: simulation-management-game
+description: "Flight simulator that computes aircraft behaviour from the shape of each airframe using blade element theory."

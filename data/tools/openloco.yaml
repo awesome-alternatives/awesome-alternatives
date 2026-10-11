@@ -1,0 +1,7 @@
+name: OpenLoco
+repository: https://github.com/OpenLoco/OpenLoco
+category: simulation-management-game
+replaces:
+  - tool: locomotion
+    fit: drop-in
+    note: "MIT-licensed re-implementation that requires the asset files of the original Locomotion to play."
