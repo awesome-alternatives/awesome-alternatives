@@ -1,0 +1,7 @@
+name: OpenApoc
+repository: https://github.com/OpenApoc/OpenApoc
+category: turn-based-strategy-game
+replaces:
+  - tool: x-com-apocalypse
+    fit: partial
+    note: Re-implementation that requires the original files. Still at alpha stage.

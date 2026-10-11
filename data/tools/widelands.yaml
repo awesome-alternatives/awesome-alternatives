@@ -1,0 +1,7 @@
+name: Widelands
+repository: https://github.com/Widelands/widelands
+category: real-time-strategy-game
+replaces:
+  - tool: the-settlers-ii
+    fit: partial
+    note: Its own game inspired by Settlers II, with more variety and depth, rather than a remake.

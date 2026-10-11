@@ -1,0 +1,8 @@
+name: openage
+repository: https://github.com/SFTtech/openage
+category: real-time-strategy-game
+terms: open
+replaces:
+  - tool: age-of-empires-ii
+    fit: partial
+    note: Needs assets from an original Age of Empires release to play. No network compatibility with the original game.

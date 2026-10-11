@@ -1,0 +1,7 @@
+name: Unciv
+repository: https://github.com/yairm210/Unciv
+category: turn-based-strategy-game
+replaces:
+  - tool: civilization-v
+    fit: partial
+    note: Remake of Civ V for Android and desktop that aims to implement its features, built around mods.

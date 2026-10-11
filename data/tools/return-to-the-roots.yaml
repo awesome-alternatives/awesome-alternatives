@@ -1,0 +1,7 @@
+name: Return To The Roots
+repository: https://github.com/Return-To-The-Roots/s25client
+category: real-time-strategy-game
+replaces:
+  - tool: the-settlers-ii
+    fit: full
+    note: Rewrite of Settlers II with online multiplayer. Needs the data files of The Settlers 2 Gold Edition.
