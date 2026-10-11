@@ -1,0 +1,7 @@
+name: AssaultCube
+repository: https://github.com/assaultcube/AC
+category: first-person-shooter-game
+replaces:
+  - tool: counter-strike
+    fit: partial
+    note: Free multiplayer first person shooter on the Cube engine with realistic settings and arcade gameplay.

@@ -1,0 +1,7 @@
+name: vkQuake
+repository: https://github.com/Novum/vkQuake
+category: first-person-shooter-game
+replaces:
+  - tool: quake
+    fit: drop-in
+    note: Vulkan port based on QuakeSpasm that supports mods; needs the id1 data files from the original game.

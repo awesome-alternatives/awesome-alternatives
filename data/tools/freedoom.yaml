@@ -1,0 +1,8 @@
+name: Freedoom
+repository: https://github.com/freedoom/freedoom
+category: first-person-shooter-game
+replaces:
+  - tool: doom
+    fit: full
+    note: Free replacement levels, art and sound for Doom engines, not an engine itself; aims for compatibility with Doom and Doom II mods.
+terms: open

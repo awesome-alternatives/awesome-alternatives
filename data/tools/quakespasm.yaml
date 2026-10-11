@@ -1,0 +1,7 @@
+name: QuakeSpasm
+repository: https://github.com/sezero/quakespasm
+category: first-person-shooter-game
+replaces:
+  - tool: quake
+    fit: drop-in
+    note: Engine based on FitzQuake that loads mods on the fly; needs the id1 data files (pak0.pak) from the original game.

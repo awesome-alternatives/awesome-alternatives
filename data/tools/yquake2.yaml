@@ -1,0 +1,8 @@
+name: Yamagi Quake II
+repository: https://github.com/yquake2/yquake2
+category: first-person-shooter-game
+replaces:
+  - tool: quake-ii
+    fit: drop-in
+    note: Client for Quake II with unchanged gameplay and graphics, fixes for bugs and support for widescreen and high framerates; needs the original game data.
+terms: open

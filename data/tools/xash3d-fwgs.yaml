@@ -1,0 +1,7 @@
+name: Xash3D FWGS
+repository: https://github.com/FWGS/xash3d-fwgs
+category: first-person-shooter-game
+replaces:
+  - tool: half-life
+    fit: full
+    note: Engine compatible with the Half-Life engine; needs the valve directory from a copy of Half-Life.
