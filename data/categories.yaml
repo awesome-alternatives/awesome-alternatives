@@ -1568,7 +1568,7 @@ sandbox-game:
 minecraft-bedrock-server:
   name: Minecraft Bedrock servers
   group: games
-  description: Server software for Minecraft: Bedrock Edition, written from scratch or built on top of the official server binary.
+  description: "Server software for Minecraft: Bedrock Edition, written from scratch or built on top of the official server binary."
   selfHost: true
 
 minecraft-launcher:
