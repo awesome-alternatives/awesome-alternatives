@@ -1,0 +1,8 @@
+name: Dungeon Crawl Stone Soup
+repository: https://github.com/crawl/crawl
+category: roguelike-game
+terms: open
+replaces:
+  - tool: adom
+    fit: partial
+    note: Turn-based fantasy dungeon crawler with species, backgrounds and gods, under its own ruleset and with graphical tiles and terminal builds.

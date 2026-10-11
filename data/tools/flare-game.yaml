@@ -1,0 +1,8 @@
+name: Flare Empyrean Campaign
+repository: https://github.com/flareteam/flare-game
+category: role-playing-game
+terms: open
+replaces:
+  - tool: diablo
+    fit: partial
+    note: Single-player 2D action RPG on the Flare engine, with art and data under CC-BY-SA 3.0. A tribute to the genre, not a port.

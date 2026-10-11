@@ -1,0 +1,7 @@
+name: Daggerfall Unity
+repository: https://github.com/Interkarma/daggerfall-unity
+category: role-playing-game
+replaces:
+  - tool: the-elder-scrolls-ii-daggerfall
+    fit: full
+    note: Recreation of Daggerfall in the Unity engine, with mod support. Needs the original game data, which is not part of the repository.

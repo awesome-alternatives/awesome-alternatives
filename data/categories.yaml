@@ -1559,3 +1559,18 @@ penetration-testing:
 cryptography-library:
   name: Cryptography libraries
   description: Libraries that implement TLS and cryptographic primitives for other software.
+
+roguelike-game:
+  name: Roguelike games
+  group: games
+  description: Turn-based dungeon crawlers and survival games with procedural levels, permadeath and tile or text interfaces.
+
+role-playing-game:
+  name: Role-playing games
+  group: games
+  description: Open source role-playing games and engine re-implementations that play classic RPGs from your own copy of the original data.
+
+space-game:
+  name: Space games
+  group: games
+  description: Single-player space flight, trading and combat games, from Elite-style simulators to 2D trading and mission games.

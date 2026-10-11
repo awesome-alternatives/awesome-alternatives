@@ -1,0 +1,8 @@
+name: NetHack
+repository: https://github.com/NetHack/NetHack
+category: roguelike-game
+terms: open
+replaces:
+  - tool: adom
+    fit: partial
+    note: Turn-based dungeon crawler with permadeath, many roles and races, and a fixed goal at the bottom, but a different ruleset and world.

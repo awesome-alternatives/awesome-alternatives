@@ -1,0 +1,7 @@
+name: Brogue CE
+repository: https://github.com/tmewett/BrogueCE
+category: roguelike-game
+replaces:
+  - tool: adom
+    fit: partial
+    note: Single-player dungeon crawler with permadeath and procedurally generated levels, built around items instead of character classes.

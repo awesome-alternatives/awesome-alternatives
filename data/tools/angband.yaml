@@ -1,0 +1,8 @@
+name: Angband
+repository: https://github.com/angband/angband
+category: roguelike-game
+terms: open
+replaces:
+  - tool: adom
+    fit: partial
+    note: Classic dungeon crawler with a town, a deep dungeon and a final boss, played turn by turn in a terminal or a graphical client.
