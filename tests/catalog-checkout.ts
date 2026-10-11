@@ -70,5 +70,5 @@ export async function checkout(snapshot: Snapshot): Promise<string> {
 }
 
 export function catalogOf(...tools: Tool[]): ListedCatalog {
-  return { tools, products: [], banned: [], categories: new Map([["c", { name: "C", description: "D" }], ["relational-database", { name: "R", description: "D" }]]) };
+  return { tools, products: [], banned: [], categories: new Map([["c", { name: "C", group: "g", description: "D" }], ["relational-database", { name: "R", group: "g", description: "D" }]]) };
 }

@@ -4,11 +4,12 @@ import { Ajv2020 } from "ajv/dist/2020.js";
 import { parse } from "yaml";
 import { type ListedCatalog, listedCatalog } from "./listed.ts";
 import { byCodeUnit } from "./order.ts";
-import type { BlockingCode, Category, Finding, Product, ProductEntry, Tool, ToolEntry } from "./types.ts";
+import type { BlockingCode, Category, Finding, Group, Product, ProductEntry, Tool, ToolEntry } from "./types.ts";
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const CATEGORIES_FILE = "data/categories.yaml";
 const REDIRECTS_FILE = "data/category-redirects.yaml";
+const GROUPS_FILE = "data/groups.yaml";
 
 export interface Catalog {
   tools: Tool[];
@@ -26,10 +27,15 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
   const tools = await loadEntries<ToolEntry>(root, "tools", "tool.schema.json");
   const products = await loadEntries<ProductEntry>(root, "products", "product.schema.json");
   const redirects = await loadRedirects(root, categories.entries);
+  const groups = await loadGroups(root);
   const catalog = { tools: tools.entries, products: products.entries, categories: categories.entries };
   return {
     catalog,
-    findings: [...categories.findings, ...redirects, ...tools.findings, ...products.findings, ...checkStructure(catalog)],
+    findings: [
+      ...categories.findings,
+      ...groups.findings,
+      ...groupFindings(categories.entries, groups.entries),
+      ...redirects, ...tools.findings, ...products.findings, ...checkStructure(catalog)],
   };
 }
 
@@ -63,6 +69,24 @@ export function redirectFindings(redirects: Readonly<Record<string, string>>, ca
     }
     return [];
   });
+}
+
+export function groupFindings(categories: ReadonlyMap<string, Category>, groups: ReadonlyMap<string, Group>): Finding[] {
+  return [...categories].flatMap(([slug, category]) =>
+    groups.has(category.group)
+      ? []
+      : [error(slug, "unknown-group", `category ${slug} is in group ${category.group}, which is not in ${GROUPS_FILE}`)],
+  );
+}
+
+async function loadGroups(root: string): Promise<{ entries: Map<string, Group>; findings: Finding[] }> {
+  const validate = await compiled<Record<string, Group>>(root, "groups.schema.json");
+  const raw: unknown = parse(await readFile(join(root, GROUPS_FILE), "utf8"));
+  if (validate(raw)) return { entries: new Map(Object.entries(raw)), findings: [] };
+  const findings = (validate.errors ?? [])
+    .filter((e) => !e.schemaPath.includes("/propertyNames/"))
+    .map((e) => error(GROUPS_FILE, "schema", `${GROUPS_FILE} ${e.instancePath || "/"} ${e.message ?? "is invalid"}`));
+  return { entries: new Map(), findings };
 }
 
 async function compiled<T>(root: string, schemaFile: string) {

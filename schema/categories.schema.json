@@ -11,12 +11,17 @@
     "category": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["name", "description"],
+      "required": ["name", "group", "description"],
       "properties": {
         "name": {
           "type": "string",
           "minLength": 1,
           "maxLength": 80
+        },
+        "group": {
+          "description": "The section of data/groups.yaml this category sits under.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
         },
         "description": {
           "type": "string",

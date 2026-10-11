@@ -23,6 +23,8 @@ replaces:
   existing category is the same shelf under another name. Mark it
   `selfHost: true` when its tools are services people would otherwise pay someone to run, such as
   a git forge or a team chat, and leave it out for tools that run on your own machine anyway.
+  Every category sits under a `group` from [`data/groups.yaml`](data/groups.yaml), which sets the
+  section it is browsed from and how that section is laid out.
   [`schema/categories.schema.json`](schema/categories.schema.json) lists the fields a category
   takes, and `pnpm validate` checks the file against it. A category merged into another leaves
   its slug in [`data/category-redirects.yaml`](data/category-redirects.yaml), pointing at the

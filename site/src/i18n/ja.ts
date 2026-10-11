@@ -57,6 +57,7 @@ export const ja: Messages = {
     trendingLede: "GitHub で最も伸びているツールです。過去{days}日間（集計開始がそれより新しい場合は集計開始以降）に増えたスターの割合で並べています。表示されるには新規スターが{min}以上必要です。",
     browseLabel: "ツールから探す",
     allTools: "すべてのツール",
+    groups: "グループ",
     categories: "カテゴリ",
     languages: "言語",
     licenses: "ライセンス",
@@ -74,6 +75,15 @@ export const ja: Messages = {
     ],
   },
 
+  group: {
+    title: "{name}:オープンソースの代替",
+    description: "{name}の{categories}カテゴリ、{tools}個のツール。オープンソースの選択肢を並べて比較できます。",
+    columnCategory: "カテゴリ",
+    columnTools: "ツール",
+    columnTop: "スター上位",
+    all: "すべてのグループ",
+  },
+
   listing: {
     back: "← 戻る",
     browse: "一覧",
@@ -81,6 +91,12 @@ export const ja: Messages = {
   },
 
   index: {
+    groups: {
+      title: "ツールのグループ",
+      description: "ツールとゲームの{count}グループ。各グループのカテゴリと、スターの多い選択肢を掲載しています。",
+      heading: "グループ",
+      lede: "開発からゲームまで、{count}グループ。",
+    },
     alternatives: {
       title: "人気の開発ツールの代替一覧",
       description:

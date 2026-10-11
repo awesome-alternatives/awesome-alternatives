@@ -9,8 +9,8 @@ import { type LocatedFile, type MaintainerEntry, parseMaintainerFile } from "../
 import type { Category, Read, Tool } from "../scripts/lib/types.ts";
 import { published } from "./catalog-checkout.ts";
 
-const CATEGORY: Category = { name: "Search", description: "d", selfHost: true, capabilities: { ci: { label: "CI", match: [] } } };
-const categories = new Map([["search", CATEGORY], ["library", { name: "Library", description: "d" }]]);
+const CATEGORY: Category = { name: "Search", group: "g", description: "d", selfHost: true, capabilities: { ci: { label: "CI", match: [] } } };
+const categories = new Map([["search", CATEGORY], ["library", { name: "Library", group: "g", description: "d" }]]);
 
 function tool(over: Partial<Tool> = {}): Tool {
   return {

@@ -6,11 +6,20 @@ import { parse } from "yaml";
 import type { Locale } from "../i18n/index.ts";
 import { pathFor } from "../i18n/index.ts";
 
-import type { BannedTool, CatalogEvent, Category, EnrichedTool, ListedProduct, OwnerFacts } from "../../../scripts/lib/types.ts";
+import type {
+  BannedTool,
+  CatalogEvent,
+  Category,
+  EnrichedTool,
+  Group as Section,
+  ListedProduct,
+  OwnerFacts,
+} from "../../../scripts/lib/types.ts";
 import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
 import { listedOwners, loginOf } from "./owners.ts";
+import { type SectionPage, sectionPages } from "./sections.ts";
 import type { GridItem } from "./types.ts";
 
 const ROOT = resolve(process.cwd(), "..");
@@ -61,6 +70,8 @@ export const categories: Record<string, Category> = parse(
   readFileSync(resolve(ROOT, "data/categories.yaml"), "utf8"),
 );
 
+export const sections: Record<string, Section> = parse(readFileSync(resolve(ROOT, "data/groups.yaml"), "utf8"));
+
 export const pairs: Pair<EnrichedTool>[] = comparePairs(tools);
 
 export function toolBySlug(slug: string): EnrichedTool | null {
@@ -108,6 +119,7 @@ export function ownerHref(locale: Locale, login: string): string {
 }
 
 export const categoryGroups = groupTools(tools, (t) => t.category);
+export const sectionList: SectionPage[] = sectionPages(sections, categories, categoryGroups);
 export const languageGroups = groupTools(tools, (t) => t.repo.language);
 export const licenseGroups = groupTools(tools, (t) => t.repo.license);
 

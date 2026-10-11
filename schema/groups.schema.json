@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/groups.schema.json",
+  "title": "Groups",
+  "description": "The sections categories are gathered under, keyed by slug.",
+  "type": "object",
+  "minProperties": 1,
+  "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+  "additionalProperties": { "$ref": "#/$defs/group" },
+  "$defs": {
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "display"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 40 },
+        "description": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "display": {
+          "description": "How the group page lays its categories out: a dense table, a visual grid of cards, or a plain list.",
+          "enum": ["table", "cards", "list"]
+        }
+      }
+    }
+  }
+}

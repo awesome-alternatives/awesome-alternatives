@@ -1,0 +1,51 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import SectionCategories from "../../../components/SectionCategories.astro";
+import type { Locale } from "../../../i18n/index.ts";
+import { format, messages, pathFor } from "../../../i18n/index.ts";
+import { localePathsFor } from "../../../i18n/paths.ts";
+import Base from "../../../layouts/Base.astro";
+import { withHome } from "../../../lib/breadcrumbs.ts";
+import { categoryName, categories, sectionList } from "../../../lib/catalog.ts";
+import { breadcrumbList } from "../../../lib/structuredData.ts";
+import type { SectionPage } from "../../../lib/sections.ts";
+
+export const getStaticPaths = (() =>
+  localePathsFor(sectionList.map((page) => ({ params: { key: page.slug }, props: { page } })))) satisfies GetStaticPaths;
+
+interface Props {
+  locale: Locale;
+  page: SectionPage;
+}
+
+const { locale, page } = Astro.props;
+const m = messages(locale);
+const { name, description, display } = page.section;
+const rows = page.categories.map((row) => ({
+  slug: row.slug,
+  name: categoryName(row.key),
+  description: categories[row.key]?.description ?? "",
+  count: row.count,
+  top: row.top,
+}));
+const crumbs = withHome(locale, m.breadcrumb.home, [
+  { name: m.index.groups.heading, href: pathFor(locale, "/groups/") },
+  { name, href: pathFor(locale, `/groups/${page.slug}/`) },
+]);
+const trail = breadcrumbList(crumbs.map((crumb) => ({ name: crumb.name, url: new URL(crumb.href, Astro.site).href })));
+---
+
+<Base
+  title={format(m.group.title, { name })}
+  description={format(m.group.description, { name, categories: page.categories.length, tools: page.tools })}
+  structuredData={[trail]}
+>
+  <a class="back" href={pathFor(locale, "/groups/")}>{m.listing.back}</a>
+  <p class="context"><a href={pathFor(locale, "/groups/")}>{m.index.groups.heading}</a></p>
+  <h1>{name}</h1>
+  <p class="lede">{description}</p>
+  <div class={`listing section-${display}`}>
+    <SectionCategories locale={locale} display={display} rows={rows} />
+  </div>
+</Base>

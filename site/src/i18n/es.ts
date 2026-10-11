@@ -57,6 +57,7 @@ export const es: Messages = {
     trendingLede: "Las herramientas que más rápido crecen en GitHub, por proporción de estrellas ganadas en los últimos {days} días, o desde que empezó el recuento si es más reciente. Hacen falta al menos {min} estrellas nuevas para aparecer.",
     browseLabel: "Explorar por herramienta",
     allTools: "Todas las herramientas",
+    groups: "Grupos",
     categories: "Categorías",
     languages: "Lenguajes",
     licenses: "Licencias",
@@ -74,6 +75,15 @@ export const es: Messages = {
     ],
   },
 
+  group: {
+    title: "{name}: alternativas de código abierto",
+    description: "{categories} categorías y {tools} herramientas en {name}, con las opciones de código abierto lado a lado.",
+    columnCategory: "Categoría",
+    columnTools: "Herramientas",
+    columnTop: "Más estrellas",
+    all: "Todos los grupos",
+  },
+
   listing: {
     back: "← volver",
     browse: "explorar",
@@ -81,6 +91,12 @@ export const es: Messages = {
   },
 
   index: {
+    groups: {
+      title: "Grupos de herramientas",
+      description: "{count} grupos de herramientas y juegos, cada uno con sus categorías y las opciones con más estrellas.",
+      heading: "Grupos",
+      lede: "{count} grupos, del desarrollo a los juegos.",
+    },
     alternatives: {
       title: "Alternativas a herramientas de desarrollo populares",
       description:

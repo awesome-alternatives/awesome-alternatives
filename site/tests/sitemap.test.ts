@@ -31,6 +31,7 @@ test("barePaths lists home, the index pages, every tool, every target and every 
     "/",
     "/tools/",
     "/alternatives/",
+    "/groups/",
     "/categories/",
     "/languages/",
     "/licenses/",

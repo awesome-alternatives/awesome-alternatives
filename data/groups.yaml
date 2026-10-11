@@ -1,0 +1,44 @@
+development:
+  name: Development
+  description: Languages, build tools, linters, editors, version control and everything else developers run daily.
+  display: table
+infrastructure:
+  name: Infrastructure
+  description: Containers, orchestration, networking, observability and the platforms services run on.
+  display: table
+security:
+  name: Security
+  description: Identity, secrets, scanning, detection and privacy tools.
+  display: table
+data:
+  name: Data
+  description: Databases, search, streaming, analytics and data engineering.
+  display: table
+ai:
+  name: AI
+  description: Models, runtimes, agents and the tooling around machine learning.
+  display: list
+office:
+  name: Office and business
+  description: Documents, planning, accounting, customer and team tools for work.
+  display: list
+communication:
+  name: Communication
+  description: Chat, mail, calls and social networks.
+  display: list
+media:
+  name: Media and creative
+  description: Photos, video, audio, books, design and 3D.
+  display: cards
+home:
+  name: Home and personal
+  description: Home automation, personal data, maps and desktop utilities.
+  display: cards
+web:
+  name: Web and commerce
+  description: Sites, shops, forms, payments and the tools that run a web presence.
+  display: list
+games:
+  name: Games
+  description: Open source games and engines, and the closed games they stand in for.
+  display: cards

@@ -4,7 +4,7 @@ import type { Catalog } from "../scripts/lib/catalog.ts";
 import { checkable, listedCatalog } from "../scripts/lib/listed.ts";
 import type { Category, Product, Tool } from "../scripts/lib/types.ts";
 
-const categories = new Map<string, Category>([["c", { name: "C", description: "D" }]]);
+const categories = new Map<string, Category>([["c", { name: "C", group: "g", description: "D" }]]);
 
 function tool(slug: string, extra: Partial<Tool> = {}): Tool {
   return { slug, name: slug.toUpperCase(), repository: `https://github.com/acme/${slug}`, category: "c", file: "", ...extra };

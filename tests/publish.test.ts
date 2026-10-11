@@ -87,7 +87,7 @@ async function published(tools: string[]): Promise<string> {
 }
 
 function catalogOf(...names: string[]): ListedCatalog {
-  return { tools: names.map(declared), products: [], banned: [], categories: new Map([["c", { name: "C", description: "D" }]]) };
+  return { tools: names.map(declared), products: [], banned: [], categories: new Map([["c", { name: "C", group: "g", description: "D" }]]) };
 }
 
 const snapshot = (...names: string[]) => ({ checkedAt: "2026-09-24T03:17:00.000Z", owners: {}, tools: names.map(enriched) });

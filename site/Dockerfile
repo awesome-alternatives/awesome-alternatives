@@ -3,7 +3,7 @@ RUN corepack enable
 WORKDIR /repo
 COPY generated/catalog.json generated/events.json generated/
 COPY CONTRIBUTING.md ./
-COPY data/categories.yaml data/category-redirects.yaml data/
+COPY data/categories.yaml data/category-redirects.yaml data/groups.yaml data/
 COPY data/migrations data/migrations/
 COPY data/benchmarks data/benchmarks/
 COPY scripts/lib/types.ts scripts/lib/rules.ts scripts/lib/trending.ts scripts/lib/contributors.ts scripts/lib/order.ts scripts/lib/

@@ -59,7 +59,7 @@ describe("spliceReadme", () => {
 });
 
 describe("renderCatalog", () => {
-  const categories = new Map([["c", { name: "C", description: "d" }]]);
+  const categories = new Map([["c", { name: "C", group: "g", description: "d" }]]);
   const page = (tools: EnrichedTool[]) => renderCatalog(tools, [], categories).pages.get("catalog/c.md") ?? "";
   const row = (tools: EnrichedTool[], slug: string) =>
     page(tools)

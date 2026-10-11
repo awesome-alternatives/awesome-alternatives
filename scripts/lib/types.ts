@@ -62,8 +62,19 @@ export interface CapabilityTerm {
   match: string[];
 }
 
+export const GROUP_DISPLAYS = ["table", "cards", "list"] as const;
+
+export type GroupDisplay = (typeof GROUP_DISPLAYS)[number];
+
+export interface Group {
+  name: string;
+  description: string;
+  display: GroupDisplay;
+}
+
 export interface Category {
   name: string;
+  group: string;
   description: string;
   selfHost?: boolean;
   capabilities?: Record<string, CapabilityTerm>;
@@ -96,6 +107,7 @@ export type BlockingCode =
   | "too-new"
   | "unknown-capability"
   | "unknown-category"
+  | "unknown-group"
   | "unknown-replacement"
   | "unused-product";
 

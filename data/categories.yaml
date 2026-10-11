@@ -1,119 +1,152 @@
 release-automation:
   name: Release automation
+  group: development
   description: Version bumps, changelogs, tags and published releases from commit history.
 changelog:
   name: Changelog generation
+  group: development
   description: Changelogs built from commits or pull requests, without driving the release itself.
 javascript-runtime:
   name: JavaScript runtimes
+  group: development
   description: Engines that run JavaScript and TypeScript outside the browser.
 javascript-package-manager:
   name: JavaScript package managers
+  group: development
   description: Install and lock npm dependencies.
 javascript-bundler:
   name: JavaScript bundlers
+  group: development
   description: Bundle, transform and serve front-end code.
 javascript-lint-format:
   name: JavaScript linting and formatting
+  group: development
   description: Linters and formatters for JavaScript and TypeScript.
 javascript-test-runner:
   name: JavaScript test runners
+  group: development
   description: Run unit and integration tests for JavaScript and TypeScript.
 python-packaging:
   name: Python packaging
+  group: development
   description: Install dependencies, manage environments and lock Python projects.
 python-lint-format:
   name: Python linting and formatting
+  group: development
   description: Linters and formatters for Python.
 lint-format:
   name: Linters and formatters
+  group: development
   description: Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, shell, SQL, Markdown, config files and code spelling, and formatters that cover many languages.
 infrastructure-as-code:
   name: Infrastructure as code
+  group: infrastructure
   description: Declare cloud infrastructure in files and apply the difference.
 container-engine:
   name: Container engines
+  group: infrastructure
   description: Build and run OCI containers.
 key-value-store:
   name: In-memory key-value stores
+  group: data
   description: Caches and data structure servers speaking the Redis protocol or close to it.
   selfHost: true
 
 search-engine:
   name: Search engines
+  group: data
   description: Full-text search servers.
   selfHost: true
 
 metrics:
   name: Metrics and monitoring
+  group: infrastructure
   description: Collect, store and query time series.
   selfHost: true
 
 http-client:
   name: Command-line HTTP clients
+  group: development
   description: Send HTTP requests from a terminal.
 code-search:
   name: Code and file search
+  group: development
   description: Search file contents recursively, or find files by name, type, size or date, from a terminal.
 api-client:
   name: API clients
+  group: development
   description: Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser app, or call gRPC services from the command line.
 monorepo-tool:
   name: Monorepo tools
+  group: development
   description: Run, cache and orchestrate tasks across the packages of one repository.
 shell-prompt:
   name: Shell prompts
+  group: development
   description: Customisable prompts showing git state, runtimes and context.
 terminal-multiplexer:
   name: Terminal multiplexers
+  group: development
   description: Split, detach and reattach terminal sessions.
 document-database:
   name: Document databases
+  group: data
   description: Databases storing JSON-like documents.
   selfHost: true
 
 wide-column-database:
   name: Wide-column databases
+  group: data
   description: Distributed databases storing wide, sparse rows partitioned across nodes.
   selfHost: true
 
 graph-database:
   name: Graph databases
+  group: data
   description: Databases storing nodes and the relationships between them, queried by traversing the graph.
   selfHost: true
 
 message-streaming:
   name: Event streaming
+  group: data
   description: Durable, partitioned logs for events and messages.
   selfHost: true
 
 reverse-proxy:
   name: Web servers and reverse proxies
+  group: infrastructure
   description: Serve sites, terminate TLS and route traffic to services.
   selfHost: true
 
 documentation-site:
   name: Documentation site generators
+  group: development
   description: Turn Markdown into a searchable documentation site.
 static-site-generator:
   name: Static site generators
+  group: development
   description: Build websites from templates and content files.
 python-type-checker:
   name: Python type checkers
+  group: development
   description: Check Python type annotations before the code runs.
 node-web-framework:
   name: Node.js web frameworks
+  group: development
   description: Routing and middleware for HTTP servers in JavaScript and TypeScript.
 typescript-orm:
   name: TypeScript ORMs
+  group: development
   description: Typed database access and migrations for TypeScript.
 object-storage:
   name: Object storage
+  group: infrastructure
   description: Self-hosted servers speaking the S3 API.
   selfHost: true
 
 ci-server:
   name: CI servers
+  group: development
   description: Self-hosted servers that run build and deployment pipelines.
   selfHost: true
   capabilities:
@@ -126,6 +159,7 @@ ci-server:
 
 git-forge:
   name: Git forges
+  group: development
   description: Self-hosted repositories, code review and issues.
   selfHost: true
   capabilities:
@@ -147,26 +181,31 @@ git-forge:
 
 password-manager-server:
   name: Password manager servers
+  group: security
   description: Self-hosted back ends for password vaults.
   selfHost: true
 
 web-analytics:
   name: Web analytics
+  group: web
   description: Self-hostable, privacy-friendly site analytics.
   selfHost: true
 
 uptime-monitoring:
   name: Uptime monitoring
+  group: infrastructure
   description: Check that services answer, alert when they do not, and publish a status page.
   selfHost: true
 
 log-pipeline:
   name: Log pipelines
+  group: infrastructure
   description: Collect, transform and ship logs and events.
   selfHost: true
 
 team-chat:
   name: Team chat
+  group: communication
   description: Self-hosted messaging for teams.
   selfHost: true
   capabilities:
@@ -185,36 +224,47 @@ team-chat:
 
 terminal-emulator:
   name: Terminal emulators
+  group: development
   description: Desktop terminal applications.
 text-editor:
   name: Code editors
+  group: development
   description: Editors for writing code.
 file-listing:
   name: File listing
+  group: development
   description: Replacements for ls with colours, icons and git status.
 git-diff-pager:
   name: Git diff pagers
+  group: development
   description: Make git diff output readable in a terminal.
 json-processor:
   name: JSON processors
+  group: development
   description: Query and transform JSON from the command line.
 load-testing:
   name: Load testing
+  group: development
   description: Generate traffic to measure how a service holds up.
 browser-testing:
   name: Browser automation and testing
+  group: development
   description: Drive real browsers for end-to-end tests.
 python-web-framework:
   name: Python web frameworks
+  group: development
   description: Build HTTP APIs and sites in Python.
 python-http-client:
   name: Python HTTP clients
+  group: development
   description: Send HTTP requests from Python.
 javascript-date-library:
   name: JavaScript date libraries
+  group: development
   description: Parse, format and compute dates in JavaScript.
 secrets-manager:
   name: Secrets managers
+  group: infrastructure
   description: Store, rotate and hand out secrets to applications.
   selfHost: true
   capabilities:
@@ -230,1332 +280,1626 @@ secrets-manager:
 
 git-lfs-server:
   name: Git LFS servers
+  group: development
   description: Serve Git LFS objects for repositories hosted anywhere.
   selfHost: true
 
 minecraft-server:
   name: Minecraft servers
+  group: games
   description: "Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch."
   selfHost: true
 
 file-sync:
   name: File sync and share
+  group: home
   description: Self-hosted storage for files you reach from more than one machine, over WebDAV, a sync client or a web file manager.
   selfHost: true
 
 coding-agent:
   name: AI coding agents and assistants
+  group: ai
   description: Agents that read a codebase, edit files and run commands from a prompt, and completions and chat inside the editor, backed by a hosted or a local model.
 
 chat-interface:
   name: AI chat interfaces
+  group: ai
   description: Apps to chat with language models, whether the model runs locally or behind an API.
   selfHost: true
 
 llm-runtime:
   name: Local model runtimes
+  group: ai
   description: Run open-weight language models on your own hardware, behind a local API.
   selfHost: true
 
 container-desktop:
   name: Container desktops and local Kubernetes
+  group: infrastructure
   description: Run containers and a Kubernetes cluster on a laptop or in CI, with the engine managed for you.
 
 dashboards:
   name: Dashboards
+  group: infrastructure
   description: Build dashboards and explore metrics, logs and traces from a web UI.
   selfHost: true
 
 actor-framework:
   name: Actor toolkits
+  group: data
   description: Actor-model runtimes for building concurrent and distributed JVM applications.
 
 distributed-sql:
   name: Distributed SQL databases
+  group: data
   description: SQL databases that spread data across nodes and speak the PostgreSQL wire protocol.
   selfHost: true
 
 error-tracking:
   name: Error tracking
+  group: infrastructure
   description: Collect exceptions from applications through an SDK and group them into issues.
   selfHost: true
 
 tracing:
   name: Tracing and continuous profiling
+  group: infrastructure
   description: Collect and search traces of requests as they cross services, and CPU and memory profiles of running services over time.
   selfHost: true
 
 time-series-database:
   name: Time-series databases
+  group: data
   description: Store and query timestamped measurements at high write rates.
   selfHost: true
 
 encrypted-files:
   name: Encrypted files in git
+  group: security
   description: Keep secrets in a repository, encrypted, and decrypted only by the people and machines allowed to.
 
 log-storage:
   name: Log storage
+  group: infrastructure
   description: Store logs at volume and search them, the back end behind log dashboards.
   selfHost: true
 
 relational-database:
   name: Relational databases
+  group: data
   description: General-purpose SQL databases.
   selfHost: true
 
 config-management:
   name: Configuration management
+  group: infrastructure
   description: Describe the state of servers in code and converge them to it.
 
 workflow-automation:
   name: Workflow automation
+  group: office
   description: Connect apps and APIs with trigger-and-action workflows, and turn operational runbooks into jobs that run on servers with an audit trail.
   selfHost: true
 
 gitops:
   name: GitOps
+  group: infrastructure
   description: Keep Kubernetes clusters in sync with manifests stored in git.
 
 container-registry:
   name: Container registries
+  group: infrastructure
   description: Store and serve OCI images and artefacts.
   selfHost: true
 
 identity-provider:
   name: Identity providers
+  group: security
   description: Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP, including two-factor servers for VPNs and applications.
   selfHost: true
 
 mesh-vpn:
   name: Mesh VPNs
+  group: infrastructure
   description: Connect devices and servers in a private WireGuard network, wherever they are.
   selfHost: true
 
 remote-desktop:
   name: Remote desktop
+  group: home
   description: Control another computer over the network, for support or remote work.
   selfHost: true
 
 knowledge-base:
   name: Wikis and knowledge bases
+  group: office
   description: Shared pages and documentation for teams, edited in the browser.
   selfHost: true
 
 note-taking:
   name: Note-taking apps
+  group: office
   description: Personal notes on desktop and mobile, with sync.
 
 recipe-manager:
   name: Recipe managers
+  group: home
   description: Keep recipes, plan meals and build shopping lists from them.
   selfHost: true
 
 project-management:
   name: Project management
+  group: office
   description: Issues, tasks and boards for planning team work.
   selfHost: true
 
 video-conferencing:
   name: Video conferencing
+  group: communication
   description: Video meetings in the browser or an app.
   selfHost: true
 
 newsletter:
   name: Newsletters and email marketing
+  group: web
   description: Mailing lists, campaigns and subscriber management.
   selfHost: true
 
 forms-surveys:
   name: Forms and surveys
+  group: web
   description: Build forms and surveys and collect the answers.
   selfHost: true
 
 photo-library:
   name: Photo libraries
+  group: media
   description: Back up, browse and share photos and videos from your phones.
   selfHost: true
 
 media-server:
   name: Media servers
+  group: media
   description: Stream a personal library of films, series, music and podcasts to your devices.
   selfHost: true
 
 video-hosting:
   name: Video hosting and streaming
+  group: media
   description: Publish videos and live streams on your own site for an audience to watch.
   selfHost: true
 
 book-server:
   name: Book and comic servers
+  group: media
   description: Serve a personal library of ebooks, comics and manga to readers and reading apps.
   selfHost: true
 
 business-intelligence:
   name: Business intelligence
+  group: data
   description: Query databases and build charts and dashboards for the rest of the company.
   selfHost: true
 
 backend-as-a-service:
   name: Backend as a service
+  group: development
   description: Auth, database, storage and APIs for an app, without writing the backend.
   selfHost: true
 
 self-hosted-paas:
   name: Self-hosted PaaS
+  group: infrastructure
   description: Deploy apps and databases to your own servers from a git push or a dashboard.
   selfHost: true
 
 headless-cms:
   name: Headless CMS
+  group: web
   description: Manage content in an admin UI and deliver it to any front end through an API.
   selfHost: true
 
 website-cms:
   name: Website CMS
+  group: web
   description: Run a website from a web back office, with pages, menus, themes and plugins.
   selfHost: true
 
 blogging:
   name: Blogging engines
+  group: web
   description: Publish a blog with posts, tags, themes and comments from your own server.
   selfHost: true
 
 comments:
   name: Comment systems
+  group: web
   description: Embed a comment thread under the pages of a static or dynamic site.
   selfHost: true
 
 link-in-bio:
   name: Link-in-bio pages
+  group: web
   description: Publish a single page listing your links, for the profile of a social account.
   selfHost: true
 
 feature-flags:
   name: Feature flags
+  group: development
   description: Turn features on for some users without a deploy, and run experiments.
   selfHost: true
 
 database-migrations:
   name: Database migrations
+  group: development
   description: Version and apply database schema changes.
 
 kubernetes-ui:
   name: Kubernetes UIs
+  group: infrastructure
   description: Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
 
 virtualization:
   name: Virtualization
+  group: infrastructure
   description: Run virtual machines and system containers across a cluster of hosts.
   selfHost: true
 
 code-search-server:
   name: Code search servers
+  group: development
   description: Index many repositories and search them from a web UI.
   selfHost: true
 
 data-integration:
   name: Data integration
+  group: data
   description: Extract data from applications and databases and load it into a warehouse.
   selfHost: true
 
 javascript-http-client:
   name: JavaScript HTTP clients
+  group: development
   description: Send HTTP requests from Node.js and browsers.
 
 javascript-utility:
   name: JavaScript utility libraries
+  group: development
   description: Helpers for arrays, objects, strings and functions.
 
 css-processing:
   name: CSS processing
+  group: development
   description: Compile, transform, prefix and minify stylesheets.
 
 javascript-validation:
   name: JavaScript schema validation
+  group: development
   description: Declare schemas and validate data against them at runtime.
 
 react-state:
   name: React state management
+  group: development
   description: Share and update application state across React components.
 
 python-task-queue:
   name: Python task queues
+  group: development
   description: Run background jobs from Python through a broker.
 
 dataframe:
   name: DataFrame libraries
+  group: data
   description: Load, transform and analyse tabular data in memory.
 
 system-monitor:
   name: System monitors
+  group: infrastructure
   description: Watch processes and resource use from a terminal.
 
 directory-jumper:
   name: Directory jumpers
+  group: development
   description: Jump to frequently used directories with a few keystrokes.
 
 fuzzy-finder:
   name: Fuzzy finders and history search
+  group: development
   description: Filter lists interactively in a terminal, for files, anything piped in and the shell history, which some also sync between machines.
 
 shell:
   name: Shells
+  group: development
   description: Interactive command-line shells.
 
 git-client:
   name: Git clients and extensions
+  group: development
   description: Stage, commit, branch, browse and rewrite history outside the bare git command, from a GUI, a terminal UI or extra subcommands.
 
 office-suite:
   name: Office suites
+  group: office
   description: Documents, spreadsheets and presentations.
 
 document-management:
   name: Document management
+  group: office
   description: Scan, OCR, tag and search paper and PDF documents.
   selfHost: true
 
 design-tool:
   name: Interface design tools
+  group: office
   description: Design and prototype user interfaces on a shared canvas.
   selfHost: true
 
 diagramming:
   name: Diagrams and whiteboards
+  group: office
   description: Draw diagrams and sketch on a shared canvas.
 
 screen-recording:
   name: Screen and terminal recording
+  group: media
   description: Record the screen, the camera or a terminal session and share it as a video, a GIF or a replayable cast.
 
 authenticator-app:
   name: Authenticator apps
+  group: security
   description: Generate one-time codes for two-factor authentication.
 
 writing-assistant:
   name: Writing assistants
+  group: ai
   description: Check grammar, spelling and style as you type.
 
 machine-translation:
   name: Machine translation
+  group: ai
   description: Translate text between languages, through an API or a web UI.
   selfHost: true
 
 read-later:
   name: Read-later and bookmarks
+  group: office
   description: Save links and articles to read or find again later.
   selfHost: true
 
 feed-reader:
   name: Feed readers and generators
+  group: media
   description: Follow sites through RSS and Atom feeds, and produce feeds for sites and accounts that do not publish one.
   selfHost: true
 
 dns-sinkhole:
   name: DNS ad blockers
+  group: infrastructure
   description: Block ads and trackers for a whole network at the DNS level.
   selfHost: true
 
 erp:
   name: ERP
+  group: office
   description: Accounting, inventory, sales and operations in one system.
   selfHost: true
 
 personal-finance:
   name: Budgeting and personal finance
+  group: office
   description: Track accounts, spending and budgets for a person or a household.
   selfHost: true
 
 crm:
   name: CRM
+  group: office
   description: Track contacts, companies and deals.
   selfHost: true
 
 helpdesk:
   name: Help desks
+  group: office
   description: Handle customer requests from email, chat and other channels as tickets.
   selfHost: true
 
 e-commerce:
   name: E-commerce and point of sale
+  group: web
   description: Run an online store, from catalogue to checkout, or ring up in-store sales and print receipts.
   selfHost: true
 
 url-shortener:
   name: URL shorteners
+  group: home
   description: Short links on your own domain, with click statistics.
   selfHost: true
 
 mail-server:
   name: Mail servers
+  group: communication
   description: Host email for your own domains, archive and search every message for retention, and collect the DMARC reports sent about your domains.
   selfHost: true
 
 cloud-ide:
   name: Cloud development environments
+  group: development
   description: Development environments on a remote machine, reached from a browser or a local editor.
   selfHost: true
 
 service-mesh:
   name: Service meshes
+  group: infrastructure
   description: Encrypt, route and observe traffic between services in a cluster.
 
 api-gateway:
   name: API gateways
+  group: infrastructure
   description: Route, authenticate and rate-limit API traffic in front of services.
   selfHost: true
 
 workflow-orchestration:
   name: Workflow orchestration
+  group: infrastructure
   description: Schedule and run data pipelines and jobs as dependency graphs.
   selfHost: true
 
 vector-database:
   name: Vector databases
+  group: data
   description: Store embeddings and search them by similarity.
   selfHost: true
 
 analytical-database:
   name: Analytical databases
+  group: data
   description: Columnar SQL engines for analytics over large datasets.
   selfHost: true
 
 home-automation:
   name: Home automation
+  group: home
   description: Control and automate smart home devices locally.
   selfHost: true
 
 terminal-file-manager:
   name: Terminal file managers
+  group: development
   description: Browse, preview and move files from a keyboard-driven interface in the terminal.
 
 mock-server:
   name: Mock servers
+  group: development
   description: Stand in for HTTP APIs during development and tests with recorded or declared responses.
 
 api-documentation:
   name: API documentation
+  group: development
   description: Render interactive API reference pages from OpenAPI and AsyncAPI documents.
 
 code-documentation:
   name: Code documentation generators
+  group: development
   description: Build reference documentation from source code and its doc comments.
 
 stacked-pull-requests:
   name: Stacked pull requests
+  group: development
   description: Split a change into a stack of dependent branches or commits and keep their pull requests in sync.
 
 build-system:
   name: Build systems and compiler caches
+  group: development
   description: Compile, test and package projects from a declared build, for C, C++, the JVM and other languages, and cache compiler output between builds.
 
 system-package-manager:
   name: System package managers
+  group: development
   description: Install command-line tools and applications on macOS, Windows or Linux from package definitions.
 
 cpp-package-manager:
   name: C and C++ package managers
+  group: development
   description: Fetch, build and version C and C++ libraries for a project.
 
 dev-environment:
   name: Development environments
+  group: development
   description: Declare a project's tools and services in a file and get the same shell on every machine.
 
 debugger:
   name: Debuggers
+  group: development
   description: Step through running programs, inspect their state and replay their execution.
 
 profiler:
   name: Profilers and benchmarking
+  group: development
   description: Measure where a program spends its time and memory, draw it as flame graphs or timelines, and time commands over repeated runs.
 
 file-viewer:
   name: Terminal file and log viewers
+  group: development
   description: Show files in the terminal with syntax highlighting or rendering, and read, highlight and filter log files.
 
 hex-editor:
   name: Hex editors
+  group: development
   description: View and edit the raw bytes of binary files.
 
 cheatsheet:
   name: Command cheatsheets
+  group: development
   description: Short, example-based help pages for command-line tools, read from the terminal.
 
 find-replace:
   name: Find and replace
+  group: development
   description: Search and replace text across files from the terminal, with previews or structural matching.
 
 dependency-updates:
   name: Dependency update bots
+  group: development
   description: Open pull requests that bump dependencies when new versions are released.
 
 disk-usage:
   name: Disk usage analyzers
+  group: development
   description: Show which directories and files take up the space on a disk.
 
 task-runner:
   name: Task runners
+  group: development
   description: Name a project's commands in one file and run them, as a lighter make.
 
 git-hooks:
   name: Git hooks and commit messages
+  group: development
   description: Install and run the checks a repository wants before a commit or a push, and check or prompt for commit messages in a convention.
 
 runtime-version-manager:
   name: Runtime version managers
+  group: development
   description: Install several versions of a language runtime and switch between them per project.
 
 backup:
   name: Backup tools
+  group: infrastructure
   description: Take deduplicated, encrypted snapshots of files and restore them from local or cloud storage.
 
 code-statistics:
   name: Code and repository statistics
+  group: development
   description: Count the lines of code, comments and blanks in a codebase by language, and summarise a git repository's contributors, activity and size.
 
 file-watcher:
   name: File watchers
+  group: development
   description: Run a command again whenever the files it depends on change.
 
 scheduling:
   name: Scheduling
+  group: office
   description: Share availability and let people book a meeting or vote on a date.
   selfHost: true
 
 image-editing:
   name: Image editors
+  group: media
   description: Edit raster and vector images, from retouching photos to drawing graphics.
 
 raw-photo-editing:
   name: Raw photo editors
+  group: media
   description: Develop camera raw files and manage a photo catalog non-destructively.
 
 video-editing:
   name: Video editors
+  group: media
   description: Cut, compose and render video on a timeline or a node graph.
 
 no-code-database:
   name: No-code databases
+  group: data
   description: Spreadsheet-like databases with views, forms and an API, built without code.
   selfHost: true
 
 e-signature:
   name: E-signature
+  group: office
   description: Send documents for signature and collect legally binding signatures online.
   selfHost: true
 
 incident-management:
   name: Incident management
+  group: infrastructure
   description: Route alerts, page whoever is on call and track incidents to resolution.
   selfHost: true
 
 time-tracking:
   name: Time tracking
+  group: office
   description: Log time against projects and clients, and turn it into reports or invoices.
   selfHost: true
 
 image-generation:
   name: Image generation
+  group: ai
   description: Generate images from text prompts with diffusion models running on your own hardware.
 
 mail-testing:
   name: Mail testing
+  group: communication
   description: Fake SMTP servers with a web inbox that catch the mail an application sends during development.
 
 translation-management:
   name: Translation management
+  group: office
   description: Localisation platforms where teams translate and review an application's strings.
   selfHost: true
 
 push-notifications:
   name: Push notifications
+  group: communication
   description: Send push notifications to phones and desktops from a plain HTTP request.
   selfHost: true
 
 vulnerability-scanner:
   name: Vulnerability scanners
+  group: security
   description: Check dependencies and container images against databases of known vulnerabilities, and infrastructure code for insecure settings before it is applied.
 
 pastebin:
   name: Pastebins
+  group: home
   description: Share code snippets and text through a link.
   selfHost: true
 
 file-sharing:
   name: File sharing
+  group: home
   description: Send large files to someone through a link that expires.
   selfHost: true
 
 app-launcher:
   name: App launchers
+  group: home
   description: Open apps and files and run commands from the keyboard.
 
 slides:
   name: Slides
+  group: office
   description: Write presentations, often from Markdown or code instead of a visual editor.
 
 internal-tools:
   name: Internal tool builders
+  group: development
   description: Build internal apps and admin panels on top of databases and APIs.
   selfHost: true
 
 database-client:
   name: Database clients
+  group: development
   description: Desktop and web clients to browse, edit and query databases.
 
 llm-observability:
   name: LLM observability
+  group: ai
   description: Trace, evaluate and monitor LLM applications.
   selfHost: true
 
 pdf-tools:
   name: PDF tools
+  group: office
   description: Edit, merge, split, convert and sign PDF files.
   selfHost: true
 
 forum:
   name: Forums and Q&A
+  group: web
   description: Community forums, link aggregators and question and answer sites.
   selfHost: true
 
 billing:
   name: Billing
+  group: web
   description: Usage-based billing, subscription management and invoicing.
   selfHost: true
 
 payments:
   name: Payment processing
+  group: web
   description: Accept and route online payments from servers you run.
   selfHost: true
 
 webhooks:
   name: Webhook delivery
+  group: development
   description: Send and receive webhooks with retries, signatures and delivery logs.
   selfHost: true
 
 seo:
   name: SEO tools
+  group: web
   description: Track search rankings and audit sites for technical SEO issues.
   selfHost: true
 
 consent-management:
   name: Cookie consent
+  group: security
   description: Show a consent banner and hold back tracking scripts until visitors agree.
 
 event-ticketing:
   name: Event ticketing
+  group: web
   description: Sell tickets, manage attendees and check people in at events.
   selfHost: true
 
 image-proxy:
   name: Image processing servers
+  group: media
   description: Resize, crop and convert images on the fly from URL parameters.
   selfHost: true
 
 page-change-monitoring:
   name: Page change monitoring
+  group: infrastructure
   description: Watch web pages and get alerts when they change.
   selfHost: true
 
 notification-infrastructure:
   name: Notification infrastructure
+  group: communication
   description: Send product notifications across email, SMS, push, chat and in-app feeds from one API, with templates and user preferences.
   selfHost: true
 
 privileged-access:
   name: Privileged access
+  group: infrastructure
   description: Give engineers audited access to servers, databases and Kubernetes through one gateway, with short-lived credentials and session recording.
   selfHost: true
 
 resume-builder:
   name: Resume builders
+  group: office
   description: Write resumes from templates and export them to PDF.
   selfHost: true
 
 artifact-repository:
   name: Artifact repositories
+  group: development
   description: Host and proxy packages and build artefacts for Maven, npm, PyPI, containers and other formats.
   selfHost: true
 
 static-analysis:
   name: Static analysis
+  group: development
   description: Inspect source code for bugs, code smells and security issues, and track the findings across branches and pull requests.
   selfHost: true
 
 telephony:
   name: Telephony and SMS gateways
+  group: communication
   description: Run voice calls, SIP trunks and SMS sending on your own servers behind an API.
   selfHost: true
 
 chat-client:
   name: Chat clients
+  group: communication
   description: Desktop, mobile and web apps for Matrix, XMPP and IRC.
 
 chat-bridge:
   name: Chat bridges
+  group: communication
   description: Relay conversations between Matrix and other chat networks, so one client reaches them all.
   selfHost: true
 
 messenger:
   name: Private messengers
+  group: communication
   description: End-to-end encrypted messaging apps for one-to-one and group chats on a phone or a desktop.
 
 irc-server:
   name: IRC servers
+  group: communication
   description: Run an IRC network or keep a persistent connection to one with a bouncer.
   selfHost: true
 
 email-client:
   name: Email clients
+  group: communication
   description: Desktop, mobile and terminal apps that read and send mail over IMAP and SMTP.
 
 webmail:
   name: Webmail
+  group: communication
   description: Read and send mail in the browser from an IMAP server you run.
   selfHost: true
 
 email-alias:
   name: Email aliases
+  group: communication
   description: Hand out forwarding addresses that hide your real inbox and can be turned off one by one.
   selfHost: true
 
 email-templating:
   name: Email templating
+  group: communication
   description: Write HTML emails from components or markup and compile them to code that renders across mail clients.
 
 nvr:
   name: Network video recorders
+  group: infrastructure
   description: Record, watch and analyse IP camera streams on your own hardware.
   selfHost: true
 
 expense-splitting:
   name: Expense splitting
+  group: office
   description: Track shared expenses in a group and work out who owes whom.
   selfHost: true
 
 fitness-tracking:
   name: Fitness tracking
+  group: home
   description: Log workouts, activities and body measurements, and follow progress over time.
   selfHost: true
 
 habit-tracker:
   name: Habit trackers
+  group: home
   description: Check off daily habits and follow streaks and progress.
 
 web-archiving:
   name: Web archiving
+  group: home
   description: Save complete copies of web pages so they stay readable after the original changes or disappears.
 
 homelab-dashboard:
   name: Homelab dashboards
+  group: infrastructure
   description: Start pages that link to self-hosted services and show their status and widgets.
   selfHost: true
 
 start-page:
   name: Browser start pages
+  group: home
   description: Replace the browser's new tab page with a clock, links, weather and backgrounds.
 
 invoicing:
   name: Invoicing
+  group: office
   description: Send quotes and invoices to clients and track the payments.
   selfHost: true
 
 hr-management:
   name: HR management
+  group: office
   description: Employee records, leave, recruitment and payroll.
   selfHost: true
 
 embedded-key-value:
   name: Embedded key-value stores
+  group: data
   description: Key-value storage engines linked into a program as a library, with no server to run.
 
 distributed-key-value:
   name: Distributed key-value stores
+  group: data
   description: Replicated, transactional key-value stores that run as a cluster.
   selfHost: true
 
 table-format:
   name: Lakehouse table formats
+  group: data
   description: Open table formats that add transactions, schema evolution and time travel to files on object storage.
 
 database-proxy:
   name: Database proxies and connection poolers
+  group: data
   description: Pool, route and multiplex client connections in front of a database server.
   selfHost: true
 
 database-backup:
   name: Database backup
+  group: data
   description: Physical backups, WAL archiving and point-in-time recovery for database servers.
 
 database-high-availability:
   name: Database high availability
+  group: data
   description: Manage replication and automatic failover for a cluster of database servers.
 
 llm-gateway:
   name: LLM gateways
+  group: ai
   description: One OpenAI-compatible API in front of many model providers, with keys, budgets, fallbacks and usage logs.
   selfHost: true
 
 llm-evaluation:
   name: LLM evaluation
+  group: ai
   description: Test prompts, models and agents against datasets, assertions and red-team probes, locally or in CI.
 
 llm-cli:
   name: LLM command-line tools
+  group: ai
   description: Prompt language models from a terminal and pipe their answers into other commands.
 
 llm-app-builder:
   name: LLM app builders
+  group: ai
   description: Build chatbots, agents and RAG workflows in a visual editor and serve them behind an API.
   selfHost: true
 
 document-qa:
   name: Document Q&A
+  group: ai
   description: Ask questions about your own documents and sources through retrieval-augmented generation, with cited answers.
   selfHost: true
 
 ai-search:
   name: AI search engines
+  group: ai
   description: Answer questions from live web searches with a language model, citing the pages it read.
   selfHost: true
 
 autonomous-agent:
   name: Autonomous AI agents
+  group: ai
   description: Agents that plan and carry out multi-step tasks on their own, browsing, running code and calling tools.
   selfHost: true
 
 browser-agent:
   name: AI browser agents
+  group: ai
   description: Let a language model drive a web browser to navigate sites, fill forms and extract data.
   selfHost: true
 
 ai-app-builder:
   name: AI app builders
+  group: ai
   description: Generate and edit a web app or interface from a chat prompt, with a live preview.
 
 speech-to-text:
   name: Speech to text
+  group: ai
   description: Transcribe recordings, meetings and dictation with speech recognition models on your own hardware.
   selfHost: true
 
 text-to-speech:
   name: Text to speech
+  group: ai
   description: Generate speech from text, with voice cloning on some models, on your own hardware.
   selfHost: true
 
 ocr:
   name: OCR
+  group: ai
   description: Recognise text in scanned documents and images.
 
 document-parsing:
   name: Document parsing
+  group: ai
   description: Convert PDFs, office files and scans into Markdown or JSON that language models and pipelines can read.
 
 model-fine-tuning:
   name: Model fine-tuning
+  group: ai
   description: Fine-tune language and diffusion models on your own data and GPUs.
 
 experiment-tracking:
   name: Experiment tracking
+  group: ai
   description: Log the metrics, parameters and artefacts of training runs and compare them in a dashboard.
   selfHost: true
 
 ml-pipelines:
   name: ML pipelines
+  group: ai
   description: Define, run and track machine learning pipelines from data preparation to deployment.
   selfHost: true
 
 model-serving:
   name: Model serving
+  group: ai
   description: Serve trained machine learning models behind an API, with batching, scaling and versioning.
   selfHost: true
 
 data-labeling:
   name: Data labeling
+  group: ai
   description: Annotate images, video, text and audio to build training and evaluation datasets.
   selfHost: true
 
 automl:
   name: AutoML
+  group: ai
   description: Train, tune and compare models automatically from tabular, text or image data.
 
 feedback-board:
   name: Feedback boards
+  group: office
   description: Collect feature requests, let users vote on them and publish a roadmap.
   selfHost: true
 
 inventory:
   name: Inventory and asset management
+  group: office
   description: Track stock, parts, equipment and household belongings, and who has them where.
   selfHost: true
 
 lms:
   name: Learning platforms
+  group: office
   description: Courses, assignments and grades for schools, universities and companies.
   selfHost: true
 
 flashcards:
   name: Flashcards
+  group: office
   description: Learn with spaced repetition flashcards.
 
 typesetting:
   name: Typesetting
+  group: office
   description: Write documents in a markup language such as LaTeX or Typst and compile them to PDF.
 
 reference-manager:
   name: Reference managers
+  group: office
   description: Collect papers and sources, organise them and cite them in documents.
 
 siem:
   name: SIEM and security monitoring
+  group: security
   description: Collect security events and logs from hosts and networks, correlate them and raise alerts on threats.
   selfHost: true
 
 intrusion-detection:
   name: Intrusion detection
+  group: security
   description: Watch network traffic or hosts for attacks, and report or block what matches.
   selfHost: true
 
 runtime-security:
   name: Container runtime security
+  group: security
   description: Detect and block suspicious behaviour in running containers and Kubernetes workloads.
   selfHost: true
 
 endpoint-detection:
   name: Endpoint detection and forensics
+  group: security
   description: Query laptops and servers, hunt for threats on them and collect forensic evidence.
   selfHost: true
 
 device-management:
   name: Device management
+  group: infrastructure
   description: Enroll, configure, patch and inventory laptops, phones and servers from one console.
   selfHost: true
 
 waf:
   name: Web application firewalls and bot checks
+  group: security
   description: Inspect HTTP traffic and block attacks, bots and abuse before they reach an application, or ask visitors to prove they are human.
   selfHost: true
 
 firewall:
   name: Firewalls and routers
+  group: security
   description: Firewall and router systems that filter traffic for a host or a whole network.
   selfHost: true
 
 application-firewall:
   name: Application firewalls
+  group: security
   description: Show and control which apps on a computer or phone may connect to the network.
 
 vpn-server:
   name: VPN servers
+  group: infrastructure
   description: Run a remote-access or site-to-site VPN server for your users and networks.
   selfHost: true
 
 local-file-transfer:
   name: Direct file transfer
+  group: home
   description: Send files straight from one device to another, nearby or through a relay, without uploading them to a storage service.
 
 genealogy:
   name: Genealogy
+  group: home
   description: Build family trees with sources and events, and share them with relatives.
   selfHost: true
 
 location-history:
   name: Location history
+  group: home
   description: Record where your devices have been and browse the history on a map.
   selfHost: true
 
 travel-planning:
   name: Travel and trail planning
+  group: home
   description: Plan trips and hikes and keep a log of the places you have been.
   selfHost: true
 
 maps-navigation:
   name: Maps and navigation
+  group: home
   description: Map apps with search and turn-by-turn directions, built on open map data.
 
 map-services:
   name: Map services
+  group: home
   description: Serve map tiles, routing and geocoding from OpenStreetMap data behind your own API.
   selfHost: true
 
 weather:
   name: Weather
+  group: home
   description: Forecast apps, forecast APIs and software for personal weather stations.
 
 android-launcher:
   name: Android launchers
+  group: home
   description: Replace the Android home screen and app drawer.
 
 privacy-frontend:
   name: Privacy front ends
+  group: security
   description: Alternative web front ends to YouTube, Reddit and other sites, without ads, tracking or an account.
   selfHost: true
 
 youtube-client:
   name: Ad-free video clients
+  group: media
   description: Apps that play YouTube and other video sites without ads or a Google account.
 
 home-server-platform:
   name: Home server platforms
+  group: infrastructure
   description: Turn a machine at home into a server with an app store, storage management and a web dashboard.
   selfHost: true
 
 speed-test:
   name: Speed tests
+  group: infrastructure
   description: Measure bandwidth and latency to your own server, or track your connection over time.
   selfHost: true
 
 music-production:
   name: Music production
+  group: media
   description: Record, edit and mix audio, and compose with DAWs, trackers, sequencers and software synthesizers.
 
 music-notation:
   name: Music notation
+  group: media
   description: Write, play back and engrave sheet music and tablature.
 
 music-player:
   name: Music players and taggers
+  group: media
   description: Play and organise a local music library or stream it from your own server, and fix its tags, cover art and file names.
 
 podcast-player:
   name: Podcast players
+  group: media
   description: Subscribe to podcasts by RSS, download episodes and keep your place.
 
 internet-radio:
   name: Internet radio
+  group: media
   description: Run a web radio station with playlists, live DJs, scheduling and streaming.
   selfHost: true
 
 webrtc-server:
   name: WebRTC media servers
+  group: infrastructure
   description: Route audio and video between WebRTC peers through an SFU, or relay it through a TURN server.
   selfHost: true
 
 social-client:
   name: Social network clients
+  group: communication
   description: Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 
 social-network:
   name: Social networks
+  group: communication
   description: Self-hosted and federated social networks, for short public posts, photos and videos, or profiles, groups and an activity stream.
   selfHost: true
 
 realtime-messaging:
   name: Real-time messaging servers
+  group: data
   description: Push events from a backend to browsers and apps over WebSocket or Server-Sent Events, with channels and presence.
   selfHost: true
 
 mqtt-broker:
   name: MQTT brokers
+  group: infrastructure
   description: Route MQTT messages between devices and services.
   selfHost: true
 
 kafka-ui:
   name: Kafka web UIs
+  group: data
   description: Browse topics, messages, consumer groups and connectors of a Kafka cluster from a web UI.
 
 stream-processing:
   name: Stream processing
+  group: data
   description: Run continuous queries, joins and aggregations over event streams.
   selfHost: true
 
 data-transformation:
   name: Data transformation and semantic layers
+  group: data
   description: Build and test SQL and Python models inside a warehouse, and define metrics and dimensions once for BI tools and applications.
 
 data-catalog:
   name: Data catalogs
+  group: data
   description: Search, document and trace the lineage of tables, dashboards and pipelines across a data stack.
   selfHost: true
 
 data-quality:
   name: Data quality
+  group: data
   description: Declare tests on datasets and check them in pipelines.
 
 data-notebook:
   name: Data notebooks
+  group: data
   description: Notebooks that mix code, queries, charts and prose for data analysis.
 
 data-processing-engine:
   name: Data processing engines
+  group: data
   description: Run batch and streaming jobs over large datasets across a cluster.
   selfHost: true
 
 ldap-directory:
   name: Directory servers
+  group: security
   description: Keep users and groups in an LDAP directory that other systems authenticate against.
   selfHost: true
 
 authorization-service:
   name: Authorization services
+  group: security
   description: Decide who may do what in an application, with policies or relationship-based permissions served over an API.
   selfHost: true
 
 password-manager:
   name: Password managers
+  group: security
   description: Apps that keep passwords and other secrets in an encrypted vault on your own devices.
 
 certificate-authority:
   name: Certificate authorities
+  group: infrastructure
   description: Issue, renew and revoke X.509 certificates from a PKI you run.
   selfHost: true
 
 acme-client:
   name: Certificate automation
+  group: infrastructure
   description: "Request and renew TLS certificates over ACME from Let's Encrypt or another ACME authority."
 
 container-orchestration:
   name: Container orchestration
+  group: infrastructure
   description: Schedule and run containers across a cluster of machines, from full Kubernetes distributions to lighter schedulers.
   selfHost: true
 
 kubernetes-packaging:
   name: Kubernetes packaging
+  group: infrastructure
   description: Template, package and version Kubernetes manifests so one application can be installed and configured per environment.
 
 kubernetes-development:
   name: Kubernetes development
+  group: infrastructure
   description: Build, deploy and debug code against a Kubernetes cluster from a developer machine, with live reload or traffic proxied to the laptop.
 
 kubernetes-autoscaling:
   name: Kubernetes autoscaling
+  group: infrastructure
   description: Add and remove pods and nodes in a Kubernetes cluster as load and pending work change.
 
 container-networking:
   name: Container networking
+  group: infrastructure
   description: Pod networking, network policy and load balancer addresses for Kubernetes clusters, especially on bare metal.
 
 distributed-storage:
   name: Distributed storage
+  group: infrastructure
   description: Replicated block and file storage pooled from the disks of a cluster, often as persistent volumes for Kubernetes.
   selfHost: true
 
 kubernetes-backup:
   name: Kubernetes backup
+  group: infrastructure
   description: Back up and restore Kubernetes resources and persistent volumes, and migrate workloads between clusters.
   selfHost: true
 
 dns-server:
   name: DNS servers
+  group: infrastructure
   description: Authoritative and recursive DNS servers that host your zones and answer queries behind an API.
   selfHost: true
 
 container-image-tools:
   name: Container image tools
+  group: infrastructure
   description: Inspect, copy, sign and shrink OCI images and work with registries without a container daemon.
 
 video-player:
   name: Video players
+  group: media
   description: Play local video files and streams, or the library of your own media server.
 
 media-converter:
   name: Media converters
+  group: media
   description: Convert, compress and transcode video, audio and image files between formats.
 
 subtitle-editor:
   name: Subtitle editors
+  group: media
   description: Create, time and translate subtitles for video.
 
 image-viewer:
   name: Image viewers
+  group: media
   description: Browse and view images quickly, with light edits.
 
 digital-painting:
   name: Digital painting
+  group: media
   description: Paint and sketch on a raster canvas with a pen tablet, alone or with others.
 
 pixel-art:
   name: Pixel art editors
+  group: media
   description: Draw pixel art and animate sprites frame by frame.
 
 animation:
   name: 2D animation
+  group: media
   description: Draw, rig and tween 2D animation on a timeline and render it to video.
 
 ebook-reader:
   name: Ebook readers
+  group: media
   description: Read EPUB, PDF and comic files on a desktop, phone or e-ink device.
 
 font-editor:
   name: Font editors
+  group: media
   description: Draw glyphs, set spacing and kerning, and export fonts.
 
 3d-printing:
   name: 3D printing
+  group: media
   description: Slice models into G-code and control 3D printers.
 
 cad:
   name: CAD and PCB design
+  group: media
   description: Draft 2D drawings, model parametric 3D parts and lay out printed circuit boards for engineering and fabrication.
 
 3d-modeling:
   name: 3D modelling
+  group: media
   description: Model, process, texture and view 3D meshes and assets.
 
 game-engine:
   name: Game engines
+  group: games
   description: Build 2D and 3D games with an engine, an editor or a framework, design their maps and levels, and export them to desktop, mobile and the web.
 
 continuous-delivery:
   name: Continuous delivery
+  group: infrastructure
   description: Promote builds through environments with canary, blue-green and progressive rollouts, and roll back on failing metrics.
   selfHost: true
 
 serverless-platform:
   name: Serverless platforms
+  group: infrastructure
   description: Run functions and scale-to-zero services on your own cluster, triggered by HTTP requests or events.
   selfHost: true
 
 chaos-engineering:
   name: Chaos engineering
+  group: infrastructure
   description: Inject failures such as killed pods, network latency and resource pressure to test how systems hold up.
   selfHost: true
 
 cloud-cost:
   name: Cloud cost
+  group: infrastructure
   description: Estimate, allocate and cut cloud and Kubernetes spending, per team, workload or pull request.
   selfHost: true
 
 infrastructure-inventory:
   name: Infrastructure inventory
+  group: infrastructure
   description: Model racks, devices, cables, IP addresses and circuits as the source of truth for network and data centre automation.
   selfHost: true
 
 vulnerability-management:
   name: Vulnerability management
+  group: security
   description: Collect findings from scanners and SBOMs in one place, track them per product and follow them to a fix.
   selfHost: true
 
 dast-scanner:
   name: Web vulnerability scanners
+  group: security
   description: Probe running web applications and APIs for vulnerabilities from the outside.
 
 cloud-security-posture:
   name: Cloud security posture
+  group: security
   description: Audit cloud accounts and Kubernetes clusters against security benchmarks and report misconfigurations.
   selfHost: true
 
 security-audit:
   name: Host and network audits
+  group: security
   description: Scan servers, networks and TLS endpoints for missing patches, weak configuration and known vulnerabilities.
   selfHost: true
 
 secret-scanning:
   name: Secret scanners
+  group: security
   description: Find API keys, passwords and tokens committed to code, git history and other places they should not be.
 
 supply-chain-security:
   name: Software supply chain
+  group: security
   description: Generate software bills of materials, sign and verify artifacts, and assess the security practices of the projects you depend on.
 
 soar:
   name: Security orchestration and response
+  group: security
   description: Automate security response playbooks and track alerts and incidents as cases.
   selfHost: true
 
 threat-intelligence:
   name: Threat intelligence platforms
+  group: security
   description: Collect, enrich and share indicators of compromise and knowledge about threats.
   selfHost: true
 
 honeypot:
   name: Honeypots
+  group: security
   description: Decoy services that attract attackers and record what they try.
   selfHost: true
 
 malware-scanner:
   name: Malware scanners
+  group: security
   description: Scan files for malware with signatures, pattern rules or sandboxed execution.
   selfHost: true
 
 file-encryption:
   name: File and volume encryption
+  group: security
   description: Encrypt single files, folders or whole volumes before they are stored or synced.
 
 content-blocker:
   name: Content blockers
+  group: security
   description: Browser extensions that block ads, trackers and other unwanted content on web pages.
 
 secret-sharing:
   name: One-time secret sharing
+  group: security
   description: Share a password or other secret through a link that stops working once it is read.
   selfHost: true
 
 private-search:
   name: Private search engines
+  group: security
   description: Metasearch engines you host, which query other search engines without profiling who searches.
   selfHost: true
 
 web-browser:
   name: Web browsers
+  group: home
   description: Browsers for the desktop, built on an open source engine.
 
 reverse-engineering:
   name: Reverse engineering
+  group: development
   description: Disassemble, decompile and debug compiled programs without their source.
 
 remote-shell:
   name: Remote shell clients and servers
+  group: development
   description: Log in to other machines and run commands over an encrypted connection.
 
 compression:
   name: Compression
+  group: development
   description: Archive and compress files and streams.
 
 download-manager:
   name: Download managers and BitTorrent clients
+  group: home
   description: Fetch files and media from the web from a terminal or a queue, or download and seed them over BitTorrent.
 
 media-automation:
   name: Media library automation
+  group: media
   description: Search for, grab and organise TV shows, movies and other media for a home library.
   selfHost: true
 
 frontend-framework:
   name: Front-end frameworks
+  group: development
   description: Component frameworks for building browser user interfaces.
 
 app-framework:
   name: App frameworks
+  group: development
   description: Build desktop and mobile applications for several platforms from one codebase, often with web technologies.
 
 java-web-framework:
   name: Java web frameworks
+  group: development
   description: Frameworks for building web services and applications on the JVM.
 
 programming-language:
   name: Programming languages and compilers
+  group: development
   description: Language implementations with their compiler, interpreter and standard library, and compiler toolchains that turn source code into machine code.
 
 machine-learning-framework:
   name: Machine learning frameworks
+  group: ai
   description: Libraries for building and training machine learning models.
 
 gis:
   name: Geographic information systems
+  group: data
   description: Desktop and library tools for geospatial data.
 
 operating-system:
   name: Operating systems
+  group: infrastructure
   description: Kernels and complete operating systems with public source.
 
 window-manager:
   name: Window managers
+  group: home
   description: Tiling and stacking window managers and compositors for Linux desktops.
 
 version-control:
   name: Version control systems
+  group: development
   description: Track changes to source code and share them between people.
 
 network-analysis:
   name: Network analysis
+  group: infrastructure
   description: Capture and inspect network traffic and scan hosts.
 
 penetration-testing:
   name: Penetration testing
+  group: security
   description: Exploit frameworks and password recovery tools used in security assessments.
 
 cryptography-library:
   name: Cryptography libraries
+  group: security
   description: Libraries that implement TLS and cryptographic primitives for other software.

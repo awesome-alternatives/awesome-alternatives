@@ -57,6 +57,7 @@ export const id: Messages = {
     trendingLede: "Alat yang paling cepat tumbuh di GitHub, menurut persentase bintang yang didapat dalam {days} hari terakhir, atau sejak penghitungan dimulai jika lebih baru. Minimal {min} bintang baru untuk muncul.",
     browseLabel: "Jelajahi berdasarkan alat",
     allTools: "Semua alat",
+    groups: "Grup",
     categories: "Kategori",
     languages: "Bahasa",
     licenses: "Lisensi",
@@ -74,6 +75,15 @@ export const id: Messages = {
     ],
   },
 
+  group: {
+    title: "{name}: alternatif open source",
+    description: "{categories} kategori dan {tools} alat di {name}, dengan pilihan open source berdampingan.",
+    columnCategory: "Kategori",
+    columnTools: "Alat",
+    columnTop: "Bintang terbanyak",
+    all: "Semua grup",
+  },
+
   listing: {
     back: "← kembali",
     browse: "jelajahi",
@@ -81,6 +91,12 @@ export const id: Messages = {
   },
 
   index: {
+    groups: {
+      title: "Grup alat",
+      description: "{count} grup alat dan game, masing-masing dengan kategorinya dan pilihan dengan bintang terbanyak.",
+      heading: "Grup",
+      lede: "{count} grup, dari pengembangan hingga game.",
+    },
     alternatives: {
       title: "Alternatif untuk tool developer populer",
       description:

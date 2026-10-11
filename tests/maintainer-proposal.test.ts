@@ -12,8 +12,8 @@ import type { Category, Tool } from "../scripts/lib/types.ts";
 
 const COMMIT = "0123456789abcdef0123456789abcdef01234567";
 const categories = new Map<string, Category>([
-  ["search", { name: "Search", description: "d", capabilities: { ci: { label: "CI", match: [] } } }],
-  ["library", { name: "Library", description: "d" }],
+  ["search", { name: "Search", group: "g", description: "d", capabilities: { ci: { label: "CI", match: [] } } }],
+  ["library", { name: "Library", group: "g", description: "d" }],
 ]);
 
 function tool(over: Partial<Tool> = {}): Tool {

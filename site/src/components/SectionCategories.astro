@@ -1,0 +1,80 @@
+---
+import type { GroupDisplay } from "../../../scripts/lib/types.ts";
+import type { Locale } from "../i18n/index.ts";
+import { messages, pathFor, plural } from "../i18n/index.ts";
+import type { GridItem } from "../lib/types.ts";
+import LinkGrid from "./LinkGrid.astro";
+
+interface Row {
+  slug: string;
+  name: string;
+  description: string;
+  count: number;
+  top: { slug: string; name: string }[];
+}
+
+interface Props {
+  locale: Locale;
+  display: GroupDisplay;
+  rows: Row[];
+}
+
+const { locale, display, rows } = Astro.props;
+const m = messages(locale);
+const href = (slug: string) => pathFor(locale, `/categories/${slug}/`);
+const items: GridItem[] = rows.map((row) => ({
+  href: href(row.slug),
+  name: row.name,
+  detail: row.description,
+  count: row.count,
+}));
+---
+
+{
+  display === "table" && (
+    <table class="comparison section-table">
+      <thead>
+        <tr>
+          <th scope="col">{m.group.columnCategory}</th>
+          <th scope="col">{m.group.columnTools}</th>
+          <th scope="col">{m.group.columnTop}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            <th scope="row">
+              <a href={href(row.slug)}>{row.name}</a>
+            </th>
+            <td>{row.count}</td>
+            <td>
+              {row.top.map((tool, i) => (
+                <>
+                  {i > 0 && ", "}
+                  <a href={pathFor(locale, `/tools/${tool.slug}/`)}>{tool.name}</a>
+                </>
+              ))}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+{
+  display === "cards" && (
+    <ul class="section-cards">
+      {rows.map((row) => (
+        <li>
+          <a class="section-card" href={href(row.slug)}>
+            <span class="target-name">{row.name}</span>
+            <span class="target-category">{row.description}</span>
+            <span class="section-card-top">{row.top.map((tool) => tool.name).join(", ")}</span>
+            <span class="target-count">{plural(locale, m.listing.toolCount, row.count)} →</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+{display === "list" && <LinkGrid locale={locale} items={items} />}

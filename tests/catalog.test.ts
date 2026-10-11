@@ -4,10 +4,10 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { Ajv2020 } from "ajv/dist/2020.js";
-import { checkStructure, loadCatalog } from "../scripts/lib/catalog.ts";
+import { checkStructure, groupFindings, loadCatalog } from "../scripts/lib/catalog.ts";
 import type { Category, Product, Tool } from "../scripts/lib/types.ts";
 
-const categories = new Map<string, Category>([["release-automation", { name: "R", description: "D" }]]);
+const categories = new Map<string, Category>([["release-automation", { name: "R", group: "g", description: "D" }]]);
 
 function tool(slug: string, extra: Partial<Tool> = {}): Tool {
   return {
@@ -87,8 +87,8 @@ describe("checkStructure", () => {
 
 describe("deploy", () => {
   const kinds = new Map<string, Category>([
-    ["forge", { name: "F", description: "D", selfHost: true }],
-    ["cli", { name: "C", description: "D" }],
+    ["forge", { name: "F", group: "g", description: "D", selfHost: true }],
+    ["cli", { name: "C", group: "g", description: "D" }],
   ]);
   const check = (tool: Tool) =>
     checkStructure({ tools: [tool], products: [], categories: kinds }).map((f) => `${f.slug}:${f.code}`);
@@ -110,7 +110,7 @@ describe("capabilities", () => {
   const forges = new Map<string, Category>([
     [
       "release-automation",
-      { name: "R", description: "D", capabilities: { ci: { label: "CI/CD", match: ["ci"] } } },
+      { name: "R", group: "g", description: "D", capabilities: { ci: { label: "CI/CD", match: ["ci"] } } },
     ],
   ]);
   const check = (tool: Tool) =>
@@ -154,6 +154,7 @@ describe("loadCatalog", () => {
     const root = await mkdtemp(join(tmpdir(), "aa-"));
     await cp(join(import.meta.dirname, "../schema"), join(root, "schema"), { recursive: true });
     await cp(join(import.meta.dirname, "../data/categories.yaml"), join(root, "data/categories.yaml"));
+    await cp(join(import.meta.dirname, "../data/groups.yaml"), join(root, "data/groups.yaml"));
     await mkdir(join(root, "data/tools"), { recursive: true });
     for (const [name, body] of Object.entries(files)) await writeFile(join(root, "data/tools", name), body);
     if (Object.keys(products).length) await mkdir(join(root, "data/products"), { recursive: true });
@@ -218,12 +219,15 @@ describe("loadCatalog", () => {
       [
         "release-automation:",
         "  name: Release automation",
+        "  group: development",
         "  description: Version bumps.",
         "  selfhost: true",
         "changelog:",
         "  name: Changelog generation",
+        "  group: development",
         "ci:",
         "  name: CI",
+        "  group: development",
         "  description: Pipelines.",
         "  capabilities:",
         "    kubernetes:",
@@ -231,6 +235,7 @@ describe("loadCatalog", () => {
         "      match: []",
         "Bad_Slug:",
         "  name: Bad",
+        "  group: development",
         "  description: Bad.",
       ].join("\n"),
     );
@@ -244,6 +249,27 @@ describe("loadCatalog", () => {
         ["ci", "schema", "data/categories.yaml /capabilities/kubernetes/match must NOT have fewer than 1 items"],
       ],
     );
+  });
+
+  it("refuses a category whose group is not declared", () => {
+    const found = groupFindings(
+      new Map([
+        ["lint", { name: "Lint", group: "development", description: "D" }],
+        ["lost", { name: "Lost", group: "elsewhere", description: "D" }],
+      ]),
+      new Map([["development", { name: "Development", description: "D", display: "table" }]]),
+    );
+    assert.deepEqual(
+      found.map((f) => [f.slug, f.code]),
+      [["lost", "unknown-group"]],
+    );
+  });
+
+  it("holds data/groups.yaml to its schema", async () => {
+    const root = await fixture({});
+    await writeFile(join(root, "data/groups.yaml"), "development:\n  name: Development\n  description: D\n  display: mosaic\n");
+    const { findings } = await loadCatalog(root);
+    assert.ok(findings.some((f) => f.code === "schema" && f.message.startsWith("data/groups.yaml /development/display")));
   });
 
   it("accepts the categories the catalog declares", async () => {
@@ -368,6 +394,7 @@ describe("banned", () => {
     const root = await mkdtemp(join(tmpdir(), "aa-"));
     await cp(join(import.meta.dirname, "../schema"), join(root, "schema"), { recursive: true });
     await cp(join(import.meta.dirname, "../data/categories.yaml"), join(root, "data/categories.yaml"));
+    await cp(join(import.meta.dirname, "../data/groups.yaml"), join(root, "data/groups.yaml"));
     await mkdir(join(root, "data/tools"), { recursive: true });
     await writeFile(join(root, "data/tools/bad.yaml"), entry(banned));
     return loadCatalog(root);

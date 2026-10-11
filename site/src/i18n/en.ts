@@ -56,6 +56,7 @@ export const en = {
     trendingLede: "Fastest-growing tools on GitHub, by share of stars gained over the last {days} days, or since counting began if that is more recent. At least {min} new stars to appear.",
     browseLabel: "Browse by tool",
     allTools: "All tools",
+    groups: "Groups",
     categories: "Categories",
     languages: "Languages",
     licenses: "Licences",
@@ -73,6 +74,15 @@ export const en = {
     ],
   },
 
+  group: {
+    title: "{name}: open source alternatives",
+    description: "{categories} categories and {tools} tools in {name}, with the open source options side by side.",
+    columnCategory: "Category",
+    columnTools: "Tools",
+    columnTop: "Most starred",
+    all: "All groups",
+  },
+
   listing: {
     back: "← back",
     browse: "browse",
@@ -80,6 +90,12 @@ export const en = {
   },
 
   index: {
+    groups: {
+      title: "Developer tool groups",
+      description: "{count} groups of tools and games, each with its categories and the most starred options.",
+      heading: "Groups",
+      lede: "{count} groups, from development to games.",
+    },
     alternatives: {
       title: "Alternatives to popular developer tools",
       description:

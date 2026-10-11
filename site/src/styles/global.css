@@ -1378,6 +1378,49 @@ h1 .mark-archived {
   white-space: nowrap;
 }
 
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--raised);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.section-cards li {
+  background: var(--bg);
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 22px 20px;
+}
+
+.section-card:hover {
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.section-card:focus-visible {
+  outline-offset: -2px;
+}
+
+.section-card-top {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+}
+
+.section-table {
+  white-space: normal;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
