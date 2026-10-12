@@ -124,11 +124,14 @@ export function comparableWith<T extends PairTool>(pairs: readonly Pair<T>[], sl
     .map((pair) => (pair.a.slug === slug ? pair.b.slug : pair.a.slug));
 }
 
-export function pairForTool<T extends PairTool>(pairs: readonly Pair<T>[], slug: string): Pair<T> | null {
+export function pairsForTool<T extends PairTool>(pairs: readonly Pair<T>[], slug: string, limit: number): Pair<T>[] {
   const partnerStars = (pair: Pair<T>) => (pair.a.slug === slug ? pair.b.repo.stars : pair.a.repo.stars);
-  return (
-    pairs
-      .filter((pair) => pair.a.slug === slug || pair.b.slug === slug)
-      .sort((x, y) => y.edges.length - x.edges.length || partnerStars(y) - partnerStars(x))[0] ?? null
-  );
+  return pairs
+    .filter((pair) => pair.a.slug === slug || pair.b.slug === slug)
+    .toSorted((x, y) => y.edges.length - x.edges.length || partnerStars(y) - partnerStars(x))
+    .slice(0, limit);
+}
+
+export function pairForTool<T extends PairTool>(pairs: readonly Pair<T>[], slug: string): Pair<T> | null {
+  return pairsForTool(pairs, slug, 1)[0] ?? null;
 }

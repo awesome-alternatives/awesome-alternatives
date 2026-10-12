@@ -3,7 +3,7 @@ import { test } from "node:test";
 
 import type { ReleaseEntry, Replacement } from "../../scripts/lib/types.ts";
 import { cadenceDays } from "../src/lib/cadence.ts";
-import { comparableWith, comparePairs, comparePath, pairForTool, pairSlug } from "../src/lib/compare.ts";
+import { comparableWith, comparePairs, comparePath, pairForTool, pairsForTool, pairSlug } from "../src/lib/compare.ts";
 
 interface Fixture {
   slug: string;
@@ -149,6 +149,23 @@ test("a tool page offers a tool it has an edge with before one it merely shares 
   ]);
   assert.equal(pairForTool(pairs, "ferrflow")?.slug, "ferrflow-vs-semantic-release");
   assert.equal(pairForTool(pairs, "unlisted"), null);
+});
+
+test("a tool page lists its comparisons by edge first, then by partner stars, up to the limit", () => {
+  const pairs = comparePairs([
+    tool("ferrflow", [replacement("semantic-release", "Rust workspaces only.")], 900),
+    tool("cocogitto", [replacement("semantic-release", "Conventional commits only.")], 50_000),
+    tool("release-plz", [replacement("semantic-release", "Cargo only.")], 3_000),
+    tool("semantic-release", [], 20_000),
+  ]);
+  assert.deepEqual(
+    pairsForTool(pairs, "ferrflow", 5).map((pair) => pair.slug),
+    ["ferrflow-vs-semantic-release", "cocogitto-vs-ferrflow", "ferrflow-vs-release-plz"],
+  );
+  assert.deepEqual(
+    pairsForTool(pairs, "ferrflow", 2).map((pair) => pair.slug),
+    ["ferrflow-vs-semantic-release", "cocogitto-vs-ferrflow"],
+  );
 });
 
 test("release cadence is the median gap between stable releases", () => {

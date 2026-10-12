@@ -44,6 +44,7 @@ const crumbs = withHome(locale, m.breadcrumb.home, [
     : []),
   { name: title, href: pathFor(locale, `/alternatives/${target.slug}/`) },
 ]);
+const summary = targetDescription(locale, m.target, target.name, target.slug, target.alternatives);
 const notes = (await migrationPairs()).filter((pair) => pair.from === target.slug).map((pair) => pair.to);
 const shown = new Set(target.alternatives.map((tool) => tool.slug));
 const headToHead = pairs.filter((pair) => shown.has(pair.a.slug) && shown.has(pair.b.slug));
@@ -60,7 +61,7 @@ const structuredData = [
   title={pageTitle}
   image={{ path: socialImagePath(`/alternatives/${target.slug}/`), alt: title }}
   structuredData={structuredData}
-  description={targetDescription(locale, m.target, target.name, target.slug, target.alternatives)}
+  description={summary}
 >
   <Breadcrumbs locale={locale} crumbs={crumbs} />
   <p class="context">
@@ -78,6 +79,8 @@ const structuredData = [
       </p>
     )
   }
+
+  <p class="lede">{summary}</p>
 
   <section class="page-section">
     <h2>{m.target.comparison}</h2>

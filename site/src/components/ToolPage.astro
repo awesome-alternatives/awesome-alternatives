@@ -15,7 +15,7 @@ import { withHome } from "../lib/breadcrumbs.ts";
 import { canonicalForTool } from "../lib/canonical.ts";
 import { socialImagePath } from "../lib/socialImage.ts";
 import { categories, checkedAt, nameOf, ownerFacts, ownerHref, ownerName, pairs, tools } from "../lib/catalog.ts";
-import { comparePath, pairForTool } from "../lib/compare.ts";
+import { comparePath, pairsForTool } from "../lib/compare.ts";
 import { loginOf } from "../lib/owners.ts";
 import { alternativesTo, byStanding } from "../lib/filter.ts";
 import { day, stars } from "../lib/format.ts";
@@ -71,10 +71,12 @@ const replaces = tool.replaces.map((r) => ({
   migration: r.migration ?? null,
   notes: withNotes.has(r.tool) ? pathFor(locale, migrationPath(r.tool, tool.slug)) : null,
 }));
+const RELATED_COMPARISONS = 5;
 const login = loginOf(repo.fullName);
 const ownerKind = ownerFacts(login)?.kind;
-const comparable = pairForTool(pairs, tool.slug);
-const counterpart = comparable && (comparable.a.slug === tool.slug ? comparable.b : comparable.a);
+const comparisons = pairsForTool(pairs, tool.slug, RELATED_COMPARISONS).map((pair) =>
+  pair.a.slug === tool.slug ? pair.b : pair.a,
+);
 const feed = pathFor(locale, `/tools/${tool.slug}/feed.xml`);
 const title = toolTitle(locale, m.tool, tool, category?.name.toLowerCase() ?? tool.category, nameOf);
 const canonical = canonicalForTool(tool.slug, replacedBy.length);
@@ -235,12 +237,16 @@ const canonical = canonicalForTool(tool.slug, replacedBy.length);
         </p>
 
         {
-          counterpart && (
-            <p class="compare-link">
-              <a href={pathFor(locale, comparePath(tool.slug, counterpart.slug))}>
-                {format(m.compare.entry, { a: tool.name, b: counterpart.name })}
-              </a>
-            </p>
+          comparisons.length > 0 && (
+            <ul class="pair-links compare-links">
+              {comparisons.map((counterpart) => (
+                <li>
+                  <a href={pathFor(locale, comparePath(tool.slug, counterpart.slug))}>
+                    {format(m.compare.entry, { a: tool.name, b: counterpart.name })}
+                  </a>
+                </li>
+              ))}
+            </ul>
           )
         }
 
