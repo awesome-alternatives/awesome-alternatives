@@ -1,8 +1,0 @@
-name: Xonotic
-repository: https://github.com/xonotic/xonotic
-category: first-person-shooter-game
-replaces:
-  - tool: quake-iii-arena
-    fit: full
-    note: Arena-style first person shooter with its own maps, weapons and assets; the GitHub repository is a mirror of the GitLab home.
-terms: open

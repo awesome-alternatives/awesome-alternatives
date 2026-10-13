@@ -1,7 +1,0 @@
-name: fheroes2
-repository: https://github.com/ihhub/fheroes2
-category: turn-based-strategy-game
-replaces:
-  - tool: heroes-of-might-and-magic-ii
-    fit: full
-    note: Recreation of the Heroes II engine. Needs the original game data, or the free demo version.

@@ -1,7 +1,0 @@
-name: Open Surge
-repository: https://github.com/alemart/opensurge
-category: platformer-game
-replaces:
-  - tool: sonic-the-hedgehog
-    fit: partial
-    note: 2D engine and game in the spirit of 16-bit Sonic platformers, starring its own character, Surge the Rabbit.

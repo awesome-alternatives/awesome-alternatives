@@ -1,7 +1,0 @@
-name: Open Rails
-repository: https://github.com/openrails/openrails
-category: simulation-management-game
-replaces:
-  - tool: train-simulator-classic
-    fit: partial
-    note: "Free GPL-3.0 train simulator that runs a large range of existing route and train content rather than the Dovetail game's own."

@@ -1,8 +1,0 @@
-name: Micropolis
-repository: https://github.com/SimHacker/micropolis
-category: simulation-management-game
-terms: open
-replaces:
-  - tool: simcity
-    fit: full
-    note: "GPL source release of the original SimCity Classic under the name Micropolis; the maintainer points to MicropolisCore for new development."

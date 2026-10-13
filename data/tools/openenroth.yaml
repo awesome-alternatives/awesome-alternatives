@@ -1,7 +1,0 @@
-name: OpenEnroth
-repository: https://github.com/OpenEnroth/OpenEnroth
-category: role-playing-game
-replaces:
-  - tool: might-and-magic-vii
-    fit: full
-    note: Reimplementation of the Might and Magic VI-VIII engine that needs the original game data. Only MM7 is playable at the moment.

@@ -1,8 +1,0 @@
-name: Simutrans
-repository: https://github.com/simutrans/simutrans
-category: simulation-management-game
-terms: open
-replaces:
-  - tool: transport-tycoon-deluxe
-    fit: full
-    note: "Own transport simulator with passengers, mail and goods by rail, road, ship and air; code under the Artistic License, not TTD-compatible."

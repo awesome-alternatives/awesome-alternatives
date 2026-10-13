@@ -1,7 +1,0 @@
-name: FreeCol
-repository: https://github.com/FreeCol/freecol
-category: turn-based-strategy-game
-replaces:
-  - tool: sid-meiers-colonization
-    fit: full
-    note: Turn-based strategy game based on Colonization, with its own engine and data.

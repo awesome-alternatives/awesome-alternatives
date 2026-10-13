@@ -1,8 +1,0 @@
-name: Fallout 2 Community Edition
-repository: https://github.com/alexbatalov/fallout2-ce
-category: role-playing-game
-terms: source-available
-replaces:
-  - tool: fallout-2
-    fit: drop-in
-    note: Drop-in replacement for fallout2.exe that uses the data of your own copy. The licence limits use to internal business or non-commercial use.

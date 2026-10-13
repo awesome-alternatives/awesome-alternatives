@@ -1,8 +1,0 @@
-name: OpenTTD
-repository: https://github.com/OpenTTD/OpenTTD
-category: simulation-management-game
-terms: open
-replaces:
-  - tool: transport-tycoon-deluxe
-    fit: drop-in
-    note: "GPL-2.0 re-implementation that loads the original game's graphics, sound and music when copied into baseset/; free replacement sets are separate."

@@ -1,8 +1,0 @@
-name: Yorg
-repository: https://github.com/cflavio/yorg
-category: racing-game
-terms: open
-replaces:
-  - tool: mario-kart
-    fit: partial
-    note: "Panda3D racing game with weapons; code is GPL-3.0, assets are CC BY-SA or other CC licenses."

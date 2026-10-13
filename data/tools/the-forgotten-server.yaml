@@ -1,7 +1,0 @@
-name: The Forgotten Server
-repository: https://github.com/otland/forgottenserver
-category: role-playing-game
-replaces:
-  - tool: tibia
-    fit: partial
-    note: Free MMORPG server emulator, a fork of OpenTibia Server, so you can host your own world. It does not connect to the official game.

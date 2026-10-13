@@ -1,7 +1,0 @@
-name: OpenRA
-repository: https://github.com/OpenRA/OpenRA
-category: real-time-strategy-game
-replaces:
-  - tool: command-and-conquer-red-alert
-    fit: full
-    note: Reimplementation of Red Alert on its own engine, which also runs Tiberian Dawn and Dune 2000 mods.

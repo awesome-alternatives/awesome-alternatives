@@ -1,7 +1,0 @@
-name: Woof
-repository: https://github.com/fabiangreffrath/woof
-category: first-person-shooter-game
-replaces:
-  - tool: doom
-    fit: full
-    note: Continuation of the MBF source port for modern systems, with widescreen rendering and uncapped frame rate.

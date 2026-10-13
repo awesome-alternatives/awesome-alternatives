@@ -1,7 +1,0 @@
-name: CorsixTH
-repository: https://github.com/CorsixTH/CorsixTH
-category: simulation-management-game
-replaces:
-  - tool: theme-hospital
-    fit: full
-    note: "Re-implementation that needs graphics, sound and data from the original Theme Hospital; adds modern resolutions and platforms."

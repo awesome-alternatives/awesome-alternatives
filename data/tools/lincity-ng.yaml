@@ -1,7 +1,0 @@
-name: LinCity-NG
-repository: https://github.com/lincity-ng/lincity-ng
-category: simulation-management-game
-replaces:
-  - tool: simcity
-    fit: partial
-    note: "GPL-2.0 city simulation game in the style of SimCity, with its own rules and assets."

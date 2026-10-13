@@ -1,7 +1,0 @@
-name: ezQuake
-repository: https://github.com/QW-Group/ezquake-source
-category: first-person-shooter-game
-replaces:
-  - tool: quake
-    fit: partial
-    note: QuakeWorld multiplayer client only; needs pak0.pak and pak1.pak from the original Quake.

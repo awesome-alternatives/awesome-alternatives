@@ -1,7 +1,0 @@
-name: "Prism Launcher"
-repository: https://github.com/PrismLauncher/PrismLauncher
-category: minecraft-launcher
-replaces:
-  - tool: minecraft-launcher
-    fit: full
-    note: "Manages multiple isolated instances, mod loaders and modpacks; still requires a Minecraft account."

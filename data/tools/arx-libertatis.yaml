@@ -1,7 +1,0 @@
-name: Arx Libertatis
-repository: https://github.com/arx/ArxLibertatis
-category: role-playing-game
-replaces:
-  - tool: arx-fatalis
-    fit: full
-    note: Cross-platform port based on the released Arx Fatalis source code. Needs the original game data.

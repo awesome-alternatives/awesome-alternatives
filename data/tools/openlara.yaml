@@ -1,7 +1,0 @@
-name: OpenLara
-repository: https://github.com/XProger/OpenLara
-category: game-engine-recreation
-replaces:
-  - tool: tomb-raider
-    fit: partial
-    note: Engine reimplementation of classic Tomb Raider; the README links a WebGL build with a demo level.

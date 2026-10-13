@@ -1,7 +1,0 @@
-name: Stockfish
-repository: https://github.com/official-stockfish/Stockfish
-category: chess-engine
-replaces:
-  - tool: fritz
-    fit: partial
-    note: UCI chess engine with no board interface of its own; needs a GUI to play or analyse.

@@ -1,7 +1,0 @@
-name: OpenGOAL
-repository: https://github.com/open-goal/jak-project
-category: game-engine-recreation
-replaces:
-  - tool: jak-and-daxter
-    fit: full
-    note: PC port of the Jak trilogy; requires the player's own PS2 copy of the game, no assets are included.

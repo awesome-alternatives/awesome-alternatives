@@ -1,7 +1,0 @@
-name: Pokemon Showdown
-repository: https://github.com/smogon/pokemon-showdown
-category: board-game
-replaces:
-  - tool: pokemon
-    fit: partial
-    note: "Battle simulator only: no catching, exploration or story mode."

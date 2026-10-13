@@ -1,7 +1,0 @@
-name: "Nukkit"
-repository: https://github.com/CloudburstMC/Nukkit
-category: minecraft-bedrock-server
-replaces:
-  - tool: minecraft-bedrock-dedicated-server
-    fit: full
-    note: "Bedrock server written in Java with its own plugin API."

@@ -1,7 +1,0 @@
-name: ScummVM
-repository: https://github.com/scummvm/scummvm
-category: game-engine-recreation
-replaces:
-  - tool: monkey-island
-    fit: full
-    note: Runs LucasArts and many other classic adventure games, but only from the original game data files, which it does not include.

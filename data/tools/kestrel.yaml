@@ -1,7 +1,0 @@
-name: Kestrel
-repository: https://github.com/wesfly/kestrel
-category: simulation-management-game
-replaces:
-  - tool: microsoft-flight-simulator
-    fit: partial
-    note: "Early-development GPL-3.0 flight simulator in Rust and Bevy with three aircraft and real-world elevation terrain."

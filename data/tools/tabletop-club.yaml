@@ -1,7 +1,0 @@
-name: Tabletop Club
-repository: https://github.com/drwhut/tabletop-club
-category: board-game
-replaces:
-  - tool: tabletop-simulator
-    fit: full
-    note: Physics-based 3D tabletop game platform made with the Godot Engine.

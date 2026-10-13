@@ -1,7 +1,0 @@
-name: OpenJazz
-repository: https://github.com/AlisterT/openjazz
-category: platformer-game
-replaces:
-  - tool: jazz-jackrabbit
-    fit: full
-    note: Open source version of the Jazz Jackrabbit games; needs the files from one of the original games.

@@ -1,7 +1,0 @@
-name: OpenMW
-repository: https://github.com/OpenMW/openmw
-category: role-playing-game
-replaces:
-  - tool: the-elder-scrolls-iii-morrowind
-    fit: full
-    note: Engine that plays Morrowind from your own copy of the game data. Many existing mods work, some break, and original saves are not read.

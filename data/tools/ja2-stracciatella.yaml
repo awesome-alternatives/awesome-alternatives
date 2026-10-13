@@ -1,8 +1,0 @@
-name: JA2-Stracciatella
-repository: https://github.com/ja2-stracciatella/ja2-stracciatella
-category: turn-based-strategy-game
-terms: source-available
-replaces:
-  - tool: jagged-alliance-2
-    fit: full
-    note: Ports Jagged Alliance 2 to current platforms. Uses the data files of an installed original. Source licence is non-commercial.

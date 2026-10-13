@@ -1,7 +1,0 @@
-name: NXEngine-evo
-repository: https://github.com/nxengine/nxengine-evo
-category: game-engine-recreation
-replaces:
-  - tool: cave-story
-    fit: full
-    note: SDL2 refactor of NXEngine with widescreen, localization and initial mod support.

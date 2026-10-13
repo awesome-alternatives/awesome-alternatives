@@ -1,7 +1,0 @@
-name: "Craft"
-repository: https://github.com/fogleman/Craft
-category: sandbox-game
-replaces:
-  - tool: minecraft-java-edition
-    fit: partial
-    note: "A few thousand lines of C with simple terrain, about ten block types and a Python multiplayer server."

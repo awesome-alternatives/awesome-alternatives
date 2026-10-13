@@ -1,5 +1,0 @@
-name: "Minecraft Bedrock Dedicated Server"
-homepage: https://www.minecraft.net/en-us/download/server/bedrock
-vendor: "Mojang Studios"
-category: minecraft-bedrock-server
-description: "Mojang's closed-source server software for Minecraft: Bedrock Edition, configured through properties files and the official add-on APIs."

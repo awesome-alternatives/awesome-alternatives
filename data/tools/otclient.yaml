@@ -1,8 +1,0 @@
-name: OTClient
-repository: https://github.com/opentibiabr/otclient
-category: role-playing-game
-terms: open
-replaces:
-  - tool: tibia
-    fit: partial
-    note: Alternative Tibia client with a Lua-scripted interface, meant for OpenTibia servers.

@@ -1,7 +1,0 @@
-name: "ET: Legacy"
-repository: https://github.com/etlegacy/etlegacy
-category: first-person-shooter-game
-replaces:
-  - tool: wolfenstein-enemy-territory
-    fit: drop-in
-    note: Engine and mod that stay compatible with ET 2.60b and as many of its mods as possible.

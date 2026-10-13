@@ -1,8 +1,0 @@
-name: "Manic Digger"
-repository: https://github.com/manicdigger/manicdigger
-category: sandbox-game
-replaces:
-  - tool: minecraft-java-edition
-    fit: partial
-    note: "Voxel building game with creative and survival modes and a server-side modding API; survival mode has no mobs."
-terms: open

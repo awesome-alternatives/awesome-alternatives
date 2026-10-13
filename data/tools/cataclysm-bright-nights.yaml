@@ -1,8 +1,0 @@
-name: Cataclysm Bright Nights
-repository: https://github.com/cataclysmbnteam/Cataclysm-BN
-category: roguelike-game
-terms: open
-replaces:
-  - tool: project-zomboid
-    fit: partial
-    note: Fork of Cataclysm DDA with its own balance and mod registry, a turn-based survival game in text or tiles.

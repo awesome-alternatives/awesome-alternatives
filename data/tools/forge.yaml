@@ -1,7 +1,0 @@
-name: Forge
-repository: https://github.com/Card-Forge/forge
-category: board-game
-replaces:
-  - tool: magic-the-gathering-arena
-    fit: partial
-    note: "Rules engine for Magic: The Gathering with single-player AI and online play; not affiliated with Wizards of the Coast."

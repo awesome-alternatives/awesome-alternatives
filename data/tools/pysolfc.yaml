@@ -1,7 +1,0 @@
-name: PySolFC
-repository: https://github.com/shlomif/PySolFC
-category: board-game
-replaces:
-  - tool: microsoft-solitaire-collection
-    fit: full
-    note: Collection of Solitaire games for Linux, Windows and macOS.

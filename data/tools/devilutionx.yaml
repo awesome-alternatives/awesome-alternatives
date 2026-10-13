@@ -1,8 +1,0 @@
-name: DevilutionX
-repository: https://github.com/diasurgical/devilutionX
-category: role-playing-game
-terms: source-available
-replaces:
-  - tool: diablo
-    fit: full
-    note: Port of Diablo and Hellfire that reads DIABDAT.MPQ from the original game. The licence limits use to internal business or non-commercial use.

@@ -1,7 +1,0 @@
-name: GZDoom
-repository: https://github.com/ZDoom/gzdoom
-category: first-person-shooter-game
-replaces:
-  - tool: doom
-    fit: drop-in
-    note: OpenGL and Vulkan source port for Doom engine games; plays Doom and Doom II WADs and mods but ships no game data.

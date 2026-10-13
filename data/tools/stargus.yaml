@@ -1,7 +1,0 @@
-name: Stargus
-repository: https://github.com/Wargus/stargus
-category: real-time-strategy-game
-replaces:
-  - tool: starcraft
-    fit: partial
-    note: Runs StarCraft on the Stratagus engine and extracts its data from an installed copy of the original game.

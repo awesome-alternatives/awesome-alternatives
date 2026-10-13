@@ -1,7 +1,0 @@
-name: Freeciv
-repository: https://github.com/freeciv/freeciv
-category: turn-based-strategy-game
-replaces:
-  - tool: civilization-ii
-    fit: partial
-    note: Ships civ1 and civ2 style rulesets. Uses its own data and saves, not the original's files.

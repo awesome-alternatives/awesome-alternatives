@@ -1,8 +1,0 @@
-name: Red Eclipse
-repository: https://github.com/redeclipse/base
-category: first-person-shooter-game
-replaces:
-  - tool: quake-iii-arena
-    fit: partial
-    note: Arena shooter with parkour movement, an in-game cooperative map editor and its own assets; the code is under the zlib licence.
-terms: open

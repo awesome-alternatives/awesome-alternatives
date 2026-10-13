@@ -1,7 +1,0 @@
-name: Jazz² Resurrection
-repository: https://github.com/deathkiller/jazz2-native
-category: platformer-game
-replaces:
-  - tool: jazz-jackrabbit-2
-    fit: drop-in
-    note: "Reimplementation of Jazz Jackrabbit 2 that reads the original game directory and supports its Shareware, Holiday Hare '98, Secret Files and Christmas Chronicles versions."

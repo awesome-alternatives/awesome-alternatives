@@ -1,7 +1,0 @@
-name: "Terasology"
-repository: https://github.com/MovingBlocks/Terasology
-category: sandbox-game
-replaces:
-  - tool: minecraft-java-edition
-    fit: partial
-    note: "Started as a Minecraft-inspired tech demo and is now a module-based voxel platform; code is Apache-2.0, art CC BY 4.0."

@@ -1,8 +1,0 @@
-name: "ClassiCube"
-repository: https://github.com/ClassiCube/ClassiCube
-category: sandbox-game
-replaces:
-  - tool: minecraft-classic
-    fit: full
-    note: "Clean-room client for the Minecraft Classic experience; it does not support survival or modern Minecraft servers."
-terms: open

@@ -1,7 +1,0 @@
-name: PokerTH
-repository: https://github.com/pokerth/pokerth
-category: board-game
-replaces:
-  - tool: pokerstars
-    fit: partial
-    note: Texas Hold'em against up to nine computer opponents or people online; no real-money gambling.

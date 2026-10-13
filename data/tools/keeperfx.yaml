@@ -1,7 +1,0 @@
-name: KeeperFX
-repository: https://github.com/dkfans/keeperfx
-category: real-time-strategy-game
-replaces:
-  - tool: dungeon-keeper
-    fit: full
-    note: Remake of Dungeon Keeper with higher resolutions and modding. Needs the original game files.

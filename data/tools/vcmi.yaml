@@ -1,7 +1,0 @@
-name: VCMI
-repository: https://github.com/vcmi/vcmi
-category: turn-based-strategy-game
-replaces:
-  - tool: heroes-of-might-and-magic-iii
-    fit: full
-    note: Open-source recreation of the Heroes III engine with new and extended possibilities.

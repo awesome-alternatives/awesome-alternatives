@@ -1,8 +1,0 @@
-name: Cataclysm DDA
-repository: https://github.com/CleverRaven/Cataclysm-DDA
-category: roguelike-game
-terms: open
-replaces:
-  - tool: project-zomboid
-    fit: partial
-    note: Turn-based survival in a post-apocalyptic world with crafting, base building and vehicles, viewed from above in text or tiles.

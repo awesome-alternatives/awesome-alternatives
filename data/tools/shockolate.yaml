@@ -1,7 +1,0 @@
-name: Shockolate
-repository: https://github.com/Interrupt/systemshock
-category: role-playing-game
-replaces:
-  - tool: system-shock
-    fit: full
-    note: Cross-platform source port based on the released System Shock source. Needs the original CD-ROM or Enhanced Edition assets.

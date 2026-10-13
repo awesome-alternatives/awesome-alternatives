@@ -1,7 +1,0 @@
-name: "PowerNukkitX"
-repository: https://github.com/PowerNukkitX/PowerNukkitX
-category: minecraft-bedrock-server
-replaces:
-  - tool: minecraft-bedrock-dedicated-server
-    fit: full
-    note: "Bedrock server in Java with custom items and blocks support."
