@@ -1,0 +1,8 @@
+name: looot-seo
+repository: https://github.com/loootai/looot-seo
+category: seo
+replaces:
+  - tool: semrush
+    fit: partial
+    note: Rank tracking, keyword research, SERP snapshots, competitors and backlinks in a self-hosted Next.js app. Live data needs a paid looot API key, and each refresh shows its price first.
+affiliation: Maintained by the looot team, who sell the API it calls.
