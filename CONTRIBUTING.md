@@ -51,8 +51,10 @@ replaces:
   CI fails the entry for a key outside the category's list or a link that does not answer. A new
   capability for a category is its own pull request, with the `label` people see and the `match`
   phrases search reads it from, in every language the site speaks.
-- `affiliation` is required if you maintain, work on, or are paid by the tool. Listing your own
-  project is welcome; not saying so is grounds for removal.
+- `affiliation` is only for a tie between the tool and this directory or the people who run it,
+  such as a tool made by the maintainers of awesome-alternatives. Say so there. Maintaining or
+  working on a tool you list is not an affiliation: leave the field out and
+  [verify the entry](#verifying-a-tool-you-maintain) instead.
 - `terms` says what the licence lets people do, and is usually left out. When GitHub detects an
   open source licence such as MIT or Apache, the entry reads as open on its own. Set it only when
   that reading would be wrong or missing, and base it on the licence text in the repository, not

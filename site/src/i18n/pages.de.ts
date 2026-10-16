@@ -107,7 +107,7 @@ export const pages: Pages = {
     },
     affiliation: {
       heading: "Verbindung zum Tool",
-      body: "Wer ein Tool pflegt, daran arbeitet oder dafür bezahlt wird, muss das im Eintrag angeben. Das eigene Projekt einzutragen ist willkommen, es zu verschweigen ist ein Grund für die Entfernung. Hat ein Eintrag eine Verbindung, zeigt die Tool-Seite sie im Wortlaut.",
+      body: "Das Feld für die Verbindung gibt eine Beziehung zwischen einem Tool und diesem Verzeichnis oder den Personen dahinter an, etwa ein Tool der Betreuer von awesome-alternatives. Hat ein Eintrag eine, zeigt die Tool-Seite sie im Wortlaut. Ein Tool, das man pflegt und listet, ist keine solche Verbindung: Man lässt den Eintrag stattdessen verifizieren, und seine Seite zeigt, dass seine Betreuer dafür einstehen.",
     },
     search: {
       heading: "Wie die Suche funktioniert",

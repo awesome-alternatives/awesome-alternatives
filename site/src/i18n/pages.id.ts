@@ -106,7 +106,7 @@ export const pages: Pages = {
     },
     affiliation: {
       heading: "Afiliasi",
-      body: "Siapa pun yang memelihara, mengerjakan, atau dibayar oleh sebuah alat wajib menyatakannya di entri alat itu. Mencantumkan proyek Anda sendiri dipersilakan, tidak menyatakannya bisa menjadi alasan penghapusan. Jika sebuah entri memiliki afiliasi, halaman alat menampilkannya apa adanya.",
+      body: "Kolom afiliasi dipakai untuk menyatakan hubungan antara sebuah alat dan direktori ini atau orang-orang yang menjalankannya, misalnya alat buatan pemelihara awesome-alternatives. Jika sebuah entri memilikinya, halaman alat menampilkannya apa adanya. Memelihara alat yang Anda daftarkan bukan afiliasi: verifikasi saja entrinya, dan halamannya akan menyatakan bahwa pemeliharanya menjaminnya.",
     },
     search: {
       heading: "Cara kerja pencarian",

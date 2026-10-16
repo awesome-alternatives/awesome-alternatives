@@ -106,7 +106,7 @@ export const pages: Pages = {
     },
     affiliation: {
       heading: "Afiliación",
-      body: "Quien mantiene una herramienta, trabaja en ella o cobra por ella tiene que decirlo en su entrada. Incluir tu propio proyecto es bienvenido, no decirlo es motivo de retirada. Cuando una entrada tiene una afiliación, la página de la herramienta la muestra tal como está escrita.",
+      body: "El campo de afiliación sirve para declarar un vínculo entre una herramienta y este directorio o las personas que lo llevan, por ejemplo una herramienta creada por quienes mantienen awesome-alternatives. Cuando una entrada tiene una, la página de la herramienta la muestra tal como está escrita. Mantener una herramienta que se lista no es una afiliación: basta con verificar la entrada, y su página indica que sus mantenedores la avalan.",
     },
     search: {
       heading: "Cómo funciona la búsqueda",

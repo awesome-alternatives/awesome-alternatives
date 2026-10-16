@@ -108,7 +108,7 @@ export const pages: Pages = {
     },
     affiliation: {
       heading: "Affiliation",
-      body: "Qui maintient un outil, y contribue ou en est rémunéré doit le déclarer dans son entrée. Référencer son propre projet est bienvenu, ne pas le dire est un motif de retrait. Quand une entrée porte une affiliation, la page de l'outil l'affiche telle qu'elle est écrite.",
+      body: "Le champ affiliation sert à déclarer un lien entre un outil et cet annuaire ou les personnes qui le tiennent, par exemple un outil créé par les mainteneurs d'awesome-alternatives. Quand une entrée en porte une, la page de l'outil l'affiche telle qu'elle est écrite. Maintenir un outil qu'on référence n'est pas une affiliation : il suffit de faire vérifier l'entrée, et sa page indique que ses mainteneurs s'en portent garants.",
     },
     search: {
       heading: "Comment fonctionne la recherche",
