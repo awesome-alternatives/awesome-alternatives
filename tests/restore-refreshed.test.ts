@@ -55,4 +55,18 @@ describe("restore-refreshed.sh", () => {
     restore();
     assert.equal(await readFile(message, "utf8"), await readFile(drafted, "utf8"));
   });
+
+  it("keeps the README outside the catalog markers from the new main and takes the catalog block from the refresh", async () => {
+    const { work, restore } = await setup();
+    await writeFile(join(work, "README.md"), "new badges\n<!-- catalog:start -->\n\nold index\n\n<!-- catalog:end -->\nnew footer\n");
+    await writeFile(
+      join(work, "..", "refreshed", "README.md"),
+      "old badges\n<!-- catalog:start -->\n\nfresh index\n\n<!-- catalog:end -->\nold footer\n",
+    );
+    restore();
+    assert.equal(
+      await readFile(join(work, "README.md"), "utf8"),
+      "new badges\n<!-- catalog:start -->\n\nfresh index\n\n<!-- catalog:end -->\nnew footer\n",
+    );
+  });
 });
