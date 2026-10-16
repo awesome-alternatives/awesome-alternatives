@@ -4,9 +4,9 @@ Send documents for signature and collect legally binding signatures online.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [DocuSeal](https://github.com/docusealco/docuseal) | Ruby | AGPL-3.0 | [3.3.2](https://github.com/docusealco/docuseal/releases/tag/3.3.2) signed | 18711 | DocuSign (partial) |
-| [Documenso](https://github.com/documenso/documenso) | TypeScript | AGPL-3.0 | [v2.20.0](https://github.com/documenso/documenso/releases/tag/v2.20.0) | 15409 | DocuSign (full) |
-| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | JavaScript | Other | [v2.41.3](https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.3) signed | 7094 | DocuSign (full) |
-| [LibreSign](https://github.com/LibreSign/libresign) | PHP | AGPL-3.0 | [v15.0.8](https://github.com/LibreSign/libresign/releases/tag/v15.0.8) signed | 830 | DocuSign (partial) |
+| [DocuSeal](https://github.com/docusealco/docuseal) | Ruby | AGPL-3.0 | [3.3.2](https://github.com/docusealco/docuseal/releases/tag/3.3.2) signed | 18736 | DocuSign (partial) |
+| [Documenso](https://github.com/documenso/documenso) | TypeScript | AGPL-3.0 | [v2.20.0](https://github.com/documenso/documenso/releases/tag/v2.20.0) | 15428 | DocuSign (full) |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | JavaScript | Other | [v2.41.3](https://github.com/OpenSignLabs/OpenSign/releases/tag/v2.41.3) signed | 7104 | DocuSign (full) |
+| [LibreSign](https://github.com/LibreSign/libresign) | PHP | AGPL-3.0 | [v15.0.8](https://github.com/LibreSign/libresign/releases/tag/v15.0.8) signed | 832 | DocuSign (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,17 +4,17 @@ Run containers and a Kubernetes cluster on a laptop or in CI, with the engine ma
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [lazydocker](https://github.com/jesseduffield/lazydocker) | Go | MIT | [v0.25.2](https://github.com/jesseduffield/lazydocker/releases/tag/v0.25.2) signed | 53116 | Docker Desktop (partial), Portainer (partial) |
-| [container](https://github.com/apple/container) | Swift | Apache-2.0 | [1.5.0](https://github.com/apple/container/releases/tag/1.5.0) signed | 50661 | Docker Desktop (partial), OrbStack (partial) |
-| [K3s](https://github.com/k3s-io/k3s) | Go | Apache-2.0 | [v1.37.1+k3s1](https://github.com/k3s-io/k3s/releases/tag/v1.37.1%2Bk3s1) | 34190 | minikube (full) |
-| [minikube](https://github.com/kubernetes/minikube) | Go | Apache-2.0 | [v1.39.0](https://github.com/kubernetes/minikube/releases/tag/v1.39.0) | 32190 | Docker Desktop (partial), Rancher Desktop (partial) |
-| [Colima](https://github.com/abiosoft/colima) | Go | MIT | [v0.10.3](https://github.com/abiosoft/colima/releases/tag/v0.10.3) signed | 31200 | Docker Desktop (partial), OrbStack (partial) |
-| [Lima](https://github.com/lima-vm/lima) | Go | Apache-2.0 | [v2.2.1](https://github.com/lima-vm/lima/releases/tag/v2.2.1) signed | 22087 | Docker Desktop (partial), OrbStack (partial) |
-| [kind](https://github.com/kubernetes-sigs/kind) | Go | Apache-2.0 | [v0.33.0](https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0) signed | 15550 | minikube (full) |
-| [MicroK8s](https://github.com/canonical/microk8s) | Python | Apache-2.0 | [v1.36](https://github.com/canonical/microk8s/releases/tag/v1.36) signed | 9382 | minikube (full) |
-| [Podman Desktop](https://github.com/podman-desktop/podman-desktop) | TypeScript | Apache-2.0 | [v1.29.3](https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.3) | 8072 | Docker Desktop (full), OrbStack (partial) |
-| [Rancher Desktop](https://github.com/rancher-sandbox/rancher-desktop) | TypeScript | Apache-2.0 | [v1.24.0](https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0) signed | 7392 | Docker Desktop (full), OrbStack (partial) |
-| [k3d](https://github.com/k3d-io/k3d) | Go | MIT | [v5.9.0](https://github.com/k3d-io/k3d/releases/tag/v5.9.0) | 6592 | minikube (full) |
+| [lazydocker](https://github.com/jesseduffield/lazydocker) | Go | MIT | [v0.25.2](https://github.com/jesseduffield/lazydocker/releases/tag/v0.25.2) signed | 53137 | Docker Desktop (partial), Portainer (partial) |
+| [container](https://github.com/apple/container) | Swift | Apache-2.0 | [1.5.0](https://github.com/apple/container/releases/tag/1.5.0) signed | 50710 | Docker Desktop (partial), OrbStack (partial) |
+| [K3s](https://github.com/k3s-io/k3s) | Go | Apache-2.0 | [v1.37.1+k3s1](https://github.com/k3s-io/k3s/releases/tag/v1.37.1%2Bk3s1) | 34201 | minikube (full) |
+| [minikube](https://github.com/kubernetes/minikube) | Go | Apache-2.0 | [v1.39.0](https://github.com/kubernetes/minikube/releases/tag/v1.39.0) | 32192 | Docker Desktop (partial), Rancher Desktop (partial) |
+| [Colima](https://github.com/abiosoft/colima) | Go | MIT | [v0.10.3](https://github.com/abiosoft/colima/releases/tag/v0.10.3) signed | 31236 | Docker Desktop (partial), OrbStack (partial) |
+| [Lima](https://github.com/lima-vm/lima) | Go | Apache-2.0 | [v2.2.1](https://github.com/lima-vm/lima/releases/tag/v2.2.1) signed | 22100 | Docker Desktop (partial), OrbStack (partial) |
+| [kind](https://github.com/kubernetes-sigs/kind) | Go | Apache-2.0 | [v0.33.0](https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0) signed | 15553 | minikube (full) |
+| [MicroK8s](https://github.com/canonical/microk8s) | Python | Apache-2.0 | [v1.36](https://github.com/canonical/microk8s/releases/tag/v1.36) signed | 9383 | minikube (full) |
+| [Podman Desktop](https://github.com/podman-desktop/podman-desktop) | TypeScript | Apache-2.0 | [v1.29.3](https://github.com/podman-desktop/podman-desktop/releases/tag/v1.29.3) | 8079 | Docker Desktop (full), OrbStack (partial) |
+| [Rancher Desktop](https://github.com/rancher-sandbox/rancher-desktop) | TypeScript | Apache-2.0 | [v1.24.0](https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.24.0) signed | 7393 | Docker Desktop (full), OrbStack (partial) |
+| [k3d](https://github.com/k3d-io/k3d) | Go | MIT | [v5.9.0](https://github.com/k3d-io/k3d/releases/tag/v5.9.0) | 6596 | minikube (full) |
 | [Finch](https://github.com/runfinch/finch) | Go | Apache-2.0 | [v1.19.0](https://github.com/runfinch/finch/releases/tag/v1.19.0) signed | 4073 | Docker Desktop (partial) |
 
 [All categories](../README.md#catalog)

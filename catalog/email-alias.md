@@ -4,8 +4,8 @@ Hand out forwarding addresses that hide your real inbox and can be turned off on
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SimpleLogin](https://github.com/simple-login/app) | Python | AGPL-3.0 | [v4.82.4](https://github.com/simple-login/app/releases/tag/v4.82.4) | 7049 | addy.io (full), Firefox Relay (full) |
-| [addy.io](https://github.com/anonaddy/anonaddy) | PHP | AGPL-3.0 | [v1.7.3](https://github.com/anonaddy/anonaddy/releases/tag/v1.7.3) | 4896 | SimpleLogin (full), Firefox Relay (full) |
-| [Firefox Relay](https://github.com/mozilla/fx-private-relay) | Python | Other | [2026.10.05](https://github.com/mozilla/fx-private-relay/releases/tag/2026.10.05) signed | 1796 | SimpleLogin (full), addy.io (full) |
+| [SimpleLogin](https://github.com/simple-login/app) | Python | AGPL-3.0 | [v4.82.4](https://github.com/simple-login/app/releases/tag/v4.82.4) | 7058 | addy.io (full), Firefox Relay (full) |
+| [addy.io](https://github.com/anonaddy/anonaddy) | PHP | AGPL-3.0 | [v1.7.3](https://github.com/anonaddy/anonaddy/releases/tag/v1.7.3) | 4902 | SimpleLogin (full), Firefox Relay (full) |
+| [Firefox Relay](https://github.com/mozilla/fx-private-relay) | Python | Other | [2026.10.05](https://github.com/mozilla/fx-private-relay/releases/tag/2026.10.05) signed | 1797 | SimpleLogin (full), addy.io (full) |
 
 [All categories](../README.md#catalog)

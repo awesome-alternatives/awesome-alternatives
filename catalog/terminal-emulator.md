@@ -4,21 +4,21 @@ Desktop terminal applications.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Windows Terminal](https://github.com/microsoft/terminal) | C++ | MIT | [v1.25.2733.0](https://github.com/microsoft/terminal/releases/tag/v1.25.2733.0) | 105163 | Warp (partial) |
-| [Tabby](https://github.com/Eugeny/tabby) | TypeScript | MIT | [v1.0.238](https://github.com/Eugeny/tabby/releases/tag/v1.0.238) | 74961 | iTerm2 (full), Warp (partial), Termius (partial) |
-| [Alacritty](https://github.com/alacritty/alacritty) | Rust | Apache-2.0 | [v0.17.0](https://github.com/alacritty/alacritty/releases/tag/v0.17.0) signed | 65958 | iTerm2 (partial), Warp (partial) |
-| [Termux](https://github.com/termux/termux-app) | Java | Other | [v0.118.3](https://github.com/termux/termux-app/releases/tag/v0.118.3) signed | 62562 | none |
-| [Ghostty](https://github.com/ghostty-org/ghostty) | Zig | MIT | [v1.3.1](https://github.com/ghostty-org/ghostty/releases/tag/v1.3.1) signed | 62181 | iTerm2 (full), Warp (partial) |
-| [Hyper](https://github.com/vercel/hyper) | TypeScript | MIT | [v3.4.1](https://github.com/vercel/hyper/releases/tag/v3.4.1) | 44735 | iTerm2 (full), Warp (partial) |
-| [kitty](https://github.com/kovidgoyal/kitty) | Python | GPL-3.0 | [v0.49.2](https://github.com/kovidgoyal/kitty/releases/tag/v0.49.2) signed | 35277 | iTerm2 (full), Warp (partial) |
-| [WezTerm](https://github.com/wezterm/wezterm) | Rust | Other | [20240203-110809-5046fc22](https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22) signed | 29223 | iTerm2 (full), Warp (partial), tmux (partial) |
-| [Wave Terminal](https://github.com/wavetermdev/waveterm) | Go | Apache-2.0 | [v0.14.5](https://github.com/wavetermdev/waveterm/releases/tag/v0.14.5) signed | 22490 | Warp (full), iTerm2 (full) |
-| [iTerm2](https://github.com/gnachman/iTerm2) | Swift | GPL-2.0 | [v3.7.4](https://github.com/gnachman/iTerm2/releases/tag/v3.7.4) | 18152 | Terminal (full) |
-| [Termix](https://github.com/Termix-SSH/Termix) | TypeScript | Apache-2.0 | [v26.10.1](https://github.com/Termix-SSH/Termix/releases/tag/v26.10.1) signed | 15479 | Termius (full) |
-| [electerm](https://github.com/electerm/electerm) | JavaScript | MIT | [v5.6.0](https://github.com/electerm/electerm/releases/tag/v5.6.0) | 15349 | Termius (partial) |
-| [XPipe](https://github.com/xpipe-io/xpipe) | Java | Apache-2.0 | [24.6](https://github.com/xpipe-io/xpipe/releases/tag/24.6) signed | 14592 | Termius (partial) |
-| [Rio](https://github.com/raphamorim/rio) | Rust | MIT | [v0.5.28](https://github.com/raphamorim/rio/releases/tag/v0.5.28) | 7605 | iTerm2 (partial), Warp (partial) |
-| [Contour](https://github.com/contour-terminal/contour) | C++ | Apache-2.0 | [v0.7.0.8982](https://github.com/contour-terminal/contour/releases/tag/v0.7.0.8982) signed | 3041 | iTerm2 (partial) |
-| [Terminator](https://github.com/gnome-terminator/terminator) | Python | GPL-2.0 | [v2.1.6](https://github.com/gnome-terminator/terminator/releases/tag/v2.1.6) signed | 2686 | iTerm2 (partial) |
+| [Windows Terminal](https://github.com/microsoft/terminal) | C++ | MIT | [v1.25.2733.0](https://github.com/microsoft/terminal/releases/tag/v1.25.2733.0) | 105177 | Warp (partial) |
+| [Tabby](https://github.com/Eugeny/tabby) | TypeScript | MIT | [v1.0.238](https://github.com/Eugeny/tabby/releases/tag/v1.0.238) | 74986 | iTerm2 (full), Warp (partial), Termius (partial) |
+| [Alacritty](https://github.com/alacritty/alacritty) | Rust | Apache-2.0 | [v0.17.0](https://github.com/alacritty/alacritty/releases/tag/v0.17.0) signed | 65975 | iTerm2 (partial), Warp (partial) |
+| [Termux](https://github.com/termux/termux-app) | Java | Other | [v0.118.3](https://github.com/termux/termux-app/releases/tag/v0.118.3) signed | 62707 | none |
+| [Ghostty](https://github.com/ghostty-org/ghostty) | Zig | MIT | [v1.3.1](https://github.com/ghostty-org/ghostty/releases/tag/v1.3.1) signed | 62268 | iTerm2 (full), Warp (partial) |
+| [Hyper](https://github.com/vercel/hyper) | TypeScript | MIT | [v3.4.1](https://github.com/vercel/hyper/releases/tag/v3.4.1) | 44739 | iTerm2 (full), Warp (partial) |
+| [kitty](https://github.com/kovidgoyal/kitty) | Python | GPL-3.0 | [v0.49.2](https://github.com/kovidgoyal/kitty/releases/tag/v0.49.2) signed | 35298 | iTerm2 (full), Warp (partial) |
+| [WezTerm](https://github.com/wezterm/wezterm) | Rust | Other | [20240203-110809-5046fc22](https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22) signed | 29241 | iTerm2 (full), Warp (partial), tmux (partial) |
+| [Wave Terminal](https://github.com/wavetermdev/waveterm) | Go | Apache-2.0 | [v0.14.5](https://github.com/wavetermdev/waveterm/releases/tag/v0.14.5) signed | 22512 | Warp (full), iTerm2 (full) |
+| [iTerm2](https://github.com/gnachman/iTerm2) | Swift | GPL-2.0 | [v3.7.6](https://github.com/gnachman/iTerm2/releases/tag/v3.7.6) | 18175 | Terminal (full) |
+| [Termix](https://github.com/Termix-SSH/Termix) | TypeScript | Apache-2.0 | [v26.10.1](https://github.com/Termix-SSH/Termix/releases/tag/v26.10.1) signed | 15521 | Termius (full) |
+| [electerm](https://github.com/electerm/electerm) | JavaScript | MIT | [v5.6.10](https://github.com/electerm/electerm/releases/tag/v5.6.10) | 15369 | Termius (partial) |
+| [XPipe](https://github.com/xpipe-io/xpipe) | unknown | Apache-2.0 | [24.6](https://github.com/xpipe-io/xpipe/releases/tag/24.6) signed | 14597 | Termius (partial) |
+| [Rio](https://github.com/raphamorim/rio) | Rust | MIT | [v0.5.28](https://github.com/raphamorim/rio/releases/tag/v0.5.28) | 7611 | iTerm2 (partial), Warp (partial) |
+| [Contour](https://github.com/contour-terminal/contour) | C++ | Apache-2.0 | [v0.7.0.8982](https://github.com/contour-terminal/contour/releases/tag/v0.7.0.8982) signed | 3043 | iTerm2 (partial) |
+| [Terminator](https://github.com/gnome-terminator/terminator) | Python | GPL-2.0 | [v2.1.6](https://github.com/gnome-terminator/terminator/releases/tag/v2.1.6) signed | 2689 | iTerm2 (partial) |
 
 [All categories](../README.md#catalog)

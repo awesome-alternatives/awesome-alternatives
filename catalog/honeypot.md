@@ -4,9 +4,9 @@ Decoy services that attract attackers and record what they try.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [T-Pot](https://github.com/telekom-security/tpotce) | Shell | GPL-3.0 | [24.04.1](https://github.com/telekom-security/tpotce/releases/tag/24.04.1) signed | 9576 | Thinkst Canary (partial) |
-| [Cowrie](https://github.com/cowrie/cowrie) | Python | Other | [v3.1.2](https://github.com/cowrie/cowrie/releases/tag/v3.1.2) signed | 6597 | Thinkst Canary (partial) |
-| [OpenCanary](https://github.com/thinkst/opencanary) | Python | BSD-3-Clause | [v0.9.10](https://github.com/thinkst/opencanary/releases/tag/v0.9.10) signed | 3056 | Thinkst Canary (partial) |
-| [Beelzebub](https://github.com/beelzebub-labs/beelzebub) | Go | GPL-3.0 | [v3.9.2](https://github.com/beelzebub-labs/beelzebub/releases/tag/v3.9.2) signed | 2195 | Thinkst Canary (partial) |
+| [T-Pot](https://github.com/telekom-security/tpotce) | Shell | GPL-3.0 | [24.04.1](https://github.com/telekom-security/tpotce/releases/tag/24.04.1) signed | 9580 | Thinkst Canary (partial) |
+| [Cowrie](https://github.com/cowrie/cowrie) | Python | Other | [v3.1.2](https://github.com/cowrie/cowrie/releases/tag/v3.1.2) signed | 6600 | Thinkst Canary (partial) |
+| [OpenCanary](https://github.com/thinkst/opencanary) | Python | BSD-3-Clause | [v0.9.10](https://github.com/thinkst/opencanary/releases/tag/v0.9.10) signed | 3057 | Thinkst Canary (partial) |
+| [Beelzebub](https://github.com/beelzebub-labs/beelzebub) | Go | GPL-3.0 | [v3.9.2](https://github.com/beelzebub-labs/beelzebub/releases/tag/v3.9.2) signed | 2198 | Thinkst Canary (partial) |
 
 [All categories](../README.md#catalog)
