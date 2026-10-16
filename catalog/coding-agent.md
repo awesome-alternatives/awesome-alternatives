@@ -26,5 +26,6 @@ Agents that read a codebase, edit files and run commands from a prompt, and comp
 | [ProxyAI](https://github.com/carlrobertoh/ProxyAI) | Kotlin | Apache-2.0 | [3.8.1](https://github.com/carlrobertoh/ProxyAI/releases/tag/3.8.1) | 1935 | GitHub Copilot (partial) |
 | [llama.vscode](https://github.com/ggml-org/llama.vscode) | TypeScript | MIT | [v0.0.69](https://github.com/ggml-org/llama.vscode/releases/tag/v0.0.69) signed | 1541 | GitHub Copilot (partial) |
 | [minuet-ai.nvim](https://github.com/milanglacier/minuet-ai.nvim) | Lua | GPL-3.0 | [v0.10.0](https://github.com/milanglacier/minuet-ai.nvim/releases/tag/v0.10.0) signed | 1427 | GitHub Copilot (partial) |
+| [YYLO](https://github.com/yylo-dev/yylo) | Python | MIT | [cli-v0.2.1-rc.1](https://github.com/yylo-dev/yylo/releases/tag/cli-v0.2.1-rc.1) | 63 | Claude Code (partial) |
 
 [All categories](../README.md#catalog)

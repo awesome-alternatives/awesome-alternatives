@@ -143,7 +143,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Git LFS servers](catalog/git-lfs-server.md) | 4 | Serve Git LFS objects for repositories hosted anywhere. |
 | [Minecraft servers](catalog/minecraft-server.md) | 8 | Server software for Minecraft: Java Edition, from forks of the Bukkit line to implementations written from scratch. |
 | [File sync and share](catalog/file-sync.md) | 14 | Self-hosted storage for files you reach from more than one machine, over WebDAV, a sync client or a web file manager. |
-| [AI coding agents and assistants](catalog/coding-agent.md) | 22 | Agents that read a codebase, edit files and run commands from a prompt, and completions and chat inside the editor, backed by a hosted or a local model. |
+| [AI coding agents and assistants](catalog/coding-agent.md) | 23 | Agents that read a codebase, edit files and run commands from a prompt, and completions and chat inside the editor, backed by a hosted or a local model. |
 | [AI chat interfaces](catalog/chat-interface.md) | 18 | Apps to chat with language models, whether the model runs locally or behind an API. |
 | [Local model runtimes](catalog/llm-runtime.md) | 18 | Run open-weight language models on your own hardware, behind a local API. |
 | [Container desktops and local Kubernetes](catalog/container-desktop.md) | 12 | Run containers and a Kubernetes cluster on a laptop or in CI, with the engine managed for you. |

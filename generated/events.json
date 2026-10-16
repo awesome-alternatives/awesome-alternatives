@@ -4939,5 +4939,6 @@
   {"type":"released","slug":"zenml","at":"2026-10-16T05:17:13.411Z","commit":null,"from":"0.97.0","to":"0.98.0"},
   {"type":"released","slug":"zitadel","at":"2026-10-16T05:17:13.411Z","commit":null,"from":"v4.19.4","to":"v4.19.5"},
   {"type":"released","slug":"znuny","at":"2026-10-16T05:17:13.411Z","commit":null,"from":"rel-7_3_7","to":"rel-7_3_8"},
-  {"type":"released","slug":"zoo-modeling-app","at":"2026-10-16T05:17:13.411Z","commit":null,"from":"v1.5.0","to":"v1.5.1"}
+  {"type":"released","slug":"zoo-modeling-app","at":"2026-10-16T05:17:13.411Z","commit":null,"from":"v1.5.0","to":"v1.5.1"},
+  {"type":"added","slug":"yylo","at":"2026-10-16T06:56:59.785Z","commit":null}
 ]

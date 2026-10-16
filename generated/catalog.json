@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2750,
+    "tools": 2751,
     "categories": 344,
     "targets": 922,
     "verified": 3
@@ -19606,6 +19606,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "yylo-dev": {
+      "login": "yylo-dev",
+      "kind": "organization",
+      "name": null,
+      "bio": null,
+      "website": "https://yylo.dev",
+      "url": "https://github.com/yylo-dev"
     }
   },
   "tools": [
@@ -330545,6 +330553,122 @@
       "contributors": {
         "count": 0,
         "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "yylo",
+      "name": "YYLO",
+      "repository": "https://github.com/yylo-dev/yylo",
+      "category": "coding-agent",
+      "replaces": [
+        {
+          "tool": "claude-code",
+          "fit": "partial",
+          "note": "An orchestrator for coding agents rather than an agent itself; runs them on Kanban tasks in worktrees, tracking task state and sequencing merges."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-16T06:56:01.000Z",
+      "editedAt": "2026-10-16T06:56:01.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "yylo-dev/yylo",
+        "description": "YYLO (why-lo): AI coding-agent orchestration CLI with equivalent yylo and yy launchers.",
+        "homepage": "https://yylo.dev",
+        "language": "Python",
+        "license": "MIT",
+        "stars": 63,
+        "forks": 10,
+        "topics": [
+          "agentic-coding-approved",
+          "agentic-coding-rules",
+          "agentic-coding-tool",
+          "agentic-coding-tools",
+          "agentic-coding-workflow",
+          "ai-agent",
+          "ai-native-development",
+          "aider",
+          "autonomous-agents",
+          "claude-code",
+          "coding-agent",
+          "developer-tools",
+          "developer-tools-ai-agent",
+          "developer-tools-productivity",
+          "git-workflow",
+          "local-first",
+          "pi-agent",
+          "ralph-loop",
+          "ralph-wiggum",
+          "yylo"
+        ],
+        "databaseId": 1129206072,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-01-06T18:57:23Z",
+        "pushedAt": "2026-10-15T20:21:40Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-16",
+        "stars": [63]
+      },
+      "release": {
+        "tag": "cli-v0.2.1-rc.1",
+        "publishedAt": "2026-08-29T08:48:47Z",
+        "url": "https://github.com/yylo-dev/yylo/releases/tag/cli-v0.2.1-rc.1",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.2.1-rc.14",
+          "name": "@yylo/cli 0.2.1-rc.14",
+          "publishedAt": "2026-09-02T20:13:06Z",
+          "url": "https://github.com/yylo-dev/yylo/releases/tag/v0.2.1-rc.14",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.2.1-rc.13",
+          "name": "@yylo/cli 0.2.1-rc.13",
+          "publishedAt": "2026-09-02T19:53:37Z",
+          "url": "https://github.com/yylo-dev/yylo/releases/tag/v0.2.1-rc.13",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.2.1-rc.12",
+          "name": "@yylo/cli 0.2.1-rc.12",
+          "publishedAt": "2026-09-02T19:16:43Z",
+          "url": "https://github.com/yylo-dev/yylo/releases/tag/v0.2.1-rc.12",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.2.1-rc.11",
+          "name": "@yylo/cli 0.2.1-rc.11",
+          "publishedAt": "2026-09-02T17:44:49Z",
+          "url": "https://github.com/yylo-dev/yylo/releases/tag/v0.2.1-rc.11",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.2.1-rc.10",
+          "name": "@yylo/cli 0.2.1-rc.10",
+          "publishedAt": "2026-09-02T17:18:26Z",
+          "url": "https://github.com/yylo-dev/yylo/releases/tag/v0.2.1-rc.10",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 3,
+        "capped": true
       },
       "platforms": [],
       "maintainerVerified": false,
