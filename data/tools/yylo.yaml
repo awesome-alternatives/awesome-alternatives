@@ -1,0 +1,7 @@
+name: YYLO
+repository: https://github.com/yylo-dev/yylo
+category: coding-agent
+replaces:
+  - tool: claude-code
+    fit: partial
+    note: An orchestrator for coding agents rather than an agent itself; runs them on Kanban tasks in worktrees, tracking task state and sequencing merges.
