@@ -1,0 +1,9 @@
+name: Telemetry Tracker
+repository: https://github.com/Telemetry-Tracker/telemetry-tracker
+category: error-tracking
+affiliation: author
+replaces:
+  - tool: sentry
+    fit: partial
+    note: Error tracking for JavaScript and TypeScript apps with grouped errors, source maps and alerts; no performance monitoring or non-JS SDKs.
+deploy: [container, compose]
