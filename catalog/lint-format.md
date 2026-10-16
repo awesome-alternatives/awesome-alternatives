@@ -9,9 +9,9 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [golangci-lint](https://github.com/golangci/golangci-lint) | Go | GPL-3.0 | [v2.14.0](https://github.com/golangci/golangci-lint/releases/tag/v2.14.0) signed | 19443 | Staticcheck (full), revive (full) |
 | [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.1](https://github.com/phpstan/phpstan/releases/tag/2.3.1) | 14129 | Psalm (full) |
 | [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.27](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.27) signed | 13564 | PHP_CodeSniffer (partial) |
-| [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.92.0](https://github.com/rubocop/rubocop/releases/tag/v1.92.0) | 12913 | none |
+| [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.92.0](https://github.com/rubocop/rubocop/releases/tag/v1.92.0) | 12914 | none |
 | [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12481 | none |
-| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9976 | SQL Formatter (partial), sqlfmt (partial) |
+| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9978 | SQL Formatter (partial), sqlfmt (partial) |
 | [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.3.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.3.0) | 9601 | SonarQube Community Build (partial) |
 | [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9133 | none |
 | [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.63.1](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.63.1) | 8934 | none |
@@ -28,7 +28,7 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [SpotBugs](https://github.com/spotbugs/spotbugs) | Java | LGPL-2.1 | [4.10.5](https://github.com/spotbugs/spotbugs/releases/tag/4.10.5) signed | 3956 | SonarQube Community Build (partial) |
 | [yamllint](https://github.com/adrienverge/yamllint) | Python | GPL-3.0 | [v1.38.0](https://github.com/adrienverge/yamllint/releases/tag/v1.38.0) | 3479 | none |
 | [Standard Ruby](https://github.com/standardrb/standard) | Ruby | Other | [v1.31.0](https://github.com/standardrb/standard/releases/tag/v1.31.0) | 2927 | RuboCop (partial) |
-| [SQL Formatter](https://github.com/sql-formatter-org/sql-formatter) | TypeScript | MIT | [v15.9.0](https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.9.0) | 2898 | sqlfmt (full) |
+| [SQL Formatter](https://github.com/sql-formatter-org/sql-formatter) | TypeScript | MIT | [v15.9.0](https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.9.0) | 2899 | sqlfmt (full) |
 | [codespell](https://github.com/codespell-project/codespell) | Python | GPL-2.0 | [v2.4.3](https://github.com/codespell-project/codespell/releases/tag/v2.4.3) signed | 2435 | typos (full) |
 | [StyLua](https://github.com/JohnnyMorganz/StyLua) | Rust | MPL-2.0 | [v2.6.0](https://github.com/JohnnyMorganz/StyLua/releases/tag/v2.6.0) | 2315 | none |
 | [CSpell](https://github.com/streetsidesoftware/cspell) | TypeScript | MIT | [v10.4.0](https://github.com/streetsidesoftware/cspell/releases/tag/v10.4.0) | 1698 | codespell (partial), typos (partial) |

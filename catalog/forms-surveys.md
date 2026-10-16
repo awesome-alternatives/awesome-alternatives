@@ -4,9 +4,9 @@ Build forms and surveys and collect the answers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.0.2](https://github.com/formbricks/formbricks/releases/tag/6.0.2) signed | 13112 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
-| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.0](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.0) signed | 10546 | Typeform (partial) |
-| [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.4](https://github.com/heyform/heyform/releases/tag/v3.0.4) | 9029 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
+| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.0.2](https://github.com/formbricks/formbricks/releases/tag/6.0.2) signed | 13113 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
+| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.0](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.0) signed | 10547 | Typeform (partial) |
+| [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.4](https://github.com/heyform/heyform/releases/tag/v3.0.4) | 9030 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
 | [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.6.0](https://github.com/OpnForm/OpnForm/releases/tag/v2.6.0) signed | 3842 | Typeform (full), Google Forms (full) |
 | [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.5.1+261007](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.5.1%2B261007) | 3768 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |
 | [Form.io](https://github.com/formio/formio) | JavaScript | OSL-3.0 | [v4.11.0](https://github.com/formio/formio/releases/tag/v4.11.0) | 2323 | Jotform (partial) |

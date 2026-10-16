@@ -4,12 +4,12 @@ Shared pages and documentation for teams, edited in the browser.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.14.8](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.8) signed | 77432 | Notion (full) |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 73559 | Notion (full), Miro (partial), OneNote (partial) |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.14.8](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.8) signed | 77448 | Notion (full) |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 73562 | Notion (full), Miro (partial), OneNote (partial) |
 | [Outline](https://github.com/outline/outline) | TypeScript | Other | [v1.11.0](https://github.com/outline/outline/releases/tag/v1.11.0) signed | 40915 | Notion (partial), Confluence (full), HackMD (partial) |
-| [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.0.0-beta.661](https://github.com/requarks/wiki/releases/tag/3.0.0-beta.661) signed | 29043 | Confluence (full) |
-| [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.96.0](https://github.com/docmost/docmost/releases/tag/v0.96.0) | 21992 | Confluence (full), Notion (partial) |
-| [BookStack](https://github.com/BookStackApp/BookStack) | PHP | MIT | [v26.09.1](https://github.com/BookStackApp/BookStack/releases/tag/v26.09.1) signed | 19082 | Confluence (full), Notion (partial) |
+| [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.0.0-beta.672](https://github.com/requarks/wiki/releases/tag/3.0.0-beta.672) signed | 29043 | Confluence (full) |
+| [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.96.0](https://github.com/docmost/docmost/releases/tag/v0.96.0) | 21993 | Confluence (full), Notion (partial) |
+| [BookStack](https://github.com/BookStackApp/BookStack) | PHP | MIT | [v26.09.1](https://github.com/BookStackApp/BookStack/releases/tag/v26.09.1) signed | 19083 | Confluence (full), Notion (partial) |
 | [La Suite Docs](https://github.com/suitenumerique/docs) | Python | MIT | [v6.0.1](https://github.com/suitenumerique/docs/releases/tag/v6.0.1) signed | 16927 | Notion (partial), Confluence (partial) |
 | [TiddlyWiki](https://github.com/TiddlyWiki/TiddlyWiki5) | JavaScript | Other | [v5.4.1](https://github.com/TiddlyWiki/TiddlyWiki5/releases/tag/v5.4.1) | 8690 | Notion (partial) |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | TypeScript | AGPL-3.0 | [1.12.0](https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.0) | 7483 | HackMD (full) |

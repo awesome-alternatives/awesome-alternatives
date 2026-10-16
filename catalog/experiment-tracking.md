@@ -4,7 +4,7 @@ Log the metrics, parameters and artefacts of training runs and compare them in a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.17.1](https://github.com/mlflow/mlflow/releases/tag/v3.17.1) signed | 28405 | Weights & Biases (full), Comet (full), Databricks (partial) |
+| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.17.1](https://github.com/mlflow/mlflow/releases/tag/v3.17.1) signed | 28411 | Weights & Biases (full), Comet (full), Databricks (partial) |
 | [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 15925 | Weights & Biases (partial) |
 | [TensorBoard](https://github.com/tensorflow/tensorboard) | TypeScript | Apache-2.0 | [2.21.0](https://github.com/tensorflow/tensorboard/releases/tag/2.21.0) | 7239 | Weights & Biases (partial) |
 | [ClearML](https://github.com/clearml/clearml) | Python | Apache-2.0 | [v2.1.12](https://github.com/clearml/clearml/releases/tag/v2.1.12) signed | 6908 | Weights & Biases (full), Comet (full) |

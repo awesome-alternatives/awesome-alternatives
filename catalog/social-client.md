@@ -6,7 +6,7 @@ Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 |---|---|---|---|---:|---|
 | [Bluesky](https://github.com/bluesky-social/social-app) | TypeScript | MIT | [1.135.0](https://github.com/bluesky-social/social-app/releases/tag/1.135.0) | 18348 | X (Twitter) (partial) |
 | [Ice Cubes](https://github.com/Dimillian/IceCubesApp) | Swift | AGPL-3.0 | [2.1.6](https://github.com/Dimillian/IceCubesApp/releases/tag/2.1.6) signed | 7087 | X (Twitter) (partial) |
-| [Elk](https://github.com/elk-zone/elk) | Vue | MIT | [v1.0.1](https://github.com/elk-zone/elk/releases/tag/v1.0.1) | 6032 | X (Twitter) (partial) |
+| [Elk](https://github.com/elk-zone/elk) | Vue | MIT | [v1.0.1](https://github.com/elk-zone/elk/releases/tag/v1.0.1) | 6033 | X (Twitter) (partial) |
 | [Mastodon for iOS](https://github.com/mastodon/mastodon-ios) | Swift | GPL-3.0 | [2026.07](https://github.com/mastodon/mastodon-ios/releases/tag/2026.07) | 2279 | X (Twitter) (partial) |
 | [Damus](https://github.com/damus-io/damus) | Swift | GPL-3.0 | [v1.17](https://github.com/damus-io/damus/releases/tag/v1.17) | 2147 | X (Twitter) (partial) |
 | [Mastodon for Android](https://github.com/mastodon/mastodon-android) | Java | GPL-3.0 | [v2.13.4](https://github.com/mastodon/mastodon-android/releases/tag/v2.13.4) | 2054 | X (Twitter) (partial) |

@@ -5,7 +5,7 @@ Version and apply database schema changes.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 18974 | Flyway (partial) |
-| [Bytebase](https://github.com/bytebase/bytebase) | Go | Other | [3.23.1](https://github.com/bytebase/bytebase/releases/tag/3.23.1) | 14572 | Flyway (partial) |
+| [Bytebase](https://github.com/bytebase/bytebase) | Go | Other | [3.23.1](https://github.com/bytebase/bytebase/releases/tag/3.23.1) | 14573 | Flyway (partial) |
 | [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13604 | none |
 | [goose](https://github.com/pressly/goose) | Go | Other | [v3.29.0](https://github.com/pressly/goose/releases/tag/v3.29.0) | 11581 | migrate (full) |
 | [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.10.3](https://github.com/flyway/flyway/releases/tag/flyway-13.10.3) | 10149 | Liquibase (full) |

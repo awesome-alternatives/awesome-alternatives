@@ -6,9 +6,9 @@ Store and query timestamped measurements at high write rates.
 |---|---|---|---|---:|---|
 | [InfluxDB](https://github.com/influxdata/influxdb) | Rust | Apache-2.0 | [v3.12.1](https://github.com/influxdata/influxdb/releases/tag/v3.12.1) | 31766 | Amazon Timestream (full) |
 | [TDengine](https://github.com/taosdata/TDengine) | C | AGPL-3.0 | [ver-3.4.1.6](https://github.com/taosdata/TDengine/releases/tag/ver-3.4.1.6) | 25162 | InfluxDB (full) |
-| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.30.2](https://github.com/timescale/timescaledb/releases/tag/2.30.2) signed | 23703 | InfluxDB (full), Amazon Timestream (full) |
-| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.0.1](https://github.com/questdb/questdb/releases/tag/10.0.1) | 17444 | InfluxDB (full), Amazon Timestream (full) |
-| [GreptimeDB](https://github.com/GreptimeTeam/greptimedb) | Rust | Apache-2.0 | [v1.2.1](https://github.com/GreptimeTeam/greptimedb/releases/tag/v1.2.1) | 6741 | InfluxDB (full) |
+| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.30.2](https://github.com/timescale/timescaledb/releases/tag/2.30.2) signed | 23704 | InfluxDB (full), Amazon Timestream (full) |
+| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.0.1](https://github.com/questdb/questdb/releases/tag/10.0.1) | 17445 | InfluxDB (full), Amazon Timestream (full) |
+| [GreptimeDB](https://github.com/GreptimeTeam/greptimedb) | Rust | Apache-2.0 | [v1.2.1](https://github.com/GreptimeTeam/greptimedb/releases/tag/v1.2.1) | 6743 | InfluxDB (full) |
 | [Apache IoTDB](https://github.com/apache/iotdb) | Java | Apache-2.0 | [v2.0.11](https://github.com/apache/iotdb/releases/tag/v2.0.11) | 6420 | Amazon Timestream (partial) |
 | [openGemini](https://github.com/openGemini/openGemini) | Go | Apache-2.0 | [v1.5.2](https://github.com/openGemini/openGemini/releases/tag/v1.5.2) | 1177 | InfluxDB (partial) |
 

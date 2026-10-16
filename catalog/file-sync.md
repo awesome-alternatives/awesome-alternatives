@@ -4,11 +4,11 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV,
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.6](https://github.com/syncthing/syncthing/releases/tag/v2.1.6) | 89436 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
-| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.75.2](https://github.com/rclone/rclone/releases/tag/v1.75.2) signed | 60321 | none |
-| [copyparty](https://github.com/9001/copyparty) | Python | MIT | [v1.20.26](https://github.com/9001/copyparty/releases/tag/v1.20.26) | 47047 | WeTransfer (partial), Dropbox (partial) |
-| [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v33.0.10](https://github.com/nextcloud/server/releases/tag/v33.0.10) | 37132 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
-| [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28840 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |
+| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.6](https://github.com/syncthing/syncthing/releases/tag/v2.1.6) | 89439 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
+| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.75.2](https://github.com/rclone/rclone/releases/tag/v1.75.2) signed | 60327 | none |
+| [copyparty](https://github.com/9001/copyparty) | Python | MIT | [v1.20.26](https://github.com/9001/copyparty/releases/tag/v1.20.26) | 47049 | WeTransfer (partial), Dropbox (partial) |
+| [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v33.0.10](https://github.com/nextcloud/server/releases/tag/v33.0.10) | 37136 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
+| [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28841 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |
 | [Seafile](https://github.com/haiwen/seafile) | C | Other | [v9.0.5](https://github.com/haiwen/seafile/releases/tag/v9.0.5) | 15338 | Dropbox (full), Nextcloud (partial), iCloud Drive (full), OneDrive (full), Box (full) |
 | [Filestash](https://github.com/mickael-kerjean/filestash) | Go | AGPL-3.0 | [v0.4](https://github.com/mickael-kerjean/filestash/releases/tag/v0.4) | 14799 | Dropbox (partial) |
 | [ownCloud Server](https://github.com/owncloud/core) | PHP | AGPL-3.0 | [v10.16.6](https://github.com/owncloud/core/releases/tag/v10.16.6) signed | 8835 | Dropbox (full), Google Drive (partial) |

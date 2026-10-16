@@ -16,7 +16,7 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [Craft CMS](https://github.com/craftcms/cms) | PHP | Other | [5.11.5.1](https://github.com/craftcms/cms/releases/tag/5.11.5.1) | 3615 | Contentful (partial) |
 | [Microweber](https://github.com/microweber/microweber) | HTML | MIT | [v2.0.20](https://github.com/microweber/microweber/releases/tag/v2.0.20) | 3437 | Wix (partial), Squarespace (partial) |
 | [Piranha CMS](https://github.com/PiranhaCMS/piranha.core) | C# | MIT | [v12.2](https://github.com/PiranhaCMS/piranha.core/releases/tag/v12.2) | 2196 | Umbraco (partial), Orchard Core (partial) |
-| [Kirby](https://github.com/getkirby/kirby) | PHP | Other | [5.6.1](https://github.com/getkirby/kirby/releases/tag/5.6.1) signed | 1536 | Contentful (partial) |
+| [Kirby](https://github.com/getkirby/kirby) | PHP | Other | [5.6.1](https://github.com/getkirby/kirby/releases/tag/5.6.1) signed | 1534 | Contentful (partial) |
 | [Winter CMS](https://github.com/wintercms/winter) | PHP | MIT | [v1.2.14](https://github.com/wintercms/winter/releases/tag/v1.2.14) | 1522 | October CMS (full) |
 | [TYPO3](https://github.com/TYPO3/typo3) | PHP | GPL-2.0 | [v14.3.9](https://github.com/TYPO3/typo3/releases/tag/v14.3.9) signed | 1214 | WordPress (partial) |
 | [ProcessWire](https://github.com/processwire/processwire) | PHP | Other | [3.0.259](https://github.com/processwire/processwire/releases/tag/3.0.259) | 1159 | Craft CMS (partial), Kirby (partial) |

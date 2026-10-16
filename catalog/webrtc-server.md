@@ -4,7 +4,7 @@ Route audio and video between WebRTC peers through an SFU, or relay it through a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LiveKit](https://github.com/livekit/livekit) | Go | Apache-2.0 | [v1.13.10](https://github.com/livekit/livekit/releases/tag/v1.13.10) signed | 21478 | Agora (full) |
+| [LiveKit](https://github.com/livekit/livekit) | Go | Apache-2.0 | [v1.13.10](https://github.com/livekit/livekit/releases/tag/v1.13.10) signed | 21486 | Agora (full) |
 | [coturn](https://github.com/coturn/coturn) | C | Other | [docker/4.18.0-r0](https://github.com/coturn/coturn/releases/tag/docker/4.18.0-r0) signed | 14486 | Twilio (partial) |
 | [Janus](https://github.com/meetecho/janus-gateway) | C | GPL-3.0 | [v1.4.3](https://github.com/meetecho/janus-gateway/releases/tag/v1.4.3) | 9187 | Agora (partial) |
 | [mediasoup](https://github.com/versatica/mediasoup) | C++ | ISC | [3.30.0](https://github.com/versatica/mediasoup/releases/tag/3.30.0) | 7397 | Agora (partial) |

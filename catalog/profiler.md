@@ -4,9 +4,9 @@ Measure where a program spends its time and memory, draw it as flame graphs or t
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29102 | none |
-| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.14.1](https://github.com/wolfpld/tracy/releases/tag/v0.14.1) signed | 16954 | none |
-| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.2](https://github.com/benfred/py-spy/releases/tag/v0.4.2) | 15573 | none |
+| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29104 | none |
+| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.14.1](https://github.com/wolfpld/tracy/releases/tag/v0.14.1) signed | 16955 | none |
+| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.2](https://github.com/benfred/py-spy/releases/tag/v0.4.2) | 15574 | none |
 | [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15382 | none |
 | [Scalene](https://github.com/plasma-umass/scalene) | Python | Apache-2.0 | [v2.3.0](https://github.com/plasma-umass/scalene/releases/tag/v2.3.0) signed | 13528 | none |
 | [pprof](https://github.com/google/pprof) | Go | Apache-2.0 | none | 9303 | none |

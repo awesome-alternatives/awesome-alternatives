@@ -6,6 +6,6 @@ Automate security response playbooks and track alerts and incidents as cases.
 |---|---|---|---|---:|---|
 | [Tracecat](https://github.com/TracecatHQ/tracecat) | Python | AGPL-3.0 | [1.1.1](https://github.com/TracecatHQ/tracecat/releases/tag/1.1.1) | 3835 | Splunk SOAR (full) |
 | [Shuffle](https://github.com/Shuffle/Shuffle) | JavaScript | AGPL-3.0 | [v2.3.0](https://github.com/Shuffle/Shuffle/releases/tag/v2.3.0) signed | 2456 | Splunk SOAR (full) |
-| [DFIR-IRIS](https://github.com/dfir-iris/iris-web) | Shell | LGPL-3.0 | [v2.4.29](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.29) | 1592 | Splunk SOAR (partial) |
+| [DFIR-IRIS](https://github.com/dfir-iris/iris-web) | Shell | LGPL-3.0 | [v2.4.29](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.29) | 1593 | Splunk SOAR (partial) |
 
 [All categories](../README.md#catalog)

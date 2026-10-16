@@ -4,9 +4,9 @@ Write documents in a markup language such as LaTeX or Typst and compile them to 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Typst](https://github.com/typst/typst) | Rust | Apache-2.0 | [v0.15.1](https://github.com/typst/typst/releases/tag/v0.15.1) | 56650 | Overleaf (partial) |
-| [Overleaf](https://github.com/overleaf/overleaf) | JavaScript | AGPL-3.0 | [v0.1.3](https://github.com/overleaf/overleaf/releases/tag/v0.1.3) | 18238 | none |
-| [Tectonic](https://github.com/tectonic-typesetting/tectonic) | C | Other | [tectonic@0.17.0](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0) | 5172 | none |
+| [Typst](https://github.com/typst/typst) | Rust | Apache-2.0 | [v0.15.1](https://github.com/typst/typst/releases/tag/v0.15.1) | 56652 | Overleaf (partial) |
+| [Overleaf](https://github.com/overleaf/overleaf) | JavaScript | AGPL-3.0 | [v0.1.3](https://github.com/overleaf/overleaf/releases/tag/v0.1.3) | 18240 | none |
+| [Tectonic](https://github.com/tectonic-typesetting/tectonic) | C | Other | [tectonic@0.17.0](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0) | 5174 | none |
 | [TeXstudio](https://github.com/texstudio-org/texstudio) | C++ | GPL-3.0 | [4.9.8](https://github.com/texstudio-org/texstudio/releases/tag/4.9.8) | 3669 | Overleaf (partial) |
 
 [All categories](../README.md#catalog)

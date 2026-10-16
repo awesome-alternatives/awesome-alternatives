@@ -4,7 +4,7 @@ Inspect source code for bugs, code smells and security issues, and track the fin
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Semgrep](https://github.com/semgrep/semgrep) | C | LGPL-2.1 | [v1.181.0](https://github.com/semgrep/semgrep/releases/tag/v1.181.0) | 17082 | SonarQube Cloud (partial) |
+| [Semgrep](https://github.com/semgrep/semgrep) | C | LGPL-2.1 | [v1.181.0](https://github.com/semgrep/semgrep/releases/tag/v1.181.0) | 17085 | SonarQube Cloud (partial) |
 | [SonarQube Community Build](https://github.com/SonarSource/sonarqube) | Java | LGPL-3.0 | [26.10.0.133078](https://github.com/SonarSource/sonarqube/releases/tag/26.10.0.133078) | 11072 | SonarQube Cloud (partial) |
 | [gosec](https://github.com/securego/gosec) | Go | Apache-2.0 | [v2.29.0](https://github.com/securego/gosec/releases/tag/v2.29.0) | 8972 | Snyk (partial), SonarQube Cloud (partial) |
 | [Bandit](https://github.com/PyCQA/bandit) | Python | Apache-2.0 | [1.9.4](https://github.com/PyCQA/bandit/releases/tag/1.9.4) signed | 8314 | Snyk (partial), SonarQube Cloud (partial) |

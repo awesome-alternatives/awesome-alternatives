@@ -4,9 +4,9 @@ Schedule and run containers across a cluster of machines, from full Kubernetes d
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kubernetes](https://github.com/kubernetes/kubernetes) | Go | Apache-2.0 | [v1.37.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1) | 128312 | Amazon EKS (full) |
-| [Docker Compose](https://github.com/docker/compose) | Go | Apache-2.0 | [v5.6.0](https://github.com/docker/compose/releases/tag/v5.6.0) signed | 38368 | none |
-| [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Jinja | Apache-2.0 | [v2.32.0](https://github.com/kubernetes-sigs/kubespray/releases/tag/v2.32.0) signed | 18796 | Amazon EKS (full) |
+| [Kubernetes](https://github.com/kubernetes/kubernetes) | Go | Apache-2.0 | [v1.37.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1) | 128313 | Amazon EKS (full) |
+| [Docker Compose](https://github.com/docker/compose) | Go | Apache-2.0 | [v5.6.0](https://github.com/docker/compose/releases/tag/v5.6.0) signed | 38371 | none |
+| [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Jinja | Apache-2.0 | [v2.32.0](https://github.com/kubernetes-sigs/kubespray/releases/tag/v2.32.0) signed | 18797 | Amazon EKS (full) |
 | [Nomad](https://github.com/hashicorp/nomad) | Go | Other | [v2.0.7](https://github.com/hashicorp/nomad/releases/tag/v2.0.7) | 17011 | Kubernetes (partial) |
 | [Talos Linux](https://github.com/siderolabs/talos) | Go | MPL-2.0 | [v1.14.3](https://github.com/siderolabs/talos/releases/tag/v1.14.3) signed | 11354 | Amazon EKS (full) |
 | [vcluster](https://github.com/loft-sh/vcluster) | Go | Apache-2.0 | [v0.37.3](https://github.com/loft-sh/vcluster/releases/tag/v0.37.3) | 11351 | none |
