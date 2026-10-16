@@ -11,10 +11,10 @@
 </p>
 
 <p align="center">
-  <a href="#catalog"><img alt="Tools in the catalog" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.tools&label=tools&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
-  <a href="#catalog"><img alt="Categories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.categories&label=categories&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
-  <a href="https://awesome-alternatives.com/alternatives/"><img alt="Tools with alternatives listed" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.targets&label=tools%20with%20alternatives&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
-  <a href="CONTRIBUTING.md#verifying-a-tool-you-maintain"><img alt="Tools verified by their maintainers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fawesome-alternatives%2Fawesome-alternatives%2Fmain%2Fgenerated%2Fcatalog.json&query=%24.stats.verified&label=verified%20by%20maintainers&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
+  <a href="#catalog"><img alt="Tools in the catalog" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fawesome-alternatives.com%2Fstats.json&query=%24.tools&label=tools&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
+  <a href="#catalog"><img alt="Categories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fawesome-alternatives.com%2Fstats.json&query=%24.categories&label=categories&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
+  <a href="https://awesome-alternatives.com/alternatives/"><img alt="Tools with alternatives listed" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fawesome-alternatives.com%2Fstats.json&query=%24.targets&label=tools%20with%20alternatives&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
+  <a href="CONTRIBUTING.md#verifying-a-tool-you-maintain"><img alt="Tools verified by their maintainers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fawesome-alternatives.com%2Fstats.json&query=%24.verified&label=verified%20by%20maintainers&color=b8ff3c&labelColor=0b0b0b&style=flat-square"></a>
   <a href="https://github.com/awesome-alternatives/awesome-alternatives/actions/workflows/freshness.yml"><img alt="Catalog freshness" src="https://github.com/awesome-alternatives/awesome-alternatives/actions/workflows/freshness.yml/badge.svg"></a>
   <a href="LICENSE-DATA"><img alt="Data: CC BY-SA 4.0" src="https://img.shields.io/badge/data-CC%20BY--SA%204.0-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
   <a href="LICENSE"><img alt="Code: AGPL-3.0" src="https://img.shields.io/badge/code-AGPL--3.0-b8ff3c?labelColor=0b0b0b&style=flat-square"></a>
@@ -27,8 +27,9 @@
   <a href="https://opencollective.com/ferrlabs">Sponsor</a>
 </p>
 
-The numbers above are read from [`generated/catalog.json`](generated/catalog.json) each time the
-page loads, so they follow the catalog without anyone editing this file.
+The numbers above are read from [`awesome-alternatives.com/stats.json`](https://awesome-alternatives.com/stats.json)
+each time the page loads, so they follow the catalog without anyone editing this file. They do not
+read `generated/catalog.json` directly: at over 10 MB it is past what the badge service will fetch.
 
 ## Why another list
 
