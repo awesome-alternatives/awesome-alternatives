@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.137.9] - 2026-10-16
+
+### Bug Fixes
+
+- fix(readme): read the badge numbers from a small stats.json the site serves (#443)
+
 ## [0.137.8] - 2026-10-16
 
 ### Bug Fixes
