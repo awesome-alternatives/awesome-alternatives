@@ -49,6 +49,6 @@ body:
   - type: checkboxes
     id: affiliation
     attributes:
-      label: Affiliation
+      label: Your link to the tool
       options:
         - label: I maintain, work on or am paid by this tool

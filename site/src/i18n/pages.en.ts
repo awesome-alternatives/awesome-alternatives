@@ -104,7 +104,7 @@ export const pages = {
     },
     affiliation: {
       heading: "Affiliation",
-      body: "Whoever maintains, works on or is paid by a tool has to say so in its entry. Listing your own project is welcome, not saying so is grounds for removal. When an entry has an affiliation, the tool page shows it as written.",
+      body: "The affiliation field is for a tie between a tool and this directory or the people who run it, such as a tool made by the maintainers of awesome-alternatives. When an entry has one, the tool page shows it as written. Maintaining a tool you list is not an affiliation: have the entry verified instead, and its page says its maintainers vouch for it.",
     },
     search: {
       heading: "How search works",
