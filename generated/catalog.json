@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2751,
+    "tools": 2752,
     "categories": 344,
     "targets": 922,
     "verified": 3
@@ -19614,6 +19614,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "Telemetry-Tracker": {
+      "login": "Telemetry-Tracker",
+      "kind": "organization",
+      "name": "Telemetry Tracker",
+      "bio": "Observability for teams that ship.",
+      "website": "https://telemetry-tracker.com/",
+      "url": "https://github.com/Telemetry-Tracker"
     }
   },
   "tools": [
@@ -293568,6 +293576,122 @@
       "capabilities": {},
       "deploy": [
         "container"
+      ]
+    },
+    {
+      "slug": "telemetry-tracker",
+      "name": "Telemetry Tracker",
+      "repository": "https://github.com/Telemetry-Tracker/telemetry-tracker",
+      "category": "error-tracking",
+      "replaces": [
+        {
+          "tool": "sentry",
+          "fit": "partial",
+          "note": "Error tracking for JavaScript and TypeScript apps with grouped errors, source maps and alerts; no performance monitoring or non-JS SDKs."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-16T10:32:20.000Z",
+      "editedAt": "2026-10-16T10:32:20.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Telemetry-Tracker/telemetry-tracker",
+        "description": "Lightweight self-hosted telemetry: errors, events, sessions, and a dashboard. Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs.",
+        "homepage": "https://telemetry-tracker.com",
+        "language": "TypeScript",
+        "license": "MIT",
+        "stars": 34,
+        "forks": 6,
+        "topics": [
+          "analytics",
+          "developer-tools",
+          "error-monitoring",
+          "error-tracking",
+          "fastify",
+          "monitoring",
+          "monorepo",
+          "nextjs",
+          "observability",
+          "observability-platform",
+          "open-source",
+          "postgresql",
+          "self-hosted",
+          "telemetry",
+          "telemetry-analysis",
+          "typescript"
+        ],
+        "databaseId": 1182480101,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-03-15T15:24:26Z",
+        "pushedAt": "2026-10-12T15:47:00Z",
+        "defaultBranch": "develop"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-16",
+        "stars": [34]
+      },
+      "release": {
+        "tag": "v1.22.2",
+        "publishedAt": "2026-10-12T15:42:48Z",
+        "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.22.2",
+        "source": "release",
+        "signed": false,
+        "tagOid": "029409215eb50be3c0e848826c20de6ea56c2c99"
+      },
+      "releases": [
+        {
+          "tag": "v1.22.2",
+          "name": "Telemetry Tracker v1.22.2",
+          "publishedAt": "2026-10-12T15:42:48Z",
+          "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.22.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.22.1",
+          "name": "Telemetry Tracker v1.22.1",
+          "publishedAt": "2026-10-12T12:52:49Z",
+          "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.22.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.22.0",
+          "name": "Telemetry Tracker v1.22.0",
+          "publishedAt": "2026-10-12T12:11:40Z",
+          "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.22.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.21.0",
+          "name": "Telemetry Tracker v1.21.0",
+          "publishedAt": "2026-10-12T11:57:27Z",
+          "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.21.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.20.2",
+          "name": "Telemetry Tracker v1.20.2",
+          "publishedAt": "2026-10-12T11:06:09Z",
+          "url": "https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.20.2",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 3,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
       ]
     },
     {

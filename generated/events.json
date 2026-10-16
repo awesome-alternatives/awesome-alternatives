@@ -4949,5 +4949,6 @@
   {"type":"released","slug":"sqlpage","at":"2026-10-16T06:56:33.026Z","commit":null,"from":"v0.46.3","to":"v0.47.0"},
   {"type":"released","slug":"streamyfin","at":"2026-10-16T06:56:33.026Z","commit":null,"from":"v0.55.1","to":"v0.55.2"},
   {"type":"released","slug":"trailbase","at":"2026-10-16T06:56:33.026Z","commit":null,"from":"v0.34.6","to":"v0.34.7"},
-  {"type":"added","slug":"yylo","at":"2026-10-16T06:56:33.026Z","commit":null}
+  {"type":"added","slug":"yylo","at":"2026-10-16T06:56:33.026Z","commit":null},
+  {"type":"added","slug":"telemetry-tracker","at":"2026-10-16T10:33:14.440Z","commit":null}
 ]

@@ -9,5 +9,6 @@ Collect exceptions from applications through an SDK and group them into issues.
 | [Errbit](https://github.com/errbit/errbit) | Ruby | MIT | [v0.11.5](https://github.com/errbit/errbit/releases/tag/v0.11.5) signed | 4270 | Airbrake (drop-in) |
 | [Exceptionless](https://github.com/exceptionless/Exceptionless) | C# | Apache-2.0 | [v8.10.0](https://github.com/exceptionless/Exceptionless/releases/tag/v8.10.0) signed | 2458 | Sentry (partial), Airbrake (partial) |
 | [Bugsink](https://github.com/bugsink/bugsink) | Python | Other | [2.6.1](https://github.com/bugsink/bugsink/releases/tag/2.6.1) | 2128 | Sentry (partial), Airbrake (partial) |
+| [Telemetry Tracker](https://github.com/Telemetry-Tracker/telemetry-tracker) | TypeScript | MIT | [v1.22.2](https://github.com/Telemetry-Tracker/telemetry-tracker/releases/tag/v1.22.2) | 34 | Sentry (partial) |
 
 [All categories](../README.md#catalog)
