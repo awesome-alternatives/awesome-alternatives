@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.15.1] - 2026-10-16
+
+### Bug Fixes
+
+- fix(ci): keep the new main's README when restoring the refreshed catalog
+
 ## [0.15.0] - 2026-10-11
 
 ### Features
