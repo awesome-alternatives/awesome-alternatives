@@ -1,7 +1,6 @@
 name: Telemetry Tracker
 repository: https://github.com/Telemetry-Tracker/telemetry-tracker
 category: error-tracking
-affiliation: author
 replaces:
   - tool: sentry
     fit: partial
