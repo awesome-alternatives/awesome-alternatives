@@ -4,7 +4,7 @@ Interactive command-line shells.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PowerShell](https://github.com/PowerShell/PowerShell) | C# | MIT | [v7.6.7](https://github.com/PowerShell/PowerShell/releases/tag/v7.6.7) | 55762 | Zsh (partial) |
+| [PowerShell](https://github.com/PowerShell/PowerShell) | C# | MIT | [v7.6.7](https://github.com/PowerShell/PowerShell/releases/tag/v7.6.7) | 55763 | Zsh (partial) |
 | [Nushell](https://github.com/nushell/nushell) | Rust | MIT | [0.116.1](https://github.com/nushell/nushell/releases/tag/0.116.1) signed | 40670 | Zsh (partial) |
 | [fish](https://github.com/fish-shell/fish-shell) | Rust | Other | [4.9.3](https://github.com/fish-shell/fish-shell/releases/tag/4.9.3) signed | 34297 | Zsh (full) |
 | [xonsh](https://github.com/xonsh/xonsh) | Python | Other | [0.24.2](https://github.com/xonsh/xonsh/releases/tag/0.24.2) signed | 9669 | Zsh (partial) |

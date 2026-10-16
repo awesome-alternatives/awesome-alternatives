@@ -4,11 +4,11 @@ Install dependencies, manage environments and lock Python projects.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.1](https://github.com/astral-sh/uv/releases/tag/0.13.1) signed | 90802 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
+| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.1](https://github.com/astral-sh/uv/releases/tag/0.13.1) signed | 90803 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
 | [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.10](https://github.com/pyenv/pyenv/releases/tag/v2.8.10) | 45142 | none |
 | [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.1](https://github.com/python-poetry/poetry/releases/tag/2.5.1) | 34306 | Pipenv (full) |
 | [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.9.1](https://github.com/pypa/pipenv/releases/tag/v2026.9.1) | 25022 | none |
-| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.18.1](https://github.com/pypa/pipx/releases/tag/1.18.1) | 12977 | none |
+| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.18.2](https://github.com/pypa/pipx/releases/tag/1.18.2) | 12977 | none |
 | [pip](https://github.com/pypa/pip) | Python | MIT | [26.2.1](https://github.com/pypa/pip/releases/tag/26.2.1) signed | 10293 | none |
 | [PDM](https://github.com/pdm-project/pdm) | Python | MIT | [2.29.2](https://github.com/pdm-project/pdm/releases/tag/2.29.2) | 8663 | Poetry (full), Pipenv (full) |
 | [mamba](https://github.com/mamba-org/mamba) | C++ | BSD-3-Clause | [2.9.0](https://github.com/mamba-org/mamba/releases/tag/2.9.0) signed | 8105 | conda (drop-in) |

@@ -5,8 +5,8 @@ Generate traffic to measure how a service holds up.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.3.0](https://github.com/grafana/k6/releases/tag/v2.3.0) | 31945 | Apache JMeter (full), Gatling (full) |
-| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.46.7](https://github.com/locustio/locust/releases/tag/2.46.7) signed | 28212 | Apache JMeter (full), Gatling (full) |
-| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25222 | Apache JMeter (partial) |
+| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.46.7](https://github.com/locustio/locust/releases/tag/2.46.7) signed | 28213 | Apache JMeter (full), Gatling (full) |
+| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25223 | Apache JMeter (partial) |
 | [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10602 | Vegeta (partial) |
 | [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9564 | none |
 | [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9094 | Apache JMeter (full), Gatling (full) |

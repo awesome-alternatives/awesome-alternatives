@@ -4,22 +4,22 @@ Serve sites, terminate TLS and route traffic to services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.1](https://github.com/fatedier/frp/releases/tag/v0.71.1) | 109938 | ngrok (partial), Cloudflare Tunnel (partial) |
-| [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.7](https://github.com/caddyserver/caddy/releases/tag/v2.11.7) signed | 78032 | nginx (full) |
+| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.1](https://github.com/fatedier/frp/releases/tag/v0.71.1) | 109941 | ngrok (partial), Cloudflare Tunnel (partial) |
+| [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.7](https://github.com/caddyserver/caddy/releases/tag/v2.11.7) signed | 78036 | nginx (full) |
 | [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.15](https://github.com/traefik/traefik/releases/tag/v3.7.15) signed | 65243 | nginx (partial), ingress-nginx (full) |
-| [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | TypeScript | MIT | [v2.16.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0) signed | 34417 | Traefik (partial), Caddy (partial) |
-| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.7](https://github.com/nginx/nginx/releases/tag/release-1.31.7) | 31896 | HAProxy (partial) |
-| [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.40.0](https://github.com/envoyproxy/envoy/releases/tag/v1.40.0) | 29070 | nginx (partial) |
+| [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | TypeScript | MIT | [v2.16.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0) signed | 34418 | Traefik (partial), Caddy (partial) |
+| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.7](https://github.com/nginx/nginx/releases/tag/release-1.31.7) | 31897 | HAProxy (partial) |
+| [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.40.0](https://github.com/envoyproxy/envoy/releases/tag/v1.40.0) | 29071 | nginx (partial) |
 | [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.24.0](https://github.com/fosrl/pangolin/releases/tag/1.24.0) signed | 23109 | Cloudflare Tunnel (full), ngrok (partial) |
 | [ingress-nginx](https://github.com/kubernetes/ingress-nginx) archived | Go | Apache-2.0 | [controller-v1.15.1](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1) signed | 19451 | none |
 | [rathole](https://github.com/rathole-org/rathole) | Rust | Apache-2.0 | [v0.5.0](https://github.com/rathole-org/rathole/releases/tag/v0.5.0) signed | 14340 | ngrok (partial), frp (full) |
 | [OpenResty](https://github.com/openresty/openresty) | C | Other | [v1.27.1.2](https://github.com/openresty/openresty/releases/tag/v1.27.1.2) | 14073 | nginx (drop-in) |
 | [Tengine](https://github.com/alibaba/tengine) | C | BSD-2-Clause | [3.1.0](https://github.com/alibaba/tengine/releases/tag/3.1.0) signed | 13391 | nginx (drop-in) |
-| [Nginx UI](https://github.com/0xJacky/nginx-ui) | Go | AGPL-3.0 | [v2.8.4](https://github.com/0xJacky/nginx-ui/releases/tag/v2.8.4) | 11631 | Nginx Proxy Manager (partial) |
+| [Nginx UI](https://github.com/0xJacky/nginx-ui) | Go | AGPL-3.0 | [v2.8.4](https://github.com/0xJacky/nginx-ui/releases/tag/v2.8.4) | 11632 | Nginx Proxy Manager (partial) |
 | [H2O](https://github.com/h2o/h2o) | C | MIT | [tag-no-more-releases](https://github.com/h2o/h2o/releases/tag/tag-no-more-releases) | 11549 | nginx (partial) |
 | [FrankenPHP](https://github.com/php/frankenphp) | Go | MIT | [v1.13.0](https://github.com/php/frankenphp/releases/tag/v1.13.0) | 11400 | nginx (partial) |
 | [BunkerWeb](https://github.com/bunkerity/bunkerweb) | Python | AGPL-3.0 | [v1.6.16](https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.16) signed | 11073 | Cloudflare WAF (partial), ModSecurity (partial) |
-| [HAProxy](https://github.com/haproxy/haproxy) | C | Other | [v3.4.0](https://github.com/haproxy/haproxy/releases/tag/v3.4.0) | 6925 | nginx (partial) |
+| [HAProxy](https://github.com/haproxy/haproxy) | C | Other | [v3.4.0](https://github.com/haproxy/haproxy/releases/tag/v3.4.0) | 6926 | nginx (partial) |
 | [Zoraxy](https://github.com/tobychui/zoraxy) | HTML | AGPL-3.0 | [v3.3.5-rc3](https://github.com/tobychui/zoraxy/releases/tag/v3.3.5-rc3) signed | 5519 | Nginx Proxy Manager (full) |
 | [sish](https://github.com/antoniomika/sish) | Go | MIT | [v2.24.1](https://github.com/antoniomika/sish/releases/tag/v2.24.1) signed | 4790 | ngrok (full) |
 | [zrok](https://github.com/openziti/zrok) | Go | Apache-2.0 | [v2.0.8](https://github.com/openziti/zrok/releases/tag/v2.0.8) signed | 4776 | ngrok (full), Cloudflare Tunnel (partial) |
@@ -33,7 +33,7 @@ Serve sites, terminate TLS and route traffic to services.
 | [Envoy Gateway](https://github.com/envoyproxy/gateway) | Go | Apache-2.0 | [v1.9.2](https://github.com/envoyproxy/gateway/releases/tag/v1.9.2) | 3079 | ingress-nginx (full) |
 | [Angie](https://github.com/webserver-llc/angie) | C | BSD-2-Clause | [Angie-1.12.3](https://github.com/webserver-llc/angie/releases/tag/Angie-1.12.3) | 2589 | nginx (drop-in) |
 | [Static Web Server](https://github.com/static-web-server/static-web-server) | Rust | Apache-2.0 | [v2.44.1](https://github.com/static-web-server/static-web-server/releases/tag/v2.44.1) signed | 2376 | nginx (partial) |
-| [Apache Traffic Server](https://github.com/apache/trafficserver) | C++ | Apache-2.0 | [10.2.0](https://github.com/apache/trafficserver/releases/tag/10.2.0) | 1996 | nginx (partial) |
+| [Apache Traffic Server](https://github.com/apache/trafficserver) | C++ | Apache-2.0 | [10.2.0](https://github.com/apache/trafficserver/releases/tag/10.2.0) | 1995 | nginx (partial) |
 | [OpenLiteSpeed](https://github.com/litespeedtech/openlitespeed) | C++ | GPL-3.0 | [v1.9.3](https://github.com/litespeedtech/openlitespeed/releases/tag/v1.9.3) | 1483 | nginx (partial) |
 
 [All categories](../README.md#catalog)

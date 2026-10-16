@@ -5,13 +5,13 @@ Self-hostable, privacy-friendly site analytics.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.729](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.729) | 40303 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
-| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.0](https://github.com/umami-software/umami/releases/tag/v3.4.0) signed | 39402 | Matomo (full), Google Analytics (partial) |
-| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29475 | Matomo (full), Google Analytics (partial) |
+| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.0](https://github.com/umami-software/umami/releases/tag/v3.4.0) signed | 39403 | Matomo (full), Google Analytics (partial) |
+| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29478 | Matomo (full), Google Analytics (partial) |
 | [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.1](https://github.com/matomo-org/matomo/releases/tag/5.14.1) | 21953 | Google Analytics (full) |
 | [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21053 | Google Analytics (partial) |
-| [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.0](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.0) | 13121 | Google Analytics (full) |
+| [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.0](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.0) | 13122 | Google Analytics (full) |
 | [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) signed | 12990 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
-| [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v2.3.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v2.3.0) | 7144 | Mixpanel (full), Amplitude (full) |
+| [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v2.3.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v2.3.0) | 7146 | Mixpanel (full), Amplitude (full) |
 | [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6063 | Google Analytics (partial) |
 | [Countly](https://github.com/Countly/countly-server) | JavaScript | Other | [25.03.55](https://github.com/Countly/countly-server/releases/tag/25.03.55) | 5916 | Mixpanel (partial), Amplitude (partial) |
 | [Ackee](https://github.com/electerious/Ackee) | JavaScript | MIT | [v3.6.1](https://github.com/electerious/Ackee/releases/tag/v3.6.1) | 4720 | Google Analytics (partial) |

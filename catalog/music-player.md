@@ -4,7 +4,7 @@ Play and organise a local music library or stream it from your own server, and f
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [beets](https://github.com/beetbox/beets) | Python | MIT | [v2.14.1](https://github.com/beetbox/beets/releases/tag/v2.14.1) | 15796 | Mp3tag (partial) |
+| [beets](https://github.com/beetbox/beets) | Python | MIT | [v2.14.1](https://github.com/beetbox/beets/releases/tag/v2.14.1) | 15795 | Mp3tag (partial) |
 | [Feishin](https://github.com/jeffvli/feishin) | TypeScript | GPL-3.0 | [v1.17.0](https://github.com/jeffvli/feishin/releases/tag/v1.17.0) | 10160 | Spotify (partial) |
 | [MusicBrainz Picard](https://github.com/metabrainz/picard) | Python | GPL-2.0 | [release-3.0.2](https://github.com/metabrainz/picard/releases/tag/release-3.0.2) signed | 5305 | Mp3tag (partial) |
 | [Harmonoid](https://github.com/harmonoid/harmonoid) | Dart | Other | [v0.3.32](https://github.com/harmonoid/harmonoid/releases/tag/v0.3.32) | 4783 | MusicBee (partial) |

@@ -4,7 +4,7 @@ Route, authenticate and rate-limit API traffic in front of services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44274 | Apigee (partial) |
+| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44273 | Apigee (partial) |
 | [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17227 | Kong Gateway (full) |
 | [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.15.1](https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1) signed | 10859 | Kong Gateway (full) |
 | [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9569 | Kong Gateway (partial) |

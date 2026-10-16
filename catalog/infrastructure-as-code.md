@@ -4,11 +4,11 @@ Declare cloud infrastructure in files and apply the difference.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.16.6](https://github.com/hashicorp/terraform/releases/tag/v1.16.6) signed | 49931 | none |
+| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.16.6](https://github.com/hashicorp/terraform/releases/tag/v1.16.6) signed | 49930 | none |
 | [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.1](https://github.com/opentofu/opentofu/releases/tag/v1.13.1) | 30510 | Terraform (drop-in), AWS CloudFormation (full) |
 | [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.2](https://github.com/anomalyco/sst/releases/tag/v4.17.2) signed | 26356 | Vercel (partial), AWS CDK (partial) |
 | [Pulumi](https://github.com/pulumi/pulumi) | Go | Apache-2.0 | [v3.268.0](https://github.com/pulumi/pulumi/releases/tag/v3.268.0) signed | 25791 | Terraform (full), AWS CloudFormation (full) |
-| [Packer](https://github.com/hashicorp/packer) | Go | Other | [v1.16.1](https://github.com/hashicorp/packer/releases/tag/v1.16.1) signed | 15807 | none |
+| [Packer](https://github.com/hashicorp/packer) | Go | Other | [v1.16.1](https://github.com/hashicorp/packer/releases/tag/v1.16.1) signed | 15806 | none |
 | [AWS CDK](https://github.com/aws/aws-cdk) | TypeScript | Apache-2.0 | [v2.273.0](https://github.com/aws/aws-cdk/releases/tag/v2.273.0) signed | 12941 | AWS CloudFormation (partial), Terraform (partial) |
 | [Crossplane](https://github.com/crossplane/crossplane) | Go | Apache-2.0 | [v2.4.2](https://github.com/crossplane/crossplane/releases/tag/v2.4.2) | 12155 | Terraform (partial), AWS CloudFormation (partial) |
 | [Terragrunt](https://github.com/gruntwork-io/terragrunt) | Go | MIT | [v1.1.6](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.6) signed | 9883 | none |

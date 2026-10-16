@@ -6,7 +6,7 @@ Run an online store, from catalogue to checkout, or ring up in-store sales and p
 |---|---|---|---|---:|---|
 | [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.21.2](https://github.com/medusajs/medusa/releases/tag/v2.21.2) signed | 36768 | Shopify (partial) |
 | [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.5.0](https://github.com/bagisto/bagisto/releases/tag/v2.5.0) | 28240 | Shopify (full) |
-| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.41](https://github.com/saleor/saleor/releases/tag/3.23.41) signed | 23444 | Shopify (partial) |
+| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.42](https://github.com/saleor/saleor/releases/tag/3.23.42) signed | 23446 | Shopify (partial) |
 | [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v5.6.1](https://github.com/spree/spree/releases/tag/v5.6.1) | 15760 | Shopify (full) |
 | [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.10-alpha1](https://github.com/magento/magento2/releases/tag/2.4.10-alpha1) | 12205 | Shopify (full) |
 | [WooCommerce](https://github.com/woocommerce/woocommerce) | PHP | Other | [11.2.1](https://github.com/woocommerce/woocommerce/releases/tag/11.2.1) signed | 10552 | Shopify (full) |

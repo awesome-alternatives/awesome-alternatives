@@ -4,7 +4,7 @@ Compile, transform, prefix and minify stylesheets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | TypeScript | MIT | [v4.3.3](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3) signed | 97879 | none |
+| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | TypeScript | MIT | [v4.3.3](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3) signed | 97881 | none |
 | [PostCSS](https://github.com/postcss/postcss) | TypeScript | MIT | [8.5.30](https://github.com/postcss/postcss/releases/tag/8.5.30) signed | 28970 | none |
 | [UnoCSS](https://github.com/unocss/unocss) | TypeScript | Other | [v66.11.0](https://github.com/unocss/unocss/releases/tag/v66.11.0) | 18980 | Tailwind CSS (partial) |
 | [Less](https://github.com/less/less.js) | JavaScript | Apache-2.0 | [v4.9.1](https://github.com/less/less.js/releases/tag/v4.9.1) | 17020 | none |

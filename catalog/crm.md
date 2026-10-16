@@ -4,8 +4,8 @@ Track contacts, companies and deals.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [twenty/v2.47.0](https://github.com/twentyhq/twenty/releases/tag/twenty/v2.47.0) signed | 58403 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
-| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25489 | none |
+| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [twenty/v2.47.0](https://github.com/twentyhq/twenty/releases/tag/twenty/v2.47.0) signed | 58405 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25490 | none |
 | [Krayin CRM](https://github.com/krayin/laravel-crm) | PHP | MIT | [v2.2.6](https://github.com/krayin/laravel-crm/releases/tag/v2.2.6) signed | 24013 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
 | [IDURAR](https://github.com/idurar/idurar-erp-crm) | JavaScript | AGPL-3.0 | [4.1.1](https://github.com/idurar/idurar-erp-crm/releases/tag/4.1.1) signed | 8880 | QuickBooks (partial) |
 | [SuiteCRM](https://github.com/SuiteCRM/SuiteCRM) | PHP | AGPL-3.0 | [v7.15.2](https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2) | 5795 | Salesforce (full) |

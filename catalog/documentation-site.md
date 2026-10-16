@@ -8,11 +8,11 @@ Turn Markdown into a searchable documentation site.
 | [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.0.0](https://github.com/docsifyjs/docsify/releases/tag/v5.0.0) signed | 31543 | GitBook (partial) |
 | [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.7.7](https://github.com/squidfunk/mkdocs-material/releases/tag/9.7.7) signed | 27577 | GitBook (full), Docusaurus (full) |
 | [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22502 | GitBook (full) |
-| [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22222 | GitBook (full) |
-| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18410 | Docusaurus (full), GitBook (full) |
+| [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22223 | GitBook (full) |
+| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18411 | Docusaurus (full), GitBook (full) |
 | [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13938 | GitBook (full), Docusaurus (full) |
-| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [@fumadocs/tailwind@0.1.4](https://github.com/fuma-nama/fumadocs/releases/tag/%40fumadocs/tailwind%400.1.4) signed | 13384 | GitBook (full), Nextra (full), ReadMe (partial) |
-| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.6](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.6) signed | 9413 | Docusaurus (full), GitBook (full) |
+| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [@fumadocs/tailwind@0.1.4](https://github.com/fuma-nama/fumadocs/releases/tag/%40fumadocs/tailwind%400.1.4) signed | 13386 | GitBook (full), Nextra (full), ReadMe (partial) |
+| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.6](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.6) signed | 9414 | Docusaurus (full), GitBook (full) |
 | [Sphinx](https://github.com/sphinx-doc/sphinx) | Python | Other | [v9.1.0](https://github.com/sphinx-doc/sphinx/releases/tag/v9.1.0) | 8061 | GitBook (full) |
 | [Zensical](https://github.com/zensical/zensical) | Rust | MIT | [v0.0.70](https://github.com/zensical/zensical/releases/tag/v0.0.70) | 5920 | Material for MkDocs (full) |
 | [DocFX](https://github.com/dotnet/docfx) | C# | MIT | [v2.81.0](https://github.com/dotnet/docfx/releases/tag/v2.81.0) signed | 4445 | Doxygen (partial), Sphinx (partial) |

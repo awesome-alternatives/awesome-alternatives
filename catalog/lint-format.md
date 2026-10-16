@@ -11,11 +11,11 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.27](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.27) signed | 13564 | PHP_CodeSniffer (partial) |
 | [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.92.0](https://github.com/rubocop/rubocop/releases/tag/v1.92.0) | 12913 | none |
 | [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12481 | none |
-| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9975 | SQL Formatter (partial), sqlfmt (partial) |
+| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9976 | SQL Formatter (partial), sqlfmt (partial) |
 | [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.3.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.3.0) | 9601 | SonarQube Community Build (partial) |
-| [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9132 | none |
+| [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9133 | none |
 | [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.63.1](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.63.1) | 8934 | none |
-| [detekt](https://github.com/detekt/detekt) | Kotlin | Apache-2.0 | [v1.23.8](https://github.com/detekt/detekt/releases/tag/v1.23.8) signed | 7092 | SonarQube Community Build (partial) |
+| [detekt](https://github.com/detekt/detekt) | Kotlin | Apache-2.0 | [v1.23.8](https://github.com/detekt/detekt/releases/tag/v1.23.8) signed | 7093 | SonarQube Community Build (partial) |
 | [Staticcheck](https://github.com/dominikh/go-tools) | Go | MIT | [2026.2.2](https://github.com/dominikh/go-tools/releases/tag/2026.2.2) signed | 6909 | golangci-lint (partial) |
 | [ktlint](https://github.com/ktlint/ktlint) | Kotlin | MIT | [1.8.0](https://github.com/ktlint/ktlint/releases/tag/1.8.0) signed | 6759 | none |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.0](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.0) | 6383 | none |

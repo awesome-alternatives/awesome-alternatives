@@ -4,9 +4,9 @@ One OpenAI-compatible API in front of many model providers, with keys, budgets, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.105.1](https://github.com/BerriAI/litellm/releases/tag/v1.105.1) signed | 61356 | OpenRouter (partial) |
-| [New API](https://github.com/QuantumNous/new-api) | Go | AGPL-3.0 | [v1.0.0-rc.44](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.44) signed | 50053 | OpenRouter (partial) |
-| [Portkey Gateway](https://github.com/Portkey-AI/gateway) | TypeScript | MIT | [v1.15.2](https://github.com/Portkey-AI/gateway/releases/tag/v1.15.2) signed | 13197 | OpenRouter (partial) |
-| [Bifrost](https://github.com/maximhq/bifrost) | Go | Apache-2.0 | [cli/v1.0.0](https://github.com/maximhq/bifrost/releases/tag/cli/v1.0.0) | 8842 | OpenRouter (partial) |
+| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.105.1](https://github.com/BerriAI/litellm/releases/tag/v1.105.1) signed | 61359 | OpenRouter (partial) |
+| [New API](https://github.com/QuantumNous/new-api) | Go | AGPL-3.0 | [v1.0.0-rc.44](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.44) signed | 50064 | OpenRouter (partial) |
+| [Portkey Gateway](https://github.com/Portkey-AI/gateway) | TypeScript | MIT | [v1.15.2](https://github.com/Portkey-AI/gateway/releases/tag/v1.15.2) signed | 13198 | OpenRouter (partial) |
+| [Bifrost](https://github.com/maximhq/bifrost) | Go | Apache-2.0 | [cli/v1.0.0](https://github.com/maximhq/bifrost/releases/tag/cli/v1.0.0) | 8845 | OpenRouter (partial) |
 
 [All categories](../README.md#catalog)

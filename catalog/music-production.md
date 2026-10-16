@@ -8,14 +8,14 @@ Record, edit and mix audio, and compose with DAWs, trackers, sequencers and soft
 | [Sonic Pi](https://github.com/sonic-pi-net/sonic-pi) | C++ | Other | [v5.0.0](https://github.com/sonic-pi-net/sonic-pi/releases/tag/v5.0.0) | 12203 | none |
 | [LMMS](https://github.com/LMMS/lmms) | C++ | GPL-2.0 | [v1.2.2](https://github.com/LMMS/lmms/releases/tag/v1.2.2) signed | 10482 | FL Studio (partial), Ableton Live (partial) |
 | [Mixxx](https://github.com/mixxxdj/mixxx) | C++ | Other | [2.5.6](https://github.com/mixxxdj/mixxx/releases/tag/2.5.6) signed | 7269 | Traktor Pro (full), Serato DJ (full) |
-| [Ardour](https://github.com/Ardour/ardour) | C++ | Other | [9.8](https://github.com/Ardour/ardour/releases/tag/9.8) | 5352 | none |
+| [Ardour](https://github.com/Ardour/ardour) | C++ | Other | [9.8](https://github.com/Ardour/ardour/releases/tag/9.8) | 5353 | none |
 | [Bespoke Synth](https://github.com/BespokeSynth/BespokeSynth) | C++ | GPL-3.0 | [v1.3.0](https://github.com/BespokeSynth/BespokeSynth/releases/tag/v1.3.0) signed | 4742 | Max/MSP (partial) |
 | [Surge XT](https://github.com/surge-synthesizer/surge) | C | GPL-3.0 | [Nightly](https://github.com/surge-synthesizer/surge/releases/tag/Nightly) signed | 4060 | Serum (full) |
 | [Furnace](https://github.com/tildearrow/furnace) | C++ | Other | [v0.6.8.3](https://github.com/tildearrow/furnace/releases/tag/v0.6.8.3) | 3874 | DefleMask (full) |
 | [Dexed](https://github.com/asb2m10/dexed) | C++ | GPL-3.0 | [v1.0.1](https://github.com/asb2m10/dexed/releases/tag/v1.0.1) signed | 3571 | FM8 (partial) |
 | [Helio](https://github.com/helio-fm/helio-sequencer) | C++ | GPL-3.0 | [3.18](https://github.com/helio-fm/helio-sequencer/releases/tag/3.18) | 3570 | FL Studio (partial) |
 | [Cardinal](https://github.com/DISTRHO/Cardinal) | C++ | GPL-3.0 | [26.02](https://github.com/DISTRHO/Cardinal/releases/tag/26.02) signed | 3223 | none |
-| [openDAW](https://github.com/andremichelle/openDAW) | TypeScript | AGPL-3.0 | [@opendaw/studio-adapters@0.3.6](https://github.com/andremichelle/openDAW/releases/tag/%40opendaw/studio-adapters%400.3.6) | 2330 | Ableton Live (partial), FL Studio (partial) |
+| [openDAW](https://github.com/andremichelle/openDAW) | TypeScript | AGPL-3.0 | [@opendaw/studio-adapters@0.3.6](https://github.com/andremichelle/openDAW/releases/tag/%40opendaw/studio-adapters%400.3.6) | 2331 | Ableton Live (partial), FL Studio (partial) |
 | [Carla](https://github.com/falkTX/Carla) | C++ | none | [v2.5.10](https://github.com/falkTX/Carla/releases/tag/v2.5.10) signed | 2182 | none |
 | [MilkyTracker](https://github.com/milkytracker/MilkyTracker) | C++ | Other | [v1.05.01](https://github.com/milkytracker/MilkyTracker/releases/tag/v1.05.01) | 2114 | Renoise (partial) |
 | [ossia score](https://github.com/ossia/score) | C++ | Other | [v3.8.2](https://github.com/ossia/score/releases/tag/v3.8.2) | 2077 | QLab (partial) |

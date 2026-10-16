@@ -4,7 +4,7 @@ Install and lock npm dependencies.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [pnpm](https://github.com/pnpm/pnpm) | Rust | MIT | [v12.11.2](https://github.com/pnpm/pnpm/releases/tag/v12.11.2) signed | 36815 | npm (full) |
+| [pnpm](https://github.com/pnpm/pnpm) | Rust | MIT | [v12.11.2](https://github.com/pnpm/pnpm/releases/tag/v12.11.2) signed | 36816 | npm (full) |
 | [npm](https://github.com/npm/cli) | JavaScript | Other | [v12.2.1](https://github.com/npm/cli/releases/tag/v12.2.1) | 10190 | none |
 | [Yarn](https://github.com/yarnpkg/berry) | TypeScript | BSD-2-Clause | [@yarnpkg/cli/4.18.1](https://github.com/yarnpkg/berry/releases/tag/%40yarnpkg/cli/4.18.1) | 8111 | npm (full) |
 

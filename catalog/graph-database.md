@@ -4,10 +4,10 @@ Databases storing nodes and the relationships between them, queried by traversin
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dgraph](https://github.com/dgraph-io/dgraph) | Go | Apache-2.0 | [v25.5.0](https://github.com/dgraph-io/dgraph/releases/tag/v25.5.0) signed | 21809 | Amazon Neptune (partial) |
-| [Neo4j](https://github.com/neo4j/neo4j) | Java | GPL-3.0 | [3.2.0-alpha08](https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08) | 17320 | Amazon Neptune (partial), TigerGraph (partial) |
+| [Dgraph](https://github.com/dgraph-io/dgraph) | Go | Apache-2.0 | [v25.5.0](https://github.com/dgraph-io/dgraph/releases/tag/v25.5.0) signed | 21808 | Amazon Neptune (partial) |
+| [Neo4j](https://github.com/neo4j/neo4j) | Java | GPL-3.0 | [3.2.0-alpha08](https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08) | 17321 | Amazon Neptune (partial), TigerGraph (partial) |
 | [NebulaGraph](https://github.com/vesoft-inc/nebula) | C++ | Apache-2.0 | [v3.8.0](https://github.com/vesoft-inc/nebula/releases/tag/v3.8.0) signed | 12433 | TigerGraph (partial), Neo4j (partial) |
-| [FalkorDB](https://github.com/FalkorDB/FalkorDB) | Rust | Other | [v6.0.2](https://github.com/FalkorDB/FalkorDB/releases/tag/v6.0.2) signed | 10194 | Neo4j (partial) |
+| [FalkorDB](https://github.com/FalkorDB/FalkorDB) | Rust | Other | [v6.0.2](https://github.com/FalkorDB/FalkorDB/releases/tag/v6.0.2) signed | 10212 | Neo4j (partial) |
 | [JanusGraph](https://github.com/JanusGraph/janusgraph) | Java | Other | [v1.1.0](https://github.com/JanusGraph/janusgraph/releases/tag/v1.1.0) | 5855 | Azure Cosmos DB for Apache Gremlin (full), Amazon Neptune (partial) |
 | [OrientDB](https://github.com/orientechnologies/orientdb) | Java | Apache-2.0 | [3.2.57](https://github.com/orientechnologies/orientdb/releases/tag/3.2.57) | 4993 | Neo4j (partial) |
 | [Apache AGE](https://github.com/apache/age) | C | Apache-2.0 | [PG18/v1.8.0-rc0](https://github.com/apache/age/releases/tag/PG18/v1.8.0-rc0) signed | 4890 | Neo4j (partial) |

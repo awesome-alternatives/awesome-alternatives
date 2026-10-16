@@ -4,7 +4,7 @@ Turn a machine at home into a server with an app store, storage management and a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37316 | Unraid (partial), Synology DiskStation Manager (partial) |
+| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37315 | Unraid (partial), Synology DiskStation Manager (partial) |
 | [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.0](https://github.com/getumbrel/umbrel/releases/tag/2.0.0) | 12385 | Unraid (partial) |
 | [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.10.2](https://github.com/runtipi/runtipi/releases/tag/v4.10.2) signed | 9691 | Unraid (partial) |
 | [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7001 | Synology DiskStation Manager (partial), Unraid (partial) |
