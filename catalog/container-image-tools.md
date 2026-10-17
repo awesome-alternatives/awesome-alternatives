@@ -4,9 +4,9 @@ Inspect, copy, sign and shrink OCI images and work with registries without a con
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Slim](https://github.com/slimtoolkit/slim) | Go | Apache-2.0 | [1.40.11](https://github.com/slimtoolkit/slim/releases/tag/1.40.11) | 23430 | none |
+| [Slim](https://github.com/slimtoolkit/slim) | Go | Apache-2.0 | [1.40.11](https://github.com/slimtoolkit/slim/releases/tag/1.40.11) | 23431 | none |
 | [Skopeo](https://github.com/podman-container-tools/skopeo) | Go | Apache-2.0 | [v1.24.1](https://github.com/podman-container-tools/skopeo/releases/tag/v1.24.1) signed | 11315 | crane (partial) |
-| [crane](https://github.com/google/go-containerregistry) | Go | Apache-2.0 | [v0.22.1](https://github.com/google/go-containerregistry/releases/tag/v0.22.1) signed | 4087 | Skopeo (full) |
-| [regclient](https://github.com/regclient/regclient) | Go | Apache-2.0 | [v0.11.6](https://github.com/regclient/regclient/releases/tag/v0.11.6) signed | 1951 | Skopeo (full) |
+| [crane](https://github.com/google/go-containerregistry) | Go | Apache-2.0 | [v0.22.1](https://github.com/google/go-containerregistry/releases/tag/v0.22.1) signed | 4088 | Skopeo (full) |
+| [regclient](https://github.com/regclient/regclient) | Go | Apache-2.0 | [v0.11.6](https://github.com/regclient/regclient/releases/tag/v0.11.6) signed | 1952 | Skopeo (full) |
 
 [All categories](../README.md#catalog)

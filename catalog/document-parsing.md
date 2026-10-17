@@ -4,10 +4,10 @@ Convert PDFs, office files and scans into Markdown or JSON that language models 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MarkItDown](https://github.com/microsoft/markitdown) | Python | MIT | [v0.1.8](https://github.com/microsoft/markitdown/releases/tag/v0.1.8) | 190504 | LlamaParse (partial) |
-| [MinerU](https://github.com/opendatalab/MinerU) | Python | Other | [mineru-4.0.12-released](https://github.com/opendatalab/MinerU/releases/tag/mineru-4.0.12-released) | 81861 | LlamaParse (full), Amazon Textract (partial) |
-| [Docling](https://github.com/docling-project/docling) | Python | MIT | [v2.140.0](https://github.com/docling-project/docling/releases/tag/v2.140.0) | 68968 | LlamaParse (full), Amazon Textract (partial) |
-| [Marker](https://github.com/datalab-to/marker) | Python | Apache-2.0 | [v2.0.0](https://github.com/datalab-to/marker/releases/tag/v2.0.0) signed | 40498 | LlamaParse (full), Amazon Textract (partial) |
-| [Unstructured](https://github.com/Unstructured-IO/unstructured) | HTML | Apache-2.0 | [0.27.27](https://github.com/Unstructured-IO/unstructured/releases/tag/0.27.27) signed | 15570 | LlamaParse (partial) |
+| [MarkItDown](https://github.com/microsoft/markitdown) | Python | MIT | [v0.1.8](https://github.com/microsoft/markitdown/releases/tag/v0.1.8) | 190651 | LlamaParse (partial) |
+| [MinerU](https://github.com/opendatalab/MinerU) | Python | Other | [mineru-4.0.12-released](https://github.com/opendatalab/MinerU/releases/tag/mineru-4.0.12-released) | 81881 | LlamaParse (full), Amazon Textract (partial) |
+| [Docling](https://github.com/docling-project/docling) | Python | MIT | [v2.140.0](https://github.com/docling-project/docling/releases/tag/v2.140.0) | 68993 | LlamaParse (full), Amazon Textract (partial) |
+| [Marker](https://github.com/datalab-to/marker) | Python | Apache-2.0 | [v2.0.0](https://github.com/datalab-to/marker/releases/tag/v2.0.0) signed | 40507 | LlamaParse (full), Amazon Textract (partial) |
+| [Unstructured](https://github.com/Unstructured-IO/unstructured) | HTML | Apache-2.0 | [0.27.28](https://github.com/Unstructured-IO/unstructured/releases/tag/0.27.28) signed | 15573 | LlamaParse (partial) |
 
 [All categories](../README.md#catalog)

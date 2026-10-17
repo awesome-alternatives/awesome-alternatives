@@ -9,6 +9,6 @@ Run functions and scale-to-zero services on your own cluster, triggered by HTTP 
 | [Apache OpenWhisk](https://github.com/apache/openwhisk) | Scala | Apache-2.0 | [2.0.0](https://github.com/apache/openwhisk/releases/tag/2.0.0) signed | 6805 | AWS Lambda (full) |
 | [Spin](https://github.com/spinframework/spin) | Rust | Apache-2.0 | [v4.2.3](https://github.com/spinframework/spin/releases/tag/v4.2.3) signed | 6531 | AWS Lambda (partial) |
 | [Knative Serving](https://github.com/knative/serving) | Go | Apache-2.0 | [knative-v1.23.0](https://github.com/knative/serving/releases/tag/knative-v1.23.0) | 6110 | AWS Lambda (partial) |
-| [Nuclio](https://github.com/nuclio/nuclio) | Go | Apache-2.0 | [1.17.10](https://github.com/nuclio/nuclio/releases/tag/1.17.10) signed | 5765 | AWS Lambda (full) |
+| [Nuclio](https://github.com/nuclio/nuclio) | Go | Apache-2.0 | [1.16.12](https://github.com/nuclio/nuclio/releases/tag/1.16.12) signed | 5766 | AWS Lambda (full) |
 
 [All categories](../README.md#catalog)

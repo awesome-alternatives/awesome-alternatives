@@ -4,10 +4,10 @@ Replicated block and file storage pooled from the disks of a cluster, often as p
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [JuiceFS](https://github.com/juicedata/juicefs) | Go | Apache-2.0 | [v1.4.1](https://github.com/juicedata/juicefs/releases/tag/v1.4.1) signed | 14542 | GlusterFS (partial) |
+| [JuiceFS](https://github.com/juicedata/juicefs) | Go | Apache-2.0 | [v1.4.1](https://github.com/juicedata/juicefs/releases/tag/v1.4.1) signed | 14545 | GlusterFS (partial) |
 | [Rook](https://github.com/rook/rook) | Go | Apache-2.0 | [v1.21.0](https://github.com/rook/rook/releases/tag/v1.21.0) | 13682 | Longhorn (partial) |
 | [OpenEBS](https://github.com/openebs/openebs) | unknown | Apache-2.0 | [v4.6.2](https://github.com/openebs/openebs/releases/tag/v4.6.2) signed | 9832 | Longhorn (full) |
-| [Longhorn](https://github.com/longhorn/longhorn) | Shell | Apache-2.0 | [v1.13.0](https://github.com/longhorn/longhorn/releases/tag/v1.13.0) | 8032 | OpenEBS (full) |
-| [GlusterFS](https://github.com/gluster/glusterfs) | C | GPL-2.0 | [v11.2](https://github.com/gluster/glusterfs/releases/tag/v11.2) signed | 5260 | Ceph (partial) |
+| [Longhorn](https://github.com/longhorn/longhorn) | Shell | Apache-2.0 | [v1.13.0](https://github.com/longhorn/longhorn/releases/tag/v1.13.0) | 8033 | OpenEBS (full) |
+| [GlusterFS](https://github.com/gluster/glusterfs) | C | GPL-2.0 | [v11.2](https://github.com/gluster/glusterfs/releases/tag/v11.2) signed | 5259 | Ceph (partial) |
 
 [All categories](../README.md#catalog)
