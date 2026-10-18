@@ -4,10 +4,10 @@ Route audio and video between WebRTC peers through an SFU, or relay it through a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LiveKit](https://github.com/livekit/livekit) | Go | Apache-2.0 | [v1.13.10](https://github.com/livekit/livekit/releases/tag/v1.13.10) signed | 21496 | Agora (full) |
-| [coturn](https://github.com/coturn/coturn) | C | Other | [docker/4.18.0-r0](https://github.com/coturn/coturn/releases/tag/docker/4.18.0-r0) signed | 14487 | Twilio (partial) |
+| [LiveKit](https://github.com/livekit/livekit) | Go | Apache-2.0 | [v1.13.10](https://github.com/livekit/livekit/releases/tag/v1.13.10) signed | 21545 | Agora (full) |
+| [coturn](https://github.com/coturn/coturn) | C | Other | [docker/4.18.0-r0](https://github.com/coturn/coturn/releases/tag/docker/4.18.0-r0) signed | 14488 | Twilio (partial) |
 | [Janus](https://github.com/meetecho/janus-gateway) | C | GPL-3.0 | [v1.4.3](https://github.com/meetecho/janus-gateway/releases/tag/v1.4.3) | 9191 | Agora (partial) |
-| [mediasoup](https://github.com/versatica/mediasoup) | C++ | ISC | [3.30.0](https://github.com/versatica/mediasoup/releases/tag/3.30.0) | 7396 | Agora (partial) |
+| [mediasoup](https://github.com/versatica/mediasoup) | C++ | ISC | [3.30.1](https://github.com/versatica/mediasoup/releases/tag/3.30.1) | 7398 | Agora (partial) |
 | [Jitsi Videobridge](https://github.com/jitsi/jitsi-videobridge) | Kotlin | Apache-2.0 | [stable/jitsi-meet_11248](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable/jitsi-meet_11248) | 3104 | Agora (partial), mediasoup (full) |
 | [OpenVidu](https://github.com/OpenVidu/openvidu) | TypeScript | Apache-2.0 | [v3.9.0](https://github.com/OpenVidu/openvidu/releases/tag/v3.9.0) | 2137 | Agora (full) |
 | [STUNner](https://github.com/l7mp/stunner) | Go | MIT | [v1.2.1](https://github.com/l7mp/stunner/releases/tag/v1.2.1) | 1061 | coturn (partial), Twilio (partial) |

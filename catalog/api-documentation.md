@@ -4,9 +4,9 @@ Render interactive API reference pages from OpenAPI and AsyncAPI documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Swagger UI](https://github.com/swagger-api/swagger-ui) | JavaScript | Apache-2.0 | [v5.33.3](https://github.com/swagger-api/swagger-ui/releases/tag/v5.33.3) | 29039 | ReadMe (partial) |
-| [Redoc](https://github.com/Redocly/redoc) | TypeScript | MIT | [redoc@3.0.1](https://github.com/Redocly/redoc/releases/tag/redoc%403.0.1) signed | 25960 | ReadMe (partial) |
-| [Scalar](https://github.com/scalar/scalar) | TypeScript | MIT | [release-2026-10-16-3197dc0](https://github.com/scalar/scalar/releases/tag/release-2026-10-16-3197dc0) signed | 16272 | ReadMe (partial), Postman (partial) |
+| [Swagger UI](https://github.com/swagger-api/swagger-ui) | JavaScript | Apache-2.0 | [v5.33.3](https://github.com/swagger-api/swagger-ui/releases/tag/v5.33.3) | 29040 | ReadMe (partial) |
+| [Redoc](https://github.com/Redocly/redoc) | TypeScript | MIT | [redoc@3.0.1](https://github.com/Redocly/redoc/releases/tag/redoc%403.0.1) signed | 25963 | ReadMe (partial) |
+| [Scalar](https://github.com/scalar/scalar) | TypeScript | MIT | [release-2026-10-16-3197dc0](https://github.com/scalar/scalar/releases/tag/release-2026-10-16-3197dc0) signed | 16279 | ReadMe (partial), Postman (partial) |
 | [Stoplight Elements](https://github.com/stoplightio/elements) | TypeScript | Apache-2.0 | [v6.1.10](https://github.com/stoplightio/elements/releases/tag/v6.1.10) | 2468 | Swagger UI (full), ReadMe (partial) |
 | [RapiDoc](https://github.com/rapi-doc/RapiDoc) | JavaScript | MIT | [v11.0.1](https://github.com/rapi-doc/RapiDoc/releases/tag/v11.0.1) | 1903 | Redoc (full), Swagger UI (full) |
 

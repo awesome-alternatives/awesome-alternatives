@@ -11,9 +11,9 @@ Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 | [Damus](https://github.com/damus-io/damus) | Swift | GPL-3.0 | [v1.17](https://github.com/damus-io/damus/releases/tag/v1.17) | 2147 | X (Twitter) (partial) |
 | [Mastodon for Android](https://github.com/mastodon/mastodon-android) | Java | GPL-3.0 | [v2.13.4](https://github.com/mastodon/mastodon-android/releases/tag/v2.13.4) | 2055 | X (Twitter) (partial) |
 | [Voyager](https://github.com/aeharding/voyager) | TypeScript | AGPL-3.0 | [2.49.1](https://github.com/aeharding/voyager/releases/tag/2.49.1) signed | 1819 | Reddit (partial) |
-| [Amethyst](https://github.com/vitorpamplona/amethyst) | Kotlin | MIT | [v1.19.0](https://github.com/vitorpamplona/amethyst/releases/tag/v1.19.0) | 1611 | X (Twitter) (partial) |
-| [Phanpy](https://github.com/cheeaun/phanpy) | JavaScript | MIT | [2026.10.09.febb38d](https://github.com/cheeaun/phanpy/releases/tag/2026.10.09.febb38d) signed | 1502 | X (Twitter) (partial) |
-| [Jerboa](https://github.com/LemmyNet/jerboa) | Kotlin | AGPL-3.0 | [0.0.88](https://github.com/LemmyNet/jerboa/releases/tag/0.0.88) | 1326 | Reddit (partial) |
+| [Amethyst](https://github.com/vitorpamplona/amethyst) | Kotlin | MIT | [v1.19.0](https://github.com/vitorpamplona/amethyst/releases/tag/v1.19.0) | 1612 | X (Twitter) (partial) |
+| [Phanpy](https://github.com/cheeaun/phanpy) | JavaScript | MIT | [2026.10.09.febb38d](https://github.com/cheeaun/phanpy/releases/tag/2026.10.09.febb38d) signed | 1503 | X (Twitter) (partial) |
+| [Jerboa](https://github.com/LemmyNet/jerboa) | Kotlin | AGPL-3.0 | [0.0.88](https://github.com/LemmyNet/jerboa/releases/tag/0.0.88) | 1327 | Reddit (partial) |
 | [Thunder](https://github.com/thunder-app/thunder) | Dart | AGPL-3.0 | [0.8.6](https://github.com/thunder-app/thunder/releases/tag/0.8.6) | 1028 | Reddit (partial) |
 | [Photon](https://github.com/Xyphyn/photon) | Svelte | AGPL-3.0 | [v2.4.3](https://github.com/Xyphyn/photon/releases/tag/v2.4.3) signed | 557 | Reddit (partial) |
 
