@@ -4,12 +4,12 @@ Generate images from text prompts with diffusion models running on your own hard
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Python | GPL-3.0 | [v0.41.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0) | 138088 | Midjourney (partial) |
-| [InvokeAI](https://github.com/invoke-ai/InvokeAI) | TypeScript | Apache-2.0 | [v6.14.2](https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2) | 28713 | Midjourney (partial) |
-| [Krita AI Diffusion](https://github.com/Acly/krita-ai-diffusion) | Python | GPL-3.0 | [v1.53.0](https://github.com/Acly/krita-ai-diffusion/releases/tag/v1.53.0) signed | 10734 | Midjourney (partial) |
-| [Easy Diffusion](https://github.com/easydiffusion/easydiffusion) | JavaScript | Other | [v3.0.16](https://github.com/easydiffusion/easydiffusion/releases/tag/v3.0.16) | 10472 | Midjourney (partial) |
-| [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) | C# | AGPL-3.0 | [v2.16.4](https://github.com/LykosAI/StabilityMatrix/releases/tag/v2.16.4) signed | 8917 | Midjourney (partial) |
-| [SD.Next](https://github.com/vladmandic/sdnext) | Python | Apache-2.0 | [2026-07-14](https://github.com/vladmandic/sdnext/releases/tag/2026-07-14) signed | 7356 | Midjourney (partial) |
-| [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) | C# | MIT | [0.9.8-Beta](https://github.com/mcmonkeyprojects/SwarmUI/releases/tag/0.9.8-Beta) | 4677 | Midjourney (partial) |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Python | GPL-3.0 | [v0.42.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1) | 138828 | Midjourney (partial) |
+| [InvokeAI](https://github.com/invoke-ai/InvokeAI) | TypeScript | Apache-2.0 | [v6.14.2](https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2) | 28746 | Midjourney (partial) |
+| [Krita AI Diffusion](https://github.com/Acly/krita-ai-diffusion) | Python | GPL-3.0 | [v1.53.0](https://github.com/Acly/krita-ai-diffusion/releases/tag/v1.53.0) signed | 10738 | Midjourney (partial) |
+| [Easy Diffusion](https://github.com/easydiffusion/easydiffusion) | JavaScript | Other | [v3.0.16](https://github.com/easydiffusion/easydiffusion/releases/tag/v3.0.16) | 10473 | Midjourney (partial) |
+| [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) | C# | AGPL-3.0 | [v2.16.4](https://github.com/LykosAI/StabilityMatrix/releases/tag/v2.16.4) signed | 8921 | Midjourney (partial) |
+| [SD.Next](https://github.com/vladmandic/sdnext) | Python | Apache-2.0 | [2026-07-14](https://github.com/vladmandic/sdnext/releases/tag/2026-07-14) signed | 7354 | Midjourney (partial) |
+| [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) | C# | MIT | [0.9.8-Beta](https://github.com/mcmonkeyprojects/SwarmUI/releases/tag/0.9.8-Beta) | 4680 | Midjourney (partial) |
 
 [All categories](../README.md#catalog)

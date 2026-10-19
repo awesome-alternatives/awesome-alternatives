@@ -4,10 +4,10 @@ Pod networking, network policy and load balancer addresses for Kubernetes cluste
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Flannel](https://github.com/flannel-io/flannel) | Go | Apache-2.0 | [v0.28.10](https://github.com/flannel-io/flannel/releases/tag/v0.28.10) signed | 9558 | none |
-| [MetalLB](https://github.com/metallb/metallb) | Go | Apache-2.0 | [metallb-chart-0.16.1](https://github.com/metallb/metallb/releases/tag/metallb-chart-0.16.1) | 8380 | kube-vip (partial) |
-| [Calico](https://github.com/projectcalico/calico) | Go | Apache-2.0 | [v3.33.0](https://github.com/projectcalico/calico/releases/tag/v3.33.0) signed | 7394 | Flannel (full) |
+| [Flannel](https://github.com/flannel-io/flannel) | Go | Apache-2.0 | [v0.28.10](https://github.com/flannel-io/flannel/releases/tag/v0.28.10) signed | 9557 | none |
+| [MetalLB](https://github.com/metallb/metallb) | Go | Apache-2.0 | [metallb-chart-0.16.1](https://github.com/metallb/metallb/releases/tag/metallb-chart-0.16.1) | 8381 | kube-vip (partial) |
+| [Calico](https://github.com/projectcalico/calico) | Go | Apache-2.0 | [v3.33.0](https://github.com/projectcalico/calico/releases/tag/v3.33.0) signed | 7395 | Flannel (full) |
 | [kube-vip](https://github.com/kube-vip/kube-vip) | Go | Apache-2.0 | [v1.3.0](https://github.com/kube-vip/kube-vip/releases/tag/v1.3.0) signed | 2982 | MetalLB (partial) |
-| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Go | Apache-2.0 | [v4.3.1](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1) signed | 2963 | none |
+| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Go | Apache-2.0 | [v4.3.1](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1) signed | 2965 | none |
 
 [All categories](../README.md#catalog)

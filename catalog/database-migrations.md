@@ -4,16 +4,16 @@ Version and apply database schema changes.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 18975 | Flyway (partial) |
-| [Bytebase](https://github.com/bytebase/bytebase) | Go | Other | [3.23.1](https://github.com/bytebase/bytebase/releases/tag/3.23.1) | 14599 | Flyway (partial) |
-| [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13604 | none |
-| [goose](https://github.com/pressly/goose) | Go | Other | [v3.29.0](https://github.com/pressly/goose/releases/tag/v3.29.0) | 11591 | migrate (full) |
-| [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.10.3](https://github.com/flyway/flyway/releases/tag/flyway-13.10.3) | 10155 | Liquibase (full) |
-| [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.3.0](https://github.com/ariga/atlas/releases/tag/v1.3.0) signed | 8780 | Liquibase (full), Flyway (full) |
-| [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.36.0](https://github.com/amacneil/dbmate/releases/tag/v2.36.0) signed | 7464 | Flyway (full), Liquibase (partial) |
-| [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7065 | Bytebase (partial) |
+| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 18976 | Flyway (partial) |
+| [Bytebase](https://github.com/bytebase/bytebase) | Go | Other | [3.23.1](https://github.com/bytebase/bytebase/releases/tag/3.23.1) | 14610 | Flyway (partial) |
+| [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13605 | none |
+| [goose](https://github.com/pressly/goose) | Go | Other | [v3.29.0](https://github.com/pressly/goose/releases/tag/v3.29.0) | 11595 | migrate (full) |
+| [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.10.3](https://github.com/flyway/flyway/releases/tag/flyway-13.10.3) | 10156 | Liquibase (full) |
+| [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.3.0](https://github.com/ariga/atlas/releases/tag/v1.3.0) signed | 8782 | Liquibase (full), Flyway (full) |
+| [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.37.0](https://github.com/amacneil/dbmate/releases/tag/v2.37.0) signed | 7464 | Flyway (full), Liquibase (partial) |
+| [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7063 | Bytebase (partial) |
 | [pgroll](https://github.com/xataio/pgroll) | Go | Apache-2.0 | [v0.16.3](https://github.com/xataio/pgroll/releases/tag/v0.16.3) | 6605 | Flyway (partial) |
-| [Liquibase](https://github.com/liquibase/liquibase) | Java | Other | [v5.0.4](https://github.com/liquibase/liquibase/releases/tag/v5.0.4) signed | 5627 | Flyway (full) |
+| [Liquibase](https://github.com/liquibase/liquibase) | Java | Other | [v5.0.4](https://github.com/liquibase/liquibase/releases/tag/v5.0.4) signed | 5628 | Flyway (full) |
 | [Alembic](https://github.com/sqlalchemy/alembic) | Python | MIT | [rel_1_20_0](https://github.com/sqlalchemy/alembic/releases/tag/rel_1_20_0) | 4452 | Flyway (partial) |
 | [sqldef](https://github.com/sqldef/sqldef) | Go | Other | [v3.11.26](https://github.com/sqldef/sqldef/releases/tag/v3.11.26) signed | 3180 | Atlas (partial) |
 | [Sqitch](https://github.com/sqitchers/sqitch) | Perl | MIT | [v1.6.1](https://github.com/sqitchers/sqitch/releases/tag/v1.6.1) signed | 3173 | Liquibase (full) |

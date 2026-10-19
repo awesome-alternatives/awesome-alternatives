@@ -4,14 +4,14 @@ Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.9.0](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.9.0) signed | 80640 | Insomnia (full), Postman (full) |
-| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.2.1](https://github.com/usebruno/bruno/releases/tag/v4.2.1) | 47705 | Insomnia (full), Postman (full) |
-| [Insomnia](https://github.com/Kong/insomnia) | TypeScript | Apache-2.0 | [core@13.3.1](https://github.com/Kong/insomnia/releases/tag/core%4013.3.1) | 40052 | Postman (full) |
-| [Yaak](https://github.com/mountain-loop/yaak) | TypeScript | MIT | [v2026.9.0](https://github.com/mountain-loop/yaak/releases/tag/v2026.9.0) signed | 19326 | Postman (full), Insomnia (full) |
-| [gRPCurl](https://github.com/fullstorydev/grpcurl) | Go | MIT | [v1.9.4](https://github.com/fullstorydev/grpcurl/releases/tag/v1.9.4) | 12859 | Postman (partial) |
-| [Posting](https://github.com/darrenburns/posting) | Go | Apache-2.0 | [2.11.2](https://github.com/darrenburns/posting/releases/tag/2.11.2) signed | 12524 | Postman (partial) |
-| [Requestly](https://github.com/requestly/requestly) | unknown | Other | [changelog-2026.03.23](https://github.com/requestly/requestly/releases/tag/changelog-2026.03.23) | 6751 | Postman (full) |
-| [REST Client](https://github.com/Huachao/vscode-restclient) | TypeScript | MIT | [v0.25.0](https://github.com/Huachao/vscode-restclient/releases/tag/v0.25.0) | 6055 | Postman (partial) |
+| [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.9.0](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.9.0) signed | 80651 | Insomnia (full), Postman (full) |
+| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.2.1](https://github.com/usebruno/bruno/releases/tag/v4.2.1) | 47728 | Insomnia (full), Postman (full) |
+| [Insomnia](https://github.com/Kong/insomnia) | TypeScript | Apache-2.0 | [core@13.3.1](https://github.com/Kong/insomnia/releases/tag/core%4013.3.1) | 40056 | Postman (full) |
+| [Yaak](https://github.com/mountain-loop/yaak) | TypeScript | MIT | [v2026.9.0](https://github.com/mountain-loop/yaak/releases/tag/v2026.9.0) signed | 19332 | Postman (full), Insomnia (full) |
+| [gRPCurl](https://github.com/fullstorydev/grpcurl) | Go | MIT | [v1.9.4](https://github.com/fullstorydev/grpcurl/releases/tag/v1.9.4) | 12861 | Postman (partial) |
+| [Posting](https://github.com/darrenburns/posting) | Go | Apache-2.0 | [2.11.2](https://github.com/darrenburns/posting/releases/tag/2.11.2) signed | 12523 | Postman (partial) |
+| [Requestly](https://github.com/requestly/requestly) | unknown | Other | [changelog-2026.03.23](https://github.com/requestly/requestly/releases/tag/changelog-2026.03.23) | 6753 | Postman (full) |
+| [REST Client](https://github.com/Huachao/vscode-restclient) | TypeScript | MIT | [v0.25.0](https://github.com/Huachao/vscode-restclient/releases/tag/v0.25.0) | 6054 | Postman (partial) |
 | [gRPC UI](https://github.com/fullstorydev/grpcui) | JavaScript | MIT | [v1.5.4](https://github.com/fullstorydev/grpcui/releases/tag/v1.5.4) | 5929 | Postman (partial) |
 | [ATAC](https://github.com/Julien-cpsn/ATAC) | Rust | MIT | [v0.24.0](https://github.com/Julien-cpsn/ATAC/releases/tag/v0.24.0) | 3740 | Postman (partial) |
 | [Restfox](https://github.com/flawiddsouza/Restfox) | TypeScript | MIT | [v0.40.0](https://github.com/flawiddsouza/Restfox/releases/tag/v0.40.0) | 2769 | Postman (partial), Insomnia (partial) |
