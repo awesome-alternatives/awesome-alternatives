@@ -4,10 +4,10 @@ Community forums, link aggregators and question and answer sites.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.9.0](https://github.com/discourse/discourse/releases/tag/v2026.9.0) | 47996 | Circle (full), Reddit (partial), Stack Internal (partial) |
-| [Apache Answer](https://github.com/apache/answer) | Go | Apache-2.0 | [v2.0.3](https://github.com/apache/answer/releases/tag/v2.0.3) | 15701 | Stack Internal (full) |
-| [NodeBB](https://github.com/NodeBB/NodeBB) | JavaScript | GPL-3.0 | [v4.16.3](https://github.com/NodeBB/NodeBB/releases/tag/v4.16.3) | 15242 | Circle (partial), Reddit (partial) |
-| [Lemmy](https://github.com/LemmyNet/lemmy) | Rust | AGPL-3.0 | [0.19.20](https://github.com/LemmyNet/lemmy/releases/tag/0.19.20) | 14634 | Reddit (full) |
+| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.9.0](https://github.com/discourse/discourse/releases/tag/v2026.9.0) | 47998 | Circle (full), Reddit (partial), Stack Internal (partial) |
+| [Apache Answer](https://github.com/apache/answer) | Go | Apache-2.0 | [v2.0.3](https://github.com/apache/answer/releases/tag/v2.0.3) | 15700 | Stack Internal (full) |
+| [NodeBB](https://github.com/NodeBB/NodeBB) | JavaScript | GPL-3.0 | [v4.16.3](https://github.com/NodeBB/NodeBB/releases/tag/v4.16.3) | 15241 | Circle (partial), Reddit (partial) |
+| [Lemmy](https://github.com/LemmyNet/lemmy) | Rust | AGPL-3.0 | [0.19.20](https://github.com/LemmyNet/lemmy/releases/tag/0.19.20) | 14636 | Reddit (full) |
 | [Flarum](https://github.com/flarum/framework) | PHP | MIT | [v2.0.2](https://github.com/flarum/framework/releases/tag/v2.0.2) signed | 6761 | Circle (partial), Reddit (partial) |
 | [Lobsters](https://github.com/lobsters/lobsters) | Ruby | Other | none | 4854 | Reddit (partial) |
 | [Misago](https://github.com/rafalp/Misago) | Python | GPL-2.0 | [0.39.6](https://github.com/rafalp/Misago/releases/tag/0.39.6) | 2779 | Discourse (partial), vBulletin (full) |

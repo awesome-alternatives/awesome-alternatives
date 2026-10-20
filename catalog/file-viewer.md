@@ -4,10 +4,10 @@ Show files in the terminal with syntax highlighting or rendering, and read, high
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [bat](https://github.com/sharkdp/bat) | Rust | Apache-2.0 | [v0.26.1](https://github.com/sharkdp/bat/releases/tag/v0.26.1) signed | 60849 | none |
-| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 27743 | none |
-| [lnav](https://github.com/tstack/lnav) | C++ | BSD-2-Clause | [v0.14.1](https://github.com/tstack/lnav/releases/tag/v0.14.1) | 10743 | Splunk (partial) |
-| [tailspin](https://github.com/bensadeh/tailspin) | Rust | MIT | [7.0.0](https://github.com/bensadeh/tailspin/releases/tag/7.0.0) | 7997 | lnav (partial) |
+| [bat](https://github.com/sharkdp/bat) | Rust | Apache-2.0 | [v0.26.1](https://github.com/sharkdp/bat/releases/tag/v0.26.1) signed | 60858 | none |
+| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 27745 | none |
+| [lnav](https://github.com/tstack/lnav) | C++ | BSD-2-Clause | [v0.14.1](https://github.com/tstack/lnav/releases/tag/v0.14.1) | 10747 | Splunk (partial) |
+| [tailspin](https://github.com/bensadeh/tailspin) | Rust | MIT | [7.0.0](https://github.com/bensadeh/tailspin/releases/tag/7.0.0) | 7998 | lnav (partial) |
 | [hl](https://github.com/pamburus/hl) | Rust | MIT | [v0.36.4](https://github.com/pamburus/hl/releases/tag/v0.36.4) | 3311 | lnav (partial) |
 
 [All categories](../README.md#catalog)

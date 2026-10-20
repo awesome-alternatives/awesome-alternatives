@@ -4,10 +4,10 @@ Route, authenticate and rate-limit API traffic in front of services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44283 | Apigee (partial) |
-| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17241 | Kong Gateway (full) |
-| [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.15.1](https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1) signed | 10867 | Kong Gateway (full) |
-| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9591 | Kong Gateway (partial) |
+| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44287 | Apigee (partial) |
+| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17243 | Kong Gateway (full) |
+| [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.15.1](https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1) signed | 10868 | Kong Gateway (full) |
+| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9601 | Kong Gateway (partial) |
 | [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.1](https://github.com/apache/shenyu/releases/tag/v2.7.1) | 8897 | Kong Gateway (partial) |
 | [Easegress](https://github.com/easegress-io/easegress) | Go | Apache-2.0 | [v2.11.0](https://github.com/easegress-io/easegress/releases/tag/v2.11.0) signed | 5870 | Kong Gateway (partial) |
 | [Unkey](https://github.com/unkeyed/unkey) | Go | Other | [control-worker/v1.1.41](https://github.com/unkeyed/unkey/releases/tag/control-worker/v1.1.41) signed | 5469 | Apigee (partial) |
