@@ -5372,5 +5372,6 @@
   {"type":"released","slug":"xstate","at":"2026-10-20T05:17:14.478Z","commit":null,"from":"xstate@5.33.3","to":"@xstate/vue@5.0.2"},
   {"type":"released","slug":"xwiki","at":"2026-10-20T05:17:14.478Z","commit":null,"from":"xwiki-platform-18.4.7","to":"xwiki-platform-18.9.0-rc-1"},
   {"type":"released","slug":"ytt","at":"2026-10-20T05:17:14.478Z","commit":null,"from":"v0.55.3","to":"v0.55.4"},
-  {"type":"released","slug":"zed","at":"2026-10-20T05:17:14.478Z","commit":null,"from":"v1.24.2","to":"v1.24.3"}
+  {"type":"released","slug":"zed","at":"2026-10-20T05:17:14.478Z","commit":null,"from":"v1.24.2","to":"v1.24.3"},
+  {"type":"added","slug":"open-cuak","at":"2026-10-20T15:52:00.653Z","commit":null}
 ]

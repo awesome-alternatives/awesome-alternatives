@@ -315,7 +315,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Document Q&A](catalog/document-qa.md) | 9 | Ask questions about your own documents and sources through retrieval-augmented generation, with cited answers. |
 | [AI search engines](catalog/ai-search.md) | 5 | Answer questions from live web searches with a language model, citing the pages it read. |
 | [Autonomous AI agents](catalog/autonomous-agent.md) | 6 | Agents that plan and carry out multi-step tasks on their own, browsing, running code and calling tools. |
-| [AI browser agents](catalog/browser-agent.md) | 7 | Let a language model drive a web browser to navigate sites, fill forms and extract data. |
+| [AI browser agents](catalog/browser-agent.md) | 8 | Let a language model drive a web browser to navigate sites, fill forms and extract data. |
 | [AI app builders](catalog/ai-app-builder.md) | 5 | Generate and edit a web app or interface from a chat prompt, with a live preview. |
 | [Speech to text](catalog/speech-to-text.md) | 15 | Transcribe recordings, meetings and dictation with speech recognition models on your own hardware. |
 | [Text to speech](catalog/text-to-speech.md) | 9 | Generate speech from text, with voice cloning on some models, on your own hardware. |

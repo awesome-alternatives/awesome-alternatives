@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2752,
+    "tools": 2753,
     "categories": 344,
     "targets": 922,
     "verified": 3
@@ -19654,6 +19654,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "Aident-AI": {
+      "login": "Aident-AI",
+      "kind": "organization",
+      "name": "Aident AI",
+      "bio": "Aident AI",
+      "website": "https://aident.ai",
+      "url": "https://github.com/Aident-AI"
     }
   },
   "tools": [
@@ -208036,6 +208044,84 @@
         "container",
         "compose"
       ]
+    },
+    {
+      "slug": "open-cuak",
+      "name": "Open-CUAK",
+      "repository": "https://github.com/Aident-AI/open-cuak",
+      "category": "browser-agent",
+      "replaces": [
+        {
+          "tool": "chatgpt",
+          "fit": "partial",
+          "note": "Self-hosted platform for running and managing browser automation agents, built as an open alternative to OpenAI's Operator; browser tasks only, no chat product."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-10-20T15:51:11.000Z",
+      "editedAt": "2026-10-20T15:51:11.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Aident-AI/open-cuak",
+        "description": "Reliable Automation Agents at Scale",
+        "homepage": "https://aident.ai",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 392,
+        "forks": 32,
+        "topics": [
+          "agent",
+          "aiagents",
+          "automation",
+          "llm",
+          "remote-browser",
+          "remote-desktop",
+          "rpa",
+          "vlm"
+        ],
+        "databaseId": 931248460,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2025-02-12T00:42:03Z",
+        "pushedAt": "2025-06-28T09:04:47Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-10-20",
+        "stars": [392]
+      },
+      "release": {
+        "tag": "v0.0.1-alpha",
+        "publishedAt": null,
+        "url": "https://github.com/Aident-AI/open-cuak/releases/tag/v0.0.1-alpha",
+        "source": "tag",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.0.1-alpha",
+          "name": "init",
+          "publishedAt": "2025-02-26T02:15:28Z",
+          "url": "https://github.com/Aident-AI/open-cuak/releases/tag/v0.0.1-alpha",
+          "prerelease": true
+        }
+      ],
+      "contributors": {
+        "count": 0,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [
+        "inactive"
+      ],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "open-edx",

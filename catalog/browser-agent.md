@@ -11,5 +11,6 @@ Let a language model drive a web browser to navigate sites, fill forms and extra
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | TypeScript | Apache-2.0 | [v0.3.0](https://github.com/nanobrowser/nanobrowser/releases/tag/v0.3.0) | 14132 | ChatGPT (partial) |
 | [Browserless](https://github.com/browserless/browserless) | TypeScript | Other | [v2.57.1](https://github.com/browserless/browserless/releases/tag/v2.57.1) signed | 13828 | Browserbase (full) |
 | [Steel Browser](https://github.com/steel-dev/steel-browser) | TypeScript | Apache-2.0 | [v0.5.4-beta](https://github.com/steel-dev/steel-browser/releases/tag/v0.5.4-beta) signed | 7844 | Browserbase (full) |
+| [Open-CUAK](https://github.com/Aident-AI/open-cuak) | TypeScript | Apache-2.0 | [v0.0.1-alpha](https://github.com/Aident-AI/open-cuak/releases/tag/v0.0.1-alpha) signed | 392 | ChatGPT (partial) |
 
 [All categories](../README.md#catalog)
