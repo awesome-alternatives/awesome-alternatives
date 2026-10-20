@@ -1,0 +1,7 @@
+name: Open-CUAK
+repository: https://github.com/Aident-AI/open-cuak
+category: browser-agent
+replaces:
+  - tool: chatgpt
+    fit: partial
+    note: Self-hosted platform for running and managing browser automation agents, built as an open alternative to OpenAI's Operator; browser tasks only, no chat product.
