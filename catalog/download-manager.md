@@ -4,9 +4,9 @@ Fetch files and media from the web from a terminal or a queue, or download and s
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Python | Unlicense | [2026.08.19](https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19) | 199257 | none |
-| [aria2](https://github.com/aria2/aria2) | C++ | GPL-2.0 | [release-1.37.0](https://github.com/aria2/aria2/releases/tag/release-1.37.0) signed | 43177 | none |
-| [qBittorrent](https://github.com/qbittorrent/qBittorrent) | C++ | Other | [release-5.2.4](https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.2.4) signed | 40903 | none |
-| [Transmission](https://github.com/transmission/transmission) | C++ | Other | [4.1.3](https://github.com/transmission/transmission/releases/tag/4.1.3) signed | 15322 | none |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Python | Unlicense | [2026.08.19](https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19) | 199541 | none |
+| [aria2](https://github.com/aria2/aria2) | C++ | GPL-2.0 | [release-1.37.0](https://github.com/aria2/aria2/releases/tag/release-1.37.0) signed | 43189 | none |
+| [qBittorrent](https://github.com/qbittorrent/qBittorrent) | C++ | Other | [release-5.2.4](https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.2.4) signed | 40928 | none |
+| [Transmission](https://github.com/transmission/transmission) | C++ | Other | [4.1.3](https://github.com/transmission/transmission/releases/tag/4.1.3) signed | 15328 | none |
 
 [All categories](../README.md#catalog)

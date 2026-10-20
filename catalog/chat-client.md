@@ -4,25 +4,25 @@ Desktop, mobile and web apps for Matrix, XMPP and IRC.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.32](https://github.com/element-hq/element-web/releases/tag/v1.12.32) signed | 13593 | Slack (partial), Discord (partial) |
+| [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.32](https://github.com/element-hq/element-web/releases/tag/v1.12.32) signed | 13598 | Slack (partial), Discord (partial) |
 | [The Lounge](https://github.com/thelounge/thelounge) | TypeScript | MIT | [v4.5.2](https://github.com/thelounge/thelounge/releases/tag/v4.5.2) | 6359 | IRCCloud (full) |
-| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4728 | Rambox (full) |
+| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4730 | Rambox (full) |
 | [Halloy](https://github.com/squidowl/halloy) | Rust | GPL-3.0 | [2026.9](https://github.com/squidowl/halloy/releases/tag/2026.9) signed | 4551 | none |
-| [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.7](https://github.com/cinnyapp/cinny/releases/tag/v4.12.7) signed | 3935 | Slack (partial), Discord (partial) |
-| [WeeChat](https://github.com/weechat/weechat) | C | GPL-3.0 | [v4.10.1](https://github.com/weechat/weechat/releases/tag/v4.10.1) | 3407 | Irssi (full) |
-| [Converse.js](https://github.com/conversejs/converse.js) | JavaScript | MPL-2.0 | [v14.0.1](https://github.com/conversejs/converse.js/releases/tag/v14.0.1) signed | 3299 | none |
-| [FluffyChat](https://github.com/krille-chan/fluffychat) | Dart | AGPL-3.0 | [v2.10.0](https://github.com/krille-chan/fluffychat/releases/tag/v2.10.0) signed | 3213 | WhatsApp (partial) |
+| [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.7](https://github.com/cinnyapp/cinny/releases/tag/v4.12.7) signed | 3937 | Slack (partial), Discord (partial) |
+| [WeeChat](https://github.com/weechat/weechat) | C | GPL-3.0 | [v4.10.1](https://github.com/weechat/weechat/releases/tag/v4.10.1) | 3406 | Irssi (full) |
+| [Converse.js](https://github.com/conversejs/converse.js) | JavaScript | MPL-2.0 | [v14.0.1](https://github.com/conversejs/converse.js/releases/tag/v14.0.1) signed | 3300 | none |
+| [FluffyChat](https://github.com/krille-chan/fluffychat) | Dart | AGPL-3.0 | [v2.11.1](https://github.com/krille-chan/fluffychat/releases/tag/v2.11.1) signed | 3212 | WhatsApp (partial) |
 | [Irssi](https://github.com/irssi/irssi) | C | Other | [1.4.5](https://github.com/irssi/irssi/releases/tag/1.4.5) | 3158 | none |
-| [Nheko](https://github.com/Nheko-Reborn/nheko) | C++ | GPL-3.0 | [v0.12.1](https://github.com/Nheko-Reborn/nheko/releases/tag/v0.12.1) signed | 2509 | Slack (partial) |
-| [Dino](https://github.com/dino/dino) | Vala | GPL-3.0 | [v0.5.1](https://github.com/dino/dino/releases/tag/v0.5.1) | 2501 | WhatsApp (partial) |
-| [Element X Android](https://github.com/element-hq/element-x-android) | Kotlin | AGPL-3.0 | [v26.09.4](https://github.com/element-hq/element-x-android/releases/tag/v26.09.4) | 2450 | WhatsApp (partial), Slack (partial) |
+| [Nheko](https://github.com/Nheko-Reborn/nheko) | C++ | GPL-3.0 | [v0.12.1](https://github.com/Nheko-Reborn/nheko/releases/tag/v0.12.1) signed | 2510 | Slack (partial) |
+| [Dino](https://github.com/dino/dino) | Vala | GPL-3.0 | [v0.5.1](https://github.com/dino/dino/releases/tag/v0.5.1) | 2502 | WhatsApp (partial) |
+| [Element X Android](https://github.com/element-hq/element-x-android) | Kotlin | AGPL-3.0 | [v26.09.4](https://github.com/element-hq/element-x-android/releases/tag/v26.09.4) | 2454 | WhatsApp (partial), Slack (partial) |
 | [Movim](https://github.com/movim/movim) | PHP | AGPL-3.0 | [v0.35.1](https://github.com/movim/movim/releases/tag/v0.35.1) | 2065 | none |
-| [Profanity](https://github.com/profanity-im/profanity) | C | Other | [0.19.0](https://github.com/profanity-im/profanity/releases/tag/0.19.0) | 1545 | none |
+| [Profanity](https://github.com/profanity-im/profanity) | C | Other | [0.19.0](https://github.com/profanity-im/profanity/releases/tag/0.19.0) | 1546 | none |
 | [Commet](https://github.com/commetchat/commet) | Dart | AGPL-3.0 | [v0.5.0](https://github.com/commetchat/commet/releases/tag/v0.5.0) | 1121 | Discord (partial) |
 | [Tangram](https://github.com/sonnyp/Tangram) | JavaScript | GPL-3.0 | [v1.4.2](https://github.com/sonnyp/Tangram/releases/tag/v1.4.2) | 1006 | Rambox (partial) |
 | [Kiwi IRC](https://github.com/kiwiirc/kiwiirc) | Vue | Apache-2.0 | [v1.7.1](https://github.com/kiwiirc/kiwiirc/releases/tag/v1.7.1) signed | 989 | IRCCloud (partial) |
-| [Element X iOS](https://github.com/element-hq/element-x-ios) | Swift | AGPL-3.0 | [release/26.10.4](https://github.com/element-hq/element-x-ios/releases/tag/release/26.10.4) signed | 953 | WhatsApp (partial), Slack (partial) |
+| [Element X iOS](https://github.com/element-hq/element-x-ios) | Swift | AGPL-3.0 | [release/26.10.4](https://github.com/element-hq/element-x-ios/releases/tag/release/26.10.4) signed | 955 | WhatsApp (partial), Slack (partial) |
 | [Quassel IRC](https://github.com/quassel/quassel) | C++ | Other | [0.14.0](https://github.com/quassel/quassel/releases/tag/0.14.0) signed | 792 | IRCCloud (full) |
-| [Monal](https://github.com/monal-im/Monal) | Objective-C | Other | [Build_iOS_1098](https://github.com/monal-im/Monal/releases/tag/Build_iOS_1098) signed | 682 | WhatsApp (partial) |
+| [Monal](https://github.com/monal-im/Monal) | Objective-C | Other | [Build_iOS_1098](https://github.com/monal-im/Monal/releases/tag/Build_iOS_1098) signed | 683 | WhatsApp (partial) |
 
 [All categories](../README.md#catalog)

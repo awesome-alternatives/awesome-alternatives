@@ -4,8 +4,8 @@ Disassemble, decompile and debug compiled programs without their source.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Java | Apache-2.0 | [Ghidra_12.1.4_build](https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build) | 91052 | IDA Pro (full) |
-| [radare2](https://github.com/radareorg/radare2) | C | Other | [6.2.4](https://github.com/radareorg/radare2/releases/tag/6.2.4) | 25092 | IDA Pro (partial) |
-| [Rizin](https://github.com/rizinorg/rizin) | C | LGPL-3.0 | [v0.9.1](https://github.com/rizinorg/rizin/releases/tag/v0.9.1) | 4009 | radare2 (full) |
+| [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Java | Apache-2.0 | [Ghidra_12.1.4_build](https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build) | 91704 | IDA Pro (full) |
+| [radare2](https://github.com/radareorg/radare2) | C | Other | [6.2.4](https://github.com/radareorg/radare2/releases/tag/6.2.4) | 25104 | IDA Pro (partial) |
+| [Rizin](https://github.com/rizinorg/rizin) | C | LGPL-3.0 | [v0.9.1](https://github.com/rizinorg/rizin/releases/tag/v0.9.1) | 4015 | radare2 (full) |
 
 [All categories](../README.md#catalog)
