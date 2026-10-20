@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.137.15] - 2026-10-20
+
+### Bug Fixes
+
+- chore(catalog): refresh open-cuak
+
 ## [0.137.14] - 2026-10-20
 
 ### Bug Fixes
