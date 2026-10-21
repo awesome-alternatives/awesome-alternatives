@@ -10,6 +10,6 @@ Declare schemas and validate data against them at runtime.
 | [Ajv](https://github.com/ajv-validator/ajv) | TypeScript | MIT | [v8.20.0](https://github.com/ajv-validator/ajv/releases/tag/v8.20.0) signed | 14863 | Joi (partial), Zod (partial) |
 | [class-validator](https://github.com/typestack/class-validator) | TypeScript | MIT | [v0.15.1](https://github.com/typestack/class-validator/releases/tag/v0.15.1) signed | 11845 | Joi (partial) |
 | [Valibot](https://github.com/open-circle/valibot) | TypeScript | MIT | [v1.5.0](https://github.com/open-circle/valibot/releases/tag/v1.5.0) signed | 9044 | Zod (full), Yup (full) |
-| [ArkType](https://github.com/arktypeio/arktype) | TypeScript | MIT | [@arktype/util@0.56.7](https://github.com/arktypeio/arktype/releases/tag/%40arktype/util%400.56.7) signed | 7877 | Zod (full) |
+| [ArkType](https://github.com/arktypeio/arktype) | TypeScript | MIT | [@arktype/util@0.56.8](https://github.com/arktypeio/arktype/releases/tag/%40arktype/util%400.56.8) signed | 7877 | Zod (full) |
 
 [All categories](../README.md#catalog)

@@ -4,18 +4,18 @@ Host email for your own domains, archive and search every message for retention,
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v16.0.1](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1) signed | 19625 | Google Workspace (partial) |
-| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.3.7](https://github.com/postalserver/postal/releases/tag/3.3.7) signed | 16877 | SendGrid (full) |
-| [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15442 | Google Workspace (partial) |
-| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v0.16.27](https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.27) | 15190 | Google Workspace (partial), Microsoft 365 (partial) |
+| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v16.0.1](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1) signed | 19634 | Google Workspace (partial) |
+| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.3.7](https://github.com/postalserver/postal/releases/tag/3.3.7) signed | 16878 | SendGrid (full) |
+| [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15443 | Google Workspace (partial) |
+| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v0.16.27](https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.27) | 15192 | Google Workspace (partial), Microsoft 365 (partial) |
 | [mailcow](https://github.com/mailcow/mailcow-dockerized) | JavaScript | GPL-3.0 | [2026-09a](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-09a) signed | 13631 | Google Workspace (partial), Microsoft 365 (partial) |
-| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.64](https://github.com/Mailu/Mailu/releases/tag/2024.06.64) signed | 7567 | Google Workspace (partial) |
+| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.65](https://github.com/Mailu/Mailu/releases/tag/2024.06.65) signed | 7569 | Google Workspace (partial) |
 | [Maddy](https://github.com/foxcpp/maddy) | Go | GPL-3.0 | [v0.9.6](https://github.com/foxcpp/maddy/releases/tag/v0.9.6) signed | 6111 | Google Workspace (partial) |
 | [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5908 | Google Workspace (partial) |
-| [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.3.5](https://github.com/haraka/Haraka/releases/tag/v3.3.5) signed | 5620 | SendGrid (partial) |
+| [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.3.5](https://github.com/haraka/Haraka/releases/tag/v3.3.5) signed | 5621 | SendGrid (partial) |
 | [Modoboa](https://github.com/modoboa/modoboa) | Python | ISC | [2.11.1](https://github.com/modoboa/modoboa/releases/tag/2.11.1) signed | 3543 | Google Workspace (partial) |
 | [Rspamd](https://github.com/rspamd/rspamd) | C | Other | [4.2.2](https://github.com/rspamd/rspamd/releases/tag/4.2.2) signed | 2555 | Proofpoint (partial) |
-| [Open Archiver](https://github.com/LogicLabs-OU/OpenArchiver) | TypeScript | AGPL-3.0 | [v0.6.1](https://github.com/LogicLabs-OU/OpenArchiver/releases/tag/v0.6.1) signed | 2420 | MailStore (partial), Mimecast (partial) |
+| [Open Archiver](https://github.com/LogicLabs-OU/OpenArchiver) | TypeScript | AGPL-3.0 | [v0.6.1](https://github.com/LogicLabs-OU/OpenArchiver/releases/tag/v0.6.1) signed | 2422 | MailStore (partial), Mimecast (partial) |
 | [WildDuck](https://github.com/zone-eu/wildduck) | JavaScript | EUPL-1.2 | [v1.55.1](https://github.com/zone-eu/wildduck/releases/tag/v1.55.1) signed | 2110 | Google Workspace (partial) |
 | [iRedMail](https://github.com/iredmail/iRedMail) | Shell | GPL-3.0 | [1.8.8](https://github.com/iredmail/iRedMail/releases/tag/1.8.8) | 1848 | Google Workspace (partial) |
 | [parsedmarc](https://github.com/domainaware/parsedmarc) | Python | Apache-2.0 | [11.0.4](https://github.com/domainaware/parsedmarc/releases/tag/11.0.4) | 1307 | dmarcian (partial) |

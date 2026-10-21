@@ -5,8 +5,8 @@ Train, tune and compare models automatically from tabular, text or image data.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Ludwig](https://github.com/ludwig-ai/ludwig) | Python | Apache-2.0 | [v0.17.9](https://github.com/ludwig-ai/ludwig/releases/tag/v0.17.9) | 11775 | DataRobot (partial) |
-| [AutoGluon](https://github.com/autogluon/autogluon) | Python | Apache-2.0 | [v1.6.3](https://github.com/autogluon/autogluon/releases/tag/v1.6.3) signed | 10790 | DataRobot (partial) |
-| [PyCaret](https://github.com/pycaret/pycaret) | Python | Other | [3.3.2](https://github.com/pycaret/pycaret/releases/tag/3.3.2) | 9854 | DataRobot (partial) |
+| [AutoGluon](https://github.com/autogluon/autogluon) | Python | Apache-2.0 | [v1.6.3](https://github.com/autogluon/autogluon/releases/tag/v1.6.3) signed | 10791 | DataRobot (partial) |
+| [PyCaret](https://github.com/pycaret/pycaret) | Python | Other | [3.3.2](https://github.com/pycaret/pycaret/releases/tag/3.3.2) | 9855 | DataRobot (partial) |
 | [H2O-3](https://github.com/h2oai/h2o-3) | Jupyter Notebook | Apache-2.0 | [gha-3.47.0.36](https://github.com/h2oai/h2o-3/releases/tag/gha-3.47.0.36) | 7512 | DataRobot (partial) |
 | [FLAML](https://github.com/microsoft/FLAML) | Jupyter Notebook | MIT | [v2.7.0](https://github.com/microsoft/FLAML/releases/tag/v2.7.0) signed | 4413 | DataRobot (partial) |
 

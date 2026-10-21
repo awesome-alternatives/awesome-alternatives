@@ -4,7 +4,7 @@ Log time against projects and clients, and turn it into reports or invoices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.1](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.1) signed | 19302 | RescueTime (full), WakaTime (partial) |
+| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.1](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.1) signed | 19306 | RescueTime (full), WakaTime (partial) |
 | [solidtime](https://github.com/solidtime-io/solidtime) | PHP | AGPL-3.0 | [v0.22.0](https://github.com/solidtime-io/solidtime/releases/tag/v0.22.0) | 9021 | Toggl Track (full), Harvest (partial) |
 | [Kimai](https://github.com/kimai/kimai) | PHP | AGPL-3.0 | [2.70.0](https://github.com/kimai/kimai/releases/tag/2.70.0) signed | 5084 | Toggl Track (full), Harvest (partial) |
 | [Wakapi](https://github.com/muety/wakapi) | Go | MIT | [2.18.2](https://github.com/muety/wakapi/releases/tag/2.18.2) | 4456 | WakaTime (full) |

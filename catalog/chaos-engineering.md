@@ -4,7 +4,7 @@ Inject failures such as killed pods, network latency and resource pressure to te
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Go | MIT | [v2.13.0](https://github.com/Shopify/toxiproxy/releases/tag/v2.13.0) signed | 12431 | Gremlin (partial) |
+| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Go | MIT | [v2.13.0](https://github.com/Shopify/toxiproxy/releases/tag/v2.13.0) signed | 12439 | Gremlin (partial) |
 | [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh) | Go | Apache-2.0 | [v2.8.5](https://github.com/chaos-mesh/chaos-mesh/releases/tag/v2.8.5) | 7948 | Gremlin (full) |
 | [ChaosBlade](https://github.com/chaosblade-io/chaosblade) | Python | Apache-2.0 | [v1.8.2](https://github.com/chaosblade-io/chaosblade/releases/tag/v1.8.2) | 6465 | Gremlin (full) |
 | [LitmusChaos](https://github.com/litmuschaos/litmus) | Go | Apache-2.0 | [3.33.0](https://github.com/litmuschaos/litmus/releases/tag/3.33.0) | 5730 | Gremlin (full) |
