@@ -4,14 +4,14 @@ Watch network traffic or hosts for attacks, and report or block what matches.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 18838 | none |
-| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.1](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.1) signed | 15238 | Fail2ban (full) |
+| [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 18840 | none |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.1](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.1) signed | 15247 | Fail2ban (full) |
 | [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.5](https://github.com/stamparm/maltrail/releases/tag/3.5) | 8635 | none |
-| [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.0](https://github.com/zeek/zeek/releases/tag/v9.0.0) | 8123 | none |
-| [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.8.0](https://github.com/arkime/arkime/releases/tag/v6.8.0) signed | 7541 | none |
-| [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.7](https://github.com/OISF/suricata/releases/tag/suricata-8.0.7) | 6754 | Snort 3 (full) |
-| [OSSEC](https://github.com/ossec/ossec-hids) | C | GPL-2.0 | [4.4.1](https://github.com/ossec/ossec-hids/releases/tag/4.4.1) | 5067 | CrowdStrike Falcon (partial), Tripwire (partial) |
-| [Snort 3](https://github.com/snort3/snort3) | C++ | Other | [3.12.2.0](https://github.com/snort3/snort3/releases/tag/3.12.2.0) signed | 3443 | none |
-| [AIDE](https://github.com/aide/aide) | C | GPL-2.0 | [v0.19.4](https://github.com/aide/aide/releases/tag/v0.19.4) signed | 756 | Tripwire (full) |
+| [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.0](https://github.com/zeek/zeek/releases/tag/v9.0.0) | 8124 | none |
+| [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.9.0](https://github.com/arkime/arkime/releases/tag/v6.9.0) signed | 7544 | none |
+| [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.7](https://github.com/OISF/suricata/releases/tag/suricata-8.0.7) | 6755 | Snort 3 (full) |
+| [OSSEC](https://github.com/ossec/ossec-hids) | C | GPL-2.0 | [4.4.1](https://github.com/ossec/ossec-hids/releases/tag/4.4.1) | 5068 | CrowdStrike Falcon (partial), Tripwire (partial) |
+| [Snort 3](https://github.com/snort3/snort3) | C++ | Other | [3.12.4.0](https://github.com/snort3/snort3/releases/tag/3.12.4.0) signed | 3444 | none |
+| [AIDE](https://github.com/aide/aide) | C | GPL-2.0 | [v0.19.4](https://github.com/aide/aide/releases/tag/v0.19.4) signed | 757 | Tripwire (full) |
 
 [All categories](../README.md#catalog)

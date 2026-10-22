@@ -4,16 +4,16 @@ Check that services answer, alert when they do not, and publish a status page.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.6](https://github.com/louislam/uptime-kuma/releases/tag/2.5.6) signed | 92692 | Pingdom (full), Statuspage (full), Cronitor (partial) |
-| [Upptime](https://github.com/upptime/upptime) | Markdown | MIT | [v2.0.0](https://github.com/upptime/upptime/releases/tag/v2.0.0) signed | 17184 | Pingdom (partial), Statuspage (full) |
-| [Cachet](https://github.com/cachethq/cachet) | PHP | Other | [v2.4.1](https://github.com/cachethq/cachet/releases/tag/v2.4.1) | 15262 | Statuspage (full) |
-| [Gatus](https://github.com/TwiN/gatus) | Go | Apache-2.0 | [v5.37.0](https://github.com/TwiN/gatus/releases/tag/v5.37.0) signed | 12365 | Uptime Kuma (full), Pingdom (full), Statuspage (full), Cronitor (partial) |
-| [Checkmate](https://github.com/bluewave-labs/Checkmate) | TypeScript | AGPL-3.0 | [v3.12.0](https://github.com/bluewave-labs/Checkmate/releases/tag/v3.12.0) signed | 10967 | Pingdom (full), Statuspage (full) |
-| [Healthchecks](https://github.com/healthchecks/healthchecks) | Python | BSD-3-Clause | [v5.0](https://github.com/healthchecks/healthchecks/releases/tag/v5.0) signed | 10433 | Cronitor (partial) |
-| [OpenStatus](https://github.com/openstatusHQ/openstatus) | TypeScript | AGPL-3.0 | none | 9206 | Statuspage (full), UptimeRobot (full) |
-| [OneUptime](https://github.com/OneUptime/oneuptime) | TypeScript | Other | [14.0.80](https://github.com/OneUptime/oneuptime/releases/tag/14.0.80) | 7752 | Pingdom (full), Statuspage (full), PagerDuty (full), Cronitor (full) |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | JavaScript | MIT | [2.5.6](https://github.com/louislam/uptime-kuma/releases/tag/2.5.6) signed | 92731 | Pingdom (full), Statuspage (full), Cronitor (partial) |
+| [Upptime](https://github.com/upptime/upptime) | Markdown | MIT | [v2.0.0](https://github.com/upptime/upptime/releases/tag/v2.0.0) signed | 17186 | Pingdom (partial), Statuspage (full) |
+| [Cachet](https://github.com/cachethq/cachet) | PHP | Other | [v2.4.1](https://github.com/cachethq/cachet/releases/tag/v2.4.1) | 15264 | Statuspage (full) |
+| [Gatus](https://github.com/TwiN/gatus) | Go | Apache-2.0 | [v5.37.0](https://github.com/TwiN/gatus/releases/tag/v5.37.0) signed | 12372 | Uptime Kuma (full), Pingdom (full), Statuspage (full), Cronitor (partial) |
+| [Checkmate](https://github.com/bluewave-labs/Checkmate) | TypeScript | AGPL-3.0 | [v3.13.0](https://github.com/bluewave-labs/Checkmate/releases/tag/v3.13.0) signed | 10972 | Pingdom (full), Statuspage (full) |
+| [Healthchecks](https://github.com/healthchecks/healthchecks) | Python | BSD-3-Clause | [v5.0](https://github.com/healthchecks/healthchecks/releases/tag/v5.0) signed | 10440 | Cronitor (partial) |
+| [OpenStatus](https://github.com/openstatusHQ/openstatus) | TypeScript | AGPL-3.0 | none | 9211 | Statuspage (full), UptimeRobot (full) |
+| [OneUptime](https://github.com/OneUptime/oneuptime) | TypeScript | Other | [14.0.84](https://github.com/OneUptime/oneuptime/releases/tag/14.0.84) | 7753 | Pingdom (full), Statuspage (full), PagerDuty (full), Cronitor (full) |
 | [Kener](https://github.com/rajnandan1/kener) | TypeScript | MIT | [v4.1.7](https://github.com/rajnandan1/kener/releases/tag/v4.1.7) | 5212 | Statuspage (full) |
-| [cState](https://github.com/cstate/cstate) | HTML | MIT | [6.0.2](https://github.com/cstate/cstate/releases/tag/6.0.2) | 2897 | Statuspage (partial) |
+| [cState](https://github.com/cstate/cstate) | HTML | MIT | [6.0.2](https://github.com/cstate/cstate/releases/tag/6.0.2) | 2899 | Statuspage (partial) |
 | [Vigil](https://github.com/valeriansaliou/vigil) | Rust | MPL-2.0 | [v1.29.0](https://github.com/valeriansaliou/vigil/releases/tag/v1.29.0) signed | 1950 | Statuspage (partial) |
 | [Peekaping](https://github.com/0xfurai/peekaping) | Go | MIT | [0.0.47](https://github.com/0xfurai/peekaping/releases/tag/0.0.47) | 1202 | UptimeRobot (full), Uptime Kuma (full) |
 | [Kuvasz](https://github.com/kuvasz-uptime/kuvasz) | Kotlin | AGPL-3.0 | [4.5.0](https://github.com/kuvasz-uptime/kuvasz/releases/tag/4.5.0) signed | 663 | UptimeRobot (partial) |

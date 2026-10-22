@@ -5,8 +5,8 @@ Index many repositories and search them from a web UI.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Hound](https://github.com/hound-search/hound) | JavaScript | MIT | [v0.7.1](https://github.com/hound-search/hound/releases/tag/v0.7.1) signed | 5890 | Sourcegraph (partial) |
-| [OpenGrok](https://github.com/oracle/opengrok) | Java | Other | [1.14.20](https://github.com/oracle/opengrok/releases/tag/1.14.20) | 5017 | Sourcegraph (partial) |
-| [Sourcebot](https://github.com/sourcebot-dev/sourcebot) | Python | MIT | [v6.0.2](https://github.com/sourcebot-dev/sourcebot/releases/tag/v6.0.2) | 4002 | Sourcegraph (partial) |
-| [Zoekt](https://github.com/sourcegraph/zoekt) | Go | Apache-2.0 | none | 1985 | Sourcegraph (partial) |
+| [OpenGrok](https://github.com/oracle/opengrok) | Java | Other | [1.14.20](https://github.com/oracle/opengrok/releases/tag/1.14.20) | 5018 | Sourcegraph (partial) |
+| [Sourcebot](https://github.com/sourcebot-dev/sourcebot) | Python | MIT | [v6.0.2](https://github.com/sourcebot-dev/sourcebot/releases/tag/v6.0.2) | 4003 | Sourcegraph (partial) |
+| [Zoekt](https://github.com/sourcegraph/zoekt) | Go | Apache-2.0 | none | 1991 | Sourcegraph (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,12 +4,12 @@ Test prompts, models and agents against datasets, assertions and red-team probes
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.2](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.2) signed | 26214 | Braintrust (partial) |
-| [DeepEval](https://github.com/confident-ai/deepeval) | Python | Apache-2.0 | [python-v4.2.4](https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4) | 18998 | Braintrust (partial) |
-| [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) | Python | MIT | [v0.4.13](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) signed | 14283 | none |
-| [garak](https://github.com/NVIDIA/garak) | Python | Apache-2.0 | [v0.17.1](https://github.com/NVIDIA/garak/releases/tag/v0.17.1) signed | 9628 | promptfoo (partial) |
-| [OpenCompass](https://github.com/open-compass/opencompass) | Python | Apache-2.0 | [0.5.4](https://github.com/open-compass/opencompass/releases/tag/0.5.4) signed | 7530 | LM Evaluation Harness (full) |
-| [Giskard](https://github.com/Giskard-AI/giskard-oss) | Python | Apache-2.0 | [giskard-agents/v1.0.5](https://github.com/Giskard-AI/giskard-oss/releases/tag/giskard-agents/v1.0.5) | 5913 | Braintrust (partial) |
-| [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | Python | MIT | [0.3.282](https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.282) signed | 3054 | Braintrust (partial), LM Evaluation Harness (partial) |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.2](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.2) signed | 26252 | Braintrust (partial) |
+| [DeepEval](https://github.com/confident-ai/deepeval) | Python | Apache-2.0 | [python-v4.2.4](https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4) | 19027 | Braintrust (partial) |
+| [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) | Python | MIT | [v0.4.13](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) signed | 14294 | none |
+| [garak](https://github.com/NVIDIA/garak) | Python | Apache-2.0 | [v0.17.1](https://github.com/NVIDIA/garak/releases/tag/v0.17.1) signed | 9636 | promptfoo (partial) |
+| [OpenCompass](https://github.com/open-compass/opencompass) | Python | Apache-2.0 | [0.5.4](https://github.com/open-compass/opencompass/releases/tag/0.5.4) signed | 7534 | LM Evaluation Harness (full) |
+| [Giskard](https://github.com/Giskard-AI/giskard-oss) | Python | Apache-2.0 | [giskard-agents/v1.0.5](https://github.com/Giskard-AI/giskard-oss/releases/tag/giskard-agents/v1.0.5) | 5916 | Braintrust (partial) |
+| [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | Python | MIT | [0.3.283](https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.283) signed | 3059 | Braintrust (partial), LM Evaluation Harness (partial) |
 
 [All categories](../README.md#catalog)

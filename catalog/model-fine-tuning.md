@@ -4,13 +4,13 @@ Fine-tune language and diffusion models on your own data and GPUs.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Unsloth](https://github.com/unslothai/unsloth) | Python | Apache-2.0 | [v0.1.909-beta](https://github.com/unslothai/unsloth/releases/tag/v0.1.909-beta) signed | 78338 | Amazon SageMaker (partial) |
-| [LLaMA-Factory](https://github.com/hiyouga/LlamaFactory) | Python | Apache-2.0 | [v0.9.5](https://github.com/hiyouga/LlamaFactory/releases/tag/v0.9.5) signed | 75609 | Amazon SageMaker (partial), Vertex AI (partial) |
-| [TRL](https://github.com/huggingface/trl) | Python | Apache-2.0 | [v1.16.0](https://github.com/huggingface/trl/releases/tag/v1.16.0) | 19559 | Vertex AI (partial) |
-| [Kohya's GUI](https://github.com/bmaltais/kohya_ss) | Python | Apache-2.0 | [v26.0.0](https://github.com/bmaltais/kohya_ss/releases/tag/v26.0.0) signed | 12638 | none |
-| [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Python | Apache-2.0 | [v0.21.0](https://github.com/axolotl-ai-cloud/axolotl/releases/tag/v0.21.0) signed | 12601 | Amazon SageMaker (partial), Vertex AI (partial) |
-| [AI Toolkit](https://github.com/ostris/ai-toolkit) | Python | MIT | none | 12406 | Kohya's GUI (partial) |
+| [Unsloth](https://github.com/unslothai/unsloth) | Python | Apache-2.0 | [v0.1.909-beta](https://github.com/unslothai/unsloth/releases/tag/v0.1.909-beta) signed | 78391 | Amazon SageMaker (partial) |
+| [LLaMA-Factory](https://github.com/hiyouga/LlamaFactory) | Python | Apache-2.0 | [v0.9.5](https://github.com/hiyouga/LlamaFactory/releases/tag/v0.9.5) signed | 75645 | Amazon SageMaker (partial), Vertex AI (partial) |
+| [TRL](https://github.com/huggingface/trl) | Python | Apache-2.0 | [v1.16.0](https://github.com/huggingface/trl/releases/tag/v1.16.0) | 19568 | Vertex AI (partial) |
+| [Kohya's GUI](https://github.com/bmaltais/kohya_ss) | Python | Apache-2.0 | [v26.0.0](https://github.com/bmaltais/kohya_ss/releases/tag/v26.0.0) signed | 12641 | none |
+| [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Python | Apache-2.0 | [v0.21.0](https://github.com/axolotl-ai-cloud/axolotl/releases/tag/v0.21.0) signed | 12609 | Amazon SageMaker (partial), Vertex AI (partial) |
+| [AI Toolkit](https://github.com/ostris/ai-toolkit) | Python | MIT | none | 12423 | Kohya's GUI (partial) |
 | [torchtune](https://github.com/meta-pytorch/torchtune) | Python | BSD-3-Clause | [v0.6.1](https://github.com/meta-pytorch/torchtune/releases/tag/v0.6.1) signed | 5819 | Amazon SageMaker (partial) |
-| [OneTrainer](https://github.com/Nerogar/OneTrainer) | Python | AGPL-3.0 | [pre-upgrade](https://github.com/Nerogar/OneTrainer/releases/tag/pre-upgrade) signed | 3247 | Kohya's GUI (partial) |
+| [OneTrainer](https://github.com/Nerogar/OneTrainer) | Python | AGPL-3.0 | [pre-upgrade](https://github.com/Nerogar/OneTrainer/releases/tag/pre-upgrade) signed | 3249 | Kohya's GUI (partial) |
 
 [All categories](../README.md#catalog)

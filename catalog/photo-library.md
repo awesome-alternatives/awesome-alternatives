@@ -4,17 +4,17 @@ Back up, browse and share photos and videos from your phones.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.3.4](https://github.com/immich-app/immich/releases/tag/v3.3.4) | 116793 | Google Photos (full) |
-| [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [261007-65faaae5d](https://github.com/photoprism/photoprism/releases/tag/261007-65faaae5d) | 40332 | Google Photos (partial) |
-| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [locker-v1.0.10](https://github.com/ente/ente/releases/tag/locker-v1.0.10) | 29497 | Google Photos (full) |
-| [LibrePhotos](https://github.com/LibrePhotos/librephotos) | Python | MIT | [1.4.0](https://github.com/LibrePhotos/librephotos/releases/tag/1.4.0) signed | 8112 | Google Photos (partial) |
+| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.3.5](https://github.com/immich-app/immich/releases/tag/v3.3.5) | 116875 | Google Photos (full) |
+| [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [261007-65faaae5d](https://github.com/photoprism/photoprism/releases/tag/261007-65faaae5d) | 40338 | Google Photos (partial) |
+| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [photos-v1.3.66](https://github.com/ente/ente/releases/tag/photos-v1.3.66) | 29515 | Google Photos (full) |
+| [LibrePhotos](https://github.com/LibrePhotos/librephotos) | Python | MIT | [1.4.0](https://github.com/LibrePhotos/librephotos/releases/tag/1.4.0) signed | 8111 | Google Photos (partial) |
 | [Photoview](https://github.com/photoview/photoview) | Go | AGPL-3.0 | [v2.4.0](https://github.com/photoview/photoview/releases/tag/v2.4.0) signed | 6554 | Google Photos (partial) |
-| [Lychee](https://github.com/LycheeOrg/Lychee) | PHP | MIT | [v7.11.1](https://github.com/LycheeOrg/Lychee/releases/tag/v7.11.1) signed | 4312 | Flickr (partial) |
-| [Piwigo](https://github.com/Piwigo/Piwigo) | PHP | GPL-2.0 | [16.4.0](https://github.com/Piwigo/Piwigo/releases/tag/16.4.0) | 3869 | Flickr (partial) |
-| [Memories](https://github.com/pulsejet/memories) | PHP | AGPL-3.0 | [v10.1.0](https://github.com/pulsejet/memories/releases/tag/v10.1.0) | 3858 | Google Photos (partial) |
+| [Lychee](https://github.com/LycheeOrg/Lychee) | PHP | MIT | [v7.11.1](https://github.com/LycheeOrg/Lychee/releases/tag/v7.11.1) signed | 4310 | Flickr (partial) |
+| [Piwigo](https://github.com/Piwigo/Piwigo) | PHP | GPL-2.0 | [16.4.0](https://github.com/Piwigo/Piwigo/releases/tag/16.4.0) | 3867 | Flickr (partial) |
+| [Memories](https://github.com/pulsejet/memories) | PHP | AGPL-3.0 | [v10.1.0](https://github.com/pulsejet/memories/releases/tag/v10.1.0) | 3859 | Google Photos (partial) |
 | [PiGallery 2](https://github.com/bpatrik/pigallery2) | TypeScript | MIT | [3.5.2](https://github.com/bpatrik/pigallery2/releases/tag/3.5.2) | 2301 | Google Photos (partial) |
-| [Damselfly](https://github.com/Webreaper/Damselfly) | C# | GPL-3.0 | [4.5.3](https://github.com/Webreaper/Damselfly/releases/tag/4.5.3) | 1792 | Google Photos (partial) |
+| [Damselfly](https://github.com/Webreaper/Damselfly) | C# | GPL-3.0 | [4.5.3](https://github.com/Webreaper/Damselfly/releases/tag/4.5.3) | 1793 | Google Photos (partial) |
 | [HomeGallery](https://github.com/xemle/home-gallery) | JavaScript | MIT | [v1.21.0](https://github.com/xemle/home-gallery/releases/tag/v1.21.0) | 1202 | Google Photos (partial) |
-| [Chevereto](https://github.com/chevereto/chevereto) | PHP | AGPL-3.0 | [4.5.7](https://github.com/chevereto/chevereto/releases/tag/4.5.7) | 999 | Flickr (partial) |
+| [Chevereto](https://github.com/chevereto/chevereto) | PHP | AGPL-3.0 | [4.5.7](https://github.com/chevereto/chevereto/releases/tag/4.5.7) | 1000 | Flickr (partial) |
 
 [All categories](../README.md#catalog)
