@@ -1,5 +1,5 @@
 name: LibreChat
-repository: https://github.com/danny-avila/LibreChat
+repository: https://github.com/LibreChat-AI/LibreChat
 category: chat-interface
 replaces:
   - tool: chatgpt
