@@ -25,10 +25,15 @@ export interface Enricher {
   enrich(tool: Tool, read: Read<RepositoryFacts>, verifiedAt: string | null): EnrichedTool | null;
 }
 
-function whyUnread(tool: Tool, read: Exclude<Read<RepositoryFacts>, { status: "read" | "gone" }>): string {
-  return read.status === "unreadable"
-    ? `GitHub could not read ${tool.repository} (${read.reason})`
-    : `${ownerOf(repoPath(tool.repository))} has an IP allow list that refuses this runner`;
+function whyUnread(tool: Tool, read: Exclude<Read<RepositoryFacts>, { status: "read" }>): string {
+  switch (read.status) {
+    case "gone":
+      return `${tool.repository} is gone`;
+    case "unreadable":
+      return `GitHub could not read ${tool.repository} (${read.reason})`;
+    case "behind-allow-list":
+      return `${ownerOf(repoPath(tool.repository))} has an IP allow list that refuses this runner`;
+  }
 }
 
 function withMaintainerFields(enriched: EnrichedTool, fields: readonly string[]): EnrichedTool {
@@ -74,10 +79,6 @@ export function createEnricher(
   return {
     enrich(tool, read, verifiedAt) {
       const editedAt = edits.get(tool.slug) ?? now.toISOString();
-      if (read.status === "gone") {
-        console.error(`${tool.slug}: ${tool.repository} is gone, left out of the catalog`);
-        return null;
-      }
       if (read.status !== "read") return keptPublished(tool, before.get(tool.slug), editedAt, whyUnread(tool, read));
       const facts = read.value;
       const series = nextSeries(before.get(tool.slug)?.starHistory, facts.repo.stars, now);
@@ -121,7 +122,7 @@ export function ownerLogins(tools: readonly Tool[], reads: readonly Read<{ repo:
   const listed = tools.flatMap((tool, i) => {
     const read = reads[i] ?? GONE;
     if (read.status === "read") return [read.value.repo.fullName];
-    const kept = read.status === "gone" ? undefined : before.get(tool.slug);
+    const kept = before.get(tool.slug);
     return kept ? [kept.repo.fullName] : [];
   });
   return [...new Set(listed.map(ownerOf))].sort((a, b) => a.localeCompare(b));

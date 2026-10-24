@@ -4,7 +4,7 @@ import type { PullSummary } from "./maintainer-pull.ts";
 
 export const CHECKS_WORKFLOW = "validate.yml";
 
-type Method = "GET" | "POST" | "PATCH" | "PUT";
+type Method = "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
 
 export function createProposalHost(repository: string, token: string, fetchImpl: typeof fetch = fetch): ProposalHost {
   const [owner] = repository.split("/");
@@ -45,7 +45,8 @@ export function createProposalHost(repository: string, token: string, fetchImpl:
     async push(branch, sha, file, text, message) {
       await resetBranch(branch, sha);
       const { sha: blob } = await call<{ sha: string }>("GET", `${base}/contents/${file}?ref=${sha}`);
-      await call("PUT", `${base}/contents/${file}`, { message, content: Buffer.from(text).toString("base64"), sha: blob, branch });
+      if (text === null) await call("DELETE", `${base}/contents/${file}`, { message, sha: blob, branch });
+      else await call("PUT", `${base}/contents/${file}`, { message, content: Buffer.from(text).toString("base64"), sha: blob, branch });
     },
     async open(branch, title, body) {
       const { number } = await call<{ number: number }>("POST", `${base}/pulls`, { title, body, head: branch, base: "main" });

@@ -222,7 +222,8 @@ passes these checks, and its page shows the stars, releases and activity so read
 
 Reviewed by a maintainer before merge, without blocking:
 
-- the repository was renamed or moved
+- the repository was renamed or moved, which the [Repository moves](#gone-and-renamed-repositories)
+  workflow also proposes on its own
 - GitHub detects no licence
 - there is no release and no tag
 - no push in the last year
@@ -595,6 +596,20 @@ this repository alone, and hands it to the push. The refresh process itself neve
 as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, the app's bot user, falling back to
 `github-actions[bot]`. Given `backfill` as its argument, it clones the same way and runs the
 backfill instead.
+
+### Gone and renamed repositories
+
+A repository that GitHub no longer answers for, because it was deleted or made private, does not
+stop the refresh: the tool stays in the catalog with its last published facts, as one behind an IP
+allow list does. A repository that answers under another name is still read through GitHub's
+redirect, but its maintainer file is not applied until the entry names the repository it really is.
+
+Both need a person, so the [Repository moves](.github/workflows/repo-moves.yml) workflow asks every
+day which repositories in `data/tools` are gone or renamed, and opens a pull request for each on a
+`repository/<slug>` branch: one that removes the entry of a gone repository, one that points
+`repository:` at the new name. Merge it, or close it and fix the entry by hand: a closed pull
+request is not opened again for the same finding, only when the repository moves again. It opens at
+most five a run and leaves the rest to the next one. To run it now, start it from Actions.
 
 ### When the refresh stops publishing
 

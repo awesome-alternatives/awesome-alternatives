@@ -36,7 +36,7 @@ export const pages = {
       releaseMiddle: "installed, or runs",
       releaseAfter: "in its release workflow.",
       commit:
-        "When anything changed, the refresh commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the refresh publishes nothing and fails, so a person looks: a tool leaves the catalog only through a pull request that removes its entry.",
+        "When anything changed, the refresh commits the new catalog and a new build of this site goes out. If GitHub stops returning the repository of a listed tool, because it was deleted or made private, the tool keeps its last published facts and a pull request that removes its entry is opened, so a person decides: a tool leaves the catalog only through such a pull request.",
       changesBefore:
         "Each refresh also compares the new catalog with the previous one and records what changed: a licence, a repository name, an archive, a new release, a tool joining or leaving. The",
       changesLink: "what changed",

@@ -41,7 +41,11 @@ export function fileLink({ fullName, location, commit }: Proposal["source"]): st
 }
 
 export function decide(pulls: readonly PullSummary[], hash: string): Decision {
-  const marked = (pull: PullSummary) => pull.body?.includes(`${MARKER} ${hash}`) ?? false;
+  return decideByMarker(pulls, `${MARKER} ${hash}`);
+}
+
+export function decideByMarker(pulls: readonly PullSummary[], marker: string): Decision {
+  const marked = (pull: PullSummary) => pull.body?.includes(marker) ?? false;
   const open = pulls.find((pull) => pull.state === "open");
   if (open) return marked(open) ? { action: "skip", reason: `#${open.number} already proposes it` } : { action: "update", number: open.number };
   const closed = pulls.find(marked);
