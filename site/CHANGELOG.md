@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.137.19] - 2026-10-24
+
+### Bug Fixes
+
+- fix(catalog): remove autumn, its repository is gone (#449)
+
 ## [0.137.18] - 2026-10-22
 
 ### Bug Fixes
