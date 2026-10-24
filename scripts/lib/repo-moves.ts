@@ -107,7 +107,6 @@ async function proposeMove(move: Move, { base, read, host }: MoveContext): Promi
   await host.push(branch, base, move.file, movedYaml(await read(move.file), move), title);
   const number = decision.action === "open" ? await host.open(branch, title, body) : decision.number;
   if (decision.action === "update") await host.update(number, title, body);
-  await host.check(branch);
   return { slug: move.slug, result: decision.action === "open" ? "opened" : "updated", number };
 }
 

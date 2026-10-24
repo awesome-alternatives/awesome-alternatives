@@ -16,8 +16,6 @@ repository=${REPOSITORY:-awesome-alternatives/awesome-alternatives}
 workdir=${WORK_DIR:-/work}
 app=$(cd "$(dirname "$0")/../.." && pwd)
 record_failed=75
-export GIT_AUTHOR_NAME="awesome-alternatives[bot]"
-export GIT_AUTHOR_EMAIL="333291533+awesome-alternatives[bot]@users.noreply.github.com"
 
 GITHUB_TOKEN=$(REPOSITORY="$repository" node "$app/scripts/runner/token.ts" read)
 export GITHUB_TOKEN

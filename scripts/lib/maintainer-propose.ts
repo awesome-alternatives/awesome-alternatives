@@ -13,7 +13,6 @@ export interface ProposalHost {
   push(branch: string, base: string, file: string, text: string | null, message: string): Promise<void>;
   open(branch: string, title: string, body: string): Promise<number>;
   update(number: number, title: string, body: string): Promise<void>;
-  check(branch: string): Promise<void>;
 }
 
 export interface ProposeContext {
@@ -52,7 +51,6 @@ async function proposeOne(proposal: Proposal, { catalog, guard, base, read, host
   await host.push(branch, base, tool.file, proposedYaml(await read(tool.file), tool, after), title);
   const number = decision.action === "open" ? await host.open(branch, title, body) : decision.number;
   if (decision.action === "update") await host.update(number, title, body);
-  await host.check(branch);
   return { slug, result: decision.action === "open" ? "opened" : "updated", number };
 }
 
