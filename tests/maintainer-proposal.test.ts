@@ -173,7 +173,7 @@ describe("proposedYaml", () => {
 
 describe("proposeAll", () => {
   interface Recorded {
-    pushed: [string, string, string][];
+    pushed: [string, string, string | null][];
     opened: [string, string, string][];
     updated: number[];
     checked: string[];

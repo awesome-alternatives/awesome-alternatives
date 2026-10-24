@@ -10,7 +10,7 @@ export const MAX_LOOKUPS_PER_RUN = 50;
 
 export interface ProposalHost {
   pulls(branch: string): Promise<PullSummary[]>;
-  push(branch: string, base: string, file: string, text: string, message: string): Promise<void>;
+  push(branch: string, base: string, file: string, text: string | null, message: string): Promise<void>;
   open(branch: string, title: string, body: string): Promise<number>;
   update(number: number, title: string, body: string): Promise<void>;
   check(branch: string): Promise<void>;
