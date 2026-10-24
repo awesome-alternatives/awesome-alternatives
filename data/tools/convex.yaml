@@ -1,5 +1,5 @@
 name: Convex
-repository: https://github.com/get-convex/convex-backend
+repository: https://github.com/convex/convex-backend
 category: backend-as-a-service
 terms: source-available
 replaces:
