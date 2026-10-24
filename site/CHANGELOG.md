@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.138.0] - 2026-10-24
+
+### Features
+
+- feat(catalog): propose pull requests for gone and renamed repositories (#450)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
 ## [0.137.19] - 2026-10-24
 
 ### Bug Fixes

@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.16.0] - 2026-10-24
+
+### Features
+
+- feat(catalog): propose pull requests for gone and renamed repositories (#450)
+
 ## [0.15.1] - 2026-10-16
 
 ### Bug Fixes
