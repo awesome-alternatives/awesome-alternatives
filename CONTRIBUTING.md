@@ -401,9 +401,9 @@ tools:
 - Deleting the file proposes nothing and reverts nothing.
 
 The pull requests are opened by the [Refresh](.github/workflows/refresh.yml) workflow in GitHub
-Actions, with the workflow's own token, so the app needs no new permission on your repository. That
-token cannot start other workflows through a pull request, so the workflow starts the checks on the
-branch itself. Refresh runs after every change to `data/` on main and can be started by hand; the
+Actions, as `awesome-alternatives-refresh[bot]`: a token of the write app (`WRITE_APP_CLIENT_ID`,
+`WRITE_APP_PRIVATE_KEY`), which needs Contents and Pull requests: write on this repository and
+nothing on yours. The pull request then runs the checks like any other. Refresh runs after every change to `data/` on main and can be started by hand; the
 nightly run in the cluster applies the fields above but does not open pull requests.
 
 ### Refreshing your entry after a release
@@ -593,9 +593,8 @@ into `WORK_DIR` (default `/work`) and refreshes with an installation token of th
 private app that is installed on this repository alone (`WRITE_APP_ID`, `WRITE_APP_PRIVATE_KEY`, the
 same app as the API's dispatch app; `APP_ID` is used until they are set), with Contents: write on
 this repository alone, and hands it to the push. The refresh process itself never sees the write key. Commits are authored
-as `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL`, the app's bot user, falling back to
-`github-actions[bot]`. Given `backfill` as its argument, it clones the same way and runs the
-backfill instead.
+as `awesome-alternatives-refresh[bot]`, the write app's bot user, here and in GitHub Actions. Given
+`backfill` as its argument, it clones the same way and runs the backfill instead.
 
 ### Gone and renamed repositories
 

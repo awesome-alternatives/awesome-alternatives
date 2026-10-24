@@ -9,8 +9,8 @@ fi
 message=$1
 shift
 
-git config user.name "${GIT_AUTHOR_NAME:-github-actions[bot]}"
-git config user.email "${GIT_AUTHOR_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+git config user.name "awesome-alternatives-refresh[bot]"
+git config user.email "333291533+awesome-alternatives-refresh[bot]@users.noreply.github.com"
 unset GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL
 if [ "${GITHUB_ACTIONS:-}" = true ]; then
   gh auth setup-git

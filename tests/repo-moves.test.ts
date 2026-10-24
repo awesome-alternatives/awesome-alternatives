@@ -79,11 +79,10 @@ describe("proposeMoves", () => {
     pushed: [string, string, string | null][];
     opened: [string, string][];
     updated: number[];
-    checked: string[];
   }
 
   function host(pulls: (branch: string) => PullSummary[] = () => []): ProposalHost & { recorded: Recorded } {
-    const recorded: Recorded = { pushed: [], opened: [], updated: [], checked: [] };
+    const recorded: Recorded = { pushed: [], opened: [], updated: [] };
     return {
       recorded,
       async pulls(branch) {
@@ -100,15 +99,12 @@ describe("proposeMoves", () => {
       async update(number) {
         recorded.updated.push(number);
       },
-      async check(branch) {
-        recorded.checked.push(branch);
-      },
     };
   }
 
   const context = (fake: ProposalHost) => ({ base: COMMIT, read: async () => "repository: https://github.com/acme/b\n", host: fake });
 
-  it("opens a pull request that deletes a gone entry and one that renames a moved one, then runs their checks", async () => {
+  it("opens a pull request that deletes a gone entry and one that renames a moved one", async () => {
     const fake = host();
     const outcomes = await proposeMoves([gone("a"), renamed("b", "other/b")], context(fake));
     assert.deepEqual(outcomes, [
@@ -123,7 +119,6 @@ describe("proposeMoves", () => {
       ["repository/a", "fix(catalog): remove a, its repository is gone"],
       ["repository/b", "fix(catalog): follow b to other/b"],
     ]);
-    assert.deepEqual(fake.recorded.checked, ["repository/a", "repository/b"]);
   });
 
   it("does not reopen a finding a person closed, but does once the repository moves again", async () => {

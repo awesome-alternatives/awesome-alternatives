@@ -2,8 +2,6 @@ import { GitHubError } from "./github.ts";
 import type { ProposalHost } from "./maintainer-propose.ts";
 import type { PullSummary } from "./maintainer-pull.ts";
 
-export const CHECKS_WORKFLOW = "validate.yml";
-
 type Method = "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
 
 export function createProposalHost(repository: string, token: string, fetchImpl: typeof fetch = fetch): ProposalHost {
@@ -54,9 +52,6 @@ export function createProposalHost(repository: string, token: string, fetchImpl:
     },
     async update(number, title, body) {
       await call("PATCH", `${base}/pulls/${number}`, { title, body });
-    },
-    async check(branch) {
-      await call("POST", `${base}/actions/workflows/${CHECKS_WORKFLOW}/dispatches`, { ref: branch });
     },
   };
 }

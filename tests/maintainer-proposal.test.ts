@@ -176,11 +176,10 @@ describe("proposeAll", () => {
     pushed: [string, string, string | null][];
     opened: [string, string, string][];
     updated: number[];
-    checked: string[];
   }
 
   function host(pulls: (branch: string) => PullSummary[] = () => []): ProposalHost & { recorded: Recorded } {
-    const recorded: Recorded = { pushed: [], opened: [], updated: [], checked: [] };
+    const recorded: Recorded = { pushed: [], opened: [], updated: [] };
     return {
       recorded,
       async pulls(branch) {
@@ -197,9 +196,6 @@ describe("proposeAll", () => {
       async update(number) {
         recorded.updated.push(number);
       },
-      async check(branch) {
-        recorded.checked.push(branch);
-      },
     };
   }
 
@@ -212,7 +208,6 @@ describe("proposeAll", () => {
     const p = proposal("tools:\n  ripgrep:\n    category: library\n");
     const first = host();
     assert.deepEqual(await proposeAll([p], context(catalog, first)), [{ slug: "ripgrep", result: "opened", number: 12 }]);
-    assert.deepEqual(first.recorded.checked, ["maintainer/ripgrep"]);
     const [branch, title, body] = first.recorded.opened[0] ?? [];
     assert.equal(branch, "maintainer/ripgrep");
     assert.equal(title, "feat(catalog): update ripgrep from its maintainer file");
@@ -220,7 +215,7 @@ describe("proposeAll", () => {
 
     const replay = host(() => [{ number: 12, state: "closed", body: body ?? "" }]);
     assert.deepEqual(await proposeAll([p], context(catalog, replay)), [{ slug: "ripgrep", result: "skipped", reason: "#12 proposed the same content and was closed" }]);
-    assert.deepEqual(replay.recorded, { pushed: [], opened: [], updated: [], checked: [] });
+    assert.deepEqual(replay.recorded, { pushed: [], opened: [], updated: [] });
 
     const changed = proposal("tools:\n  ripgrep:\n    category: library\n    affiliation: Maintained by Acme.\n");
     assert.equal((await proposeAll([changed], context(catalog, replay)))[0]?.result, "opened");
