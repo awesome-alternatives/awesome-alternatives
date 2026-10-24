@@ -39,7 +39,7 @@ export const pages: Pages = {
       releaseMiddle: "installiert ist oder der Release-Workflow",
       releaseAfter: "ausführt.",
       commit:
-        "Wenn sich etwas geändert hat, committet der Refresh den neuen Katalog und ein neuer Build dieser Seite geht raus. Gibt GitHub das Repository eines gelisteten Tools nicht mehr zurück, weil es gelöscht oder auf privat gestellt wurde, veröffentlicht der Abgleich nichts und schlägt fehl, damit ein Mensch nachsieht: Ein Tool verlässt den Katalog nur über einen Pull Request, der seinen Eintrag entfernt.",
+        "Wenn sich etwas geändert hat, committet der Refresh den neuen Katalog und ein neuer Build dieser Seite geht raus. Gibt GitHub das Repository eines gelisteten Tools nicht mehr zurück, weil es gelöscht oder auf privat gestellt wurde, behält das Tool seine zuletzt veröffentlichten Daten und ein Pull Request, der seinen Eintrag entfernt, wird geöffnet, damit ein Mensch entscheidet: Ein Tool verlässt den Katalog nur über einen solchen Pull Request.",
       changesBefore:
         "Jeder Refresh vergleicht außerdem den neuen Katalog mit dem vorherigen und hält fest, was sich geändert hat: eine Lizenz, ein Repository-Name, eine Archivierung, ein neues Release, ein Tool, das dazukommt oder geht. Die Seite",
       changesLink: "Was sich geändert hat",

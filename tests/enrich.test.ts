@@ -7,7 +7,7 @@ import type { RepositoryFacts } from "../scripts/lib/facts-graphql.ts";
 import type { GitHub } from "../scripts/lib/github.ts";
 import type { GraphQL } from "../scripts/lib/graphql.ts";
 import { CATALOG_PATH, publish, type Snapshot } from "../scripts/lib/publish.ts";
-import { BEHIND_ALLOW_LIST, type EnrichedTool, type OwnerFacts, type Read } from "../scripts/lib/types.ts";
+import { BEHIND_ALLOW_LIST, type EnrichedTool, GONE, type OwnerFacts, type Read } from "../scripts/lib/types.ts";
 import { catalogOf, checkout, declared, published } from "./catalog-checkout.ts";
 
 const NOW = new Date("2026-09-26T03:17:00.000Z");
@@ -73,6 +73,32 @@ describe("refresh of a tool whose repository GitHub keeps failing on", () => {
     const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
     const enricher = createEnricher(await checkout(snapshot), snapshot, null, [neon, ripgrep], NOW);
     assert.equal(enricher.enrich(ripgrep, unreadable, null), null);
+  });
+});
+
+describe("refresh of a tool whose repository is gone", () => {
+  it("keeps its last published facts until a pull request removes its entry, so the refresh still publishes", async (t) => {
+    const errors = t.mock.method(console, "error", () => {});
+    const before = published(ripgrep, 61000, true);
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [before] };
+    const root = await checkout(snapshot);
+    const enricher = createEnricher(root, snapshot, null, [ripgrep], NOW);
+
+    const kept = enricher.enrich(ripgrep, GONE, null);
+    assert.ok(kept);
+    assert.deepEqual(kept.repo, before.repo);
+    assert.match(String(errors.mock.calls[0]?.arguments[0]), /ripgrep: .* is gone, kept with its last published facts/);
+
+    await publish(root, catalogOf(ripgrep), { checkedAt: NOW.toISOString(), owners: {}, tools: [kept] });
+    const written = JSON.parse(await readFile(join(root, CATALOG_PATH), "utf8")) as Snapshot;
+    assert.deepEqual(written.tools.map((tool) => tool.slug), ["ripgrep"]);
+  });
+
+  it("leaves out a tool no run has read yet", async (t) => {
+    t.mock.method(console, "error", () => {});
+    const snapshot = { checkedAt: "2026-09-25T03:17:00.000Z", owners: {}, tools: [] };
+    const enricher = createEnricher(await checkout(snapshot), snapshot, null, [ripgrep], NOW);
+    assert.equal(enricher.enrich(ripgrep, GONE, null), null);
   });
 });
 

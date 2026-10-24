@@ -38,7 +38,7 @@ export const pages: Pages = {
       releaseMiddle: "instalado, ou executa",
       releaseAfter: "no seu workflow de release.",
       commit:
-        "Quando algo muda, o refresh faz commit do novo catálogo e um novo build deste site é publicado. Se o GitHub deixa de retornar o repositório de uma ferramenta listada, porque ele foi excluído ou tornado privado, o refresh não publica nada e falha, para que uma pessoa verifique: uma ferramenta só sai do catálogo por um pull request que remove a entrada dela.",
+        "Quando algo muda, o refresh faz commit do novo catálogo e um novo build deste site é publicado. Se o GitHub deixa de retornar o repositório de uma ferramenta listada, porque ele foi excluído ou tornado privado, a ferramenta mantém os últimos dados publicados e um pull request que remove a entrada dela é aberto, para que uma pessoa decida: uma ferramenta só sai do catálogo por um pull request assim.",
       changesBefore:
         "Cada refresh também compara o novo catálogo com o anterior e registra o que mudou: uma licença, o nome de um repositório, um arquivamento, uma nova release, uma ferramenta que entra ou sai. A página",
       changesLink: "o que mudou",

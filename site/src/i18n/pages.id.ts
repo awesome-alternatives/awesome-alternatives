@@ -38,7 +38,7 @@ export const pages: Pages = {
       releaseMiddle: "terpasang di repositorinya, atau jika repositori itu menjalankan",
       releaseAfter: "di workflow rilisnya.",
       commit:
-        "Jika ada yang berubah, refresh meng-commit katalog baru dan build baru situs ini dirilis. Jika GitHub berhenti mengembalikan repositori dari alat yang tercantum, karena dihapus atau dijadikan privat, refresh tidak memublikasikan apa pun dan gagal, sehingga seseorang akan memeriksanya: sebuah alat hanya keluar dari katalog melalui pull request yang menghapus entrinya.",
+        "Jika ada yang berubah, refresh meng-commit katalog baru dan build baru situs ini dirilis. Jika GitHub berhenti mengembalikan repositori dari alat yang tercantum, karena dihapus atau dijadikan privat, alat itu mempertahankan data terakhir yang dipublikasikan dan pull request yang menghapus entrinya dibuka, sehingga seseorang yang memutuskan: sebuah alat hanya keluar dari katalog melalui pull request seperti itu.",
       changesBefore:
         "Setiap refresh juga membandingkan katalog baru dengan yang sebelumnya dan mencatat apa yang berubah: lisensi, nama repositori, pengarsipan, rilis baru, alat yang masuk atau keluar. Halaman",
       changesLink: "apa yang berubah",

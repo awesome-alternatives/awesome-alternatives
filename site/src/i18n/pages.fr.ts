@@ -39,7 +39,7 @@ export const pages: Pages = {
       releaseMiddle: "ou lance",
       releaseAfter: "dans son workflow de release.",
       commit:
-        "Dès que quelque chose a changé, le refresh commite le nouveau catalogue et une nouvelle version de ce site est publiée. Si GitHub ne renvoie plus le dépôt d'un outil listé, parce qu'il a été supprimé ou rendu privé, la mise à jour ne publie rien et échoue, pour qu'une personne regarde : un outil ne quitte le catalogue que par une pull request qui retire son entrée.",
+        "Dès que quelque chose a changé, le refresh commite le nouveau catalogue et une nouvelle version de ce site est publiée. Si GitHub ne renvoie plus le dépôt d'un outil listé, parce qu'il a été supprimé ou rendu privé, l'outil garde ses dernières données publiées et une pull request qui retire son entrée est ouverte, pour qu'une personne décide : un outil ne quitte le catalogue que par une telle pull request.",
       changesBefore:
         "Chaque refresh compare aussi le nouveau catalogue au précédent et note ce qui a changé : une licence, le nom d'un dépôt, un archivage, une nouvelle release, un outil qui arrive ou qui part. La page",
       changesLink: "ce qui a changé",
