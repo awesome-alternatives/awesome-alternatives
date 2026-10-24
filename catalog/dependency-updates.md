@@ -4,8 +4,8 @@ Open pull requests that bump dependencies when new versions are released.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Renovate](https://github.com/renovatebot/renovate) | TypeScript | AGPL-3.0 | [44.176.2](https://github.com/renovatebot/renovate/releases/tag/44.176.2) signed | 22834 | Dependabot (full) |
-| [Dependabot](https://github.com/dependabot/dependabot-core) | Ruby | MIT | [v0.401.0](https://github.com/dependabot/dependabot-core/releases/tag/v0.401.0) signed | 5808 | Renovate (partial) |
-| [Updatecli](https://github.com/updatecli/updatecli) | Go | Apache-2.0 | [v0.122.1](https://github.com/updatecli/updatecli/releases/tag/v0.122.1) signed | 1002 | Renovate (partial) |
+| [Renovate](https://github.com/renovatebot/renovate) | TypeScript | AGPL-3.0 | [44.181.1](https://github.com/renovatebot/renovate/releases/tag/44.181.1) signed | 22858 | Dependabot (full) |
+| [Dependabot](https://github.com/dependabot/dependabot-core) | Ruby | MIT | [v0.401.0](https://github.com/dependabot/dependabot-core/releases/tag/v0.401.0) signed | 5810 | Renovate (partial) |
+| [Updatecli](https://github.com/updatecli/updatecli) | Go | Apache-2.0 | [v0.123.0](https://github.com/updatecli/updatecli/releases/tag/v0.123.0) signed | 1002 | Renovate (partial) |
 
 [All categories](../README.md#catalog)

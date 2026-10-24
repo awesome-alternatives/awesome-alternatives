@@ -4,13 +4,13 @@ Inspect HTTP traffic and block attacks, bots and abuse before they reach an appl
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.28.1](https://github.com/TecharoHQ/anubis/releases/tag/v1.28.1) | 23614 | Cloudflare WAF (partial), hCaptcha (partial), reCAPTCHA (partial) |
-| [SafeLine](https://github.com/chaitin/SafeLine) | Go | GPL-3.0 | [v9.4.3](https://github.com/chaitin/SafeLine/releases/tag/v9.4.3) signed | 22862 | Cloudflare WAF (full) |
-| [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9823 | Cloudflare WAF (partial) |
-| [Cap](https://github.com/tiagozip/cap) | JavaScript | Other | [standalone@3.1.13](https://github.com/tiagozip/cap/releases/tag/standalone%403.1.13) signed | 8128 | reCAPTCHA (full), hCaptcha (full) |
-| [Coraza](https://github.com/corazawaf/coraza) | Go | Apache-2.0 | [v3.8.1](https://github.com/corazawaf/coraza/releases/tag/v3.8.1) signed | 3925 | Cloudflare WAF (partial) |
-| [OWASP CRS](https://github.com/coreruleset/coreruleset) | Python | Apache-2.0 | [v4.30.0](https://github.com/coreruleset/coreruleset/releases/tag/v4.30.0) signed | 3308 | Cloudflare WAF (partial) |
-| [ALTCHA](https://github.com/altcha-org/altcha) | TypeScript | MIT | [v3.5.0](https://github.com/altcha-org/altcha/releases/tag/v3.5.0) | 2842 | reCAPTCHA (full), hCaptcha (full) |
-| [open-appsec](https://github.com/openappsec/openappsec) | C++ | Apache-2.0 | [1.1.36](https://github.com/openappsec/openappsec/releases/tag/1.1.36) signed | 1733 | Cloudflare WAF (partial) |
+| [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.28.2](https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2) | 23661 | Cloudflare WAF (partial), hCaptcha (partial), reCAPTCHA (partial) |
+| [SafeLine](https://github.com/chaitin/SafeLine) | Go | GPL-3.0 | [v9.4.3](https://github.com/chaitin/SafeLine/releases/tag/v9.4.3) signed | 22926 | Cloudflare WAF (full) |
+| [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9827 | Cloudflare WAF (partial) |
+| [Cap](https://github.com/tiagozip/cap) | JavaScript | Other | [standalone@3.1.13](https://github.com/tiagozip/cap/releases/tag/standalone%403.1.13) signed | 8154 | reCAPTCHA (full), hCaptcha (full) |
+| [Coraza](https://github.com/corazawaf/coraza) | Go | Apache-2.0 | [v3.8.1](https://github.com/corazawaf/coraza/releases/tag/v3.8.1) signed | 3943 | Cloudflare WAF (partial) |
+| [OWASP CRS](https://github.com/coreruleset/coreruleset) | Python | Apache-2.0 | [v4.30.0](https://github.com/coreruleset/coreruleset/releases/tag/v4.30.0) signed | 3315 | Cloudflare WAF (partial) |
+| [ALTCHA](https://github.com/altcha-org/altcha) | TypeScript | MIT | [v3.5.0](https://github.com/altcha-org/altcha/releases/tag/v3.5.0) | 2846 | reCAPTCHA (full), hCaptcha (full) |
+| [open-appsec](https://github.com/openappsec/openappsec) | C++ | Apache-2.0 | [1.1.36](https://github.com/openappsec/openappsec/releases/tag/1.1.36) signed | 1732 | Cloudflare WAF (partial) |
 
 [All categories](../README.md#catalog)

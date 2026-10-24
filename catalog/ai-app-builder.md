@@ -4,10 +4,10 @@ Generate and edit a web app or interface from a chat prompt, with a live preview
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Python | MIT | none | 80608 | v0 (partial) |
-| [OpenUI](https://github.com/wandb/openui) | TypeScript | Apache-2.0 | none | 22647 | v0 (partial), Bolt.new (partial), Lovable (partial) |
-| [Dyad](https://github.com/dyad-sh/dyad) | TypeScript | Other | [v1.20.0](https://github.com/dyad-sh/dyad/releases/tag/v1.20.0) signed | 22032 | Lovable (partial), Bolt.new (partial), v0 (full) |
-| [VibeSDK](https://github.com/cloudflare/vibesdk) | TypeScript | MIT | [v1.5.0](https://github.com/cloudflare/vibesdk/releases/tag/v1.5.0) signed | 5419 | Bolt.new (full) |
-| [Convex Chef](https://github.com/get-convex/chef) | TypeScript | Apache-2.0 | [prompts-v0.0.1](https://github.com/convex/chef/releases/tag/prompts-v0.0.1) | 4600 | Lovable (full) |
+| [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Python | MIT | none | 80673 | v0 (partial) |
+| [OpenUI](https://github.com/wandb/openui) | TypeScript | Apache-2.0 | none | 22669 | v0 (partial), Bolt.new (partial), Lovable (partial) |
+| [Dyad](https://github.com/dyad-sh/dyad) | TypeScript | Other | [v1.20.0](https://github.com/dyad-sh/dyad/releases/tag/v1.20.0) signed | 22048 | Lovable (partial), Bolt.new (partial), v0 (full) |
+| [VibeSDK](https://github.com/cloudflare/vibesdk) | TypeScript | MIT | [v1.5.0](https://github.com/cloudflare/vibesdk/releases/tag/v1.5.0) signed | 5420 | Bolt.new (full) |
+| [Convex Chef](https://github.com/get-convex/chef) | TypeScript | Apache-2.0 | [prompts-v0.0.1](https://github.com/convex/chef/releases/tag/prompts-v0.0.1) | 4598 | Lovable (full) |
 
 [All categories](../README.md#catalog)

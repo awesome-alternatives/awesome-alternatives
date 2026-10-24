@@ -4,20 +4,20 @@ Full-text search servers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Elasticsearch](https://github.com/elastic/elasticsearch) | Java | Other | [v9.5.5](https://github.com/elastic/elasticsearch/releases/tag/v9.5.5) signed | 78337 | Elastic Cloud (full) |
-| [Meilisearch](https://github.com/meilisearch/meilisearch) | Rust | Other | [v1.55.0](https://github.com/meilisearch/meilisearch/releases/tag/v1.55.0) signed | 59627 | Elasticsearch (partial), Algolia (full) |
-| [Typesense](https://github.com/typesense/typesense) | C++ | GPL-3.0 | [v30.2](https://github.com/typesense/typesense/releases/tag/v30.2) | 27022 | Elasticsearch (partial), Algolia (full) |
-| [Sonic](https://github.com/valeriansaliou/sonic) | Rust | MPL-2.0 | [v1.10.2](https://github.com/valeriansaliou/sonic/releases/tag/v1.10.2) signed | 21367 | Elasticsearch (partial) |
+| [Elasticsearch](https://github.com/elastic/elasticsearch) | Java | Other | [v9.5.5](https://github.com/elastic/elasticsearch/releases/tag/v9.5.5) signed | 78357 | Elastic Cloud (full) |
+| [Meilisearch](https://github.com/meilisearch/meilisearch) | Rust | Other | [v1.55.0](https://github.com/meilisearch/meilisearch/releases/tag/v1.55.0) signed | 59645 | Elasticsearch (partial), Algolia (full) |
+| [Typesense](https://github.com/typesense/typesense) | C++ | GPL-3.0 | [v30.2](https://github.com/typesense/typesense/releases/tag/v30.2) | 27036 | Elasticsearch (partial), Algolia (full) |
+| [Sonic](https://github.com/valeriansaliou/sonic) | Rust | MPL-2.0 | [v1.10.2](https://github.com/valeriansaliou/sonic/releases/tag/v1.10.2) signed | 21366 | Elasticsearch (partial) |
 | [ZincSearch](https://github.com/zincsearch/zincsearch) | Go | Other | [v1.0.0-beta3](https://github.com/zincsearch/zincsearch/releases/tag/v1.0.0-beta3) signed | 17917 | Elasticsearch (partial) |
-| [OpenSearch](https://github.com/opensearch-project/OpenSearch) | Java | Apache-2.0 | [3.9.0](https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0) signed | 13894 | Elasticsearch (full), Splunk (partial), Elastic Cloud (full) |
-| [Manticore Search](https://github.com/manticoresoftware/manticoresearch) | C++ | GPL-3.0 | [release-29.9.0](https://github.com/manticoresoftware/manticoresearch/releases/tag/release-29.9.0) | 12066 | Elasticsearch (partial), Algolia (partial) |
-| [Orama](https://github.com/oramasearch/orama) | TypeScript | Other | [v3.1.18](https://github.com/oramasearch/orama/releases/tag/v3.1.18) | 10583 | Algolia (partial) |
-| [ParadeDB](https://github.com/paradedb/paradedb) | Rust | AGPL-3.0 | [v0.26.2](https://github.com/paradedb/paradedb/releases/tag/v0.26.2) signed | 9430 | Elasticsearch (partial) |
-| [Vespa](https://github.com/vespa-engine/vespa) | Java | Apache-2.0 | [v8.763.13](https://github.com/vespa-engine/vespa/releases/tag/v8.763.13) | 7141 | Algolia (partial) |
-| [Apache Lucene](https://github.com/apache/lucene) | Java | Apache-2.0 | [releases/lucene/10.5.2](https://github.com/apache/lucene/releases/tag/releases/lucene/10.5.2) | 3592 | none |
-| [Elastic Cloud on Kubernetes](https://github.com/elastic/cloud-on-k8s) | Go | Other | [v3.5.0](https://github.com/elastic/cloud-on-k8s/releases/tag/v3.5.0) signed | 2852 | Elastic Cloud (full) |
-| [SeekStorm](https://github.com/SeekStorm/SeekStorm) | Rust | Apache-2.0 | [v3.4.1](https://github.com/SeekStorm/SeekStorm/releases/tag/v3.4.1) | 1919 | Algolia (partial) |
-| [Apache Solr](https://github.com/apache/solr) | Java | Apache-2.0 | [releases/solr/10.0.0](https://github.com/apache/solr/releases/tag/releases/solr/10.0.0) | 1689 | Elasticsearch (full) |
-| [OpenSearch Kubernetes Operator](https://github.com/opensearch-project/opensearch-k8s-operator) | Go | Apache-2.0 | [v3.0.0](https://github.com/opensearch-project/opensearch-k8s-operator/releases/tag/v3.0.0) signed | 585 | Elastic Cloud (partial) |
+| [OpenSearch](https://github.com/opensearch-project/OpenSearch) | Java | Apache-2.0 | [3.9.0](https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0) signed | 13902 | Elasticsearch (full), Splunk (partial), Elastic Cloud (full) |
+| [Manticore Search](https://github.com/manticoresoftware/manticoresearch) | C++ | GPL-3.0 | [release-29.9.0](https://github.com/manticoresoftware/manticoresearch/releases/tag/release-29.9.0) | 12068 | Elasticsearch (partial), Algolia (partial) |
+| [Orama](https://github.com/oramasearch/orama) | TypeScript | Other | [v3.1.18](https://github.com/oramasearch/orama/releases/tag/v3.1.18) | 10584 | Algolia (partial) |
+| [ParadeDB](https://github.com/paradedb/paradedb) | Rust | AGPL-3.0 | [v0.26.3](https://github.com/paradedb/paradedb/releases/tag/v0.26.3) signed | 9437 | Elasticsearch (partial) |
+| [Vespa](https://github.com/vespa-engine/vespa) | Java | Apache-2.0 | [v8.763.13](https://github.com/vespa-engine/vespa/releases/tag/v8.763.13) | 7144 | Algolia (partial) |
+| [Apache Lucene](https://github.com/apache/lucene) | Java | Apache-2.0 | [releases/lucene/10.5.2](https://github.com/apache/lucene/releases/tag/releases/lucene/10.5.2) | 3595 | none |
+| [Elastic Cloud on Kubernetes](https://github.com/elastic/cloud-on-k8s) | Go | Other | [v3.5.0](https://github.com/elastic/cloud-on-k8s/releases/tag/v3.5.0) signed | 2851 | Elastic Cloud (full) |
+| [SeekStorm](https://github.com/SeekStorm/SeekStorm) | Rust | Apache-2.0 | [v3.4.2](https://github.com/SeekStorm/SeekStorm/releases/tag/v3.4.2) | 1920 | Algolia (partial) |
+| [Apache Solr](https://github.com/apache/solr) | Java | Apache-2.0 | [releases/solr/10.0.0](https://github.com/apache/solr/releases/tag/releases/solr/10.0.0) | 1691 | Elasticsearch (full) |
+| [OpenSearch Kubernetes Operator](https://github.com/opensearch-project/opensearch-k8s-operator) | Go | Apache-2.0 | [v3.0.0](https://github.com/opensearch-project/opensearch-k8s-operator/releases/tag/v3.0.0) signed | 584 | Elastic Cloud (partial) |
 
 [All categories](../README.md#catalog)

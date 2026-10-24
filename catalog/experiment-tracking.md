@@ -4,12 +4,12 @@ Log the metrics, parameters and artefacts of training runs and compare them in a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.17.1](https://github.com/mlflow/mlflow/releases/tag/v3.17.1) signed | 28482 | Weights & Biases (full), Comet (full), Databricks (partial) |
-| [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 15934 | Weights & Biases (partial) |
+| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.17.1](https://github.com/mlflow/mlflow/releases/tag/v3.17.1) signed | 28513 | Weights & Biases (full), Comet (full), Databricks (partial) |
+| [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 15939 | Weights & Biases (partial) |
 | [TensorBoard](https://github.com/tensorflow/tensorboard) | TypeScript | Apache-2.0 | [2.21.0](https://github.com/tensorflow/tensorboard/releases/tag/2.21.0) | 7241 | Weights & Biases (partial) |
-| [ClearML](https://github.com/clearml/clearml) | Python | Apache-2.0 | [v2.1.12](https://github.com/clearml/clearml/releases/tag/v2.1.12) signed | 6913 | Weights & Biases (full), Comet (full) |
-| [Aim](https://github.com/aimhubio/aim) | Python | Apache-2.0 | [v3.29.1](https://github.com/aimhubio/aim/releases/tag/v3.29.1) | 6288 | Weights & Biases (partial), Comet (full) |
-| [Polyaxon](https://github.com/polyaxon/polyaxon) | MDX | Apache-2.0 | [v2.18.0](https://github.com/polyaxon/polyaxon/releases/tag/v2.18.0) | 3747 | Weights & Biases (partial) |
-| [Trackio](https://github.com/gradio-app/trackio) | Python | MIT | [trackio@0.43.0](https://github.com/gradio-app/trackio/releases/tag/trackio%400.43.0) | 1729 | Weights & Biases (drop-in) |
+| [ClearML](https://github.com/clearml/clearml) | Python | Apache-2.0 | [v2.1.12](https://github.com/clearml/clearml/releases/tag/v2.1.12) signed | 6915 | Weights & Biases (full), Comet (full) |
+| [Aim](https://github.com/aimhubio/aim) | Python | Apache-2.0 | [v3.29.1](https://github.com/aimhubio/aim/releases/tag/v3.29.1) | 6290 | Weights & Biases (partial), Comet (full) |
+| [Polyaxon](https://github.com/polyaxon/polyaxon) | MDX | Apache-2.0 | [v2.18.0](https://github.com/polyaxon/polyaxon/releases/tag/v2.18.0) | 3748 | Weights & Biases (partial) |
+| [Trackio](https://github.com/gradio-app/trackio) | Python | MIT | [trackio@0.43.0](https://github.com/gradio-app/trackio/releases/tag/trackio%400.43.0) | 1734 | Weights & Biases (drop-in) |
 
 [All categories](../README.md#catalog)

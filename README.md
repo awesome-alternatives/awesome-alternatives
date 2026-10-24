@@ -271,7 +271,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [LLM observability](catalog/llm-observability.md) | 9 | Trace, evaluate and monitor LLM applications. |
 | [PDF tools](catalog/pdf-tools.md) | 3 | Edit, merge, split, convert and sign PDF files. |
 | [Forums and Q&A](catalog/forum.md) | 13 | Community forums, link aggregators and question and answer sites. |
-| [Billing](catalog/billing.md) | 6 | Usage-based billing, subscription management and invoicing. |
+| [Billing](catalog/billing.md) | 5 | Usage-based billing, subscription management and invoicing. |
 | [Payment processing](catalog/payments.md) | 4 | Accept and route online payments from servers you run. |
 | [Webhook delivery](catalog/webhooks.md) | 4 | Send and receive webhooks with retries, signatures and delivery logs. |
 | [SEO tools](catalog/seo.md) | 4 | Track search rankings and audit sites for technical SEO issues. |
