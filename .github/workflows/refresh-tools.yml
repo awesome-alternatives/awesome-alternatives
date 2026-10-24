@@ -28,6 +28,7 @@ jobs:
           persist-credentials: false
           sparse-checkout: data/tools
       - id: plan
+        shell: bash
         env:
           SLUGS: ${{ inputs.slugs }}
           EVENT: ${{ github.event_name }}
