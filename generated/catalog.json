@@ -163622,7 +163622,7 @@
     {
       "slug": "librechat",
       "name": "LibreChat",
-      "repository": "https://github.com/danny-avila/LibreChat",
+      "repository": "https://github.com/LibreChat-AI/LibreChat",
       "category": "chat-interface",
       "replaces": [
         {
@@ -163639,7 +163639,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-23T16:30:46.954Z",
-      "editedAt": "2026-09-24T11:35:54.000Z",
+      "editedAt": "2026-10-25T11:10:53.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "LibreChat-AI/LibreChat",
@@ -163647,8 +163647,8 @@
         "homepage": "https://librechat.ai/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 46270,
-        "forks": 9508,
+        "stars": 46277,
+        "forks": 9509,
         "topics": [
           "ai",
           "anthropic",
@@ -163680,13 +163680,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 1397,
+        "stars": 1404,
         "exact": true,
-        "since": "2026-09-25T05:17:20.120Z"
+        "since": "2026-09-25T11:11:23.548Z"
       },
       "starHistory": {
         "from": "2026-09-24",
-        "stars": [44873,44941,44977,44982,45009,45128,45136,45185,45197,45209,45239,45309,45335,45359,45390,45425,45484,45512,45547,45603,45648,45713,45789,45833,45902,45949,46069,46098,46136,46189,46242,46270]
+        "stars": [44873,44941,44977,44982,45009,45128,45136,45185,45197,45209,45239,45309,45335,45359,45390,45425,45484,45512,45547,45603,45648,45713,45789,45833,45902,45949,46069,46098,46136,46189,46242,46277]
       },
       "release": {
         "tag": "v0.8.8",
@@ -163739,9 +163739,7 @@
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": [

@@ -10,7 +10,7 @@ Apps to chat with language models, whether the model runs locally or behind an A
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | JavaScript | MIT | [v1.18.0](https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.18.0) signed | 67522 | ChatGPT (partial), Claude (partial) |
 | [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | TypeScript | AGPL-3.0 | [v2.1.7](https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.7) signed | 52959 | ChatGPT (partial), Claude (partial) |
 | [TextGen](https://github.com/oobabooga/textgen) | Python | AGPL-3.0 | [v4.9](https://github.com/oobabooga/textgen/releases/tag/v4.9) | 47724 | ChatGPT (partial), Claude (partial) |
-| [LibreChat](https://github.com/danny-avila/LibreChat) | TypeScript | MIT | [v0.8.8](https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.8) signed | 46270 | ChatGPT (partial), Claude (partial) |
+| [LibreChat](https://github.com/LibreChat-AI/LibreChat) | TypeScript | MIT | [v0.8.8](https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.8) signed | 46277 | ChatGPT (partial), Claude (partial) |
 | [Jan](https://github.com/janhq/jan) | Rust | Other | [v0.8.7](https://github.com/janhq/jan/releases/tag/v0.8.7) signed | 45067 | ChatGPT (partial), Claude (partial) |
 | [Chatbox](https://github.com/chatboxai/chatbox) | TypeScript | GPL-3.0 | [v1.23.5](https://github.com/chatboxai/chatbox/releases/tag/v1.23.5) signed | 42138 | ChatGPT (partial), Claude (partial) |
 | [Khoj](https://github.com/khoj-ai/khoj) | Python | AGPL-3.0 | [2.0.0-beta.28](https://github.com/khoj-ai/khoj/releases/tag/2.0.0-beta.28) | 37814 | ChatGPT (partial) |
