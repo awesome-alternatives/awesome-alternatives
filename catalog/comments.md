@@ -4,10 +4,10 @@ Embed a comment thread under the pages of a static or dynamic site.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [giscus](https://github.com/giscus/giscus) | TypeScript | MIT | none | 12175 | Disqus (partial) |
-| [Remark42](https://github.com/umputun/remark42) | Go | MIT | [v1.18.0](https://github.com/umputun/remark42/releases/tag/v1.18.0) signed | 5634 | Disqus (full) |
-| [Isso](https://github.com/isso-comments/isso) | Python | MIT | [0.14.0](https://github.com/isso-comments/isso/releases/tag/0.14.0) | 5310 | Disqus (full) |
-| [Waline](https://github.com/walinejs/waline) | JavaScript | GPL-2.0 | [@waline/vercel@1.43.4](https://github.com/walinejs/waline/releases/tag/%40waline/vercel%401.43.4) signed | 3142 | Disqus (full) |
+| [giscus](https://github.com/giscus/giscus) | TypeScript | MIT | none | 12174 | Disqus (partial) |
+| [Remark42](https://github.com/umputun/remark42) | Go | MIT | [v1.18.0](https://github.com/umputun/remark42/releases/tag/v1.18.0) signed | 5635 | Disqus (full) |
+| [Isso](https://github.com/isso-comments/isso) | Python | MIT | [0.14.0](https://github.com/isso-comments/isso/releases/tag/0.14.0) | 5309 | Disqus (full) |
+| [Waline](https://github.com/walinejs/waline) | JavaScript | GPL-2.0 | [@waline/vercel@1.43.4](https://github.com/walinejs/waline/releases/tag/%40waline/vercel%401.43.4) signed | 3143 | Disqus (full) |
 | [Artalk](https://github.com/ArtalkJS/Artalk) | Go | MIT | [v2.10.0](https://github.com/ArtalkJS/Artalk/releases/tag/v2.10.0) | 2352 | Disqus (full) |
 | [Twikoo](https://github.com/twikoojs/twikoo) | TypeScript | MIT | [2.0.17](https://github.com/twikoojs/twikoo/releases/tag/2.0.17) signed | 2307 | Disqus (partial) |
 

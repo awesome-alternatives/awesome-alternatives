@@ -4,13 +4,13 @@ Accounting, inventory, sales and operations in one system.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 55290 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
-| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v15.124.1](https://github.com/frappe/erpnext/releases/tag/v15.124.1) | 40525 | NetSuite (full), Odoo (full), Sortly (partial), Square Point of Sale (partial) |
-| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.13.50](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.50) signed | 10312 | QuickBooks (partial) |
-| [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.2.4](https://github.com/akaunting/akaunting/releases/tag/3.2.4) | 10207 | QuickBooks (full), Xero (full) |
-| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) | TypeScript | AGPL-3.0 | [v111.48.2](https://github.com/ever-co/ever-gauzy/releases/tag/v111.48.2) signed | 8552 | NetSuite (partial), Harvest (full) |
-| [Dolibarr](https://github.com/Dolibarr/dolibarr) | PHP | GPL-3.0 | [24.0.1](https://github.com/Dolibarr/dolibarr/releases/tag/24.0.1) | 7767 | NetSuite (partial) |
-| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.45](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.45) signed | 3957 | QuickBooks (full), Xero (full) |
+| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 55305 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
+| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v15.124.1](https://github.com/frappe/erpnext/releases/tag/v15.124.1) | 40566 | NetSuite (full), Odoo (full), Sortly (partial), Square Point of Sale (partial) |
+| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.13.50](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.50) signed | 10316 | QuickBooks (partial) |
+| [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.2.4](https://github.com/akaunting/akaunting/releases/tag/3.2.4) | 10211 | QuickBooks (full), Xero (full) |
+| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) | TypeScript | AGPL-3.0 | [v111.48.2](https://github.com/ever-co/ever-gauzy/releases/tag/v111.48.2) signed | 8576 | NetSuite (partial), Harvest (full) |
+| [Dolibarr](https://github.com/Dolibarr/dolibarr) | PHP | GPL-3.0 | [24.0.1](https://github.com/Dolibarr/dolibarr/releases/tag/24.0.1) | 7775 | NetSuite (partial) |
+| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.45](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.45) signed | 3958 | QuickBooks (full), Xero (full) |
 | [metasfresh](https://github.com/metasfresh/metasfresh) | Java | none | [5.175](https://github.com/metasfresh/metasfresh/releases/tag/5.175) | 2457 | NetSuite (partial) |
 | [Apache OFBiz](https://github.com/apache/ofbiz-framework) | Java | Apache-2.0 | [release24.09.08](https://github.com/apache/ofbiz-framework/releases/tag/release24.09.08) | 1141 | NetSuite (partial) |
 | [Axelor Open Suite](https://github.com/axelor/axelor-open-suite) | Java | Other | [v8.5.31](https://github.com/axelor/axelor-open-suite/releases/tag/v8.5.31) | 985 | NetSuite (partial) |

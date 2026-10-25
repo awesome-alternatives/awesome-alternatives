@@ -4,11 +4,11 @@ Turn a machine at home into a server with an app store, storage management and a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37363 | Unraid (partial), Synology DiskStation Manager (partial) |
-| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.0](https://github.com/getumbrel/umbrel/releases/tag/2.0.0) | 12444 | Unraid (partial) |
-| [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.11.0](https://github.com/runtipi/runtipi/releases/tag/v4.11.0) signed | 9698 | Unraid (partial) |
-| [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7023 | Synology DiskStation Manager (partial), Unraid (partial) |
-| [Cosmos](https://github.com/azukaar/Cosmos-Server) | Go | Other | [v0.23.4](https://github.com/azukaar/Cosmos-Server/releases/tag/v0.23.4) | 6182 | Unraid (partial) |
+| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37366 | Unraid (partial), Synology DiskStation Manager (partial) |
+| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.0](https://github.com/getumbrel/umbrel/releases/tag/2.0.0) | 12448 | Unraid (partial) |
+| [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.11.0](https://github.com/runtipi/runtipi/releases/tag/v4.11.0) signed | 9699 | Unraid (partial) |
+| [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7024 | Synology DiskStation Manager (partial), Unraid (partial) |
+| [Cosmos](https://github.com/azukaar/Cosmos-Server) | Go | Other | [v0.23.4](https://github.com/azukaar/Cosmos-Server/releases/tag/v0.23.4) | 6184 | Unraid (partial) |
 | [YunoHost](https://github.com/YunoHost/yunohost) | Python | AGPL-3.0 | [debian/12.1.41.2](https://github.com/YunoHost/yunohost/releases/tag/debian/12.1.41.2) | 2984 | Synology DiskStation Manager (partial) |
 
 [All categories](../README.md#catalog)
