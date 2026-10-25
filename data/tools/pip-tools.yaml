@@ -1,5 +1,5 @@
 name: pip-tools
-repository: https://github.com/jazzband/pip-tools
+repository: https://github.com/pypa/pip-tools
 category: python-packaging
 replaces:
   - tool: pipenv
