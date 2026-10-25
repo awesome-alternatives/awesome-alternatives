@@ -231663,7 +231663,7 @@
     {
       "slug": "pip-tools",
       "name": "pip-tools",
-      "repository": "https://github.com/jazzband/pip-tools",
+      "repository": "https://github.com/pypa/pip-tools",
       "category": "python-packaging",
       "replaces": [
         {
@@ -231680,7 +231680,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T06:34:56.187Z",
-      "editedAt": "2026-10-07T06:37:53.000Z",
+      "editedAt": "2026-10-25T11:10:44.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pypa/pip-tools",
@@ -231712,7 +231712,7 @@
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-09-25T05:17:20.120Z"
+        "since": "2026-09-25T11:11:14.653Z"
       },
       "starHistory": {
         "from": "2026-09-24",
@@ -231770,9 +231770,7 @@
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
