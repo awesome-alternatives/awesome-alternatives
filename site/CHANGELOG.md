@@ -4,6 +4,15 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.138.2] - 2026-10-25
+
+### Bug Fixes
+
+- chore(catalog): refresh convex-chef
+- chore(catalog): refresh convex
+- chore(catalog): refresh librechat
+- chore(catalog): refresh pip-tools
+
 ## [0.138.1] - 2026-10-25
 
 ### Bug Fixes
