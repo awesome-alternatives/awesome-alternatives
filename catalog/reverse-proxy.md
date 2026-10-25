@@ -4,28 +4,28 @@ Serve sites, terminate TLS and route traffic to services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.1](https://github.com/fatedier/frp/releases/tag/v0.71.1) | 110113 | ngrok (partial), Cloudflare Tunnel (partial) |
-| [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.7](https://github.com/caddyserver/caddy/releases/tag/v2.11.7) signed | 78371 | nginx (full) |
-| [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.16](https://github.com/traefik/traefik/releases/tag/v3.7.16) signed | 65356 | nginx (partial), ingress-nginx (full) |
-| [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | TypeScript | MIT | [v2.16.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0) signed | 34526 | Traefik (partial), Caddy (partial) |
-| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.8](https://github.com/nginx/nginx/releases/tag/release-1.31.8) | 31960 | HAProxy (partial) |
-| [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.40.1](https://github.com/envoyproxy/envoy/releases/tag/v1.40.1) | 29129 | nginx (partial) |
-| [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.25.3](https://github.com/fosrl/pangolin/releases/tag/1.25.3) signed | 23205 | Cloudflare Tunnel (full), ngrok (partial) |
-| [ingress-nginx](https://github.com/kubernetes/ingress-nginx) archived | Go | Apache-2.0 | [controller-v1.15.1](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1) signed | 19442 | none |
-| [rathole](https://github.com/rathole-org/rathole) | Rust | Apache-2.0 | [v0.5.0](https://github.com/rathole-org/rathole/releases/tag/v0.5.0) signed | 14376 | ngrok (partial), frp (full) |
+| [frp](https://github.com/fatedier/frp) | Go | Apache-2.0 | [v0.71.1](https://github.com/fatedier/frp/releases/tag/v0.71.1) | 110121 | ngrok (partial), Cloudflare Tunnel (partial) |
+| [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.7](https://github.com/caddyserver/caddy/releases/tag/v2.11.7) signed | 78389 | nginx (full) |
+| [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.16](https://github.com/traefik/traefik/releases/tag/v3.7.16) signed | 65358 | nginx (partial), ingress-nginx (full) |
+| [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | TypeScript | MIT | [v2.16.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0) signed | 34528 | Traefik (partial), Caddy (partial) |
+| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.8](https://github.com/nginx/nginx/releases/tag/release-1.31.8) | 31962 | HAProxy (partial) |
+| [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.40.1](https://github.com/envoyproxy/envoy/releases/tag/v1.40.1) | 29132 | nginx (partial) |
+| [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.25.3](https://github.com/fosrl/pangolin/releases/tag/1.25.3) signed | 23208 | Cloudflare Tunnel (full), ngrok (partial) |
+| [ingress-nginx](https://github.com/kubernetes/ingress-nginx) archived | Go | Apache-2.0 | [controller-v1.15.1](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1) signed | 19443 | none |
+| [rathole](https://github.com/rathole-org/rathole) | Rust | Apache-2.0 | [v0.5.0](https://github.com/rathole-org/rathole/releases/tag/v0.5.0) signed | 14378 | ngrok (partial), frp (full) |
 | [OpenResty](https://github.com/openresty/openresty) | C | Other | [v1.27.1.2](https://github.com/openresty/openresty/releases/tag/v1.27.1.2) | 14094 | nginx (drop-in) |
 | [Tengine](https://github.com/alibaba/tengine) | C | BSD-2-Clause | [3.1.0](https://github.com/alibaba/tengine/releases/tag/3.1.0) signed | 13406 | nginx (drop-in) |
-| [Nginx UI](https://github.com/0xJacky/nginx-ui) | Go | AGPL-3.0 | [v2.9.1](https://github.com/0xJacky/nginx-ui/releases/tag/v2.9.1) signed | 11665 | Nginx Proxy Manager (partial) |
+| [Nginx UI](https://github.com/0xJacky/nginx-ui) | Go | AGPL-3.0 | [v2.9.1](https://github.com/0xJacky/nginx-ui/releases/tag/v2.9.1) signed | 11666 | Nginx Proxy Manager (partial) |
 | [H2O](https://github.com/h2o/h2o) | C | MIT | [tag-no-more-releases](https://github.com/h2o/h2o/releases/tag/tag-no-more-releases) | 11552 | nginx (partial) |
-| [FrankenPHP](https://github.com/php/frankenphp) | Go | MIT | [v1.13.3](https://github.com/php/frankenphp/releases/tag/v1.13.3) | 11461 | nginx (partial) |
-| [BunkerWeb](https://github.com/bunkerity/bunkerweb) | Python | AGPL-3.0 | [v1.6.17](https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.17) signed | 11111 | Cloudflare WAF (partial), ModSecurity (partial) |
+| [FrankenPHP](https://github.com/php/frankenphp) | Go | MIT | [v1.13.3](https://github.com/php/frankenphp/releases/tag/v1.13.3) | 11462 | nginx (partial) |
+| [BunkerWeb](https://github.com/bunkerity/bunkerweb) | Python | AGPL-3.0 | [v1.6.17](https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.17) signed | 11112 | Cloudflare WAF (partial), ModSecurity (partial) |
 | [HAProxy](https://github.com/haproxy/haproxy) | C | Other | [v3.4.0](https://github.com/haproxy/haproxy/releases/tag/v3.4.0) | 6945 | nginx (partial) |
 | [Zoraxy](https://github.com/tobychui/zoraxy) | HTML | AGPL-3.0 | [v3.3.5-rc4](https://github.com/tobychui/zoraxy/releases/tag/v3.3.5-rc4) signed | 5543 | Nginx Proxy Manager (full) |
 | [sish](https://github.com/antoniomika/sish) | Go | MIT | [v3.0.4](https://github.com/antoniomika/sish/releases/tag/v3.0.4) | 4800 | ngrok (full) |
-| [zrok](https://github.com/openziti/zrok) | Go | Apache-2.0 | [v2.0.8](https://github.com/openziti/zrok/releases/tag/v2.0.8) signed | 4784 | ngrok (full), Cloudflare Tunnel (partial) |
+| [zrok](https://github.com/openziti/zrok) | Go | Apache-2.0 | [v2.0.8](https://github.com/openziti/zrok/releases/tag/v2.0.8) signed | 4786 | ngrok (full), Cloudflare Tunnel (partial) |
 | [Keepalived](https://github.com/acassen/keepalived) | C | GPL-2.0 | [v2.4.3](https://github.com/acassen/keepalived/releases/tag/v2.4.3) | 4729 | none |
 | [Emissary-ingress](https://github.com/emissary-ingress/emissary) | Python | Apache-2.0 | [v4.1.0](https://github.com/emissary-ingress/emissary/releases/tag/v4.1.0) signed | 4521 | ingress-nginx (full), Kong Gateway (partial) |
-| [Octelium](https://github.com/octelium/octelium) | Go | AGPL-3.0 | [v0.47.0](https://github.com/octelium/octelium/releases/tag/v0.47.0) | 4120 | Cloudflare Tunnel (partial) |
+| [Octelium](https://github.com/octelium/octelium) | Go | AGPL-3.0 | [v0.47.0](https://github.com/octelium/octelium/releases/tag/v0.47.0) | 4122 | Cloudflare Tunnel (partial) |
 | [Apache HTTP Server](https://github.com/apache/httpd) | C | Apache-2.0 | [2.4.69](https://github.com/apache/httpd/releases/tag/2.4.69) | 4032 | none |
 | [Contour](https://github.com/projectcontour/contour) | HTML | Apache-2.0 | [v1.33.7](https://github.com/projectcontour/contour/releases/tag/v1.33.7) | 3954 | ingress-nginx (full) |
 | [Sōzu](https://github.com/sozu-proxy/sozu) | Rust | AGPL-3.0 | [2.3.3](https://github.com/sozu-proxy/sozu/releases/tag/2.3.3) | 3751 | HAProxy (partial) |

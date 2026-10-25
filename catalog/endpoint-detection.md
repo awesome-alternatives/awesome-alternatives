@@ -4,7 +4,7 @@ Query laptops and servers, hunt for threats on them and collect forensic evidenc
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [osquery](https://github.com/osquery/osquery) | C++ | Other | [5.23.1](https://github.com/osquery/osquery/releases/tag/5.23.1) | 23672 | CrowdStrike Falcon (partial) |
+| [osquery](https://github.com/osquery/osquery) | C++ | Other | [5.23.1](https://github.com/osquery/osquery/releases/tag/5.23.1) | 23674 | CrowdStrike Falcon (partial) |
 | [GRR Rapid Response](https://github.com/google/grr) | Python | Apache-2.0 | [v.4.0.0.0-release](https://github.com/google/grr/releases/tag/v.4.0.0.0-release) signed | 5106 | Velociraptor (full), CrowdStrike Falcon (partial) |
 | [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4374 | CrowdStrike Falcon (partial) |
 | [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.17.1](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.17.1) signed | 3698 | Splunk (partial) |

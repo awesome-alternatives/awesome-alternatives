@@ -5,13 +5,13 @@ Desktop, mobile and web apps for Matrix, XMPP and IRC.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.32](https://github.com/element-hq/element-web/releases/tag/v1.12.32) signed | 13612 | Slack (partial), Discord (partial) |
-| [The Lounge](https://github.com/thelounge/thelounge) | TypeScript | MIT | [v4.5.2](https://github.com/thelounge/thelounge/releases/tag/v4.5.2) | 6359 | IRCCloud (full) |
+| [The Lounge](https://github.com/thelounge/thelounge) | TypeScript | MIT | [v4.5.2](https://github.com/thelounge/thelounge/releases/tag/v4.5.2) | 6360 | IRCCloud (full) |
 | [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4747 | Rambox (full) |
-| [Halloy](https://github.com/squidowl/halloy) | Rust | GPL-3.0 | [2026.9](https://github.com/squidowl/halloy/releases/tag/2026.9) signed | 4561 | none |
-| [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.7](https://github.com/cinnyapp/cinny/releases/tag/v4.12.7) signed | 3946 | Slack (partial), Discord (partial) |
+| [Halloy](https://github.com/squidowl/halloy) | Rust | GPL-3.0 | [2026.9](https://github.com/squidowl/halloy/releases/tag/2026.9) signed | 4563 | none |
+| [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.7](https://github.com/cinnyapp/cinny/releases/tag/v4.12.7) signed | 3947 | Slack (partial), Discord (partial) |
 | [WeeChat](https://github.com/weechat/weechat) | C | GPL-3.0 | [v4.10.1](https://github.com/weechat/weechat/releases/tag/v4.10.1) | 3413 | Irssi (full) |
 | [Converse.js](https://github.com/conversejs/converse.js) | JavaScript | MPL-2.0 | [v14.0.1](https://github.com/conversejs/converse.js/releases/tag/v14.0.1) signed | 3300 | none |
-| [FluffyChat](https://github.com/krille-chan/fluffychat) | Dart | AGPL-3.0 | [v2.11.3](https://github.com/krille-chan/fluffychat/releases/tag/v2.11.3) signed | 3225 | WhatsApp (partial) |
+| [FluffyChat](https://github.com/krille-chan/fluffychat) | Dart | AGPL-3.0 | [v2.11.3](https://github.com/krille-chan/fluffychat/releases/tag/v2.11.3) signed | 3226 | WhatsApp (partial) |
 | [Irssi](https://github.com/irssi/irssi) | C | Other | [1.4.5](https://github.com/irssi/irssi/releases/tag/1.4.5) | 3160 | none |
 | [Nheko](https://github.com/Nheko-Reborn/nheko) | C++ | GPL-3.0 | [v0.12.1](https://github.com/Nheko-Reborn/nheko/releases/tag/v0.12.1) signed | 2514 | Slack (partial) |
 | [Dino](https://github.com/dino/dino) | Vala | GPL-3.0 | [v0.5.1](https://github.com/dino/dino/releases/tag/v0.5.1) | 2502 | WhatsApp (partial) |

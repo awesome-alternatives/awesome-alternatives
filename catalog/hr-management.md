@@ -4,7 +4,7 @@ Employee records, leave, recruitment and payroll.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Frappe HR](https://github.com/frappe/hrms) | Python | GPL-3.0 | [v16.52.0](https://github.com/frappe/hrms/releases/tag/v16.52.0) | 8959 | BambooHR (full) |
+| [Frappe HR](https://github.com/frappe/hrms) | Python | GPL-3.0 | [v16.52.0](https://github.com/frappe/hrms/releases/tag/v16.52.0) | 8961 | BambooHR (full) |
 | [Horilla](https://github.com/horilla/horilla-hr) | HTML | LGPL-2.1 | [2.2.0](https://github.com/horilla/horilla-hr/releases/tag/2.2.0) | 1470 | BambooHR (full) |
 | [OrangeHRM](https://github.com/orangehrm/orangehrm) | PHP | GPL-3.0 | [v5.9](https://github.com/orangehrm/orangehrm/releases/tag/v5.9) signed | 1156 | BambooHR (partial) |
 | [OpenCATS](https://github.com/opencats/OpenCATS) | PHP | Other | [v0.12.0](https://github.com/opencats/OpenCATS/releases/tag/v0.12.0) | 767 | Greenhouse (partial) |

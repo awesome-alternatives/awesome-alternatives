@@ -6,9 +6,9 @@ Run background jobs from Python through a broker.
 |---|---|---|---|---:|---|
 | [Celery](https://github.com/celery/celery) | Python | Other | [v5.7.0rc1](https://github.com/celery/celery/releases/tag/v5.7.0rc1) | 29056 | none |
 | [RQ](https://github.com/rq/rq) | Python | Other | [v2.12](https://github.com/rq/rq/releases/tag/v2.12) | 10699 | Celery (partial) |
-| [Hatchet](https://github.com/hatchet-dev/hatchet) | Go | MIT | [v0.110.5](https://github.com/hatchet-dev/hatchet/releases/tag/v0.110.5) | 8180 | Celery (partial) |
-| [huey](https://github.com/coleifer/huey) | Python | MIT | [3.5.3](https://github.com/coleifer/huey/releases/tag/3.5.3) | 6054 | Celery (partial) |
-| [Dramatiq](https://github.com/Bogdanp/dramatiq) | Python | LGPL-3.0 | [v2.2.1](https://github.com/Bogdanp/dramatiq/releases/tag/v2.2.1) signed | 5330 | Celery (full) |
+| [Hatchet](https://github.com/hatchet-dev/hatchet) | Go | MIT | [v0.110.5](https://github.com/hatchet-dev/hatchet/releases/tag/v0.110.5) | 8179 | Celery (partial) |
+| [huey](https://github.com/coleifer/huey) | Python | MIT | [3.5.3](https://github.com/coleifer/huey/releases/tag/3.5.3) | 6055 | Celery (partial) |
+| [Dramatiq](https://github.com/Bogdanp/dramatiq) | Python | LGPL-3.0 | [v2.2.1](https://github.com/Bogdanp/dramatiq/releases/tag/v2.2.1) signed | 5331 | Celery (full) |
 | [arq](https://github.com/python-arq/arq) | Python | MIT | [v0.28.0](https://github.com/python-arq/arq/releases/tag/v0.28.0) | 3018 | Celery (partial) |
 
 [All categories](../README.md#catalog)

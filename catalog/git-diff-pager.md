@@ -4,7 +4,7 @@ Make git diff output readable in a terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [delta](https://github.com/dandavison/delta) | Rust | MIT | [0.20.1](https://github.com/dandavison/delta/releases/tag/0.20.1) | 32574 | diff-so-fancy (full) |
+| [delta](https://github.com/dandavison/delta) | Rust | MIT | [0.20.1](https://github.com/dandavison/delta/releases/tag/0.20.1) | 32577 | diff-so-fancy (full) |
 | [Difftastic](https://github.com/Wilfred/difftastic) | Rust | MIT | [0.71.0](https://github.com/Wilfred/difftastic/releases/tag/0.71.0) | 26057 | diff-so-fancy (partial) |
 | [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Perl | MIT | [v1.4.14](https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.14) signed | 18103 | none |
 | [icdiff](https://github.com/jeffkaufman/icdiff) | Python | Other | [release-2.0.10](https://github.com/jeffkaufman/icdiff/releases/tag/release-2.0.10) | 4390 | diff-so-fancy (partial) |

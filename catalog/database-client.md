@@ -5,26 +5,26 @@ Desktop and web clients to browse, edit and query databases.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [DBeaver](https://github.com/dbeaver/dbeaver) | Java | Apache-2.0 | [26.2.3](https://github.com/dbeaver/dbeaver/releases/tag/26.2.3) | 52193 | TablePlus (full), DataGrip (full), Navicat (full) |
-| [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager) | JavaScript | MIT | [v1.7.4](https://github.com/qishibo/AnotherRedisDesktopManager/releases/tag/v1.7.4) | 34820 | Redis Insight (full) |
-| [Chat2DB](https://github.com/OtterMind/Chat2DB) | Java | Other | [v5.3.8](https://github.com/OtterMind/Chat2DB/releases/tag/v5.3.8) | 28334 | Navicat (partial) |
-| [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) | C++ | Other | [v3.13.1](https://github.com/sqlitebrowser/sqlitebrowser/releases/tag/v3.13.1) signed | 24740 | Navicat (partial) |
-| [Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio) | TypeScript | Other | [v6.1.6](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v6.1.6) | 23791 | TablePlus (full), DataGrip (partial) |
-| [pgcli](https://github.com/dbcli/pgcli) | Python | BSD-3-Clause | [v4.7.1](https://github.com/dbcli/pgcli/releases/tag/v4.7.1) | 13423 | pgAdmin 4 (partial) |
-| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | Vue | GPL-3.0 | [v1.2.7](https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7) signed | 13141 | Redis Insight (full), Another Redis Desktop Manager (full) |
-| [mycli](https://github.com/dbcli/mycli) | Python | BSD-3-Clause | [v2.30.1](https://github.com/dbcli/mycli/releases/tag/v2.30.1) signed | 11985 | MySQL Workbench (partial) |
+| [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager) | JavaScript | MIT | [v1.7.4](https://github.com/qishibo/AnotherRedisDesktopManager/releases/tag/v1.7.4) | 34821 | Redis Insight (full) |
+| [Chat2DB](https://github.com/OtterMind/Chat2DB) | Java | Other | [v5.3.8](https://github.com/OtterMind/Chat2DB/releases/tag/v5.3.8) | 28333 | Navicat (partial) |
+| [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) | C++ | Other | [v3.13.1](https://github.com/sqlitebrowser/sqlitebrowser/releases/tag/v3.13.1) signed | 24739 | Navicat (partial) |
+| [Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio) | TypeScript | Other | [v6.1.6](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v6.1.6) | 23792 | TablePlus (full), DataGrip (partial) |
+| [pgcli](https://github.com/dbcli/pgcli) | Python | BSD-3-Clause | [v4.7.1](https://github.com/dbcli/pgcli/releases/tag/v4.7.1) | 13424 | pgAdmin 4 (partial) |
+| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | Vue | GPL-3.0 | [v1.2.7](https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7) signed | 13144 | Redis Insight (full), Another Redis Desktop Manager (full) |
+| [mycli](https://github.com/dbcli/mycli) | Python | BSD-3-Clause | [v2.30.1](https://github.com/dbcli/mycli/releases/tag/v2.30.1) signed | 11986 | MySQL Workbench (partial) |
 | [Datasette](https://github.com/simonw/datasette) | Python | Apache-2.0 | [0.65.5](https://github.com/simonw/datasette/releases/tag/0.65.5) | 11522 | none |
 | [usql](https://github.com/xo/usql) | Go | MIT | [v0.21.6](https://github.com/xo/usql/releases/tag/v0.21.6) | 10162 | DataGrip (partial) |
 | [Redis Insight](https://github.com/redis/RedisInsight) | TypeScript | Other | [3.8.0](https://github.com/redis/RedisInsight/releases/tag/3.8.0) signed | 8916 | Another Redis Desktop Manager (full) |
-| [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin) | PHP | GPL-2.0 | [RELEASE_5_2_3](https://github.com/phpmyadmin/phpmyadmin/releases/tag/RELEASE_5_2_3) signed | 7958 | Navicat (partial) |
-| [Adminer](https://github.com/vrana/adminer) | PHP | Other | [v6.2.0](https://github.com/vrana/adminer/releases/tag/v6.2.0) | 7928 | TablePlus (partial) |
-| [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) | Objective-C | Other | [production/6.0.3-20116](https://github.com/Sequel-Ace/Sequel-Ace/releases/tag/production/6.0.3-20116) signed | 7555 | TablePlus (partial) |
-| [DbGate](https://github.com/dbgate/dbgate) | JavaScript | GPL-3.0 | [v7.3.2](https://github.com/dbgate/dbgate/releases/tag/v7.3.2) | 7345 | TablePlus (full), DataGrip (partial), Navicat (partial), Studio 3T (partial) |
+| [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin) | PHP | GPL-2.0 | [RELEASE_5_2_3](https://github.com/phpmyadmin/phpmyadmin/releases/tag/RELEASE_5_2_3) signed | 7959 | Navicat (partial) |
+| [Adminer](https://github.com/vrana/adminer) | PHP | Other | [v6.2.0](https://github.com/vrana/adminer/releases/tag/v6.2.0) | 7929 | TablePlus (partial) |
+| [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) | Objective-C | Other | [production/6.0.3-20116](https://github.com/Sequel-Ace/Sequel-Ace/releases/tag/production/6.0.3-20116) signed | 7556 | TablePlus (partial) |
+| [DbGate](https://github.com/dbgate/dbgate) | JavaScript | GPL-3.0 | [v7.3.2](https://github.com/dbgate/dbgate/releases/tag/v7.3.2) | 7346 | TablePlus (full), DataGrip (partial), Navicat (partial), Studio 3T (partial) |
 | [Harlequin](https://github.com/tconbeer/harlequin) | Python | MIT | [v2.16.2](https://github.com/tconbeer/harlequin/releases/tag/v2.16.2) signed | 6484 | DataGrip (partial) |
-| [mongo-express](https://github.com/mongo-express/mongo-express) | JavaScript | MIT | [v1.1.0-rc-4](https://github.com/mongo-express/mongo-express/releases/tag/v1.1.0-rc-4) signed | 5987 | Studio 3T (partial) |
-| [rainfrog](https://github.com/achristmascarl/rainfrog) | Rust | MIT | [v0.4.6](https://github.com/achristmascarl/rainfrog/releases/tag/v0.4.6) signed | 5384 | DataGrip (partial), TablePlus (partial) |
-| [CloudBeaver](https://github.com/dbeaver/cloudbeaver) | TypeScript | Apache-2.0 | [25.3.5](https://github.com/dbeaver/cloudbeaver/releases/tag/25.3.5) | 5202 | TablePlus (partial), DataGrip (partial) |
-| [WhoDB](https://github.com/clidey/whodb) | Go | Apache-2.0 | [0.136.0](https://github.com/clidey/whodb/releases/tag/0.136.0) | 5041 | TablePlus (partial) |
-| [lazysql](https://github.com/jorgerojas26/lazysql) | Go | MIT | [v0.7.0](https://github.com/jorgerojas26/lazysql/releases/tag/v0.7.0) | 4387 | TablePlus (partial) |
+| [mongo-express](https://github.com/mongo-express/mongo-express) | JavaScript | MIT | [v1.1.0-rc-4](https://github.com/mongo-express/mongo-express/releases/tag/v1.1.0-rc-4) signed | 5989 | Studio 3T (partial) |
+| [rainfrog](https://github.com/achristmascarl/rainfrog) | Rust | MIT | [v0.4.6](https://github.com/achristmascarl/rainfrog/releases/tag/v0.4.6) signed | 5385 | DataGrip (partial), TablePlus (partial) |
+| [CloudBeaver](https://github.com/dbeaver/cloudbeaver) | TypeScript | Apache-2.0 | [25.3.5](https://github.com/dbeaver/cloudbeaver/releases/tag/25.3.5) | 5203 | TablePlus (partial), DataGrip (partial) |
+| [WhoDB](https://github.com/clidey/whodb) | Go | Apache-2.0 | [0.136.0](https://github.com/clidey/whodb/releases/tag/0.136.0) | 5042 | TablePlus (partial) |
+| [lazysql](https://github.com/jorgerojas26/lazysql) | Go | MIT | [v0.7.0](https://github.com/jorgerojas26/lazysql/releases/tag/v0.7.0) | 4388 | TablePlus (partial) |
 | [pgAdmin 4](https://github.com/pgadmin-org/pgadmin4) | Python | Other | [REL-9_18](https://github.com/pgadmin-org/pgadmin4/releases/tag/REL-9_18) signed | 3909 | DataGrip (partial) |
 | [litecli](https://github.com/dbcli/litecli) | Python | BSD-3-Clause | [v1.17.1](https://github.com/dbcli/litecli/releases/tag/v1.17.1) | 3317 | DB Browser for SQLite (partial) |
 | [MongoDB Compass](https://github.com/mongodb-js/compass) | TypeScript | Other | [v1.53.1](https://github.com/mongodb-js/compass/releases/tag/v1.53.1) | 1497 | Studio 3T (partial) |

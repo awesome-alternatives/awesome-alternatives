@@ -6,7 +6,7 @@ Distributed databases storing wide, sparse rows partitioned across nodes.
 |---|---|---|---|---:|---|
 | [ScyllaDB](https://github.com/scylladb/scylladb) | C++ | Other | [scylla-2026.3.4](https://github.com/scylladb/scylladb/releases/tag/scylla-2026.3.4) | 15802 | Apache Cassandra (drop-in), Amazon Keyspaces (drop-in), Amazon DynamoDB (partial), Astra DB (full) |
 | [Apache Cassandra](https://github.com/apache/cassandra) | Java | Apache-2.0 | [cassandra-5.0.9](https://github.com/apache/cassandra/releases/tag/cassandra-5.0.9) | 10117 | Amazon Keyspaces (drop-in), Astra DB (full), Amazon DynamoDB (partial), Bigtable (partial) |
-| [Apache HBase](https://github.com/apache/hbase) | Java | Apache-2.0 | [rel/3.0.0](https://github.com/apache/hbase/releases/tag/rel/3.0.0) signed | 5567 | Bigtable (full) |
+| [Apache HBase](https://github.com/apache/hbase) | Java | Apache-2.0 | [rel/3.0.0](https://github.com/apache/hbase/releases/tag/rel/3.0.0) signed | 5568 | Bigtable (full) |
 | [Apache Accumulo](https://github.com/apache/accumulo) | Java | Apache-2.0 | [rel/3.0.0](https://github.com/apache/accumulo/releases/tag/rel/3.0.0) signed | 1182 | Bigtable (full) |
 
 [All categories](../README.md#catalog)

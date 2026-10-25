@@ -6,7 +6,7 @@ Collect, enrich and share indicators of compromise and knowledge about threats.
 |---|---|---|---|---:|---|
 | [OpenCTI](https://github.com/OpenCTI-Platform/opencti) | TypeScript | Other | [7.261023.1](https://github.com/OpenCTI-Platform/opencti/releases/tag/7.261023.1) signed | 10198 | Recorded Future (partial), Anomali ThreatStream (partial) |
 | [MISP](https://github.com/MISP/MISP) | PHP | AGPL-3.0 | [v2.5.50](https://github.com/MISP/MISP/releases/tag/v2.5.50) signed | 6618 | Anomali ThreatStream (partial) |
-| [IntelOwl](https://github.com/intelowlproject/IntelOwl) | Python | AGPL-3.0 | [v6.8.0](https://github.com/intelowlproject/IntelOwl/releases/tag/v6.8.0) signed | 4766 | Recorded Future (partial) |
+| [IntelOwl](https://github.com/intelowlproject/IntelOwl) | Python | AGPL-3.0 | [v6.8.0](https://github.com/intelowlproject/IntelOwl/releases/tag/v6.8.0) signed | 4767 | Recorded Future (partial) |
 | [Yeti](https://github.com/yeti-platform/yeti) | Python | Apache-2.0 | [2.12.0](https://github.com/yeti-platform/yeti/releases/tag/2.12.0) signed | 2041 | Anomali ThreatStream (partial) |
 
 [All categories](../README.md#catalog)
