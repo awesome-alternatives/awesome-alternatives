@@ -4,27 +4,27 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ShellCheck](https://github.com/koalaman/shellcheck) | Haskell | GPL-3.0 | [v0.11.0](https://github.com/koalaman/shellcheck/releases/tag/v0.11.0) | 40234 | none |
-| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19775 | none |
+| [ShellCheck](https://github.com/koalaman/shellcheck) | Haskell | GPL-3.0 | [v0.11.0](https://github.com/koalaman/shellcheck/releases/tag/v0.11.0) | 40239 | none |
+| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19774 | none |
 | [golangci-lint](https://github.com/golangci/golangci-lint) | Go | GPL-3.0 | [v2.15.0](https://github.com/golangci/golangci-lint/releases/tag/v2.15.0) signed | 19469 | Staticcheck (full), revive (full) |
-| [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.2](https://github.com/phpstan/phpstan/releases/tag/2.3.2) | 14139 | Psalm (full) |
+| [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.2](https://github.com/phpstan/phpstan/releases/tag/2.3.2) | 14141 | Psalm (full) |
 | [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.27](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.27) signed | 13569 | PHP_CodeSniffer (partial) |
-| [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.92.1](https://github.com/rubocop/rubocop/releases/tag/v1.92.1) | 12917 | none |
-| [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12493 | none |
-| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9991 | SQL Formatter (partial), sqlfmt (partial) |
-| [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.3.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.3.0) | 9619 | SonarQube Community Build (partial) |
+| [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.92.1](https://github.com/rubocop/rubocop/releases/tag/v1.92.1) | 12919 | none |
+| [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12496 | none |
+| [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.4.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.4.0) signed | 9993 | SQL Formatter (partial), sqlfmt (partial) |
+| [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.3.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.3.0) | 9621 | SonarQube Community Build (partial) |
 | [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9153 | none |
-| [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.64.1](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.64.1) | 8950 | none |
+| [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.64.2](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.64.2) | 8949 | none |
 | [detekt](https://github.com/detekt/detekt) | Kotlin | Apache-2.0 | [v1.23.8](https://github.com/detekt/detekt/releases/tag/v1.23.8) signed | 7103 | SonarQube Community Build (partial) |
 | [Staticcheck](https://github.com/dominikh/go-tools) | Go | MIT | [2026.2.2](https://github.com/dominikh/go-tools/releases/tag/2026.2.2) signed | 6915 | golangci-lint (partial) |
-| [ktlint](https://github.com/ktlint/ktlint) | Kotlin | MIT | [1.8.0](https://github.com/ktlint/ktlint/releases/tag/1.8.0) signed | 6766 | none |
-| [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.0](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.0) | 6395 | none |
+| [ktlint](https://github.com/ktlint/ktlint) | Kotlin | MIT | [1.8.0](https://github.com/ktlint/ktlint/releases/tag/1.8.0) signed | 6768 | none |
+| [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.0](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.0) | 6396 | none |
 | [google-java-format](https://github.com/google/google-java-format) | Java | Other | [v1.37.0](https://github.com/google/google-java-format/releases/tag/v1.37.0) | 6217 | none |
 | [Psalm](https://github.com/vimeo/psalm) | PHP | MIT | [6.20.1](https://github.com/vimeo/psalm/releases/tag/6.20.1) signed | 5902 | PHPStan (full) |
 | [revive](https://github.com/revive-lint/revive) | Go | MIT | [v1.17.1](https://github.com/revive-lint/revive/releases/tag/v1.17.1) signed | 5556 | golangci-lint (partial) |
 | [PMD](https://github.com/pmd/pmd) | Java | Other | [pmd_releases/7.28.0](https://github.com/pmd/pmd/releases/tag/pmd_releases/7.28.0) signed | 5518 | SonarQube Community Build (partial) |
-| [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4348 | none |
-| [typos](https://github.com/crate-ci/typos) | Rust | Apache-2.0 | [v1.51.1](https://github.com/crate-ci/typos/releases/tag/v1.51.1) | 4196 | codespell (full) |
+| [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4349 | none |
+| [typos](https://github.com/crate-ci/typos) | Rust | Apache-2.0 | [v1.51.1](https://github.com/crate-ci/typos/releases/tag/v1.51.1) | 4197 | codespell (full) |
 | [SpotBugs](https://github.com/spotbugs/spotbugs) | Java | LGPL-2.1 | [4.10.5](https://github.com/spotbugs/spotbugs/releases/tag/4.10.5) signed | 3963 | SonarQube Community Build (partial) |
 | [yamllint](https://github.com/adrienverge/yamllint) | Python | GPL-3.0 | [v1.38.0](https://github.com/adrienverge/yamllint/releases/tag/v1.38.0) | 3481 | none |
 | [Standard Ruby](https://github.com/standardrb/standard) | Ruby | Other | [v1.31.0](https://github.com/standardrb/standard/releases/tag/v1.31.0) | 2928 | RuboCop (partial) |
@@ -35,9 +35,9 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) | PHP | BSD-3-Clause | [4.0.4](https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/tag/4.0.4) signed | 1564 | PHP CS Fixer (partial) |
 | [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) | JavaScript | MIT | [v0.50.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.50.0) | 1101 | none |
 | [treefmt](https://github.com/numtide/treefmt) | Go | MIT | [v2.6.0](https://github.com/numtide/treefmt/releases/tag/v2.6.0) signed | 1085 | none |
-| [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) | JavaScript | MIT | [v0.24.0](https://github.com/DavidAnson/markdownlint-cli2/releases/tag/v0.24.0) | 957 | markdownlint-cli (full) |
+| [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) | JavaScript | MIT | [v0.24.0](https://github.com/DavidAnson/markdownlint-cli2/releases/tag/v0.24.0) | 959 | markdownlint-cli (full) |
 | [Topiary](https://github.com/topiary/topiary) | Rust | MIT | [v0.8.0](https://github.com/topiary/topiary/releases/tag/v0.8.0) signed | 876 | none |
-| [selene](https://github.com/Kampfkarren/selene) | Rust | MPL-2.0 | [0.32.0](https://github.com/Kampfkarren/selene/releases/tag/0.32.0) | 835 | none |
+| [selene](https://github.com/Kampfkarren/selene) | Rust | MPL-2.0 | [0.32.0](https://github.com/Kampfkarren/selene/releases/tag/0.32.0) | 833 | none |
 | [sqlfmt](https://github.com/tconbeer/sqlfmt) | Python | Other | [v0.32.0](https://github.com/tconbeer/sqlfmt/releases/tag/v0.32.0) signed | 551 | SQL Formatter (full) |
 
 [All categories](../README.md#catalog)

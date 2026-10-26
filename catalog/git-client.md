@@ -4,22 +4,22 @@ Stage, commit, branch, browse and rewrite history outside the bare git command, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [lazygit](https://github.com/jesseduffield/lazygit) | Go | MIT | [v0.66.2](https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2) | 83407 | GitKraken (partial), Sourcetree (partial), tig (full) |
-| [Jujutsu](https://github.com/jj-vcs/jj) | Rust | Apache-2.0 | [v0.46.0](https://github.com/jj-vcs/jj/releases/tag/v0.46.0) | 32232 | Git (partial) |
-| [GitUI](https://github.com/gitui-org/gitui) | Rust | MIT | [v0.28.1](https://github.com/gitui-org/gitui/releases/tag/v0.28.1) | 22594 | GitKraken (partial), tig (full) |
-| [GitHub Desktop](https://github.com/desktop/desktop) | TypeScript | MIT | [release-3.6.7](https://github.com/desktop/desktop/releases/tag/release-3.6.7) | 22007 | GitKraken (partial), Sourcetree (partial) |
-| [GitButler](https://github.com/gitbutlerapp/gitbutler) | Rust | Other | [release/0.22.3](https://github.com/gitbutlerapp/gitbutler/releases/tag/release/0.22.3) signed | 21849 | GitKraken (partial) |
+| [lazygit](https://github.com/jesseduffield/lazygit) | Go | MIT | [v0.66.2](https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2) | 83421 | GitKraken (partial), Sourcetree (partial), tig (full) |
+| [Jujutsu](https://github.com/jj-vcs/jj) | Rust | Apache-2.0 | [v0.46.0](https://github.com/jj-vcs/jj/releases/tag/v0.46.0) | 32242 | Git (partial) |
+| [GitUI](https://github.com/gitui-org/gitui) | Rust | MIT | [v0.28.1](https://github.com/gitui-org/gitui/releases/tag/v0.28.1) | 22596 | GitKraken (partial), tig (full) |
+| [GitHub Desktop](https://github.com/desktop/desktop) | TypeScript | MIT | [release-3.6.7](https://github.com/desktop/desktop/releases/tag/release-3.6.7) | 22015 | GitKraken (partial), Sourcetree (partial) |
+| [GitButler](https://github.com/gitbutlerapp/gitbutler) | Rust | Other | [release/0.22.3](https://github.com/gitbutlerapp/gitbutler/releases/tag/release/0.22.3) signed | 21855 | GitKraken (partial) |
 | [git-extras](https://github.com/tj/git-extras) | Shell | MIT | [7.5.0](https://github.com/tj/git-extras/releases/tag/7.5.0) signed | 18125 | none |
-| [git filter-repo](https://github.com/newren/git-filter-repo) | Python | Other | [v2.47.0](https://github.com/newren/git-filter-repo/releases/tag/v2.47.0) | 13443 | Git (partial) |
-| [tig](https://github.com/jonas/tig) | C | GPL-2.0 | [tig-2.6.1](https://github.com/jonas/tig/releases/tag/tig-2.6.1) signed | 13368 | Sourcetree (partial), GitKraken (partial) |
+| [git filter-repo](https://github.com/newren/git-filter-repo) | Python | Other | [v2.47.0](https://github.com/newren/git-filter-repo/releases/tag/v2.47.0) | 13442 | Git (partial) |
+| [tig](https://github.com/jonas/tig) | C | GPL-2.0 | [tig-2.6.1](https://github.com/jonas/tig/releases/tag/tig-2.6.1) signed | 13369 | Sourcetree (partial), GitKraken (partial) |
 | [ungit](https://github.com/FredrikNoren/ungit) | JavaScript | MIT | [v1.5.30](https://github.com/FredrikNoren/ungit/releases/tag/v1.5.30) | 10613 | Sourcetree (partial) |
-| [Magit](https://github.com/magit/magit) | Emacs Lisp | GPL-3.0 | [v4.7.1](https://github.com/magit/magit/releases/tag/v4.7.1) signed | 7244 | GitKraken (partial), Sourcetree (partial) |
-| [Sapling](https://github.com/facebook/sapling) | Rust | GPL-2.0 | [0.2.20260929-102736+288e0c2d](https://github.com/facebook/sapling/releases/tag/0.2.20260929-102736%2B288e0c2d) | 7203 | Git (partial) |
-| [SourceGit](https://github.com/sourcegit-scm/sourcegit) | C# | MIT | [v2026.22](https://github.com/sourcegit-scm/sourcegit/releases/tag/v2026.22) signed | 6233 | Sourcetree (full), GitKraken (partial) |
-| [gitu](https://github.com/altsem/gitu) | Rust | MIT | [v0.43.0](https://github.com/altsem/gitu/releases/tag/v0.43.0) | 2939 | Magit (partial) |
-| [Gitnuro](https://github.com/JetpackDuba/Gitnuro) | Kotlin | GPL-3.0 | [v1.5.0](https://github.com/JetpackDuba/Gitnuro/releases/tag/v1.5.0) | 2818 | GitKraken (partial) |
-| [Git Cola](https://github.com/git-cola/git-cola) | Python | GPL-2.0 | [v4.19.0](https://github.com/git-cola/git-cola/releases/tag/v4.19.0) signed | 2584 | Sourcetree (full) |
+| [Magit](https://github.com/magit/magit) | Emacs Lisp | GPL-3.0 | [v4.7.1](https://github.com/magit/magit/releases/tag/v4.7.1) signed | 7246 | GitKraken (partial), Sourcetree (partial) |
+| [Sapling](https://github.com/facebook/sapling) | Rust | GPL-2.0 | [0.2.20260929-102736+288e0c2d](https://github.com/facebook/sapling/releases/tag/0.2.20260929-102736%2B288e0c2d) | 7206 | Git (partial) |
+| [SourceGit](https://github.com/sourcegit-scm/sourcegit) | C# | MIT | [v2026.23](https://github.com/sourcegit-scm/sourcegit/releases/tag/v2026.23) signed | 6239 | Sourcetree (full), GitKraken (partial) |
+| [gitu](https://github.com/altsem/gitu) | Rust | MIT | [v0.43.0](https://github.com/altsem/gitu/releases/tag/v0.43.0) | 2940 | Magit (partial) |
+| [Gitnuro](https://github.com/JetpackDuba/Gitnuro) | Kotlin | GPL-3.0 | [2.0.0](https://github.com/JetpackDuba/Gitnuro/releases/tag/2.0.0) signed | 2818 | GitKraken (partial) |
+| [Git Cola](https://github.com/git-cola/git-cola) | Python | GPL-2.0 | [v4.19.0](https://github.com/git-cola/git-cola/releases/tag/v4.19.0) signed | 2585 | Sourcetree (full) |
 | [Gittyup](https://github.com/Murmele/Gittyup) | C++ | MIT | [gittyup_v2.0.0](https://github.com/Murmele/Gittyup/releases/tag/gittyup_v2.0.0) signed | 2307 | Sourcetree (full) |
-| [jjui](https://github.com/idursun/jjui) | Go | MIT | [v0.10.12](https://github.com/idursun/jjui/releases/tag/v0.10.12) signed | 2208 | none |
+| [jjui](https://github.com/idursun/jjui) | Go | MIT | [v0.10.12](https://github.com/idursun/jjui/releases/tag/v0.10.12) signed | 2209 | none |
 
 [All categories](../README.md#catalog)

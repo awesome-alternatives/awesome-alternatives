@@ -4,9 +4,9 @@ Sell tickets, manage attendees and check people in at events.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Hi.Events](https://github.com/HiEventsDev/Hi.Events) | PHP | Other | [v2.0.0](https://github.com/HiEventsDev/Hi.Events/releases/tag/v2.0.0) signed | 4078 | Eventbrite (full) |
+| [Hi.Events](https://github.com/HiEventsDev/Hi.Events) | PHP | Other | [v2.0.0](https://github.com/HiEventsDev/Hi.Events/releases/tag/v2.0.0) signed | 4080 | Eventbrite (full) |
 | [pretix](https://github.com/pretix/pretix) | Python | Other | [v2026.8.0](https://github.com/pretix/pretix/releases/tag/v2026.8.0) | 2549 | Eventbrite (full) |
-| [Indico](https://github.com/indico/indico) | Python | MIT | [v3.3.14](https://github.com/indico/indico/releases/tag/v3.3.14) signed | 2118 | Eventbrite (partial) |
-| [alf.io](https://github.com/alfio-event/alf.io) | Java | GPL-3.0 | [2.0-M5-2609](https://github.com/alfio-event/alf.io/releases/tag/2.0-M5-2609) signed | 1623 | Eventbrite (full) |
+| [Indico](https://github.com/indico/indico) | Python | MIT | [v3.3.14](https://github.com/indico/indico/releases/tag/v3.3.14) signed | 2119 | Eventbrite (partial) |
+| [alf.io](https://github.com/alfio-event/alf.io) | Java | GPL-3.0 | [2.0-M5-2609](https://github.com/alfio-event/alf.io/releases/tag/2.0-M5-2609) signed | 1625 | Eventbrite (full) |
 
 [All categories](../README.md#catalog)

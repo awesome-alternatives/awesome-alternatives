@@ -4,10 +4,10 @@ Declare tests on datasets and check them in pipelines.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Great Expectations](https://github.com/fivetran/great_expectations) | Python | Apache-2.0 | [1.24.1](https://github.com/fivetran/great_expectations/releases/tag/1.24.1) | 11901 | Soda Core (full), Monte Carlo (partial) |
+| [Great Expectations](https://github.com/fivetran/great_expectations) | Python | Apache-2.0 | [1.24.1](https://github.com/fivetran/great_expectations/releases/tag/1.24.1) | 11902 | Soda Core (full), Monte Carlo (partial) |
 | [Pandera](https://github.com/unionai-oss/pandera) | Python | MIT | [v0.35.0](https://github.com/unionai-oss/pandera/releases/tag/v0.35.0) signed | 4497 | Great Expectations (partial) |
 | [Deequ](https://github.com/awslabs/deequ) | Scala | Apache-2.0 | [2.1.0](https://github.com/awslabs/deequ/releases/tag/2.1.0) signed | 3656 | Great Expectations (partial) |
-| [Soda Core](https://github.com/sodadata/soda-core) | Python | Other | [v4.28.0](https://github.com/sodadata/soda-core/releases/tag/v4.28.0) | 2445 | Great Expectations (full), Monte Carlo (partial) |
+| [Soda Core](https://github.com/sodadata/soda-core) | Python | Other | [v4.28.0](https://github.com/sodadata/soda-core/releases/tag/v4.28.0) | 2449 | Great Expectations (full), Monte Carlo (partial) |
 | [Elementary](https://github.com/elementary-data/elementary) | HTML | Apache-2.0 | [v0.26.1](https://github.com/elementary-data/elementary/releases/tag/v0.26.1) signed | 2428 | Monte Carlo (partial) |
 
 [All categories](../README.md#catalog)

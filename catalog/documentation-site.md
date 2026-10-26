@@ -4,19 +4,19 @@ Turn Markdown into a searchable documentation site.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Docusaurus](https://github.com/facebook/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/facebook/docusaurus/releases/tag/v3.10.2) | 66574 | GitBook (full), ReadMe (partial) |
-| [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.0.0](https://github.com/docsifyjs/docsify/releases/tag/v5.0.0) signed | 31560 | GitBook (partial) |
-| [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.8.0](https://github.com/squidfunk/mkdocs-material/releases/tag/9.8.0) signed | 27583 | GitBook (full), Docusaurus (full) |
-| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22513 | GitBook (full) |
-| [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22246 | GitBook (full) |
-| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.20](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.20) | 18441 | Docusaurus (full), GitBook (full) |
+| [Docusaurus](https://github.com/facebook/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/facebook/docusaurus/releases/tag/v3.10.2) | 66583 | GitBook (full), ReadMe (partial) |
+| [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.0.0](https://github.com/docsifyjs/docsify/releases/tag/v5.0.0) signed | 31559 | GitBook (partial) |
+| [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.8.0](https://github.com/squidfunk/mkdocs-material/releases/tag/9.8.0) signed | 27584 | GitBook (full), Docusaurus (full) |
+| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22518 | GitBook (full) |
+| [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22248 | GitBook (full) |
+| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.21](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.21) | 18442 | Docusaurus (full), GitBook (full) |
 | [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13942 | GitBook (full), Docusaurus (full) |
-| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [fumadocs-typescript@5.6.0](https://github.com/fuma-nama/fumadocs/releases/tag/fumadocs-typescript%405.6.0) signed | 13468 | GitBook (full), Nextra (full), ReadMe (partial) |
-| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.7](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.7) signed | 9467 | Docusaurus (full), GitBook (full) |
-| [Sphinx](https://github.com/sphinx-doc/sphinx) | Python | Other | [v9.2.0](https://github.com/sphinx-doc/sphinx/releases/tag/v9.2.0) | 8080 | GitBook (full) |
-| [Zensical](https://github.com/zensical/zensical) | Rust | MIT | [v0.0.72](https://github.com/zensical/zensical/releases/tag/v0.0.72) | 5993 | Material for MkDocs (full) |
+| [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [fumadocs-typescript@5.6.0](https://github.com/fuma-nama/fumadocs/releases/tag/fumadocs-typescript%405.6.0) signed | 13472 | GitBook (full), Nextra (full), ReadMe (partial) |
+| [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.42.7](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.42.7) signed | 9470 | Docusaurus (full), GitBook (full) |
+| [Sphinx](https://github.com/sphinx-doc/sphinx) | Python | Other | [v9.2.0](https://github.com/sphinx-doc/sphinx/releases/tag/v9.2.0) | 8082 | GitBook (full) |
+| [Zensical](https://github.com/zensical/zensical) | Rust | MIT | [v0.0.72](https://github.com/zensical/zensical/releases/tag/v0.0.72) | 6001 | Material for MkDocs (full) |
 | [DocFX](https://github.com/dotnet/docfx) | C# | MIT | [v2.81.0](https://github.com/dotnet/docfx/releases/tag/v2.81.0) signed | 4443 | Doxygen (partial), Sphinx (partial) |
-| [Jupyter Book](https://github.com/jupyter-book/jupyter-book) | TypeScript | BSD-3-Clause | [v2.1.7](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.1.7) | 4288 | GitBook (partial) |
+| [Jupyter Book](https://github.com/jupyter-book/jupyter-book) | TypeScript | BSD-3-Clause | [v2.1.7](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.1.7) | 4289 | GitBook (partial) |
 | [dumi](https://github.com/umijs/dumi) | JavaScript | MIT | [v2.4.53](https://github.com/umijs/dumi/releases/tag/v2.4.53) | 3795 | Docusaurus (partial) |
 | [VuePress](https://github.com/vuepress/core) | TypeScript | MIT | [v2.0.0-rc.31](https://github.com/vuepress/core/releases/tag/v2.0.0-rc.31) | 2833 | Docusaurus (full) |
 | [Rspress](https://github.com/web-infra-dev/rspress) | TypeScript | MIT | [v2.0.23](https://github.com/web-infra-dev/rspress/releases/tag/v2.0.23) signed | 2351 | Docusaurus (full) |

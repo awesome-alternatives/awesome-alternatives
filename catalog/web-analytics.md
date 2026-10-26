@@ -4,15 +4,15 @@ Self-hostable, privacy-friendly site analytics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.839](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.839) | 40424 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
-| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.1](https://github.com/umami-software/umami/releases/tag/v3.4.1) signed | 39667 | Matomo (full), Google Analytics (partial) |
-| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29647 | Matomo (full), Google Analytics (partial) |
-| [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.2](https://github.com/matomo-org/matomo/releases/tag/5.14.2) | 21981 | Google Analytics (full) |
-| [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21080 | Google Analytics (partial) |
-| [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.2](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.2) | 13158 | Google Analytics (full) |
-| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) | 13048 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
-| [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v3.16.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v3.16.0) signed | 7191 | Mixpanel (full), Amplitude (full) |
-| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6095 | Google Analytics (partial) |
+| [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.839](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.839) | 40441 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
+| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.1](https://github.com/umami-software/umami/releases/tag/v3.4.1) signed | 39688 | Matomo (full), Google Analytics (partial) |
+| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29663 | Matomo (full), Google Analytics (partial) |
+| [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.2](https://github.com/matomo-org/matomo/releases/tag/5.14.2) | 21982 | Google Analytics (full) |
+| [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21083 | Google Analytics (partial) |
+| [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.2](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.2) | 13159 | Google Analytics (full) |
+| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) | 13049 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
+| [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v3.16.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v3.16.0) signed | 7196 | Mixpanel (full), Amplitude (full) |
+| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6099 | Google Analytics (partial) |
 | [Countly](https://github.com/Countly/countly-server) | JavaScript | Other | [25.03.56-LTS](https://github.com/Countly/countly-server/releases/tag/25.03.56-LTS) | 5922 | Mixpanel (partial), Amplitude (partial) |
 | [Ackee](https://github.com/electerious/Ackee) | JavaScript | MIT | [v3.7.1](https://github.com/electerious/Ackee/releases/tag/v3.7.1) | 4720 | Google Analytics (partial) |
 | [Swetrix](https://github.com/Swetrix/swetrix) | TypeScript | AGPL-3.0 | [tracker-js@4.8.0](https://github.com/Swetrix/swetrix/releases/tag/tracker-js%404.8.0) | 1211 | Google Analytics (partial) |
