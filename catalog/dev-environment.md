@@ -4,10 +4,10 @@ Declare a project's tools and services in a file and get the same shell on every
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [direnv](https://github.com/direnv/direnv) | Go | MIT | [v2.38.2](https://github.com/direnv/direnv/releases/tag/v2.38.2) signed | 15521 | none |
-| [Devbox](https://github.com/jetify-com/devbox) | Go | Apache-2.0 | [0.18.5](https://github.com/jetify-com/devbox/releases/tag/0.18.5) | 12429 | Vagrant (partial), GitHub Codespaces (partial) |
-| [devenv](https://github.com/cachix/devenv) | Rust | Apache-2.0 | [v2.4.0](https://github.com/cachix/devenv/releases/tag/v2.4.0) | 7779 | Vagrant (partial) |
-| [Flox](https://github.com/flox/flox) | Rust | GPL-2.0 | [v1.19.1](https://github.com/flox/flox/releases/tag/v1.19.1) | 4185 | Homebrew (partial), asdf (partial) |
-| [Dev Container CLI](https://github.com/devcontainers/cli) | TypeScript | MIT | [v0.89.0](https://github.com/devcontainers/cli/releases/tag/v0.89.0) signed | 3007 | GitHub Codespaces (partial) |
+| [direnv](https://github.com/direnv/direnv) | Go | MIT | [v2.38.2](https://github.com/direnv/direnv/releases/tag/v2.38.2) signed | 15523 | none |
+| [Devbox](https://github.com/jetify-com/devbox) | Go | Apache-2.0 | [0.18.5](https://github.com/jetify-com/devbox/releases/tag/0.18.5) | 12430 | Vagrant (partial), GitHub Codespaces (partial) |
+| [devenv](https://github.com/cachix/devenv) | Rust | Apache-2.0 | [v2.4.0](https://github.com/cachix/devenv/releases/tag/v2.4.0) | 7780 | Vagrant (partial) |
+| [Flox](https://github.com/flox/flox) | Rust | GPL-2.0 | [v1.19.1](https://github.com/flox/flox/releases/tag/v1.19.1) | 4187 | Homebrew (partial), asdf (partial) |
+| [Dev Container CLI](https://github.com/devcontainers/cli) | TypeScript | MIT | [v0.89.0](https://github.com/devcontainers/cli/releases/tag/v0.89.0) signed | 3010 | GitHub Codespaces (partial) |
 
 [All categories](../README.md#catalog)

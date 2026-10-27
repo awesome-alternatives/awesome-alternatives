@@ -4,9 +4,9 @@ Replicated, transactional key-value stores that run as a cluster.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [etcd](https://github.com/etcd-io/etcd) | Go | Apache-2.0 | [v3.7.3](https://github.com/etcd-io/etcd/releases/tag/v3.7.3) signed | 52428 | Consul (partial) |
-| [TiKV](https://github.com/tikv/tikv) | Rust | Apache-2.0 | [v7.5.8](https://github.com/tikv/tikv/releases/tag/v7.5.8) signed | 16926 | FoundationDB (partial) |
-| [FoundationDB](https://github.com/apple/foundationdb) | C++ | Apache-2.0 | [7.3.77](https://github.com/apple/foundationdb/releases/tag/7.3.77) signed | 16816 | TiKV (partial) |
+| [etcd](https://github.com/etcd-io/etcd) | Go | Apache-2.0 | [v3.7.3](https://github.com/etcd-io/etcd/releases/tag/v3.7.3) signed | 52432 | Consul (partial) |
+| [TiKV](https://github.com/tikv/tikv) | Rust | Apache-2.0 | [v7.5.8](https://github.com/tikv/tikv/releases/tag/v7.5.8) signed | 16928 | FoundationDB (partial) |
+| [FoundationDB](https://github.com/apple/foundationdb) | C++ | Apache-2.0 | [7.3.77](https://github.com/apple/foundationdb/releases/tag/7.3.77) signed | 16819 | TiKV (partial) |
 | [Apache ZooKeeper](https://github.com/apache/zookeeper) | Java | Apache-2.0 | [release-3.9.6](https://github.com/apache/zookeeper/releases/tag/release-3.9.6) | 12822 | none |
 
 [All categories](../README.md#catalog)

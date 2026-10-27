@@ -4,14 +4,14 @@ Build internal apps and admin panels on top of databases and APIs.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ToolJet](https://github.com/ToolJet/ToolJet) | HTML | AGPL-3.0 | [v3.20.249-lts](https://github.com/ToolJet/ToolJet/releases/tag/v3.20.249-lts) signed | 41127 | Retool (full) |
-| [Appsmith](https://github.com/appsmithorg/appsmith) | TypeScript | Apache-2.0 | [v2.5.1](https://github.com/appsmithorg/appsmith/releases/tag/v2.5.1) signed | 41120 | Retool (full) |
-| [Refine](https://github.com/refinedev/refine) | TypeScript | MIT | [@refinedev/core@5.0.12](https://github.com/refinedev/refine/releases/tag/%40refinedev/core%405.0.12) | 35940 | Retool (partial) |
-| [Budibase](https://github.com/Budibase/budibase) | TypeScript | Other | [v3.50.0](https://github.com/Budibase/budibase/releases/tag/v3.50.0) | 28352 | Retool (full) |
-| [react-admin](https://github.com/marmelab/react-admin) | TypeScript | MIT | [v5.15.5](https://github.com/marmelab/react-admin/releases/tag/v5.15.5) | 26974 | Retool (partial) |
-| [NocoBase](https://github.com/nocobase/nocobase) | TypeScript | Other | [v2.2.33](https://github.com/nocobase/nocobase/releases/tag/v2.2.33) | 24712 | Retool (partial) |
-| [ILLA Builder](https://github.com/illacloud/illa-builder) | TypeScript | Apache-2.0 | [illa-builder@4.8.5](https://github.com/illacloud/illa-builder/releases/tag/illa-builder%404.8.5) | 12335 | Retool (full) |
-| [Saltcorn](https://github.com/saltcorn/saltcorn) | JavaScript | MIT | [v1.6.2](https://github.com/saltcorn/saltcorn/releases/tag/v1.6.2) | 2085 | Retool (partial) |
+| [ToolJet](https://github.com/ToolJet/ToolJet) | HTML | AGPL-3.0 | [v3.20.250-lts](https://github.com/ToolJet/ToolJet/releases/tag/v3.20.250-lts) signed | 41130 | Retool (full) |
+| [Appsmith](https://github.com/appsmithorg/appsmith) | TypeScript | Apache-2.0 | [v2.5.1](https://github.com/appsmithorg/appsmith/releases/tag/v2.5.1) signed | 41128 | Retool (full) |
+| [Refine](https://github.com/refinedev/refine) | TypeScript | MIT | [@refinedev/core@5.0.12](https://github.com/refinedev/refine/releases/tag/%40refinedev/core%405.0.12) | 35951 | Retool (partial) |
+| [Budibase](https://github.com/Budibase/budibase) | TypeScript | Other | [v3.50.0](https://github.com/Budibase/budibase/releases/tag/v3.50.0) | 28359 | Retool (full) |
+| [react-admin](https://github.com/marmelab/react-admin) | TypeScript | MIT | [v5.15.5](https://github.com/marmelab/react-admin/releases/tag/v5.15.5) | 26975 | Retool (partial) |
+| [NocoBase](https://github.com/nocobase/nocobase) | TypeScript | Other | [v2.2.34](https://github.com/nocobase/nocobase/releases/tag/v2.2.34) | 24733 | Retool (partial) |
+| [ILLA Builder](https://github.com/illacloud/illa-builder) | TypeScript | Apache-2.0 | [illa-builder@4.8.5](https://github.com/illacloud/illa-builder/releases/tag/illa-builder%404.8.5) | 12336 | Retool (full) |
+| [Saltcorn](https://github.com/saltcorn/saltcorn) | JavaScript | MIT | [v1.6.2](https://github.com/saltcorn/saltcorn/releases/tag/v1.6.2) | 2087 | Retool (partial) |
 | [Lowcoder](https://github.com/lowcoder-org/lowcoder) | HTML | AGPL-3.0 | [2.7.6](https://github.com/lowcoder-org/lowcoder/releases/tag/2.7.6) signed | 1624 | Retool (full) |
 
 [All categories](../README.md#catalog)

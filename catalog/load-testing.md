@@ -4,12 +4,12 @@ Generate traffic to measure how a service holds up.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.3.0](https://github.com/grafana/k6/releases/tag/v2.3.0) | 32045 | Apache JMeter (full), Gatling (full) |
-| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28240 | Apache JMeter (full), Gatling (full) |
-| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25229 | Apache JMeter (partial) |
-| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10632 | Vegeta (partial) |
-| [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9574 | none |
-| [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9105 | Apache JMeter (full), Gatling (full) |
+| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.3.0](https://github.com/grafana/k6/releases/tag/v2.3.0) | 32057 | Apache JMeter (full), Gatling (full) |
+| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28243 | Apache JMeter (full), Gatling (full) |
+| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25231 | Apache JMeter (partial) |
+| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10637 | Vegeta (partial) |
+| [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9576 | none |
+| [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9107 | Apache JMeter (full), Gatling (full) |
 | [autocannon](https://github.com/mcollina/autocannon) | JavaScript | MIT | [v8.0.0](https://github.com/mcollina/autocannon/releases/tag/v8.0.0) | 8533 | Vegeta (partial) |
 | [Gatling](https://github.com/gatling/gatling) | Scala | Apache-2.0 | [v3.16.0](https://github.com/gatling/gatling/releases/tag/v3.16.0) | 6955 | Apache JMeter (full) |
 | [bombardier](https://github.com/codesenberg/bombardier) | Go | MIT | [v2.0.2](https://github.com/codesenberg/bombardier/releases/tag/v2.0.2) | 6845 | Vegeta (partial) |
