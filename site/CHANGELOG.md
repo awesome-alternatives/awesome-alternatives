@@ -4,6 +4,16 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.139.0] - 2026-10-27
+
+### Features
+
+- feat(ci): label pull requests from the validation verdict and flag young repositories (#464)
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
 ## [0.138.6] - 2026-10-27
 
 ### Bug Fixes
