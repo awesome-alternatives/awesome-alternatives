@@ -3733,7 +3733,6 @@
   {"type":"added","slug":"zookeeper","at":"2026-10-10T08:29:50.981Z","commit":"c65d17d4085954948bb7b1a136011031b472c5bf"},
   {"type":"added","slug":"zstd","at":"2026-10-10T08:29:50.981Z","commit":"c65d17d4085954948bb7b1a136011031b472c5bf"},
   {"type":"released","slug":"direnv","at":"2026-10-10T10:27:14.389Z","commit":"af547ebbb33f0faec38524adf299eea1a74a196f","from":"v2.38.1","to":"v2.38.2"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-10T10:27:14.389Z","commit":"af547ebbb33f0faec38524adf299eea1a74a196f","from":"v7.28.5","to":"v7.29.0"},
   {"type":"released","slug":"freescout","at":"2026-10-10T10:27:14.389Z","commit":"af547ebbb33f0faec38524adf299eea1a74a196f","from":"1.8.246","to":"1.8.247"},
   {"type":"released","slug":"gopass","at":"2026-10-10T10:27:14.389Z","commit":"af547ebbb33f0faec38524adf299eea1a74a196f","from":"v1.17.3","to":"v1.17.4"},
   {"type":"released","slug":"inventree","at":"2026-10-10T10:27:14.389Z","commit":"af547ebbb33f0faec38524adf299eea1a74a196f","from":"1.5.6","to":"1.5.7"},
@@ -6577,5 +6576,6 @@
   {"type":"released","slug":"vite","at":"2026-10-27T16:17:16.345Z","commit":null,"from":"v8.3.5","to":"create-vite@9.3.3"},
   {"type":"released","slug":"websurfx","at":"2026-10-27T16:17:16.345Z","commit":null,"from":"v1.31.0","to":"v1.31.1"},
   {"type":"released","slug":"werf","at":"2026-10-27T16:17:16.345Z","commit":null,"from":"v2.81.4","to":"v2.83.0"},
-  {"type":"released","slug":"yara","at":"2026-10-27T16:17:16.345Z","commit":null,"from":"v4.5.8","to":"v4.6.0"}
+  {"type":"released","slug":"yara","at":"2026-10-27T16:17:16.345Z","commit":null,"from":"v4.5.8","to":"v4.6.0"},
+  {"type":"released","slug":"ferrflow","at":"2026-10-27T19:14:30.958Z","commit":null,"from":"v7.34.1","to":"v7.35.0"}
 ]
