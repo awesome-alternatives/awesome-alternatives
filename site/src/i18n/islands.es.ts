@@ -51,6 +51,7 @@ export const islands: Islands = {
     "no-release": "Sin versión ni tag",
     inactive: "Sin push en un año",
     "star-spike": "Ráfaga de estrellas inusual",
+    "too-new": "Repositorio reciente",
   },
   search: {
     label: "Describe lo que buscas",

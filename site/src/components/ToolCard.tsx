@@ -4,6 +4,7 @@ import { format, type Locale, pathFor } from "../i18n/index.ts";
 import type { Islands, LabelledFlag } from "../i18n/islands.en.ts";
 import { comparePath } from "../lib/compare.ts";
 import { migrationPath } from "../lib/migrations.ts";
+import { flagText } from "../lib/flags.ts";
 import { day, growth, stars } from "../lib/format.ts";
 import { Mark } from "./Mark.tsx";
 import { StarCount } from "./StarCount.tsx";
@@ -151,7 +152,7 @@ export function ToolCard({
         <p className="marks">
           {flags.map((flag) => (
             <a key={flag} className="mark mark-warn" href={pathFor(locale, `/about/#${flag}`)}>
-              {flagLabels[flag]}
+              {flagText(flag, flagLabels[flag], repo.createdAt)}
             </a>
           ))}
         </p>

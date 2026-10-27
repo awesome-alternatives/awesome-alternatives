@@ -7,7 +7,7 @@ export type { DeployMethod, Fit, Terms } from "../../../scripts/lib/types.ts";
 export type ToolView = Omit<EnrichedTool, "repo" | "releases" | "addedAt" | "editedAt" | "factsChangedAt"> & {
   repo: Pick<
     RepoFacts,
-    "fullName" | "description" | "homepage" | "language" | "license" | "stars" | "forks" | "topics" | "pushedAt" | "archived"
+    "fullName" | "description" | "homepage" | "language" | "license" | "stars" | "forks" | "topics" | "createdAt" | "pushedAt" | "archived"
   >;
 };
 

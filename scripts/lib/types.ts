@@ -104,14 +104,13 @@ export type BlockingCode =
   | "redirect-shadows-category"
   | "replaces-itself"
   | "schema"
-  | "too-new"
   | "unknown-capability"
   | "unknown-category"
   | "unknown-group"
   | "unknown-replacement"
   | "unused-product";
 
-export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-release", "star-spike"] as const;
+export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-release", "star-spike", "too-new"] as const;
 
 export type FlagCode = (typeof FLAG_CODES)[number];
 

@@ -51,6 +51,7 @@ export const islands: Islands = {
     "no-release": "リリース・タグなし",
     inactive: "1年間プッシュなし",
     "star-spike": "スターの異常な急増",
+    "too-new": "新しいリポジトリ",
   },
   search: {
     label: "探しているものを入力してください",

@@ -98,10 +98,12 @@ export const pages: Pages = {
       noLicense: "GitHub erkennt keine Lizenz, damit ist unklar, unter welchen Bedingungen sich der Code nutzen lässt.",
       noRelease: "Das Repository hat weder ein Release noch einen Tag, es gibt also keine Version zum Pinnen.",
       inactive: "Seit mehr als {inactiveDays} Tagen wurde nichts gepusht. Archivierte Repositories sind hiervon ausgenommen.",
+      tooNew:
+        "Das Repository ist jünger als {minAgeDays} Tage; die Markierung zeigt den Tag seiner Erstellung. Bei so wenig Verlauf sagen Sterne, Releases und Aktivität noch wenig aus. Die Markierung verschwindet von selbst, sobald das Repository alt genug ist.",
       starSpike:
         "Ein Tag, der {spikeThreshold} oder mehr Sterne brachte und mindestens das {spikeFactor}-Fache des üblichen täglichen Tempos des Tools im letzten Monat, und mindestens {spikeShare} % der Sterne, die es am Vortag hatte, damit ein gewöhnlich guter Tag eines großen Projekts nicht zählt. Gekaufte Sterne treffen schubweise ein, ein Launch auf Hacker News aber auch, deshalb entscheidet hier ein Mensch. GitHub zeigt nicht mehr an, wer ein Repository mit einem Stern markiert hat, also speichert der nächtliche Abgleich die Sternzahl jedes Tages und vergleicht die Tage. Er braucht eine Woche dieser Historie, bevor er urteilt, ein Tool wird also erst geprüft, wenn es gelistet ist.",
       blockingBefore:
-        "Andere Probleme blockieren stattdessen den Pull Request: ein Repository, das privat ist, ein Fork, archiviert und trotzdem als Alternative angeboten, jünger als {minAgeDays} Tage oder bereits unter einem anderen Slug gelistet.",
+        "Andere Probleme blockieren stattdessen den Pull Request: ein Repository, das privat ist, ein Fork, archiviert und trotzdem als Alternative angeboten oder bereits unter einem anderen Slug gelistet.",
       contributeLink: "Der Leitfaden für Beiträge",
       blockingAfter: "listet jede Prüfung auf.",
     },
