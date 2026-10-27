@@ -4,7 +4,7 @@ Short links on your own domain, with click statistics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dub](https://github.com/dubinc/dub) | TypeScript | Other | none | 24948 | Bitly (full) |
+| [Dub](https://github.com/dubinc/dub.link) | TypeScript | Other | none | 24951 | Bitly (full) |
 | [YOURLS](https://github.com/YOURLS/YOURLS) | PHP | MIT | [1.10.6](https://github.com/YOURLS/YOURLS/releases/tag/1.10.6) signed | 12286 | Bitly (full) |
 | [Kutt](https://github.com/thedevs-network/kutt) | JavaScript | MIT | [v3.2.6](https://github.com/thedevs-network/kutt/releases/tag/v3.2.6) | 11177 | Bitly (full) |
 | [Sink](https://github.com/miantiao-me/Sink) | TypeScript | AGPL-3.0 | [v0.3.1](https://github.com/miantiao-me/Sink/releases/tag/v0.3.1) | 7239 | Bitly (full) |

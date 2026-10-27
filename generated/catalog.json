@@ -86180,7 +86180,7 @@
     {
       "slug": "dub",
       "name": "Dub",
-      "repository": "https://github.com/dubinc/dub",
+      "repository": "https://github.com/dubinc/dub.link",
       "category": "url-shortener",
       "replaces": [
         {
@@ -86192,7 +86192,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-24T17:57:37.549Z",
-      "editedAt": "2026-09-24T18:14:14.000Z",
+      "editedAt": "2026-10-27T16:16:47.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "dubinc/dub.link",
@@ -86200,8 +86200,8 @@
         "homepage": "https://dub.link",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 24948,
-        "forks": 3345,
+        "stars": 24951,
+        "forks": 3346,
         "topics": [
           "clickhouse",
           "mysql",
@@ -86224,13 +86224,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 122,
+        "stars": 125,
         "exact": true,
-        "since": "2026-09-27T05:17:15.563Z"
+        "since": "2026-09-27T16:17:23.729Z"
       },
       "starHistory": {
         "from": "2026-09-26",
-        "stars": [24826,24829,24835,24842,24844,24853,24855,24861,24864,24866,24869,24868,24868,24870,24869,24873,24877,24877,24879,24889,24900,24903,24906,24906,24918,24919,24917,24926,24935,24945,24946,24948]
+        "stars": [24826,24829,24835,24842,24844,24853,24855,24861,24864,24866,24869,24868,24868,24870,24869,24873,24877,24877,24879,24889,24900,24903,24906,24906,24918,24919,24917,24926,24935,24945,24946,24951]
       },
       "release": null,
       "releases": [],
@@ -86242,7 +86242,6 @@
       "maintainerVerified": false,
       "verifiedAt": null,
       "flags": [
-        "moved",
         "no-release"
       ],
       "terms": "open-core",
