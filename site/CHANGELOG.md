@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.140.0] - 2026-10-27
+
+### Features
+
+- feat(ci): rerun Validate daily on pull requests labelled too-new (#465)
+
 ## [0.139.0] - 2026-10-27
 
 ### Features
