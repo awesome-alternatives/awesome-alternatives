@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { appendFile } from "node:fs/promises";
+import { appendFile, writeFile } from "node:fs/promises";
 import { basename } from "node:path";
 import { checkBenchmarks } from "./lib/benchmarks.ts";
 import { loadCatalog } from "./lib/catalog.ts";
@@ -8,6 +8,7 @@ import { createGitHub } from "./lib/github.ts";
 import { checkCapabilityDocs, checkHomepage, checkMigrations } from "./lib/links.ts";
 import { checkable } from "./lib/listed.ts";
 import { checkMigrationPages } from "./lib/migrations.ts";
+import { labelsFor } from "./lib/pr-labels.ts";
 import { renderFindings } from "./lib/report.ts";
 import { replacedSlugs } from "./lib/rules.ts";
 import { verifyTool } from "./lib/verify.ts";
@@ -45,6 +46,7 @@ const all = [...findings, ...pages, ...benchmarks, ...remote.flat(), ...homepage
 const report = renderFindings(all, targets);
 console.log(report);
 if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY, `${report}\n`);
+if (process.env.PR_LABELS_FILE) await writeFile(process.env.PR_LABELS_FILE, JSON.stringify(labelsFor(all, targets)));
 
 process.exitCode = all.some((f) => f.severity === "error") ? 1 : 0;
 

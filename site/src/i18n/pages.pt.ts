@@ -97,10 +97,12 @@ export const pages: Pages = {
       noLicense: "O GitHub não detecta nenhuma licença, então os termos sob os quais você pode usar o código não estão claros.",
       noRelease: "O repositório não tem release nem tag, então não há versão para fixar.",
       inactive: "Nada foi enviado por push há mais de {inactiveDays} dias. Repositórios arquivados ficam de fora deste aviso.",
+      tooNew:
+        "O repositório tem menos de {minAgeDays} dias; a marca mostra o dia em que foi criado. Com tão pouco histórico, as estrelas, releases e atividade ainda dizem pouco. A marca some sozinha quando o repositório fica antigo o bastante.",
       starSpike:
         "Um dia que ganhou {spikeThreshold} estrelas ou mais, e pelo menos {spikeFactor} vezes o ritmo diário habitual da ferramenta no último mês, e pelo menos {spikeShare}% das estrelas que ela tinha no dia anterior, para que um bom dia comum de um projeto grande não conte. Estrelas compradas chegam em rajadas, e um lançamento no Hacker News também, por isso quem decide é uma pessoa. O GitHub não lista mais quem deu estrela em um repositório, então a atualização noturna guarda a contagem de estrelas de cada dia e compara os dias. Ela precisa de uma semana desse histórico antes de julgar, ou seja, uma ferramenta só é verificada depois de listada.",
       blockingBefore:
-        "Alguns problemas bloqueiam o pull request: um repositório privado, um fork, arquivado mas oferecido como alternativa, com menos de {minAgeDays} dias, ou já listado sob outro slug.",
+        "Alguns problemas bloqueiam o pull request: um repositório privado, um fork, arquivado mas oferecido como alternativa, ou já listado sob outro slug.",
       contributeLink: "O guia de contribuição",
       blockingAfter: "lista todas as verificações.",
     },

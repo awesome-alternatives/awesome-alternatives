@@ -16,6 +16,7 @@ import { withHome } from "../../../lib/breadcrumbs.ts";
 import { cadenceDays } from "../../../lib/cadence.ts";
 import { categoryName, nameOf, pairs } from "../../../lib/catalog.ts";
 import type { Pair } from "../../../lib/compare.ts";
+import { flagText } from "../../../lib/flags.ts";
 import { day } from "../../../lib/format.ts";
 import { webHref } from "../../../lib/href.ts";
 import { migrationPairs } from "../../../lib/migrationPages.ts";
@@ -192,7 +193,7 @@ const ranBy = (slug: string, date: string) =>
                   flagsOf(a).length > 0
                     ? flagsOf(a).map((flag) => (
                         <a class="mark mark-warn" href={flagHref(flag)}>
-                          {flagLabels[flag] ?? flag}
+                          {flagText(flag, flagLabels[flag] ?? flag, a.repo.createdAt)}
                         </a>
                       ))
                     : m.compare.noFlags
@@ -203,7 +204,7 @@ const ranBy = (slug: string, date: string) =>
                   flagsOf(b).length > 0
                     ? flagsOf(b).map((flag) => (
                         <a class="mark mark-warn" href={flagHref(flag)}>
-                          {flagLabels[flag] ?? flag}
+                          {flagText(flag, flagLabels[flag] ?? flag, b.repo.createdAt)}
                         </a>
                       ))
                     : m.compare.noFlags

@@ -74,8 +74,8 @@ describe("judge", () => {
     assert.deepEqual(codes(repo({ archived: true }), [], true, alternative, new Set(["sample"])), ["error:archived"]);
   });
 
-  it("refuses a repository younger than the minimum age, the cheapest spam filter", () => {
-    assert.deepEqual(codes(repo({ createdAt: "2026-09-10T00:00:00Z" })), ["error:too-new"]);
+  it("flags a repository younger than the minimum age without blocking", () => {
+    assert.deepEqual(codes(repo({ createdAt: "2026-09-10T00:00:00Z" })), ["warning:too-new"]);
   });
 
   it("accepts a repository exactly at the minimum age", () => {

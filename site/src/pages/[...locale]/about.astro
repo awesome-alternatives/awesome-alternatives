@@ -134,9 +134,13 @@ const mcpUrl = new URL("/api/mcp", Astro.site).href;
         <dt><span class="mark mark-warn">{flag["star-spike"]}</span></dt>
         <dd>{format(m.warnings.starSpike, { spikeThreshold: SPIKE_THRESHOLD, spikeFactor: SPIKE_FACTOR, spikeShare: SPIKE_SHARE_PERCENT })}</dd>
       </div>
+      <div id="too-new">
+        <dt><span class="mark mark-warn">{flag["too-new"]}</span></dt>
+        <dd>{format(m.warnings.tooNew, { minAgeDays: MIN_AGE_DAYS })}</dd>
+      </div>
     </dl>
     <p>
-      {format(m.warnings.blockingBefore, { minAgeDays: MIN_AGE_DAYS })}{" "}
+      {m.warnings.blockingBefore}{" "}
       <a href={pathFor(locale, "/contribute/#what-ci-checks")}>{m.warnings.contributeLink}</a> {m.warnings.blockingAfter}
     </p>
   </section>

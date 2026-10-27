@@ -51,6 +51,7 @@ export const islands: Islands = {
     "no-release": "Tidak ada rilis atau tag",
     inactive: "Tidak ada push selama setahun",
     "star-spike": "Lonjakan bintang tidak wajar",
+    "too-new": "Repositori baru",
   },
   search: {
     label: "Jelaskan apa yang Anda cari",

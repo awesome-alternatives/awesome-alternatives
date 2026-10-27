@@ -42,7 +42,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.app.outputs.token || github.token }}
           BASE_REF: ${{ github.base_ref || 'main' }}
-        run: pnpm validate --changed-from "origin/${BASE_REF}"
+          PR_LABELS_FILE: ${{ github.event_name == 'pull_request' && format('{0}/pr-labels/labels.json', runner.temp) || '' }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -n "$PR_LABELS_FILE" ]; then
+            mkdir -p "$(dirname "$PR_LABELS_FILE")"
+            echo "$PR_NUMBER" > "$(dirname "$PR_LABELS_FILE")/number"
+          fi
+          pnpm validate --changed-from "origin/${BASE_REF}"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: ${{ !cancelled() && github.event_name == 'pull_request' }}
+        with:
+          name: pr-labels
+          path: ${{ runner.temp }}/pr-labels/
+          if-no-files-found: ignore
+          retention-days: 1
       - name: Check catalog structure
         if: github.event_name == 'push'
         run: pnpm validate

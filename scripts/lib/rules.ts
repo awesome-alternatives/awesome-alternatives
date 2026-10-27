@@ -46,7 +46,7 @@ export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: Reado
 
   const age = daysBetween(repo.createdAt, now);
   if (age < MIN_AGE_DAYS) {
-    add("error", "too-new", `created ${age} days ago, entries need ${MIN_AGE_DAYS} days of history`);
+    add("warning", "too-new", `created ${age} days ago, under ${MIN_AGE_DAYS} days of history`);
   }
 
   if (!repo.license) add("warning", "no-license", "GitHub detects no licence for this repository");

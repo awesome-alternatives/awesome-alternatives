@@ -8,6 +8,7 @@ const flag: Record<LabelledFlag, string> = {
   "no-release": "No release or tag",
   inactive: "No push in a year",
   "star-spike": "Unusual star burst",
+  "too-new": "New repository",
 };
 
 const deploy: Record<DeployMethod, string> = {

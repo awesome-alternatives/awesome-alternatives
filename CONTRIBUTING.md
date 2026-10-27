@@ -210,7 +210,6 @@ Blocking:
 - the repository is not archived, unless the entry replaces nothing and other entries replace it:
   an archived tool is exactly what people look to move off, so it can be a target, never an
   alternative
-- the repository is at least 30 days old
 - the repository is not already listed under another slug
 - every `replaces` target exists in `data/tools` or `data/products`, and a tool does not replace
   itself
@@ -229,8 +228,18 @@ Reviewed by a maintainer before merge, without blocking:
 - no push in the last year
 - a closed product's homepage does not answer, which often only means it turns scripts away
 - a declared `deploy` method with nothing on GitHub to show for it
+- the repository is less than 30 days old (`too-new`): its stars, releases and activity say
+  little yet. The tool's page shows it as a mark with the day the repository was created, and the
+  nightly refresh drops the mark once the repository is old enough
 - the repository's organisation has an IP allow list that turns GitHub's runners away
   (`unreadable-from-ci`), see [below](#organisations-with-an-ip-allow-list)
+
+Once the checks finish, the pull request gets a label from the verdict: `ready` when nothing was
+found, `needs-review` when only warnings remain, nothing when a check blocks it, and `too-new` on
+top of either when an entry's repository is under 30 days old. Each new push relabels it, and a pull
+request that touches no entry gets none of these. The labels are set by the
+[Label pull request](.github/workflows/pr-labels.yml) workflow, which reads the verdict the
+validation left behind and only labels the commit that was validated.
 
 The nightly refresh adds one more on listed tools: a day that gained 50 or more stars, at least
 five times the tool's usual daily pace over the last month, and at least 3% of the stars the repository had
