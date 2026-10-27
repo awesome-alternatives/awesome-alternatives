@@ -1,5 +1,5 @@
 name: Dub
-repository: https://github.com/dubinc/dub
+repository: https://github.com/dubinc/dub.link
 category: url-shortener
 terms: open-core
 replaces:
