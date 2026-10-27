@@ -241,6 +241,12 @@ request that touches no entry gets none of these. The labels are set by the
 [Label pull request](.github/workflows/pr-labels.yml) workflow, which reads the verdict the
 validation left behind and only labels the commit that was validated.
 
+A pull request can sit open past the day its repository turns 30 days old. Once a day,
+[Recheck young pull requests](.github/workflows/recheck-labels.yml) reruns the last Validate run of
+each open pull request labelled `too-new`, so the label drops once it no longer applies. It only
+reruns a run that already finished on the pull request's current commit: it never starts one that
+never ran, and never one still waiting for a maintainer to approve it.
+
 The nightly refresh adds one more on listed tools: a day that gained 50 or more stars, at least
 five times the tool's usual daily pace over the last month, and at least 3% of the stars the repository had
 the day before, so a large project's ordinary good day is not flagged. Bought stars arrive in bursts. A launch
