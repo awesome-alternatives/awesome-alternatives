@@ -4,11 +4,11 @@ Browse, preview and move files from a keyboard-driven interface in the terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 43042 | ranger (full) |
-| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 23943 | ranger (full), Midnight Commander (partial) |
+| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 43059 | ranger (full) |
+| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 23952 | ranger (full), Midnight Commander (partial) |
 | [nnn](https://github.com/jarun/nnn) | C | BSD-2-Clause | [v5.3](https://github.com/jarun/nnn/releases/tag/v5.3) signed | 22097 | ranger (full) |
 | [ranger](https://github.com/ranger/ranger) | Python | GPL-3.0 | [v1.9.4](https://github.com/ranger/ranger/releases/tag/v1.9.4) signed | 17440 | Midnight Commander (partial) |
-| [lf](https://github.com/gokcehan/lf) | Go | MIT | [r42](https://github.com/gokcehan/lf/releases/tag/r42) signed | 9577 | ranger (full) |
+| [lf](https://github.com/gokcehan/lf) | Go | MIT | [r42](https://github.com/gokcehan/lf/releases/tag/r42) signed | 9578 | ranger (full) |
 | [xplr](https://github.com/sayanarijit/xplr) | Rust | MIT | [v1.2.2](https://github.com/sayanarijit/xplr/releases/tag/v1.2.2) signed | 4846 | ranger (partial), nnn (partial) |
 | [joshuto](https://github.com/kamiyaa/joshuto) | Rust | LGPL-3.0 | [v0.9.9](https://github.com/kamiyaa/joshuto/releases/tag/v0.9.9) | 3739 | ranger (full) |
 | [Vifm](https://github.com/vifm/vifm) | C | GPL-2.0 | [v0.14.5](https://github.com/vifm/vifm/releases/tag/v0.14.5) signed | 3280 | ranger (full), Midnight Commander (partial) |

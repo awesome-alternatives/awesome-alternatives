@@ -12,7 +12,7 @@ Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 | [Mastodon for Android](https://github.com/mastodon/mastodon-android) | Java | GPL-3.0 | [v2.13.4](https://github.com/mastodon/mastodon-android/releases/tag/v2.13.4) | 2060 | X (Twitter) (partial) |
 | [Voyager](https://github.com/aeharding/voyager) | TypeScript | AGPL-3.0 | [2.49.1](https://github.com/aeharding/voyager/releases/tag/2.49.1) signed | 1822 | Reddit (partial) |
 | [Amethyst](https://github.com/vitorpamplona/amethyst) | Kotlin | MIT | [v1.20.0](https://github.com/vitorpamplona/amethyst/releases/tag/v1.20.0) | 1615 | X (Twitter) (partial) |
-| [Phanpy](https://github.com/cheeaun/phanpy) | JavaScript | MIT | [2026.10.09.febb38d](https://github.com/cheeaun/phanpy/releases/tag/2026.10.09.febb38d) signed | 1507 | X (Twitter) (partial) |
+| [Phanpy](https://github.com/cheeaun/phanpy) | JavaScript | MIT | [2026.10.09.febb38d](https://github.com/cheeaun/phanpy/releases/tag/2026.10.09.febb38d) signed | 1508 | X (Twitter) (partial) |
 | [Jerboa](https://github.com/LemmyNet/jerboa) | Kotlin | AGPL-3.0 | [0.0.88](https://github.com/LemmyNet/jerboa/releases/tag/0.0.88) | 1330 | Reddit (partial) |
 | [Thunder](https://github.com/thunder-app/thunder) | Dart | AGPL-3.0 | [0.8.6](https://github.com/thunder-app/thunder/releases/tag/0.8.6) | 1029 | Reddit (partial) |
 | [Photon](https://github.com/Xyphyn/photon) | Svelte | AGPL-3.0 | [v2.4.3](https://github.com/Xyphyn/photon/releases/tag/v2.4.3) signed | 557 | Reddit (partial) |
