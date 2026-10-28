@@ -11,8 +11,8 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8216 | Contentful (partial) |
 | [Umbraco](https://github.com/umbraco/Umbraco-CMS) | C# | MIT | [release-18.2.2](https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.2.2) signed | 5278 | Contentful (partial) |
 | [Joomla](https://github.com/joomla/joomla-cms) | PHP | GPL-2.0 | [6.2.0](https://github.com/joomla/joomla-cms/releases/tag/6.2.0) signed | 5156 | Wix (partial), Squarespace (partial) |
-| [Statamic](https://github.com/statamic/cms) | PHP | Other | [v6.38.0](https://github.com/statamic/cms/releases/tag/v6.38.0) | 4911 | Contentful (partial) |
-| [Drupal](https://github.com/drupal/drupal) | PHP | none | [11.4.11](https://github.com/drupal/drupal/releases/tag/11.4.11) | 4296 | WordPress (partial) |
+| [Statamic](https://github.com/statamic/cms) | PHP | Other | [v6.38.0](https://github.com/statamic/cms/releases/tag/v6.38.0) | 4910 | Contentful (partial) |
+| [Drupal](https://github.com/drupal/drupal) | PHP | none | [11.4.11](https://github.com/drupal/drupal/releases/tag/11.4.11) | 4297 | WordPress (partial) |
 | [Craft CMS](https://github.com/craftcms/cms) | PHP | Other | [5.11.5.1](https://github.com/craftcms/cms/releases/tag/5.11.5.1) | 3620 | Contentful (partial) |
 | [Microweber](https://github.com/microweber/microweber) | HTML | MIT | [v2.0.20](https://github.com/microweber/microweber/releases/tag/v2.0.20) | 3440 | Wix (partial), Squarespace (partial) |
 | [Piranha CMS](https://github.com/PiranhaCMS/piranha.core) | C# | MIT | [v12.2](https://github.com/PiranhaCMS/piranha.core/releases/tag/v12.2) | 2200 | Umbraco (partial), Orchard Core (partial) |
@@ -21,7 +21,7 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [TYPO3](https://github.com/TYPO3/typo3) | PHP | GPL-2.0 | [v14.3.10](https://github.com/TYPO3/typo3/releases/tag/v14.3.10) signed | 1218 | WordPress (partial) |
 | [ProcessWire](https://github.com/processwire/processwire) | PHP | Other | [3.0.259](https://github.com/processwire/processwire/releases/tag/3.0.259) | 1160 | Craft CMS (partial), Kirby (partial) |
 | [Backdrop CMS](https://github.com/backdrop/backdrop) | PHP | GPL-2.0 | [1.35.2](https://github.com/backdrop/backdrop/releases/tag/1.35.2) | 1051 | Drupal (full) |
-| [ClassicPress](https://github.com/ClassicPress/ClassicPress) | PHP | GPL-2.0 | [2.7.4+dev](https://github.com/ClassicPress/ClassicPress/releases/tag/2.7.4%2Bdev) | 861 | WordPress (full) |
+| [ClassicPress](https://github.com/ClassicPress/ClassicPress) | PHP | GPL-2.0 | [2.7.4+dev](https://github.com/ClassicPress/ClassicPress/releases/tag/2.7.4%2Bdev) | 862 | WordPress (full) |
 | [Concrete CMS](https://github.com/concretecms/concretecms) | PHP | MIT | [9.5.7](https://github.com/concretecms/concretecms/releases/tag/9.5.7) signed | 854 | Squarespace (partial) |
 | [WonderCMS](https://github.com/WonderCMS/wondercms) | PHP | MIT | [3.6.0](https://github.com/WonderCMS/wondercms/releases/tag/3.6.0) signed | 742 | Grav (partial) |
 | [Typemill](https://github.com/typemill/typemill) | JavaScript | MIT | [v2.28.0](https://github.com/typemill/typemill/releases/tag/v2.28.0) | 618 | GitBook (partial) |
