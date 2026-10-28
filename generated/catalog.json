@@ -98023,27 +98023,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-10-27T19:01:31Z",
+        "pushedAt": "2026-10-28T08:39:28Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-09-28T05:17:20.713Z"
+        "since": "2026-09-28T08:51:00.663Z"
       },
       "starHistory": {
         "from": "2026-09-27",
         "stars": [4,4,4,4,4,4,6,6,6,6,6,6,6,7,7,7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.35.0",
-        "publishedAt": "2026-10-27T19:13:21Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.0",
+        "tag": "v7.35.1",
+        "publishedAt": "2026-10-28T08:50:26Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.1",
         "source": "release",
         "signed": true,
-        "tagOid": "3556a6b1d12c390fb013a1871d9b435ce76465da"
+        "tagOid": "efeb2aa01e3aa33fdf72ef4bceeb2ced2a77ec4a"
       },
       "releases": [
+        {
+          "tag": "v7.35.1",
+          "name": "fix(git): keep git commands off an inherited GIT_DIR (#1358)",
+          "publishedAt": "2026-10-28T08:50:26Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.1",
+          "prerelease": false
+        },
         {
           "tag": "v7.35.0",
           "name": "feat(cli): add snapshot command for PR preview versions (#1356)",
@@ -98070,13 +98077,6 @@
           "name": "fix(release): resume a release interrupted after the release commit (#1349)",
           "publishedAt": "2026-10-25T11:48:04Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.33.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.33.3",
-          "name": "fix(cascade): keep dependents of a prerelease run on the prerelease channel (#1348)",
-          "publishedAt": "2026-10-25T10:51:24Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.33.3",
           "prerelease": false
         }
       ],
