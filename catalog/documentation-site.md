@@ -4,7 +4,7 @@ Turn Markdown into a searchable documentation site.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Docusaurus](https://github.com/facebook/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/meta/docusaurus/releases/tag/v3.10.2) | 66602 | GitBook (full), ReadMe (partial) |
+| [Docusaurus](https://github.com/meta/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/meta/docusaurus/releases/tag/v3.10.2) | 66602 | GitBook (full), ReadMe (partial) |
 | [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.0.0](https://github.com/docsifyjs/docsify/releases/tag/v5.0.0) signed | 31567 | GitBook (partial) |
 | [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.8.0](https://github.com/squidfunk/mkdocs-material/releases/tag/9.8.0) signed | 27590 | GitBook (full), Docusaurus (full) |
 | [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22527 | GitBook (full) |
