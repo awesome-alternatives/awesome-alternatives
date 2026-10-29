@@ -14,7 +14,7 @@ Stage, commit, branch, browse and rewrite history outside the bare git command, 
 | [tig](https://github.com/jonas/tig) | C | GPL-2.0 | [tig-2.6.1](https://github.com/jonas/tig/releases/tag/tig-2.6.1) signed | 13372 | Sourcetree (partial), GitKraken (partial) |
 | [ungit](https://github.com/FredrikNoren/ungit) | JavaScript | MIT | [v1.5.30](https://github.com/FredrikNoren/ungit/releases/tag/v1.5.30) | 10612 | Sourcetree (partial) |
 | [Magit](https://github.com/magit/magit) | Emacs Lisp | GPL-3.0 | [v4.7.1](https://github.com/magit/magit/releases/tag/v4.7.1) signed | 7248 | GitKraken (partial), Sourcetree (partial) |
-| [Sapling](https://github.com/facebook/sapling) | Rust | GPL-2.0 | [0.2.20261028-123539+7415fb2f](https://github.com/meta/sapling/releases/tag/0.2.20261028-123539%2B7415fb2f) | 7218 | Git (partial) |
+| [Sapling](https://github.com/meta/sapling) | Rust | GPL-2.0 | [0.2.20261028-123539+7415fb2f](https://github.com/meta/sapling/releases/tag/0.2.20261028-123539%2B7415fb2f) | 7219 | Git (partial) |
 | [SourceGit](https://github.com/sourcegit-scm/sourcegit) | C# | MIT | [v2026.23](https://github.com/sourcegit-scm/sourcegit/releases/tag/v2026.23) signed | 6285 | Sourcetree (full), GitKraken (partial) |
 | [gitu](https://github.com/altsem/gitu) | Rust | MIT | [v0.44.0](https://github.com/altsem/gitu/releases/tag/v0.44.0) | 2942 | Magit (partial) |
 | [Gitnuro](https://github.com/JetpackDuba/Gitnuro) | Kotlin | GPL-3.0 | [2.0.0](https://github.com/JetpackDuba/Gitnuro/releases/tag/2.0.0) signed | 2824 | GitKraken (partial) |

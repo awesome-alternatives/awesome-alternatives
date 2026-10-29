@@ -262098,7 +262098,7 @@
     {
       "slug": "sapling",
       "name": "Sapling",
-      "repository": "https://github.com/facebook/sapling",
+      "repository": "https://github.com/meta/sapling",
       "category": "git-client",
       "replaces": [
         {
@@ -262110,7 +262110,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:22:00.000Z",
-      "editedAt": "2026-10-10T08:29:33.000Z",
+      "editedAt": "2026-10-29T18:27:57.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meta/sapling",
@@ -262118,7 +262118,7 @@
         "homepage": "https://sapling-scm.com",
         "language": "Rust",
         "license": "GPL-2.0",
-        "stars": 7218,
+        "stars": 7219,
         "forks": 415,
         "topics": [],
         "databaseId": 58146669,
@@ -262126,17 +262126,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2016-05-05T16:53:47Z",
-        "pushedAt": "2026-10-29T14:34:43Z",
+        "pushedAt": "2026-10-29T18:07:32Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 188,
+        "stars": 189,
         "exact": false,
         "since": "2026-10-06T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-10-06",
-        "stars": [7030,7029,7029,7031,7030,7031,7031,7032,7051,7088,7127,7139,7150,7161,7176,7182,7184,7193,7201,7203,7206,7214,7215,7218]
+        "stars": [7030,7029,7029,7031,7030,7031,7031,7032,7051,7088,7127,7139,7150,7161,7176,7182,7184,7193,7201,7203,7206,7214,7215,7219]
       },
       "release": {
         "tag": "0.2.20261028-123539+7415fb2f",
@@ -262183,7 +262183,7 @@
         }
       ],
       "contributors": {
-        "count": 52,
+        "count": 53,
         "capped": true
       },
       "platforms": [
@@ -262203,9 +262203,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
