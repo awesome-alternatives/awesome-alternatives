@@ -4,7 +4,7 @@ Send HTTP requests from Node.js and browsers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [axios](https://github.com/axios/axios) | JavaScript | MIT | [v1.21.0](https://github.com/axios/axios/releases/tag/v1.21.0) signed | 109312 | request (full) |
+| [axios](https://github.com/axios/axios) | JavaScript | MIT | [v1.21.0](https://github.com/axios/axios/releases/tag/v1.21.0) signed | 109313 | request (full) |
 | [request](https://github.com/request/request) | JavaScript | Apache-2.0 | [v2.88.1](https://github.com/request/request/releases/tag/v2.88.1) | 25486 | none |
 | [Ky](https://github.com/sindresorhus/ky) | TypeScript | MIT | [v2.2.0](https://github.com/sindresorhus/ky/releases/tag/v2.2.0) | 17142 | request (partial), axios (full) |
 | [SuperAgent](https://github.com/forwardemail/superagent) | JavaScript | MIT | [v10.4.1](https://github.com/forwardemail/superagent/releases/tag/v10.4.1) | 16629 | request (full) |

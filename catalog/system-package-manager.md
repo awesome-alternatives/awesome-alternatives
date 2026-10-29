@@ -4,8 +4,8 @@ Install command-line tools and applications on macOS, Windows or Linux from pack
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.11](https://github.com/Homebrew/brew/releases/tag/7.0.11) signed | 50145 | none |
-| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26549 | Chocolatey (full) |
+| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.11](https://github.com/Homebrew/brew/releases/tag/7.0.11) signed | 50148 | none |
+| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26550 | Chocolatey (full) |
 | [Scoop](https://github.com/ScoopInstaller/Scoop) | PowerShell | Other | [v0.6.0](https://github.com/ScoopInstaller/Scoop/releases/tag/v0.6.0) signed | 24777 | Chocolatey (partial) |
 | [Nix](https://github.com/NixOS/nix) | C++ | LGPL-2.1 | [2.35.4](https://github.com/NixOS/nix/releases/tag/2.35.4) signed | 17935 | Homebrew (partial) |
 | [Chocolatey](https://github.com/chocolatey/choco) | C# | Other | [2.7.5](https://github.com/chocolatey/choco/releases/tag/2.7.5) signed | 11558 | none |

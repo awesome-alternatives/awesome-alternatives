@@ -14,13 +14,13 @@ Extract data from applications and databases and load it into a warehouse.
 | [Snowplow](https://github.com/snowplow/snowplow) | Scala | Apache-2.0 | [22.01](https://github.com/snowplow/snowplow/releases/tag/22.01) | 7048 | Segment (partial) |
 | [CloudQuery](https://github.com/cloudquery/cloudquery) | Go | MPL-2.0 | [plugins-destination-duckdb-v6.4.2](https://github.com/cloudquery/cloudquery/releases/tag/plugins-destination-duckdb-v6.4.2) signed | 6548 | Fivetran (partial) |
 | [Apache NiFi](https://github.com/apache/nifi) | Java | Apache-2.0 | [rel/nifi-2.12.0](https://github.com/apache/nifi/releases/tag/rel/nifi-2.12.0) signed | 6279 | Informatica (partial), Talend (partial) |
-| [dlt](https://github.com/dlt-hub/dlt) | Python | Apache-2.0 | [1.31.0](https://github.com/dlt-hub/dlt/releases/tag/1.31.0) signed | 6024 | Fivetran (partial) |
-| [Jitsu](https://github.com/jitsucom/jitsu) | TypeScript | MIT | [jitsu-cli1.11.0](https://github.com/jitsucom/jitsu/releases/tag/jitsu-cli1.11.0) | 5121 | Segment (full) |
+| [dlt](https://github.com/dlt-hub/dlt) | Python | Apache-2.0 | [1.31.0](https://github.com/dlt-hub/dlt/releases/tag/1.31.0) signed | 6028 | Fivetran (partial) |
+| [Jitsu](https://github.com/jitsucom/jitsu) | TypeScript | MIT | [jitsu-cli1.11.0](https://github.com/jitsucom/jitsu/releases/tag/jitsu-cli1.11.0) | 5122 | Segment (full) |
 | [RudderStack](https://github.com/rudderlabs/rudder-server) | Go | Other | [v1.92.1](https://github.com/rudderlabs/rudder-server/releases/tag/v1.92.1) signed | 4509 | Segment (full), Census (partial), Hightouch (partial) |
-| [ingestr](https://github.com/bruin-data/ingestr) | Go | Other | [v1.1.78](https://github.com/bruin-data/ingestr/releases/tag/v1.1.78) signed | 4031 | Fivetran (partial) |
+| [ingestr](https://github.com/bruin-data/ingestr) | Go | Other | [v1.1.78](https://github.com/bruin-data/ingestr/releases/tag/v1.1.78) signed | 4032 | Fivetran (partial) |
 | [PeerDB](https://github.com/PeerDB-io/peerdb) | Go | AGPL-3.0 | [v0.37.14](https://github.com/PeerDB-io/peerdb/releases/tag/v0.37.14) signed | 3310 | Fivetran (partial) |
 | [Meltano](https://github.com/meltano/meltano) | Python | MIT | [v4.4.1](https://github.com/meltano/meltano/releases/tag/v4.4.1) signed | 2671 | Fivetran (partial), Airbyte (partial), Talend (partial) |
-| [Bento](https://github.com/warpstreamlabs/bento) | Go | Other | [v1.22.0](https://github.com/warpstreamlabs/bento/releases/tag/v1.22.0) | 2178 | Redpanda Connect (partial) |
+| [Bento](https://github.com/warpstreamlabs/bento) | Go | Other | [v1.22.0](https://github.com/warpstreamlabs/bento/releases/tag/v1.22.0) | 2179 | Redpanda Connect (partial) |
 | [Multiwoven](https://github.com/Multiwoven/multiwoven) | Ruby | AGPL-3.0 | [v0.136.0](https://github.com/Multiwoven/multiwoven/releases/tag/v0.136.0) signed | 1683 | Hightouch (full), Census (full) |
 | [OLake](https://github.com/datazip-inc/olake) | Go | Apache-2.0 | [v1.1.0](https://github.com/datazip-inc/olake/releases/tag/v1.1.0) signed | 1574 | Fivetran (partial) |
 | [Apache Hop](https://github.com/apache/hop) | Java | Apache-2.0 | [2.19.0-rc1](https://github.com/apache/hop/releases/tag/2.19.0-rc1) | 1514 | Talend (partial), Informatica (full) |

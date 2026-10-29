@@ -4,8 +4,8 @@ Turn a machine at home into a server with an app store, storage management and a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37392 | Unraid (partial), Synology DiskStation Manager (partial) |
-| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.0](https://github.com/getumbrel/umbrel/releases/tag/2.0.0) | 12478 | Unraid (partial) |
+| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37394 | Unraid (partial), Synology DiskStation Manager (partial) |
+| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.0](https://github.com/getumbrel/umbrel/releases/tag/2.0.0) | 12479 | Unraid (partial) |
 | [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.11.0](https://github.com/runtipi/runtipi/releases/tag/v4.11.0) signed | 9712 | Unraid (partial) |
 | [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7042 | Synology DiskStation Manager (partial), Unraid (partial) |
 | [Cosmos](https://github.com/azukaar/Cosmos-Server) | Go | Other | [v0.23.4](https://github.com/azukaar/Cosmos-Server/releases/tag/v0.23.4) | 6187 | Unraid (partial) |

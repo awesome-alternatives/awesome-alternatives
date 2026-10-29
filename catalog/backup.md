@@ -4,14 +4,14 @@ Take deduplicated, encrypted snapshots of files and restore them from local or c
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.19.1](https://github.com/restic/restic/releases/tag/v0.19.1) signed | 36879 | none |
-| [Duplicati](https://github.com/duplicati/duplicati) | C# | Other | [v2.4.1.0_stable_2026-10-29](https://github.com/duplicati/duplicati/releases/tag/v2.4.1.0_stable_2026-10-29) | 15173 | CrashPlan (partial), Backblaze Personal Backup (partial) |
+| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.19.1](https://github.com/restic/restic/releases/tag/v0.19.1) signed | 36882 | none |
+| [Duplicati](https://github.com/duplicati/duplicati) | C# | Other | [v2.4.1.0_stable_2026-10-29](https://github.com/duplicati/duplicati/releases/tag/v2.4.1.0_stable_2026-10-29) | 15170 | CrashPlan (partial), Backblaze Personal Backup (partial) |
 | [Kopia](https://github.com/kopia/kopia) | Go | Apache-2.0 | [v0.23.1](https://github.com/kopia/kopia/releases/tag/v0.23.1) | 14522 | restic (full), BorgBackup (full), CrashPlan (partial) |
-| [BorgBackup](https://github.com/borgbackup/borg) | Python | Other | [1.4.5](https://github.com/borgbackup/borg/releases/tag/1.4.5) signed | 13890 | restic (full) |
-| [Backrest](https://github.com/garethgeorge/backrest) | TypeScript | GPL-3.0 | [v1.14.1](https://github.com/garethgeorge/backrest/releases/tag/v1.14.1) signed | 7766 | Backblaze Personal Backup (partial) |
+| [BorgBackup](https://github.com/borgbackup/borg) | Python | Other | [1.4.5](https://github.com/borgbackup/borg/releases/tag/1.4.5) signed | 13891 | restic (full) |
+| [Backrest](https://github.com/garethgeorge/backrest) | TypeScript | GPL-3.0 | [v1.14.1](https://github.com/garethgeorge/backrest/releases/tag/v1.14.1) signed | 7767 | Backblaze Personal Backup (partial) |
 | [Duplicacy](https://github.com/gilbertchen/duplicacy) | Go | Other | [v3.3.0](https://github.com/gilbertchen/duplicacy/releases/tag/v3.3.0) | 5701 | CrashPlan (partial) |
-| [Timeshift](https://github.com/linuxmint/timeshift) | Vala | none | [master.mint27](https://github.com/linuxmint/timeshift/releases/tag/master.mint27) signed | 4320 | Time Machine (partial) |
-| [rustic](https://github.com/rustic-rs/rustic) | Rust | Apache-2.0 | [v0.11.4](https://github.com/rustic-rs/rustic/releases/tag/v0.11.4) | 3351 | restic (partial) |
+| [Timeshift](https://github.com/linuxmint/timeshift) | Vala | none | [master.mint27](https://github.com/linuxmint/timeshift/releases/tag/master.mint27) signed | 4321 | Time Machine (partial) |
+| [rustic](https://github.com/rustic-rs/rustic) | Rust | Apache-2.0 | [v0.11.4](https://github.com/rustic-rs/rustic/releases/tag/v0.11.4) | 3353 | restic (partial) |
 | [Vorta](https://github.com/borgbase/vorta) | Python | GPL-3.0 | [v0.11.6](https://github.com/borgbase/vorta/releases/tag/v0.11.6) | 2519 | Backblaze Personal Backup (partial) |
 | [borgmatic](https://github.com/borgmatic-collective/borgmatic) | Python | GPL-3.0 | [2.1.10](https://github.com/borgmatic-collective/borgmatic/releases/tag/2.1.10) | 2357 | resticprofile (partial) |
 | [Plakar](https://github.com/PlakarKorp/plakar) | Go | ISC | [v1.1.8](https://github.com/PlakarKorp/plakar/releases/tag/v1.1.8) | 2101 | restic (partial) |

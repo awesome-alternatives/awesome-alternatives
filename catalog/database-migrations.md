@@ -4,15 +4,15 @@ Version and apply database schema changes.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 18997 | Flyway (partial) |
+| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 18996 | Flyway (partial) |
 | [Bytebase](https://github.com/bytebase/bytebase) | Go | Other | [3.24.0](https://github.com/bytebase/bytebase/releases/tag/3.24.0) signed | 14654 | Flyway (partial) |
 | [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13617 | none |
-| [goose](https://github.com/pressly/goose) | Go | Other | [v3.29.0](https://github.com/pressly/goose/releases/tag/v3.29.0) | 11638 | migrate (full) |
+| [goose](https://github.com/pressly/goose) | Go | Other | [v3.29.0](https://github.com/pressly/goose/releases/tag/v3.29.0) | 11639 | migrate (full) |
 | [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.11.1](https://github.com/flyway/flyway/releases/tag/flyway-13.11.1) | 10178 | Liquibase (full) |
 | [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.3.0](https://github.com/ariga/atlas/releases/tag/v1.3.0) signed | 8805 | Liquibase (full), Flyway (full) |
 | [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.37.0](https://github.com/amacneil/dbmate/releases/tag/v2.37.0) signed | 7504 | Flyway (full), Liquibase (partial) |
 | [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7078 | Bytebase (partial) |
-| [pgroll](https://github.com/xataio/pgroll) | Go | Apache-2.0 | [v0.16.3](https://github.com/xataio/pgroll/releases/tag/v0.16.3) | 6610 | Flyway (partial) |
+| [pgroll](https://github.com/xataio/pgroll) | Go | Apache-2.0 | [v0.16.3](https://github.com/xataio/pgroll/releases/tag/v0.16.3) | 6611 | Flyway (partial) |
 | [Liquibase](https://github.com/liquibase/liquibase) | Java | Other | [v5.0.4](https://github.com/liquibase/liquibase/releases/tag/v5.0.4) signed | 5638 | Flyway (full) |
 | [Alembic](https://github.com/sqlalchemy/alembic) | Python | MIT | [rel_1_20_1](https://github.com/sqlalchemy/alembic/releases/tag/rel_1_20_1) | 4458 | Flyway (partial) |
 | [sqldef](https://github.com/sqldef/sqldef) | Go | Other | [v3.11.28](https://github.com/sqldef/sqldef/releases/tag/v3.11.28) signed | 3185 | Atlas (partial) |

@@ -4,7 +4,7 @@ Generate software bills of materials, sign and verify artifacts, and assess the 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Syft](https://github.com/anchore/syft) | Go | Apache-2.0 | [v1.55.0](https://github.com/anchore/syft/releases/tag/v1.55.0) | 9792 | Black Duck (partial) |
+| [Syft](https://github.com/anchore/syft) | Go | Apache-2.0 | [v1.55.0](https://github.com/anchore/syft/releases/tag/v1.55.0) | 9793 | Black Duck (partial) |
 | [Cosign](https://github.com/sigstore/cosign) | Go | Apache-2.0 | [v3.1.4](https://github.com/sigstore/cosign/releases/tag/v3.1.4) signed | 6397 | Notation (full) |
 | [OpenSSF Scorecard](https://github.com/ossf/scorecard) | Go | Apache-2.0 | [v5.6.0](https://github.com/ossf/scorecard/releases/tag/v5.6.0) signed | 5796 | none |
 | [SBOM Tool](https://github.com/microsoft/sbom-tool) | C# | MIT | [v4.1.5](https://github.com/microsoft/sbom-tool/releases/tag/v4.1.5) signed | 2090 | Black Duck (partial) |

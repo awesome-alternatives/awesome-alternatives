@@ -4,7 +4,7 @@ Generate one-time codes for two-factor authentication.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [locker-v1.0.11](https://github.com/ente/ente/releases/tag/locker-v1.0.11) | 29733 | Twilio Authy (full), Google Authenticator (full) |
+| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [locker-v1.0.11](https://github.com/ente/ente/releases/tag/locker-v1.0.11) | 29737 | Twilio Authy (full), Google Authenticator (full) |
 | [Aegis](https://github.com/beemdevelopment/Aegis) | Java | GPL-3.0 | [v3.4.3](https://github.com/beemdevelopment/Aegis/releases/tag/v3.4.3) | 13413 | Twilio Authy (full), Google Authenticator (full) |
 | [Stratum](https://github.com/stratumauth/app) | C# | GPL-3.0 | [v1.6.2](https://github.com/stratumauth/app/releases/tag/v1.6.2) signed | 4627 | Twilio Authy (full), Google Authenticator (full) |
 | [2FAuth](https://github.com/Bubka/2FAuth) | PHP | AGPL-3.0 | [v9.0.0](https://github.com/Bubka/2FAuth/releases/tag/v9.0.0) | 4197 | Google Authenticator (partial) |

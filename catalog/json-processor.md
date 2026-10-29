@@ -4,7 +4,7 @@ Query and transform JSON from the command line.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [jq](https://github.com/jqlang/jq) | C | Other | [jq-1.8.2](https://github.com/jqlang/jq/releases/tag/jq-1.8.2) signed | 35995 | none |
+| [jq](https://github.com/jqlang/jq) | C | Other | [jq-1.8.2](https://github.com/jqlang/jq/releases/tag/jq-1.8.2) signed | 35993 | none |
 | [fx](https://github.com/antonmedv/fx) | Go | MIT | [40.0.1](https://github.com/antonmedv/fx/releases/tag/40.0.1) signed | 20698 | jq (partial) |
 | [yq](https://github.com/mikefarah/yq) | Go | MIT | [v4.54.1](https://github.com/mikefarah/yq/releases/tag/v4.54.1) | 16202 | jq (partial) |
 | [jc](https://github.com/kellyjonbrazil/jc) | Python | MIT | [v1.26.1](https://github.com/kellyjonbrazil/jc/releases/tag/v1.26.1) signed | 8698 | none |

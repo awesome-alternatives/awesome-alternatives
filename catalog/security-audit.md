@@ -8,7 +8,7 @@ Scan servers, networks and TLS endpoints for missing patches, weak configuration
 | [Vuls](https://github.com/future-architect/vuls) | Go | GPL-3.0 | [v0.42.0](https://github.com/future-architect/vuls/releases/tag/v0.42.0) signed | 12317 | Nessus (partial) |
 | [Docker Bench for Security](https://github.com/docker/docker-bench-security) | Shell | Apache-2.0 | [v1.6.1](https://github.com/docker/docker-bench-security/releases/tag/v1.6.1) signed | 9707 | none |
 | [testssl.sh](https://github.com/testssl/testssl.sh) | Shell | GPL-2.0 | [v3.2.4](https://github.com/testssl/testssl.sh/releases/tag/v3.2.4) signed | 9255 | SSLyze (full), Qualys SSL Labs (partial) |
-| [OpenVAS](https://github.com/greenbone/openvas-scanner) | Rust | GPL-2.0 | [v23.52.7](https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.7) | 4903 | Nessus (full) |
+| [OpenVAS](https://github.com/greenbone/openvas-scanner) | Rust | GPL-2.0 | [v23.52.8](https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.8) | 4903 | Nessus (full) |
 | [SSLyze](https://github.com/nabla-c0d3/sslyze) | Python | AGPL-3.0 | [6.3.1](https://github.com/nabla-c0d3/sslyze/releases/tag/6.3.1) | 3795 | testssl.sh (full), Qualys SSL Labs (partial) |
 | [OpenSCAP](https://github.com/OpenSCAP/openscap) | XSLT | LGPL-2.1 | [1.4.6](https://github.com/OpenSCAP/openscap/releases/tag/1.4.6) signed | 1837 | Nessus (partial) |
 

@@ -4,9 +4,9 @@ Desktop, mobile and web apps for Matrix, XMPP and IRC.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.33](https://github.com/element-hq/element-web/releases/tag/v1.12.33) signed | 13623 | Slack (partial), Discord (partial) |
+| [Element Web](https://github.com/element-hq/element-web) | TypeScript | AGPL-3.0 | [v1.12.33](https://github.com/element-hq/element-web/releases/tag/v1.12.33) signed | 13624 | Slack (partial), Discord (partial) |
 | [The Lounge](https://github.com/thelounge/thelounge) | TypeScript | MIT | [v4.5.2](https://github.com/thelounge/thelounge/releases/tag/v4.5.2) | 6361 | IRCCloud (full) |
-| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4757 | Rambox (full) |
+| [Ferdium](https://github.com/ferdium/ferdium-app) | TypeScript | Apache-2.0 | [v7.2.3](https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3) | 4758 | Rambox (full) |
 | [Halloy](https://github.com/squidowl/halloy) | Rust | GPL-3.0 | [2026.9](https://github.com/squidowl/halloy/releases/tag/2026.9) signed | 4571 | none |
 | [Cinny](https://github.com/cinnyapp/cinny) | TypeScript | AGPL-3.0 | [v4.12.8](https://github.com/cinnyapp/cinny/releases/tag/v4.12.8) signed | 3950 | Slack (partial), Discord (partial) |
 | [WeeChat](https://github.com/weechat/weechat) | C | GPL-3.0 | [v4.10.1](https://github.com/weechat/weechat/releases/tag/v4.10.1) | 3418 | Irssi (full) |

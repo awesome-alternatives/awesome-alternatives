@@ -4,13 +4,13 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV,
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.7](https://github.com/syncthing/syncthing/releases/tag/v2.1.7) | 89862 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
-| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.75.2](https://github.com/rclone/rclone/releases/tag/v1.75.2) signed | 60615 | none |
-| [copyparty](https://github.com/9001/copyparty) | Python | MIT | [v1.20.26](https://github.com/9001/copyparty/releases/tag/v1.20.26) | 47185 | WeTransfer (partial), Dropbox (partial) |
-| [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v33.0.10](https://github.com/nextcloud/server/releases/tag/v33.0.10) | 37342 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
+| [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.7](https://github.com/syncthing/syncthing/releases/tag/v2.1.7) | 89869 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
+| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.75.2](https://github.com/rclone/rclone/releases/tag/v1.75.2) signed | 60617 | none |
+| [copyparty](https://github.com/9001/copyparty) | Python | MIT | [v1.20.26](https://github.com/9001/copyparty/releases/tag/v1.20.26) | 47187 | WeTransfer (partial), Dropbox (partial) |
+| [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v33.0.10](https://github.com/nextcloud/server/releases/tag/v33.0.10) | 37344 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
 | [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28902 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |
 | [Seafile](https://github.com/haiwen/seafile) | C | Other | [v9.0.5](https://github.com/haiwen/seafile/releases/tag/v9.0.5) | 15402 | Dropbox (full), Nextcloud (partial), iCloud Drive (full), OneDrive (full), Box (full) |
-| [Filestash](https://github.com/mickael-kerjean/filestash) | Go | AGPL-3.0 | [v0.4](https://github.com/mickael-kerjean/filestash/releases/tag/v0.4) | 14841 | Dropbox (partial) |
+| [Filestash](https://github.com/mickael-kerjean/filestash) | Go | AGPL-3.0 | [v0.4](https://github.com/mickael-kerjean/filestash/releases/tag/v0.4) | 14843 | Dropbox (partial) |
 | [ownCloud Server](https://github.com/owncloud/core) | PHP | AGPL-3.0 | [v10.16.6](https://github.com/owncloud/core/releases/tag/v10.16.6) signed | 8841 | Dropbox (full), Google Drive (partial) |
 | [Unison](https://github.com/bcpierce00/unison) | OCaml | GPL-3.0 | [v2.54.0](https://github.com/bcpierce00/unison/releases/tag/v2.54.0) | 5560 | Dropbox (partial) |
 | [rsync](https://github.com/RsyncProject/rsync) | C | Other | [v3.5.1](https://github.com/RsyncProject/rsync/releases/tag/v3.5.1) signed | 5324 | none |

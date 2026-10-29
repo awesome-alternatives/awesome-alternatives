@@ -4,8 +4,8 @@ Databases storing JSON-like documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v3.3.5](https://github.com/surrealdb/surrealdb/releases/tag/v3.3.5) signed | 33245 | MongoDB (partial) |
-| [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r9.0.4](https://github.com/mongodb/mongo/releases/tag/r9.0.4) | 28661 | MongoDB Atlas (full) |
+| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v3.3.5](https://github.com/surrealdb/surrealdb/releases/tag/v3.3.5) signed | 33246 | MongoDB (partial) |
+| [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r9.0.4](https://github.com/mongodb/mongo/releases/tag/r9.0.4) | 28663 | MongoDB Atlas (full) |
 | [RethinkDB](https://github.com/rethinkdb/rethinkdb) | C++ | Other | [v2.4.4](https://github.com/rethinkdb/rethinkdb/releases/tag/v2.4.4) | 27005 | MongoDB (partial) |
 | [RxDB](https://github.com/pubkey/rxdb) | TypeScript | Apache-2.0 | [17.6.0](https://github.com/pubkey/rxdb/releases/tag/17.6.0) | 23420 | Firebase (partial) |
 | [PouchDB](https://github.com/apache/pouchdb) | JavaScript | Apache-2.0 | [9.0.0](https://github.com/apache/pouchdb/releases/tag/9.0.0) | 17626 | Firebase (partial) |

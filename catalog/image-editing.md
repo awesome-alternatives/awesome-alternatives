@@ -4,7 +4,7 @@ Edit raster and vector images, from retouching photos to drawing graphics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Graphite](https://github.com/GraphiteEditor/Graphite) | Rust | Apache-2.0 | [pre-4435](https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435) signed | 27772 | Photoshop (partial), Procreate (partial) |
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | Rust | Apache-2.0 | [pre-4435](https://github.com/GraphiteEditor/Graphite/releases/tag/pre-4435) signed | 27774 | Photoshop (partial), Procreate (partial) |
 | [SVG-Edit](https://github.com/SVG-Edit/svgedit) | JavaScript | MIT | [v.7.3.3](https://github.com/SVG-Edit/svgedit/releases/tag/v.7.3.3) | 7890 | Canva (partial) |
 | [GIMP](https://github.com/GNOME/gimp) | C | Other | [GIMP_3_2_6](https://github.com/GNOME/gimp/releases/tag/GIMP_3_2_6) | 6555 | Photoshop (partial) |
 | [Pinta](https://github.com/PintaProject/Pinta) | C# | MIT | [3.1.2](https://github.com/PintaProject/Pinta/releases/tag/3.1.2) signed | 4114 | Photoshop (partial) |

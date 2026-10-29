@@ -10,7 +10,7 @@ Run continuous queries, joins and aggregations over event streams.
 | [Hazelcast](https://github.com/hazelcast/hazelcast) | Java | Other | [v5.7.0](https://github.com/hazelcast/hazelcast/releases/tag/v5.7.0) | 6624 | Amazon Managed Service for Apache Flink (partial) |
 | [Materialize](https://github.com/MaterializeInc/materialize) | Rust | Other | [v26.48.0](https://github.com/MaterializeInc/materialize/releases/tag/v26.48.0) | 6390 | ksqlDB (partial) |
 | [Arroyo](https://github.com/ArroyoSystems/arroyo) | Rust | Apache-2.0 | [v0.15.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.15.0) | 5070 | Amazon Managed Service for Apache Flink (partial) |
-| [Timeplus Proton](https://github.com/timeplus-io/proton) | C++ | Apache-2.0 | [v3.0.31](https://github.com/timeplus-io/proton/releases/tag/v3.0.31) | 2276 | ksqlDB (partial) |
+| [Timeplus Proton](https://github.com/timeplus-io/proton) | C++ | Apache-2.0 | [v3.0.31](https://github.com/timeplus-io/proton/releases/tag/v3.0.31) | 2277 | ksqlDB (partial) |
 | [Feldera](https://github.com/feldera/feldera) | Rust | Other | [v0.371.0](https://github.com/feldera/feldera/releases/tag/v0.371.0) | 2144 | none |
 | [Bytewax](https://github.com/bytewax/bytewax) | Python | Apache-2.0 | [v0.21.1](https://github.com/bytewax/bytewax/releases/tag/v0.21.1) signed | 2066 | Google Cloud Dataflow (partial) |
 | [ksqlDB](https://github.com/confluentinc/ksql) | Java | Other | [v0.6.0-docs](https://github.com/confluentinc/ksql/releases/tag/v0.6.0-docs) signed | 316 | none |

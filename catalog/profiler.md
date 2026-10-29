@@ -9,7 +9,7 @@ Measure where a program spends its time and memory, draw it as flame graphs or t
 | [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.2](https://github.com/benfred/py-spy/releases/tag/v0.4.2) | 15612 | none |
 | [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15400 | none |
 | [Scalene](https://github.com/plasma-umass/scalene) | Python | Apache-2.0 | [v2.4.0](https://github.com/plasma-umass/scalene/releases/tag/v2.4.0) | 13536 | none |
-| [pprof](https://github.com/google/pprof) | Go | Apache-2.0 | none | 9316 | none |
+| [pprof](https://github.com/google/pprof) | Go | Apache-2.0 | none | 9315 | none |
 | [async-profiler](https://github.com/async-profiler/async-profiler) | C++ | Apache-2.0 | [v4.6](https://github.com/async-profiler/async-profiler/releases/tag/v4.6) signed | 9176 | JProfiler (partial), YourKit Java Profiler (partial) |
 | [pyinstrument](https://github.com/joerick/pyinstrument) | Python | BSD-3-Clause | [v5.1.3](https://github.com/joerick/pyinstrument/releases/tag/v5.1.3) | 8020 | none |
 | [speedscope](https://github.com/jlfwong/speedscope) | TypeScript | MIT | [v1.25.0](https://github.com/jlfwong/speedscope/releases/tag/v1.25.0) | 6776 | none |

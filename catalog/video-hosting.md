@@ -4,8 +4,8 @@ Publish videos and live streams on your own site for an audience to watch.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r2](https://github.com/ossrs/srs/releases/tag/v6.0-r2) | 29391 | Wowza Streaming Engine (partial) |
-| [MediaMTX](https://github.com/bluenviron/mediamtx) | Go | MIT | [v1.21.3](https://github.com/bluenviron/mediamtx/releases/tag/v1.21.3) signed | 20548 | Wowza Streaming Engine (partial) |
+| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r2](https://github.com/ossrs/srs/releases/tag/v6.0-r2) | 29392 | Wowza Streaming Engine (partial) |
+| [MediaMTX](https://github.com/bluenviron/mediamtx) | Go | MIT | [v1.21.3](https://github.com/bluenviron/mediamtx/releases/tag/v1.21.3) signed | 20550 | Wowza Streaming Engine (partial) |
 | [PeerTube](https://github.com/Chocobozzz/PeerTube) | TypeScript | AGPL-3.0 | [v8.3.2](https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.2) signed | 15375 | YouTube (full), Vimeo (full), Twitch (partial) |
 | [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11632 | Twitch (partial) |
 | [Restreamer](https://github.com/datarhei/restreamer) | HTML | Apache-2.0 | [v2.12.0](https://github.com/datarhei/restreamer/releases/tag/v2.12.0) | 5231 | Twitch (partial), Wowza Streaming Engine (partial) |
@@ -14,7 +14,7 @@ Publish videos and live streams on your own site for an audience to watch.
 | [Red5 Server](https://github.com/Red5/red5-server) | HTML | Apache-2.0 | [v2.0.50](https://github.com/Red5/red5-server/releases/tag/v2.0.50) | 3415 | Wowza Streaming Engine (full) |
 | [OvenMediaEngine](https://github.com/OvenMediaLabs/OvenMediaEngine) | C++ | AGPL-3.0 | [v0.21.0](https://github.com/OvenMediaLabs/OvenMediaEngine/releases/tag/v0.21.0) | 3294 | Wowza Streaming Engine (full) |
 | [AVideo](https://github.com/WWBN/AVideo) | JavaScript | Other | [v29.6.0](https://github.com/WWBN/AVideo/releases/tag/v29.6.0) | 2109 | YouTube (partial), Vimeo (partial), Twitch (partial) |
-| [Fireshare](https://github.com/fireshare-app/fireshare) | JavaScript | GPL-3.0 | [v1.9.0](https://github.com/fireshare-app/fireshare/releases/tag/v1.9.0) signed | 1510 | YouTube (partial) |
+| [Fireshare](https://github.com/fireshare-app/fireshare) | JavaScript | GPL-3.0 | [v1.9.0](https://github.com/fireshare-app/fireshare/releases/tag/v1.9.0) signed | 1511 | YouTube (partial) |
 | [ClipBucket](https://github.com/MacWarrior/clipbucket-v5) | JavaScript | Other | [5.5.3-#221](https://github.com/MacWarrior/clipbucket-v5/releases/tag/5.5.3-%23221) signed | 182 | YouTube (partial), Vimeo (partial) |
 
 [All categories](../README.md#catalog)

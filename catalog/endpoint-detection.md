@@ -8,7 +8,7 @@ Query laptops and servers, hunt for threats on them and collect forensic evidenc
 | [GRR Rapid Response](https://github.com/google/grr) | Python | Apache-2.0 | [v.4.0.0.0-release](https://github.com/google/grr/releases/tag/v.4.0.0.0-release) signed | 5107 | Velociraptor (full), CrowdStrike Falcon (partial) |
 | [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4391 | CrowdStrike Falcon (partial) |
 | [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.17.1](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.17.1) signed | 3701 | Splunk (partial) |
-| [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.3.1](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.3.1) signed | 3423 | Splunk (partial) |
+| [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.3.1](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.3.1) signed | 3424 | Splunk (partial) |
 | [OpenEDR](https://github.com/ComodoSecurity/openedr) | C++ | Other | [release-2.5.1](https://github.com/ComodoSecurity/openedr/releases/tag/release-2.5.1) signed | 2739 | CrowdStrike Falcon (partial) |
 
 [All categories](../README.md#catalog)
