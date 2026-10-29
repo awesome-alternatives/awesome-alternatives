@@ -118,6 +118,10 @@ export function comparePairs<T extends PairTool>(tools: readonly T[]): Pair<T>[]
     .sort((x, y) => x.slug.localeCompare(y.slug));
 }
 
+export function indexablePair<T extends PairTool>(pair: Pair<T>): boolean {
+  return pair.edges.length > 0 || pair.shared.length > 1;
+}
+
 export function comparableWith<T extends PairTool>(pairs: readonly Pair<T>[], slug: string): string[] {
   return pairs
     .filter((pair) => pair.a.slug === slug || pair.b.slug === slug)

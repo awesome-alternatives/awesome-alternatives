@@ -1,7 +1,7 @@
 import type { EnrichedTool } from "../../../scripts/lib/types.ts";
 import { LOCALES, pathFor } from "../i18n/index.ts";
 import { isReplaced } from "./canonical.ts";
-import { comparePairs } from "./compare.ts";
+import { comparePairs, indexablePair } from "./compare.ts";
 import { type Dated, lastModified } from "./freshness.ts";
 import { listedOwners } from "./owners.ts";
 import { slugify } from "./slug.ts";
@@ -40,7 +40,10 @@ export function lastmodByPath(tools: readonly (Dated & { slug: string })[]): Map
 
 export function unindexedPaths(tools: CatalogEntry[]): string[] {
   const replaced = tools.filter((t) => isReplaced(tools, t.slug)).map((t) => `/tools/${t.slug}/`);
-  return LOCALES.flatMap((locale) => replaced.map((path) => pathFor(locale, path)));
+  const thin = comparePairs(tools)
+    .filter((pair) => !indexablePair(pair))
+    .map((pair) => `/compare/${pair.slug}/`);
+  return LOCALES.flatMap((locale) => [...replaced, ...thin].map((path) => pathFor(locale, path)));
 }
 
 export function bannedPaths(banned: readonly { slug: string }[]): string[] {
