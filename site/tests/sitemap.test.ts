@@ -87,6 +87,24 @@ test("comparisons are listed in every locale", () => {
   assert.ok(!unindexedPaths(catalog).some((path) => path.includes("/compare/")));
 });
 
+test("a comparison that only shares one target stays out of the sitemap in every locale", () => {
+  const withVault = [
+    ...catalog,
+    {
+      slug: "infisical",
+      repo: { fullName: "Infisical/infisical", archived: false, stars: 500 },
+      replaces: [{ tool: "vault", fit: "full" as const, note: "Secrets with a web UI." }],
+    },
+  ];
+  const paths = expectedPaths(withVault);
+  for (const locale of LOCALES) {
+    const prefix = locale === "en" ? "" : `/${locale}`;
+    assert.ok(!paths.includes(`${prefix}/compare/ferrvault-vs-infisical/`));
+    assert.ok(unindexedPaths(withVault).includes(`${prefix}/compare/ferrvault-vs-infisical/`), `${locale} indexes a thin pair`);
+    assert.ok(paths.includes(`${prefix}/compare/cocogitto-vs-ferrflow/`));
+  }
+});
+
 test("auditSitemap flags an unindexed page the sitemap still lists", () => {
   const listed = [...expectedPaths(catalog), "/de/tools/ferrflow/"].map((path) => new URL(path, SITE).href);
   assert.deepEqual(auditSitemap(SITE, catalog, listed).unwanted, [new URL("/de/tools/ferrflow/", SITE).href]);
