@@ -4,12 +4,12 @@ Host email for your own domains, archive and search every message for retention,
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v16.0.1](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1) signed | 19704 | Google Workspace (partial) |
-| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.3.7](https://github.com/postalserver/postal/releases/tag/3.3.7) signed | 16899 | SendGrid (full) |
-| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v1.0.1](https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.1) | 15473 | Google Workspace (partial), Microsoft 365 (partial) |
+| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v16.0.1](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v16.0.1) signed | 19705 | Google Workspace (partial) |
+| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.3.7](https://github.com/postalserver/postal/releases/tag/3.3.7) signed | 16900 | SendGrid (full) |
+| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v1.0.1](https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.1) | 15485 | Google Workspace (partial), Microsoft 365 (partial) |
 | [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15446 | Google Workspace (partial) |
 | [mailcow](https://github.com/mailcow/mailcow-dockerized) | JavaScript | GPL-3.0 | [2026-10](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-10) signed | 13715 | Google Workspace (partial), Microsoft 365 (partial) |
-| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.67](https://github.com/Mailu/Mailu/releases/tag/2024.06.67) signed | 7592 | Google Workspace (partial) |
+| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.67](https://github.com/Mailu/Mailu/releases/tag/2024.06.67) signed | 7591 | Google Workspace (partial) |
 | [Maddy](https://github.com/foxcpp/maddy) | Go | GPL-3.0 | [v0.9.6](https://github.com/foxcpp/maddy/releases/tag/v0.9.6) signed | 6116 | Google Workspace (partial) |
 | [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5920 | Google Workspace (partial) |
 | [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.3.5](https://github.com/haraka/Haraka/releases/tag/v3.3.5) signed | 5627 | SendGrid (partial) |
@@ -27,7 +27,7 @@ Host email for your own domains, archive and search every message for retention,
 | [Cyrus IMAP](https://github.com/cyrusimap/cyrus-imapd) | C | Other | [cyrus-imapd-3.12.4](https://github.com/cyrusimap/cyrus-imapd/releases/tag/cyrus-imapd-3.12.4) signed | 652 | Google Workspace (partial) |
 | [OpenSMTPD](https://github.com/OpenSMTPD/OpenSMTPD) | C | Other | [7.9.0p0](https://github.com/OpenSMTPD/OpenSMTPD/releases/tag/7.9.0p0) | 586 | Google Workspace (partial) |
 | [chatmail relay](https://github.com/chatmail/relay) | Python | MIT | [1.13.0](https://github.com/chatmail/relay/releases/tag/1.13.0) | 493 | none |
-| [piler](https://github.com/jsuto/piler) | PHP | Other | [piler-1.4.9](https://github.com/jsuto/piler/releases/tag/piler-1.4.9) signed | 356 | MailStore (full), Mimecast (partial) |
+| [piler](https://github.com/jsuto/piler) | PHP | Other | [piler-1.4.9](https://github.com/jsuto/piler/releases/tag/piler-1.4.9) signed | 357 | MailStore (full), Mimecast (partial) |
 | [DmarcSrg](https://github.com/liuch/dmarc-srg) | PHP | GPL-3.0 | [v2.3](https://github.com/liuch/dmarc-srg/releases/tag/v2.3) | 301 | dmarcian (partial) |
 
 [All categories](../README.md#catalog)

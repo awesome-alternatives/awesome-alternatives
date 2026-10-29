@@ -4,10 +4,10 @@ Apps that play YouTube and other video sites without ads or a Google account.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [NewPipe](https://github.com/TeamNewPipe/NewPipe) | Java | GPL-3.0 | [v0.29.1](https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1) | 40341 | YouTube (partial) |
-| [SmartTube](https://github.com/yuliskov/SmartTube) | Java | MIT | [32.68s](https://github.com/yuliskov/SmartTube/releases/tag/32.68s) | 35676 | YouTube (partial) |
-| [FreeTube](https://github.com/FreeTubeApp/FreeTube) | Vue | AGPL-3.0 | [v0.25.3-beta](https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta) signed | 22228 | YouTube (partial) |
+| [NewPipe](https://github.com/TeamNewPipe/NewPipe) | Java | GPL-3.0 | [v0.29.1](https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1) | 40351 | YouTube (partial) |
+| [SmartTube](https://github.com/yuliskov/SmartTube) | Java | MIT | [32.68s](https://github.com/yuliskov/SmartTube/releases/tag/32.68s) | 35702 | YouTube (partial) |
+| [FreeTube](https://github.com/FreeTubeApp/FreeTube) | Vue | AGPL-3.0 | [v0.25.3-beta](https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta) signed | 22245 | YouTube (partial) |
 | [LibreTube](https://github.com/libre-tube/LibreTube) | Kotlin | GPL-3.0 | [v32.1](https://github.com/libre-tube/LibreTube/releases/tag/v32.1) | 12909 | YouTube (partial) |
-| [Grayjay](https://github.com/futo-org/grayjay-android) | Kotlin | Other | [393](https://github.com/futo-org/grayjay-android/releases/tag/393) | 1841 | YouTube (partial) |
+| [Grayjay](https://github.com/futo-org/grayjay-android) | Kotlin | Other | [396](https://github.com/futo-org/grayjay-android/releases/tag/396) | 1841 | YouTube (partial) |
 
 [All categories](../README.md#catalog)

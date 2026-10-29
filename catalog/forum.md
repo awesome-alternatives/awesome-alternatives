@@ -4,10 +4,10 @@ Community forums, link aggregators and question and answer sites.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.9.1](https://github.com/discourse/discourse/releases/tag/v2026.9.1) | 48027 | Circle (full), Reddit (partial), Stack Internal (partial) |
+| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.9.1](https://github.com/discourse/discourse/releases/tag/v2026.9.1) | 48029 | Circle (full), Reddit (partial), Stack Internal (partial) |
 | [Apache Answer](https://github.com/apache/answer) | Go | Apache-2.0 | [v2.0.3](https://github.com/apache/answer/releases/tag/v2.0.3) | 15702 | Stack Internal (full) |
-| [NodeBB](https://github.com/NodeBB/NodeBB) | JavaScript | GPL-3.0 | [v4.16.5](https://github.com/NodeBB/NodeBB/releases/tag/v4.16.5) | 15243 | Circle (partial), Reddit (partial) |
-| [Lemmy](https://github.com/LemmyNet/lemmy) | Rust | AGPL-3.0 | [0.19.21](https://github.com/LemmyNet/lemmy/releases/tag/0.19.21) | 14653 | Reddit (full) |
+| [NodeBB](https://github.com/NodeBB/NodeBB) | JavaScript | GPL-3.0 | [v4.16.5](https://github.com/NodeBB/NodeBB/releases/tag/v4.16.5) | 15244 | Circle (partial), Reddit (partial) |
+| [Lemmy](https://github.com/LemmyNet/lemmy) | Rust | AGPL-3.0 | [0.19.21](https://github.com/LemmyNet/lemmy/releases/tag/0.19.21) | 14654 | Reddit (full) |
 | [Flarum](https://github.com/flarum/framework) | PHP | MIT | [v2.0.2](https://github.com/flarum/framework/releases/tag/v2.0.2) signed | 6764 | Circle (partial), Reddit (partial) |
 | [Lobsters](https://github.com/lobsters/lobsters) | Ruby | Other | none | 4853 | Reddit (partial) |
 | [Misago](https://github.com/rafalp/Misago) | Python | GPL-2.0 | [0.39.6](https://github.com/rafalp/Misago/releases/tag/0.39.6) | 2781 | Discourse (partial), vBulletin (full) |
@@ -15,7 +15,7 @@ Community forums, link aggregators and question and answer sites.
 | [Talkyard](https://github.com/debiki/talkyard) | TypeScript | AGPL-3.0 | [tyse-v1.2026.003-f220a7d9f-regular](https://github.com/debiki/talkyard/releases/tag/tyse-v1.2026.003-f220a7d9f-regular) | 1814 | Stack Internal (partial) |
 | [MyBB](https://github.com/mybb/mybb) | PHP | LGPL-3.0 | [mybb_1841](https://github.com/mybb/mybb/releases/tag/mybb_1841) | 1246 | vBulletin (full), Invision Community (partial) |
 | [Scoold](https://github.com/Erudika/scoold) | Java | Apache-2.0 | [1.70.2](https://github.com/Erudika/scoold/releases/tag/1.70.2) signed | 921 | Stack Internal (partial) |
-| [Simple Machines Forum](https://github.com/SimpleMachines/SMF) | PHP | Other | [v2.1.8](https://github.com/SimpleMachines/SMF/releases/tag/v2.1.8) signed | 754 | vBulletin (full), Invision Community (partial) |
+| [Simple Machines Forum](https://github.com/SimpleMachines/SMF) | PHP | Other | [v2.1.8](https://github.com/SimpleMachines/SMF/releases/tag/v2.1.8) signed | 755 | vBulletin (full), Invision Community (partial) |
 | [Mbin](https://github.com/MbinOrg/mbin) | PHP | AGPL-3.0 | [v1.11.0](https://github.com/MbinOrg/mbin/releases/tag/v1.11.0) signed | 431 | Reddit (full) |
 
 [All categories](../README.md#catalog)

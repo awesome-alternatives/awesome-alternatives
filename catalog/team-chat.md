@@ -4,12 +4,12 @@ Self-hosted messaging for teams.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [8.9.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/8.9.0) | 46349 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
+| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [8.9.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/8.9.0) | 46350 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
 | [Mattermost](https://github.com/mattermost/mattermost) | TypeScript | Other | [v12.0.1](https://github.com/mattermost/mattermost/releases/tag/v12.0.1) signed | 39464 | Slack (full), Microsoft Teams (partial) |
-| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [12.3](https://github.com/zulip/zulip/releases/tag/12.3) | 26134 | Mattermost (full), Slack (full) |
-| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13541 | WhatsApp (partial) |
-| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1028.192211](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1028.192211) signed | 10702 | Discord (full) |
-| [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.939](https://github.com/mumble-voip/mumble/releases/tag/v1.5.939) | 8372 | Discord (partial) |
+| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [12.3](https://github.com/zulip/zulip/releases/tag/12.3) | 26137 | Mattermost (full), Slack (full) |
+| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13542 | WhatsApp (partial) |
+| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1028.192211](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1028.192211) signed | 10710 | Discord (full) |
+| [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.939](https://github.com/mumble-voip/mumble/releases/tag/v1.5.939) | 8373 | Discord (partial) |
 | [ejabberd](https://github.com/processone/ejabberd) | Erlang | Other | [26.09](https://github.com/processone/ejabberd/releases/tag/26.09) | 6749 | Slack (partial) |
 | [Campfire](https://github.com/basecamp/once-campfire) | Ruby | MIT | [v1.5.6](https://github.com/basecamp/once-campfire/releases/tag/v1.5.6) signed | 4805 | Slack (partial) |
 | [Synapse](https://github.com/element-hq/synapse) | Python | AGPL-3.0 | [v1.164.1](https://github.com/element-hq/synapse/releases/tag/v1.164.1) signed | 4741 | Slack (partial), Microsoft Teams (partial), Discord (partial) |

@@ -4,10 +4,10 @@ Write presentations, often from Markdown or code instead of a visual editor.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [reveal.js](https://github.com/hakimel/reveal.js) | JavaScript | MIT | [6.0.2](https://github.com/hakimel/reveal.js/releases/tag/6.0.2) | 72487 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
-| [Slidev](https://github.com/slidevjs/slidev) | TypeScript | MIT | [v53.0.0](https://github.com/slidevjs/slidev/releases/tag/v53.0.0) signed | 49267 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
-| [Presenton](https://github.com/presenton/presenton) | TypeScript | Apache-2.0 | [electron-v0.9.12-beta](https://github.com/presenton/presenton/releases/tag/electron-v0.9.12-beta) signed | 11457 | Canva (partial) |
+| [reveal.js](https://github.com/hakimel/reveal.js) | JavaScript | MIT | [6.0.2](https://github.com/hakimel/reveal.js/releases/tag/6.0.2) | 72491 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
+| [Slidev](https://github.com/slidevjs/slidev) | TypeScript | MIT | [v53.0.0](https://github.com/slidevjs/slidev/releases/tag/v53.0.0) signed | 49283 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
+| [Presenton](https://github.com/presenton/presenton) | TypeScript | Apache-2.0 | [electron-v0.9.12-beta](https://github.com/presenton/presenton/releases/tag/electron-v0.9.12-beta) signed | 11476 | Canva (partial) |
 | [presenterm](https://github.com/mfontanini/presenterm) | Rust | BSD-2-Clause | [v0.16.1](https://github.com/mfontanini/presenterm/releases/tag/v0.16.1) signed | 8941 | Microsoft PowerPoint (partial), Keynote (partial) |
-| [Marp CLI](https://github.com/marp-team/marp-cli) | TypeScript | MIT | [v4.5.1](https://github.com/marp-team/marp-cli/releases/tag/v4.5.1) | 3895 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
+| [Marp CLI](https://github.com/marp-team/marp-cli) | TypeScript | MIT | [v4.5.1](https://github.com/marp-team/marp-cli/releases/tag/v4.5.1) | 3896 | Microsoft PowerPoint (partial), Google Slides (partial), Keynote (partial) |
 
 [All categories](../README.md#catalog)

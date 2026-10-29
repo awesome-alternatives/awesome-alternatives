@@ -5,7 +5,7 @@ Show which directories and files take up the space on a disk.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [dust](https://github.com/bootandy/dust) | Rust | Apache-2.0 | [v1.2.6](https://github.com/bootandy/dust/releases/tag/v1.2.6) | 12562 | DaisyDisk (partial) |
-| [dua](https://github.com/Byron/dua-cli) | Rust | MIT | [dua-core-v5.0.1](https://github.com/Byron/dua-cli/releases/tag/dua-core-v5.0.1) | 6397 | DaisyDisk (partial) |
-| [gdu](https://github.com/dundee/gdu) | Go | MIT | [v5.38.0](https://github.com/dundee/gdu/releases/tag/v5.38.0) signed | 6165 | DaisyDisk (partial), WizTree (partial) |
+| [dua](https://github.com/Byron/dua-cli) | Rust | MIT | [dua-core-v5.0.1](https://github.com/Byron/dua-cli/releases/tag/dua-core-v5.0.1) | 6399 | DaisyDisk (partial) |
+| [gdu](https://github.com/dundee/gdu) | Go | MIT | [v5.38.0](https://github.com/dundee/gdu/releases/tag/v5.38.0) signed | 6166 | DaisyDisk (partial), WizTree (partial) |
 
 [All categories](../README.md#catalog)
