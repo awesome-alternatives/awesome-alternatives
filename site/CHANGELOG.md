@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.140.7] - 2026-10-29
+
+### Bug Fixes
+
+- fix(site): keep comparisons without a direct or repeated relation out of the index (#466)
+
 ## [0.140.6] - 2026-10-29
 
 ### Bug Fixes
