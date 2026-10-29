@@ -1,5 +1,5 @@
 name: Docusaurus
-repository: https://github.com/facebook/docusaurus
+repository: https://github.com/meta/docusaurus
 category: documentation-site
 replaces:
   - tool: gitbook
