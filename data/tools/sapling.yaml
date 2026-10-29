@@ -1,5 +1,5 @@
 name: Sapling
-repository: https://github.com/facebook/sapling
+repository: https://github.com/meta/sapling
 category: git-client
 replaces:
   - tool: git
