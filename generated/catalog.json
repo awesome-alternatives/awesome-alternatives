@@ -244444,7 +244444,7 @@
     {
       "slug": "pyrefly",
       "name": "Pyrefly",
-      "repository": "https://github.com/facebook/pyrefly",
+      "repository": "https://github.com/meta/pyrefly",
       "category": "python-type-checker",
       "replaces": [
         {
@@ -244461,7 +244461,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-25T13:41:38.000Z",
-      "editedAt": "2026-09-25T13:41:38.000Z",
+      "editedAt": "2026-10-29T15:34:25.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meta/pyrefly",
@@ -244469,7 +244469,7 @@
         "homepage": "http://pyrefly.org/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 7164,
+        "stars": 7169,
         "forks": 579,
         "topics": [
           "code-quality",
@@ -244495,17 +244495,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2025-02-19T21:09:33Z",
-        "pushedAt": "2026-10-29T03:35:58Z",
+        "pushedAt": "2026-10-29T15:23:23Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 142,
+        "stars": 147,
         "exact": true,
-        "since": "2026-09-29T05:17:16.292Z"
+        "since": "2026-09-29T15:34:57.204Z"
       },
       "starHistory": {
         "from": "2026-09-28",
-        "stars": [7022,7030,7034,7037,7042,7044,7044,7047,7049,7051,7054,7067,7073,7077,7079,7083,7090,7092,7094,7099,7099,7108,7117,7118,7120,7127,7133,7140,7146,7154,7156,7164]
+        "stars": [7022,7030,7034,7037,7042,7044,7044,7047,7049,7051,7054,7067,7073,7077,7079,7083,7090,7092,7094,7099,7099,7108,7117,7118,7120,7127,7133,7140,7146,7154,7156,7169]
       },
       "release": {
         "tag": "1.4.0",
@@ -244552,7 +244552,7 @@
         }
       ],
       "contributors": {
-        "count": 53,
+        "count": 52,
         "capped": true
       },
       "platforms": [
@@ -244582,9 +244582,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
