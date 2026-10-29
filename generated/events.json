@@ -4928,7 +4928,6 @@
   {"type":"released","slug":"harlequin","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"v2.16.1","to":"v2.16.2"},
   {"type":"released","slug":"jc","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"v1.26.0","to":"v1.26.1"},
   {"type":"released","slug":"knope","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"knope/v0.23.0","to":"knope/v0.23.1"},
-  {"type":"released","slug":"lfsx","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"v1.26.30","to":"v1.26.31"},
   {"type":"released","slug":"librera","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"9.6.39","to":"10.0.0"},
   {"type":"released","slug":"linux","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"v7.2","to":"v7.3"},
   {"type":"released","slug":"litellm","at":"2026-10-19T05:17:14.244Z","commit":"214e923fa6aee49a5af3d0056415b211aa7b59fc","from":"v1.105.1","to":"v1.106.0"},
@@ -6821,5 +6820,6 @@
   {"type":"released","slug":"z-lua","at":"2026-10-29T05:17:16.292Z","commit":null,"from":"1.8.26","to":"1.8.27"},
   {"type":"released","slug":"zed","at":"2026-10-29T05:17:16.292Z","commit":null,"from":"v1.25.3","to":"v1.26.2"},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-10-29T05:17:16.292Z","commit":null,"from":"v1.5.2","to":"v1.5.3"},
-  {"type":"renamed","slug":"zstd","at":"2026-10-29T05:17:16.292Z","commit":null,"from":"facebook/zstd","to":"meta/zstd"}
+  {"type":"renamed","slug":"zstd","at":"2026-10-29T05:17:16.292Z","commit":null,"from":"facebook/zstd","to":"meta/zstd"},
+  {"type":"released","slug":"lfsx","at":"2026-10-29T12:19:10.512Z","commit":null,"from":"site@2026.10.39","to":"v1.26.43"}
 ]
