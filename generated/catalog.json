@@ -47480,7 +47480,7 @@
     {
       "slug": "buck2",
       "name": "Buck2",
-      "repository": "https://github.com/facebook/buck2",
+      "repository": "https://github.com/meta/buck2",
       "category": "monorepo-tool",
       "replaces": [
         {
@@ -47492,7 +47492,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:22:00.000Z",
-      "editedAt": "2026-10-06T13:22:00.000Z",
+      "editedAt": "2026-10-29T15:34:15.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meta/buck2",
@@ -47500,25 +47500,25 @@
         "homepage": "https://buck2.build/",
         "language": "Rust",
         "license": "Apache-2.0",
-        "stars": 4503,
-        "forks": 416,
+        "stars": 4504,
+        "forks": 417,
         "topics": [],
         "databaseId": 450625045,
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2022-01-21T20:04:00Z",
-        "pushedAt": "2026-10-29T02:13:34Z",
+        "pushedAt": "2026-10-29T15:00:55Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 48,
+        "stars": 49,
         "exact": false,
         "since": "2026-10-06T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-10-06",
-        "stars": [4455,4457,4457,4463,4465,4465,4465,4468,4472,4473,4475,4476,4476,4478,4480,4481,4482,4487,4492,4494,4495,4499,4500,4503]
+        "stars": [4455,4457,4457,4463,4465,4465,4465,4468,4472,4473,4475,4476,4476,4478,4480,4481,4482,4487,4492,4494,4495,4499,4500,4504]
       },
       "release": {
         "tag": "latest",
@@ -47565,15 +47565,13 @@
         }
       ],
       "contributors": {
-        "count": 62,
+        "count": 61,
         "capped": true
       },
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
