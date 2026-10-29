@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.140.11] - 2026-10-29
+
+### Bug Fixes
+
+- chore(catalog): refresh rocksdb
+
 ## [0.140.10] - 2026-10-29
 
 ### Bug Fixes
