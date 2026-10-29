@@ -4,8 +4,8 @@ Write, play back and engrave sheet music and tablature.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MuseScore](https://github.com/musescore/MuseScore) | C++ | Other | [v4.7.6](https://github.com/musescore/MuseScore/releases/tag/v4.7.6) signed | 15313 | Sibelius (full), Guitar Pro (partial) |
-| [TuxGuitar](https://github.com/helge17/tuxguitar) | Java | none | [2.1.1](https://github.com/helge17/tuxguitar/releases/tag/2.1.1) | 1593 | Guitar Pro (full), Sibelius (partial) |
+| [MuseScore](https://github.com/musescore/MuseScore) | C++ | Other | [v4.7.6](https://github.com/musescore/MuseScore/releases/tag/v4.7.6) signed | 15319 | Sibelius (full), Guitar Pro (partial) |
+| [TuxGuitar](https://github.com/helge17/tuxguitar) | Java | none | [2.1.1](https://github.com/helge17/tuxguitar/releases/tag/2.1.1) | 1597 | Guitar Pro (full), Sibelius (partial) |
 | [Frescobaldi](https://github.com/frescobaldi/frescobaldi) | Python | GPL-2.0 | [v4.0.7](https://github.com/frescobaldi/frescobaldi/releases/tag/v4.0.7) signed | 958 | Sibelius (partial), Guitar Pro (partial) |
 
 [All categories](../README.md#catalog)

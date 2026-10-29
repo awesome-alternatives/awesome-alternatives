@@ -4,13 +4,13 @@ Search file contents recursively, or find files by name, type, size or date, fro
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 69517 | The Silver Searcher (full), ack (full) |
-| [fd](https://github.com/sharkdp/fd) | Rust | Apache-2.0 | [v10.5.0](https://github.com/sharkdp/fd/releases/tag/v10.5.0) signed | 44877 | none |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 69549 | The Silver Searcher (full), ack (full) |
+| [fd](https://github.com/sharkdp/fd) | Rust | Apache-2.0 | [v10.5.0](https://github.com/sharkdp/fd/releases/tag/v10.5.0) signed | 44888 | none |
 | [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) | C | Apache-2.0 | [2.2.0](https://github.com/ggreer/the_silver_searcher/releases/tag/2.2.0) | 27126 | ack (full) |
-| [ast-grep](https://github.com/ast-grep/ast-grep) | Rust | MIT | [0.51.0](https://github.com/ast-grep/ast-grep/releases/tag/0.51.0) signed | 16377 | ripgrep (partial) |
-| [ripgrep-all](https://github.com/phiresky/ripgrep-all) | Rust | Other | [v0.10.10](https://github.com/phiresky/ripgrep-all/releases/tag/v0.10.10) | 9900 | none |
-| [ugrep](https://github.com/Genivia/ugrep) | C++ | BSD-3-Clause | [v7.8.5](https://github.com/Genivia/ugrep/releases/tag/v7.8.5) | 3325 | The Silver Searcher (full), ack (full) |
-| [bfs](https://github.com/tavianator/bfs) | C | 0BSD | [4.1.5](https://github.com/tavianator/bfs/releases/tag/4.1.5) signed | 1281 | none |
+| [ast-grep](https://github.com/ast-grep/ast-grep) | Rust | MIT | [0.51.0](https://github.com/ast-grep/ast-grep/releases/tag/0.51.0) signed | 16389 | ripgrep (partial) |
+| [ripgrep-all](https://github.com/phiresky/ripgrep-all) | Rust | Other | [v0.10.10](https://github.com/phiresky/ripgrep-all/releases/tag/v0.10.10) | 9904 | none |
+| [ugrep](https://github.com/Genivia/ugrep) | C++ | BSD-3-Clause | [v7.8.5](https://github.com/Genivia/ugrep/releases/tag/v7.8.5) | 3326 | The Silver Searcher (full), ack (full) |
+| [bfs](https://github.com/tavianator/bfs) | C | 0BSD | [4.1.5](https://github.com/tavianator/bfs/releases/tag/4.1.5) signed | 1280 | none |
 | [ack](https://github.com/beyondgrep/ack3) | Perl | Other | [v3.10.0](https://github.com/beyondgrep/ack3/releases/tag/v3.10.0) | 832 | none |
 
 [All categories](../README.md#catalog)
