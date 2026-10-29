@@ -1,5 +1,5 @@
 name: Buck2
-repository: https://github.com/facebook/buck2
+repository: https://github.com/meta/buck2
 category: monorepo-tool
 replaces:
   - tool: bazel
