@@ -4,16 +4,16 @@ Install dependencies, manage environments and lock Python projects.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.6](https://github.com/astral-sh/uv/releases/tag/0.13.6) signed | 91344 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
-| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.14](https://github.com/pyenv/pyenv/releases/tag/v2.8.14) | 45170 | none |
-| [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.1](https://github.com/python-poetry/poetry/releases/tag/2.5.1) | 34322 | Pipenv (full) |
-| [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.10.4](https://github.com/pypa/pipenv/releases/tag/v2026.10.4) | 25018 | none |
-| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.18.9](https://github.com/pypa/pipx/releases/tag/1.18.9) | 12981 | none |
+| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.6](https://github.com/astral-sh/uv/releases/tag/0.13.6) signed | 91348 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
+| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.14](https://github.com/pyenv/pyenv/releases/tag/v2.8.14) | 45169 | none |
+| [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.1](https://github.com/python-poetry/poetry/releases/tag/2.5.1) | 34323 | Pipenv (full) |
+| [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.10.4](https://github.com/pypa/pipenv/releases/tag/v2026.10.4) | 25017 | none |
+| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.18.10](https://github.com/pypa/pipx/releases/tag/1.18.10) | 12981 | none |
 | [pip](https://github.com/pypa/pip) | Python | MIT | [26.2.2](https://github.com/pypa/pip/releases/tag/26.2.2) | 10303 | none |
-| [PDM](https://github.com/pdm-project/pdm) | Python | MIT | [2.29.4](https://github.com/pdm-project/pdm/releases/tag/2.29.4) | 8656 | Poetry (full), Pipenv (full) |
+| [PDM](https://github.com/pdm-project/pdm) | Python | MIT | [2.29.5](https://github.com/pdm-project/pdm/releases/tag/2.29.5) | 8657 | Poetry (full), Pipenv (full) |
 | [mamba](https://github.com/mamba-org/mamba) | C++ | BSD-3-Clause | [2.10.0](https://github.com/mamba-org/mamba/releases/tag/2.10.0) | 8112 | conda (drop-in) |
 | [pip-tools](https://github.com/pypa/pip-tools) | Python | BSD-3-Clause | [v7.6.2](https://github.com/pypa/pip-tools/releases/tag/v7.6.2) | 8004 | Pipenv (partial), Poetry (partial) |
-| [pixi](https://github.com/prefix-dev/pixi) | Rust | BSD-3-Clause | [v0.83.0](https://github.com/prefix-dev/pixi/releases/tag/v0.83.0) | 7920 | conda (full), Poetry (partial) |
+| [pixi](https://github.com/prefix-dev/pixi) | Rust | BSD-3-Clause | [v0.83.0](https://github.com/prefix-dev/pixi/releases/tag/v0.83.0) | 7921 | conda (full), Poetry (partial) |
 | [conda](https://github.com/conda/conda) | Python | Other | [26.9.4](https://github.com/conda/conda/releases/tag/26.9.4) signed | 7546 | none |
 | [Hatch](https://github.com/pypa/hatch) | Python | MIT | [hatch-v1.18.2](https://github.com/pypa/hatch/releases/tag/hatch-v1.18.2) signed | 7247 | Poetry (partial), Pipenv (partial) |
 

@@ -4,9 +4,9 @@ Run a remote-access or site-to-site VPN server for your users and networks.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30447 | NordVPN (partial) |
-| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27329 | OpenVPN Access Server (partial) |
-| [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.8](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.8) | 14741 | OpenVPN Access Server (partial) |
+| [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30448 | NordVPN (partial) |
+| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27333 | OpenVPN Access Server (partial) |
+| [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.8](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.8) | 14742 | OpenVPN Access Server (partial) |
 | [SoftEther VPN](https://github.com/SoftEtherVPN/SoftEtherVPN) | C | Apache-2.0 | [5.2.5188](https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5188) signed | 13685 | OpenVPN Access Server (full) |
 | [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6253 | NordVPN (partial), OpenVPN Access Server (partial) |
 | [Pritunl](https://github.com/pritunl/pritunl) | Python | Other | [1.34.4763.45](https://github.com/pritunl/pritunl/releases/tag/1.34.4763.45) signed | 5038 | OpenVPN Access Server (full) |

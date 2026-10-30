@@ -4,10 +4,10 @@ Open table formats that add transactions, schema evolution and time travel to fi
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Apache Iceberg](https://github.com/apache/iceberg) | Java | Apache-2.0 | [apache-iceberg-1.12.0](https://github.com/apache/iceberg/releases/tag/apache-iceberg-1.12.0) | 9385 | Delta Lake (full), Apache Hudi (full) |
+| [Apache Iceberg](https://github.com/apache/iceberg) | Java | Apache-2.0 | [apache-iceberg-1.12.0](https://github.com/apache/iceberg/releases/tag/apache-iceberg-1.12.0) | 9386 | Delta Lake (full), Apache Hudi (full) |
 | [Delta Lake](https://github.com/delta-io/delta) | Scala | Apache-2.0 | [v4.4.1](https://github.com/delta-io/delta/releases/tag/v4.4.1) signed | 9064 | Apache Iceberg (full), Apache Hudi (full) |
-| [Lance](https://github.com/lance-format/lance) | Rust | Apache-2.0 | [v14.0.2](https://github.com/lance-format/lance/releases/tag/v14.0.2) | 7230 | Apache Iceberg (partial), Delta Lake (partial) |
-| [Apache Hudi](https://github.com/apache/hudi) | Java | Apache-2.0 | [release-1.2.1](https://github.com/apache/hudi/releases/tag/release-1.2.1) | 6345 | Delta Lake (full), Apache Iceberg (full) |
-| [Apache Paimon](https://github.com/apache/paimon) | Java | Apache-2.0 | [release-2.1.0](https://github.com/apache/paimon/releases/tag/release-2.1.0) signed | 3436 | Apache Iceberg (partial), Apache Hudi (partial) |
+| [Lance](https://github.com/lance-format/lance) | Rust | Apache-2.0 | [v14.0.2](https://github.com/lance-format/lance/releases/tag/v14.0.2) | 7233 | Apache Iceberg (partial), Delta Lake (partial) |
+| [Apache Hudi](https://github.com/apache/hudi) | Java | Apache-2.0 | [release-1.2.1](https://github.com/apache/hudi/releases/tag/release-1.2.1) | 6344 | Delta Lake (full), Apache Iceberg (full) |
+| [Apache Paimon](https://github.com/apache/paimon) | Java | Apache-2.0 | [release-2.1.0](https://github.com/apache/paimon/releases/tag/release-2.1.0) signed | 3437 | Apache Iceberg (partial), Apache Hudi (partial) |
 
 [All categories](../README.md#catalog)

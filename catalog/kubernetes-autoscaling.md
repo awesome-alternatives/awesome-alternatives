@@ -4,7 +4,7 @@ Add and remove pods and nodes in a Kubernetes cluster as load and pending work c
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [KEDA](https://github.com/kedacore/keda) | Go | Apache-2.0 | [v2.21.0](https://github.com/kedacore/keda/releases/tag/v2.21.0) signed | 10678 | none |
+| [KEDA](https://github.com/kedacore/keda) | Go | Apache-2.0 | [v2.21.0](https://github.com/kedacore/keda/releases/tag/v2.21.0) signed | 10679 | none |
 | [Cluster Autoscaler](https://github.com/kubernetes/autoscaler) | Go | Apache-2.0 | [vertical-pod-autoscaler-chart-0.15.0](https://github.com/kubernetes/autoscaler/releases/tag/vertical-pod-autoscaler-chart-0.15.0) signed | 9001 | none |
 | [Karpenter](https://github.com/kubernetes-sigs/karpenter) | Go | Apache-2.0 | [v1.15.1](https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.1) signed | 2255 | Cluster Autoscaler (full) |
 

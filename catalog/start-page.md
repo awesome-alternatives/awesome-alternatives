@@ -4,7 +4,7 @@ Replace the browser's new tab page with a clock, links, weather and backgrounds.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Bonjourr](https://github.com/victrme/Bonjourr) | TypeScript | GPL-3.0 | [22.3.0](https://github.com/victrme/Bonjourr/releases/tag/22.3.0) | 2140 | Momentum (full) |
+| [Bonjourr](https://github.com/victrme/Bonjourr) | TypeScript | GPL-3.0 | [22.3.0](https://github.com/victrme/Bonjourr/releases/tag/22.3.0) | 2141 | Momentum (full) |
 | [Mue](https://github.com/mue/mue) | JavaScript | BSD-3-Clause | [v7.6.0](https://github.com/mue/mue/releases/tag/v7.6.0) signed | 769 | Momentum (partial) |
 | [Anori](https://github.com/OlegWock/anori) | TypeScript | AGPL-3.0 | [v2.3.2](https://github.com/OlegWock/anori/releases/tag/v2.3.2) signed | 496 | Momentum (partial) |
 
