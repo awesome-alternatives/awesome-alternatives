@@ -5022,7 +5022,6 @@
   {"type":"released","slug":"krr","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"v1.31.0","to":"v1.31.1"},
   {"type":"released","slug":"kube-vip","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"v1.3.0","to":"v1.3.1"},
   {"type":"released","slug":"langfuse","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"v4.63.0","to":"v4.64.0"},
-  {"type":"released","slug":"lfsx","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"v1.26.31","to":"site@2026.10.31"},
   {"type":"released","slug":"librenms","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"26.9.1.1","to":"26.10.1"},
   {"type":"released","slug":"losslesscut","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"v3.69.0","to":"v3.70.1"},
   {"type":"released","slug":"lxd","at":"2026-10-20T05:17:14.478Z","commit":"35885e0f1bf9ba0f448c9d8b3620264e12b8be56","from":"lxd-6.9","to":"lxd-6.10.0"},
@@ -6983,5 +6982,6 @@
   {"type":"released","slug":"wrenai","at":"2026-10-30T05:17:16.385Z","commit":null,"from":"wren-v0.17.0","to":"wren-v0.17.1"},
   {"type":"released","slug":"zen-browser","at":"2026-10-30T05:17:16.385Z","commit":null,"from":"1.23.4b","to":"1.24b"},
   {"type":"released","slug":"zimfw","at":"2026-10-30T05:17:16.385Z","commit":null,"from":"v1.20.1","to":"v1.20.2"},
-  {"type":"released","slug":"zotero","at":"2026-10-30T05:17:16.385Z","commit":null,"from":"10.0.6","to":"10.0.7"}
+  {"type":"released","slug":"zotero","at":"2026-10-30T05:17:16.385Z","commit":null,"from":"10.0.6","to":"10.0.7"},
+  {"type":"released","slug":"lfsx","at":"2026-10-30T16:14:54.532Z","commit":null,"from":"v1.26.43","to":"v1.26.44"}
 ]
