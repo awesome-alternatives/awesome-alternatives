@@ -1,3 +1,3 @@
 name: Watchman
-repository: https://github.com/facebook/watchman
+repository: https://github.com/meta/watchman
 category: file-watcher
