@@ -97996,27 +97996,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-10-29T12:05:44Z",
+        "pushedAt": "2026-10-31T10:25:49Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-01T05:17:21.909Z"
+        "since": "2026-10-01T10:38:08.985Z"
       },
       "starHistory": {
         "from": "2026-09-30",
         "stars": [4,4,4,6,6,6,6,6,6,6,7,7,7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.35.1",
-        "publishedAt": "2026-10-28T08:50:26Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.1",
+        "tag": "v7.35.2",
+        "publishedAt": "2026-10-31T10:37:33Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.2",
         "source": "release",
         "signed": true,
-        "tagOid": "efeb2aa01e3aa33fdf72ef4bceeb2ced2a77ec4a"
+        "tagOid": "36aa13d2130b4635855b693709d902156eff7960"
       },
       "releases": [
+        {
+          "tag": "v7.35.2",
+          "name": "fix(preview): only update preview comments written by the token's own identity (#1361)",
+          "publishedAt": "2026-10-31T10:37:33Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.2",
+          "prerelease": false
+        },
         {
           "tag": "v7.35.1",
           "name": "fix(git): keep git commands off an inherited GIT_DIR (#1358)",
@@ -98044,18 +98051,11 @@
           "publishedAt": "2026-10-26T19:25:46Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.34.0",
           "prerelease": false
-        },
-        {
-          "tag": "v7.33.4",
-          "name": "fix(release): resume a release interrupted after the release commit (#1349)",
-          "publishedAt": "2026-10-25T11:48:04Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.33.4",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
-        "capped": false
+        "capped": true
       },
       "platforms": [
         {
