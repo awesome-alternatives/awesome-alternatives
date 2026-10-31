@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.140.19] - 2026-10-31
+
+### Bug Fixes
+
+- chore(catalog): refresh ferrflow
+
 ## [0.140.18] - 2026-10-31
 
 ### Bug Fixes
