@@ -320503,13 +320503,13 @@
     {
       "slug": "watchman",
       "name": "Watchman",
-      "repository": "https://github.com/facebook/watchman",
+      "repository": "https://github.com/meta/watchman",
       "category": "file-watcher",
       "replaces": [],
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:22:00.000Z",
-      "editedAt": "2026-10-06T13:22:00.000Z",
+      "editedAt": "2026-10-31T16:51:24.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meta/watchman",
@@ -320517,25 +320517,25 @@
         "homepage": "https://facebook.github.io/watchman/",
         "language": "C++",
         "license": "MIT",
-        "stars": 13759,
-        "forks": 1076,
+        "stars": 13758,
+        "forks": 1077,
         "topics": [],
         "databaseId": 6930489,
         "archived": false,
         "fork": false,
         "private": false,
         "createdAt": "2012-11-29T23:35:52Z",
-        "pushedAt": "2026-10-30T21:45:59Z",
+        "pushedAt": "2026-10-31T07:47:36Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 22,
+        "stars": 21,
         "exact": false,
         "since": "2026-10-06T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-10-06",
-        "stars": [13737,13735,13737,13737,13737,13738,13737,13737,13741,13741,13741,13741,13743,13743,13743,13745,13746,13748,13749,13753,13756,13757,13756,13757,13757,13759]
+        "stars": [13737,13735,13737,13737,13737,13738,13737,13737,13741,13741,13741,13741,13743,13743,13743,13745,13746,13748,13749,13753,13756,13757,13756,13757,13757,13758]
       },
       "release": {
         "tag": "v2026.10.26.00",
@@ -320588,9 +320588,7 @@
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
