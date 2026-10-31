@@ -4688,7 +4688,6 @@
   {"type":"released","slug":"external-secrets","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v2.13.0","to":"helm-chart-2.13.0"},
   {"type":"released","slug":"fabric","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v1.4.523","to":"v1.4.524"},
   {"type":"released","slug":"fastapi","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"0.143.2","to":"0.143.3"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v7.30.2","to":"v7.30.3"},
   {"type":"released","slug":"firefox","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"FIREFOX_159_0b2_BUILD1","to":"FIREFOX_159_0b3_BUILD1"},
   {"type":"released","slug":"firezone","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"gateway-1.6.3","to":"apple-client-1.5.22"},
   {"type":"released","slug":"flowchart-fun","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"1.72.2","to":"1.72.3"},
@@ -7102,5 +7101,6 @@
   {"type":"released","slug":"zrok","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"v2.0.8","to":"v2.0.9"},
   {"type":"released","slug":"ferrflow","at":"2026-10-31T10:38:36.314Z","commit":null,"from":"v7.35.1","to":"v7.35.2"},
   {"type":"released","slug":"lfsx","at":"2026-10-31T15:15:55.683Z","commit":null,"from":"v1.26.44","to":"v1.26.45"},
-  {"type":"released","slug":"stashden","at":"2026-10-31T15:17:25.350Z","commit":null,"from":"v0.53.2","to":"v0.53.3"}
+  {"type":"released","slug":"stashden","at":"2026-10-31T15:17:25.350Z","commit":null,"from":"v0.53.2","to":"v0.53.3"},
+  {"type":"released","slug":"ferrflow","at":"2026-10-31T15:44:07.711Z","commit":null,"from":"v7.35.2","to":"v7.35.3"}
 ]
