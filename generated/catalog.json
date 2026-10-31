@@ -163202,27 +163202,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-10-30T18:14:11Z",
+        "pushedAt": "2026-10-31T15:14:41Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-01T05:17:21.909Z"
+        "since": "2026-10-01T15:15:21.301Z"
       },
       "starHistory": {
         "from": "2026-09-30",
         "stars": [1,1,1,2,2,2,2,2,2,2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
       },
       "release": {
-        "tag": "v1.26.44",
-        "publishedAt": "2026-10-30T16:13:53Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.44",
+        "tag": "v1.26.45",
+        "publishedAt": "2026-10-31T15:14:46Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.45",
         "source": "release",
         "signed": true,
-        "tagOid": "7ef37f001d46d4475abdbab46367c1cb708fff72"
+        "tagOid": "e94b41ae9f2b2c564000b962fe6d1b633314cd9f"
       },
       "releases": [
+        {
+          "tag": "v1.26.45",
+          "name": "fix(deps): update rustls-webpki, webpki-roots, ctutils and yoke-derive (#717)",
+          "publishedAt": "2026-10-31T15:14:46Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.45",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.44",
           "name": "fix(deps): update ferrlabs npm packages to v1.26.43 (#712)",
@@ -163250,41 +163257,13 @@
           "publishedAt": "2026-10-29T02:05:37Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.10.39",
           "prerelease": false
-        },
-        {
-          "tag": "v1.26.42",
-          "name": "fix(storage): frame pushed objects that open with the container magic (#704)",
-          "publishedAt": "2026-10-27T16:41:12Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.42",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "macos",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:10:21.000Z",
       "flags": [],

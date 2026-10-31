@@ -5119,7 +5119,6 @@
   {"type":"released","slug":"kobotoolbox","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"2.026.37b","to":"2.026.37c"},
   {"type":"released","slug":"labelme","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v7.8.1","to":"v7.9.0"},
   {"type":"released","slug":"langfuse","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v4.64.0","to":"v4.65.0"},
-  {"type":"released","slug":"lfsx","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"site@2026.10.31","to":"v1.26.32"},
   {"type":"released","slug":"listmonk","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v6.2.0","to":"v7.0.0-beta.1"},
   {"type":"released","slug":"llvm","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"llvmorg-23.1.3","to":"llvmorg-23.1.4"},
   {"type":"released","slug":"lulu","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v4.5.2","to":"v4.5.3"},
@@ -7102,5 +7101,6 @@
   {"type":"released","slug":"zensical","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"v0.0.73","to":"v0.0.74"},
   {"type":"released","slug":"zookeeper","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"release-3.9.6","to":"release-3.9.7"},
   {"type":"released","slug":"zrok","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"v2.0.8","to":"v2.0.9"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-31T10:38:36.314Z","commit":null,"from":"v7.35.1","to":"v7.35.2"}
+  {"type":"released","slug":"ferrflow","at":"2026-10-31T10:38:36.314Z","commit":null,"from":"v7.35.1","to":"v7.35.2"},
+  {"type":"released","slug":"lfsx","at":"2026-10-31T15:15:55.683Z","commit":null,"from":"v1.26.44","to":"v1.26.45"}
 ]
