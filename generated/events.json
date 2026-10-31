@@ -2180,7 +2180,6 @@
   {"type":"added","slug":"stability-matrix","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
   {"type":"added","slug":"standard-notes","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
   {"type":"added","slug":"standard-ruby","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
-  {"type":"released","slug":"stashden","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf","from":"v0.33.1","to":"v0.35.0"},
   {"type":"added","slug":"statamic","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
   {"type":"added","slug":"static-web-server","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
   {"type":"added","slug":"staticcheck","at":"2026-10-06T13:42:21.282Z","commit":"429592ecf1a612c2502f1da53df2e914d8b490cf"},
@@ -7102,5 +7101,6 @@
   {"type":"released","slug":"zookeeper","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"release-3.9.6","to":"release-3.9.7"},
   {"type":"released","slug":"zrok","at":"2026-10-31T05:17:21.909Z","commit":null,"from":"v2.0.8","to":"v2.0.9"},
   {"type":"released","slug":"ferrflow","at":"2026-10-31T10:38:36.314Z","commit":null,"from":"v7.35.1","to":"v7.35.2"},
-  {"type":"released","slug":"lfsx","at":"2026-10-31T15:15:55.683Z","commit":null,"from":"v1.26.44","to":"v1.26.45"}
+  {"type":"released","slug":"lfsx","at":"2026-10-31T15:15:55.683Z","commit":null,"from":"v1.26.44","to":"v1.26.45"},
+  {"type":"released","slug":"stashden","at":"2026-10-31T15:17:25.350Z","commit":null,"from":"v0.53.2","to":"v0.53.3"}
 ]

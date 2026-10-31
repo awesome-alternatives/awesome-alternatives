@@ -281783,27 +281783,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-10-30T20:07:03Z",
+        "pushedAt": "2026-10-31T15:15:53Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-01T05:17:21.909Z"
+        "since": "2026-10-01T15:16:59.577Z"
       },
       "starHistory": {
         "from": "2026-09-30",
         "stars": [0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.53.2",
-        "publishedAt": "2026-10-25T10:16:24Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.2",
+        "tag": "v0.53.3",
+        "publishedAt": "2026-10-31T15:15:55Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.3",
         "source": "release",
         "signed": false,
-        "tagOid": "dbb1d3546395901297494b567e429633ffbf9d63"
+        "tagOid": "bb0fea38474ec2e61288445adfe90f5bf634b1dc"
       },
       "releases": [
+        {
+          "tag": "v0.53.3",
+          "name": "fix(deps): drop legacy rustls 0.21 stack and bump flagged crates (#403)",
+          "publishedAt": "2026-10-31T15:15:55Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.3",
+          "prerelease": false
+        },
         {
           "tag": "v0.53.2",
           "name": "fix(grants): stop serving folders granted by a disabled account (#386)",
@@ -281831,33 +281838,13 @@
           "publishedAt": "2026-10-20T16:57:13Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.52.0",
           "prerelease": false
-        },
-        {
-          "tag": "v0.51.1",
-          "name": "fix(deps): update rustls to 0.23.46 for RUSTSEC-2026-0346 to 0349 (#350)",
-          "publishedAt": "2026-10-16T12:03:03Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.51.1",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
