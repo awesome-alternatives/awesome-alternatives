@@ -4,10 +4,10 @@ Build desktop and mobile applications for several platforms from one codebase, o
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Flutter](https://github.com/flutter/flutter) | Dart | BSD-3-Clause | [3.19.0-0.1.pre](https://github.com/flutter/flutter/releases/tag/3.19.0-0.1.pre) signed | 180757 | React Native (partial) |
-| [React Native](https://github.com/react/react-native) | C++ | MIT | [v0.88.1](https://github.com/react/react-native/releases/tag/v0.88.1) | 126839 | none |
-| [Electron](https://github.com/electron/electron) | C++ | MIT | [v45.2.1](https://github.com/electron/electron/releases/tag/v45.2.1) | 123660 | none |
-| [Tauri](https://github.com/tauri-apps/tauri) | Rust | Apache-2.0 | [tauri-cli-v2.12.4](https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.12.4) signed | 112350 | Electron (partial) |
-| [Wails](https://github.com/wailsapp/wails) | Go | MIT | [v3.0.0](https://github.com/wailsapp/wails/releases/tag/v3.0.0) | 36856 | Electron (partial) |
+| [Flutter](https://github.com/flutter/flutter) | Dart | BSD-3-Clause | [3.19.0-0.1.pre](https://github.com/flutter/flutter/releases/tag/3.19.0-0.1.pre) signed | 180810 | React Native (partial) |
+| [React Native](https://github.com/react/react-native) | C++ | MIT | [v0.88.1](https://github.com/react/react-native/releases/tag/v0.88.1) | 126843 | none |
+| [Electron](https://github.com/electron/electron) | C++ | MIT | [v45.2.1](https://github.com/electron/electron/releases/tag/v45.2.1) | 123664 | none |
+| [Tauri](https://github.com/tauri-apps/tauri) | Rust | Apache-2.0 | [tauri-cli-v2.12.4](https://github.com/tauri-apps/tauri/releases/tag/tauri-cli-v2.12.4) signed | 112370 | Electron (partial) |
+| [Wails](https://github.com/wailsapp/wails) | Go | MIT | [v3.0.0](https://github.com/wailsapp/wails/releases/tag/v3.0.0) | 36868 | Electron (partial) |
 
 [All categories](../README.md#catalog)

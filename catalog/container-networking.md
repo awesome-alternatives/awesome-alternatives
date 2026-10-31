@@ -8,6 +8,6 @@ Pod networking, network policy and load balancer addresses for Kubernetes cluste
 | [MetalLB](https://github.com/metallb/metallb) | Go | Apache-2.0 | [metallb-chart-0.16.1](https://github.com/metallb/metallb/releases/tag/metallb-chart-0.16.1) | 8391 | kube-vip (partial) |
 | [Calico](https://github.com/projectcalico/calico) | Go | Apache-2.0 | [v3.33.0](https://github.com/projectcalico/calico/releases/tag/v3.33.0) signed | 7410 | Flannel (full) |
 | [kube-vip](https://github.com/kube-vip/kube-vip) | Go | Apache-2.0 | [v1.3.1](https://github.com/kube-vip/kube-vip/releases/tag/v1.3.1) signed | 2992 | MetalLB (partial) |
-| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Go | Apache-2.0 | [v4.3.1](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1) signed | 2967 | none |
+| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Go | Apache-2.0 | [v4.3.1](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1) signed | 2968 | none |
 
 [All categories](../README.md#catalog)

@@ -4,10 +4,10 @@ Describe the state of servers in code and converge them to it.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.21.5](https://github.com/ansible/ansible/releases/tag/v2.21.5) signed | 71170 | Puppet (full), Chef (full), Salt (full) |
+| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.21.5](https://github.com/ansible/ansible/releases/tag/v2.21.5) signed | 71175 | Puppet (full), Chef (full), Salt (full) |
 | [Salt](https://github.com/saltstack/salt) | Python | Apache-2.0 | [v3007.17](https://github.com/saltstack/salt/releases/tag/v3007.17) signed | 15728 | Puppet (full), Chef (full), Ansible (full) |
-| [AWX](https://github.com/ansible/awx) | Python | Other | [24.6.1](https://github.com/ansible/awx/releases/tag/24.6.1) signed | 15616 | Red Hat Ansible Automation Platform (full) |
-| [Semaphore UI](https://github.com/semaphoreui/semaphore) | Go | MIT | [v2.19.17](https://github.com/semaphoreui/semaphore/releases/tag/v2.19.17) signed | 14350 | Red Hat Ansible Automation Platform (partial) |
+| [AWX](https://github.com/ansible/awx) | Python | Other | [24.6.1](https://github.com/ansible/awx/releases/tag/24.6.1) signed | 15615 | Red Hat Ansible Automation Platform (full) |
+| [Semaphore UI](https://github.com/semaphoreui/semaphore) | Go | MIT | [v2.19.17](https://github.com/semaphoreui/semaphore/releases/tag/v2.19.17) signed | 14354 | Red Hat Ansible Automation Platform (partial) |
 | [Capistrano](https://github.com/capistrano/capistrano) | Ruby | MIT | [v3.20.1](https://github.com/capistrano/capistrano/releases/tag/v3.20.1) | 13012 | Deployer (full) |
 | [Deployer](https://github.com/deployphp/deployer) | PHP | MIT | [v8.0.5](https://github.com/deployphp/deployer/releases/tag/v8.0.5) signed | 11121 | Capistrano (full) |
 | [Chef](https://github.com/chef/chef) | Ruby | Apache-2.0 | [v15.8.23](https://github.com/chef/chef/releases/tag/v15.8.23) | 8258 | Puppet (full), Ansible (full) |
