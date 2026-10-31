@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.140.20] - 2026-10-31
+
+### Bug Fixes
+
+- chore(catalog): refresh watchman
+- chore(catalog): refresh zstd
+
 ## [0.140.19] - 2026-10-31
 
 ### Bug Fixes
