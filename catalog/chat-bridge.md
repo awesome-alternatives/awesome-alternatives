@@ -7,7 +7,7 @@ Relay conversations between Matrix and other chat networks, so one client reache
 | [mautrix-whatsapp](https://github.com/mautrix/whatsapp) | Go | AGPL-3.0 | [v0.2610.0](https://github.com/mautrix/whatsapp/releases/tag/v0.2610.0) | 1916 | Beeper (partial) |
 | [mautrix-telegram](https://github.com/mautrix/telegram) | Go | AGPL-3.0 | [v0.2610.0](https://github.com/mautrix/telegram/releases/tag/v0.2610.0) | 1752 | Beeper (partial) |
 | [mautrix-signal](https://github.com/mautrix/signal) | Go | AGPL-3.0 | [v0.2610.0](https://github.com/mautrix/signal/releases/tag/v0.2610.0) | 678 | Beeper (partial) |
-| [mautrix-discord](https://github.com/mautrix/discord) | Go | AGPL-3.0 | [v0.7.7](https://github.com/mautrix/discord/releases/tag/v0.7.7) | 507 | Beeper (partial) |
+| [mautrix-discord](https://github.com/mautrix/discord) | Go | AGPL-3.0 | [v0.7.7](https://github.com/mautrix/discord/releases/tag/v0.7.7) | 508 | Beeper (partial) |
 | [Hookshot](https://github.com/matrix-org/matrix-hookshot) | TypeScript | Apache-2.0 | [7.6.0](https://github.com/matrix-org/matrix-hookshot/releases/tag/7.6.0) | 461 | none |
 | [mautrix-meta](https://github.com/mautrix/meta) | Go | AGPL-3.0 | [v0.2610.0](https://github.com/mautrix/meta/releases/tag/v0.2610.0) | 461 | Beeper (partial) |
 

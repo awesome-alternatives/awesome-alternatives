@@ -4,8 +4,8 @@ Exploit frameworks and password recovery tools used in security assessments.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Metasploit Framework](https://github.com/rapid7/metasploit-framework) | Ruby | Other | [6.5.8](https://github.com/rapid7/metasploit-framework/releases/tag/6.5.8) | 39267 | none |
-| [hashcat](https://github.com/hashcat/hashcat) | C | none | [v8.0.0](https://github.com/hashcat/hashcat/releases/tag/v8.0.0) | 27185 | none |
-| [John the Ripper](https://github.com/openwall/john) | C | Other | [1.9.0](https://github.com/openwall/john/releases/tag/1.9.0) | 13836 | none |
+| [Metasploit Framework](https://github.com/rapid7/metasploit-framework) | Ruby | Other | [6.5.8](https://github.com/rapid7/metasploit-framework/releases/tag/6.5.8) | 39279 | none |
+| [hashcat](https://github.com/hashcat/hashcat) | C | none | [v8.0.0](https://github.com/hashcat/hashcat/releases/tag/v8.0.0) | 27200 | none |
+| [John the Ripper](https://github.com/openwall/john) | C | Other | [1.9.0](https://github.com/openwall/john/releases/tag/1.9.0) | 13845 | none |
 
 [All categories](../README.md#catalog)
