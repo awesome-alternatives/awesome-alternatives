@@ -335313,13 +335313,13 @@
     {
       "slug": "zstd",
       "name": "Zstandard",
-      "repository": "https://github.com/facebook/zstd",
+      "repository": "https://github.com/meta/zstd",
       "category": "compression",
       "replaces": [],
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-10T08:29:33.000Z",
-      "editedAt": "2026-10-10T08:29:33.000Z",
+      "editedAt": "2026-10-31T16:51:14.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "meta/zstd",
@@ -335327,7 +335327,7 @@
         "homepage": "http://www.zstd.net",
         "language": "C",
         "license": "Other",
-        "stars": 28131,
+        "stars": 28136,
         "forks": 2667,
         "topics": [],
         "databaseId": 29759715,
@@ -335339,13 +335339,13 @@
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 128,
+        "stars": 133,
         "exact": false,
         "since": "2026-10-10T23:59:59.999Z"
       },
       "starHistory": {
         "from": "2026-10-10",
-        "stars": [28003,28005,28007,28014,28018,28025,28035,28036,28048,28055,28061,28070,28075,28083,28090,28095,28098,28105,28110,28116,28121,28131]
+        "stars": [28003,28005,28007,28014,28018,28025,28035,28036,28048,28055,28061,28070,28075,28083,28090,28095,28098,28105,28110,28116,28121,28136]
       },
       "release": {
         "tag": "v1.5.7",
@@ -335406,9 +335406,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
