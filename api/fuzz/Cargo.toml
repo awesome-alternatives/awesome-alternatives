@@ -1,0 +1,34 @@
+[package]
+name = "awesome-alternatives-api-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+ammonia = "4.2.4"
+arbitrary = { version = "1", features = ["derive"] }
+hex = "0.4.3"
+hmac = "0.13.0"
+libfuzzer-sys = "0.4"
+sha2 = "0.11.0"
+tracing = "0.1"
+url = "2.5.8"
+
+[workspace]
+
+[[bin]]
+name = "readme"
+path = "fuzz_targets/readme.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "signature"
+path = "fuzz_targets/signature.rs"
+test = false
+doc = false
+bench = false

@@ -441,3 +441,12 @@ cargo run
 docker build -t awesome-alternatives-api api
 docker run -p 3000:3000 -e TYPESAFE_API_KEY -e TRUST_PROXY=true awesome-alternatives-api
 ```
+
+## Fuzzing
+
+```bash
+cargo +nightly fuzz run readme
+cargo +nightly fuzz run signature
+```
+
+The `readme` target fuzzes the README sanitizer and the `signature` target the webhook signature check. A nightly workflow runs both.
