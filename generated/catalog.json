@@ -163211,27 +163211,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-10-31T16:10:09Z",
+        "pushedAt": "2026-11-01T18:18:06Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-02T05:17:16.040Z"
+        "since": "2026-10-02T18:18:48.276Z"
       },
       "starHistory": {
         "from": "2026-10-01",
         "stars": [1,1,2,2,2,2,2,2,2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
       },
       "release": {
-        "tag": "v1.26.45",
-        "publishedAt": "2026-10-31T15:14:46Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.45",
+        "tag": "v1.26.46",
+        "publishedAt": "2026-11-01T18:18:12Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.46",
         "source": "release",
         "signed": true,
-        "tagOid": "e94b41ae9f2b2c564000b962fe6d1b633314cd9f"
+        "tagOid": "7a43efd836597b4c21011fd73390c9d511154598"
       },
       "releases": [
+        {
+          "tag": "v1.26.46",
+          "name": "fix(deps): update ferrlabs npm packages (#719)",
+          "publishedAt": "2026-11-01T18:18:12Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.46",
+          "prerelease": false
+        },
+        {
+          "tag": "site@2026.11.1",
+          "name": "fix(deps): update ferrlabs npm packages (#719)",
+          "publishedAt": "2026-11-01T18:18:12Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.1",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.45",
           "name": "fix(deps): update rustls-webpki, webpki-roots, ctutils and yoke-derive (#717)",
@@ -163252,48 +163266,13 @@
           "publishedAt": "2026-10-29T12:18:09Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.43",
           "prerelease": false
-        },
-        {
-          "tag": "site@2026.10.40",
-          "name": "fix(deps): update ferrlabs npm packages (#709)",
-          "publishedAt": "2026-10-29T12:18:09Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.10.40",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.10.39",
-          "name": null,
-          "publishedAt": "2026-10-29T02:05:37Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.10.39",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "macos",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:10:21.000Z",
       "flags": [],

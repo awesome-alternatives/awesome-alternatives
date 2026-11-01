@@ -5383,7 +5383,6 @@
   {"type":"released","slug":"langwatch","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"langwatch-3.20.1","to":"langwatch-3.21.0"},
   {"type":"released","slug":"lavinmq","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"v2.10.2","to":"v2.10.3"},
   {"type":"released","slug":"lemonade","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"v2026.42.1","to":"v2026.43.3"},
-  {"type":"released","slug":"lfsx","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"v1.26.32","to":"site@2026.10.34"},
   {"type":"released","slug":"librenms","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"26.10.1","to":"26.10.2"},
   {"type":"released","slug":"libreoffice","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"libreoffice-26.8.1.1","to":"libreoffice-26.8.2.1"},
   {"type":"released","slug":"librespeed","at":"2026-10-22T05:17:15.092Z","commit":"a959f43df93f298813877b0bb8e82571d1a026e3","from":"v6.3.0","to":"v6.3.1"},
@@ -7183,5 +7182,6 @@
   {"type":"released","slug":"voidauth","at":"2026-11-01T05:17:16.040Z","commit":null,"from":"v1.17.1","to":"v1.18.0"},
   {"type":"released","slug":"wekan","at":"2026-11-01T05:17:16.040Z","commit":null,"from":"v12.75","to":"v12.77"},
   {"type":"released","slug":"wikijs","at":"2026-11-01T05:17:16.040Z","commit":null,"from":"3.0.0-beta.705","to":"3.0.1"},
-  {"type":"released","slug":"x-anylabeling","at":"2026-11-01T05:17:16.040Z","commit":null,"from":"v4.2.3","to":"v4.3.0"}
+  {"type":"released","slug":"x-anylabeling","at":"2026-11-01T05:17:16.040Z","commit":null,"from":"v4.2.3","to":"v4.3.0"},
+  {"type":"released","slug":"lfsx","at":"2026-11-01T18:19:11.083Z","commit":null,"from":"v1.26.45","to":"v1.26.46"}
 ]
