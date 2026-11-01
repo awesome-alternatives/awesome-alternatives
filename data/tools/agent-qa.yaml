@@ -1,0 +1,8 @@
+name: agent-qa
+repository: https://github.com/vostride/agent-qa
+category: browser-testing
+terms: source-available
+replaces:
+  - tool: playwright
+    fit: partial
+    note: Playwright-backed natural-language web QA with memidex memory and evidence-gated self-improvement; requires its own YAML tests and model setup.
