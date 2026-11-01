@@ -4,7 +4,7 @@ Scan, OCR, tag and search paper and PDF documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Python | GPL-3.0 | [v3.4.1](https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.1) | 47442 | Paperless-ng (drop-in), Paperless (full), DocuWare (partial) |
+| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Python | GPL-3.0 | [v3.4.1](https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.1) | 47470 | Paperless-ng (drop-in), Paperless (full), DocuWare (partial) |
 | [Paperless](https://github.com/the-paperless-project/paperless) archived | Python | GPL-3.0 | [2.7.0](https://github.com/the-paperless-project/paperless/releases/tag/2.7.0) | 7912 | none |
 | [Papra](https://github.com/papra-hq/papra) | TypeScript | AGPL-3.0 | [@papra/cli@0.2.6](https://github.com/papra-hq/papra/releases/tag/%40papra/cli%400.2.6) signed | 5609 | Paperless-ngx (full) |
 | [Paperless-ng](https://github.com/jonaswinkler/paperless-ng) archived | Python | GPL-3.0 | [ng-1.5.0](https://github.com/jonaswinkler/paperless-ng/releases/tag/ng-1.5.0) | 5409 | none |

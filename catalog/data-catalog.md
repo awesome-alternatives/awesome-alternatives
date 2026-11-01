@@ -4,7 +4,7 @@ Search, document and trace the lineage of tables, dashboards and pipelines acros
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | TypeScript | Apache-2.0 | [2.0.7-release](https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.7-release) signed | 15637 | Alation (partial), Collibra (partial), Atlan (full), Monte Carlo (partial) |
+| [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | TypeScript | Apache-2.0 | [2.0.7-release](https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.7-release) signed | 15641 | Alation (partial), Collibra (partial), Atlan (full), Monte Carlo (partial) |
 | [DataHub](https://github.com/datahub-project/datahub) | Python | Apache-2.0 | [v1.8.0](https://github.com/datahub-project/datahub/releases/tag/v1.8.0) signed | 12933 | Alation (partial), Atlan (partial), Collibra (full), Monte Carlo (partial) |
 | [Unity Catalog](https://github.com/unitycatalog/unitycatalog) | Java | Apache-2.0 | [v0.7.0](https://github.com/unitycatalog/unitycatalog/releases/tag/v0.7.0) signed | 3566 | Databricks (partial) |
 | [Apache Gravitino](https://github.com/apache/gravitino) | Java | Apache-2.0 | [v1.3.1](https://github.com/apache/gravitino/releases/tag/v1.3.1) | 3339 | Unity Catalog (full) |

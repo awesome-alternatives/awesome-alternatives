@@ -5,8 +5,8 @@ Issue, renew and revoke X.509 certificates from a PKI you run.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [CFSSL](https://github.com/cloudflare/cfssl) | Go | BSD-2-Clause | [v1.7.1](https://github.com/cloudflare/cfssl/releases/tag/v1.7.1) | 9493 | AWS Private CA (partial) |
-| [step-ca](https://github.com/smallstep/certificates) | Go | Apache-2.0 | [v0.30.2](https://github.com/smallstep/certificates/releases/tag/v0.30.2) signed | 9026 | AWS Private CA (full) |
-| [Boulder](https://github.com/letsencrypt/boulder) | Go | MPL-2.0 | [v0.20261027.0](https://github.com/letsencrypt/boulder/releases/tag/v0.20261027.0) signed | 5776 | AWS Private CA (partial) |
+| [step-ca](https://github.com/smallstep/certificates) | Go | Apache-2.0 | [v0.30.2](https://github.com/smallstep/certificates/releases/tag/v0.30.2) signed | 9027 | AWS Private CA (full) |
+| [Boulder](https://github.com/letsencrypt/boulder) | Go | MPL-2.0 | [v0.20261027.0](https://github.com/letsencrypt/boulder/releases/tag/v0.20261027.0) signed | 5777 | AWS Private CA (partial) |
 | [XCA](https://github.com/chris2511/xca) | C++ | Other | [RELEASE.2.9.0](https://github.com/chris2511/xca/releases/tag/RELEASE.2.9.0) | 2027 | AWS Private CA (partial) |
 | [EJBCA](https://github.com/Keyfactor/ejbca-ce) | Java | LGPL-2.1 | [r9.6.3](https://github.com/Keyfactor/ejbca-ce/releases/tag/r9.6.3) | 967 | AWS Private CA (full) |
 | [OpenXPKI](https://github.com/openxpki/openxpki) | Perl | Apache-2.0 | [v3.34.0](https://github.com/openxpki/openxpki/releases/tag/v3.34.0) | 701 | AWS Private CA (full) |

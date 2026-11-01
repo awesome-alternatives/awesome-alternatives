@@ -4,8 +4,8 @@ Save complete copies of web pages so they stay readable after the original chang
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) | Python | MIT | [v0.9.77](https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.77) | 28910 | Pinboard (partial) |
-| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | JavaScript | AGPL-3.0 | [v1.33.0](https://github.com/gildas-lormeau/SingleFile/releases/tag/v1.33.0) | 22787 | Pocket (partial) |
-| [ArchiveWeb.page](https://github.com/webrecorder/archiveweb.page) | TypeScript | AGPL-3.0 | [v0.17.1](https://github.com/webrecorder/archiveweb.page/releases/tag/v0.17.1) signed | 1607 | Pinboard (partial) |
+| [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) | Python | MIT | [v0.9.77](https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.77) | 28915 | Pinboard (partial) |
+| [SingleFile](https://github.com/gildas-lormeau/SingleFile) | JavaScript | AGPL-3.0 | [v1.33.0](https://github.com/gildas-lormeau/SingleFile/releases/tag/v1.33.0) | 22791 | Pocket (partial) |
+| [ArchiveWeb.page](https://github.com/webrecorder/archiveweb.page) | TypeScript | AGPL-3.0 | [v0.17.1](https://github.com/webrecorder/archiveweb.page/releases/tag/v0.17.1) signed | 1609 | Pinboard (partial) |
 
 [All categories](../README.md#catalog)

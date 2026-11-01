@@ -4,8 +4,8 @@ Fake SMTP servers with a web inbox that catch the mail an application sends duri
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MailHog](https://github.com/mailhog/MailHog) | Go | MIT | [v1.0.1](https://github.com/mailhog/MailHog/releases/tag/v1.0.1) | 16198 | Mailtrap (partial), MailCatcher (full) |
-| [Mailpit](https://github.com/axllent/mailpit) | Go | MIT | [v1.33.0](https://github.com/axllent/mailpit/releases/tag/v1.33.0) | 10804 | Mailtrap (partial), MailHog (full) |
+| [MailHog](https://github.com/mailhog/MailHog) | Go | MIT | [v1.0.1](https://github.com/mailhog/MailHog/releases/tag/v1.0.1) | 16197 | Mailtrap (partial), MailCatcher (full) |
+| [Mailpit](https://github.com/axllent/mailpit) | Go | MIT | [v1.33.0](https://github.com/axllent/mailpit/releases/tag/v1.33.0) | 10805 | Mailtrap (partial), MailHog (full) |
 | [MailCatcher](https://github.com/sj26/mailcatcher) | Ruby | MIT | [v0.10.0](https://github.com/sj26/mailcatcher/releases/tag/v0.10.0) | 6783 | Mailtrap (partial) |
 | [smtp4dev](https://github.com/rnwood/smtp4dev) | C# | BSD-3-Clause | [3.15.0](https://github.com/rnwood/smtp4dev/releases/tag/3.15.0) signed | 4017 | Mailtrap (partial) |
 | [Inbucket](https://github.com/inbucket/inbucket) | Go | MIT | [v3.2.0](https://github.com/inbucket/inbucket/releases/tag/v3.2.0) signed | 2310 | Mailtrap (partial) |
