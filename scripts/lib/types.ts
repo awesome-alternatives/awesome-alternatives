@@ -125,6 +125,7 @@ export interface Finding {
   severity: Severity;
   code: FindingCode;
   message: string;
+  clearsOn?: string;
 }
 
 export interface RepoFacts {

@@ -78,6 +78,11 @@ describe("judge", () => {
     assert.deepEqual(codes(repo({ createdAt: "2026-09-10T00:00:00Z" })), ["warning:too-new"]);
   });
 
+  it("dates the day a young repository reaches the minimum age", () => {
+    const [young] = judge(tool, { repo: repo({ createdAt: "2026-09-10T18:00:00Z" }), release, starHistory: [] }, NOW, new Set());
+    assert.equal(young?.clearsOn, "2026-10-10");
+  });
+
   it("accepts a repository exactly at the minimum age", () => {
     assert.deepEqual(codes(repo({ createdAt: "2026-08-23T12:00:00Z" })), []);
   });

@@ -22,8 +22,8 @@ export function replacedSlugs(tools: readonly Tool[]): Set<string> {
 export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: ReadonlySet<string>): Finding[] {
   const { repo } = evidence;
   const out: Finding[] = [];
-  const add = (severity: Finding["severity"], code: FindingCode, message: string) =>
-    out.push({ slug: tool.slug, severity, code, message });
+  const add = (severity: Finding["severity"], code: FindingCode, message: string, clearsOn?: string) =>
+    out.push({ slug: tool.slug, severity, code, message, ...(clearsOn && { clearsOn }) });
 
   if (!repo) {
     add("error", "not-found", `${tool.repository} does not exist or is not public`);
@@ -46,7 +46,8 @@ export function judge(tool: Tool, evidence: Evidence, now: Date, replaced: Reado
 
   const age = daysBetween(repo.createdAt, now);
   if (age < MIN_AGE_DAYS) {
-    add("warning", "too-new", `created ${age} days ago, under ${MIN_AGE_DAYS} days of history`);
+    const oldEnough = new Date(Date.parse(repo.createdAt) + MIN_AGE_DAYS * DAY_MS).toISOString().slice(0, 10);
+    add("warning", "too-new", `created ${age} days ago, under ${MIN_AGE_DAYS} days of history`, oldEnough);
   }
 
   if (!repo.license) add("warning", "no-license", "GitHub detects no licence for this repository");

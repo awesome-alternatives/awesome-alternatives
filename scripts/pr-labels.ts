@@ -9,6 +9,10 @@ if (!GH_TOKEN || !GITHUB_REPOSITORY || !HEAD_SHA || !dir) {
   process.exit(2);
 }
 
-const verdict = parseVerdict(await readFile(join(dir, "number"), "utf8"), await readFile(join(dir, "labels.json"), "utf8"));
-const { added, removed } = await applyVerdict(createLabelHost(GITHUB_REPOSITORY, GH_TOKEN), verdict, HEAD_SHA);
-console.log(`#${verdict.number}: added [${added.join(", ")}], removed [${removed.join(", ")}]`);
+const verdict = parseVerdict(
+  await readFile(join(dir, "number"), "utf8"),
+  await readFile(join(dir, "labels.json"), "utf8"),
+  await readFile(join(dir, "ready-on"), "utf8").catch(() => undefined),
+);
+const { added, removed, commented } = await applyVerdict(createLabelHost(GITHUB_REPOSITORY, GH_TOKEN), verdict, HEAD_SHA);
+console.log(`#${verdict.number}: added [${added.join(", ")}], removed [${removed.join(", ")}]${commented ? ", commented" : ""}`);

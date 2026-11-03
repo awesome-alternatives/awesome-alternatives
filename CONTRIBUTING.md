@@ -239,7 +239,9 @@ found, `needs-review` when only warnings remain, nothing when a check blocks it,
 top of either when an entry's repository is under 30 days old. Each new push relabels it, and a pull
 request that touches no entry gets none of these. The labels are set by the
 [Label pull request](.github/workflows/pr-labels.yml) workflow, which reads the verdict the
-validation left behind and only labels the commit that was validated.
+validation left behind and only labels the commit that was validated. Alongside `too-new`, it
+leaves one comment giving the day the pull request becomes mergeable, and edits it rather than
+posting again when a later push moves that day.
 
 A pull request can sit open past the day its repository turns 30 days old. Once a day,
 [Recheck young pull requests](.github/workflows/recheck-labels.yml) reruns the last Validate run of
