@@ -1,0 +1,7 @@
+name: Replayowl
+repository: https://github.com/replayowl/replayowl
+category: web-analytics
+replaces:
+  - tool: hotjar
+    fit: partial
+    note: Session replay only, without heatmaps, funnels or on-site surveys.
