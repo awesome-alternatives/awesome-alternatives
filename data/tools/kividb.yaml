@@ -1,0 +1,14 @@
+name: KiviDB
+repository: https://github.com/kividbio/kividb
+category: key-value-store
+replaces:
+  - tool: redis
+    fit: full
+    note: Redis-compatible server over RESP, with full-text and vector search built in. Written in Rust, multithreaded, listens on 6380 by default.
+  - tool: memcached
+    fit: partial
+    note: "Serves as a cache in memcached's place, but through the Redis protocol."
+  - tool: redis-cloud
+    fit: full
+    note: A Redis-compatible server over RESP, run on your own machines.
+deploy: [container, binary, package, helm]
