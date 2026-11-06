@@ -1,0 +1,7 @@
+name: Probe
+repository: https://github.com/crizant/probe
+category: api-client
+replaces:
+  - tool: postman
+    fit: partial
+    note: Native desktop app and CLI, with collections kept as OpenCollection YAML files and no account needed.
