@@ -1,0 +1,7 @@
+name: Kilobat CLI
+repository: https://github.com/seifip/kilobat-cli
+category: system-monitor
+replaces:
+  - tool: bandwhich
+    fit: partial
+    note: macOS network traffic by app and connection, with additional diagnostics; requires macOS 14 or later.
