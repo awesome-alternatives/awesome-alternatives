@@ -285642,7 +285642,7 @@
     {
       "slug": "suna",
       "name": "Suna",
-      "repository": "https://github.com/kortix-ai/suna",
+      "repository": "https://github.com/kortix-ai/CompanyOS",
       "category": "autonomous-agent",
       "replaces": [
         {
@@ -285654,7 +285654,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:23:33.000Z",
-      "editedAt": "2026-10-06T13:23:33.000Z",
+      "editedAt": "2026-11-08T21:33:56.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "kortix-ai/CompanyOS",
@@ -285662,8 +285662,8 @@
         "homepage": "https://kortix.com",
         "language": "TypeScript",
         "license": "Other",
-        "stars": 20539,
-        "forks": 3456,
+        "stars": 20577,
+        "forks": 3462,
         "topics": [
           "ai",
           "ai-agents",
@@ -285680,17 +285680,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2024-10-05T17:01:01Z",
-        "pushedAt": "2026-11-08T05:10:06Z",
+        "pushedAt": "2026-11-08T21:11:42Z",
         "defaultBranch": "dev"
       },
       "trend": {
-        "stars": 281,
+        "stars": 319,
         "exact": true,
-        "since": "2026-10-09T05:17:18.619Z"
+        "since": "2026-10-09T21:34:26.757Z"
       },
       "starHistory": {
         "from": "2026-10-08",
-        "stars": [20258,20263,20261,20264,20266,20271,20272,20275,20278,20278,20280,20283,20289,20290,20290,20298,20306,20313,20316,20319,20325,20332,20334,20342,20342,20348,20363,20368,20380,20387,20410,20539]
+        "stars": [20258,20263,20261,20264,20266,20271,20272,20275,20278,20278,20280,20283,20289,20290,20290,20298,20306,20313,20316,20319,20325,20332,20334,20342,20342,20348,20363,20368,20380,20387,20410,20577]
       },
       "release": {
         "tag": "v0.15.1",
@@ -285765,9 +285765,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "source-available",
       "capabilities": {},
       "deploy": []

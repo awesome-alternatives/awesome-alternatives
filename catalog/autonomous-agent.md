@@ -8,7 +8,7 @@ Agents that plan and carry out multi-step tasks on their own, browsing, running 
 | [OpenManus](https://github.com/FoundationAgents/OpenManus) | Python | MIT | [v0.3.0](https://github.com/FoundationAgents/OpenManus/releases/tag/v0.3.0) | 58923 | Manus (partial) |
 | [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | TypeScript | Apache-2.0 | [v0.3.1](https://github.com/bytedance/UI-TARS-desktop/releases/tag/v0.3.1) | 39570 | Manus (partial) |
 | [Letta](https://github.com/letta-ai/letta) | unknown | Apache-2.0 | [0.16.8](https://github.com/letta-ai/letta/releases/tag/0.16.8) signed | 25383 | Microsoft Copilot Studio (partial) |
-| [Suna](https://github.com/kortix-ai/suna) | TypeScript | Other | [v0.15.1](https://github.com/kortix-ai/CompanyOS/releases/tag/v0.15.1) signed | 20539 | Manus (partial) |
+| [Suna](https://github.com/kortix-ai/CompanyOS) | TypeScript | Other | [v0.15.1](https://github.com/kortix-ai/CompanyOS/releases/tag/v0.15.1) signed | 20577 | Manus (partial) |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | Python | Other | [v2.15](https://github.com/agent0ai/agent-zero/releases/tag/v2.15) | 19791 | Manus (partial) |
 
 [All categories](../README.md#catalog)
