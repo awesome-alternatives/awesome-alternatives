@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2755,
+    "tools": 2756,
     "categories": 344,
     "targets": 923,
     "verified": 5
@@ -19670,6 +19670,14 @@
       "bio": null,
       "website": "https://medium.com/@crizantlai",
       "url": "https://github.com/crizant"
+    },
+    "Abuarchiv": {
+      "login": "Abuarchiv",
+      "kind": "user",
+      "name": "Abu",
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/Abuarchiv"
     }
   },
   "tools": [
@@ -176119,6 +176127,104 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "manawg",
+      "name": "ManaWG",
+      "repository": "https://github.com/Abuarchiv/manawg",
+      "category": "expense-splitting",
+      "replaces": [
+        {
+          "tool": "splitwise",
+          "fit": "partial",
+          "note": "Splits expenses and suggests settle-up transfers for one shared flat, with a CSV import from Splitwise. Accounts are required, and trips and offices are out of scope."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-08T21:34:18.000Z",
+      "editedAt": "2026-11-08T21:34:18.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "Abuarchiv/manawg",
+        "description": "Free, open-source app for shared flats and roommates: split expenses, cleaning rota, shopping list, calendar and chat. A self-hostable Splitwise alternative with Docker.",
+        "homepage": "https://manawg.com",
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "stars": 1,
+        "forks": 1,
+        "topics": [
+          "bill-splitting",
+          "chore-tracker",
+          "chores",
+          "cleaning-schedule",
+          "docker",
+          "expense-splitting",
+          "flatshare",
+          "household",
+          "nextjs",
+          "pwa",
+          "roommate-app",
+          "roommates",
+          "self-hosted",
+          "selfhosted",
+          "shared-flat",
+          "shopping-list",
+          "splitwise-alternative",
+          "supabase",
+          "wg-app",
+          "wohngemeinschaft"
+        ],
+        "databaseId": 1349944114,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-08-28T18:58:31Z",
+        "pushedAt": "2026-11-08T21:31:22Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-08",
+        "stars": [1]
+      },
+      "release": {
+        "tag": "v0.1.1",
+        "publishedAt": "2026-11-05T07:04:37Z",
+        "url": "https://github.com/Abuarchiv/manawg/releases/tag/v0.1.1",
+        "source": "release",
+        "signed": true
+      },
+      "releases": [
+        {
+          "tag": "v0.1.1",
+          "name": "ManaWG 0.1.1",
+          "publishedAt": "2026-11-05T07:04:37Z",
+          "url": "https://github.com/Abuarchiv/manawg/releases/tag/v0.1.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.0",
+          "name": "ManaWG 0.1.0",
+          "publishedAt": "2026-11-05T01:51:02Z",
+          "url": "https://github.com/Abuarchiv/manawg/releases/tag/v0.1.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 2,
+        "capped": true
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "compose"
+      ]
     },
     {
       "slug": "manticore",

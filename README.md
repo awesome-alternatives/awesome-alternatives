@@ -294,7 +294,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Email aliases](catalog/email-alias.md) | 3 | Hand out forwarding addresses that hide your real inbox and can be turned off one by one. |
 | [Email templating](catalog/email-templating.md) | 3 | Write HTML emails from components or markup and compile them to code that renders across mail clients. |
 | [Network video recorders](catalog/nvr.md) | 8 | Record, watch and analyse IP camera streams on your own hardware. |
-| [Expense splitting](catalog/expense-splitting.md) | 3 | Track shared expenses in a group and work out who owes whom. |
+| [Expense splitting](catalog/expense-splitting.md) | 4 | Track shared expenses in a group and work out who owes whom. |
 | [Fitness tracking](catalog/fitness-tracking.md) | 9 | Log workouts, activities and body measurements, and follow progress over time. |
 | [Habit trackers](catalog/habit-tracker.md) | 3 | Check off daily habits and follow streaks and progress. |
 | [Web archiving](catalog/web-archiving.md) | 3 | Save complete copies of web pages so they stay readable after the original changes or disappears. |
