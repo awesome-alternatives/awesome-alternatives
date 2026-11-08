@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2754,
+    "tools": 2755,
     "categories": 344,
     "targets": 923,
     "verified": 5
@@ -19662,6 +19662,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "crizant": {
+      "login": "crizant",
+      "kind": "user",
+      "name": "Crizant",
+      "bio": null,
+      "website": "https://medium.com/@crizantlai",
+      "url": "https://github.com/crizant"
     }
   },
   "tools": [
@@ -240562,6 +240570,137 @@
         "container",
         "helm"
       ]
+    },
+    {
+      "slug": "probe",
+      "name": "Probe",
+      "repository": "https://github.com/crizant/probe",
+      "category": "api-client",
+      "replaces": [
+        {
+          "tool": "postman",
+          "fit": "partial",
+          "note": "Native desktop app and CLI, with collections kept as OpenCollection YAML files and no account needed."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-08T21:33:42.000Z",
+      "editedAt": "2026-11-08T21:33:42.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "crizant/probe",
+        "description": "A fast, native, local-first API client and Postman alternative for macOS, Windows and Linux, with a CLI for CI and AI agents. Built with Rust and GPUI, using OpenCollection YAML.",
+        "homepage": "https://rusty-probe.pages.dev",
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "stars": 63,
+        "forks": 9,
+        "topics": [
+          "api-client",
+          "api-testing",
+          "cli",
+          "cross-platform",
+          "desktop-app",
+          "developer-tools",
+          "gpui",
+          "graphql-client",
+          "http-client",
+          "local-first",
+          "opencollection",
+          "postman-alternative",
+          "rest-client",
+          "rust",
+          "websocket-client"
+        ],
+        "databaseId": 1334766219,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-08-15T03:39:06Z",
+        "pushedAt": "2026-11-06T12:07:37Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-08",
+        "stars": [63]
+      },
+      "release": {
+        "tag": "v2.4.3",
+        "publishedAt": "2026-11-06T12:32:02Z",
+        "url": "https://github.com/crizant/probe/releases/tag/v2.4.3",
+        "source": "release",
+        "signed": false,
+        "tagOid": "1137291b565b7ca13bf4544da19f985a6a9c0963"
+      },
+      "releases": [
+        {
+          "tag": "v2.4.3",
+          "name": "Probe v2.4.3",
+          "publishedAt": "2026-11-06T12:32:02Z",
+          "url": "https://github.com/crizant/probe/releases/tag/v2.4.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.4.2",
+          "name": "Probe v2.4.2",
+          "publishedAt": "2026-11-04T02:23:41Z",
+          "url": "https://github.com/crizant/probe/releases/tag/v2.4.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.4.1",
+          "name": "Probe v2.4.1",
+          "publishedAt": "2026-11-03T04:29:59Z",
+          "url": "https://github.com/crizant/probe/releases/tag/v2.4.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.4.0",
+          "name": "Probe v2.4.0",
+          "publishedAt": "2026-10-29T08:23:39Z",
+          "url": "https://github.com/crizant/probe/releases/tag/v2.4.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v2.3.0",
+          "name": "Probe v2.3.0",
+          "publishedAt": "2026-10-28T09:30:07Z",
+          "url": "https://github.com/crizant/probe/releases/tag/v2.3.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 5,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
     },
     {
       "slug": "processwire",

@@ -16,5 +16,6 @@ Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser 
 | [ATAC](https://github.com/Julien-cpsn/ATAC) | Rust | MIT | [v0.24.0](https://github.com/Julien-cpsn/ATAC/releases/tag/v0.24.0) | 3750 | Postman (partial) |
 | [Restfox](https://github.com/flawiddsouza/Restfox) | TypeScript | MIT | [v0.42.0](https://github.com/flawiddsouza/Restfox/releases/tag/v0.42.0) | 2780 | Postman (partial), Insomnia (partial) |
 | [Slumber](https://github.com/LucasPickering/slumber) | Rust | MIT | [v5.4.4](https://github.com/LucasPickering/slumber/releases/tag/v5.4.4) | 1235 | Postman (partial) |
+| [Probe](https://github.com/crizant/probe) | Rust | Apache-2.0 | [v2.4.3](https://github.com/crizant/probe/releases/tag/v2.4.3) | 63 | Postman (partial) |
 
 [All categories](../README.md#catalog)

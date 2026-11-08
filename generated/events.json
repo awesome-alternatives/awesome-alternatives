@@ -8050,5 +8050,6 @@
   {"type":"released","slug":"wikijs","at":"2026-11-08T05:17:18.619Z","commit":null,"from":"3.1.1","to":"3.2.0"},
   {"type":"released","slug":"xinference","at":"2026-11-08T05:17:18.619Z","commit":null,"from":"v4.1.0","to":"v4.2.0"},
   {"type":"released","slug":"xstate","at":"2026-11-08T05:17:18.619Z","commit":null,"from":"@xstate/vue@5.0.2","to":"xstate@5.33.4"},
-  {"type":"released","slug":"yopass","at":"2026-11-08T05:17:18.619Z","commit":null,"from":"16.0.1","to":"16.1.0"}
+  {"type":"released","slug":"yopass","at":"2026-11-08T05:17:18.619Z","commit":null,"from":"16.0.1","to":"16.1.0"},
+  {"type":"added","slug":"probe","at":"2026-11-08T21:34:33.832Z","commit":null}
 ]

@@ -108,7 +108,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Metrics and monitoring](catalog/metrics.md) | 19 | Collect, store and query time series. |
 | [Command-line HTTP clients](catalog/http-client.md) | 5 | Send HTTP requests from a terminal. |
 | [Code and file search](catalog/code-search.md) | 8 | Search file contents recursively, or find files by name, type, size or date, from a terminal. |
-| [API clients](catalog/api-client.md) | 12 | Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser app, or call gRPC services from the command line. |
+| [API clients](catalog/api-client.md) | 13 | Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser app, or call gRPC services from the command line. |
 | [Monorepo tools](catalog/monorepo-tool.md) | 9 | Run, cache and orchestrate tasks across the packages of one repository. |
 | [Shell prompts](catalog/shell-prompt.md) | 10 | Customisable prompts showing git state, runtimes and context. |
 | [Terminal multiplexers](catalog/terminal-multiplexer.md) | 3 | Split, detach and reattach terminal sessions. |
