@@ -133912,7 +133912,7 @@
     {
       "slug": "hyperdx",
       "name": "HyperDX",
-      "repository": "https://github.com/hyperdxio/hyperdx",
+      "repository": "https://github.com/ClickHouse/ClickStack",
       "category": "dashboards",
       "replaces": [
         {
@@ -133924,7 +133924,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-26T16:46:19.000Z",
-      "editedAt": "2026-09-26T16:46:19.000Z",
+      "editedAt": "2026-11-08T21:33:12.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "ClickHouse/ClickStack",
@@ -133932,7 +133932,7 @@
         "homepage": "https://hyperdx.io/",
         "language": "TypeScript",
         "license": "MIT",
-        "stars": 9998,
+        "stars": 10001,
         "forks": 516,
         "topics": [
           "alerting",
@@ -133964,13 +133964,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 67,
+        "stars": 70,
         "exact": true,
-        "since": "2026-10-09T05:17:18.619Z"
+        "since": "2026-10-09T21:33:44.062Z"
       },
       "starHistory": {
         "from": "2026-10-08",
-        "stars": [9931,9938,9939,9942,9943,9943,9942,9945,9948,9949,9954,9956,9960,9962,9962,9964,9965,9968,9970,9973,9974,9978,9978,9985,9985,9985,9985,9985,9990,9992,9994,9998]
+        "stars": [9931,9938,9939,9942,9943,9943,9942,9945,9948,9949,9954,9956,9960,9962,9962,9964,9965,9968,9970,9973,9974,9978,9978,9985,9985,9985,9985,9985,9990,9992,9994,10001]
       },
       "release": {
         "tag": "@hyperdx/app@2.43.1",
@@ -134018,15 +134018,13 @@
         }
       ],
       "contributors": {
-        "count": 50,
+        "count": 48,
         "capped": false
       },
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": [
