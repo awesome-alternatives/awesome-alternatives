@@ -1,5 +1,5 @@
 name: HyperDX
-repository: https://github.com/hyperdxio/hyperdx
+repository: https://github.com/ClickHouse/ClickStack
 category: dashboards
 replaces:
   - tool: datadog
