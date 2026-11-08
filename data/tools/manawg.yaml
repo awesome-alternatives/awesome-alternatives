@@ -1,0 +1,8 @@
+name: ManaWG
+repository: https://github.com/Abuarchiv/manawg
+category: expense-splitting
+replaces:
+  - tool: splitwise
+    fit: partial
+    note: Splits expenses and suggests settle-up transfers for one shared flat, with a CSV import from Splitwise. Accounts are required, and trips and offices are out of scope.
+deploy: [container, compose]
