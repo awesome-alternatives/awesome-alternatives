@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.13] - 2026-11-08
+
+### Bug Fixes
+
+- chore(catalog): refresh probe
+- chore(catalog): refresh hyperdx
+
 ## [0.141.12] - 2026-11-08
 
 ### Bug Fixes
