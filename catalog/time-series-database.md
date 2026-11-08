@@ -4,12 +4,12 @@ Store and query timestamped measurements at high write rates.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [InfluxDB](https://github.com/influxdata/influxdb) | Rust | Apache-2.0 | [v3.12.2](https://github.com/influxdata/influxdb/releases/tag/v3.12.2) | 31803 | Amazon Timestream (full) |
-| [TDengine](https://github.com/taosdata/TDengine) | C | AGPL-3.0 | [ver-3.4.3.9](https://github.com/taosdata/TDengine/releases/tag/ver-3.4.3.9) | 25187 | InfluxDB (full) |
-| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.31.0](https://github.com/timescale/timescaledb/releases/tag/2.31.0) signed | 23823 | InfluxDB (full), Amazon Timestream (full) |
-| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.1.0](https://github.com/questdb/questdb/releases/tag/10.1.0) signed | 17509 | InfluxDB (full), Amazon Timestream (full) |
-| [GreptimeDB](https://github.com/GreptimeTeam/greptimedb) | Rust | Apache-2.0 | [v1.3.0](https://github.com/GreptimeTeam/greptimedb/releases/tag/v1.3.0) signed | 6795 | InfluxDB (full) |
-| [Apache IoTDB](https://github.com/apache/iotdb) | Java | Apache-2.0 | [v2.0.11](https://github.com/apache/iotdb/releases/tag/v2.0.11) | 6429 | Amazon Timestream (partial) |
+| [InfluxDB](https://github.com/influxdata/influxdb) | Rust | Apache-2.0 | [v3.12.2](https://github.com/influxdata/influxdb/releases/tag/v3.12.2) | 31802 | Amazon Timestream (full) |
+| [TDengine](https://github.com/taosdata/TDengine) | C | AGPL-3.0 | [ver-3.4.3.9](https://github.com/taosdata/TDengine/releases/tag/ver-3.4.3.9) | 25188 | InfluxDB (full) |
+| [TimescaleDB](https://github.com/timescale/timescaledb) | C | Other | [2.31.0](https://github.com/timescale/timescaledb/releases/tag/2.31.0) signed | 23829 | InfluxDB (full), Amazon Timestream (full) |
+| [QuestDB](https://github.com/questdb/questdb) | Java | Apache-2.0 | [10.1.0](https://github.com/questdb/questdb/releases/tag/10.1.0) signed | 17512 | InfluxDB (full), Amazon Timestream (full) |
+| [GreptimeDB](https://github.com/GreptimeTeam/greptimedb) | Rust | Apache-2.0 | [v1.3.0](https://github.com/GreptimeTeam/greptimedb/releases/tag/v1.3.0) signed | 6796 | InfluxDB (full) |
+| [Apache IoTDB](https://github.com/apache/iotdb) | Java | Apache-2.0 | [v2.0.11](https://github.com/apache/iotdb/releases/tag/v2.0.11) | 6430 | Amazon Timestream (partial) |
 | [openGemini](https://github.com/openGemini/openGemini) | Go | Apache-2.0 | [v1.5.2](https://github.com/openGemini/openGemini/releases/tag/v1.5.2) | 1178 | InfluxDB (partial) |
 
 [All categories](../README.md#catalog)

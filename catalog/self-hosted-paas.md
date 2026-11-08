@@ -4,14 +4,14 @@ Deploy apps and databases to your own servers from a git push or a dashboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.6.0](https://github.com/coollabsio/coolify/releases/tag/v4.6.0) signed | 65767 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.0](https://github.com/Dokploy/dokploy/releases/tag/v0.31.0) signed | 38288 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.6.0](https://github.com/coollabsio/coolify/releases/tag/v4.6.0) signed | 65798 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.0](https://github.com/Dokploy/dokploy/releases/tag/v0.31.0) signed | 38301 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
 | [Dokku](https://github.com/dokku/dokku) | Shell | MIT | [v0.38.34](https://github.com/dokku/dokku/releases/tag/v0.38.34) | 32219 | Heroku (full) |
-| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.1.1](https://github.com/labring/sealos/releases/tag/v5.1.1) signed | 18391 | Heroku (partial) |
-| [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.16.0](https://github.com/caprover/caprover/releases/tag/v1.16.0) signed | 15199 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
-| [Kamal](https://github.com/basecamp/kamal) | Ruby | MIT | [v2.12.0](https://github.com/basecamp/kamal/releases/tag/v2.12.0) | 14713 | Heroku (partial) |
+| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.1.1](https://github.com/labring/sealos/releases/tag/v5.1.1) signed | 18390 | Heroku (partial) |
+| [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.16.0](https://github.com/caprover/caprover/releases/tag/v1.16.0) signed | 15200 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
+| [Kamal](https://github.com/basecamp/kamal) | Ruby | MIT | [v2.12.0](https://github.com/basecamp/kamal/releases/tag/v2.12.0) | 14714 | Heroku (partial) |
 | [Piku](https://github.com/piku/piku) | Python | MIT | [v1.0.0](https://github.com/piku/piku/releases/tag/v1.0.0) signed | 6606 | Heroku (partial) |
-| [Rainbond](https://github.com/goodrain/rainbond) | Go | Other | [v6.10.3-release](https://github.com/goodrain/rainbond/releases/tag/v6.10.3-release) signed | 6294 | Heroku (partial) |
+| [Rainbond](https://github.com/goodrain/rainbond) | Go | Other | [v6.10.3-release](https://github.com/goodrain/rainbond/releases/tag/v6.10.3-release) signed | 6295 | Heroku (partial) |
 | [Tsuru](https://github.com/tsuru/tsuru) | Go | BSD-3-Clause | [v1.33.0](https://github.com/tsuru/tsuru/releases/tag/v1.33.0) signed | 5326 | Heroku (full) |
 | [Kubero](https://github.com/kubero-dev/kubero) | TypeScript | GPL-3.0 | [v3.1.1](https://github.com/kubero-dev/kubero/releases/tag/v3.1.1) signed | 4469 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
 | [Canine](https://github.com/CanineHQ/canine) | Ruby | Apache-2.0 | none | 2940 | Heroku (full) |

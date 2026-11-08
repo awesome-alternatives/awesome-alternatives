@@ -6,7 +6,7 @@ Browse topics, messages, consumer groups and connectors of a Kafka cluster from 
 |---|---|---|---|---:|---|
 | [Kafdrop](https://github.com/obsidiandynamics/kafdrop) | Java | Apache-2.0 | [4.3.1](https://github.com/obsidiandynamics/kafdrop/releases/tag/4.3.1) signed | 6163 | Conduktor (partial) |
 | [Redpanda Console](https://github.com/redpanda-data/console) | TypeScript | none | [v3.14.0](https://github.com/redpanda-data/console/releases/tag/v3.14.0) signed | 4353 | Conduktor (partial) |
-| [AKHQ](https://github.com/tchiotludo/akhq) | Java | Apache-2.0 | [0.28.0](https://github.com/tchiotludo/akhq/releases/tag/0.28.0) signed | 3873 | Conduktor (partial) |
-| [Kafbat UI](https://github.com/kafbat/kafka-ui) | TypeScript | Apache-2.0 | [v1.5.0](https://github.com/kafbat/kafka-ui/releases/tag/v1.5.0) signed | 2827 | Conduktor (partial) |
+| [AKHQ](https://github.com/tchiotludo/akhq) | Java | Apache-2.0 | [0.28.0](https://github.com/tchiotludo/akhq/releases/tag/0.28.0) signed | 3872 | Conduktor (partial) |
+| [Kafbat UI](https://github.com/kafbat/kafka-ui) | TypeScript | Apache-2.0 | [v1.5.0](https://github.com/kafbat/kafka-ui/releases/tag/v1.5.0) signed | 2828 | Conduktor (partial) |
 
 [All categories](../README.md#catalog)

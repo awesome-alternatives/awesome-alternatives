@@ -4,18 +4,18 @@ Self-hostable, privacy-friendly site analytics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.965](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.965) | 40694 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
-| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.1](https://github.com/umami-software/umami/releases/tag/v3.4.1) signed | 39978 | Matomo (full), Google Analytics (partial) |
-| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29792 | Matomo (full), Google Analytics (partial) |
-| [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.2](https://github.com/matomo-org/matomo/releases/tag/5.14.2) | 22013 | Google Analytics (full) |
-| [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21121 | Google Analytics (partial) |
+| [PostHog](https://github.com/PostHog/posthog) | Python | Other | [desktop-v0.61.967](https://github.com/PostHog/posthog/releases/tag/desktop-v0.61.967) | 40705 | Google Analytics (full), Mixpanel (full), Hotjar (full), Amplitude (full) |
+| [Umami](https://github.com/umami-software/umami) | TypeScript | MIT | [v3.4.1](https://github.com/umami-software/umami/releases/tag/v3.4.1) signed | 39991 | Matomo (full), Google Analytics (partial) |
+| [Plausible Analytics](https://github.com/plausible/analytics) | Elixir | AGPL-3.0 | [v3.2.1](https://github.com/plausible/analytics/releases/tag/v3.2.1) | 29798 | Matomo (full), Google Analytics (partial) |
+| [Matomo](https://github.com/matomo-org/matomo) | PHP | GPL-3.0 | [5.14.2](https://github.com/matomo-org/matomo/releases/tag/5.14.2) | 22015 | Google Analytics (full) |
+| [GoAccess](https://github.com/allinurl/goaccess) | C | MIT | [v1.12](https://github.com/allinurl/goaccess/releases/tag/v1.12) | 21123 | Google Analytics (partial) |
 | [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.2](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.2) | 13217 | Google Analytics (full) |
-| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) signed | 13115 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
+| [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) signed | 13118 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
 | [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v3.30.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v3.30.0) signed | 7267 | Mixpanel (full), Amplitude (full) |
-| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6150 | Google Analytics (partial) |
+| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6149 | Google Analytics (partial) |
 | [Countly](https://github.com/Countly/countly-server) | JavaScript | Other | [25.03.58](https://github.com/Countly/countly-server/releases/tag/25.03.58) | 5926 | Mixpanel (partial), Amplitude (partial) |
 | [Ackee](https://github.com/electerious/Ackee) | JavaScript | MIT | [v3.7.1](https://github.com/electerious/Ackee/releases/tag/v3.7.1) | 4722 | Google Analytics (partial) |
-| [Swetrix](https://github.com/Swetrix/swetrix) | TypeScript | AGPL-3.0 | [v5.5.3](https://github.com/Swetrix/swetrix/releases/tag/v5.5.3) | 1218 | Google Analytics (partial) |
+| [Swetrix](https://github.com/Swetrix/swetrix) | TypeScript | AGPL-3.0 | [v5.5.3](https://github.com/Swetrix/swetrix/releases/tag/v5.5.3) | 1219 | Google Analytics (partial) |
 | [counter.dev](https://github.com/ihucos/counter.dev) | JavaScript | AGPL-3.0 | none | 1012 | Google Analytics (partial) |
 | [Medama](https://github.com/medama-io/medama) | Go | none | [v0.6.2](https://github.com/medama-io/medama/releases/tag/v0.6.2) signed | 641 | Google Analytics (partial) |
 

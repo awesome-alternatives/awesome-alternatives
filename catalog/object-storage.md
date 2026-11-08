@@ -4,10 +4,10 @@ Self-hosted servers speaking the S3 API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MinIO](https://github.com/minio/minio) archived | Go | AGPL-3.0 | [RELEASE.2025-10-15T17-29-55Z](https://github.com/minio/minio/releases/tag/RELEASE.2025-10-15T17-29-55Z) | 61268 | none |
-| [SeaweedFS](https://github.com/seaweedfs/seaweedfs) | Go | Apache-2.0 | [4.52](https://github.com/seaweedfs/seaweedfs/releases/tag/4.52) | 35957 | MinIO (full), Amazon S3 (full) |
-| [RustFS](https://github.com/rustfs/rustfs) | Rust | Apache-2.0 | [1.0.4](https://github.com/rustfs/rustfs/releases/tag/1.0.4) | 35836 | MinIO (full), Amazon S3 (full) |
+| [MinIO](https://github.com/minio/minio) archived | Go | AGPL-3.0 | [RELEASE.2025-10-15T17-29-55Z](https://github.com/minio/minio/releases/tag/RELEASE.2025-10-15T17-29-55Z) | 61267 | none |
+| [SeaweedFS](https://github.com/seaweedfs/seaweedfs) | Go | Apache-2.0 | [4.53](https://github.com/seaweedfs/seaweedfs/releases/tag/4.53) | 35963 | MinIO (full), Amazon S3 (full) |
+| [RustFS](https://github.com/rustfs/rustfs) | Rust | Apache-2.0 | [1.0.4](https://github.com/rustfs/rustfs/releases/tag/1.0.4) | 35852 | MinIO (full), Amazon S3 (full) |
 | [Ceph](https://github.com/ceph/ceph) | C++ | Other | [v22.0.0](https://github.com/ceph/ceph/releases/tag/v22.0.0) | 17208 | MinIO (full), Amazon S3 (full) |
-| [Garage](https://github.com/deuxfleurs-org/garage) | Rust | AGPL-3.0 | [v2.5.0](https://github.com/deuxfleurs-org/garage/releases/tag/v2.5.0) | 4842 | Amazon S3 (partial), MinIO (partial) |
+| [Garage](https://github.com/deuxfleurs-org/garage) | Rust | AGPL-3.0 | [v2.5.0](https://github.com/deuxfleurs-org/garage/releases/tag/v2.5.0) | 4845 | Amazon S3 (partial), MinIO (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,9 +4,9 @@ Localisation platforms where teams translate and review an application's strings
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Weblate](https://github.com/WeblateOrg/weblate) verified | Python | GPL-3.0 | [weblate-2026.11.1](https://github.com/WeblateOrg/weblate/releases/tag/weblate-2026.11.1) | 6160 | Crowdin (full), Lokalise (full), Phrase (full), Transifex (full) |
-| [Tolgee](https://github.com/tolgee/tolgee-platform) | TypeScript | Other | [v3.242.4](https://github.com/tolgee/tolgee-platform/releases/tag/v3.242.4) | 4155 | Crowdin (full), Lokalise (full), Phrase (partial), Transifex (partial) |
+| [Weblate](https://github.com/WeblateOrg/weblate) verified | Python | GPL-3.0 | [weblate-2026.11.1](https://github.com/WeblateOrg/weblate/releases/tag/weblate-2026.11.1) | 6163 | Crowdin (full), Lokalise (full), Phrase (full), Transifex (full) |
+| [Tolgee](https://github.com/tolgee/tolgee-platform) | TypeScript | Other | [v3.242.4](https://github.com/tolgee/tolgee-platform/releases/tag/v3.242.4) | 4156 | Crowdin (full), Lokalise (full), Phrase (partial), Transifex (partial) |
 | [Traduora](https://github.com/ever-co/ever-traduora) | JavaScript | AGPL-3.0 | [v0.23.0](https://github.com/ever-co/ever-traduora/releases/tag/v0.23.0) signed | 2139 | Lokalise (partial), Crowdin (partial), Phrase (partial), Transifex (partial) |
-| [Pontoon](https://github.com/mozilla/pontoon) | Python | BSD-3-Clause | [v2026.11.04](https://github.com/mozilla/pontoon/releases/tag/v2026.11.04) signed | 1678 | Transifex (partial), Crowdin (partial), Phrase (partial) |
+| [Pontoon](https://github.com/mozilla/pontoon) | Python | BSD-3-Clause | [v2026.11.04](https://github.com/mozilla/pontoon/releases/tag/v2026.11.04) signed | 1679 | Transifex (partial), Crowdin (partial), Phrase (partial) |
 
 [All categories](../README.md#catalog)

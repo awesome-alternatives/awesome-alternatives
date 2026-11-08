@@ -9,6 +9,6 @@ Step through running programs, inspect their state and replay their execution.
 | [rr](https://github.com/rr-debugger/rr) | C++ | Other | [5.10.0](https://github.com/rr-debugger/rr/releases/tag/5.10.0) | 10739 | none |
 | [Seer](https://github.com/epasveer/seer) | C++ | GPL-3.0 | [v2.8](https://github.com/epasveer/seer/releases/tag/v2.8) | 3460 | none |
 | [PuDB](https://github.com/inducer/pudb) | Python | Other | [v2026.1](https://github.com/inducer/pudb/releases/tag/v2026.1) signed | 3252 | none |
-| [strace](https://github.com/strace/strace) | C | Other | [v7.3](https://github.com/strace/strace/releases/tag/v7.3) signed | 2722 | none |
+| [strace](https://github.com/strace/strace) | C | Other | [v7.3](https://github.com/strace/strace/releases/tag/v7.3) signed | 2723 | none |
 
 [All categories](../README.md#catalog)

@@ -4,11 +4,11 @@ Install and run the checks a repository wants before a commit or a push, and che
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35384 | pre-commit (partial) |
-| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18806 | none |
+| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35386 | pre-commit (partial) |
+| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18807 | none |
 | [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15688 | husky (partial) |
 | [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.2](https://github.com/evilmartians/lefthook/releases/tag/v2.2.2) signed | 9013 | husky (full), pre-commit (full) |
-| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.10](https://github.com/j178/prek/releases/tag/v0.5.10) signed | 8750 | pre-commit (drop-in) |
+| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.10](https://github.com/j178/prek/releases/tag/v0.5.10) signed | 8753 | pre-commit (drop-in) |
 | [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.75.0](https://github.com/sds/overcommit/releases/tag/v0.75.0) signed | 4005 | pre-commit (partial) |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | JavaScript | MIT | [2.14.0](https://github.com/toplenboren/simple-git-hooks/releases/tag/2.14.0) | 1690 | husky (partial) |
 | [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1533 | Commitizen (full) |
