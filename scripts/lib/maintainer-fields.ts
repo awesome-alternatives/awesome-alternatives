@@ -43,8 +43,12 @@ export function fieldName(change: FieldChange): string {
   }
 }
 
+function scopeRank(file: LocatedFile): number {
+  return file.scope === "path" ? 0 : 1;
+}
+
 export function speakingFor(slug: string, files: readonly LocatedFile[]): Speaking | null {
-  const ordered = [...files].sort((a, b) => (a.scope === b.scope ? 0 : a.scope === "path" ? -1 : 1));
+  const ordered = [...files].sort((a, b) => scopeRank(a) - scopeRank(b));
   for (const file of ordered) {
     if (file.file.form !== "fields") continue;
     const entry = file.file.tools.get(slug);

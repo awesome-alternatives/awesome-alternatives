@@ -52,11 +52,13 @@ export interface Gap {
   missingDeploy?: readonly DeployMethod[];
 }
 
+const NOTHING_LACKING: Gap = { missing: [] };
+
 export function requirementLabels(
   filters: Filters,
   strings: ChipStrings,
   describeCapability: (key: string) => string,
-  lacking: Gap = { missing: [] },
+  lacking: Gap = NOTHING_LACKING,
 ): string[] {
   return [
     ...(filters.capabilities ?? []).filter((c) => !lacking.missing.includes(c)).map(describeCapability),
