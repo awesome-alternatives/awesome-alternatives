@@ -98197,27 +98197,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-09T04:06:58Z",
+        "pushedAt": "2026-11-09T14:47:45Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-10T05:17:24.172Z"
+        "since": "2026-10-10T14:47:54.167Z"
       },
       "starHistory": {
         "from": "2026-10-09",
         "stars": [6,7,7,7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.35.3",
-        "publishedAt": "2026-10-31T15:43:16Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.3",
+        "tag": "v7.35.4",
+        "publishedAt": "2026-11-09T14:47:18Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.4",
         "source": "release",
         "signed": true,
-        "tagOid": "9127bf7bda595fbf9839f80c3a4ec451d23717d6"
+        "tagOid": "22da7a85917f6db61958600417b970b39fdf143f"
       },
       "releases": [
+        {
+          "tag": "v7.35.4",
+          "name": "fix(publish): read the pypi trusted publishing audience from the index (#1374)",
+          "publishedAt": "2026-11-09T14:47:18Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.4",
+          "prerelease": false
+        },
         {
           "tag": "v7.35.3",
           "name": "fix(git): ignore prefix-sharing tags that are not versions (#1363)",
@@ -98244,13 +98251,6 @@
           "name": "feat(cli): add snapshot command for PR preview versions (#1356)",
           "publishedAt": "2026-10-27T19:13:21Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.34.1",
-          "name": "fix(versioning): read sequential and two-part release tags as releases (#1351)",
-          "publishedAt": "2026-10-26T21:25:11Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.34.1",
           "prerelease": false
         }
       ],

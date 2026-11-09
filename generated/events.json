@@ -4652,7 +4652,6 @@
   {"type":"released","slug":"defectdojo","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"3.4.0","to":"3.4.101"},
   {"type":"released","slug":"evcc","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"0.317.1","to":"0.317.2"},
   {"type":"released","slug":"far-manager","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"ci/v3.0.6744.5022","to":"ci/v3.0.6745.5023"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"v7.30.3","to":"v7.31.0"},
   {"type":"released","slug":"flexprice","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"v2.1.39","to":"v2.1.40"},
   {"type":"released","slug":"hollo","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"0.9.23","to":"0.9.24"},
   {"type":"released","slug":"homebox","at":"2026-10-18T05:17:13.524Z","commit":"33dcb6a606386f5263546e5f1e85423d074588ab","from":"v0.26.2","to":"v0.27.0"},
@@ -8120,5 +8119,6 @@
   {"type":"released","slug":"worklenz","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v3.3.1","to":"v3.4.0"},
   {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v4.54.2","to":"v4.54.3"},
   {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":null,"from":"v1.26.51","to":"site@2026.11.3"},
-  {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":null,"from":"site@2026.11.3","to":"v1.26.53"}
+  {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":null,"from":"site@2026.11.3","to":"v1.26.53"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-09T14:48:16.010Z","commit":null,"from":"v7.35.3","to":"v7.35.4"}
 ]
