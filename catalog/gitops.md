@@ -4,11 +4,11 @@ Keep Kubernetes clusters in sync with manifests stored in git.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Argo CD](https://github.com/argoproj/argo-cd) | Go | Apache-2.0 | [v3.6.1](https://github.com/argoproj/argo-cd/releases/tag/v3.6.1) signed | 24570 | Flux (full), Spinnaker (partial), Octopus Deploy (partial) |
-| [Flux](https://github.com/fluxcd/flux2) | Go | Apache-2.0 | [v2.10.0](https://github.com/fluxcd/flux2/releases/tag/v2.10.0) signed | 8504 | Argo CD (full) |
+| [Argo CD](https://github.com/argoproj/argo-cd) | Go | Apache-2.0 | [v3.6.1](https://github.com/argoproj/argo-cd/releases/tag/v3.6.1) signed | 24572 | Flux (full), Spinnaker (partial), Octopus Deploy (partial) |
+| [Flux](https://github.com/fluxcd/flux2) | Go | Apache-2.0 | [v2.10.0](https://github.com/fluxcd/flux2/releases/tag/v2.10.0) signed | 8505 | Argo CD (full) |
 | [werf](https://github.com/werf/werf) | Go | Apache-2.0 | [v2.83.0](https://github.com/werf/werf/releases/tag/v2.83.0) signed | 4736 | Argo CD (partial) |
 | [Kargo](https://github.com/akuity/kargo) | Go | Apache-2.0 | [v1.12.5](https://github.com/akuity/kargo/releases/tag/v1.12.5) signed | 3769 | Spinnaker (partial) |
 | [Fleet](https://github.com/rancher/fleet) | Go | Apache-2.0 | [v0.16.3](https://github.com/rancher/fleet/releases/tag/v0.16.3) signed | 1740 | Argo CD (full) |
-| [Kluctl](https://github.com/kluctl/kluctl) | Go | Apache-2.0 | [v2.28.2](https://github.com/kluctl/kluctl/releases/tag/v2.28.2) | 888 | Argo CD (partial), Flux (partial) |
+| [Kluctl](https://github.com/kluctl/kluctl) | Go | Apache-2.0 | [v2.28.2](https://github.com/kluctl/kluctl/releases/tag/v2.28.2) | 889 | Argo CD (partial), Flux (partial) |
 
 [All categories](../README.md#catalog)

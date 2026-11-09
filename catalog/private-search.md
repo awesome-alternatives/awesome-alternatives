@@ -4,8 +4,8 @@ Metasearch engines you host, which query other search engines without profiling 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SearXNG](https://github.com/searxng/searxng) | Python | AGPL-3.0 | none | 39359 | Google Search (partial) |
-| [degoog](https://github.com/degoog-org/degoog) | TypeScript | AGPL-3.0 | [1.1.1](https://github.com/degoog-org/degoog/releases/tag/1.1.1) signed | 2534 | Google Search (partial) |
-| [Websurfx](https://github.com/neon-mmd/websurfx) | Rust | AGPL-3.0 | [v1.31.1](https://github.com/neon-mmd/websurfx/releases/tag/v1.31.1) signed | 1229 | Google Search (partial), SearXNG (full) |
+| [SearXNG](https://github.com/searxng/searxng) | Python | AGPL-3.0 | none | 39383 | Google Search (partial) |
+| [degoog](https://github.com/degoog-org/degoog) | TypeScript | AGPL-3.0 | [1.1.1](https://github.com/degoog-org/degoog/releases/tag/1.1.1) signed | 2536 | Google Search (partial) |
+| [Websurfx](https://github.com/neon-mmd/websurfx) | Rust | AGPL-3.0 | [v1.31.1](https://github.com/neon-mmd/websurfx/releases/tag/v1.31.1) signed | 1230 | Google Search (partial), SearXNG (full) |
 
 [All categories](../README.md#catalog)

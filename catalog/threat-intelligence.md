@@ -4,8 +4,8 @@ Collect, enrich and share indicators of compromise and knowledge about threats.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenCTI](https://github.com/OpenCTI-Platform/opencti) | TypeScript | Other | [7.261106.0](https://github.com/OpenCTI-Platform/opencti/releases/tag/7.261106.0) signed | 10278 | Recorded Future (partial), Anomali ThreatStream (partial) |
-| [MISP](https://github.com/MISP/MISP) | PHP | AGPL-3.0 | [v2.5.50](https://github.com/MISP/MISP/releases/tag/v2.5.50) signed | 6655 | Anomali ThreatStream (partial) |
+| [OpenCTI](https://github.com/OpenCTI-Platform/opencti) | TypeScript | Other | [7.261106.0](https://github.com/OpenCTI-Platform/opencti/releases/tag/7.261106.0) signed | 10282 | Recorded Future (partial), Anomali ThreatStream (partial) |
+| [MISP](https://github.com/MISP/MISP) | PHP | AGPL-3.0 | [v2.5.50](https://github.com/MISP/MISP/releases/tag/v2.5.50) signed | 6656 | Anomali ThreatStream (partial) |
 | [IntelOwl](https://github.com/intelowlproject/IntelOwl) | Python | AGPL-3.0 | [v6.8.0](https://github.com/intelowlproject/IntelOwl/releases/tag/v6.8.0) signed | 4810 | Recorded Future (partial) |
 | [Yeti](https://github.com/yeti-platform/yeti) | Python | Apache-2.0 | [2.12.0](https://github.com/yeti-platform/yeti/releases/tag/2.12.0) signed | 2042 | Anomali ThreatStream (partial) |
 

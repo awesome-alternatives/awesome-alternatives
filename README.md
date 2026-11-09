@@ -152,7 +152,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Actor toolkits](catalog/actor-framework.md) | 3 | Actor-model runtimes for building concurrent and distributed JVM applications. |
 | [Distributed SQL databases](catalog/distributed-sql.md) | 7 | SQL databases that spread data across nodes and speak the PostgreSQL wire protocol. |
 | [Error tracking](catalog/error-tracking.md) | 6 | Collect exceptions from applications through an SDK and group them into issues. |
-| [Tracing and continuous profiling](catalog/tracing.md) | 14 | Collect and search traces of requests as they cross services, and CPU and memory profiles of running services over time. |
+| [Tracing and continuous profiling](catalog/tracing.md) | 13 | Collect and search traces of requests as they cross services, and CPU and memory profiles of running services over time. |
 | [Time-series databases](catalog/time-series-database.md) | 7 | Store and query timestamped measurements at high write rates. |
 | [Encrypted files in git](catalog/encrypted-files.md) | 6 | Keep secrets in a repository, encrypted, and decrypted only by the people and machines allowed to. |
 | [Log storage](catalog/log-storage.md) | 6 | Store logs at volume and search them, the back end behind log dashboards. |
