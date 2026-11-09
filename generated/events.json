@@ -4932,7 +4932,6 @@
   {"type":"released","slug":"errbit","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v0.11.5","to":"v0.11.6"},
   {"type":"released","slug":"far-manager","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"ci/v3.0.6745.5024","to":"ci/v3.0.6745.5025"},
   {"type":"released","slug":"fastapi","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"0.150.0","to":"0.154.0"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v7.31.0","to":"v7.33.0"},
   {"type":"released","slug":"flagsmith","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v2.286.0","to":"v2.287.0"},
   {"type":"released","slug":"flox","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"v1.18.2","to":"v1.19.0"},
   {"type":"released","slug":"fumadocs","at":"2026-10-20T15:51:32.327Z","commit":"cb409b29f3b42b8f8ad0f988a965cefafea6218d","from":"fumadocs@16.17.7","to":"fumadocs-twoslash@4.0.3"},
@@ -8120,5 +8119,6 @@
   {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":null,"from":"v1.26.51","to":"site@2026.11.3"},
   {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":null,"from":"site@2026.11.3","to":"v1.26.53"},
   {"type":"released","slug":"ferrflow","at":"2026-11-09T14:48:16.010Z","commit":null,"from":"v7.35.3","to":"v7.35.4"},
-  {"type":"released","slug":"lfsx","at":"2026-11-09T16:17:06.841Z","commit":null,"from":"v1.26.53","to":"site@2026.11.4"}
+  {"type":"released","slug":"lfsx","at":"2026-11-09T16:17:06.841Z","commit":null,"from":"v1.26.53","to":"site@2026.11.4"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-09T16:17:38.830Z","commit":null,"from":"v7.35.4","to":"v7.35.5"}
 ]
