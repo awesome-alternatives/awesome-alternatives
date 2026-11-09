@@ -6643,7 +6643,6 @@
   {"type":"released","slug":"zen-browser","at":"2026-10-30T05:17:16.385Z","commit":"2185b15c2ec693a10be1a66218be73e601e41f87","from":"1.23.4b","to":"1.24b"},
   {"type":"released","slug":"zimfw","at":"2026-10-30T05:17:16.385Z","commit":"2185b15c2ec693a10be1a66218be73e601e41f87","from":"v1.20.1","to":"v1.20.2"},
   {"type":"released","slug":"zotero","at":"2026-10-30T05:17:16.385Z","commit":"2185b15c2ec693a10be1a66218be73e601e41f87","from":"10.0.6","to":"10.0.7"},
-  {"type":"released","slug":"lfsx","at":"2026-10-30T16:14:54.532Z","commit":"38e96bbe00495bb18a04a4406702f25c53a5d480","from":"v1.26.43","to":"v1.26.44"},
   {"type":"released","slug":"agenta","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"v0.127.1","to":"v0.128.0"},
   {"type":"released","slug":"aimeos","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"2026.10.1","to":"2026.10.2"},
   {"type":"released","slug":"apostrophe","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"apostrophe@4.34.0","to":"@apostrophecms/apostrophe-stable@4.32.1"},
@@ -8120,5 +8119,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v13.01","to":"v13.02"},
   {"type":"released","slug":"worklenz","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v3.3.1","to":"v3.4.0"},
   {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v4.54.2","to":"v4.54.3"},
-  {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":null,"from":"v1.26.51","to":"site@2026.11.3"}
+  {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":null,"from":"v1.26.51","to":"site@2026.11.3"},
+  {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":null,"from":"site@2026.11.3","to":"v1.26.53"}
 ]

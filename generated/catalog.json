@@ -163363,27 +163363,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-09T11:43:58Z",
+        "pushedAt": "2026-11-09T14:17:52Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-10T11:44:38.780Z"
+        "since": "2026-10-10T14:18:46.054Z"
       },
       "starHistory": {
         "from": "2026-10-09",
         "stars": [2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.3",
-        "publishedAt": "2026-11-09T11:44:04Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.3",
+        "tag": "v1.26.53",
+        "publishedAt": "2026-11-09T14:18:00Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.53",
         "source": "release",
         "signed": true,
-        "tagOid": "1ded14c227faf9a8233c0209048c90ac703aefb9"
+        "tagOid": "c75540df83449ceeff09234f043baf7b289dde01"
       },
       "releases": [
+        {
+          "tag": "v1.26.53",
+          "name": "fix(storage): keep the bucket upload running when the request is dropped (#746)",
+          "publishedAt": "2026-11-09T14:18:00Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.53",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.3",
           "name": "perf(locks): read bucket lock bodies concurrently and count locks for stats (#728)",
@@ -163410,13 +163417,6 @@
           "name": "fix(deps): update ferrlabs npm packages to v1.26.49 (#739)",
           "publishedAt": "2026-11-06T10:14:50Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.50",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.2",
-          "name": null,
-          "publishedAt": "2026-11-06T02:19:07Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.2",
           "prerelease": false
         }
       ],
