@@ -6446,7 +6446,6 @@
   {"type":"released","slug":"zed","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"v1.25.3","to":"v1.26.2"},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"v1.5.2","to":"v1.5.3"},
   {"type":"renamed","slug":"zstd","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"facebook/zstd","to":"meta/zstd"},
-  {"type":"released","slug":"lfsx","at":"2026-10-29T12:19:10.512Z","commit":"4e6a17ac65774cbd5dcc8b8713b2642a00b431ea","from":"site@2026.10.39","to":"v1.26.43"},
   {"type":"released","slug":"addy-io","at":"2026-10-29T15:34:52.054Z","commit":"19da31d7324de0355e5638ca3b430f216ebfeeef","from":"v1.7.3","to":"v1.7.4"},
   {"type":"released","slug":"agenta","at":"2026-10-29T15:34:52.054Z","commit":"19da31d7324de0355e5638ca3b430f216ebfeeef","from":"v0.126.0","to":"v0.127.1"},
   {"type":"released","slug":"alertmanager","at":"2026-10-29T15:34:52.054Z","commit":"19da31d7324de0355e5638ca3b430f216ebfeeef","from":"v0.34.1","to":"v0.34.2"},
@@ -8120,5 +8119,6 @@
   {"type":"released","slug":"vim","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v9.2.1308","to":"v9.2.1310"},
   {"type":"released","slug":"wekan","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v13.01","to":"v13.02"},
   {"type":"released","slug":"worklenz","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v3.3.1","to":"v3.4.0"},
-  {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v4.54.2","to":"v4.54.3"}
+  {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":null,"from":"v4.54.2","to":"v4.54.3"},
+  {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":null,"from":"v1.26.51","to":"site@2026.11.3"}
 ]
