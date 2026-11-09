@@ -163363,27 +163363,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-09T14:17:52Z",
+        "pushedAt": "2026-11-09T16:15:48Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-10T14:18:46.054Z"
+        "since": "2026-10-10T16:16:34.786Z"
       },
       "starHistory": {
         "from": "2026-10-09",
         "stars": [2,2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5]
       },
       "release": {
-        "tag": "v1.26.53",
-        "publishedAt": "2026-11-09T14:18:00Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.53",
+        "tag": "site@2026.11.4",
+        "publishedAt": "2026-11-09T16:15:54Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.4",
         "source": "release",
         "signed": true,
-        "tagOid": "c75540df83449ceeff09234f043baf7b289dde01"
+        "tagOid": "fd5d42deeb5aab53a3f435b3faf7ca762c3bf146"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.4",
+          "name": "refactor(site): use top-level await in main (#747)",
+          "publishedAt": "2026-11-09T16:15:54Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.4",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.53",
           "name": "fix(storage): keep the bucket upload running when the request is dropped (#746)",
@@ -163410,13 +163417,6 @@
           "name": "fix(deps): update ferrlabs npm packages to v1.26.50 (#740)",
           "publishedAt": "2026-11-07T14:15:48Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.51",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.50",
-          "name": "fix(deps): update ferrlabs npm packages to v1.26.49 (#739)",
-          "publishedAt": "2026-11-06T10:14:50Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.50",
           "prerelease": false
         }
       ],
