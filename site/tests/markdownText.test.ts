@@ -27,8 +27,8 @@ test("a note cannot start a heading, a quote, a list or front matter, even after
 });
 
 test("control and invisible characters are stripped, so nothing is hidden or reordered", () => {
-  assert.equal(markdownText("a\u0000b\u001bc d\r\ne"), "a b c d e");
-  assert.equal(markdownText("safe‮exe.txt​"), "safeexe.txt");
+  assert.equal(markdownText("a\u0000b\u001bc\u2028d\r\ne"), "a b c d e");
+  assert.equal(markdownText("safe\u202Eexe.txt\u200B"), "safeexe.txt");
 });
 
 test("a link stays a link, but cannot carry markdown or HTML", () => {
