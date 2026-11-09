@@ -4,10 +4,10 @@ Route, authenticate and rate-limit API traffic in front of services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44368 | Apigee (partial) |
-| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17304 | Kong Gateway (full) |
+| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.4](https://github.com/Kong/kong/releases/tag/3.9.4) signed | 44371 | Apigee (partial) |
+| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.19.0](https://github.com/apache/apisix/releases/tag/3.19.0) | 17305 | Kong Gateway (full) |
 | [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.16.0](https://github.com/TykTechnologies/tyk/releases/tag/v5.16.0) signed | 10879 | Kong Gateway (full) |
-| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9727 | Kong Gateway (partial) |
+| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.5](https://github.com/higress-group/higress/releases/tag/v2.2.5) | 9728 | Kong Gateway (partial) |
 | [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.2](https://github.com/apache/shenyu/releases/tag/v2.7.2) | 8914 | Kong Gateway (partial) |
 | [Easegress](https://github.com/easegress-io/easegress) | Go | Apache-2.0 | [v2.11.0](https://github.com/easegress-io/easegress/releases/tag/v2.11.0) signed | 5873 | Kong Gateway (partial) |
 | [Unkey](https://github.com/unkeyed/unkey) | Go | Other | [control-worker/v1.1.57](https://github.com/unkeyed/unkey/releases/tag/control-worker/v1.1.57) signed | 5482 | Apigee (partial) |

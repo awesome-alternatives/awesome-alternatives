@@ -4,9 +4,9 @@ Declare cloud infrastructure in files and apply the difference.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.17.1](https://github.com/hashicorp/terraform/releases/tag/v1.17.1) signed | 50171 | none |
-| [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.9](https://github.com/opentofu/opentofu/releases/tag/v1.13.9) | 30760 | Terraform (drop-in), AWS CloudFormation (full) |
-| [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.2](https://github.com/anomalyco/sst/releases/tag/v4.17.2) signed | 26428 | Vercel (partial), AWS CDK (partial) |
+| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.17.1](https://github.com/hashicorp/terraform/releases/tag/v1.17.1) signed | 50174 | none |
+| [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.9](https://github.com/opentofu/opentofu/releases/tag/v1.13.9) | 30765 | Terraform (drop-in), AWS CloudFormation (full) |
+| [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.2](https://github.com/anomalyco/sst/releases/tag/v4.17.2) signed | 26429 | Vercel (partial), AWS CDK (partial) |
 | [Pulumi](https://github.com/pulumi/pulumi) | Go | Apache-2.0 | [v3.274.1](https://github.com/pulumi/pulumi/releases/tag/v3.274.1) signed | 25851 | Terraform (full), AWS CloudFormation (full) |
 | [Packer](https://github.com/hashicorp/packer) | Go | Other | [v1.16.2](https://github.com/hashicorp/packer/releases/tag/v1.16.2) signed | 15819 | none |
 | [AWS CDK](https://github.com/aws/aws-cdk) | TypeScript | Apache-2.0 | [v2.275.0](https://github.com/aws/aws-cdk/releases/tag/v2.275.0) signed | 12971 | AWS CloudFormation (partial), Terraform (partial) |

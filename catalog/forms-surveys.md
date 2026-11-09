@@ -4,7 +4,7 @@ Build forms and surveys and collect the answers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.1.4](https://github.com/formbricks/formbricks/releases/tag/6.1.4) signed | 13225 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
+| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.1.4](https://github.com/formbricks/formbricks/releases/tag/6.1.4) signed | 13226 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
 | [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.1](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1) signed | 10609 | Typeform (partial) |
 | [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.6](https://github.com/heyform/heyform/releases/tag/v3.0.6) | 9067 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
 | [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.8.4](https://github.com/OpnForm/OpnForm/releases/tag/v2.8.4) signed | 3995 | Typeform (full), Google Forms (full) |

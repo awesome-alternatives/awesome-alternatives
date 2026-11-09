@@ -4,10 +4,10 @@ Install command-line tools and applications on macOS, Windows or Linux from pack
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.12](https://github.com/Homebrew/brew/releases/tag/7.0.12) signed | 50369 | none |
-| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26570 | Chocolatey (full) |
+| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.12](https://github.com/Homebrew/brew/releases/tag/7.0.12) signed | 50370 | none |
+| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26571 | Chocolatey (full) |
 | [Scoop](https://github.com/ScoopInstaller/Scoop) | PowerShell | Other | [v0.6.0](https://github.com/ScoopInstaller/Scoop/releases/tag/v0.6.0) signed | 24803 | Chocolatey (partial) |
-| [Nix](https://github.com/NixOS/nix) | C++ | LGPL-2.1 | [2.35.5](https://github.com/NixOS/nix/releases/tag/2.35.5) signed | 17989 | Homebrew (partial) |
+| [Nix](https://github.com/NixOS/nix) | C++ | LGPL-2.1 | [2.35.5](https://github.com/NixOS/nix/releases/tag/2.35.5) signed | 17990 | Homebrew (partial) |
 | [Chocolatey](https://github.com/chocolatey/choco) | C# | Other | [2.7.5](https://github.com/chocolatey/choco/releases/tag/2.7.5) signed | 11563 | none |
 | [pkgx](https://github.com/pkgxdev/pkgx) | Rust | Apache-2.0 | [v2.11.0](https://github.com/pkgxdev/pkgx/releases/tag/v2.11.0) signed | 9931 | Homebrew (partial), asdf (partial) |
 | [Flatpak](https://github.com/flatpak/flatpak) | C | LGPL-2.1 | [1.18.4](https://github.com/flatpak/flatpak/releases/tag/1.18.4) | 5107 | none |

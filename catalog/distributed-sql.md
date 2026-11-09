@@ -4,7 +4,7 @@ SQL databases that spread data across nodes and speak the PostgreSQL wire protoc
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [CockroachDB](https://github.com/cockroachdb/cockroach) | Go | Other | [v26.2.11](https://github.com/cockroachdb/cockroach/releases/tag/v26.2.11) | 32610 | YugabyteDB (full), Google Cloud Spanner (full) |
+| [CockroachDB](https://github.com/cockroachdb/cockroach) | Go | Other | [v26.2.11](https://github.com/cockroachdb/cockroach/releases/tag/v26.2.11) | 32611 | YugabyteDB (full), Google Cloud Spanner (full) |
 | [Apache ShardingSphere](https://github.com/apache/shardingsphere) | Java | Apache-2.0 | [5.5.3](https://github.com/apache/shardingsphere/releases/tag/5.5.3) | 20822 | Citus (partial) |
 | [Citus](https://github.com/citusdata/citus) | C | AGPL-3.0 | [v14.3.0](https://github.com/citusdata/citus/releases/tag/v14.3.0) signed | 12849 | CockroachDB (partial), YugabyteDB (partial) |
 | [YugabyteDB](https://github.com/yugabyte/yugabyte-db) | C | Other | [v2026.1.3.0](https://github.com/yugabyte/yugabyte-db/releases/tag/v2026.1.3.0) | 10659 | CockroachDB (full), Amazon Keyspaces (partial), Astra DB (partial), Google Cloud Spanner (partial) |

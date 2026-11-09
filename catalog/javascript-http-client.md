@@ -9,6 +9,6 @@ Send HTTP requests from Node.js and browsers.
 | [Ky](https://github.com/sindresorhus/ky) | TypeScript | MIT | [v2.2.0](https://github.com/sindresorhus/ky/releases/tag/v2.2.0) | 17148 | request (partial), axios (full) |
 | [SuperAgent](https://github.com/forwardemail/superagent) | JavaScript | MIT | [v10.4.2](https://github.com/forwardemail/superagent/releases/tag/v10.4.2) | 16635 | request (full) |
 | [Got](https://github.com/sindresorhus/got) | TypeScript | MIT | [v16.2.0](https://github.com/sindresorhus/got/releases/tag/v16.2.0) | 14962 | request (full) |
-| [undici](https://github.com/nodejs/undici) | JavaScript | MIT | [v8.12.4](https://github.com/nodejs/undici/releases/tag/v8.12.4) signed | 7730 | request (full) |
+| [undici](https://github.com/nodejs/undici) | JavaScript | MIT | [v8.12.4](https://github.com/nodejs/undici/releases/tag/v8.12.4) signed | 7731 | request (full) |
 
 [All categories](../README.md#catalog)

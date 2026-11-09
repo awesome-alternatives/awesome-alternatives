@@ -4,8 +4,8 @@ Browse and view images quickly, with light edits.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ImageGlass](https://github.com/d2phap/ImageGlass) | C# | Other | [10.0.6.906](https://github.com/d2phap/ImageGlass/releases/tag/10.0.6.906) | 14897 | IrfanView (full) |
-| [nomacs](https://github.com/nomacs/nomacs) | C++ | GPL-3.0 | [3.22.5](https://github.com/nomacs/nomacs/releases/tag/3.22.5) | 3313 | IrfanView (full) |
+| [ImageGlass](https://github.com/d2phap/ImageGlass) | C# | Other | [10.0.6.906](https://github.com/d2phap/ImageGlass/releases/tag/10.0.6.906) | 14900 | IrfanView (full) |
+| [nomacs](https://github.com/nomacs/nomacs) | C++ | GPL-3.0 | [3.22.5](https://github.com/nomacs/nomacs/releases/tag/3.22.5) | 3314 | IrfanView (full) |
 | [qimgv](https://github.com/easymodo/qimgv) | C++ | GPL-3.0 | [v1.0.2](https://github.com/easymodo/qimgv/releases/tag/v1.0.2) | 3167 | IrfanView (partial) |
 | [Oculante](https://github.com/woelper/oculante) | Rust | MIT | [0.9.6](https://github.com/woelper/oculante/releases/tag/0.9.6) | 1726 | IrfanView (partial) |
 | [swayimg](https://github.com/artemsen/swayimg) | C++ | MIT | [v5.7](https://github.com/artemsen/swayimg/releases/tag/v5.7) signed | 739 | IrfanView (partial) |

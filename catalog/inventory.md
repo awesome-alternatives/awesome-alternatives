@@ -5,10 +5,10 @@ Track stock, parts, equipment and household belongings, and who has them where.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Snipe-IT](https://github.com/grokability/snipe-it) | PHP | AGPL-3.0 | [v8.8.3](https://github.com/grokability/snipe-it/releases/tag/v8.8.3) | 15164 | Sortly (partial) |
-| [InvenTree](https://github.com/inventree/InvenTree) | Python | MIT | [1.7.1](https://github.com/inventree/InvenTree/releases/tag/1.7.1) signed | 7833 | Sortly (partial) |
-| [HomeBox](https://github.com/sysadminsmedia/homebox) | Go | AGPL-3.0 | [v0.27.1](https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.1) signed | 7792 | Sortly (partial) |
+| [InvenTree](https://github.com/inventree/InvenTree) | Python | MIT | [1.7.1](https://github.com/inventree/InvenTree/releases/tag/1.7.1) signed | 7834 | Sortly (partial) |
+| [HomeBox](https://github.com/sysadminsmedia/homebox) | Go | AGPL-3.0 | [v0.27.1](https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.1) signed | 7797 | Sortly (partial) |
 | [Shelf](https://github.com/Shelf-nu/shelf.nu) | TypeScript | Other | [shelf@2.4.0](https://github.com/Shelf-nu/shelf.nu/releases/tag/shelf%402.4.0) signed | 3052 | Sortly (partial) |
-| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.20.5](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.20.5) | 1836 | Sortly (partial) |
+| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.20.5](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.20.5) | 1838 | Sortly (partial) |
 | [Koillection](https://github.com/benjaminjonard/koillection) | PHP | MIT | [1.8.5](https://github.com/benjaminjonard/koillection/releases/tag/1.8.5) | 1346 | HomeBox (partial) |
 | [OpenBoxes](https://github.com/openboxes/openboxes) | Groovy | EPL-1.0 | [v0.9.9](https://github.com/openboxes/openboxes/releases/tag/v0.9.9) | 922 | Sortly (partial) |
 

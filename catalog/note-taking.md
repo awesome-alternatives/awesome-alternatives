@@ -4,15 +4,15 @@ Personal notes on desktop and mobile, with sync.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Memos](https://github.com/usememos/memos) | Go | MIT | [26.11.0](https://github.com/usememos/memos/releases/tag/26.11.0) | 64352 | Google Keep (full) |
-| [MarkText](https://github.com/marktext/marktext) | TypeScript | MIT | [v0.23.0](https://github.com/marktext/marktext/releases/tag/v0.23.0) | 63738 | Typora (full) |
-| [Joplin](https://github.com/laurent22/joplin) | TypeScript | Other | [v3.7.22](https://github.com/laurent22/joplin/releases/tag/v3.7.22) | 57097 | Evernote (full), Obsidian (partial), OneNote (full) |
-| [SiYuan](https://github.com/siyuan-note/siyuan) | TypeScript | AGPL-3.0 | [v3.8.9](https://github.com/siyuan-note/siyuan/releases/tag/v3.8.9) signed | 47127 | Obsidian (full), Notion (partial), Typora (partial) |
-| [Logseq](https://github.com/logseq/logseq) | Clojure | AGPL-3.0 | [2.0.2](https://github.com/logseq/logseq/releases/tag/2.0.2) | 45520 | Obsidian (full) |
-| [Trilium Notes](https://github.com/TriliumNext/Trilium) | TypeScript | AGPL-3.0 | [v0.106.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.106.1) signed | 38741 | Evernote (full), OneNote (partial) |
-| [Foam](https://github.com/foambubble/foam) | TypeScript | Other | [vscode@0.48.0](https://github.com/foambubble/foam/releases/tag/vscode%400.48.0) | 17472 | Obsidian (partial) |
+| [Memos](https://github.com/usememos/memos) | Go | MIT | [26.11.0](https://github.com/usememos/memos/releases/tag/26.11.0) | 64357 | Google Keep (full) |
+| [MarkText](https://github.com/marktext/marktext) | TypeScript | MIT | [v0.23.0](https://github.com/marktext/marktext/releases/tag/v0.23.0) | 63758 | Typora (full) |
+| [Joplin](https://github.com/laurent22/joplin) | TypeScript | Other | [v3.7.22](https://github.com/laurent22/joplin/releases/tag/v3.7.22) | 57107 | Evernote (full), Obsidian (partial), OneNote (full) |
+| [SiYuan](https://github.com/siyuan-note/siyuan) | TypeScript | AGPL-3.0 | [v3.8.9](https://github.com/siyuan-note/siyuan/releases/tag/v3.8.9) signed | 47137 | Obsidian (full), Notion (partial), Typora (partial) |
+| [Logseq](https://github.com/logseq/logseq) | Clojure | AGPL-3.0 | [2.0.2](https://github.com/logseq/logseq/releases/tag/2.0.2) | 45525 | Obsidian (full) |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | TypeScript | AGPL-3.0 | [v0.107.0](https://github.com/TriliumNext/Trilium/releases/tag/v0.107.0) signed | 38747 | Evernote (full), OneNote (partial) |
+| [Foam](https://github.com/foambubble/foam) | TypeScript | Other | [vscode@0.48.0](https://github.com/foambubble/foam/releases/tag/vscode%400.48.0) | 17473 | Obsidian (partial) |
 | [Xournal++](https://github.com/xournalpp/xournalpp) | C++ | GPL-2.0 | [v1.3.8](https://github.com/xournalpp/xournalpp/releases/tag/v1.3.8) | 15648 | OneNote (partial), GoodNotes (partial) |
-| [Notesnook](https://github.com/streetwriters/notesnook) | TypeScript | GPL-3.0 | [v3.4.12](https://github.com/streetwriters/notesnook/releases/tag/v3.4.12) signed | 14900 | Evernote (full), Google Keep (full) |
+| [Notesnook](https://github.com/streetwriters/notesnook) | TypeScript | GPL-3.0 | [v3.4.12](https://github.com/streetwriters/notesnook/releases/tag/v3.4.12) signed | 14901 | Evernote (full), Google Keep (full) |
 | [Zettlr](https://github.com/Zettlr/Zettlr) | TypeScript | GPL-3.0 | [v4.9.0](https://github.com/Zettlr/Zettlr/releases/tag/v4.9.0) signed | 13895 | Obsidian (partial), Typora (partial) |
 | [Rnote](https://github.com/flxzt/rnote) | Rust | GPL-3.0 | [v0.14.2](https://github.com/flxzt/rnote/releases/tag/v0.14.2) signed | 11847 | GoodNotes (partial), OneNote (partial) |
 | [Blinko](https://github.com/blinkospace/blinko) | TypeScript | GPL-3.0 | [1.8.9](https://github.com/blinkospace/blinko/releases/tag/1.8.9) signed | 11177 | Google Keep (full) |

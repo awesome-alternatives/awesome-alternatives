@@ -4,9 +4,9 @@ Browser extensions that block ads, trackers and other unwanted content on web pa
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.76.0](https://github.com/gorhill/uBlock/releases/tag/1.76.0) signed | 69182 | Adblock Plus (full) |
+| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.76.0](https://github.com/gorhill/uBlock/releases/tag/1.76.0) signed | 69195 | Adblock Plus (full) |
 | [AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension) | TypeScript | GPL-3.0 | [v5.5.3.3](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/tag/v5.5.3.3) signed | 4547 | Adblock Plus (full) |
-| [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | JavaScript | GPL-3.0 | [2026.1103.1743](https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743) | 4005 | Adblock Plus (full), uBlock Origin (partial) |
+| [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | JavaScript | GPL-3.0 | [2026.1103.1743](https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743) | 4006 | Adblock Plus (full), uBlock Origin (partial) |
 | [Privacy Badger](https://github.com/EFForg/privacybadger) | JavaScript | Other | [release-2026.9.15](https://github.com/EFForg/privacybadger/releases/tag/release-2026.9.15) signed | 3886 | Adblock Plus (partial) |
 | [Ghostery](https://github.com/ghostery/ghostery-extension) | JavaScript | GPL-3.0 | [v10.6.11](https://github.com/ghostery/ghostery-extension/releases/tag/v10.6.11) signed | 1767 | Adblock Plus (partial), Privacy Badger (partial) |
 

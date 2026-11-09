@@ -6,8 +6,8 @@ Replace the Android home screen and app drawer.
 |---|---|---|---|---:|---|
 | [Lawnchair](https://github.com/LawnchairLauncher/lawnchair) | Java | Other | [1.2.0.1884](https://github.com/LawnchairLauncher/lawnchair/releases/tag/1.2.0.1884) signed | 13904 | Nova Launcher (partial) |
 | [Kvaesitso](https://github.com/MM2-0/Kvaesitso) | Kotlin | GPL-3.0 | [v1.41.0](https://github.com/MM2-0/Kvaesitso/releases/tag/v1.41.0) signed | 5365 | Niagara Launcher (partial), Nova Launcher (partial) |
-| [Olauncher](https://github.com/tanujnotes/Olauncher) | Kotlin | GPL-3.0 | [v6.9.17](https://github.com/tanujnotes/Olauncher/releases/tag/v6.9.17) | 3962 | Niagara Launcher (partial) |
-| [KISS Launcher](https://github.com/Neamar/KISS) | Java | GPL-3.0 | [v3.26.0](https://github.com/Neamar/KISS/releases/tag/v3.26.0) | 3538 | Niagara Launcher (partial) |
-| [Neo Launcher](https://github.com/NeoApplications/Neo-Launcher) | Java | GPL-3.0 | [0.9.3](https://github.com/NeoApplications/Neo-Launcher/releases/tag/0.9.3) | 2161 | Nova Launcher (partial) |
+| [Olauncher](https://github.com/tanujnotes/Olauncher) | Kotlin | GPL-3.0 | [v6.9.17](https://github.com/tanujnotes/Olauncher/releases/tag/v6.9.17) | 3963 | Niagara Launcher (partial) |
+| [KISS Launcher](https://github.com/Neamar/KISS) | Java | GPL-3.0 | [v3.26.0](https://github.com/Neamar/KISS/releases/tag/v3.26.0) | 3539 | Niagara Launcher (partial) |
+| [Neo Launcher](https://github.com/NeoApplications/Neo-Launcher) | Java | GPL-3.0 | [0.9.3](https://github.com/NeoApplications/Neo-Launcher/releases/tag/0.9.3) | 2162 | Nova Launcher (partial) |
 
 [All categories](../README.md#catalog)

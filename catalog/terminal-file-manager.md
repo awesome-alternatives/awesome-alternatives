@@ -4,9 +4,9 @@ Browse, preview and move files from a keyboard-driven interface in the terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 43305 | ranger (full) |
-| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 24036 | ranger (full), Midnight Commander (partial) |
-| [nnn](https://github.com/jarun/nnn) | C | BSD-2-Clause | [v5.3](https://github.com/jarun/nnn/releases/tag/v5.3) signed | 22112 | ranger (full) |
+| [yazi](https://github.com/sxyazi/yazi) | Rust | MIT | [v26.9.1](https://github.com/sxyazi/yazi/releases/tag/v26.9.1) signed | 43310 | ranger (full) |
+| [superfile](https://github.com/yorukot/superfile) | Go | MIT | [v1.6.0](https://github.com/yorukot/superfile/releases/tag/v1.6.0) signed | 24037 | ranger (full), Midnight Commander (partial) |
+| [nnn](https://github.com/jarun/nnn) | C | BSD-2-Clause | [v5.3](https://github.com/jarun/nnn/releases/tag/v5.3) signed | 22111 | ranger (full) |
 | [ranger](https://github.com/ranger/ranger) | Python | GPL-3.0 | [v1.9.4](https://github.com/ranger/ranger/releases/tag/v1.9.4) signed | 17453 | Midnight Commander (partial) |
 | [lf](https://github.com/gokcehan/lf) | Go | MIT | [r42](https://github.com/gokcehan/lf/releases/tag/r42) signed | 9592 | ranger (full) |
 | [xplr](https://github.com/sayanarijit/xplr) | Rust | MIT | [v1.2.2](https://github.com/sayanarijit/xplr/releases/tag/v1.2.2) signed | 4852 | ranger (partial), nnn (partial) |

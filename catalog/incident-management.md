@@ -4,7 +4,7 @@ Route alerts, page whoever is on call and track incidents to resolution.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Keep](https://github.com/keephq/keep) | Python | Other | [v0.55.0](https://github.com/keephq/keep/releases/tag/v0.55.0) signed | 12501 | PagerDuty (partial) |
+| [Keep](https://github.com/keephq/keep) | Python | Other | [v0.55.0](https://github.com/keephq/keep/releases/tag/v0.55.0) signed | 12502 | PagerDuty (partial) |
 | [Alertmanager](https://github.com/prometheus/alertmanager) | Go | Apache-2.0 | [v0.34.2](https://github.com/prometheus/alertmanager/releases/tag/v0.34.2) signed | 8687 | PagerDuty (partial) |
 | [GoAlert](https://github.com/target/goalert) | Go | Apache-2.0 | [v0.35.0](https://github.com/target/goalert/releases/tag/v0.35.0) signed | 2868 | PagerDuty (full) |
 | [karma](https://github.com/prymitive/karma) | TypeScript | Apache-2.0 | [v0.134](https://github.com/prymitive/karma/releases/tag/v0.134) | 2693 | PagerDuty (partial) |
