@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.19.1] - 2026-11-09
+
+### Bug Fixes
+
+- fix: sonar security findings and quick wins (#484)
+
 ## [0.19.0] - 2026-11-03
 
 ### Features
