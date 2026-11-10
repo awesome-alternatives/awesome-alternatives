@@ -163378,27 +163378,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-10T04:19:38Z",
+        "pushedAt": "2026-11-10T20:52:47Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-11T09:37:51.027Z"
+        "since": "2026-10-11T20:53:34.448Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.4",
-        "publishedAt": "2026-11-09T16:15:54Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.4",
+        "tag": "site@2026.11.5",
+        "publishedAt": "2026-11-10T20:52:53Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.5",
         "source": "release",
         "signed": true,
-        "tagOid": "fd5d42deeb5aab53a3f435b3faf7ca762c3bf146"
+        "tagOid": "5999963827e95c17a123286829b8acc559c06a60"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.5",
+          "name": "feat(site): report frontend errors and performance to Grafana Faro (#752)",
+          "publishedAt": "2026-11-10T20:52:53Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.5",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.4",
           "name": "refactor(site): use top-level await in main (#747)",
@@ -163425,13 +163432,6 @@
           "name": "perf(locks): read bucket lock bodies concurrently and count locks for stats (#728)",
           "publishedAt": "2026-11-09T11:44:04Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.52",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.51",
-          "name": "fix(deps): update ferrlabs npm packages to v1.26.50 (#740)",
-          "publishedAt": "2026-11-07T14:15:48Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.51",
           "prerelease": false
         }
       ],
