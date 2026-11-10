@@ -163378,27 +163378,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-10T20:52:47Z",
+        "pushedAt": "2026-11-10T22:53:49Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-11T20:53:34.448Z"
+        "since": "2026-10-11T22:54:34.709Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [2,2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.5",
-        "publishedAt": "2026-11-10T20:52:53Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.5",
+        "tag": "site@2026.11.6",
+        "publishedAt": "2026-11-10T22:53:55Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.6",
         "source": "release",
         "signed": true,
-        "tagOid": "5999963827e95c17a123286829b8acc559c06a60"
+        "tagOid": "758246a598e3a25d5e92f8041194caeaca197dc4"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.6",
+          "name": "fix(telemetry): mask both values when two keys share a line (#753)",
+          "publishedAt": "2026-11-10T22:53:55Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.6",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.26.54",
+          "name": "fix(telemetry): mask both values when two keys share a line (#753)",
+          "publishedAt": "2026-11-10T22:53:55Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.54",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.5",
           "name": "feat(site): report frontend errors and performance to Grafana Faro (#752)",
@@ -163418,20 +163432,6 @@
           "name": "fix(storage): keep the bucket upload running when the request is dropped (#746)",
           "publishedAt": "2026-11-09T14:18:00Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.53",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.3",
-          "name": "perf(locks): read bucket lock bodies concurrently and count locks for stats (#728)",
-          "publishedAt": "2026-11-09T11:44:04Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.3",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.52",
-          "name": "perf(locks): read bucket lock bodies concurrently and count locks for stats (#728)",
-          "publishedAt": "2026-11-09T11:44:04Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.52",
           "prerelease": false
         }
       ],

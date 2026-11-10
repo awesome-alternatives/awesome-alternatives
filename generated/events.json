@@ -6940,7 +6940,6 @@
   {"type":"released","slug":"yaak","at":"2026-11-02T05:17:17.083Z","commit":"7ac1255ad887bc92d35e9a50715a4dada15c4acd","from":"v2026.9.0","to":"v2026.9.1"},
   {"type":"released","slug":"zigbee2mqtt","at":"2026-11-02T05:17:17.083Z","commit":"7ac1255ad887bc92d35e9a50715a4dada15c4acd","from":"2.14.2","to":"2.14.3"},
   {"type":"released","slug":"zot","at":"2026-11-02T05:17:17.083Z","commit":"7ac1255ad887bc92d35e9a50715a4dada15c4acd","from":"v2.1.22","to":"v2.1.23"},
-  {"type":"released","slug":"lfsx","at":"2026-11-02T22:17:54.205Z","commit":"4e15fcd3ab0f0d7aefe4d9290e1702bda19d6ca1","from":"v1.26.46","to":"v1.26.47"},
   {"type":"released","slug":"2fauth","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"v9.0.0","to":"v9.0.1"},
   {"type":"released","slug":"act","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"v0.2.94","to":"v0.2.95"},
   {"type":"released","slug":"agenta","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"v0.128.0","to":"v0.128.2"},
@@ -8297,5 +8296,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-10T15:43:52.014Z","commit":null,"from":"v0.53.5","to":"v0.54.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":null,"from":"site@2026.11.4","to":"site@2026.11.5"},
   {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":null,"from":"v0.54.0","to":"v0.55.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":null,"from":"v0.55.0","to":"v0.55.1"}
+  {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":null,"from":"v0.55.0","to":"v0.55.1"},
+  {"type":"released","slug":"lfsx","at":"2026-11-10T22:55:00.067Z","commit":null,"from":"site@2026.11.5","to":"site@2026.11.6"}
 ]
