@@ -6,7 +6,7 @@ Host and proxy packages and build artefacts for Maven, npm, PyPI, containers and
 |---|---|---|---|---:|---|
 | [Verdaccio](https://github.com/verdaccio/verdaccio) | TypeScript | MIT | [v7.1.0](https://github.com/verdaccio/verdaccio/releases/tag/v7.1.0) signed | 17984 | JFrog Artifactory (partial) |
 | [Athens](https://github.com/gomods/athens) | Go | MIT | [v0.20.0](https://github.com/gomods/athens/releases/tag/v0.20.0) signed | 4822 | JFrog Artifactory (partial) |
-| [ChartMuseum](https://github.com/helm/chartmuseum) | Go | Apache-2.0 | [v0.16.6](https://github.com/helm/chartmuseum/releases/tag/v0.16.6) signed | 3851 | JFrog Artifactory (partial) |
+| [ChartMuseum](https://github.com/helm/chartmuseum) | Go | Apache-2.0 | [v0.16.6](https://github.com/helm/chartmuseum/releases/tag/v0.16.6) signed | 3850 | JFrog Artifactory (partial) |
 | [aptly](https://github.com/aptly-dev/aptly) | Go | MIT | [v1.6.3](https://github.com/aptly-dev/aptly/releases/tag/v1.6.3) | 2892 | JFrog Artifactory (partial) |
 | [Nexus Repository](https://github.com/sonatype/nexus-public) | Java | EPL-1.0 | [release-3.98.1-01](https://github.com/sonatype/nexus-public/releases/tag/release-3.98.1-01) | 2703 | JFrog Artifactory (partial) |
 | [pypiserver](https://github.com/pypiserver/pypiserver) | Python | Other | [v2.4.3](https://github.com/pypiserver/pypiserver/releases/tag/v2.4.3) signed | 2077 | JFrog Artifactory (partial) |

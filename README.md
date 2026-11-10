@@ -221,7 +221,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Mail servers](catalog/mail-server.md) | 25 | Host email for your own domains, archive and search every message for retention, and collect the DMARC reports sent about your domains. |
 | [Cloud development environments](catalog/cloud-ide.md) | 4 | Development environments on a remote machine, reached from a browser or a local editor. |
 | [Service meshes](catalog/service-mesh.md) | 5 | Encrypt, route and observe traffic between services in a cluster. |
-| [API gateways](catalog/api-gateway.md) | 11 | Route, authenticate and rate-limit API traffic in front of services. |
+| [API gateways](catalog/api-gateway.md) | 10 | Route, authenticate and rate-limit API traffic in front of services. |
 | [Workflow orchestration](catalog/workflow-orchestration.md) | 15 | Schedule and run data pipelines and jobs as dependency graphs. |
 | [Vector databases](catalog/vector-database.md) | 11 | Store embeddings and search them by similarity. |
 | [Analytical databases](catalog/analytical-database.md) | 13 | Columnar SQL engines for analytics over large datasets. |

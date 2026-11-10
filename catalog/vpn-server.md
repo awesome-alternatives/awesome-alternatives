@@ -4,11 +4,11 @@ Run a remote-access or site-to-site VPN server for your users and networks.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30460 | NordVPN (partial) |
-| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27450 | OpenVPN Access Server (partial) |
-| [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.9](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.9) | 14792 | OpenVPN Access Server (partial) |
+| [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30461 | NordVPN (partial) |
+| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27452 | OpenVPN Access Server (partial) |
+| [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.9](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.9) | 14794 | OpenVPN Access Server (partial) |
 | [SoftEther VPN](https://github.com/SoftEtherVPN/SoftEtherVPN) | C | Apache-2.0 | [5.2.5189](https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5189) | 13726 | OpenVPN Access Server (full) |
-| [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6255 | NordVPN (partial), OpenVPN Access Server (partial) |
+| [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6254 | NordVPN (partial), OpenVPN Access Server (partial) |
 | [Pritunl](https://github.com/pritunl/pritunl) | Python | Other | [1.34.4803.56](https://github.com/pritunl/pritunl/releases/tag/1.34.4803.56) signed | 5040 | OpenVPN Access Server (full) |
 | [WGDashboard](https://github.com/WGDashboard/WGDashboard) | Vue | Apache-2.0 | [v4.3.4](https://github.com/WGDashboard/WGDashboard/releases/tag/v4.3.4) signed | 3774 | OpenVPN Access Server (partial) |
 | [strongSwan](https://github.com/strongswan/strongswan) | C | Other | [6.1.0](https://github.com/strongswan/strongswan/releases/tag/6.1.0) | 3050 | OpenVPN Access Server (partial) |

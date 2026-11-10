@@ -4,13 +4,13 @@ Stream a personal library of films, series, music and podcasts to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59171 | Plex (full), Emby (full), Netflix (partial) |
-| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24617 | Plex (partial), Spotify (partial) |
-| [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17337 | Plex (partial), Spotify (partial) |
-| [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.37.2](https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.2) | 14963 | Audible (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59176 | Plex (full), Emby (full), Netflix (partial) |
+| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24621 | Plex (partial), Spotify (partial) |
+| [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17339 | Plex (partial), Spotify (partial) |
+| [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.37.2](https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.2) | 14964 | Audible (partial) |
 | [Streama](https://github.com/streamaserver/streama) | JavaScript | MIT | [v1.11.2](https://github.com/streamaserver/streama/releases/tag/v1.11.2) | 9820 | Netflix (partial), Emby (partial) |
 | [Mopidy](https://github.com/mopidy/mopidy) | Python | Apache-2.0 | [v4.0.5](https://github.com/mopidy/mopidy/releases/tag/v4.0.5) | 8608 | Spotify (partial) |
-| [Snapcast](https://github.com/snapcast/snapcast) | C++ | GPL-3.0 | [v0.35.0](https://github.com/snapcast/snapcast/releases/tag/v0.35.0) | 8057 | Sonos (partial) |
+| [Snapcast](https://github.com/snapcast/snapcast) | C++ | GPL-3.0 | [v0.35.0](https://github.com/snapcast/snapcast/releases/tag/v0.35.0) | 8058 | Sonos (partial) |
 | [Black Candy](https://github.com/blackcandy-org/blackcandy) | Ruby | MIT | [v3.2.1](https://github.com/blackcandy-org/blackcandy/releases/tag/v3.2.1) | 4432 | Spotify (partial) |
 | [Ampache](https://github.com/ampache/ampache) | PHP | AGPL-3.0 | [8.4.0](https://github.com/ampache/ampache/releases/tag/8.4.0) signed | 3848 | Plex (partial), Spotify (partial) |
 | [Music Assistant](https://github.com/music-assistant/server) | Python | Apache-2.0 | [2.10.9](https://github.com/music-assistant/server/releases/tag/2.10.9) | 3298 | Spotify (partial), Sonos (partial) |
@@ -25,7 +25,7 @@ Stream a personal library of films, series, music and podcasts to your devices.
 | [Lyrion Music Server](https://github.com/LMS-Community/slimserver) | Perl | Other | [9.1.1](https://github.com/LMS-Community/slimserver/releases/tag/9.1.1) | 1819 | Spotify (partial) |
 | [LMS](https://github.com/epoupon/lms) | C++ | GPL-3.0 | [v3.82.0](https://github.com/epoupon/lms/releases/tag/v3.82.0) | 1699 | Spotify (partial) |
 | [Gerbera](https://github.com/gerbera/gerbera) | C++ | Other | [v3.3.0](https://github.com/gerbera/gerbera/releases/tag/v3.3.0) | 1407 | Plex (partial) |
-| [PinePods](https://github.com/madeofpendletonwool/PinePods) | Rust | GPL-3.0 | [0.9.2](https://github.com/madeofpendletonwool/PinePods/releases/tag/0.9.2) | 1053 | Pocket Casts (partial), Spotify (partial) |
+| [PinePods](https://github.com/madeofpendletonwool/PinePods) | Rust | GPL-3.0 | [0.9.2](https://github.com/madeofpendletonwool/PinePods/releases/tag/0.9.2) | 1054 | Pocket Casts (partial), Spotify (partial) |
 | [PodFetch](https://github.com/SamTV12345/PodFetch) | Rust | Apache-2.0 | [v5.2.3](https://github.com/SamTV12345/PodFetch/releases/tag/v5.2.3) | 523 | Pocket Casts (partial) |
 
 [All categories](../README.md#catalog)

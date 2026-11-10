@@ -7,8 +7,8 @@ Version bumps, changelogs, tags and published releases from commit history.
 | [semantic-release](https://github.com/semantic-release/semantic-release) | JavaScript | MIT | [v25.0.9](https://github.com/semantic-release/semantic-release/releases/tag/v25.0.9) signed | 24165 | none |
 | [GoReleaser](https://github.com/goreleaser/goreleaser) | Go | MIT | [v2.20.0](https://github.com/goreleaser/goreleaser/releases/tag/v2.20.0) signed | 16145 | semantic-release (partial) |
 | [Changesets](https://github.com/changesets/changesets) | TypeScript | MIT | [@changesets/cli@3.0.3](https://github.com/changesets/changesets/releases/tag/%40changesets/cli%403.0.3) signed | 12563 | semantic-release (full), Lerna (partial) |
-| [release-it](https://github.com/release-it/release-it) | JavaScript | MIT | [21.1.2](https://github.com/release-it/release-it/releases/tag/21.1.2) | 9082 | semantic-release (partial) |
-| [release-please](https://github.com/googleapis/release-please) | TypeScript | Apache-2.0 | [v17.11.2](https://github.com/googleapis/release-please/releases/tag/v17.11.2) signed | 7750 | semantic-release (full) |
+| [release-it](https://github.com/release-it/release-it) | JavaScript | MIT | [21.1.2](https://github.com/release-it/release-it/releases/tag/21.1.2) | 9083 | semantic-release (partial) |
+| [release-please](https://github.com/googleapis/release-please) | TypeScript | Apache-2.0 | [v17.11.2](https://github.com/googleapis/release-please/releases/tag/v17.11.2) signed | 7751 | semantic-release (full) |
 | [Commitizen](https://github.com/commitizen-tools/commitizen) | Python | MIT | [v4.19.3](https://github.com/commitizen-tools/commitizen/releases/tag/v4.19.3) | 3549 | semantic-release (partial) |
 | [cargo-release](https://github.com/crate-ci/cargo-release) | Rust | Apache-2.0 | [v1.1.7](https://github.com/crate-ci/cargo-release/releases/tag/v1.1.7) | 1597 | semantic-release (partial) |
 | [release-plz](https://github.com/release-plz/release-plz) | Rust | Apache-2.0 | [release-plz-v0.4.3](https://github.com/release-plz/release-plz/releases/tag/release-plz-v0.4.3) | 1520 | semantic-release (partial), cargo-release (full) |

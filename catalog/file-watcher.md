@@ -4,8 +4,8 @@ Run a command again whenever the files it depends on change.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [nodemon](https://github.com/remy/nodemon) | JavaScript | MIT | [v3.1.14](https://github.com/remy/nodemon/releases/tag/v3.1.14) | 26661 | none |
-| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24114 | nodemon (partial) |
+| [nodemon](https://github.com/remy/nodemon) | JavaScript | MIT | [v3.1.14](https://github.com/remy/nodemon/releases/tag/v3.1.14) | 26660 | none |
+| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24115 | nodemon (partial) |
 | [Watchman](https://github.com/meta/watchman) | C++ | MIT | [v2026.11.09.00](https://github.com/meta/watchman/releases/tag/v2026.11.09.00) | 13762 | none |
 | [watchexec](https://github.com/watchexec/watchexec) | Rust | Apache-2.0 | [v2.8.0](https://github.com/watchexec/watchexec/releases/tag/v2.8.0) | 7280 | entr (full) |
 | [entr](https://github.com/eradman/entr) | C | Other | [5.9](https://github.com/eradman/entr/releases/tag/5.9) | 5728 | nodemon (partial) |

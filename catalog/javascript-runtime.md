@@ -4,10 +4,10 @@ Engines that run JavaScript and TypeScript outside the browser.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Node.js](https://github.com/nodejs/node) | JavaScript | Other | [v26.13.0](https://github.com/nodejs/node/releases/tag/v26.13.0) signed | 123451 | none |
-| [Deno](https://github.com/denoland/deno) | Rust | MIT | [v2.9.8](https://github.com/denoland/deno/releases/tag/v2.9.8) signed | 108940 | Node.js (full), ts-node (full) |
-| [Bun](https://github.com/oven-sh/bun) | Rust | Other | [bun-v1.4.4](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4) signed | 96733 | Node.js (full), npm (full), ts-node (full), Jest (partial) |
+| [Node.js](https://github.com/nodejs/node) | JavaScript | Other | [v26.13.0](https://github.com/nodejs/node/releases/tag/v26.13.0) signed | 123455 | none |
+| [Deno](https://github.com/denoland/deno) | Rust | MIT | [v2.9.8](https://github.com/denoland/deno/releases/tag/v2.9.8) signed | 108941 | Node.js (full), ts-node (full) |
+| [Bun](https://github.com/oven-sh/bun) | Rust | Other | [bun-v1.4.4](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4) signed | 96741 | Node.js (full), npm (full), ts-node (full), Jest (partial) |
 | [ts-node](https://github.com/TypeStrong/ts-node) | TypeScript | MIT | [v10.9.2](https://github.com/TypeStrong/ts-node/releases/tag/v10.9.2) | 13117 | none |
-| [tsx](https://github.com/privatenumber/tsx) | TypeScript | MIT | [v4.23.15](https://github.com/privatenumber/tsx/releases/tag/v4.23.15) signed | 12187 | ts-node (full) |
+| [tsx](https://github.com/privatenumber/tsx) | TypeScript | MIT | [v4.23.15](https://github.com/privatenumber/tsx/releases/tag/v4.23.15) signed | 12188 | ts-node (full) |
 
 [All categories](../README.md#catalog)

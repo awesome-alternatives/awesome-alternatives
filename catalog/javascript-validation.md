@@ -4,7 +4,7 @@ Declare schemas and validate data against them at runtime.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Zod](https://github.com/colinhacks/zod) | TypeScript | MIT | [v4.6.7](https://github.com/colinhacks/zod/releases/tag/v4.6.7) signed | 44303 | Yup (full), Joi (full) |
+| [Zod](https://github.com/colinhacks/zod) | TypeScript | MIT | [v4.6.7](https://github.com/colinhacks/zod/releases/tag/v4.6.7) signed | 44302 | Yup (full), Joi (full) |
 | [Yup](https://github.com/jquense/yup) | TypeScript | MIT | [v1.0.0](https://github.com/jquense/yup/releases/tag/v1.0.0) | 23651 | Joi (full), Zod (full) |
 | [Joi](https://github.com/hapijs/joi) | JavaScript | Other | [v18.3.2](https://github.com/hapijs/joi/releases/tag/v18.3.2) | 21165 | Yup (full), Zod (full) |
 | [Ajv](https://github.com/ajv-validator/ajv) | TypeScript | MIT | [v8.20.0](https://github.com/ajv-validator/ajv/releases/tag/v8.20.0) signed | 14874 | Joi (partial), Zod (partial) |

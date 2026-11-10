@@ -4,8 +4,8 @@ Filter lists interactively in a terminal, for files, anything piped in and the s
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [fzf](https://github.com/junegunn/fzf) | Go | MIT | [v0.75.0](https://github.com/junegunn/fzf/releases/tag/v0.75.0) signed | 84114 | peco (full), skim (full) |
-| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.24.6](https://github.com/atuinsh/atuin/releases/tag/v18.24.6) | 32245 | mcfly (full) |
+| [fzf](https://github.com/junegunn/fzf) | Go | MIT | [v0.75.0](https://github.com/junegunn/fzf/releases/tag/v0.75.0) signed | 84116 | peco (full), skim (full) |
+| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.24.6](https://github.com/atuinsh/atuin/releases/tag/v18.24.6) | 32247 | mcfly (full) |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Lua | MIT | [v0.2.1](https://github.com/nvim-telescope/telescope.nvim/releases/tag/v0.2.1) | 19854 | fzf (partial) |
 | [peco](https://github.com/peco/peco) | Go | MIT | [v0.6.0](https://github.com/peco/peco/releases/tag/v0.6.0) | 7906 | fzf (partial) |
 | [mcfly](https://github.com/cantino/mcfly) | Rust | MIT | [v0.9.4](https://github.com/cantino/mcfly/releases/tag/v0.9.4) | 7826 | atuin (partial) |

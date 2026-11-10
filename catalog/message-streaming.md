@@ -4,16 +4,16 @@ Durable, partitioned logs for events and messages.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Apache Kafka](https://github.com/apache/kafka) | Java | Apache-2.0 | [4.4.0](https://github.com/apache/kafka/releases/tag/4.4.0) | 34194 | Confluent Cloud (full), Amazon SQS (partial) |
+| [Apache Kafka](https://github.com/apache/kafka) | Java | Apache-2.0 | [4.4.0](https://github.com/apache/kafka/releases/tag/4.4.0) | 34198 | Confluent Cloud (full), Amazon SQS (partial) |
 | [NSQ](https://github.com/nsqio/nsq) | Go | MIT | [v1.3.0](https://github.com/nsqio/nsq/releases/tag/v1.3.0) | 25776 | Amazon SQS (partial) |
-| [Apache RocketMQ](https://github.com/apache/rocketmq) | Java | Apache-2.0 | [rocketmq-all-5.5.1](https://github.com/apache/rocketmq/releases/tag/rocketmq-all-5.5.1) signed | 22656 | Apache Kafka (full) |
-| [NATS](https://github.com/nats-io/nats-server) | Go | Apache-2.0 | [v2.15.2](https://github.com/nats-io/nats-server/releases/tag/v2.15.2) signed | 21020 | Apache Kafka (partial), Amazon SQS (partial) |
+| [Apache RocketMQ](https://github.com/apache/rocketmq) | Java | Apache-2.0 | [rocketmq-all-5.5.1](https://github.com/apache/rocketmq/releases/tag/rocketmq-all-5.5.1) signed | 22658 | Apache Kafka (full) |
+| [NATS](https://github.com/nats-io/nats-server) | Go | Apache-2.0 | [v2.15.2](https://github.com/nats-io/nats-server/releases/tag/v2.15.2) signed | 21023 | Apache Kafka (partial), Amazon SQS (partial) |
 | [Apache Pulsar](https://github.com/apache/pulsar) | Java | Apache-2.0 | [v5.0.1](https://github.com/apache/pulsar/releases/tag/v5.0.1) signed | 15359 | Apache Kafka (full) |
-| [RabbitMQ](https://github.com/rabbitmq/rabbitmq-server) | JavaScript | Other | [v4.4.0](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.4.0) signed | 13959 | Amazon SQS (full), Apache Kafka (partial), Amazon MQ (drop-in) |
+| [RabbitMQ](https://github.com/rabbitmq/rabbitmq-server) | JavaScript | Other | [v4.4.0](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.4.0) signed | 13960 | Amazon SQS (full), Apache Kafka (partial), Amazon MQ (drop-in) |
 | [Redpanda](https://github.com/redpanda-data/redpanda) | C++ | none | [v26.2.2](https://github.com/redpanda-data/redpanda/releases/tag/v26.2.2) signed | 12676 | Apache Kafka (drop-in), Confluent Cloud (full) |
 | [AutoMQ](https://github.com/AutoMQ/automq) | Java | Apache-2.0 | [1.7.5-rc3](https://github.com/AutoMQ/automq/releases/tag/1.7.5-rc3) signed | 10924 | Apache Kafka (drop-in), Confluent Cloud (full) |
 | [Strimzi](https://github.com/strimzi/strimzi-kafka-operator) | Java | Apache-2.0 | [1.3.1](https://github.com/strimzi/strimzi-kafka-operator/releases/tag/1.3.1) signed | 5976 | Confluent Cloud (partial) |
-| [Apache Iggy](https://github.com/apache/iggy) | Rust | Apache-2.0 | [server-0.10.0](https://github.com/apache/iggy/releases/tag/server-0.10.0) | 5266 | Apache Kafka (partial) |
+| [Apache Iggy](https://github.com/apache/iggy) | Rust | Apache-2.0 | [server-0.10.0](https://github.com/apache/iggy/releases/tag/server-0.10.0) | 5268 | Apache Kafka (partial) |
 | [Fluvio](https://github.com/fluvio-community/fluvio) | Rust | Apache-2.0 | [v0.18.1](https://github.com/fluvio-community/fluvio/releases/tag/v0.18.1) signed | 5263 | Apache Kafka (partial) |
 | [ElasticMQ](https://github.com/softwaremill/elasticmq) | Scala | Apache-2.0 | [v2.0.0-rc1](https://github.com/softwaremill/elasticmq/releases/tag/v2.0.0-rc1) | 2955 | Amazon SQS (drop-in) |
 | [Apache ActiveMQ](https://github.com/apache/activemq) | Java | Apache-2.0 | [activemq-6.4.0](https://github.com/apache/activemq/releases/tag/activemq-6.4.0) | 2461 | Amazon MQ (full) |

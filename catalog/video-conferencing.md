@@ -5,9 +5,9 @@ Video meetings in the browser or an app.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Jitsi Meet](https://github.com/jitsi/jitsi-meet) | TypeScript | Apache-2.0 | [stable/jitsi-meet_11248](https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11248) | 30210 | Zoom (full), Microsoft Teams (partial) |
-| [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | TypeScript | LGPL-3.0 | [v4.0.2](https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.2) signed | 9272 | Zoom (partial) |
-| [MiroTalk P2P](https://github.com/miroslavpejic85/mirotalk) | JavaScript | AGPL-3.0 | none | 4833 | Zoom (partial) |
-| [MiroTalk SFU](https://github.com/miroslavpejic85/mirotalksfu) | JavaScript | AGPL-3.0 | none | 3154 | Zoom (partial) |
+| [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | TypeScript | LGPL-3.0 | [v4.0.2](https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.2) signed | 9273 | Zoom (partial) |
+| [MiroTalk P2P](https://github.com/miroslavpejic85/mirotalk) | JavaScript | AGPL-3.0 | none | 4834 | Zoom (partial) |
+| [MiroTalk SFU](https://github.com/miroslavpejic85/mirotalksfu) | JavaScript | AGPL-3.0 | none | 3156 | Zoom (partial) |
 | [La Suite Meet](https://github.com/suitenumerique/meet) | Python | MIT | [v1.37.0](https://github.com/suitenumerique/meet/releases/tag/v1.37.0) signed | 2477 | Zoom (full) |
 | [Nextcloud Talk](https://github.com/nextcloud/spreed) | JavaScript | AGPL-3.0 | [v25.0.7](https://github.com/nextcloud/spreed/releases/tag/v25.0.7) signed | 2224 | Zoom (partial), Microsoft Teams (partial) |
 | [Galene](https://github.com/jech/galene) | Go | MIT | [galene-1.2.2](https://github.com/jech/galene/releases/tag/galene-1.2.2) | 1429 | Zoom (partial) |

@@ -4,7 +4,7 @@ Self-hosted back ends for password vaults.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | Rust | AGPL-3.0 | [1.37.5](https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.5) signed | 70505 | Bitwarden server (drop-in), 1Password (full), LastPass (full), Dashlane (full) |
+| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | Rust | AGPL-3.0 | [1.37.5](https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.5) signed | 70510 | Bitwarden server (drop-in), 1Password (full), LastPass (full), Dashlane (full) |
 | [Bitwarden server](https://github.com/bitwarden/server) | C# | Other | [v2026.10.1](https://github.com/bitwarden/server/releases/tag/v2026.10.1) signed | 20610 | 1Password (full), LastPass (full), Dashlane (full) |
 | [Passbolt](https://github.com/passbolt/passbolt_api) | PHP | AGPL-3.0 | [v5.17.0](https://github.com/passbolt/passbolt_api/releases/tag/v5.17.0) | 6227 | 1Password (full), LastPass (full), Dashlane (full) |
 | [AliasVault](https://github.com/aliasvault/aliasvault) | TypeScript | AGPL-3.0 | [0.31.2](https://github.com/aliasvault/aliasvault/releases/tag/0.31.2) signed | 3503 | 1Password (partial) |
