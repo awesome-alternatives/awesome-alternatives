@@ -98190,27 +98190,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-10T09:37:28Z",
+        "pushedAt": "2026-11-10T10:55:29Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-11T09:37:51.027Z"
+        "since": "2026-10-11T11:08:57.152Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [7,7,7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.35.6",
-        "publishedAt": "2026-11-09T16:46:24Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.6",
+        "tag": "v7.36.0",
+        "publishedAt": "2026-11-10T11:08:25Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.0",
         "source": "release",
         "signed": true,
-        "tagOid": "4c182aedc8ce5736755b9c1ce497096b5de9765a"
+        "tagOid": "d9ebdff7ddbd339dcd886b0ccf2047965b7fbb8f"
       },
       "releases": [
+        {
+          "tag": "v7.36.0",
+          "name": "feat(versioning): opt-in pre-1.0 bump rules (#1379)",
+          "publishedAt": "2026-11-10T11:08:25Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.0",
+          "prerelease": false
+        },
         {
           "tag": "v7.35.6",
           "name": "refactor(npm): drop void operator from type checks (#1382)",
@@ -98237,13 +98244,6 @@
           "name": "fix(git): ignore prefix-sharing tags that are not versions (#1363)",
           "publishedAt": "2026-10-31T15:43:16Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.3",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.35.2",
-          "name": "fix(preview): only update preview comments written by the token's own identity (#1361)",
-          "publishedAt": "2026-10-31T10:37:33Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.2",
           "prerelease": false
         }
       ],

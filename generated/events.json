@@ -5707,7 +5707,6 @@
   {"type":"released","slug":"es-toolkit","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v1.52.0","to":"v1.53.0"},
   {"type":"released","slug":"etherpad","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v3.3.10","to":"v3.3.11"},
   {"type":"released","slug":"featurevisor","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v4.1.0","to":"v4.2.0"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v7.33.0","to":"v7.33.2"},
   {"type":"released","slug":"fluffychat","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v2.11.2","to":"v2.11.3"},
   {"type":"released","slug":"garage","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"v2.4.1","to":"v2.5.0"},
   {"type":"released","slug":"ghostfolio","at":"2026-10-25T05:17:20.120Z","commit":"7623c3b83c7f7267ba583e17b747849e2e7a0168","from":"3.91.0","to":"3.92.0"},
@@ -8297,5 +8296,6 @@
   {"type":"released","slug":"trailbase","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v0.35.11","to":"v0.35.12"},
   {"type":"removed","slug":"unkey","at":"2026-11-10T09:37:51.027Z","commit":null},
   {"type":"released","slug":"werf","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v2.83.0","to":"v2.84.0"},
-  {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v11.26.0","to":"v11.26.1"}
+  {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v11.26.0","to":"v11.26.1"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":null,"from":"v7.35.6","to":"v7.36.0"}
 ]
