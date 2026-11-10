@@ -4,6 +4,12 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.26] - 2026-11-10
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+
 ## [0.141.25] - 2026-11-10
 
 ### Bug Fixes
