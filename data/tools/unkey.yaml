@@ -1,8 +1,0 @@
-name: Unkey
-repository: https://github.com/unkeyed/unkey
-category: api-gateway
-replaces:
-  - tool: apigee
-    fit: partial
-    note: API key management and rate limiting, without a gateway or a developer portal.
-terms: open
