@@ -5,7 +5,7 @@ Run a remote-access or site-to-site VPN server for your users and networks.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Algo VPN](https://github.com/trailofbits/algo) | Python | AGPL-3.0 | [v2.0.1](https://github.com/trailofbits/algo/releases/tag/v2.0.1) signed | 30460 | NordVPN (partial) |
-| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27445 | OpenVPN Access Server (partial) |
+| [wg-easy](https://github.com/wg-easy/wg-easy) | TypeScript | AGPL-3.0 | [v15.5.0](https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0) signed | 27450 | OpenVPN Access Server (partial) |
 | [OpenVPN](https://github.com/OpenVPN/openvpn) | C | Other | [v2.7.9](https://github.com/OpenVPN/openvpn/releases/tag/v2.7.9) | 14792 | OpenVPN Access Server (partial) |
 | [SoftEther VPN](https://github.com/SoftEtherVPN/SoftEtherVPN) | C | Apache-2.0 | [5.2.5189](https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5189) | 13726 | OpenVPN Access Server (full) |
 | [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6255 | NordVPN (partial), OpenVPN Access Server (partial) |
