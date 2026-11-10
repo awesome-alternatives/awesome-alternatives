@@ -282219,27 +282219,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-10T21:52:41Z",
+        "pushedAt": "2026-11-10T22:42:08Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-11T21:53:16.656Z"
+        "since": "2026-10-11T22:42:13.203Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.55.0",
-        "publishedAt": "2026-11-10T21:52:43Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.0",
+        "tag": "v0.55.1",
+        "publishedAt": "2026-11-10T22:41:34Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.1",
         "source": "release",
         "signed": false,
-        "tagOid": "3d95b298e1af749b197fe715c01fff643c51ef87"
+        "tagOid": "2192f353f618ed0ed43e5ed3b7959320c894a5a1"
       },
       "releases": [
+        {
+          "tag": "v0.55.1",
+          "name": "fix(desktop): decrypt the tauri update key before cargo-packager signs (#438)",
+          "publishedAt": "2026-11-10T22:41:34Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.1",
+          "prerelease": false
+        },
         {
           "tag": "v0.55.0",
           "name": "feat(web): report frontend errors and performance to Grafana Faro (#436)",
@@ -282266,13 +282273,6 @@
           "name": "fix(deps): bump source-map-js to 1.2.2 (#415)",
           "publishedAt": "2026-11-03T15:14:44Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.53.3",
-          "name": "fix(deps): drop legacy rustls 0.21 stack and bump flagged crates (#403)",
-          "publishedAt": "2026-10-31T15:15:55Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.3",
           "prerelease": false
         }
       ],

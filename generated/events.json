@@ -3857,7 +3857,6 @@
   {"type":"released","slug":"sourcegit","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v2026.21","to":"v2026.22"},
   {"type":"released","slug":"spotbugs","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"4.10.4","to":"4.10.5"},
   {"type":"released","slug":"stalwart","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v0.16.25","to":"v0.16.26"},
-  {"type":"released","slug":"stashden","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v0.45.0","to":"v0.48.0"},
   {"type":"released","slug":"teampass","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"3.2.2.8","to":"3.2.3.0"},
   {"type":"released","slug":"technitium-dns-server","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v15.6.0","to":"v15.6.1"},
   {"type":"released","slug":"tinacms","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"tinacms@3.14.3","to":"tinacms-gitprovider-github@5.0.0"},
@@ -8297,5 +8296,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-10T11:42:07.415Z","commit":null,"from":"v0.53.4","to":"v0.53.5"},
   {"type":"released","slug":"stashden","at":"2026-11-10T15:43:52.014Z","commit":null,"from":"v0.53.5","to":"v0.54.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":null,"from":"site@2026.11.4","to":"site@2026.11.5"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":null,"from":"v0.54.0","to":"v0.55.0"}
+  {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":null,"from":"v0.54.0","to":"v0.55.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":null,"from":"v0.55.0","to":"v0.55.1"}
 ]
