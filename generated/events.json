@@ -3651,7 +3651,6 @@
   {"type":"released","slug":"pnpm","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v12.10.1","to":"v12.11.2"},
   {"type":"released","slug":"red5-server","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v2.0.46","to":"v2.0.47"},
   {"type":"released","slug":"singlefile","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v1.28.1","to":"v1.29.0"},
-  {"type":"released","slug":"stashden","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v0.36.0","to":"v0.41.0"},
   {"type":"released","slug":"stylua","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v2.5.2","to":"v2.6.0"},
   {"type":"released","slug":"tuwunel","at":"2026-10-10T16:32:29.498Z","commit":"2e7bd30d0fb84201f68c22ecf37424f0cad79396","from":"v1.9.3","to":"v1.9.4"},
   {"type":"released","slug":"activitywatch","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"v0.14.0","to":"v0.14.1"},
@@ -8297,5 +8296,6 @@
   {"type":"removed","slug":"unkey","at":"2026-11-10T09:37:51.027Z","commit":null},
   {"type":"released","slug":"werf","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v2.83.0","to":"v2.84.0"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v11.26.0","to":"v11.26.1"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":null,"from":"v7.35.6","to":"v7.36.0"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":null,"from":"v7.35.6","to":"v7.36.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-10T11:42:07.415Z","commit":null,"from":"v0.53.4","to":"v0.53.5"}
 ]

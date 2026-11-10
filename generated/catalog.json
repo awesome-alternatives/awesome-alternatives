@@ -282219,27 +282219,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-10T09:38:11Z",
+        "pushedAt": "2026-11-10T11:40:58Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-11T09:37:51.027Z"
+        "since": "2026-10-11T11:41:43.186Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.53.4",
-        "publishedAt": "2026-11-03T15:14:44Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.4",
+        "tag": "v0.53.5",
+        "publishedAt": "2026-11-10T11:41:00Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.5",
         "source": "release",
         "signed": false,
-        "tagOid": "9768637ec1f9aa9a98a7440dc15779492d2d5a4f"
+        "tagOid": "130de2241566a13f63ce30bdedf681d03c8c06c4"
       },
       "releases": [
+        {
+          "tag": "v0.53.5",
+          "name": "fix: sonar security findings and quick wins (#430)",
+          "publishedAt": "2026-11-10T11:41:00Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.5",
+          "prerelease": false
+        },
         {
           "tag": "v0.53.4",
           "name": "fix(deps): bump source-map-js to 1.2.2 (#415)",
@@ -282267,33 +282274,13 @@
           "publishedAt": "2026-10-25T09:19:04Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.1",
           "prerelease": false
-        },
-        {
-          "tag": "v0.53.0",
-          "name": "feat(accounts): reset a forgotten password through a mailed link (#362)",
-          "publishedAt": "2026-10-20T18:14:27Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.0",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
