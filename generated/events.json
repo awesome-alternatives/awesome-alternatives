@@ -3813,7 +3813,6 @@
   {"type":"released","slug":"librephotos","at":"2026-10-11T11:58:04.883Z","commit":"1511b46d77e9931613d4afb806e846dcdeb478a7","from":"1.2.1","to":"1.3.0"},
   {"type":"released","slug":"mumble","at":"2026-10-11T11:58:04.883Z","commit":"1511b46d77e9931613d4afb806e846dcdeb478a7","from":"v1.5.915","to":"v1.5.939"},
   {"type":"released","slug":"mycli","at":"2026-10-11T11:58:04.883Z","commit":"1511b46d77e9931613d4afb806e846dcdeb478a7","from":"v2.29.3","to":"v2.29.4"},
-  {"type":"released","slug":"stashden","at":"2026-10-11T11:58:04.883Z","commit":"1511b46d77e9931613d4afb806e846dcdeb478a7","from":"v0.43.0","to":"v0.45.0"},
   {"type":"released","slug":"super-productivity","at":"2026-10-11T11:58:04.883Z","commit":"1511b46d77e9931613d4afb806e846dcdeb478a7","from":"v19.1.0","to":"v19.2.0"},
   {"type":"released","slug":"amethyst","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v1.17.0","to":"v1.18.0"},
   {"type":"released","slug":"atac","at":"2026-10-12T05:17:12.809Z","commit":"def64b408ad342c1c86e8df34d5b236db8462a2c","from":"v0.23.1","to":"v0.24.0"},
@@ -8297,5 +8296,6 @@
   {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":null,"from":"v7.35.6","to":"v7.36.0"},
   {"type":"released","slug":"stashden","at":"2026-11-10T11:42:07.415Z","commit":null,"from":"v0.53.4","to":"v0.53.5"},
   {"type":"released","slug":"stashden","at":"2026-11-10T15:43:52.014Z","commit":null,"from":"v0.53.5","to":"v0.54.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":null,"from":"site@2026.11.4","to":"site@2026.11.5"}
+  {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":null,"from":"site@2026.11.4","to":"site@2026.11.5"},
+  {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":null,"from":"v0.54.0","to":"v0.55.0"}
 ]

@@ -282219,27 +282219,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-10T15:42:48Z",
+        "pushedAt": "2026-11-10T21:52:41Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-11T15:43:23.821Z"
+        "since": "2026-10-11T21:53:16.656Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.54.0",
-        "publishedAt": "2026-11-10T15:42:49Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.54.0",
+        "tag": "v0.55.0",
+        "publishedAt": "2026-11-10T21:52:43Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.0",
         "source": "release",
         "signed": false,
-        "tagOid": "d0f72afb01d0e92e9c107fb6b853956203f2a9ff"
+        "tagOid": "3d95b298e1af749b197fe715c01fff643c51ef87"
       },
       "releases": [
+        {
+          "tag": "v0.55.0",
+          "name": "feat(web): report frontend errors and performance to Grafana Faro (#436)",
+          "publishedAt": "2026-11-10T21:52:43Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.54.0",
           "name": "feat(app): replace the Tauri shell with a native GPUI client (#428)",
@@ -282266,13 +282273,6 @@
           "name": "fix(deps): drop legacy rustls 0.21 stack and bump flagged crates (#403)",
           "publishedAt": "2026-10-31T15:15:55Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.3",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.53.2",
-          "name": "fix(grants): stop serving folders granted by a disabled account (#386)",
-          "publishedAt": "2026-10-25T10:16:24Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.2",
           "prerelease": false
         }
       ],
