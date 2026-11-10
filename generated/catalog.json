@@ -282219,27 +282219,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-10T11:40:58Z",
+        "pushedAt": "2026-11-10T15:42:48Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-11T11:41:43.186Z"
+        "since": "2026-10-11T15:43:23.821Z"
       },
       "starHistory": {
         "from": "2026-10-10",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.53.5",
-        "publishedAt": "2026-11-10T11:41:00Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.5",
+        "tag": "v0.54.0",
+        "publishedAt": "2026-11-10T15:42:49Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.54.0",
         "source": "release",
         "signed": false,
-        "tagOid": "130de2241566a13f63ce30bdedf681d03c8c06c4"
+        "tagOid": "d0f72afb01d0e92e9c107fb6b853956203f2a9ff"
       },
       "releases": [
+        {
+          "tag": "v0.54.0",
+          "name": "feat(app): replace the Tauri shell with a native GPUI client (#428)",
+          "publishedAt": "2026-11-10T15:42:49Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.54.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.53.5",
           "name": "fix: sonar security findings and quick wins (#430)",
@@ -282266,13 +282273,6 @@
           "name": "fix(grants): stop serving folders granted by a disabled account (#386)",
           "publishedAt": "2026-10-25T10:16:24Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.53.1",
-          "name": "fix(auth): revoke app passwords on password change and reset (#385)",
-          "publishedAt": "2026-10-25T09:19:04Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.1",
           "prerelease": false
         }
       ],

@@ -3685,7 +3685,6 @@
   {"type":"license-changed","slug":"sourcebot","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"Other","to":"MIT"},
   {"type":"released","slug":"sourcebot","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"v5.1.16","to":"v6.0.0"},
   {"type":"released","slug":"spliit","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"1.29.0","to":"1.30.0"},
-  {"type":"released","slug":"stashden","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"v0.41.0","to":"v0.43.0"},
   {"type":"released","slug":"swc","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"v1.16.13","to":"v1.16.18"},
   {"type":"released","slug":"tauri","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"tauri-v2.12.2","to":"tauri-cli-v2.12.2"},
   {"type":"license-changed","slug":"termix","at":"2026-10-11T08:36:53.772Z","commit":"010c569e394eb8c4fa7dd33aad4f1e5fe5bf2ad6","from":"Other","to":"Apache-2.0"},
@@ -8297,5 +8296,6 @@
   {"type":"released","slug":"werf","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v2.83.0","to":"v2.84.0"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":null,"from":"v11.26.0","to":"v11.26.1"},
   {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":null,"from":"v7.35.6","to":"v7.36.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T11:42:07.415Z","commit":null,"from":"v0.53.4","to":"v0.53.5"}
+  {"type":"released","slug":"stashden","at":"2026-11-10T11:42:07.415Z","commit":null,"from":"v0.53.4","to":"v0.53.5"},
+  {"type":"released","slug":"stashden","at":"2026-11-10T15:43:52.014Z","commit":null,"from":"v0.53.5","to":"v0.54.0"}
 ]
