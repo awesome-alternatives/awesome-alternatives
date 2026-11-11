@@ -1,5 +1,5 @@
 name: Whishper
-repository: https://github.com/pluja/whishper
+repository: https://github.com/pluja/anysub
 category: speech-to-text
 replaces:
   - tool: otter-ai
