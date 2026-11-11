@@ -4586,7 +4586,6 @@
   {"type":"released","slug":"spacetime","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"7.16.0","to":"7.17.0"},
   {"type":"released","slug":"spegel","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v0.7.4","to":"v0.8.0"},
   {"type":"released","slug":"sqlite","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"version-3.54.0","to":"version-3.54.1"},
-  {"type":"released","slug":"stashden","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v0.51.0","to":"v0.51.1"},
   {"type":"released","slug":"statamic","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v6.35.1","to":"v6.36.0"},
   {"type":"released","slug":"suna","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v0.13.53","to":"v0.14.0"},
   {"type":"released","slug":"supertokens","at":"2026-10-17T05:17:18.799Z","commit":"760819b5e66c5d8d8102e17956e0b18377f9f776","from":"v12.2.0","to":"v12.3.1"},
@@ -8420,5 +8419,6 @@
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"10.0.8","to":"10.0.9"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v11.26.1","to":"v11.26.2"},
   {"type":"released","slug":"stashden","at":"2026-11-11T09:53:03.842Z","commit":null,"from":"v0.55.1","to":"v0.55.2"},
-  {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":null,"from":"site@2026.11.6","to":"site@2026.11.7"}
+  {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":null,"from":"site@2026.11.6","to":"site@2026.11.7"},
+  {"type":"released","slug":"stashden","at":"2026-11-11T10:38:22.518Z","commit":null,"from":"v0.55.2","to":"v0.56.0"}
 ]

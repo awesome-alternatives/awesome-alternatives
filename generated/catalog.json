@@ -282224,27 +282224,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-11T09:51:55Z",
+        "pushedAt": "2026-11-11T10:37:24Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-12T09:52:35.163Z"
+        "since": "2026-10-12T10:37:56.170Z"
       },
       "starHistory": {
         "from": "2026-10-11",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.55.2",
-        "publishedAt": "2026-11-11T09:51:57Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.2",
+        "tag": "v0.56.0",
+        "publishedAt": "2026-11-11T10:37:26Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.0",
         "source": "release",
         "signed": false,
-        "tagOid": "c1168b4d64b2afec3608eb47e4816de1786d7fb8"
+        "tagOid": "179489ebb5d974aa9e26be5fcefbafa760852a25"
       },
       "releases": [
+        {
+          "tag": "v0.56.0",
+          "name": "feat(telemetry): report site errors and keep the host when a query contains @ (#439)",
+          "publishedAt": "2026-11-11T10:37:26Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.55.2",
           "name": "fix(desktop): load the key script from the workflow commit, not the tag (#440)",
@@ -282271,13 +282278,6 @@
           "name": "feat(app): replace the Tauri shell with a native GPUI client (#428)",
           "publishedAt": "2026-11-10T15:42:49Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.54.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.53.5",
-          "name": "fix: sonar security findings and quick wins (#430)",
-          "publishedAt": "2026-11-10T11:41:00Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.5",
           "prerelease": false
         }
       ],
