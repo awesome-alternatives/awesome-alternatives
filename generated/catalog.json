@@ -163353,27 +163353,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-11T10:35:23Z",
+        "pushedAt": "2026-11-11T21:10:15Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-12T10:36:03.848Z"
+        "since": "2026-10-12T21:11:09.770Z"
       },
       "starHistory": {
         "from": "2026-10-11",
         "stars": [2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.7",
-        "publishedAt": "2026-11-11T10:35:29Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.7",
+        "tag": "site@2026.11.8",
+        "publishedAt": "2026-11-11T21:10:22Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.8",
         "source": "release",
         "signed": true,
-        "tagOid": "444f1ff18ecd835fe882ff64bcc3efa6c598e221"
+        "tagOid": "53cb7bc248e47d0e54becd83f532ca6fd4443d18"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.8",
+          "name": "fix(telemetry): bring redaction to v6.27 (#756)",
+          "publishedAt": "2026-11-11T21:10:22Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.8",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.7",
           "name": "fix(telemetry): skip host:port only when the value is a port (#754)",
@@ -163400,13 +163407,6 @@
           "name": "feat(site): report frontend errors and performance to Grafana Faro (#752)",
           "publishedAt": "2026-11-10T20:52:53Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.5",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.4",
-          "name": "refactor(site): use top-level await in main (#747)",
-          "publishedAt": "2026-11-09T16:15:54Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.4",
           "prerelease": false
         }
       ],
