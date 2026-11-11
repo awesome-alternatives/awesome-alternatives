@@ -282224,27 +282224,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-11T10:37:24Z",
+        "pushedAt": "2026-11-11T22:24:57Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-12T10:37:56.170Z"
+        "since": "2026-10-12T22:25:21.431Z"
       },
       "starHistory": {
         "from": "2026-10-11",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.0",
-        "publishedAt": "2026-11-11T10:37:26Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.0",
+        "tag": "v0.56.1",
+        "publishedAt": "2026-11-11T22:24:47Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.1",
         "source": "release",
         "signed": false,
-        "tagOid": "179489ebb5d974aa9e26be5fcefbafa760852a25"
+        "tagOid": "a4f9378b9c25d0206f1eae019177281c3e0d4d8c"
       },
       "releases": [
+        {
+          "tag": "v0.56.1",
+          "name": "fix(telemetry): bring redaction to v6.27 (#443)",
+          "publishedAt": "2026-11-11T22:24:47Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.1",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.0",
           "name": "feat(telemetry): report site errors and keep the host when a query contains @ (#439)",
@@ -282271,13 +282278,6 @@
           "name": "feat(web): report frontend errors and performance to Grafana Faro (#436)",
           "publishedAt": "2026-11-10T21:52:43Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.54.0",
-          "name": "feat(app): replace the Tauri shell with a native GPUI client (#428)",
-          "publishedAt": "2026-11-10T15:42:49Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.54.0",
           "prerelease": false
         }
       ],

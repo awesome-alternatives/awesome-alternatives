@@ -5036,7 +5036,6 @@
   {"type":"released","slug":"spicedb","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v1.56.2","to":"v1.57.0"},
   {"type":"released","slug":"spin","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v4.2.3","to":"v4.2.4"},
   {"type":"released","slug":"stability-matrix","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v2.16.4","to":"v2.16.5"},
-  {"type":"released","slug":"stashden","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v0.51.1","to":"v0.53.0"},
   {"type":"released","slug":"stump","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v0.1.10","to":"v0.1.11"},
   {"type":"released","slug":"svix","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"v2.8.0","to":"server-v1.102.1"},
   {"type":"released","slug":"swetrix","at":"2026-10-21T05:17:14.695Z","commit":"cb3cf3e7b20729dcb40024a9f78c2a8e96bff9a3","from":"tracker-node@3.5.0","to":"tracker-js@4.8.0"},
@@ -8420,5 +8419,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-11T09:53:03.842Z","commit":null,"from":"v0.55.1","to":"v0.55.2"},
   {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":null,"from":"site@2026.11.6","to":"site@2026.11.7"},
   {"type":"released","slug":"stashden","at":"2026-11-11T10:38:22.518Z","commit":null,"from":"v0.55.2","to":"v0.56.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-11T21:11:34.604Z","commit":null,"from":"site@2026.11.7","to":"site@2026.11.8"}
+  {"type":"released","slug":"lfsx","at":"2026-11-11T21:11:34.604Z","commit":null,"from":"site@2026.11.7","to":"site@2026.11.8"},
+  {"type":"released","slug":"stashden","at":"2026-11-11T22:25:54.530Z","commit":null,"from":"v0.56.0","to":"v0.56.1"}
 ]
