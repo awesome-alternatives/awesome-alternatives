@@ -1,5 +1,5 @@
 name: Sunshine
-repository: https://github.com/LizardByte/Sunshine
+repository: https://github.com/SunshineStream/Sunshine
 category: remote-desktop
 replaces:
   - tool: parsec
