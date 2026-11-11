@@ -7187,7 +7187,6 @@
   {"type":"released","slug":"windmill","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"v1.857.0","to":"v1.859.0"},
   {"type":"released","slug":"xwiki","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"xwiki-platform-18.9.0","to":"xwiki-platform-18.4.8"},
   {"type":"released","slug":"zitadel","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"v4.20.0","to":"v4.20.1"},
-  {"type":"released","slug":"lfsx","at":"2026-11-04T02:08:42.043Z","commit":"94eadeff561df4157557c6cc2233b749582dcf1b","from":"v1.26.47","to":"v1.26.48"},
   {"type":"released","slug":"argo-cd","at":"2026-11-04T05:17:22.411Z","commit":"479f0759231257d85d43ad14b24da3c2641650a8","from":"v3.5.7","to":"v3.6.0"},
   {"type":"released","slug":"atuin","at":"2026-11-04T05:17:22.411Z","commit":"479f0759231257d85d43ad14b24da3c2641650a8","from":"v18.24.4","to":"v18.24.5"},
   {"type":"released","slug":"beekeeper-studio","at":"2026-11-04T05:17:22.411Z","commit":"479f0759231257d85d43ad14b24da3c2641650a8","from":"v6.2.0","to":"v6.2.1"},
@@ -8420,5 +8419,6 @@
   {"type":"released","slug":"zensical","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v0.1.0","to":"v0.1.1"},
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"10.0.8","to":"10.0.9"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v11.26.1","to":"v11.26.2"},
-  {"type":"released","slug":"stashden","at":"2026-11-11T09:53:03.842Z","commit":null,"from":"v0.55.1","to":"v0.55.2"}
+  {"type":"released","slug":"stashden","at":"2026-11-11T09:53:03.842Z","commit":null,"from":"v0.55.1","to":"v0.55.2"},
+  {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":null,"from":"site@2026.11.6","to":"site@2026.11.7"}
 ]

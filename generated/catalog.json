@@ -163353,27 +163353,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-11T02:03:23Z",
+        "pushedAt": "2026-11-11T10:35:23Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-12T05:17:27.051Z"
+        "since": "2026-10-12T10:36:03.848Z"
       },
       "starHistory": {
         "from": "2026-10-11",
         "stars": [2,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.6",
-        "publishedAt": "2026-11-10T22:53:55Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.6",
+        "tag": "site@2026.11.7",
+        "publishedAt": "2026-11-11T10:35:29Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.7",
         "source": "release",
         "signed": true,
-        "tagOid": "758246a598e3a25d5e92f8041194caeaca197dc4"
+        "tagOid": "444f1ff18ecd835fe882ff64bcc3efa6c598e221"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.7",
+          "name": "fix(telemetry): skip host:port only when the value is a port (#754)",
+          "publishedAt": "2026-11-11T10:35:29Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.7",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.6",
           "name": "fix(telemetry): mask both values when two keys share a line (#753)",
@@ -163400,13 +163407,6 @@
           "name": "refactor(site): use top-level await in main (#747)",
           "publishedAt": "2026-11-09T16:15:54Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.53",
-          "name": "fix(storage): keep the bucket upload running when the request is dropped (#746)",
-          "publishedAt": "2026-11-09T14:18:00Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.53",
           "prerelease": false
         }
       ],
