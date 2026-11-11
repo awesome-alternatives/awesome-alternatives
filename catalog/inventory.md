@@ -5,11 +5,11 @@ Track stock, parts, equipment and household belongings, and who has them where.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Snipe-IT](https://github.com/grokability/snipe-it) | PHP | AGPL-3.0 | [v8.8.3](https://github.com/grokability/snipe-it/releases/tag/v8.8.3) | 15167 | Sortly (partial) |
-| [InvenTree](https://github.com/inventree/InvenTree) | Python | MIT | [1.7.1](https://github.com/inventree/InvenTree/releases/tag/1.7.1) signed | 7837 | Sortly (partial) |
-| [HomeBox](https://github.com/sysadminsmedia/homebox) | Go | AGPL-3.0 | [v0.27.1](https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.1) signed | 7818 | Sortly (partial) |
-| [Shelf](https://github.com/Shelf-nu/shelf.nu) | TypeScript | Other | [shelf@2.5.1](https://github.com/Shelf-nu/shelf.nu/releases/tag/shelf%402.5.1) signed | 3054 | Sortly (partial) |
-| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.20.5](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.20.5) | 1840 | Sortly (partial) |
+| [InvenTree](https://github.com/inventree/InvenTree) | Python | MIT | [1.7.1](https://github.com/inventree/InvenTree/releases/tag/1.7.1) signed | 7840 | Sortly (partial) |
+| [HomeBox](https://github.com/sysadminsmedia/homebox) | Go | AGPL-3.0 | [v0.27.1](https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.1) signed | 7831 | Sortly (partial) |
+| [Shelf](https://github.com/Shelf-nu/shelf.nu) | TypeScript | Other | [shelf@2.5.1](https://github.com/Shelf-nu/shelf.nu/releases/tag/shelf%402.5.1) signed | 3055 | Sortly (partial) |
+| [Part-DB](https://github.com/Part-DB/Part-DB-server) | PHP | AGPL-3.0 | [v2.20.5](https://github.com/Part-DB/Part-DB-server/releases/tag/v2.20.5) | 1842 | Sortly (partial) |
 | [Koillection](https://github.com/benjaminjonard/koillection) | PHP | MIT | [1.8.5](https://github.com/benjaminjonard/koillection/releases/tag/1.8.5) | 1346 | HomeBox (partial) |
-| [OpenBoxes](https://github.com/openboxes/openboxes) | Groovy | EPL-1.0 | [v0.9.9](https://github.com/openboxes/openboxes/releases/tag/v0.9.9) | 923 | Sortly (partial) |
+| [OpenBoxes](https://github.com/openboxes/openboxes) | Groovy | EPL-1.0 | [v0.9.9](https://github.com/openboxes/openboxes/releases/tag/v0.9.9) | 924 | Sortly (partial) |
 
 [All categories](../README.md#catalog)
