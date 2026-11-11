@@ -4437,7 +4437,6 @@
   {"type":"released","slug":"sourcebot","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v6.0.0","to":"v6.0.1"},
   {"type":"released","slug":"sozu","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"2.2.1","to":"2.3.1"},
   {"type":"released","slug":"spin","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v4.2.2","to":"v4.2.3"},
-  {"type":"released","slug":"stashden","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v0.48.0","to":"v0.51.0"},
   {"type":"released","slug":"stirling-pdf","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v3.1.0","to":"v3.2.0"},
   {"type":"released","slug":"stoat","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v0.15.7","to":"v0.16.1"},
   {"type":"released","slug":"strapi","at":"2026-10-16T05:17:13.411Z","commit":"d5887c9894f94dcb4ea7521edd5239347d6d12e3","from":"v5.57.0","to":"v5.58.0"},
@@ -8420,5 +8419,6 @@
   {"type":"released","slug":"xwiki","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"xwiki-platform-18.4.8","to":"xwiki-platform-17.10.15"},
   {"type":"released","slug":"zensical","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v0.1.0","to":"v0.1.1"},
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"10.0.8","to":"10.0.9"},
-  {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v11.26.1","to":"v11.26.2"}
+  {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":null,"from":"v11.26.1","to":"v11.26.2"},
+  {"type":"released","slug":"stashden","at":"2026-11-11T09:53:03.842Z","commit":null,"from":"v0.55.1","to":"v0.55.2"}
 ]

@@ -282224,27 +282224,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-11T04:03:18Z",
+        "pushedAt": "2026-11-11T09:51:55Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-12T05:17:27.051Z"
+        "since": "2026-10-12T09:52:35.163Z"
       },
       "starHistory": {
         "from": "2026-10-11",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.55.1",
-        "publishedAt": "2026-11-10T22:41:34Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.1",
+        "tag": "v0.55.2",
+        "publishedAt": "2026-11-11T09:51:57Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.2",
         "source": "release",
         "signed": false,
-        "tagOid": "2192f353f618ed0ed43e5ed3b7959320c894a5a1"
+        "tagOid": "c1168b4d64b2afec3608eb47e4816de1786d7fb8"
       },
       "releases": [
+        {
+          "tag": "v0.55.2",
+          "name": "fix(desktop): load the key script from the workflow commit, not the tag (#440)",
+          "publishedAt": "2026-11-11T09:51:57Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.2",
+          "prerelease": false
+        },
         {
           "tag": "v0.55.1",
           "name": "fix(desktop): decrypt the tauri update key before cargo-packager signs (#438)",
@@ -282272,33 +282279,13 @@
           "publishedAt": "2026-11-10T11:41:00Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.5",
           "prerelease": false
-        },
-        {
-          "tag": "v0.53.4",
-          "name": "fix(deps): bump source-map-js to 1.2.2 (#415)",
-          "publishedAt": "2026-11-03T15:14:44Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.53.4",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
