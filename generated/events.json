@@ -5719,7 +5719,6 @@
   {"type":"released","slug":"rapidraw","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v1.6.6","to":"v1.6.7"},
   {"type":"released","slug":"remeda","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v2.53.0","to":"v2.54.1"},
   {"type":"released","slug":"screenity","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v4.7.1","to":"v4.7.2"},
-  {"type":"released","slug":"stashden","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v0.53.0","to":"v0.53.2"},
   {"type":"released","slug":"telemetry-tracker","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v1.22.13","to":"v1.22.14"},
   {"type":"released","slug":"twenty","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"twenty/v2.50.0","to":"twenty/v2.51.0"},
   {"type":"released","slug":"wox","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v2.4.7","to":"v2.4.8"},
@@ -8539,5 +8538,6 @@
   {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v0.45.1","to":"v0.46.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"},
   {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":null,"from":"v7.36.0","to":"v7.36.1"},
-  {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":null,"from":"site@2026.11.10","to":"site@2026.11.11"}
+  {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":null,"from":"site@2026.11.10","to":"site@2026.11.11"},
+  {"type":"released","slug":"stashden","at":"2026-11-12T20:23:49.997Z","commit":null,"from":"v0.56.1","to":"v0.56.2"}
 ]
