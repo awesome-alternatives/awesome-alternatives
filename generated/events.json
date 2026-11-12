@@ -7611,7 +7611,6 @@
   {"type":"released","slug":"yugabytedb","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"v2026.1.2.0","to":"v2026.1.3.0"},
   {"type":"released","slug":"zabbix","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"7.4.16","to":"8.0.0"},
   {"type":"released","slug":"zensical","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"v0.0.74","to":"v0.1.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-06T10:15:51.727Z","commit":"173e2fe7e41e20eda699c5217f975f172b1b9aab","from":"site@2026.11.2","to":"v1.26.50"},
   {"type":"released","slug":"agent-qa","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"v0.2.6","to":"v0.3.1"},
   {"type":"released","slug":"agenta","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"v0.128.8","to":"v0.128.9"},
   {"type":"released","slug":"airflow","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"3.3.2","to":"3.4.0"},
@@ -8539,5 +8538,6 @@
   {"type":"released","slug":"windmill","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v1.867.0","to":"v1.868.0"},
   {"type":"released","slug":"zammad","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"7.2.2","to":"7.2.3"},
   {"type":"released","slug":"zed","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v1.27.0","to":"v1.28.1"},
-  {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v0.45.1","to":"v0.46.0"}
+  {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v0.45.1","to":"v0.46.0"},
+  {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"}
 ]

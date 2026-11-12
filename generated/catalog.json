@@ -163350,27 +163350,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-12T04:15:23Z",
+        "pushedAt": "2026-11-12T18:23:56Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 2,
         "exact": true,
-        "since": "2026-10-13T05:17:20.660Z"
+        "since": "2026-10-13T18:24:38.218Z"
       },
       "starHistory": {
         "from": "2026-10-12",
         "stars": [3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.9",
-        "publishedAt": "2026-11-12T02:26:00Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.9",
+        "tag": "site@2026.11.10",
+        "publishedAt": "2026-11-12T18:24:03Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.10",
         "source": "release",
         "signed": true,
-        "tagOid": "6d50b539090f5ebe478fde4ccf1b12826b36a36f"
+        "tagOid": "8f59ba470dbd90a6b429b548d855effd46839e67"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.10",
+          "name": "fix(deps): update dependency @grafana/faro-web-sdk to ~2.14.0 (#762)",
+          "publishedAt": "2026-11-12T18:24:03Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.10",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.9",
           "name": null,
@@ -163397,13 +163404,6 @@
           "name": "fix(telemetry): mask both values when two keys share a line (#753)",
           "publishedAt": "2026-11-10T22:53:55Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.6",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.54",
-          "name": "fix(telemetry): mask both values when two keys share a line (#753)",
-          "publishedAt": "2026-11-10T22:53:55Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.54",
           "prerelease": false
         }
       ],
