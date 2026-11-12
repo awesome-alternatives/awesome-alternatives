@@ -98157,27 +98157,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-12T02:05:50Z",
+        "pushedAt": "2026-11-12T18:31:01Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-13T05:17:20.660Z"
+        "since": "2026-10-13T18:43:58.375Z"
       },
       "starHistory": {
         "from": "2026-10-12",
         "stars": [7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.0",
-        "publishedAt": "2026-11-10T11:08:25Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.0",
+        "tag": "v7.36.1",
+        "publishedAt": "2026-11-12T18:43:20Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.1",
         "source": "release",
         "signed": true,
-        "tagOid": "d9ebdff7ddbd339dcd886b0ccf2047965b7fbb8f"
+        "tagOid": "a0e38d3aa9fb6a90b13e1db99004f2ec6270df84"
       },
       "releases": [
+        {
+          "tag": "v7.36.1",
+          "name": "fix(versioning): error on u64 overflow in version template render (#1388)",
+          "publishedAt": "2026-11-12T18:43:20Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.1",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.0",
           "name": "feat(versioning): opt-in pre-1.0 bump rules (#1379)",
@@ -98204,13 +98211,6 @@
           "name": "fix(publish): read the pypi trusted publishing audience from the index (#1374)",
           "publishedAt": "2026-11-09T14:47:18Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.35.3",
-          "name": "fix(git): ignore prefix-sharing tags that are not versions (#1363)",
-          "publishedAt": "2026-10-31T15:43:16Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.3",
           "prerelease": false
         }
       ],

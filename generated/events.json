@@ -5703,7 +5703,6 @@
   {"type":"released","slug":"casdoor","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v4.23.0","to":"v4.24.0"},
   {"type":"released","slug":"curl-cffi","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v0.17.0b2","to":"v0.17.0rc1"},
   {"type":"released","slug":"dependency-track","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"5.2.0","to":"5.2.1"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v7.33.2","to":"v7.33.3"},
   {"type":"released","slug":"giskard","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"giskard-agents/v1.0.5","to":"giskard-agents/v1.0.6"},
   {"type":"released","slug":"homarr","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"v2.9.0","to":"v2.9.1"},
   {"type":"released","slug":"hono","at":"2026-10-25T11:12:37.045Z","commit":"6f1fea221f5844ddb52c8ca7d51b41dce3be6d2f","from":"@hono/vercel@1.0.1","to":"v4.13.14"},
@@ -8539,5 +8538,6 @@
   {"type":"released","slug":"zammad","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"7.2.2","to":"7.2.3"},
   {"type":"released","slug":"zed","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v1.27.0","to":"v1.28.1"},
   {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v0.45.1","to":"v0.46.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"}
+  {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":null,"from":"v7.36.0","to":"v7.36.1"}
 ]
