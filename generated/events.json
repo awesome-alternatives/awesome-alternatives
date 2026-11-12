@@ -6671,7 +6671,6 @@
   {"type":"released","slug":"zookeeper","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"release-3.9.6","to":"release-3.9.7"},
   {"type":"released","slug":"zrok","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"v2.0.8","to":"v2.0.9"},
   {"type":"released","slug":"ferrflow","at":"2026-10-31T10:38:36.314Z","commit":"6c1ef17fb850c63f1e3659a207134757f1b0fb2f","from":"v7.35.1","to":"v7.35.2"},
-  {"type":"released","slug":"stashden","at":"2026-10-31T15:17:25.350Z","commit":"1f134df5baab8293b2c1ab99e2737ec4ffbb45e1","from":"v0.53.2","to":"v0.53.3"},
   {"type":"released","slug":"ferrflow","at":"2026-10-31T15:44:07.711Z","commit":"926811ff984692c1e37914bda2708d8440ffc62a","from":"v7.35.2","to":"v7.35.3"},
   {"type":"released","slug":"bentopdf","at":"2026-10-31T16:51:44.065Z","commit":"a8980296eb712ce7ae82ae68e85a373a2f0edf41","from":"v2.8.10","to":"v2.8.11"},
   {"type":"released","slug":"cdxgen","at":"2026-10-31T16:51:44.065Z","commit":"a8980296eb712ce7ae82ae68e85a373a2f0edf41","from":"v13.5.0","to":"v13.6.0"},
@@ -8539,5 +8538,6 @@
   {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"},
   {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":null,"from":"v7.36.0","to":"v7.36.1"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":null,"from":"site@2026.11.10","to":"site@2026.11.11"},
-  {"type":"released","slug":"stashden","at":"2026-11-12T20:23:49.997Z","commit":null,"from":"v0.56.1","to":"v0.56.2"}
+  {"type":"released","slug":"stashden","at":"2026-11-12T20:23:49.997Z","commit":null,"from":"v0.56.1","to":"v0.56.2"},
+  {"type":"released","slug":"stashden","at":"2026-11-12T22:01:33.314Z","commit":null,"from":"v0.56.2","to":"v0.56.3"}
 ]

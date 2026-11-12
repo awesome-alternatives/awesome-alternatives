@@ -17,6 +17,6 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV,
 | [Pydio Cells](https://github.com/pydio/cells) | Go | AGPL-3.0 | [v5.1.1](https://github.com/pydio/cells/releases/tag/v5.1.1) | 2258 | Box (partial), Dropbox (partial) |
 | [ownCloud Infinite Scale](https://github.com/owncloud/ocis) | Go | Apache-2.0 | [v8.2.3](https://github.com/owncloud/ocis/releases/tag/v8.2.3) signed | 2188 | Nextcloud (partial), Dropbox (full), Google Drive (partial), Box (full), OneDrive (partial), iCloud Drive (full) |
 | [Cloud Commander](https://github.com/coderaiser/cloudcmd) | JavaScript | MIT | [v19.23.0](https://github.com/coderaiser/cloudcmd/releases/tag/v19.23.0) | 2036 | none |
-| [Stashden](https://github.com/FerrLabs/Stashden) verified | Rust | AGPL-3.0 | [v0.56.2](https://github.com/FerrLabs/Stashden/releases/tag/v0.56.2) | 1 | Nextcloud (partial) |
+| [Stashden](https://github.com/FerrLabs/Stashden) verified | Rust | AGPL-3.0 | [v0.56.3](https://github.com/FerrLabs/Stashden/releases/tag/v0.56.3) | 1 | Nextcloud (partial) |
 
 [All categories](../README.md#catalog)
