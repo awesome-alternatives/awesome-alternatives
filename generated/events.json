@@ -7451,7 +7451,6 @@
   {"type":"released","slug":"zenml","at":"2026-11-05T05:17:16.986Z","commit":"381e63b39071b5d0ac220c39998591337388d497","from":"0.98.0","to":"0.98.1"},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-11-05T05:17:16.986Z","commit":"381e63b39071b5d0ac220c39998591337388d497","from":"v1.5.3","to":"v1.5.4"},
   {"type":"released","slug":"zoraxy","at":"2026-11-05T05:17:16.986Z","commit":"381e63b39071b5d0ac220c39998591337388d497","from":"v3.3.5-rc4","to":"v3.3.5-rc5"},
-  {"type":"released","slug":"lfsx","at":"2026-11-06T02:20:11.735Z","commit":"267c65b44478dc089b260ebb356c038336729ba4","from":"v1.26.49","to":"site@2026.11.2"},
   {"type":"released","slug":"agenta","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"v0.128.6","to":"v0.128.8"},
   {"type":"released","slug":"ampache","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"8.3.0","to":"8.4.0"},
   {"type":"released","slug":"arize-phoenix","at":"2026-11-06T05:17:22.665Z","commit":"c5a78fca55f4d290a6163d5d3cfcbd026d439ab3","from":"arize-phoenix-client-v3.7.0","to":"@arizeai/phoenix-cli@1.20.0"},
@@ -8420,5 +8419,6 @@
   {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":null,"from":"site@2026.11.6","to":"site@2026.11.7"},
   {"type":"released","slug":"stashden","at":"2026-11-11T10:38:22.518Z","commit":null,"from":"v0.55.2","to":"v0.56.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-11T21:11:34.604Z","commit":null,"from":"site@2026.11.7","to":"site@2026.11.8"},
-  {"type":"released","slug":"stashden","at":"2026-11-11T22:25:54.530Z","commit":null,"from":"v0.56.0","to":"v0.56.1"}
+  {"type":"released","slug":"stashden","at":"2026-11-11T22:25:54.530Z","commit":null,"from":"v0.56.0","to":"v0.56.1"},
+  {"type":"released","slug":"lfsx","at":"2026-11-12T02:27:02.606Z","commit":null,"from":"site@2026.11.8","to":"site@2026.11.9"}
 ]
