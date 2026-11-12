@@ -4,12 +4,12 @@ Documents, spreadsheets and presentations.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Etherpad](https://github.com/ether/etherpad) | TypeScript | Apache-2.0 | [v3.3.16](https://github.com/ether/etherpad/releases/tag/v3.3.16) | 18626 | Google Docs (partial) |
-| [CryptPad](https://github.com/cryptpad/cryptpad) | JavaScript | AGPL-3.0 | [2026.10.1](https://github.com/cryptpad/cryptpad/releases/tag/2026.10.1) signed | 8067 | Google Docs (full), HackMD (partial) |
-| [ONLYOFFICE Docs](https://github.com/ONLYOFFICE/DocumentServer) | Shell | AGPL-3.0 | [v10.0.0](https://github.com/ONLYOFFICE/DocumentServer/releases/tag/v10.0.0) | 7110 | Microsoft 365 (partial), Google Docs (full) |
-| [ONLYOFFICE Desktop Editors](https://github.com/ONLYOFFICE/DesktopEditors) | unknown | AGPL-3.0 | [v10.0.0](https://github.com/ONLYOFFICE/DesktopEditors/releases/tag/v10.0.0) | 5717 | Microsoft 365 (partial) |
-| [LibreOffice](https://github.com/LibreOffice/core) | C++ | GPL-3.0 | [libreoffice-26.8.3.1](https://github.com/LibreOffice/core/releases/tag/libreoffice-26.8.3.1) | 4624 | Microsoft 365 (partial), Google Docs (partial) |
-| [Collabora Online](https://github.com/CollaboraOnline/online) | Shell | Other | [25.04.7-mobile](https://github.com/CollaboraOnline/online/releases/tag/25.04.7-mobile) signed | 3397 | Google Docs (full), Microsoft 365 (partial) |
+| [Etherpad](https://github.com/ether/etherpad) | TypeScript | Apache-2.0 | [v3.3.17](https://github.com/ether/etherpad/releases/tag/v3.3.17) | 18627 | Google Docs (partial) |
+| [CryptPad](https://github.com/cryptpad/cryptpad) | JavaScript | AGPL-3.0 | [2026.10.1](https://github.com/cryptpad/cryptpad/releases/tag/2026.10.1) signed | 8071 | Google Docs (full), HackMD (partial) |
+| [ONLYOFFICE Docs](https://github.com/ONLYOFFICE/DocumentServer) | Shell | AGPL-3.0 | [v10.0.0](https://github.com/ONLYOFFICE/DocumentServer/releases/tag/v10.0.0) | 7117 | Microsoft 365 (partial), Google Docs (full) |
+| [ONLYOFFICE Desktop Editors](https://github.com/ONLYOFFICE/DesktopEditors) | unknown | AGPL-3.0 | [v10.0.0](https://github.com/ONLYOFFICE/DesktopEditors/releases/tag/v10.0.0) | 5727 | Microsoft 365 (partial) |
+| [LibreOffice](https://github.com/LibreOffice/core) | C++ | GPL-3.0 | [libreoffice-26.8.3.1](https://github.com/LibreOffice/core/releases/tag/libreoffice-26.8.3.1) | 4631 | Microsoft 365 (partial), Google Docs (partial) |
+| [Collabora Online](https://github.com/CollaboraOnline/online) | Shell | Other | [25.04.7-mobile](https://github.com/CollaboraOnline/online/releases/tag/25.04.7-mobile) signed | 3396 | Google Docs (full), Microsoft 365 (partial) |
 | [EtherCalc](https://github.com/audreyt/ethercalc) | TypeScript | Other | [0.20261101.3](https://github.com/audreyt/ethercalc/releases/tag/0.20261101.3) | 3064 | Google Docs (partial) |
 
 [All categories](../README.md#catalog)

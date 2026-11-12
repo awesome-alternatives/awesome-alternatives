@@ -4,8 +4,8 @@ Open pull requests that bump dependencies when new versions are released.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Renovate](https://github.com/renovatebot/renovate) | TypeScript | AGPL-3.0 | [44.227.4](https://github.com/renovatebot/renovate/releases/tag/44.227.4) signed | 23080 | Dependabot (full) |
+| [Renovate](https://github.com/renovatebot/renovate) | TypeScript | AGPL-3.0 | [44.235.1](https://github.com/renovatebot/renovate/releases/tag/44.235.1) signed | 23092 | Dependabot (full) |
 | [Dependabot](https://github.com/dependabot/dependabot-core) | Ruby | MIT | [v0.404.0](https://github.com/dependabot/dependabot-core/releases/tag/v0.404.0) signed | 5844 | Renovate (partial) |
-| [Updatecli](https://github.com/updatecli/updatecli) | Go | Apache-2.0 | [v0.123.0](https://github.com/updatecli/updatecli/releases/tag/v0.123.0) signed | 1015 | Renovate (partial) |
+| [Updatecli](https://github.com/updatecli/updatecli) | Go | Apache-2.0 | [v0.123.0](https://github.com/updatecli/updatecli/releases/tag/v0.123.0) signed | 1016 | Renovate (partial) |
 
 [All categories](../README.md#catalog)

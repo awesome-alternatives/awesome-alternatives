@@ -4,21 +4,21 @@ Play and organise a local music library or stream it from your own server, and f
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [beets](https://github.com/beetbox/beets) | Python | MIT | [v2.14.1](https://github.com/beetbox/beets/releases/tag/v2.14.1) | 15923 | Mp3tag (partial) |
-| [Feishin](https://github.com/jeffvli/feishin) | TypeScript | GPL-3.0 | [v1.17.0](https://github.com/jeffvli/feishin/releases/tag/v1.17.0) | 10381 | Spotify (partial) |
-| [MusicBrainz Picard](https://github.com/metabrainz/picard) | Python | GPL-2.0 | [release-3.0.4](https://github.com/metabrainz/picard/releases/tag/release-3.0.4) signed | 5360 | Mp3tag (partial) |
-| [Harmonoid](https://github.com/harmonoid/harmonoid) | Dart | Other | [v0.3.37](https://github.com/harmonoid/harmonoid/releases/tag/v0.3.37) | 4813 | MusicBee (partial) |
-| [Finamp](https://github.com/finamp-app/finamp) | Dart | MPL-2.0 | [1.0.2](https://github.com/finamp-app/finamp/releases/tag/1.0.2) signed | 4563 | Spotify (partial) |
-| [Clementine](https://github.com/clementine-player/Clementine) | C++ | GPL-3.0 | [1.4.5](https://github.com/clementine-player/Clementine/releases/tag/1.4.5) | 4278 | MusicBee (partial) |
-| [Strawberry](https://github.com/strawberrymusicplayer/strawberry) | C++ | GPL-3.0 | [1.2.31](https://github.com/strawberrymusicplayer/strawberry/releases/tag/1.2.31) | 4071 | MusicBee (full), foobar2000 (full) |
-| [Tauon](https://github.com/Taiko2k/Tauon) | Python | GPL-3.0 | [v13.1.1](https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1) | 2961 | MusicBee (partial) |
-| [Music Player Daemon](https://github.com/MusicPlayerDaemon/MPD) | C++ | GPL-2.0 | [v0.24.18](https://github.com/MusicPlayerDaemon/MPD/releases/tag/v0.24.18) signed | 2814 | none |
+| [beets](https://github.com/beetbox/beets) | Python | MIT | [v2.14.1](https://github.com/beetbox/beets/releases/tag/v2.14.1) | 15929 | Mp3tag (partial) |
+| [Feishin](https://github.com/jeffvli/feishin) | TypeScript | GPL-3.0 | [v1.17.0](https://github.com/jeffvli/feishin/releases/tag/v1.17.0) | 10392 | Spotify (partial) |
+| [MusicBrainz Picard](https://github.com/metabrainz/picard) | Python | GPL-2.0 | [release-3.0.4](https://github.com/metabrainz/picard/releases/tag/release-3.0.4) signed | 5366 | Mp3tag (partial) |
+| [Harmonoid](https://github.com/harmonoid/harmonoid) | Dart | Other | [v0.3.37](https://github.com/harmonoid/harmonoid/releases/tag/v0.3.37) | 4814 | MusicBee (partial) |
+| [Finamp](https://github.com/finamp-app/finamp) | Dart | MPL-2.0 | [1.0.2](https://github.com/finamp-app/finamp/releases/tag/1.0.2) signed | 4569 | Spotify (partial) |
+| [Clementine](https://github.com/clementine-player/Clementine) | C++ | GPL-3.0 | [1.4.5](https://github.com/clementine-player/Clementine/releases/tag/1.4.5) | 4279 | MusicBee (partial) |
+| [Strawberry](https://github.com/strawberrymusicplayer/strawberry) | C++ | GPL-3.0 | [1.2.31](https://github.com/strawberrymusicplayer/strawberry/releases/tag/1.2.31) | 4074 | MusicBee (full), foobar2000 (full) |
+| [Tauon](https://github.com/Taiko2k/Tauon) | Python | GPL-3.0 | [v13.1.1](https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1) | 2962 | MusicBee (partial) |
+| [Music Player Daemon](https://github.com/MusicPlayerDaemon/MPD) | C++ | GPL-2.0 | [v0.24.19](https://github.com/MusicPlayerDaemon/MPD/releases/tag/v0.24.19) signed | 2815 | none |
 | [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) | C++ | GPL-2.0 | [0.10.1](https://github.com/ncmpcpp/ncmpcpp/releases/tag/0.10.1) signed | 2504 | none |
 | [Supersonic](https://github.com/supersonic-app/supersonic) | Go | GPL-3.0 | [v0.22.1](https://github.com/supersonic-app/supersonic/releases/tag/v0.22.1) | 2422 | Spotify (partial) |
-| [Museeks](https://github.com/martpie/museeks) | TypeScript | MIT | [0.23.4](https://github.com/martpie/museeks/releases/tag/0.23.4) | 2142 | MusicBee (partial) |
+| [Museeks](https://github.com/martpie/museeks) | TypeScript | MIT | [0.23.4](https://github.com/martpie/museeks/releases/tag/0.23.4) | 2141 | MusicBee (partial) |
 | [DeaDBeeF](https://github.com/DeaDBeeF-Player/deadbeef) | C | Other | [1.10.3](https://github.com/DeaDBeeF-Player/deadbeef/releases/tag/1.10.3) | 1989 | foobar2000 (full), MusicBee (partial) |
 | [Quod Libet](https://github.com/quodlibet/quodlibet) | Python | GPL-2.0 | [release-4.7.1](https://github.com/quodlibet/quodlibet/releases/tag/release-4.7.1) | 1772 | MusicBee (partial) |
-| [Audacious](https://github.com/audacious-media-player/audacious) | C++ | Other | [audacious-4.6.2](https://github.com/audacious-media-player/audacious/releases/tag/audacious-4.6.2) | 1298 | foobar2000 (partial) |
+| [Audacious](https://github.com/audacious-media-player/audacious) | C++ | Other | [audacious-4.6.2](https://github.com/audacious-media-player/audacious/releases/tag/audacious-4.6.2) | 1300 | foobar2000 (partial) |
 | [puddletag](https://github.com/puddletag/puddletag) | Python | Other | [2.5.0](https://github.com/puddletag/puddletag/releases/tag/2.5.0) | 657 | Mp3tag (full) |
 
 [All categories](../README.md#catalog)
