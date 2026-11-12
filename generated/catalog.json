@@ -163350,27 +163350,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-12T18:23:56Z",
+        "pushedAt": "2026-11-12T19:34:32Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 2,
         "exact": true,
-        "since": "2026-10-13T18:24:38.218Z"
+        "since": "2026-10-13T19:35:31.465Z"
       },
       "starHistory": {
         "from": "2026-10-12",
         "stars": [3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.10",
-        "publishedAt": "2026-11-12T18:24:03Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.10",
+        "tag": "site@2026.11.11",
+        "publishedAt": "2026-11-12T19:34:39Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.11",
         "source": "release",
         "signed": true,
-        "tagOid": "8f59ba470dbd90a6b429b548d855effd46839e67"
+        "tagOid": "af3fc1b0ad9b87418ba15e554be07086f7f505a2"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.11",
+          "name": "fix(telemetry): mask code and state keys in colon form and spaced benign field names (#759)",
+          "publishedAt": "2026-11-12T19:34:39Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.11",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.10",
           "name": "fix(deps): update dependency @grafana/faro-web-sdk to ~2.14.0 (#762)",
@@ -163397,13 +163404,6 @@
           "name": "fix(telemetry): skip host:port only when the value is a port (#754)",
           "publishedAt": "2026-11-11T10:35:29Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.7",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.6",
-          "name": "fix(telemetry): mask both values when two keys share a line (#753)",
-          "publishedAt": "2026-11-10T22:53:55Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.6",
           "prerelease": false
         }
       ],

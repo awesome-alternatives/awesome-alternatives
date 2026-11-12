@@ -7783,7 +7783,6 @@
   {"type":"released","slug":"zotero","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"10.0.7","to":"10.0.8"},
   {"type":"released","slug":"zulip","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"12.3","to":"12.4"},
   {"type":"released","slug":"zustand","at":"2026-11-07T05:17:23.621Z","commit":"35bdafc0b1cd0088136333a2e8878102cc421d1b","from":"v5.0.16","to":"v5.1.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-07T14:16:46.732Z","commit":"2b1fa3fe93c57370415481f40f2ecdd0ece28155","from":"v1.26.50","to":"v1.26.51"},
   {"type":"released","slug":"7zip","at":"2026-11-08T05:17:18.619Z","commit":"71910c912aa62181c8ef8459ef3b5b6931738ce0","from":"26.05","to":"26.06"},
   {"type":"released","slug":"agent-qa","at":"2026-11-08T05:17:18.619Z","commit":"71910c912aa62181c8ef8459ef3b5b6931738ce0","from":"v0.3.1","to":"v0.3.3"},
   {"type":"released","slug":"agenta","at":"2026-11-08T05:17:18.619Z","commit":"71910c912aa62181c8ef8459ef3b5b6931738ce0","from":"v0.128.9","to":"v0.128.11"},
@@ -8539,5 +8538,6 @@
   {"type":"released","slug":"zed","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v1.27.0","to":"v1.28.1"},
   {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":null,"from":"v0.45.1","to":"v0.46.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":null,"from":"site@2026.11.9","to":"site@2026.11.10"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":null,"from":"v7.36.0","to":"v7.36.1"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":null,"from":"v7.36.0","to":"v7.36.1"},
+  {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":null,"from":"site@2026.11.10","to":"site@2026.11.11"}
 ]
