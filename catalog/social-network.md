@@ -5,11 +5,11 @@ Self-hosted and federated social networks, for short public posts, photos and vi
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.5](https://github.com/mastodon/mastodon/releases/tag/v4.7.5) | 50596 | X (Twitter) (full), Threads (full) |
-| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.9.1.0](https://github.com/diaspora/diaspora/releases/tag/v0.9.1.0) signed | 13654 | Facebook (partial) |
-| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11383 | X (Twitter) (full), Threads (full) |
-| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7142 | Instagram (full), TikTok (partial) |
-| [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.4](https://github.com/humhub/humhub/releases/tag/v1.19.4) | 6783 | Facebook (partial) |
-| [Bluesky PDS](https://github.com/bluesky-social/pds) | Shell | Other | [v0.4.5051](https://github.com/bluesky-social/pds/releases/tag/v0.4.5051) signed | 2653 | X (Twitter) (partial) |
+| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.9.1.0](https://github.com/diaspora/diaspora/releases/tag/v0.9.1.0) signed | 13653 | Facebook (partial) |
+| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11387 | X (Twitter) (full), Threads (full) |
+| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7143 | Instagram (full), TikTok (partial) |
+| [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.4](https://github.com/humhub/humhub/releases/tag/v1.19.4) | 6784 | Facebook (partial) |
+| [Bluesky PDS](https://github.com/bluesky-social/pds) | Shell | Other | [v0.4.5051](https://github.com/bluesky-social/pds/releases/tag/v0.4.5051) signed | 2654 | X (Twitter) (partial) |
 | [Elgg](https://github.com/Elgg/Elgg) | PHP | Other | [7.1.3](https://github.com/Elgg/Elgg/releases/tag/7.1.3) signed | 1679 | Facebook (partial) |
 | [Bonfire](https://github.com/bonfire-networks/bonfire-app) | Elixir | none | [v1.0.7](https://github.com/bonfire-networks/bonfire-app/releases/tag/v1.0.7) | 949 | Facebook (partial) |
 | [nostream](https://github.com/cameri/nostream) | TypeScript | MIT | [nostream@3.15.2](https://github.com/cameri/nostream/releases/tag/nostream%403.15.2) | 836 | X (Twitter) (partial) |

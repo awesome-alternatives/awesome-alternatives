@@ -4,13 +4,13 @@ Watch processes and resource use from a terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [btop](https://github.com/aristocratos/btop) | C++ | Apache-2.0 | [v1.4.8](https://github.com/aristocratos/btop/releases/tag/v1.4.8) | 35349 | htop (full) |
-| [Glances](https://github.com/nicolargo/glances) | Python | Other | [v4.5.9](https://github.com/nicolargo/glances/releases/tag/v4.5.9) | 33937 | htop (full) |
-| [bottom](https://github.com/ClementTsang/bottom) | Rust | MIT | [0.15.0](https://github.com/ClementTsang/bottom/releases/tag/0.15.0) signed | 14189 | htop (full) |
-| [bandwhich](https://github.com/imsnif/bandwhich) | Rust | MIT | [v0.23.1](https://github.com/imsnif/bandwhich/releases/tag/v0.23.1) signed | 12071 | GlassWire (partial) |
-| [nvtop](https://github.com/Syllo/nvtop) | C | Other | [3.4.0](https://github.com/Syllo/nvtop/releases/tag/3.4.0) | 11144 | none |
-| [htop](https://github.com/htop-dev/htop) | C | GPL-2.0 | [3.5.3](https://github.com/htop-dev/htop/releases/tag/3.5.3) | 8454 | none |
-| [procs](https://github.com/dalance/procs) | Rust | MIT | [v0.14.12](https://github.com/dalance/procs/releases/tag/v0.14.12) | 6230 | htop (partial) |
+| [btop](https://github.com/aristocratos/btop) | C++ | Apache-2.0 | [v1.4.8](https://github.com/aristocratos/btop/releases/tag/v1.4.8) | 35369 | htop (full) |
+| [Glances](https://github.com/nicolargo/glances) | Python | Other | [v4.5.9](https://github.com/nicolargo/glances/releases/tag/v4.5.9) | 33943 | htop (full) |
+| [bottom](https://github.com/ClementTsang/bottom) | Rust | MIT | [0.15.0](https://github.com/ClementTsang/bottom/releases/tag/0.15.0) signed | 14198 | htop (full) |
+| [bandwhich](https://github.com/imsnif/bandwhich) | Rust | MIT | [v0.23.1](https://github.com/imsnif/bandwhich/releases/tag/v0.23.1) signed | 12079 | GlassWire (partial) |
+| [nvtop](https://github.com/Syllo/nvtop) | C | Other | [3.4.0](https://github.com/Syllo/nvtop/releases/tag/3.4.0) | 11147 | none |
+| [htop](https://github.com/htop-dev/htop) | C | GPL-2.0 | [3.5.3](https://github.com/htop-dev/htop/releases/tag/3.5.3) | 8456 | none |
+| [procs](https://github.com/dalance/procs) | Rust | MIT | [v0.14.12](https://github.com/dalance/procs/releases/tag/v0.14.12) | 6241 | htop (partial) |
 | [zenith](https://github.com/bvaisvil/zenith) | Rust | MIT | [0.15.1](https://github.com/bvaisvil/zenith/releases/tag/0.15.1) signed | 3070 | htop (full) |
 
 [All categories](../README.md#catalog)

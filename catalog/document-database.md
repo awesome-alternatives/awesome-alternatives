@@ -4,11 +4,11 @@ Databases storing JSON-like documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v4.0.1](https://github.com/surrealdb/surrealdb/releases/tag/v4.0.1) signed | 33310 | MongoDB (partial) |
-| [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r9.0.8](https://github.com/mongodb/mongo/releases/tag/r9.0.8) | 28684 | MongoDB Atlas (full) |
-| [RethinkDB](https://github.com/rethinkdb/rethinkdb) | C++ | Other | [v2.4.4](https://github.com/rethinkdb/rethinkdb/releases/tag/v2.4.4) | 27010 | MongoDB (partial) |
-| [RxDB](https://github.com/pubkey/rxdb) | TypeScript | Apache-2.0 | [17.6.0](https://github.com/pubkey/rxdb/releases/tag/17.6.0) | 23424 | Firebase (partial) |
-| [PouchDB](https://github.com/apache/pouchdb) | JavaScript | Apache-2.0 | [9.0.0](https://github.com/apache/pouchdb/releases/tag/9.0.0) | 17629 | Firebase (partial) |
+| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v4.0.1](https://github.com/surrealdb/surrealdb/releases/tag/v4.0.1) signed | 33311 | MongoDB (partial) |
+| [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r9.0.8](https://github.com/mongodb/mongo/releases/tag/r9.0.8) | 28685 | MongoDB Atlas (full) |
+| [RethinkDB](https://github.com/rethinkdb/rethinkdb) | C++ | Other | [v2.4.4](https://github.com/rethinkdb/rethinkdb/releases/tag/v2.4.4) | 27009 | MongoDB (partial) |
+| [RxDB](https://github.com/pubkey/rxdb) | TypeScript | Apache-2.0 | [17.6.0](https://github.com/pubkey/rxdb/releases/tag/17.6.0) | 23423 | Firebase (partial) |
+| [PouchDB](https://github.com/apache/pouchdb) | JavaScript | Apache-2.0 | [9.0.0](https://github.com/apache/pouchdb/releases/tag/9.0.0) | 17630 | Firebase (partial) |
 | [ArangoDB](https://github.com/arangodb/arangodb) | C++ | Other | [v3.12.13](https://github.com/arangodb/arangodb/releases/tag/v3.12.13) | 14297 | MongoDB (partial) |
 | [FerretDB](https://github.com/FerretDB/FerretDB) | Go | Apache-2.0 | [v2.7.0](https://github.com/FerretDB/FerretDB/releases/tag/v2.7.0) signed | 11117 | MongoDB (drop-in), MongoDB Atlas (partial) |
 | [Apache CouchDB](https://github.com/apache/couchdb) | Erlang | Apache-2.0 | [3.5.3](https://github.com/apache/couchdb/releases/tag/3.5.3) signed | 7011 | MongoDB (full) |

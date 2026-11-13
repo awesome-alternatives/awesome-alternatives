@@ -4,10 +4,10 @@ Show files in the terminal with syntax highlighting or rendering, and read, high
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [bat](https://github.com/sharkdp/bat) | Rust | Apache-2.0 | [v0.26.1](https://github.com/sharkdp/bat/releases/tag/v0.26.1) signed | 61233 | none |
-| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 28028 | none |
+| [bat](https://github.com/sharkdp/bat) | Rust | Apache-2.0 | [v0.26.1](https://github.com/sharkdp/bat/releases/tag/v0.26.1) signed | 61250 | none |
+| [Glow](https://github.com/charmbracelet/glow) | Go | MIT | [v3.0.0](https://github.com/charmbracelet/glow/releases/tag/v3.0.0) signed | 28046 | none |
 | [lnav](https://github.com/tstack/lnav) | C++ | BSD-2-Clause | [v0.14.1](https://github.com/tstack/lnav/releases/tag/v0.14.1) | 10794 | Splunk (partial) |
-| [tailspin](https://github.com/bensadeh/tailspin) | Rust | MIT | [7.0.0](https://github.com/bensadeh/tailspin/releases/tag/7.0.0) | 8038 | lnav (partial) |
+| [tailspin](https://github.com/bensadeh/tailspin) | Rust | MIT | [7.0.0](https://github.com/bensadeh/tailspin/releases/tag/7.0.0) | 8052 | lnav (partial) |
 | [hl](https://github.com/pamburus/hl) | Rust | MIT | [v0.36.5](https://github.com/pamburus/hl/releases/tag/v0.36.5) | 3330 | lnav (partial) |
 
 [All categories](../README.md#catalog)
