@@ -282461,27 +282461,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-14T15:21:45Z",
+        "pushedAt": "2026-11-14T16:19:26Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-15T15:30:04.890Z"
+        "since": "2026-10-15T16:20:01.317Z"
       },
       "starHistory": {
         "from": "2026-10-14",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.3",
-        "publishedAt": "2026-11-12T22:00:07Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.3",
+        "tag": "v0.56.4",
+        "publishedAt": "2026-11-14T16:19:27Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.4",
         "source": "release",
         "signed": false,
-        "tagOid": "2596dce22cb96689ec8eca5274e404108150a144"
+        "tagOid": "f2c163599f2871501903d58e48cd180df9295b9d"
       },
       "releases": [
+        {
+          "tag": "v0.56.4",
+          "name": "refactor(telemetry): use @ferrlabs/telemetry (#450)",
+          "publishedAt": "2026-11-14T16:19:27Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.4",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.3",
           "name": "fix(telemetry): fail closed on code and state keys and keep colliding redacted keys (#446)",
@@ -282509,33 +282516,13 @@
           "publishedAt": "2026-11-11T10:37:26Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.0",
           "prerelease": false
-        },
-        {
-          "tag": "v0.55.2",
-          "name": "fix(desktop): load the key script from the workflow commit, not the tag (#440)",
-          "publishedAt": "2026-11-11T09:51:57Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.55.2",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],

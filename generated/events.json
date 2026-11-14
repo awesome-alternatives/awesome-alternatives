@@ -6958,7 +6958,6 @@
   {"type":"released","slug":"weblate","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"weblate-2026.10.1","to":"weblate-2026.11"},
   {"type":"released","slug":"wildduck","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"v1.55.2","to":"v1.55.3"},
   {"type":"released","slug":"x-anylabeling","at":"2026-11-03T05:17:19.716Z","commit":"5e2827b2c5abcceff2911bcc22e60b5ca48242bd","from":"v4.3.0","to":"v4.3.1"},
-  {"type":"released","slug":"stashden","at":"2026-11-03T15:16:08.992Z","commit":"9ca43eae5a89300bf54ecf32559bf0f9ca10b975","from":"v0.53.3","to":"v0.53.4"},
   {"type":"released","slug":"act","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"v0.2.95","to":"v0.2.96"},
   {"type":"released","slug":"adguard-home","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"v0.107.79","to":"v0.107.80"},
   {"type":"released","slug":"adminer","at":"2026-11-03T17:10:29.743Z","commit":"a05bc26c45f7ce9446559834b2d70d161162b356","from":"v6.2.0","to":"v6.3.0"},
@@ -8810,5 +8809,6 @@
   {"type":"released","slug":"chromium","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"160.0.8161.1","to":"160.0.8162.0"},
   {"type":"released","slug":"homer-dashboard","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v26.11.2","to":"v26.11.3"},
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":null},
-  {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v1.874.0","to":"v1.875.0"}
+  {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v1.874.0","to":"v1.875.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":null,"from":"v0.56.3","to":"v0.56.4"}
 ]
