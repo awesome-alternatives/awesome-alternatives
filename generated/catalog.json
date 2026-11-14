@@ -323582,9 +323582,9 @@
       ]
     },
     {
-      "slug": "whishper",
-      "name": "Whishper",
-      "repository": "https://github.com/pluja/whishper",
+      "slug": "anysub",
+      "name": "Anysub",
+      "repository": "https://github.com/pluja/anysub",
       "category": "speech-to-text",
       "replaces": [
         {
