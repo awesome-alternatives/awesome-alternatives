@@ -244817,7 +244817,7 @@
     {
       "slug": "pyrefly",
       "name": "Pyrefly",
-      "repository": "https://github.com/meta/pyrefly",
+      "repository": "https://github.com/pyrefly-org/pyrefly",
       "category": "python-type-checker",
       "replaces": [
         {
@@ -244834,7 +244834,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-25T13:41:38.000Z",
-      "editedAt": "2026-10-29T15:34:25.000Z",
+      "editedAt": "2026-11-14T15:03:23.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "pyrefly-org/pyrefly",
@@ -244842,7 +244842,7 @@
         "homepage": "http://pyrefly.org/",
         "language": "Rust",
         "license": "MIT",
-        "stars": 7201,
+        "stars": 7200,
         "forks": 600,
         "topics": [
           "code-quality",
@@ -244872,13 +244872,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 111,
+        "stars": 110,
         "exact": true,
-        "since": "2026-10-15T05:17:27.818Z"
+        "since": "2026-10-15T15:03:52.932Z"
       },
       "starHistory": {
         "from": "2026-10-14",
-        "stars": [7090,7092,7094,7099,7099,7108,7117,7118,7120,7127,7133,7140,7146,7154,7156,7170,7172,7172,7172,7176,7181,7184,7184,7188,7188,7189,7191,7191,7195,7199,7197,7201]
+        "stars": [7090,7092,7094,7099,7099,7108,7117,7118,7120,7127,7133,7140,7146,7154,7156,7170,7172,7172,7172,7176,7181,7184,7184,7188,7188,7189,7191,7191,7195,7199,7197,7200]
       },
       "release": {
         "tag": "1.4.1",
@@ -244955,9 +244955,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
