@@ -1,5 +1,5 @@
 name: Homer
-repository: https://github.com/bastienwirtz/homer
+repository: https://github.com/homer-dashboard/homer
 category: homelab-dashboard
 replaces:
   - tool: heimdall
