@@ -47,7 +47,6 @@ export const fr: Messages = {
     title: "awesome-alternatives : trouvez ce qui remplace l'outil que vous utilisez",
     description:
       "Cherchez une alternative à un outil de développement par langage, licence et type de remplacement. Étoiles, releases et signatures viennent directement de GitHub.",
-    eyebrow: "Trouvez ce qui remplace l'outil que vous utilisez",
     heading: "Dites ce que vous utilisez et ce qu'il vous faut.",
     lede: "{count} outils, données de release récupérées sur GitHub chaque nuit, jamais saisies à la main",
     noscriptBefore: "La recherche a besoin de JavaScript. Tous les outils sont listés ci-dessous : ",
@@ -311,7 +310,6 @@ export const fr: Messages = {
     title: "Ajouter un outil à awesome-alternatives",
     description:
       "Comment référencer un outil de développement dans le catalogue : l'entrée YAML, ce que la CI vérifie, comment les mainteneurs valident leur outil.",
-    eyebrow: "Contribuer",
     heading: "Ajouter un outil",
     lede: "Chaque entrée est un court fichier YAML dans le dépôt. Écrivez-la vous-même dans une pull request, ou décrivez l'outil dans une issue et un mainteneur l'écrira pour vous.",
     openPullRequest: "Ouvrir une pull request ↗",
@@ -341,7 +339,6 @@ export const fr: Messages = {
     title: "Ce qui a changé dans le catalogue : licences, archives, releases",
     description:
       "La liste datée de ce qui a changé dans le catalogue awesome-alternatives : changements de licence, dépôts renommés ou archivés, nouvelles releases, outils ajoutés ou retirés.",
-    eyebrow: "Changements",
     heading: "Ce qui a changé",
     lede: "Chaque refresh compare le catalogue au précédent et garde ce qui a changé. Le nombre d'étoiles ne compte jamais comme un changement.",
     feedLink: "Flux RSS de tous les changements",

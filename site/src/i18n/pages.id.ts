@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "Tentang: tanda, tingkat kecocokan, dan pembaruan setiap malam",
     description:
       "Apa yang dinyatakan sebuah entri di katalog, apa yang dibaca dari GitHub setiap malam, dan aturan di balik setiap tanda yang ditampilkan pada sebuah alat.",
-    eyebrow: "Tentang",
     heading: "Apa yang dikatakan katalog, dan dari mana ia tahu.",
     lede: "{toolCount} tool developer, masing-masing dicantumkan bersama apa yang digantikannya. Selebihnya yang Anda lihat pada sebuah alat berasal dari GitHub, bukan dari orang yang menambahkannya.",
     entries: {
@@ -136,7 +135,6 @@ export const pages: Pages = {
   privacy: {
     title: "Kebijakan privasi",
     description: "Apa yang diproses awesome-alternatives.com tentang pengunjungnya, dan alasannya.",
-    eyebrow: "Hukum",
     heading: "Kebijakan privasi",
     lede: 'Situs ini tidak memasang cookie, tidak menyimpan apa pun di browser Anda, tidak menjalankan analitik, dan tidak memuat skrip atau font pihak ketiga. Setiap halaman, skrip, dan font berasal dari awesome-alternatives.com; satu-satunya pengecualian adalah gambar di dalam README sebuah proyek, yang dijelaskan di bagian "Detail repositori". Tidak ada yang perlu disetujui, jadi tidak ada banner persetujuan. Jika hal ini berubah, halaman ini dan mekanisme persetujuan akan berubah lebih dulu. Terakhir diperbarui {lastUpdated}.',
     legitimateInterest: "Kepentingan yang sah (GDPR pasal 6(1)(f))",
@@ -223,7 +221,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "Informasi hukum",
     description: "Siapa yang menerbitkan dan meng-hosting awesome-alternatives.com.",
-    eyebrow: "Hukum",
     heading: "Informasi hukum",
     lede: "Diterbitkan berdasarkan pasal 6 III undang-undang Prancis n° 2004-575 tanggal 21 Juni 2004 tentang kepercayaan dalam ekonomi digital (LCEN). Terakhir diperbarui {lastUpdated}.",
     facts: {
@@ -265,7 +262,6 @@ export const pages: Pages = {
   contact: {
     title: "Kontak",
     description: "Cara menghubungi orang di balik awesome-alternatives.com, dan ke mana setiap jenis permintaan paling cepat ditangani.",
-    eyebrow: "Kontak",
     heading: "Hubungi kami",
     lede: "Katalog ini dikelola secara terbuka di GitHub, jadi sebagian besar permintaan lebih cepat ditangani di sana. Untuk hal lain, gunakan formulir di bagian bawah halaman ini atau kirim surat ke",
     catalog: {

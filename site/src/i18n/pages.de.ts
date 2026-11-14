@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "Über den Katalog: Kennzeichen, Ersatzgrade und der nächtliche Abgleich",
     description:
       "Was ein Eintrag im Katalog angibt, was jede Nacht von GitHub gelesen wird und welche Regel hinter jedem Kennzeichen an einem Tool steht.",
-    eyebrow: "Über den Katalog",
     heading: "Was der Katalog sagt, und woher er es weiß.",
     lede: "{toolCount} Entwickler-Tools, jedes mit der Angabe, was es ersetzt. Alles Übrige, was an einem Tool steht, kommt von GitHub und nicht von der Person, die es eingetragen hat.",
     entries: {
@@ -137,7 +136,6 @@ export const pages: Pages = {
   privacy: {
     title: "Datenschutzerklärung",
     description: "Was awesome-alternatives.com über seine Besucher verarbeitet, und warum.",
-    eyebrow: "Rechtliches",
     heading: "Datenschutzerklärung",
     lede: "Die Seite setzt keine Cookies, speichert nichts im Browser, betreibt keine Analytics und lädt keine Skripte oder Schriften von Dritten. Jede Seite, jedes Skript und jede Schrift kommt von awesome-alternatives.com, die einzige Ausnahme sind die Bilder in der README eines Projekts, beschrieben unter „Repository-Details“. Es gibt nichts zuzustimmen, also auch kein Consent-Banner. Sollte sich das je ändern, ändern sich diese Seite und ein Consent-Mechanismus zuerst. Zuletzt aktualisiert am {lastUpdated}.",
     legitimateInterest: "Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)",
@@ -224,7 +222,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "Impressum",
     description: "Wer awesome-alternatives.com herausgibt und hostet.",
-    eyebrow: "Rechtliches",
     heading: "Impressum",
     lede: "Veröffentlicht nach Artikel 6 III des französischen Gesetzes Nr. 2004-575 vom 21. Juni 2004 über das Vertrauen in die digitale Wirtschaft (LCEN). Zuletzt aktualisiert am {lastUpdated}.",
     facts: {
@@ -266,7 +263,6 @@ export const pages: Pages = {
   contact: {
     title: "Kontakt",
     description: "Wie du die Menschen hinter awesome-alternatives.com erreichst, und wo jede Art von Anliegen am schnellsten vorankommt.",
-    eyebrow: "Kontakt",
     heading: "Kontakt",
     lede: "Der Katalog wird offen auf GitHub gepflegt, die meisten Anliegen kommen dort also schneller voran. Für alles andere nutz das Formular unten auf dieser Seite oder schreib an",
     catalog: {

@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "À propos : marques, niveaux de remplacement et mise à jour nocturne",
     description:
       "Ce qu'une entrée du catalogue affirme, ce qui est lu sur GitHub chaque nuit, et la règle derrière chaque marque affichée sur un outil.",
-    eyebrow: "À propos",
     heading: "Ce que dit le catalogue, et comment il le sait.",
     lede: "{toolCount} outils de développement, chacun listé avec ce qu'il remplace. Le reste de ce que vous voyez sur un outil vient de GitHub, pas de la personne qui l'a ajouté.",
     entries: {
@@ -138,7 +137,6 @@ export const pages: Pages = {
   privacy: {
     title: "Politique de confidentialité",
     description: "Ce qu'awesome-alternatives.com traite au sujet de ses visiteurs, et pourquoi.",
-    eyebrow: "Légal",
     heading: "Politique de confidentialité",
     lede: "Le site ne dépose aucun cookie, n'enregistre rien dans votre navigateur, n'exécute aucune mesure d'audience et ne charge ni script ni police tiers. Chaque page, chaque script et chaque police vient d'awesome-alternatives.com ; la seule exception, ce sont les images contenues dans le README d'un projet, décrites sous « Détails du dépôt ». Il n'y a rien à consentir, donc pas de bandeau de consentement. Si cela venait à changer, cette page et un mécanisme de consentement changeraient d'abord. Dernière mise à jour le {lastUpdated}.",
     legitimateInterest: "Intérêt légitime (RGPD, art. 6.1.f)",
@@ -227,7 +225,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "Mentions légales",
     description: "Qui édite et héberge awesome-alternatives.com.",
-    eyebrow: "Légal",
     heading: "Mentions légales",
     lede: "Publiées en application de l'article 6 III de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN). Dernière mise à jour le {lastUpdated}.",
     facts: {
@@ -269,7 +266,6 @@ export const pages: Pages = {
   contact: {
     title: "Contact",
     description: "Comment joindre les personnes derrière awesome-alternatives.com, et où chaque demande avance le plus vite.",
-    eyebrow: "Contact",
     heading: "Nous contacter",
     lede: "Le catalogue est tenu en public sur GitHub, la plupart des demandes y avancent donc plus vite. Pour tout le reste, utilisez le formulaire en bas de cette page ou écrivez à",
     catalog: {

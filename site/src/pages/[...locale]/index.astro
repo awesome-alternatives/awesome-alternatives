@@ -24,7 +24,6 @@ const items = targetItems().map((item) => ({ ...item, href: pathFor(locale, item
 
 <Base revealSearch title={m.home.title} description={m.home.description}>
   <section class="hero">
-    <p class="eyebrow">{m.home.eyebrow}</p>
     <h1>{m.home.heading}</h1>
     <p class="lede">{format(m.home.lede, { count: tools.length })}</p>
     <div data-reveal-anchor>
