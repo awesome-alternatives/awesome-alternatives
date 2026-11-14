@@ -4,7 +4,7 @@ Log workouts, activities and body measurements, and follow progress over time.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Workout.cool](https://github.com/Snouzy/workout-cool) | TypeScript | MIT | [v1.3.2](https://github.com/Snouzy/workout-cool/releases/tag/v1.3.2) signed | 8687 | Hevy (partial) |
+| [Workout.cool](https://github.com/Snouzy/workout-cool) | TypeScript | MIT | [v1.3.2](https://github.com/Snouzy/workout-cool/releases/tag/v1.3.2) signed | 8688 | Hevy (partial) |
 | [wger](https://github.com/wger-project/wger) | Python | AGPL-3.0 | [2.7](https://github.com/wger-project/wger/releases/tag/2.7) | 7270 | Hevy (partial), MyFitnessPal (partial) |
 | [SparkyFitness](https://github.com/CodeWithCJ/SparkyFitness) | TypeScript | Other | [v1.12.1](https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.1) signed | 6785 | MyFitnessPal (full) |
 | [OpenNutriTracker](https://github.com/simonoppowa/OpenNutriTracker) | Dart | GPL-3.0 | [v2.7.0](https://github.com/simonoppowa/OpenNutriTracker/releases/tag/v2.7.0) signed | 2899 | MyFitnessPal (partial) |

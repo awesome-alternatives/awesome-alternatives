@@ -5,7 +5,7 @@ Show and control which apps on a computer or phone may connect to the network.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [OpenSnitch](https://github.com/evilsocket/opensnitch) | Python | GPL-3.0 | [v1.8.0](https://github.com/evilsocket/opensnitch/releases/tag/v1.8.0) signed | 14298 | Little Snitch (full) |
-| [Portmaster](https://github.com/safing/portmaster) | Go | GPL-3.0 | [v2.2.8](https://github.com/safing/portmaster/releases/tag/v2.2.8) | 14085 | Little Snitch (full), GlassWire (full) |
+| [Portmaster](https://github.com/safing/portmaster) | Go | GPL-3.0 | [v2.2.8](https://github.com/safing/portmaster/releases/tag/v2.2.8) | 14084 | Little Snitch (full), GlassWire (full) |
 | [LuLu](https://github.com/objective-see/LuLu) | Objective-C | GPL-3.0 | [v4.5.7](https://github.com/objective-see/LuLu/releases/tag/v4.5.7) | 13581 | Little Snitch (partial) |
 | [simplewall](https://github.com/henrypp/simplewall) | C | GPL-3.0 | [v.3.8.7](https://github.com/henrypp/simplewall/releases/tag/v.3.8.7) signed | 9312 | GlassWire (partial) |
 | [Rethink DNS + Firewall](https://github.com/celzero/rethink-app) | Kotlin | Apache-2.0 | [v0.5.8](https://github.com/celzero/rethink-app/releases/tag/v0.5.8) signed | 5913 | GlassWire (partial) |

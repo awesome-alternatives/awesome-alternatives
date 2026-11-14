@@ -10,7 +10,7 @@ Run a remote-access or site-to-site VPN server for your users and networks.
 | [SoftEther VPN](https://github.com/SoftEtherVPN/SoftEtherVPN) | C | Apache-2.0 | [5.2.5189](https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5189) | 13739 | OpenVPN Access Server (full) |
 | [Outline Server](https://github.com/OutlineFoundation/outline-server) | TypeScript | Apache-2.0 | [server-v1.12.3](https://github.com/OutlineFoundation/outline-server/releases/tag/server-v1.12.3) signed | 6256 | NordVPN (partial), OpenVPN Access Server (partial) |
 | [Pritunl](https://github.com/pritunl/pritunl) | Python | Other | [1.34.4803.56](https://github.com/pritunl/pritunl/releases/tag/1.34.4803.56) signed | 5042 | OpenVPN Access Server (full) |
-| [WGDashboard](https://github.com/WGDashboard/WGDashboard) | Vue | Apache-2.0 | [v4.3.4](https://github.com/WGDashboard/WGDashboard/releases/tag/v4.3.4) signed | 3777 | OpenVPN Access Server (partial) |
+| [WGDashboard](https://github.com/WGDashboard/WGDashboard) | Vue | Apache-2.0 | [v4.3.4](https://github.com/WGDashboard/WGDashboard/releases/tag/v4.3.4) signed | 3778 | OpenVPN Access Server (partial) |
 | [strongSwan](https://github.com/strongswan/strongswan) | C | Other | [6.1.0](https://github.com/strongswan/strongswan/releases/tag/6.1.0) | 3055 | OpenVPN Access Server (partial) |
 | [WireGuard Portal](https://github.com/h44z/wg-portal) | Go | MIT | [v2.3.1](https://github.com/h44z/wg-portal/releases/tag/v2.3.1) signed | 1858 | OpenVPN Access Server (partial) |
 

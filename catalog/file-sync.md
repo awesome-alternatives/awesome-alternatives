@@ -5,7 +5,7 @@ Self-hosted storage for files you reach from more than one machine, over WebDAV,
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Syncthing](https://github.com/syncthing/syncthing) | Go | MPL-2.0 | [v2.1.7](https://github.com/syncthing/syncthing/releases/tag/v2.1.7) | 90433 | Dropbox (partial), Google Drive (partial), iCloud Drive (partial) |
-| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.76.0](https://github.com/rclone/rclone/releases/tag/v1.76.0) signed | 61007 | none |
+| [rclone](https://github.com/rclone/rclone) | Go | MIT | [v1.76.0](https://github.com/rclone/rclone/releases/tag/v1.76.0) signed | 61008 | none |
 | [copyparty](https://github.com/9001/copyparty) | Python | MIT | [v1.20.26](https://github.com/9001/copyparty/releases/tag/v1.20.26) | 47357 | WeTransfer (partial), Dropbox (partial) |
 | [Nextcloud](https://github.com/nextcloud/server) | PHP | AGPL-3.0 | [v33.0.11](https://github.com/nextcloud/server/releases/tag/v33.0.11) | 37513 | Dropbox (full), Google Drive (full), iCloud Drive (full), OneDrive (full), Box (full) |
 | [Cloudreve](https://github.com/cloudreve/cloudreve) | Go | GPL-3.0 | [4.19.1](https://github.com/cloudreve/cloudreve/releases/tag/4.19.1) | 28973 | Dropbox (partial), Google Drive (partial), Box (partial), OneDrive (partial) |

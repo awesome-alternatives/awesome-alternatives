@@ -10,7 +10,7 @@ Run an online store, from catalogue to checkout, or ring up in-store sales and p
 | [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v6.0.4](https://github.com/spree/spree/releases/tag/v6.0.4) signed | 15836 | Shopify (full) |
 | [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.10-alpha1](https://github.com/magento/magento2/releases/tag/2.4.10-alpha1) | 12236 | Shopify (full) |
 | [WooCommerce](https://github.com/woocommerce/woocommerce) | PHP | GPL-2.0 | [11.2.2](https://github.com/woocommerce/woocommerce/releases/tag/11.2.2) signed | 10600 | Shopify (full) |
-| [EverShop](https://github.com/evershopcommerce/evershop) | TypeScript | GPL-3.0 | [v2.4.0](https://github.com/evershopcommerce/evershop/releases/tag/v2.4.0) | 10553 | Shopify (full) |
+| [EverShop](https://github.com/evershopcommerce/evershop) | TypeScript | GPL-3.0 | [v2.4.0](https://github.com/evershopcommerce/evershop/releases/tag/v2.4.0) | 10554 | Shopify (full) |
 | [nopCommerce](https://github.com/nopSolutions/nopCommerce) | C# | Other | [release-5.00.1](https://github.com/nopSolutions/nopCommerce/releases/tag/release-5.00.1) | 10185 | Shopify (full) |
 | [PrestaShop](https://github.com/PrestaShop/PrestaShop) | PHP | Other | [9.2.1](https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1) signed | 9256 | Shopify (full) |
 | [Aimeos](https://github.com/aimeos/aimeos-laravel) | PHP | MIT | [2026.10.2](https://github.com/aimeos/aimeos-laravel/releases/tag/2026.10.2) | 8713 | Shopify (partial) |

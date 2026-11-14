@@ -7,7 +7,7 @@ Version and apply database schema changes.
 | [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 19029 | Flyway (partial) |
 | [Bytebase](https://github.com/bytebase/bytebase) | TypeScript | Other | [3.24.1](https://github.com/bytebase/bytebase/releases/tag/3.24.1) signed | 14715 | Flyway (partial) |
 | [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13646 | none |
-| [goose](https://github.com/pressly/goose) | Go | Other | [v3.30.1](https://github.com/pressly/goose/releases/tag/v3.30.1) signed | 11688 | migrate (full) |
+| [goose](https://github.com/pressly/goose) | Go | Other | [v3.30.1](https://github.com/pressly/goose/releases/tag/v3.30.1) signed | 11689 | migrate (full) |
 | [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.12.2](https://github.com/flyway/flyway/releases/tag/flyway-13.12.2) | 10202 | Liquibase (full) |
 | [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.3.0](https://github.com/ariga/atlas/releases/tag/v1.3.0) signed | 8822 | Liquibase (full), Flyway (full) |
 | [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.38.1](https://github.com/amacneil/dbmate/releases/tag/v2.38.1) signed | 7546 | Flyway (full), Liquibase (partial) |

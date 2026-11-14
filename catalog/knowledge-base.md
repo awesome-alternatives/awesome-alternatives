@@ -5,7 +5,7 @@ Shared pages and documentation for teams, edited in the browser.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.15.0](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.0) signed | 78902 | Notion (full) |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 74524 | Notion (full), Miro (partial), OneNote (partial) |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 74525 | Notion (full), Miro (partial), OneNote (partial) |
 | [Outline](https://github.com/outline/outline) | TypeScript | Other | [v1.12.0](https://github.com/outline/outline/releases/tag/v1.12.0) signed | 41271 | Notion (partial), Confluence (full), HackMD (partial) |
 | [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.3.1](https://github.com/requarks/wiki/releases/tag/3.3.1) signed | 29288 | Confluence (full) |
 | [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.97.0](https://github.com/docmost/docmost/releases/tag/v0.97.0) signed | 22338 | Confluence (full), Notion (partial) |

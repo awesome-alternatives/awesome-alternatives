@@ -4,7 +4,7 @@ Draft 2D drawings, model parametric 3D parts and lay out printed circuit boards 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [FreeCAD](https://github.com/FreeCAD/FreeCAD) | C++ | LGPL-2.1 | [1.1.4](https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4) | 35443 | SolidWorks (partial), Fusion (partial), AutoCAD (partial), Onshape (partial) |
+| [FreeCAD](https://github.com/FreeCAD/FreeCAD) | C++ | LGPL-2.1 | [1.1.4](https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4) | 35442 | SolidWorks (partial), Fusion (partial), AutoCAD (partial), Onshape (partial) |
 | [OpenSCAD](https://github.com/openscad/openscad) | C++ | Other | [openscad-2021.01](https://github.com/openscad/openscad/releases/tag/openscad-2021.01) signed | 10649 | Fusion (partial), SolidWorks (partial) |
 | [LibreCAD](https://github.com/LibreCAD/LibreCAD) | C++ | Other | [v2.2.1.6](https://github.com/LibreCAD/LibreCAD/releases/tag/v2.2.1.6) | 6593 | AutoCAD (partial) |
 | [CadQuery](https://github.com/CadQuery/cadquery) | Python | Other | [v2.8.0](https://github.com/CadQuery/cadquery/releases/tag/v2.8.0) signed | 6108 | Fusion (partial) |

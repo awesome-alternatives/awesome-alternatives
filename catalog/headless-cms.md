@@ -4,7 +4,7 @@ Manage content in an admin UI and deliver it to any front end through an API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.62.0](https://github.com/strapi/strapi/releases/tag/v5.62.0) | 73482 | Contentful (full) |
+| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.62.0](https://github.com/strapi/strapi/releases/tag/v5.62.0) | 73483 | Contentful (full) |
 | [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.93.0](https://github.com/payloadcms/payload/releases/tag/v3.93.0) | 45816 | Contentful (full), Strapi (full) |
 | [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.6.1](https://github.com/directus/directus/releases/tag/v12.6.1) signed | 38718 | Contentful (full) |
 | [Wagtail](https://github.com/wagtail/wagtail) | Python | BSD-3-Clause | [v8.1](https://github.com/wagtail/wagtail/releases/tag/v8.1) | 20727 | Contentful (partial) |

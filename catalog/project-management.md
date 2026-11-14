@@ -4,10 +4,10 @@ Issues, tasks and boards for planning team work.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Plane](https://github.com/makeplane/plane) | TypeScript | AGPL-3.0 | [v1.4.3](https://github.com/makeplane/plane/releases/tag/v1.4.3) signed | 62434 | Jira (full), Linear (full), ClickUp (partial), monday.com (partial) |
-| [Huly](https://github.com/hcengineering/platform) | TypeScript | EPL-2.0 | [v0.7.426](https://github.com/hcengineering/platform/releases/tag/v0.7.426) | 28123 | Jira (partial), Linear (full), ClickUp (partial) |
+| [Plane](https://github.com/makeplane/plane) | TypeScript | AGPL-3.0 | [v1.4.3](https://github.com/makeplane/plane/releases/tag/v1.4.3) signed | 62433 | Jira (full), Linear (full), ClickUp (partial), monday.com (partial) |
+| [Huly](https://github.com/hcengineering/platform) | TypeScript | EPL-2.0 | [v0.7.426](https://github.com/hcengineering/platform/releases/tag/v0.7.426) | 28122 | Jira (partial), Linear (full), ClickUp (partial) |
 | [Focalboard](https://github.com/mattermost-community/focalboard) | TypeScript | Other | [v8.0.0](https://github.com/mattermost-community/focalboard/releases/tag/v8.0.0) signed | 26556 | Trello (full), Asana (partial), Notion (partial) |
-| [Super Productivity](https://github.com/super-productivity/super-productivity) | TypeScript | MIT | [v20.0.0](https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0) | 23667 | Todoist (partial) |
+| [Super Productivity](https://github.com/super-productivity/super-productivity) | TypeScript | MIT | [v20.0.0](https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0) | 23668 | Todoist (partial) |
 | [WeKan](https://github.com/wekan/wekan) | JavaScript | MIT | [v13.11](https://github.com/wekan/wekan/releases/tag/v13.11) | 21170 | Trello (full) |
 | [OpenProject](https://github.com/opf/openproject) | Ruby | GPL-3.0 | [v17.9.7](https://github.com/opf/openproject/releases/tag/v17.9.7) signed | 17367 | Jira (full), Asana (partial), ClickUp (partial), monday.com (partial), Microsoft Project (partial) |
 | [PLANKA](https://github.com/plankanban/planka) | JavaScript | Other | [v2.3.1](https://github.com/plankanban/planka/releases/tag/v2.3.1) | 12681 | Trello (full) |
@@ -22,7 +22,7 @@ Issues, tasks and boards for planning team work.
 | [Tasks.org](https://github.com/tasks/tasks) | Kotlin | GPL-3.0 | [15.14](https://github.com/tasks/tasks/releases/tag/15.14) | 5743 | Todoist (partial) |
 | [tududi](https://github.com/chrisvel/tududi) | JavaScript | MIT | [v2.1.0](https://github.com/chrisvel/tududi/releases/tag/v2.1.0) | 3551 | Todoist (partial) |
 | [Worklenz](https://github.com/Worklenz/worklenz) | TypeScript | AGPL-3.0 | [v3.4.0](https://github.com/Worklenz/worklenz/releases/tag/v3.4.0) | 3308 | monday.com (partial), ClickUp (partial) |
-| [Donetick](https://github.com/donetick/donetick) | Go | AGPL-3.0 | [v0.1.86](https://github.com/donetick/donetick/releases/tag/v0.1.86) signed | 2746 | Todoist (partial) |
+| [Donetick](https://github.com/donetick/donetick) | Go | AGPL-3.0 | [v0.1.86](https://github.com/donetick/donetick/releases/tag/v0.1.86) signed | 2747 | Todoist (partial) |
 | [ZenTao](https://github.com/easysoft/zentaopms) | PHP | Other | [zentaopms_22.6_20260917](https://github.com/easysoft/zentaopms/releases/tag/zentaopms_22.6_20260917) | 1723 | Jira (full) |
 | [Nextcloud Deck](https://github.com/nextcloud/deck) | JavaScript | AGPL-3.0 | [v1.19.2](https://github.com/nextcloud/deck/releases/tag/v1.19.2) signed | 1440 | Trello (full) |
 | [GanttProject](https://github.com/bardsoftware/ganttproject) | Java | GPL-3.0 | [ganttproject-3.3.3323](https://github.com/bardsoftware/ganttproject/releases/tag/ganttproject-3.3.3323) signed | 1121 | Microsoft Project (full) |

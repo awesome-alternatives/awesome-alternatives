@@ -5,7 +5,7 @@ Deploy apps and databases to your own servers from a git push or a dashboard.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.7.5](https://github.com/coollabsio/coolify/releases/tag/v4.7.5) | 66069 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.2](https://github.com/Dokploy/dokploy/releases/tag/v0.31.2) signed | 38502 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.2](https://github.com/Dokploy/dokploy/releases/tag/v0.31.2) signed | 38501 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
 | [Dokku](https://github.com/dokku/dokku) | Shell | MIT | [v0.38.34](https://github.com/dokku/dokku/releases/tag/v0.38.34) | 32226 | Heroku (full) |
 | [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.1.1](https://github.com/labring/sealos/releases/tag/v5.1.1) signed | 18393 | Heroku (partial) |
 | [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.16.0](https://github.com/caprover/caprover/releases/tag/v1.16.0) signed | 15205 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |

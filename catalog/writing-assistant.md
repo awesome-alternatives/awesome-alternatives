@@ -4,7 +4,7 @@ Check grammar, spelling and style as you type.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Harper](https://github.com/Automattic/harper) | Rust | Apache-2.0 | [v3.2.0](https://github.com/Automattic/harper/releases/tag/v3.2.0) | 17703 | Grammarly (partial) |
+| [Harper](https://github.com/Automattic/harper) | Rust | Apache-2.0 | [v3.2.0](https://github.com/Automattic/harper/releases/tag/v3.2.0) | 17704 | Grammarly (partial) |
 | [LanguageTool](https://github.com/languagetool-org/languagetool) | Java | LGPL-2.1 | [v6.8](https://github.com/languagetool-org/languagetool/releases/tag/v6.8) | 15259 | Grammarly (full) |
 | [Vale](https://github.com/vale-cli/vale) | Go | MIT | [v3.27.0](https://github.com/vale-cli/vale/releases/tag/v3.27.0) signed | 6387 | Grammarly (partial) |
 | [proselint](https://github.com/amperser/proselint) | JavaScript | BSD-3-Clause | [v0.16.0](https://github.com/amperser/proselint/releases/tag/v0.16.0) | 4603 | Grammarly (partial) |

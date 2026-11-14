@@ -4,7 +4,7 @@ Build dashboards and explore metrics, logs and traces from a web UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.3.1](https://github.com/grafana/grafana/releases/tag/v13.3.1) | 77899 | Kibana (partial), Datadog (partial), Splunk (partial) |
+| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.3.1](https://github.com/grafana/grafana/releases/tag/v13.3.1) | 77900 | Kibana (partial), Datadog (partial), Splunk (partial) |
 | [Kibana](https://github.com/elastic/kibana) | TypeScript | Other | [v9.5.6](https://github.com/elastic/kibana/releases/tag/v9.5.6) signed | 21376 | Splunk (partial), Datadog (partial), Grafana (partial) |
 | [HyperDX](https://github.com/ClickHouse/ClickStack) | TypeScript | MIT | [@hyperdx/api@2.45.0](https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0) | 10035 | Datadog (partial) |
 | [Perses](https://github.com/perses/perses) | Go | Apache-2.0 | [v0.55.1](https://github.com/perses/perses/releases/tag/v0.55.1) signed | 2531 | Grafana (partial) |

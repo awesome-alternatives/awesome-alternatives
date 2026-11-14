@@ -4,7 +4,7 @@ Build chatbots, agents and RAG workflows in a visual editor and serve them behin
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dify](https://github.com/langgenius/dify) | Python | Other | [1.19.0](https://github.com/langgenius/dify/releases/tag/1.19.0) signed | 161154 | Microsoft Copilot Studio (partial) |
+| [Dify](https://github.com/langgenius/dify) | Python | Other | [1.19.0](https://github.com/langgenius/dify/releases/tag/1.19.0) signed | 161155 | Microsoft Copilot Studio (partial) |
 | [Langflow](https://github.com/langflow-ai/langflow) | Python | MIT | [v1.13.2](https://github.com/langflow-ai/langflow/releases/tag/v1.13.2) signed | 156628 | Microsoft Copilot Studio (partial) |
 | [Sim](https://github.com/simstudioai/sim) | TypeScript | Apache-2.0 | [v0.9.57](https://github.com/simstudioai/sim/releases/tag/v0.9.57) signed | 30138 | Microsoft Copilot Studio (partial) |
 | [FastGPT](https://github.com/labring/FastGPT) | TypeScript | Other | [v4.17.4](https://github.com/labring/FastGPT/releases/tag/v4.17.4) signed | 30037 | Microsoft Copilot Studio (partial) |

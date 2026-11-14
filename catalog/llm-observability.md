@@ -11,7 +11,7 @@ Trace, evaluate and monitor LLM applications.
 | [Helicone](https://github.com/Helicone/helicone) | TypeScript | Apache-2.0 | [v2025.08.21-1](https://github.com/Helicone/helicone/releases/tag/v2025.08.21-1) | 6280 | LangSmith (partial) |
 | [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.23.0](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.23.0) signed | 5032 | LangSmith (full) |
 | [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.128.13](https://github.com/Agenta-AI/agenta/releases/tag/v0.128.13) signed | 4908 | LangSmith (full) |
-| [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.3.4](https://github.com/lmnr-ai/lmnr/releases/tag/v0.3.4) signed | 3489 | LangSmith (full) |
+| [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.3.4](https://github.com/lmnr-ai/lmnr/releases/tag/v0.3.4) signed | 3490 | LangSmith (full) |
 | [OpenLIT](https://github.com/openlit/openlit) | TypeScript | Apache-2.0 | [openlit-2.1.1](https://github.com/openlit/openlit/releases/tag/openlit-2.1.1) signed | 3075 | LangSmith (partial) |
 
 [All categories](../README.md#catalog)

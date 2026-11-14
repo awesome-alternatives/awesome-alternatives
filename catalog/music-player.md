@@ -5,7 +5,7 @@ Play and organise a local music library or stream it from your own server, and f
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [beets](https://github.com/beetbox/beets) | Python | MIT | [v2.14.1](https://github.com/beetbox/beets/releases/tag/v2.14.1) | 15939 | Mp3tag (partial) |
-| [Feishin](https://github.com/jeffvli/feishin) | TypeScript | GPL-3.0 | [v1.17.0](https://github.com/jeffvli/feishin/releases/tag/v1.17.0) | 10415 | Spotify (partial) |
+| [Feishin](https://github.com/jeffvli/feishin) | TypeScript | GPL-3.0 | [v1.17.0](https://github.com/jeffvli/feishin/releases/tag/v1.17.0) | 10416 | Spotify (partial) |
 | [MusicBrainz Picard](https://github.com/metabrainz/picard) | Python | GPL-2.0 | [release-3.0.5](https://github.com/metabrainz/picard/releases/tag/release-3.0.5) signed | 5372 | Mp3tag (partial) |
 | [Harmonoid](https://github.com/harmonoid/harmonoid) | Dart | Other | [v0.3.37](https://github.com/harmonoid/harmonoid/releases/tag/v0.3.37) | 4821 | MusicBee (partial) |
 | [Finamp](https://github.com/finamp-app/finamp) | Dart | MPL-2.0 | [1.0.2](https://github.com/finamp-app/finamp/releases/tag/1.0.2) signed | 4582 | Spotify (partial) |

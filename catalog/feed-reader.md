@@ -5,7 +5,7 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.14-8649.6538d8f](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.14-8649.6538d8f) signed | 47006 | RSS.app (full) |
-| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.17.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.17.0) signed | 39289 | Feedly (full), Inoreader (full) |
+| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.17.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.17.0) signed | 39290 | Feedly (full), Inoreader (full) |
 | [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.30.4](https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.4) signed | 16586 | Feedly (full), Inoreader (full) |
 | [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [mac-7.2.1](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.2.1) | 10532 | Feedly (partial) |
 | [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.5](https://github.com/miniflux/v2/releases/tag/2.3.5) | 9935 | Feedly (full), Inoreader (partial) |

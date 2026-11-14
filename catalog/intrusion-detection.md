@@ -6,7 +6,7 @@ Watch network traffic or hosts for attacks, and report or block what matches.
 |---|---|---|---|---:|---|
 | [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 19008 | none |
 | [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.2](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2) signed | 15615 | Fail2ban (full) |
-| [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.6](https://github.com/stamparm/maltrail/releases/tag/3.6) | 8657 | none |
+| [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.6](https://github.com/stamparm/maltrail/releases/tag/3.6) | 8658 | none |
 | [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.1](https://github.com/zeek/zeek/releases/tag/v9.0.1) | 8237 | none |
 | [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.9.1](https://github.com/arkime/arkime/releases/tag/v6.9.1) signed | 7575 | none |
 | [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.8](https://github.com/OISF/suricata/releases/tag/suricata-8.0.8) | 6888 | Snort 3 (full) |

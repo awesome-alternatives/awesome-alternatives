@@ -5,8 +5,8 @@ Collect, store and query time series.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Netdata](https://github.com/netdata/netdata) | Go | GPL-3.0 | [v2.12.3](https://github.com/netdata/netdata/releases/tag/v2.12.3) | 81412 | Datadog (partial) |
-| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.16.0](https://github.com/prometheus/prometheus/releases/tag/v3.16.0) signed | 67600 | Datadog (partial) |
-| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.2](https://github.com/henrygd/beszel/releases/tag/v0.21.2) signed | 27340 | Netdata (partial), Datadog (partial) |
+| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.16.0](https://github.com/prometheus/prometheus/releases/tag/v3.16.0) signed | 67602 | Datadog (partial) |
+| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.2](https://github.com/henrygd/beszel/releases/tag/v0.21.2) signed | 27341 | Netdata (partial), Datadog (partial) |
 | [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | Go | Apache-2.0 | [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0) | 18105 | Prometheus (full), InfluxDB (partial), Datadog (partial) |
 | [Telegraf](https://github.com/influxdata/telegraf) | Go | MIT | [v1.40.3](https://github.com/influxdata/telegraf/releases/tag/v1.40.3) | 17905 | collectd (full), Datadog (partial) |
 | [Thanos](https://github.com/thanos-io/thanos) | Go | Apache-2.0 | [v0.42.5](https://github.com/thanos-io/thanos/releases/tag/v0.42.5) | 14276 | Prometheus (partial), Datadog (partial) |

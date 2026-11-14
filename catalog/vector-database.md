@@ -5,8 +5,8 @@ Store embeddings and search them by similarity.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Milvus](https://github.com/milvus-io/milvus) | Go | Apache-2.0 | [v3.0.6](https://github.com/milvus-io/milvus/releases/tag/v3.0.6) signed | 46662 | Pinecone (full) |
-| [Qdrant](https://github.com/qdrant/qdrant) | Rust | Apache-2.0 | [v1.20.1](https://github.com/qdrant/qdrant/releases/tag/v1.20.1) signed | 35554 | Pinecone (full) |
-| [Chroma](https://github.com/chroma-core/chroma) | Rust | Apache-2.0 | [1.5.9](https://github.com/chroma-core/chroma/releases/tag/1.5.9) signed | 29686 | Pinecone (partial) |
+| [Qdrant](https://github.com/qdrant/qdrant) | Rust | Apache-2.0 | [v1.20.1](https://github.com/qdrant/qdrant/releases/tag/v1.20.1) signed | 35553 | Pinecone (full) |
+| [Chroma](https://github.com/chroma-core/chroma) | Rust | Apache-2.0 | [1.5.9](https://github.com/chroma-core/chroma/releases/tag/1.5.9) signed | 29685 | Pinecone (partial) |
 | [pgvector](https://github.com/pgvector/pgvector) | C | Other | [v0.8.7](https://github.com/pgvector/pgvector/releases/tag/v0.8.7) | 23679 | Pinecone (partial) |
 | [Weaviate](https://github.com/weaviate/weaviate) | Go | Other | [v1.40.5](https://github.com/weaviate/weaviate/releases/tag/v1.40.5) | 16945 | Pinecone (full) |
 | [LanceDB](https://github.com/lancedb/lancedb) | Rust | Apache-2.0 | [v0.41.0](https://github.com/lancedb/lancedb/releases/tag/v0.41.0) | 11899 | Pinecone (partial) |

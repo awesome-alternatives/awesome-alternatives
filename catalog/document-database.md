@@ -4,7 +4,7 @@ Databases storing JSON-like documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v4.0.1](https://github.com/surrealdb/surrealdb/releases/tag/v4.0.1) signed | 33310 | MongoDB (partial) |
+| [SurrealDB](https://github.com/surrealdb/surrealdb) | Rust | Other | [v4.0.1](https://github.com/surrealdb/surrealdb/releases/tag/v4.0.1) signed | 33309 | MongoDB (partial) |
 | [MongoDB](https://github.com/mongodb/mongo) | C++ | Other | [r9.0.8](https://github.com/mongodb/mongo/releases/tag/r9.0.8) | 28681 | MongoDB Atlas (full) |
 | [RethinkDB](https://github.com/rethinkdb/rethinkdb) | C++ | Other | [v2.4.4](https://github.com/rethinkdb/rethinkdb/releases/tag/v2.4.4) | 27010 | MongoDB (partial) |
 | [RxDB](https://github.com/pubkey/rxdb) | TypeScript | Apache-2.0 | [17.6.0](https://github.com/pubkey/rxdb/releases/tag/17.6.0) | 23425 | Firebase (partial) |

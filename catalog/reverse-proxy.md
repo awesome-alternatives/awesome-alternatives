@@ -8,9 +8,9 @@ Serve sites, terminate TLS and route traffic to services.
 | [Caddy](https://github.com/caddyserver/caddy) | Go | Apache-2.0 | [v2.11.9](https://github.com/caddyserver/caddy/releases/tag/v2.11.9) signed | 79038 | nginx (full) |
 | [Traefik](https://github.com/traefik/traefik) | Go | MIT | [v3.7.19](https://github.com/traefik/traefik/releases/tag/v3.7.19) signed | 65544 | nginx (partial), ingress-nginx (full) |
 | [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) | JavaScript | MIT | [v2.17.0](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.17.0) signed | 34710 | Traefik (partial), Caddy (partial) |
-| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.8](https://github.com/nginx/nginx/releases/tag/release-1.31.8) | 32123 | HAProxy (partial) |
+| [nginx](https://github.com/nginx/nginx) | C | BSD-2-Clause | [release-1.31.8](https://github.com/nginx/nginx/releases/tag/release-1.31.8) | 32122 | HAProxy (partial) |
 | [Envoy](https://github.com/envoyproxy/envoy) | C++ | Apache-2.0 | [v1.40.2](https://github.com/envoyproxy/envoy/releases/tag/v1.40.2) | 29231 | nginx (partial) |
-| [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.26.0](https://github.com/fosrl/pangolin/releases/tag/1.26.0) signed | 23732 | Cloudflare Tunnel (full), ngrok (partial) |
+| [Pangolin](https://github.com/fosrl/pangolin) | TypeScript | Other | [1.26.0](https://github.com/fosrl/pangolin/releases/tag/1.26.0) signed | 23733 | Cloudflare Tunnel (full), ngrok (partial) |
 | [ingress-nginx](https://github.com/kubernetes/ingress-nginx) archived | Go | Apache-2.0 | [controller-v1.15.1](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.15.1) signed | 19436 | none |
 | [rathole](https://github.com/rathole-org/rathole) | Rust | Apache-2.0 | [v0.5.0](https://github.com/rathole-org/rathole/releases/tag/v0.5.0) signed | 14459 | ngrok (partial), frp (full) |
 | [OpenResty](https://github.com/openresty/openresty) | C | Other | [v1.27.1.2](https://github.com/openresty/openresty/releases/tag/v1.27.1.2) | 14131 | nginx (drop-in) |
@@ -26,7 +26,7 @@ Serve sites, terminate TLS and route traffic to services.
 | [Keepalived](https://github.com/acassen/keepalived) | C | GPL-2.0 | [v2.4.3](https://github.com/acassen/keepalived/releases/tag/v2.4.3) | 4743 | none |
 | [Emissary-ingress](https://github.com/emissary-ingress/emissary) | Python | Apache-2.0 | [v4.2.0](https://github.com/emissary-ingress/emissary/releases/tag/v4.2.0) signed | 4526 | ingress-nginx (full), Kong Gateway (partial) |
 | [Octelium](https://github.com/octelium/octelium) | Go | AGPL-3.0 | [v0.51.0](https://github.com/octelium/octelium/releases/tag/v0.51.0) | 4185 | Cloudflare Tunnel (partial) |
-| [Apache HTTP Server](https://github.com/apache/httpd) | C | Apache-2.0 | [2.4.71](https://github.com/apache/httpd/releases/tag/2.4.71) | 4055 | none |
+| [Apache HTTP Server](https://github.com/apache/httpd) | C | Apache-2.0 | [2.4.71](https://github.com/apache/httpd/releases/tag/2.4.71) | 4054 | none |
 | [Contour](https://github.com/projectcontour/contour) | HTML | Apache-2.0 | [v1.33.8](https://github.com/projectcontour/contour/releases/tag/v1.33.8) | 3954 | ingress-nginx (full) |
 | [Sōzu](https://github.com/sozu-proxy/sozu) | Rust | AGPL-3.0 | [2.3.4](https://github.com/sozu-proxy/sozu/releases/tag/2.3.4) signed | 3758 | HAProxy (partial) |
 | [Squid](https://github.com/squid-cache/squid) | C++ | GPL-2.0 | [SQUID_7_8](https://github.com/squid-cache/squid/releases/tag/SQUID_7_8) | 3150 | Apache Traffic Server (partial) |

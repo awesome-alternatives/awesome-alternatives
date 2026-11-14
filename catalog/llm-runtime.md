@@ -4,14 +4,14 @@ Run open-weight language models on your own hardware, behind a local API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ollama](https://github.com/ollama/ollama) | Go | MIT | [v0.40.16](https://github.com/ollama/ollama/releases/tag/v0.40.16) signed | 186951 | ChatGPT (partial), Claude (partial) |
-| [llama.cpp](https://github.com/ggml-org/llama.cpp) | C++ | MIT | [v1.0.0](https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0) | 135018 | ChatGPT (partial), Claude (partial) |
+| [Ollama](https://github.com/ollama/ollama) | Go | MIT | [v0.40.16](https://github.com/ollama/ollama/releases/tag/v0.40.16) signed | 186952 | ChatGPT (partial), Claude (partial) |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) | C++ | MIT | [v1.0.0](https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0) | 135022 | ChatGPT (partial), Claude (partial) |
 | [vLLM](https://github.com/vllm-project/vllm) | Python | Apache-2.0 | [v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) | 96925 | ChatGPT (partial), Claude (partial) |
-| [LocalAI](https://github.com/mudler/LocalAI) | Go | MIT | [v4.12.1](https://github.com/mudler/LocalAI/releases/tag/v4.12.1) | 50365 | ChatGPT (partial), Claude (partial) |
+| [LocalAI](https://github.com/mudler/LocalAI) | Go | MIT | [v4.12.1](https://github.com/mudler/LocalAI/releases/tag/v4.12.1) | 50364 | ChatGPT (partial), Claude (partial) |
 | [exo](https://github.com/exo-explore/exo) | Python | Apache-2.0 | [v1.0.71](https://github.com/exo-explore/exo/releases/tag/v1.0.71) signed | 48399 | Ollama (partial) |
 | [SGLang](https://github.com/sgl-project/sglang) | Python | Apache-2.0 | [v0.5.23](https://github.com/sgl-project/sglang/releases/tag/v0.5.23) | 38865 | vLLM (full), ChatGPT (partial), Claude (partial) |
 | [llamafile](https://github.com/mozilla-ai/llamafile) | C++ | Other | [0.10.6](https://github.com/mozilla-ai/llamafile/releases/tag/0.10.6) signed | 26639 | Ollama (partial) |
-| [MLC LLM](https://github.com/mlc-ai/mlc-llm) | Python | Apache-2.0 | [v0.20.0](https://github.com/mlc-ai/mlc-llm/releases/tag/v0.20.0) | 23418 | Ollama (partial) |
+| [MLC LLM](https://github.com/mlc-ai/mlc-llm) | Python | Apache-2.0 | [v0.20.0](https://github.com/mlc-ai/mlc-llm/releases/tag/v0.20.0) | 23417 | Ollama (partial) |
 | [KTransformers](https://github.com/kvcache-ai/ktransformers) | Python | Apache-2.0 | [v0.7.2](https://github.com/kvcache-ai/ktransformers/releases/tag/v0.7.2) signed | 19671 | llama.cpp (partial) |
 | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Python | Other | [v1.2.1](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1) signed | 15076 | ChatGPT (partial) |
 | [Xinference](https://github.com/xorbitsai/inference) | Python | Apache-2.0 | [v4.2.0](https://github.com/xorbitsai/inference/releases/tag/v4.2.0) signed | 9655 | ChatGPT (partial) |

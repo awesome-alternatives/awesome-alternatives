@@ -12,7 +12,7 @@ Desktop and web clients to browse, edit and query databases.
 | [pgcli](https://github.com/dbcli/pgcli) | Python | BSD-3-Clause | [v4.7.1](https://github.com/dbcli/pgcli/releases/tag/v4.7.1) | 13446 | pgAdmin 4 (partial) |
 | [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | Vue | GPL-3.0 | [v1.2.7](https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7) signed | 13162 | Redis Insight (full), Another Redis Desktop Manager (full) |
 | [mycli](https://github.com/dbcli/mycli) | Python | BSD-3-Clause | [v2.30.4](https://github.com/dbcli/mycli/releases/tag/v2.30.4) signed | 11997 | MySQL Workbench (partial) |
-| [Datasette](https://github.com/simonw/datasette) | Python | Apache-2.0 | [0.65.5](https://github.com/simonw/datasette/releases/tag/0.65.5) | 11567 | none |
+| [Datasette](https://github.com/simonw/datasette) | Python | Apache-2.0 | [0.65.5](https://github.com/simonw/datasette/releases/tag/0.65.5) | 11568 | none |
 | [usql](https://github.com/xo/usql) | Go | MIT | [v0.21.6](https://github.com/xo/usql/releases/tag/v0.21.6) | 10170 | DataGrip (partial) |
 | [Redis Insight](https://github.com/redis/RedisInsight) | TypeScript | Other | [3.8.0](https://github.com/redis/RedisInsight/releases/tag/3.8.0) signed | 8934 | Another Redis Desktop Manager (full) |
 | [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin) | PHP | GPL-2.0 | [RELEASE_5_2_3](https://github.com/phpmyadmin/phpmyadmin/releases/tag/RELEASE_5_2_3) signed | 7973 | Navicat (partial) |

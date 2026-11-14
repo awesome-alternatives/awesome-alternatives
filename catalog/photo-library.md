@@ -4,9 +4,9 @@ Back up, browse and share photos and videos from your phones.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.4.1](https://github.com/immich-app/immich/releases/tag/v3.4.1) | 119161 | Google Photos (full) |
+| [Immich](https://github.com/immich-app/immich) | TypeScript | AGPL-3.0 | [v3.4.1](https://github.com/immich-app/immich/releases/tag/v3.4.1) | 119159 | Google Photos (full) |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | Go | Other | [261029-963b58c50](https://github.com/photoprism/photoprism/releases/tag/261029-963b58c50) | 40448 | Google Photos (partial) |
-| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [photos-v1.3.70](https://github.com/ente/ente/releases/tag/photos-v1.3.70) | 30120 | Google Photos (full) |
+| [Ente Photos](https://github.com/ente/ente) | Dart | AGPL-3.0 | [photos-v1.3.70](https://github.com/ente/ente/releases/tag/photos-v1.3.70) | 30119 | Google Photos (full) |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | Python | MIT | [1.6.0](https://github.com/LibrePhotos/librephotos/releases/tag/1.6.0) signed | 8164 | Google Photos (partial) |
 | [Photoview](https://github.com/photoview/photoview) | Go | AGPL-3.0 | [v2.4.0](https://github.com/photoview/photoview/releases/tag/v2.4.0) signed | 6578 | Google Photos (partial) |
 | [Lychee](https://github.com/LycheeOrg/Lychee) | PHP | MIT | [v7.13.0](https://github.com/LycheeOrg/Lychee/releases/tag/v7.13.0) signed | 4329 | Flickr (partial) |

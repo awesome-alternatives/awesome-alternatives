@@ -12,7 +12,7 @@ Install several versions of a language runtime and switch between them per proje
 | [n](https://github.com/tj/n) | Shell | MIT | [v11.0.0](https://github.com/tj/n/releases/tag/v11.0.0) | 19515 | nvm (full) |
 | [rbenv](https://github.com/rbenv/rbenv) | Shell | MIT | [v1.3.2](https://github.com/rbenv/rbenv/releases/tag/v1.3.2) signed | 16741 | none |
 | [Volta](https://github.com/volta-cli/volta) | Rust | Other | [v2.0.2](https://github.com/volta-cli/volta/releases/tag/v2.0.2) signed | 13055 | nvm (full) |
-| [rustup](https://github.com/rust-lang/rustup) | Rust | Apache-2.0 | [1.29.3](https://github.com/rust-lang/rustup/releases/tag/1.29.3) signed | 7120 | none |
+| [rustup](https://github.com/rust-lang/rustup) | Rust | Apache-2.0 | [1.29.3](https://github.com/rust-lang/rustup/releases/tag/1.29.3) signed | 7119 | none |
 | [SDKMAN!](https://github.com/sdkman/sdkman-cli) | Shell | Apache-2.0 | [5.24.0](https://github.com/sdkman/sdkman-cli/releases/tag/5.24.0) | 6885 | none |
 | [vfox](https://github.com/version-fox/vfox) | Go | Apache-2.0 | [v1.1.0](https://github.com/version-fox/vfox/releases/tag/v1.1.0) | 4017 | asdf (partial) |
 | [proto](https://github.com/moonrepo/proto) | Rust | MIT | [v0.64.0](https://github.com/moonrepo/proto/releases/tag/v0.64.0) | 1454 | Volta (full), nvm (full) |

@@ -4,7 +4,7 @@ Describe the state of servers in code and converge them to it.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.22.0](https://github.com/ansible/ansible/releases/tag/v2.22.0) signed | 71462 | Puppet (full), Chef (full), Salt (full) |
+| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.22.0](https://github.com/ansible/ansible/releases/tag/v2.22.0) signed | 71463 | Puppet (full), Chef (full), Salt (full) |
 | [Salt](https://github.com/saltstack/salt) | Python | Apache-2.0 | [v3007.17](https://github.com/saltstack/salt/releases/tag/v3007.17) signed | 15754 | Puppet (full), Chef (full), Ansible (full) |
 | [AWX](https://github.com/ansible/awx) | Python | Other | [24.6.1](https://github.com/ansible/awx/releases/tag/24.6.1) signed | 15626 | Red Hat Ansible Automation Platform (full) |
 | [Semaphore UI](https://github.com/semaphoreui/semaphore) | Go | MIT | [v2.20.23](https://github.com/semaphoreui/semaphore/releases/tag/v2.20.23) signed | 14411 | Red Hat Ansible Automation Platform (partial) |

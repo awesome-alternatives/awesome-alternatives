@@ -5,7 +5,7 @@ Build internal apps and admin panels on top of databases and APIs.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Appsmith](https://github.com/appsmithorg/appsmith) | TypeScript | Apache-2.0 | [v2.7.0](https://github.com/appsmithorg/appsmith/releases/tag/v2.7.0) signed | 41250 | Retool (full) |
-| [ToolJet](https://github.com/ToolJet/ToolJet) | HTML | AGPL-3.0 | [v3.20.257-lts](https://github.com/ToolJet/ToolJet/releases/tag/v3.20.257-lts) signed | 41230 | Retool (full) |
+| [ToolJet](https://github.com/ToolJet/ToolJet) | HTML | AGPL-3.0 | [v3.20.257-lts](https://github.com/ToolJet/ToolJet/releases/tag/v3.20.257-lts) signed | 41229 | Retool (full) |
 | [Refine](https://github.com/refinedev/refine) | TypeScript | MIT | [@refinedev/core@5.0.12](https://github.com/refinedev/refine/releases/tag/%40refinedev/core%405.0.12) | 36040 | Retool (partial) |
 | [Budibase](https://github.com/Budibase/budibase) | TypeScript | Other | [v4.0.0](https://github.com/Budibase/budibase/releases/tag/v4.0.0) | 28417 | Retool (full) |
 | [react-admin](https://github.com/marmelab/react-admin) | TypeScript | MIT | [v5.15.7](https://github.com/marmelab/react-admin/releases/tag/v5.15.7) | 26992 | Retool (partial) |

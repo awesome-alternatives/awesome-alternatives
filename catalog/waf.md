@@ -4,7 +4,7 @@ Inspect HTTP traffic and block attacks, bots and abuse before they reach an appl
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.28.2](https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2) | 24167 | Cloudflare WAF (partial), hCaptcha (partial), reCAPTCHA (partial) |
+| [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.28.2](https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2) | 24166 | Cloudflare WAF (partial), hCaptcha (partial), reCAPTCHA (partial) |
 | [SafeLine](https://github.com/chaitin/SafeLine) | Go | GPL-3.0 | [v9.4.4](https://github.com/chaitin/SafeLine/releases/tag/v9.4.4) signed | 23286 | Cloudflare WAF (full) |
 | [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9872 | Cloudflare WAF (partial) |
 | [Cap](https://github.com/tiagozip/cap) | JavaScript | Other | [capd@4.0.14](https://github.com/tiagozip/cap/releases/tag/capd%404.0.14) signed | 8404 | reCAPTCHA (full), hCaptcha (full) |

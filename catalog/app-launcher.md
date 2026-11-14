@@ -4,7 +4,7 @@ Open apps and files and run commands from the keyboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PowerToys](https://github.com/microsoft/PowerToys) | C | MIT | [v0.102.3101](https://github.com/microsoft/PowerToys/releases/tag/v0.102.3101) | 140974 | Raycast (partial), Alfred (partial) |
+| [PowerToys](https://github.com/microsoft/PowerToys) | C | MIT | [v0.102.3101](https://github.com/microsoft/PowerToys/releases/tag/v0.102.3101) | 140973 | Raycast (partial), Alfred (partial) |
 | [Wox](https://github.com/Wox-launcher/Wox) | Go | GPL-3.0 | [v2.5.0](https://github.com/Wox-launcher/Wox/releases/tag/v2.5.0) | 27641 | Raycast (full), Alfred (full) |
 | [rofi](https://github.com/davatorium/rofi) | C | Other | [2.1.1](https://github.com/davatorium/rofi/releases/tag/2.1.1) | 16539 | Alfred (partial) |
 | [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) | C# | MIT | [v2.1.4](https://github.com/Flow-Launcher/Flow.Launcher/releases/tag/v2.1.4) signed | 16027 | Raycast (full), Alfred (full) |

@@ -5,9 +5,9 @@ Track accounts, spending and budgets for a person or a household.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Maybe](https://github.com/maybe-finance/maybe) archived | Ruby | AGPL-3.0 | [v0.6.0](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) | 54188 | none |
-| [Actual Budget](https://github.com/actualbudget/actual) | TypeScript | MIT | [v26.11.0](https://github.com/actualbudget/actual/releases/tag/v26.11.0) signed | 30251 | YNAB (full), Mint (partial), Rocket Money (partial) |
+| [Actual Budget](https://github.com/actualbudget/actual) | TypeScript | MIT | [v26.11.0](https://github.com/actualbudget/actual/releases/tag/v26.11.0) signed | 30252 | YNAB (full), Mint (partial), Rocket Money (partial) |
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | PHP | AGPL-3.0 | [v6.7.9](https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.9) | 25247 | YNAB (partial), Mint (full), Monarch Money (partial), Rocket Money (partial) |
-| [Sure](https://github.com/we-promise/sure) | Ruby | AGPL-3.0 | [v0.7.6-hotfix.1](https://github.com/we-promise/sure/releases/tag/v0.7.6-hotfix.1) | 15085 | Maybe (full), Monarch Money (full), YNAB (partial), Mint (full) |
+| [Sure](https://github.com/we-promise/sure) | Ruby | AGPL-3.0 | [v0.7.6-hotfix.1](https://github.com/we-promise/sure/releases/tag/v0.7.6-hotfix.1) | 15095 | Maybe (full), Monarch Money (full), YNAB (partial), Mint (full) |
 | [Ghostfolio](https://github.com/ghostfolio/ghostfolio) | TypeScript | AGPL-3.0 | [3.99.0](https://github.com/ghostfolio/ghostfolio/releases/tag/3.99.0) signed | 9706 | Monarch Money (partial), Empower Personal Dashboard (partial) |
 | [Wealthfolio](https://github.com/wealthfolio/wealthfolio) | Rust | AGPL-3.0 | [v3.13.0](https://github.com/wealthfolio/wealthfolio/releases/tag/v3.13.0) | 9441 | Empower Personal Dashboard (partial) |
 | [Wallos](https://github.com/ellite/Wallos) | PHP | GPL-3.0 | [v5.11.1](https://github.com/ellite/Wallos/releases/tag/v5.11.1) signed | 8838 | Rocket Money (partial) |

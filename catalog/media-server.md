@@ -4,7 +4,7 @@ Stream a personal library of films, series, music and podcasts to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59345 | Plex (full), Emby (full), Netflix (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59346 | Plex (full), Emby (full), Netflix (partial) |
 | [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24726 | Plex (partial), Spotify (partial) |
 | [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17349 | Plex (partial), Spotify (partial) |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.37.2](https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.2) | 15002 | Audible (partial) |
@@ -16,8 +16,8 @@ Stream a personal library of films, series, music and podcasts to your devices.
 | [Music Assistant](https://github.com/music-assistant/server) | Python | Apache-2.0 | [2.10.11](https://github.com/music-assistant/server/releases/tag/2.10.11) | 3330 | Spotify (partial), Sonos (partial) |
 | [Polaris](https://github.com/agersant/polaris) | Rust | MIT | [0.16.1](https://github.com/agersant/polaris/releases/tag/0.16.1) | 2740 | Spotify (partial) |
 | [Tunarr](https://github.com/chrisbenincasa/tunarr) | TypeScript | Zlib | [v2026.11.2](https://github.com/chrisbenincasa/tunarr/releases/tag/v2026.11.2) signed | 2728 | none |
-| [Universal Media Server](https://github.com/UniversalMediaServer/UniversalMediaServer) | Java | GPL-2.0 | [15.9.0](https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0) | 2670 | Netflix (partial), Emby (partial) |
-| [gonic](https://github.com/sentriz/gonic) | Go | GPL-3.0 | [v0.23.0](https://github.com/sentriz/gonic/releases/tag/v0.23.0) signed | 2661 | Spotify (partial) |
+| [Universal Media Server](https://github.com/UniversalMediaServer/UniversalMediaServer) | Java | GPL-2.0 | [15.9.0](https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0) | 2671 | Netflix (partial), Emby (partial) |
+| [gonic](https://github.com/sentriz/gonic) | Go | GPL-3.0 | [v0.23.0](https://github.com/sentriz/gonic/releases/tag/v0.23.0) signed | 2662 | Spotify (partial) |
 | [OwnTone](https://github.com/owntone/owntone-server) | C | GPL-2.0 | [29.3](https://github.com/owntone/owntone-server/releases/tag/29.3) | 2590 | none |
 | [Kyoo](https://github.com/zoriya/Kyoo) | TypeScript | GPL-3.0 | [v5.3.0](https://github.com/zoriya/Kyoo/releases/tag/v5.3.0) signed | 2567 | Plex (full), Netflix (partial) |
 | [mStream](https://github.com/IrosTheBeggar/mStream) | JavaScript | GPL-3.0 | [v6.33.1](https://github.com/IrosTheBeggar/mStream/releases/tag/v6.33.1) | 2432 | Spotify (partial) |

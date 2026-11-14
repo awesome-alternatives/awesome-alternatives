@@ -6,7 +6,7 @@ Keep recipes, plan meals and build shopping lists from them.
 |---|---|---|---|---:|---|
 | [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.31.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.31.0) | 13895 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
 | [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9680 | AnyList (partial) |
-| [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.7.2](https://github.com/TandoorRecipes/recipes/releases/tag/2.7.2) | 8737 | Paprika Recipe Manager (full), Plan to Eat (full) |
+| [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.7.2](https://github.com/TandoorRecipes/recipes/releases/tag/2.7.2) | 8738 | Paprika Recipe Manager (full), Plan to Eat (full) |
 | [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.8.1](https://github.com/TomBursch/kitchenowl/releases/tag/v0.8.1) signed | 3858 | AnyList (full) |
 | [Norish](https://github.com/norish-recipes/norish) | TypeScript | AGPL-3.0 | [v0.26.1-beta](https://github.com/norish-recipes/norish/releases/tag/v0.26.1-beta) signed | 1538 | Paprika Recipe Manager (full) |
 | [CookCLI](https://github.com/cooklang/cookcli) | Rust | MIT | [v0.41.1](https://github.com/cooklang/cookcli/releases/tag/v0.41.1) signed | 1440 | Paprika Recipe Manager (partial) |

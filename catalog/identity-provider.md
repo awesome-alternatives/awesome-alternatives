@@ -5,13 +5,13 @@ Single sign-on, user directories and MFA over OpenID Connect, SAML or LDAP, incl
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Keycloak](https://github.com/keycloak/keycloak) | Java | Apache-2.0 | [26.8.2](https://github.com/keycloak/keycloak/releases/tag/26.8.2) | 37866 | Okta (full), Auth0 (full) |
-| [Authelia](https://github.com/authelia/authelia) | Go | Apache-2.0 | [v4.39.28](https://github.com/authelia/authelia/releases/tag/v4.39.28) signed | 29654 | Okta (partial), Duo (partial) |
+| [Authelia](https://github.com/authelia/authelia) | Go | Apache-2.0 | [v4.39.28](https://github.com/authelia/authelia/releases/tag/v4.39.28) signed | 29653 | Okta (partial), Duo (partial) |
 | [authentik](https://github.com/goauthentik/authentik) | Python | Other | [version/2026.8.5](https://github.com/goauthentik/authentik/releases/tag/version/2026.8.5) | 26347 | Okta (full), Auth0 (full), Keycloak (full) |
 | [Ory Hydra](https://github.com/ory/hydra) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/hydra/releases/tag/v26.2.0) | 17664 | Auth0 (partial) |
 | [ZITADEL](https://github.com/zitadel/zitadel) | Go | AGPL-3.0 | [v4.20.3](https://github.com/zitadel/zitadel/releases/tag/v4.20.3) signed | 15583 | Auth0 (full), Okta (partial) |
 | [SuperTokens](https://github.com/supertokens/supertokens-core) | Java | Other | [v12.5.0](https://github.com/supertokens/supertokens-core/releases/tag/v12.5.0) | 15343 | Auth0 (full), Clerk (partial) |
 | [Logto](https://github.com/logto-io/logto) | TypeScript | MPL-2.0 | [v1.46.0](https://github.com/logto-io/logto/releases/tag/v1.46.0) signed | 14934 | Auth0 (full), Clerk (full) |
-| [Casdoor](https://github.com/casdoor/casdoor) | Go | Apache-2.0 | [v4.27.1](https://github.com/casdoor/casdoor/releases/tag/v4.27.1) | 14853 | Auth0 (full), Okta (partial) |
+| [Casdoor](https://github.com/casdoor/casdoor) | Go | Apache-2.0 | [v4.27.1](https://github.com/casdoor/casdoor/releases/tag/v4.27.1) | 14854 | Auth0 (full), Okta (partial) |
 | [Ory Kratos](https://github.com/ory/kratos) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/kratos/releases/tag/v26.2.0) | 13958 | Auth0 (partial) |
 | [Apereo CAS](https://github.com/apereo/cas) | Java | Apache-2.0 | [v8.0.3](https://github.com/apereo/cas/releases/tag/v8.0.3) | 11399 | Okta (partial) |
 | [Dex](https://github.com/dexidp/dex) | Go | Apache-2.0 | [v2.46.1](https://github.com/dexidp/dex/releases/tag/v2.46.1) signed | 11256 | Okta (partial) |

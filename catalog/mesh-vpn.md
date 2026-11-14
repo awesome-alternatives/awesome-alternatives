@@ -5,8 +5,8 @@ Connect devices and servers in a private WireGuard network, wherever they are.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Headscale](https://github.com/juanfont/headscale) | Go | BSD-3-Clause | [v0.29.7](https://github.com/juanfont/headscale/releases/tag/v0.29.7) | 45695 | Tailscale (partial) |
-| [NetBird](https://github.com/netbirdio/netbird) | Go | Other | [v0.83.1](https://github.com/netbirdio/netbird/releases/tag/v0.83.1) | 30987 | Tailscale (full) |
-| [Nebula](https://github.com/slackhq/nebula) | Go | MIT | [v1.12.0](https://github.com/slackhq/nebula/releases/tag/v1.12.0) signed | 18527 | Tailscale (partial) |
+| [NetBird](https://github.com/netbirdio/netbird) | Go | Other | [v0.83.1](https://github.com/netbirdio/netbird/releases/tag/v0.83.1) | 30988 | Tailscale (full) |
+| [Nebula](https://github.com/slackhq/nebula) | Go | MIT | [v1.12.0](https://github.com/slackhq/nebula/releases/tag/v1.12.0) signed | 18529 | Tailscale (partial) |
 | [ZeroTier](https://github.com/zerotier/ZeroTierOne) | C++ | Other | [1.16.2](https://github.com/zerotier/ZeroTierOne/releases/tag/1.16.2) | 17257 | Tailscale (full) |
 | [EasyTier](https://github.com/EasyTier/EasyTier) | Rust | LGPL-3.0 | [v2.6.4](https://github.com/EasyTier/EasyTier/releases/tag/v2.6.4) signed | 14750 | Tailscale (full) |
 | [Netmaker](https://github.com/gravitl/netmaker) | Go | Other | [v1.7.0](https://github.com/gravitl/netmaker/releases/tag/v1.7.0) signed | 11871 | Tailscale (full) |

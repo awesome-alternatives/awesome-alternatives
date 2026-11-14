@@ -4,22 +4,22 @@ Agents that read a codebase, edit files and run commands from a prompt, and comp
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenCode](https://github.com/anomalyco/opencode) | TypeScript | MIT | [v1.19.5](https://github.com/anomalyco/opencode/releases/tag/v1.19.5) | 226802 | Claude Code (full), GitHub Copilot (partial), Cursor (partial) |
-| [Codex CLI](https://github.com/openai/codex) | Rust | Apache-2.0 | [rust-v0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0) | 135260 | Claude Code (full), GitHub Copilot (partial) |
+| [OpenCode](https://github.com/anomalyco/opencode) | TypeScript | MIT | [v1.19.5](https://github.com/anomalyco/opencode/releases/tag/v1.19.5) | 226804 | Claude Code (full), GitHub Copilot (partial), Cursor (partial) |
+| [Codex CLI](https://github.com/openai/codex) | Rust | Apache-2.0 | [rust-v0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0) | 135264 | Claude Code (full), GitHub Copilot (partial) |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | TypeScript | Apache-2.0 | [v0.68.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0) | 108824 | Claude Code (full), GitHub Copilot (partial) |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | TypeScript | MIT | [v1.40.0](https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0) signed | 93462 | Claude Code (full), GitHub Copilot (partial) |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | TypeScript | MIT | [v1.40.0](https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0) signed | 93461 | Claude Code (full), GitHub Copilot (partial) |
 | [Cline](https://github.com/cline/cline) | TypeScript | Apache-2.0 | [v4.1.26](https://github.com/cline/cline/releases/tag/v4.1.26) | 71620 | Claude Code (partial), GitHub Copilot (partial), Cursor (partial) |
 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Rust | Apache-2.0 | [rust-v0.0.61](https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.61) | 68887 | Claude Code (partial) |
-| [goose](https://github.com/aaif-goose/goose) | Rust | Apache-2.0 | [v1.59.1](https://github.com/aaif-goose/goose/releases/tag/v1.59.1) | 56601 | Claude Code (full), GitHub Copilot (partial) |
+| [goose](https://github.com/aaif-goose/goose) | Rust | Apache-2.0 | [v1.59.1](https://github.com/aaif-goose/goose/releases/tag/v1.59.1) | 56602 | Claude Code (full), GitHub Copilot (partial) |
 | [Aider](https://github.com/Aider-AI/aider) | Python | Apache-2.0 | [v0.86.0](https://github.com/Aider-AI/aider/releases/tag/v0.86.0) | 50119 | Claude Code (partial), GitHub Copilot (partial) |
 | [Continue](https://github.com/continuedev/continue) | TypeScript | Apache-2.0 | [v2.0.0-vscode](https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode) | 36481 | GitHub Copilot (full), Cursor (partial) |
-| [Tabby](https://github.com/TabbyML/tabby) | Rust | Other | [v0.32.0](https://github.com/TabbyML/tabby/releases/tag/v0.32.0) | 33937 | GitHub Copilot (full) |
-| [Qwen Code](https://github.com/QwenLM/qwen-code) | TypeScript | Apache-2.0 | [sdk-typescript-v0.1.33](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.33) | 30182 | Claude Code (full), GitHub Copilot (partial) |
+| [Tabby](https://github.com/TabbyML/tabby) | Rust | Other | [v0.32.0](https://github.com/TabbyML/tabby/releases/tag/v0.32.0) | 33936 | GitHub Copilot (full) |
+| [Qwen Code](https://github.com/QwenLM/qwen-code) | TypeScript | Apache-2.0 | [sdk-typescript-v0.1.33](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.33) | 30193 | Claude Code (full), GitHub Copilot (partial) |
 | [Crush](https://github.com/charmbracelet/crush) | Go | Other | [v0.100.0](https://github.com/charmbracelet/crush/releases/tag/v0.100.0) signed | 29081 | Claude Code (full), GitHub Copilot (partial) |
 | [Kilo Code](https://github.com/Kilo-Org/kilocode) | TypeScript | MIT | [v7.8.27](https://github.com/Kilo-Org/kilocode/releases/tag/v7.8.27) | 27983 | Claude Code (partial), Cursor (partial) |
 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | Python | MIT | [v1.1.0](https://github.com/SWE-agent/SWE-agent/releases/tag/v1.1.0) signed | 20803 | Claude Code (partial) |
 | [avante.nvim](https://github.com/avante-corp/avante.nvim) | Lua | Apache-2.0 | [v0.5.0](https://github.com/avante-corp/avante.nvim/releases/tag/v0.5.0) | 18192 | Cursor (partial), GitHub Copilot (partial) |
-| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | Python | MIT | [v2.4.6](https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.6) signed | 9604 | Claude Code (partial) |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | Python | MIT | [v2.4.6](https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.6) signed | 9605 | Claude Code (partial) |
 | [CodeCompanion.nvim](https://github.com/olimorris/codecompanion.nvim) | Lua | Apache-2.0 | [v20.2.0](https://github.com/olimorris/codecompanion.nvim/releases/tag/v20.2.0) signed | 6940 | GitHub Copilot (partial) |
 | [gptme](https://github.com/gptme/gptme) | Python | MIT | [v0.36.0](https://github.com/gptme/gptme/releases/tag/v0.36.0) | 4478 | Claude Code (partial) |
 | [twinny](https://github.com/twinnydotdev/twinny) | TypeScript | MIT | [v4.0.20](https://github.com/twinnydotdev/twinny/releases/tag/v4.0.20) | 3699 | GitHub Copilot (full) |

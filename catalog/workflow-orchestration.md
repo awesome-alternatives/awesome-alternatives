@@ -15,7 +15,7 @@ Schedule and run data pipelines and jobs as dependency graphs.
 | [Dagster](https://github.com/dagster-io/dagster) | Python | Apache-2.0 | [1.13.30](https://github.com/dagster-io/dagster/releases/tag/1.13.30) | 16423 | Apache Airflow (full) |
 | [Apache DolphinScheduler](https://github.com/apache/dolphinscheduler) | Java | Apache-2.0 | [3.4.3](https://github.com/apache/dolphinscheduler/releases/tag/3.4.3) | 14553 | Apache Airflow (full) |
 | [Mage](https://github.com/mage-ai/mage-ai) | Python | Apache-2.0 | [0.9.80](https://github.com/mage-ai/mage-ai/releases/tag/0.9.80) signed | 8847 | Apache Airflow (partial) |
-| [Flyte](https://github.com/flyteorg/flyte) | Go | Apache-2.0 | [v2.0.55](https://github.com/flyteorg/flyte/releases/tag/v2.0.55) signed | 7837 | Apache Airflow (partial) |
+| [Flyte](https://github.com/flyteorg/flyte) | Go | Apache-2.0 | [v2.0.55](https://github.com/flyteorg/flyte/releases/tag/v2.0.55) signed | 7838 | Apache Airflow (partial) |
 | [PowerJob](https://github.com/PowerJob/PowerJob) | Java | Apache-2.0 | [v5.1.7](https://github.com/PowerJob/PowerJob/releases/tag/v5.1.7) | 7812 | XXL-JOB (full), Quartz (partial) |
 | [Dagu](https://github.com/dagucloud/dagu) | Go | GPL-3.0 | [v2.26.0](https://github.com/dagucloud/dagu/releases/tag/v2.26.0) | 4600 | Apache Airflow (partial) |
 | [Maestro](https://github.com/Netflix/maestro) | Java | Apache-2.0 | none | 3852 | Apache Airflow (partial) |

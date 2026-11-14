@@ -8,7 +8,7 @@ Convert, compress and transcode video, audio and image files between formats.
 | [Pandoc](https://github.com/jgm/pandoc) | Haskell | GPL-2.0 | [3.14](https://github.com/jgm/pandoc/releases/tag/3.14) | 46931 | none |
 | [Squoosh](https://github.com/GoogleChromeLabs/squoosh) | TypeScript | Apache-2.0 | [v1.12.0](https://github.com/GoogleChromeLabs/squoosh/releases/tag/v1.12.0) | 26194 | TinyPNG (partial) |
 | [HandBrake](https://github.com/HandBrake/HandBrake) | C | Other | [1.11.2](https://github.com/HandBrake/HandBrake/releases/tag/1.11.2) signed | 25013 | Adobe Media Encoder (partial), CloudConvert (partial) |
-| [ConvertX](https://github.com/C4illin/ConvertX) | TypeScript | AGPL-3.0 | [v0.20.0](https://github.com/C4illin/ConvertX/releases/tag/v0.20.0) signed | 19716 | CloudConvert (full), Adobe Media Encoder (partial) |
+| [ConvertX](https://github.com/C4illin/ConvertX) | TypeScript | AGPL-3.0 | [v0.20.0](https://github.com/C4illin/ConvertX/releases/tag/v0.20.0) signed | 19718 | CloudConvert (full), Adobe Media Encoder (partial) |
 | [ImageMagick](https://github.com/ImageMagick/ImageMagick) | C | Other | [7.1.2-35](https://github.com/ImageMagick/ImageMagick/releases/tag/7.1.2-35) | 17858 | TinyPNG (partial), CloudConvert (partial) |
 | [VERT](https://github.com/VERT-sh/VERT) | TypeScript | AGPL-3.0 | none | 16253 | CloudConvert (partial) |
 | [Caesium](https://github.com/Lymphatus/caesium-image-compressor) | C++ | GPL-3.0 | [v2.8.5](https://github.com/Lymphatus/caesium-image-compressor/releases/tag/v2.8.5) | 6480 | TinyPNG (full) |

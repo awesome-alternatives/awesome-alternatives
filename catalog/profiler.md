@@ -4,7 +4,7 @@ Measure where a program spends its time and memory, draw it as flame graphs or t
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29272 | none |
+| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29273 | none |
 | [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.15.0](https://github.com/wolfpld/tracy/releases/tag/v0.15.0) signed | 17124 | none |
 | [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.3](https://github.com/benfred/py-spy/releases/tag/v0.4.3) | 15646 | none |
 | [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15417 | none |

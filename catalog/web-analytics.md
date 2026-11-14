@@ -12,7 +12,7 @@ Self-hostable, privacy-friendly site analytics.
 | [Rybbit](https://github.com/rybbit-io/rybbit) | TypeScript | AGPL-3.0 | [v2.9.2](https://github.com/rybbit-io/rybbit/releases/tag/v2.9.2) | 13306 | Google Analytics (full) |
 | [OpenReplay](https://github.com/openreplay/openreplay) | TypeScript | Other | [v1.28.0](https://github.com/openreplay/openreplay/releases/tag/v1.28.0) | 13145 | Hotjar (partial), Mixpanel (partial), Amplitude (partial) |
 | [OpenPanel](https://github.com/Openpanel-dev/openpanel) | TypeScript | AGPL-3.0 | [v3.30.0](https://github.com/Openpanel-dev/openpanel/releases/tag/v3.30.0) signed | 7297 | Mixpanel (full), Amplitude (full) |
-| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6161 | Google Analytics (partial) |
+| [GoatCounter](https://github.com/arp242/goatcounter) | Go | Other | [v2.7.0](https://github.com/arp242/goatcounter/releases/tag/v2.7.0) signed | 6162 | Google Analytics (partial) |
 | [Countly](https://github.com/Countly/countly-server) | JavaScript | Other | [25.03.59](https://github.com/Countly/countly-server/releases/tag/25.03.59) | 5929 | Mixpanel (partial), Amplitude (partial) |
 | [Ackee](https://github.com/electerious/Ackee) | JavaScript | MIT | [v3.7.1](https://github.com/electerious/Ackee/releases/tag/v3.7.1) | 4728 | Google Analytics (partial) |
 | [Swetrix](https://github.com/Swetrix/swetrix) | TypeScript | AGPL-3.0 | [v5.5.3](https://github.com/Swetrix/swetrix/releases/tag/v5.5.3) | 1222 | Google Analytics (partial) |

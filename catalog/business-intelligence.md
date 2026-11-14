@@ -8,7 +8,7 @@ Query databases and build charts and dashboards for the rest of the company.
 | [Metabase](https://github.com/metabase/metabase) | Clojure | Other | [v0.65.4](https://github.com/metabase/metabase/releases/tag/v0.65.4) signed | 50328 | Tableau (partial), Looker (partial), Power BI (partial) |
 | [Redash](https://github.com/getredash/redash) | TypeScript | BSD-2-Clause | [v26.9.0](https://github.com/getredash/redash/releases/tag/v26.9.0) | 28883 | Tableau (partial), Power BI (partial) |
 | [DataEase](https://github.com/dataease/dataease) | Java | Other | [v3.2.1](https://github.com/dataease/dataease/releases/tag/v3.2.1) signed | 24695 | Tableau (partial), Power BI (partial) |
-| [WrenAI](https://github.com/Canner/WrenAI) | Python | Other | [wren-v0.18.0](https://github.com/Canner/WrenAI/releases/tag/wren-v0.18.0) signed | 18214 | Looker (partial) |
+| [WrenAI](https://github.com/Canner/WrenAI) | Python | Other | [wren-v0.18.0](https://github.com/Canner/WrenAI/releases/tag/wren-v0.18.0) signed | 18215 | Looker (partial) |
 | [Evidence](https://github.com/evidence-dev/evidence) | TypeScript | MIT | [@evidence-dev/evidence@40.1.8](https://github.com/evidence-dev/evidence/releases/tag/%40evidence-dev/evidence%4040.1.8) | 7117 | Looker (partial), Hex (partial) |
 | [Lightdash](https://github.com/lightdash/lightdash) | TypeScript | Other | [3.259.1](https://github.com/lightdash/lightdash/releases/tag/3.259.1) | 6231 | Looker (full) |
 | [Blazer](https://github.com/ankane/blazer) | Ruby | MIT | [v3.5.2](https://github.com/ankane/blazer/releases/tag/v3.5.2) | 4808 | Looker (partial) |

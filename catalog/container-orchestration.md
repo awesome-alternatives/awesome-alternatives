@@ -4,7 +4,7 @@ Schedule and run containers across a cluster of machines, from full Kubernetes d
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kubernetes](https://github.com/kubernetes/kubernetes) | Go | Apache-2.0 | [v1.37.2](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2) | 129056 | Amazon EKS (full) |
+| [Kubernetes](https://github.com/kubernetes/kubernetes) | Go | Apache-2.0 | [v1.37.2](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2) | 129057 | Amazon EKS (full) |
 | [Docker Compose](https://github.com/docker/compose) | Go | Apache-2.0 | [v5.7.1](https://github.com/docker/compose/releases/tag/v5.7.1) signed | 38834 | none |
 | [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Jinja | Apache-2.0 | [v2.32.0](https://github.com/kubernetes-sigs/kubespray/releases/tag/v2.32.0) signed | 18839 | Amazon EKS (full) |
 | [Nomad](https://github.com/hashicorp/nomad) | Go | Other | [v2.1.1](https://github.com/hashicorp/nomad/releases/tag/v2.1.1) | 17098 | Kubernetes (partial) |

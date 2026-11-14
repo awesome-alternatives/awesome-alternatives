@@ -6,7 +6,7 @@ Share and update application state across React components.
 |---|---|---|---|---:|---|
 | [Redux](https://github.com/reduxjs/redux) | TypeScript | MIT | [v5.0.1](https://github.com/reduxjs/redux/releases/tag/v5.0.1) | 61436 | none |
 | [Zustand](https://github.com/pmndrs/zustand) | TypeScript | MIT | [v5.1.0](https://github.com/pmndrs/zustand/releases/tag/v5.1.0) | 58922 | Redux (full) |
-| [XState](https://github.com/statelyai/xstate) | TypeScript | MIT | [xstate@5.33.4](https://github.com/statelyai/xstate/releases/tag/xstate%405.33.4) signed | 30465 | none |
+| [XState](https://github.com/statelyai/xstate) | TypeScript | MIT | [xstate@5.33.4](https://github.com/statelyai/xstate/releases/tag/xstate%405.33.4) signed | 30466 | none |
 | [MobX](https://github.com/mobxjs/mobx) | TypeScript | MIT | [mobx-react@10.0.4](https://github.com/mobxjs/mobx/releases/tag/mobx-react%4010.0.4) | 28211 | Redux (full) |
 | [Jotai](https://github.com/pmndrs/jotai) | TypeScript | MIT | [v3.0.2](https://github.com/pmndrs/jotai/releases/tag/v3.0.2) | 21319 | Redux (partial) |
 | [Valtio](https://github.com/pmndrs/valtio) | TypeScript | MIT | [v2.3.2](https://github.com/pmndrs/valtio/releases/tag/v2.3.2) | 10244 | Redux (partial) |
