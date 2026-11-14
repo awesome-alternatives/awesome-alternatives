@@ -1,5 +1,5 @@
 name: PGlite
-repository: https://github.com/electric-sql/pglite
+repository: https://github.com/electric-sql/electric-pglite
 category: relational-database
 replaces:
   - tool: sqlite
