@@ -5692,7 +5692,6 @@
   {"type":"released","slug":"electerm","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"v5.7.5","to":"v5.7.15"},
   {"type":"released","slug":"evcc","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"0.318.0","to":"0.318.1"},
   {"type":"released","slug":"fabric","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"v1.4.553","to":"v1.4.555"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"v7.33.3","to":"v7.33.4"},
   {"type":"released","slug":"findroid","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"v1.1.0","to":"v1.2.0"},
   {"type":"released","slug":"fjall","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"3.1.12","to":"3.1.13"},
   {"type":"released","slug":"fluentd","at":"2026-10-26T05:17:24.074Z","commit":"f0c1c66de8909b619c45ca13361e75b017d8f214","from":"v1.19.4","to":"v1.20.1"},
@@ -8810,5 +8809,6 @@
   {"type":"released","slug":"homer-dashboard","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v26.11.2","to":"v26.11.3"},
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":null},
   {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v1.874.0","to":"v1.875.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":null,"from":"v0.56.3","to":"v0.56.4"}
+  {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":null,"from":"v0.56.3","to":"v0.56.4"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:27:25.021Z","commit":null,"from":"v7.36.1","to":"v7.36.2"}
 ]
