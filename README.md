@@ -317,7 +317,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Autonomous AI agents](catalog/autonomous-agent.md) | 6 | Agents that plan and carry out multi-step tasks on their own, browsing, running code and calling tools. |
 | [AI browser agents](catalog/browser-agent.md) | 8 | Let a language model drive a web browser to navigate sites, fill forms and extract data. |
 | [AI app builders](catalog/ai-app-builder.md) | 5 | Generate and edit a web app or interface from a chat prompt, with a live preview. |
-| [Speech to text](catalog/speech-to-text.md) | 15 | Transcribe recordings, meetings and dictation with speech recognition models on your own hardware. |
+| [Speech to text](catalog/speech-to-text.md) | 16 | Transcribe recordings, meetings and dictation with speech recognition models on your own hardware. |
 | [Text to speech](catalog/text-to-speech.md) | 9 | Generate speech from text, with voice cloning on some models, on your own hardware. |
 | [OCR](catalog/ocr.md) | 5 | Recognise text in scanned documents and images. |
 | [Document parsing](catalog/document-parsing.md) | 5 | Convert PDFs, office files and scans into Markdown or JSON that language models and pipelines can read. |

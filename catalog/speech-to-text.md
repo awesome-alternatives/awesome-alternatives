@@ -18,6 +18,7 @@ Transcribe recordings, meetings and dictation with speech recognition models on 
 | [WhisperLive](https://github.com/collabora/WhisperLive) | Python | MIT | [v0.10.0](https://github.com/collabora/WhisperLive/releases/tag/v0.10.0) signed | 4359 | Amazon Transcribe (partial) |
 | [Speaches](https://github.com/speaches-ai/speaches) | Python | MIT | [v0.9.0-rc.3](https://github.com/speaches-ai/speaches/releases/tag/v0.9.0-rc.3) | 3763 | Amazon Transcribe (partial), ElevenLabs (partial) |
 | [Scriberr](https://github.com/rishikanthc/Scriberr) | Go | MIT | [v1.2.0](https://github.com/rishikanthc/Scriberr/releases/tag/v1.2.0) | 3147 | Otter.ai (partial) |
+| [Anysub](https://github.com/pluja/anysub) | TypeScript | AGPL-3.0 | [v4.2.0](https://github.com/pluja/anysub/releases/tag/v4.2.0) signed | 3107 | Otter.ai (partial) |
 | [Whishper](https://github.com/pluja/whishper) | TypeScript | AGPL-3.0 | [v4.2.0](https://github.com/pluja/anysub/releases/tag/v4.2.0) signed | 3107 | Otter.ai (partial) |
 
 [All categories](../README.md#catalog)

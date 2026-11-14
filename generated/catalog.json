@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2755,
+    "tools": 2756,
     "categories": 344,
     "targets": 923,
     "verified": 6
@@ -27633,6 +27633,119 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "anysub",
+      "name": "Anysub",
+      "repository": "https://github.com/pluja/anysub",
+      "category": "speech-to-text",
+      "replaces": [
+        {
+          "tool": "otter-ai",
+          "fit": "partial",
+          "note": "A self-hosted web app to transcribe, translate and edit subtitles for uploaded audio."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-14T15:29:41.000Z",
+      "editedAt": "2026-11-14T15:29:41.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "pluja/anysub",
+        "description": "Turn audio and video into subtitles with an easy-to-use web UI. Everything runs on your own machine.",
+        "homepage": null,
+        "language": "TypeScript",
+        "license": "AGPL-3.0",
+        "stars": 3107,
+        "forks": 185,
+        "topics": [
+          "ai",
+          "audio-to-text",
+          "golang",
+          "speech-recognition",
+          "speech-to-text",
+          "stt",
+          "subtitles",
+          "sveltekit",
+          "transcription",
+          "ui",
+          "web",
+          "web-whisper",
+          "webapp",
+          "whisper"
+        ],
+        "databaseId": 683336280,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2023-08-26T08:34:13Z",
+        "pushedAt": "2026-11-13T06:47:16Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-14",
+        "stars": [3107]
+      },
+      "release": {
+        "tag": "v4.2.0",
+        "publishedAt": "2026-11-13T06:59:14Z",
+        "url": "https://github.com/pluja/anysub/releases/tag/v4.2.0",
+        "source": "release",
+        "signed": true,
+        "tagOid": "a04a8b07af53cda64dc7eb5d712df3402d0c6476"
+      },
+      "releases": [
+        {
+          "tag": "v4.2.0",
+          "name": "Anysub 4.2.0",
+          "publishedAt": "2026-11-13T06:59:14Z",
+          "url": "https://github.com/pluja/anysub/releases/tag/v4.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.1.0",
+          "name": "Anysub 4.1.0",
+          "publishedAt": "2026-11-12T09:34:43Z",
+          "url": "https://github.com/pluja/anysub/releases/tag/v4.1.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.3",
+          "name": "Anysub 4.0.3",
+          "publishedAt": "2026-11-12T06:34:21Z",
+          "url": "https://github.com/pluja/anysub/releases/tag/v4.0.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.2",
+          "name": "Anysub 4.0.2",
+          "publishedAt": "2026-11-11T14:30:24Z",
+          "url": "https://github.com/pluja/anysub/releases/tag/v4.0.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v4.0.1",
+          "name": "Anysub 4.0.1",
+          "publishedAt": "2026-11-11T04:30:42Z",
+          "url": "https://github.com/pluja/anysub/releases/tag/v4.0.1",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "compose"
+      ]
     },
     {
       "slug": "anything-llm",

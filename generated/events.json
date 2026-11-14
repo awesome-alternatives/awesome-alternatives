@@ -8807,5 +8807,6 @@
   {"type":"released","slug":"terminusdb","at":"2026-11-14T15:05:25.699Z","commit":null,"from":"v12.1.0-rc2","to":"v12.1.0-rc3"},
   {"type":"released","slug":"topaz","at":"2026-11-14T15:05:25.699Z","commit":null,"from":"v0.33.27","to":"v0.33.28"},
   {"type":"released","slug":"uptrace","at":"2026-11-14T15:05:25.699Z","commit":null,"from":"v2.1.0-rc.3","to":"v2.1.0"},
-  {"type":"released","slug":"windmill","at":"2026-11-14T15:05:25.699Z","commit":null,"from":"v1.873.1","to":"v1.874.0"}
+  {"type":"released","slug":"windmill","at":"2026-11-14T15:05:25.699Z","commit":null,"from":"v1.873.1","to":"v1.874.0"},
+  {"type":"added","slug":"anysub","at":"2026-11-14T15:30:45.212Z","commit":null}
 ]
