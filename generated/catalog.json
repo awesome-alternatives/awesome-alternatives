@@ -98329,27 +98329,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-14T16:25:37Z",
+        "pushedAt": "2026-11-14T16:44:30Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-15T16:27:00.459Z"
+        "since": "2026-10-15T16:57:52.630Z"
       },
       "starHistory": {
         "from": "2026-10-14",
         "stars": [7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.2",
-        "publishedAt": "2026-11-14T16:26:21Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.2",
+        "tag": "v7.36.3",
+        "publishedAt": "2026-11-14T16:57:11Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.3",
         "source": "release",
         "signed": true,
-        "tagOid": "534e35ef5a1d0ae8fadcdb7f6c22e9872c545bbf"
+        "tagOid": "3d883bf0dad6bcfa25af518e923df5b4fe640ac3"
       },
       "releases": [
+        {
+          "tag": "v7.36.3",
+          "name": "perf(commits): replace regexes in commit parsing and tag detection with hand-written parsers (#1399)",
+          "publishedAt": "2026-11-14T16:57:11Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.3",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.2",
           "name": "perf(commits): decode commit messages only for commits that survive scoping (#1397)",
@@ -98376,13 +98383,6 @@
           "name": "refactor(npm): drop void operator from type checks (#1382)",
           "publishedAt": "2026-11-09T16:46:24Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.6",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.35.5",
-          "name": "fix(check): validate every versioned file selector before release (#1378)",
-          "publishedAt": "2026-11-09T16:16:23Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.5",
           "prerelease": false
         }
       ],

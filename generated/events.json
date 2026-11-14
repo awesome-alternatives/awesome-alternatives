@@ -5788,7 +5788,6 @@
   {"type":"released","slug":"fabric","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"v1.4.555","to":"v1.4.556"},
   {"type":"released","slug":"faraday","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"v5.25.1","to":"v5.25.2"},
   {"type":"released","slug":"featurevisor","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"v4.2.0","to":"v4.3.0"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"v7.33.4","to":"v7.34.1"},
   {"type":"released","slug":"firefox","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"FIREFOX_160_0b1_BUILD1","to":"FIREFOX_160_0b1_BUILD2"},
   {"type":"released","slug":"flagd","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"core/v0.19.0","to":"core/v0.19.1"},
   {"type":"released","slug":"flux","at":"2026-10-27T05:17:15.563Z","commit":"9cadd3df6b0a56ebdcabda368ffd39fd996cfbc6","from":"v2.9.6","to":"v2.10.0"},
@@ -8810,5 +8809,6 @@
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":null},
   {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v1.874.0","to":"v1.875.0"},
   {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":null,"from":"v0.56.3","to":"v0.56.4"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:27:25.021Z","commit":null,"from":"v7.36.1","to":"v7.36.2"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:27:25.021Z","commit":null,"from":"v7.36.1","to":"v7.36.2"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:58:16.440Z","commit":null,"from":"v7.36.2","to":"v7.36.3"}
 ]
