@@ -4,6 +4,14 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.47] - 2026-11-14
+
+### Bug Fixes
+
+- chore(catalog): refresh replayowl
+- chore(catalog): refresh pyrefly
+- chore(catalog): refresh pglite
+
 ## [0.141.46] - 2026-11-14
 
 ### Bug Fixes
