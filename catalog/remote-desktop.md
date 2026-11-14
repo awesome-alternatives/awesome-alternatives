@@ -5,7 +5,7 @@ Control another computer over the network, for support or remote work.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [RustDesk](https://github.com/rustdesk/rustdesk) | Rust | AGPL-3.0 | [1.5.1](https://github.com/rustdesk/rustdesk/releases/tag/1.5.1) | 129380 | TeamViewer (full), AnyDesk (full) |
-| [Sunshine](https://github.com/LizardByte/Sunshine) | C++ | GPL-3.0 | [v2026.914.233613](https://github.com/SunshineStream/Sunshine/releases/tag/v2026.914.233613) signed | 43371 | Parsec (partial) |
+| [Sunshine](https://github.com/SunshineStream/Sunshine) | C++ | GPL-3.0 | [v2026.914.233613](https://github.com/SunshineStream/Sunshine/releases/tag/v2026.914.233613) signed | 43398 | Parsec (partial) |
 | [Moonlight](https://github.com/moonlight-stream/moonlight-qt) | C++ | GPL-3.0 | [v6.2.0](https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0) | 19513 | Parsec (partial) |
 | [noVNC](https://github.com/novnc/noVNC) | JavaScript | Other | [v1.7.0](https://github.com/novnc/noVNC/releases/tag/v1.7.0) | 14202 | TeamViewer (partial) |
 | [Apollo](https://github.com/ClassicOldSong/Apollo) | C++ | GPL-3.0 | [v0.4.6](https://github.com/ClassicOldSong/Apollo/releases/tag/v0.4.6) signed | 11535 | Parsec (partial) |

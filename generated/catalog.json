@@ -285891,7 +285891,7 @@
     {
       "slug": "sunshine",
       "name": "Sunshine",
-      "repository": "https://github.com/LizardByte/Sunshine",
+      "repository": "https://github.com/SunshineStream/Sunshine",
       "category": "remote-desktop",
       "replaces": [
         {
@@ -285903,7 +285903,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-09-25T07:12:24.000Z",
-      "editedAt": "2026-09-25T07:12:24.000Z",
+      "editedAt": "2026-11-14T15:03:54.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "SunshineStream/Sunshine",
@@ -285911,8 +285911,8 @@
         "homepage": "https://sunshine.lizardbyte.dev",
         "language": "C++",
         "license": "GPL-3.0",
-        "stars": 43371,
-        "forks": 2385,
+        "stars": 43398,
+        "forks": 2388,
         "topics": [
           "game-stream",
           "game-streaming",
@@ -285926,17 +285926,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2021-12-15T23:38:57Z",
-        "pushedAt": "2026-11-14T00:19:45Z",
+        "pushedAt": "2026-11-14T13:57:11Z",
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 1171,
+        "stars": 1198,
         "exact": true,
-        "since": "2026-10-15T05:17:27.818Z"
+        "since": "2026-10-15T15:04:33.715Z"
       },
       "starHistory": {
         "from": "2026-10-14",
-        "stars": [42200,42231,42271,42290,42325,42362,42428,42449,42496,42531,42565,42608,42637,42705,42724,42781,42791,42842,42859,42895,42956,42975,43013,43049,43084,43156,43192,43219,43245,43285,43321,43371]
+        "stars": [42200,42231,42271,42290,42325,42362,42428,42449,42496,42531,42565,42608,42637,42705,42724,42781,42791,42842,42859,42895,42956,42975,43013,43049,43084,43156,43192,43219,43245,43285,43321,43398]
       },
       "release": {
         "tag": "v2026.914.233613",
@@ -286024,9 +286024,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": [
