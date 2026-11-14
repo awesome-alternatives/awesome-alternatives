@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "Acerca de: marcas, niveles de sustitución y la actualización nocturna",
     description:
       "Qué declara una entrada del catálogo, qué se lee de GitHub cada noche y la regla detrás de cada marca que se muestra en una herramienta.",
-    eyebrow: "Acerca de",
     heading: "Lo que dice el catálogo, y cómo lo sabe.",
     lede: "{toolCount} herramientas de desarrollo, cada una con lo que sustituye. El resto de lo que ves en una herramienta viene de GitHub, no de quien la añadió.",
     entries: {
@@ -136,7 +135,6 @@ export const pages: Pages = {
   privacy: {
     title: "Política de privacidad",
     description: "Qué trata awesome-alternatives.com sobre sus visitantes, y por qué.",
-    eyebrow: "Legal",
     heading: "Política de privacidad",
     lede: "El sitio no instala cookies, no guarda nada en tu navegador, no ejecuta analítica y no carga scripts ni tipografías de terceros. Todas las páginas, los scripts y las tipografías vienen de awesome-alternatives.com; la única excepción son las imágenes dentro del README de un proyecto, descritas en «Detalles del repositorio». No hay nada que consentir, así que no hay banner de consentimiento. Si eso cambia alguna vez, esta página y un mecanismo de consentimiento cambian primero. Última actualización: {lastUpdated}.",
     legitimateInterest: "Interés legítimo (RGPD art. 6(1)(f))",
@@ -223,7 +221,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "Aviso legal",
     description: "Quién publica y aloja awesome-alternatives.com.",
-    eyebrow: "Legal",
     heading: "Aviso legal",
     lede: "Publicado en virtud del artículo 6 III de la ley francesa n.º 2004-575 de 21 de junio de 2004 para la confianza en la economía digital (LCEN). Última actualización: {lastUpdated}.",
     facts: {
@@ -265,7 +262,6 @@ export const pages: Pages = {
   contact: {
     title: "Contacto",
     description: "Cómo contactar con las personas detrás de awesome-alternatives.com, y dónde avanza más rápido cada tipo de petición.",
-    eyebrow: "Contacto",
     heading: "Contacto",
     lede: "El catálogo se mantiene en abierto en GitHub, así que la mayoría de las peticiones avanzan más rápido allí. Para todo lo demás, usa el formulario al final de esta página o escribe a",
     catalog: {

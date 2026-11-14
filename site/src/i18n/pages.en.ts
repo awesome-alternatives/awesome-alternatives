@@ -3,7 +3,6 @@ export const pages = {
     title: "About: marks, fit levels and the nightly refresh",
     description:
       "What an entry in the catalog states, what is read from GitHub every night, and the rule behind every mark shown on a tool.",
-    eyebrow: "About",
     heading: "What the catalog says, and how it knows.",
     lede: "{toolCount} developer tools, each listed with what it replaces. The rest of what you see on a tool comes from GitHub, not from whoever added it.",
     entries: {
@@ -134,7 +133,6 @@ export const pages = {
   privacy: {
     title: "Privacy policy",
     description: "What awesome-alternatives.com processes about its visitors, and why.",
-    eyebrow: "Legal",
     heading: "Privacy policy",
     lede: 'The site sets no cookies, stores nothing in your browser, runs no analytics and loads no third-party scripts or fonts. Every page, script and font comes from awesome-alternatives.com; the one exception is the images inside a project\'s README, described under "Repository details". There is nothing to consent to, so there is no consent banner. If that ever changes, this page and a consent mechanism change first. Last updated {lastUpdated}.',
     legitimateInterest: "Legitimate interest (GDPR art. 6(1)(f))",
@@ -221,7 +219,6 @@ export const pages = {
   legalNotice: {
     title: "Legal notice",
     description: "Who publishes and hosts awesome-alternatives.com.",
-    eyebrow: "Legal",
     heading: "Legal notice",
     lede: "Published under article 6 III of the French law n° 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN). Last updated {lastUpdated}.",
     facts: {
@@ -263,7 +260,6 @@ export const pages = {
   contact: {
     title: "Contact",
     description: "How to reach the people behind awesome-alternatives.com, and where each kind of request goes fastest.",
-    eyebrow: "Contact",
     heading: "Get in touch",
     lede: "The catalog is maintained in the open on GitHub, so most requests go faster there. For anything else, use the form at the bottom of this page or write to",
     catalog: {

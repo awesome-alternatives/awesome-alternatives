@@ -24,7 +24,6 @@ const mcpUrl = new URL("/api/mcp", Astro.site).href;
 
 <Base title={m.title} description={m.description}>
   <section class="hero">
-    <p class="eyebrow">{m.eyebrow}</p>
     <h1>{m.heading}</h1>
     <p class="lede">{format(m.lede, { toolCount: tools.length })}</p>
   </section>

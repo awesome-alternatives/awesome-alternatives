@@ -47,7 +47,6 @@ export const ja: Messages = {
     title: "awesome-alternatives：今使っている開発ツールの代替を探す",
     description:
       "開発ツールの代替を、言語、ライセンス、置き換えの度合いで検索できます。スター数、リリース、署名は GitHub から直接取得しています。",
-    eyebrow: "今使っているツールの代替を探す",
     heading: "使っているツールと、求めるものを入力してください。",
     lede: "{count}件のツール。リリース情報は毎晩 GitHub から取得し、手入力は一切ありません",
     noscriptBefore: "検索には JavaScript が必要です。すべてのツールは下に掲載しています：",
@@ -311,7 +310,6 @@ export const ja: Messages = {
     title: "awesome-alternatives にツールを追加する",
     description:
       "開発ツールをカタログに掲載する方法：YAML エントリの書き方、CI のチェック内容、メンテナーによるツールの確認方法。",
-    eyebrow: "コントリビュート",
     heading: "ツールを追加",
     lede: "各エントリはリポジトリ内の短い YAML ファイルです。プルリクエストで自分で書くか、Issue でツールを説明すればメンテナーが代わりに書きます。",
     openPullRequest: "プルリクエストを作成 ↗",
@@ -341,7 +339,6 @@ export const ja: Messages = {
     title: "カタログの変更履歴：ライセンス、アーカイブ、リリース",
     description:
       "awesome-alternatives カタログの変更を日付順にまとめた一覧：ライセンス変更、リポジトリの名称変更とアーカイブ、新しいリリース、ツールの追加と削除。",
-    eyebrow: "変更",
     heading: "変更履歴",
     lede: "更新のたびにカタログを前回のものと比較し、変わった点を記録します。スター数の変化は変更として扱いません。",
     feedLink: "すべての変更の RSS フィード",

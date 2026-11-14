@@ -47,7 +47,6 @@ export const es: Messages = {
     title: "awesome-alternatives: encuentra lo que sustituye a la herramienta que usas",
     description:
       "Busca una alternativa a una herramienta de desarrollo por lenguaje, licencia y nivel de sustitución. Las estrellas, las versiones y las firmas vienen directamente de GitHub.",
-    eyebrow: "Encuentra lo que sustituye a la herramienta que usas",
     heading: "Di qué usas y qué necesitas.",
     lede: "{count} herramientas, con datos de versiones extraídos de GitHub cada noche, nunca escritos a mano",
     noscriptBefore: "La búsqueda necesita JavaScript. Todas las herramientas están listadas abajo: ",
@@ -314,7 +313,6 @@ export const es: Messages = {
     title: "Añadir una herramienta a awesome-alternatives",
     description:
       "Cómo incluir una herramienta de desarrollo en el catálogo: la entrada YAML, lo que comprueba la CI y cómo los mantenedores verifican su herramienta.",
-    eyebrow: "Contribuir",
     heading: "Añadir una herramienta",
     lede: "Cada entrada es un pequeño archivo YAML en el repositorio. Escríbela tú en un pull request, o describe la herramienta en una issue y un mantenedor la escribe por ti.",
     openPullRequest: "Abrir un pull request ↗",
@@ -344,7 +342,6 @@ export const es: Messages = {
     title: "Qué ha cambiado en el catálogo: licencias, archivos, releases",
     description:
       "La lista fechada de lo que ha cambiado en el catálogo awesome-alternatives: cambios de licencia, repositorios renombrados o archivados, nuevas releases, herramientas que entran o salen.",
-    eyebrow: "Cambios",
     heading: "Qué ha cambiado",
     lede: "Cada refresh compara el catálogo con el anterior y guarda lo que cambió. El número de estrellas nunca cuenta como un cambio.",
     feedLink: "Feed RSS de todos los cambios",

@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "概要：マーク、置き換えの度合い、毎晩の更新",
     description:
       "カタログのエントリに書かれている内容、毎晩 GitHub から取得する情報、ツールに表示される各マークの基準。",
-    eyebrow: "概要",
     heading: "カタログが示す内容と、その根拠。",
     lede: "{toolCount}件の開発ツールを、それぞれが置き換えるツールとともに掲載しています。ツールについてそれ以外に表示される情報は GitHub から取得したもので、追加した人が書いたものではありません。",
     entries: {
@@ -136,7 +135,6 @@ export const pages: Pages = {
   privacy: {
     title: "プライバシーポリシー",
     description: "awesome-alternatives.com が訪問者について処理する情報とその理由。",
-    eyebrow: "法的情報",
     heading: "プライバシーポリシー",
     lede: "本サイトは Cookie を設定せず、ブラウザに何も保存せず、アクセス解析を行わず、サードパーティのスクリプトやフォントも読み込みません。すべてのページ、スクリプト、フォントは awesome-alternatives.com から配信しています。唯一の例外はプロジェクトの README 内の画像で、「リポジトリの詳細」で説明しています。同意を求めるものが何もないため、同意バナーもありません。これが変わる場合は、先にこのページと同意の仕組みを変更します。最終更新日：{lastUpdated}。",
     legitimateInterest: "正当な利益（GDPR 第6条1項(f)）",
@@ -223,7 +221,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "運営者情報",
     description: "awesome-alternatives.com の発行者とホスティング事業者。",
-    eyebrow: "法的情報",
     heading: "運営者情報",
     lede: "デジタル経済における信頼に関する2004年6月21日のフランス法第2004-575号（LCEN）第6条 III に基づいて掲載しています。最終更新日：{lastUpdated}。",
     facts: {
@@ -265,7 +262,6 @@ export const pages: Pages = {
   contact: {
     title: "お問い合わせ",
     description: "awesome-alternatives.com の運営者への連絡方法と、問い合わせの種類ごとに最も早く対応できる窓口。",
-    eyebrow: "お問い合わせ",
     heading: "お問い合わせ",
     lede: "カタログは GitHub で公開して管理しているため、ほとんどの依頼はそちらの方が早く進みます。それ以外は、このページ下部のフォームを使うか、次のアドレスまでご連絡ください：",
     catalog: {

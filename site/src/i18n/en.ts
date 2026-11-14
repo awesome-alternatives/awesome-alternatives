@@ -46,7 +46,6 @@ export const en = {
     title: "awesome-alternatives: find what replaces the tool you use",
     description:
       "Search for an alternative to a developer tool by language, licence and fit. Stars, releases and signatures come straight from GitHub.",
-    eyebrow: "Find what replaces the tool you use",
     heading: "Say what you use and what you need.",
     lede: "{count} tools, release data pulled from GitHub nightly, never typed by hand",
     noscriptBefore: "Search needs JavaScript. Every tool is listed below: ",
@@ -310,7 +309,6 @@ export const en = {
     title: "Add a tool to awesome-alternatives",
     description:
       "How to list a developer tool in the catalog: the YAML entry, what CI checks, how maintainers verify their tool.",
-    eyebrow: "Contribute",
     heading: "Add a tool",
     lede: "Every entry is a short YAML file in the repository. Write it yourself in a pull request, or describe the tool in an issue and a maintainer writes it for you.",
     openPullRequest: "Open a pull request ↗",
@@ -340,7 +338,6 @@ export const en = {
     title: "What changed in the catalog: licences, archives, releases",
     description:
       "A dated list of what changed in the awesome-alternatives catalog: licence changes, renamed and archived repositories, new releases, tools joining or leaving.",
-    eyebrow: "Changes",
     heading: "What changed",
     lede: "Each refresh compares the catalog with the one before and keeps what changed. Star counts never count as a change.",
     feedLink: "RSS feed of every change",

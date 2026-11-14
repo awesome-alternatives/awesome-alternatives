@@ -47,7 +47,6 @@ export const id: Messages = {
     title: "awesome-alternatives: temukan pengganti alat yang Anda pakai",
     description:
       "Cari alternatif tool developer berdasarkan bahasa, lisensi, dan tingkat kecocokan. Bintang, rilis, dan tanda tangan diambil langsung dari GitHub.",
-    eyebrow: "Temukan pengganti alat yang Anda pakai",
     heading: "Sebutkan apa yang Anda pakai dan apa yang Anda butuhkan.",
     lede: "{count} alat, data rilis diambil dari GitHub setiap malam, tidak pernah diketik manual",
     noscriptBefore: "Pencarian membutuhkan JavaScript. Semua alat tercantum di bawah: ",
@@ -311,7 +310,6 @@ export const id: Messages = {
     title: "Tambahkan alat ke awesome-alternatives",
     description:
       "Cara mencantumkan tool developer di katalog: entri YAML, apa yang diperiksa CI, dan cara maintainer memverifikasi alatnya.",
-    eyebrow: "Berkontribusi",
     heading: "Tambah alat",
     lede: "Setiap entri adalah file YAML singkat di repositori. Tulis sendiri lewat pull request, atau jelaskan alatnya di sebuah issue dan maintainer akan menuliskannya untuk Anda.",
     openPullRequest: "Buka pull request ↗",
@@ -341,7 +339,6 @@ export const id: Messages = {
     title: "Apa yang berubah di katalog: lisensi, arsip, rilis",
     description:
       "Daftar bertanggal tentang apa yang berubah di katalog awesome-alternatives: perubahan lisensi, repositori yang diganti nama dan diarsipkan, rilis baru, alat yang masuk atau keluar.",
-    eyebrow: "Perubahan",
     heading: "Apa yang berubah",
     lede: "Setiap pembaruan membandingkan katalog dengan versi sebelumnya dan mencatat apa yang berubah. Jumlah bintang tidak pernah dihitung sebagai perubahan.",
     feedLink: "Feed RSS semua perubahan",

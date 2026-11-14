@@ -5,7 +5,6 @@ export const pages: Pages = {
     title: "Sobre: selos, tipos de substituição e a atualização noturna",
     description:
       "O que uma entrada do catálogo afirma, o que é lido do GitHub toda noite e a regra por trás de cada selo exibido em uma ferramenta.",
-    eyebrow: "Sobre",
     heading: "O que o catálogo diz, e como ele sabe.",
     lede: "{toolCount} ferramentas de desenvolvimento, cada uma listada com o que substitui. O resto do que você vê em uma ferramenta vem do GitHub, não de quem a adicionou.",
     entries: {
@@ -136,7 +135,6 @@ export const pages: Pages = {
   privacy: {
     title: "Política de privacidade",
     description: "O que o awesome-alternatives.com trata sobre seus visitantes, e por quê.",
-    eyebrow: "Jurídico",
     heading: "Política de privacidade",
     lede: 'O site não define cookies, não armazena nada no seu navegador, não executa nenhuma ferramenta de analytics e não carrega scripts nem fontes de terceiros. Cada página, script e fonte vem de awesome-alternatives.com; a única exceção são as imagens dentro do README de um projeto, descritas em "Detalhes do repositório". Não há nada a consentir, então não há banner de consentimento. Se isso um dia mudar, esta página e um mecanismo de consentimento mudam primeiro. Última atualização em {lastUpdated}.',
     legitimateInterest: "Legítimo interesse (GDPR, art. 6(1)(f))",
@@ -223,7 +221,6 @@ export const pages: Pages = {
   legalNotice: {
     title: "Aviso legal",
     description: "Quem publica e hospeda o awesome-alternatives.com.",
-    eyebrow: "Jurídico",
     heading: "Aviso legal",
     lede: "Publicado nos termos do artigo 6 III da lei francesa n° 2004-575, de 21 de junho de 2004, para a confiança na economia digital (LCEN). Última atualização em {lastUpdated}.",
     facts: {
@@ -265,7 +262,6 @@ export const pages: Pages = {
   contact: {
     title: "Contato",
     description: "Como falar com as pessoas por trás do awesome-alternatives.com, e para onde cada tipo de pedido vai mais rápido.",
-    eyebrow: "Contato",
     heading: "Fale com a gente",
     lede: "O catálogo é mantido de forma aberta no GitHub, então a maioria dos pedidos anda mais rápido lá. Para qualquer outra coisa, use o formulário no fim desta página ou escreva para",
     catalog: {
