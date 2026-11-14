@@ -4,14 +4,14 @@ Install command-line tools and applications on macOS, Windows or Linux from pack
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.13](https://github.com/Homebrew/brew/releases/tag/7.0.13) signed | 50386 | none |
-| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26584 | Chocolatey (full) |
-| [Scoop](https://github.com/ScoopInstaller/Scoop) | PowerShell | Other | [v0.6.0](https://github.com/ScoopInstaller/Scoop/releases/tag/v0.6.0) signed | 24807 | Chocolatey (partial) |
-| [Nix](https://github.com/NixOS/nix) | C++ | LGPL-2.1 | [2.35.6](https://github.com/NixOS/nix/releases/tag/2.35.6) signed | 18003 | Homebrew (partial) |
-| [Chocolatey](https://github.com/chocolatey/choco) | C# | Other | [2.7.5](https://github.com/chocolatey/choco/releases/tag/2.7.5) signed | 11566 | none |
-| [pkgx](https://github.com/pkgxdev/pkgx) | Rust | Apache-2.0 | [v2.11.0](https://github.com/pkgxdev/pkgx/releases/tag/v2.11.0) signed | 9932 | Homebrew (partial), asdf (partial) |
+| [Homebrew](https://github.com/Homebrew/brew) | Ruby | BSD-2-Clause | [7.0.13](https://github.com/Homebrew/brew/releases/tag/7.0.13) signed | 50328 | none |
+| [WinGet](https://github.com/microsoft/winget-cli) | C++ | MIT | [v1.29.380](https://github.com/microsoft/winget-cli/releases/tag/v1.29.380) signed | 26603 | Chocolatey (full) |
+| [Scoop](https://github.com/ScoopInstaller/Scoop) | PowerShell | Other | [v0.6.0](https://github.com/ScoopInstaller/Scoop/releases/tag/v0.6.0) signed | 24811 | Chocolatey (partial) |
+| [Nix](https://github.com/NixOS/nix) | C++ | LGPL-2.1 | [2.35.6](https://github.com/NixOS/nix/releases/tag/2.35.6) signed | 18023 | Homebrew (partial) |
+| [Chocolatey](https://github.com/chocolatey/choco) | C# | Other | [2.7.5](https://github.com/chocolatey/choco/releases/tag/2.7.5) signed | 11565 | none |
+| [pkgx](https://github.com/pkgxdev/pkgx) | Rust | Apache-2.0 | [v2.11.0](https://github.com/pkgxdev/pkgx/releases/tag/v2.11.0) signed | 9933 | Homebrew (partial), asdf (partial) |
 | [Flatpak](https://github.com/flatpak/flatpak) | C | LGPL-2.1 | [1.18.4](https://github.com/flatpak/flatpak/releases/tag/1.18.4) | 5110 | none |
-| [snapd](https://github.com/canonical/snapd) | Go | GPL-3.0 | [2.78](https://github.com/canonical/snapd/releases/tag/2.78) signed | 2055 | none |
-| [DNF](https://github.com/rpm-software-management/dnf) | Python | GPL-2.0 | [4.24.0](https://github.com/rpm-software-management/dnf/releases/tag/4.24.0) signed | 1383 | none |
+| [snapd](https://github.com/canonical/snapd) | Go | GPL-3.0 | [2.78](https://github.com/canonical/snapd/releases/tag/2.78) signed | 2056 | none |
+| [DNF](https://github.com/rpm-software-management/dnf) | Python | GPL-2.0 | [4.24.0](https://github.com/rpm-software-management/dnf/releases/tag/4.24.0) signed | 1384 | none |
 
 [All categories](../README.md#catalog)

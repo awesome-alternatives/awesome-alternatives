@@ -4,28 +4,28 @@ Run an online store, from catalogue to checkout, or ring up in-store sales and p
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.22.6](https://github.com/medusajs/medusa/releases/tag/v2.22.6) signed | 37172 | Shopify (partial) |
-| [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.5.1](https://github.com/bagisto/bagisto/releases/tag/v2.5.1) | 28355 | Shopify (full) |
-| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.48](https://github.com/saleor/saleor/releases/tag/3.23.48) signed | 23540 | Shopify (partial) |
-| [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v6.0.3](https://github.com/spree/spree/releases/tag/v6.0.3) signed | 15827 | Shopify (full) |
-| [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.10-alpha1](https://github.com/magento/magento2/releases/tag/2.4.10-alpha1) | 12229 | Shopify (full) |
-| [WooCommerce](https://github.com/woocommerce/woocommerce) | PHP | GPL-2.0 | [11.2.2](https://github.com/woocommerce/woocommerce/releases/tag/11.2.2) signed | 10589 | Shopify (full) |
-| [EverShop](https://github.com/evershopcommerce/evershop) | TypeScript | GPL-3.0 | [v2.4.0](https://github.com/evershopcommerce/evershop/releases/tag/v2.4.0) | 10545 | Shopify (full) |
-| [nopCommerce](https://github.com/nopSolutions/nopCommerce) | C# | Other | [release-5.00.1](https://github.com/nopSolutions/nopCommerce/releases/tag/release-5.00.1) | 10183 | Shopify (full) |
+| [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.22.7](https://github.com/medusajs/medusa/releases/tag/v2.22.7) signed | 37231 | Shopify (partial) |
+| [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.5.1](https://github.com/bagisto/bagisto/releases/tag/v2.5.1) | 28368 | Shopify (full) |
+| [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.49](https://github.com/saleor/saleor/releases/tag/3.23.49) signed | 23571 | Shopify (partial) |
+| [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v6.0.4](https://github.com/spree/spree/releases/tag/v6.0.4) signed | 15835 | Shopify (full) |
+| [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.10-alpha1](https://github.com/magento/magento2/releases/tag/2.4.10-alpha1) | 12234 | Shopify (full) |
+| [WooCommerce](https://github.com/woocommerce/woocommerce) | PHP | GPL-2.0 | [11.2.2](https://github.com/woocommerce/woocommerce/releases/tag/11.2.2) signed | 10599 | Shopify (full) |
+| [EverShop](https://github.com/evershopcommerce/evershop) | TypeScript | GPL-3.0 | [v2.4.0](https://github.com/evershopcommerce/evershop/releases/tag/v2.4.0) | 10552 | Shopify (full) |
+| [nopCommerce](https://github.com/nopSolutions/nopCommerce) | C# | Other | [release-5.00.1](https://github.com/nopSolutions/nopCommerce/releases/tag/release-5.00.1) | 10186 | Shopify (full) |
 | [PrestaShop](https://github.com/PrestaShop/PrestaShop) | PHP | Other | [9.2.1](https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1) signed | 9256 | Shopify (full) |
-| [Aimeos](https://github.com/aimeos/aimeos-laravel) | PHP | MIT | [2026.10.2](https://github.com/aimeos/aimeos-laravel/releases/tag/2026.10.2) | 8715 | Shopify (partial) |
-| [Vendure](https://github.com/vendurehq/vendure) | TypeScript | Other | [v3.8.1](https://github.com/vendurehq/vendure/releases/tag/v3.8.1) | 8577 | Shopify (partial) |
-| [Sylius](https://github.com/Sylius/Sylius) | PHP | MIT | [v2.3.2](https://github.com/Sylius/Sylius/releases/tag/v2.3.2) signed | 8570 | Shopify (partial) |
-| [OpenCart](https://github.com/opencart/opencart) | PHP | Other | [4.1.0.4](https://github.com/opencart/opencart/releases/tag/4.1.0.4) signed | 8235 | Shopify (partial) |
-| [Django Oscar](https://github.com/django-oscar/django-oscar) | Python | BSD-3-Clause | [4.2.1](https://github.com/django-oscar/django-oscar/releases/tag/4.2.1) signed | 6633 | Shopify (partial) |
-| [Solidus](https://github.com/solidusio/solidus) | Ruby | BSD-3-Clause | [solidus_admin/v0.5.1](https://github.com/solidusio/solidus/releases/tag/solidus_admin/v0.5.1) | 5349 | Shopify (partial) |
-| [Open Source Point of Sale](https://github.com/opensourcepos/opensourcepos) | PHP | Other | [3.4.3](https://github.com/opensourcepos/opensourcepos/releases/tag/3.4.3) | 4517 | Square Point of Sale (partial) |
-| [TastyIgniter](https://github.com/tastyigniter/TastyIgniter) | PHP | MIT | [v4.5.0](https://github.com/tastyigniter/TastyIgniter/releases/tag/v4.5.0) signed | 3840 | Square Point of Sale (partial) |
-| [Lunar](https://github.com/lunarphp/lunar) | PHP | MIT | [1.5.0](https://github.com/lunarphp/lunar/releases/tag/1.5.0) signed | 3771 | Shopify (partial) |
-| [Shopware](https://github.com/shopware/shopware) | PHP | MIT | [v6.7.16.0](https://github.com/shopware/shopware/releases/tag/v6.7.16.0) signed | 3470 | Shopify (full) |
-| [NexoPOS](https://github.com/Blair2004/NexoPOS) | PHP | GPL-3.0 | [v6.3.0](https://github.com/Blair2004/NexoPOS/releases/tag/v6.3.0) signed | 1305 | Square Point of Sale (partial) |
-| [Shopper](https://github.com/shopperlabs/shopper) | PHP | MIT | [v2.12.2](https://github.com/shopperlabs/shopper/releases/tag/v2.12.2) signed | 1263 | Shopify (partial) |
-| [Thelia](https://github.com/thelia/thelia) | PHP | GPL-3.0 | [3.3.3](https://github.com/thelia/thelia/releases/tag/3.3.3) | 884 | Shopify (partial) |
+| [Aimeos](https://github.com/aimeos/aimeos-laravel) | PHP | MIT | [2026.10.2](https://github.com/aimeos/aimeos-laravel/releases/tag/2026.10.2) | 8713 | Shopify (partial) |
+| [Vendure](https://github.com/vendurehq/vendure) | TypeScript | Other | [v3.8.2](https://github.com/vendurehq/vendure/releases/tag/v3.8.2) | 8589 | Shopify (partial) |
+| [Sylius](https://github.com/Sylius/Sylius) | PHP | MIT | [v2.3.2](https://github.com/Sylius/Sylius/releases/tag/v2.3.2) signed | 8571 | Shopify (partial) |
+| [OpenCart](https://github.com/opencart/opencart) | PHP | Other | [4.1.0.4](https://github.com/opencart/opencart/releases/tag/4.1.0.4) signed | 8239 | Shopify (partial) |
+| [Django Oscar](https://github.com/django-oscar/django-oscar) | Python | BSD-3-Clause | [4.2.1](https://github.com/django-oscar/django-oscar/releases/tag/4.2.1) signed | 6635 | Shopify (partial) |
+| [Solidus](https://github.com/solidusio/solidus) | Ruby | BSD-3-Clause | [solidus_admin/v0.5.1](https://github.com/solidusio/solidus/releases/tag/solidus_admin/v0.5.1) | 5350 | Shopify (partial) |
+| [Open Source Point of Sale](https://github.com/opensourcepos/opensourcepos) | PHP | Other | [3.4.3](https://github.com/opensourcepos/opensourcepos/releases/tag/3.4.3) | 4522 | Square Point of Sale (partial) |
+| [TastyIgniter](https://github.com/tastyigniter/TastyIgniter) | PHP | MIT | [v4.5.0](https://github.com/tastyigniter/TastyIgniter/releases/tag/v4.5.0) signed | 3855 | Square Point of Sale (partial) |
+| [Lunar](https://github.com/lunarphp/lunar) | PHP | MIT | [1.5.0](https://github.com/lunarphp/lunar/releases/tag/1.5.0) signed | 3773 | Shopify (partial) |
+| [Shopware](https://github.com/shopware/shopware) | PHP | MIT | [v6.7.16.0](https://github.com/shopware/shopware/releases/tag/v6.7.16.0) signed | 3471 | Shopify (full) |
+| [NexoPOS](https://github.com/Blair2004/NexoPOS) | PHP | GPL-3.0 | [v6.3.0](https://github.com/Blair2004/NexoPOS/releases/tag/v6.3.0) signed | 1308 | Square Point of Sale (partial) |
+| [Shopper](https://github.com/shopperlabs/shopper) | PHP | MIT | [v2.12.2](https://github.com/shopperlabs/shopper/releases/tag/v2.12.2) signed | 1265 | Shopify (partial) |
+| [Thelia](https://github.com/thelia/thelia) | PHP | GPL-3.0 | [3.3.3](https://github.com/thelia/thelia/releases/tag/3.3.3) | 885 | Shopify (partial) |
 | [OroCommerce](https://github.com/oroinc/orocommerce) | PHP | Other | [1.2.0](https://github.com/oroinc/orocommerce/releases/tag/1.2.0) | 212 | Shopify (partial) |
 
 [All categories](../README.md#catalog)

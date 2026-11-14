@@ -4,6 +4,80 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.47] - 2026-11-14
+
+### Bug Fixes
+
+- chore(catalog): refresh replayowl
+- chore(catalog): refresh pyrefly
+- chore(catalog): refresh pglite
+
+## [0.141.46] - 2026-11-14
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
+## [0.141.45] - 2026-11-13
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
+## [0.141.44] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+
+## [0.141.43] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+
+## [0.141.42] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh lfsx
+
+## [0.141.41] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh ferrflow
+
+## [0.141.40] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh lfsx
+
+## [0.141.39] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh from GitHub
+
+## [0.141.38] - 2026-11-12
+
+### Bug Fixes
+
+- chore(catalog): refresh lfsx
+
+## [0.141.37] - 2026-11-11
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+
+## [0.141.36] - 2026-11-11
+
+### Bug Fixes
+
+- chore(catalog): refresh lfsx
+
 ## [0.141.35] - 2026-11-11
 
 ### Bug Fixes

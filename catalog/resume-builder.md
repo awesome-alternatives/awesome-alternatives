@@ -4,8 +4,8 @@ Write resumes from templates and export them to PDF.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Reactive Resume](https://github.com/reactive-resume/reactive-resume) | TypeScript | MIT | [v6.1.0](https://github.com/reactive-resume/reactive-resume/releases/tag/v6.1.0) signed | 45606 | Resume.io (full), Kickresume (full) |
-| [RenderCV](https://github.com/rendercv/rendercv) | Python | MIT | [v2.8](https://github.com/rendercv/rendercv/releases/tag/v2.8) | 17935 | Resume.io (partial), Kickresume (partial) |
-| [JadeAI](https://github.com/LingyiChen-AI/JadeAI) | TypeScript | Apache-2.0 | [v0.7.0](https://github.com/LingyiChen-AI/JadeAI/releases/tag/v0.7.0) | 2009 | Kickresume (full), Resume.io (full) |
+| [Reactive Resume](https://github.com/reactive-resume/reactive-resume) | TypeScript | MIT | [v6.1.1](https://github.com/reactive-resume/reactive-resume/releases/tag/v6.1.1) signed | 45730 | Resume.io (full), Kickresume (full) |
+| [RenderCV](https://github.com/rendercv/rendercv) | Python | MIT | [v2.8](https://github.com/rendercv/rendercv/releases/tag/v2.8) | 17954 | Resume.io (partial), Kickresume (partial) |
+| [JadeAI](https://github.com/LingyiChen-AI/JadeAI) | TypeScript | Apache-2.0 | [v0.7.0](https://github.com/LingyiChen-AI/JadeAI/releases/tag/v0.7.0) | 2014 | Kickresume (full), Resume.io (full) |
 
 [All categories](../README.md#catalog)

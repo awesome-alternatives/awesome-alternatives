@@ -4,24 +4,24 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.11-8624.e58c57e](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.11-8624.e58c57e) signed | 46922 | RSS.app (full) |
-| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.17.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.17.0) signed | 39272 | Feedly (full), Inoreader (full) |
-| [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.30.4](https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.4) signed | 16555 | Feedly (full), Inoreader (full) |
-| [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [mac-7.2.1](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.2.1) | 10523 | Feedly (partial) |
-| [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.5](https://github.com/miniflux/v2/releases/tag/2.3.5) | 9916 | Feedly (full), Inoreader (partial) |
-| [Fluent Reader](https://github.com/yang991178/fluent-reader) | TypeScript | BSD-3-Clause | [v1.3.2](https://github.com/yang991178/fluent-reader/releases/tag/v1.3.2) | 9790 | Feedly (partial) |
+| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.14-8645.31e46f7](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.14-8645.31e46f7) signed | 46998 | RSS.app (full) |
+| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.17.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.17.0) signed | 39288 | Feedly (full), Inoreader (full) |
+| [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.30.4](https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.4) signed | 16582 | Feedly (full), Inoreader (full) |
+| [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [mac-7.2.1](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.2.1) | 10531 | Feedly (partial) |
+| [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.5](https://github.com/miniflux/v2/releases/tag/2.3.5) | 9932 | Feedly (full), Inoreader (partial) |
+| [Fluent Reader](https://github.com/yang991178/fluent-reader) | TypeScript | BSD-3-Clause | [v1.3.2](https://github.com/yang991178/fluent-reader/releases/tag/v1.3.2) | 9793 | Feedly (partial) |
 | [RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge) | PHP | Unlicense | [2025-08-05](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2025-08-05) signed | 9345 | RSS.app (partial) |
-| [NewsBlur](https://github.com/samuelclay/NewsBlur) | HTML | MIT | [v0.2.2](https://github.com/samuelclay/NewsBlur/releases/tag/v0.2.2) | 7687 | Feedly (full) |
-| [Read You](https://github.com/ReadYouApp/ReadYou) | Kotlin | GPL-3.0 | [0.16.2](https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2) signed | 7660 | Feedly (partial) |
-| [Stringer](https://github.com/stringer-rss/stringer) | Ruby | MIT | none | 4126 | Feedly (partial) |
-| [yarr](https://github.com/nkanaev/yarr) | Go | MIT | [v2.9](https://github.com/nkanaev/yarr/releases/tag/v2.9) | 4096 | Feedly (partial) |
-| [Newsboat](https://github.com/newsboat/newsboat) | C++ | MIT | [r2.45.1](https://github.com/newsboat/newsboat/releases/tag/r2.45.1) | 3938 | Feedly (partial) |
+| [NewsBlur](https://github.com/samuelclay/NewsBlur) | HTML | MIT | [v0.2.2](https://github.com/samuelclay/NewsBlur/releases/tag/v0.2.2) | 7692 | Feedly (full) |
+| [Read You](https://github.com/ReadYouApp/ReadYou) | Kotlin | GPL-3.0 | [0.16.2](https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2) signed | 7666 | Feedly (partial) |
+| [Stringer](https://github.com/stringer-rss/stringer) | Ruby | MIT | none | 4125 | Feedly (partial) |
+| [yarr](https://github.com/nkanaev/yarr) | Go | MIT | [v2.9](https://github.com/nkanaev/yarr/releases/tag/v2.9) | 4097 | Feedly (partial) |
+| [Newsboat](https://github.com/newsboat/newsboat) | C++ | MIT | [r2.45.1](https://github.com/newsboat/newsboat/releases/tag/r2.45.1) | 3940 | Feedly (partial) |
 | [Feedbin](https://github.com/feedbin/feedbin) | Ruby | MIT | none | 3785 | Feedly (full) |
 | [CommaFeed](https://github.com/Athou/commafeed) | Java | Apache-2.0 | [7.4.1](https://github.com/Athou/commafeed/releases/tag/7.4.1) | 3649 | Feedly (full) |
-| [Feeder](https://github.com/spacecowboy/Feeder) | Kotlin | GPL-3.0 | [2.25.0](https://github.com/spacecowboy/Feeder/releases/tag/2.25.0) signed | 3127 | Feedly (partial) |
-| [selfoss](https://github.com/fossar/selfoss) | HTML | GPL-3.0 | [2.19](https://github.com/fossar/selfoss/releases/tag/2.19) signed | 2475 | Feedly (full) |
-| [Fusion](https://github.com/0x2E/fusion) | TypeScript | MIT | [v1.3.0](https://github.com/0x2E/fusion/releases/tag/v1.3.0) signed | 2333 | Feedly (full) |
-| [Capy Reader](https://github.com/jocmp/capyreader) | Kotlin | GPL-3.0 | [2026.11.1217](https://github.com/jocmp/capyreader/releases/tag/2026.11.1217) | 1461 | Feedly (partial) |
-| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 880 | Feedly (full), Inoreader (partial) |
+| [Feeder](https://github.com/spacecowboy/Feeder) | Kotlin | GPL-3.0 | [2.25.0](https://github.com/spacecowboy/Feeder/releases/tag/2.25.0) signed | 3130 | Feedly (partial) |
+| [selfoss](https://github.com/fossar/selfoss) | HTML | GPL-3.0 | [2.19](https://github.com/fossar/selfoss/releases/tag/2.19) signed | 2477 | Feedly (full) |
+| [Fusion](https://github.com/0x2E/fusion) | TypeScript | MIT | [v1.3.0](https://github.com/0x2E/fusion/releases/tag/v1.3.0) signed | 2389 | Feedly (full) |
+| [Capy Reader](https://github.com/jocmp/capyreader) | Kotlin | GPL-3.0 | [2026.11.1217](https://github.com/jocmp/capyreader/releases/tag/2026.11.1217) | 1467 | Feedly (partial) |
+| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 883 | Feedly (full), Inoreader (partial) |
 
 [All categories](../README.md#catalog)

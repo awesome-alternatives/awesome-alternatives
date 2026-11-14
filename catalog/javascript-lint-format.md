@@ -4,10 +4,10 @@ Linters and formatters for JavaScript and TypeScript.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Prettier](https://github.com/prettier/prettier) | JavaScript | MIT | [3.9.10](https://github.com/prettier/prettier/releases/tag/3.9.10) | 52409 | none |
-| [ESLint](https://github.com/eslint/eslint) | JavaScript | MIT | [v10.14.0](https://github.com/eslint/eslint/releases/tag/v10.14.0) | 27614 | TSLint (full) |
-| [Biome](https://github.com/biomejs/biome) | Rust | Apache-2.0 | [@biomejs/biome@2.6.6](https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.6.6) signed | 26087 | ESLint (partial), Prettier (full) |
-| [Oxc](https://github.com/oxc-project/oxc) | Rust | MIT | [oxlint_v1.93.0](https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.93.0) | 23410 | ESLint (partial) |
+| [Prettier](https://github.com/prettier/prettier) | JavaScript | MIT | [3.10.1](https://github.com/prettier/prettier/releases/tag/3.10.1) | 52411 | none |
+| [ESLint](https://github.com/eslint/eslint) | JavaScript | MIT | [v10.15.0](https://github.com/eslint/eslint/releases/tag/v10.15.0) | 27617 | TSLint (full) |
+| [Biome](https://github.com/biomejs/biome) | Rust | Apache-2.0 | [@biomejs/biome@2.6.7](https://github.com/biomejs/biome/releases/tag/%40biomejs/biome%402.6.7) signed | 26101 | ESLint (partial), Prettier (full) |
+| [Oxc](https://github.com/oxc-project/oxc) | Rust | MIT | [oxlint_v1.93.0](https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.93.0) | 23438 | ESLint (partial) |
 | [TSLint](https://github.com/palantir/tslint) archived | TypeScript | Apache-2.0 | [6.1.3](https://github.com/palantir/tslint/releases/tag/6.1.3) signed | 5892 | none |
 | [dprint](https://github.com/dprint/dprint) | Rust | MIT | [0.64.3](https://github.com/dprint/dprint/releases/tag/0.64.3) | 4135 | Prettier (full) |
 

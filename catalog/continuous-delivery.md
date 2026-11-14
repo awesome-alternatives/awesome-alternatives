@@ -5,8 +5,8 @@ Promote builds through environments with canary, blue-green and progressive roll
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Spinnaker](https://github.com/spinnaker/spinnaker) | Java | Apache-2.0 | [spinnaker-release-2026.4.1](https://github.com/spinnaker/spinnaker/releases/tag/spinnaker-release-2026.4.1) signed | 9815 | Octopus Deploy (full) |
-| [Flagger](https://github.com/fluxcd/flagger) | Go | Apache-2.0 | [v1.45.0](https://github.com/fluxcd/flagger/releases/tag/v1.45.0) signed | 5430 | Argo Rollouts (full) |
-| [Argo Rollouts](https://github.com/argoproj/argo-rollouts) | Go | Apache-2.0 | [v1.10.2](https://github.com/argoproj/argo-rollouts/releases/tag/v1.10.2) signed | 3622 | Octopus Deploy (partial) |
+| [Flagger](https://github.com/fluxcd/flagger) | Go | Apache-2.0 | [v1.45.0](https://github.com/fluxcd/flagger/releases/tag/v1.45.0) signed | 5433 | Argo Rollouts (full) |
+| [Argo Rollouts](https://github.com/argoproj/argo-rollouts) | Go | Apache-2.0 | [v1.10.2](https://github.com/argoproj/argo-rollouts/releases/tag/v1.10.2) signed | 3623 | Octopus Deploy (partial) |
 | [PipeCD](https://github.com/pipe-cd/pipecd) | Go | Apache-2.0 | [v0.58.0](https://github.com/pipe-cd/pipecd/releases/tag/v0.58.0) signed | 1371 | Octopus Deploy (partial) |
 
 [All categories](../README.md#catalog)

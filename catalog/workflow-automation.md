@@ -4,13 +4,13 @@ Connect apps and APIs with trigger-and-action workflows, and turn operational ru
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [n8n](https://github.com/n8n-io/n8n) | TypeScript | Other | [n8n@2.47.3](https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.3) signed | 210058 | Zapier (full), IFTTT (full), Splunk SOAR (partial) |
-| [Huginn](https://github.com/huginn/huginn) | Ruby | MIT | [v2026.11.09](https://github.com/huginn/huginn/releases/tag/v2026.11.09) | 50491 | Zapier (partial), IFTTT (partial), RSS.app (partial) |
-| [Activepieces](https://github.com/activepieces/activepieces) | TypeScript | Other | [0.93.0](https://github.com/activepieces/activepieces/releases/tag/0.93.0) | 25472 | Zapier (full), n8n (full), IFTTT (full) |
-| [Node-RED](https://github.com/node-red/node-red) | JavaScript | Apache-2.0 | [5.0.9](https://github.com/node-red/node-red/releases/tag/5.0.9) signed | 23832 | Zapier (partial) |
-| [Windmill](https://github.com/windmill-labs/windmill) | Rust | Other | [v1.867.0](https://github.com/windmill-labs/windmill/releases/tag/v1.867.0) signed | 18516 | Zapier (partial), Apache Airflow (partial) |
-| [Automatisch](https://github.com/automatisch/automatisch) | JavaScript | Other | [v0.15.0](https://github.com/automatisch/automatisch/releases/tag/v0.15.0) | 14019 | Zapier (full) |
-| [StackStorm](https://github.com/StackStorm/st2) | Python | Apache-2.0 | [v3.9.0](https://github.com/StackStorm/st2/releases/tag/v3.9.0) | 6559 | Red Hat Ansible Automation Platform (partial) |
-| [Rundeck](https://github.com/rundeck/rundeck) | Groovy | Apache-2.0 | [v6.3.0](https://github.com/rundeck/rundeck/releases/tag/v6.3.0) | 6373 | Red Hat Ansible Automation Platform (partial) |
+| [n8n](https://github.com/n8n-io/n8n) | TypeScript | Other | [n8n@2.47.7](https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.7) signed | 210427 | Zapier (full), IFTTT (full), Splunk SOAR (partial) |
+| [Huginn](https://github.com/huginn/huginn) | Ruby | MIT | [v2026.11.09](https://github.com/huginn/huginn/releases/tag/v2026.11.09) | 50533 | Zapier (partial), IFTTT (partial), RSS.app (partial) |
+| [Activepieces](https://github.com/activepieces/activepieces) | TypeScript | Other | [0.93.0](https://github.com/activepieces/activepieces/releases/tag/0.93.0) | 25516 | Zapier (full), n8n (full), IFTTT (full) |
+| [Node-RED](https://github.com/node-red/node-red) | JavaScript | Apache-2.0 | [5.0.9](https://github.com/node-red/node-red/releases/tag/5.0.9) signed | 23843 | Zapier (partial) |
+| [Windmill](https://github.com/windmill-labs/windmill) | Rust | Other | [v1.873.1](https://github.com/windmill-labs/windmill/releases/tag/v1.873.1) signed | 18577 | Zapier (partial), Apache Airflow (partial) |
+| [Automatisch](https://github.com/automatisch/automatisch) | JavaScript | Other | [v0.15.0](https://github.com/automatisch/automatisch/releases/tag/v0.15.0) | 14022 | Zapier (full) |
+| [StackStorm](https://github.com/StackStorm/st2) | Python | Apache-2.0 | [v3.9.0](https://github.com/StackStorm/st2/releases/tag/v3.9.0) | 6561 | Red Hat Ansible Automation Platform (partial) |
+| [Rundeck](https://github.com/rundeck/rundeck) | Groovy | Apache-2.0 | [v6.3.0](https://github.com/rundeck/rundeck/releases/tag/v6.3.0) | 6377 | Red Hat Ansible Automation Platform (partial) |
 
 [All categories](../README.md#catalog)

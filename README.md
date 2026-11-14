@@ -126,7 +126,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [CI servers](catalog/ci-server.md) | 10 | Self-hosted servers that run build and deployment pipelines. |
 | [Git forges](catalog/git-forge.md) | 7 | Self-hosted repositories, code review and issues. |
 | [Password manager servers](catalog/password-manager-server.md) | 5 | Self-hosted back ends for password vaults. |
-| [Web analytics](catalog/web-analytics.md) | 14 | Self-hostable, privacy-friendly site analytics. |
+| [Web analytics](catalog/web-analytics.md) | 15 | Self-hostable, privacy-friendly site analytics. |
 | [Uptime monitoring](catalog/uptime-monitoring.md) | 13 | Check that services answer, alert when they do not, and publish a status page. |
 | [Log pipelines](catalog/log-pipeline.md) | 9 | Collect, transform and ship logs and events. |
 | [Team chat](catalog/team-chat.md) | 18 | Self-hosted messaging for teams. |

@@ -4,13 +4,13 @@ Install and run the checks a repository wants before a commit or a push, and che
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35387 | pre-commit (partial) |
-| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18809 | none |
-| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15691 | husky (partial) |
-| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.2](https://github.com/evilmartians/lefthook/releases/tag/v2.2.2) signed | 9019 | husky (full), pre-commit (full) |
-| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.10](https://github.com/j178/prek/releases/tag/v0.5.10) signed | 8772 | pre-commit (drop-in) |
-| [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.76.0](https://github.com/sds/overcommit/releases/tag/v0.76.0) signed | 4004 | pre-commit (partial) |
+| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35391 | pre-commit (partial) |
+| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18813 | none |
+| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15696 | husky (partial) |
+| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.2](https://github.com/evilmartians/lefthook/releases/tag/v2.2.2) signed | 9028 | husky (full), pre-commit (full) |
+| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.10](https://github.com/j178/prek/releases/tag/v0.5.10) signed | 8795 | pre-commit (drop-in) |
+| [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.76.0](https://github.com/sds/overcommit/releases/tag/v0.76.0) signed | 4003 | pre-commit (partial) |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | JavaScript | MIT | [2.14.0](https://github.com/toplenboren/simple-git-hooks/releases/tag/2.14.0) | 1690 | husky (partial) |
-| [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1534 | Commitizen (full) |
+| [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1536 | Commitizen (full) |
 
 [All categories](../README.md#catalog)
