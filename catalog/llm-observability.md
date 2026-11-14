@@ -4,14 +4,14 @@ Trace, evaluate and monitor LLM applications.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Langfuse](https://github.com/langfuse/langfuse) | TypeScript | Other | [v4.79.0](https://github.com/langfuse/langfuse/releases/tag/v4.79.0) signed | 37372 | LangSmith (full), W&B Weave (full), Braintrust (partial) |
-| [Opik](https://github.com/comet-ml/opik) | Python | Apache-2.0 | [2.2.143](https://github.com/comet-ml/opik/releases/tag/2.2.143) signed | 23373 | LangSmith (full), W&B Weave (full), Braintrust (full) |
-| [Arize Phoenix](https://github.com/Arize-ai/phoenix) | Python | Other | [@arizeai/phoenix-cli@1.22.0](https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai/phoenix-cli%401.22.0) signed | 12267 | LangSmith (full), W&B Weave (full) |
-| [Evidently](https://github.com/evidentlyai/evidently) | Jupyter Notebook | Apache-2.0 | [v0.7.23](https://github.com/evidentlyai/evidently/releases/tag/v0.7.23) | 8061 | LangSmith (partial) |
+| [Langfuse](https://github.com/langfuse/langfuse) | TypeScript | Other | [v4.80.0](https://github.com/langfuse/langfuse/releases/tag/v4.80.0) | 37406 | LangSmith (full), W&B Weave (full), Braintrust (partial) |
+| [Opik](https://github.com/comet-ml/opik) | Python | Apache-2.0 | [2.2.143](https://github.com/comet-ml/opik/releases/tag/2.2.143) signed | 23400 | LangSmith (full), W&B Weave (full), Braintrust (full) |
+| [Arize Phoenix](https://github.com/Arize-ai/phoenix) | Python | Other | [arize-phoenix-v21.1.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v21.1.0) signed | 12282 | LangSmith (full), W&B Weave (full) |
+| [Evidently](https://github.com/evidentlyai/evidently) | Jupyter Notebook | Apache-2.0 | [v0.7.23](https://github.com/evidentlyai/evidently/releases/tag/v0.7.23) | 8062 | LangSmith (partial) |
 | [Helicone](https://github.com/Helicone/helicone) | TypeScript | Apache-2.0 | [v2025.08.21-1](https://github.com/Helicone/helicone/releases/tag/v2025.08.21-1) | 6280 | LangSmith (partial) |
-| [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.23.0](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.23.0) signed | 5026 | LangSmith (full) |
-| [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.128.13](https://github.com/Agenta-AI/agenta/releases/tag/v0.128.13) signed | 4906 | LangSmith (full) |
-| [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.3.4](https://github.com/lmnr-ai/lmnr/releases/tag/v0.3.4) signed | 3486 | LangSmith (full) |
-| [OpenLIT](https://github.com/openlit/openlit) | TypeScript | Apache-2.0 | [openlit-2.1.1](https://github.com/openlit/openlit/releases/tag/openlit-2.1.1) signed | 3061 | LangSmith (partial) |
+| [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.23.0](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.23.0) signed | 5030 | LangSmith (full) |
+| [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.128.13](https://github.com/Agenta-AI/agenta/releases/tag/v0.128.13) signed | 4907 | LangSmith (full) |
+| [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.3.4](https://github.com/lmnr-ai/lmnr/releases/tag/v0.3.4) signed | 3488 | LangSmith (full) |
+| [OpenLIT](https://github.com/openlit/openlit) | TypeScript | Apache-2.0 | [openlit-2.1.1](https://github.com/openlit/openlit/releases/tag/openlit-2.1.1) signed | 3072 | LangSmith (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,17 +4,17 @@ Collect, store and query time series.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Netdata](https://github.com/netdata/netdata) | Go | GPL-3.0 | [v2.12.3](https://github.com/netdata/netdata/releases/tag/v2.12.3) | 81387 | Datadog (partial) |
-| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.16.0](https://github.com/prometheus/prometheus/releases/tag/v3.16.0) signed | 67599 | Datadog (partial) |
-| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.2](https://github.com/henrygd/beszel/releases/tag/v0.21.2) signed | 27278 | Netdata (partial), Datadog (partial) |
-| [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | Go | Apache-2.0 | [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0) | 18105 | Prometheus (full), InfluxDB (partial), Datadog (partial) |
-| [Telegraf](https://github.com/influxdata/telegraf) | Go | MIT | [v1.40.3](https://github.com/influxdata/telegraf/releases/tag/v1.40.3) | 17904 | collectd (full), Datadog (partial) |
+| [Netdata](https://github.com/netdata/netdata) | Go | GPL-3.0 | [v2.12.3](https://github.com/netdata/netdata/releases/tag/v2.12.3) | 81405 | Datadog (partial) |
+| [Prometheus](https://github.com/prometheus/prometheus) | Go | Apache-2.0 | [v3.16.0](https://github.com/prometheus/prometheus/releases/tag/v3.16.0) signed | 67596 | Datadog (partial) |
+| [Beszel](https://github.com/henrygd/beszel) | Go | MIT | [v0.21.2](https://github.com/henrygd/beszel/releases/tag/v0.21.2) signed | 27327 | Netdata (partial), Datadog (partial) |
+| [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | Go | Apache-2.0 | [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0) | 18101 | Prometheus (full), InfluxDB (partial), Datadog (partial) |
+| [Telegraf](https://github.com/influxdata/telegraf) | Go | MIT | [v1.40.3](https://github.com/influxdata/telegraf/releases/tag/v1.40.3) | 17905 | collectd (full), Datadog (partial) |
 | [Thanos](https://github.com/thanos-io/thanos) | Go | Apache-2.0 | [v0.42.5](https://github.com/thanos-io/thanos/releases/tag/v0.42.5) | 14275 | Prometheus (partial), Datadog (partial) |
-| [Apache HertzBeat](https://github.com/apache/hertzbeat) | Java | Apache-2.0 | [v1.9.0](https://github.com/apache/hertzbeat/releases/tag/v1.9.0) signed | 7468 | Zabbix (full), Datadog (partial), PRTG Network Monitor (partial) |
+| [Apache HertzBeat](https://github.com/apache/hertzbeat) | Java | Apache-2.0 | [v1.9.0](https://github.com/apache/hertzbeat/releases/tag/v1.9.0) signed | 7471 | Zabbix (full), Datadog (partial), PRTG Network Monitor (partial) |
 | [Zabbix](https://github.com/zabbix/zabbix) | Go Template | AGPL-3.0 | [8.0.0](https://github.com/zabbix/zabbix/releases/tag/8.0.0) | 6569 | Datadog (partial) |
 | [Cortex](https://github.com/cortexproject/cortex) | Go | Apache-2.0 | [v1.21.1](https://github.com/cortexproject/cortex/releases/tag/v1.21.1) signed | 5878 | Prometheus (partial) |
 | [Grafana Mimir](https://github.com/grafana/mimir) | Go | AGPL-3.0 | [mimir-3.2.5](https://github.com/grafana/mimir/releases/tag/mimir-3.2.5) signed | 5279 | Prometheus (partial), Datadog (partial) |
-| [LibreNMS](https://github.com/librenms/librenms) | PHP | Other | [26.10.2](https://github.com/librenms/librenms/releases/tag/26.10.2) | 5007 | SolarWinds Network Performance Monitor (full), PRTG Network Monitor (partial) |
+| [LibreNMS](https://github.com/librenms/librenms) | PHP | Other | [26.10.2](https://github.com/librenms/librenms/releases/tag/26.10.2) | 5008 | SolarWinds Network Performance Monitor (full), PRTG Network Monitor (partial) |
 | [M3](https://github.com/m3db/m3) | Go | Apache-2.0 | [v1.6.0](https://github.com/m3db/m3/releases/tag/v1.6.0) | 4908 | Thanos (full), Cortex (full), VictoriaMetrics (full) |
 | [collectd](https://github.com/collectd/collectd) | C | Other | [collectd-5.12.0](https://github.com/collectd/collectd/releases/tag/collectd-5.12.0) | 3368 | Telegraf (full) |
 | [Checkmk](https://github.com/Checkmk/checkmk) | Python | GPL-2.0 | [v2.5.0p19](https://github.com/Checkmk/checkmk/releases/tag/v2.5.0p19) | 2645 | PRTG Network Monitor (full) |

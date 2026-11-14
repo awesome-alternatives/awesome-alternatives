@@ -4,11 +4,11 @@ Store, rotate and hand out secrets to applications.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [HashiCorp Vault](https://github.com/hashicorp/vault) | Go | Other | [v2.2.2](https://github.com/hashicorp/vault/releases/tag/v2.2.2) signed | 36506 | AWS Secrets Manager (full), Doppler (partial) |
-| [Infisical](https://github.com/Infisical/infisical) | TypeScript | Other | [v0.167.8](https://github.com/Infisical/infisical/releases/tag/v0.167.8) signed | 30469 | HashiCorp Vault (partial), Doppler (full) |
-| [OpenBao](https://github.com/openbao/openbao) | Go | MPL-2.0 | [v2.7.2](https://github.com/openbao/openbao/releases/tag/v2.7.2) signed | 8993 | HashiCorp Vault (drop-in), Doppler (partial) |
-| [External Secrets Operator](https://github.com/external-secrets/external-secrets) | Go | Apache-2.0 | [helm-chart-2.15.0](https://github.com/external-secrets/external-secrets/releases/tag/helm-chart-2.15.0) signed | 6947 | none |
+| [HashiCorp Vault](https://github.com/hashicorp/vault) | Go | Other | [v2.2.2](https://github.com/hashicorp/vault/releases/tag/v2.2.2) signed | 36510 | AWS Secrets Manager (full), Doppler (partial) |
+| [Infisical](https://github.com/Infisical/infisical) | TypeScript | Other | [v0.167.10](https://github.com/Infisical/infisical/releases/tag/v0.167.10) signed | 30502 | HashiCorp Vault (partial), Doppler (full) |
+| [OpenBao](https://github.com/openbao/openbao) | Go | MPL-2.0 | [v2.7.2](https://github.com/openbao/openbao/releases/tag/v2.7.2) signed | 9004 | HashiCorp Vault (drop-in), Doppler (partial) |
+| [External Secrets Operator](https://github.com/external-secrets/external-secrets) | Go | Apache-2.0 | [helm-chart-2.15.0](https://github.com/external-secrets/external-secrets/releases/tag/helm-chart-2.15.0) signed | 6948 | none |
 | [Conjur](https://github.com/cyberark/conjur) | Ruby | Other | [v1.27.0](https://github.com/cyberark/conjur/releases/tag/v1.27.0) | 956 | HashiCorp Vault (partial) |
-| [Phase](https://github.com/phasehq/console) | Python | Other | [v2.79.0](https://github.com/phasehq/console/releases/tag/v2.79.0) signed | 949 | Doppler (full) |
+| [Phase](https://github.com/phasehq/console) | Python | Other | [v2.79.0](https://github.com/phasehq/console/releases/tag/v2.79.0) signed | 950 | Doppler (full) |
 
 [All categories](../README.md#catalog)
