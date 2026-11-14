@@ -18,5 +18,6 @@ Self-hostable, privacy-friendly site analytics.
 | [Swetrix](https://github.com/Swetrix/swetrix) | TypeScript | AGPL-3.0 | [v5.5.3](https://github.com/Swetrix/swetrix/releases/tag/v5.5.3) | 1222 | Google Analytics (partial) |
 | [counter.dev](https://github.com/ihucos/counter.dev) | JavaScript | AGPL-3.0 | none | 1012 | Google Analytics (partial) |
 | [Medama](https://github.com/medama-io/medama) | Go | none | [v0.6.2](https://github.com/medama-io/medama/releases/tag/v0.6.2) signed | 641 | Google Analytics (partial) |
+| [Replayowl](https://github.com/replayowl/replayowl) | TypeScript | AGPL-3.0 | [v0.1.0](https://github.com/replayowl/replayowl/releases/tag/v0.1.0) | 2 | Hotjar (partial) |
 
 [All categories](../README.md#catalog)

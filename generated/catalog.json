@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2754,
+    "tools": 2755,
     "categories": 344,
     "targets": 923,
     "verified": 6
@@ -19670,6 +19670,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "replayowl": {
+      "login": "replayowl",
+      "kind": "user",
+      "name": null,
+      "bio": null,
+      "website": null,
+      "url": "https://github.com/replayowl"
     }
   },
   "tools": [
@@ -254602,6 +254610,84 @@
         "no-license"
       ],
       "terms": "unknown",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "replayowl",
+      "name": "Replayowl",
+      "repository": "https://github.com/replayowl/replayowl",
+      "category": "web-analytics",
+      "replaces": [
+        {
+          "tool": "hotjar",
+          "fit": "partial",
+          "note": "Session replay only, without heatmaps, funnels or on-site surveys."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-14T15:03:38.000Z",
+      "editedAt": "2026-11-14T15:03:38.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "replayowl/replayowl",
+        "description": "Self-hosted session recording and replay for websites. ~20 KB zero-dependency recorder, pixel-faithful smooth replay, runs on Cloudflare Workers or Node with S3/R2 storage and D1/Postgres search.",
+        "homepage": "https://replayowl.com/",
+        "language": "TypeScript",
+        "license": "AGPL-3.0",
+        "stars": 2,
+        "forks": 0,
+        "topics": [
+          "cloudflare-workers",
+          "dom-recording",
+          "hotjar-alternative",
+          "product-analytics",
+          "rrweb-alternative",
+          "self-hosted",
+          "session-recording",
+          "session-replay",
+          "user-behavior",
+          "web-analytics"
+        ],
+        "databaseId": 1418273944,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-10-14T02:46:41Z",
+        "pushedAt": "2026-11-02T10:14:25Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-14",
+        "stars": [2]
+      },
+      "release": {
+        "tag": "v0.1.0",
+        "publishedAt": "2026-10-15T14:19:23Z",
+        "url": "https://github.com/replayowl/replayowl/releases/tag/v0.1.0",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.1.0",
+          "name": "First public release of Replayowl, self-hosted session recording and replay for websites. Record what visitors do on yo…",
+          "publishedAt": "2026-10-15T14:19:23Z",
+          "url": "https://github.com/replayowl/replayowl/releases/tag/v0.1.0",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": false
+      },
+      "platforms": [],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
       "capabilities": {},
       "deploy": []
     },
