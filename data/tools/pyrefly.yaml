@@ -1,5 +1,5 @@
 name: Pyrefly
-repository: https://github.com/meta/pyrefly
+repository: https://github.com/pyrefly-org/pyrefly
 category: python-type-checker
 replaces:
   - tool: mypy
