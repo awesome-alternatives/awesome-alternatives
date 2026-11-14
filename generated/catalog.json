@@ -228213,7 +228213,7 @@
     {
       "slug": "pglite",
       "name": "PGlite",
-      "repository": "https://github.com/electric-sql/pglite",
+      "repository": "https://github.com/electric-sql/electric-pglite",
       "category": "relational-database",
       "replaces": [
         {
@@ -228225,7 +228225,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:08:19.000Z",
-      "editedAt": "2026-10-06T13:08:19.000Z",
+      "editedAt": "2026-11-14T15:03:13.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "electric-sql/electric-pglite",
@@ -228233,7 +228233,7 @@
         "homepage": "https://pglite.dev",
         "language": "TypeScript",
         "license": "Apache-2.0",
-        "stars": 16274,
+        "stars": 16275,
         "forks": 475,
         "topics": [
           "database",
@@ -228249,13 +228249,13 @@
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 128,
+        "stars": 129,
         "exact": true,
-        "since": "2026-10-15T05:17:27.818Z"
+        "since": "2026-10-15T15:03:43.946Z"
       },
       "starHistory": {
         "from": "2026-10-14",
-        "stars": [16146,16151,16156,16158,16163,16170,16172,16175,16178,16182,16185,16187,16190,16198,16201,16211,16213,16218,16220,16221,16233,16235,16241,16242,16245,16249,16253,16257,16259,16264,16269,16274]
+        "stars": [16146,16151,16156,16158,16163,16170,16172,16175,16178,16182,16185,16187,16190,16198,16201,16211,16213,16218,16220,16221,16233,16235,16241,16242,16245,16249,16253,16257,16259,16264,16269,16275]
       },
       "release": {
         "tag": "@electric-sql/pglite-hypopg@0.0.9",
@@ -228309,9 +228309,7 @@
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []

@@ -12,7 +12,7 @@ General-purpose SQL databases.
 | [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.5](https://github.com/vitessio/vitess/releases/tag/v24.0.5) signed | 21419 | PlanetScale (partial), Google Cloud Spanner (partial) |
 | [rqlite](https://github.com/rqlite/rqlite) | Go | MIT | [v10.7.1](https://github.com/rqlite/rqlite/releases/tag/v10.7.1) signed | 17948 | SQLite (partial) |
 | [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17327 | SQLite (drop-in) |
-| [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-hypopg@0.0.9](https://github.com/electric-sql/electric-pglite/releases/tag/%40electric-sql/pglite-hypopg%400.0.9) | 16274 | SQLite (partial) |
+| [PGlite](https://github.com/electric-sql/electric-pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-hypopg@0.0.9](https://github.com/electric-sql/electric-pglite/releases/tag/%40electric-sql/pglite-hypopg%400.0.9) | 16275 | SQLite (partial) |
 | [MySQL](https://github.com/mysql/mysql-server) | C++ | Other | [mysql-26.10.0](https://github.com/mysql/mysql-server/releases/tag/mysql-26.10.0) | 12513 | Amazon RDS (partial), Microsoft SQL Server (partial) |
 | [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.54.1](https://github.com/sqlite/sqlite/releases/tag/version-3.54.1) | 11009 | none |
 | [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.6.0_CE_BP1](https://github.com/oceanbase/oceanbase/releases/tag/v4.6.0_CE_BP1) | 10401 | MySQL (full) |
