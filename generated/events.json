@@ -7858,7 +7858,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v13.01","to":"v13.02"},
   {"type":"released","slug":"worklenz","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v3.3.1","to":"v3.4.0"},
   {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v4.54.2","to":"v4.54.3"},
-  {"type":"released","slug":"lfsx","at":"2026-11-09T11:45:03.972Z","commit":"3bb347b4adae3703113c6079d41b846b0f8b785e","from":"v1.26.51","to":"site@2026.11.3"},
   {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":"84faa0bab39bb3a9166cbab4c8ce2b27cc0380b6","from":"site@2026.11.3","to":"v1.26.53"},
   {"type":"released","slug":"ferrflow","at":"2026-11-09T14:48:16.010Z","commit":"97d0d3dcc525b4689a798144ee333149a6274114","from":"v7.35.3","to":"v7.35.4"},
   {"type":"released","slug":"astro","at":"2026-11-09T16:05:43.627Z","commit":"84b290956619706134fb75c5d42627809cfe898f","from":"@astrojs/vercel@11.0.20","to":"astro-vscode@2.17.3"},
@@ -8810,5 +8809,6 @@
   {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":null,"from":"v1.874.0","to":"v1.875.0"},
   {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":null,"from":"v0.56.3","to":"v0.56.4"},
   {"type":"released","slug":"ferrflow","at":"2026-11-14T16:27:25.021Z","commit":null,"from":"v7.36.1","to":"v7.36.2"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:58:16.440Z","commit":null,"from":"v7.36.2","to":"v7.36.3"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:58:16.440Z","commit":null,"from":"v7.36.2","to":"v7.36.3"},
+  {"type":"released","slug":"lfsx","at":"2026-11-14T21:14:19.006Z","commit":null,"from":"site@2026.11.11","to":"site@2026.11.12"}
 ]

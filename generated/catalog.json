@@ -163513,27 +163513,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-14T14:46:00Z",
+        "pushedAt": "2026-11-14T21:12:56Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-15T15:30:04.890Z"
+        "since": "2026-10-15T21:13:44.509Z"
       },
       "starHistory": {
         "from": "2026-10-14",
         "stars": [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5]
       },
       "release": {
-        "tag": "site@2026.11.11",
-        "publishedAt": "2026-11-12T19:34:39Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.11",
+        "tag": "site@2026.11.12",
+        "publishedAt": "2026-11-14T21:13:02Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.12",
         "source": "release",
         "signed": true,
-        "tagOid": "af3fc1b0ad9b87418ba15e554be07086f7f505a2"
+        "tagOid": "158ca4cc4a400e3228d1cf4dba06b36c021cac2b"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.12",
+          "name": "fix(telemetry): stop quoted values before a query key and reach keys behind long prefixes (#763)",
+          "publishedAt": "2026-11-14T21:13:02Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.12",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.11",
           "name": "fix(telemetry): mask code and state keys in colon form and spaced benign field names (#759)",
@@ -163560,13 +163567,6 @@
           "name": "fix(telemetry): bring redaction to v6.27 (#756)",
           "publishedAt": "2026-11-11T21:10:22Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.8",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.7",
-          "name": "fix(telemetry): skip host:port only when the value is a port (#754)",
-          "publishedAt": "2026-11-11T10:35:29Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.7",
           "prerelease": false
         }
       ],
