@@ -4,9 +4,9 @@ Inspect source code for bugs, code smells and security issues, and track the fin
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Semgrep](https://github.com/semgrep/semgrep) | C | LGPL-2.1 | [v1.185.0](https://github.com/semgrep/semgrep/releases/tag/v1.185.0) | 17663 | SonarQube Cloud (partial) |
+| [Semgrep](https://github.com/semgrep/semgrep) | C | LGPL-2.1 | [v1.185.0](https://github.com/semgrep/semgrep/releases/tag/v1.185.0) | 17673 | SonarQube Cloud (partial) |
 | [SonarQube Community Build](https://github.com/SonarSource/sonarqube) | Java | LGPL-3.0 | [26.11.0.134175](https://github.com/SonarSource/sonarqube/releases/tag/26.11.0.134175) | 11182 | SonarQube Cloud (partial) |
-| [gosec](https://github.com/securego/gosec) | Go | Apache-2.0 | [v2.30.0](https://github.com/securego/gosec/releases/tag/v2.30.0) | 9004 | Snyk (partial), SonarQube Cloud (partial) |
+| [gosec](https://github.com/securego/gosec) | Go | Apache-2.0 | [v2.30.0](https://github.com/securego/gosec/releases/tag/v2.30.0) | 9005 | Snyk (partial), SonarQube Cloud (partial) |
 | [Bandit](https://github.com/PyCQA/bandit) | Python | Apache-2.0 | [1.9.4](https://github.com/PyCQA/bandit/releases/tag/1.9.4) signed | 8382 | Snyk (partial), SonarQube Cloud (partial) |
 | [Brakeman](https://github.com/presidentbeef/brakeman) | Ruby | Other | [v8.1.0](https://github.com/presidentbeef/brakeman/releases/tag/v8.1.0) signed | 7294 | Snyk (partial) |
 | [Cppcheck](https://github.com/cppcheck-opensource/cppcheck) | C++ | GPL-3.0 | [2.22.0](https://github.com/cppcheck-opensource/cppcheck/releases/tag/2.22.0) | 6799 | SonarQube Cloud (partial) |

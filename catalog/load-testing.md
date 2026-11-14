@@ -4,13 +4,13 @@ Generate traffic to measure how a service holds up.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32292 | Apache JMeter (full), Gatling (full) |
-| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28282 | Apache JMeter (full), Gatling (full) |
-| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25249 | Apache JMeter (partial) |
-| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.16.0](https://github.com/hatoo/oha/releases/tag/v1.16.0) signed | 10678 | Vegeta (partial) |
-| [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9603 | none |
+| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32293 | Apache JMeter (full), Gatling (full) |
+| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28283 | Apache JMeter (full), Gatling (full) |
+| [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25248 | Apache JMeter (partial) |
+| [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.17.0](https://github.com/hatoo/oha/releases/tag/v1.17.0) signed | 10681 | Vegeta (partial) |
+| [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9605 | none |
 | [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9122 | Apache JMeter (full), Gatling (full) |
-| [autocannon](https://github.com/mcollina/autocannon) | JavaScript | MIT | [v8.0.0](https://github.com/mcollina/autocannon/releases/tag/v8.0.0) | 8538 | Vegeta (partial) |
+| [autocannon](https://github.com/mcollina/autocannon) | JavaScript | MIT | [v8.0.0](https://github.com/mcollina/autocannon/releases/tag/v8.0.0) | 8539 | Vegeta (partial) |
 | [Gatling](https://github.com/gatling/gatling) | Scala | Apache-2.0 | [v3.16.0](https://github.com/gatling/gatling/releases/tag/v3.16.0) | 6961 | Apache JMeter (full) |
 | [bombardier](https://github.com/codesenberg/bombardier) | Go | MIT | [v2.0.2](https://github.com/codesenberg/bombardier/releases/tag/v2.0.2) | 6856 | Vegeta (partial) |
 | [Siege](https://github.com/JoeDog/siege) | C | GPL-3.0 | [4.2.2](https://github.com/JoeDog/siege/releases/tag/4.2.2) | 6214 | Apache JMeter (partial) |
