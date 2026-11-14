@@ -8787,5 +8787,6 @@
   {"type":"released","slug":"zitadel","at":"2026-11-14T05:17:27.818Z","commit":null,"from":"v4.20.2","to":"v4.20.3"},
   {"type":"released","slug":"zoraxy","at":"2026-11-14T05:17:27.818Z","commit":null,"from":"v3.3.5-rc5","to":"v3.3.5"},
   {"type":"released","slug":"zulip","at":"2026-11-14T05:17:27.818Z","commit":null,"from":"13.1","to":"13.2"},
-  {"type":"added","slug":"replayowl","at":"2026-11-14T15:04:32.526Z","commit":null}
+  {"type":"added","slug":"replayowl","at":"2026-11-14T15:04:32.526Z","commit":null},
+  {"type":"renamed","slug":"homer-dashboard","at":"2026-11-14T15:05:34.939Z","commit":null,"from":"bastienwirtz/homer","to":"homer-dashboard/homer"}
 ]
