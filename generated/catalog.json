@@ -98333,27 +98333,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-15T04:10:53Z",
+        "pushedAt": "2026-11-15T10:57:51Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-16T05:17:29.878Z"
+        "since": "2026-10-16T11:10:00.290Z"
       },
       "starHistory": {
         "from": "2026-10-15",
         "stars": [7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.3",
-        "publishedAt": "2026-11-14T16:57:11Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.3",
+        "tag": "v7.36.4",
+        "publishedAt": "2026-11-15T11:09:28Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.4",
         "source": "release",
         "signed": true,
-        "tagOid": "3d883bf0dad6bcfa25af518e923df5b4fe640ac3"
+        "tagOid": "f4cdcd8658c895efd42ec3d84e04ed98b47df69d"
       },
       "releases": [
+        {
+          "tag": "v7.36.4",
+          "name": "fix(ci): read bench binary path from cargo json output (#1401)",
+          "publishedAt": "2026-11-15T11:09:28Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.4",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.3",
           "name": "perf(commits): replace regexes in commit parsing and tag detection with hand-written parsers (#1399)",
@@ -98380,13 +98387,6 @@
           "name": "feat(versioning): opt-in pre-1.0 bump rules (#1379)",
           "publishedAt": "2026-11-10T11:08:25Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.35.6",
-          "name": "refactor(npm): drop void operator from type checks (#1382)",
-          "publishedAt": "2026-11-09T16:46:24Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.35.6",
           "prerelease": false
         }
       ],
