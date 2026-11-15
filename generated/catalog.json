@@ -98333,27 +98333,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-15T10:57:51Z",
+        "pushedAt": "2026-11-15T14:33:19Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-16T11:10:00.290Z"
+        "since": "2026-10-16T14:46:13.271Z"
       },
       "starHistory": {
         "from": "2026-10-15",
         "stars": [7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.4",
-        "publishedAt": "2026-11-15T11:09:28Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.4",
+        "tag": "v7.36.5",
+        "publishedAt": "2026-11-15T14:45:38Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.5",
         "source": "release",
         "signed": true,
-        "tagOid": "f4cdcd8658c895efd42ec3d84e04ed98b47df69d"
+        "tagOid": "cf52c67c921421714bce8147d5c58c34cd3eb170"
       },
       "releases": [
+        {
+          "tag": "v7.36.5",
+          "name": "fix(versioning): use the ISO year for year variables in week templates (#1402)",
+          "publishedAt": "2026-11-15T14:45:38Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.5",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.4",
           "name": "fix(ci): read bench binary path from cargo json output (#1401)",
@@ -98380,13 +98387,6 @@
           "name": "fix(versioning): error on u64 overflow in version template render (#1388)",
           "publishedAt": "2026-11-12T18:43:20Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.1",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.36.0",
-          "name": "feat(versioning): opt-in pre-1.0 bump rules (#1379)",
-          "publishedAt": "2026-11-10T11:08:25Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.0",
           "prerelease": false
         }
       ],

@@ -6080,7 +6080,6 @@
   {"type":"released","slug":"trailbase","at":"2026-10-28T05:17:20.713Z","commit":"e3ea6ffd78502830106561aac3bd47d8c447fb17","from":"v0.35.5","to":"v0.35.6"},
   {"type":"released","slug":"twenty","at":"2026-10-28T05:17:20.713Z","commit":"e3ea6ffd78502830106561aac3bd47d8c447fb17","from":"twenty/v2.51.0","to":"twenty/v2.52.0"},
   {"type":"released","slug":"whodb","at":"2026-10-28T05:17:20.713Z","commit":"e3ea6ffd78502830106561aac3bd47d8c447fb17","from":"0.136.0","to":"0.138.0"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-28T08:51:30.443Z","commit":"a45bb7004bad42798b3f53925dcd8fa86c979719","from":"v7.35.0","to":"v7.35.1"},
   {"type":"released","slug":"act","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"v0.2.89","to":"v0.2.92"},
   {"type":"released","slug":"activepieces","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"0.92.3-hotfix.1","to":"0.92.3-hotfix.2"},
   {"type":"released","slug":"appsmith","at":"2026-10-29T05:17:16.292Z","commit":"2ab4f1758b9b2bc332da7ceda2e221ed31b22b4a","from":"v2.5.1","to":"v2.6.0"},
@@ -8839,5 +8838,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-15T05:17:29.878Z","commit":null,"from":"v13.11","to":"v13.13"},
   {"type":"released","slug":"whitebophir","at":"2026-11-15T05:17:29.878Z","commit":null,"from":"v2.18.35","to":"v2.18.36"},
   {"type":"released","slug":"xpipe","at":"2026-11-15T05:17:29.878Z","commit":null,"from":"24.10","to":"24.11"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-15T11:10:28.103Z","commit":null,"from":"v7.36.3","to":"v7.36.4"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-15T11:10:28.103Z","commit":null,"from":"v7.36.3","to":"v7.36.4"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-15T14:46:38.432Z","commit":null,"from":"v7.36.4","to":"v7.36.5"}
 ]
