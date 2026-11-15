@@ -4,13 +4,13 @@ Build chatbots, agents and RAG workflows in a visual editor and serve them behin
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dify](https://github.com/langgenius/dify) | Python | Other | [1.19.0](https://github.com/langgenius/dify/releases/tag/1.19.0) signed | 161155 | Microsoft Copilot Studio (partial) |
-| [Langflow](https://github.com/langflow-ai/langflow) | Python | MIT | [v1.13.2](https://github.com/langflow-ai/langflow/releases/tag/v1.13.2) signed | 156628 | Microsoft Copilot Studio (partial) |
-| [Sim](https://github.com/simstudioai/sim) | TypeScript | Apache-2.0 | [v0.9.57](https://github.com/simstudioai/sim/releases/tag/v0.9.57) signed | 30138 | Microsoft Copilot Studio (partial) |
+| [Dify](https://github.com/langgenius/dify) | Python | Other | [1.19.0](https://github.com/langgenius/dify/releases/tag/1.19.0) signed | 161177 | Microsoft Copilot Studio (partial) |
+| [Langflow](https://github.com/langflow-ai/langflow) | Python | MIT | [v1.13.2](https://github.com/langflow-ai/langflow/releases/tag/v1.13.2) signed | 156654 | Microsoft Copilot Studio (partial) |
+| [Sim](https://github.com/simstudioai/sim) | TypeScript | Apache-2.0 | [v0.9.58](https://github.com/simstudioai/sim/releases/tag/v0.9.58) signed | 30138 | Microsoft Copilot Studio (partial) |
 | [FastGPT](https://github.com/labring/FastGPT) | TypeScript | Other | [v4.17.4](https://github.com/labring/FastGPT/releases/tag/v4.17.4) signed | 30037 | Microsoft Copilot Studio (partial) |
-| [MaxKB](https://github.com/1Panel-dev/MaxKB) | Python | GPL-3.0 | [v2.10.8-lts](https://github.com/1Panel-dev/MaxKB/releases/tag/v2.10.8-lts) | 23156 | Microsoft Copilot Studio (partial) |
-| [Coze Studio](https://github.com/coze-dev/coze-studio) | TypeScript | Apache-2.0 | [v0.5.1](https://github.com/coze-dev/coze-studio/releases/tag/v0.5.1) signed | 21815 | Microsoft Copilot Studio (partial) |
-| [BISHENG](https://github.com/dataelement/bisheng) | Python | Apache-2.0 | [v3.0.1](https://github.com/dataelement/bisheng/releases/tag/v3.0.1) | 12315 | Microsoft Copilot Studio (partial) |
-| [Rivet](https://github.com/Ironclad/rivet) | TypeScript | MIT | [app-v1.11.3](https://github.com/Ironclad/rivet/releases/tag/app-v1.11.3) | 4727 | Langflow (partial) |
+| [MaxKB](https://github.com/1Panel-dev/MaxKB) | Python | GPL-3.0 | [v2.10.8-lts](https://github.com/1Panel-dev/MaxKB/releases/tag/v2.10.8-lts) | 23158 | Microsoft Copilot Studio (partial) |
+| [Coze Studio](https://github.com/coze-dev/coze-studio) | TypeScript | Apache-2.0 | [v0.5.1](https://github.com/coze-dev/coze-studio/releases/tag/v0.5.1) signed | 21816 | Microsoft Copilot Studio (partial) |
+| [BISHENG](https://github.com/dataelement/bisheng) | Python | Apache-2.0 | [v3.0.1](https://github.com/dataelement/bisheng/releases/tag/v3.0.1) | 12316 | Microsoft Copilot Studio (partial) |
+| [Rivet](https://github.com/Ironclad/rivet) | TypeScript | MIT | [app-v1.11.3](https://github.com/Ironclad/rivet/releases/tag/app-v1.11.3) | 4729 | Langflow (partial) |
 
 [All categories](../README.md#catalog)
