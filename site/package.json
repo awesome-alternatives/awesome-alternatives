@@ -1,6 +1,6 @@
 {
   "name": "awesome-alternatives-site",
-  "version": "0.141.54",
+  "version": "0.141.55",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.20.0",
