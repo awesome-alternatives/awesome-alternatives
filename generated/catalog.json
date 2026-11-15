@@ -98333,27 +98333,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-15T17:38:06Z",
+        "pushedAt": "2026-11-15T19:15:07Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-16T17:38:32.059Z"
+        "since": "2026-10-16T19:27:49.319Z"
       },
       "starHistory": {
         "from": "2026-10-15",
         "stars": [7,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.6",
-        "publishedAt": "2026-11-15T17:37:51Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.6",
+        "tag": "v7.36.7",
+        "publishedAt": "2026-11-15T19:27:09Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.7",
         "source": "release",
         "signed": true,
-        "tagOid": "b490d815a3c269d1a170a7b1324150ae17a22b57"
+        "tagOid": "11e4c5e75c2be2bada2e55528fc9b8a9d268e91b"
       },
       "releases": [
+        {
+          "tag": "api@v2026.11.7",
+          "name": "feat: benchmark tool_configs, reset version, disable skipCi (#279)",
+          "publishedAt": "2026-11-15T19:27:21Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/api%40v2026.11.7",
+          "prerelease": false
+        },
+        {
+          "tag": "v7.36.7",
+          "name": "fix(forge): keep non-latest monorepo packages off GitHub's Latest flag (#1411)",
+          "publishedAt": "2026-11-15T19:27:09Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.7",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.6",
           "name": "refactor(site): read docs from docs/site instead of @ferrflow/doc (#1406)",
@@ -98373,20 +98387,6 @@
           "name": "fix(ci): read bench binary path from cargo json output (#1401)",
           "publishedAt": "2026-11-15T11:09:28Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.4",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.36.3",
-          "name": "perf(commits): replace regexes in commit parsing and tag detection with hand-written parsers (#1399)",
-          "publishedAt": "2026-11-14T16:57:11Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.3",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.36.2",
-          "name": "perf(commits): decode commit messages only for commits that survive scoping (#1397)",
-          "publishedAt": "2026-11-14T16:26:21Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.2",
           "prerelease": false
         }
       ],

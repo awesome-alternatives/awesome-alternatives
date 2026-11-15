@@ -6581,7 +6581,6 @@
   {"type":"released","slug":"zensical","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"v0.0.73","to":"v0.0.74"},
   {"type":"released","slug":"zookeeper","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"release-3.9.6","to":"release-3.9.7"},
   {"type":"released","slug":"zrok","at":"2026-10-31T05:17:21.909Z","commit":"6f633587fdf9dc0aad931dbef6039bdd987db215","from":"v2.0.8","to":"v2.0.9"},
-  {"type":"released","slug":"ferrflow","at":"2026-10-31T15:44:07.711Z","commit":"926811ff984692c1e37914bda2708d8440ffc62a","from":"v7.35.2","to":"v7.35.3"},
   {"type":"released","slug":"bentopdf","at":"2026-10-31T16:51:44.065Z","commit":"a8980296eb712ce7ae82ae68e85a373a2f0edf41","from":"v2.8.10","to":"v2.8.11"},
   {"type":"released","slug":"cdxgen","at":"2026-10-31T16:51:44.065Z","commit":"a8980296eb712ce7ae82ae68e85a373a2f0edf41","from":"v13.5.0","to":"v13.6.0"},
   {"type":"released","slug":"checkstyle","at":"2026-10-31T16:51:44.065Z","commit":"a8980296eb712ce7ae82ae68e85a373a2f0edf41","from":"checkstyle-14.3.0","to":"checkstyle-14.4.0"},
@@ -8839,5 +8838,6 @@
   {"type":"released","slug":"xpipe","at":"2026-11-15T05:17:29.878Z","commit":null,"from":"24.10","to":"24.11"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T11:10:28.103Z","commit":null,"from":"v7.36.3","to":"v7.36.4"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T14:46:38.432Z","commit":null,"from":"v7.36.4","to":"v7.36.5"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-15T17:38:54.577Z","commit":null,"from":"v7.36.5","to":"v7.36.6"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-15T17:38:54.577Z","commit":null,"from":"v7.36.5","to":"v7.36.6"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-15T19:28:09.402Z","commit":null,"from":"v7.36.6","to":"v7.36.7"}
 ]
