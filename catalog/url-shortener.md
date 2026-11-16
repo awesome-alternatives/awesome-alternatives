@@ -4,12 +4,12 @@ Short links on your own domain, with click statistics.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Dub](https://github.com/dubinc/dub.link) | TypeScript | Other | none | 25169 | Bitly (full) |
-| [YOURLS](https://github.com/YOURLS/YOURLS) | PHP | MIT | [1.10.6](https://github.com/YOURLS/YOURLS/releases/tag/1.10.6) signed | 12306 | Bitly (full) |
-| [Kutt](https://github.com/thedevs-network/kutt) | JavaScript | MIT | [v3.2.6](https://github.com/thedevs-network/kutt/releases/tag/v3.2.6) | 11206 | Bitly (full) |
-| [Sink](https://github.com/miantiao-me/Sink) | TypeScript | AGPL-3.0 | [v0.3.1](https://github.com/miantiao-me/Sink/releases/tag/v0.3.1) | 7278 | Bitly (full) |
-| [Shlink](https://github.com/shlinkio/shlink) | PHP | MIT | [v5.1.8](https://github.com/shlinkio/shlink/releases/tag/v5.1.8) | 5424 | Bitly (full) |
-| [Slash](https://github.com/yourselfhosted/slash) | TypeScript | AGPL-3.0 | [v0.5.3](https://github.com/yourselfhosted/slash/releases/tag/v0.5.3) | 3192 | Bitly (partial) |
-| [Chhoto URL](https://github.com/SinTan1729/chhoto-url) | Rust | MIT | [7.11.4](https://github.com/SinTan1729/chhoto-url/releases/tag/7.11.4) signed | 1015 | Bitly (partial) |
+| [Dub](https://github.com/dubinc/dub.link) | TypeScript | Other | none | 25175 | Bitly (full) |
+| [YOURLS](https://github.com/YOURLS/YOURLS) | PHP | MIT | [1.10.6](https://github.com/YOURLS/YOURLS/releases/tag/1.10.6) signed | 12305 | Bitly (full) |
+| [Kutt](https://github.com/thedevs-network/kutt) | JavaScript | MIT | [v3.2.6](https://github.com/thedevs-network/kutt/releases/tag/v3.2.6) | 11207 | Bitly (full) |
+| [Sink](https://github.com/miantiao-me/Sink) | TypeScript | AGPL-3.0 | [v0.3.1](https://github.com/miantiao-me/Sink/releases/tag/v0.3.1) | 7280 | Bitly (full) |
+| [Shlink](https://github.com/shlinkio/shlink) | PHP | MIT | [v5.1.8](https://github.com/shlinkio/shlink/releases/tag/v5.1.8) | 5427 | Bitly (full) |
+| [Slash](https://github.com/yourselfhosted/slash) | TypeScript | AGPL-3.0 | [v0.5.3](https://github.com/yourselfhosted/slash/releases/tag/v0.5.3) | 3193 | Bitly (partial) |
+| [Chhoto URL](https://github.com/SinTan1729/chhoto-url) | Rust | MIT | [7.11.4](https://github.com/SinTan1729/chhoto-url/releases/tag/7.11.4) signed | 1016 | Bitly (partial) |
 
 [All categories](../README.md#catalog)

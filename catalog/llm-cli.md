@@ -4,9 +4,9 @@ Prompt language models from a terminal and pipe their answers into other command
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Fabric](https://github.com/danielmiessler/Fabric) | Go | MIT | [v1.4.575](https://github.com/danielmiessler/Fabric/releases/tag/v1.4.575) | 44640 | ChatGPT (partial) |
-| [LLM](https://github.com/simonw/llm) | Python | Apache-2.0 | [0.37.2](https://github.com/simonw/llm/releases/tag/0.37.2) | 12760 | ChatGPT (partial) |
-| [ShellGPT](https://github.com/TheR1D/shell_gpt) | Python | MIT | [1.5.1](https://github.com/TheR1D/shell_gpt/releases/tag/1.5.1) signed | 12309 | ChatGPT (partial) |
+| [Fabric](https://github.com/danielmiessler/Fabric) | Go | MIT | [v1.4.576](https://github.com/danielmiessler/Fabric/releases/tag/v1.4.576) | 44647 | ChatGPT (partial) |
+| [LLM](https://github.com/simonw/llm) | Python | Apache-2.0 | [0.37.2](https://github.com/simonw/llm/releases/tag/0.37.2) | 12764 | ChatGPT (partial) |
+| [ShellGPT](https://github.com/TheR1D/shell_gpt) | Python | MIT | [1.5.1](https://github.com/TheR1D/shell_gpt/releases/tag/1.5.1) signed | 12313 | ChatGPT (partial) |
 | [tgpt](https://github.com/aandrew-me/tgpt) | Go | GPL-3.0 | [v2.16.0](https://github.com/aandrew-me/tgpt/releases/tag/v2.16.0) | 3295 | ChatGPT (partial) |
 | [oterm](https://github.com/ggozad/oterm) | Python | MIT | [0.26.1](https://github.com/ggozad/oterm/releases/tag/0.26.1) signed | 2447 | ChatGPT (partial) |
 

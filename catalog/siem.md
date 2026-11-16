@@ -4,8 +4,8 @@ Collect security events and logs from hosts and networks, correlate them and rai
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Wazuh](https://github.com/wazuh/wazuh) | C++ | Other | [v4.14.10](https://github.com/wazuh/wazuh/releases/tag/v4.14.10) signed | 17740 | Splunk (partial), CrowdStrike Falcon (partial) |
+| [Wazuh](https://github.com/wazuh/wazuh) | C++ | Other | [v4.14.10](https://github.com/wazuh/wazuh/releases/tag/v4.14.10) signed | 17759 | Splunk (partial), CrowdStrike Falcon (partial) |
 | [Security Onion](https://github.com/Security-Onion-Solutions/securityonion) | Shell | Other | [3.4.0-20261102](https://github.com/Security-Onion-Solutions/securityonion/releases/tag/3.4.0-20261102) signed | 4992 | Splunk (partial) |
-| [Malcolm](https://github.com/cisagov/Malcolm) | Python | Other | [v26.10.0](https://github.com/cisagov/Malcolm/releases/tag/v26.10.0) signed | 2600 | Security Onion (partial) |
+| [Malcolm](https://github.com/cisagov/Malcolm) | Python | Other | [v26.10.0](https://github.com/cisagov/Malcolm/releases/tag/v26.10.0) signed | 2601 | Security Onion (partial) |
 
 [All categories](../README.md#catalog)

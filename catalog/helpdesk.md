@@ -4,19 +4,19 @@ Handle customer requests from email, chat and other channels as tickets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Chatwoot](https://github.com/chatwoot/chatwoot) | Ruby | Other | [v4.19.1](https://github.com/chatwoot/chatwoot/releases/tag/v4.19.1) | 39901 | Intercom (full), Zendesk (partial) |
+| [Chatwoot](https://github.com/chatwoot/chatwoot) | Ruby | Other | [v4.19.1](https://github.com/chatwoot/chatwoot/releases/tag/v4.19.1) | 39949 | Intercom (full), Zendesk (partial) |
 | [UVdesk](https://github.com/uvdesk/community-skeleton) | CSS | OSL-3.0 | [v1.1.8](https://github.com/uvdesk/community-skeleton/releases/tag/v1.1.8) signed | 19643 | Zendesk (partial), Freshdesk (partial) |
-| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [12.0.2](https://github.com/glpi-project/glpi/releases/tag/12.0.2) | 6597 | ServiceNow (partial) |
-| [Zammad](https://github.com/zammad/zammad) | Ruby | AGPL-3.0 | [7.2.3](https://github.com/zammad/zammad/releases/tag/7.2.3) signed | 6115 | Zendesk (full), Freshdesk (full) |
-| [FreeScout](https://github.com/freescout-help-desk/freescout) | PHP | AGPL-3.0 | [1.8.251](https://github.com/freescout-help-desk/freescout/releases/tag/1.8.251) | 4669 | Zendesk (partial) |
-| [osTicket](https://github.com/osTicket/osTicket) | PHP | GPL-2.0 | [v1.18.4](https://github.com/osTicket/osTicket/releases/tag/v1.18.4) | 4009 | Zendesk (partial), Freshdesk (partial) |
-| [Chaskiq](https://github.com/chaskiq/chaskiq) | TypeScript | Other | [2.0.3](https://github.com/chaskiq/chaskiq/releases/tag/2.0.3) signed | 3584 | Intercom (full) |
+| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [12.0.2](https://github.com/glpi-project/glpi/releases/tag/12.0.2) | 6618 | ServiceNow (partial) |
+| [Zammad](https://github.com/zammad/zammad) | Ruby | AGPL-3.0 | [7.2.3](https://github.com/zammad/zammad/releases/tag/7.2.3) signed | 6121 | Zendesk (full), Freshdesk (full) |
+| [FreeScout](https://github.com/freescout-help-desk/freescout) | PHP | AGPL-3.0 | [1.8.251](https://github.com/freescout-help-desk/freescout/releases/tag/1.8.251) | 4670 | Zendesk (partial) |
+| [osTicket](https://github.com/osTicket/osTicket) | PHP | GPL-2.0 | [v1.18.4](https://github.com/osTicket/osTicket/releases/tag/v1.18.4) | 4007 | Zendesk (partial), Freshdesk (partial) |
+| [Chaskiq](https://github.com/chaskiq/chaskiq) | TypeScript | Other | [2.0.3](https://github.com/chaskiq/chaskiq/releases/tag/2.0.3) signed | 3585 | Intercom (full) |
 | [Helpdesk](https://github.com/frappe/helpdesk) | Vue | AGPL-3.0 | [v16.1.0](https://github.com/frappe/helpdesk/releases/tag/v16.1.0) | 3503 | Zendesk (partial), Freshdesk (partial) |
-| [Libredesk](https://github.com/abhinavxd/libredesk) | Go | AGPL-3.0 | [v2.9.2](https://github.com/abhinavxd/libredesk/releases/tag/v2.9.2) signed | 3154 | Zendesk (partial), Freshdesk (partial), Intercom (partial) |
+| [Libredesk](https://github.com/abhinavxd/libredesk) | Go | AGPL-3.0 | [v2.9.2](https://github.com/abhinavxd/libredesk/releases/tag/v2.9.2) signed | 3155 | Zendesk (partial), Freshdesk (partial), Intercom (partial) |
 | [Live Helper Chat](https://github.com/LiveHelperChat/livehelperchat) | PHP | Apache-2.0 | [5.00v](https://github.com/LiveHelperChat/livehelperchat/releases/tag/5.00v) | 2258 | Intercom (partial) |
 | [Trudesk](https://github.com/polonel/trudesk) | JavaScript | Other | [v1.2.11](https://github.com/polonel/trudesk/releases/tag/v1.2.11) | 1496 | Zendesk (partial) |
 | [Faveo Helpdesk](https://github.com/faveosuite/faveo-helpdesk) | PHP | OSL-3.0 | [v2.0.3](https://github.com/faveosuite/faveo-helpdesk/releases/tag/v2.0.3) | 1258 | Zendesk (partial) |
-| [iTop](https://github.com/Combodo/iTop) | PHP | AGPL-3.0 | [3.3.0-1](https://github.com/Combodo/iTop/releases/tag/3.3.0-1) signed | 1221 | ServiceNow (partial) |
+| [iTop](https://github.com/Combodo/iTop) | PHP | AGPL-3.0 | [3.3.0-1](https://github.com/Combodo/iTop/releases/tag/3.3.0-1) signed | 1222 | ServiceNow (partial) |
 | [Request Tracker](https://github.com/bestpractical/rt) | Perl | GPL-2.0 | [rt-6.0.4](https://github.com/bestpractical/rt/releases/tag/rt-6.0.4) signed | 1174 | Zendesk (partial) |
 | [Znuny](https://github.com/znuny/Znuny) | Perl | GPL-3.0 | [rel-7_3_8](https://github.com/znuny/Znuny/releases/tag/rel-7_3_8) | 613 | ServiceNow (partial), Zendesk (partial) |
 | [OTOBO](https://github.com/RotherOSS/otobo) | Perl | GPL-3.0 | [rel-11_1_1](https://github.com/RotherOSS/otobo/releases/tag/rel-11_1_1) | 341 | ServiceNow (partial), Zendesk (partial) |

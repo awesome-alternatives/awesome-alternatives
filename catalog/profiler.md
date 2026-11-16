@@ -4,11 +4,11 @@ Measure where a program spends its time and memory, draw it as flame graphs or t
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29276 | none |
-| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.15.0](https://github.com/wolfpld/tracy/releases/tag/v0.15.0) signed | 17124 | none |
-| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.3](https://github.com/benfred/py-spy/releases/tag/v0.4.3) | 15645 | none |
-| [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15417 | none |
-| [Scalene](https://github.com/plasma-umass/scalene) | Python | Apache-2.0 | [v2.4.0](https://github.com/plasma-umass/scalene/releases/tag/v2.4.0) | 13560 | none |
+| [hyperfine](https://github.com/sharkdp/hyperfine) | Rust | Apache-2.0 | [v2.0.0](https://github.com/sharkdp/hyperfine/releases/tag/v2.0.0) | 29282 | none |
+| [Tracy](https://github.com/wolfpld/tracy) | C++ | Other | [v0.15.0](https://github.com/wolfpld/tracy/releases/tag/v0.15.0) signed | 17128 | none |
+| [py-spy](https://github.com/benfred/py-spy) | Rust | MIT | [v0.4.3](https://github.com/benfred/py-spy/releases/tag/v0.4.3) | 15647 | none |
+| [Memray](https://github.com/bloomberg/memray) | Python | Apache-2.0 | [v1.20.0](https://github.com/bloomberg/memray/releases/tag/v1.20.0) signed | 15418 | none |
+| [Scalene](https://github.com/plasma-umass/scalene) | Python | Apache-2.0 | [v2.4.0](https://github.com/plasma-umass/scalene/releases/tag/v2.4.0) | 13562 | none |
 | [pprof](https://github.com/google/pprof) | Go | Apache-2.0 | none | 9326 | none |
 | [async-profiler](https://github.com/async-profiler/async-profiler) | C++ | Apache-2.0 | [v4.6](https://github.com/async-profiler/async-profiler/releases/tag/v4.6) signed | 9193 | JProfiler (partial), YourKit Java Profiler (partial) |
 | [pyinstrument](https://github.com/joerick/pyinstrument) | Python | BSD-3-Clause | [v5.1.3](https://github.com/joerick/pyinstrument/releases/tag/v5.1.3) | 8032 | none |
