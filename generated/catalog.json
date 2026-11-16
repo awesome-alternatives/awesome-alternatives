@@ -282466,27 +282466,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-16T02:30:17Z",
+        "pushedAt": "2026-11-16T08:21:27Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-17T05:17:27.319Z"
+        "since": "2026-10-17T08:22:02.434Z"
       },
       "starHistory": {
         "from": "2026-10-16",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.4",
-        "publishedAt": "2026-11-14T16:19:27Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.4",
+        "tag": "v0.56.5",
+        "publishedAt": "2026-11-16T08:21:29Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.5",
         "source": "release",
         "signed": false,
-        "tagOid": "f2c163599f2871501903d58e48cd180df9295b9d"
+        "tagOid": "92f08dea5574c680b4fea91196ef17752536475a"
       },
       "releases": [
+        {
+          "tag": "v0.56.5",
+          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.5.1 (#465)",
+          "publishedAt": "2026-11-16T08:21:29Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.5",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.4",
           "name": "refactor(telemetry): use @ferrlabs/telemetry (#450)",
@@ -282514,33 +282521,13 @@
           "publishedAt": "2026-11-11T22:24:47Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.1",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.0",
-          "name": "feat(telemetry): report site errors and keep the host when a query contains @ (#439)",
-          "publishedAt": "2026-11-11T10:37:26Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.0",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
