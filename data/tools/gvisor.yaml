@@ -1,5 +1,5 @@
 name: gVisor
-repository: https://github.com/google/gvisor
+repository: https://github.com/gvisor/gvisor
 category: container-engine
 replaces:
   - tool: runc
