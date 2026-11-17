@@ -7997,7 +7997,6 @@
   {"type":"released","slug":"werf","at":"2026-11-10T09:37:51.027Z","commit":"b2bf09d947dfc3c26618ecce744466bdb9b81b89","from":"v2.83.0","to":"v2.84.0"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":"b2bf09d947dfc3c26618ecce744466bdb9b81b89","from":"v11.26.0","to":"v11.26.1"},
   {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":"e8386a233d277d2609822bccc6540bc761e7a6b8","from":"v7.35.6","to":"v7.36.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T15:43:52.014Z","commit":"5a12355948931947423bbcdd7365db91a82eeb02","from":"v0.53.5","to":"v0.54.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":"03a3a624fff7f38f71ca5be72e807c35d9fad654","from":"site@2026.11.4","to":"site@2026.11.5"},
   {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":"255f35ca69b9ff9beba2edce91fc5a4d6dd229f9","from":"v0.54.0","to":"v0.55.0"},
   {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":"29a0c62e2098e1db325d1c315ba12b15f238d959","from":"v0.55.0","to":"v0.55.1"},
@@ -9043,5 +9042,6 @@
   {"type":"released","slug":"worklenz","at":"2026-11-17T05:17:23.453Z","commit":null,"from":"v3.4.0","to":"v3.4.1"},
   {"type":"released","slug":"ytt","at":"2026-11-17T05:17:23.453Z","commit":null,"from":"v0.55.4","to":"v0.56.0"},
   {"type":"released","slug":"zrok","at":"2026-11-17T05:17:23.453Z","commit":null,"from":"v2.0.9","to":"v2.0.10"},
-  {"type":"released","slug":"zwave-js-ui","at":"2026-11-17T05:17:23.453Z","commit":null,"from":"v11.26.2","to":"v11.27.0"}
+  {"type":"released","slug":"zwave-js-ui","at":"2026-11-17T05:17:23.453Z","commit":null,"from":"v11.26.2","to":"v11.27.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-17T12:03:39.277Z","commit":null,"from":"v0.56.5","to":"v0.56.6"}
 ]
