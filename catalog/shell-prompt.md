@@ -4,15 +4,15 @@ Customisable prompts showing git state, runtimes and context.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Shell | MIT | none | 190651 | Prezto (full) |
-| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.27.0](https://github.com/starship/starship/releases/tag/v1.27.0) signed | 60744 | Powerlevel10k (full), Oh My Zsh (partial) |
-| [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Shell | MIT | [v1.20.0](https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0) signed | 55382 | Starship (partial), Spaceship (full) |
-| [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) | Go | MIT | [v32.1.0](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v32.1.0) | 23760 | Powerlevel10k (full), Oh My Zsh (partial) |
-| [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) | Shell | MIT | [v4.22.6](https://github.com/spaceship-prompt/spaceship-prompt/releases/tag/v4.22.6) | 20605 | Powerlevel10k (full), Oh My Zsh (partial) |
-| [Bash-it](https://github.com/Bash-it/bash-it) | Shell | MIT | [v3.2.0](https://github.com/Bash-it/bash-it/releases/tag/v3.2.0) signed | 15302 | Oh My Bash (full) |
-| [Prezto](https://github.com/sorin-ionescu/prezto) | Shell | MIT | none | 14581 | Oh My Zsh (full) |
+| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Shell | MIT | none | 190637 | Prezto (full) |
+| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.27.0](https://github.com/starship/starship/releases/tag/v1.27.0) signed | 60759 | Powerlevel10k (full), Oh My Zsh (partial) |
+| [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Shell | MIT | [v1.20.0](https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0) signed | 55385 | Starship (partial), Spaceship (full) |
+| [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) | Go | MIT | [v32.1.0](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v32.1.0) | 23768 | Powerlevel10k (full), Oh My Zsh (partial) |
+| [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) | Shell | MIT | [v4.22.6](https://github.com/spaceship-prompt/spaceship-prompt/releases/tag/v4.22.6) | 20606 | Powerlevel10k (full), Oh My Zsh (partial) |
+| [Bash-it](https://github.com/Bash-it/bash-it) | Shell | MIT | [v3.2.0](https://github.com/Bash-it/bash-it/releases/tag/v3.2.0) signed | 15305 | Oh My Bash (full) |
+| [Prezto](https://github.com/sorin-ionescu/prezto) | Shell | MIT | none | 14580 | Oh My Zsh (full) |
 | [Pure](https://github.com/sindresorhus/pure) | Shell | MIT | [v1.28.4](https://github.com/sindresorhus/pure/releases/tag/v1.28.4) | 14468 | Powerlevel10k (full), Oh My Zsh (partial) |
-| [Oh My Bash](https://github.com/ohmybash/oh-my-bash) | Shell | MIT | none | 7773 | Bash-it (full), Oh My Zsh (partial) |
-| [Zim](https://github.com/zimfw/zimfw) | Shell | MIT | [v1.21.0](https://github.com/zimfw/zimfw/releases/tag/v1.21.0) signed | 4725 | Oh My Zsh (full) |
+| [Oh My Bash](https://github.com/ohmybash/oh-my-bash) | Shell | MIT | none | 7775 | Bash-it (full), Oh My Zsh (partial) |
+| [Zim](https://github.com/zimfw/zimfw) | Shell | MIT | [v1.21.0](https://github.com/zimfw/zimfw/releases/tag/v1.21.0) signed | 4724 | Oh My Zsh (full) |
 
 [All categories](../README.md#catalog)

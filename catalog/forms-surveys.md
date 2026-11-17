@@ -4,13 +4,13 @@ Build forms and surveys and collect the answers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.2.0](https://github.com/formbricks/formbricks/releases/tag/6.2.0) signed | 13247 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
-| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.1](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1) signed | 10629 | Typeform (partial) |
-| [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.7](https://github.com/heyform/heyform/releases/tag/v3.0.7) | 9078 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
-| [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.8.4](https://github.com/OpnForm/OpnForm/releases/tag/v2.8.4) signed | 4016 | Typeform (full), Google Forms (full) |
-| [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.9.1+261102](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.9.1%2B261102) | 3797 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |
+| [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.2.0](https://github.com/formbricks/formbricks/releases/tag/6.2.0) signed | 13248 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
+| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.1](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1) signed | 10633 | Typeform (partial) |
+| [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.7](https://github.com/heyform/heyform/releases/tag/v3.0.7) | 9080 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
+| [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.8.5](https://github.com/OpnForm/OpnForm/releases/tag/v2.8.5) | 4017 | Typeform (full), Google Forms (full) |
+| [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.10.0+261109](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.10.0%2B261109) | 3798 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |
 | [Form.io](https://github.com/formio/formio) | JavaScript | OSL-3.0 | [v4.11.0](https://github.com/formio/formio/releases/tag/v4.11.0) | 2329 | Jotform (partial) |
-| [Nextcloud Forms](https://github.com/nextcloud/forms) | JavaScript | AGPL-3.0 | [v5.4.2](https://github.com/nextcloud/forms/releases/tag/v5.4.2) signed | 384 | Google Forms (full) |
+| [Nextcloud Forms](https://github.com/nextcloud/forms) | JavaScript | AGPL-3.0 | [v5.4.2](https://github.com/nextcloud/forms/releases/tag/v5.4.2) signed | 385 | Google Forms (full) |
 | [ODK Central](https://github.com/getodk/central) | JavaScript | Apache-2.0 | [v2026.3.1](https://github.com/getodk/central/releases/tag/v2026.3.1) signed | 233 | Google Forms (partial) |
 | [KoboToolbox](https://github.com/kobotoolbox/kpi) | Python | AGPL-3.0 | [2.026.37g](https://github.com/kobotoolbox/kpi/releases/tag/2.026.37g) | 191 | Google Forms (partial) |
 

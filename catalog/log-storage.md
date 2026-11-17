@@ -4,11 +4,11 @@ Store logs at volume and search them, the back end behind log dashboards.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Loki](https://github.com/grafana/loki) | Go | AGPL-3.0 | [v3.7.10](https://github.com/grafana/loki/releases/tag/v3.7.10) signed | 29161 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
-| [OpenObserve](https://github.com/openobserve/openobserve) | TypeScript | AGPL-3.0 | [v1.2.0-rc2](https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc2) | 23068 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
-| [Quickwit](https://github.com/quickwit-oss/quickwit) | Rust | Apache-2.0 | [v0.9.3](https://github.com/quickwit-oss/quickwit/releases/tag/v0.9.3) signed | 11796 | Elasticsearch (partial), Splunk (partial) |
+| [Loki](https://github.com/grafana/loki) | Go | AGPL-3.0 | [v3.7.10](https://github.com/grafana/loki/releases/tag/v3.7.10) signed | 29169 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
+| [OpenObserve](https://github.com/openobserve/openobserve) | TypeScript | AGPL-3.0 | [v1.2.0-rc2](https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc2) | 23079 | Elasticsearch (partial), Splunk (partial), Datadog (partial) |
+| [Quickwit](https://github.com/quickwit-oss/quickwit) | Rust | Apache-2.0 | [v0.9.3](https://github.com/quickwit-oss/quickwit/releases/tag/v0.9.3) signed | 11799 | Elasticsearch (partial), Splunk (partial) |
 | [Graylog](https://github.com/Graylog2/graylog2-server) | Java | Other | [7.2.2](https://github.com/Graylog2/graylog2-server/releases/tag/7.2.2) | 8179 | Splunk (full) |
-| [Parseable](https://github.com/parseablehq/parseable) | Rust | AGPL-3.0 | [v3.2.6](https://github.com/parseablehq/parseable/releases/tag/v3.2.6) signed | 2579 | Splunk (partial) |
-| [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs) | Go | Apache-2.0 | [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0) signed | 2514 | Elasticsearch (partial), Loki (full), Splunk (partial) |
+| [Parseable](https://github.com/parseablehq/parseable) | Rust | AGPL-3.0 | [v3.2.6](https://github.com/parseablehq/parseable/releases/tag/v3.2.6) signed | 2581 | Splunk (partial) |
+| [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs) | Go | Apache-2.0 | [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0) signed | 2519 | Elasticsearch (partial), Loki (full), Splunk (partial) |
 
 [All categories](../README.md#catalog)

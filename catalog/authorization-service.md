@@ -4,9 +4,9 @@ Decide who may do what in an application, with policies or relationship-based pe
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Open Policy Agent](https://github.com/open-policy-agent/opa) | Go | Apache-2.0 | [v1.22.4](https://github.com/open-policy-agent/opa/releases/tag/v1.22.4) | 12473 | AWS Verified Permissions (partial) |
-| [SpiceDB](https://github.com/authzed/spicedb) | Go | Apache-2.0 | [v1.57.1](https://github.com/authzed/spicedb/releases/tag/v1.57.1) signed | 7219 | Oso Cloud (partial), AWS Verified Permissions (partial) |
-| [OpenFGA](https://github.com/openfga/openfga) | Go | Apache-2.0 | [v1.22.1](https://github.com/openfga/openfga/releases/tag/v1.22.1) signed | 6147 | Auth0 (partial), AWS Verified Permissions (partial) |
+| [Open Policy Agent](https://github.com/open-policy-agent/opa) | Go | Apache-2.0 | [v1.22.4](https://github.com/open-policy-agent/opa/releases/tag/v1.22.4) | 12479 | AWS Verified Permissions (partial) |
+| [SpiceDB](https://github.com/authzed/spicedb) | Go | Apache-2.0 | [v1.57.1](https://github.com/authzed/spicedb/releases/tag/v1.57.1) signed | 7223 | Oso Cloud (partial), AWS Verified Permissions (partial) |
+| [OpenFGA](https://github.com/openfga/openfga) | Go | Apache-2.0 | [v1.22.1](https://github.com/openfga/openfga/releases/tag/v1.22.1) signed | 6152 | Auth0 (partial), AWS Verified Permissions (partial) |
 | [Permify](https://github.com/Permify/permify) | Go | AGPL-3.0 | [v1.7.6](https://github.com/Permify/permify/releases/tag/v1.7.6) signed | 5973 | Oso Cloud (partial), AWS Verified Permissions (partial) |
 | [Ory Keto](https://github.com/ory/keto) | Go | Apache-2.0 | [v26.2.0](https://github.com/ory/keto/releases/tag/v26.2.0) | 5424 | Oso Cloud (partial) |
 | [Cerbos](https://github.com/cerbos/cerbos) | Go | Apache-2.0 | [v0.57.0](https://github.com/cerbos/cerbos/releases/tag/v0.57.0) signed | 4661 | AWS Verified Permissions (partial), Oso Cloud (partial) |

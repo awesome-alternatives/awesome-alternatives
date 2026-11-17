@@ -4,8 +4,8 @@ Alternative web front ends to YouTube, Reddit and other sites, without ads, trac
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Invidious](https://github.com/iv-org/invidious) | Crystal | AGPL-3.0 | [v2.20261114.0](https://github.com/iv-org/invidious/releases/tag/v2.20261114.0) signed | 26036 | YouTube (partial) |
-| [Piped](https://github.com/TeamPiped/Piped) | Vue | AGPL-3.0 | none | 10328 | YouTube (partial) |
-| [Redlib](https://github.com/redlib-org/redlib) | Rust | AGPL-3.0 | [v0.40.0](https://github.com/redlib-org/redlib/releases/tag/v0.40.0) | 4016 | Reddit (partial) |
+| [Invidious](https://github.com/iv-org/invidious) | Crystal | AGPL-3.0 | [v2.20261114.0](https://github.com/iv-org/invidious/releases/tag/v2.20261114.0) signed | 26070 | YouTube (partial) |
+| [Piped](https://github.com/TeamPiped/Piped) | Vue | AGPL-3.0 | none | 10329 | YouTube (partial) |
+| [Redlib](https://github.com/redlib-org/redlib) | Rust | AGPL-3.0 | [v0.40.0](https://github.com/redlib-org/redlib/releases/tag/v0.40.0) | 4018 | Reddit (partial) |
 
 [All categories](../README.md#catalog)
