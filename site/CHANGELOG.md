@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.67] - 2026-11-18
+
+### Bug Fixes
+
+- chore(catalog): refresh gvisor
+- chore(catalog): refresh olake
+
 ## [0.141.66] - 2026-11-18
 
 ### Bug Fixes
