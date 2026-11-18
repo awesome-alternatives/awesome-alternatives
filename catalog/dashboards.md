@@ -4,10 +4,10 @@ Build dashboards and explore metrics, logs and traces from a web UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.3.1](https://github.com/grafana/grafana/releases/tag/v13.3.1) | 77953 | Kibana (partial), Datadog (partial), Splunk (partial) |
-| [Kibana](https://github.com/elastic/kibana) | TypeScript | Other | [v9.5.6](https://github.com/elastic/kibana/releases/tag/v9.5.6) signed | 21379 | Splunk (partial), Datadog (partial), Grafana (partial) |
-| [HyperDX](https://github.com/ClickHouse/ClickStack) | TypeScript | MIT | [@hyperdx/api@2.45.0](https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0) | 10045 | Datadog (partial) |
-| [Perses](https://github.com/perses/perses) | Go | Apache-2.0 | [v0.55.1](https://github.com/perses/perses/releases/tag/v0.55.1) signed | 2539 | Grafana (partial) |
-| [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) | TypeScript | Apache-2.0 | [3.9.0](https://github.com/opensearch-project/OpenSearch-Dashboards/releases/tag/3.9.0) signed | 2144 | Kibana (full) |
+| [Grafana](https://github.com/grafana/grafana) | TypeScript | AGPL-3.0 | [v13.3.1](https://github.com/grafana/grafana/releases/tag/v13.3.1) | 77978 | Kibana (partial), Datadog (partial), Splunk (partial) |
+| [Kibana](https://github.com/elastic/kibana) | TypeScript | Other | [v9.5.6](https://github.com/elastic/kibana/releases/tag/v9.5.6) signed | 21382 | Splunk (partial), Datadog (partial), Grafana (partial) |
+| [HyperDX](https://github.com/ClickHouse/ClickStack) | TypeScript | MIT | [@hyperdx/api@2.45.0](https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0) | 10050 | Datadog (partial) |
+| [Perses](https://github.com/perses/perses) | Go | Apache-2.0 | [v0.55.1](https://github.com/perses/perses/releases/tag/v0.55.1) signed | 2543 | Grafana (partial) |
+| [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) | TypeScript | Apache-2.0 | [3.9.0](https://github.com/opensearch-project/OpenSearch-Dashboards/releases/tag/3.9.0) signed | 2146 | Kibana (full) |
 
 [All categories](../README.md#catalog)

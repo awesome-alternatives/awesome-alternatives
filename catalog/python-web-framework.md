@@ -4,16 +4,16 @@ Build HTTP APIs and sites in Python.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [FastAPI](https://github.com/fastapi/fastapi) | Python | MIT | [0.163.1](https://github.com/fastapi/fastapi/releases/tag/0.163.1) signed | 104820 | Flask (full), Django REST framework (partial) |
-| [Django](https://github.com/django/django) | Python | BSD-3-Clause | [6.1.3](https://github.com/django/django/releases/tag/6.1.3) signed | 91821 | none |
-| [Flask](https://github.com/pallets/flask) | Python | BSD-3-Clause | [3.1.3](https://github.com/pallets/flask/releases/tag/3.1.3) signed | 75187 | none |
-| [Django REST framework](https://github.com/encode/django-rest-framework) | Python | Other | [3.18.3](https://github.com/encode/django-rest-framework/releases/tag/3.18.3) signed | 30242 | none |
-| [Reflex](https://github.com/reflex-dev/reflex) | Python | Apache-2.0 | [v0.11.0](https://github.com/reflex-dev/reflex/releases/tag/v0.11.0) signed | 29027 | none |
-| [Tornado](https://github.com/tornadoweb/tornado) | Python | Apache-2.0 | [v6.6.1](https://github.com/tornadoweb/tornado/releases/tag/v6.6.1) | 22166 | none |
-| [Sanic](https://github.com/sanic-org/sanic) | Python | MIT | [v25.12.1](https://github.com/sanic-org/sanic/releases/tag/v25.12.1) signed | 18634 | Flask (full) |
-| [Starlette](https://github.com/Kludex/starlette) | Python | BSD-3-Clause | [1.10.0](https://github.com/Kludex/starlette/releases/tag/1.10.0) signed | 12726 | Flask (partial) |
-| [Falcon](https://github.com/falconry/falcon) | Python | Apache-2.0 | [4.4.0](https://github.com/falconry/falcon/releases/tag/4.4.0) | 9818 | Flask (partial) |
+| [FastAPI](https://github.com/fastapi/fastapi) | Python | MIT | [0.163.2](https://github.com/fastapi/fastapi/releases/tag/0.163.2) signed | 105003 | Flask (full), Django REST framework (partial) |
+| [Django](https://github.com/django/django) | Python | BSD-3-Clause | [6.1.3](https://github.com/django/django/releases/tag/6.1.3) signed | 91996 | none |
+| [Flask](https://github.com/pallets/flask) | Python | BSD-3-Clause | [3.1.3](https://github.com/pallets/flask/releases/tag/3.1.3) signed | 75375 | none |
+| [Django REST framework](https://github.com/encode/django-rest-framework) | Python | Other | [3.18.3](https://github.com/encode/django-rest-framework/releases/tag/3.18.3) signed | 30244 | none |
+| [Reflex](https://github.com/reflex-dev/reflex) | Python | Apache-2.0 | [v0.11.0](https://github.com/reflex-dev/reflex/releases/tag/v0.11.0) signed | 29034 | none |
+| [Tornado](https://github.com/tornadoweb/tornado) | Python | Apache-2.0 | [v6.6.1](https://github.com/tornadoweb/tornado/releases/tag/v6.6.1) | 22167 | none |
+| [Sanic](https://github.com/sanic-org/sanic) | Python | MIT | [v25.12.1](https://github.com/sanic-org/sanic/releases/tag/v25.12.1) signed | 18635 | Flask (full) |
+| [Starlette](https://github.com/Kludex/starlette) | Python | BSD-3-Clause | [1.10.0](https://github.com/Kludex/starlette/releases/tag/1.10.0) signed | 12727 | Flask (partial) |
+| [Falcon](https://github.com/falconry/falcon) | Python | Apache-2.0 | [4.4.0](https://github.com/falconry/falcon/releases/tag/4.4.0) | 9821 | Flask (partial) |
 | [Bottle](https://github.com/bottlepy/bottle) | Python | MIT | [0.13.4](https://github.com/bottlepy/bottle/releases/tag/0.13.4) | 8802 | Flask (full) |
-| [Litestar](https://github.com/litestar-org/litestar) | Python | MIT | [v2.25.0](https://github.com/litestar-org/litestar/releases/tag/v2.25.0) signed | 8561 | Flask (full), Django REST framework (partial) |
+| [Litestar](https://github.com/litestar-org/litestar) | Python | MIT | [v2.25.0](https://github.com/litestar-org/litestar/releases/tag/v2.25.0) signed | 8563 | Flask (full), Django REST framework (partial) |
 
 [All categories](../README.md#catalog)

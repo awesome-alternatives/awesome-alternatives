@@ -4,11 +4,11 @@ Query laptops and servers, hunt for threats on them and collect forensic evidenc
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [osquery](https://github.com/osquery/osquery) | C++ | Other | [5.24.1](https://github.com/osquery/osquery/releases/tag/5.24.1) | 23776 | CrowdStrike Falcon (partial) |
-| [GRR Rapid Response](https://github.com/google/grr) | Python | Apache-2.0 | [v.4.0.0.0-release](https://github.com/google/grr/releases/tag/v.4.0.0.0-release) signed | 5111 | Velociraptor (full), CrowdStrike Falcon (partial) |
-| [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4479 | CrowdStrike Falcon (partial) |
-| [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.18.0](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.18.0) signed | 3725 | Splunk (partial) |
-| [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.4.0](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.4.0) signed | 3491 | Splunk (partial) |
+| [osquery](https://github.com/osquery/osquery) | C++ | Other | [5.24.1](https://github.com/osquery/osquery/releases/tag/5.24.1) | 23779 | CrowdStrike Falcon (partial) |
+| [GRR Rapid Response](https://github.com/google/grr) | Python | Apache-2.0 | [v.4.0.0.0-release](https://github.com/google/grr/releases/tag/v.4.0.0.0-release) signed | 5113 | Velociraptor (full), CrowdStrike Falcon (partial) |
+| [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4484 | CrowdStrike Falcon (partial) |
+| [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.18.0](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.18.0) signed | 3726 | Splunk (partial) |
+| [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.4.0](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.4.0) signed | 3493 | Splunk (partial) |
 | [OpenEDR](https://github.com/ComodoSecurity/openedr) | C++ | Other | [release-2.5.1](https://github.com/ComodoSecurity/openedr/releases/tag/release-2.5.1) signed | 2752 | CrowdStrike Falcon (partial) |
 
 [All categories](../README.md#catalog)

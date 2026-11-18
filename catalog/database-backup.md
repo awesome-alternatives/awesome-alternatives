@@ -4,8 +4,8 @@ Physical backups, WAL archiving and point-in-time recovery for database servers.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [pgBackRest](https://github.com/pgbackrest/pgbackrest) | C | Other | [release/2.60.1](https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.1) | 4500 | Barman (full), Amazon RDS (partial) |
-| [WAL-G](https://github.com/wal-g/wal-g) | Go | Other | [v3.0.9](https://github.com/wal-g/wal-g/releases/tag/v3.0.9) signed | 4339 | pgBackRest (partial), Amazon RDS (partial) |
-| [Barman](https://github.com/EnterpriseDB/barman) | Python | GPL-3.0 | [release/3.20.1](https://github.com/EnterpriseDB/barman/releases/tag/release/3.20.1) signed | 3277 | pgBackRest (full), Amazon RDS (partial) |
+| [pgBackRest](https://github.com/pgbackrest/pgbackrest) | C | Other | [release/2.60.1](https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.1) | 4501 | Barman (full), Amazon RDS (partial) |
+| [WAL-G](https://github.com/wal-g/wal-g) | Go | Other | [v3.0.10](https://github.com/wal-g/wal-g/releases/tag/v3.0.10) signed | 4341 | pgBackRest (partial), Amazon RDS (partial) |
+| [Barman](https://github.com/EnterpriseDB/barman) | Python | GPL-3.0 | [release/3.21.0](https://github.com/EnterpriseDB/barman/releases/tag/release/3.21.0) signed | 3278 | pgBackRest (full), Amazon RDS (partial) |
 
 [All categories](../README.md#catalog)

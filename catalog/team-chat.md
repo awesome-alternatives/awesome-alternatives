@@ -4,20 +4,20 @@ Self-hosted messaging for teams.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [9.0.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/9.0.0) signed | 46493 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
-| [Mattermost](https://github.com/mattermost/mattermost) | TypeScript | Other | [v12.0.2](https://github.com/mattermost/mattermost/releases/tag/v12.0.2) signed | 39632 | Slack (full), Microsoft Teams (partial) |
-| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [13.2](https://github.com/zulip/zulip/releases/tag/13.2) | 26239 | Mattermost (full), Slack (full) |
-| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13571 | WhatsApp (partial) |
-| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1117.41341](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1117.41341) signed | 10912 | Discord (full) |
+| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [9.0.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/9.0.0) signed | 46623 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
+| [Mattermost](https://github.com/mattermost/mattermost) | TypeScript | Other | [v12.0.2](https://github.com/mattermost/mattermost/releases/tag/v12.0.2) signed | 39640 | Slack (full), Microsoft Teams (partial) |
+| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [13.2](https://github.com/zulip/zulip/releases/tag/13.2) | 26246 | Mattermost (full), Slack (full) |
+| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13574 | WhatsApp (partial) |
+| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1117.41341](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1117.41341) signed | 10922 | Discord (full) |
 | [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.939](https://github.com/mumble-voip/mumble/releases/tag/v1.5.939) | 8424 | Discord (partial) |
 | [ejabberd](https://github.com/processone/ejabberd) | Erlang | Other | [26.09](https://github.com/processone/ejabberd/releases/tag/26.09) | 6753 | Slack (partial) |
-| [Campfire](https://github.com/basecamp/once-campfire) | Ruby | MIT | [v1.5.10](https://github.com/basecamp/once-campfire/releases/tag/v1.5.10) signed | 4839 | Slack (partial) |
-| [Synapse](https://github.com/element-hq/synapse) | Python | AGPL-3.0 | [v1.165.0](https://github.com/element-hq/synapse/releases/tag/v1.165.0) signed | 4801 | Slack (partial), Microsoft Teams (partial), Discord (partial) |
-| [Stoat](https://github.com/stoatchat/stoatchat) | Rust | Other | [v0.16.5](https://github.com/stoatchat/stoatchat/releases/tag/v0.16.5) | 3470 | Discord (full) |
+| [Campfire](https://github.com/basecamp/once-campfire) | Ruby | MIT | [v1.5.10](https://github.com/basecamp/once-campfire/releases/tag/v1.5.10) signed | 4842 | Slack (partial) |
+| [Synapse](https://github.com/element-hq/synapse) | Python | AGPL-3.0 | [v1.165.0](https://github.com/element-hq/synapse/releases/tag/v1.165.0) signed | 4800 | Slack (partial), Microsoft Teams (partial), Discord (partial) |
+| [Stoat](https://github.com/stoatchat/stoatchat) | Rust | Other | [v0.16.5](https://github.com/stoatchat/stoatchat/releases/tag/v0.16.5) | 3471 | Discord (full) |
 | [Openfire](https://github.com/igniterealtime/Openfire) | Java | Apache-2.0 | [v5.1.2](https://github.com/igniterealtime/Openfire/releases/tag/v5.1.2) signed | 3073 | Slack (partial) |
-| [Tuwunel](https://github.com/matrix-construct/tuwunel) | Rust | Apache-2.0 | [v2.0.0-assets](https://github.com/matrix-construct/tuwunel/releases/tag/v2.0.0-assets) | 2784 | Synapse (full) |
-| [Wire Server](https://github.com/wireapp/wire-server) | Haskell | AGPL-3.0 | [2026-10-26](https://github.com/wireapp/wire-server/releases/tag/2026-10-26) signed | 2782 | Slack (partial), Microsoft Teams (partial) |
-| [Spacebar](https://github.com/spacebarchat/server) | TypeScript | AGPL-3.0 | none | 2216 | Discord (partial) |
+| [Tuwunel](https://github.com/matrix-construct/tuwunel) | Rust | Apache-2.0 | [v2.0.0-assets](https://github.com/matrix-construct/tuwunel/releases/tag/v2.0.0-assets) | 2788 | Synapse (full) |
+| [Wire Server](https://github.com/wireapp/wire-server) | Haskell | AGPL-3.0 | [2026-10-26](https://github.com/wireapp/wire-server/releases/tag/2026-10-26) signed | 2783 | Slack (partial), Microsoft Teams (partial) |
+| [Spacebar](https://github.com/spacebarchat/server) | TypeScript | AGPL-3.0 | none | 2217 | Discord (partial) |
 | [MongooseIM](https://github.com/esl/MongooseIM) | Erlang | Other | [6.10.0](https://github.com/esl/MongooseIM/releases/tag/6.10.0) | 1759 | Slack (partial) |
 | [Dendrite](https://github.com/element-hq/dendrite) | Go | AGPL-3.0 | [v0.15.2](https://github.com/element-hq/dendrite/releases/tag/v0.15.2) | 993 | Synapse (partial) |
 | [Raven](https://github.com/frappe/raven) | TypeScript | AGPL-3.0 | [v3.2.0](https://github.com/frappe/raven/releases/tag/v3.2.0) signed | 849 | Slack (partial) |

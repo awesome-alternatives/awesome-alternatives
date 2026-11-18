@@ -4,23 +4,23 @@ Record, edit and mix audio, and compose with DAWs, trackers, sequencers and soft
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Audacity](https://github.com/audacity/audacity) | C++ | Other | [Audacity-4.0.2](https://github.com/audacity/audacity/releases/tag/Audacity-4.0.2) | 19088 | Adobe Audition (partial) |
+| [Audacity](https://github.com/audacity/audacity) | C++ | Other | [Audacity-4.0.2](https://github.com/audacity/audacity/releases/tag/Audacity-4.0.2) | 19099 | Adobe Audition (partial) |
 | [Sonic Pi](https://github.com/sonic-pi-net/sonic-pi) | C++ | Other | [v5.0.0](https://github.com/sonic-pi-net/sonic-pi/releases/tag/v5.0.0) | 12279 | none |
-| [LMMS](https://github.com/LMMS/lmms) | C++ | GPL-2.0 | [v1.2.2](https://github.com/LMMS/lmms/releases/tag/v1.2.2) signed | 10679 | FL Studio (partial), Ableton Live (partial) |
-| [Mixxx](https://github.com/mixxxdj/mixxx) | C++ | Other | [2.5.6](https://github.com/mixxxdj/mixxx/releases/tag/2.5.6) signed | 7407 | Traktor Pro (full), Serato DJ (full) |
-| [Ardour](https://github.com/Ardour/ardour) | C++ | Other | [9.10](https://github.com/Ardour/ardour/releases/tag/9.10) | 5436 | none |
-| [Bespoke Synth](https://github.com/BespokeSynth/BespokeSynth) | C++ | GPL-3.0 | [v1.3.0](https://github.com/BespokeSynth/BespokeSynth/releases/tag/v1.3.0) signed | 4762 | Max/MSP (partial) |
-| [Surge XT](https://github.com/surge-synthesizer/surge) | C | GPL-3.0 | [Nightly](https://github.com/surge-synthesizer/surge/releases/tag/Nightly) signed | 4139 | Serum (full) |
-| [Furnace](https://github.com/tildearrow/furnace) | C++ | Other | [v0.6.8.3](https://github.com/tildearrow/furnace/releases/tag/v0.6.8.3) | 3921 | DefleMask (full) |
-| [Dexed](https://github.com/asb2m10/dexed) | C++ | GPL-3.0 | [v1.1.0](https://github.com/asb2m10/dexed/releases/tag/v1.1.0) | 3658 | FM8 (partial) |
-| [Helio](https://github.com/helio-fm/helio-sequencer) | C++ | GPL-3.0 | [3.18](https://github.com/helio-fm/helio-sequencer/releases/tag/3.18) | 3587 | FL Studio (partial) |
-| [Cardinal](https://github.com/DISTRHO/Cardinal) | C++ | GPL-3.0 | [26.02](https://github.com/DISTRHO/Cardinal/releases/tag/26.02) signed | 3273 | none |
-| [openDAW](https://github.com/andremichelle/openDAW) | TypeScript | AGPL-3.0 | [@opendaw/app-studio@0.4.0](https://github.com/andremichelle/openDAW/releases/tag/%40opendaw/app-studio%400.4.0) | 2460 | Ableton Live (partial), FL Studio (partial) |
-| [Carla](https://github.com/falkTX/Carla) | C++ | none | [v2.5.10](https://github.com/falkTX/Carla/releases/tag/v2.5.10) signed | 2202 | none |
+| [LMMS](https://github.com/LMMS/lmms) | C++ | GPL-2.0 | [v1.2.2](https://github.com/LMMS/lmms/releases/tag/v1.2.2) signed | 10683 | FL Studio (partial), Ableton Live (partial) |
+| [Mixxx](https://github.com/mixxxdj/mixxx) | C++ | Other | [2.5.6](https://github.com/mixxxdj/mixxx/releases/tag/2.5.6) signed | 7411 | Traktor Pro (full), Serato DJ (full) |
+| [Ardour](https://github.com/Ardour/ardour) | C++ | Other | [9.10](https://github.com/Ardour/ardour/releases/tag/9.10) | 5441 | none |
+| [Bespoke Synth](https://github.com/BespokeSynth/BespokeSynth) | C++ | GPL-3.0 | [v1.3.0](https://github.com/BespokeSynth/BespokeSynth/releases/tag/v1.3.0) signed | 4763 | Max/MSP (partial) |
+| [Surge XT](https://github.com/surge-synthesizer/surge) | C | GPL-3.0 | [Nightly](https://github.com/surge-synthesizer/surge/releases/tag/Nightly) signed | 4143 | Serum (full) |
+| [Furnace](https://github.com/tildearrow/furnace) | C++ | Other | [v0.6.8.3](https://github.com/tildearrow/furnace/releases/tag/v0.6.8.3) | 3922 | DefleMask (full) |
+| [Dexed](https://github.com/asb2m10/dexed) | C++ | GPL-3.0 | [v1.1.0](https://github.com/asb2m10/dexed/releases/tag/v1.1.0) | 3661 | FM8 (partial) |
+| [Helio](https://github.com/helio-fm/helio-sequencer) | C++ | GPL-3.0 | [3.18](https://github.com/helio-fm/helio-sequencer/releases/tag/3.18) | 3588 | FL Studio (partial) |
+| [Cardinal](https://github.com/DISTRHO/Cardinal) | C++ | GPL-3.0 | [26.02](https://github.com/DISTRHO/Cardinal/releases/tag/26.02) signed | 3274 | none |
+| [openDAW](https://github.com/andremichelle/openDAW) | TypeScript | AGPL-3.0 | [@opendaw/studio-adapters@0.4.1](https://github.com/andremichelle/openDAW/releases/tag/%40opendaw/studio-adapters%400.4.1) | 2460 | Ableton Live (partial), FL Studio (partial) |
+| [Carla](https://github.com/falkTX/Carla) | C++ | none | [v2.5.10](https://github.com/falkTX/Carla/releases/tag/v2.5.10) signed | 2203 | none |
 | [MilkyTracker](https://github.com/milkytracker/MilkyTracker) | C++ | Other | [v1.05.01](https://github.com/milkytracker/MilkyTracker/releases/tag/v1.05.01) | 2134 | Renoise (partial) |
 | [ossia score](https://github.com/ossia/score) | C++ | Other | [v3.9.0](https://github.com/ossia/score/releases/tag/v3.9.0) | 2098 | QLab (partial) |
-| [Schism Tracker](https://github.com/schismtracker/schismtracker) | C | GPL-2.0 | [20261102](https://github.com/schismtracker/schismtracker/releases/tag/20261102) | 1579 | Renoise (partial) |
-| [Hydrogen](https://github.com/hydrogen-music/hydrogen) | C++ | GPL-2.0 | [1.2.7](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.7) | 1355 | none |
+| [Schism Tracker](https://github.com/schismtracker/schismtracker) | C | GPL-2.0 | [20261102](https://github.com/schismtracker/schismtracker/releases/tag/20261102) | 1578 | Renoise (partial) |
+| [Hydrogen](https://github.com/hydrogen-music/hydrogen) | C++ | GPL-2.0 | [1.2.7](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.7) | 1356 | none |
 | [ZynAddSubFX](https://github.com/zynaddsubfx/zynaddsubfx) | C++ | GPL-2.0 | [2.5.3-osx](https://github.com/zynaddsubfx/zynaddsubfx/releases/tag/2.5.3-osx) | 1186 | none |
 
 [All categories](../README.md#catalog)
