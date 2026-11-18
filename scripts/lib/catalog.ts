@@ -4,11 +4,13 @@ import { Ajv2020 } from "ajv/dist/2020.js";
 import { parse } from "yaml";
 import { type ListedCatalog, listedCatalog } from "./listed.ts";
 import { byCodeUnit } from "./order.ts";
+import { isActive, isValidDate, type ToolRedirects } from "./tool-redirects.ts";
 import type { BlockingCode, Category, Finding, Group, Product, ProductEntry, Tool, ToolEntry } from "./types.ts";
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const CATEGORIES_FILE = "data/categories.yaml";
 const REDIRECTS_FILE = "data/category-redirects.yaml";
+const TOOL_REDIRECTS_FILE = "data/tool-redirects.yaml";
 const GROUPS_FILE = "data/groups.yaml";
 
 export interface Catalog {
@@ -28,6 +30,7 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
   const products = await loadEntries<ProductEntry>(root, "products", "product.schema.json");
   const redirects = await loadRedirects(root, categories.entries);
   const groups = await loadGroups(root);
+  const toolRedirects = await loadToolRedirects(root);
   const catalog = { tools: tools.entries, products: products.entries, categories: categories.entries };
   return {
     catalog,
@@ -35,7 +38,10 @@ export async function loadCatalog(root: string): Promise<LoadResult> {
       ...categories.findings,
       ...groups.findings,
       ...groupFindings(categories.entries, groups.entries),
-      ...redirects, ...tools.findings, ...products.findings, ...checkStructure(catalog)],
+      ...redirects,
+      ...toolRedirects.findings,
+      ...toolRedirectFindings(toolRedirects.entries, catalog, new Date()),
+      ...tools.findings, ...products.findings, ...checkStructure(catalog)],
   };
 }
 
@@ -66,6 +72,57 @@ export function redirectFindings(redirects: Readonly<Record<string, string>>, ca
     }
     if (!categories.has(target)) {
       return [error(old, "unknown-category", `${REDIRECTS_FILE} sends ${old} to ${target}, which is not in data/categories.yaml`)];
+    }
+    return [];
+  });
+}
+
+export async function loadToolRedirects(root: string): Promise<{ entries: ToolRedirects; findings: Finding[] }> {
+  const validate = await compiled<ToolRedirects>(root, "tool-redirects.schema.json");
+  const raw: unknown = await readOptionalYaml(root, TOOL_REDIRECTS_FILE);
+  if (validate(raw)) return { entries: raw, findings: [] };
+  const findings = (validate.errors ?? [])
+    .filter((e) => !e.schemaPath.includes("/propertyNames/"))
+    .map((e) => error(TOOL_REDIRECTS_FILE, "schema", `${TOOL_REDIRECTS_FILE} ${e.instancePath || "/"} ${e.message ?? "is invalid"}`));
+  return { entries: {}, findings };
+}
+
+async function readOptionalYaml(root: string, file: string): Promise<unknown> {
+  try {
+    return parse(await readFile(join(root, file), "utf8")) ?? {};
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "ENOENT") return {};
+    throw e;
+  }
+}
+
+export function toolRedirectFindings(
+  redirects: ToolRedirects,
+  { tools, products }: Pick<Catalog, "tools" | "products">,
+  now: Date,
+): Finding[] {
+  const toolSlugs = new Set(tools.map((t) => t.slug));
+  const slugs = new Set([...toolSlugs, ...products.map((p) => p.slug)]);
+  return Object.entries(redirects).flatMap(([old, { to, until }]): Finding[] => {
+    if (!isValidDate(until)) {
+      return [error(old, "invalid-redirect-date", `${TOOL_REDIRECTS_FILE} gives ${old} the date ${until}, which is not a calendar day`)];
+    }
+    if (!toolSlugs.has(to)) {
+      return [error(old, "unknown-redirect-target", `${TOOL_REDIRECTS_FILE} sends ${old} to ${to}, which is not in data/tools`)];
+    }
+    if (!isActive({ to, until }, now)) {
+      return [
+        { slug: old, severity: "warning", code: "expired-redirect", message: `${old} in ${TOOL_REDIRECTS_FILE} ended on ${until} and can be removed` },
+      ];
+    }
+    if (slugs.has(old)) {
+      return [
+        error(
+          old,
+          "reused-slug",
+          `${old} is redirected to ${to} until ${until} by ${TOOL_REDIRECTS_FILE}, so it cannot be a slug yet: wait until ${until}, delete the ${old} entry from ${TOOL_REDIRECTS_FILE} to free the name now, or pick another slug`,
+        ),
+      ];
     }
     return [];
   });

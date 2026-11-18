@@ -4,7 +4,8 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { Ajv2020 } from "ajv/dist/2020.js";
-import { checkStructure, groupFindings, loadCatalog } from "../scripts/lib/catalog.ts";
+import { checkStructure, groupFindings, loadCatalog, toolRedirectFindings } from "../scripts/lib/catalog.ts";
+import type { ToolRedirects } from "../scripts/lib/tool-redirects.ts";
 import type { Category, Product, Tool } from "../scripts/lib/types.ts";
 
 const categories = new Map<string, Category>([["release-automation", { name: "R", group: "g", description: "D" }]]);
@@ -332,6 +333,73 @@ describe("loadCatalog", () => {
       findings.map((f) => `${f.slug}:${f.code}`),
       ["data/category-redirects.yaml:schema"],
     );
+  });
+
+  const agent = ["name: Agent", "repository: https://github.com/acme/agent", "category: release-automation"].join("\n");
+
+  it("rejects a new tool that takes the name of an active tool redirect, and names the file to edit", async () => {
+    const root = await fixture({ "agent.yaml": agent, "whishper.yaml": agent.replace("acme/agent", "acme/whishper") });
+    await writeFile(join(root, "data/tool-redirects.yaml"), ["whishper:", "  to: agent", "  until: 2999-01-01"].join("\n"));
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(
+      findings.map((f) => `${f.slug}:${f.code}`),
+      ["whishper:reused-slug"],
+    );
+    assert.match(findings[0]?.message ?? "", /data\/tool-redirects\.yaml/);
+    assert.match(findings[0]?.message ?? "", /2999-01-01/);
+  });
+
+  it("accepts a tool redirect to an existing tool with no entry in the way", async () => {
+    const root = await fixture({ "agent.yaml": agent });
+    await writeFile(join(root, "data/tool-redirects.yaml"), ["whishper:", "  to: agent", "  until: 2999-01-01"].join("\n"));
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(findings, []);
+  });
+
+  it("holds data/tool-redirects.yaml to its schema", async () => {
+    const root = await fixture({ "agent.yaml": agent });
+    await writeFile(join(root, "data/tool-redirects.yaml"), ["whishper:", "  to: agent", "roxycloud:", "  to: agent", "  until: next year"].join("\n"));
+    const { findings } = await loadCatalog(root);
+    assert.deepEqual(
+      findings.map((f) => `${f.slug}:${f.code}`),
+      ["data/tool-redirects.yaml:schema", "data/tool-redirects.yaml:schema"],
+    );
+  });
+});
+
+describe("toolRedirectFindings", () => {
+  const now = new Date("2027-06-01T00:00:00Z");
+  const catalog = { tools: [tool("anysub")], products: [product("closed")] };
+  const check = (redirects: ToolRedirects) => toolRedirectFindings(redirects, catalog, now).map((f) => `${f.slug}:${f.severity}:${f.code}`);
+
+  it("accepts an active entry that points at an existing tool", () => {
+    assert.deepEqual(check({ whishper: { to: "anysub", until: "2027-11-14" } }), []);
+  });
+
+  it("rejects an entry whose slug is a tool or a product while it is active", () => {
+    assert.deepEqual(check({ anysub: { to: "anysub", until: "2027-11-14" }, closed: { to: "anysub", until: "2027-11-14" } }), [
+      "anysub:error:reused-slug",
+      "closed:error:reused-slug",
+    ]);
+  });
+
+  it("frees the slug once the entry has expired, and reports the entry as removable without blocking", () => {
+    assert.deepEqual(check({ anysub: { to: "anysub", until: "2027-05-31" } }), ["anysub:warning:expired-redirect"]);
+  });
+
+  it("keeps the slug blocked through the last day", () => {
+    assert.deepEqual(check({ anysub: { to: "anysub", until: "2027-06-01" } }), ["anysub:error:reused-slug"]);
+  });
+
+  it("rejects a target that is not a tool, a product being no target", () => {
+    assert.deepEqual(check({ whishper: { to: "nowhere", until: "2027-11-14" }, roxycloud: { to: "closed", until: "2027-11-14" } }), [
+      "whishper:error:unknown-redirect-target",
+      "roxycloud:error:unknown-redirect-target",
+    ]);
+  });
+
+  it("rejects a date that matches the format but is not a day", () => {
+    assert.deepEqual(check({ whishper: { to: "anysub", until: "2027-02-30" } }), ["whishper:error:invalid-redirect-date"]);
   });
 });
 

@@ -15,6 +15,7 @@ import type {
   ListedProduct,
   OwnerFacts,
 } from "../../../scripts/lib/types.ts";
+import type { ToolRedirects } from "../../../scripts/lib/tool-redirects.ts";
 import { comparePairs, type Pair } from "./compare.ts";
 import { alternativesTo } from "./filter.ts";
 import { groupTools } from "./groups.ts";
@@ -50,6 +51,9 @@ const catalog: {
 
 export const categoryRedirects: Record<string, string> =
   parse(readFileSync(resolve(ROOT, "data/category-redirects.yaml"), "utf8")) ?? {};
+
+export const toolRedirects: ToolRedirects =
+  parse(readFileSync(resolve(ROOT, "data/tool-redirects.yaml"), "utf8")) ?? {};
 
 export function inCurrentCategory<T extends { category: string }>(entry: T, redirects: Readonly<Record<string, string>>): T {
   const category = redirects[entry.category];

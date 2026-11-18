@@ -4,7 +4,8 @@ import { test } from "node:test";
 
 import { DEFAULT_LOCALE, LOCALES } from "../src/i18n/index.ts";
 import { pairs } from "../src/lib/catalog.ts";
-import { categoryMap, pairMap, redirectMaps, reversedPairs } from "../src/lib/redirects.ts";
+import { activeToolRedirects } from "../../scripts/lib/tool-redirects.ts";
+import { categoryMap, pairMap, redirectMaps, reversedPairs, toolMap, toolPairRedirects } from "../src/lib/redirects.ts";
 
 const nginx = readFileSync(new URL("../nginx.conf", import.meta.url), "utf8");
 const pair = (a: string, b: string) => ({ a: { slug: a }, b: { slug: b } });
@@ -69,9 +70,10 @@ test("every comparison the site builds is reachable by its reversed URL", () => 
 
 test("the hash holds the longest key of either map, so nginx does not refuse them at startup", () => {
   const long = (length: number) => "x".repeat(length);
-  assert.match(redirectMaps(reversedPairs([pair(long(30), long(33))]), {}), /^map_hash_bucket_size 128;/);
-  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { [long(60)]: "waf" }), /^map_hash_bucket_size 128;/);
-  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { captcha: "waf" }), /^map_hash_bucket_size 64;/);
+  assert.match(redirectMaps(reversedPairs([pair(long(30), long(33))]), {}, {}), /^map_hash_bucket_size 128;/);
+  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { [long(60)]: "waf" }, {}), /^map_hash_bucket_size 128;/);
+  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), { captcha: "waf" }, {}), /^map_hash_bucket_size 64;/);
+  assert.match(redirectMaps(reversedPairs([pair("alacritty", "kitty")]), {}, { [long(60)]: "anysub" }), /^map_hash_bucket_size 128;/);
 });
 
 test("the image loads the redirect maps before nginx.conf, whose own map would lock the bucket size first", () => {
@@ -164,4 +166,96 @@ test("the category location catches a category page and its feed in every locale
   assert.equal(pattern.test("/categories/"), false);
   assert.equal(pattern.test("/it/categories/go-lint/"), false);
   assert.equal(pattern.test("/tools/go-lint/"), false);
+});
+
+const toolRedirects = {
+  whishper: { to: "anysub", until: "2027-11-14" },
+  roxycloud: { to: "stashden", until: "2027-10-06" },
+};
+
+function toolLocation(marker: string): RegExp {
+  const match = nginx.match(new RegExp(`location ~ (\\S*${marker}\\S*) \\{`));
+  assert.ok(match, `nginx.conf has the ${marker} location`);
+  return new RegExp(match[1]);
+}
+
+test("an active entry is redirected and an entry whose day has passed is not", () => {
+  assert.deepEqual(activeToolRedirects(toolRedirects, new Date("2027-06-01T12:00:00Z")), { whishper: "anysub", roxycloud: "stashden" });
+  assert.deepEqual(activeToolRedirects(toolRedirects, new Date("2027-10-07T00:00:00Z")), { whishper: "anysub" });
+  assert.deepEqual(activeToolRedirects(toolRedirects, new Date("2027-11-15T00:00:00Z")), {});
+});
+
+test("an entry still redirects on its last day", () => {
+  assert.deepEqual(activeToolRedirects(toolRedirects, new Date("2027-11-14T23:59:59Z")), { whishper: "anysub" });
+});
+
+test("the tool table is an nginx map with an empty default and one sorted line per renamed tool", () => {
+  assert.equal(
+    toolMap({ whishper: "anysub", roxycloud: "stashden" }),
+    ["map $tool_slug $tool_target {", `    default "";`, "    roxycloud stashden;", "    whishper anysub;", "}", ""].join("\n"),
+  );
+});
+
+test("a comparison with the new name on either side is reachable by the old name in both spellings", () => {
+  const table = toolPairRedirects([pair("anysub", "kitty"), pair("alacritty", "anysub"), pair("alacritty", "kitty")], { whishper: "anysub" });
+  assert.deepEqual(
+    [...table].sort(),
+    [
+      ["alacritty-vs-whishper", "alacritty-vs-anysub"],
+      ["kitty-vs-whishper", "anysub-vs-kitty"],
+      ["whishper-vs-alacritty", "alacritty-vs-anysub"],
+      ["whishper-vs-kitty", "anysub-vs-kitty"],
+    ],
+  );
+});
+
+test("a comparison that does not involve the renamed tool gets no redirect", () => {
+  assert.equal(toolPairRedirects([pair("alacritty", "kitty")], { whishper: "anysub" }).size, 0);
+});
+
+test("an expired entry adds nothing to the maps", () => {
+  const active = activeToolRedirects(toolRedirects, new Date("2028-01-01T00:00:00Z"));
+  assert.equal(toolPairRedirects([pair("anysub", "kitty")], active).size, 0);
+  assert.doesNotMatch(redirectMaps(new Map(), {}, active), /whishper|roxycloud/);
+});
+
+test("nginx no longer rewrites a tool name anywhere in the path", () => {
+  assert.doesNotMatch(nginx, /rewrite /);
+});
+
+test("nginx keys the tool map on the slug it captures and redirects in every tool location", () => {
+  const [, source, target] = toolMap({}).match(/map \$(\S+) \$(\S+) \{/) ?? [];
+  assert.ok(source && target);
+  assert.ok(nginx.includes(`(?<${source}>`));
+  assert.equal(nginx.split(`if ($${target})`).length - 1, 4);
+});
+
+test("the tool page location catches the page, its locale variants and its feed, and nothing else", () => {
+  const pattern = toolLocation("tool_rest");
+  assert.equal(pattern.exec("/tools/whishper/")?.groups?.tool_slug, "whishper");
+  assert.equal(pattern.exec("/tools/whishper")?.groups?.tool_slug, "whishper");
+  assert.equal(pattern.exec("/tools/whishper/feed.xml")?.groups?.tool_rest, "/feed.xml");
+  for (const locale of LOCALES.filter((one) => one !== DEFAULT_LOCALE)) {
+    const groups = pattern.exec(`/${locale}/tools/whishper/feed.xml`)?.groups;
+    assert.equal(groups?.tool_locale, `${locale}/`);
+    assert.equal(groups?.tool_slug, "whishper");
+    assert.equal(groups?.tool_rest, "/feed.xml");
+  }
+  assert.equal(pattern.test("/tools/"), false);
+  assert.equal(pattern.test("/tools/whishper.md"), false);
+  assert.equal(pattern.test("/it/tools/whishper/"), false);
+  assert.equal(pattern.test("/categories/whishper/"), false);
+  assert.equal(pattern.test("/about/tools/whishper/"), false);
+});
+
+test("the markdown, image and badge locations each catch their own file of the tool", () => {
+  assert.equal(toolLocation("\\\\.md").exec("/tools/whishper.md")?.groups?.tool_slug, "whishper");
+  assert.equal(toolLocation("og").exec("/og/tools/whishper.png")?.groups?.tool_slug, "whishper");
+  assert.equal(toolLocation("badge").exec("/badge/whishper.json")?.groups?.tool_slug, "whishper");
+  assert.equal(toolLocation("badge").test("/badge/whishper.png"), false);
+  assert.equal(toolLocation("og").test("/og/tools/whishper.jpg"), false);
+});
+
+test("the tool markdown location comes before the generic one, which would otherwise answer first", () => {
+  assert.ok(nginx.indexOf("tools/(?<tool_slug>[a-z0-9-]+)\\.md$") < nginx.indexOf("location ~ \\.md$"));
 });

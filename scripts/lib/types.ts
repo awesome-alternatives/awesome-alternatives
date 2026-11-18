@@ -93,6 +93,7 @@ export type BlockingCode =
   | "deploy-outside-self-host"
   | "duplicate-replacement"
   | "duplicate-repository"
+  | "invalid-redirect-date"
   | "fork"
   | "migration-page"
   | "migration-unreachable"
@@ -102,11 +103,13 @@ export type BlockingCode =
   | "private"
   | "product-collides"
   | "redirect-shadows-category"
+  | "reused-slug"
   | "replaces-itself"
   | "schema"
   | "unknown-capability"
   | "unknown-category"
   | "unknown-group"
+  | "unknown-redirect-target"
   | "unknown-replacement"
   | "unused-product";
 
@@ -114,7 +117,7 @@ export const FLAG_CODES = ["archived", "inactive", "moved", "no-license", "no-re
 
 export type FlagCode = (typeof FLAG_CODES)[number];
 
-export type FindingCode = BlockingCode | FlagCode | "deploy-unproven" | "homepage-unreachable" | "unreadable-from-ci";
+export type FindingCode = BlockingCode | FlagCode | "deploy-unproven" | "expired-redirect" | "homepage-unreachable" | "unreadable-from-ci";
 
 export function isFlagCode(code: FindingCode): code is FlagCode {
   return (FLAG_CODES as readonly string[]).includes(code);
