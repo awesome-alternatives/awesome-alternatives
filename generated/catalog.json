@@ -163709,27 +163709,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-18T02:25:12Z",
+        "pushedAt": "2026-11-18T09:38:54Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-19T05:17:30.738Z"
+        "since": "2026-10-19T09:39:39.734Z"
       },
       "starHistory": {
         "from": "2026-10-18",
         "stars": [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7]
       },
       "release": {
-        "tag": "site@2026.11.12",
-        "publishedAt": "2026-11-14T21:13:02Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.12",
+        "tag": "site@2026.11.13",
+        "publishedAt": "2026-11-18T09:39:00Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.13",
         "source": "release",
         "signed": true,
-        "tagOid": "158ca4cc4a400e3228d1cf4dba06b36c021cac2b"
+        "tagOid": "ca4395785865d700ef387938dcefe0f4c2f6ae57"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.13",
+          "name": "fix(deps): update ferrlabs npm packages (#766)",
+          "publishedAt": "2026-11-18T09:39:00Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.13",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.26.55",
+          "name": "fix(deps): update ferrlabs npm packages (#766)",
+          "publishedAt": "2026-11-18T09:39:00Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.55",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.12",
           "name": "fix(telemetry): stop quoted values before a query key and reach keys behind long prefixes (#763)",
@@ -163749,20 +163763,6 @@
           "name": "fix(deps): update dependency @grafana/faro-web-sdk to ~2.14.0 (#762)",
           "publishedAt": "2026-11-12T18:24:03Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.10",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.9",
-          "name": null,
-          "publishedAt": "2026-11-12T02:26:00Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.9",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.8",
-          "name": "fix(telemetry): bring redaction to v6.27 (#756)",
-          "publishedAt": "2026-11-11T21:10:22Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.8",
           "prerelease": false
         }
       ],

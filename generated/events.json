@@ -7711,7 +7711,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v13.01","to":"v13.02"},
   {"type":"released","slug":"worklenz","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v3.3.1","to":"v3.4.0"},
   {"type":"released","slug":"yq","at":"2026-11-09T05:17:24.172Z","commit":"a2768d3c9251bfff64b44b5d9b2d8b0f8cc64b6d","from":"v4.54.2","to":"v4.54.3"},
-  {"type":"released","slug":"lfsx","at":"2026-11-09T14:19:15.286Z","commit":"84faa0bab39bb3a9166cbab4c8ce2b27cc0380b6","from":"site@2026.11.3","to":"v1.26.53"},
   {"type":"released","slug":"astro","at":"2026-11-09T16:05:43.627Z","commit":"84b290956619706134fb75c5d42627809cfe898f","from":"@astrojs/vercel@11.0.20","to":"astro-vscode@2.17.3"},
   {"type":"released","slug":"avideo","at":"2026-11-09T16:05:43.627Z","commit":"84b290956619706134fb75c5d42627809cfe898f","from":"v29.7.0","to":"v29.7.1"},
   {"type":"released","slug":"axios","at":"2026-11-09T16:05:43.627Z","commit":"84b290956619706134fb75c5d42627809cfe898f","from":"v1.21.0","to":"v1.21.1"},
@@ -9175,5 +9174,6 @@
   {"type":"released","slug":"zensical","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v0.1.1","to":"v0.1.2"},
   {"type":"released","slug":"zimfw","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v1.21.0","to":"v1.21.1"},
   {"type":"released","slug":"zitadel","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v4.20.3","to":"v4.20.4"},
-  {"type":"added","slug":"kividb","at":"2026-11-18T09:32:55.261Z","commit":null}
+  {"type":"added","slug":"kividb","at":"2026-11-18T09:32:55.261Z","commit":null},
+  {"type":"released","slug":"lfsx","at":"2026-11-18T09:40:05.251Z","commit":null,"from":"site@2026.11.12","to":"site@2026.11.13"}
 ]
