@@ -13,5 +13,6 @@ Caches and data structure servers speaking the Redis protocol or close to it.
 | [PikiwiDB](https://github.com/OpenAtomFoundation/pikiwidb) | C++ | BSD-3-Clause | [v4.0.4](https://github.com/OpenAtomFoundation/pikiwidb/releases/tag/v4.0.4) | 6139 | Redis (partial) |
 | [Apache Kvrocks](https://github.com/apache/kvrocks) | C++ | Apache-2.0 | [v2.17.0](https://github.com/apache/kvrocks/releases/tag/v2.17.0) | 4507 | Redis (partial), Redis Cloud (partial) |
 | [Aerospike](https://github.com/aerospike/aerospike-server) | C | Other | [8.2.0.1](https://github.com/aerospike/aerospike-server/releases/tag/8.2.0.1) signed | 1393 | Amazon DynamoDB (partial) |
+| [KiviDB](https://github.com/kividbio/kividb) | Rust | AGPL-3.0 | [v1.2.2](https://github.com/kividbio/kividb/releases/tag/v1.2.2) | 1156 | Redis (full), Memcached (partial), Redis Cloud (full) |
 
 [All categories](../README.md#catalog)

@@ -9174,5 +9174,6 @@
   {"type":"released","slug":"woocommerce","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"11.2.2","to":"11.3.0"},
   {"type":"released","slug":"zensical","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v0.1.1","to":"v0.1.2"},
   {"type":"released","slug":"zimfw","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v1.21.0","to":"v1.21.1"},
-  {"type":"released","slug":"zitadel","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v4.20.3","to":"v4.20.4"}
+  {"type":"released","slug":"zitadel","at":"2026-11-18T05:17:30.738Z","commit":null,"from":"v4.20.3","to":"v4.20.4"},
+  {"type":"added","slug":"kividb","at":"2026-11-18T09:32:55.261Z","commit":null}
 ]

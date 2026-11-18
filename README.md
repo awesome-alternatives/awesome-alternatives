@@ -103,7 +103,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Linters and formatters](catalog/lint-format.md) | 35 | Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, shell, SQL, Markdown, config files and code spelling, and formatters that cover many languages. |
 | [Infrastructure as code](catalog/infrastructure-as-code.md) | 18 | Declare cloud infrastructure in files and apply the difference. |
 | [Container engines](catalog/container-engine.md) | 18 | Build and run OCI containers. |
-| [In-memory key-value stores](catalog/key-value-store.md) | 9 | Caches and data structure servers speaking the Redis protocol or close to it. |
+| [In-memory key-value stores](catalog/key-value-store.md) | 10 | Caches and data structure servers speaking the Redis protocol or close to it. |
 | [Search engines](catalog/search-engine.md) | 15 | Full-text search servers. |
 | [Metrics and monitoring](catalog/metrics.md) | 19 | Collect, store and query time series. |
 | [Command-line HTTP clients](catalog/http-client.md) | 5 | Send HTTP requests from a terminal. |

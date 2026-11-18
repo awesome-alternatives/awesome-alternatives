@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2755,
+    "tools": 2756,
     "categories": 344,
     "targets": 923,
     "verified": 6
@@ -19686,6 +19686,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "kividbio": {
+      "login": "kividbio",
+      "kind": "organization",
+      "name": "KiviDB",
+      "bio": "In-memory and vector database",
+      "website": "https://kividb.io",
+      "url": "https://github.com/kividbio"
     }
   },
   "tools": [
@@ -152557,6 +152565,153 @@
       "terms": "open",
       "capabilities": {},
       "deploy": []
+    },
+    {
+      "slug": "kividb",
+      "name": "KiviDB",
+      "repository": "https://github.com/kividbio/kividb",
+      "category": "key-value-store",
+      "replaces": [
+        {
+          "tool": "redis",
+          "fit": "full",
+          "note": "Redis-compatible server over RESP, with full-text and vector search built in. Written in Rust, multithreaded, listens on 6380 by default."
+        },
+        {
+          "tool": "memcached",
+          "fit": "partial",
+          "note": "Serves as a cache in memcached's place, but through the Redis protocol."
+        },
+        {
+          "tool": "redis-cloud",
+          "fit": "full",
+          "note": "A Redis-compatible server over RESP, run on your own machines."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-18T09:31:57.000Z",
+      "editedAt": "2026-11-18T09:31:57.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "kividbio/kividb",
+        "description": "A fast, multi-threaded Redis® and Valkey alternative written in Rust: drop-in compatible, with full-text and vector search built in",
+        "homepage": "https://kividb.io",
+        "language": "Rust",
+        "license": "AGPL-3.0",
+        "stars": 1156,
+        "forks": 127,
+        "topics": [
+          "cache",
+          "database",
+          "dragonfly-alternative",
+          "drop-in-replacement",
+          "full-text-search",
+          "high-performance",
+          "in-memory",
+          "io-uring",
+          "key-value-store",
+          "kividb",
+          "multithreaded",
+          "nosql",
+          "redis",
+          "redis-alternative",
+          "redis-compatible",
+          "resp",
+          "rust",
+          "valkey",
+          "vector-database",
+          "vector-search"
+        ],
+        "databaseId": 1421490995,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-10-16T01:07:52Z",
+        "pushedAt": "2026-11-18T08:42:46Z",
+        "defaultBranch": "master"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-18",
+        "stars": [1156]
+      },
+      "release": {
+        "tag": "v1.2.2",
+        "publishedAt": "2026-11-12T22:02:37Z",
+        "url": "https://github.com/kividbio/kividb/releases/tag/v1.2.2",
+        "source": "release",
+        "signed": false,
+        "tagOid": "a9750a5e8cf92a5531133078b7d13b7a8a329347"
+      },
+      "releases": [
+        {
+          "tag": "v1.2.2",
+          "name": "1.2.2 is a patch release of 1.2.1 with one fix. A multi-key write over a key past its TTL (MSET, MSETNX, JSON.MSET, or…",
+          "publishedAt": "2026-11-12T22:02:37Z",
+          "url": "https://github.com/kividbio/kividb/releases/tag/v1.2.2",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.2.1",
+          "name": "> Upgrade to 1.2.2. It fixes GHSA-8rm8-p5c5-g3mr, which affects 1.2.0 and 1.2.1: with a search index, a multi-key write…",
+          "publishedAt": "2026-11-12T09:12:24Z",
+          "url": "https://github.com/kividbio/kividb/releases/tag/v1.2.1",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.2.0",
+          "name": "> Upgrade to 1.2.2. It fixes GHSA-8rm8-p5c5-g3mr, which affects 1.2.0 and 1.2.1: with a search index, a multi-key write…",
+          "publishedAt": "2026-11-03T18:35:44Z",
+          "url": "https://github.com/kividbio/kividb/releases/tag/v1.2.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.3",
+          "name": "This is a security release. Everyone on 1.1.x, and on the 1.2.0 release candidates, should upgrade. It fixes three vuln…",
+          "publishedAt": "2026-10-31T22:17:45Z",
+          "url": "https://github.com/kividbio/kividb/releases/tag/v1.1.3",
+          "prerelease": false
+        },
+        {
+          "tag": "v1.1.2",
+          "name": "> Affected by GHSA-58x5-jq4h-h6rr, GHSA-rhrj-pgm8-2686 and GHSA-pjrr-m43f-m5g3. Upgrade to v1.1.3.",
+          "publishedAt": "2026-10-23T20:09:47Z",
+          "url": "https://github.com/kividbio/kividb/releases/tag/v1.1.2",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 15,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "x86_64",
+            "arm64"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": [
+        "container",
+        "binary",
+        "package",
+        "helm"
+      ]
     },
     {
       "slug": "kiwi-irc",
