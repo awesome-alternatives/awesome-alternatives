@@ -282650,27 +282650,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-18T09:33:59Z",
+        "pushedAt": "2026-11-18T10:00:37Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-19T09:33:36.114Z"
+        "since": "2026-10-19T10:01:21.951Z"
       },
       "starHistory": {
         "from": "2026-10-18",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.6",
-        "publishedAt": "2026-11-17T12:02:37Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.6",
+        "tag": "v0.56.7",
+        "publishedAt": "2026-11-18T10:00:39Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.7",
         "source": "release",
         "signed": false,
-        "tagOid": "082cfa581b56931a8778288650caf451368c2f84"
+        "tagOid": "50339e37071567f31b533f40e12b1fe4960893d2"
       },
       "releases": [
+        {
+          "tag": "v0.56.7",
+          "name": "fix(deps): update rust crate jsonwebtoken to v12 (#458)",
+          "publishedAt": "2026-11-18T10:00:39Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.7",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.6",
           "name": "fix(deps): update rust crate gpui-kit to 0.10.0 (#469)",
@@ -282698,33 +282705,13 @@
           "publishedAt": "2026-11-12T22:00:07Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.3",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.2",
-          "name": "fix(deps): update dependency @grafana/faro-web-sdk to ~2.14.0 (#449)",
-          "publishedAt": "2026-11-12T20:22:35Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.2",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],

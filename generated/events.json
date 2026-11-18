@@ -7928,7 +7928,6 @@
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":"b2bf09d947dfc3c26618ecce744466bdb9b81b89","from":"v11.26.0","to":"v11.26.1"},
   {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":"e8386a233d277d2609822bccc6540bc761e7a6b8","from":"v7.35.6","to":"v7.36.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":"03a3a624fff7f38f71ca5be72e807c35d9fad654","from":"site@2026.11.4","to":"site@2026.11.5"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T21:53:38.525Z","commit":"255f35ca69b9ff9beba2edce91fc5a4d6dd229f9","from":"v0.54.0","to":"v0.55.0"},
   {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":"29a0c62e2098e1db325d1c315ba12b15f238d959","from":"v0.55.0","to":"v0.55.1"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T22:55:00.067Z","commit":"20cc4d85691f975642006aa4261ed4b9e3730853","from":"site@2026.11.5","to":"site@2026.11.6"},
   {"type":"released","slug":"agent-qa","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.3.3","to":"v0.3.4"},
@@ -9194,5 +9193,6 @@
   {"type":"released","slug":"sql-formatter","at":"2026-11-18T09:33:36.114Z","commit":null,"from":"v15.9.0","to":"v15.9.1"},
   {"type":"released","slug":"strapi","at":"2026-11-18T09:33:36.114Z","commit":null,"from":"v5.62.0","to":"v5.63.0"},
   {"type":"released","slug":"svelte","at":"2026-11-18T09:33:36.114Z","commit":null,"from":"svelte@5.57.3","to":"svelte@5.58.0"},
-  {"type":"released","slug":"teable","at":"2026-11-18T09:33:36.114Z","commit":null,"from":"release.2026-11-17T15-28-36Z.3953","to":"release.2026-11-18T03-31-20Z.3959"}
+  {"type":"released","slug":"teable","at":"2026-11-18T09:33:36.114Z","commit":null,"from":"release.2026-11-17T15-28-36Z.3953","to":"release.2026-11-18T03-31-20Z.3959"},
+  {"type":"released","slug":"stashden","at":"2026-11-18T10:01:51.912Z","commit":null,"from":"v0.56.6","to":"v0.56.7"}
 ]
