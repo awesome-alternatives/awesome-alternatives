@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.141.68] - 2026-11-18
+
+### Bug Fixes
+
+- chore(catalog): refresh lfsx
+- chore(catalog): refresh lfsx
+
 ## [0.141.67] - 2026-11-18
 
 ### Bug Fixes
