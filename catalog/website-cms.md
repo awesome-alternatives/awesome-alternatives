@@ -7,7 +7,7 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [WordPress](https://github.com/WordPress/WordPress) | PHP | Other | [7.1.4](https://github.com/WordPress/WordPress/releases/tag/7.1.4) | 21542 | Squarespace (partial), Wix (partial) |
 | [Grav](https://github.com/getgrav/grav) | PHP | MIT | [2.2.30](https://github.com/getgrav/grav/releases/tag/2.2.30) signed | 15730 | Squarespace (partial) |
 | [October CMS](https://github.com/octobercms/october) | PHP | Other | [v4.4.0](https://github.com/octobercms/october/releases/tag/v4.4.0) | 11159 | WordPress (partial) |
-| [django CMS](https://github.com/django-cms/django-cms) | Python | Other | [5.1.3](https://github.com/django-cms/django-cms/releases/tag/5.1.3) signed | 10682 | Wagtail (partial) |
+| [django CMS](https://github.com/django-cms/django-cms) | Python | Other | [5.1.3](https://github.com/django-cms/django-cms/releases/tag/5.1.3) signed | 10681 | Wagtail (partial) |
 | [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8229 | Contentful (partial) |
 | [Umbraco](https://github.com/umbraco/Umbraco-CMS) | C# | MIT | [release-18.3.2](https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.3.2) signed | 5286 | Contentful (partial) |
 | [Joomla](https://github.com/joomla/joomla-cms) | PHP | GPL-2.0 | [6.2.0](https://github.com/joomla/joomla-cms/releases/tag/6.2.0) signed | 5167 | Wix (partial), Squarespace (partial) |
@@ -16,7 +16,7 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 | [Craft CMS](https://github.com/craftcms/cms) | PHP | Other | [5.12.1](https://github.com/craftcms/cms/releases/tag/5.12.1) | 3634 | Contentful (partial) |
 | [Microweber](https://github.com/microweber/microweber) | HTML | MIT | [v2.0.20](https://github.com/microweber/microweber/releases/tag/v2.0.20) | 3442 | Wix (partial), Squarespace (partial) |
 | [Piranha CMS](https://github.com/PiranhaCMS/piranha.core) | C# | MIT | [v12.2](https://github.com/PiranhaCMS/piranha.core/releases/tag/v12.2) | 2200 | Umbraco (partial), Orchard Core (partial) |
-| [Kirby](https://github.com/getkirby/kirby) | PHP | Other | [5.6.3](https://github.com/getkirby/kirby/releases/tag/5.6.3) signed | 1540 | Contentful (partial) |
+| [Kirby](https://github.com/getkirby/kirby) | PHP | Other | [5.6.4](https://github.com/getkirby/kirby/releases/tag/5.6.4) signed | 1540 | Contentful (partial) |
 | [Winter CMS](https://github.com/wintercms/winter) | PHP | MIT | [v1.2.15](https://github.com/wintercms/winter/releases/tag/v1.2.15) | 1521 | October CMS (full) |
 | [TYPO3](https://github.com/TYPO3/typo3) | PHP | GPL-2.0 | [v14.3.12](https://github.com/TYPO3/typo3/releases/tag/v14.3.12) signed | 1223 | WordPress (partial) |
 | [ProcessWire](https://github.com/processwire/processwire) | PHP | Other | [3.0.260](https://github.com/processwire/processwire/releases/tag/3.0.260) | 1161 | Craft CMS (partial), Kirby (partial) |

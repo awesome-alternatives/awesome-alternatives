@@ -4,8 +4,8 @@ Usage-based billing, subscription management and invoicing.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Lago](https://github.com/getlago/lago) | Go | AGPL-3.0 | [v1.57.0](https://github.com/getlago/lago/releases/tag/v1.57.0) signed | 10894 | Stripe Billing (full), Chargebee (full) |
-| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [sdk/1.3.0](https://github.com/polarsource/polar/releases/tag/sdk/1.3.0) | 10495 | Paddle (partial), Lemon Squeezy (partial), Stripe Billing (partial) |
+| [Lago](https://github.com/getlago/lago) | Go | AGPL-3.0 | [v1.57.0](https://github.com/getlago/lago/releases/tag/v1.57.0) signed | 10896 | Stripe Billing (full), Chargebee (full) |
+| [Polar](https://github.com/polarsource/polar) | Python | Apache-2.0 | [@polar-sh/better-auth@2.1.5](https://github.com/polarsource/polar/releases/tag/%40polar-sh/better-auth%402.1.5) | 10494 | Paddle (partial), Lemon Squeezy (partial), Stripe Billing (partial) |
 | [Flexprice](https://github.com/flexprice/flexprice) | Go | AGPL-3.0 | [v2.1.49](https://github.com/flexprice/flexprice/releases/tag/v2.1.49) signed | 6876 | Stripe Billing (full), Chargebee (partial) |
 | [Kill Bill](https://github.com/killbill/killbill) | Java | Apache-2.0 | [killbill-0.24.22](https://github.com/killbill/killbill/releases/tag/killbill-0.24.22) | 5859 | Stripe Billing (full), Chargebee (full), Stripe Payments (partial) |
 | [OpenMeter](https://github.com/openmeterio/openmeter) | Go | Apache-2.0 | [v1.0.0-beta.237](https://github.com/openmeterio/openmeter/releases/tag/v1.0.0-beta.237) | 2454 | Stripe Billing (partial) |

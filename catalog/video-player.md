@@ -4,12 +4,12 @@ Play local video files and streams, or the library of your own media server.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [IINA](https://github.com/iina/iina) | Swift | GPL-3.0 | [v1.5.1](https://github.com/iina/iina/releases/tag/v1.5.1) | 47153 | QuickTime Player (full) |
-| [mpv](https://github.com/mpv-player/mpv) | C | Other | [v0.42.0](https://github.com/mpv-player/mpv/releases/tag/v0.42.0) signed | 38173 | PotPlayer (partial) |
-| [Kodi](https://github.com/xbmc/xbmc) | C++ | Other | [21.3-Omega](https://github.com/xbmc/xbmc/releases/tag/21.3-Omega) signed | 21507 | Infuse (partial) |
-| [VLC](https://github.com/videolan/vlc) | C | GPL-2.0 | [3.0.24](https://github.com/videolan/vlc/releases/tag/3.0.24) | 20492 | QuickTime Player (partial) |
-| [Jellyfin Desktop](https://github.com/jellyfin/jellyfin-desktop) | C++ | GPL-2.0 | [v1.12.0](https://github.com/jellyfin/jellyfin-desktop/releases/tag/v1.12.0) | 6042 | Plex (partial) |
-| [Streamyfin](https://github.com/streamyfin/streamyfin) | TypeScript | MPL-2.0 | [v0.55.2](https://github.com/streamyfin/streamyfin/releases/tag/v0.55.2) signed | 5369 | Plex (partial), Infuse (partial) |
+| [IINA](https://github.com/iina/iina) | Swift | GPL-3.0 | [v1.5.1](https://github.com/iina/iina/releases/tag/v1.5.1) | 47155 | QuickTime Player (full) |
+| [mpv](https://github.com/mpv-player/mpv) | C | Other | [v0.42.0](https://github.com/mpv-player/mpv/releases/tag/v0.42.0) signed | 38175 | PotPlayer (partial) |
+| [Kodi](https://github.com/xbmc/xbmc) | C++ | Other | [21.3-Omega](https://github.com/xbmc/xbmc/releases/tag/21.3-Omega) signed | 21508 | Infuse (partial) |
+| [VLC](https://github.com/videolan/vlc) | C | GPL-2.0 | [3.0.24](https://github.com/videolan/vlc/releases/tag/3.0.24) | 20496 | QuickTime Player (partial) |
+| [Jellyfin Desktop](https://github.com/jellyfin/jellyfin-desktop) | C++ | GPL-2.0 | [v1.12.0](https://github.com/jellyfin/jellyfin-desktop/releases/tag/v1.12.0) | 6044 | Plex (partial) |
+| [Streamyfin](https://github.com/streamyfin/streamyfin) | TypeScript | MPL-2.0 | [v0.55.2](https://github.com/streamyfin/streamyfin/releases/tag/v0.55.2) signed | 5370 | Plex (partial), Infuse (partial) |
 | [MPC-BE](https://github.com/Aleksoid1978/MPC-BE) | C | GPL-3.0 | [1.9.3](https://github.com/Aleksoid1978/MPC-BE/releases/tag/1.9.3) | 4729 | PotPlayer (full) |
 | [Findroid](https://github.com/jarnedemeulemeester/findroid) | Kotlin | GPL-3.0 | [v1.2.0](https://github.com/jarnedemeulemeester/findroid/releases/tag/v1.2.0) signed | 4309 | Plex (partial) |
 | [Swiftfin](https://github.com/jellyfin/Swiftfin) | Swift | MPL-2.0 | [1.7.1](https://github.com/jellyfin/Swiftfin/releases/tag/1.7.1) | 4287 | Infuse (partial) |

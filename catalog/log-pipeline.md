@@ -4,7 +4,7 @@ Collect, transform and ship logs and events.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Vector](https://github.com/vectordotdev/vector) | Rust | MPL-2.0 | [v0.62.0](https://github.com/vectordotdev/vector/releases/tag/v0.62.0) signed | 22897 | Logstash (full), Fluentd (full) |
+| [Vector](https://github.com/vectordotdev/vector) | Rust | MPL-2.0 | [v0.62.0](https://github.com/vectordotdev/vector/releases/tag/v0.62.0) signed | 22896 | Logstash (full), Fluentd (full) |
 | [Logstash](https://github.com/elastic/logstash) | Java | Other | [v9.5.6](https://github.com/elastic/logstash/releases/tag/v9.5.6) signed | 14984 | none |
 | [Fluentd](https://github.com/fluent/fluentd) | Ruby | Apache-2.0 | [v1.20.1](https://github.com/fluent/fluentd/releases/tag/v1.20.1) | 13621 | Logstash (full) |
 | [Beats](https://github.com/elastic/beats) | Go | Other | [v9.5.6](https://github.com/elastic/beats/releases/tag/v9.5.6) signed | 12654 | Logstash (partial) |

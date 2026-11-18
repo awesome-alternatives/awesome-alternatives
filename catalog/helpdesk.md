@@ -4,15 +4,15 @@ Handle customer requests from email, chat and other channels as tickets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Chatwoot](https://github.com/chatwoot/chatwoot) | Ruby | Other | [v4.19.1](https://github.com/chatwoot/chatwoot/releases/tag/v4.19.1) | 40072 | Intercom (full), Zendesk (partial) |
+| [Chatwoot](https://github.com/chatwoot/chatwoot) | Ruby | Other | [v4.20.0](https://github.com/chatwoot/chatwoot/releases/tag/v4.20.0) | 40079 | Intercom (full), Zendesk (partial) |
 | [UVdesk](https://github.com/uvdesk/community-skeleton) | CSS | OSL-3.0 | [v1.1.8](https://github.com/uvdesk/community-skeleton/releases/tag/v1.1.8) signed | 19647 | Zendesk (partial), Freshdesk (partial) |
-| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [12.0.2](https://github.com/glpi-project/glpi/releases/tag/12.0.2) | 6632 | ServiceNow (partial) |
+| [GLPI](https://github.com/glpi-project/glpi) | PHP | GPL-3.0 | [12.0.2](https://github.com/glpi-project/glpi/releases/tag/12.0.2) | 6634 | ServiceNow (partial) |
 | [Zammad](https://github.com/zammad/zammad) | Ruby | AGPL-3.0 | [7.2.3](https://github.com/zammad/zammad/releases/tag/7.2.3) signed | 6125 | Zendesk (full), Freshdesk (full) |
 | [FreeScout](https://github.com/freescout-help-desk/freescout) | PHP | AGPL-3.0 | [1.8.251](https://github.com/freescout-help-desk/freescout/releases/tag/1.8.251) | 4671 | Zendesk (partial) |
 | [osTicket](https://github.com/osTicket/osTicket) | PHP | GPL-2.0 | [v1.18.4](https://github.com/osTicket/osTicket/releases/tag/v1.18.4) | 4007 | Zendesk (partial), Freshdesk (partial) |
 | [Chaskiq](https://github.com/chaskiq/chaskiq) | TypeScript | Other | [2.0.3](https://github.com/chaskiq/chaskiq/releases/tag/2.0.3) signed | 3584 | Intercom (full) |
 | [Helpdesk](https://github.com/frappe/helpdesk) | Vue | AGPL-3.0 | [v16.1.0](https://github.com/frappe/helpdesk/releases/tag/v16.1.0) | 3506 | Zendesk (partial), Freshdesk (partial) |
-| [Libredesk](https://github.com/abhinavxd/libredesk) | Go | AGPL-3.0 | [v2.9.2](https://github.com/abhinavxd/libredesk/releases/tag/v2.9.2) signed | 3170 | Zendesk (partial), Freshdesk (partial), Intercom (partial) |
+| [Libredesk](https://github.com/abhinavxd/libredesk) | Go | AGPL-3.0 | [v2.9.2](https://github.com/abhinavxd/libredesk/releases/tag/v2.9.2) signed | 3172 | Zendesk (partial), Freshdesk (partial), Intercom (partial) |
 | [Live Helper Chat](https://github.com/LiveHelperChat/livehelperchat) | PHP | Apache-2.0 | [5.01v](https://github.com/LiveHelperChat/livehelperchat/releases/tag/5.01v) | 2257 | Intercom (partial) |
 | [Trudesk](https://github.com/polonel/trudesk) | JavaScript | Other | [v1.2.11](https://github.com/polonel/trudesk/releases/tag/v1.2.11) | 1496 | Zendesk (partial) |
 | [Faveo Helpdesk](https://github.com/faveosuite/faveo-helpdesk) | PHP | OSL-3.0 | [v2.0.3](https://github.com/faveosuite/faveo-helpdesk/releases/tag/v2.0.3) | 1258 | Zendesk (partial) |

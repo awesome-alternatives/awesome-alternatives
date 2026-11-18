@@ -4,8 +4,8 @@ Load, transform and analyse tabular data in memory.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [pandas](https://github.com/pandas-dev/pandas) | Python | BSD-3-Clause | [v3.1.1](https://github.com/pandas-dev/pandas/releases/tag/v3.1.1) | 50560 | none |
-| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.1.0](https://github.com/pola-rs/polars/releases/tag/py-2.1.0) signed | 40370 | pandas (full) |
+| [pandas](https://github.com/pandas-dev/pandas) | Python | BSD-3-Clause | [v3.1.1](https://github.com/pandas-dev/pandas/releases/tag/v3.1.1) | 50564 | none |
+| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.1.0](https://github.com/pola-rs/polars/releases/tag/py-2.1.0) signed | 40371 | pandas (full) |
 | [Dask](https://github.com/dask/dask) | Python | BSD-3-Clause | [2026.8.0](https://github.com/dask/dask/releases/tag/2026.8.0) | 13958 | pandas (partial) |
 | [Modin](https://github.com/modin-project/modin) | Python | Apache-2.0 | [0.37.1](https://github.com/modin-project/modin/releases/tag/0.37.1) signed | 10392 | pandas (drop-in) |
 | [cuDF](https://github.com/NVIDIA/cudf) | C++ | Apache-2.0 | [v26.10.02](https://github.com/NVIDIA/cudf/releases/tag/v26.10.02) | 9800 | pandas (drop-in) |

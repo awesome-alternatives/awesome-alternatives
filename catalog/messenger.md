@@ -4,8 +4,8 @@ End-to-end encrypted messaging apps for one-to-one and group chats on a phone or
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Signal for Android](https://github.com/signalapp/Signal-Android) | Kotlin | AGPL-3.0 | [v8.35.2](https://github.com/signalapp/Signal-Android/releases/tag/v8.35.2) | 29654 | WhatsApp (full) |
-| [SimpleX Chat](https://github.com/simplex-chat/simplex-chat) | Haskell | AGPL-3.0 | [v7.1.3](https://github.com/simplex-chat/simplex-chat/releases/tag/v7.1.3) signed | 19719 | WhatsApp (full) |
+| [Signal for Android](https://github.com/signalapp/Signal-Android) | Kotlin | AGPL-3.0 | [v8.35.2](https://github.com/signalapp/Signal-Android/releases/tag/v8.35.2) | 29655 | WhatsApp (full) |
+| [SimpleX Chat](https://github.com/simplex-chat/simplex-chat) | Haskell | AGPL-3.0 | [v7.1.3](https://github.com/simplex-chat/simplex-chat/releases/tag/v7.1.3) signed | 19720 | WhatsApp (full) |
 | [Signal Desktop](https://github.com/signalapp/Signal-Desktop) | TypeScript | AGPL-3.0 | [v8.35.0](https://github.com/signalapp/Signal-Desktop/releases/tag/v8.35.0) | 16720 | WhatsApp (partial) |
 | [Signal Server](https://github.com/signalapp/Signal-Server) | Java | AGPL-3.0 | [v20261116.0.0](https://github.com/signalapp/Signal-Server/releases/tag/v20261116.0.0) | 10787 | WhatsApp (partial) |
 | [Berty](https://github.com/berty/berty) | TypeScript | Other | [v2.472.2](https://github.com/berty/berty/releases/tag/v2.472.2) signed | 9357 | WhatsApp (partial) |

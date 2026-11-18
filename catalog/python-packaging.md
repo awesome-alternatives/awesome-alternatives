@@ -4,8 +4,8 @@ Install dependencies, manage environments and lock Python projects.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.9](https://github.com/astral-sh/uv/releases/tag/0.13.9) signed | 92197 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
-| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.15](https://github.com/pyenv/pyenv/releases/tag/v2.8.15) | 45183 | none |
+| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.9](https://github.com/astral-sh/uv/releases/tag/0.13.9) signed | 92099 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
+| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.15](https://github.com/pyenv/pyenv/releases/tag/v2.8.15) | 45184 | none |
 | [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.1](https://github.com/python-poetry/poetry/releases/tag/2.5.1) | 34322 | Pipenv (full) |
 | [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.11.0](https://github.com/pypa/pipenv/releases/tag/v2026.11.0) | 25024 | none |
 | [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.18.19](https://github.com/pypa/pipx/releases/tag/1.18.19) | 13003 | none |

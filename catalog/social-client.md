@@ -15,6 +15,6 @@ Apps to read and post on Mastodon, Lemmy, Bluesky and Nostr.
 | [Phanpy](https://github.com/cheeaun/phanpy) | JavaScript | MIT | [2026.10.09.febb38d](https://github.com/cheeaun/phanpy/releases/tag/2026.10.09.febb38d) signed | 1516 | X (Twitter) (partial) |
 | [Jerboa](https://github.com/LemmyNet/jerboa) | Kotlin | AGPL-3.0 | [0.0.88](https://github.com/LemmyNet/jerboa/releases/tag/0.0.88) | 1337 | Reddit (partial) |
 | [Thunder](https://github.com/thunder-app/thunder) | Dart | AGPL-3.0 | [0.8.6](https://github.com/thunder-app/thunder/releases/tag/0.8.6) | 1030 | Reddit (partial) |
-| [Photon](https://github.com/Xyphyn/photon) | Svelte | AGPL-3.0 | [v2.4.3](https://github.com/Xyphyn/photon/releases/tag/v2.4.3) signed | 556 | Reddit (partial) |
+| [Photon](https://github.com/Xyphyn/photon) | Svelte | AGPL-3.0 | [v2.4.3](https://github.com/Xyphyn/photon/releases/tag/v2.4.3) signed | 557 | Reddit (partial) |
 
 [All categories](../README.md#catalog)

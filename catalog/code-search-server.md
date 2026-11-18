@@ -7,6 +7,6 @@ Index many repositories and search them from a web UI.
 | [Hound](https://github.com/hound-search/hound) | JavaScript | MIT | [v0.7.1](https://github.com/hound-search/hound/releases/tag/v0.7.1) signed | 5899 | Sourcegraph (partial) |
 | [OpenGrok](https://github.com/oracle/opengrok) | Java | Other | [1.14.21](https://github.com/oracle/opengrok/releases/tag/1.14.21) | 5032 | Sourcegraph (partial) |
 | [Sourcebot](https://github.com/sourcebot-dev/sourcebot) | Python | MIT | [v6.1.1](https://github.com/sourcebot-dev/sourcebot/releases/tag/v6.1.1) | 4034 | Sourcegraph (partial) |
-| [Zoekt](https://github.com/sourcegraph/zoekt) | Go | Apache-2.0 | none | 2079 | Sourcegraph (partial) |
+| [Zoekt](https://github.com/sourcegraph/zoekt) | Go | Apache-2.0 | none | 2080 | Sourcegraph (partial) |
 
 [All categories](../README.md#catalog)

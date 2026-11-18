@@ -4,11 +4,11 @@ Self-hosted messaging for teams.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [9.0.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/9.0.0) signed | 46623 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
-| [Mattermost](https://github.com/mattermost/mattermost) | TypeScript | Other | [v12.0.2](https://github.com/mattermost/mattermost/releases/tag/v12.0.2) signed | 39640 | Slack (full), Microsoft Teams (partial) |
-| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [13.2](https://github.com/zulip/zulip/releases/tag/13.2) | 26246 | Mattermost (full), Slack (full) |
-| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13574 | WhatsApp (partial) |
-| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1117.41341](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1117.41341) signed | 10922 | Discord (full) |
+| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | TypeScript | Other | [9.0.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/9.0.0) signed | 46515 | Mattermost (full), Slack (full), Microsoft Teams (partial) |
+| [Mattermost](https://github.com/mattermost/mattermost) | TypeScript | Other | [v12.0.2](https://github.com/mattermost/mattermost/releases/tag/v12.0.2) signed | 39644 | Slack (full), Microsoft Teams (partial) |
+| [Zulip](https://github.com/zulip/zulip) | Python | Apache-2.0 | [13.2](https://github.com/zulip/zulip/releases/tag/13.2) | 26250 | Mattermost (full), Slack (full) |
+| [Tinode](https://github.com/tinode/chat) | Go | GPL-3.0 | [v0.25.3](https://github.com/tinode/chat/releases/tag/v0.25.3) | 13573 | WhatsApp (partial) |
+| [Fluxer](https://github.com/fluxerapp/fluxer) | TypeScript | AGPL-3.0 | [fluxer-release@2026.1117.41341](https://github.com/fluxerapp/fluxer/releases/tag/fluxer-release%402026.1117.41341) signed | 10924 | Discord (full) |
 | [Mumble](https://github.com/mumble-voip/mumble) | C++ | Other | [v1.5.939](https://github.com/mumble-voip/mumble/releases/tag/v1.5.939) | 8424 | Discord (partial) |
 | [ejabberd](https://github.com/processone/ejabberd) | Erlang | Other | [26.09](https://github.com/processone/ejabberd/releases/tag/26.09) | 6753 | Slack (partial) |
 | [Campfire](https://github.com/basecamp/once-campfire) | Ruby | MIT | [v1.5.10](https://github.com/basecamp/once-campfire/releases/tag/v1.5.10) signed | 4842 | Slack (partial) |

@@ -8,9 +8,9 @@ Compile, test and package projects from a declared build, for C, C++, the JVM an
 | [Ninja](https://github.com/ninja-build/ninja) | C++ | Apache-2.0 | [v1.13.2](https://github.com/ninja-build/ninja/releases/tag/v1.13.2) | 13367 | none |
 | [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.2](https://github.com/xmake-io/xmake/releases/tag/v3.1.2) | 12305 | Meson (full) |
 | [CMake](https://github.com/Kitware/CMake) | C | BSD-3-Clause | [v4.5.0](https://github.com/Kitware/CMake/releases/tag/v4.5.0) signed | 8164 | none |
-| [sccache](https://github.com/mozilla/sccache) | Rust | Apache-2.0 | [v0.19.0](https://github.com/mozilla/sccache/releases/tag/v0.19.0) | 7946 | ccache (full) |
+| [sccache](https://github.com/mozilla/sccache) | Rust | Apache-2.0 | [v0.19.0](https://github.com/mozilla/sccache/releases/tag/v0.19.0) | 7948 | ccache (full) |
 | [Meson](https://github.com/mesonbuild/meson) | Python | Apache-2.0 | [1.12.1](https://github.com/mesonbuild/meson/releases/tag/1.12.1) | 6667 | CMake (full) |
-| [Apache Maven](https://github.com/apache/maven) | Java | Apache-2.0 | [maven-3.10.1](https://github.com/apache/maven/releases/tag/maven-3.10.1) | 5376 | Gradle (full) |
+| [Apache Maven](https://github.com/apache/maven) | Java | Apache-2.0 | [maven-3.10.1](https://github.com/apache/maven/releases/tag/maven-3.10.1) | 5375 | Gradle (full) |
 | [sbt](https://github.com/sbt/sbt) | Scala | Apache-2.0 | [v2.1.0](https://github.com/sbt/sbt/releases/tag/v2.1.0) signed | 4957 | Apache Maven (partial) |
 | [Premake](https://github.com/premake/premake-core) | C | BSD-3-Clause | [v5.0.0](https://github.com/premake/premake-core/releases/tag/v5.0.0) signed | 3656 | Meson (partial) |
 | [ccache](https://github.com/ccache/ccache) | C++ | Other | [v4.14.3](https://github.com/ccache/ccache/releases/tag/v4.14.3) signed | 3003 | none |

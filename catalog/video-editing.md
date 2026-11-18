@@ -4,15 +4,15 @@ Cut, compose and render video on a timeline or a node graph.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenCut](https://github.com/OpenCut-app/OpenCut) | TypeScript | MIT | [v0.3.0](https://github.com/OpenCut-app/OpenCut/releases/tag/v0.3.0) | 98785 | CapCut (partial) |
-| [Remotion](https://github.com/remotion-dev/remotion) | TypeScript | Other | [v4.0.544](https://github.com/remotion-dev/remotion/releases/tag/v4.0.544) | 73957 | After Effects (partial) |
-| [LosslessCut](https://github.com/mifi/lossless-cut) | TypeScript | GPL-2.0 | [v3.70.2](https://github.com/mifi/lossless-cut/releases/tag/v3.70.2) signed | 46147 | Avidemux (partial) |
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | TypeScript | MIT | [v3.17.2](https://github.com/motion-canvas/motion-canvas/releases/tag/v3.17.2) | 20013 | After Effects (partial) |
-| [Shotcut](https://github.com/mltframework/shotcut) | C++ | GPL-3.0 | [v26.11.15](https://github.com/mltframework/shotcut/releases/tag/v26.11.15) | 15717 | Premiere Pro (full) |
-| [Gyroflow](https://github.com/gyroflow/gyroflow) | Rust | GPL-3.0 | [v1.7.0](https://github.com/gyroflow/gyroflow/releases/tag/v1.7.0) | 9739 | none |
+| [OpenCut](https://github.com/OpenCut-app/OpenCut) | TypeScript | MIT | [v0.3.0](https://github.com/OpenCut-app/OpenCut/releases/tag/v0.3.0) | 98803 | CapCut (partial) |
+| [Remotion](https://github.com/remotion-dev/remotion) | TypeScript | Other | [v4.0.544](https://github.com/remotion-dev/remotion/releases/tag/v4.0.544) | 74002 | After Effects (partial) |
+| [LosslessCut](https://github.com/mifi/lossless-cut) | TypeScript | GPL-2.0 | [v3.70.2](https://github.com/mifi/lossless-cut/releases/tag/v3.70.2) signed | 46150 | Avidemux (partial) |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | TypeScript | MIT | [v3.17.2](https://github.com/motion-canvas/motion-canvas/releases/tag/v3.17.2) | 20020 | After Effects (partial) |
+| [Shotcut](https://github.com/mltframework/shotcut) | C++ | GPL-3.0 | [v26.11.15](https://github.com/mltframework/shotcut/releases/tag/v26.11.15) | 15719 | Premiere Pro (full) |
+| [Gyroflow](https://github.com/gyroflow/gyroflow) | Rust | GPL-3.0 | [v1.7.0](https://github.com/gyroflow/gyroflow/releases/tag/v1.7.0) | 9740 | none |
 | [OpenShot](https://github.com/OpenShot/openshot-qt) | Python | Other | [v4.1.1](https://github.com/OpenShot/openshot-qt/releases/tag/v4.1.1) | 6806 | Premiere Pro (full), CapCut (partial) |
-| [Kdenlive](https://github.com/KDE/kdenlive) | C++ | GPL-3.0 | [v26.11.80](https://github.com/KDE/kdenlive/releases/tag/v26.11.80) | 6136 | Premiere Pro (partial) |
-| [Auto-Editor](https://github.com/WyattBlue/auto-editor) | Nim | Unlicense | [31.9.0](https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0) | 5971 | Premiere Pro (partial) |
+| [Kdenlive](https://github.com/KDE/kdenlive) | C++ | GPL-3.0 | [v26.11.80](https://github.com/KDE/kdenlive/releases/tag/v26.11.80) | 6138 | Premiere Pro (partial) |
+| [Auto-Editor](https://github.com/WyattBlue/auto-editor) | Nim | Unlicense | [31.9.0](https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0) | 5973 | Premiere Pro (partial) |
 | [Natron](https://github.com/NatronGitHub/Natron) | C++ | GPL-2.0 | [v2.5.0](https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0) signed | 5728 | After Effects (partial) |
 | [Revideo](https://github.com/midrender/revideo) | TypeScript | MIT | [v0.11.0](https://github.com/midrender/revideo/releases/tag/v0.11.0) | 4219 | After Effects (partial) |
 | [Flowblade](https://github.com/jliljebl/flowblade) | Python | GPL-3.0 | [v2.24.2](https://github.com/jliljebl/flowblade/releases/tag/v2.24.2) | 3110 | Premiere Pro (full) |
