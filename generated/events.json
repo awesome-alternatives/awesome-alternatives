@@ -7922,7 +7922,6 @@
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-10T09:37:51.027Z","commit":"b2bf09d947dfc3c26618ecce744466bdb9b81b89","from":"v11.26.0","to":"v11.26.1"},
   {"type":"released","slug":"ferrflow","at":"2026-11-10T11:09:20.036Z","commit":"e8386a233d277d2609822bccc6540bc761e7a6b8","from":"v7.35.6","to":"v7.36.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T20:53:58.882Z","commit":"03a3a624fff7f38f71ca5be72e807c35d9fad654","from":"site@2026.11.4","to":"site@2026.11.5"},
-  {"type":"released","slug":"stashden","at":"2026-11-10T22:42:45.481Z","commit":"29a0c62e2098e1db325d1c315ba12b15f238d959","from":"v0.55.0","to":"v0.55.1"},
   {"type":"released","slug":"lfsx","at":"2026-11-10T22:55:00.067Z","commit":"20cc4d85691f975642006aa4261ed4b9e3730853","from":"site@2026.11.5","to":"site@2026.11.6"},
   {"type":"released","slug":"agent-qa","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.3.3","to":"v0.3.4"},
   {"type":"released","slug":"anytype","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.57.7","to":"v0.57.8-alpha"},
@@ -9199,5 +9198,6 @@
   {"type":"released","slug":"pigallery2","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"3.5.2","to":"3.8.0"},
   {"type":"released","slug":"rsshub","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"v2026.11.18-8678.e910c76","to":"v2026.11.18-8679.8f71938"},
   {"type":"released","slug":"vscode","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"1.146.0","to":"1.147.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-18T12:51:25.872Z","commit":null,"from":"site@2026.11.13","to":"site@2026.11.14"}
+  {"type":"released","slug":"lfsx","at":"2026-11-18T12:51:25.872Z","commit":null,"from":"site@2026.11.13","to":"site@2026.11.14"},
+  {"type":"released","slug":"stashden","at":"2026-11-18T13:25:27.162Z","commit":null,"from":"v0.56.7","to":"v0.56.8"}
 ]
