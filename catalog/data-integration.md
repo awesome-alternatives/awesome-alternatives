@@ -21,7 +21,7 @@ Extract data from applications and databases and load it into a warehouse.
 | [PeerDB](https://github.com/PeerDB-io/peerdb) | Go | AGPL-3.0 | [v0.37.15](https://github.com/PeerDB-io/peerdb/releases/tag/v0.37.15) signed | 3324 | Fivetran (partial) |
 | [Meltano](https://github.com/meltano/meltano) | Python | MIT | [v4.4.1](https://github.com/meltano/meltano/releases/tag/v4.4.1) signed | 2683 | Fivetran (partial), Airbyte (partial), Talend (partial) |
 | [Bento](https://github.com/warpstreamlabs/bento) | Go | Other | [v1.23.0](https://github.com/warpstreamlabs/bento/releases/tag/v1.23.0) | 2204 | Redpanda Connect (partial) |
-| [OLake](https://github.com/datazip-inc/olake) | Go | Apache-2.0 | [v1.2.0](https://github.com/datazip-inc/olake-go/releases/tag/v1.2.0) signed | 1846 | Fivetran (partial) |
+| [OLake](https://github.com/datazip-inc/olake-go) | Go | Apache-2.0 | [v1.2.0](https://github.com/datazip-inc/olake-go/releases/tag/v1.2.0) signed | 1880 | Fivetran (partial) |
 | [Multiwoven](https://github.com/Multiwoven/multiwoven) | Ruby | AGPL-3.0 | [v0.139.0](https://github.com/Multiwoven/multiwoven/releases/tag/v0.139.0) signed | 1687 | Hightouch (full), Census (full) |
 | [Apache Hop](https://github.com/apache/hop) | Java | Apache-2.0 | [2.20.0-rc1](https://github.com/apache/hop/releases/tag/2.20.0-rc1) | 1539 | Talend (partial), Informatica (full) |
 | [Estuary Flow](https://github.com/estuary/flow) | Rust | Other | [v0.6.16](https://github.com/estuary/flow/releases/tag/v0.6.16) | 991 | Fivetran (partial), Census (partial), Hightouch (partial) |

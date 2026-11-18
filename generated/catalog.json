@@ -206739,7 +206739,7 @@
     {
       "slug": "olake",
       "name": "OLake",
-      "repository": "https://github.com/datazip-inc/olake",
+      "repository": "https://github.com/datazip-inc/olake-go",
       "category": "data-integration",
       "replaces": [
         {
@@ -206751,7 +206751,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T15:10:58.000Z",
-      "editedAt": "2026-10-06T15:10:58.000Z",
+      "editedAt": "2026-11-18T09:32:32.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "datazip-inc/olake-go",
@@ -206759,8 +206759,8 @@
         "homepage": "https://olake.io/olake-go/",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 1846,
-        "forks": 292,
+        "stars": 1880,
+        "forks": 295,
         "topics": [
           "apache-iceberg",
           "cdc",
@@ -206790,13 +206790,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 281,
+        "stars": 315,
         "exact": true,
-        "since": "2026-10-19T05:17:30.738Z"
+        "since": "2026-10-19T09:33:11.812Z"
       },
       "starHistory": {
         "from": "2026-10-18",
-        "stars": [1565,1568,1569,1569,1571,1570,1569,1569,1571,1571,1571,1574,1573,1574,1574,1574,1576,1576,1577,1579,1580,1579,1580,1580,1580,1581,1583,1584,1585,1585,1672,1846]
+        "stars": [1565,1568,1569,1569,1571,1570,1569,1569,1571,1571,1571,1574,1573,1574,1574,1574,1576,1576,1577,1579,1580,1579,1580,1580,1580,1581,1583,1584,1585,1585,1672,1880]
       },
       "release": {
         "tag": "v1.2.0",
@@ -206850,7 +206850,6 @@
       "maintainerVerified": false,
       "verifiedAt": null,
       "flags": [
-        "moved",
         "star-spike"
       ],
       "terms": "open",
