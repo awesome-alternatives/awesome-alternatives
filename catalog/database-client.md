@@ -7,7 +7,7 @@ Desktop and web clients to browse, edit and query databases.
 | [DBeaver](https://github.com/dbeaver/dbeaver) | Java | Apache-2.0 | [26.2.5](https://github.com/dbeaver/dbeaver/releases/tag/26.2.5) | 52465 | TablePlus (full), DataGrip (full), Navicat (full) |
 | [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager) | JavaScript | MIT | [v1.7.4](https://github.com/qishibo/AnotherRedisDesktopManager/releases/tag/v1.7.4) | 34858 | Redis Insight (full) |
 | [Chat2DB](https://github.com/OtterMind/Chat2DB) | Java | Other | [v5.3.8](https://github.com/OtterMind/Chat2DB/releases/tag/v5.3.8) | 28365 | Navicat (partial) |
-| [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) | C++ | Other | [v3.13.1](https://github.com/sqlitebrowser/sqlitebrowser/releases/tag/v3.13.1) signed | 24805 | Navicat (partial) |
+| [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) | C++ | Other | [v3.13.1](https://github.com/sqlitebrowser/sqlitebrowser/releases/tag/v3.13.1) signed | 24806 | Navicat (partial) |
 | [Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio) | TypeScript | Other | [v6.3.2](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v6.3.2) | 23901 | TablePlus (full), DataGrip (partial) |
 | [pgcli](https://github.com/dbcli/pgcli) | Python | BSD-3-Clause | [v4.7.1](https://github.com/dbcli/pgcli/releases/tag/v4.7.1) | 13451 | pgAdmin 4 (partial) |
 | [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | Vue | GPL-3.0 | [v1.2.7](https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7) signed | 13171 | Redis Insight (full), Another Redis Desktop Manager (full) |
@@ -15,7 +15,7 @@ Desktop and web clients to browse, edit and query databases.
 | [Datasette](https://github.com/simonw/datasette) | Python | Apache-2.0 | [0.65.6](https://github.com/simonw/datasette/releases/tag/0.65.6) | 11600 | none |
 | [usql](https://github.com/xo/usql) | Go | MIT | [v0.21.6](https://github.com/xo/usql/releases/tag/v0.21.6) | 10173 | DataGrip (partial) |
 | [Redis Insight](https://github.com/redis/RedisInsight) | TypeScript | Other | [3.10.0](https://github.com/redis/RedisInsight/releases/tag/3.10.0) signed | 8937 | Another Redis Desktop Manager (full) |
-| [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin) | PHP | GPL-2.0 | [RELEASE_5_2_3](https://github.com/phpmyadmin/phpmyadmin/releases/tag/RELEASE_5_2_3) signed | 7977 | Navicat (partial) |
+| [phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin) | PHP | GPL-2.0 | [RELEASE_5_2_3](https://github.com/phpmyadmin/phpmyadmin/releases/tag/RELEASE_5_2_3) signed | 7975 | Navicat (partial) |
 | [Adminer](https://github.com/vrana/adminer) | PHP | Other | [v6.3.0](https://github.com/vrana/adminer/releases/tag/v6.3.0) | 7959 | TablePlus (partial) |
 | [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) | Objective-C | Other | [production/6.1.0-20117](https://github.com/Sequel-Ace/Sequel-Ace/releases/tag/production/6.1.0-20117) signed | 7564 | TablePlus (partial) |
 | [DbGate](https://github.com/dbgate/dbgate) | JavaScript | GPL-3.0 | [v7.3.6](https://github.com/dbgate/dbgate/releases/tag/v7.3.6) | 7388 | TablePlus (full), DataGrip (partial), Navicat (partial), Studio 3T (partial) |

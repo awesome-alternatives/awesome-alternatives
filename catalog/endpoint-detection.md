@@ -9,6 +9,6 @@ Query laptops and servers, hunt for threats on them and collect forensic evidenc
 | [Velociraptor](https://github.com/Velocidex/velociraptor) | Go | Other | [v0.77.3](https://github.com/Velocidex/velociraptor/releases/tag/v0.77.3) | 4484 | CrowdStrike Falcon (partial) |
 | [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw) | Rust | GPL-3.0 | [v2.18.0](https://github.com/WithSecureOpenSource/chainsaw/releases/tag/v2.18.0) signed | 3726 | Splunk (partial) |
 | [Hayabusa](https://github.com/Yamato-Security/hayabusa) | Rust | AGPL-3.0 | [v4.4.0](https://github.com/Yamato-Security/hayabusa/releases/tag/v4.4.0) signed | 3494 | Splunk (partial) |
-| [OpenEDR](https://github.com/ComodoSecurity/openedr) | C++ | Other | [release-2.5.1](https://github.com/ComodoSecurity/openedr/releases/tag/release-2.5.1) signed | 2752 | CrowdStrike Falcon (partial) |
+| [OpenEDR](https://github.com/ComodoSecurity/openedr) | C++ | Other | [release-2.5.1](https://github.com/ComodoSecurity/openedr/releases/tag/release-2.5.1) signed | 2751 | CrowdStrike Falcon (partial) |
 
 [All categories](../README.md#catalog)

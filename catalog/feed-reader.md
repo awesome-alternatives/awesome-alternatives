@@ -4,8 +4,8 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.18-8678.e910c76](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.18-8678.e910c76) signed | 47093 | RSS.app (full) |
-| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.18.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.18.0) signed | 39312 | Feedly (full), Inoreader (full) |
+| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.18-8679.8f71938](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.18-8679.8f71938) signed | 47094 | RSS.app (full) |
+| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.18.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.18.0) signed | 39313 | Feedly (full), Inoreader (full) |
 | [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.30.4](https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.4) signed | 16618 | Feedly (full), Inoreader (full) |
 | [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [mac-7.2.1](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.2.1) | 10546 | Feedly (partial) |
 | [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.5](https://github.com/miniflux/v2/releases/tag/2.3.5) | 9951 | Feedly (full), Inoreader (partial) |
@@ -22,6 +22,6 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 | [selfoss](https://github.com/fossar/selfoss) | HTML | GPL-3.0 | [2.19](https://github.com/fossar/selfoss/releases/tag/2.19) signed | 2477 | Feedly (full) |
 | [Fusion](https://github.com/0x2E/fusion) | TypeScript | MIT | [v1.3.0](https://github.com/0x2E/fusion/releases/tag/v1.3.0) signed | 2415 | Feedly (full) |
 | [Capy Reader](https://github.com/jocmp/capyreader) | Kotlin | GPL-3.0 | [2026.11.1217](https://github.com/jocmp/capyreader/releases/tag/2026.11.1217) | 1478 | Feedly (partial) |
-| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 888 | Feedly (full), Inoreader (partial) |
+| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 889 | Feedly (full), Inoreader (partial) |
 
 [All categories](../README.md#catalog)

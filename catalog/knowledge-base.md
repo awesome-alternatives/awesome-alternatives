@@ -5,12 +5,12 @@ Shared pages and documentation for teams, edited in the browser.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.15.1](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1) signed | 79121 | Notion (full) |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 74626 | Notion (full), Miro (partial), OneNote (partial) |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 74628 | Notion (full), Miro (partial), OneNote (partial) |
 | [Outline](https://github.com/outline/outline) | TypeScript | Other | [v1.13.0](https://github.com/outline/outline/releases/tag/v1.13.0) signed | 41296 | Notion (partial), Confluence (full), HackMD (partial) |
 | [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.4.0](https://github.com/requarks/wiki/releases/tag/3.4.0) signed | 29321 | Confluence (full) |
-| [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.97.0](https://github.com/docmost/docmost/releases/tag/v0.97.0) signed | 22369 | Confluence (full), Notion (partial) |
+| [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.97.0](https://github.com/docmost/docmost/releases/tag/v0.97.0) signed | 22371 | Confluence (full), Notion (partial) |
 | [BookStack](https://github.com/BookStackApp/BookStack) | PHP | MIT | [v26.09.3](https://github.com/BookStackApp/BookStack/releases/tag/v26.09.3) signed | 19148 | Confluence (full), Notion (partial) |
-| [La Suite Docs](https://github.com/suitenumerique/docs) | TypeScript | MIT | [v6.1.0](https://github.com/suitenumerique/docs/releases/tag/v6.1.0) signed | 16997 | Notion (partial), Confluence (partial) |
+| [La Suite Docs](https://github.com/suitenumerique/docs) | TypeScript | MIT | [v6.1.0](https://github.com/suitenumerique/docs/releases/tag/v6.1.0) signed | 16998 | Notion (partial), Confluence (partial) |
 | [TiddlyWiki](https://github.com/TiddlyWiki/TiddlyWiki5) | JavaScript | Other | [v5.4.1](https://github.com/TiddlyWiki/TiddlyWiki5/releases/tag/v5.4.1) | 8711 | Notion (partial) |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | TypeScript | AGPL-3.0 | [1.12.0](https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.0) | 7514 | HackMD (full) |
 | [SilverBullet](https://github.com/silverbulletmd/silverbullet) | TypeScript | MIT | [2.12.1](https://github.com/silverbulletmd/silverbullet/releases/tag/2.12.1) | 6553 | Notion (partial), Obsidian (partial) |

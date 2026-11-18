@@ -4,7 +4,7 @@ Accounting, inventory, sales and operations in one system.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 55889 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
+| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 55891 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
 | [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v16.60.0](https://github.com/frappe/erpnext/releases/tag/v16.60.0) | 41409 | NetSuite (full), Odoo (full), Sortly (partial), Square Point of Sale (partial) |
 | [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.13.53](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.53) signed | 10604 | QuickBooks (partial) |
 | [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.3.1](https://github.com/akaunting/akaunting/releases/tag/3.3.1) | 10317 | QuickBooks (full), Xero (full) |

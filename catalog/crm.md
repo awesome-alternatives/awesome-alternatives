@@ -4,9 +4,9 @@ Track contacts, companies and deals.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [sdk/v2.59.0](https://github.com/twentyhq/twenty/releases/tag/sdk/v2.59.0) signed | 61115 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
-| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25799 | none |
-| [Krayin CRM](https://github.com/krayin/laravel-crm) | PHP | MIT | [v2.2.8](https://github.com/krayin/laravel-crm/releases/tag/v2.2.8) signed | 24179 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [sdk/v2.59.0](https://github.com/twentyhq/twenty/releases/tag/sdk/v2.59.0) signed | 61117 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25800 | none |
+| [Krayin CRM](https://github.com/krayin/laravel-crm) | PHP | MIT | [v2.2.8](https://github.com/krayin/laravel-crm/releases/tag/v2.2.8) signed | 24180 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
 | [IDURAR](https://github.com/idurar/idurar-erp-crm) | JavaScript | AGPL-3.0 | [4.1.1](https://github.com/idurar/idurar-erp-crm/releases/tag/4.1.1) signed | 8962 | QuickBooks (partial) |
 | [SuiteCRM](https://github.com/SuiteCRM/SuiteCRM) | PHP | AGPL-3.0 | [v7.15.2](https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2) | 5869 | Salesforce (full) |
 | [Frappe CRM](https://github.com/frappe/crm) | Vue | AGPL-3.0 | [v16.0.4](https://github.com/frappe/crm/releases/tag/v16.0.4) | 4005 | Pipedrive (full), Salesforce (partial) |

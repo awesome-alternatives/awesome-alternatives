@@ -7,13 +7,13 @@ Host email for your own domains, archive and search every message for retention,
 | [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v17.0.0](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v17.0.0) signed | 19765 | Google Workspace (partial) |
 | [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.4.0](https://github.com/postalserver/postal/releases/tag/3.4.0) signed | 16965 | SendGrid (full) |
 | [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v1.1.1](https://github.com/stalwartlabs/stalwart/releases/tag/v1.1.1) | 16021 | Google Workspace (partial), Microsoft 365 (partial) |
-| [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15471 | Google Workspace (partial) |
+| [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15470 | Google Workspace (partial) |
 | [mailcow](https://github.com/mailcow/mailcow-dockerized) | PHP | GPL-3.0 | [2026-11](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-11) signed | 13837 | Google Workspace (partial), Microsoft 365 (partial) |
-| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.68](https://github.com/Mailu/Mailu/releases/tag/2024.06.68) signed | 7634 | Google Workspace (partial) |
+| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.68](https://github.com/Mailu/Mailu/releases/tag/2024.06.68) signed | 7633 | Google Workspace (partial) |
 | [Maddy](https://github.com/foxcpp/maddy) | Go | GPL-3.0 | [v0.9.7](https://github.com/foxcpp/maddy/releases/tag/v0.9.7) signed | 6130 | Google Workspace (partial) |
 | [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5952 | Google Workspace (partial) |
 | [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.4.0](https://github.com/haraka/Haraka/releases/tag/v3.4.0) signed | 5638 | SendGrid (partial) |
-| [Modoboa](https://github.com/modoboa/modoboa) | Python | ISC | [2.13.0](https://github.com/modoboa/modoboa/releases/tag/2.13.0) signed | 3543 | Google Workspace (partial) |
+| [Modoboa](https://github.com/modoboa/modoboa) | Python | ISC | [2.13.0](https://github.com/modoboa/modoboa/releases/tag/2.13.0) signed | 3542 | Google Workspace (partial) |
 | [Rspamd](https://github.com/rspamd/rspamd) | C | Other | [4.3.0](https://github.com/rspamd/rspamd/releases/tag/4.3.0) signed | 2575 | Proofpoint (partial) |
 | [Open Archiver](https://github.com/LogicLabs-OU/OpenArchiver) | TypeScript | AGPL-3.0 | [v0.6.2](https://github.com/LogicLabs-OU/OpenArchiver/releases/tag/v0.6.2) signed | 2483 | MailStore (partial), Mimecast (partial) |
 | [WildDuck](https://github.com/zone-eu/wildduck) | JavaScript | EUPL-1.2 | [v1.55.3](https://github.com/zone-eu/wildduck/releases/tag/v1.55.3) signed | 2113 | Google Workspace (partial) |

@@ -4,7 +4,7 @@ Community forums, link aggregators and question and answer sites.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.10.1](https://github.com/discourse/discourse/releases/tag/v2026.10.1) | 48092 | Circle (full), Reddit (partial), Stack Internal (partial) |
+| [Discourse](https://github.com/discourse/discourse) | Ruby | GPL-2.0 | [v2026.10.1](https://github.com/discourse/discourse/releases/tag/v2026.10.1) | 48093 | Circle (full), Reddit (partial), Stack Internal (partial) |
 | [Apache Answer](https://github.com/apache/answer) | Go | Apache-2.0 | [v2.0.3](https://github.com/apache/answer/releases/tag/v2.0.3) | 15715 | Stack Internal (full) |
 | [NodeBB](https://github.com/NodeBB/NodeBB) | JavaScript | GPL-3.0 | [v4.16.8](https://github.com/NodeBB/NodeBB/releases/tag/v4.16.8) | 15252 | Circle (partial), Reddit (partial) |
 | [Lemmy](https://github.com/LemmyNet/lemmy) | Rust | AGPL-3.0 | [0.19.21](https://github.com/LemmyNet/lemmy/releases/tag/0.19.21) | 14685 | Reddit (full) |

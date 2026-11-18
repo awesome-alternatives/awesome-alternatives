@@ -4,8 +4,8 @@ Customisable prompts showing git state, runtimes and context.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Shell | MIT | none | 190658 | Prezto (full) |
-| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.27.0](https://github.com/starship/starship/releases/tag/v1.27.0) signed | 60779 | Powerlevel10k (full), Oh My Zsh (partial) |
+| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Shell | MIT | none | 190662 | Prezto (full) |
+| [Starship](https://github.com/starship/starship) | Rust | ISC | [v1.27.0](https://github.com/starship/starship/releases/tag/v1.27.0) signed | 60782 | Powerlevel10k (full), Oh My Zsh (partial) |
 | [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Shell | MIT | [v1.20.0](https://github.com/romkatv/powerlevel10k/releases/tag/v1.20.0) signed | 55389 | Starship (partial), Spaceship (full) |
 | [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) | Go | MIT | [v33.0.0](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v33.0.0) | 23767 | Powerlevel10k (full), Oh My Zsh (partial) |
 | [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) | Shell | MIT | [v4.22.6](https://github.com/spaceship-prompt/spaceship-prompt/releases/tag/v4.22.6) | 20607 | Powerlevel10k (full), Oh My Zsh (partial) |

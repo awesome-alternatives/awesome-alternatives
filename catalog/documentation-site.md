@@ -4,12 +4,12 @@ Turn Markdown into a searchable documentation site.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Docusaurus](https://github.com/meta/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/meta/docusaurus/releases/tag/v3.10.2) | 66760 | GitBook (full), ReadMe (partial) |
+| [Docusaurus](https://github.com/meta/docusaurus) | TypeScript | MIT | [v3.10.2](https://github.com/meta/docusaurus/releases/tag/v3.10.2) | 66762 | GitBook (full), ReadMe (partial) |
 | [docsify](https://github.com/docsifyjs/docsify) | JavaScript | MIT | [v5.1.0](https://github.com/docsifyjs/docsify/releases/tag/v5.1.0) signed | 31599 | GitBook (partial) |
 | [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) | Python | MIT | [9.8.1](https://github.com/squidfunk/mkdocs-material/releases/tag/9.8.1) signed | 27628 | GitBook (full), Docusaurus (full) |
-| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22558 | GitBook (full) |
+| [MkDocs](https://github.com/mkdocs/mkdocs) | Python | BSD-2-Clause | [1.6.1](https://github.com/mkdocs/mkdocs/releases/tag/1.6.1) signed | 22559 | GitBook (full) |
 | [mdBook](https://github.com/rust-lang/mdBook) | Rust | MPL-2.0 | [v0.5.4](https://github.com/rust-lang/mdBook/releases/tag/v0.5.4) signed | 22316 | GitBook (full) |
-| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.21](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.21) | 18505 | Docusaurus (full), GitBook (full) |
+| [VitePress](https://github.com/vuejs/vitepress) | TypeScript | MIT | [v2.0.0-alpha.21](https://github.com/vuejs/vitepress/releases/tag/v2.0.0-alpha.21) | 18506 | Docusaurus (full), GitBook (full) |
 | [Nextra](https://github.com/shuding/nextra) | TypeScript | MIT | [nextra-theme-docs@4.6.1](https://github.com/shuding/nextra/releases/tag/nextra-theme-docs%404.6.1) | 13958 | GitBook (full), Docusaurus (full) |
 | [Fumadocs](https://github.com/fuma-nama/fumadocs) | TypeScript | MIT | [fumadocs@16.19.4](https://github.com/fuma-nama/fumadocs/releases/tag/fumadocs%4016.19.4) signed | 13661 | GitBook (full), Nextra (full), ReadMe (partial) |
 | [Starlight](https://github.com/withastro/starlight) | TypeScript | MIT | [@astrojs/starlight@0.43.1](https://github.com/withastro/starlight/releases/tag/%40astrojs/starlight%400.43.1) signed | 9614 | Docusaurus (full), GitBook (full) |

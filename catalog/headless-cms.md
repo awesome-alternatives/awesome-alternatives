@@ -4,12 +4,12 @@ Manage content in an admin UI and deliver it to any front end through an API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.63.0](https://github.com/strapi/strapi/releases/tag/v5.63.0) | 73510 | Contentful (full) |
-| [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.94.0](https://github.com/payloadcms/payload/releases/tag/v3.94.0) | 45880 | Contentful (full), Strapi (full) |
+| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.63.0](https://github.com/strapi/strapi/releases/tag/v5.63.0) | 73511 | Contentful (full) |
+| [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.94.0](https://github.com/payloadcms/payload/releases/tag/v3.94.0) | 45881 | Contentful (full), Strapi (full) |
 | [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.6.1](https://github.com/directus/directus/releases/tag/v12.6.1) signed | 38752 | Contentful (full) |
 | [Wagtail](https://github.com/wagtail/wagtail) | Python | BSD-3-Clause | [v8.1](https://github.com/wagtail/wagtail/releases/tag/v8.1) | 20719 | Contentful (partial) |
 | [Decap CMS](https://github.com/decaporg/decap-cms) | JavaScript | MIT | [decap-cms@3.17.3](https://github.com/decaporg/decap-cms/releases/tag/decap-cms%403.17.3) | 19491 | Contentful (partial) |
-| [TinaCMS](https://github.com/tinacms/tinacms) | TypeScript | Apache-2.0 | [tinacms@3.15.2](https://github.com/tinacms/tinacms/releases/tag/tinacms%403.15.2) signed | 13879 | Contentful (partial) |
+| [TinaCMS](https://github.com/tinacms/tinacms) | TypeScript | Apache-2.0 | [tinacms@3.15.2](https://github.com/tinacms/tinacms/releases/tag/tinacms%403.15.2) signed | 13880 | Contentful (partial) |
 | [Keystone](https://github.com/keystonejs/keystone) | TypeScript | MIT | [2026-11-03](https://github.com/keystonejs/keystone/releases/tag/2026-11-03) signed | 9994 | Contentful (full) |
 | [Webiny](https://github.com/webiny/webiny-js) | TypeScript | Other | [v6.5.2](https://github.com/webiny/webiny-js/releases/tag/v6.5.2) | 8052 | Contentful (full) |
 | [ApostropheCMS](https://github.com/apostrophecms/apostrophe) | JavaScript | none | [apostrophe@4.34.1](https://github.com/apostrophecms/apostrophe/releases/tag/apostrophe%404.34.1) | 4669 | Contentful (partial) |

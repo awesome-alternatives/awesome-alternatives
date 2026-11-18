@@ -4,13 +4,13 @@ Transcribe recordings, meetings and dictation with speech recognition models on 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Whisper](https://github.com/openai/whisper) | Python | MIT | [v20250625](https://github.com/openai/whisper/releases/tag/v20250625) | 112992 | Amazon Transcribe (partial) |
-| [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | C++ | MIT | [v1.9.5](https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.5) | 55281 | Whisper (full) |
-| [Handy](https://github.com/cjpais/Handy) | Rust | MIT | [v0.10.1](https://github.com/cjpais/Handy/releases/tag/v0.10.1) | 39148 | Wispr Flow (partial) |
-| [Meetily](https://github.com/Zackriya-Solutions/meetily) | Rust | MIT | [v0.5.0](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.5.0) signed | 32783 | Otter.ai (partial) |
+| [Whisper](https://github.com/openai/whisper) | Python | MIT | [v20250625](https://github.com/openai/whisper/releases/tag/v20250625) | 112993 | Amazon Transcribe (partial) |
+| [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | C++ | MIT | [v1.9.5](https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.5) | 55282 | Whisper (full) |
+| [Handy](https://github.com/cjpais/Handy) | Rust | MIT | [v0.10.1](https://github.com/cjpais/Handy/releases/tag/v0.10.1) | 39149 | Wispr Flow (partial) |
+| [Meetily](https://github.com/Zackriya-Solutions/meetily) | Rust | MIT | [v0.5.0](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.5.0) signed | 32784 | Otter.ai (partial) |
 | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Python | MIT | [v1.2.1](https://github.com/SYSTRAN/faster-whisper/releases/tag/v1.2.1) signed | 26845 | Whisper (full) |
-| [WhisperX](https://github.com/m-bain/whisperX) | Python | BSD-2-Clause | [v3.8.6](https://github.com/m-bain/whisperX/releases/tag/v3.8.6) | 25444 | Whisper (full), Amazon Transcribe (partial) |
-| [Buzz](https://github.com/chidiwilliams/buzz) | Python | MIT | [v1.4.5](https://github.com/chidiwilliams/buzz/releases/tag/v1.4.5) signed | 22888 | Otter.ai (partial) |
+| [WhisperX](https://github.com/m-bain/whisperX) | Python | BSD-2-Clause | [v3.8.6](https://github.com/m-bain/whisperX/releases/tag/v3.8.6) | 25446 | Whisper (full), Amazon Transcribe (partial) |
+| [Buzz](https://github.com/chidiwilliams/buzz) | Python | MIT | [v1.4.5](https://github.com/chidiwilliams/buzz/releases/tag/v1.4.5) signed | 22890 | Otter.ai (partial) |
 | [Vosk](https://github.com/alphacep/vosk-api) | Jupyter Notebook | Apache-2.0 | [v0.3.50](https://github.com/alphacep/vosk-api/releases/tag/v0.3.50) | 15273 | Whisper (partial), Amazon Transcribe (partial) |
 | [OpenWhispr](https://github.com/OpenWhispr/openwhispr) | JavaScript | MIT | [v1.12.0](https://github.com/OpenWhispr/openwhispr/releases/tag/v1.12.0) signed | 11794 | Wispr Flow (full) |
 | [Vibe](https://github.com/thewh1teagle/vibe) | TypeScript | MIT | [v3.3.5](https://github.com/thewh1teagle/vibe/releases/tag/v3.3.5) signed | 8150 | Otter.ai (partial) |

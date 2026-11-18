@@ -4,10 +4,10 @@ Stream a personal library of films, series, music and podcasts to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59485 | Plex (full), Emby (full), Netflix (partial) |
-| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24828 | Plex (partial), Spotify (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59487 | Plex (full), Emby (full), Netflix (partial) |
+| [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24830 | Plex (partial), Spotify (partial) |
 | [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17354 | Plex (partial), Spotify (partial) |
-| [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.38.0](https://github.com/advplyr/audiobookshelf/releases/tag/v2.38.0) | 15053 | Audible (partial) |
+| [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.38.0](https://github.com/advplyr/audiobookshelf/releases/tag/v2.38.0) | 15054 | Audible (partial) |
 | [Streama](https://github.com/streamaserver/streama) | JavaScript | MIT | [v1.11.3](https://github.com/streamaserver/streama/releases/tag/v1.11.3) | 9825 | Netflix (partial), Emby (partial) |
 | [Mopidy](https://github.com/mopidy/mopidy) | Python | Apache-2.0 | [v4.0.5](https://github.com/mopidy/mopidy/releases/tag/v4.0.5) | 8613 | Spotify (partial) |
 | [Snapcast](https://github.com/snapcast/snapcast) | C++ | GPL-3.0 | [v0.35.0](https://github.com/snapcast/snapcast/releases/tag/v0.35.0) | 8081 | Sonos (partial) |

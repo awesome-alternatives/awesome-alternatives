@@ -4,7 +4,7 @@ Audit cloud accounts and Kubernetes clusters against security benchmarks and rep
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Prowler](https://github.com/prowler-cloud/prowler) | Python | Apache-2.0 | [5.50.0](https://github.com/prowler-cloud/prowler/releases/tag/5.50.0) signed | 15272 | Wiz (partial) |
+| [Prowler](https://github.com/prowler-cloud/prowler) | Python | Apache-2.0 | [5.50.0](https://github.com/prowler-cloud/prowler/releases/tag/5.50.0) signed | 15273 | Wiz (partial) |
 | [Kubescape](https://github.com/kubescape/kubescape) | Go | Apache-2.0 | [v4.0.21](https://github.com/kubescape/kubescape/releases/tag/v4.0.21) | 11967 | Wiz (partial) |
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Go | Apache-2.0 | [v0.16.0](https://github.com/aquasecurity/kube-bench/releases/tag/v0.16.0) signed | 8263 | none |
 | [CloudSploit](https://github.com/aquasecurity/cloudsploit) | JavaScript | GPL-3.0 | [v3.9.0](https://github.com/aquasecurity/cloudsploit/releases/tag/v3.9.0) signed | 3790 | Wiz (partial) |

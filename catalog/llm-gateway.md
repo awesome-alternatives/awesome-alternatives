@@ -4,9 +4,9 @@ One OpenAI-compatible API in front of many model providers, with keys, budgets, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.110.0](https://github.com/BerriAI/litellm/releases/tag/v1.110.0) signed | 63473 | OpenRouter (partial) |
-| [New API](https://github.com/QuantumNous/new-api) | Go | AGPL-3.0 | [v1.0.0-rc.51](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.51) signed | 52138 | OpenRouter (partial) |
+| [LiteLLM](https://github.com/BerriAI/litellm) | Python | Other | [v1.110.0](https://github.com/BerriAI/litellm/releases/tag/v1.110.0) signed | 63474 | OpenRouter (partial) |
+| [New API](https://github.com/QuantumNous/new-api) | Go | AGPL-3.0 | [v1.0.0-rc.51](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.51) signed | 52142 | OpenRouter (partial) |
 | [Portkey Gateway](https://github.com/Portkey-AI/gateway) | TypeScript | MIT | [v1.15.2](https://github.com/Portkey-AI/gateway/releases/tag/v1.15.2) signed | 13404 | OpenRouter (partial) |
-| [Bifrost](https://github.com/maximhq/bifrost) | Go | Apache-2.0 | [ent-v2.5.2-base](https://github.com/maximhq/bifrost/releases/tag/ent-v2.5.2-base) signed | 9717 | OpenRouter (partial) |
+| [Bifrost](https://github.com/maximhq/bifrost) | Go | Apache-2.0 | [ent-v2.5.2-base](https://github.com/maximhq/bifrost/releases/tag/ent-v2.5.2-base) signed | 9724 | OpenRouter (partial) |
 
 [All categories](../README.md#catalog)

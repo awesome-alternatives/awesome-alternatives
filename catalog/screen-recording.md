@@ -4,12 +4,12 @@ Record the screen, the camera or a terminal session and share it as a video, a G
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [33.0.1](https://github.com/obsproject/obs-studio/releases/tag/33.0.1) | 79695 | Loom (partial) |
+| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [33.0.1](https://github.com/obsproject/obs-studio/releases/tag/33.0.1) | 79698 | Loom (partial) |
 | [ShareX](https://github.com/ShareX/ShareX) | C# | GPL-3.0 | [v22.4.0](https://github.com/ShareX/ShareX/releases/tag/v22.4.0) | 41132 | Snagit (full), Loom (partial) |
-| [Flameshot](https://github.com/flameshot-org/flameshot) | C++ | GPL-3.0 | [v15.0.0](https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0) signed | 31580 | Snagit (partial) |
-| [ScreenToGif](https://github.com/NickeManarin/ScreenToGif) | C# | MS-PL | [2.43.2](https://github.com/NickeManarin/ScreenToGif/releases/tag/2.43.2) | 27968 | Snagit (partial) |
-| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.3](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3) signed | 25206 | Loom (full) |
-| [VHS](https://github.com/charmbracelet/vhs) | Go | MIT | [v0.12.1](https://github.com/charmbracelet/vhs/releases/tag/v0.12.1) signed | 21338 | asciinema (partial) |
+| [Flameshot](https://github.com/flameshot-org/flameshot) | C++ | GPL-3.0 | [v15.0.0](https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0) signed | 31581 | Snagit (partial) |
+| [ScreenToGif](https://github.com/NickeManarin/ScreenToGif) | C# | MS-PL | [2.43.2](https://github.com/NickeManarin/ScreenToGif/releases/tag/2.43.2) | 27969 | Snagit (partial) |
+| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.3](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3) signed | 25209 | Loom (full) |
+| [VHS](https://github.com/charmbracelet/vhs) | Go | MIT | [v0.12.1](https://github.com/charmbracelet/vhs/releases/tag/v0.12.1) signed | 21337 | asciinema (partial) |
 | [Screenity](https://github.com/alyssaxuu/screenity) | JavaScript | GPL-3.0 | [v4.7.2](https://github.com/alyssaxuu/screenity/releases/tag/v4.7.2) | 19001 | Loom (partial) |
 | [asciinema](https://github.com/asciinema/asciinema) | Rust | GPL-3.0 | [v3.2.1](https://github.com/asciinema/asciinema/releases/tag/v3.2.1) | 17974 | none |
 | [Greenshot](https://github.com/greenshot/greenshot) | C# | GPL-3.0 | [v1.3.328](https://github.com/greenshot/greenshot/releases/tag/v1.3.328) | 5272 | Snagit (partial) |

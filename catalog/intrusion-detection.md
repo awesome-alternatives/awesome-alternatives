@@ -5,7 +5,7 @@ Watch network traffic or hosts for attacks, and report or block what matches.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 19057 | none |
-| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.2](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2) signed | 15676 | Fail2ban (full) |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.2](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2) signed | 15677 | Fail2ban (full) |
 | [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.6](https://github.com/stamparm/maltrail/releases/tag/3.6) | 8662 | none |
 | [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.1](https://github.com/zeek/zeek/releases/tag/v9.0.1) | 8252 | none |
 | [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.9.2](https://github.com/arkime/arkime/releases/tag/v6.9.2) signed | 7581 | none |

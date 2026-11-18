@@ -6,9 +6,9 @@ Inspect HTTP traffic and block attacks, bots and abuse before they reach an appl
 |---|---|---|---|---:|---|
 | [Anubis](https://github.com/TecharoHQ/anubis) | Go | MIT | [v1.28.2](https://github.com/TecharoHQ/anubis/releases/tag/v1.28.2) | 24235 | Cloudflare WAF (partial), hCaptcha (partial), reCAPTCHA (partial) |
 | [SafeLine](https://github.com/chaitin/SafeLine) | Go | GPL-3.0 | [v9.4.4](https://github.com/chaitin/SafeLine/releases/tag/v9.4.4) signed | 23312 | Cloudflare WAF (full) |
-| [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9877 | Cloudflare WAF (partial) |
-| [Cap](https://github.com/tiagozip/cap) | JavaScript | Other | [capd@4.0.15](https://github.com/tiagozip/cap/releases/tag/capd%404.0.15) signed | 8472 | reCAPTCHA (full), hCaptcha (full) |
-| [Coraza](https://github.com/corazawaf/coraza) | Go | Apache-2.0 | [v3.8.1](https://github.com/corazawaf/coraza/releases/tag/v3.8.1) signed | 4036 | Cloudflare WAF (partial) |
+| [ModSecurity](https://github.com/owasp-modsecurity/ModSecurity) | C++ | Apache-2.0 | [v3.0.17](https://github.com/owasp-modsecurity/ModSecurity/releases/tag/v3.0.17) signed | 9878 | Cloudflare WAF (partial) |
+| [Cap](https://github.com/tiagozip/cap) | JavaScript | Other | [capd@4.0.15](https://github.com/tiagozip/cap/releases/tag/capd%404.0.15) signed | 8475 | reCAPTCHA (full), hCaptcha (full) |
+| [Coraza](https://github.com/corazawaf/coraza) | Go | Apache-2.0 | [v3.8.1](https://github.com/corazawaf/coraza/releases/tag/v3.8.1) signed | 4037 | Cloudflare WAF (partial) |
 | [OWASP CRS](https://github.com/coreruleset/coreruleset) | Python | Apache-2.0 | [v4.30.0](https://github.com/coreruleset/coreruleset/releases/tag/v4.30.0) signed | 3362 | Cloudflare WAF (partial) |
 | [ALTCHA](https://github.com/altcha-org/altcha) | TypeScript | MIT | [v3.6.0](https://github.com/altcha-org/altcha/releases/tag/v3.6.0) | 2910 | reCAPTCHA (full), hCaptcha (full) |
 | [open-appsec](https://github.com/openappsec/openappsec) | C++ | Apache-2.0 | [1.1.36](https://github.com/openappsec/openappsec/releases/tag/1.1.36) signed | 1751 | Cloudflare WAF (partial) |

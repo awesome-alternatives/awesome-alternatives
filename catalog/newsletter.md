@@ -5,7 +5,7 @@ Mailing lists, campaigns and subscriber management.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Ghost](https://github.com/TryGhost/Ghost) | TypeScript | MIT | [v6.78.0](https://github.com/TryGhost/Ghost/releases/tag/v6.78.0) | 55848 | Substack (full), Mailchimp (partial), Squarespace (partial), Wix (partial) |
-| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24365 | Mailchimp (partial) |
+| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24366 | Mailchimp (partial) |
 | [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 16413 | Mailchimp (partial) |
 | [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.2](https://github.com/mautic/mautic/releases/tag/7.2.2) signed | 11001 | Mailchimp (full) |
 | [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.18.0](https://github.com/useplunk/plunk/releases/tag/v0.18.0) signed | 5612 | Mailchimp (partial), SendGrid (partial) |

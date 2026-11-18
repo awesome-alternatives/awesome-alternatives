@@ -4,7 +4,7 @@ Read EPUB, PDF and comic files on a desktop, phone or e-ink device.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [KOReader](https://github.com/koreader/koreader) | Lua | AGPL-3.0 | [v2026.07.1](https://github.com/koreader/koreader/releases/tag/v2026.07.1) | 31163 | Amazon Kindle (partial) |
+| [KOReader](https://github.com/koreader/koreader) | Lua | AGPL-3.0 | [v2026.07.1](https://github.com/koreader/koreader/releases/tag/v2026.07.1) | 31164 | Amazon Kindle (partial) |
 | [Koodo Reader](https://github.com/koodo-reader/koodo-reader) | JavaScript | AGPL-3.0 | [v2.4.7](https://github.com/koodo-reader/koodo-reader/releases/tag/v2.4.7) | 28887 | Apple Books (partial), Adobe Digital Editions (partial) |
 | [Readest](https://github.com/readest/readest) | TypeScript | AGPL-3.0 | [v0.12.20](https://github.com/readest/readest/releases/tag/v0.12.20) signed | 26431 | Amazon Kindle (partial), Adobe Digital Editions (partial), Apple Books (partial) |
 | [Foliate](https://github.com/johnfactotum/foliate) | JavaScript | GPL-3.0 | [3.3.0](https://github.com/johnfactotum/foliate/releases/tag/3.3.0) | 8883 | Apple Books (partial) |

@@ -5,10 +5,10 @@ Schedule and run containers across a cluster of machines, from full Kubernetes d
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Kubernetes](https://github.com/kubernetes/kubernetes) | Go | Apache-2.0 | [v1.37.2](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2) | 129249 | Amazon EKS (full) |
-| [Docker Compose](https://github.com/docker/compose) | Go | Apache-2.0 | [v5.8.0](https://github.com/docker/compose/releases/tag/v5.8.0) signed | 38997 | none |
+| [Docker Compose](https://github.com/docker/compose) | Go | Apache-2.0 | [v5.8.0](https://github.com/docker/compose/releases/tag/v5.8.0) signed | 38998 | none |
 | [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Jinja | Apache-2.0 | [v2.32.0](https://github.com/kubernetes-sigs/kubespray/releases/tag/v2.32.0) signed | 18847 | Amazon EKS (full) |
 | [Nomad](https://github.com/hashicorp/nomad) | Go | Other | [v2.1.1](https://github.com/hashicorp/nomad/releases/tag/v2.1.1) | 17107 | Kubernetes (partial) |
-| [Talos Linux](https://github.com/siderolabs/talos) | Go | MPL-2.0 | [v1.14.6](https://github.com/siderolabs/talos/releases/tag/v1.14.6) signed | 11553 | Amazon EKS (full) |
+| [Talos Linux](https://github.com/siderolabs/talos) | Go | MPL-2.0 | [v1.14.6](https://github.com/siderolabs/talos/releases/tag/v1.14.6) signed | 11554 | Amazon EKS (full) |
 | [vcluster](https://github.com/loft-sh/vcluster) | Go | Apache-2.0 | [v0.38.0](https://github.com/loft-sh/vcluster/releases/tag/v0.38.0) | 11383 | none |
 | [k0s](https://github.com/k0sproject/k0s) | Go | Other | [v1.37.2+k0s.1](https://github.com/k0sproject/k0s/releases/tag/v1.37.2%2Bk0s.1) signed | 6596 | Amazon EKS (full) |
 | [Cluster API](https://github.com/kubernetes-sigs/cluster-api) | Go | Apache-2.0 | [v1.14.4](https://github.com/kubernetes-sigs/cluster-api/releases/tag/v1.14.4) | 4351 | Rancher (partial) |

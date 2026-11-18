@@ -4,11 +4,11 @@ Build 2D and 3D games with an engine, an editor or a framework, design their map
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Godot](https://github.com/godotengine/godot) | C++ | MIT | [4.7.2-stable](https://github.com/godotengine/godot/releases/tag/4.7.2-stable) signed | 120351 | Unity (full), Construct (partial), GameMaker (partial), Unreal Engine (partial) |
-| [Bevy](https://github.com/bevyengine/bevy) | Rust | Apache-2.0 | [v0.20.1](https://github.com/bevyengine/bevy/releases/tag/v0.20.1) | 49836 | Unity (partial) |
-| [Phaser](https://github.com/phaserjs/phaser) | JavaScript | MIT | [v4.2.1](https://github.com/phaserjs/phaser/releases/tag/v4.2.1) | 40741 | Construct (partial), GameMaker (partial) |
+| [Godot](https://github.com/godotengine/godot) | C++ | MIT | [4.7.2-stable](https://github.com/godotengine/godot/releases/tag/4.7.2-stable) signed | 120353 | Unity (full), Construct (partial), GameMaker (partial), Unreal Engine (partial) |
+| [Bevy](https://github.com/bevyengine/bevy) | Rust | Apache-2.0 | [v0.20.1](https://github.com/bevyengine/bevy/releases/tag/v0.20.1) | 49837 | Unity (partial) |
+| [Phaser](https://github.com/phaserjs/phaser) | JavaScript | MIT | [v4.2.1](https://github.com/phaserjs/phaser/releases/tag/v4.2.1) | 40742 | Construct (partial), GameMaker (partial) |
 | [raylib](https://github.com/raysan5/raylib) | C | Zlib | [6.2](https://github.com/raysan5/raylib/releases/tag/6.2) | 35715 | none |
-| [GDevelop](https://github.com/4ian/GDevelop) | JavaScript | Other | [v5.6.287](https://github.com/4ian/GDevelop/releases/tag/v5.6.287) signed | 29030 | Construct (full), GameMaker (partial) |
+| [GDevelop](https://github.com/4ian/GDevelop) | JavaScript | Other | [v5.6.287](https://github.com/4ian/GDevelop/releases/tag/v5.6.287) signed | 29031 | Construct (full), GameMaker (partial) |
 | [MonoGame](https://github.com/MonoGame/MonoGame) | C# | Other | [v3.8.6.1](https://github.com/MonoGame/MonoGame/releases/tag/v3.8.6.1) signed | 14647 | Unity (partial) |
 | [Ebitengine](https://github.com/hajimehoshi/ebiten) | Go | Apache-2.0 | [v2.10.6](https://github.com/hajimehoshi/ebiten/releases/tag/v2.10.6) | 13635 | none |
 | [Tiled](https://github.com/mapeditor/tiled) | C++ | Other | [v1.12.2](https://github.com/mapeditor/tiled/releases/tag/v1.12.2) signed | 13071 | LDtk (partial) |

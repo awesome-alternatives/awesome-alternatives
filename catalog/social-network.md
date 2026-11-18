@@ -4,7 +4,7 @@ Self-hosted and federated social networks, for short public posts, photos and vi
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.5](https://github.com/mastodon/mastodon/releases/tag/v4.7.5) | 50593 | X (Twitter) (full), Threads (full) |
+| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.5](https://github.com/mastodon/mastodon/releases/tag/v4.7.5) | 50595 | X (Twitter) (full), Threads (full) |
 | [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.0](https://github.com/diaspora/diaspora/releases/tag/v0.10.0) signed | 13652 | Facebook (partial) |
 | [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11399 | X (Twitter) (full), Threads (full) |
 | [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7149 | Instagram (full), TikTok (partial) |

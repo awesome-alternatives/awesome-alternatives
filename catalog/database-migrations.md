@@ -4,7 +4,7 @@ Version and apply database schema changes.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 19032 | Flyway (partial) |
+| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 19033 | Flyway (partial) |
 | [Bytebase](https://github.com/bytebase/bytebase) | TypeScript | Other | [3.24.1](https://github.com/bytebase/bytebase/releases/tag/3.24.1) signed | 14721 | Flyway (partial) |
 | [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13652 | none |
 | [goose](https://github.com/pressly/goose) | Go | Other | [v3.30.1](https://github.com/pressly/goose/releases/tag/v3.30.1) signed | 11707 | migrate (full) |

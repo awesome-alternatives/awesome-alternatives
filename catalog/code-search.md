@@ -4,7 +4,7 @@ Search file contents recursively, or find files by name, type, size or date, fro
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 70036 | The Silver Searcher (full), ack (full) |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Rust | Unlicense | [15.2.0](https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0) signed | 70034 | The Silver Searcher (full), ack (full) |
 | [fd](https://github.com/sharkdp/fd) | Rust | Apache-2.0 | [v10.5.2](https://github.com/sharkdp/fd/releases/tag/v10.5.2) | 45100 | none |
 | [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) | C | Apache-2.0 | [2.2.0](https://github.com/ggreer/the_silver_searcher/releases/tag/2.2.0) | 27124 | ack (full) |
 | [ast-grep](https://github.com/ast-grep/ast-grep) | Rust | MIT | [0.51.3](https://github.com/ast-grep/ast-grep/releases/tag/0.51.3) signed | 16623 | ripgrep (partial) |

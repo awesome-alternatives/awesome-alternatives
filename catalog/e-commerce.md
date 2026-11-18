@@ -5,7 +5,7 @@ Run an online store, from catalogue to checkout, or ring up in-store sales and p
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Medusa](https://github.com/medusajs/medusa) | TypeScript | Other | [v2.22.7](https://github.com/medusajs/medusa/releases/tag/v2.22.7) signed | 37302 | Shopify (partial) |
-| [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.5.1](https://github.com/bagisto/bagisto/releases/tag/v2.5.1) | 28383 | Shopify (full) |
+| [Bagisto](https://github.com/bagisto/bagisto) | PHP | MIT | [v2.5.2](https://github.com/bagisto/bagisto/releases/tag/v2.5.2) signed | 28383 | Shopify (full) |
 | [Saleor](https://github.com/saleor/saleor) | Python | BSD-3-Clause | [3.23.50](https://github.com/saleor/saleor/releases/tag/3.23.50) signed | 23584 | Shopify (partial) |
 | [Spree Commerce](https://github.com/spree/spree) | Ruby | BSD-3-Clause | [v6.0.5](https://github.com/spree/spree/releases/tag/v6.0.5) signed | 15849 | Shopify (full) |
 | [Magento Open Source](https://github.com/magento/magento2) | PHP | OSL-3.0 | [2.4.10-alpha1](https://github.com/magento/magento2/releases/tag/2.4.10-alpha1) | 12242 | Shopify (full) |

@@ -4,7 +4,7 @@ Keep recipes, plan meals and build shopping lists from them.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.31.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.31.0) | 13933 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
+| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.31.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.31.0) | 13935 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
 | [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9691 | AnyList (partial) |
 | [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.7.4](https://github.com/TandoorRecipes/recipes/releases/tag/2.7.4) | 8742 | Paprika Recipe Manager (full), Plan to Eat (full) |
 | [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.8.1](https://github.com/TomBursch/kitchenowl/releases/tag/v0.8.1) signed | 3870 | AnyList (full) |

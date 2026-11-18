@@ -9,8 +9,8 @@ Run virtual machines and system containers across a cluster of hosts.
 | [QEMU](https://github.com/qemu/qemu) | C | Other | [v11.1.3](https://github.com/qemu/qemu/releases/tag/v11.1.3) | 14051 | none |
 | [KubeVirt](https://github.com/kubevirt/kubevirt) | Go | Apache-2.0 | [v1.9.1](https://github.com/kubevirt/kubevirt/releases/tag/v1.9.1) signed | 7214 | VMware vSphere (partial) |
 | [Incus](https://github.com/lxc/incus) | Go | Apache-2.0 | [v7.6.0](https://github.com/lxc/incus/releases/tag/v7.6.0) signed | 6668 | LXD (full), VMware vSphere (partial) |
-| [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) | Rust | none | [v54.1](https://github.com/cloud-hypervisor/cloud-hypervisor/releases/tag/v54.1) | 6538 | Firecracker (partial) |
-| [Harvester](https://github.com/harvester/harvester) | Go | Apache-2.0 | [v1.9.1](https://github.com/harvester/harvester/releases/tag/v1.9.1) | 5246 | VMware vSphere (full) |
+| [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) | Rust | none | [v54.1](https://github.com/cloud-hypervisor/cloud-hypervisor/releases/tag/v54.1) | 6539 | Firecracker (partial) |
+| [Harvester](https://github.com/harvester/harvester) | Go | Apache-2.0 | [v1.9.1](https://github.com/harvester/harvester/releases/tag/v1.9.1) | 5245 | VMware vSphere (full) |
 | [LXD](https://github.com/canonical/lxd) | Go | AGPL-3.0 | [lxd-6.10.1](https://github.com/canonical/lxd/releases/tag/lxd-6.10.1) signed | 4855 | VMware vSphere (partial) |
 | [Apache CloudStack](https://github.com/apache/cloudstack) | Java | Apache-2.0 | [4.23.0.0](https://github.com/apache/cloudstack/releases/tag/4.23.0.0) signed | 3137 | VMware vSphere (partial) |
 | [OpenNebula](https://github.com/OpenNebula/one) | JavaScript | Apache-2.0 | [release-7.4.1](https://github.com/OpenNebula/one/releases/tag/release-7.4.1) signed | 1770 | VMware vSphere (full) |

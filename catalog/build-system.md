@@ -4,7 +4,7 @@ Compile, test and package projects from a declared build, for C, C++, the JVM an
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gradle](https://github.com/gradle/gradle) | Groovy | Apache-2.0 | [v9.9.1](https://github.com/gradle/gradle/releases/tag/v9.9.1) signed | 18937 | Apache Maven (full) |
+| [Gradle](https://github.com/gradle/gradle) | Groovy | Apache-2.0 | [v9.9.1](https://github.com/gradle/gradle/releases/tag/v9.9.1) signed | 18936 | Apache Maven (full) |
 | [Ninja](https://github.com/ninja-build/ninja) | C++ | Apache-2.0 | [v1.13.2](https://github.com/ninja-build/ninja/releases/tag/v1.13.2) | 13367 | none |
 | [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.2](https://github.com/xmake-io/xmake/releases/tag/v3.1.2) | 12305 | Meson (full) |
 | [CMake](https://github.com/Kitware/CMake) | C | BSD-3-Clause | [v4.5.0](https://github.com/Kitware/CMake/releases/tag/v4.5.0) signed | 8164 | none |

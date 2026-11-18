@@ -8,7 +8,7 @@ Open apps and files and run commands from the keyboard.
 | [Wox](https://github.com/Wox-launcher/Wox) | Go | GPL-3.0 | [v2.5.0](https://github.com/Wox-launcher/Wox/releases/tag/v2.5.0) | 27657 | Raycast (full), Alfred (full) |
 | [rofi](https://github.com/davatorium/rofi) | C | Other | [2.1.1](https://github.com/davatorium/rofi/releases/tag/2.1.1) | 16547 | Alfred (partial) |
 | [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) | C# | MIT | [v2.1.4](https://github.com/Flow-Launcher/Flow.Launcher/releases/tag/v2.1.4) signed | 16045 | Raycast (full), Alfred (full) |
-| [Vicinae](https://github.com/vicinaehq/vicinae) | C++ | GPL-3.0 | [v0.30.1](https://github.com/vicinaehq/vicinae/releases/tag/v0.30.1) | 10625 | Raycast (partial) |
+| [Vicinae](https://github.com/vicinaehq/vicinae) | C++ | GPL-3.0 | [v0.30.1](https://github.com/vicinaehq/vicinae/releases/tag/v0.30.1) | 10626 | Raycast (partial) |
 | [Cerebro](https://github.com/cerebroapp/cerebro) | JavaScript | MIT | [v0.11.0](https://github.com/cerebroapp/cerebro/releases/tag/v0.11.0) | 8573 | Alfred (partial) |
 | [Albert](https://github.com/albertlauncher/albert) | C++ | Other | [v35.2.0](https://github.com/albertlauncher/albert/releases/tag/v35.2.0) | 8010 | Raycast (full), Alfred (full) |
 | [Kando](https://github.com/kando-menu/kando) | TypeScript | Other | [v3.0.1](https://github.com/kando-menu/kando/releases/tag/v3.0.1) | 6661 | Raycast (partial), Alfred (partial) |
