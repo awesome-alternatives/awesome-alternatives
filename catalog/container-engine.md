@@ -7,7 +7,7 @@ Build and run OCI containers.
 | [Docker Engine (Moby)](https://github.com/moby/moby) | Go | Apache-2.0 | [docker-v29.10.0](https://github.com/moby/moby/releases/tag/docker-v29.10.0) signed | 72275 | none |
 | [Podman](https://github.com/podman-container-tools/podman) | Go | Apache-2.0 | [v6.2.0](https://github.com/podman-container-tools/podman/releases/tag/v6.2.0) signed | 33318 | Docker Engine (Moby) (drop-in) |
 | [containerd](https://github.com/containerd/containerd) | Go | Apache-2.0 | [v2.4.2](https://github.com/containerd/containerd/releases/tag/v2.4.2) signed | 21500 | Docker Engine (Moby) (partial) |
-| [gVisor](https://github.com/google/gvisor) | Go | Apache-2.0 | [release-20261116.0](https://github.com/gvisor/gvisor/releases/tag/release-20261116.0) | 20038 | runc (drop-in) |
+| [gVisor](https://github.com/gvisor/gvisor) | Go | Apache-2.0 | [release-20261116.0](https://github.com/gvisor/gvisor/releases/tag/release-20261116.0) | 20040 | runc (drop-in) |
 | [Jib](https://github.com/GoogleContainerTools/jib) | Java | Apache-2.0 | [v3.5.4-gradle](https://github.com/GoogleContainerTools/jib/releases/tag/v3.5.4-gradle) | 14456 | Docker Engine (Moby) (partial) |
 | [runc](https://github.com/opencontainers/runc) | Go | Apache-2.0 | [v1.5.3](https://github.com/opencontainers/runc/releases/tag/v1.5.3) signed | 13568 | none |
 | [nerdctl](https://github.com/containerd/nerdctl) | Go | Apache-2.0 | [v2.4.2](https://github.com/containerd/nerdctl/releases/tag/v2.4.2) signed | 10489 | Docker Engine (Moby) (full) |

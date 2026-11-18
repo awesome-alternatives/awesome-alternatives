@@ -124112,7 +124112,7 @@
     {
       "slug": "gvisor",
       "name": "gVisor",
-      "repository": "https://github.com/google/gvisor",
+      "repository": "https://github.com/gvisor/gvisor",
       "category": "container-engine",
       "replaces": [
         {
@@ -124124,7 +124124,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T15:53:41.000Z",
-      "editedAt": "2026-10-06T15:53:41.000Z",
+      "editedAt": "2026-11-18T09:32:50.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "gvisor/gvisor",
@@ -124132,8 +124132,8 @@
         "homepage": "https://gvisor.dev",
         "language": "Go",
         "license": "Apache-2.0",
-        "stars": 20038,
-        "forks": 2086,
+        "stars": 20040,
+        "forks": 2087,
         "topics": [
           "containers",
           "docker",
@@ -124148,17 +124148,17 @@
         "fork": false,
         "private": false,
         "createdAt": "2018-04-26T21:28:49Z",
-        "pushedAt": "2026-11-17T21:15:15Z",
+        "pushedAt": "2026-11-18T06:17:00Z",
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 337,
+        "stars": 339,
         "exact": true,
-        "since": "2026-10-19T05:17:30.738Z"
+        "since": "2026-10-19T09:33:27.200Z"
       },
       "starHistory": {
         "from": "2026-10-18",
-        "stars": [19701,19708,19731,19730,19742,19753,19764,19772,19779,19793,19804,19820,19830,19841,19842,19848,19861,19864,19872,19883,19898,19923,19936,19947,19959,19971,19985,20001,20006,20010,20024,20038]
+        "stars": [19701,19708,19731,19730,19742,19753,19764,19772,19779,19793,19804,19820,19830,19841,19842,19848,19861,19864,19872,19883,19898,19923,19936,19947,19959,19971,19985,20001,20006,20010,20024,20040]
       },
       "release": {
         "tag": "release-20261116.0",
@@ -124206,15 +124206,13 @@
         }
       ],
       "contributors": {
-        "count": 46,
+        "count": 47,
         "capped": true
       },
       "platforms": [],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []
