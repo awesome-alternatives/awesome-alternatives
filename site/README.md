@@ -24,7 +24,12 @@ answers 404, and no canonical URL is a key, so a redirect never chains.
 A category merged into another keeps its URLs: `/categories/<old>/` and everything under it answer
 301 to the same path under the category that took its tools, in every locale. The pairs come from
 `data/category-redirects.yaml`, which `pnpm validate` checks, and land in a second `map` in the same
-file. Both redirects belong to nginx; `pnpm dev` and `pnpm preview` serve those URLs as 404.
+file. A renamed tool keeps its URLs the same way: `data/tool-redirects.yaml` gives the old slug, the
+tool that took it and the day the redirect ends. `pnpm build` writes the entries still active on
+the build day to a third `map`, and nginx answers 301 on `/tools/<old>/` (every locale, with its
+feed), `/tools/<old>.md`, `/og/tools/<old>.png`, `/badge/<old>.json` and the comparisons the new
+tool is in, whichever side the old slug is on. An entry past its `until` is left out at the next
+deploy. All of these redirects belong to nginx; `pnpm dev` and `pnpm preview` serve those URLs as 404.
 
 ```bash
 pnpm install

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-alternatives.com/schema/tool-redirects.schema.json",
+  "title": "Tool redirects",
+  "description": "Tools that were renamed, keyed by the old slug. Each names the tool that took the old URLs and the day the redirect stops, one year after the rename.",
+  "type": "object",
+  "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+  "additionalProperties": {
+    "type": "object",
+    "required": ["to", "until"],
+    "additionalProperties": false,
+    "properties": {
+      "to": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "until": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+    }
+  }
+}

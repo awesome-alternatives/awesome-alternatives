@@ -26,6 +26,21 @@ export function reversedPairs(pairs: readonly Sides[]): Map<string, string> {
   return table;
 }
 
+export function toolPairRedirects(pairs: readonly Sides[], tools: Readonly<Record<string, string>>): Map<string, string> {
+  const canonical = new Set(pairs.map((pair) => pairSlug(pair.a.slug, pair.b.slug)));
+  const table = new Map<string, string>();
+  for (const [old, current] of Object.entries(tools)) {
+    for (const pair of pairs) {
+      const other = pair.a.slug === current ? pair.b.slug : pair.b.slug === current ? pair.a.slug : undefined;
+      if (other === undefined) continue;
+      for (const spelling of [pairSlug(old, other), mirrorSlug(old, other)]) {
+        if (!canonical.has(spelling)) table.set(spelling, pairSlug(current, other));
+      }
+    }
+  }
+  return table;
+}
+
 const HASH_OVERHEAD = 16;
 
 function bucketSize(keys: readonly string[]): number {
@@ -48,7 +63,15 @@ export function categoryMap(redirects: Readonly<Record<string, string>>): string
   return nginxMap("category_slug", "category_target", new Map(Object.entries(redirects)));
 }
 
-export function redirectMaps(pairs: ReadonlyMap<string, string>, categories: Readonly<Record<string, string>>): string {
-  const keys = [...pairs.keys(), ...Object.keys(categories)];
-  return [`map_hash_bucket_size ${bucketSize(keys)};`, pairMap(pairs), categoryMap(categories)].join("\n");
+export function toolMap(redirects: Readonly<Record<string, string>>): string {
+  return nginxMap("tool_slug", "tool_target", new Map(Object.entries(redirects)));
+}
+
+export function redirectMaps(
+  pairs: ReadonlyMap<string, string>,
+  categories: Readonly<Record<string, string>>,
+  tools: Readonly<Record<string, string>>,
+): string {
+  const keys = [...pairs.keys(), ...Object.keys(categories), ...Object.keys(tools)];
+  return [`map_hash_bucket_size ${bucketSize(keys)};`, pairMap(pairs), categoryMap(categories), toolMap(tools)].join("\n");
 }

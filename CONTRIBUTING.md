@@ -93,6 +93,26 @@ By opening a pull request that adds or edits a file under `data/`, you license t
 [CC BY-SA 4.0](LICENSE-DATA), like the rest of the catalog. Code contributions are licensed under
 [AGPL-3.0](LICENSE).
 
+## Renaming a tool
+
+When a project changes its name, rename its file to the new slug (`git mv data/tools/whishper.yaml
+data/tools/anysub.yaml`), update the `replaces` entries that point at the old slug, and add the old
+slug to [`data/tool-redirects.yaml`](data/tool-redirects.yaml), with `until` one year after the
+rename:
+
+```yaml
+whishper:
+  to: anysub
+  until: 2027-11-14
+```
+
+Until that day the site answers 301 from every URL of the old slug (its page in each language, its
+feed, `.md`, image and badge, and the comparisons it was in) to the new one, so links and badges
+people embedded keep working. After `until` the redirect is gone at the next deploy, with nothing
+to commit, and CI reports the entry as removable. While the entry is active the old slug cannot be
+used again: CI fails an entry with that slug and says to wait, delete the entry, or pick another
+slug. [`schema/tool-redirects.schema.json`](schema/tool-redirects.schema.json) lists the fields.
+
 ## Banning an entry
 
 A maintainer can take an entry off the site without deleting it, for a tool that is harmful or
@@ -215,12 +235,15 @@ Blocking:
   itself
 - a closed product is replaced by at least one tool, and its slug is not also a tool
 - `deploy` is only set on a tool whose category is `selfHost`
+- no slug is the old name in an active entry of `data/tool-redirects.yaml`, every entry's `to` is
+  a tool in `data/tools` and its `until` is a real date
 
 There is no star or popularity threshold beyond that: a young or small tool is accepted when it
 passes these checks, and its page shows the stars, releases and activity so readers can judge it.
 
 Reviewed by a maintainer before merge, without blocking:
 
+- an entry of `data/tool-redirects.yaml` whose `until` has passed, which can be deleted
 - the repository was renamed or moved, which the [Repository moves](#gone-and-renamed-repositories)
   workflow also proposes on its own
 - GitHub detects no licence

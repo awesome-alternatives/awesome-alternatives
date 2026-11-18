@@ -25,6 +25,7 @@
         "CONTRIBUTING.md",
         "data/categories.yaml",
         "data/category-redirects.yaml",
+        "data/tool-redirects.yaml",
         "data/groups.yaml",
         "data/migrations",
         "data/benchmarks",
@@ -32,7 +33,8 @@
         "scripts/lib/rules.ts",
         "scripts/lib/trending.ts",
         "scripts/lib/contributors.ts",
-        "scripts/lib/order.ts"
+        "scripts/lib/order.ts",
+        "scripts/lib/tool-redirects.ts"
       ],
       "versionedFiles": [{ "path": "site/package.json", "format": "json" }]
     },
