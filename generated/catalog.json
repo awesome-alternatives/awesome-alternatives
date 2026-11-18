@@ -163708,27 +163708,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-18T10:17:15Z",
+        "pushedAt": "2026-11-18T12:49:41Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-19T10:20:21.759Z"
+        "since": "2026-10-19T12:50:41.479Z"
       },
       "starHistory": {
         "from": "2026-10-18",
         "stars": [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7]
       },
       "release": {
-        "tag": "site@2026.11.13",
-        "publishedAt": "2026-11-18T09:39:00Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.13",
+        "tag": "site@2026.11.14",
+        "publishedAt": "2026-11-18T12:49:48Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.14",
         "source": "release",
         "signed": true,
-        "tagOid": "ca4395785865d700ef387938dcefe0f4c2f6ae57"
+        "tagOid": "358ad46de7cd85b24c80497122da306efab5110a"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.14",
+          "name": null,
+          "publishedAt": "2026-11-18T12:49:48Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.14",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.13",
           "name": "fix(deps): update ferrlabs npm packages (#766)",
@@ -163755,13 +163762,6 @@
           "name": "fix(telemetry): mask code and state keys in colon form and spaced benign field names (#759)",
           "publishedAt": "2026-11-12T19:34:39Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.11",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.10",
-          "name": "fix(deps): update dependency @grafana/faro-web-sdk to ~2.14.0 (#762)",
-          "publishedAt": "2026-11-12T18:24:03Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.10",
           "prerelease": false
         }
       ],

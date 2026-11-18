@@ -7831,7 +7831,6 @@
   {"type":"released","slug":"kiss-translator","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"v2.2.0","to":"v2.2.1"},
   {"type":"released","slug":"kroki","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"v0.35.0","to":"v0.36.0"},
   {"type":"released","slug":"ledgersmb","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"1.13.8","to":"1.13.9"},
-  {"type":"released","slug":"lfsx","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"v1.26.53","to":"site@2026.11.4"},
   {"type":"released","slug":"libreoffice","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"libreoffice-26.8.2.2","to":"libreoffice-26.8.3.1"},
   {"type":"released","slug":"litellm","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"v1.108.3","to":"v1.108.4"},
   {"type":"license-changed","slug":"mailcatcher","at":"2026-11-10T05:17:25.859Z","commit":"2d66b8610cf4c346bb70353063c77565a3b43bd1","from":"MIT","to":"Other"},
@@ -9199,5 +9198,6 @@
   {"type":"released","slug":"owntracks-recorder","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"1.0.5","to":"1.0.6"},
   {"type":"released","slug":"pigallery2","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"3.5.2","to":"3.8.0"},
   {"type":"released","slug":"rsshub","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"v2026.11.18-8678.e910c76","to":"v2026.11.18-8679.8f71938"},
-  {"type":"released","slug":"vscode","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"1.146.0","to":"1.147.0"}
+  {"type":"released","slug":"vscode","at":"2026-11-18T10:20:21.759Z","commit":null,"from":"1.146.0","to":"1.147.0"},
+  {"type":"released","slug":"lfsx","at":"2026-11-18T12:51:25.872Z","commit":null,"from":"site@2026.11.13","to":"site@2026.11.14"}
 ]
