@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.20.0] - 2026-11-18
+
+### Features
+
+- feat(site): redirect renamed tools from data with an expiry date (#495)
+
 ## [0.19.1] - 2026-11-09
 
 ### Bug Fixes

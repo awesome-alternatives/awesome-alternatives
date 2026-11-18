@@ -4,6 +4,17 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.142.0] - 2026-11-18
+
+### Features
+
+- feat(site): redirect renamed tools from data with an expiry date (#495)
+
+### Bug Fixes
+
+- chore(catalog): refresh stashden
+- chore(catalog): refresh from GitHub
+
 ## [0.141.68] - 2026-11-18
 
 ### Bug Fixes
