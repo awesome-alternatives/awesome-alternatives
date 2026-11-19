@@ -4,13 +4,13 @@ Load, transform and analyse tabular data in memory.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [pandas](https://github.com/pandas-dev/pandas) | Python | BSD-3-Clause | [v3.1.1](https://github.com/pandas-dev/pandas/releases/tag/v3.1.1) | 50566 | none |
-| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.1.0](https://github.com/pola-rs/polars/releases/tag/py-2.1.0) signed | 40370 | pandas (full) |
-| [Dask](https://github.com/dask/dask) | Python | BSD-3-Clause | [2026.8.0](https://github.com/dask/dask/releases/tag/2026.8.0) | 13957 | pandas (partial) |
+| [pandas](https://github.com/pandas-dev/pandas) | Python | BSD-3-Clause | [v3.1.1](https://github.com/pandas-dev/pandas/releases/tag/v3.1.1) | 50569 | none |
+| [Polars](https://github.com/pola-rs/polars) | Rust | MIT | [py-2.1.0](https://github.com/pola-rs/polars/releases/tag/py-2.1.0) signed | 40379 | pandas (full) |
+| [Dask](https://github.com/dask/dask) | Python | BSD-3-Clause | [2026.8.0](https://github.com/dask/dask/releases/tag/2026.8.0) | 13958 | pandas (partial) |
 | [Modin](https://github.com/modin-project/modin) | Python | Apache-2.0 | [0.37.1](https://github.com/modin-project/modin/releases/tag/0.37.1) signed | 10392 | pandas (drop-in) |
 | [cuDF](https://github.com/NVIDIA/cudf) | C++ | Apache-2.0 | [v26.10.02](https://github.com/NVIDIA/cudf/releases/tag/v26.10.02) | 9801 | pandas (drop-in) |
-| [Apache DataFusion](https://github.com/apache/datafusion) | Rust | Apache-2.0 | [55.3.0](https://github.com/apache/datafusion/releases/tag/55.3.0) signed | 9609 | pandas (partial), Apache Spark (partial) |
-| [Ibis](https://github.com/ibis-project/ibis) | Python | Apache-2.0 | [12.0.0](https://github.com/ibis-project/ibis/releases/tag/12.0.0) | 6704 | pandas (partial) |
-| [Daft](https://github.com/Eventual-Inc/Daft) | Rust | Apache-2.0 | [v0.7.26](https://github.com/Eventual-Inc/Daft/releases/tag/v0.7.26) | 5852 | Apache Spark (partial) |
+| [Apache DataFusion](https://github.com/apache/datafusion) | Rust | Apache-2.0 | [55.3.0](https://github.com/apache/datafusion/releases/tag/55.3.0) signed | 9613 | pandas (partial), Apache Spark (partial) |
+| [Ibis](https://github.com/ibis-project/ibis) | Python | Apache-2.0 | [12.0.0](https://github.com/ibis-project/ibis/releases/tag/12.0.0) | 6705 | pandas (partial) |
+| [Daft](https://github.com/Eventual-Inc/Daft) | Rust | Apache-2.0 | [v0.7.26](https://github.com/Eventual-Inc/Daft/releases/tag/v0.7.26) | 5854 | Apache Spark (partial) |
 
 [All categories](../README.md#catalog)

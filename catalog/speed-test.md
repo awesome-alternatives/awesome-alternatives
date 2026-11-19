@@ -4,10 +4,10 @@ Measure bandwidth and latency to your own server, or track your connection over 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [LibreSpeed](https://github.com/librespeed/speedtest) | JavaScript | LGPL-3.0 | [v6.3.1](https://github.com/librespeed/speedtest/releases/tag/v6.3.1) signed | 15314 | Speedtest by Ookla (partial) |
-| [iperf](https://github.com/esnet/iperf) | C | Other | [3.22](https://github.com/esnet/iperf/releases/tag/3.22) | 8889 | Speedtest by Ookla (partial) |
-| [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | PHP | MIT | [v1.15.1](https://github.com/alexjustesen/speedtest-tracker/releases/tag/v1.15.1) signed | 6095 | Speedtest by Ookla (partial) |
-| [OpenSpeedTest](https://github.com/openspeedtest/Speed-Test) | JavaScript | MIT | none | 3862 | Speedtest by Ookla (partial) |
+| [LibreSpeed](https://github.com/librespeed/speedtest) | JavaScript | LGPL-3.0 | [v6.3.1](https://github.com/librespeed/speedtest/releases/tag/v6.3.1) signed | 15315 | Speedtest by Ookla (partial) |
+| [iperf](https://github.com/esnet/iperf) | C | Other | [3.22](https://github.com/esnet/iperf/releases/tag/3.22) | 8890 | Speedtest by Ookla (partial) |
+| [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | PHP | MIT | [v1.15.1](https://github.com/alexjustesen/speedtest-tracker/releases/tag/v1.15.1) signed | 6096 | Speedtest by Ookla (partial) |
+| [OpenSpeedTest](https://github.com/openspeedtest/Speed-Test) | JavaScript | MIT | none | 3864 | Speedtest by Ookla (partial) |
 | [speedtest-go](https://github.com/showwin/speedtest-go) | Go | MIT | [v1.8.3](https://github.com/showwin/speedtest-go/releases/tag/v1.8.3) | 885 | Speedtest by Ookla (partial) |
 
 [All categories](../README.md#catalog)

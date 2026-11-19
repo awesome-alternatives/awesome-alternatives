@@ -4,14 +4,14 @@ Collect, transform and ship logs and events.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Vector](https://github.com/vectordotdev/vector) | Rust | MPL-2.0 | [v0.62.0](https://github.com/vectordotdev/vector/releases/tag/v0.62.0) signed | 22897 | Logstash (full), Fluentd (full) |
-| [Logstash](https://github.com/elastic/logstash) | Java | Other | [v9.5.6](https://github.com/elastic/logstash/releases/tag/v9.5.6) signed | 14984 | none |
+| [Vector](https://github.com/vectordotdev/vector) | Rust | MPL-2.0 | [v0.62.0](https://github.com/vectordotdev/vector/releases/tag/v0.62.0) signed | 22901 | Logstash (full), Fluentd (full) |
+| [Logstash](https://github.com/elastic/logstash) | Java | Other | [v9.5.6](https://github.com/elastic/logstash/releases/tag/v9.5.6) signed | 14983 | none |
 | [Fluentd](https://github.com/fluent/fluentd) | Ruby | Apache-2.0 | [v1.20.1](https://github.com/fluent/fluentd/releases/tag/v1.20.1) | 13621 | Logstash (full) |
-| [Beats](https://github.com/elastic/beats) | Go | Other | [v9.5.6](https://github.com/elastic/beats/releases/tag/v9.5.6) signed | 12654 | Logstash (partial) |
-| [Fluent Bit](https://github.com/fluent/fluent-bit) | C | Apache-2.0 | [v5.2.0](https://github.com/fluent/fluent-bit/releases/tag/v5.2.0) | 8194 | Logstash (full), Fluentd (full) |
-| [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) | Go | Apache-2.0 | [v0.165.0](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0) signed | 7778 | Logstash (partial), Fluentd (partial) |
-| [Grafana Alloy](https://github.com/grafana/alloy) | Go | Apache-2.0 | [v1.22.0](https://github.com/grafana/alloy/releases/tag/v1.22.0) signed | 3698 | OpenTelemetry Collector (full) |
+| [Beats](https://github.com/elastic/beats) | Go | Other | [v9.5.6](https://github.com/elastic/beats/releases/tag/v9.5.6) signed | 12653 | Logstash (partial) |
+| [Fluent Bit](https://github.com/fluent/fluent-bit) | C | Apache-2.0 | [v5.2.0](https://github.com/fluent/fluent-bit/releases/tag/v5.2.0) | 8200 | Logstash (full), Fluentd (full) |
+| [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) | Go | Apache-2.0 | [v0.165.0](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0) signed | 7783 | Logstash (partial), Fluentd (partial) |
+| [Grafana Alloy](https://github.com/grafana/alloy) | Go | Apache-2.0 | [v1.22.0](https://github.com/grafana/alloy/releases/tag/v1.22.0) signed | 3699 | OpenTelemetry Collector (full) |
 | [syslog-ng](https://github.com/syslog-ng/syslog-ng) | C | Other | [syslog-ng-4.13.0](https://github.com/syslog-ng/syslog-ng/releases/tag/syslog-ng-4.13.0) signed | 2386 | rsyslog (full) |
-| [rsyslog](https://github.com/rsyslog/rsyslog) | C | LGPL-3.0 | [v8.2610.0](https://github.com/rsyslog/rsyslog/releases/tag/v8.2610.0) signed | 2348 | syslog-ng (full) |
+| [rsyslog](https://github.com/rsyslog/rsyslog) | C | LGPL-3.0 | [v8.2610.0](https://github.com/rsyslog/rsyslog/releases/tag/v8.2610.0) signed | 2349 | syslog-ng (full) |
 
 [All categories](../README.md#catalog)

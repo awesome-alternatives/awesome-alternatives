@@ -4,14 +4,14 @@ Self-hosted and federated social networks, for short public posts, photos and vi
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.5](https://github.com/mastodon/mastodon/releases/tag/v4.7.5) | 50595 | X (Twitter) (full), Threads (full) |
-| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.0](https://github.com/diaspora/diaspora/releases/tag/v0.10.0) signed | 13652 | Facebook (partial) |
-| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11399 | X (Twitter) (full), Threads (full) |
-| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7149 | Instagram (full), TikTok (partial) |
+| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.5](https://github.com/mastodon/mastodon/releases/tag/v4.7.5) | 50555 | X (Twitter) (full), Threads (full) |
+| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.1](https://github.com/diaspora/diaspora/releases/tag/v0.10.1) signed | 13652 | Facebook (partial) |
+| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11398 | X (Twitter) (full), Threads (full) |
+| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7151 | Instagram (full), TikTok (partial) |
 | [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.4](https://github.com/humhub/humhub/releases/tag/v1.19.4) | 6790 | Facebook (partial) |
 | [Bluesky PDS](https://github.com/bluesky-social/pds) | Shell | Other | [v0.4.5051](https://github.com/bluesky-social/pds/releases/tag/v0.4.5051) signed | 2655 | X (Twitter) (partial) |
 | [Elgg](https://github.com/Elgg/Elgg) | PHP | Other | [7.1.3](https://github.com/Elgg/Elgg/releases/tag/7.1.3) signed | 1679 | Facebook (partial) |
-| [Bonfire](https://github.com/bonfire-networks/bonfire-app) | Elixir | none | [v1.0.7](https://github.com/bonfire-networks/bonfire-app/releases/tag/v1.0.7) | 952 | Facebook (partial) |
+| [Bonfire](https://github.com/bonfire-networks/bonfire-app) | Elixir | none | [v1.1.0](https://github.com/bonfire-networks/bonfire-app/releases/tag/v1.1.0) | 954 | Facebook (partial) |
 | [nostream](https://github.com/cameri/nostream) | TypeScript | MIT | [nostream@3.16.0](https://github.com/cameri/nostream/releases/tag/nostream%403.16.0) | 839 | X (Twitter) (partial) |
 | [strfry](https://github.com/hoytech/strfry) | C++ | GPL-3.0 | [1.1.3](https://github.com/hoytech/strfry/releases/tag/1.1.3) | 740 | X (Twitter) (partial) |
 | [nostr-rs-relay](https://github.com/scsibug/nostr-rs-relay) | Rust | MIT | [0.10.0](https://github.com/scsibug/nostr-rs-relay/releases/tag/0.10.0) | 726 | X (Twitter) (partial) |
