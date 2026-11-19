@@ -282717,27 +282717,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-19T04:27:02Z",
+        "pushedAt": "2026-11-19T20:41:47Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-20T05:17:30.121Z"
+        "since": "2026-10-20T20:42:30.110Z"
       },
       "starHistory": {
         "from": "2026-10-19",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.8",
-        "publishedAt": "2026-11-18T13:24:19Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.8",
+        "tag": "v0.56.9",
+        "publishedAt": "2026-11-19T20:41:49Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.9",
         "source": "release",
         "signed": false,
-        "tagOid": "95e858ea162fe85de5b1ac0a384ad45c9bac6763"
+        "tagOid": "cb0ee8f2f562557d6371aaf7e6d6a48320aff43f"
       },
       "releases": [
+        {
+          "tag": "v0.56.9",
+          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.1 (#479)",
+          "publishedAt": "2026-11-19T20:41:49Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.9",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.8",
           "name": "fix(docker): pin corepack in the image build (#473)",
@@ -282765,33 +282772,13 @@
           "publishedAt": "2026-11-16T08:21:29Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.5",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.4",
-          "name": "refactor(telemetry): use @ferrlabs/telemetry (#450)",
-          "publishedAt": "2026-11-14T16:19:27Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.4",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
