@@ -4,10 +4,10 @@ Render interactive API reference pages from OpenAPI and AsyncAPI documents.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Swagger UI](https://github.com/swagger-api/swagger-ui) | JavaScript | Apache-2.0 | [v5.35.0](https://github.com/swagger-api/swagger-ui/releases/tag/v5.35.0) | 29088 | ReadMe (partial) |
-| [Redoc](https://github.com/Redocly/redoc) | TypeScript | MIT | [redoc@3.1.0](https://github.com/Redocly/redoc/releases/tag/redoc%403.1.0) signed | 26021 | ReadMe (partial) |
-| [Scalar](https://github.com/scalar/scalar) | TypeScript | MIT | [release-2026-11-18-98a8140](https://github.com/scalar/scalar/releases/tag/release-2026-11-18-98a8140) signed | 16429 | ReadMe (partial), Postman (partial) |
-| [Stoplight Elements](https://github.com/stoplightio/elements) | TypeScript | Apache-2.0 | [v6.1.10](https://github.com/stoplightio/elements/releases/tag/v6.1.10) | 2476 | Swagger UI (full), ReadMe (partial) |
-| [RapiDoc](https://github.com/rapi-doc/RapiDoc) | JavaScript | MIT | [@rapidoc/cli@0.2.3](https://github.com/rapi-doc/RapiDoc/releases/tag/%40rapidoc/cli%400.2.3) | 1914 | Redoc (full), Swagger UI (full) |
+| [Swagger UI](https://github.com/swagger-api/swagger-ui) | JavaScript | Apache-2.0 | [v5.35.1](https://github.com/swagger-api/swagger-ui/releases/tag/v5.35.1) | 29088 | ReadMe (partial) |
+| [Redoc](https://github.com/Redocly/redoc) | TypeScript | MIT | [redoc@3.2.0](https://github.com/Redocly/redoc/releases/tag/redoc%403.2.0) signed | 26020 | ReadMe (partial) |
+| [Scalar](https://github.com/scalar/scalar) | TypeScript | MIT | [release-2026-11-19-8abbb53](https://github.com/scalar/scalar/releases/tag/release-2026-11-19-8abbb53) signed | 16432 | ReadMe (partial), Postman (partial) |
+| [Stoplight Elements](https://github.com/stoplightio/elements) | TypeScript | Apache-2.0 | [v6.1.10](https://github.com/stoplightio/elements/releases/tag/v6.1.10) | 2474 | Swagger UI (full), ReadMe (partial) |
+| [RapiDoc](https://github.com/rapi-doc/RapiDoc) | JavaScript | MIT | [@rapidoc/cli@0.2.4](https://github.com/rapi-doc/RapiDoc/releases/tag/%40rapidoc/cli%400.2.4) signed | 1915 | Redoc (full), Swagger UI (full) |
 
 [All categories](../README.md#catalog)

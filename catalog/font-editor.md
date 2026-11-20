@@ -4,7 +4,7 @@ Draw glyphs, set spacing and kerning, and export fonts.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [FontForge](https://github.com/fontforge/fontforge) | C | Other | [20251009](https://github.com/fontforge/fontforge/releases/tag/20251009) signed | 8093 | FontLab (partial), Glyphs (partial) |
+| [FontForge](https://github.com/fontforge/fontforge) | C | Other | [20251009](https://github.com/fontforge/fontforge/releases/tag/20251009) signed | 8095 | FontLab (partial), Glyphs (partial) |
 | [Fontra](https://github.com/fontra/fontra) | JavaScript | GPL-3.0 | [2026.10.2](https://github.com/fontra/fontra/releases/tag/2026.10.2) | 863 | Glyphs (partial), FontLab (partial) |
 | [Glyphr Studio](https://github.com/glyphr-studio/Glyphr-Studio-2) | JavaScript | none | [v2.10.9](https://github.com/glyphr-studio/Glyphr-Studio-2/releases/tag/v2.10.9) | 331 | Glyphs (partial), FontLab (partial) |
 

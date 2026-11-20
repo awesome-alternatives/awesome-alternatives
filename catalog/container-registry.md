@@ -4,13 +4,13 @@ Store and serve OCI images and artefacts.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.5](https://github.com/goharbor/harbor/releases/tag/v2.15.5) signed | 29757 | Docker Hub (full), Distribution (full) |
+| [Harbor](https://github.com/goharbor/harbor) | Go | Apache-2.0 | [v2.15.5](https://github.com/goharbor/harbor/releases/tag/v2.15.5) signed | 29777 | Docker Hub (full), Distribution (full) |
 | [Distribution](https://github.com/distribution/distribution) | Go | Apache-2.0 | [v3.1.2](https://github.com/distribution/distribution/releases/tag/v3.1.2) signed | 10697 | Docker Hub (partial) |
-| [Kraken](https://github.com/uber/kraken) | Go | Apache-2.0 | [v0.1.37](https://github.com/uber/kraken/releases/tag/v0.1.37) signed | 6782 | Distribution (partial) |
+| [Kraken](https://github.com/uber/kraken) | Go | Apache-2.0 | [v0.1.37](https://github.com/uber/kraken/releases/tag/v0.1.37) signed | 6781 | Distribution (partial) |
 | [Spegel](https://github.com/spegel-org/spegel) | Go | MIT | [v0.8.1](https://github.com/spegel-org/spegel/releases/tag/v0.8.1) signed | 3837 | Dragonfly (partial), Kraken (partial) |
-| [Docker Registry UI](https://github.com/Joxit/docker-registry-ui) | Riot | AGPL-3.0 | [2.6.0](https://github.com/Joxit/docker-registry-ui/releases/tag/2.6.0) signed | 3556 | Harbor (partial) |
-| [Dragonfly](https://github.com/dragonflyoss/dragonfly) | Go | Apache-2.0 | [v2.5.4](https://github.com/dragonflyoss/dragonfly/releases/tag/v2.5.4) signed | 3362 | Kraken (full) |
-| [zot](https://github.com/project-zot/zot) | Go | Apache-2.0 | [v2.1.23](https://github.com/project-zot/zot/releases/tag/v2.1.23) signed | 3044 | Docker Hub (partial), Distribution (full) |
-| [Quay](https://github.com/quay/quay) | Python | Apache-2.0 | [v3.9.28](https://github.com/quay/quay/releases/tag/v3.9.28) signed | 2849 | Docker Hub (full) |
+| [Docker Registry UI](https://github.com/Joxit/docker-registry-ui) | Riot | AGPL-3.0 | [2.6.0](https://github.com/Joxit/docker-registry-ui/releases/tag/2.6.0) signed | 3555 | Harbor (partial) |
+| [Dragonfly](https://github.com/dragonflyoss/dragonfly) | Go | Apache-2.0 | [v2.5.4](https://github.com/dragonflyoss/dragonfly/releases/tag/v2.5.4) signed | 3364 | Kraken (full) |
+| [zot](https://github.com/project-zot/zot) | Go | Apache-2.0 | [v2.1.23](https://github.com/project-zot/zot/releases/tag/v2.1.23) signed | 3053 | Docker Hub (partial), Distribution (full) |
+| [Quay](https://github.com/quay/quay) | Python | Apache-2.0 | [v3.9.28](https://github.com/quay/quay/releases/tag/v3.9.28) signed | 2848 | Docker Hub (full) |
 
 [All categories](../README.md#catalog)

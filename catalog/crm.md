@@ -4,17 +4,17 @@ Track contacts, companies and deals.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [sdk/v2.59.0](https://github.com/twentyhq/twenty/releases/tag/sdk/v2.59.0) signed | 61183 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
-| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25807 | none |
+| [Twenty](https://github.com/twentyhq/twenty) | TypeScript | Other | [sdk/v2.59.0](https://github.com/twentyhq/twenty/releases/tag/sdk/v2.59.0) signed | 61231 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Monica](https://github.com/monicahq/monica) | PHP | AGPL-3.0 | [v4.1.2](https://github.com/monicahq/monica/releases/tag/v4.1.2) signed | 25813 | none |
 | [Krayin CRM](https://github.com/krayin/laravel-crm) | PHP | MIT | [v2.2.8](https://github.com/krayin/laravel-crm/releases/tag/v2.2.8) signed | 24185 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
-| [IDURAR](https://github.com/idurar/idurar-erp-crm) | JavaScript | AGPL-3.0 | [4.1.1](https://github.com/idurar/idurar-erp-crm/releases/tag/4.1.1) signed | 8963 | QuickBooks (partial) |
-| [SuiteCRM](https://github.com/SuiteCRM/SuiteCRM) | PHP | AGPL-3.0 | [v7.15.2](https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2) | 5871 | Salesforce (full) |
-| [Frappe CRM](https://github.com/frappe/crm) | Vue | AGPL-3.0 | [v16.0.4](https://github.com/frappe/crm/releases/tag/v16.0.4) | 4006 | Pipedrive (full), Salesforce (partial) |
-| [EspoCRM](https://github.com/espocrm/espocrm) | PHP | AGPL-3.0 | [10.1.3](https://github.com/espocrm/espocrm/releases/tag/10.1.3) | 3645 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
-| [Fat Free CRM](https://github.com/fatfreecrm/fat_free_crm) | Ruby | Other | [v0.28.0](https://github.com/fatfreecrm/fat_free_crm/releases/tag/v0.28.0) signed | 3633 | Salesforce (partial) |
-| [Relaticle](https://github.com/relaticle/relaticle) | PHP | AGPL-3.0 | [v3.10.1](https://github.com/relaticle/relaticle/releases/tag/v3.10.1) signed | 1880 | Pipedrive (partial) |
-| [Atomic CRM](https://github.com/marmelab/atomic-crm) | TypeScript | MIT | [v2.0.0](https://github.com/marmelab/atomic-crm/releases/tag/v2.0.0) | 1450 | Pipedrive (partial) |
-| [CiviCRM](https://github.com/civicrm/civicrm-core) | PHP | AGPL-3.0 | [6.20.1](https://github.com/civicrm/civicrm-core/releases/tag/6.20.1) | 797 | Salesforce (partial) |
-| [OroCRM](https://github.com/oroinc/crm) | PHP | Other | [2.0.6](https://github.com/oroinc/crm/releases/tag/2.0.6) | 690 | Salesforce (partial) |
+| [IDURAR](https://github.com/idurar/idurar-erp-crm) | JavaScript | AGPL-3.0 | [4.1.1](https://github.com/idurar/idurar-erp-crm/releases/tag/4.1.1) signed | 8964 | QuickBooks (partial) |
+| [SuiteCRM](https://github.com/SuiteCRM/SuiteCRM) | PHP | AGPL-3.0 | [v7.15.2](https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2) | 5870 | Salesforce (full) |
+| [Frappe CRM](https://github.com/frappe/crm) | Vue | AGPL-3.0 | [v16.1.0](https://github.com/frappe/crm/releases/tag/v16.1.0) | 4008 | Pipedrive (full), Salesforce (partial) |
+| [EspoCRM](https://github.com/espocrm/espocrm) | PHP | AGPL-3.0 | [10.1.4](https://github.com/espocrm/espocrm/releases/tag/10.1.4) | 3646 | Salesforce (partial), HubSpot (partial), Pipedrive (full) |
+| [Fat Free CRM](https://github.com/fatfreecrm/fat_free_crm) | Ruby | Other | [v0.28.0](https://github.com/fatfreecrm/fat_free_crm/releases/tag/v0.28.0) signed | 3632 | Salesforce (partial) |
+| [Relaticle](https://github.com/relaticle/relaticle) | PHP | AGPL-3.0 | [v3.11.1](https://github.com/relaticle/relaticle/releases/tag/v3.11.1) signed | 1895 | Pipedrive (partial) |
+| [Atomic CRM](https://github.com/marmelab/atomic-crm) | TypeScript | MIT | [v2.0.0](https://github.com/marmelab/atomic-crm/releases/tag/v2.0.0) | 1449 | Pipedrive (partial) |
+| [CiviCRM](https://github.com/civicrm/civicrm-core) | PHP | AGPL-3.0 | [6.20.1](https://github.com/civicrm/civicrm-core/releases/tag/6.20.1) | 796 | Salesforce (partial) |
+| [OroCRM](https://github.com/oroinc/crm) | PHP | Other | [2.0.6](https://github.com/oroinc/crm/releases/tag/2.0.6) | 688 | Salesforce (partial) |
 
 [All categories](../README.md#catalog)
