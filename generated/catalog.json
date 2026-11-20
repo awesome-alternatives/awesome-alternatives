@@ -98321,27 +98321,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-20T16:16:41Z",
+        "pushedAt": "2026-11-20T17:47:30Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-21T16:34:13.823Z"
+        "since": "2026-10-21T18:00:17.528Z"
       },
       "starHistory": {
         "from": "2026-10-20",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.10",
-        "publishedAt": "2026-11-20T16:33:34Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.10",
+        "tag": "v7.37.0",
+        "publishedAt": "2026-11-20T17:59:17Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.0",
         "source": "release",
         "signed": true,
-        "tagOid": "a8fca06087906e03facbc348960bbcd1c82c6b97"
+        "tagOid": "4911016ee8e82759109a1d3c75aacec42fa07397"
       },
       "releases": [
+        {
+          "tag": "site@v2026.11.19",
+          "name": "feat(site): add animated speed race terminal to the hero (#1461)",
+          "publishedAt": "2026-11-20T17:50:00Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.19",
+          "prerelease": false
+        },
+        {
+          "tag": "v7.37.0",
+          "name": "feat(site): add animated speed race terminal to the hero (#1461)",
+          "publishedAt": "2026-11-20T17:59:17Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.0",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.10",
           "name": "fix(release): bump site with every CLI release so the embedded docs data ships (#1457)",
@@ -98361,20 +98375,6 @@
           "name": "feat(site): restructure the landing page (#1453)",
           "publishedAt": "2026-11-20T15:54:53Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.17",
-          "prerelease": false
-        },
-        {
-          "tag": "v7.36.9",
-          "name": "perf(monorepo): scope recover-mode commits through a shared package index (#1454)",
-          "publishedAt": "2026-11-20T13:00:45Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.9",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.16",
-          "name": null,
-          "publishedAt": "2026-11-19T22:22:52Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.16",
           "prerelease": false
         }
       ],

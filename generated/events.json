@@ -8133,7 +8133,6 @@
   {"type":"released","slug":"zed","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v1.27.0","to":"v1.28.1"},
   {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v0.45.1","to":"v0.46.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":"64f7bd43bc18d8b8d62581444742f8f62472c961","from":"site@2026.11.9","to":"site@2026.11.10"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-12T18:44:27.036Z","commit":"5069671797c25e63e53f9d850f626d4fc9cbc318","from":"v7.36.0","to":"v7.36.1"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":"81ad5697857a4d3d51a3bb83d287e9e587152dfc","from":"site@2026.11.10","to":"site@2026.11.11"},
   {"type":"released","slug":"stashden","at":"2026-11-12T20:23:49.997Z","commit":"74de0da0d9c3336150f1aa1c9d36a1b20bdb0060","from":"v0.56.1","to":"v0.56.2"},
   {"type":"released","slug":"stashden","at":"2026-11-12T22:01:33.314Z","commit":"b3c17137962dc618ba03d72b50c8f47adda71a01","from":"v0.56.2","to":"v0.56.3"},
@@ -9478,5 +9477,6 @@
   {"type":"released","slug":"ydb","at":"2026-11-20T08:00:02.414Z","commit":null,"from":"26.2.1.14","to":"26.2.1.16"},
   {"type":"released","slug":"lfsx","at":"2026-11-20T12:17:29.143Z","commit":null,"from":"site@2026.11.14","to":"site@2026.11.15"},
   {"type":"released","slug":"ferrflow","at":"2026-11-20T13:02:08.637Z","commit":null,"from":"v7.36.8","to":"v7.36.9"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-20T16:34:38.950Z","commit":null,"from":"v7.36.9","to":"v7.36.10"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-20T16:34:38.950Z","commit":null,"from":"v7.36.9","to":"v7.36.10"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-20T18:00:39.652Z","commit":null,"from":"v7.36.10","to":"v7.37.0"}
 ]
