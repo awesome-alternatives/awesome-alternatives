@@ -98321,27 +98321,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-20T07:59:07Z",
+        "pushedAt": "2026-11-20T12:46:18Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-21T08:00:02.414Z"
+        "since": "2026-10-21T13:01:22.957Z"
       },
       "starHistory": {
         "from": "2026-10-20",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.8",
-        "publishedAt": "2026-11-17T12:21:33Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.8",
+        "tag": "v7.36.9",
+        "publishedAt": "2026-11-20T13:00:45Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.9",
         "source": "release",
         "signed": true,
-        "tagOid": "68a986f970867e83214104d3d7a799928769a02c"
+        "tagOid": "c6c82461469aa40c18100357cce5710593f79c59"
       },
       "releases": [
+        {
+          "tag": "v7.36.9",
+          "name": "perf(monorepo): scope recover-mode commits through a shared package index (#1454)",
+          "publishedAt": "2026-11-20T13:00:45Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.9",
+          "prerelease": false
+        },
         {
           "tag": "site@v2026.11.16",
           "name": null,
@@ -98368,13 +98375,6 @@
           "name": "fix(docker): pin corepack in the image build (#1433)",
           "publishedAt": "2026-11-18T13:17:24Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.13",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.11",
-          "name": "feat: benchmark tool_configs, reset version, disable skipCi (#279)",
-          "publishedAt": "2026-11-17T12:21:40Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.11",
           "prerelease": false
         }
       ],
