@@ -98321,27 +98321,48 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-20T12:46:18Z",
+        "pushedAt": "2026-11-20T16:16:41Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-21T13:01:22.957Z"
+        "since": "2026-10-21T16:34:13.823Z"
       },
       "starHistory": {
         "from": "2026-10-20",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.36.9",
-        "publishedAt": "2026-11-20T13:00:45Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.9",
+        "tag": "v7.36.10",
+        "publishedAt": "2026-11-20T16:33:34Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.10",
         "source": "release",
         "signed": true,
-        "tagOid": "c6c82461469aa40c18100357cce5710593f79c59"
+        "tagOid": "a8fca06087906e03facbc348960bbcd1c82c6b97"
       },
       "releases": [
+        {
+          "tag": "v7.36.10",
+          "name": "fix(release): bump site with every CLI release so the embedded docs data ships (#1457)",
+          "publishedAt": "2026-11-20T16:33:34Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.36.10",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.18",
+          "name": "Dependency update: ferrflow",
+          "publishedAt": "2026-11-20T16:19:10Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.18",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.17",
+          "name": "feat(site): restructure the landing page (#1453)",
+          "publishedAt": "2026-11-20T15:54:53Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.17",
+          "prerelease": false
+        },
         {
           "tag": "v7.36.9",
           "name": "perf(monorepo): scope recover-mode commits through a shared package index (#1454)",
@@ -98354,27 +98375,6 @@
           "name": null,
           "publishedAt": "2026-11-19T22:22:52Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.16",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.15",
-          "name": "fix(site): drop the SIREN from the footer (#1437)",
-          "publishedAt": "2026-11-19T19:59:25Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.15",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.14",
-          "name": null,
-          "publishedAt": "2026-11-18T22:14:48Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.14",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.13",
-          "name": "fix(docker): pin corepack in the image build (#1433)",
-          "publishedAt": "2026-11-18T13:17:24Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.13",
           "prerelease": false
         }
       ],
