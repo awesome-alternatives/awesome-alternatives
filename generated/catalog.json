@@ -277065,7 +277065,7 @@
     {
       "slug": "sourcegit",
       "name": "SourceGit",
-      "repository": "https://github.com/sourcegit-scm/sourcegit",
+      "repository": "https://github.com/sourcegit-org/sourcegit",
       "category": "git-client",
       "replaces": [
         {
@@ -277082,7 +277082,7 @@
       "affiliation": null,
       "path": null,
       "addedAt": "2026-10-06T13:22:00.000Z",
-      "editedAt": "2026-10-06T13:22:00.000Z",
+      "editedAt": "2026-11-20T07:59:23.000Z",
       "factsChangedAt": null,
       "repo": {
         "fullName": "sourcegit-org/sourcegit",
@@ -277090,8 +277090,8 @@
         "homepage": null,
         "language": "C#",
         "license": "MIT",
-        "stars": 6551,
-        "forks": 627,
+        "stars": 6553,
+        "forks": 628,
         "topics": [
           "cross-platform",
           "git",
@@ -277107,13 +277107,13 @@
         "defaultBranch": "master"
       },
       "trend": {
-        "stars": 355,
+        "stars": 357,
         "exact": true,
-        "since": "2026-10-21T05:17:31.214Z"
+        "since": "2026-10-21T08:00:00.722Z"
       },
       "starHistory": {
         "from": "2026-10-20",
-        "stars": [6196,6203,6211,6218,6225,6233,6239,6261,6264,6285,6287,6310,6313,6323,6352,6356,6363,6382,6394,6408,6424,6436,6449,6456,6464,6476,6481,6493,6517,6531,6541,6551]
+        "stars": [6196,6203,6211,6218,6225,6233,6239,6261,6264,6285,6287,6310,6313,6323,6352,6356,6363,6382,6394,6408,6424,6436,6449,6456,6464,6476,6481,6493,6517,6531,6541,6553]
       },
       "release": {
         "tag": "v2026.24",
@@ -277189,9 +277189,7 @@
       ],
       "maintainerVerified": false,
       "verifiedAt": null,
-      "flags": [
-        "moved"
-      ],
+      "flags": [],
       "terms": "open",
       "capabilities": {},
       "deploy": []

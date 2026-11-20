@@ -15,7 +15,7 @@ Stage, commit, branch, browse and rewrite history outside the bare git command, 
 | [ungit](https://github.com/FredrikNoren/ungit) | JavaScript | MIT | [v1.5.30](https://github.com/FredrikNoren/ungit/releases/tag/v1.5.30) | 10615 | Sourcetree (partial) |
 | [Sapling](https://github.com/meta/sapling) | Rust | GPL-2.0 | [0.2.20261103-145137+6282ac56](https://github.com/meta/sapling/releases/tag/0.2.20261103-145137%2B6282ac56) | 7261 | Git (partial) |
 | [Magit](https://github.com/magit/magit) | Emacs Lisp | GPL-3.0 | [v4.7.1](https://github.com/magit/magit/releases/tag/v4.7.1) signed | 7260 | GitKraken (partial), Sourcetree (partial) |
-| [SourceGit](https://github.com/sourcegit-scm/sourcegit) | C# | MIT | [v2026.24](https://github.com/sourcegit-org/sourcegit/releases/tag/v2026.24) signed | 6551 | Sourcetree (full), GitKraken (partial) |
+| [SourceGit](https://github.com/sourcegit-org/sourcegit) | C# | MIT | [v2026.24](https://github.com/sourcegit-org/sourcegit/releases/tag/v2026.24) signed | 6553 | Sourcetree (full), GitKraken (partial) |
 | [gitu](https://github.com/altsem/gitu) | Rust | MIT | [v0.44.0](https://github.com/altsem/gitu/releases/tag/v0.44.0) | 2958 | Magit (partial) |
 | [Gitnuro](https://github.com/JetpackDuba/Gitnuro) | Kotlin | GPL-3.0 | [2.1.0](https://github.com/JetpackDuba/Gitnuro/releases/tag/2.1.0) signed | 2840 | GitKraken (partial) |
 | [Git Cola](https://github.com/git-cola/git-cola) | Python | GPL-2.0 | [v4.19.0](https://github.com/git-cola/git-cola/releases/tag/v4.19.0) signed | 2588 | Sourcetree (full) |
