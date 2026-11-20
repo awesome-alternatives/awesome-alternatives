@@ -8,8 +8,8 @@ Routing and middleware for HTTP servers in JavaScript and TypeScript.
 | [Express](https://github.com/expressjs/express) | JavaScript | MIT | [v5.3.0](https://github.com/expressjs/express/releases/tag/v5.3.0) signed | 69670 | none |
 | [Fastify](https://github.com/fastify/fastify) | JavaScript | MIT | [v5.12.8](https://github.com/fastify/fastify/releases/tag/v5.12.8) signed | 37450 | Express (full), Koa (full) |
 | [Koa](https://github.com/koajs/koa) | JavaScript | MIT | [v3.3.0](https://github.com/koajs/koa/releases/tag/v3.3.0) signed | 35682 | Express (full) |
-| [Hono](https://github.com/honojs/hono) | TypeScript | MIT | [v4.13.19](https://github.com/honojs/hono/releases/tag/v4.13.19) | 32996 | Express (full), Koa (full) |
-| [Elysia](https://github.com/elysiajs/elysia) | TypeScript | MIT | [1.4.32](https://github.com/elysiajs/elysia/releases/tag/1.4.32) signed | 19371 | Express (full) |
+| [Hono](https://github.com/honojs/hono) | TypeScript | MIT | [v4.13.19](https://github.com/honojs/hono/releases/tag/v4.13.19) | 32997 | Express (full), Koa (full) |
+| [Elysia](https://github.com/elysiajs/elysia) | TypeScript | MIT | [1.4.32](https://github.com/elysiajs/elysia/releases/tag/1.4.32) signed | 19372 | Express (full) |
 | [AdonisJS](https://github.com/adonisjs/core) | TypeScript | MIT | [v7.7.0](https://github.com/adonisjs/core/releases/tag/v7.7.0) | 19187 | NestJS (full) |
 | [hapi](https://github.com/hapijs/hapi) | JavaScript | Other | [v21.3.0](https://github.com/hapijs/hapi/releases/tag/v21.3.0) | 14799 | Express (full) |
 

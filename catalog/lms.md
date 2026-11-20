@@ -6,7 +6,7 @@ Courses, assignments and grades for schools, universities and companies.
 |---|---|---|---|---:|---|
 | [Open edX](https://github.com/openedx/openedx-platform) | Python | AGPL-3.0 | [named-release/birch](https://github.com/openedx/openedx-platform/releases/tag/named-release/birch) | 8247 | Teachable (partial), Blackboard Learn (partial) |
 | [Moodle](https://github.com/moodle/moodle) | PHP | GPL-3.0 | [v5.3.1](https://github.com/moodle/moodle/releases/tag/v5.3.1) | 7627 | none |
-| [Canvas LMS](https://github.com/instructure/canvas-lms) | Ruby | AGPL-3.0 | [release/2026-05-20.143](https://github.com/instructure/canvas-lms/releases/tag/release/2026-05-20.143) | 6919 | Blackboard Learn (full) |
+| [Canvas LMS](https://github.com/instructure/canvas-lms) | Ruby | AGPL-3.0 | [release/2026-05-20.143](https://github.com/instructure/canvas-lms/releases/tag/release/2026-05-20.143) | 6918 | Blackboard Learn (full) |
 | [Frappe Learning](https://github.com/frappe/lms) | Python | AGPL-3.0 | [v16.3.0](https://github.com/frappe/lms/releases/tag/v16.3.0) | 3432 | Teachable (partial) |
 | [ClassroomIO](https://github.com/classroomio/classroomio) | TypeScript | AGPL-3.0 | [v1.0.0](https://github.com/classroomio/classroomio/releases/tag/v1.0.0) | 1749 | Teachable (partial) |
 | [Sakai](https://github.com/sakaiproject/sakai) | Java | ECL-2.0 | [25.2](https://github.com/sakaiproject/sakai/releases/tag/25.2) | 1240 | Blackboard Learn (full) |

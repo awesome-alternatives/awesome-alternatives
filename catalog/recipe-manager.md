@@ -4,10 +4,10 @@ Keep recipes, plan meals and build shopping lists from them.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.31.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.31.0) | 13955 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
-| [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9695 | AnyList (partial) |
-| [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.7.6](https://github.com/TandoorRecipes/recipes/releases/tag/2.7.6) | 8744 | Paprika Recipe Manager (full), Plan to Eat (full) |
-| [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.8.1](https://github.com/TomBursch/kitchenowl/releases/tag/v0.8.1) signed | 3875 | AnyList (full) |
+| [Mealie](https://github.com/mealie-recipes/mealie) | Python | AGPL-3.0 | [v3.31.0](https://github.com/mealie-recipes/mealie/releases/tag/v3.31.0) | 13956 | Paprika Recipe Manager (full), Plan to Eat (full), AnyList (partial) |
+| [Grocy](https://github.com/grocy/grocy) | Blade | MIT | [v4.7.1](https://github.com/grocy/grocy/releases/tag/v4.7.1) signed | 9696 | AnyList (partial) |
+| [Tandoor Recipes](https://github.com/TandoorRecipes/recipes) | HTML | Other | [2.7.6](https://github.com/TandoorRecipes/recipes/releases/tag/2.7.6) | 8745 | Paprika Recipe Manager (full), Plan to Eat (full) |
+| [KitchenOwl](https://github.com/TomBursch/kitchenowl) | Dart | AGPL-3.0 | [v0.8.1](https://github.com/TomBursch/kitchenowl/releases/tag/v0.8.1) signed | 3876 | AnyList (full) |
 | [Norish](https://github.com/norish-recipes/norish) | TypeScript | AGPL-3.0 | [v0.26.1-beta](https://github.com/norish-recipes/norish/releases/tag/v0.26.1-beta) signed | 1550 | Paprika Recipe Manager (full) |
 | [CookCLI](https://github.com/cooklang/cookcli) | Rust | MIT | [v0.41.1](https://github.com/cooklang/cookcli/releases/tag/v0.41.1) signed | 1445 | Paprika Recipe Manager (partial) |
 | [Bar Assistant](https://github.com/karlomikus/bar-assistant) | PHP | MIT | [v6.12.1](https://github.com/karlomikus/bar-assistant/releases/tag/v6.12.1) signed | 1117 | none |

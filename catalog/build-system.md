@@ -6,7 +6,7 @@ Compile, test and package projects from a declared build, for C, C++, the JVM an
 |---|---|---|---|---:|---|
 | [Gradle](https://github.com/gradle/gradle) | Groovy | Apache-2.0 | [v9.9.2](https://github.com/gradle/gradle/releases/tag/v9.9.2) signed | 18933 | Apache Maven (full) |
 | [Ninja](https://github.com/ninja-build/ninja) | C++ | Apache-2.0 | [v1.13.2](https://github.com/ninja-build/ninja/releases/tag/v1.13.2) | 13369 | none |
-| [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.2](https://github.com/xmake-io/xmake/releases/tag/v3.1.2) | 12309 | Meson (full) |
+| [Xmake](https://github.com/xmake-io/xmake) | Lua | Apache-2.0 | [v3.1.2](https://github.com/xmake-io/xmake/releases/tag/v3.1.2) | 12310 | Meson (full) |
 | [CMake](https://github.com/Kitware/CMake) | C | BSD-3-Clause | [v4.5.1](https://github.com/Kitware/CMake/releases/tag/v4.5.1) signed | 8170 | none |
 | [sccache](https://github.com/mozilla/sccache) | Rust | Apache-2.0 | [v0.19.0](https://github.com/mozilla/sccache/releases/tag/v0.19.0) | 7958 | ccache (full) |
 | [Meson](https://github.com/mesonbuild/meson) | Python | Apache-2.0 | [1.12.1](https://github.com/mesonbuild/meson/releases/tag/1.12.1) | 6670 | CMake (full) |

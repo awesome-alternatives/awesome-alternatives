@@ -4,12 +4,12 @@ Generate traffic to measure how a service holds up.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32366 | Apache JMeter (full), Gatling (full) |
-| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28304 | Apache JMeter (full), Gatling (full) |
+| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32367 | Apache JMeter (full), Gatling (full) |
+| [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28305 | Apache JMeter (full), Gatling (full) |
 | [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25251 | Apache JMeter (partial) |
 | [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.17.0](https://github.com/hatoo/oha/releases/tag/v1.17.0) signed | 10701 | Vegeta (partial) |
 | [Apache JMeter](https://github.com/apache/jmeter) | Java | Apache-2.0 | [rel/v5.6.3](https://github.com/apache/jmeter/releases/tag/rel/v5.6.3) | 9610 | none |
-| [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9121 | Apache JMeter (full), Gatling (full) |
+| [Artillery](https://github.com/artilleryio/artillery) | TypeScript | MPL-2.0 | [artillery-2.0.34](https://github.com/artilleryio/artillery/releases/tag/artillery-2.0.34) signed | 9122 | Apache JMeter (full), Gatling (full) |
 | [autocannon](https://github.com/mcollina/autocannon) | JavaScript | MIT | [v8.0.0](https://github.com/mcollina/autocannon/releases/tag/v8.0.0) | 8544 | Vegeta (partial) |
 | [Gatling](https://github.com/gatling/gatling) | Scala | Apache-2.0 | [v3.16.1](https://github.com/gatling/gatling/releases/tag/v3.16.1) | 6964 | Apache JMeter (full) |
 | [bombardier](https://github.com/codesenberg/bombardier) | Go | MIT | [v2.0.2](https://github.com/codesenberg/bombardier/releases/tag/v2.0.2) | 6856 | Vegeta (partial) |

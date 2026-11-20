@@ -4,8 +4,8 @@ Relay conversations between Matrix and other chat networks, so one client reache
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [mautrix-whatsapp](https://github.com/mautrix/whatsapp) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/whatsapp/releases/tag/v0.2611.0) | 1934 | Beeper (partial) |
-| [mautrix-telegram](https://github.com/mautrix/telegram) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/telegram/releases/tag/v0.2611.0) | 1763 | Beeper (partial) |
+| [mautrix-whatsapp](https://github.com/mautrix/whatsapp) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/whatsapp/releases/tag/v0.2611.0) | 1935 | Beeper (partial) |
+| [mautrix-telegram](https://github.com/mautrix/telegram) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/telegram/releases/tag/v0.2611.0) | 1764 | Beeper (partial) |
 | [mautrix-signal](https://github.com/mautrix/signal) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/signal/releases/tag/v0.2611.0) | 683 | Beeper (partial) |
 | [mautrix-discord](https://github.com/mautrix/discord) | Go | AGPL-3.0 | [v0.7.7](https://github.com/mautrix/discord/releases/tag/v0.7.7) | 514 | Beeper (partial) |
 | [mautrix-meta](https://github.com/mautrix/meta) | Go | AGPL-3.0 | [v0.2611.0](https://github.com/mautrix/meta/releases/tag/v0.2611.0) | 482 | Beeper (partial) |

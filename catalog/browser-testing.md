@@ -4,8 +4,8 @@ Drive real browsers for end-to-end tests.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Playwright](https://github.com/microsoft/playwright) | TypeScript | Apache-2.0 | [v1.65.1](https://github.com/microsoft/playwright/releases/tag/v1.65.1) | 100629 | Selenium (full), Puppeteer (full), Cypress (full) |
-| [Puppeteer](https://github.com/puppeteer/puppeteer) | TypeScript | Apache-2.0 | [puppeteer-core-v25.18.1](https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-core-v25.18.1) signed | 95875 | Selenium (partial) |
+| [Playwright](https://github.com/microsoft/playwright) | TypeScript | Apache-2.0 | [v1.65.1](https://github.com/microsoft/playwright/releases/tag/v1.65.1) | 100635 | Selenium (full), Puppeteer (full), Cypress (full) |
+| [Puppeteer](https://github.com/puppeteer/puppeteer) | TypeScript | Apache-2.0 | [puppeteer-core-v25.18.1](https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-core-v25.18.1) signed | 95874 | Selenium (partial) |
 | [Cypress](https://github.com/cypress-io/cypress) | TypeScript | MIT | [v16.3.0](https://github.com/cypress-io/cypress/releases/tag/v16.3.0) signed | 51038 | Selenium (partial) |
 | [Selenium](https://github.com/SeleniumHQ/selenium) | Java | Apache-2.0 | [selenium-4.52.0](https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.52.0) signed | 34601 | none |
 | [chromedp](https://github.com/chromedp/chromedp) | Go | MIT | [v0.24.0](https://github.com/chromedp/chromedp/releases/tag/v0.24.0) | 13376 | Puppeteer (partial) |

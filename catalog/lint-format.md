@@ -13,30 +13,30 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12539 | none |
 | [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.5.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.5.0) signed | 10031 | SQL Formatter (partial), sqlfmt (partial) |
 | [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.4.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.4.0) | 9659 | SonarQube Community Build (partial) |
-| [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9213 | none |
+| [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9214 | none |
 | [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | Swift | MIT | [0.64.7](https://github.com/nicklockwood/SwiftFormat/releases/tag/0.64.7) | 8957 | none |
 | [detekt](https://github.com/detekt/detekt) | Kotlin | Apache-2.0 | [v1.23.8](https://github.com/detekt/detekt/releases/tag/v1.23.8) signed | 7118 | SonarQube Community Build (partial) |
 | [Staticcheck](https://github.com/dominikh/go-tools) | Go | MIT | [2026.2.2](https://github.com/dominikh/go-tools/releases/tag/2026.2.2) signed | 6937 | golangci-lint (partial) |
-| [ktlint](https://github.com/ktlint/ktlint) | Kotlin | MIT | [1.8.0](https://github.com/ktlint/ktlint/releases/tag/1.8.0) signed | 6785 | none |
-| [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.2](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.2) | 6439 | none |
+| [ktlint](https://github.com/ktlint/ktlint) | Kotlin | MIT | [1.8.0](https://github.com/ktlint/ktlint/releases/tag/1.8.0) signed | 6784 | none |
+| [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.2](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.2) | 6440 | none |
 | [google-java-format](https://github.com/google/google-java-format) | Java | Other | [v2.0.0](https://github.com/google/google-java-format/releases/tag/v2.0.0) | 6227 | none |
 | [Psalm](https://github.com/vimeo/psalm) | PHP | MIT | [7.12.0](https://github.com/vimeo/psalm/releases/tag/7.12.0) signed | 5932 | PHPStan (full) |
 | [revive](https://github.com/revive-lint/revive) | Go | MIT | [v1.17.1](https://github.com/revive-lint/revive/releases/tag/v1.17.1) signed | 5569 | golangci-lint (partial) |
-| [PMD](https://github.com/pmd/pmd) | Java | Other | [pmd_releases/7.29.0](https://github.com/pmd/pmd/releases/tag/pmd_releases/7.29.0) signed | 5535 | SonarQube Community Build (partial) |
+| [PMD](https://github.com/pmd/pmd) | Java | Other | [pmd_releases/7.29.0](https://github.com/pmd/pmd/releases/tag/pmd_releases/7.29.0) signed | 5537 | SonarQube Community Build (partial) |
 | [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4421 | none |
-| [typos](https://github.com/crate-ci/typos) | Rust | Apache-2.0 | [v1.52.2](https://github.com/crate-ci/typos/releases/tag/v1.52.2) | 4226 | codespell (full) |
+| [typos](https://github.com/crate-ci/typos) | Rust | Apache-2.0 | [v1.52.2](https://github.com/crate-ci/typos/releases/tag/v1.52.2) | 4227 | codespell (full) |
 | [SpotBugs](https://github.com/spotbugs/spotbugs) | Java | LGPL-2.1 | [4.10.5](https://github.com/spotbugs/spotbugs/releases/tag/4.10.5) signed | 3968 | SonarQube Community Build (partial) |
 | [yamllint](https://github.com/adrienverge/yamllint) | Python | GPL-3.0 | [v1.38.0](https://github.com/adrienverge/yamllint/releases/tag/v1.38.0) | 3494 | none |
 | [Standard Ruby](https://github.com/standardrb/standard) | Ruby | Other | [v1.31.0](https://github.com/standardrb/standard/releases/tag/v1.31.0) | 2928 | RuboCop (partial) |
 | [SQL Formatter](https://github.com/sql-formatter-org/sql-formatter) | TypeScript | MIT | [v15.9.1](https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.9.1) | 2897 | sqlfmt (full) |
 | [codespell](https://github.com/codespell-project/codespell) | Python | GPL-2.0 | [v2.4.3](https://github.com/codespell-project/codespell/releases/tag/v2.4.3) signed | 2439 | typos (full) |
-| [StyLua](https://github.com/JohnnyMorganz/StyLua) | Rust | MPL-2.0 | [v2.6.0](https://github.com/JohnnyMorganz/StyLua/releases/tag/v2.6.0) | 2344 | none |
+| [StyLua](https://github.com/JohnnyMorganz/StyLua) | Rust | MPL-2.0 | [v2.6.0](https://github.com/JohnnyMorganz/StyLua/releases/tag/v2.6.0) | 2346 | none |
 | [CSpell](https://github.com/streetsidesoftware/cspell) | TypeScript | MIT | [v10.5.2](https://github.com/streetsidesoftware/cspell/releases/tag/v10.5.2) | 1709 | codespell (partial), typos (partial) |
 | [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) | PHP | BSD-3-Clause | [4.0.4](https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/tag/4.0.4) signed | 1574 | PHP CS Fixer (partial) |
 | [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) | JavaScript | MIT | [v0.50.0](https://github.com/igorshubovych/markdownlint-cli/releases/tag/v0.50.0) | 1107 | none |
 | [treefmt](https://github.com/numtide/treefmt) | Go | MIT | [v2.6.0](https://github.com/numtide/treefmt/releases/tag/v2.6.0) signed | 1097 | none |
-| [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) | JavaScript | MIT | [v0.24.1](https://github.com/DavidAnson/markdownlint-cli2/releases/tag/v0.24.1) | 985 | markdownlint-cli (full) |
-| [Topiary](https://github.com/topiary/topiary) | Rust | MIT | [v0.8.0](https://github.com/topiary/topiary/releases/tag/v0.8.0) signed | 877 | none |
+| [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) | JavaScript | MIT | [v0.24.2](https://github.com/DavidAnson/markdownlint-cli2/releases/tag/v0.24.2) | 985 | markdownlint-cli (full) |
+| [Topiary](https://github.com/topiary/topiary) | Rust | MIT | [v0.8.0](https://github.com/topiary/topiary/releases/tag/v0.8.0) signed | 878 | none |
 | [selene](https://github.com/Kampfkarren/selene) | Rust | MPL-2.0 | [0.32.0](https://github.com/Kampfkarren/selene/releases/tag/0.32.0) | 842 | none |
 | [sqlfmt](https://github.com/tconbeer/sqlfmt) | Python | Other | [v0.32.0](https://github.com/tconbeer/sqlfmt/releases/tag/v0.32.0) signed | 552 | SQL Formatter (full) |
 

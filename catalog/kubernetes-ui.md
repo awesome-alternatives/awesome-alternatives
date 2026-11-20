@@ -4,7 +4,7 @@ Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.4](https://github.com/portainer/portainer/releases/tag/2.45.4) signed | 38868 | Lens (partial) |
+| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.4](https://github.com/portainer/portainer/releases/tag/2.45.4) signed | 38869 | Lens (partial) |
 | [k9s](https://github.com/derailed/k9s) | Go | Apache-2.0 | [v0.51.0](https://github.com/derailed/k9s/releases/tag/v0.51.0) | 35002 | Lens (partial) |
 | [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.3](https://github.com/rancher/rancher/releases/tag/v2.15.3) signed | 26075 | Lens (full) |
 | [KubeSphere](https://github.com/kubesphere/kubesphere) | Go | Other | [v4.1.3](https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3) signed | 17088 | Rancher (full), Lens (partial) |

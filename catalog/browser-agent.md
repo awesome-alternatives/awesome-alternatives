@@ -4,9 +4,9 @@ Let a language model drive a web browser to navigate sites, fill forms and extra
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Browser Use](https://github.com/browser-use/browser-use) | Python | MIT | [1.0.6](https://github.com/browser-use/browser-use/releases/tag/1.0.6) signed | 121542 | Manus (partial) |
-| [Lightpanda](https://github.com/lightpanda-io/browser) | Zig | AGPL-3.0 | [1.0.4](https://github.com/lightpanda-io/browser/releases/tag/1.0.4) signed | 42254 | Browserbase (partial) |
-| [Skyvern](https://github.com/Skyvern-AI/skyvern) | Python | AGPL-3.0 | [v1.0.58](https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.58) signed | 23475 | UiPath (partial) |
+| [Browser Use](https://github.com/browser-use/browser-use) | Python | MIT | [1.0.6](https://github.com/browser-use/browser-use/releases/tag/1.0.6) signed | 121553 | Manus (partial) |
+| [Lightpanda](https://github.com/lightpanda-io/browser) | Zig | AGPL-3.0 | [1.0.4](https://github.com/lightpanda-io/browser/releases/tag/1.0.4) signed | 42257 | Browserbase (partial) |
+| [Skyvern](https://github.com/Skyvern-AI/skyvern) | Python | AGPL-3.0 | [v1.0.58](https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.58) signed | 23477 | UiPath (partial) |
 | [Browser Use Web UI](https://github.com/browser-use/web-ui) | Python | MIT | [v3.0.0](https://github.com/browser-use/web-ui/releases/tag/v3.0.0) signed | 16661 | Manus (partial) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | TypeScript | Apache-2.0 | [v0.3.0](https://github.com/nanobrowser/nanobrowser/releases/tag/v0.3.0) | 14353 | ChatGPT (partial) |
 | [Browserless](https://github.com/browserless/browserless) | TypeScript | Other | [v2.64.0](https://github.com/browserless/browserless/releases/tag/v2.64.0) signed | 13948 | Browserbase (full) |

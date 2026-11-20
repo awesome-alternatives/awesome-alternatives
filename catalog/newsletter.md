@@ -5,10 +5,10 @@ Mailing lists, campaigns and subscriber management.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Ghost](https://github.com/TryGhost/Ghost) | TypeScript | MIT | [v6.78.0](https://github.com/TryGhost/Ghost/releases/tag/v6.78.0) | 55868 | Substack (full), Mailchimp (partial), Squarespace (partial), Wix (partial) |
-| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24388 | Mailchimp (partial) |
+| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24390 | Mailchimp (partial) |
 | [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 16431 | Mailchimp (partial) |
-| [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.2](https://github.com/mautic/mautic/releases/tag/7.2.2) signed | 11052 | Mailchimp (full) |
-| [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.18.0](https://github.com/useplunk/plunk/releases/tag/v0.18.0) signed | 5616 | Mailchimp (partial), SendGrid (partial) |
+| [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.2](https://github.com/mautic/mautic/releases/tag/7.2.2) signed | 11053 | Mailchimp (full) |
+| [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.18.0](https://github.com/useplunk/plunk/releases/tag/v0.18.0) signed | 5617 | Mailchimp (partial), SendGrid (partial) |
 | [WriteFreely](https://github.com/writefreely/writefreely) | Go | AGPL-3.0 | [v0.17.3](https://github.com/writefreely/writefreely/releases/tag/v0.17.3) | 5291 | Substack (partial) |
 | [useSend](https://github.com/usesend/useSend) | TypeScript | AGPL-3.0 | [v1.10.4](https://github.com/usesend/useSend/releases/tag/v1.10.4) signed | 4818 | SendGrid (full) |
 | [Notifuse](https://github.com/Notifuse/notifuse) | Go | Other | [v44.0](https://github.com/Notifuse/notifuse/releases/tag/v44.0) | 2292 | Mailchimp (partial) |

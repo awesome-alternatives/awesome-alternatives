@@ -4,14 +4,14 @@ Declare cloud infrastructure in files and apply the difference.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.17.2](https://github.com/hashicorp/terraform/releases/tag/v1.17.2) signed | 50294 | none |
+| [Terraform](https://github.com/hashicorp/terraform) | Go | Other | [v1.17.2](https://github.com/hashicorp/terraform/releases/tag/v1.17.2) signed | 50296 | none |
 | [OpenTofu](https://github.com/opentofu/opentofu) | Go | MPL-2.0 | [v1.13.9](https://github.com/opentofu/opentofu/releases/tag/v1.13.9) | 30931 | Terraform (drop-in), AWS CloudFormation (full) |
 | [SST](https://github.com/anomalyco/sst) | TypeScript | MIT | [v4.17.2](https://github.com/anomalyco/sst/releases/tag/v4.17.2) signed | 26454 | Vercel (partial), AWS CDK (partial) |
-| [Pulumi](https://github.com/pulumi/pulumi) | Go | Apache-2.0 | [v3.277.0](https://github.com/pulumi/pulumi/releases/tag/v3.277.0) signed | 25922 | Terraform (full), AWS CloudFormation (full) |
+| [Pulumi](https://github.com/pulumi/pulumi) | Go | Apache-2.0 | [v3.277.0](https://github.com/pulumi/pulumi/releases/tag/v3.277.0) signed | 25925 | Terraform (full), AWS CloudFormation (full) |
 | [Packer](https://github.com/hashicorp/packer) | Go | Other | [v1.16.2](https://github.com/hashicorp/packer/releases/tag/v1.16.2) signed | 15825 | none |
 | [AWS CDK](https://github.com/aws/aws-cdk) | TypeScript | Apache-2.0 | [v2.277.0](https://github.com/aws/aws-cdk/releases/tag/v2.277.0) signed | 12988 | AWS CloudFormation (partial), Terraform (partial) |
 | [Crossplane](https://github.com/crossplane/crossplane) | Go | Apache-2.0 | [v2.4.3](https://github.com/crossplane/crossplane/releases/tag/v2.4.3) | 12258 | Terraform (partial), AWS CloudFormation (partial) |
-| [Terragrunt](https://github.com/gruntwork-io/terragrunt) | Go | MIT | [v1.2.2](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.2) signed | 9930 | none |
+| [Terragrunt](https://github.com/gruntwork-io/terragrunt) | Go | MIT | [v1.2.2](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.2) signed | 9931 | none |
 | [Atlantis](https://github.com/runatlantis/atlantis) | Go | Apache-2.0 | [v0.49.0](https://github.com/runatlantis/atlantis/releases/tag/v0.49.0) signed | 9366 | HCP Terraform (partial) |
 | [Digger](https://github.com/diggerhq/digger) | Go | MIT | [v0.6.155](https://github.com/diggerhq/digger/releases/tag/v0.6.155) signed | 5073 | HCP Terraform (partial) |
 | [DNSControl](https://github.com/DNSControl/dnscontrol) | Go | MIT | [v5.10.0](https://github.com/DNSControl/dnscontrol/releases/tag/v5.10.0) | 4010 | octoDNS (full) |

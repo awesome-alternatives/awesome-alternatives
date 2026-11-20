@@ -4,7 +4,7 @@ Build and test SQL and Python models inside a warehouse, and define metrics and 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Cube](https://github.com/cube-js/cube) | Rust | Other | [v1.8.30](https://github.com/cube-js/cube/releases/tag/v1.8.30) | 21261 | Looker (partial) |
+| [Cube](https://github.com/cube-js/cube) | Rust | Other | [v1.8.30](https://github.com/cube-js/cube/releases/tag/v1.8.30) | 21262 | Looker (partial) |
 | [dbt](https://github.com/dbt-labs/dbt) | Rust | Apache-2.0 | [v1.12.7](https://github.com/dbt-labs/dbt/releases/tag/v1.12.7) | 14192 | dbt Cloud (partial) |
 | [SQLMesh](https://github.com/SQLMesh/sqlmesh) | Python | Apache-2.0 | [v0.236.4](https://github.com/SQLMesh/sqlmesh/releases/tag/v0.236.4) signed | 3360 | dbt (partial), dbt Cloud (full) |
 | [MetricFlow](https://github.com/dbt-labs/metricflow) | Python | Apache-2.0 | [v0.214.0](https://github.com/dbt-labs/metricflow/releases/tag/v0.214.0) signed | 1886 | Cube (full), Looker (partial) |

@@ -4,7 +4,7 @@ Stream a personal library of films, series, music and podcasts to your devices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59564 | Plex (full), Emby (full), Netflix (partial) |
+| [Jellyfin](https://github.com/jellyfin/jellyfin) | C# | GPL-2.0 | [v12.4](https://github.com/jellyfin/jellyfin/releases/tag/v12.4) | 59565 | Plex (full), Emby (full), Netflix (partial) |
 | [Navidrome](https://github.com/navidrome/navidrome) | Go | GPL-3.0 | [v0.64.2](https://github.com/navidrome/navidrome/releases/tag/v0.64.2) signed | 24852 | Plex (partial), Spotify (partial) |
 | [Koel](https://github.com/koel/koel) | PHP | MIT | [v9.15.0](https://github.com/koel/koel/releases/tag/v9.15.0) | 17353 | Plex (partial), Spotify (partial) |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | JavaScript | GPL-3.0 | [v2.38.0](https://github.com/advplyr/audiobookshelf/releases/tag/v2.38.0) | 15070 | Audible (partial) |

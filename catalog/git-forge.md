@@ -4,8 +4,8 @@ Self-hosted repositories, code review and issues.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.4.0](https://github.com/go-gitea/gitea/releases/tag/v28.4.0) | 59178 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
-| [Gogs](https://github.com/gogs/gogs) | Go | MIT | [v0.14.4](https://github.com/gogs/gogs/releases/tag/v0.14.4) signed | 47958 | GitHub (partial), Bitbucket (partial) |
+| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.4.0](https://github.com/go-gitea/gitea/releases/tag/v28.4.0) | 59179 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
+| [Gogs](https://github.com/gogs/gogs) | Go | MIT | [v0.14.4](https://github.com/gogs/gogs/releases/tag/v0.14.4) signed | 47959 | GitHub (partial), Bitbucket (partial) |
 | [Harness Open Source](https://github.com/harness/harness) | Go | Apache-2.0 | [v2.28.2](https://github.com/harness/harness/releases/tag/v2.28.2) | 38939 | GitHub (full), GitLab (full) |
 | [GitLab](https://github.com/gitlabhq/gitlabhq) | Ruby | Other | [v19.5.1](https://github.com/gitlabhq/gitlabhq/releases/tag/v19.5.1) | 24570 | GitHub (full), Jenkins (partial), Bitbucket (full) |
 | [OneDev](https://github.com/theonedev/onedev) | Java | MIT | [v17.2.2](https://github.com/theonedev/onedev/releases/tag/v17.2.2) | 15366 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full) |

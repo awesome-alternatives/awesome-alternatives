@@ -4,10 +4,10 @@ Design and prototype user interfaces on a shared canvas.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Penpot](https://github.com/penpot/penpot) | Clojure | MPL-2.0 | [2.19.3](https://github.com/penpot/penpot/releases/tag/2.19.3) signed | 62562 | Figma (full), Canva (partial), Axure RP (partial), Balsamiq (partial) |
-| [Onlook](https://github.com/onlook-dev/onlook) | TypeScript | Apache-2.0 | [v2.0.2](https://github.com/onlook-dev/onlook/releases/tag/v2.0.2) signed | 27449 | Figma (partial) |
+| [Penpot](https://github.com/penpot/penpot) | Clojure | MPL-2.0 | [2.19.3](https://github.com/penpot/penpot/releases/tag/2.19.3) signed | 62564 | Figma (full), Canva (partial), Axure RP (partial), Balsamiq (partial) |
+| [Onlook](https://github.com/onlook-dev/onlook) | TypeScript | Apache-2.0 | [v2.0.2](https://github.com/onlook-dev/onlook/releases/tag/v2.0.2) signed | 27486 | Figma (partial) |
 | [GrapesJS](https://github.com/GrapesJS/grapesjs) | TypeScript | Other | [v0.23.9](https://github.com/GrapesJS/grapesjs/releases/tag/v0.23.9) signed | 26422 | Webflow (partial) |
-| [Puck](https://github.com/puckeditor/puck) | TypeScript | MIT | [v0.24.1](https://github.com/puckeditor/puck/releases/tag/v0.24.1) | 13739 | Webflow (partial), Plasmic (partial) |
+| [Puck](https://github.com/puckeditor/puck) | TypeScript | MIT | [v0.24.1](https://github.com/puckeditor/puck/releases/tag/v0.24.1) | 13740 | Webflow (partial), Plasmic (partial) |
 | [OpenPencil](https://github.com/open-pencil/open-pencil) | TypeScript | MIT | [v0.16.0](https://github.com/open-pencil/open-pencil/releases/tag/v0.16.0) | 9965 | Figma (partial) |
 | [Pencil](https://github.com/evolus/pencil) | JavaScript | GPL-2.0 | [v4.0.0](https://github.com/evolus/pencil/releases/tag/v4.0.0) | 9923 | Balsamiq (full), Axure RP (partial) |
 | [Webstudio](https://github.com/webstudio-is/webstudio) | TypeScript | AGPL-3.0 | [0.314.0](https://github.com/webstudio-is/webstudio/releases/tag/0.314.0) | 9177 | Webflow (full), Wix (partial), Squarespace (partial) |

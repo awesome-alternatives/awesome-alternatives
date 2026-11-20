@@ -4,9 +4,9 @@ Manage content in an admin UI and deliver it to any front end through an API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.63.0](https://github.com/strapi/strapi/releases/tag/v5.63.0) | 73523 | Contentful (full) |
-| [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.94.0](https://github.com/payloadcms/payload/releases/tag/v3.94.0) | 45926 | Contentful (full), Strapi (full) |
-| [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.7.0](https://github.com/directus/directus/releases/tag/v12.7.0) signed | 38602 | Contentful (full) |
+| [Strapi](https://github.com/strapi/strapi) | TypeScript | Other | [v5.63.0](https://github.com/strapi/strapi/releases/tag/v5.63.0) | 73524 | Contentful (full) |
+| [Payload](https://github.com/payloadcms/payload) | TypeScript | MIT | [v3.94.0](https://github.com/payloadcms/payload/releases/tag/v3.94.0) | 45927 | Contentful (full), Strapi (full) |
+| [Directus](https://github.com/directus/directus) | TypeScript | Other | [v12.7.0](https://github.com/directus/directus/releases/tag/v12.7.0) signed | 38605 | Contentful (full) |
 | [Wagtail](https://github.com/wagtail/wagtail) | Python | BSD-3-Clause | [v8.1](https://github.com/wagtail/wagtail/releases/tag/v8.1) | 20726 | Contentful (partial) |
 | [Decap CMS](https://github.com/decaporg/decap-cms) | JavaScript | MIT | [decap-cms@3.18.0](https://github.com/decaporg/decap-cms/releases/tag/decap-cms%403.18.0) | 19497 | Contentful (partial) |
 | [TinaCMS](https://github.com/tinacms/tinacms) | TypeScript | Apache-2.0 | [tinacms@3.15.2](https://github.com/tinacms/tinacms/releases/tag/tinacms%403.15.2) signed | 13883 | Contentful (partial) |

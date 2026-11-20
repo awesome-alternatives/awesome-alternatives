@@ -4,7 +4,7 @@ Browse topics, messages, consumer groups and connectors of a Kafka cluster from 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kafdrop](https://github.com/obsidiandynamics/kafdrop) | Java | Apache-2.0 | [4.3.1](https://github.com/obsidiandynamics/kafdrop/releases/tag/4.3.1) signed | 6161 | Conduktor (partial) |
+| [Kafdrop](https://github.com/obsidiandynamics/kafdrop) | Java | Apache-2.0 | [4.3.1](https://github.com/obsidiandynamics/kafdrop/releases/tag/4.3.1) signed | 6162 | Conduktor (partial) |
 | [Redpanda Console](https://github.com/redpanda-data/console) | TypeScript | none | [v3.15.0](https://github.com/redpanda-data/console/releases/tag/v3.15.0) signed | 4352 | Conduktor (partial) |
 | [AKHQ](https://github.com/tchiotludo/akhq) | Java | Apache-2.0 | [0.29.0](https://github.com/tchiotludo/akhq/releases/tag/0.29.0) signed | 3876 | Conduktor (partial) |
 | [Kafbat UI](https://github.com/kafbat/kafka-ui) | TypeScript | Apache-2.0 | [v1.5.0](https://github.com/kafbat/kafka-ui/releases/tag/v1.5.0) signed | 2849 | Conduktor (partial) |

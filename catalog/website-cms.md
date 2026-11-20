@@ -4,11 +4,11 @@ Run a website from a web back office, with pages, menus, themes and plugins.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [WordPress](https://github.com/WordPress/WordPress) | PHP | Other | [7.1.5](https://github.com/WordPress/WordPress/releases/tag/7.1.5) | 21546 | Squarespace (partial), Wix (partial) |
-| [Grav](https://github.com/getgrav/grav) | PHP | MIT | [2.2.31](https://github.com/getgrav/grav/releases/tag/2.2.31) signed | 15731 | Squarespace (partial) |
+| [WordPress](https://github.com/WordPress/WordPress) | PHP | Other | [7.1.5](https://github.com/WordPress/WordPress/releases/tag/7.1.5) | 21547 | Squarespace (partial), Wix (partial) |
+| [Grav](https://github.com/getgrav/grav) | PHP | MIT | [2.2.31](https://github.com/getgrav/grav/releases/tag/2.2.31) signed | 15732 | Squarespace (partial) |
 | [October CMS](https://github.com/octobercms/october) | PHP | Other | [v4.4.0](https://github.com/octobercms/october/releases/tag/v4.4.0) | 11157 | WordPress (partial) |
 | [django CMS](https://github.com/django-cms/django-cms) | Python | Other | [5.1.3](https://github.com/django-cms/django-cms/releases/tag/5.1.3) signed | 10680 | Wagtail (partial) |
-| [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8229 | Contentful (partial) |
+| [Orchard Core](https://github.com/OrchardCMS/OrchardCore) | C# | BSD-3-Clause | [v3.0.1](https://github.com/OrchardCMS/OrchardCore/releases/tag/v3.0.1) signed | 8230 | Contentful (partial) |
 | [Umbraco](https://github.com/umbraco/Umbraco-CMS) | C# | MIT | [release-18.3.2](https://github.com/umbraco/Umbraco-CMS/releases/tag/release-18.3.2) signed | 5285 | Contentful (partial) |
 | [Joomla](https://github.com/joomla/joomla-cms) | PHP | GPL-2.0 | [6.2.0](https://github.com/joomla/joomla-cms/releases/tag/6.2.0) signed | 5167 | Wix (partial), Squarespace (partial) |
 | [Statamic](https://github.com/statamic/cms) | PHP | Other | [v6.42.0](https://github.com/statamic/cms/releases/tag/v6.42.0) | 4922 | Contentful (partial) |

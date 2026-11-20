@@ -4,11 +4,11 @@ Take deduplicated, encrypted snapshots of files and restore them from local or c
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.20.0](https://github.com/restic/restic/releases/tag/v0.20.0) signed | 37310 | none |
+| [restic](https://github.com/restic/restic) | Go | BSD-2-Clause | [v0.20.0](https://github.com/restic/restic/releases/tag/v0.20.0) signed | 37312 | none |
 | [Duplicati](https://github.com/duplicati/duplicati) | C# | Other | [v2.4.1.0_stable_2026-10-29](https://github.com/duplicati/duplicati/releases/tag/v2.4.1.0_stable_2026-10-29) | 15218 | CrashPlan (partial), Backblaze Personal Backup (partial) |
-| [Kopia](https://github.com/kopia/kopia) | Go | Apache-2.0 | [v0.23.1](https://github.com/kopia/kopia/releases/tag/v0.23.1) | 14752 | restic (full), BorgBackup (full), CrashPlan (partial) |
-| [BorgBackup](https://github.com/borgbackup/borg) | Python | Other | [1.4.5](https://github.com/borgbackup/borg/releases/tag/1.4.5) signed | 13937 | restic (full) |
-| [Backrest](https://github.com/garethgeorge/backrest) | TypeScript | GPL-3.0 | [v1.14.1](https://github.com/garethgeorge/backrest/releases/tag/v1.14.1) signed | 7943 | Backblaze Personal Backup (partial) |
+| [Kopia](https://github.com/kopia/kopia) | Go | Apache-2.0 | [v0.23.1](https://github.com/kopia/kopia/releases/tag/v0.23.1) | 14753 | restic (full), BorgBackup (full), CrashPlan (partial) |
+| [BorgBackup](https://github.com/borgbackup/borg) | Python | Other | [1.4.5](https://github.com/borgbackup/borg/releases/tag/1.4.5) signed | 13938 | restic (full) |
+| [Backrest](https://github.com/garethgeorge/backrest) | TypeScript | GPL-3.0 | [v1.14.1](https://github.com/garethgeorge/backrest/releases/tag/v1.14.1) signed | 7944 | Backblaze Personal Backup (partial) |
 | [Duplicacy](https://github.com/gilbertchen/duplicacy) | Go | Other | [v3.3.1](https://github.com/gilbertchen/duplicacy/releases/tag/v3.3.1) | 5706 | CrashPlan (partial) |
 | [Timeshift](https://github.com/linuxmint/timeshift) | Vala | none | [master.mint22](https://github.com/linuxmint/timeshift/releases/tag/master.mint22) | 4341 | Time Machine (partial) |
 | [rustic](https://github.com/rustic-rs/rustic) | Rust | Apache-2.0 | [v0.12.0](https://github.com/rustic-rs/rustic/releases/tag/v0.12.0) | 3441 | restic (partial) |

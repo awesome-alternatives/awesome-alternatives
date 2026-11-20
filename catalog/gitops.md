@@ -4,7 +4,7 @@ Keep Kubernetes clusters in sync with manifests stored in git.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Argo CD](https://github.com/argoproj/argo-cd) | Go | Apache-2.0 | [v3.6.2](https://github.com/argoproj/argo-cd/releases/tag/v3.6.2) signed | 24663 | Flux (full), Spinnaker (partial), Octopus Deploy (partial) |
+| [Argo CD](https://github.com/argoproj/argo-cd) | Go | Apache-2.0 | [v3.6.2](https://github.com/argoproj/argo-cd/releases/tag/v3.6.2) signed | 24664 | Flux (full), Spinnaker (partial), Octopus Deploy (partial) |
 | [Flux](https://github.com/fluxcd/flux2) | Go | Apache-2.0 | [v2.10.0](https://github.com/fluxcd/flux2/releases/tag/v2.10.0) signed | 8540 | Argo CD (full) |
 | [werf](https://github.com/werf/werf) | Go | Apache-2.0 | [v2.84.1](https://github.com/werf/werf/releases/tag/v2.84.1) signed | 4737 | Argo CD (partial) |
 | [Kargo](https://github.com/akuity/kargo) | Go | Apache-2.0 | [v1.12.6](https://github.com/akuity/kargo/releases/tag/v1.12.6) signed | 3802 | Spinnaker (partial) |

@@ -4,7 +4,7 @@ Run voice calls, SIP trunks and SMS sending on your own servers behind an API.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Fonoster](https://github.com/fonoster/fonoster) | TypeScript | MIT | [v0.66.0](https://github.com/fonoster/fonoster/releases/tag/v0.66.0) | 8167 | Twilio (partial) |
+| [Fonoster](https://github.com/fonoster/fonoster) | TypeScript | MIT | [v0.66.0](https://github.com/fonoster/fonoster/releases/tag/v0.66.0) | 8168 | Twilio (partial) |
 | [SMS Gateway for Android](https://github.com/capcom6/android-sms-gateway) | Kotlin | Apache-2.0 | [v1.79.0](https://github.com/capcom6/android-sms-gateway/releases/tag/v1.79.0) | 6038 | Twilio (partial) |
 | [FreeSWITCH](https://github.com/signalwire/freeswitch) | C | Other | [v1.11.4](https://github.com/signalwire/freeswitch/releases/tag/v1.11.4) | 5317 | Twilio (partial) |
 | [Asterisk](https://github.com/asterisk/asterisk) | C | Other | [24.0.0](https://github.com/asterisk/asterisk/releases/tag/24.0.0) | 3703 | Twilio (partial) |
