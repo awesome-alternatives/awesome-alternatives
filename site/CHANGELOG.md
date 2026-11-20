@@ -4,6 +4,13 @@ All notable changes to `site` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.142.7] - 2026-11-20
+
+### Bug Fixes
+
+- chore(catalog): refresh sourcegit
+- chore(catalog): refresh pglite
+
 ## [0.142.6] - 2026-11-20
 
 ### Bug Fixes
