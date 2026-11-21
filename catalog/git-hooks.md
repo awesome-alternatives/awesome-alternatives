@@ -4,13 +4,13 @@ Install and run the checks a repository wants before a commit or a push, and che
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35395 | pre-commit (partial) |
-| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18833 | none |
+| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35398 | pre-commit (partial) |
+| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18834 | none |
 | [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15707 | husky (partial) |
-| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.2](https://github.com/evilmartians/lefthook/releases/tag/v2.2.2) signed | 9047 | husky (full), pre-commit (full) |
-| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.11](https://github.com/j178/prek/releases/tag/v0.5.11) signed | 8822 | pre-commit (drop-in) |
+| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.2](https://github.com/evilmartians/lefthook/releases/tag/v2.2.2) signed | 9049 | husky (full), pre-commit (full) |
+| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.11](https://github.com/j178/prek/releases/tag/v0.5.11) signed | 8827 | pre-commit (drop-in) |
 | [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.76.0](https://github.com/sds/overcommit/releases/tag/v0.76.0) signed | 4003 | pre-commit (partial) |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | JavaScript | MIT | [2.14.0](https://github.com/toplenboren/simple-git-hooks/releases/tag/2.14.0) | 1692 | husky (partial) |
-| [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1536 | Commitizen (full) |
+| [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1537 | Commitizen (full) |
 
 [All categories](../README.md#catalog)

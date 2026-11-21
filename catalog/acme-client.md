@@ -5,10 +5,10 @@ Request and renew TLS certificates over ACME from Let's Encrypt or another ACME 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [acme.sh](https://github.com/acmesh-official/acme.sh) | Shell | GPL-3.0 | [3.1.7](https://github.com/acmesh-official/acme.sh/releases/tag/3.1.7) signed | 47969 | Certbot (full) |
-| [Certbot](https://github.com/certbot/certbot) | Python | Other | [v5.10.0](https://github.com/certbot/certbot/releases/tag/v5.10.0) | 33341 | none |
+| [Certbot](https://github.com/certbot/certbot) | Python | Other | [v5.10.0](https://github.com/certbot/certbot/releases/tag/v5.10.0) | 33343 | none |
 | [cert-manager](https://github.com/cert-manager/cert-manager) | Go | Apache-2.0 | [v1.21.3](https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3) signed | 14164 | Certbot (partial) |
-| [lego](https://github.com/go-acme/lego) | Go | MIT | [v5.6.0](https://github.com/go-acme/lego/releases/tag/v5.6.0) signed | 10043 | Certbot (full), acme.sh (full) |
+| [lego](https://github.com/go-acme/lego) | Go | MIT | [v5.6.0](https://github.com/go-acme/lego/releases/tag/v5.6.0) signed | 10042 | Certbot (full), acme.sh (full) |
 | [Certimate](https://github.com/certimate-go/certimate) | Go | MIT | [v0.4.38](https://github.com/certimate-go/certimate/releases/tag/v0.4.38) signed | 9458 | Certbot (partial) |
-| [win-acme](https://github.com/win-acme/win-acme) | C# | Apache-2.0 | [v2.4.1](https://github.com/win-acme/win-acme/releases/tag/v2.4.1) signed | 5839 | Certbot (partial) |
+| [win-acme](https://github.com/win-acme/win-acme) | C# | Apache-2.0 | [v2.4.1](https://github.com/win-acme/win-acme/releases/tag/v2.4.1) signed | 5840 | Certbot (partial) |
 
 [All categories](../README.md#catalog)
