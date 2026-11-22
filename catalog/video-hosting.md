@@ -4,17 +4,17 @@ Publish videos and live streams on your own site for an audience to watch.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r3](https://github.com/ossrs/srs/releases/tag/v6.0-r3) signed | 29445 | Wowza Streaming Engine (partial) |
-| [MediaMTX](https://github.com/bluenviron/mediamtx) | Go | MIT | [v1.21.4](https://github.com/bluenviron/mediamtx/releases/tag/v1.21.4) signed | 20740 | Wowza Streaming Engine (partial) |
-| [PeerTube](https://github.com/Chocobozzz/PeerTube) | TypeScript | AGPL-3.0 | [v8.3.2](https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.2) signed | 15421 | YouTube (full), Vimeo (full), Twitch (partial) |
-| [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11683 | Twitch (partial) |
-| [Restreamer](https://github.com/datarhei/restreamer) | HTML | Apache-2.0 | [v2.12.0](https://github.com/datarhei/restreamer/releases/tag/v2.12.0) | 5247 | Twitch (partial), Wowza Streaming Engine (partial) |
+| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r3](https://github.com/ossrs/srs/releases/tag/v6.0-r3) signed | 29448 | Wowza Streaming Engine (partial) |
+| [MediaMTX](https://github.com/bluenviron/mediamtx) | Go | MIT | [v1.21.4](https://github.com/bluenviron/mediamtx/releases/tag/v1.21.4) signed | 20747 | Wowza Streaming Engine (partial) |
+| [PeerTube](https://github.com/Chocobozzz/PeerTube) | TypeScript | AGPL-3.0 | [v8.3.2](https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.2) signed | 15420 | YouTube (full), Vimeo (full), Twitch (partial) |
+| [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11685 | Twitch (partial) |
+| [Restreamer](https://github.com/datarhei/restreamer) | HTML | Apache-2.0 | [v2.12.0](https://github.com/datarhei/restreamer/releases/tag/v2.12.0) | 5248 | Twitch (partial), Wowza Streaming Engine (partial) |
 | [MediaCMS](https://github.com/mediacms-io/mediacms) | Python | AGPL-3.0 | [v9.6.1](https://github.com/mediacms-io/mediacms/releases/tag/v9.6.1) | 5198 | YouTube (partial), Vimeo (partial) |
-| [Ant Media Server](https://github.com/ant-media/Ant-Media-Server) | Java | Other | [ams-v3.2.0](https://github.com/ant-media/Ant-Media-Server/releases/tag/ams-v3.2.0) | 4747 | Wowza Streaming Engine (partial) |
-| [Red5 Server](https://github.com/Red5/red5-server) | HTML | Apache-2.0 | [v2.0.53](https://github.com/Red5/red5-server/releases/tag/v2.0.53) | 3415 | Wowza Streaming Engine (full) |
-| [OvenMediaEngine](https://github.com/OvenMediaLabs/OvenMediaEngine) | C++ | AGPL-3.0 | [v0.21.0](https://github.com/OvenMediaLabs/OvenMediaEngine/releases/tag/v0.21.0) | 3306 | Wowza Streaming Engine (full) |
+| [Ant Media Server](https://github.com/ant-media/Ant-Media-Server) | Java | Other | [ams-v3.2.0](https://github.com/ant-media/Ant-Media-Server/releases/tag/ams-v3.2.0) | 4746 | Wowza Streaming Engine (partial) |
+| [Red5 Server](https://github.com/Red5/red5-server) | HTML | Apache-2.0 | [v2.0.53](https://github.com/Red5/red5-server/releases/tag/v2.0.53) | 3416 | Wowza Streaming Engine (full) |
+| [OvenMediaEngine](https://github.com/OvenMediaLabs/OvenMediaEngine) | C++ | AGPL-3.0 | [v0.21.0](https://github.com/OvenMediaLabs/OvenMediaEngine/releases/tag/v0.21.0) | 3308 | Wowza Streaming Engine (full) |
 | [AVideo](https://github.com/WWBN/AVideo) | JavaScript | Other | [v29.8.0](https://github.com/WWBN/AVideo/releases/tag/v29.8.0) signed | 2115 | YouTube (partial), Vimeo (partial), Twitch (partial) |
-| [Fireshare](https://github.com/fireshare-app/fireshare) | JavaScript | GPL-3.0 | [v1.9.3](https://github.com/fireshare-app/fireshare/releases/tag/v1.9.3) signed | 1530 | YouTube (partial) |
+| [Fireshare](https://github.com/fireshare-app/fireshare) | JavaScript | GPL-3.0 | [v1.9.4](https://github.com/fireshare-app/fireshare/releases/tag/v1.9.4) signed | 1530 | YouTube (partial) |
 | [ClipBucket](https://github.com/MacWarrior/clipbucket-v5) | JavaScript | Other | [5.5.3-#221](https://github.com/MacWarrior/clipbucket-v5/releases/tag/5.5.3-%23221) signed | 185 | YouTube (partial), Vimeo (partial) |
 
 [All categories](../README.md#catalog)

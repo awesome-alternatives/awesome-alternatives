@@ -4,10 +4,10 @@ Answer questions from live web searches with a language model, citing the pages 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Vane](https://github.com/ItzCrazyKns/Vane) | TypeScript | MIT | [v1.12.2](https://github.com/ItzCrazyKns/Vane/releases/tag/v1.12.2) | 38273 | Perplexity (partial) |
-| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Python | Apache-2.0 | [v3.8.0](https://github.com/assafelovic/gpt-researcher/releases/tag/v3.8.0) signed | 30805 | Perplexity (partial) |
+| [Vane](https://github.com/ItzCrazyKns/Vane) | TypeScript | MIT | [v1.12.2](https://github.com/ItzCrazyKns/Vane/releases/tag/v1.12.2) | 38280 | Perplexity (partial) |
+| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Python | Apache-2.0 | [v3.8.0](https://github.com/assafelovic/gpt-researcher/releases/tag/v3.8.0) signed | 30820 | Perplexity (partial) |
 | [Scira](https://github.com/zaidmukaddam/scira) | TypeScript | AGPL-3.0 | none | 11953 | Perplexity (partial) |
-| [Local Deep Research](https://github.com/LearningCircuit/local-deep-research) | Python | MIT | [v2.0.1](https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.1) signed | 9618 | Perplexity (partial) |
-| [Morphic](https://github.com/miurla/morphic) | TypeScript | Apache-2.0 | [v1.10.0](https://github.com/miurla/morphic/releases/tag/v1.10.0) signed | 9345 | Perplexity (partial) |
+| [Local Deep Research](https://github.com/LearningCircuit/local-deep-research) | Python | MIT | [v2.0.2](https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.2) signed | 9617 | Perplexity (partial) |
+| [Morphic](https://github.com/miurla/morphic) | TypeScript | Apache-2.0 | [v1.10.0](https://github.com/miurla/morphic/releases/tag/v1.10.0) signed | 9350 | Perplexity (partial) |
 
 [All categories](../README.md#catalog)

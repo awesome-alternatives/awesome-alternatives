@@ -4,11 +4,11 @@ Agents that plan and carry out multi-step tasks on their own, browsing, running 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Python | Other | [autogpt-platform-beta-v0.11.3](https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.3) signed | 188120 | Manus (partial) |
-| [OpenManus](https://github.com/FoundationAgents/OpenManus) | Python | MIT | [v0.3.0](https://github.com/FoundationAgents/OpenManus/releases/tag/v0.3.0) | 59002 | Manus (partial) |
-| [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) archived | TypeScript | Apache-2.0 | [v0.3.1](https://github.com/bytedance/UI-TARS-desktop/releases/tag/v0.3.1) | 39606 | Manus (partial) |
-| [Letta](https://github.com/letta-ai/letta) | unknown | Apache-2.0 | [0.16.8](https://github.com/letta-ai/letta/releases/tag/0.16.8) signed | 25505 | Microsoft Copilot Studio (partial) |
-| [Suna](https://github.com/kortix-ai/CompanyOS) | TypeScript | Other | [v0.16.2](https://github.com/kortix-ai/CompanyOS/releases/tag/v0.16.2) signed | 20780 | Manus (partial) |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | Python | Other | [v2.16](https://github.com/agent0ai/agent-zero/releases/tag/v2.16) | 19944 | Manus (partial) |
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Python | Other | [autogpt-platform-beta-v0.11.3](https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.11.3) signed | 188124 | Manus (partial) |
+| [OpenManus](https://github.com/FoundationAgents/OpenManus) | Python | MIT | [v0.3.0](https://github.com/FoundationAgents/OpenManus/releases/tag/v0.3.0) | 59006 | Manus (partial) |
+| [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) archived | TypeScript | Apache-2.0 | [v0.3.1](https://github.com/bytedance/UI-TARS-desktop/releases/tag/v0.3.1) | 39605 | Manus (partial) |
+| [Letta](https://github.com/letta-ai/letta) | unknown | Apache-2.0 | [0.16.8](https://github.com/letta-ai/letta/releases/tag/0.16.8) signed | 25509 | Microsoft Copilot Studio (partial) |
+| [Suna](https://github.com/kortix-ai/CompanyOS) | TypeScript | Other | [v0.16.4](https://github.com/kortix-ai/CompanyOS/releases/tag/v0.16.4) signed | 20784 | Manus (partial) |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | Python | Other | [v2.16](https://github.com/agent0ai/agent-zero/releases/tag/v2.16) | 19947 | Manus (partial) |
 
 [All categories](../README.md#catalog)

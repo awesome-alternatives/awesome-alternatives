@@ -4,8 +4,8 @@ Run batch and streaming jobs over large datasets across a cluster.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Apache Spark](https://github.com/apache/spark) | Scala | Apache-2.0 | [v4.3.0](https://github.com/apache/spark/releases/tag/v4.3.0) | 44593 | Databricks (partial), Google Cloud Dataflow (partial) |
-| [Apache Hadoop](https://github.com/apache/hadoop) | Java | Apache-2.0 | [rel/release-3.5.0](https://github.com/apache/hadoop/releases/tag/rel/release-3.5.0) signed | 15719 | none |
+| [Apache Spark](https://github.com/apache/spark) | Scala | Apache-2.0 | [v4.3.0](https://github.com/apache/spark/releases/tag/v4.3.0) | 44595 | Databricks (partial), Google Cloud Dataflow (partial) |
+| [Apache Hadoop](https://github.com/apache/hadoop) | Java | Apache-2.0 | [rel/release-3.5.0](https://github.com/apache/hadoop/releases/tag/rel/release-3.5.0) signed | 15720 | none |
 | [Apache Beam](https://github.com/apache/beam) | Java | Apache-2.0 | [v2.78.0](https://github.com/apache/beam/releases/tag/v2.78.0) | 8723 | Google Cloud Dataflow (partial) |
 
 [All categories](../README.md#catalog)
