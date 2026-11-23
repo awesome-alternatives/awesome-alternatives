@@ -98331,27 +98331,48 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-23T04:05:48Z",
+        "pushedAt": "2026-11-23T18:53:15Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-24T05:17:25.142Z"
+        "since": "2026-10-24T18:59:58.306Z"
       },
       "starHistory": {
         "from": "2026-10-23",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.37.0",
-        "publishedAt": "2026-11-20T17:59:17Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.0",
+        "tag": "v7.37.1",
+        "publishedAt": "2026-11-23T18:59:18Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.1",
         "source": "release",
         "signed": true,
-        "tagOid": "4911016ee8e82759109a1d3c75aacec42fa07397"
+        "tagOid": "0a654ae1398d6779f54fb9cc6ca7d7a57f5bf94f"
       },
       "releases": [
+        {
+          "tag": "v7.37.1",
+          "name": "fix(deps): bump cookie and url to patched versions (#1474)",
+          "publishedAt": "2026-11-23T18:59:18Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.1",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.25",
+          "name": "Dependency update: ferrflow",
+          "publishedAt": "2026-11-23T18:48:38Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.25",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.24",
+          "name": null,
+          "publishedAt": "2026-11-23T16:26:20Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.24",
+          "prerelease": false
+        },
         {
           "tag": "site@v2026.11.23",
           "name": "fix(deps): update ferrlabs npm packages (#1471)",
@@ -98364,27 +98385,6 @@
           "name": null,
           "publishedAt": "2026-11-22T04:11:41Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.22",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.21",
-          "name": null,
-          "publishedAt": "2026-11-21T22:14:47Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.21",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.20",
-          "name": null,
-          "publishedAt": "2026-11-20T20:16:52Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.20",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.19",
-          "name": "feat(site): add animated speed race terminal to the hero (#1461)",
-          "publishedAt": "2026-11-20T17:50:00Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.19",
           "prerelease": false
         }
       ],
