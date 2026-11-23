@@ -4,15 +4,15 @@ Browse and operate Kubernetes clusters from a desktop, web or terminal UI.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.4](https://github.com/portainer/portainer/releases/tag/2.45.4) signed | 38884 | Lens (partial) |
-| [k9s](https://github.com/derailed/k9s) | Go | Apache-2.0 | [v0.51.0](https://github.com/derailed/k9s/releases/tag/v0.51.0) | 35019 | Lens (partial) |
-| [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.3](https://github.com/rancher/rancher/releases/tag/v2.15.3) signed | 26076 | Lens (full) |
-| [KubeSphere](https://github.com/kubesphere/kubesphere) | Go | Other | [v4.1.3](https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3) signed | 17090 | Rancher (full), Lens (partial) |
-| [Headlamp](https://github.com/kubernetes-sigs/headlamp) | TypeScript | Apache-2.0 | [v0.46.0](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.46.0) | 7662 | Lens (full) |
-| [Freelens](https://github.com/freelensapp/freelens) | TypeScript | MIT | [v2.1.0](https://github.com/freelensapp/freelens/releases/tag/v2.1.0) signed | 5852 | Lens (full) |
+| [Portainer](https://github.com/portainer/portainer) | TypeScript | Zlib | [2.45.4](https://github.com/portainer/portainer/releases/tag/2.45.4) signed | 38891 | Lens (partial) |
+| [k9s](https://github.com/derailed/k9s) | Go | Apache-2.0 | [v0.51.0](https://github.com/derailed/k9s/releases/tag/v0.51.0) | 35030 | Lens (partial) |
+| [Rancher](https://github.com/rancher/rancher) | Go | Apache-2.0 | [v2.15.3](https://github.com/rancher/rancher/releases/tag/v2.15.3) signed | 26078 | Lens (full) |
+| [KubeSphere](https://github.com/kubesphere/kubesphere) | Go | Other | [v4.1.3](https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3) signed | 17088 | Rancher (full), Lens (partial) |
+| [Headlamp](https://github.com/kubernetes-sigs/headlamp) | TypeScript | Apache-2.0 | [v0.46.0](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.46.0) | 7664 | Lens (full) |
+| [Freelens](https://github.com/freelensapp/freelens) | TypeScript | MIT | [v2.1.0](https://github.com/freelensapp/freelens/releases/tag/v2.1.0) signed | 5854 | Lens (full) |
 | [Devtron](https://github.com/devtron-labs/devtron) | Go | Apache-2.0 | [v2.2.1](https://github.com/devtron-labs/devtron/releases/tag/v2.2.1) signed | 5643 | Lens (partial), Octopus Deploy (partial) |
-| [Kite](https://github.com/kite-org/kite) | TypeScript | Apache-2.0 | [v0.18.0](https://github.com/kite-org/kite/releases/tag/v0.18.0) | 3236 | Lens (partial), Rancher (partial) |
-| [KDash](https://github.com/kdash-rs/kdash) | Rust | MIT | [v2.1.1](https://github.com/kdash-rs/kdash/releases/tag/v2.1.1) | 2560 | Lens (partial) |
+| [Kite](https://github.com/kite-org/kite) | TypeScript | Apache-2.0 | [v0.18.0](https://github.com/kite-org/kite/releases/tag/v0.18.0) | 3237 | Lens (partial), Rancher (partial) |
+| [KDash](https://github.com/kdash-rs/kdash) | Rust | MIT | [v2.1.1](https://github.com/kdash-rs/kdash/releases/tag/v2.1.1) | 2559 | Lens (partial) |
 | [Kubetail](https://github.com/kubetail-org/kubetail) | Go | Apache-2.0 | [cli/v0.18.1](https://github.com/kubetail-org/kubetail/releases/tag/cli/v0.18.1) signed | 1811 | Lens (partial) |
 
 [All categories](../README.md#catalog)

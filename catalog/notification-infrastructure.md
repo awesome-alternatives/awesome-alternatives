@@ -4,7 +4,7 @@ Send product notifications across email, SMS, push, chat and in-app feeds from o
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Novu](https://github.com/novuhq/novu) | TypeScript | Other | [v3.20.0](https://github.com/novuhq/novu/releases/tag/v3.20.0) signed | 40405 | Courier (full), Knock (full) |
+| [Novu](https://github.com/novuhq/novu) | TypeScript | Other | [v3.20.0](https://github.com/novuhq/novu/releases/tag/v3.20.0) signed | 40411 | Courier (full), Knock (full) |
 | [Dittofeed](https://github.com/dittofeed/dittofeed) | TypeScript | MIT | [v0.23.0](https://github.com/dittofeed/dittofeed/releases/tag/v0.23.0) signed | 3082 | Courier (partial), Knock (partial) |
 | [Laudspeaker](https://github.com/laudspeaker/laudspeaker) | TypeScript | Other | [v.1.7.0](https://github.com/laudspeaker/laudspeaker/releases/tag/v.1.7.0) signed | 2636 | Knock (partial), Courier (partial) |
 

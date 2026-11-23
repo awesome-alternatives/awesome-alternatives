@@ -4,9 +4,9 @@ Make git diff output readable in a terminal.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [delta](https://github.com/dandavison/delta) | Rust | MIT | [0.21.2](https://github.com/dandavison/delta/releases/tag/0.21.2) | 32801 | diff-so-fancy (full) |
-| [Difftastic](https://github.com/Wilfred/difftastic) | Rust | MIT | [0.72.0](https://github.com/Wilfred/difftastic/releases/tag/0.72.0) | 26230 | diff-so-fancy (partial) |
-| [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Perl | MIT | [v1.4.14](https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.14) signed | 18125 | none |
+| [delta](https://github.com/dandavison/delta) | Rust | MIT | [0.22.0](https://github.com/dandavison/delta/releases/tag/0.22.0) | 32813 | diff-so-fancy (full) |
+| [Difftastic](https://github.com/Wilfred/difftastic) | Rust | MIT | [0.72.0](https://github.com/Wilfred/difftastic/releases/tag/0.72.0) | 26239 | diff-so-fancy (partial) |
+| [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Perl | MIT | [v1.4.14](https://github.com/so-fancy/diff-so-fancy/releases/tag/v1.4.14) signed | 18124 | none |
 | [icdiff](https://github.com/jeffkaufman/icdiff) | Python | Other | [release-2.0.10](https://github.com/jeffkaufman/icdiff/releases/tag/release-2.0.10) | 4396 | diff-so-fancy (partial) |
 | [git-split-diffs](https://github.com/banga/git-split-diffs) | TypeScript | MIT | [v2.3.0](https://github.com/banga/git-split-diffs/releases/tag/v2.3.0) | 2748 | diff-so-fancy (partial) |
 | [riff](https://github.com/walles/riff) | Rust | MIT | [3.7.0](https://github.com/walles/riff/releases/tag/3.7.0) | 535 | diff-so-fancy (partial) |

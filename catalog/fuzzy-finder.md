@@ -4,13 +4,13 @@ Filter lists interactively in a terminal, for files, anything piped in and the s
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [fzf](https://github.com/junegunn/fzf) | Go | MIT | [v0.75.0](https://github.com/junegunn/fzf/releases/tag/v0.75.0) signed | 84327 | peco (full), skim (full) |
-| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.25.1](https://github.com/atuinsh/atuin/releases/tag/v18.25.1) | 32557 | mcfly (full) |
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Lua | MIT | [v0.2.1](https://github.com/nvim-telescope/telescope.nvim/releases/tag/v0.2.1) | 19874 | fzf (partial) |
+| [fzf](https://github.com/junegunn/fzf) | Go | MIT | [v0.75.0](https://github.com/junegunn/fzf/releases/tag/v0.75.0) signed | 84351 | peco (full), skim (full) |
+| [atuin](https://github.com/atuinsh/atuin) | Rust | MIT | [v18.25.1](https://github.com/atuinsh/atuin/releases/tag/v18.25.1) | 32569 | mcfly (full) |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Lua | MIT | [v0.2.1](https://github.com/nvim-telescope/telescope.nvim/releases/tag/v0.2.1) | 19877 | fzf (partial) |
 | [peco](https://github.com/peco/peco) | Go | MIT | [v0.6.0](https://github.com/peco/peco/releases/tag/v0.6.0) | 7911 | fzf (partial) |
 | [mcfly](https://github.com/cantino/mcfly) | Rust | MIT | [v0.9.4](https://github.com/cantino/mcfly/releases/tag/v0.9.4) | 7830 | atuin (partial) |
-| [skim](https://github.com/skim-rs/skim) | Rust | MIT | [v5.9.0](https://github.com/skim-rs/skim/releases/tag/v5.9.0) signed | 7015 | fzf (full) |
-| [Television](https://github.com/alexpasmantier/television) | Rust | MIT | [0.15.9](https://github.com/alexpasmantier/television/releases/tag/0.15.9) | 6434 | fzf (full) |
-| [fzf-lua](https://github.com/ibhagwan/fzf-lua) | Lua | MIT | [0.7](https://github.com/ibhagwan/fzf-lua/releases/tag/0.7) signed | 4495 | telescope.nvim (full) |
+| [skim](https://github.com/skim-rs/skim) | Rust | MIT | [v5.9.0](https://github.com/skim-rs/skim/releases/tag/v5.9.0) signed | 7017 | fzf (full) |
+| [Television](https://github.com/alexpasmantier/television) | Rust | MIT | [0.15.9](https://github.com/alexpasmantier/television/releases/tag/0.15.9) | 6438 | fzf (full) |
+| [fzf-lua](https://github.com/ibhagwan/fzf-lua) | Lua | MIT | [0.7](https://github.com/ibhagwan/fzf-lua/releases/tag/0.7) signed | 4497 | telescope.nvim (full) |
 
 [All categories](../README.md#catalog)
