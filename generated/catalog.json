@@ -163750,27 +163750,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-22T04:21:28Z",
+        "pushedAt": "2026-11-23T04:16:01Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 3,
         "exact": true,
-        "since": "2026-10-23T05:17:25.647Z"
+        "since": "2026-10-24T04:16:39.727Z"
       },
       "starHistory": {
-        "from": "2026-10-22",
-        "stars": [4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7,7,7,7,7]
+        "from": "2026-10-23",
+        "stars": [4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "site@2026.11.15",
-        "publishedAt": "2026-11-20T12:16:29Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.15",
+        "tag": "v1.26.56",
+        "publishedAt": "2026-11-23T04:16:06Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.56",
         "source": "release",
         "signed": true,
-        "tagOid": "1558fe24d15e656edcf07d3baf1968d1881c6f5b"
+        "tagOid": "5661c5c22a38627be23c64660a13071d4ce8d161"
       },
       "releases": [
+        {
+          "tag": "v1.26.56",
+          "name": "fix(deps): update ferrlabs npm packages (#788)",
+          "publishedAt": "2026-11-23T04:16:06Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.56",
+          "prerelease": false
+        },
+        {
+          "tag": "site@2026.11.16",
+          "name": "fix(deps): update ferrlabs npm packages (#788)",
+          "publishedAt": "2026-11-23T04:16:06Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.16",
+          "prerelease": false
+        },
         {
           "tag": "site@2026.11.15",
           "name": "feat(site): restructure the landing page (#781)",
@@ -163790,20 +163804,6 @@
           "name": "fix(deps): update ferrlabs npm packages (#766)",
           "publishedAt": "2026-11-18T09:39:00Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.13",
-          "prerelease": false
-        },
-        {
-          "tag": "v1.26.55",
-          "name": "fix(deps): update ferrlabs npm packages (#766)",
-          "publishedAt": "2026-11-18T09:39:00Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.55",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.12",
-          "name": "fix(telemetry): stop quoted values before a query key and reach keys behind long prefixes (#763)",
-          "publishedAt": "2026-11-14T21:13:02Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.12",
           "prerelease": false
         }
       ],
