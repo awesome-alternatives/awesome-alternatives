@@ -1,0 +1,12 @@
+name: Open Sunsama
+repository: https://github.com/kaijiabo/open-sunsama
+category: project-management
+terms: source-available
+replaces:
+  - tool: sunsama
+    fit: full
+    note: Daily planning on a kanban board of days, with calendar time blocking, a focus timer and two-way Google, Outlook and iCloud sync.
+  - tool: todoist
+    fit: partial
+    note: Personal tasks with subtasks and priorities, planned onto days and calendar time blocks; no shared team projects.
+deploy: [compose]
