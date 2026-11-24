@@ -4,6 +4,12 @@ All notable changes to `refresh` will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.21.0] - 2026-11-24
+
+### Features
+
+- feat(db): add a migrate command and stop applying the schema from the refresh run (#502)
+
 ## [0.20.0] - 2026-11-18
 
 ### Features
