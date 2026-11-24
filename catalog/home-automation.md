@@ -4,16 +4,16 @@ Control and automate smart home devices locally.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Home Assistant](https://github.com/home-assistant/core) | Python | Apache-2.0 | [2026.11.2](https://github.com/home-assistant/core/releases/tag/2026.11.2) signed | 92559 | SmartThings (full), Homey (full) |
-| [Homebridge](https://github.com/homebridge/homebridge) | TypeScript | Apache-2.0 | [v2.5.0](https://github.com/homebridge/homebridge/releases/tag/v2.5.0) | 25560 | none |
-| [Tasmota](https://github.com/arendst/Tasmota) | C | GPL-3.0 | [v16.0.0](https://github.com/arendst/Tasmota/releases/tag/v16.0.0) | 25012 | none |
-| [WLED](https://github.com/wled/WLED) | C++ | EUPL-1.2 | [v16.0.1](https://github.com/wled/WLED/releases/tag/v16.0.1) | 19105 | none |
-| [Zigbee2MQTT](https://github.com/Koenkk/zigbee2mqtt) | TypeScript | GPL-3.0 | [2.14.3](https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.3) signed | 15842 | SmartThings (partial) |
-| [ESPHome](https://github.com/esphome/esphome) | C++ | Other | [2026.11.0](https://github.com/esphome/esphome/releases/tag/2026.11.0) signed | 12151 | none |
-| [evcc](https://github.com/evcc-io/evcc) | Go | MIT | [0.319.1](https://github.com/evcc-io/evcc/releases/tag/0.319.1) signed | 7653 | none |
-| [OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway) | C++ | GPL-3.0 | [v1.9.1](https://github.com/1technophile/OpenMQTTGateway/releases/tag/v1.9.1) signed | 4127 | none |
+| [Home Assistant](https://github.com/home-assistant/core) | Python | Apache-2.0 | [2026.11.3](https://github.com/home-assistant/core/releases/tag/2026.11.3) signed | 92470 | SmartThings (full), Homey (full) |
+| [Homebridge](https://github.com/homebridge/homebridge) | TypeScript | Apache-2.0 | [v2.5.0](https://github.com/homebridge/homebridge/releases/tag/v2.5.0) | 25561 | none |
+| [Tasmota](https://github.com/arendst/Tasmota) | C | GPL-3.0 | [v16.0.0](https://github.com/arendst/Tasmota/releases/tag/v16.0.0) | 25017 | none |
+| [WLED](https://github.com/wled/WLED) | C++ | EUPL-1.2 | [v16.0.1](https://github.com/wled/WLED/releases/tag/v16.0.1) | 19112 | none |
+| [Zigbee2MQTT](https://github.com/Koenkk/zigbee2mqtt) | TypeScript | GPL-3.0 | [2.14.3](https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.3) signed | 15843 | SmartThings (partial) |
+| [ESPHome](https://github.com/esphome/esphome) | C++ | Other | [2026.11.0](https://github.com/esphome/esphome/releases/tag/2026.11.0) signed | 12156 | none |
+| [evcc](https://github.com/evcc-io/evcc) | Go | MIT | [0.319.1](https://github.com/evcc-io/evcc/releases/tag/0.319.1) signed | 7654 | none |
+| [OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway) | C++ | GPL-3.0 | [v1.9.1](https://github.com/1technophile/OpenMQTTGateway/releases/tag/v1.9.1) signed | 4128 | none |
 | [Domoticz](https://github.com/domoticz/domoticz) | C++ | GPL-3.0 | [2026.4](https://github.com/domoticz/domoticz/releases/tag/2026.4) signed | 3842 | SmartThings (partial), Homey (partial) |
-| [Gladys Assistant](https://github.com/GladysAssistant/Gladys) | JavaScript | Apache-2.0 | [v5.3.4](https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.4) | 3282 | SmartThings (full), Homey (partial) |
+| [Gladys Assistant](https://github.com/GladysAssistant/Gladys) | JavaScript | Apache-2.0 | [v5.3.5](https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.5) | 3283 | SmartThings (full), Homey (partial) |
 | [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) | Vue | MIT | [v11.27.0](https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.27.0) | 1259 | SmartThings (partial) |
 | [openHAB](https://github.com/openhab/openhab-core) | Java | EPL-2.0 | [5.2.5](https://github.com/openhab/openhab-core/releases/tag/5.2.5) | 1163 | SmartThings (full), Home Assistant (full), Homey (full) |
 | [Jeedom](https://github.com/jeedom/core) | PHP | GPL-2.0 | [4.6.1](https://github.com/jeedom/core/releases/tag/4.6.1) | 413 | SmartThings (partial) |

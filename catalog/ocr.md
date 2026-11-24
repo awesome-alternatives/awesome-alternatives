@@ -4,10 +4,10 @@ Recognise text in scanned documents and images.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Python | Apache-2.0 | [v3.7.0](https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v3.7.0) signed | 93037 | ABBYY FineReader (partial) |
-| [Tesseract](https://github.com/tesseract-ocr/tesseract) | C++ | Apache-2.0 | [5.5.4](https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.4) signed | 77625 | ABBYY FineReader (partial) |
-| [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | Python | MPL-2.0 | [v17.14.2](https://github.com/ocrmypdf/OCRmyPDF/releases/tag/v17.14.2) | 35376 | ABBYY FineReader (partial), Adobe Acrobat (partial) |
-| [Surya](https://github.com/datalab-to/surya) | Python | Apache-2.0 | [v0.24.0](https://github.com/datalab-to/surya/releases/tag/v0.24.0) | 21612 | ABBYY FineReader (partial) |
-| [docTR](https://github.com/mindee/doctr) | Python | Apache-2.0 | [v1.1.0](https://github.com/mindee/doctr/releases/tag/v1.1.0) signed | 6436 | Tesseract (full), PaddleOCR (full), Amazon Textract (partial) |
+| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Python | Apache-2.0 | [v3.7.0](https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v3.7.0) signed | 93096 | ABBYY FineReader (partial) |
+| [Tesseract](https://github.com/tesseract-ocr/tesseract) | C++ | Apache-2.0 | [5.5.4](https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.4) signed | 77630 | ABBYY FineReader (partial) |
+| [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | Python | MPL-2.0 | [v17.14.2](https://github.com/ocrmypdf/OCRmyPDF/releases/tag/v17.14.2) | 35382 | ABBYY FineReader (partial), Adobe Acrobat (partial) |
+| [Surya](https://github.com/datalab-to/surya) | Python | Apache-2.0 | [v0.24.0](https://github.com/datalab-to/surya/releases/tag/v0.24.0) | 21616 | ABBYY FineReader (partial) |
+| [docTR](https://github.com/mindee/doctr) | Python | Apache-2.0 | [v1.1.0](https://github.com/mindee/doctr/releases/tag/v1.1.0) signed | 6441 | Tesseract (full), PaddleOCR (full), Amazon Textract (partial) |
 
 [All categories](../README.md#catalog)

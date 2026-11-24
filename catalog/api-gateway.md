@@ -4,13 +4,13 @@ Route, authenticate and rate-limit API traffic in front of services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.5](https://github.com/Kong/kong/releases/tag/3.9.5) signed | 44402 | Apigee (partial) |
-| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.21.0](https://github.com/apache/apisix/releases/tag/3.21.0) signed | 17360 | Kong Gateway (full) |
-| [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.16.0](https://github.com/TykTechnologies/tyk/releases/tag/v5.16.0) signed | 10898 | Kong Gateway (full) |
-| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.6](https://github.com/higress-group/higress/releases/tag/v2.2.6) | 9814 | Kong Gateway (partial) |
-| [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.2](https://github.com/apache/shenyu/releases/tag/v2.7.2) | 8925 | Kong Gateway (partial) |
+| [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.5](https://github.com/Kong/kong/releases/tag/3.9.5) signed | 44410 | Apigee (partial) |
+| [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.21.0](https://github.com/apache/apisix/releases/tag/3.21.0) signed | 17365 | Kong Gateway (full) |
+| [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.16.0](https://github.com/TykTechnologies/tyk/releases/tag/v5.16.0) signed | 10897 | Kong Gateway (full) |
+| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.6](https://github.com/higress-group/higress/releases/tag/v2.2.6) | 9829 | Kong Gateway (partial) |
+| [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.2](https://github.com/apache/shenyu/releases/tag/v2.7.2) | 8930 | Kong Gateway (partial) |
 | [Easegress](https://github.com/easegress-io/easegress) | Go | Apache-2.0 | [v2.11.0](https://github.com/easegress-io/easegress/releases/tag/v2.11.0) signed | 5870 | Kong Gateway (partial) |
-| [KrakenD](https://github.com/krakend/krakend-ce) | Go | Apache-2.0 | [v3.0.5](https://github.com/krakend/krakend-ce/releases/tag/v3.0.5) signed | 2703 | Kong Gateway (partial) |
+| [KrakenD](https://github.com/krakend/krakend-ce) | Go | Apache-2.0 | [v3.0.5](https://github.com/krakend/krakend-ce/releases/tag/v3.0.5) signed | 2705 | Kong Gateway (partial) |
 | [Fusio](https://github.com/apioo/fusio) | PHP | Apache-2.0 | [v7.2.1](https://github.com/apioo/fusio/releases/tag/v7.2.1) | 2132 | Apigee (partial) |
 | [WSO2 API Manager](https://github.com/wso2/product-apim) | Java | Apache-2.0 | [v4.7.0](https://github.com/wso2/product-apim/releases/tag/v4.7.0) | 1046 | Apigee (full) |
 | [Gravitee](https://github.com/gravitee-io/gravitee-api-management) | Java | Apache-2.0 | [4.13.6](https://github.com/gravitee-io/gravitee-api-management/releases/tag/4.13.6) | 473 | Apigee (full), Kong Gateway (full) |

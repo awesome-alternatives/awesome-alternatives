@@ -4,9 +4,9 @@ Compile, transform, prefix and minify stylesheets.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | TypeScript | MIT | [v4.3.5](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5) signed | 98710 | none |
-| [PostCSS](https://github.com/postcss/postcss) | TypeScript | MIT | [8.5.33](https://github.com/postcss/postcss/releases/tag/8.5.33) signed | 28979 | none |
-| [UnoCSS](https://github.com/unocss/unocss) | TypeScript | Other | [v66.13.0](https://github.com/unocss/unocss/releases/tag/v66.13.0) | 18994 | Tailwind CSS (partial) |
+| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | TypeScript | MIT | [v4.3.5](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5) signed | 98715 | none |
+| [PostCSS](https://github.com/postcss/postcss) | TypeScript | MIT | [8.5.33](https://github.com/postcss/postcss/releases/tag/8.5.33) signed | 28972 | none |
+| [UnoCSS](https://github.com/unocss/unocss) | TypeScript | Other | [v66.13.0](https://github.com/unocss/unocss/releases/tag/v66.13.0) | 18992 | Tailwind CSS (partial) |
 | [Less](https://github.com/less/less.js) | JavaScript | Apache-2.0 | [v4.9.1](https://github.com/less/less.js/releases/tag/v4.9.1) | 17001 | none |
 | [node-sass](https://github.com/sass/node-sass) archived | C++ | MIT | [v9.0.0](https://github.com/sass/node-sass/releases/tag/v9.0.0) signed | 8435 | none |
 | [Lightning CSS](https://github.com/parcel-bundler/lightningcss) | Rust | MPL-2.0 | [v1.33.0](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0) | 7732 | PostCSS (partial) |

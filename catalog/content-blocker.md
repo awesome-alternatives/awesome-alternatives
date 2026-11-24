@@ -4,10 +4,10 @@ Browser extensions that block ads, trackers and other unwanted content on web pa
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.77.0](https://github.com/gorhill/uBlock/releases/tag/1.77.0) signed | 69585 | Adblock Plus (full) |
+| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.77.0](https://github.com/gorhill/uBlock/releases/tag/1.77.0) signed | 69613 | Adblock Plus (full) |
 | [AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension) | TypeScript | GPL-3.0 | [v5.5.4](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/tag/v5.5.4) signed | 4582 | Adblock Plus (full) |
-| [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | JavaScript | GPL-3.0 | [2026.1122.1948](https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1122.1948) | 4072 | Adblock Plus (full), uBlock Origin (partial) |
-| [Privacy Badger](https://github.com/EFForg/privacybadger) | JavaScript | Other | [release-2026.9.15](https://github.com/EFForg/privacybadger/releases/tag/release-2026.9.15) signed | 3897 | Adblock Plus (partial) |
-| [Ghostery](https://github.com/ghostery/ghostery-extension) | JavaScript | GPL-3.0 | [v10.6.13](https://github.com/ghostery/ghostery-extension/releases/tag/v10.6.13) signed | 1770 | Adblock Plus (partial), Privacy Badger (partial) |
+| [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | JavaScript | GPL-3.0 | [2026.1122.1948](https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1122.1948) | 4075 | Adblock Plus (full), uBlock Origin (partial) |
+| [Privacy Badger](https://github.com/EFForg/privacybadger) | JavaScript | Other | [release-2026.9.15](https://github.com/EFForg/privacybadger/releases/tag/release-2026.9.15) signed | 3896 | Adblock Plus (partial) |
+| [Ghostery](https://github.com/ghostery/ghostery-extension) | JavaScript | GPL-3.0 | [v10.6.13](https://github.com/ghostery/ghostery-extension/releases/tag/v10.6.13) signed | 1771 | Adblock Plus (partial), Privacy Badger (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,10 +4,10 @@ Run a command again whenever the files it depends on change.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [nodemon](https://github.com/remy/nodemon) | JavaScript | MIT | [v3.1.14](https://github.com/remy/nodemon/releases/tag/v3.1.14) | 26666 | none |
-| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24149 | nodemon (partial) |
-| [Watchman](https://github.com/meta/watchman) | C++ | MIT | [v2026.11.16.00](https://github.com/meta/watchman/releases/tag/v2026.11.16.00) | 13771 | none |
-| [watchexec](https://github.com/watchexec/watchexec) | Rust | Apache-2.0 | [v2.8.0](https://github.com/watchexec/watchexec/releases/tag/v2.8.0) | 7321 | entr (full) |
+| [nodemon](https://github.com/remy/nodemon) | JavaScript | MIT | [v3.1.14](https://github.com/remy/nodemon/releases/tag/v3.1.14) | 26664 | none |
+| [Air](https://github.com/air-verse/air) | Go | GPL-3.0 | [v1.67.4](https://github.com/air-verse/air/releases/tag/v1.67.4) | 24151 | nodemon (partial) |
+| [Watchman](https://github.com/meta/watchman) | C++ | MIT | [v2026.11.23.00](https://github.com/meta/watchman/releases/tag/v2026.11.23.00) | 13774 | none |
+| [watchexec](https://github.com/watchexec/watchexec) | Rust | Apache-2.0 | [v2.8.0](https://github.com/watchexec/watchexec/releases/tag/v2.8.0) | 7326 | entr (full) |
 | [entr](https://github.com/eradman/entr) | C | Other | [5.9](https://github.com/eradman/entr/releases/tag/5.9) | 5731 | nodemon (partial) |
 
 [All categories](../README.md#catalog)

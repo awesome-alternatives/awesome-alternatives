@@ -4,23 +4,23 @@ General-purpose SQL databases.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [TiDB](https://github.com/pingcap/tidb) | Go | Apache-2.0 | [v7.5.8](https://github.com/pingcap/tidb/releases/tag/v7.5.8) signed | 40767 | MySQL (full), Google Cloud Spanner (full) |
-| [Turso Database](https://github.com/tursodatabase/turso) | Rust | MIT | [v0.8.4](https://github.com/tursodatabase/turso/releases/tag/v0.8.4) | 25317 | SQLite (partial) |
-| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.7.6](https://github.com/dolthub/dolt/releases/tag/v2.7.6) | 24963 | MySQL (full) |
-| [Neon](https://github.com/neondatabase/neon) | Rust | Apache-2.0 | [release-proxy-8853](https://github.com/neondatabase/neon/releases/tag/release-proxy-8853) | 23380 | Amazon RDS (partial) |
-| [PostgreSQL](https://github.com/postgres/postgres) | C | Other | [REL_19_0](https://github.com/postgres/postgres/releases/tag/REL_19_0) | 22909 | MySQL (full), Oracle Database (full), Microsoft SQL Server (partial) |
-| [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.5](https://github.com/vitessio/vitess/releases/tag/v24.0.5) signed | 21428 | PlanetScale (partial), Google Cloud Spanner (partial) |
-| [rqlite](https://github.com/rqlite/rqlite) | Go | MIT | [v10.7.4](https://github.com/rqlite/rqlite/releases/tag/v10.7.4) signed | 17964 | SQLite (partial) |
-| [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17358 | SQLite (drop-in) |
-| [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-pgaudit@0.0.10](https://github.com/electric-sql/pglite/releases/tag/%40electric-sql/pglite-pgaudit%400.0.10) | 16357 | SQLite (partial) |
-| [MySQL](https://github.com/mysql/mysql-server) | C++ | Other | [mysql-26.10.0](https://github.com/mysql/mysql-server/releases/tag/mysql-26.10.0) | 12522 | Amazon RDS (partial), Microsoft SQL Server (partial) |
-| [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.54.1](https://github.com/sqlite/sqlite/releases/tag/version-3.54.1) | 11101 | none |
-| [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.6.0_CE_BP1](https://github.com/oceanbase/oceanbase/releases/tag/v4.6.0_CE_BP1) | 10427 | MySQL (full) |
-| [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg) | Go | Apache-2.0 | [v1.30.2](https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.2) signed | 9647 | Amazon RDS (partial) |
+| [TiDB](https://github.com/pingcap/tidb) | Go | Apache-2.0 | [v7.5.8](https://github.com/pingcap/tidb/releases/tag/v7.5.8) signed | 40766 | MySQL (full), Google Cloud Spanner (full) |
+| [Turso Database](https://github.com/tursodatabase/turso) | Rust | MIT | [v0.8.4](https://github.com/tursodatabase/turso/releases/tag/v0.8.4) | 25333 | SQLite (partial) |
+| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.7.6](https://github.com/dolthub/dolt/releases/tag/v2.7.6) | 24971 | MySQL (full) |
+| [Neon](https://github.com/neondatabase/neon) | Rust | Apache-2.0 | [release-proxy-8853](https://github.com/neondatabase/neon/releases/tag/release-proxy-8853) | 23388 | Amazon RDS (partial) |
+| [PostgreSQL](https://github.com/postgres/postgres) | C | Other | [REL_19_0](https://github.com/postgres/postgres/releases/tag/REL_19_0) | 22917 | MySQL (full), Oracle Database (full), Microsoft SQL Server (partial) |
+| [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.5](https://github.com/vitessio/vitess/releases/tag/v24.0.5) signed | 21429 | PlanetScale (partial), Google Cloud Spanner (partial) |
+| [rqlite](https://github.com/rqlite/rqlite) | Go | MIT | [v10.7.5](https://github.com/rqlite/rqlite/releases/tag/v10.7.5) signed | 17967 | SQLite (partial) |
+| [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17365 | SQLite (drop-in) |
+| [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-plpgsql-check@0.1.0](https://github.com/electric-sql/pglite/releases/tag/%40electric-sql/pglite-plpgsql-check%400.1.0) | 16362 | SQLite (partial) |
+| [MySQL](https://github.com/mysql/mysql-server) | C++ | Other | [mysql-26.10.0](https://github.com/mysql/mysql-server/releases/tag/mysql-26.10.0) | 12525 | Amazon RDS (partial), Microsoft SQL Server (partial) |
+| [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.54.1](https://github.com/sqlite/sqlite/releases/tag/version-3.54.1) | 11116 | none |
+| [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.6.0_CE_BP1](https://github.com/oceanbase/oceanbase/releases/tag/v4.6.0_CE_BP1) | 10431 | MySQL (full) |
+| [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg) | Go | Apache-2.0 | [v1.30.2](https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.2) signed | 9654 | Amazon RDS (partial) |
 | [MariaDB](https://github.com/MariaDB/server) | C++ | GPL-2.0 | [mariadb-13.1.2](https://github.com/MariaDB/server/releases/tag/mariadb-13.1.2) | 8648 | MySQL (full), Oracle Database (partial), Microsoft SQL Server (partial) |
-| [Postgres Operator](https://github.com/zalando/postgres-operator) | Go | MIT | [v2.0.3](https://github.com/zalando/postgres-operator/releases/tag/v2.0.3) signed | 5272 | Amazon RDS (partial) |
-| [H2 Database Engine](https://github.com/h2database/h2database) | Java | Other | [version-2.5.252](https://github.com/h2database/h2database/releases/tag/version-2.5.252) signed | 4644 | SQLite (partial) |
-| [Crunchy Postgres for Kubernetes](https://github.com/CrunchyData/postgres-operator) | Go | Apache-2.0 | [v6.0.2](https://github.com/CrunchyData/postgres-operator/releases/tag/v6.0.2) | 4458 | Amazon RDS (partial) |
+| [Postgres Operator](https://github.com/zalando/postgres-operator) | Go | MIT | [v2.0.3](https://github.com/zalando/postgres-operator/releases/tag/v2.0.3) signed | 5274 | Amazon RDS (partial) |
+| [H2 Database Engine](https://github.com/h2database/h2database) | Java | Other | [version-2.5.252](https://github.com/h2database/h2database/releases/tag/version-2.5.252) signed | 4645 | SQLite (partial) |
+| [Crunchy Postgres for Kubernetes](https://github.com/CrunchyData/postgres-operator) | Go | Apache-2.0 | [v6.0.2](https://github.com/CrunchyData/postgres-operator/releases/tag/v6.0.2) | 4459 | Amazon RDS (partial) |
 | [OrioleDB](https://github.com/orioledb/orioledb) | C | Apache-2.0 | [v1.10.3](https://github.com/orioledb/orioledb/releases/tag/v1.10.3) | 4323 | none |
 | [KubeBlocks](https://github.com/apecloud/kubeblocks) | Go | AGPL-3.0 | [v1.0.2](https://github.com/apecloud/kubeblocks/releases/tag/v1.0.2) signed | 3176 | Amazon RDS (partial) |
 | [Firebird](https://github.com/FirebirdSQL/firebird) | C++ | none | [v5.0.4](https://github.com/FirebirdSQL/firebird/releases/tag/v5.0.4) | 1487 | Microsoft SQL Server (partial) |
