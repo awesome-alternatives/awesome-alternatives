@@ -98327,27 +98327,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-24T10:12:36Z",
+        "pushedAt": "2026-11-24T13:11:58Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-25T10:21:28.188Z"
+        "since": "2026-10-25T13:24:10.075Z"
       },
       "starHistory": {
         "from": "2026-10-24",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.37.2",
-        "publishedAt": "2026-11-24T10:20:52Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.2",
+        "tag": "v7.37.3",
+        "publishedAt": "2026-11-24T13:23:28Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.3",
         "source": "release",
         "signed": true,
-        "tagOid": "13a9635e0d882e2d0fd83b3f60bf5c43407e2a01"
+        "tagOid": "04a522f3b67f2b4aaadac6abd534ccb9db3f431e"
       },
       "releases": [
+        {
+          "tag": "v7.37.3",
+          "name": "fix(supply-chain): certify json5 1.3.8 and refresh anyhow publisher (#1488)",
+          "publishedAt": "2026-11-24T13:23:28Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.3",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.28",
+          "name": "Dependency update: ferrflow",
+          "publishedAt": "2026-11-24T13:14:27Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.28",
+          "prerelease": false
+        },
         {
           "tag": "api@v2026.11.10",
           "name": "fix(deps): update gix (#1479)",
@@ -98367,20 +98381,6 @@
           "name": "Dependency update: ferrflow",
           "publishedAt": "2026-11-24T10:10:10Z",
           "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.27",
-          "prerelease": false
-        },
-        {
-          "tag": "api@v2026.11.9",
-          "name": "fix(api): accept only RS256 on GitHub Actions OIDC tokens (#1480)",
-          "publishedAt": "2026-11-24T09:43:19Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/api%40v2026.11.9",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.26",
-          "name": "feat(site): use the animated ui-ng copy icon on the landing copy buttons (#1478)",
-          "publishedAt": "2026-11-24T08:37:59Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.26",
           "prerelease": false
         }
       ],

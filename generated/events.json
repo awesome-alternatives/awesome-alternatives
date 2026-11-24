@@ -8374,7 +8374,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v13.11","to":"v13.13"},
   {"type":"released","slug":"whitebophir","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v2.18.35","to":"v2.18.36"},
   {"type":"released","slug":"xpipe","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"24.10","to":"24.11"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-15T11:10:28.103Z","commit":"000b6e27d28043473884ca529519ffb8113648d4","from":"v7.36.3","to":"v7.36.4"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T14:46:38.432Z","commit":"240aea984ed6342f6786e0d8de03c252a8dc4262","from":"v7.36.4","to":"v7.36.5"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T17:38:54.577Z","commit":"6d94acb0355989d1d9cec9f9c6be95acb0bedf46","from":"v7.36.5","to":"v7.36.6"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T19:28:09.402Z","commit":"ec710878cc67dfae6dfc47158a6a12299ddb05bc","from":"v7.36.6","to":"v7.36.7"},
@@ -9822,5 +9821,6 @@
   {"type":"released","slug":"yylo","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"cli-v0.2.1-rc.1","to":"v0.2.15"},
   {"type":"released","slug":"zstd","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"v1.5.7","to":"v1.6.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-24T08:07:06.265Z","commit":null,"from":"v1.26.56","to":"v1.26.57"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-24T10:21:52.193Z","commit":null,"from":"v7.37.1","to":"v7.37.2"}
+  {"type":"released","slug":"ferrflow","at":"2026-11-24T10:21:52.193Z","commit":null,"from":"v7.37.1","to":"v7.37.2"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-24T13:24:31.110Z","commit":null,"from":"v7.37.2","to":"v7.37.3"}
 ]
