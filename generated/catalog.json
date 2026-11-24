@@ -282725,27 +282725,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-23T16:28:20Z",
+        "pushedAt": "2026-11-24T18:01:42Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-25T05:17:26.160Z"
+        "since": "2026-10-25T18:02:21.733Z"
       },
       "starHistory": {
         "from": "2026-10-24",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.9",
-        "publishedAt": "2026-11-19T20:41:49Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.9",
+        "tag": "v0.56.10",
+        "publishedAt": "2026-11-24T18:01:40Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.10",
         "source": "release",
         "signed": false,
-        "tagOid": "cb0ee8f2f562557d6371aaf7e6d6a48320aff43f"
+        "tagOid": "af18a1f51e1cc8ab8eaad46ad4ca0de782644929"
       },
       "releases": [
+        {
+          "tag": "v0.56.10",
+          "name": "fix(deps): update rust crate gpui-kit to 0.11.0 (#498)",
+          "publishedAt": "2026-11-24T18:01:40Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.10",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.9",
           "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.1 (#479)",
@@ -282773,33 +282780,13 @@
           "publishedAt": "2026-11-17T12:02:37Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.6",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.5",
-          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.5.1 (#465)",
-          "publishedAt": "2026-11-16T08:21:29Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.5",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
