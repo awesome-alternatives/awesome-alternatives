@@ -8330,7 +8330,6 @@
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91"},
   {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91","from":"v1.874.0","to":"v1.875.0"},
   {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":"86330a0241598bfb43a9a0fc0bc5fd2444494bc6","from":"v0.56.3","to":"v0.56.4"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-14T16:58:16.440Z","commit":"60722a2f990dd4b0f2a681581f4916613b623bae","from":"v7.36.2","to":"v7.36.3"},
   {"type":"released","slug":"lfsx","at":"2026-11-14T21:14:19.006Z","commit":"555964ea773283ec45595c31cac6d9fd4d018fc9","from":"site@2026.11.11","to":"site@2026.11.12"},
   {"type":"released","slug":"agent-qa","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.3.8","to":"v0.3.9"},
   {"type":"released","slug":"bigcapital","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.25.45","to":"v0.25.46"},
@@ -9822,5 +9821,6 @@
   {"type":"released","slug":"yt-dlp","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"2026.10.26","to":"2026.11.23"},
   {"type":"released","slug":"yylo","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"cli-v0.2.1-rc.1","to":"v0.2.15"},
   {"type":"released","slug":"zstd","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"v1.5.7","to":"v1.6.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-24T08:07:06.265Z","commit":null,"from":"v1.26.56","to":"v1.26.57"}
+  {"type":"released","slug":"lfsx","at":"2026-11-24T08:07:06.265Z","commit":null,"from":"v1.26.56","to":"v1.26.57"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-24T10:21:52.193Z","commit":null,"from":"v7.37.1","to":"v7.37.2"}
 ]

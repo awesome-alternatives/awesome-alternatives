@@ -98327,60 +98327,60 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-03-24T12:17:15Z",
-        "pushedAt": "2026-11-23T22:07:23Z",
+        "pushedAt": "2026-11-24T10:12:36Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-25T05:17:26.160Z"
+        "since": "2026-10-25T10:21:28.188Z"
       },
       "starHistory": {
         "from": "2026-10-24",
         "stars": [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
       },
       "release": {
-        "tag": "v7.37.1",
-        "publishedAt": "2026-11-23T18:59:18Z",
-        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.1",
+        "tag": "v7.37.2",
+        "publishedAt": "2026-11-24T10:20:52Z",
+        "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.2",
         "source": "release",
         "signed": true,
-        "tagOid": "0a654ae1398d6779f54fb9cc6ca7d7a57f5bf94f"
+        "tagOid": "13a9635e0d882e2d0fd83b3f60bf5c43407e2a01"
       },
       "releases": [
         {
-          "tag": "v7.37.1",
-          "name": "fix(deps): bump cookie and url to patched versions (#1474)",
-          "publishedAt": "2026-11-23T18:59:18Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.1",
+          "tag": "api@v2026.11.10",
+          "name": "fix(deps): update gix (#1479)",
+          "publishedAt": "2026-11-24T10:11:15Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/api%40v2026.11.10",
           "prerelease": false
         },
         {
-          "tag": "site@v2026.11.25",
+          "tag": "v7.37.2",
+          "name": "fix(deps): update gix (#1479)",
+          "publishedAt": "2026-11-24T10:20:52Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/v7.37.2",
+          "prerelease": false
+        },
+        {
+          "tag": "site@v2026.11.27",
           "name": "Dependency update: ferrflow",
-          "publishedAt": "2026-11-23T18:48:38Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.25",
+          "publishedAt": "2026-11-24T10:10:10Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.27",
           "prerelease": false
         },
         {
-          "tag": "site@v2026.11.24",
-          "name": null,
-          "publishedAt": "2026-11-23T16:26:20Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.24",
+          "tag": "api@v2026.11.9",
+          "name": "fix(api): accept only RS256 on GitHub Actions OIDC tokens (#1480)",
+          "publishedAt": "2026-11-24T09:43:19Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/api%40v2026.11.9",
           "prerelease": false
         },
         {
-          "tag": "site@v2026.11.23",
-          "name": "fix(deps): update ferrlabs npm packages (#1471)",
-          "publishedAt": "2026-11-23T04:08:19Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.23",
-          "prerelease": false
-        },
-        {
-          "tag": "site@v2026.11.22",
-          "name": null,
-          "publishedAt": "2026-11-22T04:11:41Z",
-          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.22",
+          "tag": "site@v2026.11.26",
+          "name": "feat(site): use the animated ui-ng copy icon on the landing copy buttons (#1478)",
+          "publishedAt": "2026-11-24T08:37:59Z",
+          "url": "https://github.com/FerrLabs/FerrFlow/releases/tag/site%40v2026.11.26",
           "prerelease": false
         }
       ],
