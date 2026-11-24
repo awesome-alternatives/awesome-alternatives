@@ -99,12 +99,9 @@ export async function saveWindows(sql: Sql, windows: ReadonlyMap<string, CommitW
   }
 }
 
-export async function loadWindows(url: string): Promise<Map<string, CommitWindow>> {
+export async function loadWindows(url: string, open: OpenDatabase = withDatabase): Promise<Map<string, CommitWindow>> {
   try {
-    const rows = await withDatabase(url, async (sql) => {
-      await applySchema(sql);
-      return sql<WindowRow[]>`select repository, head, walked_at, complete, commits from contributor_windows`;
-    });
+    const rows = await open(url, (sql) => sql<WindowRow[]>`select repository, head, walked_at, complete, commits from contributor_windows`);
     console.log(`read the last commit walk of ${rows.length} repositories`);
     return new Map(rows.map(windowOf));
   } catch (error) {
@@ -116,6 +113,8 @@ export async function loadWindows(url: string): Promise<Map<string, CommitWindow
 export async function refreshDaily(sql: Sql): Promise<void> {
   await sql`call refresh_continuous_aggregate('tool_facts_daily', null, time_bucket(interval '1 day', now()))`;
 }
+
+export type OpenDatabase = <T>(url: string, run: (sql: Sql) => Promise<T>) => Promise<T>;
 
 export async function withDatabase<T>(url: string, run: (sql: Sql) => Promise<T>): Promise<T> {
   const sql = postgres(url, { max: 1, onnotice: () => {} });
@@ -130,10 +129,10 @@ export async function recordFacts(
   url: string,
   rows: readonly ToolFactsRow[],
   windows: ReadonlyMap<string, CommitWindow> = new Map(),
+  open: OpenDatabase = withDatabase,
 ): Promise<boolean> {
   try {
-    const inserted = await withDatabase(url, async (sql) => {
-      await applySchema(sql);
+    const inserted = await open(url, async (sql) => {
       await saveWindows(sql, windows);
       return insertFacts(sql, rows);
     });

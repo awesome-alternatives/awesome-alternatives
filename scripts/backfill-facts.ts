@@ -1,4 +1,4 @@
-import { applySchema, insertFacts, refreshDaily, withDatabase } from "./lib/facts-db.ts";
+import { insertFacts, refreshDaily, withDatabase } from "./lib/facts-db.ts";
 import { catalogLogArgs, dailyCatalogs } from "./lib/history.ts";
 import { snapshotRows } from "./lib/tool-facts.ts";
 
@@ -10,7 +10,6 @@ if (!databaseUrl) {
 
 const root = process.cwd();
 await withDatabase(databaseUrl, async (sql) => {
-  await applySchema(sql);
   let days = 0;
   let rows = 0;
   let inserted = 0;
