@@ -282725,27 +282725,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-24T18:01:42Z",
+        "pushedAt": "2026-11-24T20:28:35Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-25T18:02:21.733Z"
+        "since": "2026-10-25T20:29:24.559Z"
       },
       "starHistory": {
         "from": "2026-10-24",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.56.10",
-        "publishedAt": "2026-11-24T18:01:40Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.10",
+        "tag": "v0.57.0",
+        "publishedAt": "2026-11-24T20:28:37Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.0",
         "source": "release",
         "signed": false,
-        "tagOid": "af18a1f51e1cc8ab8eaad46ad4ca0de782644929"
+        "tagOid": "40e86654c699d24df8e649cbdabed3ccfb8ffff0"
       },
       "releases": [
+        {
+          "tag": "v0.57.0",
+          "name": "feat(api): add a migrate command and stop migrating at startup (#499)",
+          "publishedAt": "2026-11-24T20:28:37Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.56.10",
           "name": "fix(deps): update rust crate gpui-kit to 0.11.0 (#498)",
@@ -282772,13 +282779,6 @@
           "name": "fix(deps): update rust crate jsonwebtoken to v12 (#458)",
           "publishedAt": "2026-11-18T10:00:39Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.7",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.56.6",
-          "name": "fix(deps): update rust crate gpui-kit to 0.10.0 (#469)",
-          "publishedAt": "2026-11-17T12:02:37Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.6",
           "prerelease": false
         }
       ],
