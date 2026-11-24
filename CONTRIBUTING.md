@@ -616,14 +616,32 @@ be, or when the owners cannot be. Each phase logs its duration, as in `phase his
 
 With `DATABASE_URL` set, `pnpm refresh` reads the last commit walks from the
 `contributor_windows` table before it starts, and once the catalog is published writes one row per
-tool to the `tool_facts` table in TimescaleDB and the new walks to `contributor_windows`. It
-creates the schema in [`scripts/db/schema.sql`](scripts/db/schema.sql) on the way. A database it
-cannot read only means every history is walked in full. Without it, the refresh does exactly
-what it does in Actions. To seed the table from every day in the catalog's git history, which is
-safe to run again:
+tool to the `tool_facts` table in TimescaleDB and the new walks to `contributor_windows`. It never
+changes the schema: that is a separate step, run first with a role that may create objects.
 
 ```bash
-DATABASE_URL=postgres://... pnpm backfill-facts
+DATABASE_URL=postgres://owner@... pnpm migrate
+```
+
+`pnpm migrate` applies [`scripts/db/schema.sql`](scripts/db/schema.sql), including the `SELECT` grant
+on `tool_facts_daily` to `awesome_alternatives_api` when that role exists. It is safe to run again
+and on an empty database. Run it before the first refresh and after any change to the schema file.
+A refresh against a database that was never migrated finds no tables: it walks every history in
+full and exits with the record-failed code (75) once the catalog is published.
+
+The role the refresh connects as needs only:
+
+```sql
+GRANT SELECT, INSERT, UPDATE ON tool_facts, contributor_windows TO awesome_alternatives_refresh;
+```
+
+The tables have no sequences. `pnpm backfill-facts` also refreshes the `tool_facts_daily` aggregate,
+which Timescale only allows its owner to do, so run it with the owner role. Without `DATABASE_URL`,
+the refresh does exactly what it does in Actions. To seed the table from every day in the catalog's
+git history, which is safe to run again:
+
+```bash
+DATABASE_URL=postgres://owner@... pnpm backfill-facts
 ```
 
 The image built from [`scripts/runner/Dockerfile`](scripts/runner/Dockerfile) runs the nightly
@@ -634,7 +652,9 @@ private app that is installed on this repository alone (`WRITE_APP_ID`, `WRITE_A
 same app as the API's dispatch app; `APP_ID` is used until they are set), with Contents: write on
 this repository alone, and hands it to the push. The refresh process itself never sees the write key. Commits are authored
 as `awesome-alternatives-refresh[bot]`, the write app's bot user, here and in GitHub Actions. Given
-`backfill` as its argument, it clones the same way and runs the backfill instead.
+`backfill` as its argument, it clones the same way and runs the backfill instead. Given `migrate`,
+it runs the migration and nothing else, needing only `DATABASE_URL`, so a Job or an init
+container can apply the schema with the owner role before the refresh starts.
 
 ### Gone and renamed repositories
 

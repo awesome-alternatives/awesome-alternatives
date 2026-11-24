@@ -8,6 +8,7 @@
   },
   "scripts": {
     "validate": "node scripts/validate.ts",
+    "migrate": "node scripts/migrate.ts",
     "refresh": "node scripts/refresh.ts",
     "backfill-facts": "node scripts/backfill-facts.ts",
     "backfill-events": "node scripts/backfill-events.ts",

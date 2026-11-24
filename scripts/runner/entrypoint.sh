@@ -3,12 +3,16 @@ set -euo pipefail
 
 command=${1:-refresh}
 case "$command" in
-  refresh | backfill) ;;
+  refresh | backfill | migrate) ;;
   *)
-    echo "usage: entrypoint.sh [refresh|backfill]" >&2
+    echo "usage: entrypoint.sh [refresh|backfill|migrate]" >&2
     exit 2
     ;;
 esac
+
+if [ "$command" = migrate ]; then
+  exec node "$(cd "$(dirname "$0")/../.." && pwd)/scripts/migrate.ts"
+fi
 
 : "${APP_ID:?APP_ID is required}"
 : "${APP_PRIVATE_KEY:?APP_PRIVATE_KEY is required}"
