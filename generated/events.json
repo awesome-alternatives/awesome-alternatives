@@ -7806,7 +7806,6 @@
   {"type":"released","slug":"zensical","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.1.0","to":"v0.1.1"},
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"10.0.8","to":"10.0.9"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v11.26.1","to":"v11.26.2"},
-  {"type":"released","slug":"lfsx","at":"2026-11-11T10:36:22.766Z","commit":"ca470240f00bd599805459cdfbeae24811ea2053","from":"site@2026.11.6","to":"site@2026.11.7"},
   {"type":"released","slug":"stashden","at":"2026-11-11T10:38:22.518Z","commit":"a8bb68f8825fa985d2390e68190243f531373316","from":"v0.55.2","to":"v0.56.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-11T21:11:34.604Z","commit":"04c98f807c08c5e13102013fbb464244325a1f29","from":"site@2026.11.7","to":"site@2026.11.8"},
   {"type":"released","slug":"stashden","at":"2026-11-11T22:25:54.530Z","commit":"4eab3b4ff82126210bac183ad7ba98a2e4a61bbc","from":"v0.56.0","to":"v0.56.1"},
@@ -9822,5 +9821,6 @@
   {"type":"released","slug":"youki","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"v0.7.0","to":"v0.8.0"},
   {"type":"released","slug":"yt-dlp","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"2026.10.26","to":"2026.11.23"},
   {"type":"released","slug":"yylo","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"cli-v0.2.1-rc.1","to":"v0.2.15"},
-  {"type":"released","slug":"zstd","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"v1.5.7","to":"v1.6.0"}
+  {"type":"released","slug":"zstd","at":"2026-11-24T05:17:26.160Z","commit":null,"from":"v1.5.7","to":"v1.6.0"},
+  {"type":"released","slug":"lfsx","at":"2026-11-24T08:07:06.265Z","commit":null,"from":"v1.26.56","to":"v1.26.57"}
 ]
