@@ -4,11 +4,11 @@ Turn a machine at home into a server with an app store, storage management and a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37692 | Unraid (partial), Synology DiskStation Manager (partial) |
-| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.1](https://github.com/getumbrel/umbrel/releases/tag/2.0.1) | 12612 | Unraid (partial) |
-| [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.12.0](https://github.com/runtipi/runtipi/releases/tag/v4.12.0) signed | 9747 | Unraid (partial) |
-| [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7106 | Synology DiskStation Manager (partial), Unraid (partial) |
-| [Cosmos](https://github.com/azukaar/Cosmos-Server) | Go | Other | [v0.24.0](https://github.com/azukaar/Cosmos-Server/releases/tag/v0.24.0) | 6204 | Unraid (partial) |
-| [YunoHost](https://github.com/YunoHost/yunohost) | Python | AGPL-3.0 | [debian/13.0.11](https://github.com/YunoHost/yunohost/releases/tag/debian/13.0.11) signed | 2998 | Synology DiskStation Manager (partial) |
+| [CasaOS](https://github.com/IceWhaleTech/CasaOS) | Go | Apache-2.0 | [v0.4.15](https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15) signed | 37699 | Unraid (partial), Synology DiskStation Manager (partial) |
+| [umbrelOS](https://github.com/getumbrel/umbrel) | TypeScript | Other | [2.0.1](https://github.com/getumbrel/umbrel/releases/tag/2.0.1) | 12619 | Unraid (partial) |
+| [Runtipi](https://github.com/runtipi/runtipi) | TypeScript | GPL-3.0 | [v4.12.0](https://github.com/runtipi/runtipi/releases/tag/v4.12.0) signed | 9751 | Unraid (partial) |
+| [openmediavault](https://github.com/openmediavault/openmediavault) | PHP | Other | none | 7114 | Synology DiskStation Manager (partial), Unraid (partial) |
+| [Cosmos](https://github.com/azukaar/Cosmos-Server) | Go | Other | [v0.24.0](https://github.com/azukaar/Cosmos-Server/releases/tag/v0.24.0) | 6206 | Unraid (partial) |
+| [YunoHost](https://github.com/YunoHost/yunohost) | Python | AGPL-3.0 | [debian/13.0.11](https://github.com/YunoHost/yunohost/releases/tag/debian/13.0.11) signed | 3000 | Synology DiskStation Manager (partial) |
 
 [All categories](../README.md#catalog)

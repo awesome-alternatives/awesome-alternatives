@@ -4,16 +4,16 @@ Mailing lists, campaigns and subscriber management.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ghost](https://github.com/TryGhost/Ghost) | TypeScript | MIT | [v6.78.0](https://github.com/TryGhost/Ghost/releases/tag/v6.78.0) | 55891 | Substack (full), Mailchimp (partial), Squarespace (partial), Wix (partial) |
-| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24439 | Mailchimp (partial) |
-| [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 16466 | Mailchimp (partial) |
-| [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.2](https://github.com/mautic/mautic/releases/tag/7.2.2) signed | 11099 | Mailchimp (full) |
-| [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.18.0](https://github.com/useplunk/plunk/releases/tag/v0.18.0) signed | 5631 | Mailchimp (partial), SendGrid (partial) |
-| [WriteFreely](https://github.com/writefreely/writefreely) | Go | AGPL-3.0 | [v0.17.3](https://github.com/writefreely/writefreely/releases/tag/v0.17.3) | 5298 | Substack (partial) |
-| [useSend](https://github.com/usesend/useSend) | TypeScript | AGPL-3.0 | [v1.10.4](https://github.com/usesend/useSend/releases/tag/v1.10.4) signed | 4828 | SendGrid (full) |
-| [Notifuse](https://github.com/Notifuse/notifuse) | Go | Other | [v44.0](https://github.com/Notifuse/notifuse/releases/tag/v44.0) | 2306 | Mailchimp (partial) |
+| [Ghost](https://github.com/TryGhost/Ghost) | TypeScript | MIT | [v6.79.0](https://github.com/TryGhost/Ghost/releases/tag/v6.79.0) | 55902 | Substack (full), Mailchimp (partial), Squarespace (partial), Wix (partial) |
+| [listmonk](https://github.com/knadh/listmonk) | Go | AGPL-3.0 | [v7.0.0-beta.2](https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.2) | 24449 | Mailchimp (partial) |
+| [BillionMail](https://github.com/Billionmail/BillionMail) | Go | AGPL-3.0 | [v4.9](https://github.com/Billionmail/BillionMail/releases/tag/v4.9) | 16474 | Mailchimp (partial) |
+| [Mautic](https://github.com/mautic/mautic) | PHP | Other | [7.2.2](https://github.com/mautic/mautic/releases/tag/7.2.2) signed | 11106 | Mailchimp (full) |
+| [Plunk](https://github.com/useplunk/plunk) | TypeScript | AGPL-3.0 | [v0.18.0](https://github.com/useplunk/plunk/releases/tag/v0.18.0) signed | 5633 | Mailchimp (partial), SendGrid (partial) |
+| [WriteFreely](https://github.com/writefreely/writefreely) | Go | AGPL-3.0 | [v0.17.3](https://github.com/writefreely/writefreely/releases/tag/v0.17.3) | 5299 | Substack (partial) |
+| [useSend](https://github.com/usesend/useSend) | TypeScript | AGPL-3.0 | [v1.10.4](https://github.com/usesend/useSend/releases/tag/v1.10.4) signed | 4829 | SendGrid (full) |
+| [Notifuse](https://github.com/Notifuse/notifuse) | Go | Other | [v44.0](https://github.com/Notifuse/notifuse/releases/tag/v44.0) | 2307 | Mailchimp (partial) |
 | [Keila](https://github.com/pentacent/keila) | Elixir | AGPL-3.0 | [0.40.2](https://github.com/pentacent/keila/releases/tag/0.40.2) | 2269 | Substack (partial) |
-| [phpList](https://github.com/phpList/phplist3) | PHP | AGPL-3.0 | [v3.6.17](https://github.com/phpList/phplist3/releases/tag/v3.6.17) | 881 | Mailchimp (partial) |
+| [phpList](https://github.com/phpList/phplist3) | PHP | AGPL-3.0 | [v3.6.17](https://github.com/phpList/phplist3/releases/tag/v3.6.17) | 882 | Mailchimp (partial) |
 | [Sympa](https://github.com/sympa-community/sympa) | Perl | GPL-2.0 | [6.2.80](https://github.com/sympa-community/sympa/releases/tag/6.2.80) | 318 | Google Groups (partial), Mailchimp (partial) |
 
 [All categories](../README.md#catalog)

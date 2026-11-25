@@ -5,9 +5,9 @@ Define, run and track machine learning pipelines from data preparation to deploy
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Kedro](https://github.com/kedro-org/kedro) | Python | Other | [1.8.0](https://github.com/kedro-org/kedro/releases/tag/1.8.0) signed | 11060 | Amazon SageMaker (partial), Vertex AI (partial) |
-| [Metaflow](https://github.com/Netflix/metaflow) | Python | Apache-2.0 | [2.19.41](https://github.com/Netflix/metaflow/releases/tag/2.19.41) signed | 10358 | Amazon SageMaker (partial) |
+| [Metaflow](https://github.com/Netflix/metaflow) | Python | Apache-2.0 | [2.19.41](https://github.com/Netflix/metaflow/releases/tag/2.19.41) signed | 10362 | Amazon SageMaker (partial) |
 | [ZenML](https://github.com/zenml-io/zenml) | Python | Apache-2.0 | [0.99.0](https://github.com/zenml-io/zenml/releases/tag/0.99.0) signed | 5638 | Amazon SageMaker (partial), Vertex AI (partial) |
-| [Kubeflow Pipelines](https://github.com/kubeflow/pipelines) | Python | Apache-2.0 | [2.18.2](https://github.com/kubeflow/pipelines/releases/tag/2.18.2) | 4269 | Vertex AI (partial), Amazon SageMaker (partial) |
+| [Kubeflow Pipelines](https://github.com/kubeflow/pipelines) | Python | Apache-2.0 | [2.18.2](https://github.com/kubeflow/pipelines/releases/tag/2.18.2) | 4270 | Vertex AI (partial), Amazon SageMaker (partial) |
 | [MLRun](https://github.com/mlrun/mlrun) | Python | Apache-2.0 | [v1.13.0](https://github.com/mlrun/mlrun/releases/tag/v1.13.0) | 1704 | Amazon SageMaker (partial), Vertex AI (partial) |
 
 [All categories](../README.md#catalog)

@@ -4,14 +4,14 @@ Log workouts, activities and body measurements, and follow progress over time.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Workout.cool](https://github.com/Snouzy/workout-cool) | TypeScript | MIT | [v1.3.2](https://github.com/Snouzy/workout-cool/releases/tag/v1.3.2) signed | 8706 | Hevy (partial) |
-| [wger](https://github.com/wger-project/wger) | Python | AGPL-3.0 | [2.7](https://github.com/wger-project/wger/releases/tag/2.7) | 7313 | Hevy (partial), MyFitnessPal (partial) |
-| [SparkyFitness](https://github.com/CodeWithCJ/SparkyFitness) | TypeScript | Other | [v1.12.1](https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.1) signed | 6859 | MyFitnessPal (full) |
-| [OpenNutriTracker](https://github.com/simonoppowa/OpenNutriTracker) | Dart | GPL-3.0 | [v2.7.0](https://github.com/simonoppowa/OpenNutriTracker/releases/tag/v2.7.0) signed | 3023 | MyFitnessPal (partial) |
+| [Workout.cool](https://github.com/Snouzy/workout-cool) | TypeScript | MIT | [v1.3.2](https://github.com/Snouzy/workout-cool/releases/tag/v1.3.2) signed | 8707 | Hevy (partial) |
+| [wger](https://github.com/wger-project/wger) | Python | AGPL-3.0 | [2.7](https://github.com/wger-project/wger/releases/tag/2.7) | 7317 | Hevy (partial), MyFitnessPal (partial) |
+| [SparkyFitness](https://github.com/CodeWithCJ/SparkyFitness) | TypeScript | Other | [v1.12.1](https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.1) signed | 6868 | MyFitnessPal (full) |
+| [OpenNutriTracker](https://github.com/simonoppowa/OpenNutriTracker) | Dart | GPL-3.0 | [v2.7.0](https://github.com/simonoppowa/OpenNutriTracker/releases/tag/v2.7.0) signed | 3029 | MyFitnessPal (partial) |
 | [openScale](https://github.com/oliexdev/openScale) | Kotlin | GPL-3.0 | [v3.1.4](https://github.com/oliexdev/openScale/releases/tag/v3.1.4) | 2682 | none |
-| [Endurain](https://github.com/endurain-project/endurain) | Python | AGPL-3.0 | [v0.20.2](https://github.com/endurain-project/endurain/releases/tag/v0.20.2) signed | 2414 | Strava (partial) |
+| [Endurain](https://github.com/endurain-project/endurain) | Python | AGPL-3.0 | [v0.21.0](https://github.com/endurain-project/endurain/releases/tag/v0.21.0) signed | 2417 | Strava (partial) |
 | [Workout Tracker](https://github.com/jovandeginste/workout-tracker) | Go | Other | [v2.10.1](https://github.com/jovandeginste/workout-tracker/releases/tag/v2.10.1) signed | 1253 | Strava (partial) |
 | [FitTrackee](https://github.com/SamR1/FitTrackee) | Python | AGPL-3.0 | [v1.3.8](https://github.com/SamR1/FitTrackee/releases/tag/v1.3.8) | 1177 | Strava (partial) |
-| [Liftosaur](https://github.com/astashov/liftosaur) | TypeScript | AGPL-3.0 | none | 783 | Hevy (partial) |
+| [Liftosaur](https://github.com/astashov/liftosaur) | TypeScript | AGPL-3.0 | none | 785 | Hevy (partial) |
 
 [All categories](../README.md#catalog)

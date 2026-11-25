@@ -4,17 +4,17 @@ Deploy apps and databases to your own servers from a git push or a dashboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.7.6](https://github.com/coollabsio/coolify/releases/tag/v4.7.6) signed | 66403 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.4](https://github.com/Dokploy/dokploy/releases/tag/v0.31.4) signed | 38664 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokku](https://github.com/dokku/dokku) | Go | MIT | [v0.38.34](https://github.com/dokku/dokku/releases/tag/v0.38.34) | 32233 | Heroku (full) |
-| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.2.0](https://github.com/labring/sealos/releases/tag/v5.2.0) signed | 18407 | Heroku (partial) |
+| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.7.6](https://github.com/coollabsio/coolify/releases/tag/v4.7.6) signed | 66446 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.4](https://github.com/Dokploy/dokploy/releases/tag/v0.31.4) signed | 38691 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokku](https://github.com/dokku/dokku) | Go | MIT | [v0.38.34](https://github.com/dokku/dokku/releases/tag/v0.38.34) | 32237 | Heroku (full) |
+| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.2.0](https://github.com/labring/sealos/releases/tag/v5.2.0) signed | 18406 | Heroku (partial) |
 | [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.16.1](https://github.com/caprover/caprover/releases/tag/v1.16.1) signed | 15210 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
 | [Kamal](https://github.com/basecamp/kamal) | Ruby | MIT | [v2.12.0](https://github.com/basecamp/kamal/releases/tag/v2.12.0) | 14753 | Heroku (partial) |
-| [Piku](https://github.com/piku/piku) | Python | MIT | [v1.0.0](https://github.com/piku/piku/releases/tag/v1.0.0) signed | 6605 | Heroku (partial) |
-| [Rainbond](https://github.com/goodrain/rainbond) | Go | Other | [v6.11.0-release](https://github.com/goodrain/rainbond/releases/tag/v6.11.0-release) signed | 6307 | Heroku (partial) |
-| [Tsuru](https://github.com/tsuru/tsuru) | Go | BSD-3-Clause | [v1.34.0](https://github.com/tsuru/tsuru/releases/tag/v1.34.0) signed | 5331 | Heroku (full) |
+| [Piku](https://github.com/piku/piku) | Python | MIT | [v1.0.0](https://github.com/piku/piku/releases/tag/v1.0.0) signed | 6606 | Heroku (partial) |
+| [Rainbond](https://github.com/goodrain/rainbond) | Go | Other | [v6.12.0-release](https://github.com/goodrain/rainbond/releases/tag/v6.12.0-release) signed | 6308 | Heroku (partial) |
+| [Tsuru](https://github.com/tsuru/tsuru) | Go | BSD-3-Clause | [v1.34.0](https://github.com/tsuru/tsuru/releases/tag/v1.34.0) signed | 5332 | Heroku (full) |
 | [Kubero](https://github.com/kubero-dev/kubero) | TypeScript | GPL-3.0 | [v3.1.1](https://github.com/kubero-dev/kubero/releases/tag/v3.1.1) signed | 4482 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
 | [Canine](https://github.com/CanineHQ/canine) | Ruby | Apache-2.0 | none | 2950 | Heroku (full) |
-| [Epinio](https://github.com/epinio/epinio) | Go | Apache-2.0 | [v1.14.3](https://github.com/epinio/epinio/releases/tag/v1.14.3) signed | 620 | Heroku (partial) |
+| [Epinio](https://github.com/epinio/epinio) | Go | Apache-2.0 | [v1.14.3](https://github.com/epinio/epinio/releases/tag/v1.14.3) signed | 619 | Heroku (partial) |
 
 [All categories](../README.md#catalog)

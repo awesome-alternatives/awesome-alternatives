@@ -4,7 +4,7 @@ Track search rankings and audit sites for technical SEO issues.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Unlighthouse](https://github.com/harlan-zw/unlighthouse) | JavaScript | MIT | [v0.20.0](https://github.com/harlan-zw/unlighthouse/releases/tag/v0.20.0) | 4964 | Screaming Frog SEO Spider (partial), Semrush (partial) |
+| [Unlighthouse](https://github.com/harlan-zw/unlighthouse) | JavaScript | MIT | [v0.20.0](https://github.com/harlan-zw/unlighthouse/releases/tag/v0.20.0) | 4967 | Screaming Frog SEO Spider (partial), Semrush (partial) |
 | [SerpBear](https://github.com/towfiqi/serpbear) | TypeScript | MIT | [v3.1.2](https://github.com/towfiqi/serpbear/releases/tag/v3.1.2) | 2192 | Semrush (partial) |
 | [Python SEO Analyzer](https://github.com/sethblack/python-seo-analyzer) | Python | Other | [2025.4.3](https://github.com/sethblack/python-seo-analyzer/releases/tag/2025.4.3) signed | 1495 | Screaming Frog SEO Spider (partial) |
 | [SEOnaut](https://github.com/StJudeWasHere/seonaut) | Go | MIT | none | 874 | Screaming Frog SEO Spider (partial), Semrush (partial) |

@@ -4,9 +4,9 @@ Find API keys, passwords and tokens committed to code, git history and other pla
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gitleaks](https://github.com/gitleaks/gitleaks) | Go | MIT | [v8.30.1](https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1) | 31289 | GitGuardian (partial) |
-| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Go | AGPL-3.0 | [v3.100.1](https://github.com/trufflesecurity/trufflehog/releases/tag/v3.100.1) signed | 29602 | GitGuardian (partial) |
-| [ggshield](https://github.com/GitGuardian/ggshield) | Python | MIT | [v1.56.1](https://github.com/GitGuardian/ggshield/releases/tag/v1.56.1) | 2024 | Gitleaks (partial) |
-| [Kingfisher](https://github.com/mongodb/kingfisher) | Rust | Apache-2.0 | [v2.20.0](https://github.com/mongodb/kingfisher/releases/tag/v2.20.0) | 1318 | GitGuardian (partial) |
+| [Gitleaks](https://github.com/gitleaks/gitleaks) | Go | MIT | [v8.30.1](https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1) | 31319 | GitGuardian (partial) |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Go | AGPL-3.0 | [v3.100.1](https://github.com/trufflesecurity/trufflehog/releases/tag/v3.100.1) signed | 29634 | GitGuardian (partial) |
+| [ggshield](https://github.com/GitGuardian/ggshield) | Python | MIT | [v1.57.0](https://github.com/GitGuardian/ggshield/releases/tag/v1.57.0) | 2026 | Gitleaks (partial) |
+| [Kingfisher](https://github.com/mongodb/kingfisher) | Rust | Apache-2.0 | [v2.20.0](https://github.com/mongodb/kingfisher/releases/tag/v2.20.0) | 1320 | GitGuardian (partial) |
 
 [All categories](../README.md#catalog)
