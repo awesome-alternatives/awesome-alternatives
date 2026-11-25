@@ -8309,7 +8309,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v13.11","to":"v13.13"},
   {"type":"released","slug":"whitebophir","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v2.18.35","to":"v2.18.36"},
   {"type":"released","slug":"xpipe","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"24.10","to":"24.11"},
-  {"type":"released","slug":"ferrflow","at":"2026-11-15T14:46:38.432Z","commit":"240aea984ed6342f6786e0d8de03c252a8dc4262","from":"v7.36.4","to":"v7.36.5"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T17:38:54.577Z","commit":"6d94acb0355989d1d9cec9f9c6be95acb0bedf46","from":"v7.36.5","to":"v7.36.6"},
   {"type":"released","slug":"ferrflow","at":"2026-11-15T19:28:09.402Z","commit":"ec710878cc67dfae6dfc47158a6a12299ddb05bc","from":"v7.36.6","to":"v7.36.7"},
   {"type":"released","slug":"act","at":"2026-11-16T05:17:27.319Z","commit":"b3ea68056268045da30c054472c82f9e913c249c","from":"v0.2.97","to":"v0.2.98"},
@@ -9939,5 +9938,6 @@
   {"type":"archived","slug":"zincsearch","at":"2026-11-25T05:17:34.876Z","commit":null},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"v1.5.6","to":"v1.5.7"},
   {"type":"released","slug":"zookeeper","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"release-3.9.7","to":"release-3.10.0"},
-  {"type":"released","slug":"lfsx","at":"2026-11-25T12:21:47.811Z","commit":null,"from":"v1.26.57","to":"v1.26.58"}
+  {"type":"released","slug":"lfsx","at":"2026-11-25T12:21:47.811Z","commit":null,"from":"v1.26.57","to":"v1.26.58"},
+  {"type":"released","slug":"ferrflow","at":"2026-11-25T20:53:08.843Z","commit":null,"from":"v7.37.3","to":"v7.37.5"}
 ]
