@@ -7755,7 +7755,6 @@
   {"type":"released","slug":"zensical","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.1.0","to":"v0.1.1"},
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"10.0.8","to":"10.0.9"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v11.26.1","to":"v11.26.2"},
-  {"type":"released","slug":"lfsx","at":"2026-11-11T21:11:34.604Z","commit":"04c98f807c08c5e13102013fbb464244325a1f29","from":"site@2026.11.7","to":"site@2026.11.8"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T02:27:02.606Z","commit":"298ec18b06331a3192870ba092b25e9ebc35e0ba","from":"site@2026.11.8","to":"site@2026.11.9"},
   {"type":"released","slug":"4ga-boards","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v3.3.14","to":"v3.3.15"},
   {"type":"released","slug":"agent-qa","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v0.3.4","to":"v0.3.5"},
@@ -9939,5 +9938,6 @@
   {"type":"released","slug":"zellij","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"v0.46.0","to":"v0.46.1"},
   {"type":"archived","slug":"zincsearch","at":"2026-11-25T05:17:34.876Z","commit":null},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"v1.5.6","to":"v1.5.7"},
-  {"type":"released","slug":"zookeeper","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"release-3.9.7","to":"release-3.10.0"}
+  {"type":"released","slug":"zookeeper","at":"2026-11-25T05:17:34.876Z","commit":null,"from":"release-3.9.7","to":"release-3.10.0"},
+  {"type":"released","slug":"lfsx","at":"2026-11-25T12:21:47.811Z","commit":null,"from":"v1.26.57","to":"v1.26.58"}
 ]

@@ -163704,27 +163704,41 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-25T04:17:04Z",
+        "pushedAt": "2026-11-25T12:20:34Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 4,
         "exact": true,
-        "since": "2026-10-26T05:17:34.876Z"
+        "since": "2026-10-26T12:21:20.730Z"
       },
       "starHistory": {
         "from": "2026-10-25",
         "stars": [4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7,7,7,7,7,7,7,8]
       },
       "release": {
-        "tag": "v1.26.57",
-        "publishedAt": "2026-11-24T08:05:53Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.57",
+        "tag": "v1.26.58",
+        "publishedAt": "2026-11-25T12:20:41Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.58",
         "source": "release",
         "signed": true,
-        "tagOid": "dd0630a9316fe521f54dc7e067ee2432fb79d0b3"
+        "tagOid": "2d300add15eee6620ad3239e661555fb3f09562d"
       },
       "releases": [
+        {
+          "tag": "v1.26.58",
+          "name": "fix(deps): update ferrlabs npm packages (#794)",
+          "publishedAt": "2026-11-25T12:20:41Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.58",
+          "prerelease": false
+        },
+        {
+          "tag": "site@2026.11.17",
+          "name": "fix(deps): update ferrlabs npm packages (#794)",
+          "publishedAt": "2026-11-25T12:20:41Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.17",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.57",
           "name": "fix(deps): update ferrlabs npm packages to v1.26.56 (#790)",
@@ -163745,48 +163759,13 @@
           "publishedAt": "2026-11-23T04:16:06Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.16",
           "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.15",
-          "name": "feat(site): restructure the landing page (#781)",
-          "publishedAt": "2026-11-20T12:16:29Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.15",
-          "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.14",
-          "name": null,
-          "publishedAt": "2026-11-18T12:49:48Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.14",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "macos",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:10:21.000Z",
       "flags": [],
