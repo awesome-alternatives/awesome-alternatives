@@ -7712,7 +7712,6 @@
   {"type":"released","slug":"zensical","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v0.1.0","to":"v0.1.1"},
   {"type":"released","slug":"zotero","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"10.0.8","to":"10.0.9"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-11T05:17:27.051Z","commit":"d548e79103bace6ca21fc1237277198923dec1a8","from":"v11.26.1","to":"v11.26.2"},
-  {"type":"released","slug":"lfsx","at":"2026-11-12T02:27:02.606Z","commit":"298ec18b06331a3192870ba092b25e9ebc35e0ba","from":"site@2026.11.8","to":"site@2026.11.9"},
   {"type":"released","slug":"4ga-boards","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v3.3.14","to":"v3.3.15"},
   {"type":"released","slug":"agent-qa","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v0.3.4","to":"v0.3.5"},
   {"type":"released","slug":"agenta","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v0.128.11","to":"v0.128.12"},
@@ -10047,5 +10046,6 @@
   {"type":"released","slug":"zammad","at":"2026-11-26T05:17:34.288Z","commit":null,"from":"7.2.3","to":"7.3.0"},
   {"type":"released","slug":"zed","at":"2026-11-26T05:17:34.288Z","commit":null,"from":"v1.29.3","to":"v1.30.2"},
   {"type":"released","slug":"zitadel","at":"2026-11-26T05:17:34.288Z","commit":null,"from":"v4.20.5","to":"v4.20.6"},
-  {"type":"released","slug":"znuny","at":"2026-11-26T05:17:34.288Z","commit":null,"from":"rel-7_3_8","to":"rel-7_5_1"}
+  {"type":"released","slug":"znuny","at":"2026-11-26T05:17:34.288Z","commit":null,"from":"rel-7_3_8","to":"rel-7_5_1"},
+  {"type":"released","slug":"lfsx","at":"2026-11-26T16:16:42.972Z","commit":null,"from":"v1.26.58","to":"v1.26.59"}
 ]
