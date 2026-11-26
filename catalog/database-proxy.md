@@ -5,8 +5,8 @@ Pool, route and multiplex client connections in front of a database server.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [ProxySQL](https://github.com/sysown/proxysql) | C++ | GPL-3.0 | [v3.0.12](https://github.com/sysown/proxysql/releases/tag/v3.0.12) signed | 6961 | Amazon RDS Proxy (partial) |
-| [PgBouncer](https://github.com/pgbouncer/pgbouncer) | C | Other | [pgbouncer_1_26_1](https://github.com/pgbouncer/pgbouncer/releases/tag/pgbouncer_1_26_1) | 4462 | Amazon RDS Proxy (partial) |
+| [PgBouncer](https://github.com/pgbouncer/pgbouncer) | C | Other | [pgbouncer_1_26_1](https://github.com/pgbouncer/pgbouncer/releases/tag/pgbouncer_1_26_1) | 4463 | Amazon RDS Proxy (partial) |
 | [Odyssey](https://github.com/yandex/odyssey) | C | BSD-3-Clause | [v1.5.3](https://github.com/yandex/odyssey/releases/tag/v1.5.3) | 3644 | Amazon RDS Proxy (partial) |
-| [Supavisor](https://github.com/supabase/supavisor) | Elixir | Apache-2.0 | [v2.10.1](https://github.com/supabase/supavisor/releases/tag/v2.10.1) signed | 2290 | Amazon RDS Proxy (partial) |
+| [Supavisor](https://github.com/supabase/supavisor) | Elixir | Apache-2.0 | [v2.10.1](https://github.com/supabase/supavisor/releases/tag/v2.10.1) signed | 2291 | Amazon RDS Proxy (partial) |
 
 [All categories](../README.md#catalog)

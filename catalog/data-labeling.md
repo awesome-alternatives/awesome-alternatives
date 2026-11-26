@@ -4,11 +4,11 @@ Annotate images, video, text and audio to build training and evaluation datasets
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Label Studio](https://github.com/HumanSignal/label-studio) | TypeScript | Apache-2.0 | [1.23.2](https://github.com/HumanSignal/label-studio/releases/tag/1.23.2) | 28769 | Labelbox (full) |
-| [CVAT](https://github.com/cvat-ai/cvat) | Python | MIT | [v2.84.0](https://github.com/cvat-ai/cvat/releases/tag/v2.84.0) signed | 17209 | Labelbox (partial) |
-| [Labelme](https://github.com/wkentaro/labelme) | Python | GPL-3.0 | [v7.11.1](https://github.com/wkentaro/labelme/releases/tag/v7.11.1) | 16348 | Labelbox (partial) |
-| [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) | Python | GPL-3.0 | [v4.3.3](https://github.com/CVHub520/X-AnyLabeling/releases/tag/v4.3.3) | 11036 | Labelbox (partial) |
+| [Label Studio](https://github.com/HumanSignal/label-studio) | TypeScript | Apache-2.0 | [1.23.2](https://github.com/HumanSignal/label-studio/releases/tag/1.23.2) | 28773 | Labelbox (full) |
+| [CVAT](https://github.com/cvat-ai/cvat) | Python | MIT | [v2.84.0](https://github.com/cvat-ai/cvat/releases/tag/v2.84.0) signed | 17210 | Labelbox (partial) |
+| [Labelme](https://github.com/wkentaro/labelme) | Python | GPL-3.0 | [v7.11.1](https://github.com/wkentaro/labelme/releases/tag/v7.11.1) | 16347 | Labelbox (partial) |
+| [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) | Python | GPL-3.0 | [v4.3.4](https://github.com/CVHub520/X-AnyLabeling/releases/tag/v4.3.4) | 11039 | Labelbox (partial) |
 | [doccano](https://github.com/doccano/doccano) | Python | MIT | [v1.8.5](https://github.com/doccano/doccano/releases/tag/v1.8.5) | 10816 | Labelbox (partial) |
-| [Argilla](https://github.com/argilla-io/argilla) | Python | Apache-2.0 | [v2.8.0](https://github.com/argilla-io/argilla/releases/tag/v2.8.0) | 5214 | Labelbox (partial) |
+| [Argilla](https://github.com/argilla-io/argilla) | Python | Apache-2.0 | [v2.8.0](https://github.com/argilla-io/argilla/releases/tag/v2.8.0) | 5215 | Labelbox (partial) |
 
 [All categories](../README.md#catalog)
