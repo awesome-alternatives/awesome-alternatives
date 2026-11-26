@@ -4,8 +4,8 @@ Route MQTT messages between devices and services.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [EMQX](https://github.com/emqx/emqx) | Erlang | Other | [6.3.3](https://github.com/emqx/emqx/releases/tag/6.3.3) signed | 16944 | AWS IoT Core (partial) |
-| [Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto) | C | Other | [v2.1.4](https://github.com/eclipse-mosquitto/mosquitto/releases/tag/v2.1.4) signed | 11496 | AWS IoT Core (partial) |
+| [EMQX](https://github.com/emqx/emqx) | Erlang | Other | [6.3.3](https://github.com/emqx/emqx/releases/tag/6.3.3) signed | 16950 | AWS IoT Core (partial) |
+| [Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto) | C | Other | [v2.1.4](https://github.com/eclipse-mosquitto/mosquitto/releases/tag/v2.1.4) signed | 11503 | AWS IoT Core (partial) |
 | [VerneMQ](https://github.com/vernemq/vernemq) | Erlang | Apache-2.0 | [2.2.1](https://github.com/vernemq/vernemq/releases/tag/2.2.1) signed | 3660 | AWS IoT Core (partial) |
 | [NanoMQ](https://github.com/nanomq/nanomq) | C | MIT | [0.25.7](https://github.com/nanomq/nanomq/releases/tag/0.25.7) | 2668 | AWS IoT Core (partial) |
 | [Mochi MQTT](https://github.com/mochi-mqtt/server) | Go | MIT | [v2.7.9](https://github.com/mochi-mqtt/server/releases/tag/v2.7.9) | 1969 | AWS IoT Core (partial) |

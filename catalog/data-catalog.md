@@ -4,13 +4,13 @@ Search, document and trace the lineage of tables, dashboards and pipelines acros
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | TypeScript | Apache-2.0 | [2.1.0-release](https://github.com/open-metadata/OpenMetadata/releases/tag/2.1.0-release) signed | 15862 | Alation (partial), Collibra (partial), Atlan (full), Monte Carlo (partial) |
-| [DataHub](https://github.com/datahub-project/datahub) | Python | Apache-2.0 | [v1.9.1](https://github.com/datahub-project/datahub/releases/tag/v1.9.1) signed | 13019 | Alation (partial), Atlan (partial), Collibra (full), Monte Carlo (partial) |
-| [Unity Catalog](https://github.com/unitycatalog/unitycatalog) | Java | Apache-2.0 | [v0.7.0](https://github.com/unitycatalog/unitycatalog/releases/tag/v0.7.0) signed | 3587 | Databricks (partial) |
-| [Apache Gravitino](https://github.com/apache/gravitino) | Java | Apache-2.0 | [v1.3.1](https://github.com/apache/gravitino/releases/tag/v1.3.1) | 3414 | Unity Catalog (full) |
-| [Marquez](https://github.com/MarquezProject/marquez) | Java | Apache-2.0 | [0.50.0](https://github.com/MarquezProject/marquez/releases/tag/0.50.0) | 2311 | DataHub (partial) |
+| [OpenMetadata](https://github.com/open-metadata/OpenMetadata) | TypeScript | Apache-2.0 | [2.0.10-release](https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.10-release) signed | 15875 | Alation (partial), Collibra (partial), Atlan (full), Monte Carlo (partial) |
+| [DataHub](https://github.com/datahub-project/datahub) | Python | Apache-2.0 | [v1.9.1](https://github.com/datahub-project/datahub/releases/tag/v1.9.1) signed | 13023 | Alation (partial), Atlan (partial), Collibra (full), Monte Carlo (partial) |
+| [Unity Catalog](https://github.com/unitycatalog/unitycatalog) | Java | Apache-2.0 | [v0.7.0](https://github.com/unitycatalog/unitycatalog/releases/tag/v0.7.0) signed | 3588 | Databricks (partial) |
+| [Apache Gravitino](https://github.com/apache/gravitino) | Java | Apache-2.0 | [v1.3.1](https://github.com/apache/gravitino/releases/tag/v1.3.1) | 3417 | Unity Catalog (full) |
+| [Marquez](https://github.com/MarquezProject/marquez) | Java | Apache-2.0 | [0.50.0](https://github.com/MarquezProject/marquez/releases/tag/0.50.0) | 2314 | DataHub (partial) |
 | [Apache Atlas](https://github.com/apache/atlas) | Java | Apache-2.0 | [release-2.5.0](https://github.com/apache/atlas/releases/tag/release-2.5.0) | 2163 | Collibra (partial), Alation (partial), Atlan (partial) |
-| [Apache Polaris](https://github.com/apache/polaris) | Java | Apache-2.0 | [apache-polaris-1.9.0](https://github.com/apache/polaris/releases/tag/apache-polaris-1.9.0) | 2124 | Unity Catalog (partial), AWS Glue Data Catalog (partial) |
-| [Lakekeeper](https://github.com/lakekeeper/lakekeeper) | Rust | Apache-2.0 | [v0.15.1](https://github.com/lakekeeper/lakekeeper/releases/tag/v0.15.1) signed | 1516 | Unity Catalog (partial), AWS Glue Data Catalog (partial) |
+| [Apache Polaris](https://github.com/apache/polaris) | Java | Apache-2.0 | [apache-polaris-1.9.0](https://github.com/apache/polaris/releases/tag/apache-polaris-1.9.0) | 2126 | Unity Catalog (partial), AWS Glue Data Catalog (partial) |
+| [Lakekeeper](https://github.com/lakekeeper/lakekeeper) | Rust | Apache-2.0 | [v0.15.1](https://github.com/lakekeeper/lakekeeper/releases/tag/v0.15.1) signed | 1520 | Unity Catalog (partial), AWS Glue Data Catalog (partial) |
 
 [All categories](../README.md#catalog)

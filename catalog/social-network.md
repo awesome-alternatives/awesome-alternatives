@@ -4,13 +4,13 @@ Self-hosted and federated social networks, for short public posts, photos and vi
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.6](https://github.com/mastodon/mastodon/releases/tag/v4.7.6) | 50626 | X (Twitter) (full), Threads (full) |
+| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.6](https://github.com/mastodon/mastodon/releases/tag/v4.7.6) | 50649 | X (Twitter) (full), Threads (full) |
 | [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.1](https://github.com/diaspora/diaspora/releases/tag/v0.10.1) signed | 13651 | Facebook (partial) |
-| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11400 | X (Twitter) (full), Threads (full) |
-| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7154 | Instagram (full), TikTok (partial) |
-| [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.4](https://github.com/humhub/humhub/releases/tag/v1.19.4) | 6792 | Facebook (partial) |
-| [Bluesky PDS](https://github.com/bluesky-social/pds) | Shell | Other | [v0.4.5065](https://github.com/bluesky-social/pds/releases/tag/v0.4.5065) | 2660 | X (Twitter) (partial) |
-| [Elgg](https://github.com/Elgg/Elgg) | PHP | Other | [7.1.3](https://github.com/Elgg/Elgg/releases/tag/7.1.3) signed | 1680 | Facebook (partial) |
+| [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.0](https://github.com/misskey-dev/misskey/releases/tag/2026.11.0) | 11403 | X (Twitter) (full), Threads (full) |
+| [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7156 | Instagram (full), TikTok (partial) |
+| [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.5](https://github.com/humhub/humhub/releases/tag/v1.19.5) | 6792 | Facebook (partial) |
+| [Bluesky PDS](https://github.com/bluesky-social/pds) | Shell | Other | [v0.4.5065](https://github.com/bluesky-social/pds/releases/tag/v0.4.5065) | 2661 | X (Twitter) (partial) |
+| [Elgg](https://github.com/Elgg/Elgg) | PHP | Other | [6.3.11](https://github.com/Elgg/Elgg/releases/tag/6.3.11) signed | 1680 | Facebook (partial) |
 | [Bonfire](https://github.com/bonfire-networks/bonfire-app) | Elixir | none | [v1.1.0](https://github.com/bonfire-networks/bonfire-app/releases/tag/v1.1.0) | 954 | Facebook (partial) |
 | [nostream](https://github.com/cameri/nostream) | TypeScript | MIT | [nostream@3.16.0](https://github.com/cameri/nostream/releases/tag/nostream%403.16.0) | 840 | X (Twitter) (partial) |
 | [strfry](https://github.com/hoytech/strfry) | C++ | GPL-3.0 | [1.1.3](https://github.com/hoytech/strfry/releases/tag/1.1.3) | 739 | X (Twitter) (partial) |
