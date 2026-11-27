@@ -8676,7 +8676,6 @@
   {"type":"released","slug":"strapi","at":"2026-11-18T09:33:36.114Z","commit":"c8756354d0259f7164a183acbae34d7354553c5e","from":"v5.62.0","to":"v5.63.0"},
   {"type":"released","slug":"svelte","at":"2026-11-18T09:33:36.114Z","commit":"c8756354d0259f7164a183acbae34d7354553c5e","from":"svelte@5.57.3","to":"svelte@5.58.0"},
   {"type":"released","slug":"teable","at":"2026-11-18T09:33:36.114Z","commit":"c8756354d0259f7164a183acbae34d7354553c5e","from":"release.2026-11-17T15-28-36Z.3953","to":"release.2026-11-18T03-31-20Z.3959"},
-  {"type":"released","slug":"stashden","at":"2026-11-18T10:01:51.912Z","commit":"b365e9c0e34427b68f17ab1bfb4d226f674f951d","from":"v0.56.6","to":"v0.56.7"},
   {"type":"released","slug":"bagisto","at":"2026-11-18T10:20:21.759Z","commit":"21d76732c487b1efc481bc80ac6b9bc0bfc494a7","from":"v2.5.1","to":"v2.5.2"},
   {"type":"released","slug":"dify","at":"2026-11-18T10:20:21.759Z","commit":"21d76732c487b1efc481bc80ac6b9bc0bfc494a7","from":"1.19.0","to":"1.20.0"},
   {"type":"released","slug":"fluxer","at":"2026-11-18T10:20:21.759Z","commit":"21d76732c487b1efc481bc80ac6b9bc0bfc494a7","from":"fluxer-release@2026.1117.41341","to":"fluxer-release@2026.1118.90548"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-27T08:47:06.253Z","commit":null,"from":"v0.57.1","to":"v0.60.0"},
   {"type":"released","slug":"stashden","at":"2026-11-27T08:58:49.466Z","commit":null,"from":"v0.60.0","to":"v0.60.1"},
   {"type":"released","slug":"stashden","at":"2026-11-27T11:13:06.681Z","commit":null,"from":"v0.60.1","to":"v0.61.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T11:59:54.428Z","commit":null,"from":"v0.61.0","to":"v0.61.1"}
+  {"type":"released","slug":"stashden","at":"2026-11-27T11:59:54.428Z","commit":null,"from":"v0.61.0","to":"v0.61.1"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T12:08:51.942Z","commit":null,"from":"v0.61.1","to":"v0.61.2"}
 ]

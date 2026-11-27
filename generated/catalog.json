@@ -282765,27 +282765,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T11:58:48Z",
+        "pushedAt": "2026-11-27T12:08:08Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-28T11:59:29.746Z"
+        "since": "2026-10-28T12:08:28.666Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.61.1",
-        "publishedAt": "2026-11-27T11:58:50Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.1",
+        "tag": "v0.61.2",
+        "publishedAt": "2026-11-27T12:07:55Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.2",
         "source": "release",
         "signed": false,
-        "tagOid": "4d8978a8283fdbb166b50941019ad09c8d2362a8"
+        "tagOid": "dbf0b3daeef508b98718d69e9a41fafa0ba8f06a"
       },
       "releases": [
+        {
+          "tag": "v0.61.2",
+          "name": "fix(app): build the Windows app for the graphical subsystem (#551)",
+          "publishedAt": "2026-11-27T12:07:55Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.2",
+          "prerelease": false
+        },
         {
           "tag": "v0.61.1",
           "name": "fix(app): embed the application icon in the Windows executable (#550)",
@@ -282812,13 +282819,6 @@
           "name": "feat(api): serve the web app with a Content-Security-Policy (#528)",
           "publishedAt": "2026-11-27T08:46:02Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.60.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.59.0",
-          "name": "feat(web): translate the web app into English and French (#531)",
-          "publishedAt": "2026-11-27T08:34:10Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.59.0",
           "prerelease": false
         }
       ],
