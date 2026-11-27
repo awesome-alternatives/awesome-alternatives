@@ -188,7 +188,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Kubernetes UIs](catalog/kubernetes-ui.md) | 10 | Browse and operate Kubernetes clusters from a desktop, web or terminal UI. |
 | [Virtualization](catalog/virtualization.md) | 12 | Run virtual machines and system containers across a cluster of hosts. |
 | [Code search servers](catalog/code-search-server.md) | 4 | Index many repositories and search them from a web UI. |
-| [Data integration](catalog/data-integration.md) | 23 | Extract data from applications and databases and load it into a warehouse. |
+| [Data integration](catalog/data-integration.md) | 22 | Extract data from applications and databases and load it into a warehouse. |
 | [JavaScript HTTP clients](catalog/javascript-http-client.md) | 6 | Send HTTP requests from Node.js and browsers. |
 | [JavaScript utility libraries](catalog/javascript-utility.md) | 5 | Helpers for arrays, objects, strings and functions. |
 | [CSS processing](catalog/css-processing.md) | 7 | Compile, transform, prefix and minify stylesheets. |

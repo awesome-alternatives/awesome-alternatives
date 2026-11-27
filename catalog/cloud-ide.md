@@ -4,8 +4,8 @@ Development environments on a remote machine, reached from a browser or a local 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [code-server](https://github.com/coder/code-server) | TypeScript | MIT | [v4.146.0](https://github.com/coder/code-server/releases/tag/v4.146.0) | 79956 | GitHub Codespaces (partial) |
-| [Coder](https://github.com/coder/coder) | Go | AGPL-3.0 | [v2.38.11](https://github.com/coder/coder/releases/tag/v2.38.11) | 17488 | GitHub Codespaces (full) |
+| [code-server](https://github.com/coder/code-server) | TypeScript | MIT | [v4.146.0](https://github.com/coder/code-server/releases/tag/v4.146.0) | 79958 | GitHub Codespaces (partial) |
+| [Coder](https://github.com/coder/coder) | Go | AGPL-3.0 | [v2.38.11](https://github.com/coder/coder/releases/tag/v2.38.11) | 17490 | GitHub Codespaces (full) |
 | [DevPod](https://github.com/loft-sh/devpod) | Go | MPL-2.0 | [v0.6.15](https://github.com/loft-sh/devpod/releases/tag/v0.6.15) | 15341 | GitHub Codespaces (full) |
 | [Eclipse Che](https://github.com/eclipse-che/che) | TypeScript | EPL-2.0 | [7.125.0](https://github.com/eclipse-che/che/releases/tag/7.125.0) | 7174 | GitHub Codespaces (full) |
 

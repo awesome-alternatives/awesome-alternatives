@@ -4,7 +4,7 @@ Browser extensions that block ads, trackers and other unwanted content on web pa
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.77.2](https://github.com/gorhill/uBlock/releases/tag/1.77.2) signed | 69738 | Adblock Plus (full) |
+| [uBlock Origin](https://github.com/gorhill/uBlock) | JavaScript | GPL-3.0 | [1.77.2](https://github.com/gorhill/uBlock/releases/tag/1.77.2) signed | 69748 | Adblock Plus (full) |
 | [AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension) | TypeScript | GPL-3.0 | [v5.6.1](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/tag/v5.6.1) signed | 4586 | Adblock Plus (full) |
 | [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | JavaScript | GPL-3.0 | [2026.1124.1811](https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1124.1811) | 4093 | Adblock Plus (full), uBlock Origin (partial) |
 | [Privacy Badger](https://github.com/EFForg/privacybadger) | JavaScript | Other | [release-2026.9.15](https://github.com/EFForg/privacybadger/releases/tag/release-2026.9.15) signed | 3896 | Adblock Plus (partial) |

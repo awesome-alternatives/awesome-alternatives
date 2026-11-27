@@ -4,10 +4,10 @@ Shared pages and documentation for teams, edited in the browser.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.15.1](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1) signed | 79615 | Notion (full) |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 79068 | Notion (full), Miro (partial), OneNote (partial) |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Dart | AGPL-3.0 | [0.15.1](https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1) signed | 79623 | Notion (full) |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | TypeScript | Other | [v0.27.4](https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4) | 79125 | Notion (full), Miro (partial), OneNote (partial) |
 | [Outline](https://github.com/outline/outline) | TypeScript | Other | [v1.13.0](https://github.com/outline/outline/releases/tag/v1.13.0) signed | 41401 | Notion (partial), Confluence (full), HackMD (partial) |
-| [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.6.1](https://github.com/requarks/wiki/releases/tag/3.6.1) signed | 29399 | Confluence (full) |
+| [Wiki.js](https://github.com/requarks/wiki) | TypeScript | AGPL-3.0 | [3.6.1](https://github.com/requarks/wiki/releases/tag/3.6.1) signed | 29400 | Confluence (full) |
 | [Docmost](https://github.com/docmost/docmost) | TypeScript | AGPL-3.0 | [v0.98.0](https://github.com/docmost/docmost/releases/tag/v0.98.0) signed | 22443 | Confluence (full), Notion (partial) |
 | [BookStack](https://github.com/BookStackApp/BookStack) | PHP | MIT | [v26.09.3](https://github.com/BookStackApp/BookStack/releases/tag/v26.09.3) signed | 19156 | Confluence (full), Notion (partial) |
 | [La Suite Docs](https://github.com/suitenumerique/docs) | TypeScript | MIT | [v6.1.1](https://github.com/suitenumerique/docs/releases/tag/v6.1.1) signed | 17017 | Notion (partial), Confluence (partial) |

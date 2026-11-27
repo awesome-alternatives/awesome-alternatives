@@ -4,9 +4,9 @@ Describe the state of servers in code and converge them to it.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.22.0](https://github.com/ansible/ansible/releases/tag/v2.22.0) signed | 71656 | Puppet (full), Chef (full), Salt (full) |
+| [Ansible](https://github.com/ansible/ansible) | Python | GPL-3.0 | [v2.22.0](https://github.com/ansible/ansible/releases/tag/v2.22.0) signed | 71665 | Puppet (full), Chef (full), Salt (full) |
 | [Salt](https://github.com/saltstack/salt) | Python | Apache-2.0 | [v3007.17](https://github.com/saltstack/salt/releases/tag/v3007.17) signed | 15769 | Puppet (full), Chef (full), Ansible (full) |
-| [AWX](https://github.com/ansible/awx) | Python | Other | [24.6.1](https://github.com/ansible/awx/releases/tag/24.6.1) signed | 15649 | Red Hat Ansible Automation Platform (full) |
+| [AWX](https://github.com/ansible/awx) | Python | Other | [24.6.1](https://github.com/ansible/awx/releases/tag/24.6.1) signed | 15650 | Red Hat Ansible Automation Platform (full) |
 | [Semaphore UI](https://github.com/semaphoreui/semaphore) | Go | MIT | [v2.20.23](https://github.com/semaphoreui/semaphore/releases/tag/v2.20.23) signed | 14467 | Red Hat Ansible Automation Platform (partial) |
 | [Capistrano](https://github.com/capistrano/capistrano) | Ruby | MIT | [v3.20.1](https://github.com/capistrano/capistrano/releases/tag/v3.20.1) | 13011 | Deployer (full) |
 | [Deployer](https://github.com/deployphp/deployer) | PHP | MIT | [v8.0.5](https://github.com/deployphp/deployer/releases/tag/v8.0.5) signed | 11125 | Capistrano (full) |

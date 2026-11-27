@@ -4,7 +4,7 @@ Decide who may do what in an application, with policies or relationship-based pe
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Open Policy Agent](https://github.com/open-policy-agent/opa) | Go | Apache-2.0 | [v1.23.0](https://github.com/open-policy-agent/opa/releases/tag/v1.23.0) signed | 12533 | AWS Verified Permissions (partial) |
+| [Open Policy Agent](https://github.com/open-policy-agent/opa) | Go | Apache-2.0 | [v1.23.0](https://github.com/open-policy-agent/opa/releases/tag/v1.23.0) signed | 12534 | AWS Verified Permissions (partial) |
 | [SpiceDB](https://github.com/authzed/spicedb) | Go | Apache-2.0 | [v1.57.1](https://github.com/authzed/spicedb/releases/tag/v1.57.1) signed | 7244 | Oso Cloud (partial), AWS Verified Permissions (partial) |
 | [OpenFGA](https://github.com/openfga/openfga) | Go | Apache-2.0 | [v1.23.0](https://github.com/openfga/openfga/releases/tag/v1.23.0) signed | 6199 | Auth0 (partial), AWS Verified Permissions (partial) |
 | [Permify](https://github.com/Permify/permify) | Go | AGPL-3.0 | [v1.7.6](https://github.com/Permify/permify/releases/tag/v1.7.6) signed | 5976 | Oso Cloud (partial), AWS Verified Permissions (partial) |

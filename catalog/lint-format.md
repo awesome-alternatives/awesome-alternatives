@@ -4,13 +4,13 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ShellCheck](https://github.com/koalaman/shellcheck) | Haskell | GPL-3.0 | [v0.11.0](https://github.com/koalaman/shellcheck/releases/tag/v0.11.0) | 40389 | none |
-| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19798 | none |
+| [ShellCheck](https://github.com/koalaman/shellcheck) | Haskell | GPL-3.0 | [v0.11.0](https://github.com/koalaman/shellcheck/releases/tag/v0.11.0) | 40392 | none |
+| [SwiftLint](https://github.com/realm/SwiftLint) | Swift | MIT | [0.65.1](https://github.com/realm/SwiftLint/releases/tag/0.65.1) | 19800 | none |
 | [golangci-lint](https://github.com/golangci/golangci-lint) | Go | GPL-3.0 | [v2.15.0](https://github.com/golangci/golangci-lint/releases/tag/v2.15.0) signed | 19554 | Staticcheck (full), revive (full) |
 | [PHPStan](https://github.com/phpstan/phpstan) | PHP | MIT | [2.3.7](https://github.com/phpstan/phpstan/releases/tag/2.3.7) | 14172 | Psalm (full) |
-| [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.32](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.32) signed | 13583 | PHP_CodeSniffer (partial) |
+| [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) | PHP | MIT | [v3.95.32](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/releases/tag/v3.95.32) signed | 13584 | PHP_CodeSniffer (partial) |
 | [RuboCop](https://github.com/rubocop/rubocop) | Ruby | MIT | [v1.93.0](https://github.com/rubocop/rubocop/releases/tag/v1.93.0) | 12923 | none |
-| [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12553 | none |
+| [Hadolint](https://github.com/hadolint/hadolint) | Haskell | GPL-3.0 | [v2.15.1](https://github.com/hadolint/hadolint/releases/tag/v2.15.1) signed | 12554 | none |
 | [SQLFluff](https://github.com/sqlfluff/sqlfluff) | Python | MIT | [4.5.0](https://github.com/sqlfluff/sqlfluff/releases/tag/4.5.0) signed | 10038 | SQL Formatter (partial), sqlfmt (partial) |
 | [Checkstyle](https://github.com/checkstyle/checkstyle) | Java | LGPL-2.1 | [checkstyle-14.4.0](https://github.com/checkstyle/checkstyle/releases/tag/checkstyle-14.4.0) | 9670 | SonarQube Community Build (partial) |
 | [shfmt](https://github.com/mvdan/sh) | Go | BSD-3-Clause | [v3.14.1](https://github.com/mvdan/sh/releases/tag/v3.14.1) signed | 9228 | none |
@@ -21,7 +21,7 @@ Linters, static checkers and formatters for Go, the JVM, PHP, Ruby, Swift, Lua, 
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | JavaScript | MIT | [v0.42.2](https://github.com/DavidAnson/markdownlint/releases/tag/v0.42.2) | 6453 | none |
 | [google-java-format](https://github.com/google/google-java-format) | Java | Other | [v2.0.0](https://github.com/google/google-java-format/releases/tag/v2.0.0) | 6234 | none |
 | [Psalm](https://github.com/vimeo/psalm) | PHP | MIT | [7.22.1](https://github.com/vimeo/psalm/releases/tag/7.22.1) signed | 5935 | PHPStan (full) |
-| [revive](https://github.com/revive-lint/revive) | Go | MIT | [v1.17.1](https://github.com/revive-lint/revive/releases/tag/v1.17.1) signed | 5572 | golangci-lint (partial) |
+| [revive](https://github.com/revive-lint/revive) | Go | MIT | [v1.17.1](https://github.com/revive-lint/revive/releases/tag/v1.17.1) signed | 5573 | golangci-lint (partial) |
 | [PMD](https://github.com/pmd/pmd) | Java | Other | [pmd_releases/7.29.0](https://github.com/pmd/pmd/releases/tag/pmd_releases/7.29.0) signed | 5545 | SonarQube Community Build (partial) |
 | [actionlint](https://github.com/rhysd/actionlint) | Go | MIT | [v1.7.12](https://github.com/rhysd/actionlint/releases/tag/v1.7.12) | 4440 | none |
 | [typos](https://github.com/crate-ci/typos) | Rust | Apache-2.0 | [v1.52.2](https://github.com/crate-ci/typos/releases/tag/v1.52.2) | 4234 | codespell (full) |

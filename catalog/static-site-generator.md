@@ -4,11 +4,11 @@ Build websites from templates and content files.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Hugo](https://github.com/gohugoio/hugo) | Go | Apache-2.0 | [v0.170.1](https://github.com/gohugoio/hugo/releases/tag/v0.170.1) | 90579 | Jekyll (full), Hexo (full) |
-| [Astro](https://github.com/withastro/astro) | TypeScript | Other | [@astrojs/node@11.1.14](https://github.com/withastro/astro/releases/tag/%40astrojs/node%4011.1.14) signed | 64245 | Gatsby (full), Jekyll (full), Hexo (full) |
+| [Hugo](https://github.com/gohugoio/hugo) | Go | Apache-2.0 | [v0.170.1](https://github.com/gohugoio/hugo/releases/tag/v0.170.1) | 90581 | Jekyll (full), Hexo (full) |
+| [Astro](https://github.com/withastro/astro) | TypeScript | Other | [@astrojs/node@11.1.14](https://github.com/withastro/astro/releases/tag/%40astrojs/node%4011.1.14) signed | 64246 | Gatsby (full), Jekyll (full), Hexo (full) |
 | [Gatsby](https://github.com/gatsbyjs/gatsby) | JavaScript | MIT | [gatsby@5.16.1](https://github.com/gatsbyjs/gatsby/releases/tag/gatsby%405.16.1) | 55918 | Jekyll (partial) |
 | [Jekyll](https://github.com/jekyll/jekyll) | Ruby | MIT | [v4.4.1](https://github.com/jekyll/jekyll/releases/tag/v4.4.1) | 51801 | none |
-| [Hexo](https://github.com/hexojs/hexo) | TypeScript | MIT | [v8.1.2](https://github.com/hexojs/hexo/releases/tag/v8.1.2) | 41782 | Jekyll (full) |
+| [Hexo](https://github.com/hexojs/hexo) | TypeScript | MIT | [v8.1.2](https://github.com/hexojs/hexo/releases/tag/v8.1.2) | 41784 | Jekyll (full) |
 | [Eleventy](https://github.com/11ty/buildawesome) | JavaScript | MIT | [v3.1.8](https://github.com/11ty/buildawesome/releases/tag/v3.1.8) | 20065 | Jekyll (full), Hexo (full) |
 | [Zola](https://github.com/getzola/zola) | Rust | EUPL-1.2 | [v0.23.6](https://github.com/getzola/zola/releases/tag/v0.23.6) | 17624 | Jekyll (full), Hexo (full) |
 | [Quartz](https://github.com/jackyzha0/quartz) | TypeScript | MIT | [v5.2.2](https://github.com/jackyzha0/quartz/releases/tag/v5.2.2) | 13635 | Obsidian Publish (full) |

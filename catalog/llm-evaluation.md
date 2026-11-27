@@ -4,12 +4,12 @@ Test prompts, models and agents against datasets, assertions and red-team probes
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.3](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.3) signed | 27729 | Braintrust (partial) |
-| [DeepEval](https://github.com/confident-ai/deepeval) | Python | Apache-2.0 | [python-v4.2.4](https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4) | 19697 | Braintrust (partial) |
-| [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) | Python | MIT | [v0.4.13](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) signed | 14545 | none |
-| [garak](https://github.com/NVIDIA/garak) | Python | Apache-2.0 | [v0.17.1](https://github.com/NVIDIA/garak/releases/tag/v0.17.1) signed | 10201 | promptfoo (partial) |
+| [promptfoo](https://github.com/promptfoo/promptfoo) | TypeScript | MIT | [code-scan-action-0.2.3](https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.3) signed | 27734 | Braintrust (partial) |
+| [DeepEval](https://github.com/confident-ai/deepeval) | Python | Apache-2.0 | [python-v4.2.4](https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4) | 19702 | Braintrust (partial) |
+| [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) | Python | MIT | [v0.4.13](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.13) signed | 14546 | none |
+| [garak](https://github.com/NVIDIA/garak) | Python | Apache-2.0 | [v0.17.1](https://github.com/NVIDIA/garak/releases/tag/v0.17.1) signed | 10205 | promptfoo (partial) |
 | [OpenCompass](https://github.com/open-compass/opencompass) | Python | Apache-2.0 | [0.5.5](https://github.com/open-compass/opencompass/releases/tag/0.5.5) signed | 7646 | LM Evaluation Harness (full) |
 | [Giskard](https://github.com/Giskard-AI/giskard-oss) | Python | Apache-2.0 | [giskard-scan/v1.0.2](https://github.com/Giskard-AI/giskard-oss/releases/tag/giskard-scan/v1.0.2) | 5974 | Braintrust (partial) |
-| [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | Python | MIT | [0.3.292](https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.292) signed | 3345 | Braintrust (partial), LM Evaluation Harness (partial) |
+| [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) | Python | MIT | [0.3.292](https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.292) signed | 3346 | Braintrust (partial), LM Evaluation Harness (partial) |
 
 [All categories](../README.md#catalog)

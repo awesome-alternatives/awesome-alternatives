@@ -5,14 +5,14 @@ Track accounts, spending and budgets for a person or a household.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Maybe](https://github.com/maybe-finance/maybe) archived | Ruby | AGPL-3.0 | [v0.6.0](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) | 54183 | none |
-| [Actual Budget](https://github.com/actualbudget/actual) | TypeScript | MIT | [v26.11.0](https://github.com/actualbudget/actual/releases/tag/v26.11.0) signed | 30477 | YNAB (full), Mint (partial), Rocket Money (partial) |
-| [Firefly III](https://github.com/firefly-iii/firefly-iii) | PHP | AGPL-3.0 | [v6.7.10](https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.10) | 25348 | YNAB (partial), Mint (full), Monarch Money (partial), Rocket Money (partial) |
-| [Sure](https://github.com/we-promise/sure) | Ruby | AGPL-3.0 | [v0.7.6-hotfix.2](https://github.com/we-promise/sure/releases/tag/v0.7.6-hotfix.2) signed | 18114 | Maybe (full), Monarch Money (full), YNAB (partial), Mint (full) |
-| [Wealthfolio](https://github.com/wealthfolio/wealthfolio) | Rust | AGPL-3.0 | [v3.13.1](https://github.com/wealthfolio/wealthfolio/releases/tag/v3.13.1) | 9789 | Empower Personal Dashboard (partial) |
+| [Actual Budget](https://github.com/actualbudget/actual) | TypeScript | MIT | [v26.11.0](https://github.com/actualbudget/actual/releases/tag/v26.11.0) signed | 30479 | YNAB (full), Mint (partial), Rocket Money (partial) |
+| [Firefly III](https://github.com/firefly-iii/firefly-iii) | PHP | AGPL-3.0 | [v6.7.12](https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.12) | 25348 | YNAB (partial), Mint (full), Monarch Money (partial), Rocket Money (partial) |
+| [Sure](https://github.com/we-promise/sure) | Ruby | AGPL-3.0 | [v0.7.6-hotfix.2](https://github.com/we-promise/sure/releases/tag/v0.7.6-hotfix.2) signed | 18139 | Maybe (full), Monarch Money (full), YNAB (partial), Mint (full) |
+| [Wealthfolio](https://github.com/wealthfolio/wealthfolio) | Rust | AGPL-3.0 | [v3.13.1](https://github.com/wealthfolio/wealthfolio/releases/tag/v3.13.1) | 9792 | Empower Personal Dashboard (partial) |
 | [Ghostfolio](https://github.com/ghostfolio/ghostfolio) | TypeScript | AGPL-3.0 | [3.100.0](https://github.com/ghostfolio/ghostfolio/releases/tag/3.100.0) signed | 9788 | Monarch Money (partial), Empower Personal Dashboard (partial) |
-| [Wallos](https://github.com/ellite/Wallos) | PHP | GPL-3.0 | [v5.11.3](https://github.com/ellite/Wallos/releases/tag/v5.11.3) signed | 8901 | Rocket Money (partial) |
+| [Wallos](https://github.com/ellite/Wallos) | PHP | GPL-3.0 | [v5.11.3](https://github.com/ellite/Wallos/releases/tag/v5.11.3) signed | 8903 | Rocket Money (partial) |
 | [Beancount](https://github.com/beancount/beancount) | Python | GPL-2.0 | [3.2.3](https://github.com/beancount/beancount/releases/tag/3.2.3) | 6210 | Quicken (partial) |
-| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping) | Go | MIT | [v2.2.0](https://github.com/mayswind/ezbookkeeping/releases/tag/v2.2.0) | 6150 | Mint (partial), Quicken (partial) |
+| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping) | Go | MIT | [v2.2.0](https://github.com/mayswind/ezbookkeeping/releases/tag/v2.2.0) | 6151 | Mint (partial), Quicken (partial) |
 | [Ledger](https://github.com/ledger/ledger) | C++ | Other | [v3.4.1](https://github.com/ledger/ledger/releases/tag/v3.4.1) signed | 6081 | Quicken (partial) |
 | [hledger](https://github.com/hledgerorg/hledger) | Haskell | GPL-3.0 | [1.52.4](https://github.com/hledgerorg/hledger/releases/tag/1.52.4) signed | 4838 | Quicken (partial) |
 | [GnuCash](https://github.com/Gnucash/gnucash) | C | Other | [5.17](https://github.com/Gnucash/gnucash/releases/tag/5.17) | 4429 | Quicken (partial) |

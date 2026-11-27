@@ -4,10 +4,10 @@ Publish videos and live streams on your own site for an audience to watch.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r3](https://github.com/ossrs/srs/releases/tag/v6.0-r3) signed | 29462 | Wowza Streaming Engine (partial) |
+| [SRS](https://github.com/ossrs/srs) | C++ | MIT | [v6.0-r3](https://github.com/ossrs/srs/releases/tag/v6.0-r3) signed | 29463 | Wowza Streaming Engine (partial) |
 | [MediaMTX](https://github.com/bluenviron/mediamtx) | Go | MIT | [v1.21.4](https://github.com/bluenviron/mediamtx/releases/tag/v1.21.4) signed | 20783 | Wowza Streaming Engine (partial) |
 | [PeerTube](https://github.com/Chocobozzz/PeerTube) | TypeScript | AGPL-3.0 | [v8.3.2](https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.2) signed | 15440 | YouTube (full), Vimeo (full), Twitch (partial) |
-| [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11705 | Twitch (partial) |
+| [Owncast](https://github.com/owncast/owncast) | Go | MIT | [v0.3.0](https://github.com/owncast/owncast/releases/tag/v0.3.0) | 11704 | Twitch (partial) |
 | [Restreamer](https://github.com/datarhei/restreamer) | HTML | Apache-2.0 | [v2.12.0](https://github.com/datarhei/restreamer/releases/tag/v2.12.0) | 5251 | Twitch (partial), Wowza Streaming Engine (partial) |
 | [MediaCMS](https://github.com/mediacms-io/mediacms) | Python | AGPL-3.0 | [v9.7.0](https://github.com/mediacms-io/mediacms/releases/tag/v9.7.0) | 5200 | YouTube (partial), Vimeo (partial) |
 | [Ant Media Server](https://github.com/ant-media/Ant-Media-Server) | Java | Other | [ams-v3.2.0](https://github.com/ant-media/Ant-Media-Server/releases/tag/ams-v3.2.0) | 4749 | Wowza Streaming Engine (partial) |

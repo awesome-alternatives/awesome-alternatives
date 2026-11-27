@@ -4,7 +4,7 @@ Generate traffic to measure how a service holds up.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32423 | Apache JMeter (full), Gatling (full) |
+| [k6](https://github.com/grafana/k6) | Go | AGPL-3.0 | [v2.4.0](https://github.com/grafana/k6/releases/tag/v2.4.0) | 32424 | Apache JMeter (full), Gatling (full) |
 | [Locust](https://github.com/locustio/locust) | Python | MIT | [2.47.0](https://github.com/locustio/locust/releases/tag/2.47.0) signed | 28313 | Apache JMeter (full), Gatling (full) |
 | [Vegeta](https://github.com/tsenart/vegeta) | Go | MIT | [v12.13.0](https://github.com/tsenart/vegeta/releases/tag/v12.13.0) | 25260 | Apache JMeter (partial) |
 | [oha](https://github.com/hatoo/oha) | Rust | MIT | [v1.17.0](https://github.com/hatoo/oha/releases/tag/v1.17.0) signed | 10749 | Vegeta (partial) |

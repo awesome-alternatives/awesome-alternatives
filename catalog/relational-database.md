@@ -4,17 +4,17 @@ General-purpose SQL databases.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [TiDB](https://github.com/pingcap/tidb) | Go | Apache-2.0 | [v7.5.8](https://github.com/pingcap/tidb/releases/tag/v7.5.8) signed | 40779 | MySQL (full), Google Cloud Spanner (full) |
-| [Turso Database](https://github.com/tursodatabase/turso) | Rust | MIT | [v0.8.4](https://github.com/tursodatabase/turso/releases/tag/v0.8.4) | 25378 | SQLite (partial) |
-| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.7.7](https://github.com/dolthub/dolt/releases/tag/v2.7.7) | 24997 | MySQL (full) |
+| [TiDB](https://github.com/pingcap/tidb) | Go | Apache-2.0 | [v7.5.8](https://github.com/pingcap/tidb/releases/tag/v7.5.8) signed | 40781 | MySQL (full), Google Cloud Spanner (full) |
+| [Turso Database](https://github.com/tursodatabase/turso) | Rust | MIT | [v0.8.4](https://github.com/tursodatabase/turso/releases/tag/v0.8.4) | 25380 | SQLite (partial) |
+| [Dolt](https://github.com/dolthub/dolt) | Go | Apache-2.0 | [v2.7.7](https://github.com/dolthub/dolt/releases/tag/v2.7.7) | 25000 | MySQL (full) |
 | [Neon](https://github.com/neondatabase/neon) | Rust | Apache-2.0 | [release-proxy-8853](https://github.com/neondatabase/neon/releases/tag/release-proxy-8853) | 23414 | Amazon RDS (partial) |
-| [PostgreSQL](https://github.com/postgres/postgres) | C | Other | [REL_19_0](https://github.com/postgres/postgres/releases/tag/REL_19_0) | 22962 | MySQL (full), Oracle Database (full), Microsoft SQL Server (partial) |
+| [PostgreSQL](https://github.com/postgres/postgres) | C | Other | [REL_19_0](https://github.com/postgres/postgres/releases/tag/REL_19_0) | 22961 | MySQL (full), Oracle Database (full), Microsoft SQL Server (partial) |
 | [Vitess](https://github.com/vitessio/vitess) | Go | Apache-2.0 | [v24.0.5](https://github.com/vitessio/vitess/releases/tag/v24.0.5) signed | 21436 | PlanetScale (partial), Google Cloud Spanner (partial) |
 | [rqlite](https://github.com/rqlite/rqlite) | Go | MIT | [v10.8.0](https://github.com/rqlite/rqlite/releases/tag/v10.8.0) signed | 17977 | SQLite (partial) |
-| [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17386 | SQLite (drop-in) |
-| [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-plpgsql-check@0.1.0](https://github.com/electric-sql/pglite/releases/tag/%40electric-sql/pglite-plpgsql-check%400.1.0) | 16381 | SQLite (partial) |
+| [libSQL](https://github.com/tursodatabase/libsql) | C | MIT | [libsql-server-v0.24.32](https://github.com/tursodatabase/libsql/releases/tag/libsql-server-v0.24.32) signed | 17387 | SQLite (drop-in) |
+| [PGlite](https://github.com/electric-sql/pglite) | TypeScript | Apache-2.0 | [@electric-sql/pglite-plpgsql-check@0.1.0](https://github.com/electric-sql/pglite/releases/tag/%40electric-sql/pglite-plpgsql-check%400.1.0) | 16382 | SQLite (partial) |
 | [MySQL](https://github.com/mysql/mysql-server) | C++ | Other | [mysql-26.10.0.1](https://github.com/mysql/mysql-server/releases/tag/mysql-26.10.0.1) | 12534 | Amazon RDS (partial), Microsoft SQL Server (partial) |
-| [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.54.1](https://github.com/sqlite/sqlite/releases/tag/version-3.54.1) | 11150 | none |
+| [SQLite](https://github.com/sqlite/sqlite) | C | Other | [version-3.54.1](https://github.com/sqlite/sqlite/releases/tag/version-3.54.1) | 11154 | none |
 | [OceanBase](https://github.com/oceanbase/oceanbase) | C++ | Apache-2.0 | [v4.6.0_CE_BP1](https://github.com/oceanbase/oceanbase/releases/tag/v4.6.0_CE_BP1) | 10444 | MySQL (full) |
 | [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg) | Go | Apache-2.0 | [v1.30.2](https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.2) signed | 9672 | Amazon RDS (partial) |
 | [MariaDB](https://github.com/MariaDB/server) | C++ | GPL-2.0 | [mariadb-13.1.2](https://github.com/MariaDB/server/releases/tag/mariadb-13.1.2) | 8667 | MySQL (full), Oracle Database (partial), Microsoft SQL Server (partial) |

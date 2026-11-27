@@ -4,7 +4,7 @@ Video meetings in the browser or an app.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Jitsi Meet](https://github.com/jitsi/jitsi-meet) | TypeScript | Apache-2.0 | [stable/jitsi-meet_11509](https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11509) | 30299 | Zoom (full), Microsoft Teams (partial) |
+| [Jitsi Meet](https://github.com/jitsi/jitsi-meet) | TypeScript | Apache-2.0 | [stable/jitsi-meet_11509](https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11509) | 30300 | Zoom (full), Microsoft Teams (partial) |
 | [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | TypeScript | LGPL-3.0 | [v4.0.4](https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.4) signed | 9294 | Zoom (partial) |
 | [MiroTalk P2P](https://github.com/miroslavpejic85/mirotalk) | JavaScript | AGPL-3.0 | none | 4856 | Zoom (partial) |
 | [MiroTalk SFU](https://github.com/miroslavpejic85/mirotalksfu) | JavaScript | AGPL-3.0 | none | 3164 | Zoom (partial) |

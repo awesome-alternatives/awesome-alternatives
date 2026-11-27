@@ -7,7 +7,7 @@ Route, authenticate and rate-limit API traffic in front of services.
 | [Kong Gateway](https://github.com/Kong/kong) | Lua | Apache-2.0 | [3.9.5](https://github.com/Kong/kong/releases/tag/3.9.5) signed | 44421 | Apigee (partial) |
 | [Apache APISIX](https://github.com/apache/apisix) | Lua | Apache-2.0 | [3.21.0](https://github.com/apache/apisix/releases/tag/3.21.0) signed | 17381 | Kong Gateway (full) |
 | [Tyk](https://github.com/TykTechnologies/tyk) | Go | Other | [v5.16.0](https://github.com/TykTechnologies/tyk/releases/tag/v5.16.0) signed | 10901 | Kong Gateway (full) |
-| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.6](https://github.com/higress-group/higress/releases/tag/v2.2.6) | 9864 | Kong Gateway (partial) |
+| [Higress](https://github.com/higress-group/higress) | Go | Apache-2.0 | [v2.2.6](https://github.com/higress-group/higress/releases/tag/v2.2.6) | 9866 | Kong Gateway (partial) |
 | [Apache ShenYu](https://github.com/apache/shenyu) | Java | Apache-2.0 | [v2.7.2](https://github.com/apache/shenyu/releases/tag/v2.7.2) | 8935 | Kong Gateway (partial) |
 | [Easegress](https://github.com/easegress-io/easegress) | Go | Apache-2.0 | [v2.11.0](https://github.com/easegress-io/easegress/releases/tag/v2.11.0) signed | 5870 | Kong Gateway (partial) |
 | [KrakenD](https://github.com/krakend/krakend-ce) | Go | Apache-2.0 | [v3.0.6](https://github.com/krakend/krakend-ce/releases/tag/v3.0.6) signed | 2707 | Kong Gateway (partial) |

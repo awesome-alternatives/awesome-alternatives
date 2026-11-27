@@ -4,13 +4,13 @@ Install dependencies, manage environments and lock Python projects.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.10](https://github.com/astral-sh/uv/releases/tag/0.13.10) signed | 92733 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
-| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.15](https://github.com/pyenv/pyenv/releases/tag/v2.8.15) | 45186 | none |
+| [uv](https://github.com/astral-sh/uv) | Rust | Apache-2.0 | [0.13.10](https://github.com/astral-sh/uv/releases/tag/0.13.10) signed | 92741 | pip (full), Poetry (full), Pipenv (full), pyenv (full), pip-tools (full) |
+| [pyenv](https://github.com/pyenv/pyenv) | Shell | MIT | [v2.8.15](https://github.com/pyenv/pyenv/releases/tag/v2.8.15) | 45185 | none |
 | [Poetry](https://github.com/python-poetry/poetry) | Python | MIT | [2.5.2](https://github.com/python-poetry/poetry/releases/tag/2.5.2) | 34312 | Pipenv (full) |
 | [Pipenv](https://github.com/pypa/pipenv) | Python | MIT | [v2026.12.1](https://github.com/pypa/pipenv/releases/tag/v2026.12.1) | 25022 | none |
-| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.19.1](https://github.com/pypa/pipx/releases/tag/1.19.1) | 13038 | none |
-| [pip](https://github.com/pypa/pip) | Python | MIT | [26.3](https://github.com/pypa/pip/releases/tag/26.3) | 10329 | none |
-| [PDM](https://github.com/pdm-project/pdm) | Python | MIT | [2.29.7](https://github.com/pdm-project/pdm/releases/tag/2.29.7) | 8709 | Poetry (full), Pipenv (full) |
+| [pipx](https://github.com/pypa/pipx) | Python | MIT | [1.19.1](https://github.com/pypa/pipx/releases/tag/1.19.1) | 13040 | none |
+| [pip](https://github.com/pypa/pip) | Python | MIT | [26.3](https://github.com/pypa/pip/releases/tag/26.3) | 10330 | none |
+| [PDM](https://github.com/pdm-project/pdm) | Python | MIT | [2.29.7](https://github.com/pdm-project/pdm/releases/tag/2.29.7) | 8711 | Poetry (full), Pipenv (full) |
 | [mamba](https://github.com/mamba-org/mamba) | C++ | BSD-3-Clause | [2.10.0](https://github.com/mamba-org/mamba/releases/tag/2.10.0) | 8128 | conda (drop-in) |
 | [pixi](https://github.com/prefix-dev/pixi) | Rust | BSD-3-Clause | [v0.85.0](https://github.com/prefix-dev/pixi/releases/tag/v0.85.0) | 8020 | conda (full), Poetry (partial) |
 | [pip-tools](https://github.com/pypa/pip-tools) | Python | BSD-3-Clause | [v7.7.0](https://github.com/pypa/pip-tools/releases/tag/v7.7.0) | 8003 | Pipenv (partial), Poetry (partial) |

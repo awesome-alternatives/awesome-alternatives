@@ -6,10 +6,10 @@ Trace, evaluate and monitor LLM applications.
 |---|---|---|---|---:|---|
 | [Langfuse](https://github.com/langfuse/langfuse) | TypeScript | Other | [v4.88.0](https://github.com/langfuse/langfuse/releases/tag/v4.88.0) | 37905 | LangSmith (full), W&B Weave (full), Braintrust (partial) |
 | [Opik](https://github.com/comet-ml/opik) | Java | Apache-2.0 | [2.3.6](https://github.com/comet-ml/opik/releases/tag/2.3.6) signed | 23518 | LangSmith (full), W&B Weave (full), Braintrust (full) |
-| [Arize Phoenix](https://github.com/Arize-ai/phoenix) | Python | Other | [arize-phoenix-v22.1.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v22.1.0) signed | 12448 | LangSmith (full), W&B Weave (full) |
+| [Arize Phoenix](https://github.com/Arize-ai/phoenix) | Python | Other | [arize-phoenix-v22.1.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v22.1.0) signed | 12449 | LangSmith (full), W&B Weave (full) |
 | [Evidently](https://github.com/evidentlyai/evidently) | Jupyter Notebook | Apache-2.0 | [v0.7.23](https://github.com/evidentlyai/evidently/releases/tag/v0.7.23) | 8085 | LangSmith (partial) |
 | [Helicone](https://github.com/Helicone/helicone) | TypeScript | Apache-2.0 | [v2025.08.21-1](https://github.com/Helicone/helicone/releases/tag/v2025.08.21-1) | 6294 | LangSmith (partial) |
-| [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.31.0](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.31.0) signed | 5056 | LangSmith (full) |
+| [LangWatch](https://github.com/langwatch/langwatch) | TypeScript | Apache-2.0 | [langwatch-3.31.0](https://github.com/langwatch/langwatch/releases/tag/langwatch-3.31.0) signed | 5055 | LangSmith (full) |
 | [Agenta](https://github.com/Agenta-AI/agenta) | TypeScript | Other | [v0.131.1](https://github.com/Agenta-AI/agenta/releases/tag/v0.131.1) signed | 4942 | LangSmith (full) |
 | [Laminar](https://github.com/lmnr-ai/lmnr) | TypeScript | Apache-2.0 | [v0.3.4](https://github.com/lmnr-ai/lmnr/releases/tag/v0.3.4) signed | 3528 | LangSmith (full) |
 | [OpenLIT](https://github.com/openlit/openlit) | TypeScript | Apache-2.0 | [openlit-2.2.0](https://github.com/openlit/openlit/releases/tag/openlit-2.2.0) | 3106 | LangSmith (partial) |

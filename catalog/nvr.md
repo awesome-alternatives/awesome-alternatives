@@ -4,8 +4,8 @@ Record, watch and analyse IP camera streams on your own hardware.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Frigate](https://github.com/blakeblackshear/frigate) | Python | MIT | [v0.18.3](https://github.com/blakeblackshear/frigate/releases/tag/v0.18.3) signed | 37956 | Blue Iris (full), Ring (partial), Google Nest Aware (partial) |
-| [go2rtc](https://github.com/AlexxIT/go2rtc) | Go | MIT | [v1.9.15](https://github.com/AlexxIT/go2rtc/releases/tag/v1.9.15) | 14744 | Scrypted (partial) |
+| [Frigate](https://github.com/blakeblackshear/frigate) | Python | MIT | [v0.18.3](https://github.com/blakeblackshear/frigate/releases/tag/v0.18.3) signed | 37959 | Blue Iris (full), Ring (partial), Google Nest Aware (partial) |
+| [go2rtc](https://github.com/AlexxIT/go2rtc) | Go | MIT | [v1.9.15](https://github.com/AlexxIT/go2rtc/releases/tag/v1.9.15) | 14746 | Scrypted (partial) |
 | [Scrypted](https://github.com/koush/scrypted) | TypeScript | Other | [v0.147.0](https://github.com/koush/scrypted/releases/tag/v0.147.0) | 6066 | Blue Iris (partial), Google Nest Aware (partial), Ring (partial) |
 | [ZoneMinder](https://github.com/ZoneMinder/zoneminder) | PHP | GPL-2.0 | [1.38.6](https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.6) | 6000 | Blue Iris (full) |
 | [motionEye](https://github.com/motioneye-project/motioneye) | Python | GPL-3.0 | [0.44.0](https://github.com/motioneye-project/motioneye/releases/tag/0.44.0) signed | 4735 | Blue Iris (partial) |

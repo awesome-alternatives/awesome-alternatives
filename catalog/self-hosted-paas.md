@@ -4,10 +4,10 @@ Deploy apps and databases to your own servers from a git push or a dashboard.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.7.9](https://github.com/coollabsio/coolify/releases/tag/v4.7.9) | 66625 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
-| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.4](https://github.com/Dokploy/dokploy/releases/tag/v0.31.4) signed | 38732 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Coolify](https://github.com/coollabsio/coolify) | PHP | Apache-2.0 | [v4.7.9](https://github.com/coollabsio/coolify/releases/tag/v4.7.9) | 66634 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
+| [Dokploy](https://github.com/Dokploy/dokploy) | TypeScript | Other | [v0.31.4](https://github.com/Dokploy/dokploy/releases/tag/v0.31.4) signed | 38734 | Heroku (full), Render (full), Railway (full), Vercel (partial), Netlify (partial) |
 | [Dokku](https://github.com/dokku/dokku) | Shell | MIT | [v0.38.34](https://github.com/dokku/dokku/releases/tag/v0.38.34) | 32239 | Heroku (full) |
-| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.2.0](https://github.com/labring/sealos/releases/tag/v5.2.0) signed | 18409 | Heroku (partial) |
+| [Sealos](https://github.com/labring/sealos) | Go | Other | [v5.2.0](https://github.com/labring/sealos/releases/tag/v5.2.0) signed | 18411 | Heroku (partial) |
 | [CapRover](https://github.com/caprover/caprover) | TypeScript | Other | [v1.16.1](https://github.com/caprover/caprover/releases/tag/v1.16.1) signed | 15210 | Heroku (full), Vercel (partial), Netlify (partial), Railway (full), Render (full) |
 | [Kamal](https://github.com/basecamp/kamal) | Ruby | MIT | [v2.12.0](https://github.com/basecamp/kamal/releases/tag/v2.12.0) | 14763 | Heroku (partial) |
 | [Piku](https://github.com/piku/piku) | Python | MIT | [v1.0.0](https://github.com/piku/piku/releases/tag/v1.0.0) signed | 6606 | Heroku (partial) |

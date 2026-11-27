@@ -4,12 +4,12 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.27-8767.ge6bc750](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.27-8767.ge6bc750) signed | 47411 | RSS.app (full) |
-| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.18.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.18.0) signed | 39372 | Feedly (full), Inoreader (full) |
-| [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.31.0](https://github.com/FreshRSS/FreshRSS/releases/tag/1.31.0) signed | 16680 | Feedly (full), Inoreader (full) |
-| [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [iOS-7.3.1-7244](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/iOS-7.3.1-7244) | 10576 | Feedly (partial) |
+| [RSSHub](https://github.com/DIYgod/RSSHub) | TypeScript | AGPL-3.0 | [v2026.11.27-8768.gbfc93be](https://github.com/DIYgod/RSSHub/releases/tag/v2026.11.27-8768.gbfc93be) signed | 47416 | RSS.app (full) |
+| [Folo](https://github.com/RSSNext/Folo) | TypeScript | AGPL-3.0 | [desktop/v1.18.0](https://github.com/RSSNext/Folo/releases/tag/desktop/v1.18.0) signed | 39370 | Feedly (full), Inoreader (full) |
+| [FreshRSS](https://github.com/FreshRSS/FreshRSS) | PHP | AGPL-3.0 | [1.31.0](https://github.com/FreshRSS/FreshRSS/releases/tag/1.31.0) signed | 16681 | Feedly (full), Inoreader (full) |
+| [NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire) | Swift | MIT | [iOS-7.3.1-7244](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/iOS-7.3.1-7244) | 10578 | Feedly (partial) |
 | [Miniflux](https://github.com/miniflux/v2) | Go | Apache-2.0 | [2.3.5](https://github.com/miniflux/v2/releases/tag/2.3.5) | 9981 | Feedly (full), Inoreader (partial) |
-| [Fluent Reader](https://github.com/yang991178/fluent-reader) | TypeScript | BSD-3-Clause | [v1.3.2](https://github.com/yang991178/fluent-reader/releases/tag/v1.3.2) | 9815 | Feedly (partial) |
+| [Fluent Reader](https://github.com/yang991178/fluent-reader) | TypeScript | BSD-3-Clause | [v1.3.2](https://github.com/yang991178/fluent-reader/releases/tag/v1.3.2) | 9817 | Feedly (partial) |
 | [RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge) | PHP | Unlicense | [2025-08-05](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2025-08-05) signed | 9379 | RSS.app (partial) |
 | [Read You](https://github.com/ReadYouApp/ReadYou) | Kotlin | GPL-3.0 | [0.16.2](https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2) signed | 7720 | Feedly (partial) |
 | [NewsBlur](https://github.com/samuelclay/NewsBlur) | HTML | MIT | [v0.2.2](https://github.com/samuelclay/NewsBlur/releases/tag/v0.2.2) | 7700 | Feedly (full) |
@@ -20,8 +20,8 @@ Follow sites through RSS and Atom feeds, and produce feeds for sites and account
 | [CommaFeed](https://github.com/Athou/commafeed) | Java | Apache-2.0 | [7.5.3](https://github.com/Athou/commafeed/releases/tag/7.5.3) | 3654 | Feedly (full) |
 | [Feeder](https://github.com/spacecowboy/Feeder) | Kotlin | GPL-3.0 | [2.26.0](https://github.com/spacecowboy/Feeder/releases/tag/2.26.0) signed | 3146 | Feedly (partial) |
 | [selfoss](https://github.com/fossar/selfoss) | HTML | GPL-3.0 | [2.19](https://github.com/fossar/selfoss/releases/tag/2.19) signed | 2480 | Feedly (full) |
-| [Fusion](https://github.com/0x2E/fusion) | Go | MIT | [v1.3.2](https://github.com/0x2E/fusion/releases/tag/v1.3.2) signed | 2442 | Feedly (full) |
+| [Fusion](https://github.com/0x2E/fusion) | Go | MIT | [v1.3.2](https://github.com/0x2E/fusion/releases/tag/v1.3.2) signed | 2443 | Feedly (full) |
 | [Capy Reader](https://github.com/jocmp/capyreader) | Kotlin | GPL-3.0 | [2026.11.1217](https://github.com/jocmp/capyreader/releases/tag/2026.11.1217) | 1494 | Feedly (partial) |
-| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 893 | Feedly (full), Inoreader (partial) |
+| [Tiny Tiny RSS](https://github.com/tt-rss/tt-rss) | PHP | GPL-3.0 | none | 894 | Feedly (full), Inoreader (partial) |
 
 [All categories](../README.md#catalog)

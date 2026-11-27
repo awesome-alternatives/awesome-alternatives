@@ -4,8 +4,8 @@ Generate one-time codes for two-factor authentication.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ente-cli-v0.4.6](https://github.com/ente/ente/releases/tag/ente-cli-v0.4.6) signed | 30550 | Twilio Authy (full), Google Authenticator (full) |
-| [Aegis](https://github.com/beemdevelopment/Aegis) | Java | GPL-3.0 | [v3.4.3](https://github.com/beemdevelopment/Aegis/releases/tag/v3.4.3) | 13649 | Twilio Authy (full), Google Authenticator (full) |
+| [Ente Auth](https://github.com/ente/ente) | Dart | AGPL-3.0 | [ente-cli-v0.4.6](https://github.com/ente/ente/releases/tag/ente-cli-v0.4.6) signed | 30552 | Twilio Authy (full), Google Authenticator (full) |
+| [Aegis](https://github.com/beemdevelopment/Aegis) | Java | GPL-3.0 | [v3.4.3](https://github.com/beemdevelopment/Aegis/releases/tag/v3.4.3) | 13651 | Twilio Authy (full), Google Authenticator (full) |
 | [Stratum](https://github.com/stratumauth/app) | C# | GPL-3.0 | [v1.7.0](https://github.com/stratumauth/app/releases/tag/v1.7.0) signed | 4652 | Twilio Authy (full), Google Authenticator (full) |
 | [2FAuth](https://github.com/Bubka/2FAuth) | PHP | AGPL-3.0 | [v9.0.3](https://github.com/Bubka/2FAuth/releases/tag/v9.0.3) | 4246 | Google Authenticator (partial) |
 | [FreeOTP](https://github.com/freeotp/freeotp-android) | Java | Apache-2.0 | [v2.0.6](https://github.com/freeotp/freeotp-android/releases/tag/v2.0.6) | 1688 | Google Authenticator (full) |

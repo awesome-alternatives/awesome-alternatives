@@ -4,10 +4,10 @@ Build, send and share HTTP, GraphQL and gRPC requests from a desktop or browser 
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.11.0](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.11.0) signed | 80986 | Insomnia (full), Postman (full) |
-| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.4.0](https://github.com/usebruno/bruno/releases/tag/v4.4.0) | 48599 | Insomnia (full), Postman (full) |
+| [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | TypeScript | MIT | [2026.11.0](https://github.com/hoppscotch/hoppscotch/releases/tag/2026.11.0) signed | 80988 | Insomnia (full), Postman (full) |
+| [Bruno](https://github.com/usebruno/bruno) | JavaScript | MIT | [v4.4.0](https://github.com/usebruno/bruno/releases/tag/v4.4.0) | 48605 | Insomnia (full), Postman (full) |
 | [Insomnia](https://github.com/Kong/insomnia) | TypeScript | Apache-2.0 | [core@13.5.0](https://github.com/Kong/insomnia/releases/tag/core%4013.5.0) | 40196 | Postman (full) |
-| [Yaak](https://github.com/mountain-loop/yaak) | Rust | MIT | [v2026.9.1](https://github.com/mountain-loop/yaak/releases/tag/v2026.9.1) | 19555 | Postman (full), Insomnia (full) |
+| [Yaak](https://github.com/mountain-loop/yaak) | Rust | MIT | [v2026.9.1](https://github.com/mountain-loop/yaak/releases/tag/v2026.9.1) | 19556 | Postman (full), Insomnia (full) |
 | [gRPCurl](https://github.com/fullstorydev/grpcurl) | Go | MIT | [v1.9.4](https://github.com/fullstorydev/grpcurl/releases/tag/v1.9.4) | 12892 | Postman (partial) |
 | [Posting](https://github.com/darrenburns/posting) | Go | Apache-2.0 | [2.11.2](https://github.com/darrenburns/posting/releases/tag/2.11.2) signed | 12662 | Postman (partial) |
 | [Requestly](https://github.com/requestly/requestly) | unknown | Other | [changelog-2026.03.23](https://github.com/requestly/requestly/releases/tag/changelog-2026.03.23) | 6772 | Postman (full) |

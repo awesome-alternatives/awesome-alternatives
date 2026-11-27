@@ -4,8 +4,8 @@ Self-hosted and federated social networks, for short public posts, photos and vi
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.6](https://github.com/mastodon/mastodon/releases/tag/v4.7.6) | 50665 | X (Twitter) (full), Threads (full) |
-| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.1](https://github.com/diaspora/diaspora/releases/tag/v0.10.1) signed | 13651 | Facebook (partial) |
+| [Mastodon](https://github.com/mastodon/mastodon) | Ruby | AGPL-3.0 | [v4.7.6](https://github.com/mastodon/mastodon/releases/tag/v4.7.6) | 50670 | X (Twitter) (full), Threads (full) |
+| [diaspora*](https://github.com/diaspora/diaspora) | Ruby | AGPL-3.0 | [v0.10.1](https://github.com/diaspora/diaspora/releases/tag/v0.10.1) signed | 13652 | Facebook (partial) |
 | [Misskey](https://github.com/misskey-dev/misskey) | TypeScript | AGPL-3.0 | [2026.11.1](https://github.com/misskey-dev/misskey/releases/tag/2026.11.1) | 11405 | X (Twitter) (full), Threads (full) |
 | [Pixelfed](https://github.com/pixelfed/pixelfed) | PHP | AGPL-3.0 | [v0.15.2](https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2) signed | 7155 | Instagram (full), TikTok (partial) |
 | [HumHub](https://github.com/humhub/humhub) | PHP | Other | [v1.19.5](https://github.com/humhub/humhub/releases/tag/v1.19.5) | 6792 | Facebook (partial) |

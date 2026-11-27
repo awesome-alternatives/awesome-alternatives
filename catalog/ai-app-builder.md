@@ -4,7 +4,7 @@ Generate and edit a web app or interface from a chat prompt, with a live preview
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Python | MIT | none | 81461 | v0 (partial) |
+| [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Python | MIT | none | 81465 | v0 (partial) |
 | [OpenUI](https://github.com/wandb/openui) | TypeScript | Apache-2.0 | none | 22773 | v0 (partial), Bolt.new (partial), Lovable (partial) |
 | [Dyad](https://github.com/dyad-sh/dyad) | TypeScript | Other | [v1.24.0](https://github.com/dyad-sh/dyad/releases/tag/v1.24.0) signed | 22464 | Lovable (partial), Bolt.new (partial), v0 (full) |
 | [VibeSDK](https://github.com/cloudflare/vibesdk) | TypeScript | MIT | [v1.5.0](https://github.com/cloudflare/vibesdk/releases/tag/v1.5.0) signed | 5489 | Bolt.new (full) |

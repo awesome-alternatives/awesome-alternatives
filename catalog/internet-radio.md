@@ -6,6 +6,6 @@ Run a web radio station with playlists, live DJs, scheduling and streaming.
 |---|---|---|---|---:|---|
 | [AzuraCast](https://github.com/AzuraCast/AzuraCast) | PHP | AGPL-3.0 | [0.24.1](https://github.com/AzuraCast/AzuraCast/releases/tag/0.24.1) signed | 4118 | Radio.co (full) |
 | [Liquidsoap](https://github.com/savonet/liquidsoap) | OCaml | GPL-2.0 | [v2.4.6](https://github.com/savonet/liquidsoap/releases/tag/v2.4.6) | 1763 | Radio.co (partial) |
-| [LibreTime](https://github.com/libretime/libretime) | PHP | AGPL-3.0 | [4.5.0](https://github.com/libretime/libretime/releases/tag/4.5.0) signed | 941 | Radio.co (full) |
+| [LibreTime](https://github.com/libretime/libretime) | PHP | AGPL-3.0 | [4.5.0](https://github.com/libretime/libretime/releases/tag/4.5.0) signed | 942 | Radio.co (full) |
 
 [All categories](../README.md#catalog)

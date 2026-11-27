@@ -8,6 +8,6 @@ Changelogs built from commits or pull requests, without driving the release itse
 | [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) | TypeScript | ISC | [template-v1.4.1](https://github.com/conventional-changelog/conventional-changelog/releases/tag/template-v1.4.1) signed | 8533 | semantic-release (partial) |
 | [GitHub Changelog Generator](https://github.com/github-changelog-generator/github-changelog-generator) | Ruby | MIT | [v1.18.0](https://github.com/github-changelog-generator/github-changelog-generator/releases/tag/v1.18.0) | 7541 | conventional-changelog (full) |
 | [Release Drafter](https://github.com/release-drafter/release-drafter) | TypeScript | ISC | [v7.11.0](https://github.com/release-drafter/release-drafter/releases/tag/v7.11.0) signed | 3957 | conventional-changelog (partial) |
-| [towncrier](https://github.com/twisted/towncrier) | Python | MIT | [26.9.0](https://github.com/twisted/towncrier/releases/tag/26.9.0) | 932 | conventional-changelog (partial) |
+| [towncrier](https://github.com/twisted/towncrier) | Python | MIT | [26.9.0](https://github.com/twisted/towncrier/releases/tag/26.9.0) | 933 | conventional-changelog (partial) |
 
 [All categories](../README.md#catalog)

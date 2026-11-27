@@ -4,9 +4,9 @@ Fetch files and media from the web from a terminal or a queue, or download and s
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Python | Unlicense | [2026.11.23](https://github.com/yt-dlp/yt-dlp/releases/tag/2026.11.23) | 211027 | none |
-| [aria2](https://github.com/aria2/aria2) | C++ | GPL-2.0 | [release-1.37.0](https://github.com/aria2/aria2/releases/tag/release-1.37.0) signed | 43626 | none |
-| [qBittorrent](https://github.com/qbittorrent/qBittorrent) | C++ | Other | [release-5.3.1](https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.3.1) signed | 41976 | none |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Python | Unlicense | [2026.11.23](https://github.com/yt-dlp/yt-dlp/releases/tag/2026.11.23) | 211065 | none |
+| [aria2](https://github.com/aria2/aria2) | C++ | GPL-2.0 | [release-1.37.0](https://github.com/aria2/aria2/releases/tag/release-1.37.0) signed | 43629 | none |
+| [qBittorrent](https://github.com/qbittorrent/qBittorrent) | C++ | Other | [release-5.3.1](https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.3.1) signed | 41978 | none |
 | [Transmission](https://github.com/transmission/transmission) | C++ | Other | [4.1.4](https://github.com/transmission/transmission/releases/tag/4.1.4) signed | 15475 | none |
 
 [All categories](../README.md#catalog)
