@@ -8162,7 +8162,6 @@
   {"type":"released","slug":"homer-dashboard","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91","from":"v26.11.2","to":"v26.11.3"},
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91"},
   {"type":"released","slug":"windmill","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91","from":"v1.874.0","to":"v1.875.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-14T16:20:28.139Z","commit":"86330a0241598bfb43a9a0fc0bc5fd2444494bc6","from":"v0.56.3","to":"v0.56.4"},
   {"type":"released","slug":"lfsx","at":"2026-11-14T21:14:19.006Z","commit":"555964ea773283ec45595c31cac6d9fd4d018fc9","from":"site@2026.11.11","to":"site@2026.11.12"},
   {"type":"released","slug":"agent-qa","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.3.8","to":"v0.3.9"},
   {"type":"released","slug":"bigcapital","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.25.45","to":"v0.25.46"},
@@ -10131,5 +10130,6 @@
   {"type":"released","slug":"zettlr","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v4.10.0","to":"v4.11.0"},
   {"type":"added","slug":"koru","at":"2026-11-27T08:13:21.974Z","commit":null},
   {"type":"released","slug":"stashden","at":"2026-11-27T08:17:40.277Z","commit":null,"from":"v0.57.0","to":"v0.57.1"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T08:25:54.168Z","commit":null,"from":"v0.57.1","to":"v0.58.0"}
+  {"type":"released","slug":"stashden","at":"2026-11-27T08:25:54.168Z","commit":null,"from":"v0.57.1","to":"v0.58.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T08:35:23.562Z","commit":null,"from":"v0.58.0","to":"v0.59.0"}
 ]

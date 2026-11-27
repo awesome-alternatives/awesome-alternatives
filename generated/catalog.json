@@ -282917,7 +282917,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
         "topics": [
           "agpl",
@@ -282936,27 +282936,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T08:24:56Z",
+        "pushedAt": "2026-11-27T08:34:08Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": true,
-        "since": "2026-10-28T08:25:29.527Z"
+        "since": "2026-10-28T08:34:50.629Z"
       },
       "starHistory": {
         "from": "2026-10-27",
-        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.58.0",
-        "publishedAt": "2026-11-27T08:24:58Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.58.0",
+        "tag": "v0.59.0",
+        "publishedAt": "2026-11-27T08:34:10Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.59.0",
         "source": "release",
         "signed": false,
-        "tagOid": "01b643bd17d55979073b8b5ac6c33249de65a0f1"
+        "tagOid": "5a2eb93fc9f09207762046e0af75cb3439474ca5"
       },
       "releases": [
+        {
+          "tag": "v0.59.0",
+          "name": "feat(web): translate the web app into English and French (#531)",
+          "publishedAt": "2026-11-27T08:34:10Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.59.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.58.0",
           "name": "feat(api): answer a failed precondition with the current ETag (#529)",
@@ -282983,13 +282990,6 @@
           "name": "fix(deps): update rust crate gpui-kit to 0.11.0 (#498)",
           "publishedAt": "2026-11-24T18:01:40Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.10",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.56.9",
-          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.1 (#479)",
-          "publishedAt": "2026-11-19T20:41:49Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.9",
           "prerelease": false
         }
       ],
