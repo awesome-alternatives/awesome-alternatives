@@ -8462,7 +8462,6 @@
   {"type":"released","slug":"ytt","at":"2026-11-17T05:17:23.453Z","commit":"43e02b9aa45e5ada2c8e83e2c70029d26d9aa92b","from":"v0.55.4","to":"v0.56.0"},
   {"type":"released","slug":"zrok","at":"2026-11-17T05:17:23.453Z","commit":"43e02b9aa45e5ada2c8e83e2c70029d26d9aa92b","from":"v2.0.9","to":"v2.0.10"},
   {"type":"released","slug":"zwave-js-ui","at":"2026-11-17T05:17:23.453Z","commit":"43e02b9aa45e5ada2c8e83e2c70029d26d9aa92b","from":"v11.26.2","to":"v11.27.0"},
-  {"type":"released","slug":"stashden","at":"2026-11-17T12:03:39.277Z","commit":"75249a93d719aaf6fc90dfbacb80ff3ebd21f8b4","from":"v0.56.5","to":"v0.56.6"},
   {"type":"released","slug":"ferrflow","at":"2026-11-17T12:22:57.056Z","commit":"4c8d565208d6880f0d583b0f79b644879813d5ed","from":"v7.36.7","to":"v7.36.8"},
   {"type":"released","slug":"agent-zero","at":"2026-11-18T05:17:30.738Z","commit":"e5565bc872d84ba3be88f20e82efe7b2fbf6eb76","from":"v2.15","to":"v2.16"},
   {"type":"released","slug":"anysub","at":"2026-11-18T05:17:30.738Z","commit":"e5565bc872d84ba3be88f20e82efe7b2fbf6eb76","from":"v4.2.0","to":"v4.3.0"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"tolgee","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"v3.246.5","to":"v3.247.0"},
   {"type":"released","slug":"stashden","at":"2026-11-27T08:47:06.253Z","commit":null,"from":"v0.57.1","to":"v0.60.0"},
   {"type":"released","slug":"stashden","at":"2026-11-27T08:58:49.466Z","commit":null,"from":"v0.60.0","to":"v0.60.1"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T11:13:06.681Z","commit":null,"from":"v0.60.1","to":"v0.61.0"}
+  {"type":"released","slug":"stashden","at":"2026-11-27T11:13:06.681Z","commit":null,"from":"v0.60.1","to":"v0.61.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T11:59:54.428Z","commit":null,"from":"v0.61.0","to":"v0.61.1"}
 ]

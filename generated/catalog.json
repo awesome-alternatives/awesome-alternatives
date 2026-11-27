@@ -282765,27 +282765,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T11:11:20Z",
+        "pushedAt": "2026-11-27T11:58:48Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-28T11:12:19.291Z"
+        "since": "2026-10-28T11:59:29.746Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.61.0",
-        "publishedAt": "2026-11-27T11:11:22Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.0",
+        "tag": "v0.61.1",
+        "publishedAt": "2026-11-27T11:58:50Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.1",
         "source": "release",
         "signed": false,
-        "tagOid": "f15cf38287b980ef69c2ef62f955ee6808882e7f"
+        "tagOid": "4d8978a8283fdbb166b50941019ad09c8d2362a8"
       },
       "releases": [
+        {
+          "tag": "v0.61.1",
+          "name": "fix(app): embed the application icon in the Windows executable (#550)",
+          "publishedAt": "2026-11-27T11:58:50Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.1",
+          "prerelease": false
+        },
         {
           "tag": "v0.61.0",
           "name": "feat(web): open a file through one table of openers, addressable by link (#543)",
@@ -282812,13 +282819,6 @@
           "name": "feat(web): translate the web app into English and French (#531)",
           "publishedAt": "2026-11-27T08:34:10Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.59.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.58.0",
-          "name": "feat(api): answer a failed precondition with the current ETag (#529)",
-          "publishedAt": "2026-11-27T08:24:58Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.58.0",
           "prerelease": false
         }
       ],
