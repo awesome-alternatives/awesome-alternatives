@@ -8685,7 +8685,6 @@
   {"type":"released","slug":"pigallery2","at":"2026-11-18T10:20:21.759Z","commit":"21d76732c487b1efc481bc80ac6b9bc0bfc494a7","from":"3.5.2","to":"3.8.0"},
   {"type":"released","slug":"vscode","at":"2026-11-18T10:20:21.759Z","commit":"21d76732c487b1efc481bc80ac6b9bc0bfc494a7","from":"1.146.0","to":"1.147.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-18T12:51:25.872Z","commit":"059cb82f85bcc078493d1b21382e6a9591d55c37","from":"site@2026.11.13","to":"site@2026.11.14"},
-  {"type":"released","slug":"stashden","at":"2026-11-18T13:25:27.162Z","commit":"f7101e5aa1e448b58b07cae2c65c6a7228dc9f47","from":"v0.56.7","to":"v0.56.8"},
   {"type":"released","slug":"acme-sh","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"3.1.6","to":"3.1.7"},
   {"type":"released","slug":"agenta","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"v0.128.14","to":"v0.129.0"},
   {"type":"released","slug":"alf-io","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"2.0-M5-2609","to":"2.0-M5-2609-2"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-27T11:13:06.681Z","commit":null,"from":"v0.60.1","to":"v0.61.0"},
   {"type":"released","slug":"stashden","at":"2026-11-27T11:59:54.428Z","commit":null,"from":"v0.61.0","to":"v0.61.1"},
   {"type":"released","slug":"stashden","at":"2026-11-27T12:08:51.942Z","commit":null,"from":"v0.61.1","to":"v0.61.2"},
-  {"type":"released","slug":"lfsx","at":"2026-11-27T13:16:32.979Z","commit":null,"from":"v1.26.59","to":"site@2026.11.18"}
+  {"type":"released","slug":"lfsx","at":"2026-11-27T13:16:32.979Z","commit":null,"from":"v1.26.59","to":"site@2026.11.18"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T13:40:53.881Z","commit":null,"from":"v0.61.2","to":"v0.62.0"}
 ]
