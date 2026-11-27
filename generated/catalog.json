@@ -163843,27 +163843,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-27T08:11:15Z",
+        "pushedAt": "2026-11-27T13:15:30Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 4,
         "exact": true,
-        "since": "2026-10-28T08:12:41.807Z"
+        "since": "2026-10-28T13:16:11.671Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7,7,7,7,7,7,7,8,8,8]
       },
       "release": {
-        "tag": "v1.26.59",
-        "publishedAt": "2026-11-26T16:15:37Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.59",
+        "tag": "site@2026.11.18",
+        "publishedAt": "2026-11-27T13:15:36Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.18",
         "source": "release",
         "signed": true,
-        "tagOid": "d918bcd00fd7676eadfcbdd6003501593ba002c3"
+        "tagOid": "f49e4b27bd1c51531c4c7d5edd1ea96b0fe42742"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.18",
+          "name": "refactor(site): use the shared segmented control (#804)",
+          "publishedAt": "2026-11-27T13:15:36Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.18",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.59",
           "name": "fix(deps): update ferrlabs npm packages to v1.26.58 (#799)",
@@ -163891,41 +163898,13 @@
           "publishedAt": "2026-11-24T08:05:53Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.57",
           "prerelease": false
-        },
-        {
-          "tag": "v1.26.56",
-          "name": "fix(deps): update ferrlabs npm packages (#788)",
-          "publishedAt": "2026-11-23T04:16:06Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.56",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "macos",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:10:21.000Z",
       "flags": [],
