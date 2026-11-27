@@ -282765,27 +282765,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T08:57:44Z",
+        "pushedAt": "2026-11-27T11:11:20Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-28T08:58:23.337Z"
+        "since": "2026-10-28T11:12:19.291Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.60.1",
-        "publishedAt": "2026-11-27T08:57:46Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.60.1",
+        "tag": "v0.61.0",
+        "publishedAt": "2026-11-27T11:11:22Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.0",
         "source": "release",
         "signed": false,
-        "tagOid": "18e11b46d23cd0b224c8b8d226b6ef5bd80c9d38"
+        "tagOid": "f15cf38287b980ef69c2ef62f955ee6808882e7f"
       },
       "releases": [
+        {
+          "tag": "v0.61.0",
+          "name": "feat(web): open a file through one table of openers, addressable by link (#543)",
+          "publishedAt": "2026-11-27T11:11:22Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.60.1",
           "name": "fix(web): show translated sign-in errors and correct the French copy (#541)",
@@ -282812,13 +282819,6 @@
           "name": "feat(api): answer a failed precondition with the current ETag (#529)",
           "publishedAt": "2026-11-27T08:24:58Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.58.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.57.1",
-          "name": "fix(web): bring light-theme text and primary buttons up to WCAG AA contrast (#527)",
-          "publishedAt": "2026-11-27T08:16:37Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.1",
           "prerelease": false
         }
       ],
