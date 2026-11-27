@@ -25,5 +25,6 @@ Personal notes on desktop and mobile, with sync.
 | [flatnotes](https://github.com/dullage/flatnotes) | Vue | MIT | [v5.5.5](https://github.com/dullage/flatnotes/releases/tag/v5.5.5) | 3290 | Google Keep (partial) |
 | [Zim](https://github.com/zim-desktop-wiki/zim-desktop-wiki) | Python | GPL-2.0 | [0.77.2](https://github.com/zim-desktop-wiki/zim-desktop-wiki/releases/tag/0.77.2) | 2206 | OneNote (partial) |
 | [Nextcloud Notes](https://github.com/nextcloud/notes) | JavaScript | AGPL-3.0 | [v6.1.1](https://github.com/nextcloud/notes/releases/tag/v6.1.1) signed | 745 | Google Keep (partial), Evernote (partial) |
+| [Koru](https://github.com/koruworks/mono) | Rust | MPL-2.0 | [v0.1.10](https://github.com/koruworks/mono/releases/tag/v0.1.10) | 56 | Evernote (partial), Notion (partial), OneNote (partial) |
 
 [All categories](../README.md#catalog)

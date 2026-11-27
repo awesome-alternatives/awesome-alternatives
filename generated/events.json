@@ -10130,5 +10130,6 @@
   {"type":"released","slug":"weechat","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v4.10.4","to":"v4.10.5"},
   {"type":"released","slug":"wekan","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v13.33","to":"v13.35"},
   {"type":"released","slug":"windmill","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v1.885.0","to":"v1.886.0"},
-  {"type":"released","slug":"zettlr","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v4.10.0","to":"v4.11.0"}
+  {"type":"released","slug":"zettlr","at":"2026-11-27T05:17:33.405Z","commit":null,"from":"v4.10.0","to":"v4.11.0"},
+  {"type":"added","slug":"koru","at":"2026-11-27T08:13:21.974Z","commit":null}
 ]

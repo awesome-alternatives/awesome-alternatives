@@ -165,7 +165,7 @@ in Rust"), is on [awesome-alternatives.com](https://awesome-alternatives.com).
 | [Mesh VPNs](catalog/mesh-vpn.md) | 10 | Connect devices and servers in a private WireGuard network, wherever they are. |
 | [Remote desktop](catalog/remote-desktop.md) | 9 | Control another computer over the network, for support or remote work. |
 | [Wikis and knowledge bases](catalog/knowledge-base.md) | 18 | Shared pages and documentation for teams, edited in the browser. |
-| [Note-taking apps](catalog/note-taking.md) | 21 | Personal notes on desktop and mobile, with sync. |
+| [Note-taking apps](catalog/note-taking.md) | 22 | Personal notes on desktop and mobile, with sync. |
 | [Recipe managers](catalog/recipe-manager.md) | 8 | Keep recipes, plan meals and build shopping lists from them. |
 | [Project management](catalog/project-management.md) | 25 | Issues, tasks and boards for planning team work. |
 | [Video conferencing](catalog/video-conferencing.md) | 11 | Video meetings in the browser or an app. |

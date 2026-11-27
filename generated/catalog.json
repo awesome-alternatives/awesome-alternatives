@@ -1,6 +1,6 @@
 {
   "stats": {
-    "tools": 2756,
+    "tools": 2757,
     "categories": 344,
     "targets": 923,
     "verified": 6
@@ -19694,6 +19694,14 @@
       "bio": "A Musical Software Synthesizer",
       "website": "http://zynaddsubfx.sf.net",
       "url": "https://github.com/zynaddsubfx"
+    },
+    "koruworks": {
+      "login": "koruworks",
+      "kind": "organization",
+      "name": "Koru Works, Inc",
+      "bio": "Your private workspace for thinking, planning, and AI.",
+      "website": "https://www.koru.do",
+      "url": "https://github.com/koruworks"
     }
   },
   "tools": [
@@ -155272,6 +155280,149 @@
             "arm64",
             "x86",
             "arm"
+          ]
+        }
+      ],
+      "maintainerVerified": false,
+      "verifiedAt": null,
+      "flags": [],
+      "terms": "open",
+      "capabilities": {},
+      "deploy": []
+    },
+    {
+      "slug": "koru",
+      "name": "Koru",
+      "repository": "https://github.com/koruworks/mono",
+      "category": "note-taking",
+      "replaces": [
+        {
+          "tool": "evernote",
+          "fit": "partial",
+          "note": "Notes and documents in a desktop app for Windows, macOS and Linux, stored on your devices and synced device to device, with an Evernote (.enex) importer. No mobile app or web clipper."
+        },
+        {
+          "tool": "notion",
+          "fit": "partial",
+          "note": "Nested documents with headings, tables, checklists and attachments in a local-first desktop app, with a Notion importer."
+        },
+        {
+          "tool": "onenote",
+          "fit": "partial",
+          "note": "Desktop notebooks of documents on Windows, macOS and Linux, synced peer-to-peer without a Microsoft account, with a OneNote importer."
+        }
+      ],
+      "affiliation": null,
+      "path": null,
+      "addedAt": "2026-11-27T08:12:10.000Z",
+      "editedAt": "2026-11-27T08:12:10.000Z",
+      "factsChangedAt": null,
+      "repo": {
+        "fullName": "koruworks/mono",
+        "description": "Bring your work and your favorite AI together in one workspace. Free, fast, private, works offline. No account required. Bring your notes from Notion, Evernote and Google Docs.",
+        "homepage": "https://www.koru.do",
+        "language": "Rust",
+        "license": "MPL-2.0",
+        "stars": 56,
+        "forks": 4,
+        "topics": [
+          "documents",
+          "evernote",
+          "files",
+          "free",
+          "googledocs",
+          "iroh",
+          "local-first",
+          "markdown",
+          "mcp",
+          "mermaid",
+          "notes",
+          "notion",
+          "ocr-recognition",
+          "p2p",
+          "privacy",
+          "rust",
+          "tasks",
+          "workspaces"
+        ],
+        "databaseId": 1409294498,
+        "archived": false,
+        "fork": false,
+        "private": false,
+        "createdAt": "2026-10-07T19:42:18Z",
+        "pushedAt": "2026-11-27T06:40:45Z",
+        "defaultBranch": "main"
+      },
+      "trend": null,
+      "starHistory": {
+        "from": "2026-11-27",
+        "stars": [56]
+      },
+      "release": {
+        "tag": "v0.1.10",
+        "publishedAt": "2026-11-27T07:17:45Z",
+        "url": "https://github.com/koruworks/mono/releases/tag/v0.1.10",
+        "source": "release",
+        "signed": false
+      },
+      "releases": [
+        {
+          "tag": "v0.1.10",
+          "name": "Koru 0.1.10",
+          "publishedAt": "2026-11-27T07:17:45Z",
+          "url": "https://github.com/koruworks/mono/releases/tag/v0.1.10",
+          "prerelease": false
+        },
+        {
+          "tag": "nightly",
+          "name": "Koru nightly",
+          "publishedAt": "2026-10-25T21:30:32Z",
+          "url": "https://github.com/koruworks/mono/releases/tag/nightly",
+          "prerelease": true
+        },
+        {
+          "tag": "v0.1.9",
+          "name": "Koru 0.1.9",
+          "publishedAt": "2026-11-20T06:59:00Z",
+          "url": "https://github.com/koruworks/mono/releases/tag/v0.1.9",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.8",
+          "name": "Koru 0.1.8",
+          "publishedAt": "2026-11-17T05:57:33Z",
+          "url": "https://github.com/koruworks/mono/releases/tag/v0.1.8",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.1.7",
+          "name": "Koru 0.1.7",
+          "publishedAt": "2026-11-16T02:12:29Z",
+          "url": "https://github.com/koruworks/mono/releases/tag/v0.1.7",
+          "prerelease": false
+        }
+      ],
+      "contributors": {
+        "count": 1,
+        "capped": true
+      },
+      "platforms": [
+        {
+          "os": "linux",
+          "architectures": [
+            "x86_64"
+          ]
+        },
+        {
+          "os": "macos",
+          "architectures": [
+            "arm64"
+          ]
+        },
+        {
+          "os": "windows",
+          "architectures": [
+            "x86_64"
           ]
         }
       ],
