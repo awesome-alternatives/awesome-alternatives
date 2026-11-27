@@ -7810,7 +7810,6 @@
   {"type":"released","slug":"zellij","at":"2026-11-12T05:17:20.660Z","commit":"70dfb56164834c3f36963507ea846198386a6ba6","from":"v0.45.1","to":"v0.46.0"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T18:25:02.833Z","commit":"64f7bd43bc18d8b8d62581444742f8f62472c961","from":"site@2026.11.9","to":"site@2026.11.10"},
   {"type":"released","slug":"lfsx","at":"2026-11-12T19:35:56.886Z","commit":"81ad5697857a4d3d51a3bb83d287e9e587152dfc","from":"site@2026.11.10","to":"site@2026.11.11"},
-  {"type":"released","slug":"stashden","at":"2026-11-12T22:01:33.314Z","commit":"b3c17137962dc618ba03d72b50c8f47adda71a01","from":"v0.56.2","to":"v0.56.3"},
   {"type":"released","slug":"agenta","at":"2026-11-13T05:17:41.889Z","commit":"59be5bcc5aa4eeafa8df88d616f1853eda26abfb","from":"v0.128.12","to":"v0.128.13"},
   {"type":"released","slug":"akka","at":"2026-11-13T05:17:41.889Z","commit":"59be5bcc5aa4eeafa8df88d616f1853eda26abfb","from":"v2.10.24","to":"v2.11.0"},
   {"type":"released","slug":"ant-media-server","at":"2026-11-13T05:17:41.889Z","commit":"59be5bcc5aa4eeafa8df88d616f1853eda26abfb","from":"ams-v3.1.0","to":"ams-v3.2.0"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"v0.57.0","to":"v0.57.1"},
   {"type":"released","slug":"sveltia-cms","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"v5.0.0","to":"v5.0.2"},
   {"type":"released","slug":"teable","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"release.2026-11-24T05-06-24Z.4043","to":"release.2026-11-26T23-38-15Z.4093"},
-  {"type":"released","slug":"tolgee","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"v3.246.5","to":"v3.247.0"}
+  {"type":"released","slug":"tolgee","at":"2026-11-27T08:12:41.807Z","commit":null,"from":"v3.246.5","to":"v3.247.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T08:47:06.253Z","commit":null,"from":"v0.57.1","to":"v0.60.0"}
 ]

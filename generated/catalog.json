@@ -282746,7 +282746,7 @@
         "homepage": null,
         "language": "Rust",
         "license": "AGPL-3.0",
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
         "topics": [
           "agpl",
@@ -282765,27 +282765,48 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T08:16:35Z",
+        "pushedAt": "2026-11-27T08:46:01Z",
         "defaultBranch": "main"
       },
       "trend": {
-        "stars": 0,
+        "stars": 1,
         "exact": true,
-        "since": "2026-10-28T08:12:41.807Z"
+        "since": "2026-10-28T08:46:38.452Z"
       },
       "starHistory": {
         "from": "2026-10-27",
-        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.57.1",
-        "publishedAt": "2026-11-27T08:16:37Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.1",
+        "tag": "v0.60.0",
+        "publishedAt": "2026-11-27T08:46:02Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.60.0",
         "source": "release",
         "signed": false,
-        "tagOid": "8b54c849589eda76217af5d171132f2e456c977d"
+        "tagOid": "842a8fe06530c3b23cd5f3c0a089549cc59524b1"
       },
       "releases": [
+        {
+          "tag": "v0.60.0",
+          "name": "feat(api): serve the web app with a Content-Security-Policy (#528)",
+          "publishedAt": "2026-11-27T08:46:02Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.60.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.59.0",
+          "name": "feat(web): translate the web app into English and French (#531)",
+          "publishedAt": "2026-11-27T08:34:10Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.59.0",
+          "prerelease": false
+        },
+        {
+          "tag": "v0.58.0",
+          "name": "feat(api): answer a failed precondition with the current ETag (#529)",
+          "publishedAt": "2026-11-27T08:24:58Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.58.0",
+          "prerelease": false
+        },
         {
           "tag": "v0.57.1",
           "name": "fix(web): bring light-theme text and primary buttons up to WCAG AA contrast (#527)",
@@ -282799,32 +282820,11 @@
           "publishedAt": "2026-11-24T20:28:37Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.0",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.10",
-          "name": "fix(deps): update rust crate gpui-kit to 0.11.0 (#498)",
-          "publishedAt": "2026-11-24T18:01:40Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.10",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.56.9",
-          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.1 (#479)",
-          "publishedAt": "2026-11-19T20:41:49Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.9",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.56.8",
-          "name": "fix(docker): pin corepack in the image build (#473)",
-          "publishedAt": "2026-11-18T13:24:19Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.8",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
-        "capped": false
+        "capped": true
       },
       "platforms": [],
       "maintainerVerified": true,
