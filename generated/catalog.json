@@ -282744,27 +282744,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T13:39:46Z",
+        "pushedAt": "2026-11-27T14:20:36Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-28T13:40:22.001Z"
+        "since": "2026-10-28T14:21:11.308Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
       },
       "release": {
-        "tag": "v0.62.0",
-        "publishedAt": "2026-11-27T13:39:48Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.0",
+        "tag": "v0.62.1",
+        "publishedAt": "2026-11-27T14:20:38Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.1",
         "source": "release",
         "signed": false,
-        "tagOid": "5384208a11ebc8c4e8cedb5c5b639db3a328cca4"
+        "tagOid": "3a68208dd6219c4fcc7616a2e42bafe6f013381c"
       },
       "releases": [
+        {
+          "tag": "v0.62.1",
+          "name": "fix(client): bind a synced folder to the account it syncs with (#566)",
+          "publishedAt": "2026-11-27T14:20:38Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.1",
+          "prerelease": false
+        },
         {
           "tag": "v0.62.0",
           "name": "feat(api): add browser sign-in requests that end in an app password (#568)",
@@ -282791,13 +282798,6 @@
           "name": "feat(web): open a file through one table of openers, addressable by link (#543)",
           "publishedAt": "2026-11-27T11:11:22Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.0",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.60.1",
-          "name": "fix(web): show translated sign-in errors and correct the French copy (#541)",
-          "publishedAt": "2026-11-27T08:57:46Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.60.1",
           "prerelease": false
         }
       ],

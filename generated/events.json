@@ -8855,7 +8855,6 @@
   {"type":"released","slug":"zen-browser","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"1.24.2b","to":"1.24.3b"},
   {"type":"released","slug":"zitadel","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"v4.20.4","to":"v4.20.5"},
   {"type":"released","slug":"zoo-modeling-app","at":"2026-11-19T05:17:30.121Z","commit":"717db19036401e922d2a36be490bbfb0ba47fac0","from":"v1.5.5","to":"v1.5.6"},
-  {"type":"released","slug":"stashden","at":"2026-11-19T20:42:51.203Z","commit":"82668013e8f23f611f84ea9b03c19d55fbb23d04","from":"v0.56.8","to":"v0.56.9"},
   {"type":"released","slug":"adguard-home","at":"2026-11-20T05:17:31.214Z","commit":"9bd8dcc83d5cb1744e6cb1865779a10a41e0697f","from":"v0.107.80","to":"v1.0.0"},
   {"type":"released","slug":"adonisjs","at":"2026-11-20T05:17:31.214Z","commit":"9bd8dcc83d5cb1744e6cb1865779a10a41e0697f","from":"v7.6.0","to":"v7.7.0"},
   {"type":"released","slug":"agent-qa","at":"2026-11-20T05:17:31.214Z","commit":"9bd8dcc83d5cb1744e6cb1865779a10a41e0697f","from":"v0.3.9","to":"v0.3.10"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-27T11:59:54.428Z","commit":null,"from":"v0.61.0","to":"v0.61.1"},
   {"type":"released","slug":"stashden","at":"2026-11-27T12:08:51.942Z","commit":null,"from":"v0.61.1","to":"v0.61.2"},
   {"type":"released","slug":"lfsx","at":"2026-11-27T13:16:32.979Z","commit":null,"from":"v1.26.59","to":"site@2026.11.18"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T13:40:53.881Z","commit":null,"from":"v0.61.2","to":"v0.62.0"}
+  {"type":"released","slug":"stashden","at":"2026-11-27T13:40:53.881Z","commit":null,"from":"v0.61.2","to":"v0.62.0"},
+  {"type":"released","slug":"stashden","at":"2026-11-27T14:21:40.759Z","commit":null,"from":"v0.62.0","to":"v0.62.1"}
 ]
