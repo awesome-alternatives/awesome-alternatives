@@ -282936,27 +282936,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T00:27:28Z",
+        "pushedAt": "2026-11-27T08:16:35Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 0,
         "exact": true,
-        "since": "2026-10-28T05:17:33.405Z"
+        "since": "2026-10-28T08:17:13.458Z"
       },
       "starHistory": {
         "from": "2026-10-27",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
       },
       "release": {
-        "tag": "v0.57.0",
-        "publishedAt": "2026-11-24T20:28:37Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.0",
+        "tag": "v0.57.1",
+        "publishedAt": "2026-11-27T08:16:37Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.1",
         "source": "release",
         "signed": false,
-        "tagOid": "40e86654c699d24df8e649cbdabed3ccfb8ffff0"
+        "tagOid": "8b54c849589eda76217af5d171132f2e456c977d"
       },
       "releases": [
+        {
+          "tag": "v0.57.1",
+          "name": "fix(web): bring light-theme text and primary buttons up to WCAG AA contrast (#527)",
+          "publishedAt": "2026-11-27T08:16:37Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.57.1",
+          "prerelease": false
+        },
         {
           "tag": "v0.57.0",
           "name": "feat(api): add a migrate command and stop migrating at startup (#499)",
@@ -282984,33 +282991,13 @@
           "publishedAt": "2026-11-18T13:24:19Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.8",
           "prerelease": false
-        },
-        {
-          "tag": "v0.56.7",
-          "name": "fix(deps): update rust crate jsonwebtoken to v12 (#458)",
-          "publishedAt": "2026-11-18T10:00:39Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.56.7",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": false
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],
