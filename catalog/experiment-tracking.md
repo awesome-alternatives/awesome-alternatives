@@ -4,8 +4,8 @@ Log the metrics, parameters and artefacts of training runs and compare them in a
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.18.0](https://github.com/mlflow/mlflow/releases/tag/v3.18.0) | 28981 | Weights & Biases (full), Comet (full), Databricks (partial) |
-| [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 16001 | Weights & Biases (partial) |
+| [MLflow](https://github.com/mlflow/mlflow) | Python | Apache-2.0 | [v3.18.0](https://github.com/mlflow/mlflow/releases/tag/v3.18.0) | 28986 | Weights & Biases (full), Comet (full), Databricks (partial) |
+| [DVC](https://github.com/treeverse/dvc) | Python | Apache-2.0 | [3.67.1](https://github.com/treeverse/dvc/releases/tag/3.67.1) signed | 16002 | Weights & Biases (partial) |
 | [TensorBoard](https://github.com/tensorflow/tensorboard) | TypeScript | Apache-2.0 | [2.21.0](https://github.com/tensorflow/tensorboard/releases/tag/2.21.0) | 7248 | Weights & Biases (partial) |
 | [ClearML](https://github.com/clearml/clearml) | Python | Apache-2.0 | [v2.2.0](https://github.com/clearml/clearml/releases/tag/v2.2.0) signed | 6947 | Weights & Biases (full), Comet (full) |
 | [Aim](https://github.com/aimhubio/aim) | Python | Apache-2.0 | [v3.29.1](https://github.com/aimhubio/aim/releases/tag/v3.29.1) | 6298 | Weights & Biases (partial), Comet (full) |

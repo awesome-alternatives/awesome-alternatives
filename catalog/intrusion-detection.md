@@ -4,14 +4,14 @@ Watch network traffic or hosts for attacks, and report or block what matches.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 19118 | none |
-| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.2](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2) signed | 15808 | Fail2ban (full) |
-| [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.6](https://github.com/stamparm/maltrail/releases/tag/3.6) | 8667 | none |
+| [Fail2ban](https://github.com/fail2ban/fail2ban) | Python | Other | [1.1.1](https://github.com/fail2ban/fail2ban/releases/tag/1.1.1) signed | 19120 | none |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Go | MIT | [v1.8.2](https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2) signed | 15814 | Fail2ban (full) |
+| [Maltrail](https://github.com/stamparm/maltrail) | Python | MIT | [3.6](https://github.com/stamparm/maltrail/releases/tag/3.6) | 8668 | none |
 | [Zeek](https://github.com/zeek/zeek) | C++ | Other | [v9.0.1](https://github.com/zeek/zeek/releases/tag/v9.0.1) | 8290 | none |
 | [Arkime](https://github.com/arkime/arkime) | C | Apache-2.0 | [v6.9.2](https://github.com/arkime/arkime/releases/tag/v6.9.2) signed | 7593 | none |
-| [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.8](https://github.com/OISF/suricata/releases/tag/suricata-8.0.8) | 6944 | Snort 3 (full) |
+| [Suricata](https://github.com/OISF/suricata) | C | GPL-2.0 | [suricata-8.0.8](https://github.com/OISF/suricata/releases/tag/suricata-8.0.8) | 6945 | Snort 3 (full) |
 | [OSSEC](https://github.com/ossec/ossec-hids) | C | GPL-2.0 | [4.5.0](https://github.com/ossec/ossec-hids/releases/tag/4.5.0) signed | 5077 | CrowdStrike Falcon (partial), Tripwire (partial) |
-| [Snort 3](https://github.com/snort3/snort3) | C++ | Other | [3.13.2.0](https://github.com/snort3/snort3/releases/tag/3.13.2.0) signed | 3487 | none |
+| [Snort 3](https://github.com/snort3/snort3) | C++ | Other | [3.13.2.0](https://github.com/snort3/snort3/releases/tag/3.13.2.0) signed | 3490 | none |
 | [AIDE](https://github.com/aide/aide) | C | GPL-2.0 | [v0.19.5](https://github.com/aide/aide/releases/tag/v0.19.5) signed | 771 | Tripwire (full) |
 
 [All categories](../README.md#catalog)

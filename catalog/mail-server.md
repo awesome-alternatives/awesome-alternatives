@@ -4,12 +4,12 @@ Host email for your own domains, archive and search every message for retention,
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v17.0.0](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v17.0.0) signed | 19782 | Google Workspace (partial) |
-| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.5.0](https://github.com/postalserver/postal/releases/tag/3.5.0) signed | 16982 | SendGrid (full) |
-| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v1.2.1](https://github.com/stalwartlabs/stalwart/releases/tag/v1.2.1) signed | 16401 | Google Workspace (partial), Microsoft 365 (partial) |
+| [docker-mailserver](https://github.com/docker-mailserver/docker-mailserver) | Shell | MIT | [v17.0.0](https://github.com/docker-mailserver/docker-mailserver/releases/tag/v17.0.0) signed | 19783 | Google Workspace (partial) |
+| [Postal](https://github.com/postalserver/postal) | Ruby | MIT | [3.5.0](https://github.com/postalserver/postal/releases/tag/3.5.0) signed | 16984 | SendGrid (full) |
+| [Stalwart](https://github.com/stalwartlabs/stalwart) | Rust | none | [v1.2.1](https://github.com/stalwartlabs/stalwart/releases/tag/v1.2.1) signed | 16432 | Google Workspace (partial), Microsoft 365 (partial) |
 | [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) | Python | CC0-1.0 | [v77](https://github.com/mail-in-a-box/mailinabox/releases/tag/v77) | 15483 | Google Workspace (partial) |
-| [mailcow](https://github.com/mailcow/mailcow-dockerized) | PHP | GPL-3.0 | [2026-11b](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-11b) signed | 13881 | Google Workspace (partial), Microsoft 365 (partial) |
-| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.74](https://github.com/Mailu/Mailu/releases/tag/2024.06.74) signed | 7642 | Google Workspace (partial) |
+| [mailcow](https://github.com/mailcow/mailcow-dockerized) | PHP | GPL-3.0 | [2026-11b](https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-11b) signed | 13882 | Google Workspace (partial), Microsoft 365 (partial) |
+| [Mailu](https://github.com/Mailu/Mailu) | Python | Other | [2024.06.74](https://github.com/Mailu/Mailu/releases/tag/2024.06.74) signed | 7643 | Google Workspace (partial) |
 | [Maddy](https://github.com/foxcpp/maddy) | Go | GPL-3.0 | [v0.9.8](https://github.com/foxcpp/maddy/releases/tag/v0.9.8) signed | 6142 | Google Workspace (partial) |
 | [Mox](https://github.com/mjl-/mox) | Go | MIT | [v0.0.17](https://github.com/mjl-/mox/releases/tag/v0.0.17) | 5965 | Google Workspace (partial) |
 | [Haraka](https://github.com/haraka/Haraka) | JavaScript | MIT | [v3.4.2](https://github.com/haraka/Haraka/releases/tag/v3.4.2) signed | 5646 | SendGrid (partial) |
@@ -23,7 +23,7 @@ Host email for your own domains, archive and search every message for retention,
 | [PostfixAdmin](https://github.com/postfixadmin/postfixadmin) | PHP | Other | [v4.0.7](https://github.com/postfixadmin/postfixadmin/releases/tag/v4.0.7) signed | 1271 | Google Workspace (partial) |
 | [Apache James](https://github.com/apache/james-project) | Java | Apache-2.0 | [james-project-3.9.1](https://github.com/apache/james-project/releases/tag/james-project-3.9.1) | 1054 | Google Workspace (partial) |
 | [chasquid](https://github.com/albertito/chasquid) | Go | Other | [v1.19.0](https://github.com/albertito/chasquid/releases/tag/v1.19.0) signed | 982 | Google Workspace (partial) |
-| [Hyvor Relay](https://github.com/hyvor/relay) | PHP | AGPL-3.0 | [0.0.48](https://github.com/hyvor/relay/releases/tag/0.0.48) | 931 | SendGrid (partial) |
+| [Hyvor Relay](https://github.com/hyvor/relay) | PHP | AGPL-3.0 | [0.0.48](https://github.com/hyvor/relay/releases/tag/0.0.48) | 930 | SendGrid (partial) |
 | [Cyrus IMAP](https://github.com/cyrusimap/cyrus-imapd) | C | Other | [cyrus-imapd-3.12.5](https://github.com/cyrusimap/cyrus-imapd/releases/tag/cyrus-imapd-3.12.5) | 655 | Google Workspace (partial) |
 | [OpenSMTPD](https://github.com/OpenSMTPD/OpenSMTPD) | C | Other | [7.9.0p0](https://github.com/OpenSMTPD/OpenSMTPD/releases/tag/7.9.0p0) | 590 | Google Workspace (partial) |
 | [chatmail relay](https://github.com/chatmail/relay) | Python | MIT | [1.13.0](https://github.com/chatmail/relay/releases/tag/1.13.0) | 500 | none |

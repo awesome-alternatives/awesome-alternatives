@@ -4,9 +4,9 @@ Typed database access and migrations for TypeScript.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Prisma ORM](https://github.com/prisma/orm) | TypeScript | Apache-2.0 | [7.10.1](https://github.com/prisma/orm/releases/tag/7.10.1) | 47776 | TypeORM (full), Sequelize (full) |
+| [Prisma ORM](https://github.com/prisma/orm) | TypeScript | Apache-2.0 | [7.10.1](https://github.com/prisma/orm/releases/tag/7.10.1) | 47774 | TypeORM (full), Sequelize (full) |
 | [TypeORM](https://github.com/typeorm/typeorm) | TypeScript | MIT | [1.1.3](https://github.com/typeorm/typeorm/releases/tag/1.1.3) signed | 36677 | none |
-| [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | TypeScript | Apache-2.0 | [0.45.4](https://github.com/drizzle-team/drizzle-orm/releases/tag/0.45.4) signed | 36398 | Prisma ORM (full), TypeORM (full), Sequelize (full) |
+| [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | TypeScript | Apache-2.0 | [0.45.4](https://github.com/drizzle-team/drizzle-orm/releases/tag/0.45.4) signed | 36404 | Prisma ORM (full), TypeORM (full), Sequelize (full) |
 | [Sequelize](https://github.com/sequelize/sequelize) | TypeScript | MIT | [v6.37.8](https://github.com/sequelize/sequelize/releases/tag/v6.37.8) | 30347 | none |
 | [Knex](https://github.com/knex/knex) | JavaScript | MIT | [3.3.0](https://github.com/knex/knex/releases/tag/3.3.0) | 20334 | Sequelize (partial), TypeORM (partial) |
 | [Kysely](https://github.com/kysely-org/kysely) | TypeScript | MIT | [v0.29.9](https://github.com/kysely-org/kysely/releases/tag/v0.29.9) | 14383 | TypeORM (partial), Sequelize (partial), Prisma ORM (partial) |

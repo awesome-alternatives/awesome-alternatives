@@ -4,12 +4,12 @@ Version and apply database schema changes.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 19082 | Flyway (partial) |
-| [Bytebase](https://github.com/bytebase/bytebase) | TypeScript | Other | [3.25.0](https://github.com/bytebase/bytebase/releases/tag/3.25.0) signed | 14747 | Flyway (partial) |
+| [migrate](https://github.com/golang-migrate/migrate) | Go | Other | [v4.20.1](https://github.com/golang-migrate/migrate/releases/tag/v4.20.1) signed | 19084 | Flyway (partial) |
+| [Bytebase](https://github.com/bytebase/bytebase) | TypeScript | Other | [3.25.0](https://github.com/bytebase/bytebase/releases/tag/3.25.0) signed | 14748 | Flyway (partial) |
 | [gh-ost](https://github.com/github/gh-ost) | Go | MIT | [v1.1.11](https://github.com/github/gh-ost/releases/tag/v1.1.11) signed | 13658 | none |
 | [goose](https://github.com/pressly/goose) | Go | Other | [v3.30.2](https://github.com/pressly/goose/releases/tag/v3.30.2) signed | 11776 | migrate (full) |
-| [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.13.0](https://github.com/flyway/flyway/releases/tag/flyway-13.13.0) | 10220 | Liquibase (full) |
-| [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.4.0](https://github.com/ariga/atlas/releases/tag/v1.4.0) signed | 8845 | Liquibase (full), Flyway (full) |
+| [Flyway](https://github.com/flyway/flyway) | Java | Apache-2.0 | [flyway-13.13.0](https://github.com/flyway/flyway/releases/tag/flyway-13.13.0) | 10222 | Liquibase (full) |
+| [Atlas](https://github.com/ariga/atlas) | Go | Apache-2.0 | [v1.4.0](https://github.com/ariga/atlas/releases/tag/v1.4.0) signed | 8846 | Liquibase (full), Flyway (full) |
 | [dbmate](https://github.com/amacneil/dbmate) | Go | MIT | [v2.38.2](https://github.com/amacneil/dbmate/releases/tag/v2.38.2) signed | 7572 | Flyway (full), Liquibase (partial) |
 | [Archery](https://github.com/hhyo/Archery) | Python | Apache-2.0 | [v1.14.0](https://github.com/hhyo/Archery/releases/tag/v1.14.0) | 7102 | Bytebase (partial) |
 | [pgroll](https://github.com/xataio/pgroll) | Go | Apache-2.0 | [v0.16.3](https://github.com/xataio/pgroll/releases/tag/v0.16.3) | 6635 | Flyway (partial) |

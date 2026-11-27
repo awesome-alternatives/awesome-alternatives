@@ -5,7 +5,7 @@ Build forms and surveys and collect the answers.
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
 | [Formbricks](https://github.com/formbricks/formbricks) | TypeScript | Other | [6.2.2](https://github.com/formbricks/formbricks/releases/tag/6.2.2) signed | 13309 | Typeform (full), Google Forms (full), SurveyMonkey (full), Jotform (partial), Hotjar (partial) |
-| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.1](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1) signed | 10652 | Typeform (partial) |
+| [Typebot](https://github.com/baptisteArno/typebot.io) | TypeScript | Other | [v3.19.1](https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1) signed | 10653 | Typeform (partial) |
 | [HeyForm](https://github.com/heyform/heyform) | TypeScript | AGPL-3.0 | [v3.0.8](https://github.com/heyform/heyform/releases/tag/v3.0.8) | 9085 | Typeform (full), SurveyMonkey (partial), Jotform (partial) |
 | [OpnForm](https://github.com/OpnForm/OpnForm) | PHP | Other | [v2.8.6](https://github.com/OpnForm/OpnForm/releases/tag/v2.8.6) | 4037 | Typeform (full), Google Forms (full) |
 | [LimeSurvey](https://github.com/LimeSurvey/LimeSurvey) | JavaScript | Other | [7.12.0+261124](https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.12.0%2B261124) | 3806 | Typeform (partial), Google Forms (full), SurveyMonkey (full), Jotform (partial) |

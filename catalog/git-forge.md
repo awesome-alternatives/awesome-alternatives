@@ -4,12 +4,12 @@ Self-hosted repositories, code review and issues.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.4.0](https://github.com/go-gitea/gitea/releases/tag/v28.4.0) | 59271 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
-| [Gogs](https://github.com/gogs/gogs) | Go | MIT | [v0.14.4](https://github.com/gogs/gogs/releases/tag/v0.14.4) signed | 48001 | GitHub (partial), Bitbucket (partial) |
-| [Harness Open Source](https://github.com/harness/harness) | Go | Apache-2.0 | [v2.28.3](https://github.com/harness/harness/releases/tag/v2.28.3) signed | 38978 | GitHub (full), GitLab (full) |
+| [Gitea](https://github.com/go-gitea/gitea) | Go | MIT | [v28.4.0](https://github.com/go-gitea/gitea/releases/tag/v28.4.0) | 59296 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full), Gogs (full) |
+| [Gogs](https://github.com/gogs/gogs) | Go | MIT | [v0.14.4](https://github.com/gogs/gogs/releases/tag/v0.14.4) signed | 48005 | GitHub (partial), Bitbucket (partial) |
+| [Harness Open Source](https://github.com/harness/harness) | Go | Apache-2.0 | [v2.28.3](https://github.com/harness/harness/releases/tag/v2.28.3) signed | 38980 | GitHub (full), GitLab (full) |
 | [GitLab](https://github.com/gitlabhq/gitlabhq) | Ruby | Other | [v19.5.1](https://github.com/gitlabhq/gitlabhq/releases/tag/v19.5.1) | 24572 | GitHub (full), Jenkins (partial), Bitbucket (full) |
-| [OneDev](https://github.com/theonedev/onedev) | Java | MIT | [v17.2.4](https://github.com/theonedev/onedev/releases/tag/v17.2.4) | 15380 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full) |
-| [GitBucket](https://github.com/gitbucket/gitbucket) | Scala | Apache-2.0 | [4.48.0](https://github.com/gitbucket/gitbucket/releases/tag/4.48.0) | 9430 | GitHub (partial) |
+| [OneDev](https://github.com/theonedev/onedev) | Java | MIT | [v17.2.4](https://github.com/theonedev/onedev/releases/tag/v17.2.4) | 15382 | GitLab (full), GitHub (full), Jenkins (partial), Bitbucket (full) |
+| [GitBucket](https://github.com/gitbucket/gitbucket) | Scala | Apache-2.0 | [4.48.0](https://github.com/gitbucket/gitbucket/releases/tag/4.48.0) | 9431 | GitHub (partial) |
 | [Soft Serve](https://github.com/charmbracelet/soft-serve) archived | Go | MIT | [v0.12.4](https://github.com/charmbracelet/soft-serve/releases/tag/v0.12.4) signed | 7268 | GitHub (partial) |
 
 [All categories](../README.md#catalog)
