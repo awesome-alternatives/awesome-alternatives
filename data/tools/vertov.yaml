@@ -1,0 +1,7 @@
+name: Vertov
+repository: https://github.com/ankurmans/vertov-screen-recorder
+category: screen-recording
+replaces:
+  - tool: loom
+    fit: partial
+    note: Records the screen or camera, edits by transcript and shares a link, self-hosted on your own Cloudflare account. AI summaries, Loom import and password-protected links are hosted-only.
