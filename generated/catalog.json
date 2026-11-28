@@ -282744,27 +282744,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-27T18:45:27Z",
+        "pushedAt": "2026-11-28T02:21:34Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-28T18:46:03.294Z"
+        "since": "2026-10-29T02:22:13.279Z"
       },
       "starHistory": {
-        "from": "2026-10-27",
-        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
+        "from": "2026-10-28",
+        "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2]
       },
       "release": {
-        "tag": "v0.62.2",
-        "publishedAt": "2026-11-27T18:45:29Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.2",
+        "tag": "v0.62.3",
+        "publishedAt": "2026-11-28T02:21:36Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.3",
         "source": "release",
         "signed": false,
-        "tagOid": "68801ede0119e4ddc0bd29dc7a25b33648b7f175"
+        "tagOid": "72822d08f5b60572cc5bd13ac7d4ead4636ca1d5"
       },
       "releases": [
+        {
+          "tag": "v0.62.3",
+          "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.2 (#576)",
+          "publishedAt": "2026-11-28T02:21:36Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.3",
+          "prerelease": false
+        },
         {
           "tag": "v0.62.2",
           "name": "fix(api): close the browser sign-in approve race and tighten inputs (#574)",
@@ -282791,13 +282798,6 @@
           "name": "fix(app): build the Windows app for the graphical subsystem (#551)",
           "publishedAt": "2026-11-27T12:07:55Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.2",
-          "prerelease": false
-        },
-        {
-          "tag": "v0.61.1",
-          "name": "fix(app): embed the application icon in the Windows executable (#550)",
-          "publishedAt": "2026-11-27T11:58:50Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.1",
           "prerelease": false
         }
       ],

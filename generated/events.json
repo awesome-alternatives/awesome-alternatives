@@ -9615,7 +9615,6 @@
   {"type":"released","slug":"lfsx","at":"2026-11-24T08:07:06.265Z","commit":"3e05c21d24feb60c80ee53b46b7922c26811bd3f","from":"v1.26.56","to":"v1.26.57"},
   {"type":"released","slug":"ferrflow","at":"2026-11-24T10:21:52.193Z","commit":"1f353d3fa05615f0d3cf4ce0103a2d568988950f","from":"v7.37.1","to":"v7.37.2"},
   {"type":"released","slug":"ferrflow","at":"2026-11-24T13:24:31.110Z","commit":"a90c1622f00d5aa2c6eb2ddec74d0489a2f0bc64","from":"v7.37.2","to":"v7.37.3"},
-  {"type":"released","slug":"stashden","at":"2026-11-24T20:29:52.705Z","commit":"6c4ade7f01d4e326a0e420aae1a261cc8793b901","from":"v0.56.10","to":"v0.57.0"},
   {"type":"released","slug":"adventurelog","at":"2026-11-25T05:17:34.876Z","commit":"2296168c99e879e6d450eda76221048ea26c9cd0","from":"v0.13.1","to":"v0.14.0"},
   {"type":"released","slug":"agent-qa","at":"2026-11-25T05:17:34.876Z","commit":"2296168c99e879e6d450eda76221048ea26c9cd0","from":"v0.3.11","to":"v0.3.12"},
   {"type":"released","slug":"alertmanager","at":"2026-11-25T05:17:34.876Z","commit":"2296168c99e879e6d450eda76221048ea26c9cd0","from":"v0.35.0","to":"v0.35.1"},
@@ -10137,5 +10136,6 @@
   {"type":"released","slug":"stashden","at":"2026-11-27T13:40:53.881Z","commit":null,"from":"v0.61.2","to":"v0.62.0"},
   {"type":"released","slug":"stashden","at":"2026-11-27T14:21:40.759Z","commit":null,"from":"v0.62.0","to":"v0.62.1"},
   {"type":"released","slug":"lfsx","at":"2026-11-27T15:39:42.387Z","commit":null,"from":"site@2026.11.18","to":"v1.26.60"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T18:46:26.106Z","commit":null,"from":"v0.62.1","to":"v0.62.2"}
+  {"type":"released","slug":"stashden","at":"2026-11-27T18:46:26.106Z","commit":null,"from":"v0.62.1","to":"v0.62.2"},
+  {"type":"released","slug":"stashden","at":"2026-11-28T02:22:46.687Z","commit":null,"from":"v0.62.2","to":"v0.62.3"}
 ]
