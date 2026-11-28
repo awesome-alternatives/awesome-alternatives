@@ -282759,27 +282759,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-09-03T06:35:14Z",
-        "pushedAt": "2026-11-28T02:21:34Z",
+        "pushedAt": "2026-11-28T15:21:28Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 1,
         "exact": true,
-        "since": "2026-10-29T05:17:40.963Z"
+        "since": "2026-10-29T15:22:09.057Z"
       },
       "starHistory": {
         "from": "2026-10-28",
         "stars": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2]
       },
       "release": {
-        "tag": "v0.62.3",
-        "publishedAt": "2026-11-28T02:21:36Z",
-        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.3",
+        "tag": "v0.62.4",
+        "publishedAt": "2026-11-28T15:21:30Z",
+        "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.4",
         "source": "release",
         "signed": false,
-        "tagOid": "72822d08f5b60572cc5bd13ac7d4ead4636ca1d5"
+        "tagOid": "fe492144d0af42226a0e1aa4a934056285e47575"
       },
       "releases": [
+        {
+          "tag": "v0.62.4",
+          "name": "fix(web): resolve new Sonar violations with native table, fieldset and output elements (#577)",
+          "publishedAt": "2026-11-28T15:21:30Z",
+          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.4",
+          "prerelease": false
+        },
         {
           "tag": "v0.62.3",
           "name": "fix(deps): update dependency @ferrlabs/telemetry to ^0.6.2 (#576)",
@@ -282807,33 +282814,13 @@
           "publishedAt": "2026-11-27T13:39:48Z",
           "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.62.0",
           "prerelease": false
-        },
-        {
-          "tag": "v0.61.2",
-          "name": "fix(app): build the Windows app for the graphical subsystem (#551)",
-          "publishedAt": "2026-11-27T12:07:55Z",
-          "url": "https://github.com/FerrLabs/Stashden/releases/tag/v0.61.2",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:14:51.000Z",
       "flags": [],

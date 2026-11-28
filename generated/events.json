@@ -10070,7 +10070,6 @@
   {"type":"released","slug":"renovate","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"45.1.0","to":"45.1.1"},
   {"type":"released","slug":"rsshub","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"v2026.11.27-8767.ge6bc750","to":"v2026.11.27-8768.gbfc93be"},
   {"type":"released","slug":"seatsurfing","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"v1.144.1","to":"v1.144.2"},
-  {"type":"released","slug":"stashden","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"v0.57.0","to":"v0.57.1"},
   {"type":"released","slug":"sveltia-cms","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"v5.0.0","to":"v5.0.2"},
   {"type":"released","slug":"teable","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"release.2026-11-24T05-06-24Z.4043","to":"release.2026-11-26T23-38-15Z.4093"},
   {"type":"released","slug":"tolgee","at":"2026-11-27T08:12:41.807Z","commit":"c950219a3c6f438bcc21fd6ae567fe070d6c04ad","from":"v3.246.5","to":"v3.247.0"},
@@ -10207,5 +10206,6 @@
   {"type":"released","slug":"wekan","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v13.35","to":"v13.36"},
   {"type":"released","slug":"windmill","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v1.886.0","to":"v1.887.0"},
   {"type":"released","slug":"zensical","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v0.1.3","to":"v0.1.4"},
-  {"type":"released","slug":"lfsx","at":"2026-11-28T15:08:42.088Z","commit":null,"from":"v1.26.60","to":"site@2026.11.19"}
+  {"type":"released","slug":"lfsx","at":"2026-11-28T15:08:42.088Z","commit":null,"from":"v1.26.60","to":"site@2026.11.19"},
+  {"type":"released","slug":"stashden","at":"2026-11-28T15:22:44.303Z","commit":null,"from":"v0.62.3","to":"v0.62.4"}
 ]
