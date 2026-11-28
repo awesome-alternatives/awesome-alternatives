@@ -8113,7 +8113,6 @@
   {"type":"added","slug":"anysub","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91"},
   {"type":"released","slug":"homer-dashboard","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91","from":"v26.11.2","to":"v26.11.3"},
   {"type":"removed","slug":"whishper","at":"2026-11-14T15:30:04.890Z","commit":"8ee5670279c9ee9aee53e639d130c0803cd07e91"},
-  {"type":"released","slug":"lfsx","at":"2026-11-14T21:14:19.006Z","commit":"555964ea773283ec45595c31cac6d9fd4d018fc9","from":"site@2026.11.11","to":"site@2026.11.12"},
   {"type":"released","slug":"agent-qa","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.3.8","to":"v0.3.9"},
   {"type":"released","slug":"bigcapital","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"v0.25.45","to":"v0.25.46"},
   {"type":"released","slug":"buck2","at":"2026-11-15T05:17:29.878Z","commit":"2e2ede0173db7004e3b64f48d77011908b00dc13","from":"latest","to":"2026-11-15"},
@@ -10207,5 +10206,6 @@
   {"type":"released","slug":"webstudio","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"0.314.0","to":"0.315.0"},
   {"type":"released","slug":"wekan","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v13.35","to":"v13.36"},
   {"type":"released","slug":"windmill","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v1.886.0","to":"v1.887.0"},
-  {"type":"released","slug":"zensical","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v0.1.3","to":"v0.1.4"}
+  {"type":"released","slug":"zensical","at":"2026-11-28T05:17:40.963Z","commit":null,"from":"v0.1.3","to":"v0.1.4"},
+  {"type":"released","slug":"lfsx","at":"2026-11-28T15:08:42.088Z","commit":null,"from":"v1.26.60","to":"site@2026.11.19"}
 ]

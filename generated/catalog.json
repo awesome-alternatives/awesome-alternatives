@@ -163845,27 +163845,34 @@
         "fork": false,
         "private": false,
         "createdAt": "2026-08-14T10:21:51Z",
-        "pushedAt": "2026-11-28T00:10:31Z",
+        "pushedAt": "2026-11-28T15:07:34Z",
         "defaultBranch": "main"
       },
       "trend": {
         "stars": 4,
         "exact": true,
-        "since": "2026-10-29T05:17:40.963Z"
+        "since": "2026-10-29T15:08:16.352Z"
       },
       "starHistory": {
         "from": "2026-10-28",
         "stars": [4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,7,7,7,7,7,7,7,7,7,8,8,8,8]
       },
       "release": {
-        "tag": "v1.26.60",
-        "publishedAt": "2026-11-27T15:38:27Z",
-        "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.60",
+        "tag": "site@2026.11.19",
+        "publishedAt": "2026-11-28T15:07:41Z",
+        "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.19",
         "source": "release",
         "signed": true,
-        "tagOid": "f86685601d8eaccf9225830f5b54655306b222d9"
+        "tagOid": "bde876003acfab348294f6a814f6c5c87089231b"
       },
       "releases": [
+        {
+          "tag": "site@2026.11.19",
+          "name": "fix(site): resolve Sonar a11y violations on code block and storage bars (#808)",
+          "publishedAt": "2026-11-28T15:07:41Z",
+          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.19",
+          "prerelease": false
+        },
         {
           "tag": "v1.26.60",
           "name": "refactor(storage): split bucket open into reader selection and unframed fallback (#805)",
@@ -163893,41 +163900,13 @@
           "publishedAt": "2026-11-25T12:20:41Z",
           "url": "https://github.com/FerrLabs/LFSX/releases/tag/v1.26.58",
           "prerelease": false
-        },
-        {
-          "tag": "site@2026.11.17",
-          "name": "fix(deps): update ferrlabs npm packages (#794)",
-          "publishedAt": "2026-11-25T12:20:41Z",
-          "url": "https://github.com/FerrLabs/LFSX/releases/tag/site%402026.11.17",
-          "prerelease": false
         }
       ],
       "contributors": {
         "count": 1,
         "capped": true
       },
-      "platforms": [
-        {
-          "os": "linux",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "macos",
-          "architectures": [
-            "x86_64",
-            "arm64"
-          ]
-        },
-        {
-          "os": "windows",
-          "architectures": [
-            "x86_64"
-          ]
-        }
-      ],
+      "platforms": [],
       "maintainerVerified": true,
       "verifiedAt": "2026-10-06T12:10:21.000Z",
       "flags": [],
