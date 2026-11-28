@@ -40,7 +40,7 @@ export function labelsFor(findings: readonly Finding[], checked: readonly string
 
 export function readyOn(findings: readonly Finding[]): string | null {
   const dates = findings.flatMap((f) => (f.code === "too-new" && f.clearsOn ? [f.clearsOn] : []));
-  return dates.toSorted().at(-1) ?? null;
+  return dates.toSorted((one, other) => one.localeCompare(other)).at(-1) ?? null;
 }
 
 export function tooNewComment(date: string): string {
