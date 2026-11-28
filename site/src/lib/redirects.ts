@@ -26,12 +26,18 @@ export function reversedPairs(pairs: readonly Sides[]): Map<string, string> {
   return table;
 }
 
+function otherSide(pair: Sides, current: string): string | undefined {
+  if (pair.a.slug === current) return pair.b.slug;
+  if (pair.b.slug === current) return pair.a.slug;
+  return undefined;
+}
+
 export function toolPairRedirects(pairs: readonly Sides[], tools: Readonly<Record<string, string>>): Map<string, string> {
   const canonical = new Set(pairs.map((pair) => pairSlug(pair.a.slug, pair.b.slug)));
   const table = new Map<string, string>();
   for (const [old, current] of Object.entries(tools)) {
     for (const pair of pairs) {
-      const other = pair.a.slug === current ? pair.b.slug : pair.b.slug === current ? pair.a.slug : undefined;
+      const other = otherSide(pair, current);
       if (other === undefined) continue;
       for (const spelling of [pairSlug(old, other), mirrorSlug(old, other)]) {
         if (!canonical.has(spelling)) table.set(spelling, pairSlug(current, other));
