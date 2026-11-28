@@ -4,8 +4,8 @@ Search for, grab and organise TV shows, movies and other media for a home librar
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Sonarr](https://github.com/Sonarr/Sonarr) | C# | GPL-3.0 | [v4.0.20.3014](https://github.com/Sonarr/Sonarr/releases/tag/v4.0.20.3014) signed | 17862 | none |
-| [Radarr](https://github.com/Radarr/Radarr) | C# | GPL-3.0 | [v7.0.3.10918](https://github.com/Radarr/Radarr/releases/tag/v7.0.3.10918) | 14891 | none |
-| [Prowlarr](https://github.com/Prowlarr/Prowlarr) | C# | GPL-3.0 | [v3.1.0.5799](https://github.com/Prowlarr/Prowlarr/releases/tag/v3.1.0.5799) | 7665 | none |
+| [Sonarr](https://github.com/Sonarr/Sonarr) | C# | GPL-3.0 | [v4.0.20.3014](https://github.com/Sonarr/Sonarr/releases/tag/v4.0.20.3014) signed | 17873 | none |
+| [Radarr](https://github.com/Radarr/Radarr) | C# | GPL-3.0 | [v7.0.3.10918](https://github.com/Radarr/Radarr/releases/tag/v7.0.3.10918) | 14899 | none |
+| [Prowlarr](https://github.com/Prowlarr/Prowlarr) | C# | GPL-3.0 | [v3.1.0.5799](https://github.com/Prowlarr/Prowlarr/releases/tag/v3.1.0.5799) | 7674 | none |
 
 [All categories](../README.md#catalog)

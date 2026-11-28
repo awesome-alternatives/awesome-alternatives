@@ -4,7 +4,7 @@ Replicated, transactional key-value stores that run as a cluster.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [etcd](https://github.com/etcd-io/etcd) | Go | Apache-2.0 | [v3.7.4](https://github.com/etcd-io/etcd/releases/tag/v3.7.4) signed | 52659 | Consul (partial) |
+| [etcd](https://github.com/etcd-io/etcd) | Go | Apache-2.0 | [v3.7.4](https://github.com/etcd-io/etcd/releases/tag/v3.7.4) signed | 52661 | Consul (partial) |
 | [TiKV](https://github.com/tikv/tikv) | Rust | Apache-2.0 | [v7.5.8](https://github.com/tikv/tikv/releases/tag/v7.5.8) signed | 16972 | FoundationDB (partial) |
 | [FoundationDB](https://github.com/apple/foundationdb) | C++ | Apache-2.0 | [7.4.8](https://github.com/apple/foundationdb/releases/tag/7.4.8) signed | 16878 | TiKV (partial) |
 | [Apache ZooKeeper](https://github.com/apache/zookeeper) | Java | Apache-2.0 | [release-3.10.0](https://github.com/apache/zookeeper/releases/tag/release-3.10.0) | 12836 | none |

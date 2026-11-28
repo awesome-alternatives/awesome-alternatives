@@ -4,19 +4,19 @@ Record the screen, the camera or a terminal session and share it as a video, a G
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [33.0.3](https://github.com/obsproject/obs-studio/releases/tag/33.0.3) | 80230 | Loom (partial) |
-| [ShareX](https://github.com/ShareX/ShareX) | C# | GPL-3.0 | [v22.4.0](https://github.com/ShareX/ShareX/releases/tag/v22.4.0) | 41405 | Snagit (full), Loom (partial) |
-| [Flameshot](https://github.com/flameshot-org/flameshot) | C++ | GPL-3.0 | [v15.0.0](https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0) signed | 31742 | Snagit (partial) |
-| [ScreenToGif](https://github.com/NickeManarin/ScreenToGif) | C# | MS-PL | [2.43.2](https://github.com/NickeManarin/ScreenToGif/releases/tag/2.43.2) | 28005 | Snagit (partial) |
-| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.3](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3) signed | 25669 | Loom (full) |
-| [VHS](https://github.com/charmbracelet/vhs) | Go | MIT | [v0.12.1](https://github.com/charmbracelet/vhs/releases/tag/v0.12.1) signed | 21423 | asciinema (partial) |
-| [Screenity](https://github.com/alyssaxuu/screenity) | JavaScript | GPL-3.0 | [v4.8.2](https://github.com/alyssaxuu/screenity/releases/tag/v4.8.2) | 19008 | Loom (partial) |
-| [asciinema](https://github.com/asciinema/asciinema) | Rust | GPL-3.0 | [v3.2.1](https://github.com/asciinema/asciinema/releases/tag/v3.2.1) | 17993 | none |
-| [Greenshot](https://github.com/greenshot/greenshot) | C# | GPL-3.0 | [v1.3.328](https://github.com/greenshot/greenshot/releases/tag/v1.3.328) | 5292 | Snagit (partial) |
-| [Kooha](https://github.com/SeaDve/Kooha) | Rust | GPL-3.0 | [v2.3.2](https://github.com/SeaDve/Kooha/releases/tag/v2.3.2) signed | 3568 | Loom (partial) |
-| [ksnip](https://github.com/ksnip/ksnip) | C++ | GPL-3.0 | [v1.10.1](https://github.com/ksnip/ksnip/releases/tag/v1.10.1) | 3389 | Snagit (partial) |
+| [OBS Studio](https://github.com/obsproject/obs-studio) | C | GPL-2.0 | [33.0.3](https://github.com/obsproject/obs-studio/releases/tag/33.0.3) | 80164 | Loom (partial) |
+| [ShareX](https://github.com/ShareX/ShareX) | C# | GPL-3.0 | [v22.4.0](https://github.com/ShareX/ShareX/releases/tag/v22.4.0) | 41431 | Snagit (full), Loom (partial) |
+| [Flameshot](https://github.com/flameshot-org/flameshot) | C++ | GPL-3.0 | [v15.0.0](https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0) signed | 31754 | Snagit (partial) |
+| [ScreenToGif](https://github.com/NickeManarin/ScreenToGif) | C# | MS-PL | [2.43.2](https://github.com/NickeManarin/ScreenToGif/releases/tag/2.43.2) | 28009 | Snagit (partial) |
+| [Cap](https://github.com/CapSoftware/Cap) | Rust | Other | [cap-v0.6.3](https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3) signed | 25708 | Loom (full) |
+| [VHS](https://github.com/charmbracelet/vhs) | Go | MIT | [v0.12.1](https://github.com/charmbracelet/vhs/releases/tag/v0.12.1) signed | 21432 | asciinema (partial) |
+| [Screenity](https://github.com/alyssaxuu/screenity) | JavaScript | GPL-3.0 | [v4.8.2](https://github.com/alyssaxuu/screenity/releases/tag/v4.8.2) | 19011 | Loom (partial) |
+| [asciinema](https://github.com/asciinema/asciinema) | Rust | GPL-3.0 | [v3.2.1](https://github.com/asciinema/asciinema/releases/tag/v3.2.1) | 17998 | none |
+| [Greenshot](https://github.com/greenshot/greenshot) | C# | GPL-3.0 | [v1.3.328](https://github.com/greenshot/greenshot/releases/tag/v1.3.328) | 5294 | Snagit (partial) |
+| [Kooha](https://github.com/SeaDve/Kooha) | Rust | GPL-3.0 | [v2.3.2](https://github.com/SeaDve/Kooha/releases/tag/v2.3.2) signed | 3569 | Loom (partial) |
+| [ksnip](https://github.com/ksnip/ksnip) | C++ | GPL-3.0 | [v1.10.1](https://github.com/ksnip/ksnip/releases/tag/v1.10.1) | 3390 | Snagit (partial) |
 | [SimpleScreenRecorder](https://github.com/MaartenBaert/ssr) | C++ | GPL-3.0 | [0.4.4](https://github.com/MaartenBaert/ssr/releases/tag/0.4.4) | 2911 | OBS Studio (partial) |
-| [Satty](https://github.com/Satty-org/Satty) | Rust | MPL-2.0 | [v0.23.0](https://github.com/Satty-org/Satty/releases/tag/v0.23.0) | 2521 | Snagit (partial) |
+| [Satty](https://github.com/Satty-org/Satty) | Rust | MPL-2.0 | [v0.23.0](https://github.com/Satty-org/Satty/releases/tag/v0.23.0) | 2524 | Snagit (partial) |
 | [vokoscreenNG](https://github.com/vkohaupt/vokoscreenNG) | C++ | GPL-2.0 | [4.11.0](https://github.com/vkohaupt/vokoscreenNG/releases/tag/4.11.0) | 1529 | OBS Studio (partial) |
 | [wf-recorder](https://github.com/ammen99/wf-recorder) | C++ | MIT | [v0.6.0](https://github.com/ammen99/wf-recorder/releases/tag/v0.6.0) | 1338 | OBS Studio (partial) |
 | [Shutter](https://github.com/shutter-project/shutter) | Perl | GPL-3.0 | [v0.99.7](https://github.com/shutter-project/shutter/releases/tag/v0.99.7) signed | 646 | Snagit (partial) |

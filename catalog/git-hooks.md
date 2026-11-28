@@ -4,11 +4,11 @@ Install and run the checks a repository wants before a commit or a push, and che
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35403 | pre-commit (partial) |
-| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18855 | none |
-| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15716 | husky (partial) |
-| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.4](https://github.com/evilmartians/lefthook/releases/tag/v2.2.4) signed | 9061 | husky (full), pre-commit (full) |
-| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.12](https://github.com/j178/prek/releases/tag/v0.5.12) signed | 8861 | pre-commit (drop-in) |
+| [husky](https://github.com/typicode/husky) | JavaScript | MIT | [v9.1.7](https://github.com/typicode/husky/releases/tag/v9.1.7) | 35404 | pre-commit (partial) |
+| [commitlint](https://github.com/conventional-changelog/commitlint) | TypeScript | MIT | [v21.2.4](https://github.com/conventional-changelog/commitlint/releases/tag/v21.2.4) | 18854 | none |
+| [pre-commit](https://github.com/pre-commit/pre-commit) | Python | MIT | [v4.7.0](https://github.com/pre-commit/pre-commit/releases/tag/v4.7.0) | 15717 | husky (partial) |
+| [lefthook](https://github.com/evilmartians/lefthook) | Go | MIT | [v2.2.4](https://github.com/evilmartians/lefthook/releases/tag/v2.2.4) signed | 9063 | husky (full), pre-commit (full) |
+| [prek](https://github.com/j178/prek) | Rust | MIT | [v0.5.12](https://github.com/j178/prek/releases/tag/v0.5.12) signed | 8865 | pre-commit (drop-in) |
 | [Overcommit](https://github.com/sds/overcommit) | Ruby | MIT | [v0.76.0](https://github.com/sds/overcommit/releases/tag/v0.76.0) signed | 4003 | pre-commit (partial) |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | JavaScript | MIT | [2.14.0](https://github.com/toplenboren/simple-git-hooks/releases/tag/2.14.0) | 1692 | husky (partial) |
 | [cz-git](https://github.com/Zhengqbbb/cz-git) | TypeScript | MIT | [v1.14.0](https://github.com/Zhengqbbb/cz-git/releases/tag/v1.14.0) | 1540 | Commitizen (full) |

@@ -4,9 +4,9 @@ Log time against projects and clients, and turn it into reports or invoices.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.3](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.3) signed | 19853 | RescueTime (full), WakaTime (partial) |
-| [solidtime](https://github.com/solidtime-io/solidtime) | PHP | AGPL-3.0 | [v0.23.0](https://github.com/solidtime-io/solidtime/releases/tag/v0.23.0) | 9151 | Toggl Track (full), Harvest (partial) |
-| [Kimai](https://github.com/kimai/kimai) | PHP | AGPL-3.0 | [2.73.0](https://github.com/kimai/kimai/releases/tag/2.73.0) signed | 5184 | Toggl Track (full), Harvest (partial) |
+| [ActivityWatch](https://github.com/ActivityWatch/activitywatch) | Python | MPL-2.0 | [v0.14.3](https://github.com/ActivityWatch/activitywatch/releases/tag/v0.14.3) signed | 19866 | RescueTime (full), WakaTime (partial) |
+| [solidtime](https://github.com/solidtime-io/solidtime) | PHP | AGPL-3.0 | [v0.23.0](https://github.com/solidtime-io/solidtime/releases/tag/v0.23.0) | 9152 | Toggl Track (full), Harvest (partial) |
+| [Kimai](https://github.com/kimai/kimai) | PHP | AGPL-3.0 | [2.73.0](https://github.com/kimai/kimai/releases/tag/2.73.0) signed | 5187 | Toggl Track (full), Harvest (partial) |
 | [Wakapi](https://github.com/muety/wakapi) | Go | MIT | [2.18.2](https://github.com/muety/wakapi/releases/tag/2.18.2) | 4483 | WakaTime (full) |
 | [TimeTagger](https://github.com/almarklein/timetagger) | Python | GPL-3.0 | [v26.1.3](https://github.com/almarklein/timetagger/releases/tag/v26.1.3) | 1820 | Toggl Track (partial) |
 | [Timewarrior](https://github.com/GothenburgBitFactory/timewarrior) | C++ | MIT | [v1.10.0](https://github.com/GothenburgBitFactory/timewarrior/releases/tag/v1.10.0) | 1672 | Toggl Track (partial) |

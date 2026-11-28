@@ -4,8 +4,8 @@ Find API keys, passwords and tokens committed to code, git history and other pla
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Gitleaks](https://github.com/gitleaks/gitleaks) | Go | MIT | [v8.30.1](https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1) | 31382 | GitGuardian (partial) |
-| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Go | AGPL-3.0 | [v3.100.1](https://github.com/trufflesecurity/trufflehog/releases/tag/v3.100.1) signed | 29720 | GitGuardian (partial) |
+| [Gitleaks](https://github.com/gitleaks/gitleaks) | Go | MIT | [v8.30.1](https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1) | 31396 | GitGuardian (partial) |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Go | AGPL-3.0 | [v3.100.1](https://github.com/trufflesecurity/trufflehog/releases/tag/v3.100.1) signed | 29757 | GitGuardian (partial) |
 | [ggshield](https://github.com/GitGuardian/ggshield) | Python | MIT | [v1.57.0](https://github.com/GitGuardian/ggshield/releases/tag/v1.57.0) | 2028 | Gitleaks (partial) |
 | [Kingfisher](https://github.com/mongodb/kingfisher) | Rust | Apache-2.0 | [v2.20.0](https://github.com/mongodb/kingfisher/releases/tag/v2.20.0) | 1328 | GitGuardian (partial) |
 

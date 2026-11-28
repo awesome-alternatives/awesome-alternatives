@@ -4,8 +4,8 @@ Write HTML emails from components or markup and compile them to code that render
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [React Email](https://github.com/resend/react-email) | TypeScript | MIT | [react-email@6.11.17](https://github.com/resend/react-email/releases/tag/react-email%406.11.17) signed | 20012 | MJML (full) |
-| [MJML](https://github.com/mjmlio/mjml) | JavaScript | MIT | [v5.4.1](https://github.com/mjmlio/mjml/releases/tag/v5.4.1) | 18307 | none |
+| [React Email](https://github.com/resend/react-email) | TypeScript | MIT | [react-email@6.11.17](https://github.com/resend/react-email/releases/tag/react-email%406.11.17) signed | 20017 | MJML (full) |
+| [MJML](https://github.com/mjmlio/mjml) | JavaScript | MIT | [v5.4.1](https://github.com/mjmlio/mjml/releases/tag/v5.4.1) | 18308 | none |
 | [Maizzle](https://github.com/maizzle/framework) | TypeScript | MIT | [v6.4.1](https://github.com/maizzle/framework/releases/tag/v6.4.1) | 1624 | MJML (full) |
 
 [All categories](../README.md#catalog)

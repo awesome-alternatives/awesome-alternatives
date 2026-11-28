@@ -4,16 +4,16 @@ Accounting, inventory, sales and operations in one system.
 
 | Tool | Language | Licence | Latest | Stars | Replaces |
 |---|---|---|---|---:|---|
-| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 56144 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
-| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v16.61.0](https://github.com/frappe/erpnext/releases/tag/v16.61.0) | 41682 | NetSuite (full), Odoo (full), Sortly (partial), Square Point of Sale (partial) |
-| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.14.0](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.14.0) signed | 10623 | QuickBooks (partial) |
-| [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.3.2](https://github.com/akaunting/akaunting/releases/tag/3.3.2) | 10351 | QuickBooks (full), Xero (full) |
+| [Odoo](https://github.com/odoo/odoo) | Python | Other | [5.0.0-2-addons](https://github.com/odoo/odoo/releases/tag/5.0.0-2-addons) | 56164 | NetSuite (full), Sortly (partial), Square Point of Sale (partial) |
+| [ERPNext](https://github.com/frappe/erpnext) | Python | GPL-3.0 | [v16.61.0](https://github.com/frappe/erpnext/releases/tag/v16.61.0) | 41693 | NetSuite (full), Odoo (full), Sortly (partial), Square Point of Sale (partial) |
+| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | PHP | Other | [v5.14.1](https://github.com/invoiceninja/invoiceninja/releases/tag/v5.14.1) signed | 10623 | QuickBooks (partial) |
+| [Akaunting](https://github.com/akaunting/akaunting) | PHP | Other | [3.3.2](https://github.com/akaunting/akaunting/releases/tag/3.3.2) | 10352 | QuickBooks (full), Xero (full) |
 | [Ever Gauzy](https://github.com/ever-co/ever-gauzy) | TypeScript | AGPL-3.0 | [v111.142.11](https://github.com/ever-co/ever-gauzy/releases/tag/v111.142.11) signed | 8904 | NetSuite (partial), Harvest (full) |
-| [Dolibarr](https://github.com/Dolibarr/dolibarr) | PHP | GPL-3.0 | [24.0.4](https://github.com/Dolibarr/dolibarr/releases/tag/24.0.4) | 7905 | NetSuite (partial) |
-| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.49](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.49) signed | 4257 | QuickBooks (full), Xero (full) |
-| [metasfresh](https://github.com/metasfresh/metasfresh) | Java | none | [5.175](https://github.com/metasfresh/metasfresh/releases/tag/5.175) | 2472 | NetSuite (partial) |
+| [Dolibarr](https://github.com/Dolibarr/dolibarr) | PHP | GPL-3.0 | [24.0.4](https://github.com/Dolibarr/dolibarr/releases/tag/24.0.4) | 7909 | NetSuite (partial) |
+| [Bigcapital](https://github.com/bigcapitalhq/bigcapital) | TypeScript | AGPL-3.0 | [v0.25.49](https://github.com/bigcapitalhq/bigcapital/releases/tag/v0.25.49) signed | 4262 | QuickBooks (full), Xero (full) |
+| [metasfresh](https://github.com/metasfresh/metasfresh) | Java | none | [5.175](https://github.com/metasfresh/metasfresh/releases/tag/5.175) | 2473 | NetSuite (partial) |
 | [Apache OFBiz](https://github.com/apache/ofbiz-framework) | Java | Apache-2.0 | [release24.09.09](https://github.com/apache/ofbiz-framework/releases/tag/release24.09.09) | 1151 | NetSuite (partial) |
-| [Axelor Open Suite](https://github.com/axelor/axelor-open-suite) | Java | Other | [v8.5.34](https://github.com/axelor/axelor-open-suite/releases/tag/v8.5.34) | 990 | NetSuite (partial) |
+| [Axelor Open Suite](https://github.com/axelor/axelor-open-suite) | Java | Other | [v9.2.2](https://github.com/axelor/axelor-open-suite/releases/tag/v9.2.2) | 990 | NetSuite (partial) |
 | [ADempiere](https://github.com/adempiere/adempiere) | Java | GPL-2.0 | [3.9.4.001](https://github.com/adempiere/adempiere/releases/tag/3.9.4.001) | 888 | NetSuite (partial) |
 | [iDempiere](https://github.com/idempiere/idempiere) | Java | Other | [v2.0](https://github.com/idempiere/idempiere/releases/tag/v2.0) | 681 | NetSuite (partial) |
 | [LedgerSMB](https://github.com/ledgersmb/LedgerSMB) | Perl | Other | [1.13.9](https://github.com/ledgersmb/LedgerSMB/releases/tag/1.13.9) | 579 | QuickBooks (partial), Xero (partial) |
